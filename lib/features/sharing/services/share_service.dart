@@ -100,7 +100,7 @@ class ShareService {
     
     try {
       await SharePlus.instance.share(ShareParams(
-        text: '🍳 Check out this recipe: ${recipe.name}\n\n$link',
+        text: 'Check out this recipe from Memoix!\n\nTo view it, just copy this entire message and paste it into the URL importer in the app.\n\n$link',
         subject: 'Recipe: ${recipe.name}',
       ),
       );
@@ -257,7 +257,7 @@ class ShareService {
     
     try {
       await SharePlus.instance.share(ShareParams(
-        text: 'Check out this pizza: ${pizza.name}\n\n$link',
+        text: 'Check out this recipe from Memoix!\n\nTo view it, just copy this entire message and paste it into the URL importer in the app.\n\n$link',
         subject: 'Pizza: ${pizza.name}',
       ),
       );
@@ -389,7 +389,7 @@ class ShareService {
     
     try {
       await SharePlus.instance.share(ShareParams(
-        text: 'Check out this sandwich: ${sandwich.name}\n\n$link',
+        text: 'Check out this recipe from Memoix!\n\nTo view it, just copy this entire message and paste it into the URL importer in the app.\n\n$link',
         subject: 'Sandwich: ${sandwich.name}',
       ),
       );
@@ -532,7 +532,7 @@ class ShareService {
     
     try {
       await SharePlus.instance.share(ShareParams(
-        text: 'Check out this smoking recipe: ${recipe.name}\n\n$link',
+        text: 'Check out this recipe from Memoix!\n\nTo view it, just copy this entire message and paste it into the URL importer in the app.\n\n$link',
         subject: 'Smoking: ${recipe.name}',
       ),
       );
@@ -661,7 +661,7 @@ class ShareService {
     
     try {
       await SharePlus.instance.share(ShareParams(
-        text: 'Check out this modernist recipe: ${recipe.name}\n\n$link',
+        text: 'Check out this recipe from Memoix!\n\nTo view it, just copy this entire message and paste it into the URL importer in the app.\n\n$link',
         subject: 'Modernist: ${recipe.name}',
       ),
       );
@@ -811,7 +811,7 @@ class ShareService {
     
     try {
       await SharePlus.instance.share(ShareParams(
-        text: '🍷 Check out this: ${entry.name}\n\n$link',
+        text: 'Check out this recipe from Memoix!\n\nTo view it, just copy this entire message and paste it into the URL importer in the app.\n\n$link',
         subject: entry.name,
       ),
       );
@@ -890,7 +890,7 @@ class ShareService {
     
     try {
       await SharePlus.instance.share(ShareParams(
-        text: '🧀 Check out this cheese: ${entry.name}\n\n$link',
+        text: 'Check out this recipe from Memoix!\n\nTo view it, just copy this entire message and paste it into the URL importer in the app.\n\n$link',
         subject: entry.name,
       ),
       );

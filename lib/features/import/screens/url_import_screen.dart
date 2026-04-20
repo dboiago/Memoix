@@ -103,14 +103,14 @@ class _URLImportScreenState extends ConsumerState<URLImportScreen> {
                         Icon(Icons.link, color: theme.colorScheme.primary),
                         const SizedBox(width: 8),
                         Text(
-                          'Import from URL or Share Link',
+                          'Import from Link or Message',
                           style: theme.textTheme.titleMedium,
                         ),
                       ],
                     ),
                     const SizedBox(height: 12),
                     const Text(
-                      'Paste a recipe website URL or a Memoix share link to import automatically.',
+                      'Paste a web URL, a Memoix share link, or an entire shared message — the app will extract the link automatically.',
                     ),
                     const SizedBox(height: 8),
                     Text(
@@ -129,8 +129,8 @@ class _URLImportScreenState extends ConsumerState<URLImportScreen> {
             TextField(
               controller: _urlController,
               decoration: InputDecoration(
-                labelText: 'Recipe URL',
-                hintText: 'https://example.com/recipe/... or memoix://recipe/...',
+                labelText: 'URL or Message',
+                hintText: 'Paste link or shared message here...',
                 prefixIcon: const Icon(Icons.link),
                 border: const OutlineInputBorder(),
                 suffixIcon: _urlController.text.isNotEmpty
@@ -143,7 +143,9 @@ class _URLImportScreenState extends ConsumerState<URLImportScreen> {
                       )
                     : null,
               ),
-              keyboardType: TextInputType.url,
+              keyboardType: TextInputType.multiline,
+              minLines: 1,
+              maxLines: 5,
               autocorrect: false,
               onChanged: (_) => setState(() {}),
             ),
@@ -277,20 +279,29 @@ class _URLImportScreenState extends ConsumerState<URLImportScreen> {
   }
 
   Future<void> _importFromUrl() async {
-    final url = _urlController.text.trim();
-    if (url.isEmpty) return;
+    final rawInput = _urlController.text.trim();
+    if (rawInput.isEmpty) return;
 
-    // Intercept Memoix proprietary deep links — do NOT attempt web scraping
-    if (url.startsWith('memoix://')) {
-      await _importFromMemoixLink(url);
+    // SECURITY: Enforce 4,096-character limit on raw input before any processing
+    if (rawInput.length > 4096) {
+      setState(() => _errorMessage = 'Input is too long (max 4,096 characters). Please paste just the link.');
       return;
     }
 
-    // Standard web URL validation
-    if (!url.startsWith('http://') && !url.startsWith('https://')) {
-      setState(() => _errorMessage = 'Please enter a valid URL starting with http://, https://, or memoix://');
+    // First: extract a Memoix proprietary deep link — do NOT attempt web scraping
+    final memoixMatch = RegExp(r'(memoix://\S+)').firstMatch(rawInput);
+    if (memoixMatch != null) {
+      await _importFromMemoixLink(memoixMatch.group(1)!);
       return;
     }
+
+    // Second: extract an HTTP/HTTPS web URL from the raw input
+    final httpMatch = RegExp(r'(https?://\S+)').firstMatch(rawInput);
+    if (httpMatch == null) {
+      setState(() => _errorMessage = 'Could not find a valid recipe link in the pasted text.');
+      return;
+    }
+    final url = httpMatch.group(1)!;
 
     setState(() {
       _isLoading = true;
