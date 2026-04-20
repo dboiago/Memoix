@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 
-/// Color palette for Memoix app
-/// Based on spreadsheet color-coding system for recipe categories
+/// Colour palette for Memoix app
+/// Based on spreadsheet colour-coding system for recipe categories
 class MemoixColors {
   MemoixColors._();
 
-  // Primary brand colors
+  // Primary brand colours
   static const Color primary = Color(0xFFE67C23); // Warm orange (like your header)
   static const Color primaryLight = Color(0xFFFFA726);
   static const Color primaryDark = Color(0xFFE65100);
 
-  // Course category colors (matching spreadsheet tabs)
+  // Course category colours (matching spreadsheet tabs)
   static const Color mains = Color(0xFFFFB74D);       // Orange/Gold
   static const Color apps = Color(0xFF81C784);        // Green
   static const Color soups = Color(0xFF64B5F6);       // Blue
@@ -32,7 +32,7 @@ class MemoixColors {
   static const Color scratch = Color(0xFFB0BEC5);     // Blue-gray
   static const Color drinks = Color(0xFF81D4FA);      // Light blue
 
-  // Cuisine style colors (for highlighting rows like in spreadsheet)
+  // Cuisine style colours (for highlighting rows like in spreadsheet)
   static const Color korean = Color(0xFFFFE082);      // Light gold
   static const Color french = Color(0xFFB3E5FC);      // Light blue
   static const Color italian = Color(0xFFC8E6C9);     // Light green
@@ -57,7 +57,7 @@ class MemoixColors {
   static const Color moroccan = Color(0xFFD7CCC8);    // Light brown
   static const Color turkish = Color(0xFFB3E5FC);     // Light blue
 
-  // Continent-based dot colors (thematic with primary #E8B4A0 / secondary #A88FA8)
+  // Continent-based dot colours (thematic with primary #E8B4A0 / secondary #A88FA8)
   // These are used for cuisine indicator dots, designed to complement the warm palette
   static const Color continentAsian = Color(0xFFE07B6F);       // Warm coral-red
   static const Color continentEuropean = Color(0xFF7B9CC4);    // Muted blue
@@ -68,8 +68,8 @@ class MemoixColors {
   static const Color continentOceanian = Color(0xFF6BA3B5);    // Ocean teal
   static const Color fusionCuisine = Color(0xFFA88FA8);        // Purple/mauve - blend of cultures
 
-  // Spirit-based dot colors for drinks/cocktails
-  // Thematic colors complementing the warm palette
+  // Spirit-based dot colours for drinks/cocktails
+  // Thematic colours complementing the warm palette
   static const Color spiritGin = Color(0xFF7EB8C4);            // Clear/juniper blue-green
   static const Color spiritVodka = Color(0xFFB8C4D4);          // Clean/neutral silver-blue
   static const Color spiritWhiskey = Color(0xFFD4A574);        // Amber/oak
@@ -84,8 +84,8 @@ class MemoixColors {
   static const Color spiritCoffee = Color(0xFF6F4E37);         // Coffee brown
   static const Color spiritMocktail = Color(0xFF7EB8A8);       // Fresh teal
 
-  // Pizza sauce/base colors for pizza recipes
-  // Thematic colors representing each sauce type
+  // Pizza sauce/base colours for pizza recipes
+  // Thematic colours representing each sauce type
   static const Color pizzaMarinara = Color(0xFFD4635A);        // Tomato red
   static const Color pizzaOil = Color(0xFFD4C86E);             // Golden olive oil
   static const Color pizzaPesto = Color(0xFF7AB87A);           // Basil green
@@ -96,8 +96,8 @@ class MemoixColors {
   static const Color pizzaGarlic = Color(0xFFE8D87E);          // Garlic butter gold
   static const Color pizzaNoSauce = Color(0xFFB0BEC5);         // Neutral gray
 
-  // Smoked item category colors for smoking recipes
-  // Thematic pastel colors matching app palette
+  // Smoked item category colours for smoking recipes
+  // Thematic pastel colours matching app palette
   static const Color smokedBeef = Color(0xFFD4847A);           // Soft coral-red for beef
   static const Color smokedPork = Color(0xFFE8A8A8);           // Soft pink for pork
   static const Color smokedPoultry = Color(0xFFE8C878);        // Soft golden for poultry
@@ -111,18 +111,18 @@ class MemoixColors {
   static const Color smokedDips = Color(0xFFD8A888);           // Soft terracotta for dips
   static const Color smokedOther = Color(0xFFB0BEC5);          // Soft blue-gray for other
 
-  // Modernist type colors (Concept vs Technique)
-  // Thematic colors that fit with the warm palette
+  // Modernist type colours (Concept vs Technique)
+  // Thematic colours that fit with the warm palette
   static const Color modernistConcept = Color(0xFF7EB8A8);     // Sage teal - creative/flavor concepts
   static const Color modernistTechnique = Color(0xFFB898C4);   // Soft lavender - scientific techniques
 
-  // UI colors
+  // UI colours
   static const Color background = Color(0xFFFAFAFA);
   static const Color surface = Color(0xFFFFFFFF);
   static const Color error = Color(0xFFE53935);
   static const Color success = Color(0xFF43A047);
   
-  // Semantic status colors (for confidence indicators, validation, etc.)
+  // Semantic status colours (for confidence indicators, validation, etc.)
   static const Color warning = Color(0xFFFF9800);              // Orange warning
   static const Color successContainer = Color(0xFFE8F5E9);     // Light green bg
   static const Color warningContainer = Color(0xFFFFF3E0);     // Light orange bg
