@@ -126,7 +126,8 @@ const Map<String, String?> _pluralExceptions = {
   'potato': 'potatoes',
   'mango': 'mangoes',
   'avocado': 'avocados',
-  // Invariant countables (singular = plural)
+  
+  // Invariant countables (singular = plural / mass nouns)
   'fish': null,
   'zest': null,
   'celery': null,
@@ -143,12 +144,15 @@ const Map<String, String?> _pluralExceptions = {
   'basil': null,
   'parsley': null,
   'thyme': null,
+  'mint': null,
+  'lemongrass': null,
+  'watercress': null,
   'shrimp': null,
   'salmon': null,
   'cod': null,
   'tuna': null,
   'deer': null,
-  'garlic': null, // produce but uncountable in practice
+  'garlic': null, 
   'ginger': null,
   // add entries here as edge cases are found
 };
@@ -168,28 +172,47 @@ String _pluralizeWord(String word) {
   }
 
   // Programmatic rules — first match wins.
+  
   // "donkey→donkeys" — vowel-y endings just append 's'.
   if (lower.endsWith('ey') || lower.endsWith('ay') ||
       lower.endsWith('oy') || lower.endsWith('uy')) {
     return '${word}s';
   }
+  
   // "blueberry→blueberries" — consonant-y ending.
   if (lower.endsWith('y')) {
     return '${word.substring(0, word.length - 1)}ies';
   }
+  
   // "knife→knives".
   if (lower.endsWith('fe')) {
     return '${word.substring(0, word.length - 2)}ves';
   }
+  
   // "loaf→loaves" (catches non-exception 'f' words).
   if (lower.endsWith('f')) {
     return '${word.substring(0, word.length - 1)}ves';
   }
+  
+  // If it ends in 's', it is either ALREADY plural (bananas) 
+  // or it's a mass noun (asparagus, molasses, couscous). 
+  // In either case, we do absolutely nothing.
+  if (lower.endsWith('s')) {
+    return word; 
+  }
+
   // "peach→peaches", "box→boxes", "buzz→buzzes".
-  if (lower.endsWith('s') || lower.endsWith('x') || lower.endsWith('z') ||
+  if (lower.endsWith('x') || lower.endsWith('z') ||
       lower.endsWith('ch') || lower.endsWith('sh')) {
     return '${word}es';
   }
+
+  // "peach→peaches", "box→boxes", "buzz→buzzes".
+  if (lower.endsWith('x') || lower.endsWith('z') ||
+      lower.endsWith('ch') || lower.endsWith('sh')) {
+    return '${word}es';
+  }
+  
   // Default: append 's'.
   return '${word}s';
 }
