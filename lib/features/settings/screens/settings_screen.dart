@@ -397,7 +397,7 @@ class SettingsScreen extends ConsumerWidget {
             subtitle: const Text('Optional'),
             trailing: const Icon(Icons.open_in_new),
             onTap: () async {
-              final uri = Uri.parse('https://www.buymeacoffee.com/dboiago');
+              final uri = Uri.parse('https://github.com/sponsors/dboiago');
               if (await canLaunchUrl(uri)) {
                 await launchUrl(uri);
               } else {
