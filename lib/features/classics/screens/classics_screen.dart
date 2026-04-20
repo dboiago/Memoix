@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
-import '../../../app/theme/colors.dart';
+import '../../../app/theme/colours.dart';
 import '../../../core/services/integrity_service.dart';
 import '../../recipes/models/cuisine.dart';
 

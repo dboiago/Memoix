@@ -186,7 +186,7 @@ For data-driven visual indicator dots on cards and detail screens:
 | `MemoixColors.forModernistType('technique')` | modernist_card, modernist_detail | Sage/Lavender |
 | `MemoixColors.forProteinDot('chicken')` | sandwich_card, sandwich_detail | Soft pastels |
 
-**Note:** `forCourse()` and `forCuisine()` exist in colors.dart but are **not currently used** in the UI.
+**Note:** `forCourse()` and `forCuisine()` exist in colours.dart but are **not currently used** in the UI.
 
 #### Universal Accent Colors
 ```dart
@@ -316,4 +316,4 @@ lib/features/<feature_name>/
 2. **Define Model:** Create model with `@collection`
 3. **Register Schema:** Add to `MemoixDatabase.initialize()` in `lib/core/database/database.dart`
 4. **Define Routes:** Add static `to<Feature>List` and `to<Feature>Detail` methods in `AppRoutes`
-5. **Assign Color:** Add domain color to `MemoixColors` in `colors.dart`
+5. **Assign Color:** Add domain color to `MemoixColors` in `colours.dart`

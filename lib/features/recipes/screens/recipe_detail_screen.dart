@@ -10,7 +10,7 @@ import 'package:wakelock_plus/wakelock_plus.dart';
 import '../../../app/routes/router.dart';
 import '../../../core/utils/amount_utils.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
-import '../../../app/theme/colors.dart';
+import '../../../app/theme/colours.dart';
 import '../../../core/providers.dart';
 import '../../../core/services/supabase_sync_service.dart';
 import '../../../core/utils/unit_normalizer.dart';

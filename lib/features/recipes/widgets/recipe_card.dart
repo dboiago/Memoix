@@ -9,7 +9,7 @@ import '../../../core/providers.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
 import '../../../core/services/integrity_service.dart';
 import '../../../core/utils/unit_normalizer.dart';
-import '../../../app/theme/colors.dart';
+import '../../../app/theme/colours.dart';
 import '../../../shared/widgets/memoix_card_shell.dart';
 
 /// Recipe card

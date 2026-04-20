@@ -11,7 +11,7 @@ import '../../../core/providers.dart';
 import '../../../core/services/integrity_service.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
 import '../../../app/routes/router.dart';
-import '../../../app/theme/colors.dart';
+import '../../../app/theme/colours.dart';
 import '../../recipes/repository/recipe_repository.dart';
 import '../../recipes/models/cuisine.dart';
 import '../../recipes/models/recipe.dart';

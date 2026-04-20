@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../app/theme/colors.dart';
+import '../../../app/theme/colours.dart';
 
 /// Recipe rating widget (1-5 stars + favourite)
 // No intention of adding a rating system to recipes (why add a recipe you don't like)

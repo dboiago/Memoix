@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:uuid/uuid.dart';
 
-import '../../../app/theme/colors.dart';
+import '../../../app/theme/colours.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
 import '../../../core/services/url_importer.dart';
 import '../services/ocr_importer.dart';

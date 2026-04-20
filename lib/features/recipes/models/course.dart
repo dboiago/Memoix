@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../app/theme/colors.dart';
+import '../../../app/theme/colours.dart';
 
 
 /// Represents a recipe course (like tabs in the spreadsheet)
