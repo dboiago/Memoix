@@ -23,6 +23,20 @@ Please spend time using the app and reading the code before proposing changes.
 
 ---
 
+## Data & Persistence
+
+Memoix uses a relational data model backed by Drift (SQLite).
+
+- Data integrity is critical
+- Migrations must be explicit and reversible
+- Schema changes require justification and discussion
+
+Do not bypass the data layer or duplicate state.
+
+If you're unsure how a change affects persistence, ask before implementing it.
+
+---
+
 ## What Makes a Good Contribution
 
 Good contributions tend to:
@@ -32,6 +46,7 @@ Good contributions tend to:
 - Clarify UI or data models without adding surface area
 - Respect existing patterns and naming conventions
 - Be small, focused, and well-reasoned
+- Preserve or improve determinism in parsing and data handling
 
 Refactors are welcome only when they clearly improve readability or maintainability.
 
@@ -47,8 +62,10 @@ The following are unlikely to be accepted:
 - Features that force structure where flexibility is intentional
 - Cosmetic changes without functional justification
 - Large rewrites without prior discussion
+- Features that rely on external services without clear fallback behaviour
+- AI-driven features that obscure or replace user intent
 
-It's about keeping the tool coherent.
+The goal is to keep the tool coherent.
 
 ---
 
@@ -58,12 +75,12 @@ If you're opening an issue:
 
 - Be specific
 - Include screenshots when relevant
-- Explain the impact, not just the behavior
+- Explain the impact, not just the behaviour
 - Avoid "wouldn't it be cool if…" suggestions without context
 
 Bug reports are always welcome.
 
-Feature requests should explain why the existing behavior is insufficient.
+Feature requests should explain why the existing behaviour is insufficient.
 
 ---
 
@@ -71,11 +88,13 @@ Feature requests should explain why the existing behavior is insufficient.
 
 Before submitting a PR:
 
-- Open an issue or discussion if the change affects behavior or UX
+- Open an issue or discussion if the change affects behaviour or UX
+- Do not introduce new architectural patterns without discussion
 - Keep changes scoped and readable
 - Follow existing formatting and structure
 - Avoid drive-by cleanup unrelated to the change
 - Test on at least one target platform
+- Changes affecting data models or parsing logic must handle edge cases explicitly
 
 PRs that add features without discussion may be closed.
 
@@ -87,7 +106,7 @@ If contributing recipes or reference data:
 
 - Follow the existing schema exactly
 - Avoid embellishment or editorial tone
-- Treat entries as working notes, not blog posts
+- Treat entries as working notes, not content
 - Increment versions where required
 
 This repository is not a content farm.
@@ -100,8 +119,40 @@ This repository is not a content farm.
 - Prefer plain, direct naming
 - Comments should explain *why*, not *what*
 - UI copy should be concise and literal
+- Use Canadian English spelling (e.g. flavour, colour, favour) for UI, comments, and identifiers where applicable
+- Do not modify spelling in imported or external content
 
 If something feels overly clever, it probably doesn't belong.
+
+---
+
+## Imports & Parsing
+
+OCR, URL import, and AI import all pass through a normalization layer.
+
+- Parsing should favour correctness over coverage
+- Edge cases should be handled explicitly, not heuristically guessed
+- Silent failures are not acceptable
+
+If a format cannot be parsed reliably, it should fail visibly.
+
+---
+
+## AI Features
+
+AI functionality in Memoix is:
+
+- Optional and user-configured (API key required)
+- Explicitly invoked (no background or automatic behaviour)
+- Treated as a tool, not a source of truth
+
+Contributions must not:
+
+- Add hidden or automatic AI behaviour
+- Depend on specific providers or models
+- Fail cleanly when AI is unavailable or misconfigured
+
+AI should assist, not decide.
 
 ---
 
