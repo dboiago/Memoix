@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About — Memoix</title>
+  <title>About - Memoix</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Cormorant+SC:wght@400;500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
   <style>
@@ -27,19 +27,8 @@
       overflow-x: hidden;
     }
 
-    /* ── LOGO AS WATERMARK ── */
-    .logo-watermark {
-      position: fixed;
-      bottom: 4rem;
-      left: 3vw;
-      width: 120px;
-      opacity: 0.04;
-      pointer-events: none;
-      z-index: 0;
-      filter: grayscale(1);
-    }
+    /* ── NAV ─────────────────────────────────────── */
 
-    /* ── NAV & MENU ── */
     .nav-top {
       position: fixed;
       top: 0;
@@ -81,8 +70,9 @@
       width: 20px;
       height: 1px;
       background: var(--ink-muted);
-      transition: background 0.2s, transform 0.25s;
+      transition: background 0.2s, opacity 0.2s, transform 0.25s;
     }
+    .nav-toggle:hover span { background: var(--ink); }
     .nav-toggle.open span:nth-child(1) { transform: translateY(6px) rotate(45deg); background: var(--ink); }
     .nav-toggle.open span:nth-child(2) { opacity: 0; }
     .nav-toggle.open span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); background: var(--ink); }
@@ -100,34 +90,27 @@
       pointer-events: none;
       transition: opacity 0.3s ease;
     }
-    .nav-overlay.open { opacity: 1; pointer-events: all; } 
-    .nav-overlay a, 
+    .nav-overlay.open { opacity: 1; pointer-events: all; }
+
+    .nav-overlay a,
     .nav-link-current {
       font-family: 'Cormorant SC', serif;
       font-size: clamp(2rem, 6vw, 3.5rem);
       letter-spacing: 0.06em;
       line-height: 1.3;
-      display: block; /* Essential for the margin-bottom to work */
+      display: block;
       margin-bottom: 0.5rem;
       text-decoration: none;
     }
-
-    .nav-overlay a { 
-      color: var(--ink-muted); 
-      transition: color 0.2s;
-    }
+    .nav-overlay a { color: var(--ink-muted); transition: color 0.2s; }
     .nav-overlay a:hover { color: var(--ink); }
-    
-    .nav-link-current { 
-      color: var(--ink); 
-      cursor: default; 
-    }
+    .nav-link-current { color: var(--ink); cursor: default; }
 
     .nav-rule {
       width: 2rem;
       height: 1px;
       background: var(--rule);
-      margin: 2rem 0; /* Matches the original 2rem spacing */
+      margin: 2rem 0;
     }
 
     .nav-meta {
@@ -138,7 +121,8 @@
       text-transform: uppercase;
     }
 
-    /* ── CONTENT LAYOUT ── */
+    /* ── CONTENT ─────────────────────────────────── */
+
     main {
       max-width: 900px;
       margin: 0 auto;
@@ -147,9 +131,12 @@
       z-index: 1;
     }
 
-    .section { margin-bottom: 7rem; max-width: 520px; }
-    .section--left { margin-right: auto; }
-    .section--right { margin-left: auto; text-align: right; }
+    .section {
+      margin-bottom: 7rem;
+      max-width: 520px;
+    }
+    .section--left   { margin-right: auto; }
+    .section--right  { margin-left: auto; text-align: right; }
     .section--offset { margin-left: 12%; margin-right: auto; }
 
     h1 {
@@ -169,6 +156,33 @@
       margin-bottom: 1.5rem;
     }
 
+    .section p {
+      line-height: 1.85;
+      margin-bottom: 0.85rem;
+    }
+    .section p:last-child { margin-bottom: 0; }
+
+    /* Origin story colour registers */
+    .origin p { margin-bottom: 1.2rem; line-height: 1.85; }
+    .origin p:last-child { margin-bottom: 0; }
+    .t-soft  { color: var(--ink-soft); }
+    .t-muted { color: var(--ink-muted); font-style: italic; }
+    .t-ink   { color: var(--ink); }
+    em.warm  { color: var(--ink); font-style: italic; }
+
+    .pull {
+      display: block;
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+      font-style: italic;
+      color: var(--ink);
+      line-height: 1.4;
+      padding: 2rem 0;
+      border-top: 1px solid var(--rule);
+      border-bottom: 1px solid var(--rule);
+      margin: 2rem 0;
+    }
+
     .rule {
       width: 30px;
       height: 1px;
@@ -176,14 +190,6 @@
       margin: 1.5rem 0;
     }
     .section--right .rule { margin-left: auto; }
-
-    ul { list-style: none; }
-    li {
-      margin-bottom: 0.5rem;
-      font-family: 'Cormorant SC', serif;
-      font-size: 0.9rem;
-      letter-spacing: 0.05em;
-    }
 
     .emphasis { color: var(--ink); font-style: italic; }
 
@@ -196,7 +202,8 @@
       font-style: italic;
     }
 
-    /* ── FOOTER ── */
+    /* ── FOOTER ──────────────────────────────────── */
+
     footer {
       border-top: 1px solid var(--rule);
       padding: 2rem;
@@ -207,9 +214,16 @@
       align-items: center;
       gap: 1rem;
     }
-    .footer-brand { font-family: 'Cormorant SC', serif; font-size: 0.62rem; color: var(--ink-muted); text-transform: uppercase; letter-spacing: 0.22em;}
+    .footer-brand {
+      font-family: 'Cormorant SC', serif;
+      font-size: 0.62rem;
+      color: var(--ink-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.22em;
+    }
     .footer-links { display: flex; gap: 1.8rem; justify-content: center; }
-    .footer-links a, .footer-links .current {
+    .footer-links a,
+    .footer-links .current {
       font-family: 'Cormorant SC', serif;
       font-size: 0.6rem;
       letter-spacing: 0.2em;
@@ -219,7 +233,15 @@
     .footer-links a { color: var(--ink-muted); transition: color 0.2s; }
     .footer-links a:hover { color: var(--ink); }
     .footer-links .current { color: var(--ink); cursor: default; }
-    .footer-salt { font-family: 'EB Garamond', serif; font-size: 0.85rem; font-style: italic; color: var(--ink-muted); text-align: right; }
+    .footer-salt {
+      font-family: 'EB Garamond', serif;
+      font-size: 0.85rem;
+      font-style: italic;
+      color: var(--ink-muted);
+      text-align: right;
+    }
+
+    /* ── RESPONSIVE ──────────────────────────────── */
 
     @media (max-width: 600px) {
       footer { grid-template-columns: 1fr; text-align: center; }
@@ -241,27 +263,35 @@
   <nav class="nav-overlay" id="navOverlay" aria-hidden="true">
     <img src="../assets/logo.svg" style="position: absolute; bottom: -5%; right: -5%; width: 60%; opacity: 0.06; pointer-events: none; z-index: -1; filter: grayscale(1);" alt="" />
     <a href="../features/index.html">Features</a>
-    <span style="font-family: 'Cormorant SC', serif; font-size: clamp(2rem, 6vw, 3.5rem); letter-spacing: 0.06em; line-height: 1.3; color: var(--ink-soft); cursor: default; display: block; margin-bottom: 0.5rem;">About </span>
+    <span class="nav-link-current">About</span>
     <a href="https://github.com/dboiago/Memoix" target="_blank" rel="noopener">Source</a>
     <div class="nav-rule"></div>
-    <p class="nav-meta">Memoix - 2026</p>
+    <p class="nav-meta">Memoix &mdash; 2026</p>
   </nav>
 
   <main>
+
     <header class="section section--left">
       <h1>Intent.</h1>
-      <p>Memoix is a tool for people who cook, taste, and adjust. It keeps recipes, notes, and working records usable during cooking.</p>
+      <div class="origin">
+        <p class="t-soft">Memoix started as a notebook. The kind that fits in a back pocket on the line - quick notes, specials, things worth keeping.</p>
+        <p class="t-muted">Kitchens being what they are, the notebooks didn't last.</p>
+
+        <span class="pull">Recipes are confirmed. The scratch pad is not.</span>
+
+        <p class="t-soft">A spreadsheet replaced them. Tabs for recipes that had been made and proven. A tab for things being tested, sourced, or reconsidered. <em class="warm">That division still exists in the app.</em></p>
+        <p class="t-muted">The spreadsheet got shared. Family, friends, people who wanted to cook something from it. Shared access meant accidental edits. Reading a recipe across columns in a spreadsheet is its own problem. The whole thing became more maintenance than it was worth.</p>
+        <p class="t-soft">So an app replaced the spreadsheet. The structure that had developed over time - course tabs, linked recipes, colour organisation, paired dishes - came with it, <em class="warm">refined rather than rebuilt.</em></p>
+        <p class="t-ink">The default recipes in Memoix are ones that have been made. In restaurants, at home, repeatedly. They are not curated for variety or discovery. They are there because they work.</p>
+      </div>
     </header>
 
     <div class="section section--right">
-      <h2>Core Values</h2>
+      <h2>The Cook</h2>
       <div class="rule"></div>
-      <ul>
-        <li>Clarity over presentation</li>
-        <li>Flexibility over structure</li>
-        <li>Legibility over density</li>
-        <li>Use over optimization</li>
-      </ul>
+      <p>Memoix is built around professional note-taking habits. It assumes you already know how to cook and want somewhere to keep that knowledge organised and accessible, editable.</p>
+      <p>The structure provides this. A smoking entry offers pit notes or a full recipe. Baking surfaces baker's percentages. Modernist entries support equipment-specific fields. These things are present when you need them and absent when you don't.</p>
+      <p>Anyone can use it. Exploring it will get the most out of it.</p>
     </div>
 
     <div class="section section--offset">
@@ -271,19 +301,13 @@
     </div>
 
     <div class="section section--left">
-      <h2>Visual Logic</h2>
-      <p>Asymmetry is intentional. Structure adapts to the type of work. Recipes are written quickly, adjusted often, and remembered <span class="emphasis">imperfectly</span>.</p>
+      <h2>The Work</h2>
+      <p>Memoix is in active development. Core systems are stable - the database layer, import pipelines, cooking views, and sharing.</p>
+      <p>The app is functional and used daily. Rough edges exist because it keeps evolving.</p>
     </div>
 
-    <div class="section section--right">
-        <h2>Tone</h2>
-        <p>Confident. Professional in use. Opinionated when it matters. Measured throughout.</p>
-        <div class="rule"></div>
-    </div>
+    <blockquote>Built with salt.</blockquote>
 
-    <blockquote>
-      Built with salt.
-    </blockquote>
   </main>
 
   <footer>
@@ -303,8 +327,28 @@
     navToggle.addEventListener('click', function () {
       const isOpen = navOverlay.classList.toggle('open');
       navToggle.classList.toggle('open', isOpen);
+      navOverlay.setAttribute('aria-hidden', String(!isOpen));
       document.body.style.overflow = isOpen ? 'hidden' : '';
     });
+
+    navOverlay.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        navOverlay.classList.remove('open');
+        navToggle.classList.remove('open');
+        navOverlay.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+      });
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && navOverlay.classList.contains('open')) {
+        navOverlay.classList.remove('open');
+        navToggle.classList.remove('open');
+        navOverlay.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+      }
+    });
   </script>
+
 </body>
 </html>
