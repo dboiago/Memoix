@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Features — Memoix</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Cormorant+SC:wght@400;500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink:       #e8b4a0;
+      --ink-soft:  #e8d5c4;
+      --ink-muted: #9b9b9b;
+      --rule:      #3f3f46;
+      --paper:     #242424;
+      --paper-dark:#1a1a1a;
+    }
+
+    body {
+      background: var(--paper);
+      color: var(--ink-soft);
+      font-family: 'EB Garamond', serif;
+      line-height: 1.7;
+      font-size: 18px;
+      overflow-x: hidden;
+    }
+
+    /* ── NAVIGATION ── */
+    .nav-top {
+      position: fixed; top: 0; left: 0; width: 100%; padding: 1.6rem 2rem;
+      display: flex; justify-content: space-between; align-items: center;
+      z-index: 400; pointer-events: none;
+    }
+    .back-link {
+      font-family: 'Cormorant SC', serif; color: var(--ink-muted);
+      text-decoration: none; font-size: 0.7rem; letter-spacing: 0.2em;
+      text-transform: uppercase; pointer-events: all; transition: color 0.2s;
+    }
+    .back-link:hover { color: var(--ink); }
+
+    .nav-toggle {
+      background: none; border: none; cursor: pointer;
+      display: flex; flex-direction: column; gap: 5px; padding: 6px; pointer-events: all;
+    }
+    .nav-toggle span { display: block; width: 20px; height: 1px; background: var(--ink-muted); transition: 0.25s; }
+    .nav-toggle.open span:nth-child(1) { transform: translateY(6px) rotate(45deg); background: var(--ink); }
+    .nav-toggle.open span:nth-child(2) { opacity: 0; }
+    .nav-toggle.open span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); background: var(--ink); }
+
+    .nav-overlay {
+      position: fixed; inset: 0; background: var(--paper-dark); z-index: 300;
+      display: flex; flex-direction: column; justify-content: center; padding: 0 8vw;
+      opacity: 0; pointer-events: none; transition: opacity 0.3s ease;
+    }
+
+    .nav-overlay a:hover { color: var(--ink); }
+
+    .nav-overlay.open { opacity: 1; pointer-events: all; }
+    .nav-overlay a, .nav-link-current {
+      font-family: 'Cormorant SC', serif; font-size: clamp(2rem, 6vw, 3.5rem);
+      letter-spacing: 0.06em; line-height: 1.3; display: block; margin-bottom: 0.5rem; text-decoration: none;
+    }
+    .nav-overlay a { color: var(--ink-muted); }
+    .nav-link-current { color: var(--ink); cursor: default; }
+    .nav-overlay img.watermark { position: absolute; bottom: -5%; right: -5%; width: 60%; opacity: 0.06; pointer-events: none; z-index: -1; }
+
+    .nav-rule {
+      width: 2rem;
+      height: 1px;
+      background: var(--rule);
+      margin: 2rem 0; /* Matches the original 2rem spacing */
+    }
+
+    .nav-meta {
+      font-family: 'Cormorant SC', serif;
+      font-size: 0.62rem;
+      letter-spacing: 0.24em;
+      color: var(--ink-muted);
+      text-transform: uppercase;
+    }
+
+    /* ── LAYOUT ── */
+    main { max-width: 1000px; margin: 0 auto; padding: 10rem 2rem 6rem; position: relative; }
+    
+    .section { margin-bottom: 8rem; }
+    h1 { font-family: 'Playfair Display', serif; font-size: clamp(3.5rem, 9vw, 6rem); color: var(--ink); line-height: 1; margin-bottom: 2rem; }
+    .lead { font-size: 1.4rem; max-width: 600px; color: var(--ink-soft); }
+
+    .feature-group { display: flex; flex-direction: column; }
+    
+    .feature-row { width: 100%; margin-bottom: 12rem; display: flex; position: relative; }
+    .row-right { justify-content: flex-end; }
+    .row-left { justify-content: flex-start; }
+    .row-center { justify-content: center; text-align: center; }
+
+    .feature-item { position: relative; display: flex; flex-direction: column; gap: 1.5rem; width: 100%; max-width: 550px; }
+    .row-center .feature-item { max-width: 700px; }
+
+    .feature-text h2 { font-family: 'Cormorant SC', serif; font-size: 0.7rem; letter-spacing: 0.3em; color: var(--ink-muted); text-transform: uppercase; margin-bottom: 1rem; }
+    .feature-text h3 { font-family: 'Cormorant SC', serif; font-size: 1.1rem; color: var(--ink); margin-bottom: 0.75rem; letter-spacing: 0.1em; }
+    
+    .tag-cloud { display: flex; gap: 0.6rem; margin-top: 1.5rem; flex-wrap: wrap; }
+    .row-center .tag-cloud { justify-content: center; }
+    .tag-cloud span { font-family: 'Cormorant SC', serif; font-size: 0.65rem; border: 1px solid var(--rule); padding: 2px 8px; color: var(--ink-muted); text-transform: uppercase; }
+
+    .detail { margin-top: 1rem; font-style: italic; color: var(--ink-muted); font-size: 0.9rem; border-left: 1px solid var(--rule); padding-left: 1rem; text-align: left; }
+
+    /* ── IMAGES & MARGINALIA ── */
+    .marginal-box {
+      width: 100%; aspect-ratio: 9 / 19; background: #1f1f1f; border: 1px solid var(--rule); border-radius: 6px;
+      cursor: zoom-in; display: flex; align-items: center; justify-content: center;
+      color: var(--rule); font-family: 'Cormorant SC', serif; font-size: 0.6rem; text-transform: uppercase;
+    }
+    .marginal-box img { width: 100%; height: 100%; object-fit: cover; border-radius: 5px; }
+    .marginal-box--wide { aspect-ratio: 16 / 9; }
+
+    /* Constrain the centered phone image so it doesn't balloon */
+    .row-center .marginal-box {
+      max-width: 280px; /* Adjust this to your preferred "phone" width */
+      margin: 2rem auto 0; /* Centers the box below the text */
+    }
+
+    /* Ensure the aspect ratio remains sharp */
+    .row-center .marginal-box {
+      aspect-ratio: 9 / 19; 
+    }
+
+    @media (min-width: 1100px) {
+      .feature-item--has-image .marginal-box { position: absolute; left: calc(100% + 4rem); top: 0; width: 240px; }
+      .row-right .feature-item--has-image .marginal-box { left: auto; right: calc(100% + 4rem); }
+      .row-center .feature-item--has-image .marginal-box { position: relative; left: auto; right: auto; width: 100%; margin-top: 2rem; }
+    }
+
+    /* ── GRID SECTION ── */
+    .feature-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 4rem 6rem; width: 100%; text-align: left; }
+    .grid-item h3 { font-family: 'Cormorant SC', serif; font-size: 0.9rem; color: var(--ink); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.1em; }
+    .grid-item p { font-size: 0.95rem; line-height: 1.6; }
+
+    /* ── LIGHTBOX ── */
+    #lightbox { position: fixed; inset: 0; background: rgba(26, 26, 26, 0.98); z-index: 1000; display: none; align-items: center; justify-content: center; cursor: zoom-out; padding: 2rem; }
+    #lightbox img { max-width: 100%; max-height: 90vh; border-radius: 6px; border: 1px solid var(--rule); }
+
+    /* ── FOOTER ── */
+    footer { border-top: 1px solid var(--rule); padding: 4rem 2rem 2rem; max-width: 800px; margin: 0 auto; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; }
+    .footer-brand { font-family: 'Cormorant SC', serif; font-size: 0.62rem; color: var(--ink-muted); text-transform: uppercase; letter-spacing: 0.22em; }
+    .footer-links { display: flex; gap: 1.8rem; justify-content: center; }
+    .footer-links a, .footer-links .current { font-family: 'Cormorant SC', serif; font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; text-decoration: none; }
+    .footer-links a { color: var(--ink-muted); }
+    .footer-links .current { color: var(--ink); }
+    .footer-salt { font-family: 'EB Garamond', serif; font-size: 0.85rem; font-style: italic; color: var(--ink-muted); text-align: right; }
+
+    /* ── MOBILE OVERRIDES ── */
+    @media (min-width: 1100px) {
+      .feature-row { display: flex; align-items: flex-start; gap: 4rem; }
+      .row-left { padding-right: 280px; }
+      .row-right { padding-left: 280px; flex-direction: row-reverse;}
+      .feature-item--has-image .marginal-box { position: absolute; width: 240px; top: 0; }
+      .row-left .marginal-box { left: 100%; margin-left: 4rem; }
+      .row-right .marginal-box { right: 100%; margin-right: 4rem; }
+      .feature-row { min-height: 450px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="nav-top">
+    <a href="../index.html" class="back-link">&larr; Return</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <nav class="nav-overlay" id="navOverlay" aria-hidden="true">
+    <img src="../assets/logo.svg" style="position: absolute; bottom: -5%; right: -5%; width: 60%; opacity: 0.06; pointer-events: none; z-index: -1; filter: grayscale(1);" alt="" />
+    <span style="font-family: 'Cormorant SC', serif; font-size: clamp(2rem, 6vw, 3.5rem); letter-spacing: 0.06em; line-height: 1.3; color: var(--ink-soft); cursor: default; display: block; margin-bottom: 0.5rem;">Features</span>
+    <a href="../about/index.html">About</a>
+    <a href="https://github.com/dboiago/Memoix" target="_blank" rel="noopener">Source</a>
+    <div class="nav-rule"></div>
+    <p class="nav-meta">Memoix - 2026</p>
+  </nav>
+
+  <main>
+    <section class="section">
+      <h1>Capabilities.</h1>
+      <p class="lead">A relational archive for the kitchen. Memoix replaces generic templates with specialized models for formats that don't fit standard structures.</p>
+    </section>
+
+    <div class="feature-group">
+      
+      <div class="feature-row row-right">
+        <div class="feature-item feature-item--has-image">
+          <div class="feature-text">
+            <h2>The Model</h2>
+            <h3>Flexible Recipe Architecture</h3>
+            <p>Memoix handles smoking pit notes, pizza compositions, and modernist process logs alongside conventional recipes. Entries can be partial, technical, or format-specific without needing to conform.</p>
+            <div class="tag-cloud">
+              <span>Pit Notes</span><span>Modernist Techniques</span><span>Cellar Logs</span>
+            </div>
+          </div>
+          <div class="marginal-box" onclick="zoomImage(this)">
+            <img src="../assets/screenshots/pit-notes.png" alt="Pit Notes" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+      <div class="feature-row row-left">
+        <div class="feature-item feature-item--has-image">
+          <div class="feature-text">
+            <h2>Ingestion</h2>
+            <h3>Import & Normalisation</h3>
+            <p>OCR for physical books, URL parsing for web recipes, and deep-link imports. Imported recipes have fractions, units and notation are standardised automatically for consistency.</p>
+            <p class="detail">Optional AI-assisted import is available via user-provided API keys for particularly difficult formats.</p>
+          </div>
+          <div class="marginal-box" onclick="zoomImage(this)">
+            <img src="../assets/screenshots/import-review.png" alt="OCR Import Review" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+      <div class="feature-row row-center">
+        <div class="feature-item feature-item--has-image">
+          <div class="feature-text">
+            <h2>The Line</h2>
+            <h3>Side-by-Side Cooking</h3>
+            <p>Ingredients and directions scroll independently in Side-by-Side mode. Long-press any timed direction to trigger a persistent background timer that continues even if the app isn't focused.</p>
+            <p class="detail">Long press any ingredient to view flavour profiles and substitutions when something is missing.</p>
+          </div>
+          <div class="marginal-box" onclick="zoomImage(this)">
+            <img src="../assets/screenshots/cooking.png" alt="Side-by-Side Cooking" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+      <div class="feature-row">
+        <div class="feature-grid">
+          <div class="feature-item">
+            <h3>Ingredient Scaling</h3>
+            <p>Long-press serving sizes to scale quantities in-session. Original measurements remain intact in the database.</p>
+          </div>
+          <div class="feature-item">
+            <h3>Recipe Sharing</h3>
+            <p>Share recipes via QR codes, text messages, or email. Inlcuding offline transfer between devices.</p>
+          </div>
+          <div class="feature-item">
+            <h3>Step-Linked Images</h3>
+            <p>Gallery photos can be pinned to specific steps, allowing for visual checks on texture or colour without losing your place.</p>
+          </div>
+          <div class="feature-item">
+            <h3>Kitchen Tools</h3>
+            <p>Measurement converters, recipe comparison, and an auto-saved scratch pad for mid-process notes. Recipes can be compared, reduced, and combined into new drafts.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <div id="lightbox" onclick="this.style.display='none'">
+    <img id="lightboxImg" src="" alt="" />
+  </div>
+
+  <footer>
+    <span class="footer-brand">Memoix</span>
+    <nav class="footer-links">
+      <span class="current">Features</span>
+      <a href="../about/index.html">About</a>
+      <a href="https://github.com/dboiago/Memoix">GitHub</a>
+    </nav>
+    <span class="footer-salt">Built with salt.</span>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const navOverlay = document.getElementById('navOverlay');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+
+    navToggle.addEventListener('click', () => {
+      const isOpen = navOverlay.classList.toggle('open');
+      navToggle.classList.toggle('open', isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+
+    function zoomImage(box) {
+      const img = box.querySelector('img');
+      if (img) {
+        lightboxImg.src = img.src;
+        lightbox.style.display = 'flex';
+      } else {
+        // For testing placeholder boxes
+        console.log("No image found in this placeholder box.");
+      }
+    }
+  </script>
+</body>
+</html>
