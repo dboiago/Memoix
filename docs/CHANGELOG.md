@@ -1,16 +1,16 @@
-## Memoix v1.0.0 — 2026-04-16
+## Memoix v1.0.0 — 2026-04-22
 
 ### Added
 - Added comprehensive data access layer (DAOs) to handle complex relational queries via Drift
 - Added image migration service to safely transition legacy file paths and blob data into the new database
 - Added strict `.env` file environment configuration for all API keys and OAuth credentials
 - Integrated deep linking infrastructure to route `memoix://` URIs internally
-- Added intelligent clipboard sniffer on mobile to securely prompt recipe imports upon app resume
 - Added dynamic manual link-entry fallback to the QR scanner for desktop/web or when camera access is denied
 - Added new reusable core UI components: card shell, filter chip, and themed search bar
 - [Internal] Added 5-second debounce timer to background sync triggers to prevent excessive network calls
 
 ### Fixed
+- Fixed critical database integrity issue by enforcing strict UUID preservation during Drift `DoUpdate` upsert operations
 - Fixed PostgreSQL `bytea` base64 encoding bug that caused failures in Supabase cloud sync
 - Fixed Supabase query filtering by correctly mapping Dart lists to PostgREST CSVs
 - Fixed OneDrive token persistence issues by properly clearing secure storage upon sign-out
@@ -29,6 +29,7 @@
 - [Internal] Shifted heavy data parsing to background isolates using `compute()` to prevent main thread blocking
 
 ### Removed
+- Removed automatic clipboard sniffing on app resume to strictly enforce a privacy-first, opt-in data model
 - Removed Isar database engine and all related dependencies (`isar`, `isar_flutter_libs`, `isar_generator`)
 - Removed all hardcoded dev API keys and OAuth credentials from local configuration files
 
@@ -87,5 +88,3 @@
 - Removed deprecated `ingredient.dart` model from recipes feature
 
 - Removed references to unused variables and dead code in edit and comparison screens
-
-
