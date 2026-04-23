@@ -199,7 +199,7 @@ class MemoixDrawer extends ConsumerWidget {
             Container(
               padding: const EdgeInsets.all(16),
               child: Text(
-                'Made with salt.',
+                'Built with salt.',
                 style: theme.textTheme.bodySmall?.copyWith(
                   color: theme.colorScheme.onSurfaceVariant,
                 ),

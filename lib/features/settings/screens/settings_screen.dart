@@ -421,7 +421,7 @@ class SettingsScreen extends ConsumerWidget {
           const SizedBox(height: 8),
           Center(
             child: Text(
-              'Made with salt.',
+              'Built with salt.',
               style: theme.textTheme.bodySmall?.copyWith(
                 color: theme.colorScheme.onSurfaceVariant,
               ),
