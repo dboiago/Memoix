@@ -391,20 +391,7 @@ class SettingsScreen extends ConsumerWidget {
               }
             },
           ),
-          ListTile(
-            leading: const Icon(Icons.favorite_outline),
-            title: const Text('Support Development'),
-            subtitle: const Text('Optional'),
-            trailing: const Icon(Icons.open_in_new),
-            onTap: () async {
-              final uri = Uri.parse('https://github.com/sponsors/dboiago');
-              if (await canLaunchUrl(uri)) {
-                await launchUrl(uri);
-              } else {
-                MemoixSnackBar.showError('Could not open link');
-              }
-            },
-          ),
+          
 
           const Divider(),
 
