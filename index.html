@@ -285,7 +285,6 @@
       font-size: 0.95rem;
     }
 
-    /* Screenshot sits below copy, slightly offset per alignment */
     .entry-image {
       display: block;
       margin-top: 1.8rem;
@@ -295,14 +294,8 @@
       border-radius: 6px;
     }
 
-    .entry--right .entry-image {
-      margin-left: auto;
-    }
-
-    .entry--center .entry-image {
-      margin-left: auto;
-      margin-right: auto;
-    }
+    .entry--right .entry-image { margin-left: auto; }
+    .entry--center .entry-image { margin-left: auto; margin-right: auto; }
 
     /* ── LAYOUT VARIANTS ─────────────────────────── */
 
@@ -412,7 +405,7 @@
     <a href="about/index.html">About</a>
     <a href="https://github.com/dboiago/Memoix" target="_blank" rel="noopener">Source</a>
     <div class="nav-rule"></div>
-    <p class="nav-meta">Memoix - 2026</p>
+    <p class="nav-meta">Memoix &mdash; 2026</p>
   </nav>
 
   <div class="hero-zone">
@@ -442,30 +435,30 @@
   <main class="content" id="content">
 
     <article class="entry entry--manifesto">
-      <p>Memoix has no opinion about your cloud storage. It does not require an account or background connection.</p>
+      <p>A recipe and reference tool that stays out of the way. No account. No background connection. No opinion about your storage.</p>
       <p>Your recipes are yours. This is not a revolutionary concept.</p>
     </article>
 
     <article class="entry">
-      <span class="entry-label">Import</span>
+      <span class="entry-label">The Source</span>
       <p>Photograph a cookbook page, paste a URL, drop in raw text, or open a share link. Memoix normalises units, title-cases names, and converts fractions to symbols before you review a single line. A review screen lets you adjust, tag, and place the recipe before it saves.</p>
       <p>Works with most major recipe sites. Reads handwritten notebooks. Handles imperial and metric.</p>
       <img src="assets/screenshots/import.png" alt="Recipe import review screen" class="entry-image" />
     </article>
 
     <article class="entry entry--right">
-      <span class="entry-label">Cooking</span>
-      <p>Side-by-side mode keeps ingredients and directions on screen together, each column scrolling independently. Mark steps complete as you work. Long-press any timed step to start a timer that keeps running even in the background. Step images open inline. Ingredient quantities scale by long-pressing the serving size.</p>
+      <span class="entry-label">The Method</span>
+      <p>Side-by-side mode keeps ingredients and directions on screen together, each column scrolling independently. Mark steps complete as you work. Long-press any timed step to start a timer that keeps running in the background. Step images open inline without leaving the recipe.</p>
       <img src="assets/screenshots/cooking.png" alt="Cooking view with side-by-side layout" class="entry-image" />
     </article>
 
     <article class="entry">
-      <span class="entry-label">Structure</span>
-      <p>Recipes organise by course. Component dishes use linked sub-recipes that can scale independently. Pair a main with its sides. Detail screens show what a recipe is paired with, and what links back to it. Meal plans arrange by day and course and can be reorganised by dragging.</p>
+      <span class="entry-label">The Mise</span>
+      <p>Recipes organise by course, but structure extends beyond sorting. Component dishes link as sub-recipes and scale independently. Pair a main with its sides. Detail screens show what connects, in both directions. Meal plans arrange by day and course and can be reorganised as things change.</p>
     </article>
 
     <article class="entry entry--center">
-      <span class="entry-label">Sharing</span>
+      <span class="entry-label">The Family Meal</span>
       <p>Export any recipe as a share link or QR code. Scan the code in Memoix to import directly. No internet required. No account on either end.</p>
       <p>This is by design, not oversight.</p>
     </article>
@@ -514,7 +507,6 @@
 
     window.addEventListener('scroll', onScroll, { passive: true });
 
-    /* ── Nav overlay ── */
     navToggle.addEventListener('click', function () {
       const isOpen = navOverlay.classList.toggle('open');
       navToggle.classList.toggle('open', isOpen);
@@ -540,7 +532,6 @@
       }
     });
 
-    /* ── Download flyouts ── */
     function makeDownloadToggle(btnId, flyoutId) {
       const btn    = document.getElementById(btnId);
       const flyout = document.getElementById(flyoutId);
