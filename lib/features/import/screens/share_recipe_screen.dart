@@ -723,8 +723,8 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
     if (_shareLink == null || _selectedItem == null) return;
     try {
       SharePlus.instance.share(ShareParams(
-        text: 'Check out this ${_selectedItem!.type.singularName.toLowerCase()}: ${_selectedItem!.name}\n\n$_shareLink',
-        subject: _selectedItem!.name,
+        text: 'Order up. ${_selectedItem!.name}\n\nA recipe from Memoix has been shared with you. Copy this entire message into the app\'s URL importer to open it.\n\n$_shareLink',
+        subject: '${_selectedItem!.name} - Shared from Memoix',
       ),
       );
     } catch (e) {

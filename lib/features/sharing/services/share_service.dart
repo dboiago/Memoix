@@ -100,8 +100,8 @@ class ShareService {
     
     try {
       await SharePlus.instance.share(ShareParams(
-        text: 'Check out this recipe from Memoix!\n\nTo view it, just copy this entire message and paste it into the URL importer in the app.\n\n$link',
-        subject: 'Recipe: ${recipe.name}',
+        text: 'Order up. ${recipe.name}\n\nA recipe from Memoix has been shared with you. Copy this entire message into the app\'s URL importer to open it.\n\n$link',
+        subject: '${recipe.name} - Shared from Memoix',
       ),
       );
     } catch (e) {
@@ -257,8 +257,8 @@ class ShareService {
     
     try {
       await SharePlus.instance.share(ShareParams(
-        text: 'Check out this recipe from Memoix!\n\nTo view it, just copy this entire message and paste it into the URL importer in the app.\n\n$link',
-        subject: 'Pizza: ${pizza.name}',
+        text: 'Order up. ${pizza.name}\n\nA recipe from Memoix has been shared with you. Copy this entire message into the app\'s URL importer to open it.\n\n$link',
+        subject: '${pizza.name} - Shared from Memoix',
       ),
       );
     } catch (e) {
@@ -389,8 +389,8 @@ class ShareService {
     
     try {
       await SharePlus.instance.share(ShareParams(
-        text: 'Check out this recipe from Memoix!\n\nTo view it, just copy this entire message and paste it into the URL importer in the app.\n\n$link',
-        subject: 'Sandwich: ${sandwich.name}',
+        text: 'Order up. ${sandwich.name}\n\nA recipe from Memoix has been shared with you. Copy this entire message into the app\'s URL importer to open it.\n\n$link',
+        subject: '${sandwich.name} - Shared from Memoix',
       ),
       );
     } catch (e) {
@@ -532,8 +532,8 @@ class ShareService {
     
     try {
       await SharePlus.instance.share(ShareParams(
-        text: 'Check out this recipe from Memoix!\n\nTo view it, just copy this entire message and paste it into the URL importer in the app.\n\n$link',
-        subject: 'Smoking: ${recipe.name}',
+        text: 'Order up. ${recipe.name}\n\nA recipe from Memoix has been shared with you. Copy this entire message into the app\'s URL importer to open it.\n\n$link',
+        subject: '${recipe.name} - Shared from Memoix',
       ),
       );
     } catch (e) {
@@ -661,8 +661,8 @@ class ShareService {
     
     try {
       await SharePlus.instance.share(ShareParams(
-        text: 'Check out this recipe from Memoix!\n\nTo view it, just copy this entire message and paste it into the URL importer in the app.\n\n$link',
-        subject: 'Modernist: ${recipe.name}',
+        text: 'Order up. ${recipe.name}\n\nA recipe from Memoix has been shared with you. Copy this entire message into the app\'s URL importer to open it.\n\n$link',
+        subject: '${recipe.name} - Shared from Memoix',
       ),
       );
     } catch (e) {
@@ -811,8 +811,8 @@ class ShareService {
     
     try {
       await SharePlus.instance.share(ShareParams(
-        text: 'Check out this recipe from Memoix!\n\nTo view it, just copy this entire message and paste it into the URL importer in the app.\n\n$link',
-        subject: entry.name,
+        text: 'Order up. ${entry.name}\n\nA recipe from Memoix has been shared with you. Copy this entire message into the app\'s URL importer to open it.\n\n$link',
+        subject: '${entry.name} - Shared from Memoix',
       ),
       );
     } catch (e) {
@@ -890,8 +890,8 @@ class ShareService {
     
     try {
       await SharePlus.instance.share(ShareParams(
-        text: 'Check out this recipe from Memoix!\n\nTo view it, just copy this entire message and paste it into the URL importer in the app.\n\n$link',
-        subject: entry.name,
+        text: 'Order up. ${entry.name}\n\nA recipe from Memoix has been shared with you. Copy this entire message into the app\'s URL importer to open it.\n\n$link',
+        subject: '${entry.name} - Shared from Memoix',
       ),
       );
     } catch (e) {
