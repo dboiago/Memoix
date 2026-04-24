@@ -769,6 +769,16 @@ class RecipeRepository {
     } catch (_) {
       recipe.uuid = _uuid.v4();
     }
+
+    // Copy-on-write: when a user saves edits to a Memoix default recipe,
+    // transfer ownership to 'personal' before persisting. The UUID is kept
+    // intact so pairings and meal-plan references continue to resolve.
+    // The seed layer will not re-insert this UUID on the next startup because
+    // the row already exists (with source = 'personal').
+    if (recipe.source == RecipeSource.memoix) {
+      recipe.source = RecipeSource.personal;
+    }
+
     if (!preserveTimestamp) recipe.updatedAt = DateTime.now();
     UnitNormalizer.normalizeUnitsInList(recipe.ingredients);
 
@@ -1112,16 +1122,30 @@ class RecipeRepository {
 
   // ============ SYNC HELPERS ============
 
+  /// Seeds Memoix default recipes idempotently.
+  ///
+  /// For each recipe, checks whether its UUID is already in Drift before
+  /// inserting. Recipes that already exist are skipped entirely — their rows
+  /// and ingredients are never overwritten. This preserves user edits (the
+  /// copy-on-write promotion to 'personal' in [saveRecipe]) and all
+  /// personalisation data (ratings, favourite flags, cook counts).
   Future<void> syncMemoixRecipes(List<Recipe> recipes) async {
-    final companions = recipes.map(_toCompanion).toList();
-    await _db.recipeDao.syncMemoixRecipes(companions);
-
     for (final recipe in recipes) {
+      if (recipe.uuid.isEmpty) recipe.uuid = _uuid.v4();
+
+      // Skip recipes that are already seeded.
+      final existing = await _db.recipeDao.getRecipeByUuid(recipe.uuid);
+      if (existing != null) continue;
+
+      // Insert the recipe row via the DAO (also skips if UUID appeared in a
+      // concurrent call — the DAO wraps the check+insert in a transaction).
+      await _db.recipeDao.syncMemoixRecipes([_toCompanion(recipe)]);
+
+      // Insert ingredients for the newly-created row.
       final dbRecipe = await _db.recipeDao.getRecipeByUuid(recipe.uuid);
       if (dbRecipe == null) continue;
-      await _db.recipeDao.deleteIngredientsForRecipe(dbRecipe.id);
-      final ingredientCompanions = _toIngredientCompanions(dbRecipe.id, recipe.ingredients);
-      await _db.recipeDao.saveIngredients(ingredientCompanions);
+      await _db.recipeDao.saveIngredients(
+          _toIngredientCompanions(dbRecipe.id, recipe.ingredients));
     }
   }
 

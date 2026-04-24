@@ -1,7 +1,7 @@
 name: memoix
 description: For savv(ou)ry minds.
 publish_to: 'none'
-version: 1.0.0+2
+version: 1.0.1+3
 
 environment:
   sdk: '>=3.2.0 <4.0.0'
@@ -103,6 +103,7 @@ flutter:
     - assets/images/
     - assets/ingredients/
     - assets/audio/
+    - assets/recipes/
 
   fonts:
     - family: Inter

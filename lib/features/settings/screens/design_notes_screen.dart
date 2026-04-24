@@ -192,7 +192,7 @@ class _DesignNotesScreenState extends ConsumerState<DesignNotesScreen> {
           const _DesignNote(
             title: 'Kitchen Timers',
             description:
-                'Timers continue running if you close the app or switch screens. '
+                'Timers continue running in the background even if you switch screens. '
                 'Multiple timers can run at the same time.',
           ),
           const _DesignNote(

@@ -7,7 +7,7 @@ import '../core/providers.dart';
 import '../core/services/deep_link_service.dart';
 import '../core/services/integrity_service.dart';
 import '../core/services/update_service.dart';
-import '../core/services/github_recipe_service.dart';
+import '../core/services/memoix_recipe_service.dart';
 import '../core/widgets/update_available_dialog.dart';
 import '../core/widgets/memoix_snackbar.dart';
 import '../features/settings/screens/settings_screen.dart';

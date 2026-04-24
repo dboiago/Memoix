@@ -144,42 +144,21 @@ class RecipeDao extends DatabaseAccessor<AppDatabase>
       (update(recipes)..where((r) => r.id.equals(id)))
           .write(RecipesCompanion(updatedAt: Value(DateTime.now())));
 
-  /// Replaces all memoix-sourced recipes atomically.
+  /// Seeds Memoix-sourced recipes idempotently.
+  ///
+  /// Each [RecipesCompanion] is inserted only when its UUID is not already
+  /// present in the [recipes] table. Existing rows are never modified so user
+  /// edits (copy-on-write promotions to 'personal') and personalisation data
+  /// (ratings, favourite flags, cook counts) are always preserved.
   Future<void> syncMemoixRecipes(List<RecipesCompanion> incoming) =>
       transaction(() async {
-        final incomingUuids = <String>[];
-
-        for (var row in incoming) {
+        for (final row in incoming) {
           final uuid = row.uuid.value;
-          incomingUuids.add(uuid);
-
-          final existing = await (select(recipes)
+          final exists = await (select(recipes)
                 ..where((r) => r.uuid.equals(uuid)))
               .getSingleOrNull();
-
-          if (existing != null) {
-            row = row.copyWith(
-              isFavorite: Value(existing.isFavorite),
-              rating: Value(existing.rating),
-              cookCount: Value(existing.cookCount),
-              headerImage: Value(existing.headerImage),
-            );
-          }
-
-          await into(recipes).insert(
-            row,
-            onConflict: DoUpdate((old) => row, target: [recipes.uuid]),
-          );
-        }
-
-        if (incomingUuids.isNotEmpty) {
-          await (delete(recipes)
-                ..where(
-                  (r) =>
-                      r.source.equals('memoix') &
-                      r.uuid.isNotIn(incomingUuids),
-                ))
-              .go();
+          if (exists != null) continue; // UUID already present — no-op.
+          await into(recipes).insert(row);
         }
       });
 

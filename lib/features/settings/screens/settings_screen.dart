@@ -7,7 +7,7 @@ import 'package:package_info_plus/package_info_plus.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-import '../../../core/services/github_recipe_service.dart';
+import '../../../core/services/memoix_recipe_service.dart';
 import '../../../core/services/integrity_service.dart';
 import '../../../core/services/supabase_auth_service.dart';
 import '../../../core/services/supabase_sync_service.dart';
