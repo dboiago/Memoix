@@ -1,3 +1,22 @@
+## Memoix - v1.0.1+3 - 2026-04-24
+
+### Added
+- Implemented `SupabaseSecureStorage` using `flutter_secure_storage` for encrypted JWT/session persistence
+- Added `maxLength` enforcement across all recipe, pizza, and sandwich edit screens (120 chars for titles, 4000 for notes)
+- Enforced 4096-char payload limits and added double-initialisation guards in guards in `DeepLinkService`
+
+### Fixed
+- Resolved PostgreSQL Error 21000 by implementing Dart-side payload deduplication before upserts
+- Added `try/catch` isolation loops to JSON parsing and Drift database insertions to prevent batch-processing crashes
+- Tightened URI host matching to prevent unrecognised deep links from triggering the recipe handler
+- Eliminated legacy Google boilerplate and removed deprecated UI debt
+
+### Changed
+- Rebuilt Light Mode for better accessibility and contrast; set Dark Mode as the system default
+- Refactored `syncRecipesProvider` to delegate to `SyncNotifier` for centralised parallel execution
+- Migrated to a "Copy-on-Write" local seed database model for better offline reliability
+
+
 ## Memoix v1.0.0 — 2026-04-22
 
 ### Added
@@ -75,7 +94,7 @@
 - Updated navigation and state management for recipe comparison to use RouteObserver and RouteAware for reliable resets.
 - Updated draft and scratch pad screens to improve provider refresh and tab handling
 - Updated application ID from `com.example.memoix` to `io.github.dboiago.memoix`
-- [Internal] Restructured code for provider-specific initialization and error handling in storage services
+- [Internal] Restructured code for provider-specific initialisation and error handling in storage services
 - [Internal] Cleaned up duplicate code and improved debug logging in import and storage modules
 - [Internal] Restructured Compare button UI to group elements for more reliable reactive hiding/showing
 - [Internal] Updated save/convert functions in draft editor for consistency with edit screen
