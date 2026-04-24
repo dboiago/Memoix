@@ -3,7 +3,9 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 
 /// Backs Supabase session tokens with the platform keystore
 /// (Keychain on iOS, EncryptedSharedPreferences on Android).
-class SupabaseSecureStorage extends GoTrueAsyncStorage {
+class SupabaseSecureStorage extends GotrueAsyncStorage {
+  const SupabaseSecureStorage();
+  
   static const _storage = FlutterSecureStorage(
     aOptions: AndroidOptions(encryptedSharedPreferences: true),
     iOptions: IOSOptions(accessibility: KeychainAccessibility.first_unlock),
