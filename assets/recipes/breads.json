@@ -6,8 +6,7 @@
     "cuisine": "IT",
     "subcategory": null,
     "serves": null,
-    "time": null,
-
+    "time": "3 hr 40 min",
     "pairsWith": [],
     "pairedRecipeIds": [],
     "notes": null,
@@ -104,8 +103,7 @@
     "cuisine": "TW",
     "subcategory": null,
     "serves": "8",
-    "time": null,
-
+    "time": "1 hr 50 min",
     "pairsWith": [],
     "pairedRecipeIds": [],
     "notes": null,
@@ -211,7 +209,7 @@
     "cuisine": "IT",
     "subcategory": null,
     "serves": null,
-    "time": null,
+    "time": "1 hr 30 min",
     "pairsWith": [],
     "pairedRecipeIds": [],
     "notes": null,

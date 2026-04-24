@@ -7,8 +7,6 @@
     "technique": null,
     "serves": null,
     "time": "1 day",
-    "serving_size": null,
-    "total_time_minutes": 150,
     "difficulty": null,
     "equipment": [
       "Electronic Pressure Cooker",
@@ -131,9 +129,7 @@
     "type": "technique",
     "technique": "Reverse Spherification",
     "serves": null,
-    "time": null,
-    "serving_size": null,
-    "total_time_minutes": 85,
+    "time": "1 hr 25 min",
     "difficulty": null,
     "equipment": [],
     "ingredients": [
@@ -202,9 +198,7 @@
     "type": "technique",
     "technique": "Snow & Powders",
     "serves": null,
-    "time": null,
-    "serving_size": null,
-    "total_time_minutes": 10,
+    "time": "10 min",
     "difficulty": null,
     "equipment": [],
     "ingredients": [
@@ -258,9 +252,7 @@
     "type": "technique",
     "technique": "Spherification",
     "serves": null,
-    "time": null,
-    "serving_size": null,
-    "total_time_minutes": 80,
+    "time": "1 hr 20 min",
     "difficulty": null,
     "equipment": [
       "Slotted Spoon"
