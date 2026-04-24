@@ -35,10 +35,10 @@ class TextNormalizer {
     
     // Words/acronyms that should stay uppercase
     const uppercaseWords = {
-      'bbq', 'xo', 'msg', 'aoc', 'dop', 'igp', 'pdo', 'pgi', 'abv', 'ibu',
-      'usa', 'uk', 'eu', 'nyc', 'la', 'sf',
+      'bbq', 'xo', 'msg', 'aoc', 'dop', 'igp', 'pdo', 'pgi', 'abv', 'ibu', 's&p', 'tt', 'ap', 'gf', 'df', 'vg', 'gmo', 'hp', 'a1',
+      'usa', 'uk', 'eu', 'nyc', 'la', 'sf', 'doc', 'docg', 'aop',
       'ipa', 'blt', 'pb', 'pbj',
-      'evoo', 'evo',
+      'evoo', 'evo', 'ev'
       'diy', 'usda', 'fda',
       'ai', 'ml', 'tv', 'dvd', 'cd',
     };
@@ -51,7 +51,7 @@ class TextNormalizer {
       if (word.isEmpty) return word;
       
       // Check if word (without punctuation) is an uppercase acronym
-      final wordLower = word.toLowerCase().replaceAll(RegExp(r'[^a-z]'), '');
+      final wordLower = word.toLowerCase().replaceAll(RegExp(r'[^a-z&0-9]'), '');
       if (uppercaseWords.contains(wordLower)) {
         // Preserve any trailing punctuation but uppercase the letters
         return word.replaceAllMapped(
