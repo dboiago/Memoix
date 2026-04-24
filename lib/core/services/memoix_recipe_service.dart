@@ -66,11 +66,16 @@ class MemoixRecipeService {
       final raw = await rootBundle.loadString('assets/recipes/$filename');
       final data = jsonDecode(raw);
       final list = data is List ? data : [data];
-      return list
-          .whereType<Map<String, dynamic>>()
-          .map((e) => Recipe.fromJson(e)..source = RecipeSource.memoix)
-          .where((r) => r.name.isNotEmpty)
-          .toList();
+      final results = <Recipe>[];
+      for (final e in list.whereType<Map<String, dynamic>>()) {
+        try {
+          final r = Recipe.fromJson(e)..source = RecipeSource.memoix;
+          if (r.name.isNotEmpty) results.add(r);
+        } catch (parseError) {
+          debugPrint('MemoixRecipeService._loadRecipeFile($filename): skipping record: $parseError');
+        }
+      }
+      return results;
     } catch (e) {
       debugPrint('MemoixRecipeService._loadRecipeFile($filename): $e');
       return [];
@@ -81,12 +86,16 @@ class MemoixRecipeService {
     try {
       final raw = await rootBundle.loadString('assets/recipes/pizzas.json');
       final data = jsonDecode(raw) as List<dynamic>;
-      return data
-          .whereType<Map<String, dynamic>>()
-          .map((e) =>
-              pizzaFromJson(e).copyWith(source: PizzaSource.memoix.name))
-          .where((p) => p.name.isNotEmpty)
-          .toList();
+      final results = <Pizza>[];
+      for (final e in data.whereType<Map<String, dynamic>>()) {
+        try {
+          final p = pizzaFromJson(e).copyWith(source: PizzaSource.memoix.name);
+          if (p.name.isNotEmpty) results.add(p);
+        } catch (parseError) {
+          debugPrint('MemoixRecipeService.fetchPizzas: skipping record: $parseError');
+        }
+      }
+      return results;
     } catch (e) {
       debugPrint('MemoixRecipeService.fetchPizzas: $e');
       return [];
@@ -98,12 +107,16 @@ class MemoixRecipeService {
       final raw =
           await rootBundle.loadString('assets/recipes/sandwiches.json');
       final data = jsonDecode(raw) as List<dynamic>;
-      return data
-          .whereType<Map<String, dynamic>>()
-          .map((e) =>
-              sandwichFromJson(e).copyWith(source: SandwichSource.memoix.name))
-          .where((s) => s.name.isNotEmpty)
-          .toList();
+      final results = <Sandwich>[];
+      for (final e in data.whereType<Map<String, dynamic>>()) {
+        try {
+          final s = sandwichFromJson(e).copyWith(source: SandwichSource.memoix.name);
+          if (s.name.isNotEmpty) results.add(s);
+        } catch (parseError) {
+          debugPrint('MemoixRecipeService.fetchSandwiches: skipping record: $parseError');
+        }
+      }
+      return results;
     } catch (e) {
       debugPrint('MemoixRecipeService.fetchSandwiches: $e');
       return [];
@@ -114,12 +127,16 @@ class MemoixRecipeService {
     try {
       final raw = await rootBundle.loadString('assets/recipes/smoking.json');
       final data = jsonDecode(raw) as List<dynamic>;
-      return data
-          .whereType<Map<String, dynamic>>()
-          .map((e) => smokingRecipeFromJson(e)
-              .copyWith(source: SmokingSource.memoix.name))
-          .where((s) => s.name.isNotEmpty)
-          .toList();
+      final results = <SmokingRecipe>[];
+      for (final e in data.whereType<Map<String, dynamic>>()) {
+        try {
+          final s = smokingRecipeFromJson(e).copyWith(source: SmokingSource.memoix.name);
+          if (s.name.isNotEmpty) results.add(s);
+        } catch (parseError) {
+          debugPrint('MemoixRecipeService.fetchSmokingRecipes: skipping record: $parseError');
+        }
+      }
+      return results;
     } catch (e) {
       debugPrint('MemoixRecipeService.fetchSmokingRecipes: $e');
       return [];
@@ -131,11 +148,16 @@ class MemoixRecipeService {
       final raw =
           await rootBundle.loadString('assets/recipes/modernist.json');
       final data = jsonDecode(raw) as List<dynamic>;
-      return data
-          .whereType<Map<String, dynamic>>()
-          .map((e) => ModernistRecipe.fromJson(e)..source = ModernistSource.memoix)
-          .where((m) => m.name.isNotEmpty)
-          .toList();
+      final results = <ModernistRecipe>[];
+      for (final e in data.whereType<Map<String, dynamic>>()) {
+        try {
+          final m = ModernistRecipe.fromJson(e)..source = ModernistSource.memoix;
+          if (m.name.isNotEmpty) results.add(m);
+        } catch (parseError) {
+          debugPrint('MemoixRecipeService.fetchModernistRecipes: skipping record: $parseError');
+        }
+      }
+      return results;
     } catch (e) {
       debugPrint('MemoixRecipeService.fetchModernistRecipes: $e');
       return [];
@@ -146,12 +168,16 @@ class MemoixRecipeService {
     try {
       final raw = await rootBundle.loadString('assets/recipes/cheese.json');
       final data = jsonDecode(raw) as List<dynamic>;
-      return data
-          .whereType<Map<String, dynamic>>()
-          .map((e) =>
-              cheeseEntryFromJson(e).copyWith(source: CheeseSource.memoix.name))
-          .where((c) => c.name.isNotEmpty)
-          .toList();
+      final results = <CheeseEntry>[];
+      for (final e in data.whereType<Map<String, dynamic>>()) {
+        try {
+          final c = cheeseEntryFromJson(e).copyWith(source: CheeseSource.memoix.name);
+          if (c.name.isNotEmpty) results.add(c);
+        } catch (parseError) {
+          debugPrint('MemoixRecipeService.fetchCheeseEntries: skipping record: $parseError');
+        }
+      }
+      return results;
     } catch (e) {
       debugPrint('MemoixRecipeService.fetchCheeseEntries: $e');
       return [];
@@ -162,12 +188,16 @@ class MemoixRecipeService {
     try {
       final raw = await rootBundle.loadString('assets/recipes/cellar.json');
       final data = jsonDecode(raw) as List<dynamic>;
-      return data
-          .whereType<Map<String, dynamic>>()
-          .map((e) =>
-              cellarEntryFromJson(e).copyWith(source: CellarSource.memoix.name))
-          .where((c) => c.name.isNotEmpty)
-          .toList();
+      final results = <CellarEntry>[];
+      for (final e in data.whereType<Map<String, dynamic>>()) {
+        try {
+          final c = cellarEntryFromJson(e).copyWith(source: CellarSource.memoix.name);
+          if (c.name.isNotEmpty) results.add(c);
+        } catch (parseError) {
+          debugPrint('MemoixRecipeService.fetchCellarEntries: skipping record: $parseError');
+        }
+      }
+      return results;
     } catch (e) {
       debugPrint('MemoixRecipeService.fetchCellarEntries: $e');
       return [];
@@ -181,34 +211,22 @@ final MemoixRecipeServiceProvider = Provider<MemoixRecipeService>((ref) {
   return MemoixRecipeService();
 });
 
-/// Provider to sync all data from GitHub (recipes + specialized domains)
+/// Provider to sync all data (recipes + specialized domains).
+/// Delegates to [syncNotifierProvider] so the parallel execution logic
+/// lives in a single place ([SyncNotifier.sync]).
 final syncRecipesProvider = FutureProvider<void>((ref) async {
-  final service = ref.watch(MemoixRecipeServiceProvider);
-  final recipeRepo = ref.watch(recipeRepositoryProvider);
-  final pizzaRepo = ref.watch(pizzaRepositoryProvider);
-  final sandwichRepo = ref.watch(sandwichRepositoryProvider);
-  final smokingRepo = ref.watch(smokingRepositoryProvider);
-  final modernistRepo = ref.watch(modernistRepositoryProvider);
-  final cheeseRepo = ref.watch(cheeseRepositoryProvider);
-  final cellarRepo = ref.watch(cellarRepositoryProvider);
-  
-  // Sync all domains in parallel
-  await Future.wait([
-    service.fetchAllRecipes().then((recipes) => recipeRepo.syncMemoixRecipes(recipes)),
-    service.fetchPizzas().then((pizzas) => _syncPizzas(pizzaRepo, pizzas)),
-    service.fetchSandwiches().then((sandwiches) => _syncSandwiches(sandwichRepo, sandwiches)),
-    service.fetchSmokingRecipes().then((recipes) => _syncSmokingRecipes(smokingRepo, recipes)),
-    service.fetchModernistRecipes().then((recipes) => _syncModernistRecipes(modernistRepo, recipes)),
-    service.fetchCheeseEntries().then((entries) => _syncCheeseEntries(cheeseRepo, entries)),
-    service.fetchCellarEntries().then((entries) => _syncCellarEntries(cellarRepo, entries)),
-  ]);
+  await ref.read(syncNotifierProvider.notifier).sync();
 });
 
 /// Seed pizzas — insert only if UUID is not already present.
 Future<void> _syncPizzas(PizzaRepository repo, List<Pizza> pizzas) async {
   for (final pizza in pizzas) {
-    final existing = await repo.getPizzaByUuid(pizza.uuid);
-    if (existing == null) await repo.savePizza(pizza);
+    try {
+      final existing = await repo.getPizzaByUuid(pizza.uuid);
+      if (existing == null) await repo.savePizza(pizza);
+    } catch (e) {
+      debugPrint('_syncPizzas: skipping ${pizza.uuid}: $e');
+    }
   }
 }
 
@@ -216,8 +234,12 @@ Future<void> _syncPizzas(PizzaRepository repo, List<Pizza> pizzas) async {
 Future<void> _syncSandwiches(
     SandwichRepository repo, List<Sandwich> sandwiches) async {
   for (final sandwich in sandwiches) {
-    final existing = await repo.getSandwichByUuid(sandwich.uuid);
-    if (existing == null) await repo.saveSandwich(sandwich);
+    try {
+      final existing = await repo.getSandwichByUuid(sandwich.uuid);
+      if (existing == null) await repo.saveSandwich(sandwich);
+    } catch (e) {
+      debugPrint('_syncSandwiches: skipping ${sandwich.uuid}: $e');
+    }
   }
 }
 
@@ -225,8 +247,12 @@ Future<void> _syncSandwiches(
 Future<void> _syncSmokingRecipes(
     SmokingRepository repo, List<SmokingRecipe> recipes) async {
   for (final recipe in recipes) {
-    final existing = await repo.getRecipeByUuid(recipe.uuid);
-    if (existing == null) await repo.saveRecipe(recipe);
+    try {
+      final existing = await repo.getRecipeByUuid(recipe.uuid);
+      if (existing == null) await repo.saveRecipe(recipe);
+    } catch (e) {
+      debugPrint('_syncSmokingRecipes: skipping ${recipe.uuid}: $e');
+    }
   }
 }
 
@@ -234,8 +260,12 @@ Future<void> _syncSmokingRecipes(
 Future<void> _syncModernistRecipes(
     ModernistRepository repo, List<ModernistRecipe> recipes) async {
   for (final recipe in recipes) {
-    final existing = await repo.getByUuid(recipe.uuid);
-    if (existing == null) await repo.save(recipe);
+    try {
+      final existing = await repo.getByUuid(recipe.uuid);
+      if (existing == null) await repo.save(recipe);
+    } catch (e) {
+      debugPrint('_syncModernistRecipes: skipping ${recipe.uuid}: $e');
+    }
   }
 }
 
@@ -243,8 +273,12 @@ Future<void> _syncModernistRecipes(
 Future<void> _syncCheeseEntries(
     CheeseRepository repo, List<CheeseEntry> entries) async {
   for (final entry in entries) {
-    final existing = await repo.getEntryByUuid(entry.uuid);
-    if (existing == null) await repo.saveEntry(entry);
+    try {
+      final existing = await repo.getEntryByUuid(entry.uuid);
+      if (existing == null) await repo.saveEntry(entry);
+    } catch (e) {
+      debugPrint('_syncCheeseEntries: skipping ${entry.uuid}: $e');
+    }
   }
 }
 
@@ -252,8 +286,12 @@ Future<void> _syncCheeseEntries(
 Future<void> _syncCellarEntries(
     CellarRepository repo, List<CellarEntry> entries) async {
   for (final entry in entries) {
-    final existing = await repo.getEntryByUuid(entry.uuid);
-    if (existing == null) await repo.saveEntry(entry);
+    try {
+      final existing = await repo.getEntryByUuid(entry.uuid);
+      if (existing == null) await repo.saveEntry(entry);
+    } catch (e) {
+      debugPrint('_syncCellarEntries: skipping ${entry.uuid}: $e');
+    }
   }
 }
 
