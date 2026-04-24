@@ -12,6 +12,7 @@ import 'core/services/integrity_service.dart';
 import 'core/services/interface_calibration.dart';
 import 'core/services/schema_migration_service.dart';
 import 'core/services/supabase_auth_service.dart';
+import 'core/services/supabase_secure_storage.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -28,6 +29,9 @@ void main() async {
       ? Supabase.initialize(
           url: supabaseUrl,
           anonKey: supabaseAnonKey,
+          authOptions: const FlutterAuthClientOptions(
+            localStorage: SupabaseSecureStorage(),
+          ),
         ).catchError((e) {
           debugPrint('Supabase initialization failed: $e');
           return null;
