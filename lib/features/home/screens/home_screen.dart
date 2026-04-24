@@ -22,6 +22,7 @@ import '../../cheese/models/cheese_entry.dart';
 import '../../cellar/repository/cellar_repository.dart';
 import '../../cellar/models/cellar_entry.dart';
 import '../../notes/repository/scratch_pad_repository.dart';
+import '../../settings/screens/settings_screen.dart';
 
 class HomeScreen extends ConsumerWidget {
   const HomeScreen({super.key});
