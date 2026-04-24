@@ -72,7 +72,7 @@ class _CourseCardState extends State<CourseCard> {
                     decoration: BoxDecoration(
                       color: (_hovered || _pressed)
                           ? theme.colorScheme.secondary
-                          : theme.scaffoldBackgroundColor.withValues(alpha: 0.7),
+                          : theme.scaffoldBackgroundColor.withValues(alpha: 0.5),
                       borderRadius: BorderRadius.circular(8),
                     ),
                     child: Center(
