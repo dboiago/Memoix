@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class MemoixTheme {
   MemoixTheme._();
 
-  // Dark Theme Colors
+  // Dark Theme Colours
   static const darkBackground = Color(0xFF1A1A1A);    // #1a1a1a
   static const darkSurface = Color(0xFF242424);       // #242424 (card)
   static const darkPrimaryText = Color(0xFFE8D5C4);   // #e8d5c4 (foreground)
@@ -11,13 +11,13 @@ class MemoixTheme {
   static const darkAccent2 = Color(0xFFE8B4A0);       // #e8b4a0 (primary)
   static const darkMuted = Color(0xFF9B9B9B);         // #9b9b9b (muted-foreground)
 
-  // Light Theme Colors
-  static const lightBackground = Color(0xFFFAF9F7);  // #faf9f7
-  static const lightSurface = Color(0xFFFFFFFF);     // #fff (card)
-  static const lightPrimaryText = Color(0xFF4B5563); // #4b5563 (foreground)
-  static const lightAccent1 = Color(0xFFCBB2BF);     // #cbb2bf (secondary)
-  static const lightAccent2 = Color(0xFFD9C2B0);     // #d9c2b0 (primary)
-  static const lightMuted = Color(0xFF9CA3AF);       // #9ca3af
+  // Light Theme Colours
+  static const lightBackground = Color(0xFFEBE6DF);  // #ebe6df
+  static const lightSurface = Color(0xFFF4F1EB);     // #f4f1eb
+  static const lightPrimaryText = Color(0xFF3A424E); // #3a424e
+  static const lightAccent1 = Color(0xFF8A6D8A);     // #8a6d8a
+  static const lightAccent2 = Color(0xFFB57B67);     // #b57b67
+  static const lightMuted = Color(0xFF8A8F98);       // #8a8f98
 
   // Classic Theme Colours
   static const classicBackground = Color(0xFFF5F0E8);  // parchment

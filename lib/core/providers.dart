@@ -45,7 +45,7 @@ final classicsFinalizedProvider = StateProvider<bool>((ref) {
 class ThemeModeNotifier extends StateNotifier<ThemeMode> {
   static const _key = 'theme_mode';
   
-  ThemeModeNotifier() : super(ThemeMode.system) {
+  ThemeModeNotifier() : super(ThemeMode.dark) {
     _loadFromPrefs();
   }
   

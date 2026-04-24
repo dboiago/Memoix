@@ -45,7 +45,7 @@ class Course {
   /// Get Color object from stored value
   Color get color => Color(colorValue);
 
-  /// Default courses matching your spreadsheet
+  /// Default courses
   /// Order: Apps, Soups, Mains, Veg'n, Sides, Salads, Desserts, Brunch, Drinks, Breads, Sauces, Rubs, Pickles, Modernist, Pizzas, Sandwiches, Smoking, Cheese, Scratch
   static List<Course> get defaults => [
         Course.create(
