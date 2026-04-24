@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "uuid": "e4ac78fd-e64c-4bee-bce9-7220c3d8de09",
     "name": "Carrots",
     "course": "smoking",
@@ -9,49 +10,24 @@
     "temperature": "275",
     "time": "4",
     "wood": "Hickory",
-    "seasonings": [
-      {
-        "name": "Olive Oil",
-        "amount": null,
-        "unit": null
-      },
-      {
-        "name": "Mustard",
-        "amount": null,
-        "unit": null
-      },
-      {
-        "name": "Rub",
-        "amount": null,
-        "unit": null
-      },
-      {
-        "name": "BBQ Sauce",
-        "amount": null,
-        "unit": null
-      }
-    ],
-    "ingredients": [],
+    "seasoningsJson": "[{\"name\":\"Olive Oil\",\"amount\":null,\"unit\":null},{\"name\":\"Mustard\",\"amount\":null,\"unit\":null},{\"name\":\"Rub\",\"amount\":null,\"unit\":null},{\"name\":\"BBQ Sauce\",\"amount\":null,\"unit\":null}]",
+    "ingredientsJson": "[]",
     "serves": null,
-    "directions": [
-      "peel and chop",
-      "Toss in seasonings and smoke 2 hours",
-      "Transfer to a pan and add butter, brown sugar, honey and more rub and BBQ sauce",
-      "Cover and smoke 2 more hours (check tenderness)"
-    ],
+    "directions": "[\"peel and chop\",\"Toss in seasonings and smoke 2 hours\",\"Transfer to a pan and add butter, brown sugar, honey and more rub and BBQ sauce\",\"Cover and smoke 2 more hours (check tenderness)\"]",
     "notes": null,
     "headerImage": null,
-    "stepImages": [],
-    "stepImageMap": [],
+    "stepImages": "[]",
+    "stepImageMap": "[]",
     "imageUrl": null,
     "isFavorite": false,
     "cookCount": 0,
     "source": "memoix",
-    "pairedRecipeIds": [],
-    "createdAt": "2025-12-23T13:31:44.218228",
-    "updatedAt": "2025-12-23T13:31:44.227881"
+    "pairedRecipeIds": "[]",
+    "createdAt": 1766514704000,
+    "updatedAt": 1776979785000
   },
   {
+    "id": 2,
     "uuid": "7ca0e10a-73f8-4b07-aeff-4c20da013e62",
     "name": "Cheez-its",
     "course": "smoking",
@@ -61,36 +37,24 @@
     "temperature": "225",
     "time": "2",
     "wood": "Hickory",
-    "seasonings": [
-      {
-        "name": "Olive oil",
-        "amount": null,
-        "unit": null
-      },
-      {
-        "name": "Seasoning",
-        "amount": null,
-        "unit": null
-      }
-    ],
-    "ingredients": [],
+    "seasoningsJson": "[{\"name\":\"Olive oil\",\"amount\":null,\"unit\":null},{\"name\":\"Seasoning\",\"amount\":null,\"unit\":null}]",
+    "ingredientsJson": "[]",
     "serves": null,
-    "directions": [
-      "Cover in olive oil lightly then toss in seasoning of choice"
-    ],
+    "directions": "[\"Cover in olive oil lightly then toss in seasoning of choice\"]",
     "notes": null,
     "headerImage": null,
-    "stepImages": [],
-    "stepImageMap": [],
+    "stepImages": "[]",
+    "stepImageMap": "[]",
     "imageUrl": null,
     "isFavorite": false,
     "cookCount": 0,
     "source": "memoix",
-    "pairedRecipeIds": [],
-    "createdAt": "2025-12-23T13:31:44.218228",
-    "updatedAt": "2025-12-23T13:31:44.279566"
+    "pairedRecipeIds": "[]",
+    "createdAt": 1766514704000,
+    "updatedAt": 1776979785000
   },
   {
+    "id": 3,
     "uuid": "61189665-0ce3-4312-80e5-caf2533bfb34",
     "name": "Cream Cheese",
     "course": "smoking",
@@ -100,33 +64,24 @@
     "temperature": "225",
     "time": "1½ h",
     "wood": "Hickory",
-    "seasonings": [
-      {
-        "name": "Any rub of choice",
-        "amount": null,
-        "unit": null
-      }
-    ],
-    "ingredients": [],
+    "seasoningsJson": "[{\"name\":\"Any rub of choice\",\"amount\":null,\"unit\":null}]",
+    "ingredientsJson": "[]",
     "serves": null,
-    "directions": [
-      "Open the Cream Cheese packet and cover with whatever seasoning or rub is being used",
-      "Flip over in the foil; Cut cross hatches; season more",
-      "Can be served with jam/pepper jelly or coated with mustard before the rub/seasoning"
-    ],
+    "directions": "[\"Open the Cream Cheese packet and cover with whatever seasoning or rub is being used\",\"Flip over in the foil; Cut cross hatches; season more\",\"Can be served with jam/pepper jelly or coated with mustard before the rub/seasoning\"]",
     "notes": null,
     "headerImage": null,
-    "stepImages": [],
-    "stepImageMap": [],
+    "stepImages": "[]",
+    "stepImageMap": "[]",
     "imageUrl": null,
     "isFavorite": false,
     "cookCount": 0,
     "source": "memoix",
-    "pairedRecipeIds": [],
-    "createdAt": "2025-12-23T13:31:44.218228",
-    "updatedAt": "2025-12-23T13:31:44.384288"
+    "pairedRecipeIds": "[]",
+    "createdAt": 1766514704000,
+    "updatedAt": 1776979785000
   },
   {
+    "id": 4,
     "uuid": "391d414f-6937-47f9-b7c8-623d12e28599",
     "name": "Garlic",
     "course": "smoking",
@@ -136,25 +91,24 @@
     "temperature": "165",
     "time": "2",
     "wood": "Hickory",
-    "seasonings": [],
-    "ingredients": [],
+    "seasoningsJson": "[]",
+    "ingredientsJson": "[]",
     "serves": null,
-    "directions": [
-      "Smoke for the first hour normally, then wrap in foil and smoke until soft"
-    ],
+    "directions": "[\"Smoke for the first hour normally, then wrap in foil and smoke until soft\"]",
     "notes": null,
     "headerImage": null,
-    "stepImages": [],
-    "stepImageMap": [],
+    "stepImages": "[]",
+    "stepImageMap": "[]",
     "imageUrl": null,
     "isFavorite": false,
     "cookCount": 0,
     "source": "memoix",
-    "pairedRecipeIds": [],
-    "createdAt": "2025-12-23T13:31:44.218228",
-    "updatedAt": "2025-12-23T13:31:44.421210"
+    "pairedRecipeIds": "[]",
+    "createdAt": 1766514704000,
+    "updatedAt": 1776979785000
   },
   {
+    "id": 5,
     "uuid": "850fb600-8af0-4e86-951c-603e345605e9",
     "name": "Salt",
     "course": "smoking",
@@ -164,25 +118,24 @@
     "temperature": "250",
     "time": "2",
     "wood": "Hickory",
-    "seasonings": [],
-    "ingredients": [],
+    "seasoningsJson": "[]",
+    "ingredientsJson": "[]",
     "serves": null,
-    "directions": [
-      "Top rack; Shake periodically so it's evenly smoked"
-    ],
+    "directions": "[\"Top rack; Shake periodically so it's evenly smoked\"]",
     "notes": null,
     "headerImage": null,
-    "stepImages": [],
-    "stepImageMap": [],
+    "stepImages": "[]",
+    "stepImageMap": "[]",
     "imageUrl": null,
     "isFavorite": false,
     "cookCount": 0,
     "source": "memoix",
-    "pairedRecipeIds": [],
-    "createdAt": "2025-12-23T13:31:44.218228",
-    "updatedAt": "2025-12-23T13:31:44.427807"
+    "pairedRecipeIds": "[]",
+    "createdAt": 1766514704000,
+    "updatedAt": 1776979785000
   },
   {
+    "id": 0,
     "uuid": "5e19b89d-5a3a-44b2-98fd-a238fbc8e901",
     "name": "Watermellon",
     "course": "smoking",
@@ -192,39 +145,20 @@
     "temperature": "250",
     "time": "3",
     "wood": "Hickory",
-    "seasonings": [
-      {
-        "name": "Sugar",
-        "amount": null,
-        "unit": null
-      },
-      {
-        "name": "Honey",
-        "amount": null,
-        "unit": null
-      },
-      {
-        "name": "Lime Juice",
-        "amount": null,
-        "unit": null
-      }
-    ],
-    "ingredients": [],
+    "seasoningsJson": "[{\"name\":\"Sugar\",\"amount\":null,\"unit\":null},{\"name\":\"Honey\",\"amount\":null,\"unit\":null},{\"name\":\"Lime Juice\",\"amount\":null,\"unit\":null}]",
+    "ingredientsJson": "[]",
     "serves": null,
-    "directions": [
-      "Cut off rind and score",
-      "Add rub, smoke, let cool 1h"
-    ],
+    "directions": "[\"Cut off rind and score\",\"Add rub, smoke, let cool 1h\"]",
     "notes": null,
     "headerImage": null,
-    "stepImages": [],
-    "stepImageMap": [],
+    "stepImages": "[]",
+    "stepImageMap": "[]",
     "imageUrl": null,
     "isFavorite": false,
     "cookCount": 0,
     "source": "memoix",
-    "pairedRecipeIds": [],
-    "createdAt": "2025-12-23T13:31:44.218228",
-    "updatedAt": "2025-12-23T13:31:44.447758"
+    "pairedRecipeIds": "[]",
+    "createdAt": 1766514704000,
+    "updatedAt": 1776979785000
   }
 ]

@@ -12,6 +12,7 @@
     "notes": null,
     "ingredients": [
       {
+        "uuid": "2a58ff3e-5b3a-45a5-a172-cfe47dc19308",
         "name": "Flour",
         "amount": "3",
         "unit": "Tbsp",
@@ -22,6 +23,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "968df970-2a28-41e3-90de-003251b1d606",
         "name": "Milk",
         "amount": "2",
         "unit": "Tbsp",
@@ -32,6 +34,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "c6e387e1-8662-4f64-a0f5-05f84de678d2",
         "name": "Egg Yolk",
         "amount": "1",
         "unit": null,
@@ -42,6 +45,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "a38d671f-2770-4d9f-a9c6-7bbe467bb805",
         "name": "Sugar",
         "amount": "½",
         "unit": "Tbsp",
@@ -52,6 +56,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "ed6d8513-3a9c-467b-b95d-97c567ed2a68",
         "name": "Baking Powder",
         "amount": "¼",
         "unit": "tsp",
@@ -62,6 +67,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "8caee12a-d490-4672-8454-e63873122cde",
         "name": "Egg White",
         "amount": "2",
         "unit": null,
@@ -72,6 +78,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "4571e5ef-9172-439e-9a87-5822d73a0036",
         "name": "Suger",
         "amount": "1",
         "unit": "Tbsp",
@@ -82,6 +89,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "4fb476dc-44cb-476f-9786-0001cec30dec",
         "name": "Cream of Tartar",
         "amount": "Pinch",
         "unit": null,
@@ -116,8 +124,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-23T10:15:56.273227",
-    "updatedAt": "2025-12-23T10:15:56.273227",
+    "createdAt": "2025-12-23T15:15:56.000Z",
+    "updatedAt": "2025-12-23T15:15:56.000Z",
     "version": 1
   }
 ]

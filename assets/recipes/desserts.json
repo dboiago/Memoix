@@ -12,6 +12,7 @@
     "notes": null,
     "ingredients": [
       {
+        "uuid": "6b850401-eae3-4f72-acdf-a4fb2a1e50ba",
         "name": "AP Flour",
         "amount": "1½",
         "unit": "C",
@@ -22,6 +23,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "17714d6d-65dd-46e1-a499-0b95f758ac6a",
         "name": "Sugar",
         "amount": "¾",
         "unit": "C",
@@ -32,6 +34,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "f9a7e9b7-3389-4315-a258-bbc3608eb7ca",
         "name": "Milk",
         "amount": "½",
         "unit": "C",
@@ -42,6 +45,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "fe9118b0-62fa-4ceb-8176-6950d5a09a42",
         "name": "Butter (Cold)",
         "amount": "¼",
         "unit": "C",
@@ -52,6 +56,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "be72e74e-75be-474e-b16c-294566fbe0d3",
         "name": "Apples",
         "amount": "2-4",
         "unit": null,
@@ -62,6 +67,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "c2d91a39-0ea0-4978-ac70-63d74b2bfba8",
         "name": "Egg",
         "amount": "1",
         "unit": null,
@@ -72,6 +78,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "c9e56526-1224-4650-be1e-58676498be35",
         "name": "Baking Powder",
         "amount": "2",
         "unit": "tsp",
@@ -82,6 +89,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "aa67d8ee-2773-4ddc-a841-6317fa28a3a8",
         "name": "Salt",
         "amount": "½",
         "unit": "tsp",
@@ -92,6 +100,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "3a79d68c-edc0-473a-9411-ebb589878a21",
         "name": "Nutmeg",
         "amount": "⅛",
         "unit": "tsp",
@@ -102,6 +111,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "63d3caa2-5b19-4722-a3a3-f787fb2f16fc",
         "name": "Dried Fruit",
         "amount": "¼",
         "unit": "C",
@@ -112,6 +122,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "d0528aa9-1980-4514-9eeb-dde5fb157573",
         "name": "Sliced Nuts",
         "amount": "¼",
         "unit": "C",
@@ -122,6 +133,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "4ce74847-4d8a-4003-9a86-7197bdc998ad",
         "name": "Heavy Cream",
         "amount": "1",
         "unit": "C",
@@ -132,6 +144,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "21cbb7b1-eef2-4b92-85e3-4679016fea68",
         "name": "Sugar",
         "amount": "½",
         "unit": "C",
@@ -142,6 +155,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "999ed5ab-b128-4708-9bd9-1d316f2c046e",
         "name": "Egg",
         "amount": "1",
         "unit": null,
@@ -152,6 +166,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "706e487c-b423-4fb1-9968-8df516487815",
         "name": "Flour",
         "amount": "2",
         "unit": "tsp",
@@ -162,6 +177,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "1535d940-9fde-434f-8ee1-40cdc64d4ba5",
         "name": "Vanilla",
         "amount": "1",
         "unit": "tsp",
@@ -172,6 +188,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "b9b66a2a-30b6-4826-adde-abd770983037",
         "name": "Cinnamon",
         "amount": "1",
         "unit": "tsp",
@@ -182,6 +199,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "08d51ffc-e15c-4fa1-8d31-43b660351695",
         "name": "Salt",
         "amount": "⅛",
         "unit": "tsp",
@@ -218,8 +236,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T15:18:20.234355",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T20:18:20.000Z",
     "version": 1
   },
   {
@@ -235,6 +253,7 @@
     "notes": null,
     "ingredients": [
       {
+        "uuid": "ec194618-cd60-4ebb-90a4-ee8f6f2fa1b2",
         "name": "Sugar",
         "amount": "2",
         "unit": "C",
@@ -245,6 +264,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "11684dc7-863f-4241-99dc-0623ae3a10ad",
         "name": "Butter",
         "amount": "¾",
         "unit": "C",
@@ -255,6 +275,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "259e8cdd-f618-4c2c-a37e-dfe6eba39721",
         "name": "Eggs",
         "amount": "3",
         "unit": null,
@@ -265,6 +286,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "0f72e379-0549-4439-aff5-773f5a6d00ef",
         "name": "Banana",
         "amount": "1½",
         "unit": "C",
@@ -275,6 +297,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "42bac19e-bed4-4e10-9892-48d2346c6d78",
         "name": "Flour",
         "amount": "3",
         "unit": "C",
@@ -285,6 +308,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "e7419128-3c69-48b5-963c-9721fe4ac696",
         "name": "Vanilla",
         "amount": "1½",
         "unit": "tsp",
@@ -295,6 +319,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "d780d72d-f26c-44de-9e36-3d000ba6c944",
         "name": "Baking Powder",
         "amount": "1½",
         "unit": "tsp",
@@ -305,6 +330,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "741968c4-f876-4ea5-bb92-b59e65d3910c",
         "name": "Baking Soda",
         "amount": "1½",
         "unit": "tsp",
@@ -315,6 +341,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "5bc9d747-b0cc-4fef-a1d9-ee37e7214e4f",
         "name": "Salt",
         "amount": "1",
         "unit": "tsp",
@@ -325,6 +352,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "41619620-dc60-4d35-85fc-ce6d91e95ab3",
         "name": "Buttermilk",
         "amount": "¾",
         "unit": "C",
@@ -335,6 +363,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "b5c580b8-5644-442f-912a-169bb3375540",
         "name": "Pistachio",
         "amount": "¾",
         "unit": "C",
@@ -367,8 +396,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T15:22:33.586870",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T20:22:33.000Z",
     "version": 1
   },
   {
@@ -384,6 +413,7 @@
     "notes": null,
     "ingredients": [
       {
+        "uuid": "0e552e21-4ebd-4433-81be-9a122c091d22",
         "name": "Flour",
         "amount": "2",
         "unit": "C 2 Tbsp",
@@ -394,6 +424,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "2d33567d-c249-4e91-8719-098cc80e7e29",
         "name": "Sugar",
         "amount": "1",
         "unit": "C",
@@ -404,6 +435,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "21f87792-50d1-4c4b-ae58-a4c4c957c6c0",
         "name": "Golden Brown Sugar",
         "amount": "½",
         "unit": "C",
@@ -414,6 +446,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "5cd9541e-3149-4bc9-8b80-44bf233ac970",
         "name": "Baking Powder",
         "amount": "1",
         "unit": "Tbsp",
@@ -424,6 +457,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "c560b903-7e08-4336-910f-1fdc48960de1",
         "name": "Salt",
         "amount": "1",
         "unit": "tsp",
@@ -434,6 +468,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "fb5d1728-9f27-4870-a065-183a9597b569",
         "name": "Cinnamon",
         "amount": "½",
         "unit": "tsp",
@@ -444,6 +479,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "84af08c9-484b-4aa0-aa04-c6ba4de62046",
         "name": "Cardamom",
         "amount": "½",
         "unit": "tsp",
@@ -454,6 +490,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "6dd43fed-0981-4cd1-a40e-3e1659e86dfd",
         "name": "Ginger",
         "amount": "½",
         "unit": "tsp",
@@ -464,6 +501,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "5af471fe-0199-44de-93c0-09b296ea96d2",
         "name": "Allspice",
         "amount": "¼",
         "unit": "tsp",
@@ -474,6 +512,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "27a881a8-5286-4a70-85d5-1bf4b92beda5",
         "name": "Black Pepper",
         "amount": "¼",
         "unit": "tsp",
@@ -484,6 +523,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "5616db91-0e23-4bd2-bdb8-2c8b3619d122",
         "name": "Buttermilk",
         "amount": "⅓",
         "unit": "C",
@@ -494,6 +534,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "ee014641-37ba-4832-b987-af090d52ace5",
         "name": "Canola Oil",
         "amount": "¾",
         "unit": "C",
@@ -504,6 +545,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "94367970-535f-48d9-8cf0-84f8852d4997",
         "name": "Fancy Molasses",
         "amount": "1",
         "unit": "Tbsp",
@@ -514,6 +556,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "34d12d86-a319-4cb0-8f4a-9645ee8bcfbc",
         "name": "Vanilla",
         "amount": "1½",
         "unit": "tsp",
@@ -524,6 +567,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "31a8873c-5a13-4bc8-b913-16b0f79eb71c",
         "name": "Eggs",
         "amount": "2",
         "unit": null,
@@ -556,8 +600,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T15:23:33.751085",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T20:23:33.000Z",
     "version": 1
   },
   {
@@ -573,6 +617,7 @@
     "notes": null,
     "ingredients": [
       {
+        "uuid": "ea5d9bd4-676d-48e5-a633-68b9e4350144",
         "name": "Flour",
         "amount": "5",
         "unit": "C",
@@ -583,6 +628,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "ea7c3650-20bd-495e-a711-9a111e25d021",
         "name": "Brown Sugar",
         "amount": "3",
         "unit": "C",
@@ -593,6 +639,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "29bea0a5-0150-4b6c-9680-4f26b3e0fb8b",
         "name": "Baking Soda",
         "amount": "1",
         "unit": "Tbsp",
@@ -603,6 +650,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "43de1ac9-97b5-4a29-b101-1c5d47832328",
         "name": "Salt",
         "amount": "1½",
         "unit": "tsp",
@@ -613,6 +661,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "7ea19940-cc68-4507-a3be-3f4373379261",
         "name": "Cocoa",
         "amount": "⅔",
         "unit": "C",
@@ -623,6 +672,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "1f5766cb-f26b-4a78-a979-fddadb0bc30f",
         "name": "Water",
         "amount": "3",
         "unit": "C",
@@ -633,6 +683,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "90c820a2-b051-4686-83bf-29da5ea89b77",
         "name": "Vegetable Oil",
         "amount": "1",
         "unit": "C",
@@ -643,6 +694,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "515357cc-c681-4fae-89ef-19ef337e2a2a",
         "name": "Cider Vinegar",
         "amount": "3",
         "unit": "Tbsp",
@@ -673,8 +725,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T15:24:30.598233",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T20:24:30.000Z",
     "version": 1
   },
   {
@@ -690,6 +742,7 @@
     "notes": null,
     "ingredients": [
       {
+        "uuid": "9959dcbb-a125-4717-a127-476f03ee253e",
         "name": "Dark Chocolate",
         "amount": "14",
         "unit": "oz",
@@ -700,6 +753,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "20835544-5d84-4d31-b42e-94cf7eedb16b",
         "name": "Milk Chocolate",
         "amount": "10",
         "unit": "oz",
@@ -710,6 +764,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "c53088e3-36cb-48c5-8383-616f8ba3c6ea",
         "name": "Butter",
         "amount": "8",
         "unit": "oz",
@@ -720,6 +775,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "a603777c-4a0b-4e87-9fd8-136cac6fb083",
         "name": "Cream",
         "amount": "1",
         "unit": "C",
@@ -730,6 +786,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "4fb65fb5-68b6-4586-b99b-7d108f5c50e4",
         "name": "Sugar",
         "amount": "1",
         "unit": "C",
@@ -740,6 +797,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "52eda1a5-d023-4adc-83ac-b525898f9ba3",
         "name": "Eggs",
         "amount": "9",
         "unit": null,
@@ -750,6 +808,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "0d54848e-ed56-4e70-8c2b-5185ff2fb224",
         "name": "Vanilla",
         "amount": "4",
         "unit": "tsp",
@@ -783,8 +842,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T15:24:56.223972",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T20:24:56.000Z",
     "version": 1
   },
   {
@@ -800,6 +859,7 @@
     "notes": null,
     "ingredients": [
       {
+        "uuid": "ec7e13d8-5db5-48e6-a3fd-17b831765f80",
         "name": "Flour",
         "amount": "2",
         "unit": "C",
@@ -810,6 +870,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "a45592b4-1ce6-4a53-932d-041305bb4c3e",
         "name": "Espresso Powder",
         "amount": "¼",
         "unit": "C",
@@ -820,6 +881,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "66858a0a-ac4f-47d9-a9b7-3e36374d6cac",
         "name": "Cocoa",
         "amount": "3",
         "unit": "Tbsp",
@@ -830,6 +892,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "c87cfe4d-bab1-4110-9c30-5270eaa0250f",
         "name": "Ground Ginger",
         "amount": "1",
         "unit": "Tbsp",
@@ -840,6 +903,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "b67dc34c-d80e-4d71-a9d9-404314149c8f",
         "name": "Baking Powder",
         "amount": "½",
         "unit": "tsp",
@@ -850,6 +914,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "7d797221-6c21-4540-b0e5-b861583ae610",
         "name": "Salt",
         "amount": "1",
         "unit": "tsp",
@@ -860,6 +925,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "9a5a8d14-ad70-47ad-997f-00721a84ff3e",
         "name": "Black Pepper",
         "amount": "1",
         "unit": "tsp",
@@ -870,6 +936,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "48d763cf-0829-4aef-85dd-dbcc7f10345d",
         "name": "Butter",
         "amount": "8",
         "unit": "oz",
@@ -880,6 +947,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "3f4b1941-4f1b-4eed-a205-c6e1c9bbbdfe",
         "name": "Brown Sugar",
         "amount": "1",
         "unit": "C",
@@ -890,6 +958,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "49946bf8-3fa5-4a08-b15e-f1411f9a2d6f",
         "name": "Egg",
         "amount": "4",
         "unit": null,
@@ -900,6 +969,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "a1b2989a-2110-4596-bb00-0097ebd28c71",
         "name": "Chopped Ginger",
         "amount": "2½",
         "unit": "Tbsp",
@@ -910,6 +980,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "5f1c3d9b-6cf6-41cd-9a71-4d1362f1892d",
         "name": "Molasses",
         "amount": "2",
         "unit": "C",
@@ -942,8 +1013,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T15:25:30.274895",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T20:25:30.000Z",
     "version": 1
   },
   {
@@ -959,6 +1030,7 @@
     "notes": null,
     "ingredients": [
       {
+        "uuid": "f8843516-e2ad-4f85-85ba-74a6210578fd",
         "name": "Light Cream",
         "amount": "4",
         "unit": "C",
@@ -969,6 +1041,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "75bccd92-8caf-4c49-ac40-1ec143c96ac4",
         "name": "Milk",
         "amount": "2½",
         "unit": "C",
@@ -979,6 +1052,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "22bb9f58-c228-4a3e-8b12-371ba7c05d0a",
         "name": "Sugar",
         "amount": "1",
         "unit": "C",
@@ -989,6 +1063,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "412d3e83-400e-4745-b3c3-e6fa38a8fd91",
         "name": "Vanilla",
         "amount": "1",
         "unit": "tsp",
@@ -999,6 +1074,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "5663ad66-c6f3-4823-b1c7-d02d979bd1b1",
         "name": "Salt",
         "amount": "¼",
         "unit": "tsp",
@@ -1009,6 +1085,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "e9d2f86d-9d40-44f8-be76-b49d63e0c1ba",
         "name": "Lavender",
         "amount": "3-5",
         "unit": "Tbsp",
@@ -1041,8 +1118,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T15:26:01.200542",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T20:26:01.000Z",
     "version": 1
   },
   {
@@ -1058,6 +1135,7 @@
     "notes": null,
     "ingredients": [
       {
+        "uuid": "67d54dda-4d02-4390-850c-0cab30188093",
         "name": "AP Flour",
         "amount": "2",
         "unit": "C",
@@ -1068,6 +1146,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "290e83b7-adde-40bb-9201-7282f0213d36",
         "name": "Sugar",
         "amount": "¾",
         "unit": "C",
@@ -1078,6 +1157,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "44b8695d-5639-4e32-983a-c06578f36d63",
         "name": "Baking Powder",
         "amount": "2",
         "unit": "tsp",
@@ -1088,6 +1168,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "52b95cd9-d52e-4d73-a372-674ce60132fe",
         "name": "Sea Salt",
         "amount": "1",
         "unit": "tsp",
@@ -1098,6 +1179,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "e5aebe85-ed4e-4b17-8c11-8e4ff3f6384f",
         "name": "Butter",
         "amount": "½",
         "unit": "C",
@@ -1108,6 +1190,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "289ea81a-0ef3-47a6-afda-707441a1faed",
         "name": "Lemon Zest",
         "amount": "1",
         "unit": "Tbsp",
@@ -1118,6 +1201,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "ffd7ee67-dcdf-45e0-b3ff-1e386a2de789",
         "name": "Sour Cream",
         "amount": "⅔",
         "unit": "C",
@@ -1128,6 +1212,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "f1975f0d-586c-46f9-a8ab-9d2bceda60a0",
         "name": "Eggs",
         "amount": "2",
         "unit": null,
@@ -1138,6 +1223,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "40197785-956f-4972-991b-c1ae7e25cc08",
         "name": "Egg Yolk",
         "amount": "1",
         "unit": null,
@@ -1148,6 +1234,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "d9b352bc-16c8-401c-b924-88025642520c",
         "name": "Vanilla",
         "amount": "2",
         "unit": "tsp",
@@ -1158,6 +1245,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "0ca43fb2-eace-4ef3-9359-a53209730977",
         "name": "Berries",
         "amount": "1",
         "unit": "C",
@@ -1168,6 +1256,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "ced6fc04-786d-43ea-802f-b38fc8d51620",
         "name": "AP Flour",
         "amount": "¾",
         "unit": "C",
@@ -1178,6 +1267,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "2f5ff39c-3f7e-4ace-88d9-99312295da76",
         "name": "Sugar",
         "amount": "⅓",
         "unit": "C",
@@ -1188,6 +1278,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "5b82ad00-f005-4034-8d7b-e24d3c9e8500",
         "name": "Lemon Zest",
         "amount": "1",
         "unit": "Tbsp",
@@ -1198,6 +1289,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "04851838-73c7-4bf5-b3fb-851140f7d084",
         "name": "Baking Powder",
         "amount": "¼",
         "unit": "tsp",
@@ -1208,6 +1300,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "4021cf9c-ad33-401b-9a36-c38b35230bd6",
         "name": "Sea Salt",
         "amount": "Pinch",
         "unit": null,
@@ -1218,6 +1311,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "4aeeb799-9035-41ad-8887-9792723bc4fa",
         "name": "Butter",
         "amount": "¼",
         "unit": "C / 60 g",
@@ -1251,8 +1345,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T15:29:14.503668",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T20:29:14.000Z",
     "version": 1
   },
   {
@@ -1268,6 +1362,7 @@
     "notes": null,
     "ingredients": [
       {
+        "uuid": "a249f535-7e9e-4f5f-aaa0-45018b7a26ff",
         "name": "Apricot Jam",
         "amount": "250",
         "unit": "g",
@@ -1278,6 +1373,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "79ab69bb-cc3c-4230-ab4e-2616a7334e75",
         "name": "Dark Chocolate",
         "amount": "200",
         "unit": "g",
@@ -1288,6 +1384,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "d5b2414a-9d0c-478a-9f93-7e85ed9a8b7e",
         "name": "Cake Flour",
         "amount": "150",
         "unit": "g",
@@ -1298,6 +1395,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "73154188-eb63-4ead-8a78-2b1eb40c77dc",
         "name": "Butter",
         "amount": "150",
         "unit": "g",
@@ -1308,6 +1406,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "4ccb3dc6-6d01-4f83-98b6-b68275a1bc54",
         "name": "Confection Sugar",
         "amount": "150",
         "unit": "g",
@@ -1318,6 +1417,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "688f8cca-89ff-47a1-987c-c8fe18a48ac1",
         "name": "Sugar",
         "amount": "150",
         "unit": "g",
@@ -1328,6 +1428,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "3fd3301b-6a7a-420e-81b4-eb6ad2e75719",
         "name": "Egg Yolk",
         "amount": "7",
         "unit": null,
@@ -1338,6 +1439,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "c66464ba-79de-48f6-814a-57e299b8584a",
         "name": "Egg White",
         "amount": "7",
         "unit": null,
@@ -1348,6 +1450,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "1ddb9891-7e52-4e7a-8d79-bad12bca699f",
         "name": "Vanilla Sugar",
         "amount": "8",
         "unit": "g",
@@ -1358,6 +1461,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "ceb263cc-8d04-4032-9576-a0e5d5ebc7cc",
         "name": "Salt",
         "amount": "pinch",
         "unit": null,
@@ -1368,6 +1472,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "424c4ed1-7be0-4065-bf55-b205cfdd5983",
         "name": "Dark Rum",
         "amount": "2",
         "unit": "Tbsp",
@@ -1378,6 +1483,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "6726a11b-df77-4ec3-9cf1-aae2a4797589",
         "name": "Sugar",
         "amount": "250",
         "unit": "g",
@@ -1388,6 +1494,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "c7e33a02-b07c-45bb-be75-c50df0923285",
         "name": "Dark Chocolate",
         "amount": "200",
         "unit": "g",
@@ -1398,6 +1505,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "3a7e249f-8523-4e82-8b05-01e0392a5d97",
         "name": "Water",
         "amount": "125",
         "unit": "ml",
@@ -1436,8 +1544,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T15:20:09.629805",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T20:20:09.000Z",
     "version": 1
   },
   {
@@ -1453,6 +1561,7 @@
     "notes": null,
     "ingredients": [
       {
+        "uuid": "59f0f8da-2d4f-464a-813d-0080a539d4bc",
         "name": "Flour",
         "amount": "2¼",
         "unit": "C",
@@ -1463,6 +1572,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "12c329ef-e81b-4e9e-85b8-71343f602ffe",
         "name": "Baking Powder",
         "amount": "2",
         "unit": "tsp",
@@ -1473,6 +1583,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "082ffa30-68b6-452b-a141-e9ef9660ce10",
         "name": "Salt",
         "amount": "¾",
         "unit": "tsp",
@@ -1483,6 +1594,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "3833e426-9e40-48a0-9301-fc66a18da1da",
         "name": "Butter",
         "amount": "¾",
         "unit": "C",
@@ -1493,6 +1605,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "7d3cb614-fbf6-4c6e-be0c-46c85c879b2c",
         "name": "Sugar",
         "amount": "1½",
         "unit": "C",
@@ -1503,6 +1616,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "3403b291-fa52-48a7-8562-12ed8ac8288d",
         "name": "Eggs",
         "amount": "3",
         "unit": null,
@@ -1513,6 +1627,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "8e33d8cd-3279-4345-a966-02afbd0c3429",
         "name": "Orange Zest",
         "amount": "1",
         "unit": null,
@@ -1523,6 +1638,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "ff275063-c1b7-4c94-8e11-645979742970",
         "name": "Vanilla",
         "amount": "1½",
         "unit": "tsp",
@@ -1533,6 +1649,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "d177a1db-5aaa-4307-a473-1ee025c8ccd4",
         "name": "Sangria",
         "amount": "1",
         "unit": "C",
@@ -1543,6 +1660,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "ab540794-87eb-4ea8-bc02-016746f65d0c",
         "name": "Sugar",
         "amount": "½",
         "unit": "C",
@@ -1553,6 +1671,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "770cf49b-8f9c-46cf-a9d3-c45a3d6d8597",
         "name": "Water",
         "amount": "½",
         "unit": "C",
@@ -1563,6 +1682,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "ea53ef11-c163-4af9-b2b8-813a1b882b00",
         "name": "Sugar",
         "amount": "1½",
         "unit": "C",
@@ -1573,6 +1693,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "ca64db83-2c0a-42b9-8d4f-1355ebb38e40",
         "name": "Butter",
         "amount": "1½",
         "unit": "C",
@@ -1583,6 +1704,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "f272be22-0bcb-4218-9c43-2d8aedb8a034",
         "name": "Vanilla",
         "amount": "1",
         "unit": "tsp",
@@ -1593,6 +1715,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "f1b89448-4230-47f4-90b5-dee1fdd8f2f1",
         "name": "Egg Whites",
         "amount": "5",
         "unit": null,
@@ -1631,8 +1754,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T15:30:28.860419",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T20:30:28.000Z",
     "version": 1
   },
   {
@@ -1648,6 +1771,7 @@
     "notes": null,
     "ingredients": [
       {
+        "uuid": "a7d5b6db-7385-4c45-b5c4-40d8082cadc0",
         "name": "Butter",
         "amount": "¾",
         "unit": "C",
@@ -1658,6 +1782,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "4a7d5bed-7166-4ba2-8d13-3f9d41b3395c",
         "name": "Brown Sugar",
         "amount": "1",
         "unit": "C",
@@ -1668,6 +1793,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "99761422-5857-420d-8ee3-b65f4e3e9a76",
         "name": "Egg",
         "amount": "1",
         "unit": null,
@@ -1678,6 +1804,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "34ce53e0-a780-46d9-b62e-2c45d6528035",
         "name": "Vanilla",
         "amount": "2",
         "unit": "tsp",
@@ -1688,6 +1815,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "1ccec944-f0f7-4c0f-9569-8a0e3f1aae51",
         "name": "AP Flour",
         "amount": "2",
         "unit": "C",
@@ -1698,6 +1826,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "8e47d76f-2236-4d0f-8599-4dcfed88c8a8",
         "name": "Cornstarch",
         "amount": "2",
         "unit": "tsp",
@@ -1708,6 +1837,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "9a975302-98c9-42d1-a1f8-8dec0c07102e",
         "name": "Baking Soda",
         "amount": "1",
         "unit": "tsp",
@@ -1718,6 +1848,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "2d77ba5a-3f6a-4de8-9ff3-0dcbb0ac25b7",
         "name": "Salt",
         "amount": "½",
         "unit": "tsp",
@@ -1728,6 +1859,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "43447719-c95c-45ca-86df-e53fc0a61acf",
         "name": "Chocolate Chips",
         "amount": "8",
         "unit": "oz",
@@ -1758,8 +1890,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T15:31:03.133245",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T20:31:03.000Z",
     "version": 1
   },
   {
@@ -1775,6 +1907,7 @@
     "notes": null,
     "ingredients": [
       {
+        "uuid": "9ec362b6-13da-47cc-916c-efdb9d5c530b",
         "name": "Flour",
         "amount": "2½",
         "unit": "C",
@@ -1785,6 +1918,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "229a37b5-5c94-4b84-bf5e-654bab750181",
         "name": "Baking Soda",
         "amount": "1",
         "unit": "tsp",
@@ -1795,6 +1929,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "af8a3cce-e956-424c-bf27-09223497ab43",
         "name": "Baking Powder",
         "amount": "1",
         "unit": "tsp",
@@ -1805,6 +1940,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "2bb8b44e-fcf8-4a70-a463-5b0c81b5bfdf",
         "name": "Cinnamon",
         "amount": "1",
         "unit": "tsp",
@@ -1815,6 +1951,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "bd7308d5-6fb1-40b2-bf3d-d63f39464548",
         "name": "Nutmeg",
         "amount": "½",
         "unit": "tsp",
@@ -1825,6 +1962,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "b5ac995f-3c4d-4b2e-9b5a-8ea857313b5a",
         "name": "Salt",
         "amount": "½",
         "unit": "tsp",
@@ -1835,6 +1973,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "1f84042b-d1c0-4549-bbac-03fb34a977ca",
         "name": "Sugar",
         "amount": "1½",
         "unit": "C",
@@ -1845,6 +1984,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "8edbda04-07d6-4ca9-8e69-c06a28c25885",
         "name": "Butter",
         "amount": "½",
         "unit": "C",
@@ -1855,6 +1995,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "e7681c38-a3cb-478a-bcb7-ec8a9013d6c5",
         "name": "Pumpkin Puree",
         "amount": "1",
         "unit": "C",
@@ -1865,6 +2006,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "2ad1e5c5-aa24-4fb4-9a6d-998aa2fd0f0d",
         "name": "Egg",
         "amount": "1",
         "unit": null,
@@ -1875,6 +2017,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "dacddcfb-3d4f-4566-89c3-3010cb1c55d2",
         "name": "Vanilla",
         "amount": "1",
         "unit": "tsp",
@@ -1907,8 +2050,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T15:31:56.831204",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T20:31:56.000Z",
     "version": 1
   }
 ]

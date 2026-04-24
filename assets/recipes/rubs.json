@@ -12,6 +12,7 @@
     "notes": null,
     "ingredients": [
       {
+        "uuid": "3abfcfe4-ec19-49eb-a306-f400dc0fbba6",
         "name": "Paprika",
         "amount": "3",
         "unit": "Tbsp",
@@ -22,6 +23,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "c1aaf18d-096b-41ee-bbef-fca3b2de1120",
         "name": "Worcestershire",
         "amount": "1",
         "unit": "tsp",
@@ -32,6 +34,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "9ef1b3f5-5217-4be1-8cb6-b4b8b246a439",
         "name": "Cayenne",
         "amount": "1",
         "unit": "tsp",
@@ -42,6 +45,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "6d43c9d0-f62c-4879-b3f5-9bed7738ddd9",
         "name": "White Pepper",
         "amount": "1",
         "unit": "tsp",
@@ -52,6 +56,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "c77d918b-47e1-4795-b58f-16365d66d5e7",
         "name": "Lemon Pepper",
         "amount": "1",
         "unit": "tsp",
@@ -62,6 +67,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "55d58aab-7a54-454e-8df0-e6511af30a3a",
         "name": "Garlic Powder",
         "amount": "1",
         "unit": "tsp",
@@ -72,6 +78,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "0878336e-9935-4658-942a-df1445a4ded3",
         "name": "Onion Powder",
         "amount": "1",
         "unit": "tsp",
@@ -82,6 +89,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "f6dbe788-f36c-419d-b671-c81b75a3db63",
         "name": "Rosemary",
         "amount": "1",
         "unit": "tsp",
@@ -92,6 +100,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "9a844257-bc1a-4fa8-8130-09669fab0aa3",
         "name": "Thyme",
         "amount": "1",
         "unit": "tsp",
@@ -102,6 +111,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "3aa26c32-1a74-4eb2-a584-7af371af4cd8",
         "name": "Oregeno",
         "amount": "1",
         "unit": "tsp",
@@ -112,6 +122,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "081b16b3-09cd-4126-af02-aafa1daf3155",
         "name": "Salt",
         "amount": "1",
         "unit": "tsp",
@@ -122,6 +133,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "b5cfdec9-f632-4cb6-97ac-71a705cefada",
         "name": "Black Pepper",
         "amount": "1",
         "unit": "tsp",
@@ -149,8 +161,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T16:16:39.052060",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T21:16:39.000Z",
     "version": 1
   },
   {
@@ -168,6 +180,7 @@
     "notes": null,
     "ingredients": [
       {
+        "uuid": "0c9fd43c-4d0d-4884-84bd-39ce94a57199",
         "name": "Dark Brown Sugar",
         "amount": "¾",
         "unit": "C",
@@ -178,6 +191,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "e80b3e65-6e4b-4db3-91aa-23aa1899a565",
         "name": "White Sugar",
         "amount": "¾",
         "unit": "C",
@@ -188,6 +202,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "1974f2b2-1503-42d9-a313-7dc7b68344e7",
         "name": "Paprika",
         "amount": "½",
         "unit": "C",
@@ -198,6 +213,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "48871eda-c7a2-4648-9753-d1bca22e502a",
         "name": "Garlic Powder",
         "amount": "½",
         "unit": "C",
@@ -208,6 +224,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "20369776-3f6d-4558-a6a9-5e7fe5054f93",
         "name": "Black Pepper",
         "amount": "2",
         "unit": "Tbsp",
@@ -218,6 +235,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "4cc56e82-2024-4a85-b5fa-bbe88b7aff1b",
         "name": "Ginger",
         "amount": "2",
         "unit": "Tbsp",
@@ -228,6 +246,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "f6a49654-2506-44e6-b1f7-33bcb9c0993a",
         "name": "Onion Powder",
         "amount": "2",
         "unit": "Tbsp",
@@ -238,6 +257,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "69efecb2-bee7-4cb7-b9ac-f66d68479331",
         "name": "Rosemary",
         "amount": "2",
         "unit": "tsp",
@@ -266,8 +286,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T16:17:18.595534",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T21:17:18.000Z",
     "version": 1
   },
   {
@@ -283,6 +303,7 @@
     "notes": null,
     "ingredients": [
       {
+        "uuid": "20011aee-d5f0-43bf-a3d5-f78b0202c9fe",
         "name": "Cumin",
         "amount": "1",
         "unit": "Tbsp",
@@ -293,6 +314,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "82b25495-1dcb-43d4-ac03-d10bf1a82f01",
         "name": "Coriander",
         "amount": "1",
         "unit": "Tbsp",
@@ -303,6 +325,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "293fd313-658a-48ae-9096-5e0c169a8034",
         "name": "Garlic Powder",
         "amount": "1",
         "unit": "Tbsp",
@@ -313,6 +336,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "9fa2722b-af5c-431b-8b1d-038a5752e2c6",
         "name": "Ginger",
         "amount": "1",
         "unit": "Tbsp",
@@ -323,6 +347,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "23958f61-7e9a-4e06-a6e3-f6f6d28d75ac",
         "name": "Black Pepper",
         "amount": "1",
         "unit": "Tbsp",
@@ -333,6 +358,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "5c8179dc-5eed-45c0-b0d6-96a6a2739799",
         "name": "Cinnamon",
         "amount": "1",
         "unit": "Tbsp",
@@ -343,6 +369,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "a32d1bff-62d3-43d9-a9b0-27e28e6e0e49",
         "name": "Paprika",
         "amount": "1",
         "unit": "tsp",
@@ -353,6 +380,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "51739da4-5f7a-4051-ad74-a6c4050eb3ea",
         "name": "Clove",
         "amount": "½",
         "unit": "tsp",
@@ -363,6 +391,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "57b54f77-68be-4537-bff1-49e76470a2f2",
         "name": "Cardamom",
         "amount": "½",
         "unit": "tsp",
@@ -373,6 +402,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "92b4f846-d7a9-44c9-bc7a-a40a434d8eb8",
         "name": "Turmeric",
         "amount": "½",
         "unit": "tsp",
@@ -397,8 +427,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T16:16:49.083553",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T21:16:49.000Z",
     "version": 1
   }
 ]

@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "uuid": "e8851ce6-e92d-4498-9be2-6bba1cf8fa1a",
     "name": "Castelmango D.O.P.",
     "country": "IT",
@@ -12,11 +13,12 @@
     "imageUrl": null,
     "source": "memoix",
     "isFavorite": false,
-    "createdAt": "2025-12-23T12:49:47.491831",
-    "updatedAt": "2025-12-23T13:31:44.210096",
+    "createdAt": 1766512187000,
+    "updatedAt": 1776979785000,
     "version": 1
   },
   {
+    "id": 2,
     "uuid": "980c6a37-f63a-454f-94d7-ed830992f2b7",
     "name": "Fromager D'Affinois",
     "country": "FR",
@@ -29,11 +31,12 @@
     "imageUrl": null,
     "source": "memoix",
     "isFavorite": false,
-    "createdAt": "2025-12-23T12:53:31.799406",
-    "updatedAt": "2025-12-23T13:31:44.268035",
+    "createdAt": 1766512411000,
+    "updatedAt": 1776979785000,
     "version": 1
   },
   {
+    "id": 3,
     "uuid": "9110a0b9-5614-4df6-bfc2-7d0a242cd5cb",
     "name": "Manchego with Black Garlic",
     "country": "ES",
@@ -46,11 +49,12 @@
     "imageUrl": null,
     "source": "memoix",
     "isFavorite": false,
-    "createdAt": "2025-12-23T12:48:51.612833",
-    "updatedAt": "2025-12-23T13:31:44.375775",
+    "createdAt": 1766512131000,
+    "updatedAt": 1776979785000,
     "version": 1
   },
   {
+    "id": 4,
     "uuid": "74bf4e3b-f561-45f1-842a-e8985a28019f",
     "name": "Mountain Oak Farmstead Gold",
     "country": "CA",
@@ -63,11 +67,12 @@
     "imageUrl": null,
     "source": "memoix",
     "isFavorite": false,
-    "createdAt": "2025-12-23T12:48:15.065550",
-    "updatedAt": "2025-12-23T13:31:44.388152",
+    "createdAt": 1766512095000,
+    "updatedAt": 1776979785000,
     "version": 1
   },
   {
+    "id": 0,
     "uuid": "88c50627-924a-4bdc-9f48-3af402410be2",
     "name": "Occelli in Foglie di Castagno",
     "country": "IT",
@@ -80,11 +85,12 @@
     "imageUrl": null,
     "source": "memoix",
     "isFavorite": false,
-    "createdAt": "2025-12-23T12:51:09.427313",
-    "updatedAt": "2025-12-23T13:31:44.425212",
+    "createdAt": 1766512269000,
+    "updatedAt": 1776979785000,
     "version": 1
   },
   {
+    "id": 5,
     "uuid": "1540345a-8fd0-49cd-8cab-585bee04a17a",
     "name": "Petit Baechler",
     "country": "FR",
@@ -97,8 +103,8 @@
     "imageUrl": null,
     "source": "memoix",
     "isFavorite": false,
-    "createdAt": "2025-12-23T12:52:29.960330",
-    "updatedAt": "2025-12-23T13:31:44.446761",
+    "createdAt": 1766512349000,
+    "updatedAt": 1776979785000,
     "version": 1
   }
 ]

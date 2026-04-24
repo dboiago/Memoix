@@ -12,6 +12,7 @@
     "notes": null,
     "ingredients": [
       {
+        "uuid": "d24a5c27-8d1d-4abf-927c-d7499ed617c7",
         "name": "Cucumbers",
         "amount": "3",
         "unit": null,
@@ -22,6 +23,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "56287a92-d67b-4bde-b603-fef0c2d40980",
         "name": "Carrot",
         "amount": "50",
         "unit": "g",
@@ -32,6 +34,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "d4494a6d-4e10-434f-a51b-bc7dc7fa755f",
         "name": "Garlic Chive",
         "amount": "20",
         "unit": "g",
@@ -42,6 +45,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "f7c5d83c-ad3a-4f83-b436-53f2efb3ea00",
         "name": "Sea Salt",
         "amount": "1",
         "unit": "Tbsp",
@@ -52,6 +56,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "945f7110-6233-4a18-b194-f19b9319418f",
         "name": "Gochugaru",
         "amount": "2",
         "unit": "Tbsp",
@@ -62,6 +67,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "b5a0a992-66a1-4682-b4e5-232acc6a3412",
         "name": "Minced Garlic",
         "amount": "1",
         "unit": "Tbsp",
@@ -72,6 +78,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "0cd79aae-9b08-43d5-8d05-27df3f9ff6d9",
         "name": "Grated Red Apple",
         "amount": "1",
         "unit": "Tbsp",
@@ -82,6 +89,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "be10866d-45d0-4315-98ca-662e23c3742a",
         "name": "Honey",
         "amount": "1",
         "unit": "Tbsp",
@@ -92,6 +100,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "3a68029b-b3b6-4cc3-aaac-77ae9cebaec6",
         "name": "Soy Sauce",
         "amount": "1",
         "unit": "Tbsp",
@@ -102,6 +111,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "0ebc288e-1cb7-4037-9a23-e8e1bba72bf3",
         "name": "Minced Ginger",
         "amount": "½",
         "unit": "tsp",
@@ -130,8 +140,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T16:17:43.277222",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T21:17:43.000Z",
     "version": 1
   }
 ]

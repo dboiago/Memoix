@@ -12,6 +12,7 @@
     "notes": null,
     "ingredients": [
       {
+        "uuid": "6cbe8d8f-e346-4177-9258-8855628cdf09",
         "name": "Gin",
         "amount": "1½",
         "unit": "oz",
@@ -22,6 +23,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "f313f0ed-3812-4977-a224-c4d7bfa5298b",
         "name": "Amaretto",
         "amount": "½",
         "unit": "oz",
@@ -32,6 +34,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "ba4f900b-db69-4ebc-b699-52f8dd2bb588",
         "name": "Sparkling Wine",
         "amount": "2",
         "unit": "oz",
@@ -42,6 +45,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "a2f6e86d-8cf8-478a-b7f3-aeda5d7362b5",
         "name": "Lemon Curl",
         "amount": "1",
         "unit": null,
@@ -70,8 +74,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T15:34:44.278584",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T20:34:44.000Z",
     "version": 1,
     "glass": "Coupe",
     "garnish": [
@@ -91,6 +95,7 @@
     "notes": null,
     "ingredients": [
       {
+        "uuid": "ae31a51f-abe3-42b7-9236-b7f562c71571",
         "name": "French Vermouth",
         "amount": "¼",
         "unit": "oz",
@@ -101,6 +106,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "2ecaf33f-79b7-40f4-b18c-e4e5262c655f",
         "name": "Absinthe",
         "amount": "¼",
         "unit": "oz",
@@ -111,6 +117,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "4015447d-d047-497a-b556-63113bb1bb3f",
         "name": "Gin",
         "amount": "¼",
         "unit": "oz",
@@ -121,6 +128,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "ccdafb74-1854-42b4-9803-7b523127da4f",
         "name": "Creme de Violette",
         "amount": "¼",
         "unit": "ox",
@@ -150,8 +158,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T15:37:11.124268",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T20:37:11.000Z",
     "version": 1,
     "glass": "Coupe",
     "garnish": [
@@ -171,6 +179,7 @@
     "notes": null,
     "ingredients": [
       {
+        "uuid": "ddd8aad3-84f7-4be3-b856-0b59a7204e00",
         "name": "Gin",
         "amount": "2",
         "unit": "oz",
@@ -181,6 +190,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "3bef92a6-ae7d-4f1b-9c48-7963f05f1ec4",
         "name": "Marachino Liqueur",
         "amount": "½",
         "unit": "oz",
@@ -191,6 +201,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "19b68648-54e9-4032-be6d-3e399147d40d",
         "name": "Creme de Violette",
         "amount": "¼",
         "unit": "oz",
@@ -201,6 +212,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "6b52ece4-8ca1-4ffb-aa2c-dc56f0bfa503",
         "name": "Lemon Juice",
         "amount": "¾",
         "unit": "oz",
@@ -211,6 +223,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "c053fd6b-f65b-47a9-a99d-5956411356b9",
         "name": "Brandied Cherry",
         "amount": "1",
         "unit": null,
@@ -237,8 +250,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T15:38:30.373326",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T20:38:30.000Z",
     "version": 1,
     "glass": "Martini",
     "garnish": [
@@ -258,6 +271,7 @@
     "notes": null,
     "ingredients": [
       {
+        "uuid": "c1e71c0d-6db4-4819-9e5b-fe6ce5a6cfa1",
         "name": "Gin",
         "amount": "1",
         "unit": "oz",
@@ -268,6 +282,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "f54dccb9-dd3f-44c2-87c7-2aaef02f087f",
         "name": "Sweet Vermouth",
         "amount": "1",
         "unit": "oz",
@@ -278,6 +293,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "940ec4c4-1664-4557-aee6-94ff00f3a1ad",
         "name": "Green Chartreuse",
         "amount": "¾",
         "unit": "oz",
@@ -288,6 +304,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "f532026e-400b-4ce2-b765-d74ea0d38cf9",
         "name": "Campari",
         "amount": "¼",
         "unit": "oz",
@@ -314,8 +331,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T15:39:22.887642",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T20:39:22.000Z",
     "version": 1,
     "glass": "Martini",
     "garnish": [
@@ -335,6 +352,7 @@
     "notes": null,
     "ingredients": [
       {
+        "uuid": "4705240d-6017-4d52-821b-084530ac9295",
         "name": "Grapefruit Gin",
         "amount": "2",
         "unit": "oz",
@@ -345,6 +363,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "b0554324-f2ae-4cd9-a851-19f1219b32a6",
         "name": "Aperol",
         "amount": "2",
         "unit": "oz",
@@ -355,6 +374,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "1e52add1-04c9-4122-b6be-e8fb9e489115",
         "name": "Sweet Vermouth",
         "amount": "2",
         "unit": "oz",
@@ -365,6 +385,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "45016673-62ca-4fe2-a51a-5677357f515a",
         "name": "Bitters",
         "amount": "2-3",
         "unit": "dashes",
@@ -391,8 +412,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T15:39:58.144669",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T20:39:58.000Z",
     "version": 1,
     "glass": "Old Fashioned",
     "garnish": [
@@ -412,6 +433,7 @@
     "notes": null,
     "ingredients": [
       {
+        "uuid": "85aceaba-7697-4473-bee8-48496bfe172f",
         "name": "Water",
         "amount": "2",
         "unit": "L",
@@ -422,6 +444,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "08043859-8be1-43e6-ae02-bd5c713b7701",
         "name": "Roasted Barley",
         "amount": "3",
         "unit": "Tbsp",
@@ -450,8 +473,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T15:32:38.408964",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T20:32:38.000Z",
     "version": 1
   },
   {
@@ -467,6 +490,7 @@
     "notes": null,
     "ingredients": [
       {
+        "uuid": "c5615477-cf3e-4191-a7c7-823c72d42e5c",
         "name": "Absinthe",
         "amount": "Rinse",
         "unit": null,
@@ -477,6 +501,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "536a4fb8-9fe1-4514-94c9-e7d5321583e8",
         "name": "Dry Gin",
         "amount": "¾",
         "unit": "oz",
@@ -487,6 +512,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "3204b903-670a-45cf-a59b-dd36950ad8f8",
         "name": "Lillet Blanc",
         "amount": "¾",
         "unit": "oz",
@@ -497,6 +523,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "85fd64c4-9aa6-4fe2-b170-e13921eade5f",
         "name": "Orange Liquer",
         "amount": "¾",
         "unit": "oz",
@@ -507,6 +534,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "a649457e-db3d-46de-b01e-ba1b4b7a5377",
         "name": "Lemon Juice",
         "amount": "¾",
         "unit": "oz",
@@ -535,8 +563,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T15:41:58.800953",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T20:41:58.000Z",
     "version": 1,
     "glass": "Coupe"
   },
@@ -553,6 +581,7 @@
     "notes": null,
     "ingredients": [
       {
+        "uuid": "a9fac6c6-d900-4461-ad57-669285763d50",
         "name": "Gin",
         "amount": "2½",
         "unit": "oz",
@@ -563,6 +592,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "083bcaa1-b856-4ad3-b5c3-d2ef5035f1d3",
         "name": "Barolo Chinato",
         "amount": "¾",
         "unit": "oz",
@@ -573,6 +603,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "3639dac6-17b1-4b86-b069-b6168ce76d89",
         "name": "Peychaud's Bitters",
         "amount": "3",
         "unit": "dashes",
@@ -600,8 +631,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T15:42:44.408141",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T20:42:44.000Z",
     "version": 1,
     "glass": "Coupe",
     "garnish": [
@@ -621,6 +652,7 @@
     "notes": null,
     "ingredients": [
       {
+        "uuid": "d3299584-9f2e-4c3f-92b2-a91a566ac59f",
         "name": "Aged Gin",
         "amount": "2",
         "unit": "oz",
@@ -631,6 +663,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "b2005ffc-1233-45d2-a523-3fc28705ef64",
         "name": "Lemon Juice",
         "amount": "1",
         "unit": "oz",
@@ -641,6 +674,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "14e8c2f8-b184-46fe-ae96-18161952f1a4",
         "name": "Creme de Menthe",
         "amount": "2",
         "unit": "tsp",
@@ -651,6 +685,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "588f8672-905e-48b7-b729-baf40abbec83",
         "name": "Simple Syrup",
         "amount": "2",
         "unit": "tsp",
@@ -661,6 +696,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "205879c9-40ad-402b-bfd5-e8f122fff501",
         "name": "Aromatic Bitters",
         "amount": "2",
         "unit": "dashes",
@@ -688,8 +724,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T15:44:00.572847",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T20:44:00.000Z",
     "version": 1
   },
   {
@@ -705,6 +741,7 @@
     "notes": null,
     "ingredients": [
       {
+        "uuid": "b30483ab-631f-4374-998e-ead81234176b",
         "name": "Dry Gin",
         "amount": "1½",
         "unit": "oz",
@@ -715,6 +752,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "748ca9e7-20b6-41d8-bf21-8662c3a30bfb",
         "name": "Simple Syrup",
         "amount": "¾",
         "unit": "oz",
@@ -725,6 +763,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "b77cfc53-5987-4d50-aa8f-aae92adfb547",
         "name": "Lemon Juice",
         "amount": "¾",
         "unit": "oz",
@@ -735,6 +774,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "3c912bbe-10d3-40f4-a9ce-df1c4a318755",
         "name": "Sparkling Cider",
         "amount": "To",
         "unit": "Top",
@@ -763,8 +803,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T15:45:35.560709",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T20:45:35.000Z",
     "version": 1,
     "glass": "Flute",
     "garnish": [
@@ -784,6 +824,7 @@
     "notes": null,
     "ingredients": [
       {
+        "uuid": "78a7679c-f588-4ebd-92c3-bbf027025fa5",
         "name": "Gin",
         "amount": "2½",
         "unit": "oz",
@@ -794,6 +835,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "4d22c883-30fc-426f-8d7e-56e4583f3b13",
         "name": "Vermouth",
         "amount": "½",
         "unit": "oz",
@@ -820,8 +862,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T15:46:32.986635",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T20:46:32.000Z",
     "version": 1,
     "glass": "Martini",
     "garnish": [
@@ -841,6 +883,7 @@
     "notes": "Mix and serve",
     "ingredients": [
       {
+        "uuid": "7cbf3c5d-6645-40b7-92a2-db5fe968cf7b",
         "name": "Gin",
         "amount": "2½",
         "unit": "oz",
@@ -851,6 +894,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "56bfff8b-0a3f-4746-8dbc-1eeb416d7803",
         "name": "Lime Juice",
         "amount": "½",
         "unit": "oz",
@@ -861,6 +905,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "19d23e91-dfc0-4806-a3c2-823698c12d50",
         "name": "Simple Syrup",
         "amount": "½",
         "unit": "oz",
@@ -885,8 +930,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T15:47:20.189431",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T20:47:20.000Z",
     "version": 1,
     "glass": "Martini",
     "garnish": [
@@ -906,6 +951,7 @@
     "notes": null,
     "ingredients": [
       {
+        "uuid": "e031abe8-d78f-4a56-985c-84f5cfca1af0",
         "name": "Gin",
         "amount": "1½",
         "unit": "oz",
@@ -916,6 +962,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "1856d16d-48e9-45c7-9f96-1cb9ae366acc",
         "name": "Club Soda",
         "amount": "2¼",
         "unit": "oz",
@@ -926,6 +973,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "0d0531b1-b1b2-4ff1-8a3f-3196ec70319b",
         "name": "Tonic Water",
         "amount": "2¼",
         "unit": "oz",
@@ -952,8 +1000,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T15:50:48.700384",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T20:50:48.000Z",
     "version": 1,
     "glass": "Highball",
     "garnish": [
@@ -973,6 +1021,7 @@
     "notes": null,
     "ingredients": [
       {
+        "uuid": "58e3740e-06f3-4230-9627-844fc6d7d856",
         "name": "Gin",
         "amount": "1",
         "unit": "oz",
@@ -983,6 +1032,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "e6a17454-8068-4a18-8ae4-9160356133e4",
         "name": "Campari",
         "amount": "1",
         "unit": "oz",
@@ -993,6 +1043,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "a4ff8837-8e59-4261-b2fa-0e2101016eb9",
         "name": "Sweet Vermouth",
         "amount": "1",
         "unit": "oz",
@@ -1019,8 +1070,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T15:51:17.707032",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T20:51:17.000Z",
     "version": 1,
     "glass": "Old Fashioned",
     "garnish": [
@@ -1040,6 +1091,7 @@
     "notes": null,
     "ingredients": [
       {
+        "uuid": "152d2c54-6530-4320-8993-457bcfd9e6af",
         "name": "Cold Brew Campari",
         "amount": "1",
         "unit": "oz",
@@ -1050,6 +1102,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "9ddc8979-7160-471d-a1ee-eab6c2a3388c",
         "name": "Gin",
         "amount": "1",
         "unit": "oz",
@@ -1060,6 +1113,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "2c1e971e-09be-44c1-ac1f-9f514f2ea695",
         "name": "Sweet Vermouth",
         "amount": "1",
         "unit": "oz",
@@ -1088,8 +1142,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T15:52:18.730639",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T20:52:18.000Z",
     "version": 1,
     "glass": "Old Fashioned",
     "garnish": [
@@ -1109,6 +1163,7 @@
     "notes": null,
     "ingredients": [
       {
+        "uuid": "8a099f6f-ef28-406c-8067-96775aadfff9",
         "name": "Sweet Vermouth",
         "amount": "750",
         "unit": "ml",
@@ -1119,6 +1174,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "123e69f7-9374-4c0e-acf7-37251b4a885a",
         "name": "Campari",
         "amount": "750",
         "unit": "ml",
@@ -1129,6 +1185,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "cc16927f-c167-4c89-849e-6816d6707f5c",
         "name": "Prosecco",
         "amount": "750",
         "unit": "ml",
@@ -1139,6 +1196,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "4a401bb3-8893-410d-842d-eb891a7f3d79",
         "name": "Fruit",
         "amount": "1",
         "unit": "C",
@@ -1149,6 +1207,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "be85ebed-f150-4433-ad13-e284a31450a8",
         "name": "Cinnamon",
         "amount": "1-2",
         "unit": "shavings",
@@ -1175,8 +1234,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T15:56:10.006057",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T20:56:10.000Z",
     "version": 1,
     "glass": "Old Fashioned",
     "garnish": [
@@ -1196,6 +1255,7 @@
     "notes": null,
     "ingredients": [
       {
+        "uuid": "01d9cbd1-0a10-440a-be8f-3006ab86410f",
         "name": "Gin",
         "amount": "¾",
         "unit": "oz",
@@ -1206,6 +1266,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "59dcf04c-8bd9-4720-8aa5-3c91ee3b47df",
         "name": "Green Chartreuse",
         "amount": "¾",
         "unit": "oz",
@@ -1216,6 +1277,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "59481eb4-1d45-48e5-9f6d-9fd1d0263f03",
         "name": "Maraschino Liqueur",
         "amount": "¾",
         "unit": "oz",
@@ -1226,6 +1288,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "d382743e-ead7-41e5-a8bf-641057aa78a5",
         "name": "Lime Juice",
         "amount": "¾",
         "unit": "oz",
@@ -1252,8 +1315,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T15:53:22.147218",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T20:53:22.000Z",
     "version": 1,
     "glass": "Martini",
     "garnish": [
@@ -1273,6 +1336,7 @@
     "notes": null,
     "ingredients": [
       {
+        "uuid": "115a80ee-11f3-48dd-a1f9-c5417630b062",
         "name": "London Dry Gin",
         "amount": "2",
         "unit": "oz",
@@ -1283,6 +1347,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "42d09ac0-2b13-4455-9052-cad75bf86d80",
         "name": "Lemon Juice",
         "amount": "1",
         "unit": "oz",
@@ -1293,6 +1358,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "01c4c81d-3132-440d-b87e-6b4f65a7ad8e",
         "name": "Simple Syrup",
         "amount": "½",
         "unit": "oz",
@@ -1303,6 +1369,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "a921437e-b259-490c-aac8-009848bb0502",
         "name": "Club Soda",
         "amount": "To",
         "unit": "Top",
@@ -1313,6 +1380,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "0ac4a6e5-26d3-451a-a485-5d9e7a4969e7",
         "name": "Lemon Wheel",
         "amount": "1",
         "unit": null,
@@ -1339,8 +1407,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T15:54:16.829535",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T20:54:16.000Z",
     "version": 1,
     "glass": "Collins",
     "garnish": [
@@ -1360,6 +1428,7 @@
     "notes": null,
     "ingredients": [
       {
+        "uuid": "2641e43d-c808-4c11-9446-ad3a347c5d88",
         "name": "Gin",
         "amount": "3",
         "unit": "oz",
@@ -1370,6 +1439,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "a2ba3eac-d4ad-4b9a-96e2-5978d8e171d8",
         "name": "Vodka",
         "amount": "1",
         "unit": "oz",
@@ -1380,6 +1450,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "ade44b7f-50ac-41cf-ace3-59f5b88e5a8c",
         "name": "Lillet Blanc",
         "amount": "½",
         "unit": "oz",
@@ -1406,8 +1477,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T15:55:07.961972",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T20:55:07.000Z",
     "version": 1,
     "glass": "Martini",
     "garnish": [
@@ -1427,6 +1498,7 @@
     "notes": null,
     "ingredients": [
       {
+        "uuid": "69799092-36b7-4011-8106-34e7a0ab09a5",
         "name": "Gin",
         "amount": "1½",
         "unit": "oz",
@@ -1437,6 +1509,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "48bc08fc-bb46-4d5e-83c5-1180892fc189",
         "name": "Lillet Blanc",
         "amount": "1",
         "unit": "oz",
@@ -1447,6 +1520,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "79404eff-db2d-48b8-81a2-544760cb2846",
         "name": "Suze Gentian",
         "amount": "½",
         "unit": "oz",
@@ -1473,8 +1547,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T15:55:39.254525",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T20:55:39.000Z",
     "version": 1,
     "glass": "Old Fashioned",
     "garnish": [

@@ -12,6 +12,7 @@
     "notes": null,
     "ingredients": [
       {
+        "uuid": "9057bb34-7b04-4d4e-9bc6-e64e3287f0cf",
         "name": "Tofu",
         "amount": "1",
         "unit": null,
@@ -22,6 +23,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "2cc70a1c-2f91-4564-ae8d-d2adc409c3d1",
         "name": "Vital Wheat Gluten",
         "amount": "1¾",
         "unit": "C",
@@ -32,6 +34,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "c60db366-1660-456f-8675-e002e69df33c",
         "name": "Ketchup",
         "amount": "½",
         "unit": "C",
@@ -42,6 +45,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "f2973350-fe63-4f6e-abcf-4059f86a990e",
         "name": "Nutritional Yeast",
         "amount": "¼",
         "unit": "C",
@@ -52,6 +56,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "69bded21-84b9-40a6-9529-9e59140a2561",
         "name": "Soy Sauce",
         "amount": "2",
         "unit": "Tbsp",
@@ -62,6 +67,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "4054cf0a-c438-4fa0-9b8f-b59ae7addf91",
         "name": "Onion Powder",
         "amount": "1½",
         "unit": "Tbsp",
@@ -72,6 +78,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "4c289f4c-7257-458d-bcd4-7d40f542d57a",
         "name": "Garlic Powder",
         "amount": "1½",
         "unit": "Tbsp",
@@ -82,6 +89,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "bc80d955-dc81-4157-b8be-c858337d996e",
         "name": "Paprika",
         "amount": "1",
         "unit": "Tbsp",
@@ -92,6 +100,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "433ae47e-1c8e-42fb-848f-fad8c1b97d51",
         "name": "Mustard Powder",
         "amount": "1",
         "unit": "Tbsp",
@@ -102,6 +111,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "b4e4c3ad-33fa-4e3f-8bb6-108c2b6f36ac",
         "name": "Nutmeg",
         "amount": "¼",
         "unit": "tsp",
@@ -133,8 +143,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T15:00:09.408679",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T20:00:09.000Z",
     "version": 1
   },
   {
@@ -150,6 +160,7 @@
     "notes": null,
     "ingredients": [
       {
+        "uuid": "05abb8c8-9f33-4d6e-a35b-5a228e5cd562",
         "name": "Vital Wheat Gluten",
         "amount": "¾",
         "unit": "C",
@@ -160,6 +171,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "0a3d4514-dfe3-4538-805f-86e036581240",
         "name": "Water",
         "amount": "⅔",
         "unit": "C",
@@ -170,6 +182,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "d2bb4125-68b5-4ce8-8365-d7e802413f1a",
         "name": "Flour",
         "amount": "¼",
         "unit": "C",
@@ -180,6 +193,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "0abb4fa9-9738-4d77-88a5-0d019685a258",
         "name": "Broth Powder",
         "amount": "1",
         "unit": "tsp",
@@ -190,6 +204,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "1b644f40-22f2-48ca-a171-134a732771ec",
         "name": "Onion Powder",
         "amount": "½",
         "unit": "tsp",
@@ -200,6 +215,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "263ccb34-a6f5-48c3-9b0b-6502b65d24f7",
         "name": "Garlic Powder",
         "amount": "½",
         "unit": "tsp",
@@ -210,6 +226,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "d3bfd043-9722-4002-820d-e74d3298339d",
         "name": "Salt",
         "amount": "¼",
         "unit": "tsp",
@@ -239,8 +256,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T15:05:35.100157",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T20:05:35.000Z",
     "version": 1
   },
   {
@@ -256,6 +273,7 @@
     "notes": null,
     "ingredients": [
       {
+        "uuid": "b04db4a2-36e1-4ec7-86fb-1be640a1ff58",
         "name": "Tofu",
         "amount": "1",
         "unit": null,
@@ -266,6 +284,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "b6e8f1a0-37eb-49b5-accd-ccfc52a1e342",
         "name": "Vegetable Broth",
         "amount": "1",
         "unit": "C",
@@ -276,6 +295,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "55810c27-547d-404d-aaf6-6e589d849705",
         "name": "Nori",
         "amount": "1",
         "unit": "sheet",
@@ -286,6 +306,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "2c030843-caa5-4deb-bbd5-40d8417cfa01",
         "name": "Cider Vinegar",
         "amount": "2",
         "unit": "Tbsp",
@@ -296,6 +317,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "aeb897ad-ba19-4166-9c82-bada4dd89e6d",
         "name": "White Miso",
         "amount": "2",
         "unit": "Tbsp",
@@ -306,6 +328,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "72b51f61-18ec-4f82-9cc1-12789c034e86",
         "name": "Garlic",
         "amount": "1",
         "unit": "tsp",
@@ -316,6 +339,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "85fac1a6-a40f-4e1f-9512-bda1f5a25242",
         "name": "Salt",
         "amount": "1",
         "unit": "tsp",
@@ -326,6 +350,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "e3b4bceb-c076-40ec-be17-2bde7ef2a9c8",
         "name": "Turmeric",
         "amount": "½",
         "unit": "tsp",
@@ -336,6 +361,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "3d0e4243-f8c9-406d-9240-01211064f0cd",
         "name": "Beet",
         "amount": "1",
         "unit": null,
@@ -346,6 +372,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "eb81cb06-7eee-4c90-b5c7-4331773be0e9",
         "name": "Nori",
         "amount": "1",
         "unit": "sheet",
@@ -356,6 +383,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "51bb2c73-136a-484a-94b3-d2e707c6c3fa",
         "name": "Cornstarch",
         "amount": "½",
         "unit": "C",
@@ -366,6 +394,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "b936913b-de7a-42a0-b6ee-355a609110e2",
         "name": "Oil",
         "amount": "2",
         "unit": "Tbsp",
@@ -376,6 +405,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "7da61c60-1733-471e-a9b3-3d0486c4d802",
         "name": "Lemon Wedge",
         "amount": "To",
         "unit": "Taste",
@@ -410,8 +440,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T15:05:27.371546",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T20:05:27.000Z",
     "version": 1
   },
   {
@@ -427,6 +457,7 @@
     "notes": null,
     "ingredients": [
       {
+        "uuid": "80033338-178e-4479-b98c-627a9b67a351",
         "name": "Onion",
         "amount": "1",
         "unit": null,
@@ -437,6 +468,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "91e25fe5-8778-44e3-b651-96fbcf9b5b5f",
         "name": "Garlic",
         "amount": "3",
         "unit": null,
@@ -447,6 +479,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "376ba625-483a-4a89-aa81-e6a4a1722a5c",
         "name": "Vital Wheat Gluten",
         "amount": "2",
         "unit": "C",
@@ -457,6 +490,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "57ca342a-d4de-4ec9-aa9b-7a4ce001de81",
         "name": "Vegetable Broth",
         "amount": "¾",
         "unit": "C",
@@ -467,6 +501,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "aa32a111-dcb1-4104-ba2e-c459ecc62c47",
         "name": "Tomato Paste",
         "amount": "¼",
         "unit": "C",
@@ -477,6 +512,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "963a97a9-aadd-406f-ba05-d3e134338556",
         "name": "White Miso",
         "amount": "¼",
         "unit": "C",
@@ -487,6 +523,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "b994b6ca-f103-4c18-85ad-1ae0789226ea",
         "name": "Sundried Tomatoes",
         "amount": "¼",
         "unit": "C",
@@ -497,6 +534,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "9ec121c1-a041-4b19-af72-f062119128e8",
         "name": "Nutritional Yeast",
         "amount": "2",
         "unit": "Tbsp",
@@ -507,6 +545,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "a91d00f3-62ad-4bb5-b64c-cc40016bef6e",
         "name": "Basil",
         "amount": "1",
         "unit": "Tbsp",
@@ -517,6 +556,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "0beec195-5143-44d3-acb2-3dd237a9f0ea",
         "name": "Brown Sugar",
         "amount": "2",
         "unit": "tsp",
@@ -527,6 +567,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "8a9ee9ac-f9cd-4fcf-af64-8e5ce0c90107",
         "name": "Fennel Seeds",
         "amount": "2",
         "unit": "tsp",
@@ -537,6 +578,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "9e5486d1-4c10-4b3d-9d05-c4528157298b",
         "name": "Rosemary",
         "amount": "1",
         "unit": "tsp",
@@ -547,6 +589,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "8b59c3f6-ec51-489b-bebf-744f77e1a118",
         "name": "Salt",
         "amount": "¾",
         "unit": "tsp",
@@ -557,6 +600,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "cfa305e8-68a2-488b-b901-c91cc97dda8b",
         "name": "Red Pepper Flakes",
         "amount": "½",
         "unit": "tsp",
@@ -567,6 +611,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "e1cf9ad5-03a5-4418-a746-bc005e5538bd",
         "name": "Liquid Smoke",
         "amount": "¼",
         "unit": "tsp",
@@ -601,8 +646,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T15:01:08.503542",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T20:01:08.000Z",
     "version": 1
   },
   {
@@ -618,6 +663,7 @@
     "notes": null,
     "ingredients": [
       {
+        "uuid": "01ab9883-3a60-4ece-b3c5-dd2d57c00f16",
         "name": "Vital Wheat Glutan",
         "amount": "2",
         "unit": "C",
@@ -628,6 +674,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "1c1ec09d-4f5c-428a-9d4e-65b22c16927d",
         "name": "Nutritional Yeast",
         "amount": "4",
         "unit": "Tbsp",
@@ -638,6 +685,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "0620eaab-a8cd-4617-beee-10b7ca95afc4",
         "name": "Smoked Paprika",
         "amount": "2",
         "unit": "Tbsp",
@@ -648,6 +696,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "6c27ee43-3c3a-4ccb-a6bd-a31b291fc809",
         "name": "Soy Sauce",
         "amount": "1",
         "unit": "Tbsp",
@@ -658,6 +707,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "378cbca2-c5af-40e0-afb0-fad6568f18b9",
         "name": "Onion Powder",
         "amount": "4",
         "unit": "tsp",
@@ -668,6 +718,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "7797bbe7-a6ba-4bbf-8a13-accf8ad1b148",
         "name": "Garlic Powder",
         "amount": "2",
         "unit": "tsp",
@@ -678,6 +729,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "d87c27a6-1d9c-4737-bdcb-52eca7d7c6f8",
         "name": "Black Pepper",
         "amount": "1",
         "unit": "tsp",
@@ -688,6 +740,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "abe22485-dafa-4269-b00d-c8edebcf567a",
         "name": "Liquid Smoke",
         "amount": "1",
         "unit": "tsp",
@@ -698,6 +751,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "728f3c82-d0f1-483a-af38-e9bac0933ccd",
         "name": "Peanut Buuter",
         "amount": "1",
         "unit": "Tbsp",
@@ -727,8 +781,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T15:05:51.278845",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T20:05:51.000Z",
     "version": 1
   },
   {
@@ -744,6 +798,7 @@
     "notes": null,
     "ingredients": [
       {
+        "uuid": "deec05fe-a0eb-4ca5-80c7-541250539ddc",
         "name": "Vital Wheat Gluten",
         "amount": "1½",
         "unit": "C",
@@ -754,6 +809,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "3a76522f-fe25-42d5-8648-25eca84db918",
         "name": "Cooked Lentils",
         "amount": "1",
         "unit": "C",
@@ -764,6 +820,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "d6d82b69-215b-4a73-a7f3-7612c1460956",
         "name": "Water",
         "amount": "6",
         "unit": "Tbsp",
@@ -774,6 +831,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "53317b6d-b207-465c-b53d-09f3b7e69de8",
         "name": "Nutritional Yeast",
         "amount": "2",
         "unit": "Tbsp",
@@ -784,6 +842,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "71fd71d6-8995-4f4d-bcc6-2ebe37a0941f",
         "name": "Tomato Paste",
         "amount": "2",
         "unit": "Tbsp",
@@ -794,6 +853,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "6f69654f-93c6-44db-99ed-ee7e1345d023",
         "name": "Soy Sauce",
         "amount": "2",
         "unit": "Tbsp",
@@ -804,6 +864,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "104cdbcc-5791-45cf-9549-9f04636b12e8",
         "name": "Garlic Powder",
         "amount": "1",
         "unit": "tsp",
@@ -814,6 +875,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "12cb2af1-3adb-4c77-8622-138d690e621f",
         "name": "Chili Powder",
         "amount": "1",
         "unit": "tsp",
@@ -824,6 +886,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "8f398743-b863-48e2-a193-8eab5c90fc96",
         "name": "Liquid Smoke",
         "amount": "½",
         "unit": "tsp",
@@ -834,6 +897,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "4d4e7bed-5fe0-49a6-b266-b739ebd7374d",
         "name": "Black Pepper",
         "amount": "¼",
         "unit": "tsp",
@@ -864,8 +928,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T15:05:16.614032",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T20:05:16.000Z",
     "version": 1
   },
   {
@@ -881,6 +945,7 @@
     "notes": null,
     "ingredients": [
       {
+        "uuid": "07f7bf75-05d7-44b0-ae6e-786ed3ae832e",
         "name": "Stock",
         "amount": "6",
         "unit": "C",
@@ -891,6 +956,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "6873f522-9017-4ebc-8422-94b451a6e4db",
         "name": "Flour",
         "amount": "4",
         "unit": "C",
@@ -901,6 +967,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "1db76b3f-5f0b-4f2d-9923-3efacf31ccc9",
         "name": "Water",
         "amount": "1¾",
         "unit": "C",
@@ -941,8 +1008,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T14:59:17.643206",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T19:59:17.000Z",
     "version": 1
   },
   {
@@ -958,6 +1025,7 @@
     "notes": null,
     "ingredients": [
       {
+        "uuid": "5c5ce207-2543-4250-ab5a-34e0d03d56cc",
         "name": "Starch Water",
         "amount": "1½",
         "unit": "C",
@@ -968,6 +1036,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "27a58914-71ac-4ee8-807b-38f66c501ad0",
         "name": "Soy Sauce",
         "amount": "¼",
         "unit": "C",
@@ -978,6 +1047,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "9b08f400-1914-4cad-9661-55deb8924ec4",
         "name": "Paprika",
         "amount": "1½",
         "unit": "Tbsp",
@@ -988,6 +1058,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "3c4b9300-fbe1-4671-9e18-8bb658c374cd",
         "name": "Maple Syrup",
         "amount": "1½",
         "unit": "Tbsp",
@@ -998,6 +1069,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "30857e95-5864-41bf-841b-5a01fed3c894",
         "name": "Liquid Smoke",
         "amount": "2",
         "unit": "tsp",
@@ -1008,6 +1080,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "55754f77-6d96-43e9-aadf-02d2eeb006b0",
         "name": "Garlic Powder",
         "amount": "1½",
         "unit": "tsp",
@@ -1018,6 +1091,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "4ca0cf89-447a-44a2-9af6-9f3b3890a6e0",
         "name": "Onion Powder",
         "amount": "1½",
         "unit": "tsp",
@@ -1028,6 +1102,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "b5b1744b-2f43-4668-a652-c191ab25d0d7",
         "name": "Salt",
         "amount": "¾",
         "unit": "tsp",
@@ -1038,6 +1113,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "0a1b875a-238f-4d51-9053-19aba8a0ce28",
         "name": "Starch Water",
         "amount": "¾",
         "unit": "C",
@@ -1048,6 +1124,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "c5351d46-66de-411b-b073-9f747d9945ee",
         "name": "Garlic Powder",
         "amount": "½",
         "unit": "tsp",
@@ -1058,6 +1135,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "21e249ba-6836-43c3-a613-1d6f28cb3520",
         "name": "Salt",
         "amount": "½",
         "unit": "tsp",
@@ -1068,6 +1146,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "d76e1370-5504-43d3-93ee-72a5c1eb1e8f",
         "name": "Liquid Smoke",
         "amount": "¼",
         "unit": "tsp",
@@ -1100,8 +1179,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T15:07:14.118475",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T20:07:14.000Z",
     "version": 1
   }
 ]

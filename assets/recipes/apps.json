@@ -12,6 +12,7 @@
     "notes": null,
     "ingredients": [
       {
+        "uuid": "b29dc7dc-3103-4145-b245-4324423d8b6a",
         "name": "Tofu",
         "amount": "600",
         "unit": "g",
@@ -22,6 +23,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "fb5dcc70-dee0-4cd5-98a3-fd44acdd3898",
         "name": "Dashi",
         "amount": "1",
         "unit": "C",
@@ -32,6 +34,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "74354077-321b-46e1-ab2d-785c21c0ea6a",
         "name": "Mirin",
         "amount": "4",
         "unit": "Tbsp",
@@ -42,6 +45,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "0b7db275-ba4a-47f0-a2fb-7cd90f3d5532",
         "name": "Soy Sauce",
         "amount": "4",
         "unit": "Tbsp",
@@ -52,6 +56,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "276f4cf0-3153-4383-ade6-24b1c5dd8357",
         "name": "Sugar",
         "amount": "2",
         "unit": "Tbsp",
@@ -79,8 +84,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T14:08:14.110744",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T19:08:14.000Z",
     "version": 1
   }
 ]

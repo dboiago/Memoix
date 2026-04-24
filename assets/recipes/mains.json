@@ -7,11 +7,14 @@
     "subcategory": null,
     "serves": "2",
     "time": "20 min",
+    "serving_size": 250,
+    "total_time_minutes": 20,
     "pairsWith": [],
     "pairedRecipeIds": [],
     "notes": null,
     "ingredients": [
       {
+        "uuid": "89e2f88d-1976-487b-a8ed-7c5fc8fc34d4",
         "name": "Somen Noodles",
         "amount": "180",
         "unit": "g",
@@ -22,6 +25,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "96458077-d54e-4b1d-ba86-35216978f13a",
         "name": "Kimchi",
         "amount": "½",
         "unit": "C",
@@ -32,6 +36,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "d62fdb9f-735a-4087-ba30-8ce8ff4b6cf2",
         "name": "Cucumber",
         "amount": "85",
         "unit": "g",
@@ -42,6 +47,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "bd99a472-7be8-44a1-8cb4-c9b9b794a70a",
         "name": "Egg",
         "amount": "1",
         "unit": null,
@@ -52,6 +58,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "16e9dc2d-056a-4291-a9f5-3aece77409a7",
         "name": "Gochujang",
         "amount": "2",
         "unit": "Tbsp",
@@ -62,6 +69,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "4487aa09-3e91-460d-bfcf-5ac83088a69e",
         "name": "Rice Vinegar",
         "amount": "1",
         "unit": "Tbsp",
@@ -72,6 +80,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "da56c351-d6a3-437a-92e8-b6d3bd8b83d5",
         "name": "Honey",
         "amount": "1",
         "unit": "Tbsp",
@@ -82,6 +91,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "4fa5c9ee-b032-46e8-aed4-87907c043ff9",
         "name": "Raw Sugar",
         "amount": "1",
         "unit": "Tbsp",
@@ -92,6 +102,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "8752761d-74b6-42b2-a820-66d23548da0b",
         "name": "Sesame Oil",
         "amount": "1",
         "unit": "Tbsp",
@@ -102,6 +113,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "d9f73f49-c430-41f0-9e15-227d1efb7997",
         "name": "Sesame Seeds",
         "amount": "1",
         "unit": "Tbsp",
@@ -131,8 +143,256 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T14:46:20.327328",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T19:46:20.000Z",
+    "version": 1
+  },
+  {
+    "uuid": "f162782c-aeca-41f3-8854-8b4803ffdab2",
+    "name": "Coq au Vin",
+    "course": "mains",
+    "cuisine": null,
+    "subcategory": null,
+    "serves": "4",
+    "time": null,
+    "serving_size": 450,
+    "total_time_minutes": 150,
+    "pairsWith": [],
+    "pairedRecipeIds": [],
+    "notes": null,
+    "ingredients": [
+      {
+        "uuid": "d2b7fbe6-4e99-41b6-bbe3-40491593b883",
+        "name": "chicken legs and thighs",
+        "amount": "3",
+        "unit": "lb",
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "uuid": "7aa6185d-0d50-447e-a263-6de461d50d04",
+        "name": "black pepper",
+        "amount": "½",
+        "unit": "tsp",
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "uuid": "57c039d3-c526-4984-bdc3-3cb7c39bb0b1",
+        "name": "red wine",
+        "amount": "3",
+        "unit": "C",
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "uuid": "46afd14e-6cf4-4185-815f-46fe6b044113",
+        "name": "bay leaf",
+        "amount": "1",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "uuid": "9276ad33-01d7-44ef-b06f-2c76ebd6389c",
+        "name": "thyme",
+        "amount": "1",
+        "unit": "tsp",
+        "preparation": "chopped",
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "uuid": "c83a7bba-10eb-4ec4-8323-c86bdea4b98c",
+        "name": "lardons",
+        "amount": "4",
+        "unit": "oz",
+        "preparation": "pancetta, diced, ¼in pieces (about 1 cup)",
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "uuid": "4497d2ae-acdb-43f4-b63f-9583294fb4ff",
+        "name": "onion",
+        "amount": "1",
+        "unit": null,
+        "preparation": "diced",
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "uuid": "2b31d5fc-5780-4c99-b09a-95a65b67933d",
+        "name": "carrot",
+        "amount": "1",
+        "unit": null,
+        "preparation": "diced",
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "uuid": "11d9a838-c586-4021-8801-65b2b5098864",
+        "name": "mushrooms",
+        "amount": "8",
+        "unit": "iz",
+        "preparation": "halved or sliced, about 4 cups",
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "uuid": "62063ec0-e54b-444a-955d-cf17a3323afd",
+        "name": "garlic",
+        "amount": "2",
+        "unit": null,
+        "preparation": "minced",
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "uuid": "2c186f9d-3efb-4359-96e2-dd0635bb87cc",
+        "name": "tomato paste",
+        "amount": "1",
+        "unit": "tsp",
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "uuid": "6b78d48e-6f86-4995-b7d7-be731c23e641",
+        "name": "all-purpose flour",
+        "amount": "1",
+        "unit": "tsp",
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "uuid": "719f0e7b-effe-42a2-a3ec-dc651e967ad7",
+        "name": "brandy",
+        "amount": "2",
+        "unit": "Tbsp",
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "uuid": "471f8a95-57cb-45ab-b969-fbdf55f5a773",
+        "name": "butter",
+        "amount": "3",
+        "unit": "Tbsp",
+        "preparation": "unsalted",
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "uuid": "ad7e37e8-4592-4c2d-9f66-a265fb1321ab",
+        "name": "pearl onions",
+        "amount": "8",
+        "unit": "oz",
+        "preparation": "12-15",
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "uuid": "df5a3995-9c99-4346-bbb6-11edeb27d776",
+        "name": "sugar",
+        "amount": "pinch",
+        "unit": null,
+        "preparation": null,
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "uuid": "5679af1e-a486-4ff0-883f-3322380227b3",
+        "name": "parsley",
+        "amount": "¼",
+        "unit": "C",
+        "preparation": "chopped",
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      },
+      {
+        "uuid": "90d0bc0e-78e5-4683-b0dc-9038b05e74c9",
+        "name": "white bread",
+        "amount": "2",
+        "unit": "slices",
+        "preparation": "crust removed, cut into triangles",
+        "alternative": null,
+        "isOptional": false,
+        "section": null,
+        "bakerPercent": null
+      }
+    ],
+    "directions": [
+      "Season chicken with 2¼ teaspoons salt and ½ teaspoon pepper.",
+      "In a large bowl, combine chicken, wine, bay leaf and thyme. Cover and refrigerate for at least 2 hours or, even better, overnight.",
+      "In a large Dutch oven or a heavy-bottomed pot with a tightfitting lid, cook lardons over medium-low heat until fat has rendered, and lardons are golden and crisp, 10 to 15 minutes.",
+      "Using a slotted spoon, transfer lardons to a paper-towel-lined plate, leaving rendered fat in pot.\"\t\n\"Remove chicken from wine, reserving the marinade.",
+      "Pat chicken pieces with paper towels until very dry. Heat lardon fat over medium heat until it’s just about to smoke.",
+      "Working in batches if necessary, add chicken in a single layer and cook until well browned, 3 to 5 minutes per side. (Add oil if the pot looks a little dry.) Transfer chicken to a plate as it browns.",
+      "Add diced onion, carrot, half the mushrooms and the remaining ¼ teaspoon salt to pot. Cook until vegetables are lightly browned, about 8 minutes, stirring up any brown bits.",
+      "Stir in garlic and tomato paste and cook for 1 minute, then stir in flour and cook for another minute.",
+      "Remove from heat, push vegetables to one side of pot, pour brandy into empty side, and ignite with a match.",
+      "(If you’re too nervous to ignite it, just cook brandy down for 1 minute.) Once the flame dies down, add reserved marinade, bring to a boil, and reduce halfway (to 1½ cups), about 12 minutes. Skim off any large pockets of foam that form on the surface.",
+      "Add chicken, any accumulated juices and half the cooked lardons to the pot. Cover and simmer over low heat for 1 hour, turning halfway through.",
+      "Uncover pot and simmer for 15 minutes to thicken\t\n\"Meanwhile, melt 1 tablespoon butter and 2 tablespoons oil in a nonstick or other large skillet over medium-high heat. Add pearl onions, a pinch of sugar and salt to taste.",
+      "Cover, reduce heat to low and cook for 15 minutes, shaking skillet often to move onions around. Uncover, push onions to one side of skillet, add remaining mushrooms, and raise heat to medium-high.",
+      "Continue to cook until browned, stirring mushrooms frequently, and gently tossing onions occasionally, 5 to 8 minutes. Remove onions and mushrooms from skillet, and wipe it out.",
+      "In same skillet, melt 2 tablespoons butter and 1 tablespoon oil over medium heat until bubbling. Add bread and toast on all sides until golden, about 2 minutes per side.",
+      "To serve, dip croutons in wine sauce, then coat in parsley. Add pearl onions, mushrooms and remaining half of the cooked lardons to the pot. Baste with wine sauce, sprinkle with parsley and serve with croutons on top."
+    ],
+    "sourceUrl": null,
+    "imageUrl": null,
+    "imageUrls": [],
+    "headerImage": null,
+    "stepImages": [],
+    "stepImageMap": [],
+    "source": "personal",
+    "colorValue": null,
+    "isFavorite": false,
+    "rating": 0,
+    "cookCount": 0,
+    "lastCookedAt": null,
+    "tags": [],
+    "createdAt": "2026-01-05T23:54:16.000Z",
+    "updatedAt": "2026-04-02T12:19:00.000Z",
     "version": 1
   },
   {
@@ -143,11 +403,14 @@
     "subcategory": null,
     "serves": "3",
     "time": "35 min",
+    "serving_size": 300,
+    "total_time_minutes": 35,
     "pairsWith": [],
     "pairedRecipeIds": [],
     "notes": null,
     "ingredients": [
       {
+        "uuid": "3c71dc4a-abed-4809-8966-4a6381a08481",
         "name": "Alkaline Noodles",
         "amount": "200",
         "unit": "g",
@@ -158,6 +421,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "f2494fec-55cd-45dd-bb94-dbde0482bf82",
         "name": "Stock",
         "amount": "1½-2",
         "unit": "C",
@@ -168,6 +432,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "b1eb4c3f-c8e3-455a-8aba-fb87cfce1b7e",
         "name": "Scallion",
         "amount": "1-2",
         "unit": null,
@@ -178,6 +443,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "08c16324-101a-45ec-8547-fda3e0316b1e",
         "name": "Peanuts",
         "amount": "3",
         "unit": "Tbsp",
@@ -188,6 +454,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "3210f8d8-d560-4f0e-9bf5-460ff53032a9",
         "name": "Vegetables",
         "amount": "Handful",
         "unit": null,
@@ -198,6 +465,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "d6d71388-b756-4be2-91f0-2964ea023fb4",
         "name": "Minced Pork",
         "amount": "400",
         "unit": "g",
@@ -208,6 +476,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "cfb7a916-74a7-44cf-b0cc-c9ec33b03eea",
         "name": "Ya Cai",
         "amount": "1",
         "unit": "C",
@@ -218,6 +487,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "51387e52-7823-4858-9b4c-f57e5b8f5084",
         "name": "Star Anise",
         "amount": "1",
         "unit": null,
@@ -228,6 +498,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "e223fbc1-6d77-46ff-9d26-2e9e4acb8d8e",
         "name": "Cooking Oil",
         "amount": "2",
         "unit": "Tbsp",
@@ -238,6 +509,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "e8fe0810-26b5-41b0-b2ae-61f72b2836ca",
         "name": "Light Soy Sauce",
         "amount": "1",
         "unit": "Tbsp",
@@ -248,6 +520,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "3ad610a7-7e36-4a93-98a4-869da562c225",
         "name": "Garlic",
         "amount": "½",
         "unit": "Tbsp",
@@ -258,6 +531,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "6c4929c6-31b5-4f8b-bd81-ce68d16fcc4c",
         "name": "Shaoxing Wine",
         "amount": "½",
         "unit": "Tbsp",
@@ -268,6 +542,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "53730f1f-f9a0-42da-99ca-5d90cc36fca5",
         "name": "Sichuan Pepper",
         "amount": "1",
         "unit": "tsp",
@@ -278,6 +553,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "8913df4c-f2f5-4774-8ac7-5b3cdd381810",
         "name": "Sugar",
         "amount": "½",
         "unit": "tsp",
@@ -288,6 +564,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "08521c77-27d0-4589-bb4d-e2747fc2b49f",
         "name": "Light Soy Sauce",
         "amount": "1",
         "unit": "Tbsp",
@@ -298,6 +575,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "f0756303-724e-4377-a121-8996eee8ec0b",
         "name": "Chili Oil",
         "amount": "1",
         "unit": "Tbsp",
@@ -308,6 +586,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "2a269817-96c1-4264-a996-a271ec8f8be6",
         "name": "Sesame Paste",
         "amount": "1",
         "unit": "tsp",
@@ -318,6 +597,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "5069d5a6-ab87-4b85-9667-9c4b90bef022",
         "name": "Sesame Oil",
         "amount": "1",
         "unit": "tsp",
@@ -328,6 +608,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "94c8cac8-53a7-48e5-8544-48eeddc362d8",
         "name": "Black Vinegar",
         "amount": "1",
         "unit": "tsp",
@@ -338,6 +619,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "d140502c-d207-42a5-b045-5de350bb94cb",
         "name": "Sichuan Pepper",
         "amount": "¼",
         "unit": "tsp",
@@ -348,6 +630,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "7ce87ae4-2b0a-4181-b5eb-b45d331c1fec",
         "name": "Scallion",
         "amount": "1",
         "unit": "tsp",
@@ -375,13 +658,13 @@
     "stepImageMap": [],
     "source": "memoix",
     "colorValue": null,
-    "isFavorite": false,
+    "isFavorite": true,
     "rating": 0,
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T14:21:09.266107",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T19:21:09.000Z",
     "version": 1
   },
   {
@@ -390,78 +673,89 @@
     "course": "mains",
     "cuisine": "CN",
     "subcategory": null,
-    "serves": "",
-    "time": "",
+    "serves": null,
+    "time": null,
+    "serving_size": 175,
+    "total_time_minutes": 20,
     "pairsWith": [],
-    "pairedRecipeIds": [],
-    "notes": "",
+    "pairedRecipeIds": [
+      "dc32bd20-33e9-4350-8353-43ba5b943dc0"
+    ],
+    "notes": null,
     "ingredients": [
       {
+        "uuid": "058b4d5b-314a-4566-a2dc-de8d20288997",
         "name": "Pork Belly",
-        "amount": "500 g",
-        "unit": null,
-        "preparation": null,
-        "alternative": "alt: Pork Butt",
+        "amount": "500",
+        "unit": "g",
+        "preparation": "alt: Pork Butt",
+        "alternative": null,
         "isOptional": false,
         "section": null,
         "bakerPercent": null
       },
       {
+        "uuid": "8c33ef44-44a0-4bb6-8640-e31031e7369b",
         "name": "Hoisin Suace",
-        "amount": "2 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": "alt: Brown Sugar",
+        "amount": "2",
+        "unit": "Tbsp",
+        "preparation": "alt: Brown Sugar",
+        "alternative": null,
         "isOptional": false,
         "section": null,
         "bakerPercent": null
       },
       {
+        "uuid": "3218c7cc-8e71-432a-ba55-8151116e7ef5",
         "name": "Oyster Sauce",
-        "amount": "2 Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": "Light",
+        "amount": "2",
+        "unit": "Tbsp",
+        "preparation": "Light",
+        "alternative": null,
         "isOptional": false,
         "section": null,
         "bakerPercent": null
       },
       {
+        "uuid": "9da79de2-60f4-4aad-859e-60e882782ab2",
         "name": "Honey",
-        "amount": "½ Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": "alt: Dry Sherry, Mirin",
+        "amount": "½",
+        "unit": "Tbsp",
+        "preparation": "alt: Dry Sherry, Mirin",
+        "alternative": null,
         "isOptional": false,
         "section": null,
         "bakerPercent": null
       },
       {
+        "uuid": "d3d17684-98bc-4897-a48d-b4165c1483ea",
         "name": "Black Vinegar",
-        "amount": "½ Tbsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": "alt: Rice Vinegar",
+        "amount": "½",
+        "unit": "Tbsp",
+        "preparation": "alt: Rice Vinegar",
+        "alternative": null,
         "isOptional": false,
         "section": null,
         "bakerPercent": null
       },
       {
+        "uuid": "ac120e67-a9b7-4a9d-bf9b-e1fbf1d3a68a",
         "name": "Five Spice",
-        "amount": "¼ tsp",
-        "unit": null,
-        "preparation": null,
-        "alternative": "Optional",
-        "isOptional": true,
+        "amount": "¼",
+        "unit": "tsp",
+        "preparation": "Optional",
+        "alternative": null,
+        "isOptional": false,
         "section": null,
         "bakerPercent": null
       },
       {
+        "uuid": "d6eff4f6-2624-4877-beac-088d7de23a8b",
         "name": "Salt",
         "amount": "pinch",
         "unit": null,
-        "preparation": null,
-        "alternative": "alt: Soy Sauce",
+        "preparation": "alt: Soy Sauce",
+        "alternative": null,
         "isOptional": false,
         "section": null,
         "bakerPercent": null
@@ -479,15 +773,15 @@
     "headerImage": null,
     "stepImages": [],
     "stepImageMap": [],
-    "source": "memoix",
+    "source": "personal",
     "colorValue": null,
     "isFavorite": false,
     "rating": 0,
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-10T00:00:00.000",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2026-04-24T18:47:34.000Z",
     "version": 1
   },
   {
@@ -498,11 +792,14 @@
     "subcategory": null,
     "serves": "1",
     "time": "15 min",
+    "serving_size": 300,
+    "total_time_minutes": 15,
     "pairsWith": [],
     "pairedRecipeIds": [],
     "notes": null,
     "ingredients": [
       {
+        "uuid": "e65880a4-7079-4468-95e9-7d23e9ff5b4a",
         "name": "Noodles",
         "amount": "1",
         "unit": "serving",
@@ -513,6 +810,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "552411f5-f304-4892-bc24-731e66dd9f8a",
         "name": "Garlic",
         "amount": "2",
         "unit": null,
@@ -523,6 +821,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "0f581a9b-ceba-4b90-a914-a52c29849f33",
         "name": "Peppers",
         "amount": "2",
         "unit": null,
@@ -533,6 +832,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "b94a5a44-1067-4e0b-9292-9c3d481dd212",
         "name": "Scallion",
         "amount": "1",
         "unit": null,
@@ -543,6 +843,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "56851913-36b7-4e4e-8d35-73cddc186f19",
         "name": "Oyster Sauce",
         "amount": "1",
         "unit": "Tbsp",
@@ -553,6 +854,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "4b507712-8c1b-4ecf-a3a0-4f607cae38e2",
         "name": "Light Soy Sauce",
         "amount": "½",
         "unit": "Tbsp",
@@ -563,6 +865,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "705bb72d-c869-498d-800c-b44f635dfb21",
         "name": "Black Vinegar",
         "amount": "1",
         "unit": "tsp",
@@ -573,6 +876,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "14309790-78d1-47c1-b0ff-a3cb249e67b9",
         "name": "Sugar",
         "amount": "1",
         "unit": "tsp",
@@ -583,6 +887,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "b580e511-7dd0-484a-a478-b8561d4e8f70",
         "name": "Chili Flakes",
         "amount": "to",
         "unit": "taste",
@@ -593,6 +898,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "ffdf0cbe-2d26-4668-83f5-b0e180fbf4cf",
         "name": "Toasted Peanuts",
         "amount": "to",
         "unit": "taste",
@@ -603,6 +909,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "73acd3b6-df7c-4de5-a430-415e0a4c2acd",
         "name": "Toasted Sesame",
         "amount": "to",
         "unit": "taste",
@@ -633,8 +940,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T14:26:25.710733",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T19:26:25.000Z",
     "version": 1
   },
   {
@@ -645,11 +952,14 @@
     "subcategory": null,
     "serves": "4",
     "time": "45 min",
+    "serving_size": 350,
+    "total_time_minutes": 45,
     "pairsWith": [],
     "pairedRecipeIds": [],
     "notes": null,
     "ingredients": [
       {
+        "uuid": "d814b2be-5534-467d-af31-8802eee5cfa6",
         "name": "Tofu",
         "amount": "1",
         "unit": null,
@@ -660,6 +970,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "ec03fea3-1b68-4290-8d35-074b459a9f5b",
         "name": "Egg",
         "amount": "1",
         "unit": null,
@@ -670,6 +981,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "fbab12ab-3d7b-4b73-b7d4-4e8963b54aec",
         "name": "Scallion",
         "amount": "1-2",
         "unit": null,
@@ -680,6 +992,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "9e4985a0-f29e-432e-8e78-2594d8e6d725",
         "name": "Flour",
         "amount": "¼",
         "unit": "C",
@@ -690,6 +1003,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "f5593e02-bbac-4739-b895-6be1487ae549",
         "name": "Panko",
         "amount": "1",
         "unit": "C",
@@ -700,6 +1014,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "4cac6591-afd2-4251-9939-bc5c8a1f6b13",
         "name": "Dashi",
         "amount": "200",
         "unit": "ml",
@@ -710,6 +1025,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "31b9658c-2491-4147-aff0-414e575ec559",
         "name": "Soy Sauce",
         "amount": "60",
         "unit": "ml",
@@ -720,6 +1036,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "bf7dd354-0136-49d9-b255-19e6171ebc6b",
         "name": "Mirin",
         "amount": "60",
         "unit": "ml",
@@ -730,6 +1047,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "1b06c08b-4056-4e8a-b332-29a76dacc551",
         "name": "Sake",
         "amount": "30",
         "unit": "ml",
@@ -740,6 +1058,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "5afa96cd-09e1-4448-86fa-ff94457df09c",
         "name": "Rice",
         "amount": "1",
         "unit": "C",
@@ -750,6 +1069,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "d9c50c40-9284-4a08-b8b4-57662bcab31d",
         "name": "Eggs",
         "amount": "4",
         "unit": null,
@@ -760,6 +1080,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "665e2f6d-d506-48ef-bc28-e678515dc29c",
         "name": "Onion",
         "amount": "1",
         "unit": null,
@@ -770,6 +1091,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "c4b4b40b-413f-4368-aa58-ef94672cad76",
         "name": "Oyster Sauce",
         "amount": "2½",
         "unit": "Tbsp",
@@ -780,6 +1102,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "e7ab429c-cc53-4676-8bb4-407bd6e4582f",
         "name": "Worcestershire",
         "amount": "2½",
         "unit": "Tbsp",
@@ -790,6 +1113,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "fa9cce35-7b87-4562-b23f-a6c1ddce1672",
         "name": "Ketchup",
         "amount": "2",
         "unit": "Tbsp",
@@ -800,6 +1124,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "9a5bdad1-af66-44c5-9173-8f81d0714292",
         "name": "Honey",
         "amount": "2",
         "unit": "tsp",
@@ -836,8 +1161,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T14:43:14.112490",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T19:43:14.000Z",
     "version": 1
   },
   {
@@ -848,6 +1173,8 @@
     "subcategory": null,
     "serves": "4-5 people",
     "time": null,
+    "serving_size": 300,
+    "total_time_minutes": 70,
     "pairsWith": [],
     "pairedRecipeIds": [
       "f8033be5-b047-4979-b656-a303b5c92731"
@@ -855,6 +1182,7 @@
     "notes": null,
     "ingredients": [
       {
+        "uuid": "5bb3f682-b144-473c-b347-359984c8e58a",
         "name": "Chicken",
         "amount": "3",
         "unit": "lb",
@@ -865,6 +1193,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "d99d4fbd-852b-4290-8f9a-1f89f33c7943",
         "name": "Potato Starch",
         "amount": "1",
         "unit": "C",
@@ -875,6 +1204,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "979c6c13-f879-42f7-b0d4-034b1f129646",
         "name": "Minced Ginger",
         "amount": "2",
         "unit": "tsp",
@@ -885,6 +1215,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "80548305-9894-4951-965a-c7666ac6ce80",
         "name": "Rice Wine",
         "amount": "2",
         "unit": "Tbsp",
@@ -895,6 +1226,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "ad029579-eb49-47be-bccf-b153c55e02f1",
         "name": "Sea Salt",
         "amount": "1",
         "unit": "tsp",
@@ -905,6 +1237,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "55303bd5-040d-44a6-9710-bda565d2c5bd",
         "name": "Black Pepper",
         "amount": "½",
         "unit": "tsp",
@@ -929,8 +1262,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T14:47:14.117634",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T19:47:14.000Z",
     "version": 1
   },
   {
@@ -941,11 +1274,14 @@
     "subcategory": null,
     "serves": "2",
     "time": "40 min",
+    "serving_size": 300,
+    "total_time_minutes": 40,
     "pairsWith": [],
     "pairedRecipeIds": [],
     "notes": null,
     "ingredients": [
       {
+        "uuid": "782cfce5-04ff-415a-b112-672aacdbcab2",
         "name": "Tofu",
         "amount": "1",
         "unit": "lb",
@@ -956,6 +1292,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "887d8406-3146-45fa-b864-d48152ee6ee6",
         "name": "Garlic",
         "amount": "2",
         "unit": null,
@@ -966,6 +1303,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "e1875987-db39-49d9-a4fc-4428bdf8e8ce",
         "name": "Green Pepper",
         "amount": "1",
         "unit": null,
@@ -976,6 +1314,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "bebe2651-4c4e-43fe-af98-7e6b5035182a",
         "name": "Red Pepper",
         "amount": "1",
         "unit": null,
@@ -986,6 +1325,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "e26d5047-ac8a-4631-8d14-8bbe76971c69",
         "name": "Red Chili",
         "amount": "3-5",
         "unit": null,
@@ -996,6 +1336,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "5c729edd-c806-452c-89e3-dddb2dec058e",
         "name": "Ginger",
         "amount": "1",
         "unit": "in",
@@ -1006,6 +1347,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "d95abcce-136d-4848-84fc-c15d227d9b68",
         "name": "Vegetable Oil",
         "amount": "3",
         "unit": "Tbsp",
@@ -1016,6 +1358,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "61a2f93f-236d-4d28-988e-39fc8c72ec79",
         "name": "Peanuts",
         "amount": "1",
         "unit": "Tbsp",
@@ -1026,6 +1369,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "2ffb8924-44da-4f5e-ba11-28b7bc3a45e8",
         "name": "Sichuan Pepper",
         "amount": "⅛",
         "unit": "tsp",
@@ -1036,6 +1380,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "0dbf4808-03bf-4599-930e-7bf5273483bb",
         "name": "Scallions",
         "amount": "2",
         "unit": null,
@@ -1046,6 +1391,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "8b19a1f2-91d5-455b-8e97-c818af8a1d1b",
         "name": "Garlic",
         "amount": "2",
         "unit": null,
@@ -1056,6 +1402,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "e464a4c8-17eb-44e6-b465-b29db7a5ca1f",
         "name": "Water",
         "amount": "2",
         "unit": "Tbsp",
@@ -1066,6 +1413,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "3dc4812f-9c9b-4759-a417-e547c0377d5e",
         "name": "Green Onion",
         "amount": "1",
         "unit": "Tbsp",
@@ -1076,6 +1424,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "d7c0e0ac-d22a-482d-a5f6-79d3fff79fb7",
         "name": "Cornstarch",
         "amount": "1",
         "unit": "Tbsp",
@@ -1086,6 +1435,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "75193988-97cb-4e5b-8c78-32d3220a5d63",
         "name": "Light Soy Sauce",
         "amount": "1",
         "unit": "Tbsp",
@@ -1096,6 +1446,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "0cf6a7f4-4c4c-42c1-b223-efdd265a2f4c",
         "name": "Vinegar",
         "amount": "1",
         "unit": "Tbsp",
@@ -1106,6 +1457,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "0186ead1-81a9-4d8a-8070-9e4b40b7a9fa",
         "name": "Sugar",
         "amount": "2",
         "unit": "tsp",
@@ -1116,6 +1468,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "f69515f2-70df-4041-a92f-1f4a63c04c46",
         "name": "Ginger",
         "amount": "1",
         "unit": "in",
@@ -1126,6 +1479,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "b299ec11-db2d-45ac-a1a5-350d63a061f3",
         "name": "Salt",
         "amount": "Pinch",
         "unit": null,
@@ -1156,8 +1510,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T14:31:33.352078",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T19:31:33.000Z",
     "version": 1
   },
   {
@@ -1168,11 +1522,14 @@
     "subcategory": null,
     "serves": "6",
     "time": "1½ hr",
+    "serving_size": 300,
+    "total_time_minutes": 90,
     "pairsWith": [],
     "pairedRecipeIds": [],
     "notes": null,
     "ingredients": [
       {
+        "uuid": "3be50601-f64e-4add-9d59-b73447c8cacb",
         "name": "Ground Round",
         "amount": "36-40",
         "unit": "g / 2 packs",
@@ -1183,6 +1540,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "34dc9a18-81c0-4fd5-989a-3b543cb873b9",
         "name": "Crutons",
         "amount": "3",
         "unit": "C",
@@ -1193,6 +1551,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "459663cd-818e-4b21-ba26-481ebda1efc1",
         "name": "Garlic",
         "amount": "3",
         "unit": null,
@@ -1203,6 +1562,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "89665706-ced8-4d98-a095-2e591bddf5de",
         "name": "Egg",
         "amount": "1",
         "unit": null,
@@ -1213,6 +1573,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "aca8e266-c617-42cc-8569-01f07df92277",
         "name": "Carrot",
         "amount": "1",
         "unit": null,
@@ -1223,6 +1584,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "73a36b7f-c088-48a4-a5e6-a4ffb7458c34",
         "name": "Onion",
         "amount": "1",
         "unit": null,
@@ -1233,6 +1595,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "1d7fa520-3aa6-45c5-aee0-055b03cadc5c",
         "name": "Red Bell Pepper",
         "amount": "½",
         "unit": null,
@@ -1243,6 +1606,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "946751d6-e683-410a-a3e2-822da8f1ea37",
         "name": "Chili Powder",
         "amount": "1",
         "unit": "tsp",
@@ -1253,6 +1617,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "aacbc491-847c-483b-8e59-d2c49f831efa",
         "name": "Thyme",
         "amount": "1",
         "unit": "tsp",
@@ -1263,6 +1628,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "2d93ab8c-44c4-461b-8cdf-577928a6e13c",
         "name": "Black Pepper",
         "amount": "½",
         "unit": "tsp",
@@ -1273,6 +1639,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "7a5d9502-f683-4573-aec8-5036641d3023",
         "name": "Cayenne",
         "amount": "½",
         "unit": "tsp",
@@ -1283,6 +1650,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "b9abfe86-1d0b-4b4b-be8e-6d02c5be17f5",
         "name": "Salt",
         "amount": "1½",
         "unit": "tsp",
@@ -1293,6 +1661,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "52c18930-9428-4692-bbda-71c16e306ce2",
         "name": "Chipotle",
         "amount": "2",
         "unit": "cans",
@@ -1303,6 +1672,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "53e2b885-e78a-4b15-b4f3-182dc4b68562",
         "name": "Ketchup",
         "amount": "½",
         "unit": "C",
@@ -1313,6 +1683,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "f0adf67b-45d9-4eb2-95d9-6f4c75c8d3a0",
         "name": "Tomato Paste",
         "amount": "¼",
         "unit": "C",
@@ -1323,6 +1694,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "29d44ff9-e2d8-4095-836d-f9c298f05ec5",
         "name": "Cocoa Powder",
         "amount": "1",
         "unit": "Tbsp",
@@ -1333,6 +1705,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "285fdc46-e43a-40b5-913d-3fbfa5816d77",
         "name": "Dark Brown Sugar",
         "amount": "2",
         "unit": "tsp",
@@ -1343,6 +1716,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "259499c5-e674-48e8-9c7a-f9e17ee24eb2",
         "name": "Garlic Powder",
         "amount": "1",
         "unit": "tsp",
@@ -1377,8 +1751,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T14:55:23.049020",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T19:55:23.000Z",
     "version": 1
   },
   {
@@ -1389,11 +1763,14 @@
     "subcategory": null,
     "serves": "2",
     "time": null,
+    "serving_size": 350,
+    "total_time_minutes": 25,
     "pairsWith": [],
     "pairedRecipeIds": [],
     "notes": null,
     "ingredients": [
       {
+        "uuid": "9bd5f308-974b-4ba6-8807-ead364fcf11e",
         "name": "Rice",
         "amount": "3",
         "unit": "C",
@@ -1404,6 +1781,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "93b5dd59-f943-44d0-b72b-810c2bb3b2a6",
         "name": "Chicken",
         "amount": "250",
         "unit": "g",
@@ -1414,6 +1792,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "20945c45-a0a8-4f31-8b7e-f1f343dfb691",
         "name": "Eggs",
         "amount": "3",
         "unit": null,
@@ -1424,6 +1803,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "89f0983b-9c05-4878-996a-dcbb73ae5771",
         "name": "Onion",
         "amount": "½",
         "unit": null,
@@ -1434,6 +1814,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "e8a941a3-e3dc-40f8-9ff1-a2e2c1c818be",
         "name": "Dashi Stock",
         "amount": "¾",
         "unit": "C",
@@ -1444,6 +1825,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "525c65d6-ce91-44d1-b92a-7a55fc923e56",
         "name": "Mirin",
         "amount": "2",
         "unit": "Tbsp",
@@ -1454,6 +1836,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "b2b0929e-307c-44a2-a7e7-bda31fef09ec",
         "name": "Sugar",
         "amount": "1",
         "unit": "Tbsp",
@@ -1464,6 +1847,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "1f47e870-da3b-497d-8cd8-075e97d80330",
         "name": "Soy Sauce",
         "amount": "1",
         "unit": "Tbsp",
@@ -1497,8 +1881,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T14:44:19.898635",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T19:44:19.000Z",
     "version": 1
   },
   {
@@ -1509,11 +1893,14 @@
     "subcategory": null,
     "serves": null,
     "time": null,
+    "serving_size": 200,
+    "total_time_minutes": 60,
     "pairsWith": [],
     "pairedRecipeIds": [],
     "notes": null,
     "ingredients": [
       {
+        "uuid": "8dc9c3c8-0369-43cc-8877-3edffe48e828",
         "name": "Pumpkin",
         "amount": "500",
         "unit": "g",
@@ -1524,6 +1911,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "80d4139e-fc9e-4061-b451-27649f1ee80a",
         "name": "Flour",
         "amount": "200",
         "unit": "g",
@@ -1534,6 +1922,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "82261c34-c729-4876-a471-8fc85fdcc80e",
         "name": "Butter",
         "amount": "100",
         "unit": "g",
@@ -1544,6 +1933,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "1d16cb54-e592-45a2-984e-5cfdc8b73718",
         "name": "Eggs",
         "amount": "2",
         "unit": null,
@@ -1554,6 +1944,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "89fa9c03-4595-4205-a7d4-4fb3407d7472",
         "name": "Lemon Zest",
         "amount": "1",
         "unit": null,
@@ -1564,6 +1955,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "9db3c62d-1431-4bd1-8b0a-580d0b68e0bc",
         "name": "Sage",
         "amount": "½",
         "unit": "C",
@@ -1574,6 +1966,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "6282dbbf-195b-4f51-b23a-ef7a42038f11",
         "name": "Parmesan",
         "amount": "2",
         "unit": "Tbsp",
@@ -1584,6 +1977,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "802729e1-dd9e-44be-869a-84e116c6f3d6",
         "name": "Nutmeg",
         "amount": "1",
         "unit": "tsp",
@@ -1594,6 +1988,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "141ae2b3-9345-4497-aeb0-d9495f17cab5",
         "name": "Lemon Juice",
         "amount": "1",
         "unit": "tsp",
@@ -1604,7 +1999,8 @@
         "bakerPercent": null
       },
       {
-        "name": "S & P",
+        "uuid": "ddc97792-0acb-4f49-8c3d-9b64653c4a01",
+        "name": "S&P",
         "amount": "To",
         "unit": "Taste",
         "preparation": null,
@@ -1629,15 +2025,15 @@
     "headerImage": null,
     "stepImages": [],
     "stepImageMap": [],
-    "source": "memoix",
+    "source": "personal",
     "colorValue": null,
     "isFavorite": false,
     "rating": 0,
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T14:53:15.681695",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2026-04-24T19:21:41.000Z",
     "version": 1
   },
   {
@@ -1648,11 +2044,14 @@
     "subcategory": null,
     "serves": "4-6",
     "time": null,
+    "serving_size": 250,
+    "total_time_minutes": 90,
     "pairsWith": [],
     "pairedRecipeIds": [],
     "notes": null,
     "ingredients": [
       {
+        "uuid": "8f4fa7fb-1d56-4ca0-a543-9d005b29746d",
         "name": "Flour",
         "amount": "1¾",
         "unit": "C",
@@ -1663,6 +2062,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "d0eec415-25ee-4bea-8ef0-b2ea6205b4cc",
         "name": "Butter",
         "amount": "½",
         "unit": "C",
@@ -1673,6 +2073,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "01d8d946-0508-4260-8b7e-39a59085a928",
         "name": "Water",
         "amount": "6",
         "unit": "Tbsp",
@@ -1683,6 +2084,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "ddcfffb6-c4f9-43c1-b565-90f0caffebc8",
         "name": "Baking Powder",
         "amount": "½",
         "unit": "tsp",
@@ -1693,6 +2095,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "39111d1b-475c-49ca-8db3-c617f2e46b8a",
         "name": "Egg",
         "amount": "1",
         "unit": null,
@@ -1703,6 +2106,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "064ec020-74e9-426d-a6ea-ce707197db02",
         "name": "Bacon",
         "amount": "½",
         "unit": "lb",
@@ -1713,6 +2117,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "539246d1-99d4-43c3-844c-19a52078b0df",
         "name": "Eggs",
         "amount": "6",
         "unit": null,
@@ -1723,6 +2128,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "ec67bb20-7a3e-42c5-9a33-d267df17f9ca",
         "name": "Onion",
         "amount": "1",
         "unit": null,
@@ -1733,6 +2139,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "871cae0e-1980-4ec0-82ee-1fd51bc59f97",
         "name": "Heavy Cream",
         "amount": "2",
         "unit": "C",
@@ -1743,6 +2150,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "0d48b1ce-b5de-44c3-8dbb-104cbef5f1e4",
         "name": "Gruyere Cheese",
         "amount": "1½",
         "unit": "C",
@@ -1753,6 +2161,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "79405c6b-68ef-4563-a657-5996c0c24e66",
         "name": "S&P",
         "amount": "To",
         "unit": "Taste",
@@ -1785,8 +2194,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T14:49:11.109601",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T19:49:11.000Z",
     "version": 1
   },
   {
@@ -1797,11 +2206,14 @@
     "subcategory": null,
     "serves": "4-6",
     "time": null,
+    "serving_size": 350,
+    "total_time_minutes": 95,
     "pairsWith": [],
     "pairedRecipeIds": [],
     "notes": null,
     "ingredients": [
       {
+        "uuid": "04503d3d-2c82-4eb9-b11c-17efd759cd13",
         "name": "Oxtail",
         "amount": "3-4",
         "unit": "lb",
@@ -1812,6 +2224,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "ecc5059f-a7e0-470b-9a95-52316fb2c90a",
         "name": "Carrots",
         "amount": "3",
         "unit": null,
@@ -1822,6 +2235,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "f506c5d7-3650-4898-87a8-9c6b1db3864b",
         "name": "Tomatoes",
         "amount": "2-3",
         "unit": null,
@@ -1832,6 +2246,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "8b7aa58c-660e-42ce-9dc0-2ad0a4cda450",
         "name": "Onion",
         "amount": "1",
         "unit": null,
@@ -1842,6 +2257,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "d3ed0436-c676-4b15-a6d5-480bafce8ac1",
         "name": "Red Pepper",
         "amount": "1",
         "unit": null,
@@ -1852,6 +2268,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "270e54a5-25a5-4ca2-923a-4f2f1ac38c07",
         "name": "Leek",
         "amount": "1",
         "unit": null,
@@ -1862,6 +2279,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "90496262-2040-4f88-ad51-70fe66d553d3",
         "name": "Garlic",
         "amount": "4",
         "unit": null,
@@ -1872,6 +2290,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "17e388d6-0833-4ca0-aece-05fd5e3d8a68",
         "name": "Stock",
         "amount": "2",
         "unit": "C",
@@ -1882,6 +2301,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "405a8098-162c-432f-86a1-529d2378442c",
         "name": "Red Wine",
         "amount": "3",
         "unit": "C",
@@ -1892,6 +2312,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "948546b0-53a8-4292-9c66-c0bff479e535",
         "name": "Bay Leaf",
         "amount": "2",
         "unit": null,
@@ -1902,6 +2323,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "dc0377d6-a1e0-491a-8cb4-f90d13da5740",
         "name": "Cloves",
         "amount": "4",
         "unit": null,
@@ -1912,6 +2334,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "57dd1f3d-0914-4d0c-a00a-7e31c1c3afc9",
         "name": "Ground Ginger",
         "amount": "1",
         "unit": "tsp",
@@ -1943,8 +2366,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T14:57:21.605493",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T19:57:21.000Z",
     "version": 1
   },
   {
@@ -1955,11 +2378,14 @@
     "subcategory": null,
     "serves": "4",
     "time": "45 min",
+    "serving_size": 200,
+    "total_time_minutes": 45,
     "pairsWith": [],
     "pairedRecipeIds": [],
     "notes": null,
     "ingredients": [
       {
+        "uuid": "95e8982d-a3f6-4cde-b466-22df8bcd9a88",
         "name": "Pork Belly",
         "amount": "800g",
         "unit": null,
@@ -1970,6 +2396,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "b892b108-77f7-4638-a7ae-408f3c0f89be",
         "name": "Water",
         "amount": "¾",
         "unit": "C",
@@ -1980,6 +2407,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "d87ebd33-20c0-4457-9aa8-1c3e6fc771fc",
         "name": "Yellow Rock Sugar",
         "amount": "2",
         "unit": "Tbsp",
@@ -1990,6 +2418,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "027b1919-34c2-4c5b-951e-1a95ce6cd789",
         "name": "Light Soy Sauce",
         "amount": "1",
         "unit": "Tbsp",
@@ -2000,6 +2429,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "8882f081-a5a6-42a3-9880-fcef4f1bd595",
         "name": "Oil",
         "amount": "1",
         "unit": "Tbsp",
@@ -2010,6 +2440,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "eed20e48-c422-4ae4-8fe1-3b2dbe4adbaa",
         "name": "Shaoxing Wine",
         "amount": "1",
         "unit": "Tbsp",
@@ -2020,6 +2451,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "cfc934b7-6175-4700-9158-85c600162614",
         "name": "Chili Pepper",
         "amount": "4-6",
         "unit": null,
@@ -2030,6 +2462,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "fceb6480-cde5-4575-a71f-3e0880fb98a5",
         "name": "Bay Leaves",
         "amount": "2",
         "unit": null,
@@ -2040,6 +2473,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "cce1f64d-2fa0-4646-8b78-09ade48c2cc1",
         "name": "Garlic",
         "amount": "3",
         "unit": null,
@@ -2050,6 +2484,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "497f1714-27f6-4ad5-b44b-eb06c4f47748",
         "name": "Scallion",
         "amount": "2",
         "unit": null,
@@ -2060,6 +2495,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "9f051680-c674-4791-95aa-104cc9c83bb3",
         "name": "Star Anise",
         "amount": "2",
         "unit": null,
@@ -2070,6 +2506,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "7bb1b4f6-9a35-4a39-b804-9961115d1fe0",
         "name": "Cinnamon",
         "amount": "1",
         "unit": null,
@@ -2080,6 +2517,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "e10ac241-36b4-4e9d-a553-a0c722edb640",
         "name": "Ginger",
         "amount": "1",
         "unit": "inch",
@@ -2112,8 +2550,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T14:33:14.503131",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T19:33:14.000Z",
     "version": 1
   },
   {
@@ -2124,11 +2562,14 @@
     "subcategory": null,
     "serves": "2",
     "time": null,
+    "serving_size": 350,
+    "total_time_minutes": 25,
     "pairsWith": [],
     "pairedRecipeIds": [],
     "notes": null,
     "ingredients": [
       {
+        "uuid": "d46c3cfa-4f86-453d-ad66-19806d31926d",
         "name": "Cooking Oil",
         "amount": "1½",
         "unit": "C",
@@ -2139,6 +2580,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "cde7c4bd-0826-4cd9-a1ce-6989820fc4cc",
         "name": "Akaline Noodles",
         "amount": "2",
         "unit": null,
@@ -2149,6 +2591,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "d3a2db7a-b78b-4570-906e-a544db342417",
         "name": "Green Onion",
         "amount": "14",
         "unit": null,
@@ -2159,6 +2602,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "83056e55-ef17-40ed-b3e8-d4e99c94fdc4",
         "name": "Garlic",
         "amount": "1",
         "unit": "clove",
@@ -2169,6 +2613,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "4c9acc79-4080-44e3-b1a7-b5cf971b4ffa",
         "name": "Ginger",
         "amount": "4",
         "unit": "slices",
@@ -2179,6 +2624,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "9593a9aa-6e7b-4e52-b642-959c048b783a",
         "name": "Sichuan  Pepper",
         "amount": "1",
         "unit": "Tbsp",
@@ -2189,6 +2635,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "3e0883c9-d7c7-45cc-a8fc-813210f17b95",
         "name": "Light Soy Sauce",
         "amount": "2",
         "unit": "Tbsp",
@@ -2199,6 +2646,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "fe39b6ac-8838-47fd-8151-297efa7430c6",
         "name": "Dark Soy Sauce",
         "amount": "1",
         "unit": "tsp",
@@ -2209,6 +2657,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "b30898ca-6e12-4554-92c8-3b642e928a2d",
         "name": "Oytster Sauce",
         "amount": "1",
         "unit": "tsp",
@@ -2219,6 +2668,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "3dc29e38-0b76-4252-b6bc-f3bf92e2809f",
         "name": "Sugar",
         "amount": "1",
         "unit": "tsp",
@@ -2250,8 +2700,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T14:37:45.064941",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T19:37:45.000Z",
     "version": 1
   },
   {
@@ -2262,11 +2712,14 @@
     "subcategory": null,
     "serves": "2",
     "time": null,
+    "serving_size": 300,
+    "total_time_minutes": 30,
     "pairsWith": [],
     "pairedRecipeIds": [],
     "notes": null,
     "ingredients": [
       {
+        "uuid": "b7926d06-356a-449a-80b5-8a85a3f5bbc4",
         "name": "Water",
         "amount": "800",
         "unit": "mL",
@@ -2277,6 +2730,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "dd0944af-b389-4c3f-9415-b0c0bfe7d4a5",
         "name": "Mushrooms",
         "amount": "400",
         "unit": "g",
@@ -2287,6 +2741,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "b3716389-b4f2-43d0-a78a-5006b1f36bd0",
         "name": "Dried Chili",
         "amount": "12",
         "unit": null,
@@ -2297,6 +2752,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "3a6b8b1c-3e28-471d-af62-85e138736487",
         "name": "Doubajiang",
         "amount": "2",
         "unit": "Tbsp",
@@ -2307,6 +2763,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "8fbe43ab-a615-4578-baf0-d08efb56aa70",
         "name": "Green Onion",
         "amount": "2",
         "unit": null,
@@ -2317,6 +2774,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "0307ff17-8479-4173-9d3c-64f1bba9bbb3",
         "name": "Garlic",
         "amount": "3",
         "unit": null,
@@ -2327,6 +2785,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "77efbd0b-1081-49dd-b35b-fcbdc8cd30ea",
         "name": "Ginger",
         "amount": "1",
         "unit": "thumb",
@@ -2337,6 +2796,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "2d7da717-0971-4483-a50f-00a1efaf24dc",
         "name": "Sichuan",
         "amount": "1",
         "unit": "Tbsp",
@@ -2347,6 +2807,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "043379f1-ef7e-41c4-b2b8-f75b127cf19f",
         "name": "Soy Sauce",
         "amount": "1",
         "unit": "Tbsp",
@@ -2357,6 +2818,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "eac470e2-3f97-49a2-acbb-e381713c6871",
         "name": "Sugar",
         "amount": "¼",
         "unit": "tsp",
@@ -2388,8 +2850,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T14:39:07.876808",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T19:39:07.000Z",
     "version": 1
   },
   {
@@ -2400,11 +2862,14 @@
     "subcategory": null,
     "serves": "1 slab",
     "time": "5 hr",
+    "serving_size": null,
+    "total_time_minutes": 75,
     "pairsWith": [],
     "pairedRecipeIds": [],
     "notes": null,
     "ingredients": [
       {
+        "uuid": "437bc3fa-75c8-49cc-b14a-ce3f819ef725",
         "name": "Slab Ribs",
         "amount": "1",
         "unit": null,
@@ -2415,6 +2880,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "677df4a0-e38d-47e4-adde-3eb6560d57f0",
         "name": "BBQ Sauce",
         "amount": "1",
         "unit": "C",
@@ -2425,6 +2891,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "aaf9fa0a-1566-40e6-9315-b63df9b01f59",
         "name": "Liquid Smoke",
         "amount": "½",
         "unit": "C",
@@ -2435,6 +2902,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "b71bf6b1-f988-4ede-bb43-6c9a1f2596ef",
         "name": "Water",
         "amount": "½",
         "unit": "C",
@@ -2445,6 +2913,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "ca737ea2-716a-470b-95c4-a59847535d21",
         "name": "Memphis Dust",
         "amount": "3",
         "unit": "Tbsp",
@@ -2455,6 +2924,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "e797b2e9-9f5e-4f52-a71b-8ddc6a93b476",
         "name": "Salt",
         "amount": "1",
         "unit": "tsp",
@@ -2488,8 +2958,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T14:56:11.276879",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T19:56:11.000Z",
     "version": 1
   },
   {
@@ -2500,11 +2970,14 @@
     "subcategory": null,
     "serves": "2",
     "time": "40 min",
+    "serving_size": 400,
+    "total_time_minutes": 40,
     "pairsWith": [],
     "pairedRecipeIds": [],
     "notes": null,
     "ingredients": [
       {
+        "uuid": "dfc8b413-cc87-4cf6-be37-93ef8a60be5f",
         "name": "Soft Tofu",
         "amount": "350",
         "unit": "g",
@@ -2515,6 +2988,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "fcb65bc3-a264-4736-b5d0-8e6493c6c253",
         "name": "Enoki Mushroom",
         "amount": "100",
         "unit": "g",
@@ -2525,6 +2999,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "c5f38572-17af-498b-bb07-d49ec7d0a1bc",
         "name": "Shiitake Mushroom",
         "amount": "2",
         "unit": "/ 20 g",
@@ -2535,6 +3010,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "901c949d-711a-4fbe-8bd0-4e36bfea5a7f",
         "name": "Egg",
         "amount": "1.0",
         "unit": null,
@@ -2545,6 +3021,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "aff9a7b9-d7b6-4a7f-a508-7b5b873dfcc5",
         "name": "Green Onion",
         "amount": "1",
         "unit": "stalk (green)",
@@ -2555,6 +3032,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "19205ce1-edc5-400a-9ca1-cdc0400309a1",
         "name": "Kombu Stock",
         "amount": "1½",
         "unit": "C",
@@ -2565,6 +3043,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "a268a9fc-fff5-430d-93f8-1a8bace0ae1d",
         "name": "Korean Chili Powder",
         "amount": "2",
         "unit": "Tbsp",
@@ -2575,6 +3054,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "2bda12a6-ac74-4b57-b4bf-519fe8775d81",
         "name": "Korean Chili Oil",
         "amount": "1",
         "unit": "Tbsp",
@@ -2585,6 +3065,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "98c9779f-8bae-4a8f-b2a4-cdc2d1be194d",
         "name": "Fish Sauce",
         "amount": "½",
         "unit": "Tbsp",
@@ -2595,6 +3076,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "a733b9ce-3478-48c2-9d90-deaf2d88e45f",
         "name": "Soy Sauce",
         "amount": "½",
         "unit": "Tbsp",
@@ -2605,6 +3087,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "7b04303b-c2ec-4da6-9fc7-b69c6ae8dfb8",
         "name": "Minced Garlic",
         "amount": "1",
         "unit": "tsp",
@@ -2615,6 +3098,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "bccc5912-e55b-40d5-91c9-27e6b6ad9f04",
         "name": "Sesame Oil",
         "amount": "½",
         "unit": "tsp",
@@ -2625,6 +3109,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "04b1c192-6f73-4c1c-a861-a12f6cfd4b04",
         "name": "Salt and Pepper",
         "amount": "To",
         "unit": "Taste",
@@ -2654,8 +3139,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T14:48:09.064971",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T19:48:09.000Z",
     "version": 1
   },
   {
@@ -2666,11 +3151,14 @@
     "subcategory": null,
     "serves": "2.0",
     "time": "45 min",
+    "serving_size": 250,
+    "total_time_minutes": 45,
     "pairsWith": [],
     "pairedRecipeIds": [],
     "notes": "",
     "ingredients": [
       {
+        "uuid": "d44635db-9d09-47c5-aff3-e6ec6e0c5e2a",
         "name": "Garlic Sprouts",
         "amount": "1 bunch",
         "unit": null,
@@ -2681,6 +3169,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "6740272e-0c74-423f-8a30-e59e2db95fde",
         "name": "Chili Pepper",
         "amount": "2.0",
         "unit": null,
@@ -2691,6 +3180,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "06d51ef6-9045-4037-be2e-03e0a22584bc",
         "name": "Cooking Oil",
         "amount": "1 tsp",
         "unit": null,
@@ -2701,6 +3191,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "53f52fee-f5bf-482f-ae64-dd402db933e6",
         "name": "Ginger",
         "amount": "½ thumb",
         "unit": null,
@@ -2711,6 +3202,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "10bcb4f8-5dc9-42c8-89bf-104d1f1e9f32",
         "name": "Green Onion",
         "amount": "1.0",
         "unit": null,
@@ -2721,6 +3213,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "9e57e55c-a48f-44d4-ad5b-b081456d80ea",
         "name": "Garlic",
         "amount": "2 cloves",
         "unit": null,
@@ -2731,6 +3224,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "46918805-803f-4eac-8ee3-ba8a9fd65bb5",
         "name": "Doubanjiang",
         "amount": "1 Tbsp",
         "unit": null,
@@ -2741,6 +3235,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "cd4b862e-46c8-413a-b79f-a0604135a92c",
         "name": "Douchi",
         "amount": "2 tsp",
         "unit": null,
@@ -2751,6 +3246,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "67633708-e87e-4cc9-b16d-1935020ee6bb",
         "name": "Light Soy Sauce",
         "amount": "1 Tbsp",
         "unit": null,
@@ -2761,6 +3257,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "2b93ed87-2710-476e-95b2-94cd1322bae5",
         "name": "Shaoxing",
         "amount": "1 Tbsp",
         "unit": null,
@@ -2771,6 +3268,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "c29fca96-28d3-4460-8bf5-34825be328d4",
         "name": "Sugar",
         "amount": "½ tsp",
         "unit": null,
@@ -2781,6 +3279,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "51669884-0355-4ea3-b2b3-b95ddbebcb14",
         "name": "Pork Szechuan",
         "amount": "300 g",
         "unit": null,
@@ -2812,8 +3311,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-10T00:00:00.000",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-10T05:00:00.000Z",
     "version": 1
   },
   {
@@ -2824,11 +3323,14 @@
     "subcategory": null,
     "serves": "6",
     "time": "10 min",
+    "serving_size": null,
+    "total_time_minutes": 10,
     "pairsWith": [],
     "pairedRecipeIds": [],
     "notes": null,
     "ingredients": [
       {
+        "uuid": "73e9b691-c193-454d-b6ad-951116317bea",
         "name": "Masa Harina",
         "amount": "2",
         "unit": "C",
@@ -2839,6 +3341,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "2763090c-c991-4b20-b5b9-b5697812851e",
         "name": "Chicken Stock",
         "amount": "1½-2",
         "unit": "C",
@@ -2849,6 +3352,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "25ec5778-66eb-4fa7-ac14-e5da32e2d2a6",
         "name": "Shortening",
         "amount": "⅔",
         "unit": "C",
@@ -2859,6 +3363,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "aa88b8ad-0d01-4465-a1cd-0e6d8ce0dea0",
         "name": "Chile Sauce",
         "amount": "2-3",
         "unit": "Tbsp",
@@ -2869,6 +3374,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "e9c72866-59d0-4ba2-a298-23271066494c",
         "name": "Baking Powder",
         "amount": "1",
         "unit": "tsp",
@@ -2879,6 +3385,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "fdad1adb-afb7-4c16-b48f-ee34310d3fcc",
         "name": "Salt",
         "amount": "¼",
         "unit": "tsp",
@@ -2910,8 +3417,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T14:58:31.765629",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T19:58:31.000Z",
     "version": 1
   },
   {
@@ -2922,11 +3429,14 @@
     "subcategory": null,
     "serves": null,
     "time": null,
+    "serving_size": 200,
+    "total_time_minutes": 65,
     "pairsWith": [],
     "pairedRecipeIds": [],
     "notes": null,
     "ingredients": [
       {
+        "uuid": "19bdbfc5-fe49-4d66-9d32-50840663d1df",
         "name": "Spare Ribs",
         "amount": "1",
         "unit": "lb",
@@ -2937,6 +3447,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "d9e49fc2-74c6-4dc0-a323-9f4ae0769817",
         "name": "Rock Sugar",
         "amount": "35",
         "unit": "g",
@@ -2947,6 +3458,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "16814e0c-6587-4c73-b5c3-48c1d1561003",
         "name": "Black Vinegar",
         "amount": "3",
         "unit": "Tbsp",
@@ -2957,6 +3469,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "d65320d9-d477-4327-a46b-c75ab246afe5",
         "name": "Cooking Oil",
         "amount": "2",
         "unit": "Tbsp",
@@ -2967,6 +3480,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "c8815e78-b5d9-4e44-9802-23aad150f36a",
         "name": "Soy Sauce",
         "amount": "2",
         "unit": "Tbsp",
@@ -2977,6 +3491,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "1cd0eba0-c0d9-4420-a497-3dafb4730a5a",
         "name": "Cooking Wine",
         "amount": "2",
         "unit": "Tbsp",
@@ -2987,6 +3502,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "1b64e6f8-bf42-4d04-8ea8-d5a5ef20c09c",
         "name": "Star Anise",
         "amount": "1",
         "unit": null,
@@ -3019,8 +3535,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T14:40:36.390211",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T19:40:36.000Z",
     "version": 1
   },
   {
@@ -3031,11 +3547,14 @@
     "subcategory": null,
     "serves": "4-6",
     "time": "2 hr",
+    "serving_size": 300,
+    "total_time_minutes": 120,
     "pairsWith": [],
     "pairedRecipeIds": [],
     "notes": null,
     "ingredients": [
       {
+        "uuid": "dc92c822-f16a-4716-abe1-11621ce92473",
         "name": "White Beans",
         "amount": "1",
         "unit": "can",
@@ -3046,6 +3565,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "9c0acc7e-cb68-40f8-b715-aa58afdcb787",
         "name": "Navy Beans",
         "amount": "1",
         "unit": "can",
@@ -3056,6 +3576,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "8ef72a76-767f-4a25-974c-c28991e6f24b",
         "name": "Garlic",
         "amount": "4-6",
         "unit": null,
@@ -3066,6 +3587,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "0e690a1b-de36-4e9e-b928-4f97d9195871",
         "name": "Celery",
         "amount": "3-4",
         "unit": null,
@@ -3076,6 +3598,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "9108c0c0-247e-4d92-8f6c-6417850122c7",
         "name": "Carrot",
         "amount": "2",
         "unit": null,
@@ -3086,6 +3609,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "54ebddf2-898a-4671-9f11-1fdd3c81c58c",
         "name": "Sausage",
         "amount": "1-2",
         "unit": null,
@@ -3096,6 +3620,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "61f85c67-0ceb-49aa-814e-c476f6ec94eb",
         "name": "Onion",
         "amount": "1",
         "unit": null,
@@ -3106,6 +3631,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "db9d1d00-079b-4240-870c-7eaffd4fa0e4",
         "name": "Veg “Ham”",
         "amount": "1-2",
         "unit": "C",
@@ -3116,6 +3642,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "9b2e4c15-7972-434f-81a6-2cef15dffa99",
         "name": "Parmesan Rind",
         "amount": "1",
         "unit": null,
@@ -3126,6 +3653,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "3a3c857e-1349-4284-9b3a-73a132cd4afb",
         "name": "Vegetable Broth",
         "amount": "½-1",
         "unit": "C",
@@ -3136,6 +3664,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "d4d8a592-6280-4584-adc5-7e3ee87b47da",
         "name": "White Wine",
         "amount": "½",
         "unit": "C",
@@ -3146,6 +3675,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "d079695c-9dda-445c-88ef-a8bf7d6e6d4e",
         "name": "Butter",
         "amount": "2",
         "unit": "Tbsp",
@@ -3156,6 +3686,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "add56152-217b-48c5-92a3-fabecbd4ef70",
         "name": "Tomato Paste",
         "amount": "2",
         "unit": "tsp",
@@ -3166,6 +3697,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "e3fdbd91-c91a-475e-a300-fb5b566c96b8",
         "name": "Bay Leaf",
         "amount": "2",
         "unit": null,
@@ -3176,6 +3708,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "abcfa189-132e-480d-ab7f-7391cad66094",
         "name": "Thyme",
         "amount": "2-3",
         "unit": "sprigs",
@@ -3186,6 +3719,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "110cb31e-c1e9-4870-a595-bee1a7834d37",
         "name": "Paprika",
         "amount": "1–2",
         "unit": "tsp",
@@ -3196,6 +3730,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "c0607e38-21f0-4faf-bcef-b72b4ce3d2bc",
         "name": "Nutmeg",
         "amount": "⅛",
         "unit": "tsp",
@@ -3206,6 +3741,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "f044f69b-b1ba-4d97-b119-790a268d35e9",
         "name": "S & P",
         "amount": "to",
         "unit": "taste",
@@ -3216,6 +3752,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "8d3696f8-6454-4828-a916-d33538fb5b02",
         "name": "Breadcrumbs",
         "amount": "1",
         "unit": "C",
@@ -3226,6 +3763,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "d95dd185-1c39-4e07-9fb4-0b37e67c4f23",
         "name": "Garlic",
         "amount": "1",
         "unit": "clove",
@@ -3236,6 +3774,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "e390d83f-06f0-4d2b-8fdf-861e7763a14d",
         "name": "Butter",
         "amount": "1",
         "unit": "Tbsp",
@@ -3246,6 +3785,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "81dfe58f-6bef-46a0-aae0-d993068abdb6",
         "name": "Parsley",
         "amount": "1",
         "unit": "Tbsp",
@@ -3256,6 +3796,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "45b50a44-4bba-4f05-9869-07f047d4e72b",
         "name": "Thyme",
         "amount": "1",
         "unit": "Tbsp",
@@ -3292,8 +3833,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T14:52:26.687677",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T19:52:26.000Z",
     "version": 1
   },
   {
@@ -3304,11 +3845,14 @@
     "subcategory": null,
     "serves": "4",
     "time": "1 hr - 2 hr",
+    "serving_size": 175,
+    "total_time_minutes": 105,
     "pairsWith": [],
     "pairedRecipeIds": [],
     "notes": null,
     "ingredients": [
       {
+        "uuid": "c0f7b381-8bdc-4770-b507-83f96e3f77d5",
         "name": "Pork Butt",
         "amount": "950-1000",
         "unit": "g",
@@ -3319,6 +3863,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "aa637af3-1fa1-43c6-9aa9-50d0ae99d365",
         "name": "Water",
         "amount": "1000",
         "unit": "ml",
@@ -3329,6 +3874,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "daf4570a-30b9-415b-b34d-ecc2a794808a",
         "name": "Soy Sauce",
         "amount": "300",
         "unit": "ml",
@@ -3339,6 +3885,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "24444765-6265-4df5-b7cb-5b4ae7cc84ac",
         "name": "Sake",
         "amount": "150",
         "unit": "ml",
@@ -3349,6 +3896,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "3583d724-9929-4b7b-a25a-97a1307fca49",
         "name": "Scallions",
         "amount": "2",
         "unit": null,
@@ -3359,6 +3907,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "2ff82c16-60c1-4f31-aaec-552a9680d2e7",
         "name": "Sugar",
         "amount": "80",
         "unit": "g",
@@ -3369,6 +3918,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "a2283389-a643-4e04-9df5-41775805f0bb",
         "name": "Ginger",
         "amount": "1¼",
         "unit": "in",
@@ -3379,6 +3929,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "a5ae925b-9a24-46e8-ad9c-da8314d02b2d",
         "name": "Oil",
         "amount": "1",
         "unit": "Tbsp",
@@ -3410,8 +3961,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T14:45:35.220140",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T19:45:35.000Z",
     "version": 1
   },
   {
@@ -3422,11 +3973,14 @@
     "subcategory": null,
     "serves": "3.0",
     "time": "35 min",
+    "serving_size": 300,
+    "total_time_minutes": 35,
     "pairsWith": [],
     "pairedRecipeIds": [],
     "notes": "",
     "ingredients": [
       {
+        "uuid": "2915d962-3ddb-4056-bf48-ae64549a4e76",
         "name": "Noodles",
         "amount": "300 g / 1½ oz",
         "unit": null,
@@ -3437,6 +3991,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "7f0ec8b7-a37e-4363-bc13-37ca3e1bd6d7",
         "name": "Sesame Oil",
         "amount": "1 Tbsp",
         "unit": null,
@@ -3447,6 +4002,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "841b5aa1-4b86-411c-b641-1b98c9ebc928",
         "name": "Vegetable Oil",
         "amount": "2 Tbsp",
         "unit": null,
@@ -3457,6 +4013,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "8ecf8ae5-733c-4455-8bb7-50bda28b9595",
         "name": "Tofu",
         "amount": "200 g / 7 oz",
         "unit": null,
@@ -3467,6 +4024,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "9e79c7a2-57b4-4c30-aedb-9e0c2c5cd747",
         "name": "Carrot",
         "amount": "60 g / 2 oz",
         "unit": null,
@@ -3477,6 +4035,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "b9246c43-de2d-4b71-91d0-e1cf720a9660",
         "name": "Shiitake",
         "amount": "3.0",
         "unit": null,
@@ -3487,6 +4046,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "70eeb4ca-2a7c-44ab-851c-1d7fc1c57531",
         "name": "Green Onion",
         "amount": "2.0",
         "unit": null,
@@ -3497,6 +4057,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "3da33727-cce9-40a5-98c9-6338694f284f",
         "name": "Bell Pepper",
         "amount": "1.0",
         "unit": null,
@@ -3507,6 +4068,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "c6e1c159-97f2-4d31-8868-2b55ada0c808",
         "name": "Soy Sauce",
         "amount": "3 tbsp",
         "unit": null,
@@ -3517,6 +4079,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "0d446e4b-58b6-4935-8580-239aa65418a3",
         "name": "Worcestershire",
         "amount": "5 tbsp",
         "unit": null,
@@ -3527,6 +4090,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "5f1053b0-cd0c-4e70-9cfe-82cc2248b376",
         "name": "Ketchup",
         "amount": "3 tbsp",
         "unit": null,
@@ -3537,6 +4101,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "67509fce-2be9-4a4b-9d58-3c344e087143",
         "name": "Sugar",
         "amount": "1 tbsp",
         "unit": null,
@@ -3547,6 +4112,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "d70a9999-4e0f-4793-b972-aa505f96c4dc",
         "name": "Dashi Powder",
         "amount": "½ tsp",
         "unit": null,
@@ -3579,8 +4145,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-10T00:00:00.000",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-10T05:00:00.000Z",
     "version": 1
   }
 ]

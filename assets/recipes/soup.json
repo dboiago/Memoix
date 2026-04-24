@@ -12,6 +12,7 @@
     "notes": null,
     "ingredients": [
       {
+        "uuid": "b0ff99ba-0ce0-481b-9cb1-3dc82a460057",
         "name": "Cannellini Beans",
         "amount": "2",
         "unit": "cans",
@@ -22,6 +23,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "19284814-290d-48f1-ac0b-278cb381590d",
         "name": "Tomato Puree",
         "amount": "1",
         "unit": "can",
@@ -32,6 +34,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "1b3089f2-c782-4675-8cc5-01f29c5560d7",
         "name": "Onion",
         "amount": "1",
         "unit": null,
@@ -42,6 +45,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "a83ff148-f353-465c-8274-0a2c2dd10ef0",
         "name": "Garlic",
         "amount": "3",
         "unit": "cloves",
@@ -52,6 +56,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "f0e6698f-9939-423a-9655-d74d085e7092",
         "name": "Thyme",
         "amount": "½",
         "unit": "tsp",
@@ -62,6 +67,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "0be23a31-e4e7-471e-a67f-e490d50db924",
         "name": "Rosemary",
         "amount": "½",
         "unit": "tsp",
@@ -72,6 +78,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "e11a2c35-eff7-45eb-9d0c-f9428f161826",
         "name": "Bay Leaf",
         "amount": "1",
         "unit": null,
@@ -82,6 +89,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "0054cfea-57a6-49e0-820d-a7787aa8c9d9",
         "name": "Parsley",
         "amount": "1",
         "unit": "C",
@@ -92,6 +100,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "da9409ab-aa81-4ba1-8c26-fdebdfd1376c",
         "name": "Hazlenuts",
         "amount": "¼",
         "unit": "C",
@@ -102,6 +111,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "bce4c9eb-2682-4bb4-8b36-abbdfba1a288",
         "name": "Veg Stock",
         "amount": "3",
         "unit": "C",
@@ -135,8 +145,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T14:15:38.790921",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T19:15:38.000Z",
     "version": 1
   },
   {
@@ -152,6 +162,7 @@
     "notes": null,
     "ingredients": [
       {
+        "uuid": "5b4d104f-570c-4d89-b9cf-7c4d6043e13e",
         "name": "Stock",
         "amount": "4",
         "unit": "C",
@@ -162,6 +173,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "d4e71253-0534-429b-90a0-fef2ad4f8ccf",
         "name": "White Beans",
         "amount": "1",
         "unit": "can",
@@ -172,6 +184,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "191a503f-937d-481f-8a8f-eeac26c6ee1b",
         "name": "Onion",
         "amount": "1",
         "unit": null,
@@ -182,6 +195,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "369fa451-128a-40e4-a415-a7905612f9fe",
         "name": "Carrots",
         "amount": "2",
         "unit": null,
@@ -192,6 +206,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "2a40a770-65a8-4907-a4d7-b32aaeb1bff0",
         "name": "Celery",
         "amount": "2",
         "unit": null,
@@ -202,6 +217,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "0f29404b-e299-4e6e-b8e6-beb3dc8e0eea",
         "name": "Garlic",
         "amount": "3-5",
         "unit": "cloves",
@@ -212,6 +228,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "c78d7f60-f961-49b8-9609-c9d6786e881d",
         "name": "Bacon",
         "amount": "4",
         "unit": "Strips",
@@ -222,6 +239,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "b78830a5-4a0b-4370-b477-248314938133",
         "name": "Salt",
         "amount": "1",
         "unit": "tsp",
@@ -232,6 +250,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "f348d267-ea70-4331-886f-420a4db59099",
         "name": "White Pepper",
         "amount": "1",
         "unit": "tsp",
@@ -242,6 +261,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "6fba43d1-9988-4313-85f5-f50bfc3fa667",
         "name": "Bay leaf",
         "amount": "2",
         "unit": null,
@@ -252,6 +272,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "496226e8-4dc8-4edf-a1e2-5c134e4dc509",
         "name": "Chili Flakes",
         "amount": "1",
         "unit": "tsp",
@@ -262,6 +283,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "227a0963-6f1d-417c-b9b2-670416575492",
         "name": "Chili Oil",
         "amount": "2",
         "unit": "Tbsp",
@@ -295,8 +317,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T14:19:00.726342",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T19:19:00.000Z",
     "version": 1
   },
   {
@@ -312,6 +334,7 @@
     "notes": null,
     "ingredients": [
       {
+        "uuid": "713a5ebc-4c62-44a1-9407-1cdbbf686eaa",
         "name": "Kimchi",
         "amount": "¾",
         "unit": "C",
@@ -322,6 +345,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "0beeb00d-d357-487a-8d60-4b28ef231e0c",
         "name": "Water",
         "amount": "1",
         "unit": "C",
@@ -332,6 +356,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "29e05d50-429a-4759-a3f3-1e91bf4d7ae5",
         "name": "Firm Tofu",
         "amount": "150",
         "unit": "g",
@@ -342,6 +367,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "d3c9314b-3639-4fcf-87ff-3b076752a4fb",
         "name": "Shiitake",
         "amount": "50",
         "unit": "g",
@@ -352,6 +378,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "f01d74f8-434b-48d9-9672-2f16e28a1105",
         "name": "Onion",
         "amount": "30",
         "unit": "g",
@@ -362,6 +389,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "da3602d9-bde1-4dee-8ebf-90afe7894f29",
         "name": "Green Onion",
         "amount": "5",
         "unit": "g",
@@ -372,6 +400,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "6d6fc642-7ad2-4541-9f72-b42be453fd7e",
         "name": "Gochugaru",
         "amount": "1",
         "unit": "Tbsp",
@@ -382,6 +411,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "6ef8ce8d-0179-4b89-84db-4d679840fd05",
         "name": "Soy Sauce",
         "amount": "1",
         "unit": "Tbsp",
@@ -392,6 +422,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "4f4d8160-7cda-4f9f-acea-afa286aee2a9",
         "name": "Mirin",
         "amount": "1",
         "unit": "Tbsp",
@@ -402,6 +433,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "d12ed606-8a17-45a4-9c7d-0eaba547e877",
         "name": "Gochujang",
         "amount": "1",
         "unit": "tsp",
@@ -412,6 +444,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "25514224-cec2-46a3-b41a-e911df3a4b7a",
         "name": "Garlic",
         "amount": "¼",
         "unit": "tsp",
@@ -422,6 +455,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "73d48f3c-1661-4f87-9d9c-91ae535ec491",
         "name": "Black Pepper",
         "amount": "¼",
         "unit": "tsp",
@@ -445,13 +479,13 @@
     "stepImageMap": [],
     "source": "memoix",
     "colorValue": null,
-    "isFavorite": false,
+    "isFavorite": true,
     "rating": 0,
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T14:11:45.992184",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T19:11:45.000Z",
     "version": 1
   },
   {
@@ -467,6 +501,7 @@
     "notes": null,
     "ingredients": [
       {
+        "uuid": "ffa39d0d-5f90-4f0b-89e0-35134df6e9fd",
         "name": "Mushrooms",
         "amount": "680",
         "unit": "g",
@@ -477,6 +512,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "74b1a922-eca1-4ab0-ba7d-f1e965d6a9b4",
         "name": "Celery",
         "amount": "3",
         "unit": null,
@@ -487,6 +523,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "d77d4dea-6d11-4fa2-b9c3-d5b434c15257",
         "name": "Onion",
         "amount": "1",
         "unit": null,
@@ -497,6 +534,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "eb97dd87-cac7-4f8c-8378-382d971fe6d8",
         "name": "Garlic",
         "amount": "6-7",
         "unit": null,
@@ -507,6 +545,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "c2f25e10-41fc-4eef-a4e3-26eba92c1cae",
         "name": "Butter",
         "amount": "40",
         "unit": "g",
@@ -517,6 +556,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "b5848554-6741-4e7c-8f7f-9d738f3e7fc3",
         "name": "Oil",
         "amount": "20",
         "unit": "g",
@@ -527,6 +567,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "c7de4a8f-9d19-446b-88e6-0d99cf3c9cab",
         "name": "Thyme",
         "amount": "3-4",
         "unit": "sprigs",
@@ -537,6 +578,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "b2940af4-d6b0-4ad1-b8be-398ce304b574",
         "name": "Tarragon",
         "amount": "1",
         "unit": "tsp",
@@ -547,6 +589,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "2a750ab3-06f5-4837-8fc2-a9964cf6318f",
         "name": "Parmesan",
         "amount": "1",
         "unit": null,
@@ -557,6 +600,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "0c2fe273-5da4-4952-9ebd-9d6032a61ee7",
         "name": "Chili Flakes",
         "amount": "pinch",
         "unit": null,
@@ -567,6 +611,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "80cb4aa0-b230-4312-8e84-d6823580c4b4",
         "name": "White Wine",
         "amount": "25",
         "unit": "mL",
@@ -577,6 +622,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "3ce346d2-e135-4ef0-8b66-1ec665cf71a6",
         "name": "Stock",
         "amount": "3",
         "unit": "C",
@@ -587,6 +633,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "ef06761a-cd46-464c-8f4e-f448c8756c9e",
         "name": "Cream",
         "amount": "1",
         "unit": "C",
@@ -597,6 +644,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "f238e8b1-0c67-432e-b151-3480dcce9e8c",
         "name": "Nutmeg",
         "amount": "pinch",
         "unit": null,
@@ -607,6 +655,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "ac05f2d7-5c9a-4f50-b005-810599bcb8ba",
         "name": "S&P",
         "amount": "to",
         "unit": "taste",
@@ -635,13 +684,13 @@
     "stepImageMap": [],
     "source": "memoix",
     "colorValue": null,
-    "isFavorite": false,
+    "isFavorite": true,
     "rating": 0,
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T14:12:56.309113",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T19:12:56.000Z",
     "version": 1
   },
   {
@@ -657,6 +706,7 @@
     "notes": null,
     "ingredients": [
       {
+        "uuid": "2a718e1b-a237-4cc6-ab2a-1267e96984b5",
         "name": "Potato",
         "amount": "2",
         "unit": "lb",
@@ -667,6 +717,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "ab540a70-f088-4092-91ad-2a361ea72c98",
         "name": "Onion",
         "amount": "3",
         "unit": null,
@@ -677,6 +728,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "5e8dbf66-ca7c-4601-8ab5-c5b6c8b2b53d",
         "name": "Leek",
         "amount": "1",
         "unit": null,
@@ -687,6 +739,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "588010fe-afbd-4650-b087-9b2a5b4420dc",
         "name": "Bacon",
         "amount": "8",
         "unit": null,
@@ -697,6 +750,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "ce296b05-3cf5-4576-a573-bba7f6be9f3f",
         "name": "Celeriac",
         "amount": "4",
         "unit": "oz",
@@ -707,6 +761,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "0abed2fe-fc0d-433e-82d2-77d98685ee90",
         "name": "Chicken Stock",
         "amount": "4",
         "unit": "C",
@@ -717,6 +772,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "d958f111-28d6-4f96-954a-b3f02fb58975",
         "name": "Heavy Cream",
         "amount": "½",
         "unit": "C",
@@ -727,6 +783,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "39c670cc-a59e-4553-a990-e703d8be14c3",
         "name": "Parsley",
         "amount": "4",
         "unit": "Tbsp",
@@ -737,6 +794,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "fca83544-f2d7-4316-8253-0070bd0a1574",
         "name": "Marjoram",
         "amount": "1",
         "unit": "tsp",
@@ -747,6 +805,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "71b78509-5f82-4c95-b840-6217483e012f",
         "name": "Ginger",
         "amount": "1",
         "unit": "tsp",
@@ -773,13 +832,13 @@
     "stepImageMap": [],
     "source": "memoix",
     "colorValue": null,
-    "isFavorite": false,
+    "isFavorite": true,
     "rating": 0,
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T14:14:31.514416",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T19:14:31.000Z",
     "version": 1
   },
   {
@@ -795,6 +854,7 @@
     "notes": null,
     "ingredients": [
       {
+        "uuid": "3d5bbc83-70df-48fc-911d-0944d4cf2fe9",
         "name": "Vegetable Stock",
         "amount": "3¾",
         "unit": "C",
@@ -805,6 +865,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "bbb344bb-11b4-4746-ac79-91d0a04da800",
         "name": "Tomatoes",
         "amount": "400",
         "unit": "g",
@@ -815,6 +876,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "0180ae9c-eab7-4276-8673-457cd2a3865e",
         "name": "Navy Beans",
         "amount": "400",
         "unit": "g",
@@ -825,6 +887,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "972ed025-23d4-403a-8f91-4accea15b789",
         "name": "Onion",
         "amount": "2",
         "unit": null,
@@ -835,6 +898,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "3b38afbf-f0d4-4261-8a79-261d5e98a8f7",
         "name": "Carrot",
         "amount": "2",
         "unit": null,
@@ -845,6 +909,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "6387f7b4-98fd-46c4-8c7c-d3b584c02764",
         "name": "Garlic",
         "amount": "4",
         "unit": "cloves",
@@ -855,6 +920,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "f4096e0a-1c18-47d8-b703-9983f0ad4ab3",
         "name": "Celery",
         "amount": "2",
         "unit": "sticks",
@@ -865,6 +931,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "515ddfbe-d460-4426-9c34-147dcf64ffb1",
         "name": "Fennel",
         "amount": "1",
         "unit": "bulb",
@@ -875,6 +942,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "6160df1c-92e6-4fc4-9e1d-ae2150e5cc03",
         "name": "Zucchini",
         "amount": "2",
         "unit": null,
@@ -885,6 +953,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "ac442546-da04-428a-95d4-99ad138991ab",
         "name": "Pesto",
         "amount": "2",
         "unit": "Tbsp",
@@ -916,8 +985,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T14:17:37.126025",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T19:17:37.000Z",
     "version": 1
   },
   {
@@ -933,6 +1002,7 @@
     "notes": null,
     "ingredients": [
       {
+        "uuid": "e8db9833-b706-4c62-8c97-27527184f594",
         "name": "Stock",
         "amount": "18",
         "unit": "C",
@@ -943,6 +1013,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "73e798ae-1ddf-46fb-8713-b8d58b83a5e2",
         "name": "Spinch",
         "amount": "3",
         "unit": "C",
@@ -953,6 +1024,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "277fa8db-c722-42de-bd08-0b881aee4f80",
         "name": "Eggs",
         "amount": "9",
         "unit": null,
@@ -963,6 +1035,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "d06900ee-2ff3-4792-b905-41893957927c",
         "name": "Parmesan",
         "amount": "9",
         "unit": "Tbsp",
@@ -973,6 +1046,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "e4d5b80d-be8a-4cad-8309-618473372ae6",
         "name": "Parsley",
         "amount": "6",
         "unit": "Tbsp",
@@ -983,6 +1057,7 @@
         "bakerPercent": null
       },
       {
+        "uuid": "4b51b427-4252-4ea6-a57c-11e935c4731a",
         "name": "Nutmeg",
         "amount": "½",
         "unit": "tsp",
@@ -1013,8 +1088,8 @@
     "cookCount": 0,
     "lastCookedAt": null,
     "tags": [],
-    "createdAt": "2025-12-10T00:00:00.000",
-    "updatedAt": "2025-12-23T14:18:34.173060",
+    "createdAt": "2025-12-10T05:00:00.000Z",
+    "updatedAt": "2025-12-23T19:18:34.000Z",
     "version": 1
   }
 ]

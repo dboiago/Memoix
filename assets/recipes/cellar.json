@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "uuid": "6f3e10b3-90cb-43ca-9f04-58670fb72f2d",
     "name": "Dillon's Black Walnut Amaro",
     "producer": "CA",
@@ -12,11 +13,12 @@
     "imageUrl": null,
     "source": "memoix",
     "isFavorite": false,
-    "createdAt": "2025-12-23T12:57:00.972027",
-    "updatedAt": "2025-12-23T13:31:44.227881",
+    "createdAt": 1766512620000,
+    "updatedAt": 1776979785000,
     "version": 1
   },
   {
+    "id": 0,
     "uuid": "b096dfd9-a4f6-47be-8aec-bf79c3d00436",
     "name": "Nonino Quintessentia Amaro",
     "producer": "IT",
@@ -29,8 +31,8 @@
     "imageUrl": null,
     "source": "memoix",
     "isFavorite": true,
-    "createdAt": "2025-12-23T12:59:39.294730",
-    "updatedAt": "2025-12-23T13:31:44.272052",
+    "createdAt": 1766512779000,
+    "updatedAt": 1776979785000,
     "version": 1
   }
 ]
