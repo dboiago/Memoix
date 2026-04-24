@@ -556,9 +556,11 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
                   fontStyle: FontStyle.italic,
                   color: theme.colorScheme.outline,
                 ),
+                counterText: '',
               ),
               maxLines: 3,
               minLines: 2,
+              maxLength: 1000,
               style: theme.textTheme.bodyMedium,
               onChanged: (value) {
                 // Auto-add new row when typing in last row
@@ -1052,8 +1054,10 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
               decoration: const InputDecoration(
                 labelText: 'Recipe Name *',
                 hintText: 'e.g., Korean Fried Chicken',
+                counterText: '',
               ),
               textCapitalization: TextCapitalization.words,
+              maxLength: 120,
             ),
 
             const SizedBox(height: 16),
@@ -1437,9 +1441,11 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
               controller: _notesController,
               decoration: const InputDecoration(
                 hintText: 'Optional tips, variations, etc.',
+                counterText: '',
               ),
               maxLines: 4,
               minLines: 2,
+              maxLength: 4000,
             ),
 
             const SizedBox(height: 16),
@@ -1996,7 +2002,9 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
                   ),
                   fillColor: theme.colorScheme.surface,
                   filled: true,
+                  counterText: '',
                 ),
+                maxLength: 120,
                 style: theme.textTheme.bodyMedium?.copyWith(
                   fontWeight: FontWeight.bold,
                 ),
@@ -2139,7 +2147,9 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
                       fontStyle: FontStyle.italic,
                       color: theme.colorScheme.outline,
                     ),
+                    counterText: '',
                   ),
+                  maxLength: 120,
                   style: theme.textTheme.bodyMedium,
                   onChanged: (value) {
                     // Auto-add new row when typing in last row OR last row before a section
@@ -2244,7 +2254,9 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
                       fontStyle: FontStyle.italic,
                       color: theme.colorScheme.outline,
                     ),
+                    counterText: '',
                   ),
+                  maxLength: 240,
                   style: theme.textTheme.bodyMedium,
                 );
               },

@@ -782,6 +782,23 @@ class RecipeRepository {
     if (!preserveTimestamp) recipe.updatedAt = DateTime.now();
     UnitNormalizer.normalizeUnitsInList(recipe.ingredients);
 
+    // Defensive length caps — last-resort guard before the DB write.
+    // The UI enforces the same limits; this catches any path that bypasses the
+    // UI (OCR, import pipeline, deep links, future API callers).
+    if (recipe.name.length > 120) recipe.name = recipe.name.substring(0, 120).trimRight();
+    if ((recipe.comments?.length ?? 0) > 4000) {
+      recipe.comments = recipe.comments!.substring(0, 4000).trimRight();
+    }
+    recipe.directions = recipe.directions
+        .map((d) => d.length > 1000 ? d.substring(0, 1000).trimRight() : d)
+        .toList();
+    for (final ing in recipe.ingredients) {
+      if (ing.name.length > 120) ing.name = ing.name.substring(0, 120).trimRight();
+      if ((ing.preparation?.length ?? 0) > 240) {
+        ing.preparation = ing.preparation!.substring(0, 240).trimRight();
+      }
+    }
+
     // Replace absolute image paths with basenames before persisting.
     // Collect the originals so blobs can be written after we have a recipeId.
     final fileNameToPath = <String, String>{};

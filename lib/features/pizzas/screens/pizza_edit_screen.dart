@@ -244,7 +244,9 @@ class _PizzaEditScreenState extends ConsumerState<PizzaEditScreen> {
                 labelText: 'Pizza Name *',
                 hintText: 'e.g., Margherita, BBQ Chicken',
                 border: OutlineInputBorder(),
+                counterText: '',
               ),
+              maxLength: 120,
               validator: (value) {
                 if (value == null || value.trim().isEmpty) {
                   return 'Please enter a name';
@@ -320,8 +322,10 @@ class _PizzaEditScreenState extends ConsumerState<PizzaEditScreen> {
                 hintText: 'Special instructions, timing tips, etc.',
                 border: OutlineInputBorder(),
                 alignLabelWithHint: true,
+                counterText: '',
               ),
               maxLines: 4,
+              maxLength: 4000,
             ),
             const SizedBox(height: 32),
 

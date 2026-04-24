@@ -131,8 +131,10 @@ class _CellarEditScreenState extends ConsumerState<CellarEditScreen> {
               decoration: const InputDecoration(
                 labelText: 'Name *',
                 border: OutlineInputBorder(),
+                counterText: '',
               ),
               textCapitalization: TextCapitalization.words,
+              maxLength: 120,
             ),
             const SizedBox(height: 16),
 
@@ -238,8 +240,10 @@ class _CellarEditScreenState extends ConsumerState<CellarEditScreen> {
                 labelText: 'Tasting Notes',
                 border: OutlineInputBorder(),
                 alignLabelWithHint: true,
+                counterText: '',
               ),
               maxLines: 4,
+              maxLength: 4000,
             ),
             const SizedBox(height: 80),
           ],

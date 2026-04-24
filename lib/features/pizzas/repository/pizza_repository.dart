@@ -59,15 +59,18 @@ class PizzaRepository {
   /// Save a pizza (insert or update)
   Future<void> savePizza(Pizza pizza, {bool preserveTimestamp = false}) async {
     final entryUuid = pizza.uuid.isEmpty ? _uuid.v4() : pizza.uuid;
+    // Defensive length caps before the DB write.
+    final safeName = pizza.name.length > 120 ? pizza.name.substring(0, 120).trimRight() : pizza.name;
+    final safeNotes = (pizza.notes?.length ?? 0) > 4000 ? pizza.notes!.substring(0, 4000).trimRight() : pizza.notes;
     await _db.catalogueDao.savePizza(PizzasCompanion(
       id: pizza.id > 0 ? Value(pizza.id) : const Value.absent(),
       uuid: Value(entryUuid),
-      name: Value(pizza.name),
+      name: Value(safeName),
       base: Value(pizza.base),
       cheeses: Value(pizza.cheeses),
       proteins: Value(pizza.proteins),
       vegetables: Value(pizza.vegetables),
-      notes: Value(pizza.notes),
+      notes: Value(safeNotes),
       imageUrl: Value(pizza.imageUrl),
       source: Value(pizza.source),
       isFavorite: Value(pizza.isFavorite),

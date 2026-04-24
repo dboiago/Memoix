@@ -59,16 +59,19 @@ class SandwichRepository {
   /// Save a sandwich (insert or update)
   Future<void> saveSandwich(Sandwich sandwich, {bool preserveTimestamp = false}) async {
     final entryUuid = sandwich.uuid.isEmpty ? _uuid.v4() : sandwich.uuid;
+    // Defensive length caps before the DB write.
+    final safeName = sandwich.name.length > 120 ? sandwich.name.substring(0, 120).trimRight() : sandwich.name;
+    final safeNotes = (sandwich.notes?.length ?? 0) > 4000 ? sandwich.notes!.substring(0, 4000).trimRight() : sandwich.notes;
     await _db.catalogueDao.saveSandwich(SandwichesCompanion(
       id: sandwich.id > 0 ? Value(sandwich.id) : const Value.absent(),
       uuid: Value(entryUuid),
-      name: Value(sandwich.name),
+      name: Value(safeName),
       bread: Value(sandwich.bread),
       proteins: Value(sandwich.proteins),
       vegetables: Value(sandwich.vegetables),
       cheeses: Value(sandwich.cheeses),
       condiments: Value(sandwich.condiments),
-      notes: Value(sandwich.notes),
+      notes: Value(safeNotes),
       imageUrl: Value(sandwich.imageUrl),
       source: Value(sandwich.source),
       isFavorite: Value(sandwich.isFavorite),

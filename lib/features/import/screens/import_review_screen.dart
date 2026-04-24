@@ -168,8 +168,10 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
             decoration: const InputDecoration(
               border: OutlineInputBorder(),
               hintText: 'Enter recipe name',
+              counterText: '',
             ),
             textCapitalization: TextCapitalization.words,
+            maxLength: 120,
           ),
           const SizedBox(height: 24),
 

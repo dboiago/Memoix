@@ -259,7 +259,9 @@ class _SandwichEditScreenState extends ConsumerState<SandwichEditScreen> {
                 labelText: 'Sandwich Name *',
                 hintText: 'e.g., Bourbon Street, Cuban',
                 border: OutlineInputBorder(),
+                counterText: '',
               ),
+              maxLength: 120,
               validator: (value) {
                 if (value == null || value.trim().isEmpty) {
                   return 'Please enter a name';
@@ -339,8 +341,10 @@ class _SandwichEditScreenState extends ConsumerState<SandwichEditScreen> {
                 hintText: 'Special instructions, assembly tips, etc.',
                 border: OutlineInputBorder(),
                 alignLabelWithHint: true,
+                counterText: '',
               ),
               maxLines: 4,
+              maxLength: 4000,
             ),
             const SizedBox(height: 32),
 

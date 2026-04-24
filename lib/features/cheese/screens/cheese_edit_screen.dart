@@ -161,8 +161,10 @@ class _CheeseEditScreenState extends ConsumerState<CheeseEditScreen> {
               decoration: const InputDecoration(
                 labelText: 'Name *',
                 border: OutlineInputBorder(),
+                counterText: '',
               ),
               textCapitalization: TextCapitalization.words,
+              maxLength: 120,
             ),
             const SizedBox(height: 16),
 
@@ -318,8 +320,10 @@ class _CheeseEditScreenState extends ConsumerState<CheeseEditScreen> {
                 labelText: 'Flavour Notes',
                 border: OutlineInputBorder(),
                 alignLabelWithHint: true,
+                counterText: '',
               ),
               maxLines: 4,
+              maxLength: 4000,
             ),
             const SizedBox(height: 80),
           ],
