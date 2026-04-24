@@ -72,7 +72,7 @@ class _CourseCardState extends State<CourseCard> {
                     decoration: BoxDecoration(
                       color: (_hovered || _pressed)
                           ? theme.colorScheme.secondary
-                          : theme.colorScheme.surfaceContainerHighest,
+                          : theme.scaffoldBackgroundColor.withValues(alpha: 0.7),
                       borderRadius: BorderRadius.circular(8),
                     ),
                     child: Center(
@@ -80,7 +80,7 @@ class _CourseCardState extends State<CourseCard> {
                         slug: widget.course.slug,
                         size: 18,
                         color: (_hovered || _pressed)
-                            ? (isDark ? Colors.black87 : Colors.white)
+                            ? (isDark ? theme.scaffoldBackgroundColor : theme.scaffoldBackgroundColor)
                             : theme.colorScheme.primary,
                       ),
                     ),
