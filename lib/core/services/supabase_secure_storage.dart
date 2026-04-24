@@ -30,7 +30,7 @@ class SupabaseSecureStorage extends LocalStorage {
   }
 
   @override
-  Future<void> removeSession() async {
+  Future<void> removePersistedSession() async {
     await _storage.delete(key: _sessionKey);
   }
 }
