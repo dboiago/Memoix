@@ -25,6 +25,11 @@ final preferencesProvider = FutureProvider<SharedPreferences>((ref) async {
   return SharedPreferences.getInstance();
 });
 
+/// Provider for package info (app version)
+final packageInfoProvider = FutureProvider<PackageInfo>((ref) async {
+  return PackageInfo.fromPlatform();
+});
+
 /// Provider for hiding Memoix collection recipes (show only personal)
 final hideMemoixRecipesProvider = StateNotifierProvider<HideMemoixRecipesNotifier, bool>((ref) {
   return HideMemoixRecipesNotifier();
@@ -191,6 +196,7 @@ class SettingsScreen extends ConsumerWidget {
     final syncState = ref.watch(syncNotifierProvider);
     final hideMemoixRecipes = ref.watch(hideMemoixRecipesProvider);
     final compactView = ref.watch(compactViewProvider);
+    final packageInfo = ref.watch(packageInfoProvider);
 
     return Scaffold(
       appBar: AppBar(
@@ -412,7 +418,9 @@ class SettingsScreen extends ConsumerWidget {
           // Version info
           Center(
             child: Text(
-              'Memoix v1.0.0',
+              packageInfo.whenOrNull(
+                data: (info) => 'Memoix v${info.version}',
+              ) ?? 'Memoix',
               style: theme.textTheme.bodySmall?.copyWith(
                 color: theme.colorScheme.onSurfaceVariant,
               ),
