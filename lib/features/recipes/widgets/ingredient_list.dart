@@ -100,7 +100,7 @@ String _capitalizeWords(String text) {
     if (lower == 'of' || lower == 'and' || lower == 'or' || lower == 'the' || lower == 'a' || lower == 'an' || lower == 'to' || lower == 'for') {
       return lower;
     }
-    return word[0].toUpperCase() + word.substring(1).toLowerCase();
+    return word[0].toUpperCase() + word.substring(1);
   }).join(' ');
 }
 
