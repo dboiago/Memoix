@@ -2,14 +2,7 @@ import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 class SupabaseSecureStorage extends LocalStorage {
-  const SupabaseSecureStorage()
-      : super(
-          initialize: _initialize,
-          hasAccessToken: _hasAccessToken,
-          accessToken: _accessToken,
-          persistSession: _persistSession,
-          removeSession: _removeSession,
-        );
+  const SupabaseSecureStorage();
 
   static const _storage = FlutterSecureStorage(
     aOptions: AndroidOptions(encryptedSharedPreferences: true),
@@ -18,21 +11,26 @@ class SupabaseSecureStorage extends LocalStorage {
 
   static const _sessionKey = 'supabase.auth.token';
 
-  static Future<void> _initialize() async {}
+  @override
+  Future<void> initialize() async {}
 
-  static Future<bool> _hasAccessToken() async {
+  @override
+  Future<bool> hasAccessToken() async {
     return await _storage.containsKey(key: _sessionKey);
   }
 
-  static Future<String?> _accessToken() async {
+  @override
+  Future<String?> accessToken() async {
     return await _storage.read(key: _sessionKey);
   }
 
-  static Future<void> _persistSession(String value) async {
-    await _storage.write(key: _sessionKey, value: value);
+  @override
+  Future<void> persistSession(String persistSessionString) async {
+    await _storage.write(key: _sessionKey, value: persistSessionString);
   }
 
-  static Future<void> _removeSession() async {
+  @override
+  Future<void> removeSession() async {
     await _storage.delete(key: _sessionKey);
   }
 }
