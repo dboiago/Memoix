@@ -327,10 +327,12 @@ abstract class SupabaseSyncService {
           .map((r) => _recipeToRow(r, groupId, userId))
           .toList();
       if (pushRows.isNotEmpty) {
+        // Deduplicate by uuid — duplicate local rows cause Postgres error 21000.
+        final deduplicatedRows = { for (final row in pushRows) row['uuid'] as String: row }.values.toList();
         await client
             .schema('memoix')
             .from('recipes')
-            .upsert(pushRows, onConflict: 'uuid');
+            .upsert(deduplicatedRows, onConflict: 'uuid');
       }
     }
 
@@ -466,22 +468,24 @@ abstract class SupabaseSyncService {
             .toList();
 
         if (pushRows.isNotEmpty) {
+          // Deduplicate by uuid — duplicate local rows cause Postgres error 21000.
+          final deduplicatedRows = { for (final row in pushRows) row['uuid'] as String: row }.values.toList();
           // Ingredient UUIDs are now stable (generated once, round-tripped through
           // the model), so upsert-by-uuid correctly updates existing rows and
           // inserts new ones without accumulating stale rows.
           await client
               .schema('memoix')
               .from('ingredients')
-              .upsert(pushRows, onConflict: 'uuid');
+              .upsert(deduplicatedRows, onConflict: 'uuid');
 
           // Delete remote rows for these recipes that no longer exist locally
           // (e.g., the user removed an ingredient). Scoped to affected recipes
           // and excludes the uuids we just upserted.
-          final affectedRecipeUuids = pushRows
+          final affectedRecipeUuids = deduplicatedRows
               .map((row) => row['recipe_uuid'] as String)
               .toSet()
               .toList();
-          final currentUuids = pushRows
+          final currentUuids = deduplicatedRows
               .map((row) => row['uuid'] as String)
               .toList();
           // PostgREST requires not.in values as (a,b,c) — parentheses, not
@@ -723,13 +727,12 @@ abstract class SupabaseSyncService {
             .get();
 
     if (localChanged.isNotEmpty) {
+      // Deduplicate by uuid — duplicate local rows cause Postgres error 21000.
+      final pushRows = { for (final p in localChanged) p.uuid: _pizzaToRow(p, groupId, userId) }.values.toList();
       await client
           .schema('memoix')
           .from('pizzas')
-          .upsert(
-            localChanged.map((p) => _pizzaToRow(p, groupId, userId)).toList(),
-            onConflict: 'uuid',
-          );
+          .upsert(pushRows, onConflict: 'uuid');
     }
 
     // PULL
@@ -811,13 +814,12 @@ abstract class SupabaseSyncService {
             .get();
 
     if (localChanged.isNotEmpty) {
+      // Deduplicate by uuid — duplicate local rows cause Postgres error 21000.
+      final pushRows = { for (final s in localChanged) s.uuid: _sandwichToRow(s, groupId, userId) }.values.toList();
       await client
           .schema('memoix')
           .from('sandwiches')
-          .upsert(
-            localChanged.map((s) => _sandwichToRow(s, groupId, userId)).toList(),
-            onConflict: 'uuid',
-          );
+          .upsert(pushRows, onConflict: 'uuid');
     }
 
     // PULL
@@ -900,15 +902,12 @@ abstract class SupabaseSyncService {
             .get();
 
     if (localChanged.isNotEmpty) {
+      // Deduplicate by uuid — duplicate local rows cause Postgres error 21000.
+      final pushRows = { for (final e in localChanged) e.uuid: _cellarEntryToRow(e, groupId, userId) }.values.toList();
       await client
           .schema('memoix')
           .from('cellar_entries')
-          .upsert(
-            localChanged
-                .map((e) => _cellarEntryToRow(e, groupId, userId))
-                .toList(),
-            onConflict: 'uuid',
-          );
+          .upsert(pushRows, onConflict: 'uuid');
     }
 
     // PULL
@@ -994,15 +993,12 @@ abstract class SupabaseSyncService {
             .get();
 
     if (localChanged.isNotEmpty) {
+      // Deduplicate by uuid — duplicate local rows cause Postgres error 21000.
+      final pushRows = { for (final e in localChanged) e.uuid: _cheeseEntryToRow(e, groupId, userId) }.values.toList();
       await client
           .schema('memoix')
           .from('cheese_entries')
-          .upsert(
-            localChanged
-                .map((e) => _cheeseEntryToRow(e, groupId, userId))
-                .toList(),
-            onConflict: 'uuid',
-          );
+          .upsert(pushRows, onConflict: 'uuid');
     }
 
     // PULL
@@ -1083,15 +1079,12 @@ abstract class SupabaseSyncService {
             .get();
 
     if (localChanged.isNotEmpty) {
+      // Deduplicate by uuid — duplicate local rows cause Postgres error 21000.
+      final pushRows = { for (final r in localChanged) r.uuid: _smokingRecipeToRow(r, groupId, userId) }.values.toList();
       await client
           .schema('memoix')
           .from('smoking_recipes')
-          .upsert(
-            localChanged
-                .map((r) => _smokingRecipeToRow(r, groupId, userId))
-                .toList(),
-            onConflict: 'uuid',
-          );
+          .upsert(pushRows, onConflict: 'uuid');
     }
 
     // PULL
@@ -1168,13 +1161,12 @@ abstract class SupabaseSyncService {
     final allCourses = await db.recipeDao.getAllCourses();
     if (allCourses.isNotEmpty) {
       final now = DateTime.now().toUtc().toIso8601String();
+      // Deduplicate by slug — duplicate local rows cause Postgres error 21000.
+      final pushRows = { for (final c in allCourses) c.slug: _courseToRow(c, groupId, now) }.values.toList();
       await client
           .schema('memoix')
           .from('courses')
-          .upsert(
-            allCourses.map((c) => _courseToRow(c, groupId, now)).toList(),
-            onConflict: 'slug',
-          );
+          .upsert(pushRows, onConflict: 'slug');
     }
 
     // PULL — inserts/updates only; never deletes local courses.
@@ -1261,15 +1253,12 @@ abstract class SupabaseSyncService {
             .get();
 
     if (localChanged.isNotEmpty) {
+      // Deduplicate by uuid — duplicate local rows cause Postgres error 21000.
+      final pushRows = { for (final s in localChanged) s.uuid: _scratchPadToRow(s, groupId, userId) }.values.toList();
       await client
           .schema('memoix')
           .from('scratch_pads')
-          .upsert(
-            localChanged
-                .map((s) => _scratchPadToRow(s, groupId, userId))
-                .toList(),
-            onConflict: 'uuid',
-          );
+          .upsert(pushRows, onConflict: 'uuid');
     }
 
     // PULL
@@ -1732,10 +1721,12 @@ abstract class SupabaseSyncService {
     }
 
     if (rows.isNotEmpty) {
+      // Deduplicate by composite conflict key — duplicate rows cause Postgres error 21000.
+      final deduplicatedRows = { for (final row in rows) '${row['entity_type']}_${row['entity_uuid']}': row }.values.toList();
       await client
           .schema('memoix')
           .from('user_entity_preferences')
-          .upsert(rows, onConflict: 'user_id,entity_type,entity_uuid');
+          .upsert(deduplicatedRows, onConflict: 'user_id,entity_type,entity_uuid');
     }
 
     // PULL — write personal fields back into local entity rows.
@@ -1970,13 +1961,12 @@ abstract class SupabaseSyncService {
     // PUSH ShoppingLists.
     final allLists = await db.shoppingDao.getAllLists();
     if (allLists.isNotEmpty) {
+      // Deduplicate by uuid — duplicate local rows cause Postgres error 21000.
+      final listPushRows = { for (final l in allLists) l.uuid: _shoppingListToRow(l, userId) }.values.toList();
       await client
           .schema('memoix')
           .from('shopping_lists')
-          .upsert(
-            allLists.map((l) => _shoppingListToRow(l, userId)).toList(),
-            onConflict: 'uuid',
-          );
+          .upsert(listPushRows, onConflict: 'uuid');
 
       // PUSH ShoppingItems — ShoppingDao has no bulk getByListIds(); raw Drift used.
       final listIds = allLists.map((l) => l.id).toList();
@@ -1985,16 +1975,12 @@ abstract class SupabaseSyncService {
             ..where((i) => i.shoppingListId.isIn(listIds)))
           .get();
       if (allItems.isNotEmpty) {
+        // Deduplicate by uuid — duplicate local rows cause Postgres error 21000.
+        final itemPushRows = { for (final i in allItems) i.uuid: _shoppingItemToRow(i, uuidById[i.shoppingListId] ?? '', userId) }.values.toList();
         await client
             .schema('memoix')
             .from('shopping_items')
-            .upsert(
-              allItems
-                  .map((i) =>
-                      _shoppingItemToRow(i, uuidById[i.shoppingListId] ?? '', userId),)
-                  .toList(),
-              onConflict: 'uuid',
-            );
+            .upsert(itemPushRows, onConflict: 'uuid');
       }
     }
 
@@ -2076,13 +2062,12 @@ abstract class SupabaseSyncService {
             .get();
 
     if (localChanged.isNotEmpty) {
+      // Deduplicate by uuid — duplicate local rows cause Postgres error 21000.
+      final pushRows = { for (final d in localChanged) d.uuid: _recipeDraftToRow(d, userId) }.values.toList();
       await client
           .schema('memoix')
           .from('recipe_drafts')
-          .upsert(
-            localChanged.map((d) => _recipeDraftToRow(d, userId)).toList(),
-            onConflict: 'uuid',
-          );
+          .upsert(pushRows, onConflict: 'uuid');
     }
 
     // PULL — last-write-wins on updatedAt.
@@ -2153,13 +2138,12 @@ abstract class SupabaseSyncService {
     // PUSH — CookingLogDao.getStats() returns all rows.
     final allLogs = await db.cookingLogDao.getStats();
     if (allLogs.isNotEmpty) {
+      // Deduplicate by uuid — duplicate local rows cause Postgres error 21000.
+      final pushRows = { for (final l in allLogs) l.uuid: _cookingLogToRow(l, userId) }.values.toList();
       await client
           .schema('memoix')
           .from('cooking_logs')
-          .upsert(
-            allLogs.map((l) => _cookingLogToRow(l, userId)).toList(),
-            onConflict: 'uuid',
-          );
+          .upsert(pushRows, onConflict: 'uuid');
     }
 
     // PULL — append-only: only insert rows whose uuid is absent locally.
