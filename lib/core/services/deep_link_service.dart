@@ -23,6 +23,8 @@ class DeepLinkService {
 
   /// Initialize and start listening for deep links
   Future<void> initialize(BuildContext context) async {
+    if (_subscription != null) return;
+
     // Handle initial link if app was opened via deep link
     try {
       final initialUri = await _appLinks.getInitialAppLink();
@@ -52,6 +54,12 @@ class DeepLinkService {
   Future<void> _handleDeepLink(BuildContext context, Uri uri) async {
     debugPrint('Received deep link: $uri');
 
+    // SECURITY: Enforce max payload size per AGENTS.md (4,096 chars)
+    if (uri.toString().length > 4096) {
+      debugPrint('Security: Rejected oversized deep link (${uri.toString().length} chars)');
+      return;
+    }
+
     // Let flutter_appauth handle OAuth callbacks
     if (uri.host == 'oauth') return;
 
@@ -64,7 +72,7 @@ class DeepLinkService {
     }
 
     // Handle recipe sharing links: memoix://recipe/...
-    if (uri.host == 'recipe' || uri.pathSegments.isNotEmpty) {
+    if (uri.host == 'recipe') {
       await _handleRecipeShare(context, uri);
       return;
     }
@@ -82,6 +90,16 @@ class DeepLinkService {
 
     if (repositoryName == null || repositoryName.isEmpty) {
       _showError(context, 'Invalid repository link: Missing repository name');
+      return;
+    }
+
+    // SECURITY: Reject excessively long parameters before storing or displaying
+    if (folderId.length > 256) {
+      _showError(context, 'Invalid repository link: folder ID is too long.');
+      return;
+    }
+    if (repositoryName.length > 255) {
+      _showError(context, 'Invalid repository link: repository name is too long.');
       return;
     }
 
