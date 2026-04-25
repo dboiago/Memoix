@@ -63,17 +63,16 @@ your IP address:
 ### App Update Check
 If enabled in settings, or when manually triggered, the app makes an 
 unauthenticated request to the GitHub API to check whether a newer version 
-is available. No personal data is transmitted. This feature is disabled by default.
+is available. No personal data is transmitted. This feature is disabled by default
+and only available in the Github APK version.
 
 ### URL Import Fallback
 When importing a recipe from a URL, if the original source is unavailable, the app may forward that URL to the Wayback Machine (archive.org) as a fallback. This is triggered only by a deliberate user import action.
 
 ## Donations
 
-The app is free. An optional donation link (Ko-fi) is provided for users who
-wish to support development. Tapping this link will open an external browser
-session governed by Ko-fi's privacy policy. No payment or personal data is
-handled by the app.
+The app is free. You can sponser me on Github if you wish.
+No payment or personal data is handled by the app.
 
 ## No Data Collection
 
