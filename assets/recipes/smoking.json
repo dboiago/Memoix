@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": 0,
     "uuid": "e4ac78fd-e64c-4bee-bce9-7220c3d8de09",
     "name": "Carrots",
     "course": "smoking",
@@ -27,7 +27,7 @@
     "updatedAt": 1776979785000
   },
   {
-    "id": 2,
+    "id": 0,
     "uuid": "7ca0e10a-73f8-4b07-aeff-4c20da013e62",
     "name": "Cheez-its",
     "course": "smoking",
@@ -54,7 +54,7 @@
     "updatedAt": 1776979785000
   },
   {
-    "id": 3,
+    "id": 0,
     "uuid": "61189665-0ce3-4312-80e5-caf2533bfb34",
     "name": "Cream Cheese",
     "course": "smoking",
@@ -81,7 +81,7 @@
     "updatedAt": 1776979785000
   },
   {
-    "id": 4,
+    "id": 0,
     "uuid": "391d414f-6937-47f9-b7c8-623d12e28599",
     "name": "Garlic",
     "course": "smoking",
@@ -108,7 +108,7 @@
     "updatedAt": 1776979785000
   },
   {
-    "id": 5,
+    "id": 0,
     "uuid": "850fb600-8af0-4e86-951c-603e345605e9",
     "name": "Salt",
     "course": "smoking",
