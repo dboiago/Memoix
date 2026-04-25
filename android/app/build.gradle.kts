@@ -51,6 +51,9 @@ android {
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
         versionName = flutter.versionName
+		
+		// Default to 'remove' so Play Store is happy by default
+		manifestPlaceholders["otaPermission"] = "<uses-permission android:name=\"android.permission.REQUEST_INSTALL_PACKAGES\" tools:node=\"remove\" />"
     }
 
     buildTypes {

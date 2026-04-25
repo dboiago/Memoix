@@ -11,6 +11,7 @@ import '../../../core/services/memoix_recipe_service.dart';
 import '../../../core/services/integrity_service.dart';
 import '../../../core/services/supabase_auth_service.dart';
 import '../../../core/services/supabase_sync_service.dart';
+import '../../../config/app_config.dart';
 import '../../../core/services/update_service.dart';
 import '../../../core/database/database.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
@@ -305,19 +306,21 @@ class SettingsScreen extends ConsumerWidget {
                     }
                   },
           ),
-          ListTile(
-            leading: const Icon(Icons.system_update),
-            title: const Text('Check for App Updates'),
-            subtitle: const Text('Download the latest version from GitHub'),
-            onTap: () => _checkForUpdates(context, ref),
-          ),
-          SwitchListTile(
-            secondary: const Icon(Icons.auto_awesome),
-            title: const Text('Auto-check for Updates'),
-            subtitle: const Text('Check for updates when app launches'),
-            value: ref.watch(autoCheckUpdatesProvider),
-            onChanged: (_) => ref.read(autoCheckUpdatesProvider.notifier).toggle(),
-          ),
+          if (!isPlayStore)
+            ListTile(
+              leading: const Icon(Icons.system_update),
+              title: const Text('Check for App Updates'),
+              subtitle: const Text('Download the latest version from GitHub'),
+              onTap: () => _checkForUpdates(context, ref),
+            ),
+          if (!isPlayStore)
+            SwitchListTile(
+              secondary: const Icon(Icons.auto_awesome),
+              title: const Text('Auto-check for Updates'),
+              subtitle: const Text('Check for updates when app launches'),
+              value: ref.watch(autoCheckUpdatesProvider),
+              onChanged: (_) => ref.read(autoCheckUpdatesProvider.notifier).toggle(),
+            ),
           if (syncState.hasError)
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),

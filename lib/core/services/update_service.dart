@@ -11,6 +11,7 @@ import 'package:path_provider/path_provider.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:ota_update/ota_update.dart';
 import 'package:flutter/foundation.dart'; // for DebugPrint
+import '../../config/app_config.dart';
 
 /// Represents available app version info
 class AppVersion {
@@ -164,6 +165,7 @@ class UpdateService {
 
   /// Install update on Android using OTA Update package
   Future<bool> _installAndroidUpdate(String apkUrl) async {
+    if (isPlayStore) return false;
     try {
       // Use OTA Update to handle download + install intent automatically
       // This avoids writing custom native code

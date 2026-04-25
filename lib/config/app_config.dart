@@ -1,5 +1,11 @@
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 
+/// True when the app is built for Google Play Store distribution.
+///
+/// Set via --dart-define=IS_PLAY_STORE=true at build time.
+/// Defaults to false (GitHub / sideload build).
+const bool isPlayStore = bool.fromEnvironment('IS_PLAY_STORE', defaultValue: false);
+
 /// Application configuration for external services
 ///
 /// Reads credentials from the .env file (loaded with isOptional: true).

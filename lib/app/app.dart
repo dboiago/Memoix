@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../config/app_config.dart';
 import 'theme/theme.dart';
 import 'routes/router.dart';
 import '../core/providers.dart';
@@ -64,7 +65,7 @@ class _DeepLinkWrapperState extends ConsumerState<_DeepLinkWrapper>
     WidgetsBinding.instance.addPostFrameCallback((_) {
       processIntegrityResponses(ref);
       ref.read(deepLinkServiceProvider).initialize(context);
-      _checkForUpdatesOnLaunch();
+      if (!isPlayStore) _checkForUpdatesOnLaunch();
       _performBackgroundSync();
       _setupTimerAlarmCallbacks();
       _triggerPersonalStorageSync();
