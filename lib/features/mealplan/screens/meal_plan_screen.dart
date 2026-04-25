@@ -881,16 +881,14 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final bottomInset = MediaQuery.of(context).viewInsets.bottom;
+    final screenHeight = MediaQuery.of(context).size.height;
+    final sheetHeight = (screenHeight * 0.75).clamp(0.0, screenHeight - bottomInset - 16.0);
 
     return Padding(
       padding: EdgeInsets.only(bottom: bottomInset),
-      child: DraggableScrollableSheet(
-        initialChildSize: 0.7,
-        minChildSize: 0.5,
-        maxChildSize: 0.95,
-        expand: false,
-        builder: (context, scrollController) {
-          return Container(
+      child: SizedBox(
+        height: sheetHeight,
+        child: Container(
             padding: const EdgeInsets.all(16),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -974,7 +972,6 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
                     builder: (context, ref, _) {
                       final favouritesAsync = ref.watch(favouriteRecipesProvider);
                       return ListView(
-                        controller: scrollController,
                         children: [
                           if (_suggestions.isNotEmpty) ...[
                             Padding(
@@ -1048,9 +1045,8 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
                 ),
               ],
             ),
-          );
-        },
-      ),
+          ),
+        ),
     );
   }
 }
