@@ -7,7 +7,15 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 import '../database/database.dart';
+import '../../features/recipes/models/course.dart' as domainModels;
 import '../../features/recipes/repository/recipe_repository.dart';
+import '../../features/pizzas/repository/pizza_repository.dart';
+import '../../features/sandwiches/repository/sandwich_repository.dart';
+import '../../features/smoking/repository/smoking_repository.dart';
+import '../../features/modernist/repository/modernist_repository.dart';
+import '../../features/cheese/repository/cheese_repository.dart';
+import '../../features/cellar/repository/cellar_repository.dart';
+import '../../features/notes/repository/scratch_pad_repository.dart';
 import '../../shared/widgets/course_icon_widget.dart';
 import '../services/memoix_recipe_service.dart';
 import '../services/integrity_service.dart';
@@ -99,6 +107,28 @@ final appInitProvider = FutureProvider<void>((ref) async {
     ref.invalidate(allRecipesProvider);
     await ref.read(allRecipesProvider.future);
   }
+
+  // 8. Pre-warm every per-course and per-domain provider that HomeScreen's
+  //    SliverChildBuilderDelegate watches. All of these are Drift
+  //    StreamProviders backed by watch() queries — their first emission from
+  //    an already-seeded DB resolves in under 1 ms. Running them in parallel
+  //    costs effectively nothing on subsequent launches and guarantees that
+  //    every ref.watch() call in the home grid finds AsyncData on the very
+  //    first build frame, so counts are never 0 and icons never blank.
+  await Future.wait(<Future<void>>[
+    // Standard recipe courses — one per slug
+    ...domainModels.Course.defaults.map(
+      (c) => ref.read(recipesByCourseProvider(c.slug).future).then((_) {}),
+    ),
+    // Specialised domain tables
+    ref.read(allPizzasProvider.future).then((_) {}),
+    ref.read(allSandwichesProvider.future).then((_) {}),
+    ref.read(allSmokingRecipesProvider.future).then((_) {}),
+    ref.read(allModernistRecipesProvider.future).then((_) {}),
+    ref.read(allCheeseEntriesProvider.future).then((_) {}),
+    ref.read(allCellarEntriesProvider.future).then((_) {}),
+    ref.read(recipeDraftsProvider.future).then((_) {}),
+  ]);
 });
 
 /// Pre-populates Flutter's PlatformAssetBundle byte cache for the app logo

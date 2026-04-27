@@ -1,6 +1,10 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import '../config/app_config.dart';
 import 'theme/theme.dart';
@@ -153,22 +157,37 @@ class _DeepLinkWrapperState extends ConsumerState<_DeepLinkWrapper>
     );
   }
 
-  /// Perform initial recipe sync in background without blocking UI
+  /// Perform initial recipe sync only when the bundled recipe version has
+  /// changed since the last sync. Comparing a single integer stored in
+  /// SharedPreferences against the version in assets/recipes/version.json
+  /// eliminates the 500+ sequential DB round-trips that previously ran on
+  /// every launch (one getRecipeByUuid existence check per bundled recipe),
+  /// which was the primary cause of the 4-7 second blank-grid period.
   void _performBackgroundSync() {
-    // Trigger sync in background - won't block UI
-    // The syncNotifierProvider handles errors gracefully
-    // Use Future.microtask to ensure ref is available
     Future.microtask(() async {
       if (!mounted) return;
       try {
+        // 1. Read the bundled recipe version (fast — already in rootBundle cache).
+        final versionJson = await rootBundle.loadString('assets/recipes/version.json');
+        final bundledVersion = (jsonDecode(versionJson) as Map<String, dynamic>)['version'] as int? ?? 0;
+
+        // 2. Read the last version we successfully synced.
+        final prefs = await SharedPreferences.getInstance();
+        final lastSynced = prefs.getInt('memoix_recipe_sync_version') ?? -1;
+
+        if (bundledVersion <= lastSynced) {
+          // Nothing new — skip the entire sync loop.
+          return;
+        }
+
+        // 3. New version detected: run sync and persist the new version on success.
         final syncNotifier = ref.read(syncNotifierProvider.notifier);
-        // Only sync if not already syncing
         final currentState = ref.read(syncNotifierProvider);
         if (!currentState.isLoading) {
           await syncNotifier.sync();
+          await prefs.setInt('memoix_recipe_sync_version', bundledVersion);
         }
       } catch (e) {
-        // Silently fail - sync can happen later via manual trigger
         debugPrint('Background sync failed: $e');
       }
     });
