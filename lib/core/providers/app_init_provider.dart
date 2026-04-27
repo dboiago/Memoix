@@ -21,7 +21,7 @@ final appInitProvider = FutureProvider<void>((ref) async {
   // The user "unlocks" shared storage by signing in via the hidden 8-second
   // long-press on the Shared Storage tile. Their session is then persisted
   // to SupabaseSecureStorage (flutter_secure_storage, key: supabase.auth.token).
-  // We ONLY initialize the Supabase client when that token already exists -
+  // We ONLY initialize the Supabase client when that token already exists —
   // guaranteeing zero network activity for users who have never opted in.
   final storage = const SupabaseSecureStorage();
   final hasSession = await storage.hasAccessToken();

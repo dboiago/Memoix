@@ -42,27 +42,11 @@ class MemoixApp extends ConsumerWidget {
       navigatorKey: rootNavigatorKey,
       scaffoldMessengerKey: rootScaffoldMessengerKey,
       home: init.when(
+        loading: () => const Scaffold(backgroundColor: Color(0xFF242424)),
         data: (_) => const _DeepLinkWrapper(child: AppRouter()),
-        loading: () => const _MemoixSplash(),
         error: (e, _) => Scaffold(
-          body: Center(child: Text('Initialisation error: $e')),
-        ),
-      ),
-    );
-  }
-}
-
-class _MemoixSplash extends StatelessWidget {
-  const _MemoixSplash();
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: const Color(0xFF242424), 
-      body: Center(
-        child: SvgPicture.asset(
-          'assets/images/memoix-appicon-orange-1200.svg',
-          width: 220,
+          backgroundColor: const Color(0xFF242424),
+          body: Center(child: Text('Initialization error:\n$e', style: const TextStyle(color: Colors.white))),
         ),
       ),
     );

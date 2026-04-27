@@ -31,10 +31,16 @@ class HomeScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final coursesAsync = ref.watch(coursesProvider);
     return coursesAsync.when(
-      loading: () => const Center(child: CircularProgressIndicator()),
+      loading: () => const Scaffold(
+        backgroundColor: Color(0xFF242424), 
+        body: Center(child: CircularProgressIndicator(color: Color(0xFFE8B4A0))),
+      ),
       error: (err, _) {
         debugPrint('HomeScreen error: $err');
-        return const Center(child: Text('Something went wrong. Please try restarting the app.'));
+        return const Scaffold(
+          backgroundColor: Color(0xFF242424),
+          body: Center(child: Text('Something went wrong. Please try restarting the app.', style: TextStyle(color: Color(0xFFA88FA8)))),
+        );
       },
       data: (courses) => _CourseGridView(courses: courses),
     );
