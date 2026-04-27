@@ -1,6 +1,8 @@
 import 'package:flutter/foundation.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
+import 'supabase_secure_storage.dart';
 import 'supabase_sync_service.dart';
 
 /// Auth service for the invite-only sync feature.
@@ -31,6 +33,34 @@ abstract class SupabaseAuthService {
     }
   }
 
+  /// Just-In-Time (JIT) initialization for hidden sign-ins.
+  /// Wakes up Supabase only when a user explicitly attempts to sign in.
+  static Future<void> _ensureInitialized() async {
+    if (_client != null) return; // Already initialized
+
+    try {
+      final supabaseUrl = dotenv.maybeGet('SUPABASE_URL');
+      final supabaseAnonKey = dotenv.maybeGet('SUPABASE_ANON_KEY');
+
+      if (supabaseUrl != null && supabaseUrl.isNotEmpty &&
+          supabaseAnonKey != null && supabaseAnonKey.isNotEmpty) {
+        await Supabase.initialize(
+          url: supabaseUrl,
+          anonKey: supabaseAnonKey,
+          authOptions: const FlutterAuthClientOptions(
+            localStorage: SupabaseSecureStorage(),
+          ),
+        );
+        // Start listening to auth changes now that we are online
+        initSyncListener();
+      } else {
+        debugPrint('SupabaseAuthService._ensureInitialized: Keys missing from .env');
+      }
+    } catch (e) {
+      debugPrint('SupabaseAuthService._ensureInitialized error: $e');
+    }
+  }
+
   // ─────────────────────────────────────────────────────────────────────
   // Public API
   // ─────────────────────────────────────────────────────────────────────
@@ -40,6 +70,10 @@ abstract class SupabaseAuthService {
   /// Returns `true` on success, `false` on any error.
   static Future<bool> signIn(String email, String password) async {
     _cachedGroupId = null; // invalidate cached group on new sign-in attempt
+    
+    // JIT Wakeup: Ensure Supabase is running before we try to auth
+    await _ensureInitialized(); 
+
     try {
       final client = _client;
       if (client == null) {
