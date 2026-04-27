@@ -19,12 +19,12 @@ class MemoixDatabase {
     await _seedDefaultCourses();
   }
 
-  /// Seed default courses only when the courses table is empty.
+  /// Refresh courses on every init so the home grid is always up-to-date
+  /// before any stream provider starts watching. Running this here (inside
+  /// appInitProvider) rather than in a post-frame callback prevents the
+  /// batch deleteAll from ever reaching an active stream listener.
   static Future<void> _seedDefaultCourses() async {
-    final existing = await AppDatabase.instance.recipeDao.getAllCourses();
-    if (existing.isEmpty) {
-      await refreshCourses();
-    }
+    await refreshCourses();
   }
 
   /// Refresh courses with latest defaults using Drift Batching.

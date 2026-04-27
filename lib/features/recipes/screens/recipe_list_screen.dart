@@ -254,7 +254,7 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
                           child: RecipeCard(
                             recipe: recipe,
                             onTap: () => AppRoutes.toRecipeDetail(context, recipe.uuid),
-                            isCompact: ref.watch(compactViewProvider),
+                            isCompact: isCompactView,
                           ),
                         );
                       },

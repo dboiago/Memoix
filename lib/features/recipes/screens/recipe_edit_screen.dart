@@ -462,6 +462,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
     _proteinController.dispose();
     _carbsController.dispose();
     _fatController.dispose();
+    _garnishFieldController?.dispose();
     for (final row in _ingredientRows) {
       row.dispose();
     }

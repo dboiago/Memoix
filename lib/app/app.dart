@@ -42,7 +42,15 @@ class MemoixApp extends ConsumerWidget {
       navigatorKey: rootNavigatorKey,
       scaffoldMessengerKey: rootScaffoldMessengerKey,
       home: init.when(
-        loading: () => const Scaffold(backgroundColor: Color(0xFF242424)),
+        loading: () => Scaffold(
+          backgroundColor: const Color(0xFF242424),
+          body: Center(
+            child: SvgPicture.asset(
+              'assets/images/memoix-appicon-orange-1200.svg',
+              width: 220,
+            ),
+          ),
+        ),
         data: (_) => const _DeepLinkWrapper(child: AppRouter()),
         error: (e, _) => Scaffold(
           backgroundColor: const Color(0xFF242424),
@@ -86,7 +94,10 @@ class _DeepLinkWrapperState extends ConsumerState<_DeepLinkWrapper>
   Future<void> _deferredInit() async {
     await ImageMigrationService.runIfNeeded();
     await IngredientService().initialize();
-    await MemoixDatabase.refreshCourses();
+    // refreshCourses() is now called unconditionally inside
+    // MemoixDatabase.initialize(), which runs during appInitProvider before
+    // any stream provider is active. Calling it again here would trigger a
+    // deleteAll on an already-watched stream and cause a blank-grid flash.
   }
 
   @override

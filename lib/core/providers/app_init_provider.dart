@@ -54,6 +54,14 @@ final appInitProvider = FutureProvider<void>((ref) async {
   // 3. Integrity layer + calibration evaluator — fire-and-forget so the UI
   //    is never blocked waiting for these to complete at startup.
   unawaited(_initIntegrityLayer());
+
+  // 4. Wait until the courses stream has emitted at least one value so the
+  //    home grid is never empty when appInitProvider resolves. Courses were
+  //    already written to the DB in step 1 (refreshCourses inside initialize),
+  //    so this future resolves in the next microtask.
+  await ref.read(coursesProvider.future);
+
+  // 5. Warm the recipes stream so the first recipe-list build is instant.
   await ref.read(allRecipesProvider.future);
 });
 
