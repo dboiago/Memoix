@@ -1,12 +1,15 @@
 import 'dart:async';
 
 import 'package:flutter/foundation.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 import '../database/database.dart';
 import '../../features/recipes/repository/recipe_repository.dart';
+import '../../shared/widgets/course_icon_widget.dart';
 import '../services/integrity_service.dart';
 import '../services/interface_calibration.dart';
 import '../services/schema_migration_service.dart';
@@ -14,7 +17,10 @@ import '../services/supabase_auth_service.dart';
 import '../services/supabase_secure_storage.dart';
 
 final appInitProvider = FutureProvider<void>((ref) async {
-  // 1. Initialize the local database. All other features depend on this.
+  // 1. Database init — MemoixDatabase.initialize() calls refreshCourses()
+  //    internally, which runs a Drift batch(deleteAll + insertAll) as a
+  //    single committed transaction. The await here guarantees the write is
+  //    fully on-disk before any subsequent step runs.
   await MemoixDatabase.initialize();
 
   // 2. Strict privacy gate for Supabase.
@@ -51,19 +57,59 @@ final appInitProvider = FutureProvider<void>((ref) async {
     }
   }
 
-  // 3. Integrity layer + calibration evaluator — fire-and-forget so the UI
+  // 3. Asset warm-up — kick off parallel pre-loading of the app logo and all
+  //    course-icon SVGs into flutter_svg's byte cache. This future runs
+  //    concurrently with the stream gate below so the two waits overlap.
+  final warmUpFuture = _warmSvgAssets();
+
+  // 4. Stream gate — await the first *non-empty* emission from the courses
+  //    stream. Step 1 already committed the Drift batch, so the watch query
+  //    will return the seeded rows in its first emission (typically < 1 ms).
+  //    The 10-second timeout prevents a permanent hang on pathological installs;
+  //    on an already-seeded DB the .firstWhere resolves in the next microtask.
+  try {
+    await ref
+        .read(recipeRepositoryProvider)
+        .watchCourses()
+        .firstWhere((courses) => courses.isNotEmpty)
+        .timeout(const Duration(seconds: 10));
+  } on TimeoutException {
+    debugPrint('appInitProvider: courses stream timeout — proceeding');
+  }
+
+  // 5. Wait for SVG warm-up to finish (started in step 3).
+  await warmUpFuture;
+
+  // 6. Integrity layer + calibration evaluator — fire-and-forget so the UI
   //    is never blocked waiting for these to complete at startup.
   unawaited(_initIntegrityLayer());
 
-  // 4. Wait until the courses stream has emitted at least one value so the
-  //    home grid is never empty when appInitProvider resolves. Courses were
-  //    already written to the DB in step 1 (refreshCourses inside initialize),
-  //    so this future resolves in the next microtask.
-  await ref.read(coursesProvider.future);
-
-  // 5. Warm the recipes stream so the first recipe-list build is instant.
+  // 7. Warm the recipes stream so the first recipe-list build is instant.
   await ref.read(allRecipesProvider.future);
 });
+
+/// Pre-populates flutter_svg's byte cache for the app logo and every course
+/// icon. Uses [SvgAssetLoader.cacheKey] to generate the exact same key that
+/// [SvgPicture.asset] uses at render time, guaranteeing a cache hit.
+Future<void> _warmSvgAssets() async {
+  const logo = 'assets/images/memoix-appicon-orange-1200.svg';
+  final paths = <String>[logo, ...CourseIconWidget.svgAssets.values];
+  await Future.wait(paths.map(_cacheSvg));
+}
+
+/// Loads one SVG asset into [svg.cache]. Errors are swallowed so a missing
+/// or corrupt asset never prevents the app from starting.
+Future<void> _cacheSvg(String assetPath) async {
+  try {
+    final loader = SvgAssetLoader(assetPath);
+    await svg.cache.putIfAbsent(
+      loader.cacheKey(null),
+      () => rootBundle.load(assetPath),
+    );
+  } catch (e) {
+    debugPrint('SVG warm-up skipped ($assetPath): $e');
+  }
+}
 
 Future<void> _initIntegrityLayer() async {
   try {
