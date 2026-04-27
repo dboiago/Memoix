@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 import '../config/app_config.dart';
 import 'theme/theme.dart';
 import 'routes/router.dart';
 import '../core/providers.dart';
+import '../core/providers/app_init_provider.dart';
 import '../core/services/deep_link_service.dart';
 import '../core/services/integrity_service.dart';
 import '../core/services/update_service.dart';
@@ -30,6 +32,7 @@ class MemoixApp extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final mode = ref.watch(themeModeProvider);
+    final init = ref.watch(appInitProvider);
     return MaterialApp(
       title: 'Memoix',
       debugShowCheckedModeBanner: false,
@@ -38,7 +41,30 @@ class MemoixApp extends ConsumerWidget {
       themeMode: mode,
       navigatorKey: rootNavigatorKey,
       scaffoldMessengerKey: rootScaffoldMessengerKey,
-      home: const _DeepLinkWrapper(child: AppRouter()),
+      home: init.when(
+        data: (_) => const _DeepLinkWrapper(child: AppRouter()),
+        loading: () => const _MemoixSplash(),
+        error: (e, _) => Scaffold(
+          body: Center(child: Text('Initialisation error: $e')),
+        ),
+      ),
+    );
+  }
+}
+
+class _MemoixSplash extends StatelessWidget {
+  const _MemoixSplash();
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: const Color(0xFF1A1A1A), 
+      body: Center(
+        child: SvgPicture.asset(
+          'assets/images/splash_logo.svg',
+          width: 220,
+        ),
+      ),
     );
   }
 }

@@ -23,7 +23,6 @@ final shoppingListServiceProvider = Provider<ShoppingListService>((ref) {
   return ShoppingListService(ref.watch(databaseProvider));
 });
 
-// ADD THIS MISSING PROVIDER
 final shoppingListsProvider = StreamProvider<List<ShoppingList>>((ref) {
   final service = ref.watch(shoppingListServiceProvider);
   return service.watchAll();

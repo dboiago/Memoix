@@ -27,21 +27,24 @@ class MemoixDatabase {
     }
   }
 
-  /// Refresh courses with latest defaults.
+  /// Refresh courses with latest defaults using Drift Batching.
   static Future<void> refreshCourses() async {
     final db = AppDatabase.instance;
-    await db.transaction(() async {
-      await db.delete(db.courses).go();
-      for (final c in domainModels.Course.defaults) {
-        await db.recipeDao.saveCourse(CoursesCompanion(
-          slug: Value(c.slug),
-          name: Value(c.name),
-          iconName: Value(c.iconName),
-          sortOrder: Value(c.sortOrder),
-          colorValue: Value(c.colorValue),
-          isVisible: Value(c.isVisible),
-        ),);
-      }
+    await db.batch((batch) {
+      // 1. Queue the delete
+      batch.deleteAll(db.courses);
+      
+      // 2. Queue all the inserts in one massively efficient block
+      final companions = domainModels.Course.defaults.map((c) => CoursesCompanion(
+        slug: Value(c.slug),
+        name: Value(c.name),
+        iconName: Value(c.iconName),
+        sortOrder: Value(c.sortOrder),
+        colorValue: Value(c.colorValue),
+        isVisible: Value(c.isVisible),
+      )).toList();
+      
+      batch.insertAll(db.courses, companions);
     });
   }
 
