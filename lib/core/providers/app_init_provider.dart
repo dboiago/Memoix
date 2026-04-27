@@ -9,6 +9,7 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 import '../database/database.dart';
 import '../../features/recipes/repository/recipe_repository.dart';
 import '../../shared/widgets/course_icon_widget.dart';
+import '../services/memoix_recipe_service.dart';
 import '../services/integrity_service.dart';
 import '../services/interface_calibration.dart';
 import '../services/schema_migration_service.dart';
@@ -81,8 +82,23 @@ final appInitProvider = FutureProvider<void>((ref) async {
   //    is never blocked waiting for these to complete at startup.
   unawaited(_initIntegrityLayer());
 
-  // 7. Warm the recipes stream so the first recipe-list build is instant.
-  await ref.read(allRecipesProvider.future);
+  // 7. Fresh-install gate — if the recipes table is empty (first launch or
+  //    after a full clear), seed all bundled content synchronously so the
+  //    home grid never renders with 0 counts.
+  //
+  //    On subsequent launches allRecipesProvider has data immediately and
+  //    the if-block is skipped entirely, so startup time is unaffected.
+  //
+  //    After sync() the Drift stream will emit the new rows, but that
+  //    notification is async. We invalidate allRecipesProvider and re-await
+  //    it so HomeScreen always receives AsyncData with real recipes on its
+  //    very first build — never an empty list.
+  final initialRecipes = await ref.read(allRecipesProvider.future);
+  if (initialRecipes.isEmpty) {
+    await ref.read(syncNotifierProvider.notifier).sync();
+    ref.invalidate(allRecipesProvider);
+    await ref.read(allRecipesProvider.future);
+  }
 });
 
 /// Pre-populates Flutter's PlatformAssetBundle byte cache for the app logo
