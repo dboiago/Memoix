@@ -1,10 +1,7 @@
-import 'dart:async';
-
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 import '../database/database.dart';
@@ -57,25 +54,23 @@ final appInitProvider = FutureProvider<void>((ref) async {
     }
   }
 
-  // 3. Asset warm-up — kick off parallel pre-loading of the app logo and all
-  //    course-icon SVGs into flutter_svg's byte cache. This future runs
-  //    concurrently with the stream gate below so the two waits overlap.
+  // 3. Asset warm-up — kick off parallel preloading of the app logo and all
+  //    course-icon SVGs into Flutter's PlatformAssetBundle byte cache.
+  //    We use rootBundle.load() directly rather than svg.cache because
+  //    SvgAssetLoader.cacheKey(null) in flutter_svg 2.x calls
+  //    DefaultAssetBundle.of(null!) which may throw or produce keys that
+  //    don't match render-time keys, corrupting the SVG picture cache.
+  //    rootBundle.load() caches the raw bytes; SvgAssetLoader reads through
+  //    that same cache via DefaultAssetBundle.of(context).load().
   final warmUpFuture = _warmSvgAssets();
 
-  // 4. Stream gate — await the first *non-empty* emission from the courses
-  //    stream. Step 1 already committed the Drift batch, so the watch query
-  //    will return the seeded rows in its first emission (typically < 1 ms).
-  //    The 10-second timeout prevents a permanent hang on pathological installs;
-  //    on an already-seeded DB the .firstWhere resolves in the next microtask.
-  try {
-    await ref
-        .read(recipeRepositoryProvider)
-        .watchCourses()
-        .firstWhere((courses) => courses.isNotEmpty)
-        .timeout(const Duration(seconds: 10));
-  } on TimeoutException {
-    debugPrint('appInitProvider: courses stream timeout — proceeding');
-  }
+  // 4. Pre-warm the coursesProvider Riverpod StreamProvider so it is already
+  //    in AsyncData state before HomeScreen builds. Because step 1 committed
+  //    the Drift batch before any listener subscribed, the stream's first
+  //    emission is the fully-seeded list (typically < 1 ms). When HomeScreen
+  //    later calls ref.watch(coursesProvider) it finds AsyncData and renders
+  //    the grid directly — never hitting its loading branch.
+  await ref.read(coursesProvider.future);
 
   // 5. Wait for SVG warm-up to finish (started in step 3).
   await warmUpFuture;
@@ -88,27 +83,22 @@ final appInitProvider = FutureProvider<void>((ref) async {
   await ref.read(allRecipesProvider.future);
 });
 
-/// Pre-populates flutter_svg's byte cache for the app logo and every course
-/// icon. Uses [SvgAssetLoader.cacheKey] to generate the exact same key that
-/// [SvgPicture.asset] uses at render time, guaranteeing a cache hit.
+/// Pre-populates Flutter's PlatformAssetBundle byte cache for the app logo
+/// and every course-icon SVG. Using rootBundle.load() is safe with any version
+/// of flutter_svg — SvgAssetLoader ultimately calls
+/// DefaultAssetBundle.of(context).load(name) which is backed by rootBundle.
 Future<void> _warmSvgAssets() async {
   const logo = 'assets/images/memoix-appicon-orange-1200.svg';
   final paths = <String>[logo, ...CourseIconWidget.svgAssets.values];
-  await Future.wait(paths.map(_cacheSvg));
-}
-
-/// Loads one SVG asset into [svg.cache]. Errors are swallowed so a missing
-/// or corrupt asset never prevents the app from starting.
-Future<void> _cacheSvg(String assetPath) async {
-  try {
-    final loader = SvgAssetLoader(assetPath);
-    await svg.cache.putIfAbsent(
-      loader.cacheKey(null),
-      () => rootBundle.load(assetPath),
-    );
-  } catch (e) {
-    debugPrint('SVG warm-up skipped ($assetPath): $e');
-  }
+  await Future.wait(
+    paths.map((path) async {
+      try {
+        await rootBundle.load(path);
+      } catch (e) {
+        debugPrint('SVG warm-up skipped ($path): $e');
+      }
+    }),
+  );
 }
 
 Future<void> _initIntegrityLayer() async {

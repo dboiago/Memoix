@@ -32,15 +32,11 @@ class HomeScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final coursesAsync = ref.watch(coursesProvider);
     return coursesAsync.when(
-      loading: () => Scaffold(
-        backgroundColor: const Color(0xFF242424), 
-        body: Center(
-          child: SvgPicture.asset(
-            'assets/images/memoix-appicon-orange-1200.svg',
-            width: 220,
-          ),
-        ),
-      ),
+      // appInitProvider awaits coursesProvider.future before resolving, so
+      // this branch is only reached if the provider is invalidated mid-session
+      // (e.g., after a settings reset). A bare scaffold keeps the background
+      // colour consistent without causing a logo-position jump.
+      loading: () => const Scaffold(backgroundColor: Color(0xFF242424)),
       error: (err, _) {
         debugPrint('HomeScreen error: $err');
         return const Scaffold(
