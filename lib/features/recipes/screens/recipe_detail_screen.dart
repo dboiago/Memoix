@@ -149,7 +149,21 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
   }
 
   @override
+  void initState() {
+    super.initState();
+    // React to wakelock preference changes without side-effects in build().
+    // The initial value is applied once here; subsequent changes are handled
+    // by ref.listen() which fires only when the value actually changes.
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted) return;
+      final keepScreenOn = ref.read(keepScreenOnProvider);
+      if (keepScreenOn) WakelockPlus.enable();
+    });
+  }
+
+  @override
   void dispose() {
+    WakelockPlus.disable();
     _scrollController.dispose();
     super.dispose();
   }
@@ -157,14 +171,16 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
   @override
   Widget build(BuildContext context) {
     final recipe = widget.recipe;
-    // Enable wakelock if setting is on
-    final keepScreenOn = ref.watch(keepScreenOnProvider);
-    if (keepScreenOn) {
-      WakelockPlus.enable();
-    } else {
-      WakelockPlus.disable();
-    }
-    
+    // Listen to wakelock preference so the platform channel is only called
+    // when the value actually changes — not on every rebuild.
+    ref.listen<bool>(keepScreenOnProvider, (previous, next) {
+      if (next) {
+        WakelockPlus.enable();
+      } else {
+        WakelockPlus.disable();
+      }
+    });
+
     final theme = Theme.of(context);
     final isDark = theme.brightness == Brightness.dark;
     // Use headerImage for the app bar only — no fallback to step/gallery images

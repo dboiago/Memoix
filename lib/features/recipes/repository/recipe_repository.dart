@@ -890,12 +890,38 @@ class RecipeRepository {
   Future<List<Recipe>> getRecipesByUuids(
       List<String> uuids,) async {
     if (uuids.isEmpty) return [];
-    final results = <Recipe>[];
-    for (final uuid in uuids) {
-      final recipe = await getRecipeByUuid(uuid);
-      if (recipe != null) results.add(recipe);
+    // Fetch all matching recipe rows in one WHERE uuid IN (...) query instead
+    // of N sequential getRecipeByUuid() calls (each of which fires 2 queries).
+    final rows = await _db.recipeDao.getRecipesByUuids(uuids);
+    if (rows.isEmpty) return [];
+    // Fetch all ingredients for the returned recipes in a single batched query.
+    final allIngs = await _db.recipeDao
+        .getIngredientsForRecipes(rows.map((r) => r.id));
+    return _loadRecipesFromWithIngredients(rows, allIngs);
+  }
+
+  /// Converts pre-fetched [rows] and their associated [allIngs] into [Recipe]
+  /// app models without issuing any additional DB queries. Any row that fails
+  /// to map is skipped so one corrupt entry never aborts the batch.
+  Future<List<Recipe>> _loadRecipesFromWithIngredients(
+    List<db.Recipe> rows,
+    List<db.Ingredient> allIngs,
+  ) async {
+    // Group ingredients by recipeId for O(1) lookup during mapping.
+    final grouped = <int, List<db.Ingredient>>{};
+    for (final ing in allIngs) {
+      grouped.putIfAbsent(ing.recipeId, () => []).add(ing);
     }
-    return results;
+    final results = await Future.wait(rows.map((r) async {
+      try {
+        return await _toIsarRecipe(r, grouped[r.id] ?? []);
+      } catch (e) {
+        debugPrint('RecipeRepository._loadRecipesFromWithIngredients: '
+            'skipping ${r.id} (${r.name}): $e');
+        return null;
+      }
+    }));
+    return results.whereType<Recipe>().toList();
   }
 
   Future<List<IntegrityResponse>> toggleFavourite(int id) async {
