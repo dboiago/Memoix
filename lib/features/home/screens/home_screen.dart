@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../../app/routes/router.dart';
 import '../../../core/providers.dart';
@@ -31,9 +32,14 @@ class HomeScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final coursesAsync = ref.watch(coursesProvider);
     return coursesAsync.when(
-      loading: () => const Scaffold(
-        backgroundColor: Color(0xFF242424), 
-        body: Center(child: CircularProgressIndicator(color: Color(0xFFE8B4A0))),
+      loading: () => Scaffold(
+        backgroundColor: const Color(0xFF242424), 
+        body: Center(
+          child: SvgPicture.asset(
+            'assets/images/memoix-appicon-orange-1200.svg',
+            width: 220,
+          ),
+        ),
       ),
       error: (err, _) {
         debugPrint('HomeScreen error: $err');
