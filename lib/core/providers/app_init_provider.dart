@@ -6,6 +6,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 import '../database/database.dart';
+import '../../features/recipes/repository/recipe_repository.dart';
 import '../services/integrity_service.dart';
 import '../services/interface_calibration.dart';
 import '../services/schema_migration_service.dart';
@@ -20,7 +21,7 @@ final appInitProvider = FutureProvider<void>((ref) async {
   // The user "unlocks" shared storage by signing in via the hidden 8-second
   // long-press on the Shared Storage tile. Their session is then persisted
   // to SupabaseSecureStorage (flutter_secure_storage, key: supabase.auth.token).
-  // We ONLY initialize the Supabase client when that token already exists —
+  // We ONLY initialize the Supabase client when that token already exists -
   // guaranteeing zero network activity for users who have never opted in.
   final storage = const SupabaseSecureStorage();
   final hasSession = await storage.hasAccessToken();
@@ -53,6 +54,7 @@ final appInitProvider = FutureProvider<void>((ref) async {
   // 3. Integrity layer + calibration evaluator — fire-and-forget so the UI
   //    is never blocked waiting for these to complete at startup.
   unawaited(_initIntegrityLayer());
+  await ref.read(allRecipesProvider.future);
 });
 
 Future<void> _initIntegrityLayer() async {
