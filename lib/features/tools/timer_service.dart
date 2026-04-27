@@ -153,10 +153,19 @@ class TimerService extends StateNotifier<TimerServiceState> {
   void startTimer(int id) {
     final timers = state.timers.map((t) {
       if (t.id == id && !t.isRunning) {
-        return t.copyWith(isRunning: true, isPaused: false, isAlarming: false);
+        //If the timer is at zero, reset it to full duration before starting
+        final startingSeconds = t.remainingSeconds <= 0 ? t.duration.inSeconds : t.remainingSeconds;
+        
+        return t.copyWith(
+          isRunning: true, 
+          isPaused: false, 
+          isAlarming: false,
+          remainingSeconds: startingSeconds, // Apply the reset duration
+        );
       }
       return t;
     }).toList();
+    
     state = state.copyWith(timers: timers);
     _ensureTickerRunning();
     _updateWakelock();
@@ -182,10 +191,17 @@ class TimerService extends StateNotifier<TimerServiceState> {
   void resumeTimer(int id) {
     final timers = state.timers.map((t) {
       if (t.id == id && t.isPaused) {
-        return t.copyWith(isPaused: false);
+        // Catch the edge case where a timer was paused exactly at zero
+        final startingSeconds = t.remainingSeconds <= 0 ? t.duration.inSeconds : t.remainingSeconds;
+        
+        return t.copyWith(
+          isPaused: false,
+          remainingSeconds: startingSeconds, // Apply the reset duration
+        );
       }
       return t;
     }).toList();
+    
     state = state.copyWith(timers: timers);
     _ensureTickerRunning();
     _updateWakelock();
