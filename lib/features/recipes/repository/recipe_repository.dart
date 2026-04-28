@@ -1167,20 +1167,26 @@ class RecipeRepository {
   /// copy-on-write promotion to 'personal' in [saveRecipe]) and all
   /// personalisation data (ratings, favourite flags, cook counts).
   Future<void> syncMemoixRecipes(List<Recipe> recipes) async {
+    // Assign missing UUIDs before handing off to the DAO.
     for (final recipe in recipes) {
       if (recipe.uuid.isEmpty) recipe.uuid = _uuid.v4();
+    }
 
-      // Skip recipes that are already seeded.
-      final existing = await _db.recipeDao.getRecipeByUuid(recipe.uuid);
-      if (existing != null) continue;
+    // Single batched call — the DAO transaction handles idempotency
+    // (skips any UUID already present), eliminating N sequential pre-checks.
+    await _db.recipeDao.syncMemoixRecipes(
+      recipes.map(_toCompanion).toList(),
+    );
 
-      // Insert the recipe row via the DAO (also skips if UUID appeared in a
-      // concurrent call — the DAO wraps the check+insert in a transaction).
-      await _db.recipeDao.syncMemoixRecipes([_toCompanion(recipe)]);
-
-      // Insert ingredients for the newly-created row.
+    // Insert ingredients for newly-seeded rows only. Checking for an empty
+    // ingredient list guards against duplicating ingredients on repeat syncs,
+    // since the DAO silently no-ops on existing recipe UUIDs.
+    for (final recipe in recipes) {
       final dbRecipe = await _db.recipeDao.getRecipeByUuid(recipe.uuid);
       if (dbRecipe == null) continue;
+      final existing =
+          await _db.recipeDao.getIngredientsForRecipe(dbRecipe.id);
+      if (existing.isNotEmpty) continue;
       await _db.recipeDao.saveIngredients(
           _toIngredientCompanions(dbRecipe.id, recipe.ingredients));
     }

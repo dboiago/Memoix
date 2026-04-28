@@ -72,17 +72,23 @@ class CatalogueDao extends DatabaseAccessor<AppDatabase>
   }
 
   Future<void> togglePizzaFavourite(int id, bool current) async {
-    final pizza = await getPizzaById(id);
-    if (pizza == null) return;
-    await (update(pizzas)..where((t) => t.id.equals(id)))
-        .write(PizzasCompanion(isFavorite: Value(!pizza.isFavorite)));
+    // Atomic NOT flip — avoids a read-then-write race condition.
+    await customUpdate(
+      'UPDATE pizzas SET is_favorite = NOT is_favorite WHERE id = ?',
+      variables: [Variable.withInt(id)],
+      updates: {pizzas},
+      updateKind: UpdateKind.update,
+    );
   }
 
   Future<void> incrementPizzaCookCount(int id) async {
-    final pizza = await getPizzaById(id);
-    if (pizza == null) return;
-    await (update(pizzas)..where((t) => t.id.equals(id)))
-        .write(PizzasCompanion(cookCount: Value(pizza.cookCount + 1)));
+    // Single atomic increment — no read required.
+    await customUpdate(
+      'UPDATE pizzas SET cook_count = cook_count + 1 WHERE id = ?',
+      variables: [Variable.withInt(id)],
+      updates: {pizzas},
+      updateKind: UpdateKind.update,
+    );
   }
 
   Future<int> updatePizzaRating(int id, int rating) =>

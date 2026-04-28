@@ -1033,11 +1033,15 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
 
   Widget _buildStepImageWidget(String imagePath, {double? width, double? height}) {
     if (imagePath.startsWith('http://') || imagePath.startsWith('https://')) {
+      // Cap decoded image size to 2× the display dimensions to support HiDPI
+      // screens while preventing full-resolution decoding into memory.
       return Image.network(
         imagePath,
         width: width,
         height: height,
         fit: BoxFit.cover,
+        cacheWidth: width != null ? (width * 2).round() : null,
+        cacheHeight: height != null ? (height * 2).round() : null,
         errorBuilder: (_, __, ___) => SizedBox(
           width: width,
           height: height,
