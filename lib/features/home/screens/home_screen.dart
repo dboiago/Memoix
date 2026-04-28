@@ -3,8 +3,12 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../../app/routes/router.dart';
+import '../../../config/app_config.dart';
 import '../../../core/providers.dart';
 import '../../../core/services/integrity_service.dart';
+import '../../../core/services/update_service.dart';
+import '../../../core/widgets/update_available_dialog.dart';
+import '../../settings/screens/settings_screen.dart';
 import '../../../shared/widgets/course_card.dart';
 import '../../recipes/models/course.dart';
 import '../../recipes/models/recipe.dart';
@@ -62,6 +66,53 @@ class _CourseGridView extends ConsumerStatefulWidget {
 class _CourseGridViewState extends ConsumerState<_CourseGridView> {
   dynamic _lastConsumedHintValue;
   dynamic _lastConsumedIconValue;
+
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!isPlayStore) _checkForUpdatesOnLaunch();
+    });
+  }
+
+  Future<void> _checkForUpdatesOnLaunch() async {
+    final autoCheck = ref.read(autoCheckUpdatesProvider);
+    if (!autoCheck) return;
+
+    final updateService = ref.read(updateServiceProvider);
+    final AppVersion? appVersion;
+    try {
+      appVersion = await updateService.checkForUpdate();
+    } catch (e) {
+      debugPrint('Update check on launch failed: $e');
+      return;
+    }
+
+    if (!mounted || appVersion == null || !appVersion.hasUpdate) return;
+    final validVersion = appVersion;
+
+    showDialog(
+      context: context,
+      barrierDismissible: false,
+      builder: (ctx) => UpdateAvailableDialog(
+        currentVersion: validVersion.currentVersion,
+        latestVersion: validVersion.latestVersion,
+        releaseNotes: validVersion.releaseNotes,
+        releaseUrl: validVersion.downloadUrl,
+        onUpdate: () async {
+          final success = await updateService.installUpdate(validVersion.downloadUrl);
+          if (!success && ctx.mounted) {
+            Navigator.pop(ctx);
+            await updateService.openReleaseUrl(validVersion.downloadUrl);
+          }
+          return success;
+        },
+        onDismiss: () {
+          Navigator.pop(ctx);
+        },
+      ),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {

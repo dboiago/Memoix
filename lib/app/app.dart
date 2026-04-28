@@ -6,18 +6,14 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import '../config/app_config.dart';
 import 'theme/theme.dart';
 import 'routes/router.dart';
 import '../core/providers.dart';
 import '../core/providers/app_init_provider.dart';
 import '../core/services/deep_link_service.dart';
 import '../core/services/integrity_service.dart';
-import '../core/services/update_service.dart';
 import '../core/services/memoix_recipe_service.dart';
-import '../core/widgets/update_available_dialog.dart';
 import '../core/widgets/memoix_snackbar.dart';
-import '../features/settings/screens/settings_screen.dart';
 import '../features/tools/timer_service.dart';
 import '../features/personal_storage/services/personal_storage_service.dart';
 import '../core/database/database.dart';
@@ -86,7 +82,6 @@ class _DeepLinkWrapperState extends ConsumerState<_DeepLinkWrapper>
     WidgetsBinding.instance.addPostFrameCallback((_) {
       processIntegrityResponses(ref);
       ref.read(deepLinkServiceProvider).initialize(context);
-      if (!isPlayStore) _checkForUpdatesOnLaunch();
       _performBackgroundSync();
       _setupTimerAlarmCallbacks();
       _triggerPersonalStorageSync();
@@ -188,48 +183,6 @@ class _DeepLinkWrapperState extends ConsumerState<_DeepLinkWrapper>
         debugPrint('Background sync failed: $e');
       }
     });
-  }
-
-  Future<void> _checkForUpdatesOnLaunch() async {
-    // Check if auto-check is enabled
-    final autoCheck = ref.read(autoCheckUpdatesProvider);
-    if (!autoCheck) return;
-
-    final updateService = ref.read(updateServiceProvider);
-    final AppVersion? appVersion;
-    try {
-      appVersion = await updateService.checkForUpdate();
-    } catch (e) {
-      debugPrint('Update check on launch failed: $e');
-      return;
-    }
-
-    if (!mounted || appVersion == null || !appVersion.hasUpdate) return;
-    final validVersion = appVersion;
-
-    // Show update dialog
-    showDialog(
-      context: context,
-      barrierDismissible: false,
-      builder: (ctx) => UpdateAvailableDialog(
-        currentVersion: validVersion.currentVersion,
-        latestVersion: validVersion.latestVersion,
-        releaseNotes: validVersion.releaseNotes,
-        releaseUrl: validVersion.downloadUrl,
-        onUpdate: () async {
-          final success = await updateService.installUpdate(validVersion.downloadUrl);
-          if (!success && ctx.mounted) {
-            // Fallback: open browser if auto-install failed
-            Navigator.pop(ctx);
-            await updateService.openReleaseUrl(validVersion.downloadUrl);
-          }
-          return success;
-        },
-        onDismiss: () {
-          Navigator.pop(ctx);
-        },
-      ),
-    );
   }
 
   @override

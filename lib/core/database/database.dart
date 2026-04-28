@@ -1,5 +1,9 @@
+import 'dart:io';
+
 import 'package:drift/drift.dart';
-import 'package:drift_flutter/drift_flutter.dart';
+import 'package:drift/native.dart';
+import 'package:path/path.dart' as p;
+import 'package:path_provider/path_provider.dart';
 
 import '../../features/recipes/models/course.dart' as domainModels;
 import 'app_database.dart';
@@ -15,7 +19,16 @@ class MemoixDatabase {
 
   /// Initialize the Drift database and seed default courses.
   static Future<void> initialize() async {
-    AppDatabase.initialize(driftDatabase(name: 'memoix'));
+    final dbFolder = await getApplicationDocumentsDirectory();
+    final file = File(p.join(dbFolder.path, 'memoix'));
+    final executor = LazyDatabase(() async {
+      return NativeDatabase.createInBackground(file, setup: (rawDb) {
+        rawDb.execute('PRAGMA journal_mode=WAL;');
+        rawDb.execute('PRAGMA synchronous=NORMAL;');
+        rawDb.execute('PRAGMA mmap_size=268435456;');
+      });
+    });
+    AppDatabase.initialize(executor);
     await _seedDefaultCourses();
   }
 
