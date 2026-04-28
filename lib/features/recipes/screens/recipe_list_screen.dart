@@ -4,7 +4,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
+import '../../../core/providers.dart';
+import '../../../core/widgets/memoix_snackbar.dart';
 import '../../../shared/widgets/memoix_empty_state.dart';
+import '../../mealplan/models/meal_plan.dart';
 import '../../settings/screens/settings_screen.dart';
 import '../models/course.dart';
 import '../models/recipe.dart';
@@ -311,6 +314,33 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
                               ],
                             ),
                           ),
+                          confirmDismiss: (_) async {
+                            final now = DateTime.now();
+                            final hour = now.hour;
+                            final String course;
+                            if (hour >= 5 && hour < 11) {
+                              course = MealCourse.breakfast;
+                            } else if (hour >= 11 && hour < 14) {
+                              course = MealCourse.lunch;
+                            } else if (hour >= 14 && hour < 21) {
+                              course = MealCourse.dinner;
+                            } else {
+                              course = MealCourse.snack;
+                            }
+                            await ref.read(mealPlanServiceProvider).addMeal(
+                              now,
+                              recipeId: recipe.uuid,
+                              recipeName: recipe.name,
+                              course: course,
+                              cuisine: recipe.cuisine,
+                              recipeCategory: recipe.course,
+                            );
+                            MemoixSnackBar.show(
+                              'Added to ${MealCourse.displayName(course)}',
+                            );
+                            // Return false so the item snaps back and stays in the list
+                            return false;
+                          },
                           child: RecipeCard(
                             recipe: recipe,
                             onTap: () => AppRoutes.toRecipeDetail(context, recipe.uuid),
