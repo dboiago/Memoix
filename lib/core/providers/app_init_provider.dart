@@ -1,9 +1,12 @@
 import 'dart:async';
+import 'dart:convert';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 import '../database/database.dart';
@@ -18,6 +21,7 @@ import '../../features/cellar/repository/cellar_repository.dart';
 import '../../features/notes/repository/scratch_pad_repository.dart';
 import '../../shared/widgets/course_icon_widget.dart';
 import '../services/memoix_recipe_service.dart';
+import '../utils/ingredient_categorizer.dart';
 import '../services/integrity_service.dart';
 import '../services/interface_calibration.dart';
 import '../services/schema_migration_service.dart';
@@ -65,15 +69,22 @@ final appInitProvider = FutureProvider<void>((ref) async {
     }
   }
 
-  // 3. Asset warm-up — kick off parallel preloading of the app logo and all
-  //    course-icon SVGs into Flutter's PlatformAssetBundle byte cache.
-  //    We use rootBundle.load() directly rather than svg.cache because
-  //    SvgAssetLoader.cacheKey(null) in flutter_svg 2.x calls
-  //    DefaultAssetBundle.of(null!) which may throw or produce keys that
-  //    don't match render-time keys, corrupting the SVG picture cache.
-  //    rootBundle.load() caches the raw bytes; SvgAssetLoader reads through
-  //    that same cache via DefaultAssetBundle.of(context).load().
-  final warmUpFuture = _warmSvgAssets();
+  // 3. Parallel pre-work — kick off both of these concurrently so their
+  //    wall-clock time overlaps with the DB and Supabase steps above.
+  //
+  //    a) SVG warm-up: pre-populates flutter_svg's svg.cache with
+  //       already-resolved ByteData futures. At render time, SvgPicture.asset()
+  //       calls svg.cache.putIfAbsent(key, loader) — a cache HIT returns the
+  //       already-resolved Future immediately, so the FutureBuilder receives
+  //       bytes on the very first frame and the icon paints without any async gap.
+  //
+  //    b) IngredientService: decompresses and JSON-decodes the bundled
+  //       ingredient database (~2-4 s of CPU work on first call). Running it
+  //       here keeps it inside the splash so the interactive UI is never frozen.
+  final warmUpFuture = Future.wait([
+    _warmSvgAssets(),
+    IngredientService().initialize(),
+  ]);
 
   // 4. Pre-warm the coursesProvider Riverpod StreamProvider so it is already
   //    in AsyncData state before HomeScreen builds. Because step 1 committed
@@ -97,14 +108,32 @@ final appInitProvider = FutureProvider<void>((ref) async {
   //    On subsequent launches allRecipesProvider has data immediately and
   //    the if-block is skipped entirely, so startup time is unaffected.
   //
-  //    After sync() the Drift stream will emit the new rows, but that
-  //    notification is async. We invalidate allRecipesProvider and re-await
-  //    it so HomeScreen always receives AsyncData with real recipes on its
-  //    very first build — never an empty list.
+  //    After sync() completes:
+  //      • The bundled version is persisted so _performBackgroundSync() in
+  //        app.dart sees the version as already current and skips re-running
+  //        the 500+ UUID existence-check loop on this launch.
+  //      • All domain providers are invalidated so step 8's pre-warm resolves
+  //        with post-sync data, not the empty-list snapshot from before sync.
   final initialRecipes = await ref.read(allRecipesProvider.future);
   if (initialRecipes.isEmpty) {
     await ref.read(syncNotifierProvider.notifier).sync();
+
+    // Persist bundled version so _performBackgroundSync skips this launch.
+    try {
+      final versionJson = await rootBundle.loadString('assets/recipes/version.json');
+      final bundledVersion = (jsonDecode(versionJson) as Map<String, dynamic>)['version'] as int? ?? 0;
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.setInt('memoix_recipe_sync_version', bundledVersion);
+    } catch (_) {}
+
+    // Invalidate all domain providers so step 8 pre-warms with fresh data.
     ref.invalidate(allRecipesProvider);
+    ref.invalidate(allPizzasProvider);
+    ref.invalidate(allSandwichesProvider);
+    ref.invalidate(allSmokingRecipesProvider);
+    ref.invalidate(allModernistRecipesProvider);
+    ref.invalidate(allCheeseEntriesProvider);
+    ref.invalidate(allCellarEntriesProvider);
     await ref.read(allRecipesProvider.future);
   }
 
@@ -131,17 +160,25 @@ final appInitProvider = FutureProvider<void>((ref) async {
   ]);
 });
 
-/// Pre-populates Flutter's PlatformAssetBundle byte cache for the app logo
-/// and every course-icon SVG. Using rootBundle.load() is safe with any version
-/// of flutter_svg — SvgAssetLoader ultimately calls
-/// DefaultAssetBundle.of(context).load(name) which is backed by rootBundle.
+/// Pre-populates flutter_svg's svg.cache for the app logo and every course
+/// icon SVG. Using SvgAssetLoader with explicit assetBundle: rootBundle
+/// allows cacheKey(null) to work safely without a BuildContext, and produces
+/// a key identical to the one SvgPicture.asset() generates at render time
+/// (because DefaultAssetBundle.of(context) returns rootBundle in a standard
+/// Flutter app). The pre-loaded Future<ByteData> is already resolved by the
+/// time the first frame builds, so SvgPicture's FutureBuilder receives bytes
+/// synchronously and the icon paints on frame 1 with no async gap.
 Future<void> _warmSvgAssets() async {
   const logo = 'assets/images/memoix-appicon-orange-1200.svg';
   final paths = <String>[logo, ...CourseIconWidget.svgAssets.values];
   await Future.wait(
     paths.map((path) async {
       try {
-        await rootBundle.load(path);
+        final loader = SvgAssetLoader(path, assetBundle: rootBundle);
+        await svg.cache.putIfAbsent(
+          loader.cacheKey(null),
+          () => loader.loadBytes(null),
+        );
       } catch (e) {
         debugPrint('SVG warm-up skipped ($path): $e');
       }

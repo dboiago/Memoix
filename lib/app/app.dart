@@ -22,7 +22,6 @@ import '../features/tools/timer_service.dart';
 import '../features/personal_storage/services/personal_storage_service.dart';
 import '../core/database/database.dart';
 import '../core/services/image_migration_service.dart';
-import '../core/utils/ingredient_categorizer.dart';
 
 /// Global key for the root ScaffoldMessenger - use this to show snackbars after navigation
 final rootScaffoldMessengerKey = GlobalKey<ScaffoldMessengerState>();
@@ -96,12 +95,10 @@ class _DeepLinkWrapperState extends ConsumerState<_DeepLinkWrapper>
   }
 
   Future<void> _deferredInit() async {
+    // IngredientService is now initialised inside appInitProvider (concurrently
+    // with SVG warm-up) so that the 2-4 s of GZip + JSON work happens during
+    // the splash rather than freezing the UI after first interaction.
     await ImageMigrationService.runIfNeeded();
-    await IngredientService().initialize();
-    // refreshCourses() is now called unconditionally inside
-    // MemoixDatabase.initialize(), which runs during appInitProvider before
-    // any stream provider is active. Calling it again here would trigger a
-    // deleteAll on an already-watched stream and cause a blank-grid flash.
   }
 
   @override
