@@ -19,7 +19,8 @@ if (keystorePropertiesFile.exists()) {
 android {
     namespace = "io.github.dboiago.memoix"
     compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
+    // NDK r27+ is required for 16 KB memory page size alignment (Android 15+)
+    ndkVersion = "27.0.12077973"
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
