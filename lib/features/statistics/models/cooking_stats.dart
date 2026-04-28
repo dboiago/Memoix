@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:drift/drift.dart';
+import 'package:uuid/uuid.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../core/providers.dart';
@@ -85,6 +86,7 @@ class CookingStatsService {
     String? notes,
   }) async {
     final companion = CookingLogsCompanion(
+      uuid: Value(const Uuid().v4()),
       recipeId: Value(recipeId),
       recipeName: Value(recipeName),
       recipeCourse: Value(course),
