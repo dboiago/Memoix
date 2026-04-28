@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About - Memoix</title>
+  <title>Privacy Policy — Memoix</title>
+  <meta name="description" content="Privacy policy for Memoix." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Cormorant+SC:wght@400;500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
   <style>
@@ -31,8 +32,7 @@
 
     .nav-top {
       position: fixed;
-      top: 0;
-      left: 0;
+      top: 0; left: 0;
       width: 100%;
       padding: 1.6rem 2rem;
       display: flex;
@@ -64,7 +64,6 @@
       padding: 6px;
       pointer-events: all;
     }
-
     .nav-toggle span {
       display: block;
       width: 20px;
@@ -103,16 +102,10 @@
       text-decoration: none;
     }
     .nav-overlay a { color: var(--ink-muted); transition: color 0.2s; }
-    .nav-overlay a:hover { color: var(--ink-soft); }
+    .nav-overlay a:hover { color: var(--ink); }
     .nav-link-current { color: var(--ink); cursor: default; }
 
-    .nav-rule {
-      width: 2rem;
-      height: 1px;
-      background: var(--rule);
-      margin: 2rem 0;
-    }
-
+    .nav-rule { width: 2rem; height: 1px; background: var(--rule); margin: 2rem 0; }
     .nav-meta {
       font-family: 'Cormorant SC', serif;
       font-size: 0.62rem;
@@ -124,83 +117,75 @@
     /* ── CONTENT ─────────────────────────────────── */
 
     main {
-      max-width: 900px;
+      max-width: 680px;
       margin: 0 auto;
       padding: 10rem 2rem 6rem;
-      position: relative;
-      z-index: 1;
     }
-
-    .section {
-      margin-bottom: 7rem;
-      max-width: 520px;
-    }
-    .section--left   { margin-right: auto; }
-    .section--right  { margin-left: auto; text-align: right; }
-    .section--offset { margin-left: 12%; margin-right: auto; }
 
     h1 {
       font-family: 'Playfair Display', serif;
-      font-size: clamp(3.5rem, 9vw, 6rem);
+      font-size: clamp(3rem, 8vw, 5rem);
       color: var(--ink);
-      line-height: 0.9;
+      line-height: 0.95;
+      margin-bottom: 1.5rem;
+    }
+
+    .meta {
+      font-family: 'Cormorant SC', serif;
+      font-size: 0.62rem;
+      letter-spacing: 0.22em;
+      color: var(--ink-muted);
+      text-transform: uppercase;
       margin-bottom: 4rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .policy-section {
+      margin-bottom: 3rem;
+      padding-bottom: 3rem;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .policy-section:last-child {
+      border-bottom: none;
     }
 
     h2 {
       font-family: 'Cormorant SC', serif;
-      font-size: 0.65rem;
-      letter-spacing: 0.3em;
+      font-size: 0.68rem;
+      letter-spacing: 0.28em;
       text-transform: uppercase;
-      color: var(--ink-muted);
-      margin-bottom: 1.5rem;
+      color: var(--ink);
+      margin-bottom: 1.2rem;
     }
 
-    .section p {
+    h3 {
+      font-family: 'Cormorant SC', serif;
+      font-size: 0.62rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+      margin-top: 1.8rem;
+      margin-bottom: 0.8rem;
+    }
+
+    p {
+      font-size: 1rem;
+      color: var(--ink-soft);
       line-height: 1.85;
       margin-bottom: 0.85rem;
     }
-    .section p:last-child { margin-bottom: 0; }
 
-    /* Origin story colour registers */
-    .origin p { margin-bottom: 1.2rem; line-height: 1.85; }
-    .origin p:last-child { margin-bottom: 0; }
-    .t-soft  { color: var(--ink-soft); }
-    .t-muted { color: var(--ink-muted); font-style: italic; }
-    .t-ink   { color: var(--ink); }
-    em.warm  { color: var(--ink); font-style: italic; }
+    p:last-child { margin-bottom: 0; }
 
-    .pull {
-      display: block;
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(1.2rem, 2.5vw, 1.6rem);
-      font-style: italic;
+    a {
       color: var(--ink);
-      line-height: 1.4;
-      padding: 2rem 0;
-      border-top: 1px solid var(--rule);
+      text-decoration: none;
       border-bottom: 1px solid var(--rule);
-      margin: 2rem 0;
+      transition: border-color 0.2s;
     }
-
-    .rule {
-      width: 30px;
-      height: 1px;
-      background: var(--rule);
-      margin: 1.5rem 0;
-    }
-    .section--right .rule { margin-left: auto; }
-
-    .emphasis { color: var(--ink); font-style: italic; }
-
-    blockquote {
-      padding: 6rem 0;
-      text-align: center;
-      font-family: 'Playfair Display', serif;
-      font-size: 1.8rem;
-      color: var(--ink);
-      font-style: italic;
-    }
+    a:hover { border-color: var(--ink); }
 
     /* ── FOOTER ──────────────────────────────────── */
 
@@ -214,14 +199,21 @@
       align-items: center;
       gap: 1rem;
     }
+
     .footer-brand {
       font-family: 'Cormorant SC', serif;
       font-size: 0.62rem;
+      letter-spacing: 0.22em;
       color: var(--ink-muted);
       text-transform: uppercase;
-      letter-spacing: 0.22em;
     }
-    .footer-links { display: flex; gap: 1.8rem; justify-content: center; }
+
+    .footer-links {
+      display: flex;
+      gap: 1.8rem;
+      justify-content: center;
+    }
+
     .footer-links a,
     .footer-links .current {
       font-family: 'Cormorant SC', serif;
@@ -229,10 +221,12 @@
       letter-spacing: 0.2em;
       text-transform: uppercase;
       text-decoration: none;
+      border-bottom: none;
     }
     .footer-links a { color: var(--ink-muted); transition: color 0.2s; }
-    .footer-links a:hover { color: var(--ink-soft); }
+    .footer-links a:hover { color: var(--ink); border-bottom: none; }
     .footer-links .current { color: var(--ink); cursor: default; }
+
     .footer-salt {
       font-family: 'EB Garamond', serif;
       font-size: 0.85rem;
@@ -244,10 +238,9 @@
     /* ── RESPONSIVE ──────────────────────────────── */
 
     @media (max-width: 600px) {
-      footer { grid-template-columns: 1fr; text-align: center; }
+      footer { grid-template-columns: 1fr; text-align: center; gap: 1.2rem; }
+      .footer-links { flex-wrap: wrap; justify-content: center; }
       .footer-salt { text-align: center; }
-      .section { max-width: 100%; text-align: left; margin-left: 0; }
-      .section--right .rule { margin-left: 0; }
     }
   </style>
 </head>
@@ -263,7 +256,7 @@
   <nav class="nav-overlay" id="navOverlay" aria-hidden="true">
     <img src="../assets/logo.svg" style="position: absolute; bottom: -5%; right: -5%; width: 60%; opacity: 0.06; pointer-events: none; z-index: -1; filter: grayscale(1);" alt="" />
     <a href="../features/index.html">Features</a>
-    <span class="nav-link-current">About</span>
+    <a href="../about/index.html">About</a>
     <a href="https://github.com/dboiago/Memoix" target="_blank" rel="noopener">Source</a>
     <div class="nav-rule"></div>
     <p class="nav-meta">Memoix &mdash; 2026</p>
@@ -271,42 +264,87 @@
 
   <main>
 
-    <header class="section section--left">
-      <h1>Intent.</h1>
-      <div class="origin">
-        <p class="t-soft">Memoix started as a notebook. The kind that fits in a back pocket on the line - quick notes, specials, things worth keeping.</p>
-        <p class="t-muted">Kitchens being what they are, the notebooks didn't last.</p>
+    <h1>Privacy.</h1>
+    <p class="meta">Memoix &mdash; Last updated April 2026</p>
 
-        <span class="pull">Recipes are confirmed. The scratch pad is not.</span>
-
-        <p class="t-soft">A spreadsheet replaced them. Tabs for recipes that had been made and proven. A tab for things being tested, sourced, or reconsidered. <em class="warm">That division still exists in the app.</em></p>
-        <p class="t-muted">The spreadsheet got shared. Family, friends, people who wanted to cook something from it. Shared access meant accidental edits. Reading a recipe across columns in a spreadsheet is its own problem. The whole thing became more maintenance than it was worth.</p>
-        <p class="t-soft">So an app replaced the spreadsheet. The structure that had developed over time - course tabs, linked recipes, colour organisation, paired dishes - came with it, <em class="warm">refined rather than rebuilt.</em></p>
-        <p class="t-ink">The default recipes in Memoix are ones that have been made. In restaurants, at home, repeatedly. They are not curated for variety or discovery. They are there because they work.</p>
-      </div>
-    </header>
-
-    <div class="section section--right">
-      <h2>The Cook</h2>
-      <div class="rule"></div>
-      <p>Memoix is built around professional note-taking habits. It assumes you already know how to cook and want somewhere to keep that knowledge organised and accessible, editable.</p>
-      <p>The structure provides this. A smoking entry offers pit notes or a full recipe. Baking surfaces baker's percentages. Modernist entries support equipment-specific fields. These things are present when you need them and absent when you don't.</p>
-      <p>Anyone can use it. Exploring it will get the most out of it.</p>
+    <div class="policy-section">
+      <h2>Overview</h2>
+      <p>Memoix is an offline-first application. It does not collect, store, or transmit any personal data by default. No analytics, diagnostics, or crash reporting are active.</p>
     </div>
 
-    <div class="section section--offset">
-      <h2>The Anti-Social</h2>
-      <p>Memoix is not a social platform, a learning course, or a productivity game. It stays out of the way and no account is required.</p>
-      <p class="emphasis">This is by design, not oversight.</p>
+    <div class="policy-section">
+      <h2>Data Storage</h2>
+      <p>All recipe data, notes, and settings are stored locally on your device using an embedded SQLite database. This data never leaves your device unless you explicitly configure an optional sync feature.</p>
     </div>
 
-    <div class="section section--left">
-      <h2>The Work</h2>
-      <p>Memoix is in active development. Core systems are stable - the database layer, import pipelines, cooking views, and sharing.</p>
-      <p>The app is functional and used daily. Rough edges exist because it keeps evolving.</p>
+    <div class="policy-section">
+      <h2>Optional Features</h2>
+      <p>All network-connected features are entirely optional and require deliberate configuration by the user. None are enabled by default.</p>
+
+      <h3>Cloud Sync (OneDrive / Google Drive)</h3>
+      <p>If you choose to connect OneDrive or Google Drive, recipe data is transmitted to and stored in your personal cloud storage account. Sync bundles may include a device name to identify the source of changes. This data is governed by Microsoft's or Google's respective privacy policies. The developer has no access to this data.</p>
+
+      <h3>AI-Assisted Tools</h3>
+      <p>If you choose to use the AI features, you must supply your own API key from a third-party AI provider. When these features are used, content you submit (such as recipe images or text) is transmitted to that provider using your credentials and your subscription. The developer has no access to this data or your API key. Your use is governed by your AI provider's privacy policy.</p>
     </div>
 
-    <blockquote>Built with salt.</blockquote>
+    <div class="policy-section">
+      <h2>Permissions</h2>
+
+      <h3>Camera</h3>
+      <p>Camera access is used for two purposes: on-device OCR (optical character recognition) to assist with recipe text import, and QR code scanning for recipe link import. No images are stored or transmitted as part of either process.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>Credential Storage</h2>
+      <p>API keys and authentication tokens are encrypted and stored in your device's native hardware keystore (Android Keystore / iOS Keychain). They are never backed up to the database or transmitted anywhere except directly to the provider you configured.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>Network Requests</h2>
+      <p>The following outbound requests only occur if triggered by user action or explicitly enabled in settings. They do not transmit personal data beyond your IP address.</p>
+
+      <h3>App Update Check</h3>
+      <p>If enabled in settings, or when manually triggered, the app makes an unauthenticated request to the GitHub API to check whether a newer version is available. No personal data is transmitted. This feature is disabled by default and is only available in the GitHub APK version.</p>
+
+      <h3>URL Import Fallback</h3>
+      <p>When importing a recipe from a URL, if the original source is unavailable, the app may forward that URL to the Wayback Machine (<a href="https://archive.org" target="_blank" rel="noopener">archive.org</a>) as a fallback. This is triggered only by a deliberate user import action.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>Developer Diagnostic Interface</h2>
+      <p>The app contains a developer diagnostic interface that requires manual credential provisioning and is not accessible to end users. No user data is transmitted through this interface.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>Support the Developer</h2>
+      <p>Memoix is free. <a href="https://github.com/sponsors/dboiago" target="_blank" rel="noopener">GitHub Sponsors</a> is available for those who wish to contribute. No payment or personal data is handled by the app. The GitHub Sponsors option is not present in the Play Store version of the app.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>No Data Collection</h2>
+      <p>The developer does not collect user data, usage statistics, or crash reports. Device identifiers embedded in cloud sync bundles remain within your configured cloud storage accounts.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>Third-Party Services</h2>
+      <p>The app does not integrate any third-party analytics, advertising, or tracking SDKs.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>Children's Privacy</h2>
+      <p>This app is intended for general audiences and does not knowingly collect data from anyone.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>Changes</h2>
+      <p>This policy may be updated to reflect changes in the app's functionality. The last updated date above will reflect any revisions.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>Contact</h2>
+      <p>For questions, open an issue on the <a href="https://github.com/dboiago/Memoix" target="_blank" rel="noopener">GitHub repository</a>.</p>
+    </div>
 
   </main>
 
@@ -314,9 +352,9 @@
     <span class="footer-brand">Memoix</span>
     <nav class="footer-links">
       <a href="../features/index.html">Features</a>
-      <span class="current">About</span>
+      <a href="../about/index.html">About</a>
       <a href="https://github.com/dboiago/Memoix" target="_blank" rel="noopener">GitHub</a>
-      <a href="../privacy/index.html">Privacy</a>
+      <span class="current">Privacy</span>
     </nav>
     <span class="footer-salt">Built with salt.</span>
   </footer>
