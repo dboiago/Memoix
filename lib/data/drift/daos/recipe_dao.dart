@@ -223,6 +223,22 @@ class RecipeDao extends DatabaseAccessor<AppDatabase>
   Future<int> deleteIngredient(int id) =>
       (delete(ingredients)..where((i) => i.id.equals(id))).go();
 
+  /// Replaces the ingredient sets for multiple recipes in one transaction,
+  /// eliminating N round-trips compared to calling deleteIngredientsForRecipe
+  /// + saveIngredients per recipe in a loop (M-8).
+  Future<void> replaceIngredientsForRecipesBatch(
+      Map<int, List<IngredientsCompanion>> map) =>
+      transaction(() async {
+        for (final entry in map.entries) {
+          await (delete(ingredients)
+                ..where((i) => i.recipeId.equals(entry.key)))
+              .go();
+          for (final ing in entry.value) {
+            await into(ingredients).insert(ing);
+          }
+        }
+      });
+
   /// Returns all recipe rows where the [pairedRecipeIds] JSON array contains
   /// [uuid]. Uses a SQL LIKE filter so only matching rows are scanned,
   /// instead of loading the full table into Dart for in-memory filtering.

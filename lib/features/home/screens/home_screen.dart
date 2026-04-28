@@ -75,6 +75,10 @@ class _CourseGridViewState extends ConsumerState<_CourseGridView> {
     final classicsFinalized = ref.watch(classicsFinalizedProvider);
     final showClassicsCard = IntegrityService.store.getBool('cfg_display_pass') &&
         !classicsFinalized;
+    // Hoist to the top of build — one subscription each rather than one per
+    // course card inside the SliverChildBuilderDelegate (M-4).
+    final hideMemoix = ref.watch(hideMemoixRecipesProvider);
+    final groupedAsync = ref.watch(recipesGroupedByCourseProvider);
 
     return LayoutBuilder(
       builder: (context, constraints) {
@@ -194,7 +198,6 @@ class _CourseGridViewState extends ConsumerState<_CourseGridView> {
                     }
 
                     final course = courses[index];
-                    final hideMemoix = ref.watch(hideMemoixRecipesProvider);
                     
                     // Special handling for pizzas, sandwiches, smoking, cheese, cellar - use their own counts
                     final bool isPizza = course.slug == 'pizzas';
@@ -263,13 +266,18 @@ class _CourseGridViewState extends ConsumerState<_CourseGridView> {
                         orElse: () => 0,
                       );
                     } else {
-                      final recipesAsync = ref.watch(
-                        recipesByCourseProvider(course.slug),
-                      );
-                      itemCount = recipesAsync.maybeWhen(
-                        data: (recipes) => hideMemoix
-                            ? recipes.where((r) => r.source != RecipeSource.memoix).length
-                            : recipes.length,
+                      // Single grouped subscription replaces N per-course
+                      // SQLite stream subscriptions (M-4).
+                      itemCount = groupedAsync.maybeWhen(
+                        data: (grouped) {
+                          final courseRecipes =
+                              grouped[course.slug.toLowerCase()] ?? [];
+                          return hideMemoix
+                              ? courseRecipes
+                                  .where((r) => r.source != RecipeSource.memoix)
+                                  .length
+                              : courseRecipes.length;
+                        },
                         orElse: () => 0,
                       );
                     }

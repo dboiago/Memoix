@@ -14,6 +14,65 @@ import '../repository/recipe_repository.dart';
 import '../widgets/recipe_card.dart';
 
 
+/// Derives the sorted cuisine list for a given course, applying the hideMemoix
+/// setting. Recalculates only when the recipe list or the setting changes —
+/// never on a plain setState or UI repaint (M-2).
+final _availableCuisinesForCourseProvider =
+    Provider.family<List<String>, String>((ref, course) {
+  final hideMemoix = ref.watch(hideMemoixRecipesProvider);
+  return ref.watch(recipesByCourseProvider(course)).maybeWhen(
+    data: (all) {
+      final recipes = hideMemoix
+          ? all.where((r) => r.source != RecipeSource.memoix).toList()
+          : all;
+      return recipes
+          .map((r) => r.cuisine)
+          .where((c) => c != null && c.isNotEmpty)
+          .cast<String>()
+          .toSet()
+          .toList()
+        ..sort();
+    },
+    orElse: () => [],
+  );
+});
+
+/// Derives the sorted base-spirit list for the drinks course, applying the
+/// hideMemoix setting. Recalculates only when the recipe list or the setting
+/// changes — never on a plain setState or UI repaint (M-2).
+final _availableBaseSpiritsForCourseProvider =
+    Provider.family<List<String>, String>((ref, course) {
+  final hideMemoix = ref.watch(hideMemoixRecipesProvider);
+  return ref.watch(recipesByCourseProvider(course)).maybeWhen(
+    data: (all) {
+      final recipes = hideMemoix
+          ? all.where((r) => r.source != RecipeSource.memoix).toList()
+          : all;
+      final bases = recipes
+          .map((r) => r.subcategory)
+          .where((s) => s != null && s.isNotEmpty)
+          .cast<String>()
+          .toSet()
+          .toList();
+      bases.sort((a, b) {
+        final spiritA = Spirit.lookup(a);
+        final spiritB = Spirit.lookup(b);
+        final aIsNonAlc = spiritA?.category == 'Non-Alcoholic';
+        final bIsNonAlc = spiritB?.category == 'Non-Alcoholic';
+        if (aIsNonAlc && !bIsNonAlc) return -1;
+        if (!aIsNonAlc && bIsNonAlc) return 1;
+        final catA = spiritA?.category ?? '';
+        final catB = spiritB?.category ?? '';
+        final catCompare = catA.compareTo(catB);
+        if (catCompare != 0) return catCompare;
+        return a.compareTo(b);
+      });
+      return bases;
+    },
+    orElse: () => [],
+  );
+});
+
 /// Recipe list screen
 class RecipeListScreen extends ConsumerStatefulWidget {
   final String course;
@@ -43,9 +102,13 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    final recipesAsync = ref.watch(
-      recipesByCourseProvider(widget.course),
-    );
+    final recipesAsync = ref.watch(recipesByCourseProvider(widget.course));
+    // Memoized derivations — recalculated only when the recipe list or
+    // hideMemoix setting changes, not on every setState or repaint (M-2).
+    final availableCuisines =
+        ref.watch(_availableCuisinesForCourseProvider(widget.course));
+    final availableBaseSpirits =
+        ref.watch(_availableBaseSpiritsForCourseProvider(widget.course));
 
     return Scaffold(
       appBar: AppBar(
@@ -73,9 +136,6 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
           if (hideMemoix) {
             recipes = recipes.where((r) => r.source != RecipeSource.memoix).toList();
           }
-          
-          // Get cuisines that actually exist in this recipe set
-          final availableCuisines = _getAvailableCuisines(recipes);
           
           return Column(
             children: [
@@ -161,7 +221,7 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
               ),
 
               // Cuisine/base filter chips (show if any exist)
-              if (_isDrinksScreen && _getAvailableBaseSpirits(recipes).isNotEmpty)
+              if (_isDrinksScreen && availableBaseSpirits.isNotEmpty)
                 Container(
                   height: 48,
                   padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -179,7 +239,7 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
                       scrollDirection: Axis.horizontal,
                       children: [
                         _buildCuisineChip('All', recipes.length, isAllChip: true),
-                        ..._getAvailableBaseSpirits(recipes).map((base) {
+                        ...availableBaseSpirits.map((base) {
                           final count = recipes.where((r) => r.subcategory == base).length;
                           return _buildCuisineChip(Spirit.toDisplayName(base), count, rawValue: base);
                         }),

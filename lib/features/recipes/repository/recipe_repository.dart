@@ -836,14 +836,22 @@ class RecipeRepository {
     final companions = recipes.map(_toCompanion).toList();
     await _db.recipeDao.saveRecipes(companions);
 
-    for (final recipe in recipes) {
-      final row = await _db.recipeDao.getRecipeByUuid(recipe.uuid);
-      if (row != null) {
-        await _db.recipeDao.deleteIngredientsForRecipe(row.id);
-        await _db.recipeDao.saveIngredients(
-            _toIngredientCompanions(row.id, recipe.ingredients),);
-      }
-    }
+    // Batch-fetch all saved rows in one WHERE uuid IN (...) query
+    // instead of N sequential getRecipeByUuid() calls (M-8).
+    final uuids = recipes.map((r) => r.uuid).toList();
+    final savedRows = await _db.recipeDao.getRecipesByUuids(uuids);
+    final idByUuid = <String, int>{
+      for (final row in savedRows) row.uuid: row.id,
+    };
+
+    // Replace all ingredient sets inside a single transaction boundary.
+    final ingredientMap = <int, List<IngredientsCompanion>>{
+      for (final recipe in recipes)
+        if (idByUuid.containsKey(recipe.uuid))
+          idByUuid[recipe.uuid]!:
+              _toIngredientCompanions(idByUuid[recipe.uuid]!, recipe.ingredients),
+    };
+    await _db.recipeDao.replaceIngredientsForRecipesBatch(ingredientMap);
 
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
   }
@@ -1225,10 +1233,10 @@ final favouriteRecipesProvider = StreamProvider<List<Recipe>>((ref) {
   return ref.watch(recipeRepositoryProvider).watchFavourites();
 });
 
-/// Provider for recipe search - watches allRecipesProvider to auto-refresh when recipes change
+/// Provider for recipe search — executes a direct SQLite query when the query
+/// string changes. No longer watches allRecipesProvider, which caused results
+/// to reset on every background write (e.g. cook-count increments) (M-3).
 final recipeSearchProvider = FutureProvider.family<List<Recipe>, String>((ref, query) {
-  // Watch allRecipesProvider to invalidate search when recipes are added/deleted
-  ref.watch(allRecipesProvider);
   return ref.watch(recipeRepositoryProvider).searchRecipes(query);
 });
 
@@ -1240,6 +1248,20 @@ final availableCuisinesProvider = StreamProvider<Set<String>>((ref) {
         .where((c) => c != null && c.isNotEmpty)
         .cast<String>()
         .toSet();
+  });
+});
+
+/// Groups all recipes by course slug in a single Dart pass, derived from one
+/// allRecipesProvider subscription. Use on the home screen instead of N
+/// independent recipesByCourseProvider subscriptions (M-4).
+final recipesGroupedByCourseProvider =
+    StreamProvider<Map<String, List<Recipe>>>((ref) {
+  return ref.watch(recipeRepositoryProvider).watchAllRecipes().map((recipes) {
+    final map = <String, List<Recipe>>{};
+    for (final recipe in recipes) {
+      map.putIfAbsent(recipe.course.toLowerCase(), () => []).add(recipe);
+    }
+    return map;
   });
 });
 
