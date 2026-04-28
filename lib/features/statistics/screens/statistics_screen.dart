@@ -25,9 +25,9 @@ const double _cmOpacityHigh = 0.70;
 const double _cmOpacityMid  = 0.42;
 const double _cmOpacityDim  = 0.18;
 
-const int    _cmChipsPerRow = 16;
-const double _cmChipSpacing = 4.0;
-const double _cmChipRadius  = 4.0;
+const double _cmChipSize    = 11.0;
+const double _cmChipSpacing = 3.0;
+const double _cmChipRadius  = 2.0;
 // ─────────────────────────────────────────────────────────────────────────────
 
 class StatisticsScreen extends ConsumerWidget {
@@ -455,36 +455,31 @@ class _CookMap extends StatelessWidget {
         ),
         borderRadius: BorderRadius.circular(12),
       ),
-      child: LayoutBuilder(
-        builder: (context, constraints) {
-          final chipWidth = (constraints.maxWidth -
-                  _cmChipSpacing * (_cmChipsPerRow - 1)) /
-              _cmChipsPerRow;
-          final chipHeight = chipWidth * 1.25;
-          return Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Wrap(
-                spacing: _cmChipSpacing,
-                runSpacing: _cmChipSpacing,
-                children: List.generate(pairs.length, (i) {
-                  final base    = pairs[i].$2;
-                  final opacity = _brightness(filteredLogs, i);
-                  return Container(
-                    width: chipWidth,
-                    height: chipHeight,
-                    decoration: BoxDecoration(
-                      color: base.withValues(alpha: opacity),
-                      borderRadius: BorderRadius.circular(_cmChipRadius),
-                    ),
-                  );
-                }),
-              ),
-              const SizedBox(height: 10),
-              const _CookMapLegend(),
-            ],
-          );
-        },
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Wrap(
+            spacing: _cmChipSpacing,
+            runSpacing: _cmChipSpacing,
+            children: List.generate(pairs.length, (i) {
+              final base    = pairs[i].$2;
+              final opacity = _brightness(filteredLogs, i);
+              return Container(
+                width: _cmChipSize,
+                height: _cmChipSize,
+                decoration: BoxDecoration(
+                  color: base.withValues(alpha: opacity),
+                  borderRadius: BorderRadius.circular(_cmChipRadius),
+                ),
+              );
+            }),
+          ),
+          const SizedBox(height: 10),
+          Align(
+            alignment: Alignment.centerRight,
+            child: const _CookMapLegend(),
+          ),
+        ],
       ),
     );
   }
@@ -504,7 +499,6 @@ class _CookMapLegend extends StatelessWidget {
     return Wrap(
       spacing: 8,
       runSpacing: 4,
-      alignment: WrapAlignment.end,
       crossAxisAlignment: WrapCrossAlignment.center,
       children: List.generate(_labels.length, (i) {
         return Row(
