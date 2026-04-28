@@ -28,25 +28,15 @@ include a device name to identify the source of changes. This data is
 governed by Microsoft's or Google's respective privacy policies. The
 developer has no access to this data.
 
-### Cloud Sync (Supabase)
-The app includes an internal Supabase-backed sync feature. This feature is
-not intended for or accessible to end users and requires backend credentials
-that are not distributed with the app. If active, recipe data is transmitted
-to a Supabase-hosted backend and is governed by Supabase's privacy policy
-(supabase.com).
-
 ### AI-Assisted Tools
 If you choose to use the AI features, you must supply your own API key
-from a third-party AI provider. When these features are used, content you submit
-(such as recipe images or text) is transmitted to that provider using your
-credentials and your subscription. The developer has no access to this data
-or your API key. Your use is governed by your AI provider's privacy policy.
+from a third-party AI provider. When these features are used, content you
+submit (such as recipe images or text) is transmitted to that provider using
+your credentials and your subscription. The developer has no access to this
+data or your API key. Your use is governed by your AI provider's privacy
+policy.
 
-## Credential Storage
-Your API keys and authentication tokens are encrypted and stored securely in your 
-device's native hardware keystore (Android Keystore / iOS Keychain). They are 
-never backed up to the database or transmitted anywhere except directly to the 
-provider.
+## Permissions
 
 ### Camera
 Camera access is used for two purposes: on-device OCR (optical character
@@ -54,31 +44,47 @@ recognition) to assist with recipe text import, and QR code scanning for
 recipe link import. No images are stored or transmitted as part of either
 process.
 
+## Credential Storage
+
+API keys and authentication tokens are encrypted and stored in your device's
+native hardware keystore (Android Keystore / iOS Keychain). They are never
+backed up to the database or transmitted anywhere except directly to the
+provider you configured.
+
 ## Network Requests
 
-The following outbound requests only occur if triggered by user action or if 
-explicitly enabled in your settings. They do not transmit personal data beyond 
-your IP address:
+The following outbound requests only occur if triggered by user action or
+explicitly enabled in settings. They do not transmit personal data beyond
+your IP address.
 
 ### App Update Check
-If enabled in settings, or when manually triggered, the app makes an 
-unauthenticated request to the GitHub API to check whether a newer version 
-is available. No personal data is transmitted. This feature is disabled by default
-and only available in the Github APK version.
+If enabled in settings, or when manually triggered, the app makes an
+unauthenticated request to the GitHub API to check whether a newer version
+is available. No personal data is transmitted. This feature is disabled by
+default and is only available in the GitHub APK version.
 
 ### URL Import Fallback
-When importing a recipe from a URL, if the original source is unavailable, the app may forward that URL to the Wayback Machine (archive.org) as a fallback. This is triggered only by a deliberate user import action.
+When importing a recipe from a URL, if the original source is unavailable,
+the app may forward that URL to the Wayback Machine (archive.org) as a
+fallback. This is triggered only by a deliberate user import action.
 
-## Donations
+## Developer Diagnostic Interface
 
-The app is free. You can sponser me on Github if you wish.
-No payment or personal data is handled by the app.
+The app contains a developer diagnostic interface that requires manual
+credential provisioning and is not accessible to end users. No user data
+is transmitted through this interface.
+
+## Support the Developer
+
+Memoix is free. GitHub Sponsors is available for those who wish to contribute.
+No payment or personal data is handled by the app. The GitHub Sponsors option
+is not present in the Play Store version of the app.
 
 ## No Data Collection
 
 The developer does not collect user data, usage statistics, or crash reports.
 Device identifiers embedded in cloud sync bundles remain within your
-configured cloud storage accounts except as described in the Supabase section above.
+configured cloud storage accounts.
 
 ## Third-Party Services
 
