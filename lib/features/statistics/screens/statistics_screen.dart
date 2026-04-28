@@ -3,7 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../models/cooking_stats.dart';
 import '../../../app/theme/colours.dart';
-import '../../../core/database/app_database.dart';
+import '../../../core/database/app_database.dart' hide Course;
 import '../../recipes/models/course.dart';
 import '../../recipes/models/cuisine.dart';
 
