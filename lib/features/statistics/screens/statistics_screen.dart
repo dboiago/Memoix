@@ -25,7 +25,8 @@ const double _cmOpacityHigh = 0.70;
 const double _cmOpacityMid  = 0.42;
 const double _cmOpacityDim  = 0.18;
 
-const double _cmChipSize    = 11.0;
+const double _cmChipSizeMin = 11.0;
+const double _cmChipSizeMax = 16.0;
 const double _cmChipSpacing = 3.0;
 const double _cmChipRadius  = 2.0;
 // ─────────────────────────────────────────────────────────────────────────────
@@ -455,31 +456,54 @@ class _CookMap extends StatelessWidget {
         ),
         borderRadius: BorderRadius.circular(12),
       ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Wrap(
-            spacing: _cmChipSpacing,
-            runSpacing: _cmChipSpacing,
-            children: List.generate(pairs.length, (i) {
-              final base    = pairs[i].$2;
-              final opacity = _brightness(filteredLogs, i);
-              return Container(
-                width: _cmChipSize,
-                height: _cmChipSize,
-                decoration: BoxDecoration(
-                  color: base.withValues(alpha: opacity),
-                  borderRadius: BorderRadius.circular(_cmChipRadius),
-                ),
-              );
-            }),
-          ),
-          const SizedBox(height: 10),
-          Align(
-            alignment: Alignment.centerRight,
-            child: const _CookMapLegend(),
-          ),
-        ],
+      child: LayoutBuilder(
+        builder: (context, constraints) {
+          const cols = 6;
+          final chipSize = ((constraints.maxWidth - _cmChipSpacing * (cols - 1)) / cols)
+              .clamp(_cmChipSizeMin, _cmChipSizeMax);
+
+          // Build rows of exactly 6 chips; final row has only remaining chips.
+          final rows = <Widget>[];
+          for (var start = 0; start < pairs.length; start += cols) {
+            final end = (start + cols).clamp(0, pairs.length);
+            rows.add(
+              Row(
+                mainAxisSize: MainAxisSize.min,
+                children: List.generate(end - start, (j) {
+                  final i      = start + j;
+                  final base   = pairs[i].$2;
+                  final opacity = _brightness(filteredLogs, i);
+                  return Padding(
+                    padding: EdgeInsets.only(
+                      right: j < end - start - 1 ? _cmChipSpacing : 0,
+                    ),
+                    child: Container(
+                      width: chipSize,
+                      height: chipSize,
+                      decoration: BoxDecoration(
+                        color: base.withValues(alpha: opacity),
+                        borderRadius: BorderRadius.circular(_cmChipRadius),
+                      ),
+                    ),
+                  );
+                }),
+              ),
+            );
+            if (end < pairs.length) rows.add(SizedBox(height: _cmChipSpacing));
+          }
+
+          return Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              ...rows,
+              const SizedBox(height: 10),
+              Align(
+                alignment: Alignment.centerRight,
+                child: const _CookMapLegend(),
+              ),
+            ],
+          );
+        },
       ),
     );
   }
