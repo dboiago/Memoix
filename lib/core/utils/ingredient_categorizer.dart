@@ -158,29 +158,33 @@ class IngredientService {
       _isInitialized = true;
     }
 
-    // Load metadata (non-blocking, best-effort)
-    await _loadMeta();
+    // FUTURE: Re-enable ingredients_meta.gz parsing when ready to implement
+    // rich metadata features (calories, allergens, dietary flags, etc.).
+    // await _loadMeta();
   }
 
   /// Loads the rich metadata file (ingredients_meta.gz).
-  /// Non-critical — app works fine without it.
+  /// Disabled at startup — re-enable via initialize() when rich metadata
+  /// features (calories, allergens, dietary flags) are ready to ship.
   Future<void> _loadMeta() async {
-    if (_metaLoaded) return;
-    try {
-      final ByteData data = await rootBundle.load('assets/ingredients/ingredients_meta.gz');
-      final List<int> bytes = data.buffer.asUint8List();
-      final decodedBytes = GZipCodec().decode(bytes);
-      final String jsonString = utf8.decode(decodedBytes);
-      final Map<String, dynamic> rawMap = json.decode(jsonString);
-
-      _metaMap = rawMap.map((key, value) =>
-        MapEntry(key, IngredientMeta.fromJson(value as Map<String, dynamic>)),);
-      _metaLoaded = true;
-    } catch (e) {
-      // Meta is optional — don't fail init
-      // ignore: prefer_single_quotes
-      debugPrint("IngredientService meta load skipped: $e");
-    }
+    // FUTURE: Uncomment the block below when ingredients_meta.gz is needed.
+    // if (_metaLoaded) return;
+    // try {
+    //   final ByteData data =
+    //       await rootBundle.load('assets/ingredients/ingredients_meta.gz');
+    //   final List<int> bytes = data.buffer.asUint8List();
+    //   final decodedBytes = GZipCodec().decode(bytes);
+    //   final String jsonString = utf8.decode(decodedBytes);
+    //   final Map<String, dynamic> rawMap = json.decode(jsonString);
+    //   _metaMap = rawMap.map(
+    //     (key, value) => MapEntry(
+    //       key, IngredientMeta.fromJson(value as Map<String, dynamic>)),
+    //   );
+    //   _metaLoaded = true;
+    // } catch (e) {
+    //   // Meta is optional — don't fail init
+    //   debugPrint('IngredientService meta load skipped: $e');
+    // }
   }
 
   /// Whether rich metadata is available.

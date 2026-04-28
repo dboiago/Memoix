@@ -875,16 +875,23 @@ class RecipeRepository {
 
   Future<List<Recipe>> getRecipesPairedWith(
       String recipeUuid,) async {
-    final all = await _db.recipeDao.getAllRecipes();
-    final matched = all.where((r) {
+    // Use a SQL LIKE filter to pre-screen rows at the DB level.
+    // Since pairedRecipeIds is stored as a JSON array (e.g. ["uuid1","uuid2"]),
+    // matching on '%"uuid"%' is safe: v4 UUIDs never contain quote characters.
+    final rows = await _db.recipeDao.getRecipesByPairedId(recipeUuid);
+    if (rows.isEmpty) return [];
+    // Secondary Dart-side check guards against the rare LIKE false-positive
+    // where a UUID appears as a substring of a longer value.
+    final matched = rows.where((r) {
       final ids =
           (jsonDecode(r.pairedRecipeIds) as List).cast<String>();
       return ids.contains(recipeUuid);
     }).toList();
-    return Future.wait(matched.map((r) async {
-      final ings = await _db.recipeDao.getIngredientsForRecipe(r.id);
-      return _toIsarRecipe(r, ings);
-    }),);
+    if (matched.isEmpty) return [];
+    // Fetch all ingredients in a single batched query, then assemble models.
+    final allIngs = await _db.recipeDao
+        .getIngredientsForRecipes(matched.map((r) => r.id));
+    return _loadRecipesFromWithIngredients(matched, allIngs);
   }
 
   Future<List<Recipe>> getRecipesByUuids(
@@ -1094,23 +1101,17 @@ class RecipeRepository {
   // ============ INGREDIENT SUGGESTIONS ============
 
   Future<List<String>> getIngredientNameSuggestions(String query) async {
-    final allRecipes = await getAllRecipes();
-
-    final historyNames = <String>{};
-    for (final recipe in allRecipes) {
-      for (final ingredient in recipe.ingredients) {
-        if (ingredient.name.isNotEmpty) {
-          historyNames.add(ingredient.name);
-        }
-      }
-    }
+    final lowerQuery = query.toLowerCase();
+    // Query ingredient names directly against the DB (LIKE + LIMIT 15).
+    // Avoids loading full Recipe models and the associated image I/O.
+    final historyNames = await _db.recipeDao
+        .searchIngredientNames(lowerQuery, limit: 15);
 
     final allNames = <String>{
       ...Suggestions.essentialIngredients,
       ...historyNames,
     };
 
-    final lowerQuery = query.toLowerCase();
     final filtered =
         allNames.where((name) => name.toLowerCase().contains(lowerQuery)).toList();
 
@@ -1128,17 +1129,11 @@ class RecipeRepository {
   }
 
   Future<List<String>> getPrepNoteSuggestions(String query) async {
-    final allRecipes = await getAllRecipes();
-
-    final historyNotes = <String>{};
-    for (final recipe in allRecipes) {
-      for (final ingredient in recipe.ingredients) {
-        if (ingredient.preparation != null &&
-            ingredient.preparation!.isNotEmpty) {
-          historyNotes.add(ingredient.preparation!);
-        }
-      }
-    }
+    final lowerQuery = query.toLowerCase();
+    // Query ingredient prep notes directly against the DB (LIKE + LIMIT 15).
+    // Avoids loading full Recipe models and the associated image I/O.
+    final historyNotes = await _db.recipeDao
+        .searchIngredientNotes(lowerQuery, limit: 15);
 
     final allNotes = <String>{
       ...Suggestions.essentialPrepNotes,
@@ -1146,7 +1141,6 @@ class RecipeRepository {
       ...historyNotes,
     };
 
-    final lowerQuery = query.toLowerCase();
     final filtered =
         allNotes.where((note) => note.toLowerCase().contains(lowerQuery)).toList();
 

@@ -26,9 +26,6 @@ import 'recipe_detail_screen.dart';
 import '../../../core/services/integrity_service.dart';
 import '../../../shared/widgets/course_icon_widget.dart';
 
-String? _selectedModernistType;
-String? _selectedSmokingType;
-
 /// Converts text fractions and decimals to unicode fraction symbols
 String _normalizeFractions(String input) {
   var result = input;
@@ -126,6 +123,11 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
 
   String _selectedCourse = 'mains';
   String? _selectedCuisine;
+  // Per-instance state for course-specific type selectors.
+  // Previously file-scope globals — moved here to prevent state leaking
+  // across navigation when switching between recipe edits.
+  String? _selectedModernistType;
+  String? _selectedSmokingType;
   String? _headerImage; // Header image - local file path or URL
   bool _isSaving = false;
   bool _isLoading = true;

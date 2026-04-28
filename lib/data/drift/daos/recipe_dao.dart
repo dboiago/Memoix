@@ -223,6 +223,56 @@ class RecipeDao extends DatabaseAccessor<AppDatabase>
   Future<int> deleteIngredient(int id) =>
       (delete(ingredients)..where((i) => i.id.equals(id))).go();
 
+  /// Returns all recipe rows where the [pairedRecipeIds] JSON array contains
+  /// [uuid]. Uses a SQL LIKE filter so only matching rows are scanned,
+  /// instead of loading the full table into Dart for in-memory filtering.
+  ///
+  /// A secondary Dart-side check in the repository guards against the rare
+  /// false-positive where a UUID appears as a substring of a longer value.
+  Future<List<Recipe>> getRecipesByPairedId(String uuid) =>
+      (select(recipes)
+            ..where((r) => r.pairedRecipeIds.like('%"$uuid"%')))
+          .get();
+
+  /// Returns up to [limit] distinct ingredient names that contain [query]
+  /// (case-insensitive). Queries the DB directly to avoid loading full
+  /// Recipe models.
+  Future<List<String>> searchIngredientNames(
+    String query, {
+    int limit = 15,
+  }) async {
+    final pattern = '%${query.toLowerCase()}%';
+    final rows = await (select(ingredients)
+          ..where((i) => i.name.lower().like(pattern))
+          ..limit(limit))
+        .get();
+    return rows
+        .map((r) => r.name)
+        .where((n) => n.isNotEmpty)
+        .toSet()
+        .toList();
+  }
+
+  /// Returns up to [limit] distinct ingredient prep notes that contain [query]
+  /// (case-insensitive). Queries the DB directly to avoid loading full
+  /// Recipe models.
+  Future<List<String>> searchIngredientNotes(
+    String query, {
+    int limit = 15,
+  }) async {
+    final pattern = '%${query.toLowerCase()}%';
+    final rows = await (select(ingredients)
+          ..where((i) => i.notes.lower().like(pattern))
+          ..limit(limit))
+        .get();
+    return rows
+        .map((r) => r.notes)
+        .whereType<String>()
+        .where((n) => n.isNotEmpty)
+        .toSet()
+        .toList();
+  }
+
   // ── Course methods ─────────────────────────────────────────────────────────
 
   Future<List<Course>> getAllCourses() =>
