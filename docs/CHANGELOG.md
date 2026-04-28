@@ -1,3 +1,27 @@
+## Memoix - v1.1.0+7 - 2026-04-28
+
+### Added
+- Implemented Android 15+ edge-to-edge system window support and free-form resizing (`resizeableActivity="true"`)
+- Complied with Google Play Store native library requirements by aligning `.so` ELF segments to 16 KB via NDK r27
+- Added database-level `LIKE` query pre-filtering for paired recipes and ingredient searches to eliminate Dart-side full table scans
+
+### Fixed
+- Resolved a critical battery drain issue where `WakelockPlus` was leaking when navigating away from the Recipe Detail screen
+- Fixed UI thread freezing during recipe autocomplete by replacing full-model loads with direct, lightweight SQLite limits
+- Fixed a state bleed bug where Modernist and Smoking configurations persisted across different recipe edit sessions
+- Resolved "0 count" UI flashes and missing SVG icons on startup by strictly gating the initialisation lifecycle and pre-caching assets
+- Fixed active search results wiping out when background database writes (like cook counts) occurred
+- Capped high-resolution network images to `cacheWidth`/`cacheHeight` to prevent excessive memory decoding on step-by-step photos
+
+### Changed
+- Massively reduced app startup time by offloading SQLite initialisation to a background isolate and deferring 10MB GZip metadata parsing
+- Optimised SQLite for mobile via `WAL` (Write-Ahead Logging) and `mmap` PRAGMAs to allow concurrent reads and bypass slow storage drives
+- Refactored home screen and list providers to memoise O(N) computations, eliminating thousands of redundant list iterations per scroll frame
+- Consolidated 15+ independent SQLite watch streams on the Home Screen into a single grouped Riverpod stream
+- Replaced N+1 sequential read-modify-write loops with atomic SQL updates (`customUpdate`) for all cook counts and favourite toggles
+- Optimised bulk recipe syncing by batching UUID checks and wrapping inserts in single transaction boundaries
+
+
 ## Memoix - v1.0.1+3 - 2026-04-24
 
 ### Added
