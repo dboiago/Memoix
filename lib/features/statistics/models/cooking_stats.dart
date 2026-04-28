@@ -24,6 +24,7 @@ class CookingStats {
   final Map<String, int> cooksByCuisine;
   final List<TopRecipe> topRecipes;
   final List<CookingLog> recentCooks;
+  final List<CookingLog> cookMapLogs;
   final int totalRecipes;
   final int distinctCuisineCount;
   final int? avgCookTimeMinutes;
@@ -37,6 +38,7 @@ class CookingStats {
     required this.cooksByCuisine,
     required this.topRecipes,
     required this.recentCooks,
+    required this.cookMapLogs,
     required this.totalRecipes,
     required this.distinctCuisineCount,
     this.avgCookTimeMinutes,
@@ -51,6 +53,7 @@ class CookingStats {
     cooksByCuisine: {},
     topRecipes: [],
     recentCooks: [],
+    cookMapLogs: [],
     totalRecipes: 0,
     distinctCuisineCount: 0,
   );
@@ -142,6 +145,7 @@ class CookingStatsService {
         cooksByCuisine: {},
         topRecipes: [],
         recentCooks: [],
+        cookMapLogs: [],
         totalRecipes: totalRecipes,
         distinctCuisineCount: distinctCuisineCount,
         avgCookTimeMinutes: avgCookTimeMinutes,
@@ -208,6 +212,12 @@ class CookingStatsService {
     // Recent cooks
     final recentLogs = await _db.cookingLogDao.getRecentStats();
 
+    // Cook map: last 48 entries sorted descending by cookedAt
+    final cookMapLogs = (List<CookingLog>.from(allLogs)
+          ..sort((a, b) => b.cookedAt.compareTo(a.cookedAt)))
+        .take(48)
+        .toList();
+
     return CookingStats(
       totalCooks: allLogs.length,
       uniqueRecipes: uniqueRecipeIds.length,
@@ -217,6 +227,7 @@ class CookingStatsService {
       cooksByCuisine: cooksByCuisine,
       topRecipes: topRecipes.take(10).toList(),
       recentCooks: recentLogs,
+      cookMapLogs: cookMapLogs,
       totalRecipes: totalRecipes,
       distinctCuisineCount: distinctCuisineCount,
       avgCookTimeMinutes: avgCookTimeMinutes,
