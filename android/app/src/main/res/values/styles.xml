@@ -16,4 +16,8 @@
         <item name="android:windowBackground">?android:colorBackground</item>
     </style>
     <color name="ic_launcher_background">#242424</color>
+    <!-- UCrop: extends NoActionBar and respects system window insets (Edge-to-Edge) -->
+    <style name="Theme.UCrop" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
 </resources>
