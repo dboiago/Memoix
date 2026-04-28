@@ -188,8 +188,12 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
   List<ShareableItem> _buildShareableItems(WidgetRef ref) {
     final items = <ShareableItem>[];
 
+    // Use ref.read instead of ref.watch — the share screen only needs a
+    // one-shot snapshot to populate the item selector. Watching these
+    // providers caused the screen to rebuild on every background DB write
+    // (cook counts, favourites, syncs), which is never useful here (L-3).
     // Recipes
-    final recipes = ref.watch(allRecipesProvider);
+    final recipes = ref.read(allRecipesProvider);
     recipes.whenData((list) {
       for (final r in list) {
         items.add(ShareableItem(
@@ -204,7 +208,7 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
     });
 
     // Pizzas
-    final pizzas = ref.watch(allPizzasProvider);
+    final pizzas = ref.read(allPizzasProvider);
     pizzas.whenData((list) {
       for (final p in list) {
         items.add(ShareableItem(
@@ -219,7 +223,7 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
     });
 
     // Sandwiches
-    final sandwiches = ref.watch(allSandwichesProvider);
+    final sandwiches = ref.read(allSandwichesProvider);
     sandwiches.whenData((list) {
       for (final s in list) {
         items.add(ShareableItem(
@@ -234,7 +238,7 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
     });
 
     // Smoking
-    final smoking = ref.watch(allSmokingRecipesProvider);
+    final smoking = ref.read(allSmokingRecipesProvider);
     smoking.whenData((list) {
       for (final s in list) {
         items.add(ShareableItem(
@@ -249,7 +253,7 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
     });
 
     // Modernist
-    final modernist = ref.watch(allModernistRecipesProvider);
+    final modernist = ref.read(allModernistRecipesProvider);
     modernist.whenData((list) {
       for (final m in list) {
         items.add(ShareableItem(
@@ -264,7 +268,7 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
     });
 
     // Cellar
-    final cellar = ref.watch(allCellarEntriesProvider);
+    final cellar = ref.read(allCellarEntriesProvider);
     cellar.whenData((list) {
       for (final c in list) {
         items.add(ShareableItem(
@@ -279,7 +283,7 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
     });
 
     // Cheese
-    final cheese = ref.watch(allCheeseEntriesProvider);
+    final cheese = ref.read(allCheeseEntriesProvider);
     cheese.whenData((list) {
       for (final c in list) {
         items.add(ShareableItem(
