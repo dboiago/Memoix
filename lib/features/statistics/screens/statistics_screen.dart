@@ -25,8 +25,7 @@ const double _cmOpacityHigh = 0.70;
 const double _cmOpacityMid  = 0.42;
 const double _cmOpacityDim  = 0.18;
 
-const double _cmChipSizeMin = 11.0;
-const double _cmChipSizeMax = 16.0;
+const double _cmChipSize    = 11.0;
 const double _cmChipSpacing = 3.0;
 const double _cmChipRadius  = 2.0;
 // ─────────────────────────────────────────────────────────────────────────────
@@ -458,11 +457,11 @@ class _CookMap extends StatelessWidget {
       ),
       child: LayoutBuilder(
         builder: (context, constraints) {
-          const cols = 6;
-          final chipSize = ((constraints.maxWidth - _cmChipSpacing * (cols - 1)) / cols)
-              .clamp(_cmChipSizeMin, _cmChipSizeMax);
+          final cols = ((constraints.maxWidth + _cmChipSpacing) ~/
+                  (_cmChipSize + _cmChipSpacing))
+              .clamp(6, 999);
 
-          // Build rows of exactly 6 chips; final row has only remaining chips.
+          // Build rows of exactly [cols] chips; final row has only remaining chips.
           final rows = <Widget>[];
           for (var start = 0; start < pairs.length; start += cols) {
             final end = (start + cols).clamp(0, pairs.length);
@@ -470,16 +469,16 @@ class _CookMap extends StatelessWidget {
               Row(
                 mainAxisSize: MainAxisSize.min,
                 children: List.generate(end - start, (j) {
-                  final i      = start + j;
-                  final base   = pairs[i].$2;
+                  final i       = start + j;
+                  final base    = pairs[i].$2;
                   final opacity = _brightness(filteredLogs, i);
                   return Padding(
                     padding: EdgeInsets.only(
                       right: j < end - start - 1 ? _cmChipSpacing : 0,
                     ),
                     child: Container(
-                      width: chipSize,
-                      height: chipSize,
+                      width: _cmChipSize,
+                      height: _cmChipSize,
                       decoration: BoxDecoration(
                         color: base.withValues(alpha: opacity),
                         borderRadius: BorderRadius.circular(_cmChipRadius),
@@ -497,10 +496,7 @@ class _CookMap extends StatelessWidget {
             children: [
               ...rows,
               const SizedBox(height: 10),
-              Align(
-                alignment: Alignment.centerRight,
-                child: const _CookMapLegend(),
-              ),
+              const _CookMapLegend(),
             ],
           );
         },
@@ -519,32 +515,36 @@ class _CookMapLegend extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme   = Theme.of(context);
     final neutral = theme.colorScheme.secondary;
+    // Use a slightly smaller font on narrow screens so the legend fits in one line.
+    final legendFontSize = MediaQuery.sizeOf(context).width < 400 ? 10.0 : 12.0;
 
-    return Wrap(
-      spacing: 8,
-      runSpacing: 4,
-      crossAxisAlignment: WrapCrossAlignment.center,
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.end,
       children: List.generate(_labels.length, (i) {
-        return Row(
-          mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Container(
-              width: 10,
-              height: 10,
-              decoration: BoxDecoration(
-                color: neutral.withValues(alpha: _opacities[i]),
-                borderRadius: BorderRadius.circular(2),
+        return Padding(
+          padding: EdgeInsets.only(left: i > 0 ? 8 : 0),
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Container(
+                width: 8,
+                height: 8,
+                decoration: BoxDecoration(
+                  color: neutral.withValues(alpha: _opacities[i]),
+                  borderRadius: BorderRadius.circular(2),
+                ),
               ),
-            ),
-            const SizedBox(width: 4),
-            Text(
-              i < _labels.length - 1 ? '${_labels[i]} ·' : _labels[i],
-              style: theme.textTheme.bodySmall?.copyWith(
-                color: theme.colorScheme.onSurfaceVariant,
+              const SizedBox(width: 4),
+              Text(
+                i < _labels.length - 1 ? '${_labels[i]} ·' : _labels[i],
+                style: theme.textTheme.bodySmall?.copyWith(
+                  fontSize: legendFontSize,
+                  color: theme.colorScheme.onSurfaceVariant,
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         );
       }),
     );
