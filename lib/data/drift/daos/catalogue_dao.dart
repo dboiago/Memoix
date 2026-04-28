@@ -198,10 +198,13 @@ class CatalogueDao extends DatabaseAccessor<AppDatabase>
   }
 
   Future<void> incrementSandwichCookCount(int id) async {
-    final sandwich = await getSandwichById(id);
-    if (sandwich == null) return;
-    await (update(sandwiches)..where((t) => t.id.equals(id)))
-        .write(SandwichesCompanion(cookCount: Value(sandwich.cookCount + 1)));
+    // Single atomic increment — no read required.
+    await customUpdate(
+      'UPDATE sandwiches SET cook_count = cook_count + 1 WHERE id = ?',
+      variables: [Variable.withInt(id)],
+      updates: {sandwiches},
+      updateKind: UpdateKind.update,
+    );
   }
 
   Future<int> updateSandwichRating(int id, int rating) =>

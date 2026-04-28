@@ -382,7 +382,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
         icon: const Icon(Icons.check_circle_outline),
         tooltip: 'I made this',
         onPressed: () {
-          ref.read(modernistRepositoryProvider).incrementCookCount(recipe.id);
+          ref.read(modernistRepositoryProvider).incrementCookCount(recipe);
           ref.invalidate(modernistRecipeProvider(widget.recipeId));
           MemoixSnackBar.showLoggedCook(
             recipeName: recipe.name,
@@ -1131,7 +1131,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
   }
 
   void _logCook(BuildContext context, ModernistRecipe recipe) {
-    ref.read(modernistRepositoryProvider).incrementCookCount(recipe.id);
+    ref.read(modernistRepositoryProvider).incrementCookCount(recipe);
     ref.invalidate(modernistRecipeProvider(widget.recipeId));
     MemoixSnackBar.showLoggedCook(
       recipeName: recipe.name,

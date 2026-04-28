@@ -166,7 +166,7 @@ class _ModernistCardState extends ConsumerState<ModernistCard> {
                     ),
                     color: theme.colorScheme.onSurfaceVariant,
                     onPressed: () {
-                      ref.read(modernistRepositoryProvider).incrementCookCount(recipe.id);
+                      ref.read(modernistRepositoryProvider).incrementCookCount(recipe);
                       MemoixSnackBar.showLoggedCook(
                         recipeName: recipe.name,
                         onViewStats: () => AppRoutes.toStatistics(context),

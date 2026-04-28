@@ -123,6 +123,17 @@ class PizzaRepository {
   /// Increment cook count
   Future<void> incrementCookCount(Pizza pizza) async {
     await _db.catalogueDao.incrementPizzaCookCount(pizza.id);
+    // Write a cooking log entry so the Stats page aggregates this cook.
+    // The stats provider watches cooking_logs exclusively — without this entry
+    // the pizza cook is invisible to all stats (cooksByCourse, topRecipes, etc.).
+    // course = 'pizzas' to group with the Pizzas course; cuisine is null
+    // because pizzas don't carry a cuisine field.
+    await _ref.read(cookingStatsServiceProvider).logCook(
+      recipeId: pizza.uuid,
+      recipeName: pizza.name,
+      course: 'pizzas',
+      cuisine: null,
+    );
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
   }
 

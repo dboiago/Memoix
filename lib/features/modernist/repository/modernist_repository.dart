@@ -274,7 +274,8 @@ class ModernistRepository {
   }
 
   /// Increment cook count
-  Future<void> incrementCookCount(int id) async {
+  Future<void> incrementCookCount(ModernistRecipe recipe) async {
+    final id = recipe.id;
     final existing = await _db.recipeDao.getRecipeById(id);
     if (existing == null) return;
     await _db.recipeDao.saveRecipe(RecipesCompanion(
@@ -323,6 +324,15 @@ class ModernistRepository {
       scienceNotes: Value(existing.scienceNotes),
       equipmentJson: Value(existing.equipmentJson),
     ),);
+    // Write a cooking log entry so the Stats page aggregates this cook.
+    // The stats provider watches cooking_logs exclusively — without this entry
+    // the modernist recipe cook is invisible to all stats.
+    await _ref.read(cookingStatsServiceProvider).logCook(
+      recipeId: recipe.uuid,
+      recipeName: recipe.name,
+      course: recipe.course,
+      cuisine: null,
+    );
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
   }
 

@@ -68,10 +68,13 @@ class SmokingDao extends DatabaseAccessor<AppDatabase>
   }
 
   Future<void> incrementCookCount(int id) async {
-    final recipe = await getRecipeById(id);
-    if (recipe == null) return;
-    await (update(smokingRecipes)..where((t) => t.id.equals(id)))
-        .write(SmokingRecipesCompanion(cookCount: Value(recipe.cookCount + 1)));
+    // Single atomic increment — no read required.
+    await customUpdate(
+      'UPDATE smoking_recipes SET cook_count = cook_count + 1 WHERE id = ?',
+      variables: [Variable.withInt(id)],
+      updates: {smokingRecipes},
+      updateKind: UpdateKind.update,
+    );
   }
 
   Stream<List<SmokingRecipe>> watchAll() =>

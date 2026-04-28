@@ -124,6 +124,15 @@ class SandwichRepository {
   /// Increment cook count
   Future<void> incrementCookCount(Sandwich sandwich) async {
     await _db.catalogueDao.incrementSandwichCookCount(sandwich.id);
+    // Write a cooking log entry so the Stats page aggregates this cook.
+    // The stats provider watches cooking_logs exclusively — without this entry
+    // the sandwich cook is invisible to all stats (cooksByCourse, topRecipes, etc.).
+    await _ref.read(cookingStatsServiceProvider).logCook(
+      recipeId: sandwich.uuid,
+      recipeName: sandwich.name,
+      course: 'sandwiches',
+      cuisine: null,
+    );
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
   }
 

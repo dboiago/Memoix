@@ -138,8 +138,18 @@ class SmokingRepository {
   }
 
   /// Increment cook count
-  Future<void> incrementCookCount(SmokingRecipe recipe) =>
-      _db.smokingDao.incrementCookCount(recipe.id);
+  Future<void> incrementCookCount(SmokingRecipe recipe) async {
+    await _db.smokingDao.incrementCookCount(recipe.id);
+    // Write a cooking log entry so the Stats page aggregates this cook.
+    // The stats provider watches cooking_logs exclusively — without this entry
+    // the smoking recipe cook is invisible to all stats.
+    await _ref.read(cookingStatsServiceProvider).logCook(
+      recipeId: recipe.uuid,
+      recipeName: recipe.name,
+      course: 'smoking',
+      cuisine: null,
+    );
+  }
 
   /// Watch all recipes
   Stream<List<SmokingRecipe>> watchAll() => _db.smokingDao.watchAll();
