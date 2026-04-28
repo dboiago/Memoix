@@ -25,7 +25,7 @@ const double _cmOpacityHigh = 0.70;
 const double _cmOpacityMid  = 0.42;
 const double _cmOpacityDim  = 0.18;
 
-const double _cmChipSize    = 20.0;
+const int    _cmChipsPerRow = 16;
 const double _cmChipSpacing = 4.0;
 const double _cmChipRadius  = 4.0;
 // ─────────────────────────────────────────────────────────────────────────────
@@ -436,6 +436,7 @@ class _CookMap extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     final pairs = <(CookingLog, Color)>[];
     for (final log in logs) {
       final colour = _resolveColour(log);
@@ -446,28 +447,45 @@ class _CookMap extends StatelessWidget {
 
     final filteredLogs = pairs.map((p) => p.$1).toList();
 
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Wrap(
-          spacing: _cmChipSpacing,
-          runSpacing: _cmChipSpacing,
-          children: List.generate(pairs.length, (i) {
-            final base    = pairs[i].$2;
-            final opacity = _brightness(filteredLogs, i);
-            return Container(
-              width: _cmChipSize,
-              height: _cmChipSize,
-              decoration: BoxDecoration(
-                color: base.withValues(alpha: opacity),
-                borderRadius: BorderRadius.circular(_cmChipRadius),
-              ),
-            );
-          }),
+    return Container(
+      padding: const EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        border: Border.all(
+          color: theme.colorScheme.outline.withValues(alpha: 0.2),
         ),
-        const SizedBox(height: 10),
-        const _CookMapLegend(),
-      ],
+        borderRadius: BorderRadius.circular(12),
+      ),
+      child: LayoutBuilder(
+        builder: (context, constraints) {
+          final chipWidth = (constraints.maxWidth -
+                  _cmChipSpacing * (_cmChipsPerRow - 1)) /
+              _cmChipsPerRow;
+          final chipHeight = chipWidth * 1.25;
+          return Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Wrap(
+                spacing: _cmChipSpacing,
+                runSpacing: _cmChipSpacing,
+                children: List.generate(pairs.length, (i) {
+                  final base    = pairs[i].$2;
+                  final opacity = _brightness(filteredLogs, i);
+                  return Container(
+                    width: chipWidth,
+                    height: chipHeight,
+                    decoration: BoxDecoration(
+                      color: base.withValues(alpha: opacity),
+                      borderRadius: BorderRadius.circular(_cmChipRadius),
+                    ),
+                  );
+                }),
+              ),
+              const SizedBox(height: 10),
+              const _CookMapLegend(),
+            ],
+          );
+        },
+      ),
     );
   }
 }
@@ -486,6 +504,7 @@ class _CookMapLegend extends StatelessWidget {
     return Wrap(
       spacing: 8,
       runSpacing: 4,
+      alignment: WrapAlignment.end,
       crossAxisAlignment: WrapCrossAlignment.center,
       children: List.generate(_labels.length, (i) {
         return Row(
