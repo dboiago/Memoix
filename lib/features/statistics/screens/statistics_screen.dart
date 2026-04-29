@@ -429,27 +429,40 @@ class _CookMap extends StatelessWidget {
     }
   }
 
-  /// Opacity level based on time delta to the nearest neighbouring chip.
-  static double _brightness(List<CookingLog> filtered, int index) {
-    final t = filtered[index].cookedAt;
-    final prev = index > 0
-        ? t.difference(filtered[index - 1].cookedAt).abs()
-        : null;
-    final next = index < filtered.length - 1
-        ? t.difference(filtered[index + 1].cookedAt).abs()
-        : null;
+  /// Opacity level based on rolling velocity (KDE) of cooking frequency.
+  static double _calculateVelocityHeat(List<CookingLog> sortedLogs, int targetIndex) {
+    final targetTime = sortedLogs[targetIndex].cookedAt;
+    double totalScore = 0.0;
 
-    final Duration minDelta;
-    if (prev != null && next != null) {
-      minDelta = prev < next ? prev : next;
-    } else {
-      minDelta = prev ?? next ?? const Duration(days: 9999);
+    // Helper to calculate the decay weight for a given log
+    void addWeight(CookingLog log) {
+      // Use minutes / 1440.0 to get beautifully smooth fractional days
+      final daysDistance = log.cookedAt.difference(targetTime).abs().inMinutes / 1440.0;
+      totalScore += 1.0 / (1.0 + daysDistance);
     }
 
-    if (minDelta <= _cmThresholdSession) return _cmOpacityFull;
-    if (minDelta <= _cmThresholdDay)     return _cmOpacityHigh;
-    if (minDelta <= _cmThresholdWeek)    return _cmOpacityMid;
-    return _cmOpacityDim;
+    // 1. Add self (always adds exactly 1.0)
+    addWeight(sortedLogs[targetIndex]);
+
+    // 2. Walk backwards (past) until we hit the 7-day cutoff
+    for (int i = targetIndex - 1; i >= 0; i--) {
+      if (targetTime.difference(sortedLogs[i].cookedAt).inDays > 7) break;
+      addWeight(sortedLogs[i]);
+    }
+
+    // 3. Walk forwards (future) until we hit the 7-day cutoff
+    for (int i = targetIndex + 1; i < sortedLogs.length; i++) {
+      if (sortedLogs[i].cookedAt.difference(targetTime).inDays > 7) break;
+      addWeight(sortedLogs[i]);
+    }
+
+    // Map the continuous score back to your strict aesthetic opacity tiers.
+    // NOTE: You will likely need to adjust these magic numbers once you 
+    // have real usage data, but these are great starting thresholds.
+    if (totalScore >= 3.5) return _cmOpacityFull; 
+    if (totalScore >= 2.2) return _cmOpacityHigh;
+    if (totalScore >= 1.4) return _cmOpacityMid;  
+    return _cmOpacityDim; 
   }
 
   @override
@@ -463,62 +476,88 @@ class _CookMap extends StatelessWidget {
 
     if (pairs.isEmpty) return const SizedBox.shrink();
 
-    final filteredLogs = pairs.map((p) => p.$1).toList();
+    // 1. Calculate responsive dimensions
+    final screenWidth = MediaQuery.sizeOf(context).width;
+    
+    // Take 75% of screen, but cap it between 310 (mobile) and 1000 (desktop max)
+    // so it doesn't get absurdly wide on an ultrawide monitor.
+    final double mapMaxWidth = (screenWidth * 0.75).clamp(310.0, 1000.0);
+    
+    // Container padding is 16 on each side (32 total)
+    final double availableWidth = mapMaxWidth - 32.0;
+    
+    // 2. Calculate exactly how many chips we need to fill 3 solid rows
+    final double footprintPerChip = _cmChipSize + _cmChipSpacing;
+    final int chipsPerRow = (availableWidth / footprintPerChip).floor();
+    final int desiredChipCount = chipsPerRow * 3;
 
-    return Container(
-      padding: const EdgeInsets.all(16),
-      decoration: BoxDecoration(
-        border: Border.all(
-          color: theme.colorScheme.outline.withValues(alpha: 0.2),
-        ),
-        borderRadius: BorderRadius.circular(12),
-      ),
-      child: LayoutBuilder(
-        builder: (context, constraints) {
-          final cols = ((constraints.maxWidth + _cmChipSpacing) ~/
-                  (_cmChipSize + _cmChipSpacing))
-              .clamp(6, 999);
+    // 3. Slice the data dynamically
+    final int takeCount = pairs.length > desiredChipCount 
+        ? desiredChipCount 
+        : pairs.length;
+        
+    final recentPairs = pairs.sublist(pairs.length - takeCount);
+    final recentLogs = recentPairs.map((p) => p.$1).toList();
 
-          // Build rows of exactly [cols] chips; final row has only remaining chips.
-          final rows = <Widget>[];
-          for (var start = 0; start < pairs.length; start += cols) {
-            final end = (start + cols).clamp(0, pairs.length);
-            rows.add(
-              Row(
-                mainAxisSize: MainAxisSize.min,
-                children: List.generate(end - start, (j) {
-                  final i       = start + j;
-                  final base    = pairs[i].$2;
-                  final opacity = _brightness(filteredLogs, i);
-                  return Padding(
-                    padding: EdgeInsets.only(
-                      right: j < end - start - 1 ? _cmChipSpacing : 0,
-                    ),
-                    child: Container(
-                      width: _cmChipSize,
-                      height: _cmChipSize,
-                      decoration: BoxDecoration(
-                        color: base.withValues(alpha: opacity),
-                        borderRadius: BorderRadius.circular(_cmChipRadius),
-                      ),
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        // 1. Container padding is 16 on each side (32 total).
+        // We subtract that from the parent's constraints to get the true canvas width.
+        final double availableWidth = constraints.maxWidth - 32.0;
+        
+        // 2. Calculate exactly how many chips fit in one row, then multiply by 3 rows.
+        final double footprintPerChip = _cmChipSize + _cmChipSpacing;
+        final int chipsPerRow = (availableWidth / footprintPerChip).floor();
+        
+        // Ensure we don't calculate negative or zero chips on weird window resizes
+        final int safeChipsPerRow = chipsPerRow > 0 ? chipsPerRow : 1; 
+        final int desiredChipCount = safeChipsPerRow * 3;
+
+        // 3. Slice the data dynamically based on the screen width
+        final int takeCount = pairs.length > desiredChipCount 
+            ? desiredChipCount 
+            : pairs.length;
+            
+        final recentPairs = pairs.sublist(pairs.length - takeCount);
+        final recentLogs = recentPairs.map((p) => p.$1).toList();
+
+        // No more Center() widget! 
+        return Container(
+          width: double.infinity, // Stretch to match the containers above it
+          padding: const EdgeInsets.all(16),
+          decoration: BoxDecoration(
+            border: Border.all(
+              color: theme.colorScheme.outline.withValues(alpha: 0.2),
+            ),
+            borderRadius: BorderRadius.circular(12),
+          ),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Wrap(
+                spacing: _cmChipSpacing,
+                runSpacing: _cmChipSpacing,
+                children: List.generate(recentPairs.length, (i) {
+                  final base = recentPairs[i].$2;
+                  final opacity = _calculateVelocityHeat(recentLogs, i);
+
+                  return Container(
+                    width: _cmChipSize,
+                    height: _cmChipSize,
+                    decoration: BoxDecoration(
+                      color: base.withValues(alpha: opacity),
+                      borderRadius: BorderRadius.circular(_cmChipRadius),
                     ),
                   );
                 }),
               ),
-            );
-            if (end < pairs.length) rows.add(SizedBox(height: _cmChipSpacing));
-          }
-
-          return Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              ...rows,
-              const SizedBox(height: 10),
+              const SizedBox(height: 16),
               const _CookMapLegend(),
             ],
-          );
-        },
-      ),
+          ),
+        );
+      },
     );
   }
 }
@@ -526,45 +565,42 @@ class _CookMap extends StatelessWidget {
 class _CookMapLegend extends StatelessWidget {
   const _CookMapLegend();
 
-  static const _labels   = ['Same meal', 'Same day', 'Same week', 'Older'];
-  static const _opacities = [_cmOpacityFull, _cmOpacityHigh, _cmOpacityMid, _cmOpacityDim];
+  static const _opacities = [
+    _cmOpacityDim,
+    _cmOpacityMid,
+    _cmOpacityHigh,
+    _cmOpacityFull,
+  ];
 
   @override
   Widget build(BuildContext context) {
-    final theme   = Theme.of(context);
+    final theme = Theme.of(context);
     final neutral = theme.colorScheme.secondary;
-    // Use a slightly smaller font on narrow screens so the legend fits in one line.
-    final legendFontSize = MediaQuery.sizeOf(context).width < 400 ? 10.0 : 12.0;
+    
+    final textStyle = theme.textTheme.bodySmall?.copyWith(
+      fontSize: 10.0,
+      color: theme.colorScheme.onSurfaceVariant,
+    );
 
     return Row(
       mainAxisAlignment: MainAxisAlignment.end,
-      children: List.generate(_labels.length, (i) {
-        return Padding(
-          padding: EdgeInsets.only(left: i > 0 ? 8 : 0),
-          child: Row(
-            mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Container(
-                width: 8,
-                height: 8,
-                decoration: BoxDecoration(
-                  color: neutral.withValues(alpha: _opacities[i]),
-                  borderRadius: BorderRadius.circular(2),
-                ),
-              ),
-              const SizedBox(width: 4),
-              Text(
-                i < _labels.length - 1 ? '${_labels[i]} ·' : _labels[i],
-                style: theme.textTheme.bodySmall?.copyWith(
-                  fontSize: legendFontSize,
-                  color: theme.colorScheme.onSurfaceVariant,
-                ),
-              ),
-            ],
+      children: [
+        Text('Light', style: textStyle),
+        const SizedBox(width: 6),
+        ..._opacities.map((op) => Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 2.0),
+          child: Container(
+            width: 8,
+            height: 8,
+            decoration: BoxDecoration(
+              color: neutral.withValues(alpha: op),
+              borderRadius: BorderRadius.circular(2),
+            ),
           ),
-        );
-      }),
+        )),
+        const SizedBox(width: 6),
+        Text('Heavy', style: textStyle),
+      ],
     );
   }
 }
