@@ -74,7 +74,7 @@ class _AppDrawerState extends ConsumerState<AppDrawer> {
                   ),
                   const SizedBox(height: 4),
                   Text(
-                    'For savv(ou)ry minds',
+                    'For sav(vour)y minds',
                     style: theme.textTheme.bodySmall?.copyWith(
                       color: theme.colorScheme.outline,
                     ),

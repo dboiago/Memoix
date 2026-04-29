@@ -246,12 +246,12 @@ class _DesignNotesScreenState extends ConsumerState<DesignNotesScreen> {
                         fontStyle: FontStyle.italic,
                       ),
                       children: [
-                        const TextSpan(text: 'For savv'),
+                        const TextSpan(text: 'For sav'),
                         TextSpan(
-                          text: '(ou)',
+                          text: '(vour)',
                           recognizer: _allowLegacyInput ? _ouRecognizer : null,
                         ),
-                        const TextSpan(text: 'ry minds.'),
+                        const TextSpan(text: 'y minds'),
                       ],
                     ),
                   ),

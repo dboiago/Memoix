@@ -484,7 +484,7 @@ class SettingsScreen extends ConsumerWidget {
           fit: BoxFit.contain,
         ),
       ),
-      applicationLegalese: '© 2024-2025 Devon Boiago\n\n'
+      applicationLegalese: '© 2024-2026 Devon Boiago\n\n'
           'Licensed under PolyForm Noncommercial 1.0.0.\n'
           'Free for personal and educational use.',
       children: [
