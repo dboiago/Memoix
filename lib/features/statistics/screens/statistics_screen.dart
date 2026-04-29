@@ -585,7 +585,7 @@ class _CookMapLegend extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.end,
       children: [
-        Text('Light', style: textStyle),
+        Text('Quiet', style: textStyle),
         const SizedBox(width: 6),
         ..._opacities.map((op) => Padding(
           padding: const EdgeInsets.symmetric(horizontal: 2.0),
@@ -599,7 +599,7 @@ class _CookMapLegend extends StatelessWidget {
           ),
         )),
         const SizedBox(width: 6),
-        Text('Heavy', style: textStyle),
+        Text('Busy', style: textStyle),
       ],
     );
   }
