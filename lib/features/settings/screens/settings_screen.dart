@@ -1,6 +1,8 @@
 import 'dart:async';
+import 'dart:io';
 
 import 'package:audioplayers/audioplayers.dart';
+import 'package:path_provider/path_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:package_info_plus/package_info_plus.dart';
@@ -11,6 +13,7 @@ import '../../../core/services/memoix_recipe_service.dart';
 import '../../../core/services/integrity_service.dart';
 import '../../../core/services/supabase_auth_service.dart';
 import '../../../core/services/supabase_sync_service.dart';
+import '../../../core/services/supabase_secure_storage.dart';
 import '../../../config/app_config.dart';
 import '../../../core/services/update_service.dart';
 import '../../../core/database/database.dart';
@@ -19,6 +22,15 @@ import '../../../core/providers.dart';
 import '../../../core/widgets/update_available_dialog.dart';
 import '../services/recipe_backup_service.dart';
 import '../../recipes/repository/recipe_repository.dart';
+import '../../pizzas/repository/pizza_repository.dart';
+import '../../sandwiches/repository/sandwich_repository.dart';
+import '../../smoking/repository/smoking_repository.dart';
+import '../../modernist/repository/modernist_repository.dart';
+import '../../cheese/repository/cheese_repository.dart';
+import '../../cellar/repository/cellar_repository.dart';
+import '../../ai/ai_settings_provider.dart';
+import '../../ai/services/ai_key_storage.dart';
+import '../../statistics/models/cooking_stats.dart';
 import '../../../app/routes/router.dart';
 
 /// Provider for app preferences
@@ -570,10 +582,73 @@ class SettingsScreen extends ConsumerWidget {
             onPressed: () async {
               Navigator.pop(ctx);
               await MemoixDatabase.clearAll();
-              // Invalidate all data providers to refresh UI
+
+              // Delete on-disk image directories (recreated on demand via create(recursive: true))
+              final appDir = await getApplicationDocumentsDirectory();
+              for (final dirName in const [
+                'recipe_images',
+                'cellar_images',
+                'cheese_images',
+                'pizza_images',
+                'sandwich_images',
+                'smoking_images',
+                'modernist_images',
+              ]) {
+                final dir = Directory('${appDir.path}/$dirName');
+                if (await dir.exists()) await dir.delete(recursive: true);
+              }
+
+              // Clear AI provider API keys and Supabase auth session from secure storage
+              await AiKeyStorage.clearAll();
+              await const SupabaseSecureStorage().removePersistedSession();
+
+              // Clear cloud and sync SharedPreferences keys
+              final prefs = await SharedPreferences.getInstance();
+              for (final key in const [
+                'personal_storage_provider_id',
+                'personal_storage_path',
+                'drive_repositories',
+                'google_drive_connected',
+                'google_drive_folder_id',
+                'google_drive_folder_path',
+                'google_drive_access_token',
+                'google_drive_refresh_token',
+                'google_drive_token_expiry',
+                'supabase_sync_recipes',
+                'supabase_sync_ingredients',
+                'supabase_sync_pizzas',
+                'supabase_sync_sandwiches',
+                'supabase_sync_cellar_entries',
+                'supabase_sync_cheese_entries',
+                'supabase_sync_smoking_recipes',
+                'supabase_sync_courses',
+                'supabase_sync_scratch_pads',
+                'supabase_sync_user_entity_prefs',
+                'supabase_sync_meal_plans',
+                'supabase_sync_shopping_lists',
+                'supabase_sync_recipe_drafts',
+                'supabase_sync_cooking_logs',
+                'supabase_sync_recipe_images',
+              ]) {
+                await prefs.remove(key);
+              }
+
+              // Invalidate all domain providers to reflect the empty DB
               ref.invalidate(coursesProvider);
               ref.invalidate(allRecipesProvider);
               ref.invalidate(availableCuisinesProvider);
+              ref.invalidate(allPizzasProvider);
+              ref.invalidate(allSandwichesProvider);
+              ref.invalidate(allSmokingRecipesProvider);
+              ref.invalidate(allModernistRecipesProvider);
+              ref.invalidate(allCheeseEntriesProvider);
+              ref.invalidate(allCellarEntriesProvider);
+              ref.invalidate(shoppingListsProvider);
+              ref.invalidate(shoppingItemsProvider);
+              ref.invalidate(mealPlanServiceProvider);
+              ref.invalidate(aiSettingsProvider);
+              ref.invalidate(cookingStatsProvider);
+
               MemoixSnackBar.show('All data cleared');
             },
             child: const Text('Clear All'),

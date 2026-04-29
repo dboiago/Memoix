@@ -80,6 +80,7 @@ class MemoixDatabase {
       await db.delete(db.recipeDrafts).go();
       await db.delete(db.cheeseEntries).go();
       await db.delete(db.cellarEntries).go();
+      await db.delete(db.recipeImages).go();
     });
     await _seedDefaultCourses();
   }
