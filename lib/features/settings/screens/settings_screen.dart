@@ -490,8 +490,8 @@ class SettingsScreen extends ConsumerWidget {
       children: [
         const SizedBox(height: 24),
         const Text(
-          'A recipe and food reference app for people who cook seriously.\n\n'
-          'Flexible by design. Offline by default.',
+          'An offline-first recipe and culinary reference app built for real cooking.\n\n'
+          'For sav(vour)y minds.',
           style: TextStyle(fontSize: 14),
         ),
       ],
