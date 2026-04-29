@@ -1231,7 +1231,9 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
       recipeId: recipe.uuid,
       recipeName: recipe.name,
       course: recipe.course,
-      cuisine: recipe.cuisine,
+      cuisine: recipe.course?.toLowerCase() == 'drinks'
+          ? recipe.subcategory
+          : recipe.cuisine,
     );
     if (!mounted) return;
     ref.invalidate(cookingStatsProvider);

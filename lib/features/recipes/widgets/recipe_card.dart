@@ -231,7 +231,9 @@ class _RecipeCardState extends ConsumerState<RecipeCard> {
                       recipeId: widget.recipe.uuid,
                       recipeName: widget.recipe.name,
                       course: widget.recipe.course,
-                      cuisine: widget.recipe.cuisine,
+                      cuisine: widget.recipe.course?.toLowerCase() == 'drinks'
+                          ? widget.recipe.subcategory
+                          : widget.recipe.cuisine,
                     );
                     MemoixSnackBar.showLoggedCook(
                       recipeName: widget.recipe.name,

@@ -408,10 +408,8 @@ class _CookMap extends StatelessWidget {
     final cuisine = log.recipeCuisine;
     switch (course) {
       case 'drinks':
-        // subcategory (spirit) is not stored in CookingLog; use cuisine as the
-        // continent-dot fallback, mirroring the card's own fallback behaviour.
         if (cuisine == null || cuisine.trim().isEmpty) return null;
-        return MemoixColors.forContinentDot(cuisine);
+        return MemoixColors.forSpiritDot(cuisine);
       case 'modernist':
         if (cuisine == null) return null;
         return MemoixColors.forModernistType(cuisine);
