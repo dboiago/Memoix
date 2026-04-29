@@ -331,7 +331,7 @@ class ModernistRepository {
       recipeId: recipe.uuid,
       recipeName: recipe.name,
       course: recipe.course,
-      cuisine: null,
+      cuisine: recipe.type.name,
     );
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
   }

@@ -127,11 +127,16 @@ class SandwichRepository {
     // Write a cooking log entry so the Stats page aggregates this cook.
     // The stats provider watches cooking_logs exclusively — without this entry
     // the sandwich cook is invisible to all stats (cooksByCourse, topRecipes, etc.).
+    final proteins = (jsonDecode(sandwich.proteins) as List).cast<String>();
+    final cheeses  = (jsonDecode(sandwich.cheeses)  as List).cast<String>();
+    final dotKey   = proteins.isNotEmpty
+        ? proteins.first
+        : (cheeses.isNotEmpty ? 'cheese' : null);
     await _ref.read(cookingStatsServiceProvider).logCook(
       recipeId: sandwich.uuid,
       recipeName: sandwich.name,
       course: 'sandwiches',
-      cuisine: null,
+      cuisine: dotKey,
     );
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
   }

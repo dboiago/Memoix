@@ -147,7 +147,7 @@ class SmokingRepository {
       recipeId: recipe.uuid,
       recipeName: recipe.name,
       course: 'smoking',
-      cuisine: null,
+      cuisine: recipe.category,
     );
   }
 

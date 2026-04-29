@@ -405,10 +405,27 @@ class _CookMap extends StatelessWidget {
   static Color? _resolveColour(CookingLog log) {
     final course = log.recipeCourse?.toLowerCase().trim();
     if (course == null) return null;
-    if (course == 'drinks') return null;
     final cuisine = log.recipeCuisine;
-    if (cuisine == null || cuisine.trim().isEmpty) return null;
-    return MemoixColors.forContinentDot(cuisine);
+    switch (course) {
+      case 'drinks':
+        return null; // subcategory not stored in CookingLog
+      case 'modernist':
+        if (cuisine == null) return null;
+        return MemoixColors.forModernistType(cuisine);
+      case 'sandwiches':
+        if (cuisine == null) return null;
+        if (cuisine == 'cheese') return MemoixColors.cheese;
+        return MemoixColors.forProteinDot(cuisine);
+      case 'pizzas':
+        if (cuisine == null || cuisine.trim().isEmpty) return null;
+        return MemoixColors.forPizzaBaseDot(cuisine);
+      case 'smoking':
+        if (cuisine == null) return null;
+        return MemoixColors.forSmokedItemDot(cuisine);
+      default:
+        if (cuisine == null || cuisine.trim().isEmpty) return null;
+        return MemoixColors.forContinentDot(cuisine);
+    }
   }
 
   /// Opacity level based on time delta to the nearest neighbouring chip.

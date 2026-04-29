@@ -132,7 +132,7 @@ class PizzaRepository {
       recipeId: pizza.uuid,
       recipeName: pizza.name,
       course: 'pizzas',
-      cuisine: null,
+      cuisine: pizza.base,
     );
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
   }
