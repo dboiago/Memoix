@@ -160,21 +160,45 @@ final appInitProvider = FutureProvider<void>((ref) async {
   ]);
 });
 
+/// A minimal [AssetBundle] that holds pre-loaded [ByteData] values with no
+/// internal [Future] fields, making it fully sendable across Dart isolates.
+///
+/// [PlatformAssetBundle] (i.e. [rootBundle]) caches its load results as live
+/// [Future] objects. Dart's isolate message-passing rejects anything that
+/// transitively contains a [Future], which causes flutter_svg's [compute]
+/// call inside [SvgLoader._load] to throw in AOT/release builds.  By
+/// pre-loading the raw bytes here and handing them to [SvgAssetLoader] via
+/// this bundle, the [SvgLoaderMessage] that travels through [compute] only
+/// carries sendable types ([String], [ByteData], and this class).
+class _SendableAssetBundle extends AssetBundle {
+  _SendableAssetBundle(this._data);
+  final Map<String, ByteData> _data;
+
+  @override
+  Future<ByteData> load(String key) {
+    final data = _data[key];
+    if (data == null) throw FlutterError('Asset not in preloaded bundle: $key');
+    return SynchronousFuture(data);
+  }
+}
+
 /// Pre-populates flutter_svg's svg.cache for the app logo and every course
-/// icon SVG. Using SvgAssetLoader with explicit assetBundle: rootBundle
-/// allows cacheKey(null) to work safely without a BuildContext, and produces
-/// a key identical to the one SvgPicture.asset() generates at render time
-/// (because DefaultAssetBundle.of(context) returns rootBundle in a standard
-/// Flutter app). The pre-loaded Future<ByteData> is already resolved by the
-/// time the first frame builds, so SvgPicture's FutureBuilder receives bytes
-/// synchronously and the icon paints on frame 1 with no async gap.
+/// icon SVG. Raw bytes are loaded from [rootBundle] on the main isolate first,
+/// then wrapped in [_SendableAssetBundle] so [SvgAssetLoader] can safely pass
+/// the loader through [compute] in AOT/release mode.  The cache key produced
+/// by [SvgAssetLoader.cacheKey] only depends on the asset path, so it is
+/// identical to the key used by [SvgPicture.asset] at render time.
 Future<void> _warmSvgAssets() async {
   const logo = 'assets/images/memoix_logo.svg';
   final paths = <String>[logo, ...CourseIconWidget.svgAssets.values];
   await Future.wait(
     paths.map((path) async {
       try {
-        final loader = SvgAssetLoader(path, assetBundle: rootBundle);
+        final bytes = await rootBundle.load(path);
+        final loader = SvgAssetLoader(
+          path,
+          assetBundle: _SendableAssetBundle({path: bytes}),
+        );
         await svg.cache.putIfAbsent(
           loader.cacheKey(null),
           () => loader.loadBytes(null),
