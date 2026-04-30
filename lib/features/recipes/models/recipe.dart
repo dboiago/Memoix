@@ -1,5 +1,7 @@
 
 
+import 'package:uuid/uuid.dart';
+
 /// Source of the recipe
 enum RecipeSource {
   memoix,    // From the official Memoix collection (GitHub)
@@ -200,8 +202,12 @@ class Recipe {
     };
     course = courseMapping[course] ?? course;
 
+    // Guard against null or empty UUIDs from legacy Isar exports.
+    final rawUuid = json['uuid']?.toString() ?? '';
+    final resolvedUuid = rawUuid.isEmpty ? const Uuid().v4() : rawUuid;
+
     final recipe = Recipe()
-      ..uuid = json['uuid']?.toString() ?? ''
+      ..uuid = resolvedUuid
       ..name = json['name']?.toString() ?? ''
       ..course = course
       ..cuisine = json['cuisine']?.toString()
@@ -245,7 +251,8 @@ class Recipe {
           []
       ..source = RecipeSource.values.firstWhere(
         (e) => e.name == json['source'],
-        orElse: () => RecipeSource.memoix,
+        // Default to personal — un-tagged or unrecognised source strings belong to the user.
+        orElse: () => RecipeSource.personal,
       )
       ..colorValue = json['colorValue'] as int?
       ..isFavorite = json['isFavorite'] as bool? ?? false
@@ -263,7 +270,13 @@ class Recipe {
               ?.map((e) => e.toString())
               .toList() ??
           []
-      ..pickleMethod = json['pickleMethod']?.toString();
+      ..pickleMethod = json['pickleMethod']?.toString()
+      ..continent = json['continent']?.toString()
+      ..country = json['country']?.toString()
+      ..editCount = json['editCount'] as int? ?? 0
+      ..modernistType = json['modernistType']?.toString()
+      ..smokingType = json['smokingType']?.toString()
+      ..recipeType = json['recipeType']?.toString() ?? 'standard';
 
     if (json['createdAt'] != null) {
       recipe.createdAt = DateTime.parse(json['createdAt'].toString()).toUtc();
@@ -273,6 +286,12 @@ class Recipe {
     }
     if (json['lastCookedAt'] != null) {
       recipe.lastCookedAt = DateTime.parse(json['lastCookedAt'].toString()).toUtc();
+    }
+    if (json['firstEditAt'] != null) {
+      recipe.firstEditAt = DateTime.parse(json['firstEditAt'].toString()).toUtc();
+    }
+    if (json['lastEditAt'] != null) {
+      recipe.lastEditAt = DateTime.parse(json['lastEditAt'].toString()).toUtc();
     }
 
     return recipe;

@@ -178,7 +178,7 @@ class RecipeBackupService {
         if (existing != null) {
           // Update version to trigger merge
           recipe.version = existing.version + 1;
-          recipe.id = existing.id; // Keep the same Isar ID
+          recipe.id = existing.id; // Supply the local Drift PK so saveRecipe() performs an UPDATE, not an INSERT.
         }
         
         await _recipeRepository.saveRecipe(recipe);
