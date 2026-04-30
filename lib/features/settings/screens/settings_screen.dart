@@ -318,7 +318,21 @@ class SettingsScreen extends ConsumerWidget {
                     }
                   },
           ),
-          if (!isPlayStore)
+          if (isPlayStore)
+            ListTile(
+              leading: const Icon(Icons.system_update),
+              title: const Text('Check for App Updates'),
+              subtitle: const Text('View the latest version on the Play Store'),
+              onTap: () async {
+                final uri = Uri.parse(
+                  'https://play.google.com/store/apps/details?id=io.github.dboiago.memoix',
+                );
+                if (await canLaunchUrl(uri)) {
+                  await launchUrl(uri, mode: LaunchMode.externalApplication);
+                }
+              },
+            )
+          else
             ListTile(
               leading: const Icon(Icons.system_update),
               title: const Text('Check for App Updates'),
