@@ -1775,7 +1775,7 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
           .map((row) => row.controller.text.trim())
           .toList();
 
-      // Build step image map as strings for Isar
+      // Build step image map as serialised strings for database storage
       final stepImageMapStrings = _stepImageMap.entries
           .map((e) => '${e.key}:${e.value}')
           .toList();

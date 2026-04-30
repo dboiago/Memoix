@@ -272,7 +272,7 @@ class ModernistRecipe {
   List<String> stepImages = [];
 
   /// Map of step index to image index in stepImages
-  /// Stored as "stepIndex:imageIndex" strings for Isar compatibility
+  /// Stored as "stepIndex:imageIndex" strings for database serialisation
   List<String> stepImageMap = [];
 
   /// Legacy: Image URL or local path (deprecated, use headerImage)

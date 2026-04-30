@@ -76,7 +76,7 @@ class Recipe {
   List<String> stepImages = [];
 
   /// Map of step index to image index in stepImages
-  /// Stored as "stepIndex:imageIndex" strings for Isar compatibility
+  /// Stored as "stepIndex:imageIndex" strings for database serialisation
   List<String> stepImageMap = [];
 
   /// Where this recipe came from
@@ -202,7 +202,7 @@ class Recipe {
     };
     course = courseMapping[course] ?? course;
 
-    // Guard against null or empty UUIDs from legacy Isar exports.
+    // Guard against null or empty UUIDs from legacy exports (pre-Drift migration).
     final rawUuid = json['uuid']?.toString() ?? '';
     final resolvedUuid = rawUuid.isEmpty ? const Uuid().v4() : rawUuid;
 

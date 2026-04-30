@@ -2376,7 +2376,7 @@ abstract class SupabaseSyncService {
     // individually and insert.
     // Collect IDs of recipes that received new images this pull cycle.
     // After the loop, a no-op DB write fires SQLite's update hook so that
-    // Drift streams re-emit, _toIsarRecipe re-runs, finds the newly written
+    // Drift streams re-emit, _toDomainRecipe re-runs, finds the newly written
     // cache file, and image widgets refresh without a restart.
     final refreshRecipeIds = <int>{};
 

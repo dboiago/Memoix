@@ -9,7 +9,7 @@ import '../../features/recipes/models/course.dart' as domainModels;
 import 'app_database.dart';
 
 /// Compatibility bridge for callers that still reference MemoixDatabase.
-/// The Isar-based implementation has been replaced by [AppDatabase] (Drift).
+/// All data is persisted via [AppDatabase] (Drift/SQLite).
 /// Migrate callers directly to [AppDatabase] when possible.
 class MemoixDatabase {
   MemoixDatabase._();

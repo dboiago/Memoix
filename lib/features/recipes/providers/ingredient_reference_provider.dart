@@ -1,7 +1,7 @@
 /// Root-scoped cache for AI ingredient reference results.
 ///
 /// Survives navigation — scoped to the app root, NOT to a detail screen.
-/// Session lifetime only — no Isar or SharedPreferences persistence.
+/// Session lifetime only — no database or SharedPreferences persistence.
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../services/ingredient_reference_service.dart';

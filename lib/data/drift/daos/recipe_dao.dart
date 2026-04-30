@@ -175,8 +175,7 @@ class RecipeDao extends DatabaseAccessor<AppDatabase>
 
   /// Returns a stream of recipes filtered by [course] (case-insensitive).
   ///
-  /// The Isar implementation sorted results by continent → country →
-  /// subcategory → name inside a `.map()` on the stream. That sort is
+  /// Sorting by continent → country → subcategory → name is
   /// presentation/business logic and is intentionally omitted here; apply it
   /// in the repository or provider layer.
   Stream<List<Recipe>> watchRecipesByCourse(String course) =>

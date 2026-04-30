@@ -1,6 +1,6 @@
 PolyForm Noncommercial License 1.0.0
 
-Copyright (c) 2024-2025 Devon Boiago
+Copyright (c) 2024-2026 Devon Boiago
 
 1. Rights Granted
 
@@ -38,27 +38,13 @@ SOFTWARE.
 
 THIRD PARTY NOTICES
 
-This software includes components and libraries governed by separate license
-terms. The following components are used in this software:
+This software includes components and libraries governed by separate open-source 
+license terms. 
 
-1. Flutter (BSD-3-Clause)
-   Copyright 2014 The Flutter Authors. All rights reserved.
+Rather than maintaining a static list here, all third-party dependencies and 
+their respective licenses are dynamically tracked. 
 
-2. Isar Database (Apache License 2.0)
-   Copyright 2024 Simon Leier.
-   Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
-   http://www.apache.org/licenses/LICENSE-2.0
-
-3. Flutter Riverpod (MIT License)
-   Copyright 2020 Remi Rousselet.
-
-4. Google Fonts (OFL-1.1)
-   Copyright 2024 The Google Fonts Project Authors.
-
-5. Google ML Kit (Apache License 2.0)
-   Copyright 2020 Google LLC.
-
-For a full list of dependencies and their licenses, please refer to the
-pubspec.yaml file in the source repository.
+For a complete and up-to-date list of dependencies, please refer to the 
+`pubspec.yaml` file in the source repository. The full license text for all 
+bundled third-party software can be viewed inside the Memoix application by 
+navigating to the "View Licenses" section.

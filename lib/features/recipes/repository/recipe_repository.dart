@@ -383,7 +383,7 @@ class RecipeRepository {
         .toList();
   }
 
-  Future<Recipe> _toIsarRecipe(db.Recipe r, List<db.Ingredient> ings) async {
+  Future<Recipe> _toDomainRecipe(db.Recipe r, List<db.Ingredient> ings) async {
     final recipe = Recipe()
       ..id = r.id
       ..uuid = r.uuid
@@ -675,7 +675,7 @@ class RecipeRepository {
     final results = await Future.wait(rows.map((r) async {
       try {
         final ings = await _db.recipeDao.getIngredientsForRecipe(r.id);
-        return await _toIsarRecipe(r, ings);
+        return await _toDomainRecipe(r, ings);
       } catch (e) {
         debugPrint('RecipeRepository: skipping recipe ${r.id} (${r.name}): $e');
         return null;
@@ -753,14 +753,14 @@ class RecipeRepository {
     final row = await _db.recipeDao.getRecipeById(id);
     if (row == null) return null;
     final ings = await _db.recipeDao.getIngredientsForRecipe(id);
-    return _toIsarRecipe(row, ings);
+    return _toDomainRecipe(row, ings);
   }
 
   Future<Recipe?> getRecipeByUuid(String uuid) async {
     final row = await _db.recipeDao.getRecipeByUuid(uuid);
     if (row == null) return null;
     final ings = await _db.recipeDao.getIngredientsForRecipe(row.id);
-    return _toIsarRecipe(row, ings);
+    return _toDomainRecipe(row, ings);
   }
 
   Future<int> saveRecipe(Recipe recipe, {bool preserveTimestamp = false}) async {
@@ -929,7 +929,7 @@ class RecipeRepository {
     }
     final results = await Future.wait(rows.map((r) async {
       try {
-        return await _toIsarRecipe(r, grouped[r.id] ?? []);
+        return await _toDomainRecipe(r, grouped[r.id] ?? []);
       } catch (e) {
         debugPrint('RecipeRepository._loadRecipesFromWithIngredients: '
             'skipping ${r.id} (${r.name}): $e');

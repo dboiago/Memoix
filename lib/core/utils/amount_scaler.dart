@@ -233,7 +233,7 @@ class AmountScaler {
 
   /// Scale [rawAmount] by [factor] and return a human-readable string.
   ///
-  /// [rawAmount] is the unmodified `Ingredient.amount` as stored in Isar.
+  /// [rawAmount] is the unmodified `Ingredient.amount` as stored in the database.
   ///
   /// [unit] is the ingredient's unit (e.g. `"tsp"`, `"C"`, `null`).
   /// Used to determine the appropriate snap grid and whether escalation
