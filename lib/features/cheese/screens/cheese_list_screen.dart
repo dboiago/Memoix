@@ -21,7 +21,7 @@ class CheeseListScreen extends ConsumerStatefulWidget {
 }
 
 class _CheeseListScreenState extends ConsumerState<CheeseListScreen> {
-  String? _selectedMilk;
+  final Set<String> _selectedMilks = {};
   String _searchQuery = '';
 
   @override
@@ -106,20 +106,34 @@ class _CheeseListScreenState extends ConsumerState<CheeseListScreen> {
   }
 
   Widget _buildFilterChip(String? milk, int count) {
+    final isSelected = milk == null
+        ? _selectedMilks.isEmpty
+        : _selectedMilks.contains(milk);
+
     return MemoixFilterChip(
       value: milk,
-      isSelected: _selectedMilk == milk,
-      onSelected: (selected) {
-        setState(() => _selectedMilk = selected ? milk : null);
+      isSelected: isSelected,
+      onSelected: (_) {
+        setState(() {
+          if (milk == null) {
+            _selectedMilks.clear();
+          } else {
+            if (_selectedMilks.contains(milk)) {
+              _selectedMilks.remove(milk);
+            } else {
+              _selectedMilks.add(milk);
+            }
+          }
+        });
       },
     );
   }
 
   Widget _buildEntryList(List<CheeseEntry> allEntries, bool isCompact) {
     // Filter by milk
-    var entries = _selectedMilk == null
+    var entries = _selectedMilks.isEmpty
         ? allEntries
-        : allEntries.where((e) => e.milk == _selectedMilk).toList();
+        : allEntries.where((e) => e.milk != null && _selectedMilks.contains(e.milk)).toList();
 
     // Filter by search query
     if (_searchQuery.isNotEmpty) {
@@ -139,8 +153,8 @@ class _CheeseListScreenState extends ConsumerState<CheeseListScreen> {
       return MemoixEmptyState(
         message: _searchQuery.isNotEmpty
             ? 'No entries match your search'
-            : _selectedMilk != null
-                ? 'No entries with $_selectedMilk milk'
+            : _selectedMilks.isNotEmpty
+                ? 'No entries match selected filters'
                 : 'No cheese entries yet',
       );
     }
