@@ -169,7 +169,7 @@ final appInitProvider = FutureProvider<void>((ref) async {
 /// time the first frame builds, so SvgPicture's FutureBuilder receives bytes
 /// synchronously and the icon paints on frame 1 with no async gap.
 Future<void> _warmSvgAssets() async {
-  const logo = 'assets/images/memoix-appicon-orange-1200.svg';
+  const logo = 'assets/images/memoix_logo.svg';
   final paths = <String>[logo, ...CourseIconWidget.svgAssets.values];
   await Future.wait(
     paths.map((path) async {

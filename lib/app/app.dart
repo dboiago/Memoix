@@ -45,7 +45,7 @@ class MemoixApp extends ConsumerWidget {
           backgroundColor: const Color(0xFF242424),
           body: Center(
             child: SvgPicture.asset(
-              'assets/images/memoix-appicon-orange-1200.svg',
+              'assets/images/memoix_logo.svg',
               width: 220,
             ),
           ),
