@@ -34,10 +34,9 @@ const _specializedDomains = {
 /// Loads bundled Memoix recipe assets and seeds them into the local database.
 ///
 /// All methods read from `assets/recipes/` via [rootBundle] — no network
-/// requests are made. Each domain method is called once at startup (and
-/// whenever the user triggers a manual refresh) by [syncRecipesProvider] /
-/// [SyncNotifier]. Insertion is idempotent: the repository layer skips any
-/// recipe whose UUID already exists in Drift.
+/// requests are made. Called by [LocalDataSeeder] during startup. Insertion
+/// is idempotent: the repository layer skips any recipe whose UUID already
+/// exists in Drift.
 class MemoixRecipeService {
   /// Loads all standard recipes from bundled asset files.
   ///
@@ -211,12 +210,7 @@ final MemoixRecipeServiceProvider = Provider<MemoixRecipeService>((ref) {
   return MemoixRecipeService();
 });
 
-/// Provider to sync all data (recipes + specialized domains).
-/// Delegates to [syncNotifierProvider] so the parallel execution logic
-/// lives in a single place ([SyncNotifier.sync]).
-final syncRecipesProvider = FutureProvider<void>((ref) async {
-  await ref.read(syncNotifierProvider.notifier).sync();
-});
+
 
 /// Seed pizzas — insert only if UUID is not already present.
 Future<void> _syncPizzas(PizzaRepository repo, List<Pizza> pizzas) async {
@@ -295,8 +289,14 @@ Future<void> _syncCellarEntries(
   }
 }
 
-/// Sync state notifier for UI feedback
-class SyncNotifier extends StateNotifier<AsyncValue<void>> {
+/// Silent background utility that seeds all bundled Memoix content into the
+/// local Drift database. Contains the parallel [Future.wait] execution logic
+/// previously held by the UI-coupled `SyncNotifier`.
+///
+/// Call [seedDatabase] from startup sequences. It is safe to call multiple
+/// times — every underlying repository method is idempotent (insert-if-absent
+/// by UUID).
+class LocalDataSeeder {
   final MemoixRecipeService _service;
   final RecipeRepository _recipeRepo;
   final PizzaRepository _pizzaRepo;
@@ -306,7 +306,7 @@ class SyncNotifier extends StateNotifier<AsyncValue<void>> {
   final CheeseRepository _cheeseRepo;
   final CellarRepository _cellarRepo;
 
-  SyncNotifier(
+  LocalDataSeeder(
     this._service,
     this._recipeRepo,
     this._pizzaRepo,
@@ -315,31 +315,23 @@ class SyncNotifier extends StateNotifier<AsyncValue<void>> {
     this._modernistRepo,
     this._cheeseRepo,
     this._cellarRepo,
-  ) : super(const AsyncValue.data(null));
+  );
 
-  Future<void> sync() async {
-    state = const AsyncValue.loading();
-    try {
-      // Sync all domains in parallel
-      await Future.wait([
-        _service.fetchAllRecipes().then((recipes) => _recipeRepo.syncMemoixRecipes(recipes)),
-        _service.fetchPizzas().then((pizzas) => _syncPizzas(_pizzaRepo, pizzas)),
-        _service.fetchSandwiches().then((sandwiches) => _syncSandwiches(_sandwichRepo, sandwiches)),
-        _service.fetchSmokingRecipes().then((recipes) => _syncSmokingRecipes(_smokingRepo, recipes)),
-        _service.fetchModernistRecipes().then((recipes) => _syncModernistRecipes(_modernistRepo, recipes)),
-        _service.fetchCheeseEntries().then((entries) => _syncCheeseEntries(_cheeseRepo, entries)),
-        _service.fetchCellarEntries().then((entries) => _syncCellarEntries(_cellarRepo, entries)),
-      ]);
-      
-      state = const AsyncValue.data(null);
-    } catch (e, st) {
-      state = AsyncValue.error(e, st);
-    }
+  Future<void> seedDatabase() async {
+    await Future.wait([
+      _service.fetchAllRecipes().then((recipes) => _recipeRepo.syncMemoixRecipes(recipes)),
+      _service.fetchPizzas().then((pizzas) => _syncPizzas(_pizzaRepo, pizzas)),
+      _service.fetchSandwiches().then((sandwiches) => _syncSandwiches(_sandwichRepo, sandwiches)),
+      _service.fetchSmokingRecipes().then((recipes) => _syncSmokingRecipes(_smokingRepo, recipes)),
+      _service.fetchModernistRecipes().then((recipes) => _syncModernistRecipes(_modernistRepo, recipes)),
+      _service.fetchCheeseEntries().then((entries) => _syncCheeseEntries(_cheeseRepo, entries)),
+      _service.fetchCellarEntries().then((entries) => _syncCellarEntries(_cellarRepo, entries)),
+    ]);
   }
 }
 
-final syncNotifierProvider = StateNotifierProvider<SyncNotifier, AsyncValue<void>>((ref) {
-  return SyncNotifier(
+final localDataSeederProvider = Provider<LocalDataSeeder>((ref) {
+  return LocalDataSeeder(
     ref.watch(MemoixRecipeServiceProvider),
     ref.watch(recipeRepositoryProvider),
     ref.watch(pizzaRepositoryProvider),

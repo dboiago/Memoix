@@ -172,13 +172,10 @@ class _DeepLinkWrapperState extends ConsumerState<_DeepLinkWrapper>
           return;
         }
 
-        // 3. New version detected: run sync and persist the new version on success.
-        final syncNotifier = ref.read(syncNotifierProvider.notifier);
-        final currentState = ref.read(syncNotifierProvider);
-        if (!currentState.isLoading) {
-          await syncNotifier.sync();
-          await prefs.setInt('memoix_recipe_sync_version', bundledVersion);
-        }
+        // 3. New version detected: run seed and persist the new version on success.
+        final seeder = ref.read(localDataSeederProvider);
+        await seeder.seedDatabase();
+        await prefs.setInt('memoix_recipe_sync_version', bundledVersion);
       } catch (e) {
         debugPrint('Background sync failed: $e');
       }

@@ -108,7 +108,7 @@ final appInitProvider = FutureProvider<void>((ref) async {
   //    On subsequent launches allRecipesProvider has data immediately and
   //    the if-block is skipped entirely, so startup time is unaffected.
   //
-  //    After sync() completes:
+  //    After seedDatabase() completes:
   //      • The bundled version is persisted so _performBackgroundSync() in
   //        app.dart sees the version as already current and skips re-running
   //        the 500+ UUID existence-check loop on this launch.
@@ -116,7 +116,7 @@ final appInitProvider = FutureProvider<void>((ref) async {
   //        with post-sync data, not the empty-list snapshot from before sync.
   final initialRecipes = await ref.read(allRecipesProvider.future);
   if (initialRecipes.isEmpty) {
-    await ref.read(syncNotifierProvider.notifier).sync();
+    await ref.read(localDataSeederProvider).seedDatabase();
 
     // Persist bundled version so _performBackgroundSync skips this launch.
     try {
