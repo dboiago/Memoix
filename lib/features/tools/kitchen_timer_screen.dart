@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../shared/widgets/time_picker_column.dart';
+import '../../shared/widgets/memoix_filter_chip.dart';
 import 'timer_service.dart';
 
 // Leaving the truth of one to capture it in another
@@ -205,25 +206,10 @@ class _TimerInputDialogState extends State<_TimerInputDialog> {
             Wrap(
               spacing: 8,
               children: TimerSound.values.map((sound) {
-                final isSelected = _selectedSound == sound;
-                return FilterChip(
-                  label: Text(sound.displayName),
-                  selected: isSelected,
+                return MemoixFilterChip(
+                  value: sound.displayName,
+                  isSelected: _selectedSound == sound,
                   onSelected: (_) => setState(() => _selectedSound = sound),
-                  backgroundColor: theme.colorScheme.surfaceContainerHighest,
-                  selectedColor: theme.colorScheme.secondary.withValues(alpha: 0.15),
-                  showCheckmark: false,
-                  side: BorderSide(
-                    color: isSelected
-                        ? theme.colorScheme.secondary
-                        : theme.colorScheme.outline.withValues(alpha: 0.2),
-                    width: isSelected ? 1.5 : 1.0,
-                  ),
-                  labelStyle: TextStyle(
-                    color: isSelected
-                        ? theme.colorScheme.secondary
-                        : theme.colorScheme.onSurface,
-                  ),
                 );
               }).toList(),
             ),
@@ -377,25 +363,10 @@ class _TimerEditDialogState extends State<_TimerEditDialog> {
             Wrap(
               spacing: 8,
               children: TimerSound.values.map((sound) {
-                final isSelected = _selectedSound == sound;
-                return FilterChip(
-                  label: Text(sound.displayName),
-                  selected: isSelected,
+                return MemoixFilterChip(
+                  value: sound.displayName,
+                  isSelected: _selectedSound == sound,
                   onSelected: (_) => setState(() => _selectedSound = sound),
-                  backgroundColor: theme.colorScheme.surfaceContainerHighest,
-                  selectedColor: theme.colorScheme.secondary.withValues(alpha: 0.15),
-                  showCheckmark: false,
-                  side: BorderSide(
-                    color: isSelected
-                        ? theme.colorScheme.secondary
-                        : theme.colorScheme.outline.withValues(alpha: 0.2),
-                    width: isSelected ? 1.5 : 1.0,
-                  ),
-                  labelStyle: TextStyle(
-                    color: isSelected
-                        ? theme.colorScheme.secondary
-                        : theme.colorScheme.onSurface,
-                  ),
                 );
               }).toList(),
             ),

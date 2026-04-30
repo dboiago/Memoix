@@ -5,6 +5,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
 import '../../../shared/widgets/memoix_empty_state.dart';
+import '../../../shared/widgets/memoix_filter_chip.dart';
+import '../../../shared/widgets/memoix_search_bar.dart';
 import '../../settings/screens/settings_screen.dart';
 import '../../../core/database/app_database.dart';
 import '../models/sandwich.dart';
@@ -94,30 +96,19 @@ class _SandwichListScreenState extends ConsumerState<SandwichListScreen> {
                     setState(() => _searchQuery = selection.toLowerCase());
                   },
                   fieldViewBuilder: (context, textController, focusNode, onFieldSubmitted) {
-                    return TextField(
+                    return MemoixSearchBar(
+                      hintText: 'Search sandwiches...',
                       controller: textController,
                       focusNode: focusNode,
-                      decoration: InputDecoration(
-                        hintText: 'Search sandwiches...',
-                        hintStyle: TextStyle(color: theme.colorScheme.onSurfaceVariant),
-                        prefixIcon: Icon(Icons.search, color: theme.colorScheme.onSurfaceVariant),
-                        suffixIcon: textController.text.isNotEmpty
-                            ? IconButton(
-                                icon: Icon(Icons.clear, color: theme.colorScheme.onSurfaceVariant),
-                                onPressed: () {
-                                  textController.clear();
-                                  setState(() => _searchQuery = '');
-                                },
-                              )
-                            : null,
-                        filled: true,
-                        fillColor: theme.colorScheme.surfaceContainerHighest,
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(12),
-                          borderSide: BorderSide.none,
-                        ),
-                      ),
-                      style: TextStyle(color: theme.colorScheme.onSurfaceVariant),
+                      suffixIcon: textController.text.isNotEmpty
+                          ? IconButton(
+                              icon: Icon(Icons.clear, color: theme.colorScheme.onSurfaceVariant),
+                              onPressed: () {
+                                textController.clear();
+                                setState(() => _searchQuery = '');
+                              },
+                            )
+                          : null,
                       onChanged: (value) {
                         setState(() => _searchQuery = value.toLowerCase());
                       },
@@ -318,28 +309,10 @@ class _SandwichListScreenState extends ConsumerState<SandwichListScreen> {
     required ThemeData theme,
     required ValueChanged<bool> onSelected,
   }) {
-    return Padding(
-      padding: const EdgeInsets.only(right: 8),
-      child: FilterChip(
-        label: Text(label),
-        selected: isSelected,
-        onSelected: onSelected,
-        backgroundColor: theme.colorScheme.surfaceContainerHighest,
-        selectedColor: theme.colorScheme.secondary.withValues(alpha: 0.15),
-        showCheckmark: false,
-        side: BorderSide(
-          color: isSelected
-              ? theme.colorScheme.secondary
-              : theme.colorScheme.outline.withValues(alpha: 0.2),
-          width: isSelected ? 1.5 : 1.0,
-        ),
-        labelStyle: TextStyle(
-          fontSize: 13,
-          color: isSelected
-              ? theme.colorScheme.secondary
-              : theme.colorScheme.onSurface,
-        ),
-      ),
+    return MemoixFilterChip(
+      value: label == 'All' ? null : label,
+      isSelected: isSelected,
+      onSelected: onSelected,
     );
   }
 

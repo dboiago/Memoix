@@ -7,6 +7,8 @@ import '../../../app/routes/router.dart';
 import '../../../core/providers.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
 import '../../../shared/widgets/memoix_empty_state.dart';
+import '../../../shared/widgets/memoix_filter_chip.dart';
+import '../../../shared/widgets/memoix_search_bar.dart';
 import '../../mealplan/models/meal_plan.dart';
 import '../../settings/screens/settings_screen.dart';
 import '../models/course.dart';
@@ -163,30 +165,19 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
                     setState(() => _searchQuery = selection.toLowerCase());
                   },
                   fieldViewBuilder: (context, textController, focusNode, onFieldSubmitted) {
-                    return TextField(
+                    return MemoixSearchBar(
+                      hintText: 'Search recipes...',
                       controller: textController,
                       focusNode: focusNode,
-                      decoration: InputDecoration(
-                        hintText: 'Search recipes...',
-                        hintStyle: TextStyle(color: theme.colorScheme.onSurfaceVariant),
-                        prefixIcon: Icon(Icons.search, color: theme.colorScheme.onSurfaceVariant),
-                        suffixIcon: textController.text.isNotEmpty
-                            ? IconButton(
-                                icon: Icon(Icons.clear, color: theme.colorScheme.onSurfaceVariant),
-                                onPressed: () {
-                                  textController.clear();
-                                  setState(() => _searchQuery = '');
-                                },
-                              )
-                            : null,
-                        filled: true,
-                        fillColor: theme.colorScheme.surfaceContainerHighest,
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(12),
-                          borderSide: BorderSide.none,
-                        ),
-                      ),
-                      style: TextStyle(color: theme.colorScheme.onSurfaceVariant),
+                      suffixIcon: textController.text.isNotEmpty
+                          ? IconButton(
+                              icon: Icon(Icons.clear, color: theme.colorScheme.onSurfaceVariant),
+                              onPressed: () {
+                                textController.clear();
+                                setState(() => _searchQuery = '');
+                              },
+                            )
+                          : null,
                       onChanged: (value) {
                         setState(() => _searchQuery = value.toLowerCase());
                       },
@@ -368,49 +359,26 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
 
   Widget _buildCuisineChip(String cuisineLabel, int count, {String? rawValue, bool isAllChip = false}) {
     final value = rawValue ?? cuisineLabel;
-    final theme = Theme.of(context);
-    
-    // "All" is selected when no cuisines are selected
-    final isSelected = isAllChip 
-        ? _selectedCuisines.isEmpty 
+    final isSelected = isAllChip
+        ? _selectedCuisines.isEmpty
         : _selectedCuisines.contains(value);
-    
-    return Padding(
-      padding: const EdgeInsets.only(right: 8),
-      child: FilterChip(
-        label: Text(cuisineLabel),
-        selected: isSelected,
-        onSelected: (selected) {
-          setState(() {
-            if (isAllChip) {
-              // Clicking "All" clears all selections
-              _selectedCuisines.clear();
+
+    return MemoixFilterChip(
+      value: isAllChip ? null : cuisineLabel,
+      isSelected: isSelected,
+      onSelected: (selected) {
+        setState(() {
+          if (isAllChip) {
+            _selectedCuisines.clear();
+          } else {
+            if (_selectedCuisines.contains(value)) {
+              _selectedCuisines.remove(value);
             } else {
-              // Toggle this cuisine
-              if (_selectedCuisines.contains(value)) {
-                _selectedCuisines.remove(value);
-              } else {
-                _selectedCuisines.add(value);
-              }
+              _selectedCuisines.add(value);
             }
-          });
-        },
-        backgroundColor: theme.colorScheme.surfaceContainerHighest,
-        selectedColor: theme.colorScheme.secondary.withValues(alpha: 0.15),
-        showCheckmark: false,
-        side: BorderSide(
-          color: isSelected 
-              ? theme.colorScheme.secondary 
-              : theme.colorScheme.outline.withValues(alpha: 0.2),
-          width: isSelected ? 1.5 : 1.0,
-        ),
-        labelStyle: TextStyle(
-          fontSize: 13,
-          color: isSelected 
-              ? theme.colorScheme.secondary 
-              : theme.colorScheme.onSurface,
-        ),
-      ),
+          }
+        });
+      },
     );
   }
 

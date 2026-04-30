@@ -21,6 +21,7 @@ import '../../cellar/repository/cellar_repository.dart';
 import '../../cheese/repository/cheese_repository.dart';
 import '../../sharing/services/share_service.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
+import '../../../shared/widgets/memoix_filter_chip.dart';
 
 /// Unified shareable item wrapper for all model types
 class ShareableItem {
@@ -423,30 +424,12 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
   }
 
   Widget _buildFilterChip(String label, ThemeData theme) {
-    final isSelected = _selectedCategory == label;
-    return Padding(
-      padding: const EdgeInsets.only(right: 8),
-      child: FilterChip(
-        label: Text(label),
-        selected: isSelected,
-        onSelected: (selected) {
-          setState(() => _selectedCategory = label);
-        },
-        backgroundColor: theme.colorScheme.surfaceContainerHighest,
-        selectedColor: theme.colorScheme.secondary.withValues(alpha: 0.15),
-        showCheckmark: false,
-        side: BorderSide(
-          color: isSelected
-              ? theme.colorScheme.secondary
-              : theme.colorScheme.outline.withValues(alpha: 0.2),
-          width: isSelected ? 1.5 : 1.0,
-        ),
-        labelStyle: TextStyle(
-          color: isSelected
-              ? theme.colorScheme.secondary
-              : theme.colorScheme.onSurface,
-        ),
-      ),
+    return MemoixFilterChip(
+      value: label == 'All' ? null : label,
+      isSelected: _selectedCategory == label,
+      onSelected: (_) {
+        setState(() => _selectedCategory = label);
+      },
     );
   }
 

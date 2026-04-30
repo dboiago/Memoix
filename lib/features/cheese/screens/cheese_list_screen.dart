@@ -5,6 +5,8 @@ import '../../../app/routes/router.dart';
 import '../../../core/database/app_database.dart';
 import '../../../core/utils/collection_utils.dart';
 import '../../../shared/widgets/memoix_empty_state.dart';
+import '../../../shared/widgets/memoix_filter_chip.dart';
+import '../../../shared/widgets/memoix_search_bar.dart';
 import '../../settings/screens/settings_screen.dart';
 import '../models/cheese_entry.dart';
 import '../repository/cheese_repository.dart';
@@ -62,19 +64,8 @@ class _CheeseListScreenState extends ConsumerState<CheeseListScreen> {
               // Search bar
               Padding(
                 padding: const EdgeInsets.all(16.0),
-                child: TextField(
-                  decoration: InputDecoration(
-                    hintText: 'Search cheese...',
-                    hintStyle: TextStyle(color: theme.colorScheme.onSurfaceVariant),
-                    prefixIcon: Icon(Icons.search, color: theme.colorScheme.onSurfaceVariant),
-                    filled: true,
-                    fillColor: theme.colorScheme.surfaceContainerHighest,
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(12),
-                      borderSide: BorderSide.none,
-                    ),
-                  ),
-                  style: TextStyle(color: theme.colorScheme.onSurfaceVariant),
+                child: MemoixSearchBar(
+                  hintText: 'Search cheese...',
                   onChanged: (value) {
                     setState(() => _searchQuery = value.toLowerCase());
                   },
@@ -115,34 +106,12 @@ class _CheeseListScreenState extends ConsumerState<CheeseListScreen> {
   }
 
   Widget _buildFilterChip(String? milk, int count) {
-    final isSelected = _selectedMilk == milk;
-    final theme = Theme.of(context);
-    final label = milk ?? 'All';
-
-    return Padding(
-      padding: const EdgeInsets.only(right: 8),
-      child: FilterChip(
-        label: Text(label),
-        selected: isSelected,
-        onSelected: (selected) {
-          setState(() => _selectedMilk = selected ? milk : null);
-        },
-        backgroundColor: theme.colorScheme.surfaceContainerHighest,
-        selectedColor: theme.colorScheme.secondary.withValues(alpha: 0.15),
-        showCheckmark: false,
-        side: BorderSide(
-          color: isSelected
-              ? theme.colorScheme.secondary
-              : theme.colorScheme.outline.withValues(alpha: 0.2),
-          width: isSelected ? 1.5 : 1.0,
-        ),
-        labelStyle: TextStyle(
-          fontSize: 13,
-          color: isSelected
-              ? theme.colorScheme.secondary
-              : theme.colorScheme.onSurface,
-        ),
-      ),
+    return MemoixFilterChip(
+      value: milk,
+      isSelected: _selectedMilk == milk,
+      onSelected: (selected) {
+        setState(() => _selectedMilk = selected ? milk : null);
+      },
     );
   }
 

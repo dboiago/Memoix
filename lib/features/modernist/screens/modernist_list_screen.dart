@@ -3,6 +3,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
 import '../../../shared/widgets/memoix_empty_state.dart';
+import '../../../shared/widgets/memoix_filter_chip.dart';
+import '../../../shared/widgets/memoix_search_bar.dart';
 import '../../settings/screens/settings_screen.dart';
 import '../models/modernist_recipe.dart';
 import '../repository/modernist_repository.dart';
@@ -77,30 +79,19 @@ class _ModernistListScreenState extends ConsumerState<ModernistListScreen> {
                     setState(() => _searchQuery = selection.toLowerCase());
                   },
                   fieldViewBuilder: (context, textController, focusNode, onFieldSubmitted) {
-                    return TextField(
+                    return MemoixSearchBar(
+                      hintText: 'Search recipes...',
                       controller: textController,
                       focusNode: focusNode,
-                      decoration: InputDecoration(
-                        hintText: 'Search recipes...',
-                        hintStyle: TextStyle(color: theme.colorScheme.onSurfaceVariant),
-                        prefixIcon: Icon(Icons.search, color: theme.colorScheme.onSurfaceVariant),
-                        suffixIcon: textController.text.isNotEmpty
-                            ? IconButton(
-                                icon: Icon(Icons.clear, color: theme.colorScheme.onSurfaceVariant),
-                                onPressed: () {
-                                  textController.clear();
-                                  setState(() => _searchQuery = '');
-                                },
-                              )
-                            : null,
-                        filled: true,
-                        fillColor: theme.colorScheme.surfaceContainerHighest,
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(12),
-                          borderSide: BorderSide.none,
-                        ),
-                      ),
-                      style: TextStyle(color: theme.colorScheme.onSurfaceVariant),
+                      suffixIcon: textController.text.isNotEmpty
+                          ? IconButton(
+                              icon: Icon(Icons.clear, color: theme.colorScheme.onSurfaceVariant),
+                              onPressed: () {
+                                textController.clear();
+                                setState(() => _searchQuery = '');
+                              },
+                            )
+                          : null,
                       onChanged: (value) {
                         setState(() => _searchQuery = value.toLowerCase());
                       },
@@ -174,49 +165,26 @@ class _ModernistListScreenState extends ConsumerState<ModernistListScreen> {
   }
 
   Widget _buildFilterChip(String label, int count, {ModernistType? type, bool isAllChip = false}) {
-    final theme = Theme.of(context);
-
-    // "All" is selected when no filters are selected
     final isSelected = isAllChip
         ? _selectedFilters.isEmpty
         : type != null && _selectedFilters.contains(type);
 
-    return Padding(
-      padding: const EdgeInsets.only(right: 8),
-      child: FilterChip(
-        label: Text(label),
-        selected: isSelected,
-        onSelected: (selected) {
-          setState(() {
-            if (isAllChip) {
-              // Clicking "All" clears all selections
-              _selectedFilters.clear();
-            } else if (type != null) {
-              // Toggle this filter
-              if (_selectedFilters.contains(type)) {
-                _selectedFilters.remove(type);
-              } else {
-                _selectedFilters.add(type);
-              }
+    return MemoixFilterChip(
+      value: isAllChip ? null : label,
+      isSelected: isSelected,
+      onSelected: (selected) {
+        setState(() {
+          if (isAllChip) {
+            _selectedFilters.clear();
+          } else if (type != null) {
+            if (_selectedFilters.contains(type)) {
+              _selectedFilters.remove(type);
+            } else {
+              _selectedFilters.add(type);
             }
-          });
-        },
-        backgroundColor: theme.colorScheme.surfaceContainerHighest,
-        selectedColor: theme.colorScheme.secondary.withValues(alpha: 0.15),
-        showCheckmark: false,
-        side: BorderSide(
-          color: isSelected
-              ? theme.colorScheme.secondary
-              : theme.colorScheme.outline.withValues(alpha: 0.2),
-          width: isSelected ? 1.5 : 1.0,
-        ),
-        labelStyle: TextStyle(
-          fontSize: 13,
-          color: isSelected
-              ? theme.colorScheme.secondary
-              : theme.colorScheme.onSurface,
-        ),
-      ),
+          }
+        });
+      },
     );
   }
 

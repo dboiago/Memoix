@@ -5,6 +5,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
 import '../../../shared/widgets/memoix_empty_state.dart';
+import '../../../shared/widgets/memoix_filter_chip.dart';
+import '../../../shared/widgets/memoix_search_bar.dart';
 import '../../settings/screens/settings_screen.dart';
 import '../../../core/database/app_database.dart';
 import '../models/smoking_recipe.dart';
@@ -118,28 +120,19 @@ class _SmokingListScreenState extends ConsumerState<SmokingListScreen> {
                     setState(() => _searchQuery = selection.toLowerCase());
                   },
                   fieldViewBuilder: (context, textController, focusNode, onFieldSubmitted) {
-                    return TextField(
+                    return MemoixSearchBar(
+                      hintText: 'Search smoking recipes...',
                       controller: textController,
                       focusNode: focusNode,
-                      decoration: InputDecoration(
-                        hintText: 'Search smoking recipes...',
-                        prefixIcon: const Icon(Icons.search),
-                        suffixIcon: textController.text.isNotEmpty
-                            ? IconButton(
-                                icon: const Icon(Icons.clear),
-                                onPressed: () {
-                                  textController.clear();
-                                  setState(() => _searchQuery = '');
-                                },
-                              )
-                            : null,
-                        filled: true,
-                        fillColor: theme.colorScheme.surfaceContainerHighest,
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(12),
-                          borderSide: BorderSide.none,
-                        ),
-                      ),
+                      suffixIcon: textController.text.isNotEmpty
+                          ? IconButton(
+                              icon: Icon(Icons.clear, color: theme.colorScheme.onSurfaceVariant),
+                              onPressed: () {
+                                textController.clear();
+                                setState(() => _searchQuery = '');
+                              },
+                            )
+                          : null,
                       onChanged: (value) {
                         setState(() => _searchQuery = value.toLowerCase());
                       },
@@ -271,48 +264,26 @@ class _SmokingListScreenState extends ConsumerState<SmokingListScreen> {
   }
 
   Widget _buildCategoryChip(String? category, String label, int count) {
-    final theme = Theme.of(context);
-    // "All" is selected when no categories are selected
-    final isSelected = category == null 
-        ? _selectedCategories.isEmpty 
+    final isSelected = category == null
+        ? _selectedCategories.isEmpty
         : _selectedCategories.contains(category);
 
-    return Padding(
-      padding: const EdgeInsets.only(right: 8),
-      child: FilterChip(
-        label: Text(label),
-        selected: isSelected,
-        onSelected: (_) {
-          setState(() {
-            if (category == null) {
-              // Clicking "All" clears all selections
-              _selectedCategories.clear();
+    return MemoixFilterChip(
+      value: category,
+      isSelected: isSelected,
+      onSelected: (_) {
+        setState(() {
+          if (category == null) {
+            _selectedCategories.clear();
+          } else {
+            if (_selectedCategories.contains(category)) {
+              _selectedCategories.remove(category);
             } else {
-              // Toggle this category
-              if (_selectedCategories.contains(category)) {
-                _selectedCategories.remove(category);
-              } else {
-                _selectedCategories.add(category);
-              }
+              _selectedCategories.add(category);
             }
-          });
-        },
-        backgroundColor: theme.colorScheme.surfaceContainerHighest,
-        selectedColor: theme.colorScheme.secondary.withValues(alpha: 0.15),
-        showCheckmark: false,
-        side: BorderSide(
-          color: isSelected
-              ? theme.colorScheme.secondary
-              : theme.colorScheme.outline.withValues(alpha: 0.2),
-          width: isSelected ? 1.5 : 1.0,
-        ),
-        labelStyle: TextStyle(
-          fontSize: 13,
-          color: isSelected
-              ? theme.colorScheme.secondary
-              : theme.colorScheme.onSurface,
-        ),
-      ),
+          }
+        });
+      },
     );
   }
 

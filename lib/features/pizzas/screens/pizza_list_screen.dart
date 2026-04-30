@@ -5,6 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
 import '../../../shared/widgets/memoix_empty_state.dart';
+import '../../../shared/widgets/memoix_filter_chip.dart';
 import '../../settings/screens/settings_screen.dart';
 import '../../../core/database/app_database.dart';
 import '../models/pizza.dart';
@@ -228,49 +229,27 @@ class _PizzaListScreenState extends ConsumerState<PizzaListScreen> {
   }
 
   Widget _buildBaseChip(String? base, int count) {
-    // "All" is selected when no bases are selected
-    final isSelected = base == null 
-        ? _selectedBases.isEmpty 
+    final isSelected = base == null
+        ? _selectedBases.isEmpty
         : _selectedBases.contains(base);
-    final theme = Theme.of(context);
     final label = base != null ? PizzaBaseExtension.fromString(base).displayName : 'All';
 
-    return Padding(
-      padding: const EdgeInsets.only(right: 8),
-      child: FilterChip(
-        label: Text(label),
-        selected: isSelected,
-        onSelected: (_) {
-          setState(() {
-            if (base == null) {
-              // Clicking "All" clears all selections
-              _selectedBases.clear();
+    return MemoixFilterChip(
+      value: base != null ? label : null,
+      isSelected: isSelected,
+      onSelected: (_) {
+        setState(() {
+          if (base == null) {
+            _selectedBases.clear();
+          } else {
+            if (_selectedBases.contains(base)) {
+              _selectedBases.remove(base);
             } else {
-              // Toggle this base
-              if (_selectedBases.contains(base)) {
-                _selectedBases.remove(base);
-              } else {
-                _selectedBases.add(base);
-              }
+              _selectedBases.add(base);
             }
-          });
-        },
-        backgroundColor: theme.colorScheme.surfaceContainerHighest,
-        selectedColor: theme.colorScheme.secondary.withValues(alpha: 0.15),
-        showCheckmark: false,
-        side: BorderSide(
-          color: isSelected
-              ? theme.colorScheme.secondary
-              : theme.colorScheme.outline.withValues(alpha: 0.2),
-          width: isSelected ? 1.5 : 1.0,
-        ),
-        labelStyle: TextStyle(
-          fontSize: 13,
-          color: isSelected
-              ? theme.colorScheme.secondary
-              : theme.colorScheme.onSurface,
-        ),
-      ),
+          }
+        });
+      },
     );
   }
 
