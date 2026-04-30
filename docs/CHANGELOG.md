@@ -1,3 +1,36 @@
+## Memoix – v1.1.1+8 – 2026-04-30
+
+### Added
+
+- Multi-select filtering for milk across relevant lists; empty set shows all, chips toggle membership
+- SVG-based logo rendering in Settings and empty states; removed raster tint pipeline
+- Cook Map upgraded to rolling-velocity model with decay and dynamic chip count per screen width
+- Play Store and Privacy Policy links in Settings (About section)
+- Full data wipe now includes on-disk media directories and secure stores (AI keys, Supabase session)
+
+### Changed
+
+- Unified `MemoixFilterChip` across 10 screens; removed per-screen styling overrides in favour of centralised behaviour
+- `MemoixSearchBar` icons now theme-aware; removed hardcoded `const Icon(...)`
+- Replaced `SyncNotifier` flow with stateless `LocalDataSeeder`; seeding now invoked from init and background paths
+- Settings “Sync & Updates” restructured; Play Store builds bypass GitHub checks entirely
+- Recipe domain mapping renamed `_toDomainRecipe`; all Isar-era naming and comments removed
+- Card title text now scales via `FittedBox` across all list cards to prevent overflow
+- Bottom safe-area padding applied to list/detail/cooking views without breaking edge-to-edge layout
+- Drinks logging now writes subcategory (spirit) into `recipeCuisine` for colour fidelity; course-specific colour resolution aligned with card logic
+- Database clear now wipes all 16 tables including `recipe_images`
+
+### Fixed
+
+- Cook Map exclusion for modernist, pizza, sandwich, and smoking logs due to null `recipeCuisine`
+- UUID constraint violations in `cooking_logs` by generating v4 UUID per insert
+- Dismissible assertion in lists by implementing `confirmDismiss` with snap-back behaviour and meal-plan action
+- Text truncation/overflow across all cards under constrained widths
+- Bottom navigation overlap issues on edge-to-edge devices
+- Stale launcher icon config and unused assets removed
+- Various residual Isar references in comments and documentation
+
+
 ## Memoix - v1.1.0+7 - 2026-04-28
 
 ### Added
