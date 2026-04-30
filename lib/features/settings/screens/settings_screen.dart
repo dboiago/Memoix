@@ -206,7 +206,6 @@ class SettingsScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final theme = Theme.of(context);
-    final syncState = ref.watch(syncNotifierProvider);
     final hideMemoixRecipes = ref.watch(hideMemoixRecipesProvider);
     final compactView = ref.watch(compactViewProvider);
     final packageInfo = ref.watch(packageInfoProvider);
@@ -291,55 +290,17 @@ class SettingsScreen extends ConsumerWidget {
             onTap: () => AppRoutes.toAgentsSettings(context),
           ),
 
-          const Divider(),
+          if (!isPlayStore) ...[  
+            const Divider(),
 
-          // Sync section
-          const _SectionHeader(title: 'Sync & Updates'),
-          ListTile(
-            leading: const Icon(Icons.sync),
-            title: const Text('Sync Memoix Collection'),
-            subtitle: const Text('Download latest recipes from the cloud'),
-            trailing: syncState.isLoading
-                ? const SizedBox(
-                    width: 24,
-                    height: 24,
-                    child: CircularProgressIndicator(strokeWidth: 2),
-                  )
-                : const Icon(Icons.chevron_right),
-            onTap: syncState.isLoading
-                ? null
-                : () async {
-                    await ref.read(syncNotifierProvider.notifier).sync();
-                    final state = ref.read(syncNotifierProvider);
-                    if (state.hasError) {
-                      MemoixSnackBar.showError('Sync failed: ${state.error}');
-                    } else {
-                      MemoixSnackBar.showSuccess('Memoix collection synced successfully');
-                    }
-                  },
-          ),
-          if (isPlayStore)
-            ListTile(
-              leading: const Icon(Icons.system_update),
-              title: const Text('Check for App Updates'),
-              subtitle: const Text('View the latest version on the Play Store'),
-              onTap: () async {
-                final uri = Uri.parse(
-                  'https://play.google.com/store/apps/details?id=io.github.dboiago.memoix',
-                );
-                if (await canLaunchUrl(uri)) {
-                  await launchUrl(uri, mode: LaunchMode.externalApplication);
-                }
-              },
-            )
-          else
+            // Updates section
+            const _SectionHeader(title: 'Updates'),
             ListTile(
               leading: const Icon(Icons.system_update),
               title: const Text('Check for App Updates'),
               subtitle: const Text('Download the latest version from GitHub'),
               onTap: () => _checkForUpdates(context, ref),
             ),
-          if (!isPlayStore)
             SwitchListTile(
               secondary: const Icon(Icons.auto_awesome),
               title: const Text('Auto-check for Updates'),
@@ -347,14 +308,7 @@ class SettingsScreen extends ConsumerWidget {
               value: ref.watch(autoCheckUpdatesProvider),
               onChanged: (_) => ref.read(autoCheckUpdatesProvider.notifier).toggle(),
             ),
-          if (syncState.hasError)
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16),
-              child: Text(
-                'Sync failed: ${syncState.error}',
-                style: TextStyle(color: theme.colorScheme.error),
-              ),
-            ),
+          ],
 
           const Divider(),
 
@@ -426,7 +380,31 @@ class SettingsScreen extends ConsumerWidget {
               }
             },
           ),
-          
+          ListTile(
+            leading: const Icon(Icons.shop_outlined),
+            title: const Text('Play Store'),
+            subtitle: const Text('View Memoix on Google Play'),
+            trailing: const Icon(Icons.open_in_new),
+            onTap: () async {
+              final uri = Uri.parse(
+                'https://play.google.com/store/apps/details?id=io.github.dboiago.memoix',
+              );
+              if (await canLaunchUrl(uri)) {
+                await launchUrl(uri, mode: LaunchMode.externalApplication);
+              }
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.privacy_tip_outlined),
+            title: const Text('Privacy Policy'),
+            trailing: const Icon(Icons.open_in_new),
+            onTap: () async {
+              final uri = Uri.parse('https://dboiago.github.io/Memoix/privacy/');
+              if (await canLaunchUrl(uri)) {
+                await launchUrl(uri, mode: LaunchMode.externalApplication);
+              }
+            },
+          ),
 
           const Divider(),
 
