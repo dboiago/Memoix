@@ -989,8 +989,8 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                     ),
                   ),
 
-                // Bottom padding
-                const SizedBox(height: 32),
+                // Bottom padding (rests above transparent nav bar when fully scrolled)
+                SizedBox(height: 32 + MediaQuery.paddingOf(context).bottom),
               ],
             ),
           ),

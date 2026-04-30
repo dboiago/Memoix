@@ -67,12 +67,16 @@ class _ModernistCardState extends ConsumerState<ModernistCard> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    // Recipe name
-                    Text(
-                      recipe.name,
-                      style: widget.isCompact
-                          ? theme.textTheme.bodyMedium?.copyWith(fontWeight: FontWeight.w500)
-                          : theme.textTheme.titleMedium?.copyWith(fontWeight: FontWeight.w500),
+                    // Recipe name (scales down to fit, never wraps or truncates)
+                    FittedBox(
+                      fit: BoxFit.scaleDown,
+                      alignment: Alignment.centerLeft,
+                      child: Text(
+                        recipe.name,
+                        style: widget.isCompact
+                            ? theme.textTheme.bodyMedium?.copyWith(fontWeight: FontWeight.w500)
+                            : theme.textTheme.titleMedium?.copyWith(fontWeight: FontWeight.w500),
+                      ),
                     ),
                     // Metadata row (hidden in compact mode)
                     if (!widget.isCompact) ...[

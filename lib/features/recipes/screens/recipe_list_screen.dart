@@ -288,7 +288,7 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
                     final theme = Theme.of(context);
                     return ListView.builder(
                       key: const PageStorageKey('recipe_list'),
-                      padding: const EdgeInsets.only(bottom: 80),
+                      padding: EdgeInsets.only(bottom: 80 + MediaQuery.paddingOf(context).bottom),
                       itemCount: filteredRecipes.length,
                       itemBuilder: (context, index) {
                         final recipe = filteredRecipes[index];

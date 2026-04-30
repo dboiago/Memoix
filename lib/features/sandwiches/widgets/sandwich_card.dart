@@ -67,14 +67,16 @@ class _SandwichCardState extends ConsumerState<SandwichCard> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    // Sandwich name
-                    Text(
-                      widget.sandwich.name,
-                      style: theme.textTheme.titleMedium?.copyWith(
-                        fontWeight: FontWeight.w500,
+                    // Sandwich name (scales down to fit, never wraps or truncates)
+                    FittedBox(
+                      fit: BoxFit.scaleDown,
+                      alignment: Alignment.centerLeft,
+                      child: Text(
+                        widget.sandwich.name,
+                        style: theme.textTheme.titleMedium?.copyWith(
+                          fontWeight: FontWeight.w500,
+                        ),
                       ),
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
                     ),
                     // Only show metadata row in non-compact mode
                     if (!widget.isCompact) ...[

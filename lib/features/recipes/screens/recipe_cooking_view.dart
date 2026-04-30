@@ -135,7 +135,7 @@ class _RecipeCookingViewState extends ConsumerState<RecipeCookingView> {
               ),
               Expanded(
                 child: SingleChildScrollView(
-                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                  padding: EdgeInsets.fromLTRB(16, 0, 16, MediaQuery.paddingOf(context).bottom),
                   child: DirectionList(
                     directions: widget.recipe.directions,
                     enableTimerLongPress: true,
@@ -225,7 +225,7 @@ class _RecipeCookingViewState extends ConsumerState<RecipeCookingView> {
                 child: SingleChildScrollView(
                   padding: const EdgeInsets.symmetric(horizontal: 16),
                   child: Padding(
-                    padding: const EdgeInsets.only(bottom: 32),
+                    padding: EdgeInsets.only(bottom: 32 + MediaQuery.paddingOf(context).bottom),
                     child: DirectionList(
                       directions: widget.recipe.directions,
                       enableTimerLongPress: true,
