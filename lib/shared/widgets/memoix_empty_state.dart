@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 /// Unified empty state widget for consistent "no items found" experience.
 /// 
@@ -38,16 +39,14 @@ class MemoixEmptyState extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            ColorFiltered(
+            SvgPicture.asset(
+              'assets/images/memoix_logo.svg',
+              width: markSize,
+              height: markSize,
+              fit: BoxFit.contain,
               colorFilter: ColorFilter.mode(
                 theme.colorScheme.outline,
                 BlendMode.srcIn,
-              ),
-              child: Image.asset(
-                'assets/images/Memoix-markfilled-black-512.png',
-                width: markSize,
-                height: markSize,
-                fit: BoxFit.contain,
               ),
             ),
             const SizedBox(height: 16),

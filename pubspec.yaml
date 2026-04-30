@@ -153,17 +153,3 @@ flutter:
         - asset: assets/fonts/PlayfairDisplay-BoldItalic.ttf
           weight: 700
           style: italic
-          
-flutter_launcher_icons:
-  android: "ic_launcher"
-  ios: true
-  image_path: "assets/icons/memoix-appicon-orange-1024.png"
-  min_sdk_android: 21
-  
-  windows:
-    generate: true
-    image_path: "assets/icons/memoix-appicon-orange-1024.png"
-    icon_size: 48
-
-  adaptive_icon_background: "#242424"
-  adaptive_icon_foreground: "assets/icons/memoix-appicon-orange-transparent-1200.png"

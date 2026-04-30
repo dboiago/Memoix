@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:io';
 
 import 'package:audioplayers/audioplayers.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -470,16 +471,14 @@ class SettingsScreen extends ConsumerWidget {
       context: context,
       applicationName: 'Memoix',
       applicationVersion: version,
-      applicationIcon: ColorFiltered(
+      applicationIcon: SvgPicture.asset(
+        'assets/images/memoix_logo.svg',
+        width: 80,
+        height: 80,
+        fit: BoxFit.contain,
         colorFilter: ColorFilter.mode(
           Theme.of(context).colorScheme.secondary,
           BlendMode.srcIn,
-        ),
-        child: Image.asset(
-          'assets/images/Memoix-mark-black-512.png',
-          width: 80,
-          height: 80,
-          fit: BoxFit.contain,
         ),
       ),
       applicationLegalese: '© 2024-2026 Devon Boiago\n\n'
