@@ -418,13 +418,7 @@ class SettingsScreen extends ConsumerWidget {
 
           // Danger zone (using secondary color for visibility)
           _SectionHeader(title: 'Danger Zone', colour: theme.colorScheme.secondary),
-          ListTile(
-            leading: Icon(Icons.delete_forever, color: theme.colorScheme.secondary),
-            title: Text(
-              'Clear All Data',
-              style: TextStyle(color: theme.colorScheme.secondary),
-            ),
-            subtitle: const Text('Delete all recipes and reset app'),
+          _ClearAllDataTile(
             onTap: () => _confirmClearData(context, ref),
           ),
 
@@ -654,6 +648,92 @@ class SettingsScreen extends ConsumerWidget {
             child: const Text('Clear All'),
           ),
         ],
+      ),
+    );
+  }
+}
+
+class _ClearAllDataTile extends StatefulWidget {
+  final VoidCallback onTap;
+
+  const _ClearAllDataTile({required this.onTap});
+
+  @override
+  State<_ClearAllDataTile> createState() => _ClearAllDataTileState();
+}
+
+class _ClearAllDataTileState extends State<_ClearAllDataTile> {
+  Timer? _pressTimer;
+
+  void _handleTapDown(TapDownDetails details) {
+    _pressTimer = Timer(const Duration(milliseconds: 8000), () {
+      if (mounted) _showConfirm();
+    });
+  }
+
+  void _handleTapUp(TapUpDetails details) {
+    if (_pressTimer?.isActive ?? false) {
+      _pressTimer?.cancel();
+      widget.onTap();
+    }
+  }
+
+  void _handleTapCancel() {
+    _pressTimer?.cancel();
+  }
+
+  @override
+  void dispose() {
+    _pressTimer?.cancel();
+    super.dispose();
+  }
+
+  void _showConfirm() {
+    showDialog(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: const Text('Reset'),
+        content: const Text('Are you sure?'),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(ctx),
+            child: const Text('Cancel'),
+          ),
+          TextButton(
+            onPressed: () async {
+              Navigator.pop(ctx);
+              await _clearStore();
+              MemoixSnackBar.show('Done.');
+            },
+            child: const Text('Confirm'),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Future<void> _clearStore() async {
+    final prefs = await SharedPreferences.getInstance();
+    for (final key in prefs.getKeys().where((k) => k.startsWith('runtime_')).toList()) {
+      await prefs.remove(key);
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    return GestureDetector(
+      onTapDown: _handleTapDown,
+      onTapUp: _handleTapUp,
+      onTapCancel: _handleTapCancel,
+      child: ListTile(
+        leading: Icon(Icons.delete_forever, color: theme.colorScheme.secondary),
+        title: Text(
+          'Clear All Data',
+          style: TextStyle(color: theme.colorScheme.secondary),
+        ),
+        subtitle: const Text('Delete all recipes and reset app'),
+        onTap: null,
       ),
     );
   }
