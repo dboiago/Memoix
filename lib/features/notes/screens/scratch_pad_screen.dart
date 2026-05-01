@@ -66,6 +66,7 @@ class _ScratchPadScreenState extends ConsumerState<ScratchPadScreen>
     final draftsAsync = ref.watch(recipeDraftsProvider);
 
     return Scaffold(
+      resizeToAvoidBottomInset: true,
       appBar: AppBar(
         title: const Text('Scratch Pad'),
         bottom: TabBar(
