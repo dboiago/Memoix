@@ -103,4 +103,4 @@ The last updated date above will reflect any revisions.
 
 ## Contact
 
-For questions, open an issue on the GitHub repository.
+For questions, open an issue on the [GitHub repository](https://github.com/dboiago/Memoix).
