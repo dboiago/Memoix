@@ -74,7 +74,7 @@
 - Migrated to a "Copy-on-Write" local seed database model for better offline reliability
 
 
-## Memoix v1.0.0 — 2026-04-22
+## Memoix - v1.0.0 - 2026-04-22
 
 ### Added
 - Added comprehensive data access layer (DAOs) to handle complex relational queries via Drift
@@ -110,7 +110,7 @@
 - Removed all hardcoded dev API keys and OAuth credentials from local configuration files
 
 
-## Memoix v0.2.0-beta — 2026-03-05
+## Memoix - v0.2.0-beta - 2026-03-05
 
 ### Added
 - Added quick-start timers accessible from direction long-press actions
