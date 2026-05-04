@@ -24,22 +24,54 @@ class WebViewFetcher {
   /// Fetch HTML content from a URL using a headless WebView.
   /// 
   /// Returns the page's HTML content, or throws an exception on failure.
-  /// The WebView is shown briefly but minimized to be nearly invisible.
+  /// The WebView is shown briefly but positioned off-screen so it is invisible.
   /// 
   /// Throws [UnsupportedError] if WebView is not supported on this platform.
-  static Future<String> fetchHtml(BuildContext context, String url, {Duration timeout = const Duration(seconds: 15)}) async {
+  static Future<String> fetchHtml(BuildContext context, String url, {Duration timeout = const Duration(seconds: 30)}) async {
     if (!isSupported) {
       throw UnsupportedError('WebView is not supported on this platform (only Android/iOS)');
     }
-    
+
+    // SECURITY: Validate URL scheme before creating any resources.
+    // Only allow http:// and https:// to prevent local file access or XSS.
+    final uri = Uri.tryParse(url);
+    if (uri == null) {
+      throw ArgumentError('Invalid URL format: unable to parse URL');
+    }
+    if (!uri.isScheme('http') && !uri.isScheme('https')) {
+      throw ArgumentError(
+        'Invalid URL scheme: "${uri.scheme}". Only HTTP and HTTPS URLs are allowed in WebView.',
+      );
+    }
+
+    // Clear stale cookies from any previous (failed) session.
+    // Cloudflare and DataDome store a "blocked" session token on the first
+    // rejected request. Subsequent requests carry that token and are
+    // immediately re-blocked even with a clean User-Agent.
+    await WebViewCookieManager().clearCookies();
+
     final completer = Completer<String>();
     
     late final WebViewController controller;
     late final OverlayEntry overlayEntry;
     
-    // Create the controller
     controller = WebViewController()
+      // JavaScript must be unrestricted — Cloudflare Turnstile and DataDome
+      // both rely on JS execution to solve challenges and set pass cookies.
       ..setJavaScriptMode(JavaScriptMode.unrestricted)
+      // Spoof the User-Agent to a standard Android Chrome string.
+      // Android WebView normally injects a ' wv' marker (e.g., "Chrome/123 wv Mobile")
+      // that Cloudflare and DataDome use as a hard signal to block the request.
+      // This UA matches a real Samsung Galaxy Chrome browser with no wv tag.
+      ..setUserAgent(
+        'Mozilla/5.0 (Linux; Android 13; SM-S908U) AppleWebKit/537.36 '
+        '(KHTML, like Gecko) Chrome/123.0.6312.40 Mobile Safari/537.36',
+      )
+      // Allow media autoplay without a gesture.
+      // Cloudflare Turnstile can embed invisible media elements as part of
+      // its challenge. If the WebView blocks autoplay, those elements stall
+      // and the challenge never resolves.
+      ..setMediaPlaybackRequiresUserGesture(false)
       ..setNavigationDelegate(
         NavigationDelegate(
           onPageFinished: (String finishedUrl) async {
@@ -89,11 +121,10 @@ class WebViewFetcher {
             }
           },
         ),
-      )
-      ..setUserAgent('Mozilla/5.0 (Linux; Android 14; Pixel 8 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36');
-    
-    // Create a tiny overlay to host the WebView (needed for it to work)
-    // Position it off-screen so it's invisible to the user
+      );
+
+    // Create a tiny overlay to host the WebView (required for rendering).
+    // Positioned off-screen so it is invisible to the user.
     overlayEntry = OverlayEntry(
       builder: (context) => Positioned(
         left: -10000,  // Off-screen
@@ -104,27 +135,16 @@ class WebViewFetcher {
       ),
     );
     
-    // Insert the overlay
     Overlay.of(context).insert(overlayEntry);
-    
-    // SECURITY: Validate URL scheme before loading in WebView
-    // Only allow http:// and https:// to prevent local file access or XSS
-    final uri = Uri.tryParse(url);
-    if (uri == null) {
-      overlayEntry.remove();
-      throw ArgumentError('Invalid URL format: unable to parse URL');
-    }
-    if (!uri.isScheme('http') && !uri.isScheme('https')) {
-      overlayEntry.remove();
-      throw ArgumentError(
-        'Invalid URL scheme: "${uri.scheme}". Only HTTP and HTTPS URLs are allowed in WebView.',
-      );
-    }
-    
-    // Load the URL
+
+    // Clear the WebView's on-disk cache after the controller is mounted.
+    // This removes any cached responses from previous blocked requests so
+    // the site sees a completely fresh client.
+    await controller.clearCache();
+
     await controller.loadRequest(uri);
-    
-    // Set up timeout
+
+    // Timeout accounts for: page load + 4 s JS-challenge wait + network latency.
     Timer(timeout, () {
       if (!completer.isCompleted) {
         overlayEntry.remove();
