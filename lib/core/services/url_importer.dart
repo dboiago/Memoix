@@ -1137,7 +1137,54 @@ class UrlRecipeImporter {
       if (result != null) {
         return result;
       }
-      
+
+      // Last-resort: rescue ingredients from div-grid layouts (React/Chakra UI, etc.).
+      // Only invoked when all primary parsers have failed but an "Ingredients" heading
+      // was detected. Zero risk to primary pipelines — purely additive, isolated path.
+      final hasIngredientsHeading = document.querySelectorAll('h2, h3')
+          .any((h) => (h.text ?? '').trim().toLowerCase().startsWith('ingredient'));
+      if (hasIngredientsHeading) {
+        final rescuedStrings = _rescueParseIngredients(document);
+        final filteredRescued = _filterIngredientStrings(rescuedStrings);
+        if (filteredRescued.isNotEmpty) {
+          final rescueTitle = document.querySelector('h1')?.text?.trim() ??
+              document.querySelector('title')?.text?.trim() ?? '';
+          final recipeName = _cleanRecipeName(rescueTitle);
+          if (recipeName.isNotEmpty) {
+            var parsedIngredients = _parseIngredients(filteredRescued);
+            parsedIngredients = _sortIngredientsByQuantity(parsedIngredients);
+            final rawIngredients = _buildRawIngredients(filteredRescued);
+            final isCocktailSite = _cocktailSites.any((s) => uri.host.contains(s));
+            final isBBQSite = _bbqSites.any((s) => uri.host.contains(s));
+            final courseResult = _detectCourseWithConfidence(
+              titleLower: recipeName.toLowerCase(),
+              urlLower: url.toLowerCase(),
+              ingredientStrings: filteredRescued,
+              isCocktailSite: isCocktailSite,
+              isBBQSite: isBBQSite,
+              document: document,
+            );
+            return RecipeImportResult(
+              name: recipeName,
+              course: courseResult.course,
+              ingredients: _filterParsedIngredients(parsedIngredients),
+              directions: [],
+              rawIngredients: rawIngredients,
+              rawDirections: [],
+              detectedCourses: [courseResult.course],
+              nameConfidence: 0.8,
+              courseConfidence: courseResult.confidence,
+              ingredientsConfidence: 0.6,
+              directionsConfidence: 0.0,
+              servesConfidence: 0.0,
+              timeConfidence: 0.0,
+              sourceUrl: url,
+              source: RecipeSource.url,
+            );
+          }
+        }
+      }
+
       // Provide more helpful error message with diagnostic info
       final jsonLdCount = jsonLdScripts.length;
       final hasMicrodata = document.querySelector('[itemtype*="Recipe"]') != null;
@@ -6067,6 +6114,116 @@ class UrlRecipeImporter {
   String? _detectSpirit(List<Ingredient> ingredients) {
     final ingredientNames = ingredients.map((i) => i.name).toList();
     return Spirit.detectFromIngredients(ingredientNames);
+  }
+
+  // ========================================================================
+  // DIV-GRID INGREDIENT RESCUE (last-resort fallback)
+  // ========================================================================
+  // Handles React/Next.js sites (Chakra UI, Tailwind, etc.) that render
+  // ingredient items inside <div> or <p> containers instead of <ul>/<li>.
+  // These methods are called ONLY after all primary parsers have failed and
+  // an "Ingredients" heading has been detected, guaranteeing zero interference
+  // with the standard JSON-LD, Microdata, and HTML list parsing paths.
+  // ========================================================================
+
+  /// Traverse sibling DOM nodes following an "Ingredients" h2/h3 header and
+  /// collect text lines that look like ingredient strings (start with a quantity
+  /// or contain a recognised measurement keyword).
+  ///
+  /// Returns an unfiltered list — callers must still run [_filterIngredientStrings].
+  List<String> _rescueParseIngredients(dynamic document) {
+    // Matches common measurement units as whole words (Canadian English inclusive)
+    final measurementPattern = RegExp(
+      r'\b(?:cups?|oz|lbs?|tbsp|tsp|g|kg|ml|pinch(?:es)?|cloves?|stalks?|heads?|bunch(?:es)?|slices?|pieces?|sprigs?)\b',
+      caseSensitive: false,
+    );
+
+    // Matches strings that start with a digit, slash-fraction, or unicode fraction
+    final startsWithQuantityPattern = RegExp(
+      r'^[\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚]|^\d+/\d+',
+    );
+
+    final headings = document.querySelectorAll('h2, h3');
+
+    for (final heading in headings) {
+      final headingText = (heading.text ?? '').trim();
+
+      // Skip headings longer than 40 chars — these are paragraphs, not section titles
+      if (headingText.length > 40) continue;
+      if (!headingText.toLowerCase().contains('ingredient')) continue;
+
+      final rawLines = <String>[];
+      final seen = <String>{};
+      var sibling = heading.nextElementSibling;
+
+      while (sibling != null) {
+        final tag = (sibling.localName ?? '').toLowerCase();
+        // Stop at the next structural heading (e.g., "Instructions")
+        if (tag == 'h1' || tag == 'h2' || tag == 'h3') break;
+
+        // Collect text lines from this sibling and its entire subtree
+        _rescueExtractLines(sibling, rawLines, seen);
+        sibling = sibling.nextElementSibling;
+      }
+
+      // Filter to lines that look like ingredients
+      final filtered = rawLines
+          .map((l) => l.trim().replaceAll(RegExp(r'\s+'), ' '))
+          .where((line) {
+            if (line.isEmpty || line.length < 3 || line.length > _maxIngredientLineLength) {
+              return false;
+            }
+            return startsWithQuantityPattern.hasMatch(line) ||
+                measurementPattern.hasMatch(line);
+          })
+          .toList();
+
+      if (filtered.isNotEmpty) return filtered;
+    }
+
+    return [];
+  }
+
+  /// Recursively extract non-empty text lines from a DOM element's subtree.
+  ///
+  /// First attempts a newline split of the element's full text (handles most
+  /// block-level containers). If the text is a single unbroken string, recurses
+  /// into child elements so that adjacent inline elements are collected as
+  /// individual items rather than merged.
+  void _rescueExtractLines(dynamic element, List<String> lines, Set<String> seen) {
+    final fullText = (element.text ?? '').trim();
+    if (fullText.isEmpty) return;
+
+    final parts = fullText.split(RegExp(r'[\n\r]+'));
+    if (parts.length > 1) {
+      // Multiple text lines — add each non-empty one
+      for (final part in parts) {
+        final t = part.trim().replaceAll(RegExp(r'\s+'), ' ');
+        if (t.isNotEmpty) {
+          final key = t.toLowerCase();
+          if (!seen.contains(key)) {
+            seen.add(key);
+            lines.add(t);
+          }
+        }
+      }
+    } else {
+      // Single unbroken block — try splitting via child elements
+      final children = element.children;
+      if (children != null && children.isNotEmpty) {
+        for (final child in children) {
+          _rescueExtractLines(child, lines, seen);
+        }
+      } else {
+        // Leaf element — add as-is
+        final t = fullText.replaceAll(RegExp(r'\s+'), ' ');
+        final key = t.toLowerCase();
+        if (!seen.contains(key)) {
+          seen.add(key);
+          lines.add(t);
+        }
+      }
+    }
   }
 
   // NOTE: Legacy _parseFromHtml removed - only _parseFromHtmlWithConfidence is used
