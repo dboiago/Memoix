@@ -1141,8 +1141,16 @@ class UrlRecipeImporter {
       // Last-resort: rescue ingredients from div-grid layouts (React/Chakra UI, etc.).
       // Only invoked when all primary parsers have failed but an "Ingredients" heading
       // was detected. Zero risk to primary pipelines — purely additive, isolated path.
-      final hasIngredientsHeading = document.querySelectorAll('h2, h3')
-          .any((h) => (h.text ?? '').trim().toLowerCase().startsWith('ingredient'));
+      // NOTE: Use a for-in loop rather than .any() to avoid the runtime type error
+      // "(dynamic) => dynamic is not a subtype of (Element) => bool" that occurs
+      // when Dart dispatches .any() on a dynamic-typed ElementList<Element>.
+      bool hasIngredientsHeading = false;
+      for (final h in document.querySelectorAll('h2, h3')) {
+        if (((h as dynamic).text ?? '').trim().toLowerCase().startsWith('ingredient')) {
+          hasIngredientsHeading = true;
+          break;
+        }
+      }
       if (hasIngredientsHeading) {
         final rescuedStrings = _rescueParseIngredients(document);
         final filteredRescued = _filterIngredientStrings(rescuedStrings);

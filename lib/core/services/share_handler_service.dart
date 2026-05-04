@@ -143,7 +143,7 @@ class ShareHandlerService {
 
     // SECURITY: enforce 4096-char limit per AGENTS.md.
     if (rawInput.length > 4096) {
-      MemoixSnackBar.showError('Shared link is too long to process (max 4,096 characters).');
+      MemoixSnackBar.showPersistentWithCopy('Shared link is too long to process (max 4,096 characters).');
       return;
     }
 
@@ -154,12 +154,12 @@ class ShareHandlerService {
       final shareService = _ref.read(shareServiceProvider);
       final recipe = shareService.parseShareLink(link);
       if (recipe == null) {
-        MemoixSnackBar.showError('Could not decode the Memoix link. It may be corrupt or from an incompatible version.');
+        MemoixSnackBar.showPersistentWithCopy('Could not decode the Memoix link. It may be corrupt or from an incompatible version.');
         return;
       }
       // Validate per AGENTS.md recipe validation rules.
       if (recipe.name.trim().isEmpty && recipe.ingredients.isEmpty && recipe.directions.isEmpty) {
-        MemoixSnackBar.showError('The Memoix link does not contain a valid recipe.');
+        MemoixSnackBar.showPersistentWithCopy('The Memoix link does not contain a valid recipe.');
         return;
       }
       _pushScreen(RecipeEditScreen(importedRecipe: recipe));
@@ -168,7 +168,7 @@ class ShareHandlerService {
 
     final httpMatch = RegExp(r'(https?://\S+)').firstMatch(rawInput);
     if (httpMatch == null) {
-      MemoixSnackBar.showError('Could not find a valid recipe link in the shared text.');
+      MemoixSnackBar.showPersistentWithCopy('Could not find a valid recipe link in the shared text.');
       return;
     }
     final url = httpMatch.group(1)!;
@@ -178,7 +178,7 @@ class ShareHandlerService {
       final result = await importer.importFromUrl(url);
 
       if (!result.hasMinimumData) {
-        MemoixSnackBar.showError('Could not extract a recipe from the shared URL.');
+        MemoixSnackBar.showPersistentWithCopy('Could not extract a recipe from the shared URL.');
         return;
       }
 
@@ -194,7 +194,7 @@ class ShareHandlerService {
         }
       }
     } catch (e) {
-      MemoixSnackBar.showError('Failed to import shared recipe: $e');
+      MemoixSnackBar.showPersistentWithCopy('Failed to import shared recipe: $e');
     }
   }
 
@@ -206,7 +206,7 @@ class ShareHandlerService {
 
     final settings = _ref.read(aiSettingsProvider);
     if (settings.activeProviders.isEmpty) {
-      MemoixSnackBar.showError(
+      MemoixSnackBar.showPersistentWithCopy(
         'No AI provider is configured. Enable one in Settings → Agents to import from text.',
       );
       return;
@@ -217,7 +217,7 @@ class ShareHandlerService {
       final response = await service.sendMessage(AiRequest(text: text));
 
       if (!response.isSuccess) {
-        MemoixSnackBar.showError(
+        MemoixSnackBar.showPersistentWithCopy(
           response.errorMessage ?? 'AI could not process the shared text.',
         );
         return;
@@ -229,7 +229,7 @@ class ShareHandlerService {
       });
 
       if (!importResult.hasMinimumData) {
-        MemoixSnackBar.showError(
+        MemoixSnackBar.showPersistentWithCopy(
           'The AI could not extract enough data from the shared text.',
         );
         return;
@@ -237,7 +237,7 @@ class ShareHandlerService {
 
       _pushScreen(ImportReviewScreen(importResult: importResult, redirectOnSave: true));
     } catch (e) {
-      MemoixSnackBar.showError('Failed to process shared text: $e');
+      MemoixSnackBar.showPersistentWithCopy('Failed to process shared text: $e');
     }
   }
 
@@ -265,7 +265,7 @@ class ShareHandlerService {
       final response = await service.sendMessage(AiRequest(imageBytes: bytes));
 
       if (!response.isSuccess) {
-        MemoixSnackBar.showError(
+        MemoixSnackBar.showPersistentWithCopy(
           response.errorMessage ?? 'AI could not process the shared image.',
         );
         return;
@@ -277,7 +277,7 @@ class ShareHandlerService {
       });
 
       if (!importResult.hasMinimumData) {
-        MemoixSnackBar.showError(
+        MemoixSnackBar.showPersistentWithCopy(
           'The AI could not extract enough data from the shared image.',
         );
         return;
@@ -285,7 +285,7 @@ class ShareHandlerService {
 
       _pushScreen(ImportReviewScreen(importResult: importResult, redirectOnSave: true));
     } catch (e) {
-      MemoixSnackBar.showError('Failed to process shared image: $e');
+      MemoixSnackBar.showPersistentWithCopy('Failed to process shared image: $e');
     }
   }
 
@@ -297,12 +297,12 @@ class ShareHandlerService {
       if (result.cancelled) return;
 
       if (!result.success) {
-        MemoixSnackBar.showError(result.error ?? 'OCR failed on the shared image.');
+        MemoixSnackBar.showPersistentWithCopy(result.error ?? 'OCR failed on the shared image.');
         return;
       }
 
       if (result.importResult == null) {
-        MemoixSnackBar.showError('Could not extract recipe data from the shared image.');
+        MemoixSnackBar.showPersistentWithCopy('Could not extract recipe data from the shared image.');
         return;
       }
 
@@ -311,14 +311,14 @@ class ShareHandlerService {
       if ((importResult.name?.trim().isEmpty ?? true) &&
           importResult.ingredients.isEmpty &&
           importResult.directions.isEmpty) {
-        MemoixSnackBar.showError('The shared image did not contain enough recipe content.');
+        MemoixSnackBar.showPersistentWithCopy('The shared image did not contain enough recipe content.');
         return;
       }
 
       // OCR always routes through ImportReviewScreen (confidence is inherently low).
       _pushScreen(ImportReviewScreen(importResult: importResult, redirectOnSave: true));
     } catch (e) {
-      MemoixSnackBar.showError('Failed to scan shared image: $e');
+      MemoixSnackBar.showPersistentWithCopy('Failed to scan shared image: $e');
     }
   }
 
