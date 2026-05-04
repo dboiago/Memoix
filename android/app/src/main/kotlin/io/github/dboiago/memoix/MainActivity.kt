@@ -14,12 +14,12 @@ import java.io.FileOutputStream
 import java.io.IOException
 
 class MainActivity : FlutterActivity() {
-    private var isAppColdStart = true
+
     private val channelName = "memoix/share"
     private var channel: MethodChannel? = null
 
     /// Holds a share event that arrived before the Flutter engine was ready.
-    private var pendingShare: Map<String, Any>? = null
+    private var pendingShare: Map<String, String>? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,7 +30,6 @@ class MainActivity : FlutterActivity() {
     /// Called when Memoix is already running and a new intent arrives (singleTop).
     override fun onNewIntent(intent: Intent) {
         super.onNewIntent(intent)
-        isAppColdStart = false
         processShareIntent(intent)
     }
 
@@ -130,9 +129,6 @@ class MainActivity : FlutterActivity() {
 
     /// Sends a share payload to Flutter, or queues it if the engine is not yet ready.
     private fun dispatchToFlutter(share: Map<String, String>) {
-        val payload = share.toMutableMap<String, Any>()
-        payload["isColdStart"] = isAppColdStart
-        
         val ch = channel
         if (ch != null) {
             ch.invokeMethod("onShareReceived", share)
