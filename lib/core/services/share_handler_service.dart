@@ -1,9 +1,11 @@
+import 'dart:async' show unawaited;
 import 'dart:io';
 import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:uuid/uuid.dart';
 
 import '../../app/app.dart' show rootNavigatorKey;
@@ -36,6 +38,10 @@ class ShareHandlerService {
 
   /// Queued payload received before initialize() was called.
   Map<String, dynamic>? _pendingEvent;
+
+  /// Screen collected by [_pushScreen] during parsing; pushed after the
+  /// loading dialog is dismissed in [_handleShare].
+  Widget? _pendingScreen;
 
   ShareHandlerService(this._ref);
 
@@ -76,19 +82,48 @@ class ShareHandlerService {
   // ── Share routing ──────────────────────────────────────────────────────────
 
   Future<void> _handleShare(Map<String, dynamic> data) async {
-    final type = data['type'] as String?;
-    switch (type) {
-      case 'url':
-        final content = data['content'] as String? ?? '';
-        await _handleUrlShare(content);
-      case 'text':
-        final content = data['content'] as String? ?? '';
-        await _handleTextShare(content);
-      case 'image':
-        final path = data['path'] as String? ?? '';
-        await _handleImageShare(path);
-      default:
-        debugPrint('ShareHandlerService: unknown share type "$type"');
+    _pendingScreen = null;
+
+    final navigator = rootNavigatorKey.currentState;
+    final context = rootNavigatorKey.currentContext;
+    if (navigator == null || context == null) return;
+
+    // Show a non-dismissible loading overlay while the async import work runs.
+    // It is always dismissed in the finally block so the user is never stuck.
+    unawaited(showDialog<void>(
+      context: context,
+      barrierDismissible: false,
+      barrierColor: Colors.transparent,
+      builder: (_) => const _ShareLoadingDialog(),
+    ));
+
+    try {
+      final type = data['type'] as String?;
+      switch (type) {
+        case 'url':
+          final content = data['content'] as String? ?? '';
+          await _handleUrlShare(content);
+        case 'text':
+          final content = data['content'] as String? ?? '';
+          await _handleTextShare(content);
+        case 'image':
+          final path = data['path'] as String? ?? '';
+          await _handleImageShare(path);
+        default:
+          debugPrint('ShareHandlerService: unknown share type "$type"');
+      }
+    } finally {
+      // Always dismiss — even on unexpected errors — so the UI is never blocked.
+      if (navigator.mounted) {
+        navigator.pop();
+      }
+    }
+
+    // Push the target screen now that the loading overlay is gone.
+    final screen = _pendingScreen;
+    _pendingScreen = null;
+    if (screen != null && navigator.mounted) {
+      navigator.push(MaterialPageRoute(builder: (_) => screen));
     }
   }
 
@@ -284,9 +319,40 @@ class ShareHandlerService {
 
   // ── Navigation helper ──────────────────────────────────────────────────────
 
+  /// Stores [screen] so that [_handleShare] can push it after the loading
+  /// dialog has been dismissed. Never navigates immediately.
   void _pushScreen(Widget screen) {
-    rootNavigatorKey.currentState?.push(
-      MaterialPageRoute(builder: (_) => screen),
+    _pendingScreen = screen;
+  }
+}
+
+// ── Loading dialog ───────────────────────────────────────────────────────────
+
+/// Full-screen loading overlay shown while a shared payload is being imported.
+/// Styled to match the app splash screen: dark background, logo, spinner.
+class _ShareLoadingDialog extends StatelessWidget {
+  const _ShareLoadingDialog();
+
+  @override
+  Widget build(BuildContext context) {
+    return PopScope(
+      canPop: false,
+      child: Material(
+        color: const Color(0xFF242424),
+        child: Center(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              SvgPicture.asset(
+                'assets/images/memoix_logo.svg',
+                width: 220,
+              ),
+              const SizedBox(height: 40),
+              const CircularProgressIndicator(),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
