@@ -3,10 +3,12 @@ import 'dart:io' show Platform;
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
+// REQUIRED for accessing Android-specific WebViewController methods
+import 'package:webview_flutter_android/webview_flutter_android.dart';
 
 /// Fetches HTML content using a headless WebView.
 /// 
-/// This is used as a fallback when normal HTTP requests fail with 403
+/// This is used as a fallback when normal HTTP requests fail with 403, 503, or 429
 /// due to bot detection. WebView uses the platform's native browser engine
 /// which has a proper TLS fingerprint that sites accept.
 class WebViewFetcher {
@@ -24,7 +26,8 @@ class WebViewFetcher {
   /// Fetch HTML content from a URL using a headless WebView.
   /// 
   /// Returns the page's HTML content, or throws an exception on failure.
-  /// The WebView is shown briefly but positioned off-screen so it is invisible.
+  /// The WebView is rendered full-screen to bypass DataDome sizing checks, 
+  /// but covered by an opaque loading overlay.
   /// 
   /// Throws [UnsupportedError] if WebView is not supported on this platform.
   static Future<String> fetchHtml(BuildContext context, String url, {Duration timeout = const Duration(seconds: 30)}) async {
@@ -45,9 +48,6 @@ class WebViewFetcher {
     }
 
     // Clear stale cookies from any previous (failed) session.
-    // Cloudflare and DataDome store a "blocked" session token on the first
-    // rejected request. Subsequent requests carry that token and are
-    // immediately re-blocked even with a clean User-Agent.
     await WebViewCookieManager().clearCookies();
 
     final completer = Completer<String>();
@@ -56,13 +56,7 @@ class WebViewFetcher {
     late final OverlayEntry overlayEntry;
     
     controller = WebViewController()
-      // JavaScript must be unrestricted — Cloudflare Turnstile and DataDome
-      // both rely on JS execution to solve challenges and set pass cookies.
       ..setJavaScriptMode(JavaScriptMode.unrestricted)
-      // Spoof the User-Agent to a standard Android Chrome string.
-      // Android WebView normally injects a ' wv' marker (e.g., "Chrome/123 wv Mobile")
-      // that Cloudflare and DataDome use as a hard signal to block the request.
-      // This UA matches a real Samsung Galaxy Chrome browser with no wv tag.
       ..setUserAgent(
         'Mozilla/5.0 (Linux; Android 13; SM-S908U) AppleWebKit/537.36 '
         '(KHTML, like Gecko) Chrome/123.0.6312.40 Mobile Safari/537.36',
@@ -71,9 +65,6 @@ class WebViewFetcher {
         NavigationDelegate(
           onPageFinished: (String finishedUrl) async {
             // Wait for JS challenges (e.g., Cloudflare Turnstile, DataDome) to complete.
-            // onPageFinished fires when document.readyState === 'complete', but bot-protection
-            // scripts run asynchronously after that. 4 seconds gives the challenge enough
-            // time to execute and redirect before we extract the DOM.
             await Future.delayed(const Duration(seconds: 4));
             
             try {
@@ -82,17 +73,13 @@ class WebViewFetcher {
                 'document.documentElement.outerHTML',
               );
               
-              // Remove overlay
               overlayEntry.remove();
               
               if (!completer.isCompleted) {
-                // The result comes back as a JSON-encoded string, need to decode it
                 String htmlString = html.toString();
-                // Remove surrounding quotes if present
                 if (htmlString.startsWith('"') && htmlString.endsWith('"')) {
                   htmlString = htmlString.substring(1, htmlString.length - 1);
                 }
-                // Unescape the string
                 htmlString = htmlString
                     .replaceAll(r'\n', '\n')
                     .replaceAll(r'\t', '\t')
@@ -118,28 +105,49 @@ class WebViewFetcher {
         ),
       );
 
-    // Create a tiny overlay to host the WebView (required for rendering).
-    // Positioned off-screen so it is invisible to the user.
+    // DATADOME BYPASS: Safely apply Android-specific media playback rules.
+    // Cloudflare/DataDome embed invisible audio nodes for fingerprinting.
+    if (controller.platform is AndroidWebViewController) {
+      final androidController = controller.platform as AndroidWebViewController;
+      androidController.setMediaPlaybackRequiresUserGesture(false);
+    }
+
+    // Get screen size so we can give DataDome a realistic viewport
+    final screenSize = MediaQuery.of(context).size;
+
+    // Create a full-screen overlay to host the WebView.
+    // DataDome checks window.innerWidth/innerHeight. If it's 1x1, it blocks us.
     overlayEntry = OverlayEntry(
       builder: (context) => Positioned(
-        left: -10000,  // Off-screen
-        top: -10000,
-        width: 1,
-        height: 1,
-        child: WebViewWidget(controller: controller),
+        left: 0, 
+        top: 0,
+        width: screenSize.width,
+        height: screenSize.height,
+        child: Stack(
+          children: [
+            // Bottom layer: The actual WebView doing the work
+            WebViewWidget(controller: controller),
+            
+            // Top layer: An opaque cover matching your app's background
+            // so the user just sees a loading state, not the recipe site.
+            Container(
+              color: Theme.of(context).scaffoldBackgroundColor,
+              child: const Center(
+                child: CircularProgressIndicator(),
+              ),
+            ),
+          ],
+        ),
       ),
     );
     
     Overlay.of(context).insert(overlayEntry);
 
-    // Clear the WebView's on-disk cache after the controller is mounted.
-    // This removes any cached responses from previous blocked requests so
-    // the site sees a completely fresh client.
+    // Clear cache after mounting, before loading
     await controller.clearCache();
 
     await controller.loadRequest(uri);
 
-    // Timeout accounts for: page load + 4 s JS-challenge wait + network latency.
     Timer(timeout, () {
       if (!completer.isCompleted) {
         overlayEntry.remove();
