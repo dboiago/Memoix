@@ -12,6 +12,7 @@ import '../../features/ai/services/ai_service.dart';
 import '../../features/ai/services/memoix_ai_service.dart';
 import '../../features/import/models/recipe_import_result.dart';
 import '../../features/import/screens/import_review_screen.dart';
+import '../../features/import/screens/url_import_screen.dart' show SpecializedCourses;
 import '../../features/import/services/ocr_importer.dart';
 import '../../features/recipes/screens/recipe_edit_screen.dart';
 import '../../features/sharing/services/share_service.dart';
