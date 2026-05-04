@@ -49,11 +49,16 @@ class ShareHandlerService {
 
   void initialize() {
     _channel.setMethodCallHandler(_onMethodCall);
-    // Drain any event that was queued before initialize() was called.
+    // Drain any event that arrived before the engine/navigator was ready.
+    // On a cold start the share intent is queued before the first frame has
+    // painted, so we delay briefly to let the Home screen complete its initial
+    // layout before attempting to show a dialog.
     final pending = _pendingEvent;
     if (pending != null) {
       _pendingEvent = null;
-      _dispatchEvent(pending);
+      Future.delayed(const Duration(milliseconds: 300), () {
+        _dispatchEvent(pending);
+      });
     }
   }
 
