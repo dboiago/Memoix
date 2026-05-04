@@ -665,13 +665,13 @@ class UrlRecipeImporter {
         // Config 1: Dotdash Meredith sites - full Chrome headers as fallback
         if (isDotdashSite) {
           'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36',
-          'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
+          'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
           'Accept-Language': 'en-US,en;q=0.9',
           'Accept-Encoding': 'identity', // Avoid compression - http package has issues with some encodings
           'Connection': 'close', // Disable keep-alive to avoid chunked encoding parsing issues
           'Cache-Control': 'no-cache',
           'Pragma': 'no-cache',
-          'Sec-Ch-Ua': '"Google Chrome";v="137", "Chromium";v="137", "Not_A Brand";v="24"',
+          'Sec-Ch-Ua': '"Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"',
           'Sec-Ch-Ua-Mobile': '?0',
           'Sec-Ch-Ua-Platform': '"Windows"',
           'Sec-Fetch-Dest': 'document',
@@ -683,13 +683,13 @@ class UrlRecipeImporter {
         // Config 2: Standard Chrome browser headers
         {
           'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36',
-          'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
+          'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
           'Accept-Language': 'en-US,en;q=0.9',
           'Accept-Encoding': 'identity', // No compression - safest option
           'Connection': 'close', // Disable keep-alive to avoid chunked encoding parsing issues
           'Referer': origin,
           'Origin': origin,
-          'Sec-Ch-Ua': '"Google Chrome";v="137", "Chromium";v="137", "Not_A Brand";v="24"',
+          'Sec-Ch-Ua': '"Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"',
           'Sec-Ch-Ua-Mobile': '?0',
           'Sec-Ch-Ua-Platform': '"Windows"',
           'Sec-Fetch-Dest': 'document',
@@ -775,12 +775,16 @@ class UrlRecipeImporter {
       bool usedWaybackMachine = false; // Track if we used archive (images won't work)
       
       if (response == null || response.statusCode != 200) {
-        // Check if we got a 403 (bot detection)
-        final is403 = lastError?.contains('403') == true || response?.statusCode == 403;
+        // Trigger bot-protection fallback for:
+        //   403 — hard block, 503 — Cloudflare JS challenge, 429 — DataDome rate limit
+        final isBotBlocked = lastError?.contains('403') == true ||
+            response?.statusCode == 403 ||
+            response?.statusCode == 503 ||
+            response?.statusCode == 429;
         
         // Try Wayback Machine (Internet Archive) as a fallback for blocked sites
         // The Wayback Machine caches most popular recipe sites
-        if (is403) {
+        if (isBotBlocked) {
           try {
             // First, check if the URL is archived and get the latest snapshot
             final availabilityUrl = 'https://archive.org/wayback/available?url=${Uri.encodeComponent(url)}';
@@ -848,6 +852,23 @@ class UrlRecipeImporter {
         // Decode response body - handle encoding errors gracefully
         body = _decodeResponseBody(response);
         document = html_parser.parse(body);
+        
+        // Detect Cloudflare/DataDome JS challenges served with HTTP 200.
+        // These pages return a 200 status but contain no recipe content —
+        // they rely on JavaScript to run the challenge and then redirect.
+        final isSilentBotChallenge = body.contains('Just a moment...') ||
+            body.contains('cf-browser-verification') ||
+            body.contains('Enable JavaScript and cookies to continue') ||
+            body.contains('DDG-CAPTCHA');
+        
+        if (isSilentBotChallenge && context != null && WebViewFetcher.isSupported) {
+          try {
+            body = await WebViewFetcher.fetchHtml(context, url);
+            document = html_parser.parse(body);
+          } catch (_) {
+            // WebView also failed — continue with whatever the challenge page contained
+          }
+        }
       }
       
       // Check if we got a JavaScript shell (no real content)

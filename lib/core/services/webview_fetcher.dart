@@ -43,8 +43,11 @@ class WebViewFetcher {
       ..setNavigationDelegate(
         NavigationDelegate(
           onPageFinished: (String finishedUrl) async {
-            // Wait a moment for any JS rendering
-            await Future.delayed(const Duration(milliseconds: 500));
+            // Wait for JS challenges (e.g., Cloudflare Turnstile, DataDome) to complete.
+            // onPageFinished fires when document.readyState === 'complete', but bot-protection
+            // scripts run asynchronously after that. 4 seconds gives the challenge enough
+            // time to execute and redirect before we extract the DOM.
+            await Future.delayed(const Duration(seconds: 4));
             
             try {
               // Extract the HTML
