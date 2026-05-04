@@ -67,11 +67,6 @@ class WebViewFetcher {
         'Mozilla/5.0 (Linux; Android 13; SM-S908U) AppleWebKit/537.36 '
         '(KHTML, like Gecko) Chrome/123.0.6312.40 Mobile Safari/537.36',
       )
-      // Allow media autoplay without a gesture.
-      // Cloudflare Turnstile can embed invisible media elements as part of
-      // its challenge. If the WebView blocks autoplay, those elements stall
-      // and the challenge never resolves.
-      ..setMediaPlaybackRequiresUserGesture(false)
       ..setNavigationDelegate(
         NavigationDelegate(
           onPageFinished: (String finishedUrl) async {
