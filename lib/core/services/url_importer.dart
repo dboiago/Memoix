@@ -6151,6 +6151,15 @@ class UrlRecipeImporter {
       r'^[\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚]|^\d+/\d+',
     );
 
+    // Only stop traversal at headings that represent a genuine recipe-section
+    // boundary.  Utility/promotional headings (e.g. "Use our magic wand to
+    // update this recipe!", "Understanding Flavour") must be passed through so
+    // that ingredient content located below them is still captured.
+    final sectionBoundaryPattern = RegExp(
+      r'^(?:instructions?|method|steps?|directions?|notes?\b|tips?\b|faq|about|nutrition|more\s+recipes?|related)',
+      caseSensitive: false,
+    );
+
     final headings = document.querySelectorAll('h2, h3');
 
     for (final heading in headings) {
@@ -6160,14 +6169,38 @@ class UrlRecipeImporter {
       if (headingText.length > 40) continue;
       if (!headingText.toLowerCase().contains('ingredient')) continue;
 
+      // Skip nav-anchor wrapped headings (e.g. Chakra UI table-of-contents
+      // links: <a class="chakra-link"><h2>Ingredients</h2></a>).  These have
+      // no ingredient siblings — the real section heading follows later.
+      final parentTag = ((heading as dynamic).parent?.localName ?? '').toLowerCase();
+      if (parentTag == 'a') continue;
+
       final rawLines = <String>[];
       final seen = <String>{};
       var sibling = heading.nextElementSibling;
 
+      // If the heading is the last child of its container, climb one level so
+      // we can start from the container's next sibling (handles layouts where
+      // the heading wrapper and the ingredient grid are peer elements).
+      if (sibling == null) {
+        try {
+          sibling = (heading as dynamic).parent?.nextElementSibling;
+        } catch (_) {
+          // parent may not support nextElementSibling; ignore
+        }
+      }
+
       while (sibling != null) {
         final tag = (sibling.localName ?? '').toLowerCase();
-        // Stop at the next structural heading (e.g., "Instructions")
-        if (tag == 'h1' || tag == 'h2' || tag == 'h3') break;
+        // Always stop at h1.
+        if (tag == 'h1') break;
+        // Stop at h2/h3 only when the heading text looks like a genuine recipe
+        // section boundary.  Pass through promotional/utility headings.
+        if (tag == 'h2' || tag == 'h3') {
+          final sibText = ((sibling as dynamic).text ?? '').trim();
+          if (sectionBoundaryPattern.hasMatch(sibText)) break;
+          // Otherwise fall through — collect content under this utility heading.
+        }
 
         // Collect text lines from this sibling and its entire subtree
         _rescueExtractLines(sibling, rawLines, seen);
