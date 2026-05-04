@@ -11,6 +11,7 @@ import 'routes/router.dart';
 import '../core/providers.dart';
 import '../core/providers/app_init_provider.dart';
 import '../core/services/deep_link_service.dart';
+import '../core/services/share_handler_service.dart';
 import '../core/services/integrity_service.dart';
 import '../core/services/memoix_recipe_service.dart';
 import '../core/widgets/memoix_snackbar.dart';
@@ -82,6 +83,7 @@ class _DeepLinkWrapperState extends ConsumerState<_DeepLinkWrapper>
     WidgetsBinding.instance.addPostFrameCallback((_) {
       processIntegrityResponses(ref);
       ref.read(deepLinkServiceProvider).initialize(context);
+      ref.read(shareHandlerServiceProvider).initialize();
       _performBackgroundSync();
       _setupTimerAlarmCallbacks();
       _triggerPersonalStorageSync();
@@ -186,6 +188,7 @@ class _DeepLinkWrapperState extends ConsumerState<_DeepLinkWrapper>
   void dispose() {
     WidgetsBinding.instance.removeObserver(this);
     ref.read(deepLinkServiceProvider).dispose();
+    ref.read(shareHandlerServiceProvider).dispose();
     super.dispose();
   }
 
