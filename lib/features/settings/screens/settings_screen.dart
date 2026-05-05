@@ -342,17 +342,6 @@ class SettingsScreen extends ConsumerWidget {
 
           // Data section
           const _SectionHeader(title: 'Data'),
-          SwitchListTile(
-            title: const Text('Contribute to Culinary Intelligence'),
-            subtitle: const Text(
-              'Allow your recipe data to help train a future AI model. '
-              'Per-recipe sharing can be adjusted from each recipe\'s menu. '
-              'No data leaves your device until a backend is connected.',
-            ),
-            value: ref.watch(contributeToIntelligenceProvider),
-            onChanged: (_) =>
-                ref.read(contributeToIntelligenceProvider.notifier).toggle(),
-          ),
           _ExportMyRecipesTile(ref: ref),
           ListTile(
             leading: const Icon(Icons.file_upload),
@@ -394,6 +383,17 @@ class SettingsScreen extends ConsumerWidget {
                 MemoixSnackBar.showError('Import failed: $e');
               }
             },
+          ),
+          SwitchListTile(
+            leading: const Icon(Icons.tune),
+            title: const Text('Improve recipe understanding'),
+            subtitle: const Text(
+              'Allow selected recipes and results to improve search, scaling, and adaptations. '
+              'Data stays on your device unless you enable sharing. ',
+            ),
+            value: ref.watch(contributeToIntelligenceProvider),
+            onChanged: (_) =>
+                ref.read(contributeToIntelligenceProvider.notifier).toggle(),
           ),
 
           const Divider(),
