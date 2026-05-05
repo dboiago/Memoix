@@ -1,3 +1,43 @@
+## Memoix - v1.2.0+9 - 2026-05-05
+
+### Added
+
+- Full Android share integration (text, URLs, single/multiple images) via platform `MethodChannel`
+- `ShareHandlerService` for unified handling of cold/warm share flows and navigation dispatch
+- Low-confidence ingredient recovery pipeline when primary parsing fails (fallback extraction with review flag)
+- Sendable SVG asset pipeline to prevent isolate crashes and cache poisoning in release builds
+
+### Changed
+
+- Web import fallback logic expanded; now detects bot-block responses (403/429/503 + challenge markers) and escalates immediately
+- HTTP header set modernised to match current Chrome fingerprinting expectations
+- WebView fallback behaviour refined:
+  - Full-viewport rendering to satisfy anti-bot viewport checks
+  - Cookie + cache clearing before load to avoid persistent blocks
+  - Extended JS challenge wait window to allow async verification to complete
+- Share flow refactored to a single controlled lifecycle (dialog, parsing, navigation sequencing)
+- Android launch mode changed to `singleTask` to prevent multiple app instances from share intents
+- URL validation moved ahead of all WebView/controller initialisation (prevents resource leaks)
+- Default import timeout increased to 30s to account for challenge resolution delays
+
+### Fixed
+
+- Ingredient parsing edge cases:
+  - Anchor-wrapped headings no longer terminate traversal
+  - Non-section utility headings no longer prematurely stop extraction
+  - Added guarded parent traversal fallback for malformed DOM structures
+- Runtime type error in ingredient heading detection (`.any` → explicit loop)
+- Share error UX: all errors now persistent with copyable output for debugging
+- Cold-start share race condition (queued events now drained after navigator readiness)
+- SVG rendering crash in AOT/release due to non-sendable `AssetBundle` futures
+- Keyboard overlap in `ScratchPadScreen` via `resizeToAvoidBottomInset`
+
+### Removed
+
+- Redundant / ineffective WebView media playback override (platform-restricted API)
+- Partial anti-bot bypass attempts that did not generalise beyond niche sites
+
+
 ## Memoix - v1.1.1+8 - 2026-04-30
 
 ### Added
