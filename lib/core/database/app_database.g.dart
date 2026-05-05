@@ -1179,6 +1179,7 @@ class Recipe extends DataClass implements Insertable<Recipe> {
             scienceNotes.present ? scienceNotes.value : this.scienceNotes,
         equipmentJson:
             equipmentJson.present ? equipmentJson.value : this.equipmentJson,
+        isShared: isShared ?? this.isShared,
       );
   Recipe copyWithCompanion(RecipesCompanion data) {
     return Recipe(
