@@ -69,9 +69,6 @@ class CulinaryIntelligenceBottomSheet extends ConsumerWidget {
                   await ref
                       .read(contributeToIntelligenceProvider.notifier)
                       .toggle();
-                  await ref
-                      .read(hasSeenIntelligenceOptInProvider.notifier)
-                      .markSeen();
                   if (context.mounted) Navigator.pop(context);
                 },
                 child: const Text('Enable'),
@@ -80,11 +77,8 @@ class CulinaryIntelligenceBottomSheet extends ConsumerWidget {
             SizedBox(
               width: double.infinity,
               child: TextButton(
-                onPressed: () async {
-                  await ref
-                      .read(hasSeenIntelligenceOptInProvider.notifier)
-                      .markSeen();
-                  if (context.mounted) Navigator.pop(context);
+                onPressed: () {
+                  Navigator.pop(context);
                 },
                 child: const Text('Not now'),
               ),
@@ -112,10 +106,16 @@ class CulinaryIntelligenceBottomSheet extends ConsumerWidget {
 }
 
 /// Shows [CulinaryIntelligenceBottomSheet] as a modal bottom sheet.
-Future<void> showCulinaryIntelligenceSheet(BuildContext context) {
+///
+/// Marks the prompt as seen via [hasSeenIntelligenceOptInProvider] when the
+/// sheet is dismissed, regardless of how the user closes it (button tap,
+/// background tap, or swipe-down).
+Future<void> showCulinaryIntelligenceSheet(BuildContext context, WidgetRef ref) {
   return showModalBottomSheet<void>(
     context: context,
     isScrollControlled: true,
     builder: (_) => const CulinaryIntelligenceBottomSheet(),
-  );
+  ).whenComplete(() async {
+    await ref.read(hasSeenIntelligenceOptInProvider.notifier).markSeen();
+  });
 }
