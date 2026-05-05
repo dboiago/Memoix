@@ -385,7 +385,7 @@ class SettingsScreen extends ConsumerWidget {
             },
           ),
           SwitchListTile(
-            leading: const Icon(Icons.tune),
+            secondary: const Icon(Icons.tune),
             title: const Text('Improve recipe understanding'),
             subtitle: const Text(
               'Allow selected recipes and results to improve search, scaling, and adaptations. '
