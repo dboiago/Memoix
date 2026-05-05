@@ -3,29 +3,29 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 
 import '../models/knowledge_payload.dart';
+import 'rag_transmission_client.dart';
 import '../../features/recipes/models/recipe.dart';
 import '../../features/settings/screens/settings_screen.dart';
 
 /// Decoupled service for the Culinary Intelligence RAG pipeline.
 ///
-/// This service is intentionally forward-looking: it has no backend dependency.
-/// When [queueForExport] is called it validates the privacy gates, constructs a
-/// [KnowledgePayload], and outputs the formatted JSON to the debug console.
-///
-/// When a backend is eventually configured, replace the [debugPrint] call with
-/// an HTTP POST to the appropriate endpoint. No other logic needs to change.
+/// Validates privacy gates, constructs a [KnowledgePayload], and delegates
+/// transmission to the injected [RagTransmissionClient]. The default client
+/// is [ConsoleTransmissionClient]; swap it for a network client when a
+/// backend is available — no other code needs to change.
 ///
 /// **Privacy guarantees enforced here:**
-/// 1. The master 'Contribute to Culinary Intelligence' switch must be ON.
-/// 2. The individual [Recipe.isShared] flag must be true.
+/// 1. The individual [Recipe.isShared] flag must be true.
+/// 2. The master 'Contribute to Culinary Intelligence' switch must be ON.
 /// If either condition fails, the method returns immediately with no side effects.
 class RagTelemetryService {
   final Ref _ref;
+  final RagTransmissionClient _client;
 
-  RagTelemetryService(this._ref);
+  RagTelemetryService(this._ref, this._client);
 
-  /// Validates privacy gates, constructs a [KnowledgePayload], and outputs the
-  /// serialised JSON to the debug console.
+  /// Validates privacy gates, constructs a [KnowledgePayload], and delegates
+  /// to [RagTransmissionClient.transmit].
   ///
   /// [recipe] — the fully hydrated recipe to export.
   /// [rawSource] — the original text that produced this recipe (OCR, URL, typed input, etc.).
@@ -65,16 +65,13 @@ class RagTelemetryService {
       metadata: metadata,
     );
 
-    // No backend yet \u2014 output the structured payload to the console for validation.
-    debugPrint(
-      '\n\u250c\u2500 RagTelemetryService: KnowledgePayload \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n'
-      '${payload.toPrettyJson()}'
-      '\n\u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n',
-    );
+    await _client.transmit(payload);
   }
 }
 
 /// Provider for [RagTelemetryService].
+/// Injects [ConsoleTransmissionClient] as the default transmission strategy.
+/// Replace with a network client here when a backend is configured.
 final ragTelemetryServiceProvider = Provider<RagTelemetryService>((ref) {
-  return RagTelemetryService(ref);
+  return RagTelemetryService(ref, const ConsoleTransmissionClient());
 });

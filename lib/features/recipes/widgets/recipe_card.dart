@@ -9,7 +9,6 @@ import '../../../app/routes/router.dart';
 import '../../../core/providers.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
 import '../../../core/services/integrity_service.dart';
-import '../../../core/services/rag_telemetry_service.dart';
 import '../../../core/utils/unit_normalizer.dart';
 import '../../../app/theme/colours.dart';
 import '../../../shared/widgets/memoix_card_shell.dart';
@@ -233,16 +232,7 @@ class _RecipeCardState extends ConsumerState<RecipeCard> {
                   ),
                   color: theme.colorScheme.onSurfaceVariant,
                   onPressed: () {
-                    unawaited(ref.read(cookingStatsServiceProvider).logCook(
-                      recipeId: widget.recipe.uuid,
-                      recipeName: widget.recipe.name,
-                      course: widget.recipe.course,
-                      cuisine: widget.recipe.course?.toLowerCase() == 'drinks'
-                          ? widget.recipe.subcategory
-                          : widget.recipe.cuisine,
-                    ));
-                    // Fire-and-forget: capture the cooked state for Culinary Intelligence.
-                    unawaited(ref.read(ragTelemetryServiceProvider).queueForExport(widget.recipe));
+                    unawaited(ref.read(recipeRepositoryProvider).logCookForRecipe(widget.recipe));
                     MemoixSnackBar.showLoggedCook(
                       recipeName: widget.recipe.name,
                       onViewStats: () => AppRoutes.toStatistics(context),
