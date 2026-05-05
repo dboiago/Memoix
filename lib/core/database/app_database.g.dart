@@ -298,6 +298,16 @@ class $RecipesTable extends Recipes with TableInfo<$RecipesTable, Recipe> {
   late final GeneratedColumn<String> equipmentJson = GeneratedColumn<String>(
       'equipment_json', aliasedName, true,
       type: DriftSqlType.string, requiredDuringInsert: false);
+  static const VerificationMeta _isSharedMeta =
+      const VerificationMeta('isShared');
+  @override
+  late final GeneratedColumn<bool> isShared = GeneratedColumn<bool>(
+      'is_shared', aliasedName, false,
+      type: DriftSqlType.bool,
+      requiredDuringInsert: false,
+      defaultConstraints:
+          GeneratedColumn.constraintIsAlways('CHECK ("is_shared" IN (0, 1))'),
+      defaultValue: const Constant(true));
   @override
   List<GeneratedColumn> get $columns => [
         id,
@@ -343,7 +353,8 @@ class $RecipesTable extends Recipes with TableInfo<$RecipesTable, Recipe> {
         technique,
         difficulty,
         scienceNotes,
-        equipmentJson
+        equipmentJson,
+        isShared
       ];
   @override
   String get aliasedName => _alias ?? actualTableName;
@@ -576,6 +587,10 @@ class $RecipesTable extends Recipes with TableInfo<$RecipesTable, Recipe> {
           equipmentJson.isAcceptableOrUnknown(
               data['equipment_json']!, _equipmentJsonMeta));
     }
+    if (data.containsKey('is_shared')) {
+      context.handle(_isSharedMeta,
+          isShared.isAcceptableOrUnknown(data['is_shared']!, _isSharedMeta));
+    }
     return context;
   }
 
@@ -673,6 +688,8 @@ class $RecipesTable extends Recipes with TableInfo<$RecipesTable, Recipe> {
           .read(DriftSqlType.string, data['${effectivePrefix}science_notes']),
       equipmentJson: attachedDatabase.typeMapping
           .read(DriftSqlType.string, data['${effectivePrefix}equipment_json']),
+      isShared: attachedDatabase.typeMapping
+          .read(DriftSqlType.bool, data['${effectivePrefix}is_shared'])!,
     );
   }
 
@@ -727,6 +744,7 @@ class Recipe extends DataClass implements Insertable<Recipe> {
   final String? difficulty;
   final String? scienceNotes;
   final String? equipmentJson;
+  final bool isShared;
   const Recipe(
       {required this.id,
       required this.uuid,
@@ -771,7 +789,8 @@ class Recipe extends DataClass implements Insertable<Recipe> {
       this.technique,
       this.difficulty,
       this.scienceNotes,
-      this.equipmentJson});
+      this.equipmentJson,
+      required this.isShared});
   @override
   Map<String, Expression> toColumns(bool nullToAbsent) {
     final map = <String, Expression>{};
@@ -865,6 +884,7 @@ class Recipe extends DataClass implements Insertable<Recipe> {
     if (!nullToAbsent || equipmentJson != null) {
       map['equipment_json'] = Variable<String>(equipmentJson);
     }
+    map['is_shared'] = Variable<bool>(isShared);
     return map;
   }
 
@@ -956,6 +976,7 @@ class Recipe extends DataClass implements Insertable<Recipe> {
       equipmentJson: equipmentJson == null && nullToAbsent
           ? const Value.absent()
           : Value(equipmentJson),
+      isShared: Value(isShared),
     );
   }
 
@@ -1007,6 +1028,7 @@ class Recipe extends DataClass implements Insertable<Recipe> {
       difficulty: serializer.fromJson<String?>(json['difficulty']),
       scienceNotes: serializer.fromJson<String?>(json['scienceNotes']),
       equipmentJson: serializer.fromJson<String?>(json['equipmentJson']),
+      isShared: serializer.fromJson<bool>(json['isShared']),
     );
   }
   @override
@@ -1057,6 +1079,7 @@ class Recipe extends DataClass implements Insertable<Recipe> {
       'difficulty': serializer.toJson<String?>(difficulty),
       'scienceNotes': serializer.toJson<String?>(scienceNotes),
       'equipmentJson': serializer.toJson<String?>(equipmentJson),
+      'isShared': serializer.toJson<bool>(isShared),
     };
   }
 
@@ -1104,7 +1127,8 @@ class Recipe extends DataClass implements Insertable<Recipe> {
           Value<String?> technique = const Value.absent(),
           Value<String?> difficulty = const Value.absent(),
           Value<String?> scienceNotes = const Value.absent(),
-          Value<String?> equipmentJson = const Value.absent()}) =>
+          Value<String?> equipmentJson = const Value.absent(),
+          bool? isShared}) =>
       Recipe(
         id: id ?? this.id,
         uuid: uuid ?? this.uuid,
@@ -1227,6 +1251,7 @@ class Recipe extends DataClass implements Insertable<Recipe> {
       equipmentJson: data.equipmentJson.present
           ? data.equipmentJson.value
           : this.equipmentJson,
+      isShared: data.isShared.present ? data.isShared.value : this.isShared,
     );
   }
 
@@ -1277,6 +1302,7 @@ class Recipe extends DataClass implements Insertable<Recipe> {
           ..write('difficulty: $difficulty, ')
           ..write('scienceNotes: $scienceNotes, ')
           ..write('equipmentJson: $equipmentJson')
+          ..write('isShared: $isShared')
           ..write(')'))
         .toString();
   }
@@ -1326,7 +1352,8 @@ class Recipe extends DataClass implements Insertable<Recipe> {
         technique,
         difficulty,
         scienceNotes,
-        equipmentJson
+        equipmentJson,
+        isShared
       ]);
   @override
   bool operator ==(Object other) =>
@@ -1375,7 +1402,8 @@ class Recipe extends DataClass implements Insertable<Recipe> {
           other.technique == this.technique &&
           other.difficulty == this.difficulty &&
           other.scienceNotes == this.scienceNotes &&
-          other.equipmentJson == this.equipmentJson);
+          other.equipmentJson == this.equipmentJson &&
+          other.isShared == this.isShared);
 }
 
 class RecipesCompanion extends UpdateCompanion<Recipe> {
@@ -1423,6 +1451,7 @@ class RecipesCompanion extends UpdateCompanion<Recipe> {
   final Value<String?> difficulty;
   final Value<String?> scienceNotes;
   final Value<String?> equipmentJson;
+  final Value<bool> isShared;
   const RecipesCompanion({
     this.id = const Value.absent(),
     this.uuid = const Value.absent(),
@@ -1468,6 +1497,7 @@ class RecipesCompanion extends UpdateCompanion<Recipe> {
     this.difficulty = const Value.absent(),
     this.scienceNotes = const Value.absent(),
     this.equipmentJson = const Value.absent(),
+    this.isShared = const Value.absent(),
   });
   RecipesCompanion.insert({
     this.id = const Value.absent(),
@@ -1514,6 +1544,7 @@ class RecipesCompanion extends UpdateCompanion<Recipe> {
     this.difficulty = const Value.absent(),
     this.scienceNotes = const Value.absent(),
     this.equipmentJson = const Value.absent(),
+    this.isShared = const Value.absent(),
   })  : uuid = Value(uuid),
         name = Value(name),
         course = Value(course),
@@ -1564,6 +1595,7 @@ class RecipesCompanion extends UpdateCompanion<Recipe> {
     Expression<String>? difficulty,
     Expression<String>? scienceNotes,
     Expression<String>? equipmentJson,
+    Expression<bool>? isShared,
   }) {
     return RawValuesInsertable({
       if (id != null) 'id': id,
@@ -1610,6 +1642,7 @@ class RecipesCompanion extends UpdateCompanion<Recipe> {
       if (difficulty != null) 'difficulty': difficulty,
       if (scienceNotes != null) 'science_notes': scienceNotes,
       if (equipmentJson != null) 'equipment_json': equipmentJson,
+      if (isShared != null) 'is_shared': isShared,
     });
   }
 
@@ -1657,7 +1690,8 @@ class RecipesCompanion extends UpdateCompanion<Recipe> {
       Value<String?>? technique,
       Value<String?>? difficulty,
       Value<String?>? scienceNotes,
-      Value<String?>? equipmentJson}) {
+      Value<String?>? equipmentJson,
+      Value<bool>? isShared}) {
     return RecipesCompanion(
       id: id ?? this.id,
       uuid: uuid ?? this.uuid,
@@ -1703,6 +1737,7 @@ class RecipesCompanion extends UpdateCompanion<Recipe> {
       difficulty: difficulty ?? this.difficulty,
       scienceNotes: scienceNotes ?? this.scienceNotes,
       equipmentJson: equipmentJson ?? this.equipmentJson,
+      isShared: isShared ?? this.isShared,
     );
   }
 
@@ -1841,6 +1876,9 @@ class RecipesCompanion extends UpdateCompanion<Recipe> {
     if (equipmentJson.present) {
       map['equipment_json'] = Variable<String>(equipmentJson.value);
     }
+    if (isShared.present) {
+      map['is_shared'] = Variable<bool>(isShared.value);
+    }
     return map;
   }
 
@@ -1891,6 +1929,7 @@ class RecipesCompanion extends UpdateCompanion<Recipe> {
           ..write('difficulty: $difficulty, ')
           ..write('scienceNotes: $scienceNotes, ')
           ..write('equipmentJson: $equipmentJson')
+          ..write('isShared: $isShared')
           ..write(')'))
         .toString();
   }

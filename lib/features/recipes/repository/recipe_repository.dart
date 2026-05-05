@@ -73,6 +73,7 @@ typedef _RecipeRaw = ({
   String? glass,
   String garnish,
   String? pickleMethod,
+  bool isShared,
 });
 
 /// Single ingredient row as a primitive record (no JSON columns).
@@ -131,6 +132,7 @@ typedef _RecipeDecoded = ({
   String? glass,
   List<String> garnish,
   String? pickleMethod,
+  bool isShared,
   List<_IngRaw> ingredients,
 });
 
@@ -176,6 +178,7 @@ _RecipeRaw _toRecipeRaw(db.Recipe r) => (
       glass: r.glass,
       garnish: r.garnish,
       pickleMethod: r.pickleMethod,
+      isShared: r.isShared,
     );
 
 /// Converts a Drift [db.Ingredient] row to an [_IngRaw] record.
@@ -297,6 +300,7 @@ List<_RecipeDecoded> _batchDecodeRecipes(
         glass: r.glass,
         garnish: (jsonDecode(r.garnish) as List).cast<String>(),
         pickleMethod: r.pickleMethod,
+        isShared: r.isShared,
         ingredients: ings,
       ),);
     } catch (_) {
@@ -357,6 +361,7 @@ class RecipeRepository {
       glass: Value(recipe.glass),
       garnish: Value(jsonEncode(recipe.garnish)),
       pickleMethod: Value(recipe.pickleMethod),
+      isShared: Value(recipe.isShared),
       recipeType: const Value('standard'),
       technique: const Value(null),
       difficulty: const Value(null),
@@ -428,6 +433,7 @@ class RecipeRepository {
       ..glass = r.glass
       ..garnish = (jsonDecode(r.garnish) as List).cast<String>()
       ..pickleMethod = r.pickleMethod
+      ..isShared = r.isShared
       ..ingredients = ings
           .map((i) => Ingredient()
             ..uuid = i.uuid
@@ -585,6 +591,7 @@ class RecipeRepository {
           ..glass = d.glass
           ..garnish = d.garnish
           ..pickleMethod = d.pickleMethod
+          ..isShared = d.isShared
           ..ingredients = d.ingredients
               .map((i) => Ingredient()
                 ..uuid = i.uuid
@@ -973,6 +980,14 @@ class RecipeRepository {
     );
 
     return [];
+  }
+
+  /// Toggles the Culinary Intelligence sharing flag for a recipe.
+  /// This is a lightweight write: no integrity hooks, no sync \u2014 it is strictly local.
+  Future<void> toggleShared(int id) async {
+    final existing = await getRecipeById(id);
+    if (existing == null) return;
+    await _db.recipeDao.toggleShared(id, existing.isShared);
   }
 
   Stream<List<Recipe>> watchAllRecipes() {

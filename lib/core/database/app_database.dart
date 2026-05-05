@@ -79,6 +79,9 @@ class Recipes extends Table {
   TextColumn get scienceNotes => text().nullable()();
   // List<String> stored as JSON array — modernist equipment
   TextColumn get equipmentJson => text().nullable()();
+  // Whether this recipe's data may be contributed to the Culinary Intelligence pipeline
+  // Defaults to true (opt-in per-recipe), but the master privacy switch must ALSO be on.
+  BoolColumn get isShared => boolean().withDefault(const Constant(true))();
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -481,7 +484,7 @@ class AppDatabase extends _$AppDatabase {
   }
 
   @override
-  int get schemaVersion => 4;
+  int get schemaVersion => 5;
 
   @override
   MigrationStrategy get migration => MigrationStrategy(
@@ -578,6 +581,15 @@ class AppDatabase extends _$AppDatabase {
           CREATE INDEX IF NOT EXISTS idx_recipe_images_recipe_id
           ON recipe_images (recipe_id)
         ''');
+      }
+      if (from < 5) {
+        // Add the Culinary Intelligence sharing flag.
+        // Guard with PRAGMA so repeated partial migrations are safe.
+        final recipeCols =
+            await customSelect('PRAGMA table_info(recipes)').get();
+        if (!recipeCols.any((r) => r.read<String>('name') == 'is_shared')) {
+          await m.addColumn(recipes, recipes.isShared);
+        }
       }
     },
   );

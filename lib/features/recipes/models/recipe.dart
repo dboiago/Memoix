@@ -140,6 +140,10 @@ class Recipe {
   /// Domain type discriminator: 'standard' | 'modernist' | 'smoking'
   String recipeType = 'standard';
 
+  /// Whether this recipe's data may be contributed to the Culinary Intelligence pipeline.
+  /// Defaults to true per-recipe; the master privacy switch must ALSO be enabled.
+  bool isShared = true;
+
   /// Whether this recipe type supports pairing with other recipes.
   /// Excluded: Pizzas, Sandwiches, Cellar, Cheese (component assemblies or non-recipes)
   bool get supportsPairing {
@@ -278,6 +282,9 @@ class Recipe {
       ..smokingType = json['smokingType']?.toString()
       ..recipeType = json['recipeType']?.toString() ?? 'standard';
 
+    // isShared defaults true — existing records not exported until master switch is on
+    recipe.isShared = json['isShared'] as bool? ?? true;
+
     if (json['createdAt'] != null) {
       recipe.createdAt = DateTime.parse(json['createdAt'].toString()).toUtc();
     }
@@ -332,6 +339,7 @@ class Recipe {
       if (glass != null) 'glass': glass,
       if (garnish.isNotEmpty) 'garnish': garnish,
       if (pickleMethod != null) 'pickleMethod': pickleMethod,
+      'isShared': isShared,
     };
   }
 

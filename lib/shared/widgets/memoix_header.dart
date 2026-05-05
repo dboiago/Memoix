@@ -30,6 +30,8 @@ class MemoixHeader extends StatelessWidget {
     this.onEditPressed,
     this.onDuplicatePressed,
     this.onDeletePressed,
+    this.isShared,
+    this.onToggleSharedPressed,
   });
 
   /// The title to display in the header.
@@ -61,6 +63,13 @@ class MemoixHeader extends StatelessWidget {
 
   /// Callback when delete is selected from menu.
   final VoidCallback? onDeletePressed;
+
+  /// Current sharing state for the Culinary Intelligence toggle.
+  /// When null, the menu item is hidden (master switch is OFF).
+  final bool? isShared;
+
+  /// Callback when the Culinary Intelligence sharing toggle is selected.
+  final VoidCallback? onToggleSharedPressed;
 
   bool get _hasHeaderImage => headerImage != null && headerImage!.isNotEmpty;
 
@@ -270,6 +279,9 @@ class MemoixHeader extends StatelessWidget {
                     case 'delete':
                       onDeletePressed?.call();
                       break;
+                    case 'toggle_shared':
+                      onToggleSharedPressed?.call();
+                      break;
                   }
                 },
                 constraints: const BoxConstraints(maxWidth: 200),
@@ -280,6 +292,21 @@ class MemoixHeader extends StatelessWidget {
                     const PopupMenuItem(value: 'edit', child: Text('Edit')),
                   if (onDuplicatePressed != null)
                     const PopupMenuItem(value: 'duplicate', child: Text('Duplicate')),
+                  // Culinary Intelligence toggle — only shown when master switch is ON
+                  if (isShared != null && onToggleSharedPressed != null)
+                    PopupMenuItem(
+                      value: 'toggle_shared',
+                      child: Row(
+                        children: [
+                          Icon(
+                            isShared! ? Icons.visibility : Icons.visibility_off,
+                            size: 18,
+                          ),
+                          const SizedBox(width: 8),
+                          Text(isShared! ? 'Shared for Training' : 'Not Sharing'),
+                        ],
+                      ),
+                    ),
                   if (onDeletePressed != null)
                     PopupMenuItem(
                       value: 'delete',

@@ -211,6 +211,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
     bool hasStepImages,
   ) {
     final hasPairs = recipe.supportsPairing && _hasPairedRecipes(ref, recipe);
+    final contributes = ref.watch(contributeToIntelligenceProvider);
 
     return Scaffold(
       // No appBar - we build the header as part of the body
@@ -241,6 +242,15 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
             onEditPressed: () => AppRoutes.toRecipeEdit(context, recipeId: recipe.uuid),
             onDuplicatePressed: () => _duplicateRecipe(context, ref),
             onDeletePressed: () => _confirmDelete(context, ref),
+            isShared: contributes ? recipe.isShared : null,
+            onToggleSharedPressed: contributes
+                ? () async {
+                    await ref
+                        .read(recipeRepositoryProvider)
+                        .toggleShared(recipe.id);
+                    ref.invalidate(allRecipesProvider);
+                  }
+                : null,
           ),
 
           // 2. THE CONTENT (Split View) - Scrollable, sits below header
@@ -622,6 +632,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
     bool hasStepImages,
   ) {
     final hasPairs = recipe.supportsPairing && _hasPairedRecipes(ref, recipe);
+    final contributes = ref.watch(contributeToIntelligenceProvider);
 
     return Scaffold(
       body: Column(
@@ -651,6 +662,15 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
             onEditPressed: () => AppRoutes.toRecipeEdit(context, recipeId: recipe.uuid),
             onDuplicatePressed: () => _duplicateRecipe(context, ref),
             onDeletePressed: () => _confirmDelete(context, ref),
+            isShared: contributes ? recipe.isShared : null,
+            onToggleSharedPressed: contributes
+                ? () async {
+                    await ref
+                        .read(recipeRepositoryProvider)
+                        .toggleShared(recipe.id);
+                    ref.invalidate(allRecipesProvider);
+                  }
+                : null,
           ),
 
           // 2. THE CONTENT - Scrollable

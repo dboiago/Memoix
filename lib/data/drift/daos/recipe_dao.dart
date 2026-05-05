@@ -137,6 +137,12 @@ class RecipeDao extends DatabaseAccessor<AppDatabase>
         RecipesCompanion(isFavorite: Value(!current)),
       );
 
+  /// Writes the inverse of [current] for the Culinary Intelligence sharing flag.
+  Future<void> toggleShared(int id, bool current) =>
+      (update(recipes)..where((r) => r.id.equals(id))).write(
+        RecipesCompanion(isShared: Value(!current)),
+      );
+
   /// Stamps [updatedAt] to now for a single recipe row. No other fields are
   /// touched. Called after ingredient writes to ensure the parent recipe's
   /// timestamp reflects the time all changes settled.
