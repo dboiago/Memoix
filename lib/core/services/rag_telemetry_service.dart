@@ -22,7 +22,10 @@ class RagTelemetryService {
   final Ref _ref;
   final RagTransmissionClient _client;
 
-  RagTelemetryService(this._ref, this._client);
+  /// [client] defaults to [ConsoleTransmissionClient] when omitted.
+  /// Override in tests or when a network backend is wired up.
+  RagTelemetryService(this._ref, [RagTransmissionClient? client])
+      : _client = client ?? const ConsoleTransmissionClient();
 
   /// Validates privacy gates, constructs a [KnowledgePayload], and delegates
   /// to [RagTransmissionClient.transmit].
@@ -70,8 +73,8 @@ class RagTelemetryService {
 }
 
 /// Provider for [RagTelemetryService].
-/// Injects [ConsoleTransmissionClient] as the default transmission strategy.
-/// Replace with a network client here when a backend is configured.
+/// Uses [ConsoleTransmissionClient] by default (via the constructor default).
+/// Replace by overriding this provider with a network client when a backend is configured.
 final ragTelemetryServiceProvider = Provider<RagTelemetryService>((ref) {
-  return RagTelemetryService(ref, const ConsoleTransmissionClient());
+  return RagTelemetryService(ref);
 });
