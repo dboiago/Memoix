@@ -388,7 +388,7 @@ class SettingsScreen extends ConsumerWidget {
             secondary: const Icon(Icons.tune),
             title: const Text('Improve recipe understanding'),
             subtitle: const Text(
-              'Allow selected recipes and results to improve search, scaling, and adaptations. '
+              'Allow selected recipes and results to improve search, scaling, and adaptations. \n'
               'Data stays on your device unless you enable sharing. ',
             ),
             value: ref.watch(contributeToIntelligenceProvider),
