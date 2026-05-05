@@ -1011,6 +1011,24 @@ class RecipeRepository {
     await _db.recipeDao.toggleShared(id, existing.isShared);
   }
 
+  /// Logs a cook event for [recipe] and fires a fire-and-forget Culinary
+  /// Intelligence telemetry export.
+  ///
+  /// This is the single domain-layer entry point for cook logging on standard
+  /// recipes. UI layers call this instead of [CookingStatsService.logCook]
+  /// directly so telemetry is guaranteed regardless of which surface the user taps.
+  Future<void> logCookForRecipe(Recipe recipe) async {
+    await _ref.read(cookingStatsServiceProvider).logCook(
+      recipeId: recipe.uuid,
+      recipeName: recipe.name,
+      course: recipe.course,
+      cuisine: recipe.course?.toLowerCase() == 'drinks'
+          ? recipe.subcategory
+          : recipe.cuisine,
+    );
+    unawaited(_ref.read(ragTelemetryServiceProvider).queueForExport(recipe));
+  }
+
   Stream<List<Recipe>> watchAllRecipes() {
     return _db.recipeDao.watchAllRecipes().asyncMap((rows) async {
       if (rows.isEmpty) return <Recipe>[];
