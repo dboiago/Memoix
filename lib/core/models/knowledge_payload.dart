@@ -16,7 +16,8 @@ class KnowledgePayload {
 
   /// The original raw text that was parsed to produce [recipe].
   /// May be OCR output, URL-scraped HTML, a deep-link string, or typed text.
-  final String rawSource;
+  /// Null when the recipe was created or edited manually without an import source.
+  final String? rawSource;
 
   /// Contextual metadata added at export time.
   /// Includes at minimum: 'deviceLocale' and 'appVersion'.
@@ -24,7 +25,7 @@ class KnowledgePayload {
 
   const KnowledgePayload({
     required this.recipe,
-    required this.rawSource,
+    this.rawSource,
     required this.metadata,
   });
 

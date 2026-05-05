@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
 
@@ -14,6 +15,7 @@ import '../../../core/database/app_database.dart' as db
     show Recipe, Ingredient, Course;
 import '../../../core/providers.dart';
 import '../../../core/services/integrity_service.dart';
+import '../../../core/services/rag_telemetry_service.dart';
 import '../../../core/utils/suggestions.dart';
 import '../../../core/utils/unit_normalizer.dart';
 import '../../personal_storage/services/personal_storage_service.dart';
@@ -825,6 +827,9 @@ class RecipeRepository {
     }
 
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
+    // Fire-and-forget: queue the saved recipe for Culinary Intelligence export.
+    // The service enforces both privacy gates; this call never blocks the UI.
+    unawaited(_ref.read(ragTelemetryServiceProvider).queueForExport(recipe));
     return recipeId;
   }
 
@@ -978,6 +983,10 @@ class RecipeRepository {
         'is_adding': !wasFavorited,
       },
     );
+
+    // Reflect the new favourite state in-memory then queue for telemetry (fire-and-forget).
+    existing.isFavorite = !wasFavorited;
+    unawaited(_ref.read(ragTelemetryServiceProvider).queueForExport(existing));
 
     return [];
   }

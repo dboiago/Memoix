@@ -27,9 +27,10 @@ class RagTelemetryService {
   /// Validates privacy gates, constructs a [KnowledgePayload], and outputs the
   /// serialised JSON to the debug console.
   ///
-  /// [recipe] \u2014 the fully hydrated recipe to export.
-  /// [rawSource] \u2014 the original text that produced this recipe (OCR, URL, typed input, etc.).
-  Future<void> queueForExport(Recipe recipe, String rawSource) async {
+  /// [recipe] — the fully hydrated recipe to export.
+  /// [rawSource] — the original text that produced this recipe (OCR, URL, typed input, etc.).
+  /// Optional: pass null or omit for recipes created or edited manually.
+  Future<void> queueForExport(Recipe recipe, [String? rawSource]) async {
     // Gate 1: master switch must be explicitly enabled by the user.
     final masterSwitchOn = _ref.read(contributeToIntelligenceProvider);
     if (!masterSwitchOn) {

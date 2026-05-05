@@ -1302,7 +1302,7 @@ class Recipe extends DataClass implements Insertable<Recipe> {
           ..write('technique: $technique, ')
           ..write('difficulty: $difficulty, ')
           ..write('scienceNotes: $scienceNotes, ')
-          ..write('equipmentJson: $equipmentJson')
+          ..write('equipmentJson: $equipmentJson, ')
           ..write('isShared: $isShared')
           ..write(')'))
         .toString();
@@ -1929,7 +1929,7 @@ class RecipesCompanion extends UpdateCompanion<Recipe> {
           ..write('technique: $technique, ')
           ..write('difficulty: $difficulty, ')
           ..write('scienceNotes: $scienceNotes, ')
-          ..write('equipmentJson: $equipmentJson')
+          ..write('equipmentJson: $equipmentJson, ')
           ..write('isShared: $isShared')
           ..write(')'))
         .toString();
@@ -10769,6 +10769,7 @@ typedef $$RecipesTableCreateCompanionBuilder = RecipesCompanion Function({
   Value<String?> difficulty,
   Value<String?> scienceNotes,
   Value<String?> equipmentJson,
+  Value<bool> isShared,
 });
 typedef $$RecipesTableUpdateCompanionBuilder = RecipesCompanion Function({
   Value<int> id,
@@ -10815,6 +10816,7 @@ typedef $$RecipesTableUpdateCompanionBuilder = RecipesCompanion Function({
   Value<String?> difficulty,
   Value<String?> scienceNotes,
   Value<String?> equipmentJson,
+  Value<bool> isShared,
 });
 
 final class $$RecipesTableReferences
@@ -10993,6 +10995,9 @@ class $$RecipesTableFilterComposer
 
   ColumnFilters<String> get equipmentJson => $composableBuilder(
       column: $table.equipmentJson, builder: (column) => ColumnFilters(column));
+
+  ColumnFilters<bool> get isShared => $composableBuilder(
+      column: $table.isShared, builder: (column) => ColumnFilters(column));
 
   Expression<bool> ingredientsRefs(
       Expression<bool> Function($$IngredientsTableFilterComposer f) f) {
@@ -11184,6 +11189,9 @@ class $$RecipesTableOrderingComposer
   ColumnOrderings<String> get equipmentJson => $composableBuilder(
       column: $table.equipmentJson,
       builder: (column) => ColumnOrderings(column));
+
+  ColumnOrderings<bool> get isShared => $composableBuilder(
+      column: $table.isShared, builder: (column) => ColumnOrderings(column));
 }
 
 class $$RecipesTableAnnotationComposer
@@ -11327,6 +11335,9 @@ class $$RecipesTableAnnotationComposer
   GeneratedColumn<String> get equipmentJson => $composableBuilder(
       column: $table.equipmentJson, builder: (column) => column);
 
+  GeneratedColumn<bool> get isShared =>
+      $composableBuilder(column: $table.isShared, builder: (column) => column);
+
   Expression<T> ingredientsRefs<T extends Object>(
       Expression<T> Function($$IngredientsTableAnnotationComposer a) f) {
     final $$IngredientsTableAnnotationComposer composer = $composerBuilder(
@@ -11437,6 +11448,7 @@ class $$RecipesTableTableManager extends RootTableManager<
             Value<String?> difficulty = const Value.absent(),
             Value<String?> scienceNotes = const Value.absent(),
             Value<String?> equipmentJson = const Value.absent(),
+            Value<bool> isShared = const Value.absent(),
           }) =>
               RecipesCompanion(
             id: id,
@@ -11483,6 +11495,7 @@ class $$RecipesTableTableManager extends RootTableManager<
             difficulty: difficulty,
             scienceNotes: scienceNotes,
             equipmentJson: equipmentJson,
+            isShared: isShared,
           ),
           createCompanionCallback: ({
             Value<int> id = const Value.absent(),
@@ -11529,6 +11542,7 @@ class $$RecipesTableTableManager extends RootTableManager<
             Value<String?> difficulty = const Value.absent(),
             Value<String?> scienceNotes = const Value.absent(),
             Value<String?> equipmentJson = const Value.absent(),
+            Value<bool> isShared = const Value.absent(),
           }) =>
               RecipesCompanion.insert(
             id: id,
@@ -11575,6 +11589,7 @@ class $$RecipesTableTableManager extends RootTableManager<
             difficulty: difficulty,
             scienceNotes: scienceNotes,
             equipmentJson: equipmentJson,
+            isShared: isShared,
           ),
           withReferenceMapper: (p0) => p0
               .map((e) =>
