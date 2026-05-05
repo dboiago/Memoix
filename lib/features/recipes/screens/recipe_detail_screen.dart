@@ -27,6 +27,7 @@ import '../../sharing/services/share_service.dart';
 import '../../statistics/models/cooking_stats.dart';
 import '../../settings/screens/settings_screen.dart';
 import '../../../core/services/integrity_service.dart';
+import '../../../core/services/rag_telemetry_service.dart';
 import '../../ai/ai_settings_provider.dart';
 import '../widgets/ingredient_reference_sheet.dart';
 
@@ -1259,6 +1260,8 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
     ref.invalidate(cookingStatsProvider);
     ref.invalidate(recipeCookCountProvider(recipe.uuid));
     ref.invalidate(recipeLastCookProvider(recipe.uuid));
+    // Fire-and-forget: capture the cooked state for Culinary Intelligence.
+    unawaited(ref.read(ragTelemetryServiceProvider).queueForExport(recipe));
     MemoixSnackBar.showLoggedCook(
       recipeName: recipe.name,
       onViewStats: () => AppRoutes.toStatistics(context),

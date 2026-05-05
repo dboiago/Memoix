@@ -31,20 +31,22 @@ class RagTelemetryService {
   /// [rawSource] — the original text that produced this recipe (OCR, URL, typed input, etc.).
   /// Optional: pass null or omit for recipes created or edited manually.
   Future<void> queueForExport(Recipe recipe, [String? rawSource]) async {
-    // Gate 1: master switch must be explicitly enabled by the user.
-    final masterSwitchOn = _ref.read(contributeToIntelligenceProvider);
-    if (!masterSwitchOn) {
-      debugPrint(
-        'RagTelemetryService: skipped \u2014 master Culinary Intelligence switch is OFF.',
-      );
-      return;
-    }
-
-    // Gate 2: individual recipe must have isShared set to true.
+    // Gate 1 (sync, no state read): individual recipe must opt in via isShared.
+    // Checked first so we never touch Riverpod state for recipes the user has
+    // explicitly marked as hidden.
     if (!recipe.isShared) {
       debugPrint(
         'RagTelemetryService: skipped \u2014 recipe "${recipe.name}" (${recipe.uuid}) '
         'has isShared = false.',
+      );
+      return;
+    }
+
+    // Gate 2: master Culinary Intelligence switch must be explicitly ON.
+    final masterSwitchOn = _ref.read(contributeToIntelligenceProvider);
+    if (!masterSwitchOn) {
+      debugPrint(
+        'RagTelemetryService: skipped \u2014 master Culinary Intelligence switch is OFF.',
       );
       return;
     }

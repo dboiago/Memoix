@@ -808,6 +808,17 @@ class RecipeRepository {
       }
     }
 
+    // Preserve the isShared flag for existing recipes.
+    // This field is exclusively controlled via toggleShared(); UI forms and
+    // import pipelines default Recipe objects to isShared = true, which would
+    // silently overwrite a user's 'Hidden' preference on every save.
+    if (recipe.id > 0) {
+      final existingRow = await _db.recipeDao.getRecipeByUuid(recipe.uuid);
+      if (existingRow != null) {
+        recipe.isShared = existingRow.isShared;
+      }
+    }
+
     // Replace absolute image paths with basenames before persisting.
     // Collect the originals so blobs can be written after we have a recipeId.
     final fileNameToPath = <String, String>{};

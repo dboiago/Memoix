@@ -301,9 +301,10 @@ class MemoixHeader extends StatelessWidget {
                           Icon(
                             isShared! ? Icons.visibility : Icons.visibility_off,
                             size: 18,
+                            color: theme.colorScheme.secondary,
                           ),
                           const SizedBox(width: 8),
-                          Text(isShared! ? 'Shared for Training' : 'Not Sharing'),
+                          Text(isShared! ? 'Shared' : 'Hidden'),
                         ],
                       ),
                     ),
