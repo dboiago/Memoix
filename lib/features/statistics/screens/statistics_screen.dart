@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:intl/intl.dart';
 
 import '../models/cooking_stats.dart';
 import '../../../app/theme/colours.dart';
@@ -541,13 +542,20 @@ class _CookMap extends StatelessWidget {
                 children: List.generate(recentPairs.length, (i) {
                   final base = recentPairs[i].$2;
                   final opacity = _calculateVelocityHeat(recentLogs, i);
+                  final log = recentPairs[i].$1;
+                  final dateLabel = DateFormat('MMM d').format(log.cookedAt);
+                  final tooltipMessage = '$dateLabel \u2013 ${log.recipeName}';
 
-                  return Container(
-                    width: _cmChipSize,
-                    height: _cmChipSize,
-                    decoration: BoxDecoration(
-                      color: base.withValues(alpha: opacity),
-                      borderRadius: BorderRadius.circular(_cmChipRadius),
+                  return Tooltip(
+                    message: tooltipMessage,
+                    waitDuration: const Duration(milliseconds: 300),
+                    child: Container(
+                      width: _cmChipSize,
+                      height: _cmChipSize,
+                      decoration: BoxDecoration(
+                        color: base.withValues(alpha: opacity),
+                        borderRadius: BorderRadius.circular(_cmChipRadius),
+                      ),
                     ),
                   );
                 }),
