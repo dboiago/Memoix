@@ -228,6 +228,45 @@ class ContributeToIntelligenceNotifier extends StateNotifier<bool> {
   }
 }
 
+/// Whether the user has already been shown the Culinary Intelligence opt-in prompt.
+/// Defaults to false. Flipped to true by the prompt regardless of the user's choice.
+final hasSeenIntelligenceOptInProvider =
+    StateNotifierProvider<HasSeenIntelligenceOptInNotifier, bool>((ref) {
+  return HasSeenIntelligenceOptInNotifier();
+});
+
+class HasSeenIntelligenceOptInNotifier extends StateNotifier<bool> {
+  static const _key = 'has_seen_intelligence_opt_in';
+
+  HasSeenIntelligenceOptInNotifier() : super(false) {
+    _loadPreference();
+  }
+
+  Future<void> _loadPreference() async {
+    final prefs = await SharedPreferences.getInstance();
+    state = prefs.getBool(_key) ?? false;
+  }
+
+  Future<void> markSeen() async {
+    state = true;
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setBool(_key, true);
+  }
+}
+
+/// Whether the user has enough engagement to be shown the intelligence opt-in prompt.
+///
+/// Evaluates: `recipeCount >= 3 || madeCount >= 1 || favouriteCount >= 2`.
+/// Only personal recipes and all cooking logs / recipe favourites are counted.
+/// This is a one-shot read — it is not reactive to later DB changes.
+final intelligencePromptEligibilityProvider = FutureProvider<bool>((ref) async {
+  final db = ref.read(databaseProvider);
+  final recipeCount = (await db.recipeDao.getPersonalRecipes()).length;
+  final madeCount = (await db.cookingLogDao.getStats()).length;
+  final favouriteCount = (await db.recipeDao.getFavouriteRecipes()).length;
+  return recipeCount >= 3 || madeCount >= 1 || favouriteCount >= 2;
+});
+
 class SettingsScreen extends ConsumerWidget {
   const SettingsScreen({super.key});
 

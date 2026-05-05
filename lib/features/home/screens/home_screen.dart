@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../../app/routes/router.dart';
 import '../../../config/app_config.dart';
@@ -9,6 +10,7 @@ import '../../../core/services/integrity_service.dart';
 import '../../../core/services/update_service.dart';
 import '../../../core/widgets/update_available_dialog.dart';
 import '../../settings/screens/settings_screen.dart';
+import '../../settings/widgets/culinary_intelligence_bottom_sheet.dart';
 import '../../../shared/widgets/course_card.dart';
 import '../../recipes/models/course.dart';
 import '../../recipes/models/recipe.dart';
@@ -72,7 +74,29 @@ class _CourseGridViewState extends ConsumerState<_CourseGridView> {
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (!isPlayStore) _checkForUpdatesOnLaunch();
+      _checkIntelligenceOptIn();
     });
+  }
+
+  /// Shows the Culinary Intelligence opt-in sheet if the user is eligible
+  /// and has not previously been shown the prompt.
+  ///
+  /// Reads SharedPreferences directly (bypassing the notifier's async load)
+  /// to guarantee the check is accurate immediately after app start.
+  Future<void> _checkIntelligenceOptIn() async {
+    final prefs = await SharedPreferences.getInstance();
+    final hasSeen = prefs.getBool('has_seen_intelligence_opt_in') ?? false;
+    if (hasSeen) return;
+
+    // Skip if the user has already opted in via the Settings toggle.
+    if (ref.read(contributeToIntelligenceProvider)) return;
+
+    final isEligible =
+        await ref.read(intelligencePromptEligibilityProvider.future);
+    if (!isEligible) return;
+
+    if (!mounted) return;
+    await showCulinaryIntelligenceSheet(context);
   }
 
   Future<void> _checkForUpdatesOnLaunch() async {
