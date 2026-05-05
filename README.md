@@ -1,7 +1,7 @@
 # Memoix
 
 <p align="center">
-  <img src="assets/images/Memoix-logo-mauve-2000.png" alt="Memoix Logo" width="200">
+  <img src="assets/images/memoix_logo.svg" alt="Memoix Logo" width="200">
 </p>
 
 Memoix is an offline-first recipe and culinary reference app built for real cooking
