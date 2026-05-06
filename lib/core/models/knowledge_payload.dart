@@ -4,8 +4,8 @@ import '../../features/recipes/models/recipe.dart';
 
 /// Represents a single data point for the future Culinary Intelligence pipeline.
 ///
-/// A [KnowledgePayload] captures a complete [Recipe] \u2014 including personal notes,
-/// ingredient-level details, and quality signals such as [Recipe.isFavorite] \u2014
+/// A [KnowledgePayload] captures a complete [Recipe] — including personal notes,
+/// ingredient-level details, and quality signals such as [Recipe.isFavorite] —
 /// alongside the raw source text that produced it and contextual metadata.
 ///
 /// Payloads are only ever constructed after both the master privacy switch and
@@ -23,22 +23,33 @@ class KnowledgePayload {
   /// Includes at minimum: 'deviceLocale' and 'appVersion'.
   final Map<String, String> metadata;
 
+  /// Stable identity hash — frozen on first transmission.
+  final String lineageHash;
+
+  /// Full-content hash — recomputed on every transmission for deduplication.
+  final String contentHash;
+
+  /// Resolved paired recipes. Each entry has 'name', 'course', and 'hash'
+  /// (SHA-256 of name+course). Populated by [RagTelemetryService] before
+  /// payload construction; empty when no pairings exist or resolution fails.
+  final List<Map<String, String>> pairedRecipes;
+
   const KnowledgePayload({
     required this.recipe,
     this.rawSource,
     required this.metadata,
+    required this.lineageHash,
+    required this.contentHash,
+    required this.pairedRecipes,
   });
 
-  /// Serialises the payload for inspection via [debugPrint].
-  ///
-  /// NOTE: No network call is made here. This method only produces a JSON
-  /// string so the structure can be validated in the console before a
-  /// backend is wired up.
+  /// Serialises the payload for transmission.
   Map<String, dynamic> toJson() {
     return {
-      'schemaVersion': 1,
+      'schemaVersion': 2,
       'recipe': {
-        'uuid': recipe.uuid,
+        'lineage_hash': lineageHash,
+        'content_hash': contentHash,
         'name': recipe.name,
         'course': recipe.course,
         'cuisine': recipe.cuisine,
@@ -62,13 +73,13 @@ class KnowledgePayload {
                 })
             .toList(),
         'nutrition': recipe.nutrition?.toJson(),
-        'pairedRecipeIds': recipe.pairedRecipeIds,
+        'pairedRecipes': pairedRecipes,
         'recipeType': recipe.recipeType,
         'modernistType': recipe.modernistType,
         'smokingType': recipe.smokingType,
-        'isShared': recipe.isShared,
-        'createdAt': recipe.createdAt.toUtc().toIso8601String(),
-        'updatedAt': recipe.updatedAt.toUtc().toIso8601String(),
+        if (recipe.glass != null) 'glass': recipe.glass,
+        if (recipe.garnish.isNotEmpty) 'garnish': recipe.garnish,
+        if (recipe.pickleMethod != null) 'pickleMethod': recipe.pickleMethod,
       },
       'rawSource': rawSource,
       'metadata': metadata,
@@ -81,3 +92,4 @@ class KnowledgePayload {
     return encoder.convert(toJson());
   }
 }
+

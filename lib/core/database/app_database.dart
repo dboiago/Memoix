@@ -82,6 +82,9 @@ class Recipes extends Table {
   // Whether this recipe's data may be contributed to the Culinary Intelligence pipeline
   // Defaults to true (opt-in per-recipe), but the master privacy switch must ALSO be on.
   BoolColumn get isShared => boolean().withDefault(const Constant(true))();
+  // Stable hash of name + course + original ingredient names.
+  // Set on first RAG transmission and frozen thereafter regardless of edits.
+  TextColumn get lineageHash => text().nullable()();
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -484,7 +487,7 @@ class AppDatabase extends _$AppDatabase {
   }
 
   @override
-  int get schemaVersion => 5;
+  int get schemaVersion => 6;
 
   @override
   MigrationStrategy get migration => MigrationStrategy(
@@ -589,6 +592,15 @@ class AppDatabase extends _$AppDatabase {
             await customSelect('PRAGMA table_info(recipes)').get();
         if (!recipeCols.any((r) => r.read<String>('name') == 'is_shared')) {
           await m.addColumn(recipes, recipes.isShared);
+        }
+      }
+      if (from < 6) {
+        // Add the RAG lineage hash column.
+        // Guard with PRAGMA so repeated partial migrations are safe.
+        final recipeCols =
+            await customSelect('PRAGMA table_info(recipes)').get();
+        if (!recipeCols.any((r) => r.read<String>('name') == 'lineage_hash')) {
+          await m.addColumn(recipes, recipes.lineageHash);
         }
       }
     },

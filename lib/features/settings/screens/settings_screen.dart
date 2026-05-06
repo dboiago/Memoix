@@ -120,7 +120,7 @@ class ContributeRecipesInfoScreen extends StatelessWidget {
               bullets: const [
                 'Recipe content - ingredients, instructions, and your custom notes',
                 'Original source text or URL, if the recipe was imported',
-                'Culinary statistics - cook count, favourite status, rating',
+                'Culinary statistics - cook count, favourite status, ratings',
                 'Recipe pairing relationships - the name and course of any linked recipes',
                 'A derived lineage identifier and content hash, used to track recipe '
                     'refinement over time without transmitting any device or user identifier',

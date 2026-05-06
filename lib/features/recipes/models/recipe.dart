@@ -144,6 +144,11 @@ class Recipe {
   /// Defaults to true per-recipe; the master privacy switch must ALSO be enabled.
   bool isShared = true;
 
+  /// Stable lineage hash (SHA-256 of name + course + sorted original ingredient names).
+  /// Set on first RAG transmission and frozen thereafter regardless of subsequent edits.
+  /// Null until the first transmission occurs.
+  String? lineageHash;
+
   /// Whether this recipe type supports pairing with other recipes.
   /// Excluded: Pizzas, Sandwiches, Cellar, Cheese (component assemblies or non-recipes)
   bool get supportsPairing {

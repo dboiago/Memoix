@@ -595,6 +595,7 @@ abstract class SupabaseSyncService {
       'difficulty': r.difficulty,
       'science_notes': r.scienceNotes,
       'equipment_json': r.equipmentJson,
+      'lineage_hash': r.lineageHash,
       'group_id': groupId,
       'updated_by': userId,
     };
@@ -689,6 +690,7 @@ abstract class SupabaseSyncService {
       difficulty: Value(row['difficulty'] as String?),
       scienceNotes: Value(row['science_notes'] as String?),
       equipmentJson: Value(row['equipment_json'] as String?),
+      lineageHash: Value(row['lineage_hash'] as String?),
     );
   }
 

@@ -33,7 +33,7 @@ favourite a recipe:
 
 - Recipe content (ingredients, instructions, and notes)
 - Original source text or URL (if the recipe was imported)
-- Culinary statistics (cook count, favourite status)
+- Culinary statistics (cook count, favourite status, ratings)
 - Recipe pairing relationships (the name and course of any linked recipes)
 - A derived lineage identifier and content hash, used to track recipe refinement 
   over time without transmitting any device or user identifier

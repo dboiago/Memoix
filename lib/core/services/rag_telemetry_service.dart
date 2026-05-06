@@ -1,80 +1,390 @@
+import 'dart:convert';
+
+import 'package:drift/drift.dart' show Value;
 import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 
+import '../database/app_database.dart';
+import '../models/cellar_knowledge_payload.dart';
+import '../models/cheese_knowledge_payload.dart';
 import '../models/knowledge_payload.dart';
+import '../models/modernist_knowledge_payload.dart';
+import '../models/pizza_knowledge_payload.dart';
+import '../models/sandwich_knowledge_payload.dart';
+import '../models/smoking_knowledge_payload.dart';
+import '../utils/payload_hasher.dart';
 import 'rag_transmission_client.dart';
+import '../../features/cellar/models/cellar_entry.dart';
+import '../../features/cheese/models/cheese_entry.dart';
+import '../../features/modernist/models/modernist_recipe.dart';
+import '../../features/pizzas/models/pizza.dart';
 import '../../features/recipes/models/recipe.dart';
+import '../../features/sandwiches/models/sandwich.dart';
 import '../../features/settings/screens/settings_screen.dart';
+import '../../features/smoking/models/smoking_recipe.dart';
+
+/// Resolves a list of recipe UUIDs to identity records (name + course).
+///
+/// Passed at construction so [RagTelemetryService] has no direct dependency
+/// on [RecipeRepository] (which already imports this service).
+typedef PairedRecipeResolver = Future<List<({String name, String course})>>
+    Function(List<String> uuids);
 
 /// Decoupled service for the Culinary Intelligence RAG pipeline.
 ///
-/// Validates privacy gates, constructs a [KnowledgePayload], and delegates
-/// transmission to the injected [RagTransmissionClient]. The default client
-/// is [ConsoleTransmissionClient]; swap it for a network client when a
-/// backend is available — no other code needs to change.
+/// Validates privacy gates, computes hashes, resolves paired recipes, and
+/// delegates transmission to the injected [RagTransmissionClient].
 ///
 /// **Privacy guarantees enforced here:**
 /// 1. The individual [Recipe.isShared] flag must be true.
 /// 2. The master 'Contribute to Culinary Intelligence' switch must be ON.
 /// If either condition fails, the method returns immediately with no side effects.
+///
+/// **Circular-import note:** [recipe_repository.dart] imports this file, so
+/// this file must never import [recipe_repository.dart]. All DB access uses
+/// [AppDatabase.instance] directly.
 class RagTelemetryService {
   final Ref _ref;
   final RagTransmissionClient _client;
+  final PairedRecipeResolver? _pairedRecipeResolver;
 
   /// [client] defaults to [ConsoleTransmissionClient] when omitted.
-  /// Override in tests or when a network backend is wired up.
-  RagTelemetryService(this._ref, [RagTransmissionClient? client])
-      : _client = client ?? const ConsoleTransmissionClient();
+  /// [pairedRecipeResolver] resolves paired recipe UUIDs to name+course pairs
+  /// so the payload can carry enriched pairing data instead of raw IDs.
+  RagTelemetryService(
+    this._ref, {
+    RagTransmissionClient? client,
+    PairedRecipeResolver? pairedRecipeResolver,
+  })  : _client = client ?? const ConsoleTransmissionClient(),
+        _pairedRecipeResolver = pairedRecipeResolver;
 
-  /// Validates privacy gates, constructs a [KnowledgePayload], and delegates
-  /// to [RagTransmissionClient.transmit].
+  // ─────────────────────────────────────────────────────────────────────────
+  // Standard Recipe
+  // ─────────────────────────────────────────────────────────────────────────
+
+  /// Validates privacy gates, computes hashes, resolves pairings, and transmits.
   ///
   /// [recipe] — the fully hydrated recipe to export.
-  /// [rawSource] — the original text that produced this recipe (OCR, URL, typed input, etc.).
-  /// Optional: pass null or omit for recipes created or edited manually.
+  /// [rawSource] — the original text that produced this recipe. Null for
+  /// recipes created or edited manually without an import source.
   Future<void> queueForExport(Recipe recipe, [String? rawSource]) async {
-    // Gate 1 (sync, no state read): individual recipe must opt in via isShared.
-    // Checked first so we never touch Riverpod state for recipes the user has
-    // explicitly marked as hidden.
     if (!recipe.isShared) {
       debugPrint(
-        'RagTelemetryService: skipped \u2014 recipe "${recipe.name}" (${recipe.uuid}) '
+        'RagTelemetryService: skipped — recipe "${recipe.name}" '
         'has isShared = false.',
       );
       return;
     }
 
-    // Gate 2: master Culinary Intelligence switch must be explicitly ON.
     final masterSwitchOn = _ref.read(contributeToIntelligenceProvider);
     if (!masterSwitchOn) {
       debugPrint(
-        'RagTelemetryService: skipped \u2014 master Culinary Intelligence switch is OFF.',
+        'RagTelemetryService: skipped — master Culinary Intelligence switch is OFF.',
       );
       return;
     }
 
-    // Collect metadata. Version comes from the platform asynchronously.
-    final packageInfo = await PackageInfo.fromPlatform();
+    // Compute or reuse the stable lineage hash.
+    final lineageHash = await _resolveLineageHash(
+      existing: recipe.lineageHash,
+      compute: () => PayloadHasher.recipeLineageHash(recipe),
+      persistForId: recipe.id,
+    );
 
-    final metadata = <String, String>{
-      'appVersion': packageInfo.version,
-      'buildNumber': packageInfo.buildNumber,
-    };
+    final contentHash = PayloadHasher.recipeContentHash(recipe);
+    final pairedRecipes = await _resolvePairings(recipe.pairedRecipeIds);
+    final metadata = await _buildMetadata();
 
     final payload = KnowledgePayload(
       recipe: recipe,
       rawSource: rawSource,
       metadata: metadata,
+      lineageHash: lineageHash,
+      contentHash: contentHash,
+      pairedRecipes: pairedRecipes,
     );
 
     await _client.transmit(payload);
   }
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // Modernist
+  // ─────────────────────────────────────────────────────────────────────────
+
+  Future<void> queueModernistForExport(
+    ModernistRecipe recipe, [
+    String? rawSource,
+  ]) async {
+    final masterSwitchOn = _ref.read(contributeToIntelligenceProvider);
+    if (!masterSwitchOn) {
+      debugPrint(
+        'RagTelemetryService: modernist skipped — master Culinary Intelligence switch is OFF.',
+      );
+      return;
+    }
+
+    final lineageHash = PayloadHasher.modernistLineageHash(recipe);
+    final contentHash = PayloadHasher.modernistContentHash(recipe);
+    final pairedRecipes = await _resolvePairings(recipe.pairedRecipeIds);
+    final metadata = await _buildMetadata();
+
+    final payload = ModernistKnowledgePayload(
+      recipe: recipe,
+      rawSource: rawSource,
+      metadata: metadata,
+      lineageHash: lineageHash,
+      contentHash: contentHash,
+      pairedRecipes: pairedRecipes,
+    );
+
+    await _client.transmitModernist(payload);
+  }
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // Smoking
+  // ─────────────────────────────────────────────────────────────────────────
+
+  Future<void> queueSmokingForExport(
+    SmokingRecipe recipe, [
+    String? rawSource,
+  ]) async {
+    final masterSwitchOn = _ref.read(contributeToIntelligenceProvider);
+    if (!masterSwitchOn) {
+      debugPrint(
+        'RagTelemetryService: smoking skipped — master Culinary Intelligence switch is OFF.',
+      );
+      return;
+    }
+
+    final pairedUuids =
+        (jsonDecode(recipe.pairedRecipeIds) as List).cast<String>();
+    final lineageHash = PayloadHasher.smokingLineageHash(recipe);
+    final contentHash = PayloadHasher.smokingContentHash(recipe);
+    final pairedRecipes = await _resolvePairings(pairedUuids);
+    final metadata = await _buildMetadata();
+
+    final payload = SmokingKnowledgePayload(
+      recipe: recipe,
+      rawSource: rawSource,
+      metadata: metadata,
+      lineageHash: lineageHash,
+      contentHash: contentHash,
+      pairedRecipes: pairedRecipes,
+    );
+
+    await _client.transmitSmoking(payload);
+  }
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // Pizza
+  // ─────────────────────────────────────────────────────────────────────────
+
+  Future<void> queuePizzaForExport(Pizza pizza, [String? rawSource]) async {
+    final masterSwitchOn = _ref.read(contributeToIntelligenceProvider);
+    if (!masterSwitchOn) {
+      debugPrint(
+        'RagTelemetryService: pizza skipped — master Culinary Intelligence switch is OFF.',
+      );
+      return;
+    }
+
+    final lineageHash = PayloadHasher.pizzaLineageHash(pizza);
+    final contentHash = PayloadHasher.pizzaContentHash(pizza);
+    final metadata = await _buildMetadata();
+
+    final payload = PizzaKnowledgePayload(
+      pizza: pizza,
+      rawSource: rawSource,
+      metadata: metadata,
+      lineageHash: lineageHash,
+      contentHash: contentHash,
+    );
+
+    await _client.transmitPizza(payload);
+  }
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // Sandwich
+  // ─────────────────────────────────────────────────────────────────────────
+
+  Future<void> queueSandwichForExport(
+    Sandwich sandwich, [
+    String? rawSource,
+  ]) async {
+    final masterSwitchOn = _ref.read(contributeToIntelligenceProvider);
+    if (!masterSwitchOn) {
+      debugPrint(
+        'RagTelemetryService: sandwich skipped — master Culinary Intelligence switch is OFF.',
+      );
+      return;
+    }
+
+    final lineageHash = PayloadHasher.sandwichLineageHash(sandwich);
+    final contentHash = PayloadHasher.sandwichContentHash(sandwich);
+    final metadata = await _buildMetadata();
+
+    final payload = SandwichKnowledgePayload(
+      sandwich: sandwich,
+      rawSource: rawSource,
+      metadata: metadata,
+      lineageHash: lineageHash,
+      contentHash: contentHash,
+    );
+
+    await _client.transmitSandwich(payload);
+  }
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // Cellar
+  // ─────────────────────────────────────────────────────────────────────────
+
+  /// Computes hashes and transmits a [CellarEntry] to the RAG pipeline.
+  ///
+  /// Cellar entries have no per-entry sharing flag; only the master
+  /// Culinary Intelligence switch gates transmission.
+  Future<void> queueCellarForExport(
+    CellarEntry entry, [
+    String? rawSource,
+  ]) async {
+    final masterSwitchOn = _ref.read(contributeToIntelligenceProvider);
+    if (!masterSwitchOn) {
+      debugPrint(
+        'RagTelemetryService: cellar skipped — master Culinary Intelligence switch is OFF.',
+      );
+      return;
+    }
+
+    final lineageHash = PayloadHasher.cellarLineageHash(entry);
+    final contentHash = PayloadHasher.cellarContentHash(entry);
+    final metadata = await _buildMetadata();
+
+    final payload = CellarKnowledgePayload(
+      entry: entry,
+      rawSource: rawSource,
+      metadata: metadata,
+      lineageHash: lineageHash,
+      contentHash: contentHash,
+    );
+
+    await _client.transmitCellar(payload);
+  }
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // Cheese
+  // ─────────────────────────────────────────────────────────────────────────
+
+  /// Computes hashes and transmits a [CheeseEntry] to the RAG pipeline.
+  ///
+  /// Cheese entries have no per-entry sharing flag; only the master
+  /// Culinary Intelligence switch gates transmission.
+  Future<void> queueCheeseForExport(
+    CheeseEntry entry, [
+    String? rawSource,
+  ]) async {
+    final masterSwitchOn = _ref.read(contributeToIntelligenceProvider);
+    if (!masterSwitchOn) {
+      debugPrint(
+        'RagTelemetryService: cheese skipped — master Culinary Intelligence switch is OFF.',
+      );
+      return;
+    }
+
+    final lineageHash = PayloadHasher.cheeseLineageHash(entry);
+    final contentHash = PayloadHasher.cheeseContentHash(entry);
+    final metadata = await _buildMetadata();
+
+    final payload = CheeseKnowledgePayload(
+      entry: entry,
+      rawSource: rawSource,
+      metadata: metadata,
+      lineageHash: lineageHash,
+      contentHash: contentHash,
+    );
+
+    await _client.transmitCheese(payload);
+  }
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // Private helpers
+  // ─────────────────────────────────────────────────────────────────────────
+
+  /// Returns the existing [lineageHash] unchanged if set, otherwise computes
+  /// a fresh one via [compute] and persists it to the DB for [persistForId].
+  Future<String> _resolveLineageHash({
+    required String? existing,
+    required String Function() compute,
+    required int persistForId,
+  }) async {
+    if (existing != null && existing.isNotEmpty) return existing;
+    final hash = compute();
+    if (persistForId > 0) {
+      try {
+        final db = AppDatabase.instance;
+        await (db.update(db.recipes)
+              ..where((r) => r.id.equals(persistForId)))
+            .write(RecipesCompanion(lineageHash: Value(hash)));
+      } catch (e) {
+        debugPrint('RagTelemetryService: failed to persist lineage hash: $e');
+      }
+    }
+    return hash;
+  }
+
+  /// Resolves a list of paired recipe UUIDs to enriched entries.
+  ///
+  /// Each entry is `{name, course, hash}` where `hash` is a SHA-256 of
+  /// `name + course` for that paired recipe (see [PayloadHasher.pairingHash]).
+  Future<List<Map<String, String>>> _resolvePairings(
+    List<String> uuids,
+  ) async {
+    if (uuids.isEmpty || _pairedRecipeResolver == null) return [];
+    try {
+      final resolved = await _pairedRecipeResolver!(uuids);
+      return resolved
+          .map((p) => {
+                'name': p.name,
+                'course': p.course,
+                'hash': PayloadHasher.pairingHash(p.name, p.course),
+              })
+          .toList();
+    } catch (e) {
+      debugPrint('RagTelemetryService: pairing resolution failed: $e');
+      return [];
+    }
+  }
+
+  Future<Map<String, String>> _buildMetadata() async {
+    final packageInfo = await PackageInfo.fromPlatform();
+    return {
+      'appVersion': packageInfo.version,
+      'buildNumber': packageInfo.buildNumber,
+    };
+  }
 }
 
 /// Provider for [RagTelemetryService].
-/// Uses [ConsoleTransmissionClient] by default (via the constructor default).
-/// Replace by overriding this provider with a network client when a backend is configured.
+///
+/// The [PairedRecipeResolver] callback uses [AppDatabase.instance] directly
+/// to avoid a circular import with [recipe_repository.dart].
 final ragTelemetryServiceProvider = Provider<RagTelemetryService>((ref) {
-  return RagTelemetryService(ref);
+  return RagTelemetryService(
+    ref,
+    pairedRecipeResolver: (uuids) async {
+      final db = AppDatabase.instance;
+      final results = <({String name, String course})>[];
+      for (final uuid in uuids) {
+        try {
+          final row = await db.recipeDao.getRecipeByUuid(uuid);
+          if (row != null) {
+            results.add((name: row.name, course: row.course));
+          }
+        } catch (_) {
+          // Skip unresolvable UUIDs — a failed lookup must not abort transmission.
+        }
+      }
+      return results;
+    },
+  );
 });
+

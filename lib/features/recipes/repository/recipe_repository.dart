@@ -77,6 +77,7 @@ typedef _RecipeRaw = ({
   String garnish,
   String? pickleMethod,
   bool isShared,
+  String? lineageHash,
 });
 
 /// Single ingredient row as a primitive record (no JSON columns).
@@ -136,6 +137,7 @@ typedef _RecipeDecoded = ({
   List<String> garnish,
   String? pickleMethod,
   bool isShared,
+  String? lineageHash,
   List<_IngRaw> ingredients,
 });
 
@@ -182,6 +184,7 @@ _RecipeRaw _toRecipeRaw(db.Recipe r) => (
       garnish: r.garnish,
       pickleMethod: r.pickleMethod,
       isShared: r.isShared,
+      lineageHash: r.lineageHash,
     );
 
 /// Converts a Drift [db.Ingredient] row to an [_IngRaw] record.
@@ -304,6 +307,7 @@ List<_RecipeDecoded> _batchDecodeRecipes(
         garnish: (jsonDecode(r.garnish) as List).cast<String>(),
         pickleMethod: r.pickleMethod,
         isShared: r.isShared,
+        lineageHash: r.lineageHash,
         ingredients: ings,
       ),);
     } catch (_) {
@@ -365,6 +369,7 @@ class RecipeRepository {
       garnish: Value(jsonEncode(recipe.garnish)),
       pickleMethod: Value(recipe.pickleMethod),
       isShared: Value(recipe.isShared),
+      lineageHash: Value(recipe.lineageHash),
       recipeType: const Value('standard'),
       technique: const Value(null),
       difficulty: const Value(null),
@@ -389,6 +394,16 @@ class RecipeRepository {
               bakerPercent: Value(i.bakerPercent),
             ),)
         .toList();
+  }
+
+  /// Persists a lineage hash for the given recipe row by id.
+  ///
+  /// Called at most once per recipe — only when [Recipe.lineageHash] is null
+  /// at the point of first RAG transmission. Uses a targeted single-column
+  /// update to avoid touching any other recipe field.
+  Future<void> updateLineageHash(int recipeId, String hash) async {
+    await (_db.update(_db.recipes)..where((r) => r.id.equals(recipeId)))
+        .write(RecipesCompanion(lineageHash: Value(hash)));
   }
 
   Future<Recipe> _toDomainRecipe(db.Recipe r, List<db.Ingredient> ings) async {
@@ -437,6 +452,7 @@ class RecipeRepository {
       ..garnish = (jsonDecode(r.garnish) as List).cast<String>()
       ..pickleMethod = r.pickleMethod
       ..isShared = r.isShared
+      ..lineageHash = r.lineageHash
       ..ingredients = ings
           .map((i) => Ingredient()
             ..uuid = i.uuid
@@ -595,6 +611,7 @@ class RecipeRepository {
           ..garnish = d.garnish
           ..pickleMethod = d.pickleMethod
           ..isShared = d.isShared
+          ..lineageHash = d.lineageHash
           ..ingredients = d.ingredients
               .map((i) => Ingredient()
                 ..uuid = i.uuid
