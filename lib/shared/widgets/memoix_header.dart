@@ -298,13 +298,13 @@ class MemoixHeader extends StatelessWidget {
                       value: 'toggle_shared',
                       child: Row(
                         children: [
+                          Text(isShared! ? 'Shared' : 'Hidden'),
+                          const SizedBox(width: 8),
                           Icon(
                             isShared! ? Icons.visibility : Icons.visibility_off,
                             size: 18,
                             color: theme.colorScheme.secondary,
                           ),
-                          const SizedBox(width: 8),
-                          Text(isShared! ? 'Shared' : 'Hidden'),
                         ],
                       ),
                     ),

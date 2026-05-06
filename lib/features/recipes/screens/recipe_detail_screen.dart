@@ -25,7 +25,6 @@ import '../widgets/direction_list.dart';
 import '../widgets/split_recipe_view.dart';
 import '../../sharing/services/share_service.dart';
 import '../../statistics/models/cooking_stats.dart';
-import '../../settings/screens/settings_screen.dart';
 import '../../../core/services/integrity_service.dart';
 import '../../ai/ai_settings_provider.dart';
 import '../widgets/ingredient_reference_sheet.dart';
@@ -211,7 +210,6 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
     bool hasStepImages,
   ) {
     final hasPairs = recipe.supportsPairing && _hasPairedRecipes(ref, recipe);
-    final contributes = ref.watch(contributeToIntelligenceProvider);
 
     return Scaffold(
       // No appBar - we build the header as part of the body
@@ -242,15 +240,13 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
             onEditPressed: () => AppRoutes.toRecipeEdit(context, recipeId: recipe.uuid),
             onDuplicatePressed: () => _duplicateRecipe(context, ref),
             onDeletePressed: () => _confirmDelete(context, ref),
-            isShared: contributes ? recipe.isShared : null,
-            onToggleSharedPressed: contributes
-                ? () async {
+            isShared: recipe.isShared,
+            onToggleSharedPressed: () async {
                     await ref
                         .read(recipeRepositoryProvider)
                         .toggleShared(recipe.id);
                     ref.invalidate(allRecipesProvider);
-                  }
-                : null,
+                  },
           ),
 
           // 2. THE CONTENT (Split View) - Scrollable, sits below header
@@ -632,7 +628,6 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
     bool hasStepImages,
   ) {
     final hasPairs = recipe.supportsPairing && _hasPairedRecipes(ref, recipe);
-    final contributes = ref.watch(contributeToIntelligenceProvider);
 
     return Scaffold(
       body: Column(
@@ -662,15 +657,13 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
             onEditPressed: () => AppRoutes.toRecipeEdit(context, recipeId: recipe.uuid),
             onDuplicatePressed: () => _duplicateRecipe(context, ref),
             onDeletePressed: () => _confirmDelete(context, ref),
-            isShared: contributes ? recipe.isShared : null,
-            onToggleSharedPressed: contributes
-                ? () async {
+            isShared: recipe.isShared,
+            onToggleSharedPressed: () async {
                     await ref
                         .read(recipeRepositoryProvider)
                         .toggleShared(recipe.id);
                     ref.invalidate(allRecipesProvider);
-                  }
-                : null,
+                  },
           ),
 
           // 2. THE CONTENT - Scrollable
