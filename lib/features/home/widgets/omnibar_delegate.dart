@@ -483,55 +483,51 @@ class _OmniResultsView extends ConsumerWidget {
     }
 
     void _addSmoking() {
-      for (final sm in smokingAll) {
+    if (!_isCourseEligible('smoking', intent)) return;
+    for (final sm in smokingAll) {
         final isPitNote = sm.type == SmokingType.pitNote.name;
-        if (!_isCourseEligible('smoking', intent)) return;
-        for (final r in smokingRecipes) {
-            if (!_isSmokingEligible(intent, isPitNote: r.isPitNote)) continue;
-        }
+        if (!_isSmokingEligible(intent, isPitNote: isPitNote)) continue;
         final isMemoix = sm.source == SmokingSource.memoix.name;
         final candidate = _OmniCandidate(
-          name: sm.name,
-          courseLabel: isPitNote ? 'Pit Note' : 'Smoking',
-          isFavourite: sm.isFavourite,
-          cookCount: sm.cookCount,
-          isMemoix: isMemoix,
-          time: sm.time.isNotEmpty ? sm.time : null,
-          isPitNote: isPitNote,
-          navigate: (ctx) => AppRoutes.toSmokingDetail(ctx, sm.uuid),
+        name: sm.name,
+        courseLabel: isPitNote ? 'Pit Note' : 'Smoking',
+        isFavourite: sm.isFavourite,
+        cookCount: sm.cookCount,
+        isMemoix: isMemoix,
+        time: sm.time.isNotEmpty ? sm.time : null,
+        isPitNote: isPitNote,
+        navigate: (ctx) => AppRoutes.toSmokingDetail(ctx, sm.uuid),
         );
         if (isMemoix) {
-          memoixEligible.add(candidate);
+        memoixEligible.add(candidate);
         } else {
-          eligible.add(candidate);
+        eligible.add(candidate);
         }
-      }
+    }
     }
 
     void _addModernist() {
-      for (final m in modernists) {
+    if (!_isCourseEligible('modernist', intent)) return;
+    for (final m in modernists) {
         final isTechnique = m.type == ModernistType.technique;
-        if (!_isCourseEligible('smoking', intent)) return;
-        for (final r in smokingRecipes) {
-            if (!_isSmokingEligible(intent, isPitNote: isTechnique)) continue;
-        }
+        if (!_isModernistEligible(intent, isTechnique: isTechnique)) continue;
         final isMemoix = m.source == ModernistSource.memoix;
         final candidate = _OmniCandidate(
-          name: m.name,
-          courseLabel: 'Modernist',
-          isFavourite: m.isFavourite,
-          cookCount: m.cookCount,
-          isMemoix: isMemoix,
-          time: m.time,
-          isPitNote: isTechnique,
-          navigate: (ctx) => AppRoutes.toModernistDetail(ctx, m.id),
+        name: m.name,
+        courseLabel: 'Modernist',
+        isFavourite: m.isFavourite,
+        cookCount: m.cookCount,
+        isMemoix: isMemoix,
+        time: m.time,
+        isPitNote: isTechnique,
+        navigate: (ctx) => AppRoutes.toModernistDetail(ctx, m.id),
         );
         if (isMemoix) {
-          memoixEligible.add(candidate);
+        memoixEligible.add(candidate);
         } else {
-          eligible.add(candidate);
+        eligible.add(candidate);
         }
-      }
+    }
     }
 
     void _addCheese() {
