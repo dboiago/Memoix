@@ -9,6 +9,7 @@ import '../../../core/database/app_database.dart';
 import '../../../core/providers.dart';
 import '../../../core/utils/collection_utils.dart';
 import '../../../core/services/integrity_service.dart';
+import '../../../core/services/rag_telemetry_service.dart';
 import '../../../core/services/supabase_sync_service.dart';
 import '../../personal_storage/services/personal_storage_service.dart';
 import '../../personal_storage/services/tombstone_store.dart';
@@ -83,6 +84,8 @@ class SandwichRepository {
       version: Value(sandwich.version),
     ),);
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
+    // Fire-and-forget: queue for Culinary Intelligence export.
+    unawaited(_ref.read(ragTelemetryServiceProvider).queueSandwichForExport(sandwich));
   }
 
   /// Delete a sandwich by ID
@@ -119,6 +122,8 @@ class SandwichRepository {
         'is_adding': !wasFavorited,
       },
     );
+    // Fire-and-forget: queue updated favourite state for Culinary Intelligence export.
+    unawaited(_ref.read(ragTelemetryServiceProvider).queueSandwichForExport(sandwich.copyWith(isFavorite: !wasFavorited)));
   }
 
   /// Increment cook count
@@ -139,6 +144,8 @@ class SandwichRepository {
       cuisine: dotKey,
     );
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
+    // Fire-and-forget: queue for Culinary Intelligence export.
+    unawaited(_ref.read(ragTelemetryServiceProvider).queueSandwichForExport(sandwich));
   }
 
   /// Update rating

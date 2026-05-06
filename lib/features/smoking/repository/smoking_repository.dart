@@ -8,6 +8,7 @@ import 'package:uuid/uuid.dart';
 import '../../../core/database/app_database.dart';
 import '../../../core/providers.dart';
 import '../../../core/services/integrity_service.dart';
+import '../../../core/services/rag_telemetry_service.dart';
 import '../../../core/services/supabase_sync_service.dart';
 import '../../../core/utils/unit_normalizer.dart';
 import '../../personal_storage/services/personal_storage_service.dart';
@@ -97,6 +98,8 @@ class SmokingRepository {
       updatedAt: Value(preserveTimestamp ? recipe.updatedAt : DateTime.now()),
     ),);
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
+    // Fire-and-forget: queue for Culinary Intelligence export.
+    unawaited(_ref.read(ragTelemetryServiceProvider).queueSmokingForExport(recipe));
   }
 
   List<SmokingSeasoning> _normalizeSeasoningUnits(List<SmokingSeasoning> items) {
@@ -135,6 +138,8 @@ class SmokingRepository {
         'is_adding': !wasFavorited,
       },
     );
+    // Fire-and-forget: queue updated favourite state for Culinary Intelligence export.
+    unawaited(_ref.read(ragTelemetryServiceProvider).queueSmokingForExport(recipe.copyWith(isFavorite: !wasFavorited)));
   }
 
   /// Increment cook count
@@ -149,6 +154,8 @@ class SmokingRepository {
       course: 'smoking',
       cuisine: recipe.category,
     );
+    // Fire-and-forget: queue for Culinary Intelligence export.
+    unawaited(_ref.read(ragTelemetryServiceProvider).queueSmokingForExport(recipe));
   }
 
   /// Watch all recipes

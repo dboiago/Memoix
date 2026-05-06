@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:convert';
 
 import 'package:drift/drift.dart';
@@ -7,6 +8,7 @@ import 'package:uuid/uuid.dart';
 import '../../../core/database/app_database.dart';
 import '../../../core/providers.dart';
 import '../../../core/services/integrity_service.dart';
+import '../../../core/services/rag_telemetry_service.dart';
 import '../../../core/utils/unit_normalizer.dart';
 import '../../personal_storage/services/personal_storage_service.dart';
 import '../../personal_storage/services/tombstone_store.dart';
@@ -186,6 +188,8 @@ class ModernistRepository {
         .toList();
     await _db.recipeDao.saveIngredients(ingredientCompanions);
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
+    // Fire-and-forget: queue for Culinary Intelligence export.
+    unawaited(_ref.read(ragTelemetryServiceProvider).queueModernistForExport(recipe));
     return recipeId;
   }
 
@@ -271,6 +275,14 @@ class ModernistRepository {
         'is_adding': !wasFavorited,
       },
     );
+    // Fire-and-forget: fetch domain object then queue updated favourite state for
+    // Culinary Intelligence export. toggleFavourite only has id in scope, not
+    // the full ModernistRecipe, so we resolve it asynchronously.
+    unawaited(getById(id).then((r) {
+      if (r == null) return;
+      r.isFavorite = !wasFavorited;
+      _ref.read(ragTelemetryServiceProvider).queueModernistForExport(r);
+    }));
   }
 
   /// Increment cook count
@@ -334,6 +346,8 @@ class ModernistRepository {
       cuisine: recipe.type.name,
     );
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
+    // Fire-and-forget: queue for Culinary Intelligence export.
+    unawaited(_ref.read(ragTelemetryServiceProvider).queueModernistForExport(recipe));
   }
 
   /// Get unique technique categories from all recipes

@@ -9,6 +9,7 @@ import '../../../core/database/app_database.dart';
 import '../../../core/providers.dart';
 import '../../../core/utils/collection_utils.dart';
 import '../../../core/services/integrity_service.dart';
+import '../../../core/services/rag_telemetry_service.dart';
 import '../../../core/services/supabase_sync_service.dart';
 import '../../personal_storage/services/personal_storage_service.dart';
 import '../../personal_storage/services/tombstone_store.dart';
@@ -82,6 +83,8 @@ class PizzaRepository {
       version: Value(pizza.version),
     ),);
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
+    // Fire-and-forget: queue for Culinary Intelligence export.
+    unawaited(_ref.read(ragTelemetryServiceProvider).queuePizzaForExport(pizza));
   }
 
   /// Delete a pizza by ID
@@ -118,6 +121,8 @@ class PizzaRepository {
         'is_adding': !wasFavorited,
       },
     );
+    // Fire-and-forget: queue updated favourite state for Culinary Intelligence export.
+    unawaited(_ref.read(ragTelemetryServiceProvider).queuePizzaForExport(pizza.copyWith(isFavorite: !wasFavorited)));
   }
 
   /// Increment cook count
@@ -135,6 +140,8 @@ class PizzaRepository {
       cuisine: pizza.base,
     );
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
+    // Fire-and-forget: queue for Culinary Intelligence export.
+    unawaited(_ref.read(ragTelemetryServiceProvider).queuePizzaForExport(pizza));
   }
 
   /// Update rating
