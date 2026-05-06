@@ -1,4 +1,4 @@
-# Memoix Culinary Intelligence: Data & Privacy
+# Memoix Contribute Recipes: Data & Privacy
 
 ## Overview
 
