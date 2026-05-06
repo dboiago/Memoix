@@ -149,6 +149,23 @@ bool _isSmokingEligible(_MealContext context, {required bool isPitNote}) {
   }
 }
 
+bool _isModernistEligible(_MealContext context, {required bool isTechnique}) {
+  switch (context) {
+    case _MealContext.general:
+      return true;
+    case _MealContext.breakfast:
+    case _MealContext.lunch:
+    case _MealContext.dinner:
+      return !isTechnique;
+    case _MealContext.dessert:
+    case _MealContext.drink:
+    case _MealContext.bread:
+    case _MealContext.cheese:
+    case _MealContext.cellar:
+      return false;
+  }
+}
+
 // ─────────────────────────────────────────────────────────────────────────────
 // Scoring
 // ─────────────────────────────────────────────────────────────────────────────
