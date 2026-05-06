@@ -51,7 +51,7 @@ class ModernistKnowledgePayload {
         'notes': recipe.notes,
         'scienceNotes': recipe.scienceNotes,
         'source': recipe.source.name,
-        'isFavourite': recipe.isFavorite,
+        'isFavourite': recipe.isFavourite,
         'cookCount': recipe.cookCount,
         'pairedRecipes': pairedRecipes,
       },

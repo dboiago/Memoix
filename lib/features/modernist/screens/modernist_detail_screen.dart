@@ -115,7 +115,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
           // 1. THE RICH HEADER - Fixed at top, does not scroll
           MemoixHeader(
             title: recipe.name,
-            isFavorite: recipe.isFavorite,
+            isFavorite: recipe.isFavourite,
             headerImage: hasHeaderImage ? headerImage : null,
             onFavoritePressed: () async {
               await ref.read(modernistRepositoryProvider).toggleFavourite(recipe.id);
@@ -369,8 +369,8 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
     return [
       IconButton(
         icon: Icon(
-          recipe.isFavorite ? Icons.favorite : Icons.favorite_border,
-          color: recipe.isFavorite ? theme.colorScheme.primary : null,
+          recipe.isFavourite ? Icons.favorite : Icons.favorite_border,
+          color: recipe.isFavourite ? theme.colorScheme.primary : null,
         ),
         onPressed: () async {
           await ref.read(modernistRepositoryProvider).toggleFavourite(recipe.id);
@@ -425,7 +425,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
           // 1. THE RICH HEADER - Fixed at top, does not scroll
           MemoixHeader(
             title: recipe.name,
-            isFavorite: recipe.isFavorite,
+            isFavorite: recipe.isFavourite,
             headerImage: hasHeaderImage ? headerImage : null,
             onFavoritePressed: () async {
               await ref.read(modernistRepositoryProvider).toggleFavourite(recipe.id);

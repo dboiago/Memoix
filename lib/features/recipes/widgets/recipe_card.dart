@@ -201,10 +201,10 @@ class _RecipeCardState extends ConsumerState<RecipeCard> {
                 // Favorite button
                 IconButton(
                   icon: Icon(
-                    widget.recipe.isFavorite ? Icons.favorite : Icons.favorite_border,
+                    widget.recipe.isFavourite ? Icons.favorite : Icons.favorite_border,
                     size: 20,
                   ),
-                  color: widget.recipe.isFavorite 
+                  color: widget.recipe.isFavourite 
                       ? theme.colorScheme.secondary 
                       : theme.colorScheme.onSurfaceVariant,
                   onPressed: () async {

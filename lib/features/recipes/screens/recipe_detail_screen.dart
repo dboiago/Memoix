@@ -219,7 +219,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
           // 1. THE RICH HEADER - Fixed at top, does not scroll
           MemoixHeader(
             title: recipe.name,
-            isFavorite: recipe.isFavorite,
+            isFavorite: recipe.isFavourite,
             headerImage: hasHeaderImage ? headerImage : null,
             onFavoritePressed: () async {
               final blocked = await ref
@@ -636,7 +636,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
           // 1. THE RICH HEADER - Fixed at top, does not scroll
           MemoixHeader(
             title: recipe.name,
-            isFavorite: recipe.isFavorite,
+            isFavorite: recipe.isFavourite,
             headerImage: hasHeaderImage ? headerImage : null,
             onFavoritePressed: () async {
               final blocked = await ref

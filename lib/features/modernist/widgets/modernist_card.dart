@@ -146,10 +146,10 @@ class _ModernistCardState extends ConsumerState<ModernistCard> {
                   // Favorite button
                   IconButton(
                     icon: Icon(
-                      recipe.isFavorite ? Icons.favorite : Icons.favorite_border,
+                      recipe.isFavourite ? Icons.favorite : Icons.favorite_border,
                       size: 20,
                     ),
-                    color: recipe.isFavorite
+                    color: recipe.isFavourite
                         ? theme.colorScheme.secondary
                         : theme.colorScheme.onSurfaceVariant,
                     onPressed: () async {

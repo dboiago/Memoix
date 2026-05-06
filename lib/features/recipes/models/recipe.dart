@@ -92,7 +92,7 @@ class Recipe {
   DateTime updatedAt = DateTime.now();
 
   /// Whether this is a favourite
-  bool isFavorite = false;
+  bool isFavourite = false;
 
   /// User rating (1-5 stars, 0 = unrated)
   int rating = 0;
@@ -176,7 +176,7 @@ class Recipe {
     this.imageUrl,
     this.source = RecipeSource.personal,
     this.colorValue,
-    this.isFavorite = false,
+    this.isFavourite = false,
     this.rating = 0,
     this.cookCount = 0,
     this.lastCookedAt,
@@ -264,7 +264,7 @@ class Recipe {
         orElse: () => RecipeSource.personal,
       )
       ..colorValue = json['colorValue'] as int?
-      ..isFavorite = json['isFavorite'] as bool? ?? false
+      ..isFavourite = json['isFavorite'] as bool? ?? false
       ..rating = json['rating'] as int? ?? 0
       ..cookCount = json['cookCount'] as int? ?? 0
       ..tags =
@@ -332,7 +332,7 @@ class Recipe {
       'stepImageMap': stepImageMap,
       'source': source.name,
       'colorValue': colorValue,
-      'isFavorite': isFavorite,
+      'isFavorite': isFavourite,
       'rating': rating,
       'cookCount': cookCount,
       'lastCookedAt': lastCookedAt?.toUtc().toIso8601String(),

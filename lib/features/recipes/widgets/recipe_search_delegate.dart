@@ -183,7 +183,7 @@ class RecipeSearchDelegate extends SearchDelegate<Recipe?> {
                             .whereType<String>()
                             .join(' • '),
                       ),
-                      trailing: recipe.isFavorite
+                      trailing: recipe.isFavourite
                           ? Icon(Icons.favorite,
                               color: theme.colorScheme.secondary, size: 20,)
                           : null,
@@ -257,7 +257,7 @@ class RecipeSearchDelegate extends SearchDelegate<Recipe?> {
               subtitle: Text(
                 [recipe.cuisine, recipe.course].whereType<String>().join(' • '),
               ),
-              trailing: recipe.isFavorite
+              trailing: recipe.isFavourite
                   ? Icon(Icons.favorite,
                       color: Theme.of(context).colorScheme.secondary, size: 20,)
                   : null,

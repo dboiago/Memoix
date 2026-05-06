@@ -5,7 +5,7 @@ import '../../features/recipes/models/recipe.dart';
 /// Represents a single data point for the future Culinary Intelligence pipeline.
 ///
 /// A [KnowledgePayload] captures a complete [Recipe] — including personal notes,
-/// ingredient-level details, and quality signals such as [Recipe.isFavorite] —
+/// ingredient-level details, and quality signals such as [Recipe.isFavourite] —
 /// alongside the raw source text that produced it and contextual metadata.
 ///
 /// Payloads are only ever constructed after both the master privacy switch and
@@ -55,7 +55,7 @@ class KnowledgePayload {
         'cuisine': recipe.cuisine,
         'serves': recipe.serves,
         'time': recipe.time,
-        'isFavourite': recipe.isFavorite,
+        'isFavourite': recipe.isFavourite,
         'rating': recipe.rating,
         'cookCount': recipe.cookCount,
         'source': recipe.source.name,

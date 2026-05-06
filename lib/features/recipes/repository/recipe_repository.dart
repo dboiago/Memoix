@@ -353,7 +353,7 @@ class RecipeRepository {
       colorValue: Value(recipe.colorValue),
       createdAt: Value(recipe.createdAt),
       updatedAt: Value(recipe.updatedAt),
-      isFavorite: Value(recipe.isFavorite),
+      isFavorite: Value(recipe.isFavourite),
       rating: Value(recipe.rating),
       cookCount: Value(recipe.cookCount),
       editCount: Value(recipe.editCount),
@@ -434,7 +434,7 @@ class RecipeRepository {
       ..colorValue = r.colorValue
       ..createdAt = r.createdAt
       ..updatedAt = r.updatedAt
-      ..isFavorite = r.isFavorite
+      ..isFavourite = r.isFavorite
       ..rating = r.rating
       ..cookCount = r.cookCount
       ..editCount = r.editCount
@@ -593,7 +593,7 @@ class RecipeRepository {
           ..colorValue = d.colorValue
           ..createdAt = d.createdAt
           ..updatedAt = d.updatedAt
-          ..isFavorite = d.isFavorite
+          ..isFavourite = d.isFavorite
           ..rating = d.rating
           ..cookCount = d.cookCount
           ..editCount = d.editCount
@@ -983,7 +983,7 @@ class RecipeRepository {
   Future<List<IntegrityResponse>> toggleFavourite(int id) async {
     final existing = await getRecipeById(id);
     if (existing == null) return [];
-    final wasFavorited = existing.isFavorite;
+    final wasFavorited = existing.isFavourite;
 
     if (!wasFavorited) {
       final preflight = await IntegrityService.preflightSecondary(
@@ -1014,7 +1014,7 @@ class RecipeRepository {
     );
 
     // Reflect the new favourite state in-memory then queue for telemetry (fire-and-forget).
-    existing.isFavorite = !wasFavorited;
+    existing.isFavourite = !wasFavorited;
     unawaited(_ref.read(ragTelemetryServiceProvider).queueForExport(existing));
 
     return [];

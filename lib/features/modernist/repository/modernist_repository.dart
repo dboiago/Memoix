@@ -56,7 +56,7 @@ class ModernistRepository {
       ..stepImageMap = (jsonDecode(r.stepImageMap) as List).cast<String>()
       ..imageUrl = r.imageUrl
       ..imageUrls = (jsonDecode(r.imageUrls) as List).cast<String>()
-      ..isFavorite = r.isFavorite
+      ..isFavourite = r.isFavorite
       ..cookCount = r.cookCount
       ..source = ModernistSource.values.firstWhere(
             (s) => s.name == r.source,
@@ -164,7 +164,7 @@ class ModernistRepository {
       stepImageMap: Value(jsonEncode(recipe.stepImageMap)),
       imageUrl: Value(recipe.imageUrl),
       imageUrls: Value(jsonEncode(recipe.imageUrls)),
-      isFavorite: Value(recipe.isFavorite),
+      isFavorite: Value(recipe.isFavourite),
       cookCount: Value(recipe.cookCount),
       source: Value(recipe.source.name),
       pairedRecipeIds: Value(jsonEncode(recipe.pairedRecipeIds)),
@@ -280,7 +280,7 @@ class ModernistRepository {
     // the full ModernistRecipe, so we resolve it asynchronously.
     unawaited(getById(id).then((r) {
       if (r == null) return;
-      r.isFavorite = !wasFavorited;
+      r.isFavourite = !wasFavorited;
       _ref.read(ragTelemetryServiceProvider).queueModernistForExport(r);
     }));
   }
