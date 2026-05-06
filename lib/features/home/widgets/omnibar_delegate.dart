@@ -341,6 +341,10 @@ class OmnibarDelegate extends SearchDelegate<void> {
             showSuggestions(context);
           },
         ),
+      IconButton(
+        icon: const Icon(Icons.arrow_forward),
+        onPressed: () => showResults(context),
+      ),
     ];
   }
 
