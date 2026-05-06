@@ -11,7 +11,7 @@ import '../screens/settings_screen.dart';
 /// Privacy rules enforced by the sheet:
 /// - Tapping 'Enable' sets the master switch and marks the prompt as seen.
 /// - Tapping 'Not now' only marks the prompt as seen (no data is ever shared).
-/// - Tapping 'Learn more' opens the project URL and does NOT dismiss the sheet
+/// - Tapping 'Learn more' opens the details screen and does NOT dismiss the sheet
 ///   or modify any preference.
 class CulinaryIntelligenceBottomSheet extends ConsumerWidget {
   const CulinaryIntelligenceBottomSheet({super.key});
