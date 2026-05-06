@@ -25,6 +25,7 @@ import '../widgets/direction_list.dart';
 import '../widgets/split_recipe_view.dart';
 import '../../sharing/services/share_service.dart';
 import '../../statistics/models/cooking_stats.dart';
+import '../../settings/screens/settings_screen.dart';
 import '../../../core/services/integrity_service.dart';
 import '../../ai/ai_settings_provider.dart';
 import '../widgets/ingredient_reference_sheet.dart';
