@@ -5,7 +5,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 
-import '../database/app_database.dart';
+import '../database/app_database.dart' hide Recipe;
 import '../models/cellar_knowledge_payload.dart';
 import '../models/cheese_knowledge_payload.dart';
 import '../models/knowledge_payload.dart';

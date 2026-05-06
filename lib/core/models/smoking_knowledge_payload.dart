@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import '../../features/smoking/models/smoking_recipe.dart';
+import '../database/app_database.dart' show SmokingRecipe;
 
 /// RAG telemetry payload for a [SmokingRecipe].
 ///

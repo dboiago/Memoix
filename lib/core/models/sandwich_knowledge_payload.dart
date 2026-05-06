@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import '../../features/sandwiches/models/sandwich.dart';
+import '../database/app_database.dart' show Sandwich;
 
 /// RAG telemetry payload for a [Sandwich].
 ///

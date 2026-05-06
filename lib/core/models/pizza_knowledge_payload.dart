@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import '../../features/pizzas/models/pizza.dart';
+import '../database/app_database.dart' show Pizza;
 
 /// RAG telemetry payload for a [Pizza].
 ///

@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import '../../features/cheese/models/cheese_entry.dart';
+import '../database/app_database.dart' show CheeseEntry;
 
 /// RAG telemetry payload for a [CheeseEntry].
 ///

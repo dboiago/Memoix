@@ -5,6 +5,7 @@ import 'package:crypto/crypto.dart';
 import '../../features/cellar/models/cellar_entry.dart';
 import '../../features/cheese/models/cheese_entry.dart';
 import '../../features/modernist/models/modernist_recipe.dart';
+import '../database/app_database.dart' hide Recipe;
 import '../../features/pizzas/models/pizza.dart';
 import '../../features/recipes/models/recipe.dart';
 import '../../features/sandwiches/models/sandwich.dart';

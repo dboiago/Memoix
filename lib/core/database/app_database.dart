@@ -600,7 +600,7 @@ class AppDatabase extends _$AppDatabase {
         final recipeCols =
             await customSelect('PRAGMA table_info(recipes)').get();
         if (!recipeCols.any((r) => r.read<String>('name') == 'lineage_hash')) {
-          await m.addColumn(recipes, recipes.lineageHash);
+          await customStatement('ALTER TABLE recipes ADD COLUMN lineage_hash TEXT');
         }
       }
     },

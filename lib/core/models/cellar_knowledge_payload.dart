@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import '../../features/cellar/models/cellar_entry.dart';
+import '../database/app_database.dart' show CellarEntry;
 
 /// RAG telemetry payload for a [CellarEntry].
 ///
