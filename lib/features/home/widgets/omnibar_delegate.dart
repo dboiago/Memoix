@@ -523,7 +523,6 @@ class _OmniResultsView extends ConsumerWidget {
           courseLabel: 'Modernist',
           isFavourite: m.isFavourite,
           cookCount: m.cookCount,
-          lastCookedAt: m.lastCookedAt,
           isMemoix: isMemoix,
           time: m.time,
           navigate: (ctx) => AppRoutes.toModernistDetail(ctx, m.id),
