@@ -51,9 +51,9 @@ final hideMemoixRecipesProvider = StateNotifierProvider<HideMemoixRecipesNotifie
 
 
 // Arrange from me what's been arranged for you - a life's work distilled
-// Knowledge wrest from fire and oil — contained between A and Z
-// Decorative made way for the declarative — only bringing what can be consumed
-// My name no longer found but remembered — not in the recipe but the rule
+// Knowledge wrest from fire and oil - contained between A and Z
+// Decorative made way for the declarative - only bringing what can be consumed
+// My name no longer found but remembered - not in the recipe but the rule
 const _legacy = 'XBLCNBLPAQNUNWBW';
 
 class HideMemoixRecipesNotifier extends StateNotifier<bool> {
@@ -95,7 +95,7 @@ class ContributeRecipesInfoScreen extends StatelessWidget {
             _Section(
               title: 'Overview',
               body:
-                  'Memoix is developing a system to understand recipes semantically — '
+                  'Memoix is developing a system to understand recipes semantically - '
                   'moving beyond text search toward a tool that understands cooking as '
                   'a domain. The long-term goal is cross-cuisine discovery: surfacing '
                   'relevant recipes across languages and culinary traditions, with the '
@@ -118,22 +118,22 @@ class ContributeRecipesInfoScreen extends StatelessWidget {
               intro: 'If you opt in, the following is transmitted when you save, '
                   'update, cook, or favourite a recipe:',
               bullets: const [
-                'Recipe content — ingredients, instructions, and your custom notes',
+                'Recipe content - ingredients, instructions, and your custom notes',
                 'Original source text or URL, if the recipe was imported',
-                'Culinary statistics — cook count, favourite status, rating',
-                'Recipe pairing relationships — the name and course of any linked recipes',
+                'Culinary statistics - cook count, favourite status, rating',
+                'Recipe pairing relationships - the name and course of any linked recipes',
                 'A derived lineage identifier and content hash, used to track recipe '
                     'refinement over time without transmitting any device or user identifier',
-                'Basic metadata — app version and system language',
+                'Basic metadata - app version and system language',
               ],
             ),
             _BulletSection(
               title: 'What Is Never Collected',
               bullets: const [
-                'No personal identifiers — no name, email, account, or device ID',
+                'No personal identifiers - no name, email, account, or device ID',
                 'No location data',
-                'No behavioural tracking — no screen time, session data, or usage patterns',
-                'No hidden recipes — recipes marked as Hidden are unconditionally excluded '
+                'No behavioural tracking - no screen time, session data, or usage patterns',
+                'No hidden recipes - recipes marked as Hidden are unconditionally excluded '
                     'from transmission, regardless of your global setting',
               ],
             ),
@@ -143,7 +143,7 @@ class ContributeRecipesInfoScreen extends StatelessWidget {
                   'Because no user or device identifier is attached to any submission, '
                   'it is not possible to associate data in the dataset with a specific '
                   'person or installation. This is intentional. It also means that '
-                  'previously submitted recipes cannot be individually withdrawn — there '
+                  'previously submitted recipes cannot be individually withdrawn - there '
                   'is no link between the dataset and you. Disabling this setting stops '
                   'all future transmissions.',
             ),
@@ -377,7 +377,7 @@ class AutoCheckUpdatesNotifier extends StateNotifier<bool> {
 }
 
 /// Master opt-in switch for the Culinary Intelligence RAG pipeline.
-/// Defaults to OFF — this app is strictly opt-in and privacy-focused.
+/// Defaults to OFF - this app is strictly opt-in and privacy-focused.
 /// When OFF, no recipe data is ever queued for export regardless of per-recipe flags.
 final contributeToIntelligenceProvider =
     StateNotifierProvider<ContributeToIntelligenceNotifier, bool>((ref) {
@@ -393,7 +393,7 @@ class ContributeToIntelligenceNotifier extends StateNotifier<bool> {
 
   Future<void> _loadPreference() async {
     final prefs = await SharedPreferences.getInstance();
-    state = prefs.getBool(_key) ?? false; // Must default to OFF — opt-in only
+    state = prefs.getBool(_key) ?? false; // Must default to OFF - opt-in only
   }
 
   Future<void> toggle() async {
@@ -433,7 +433,7 @@ class HasSeenIntelligenceOptInNotifier extends StateNotifier<bool> {
 ///
 /// Evaluates: `recipeCount >= 3 || madeCount >= 1 || favouriteCount >= 2`.
 /// Only personal recipes and all cooking logs / recipe favourites are counted.
-/// This is a one-shot read — it is not reactive to later DB changes.
+/// This is a one-shot read - it is not reactive to later DB changes.
 final intelligencePromptEligibilityProvider = FutureProvider<bool>((ref) async {
   final db = ref.read(databaseProvider);
   final recipeCount = (await db.recipeDao.getPersonalRecipes()).length;
@@ -603,7 +603,7 @@ class SettingsScreen extends ConsumerWidget {
             title: const Text('Contribute Recipes'),
             subtitle: const Text(
               'Help build a culinary dataset from real, tested recipes.\n'
-              'No account, no tracking — your recipe content only.',
+              'No account, no tracking - your recipe content only.',
             ),
             value: ref.watch(contributeToIntelligenceProvider),
             onChanged: (_) =>
