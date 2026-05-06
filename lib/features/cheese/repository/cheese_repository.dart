@@ -71,7 +71,7 @@ class CheeseRepository {
       priceRange: Value(entry.priceRange),
       imageUrl: Value(entry.imageUrl),
       source: Value(entry.source),
-      isFavourite: Value(entry.isFavorite),
+      isFavourite: Value(entry.isFavourite),
       createdAt: Value(entry.createdAt),
       updatedAt: Value(preserveTimestamp ? entry.updatedAt : DateTime.now()),
       version: Value(entry.version),
@@ -112,8 +112,8 @@ class CheeseRepository {
 
   /// Toggle favourite status
   Future<void> toggleFavourite(CheeseEntry entry) async {
-    final wasFavorited = entry.isFavorite;
-    await _db.cellarDao.toggleCheeseFavourite(entry.id, entry.isFavorite);
+    final wasFavorited = entry.isFavourite;
+    await _db.cellarDao.toggleCheeseFavourite(entry.id, entry.isFavourite);
 
     // Notify personal storage service of change
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
@@ -127,7 +127,7 @@ class CheeseRepository {
       },
     );
     // Fire-and-forget: queue updated favourite state for Culinary Intelligence export.
-    unawaited(_ref.read(ragTelemetryServiceProvider).queueCheeseForExport(entry.copyWith(isFavorite: !wasFavorited)));
+    unawaited(_ref.read(ragTelemetryServiceProvider).queueCheeseForExport(entry.copyWith(isFavourite: !wasFavorited)));
   }
 
   /// Toggle buy status

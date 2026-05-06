@@ -61,7 +61,7 @@ typedef _RecipeRaw = ({
   int? colorValue,
   DateTime createdAt,
   DateTime updatedAt,
-  bool isFavorite,
+  bool isFavourite,
   int rating,
   int cookCount,
   int editCount,
@@ -121,7 +121,7 @@ typedef _RecipeDecoded = ({
   int? colorValue,
   DateTime createdAt,
   DateTime updatedAt,
-  bool isFavorite,
+  bool isFavourite,
   int rating,
   int cookCount,
   int editCount,
@@ -168,7 +168,7 @@ _RecipeRaw _toRecipeRaw(db.Recipe r) => (
       colorValue: r.colorValue,
       createdAt: r.createdAt,
       updatedAt: r.updatedAt,
-      isFavorite: r.isFavorite,
+      isFavourite: r.isFavourite,
       rating: r.rating,
       cookCount: r.cookCount,
       editCount: r.editCount,
@@ -289,7 +289,7 @@ List<_RecipeDecoded> _batchDecodeRecipes(
         colorValue: r.colorValue,
         createdAt: r.createdAt,
         updatedAt: r.updatedAt,
-        isFavorite: r.isFavorite,
+        isFavourite: r.isFavourite,
         rating: r.rating,
         cookCount: r.cookCount,
         editCount: r.editCount,
@@ -353,7 +353,7 @@ class RecipeRepository {
       colorValue: Value(recipe.colorValue),
       createdAt: Value(recipe.createdAt),
       updatedAt: Value(recipe.updatedAt),
-      isFavorite: Value(recipe.isFavourite),
+      isFavourite: Value(recipe.isFavourite),
       rating: Value(recipe.rating),
       cookCount: Value(recipe.cookCount),
       editCount: Value(recipe.editCount),
@@ -434,7 +434,7 @@ class RecipeRepository {
       ..colorValue = r.colorValue
       ..createdAt = r.createdAt
       ..updatedAt = r.updatedAt
-      ..isFavourite = r.isFavorite
+      ..isFavourite = r.isFavourite
       ..rating = r.rating
       ..cookCount = r.cookCount
       ..editCount = r.editCount
@@ -593,7 +593,7 @@ class RecipeRepository {
           ..colorValue = d.colorValue
           ..createdAt = d.createdAt
           ..updatedAt = d.updatedAt
-          ..isFavourite = d.isFavorite
+          ..isFavourite = d.isFavourite
           ..rating = d.rating
           ..cookCount = d.cookCount
           ..editCount = d.editCount

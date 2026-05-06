@@ -56,7 +56,7 @@ class ModernistRepository {
       ..stepImageMap = (jsonDecode(r.stepImageMap) as List).cast<String>()
       ..imageUrl = r.imageUrl
       ..imageUrls = (jsonDecode(r.imageUrls) as List).cast<String>()
-      ..isFavourite = r.isFavorite
+      ..isFavourite = r.isFavourite
       ..cookCount = r.cookCount
       ..source = ModernistSource.values.firstWhere(
             (s) => s.name == r.source,
@@ -102,7 +102,7 @@ class ModernistRepository {
 
   /// Watch favourite recipes
   Stream<List<ModernistRecipe>> watchFavourites() =>
-      _watchModernistWithIngredients((r) => r.isFavorite);
+      _watchModernistWithIngredients((r) => r.isFavourite);
 
   // ── Fetch methods ────────────────────────────────────────────────────────
 
@@ -164,7 +164,7 @@ class ModernistRepository {
       stepImageMap: Value(jsonEncode(recipe.stepImageMap)),
       imageUrl: Value(recipe.imageUrl),
       imageUrls: Value(jsonEncode(recipe.imageUrls)),
-      isFavorite: Value(recipe.isFavourite),
+      isFavourite: Value(recipe.isFavourite),
       cookCount: Value(recipe.cookCount),
       source: Value(recipe.source.name),
       pairedRecipeIds: Value(jsonEncode(recipe.pairedRecipeIds)),
@@ -265,8 +265,8 @@ class ModernistRepository {
   Future<void> toggleFavourite(int id) async {
     final existing = await _db.recipeDao.getRecipeById(id);
     if (existing == null) return;
-    final wasFavorited = existing.isFavorite;
-    await _db.recipeDao.toggleFavourite(id, existing.isFavorite);
+    final wasFavorited = existing.isFavourite;
+    await _db.recipeDao.toggleFavourite(id, existing.isFavourite);
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
     await IntegrityService.reportEvent(
       'activity.recipe_favourited',
@@ -315,7 +315,7 @@ class ModernistRepository {
       colorValue: Value(existing.colorValue),
       createdAt: Value(existing.createdAt),
       updatedAt: Value(DateTime.now()),
-      isFavorite: Value(existing.isFavorite),
+      isFavourite: Value(existing.isFavourite),
       rating: Value(existing.rating),
       cookCount: Value(existing.cookCount + 1),
       editCount: Value(existing.editCount),

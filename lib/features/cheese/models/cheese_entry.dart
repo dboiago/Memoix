@@ -23,7 +23,7 @@ CheeseEntry cheeseEntryFromJson(Map<String, dynamic> json) {
     priceRange: (json['priceRange'] as num?)?.toInt(),
     imageUrl: json['imageUrl']?.toString(),
     source: json['source']?.toString() ?? CheeseSource.personal.name,
-    isFavorite: json['isFavorite'] as bool? ?? false,
+    isFavourite: json['isFavorite'] as bool? ?? false,
     createdAt: json['createdAt'] is int
         ? DateTime.fromMillisecondsSinceEpoch(json['createdAt'] as int).toUtc()
         : json['createdAt'] != null
@@ -52,7 +52,7 @@ extension CheeseEntryX on CheeseEntry {
         'priceRange': priceRange,
         'imageUrl': imageUrl,
         'source': source,
-        'isFavorite': isFavorite,
+        'isFavorite': isFavourite,
         'createdAt': createdAt.toUtc().toIso8601String(),
         'updatedAt': updatedAt.toUtc().toIso8601String(),
         'version': version,

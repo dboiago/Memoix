@@ -90,7 +90,7 @@ class SmokingRepository {
       stepImages: Value(recipe.stepImages),
       stepImageMap: Value(recipe.stepImageMap),
       imageUrl: Value(recipe.imageUrl),
-      isFavorite: Value(recipe.isFavorite),
+      isFavourite: Value(recipe.isFavourite),
       cookCount: Value(recipe.cookCount),
       source: Value(recipe.source),
       pairedRecipeIds: Value(recipe.pairedRecipeIds),
@@ -128,8 +128,8 @@ class SmokingRepository {
 
   /// Toggle favourite status
   Future<void> toggleFavourite(SmokingRecipe recipe) async {
-    final wasFavorited = recipe.isFavorite;
-    await _db.smokingDao.toggleFavourite(recipe.id, recipe.isFavorite);
+    final wasFavorited = recipe.isFavourite;
+    await _db.smokingDao.toggleFavourite(recipe.id, recipe.isFavourite);
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
     await IntegrityService.reportEvent(
       'activity.recipe_favourited',
@@ -139,7 +139,7 @@ class SmokingRepository {
       },
     );
     // Fire-and-forget: queue updated favourite state for Culinary Intelligence export.
-    unawaited(_ref.read(ragTelemetryServiceProvider).queueSmokingForExport(recipe.copyWith(isFavorite: !wasFavorited)));
+    unawaited(_ref.read(ragTelemetryServiceProvider).queueSmokingForExport(recipe.copyWith(isFavourite: !wasFavorited)));
   }
 
   /// Increment cook count

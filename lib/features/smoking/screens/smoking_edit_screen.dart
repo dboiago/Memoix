@@ -1860,7 +1860,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
       stepImageMap: jsonEncode(_stepImageMap.entries.map((e) => '${e.key}:${e.value}').toList()),
       pairedRecipeIds: jsonEncode(_pairedRecipeIds),
       source: _existingRecipe?.source ?? SmokingSource.personal.name,
-      isFavorite: _existingRecipe?.isFavorite ?? false,
+      isFavourite: _existingRecipe?.isFavourite ?? false,
       cookCount: _existingRecipe?.cookCount ?? 0,
       imageUrl: _existingRecipe?.imageUrl,
       createdAt: _existingRecipe?.createdAt ?? now,

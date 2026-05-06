@@ -74,7 +74,7 @@ class PizzaRepository {
       notes: Value(safeNotes),
       imageUrl: Value(pizza.imageUrl),
       source: Value(pizza.source),
-      isFavorite: Value(pizza.isFavorite),
+      isFavourite: Value(pizza.isFavourite),
       cookCount: Value(pizza.cookCount),
       rating: Value(pizza.rating),
       tags: Value(pizza.tags),
@@ -111,8 +111,8 @@ class PizzaRepository {
 
   /// Toggle favourite status
   Future<void> toggleFavourite(Pizza pizza) async {
-    final wasFavorited = pizza.isFavorite;
-    await _db.catalogueDao.togglePizzaFavourite(pizza.id, pizza.isFavorite);
+    final wasFavorited = pizza.isFavourite;
+    await _db.catalogueDao.togglePizzaFavourite(pizza.id, pizza.isFavourite);
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
     await IntegrityService.reportEvent(
       'activity.recipe_favourited',
@@ -122,7 +122,7 @@ class PizzaRepository {
       },
     );
     // Fire-and-forget: queue updated favourite state for Culinary Intelligence export.
-    unawaited(_ref.read(ragTelemetryServiceProvider).queuePizzaForExport(pizza.copyWith(isFavorite: !wasFavorited)));
+    unawaited(_ref.read(ragTelemetryServiceProvider).queuePizzaForExport(pizza.copyWith(isFavourite: !wasFavorited)));
   }
 
   /// Increment cook count
@@ -181,7 +181,7 @@ class PizzaRepository {
           notes: Value(pizza.notes),
           imageUrl: Value(pizza.imageUrl),
           source: Value(pizza.source),
-          isFavorite: Value(pizza.isFavorite),
+          isFavourite: Value(pizza.isFavourite),
           cookCount: Value(pizza.cookCount),
           rating: Value(pizza.rating),
           tags: Value(pizza.tags),

@@ -80,10 +80,10 @@ class _CellarCardState extends ConsumerState<CellarCard> {
                   // Favourite button
                   IconButton(
                     icon: Icon(
-                      widget.entry.isFavorite ? Icons.favorite : Icons.favorite_border,
+                      widget.entry.isFavourite ? Icons.favorite : Icons.favorite_border,
                       size: 20,
                     ),
-                    color: widget.entry.isFavorite
+                    color: widget.entry.isFavourite
                         ? theme.colorScheme.secondary
                         : theme.colorScheme.onSurfaceVariant,
                     onPressed: () async {

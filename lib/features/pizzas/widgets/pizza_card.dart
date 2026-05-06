@@ -116,10 +116,10 @@ class _PizzaCardState extends ConsumerState<PizzaCard> {
                   // Favorite button
                   IconButton(
                     icon: Icon(
-                      widget.pizza.isFavorite ? Icons.favorite : Icons.favorite_border,
+                      widget.pizza.isFavourite ? Icons.favorite : Icons.favorite_border,
                       size: 20,
                     ),
-                    color: widget.pizza.isFavorite
+                    color: widget.pizza.isFavourite
                         ? theme.colorScheme.secondary
                         : theme.colorScheme.onSurfaceVariant,
                     onPressed: () async {

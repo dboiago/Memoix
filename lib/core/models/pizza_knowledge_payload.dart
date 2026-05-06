@@ -37,7 +37,7 @@ class PizzaKnowledgePayload {
         'notes': pizza.notes,
         'tags': jsonDecode(pizza.tags),
         'source': pizza.source,
-        'isFavourite': pizza.isFavorite,
+        'isFavourite': pizza.isFavourite,
         'cookCount': pizza.cookCount,
         'rating': pizza.rating,
       },

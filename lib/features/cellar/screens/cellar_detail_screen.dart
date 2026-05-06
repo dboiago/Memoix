@@ -33,7 +33,7 @@ class CellarDetailScreen extends ConsumerWidget {
       data: (entries) {
         final entry = entries.firstWhere(
           (e) => e.uuid == entryId,
-          orElse: () => CellarEntry(id: 0, uuid: '', name: '', buy: false, source: CellarSource.personal.name, isFavorite: false, createdAt: DateTime.now(), updatedAt: DateTime.now(), version: 1),
+          orElse: () => CellarEntry(id: 0, uuid: '', name: '', buy: false, source: CellarSource.personal.name, isFavourite: false, createdAt: DateTime.now(), updatedAt: DateTime.now(), version: 1),
         );
 
         if (entry.name.isEmpty) {
@@ -66,7 +66,7 @@ class _CellarDetailView extends ConsumerWidget {
           MemoixHeader(
             title: entry.name,
             headerImage: showHeaderImages ? entry.imageUrl : null,
-            isFavorite: entry.isFavorite,
+            isFavorite: entry.isFavourite,
             onFavoritePressed: () async {
               await ref.read(cellarRepositoryProvider).toggleFavourite(entry);
               ref.invalidate(allCellarEntriesProvider);
@@ -252,7 +252,7 @@ class _CellarDetailView extends ConsumerWidget {
       priceRange: entry.priceRange,
       imageUrl: entry.imageUrl,
       source: CellarSource.personal.name,
-      isFavorite: false,
+      isFavourite: false,
       createdAt: now,
       updatedAt: now,
       version: 1,

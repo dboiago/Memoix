@@ -45,7 +45,7 @@ class SmokingKnowledgePayload {
         'directions': jsonDecode(recipe.directions),
         'notes': recipe.notes,
         'source': recipe.source,
-        'isFavourite': recipe.isFavorite,
+        'isFavourite': recipe.isFavourite,
         'cookCount': recipe.cookCount,
         'pairedRecipes': pairedRecipes,
       },

@@ -790,7 +790,7 @@ class _SandwichEditScreenState extends ConsumerState<SandwichEditScreen> {
       notes: _notesController.text.trim().isEmpty ? null : _notesController.text.trim(),
       imageUrl: _imagePath,
       source: _existingSandwich?.source ?? SandwichSource.personal.name,
-      isFavorite: _existingSandwich?.isFavorite ?? false,
+      isFavourite: _existingSandwich?.isFavourite ?? false,
       cookCount: _existingSandwich?.cookCount ?? 0,
       rating: _existingSandwich?.rating ?? 0,
       tags: _existingSandwich?.tags ?? '[]',

@@ -812,7 +812,7 @@ class _PizzaEditScreenState extends ConsumerState<PizzaEditScreen> {
       notes: _notesController.text.trim().isEmpty ? null : _notesController.text.trim(),
       imageUrl: _imagePath,
       source: _existingPizza?.source ?? PizzaSource.personal.name,
-      isFavorite: _existingPizza?.isFavorite ?? false,
+      isFavourite: _existingPizza?.isFavourite ?? false,
       cookCount: _existingPizza?.cookCount ?? 0,
       rating: _existingPizza?.rating ?? 0,
       tags: _existingPizza?.tags ?? '[]',

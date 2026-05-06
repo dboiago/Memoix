@@ -96,7 +96,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
           // Rich Fixed Header
           MemoixHeader(
             title: recipe.name,
-            isFavorite: recipe.isFavorite,
+            isFavorite: recipe.isFavourite,
             headerImage: hasHeaderImage ? headerImage : null,
             onFavoritePressed: () async {
               await ref.read(smokingRepositoryProvider).toggleFavourite(recipe);
@@ -336,8 +336,8 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
     return [
       IconButton(
         icon: Icon(
-          recipe.isFavorite ? Icons.favorite : Icons.favorite_border,
-          color: recipe.isFavorite ? theme.colorScheme.secondary : null,
+          recipe.isFavourite ? Icons.favorite : Icons.favorite_border,
+          color: recipe.isFavourite ? theme.colorScheme.secondary : null,
         ),
         onPressed: () async {
           await ref.read(smokingRepositoryProvider).toggleFavourite(recipe);
@@ -400,7 +400,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
           // 1. THE RICH HEADER - Fixed at top, does not scroll
           MemoixHeader(
             title: recipe.name,
-            isFavorite: recipe.isFavorite,
+            isFavorite: recipe.isFavourite,
             headerImage: hasHeaderImage ? headerImage : null,
             onFavoritePressed: () async {
               await ref.read(smokingRepositoryProvider).toggleFavourite(recipe);
@@ -1088,7 +1088,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
       stepImages: recipe.stepImages,
       stepImageMap: recipe.stepImageMap,
       imageUrl: recipe.imageUrl,
-      isFavorite: false,
+      isFavourite: false,
       cookCount: 0,
       source: SmokingSource.personal.name,
       pairedRecipeIds: recipe.pairedRecipeIds,

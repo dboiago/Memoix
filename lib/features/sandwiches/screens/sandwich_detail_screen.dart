@@ -97,7 +97,7 @@ class _SandwichDetailViewState extends ConsumerState<_SandwichDetailView> {
           // 1. THE RICH HEADER - Fixed at top, does not scroll
           MemoixHeader(
             title: sandwich.name,
-            isFavorite: sandwich.isFavorite,
+            isFavorite: sandwich.isFavourite,
             headerImage: hasHeaderImage ? sandwich.imageUrl : null,
             onFavoritePressed: () async {
               await ref.read(sandwichRepositoryProvider).toggleFavourite(sandwich);
@@ -208,7 +208,7 @@ class _SandwichDetailViewState extends ConsumerState<_SandwichDetailView> {
           // 1. THE RICH HEADER - Fixed at top, does not scroll
           MemoixHeader(
             title: sandwich.name,
-            isFavorite: sandwich.isFavorite,
+            isFavorite: sandwich.isFavourite,
             headerImage: hasHeaderImage ? sandwich.imageUrl : null,
             onFavoritePressed: () async {
               await ref.read(sandwichRepositoryProvider).toggleFavourite(sandwich);
@@ -350,8 +350,8 @@ class _SandwichDetailViewState extends ConsumerState<_SandwichDetailView> {
     return [
       IconButton(
         icon: Icon(
-          sandwich.isFavorite ? Icons.favorite : Icons.favorite_border,
-          color: sandwich.isFavorite ? theme.colorScheme.secondary : null,
+          sandwich.isFavourite ? Icons.favorite : Icons.favorite_border,
+          color: sandwich.isFavourite ? theme.colorScheme.secondary : null,
         ),
         onPressed: () async {
           await ref.read(sandwichRepositoryProvider).toggleFavourite(sandwich);
@@ -452,7 +452,7 @@ class _SandwichDetailViewState extends ConsumerState<_SandwichDetailView> {
       notes: sandwich.notes,
       imageUrl: sandwich.imageUrl,
       source: SandwichSource.personal.name,
-      isFavorite: false,
+      isFavourite: false,
       cookCount: 0,
       rating: 0,
       tags: sandwich.tags,

@@ -47,7 +47,7 @@ class CheeseKnowledgePayload {
         'flavour': entry.flavour,
         'priceRange': entry.priceRange,
         'source': entry.source,
-        'isFavourite': entry.isFavorite,
+        'isFavourite': entry.isFavourite,
       },
       'rawSource': rawSource,
       'metadata': metadata,

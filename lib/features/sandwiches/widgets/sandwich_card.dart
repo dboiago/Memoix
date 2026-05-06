@@ -94,10 +94,10 @@ class _SandwichCardState extends ConsumerState<SandwichCard> {
                   // Favorite button
                   IconButton(
                     icon: Icon(
-                      widget.sandwich.isFavorite ? Icons.favorite : Icons.favorite_border,
+                      widget.sandwich.isFavourite ? Icons.favorite : Icons.favorite_border,
                       size: 20,
                     ),
-                    color: widget.sandwich.isFavorite
+                    color: widget.sandwich.isFavourite
                         ? theme.colorScheme.secondary
                         : theme.colorScheme.onSurfaceVariant,
                     onPressed: () async {

@@ -1649,7 +1649,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
       stepImages: jsonEncode(_stepImages),
       stepImageMap: jsonEncode(_stepImageMap.entries.map((e) => '${e.key}:${e.value}').toList()),
       imageUrl: null,
-      isFavorite: false,
+      isFavourite: false,
       cookCount: 0,
       source: SmokingSource.personal.name,
       pairedRecipeIds: jsonEncode(_pairedRecipeIds),

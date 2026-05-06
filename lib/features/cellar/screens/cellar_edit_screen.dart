@@ -433,7 +433,7 @@ class _CellarEditScreenState extends ConsumerState<CellarEditScreen> {
       priceRange: _priceRange > 0 ? _priceRange : null,
       imageUrl: _imagePath,
       source: _existingEntry?.source ?? CellarSource.personal.name,
-      isFavorite: _existingEntry?.isFavorite ?? false,
+      isFavourite: _existingEntry?.isFavourite ?? false,
       createdAt: _existingEntry?.createdAt ?? now,
       updatedAt: now,
       version: _existingEntry?.version ?? 1,

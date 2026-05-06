@@ -38,7 +38,7 @@ class SandwichKnowledgePayload {
         'notes': sandwich.notes,
         'tags': jsonDecode(sandwich.tags),
         'source': sandwich.source,
-        'isFavourite': sandwich.isFavorite,
+        'isFavourite': sandwich.isFavourite,
         'cookCount': sandwich.cookCount,
         'rating': sandwich.rating,
       },

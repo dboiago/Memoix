@@ -67,7 +67,7 @@ class CellarRepository {
       priceRange: Value(entry.priceRange),
       imageUrl: Value(entry.imageUrl),
       source: Value(entry.source),
-      isFavourite: Value(entry.isFavorite),
+      isFavourite: Value(entry.isFavourite),
       createdAt: Value(entry.createdAt),
       updatedAt: Value(preserveTimestamp ? entry.updatedAt : DateTime.now()),
       version: Value(entry.version),
@@ -108,8 +108,8 @@ class CellarRepository {
 
   /// Toggle favourite status
   Future<void> toggleFavourite(CellarEntry entry) async {
-    final wasFavorited = entry.isFavorite;
-    await _db.cellarDao.toggleFavourite(entry.id, entry.isFavorite);
+    final wasFavorited = entry.isFavourite;
+    await _db.cellarDao.toggleFavourite(entry.id, entry.isFavourite);
 
     // Notify personal storage service of change
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
@@ -123,7 +123,7 @@ class CellarRepository {
       },
     );
     // Fire-and-forget: queue updated favourite state for Culinary Intelligence export.
-    unawaited(_ref.read(ragTelemetryServiceProvider).queueCellarForExport(entry.copyWith(isFavorite: !wasFavorited)));
+    unawaited(_ref.read(ragTelemetryServiceProvider).queueCellarForExport(entry.copyWith(isFavourite: !wasFavorited)));
   }
 
   /// Toggle buy status
