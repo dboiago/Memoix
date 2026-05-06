@@ -5,6 +5,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/routes/router.dart';
 import '../../../core/database/app_database.dart';
+import '../../cellar/models/cellar_entry.dart';
+import '../../cellar/repository/cellar_repository.dart';
 import '../../cheese/models/cheese_entry.dart';
 import '../../cheese/repository/cheese_repository.dart';
 import '../../modernist/models/modernist_recipe.dart';
@@ -49,7 +51,7 @@ class OmnibarReasonLines {
 // Internal types
 // ─────────────────────────────────────────────────────────────────────────────
 
-enum _MealContext { general, breakfast, lunch, dinner, dessert, drink, bread, cheese }
+enum _MealContext { general, breakfast, lunch, dinner, dessert, drink, bread, cheese, cellar }
 
 class _OmniCandidate {
   final String name;
@@ -88,6 +90,7 @@ _MealContext _parseIntent(String query) {
   if (q.contains('drink') || q.contains('wine') || q.contains('beer') || q.contains('something to drink')) return _MealContext.drink;
   if (q.contains('bake') || q.contains('bread')) return _MealContext.bread;
   if (q.contains('cheese')) return _MealContext.cheese;
+  if (q.contains('cellar')) return _MealContext.cellar;
   return _MealContext.general;
 }
 
@@ -119,6 +122,7 @@ bool _isCourseEligible(String course, _MealContext context) {
     case _MealContext.bread:
       return slug == 'breads';
     case _MealContext.cheese:
+    case _MealContext.cellar:
       return false;
   }
 }
@@ -135,6 +139,7 @@ bool _isSmokingEligible(_MealContext context, {required bool isPitNote}) {
     case _MealContext.drink:
     case _MealContext.bread:
     case _MealContext.cheese:
+    case _MealContext.cellar:
       return false;
   }
 }
@@ -150,6 +155,7 @@ bool _isDomainEligible(_MealContext context) {
     case _MealContext.drink:
     case _MealContext.bread:
     case _MealContext.cheese:
+    case _MealContext.cellar:
       return false;
   }
 }
@@ -390,13 +396,17 @@ class _OmniResultsView extends ConsumerWidget {
     final cheeseAsync = intent == _MealContext.cheese
         ? ref.watch(allCheeseEntriesProvider)
         : const AsyncData<List<CheeseEntry>>([]);
+    final cellarAsync = intent == _MealContext.cellar
+        ? ref.watch(allCellarEntriesProvider)
+        : const AsyncData<List<CellarEntry>>([]);
 
     final isLoading = recipesAsync.isLoading ||
         pizzasAsync.isLoading ||
         sandwichesAsync.isLoading ||
         smokingAsync.isLoading ||
         modernistAsync.isLoading ||
-        cheeseAsync.isLoading;
+        cheeseAsync.isLoading ||
+        cellarAsync.isLoading;
 
     if (isLoading) {
       return const Center(child: CircularProgressIndicator());
@@ -408,6 +418,7 @@ class _OmniResultsView extends ConsumerWidget {
     final smokingAll = smokingAsync.valueOrNull ?? [];
     final modernists = modernistAsync.valueOrNull ?? [];
     final cheeseEntries = cheeseAsync.valueOrNull ?? [];
+    final cellarEntries = cellarAsync.valueOrNull ?? [];
 
     final eligible = <_OmniCandidate>[];
     final allPersonal = <_OmniCandidate>[];
@@ -547,12 +558,34 @@ class _OmniResultsView extends ConsumerWidget {
       }
     }
 
+    void _addCellar() {
+      if (intent != _MealContext.cellar) return;
+      for (final c in cellarEntries) {
+        final isMemoix = c.source == CellarSource.memoix.name;
+        final candidate = _OmniCandidate(
+          name: c.name,
+          courseLabel: 'Cellar',
+          isFavourite: c.isFavourite,
+          cookCount: 0,
+          isMemoix: isMemoix,
+          navigate: (ctx) => AppRoutes.toCellarDetail(ctx, c.uuid),
+        );
+        if (!isMemoix) allPersonal.add(candidate);
+        if (isMemoix) {
+          memoixEligible.add(candidate);
+        } else {
+          eligible.add(candidate);
+        }
+      }
+    }
+
     _addRecipes();
     _addPizzas();
     _addSandwiches();
     _addSmoking();
     _addModernist();
     _addCheese();
+    _addCellar();
 
     final rng = Random(DateTime.now().day * 31 + DateTime.now().month);
     final selected = _selectSuggestions(eligible, allPersonal, memoixEligible, intent, rng);
