@@ -234,21 +234,19 @@ String _reasonLine(_OmniCandidate c) {
 // ─────────────────────────────────────────────────────────────────────────────
 
 List<_OmniCandidate> _rankAndTake(List<_OmniCandidate> pool, Random rng) {
-  final tier3 = pool.where((c) => _scoreCandidate(c) == 3).toList()..shuffle(rng);
-  final other = pool.where((c) => _scoreCandidate(c) != 3).toList();
-
-  other.sort((a, b) {
-    final scoreDiff = _scoreCandidate(b) - _scoreCandidate(a);
-    if (scoreDiff != 0) return scoreDiff;
-    final ta = _parseTimeMinutes(a.time);
-    final tb = _parseTimeMinutes(b.time);
-    if (ta == null && tb == null) return 0;
-    if (ta == null) return 1;
-    if (tb == null) return -1;
-    return ta.compareTo(tb);
-  });
-
-  return [...other, ...tier3].take(4).toList();
+  final Map<int, List<_OmniCandidate>> byScore = {};
+  for (final c in pool) {
+    (byScore[_scoreCandidate(c)] ??= []).add(c);
+  }
+  for (final group in byScore.values) {
+    group.shuffle(rng);
+  }
+  final sortedScores = byScore.keys.toList()..sort((a, b) => b.compareTo(a));
+  final result = <_OmniCandidate>[];
+  for (final score in sortedScores) {
+    result.addAll(byScore[score]!);
+  }
+  return result.take(4).toList();
 }
 
 List<_OmniCandidate> _selectSuggestions(
@@ -390,8 +388,8 @@ class _OmniResultsView extends ConsumerWidget {
       final theme = Theme.of(context);
       return Center(
         child: Text(
-          'What sounds good?',
-          style: theme.textTheme.bodyLarge?.copyWith(
+          'Try: what should I make, what should I make for dinner',
+          style: theme.textTheme.bodyMedium?.copyWith(
             color: theme.colorScheme.onSurfaceVariant,
           ),
         ),
@@ -598,7 +596,7 @@ class _OmniResultsView extends ConsumerWidget {
     _addCheese();
     _addCellar();
 
-    final rng = Random(DateTime.now().day * 31 + DateTime.now().month);
+    final rng = Random(DateTime.now().millisecondsSinceEpoch);
     final selected = _selectSuggestions(eligible, allPersonal, memoixEligible, intent, rng);
 
     if (selected.isEmpty) {
