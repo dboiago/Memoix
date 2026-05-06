@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 import '../screens/settings_screen.dart';
 
@@ -16,8 +15,6 @@ import '../screens/settings_screen.dart';
 ///   or modify any preference.
 class CulinaryIntelligenceBottomSheet extends ConsumerWidget {
   const CulinaryIntelligenceBottomSheet({super.key});
-
-  static const _learnMoreUrl = 'https://github.com/dboiago/Memoix';
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -36,25 +33,25 @@ class CulinaryIntelligenceBottomSheet extends ConsumerWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              'Improve recipe understanding',
+              'Contribute to the recipe dataset',
               style: theme.textTheme.titleMedium?.copyWith(
                 fontWeight: FontWeight.bold,
               ),
             ),
             const SizedBox(height: 16),
             Text(
-              'I\'m working on a privacy-focused system for recipe adaptation, '
-              'substitutions, and scaling.\n\n'
-              'If enabled, selected recipes and basic recipe data (such as '
-              'favourites or made status) may be used to support this work over time.\n\n'
-              'Nothing is shared unless you turn it on. No data unrelated to your '
-              'recipes is collected.',
+              'I\'m building a culinary reference system trained on real recipes rather '
+              'than internet scrapes. If you enable this, recipes you save and refine '
+              'will be sent to a private dataset - ingredients, instructions, notes '
+              'and basic stats like cook count. \n\n'
+              'No account is created. No device identifier is attached. Recipes marked '
+              'as Hidden are never transmitted regardless of this setting.',
               style: theme.textTheme.bodyMedium,
             ),
             const SizedBox(height: 16),
             Center(
               child: Text(
-                'Built for better recipes, not usage tracking.',
+                'Built for cooking, not tracking.',
                 style: theme.textTheme.bodySmall?.copyWith(
                   fontStyle: FontStyle.italic,
                   color: theme.colorScheme.onSurfaceVariant,
@@ -86,12 +83,12 @@ class CulinaryIntelligenceBottomSheet extends ConsumerWidget {
             SizedBox(
               width: double.infinity,
               child: TextButton(
-                onPressed: () async {
-                  final uri = Uri.parse(_learnMoreUrl);
-                  if (await canLaunchUrl(uri)) {
-                    await launchUrl(uri, mode: LaunchMode.externalApplication);
-                  }
-                },
+                onPressed: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (_) => const ContributeRecipesInfoScreen(),
+                  ),
+                ),
                 child: Text(
                   'Learn more',
                   style: TextStyle(color: theme.colorScheme.onSurfaceVariant),
