@@ -264,7 +264,7 @@ class Recipe {
         orElse: () => RecipeSource.personal,
       )
       ..colorValue = json['colorValue'] as int?
-      ..isFavourite = json['isFavorite'] as bool? ?? false
+      ..isFavourite = (json['isFavourite'] ?? json['isFavorite']) as bool? ?? false
       ..rating = json['rating'] as int? ?? 0
       ..cookCount = json['cookCount'] as int? ?? 0
       ..tags =
@@ -332,7 +332,7 @@ class Recipe {
       'stepImageMap': stepImageMap,
       'source': source.name,
       'colorValue': colorValue,
-      'isFavorite': isFavourite,
+      'isFavourite': isFavourite,
       'rating': rating,
       'cookCount': cookCount,
       'lastCookedAt': lastCookedAt?.toUtc().toIso8601String(),

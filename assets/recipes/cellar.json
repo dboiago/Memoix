@@ -12,7 +12,7 @@
     "priceRange": 4,
     "imageUrl": null,
     "source": "memoix",
-    "isFavorite": false,
+    "isFavourite": false,
     "createdAt": 1766512620000,
     "updatedAt": 1776979785000,
     "version": 1
@@ -30,7 +30,7 @@
     "priceRange": 4,
     "imageUrl": null,
     "source": "memoix",
-    "isFavorite": true,
+    "isFavourite": true,
     "createdAt": 1766512779000,
     "updatedAt": 1776979785000,
     "version": 1

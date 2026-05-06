@@ -438,7 +438,7 @@ class ModernistRecipe {
       'stepImageMap': stepImageMap,
       'imageUrl': imageUrl,
       'imageUrls': imageUrls,
-      'isFavorite': isFavourite,
+      'isFavourite': isFavourite,
       'cookCount': cookCount,
       'source': source.name,
       'pairedRecipeIds': pairedRecipeIds,
@@ -484,7 +484,7 @@ class ModernistRecipe {
       ..imageUrls = (json['imageUrls'] as List<dynamic>?)
           ?.map((e) => e.toString())
           .toList() ?? []
-      ..isFavourite = json['isFavorite'] as bool? ?? false
+      ..isFavourite = (json['isFavourite'] ?? json['isFavorite']) as bool? ?? false
       ..cookCount = json['cookCount'] as int? ?? 0
       ..source = ModernistSource.values.firstWhere(
         (e) => e.name == json['source'],
