@@ -96,7 +96,7 @@ class _CourseGridViewState extends ConsumerState<_CourseGridView> {
     if (!isEligible) return;
 
     if (!mounted) return;
-    await showCulinaryIntelligenceSheet(context, ref);
+    await showContributeRecipesSheet(context, ref);
   }
 
   Future<void> _checkForUpdatesOnLaunch() async {
