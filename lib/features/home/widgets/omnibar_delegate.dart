@@ -328,7 +328,7 @@ class OmnibarDelegate extends SearchDelegate<void> {
   OmnibarDelegate(this.ref);
 
   @override
-  String get searchFieldLabel => 'What sounds good?';
+  String get searchFieldLabel => 'Ask a question...';
 
   @override
   List<Widget>? buildActions(BuildContext context) {
@@ -362,9 +362,14 @@ class OmnibarDelegate extends SearchDelegate<void> {
 
   @override
   Widget buildSuggestions(BuildContext context) {
-    return _OmniResultsView(
-      query: query,
-      onClose: () => close(context, null),
+    final theme = Theme.of(context);
+    return Center(
+      child: Text(
+        'Try: what should I make, what should I make for dinner',
+        style: theme.textTheme.bodyMedium?.copyWith(
+          color: theme.colorScheme.onSurfaceVariant,
+        ),
+      ),
     );
   }
 }
@@ -764,7 +769,6 @@ class _FallbackTile extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final dateLabel = _formatLastCooked(candidate.lastCookedAt);
-    final reason = _reasonLine(candidate);
 
     return InkWell(
       borderRadius: BorderRadius.circular(8),
@@ -806,13 +810,6 @@ class _FallbackTile extends StatelessWidget {
               candidate.name,
               style: theme.textTheme.bodyLarge?.copyWith(
                 color: theme.colorScheme.onSurface,
-              ),
-            ),
-            const SizedBox(height: 2),
-            Text(
-              reason,
-              style: theme.textTheme.bodySmall?.copyWith(
-                color: theme.colorScheme.onSurfaceVariant,
               ),
             ),
             Divider(
