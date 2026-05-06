@@ -62,11 +62,6 @@ class _OmniCandidate {
   final bool isMemoix;
   final String? time;
   final bool isPitNote;
-  /// Whether this candidate fits the current meal context.
-  /// Candidates outside the eligible course set for the context default to
-  /// false and score near zero — they only surface via the overwhelming-signal
-  /// fallback in _selectSuggestions.
-  final bool contextFit;
   final void Function(BuildContext) navigate;
 
   _OmniCandidate({
@@ -79,7 +74,6 @@ class _OmniCandidate {
     this.lastCookedAt,
     this.time,
     this.isPitNote = false,
-    this.contextFit = true,
   });
 }
 
@@ -171,8 +165,6 @@ bool _isDomainEligible(_MealContext context) {
 // ─────────────────────────────────────────────────────────────────────────────
 
 int _scoreCandidate(_OmniCandidate c) {
-  if (!c.contextFit) return 1;
-
   final bool lowRecency = c.lastCookedAt != null &&
       DateTime.now().difference(c.lastCookedAt!).inDays >= 14;
 
@@ -259,22 +251,11 @@ List<_OmniCandidate> _rankAndTake(List<_OmniCandidate> pool, Random rng) {
 
 List<_OmniCandidate> _selectSuggestions(
   List<_OmniCandidate> eligible,
-  List<_OmniCandidate> allPersonal,
   List<_OmniCandidate> memoixEligible,
-  _MealContext context,
   Random rng,
 ) {
   if (eligible.isNotEmpty) return _rankAndTake(eligible, rng);
-
-  if (context != _MealContext.general) {
-    final overwhelming = allPersonal
-        .where((c) => !c.isMemoix && c.cookCount > 10 && c.isFavourite)
-        .toList();
-    if (overwhelming.isNotEmpty) return _rankAndTake(overwhelming, rng);
-  }
-
   if (memoixEligible.isNotEmpty) return _rankAndTake(memoixEligible, rng);
-
   return [];
 }
 
@@ -448,13 +429,12 @@ class _OmniResultsView extends ConsumerWidget {
     final cellarEntries = cellarAsync.valueOrNull ?? [];
 
     final eligible = <_OmniCandidate>[];
-    final allPersonal = <_OmniCandidate>[];
     final memoixEligible = <_OmniCandidate>[];
 
     void _addRecipes() {
       for (final r in recipes) {
+        if (!_isCourseEligible(r.course, intent)) continue;
         final isMemoix = r.source == RecipeSource.memoix;
-        final courseFits = _isCourseEligible(r.course, intent);
         final candidate = _OmniCandidate(
           name: r.name,
           courseLabel: _courseDisplayName(r.course),
@@ -463,16 +443,12 @@ class _OmniResultsView extends ConsumerWidget {
           lastCookedAt: r.lastCookedAt,
           isMemoix: isMemoix,
           time: r.time,
-          contextFit: courseFits,
           navigate: (ctx) => AppRoutes.toRecipeDetail(ctx, r.uuid),
         );
-        if (!isMemoix) allPersonal.add(candidate);
-        if (courseFits) {
-          if (isMemoix) {
-            memoixEligible.add(candidate);
-          } else {
-            eligible.add(candidate);
-          }
+        if (isMemoix) {
+          memoixEligible.add(candidate);
+        } else {
+          eligible.add(candidate);
         }
       }
     }
@@ -489,7 +465,6 @@ class _OmniResultsView extends ConsumerWidget {
           isMemoix: isMemoix,
           navigate: (ctx) => AppRoutes.toPizzaDetail(ctx, p.uuid),
         );
-        if (!isMemoix) allPersonal.add(candidate);
         if (isMemoix) {
           memoixEligible.add(candidate);
         } else {
@@ -510,7 +485,6 @@ class _OmniResultsView extends ConsumerWidget {
           isMemoix: isMemoix,
           navigate: (ctx) => AppRoutes.toSandwichDetail(ctx, s.uuid),
         );
-        if (!isMemoix) allPersonal.add(candidate);
         if (isMemoix) {
           memoixEligible.add(candidate);
         } else {
@@ -534,7 +508,6 @@ class _OmniResultsView extends ConsumerWidget {
           isPitNote: isPitNote,
           navigate: (ctx) => AppRoutes.toSmokingDetail(ctx, sm.uuid),
         );
-        if (!isMemoix) allPersonal.add(candidate);
         if (isMemoix) {
           memoixEligible.add(candidate);
         } else {
@@ -558,7 +531,6 @@ class _OmniResultsView extends ConsumerWidget {
           isPitNote: isTechnique,
           navigate: (ctx) => AppRoutes.toModernistDetail(ctx, m.id),
         );
-        if (!isMemoix) allPersonal.add(candidate);
         if (isMemoix) {
           memoixEligible.add(candidate);
         } else {
@@ -579,7 +551,6 @@ class _OmniResultsView extends ConsumerWidget {
           isMemoix: isMemoix,
           navigate: (ctx) => AppRoutes.toCheeseDetail(ctx, c.uuid),
         );
-        if (!isMemoix) allPersonal.add(candidate);
         if (isMemoix) {
           memoixEligible.add(candidate);
         } else {
@@ -600,7 +571,6 @@ class _OmniResultsView extends ConsumerWidget {
           isMemoix: isMemoix,
           navigate: (ctx) => AppRoutes.toCellarDetail(ctx, c.uuid),
         );
-        if (!isMemoix) allPersonal.add(candidate);
         if (isMemoix) {
           memoixEligible.add(candidate);
         } else {
@@ -618,9 +588,25 @@ class _OmniResultsView extends ConsumerWidget {
     _addCellar();
 
     final rng = Random(DateTime.now().millisecondsSinceEpoch);
-    final selected = _selectSuggestions(eligible, allPersonal, memoixEligible, intent, rng);
+    final selected = _selectSuggestions(eligible, memoixEligible, rng);
 
     if (selected.isEmpty) {
+      final theme = Theme.of(context);
+      if (intent == _MealContext.breakfast || intent == _MealContext.lunch || intent == _MealContext.dinner) {
+        final label = intent == _MealContext.breakfast
+            ? 'breakfast'
+            : intent == _MealContext.lunch
+                ? 'lunch'
+                : 'dinner';
+        return Center(
+          child: Text(
+            'No $label recipes saved yet.',
+            style: theme.textTheme.bodyMedium?.copyWith(
+              color: theme.colorScheme.onSurfaceVariant,
+            ),
+          ),
+        );
+      }
       return _FrozenGrapesView();
     }
 
