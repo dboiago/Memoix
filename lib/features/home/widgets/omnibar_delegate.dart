@@ -386,6 +386,18 @@ class _OmniResultsView extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    if (query.trim().isEmpty) {
+      final theme = Theme.of(context);
+      return Center(
+        child: Text(
+          'What sounds good?',
+          style: theme.textTheme.bodyLarge?.copyWith(
+            color: theme.colorScheme.onSurfaceVariant,
+          ),
+        ),
+      );
+    }
+
     final intent = _parseIntent(query);
 
     final recipesAsync = ref.watch(allRecipesProvider);
