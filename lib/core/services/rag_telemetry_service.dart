@@ -306,6 +306,103 @@ class RagTelemetryService {
   }
 
   // ─────────────────────────────────────────────────────────────────────────
+  // Backfill
+  // ─────────────────────────────────────────────────────────────────────────
+
+  /// Transmits all existing entries to the RAG pipeline when the user first
+  /// enables the Culinary Intelligence contribution setting.
+  ///
+  /// Intended to be called fire-and-forget on the OFF→ON transition of the
+  /// master switch. Each domain block is fetched and queued independently;
+  /// per-item failures are silently dropped so one bad record cannot abort
+  /// the rest of the batch.
+  ///
+  /// [recipeFetcher] and [modernistFetcher] are injected callbacks because
+  /// [RagTelemetryService] cannot import [RecipeRepository] or
+  /// [ModernistRepository] — those repos already import this service.
+  ///
+  /// The [Recipe.isShared] gate is enforced inside [queueForExport], so
+  /// recipes the user has hidden will be silently skipped without any
+  /// special handling here. All other domain types have no per-entry
+  /// visibility flag and are included unconditionally.
+  Future<void> backfillOnOptIn({
+    required Future<List<Recipe>> Function() recipeFetcher,
+    required Future<List<ModernistRecipe>> Function() modernistFetcher,
+  }) async {
+    final db = AppDatabase.instance;
+
+    // Standard recipes — isShared gate enforced inside queueForExport.
+    try {
+      final recipes = await recipeFetcher();
+      for (final recipe in recipes) {
+        unawaited(queueForExport(recipe));
+      }
+    } catch (e) {
+      debugPrint('RagTelemetryService.backfillOnOptIn: recipe fetch failed — $e');
+    }
+
+    // Modernist recipes.
+    try {
+      final modernistRecipes = await modernistFetcher();
+      for (final recipe in modernistRecipes) {
+        unawaited(queueModernistForExport(recipe));
+      }
+    } catch (e) {
+      debugPrint('RagTelemetryService.backfillOnOptIn: modernist fetch failed — $e');
+    }
+
+    // Smoking recipes — separate table, Drift data class used directly.
+    try {
+      final smokingRecipes = await db.smokingDao.getAllRecipes();
+      for (final recipe in smokingRecipes) {
+        unawaited(queueSmokingForExport(recipe));
+      }
+    } catch (e) {
+      debugPrint('RagTelemetryService.backfillOnOptIn: smoking fetch failed — $e');
+    }
+
+    // Pizzas.
+    try {
+      final pizzas = await db.catalogueDao.getAllPizzas();
+      for (final pizza in pizzas) {
+        unawaited(queuePizzaForExport(pizza));
+      }
+    } catch (e) {
+      debugPrint('RagTelemetryService.backfillOnOptIn: pizza fetch failed — $e');
+    }
+
+    // Sandwiches.
+    try {
+      final sandwiches = await db.catalogueDao.getAllSandwiches();
+      for (final sandwich in sandwiches) {
+        unawaited(queueSandwichForExport(sandwich));
+      }
+    } catch (e) {
+      debugPrint('RagTelemetryService.backfillOnOptIn: sandwich fetch failed — $e');
+    }
+
+    // Cellar entries.
+    try {
+      final cellarEntries = await db.cellarDao.getAllEntries();
+      for (final entry in cellarEntries) {
+        unawaited(queueCellarForExport(entry));
+      }
+    } catch (e) {
+      debugPrint('RagTelemetryService.backfillOnOptIn: cellar fetch failed — $e');
+    }
+
+    // Cheese entries.
+    try {
+      final cheeseEntries = await db.cellarDao.getAllCheeseEntries();
+      for (final entry in cheeseEntries) {
+        unawaited(queueCheeseForExport(entry));
+      }
+    } catch (e) {
+      debugPrint('RagTelemetryService.backfillOnOptIn: cheese fetch failed — $e');
+    }
+  }
+
+  // ─────────────────────────────────────────────────────────────────────────
   // Private helpers
   // ─────────────────────────────────────────────────────────────────────────
 

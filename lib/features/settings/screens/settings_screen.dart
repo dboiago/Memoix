@@ -21,6 +21,7 @@ import '../../../core/database/database.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
 import '../../../core/providers.dart';
 import '../../../core/widgets/update_available_dialog.dart';
+import '../../../core/services/rag_telemetry_service.dart';
 import '../services/recipe_backup_service.dart';
 import '../../recipes/repository/recipe_repository.dart';
 import '../../pizzas/repository/pizza_repository.dart';
@@ -381,13 +382,14 @@ class AutoCheckUpdatesNotifier extends StateNotifier<bool> {
 /// When OFF, no recipe data is ever queued for export regardless of per-recipe flags.
 final contributeToIntelligenceProvider =
     StateNotifierProvider<ContributeToIntelligenceNotifier, bool>((ref) {
-  return ContributeToIntelligenceNotifier();
+  return ContributeToIntelligenceNotifier(ref);
 });
 
 class ContributeToIntelligenceNotifier extends StateNotifier<bool> {
   static const _key = 'contribute_to_culinary_intelligence';
+  final Ref _ref;
 
-  ContributeToIntelligenceNotifier() : super(false) {
+  ContributeToIntelligenceNotifier(this._ref) : super(false) {
     _loadPreference();
   }
 
@@ -400,6 +402,26 @@ class ContributeToIntelligenceNotifier extends StateNotifier<bool> {
     state = !state;
     final prefs = await SharedPreferences.getInstance();
     await prefs.setBool(_key, state);
+    if (state) {
+      // Just transitioned OFF→ON: queue all existing entries for the
+      // backfill. Fire-and-forget — failures are silently dropped inside
+      // the service. Runs once per deliberate opt-in action, not on launch.
+      unawaited(
+        _ref.read(ragTelemetryServiceProvider).backfillOnOptIn(
+          recipeFetcher: () => _ref
+              .read(recipeRepositoryProvider)
+              .watchAllRecipes()
+              .first
+              .then(
+                (all) => all
+                    .where((r) => r.recipeType == 'standard')
+                    .toList(),
+              ),
+          modernistFetcher: () =>
+              _ref.read(modernistRepositoryProvider).getAll(),
+        ),
+      );
+    }
   }
 }
 
