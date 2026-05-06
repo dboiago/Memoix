@@ -104,27 +104,32 @@ const Set<String> _generalOnlyCourses = {'pickles', 'salad', 'sides', 'apps'};
 
 const Set<String> _generalAndMealCourses = {'mains', 'soups', 'soup', 'brunch', 'vegn', 'sandwiches'};
 
+// Affinity map: for each non-general context, the exact recipe course slugs
+// that are eligible. Domains (pizzas, smoking, modernist) are included for
+// completeness but are gated by their own functions, not _isCourseEligible().
+const Map<_MealContext, Set<String>> _mealContextCourses = {
+  _MealContext.breakfast: {'brunch'},
+  _MealContext.lunch: {'mains', 'soups', 'soup', 'sandwiches', 'salad', 'sides'},
+  _MealContext.dinner: {'mains', 'soups', 'soup', 'sandwiches', 'pizzas', 'smoking',
+                        'modernist', 'vegn', 'sides', 'salad'},
+  _MealContext.dessert: {'desserts'},
+  _MealContext.bread: {'breads'},
+  _MealContext.drink: {'drinks'},
+  _MealContext.cheese: {'cheese'},
+  _MealContext.cellar: {'cellar'},
+};
+
 bool _isCourseEligible(String course, _MealContext context) {
   final slug = course.toLowerCase();
   if (_neverSuggestCourses.contains(slug)) return false;
 
-  switch (context) {
-    case _MealContext.general:
-      return _generalAndMealCourses.contains(slug) || _generalOnlyCourses.contains(slug);
-    case _MealContext.breakfast:
-    case _MealContext.lunch:
-    case _MealContext.dinner:
-      return _generalAndMealCourses.contains(slug);
-    case _MealContext.dessert:
-      return slug == 'desserts';
-    case _MealContext.drink:
-      return slug == 'drinks';
-    case _MealContext.bread:
-      return slug == 'breads';
-    case _MealContext.cheese:
-    case _MealContext.cellar:
-      return false;
+  if (context == _MealContext.general) {
+    return _generalAndMealCourses.contains(slug) || _generalOnlyCourses.contains(slug);
   }
+
+  final allowed = _mealContextCourses[context];
+  if (allowed == null) return false;
+  return allowed.contains(slug);
 }
 
 bool _isSmokingEligible(_MealContext context, {required bool isPitNote}) {
