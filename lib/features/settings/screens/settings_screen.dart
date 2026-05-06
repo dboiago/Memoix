@@ -419,6 +419,16 @@ class ContributeToIntelligenceNotifier extends StateNotifier<bool> {
               ),
           modernistFetcher: () =>
               _ref.read(modernistRepositoryProvider).getAll(),
+          smokingFetcher: () =>
+              _ref.read(smokingRepositoryProvider).getAllRecipes(),
+          pizzaFetcher: () =>
+              _ref.read(pizzaRepositoryProvider).getAllPizzas(),
+          sandwichFetcher: () =>
+              _ref.read(sandwichRepositoryProvider).getAllSandwiches(),
+          cellarFetcher: () =>
+              _ref.read(cellarRepositoryProvider).getAllEntries(),
+          cheeseFetcher: () =>
+              _ref.read(cheeseRepositoryProvider).getAllEntries(),
         ),
       );
     }

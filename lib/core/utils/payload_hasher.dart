@@ -274,7 +274,7 @@ abstract class PayloadHasher {
 
   /// SHA-256 of the full current cheese entry content.
   ///
-  /// Covers all descriptive fields. Personal-only fields (isFavorite, buy,
+  /// Covers all descriptive fields. Personal-only fields (isFavourite, buy,
   /// imageUrl) are excluded.
   static String cheeseContentHash(CheeseEntry entry) {
     final input = [

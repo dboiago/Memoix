@@ -318,9 +318,9 @@ class RagTelemetryService {
   /// per-item failures are silently dropped so one bad record cannot abort
   /// the rest of the batch.
   ///
-  /// [recipeFetcher] and [modernistFetcher] are injected callbacks because
-  /// [RagTelemetryService] cannot import [RecipeRepository] or
-  /// [ModernistRepository] — those repos already import this service.
+  /// All domain fetchers are injected callbacks because every domain
+  /// repository already imports this service — using them directly here
+  /// would create a circular dependency.
   ///
   /// The [Recipe.isShared] gate is enforced inside [queueForExport], so
   /// recipes the user has hidden will be silently skipped without any
@@ -329,9 +329,12 @@ class RagTelemetryService {
   Future<void> backfillOnOptIn({
     required Future<List<Recipe>> Function() recipeFetcher,
     required Future<List<ModernistRecipe>> Function() modernistFetcher,
+    required Future<List<SmokingRecipe>> Function() smokingFetcher,
+    required Future<List<Pizza>> Function() pizzaFetcher,
+    required Future<List<Sandwich>> Function() sandwichFetcher,
+    required Future<List<CellarEntry>> Function() cellarFetcher,
+    required Future<List<CheeseEntry>> Function() cheeseFetcher,
   }) async {
-    final db = AppDatabase.instance;
-
     // Standard recipes — isShared gate enforced inside queueForExport.
     try {
       final recipes = await recipeFetcher();
@@ -352,9 +355,9 @@ class RagTelemetryService {
       debugPrint('RagTelemetryService.backfillOnOptIn: modernist fetch failed — $e');
     }
 
-    // Smoking recipes — separate table, Drift data class used directly.
+    // Smoking recipes.
     try {
-      final smokingRecipes = await db.smokingDao.getAllRecipes();
+      final smokingRecipes = await smokingFetcher();
       for (final recipe in smokingRecipes) {
         unawaited(queueSmokingForExport(recipe));
       }
@@ -364,7 +367,7 @@ class RagTelemetryService {
 
     // Pizzas.
     try {
-      final pizzas = await db.catalogueDao.getAllPizzas();
+      final pizzas = await pizzaFetcher();
       for (final pizza in pizzas) {
         unawaited(queuePizzaForExport(pizza));
       }
@@ -374,7 +377,7 @@ class RagTelemetryService {
 
     // Sandwiches.
     try {
-      final sandwiches = await db.catalogueDao.getAllSandwiches();
+      final sandwiches = await sandwichFetcher();
       for (final sandwich in sandwiches) {
         unawaited(queueSandwichForExport(sandwich));
       }
@@ -384,7 +387,7 @@ class RagTelemetryService {
 
     // Cellar entries.
     try {
-      final cellarEntries = await db.cellarDao.getAllEntries();
+      final cellarEntries = await cellarFetcher();
       for (final entry in cellarEntries) {
         unawaited(queueCellarForExport(entry));
       }
@@ -394,7 +397,7 @@ class RagTelemetryService {
 
     // Cheese entries.
     try {
-      final cheeseEntries = await db.cellarDao.getAllCheeseEntries();
+      final cheeseEntries = await cheeseFetcher();
       for (final entry in cheeseEntries) {
         unawaited(queueCheeseForExport(entry));
       }
