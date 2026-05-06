@@ -1654,7 +1654,7 @@ abstract class SupabaseSyncService {
         'user_id': userId,
         'entity_type': 'recipe',
         'entity_uuid': r.uuid,
-        'is_favorite': r.isFavorite,
+        'is_favourite': r.isFavorite,
         'cook_count': r.cookCount,
         'buy': null,
         'last_cooked_at': r.lastCookedAt?.toUtc().toIso8601String(),
@@ -1666,7 +1666,7 @@ abstract class SupabaseSyncService {
         'user_id': userId,
         'entity_type': 'pizza',
         'entity_uuid': p.uuid,
-        'is_favorite': p.isFavorite,
+        'is_favourite': p.isFavorite,
         'cook_count': p.cookCount,
         'buy': null,
         'last_cooked_at': null,
@@ -1678,7 +1678,7 @@ abstract class SupabaseSyncService {
         'user_id': userId,
         'entity_type': 'cellar',
         'entity_uuid': e.uuid,
-        'is_favorite': e.isFavorite,
+        'is_favourite': e.isFavorite,
         'cook_count': null,
         'buy': e.buy,
         'last_cooked_at': null,
@@ -1690,7 +1690,7 @@ abstract class SupabaseSyncService {
         'user_id': userId,
         'entity_type': 'cheese',
         'entity_uuid': e.uuid,
-        'is_favorite': e.isFavorite,
+        'is_favourite': e.isFavorite,
         'cook_count': null,
         'buy': e.buy,
         'last_cooked_at': null,
@@ -1702,7 +1702,7 @@ abstract class SupabaseSyncService {
         'user_id': userId,
         'entity_type': 'sandwich',
         'entity_uuid': s.uuid,
-        'is_favorite': s.isFavorite,
+        'is_favourite': s.isFavorite,
         'cook_count': s.cookCount,
         'buy': null,
         'last_cooked_at': null,
@@ -1714,7 +1714,7 @@ abstract class SupabaseSyncService {
         'user_id': userId,
         'entity_type': 'smoking',
         'entity_uuid': r.uuid,
-        'is_favorite': r.isFavorite,
+        'is_favourite': r.isFavorite,
         'cook_count': r.cookCount,
         'buy': null,
         'last_cooked_at': null,
@@ -1747,7 +1747,7 @@ abstract class SupabaseSyncService {
       for (final pref in prefs) {
         final entityType = pref['entity_type'] as String;
         final entityUuid = pref['entity_uuid'] as String;
-        final isFavorite = pref['is_favorite'] as bool? ?? false;
+        final isFavorite = pref['is_favourite'] as bool? ?? false;
         final cookCount = pref['cook_count'] as int? ?? 0;
         final buy = pref['buy'] as bool? ?? false;
         final lastCookedAtStr = pref['last_cooked_at'] as String?;
