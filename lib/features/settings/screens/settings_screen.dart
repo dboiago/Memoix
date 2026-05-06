@@ -76,6 +76,181 @@ class HideMemoixRecipesNotifier extends StateNotifier<bool> {
   }
 }
 
+class ContributeRecipesInfoScreen extends StatelessWidget {
+  const ContributeRecipesInfoScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Recipe Contributions'),
+      ),
+      body: SingleChildScrollView(
+        padding: const EdgeInsets.all(24),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            _Section(
+              title: 'Overview',
+              body:
+                  'Memoix is developing a system to understand recipes semantically — '
+                  'moving beyond text search toward a tool that understands cooking as '
+                  'a domain. The long-term goal is cross-cuisine discovery: surfacing '
+                  'relevant recipes across languages and culinary traditions, with the '
+                  'AI handling translation, unit conversion, and contextual adaptation '
+                  'automatically.\n\n'
+                  'To build this, the system needs to learn from real, human-tested '
+                  'recipes rather than raw internet scrapes. This feature is strictly '
+                  'opt-in and has no effect unless explicitly enabled.',
+            ),
+            _Section(
+              title: 'How It Works',
+              body:
+                  'When enabled, Memoix transmits your recipes to a secure backend to '
+                  'build a proprietary culinary dataset. Your recipes contribute to a '
+                  'shared understanding of ingredient relationships, regional cuisines, '
+                  'dish structure, and recipe evolution over time.',
+            ),
+            _BulletSection(
+              title: 'What Is Collected',
+              intro: 'If you opt in, the following is transmitted when you save, '
+                  'update, cook, or favourite a recipe:',
+              bullets: const [
+                'Recipe content — ingredients, instructions, and your custom notes',
+                'Original source text or URL, if the recipe was imported',
+                'Culinary statistics — cook count, favourite status, rating',
+                'Recipe pairing relationships — the name and course of any linked recipes',
+                'A derived lineage identifier and content hash, used to track recipe '
+                    'refinement over time without transmitting any device or user identifier',
+                'Basic metadata — app version and system language',
+              ],
+            ),
+            _BulletSection(
+              title: 'What Is Never Collected',
+              bullets: const [
+                'No personal identifiers — no name, email, account, or device ID',
+                'No location data',
+                'No behavioural tracking — no screen time, session data, or usage patterns',
+                'No hidden recipes — recipes marked as Hidden are unconditionally excluded '
+                    'from transmission, regardless of your global setting',
+              ],
+            ),
+            _Section(
+              title: 'A Note on Submitted Data',
+              body:
+                  'Because no user or device identifier is attached to any submission, '
+                  'it is not possible to associate data in the dataset with a specific '
+                  'person or installation. This is intentional. It also means that '
+                  'previously submitted recipes cannot be individually withdrawn — there '
+                  'is no link between the dataset and you. Disabling this setting stops '
+                  'all future transmissions.',
+            ),
+            _Section(
+              title: 'Control',
+              body:
+                  'Enable or disable this feature at any time in Settings > Data > '
+                  'Contribute Recipes. Disabling stops all future transmissions.\n\n'
+                  'If you want to contribute but have specific recipes you want to keep '
+                  'private, open the menu on any recipe and set its visibility to Hidden. '
+                  'Hidden recipes are never transmitted, even when the global setting is enabled.',
+            ),
+            const SizedBox(height: 32),
+            Center(
+              child: Text(
+                'Built for cooking, not tracking.',
+                style: theme.textTheme.bodySmall?.copyWith(
+                  fontStyle: FontStyle.italic,
+                  color: theme.colorScheme.onSurfaceVariant,
+                ),
+              ),
+            ),
+            const SizedBox(height: 24),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _Section extends StatelessWidget {
+  const _Section({required this.title, required this.body});
+
+  final String title;
+  final String body;
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 24),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(title, style: theme.textTheme.titleSmall?.copyWith(
+            color: theme.colorScheme.primary,
+          )),
+          const SizedBox(height: 8),
+          Text(body, style: theme.textTheme.bodyMedium?.copyWith(
+            color: theme.colorScheme.onSurface,
+          )),
+        ],
+      ),
+    );
+  }
+}
+
+class _BulletSection extends StatelessWidget {
+  const _BulletSection({
+    required this.title,
+    required this.bullets,
+    this.intro,
+  });
+
+  final String title;
+  final String? intro;
+  final List<String> bullets;
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 24),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(title, style: theme.textTheme.titleSmall?.copyWith(
+            color: theme.colorScheme.primary,
+          )),
+          const SizedBox(height: 8),
+          if (intro != null) ...[
+            Text(intro!, style: theme.textTheme.bodyMedium),
+            const SizedBox(height: 8),
+          ],
+          ...bullets.map(
+            (b) => Padding(
+              padding: const EdgeInsets.only(bottom: 6),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text('· ',
+                      style: theme.textTheme.bodyMedium?.copyWith(
+                        color: theme.colorScheme.onSurfaceVariant,
+                      )),
+                  Expanded(
+                    child: Text(b, style: theme.textTheme.bodyMedium),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
 /// Provider for compact list view preference
 final compactViewProvider = StateNotifierProvider<CompactViewNotifier, bool>((ref) {
   return CompactViewNotifier();
@@ -425,14 +600,34 @@ class SettingsScreen extends ConsumerWidget {
           ),
           SwitchListTile(
             secondary: const Icon(Icons.tune),
-            title: const Text('Improve recipe understanding'),
+            title: const Text('Contribute Recipes'),
             subtitle: const Text(
-              'Allow selected recipes and results to improve search, scaling, and adaptations. \n'
-              'Data stays on your device unless you enable sharing. ',
+              'Help build a culinary dataset from real, tested recipes.\n'
+              'No account, no tracking — your recipe content only.',
             ),
             value: ref.watch(contributeToIntelligenceProvider),
             onChanged: (_) =>
                 ref.read(contributeToIntelligenceProvider.notifier).toggle(),
+          ),
+          Align(
+            alignment: Alignment.centerLeft,
+            child: Padding(
+              padding: const EdgeInsets.only(left: 53),
+              child: TextButton(
+                style: TextButton.styleFrom(
+                  padding: EdgeInsets.zero,
+                  minimumSize: Size.zero,
+                  tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                ),
+                onPressed: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (_) => const ContributeRecipesInfoScreen(),
+                  ),
+                ),
+                child: const Text('Learn more'),
+              ),
+            ),
           ),
 
           const Divider(),
