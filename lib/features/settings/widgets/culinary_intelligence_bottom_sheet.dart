@@ -6,15 +6,15 @@ import '../screens/settings_screen.dart';
 /// One-time opt-in prompt for the Culinary Intelligence RAG pipeline.
 ///
 /// Shown automatically when the user has meaningful usage and has not yet
-/// been presented with this choice. Displayed via [showCulinaryIntelligenceSheet].
+/// been presented with this choice. Displayed via [showContributeRecipesSheet].
 ///
 /// Privacy rules enforced by the sheet:
 /// - Tapping 'Enable' sets the master switch and marks the prompt as seen.
 /// - Tapping 'Not now' only marks the prompt as seen (no data is ever shared).
 /// - Tapping 'Learn more' opens the details screen and does NOT dismiss the sheet
 ///   or modify any preference.
-class CulinaryIntelligenceBottomSheet extends ConsumerWidget {
-  const CulinaryIntelligenceBottomSheet({super.key});
+class ContributeRecipesBottomSheet extends ConsumerWidget {
+  const ContributeRecipesBottomSheet({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -102,16 +102,16 @@ class CulinaryIntelligenceBottomSheet extends ConsumerWidget {
   }
 }
 
-/// Shows [CulinaryIntelligenceBottomSheet] as a modal bottom sheet.
+/// Shows [ContributeRecipesBottomSheet] as a modal bottom sheet.
 ///
 /// Marks the prompt as seen via [hasSeenIntelligenceOptInProvider] when the
 /// sheet is dismissed, regardless of how the user closes it (button tap,
 /// background tap, or swipe-down).
-Future<void> showCulinaryIntelligenceSheet(BuildContext context, WidgetRef ref) {
+Future<void> showContributeRecipesSheet(BuildContext context, WidgetRef ref) {
   return showModalBottomSheet<void>(
     context: context,
     isScrollControlled: true,
-    builder: (_) => const CulinaryIntelligenceBottomSheet(),
+    builder: (_) => const ContributeRecipesBottomSheet(),
   ).whenComplete(() async {
     await ref.read(hasSeenIntelligenceOptInProvider.notifier).markSeen();
   });
