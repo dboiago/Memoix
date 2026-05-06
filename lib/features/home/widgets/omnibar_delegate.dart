@@ -149,22 +149,6 @@ bool _isSmokingEligible(_MealContext context, {required bool isPitNote}) {
   }
 }
 
-bool _isDomainEligible(_MealContext context) {
-  switch (context) {
-    case _MealContext.general:
-    case _MealContext.breakfast:
-    case _MealContext.lunch:
-    case _MealContext.dinner:
-      return true;
-    case _MealContext.dessert:
-    case _MealContext.drink:
-    case _MealContext.bread:
-    case _MealContext.cheese:
-    case _MealContext.cellar:
-      return false;
-  }
-}
-
 // ─────────────────────────────────────────────────────────────────────────────
 // Scoring
 // ─────────────────────────────────────────────────────────────────────────────
@@ -459,7 +443,7 @@ class _OmniResultsView extends ConsumerWidget {
     }
 
     void _addPizzas() {
-      if (!_isDomainEligible(intent)) return;
+      if (!_isCourseEligible('pizzas', intent)) return;
       for (final p in pizzas) {
         final isMemoix = p.source == PizzaSource.memoix.name;
         final candidate = _OmniCandidate(
@@ -479,7 +463,7 @@ class _OmniResultsView extends ConsumerWidget {
     }
 
     void _addSandwiches() {
-      if (!_isDomainEligible(intent)) return;
+      if (!_isCourseEligible('sandwiches', intent)) return;
       for (final s in sandwiches) {
         final isMemoix = s.source == SandwichSource.memoix.name;
         final candidate = _OmniCandidate(
@@ -501,7 +485,9 @@ class _OmniResultsView extends ConsumerWidget {
     void _addSmoking() {
       for (final sm in smokingAll) {
         final isPitNote = sm.type == SmokingType.pitNote.name;
-        if (!_isSmokingEligible(intent, isPitNote: isPitNote)) continue;
+        if (!_isCourseEligible('smoking', intent)) return;
+        for (final r in smokingRecipes) {
+            if (!_isSmokingEligible(intent, isPitNote: r.isPitNote)) continue;
         final isMemoix = sm.source == SmokingSource.memoix.name;
         final candidate = _OmniCandidate(
           name: sm.name,
@@ -524,7 +510,9 @@ class _OmniResultsView extends ConsumerWidget {
     void _addModernist() {
       for (final m in modernists) {
         final isTechnique = m.type == ModernistType.technique;
-        if (!_isSmokingEligible(intent, isPitNote: isTechnique)) continue;
+        if (!_isCourseEligible('smoking', intent)) return;
+        for (final r in smokingRecipes) {
+            if (!_isSmokingEligible(intent, isPitNote: isTechnique)) continue;
         final isMemoix = m.source == ModernistSource.memoix;
         final candidate = _OmniCandidate(
           name: m.name,
