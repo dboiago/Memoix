@@ -62,6 +62,11 @@ class _OmniCandidate {
   final bool isMemoix;
   final String? time;
   final bool isPitNote;
+  /// Whether this candidate fits the current meal context.
+  /// Candidates outside the eligible course set for the context default to
+  /// false and score near zero — they only surface via the overwhelming-signal
+  /// fallback in _selectSuggestions.
+  final bool contextFit;
   final void Function(BuildContext) navigate;
 
   _OmniCandidate({
@@ -74,6 +79,7 @@ class _OmniCandidate {
     this.lastCookedAt,
     this.time,
     this.isPitNote = false,
+    this.contextFit = true,
   });
 }
 
@@ -165,6 +171,8 @@ bool _isDomainEligible(_MealContext context) {
 // ─────────────────────────────────────────────────────────────────────────────
 
 int _scoreCandidate(_OmniCandidate c) {
+  if (!c.contextFit) return 1;
+
   final bool lowRecency = c.lastCookedAt != null &&
       DateTime.now().difference(c.lastCookedAt!).inDays >= 14;
 
@@ -446,6 +454,7 @@ class _OmniResultsView extends ConsumerWidget {
     void _addRecipes() {
       for (final r in recipes) {
         final isMemoix = r.source == RecipeSource.memoix;
+        final courseFits = _isCourseEligible(r.course, intent);
         final candidate = _OmniCandidate(
           name: r.name,
           courseLabel: _courseDisplayName(r.course),
@@ -454,10 +463,11 @@ class _OmniResultsView extends ConsumerWidget {
           lastCookedAt: r.lastCookedAt,
           isMemoix: isMemoix,
           time: r.time,
+          contextFit: courseFits,
           navigate: (ctx) => AppRoutes.toRecipeDetail(ctx, r.uuid),
         );
         if (!isMemoix) allPersonal.add(candidate);
-        if (_isCourseEligible(r.course, intent)) {
+        if (courseFits) {
           if (isMemoix) {
             memoixEligible.add(candidate);
           } else {
@@ -534,8 +544,9 @@ class _OmniResultsView extends ConsumerWidget {
     }
 
     void _addModernist() {
-      if (!_isDomainEligible(intent)) return;
       for (final m in modernists) {
+        final isTechnique = m.type == ModernistType.technique;
+        if (!_isSmokingEligible(intent, isPitNote: isTechnique)) continue;
         final isMemoix = m.source == ModernistSource.memoix;
         final candidate = _OmniCandidate(
           name: m.name,
@@ -544,6 +555,7 @@ class _OmniResultsView extends ConsumerWidget {
           cookCount: m.cookCount,
           isMemoix: isMemoix,
           time: m.time,
+          isPitNote: isTechnique,
           navigate: (ctx) => AppRoutes.toModernistDetail(ctx, m.id),
         );
         if (!isMemoix) allPersonal.add(candidate);
