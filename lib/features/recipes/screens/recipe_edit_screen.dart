@@ -79,6 +79,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
   String? _headerImage; // Header image - local file path or URL
   bool _isSaving = false;
   bool _isLoading = true;
+  bool _isShared = true;
   Recipe? _existingRecipe;
   bool _showBakerPercent = false; // Toggle for showing baker's percentage column
 
@@ -155,6 +156,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
 
     if (recipe != null) {
       _existingRecipe = recipe;
+      _isShared = recipe.isShared;
       _nameController.text = recipe.name;
       _servesController.text = recipe.serves ?? '';
       _timeController.text = recipe.time ?? '';
@@ -975,6 +977,11 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
             ),
             const SizedBox(width: 4),
           ],
+          IconButton(
+            icon: Icon(_isShared ? Icons.visibility : Icons.visibility_off),
+            tooltip: _isShared ? 'Shared' : 'Hidden',
+            onPressed: () => setState(() => _isShared = !_isShared),
+          ),
           TextButton.icon(
             onPressed: _isSaving ? null : _saveRecipe,
             icon: _isSaving
@@ -1841,6 +1848,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
         ..garnish = _selectedCourse == 'drinks' ? _garnish : []
         ..pickleMethod = _selectedCourse == 'pickles' ? _pickleMethod : null
         ..pairedRecipeIds = _supportsPairingForCourse(_selectedCourse) ? _pairedRecipeIds : []
+        ..isShared = _isShared
         ..updatedAt = DateTime.now();
 
       if (_existingRecipe != null) {

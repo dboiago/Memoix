@@ -62,7 +62,8 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
   // Track selections
   String _selectedCourse = 'Mains';
   String? _selectedCuisine;
-  
+  bool _isShared = true;
+
   // Modernist-specific fields
   ModernistType _selectedModernistType = ModernistType.concept;
 
@@ -139,6 +140,11 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
             ),
           if (_canCompare)
             const SizedBox(width: 4),
+          IconButton(
+            icon: Icon(_isShared ? Icons.visibility : Icons.visibility_off),
+            tooltip: _isShared ? 'Shared' : 'Hidden',
+            onPressed: () => setState(() => _isShared = !_isShared),
+          ),
           TextButton(
             onPressed: _saveRecipe,
             child: const Text('Save'),
@@ -1865,6 +1871,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
       detailScreenBuilder = (_) => PizzaDetailScreen(pizzaId: savedId);
     } else {
       final recipe = _buildRecipe();
+      recipe.isShared = _isShared;
       await ref.read(recipeRepositoryProvider).saveRecipe(recipe);
       savedName = recipe.name;
       final savedId = recipe.uuid; // Recipe uses String uuid
