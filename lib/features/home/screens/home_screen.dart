@@ -16,7 +16,6 @@ import '../../recipes/models/course.dart';
 import '../../recipes/models/recipe.dart';
 import '../../recipes/repository/recipe_repository.dart';
 import '../../recipes/widgets/recipe_search_delegate.dart';
-import '../widgets/omnibar_delegate.dart';
 import '../../pizzas/repository/pizza_repository.dart';
 import '../../pizzas/models/pizza.dart';
 import '../../sandwiches/repository/sandwich_repository.dart';
@@ -69,7 +68,6 @@ class _CourseGridView extends ConsumerStatefulWidget {
 class _CourseGridViewState extends ConsumerState<_CourseGridView> {
   dynamic _lastConsumedHintValue;
   dynamic _lastConsumedIconValue;
-  final _homeSearchController = TextEditingController();
 
   @override
   void initState() {
@@ -82,7 +80,6 @@ class _CourseGridViewState extends ConsumerState<_CourseGridView> {
 
   @override
   void dispose() {
-    _homeSearchController.dispose();
     super.dispose();
   }
 
@@ -228,7 +225,6 @@ class _CourseGridViewState extends ConsumerState<_CourseGridView> {
                     }
 
                     return TextField(
-                      controller: _homeSearchController,
                       decoration: InputDecoration(
                         hintText: searchHint,
                         hintStyle: TextStyle(color: theme.colorScheme.onSurfaceVariant),
@@ -247,23 +243,6 @@ class _CourseGridViewState extends ConsumerState<_CourseGridView> {
                           context: context,
                           delegate: RecipeSearchDelegate(ref),
                         );
-                      },
-                      onChanged: (value) {
-                        if (value.isEmpty) return;
-                        _homeSearchController.clear();
-                        if (value.startsWith('.')) {
-                          showSearch(
-                            context: context,
-                            delegate: OmnibarDelegate(ref),
-                            query: value.substring(1),
-                          );
-                        } else {
-                          showSearch(
-                            context: context,
-                            delegate: RecipeSearchDelegate(ref),
-                            query: value,
-                          );
-                        }
                       },
                     );
                   },

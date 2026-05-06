@@ -7,6 +7,7 @@ import '../../../core/services/session_index_service.dart';
 import '../../../shared/widgets/memoix_empty_state.dart';
 import '../models/recipe.dart';
 import '../repository/recipe_repository.dart';
+import '../../home/widgets/omnibar_delegate.dart';
 // ignore: unused_import
 import 'package:flutter/foundation.dart';
 
@@ -58,6 +59,19 @@ class RecipeSearchDelegate extends SearchDelegate<Recipe?> {
 
   @override
   Widget buildSuggestions(BuildContext context) {
+    if (query.trimLeft().startsWith('.')) {
+      final stripped = query.trimLeft().substring(1);
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        close(context, null);
+        showSearch(
+          context: context,
+          delegate: OmnibarDelegate(ref),
+          query: stripped,
+        );
+      });
+      return const SizedBox.shrink();
+    }
+
     // Check once when delegate opens for transition override
     if (!_hasCheckedForEffect) {
       _hasCheckedForEffect = true;
