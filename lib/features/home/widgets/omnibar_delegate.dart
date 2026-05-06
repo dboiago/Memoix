@@ -488,6 +488,7 @@ class _OmniResultsView extends ConsumerWidget {
         if (!_isCourseEligible('smoking', intent)) return;
         for (final r in smokingRecipes) {
             if (!_isSmokingEligible(intent, isPitNote: r.isPitNote)) continue;
+        }
         final isMemoix = sm.source == SmokingSource.memoix.name;
         final candidate = _OmniCandidate(
           name: sm.name,
@@ -513,6 +514,7 @@ class _OmniResultsView extends ConsumerWidget {
         if (!_isCourseEligible('smoking', intent)) return;
         for (final r in smokingRecipes) {
             if (!_isSmokingEligible(intent, isPitNote: isTechnique)) continue;
+        }
         final isMemoix = m.source == ModernistSource.memoix;
         final candidate = _OmniCandidate(
           name: m.name,
