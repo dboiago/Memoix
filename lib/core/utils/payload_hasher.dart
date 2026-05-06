@@ -119,7 +119,7 @@ abstract class PayloadHasher {
   /// SHA-256 of the full current recipe content.
   ///
   /// Covers all fields that affect culinary meaning. Personal-only fields
-  /// (isFavorite, cookCount, rating, imageUrls) are excluded.
+  /// (isFavourite, cookCount, rating, imageUrls) are excluded.
   static String recipeContentHash(Recipe recipe) {
     final ingParts = recipe.ingredients
         .map((i) =>

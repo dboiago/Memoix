@@ -115,7 +115,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
           // 1. THE RICH HEADER - Fixed at top, does not scroll
           MemoixHeader(
             title: recipe.name,
-            isFavorite: recipe.isFavourite,
+            isFavourite: recipe.isFavourite,
             headerImage: hasHeaderImage ? headerImage : null,
             onFavoritePressed: () async {
               await ref.read(modernistRepositoryProvider).toggleFavourite(recipe.id);
@@ -425,7 +425,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
           // 1. THE RICH HEADER - Fixed at top, does not scroll
           MemoixHeader(
             title: recipe.name,
-            isFavorite: recipe.isFavourite,
+            isFavourite: recipe.isFavourite,
             headerImage: hasHeaderImage ? headerImage : null,
             onFavoritePressed: () async {
               await ref.read(modernistRepositoryProvider).toggleFavourite(recipe.id);

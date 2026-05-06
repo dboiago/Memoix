@@ -96,7 +96,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
           // Rich Fixed Header
           MemoixHeader(
             title: recipe.name,
-            isFavorite: recipe.isFavourite,
+            isFavourite: recipe.isFavourite,
             headerImage: hasHeaderImage ? headerImage : null,
             onFavoritePressed: () async {
               await ref.read(smokingRepositoryProvider).toggleFavourite(recipe);
@@ -400,7 +400,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
           // 1. THE RICH HEADER - Fixed at top, does not scroll
           MemoixHeader(
             title: recipe.name,
-            isFavorite: recipe.isFavourite,
+            isFavourite: recipe.isFavourite,
             headerImage: hasHeaderImage ? headerImage : null,
             onFavoritePressed: () async {
               await ref.read(smokingRepositoryProvider).toggleFavourite(recipe);

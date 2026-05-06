@@ -1639,7 +1639,7 @@ abstract class SupabaseSyncService {
   /// into memoix.user_entity_preferences, keyed on (user_id, entity_type, entity_uuid).
   ///
   /// Pulls back rows updated since [lastSync] and writes the personal fields
-  /// (isFavorite, cookCount, buy, lastCookedAt, rating) into the matching local
+  /// (isFavourite, cookCount, buy, lastCookedAt, rating) into the matching local
   /// entity rows. Only those fields are overwritten — shared columns are untouched.
   static Future<void> _syncUserEntityPreferences(
       String userId, DateTime? lastSync,) async {

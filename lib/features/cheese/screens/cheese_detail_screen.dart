@@ -66,7 +66,7 @@ class _CheeseDetailView extends ConsumerWidget {
           MemoixHeader(
             title: entry.name,
             headerImage: showHeaderImages ? entry.imageUrl : null,
-            isFavorite: entry.isFavourite,
+            isFavourite: entry.isFavourite,
             onFavoritePressed: () async {
               await ref.read(cheeseRepositoryProvider).toggleFavourite(entry);
               ref.invalidate(allCheeseEntriesProvider);

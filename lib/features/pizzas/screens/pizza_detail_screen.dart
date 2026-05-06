@@ -96,7 +96,7 @@ class _PizzaDetailViewState extends ConsumerState<_PizzaDetailView> {
           // 1. THE RICH HEADER - Fixed at top, does not scroll
           MemoixHeader(
             title: pizza.name,
-            isFavorite: pizza.isFavourite,
+            isFavourite: pizza.isFavourite,
             headerImage: hasHeaderImage ? pizza.imageUrl : null,
             onFavoritePressed: () async {
               await ref.read(pizzaRepositoryProvider).toggleFavourite(pizza);
@@ -217,7 +217,7 @@ class _PizzaDetailViewState extends ConsumerState<_PizzaDetailView> {
           // 1. THE RICH HEADER - Fixed at top, does not scroll
           MemoixHeader(
             title: pizza.name,
-            isFavorite: pizza.isFavourite,
+            isFavourite: pizza.isFavourite,
             headerImage: hasHeaderImage ? pizza.imageUrl : null,
             onFavoritePressed: () async {
               await ref.read(pizzaRepositoryProvider).toggleFavourite(pizza);

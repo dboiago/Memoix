@@ -21,7 +21,7 @@ class MemoixHeader extends StatelessWidget {
   const MemoixHeader({
     super.key,
     required this.title,
-    this.isFavorite = false,
+    this.isFavourite = false,
     this.headerImage,
     this.onFavoritePressed,
     this.onLogCookPressed,
@@ -37,8 +37,8 @@ class MemoixHeader extends StatelessWidget {
   /// The title to display in the header.
   final String title;
 
-  /// Whether this item is marked as favorite.
-  final bool isFavorite;
+  /// Whether this item is marked as favourite.
+  final bool isFavourite;
 
   /// Optional header image URL or file path.
   final String? headerImage;
@@ -237,8 +237,8 @@ class MemoixHeader extends StatelessWidget {
             if (onFavoritePressed != null)
               IconButton(
                 icon: Icon(
-                  isFavorite ? Icons.favorite : Icons.favorite_border,
-                  color: isFavorite ? theme.colorScheme.secondary : iconColor,
+                  isFavourite ? Icons.favorite : Icons.favorite_border,
+                  color: isFavourite ? theme.colorScheme.secondary : iconColor,
                   shadows: iconShadows,
                 ),
                 onPressed: onFavoritePressed,

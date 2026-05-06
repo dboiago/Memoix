@@ -9,7 +9,7 @@ import '../database/app_database.dart' show CheeseEntry;
 /// directions, or pairings. The payload captures the classification and
 /// sensory fields that are useful for the Culinary Intelligence pipeline.
 ///
-/// UUID and timestamps are excluded. Personal-only fields (isFavorite, buy,
+/// UUID and timestamps are excluded. Personal-only fields (isFavourite, buy,
 /// imageUrl) are excluded.
 class CheeseKnowledgePayload {
   final CheeseEntry entry;

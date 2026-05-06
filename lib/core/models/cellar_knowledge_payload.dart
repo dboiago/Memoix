@@ -9,7 +9,7 @@ import '../database/app_database.dart' show CellarEntry;
 /// ingredients, directions, or pairings. The payload captures the descriptive
 /// and sensory fields that are useful for the Culinary Intelligence pipeline.
 ///
-/// UUID and timestamps are excluded. Personal-only fields (isFavorite, buy,
+/// UUID and timestamps are excluded. Personal-only fields (isFavourite, buy,
 /// imageUrl) are excluded.
 class CellarKnowledgePayload {
   final CellarEntry entry;

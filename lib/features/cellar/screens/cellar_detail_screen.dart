@@ -66,7 +66,7 @@ class _CellarDetailView extends ConsumerWidget {
           MemoixHeader(
             title: entry.name,
             headerImage: showHeaderImages ? entry.imageUrl : null,
-            isFavorite: entry.isFavourite,
+            isFavourite: entry.isFavourite,
             onFavoritePressed: () async {
               await ref.read(cellarRepositoryProvider).toggleFavourite(entry);
               ref.invalidate(allCellarEntriesProvider);
