@@ -67,7 +67,7 @@ class CellarRepository {
       priceRange: Value(entry.priceRange),
       imageUrl: Value(entry.imageUrl),
       source: Value(entry.source),
-      isFavorite: Value(entry.isFavorite),
+      isFavourite: Value(entry.isFavorite),
       createdAt: Value(entry.createdAt),
       updatedAt: Value(preserveTimestamp ? entry.updatedAt : DateTime.now()),
       version: Value(entry.version),

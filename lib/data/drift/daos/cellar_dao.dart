@@ -22,7 +22,7 @@ class CellarDao extends DatabaseAccessor<AppDatabase>
       (select(cellarEntries)..where((t) => t.buy.equals(true))).get();
 
   Future<List<CellarEntry>> getFavourites() =>
-      (select(cellarEntries)..where((t) => t.isFavorite.equals(true))).get();
+      (select(cellarEntries)..where((t) => t.isFavourite.equals(true))).get();
 
   Future<List<CellarEntry>> searchEntries(String query) {
     final q = query.toLowerCase();
@@ -73,7 +73,7 @@ class CellarDao extends DatabaseAccessor<AppDatabase>
     final entry = await getEntryById(id);
     if (entry == null) return;
     await (update(cellarEntries)..where((t) => t.id.equals(id)))
-        .write(CellarEntriesCompanion(isFavorite: Value(!entry.isFavorite)));
+        .write(CellarEntriesCompanion(isFavourite: Value(!entry.isFavourite)));
   }
 
   Future<void> toggleBuy(int id, bool current) async {
@@ -87,7 +87,7 @@ class CellarDao extends DatabaseAccessor<AppDatabase>
       select(cellarEntries).watch();
 
   Stream<List<CellarEntry>> watchFavourites() =>
-      (select(cellarEntries)..where((t) => t.isFavorite.equals(true))).watch();
+      (select(cellarEntries)..where((t) => t.isFavourite.equals(true))).watch();
 
   Future<int> getEntryCount() async {
     final count = countAll();
@@ -115,7 +115,7 @@ class CellarDao extends DatabaseAccessor<AppDatabase>
       (select(cheeseEntries)..where((t) => t.buy.equals(true))).get();
 
   Future<List<CheeseEntry>> getCheeseFavourites() =>
-      (select(cheeseEntries)..where((t) => t.isFavorite.equals(true))).get();
+      (select(cheeseEntries)..where((t) => t.isFavourite.equals(true))).get();
 
   Future<List<CheeseEntry>> searchCheeseEntries(String query) {
     final q = query.toLowerCase();
@@ -167,7 +167,7 @@ class CellarDao extends DatabaseAccessor<AppDatabase>
     final entry = await getCheeseEntryById(id);
     if (entry == null) return;
     await (update(cheeseEntries)..where((t) => t.id.equals(id)))
-        .write(CheeseEntriesCompanion(isFavorite: Value(!entry.isFavorite)));
+        .write(CheeseEntriesCompanion(isFavourite: Value(!entry.isFavourite)));
   }
 
   Future<void> toggleCheeseBuy(int id, bool current) async {
@@ -181,7 +181,7 @@ class CellarDao extends DatabaseAccessor<AppDatabase>
       select(cheeseEntries).watch();
 
   Stream<List<CheeseEntry>> watchCheeseFavourites() =>
-      (select(cheeseEntries)..where((t) => t.isFavorite.equals(true))).watch();
+      (select(cheeseEntries)..where((t) => t.isFavourite.equals(true))).watch();
 
   Future<int> getCheeseEntryCount() async {
     final count = countAll();

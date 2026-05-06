@@ -36,7 +36,7 @@ class RecipeDao extends DatabaseAccessor<AppDatabase>
       (select(recipes)..where((r) => r.source.equals('imported'))).get();
 
   Future<List<Recipe>> getFavouriteRecipes() =>
-      (select(recipes)..where((r) => r.isFavorite.equals(true))).get();
+      (select(recipes)..where((r) => r.isFavourite.equals(true))).get();
 
   Future<Recipe?> getRecipeById(int id) =>
       (select(recipes)..where((r) => r.id.equals(id))).getSingleOrNull();
@@ -134,7 +134,7 @@ class RecipeDao extends DatabaseAccessor<AppDatabase>
   /// The caller owns the current state, so no read is needed at the DAO level.
   Future<void> toggleFavourite(int id, bool current) =>
       (update(recipes)..where((r) => r.id.equals(id))).write(
-        RecipesCompanion(isFavorite: Value(!current)),
+        RecipesCompanion(isFavourite: Value(!current)),
       );
 
   /// Writes the inverse of [current] for the Culinary Intelligence sharing flag.
@@ -177,7 +177,7 @@ class RecipeDao extends DatabaseAccessor<AppDatabase>
   Stream<List<Recipe>> watchAllRecipes() => select(recipes).watch();
 
   Stream<List<Recipe>> watchFavouriteRecipes() =>
-      (select(recipes)..where((r) => r.isFavorite.equals(true))).watch();
+      (select(recipes)..where((r) => r.isFavourite.equals(true))).watch();
 
   /// Returns a stream of recipes filtered by [course] (case-insensitive).
   ///

@@ -53,7 +53,7 @@ class Recipes extends Table {
   IntColumn get colorValue => integer().nullable()();
   DateTimeColumn get createdAt => dateTime()();
   DateTimeColumn get updatedAt => dateTime()();
-  BoolColumn get isFavorite => boolean().withDefault(const Constant(false))();
+  BoolColumn get isFavourite => boolean().withDefault(const Constant(false))();
   IntColumn get rating => integer().withDefault(const Constant(0))();
   IntColumn get cookCount => integer().withDefault(const Constant(0))();
   IntColumn get editCount => integer().withDefault(const Constant(0))();
@@ -129,7 +129,7 @@ class Pizzas extends Table {
   TextColumn get imageUrl => text().nullable()();
   // PizzaSource enum stored as name string
   TextColumn get source => text().withDefault(const Constant('personal'))();
-  BoolColumn get isFavorite => boolean().withDefault(const Constant(false))();
+  BoolColumn get isFavourite => boolean().withDefault(const Constant(false))();
   IntColumn get cookCount => integer().withDefault(const Constant(0))();
   IntColumn get rating => integer().withDefault(const Constant(0))();
   // List<String> stored as JSON array
@@ -159,7 +159,7 @@ class CellarEntries extends Table {
   TextColumn get imageUrl => text().nullable()();
   // CellarSource enum stored as name string
   TextColumn get source => text().withDefault(const Constant('personal'))();
-  BoolColumn get isFavorite => boolean().withDefault(const Constant(false))();
+  BoolColumn get isFavourite => boolean().withDefault(const Constant(false))();
   DateTimeColumn get createdAt => dateTime()();
   DateTimeColumn get updatedAt => dateTime()();
   IntColumn get version => integer().withDefault(const Constant(1))();
@@ -185,7 +185,7 @@ class CheeseEntries extends Table {
   TextColumn get imageUrl => text().nullable()();
   // CheeseSource enum stored as name string
   TextColumn get source => text().withDefault(const Constant('personal'))();
-  BoolColumn get isFavorite => boolean().withDefault(const Constant(false))();
+  BoolColumn get isFavourite => boolean().withDefault(const Constant(false))();
   DateTimeColumn get createdAt => dateTime()();
   DateTimeColumn get updatedAt => dateTime()();
   IntColumn get version => integer().withDefault(const Constant(1))();
@@ -287,7 +287,7 @@ class Sandwiches extends Table {
   TextColumn get imageUrl => text().nullable()();
   // SandwichSource enum stored as name string
   TextColumn get source => text().withDefault(const Constant('personal'))();
-  BoolColumn get isFavorite => boolean().withDefault(const Constant(false))();
+  BoolColumn get isFavourite => boolean().withDefault(const Constant(false))();
   IntColumn get cookCount => integer().withDefault(const Constant(0))();
   IntColumn get rating => integer().withDefault(const Constant(0))();
   // List<String> stored as JSON array
@@ -371,7 +371,7 @@ class SmokingRecipes extends Table {
   // List<String> stored as JSON array
   TextColumn get stepImageMap => text().withDefault(const Constant('[]'))();
   TextColumn get imageUrl => text().nullable()();
-  BoolColumn get isFavorite => boolean().withDefault(const Constant(false))();
+  BoolColumn get isFavourite => boolean().withDefault(const Constant(false))();
   IntColumn get cookCount => integer().withDefault(const Constant(0))();
   // SmokingSource enum stored as name string
   TextColumn get source => text().withDefault(const Constant('personal'))();
@@ -487,7 +487,7 @@ class AppDatabase extends _$AppDatabase {
   }
 
   @override
-  int get schemaVersion => 6;
+  int get schemaVersion => 7;
 
   @override
   MigrationStrategy get migration => MigrationStrategy(
@@ -601,6 +601,26 @@ class AppDatabase extends _$AppDatabase {
             await customSelect('PRAGMA table_info(recipes)').get();
         if (!recipeCols.any((r) => r.read<String>('name') == 'lineage_hash')) {
           await customStatement('ALTER TABLE recipes ADD COLUMN lineage_hash TEXT');
+        }
+      }
+      if (from < 7) {
+        // Rename is_favorite → is_favourite on all tables that carry the column.
+        // Guard with PRAGMA table_info so the migration is idempotent.
+        // ALTER TABLE … RENAME COLUMN is available since SQLite 3.25.0 (2018).
+        for (final table in [
+          'recipes',
+          'pizzas',
+          'sandwiches',
+          'cellar_entries',
+          'cheese_entries',
+          'smoking_recipes',
+        ]) {
+          final cols =
+              await customSelect('PRAGMA table_info($table)').get();
+          if (cols.any((r) => r.read<String>('name') == 'is_favorite')) {
+            await customStatement(
+                'ALTER TABLE $table RENAME COLUMN is_favorite TO is_favourite');
+          }
         }
       }
     },

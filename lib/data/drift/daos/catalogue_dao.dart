@@ -23,7 +23,7 @@ class CatalogueDao extends DatabaseAccessor<AppDatabase>
   Future<List<Pizza>> getMemoixPizzas() => getPizzasBySource('memoix');
 
   Future<List<Pizza>> getFavouritePizzas() =>
-      (select(pizzas)..where((t) => t.isFavorite.equals(true))).get();
+      (select(pizzas)..where((t) => t.isFavourite.equals(true))).get();
 
   Future<List<Pizza>> searchPizzas(String query) {
     if (query.isEmpty) return getAllPizzas();
@@ -74,7 +74,7 @@ class CatalogueDao extends DatabaseAccessor<AppDatabase>
   Future<void> togglePizzaFavourite(int id, bool current) async {
     // Atomic NOT flip — avoids a read-then-write race condition.
     await customUpdate(
-      'UPDATE pizzas SET is_favorite = NOT is_favorite WHERE id = ?',
+      'UPDATE pizzas SET is_favourite = NOT is_favourite WHERE id = ?',
       variables: [Variable.withInt(id)],
       updates: {pizzas},
       updateKind: UpdateKind.update,
@@ -101,7 +101,7 @@ class CatalogueDao extends DatabaseAccessor<AppDatabase>
       (select(pizzas)..where((t) => t.base.equals(base))).watch();
 
   Stream<List<Pizza>> watchFavouritePizzas() =>
-      (select(pizzas)..where((t) => t.isFavorite.equals(true))).watch();
+      (select(pizzas)..where((t) => t.isFavourite.equals(true))).watch();
 
   Future<int> getPizzaCount() async {
     final count = countAll();
@@ -139,7 +139,7 @@ class CatalogueDao extends DatabaseAccessor<AppDatabase>
       getSandwichesBySource('memoix');
 
   Future<List<Sandwich>> getFavouriteSandwiches() =>
-      (select(sandwiches)..where((t) => t.isFavorite.equals(true))).get();
+      (select(sandwiches)..where((t) => t.isFavourite.equals(true))).get();
 
   Future<List<Sandwich>> searchSandwiches(String query) {
     if (query.isEmpty) return getAllSandwiches();
@@ -194,7 +194,7 @@ class CatalogueDao extends DatabaseAccessor<AppDatabase>
     final sandwich = await getSandwichById(id);
     if (sandwich == null) return;
     await (update(sandwiches)..where((t) => t.id.equals(id)))
-        .write(SandwichesCompanion(isFavorite: Value(!sandwich.isFavorite)));
+        .write(SandwichesCompanion(isFavourite: Value(!sandwich.isFavourite)));
   }
 
   Future<void> incrementSandwichCookCount(int id) async {
@@ -214,7 +214,7 @@ class CatalogueDao extends DatabaseAccessor<AppDatabase>
   Stream<List<Sandwich>> watchAllSandwiches() => select(sandwiches).watch();
 
   Stream<List<Sandwich>> watchFavouriteSandwiches() =>
-      (select(sandwiches)..where((t) => t.isFavorite.equals(true))).watch();
+      (select(sandwiches)..where((t) => t.isFavourite.equals(true))).watch();
 
   Future<int> getSandwichCount() async {
     final count = countAll();
