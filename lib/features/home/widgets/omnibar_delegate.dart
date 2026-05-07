@@ -13,6 +13,7 @@ import '../../modernist/models/modernist_recipe.dart';
 import '../../modernist/repository/modernist_repository.dart';
 import '../../pizzas/models/pizza.dart';
 import '../../pizzas/repository/pizza_repository.dart';
+import '../../recipes/models/cuisine.dart';
 import '../../recipes/models/recipe.dart';
 import '../../recipes/repository/recipe_repository.dart';
 import '../../sandwiches/models/sandwich.dart';
@@ -65,6 +66,8 @@ class _OmniCandidate {
   final bool isMemoix;
   final String? time;
   final bool isPitNote;
+  final String? cuisine;
+  final List<String> ingredientNames;
   final void Function(BuildContext) navigate;
 
   _OmniCandidate({
@@ -77,38 +80,99 @@ class _OmniCandidate {
     this.lastCookedAt,
     this.time,
     this.isPitNote = false,
+    this.cuisine,
+    this.ingredientNames = const [],
   });
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Omni query
+// ─────────────────────────────────────────────────────────────────────────────
+
+class _OmniQuery {
+  final _MealContext meal;
+  final String? cuisine;
+  final String? useIngredient;
+  final int? maxTimeMinutes;
+  final bool wantsUntried;
+
+  const _OmniQuery({
+    this.meal = _MealContext.general,
+    this.cuisine,
+    this.useIngredient,
+    this.maxTimeMinutes,
+    this.wantsUntried = false,
+  });
+
+  bool get isGeneral =>
+      meal == _MealContext.general &&
+      cuisine == null &&
+      useIngredient == null &&
+      maxTimeMinutes == null &&
+      !wantsUntried;
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Intent parsing
 // ─────────────────────────────────────────────────────────────────────────────
 
-_MealContext _parseIntent(String query) {
-  // Strip out punctuation (like question marks) to ensure clean word boundaries
-  final q = query.replaceAll(RegExp(r'[^\w\s]'), '');
-  
-  // Helper function to check for whole words, case-insensitive
-  bool has(String pattern) => RegExp(r'\b(' + pattern + r')\b', caseSensitive: false).hasMatch(q);
+int? _extractTime(String q) {
+  final hrMatch = RegExp(r'(\d+)\s*h').firstMatch(q);
+  final minMatch = RegExp(r'(\d+)\s*m').firstMatch(q);
+  int total = 0;
+  if (hrMatch != null) total += int.parse(hrMatch.group(1)!) * 60;
+  if (minMatch != null) total += int.parse(minMatch.group(1)!);
+  return total > 0 ? total : null;
+}
 
-  // 1. Highly specific intents (checked first)
+bool _extractUntried(String q) =>
+    RegExp(r'\b(untried|never made|new|test|backlog)\b',
+        caseSensitive: false).hasMatch(q);
+
+String? _extractIngredient(String q) {
+  final m = RegExp(
+      r'\b(?:with|use up|using|got)\s+([a-zA-Z]+)\b',
+      caseSensitive: false).firstMatch(q);
+  return m?.group(1);
+}
+
+String? _extractCuisine(String q, List<String> cuisines) {
+  for (final name in cuisines) {
+    if (RegExp(r'\b' + RegExp.escape(name) + r'\b',
+        caseSensitive: false).hasMatch(q)) {
+      return name;
+    }
+  }
+  return null;
+}
+
+_MealContext _extractMeal(String q) {
+  bool has(String pattern) =>
+      RegExp(r'\b(' + pattern + r')\b', caseSensitive: false).hasMatch(q);
+
   if (has('dessert|sweets?|cake|cookies|pastry')) return _MealContext.dessert;
   if (has('drinks?|wine|beer|cocktail|beverages?|thirsty')) return _MealContext.drink;
   if (has('charcuterie|board')) return _MealContext.charcuterie;
   if (has('cheese')) return _MealContext.cheese;
   if (has('cellar')) return _MealContext.cellar;
   if (has('bread|sourdough|bak(e|ing)|loaf')) return _MealContext.bread;
-  
-
-  // 2. In-between / Occasion Meals
   if (has('snacks?|nibble|munchies|munch')) return _MealContext.snack;
-
-  // 3. Core Meals (Checked last as fallbacks)
   if (has('breakfast|morning|brunch')) return _MealContext.breakfast;
   if (has('lunch|midday|afternoon')) return _MealContext.lunch;
   if (has('dinner|tonight|supper|evening')) return _MealContext.dinner;
-
   return _MealContext.general;
+}
+
+_OmniQuery _parseIntent(String query) {
+  final q = query.replaceAll(RegExp(r'[^\w\s]'), '');
+  final cuisineNames = Cuisine.all.map((c) => c.name).toList();
+  return _OmniQuery(
+    meal: _extractMeal(q),
+    cuisine: _extractCuisine(q, cuisineNames),
+    useIngredient: _extractIngredient(q),
+    maxTimeMinutes: _extractTime(q),
+    wantsUntried: _extractUntried(q),
+  );
 }
 
 
@@ -136,7 +200,7 @@ const Map<_MealContext, Set<String>> _mealContextCourses = {
   _MealContext.cheese: {'cheese'},
   _MealContext.cellar: {'cellar'},
   _MealContext.snack: {'apps', 'sides', 'salads', 'pickles', 'sandwiches'},
-  _MealContext.charcuterie: {'cheese', 'pickles'},
+  _MealContext.charcuterie: {'cheese', 'pickles', 'apps', 'sides'},
 };
 
 bool _isCourseEligible(String course, _MealContext context) {
@@ -165,6 +229,8 @@ bool _isSmokingEligible(_MealContext context, {required bool isPitNote}) {
     case _MealContext.bread:
     case _MealContext.cheese:
     case _MealContext.cellar:
+    case _MealContext.snack:
+    case _MealContext.charcuterie:
       return false;
   }
 }
@@ -182,6 +248,8 @@ bool _isModernistEligible(_MealContext context, {required bool isTechnique}) {
     case _MealContext.bread:
     case _MealContext.cheese:
     case _MealContext.cellar:
+    case _MealContext.snack:
+    case _MealContext.charcuterie:
       return false;
   }
 }
@@ -279,9 +347,36 @@ List<_OmniCandidate> _selectSuggestions(
   List<_OmniCandidate> eligible,
   List<_OmniCandidate> memoixEligible,
   Random rng,
+  _OmniQuery omniQuery,
 ) {
-  if (eligible.isNotEmpty) return _rankAndTake(eligible, rng);
-  if (memoixEligible.isNotEmpty) return _rankAndTake(memoixEligible, rng);
+  List<_OmniCandidate> _applyFilters(List<_OmniCandidate> pool) {
+    var filtered = pool;
+    if (omniQuery.cuisine != null) {
+      filtered = filtered.where((c) =>
+          c.cuisine != null &&
+          c.cuisine!.toLowerCase() == omniQuery.cuisine!.toLowerCase()).toList();
+    }
+    if (omniQuery.useIngredient != null) {
+      final target = omniQuery.useIngredient!.toLowerCase();
+      filtered = filtered.where((c) =>
+          c.ingredientNames.any((n) => n.toLowerCase().contains(target))).toList();
+    }
+    if (omniQuery.maxTimeMinutes != null) {
+      filtered = filtered.where((c) {
+        final mins = _parseTimeMinutes(c.time);
+        return mins == null || mins <= omniQuery.maxTimeMinutes!;
+      }).toList();
+    }
+    if (omniQuery.wantsUntried) {
+      filtered = filtered.where((c) => c.cookCount == 0).toList();
+    }
+    return filtered;
+  }
+
+  final filteredEligible = _applyFilters(eligible);
+  final filteredMemoix = _applyFilters(memoixEligible);
+  if (filteredEligible.isNotEmpty) return _rankAndTake(filteredEligible, rng);
+  if (filteredMemoix.isNotEmpty) return _rankAndTake(filteredMemoix, rng);
   return [];
 }
 
@@ -420,7 +515,8 @@ class _OmniResultsView extends ConsumerWidget {
       );
     }
 
-    final intent = _parseIntent(query);
+    final omniQuery = _parseIntent(query);
+    final intent = omniQuery.meal;
 
     final recipesAsync = ref.watch(allRecipesProvider);
     final pizzasAsync = ref.watch(allPizzasProvider);
@@ -477,6 +573,8 @@ class _OmniResultsView extends ConsumerWidget {
           lastCookedAt: r.lastCookedAt,
           isMemoix: isMemoix,
           time: r.time,
+          cuisine: r.cuisine,
+          ingredientNames: r.ingredients.map((i) => i.name).toList(),
           navigate: (ctx) => AppRoutes.toRecipeDetail(ctx, r.uuid),
         );
         if (isMemoix) {
@@ -497,6 +595,7 @@ class _OmniResultsView extends ConsumerWidget {
           isFavourite: p.isFavourite,
           cookCount: p.cookCount,
           isMemoix: isMemoix,
+          ingredientNames: [...p.cheesesList, ...p.proteinsList, ...p.vegetablesList],
           navigate: (ctx) => AppRoutes.toPizzaDetail(ctx, p.uuid),
         );
         if (isMemoix) {
@@ -517,6 +616,7 @@ class _OmniResultsView extends ConsumerWidget {
           isFavourite: s.isFavourite,
           cookCount: s.cookCount,
           isMemoix: isMemoix,
+          ingredientNames: [s.bread, ...s.proteinsList, ...s.vegetablesList, ...s.cheesesList, ...s.condimentsList],
           navigate: (ctx) => AppRoutes.toSandwichDetail(ctx, s.uuid),
         );
         if (isMemoix) {
@@ -541,6 +641,7 @@ class _OmniResultsView extends ConsumerWidget {
         isMemoix: isMemoix,
         time: sm.time.isNotEmpty ? sm.time : null,
         isPitNote: isPitNote,
+        ingredientNames: sm.seasoningsList.map((s) => s.name).toList(),
         navigate: (ctx) => AppRoutes.toSmokingDetail(ctx, sm.uuid),
         );
         if (isMemoix) {
@@ -565,6 +666,7 @@ class _OmniResultsView extends ConsumerWidget {
         isMemoix: isMemoix,
         time: m.time,
         isPitNote: isTechnique,
+        ingredientNames: m.ingredients.map((i) => i.name).toList(),
         navigate: (ctx) => AppRoutes.toModernistDetail(ctx, m.id),
         );
         if (isMemoix) {
@@ -585,6 +687,7 @@ class _OmniResultsView extends ConsumerWidget {
           isFavourite: c.isFavourite,
           cookCount: 0,
           isMemoix: isMemoix,
+          ingredientNames: const [],
           navigate: (ctx) => AppRoutes.toCheeseDetail(ctx, c.uuid),
         );
         if (isMemoix) {
@@ -605,6 +708,7 @@ class _OmniResultsView extends ConsumerWidget {
           isFavourite: c.isFavourite,
           cookCount: 0,
           isMemoix: isMemoix,
+          ingredientNames: const [],
           navigate: (ctx) => AppRoutes.toCellarDetail(ctx, c.uuid),
         );
         if (isMemoix) {
@@ -624,10 +728,21 @@ class _OmniResultsView extends ConsumerWidget {
     _addCellar();
 
     final rng = Random(DateTime.now().millisecondsSinceEpoch);
-    final selected = _selectSuggestions(eligible, memoixEligible, rng);
+    final selected = _selectSuggestions(eligible, memoixEligible, rng, omniQuery);
 
     if (selected.isEmpty) {
       final theme = Theme.of(context);
+      if (!omniQuery.isGeneral) {
+        final mealLabel = intent != _MealContext.general ? intent.name : 'matching';
+        return Center(
+          child: Text(
+            'No $mealLabel recipes found matching that.',
+            style: theme.textTheme.bodyMedium?.copyWith(
+              color: theme.colorScheme.onSurfaceVariant,
+            ),
+          ),
+        );
+      }
       if (intent == _MealContext.breakfast || intent == _MealContext.lunch || intent == _MealContext.dinner) {
         final label = intent == _MealContext.breakfast
             ? 'breakfast'
