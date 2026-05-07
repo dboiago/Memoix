@@ -725,8 +725,8 @@ class _PrimaryCard extends StatelessWidget {
       child: InkWell(
         borderRadius: BorderRadius.circular(12),
         onTap: () {
-          candidate.navigate(context);
           onClose();
+          Future.microtask(() => candidate.navigate(context));
         },
         child: Padding(
           padding: const EdgeInsets.all(20),
@@ -791,8 +791,8 @@ class _FallbackTile extends StatelessWidget {
     return InkWell(
       borderRadius: BorderRadius.circular(8),
       onTap: () {
-        candidate.navigate(context);
         onClose();
+        Future.microtask(() => candidate.navigate(context));
       },
       child: Padding(
         padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 4),
