@@ -200,7 +200,7 @@ const Map<_MealContext, Set<String>> _mealContextCourses = {
   _MealContext.cheese: {'cheese'},
   _MealContext.cellar: {'cellar'},
   _MealContext.snack: {'apps', 'sides', 'salads', 'pickles', 'sandwiches'},
-  _MealContext.charcuterie: {'cheese', 'pickles', 'apps', 'sides'},
+  _MealContext.charcuterie: {'cheese', 'pickles'},
 };
 
 bool _isCourseEligible(String course, _MealContext context) {
