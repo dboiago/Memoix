@@ -260,13 +260,13 @@ class _RecipeCardState extends ConsumerState<RecipeCard> {
   /// Check if this recipe is a drink/cocktail
   bool _isDrink() {
     final course = widget.recipe.course.toLowerCase();
-    return course == 'drinks' || course == 'drink' || course == 'beverages';
+    return course == 'drinks';
   }
 
   /// Check if this recipe is a pickle/preserve
   bool _isPickles() {
     final course = widget.recipe.course.toLowerCase();
-    return course == 'pickles' || course == 'pickle' || course == 'preserves';
+    return course == 'pickles';
   }
 
   /// Display drink info: spirit name + optional cuisine origin
