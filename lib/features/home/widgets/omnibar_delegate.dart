@@ -437,9 +437,17 @@ class _OmniResultsView extends ConsumerWidget {
     final eligible = <_OmniCandidate>[];
     final memoixEligible = <_OmniCandidate>[];
 
-    void _addRecipes() {
-      for (final r in recipes) {
-        if (!_isCourseEligible(r.course, intent)) continue;
+        void _addRecipes() {
+        for (final r in recipes) {
+            if (!_isCourseEligible(r.course, intent)) continue;
+            if (r.course == 'modernist') {
+                final isTechnique = r.modernistType == ModernistType.technique.name;
+            if (!_isModernistEligible(intent, isTechnique: isTechnique)) continue;
+            }
+            if (r.course == 'smoking') {
+                final isPitNote = r.smokingType == SmokingType.pitNote.name;
+            if (!_isSmokingEligible(intent, isPitNote: isPitNote)) continue;
+            }
         final isMemoix = r.source == RecipeSource.memoix;
         final candidate = _OmniCandidate(
           name: r.name,
