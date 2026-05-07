@@ -82,15 +82,28 @@ class _OmniCandidate {
 // ─────────────────────────────────────────────────────────────────────────────
 
 _MealContext _parseIntent(String query) {
-  final q = query.toLowerCase();
-  if (q.contains('breakfast') || q.contains('morning')) return _MealContext.breakfast;
-  if (q.contains('lunch')) return _MealContext.lunch;
-  if (q.contains('dinner') || q.contains('tonight') || q.contains('supper')) return _MealContext.dinner;
-  if (q.contains('dessert') || q.contains('something sweet')) return _MealContext.dessert;
-  if (q.contains('drink') || q.contains('wine') || q.contains('beer') || q.contains('something to drink')) return _MealContext.drink;
-  if (q.contains('bake') || q.contains('bread')) return _MealContext.bread;
-  if (q.contains('cheese')) return _MealContext.cheese;
-  if (q.contains('cellar')) return _MealContext.cellar;
+  // Strip out punctuation (like question marks) to ensure clean word boundaries
+  final q = query.replaceAll(RegExp(r'[^\w\s]'), '');
+  
+  // Helper function to check for whole words, case-insensitive
+  bool has(String pattern) => RegExp(r'(?i)\b(' + pattern + r')\b').hasMatch(q);
+
+  // 1. Highly specific intents (checked first)
+  if (has('dessert|sweet|sweets|cake|cookies|pastry')) return _MealContext.dessert;
+  if (has('drink|drinks|wine|beer|cocktail|beverages?|thirsty')) return _MealContext.drink;
+  if (has('cheese|charcuterie|board')) return _MealContext.cheese;
+  if (has('cellar')) return _MealContext.cellar;
+  if (has('bread|sourdough|baking|bake|loaf')) return _MealContext.bread;
+
+  // 2. In-between / Occasion Meals (If you add these to your _MealContext enum)
+  // if (has('snack|snacks|nibble|munchies')) return _MealContext.snack;
+  // if (has('appetizer|starter|tapas|apps|appy')) return _MealContext.appetizer;
+
+  // 3. Core Meals (Checked last as fallbacks)
+  if (has('breakfast|morning|brunch')) return _MealContext.breakfast;
+  if (has('lunch|midday|afternoon')) return _MealContext.lunch;
+  if (has('dinner|tonight|supper|evening')) return _MealContext.dinner;
+
   return _MealContext.general;
 }
 

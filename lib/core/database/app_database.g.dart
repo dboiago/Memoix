@@ -163,15 +163,15 @@ class $RecipesTable extends Recipes with TableInfo<$RecipesTable, Recipe> {
   late final GeneratedColumn<DateTime> updatedAt = GeneratedColumn<DateTime>(
       'updated_at', aliasedName, false,
       type: DriftSqlType.dateTime, requiredDuringInsert: true);
-  static const VerificationMeta _isFavoriteMeta =
-      const VerificationMeta('isFavorite');
+  static const VerificationMeta _isFavouriteMeta =
+      const VerificationMeta('isFavourite');
   @override
-  late final GeneratedColumn<bool> isFavorite = GeneratedColumn<bool>(
-      'is_favorite', aliasedName, false,
+  late final GeneratedColumn<bool> isFavourite = GeneratedColumn<bool>(
+      'is_favourite', aliasedName, false,
       type: DriftSqlType.bool,
       requiredDuringInsert: false,
-      defaultConstraints:
-          GeneratedColumn.constraintIsAlways('CHECK ("is_favorite" IN (0, 1))'),
+      defaultConstraints: GeneratedColumn.constraintIsAlways(
+          'CHECK ("is_favourite" IN (0, 1))'),
       defaultValue: const Constant(false));
   static const VerificationMeta _ratingMeta = const VerificationMeta('rating');
   @override
@@ -308,6 +308,12 @@ class $RecipesTable extends Recipes with TableInfo<$RecipesTable, Recipe> {
       defaultConstraints:
           GeneratedColumn.constraintIsAlways('CHECK ("is_shared" IN (0, 1))'),
       defaultValue: const Constant(true));
+  static const VerificationMeta _lineageHashMeta =
+      const VerificationMeta('lineageHash');
+  @override
+  late final GeneratedColumn<String> lineageHash = GeneratedColumn<String>(
+      'lineage_hash', aliasedName, true,
+      type: DriftSqlType.string, requiredDuringInsert: false);
   @override
   List<GeneratedColumn> get $columns => [
         id,
@@ -334,7 +340,7 @@ class $RecipesTable extends Recipes with TableInfo<$RecipesTable, Recipe> {
         colorValue,
         createdAt,
         updatedAt,
-        isFavorite,
+        isFavourite,
         rating,
         cookCount,
         editCount,
@@ -354,7 +360,8 @@ class $RecipesTable extends Recipes with TableInfo<$RecipesTable, Recipe> {
         difficulty,
         scienceNotes,
         equipmentJson,
-        isShared
+        isShared,
+        lineageHash
       ];
   @override
   String get aliasedName => _alias ?? actualTableName;
@@ -485,11 +492,11 @@ class $RecipesTable extends Recipes with TableInfo<$RecipesTable, Recipe> {
     } else if (isInserting) {
       context.missing(_updatedAtMeta);
     }
-    if (data.containsKey('is_favorite')) {
+    if (data.containsKey('is_favourite')) {
       context.handle(
-          _isFavoriteMeta,
-          isFavorite.isAcceptableOrUnknown(
-              data['is_favorite']!, _isFavoriteMeta));
+          _isFavouriteMeta,
+          isFavourite.isAcceptableOrUnknown(
+              data['is_favourite']!, _isFavouriteMeta));
     }
     if (data.containsKey('rating')) {
       context.handle(_ratingMeta,
@@ -591,6 +598,12 @@ class $RecipesTable extends Recipes with TableInfo<$RecipesTable, Recipe> {
       context.handle(_isSharedMeta,
           isShared.isAcceptableOrUnknown(data['is_shared']!, _isSharedMeta));
     }
+    if (data.containsKey('lineage_hash')) {
+      context.handle(
+          _lineageHashMeta,
+          lineageHash.isAcceptableOrUnknown(
+              data['lineage_hash']!, _lineageHashMeta));
+    }
     return context;
   }
 
@@ -648,8 +661,8 @@ class $RecipesTable extends Recipes with TableInfo<$RecipesTable, Recipe> {
           .read(DriftSqlType.dateTime, data['${effectivePrefix}created_at'])!,
       updatedAt: attachedDatabase.typeMapping
           .read(DriftSqlType.dateTime, data['${effectivePrefix}updated_at'])!,
-      isFavorite: attachedDatabase.typeMapping
-          .read(DriftSqlType.bool, data['${effectivePrefix}is_favorite'])!,
+      isFavourite: attachedDatabase.typeMapping
+          .read(DriftSqlType.bool, data['${effectivePrefix}is_favourite'])!,
       rating: attachedDatabase.typeMapping
           .read(DriftSqlType.int, data['${effectivePrefix}rating'])!,
       cookCount: attachedDatabase.typeMapping
@@ -690,6 +703,8 @@ class $RecipesTable extends Recipes with TableInfo<$RecipesTable, Recipe> {
           .read(DriftSqlType.string, data['${effectivePrefix}equipment_json']),
       isShared: attachedDatabase.typeMapping
           .read(DriftSqlType.bool, data['${effectivePrefix}is_shared'])!,
+      lineageHash: attachedDatabase.typeMapping
+          .read(DriftSqlType.string, data['${effectivePrefix}lineage_hash']),
     );
   }
 
@@ -724,7 +739,7 @@ class Recipe extends DataClass implements Insertable<Recipe> {
   final int? colorValue;
   final DateTime createdAt;
   final DateTime updatedAt;
-  final bool isFavorite;
+  final bool isFavourite;
   final int rating;
   final int cookCount;
   final int editCount;
@@ -745,6 +760,7 @@ class Recipe extends DataClass implements Insertable<Recipe> {
   final String? scienceNotes;
   final String? equipmentJson;
   final bool isShared;
+  final String? lineageHash;
   const Recipe(
       {required this.id,
       required this.uuid,
@@ -770,7 +786,7 @@ class Recipe extends DataClass implements Insertable<Recipe> {
       this.colorValue,
       required this.createdAt,
       required this.updatedAt,
-      required this.isFavorite,
+      required this.isFavourite,
       required this.rating,
       required this.cookCount,
       required this.editCount,
@@ -790,7 +806,8 @@ class Recipe extends DataClass implements Insertable<Recipe> {
       this.difficulty,
       this.scienceNotes,
       this.equipmentJson,
-      required this.isShared});
+      required this.isShared,
+      this.lineageHash});
   @override
   Map<String, Expression> toColumns(bool nullToAbsent) {
     final map = <String, Expression>{};
@@ -840,7 +857,7 @@ class Recipe extends DataClass implements Insertable<Recipe> {
     }
     map['created_at'] = Variable<DateTime>(createdAt);
     map['updated_at'] = Variable<DateTime>(updatedAt);
-    map['is_favorite'] = Variable<bool>(isFavorite);
+    map['is_favourite'] = Variable<bool>(isFavourite);
     map['rating'] = Variable<int>(rating);
     map['cook_count'] = Variable<int>(cookCount);
     map['edit_count'] = Variable<int>(editCount);
@@ -885,6 +902,9 @@ class Recipe extends DataClass implements Insertable<Recipe> {
       map['equipment_json'] = Variable<String>(equipmentJson);
     }
     map['is_shared'] = Variable<bool>(isShared);
+    if (!nullToAbsent || lineageHash != null) {
+      map['lineage_hash'] = Variable<String>(lineageHash);
+    }
     return map;
   }
 
@@ -933,7 +953,7 @@ class Recipe extends DataClass implements Insertable<Recipe> {
           : Value(colorValue),
       createdAt: Value(createdAt),
       updatedAt: Value(updatedAt),
-      isFavorite: Value(isFavorite),
+      isFavourite: Value(isFavourite),
       rating: Value(rating),
       cookCount: Value(cookCount),
       editCount: Value(editCount),
@@ -977,6 +997,9 @@ class Recipe extends DataClass implements Insertable<Recipe> {
           ? const Value.absent()
           : Value(equipmentJson),
       isShared: Value(isShared),
+      lineageHash: lineageHash == null && nullToAbsent
+          ? const Value.absent()
+          : Value(lineageHash),
     );
   }
 
@@ -1008,7 +1031,7 @@ class Recipe extends DataClass implements Insertable<Recipe> {
       colorValue: serializer.fromJson<int?>(json['colorValue']),
       createdAt: serializer.fromJson<DateTime>(json['createdAt']),
       updatedAt: serializer.fromJson<DateTime>(json['updatedAt']),
-      isFavorite: serializer.fromJson<bool>(json['isFavorite']),
+      isFavourite: serializer.fromJson<bool>(json['isFavourite']),
       rating: serializer.fromJson<int>(json['rating']),
       cookCount: serializer.fromJson<int>(json['cookCount']),
       editCount: serializer.fromJson<int>(json['editCount']),
@@ -1029,6 +1052,7 @@ class Recipe extends DataClass implements Insertable<Recipe> {
       scienceNotes: serializer.fromJson<String?>(json['scienceNotes']),
       equipmentJson: serializer.fromJson<String?>(json['equipmentJson']),
       isShared: serializer.fromJson<bool>(json['isShared']),
+      lineageHash: serializer.fromJson<String?>(json['lineageHash']),
     );
   }
   @override
@@ -1059,7 +1083,7 @@ class Recipe extends DataClass implements Insertable<Recipe> {
       'colorValue': serializer.toJson<int?>(colorValue),
       'createdAt': serializer.toJson<DateTime>(createdAt),
       'updatedAt': serializer.toJson<DateTime>(updatedAt),
-      'isFavorite': serializer.toJson<bool>(isFavorite),
+      'isFavourite': serializer.toJson<bool>(isFavourite),
       'rating': serializer.toJson<int>(rating),
       'cookCount': serializer.toJson<int>(cookCount),
       'editCount': serializer.toJson<int>(editCount),
@@ -1080,6 +1104,7 @@ class Recipe extends DataClass implements Insertable<Recipe> {
       'scienceNotes': serializer.toJson<String?>(scienceNotes),
       'equipmentJson': serializer.toJson<String?>(equipmentJson),
       'isShared': serializer.toJson<bool>(isShared),
+      'lineageHash': serializer.toJson<String?>(lineageHash),
     };
   }
 
@@ -1108,7 +1133,7 @@ class Recipe extends DataClass implements Insertable<Recipe> {
           Value<int?> colorValue = const Value.absent(),
           DateTime? createdAt,
           DateTime? updatedAt,
-          bool? isFavorite,
+          bool? isFavourite,
           int? rating,
           int? cookCount,
           int? editCount,
@@ -1128,7 +1153,8 @@ class Recipe extends DataClass implements Insertable<Recipe> {
           Value<String?> difficulty = const Value.absent(),
           Value<String?> scienceNotes = const Value.absent(),
           Value<String?> equipmentJson = const Value.absent(),
-          bool? isShared}) =>
+          bool? isShared,
+          Value<String?> lineageHash = const Value.absent()}) =>
       Recipe(
         id: id ?? this.id,
         uuid: uuid ?? this.uuid,
@@ -1154,7 +1180,7 @@ class Recipe extends DataClass implements Insertable<Recipe> {
         colorValue: colorValue.present ? colorValue.value : this.colorValue,
         createdAt: createdAt ?? this.createdAt,
         updatedAt: updatedAt ?? this.updatedAt,
-        isFavorite: isFavorite ?? this.isFavorite,
+        isFavourite: isFavourite ?? this.isFavourite,
         rating: rating ?? this.rating,
         cookCount: cookCount ?? this.cookCount,
         editCount: editCount ?? this.editCount,
@@ -1180,6 +1206,7 @@ class Recipe extends DataClass implements Insertable<Recipe> {
         equipmentJson:
             equipmentJson.present ? equipmentJson.value : this.equipmentJson,
         isShared: isShared ?? this.isShared,
+        lineageHash: lineageHash.present ? lineageHash.value : this.lineageHash,
       );
   Recipe copyWithCompanion(RecipesCompanion data) {
     return Recipe(
@@ -1216,8 +1243,8 @@ class Recipe extends DataClass implements Insertable<Recipe> {
           data.colorValue.present ? data.colorValue.value : this.colorValue,
       createdAt: data.createdAt.present ? data.createdAt.value : this.createdAt,
       updatedAt: data.updatedAt.present ? data.updatedAt.value : this.updatedAt,
-      isFavorite:
-          data.isFavorite.present ? data.isFavorite.value : this.isFavorite,
+      isFavourite:
+          data.isFavourite.present ? data.isFavourite.value : this.isFavourite,
       rating: data.rating.present ? data.rating.value : this.rating,
       cookCount: data.cookCount.present ? data.cookCount.value : this.cookCount,
       editCount: data.editCount.present ? data.editCount.value : this.editCount,
@@ -1253,6 +1280,8 @@ class Recipe extends DataClass implements Insertable<Recipe> {
           ? data.equipmentJson.value
           : this.equipmentJson,
       isShared: data.isShared.present ? data.isShared.value : this.isShared,
+      lineageHash:
+          data.lineageHash.present ? data.lineageHash.value : this.lineageHash,
     );
   }
 
@@ -1283,7 +1312,7 @@ class Recipe extends DataClass implements Insertable<Recipe> {
           ..write('colorValue: $colorValue, ')
           ..write('createdAt: $createdAt, ')
           ..write('updatedAt: $updatedAt, ')
-          ..write('isFavorite: $isFavorite, ')
+          ..write('isFavourite: $isFavourite, ')
           ..write('rating: $rating, ')
           ..write('cookCount: $cookCount, ')
           ..write('editCount: $editCount, ')
@@ -1303,7 +1332,8 @@ class Recipe extends DataClass implements Insertable<Recipe> {
           ..write('difficulty: $difficulty, ')
           ..write('scienceNotes: $scienceNotes, ')
           ..write('equipmentJson: $equipmentJson, ')
-          ..write('isShared: $isShared')
+          ..write('isShared: $isShared, ')
+          ..write('lineageHash: $lineageHash')
           ..write(')'))
         .toString();
   }
@@ -1334,7 +1364,7 @@ class Recipe extends DataClass implements Insertable<Recipe> {
         colorValue,
         createdAt,
         updatedAt,
-        isFavorite,
+        isFavourite,
         rating,
         cookCount,
         editCount,
@@ -1354,7 +1384,8 @@ class Recipe extends DataClass implements Insertable<Recipe> {
         difficulty,
         scienceNotes,
         equipmentJson,
-        isShared
+        isShared,
+        lineageHash
       ]);
   @override
   bool operator ==(Object other) =>
@@ -1384,7 +1415,7 @@ class Recipe extends DataClass implements Insertable<Recipe> {
           other.colorValue == this.colorValue &&
           other.createdAt == this.createdAt &&
           other.updatedAt == this.updatedAt &&
-          other.isFavorite == this.isFavorite &&
+          other.isFavourite == this.isFavourite &&
           other.rating == this.rating &&
           other.cookCount == this.cookCount &&
           other.editCount == this.editCount &&
@@ -1404,7 +1435,8 @@ class Recipe extends DataClass implements Insertable<Recipe> {
           other.difficulty == this.difficulty &&
           other.scienceNotes == this.scienceNotes &&
           other.equipmentJson == this.equipmentJson &&
-          other.isShared == this.isShared);
+          other.isShared == this.isShared &&
+          other.lineageHash == this.lineageHash);
 }
 
 class RecipesCompanion extends UpdateCompanion<Recipe> {
@@ -1432,7 +1464,7 @@ class RecipesCompanion extends UpdateCompanion<Recipe> {
   final Value<int?> colorValue;
   final Value<DateTime> createdAt;
   final Value<DateTime> updatedAt;
-  final Value<bool> isFavorite;
+  final Value<bool> isFavourite;
   final Value<int> rating;
   final Value<int> cookCount;
   final Value<int> editCount;
@@ -1453,6 +1485,7 @@ class RecipesCompanion extends UpdateCompanion<Recipe> {
   final Value<String?> scienceNotes;
   final Value<String?> equipmentJson;
   final Value<bool> isShared;
+  final Value<String?> lineageHash;
   const RecipesCompanion({
     this.id = const Value.absent(),
     this.uuid = const Value.absent(),
@@ -1478,7 +1511,7 @@ class RecipesCompanion extends UpdateCompanion<Recipe> {
     this.colorValue = const Value.absent(),
     this.createdAt = const Value.absent(),
     this.updatedAt = const Value.absent(),
-    this.isFavorite = const Value.absent(),
+    this.isFavourite = const Value.absent(),
     this.rating = const Value.absent(),
     this.cookCount = const Value.absent(),
     this.editCount = const Value.absent(),
@@ -1499,6 +1532,7 @@ class RecipesCompanion extends UpdateCompanion<Recipe> {
     this.scienceNotes = const Value.absent(),
     this.equipmentJson = const Value.absent(),
     this.isShared = const Value.absent(),
+    this.lineageHash = const Value.absent(),
   });
   RecipesCompanion.insert({
     this.id = const Value.absent(),
@@ -1525,7 +1559,7 @@ class RecipesCompanion extends UpdateCompanion<Recipe> {
     this.colorValue = const Value.absent(),
     required DateTime createdAt,
     required DateTime updatedAt,
-    this.isFavorite = const Value.absent(),
+    this.isFavourite = const Value.absent(),
     this.rating = const Value.absent(),
     this.cookCount = const Value.absent(),
     this.editCount = const Value.absent(),
@@ -1546,6 +1580,7 @@ class RecipesCompanion extends UpdateCompanion<Recipe> {
     this.scienceNotes = const Value.absent(),
     this.equipmentJson = const Value.absent(),
     this.isShared = const Value.absent(),
+    this.lineageHash = const Value.absent(),
   })  : uuid = Value(uuid),
         name = Value(name),
         course = Value(course),
@@ -1576,7 +1611,7 @@ class RecipesCompanion extends UpdateCompanion<Recipe> {
     Expression<int>? colorValue,
     Expression<DateTime>? createdAt,
     Expression<DateTime>? updatedAt,
-    Expression<bool>? isFavorite,
+    Expression<bool>? isFavourite,
     Expression<int>? rating,
     Expression<int>? cookCount,
     Expression<int>? editCount,
@@ -1597,6 +1632,7 @@ class RecipesCompanion extends UpdateCompanion<Recipe> {
     Expression<String>? scienceNotes,
     Expression<String>? equipmentJson,
     Expression<bool>? isShared,
+    Expression<String>? lineageHash,
   }) {
     return RawValuesInsertable({
       if (id != null) 'id': id,
@@ -1623,7 +1659,7 @@ class RecipesCompanion extends UpdateCompanion<Recipe> {
       if (colorValue != null) 'color_value': colorValue,
       if (createdAt != null) 'created_at': createdAt,
       if (updatedAt != null) 'updated_at': updatedAt,
-      if (isFavorite != null) 'is_favorite': isFavorite,
+      if (isFavourite != null) 'is_favourite': isFavourite,
       if (rating != null) 'rating': rating,
       if (cookCount != null) 'cook_count': cookCount,
       if (editCount != null) 'edit_count': editCount,
@@ -1644,6 +1680,7 @@ class RecipesCompanion extends UpdateCompanion<Recipe> {
       if (scienceNotes != null) 'science_notes': scienceNotes,
       if (equipmentJson != null) 'equipment_json': equipmentJson,
       if (isShared != null) 'is_shared': isShared,
+      if (lineageHash != null) 'lineage_hash': lineageHash,
     });
   }
 
@@ -1672,7 +1709,7 @@ class RecipesCompanion extends UpdateCompanion<Recipe> {
       Value<int?>? colorValue,
       Value<DateTime>? createdAt,
       Value<DateTime>? updatedAt,
-      Value<bool>? isFavorite,
+      Value<bool>? isFavourite,
       Value<int>? rating,
       Value<int>? cookCount,
       Value<int>? editCount,
@@ -1692,7 +1729,8 @@ class RecipesCompanion extends UpdateCompanion<Recipe> {
       Value<String?>? difficulty,
       Value<String?>? scienceNotes,
       Value<String?>? equipmentJson,
-      Value<bool>? isShared}) {
+      Value<bool>? isShared,
+      Value<String?>? lineageHash}) {
     return RecipesCompanion(
       id: id ?? this.id,
       uuid: uuid ?? this.uuid,
@@ -1718,7 +1756,7 @@ class RecipesCompanion extends UpdateCompanion<Recipe> {
       colorValue: colorValue ?? this.colorValue,
       createdAt: createdAt ?? this.createdAt,
       updatedAt: updatedAt ?? this.updatedAt,
-      isFavorite: isFavorite ?? this.isFavorite,
+      isFavourite: isFavourite ?? this.isFavourite,
       rating: rating ?? this.rating,
       cookCount: cookCount ?? this.cookCount,
       editCount: editCount ?? this.editCount,
@@ -1739,6 +1777,7 @@ class RecipesCompanion extends UpdateCompanion<Recipe> {
       scienceNotes: scienceNotes ?? this.scienceNotes,
       equipmentJson: equipmentJson ?? this.equipmentJson,
       isShared: isShared ?? this.isShared,
+      lineageHash: lineageHash ?? this.lineageHash,
     );
   }
 
@@ -1817,8 +1856,8 @@ class RecipesCompanion extends UpdateCompanion<Recipe> {
     if (updatedAt.present) {
       map['updated_at'] = Variable<DateTime>(updatedAt.value);
     }
-    if (isFavorite.present) {
-      map['is_favorite'] = Variable<bool>(isFavorite.value);
+    if (isFavourite.present) {
+      map['is_favourite'] = Variable<bool>(isFavourite.value);
     }
     if (rating.present) {
       map['rating'] = Variable<int>(rating.value);
@@ -1880,6 +1919,9 @@ class RecipesCompanion extends UpdateCompanion<Recipe> {
     if (isShared.present) {
       map['is_shared'] = Variable<bool>(isShared.value);
     }
+    if (lineageHash.present) {
+      map['lineage_hash'] = Variable<String>(lineageHash.value);
+    }
     return map;
   }
 
@@ -1910,7 +1952,7 @@ class RecipesCompanion extends UpdateCompanion<Recipe> {
           ..write('colorValue: $colorValue, ')
           ..write('createdAt: $createdAt, ')
           ..write('updatedAt: $updatedAt, ')
-          ..write('isFavorite: $isFavorite, ')
+          ..write('isFavourite: $isFavourite, ')
           ..write('rating: $rating, ')
           ..write('cookCount: $cookCount, ')
           ..write('editCount: $editCount, ')
@@ -1930,7 +1972,8 @@ class RecipesCompanion extends UpdateCompanion<Recipe> {
           ..write('difficulty: $difficulty, ')
           ..write('scienceNotes: $scienceNotes, ')
           ..write('equipmentJson: $equipmentJson, ')
-          ..write('isShared: $isShared')
+          ..write('isShared: $isShared, ')
+          ..write('lineageHash: $lineageHash')
           ..write(')'))
         .toString();
   }
@@ -2553,15 +2596,15 @@ class $PizzasTable extends Pizzas with TableInfo<$PizzasTable, Pizza> {
       type: DriftSqlType.string,
       requiredDuringInsert: false,
       defaultValue: const Constant('personal'));
-  static const VerificationMeta _isFavoriteMeta =
-      const VerificationMeta('isFavorite');
+  static const VerificationMeta _isFavouriteMeta =
+      const VerificationMeta('isFavourite');
   @override
-  late final GeneratedColumn<bool> isFavorite = GeneratedColumn<bool>(
-      'is_favorite', aliasedName, false,
+  late final GeneratedColumn<bool> isFavourite = GeneratedColumn<bool>(
+      'is_favourite', aliasedName, false,
       type: DriftSqlType.bool,
       requiredDuringInsert: false,
-      defaultConstraints:
-          GeneratedColumn.constraintIsAlways('CHECK ("is_favorite" IN (0, 1))'),
+      defaultConstraints: GeneratedColumn.constraintIsAlways(
+          'CHECK ("is_favourite" IN (0, 1))'),
       defaultValue: const Constant(false));
   static const VerificationMeta _cookCountMeta =
       const VerificationMeta('cookCount');
@@ -2617,7 +2660,7 @@ class $PizzasTable extends Pizzas with TableInfo<$PizzasTable, Pizza> {
         notes,
         imageUrl,
         source,
-        isFavorite,
+        isFavourite,
         cookCount,
         rating,
         tags,
@@ -2680,11 +2723,11 @@ class $PizzasTable extends Pizzas with TableInfo<$PizzasTable, Pizza> {
       context.handle(_sourceMeta,
           source.isAcceptableOrUnknown(data['source']!, _sourceMeta));
     }
-    if (data.containsKey('is_favorite')) {
+    if (data.containsKey('is_favourite')) {
       context.handle(
-          _isFavoriteMeta,
-          isFavorite.isAcceptableOrUnknown(
-              data['is_favorite']!, _isFavoriteMeta));
+          _isFavouriteMeta,
+          isFavourite.isAcceptableOrUnknown(
+              data['is_favourite']!, _isFavouriteMeta));
     }
     if (data.containsKey('cook_count')) {
       context.handle(_cookCountMeta,
@@ -2743,8 +2786,8 @@ class $PizzasTable extends Pizzas with TableInfo<$PizzasTable, Pizza> {
           .read(DriftSqlType.string, data['${effectivePrefix}image_url']),
       source: attachedDatabase.typeMapping
           .read(DriftSqlType.string, data['${effectivePrefix}source'])!,
-      isFavorite: attachedDatabase.typeMapping
-          .read(DriftSqlType.bool, data['${effectivePrefix}is_favorite'])!,
+      isFavourite: attachedDatabase.typeMapping
+          .read(DriftSqlType.bool, data['${effectivePrefix}is_favourite'])!,
       cookCount: attachedDatabase.typeMapping
           .read(DriftSqlType.int, data['${effectivePrefix}cook_count'])!,
       rating: attachedDatabase.typeMapping
@@ -2777,7 +2820,7 @@ class Pizza extends DataClass implements Insertable<Pizza> {
   final String? notes;
   final String? imageUrl;
   final String source;
-  final bool isFavorite;
+  final bool isFavourite;
   final int cookCount;
   final int rating;
   final String tags;
@@ -2795,7 +2838,7 @@ class Pizza extends DataClass implements Insertable<Pizza> {
       this.notes,
       this.imageUrl,
       required this.source,
-      required this.isFavorite,
+      required this.isFavourite,
       required this.cookCount,
       required this.rating,
       required this.tags,
@@ -2819,7 +2862,7 @@ class Pizza extends DataClass implements Insertable<Pizza> {
       map['image_url'] = Variable<String>(imageUrl);
     }
     map['source'] = Variable<String>(source);
-    map['is_favorite'] = Variable<bool>(isFavorite);
+    map['is_favourite'] = Variable<bool>(isFavourite);
     map['cook_count'] = Variable<int>(cookCount);
     map['rating'] = Variable<int>(rating);
     map['tags'] = Variable<String>(tags);
@@ -2844,7 +2887,7 @@ class Pizza extends DataClass implements Insertable<Pizza> {
           ? const Value.absent()
           : Value(imageUrl),
       source: Value(source),
-      isFavorite: Value(isFavorite),
+      isFavourite: Value(isFavourite),
       cookCount: Value(cookCount),
       rating: Value(rating),
       tags: Value(tags),
@@ -2868,7 +2911,7 @@ class Pizza extends DataClass implements Insertable<Pizza> {
       notes: serializer.fromJson<String?>(json['notes']),
       imageUrl: serializer.fromJson<String?>(json['imageUrl']),
       source: serializer.fromJson<String>(json['source']),
-      isFavorite: serializer.fromJson<bool>(json['isFavorite']),
+      isFavourite: serializer.fromJson<bool>(json['isFavourite']),
       cookCount: serializer.fromJson<int>(json['cookCount']),
       rating: serializer.fromJson<int>(json['rating']),
       tags: serializer.fromJson<String>(json['tags']),
@@ -2891,7 +2934,7 @@ class Pizza extends DataClass implements Insertable<Pizza> {
       'notes': serializer.toJson<String?>(notes),
       'imageUrl': serializer.toJson<String?>(imageUrl),
       'source': serializer.toJson<String>(source),
-      'isFavorite': serializer.toJson<bool>(isFavorite),
+      'isFavourite': serializer.toJson<bool>(isFavourite),
       'cookCount': serializer.toJson<int>(cookCount),
       'rating': serializer.toJson<int>(rating),
       'tags': serializer.toJson<String>(tags),
@@ -2912,7 +2955,7 @@ class Pizza extends DataClass implements Insertable<Pizza> {
           Value<String?> notes = const Value.absent(),
           Value<String?> imageUrl = const Value.absent(),
           String? source,
-          bool? isFavorite,
+          bool? isFavourite,
           int? cookCount,
           int? rating,
           String? tags,
@@ -2930,7 +2973,7 @@ class Pizza extends DataClass implements Insertable<Pizza> {
         notes: notes.present ? notes.value : this.notes,
         imageUrl: imageUrl.present ? imageUrl.value : this.imageUrl,
         source: source ?? this.source,
-        isFavorite: isFavorite ?? this.isFavorite,
+        isFavourite: isFavourite ?? this.isFavourite,
         cookCount: cookCount ?? this.cookCount,
         rating: rating ?? this.rating,
         tags: tags ?? this.tags,
@@ -2951,8 +2994,8 @@ class Pizza extends DataClass implements Insertable<Pizza> {
       notes: data.notes.present ? data.notes.value : this.notes,
       imageUrl: data.imageUrl.present ? data.imageUrl.value : this.imageUrl,
       source: data.source.present ? data.source.value : this.source,
-      isFavorite:
-          data.isFavorite.present ? data.isFavorite.value : this.isFavorite,
+      isFavourite:
+          data.isFavourite.present ? data.isFavourite.value : this.isFavourite,
       cookCount: data.cookCount.present ? data.cookCount.value : this.cookCount,
       rating: data.rating.present ? data.rating.value : this.rating,
       tags: data.tags.present ? data.tags.value : this.tags,
@@ -2975,7 +3018,7 @@ class Pizza extends DataClass implements Insertable<Pizza> {
           ..write('notes: $notes, ')
           ..write('imageUrl: $imageUrl, ')
           ..write('source: $source, ')
-          ..write('isFavorite: $isFavorite, ')
+          ..write('isFavourite: $isFavourite, ')
           ..write('cookCount: $cookCount, ')
           ..write('rating: $rating, ')
           ..write('tags: $tags, ')
@@ -2998,7 +3041,7 @@ class Pizza extends DataClass implements Insertable<Pizza> {
       notes,
       imageUrl,
       source,
-      isFavorite,
+      isFavourite,
       cookCount,
       rating,
       tags,
@@ -3019,7 +3062,7 @@ class Pizza extends DataClass implements Insertable<Pizza> {
           other.notes == this.notes &&
           other.imageUrl == this.imageUrl &&
           other.source == this.source &&
-          other.isFavorite == this.isFavorite &&
+          other.isFavourite == this.isFavourite &&
           other.cookCount == this.cookCount &&
           other.rating == this.rating &&
           other.tags == this.tags &&
@@ -3039,7 +3082,7 @@ class PizzasCompanion extends UpdateCompanion<Pizza> {
   final Value<String?> notes;
   final Value<String?> imageUrl;
   final Value<String> source;
-  final Value<bool> isFavorite;
+  final Value<bool> isFavourite;
   final Value<int> cookCount;
   final Value<int> rating;
   final Value<String> tags;
@@ -3057,7 +3100,7 @@ class PizzasCompanion extends UpdateCompanion<Pizza> {
     this.notes = const Value.absent(),
     this.imageUrl = const Value.absent(),
     this.source = const Value.absent(),
-    this.isFavorite = const Value.absent(),
+    this.isFavourite = const Value.absent(),
     this.cookCount = const Value.absent(),
     this.rating = const Value.absent(),
     this.tags = const Value.absent(),
@@ -3076,7 +3119,7 @@ class PizzasCompanion extends UpdateCompanion<Pizza> {
     this.notes = const Value.absent(),
     this.imageUrl = const Value.absent(),
     this.source = const Value.absent(),
-    this.isFavorite = const Value.absent(),
+    this.isFavourite = const Value.absent(),
     this.cookCount = const Value.absent(),
     this.rating = const Value.absent(),
     this.tags = const Value.absent(),
@@ -3098,7 +3141,7 @@ class PizzasCompanion extends UpdateCompanion<Pizza> {
     Expression<String>? notes,
     Expression<String>? imageUrl,
     Expression<String>? source,
-    Expression<bool>? isFavorite,
+    Expression<bool>? isFavourite,
     Expression<int>? cookCount,
     Expression<int>? rating,
     Expression<String>? tags,
@@ -3117,7 +3160,7 @@ class PizzasCompanion extends UpdateCompanion<Pizza> {
       if (notes != null) 'notes': notes,
       if (imageUrl != null) 'image_url': imageUrl,
       if (source != null) 'source': source,
-      if (isFavorite != null) 'is_favorite': isFavorite,
+      if (isFavourite != null) 'is_favourite': isFavourite,
       if (cookCount != null) 'cook_count': cookCount,
       if (rating != null) 'rating': rating,
       if (tags != null) 'tags': tags,
@@ -3138,7 +3181,7 @@ class PizzasCompanion extends UpdateCompanion<Pizza> {
       Value<String?>? notes,
       Value<String?>? imageUrl,
       Value<String>? source,
-      Value<bool>? isFavorite,
+      Value<bool>? isFavourite,
       Value<int>? cookCount,
       Value<int>? rating,
       Value<String>? tags,
@@ -3156,7 +3199,7 @@ class PizzasCompanion extends UpdateCompanion<Pizza> {
       notes: notes ?? this.notes,
       imageUrl: imageUrl ?? this.imageUrl,
       source: source ?? this.source,
-      isFavorite: isFavorite ?? this.isFavorite,
+      isFavourite: isFavourite ?? this.isFavourite,
       cookCount: cookCount ?? this.cookCount,
       rating: rating ?? this.rating,
       tags: tags ?? this.tags,
@@ -3199,8 +3242,8 @@ class PizzasCompanion extends UpdateCompanion<Pizza> {
     if (source.present) {
       map['source'] = Variable<String>(source.value);
     }
-    if (isFavorite.present) {
-      map['is_favorite'] = Variable<bool>(isFavorite.value);
+    if (isFavourite.present) {
+      map['is_favourite'] = Variable<bool>(isFavourite.value);
     }
     if (cookCount.present) {
       map['cook_count'] = Variable<int>(cookCount.value);
@@ -3236,7 +3279,7 @@ class PizzasCompanion extends UpdateCompanion<Pizza> {
           ..write('notes: $notes, ')
           ..write('imageUrl: $imageUrl, ')
           ..write('source: $source, ')
-          ..write('isFavorite: $isFavorite, ')
+          ..write('isFavourite: $isFavourite, ')
           ..write('cookCount: $cookCount, ')
           ..write('rating: $rating, ')
           ..write('tags: $tags, ')
@@ -3330,15 +3373,15 @@ class $CellarEntriesTable extends CellarEntries
       type: DriftSqlType.string,
       requiredDuringInsert: false,
       defaultValue: const Constant('personal'));
-  static const VerificationMeta _isFavoriteMeta =
-      const VerificationMeta('isFavorite');
+  static const VerificationMeta _isFavouriteMeta =
+      const VerificationMeta('isFavourite');
   @override
-  late final GeneratedColumn<bool> isFavorite = GeneratedColumn<bool>(
-      'is_favorite', aliasedName, false,
+  late final GeneratedColumn<bool> isFavourite = GeneratedColumn<bool>(
+      'is_favourite', aliasedName, false,
       type: DriftSqlType.bool,
       requiredDuringInsert: false,
-      defaultConstraints:
-          GeneratedColumn.constraintIsAlways('CHECK ("is_favorite" IN (0, 1))'),
+      defaultConstraints: GeneratedColumn.constraintIsAlways(
+          'CHECK ("is_favourite" IN (0, 1))'),
       defaultValue: const Constant(false));
   static const VerificationMeta _createdAtMeta =
       const VerificationMeta('createdAt');
@@ -3374,7 +3417,7 @@ class $CellarEntriesTable extends CellarEntries
         priceRange,
         imageUrl,
         source,
-        isFavorite,
+        isFavourite,
         createdAt,
         updatedAt,
         version
@@ -3446,11 +3489,11 @@ class $CellarEntriesTable extends CellarEntries
       context.handle(_sourceMeta,
           source.isAcceptableOrUnknown(data['source']!, _sourceMeta));
     }
-    if (data.containsKey('is_favorite')) {
+    if (data.containsKey('is_favourite')) {
       context.handle(
-          _isFavoriteMeta,
-          isFavorite.isAcceptableOrUnknown(
-              data['is_favorite']!, _isFavoriteMeta));
+          _isFavouriteMeta,
+          isFavourite.isAcceptableOrUnknown(
+              data['is_favourite']!, _isFavouriteMeta));
     }
     if (data.containsKey('created_at')) {
       context.handle(_createdAtMeta,
@@ -3501,8 +3544,8 @@ class $CellarEntriesTable extends CellarEntries
           .read(DriftSqlType.string, data['${effectivePrefix}image_url']),
       source: attachedDatabase.typeMapping
           .read(DriftSqlType.string, data['${effectivePrefix}source'])!,
-      isFavorite: attachedDatabase.typeMapping
-          .read(DriftSqlType.bool, data['${effectivePrefix}is_favorite'])!,
+      isFavourite: attachedDatabase.typeMapping
+          .read(DriftSqlType.bool, data['${effectivePrefix}is_favourite'])!,
       createdAt: attachedDatabase.typeMapping
           .read(DriftSqlType.dateTime, data['${effectivePrefix}created_at'])!,
       updatedAt: attachedDatabase.typeMapping
@@ -3531,7 +3574,7 @@ class CellarEntry extends DataClass implements Insertable<CellarEntry> {
   final int? priceRange;
   final String? imageUrl;
   final String source;
-  final bool isFavorite;
+  final bool isFavourite;
   final DateTime createdAt;
   final DateTime updatedAt;
   final int version;
@@ -3548,7 +3591,7 @@ class CellarEntry extends DataClass implements Insertable<CellarEntry> {
       this.priceRange,
       this.imageUrl,
       required this.source,
-      required this.isFavorite,
+      required this.isFavourite,
       required this.createdAt,
       required this.updatedAt,
       required this.version});
@@ -3581,7 +3624,7 @@ class CellarEntry extends DataClass implements Insertable<CellarEntry> {
       map['image_url'] = Variable<String>(imageUrl);
     }
     map['source'] = Variable<String>(source);
-    map['is_favorite'] = Variable<bool>(isFavorite);
+    map['is_favourite'] = Variable<bool>(isFavourite);
     map['created_at'] = Variable<DateTime>(createdAt);
     map['updated_at'] = Variable<DateTime>(updatedAt);
     map['version'] = Variable<int>(version);
@@ -3614,7 +3657,7 @@ class CellarEntry extends DataClass implements Insertable<CellarEntry> {
           ? const Value.absent()
           : Value(imageUrl),
       source: Value(source),
-      isFavorite: Value(isFavorite),
+      isFavourite: Value(isFavourite),
       createdAt: Value(createdAt),
       updatedAt: Value(updatedAt),
       version: Value(version),
@@ -3637,7 +3680,7 @@ class CellarEntry extends DataClass implements Insertable<CellarEntry> {
       priceRange: serializer.fromJson<int?>(json['priceRange']),
       imageUrl: serializer.fromJson<String?>(json['imageUrl']),
       source: serializer.fromJson<String>(json['source']),
-      isFavorite: serializer.fromJson<bool>(json['isFavorite']),
+      isFavourite: serializer.fromJson<bool>(json['isFavourite']),
       createdAt: serializer.fromJson<DateTime>(json['createdAt']),
       updatedAt: serializer.fromJson<DateTime>(json['updatedAt']),
       version: serializer.fromJson<int>(json['version']),
@@ -3659,7 +3702,7 @@ class CellarEntry extends DataClass implements Insertable<CellarEntry> {
       'priceRange': serializer.toJson<int?>(priceRange),
       'imageUrl': serializer.toJson<String?>(imageUrl),
       'source': serializer.toJson<String>(source),
-      'isFavorite': serializer.toJson<bool>(isFavorite),
+      'isFavourite': serializer.toJson<bool>(isFavourite),
       'createdAt': serializer.toJson<DateTime>(createdAt),
       'updatedAt': serializer.toJson<DateTime>(updatedAt),
       'version': serializer.toJson<int>(version),
@@ -3679,7 +3722,7 @@ class CellarEntry extends DataClass implements Insertable<CellarEntry> {
           Value<int?> priceRange = const Value.absent(),
           Value<String?> imageUrl = const Value.absent(),
           String? source,
-          bool? isFavorite,
+          bool? isFavourite,
           DateTime? createdAt,
           DateTime? updatedAt,
           int? version}) =>
@@ -3697,7 +3740,7 @@ class CellarEntry extends DataClass implements Insertable<CellarEntry> {
         priceRange: priceRange.present ? priceRange.value : this.priceRange,
         imageUrl: imageUrl.present ? imageUrl.value : this.imageUrl,
         source: source ?? this.source,
-        isFavorite: isFavorite ?? this.isFavorite,
+        isFavourite: isFavourite ?? this.isFavourite,
         createdAt: createdAt ?? this.createdAt,
         updatedAt: updatedAt ?? this.updatedAt,
         version: version ?? this.version,
@@ -3720,8 +3763,8 @@ class CellarEntry extends DataClass implements Insertable<CellarEntry> {
           data.priceRange.present ? data.priceRange.value : this.priceRange,
       imageUrl: data.imageUrl.present ? data.imageUrl.value : this.imageUrl,
       source: data.source.present ? data.source.value : this.source,
-      isFavorite:
-          data.isFavorite.present ? data.isFavorite.value : this.isFavorite,
+      isFavourite:
+          data.isFavourite.present ? data.isFavourite.value : this.isFavourite,
       createdAt: data.createdAt.present ? data.createdAt.value : this.createdAt,
       updatedAt: data.updatedAt.present ? data.updatedAt.value : this.updatedAt,
       version: data.version.present ? data.version.value : this.version,
@@ -3743,7 +3786,7 @@ class CellarEntry extends DataClass implements Insertable<CellarEntry> {
           ..write('priceRange: $priceRange, ')
           ..write('imageUrl: $imageUrl, ')
           ..write('source: $source, ')
-          ..write('isFavorite: $isFavorite, ')
+          ..write('isFavourite: $isFavourite, ')
           ..write('createdAt: $createdAt, ')
           ..write('updatedAt: $updatedAt, ')
           ..write('version: $version')
@@ -3765,7 +3808,7 @@ class CellarEntry extends DataClass implements Insertable<CellarEntry> {
       priceRange,
       imageUrl,
       source,
-      isFavorite,
+      isFavourite,
       createdAt,
       updatedAt,
       version);
@@ -3785,7 +3828,7 @@ class CellarEntry extends DataClass implements Insertable<CellarEntry> {
           other.priceRange == this.priceRange &&
           other.imageUrl == this.imageUrl &&
           other.source == this.source &&
-          other.isFavorite == this.isFavorite &&
+          other.isFavourite == this.isFavourite &&
           other.createdAt == this.createdAt &&
           other.updatedAt == this.updatedAt &&
           other.version == this.version);
@@ -3804,7 +3847,7 @@ class CellarEntriesCompanion extends UpdateCompanion<CellarEntry> {
   final Value<int?> priceRange;
   final Value<String?> imageUrl;
   final Value<String> source;
-  final Value<bool> isFavorite;
+  final Value<bool> isFavourite;
   final Value<DateTime> createdAt;
   final Value<DateTime> updatedAt;
   final Value<int> version;
@@ -3821,7 +3864,7 @@ class CellarEntriesCompanion extends UpdateCompanion<CellarEntry> {
     this.priceRange = const Value.absent(),
     this.imageUrl = const Value.absent(),
     this.source = const Value.absent(),
-    this.isFavorite = const Value.absent(),
+    this.isFavourite = const Value.absent(),
     this.createdAt = const Value.absent(),
     this.updatedAt = const Value.absent(),
     this.version = const Value.absent(),
@@ -3839,7 +3882,7 @@ class CellarEntriesCompanion extends UpdateCompanion<CellarEntry> {
     this.priceRange = const Value.absent(),
     this.imageUrl = const Value.absent(),
     this.source = const Value.absent(),
-    this.isFavorite = const Value.absent(),
+    this.isFavourite = const Value.absent(),
     required DateTime createdAt,
     required DateTime updatedAt,
     this.version = const Value.absent(),
@@ -3860,7 +3903,7 @@ class CellarEntriesCompanion extends UpdateCompanion<CellarEntry> {
     Expression<int>? priceRange,
     Expression<String>? imageUrl,
     Expression<String>? source,
-    Expression<bool>? isFavorite,
+    Expression<bool>? isFavourite,
     Expression<DateTime>? createdAt,
     Expression<DateTime>? updatedAt,
     Expression<int>? version,
@@ -3878,7 +3921,7 @@ class CellarEntriesCompanion extends UpdateCompanion<CellarEntry> {
       if (priceRange != null) 'price_range': priceRange,
       if (imageUrl != null) 'image_url': imageUrl,
       if (source != null) 'source': source,
-      if (isFavorite != null) 'is_favorite': isFavorite,
+      if (isFavourite != null) 'is_favourite': isFavourite,
       if (createdAt != null) 'created_at': createdAt,
       if (updatedAt != null) 'updated_at': updatedAt,
       if (version != null) 'version': version,
@@ -3898,7 +3941,7 @@ class CellarEntriesCompanion extends UpdateCompanion<CellarEntry> {
       Value<int?>? priceRange,
       Value<String?>? imageUrl,
       Value<String>? source,
-      Value<bool>? isFavorite,
+      Value<bool>? isFavourite,
       Value<DateTime>? createdAt,
       Value<DateTime>? updatedAt,
       Value<int>? version}) {
@@ -3915,7 +3958,7 @@ class CellarEntriesCompanion extends UpdateCompanion<CellarEntry> {
       priceRange: priceRange ?? this.priceRange,
       imageUrl: imageUrl ?? this.imageUrl,
       source: source ?? this.source,
-      isFavorite: isFavorite ?? this.isFavorite,
+      isFavourite: isFavourite ?? this.isFavourite,
       createdAt: createdAt ?? this.createdAt,
       updatedAt: updatedAt ?? this.updatedAt,
       version: version ?? this.version,
@@ -3961,8 +4004,8 @@ class CellarEntriesCompanion extends UpdateCompanion<CellarEntry> {
     if (source.present) {
       map['source'] = Variable<String>(source.value);
     }
-    if (isFavorite.present) {
-      map['is_favorite'] = Variable<bool>(isFavorite.value);
+    if (isFavourite.present) {
+      map['is_favourite'] = Variable<bool>(isFavourite.value);
     }
     if (createdAt.present) {
       map['created_at'] = Variable<DateTime>(createdAt.value);
@@ -3991,7 +4034,7 @@ class CellarEntriesCompanion extends UpdateCompanion<CellarEntry> {
           ..write('priceRange: $priceRange, ')
           ..write('imageUrl: $imageUrl, ')
           ..write('source: $source, ')
-          ..write('isFavorite: $isFavorite, ')
+          ..write('isFavourite: $isFavourite, ')
           ..write('createdAt: $createdAt, ')
           ..write('updatedAt: $updatedAt, ')
           ..write('version: $version')
@@ -4081,15 +4124,15 @@ class $CheeseEntriesTable extends CheeseEntries
       type: DriftSqlType.string,
       requiredDuringInsert: false,
       defaultValue: const Constant('personal'));
-  static const VerificationMeta _isFavoriteMeta =
-      const VerificationMeta('isFavorite');
+  static const VerificationMeta _isFavouriteMeta =
+      const VerificationMeta('isFavourite');
   @override
-  late final GeneratedColumn<bool> isFavorite = GeneratedColumn<bool>(
-      'is_favorite', aliasedName, false,
+  late final GeneratedColumn<bool> isFavourite = GeneratedColumn<bool>(
+      'is_favourite', aliasedName, false,
       type: DriftSqlType.bool,
       requiredDuringInsert: false,
-      defaultConstraints:
-          GeneratedColumn.constraintIsAlways('CHECK ("is_favorite" IN (0, 1))'),
+      defaultConstraints: GeneratedColumn.constraintIsAlways(
+          'CHECK ("is_favourite" IN (0, 1))'),
       defaultValue: const Constant(false));
   static const VerificationMeta _createdAtMeta =
       const VerificationMeta('createdAt');
@@ -4125,7 +4168,7 @@ class $CheeseEntriesTable extends CheeseEntries
         priceRange,
         imageUrl,
         source,
-        isFavorite,
+        isFavourite,
         createdAt,
         updatedAt,
         version
@@ -4193,11 +4236,11 @@ class $CheeseEntriesTable extends CheeseEntries
       context.handle(_sourceMeta,
           source.isAcceptableOrUnknown(data['source']!, _sourceMeta));
     }
-    if (data.containsKey('is_favorite')) {
+    if (data.containsKey('is_favourite')) {
       context.handle(
-          _isFavoriteMeta,
-          isFavorite.isAcceptableOrUnknown(
-              data['is_favorite']!, _isFavoriteMeta));
+          _isFavouriteMeta,
+          isFavourite.isAcceptableOrUnknown(
+              data['is_favourite']!, _isFavouriteMeta));
     }
     if (data.containsKey('created_at')) {
       context.handle(_createdAtMeta,
@@ -4248,8 +4291,8 @@ class $CheeseEntriesTable extends CheeseEntries
           .read(DriftSqlType.string, data['${effectivePrefix}image_url']),
       source: attachedDatabase.typeMapping
           .read(DriftSqlType.string, data['${effectivePrefix}source'])!,
-      isFavorite: attachedDatabase.typeMapping
-          .read(DriftSqlType.bool, data['${effectivePrefix}is_favorite'])!,
+      isFavourite: attachedDatabase.typeMapping
+          .read(DriftSqlType.bool, data['${effectivePrefix}is_favourite'])!,
       createdAt: attachedDatabase.typeMapping
           .read(DriftSqlType.dateTime, data['${effectivePrefix}created_at'])!,
       updatedAt: attachedDatabase.typeMapping
@@ -4278,7 +4321,7 @@ class CheeseEntry extends DataClass implements Insertable<CheeseEntry> {
   final int? priceRange;
   final String? imageUrl;
   final String source;
-  final bool isFavorite;
+  final bool isFavourite;
   final DateTime createdAt;
   final DateTime updatedAt;
   final int version;
@@ -4295,7 +4338,7 @@ class CheeseEntry extends DataClass implements Insertable<CheeseEntry> {
       this.priceRange,
       this.imageUrl,
       required this.source,
-      required this.isFavorite,
+      required this.isFavourite,
       required this.createdAt,
       required this.updatedAt,
       required this.version});
@@ -4328,7 +4371,7 @@ class CheeseEntry extends DataClass implements Insertable<CheeseEntry> {
       map['image_url'] = Variable<String>(imageUrl);
     }
     map['source'] = Variable<String>(source);
-    map['is_favorite'] = Variable<bool>(isFavorite);
+    map['is_favourite'] = Variable<bool>(isFavourite);
     map['created_at'] = Variable<DateTime>(createdAt);
     map['updated_at'] = Variable<DateTime>(updatedAt);
     map['version'] = Variable<int>(version);
@@ -4359,7 +4402,7 @@ class CheeseEntry extends DataClass implements Insertable<CheeseEntry> {
           ? const Value.absent()
           : Value(imageUrl),
       source: Value(source),
-      isFavorite: Value(isFavorite),
+      isFavourite: Value(isFavourite),
       createdAt: Value(createdAt),
       updatedAt: Value(updatedAt),
       version: Value(version),
@@ -4382,7 +4425,7 @@ class CheeseEntry extends DataClass implements Insertable<CheeseEntry> {
       priceRange: serializer.fromJson<int?>(json['priceRange']),
       imageUrl: serializer.fromJson<String?>(json['imageUrl']),
       source: serializer.fromJson<String>(json['source']),
-      isFavorite: serializer.fromJson<bool>(json['isFavorite']),
+      isFavourite: serializer.fromJson<bool>(json['isFavourite']),
       createdAt: serializer.fromJson<DateTime>(json['createdAt']),
       updatedAt: serializer.fromJson<DateTime>(json['updatedAt']),
       version: serializer.fromJson<int>(json['version']),
@@ -4404,7 +4447,7 @@ class CheeseEntry extends DataClass implements Insertable<CheeseEntry> {
       'priceRange': serializer.toJson<int?>(priceRange),
       'imageUrl': serializer.toJson<String?>(imageUrl),
       'source': serializer.toJson<String>(source),
-      'isFavorite': serializer.toJson<bool>(isFavorite),
+      'isFavourite': serializer.toJson<bool>(isFavourite),
       'createdAt': serializer.toJson<DateTime>(createdAt),
       'updatedAt': serializer.toJson<DateTime>(updatedAt),
       'version': serializer.toJson<int>(version),
@@ -4424,7 +4467,7 @@ class CheeseEntry extends DataClass implements Insertable<CheeseEntry> {
           Value<int?> priceRange = const Value.absent(),
           Value<String?> imageUrl = const Value.absent(),
           String? source,
-          bool? isFavorite,
+          bool? isFavourite,
           DateTime? createdAt,
           DateTime? updatedAt,
           int? version}) =>
@@ -4441,7 +4484,7 @@ class CheeseEntry extends DataClass implements Insertable<CheeseEntry> {
         priceRange: priceRange.present ? priceRange.value : this.priceRange,
         imageUrl: imageUrl.present ? imageUrl.value : this.imageUrl,
         source: source ?? this.source,
-        isFavorite: isFavorite ?? this.isFavorite,
+        isFavourite: isFavourite ?? this.isFavourite,
         createdAt: createdAt ?? this.createdAt,
         updatedAt: updatedAt ?? this.updatedAt,
         version: version ?? this.version,
@@ -4461,8 +4504,8 @@ class CheeseEntry extends DataClass implements Insertable<CheeseEntry> {
           data.priceRange.present ? data.priceRange.value : this.priceRange,
       imageUrl: data.imageUrl.present ? data.imageUrl.value : this.imageUrl,
       source: data.source.present ? data.source.value : this.source,
-      isFavorite:
-          data.isFavorite.present ? data.isFavorite.value : this.isFavorite,
+      isFavourite:
+          data.isFavourite.present ? data.isFavourite.value : this.isFavourite,
       createdAt: data.createdAt.present ? data.createdAt.value : this.createdAt,
       updatedAt: data.updatedAt.present ? data.updatedAt.value : this.updatedAt,
       version: data.version.present ? data.version.value : this.version,
@@ -4484,7 +4527,7 @@ class CheeseEntry extends DataClass implements Insertable<CheeseEntry> {
           ..write('priceRange: $priceRange, ')
           ..write('imageUrl: $imageUrl, ')
           ..write('source: $source, ')
-          ..write('isFavorite: $isFavorite, ')
+          ..write('isFavourite: $isFavourite, ')
           ..write('createdAt: $createdAt, ')
           ..write('updatedAt: $updatedAt, ')
           ..write('version: $version')
@@ -4506,7 +4549,7 @@ class CheeseEntry extends DataClass implements Insertable<CheeseEntry> {
       priceRange,
       imageUrl,
       source,
-      isFavorite,
+      isFavourite,
       createdAt,
       updatedAt,
       version);
@@ -4526,7 +4569,7 @@ class CheeseEntry extends DataClass implements Insertable<CheeseEntry> {
           other.priceRange == this.priceRange &&
           other.imageUrl == this.imageUrl &&
           other.source == this.source &&
-          other.isFavorite == this.isFavorite &&
+          other.isFavourite == this.isFavourite &&
           other.createdAt == this.createdAt &&
           other.updatedAt == this.updatedAt &&
           other.version == this.version);
@@ -4545,7 +4588,7 @@ class CheeseEntriesCompanion extends UpdateCompanion<CheeseEntry> {
   final Value<int?> priceRange;
   final Value<String?> imageUrl;
   final Value<String> source;
-  final Value<bool> isFavorite;
+  final Value<bool> isFavourite;
   final Value<DateTime> createdAt;
   final Value<DateTime> updatedAt;
   final Value<int> version;
@@ -4562,7 +4605,7 @@ class CheeseEntriesCompanion extends UpdateCompanion<CheeseEntry> {
     this.priceRange = const Value.absent(),
     this.imageUrl = const Value.absent(),
     this.source = const Value.absent(),
-    this.isFavorite = const Value.absent(),
+    this.isFavourite = const Value.absent(),
     this.createdAt = const Value.absent(),
     this.updatedAt = const Value.absent(),
     this.version = const Value.absent(),
@@ -4580,7 +4623,7 @@ class CheeseEntriesCompanion extends UpdateCompanion<CheeseEntry> {
     this.priceRange = const Value.absent(),
     this.imageUrl = const Value.absent(),
     this.source = const Value.absent(),
-    this.isFavorite = const Value.absent(),
+    this.isFavourite = const Value.absent(),
     required DateTime createdAt,
     required DateTime updatedAt,
     this.version = const Value.absent(),
@@ -4601,7 +4644,7 @@ class CheeseEntriesCompanion extends UpdateCompanion<CheeseEntry> {
     Expression<int>? priceRange,
     Expression<String>? imageUrl,
     Expression<String>? source,
-    Expression<bool>? isFavorite,
+    Expression<bool>? isFavourite,
     Expression<DateTime>? createdAt,
     Expression<DateTime>? updatedAt,
     Expression<int>? version,
@@ -4619,7 +4662,7 @@ class CheeseEntriesCompanion extends UpdateCompanion<CheeseEntry> {
       if (priceRange != null) 'price_range': priceRange,
       if (imageUrl != null) 'image_url': imageUrl,
       if (source != null) 'source': source,
-      if (isFavorite != null) 'is_favorite': isFavorite,
+      if (isFavourite != null) 'is_favourite': isFavourite,
       if (createdAt != null) 'created_at': createdAt,
       if (updatedAt != null) 'updated_at': updatedAt,
       if (version != null) 'version': version,
@@ -4639,7 +4682,7 @@ class CheeseEntriesCompanion extends UpdateCompanion<CheeseEntry> {
       Value<int?>? priceRange,
       Value<String?>? imageUrl,
       Value<String>? source,
-      Value<bool>? isFavorite,
+      Value<bool>? isFavourite,
       Value<DateTime>? createdAt,
       Value<DateTime>? updatedAt,
       Value<int>? version}) {
@@ -4656,7 +4699,7 @@ class CheeseEntriesCompanion extends UpdateCompanion<CheeseEntry> {
       priceRange: priceRange ?? this.priceRange,
       imageUrl: imageUrl ?? this.imageUrl,
       source: source ?? this.source,
-      isFavorite: isFavorite ?? this.isFavorite,
+      isFavourite: isFavourite ?? this.isFavourite,
       createdAt: createdAt ?? this.createdAt,
       updatedAt: updatedAt ?? this.updatedAt,
       version: version ?? this.version,
@@ -4702,8 +4745,8 @@ class CheeseEntriesCompanion extends UpdateCompanion<CheeseEntry> {
     if (source.present) {
       map['source'] = Variable<String>(source.value);
     }
-    if (isFavorite.present) {
-      map['is_favorite'] = Variable<bool>(isFavorite.value);
+    if (isFavourite.present) {
+      map['is_favourite'] = Variable<bool>(isFavourite.value);
     }
     if (createdAt.present) {
       map['created_at'] = Variable<DateTime>(createdAt.value);
@@ -4732,7 +4775,7 @@ class CheeseEntriesCompanion extends UpdateCompanion<CheeseEntry> {
           ..write('priceRange: $priceRange, ')
           ..write('imageUrl: $imageUrl, ')
           ..write('source: $source, ')
-          ..write('isFavorite: $isFavorite, ')
+          ..write('isFavourite: $isFavourite, ')
           ..write('createdAt: $createdAt, ')
           ..write('updatedAt: $updatedAt, ')
           ..write('version: $version')
@@ -6615,15 +6658,15 @@ class $SandwichesTable extends Sandwiches
       type: DriftSqlType.string,
       requiredDuringInsert: false,
       defaultValue: const Constant('personal'));
-  static const VerificationMeta _isFavoriteMeta =
-      const VerificationMeta('isFavorite');
+  static const VerificationMeta _isFavouriteMeta =
+      const VerificationMeta('isFavourite');
   @override
-  late final GeneratedColumn<bool> isFavorite = GeneratedColumn<bool>(
-      'is_favorite', aliasedName, false,
+  late final GeneratedColumn<bool> isFavourite = GeneratedColumn<bool>(
+      'is_favourite', aliasedName, false,
       type: DriftSqlType.bool,
       requiredDuringInsert: false,
-      defaultConstraints:
-          GeneratedColumn.constraintIsAlways('CHECK ("is_favorite" IN (0, 1))'),
+      defaultConstraints: GeneratedColumn.constraintIsAlways(
+          'CHECK ("is_favourite" IN (0, 1))'),
       defaultValue: const Constant(false));
   static const VerificationMeta _cookCountMeta =
       const VerificationMeta('cookCount');
@@ -6680,7 +6723,7 @@ class $SandwichesTable extends Sandwiches
         notes,
         imageUrl,
         source,
-        isFavorite,
+        isFavourite,
         cookCount,
         rating,
         tags,
@@ -6749,11 +6792,11 @@ class $SandwichesTable extends Sandwiches
       context.handle(_sourceMeta,
           source.isAcceptableOrUnknown(data['source']!, _sourceMeta));
     }
-    if (data.containsKey('is_favorite')) {
+    if (data.containsKey('is_favourite')) {
       context.handle(
-          _isFavoriteMeta,
-          isFavorite.isAcceptableOrUnknown(
-              data['is_favorite']!, _isFavoriteMeta));
+          _isFavouriteMeta,
+          isFavourite.isAcceptableOrUnknown(
+              data['is_favourite']!, _isFavouriteMeta));
     }
     if (data.containsKey('cook_count')) {
       context.handle(_cookCountMeta,
@@ -6814,8 +6857,8 @@ class $SandwichesTable extends Sandwiches
           .read(DriftSqlType.string, data['${effectivePrefix}image_url']),
       source: attachedDatabase.typeMapping
           .read(DriftSqlType.string, data['${effectivePrefix}source'])!,
-      isFavorite: attachedDatabase.typeMapping
-          .read(DriftSqlType.bool, data['${effectivePrefix}is_favorite'])!,
+      isFavourite: attachedDatabase.typeMapping
+          .read(DriftSqlType.bool, data['${effectivePrefix}is_favourite'])!,
       cookCount: attachedDatabase.typeMapping
           .read(DriftSqlType.int, data['${effectivePrefix}cook_count'])!,
       rating: attachedDatabase.typeMapping
@@ -6849,7 +6892,7 @@ class Sandwiche extends DataClass implements Insertable<Sandwiche> {
   final String? notes;
   final String? imageUrl;
   final String source;
-  final bool isFavorite;
+  final bool isFavourite;
   final int cookCount;
   final int rating;
   final String tags;
@@ -6868,7 +6911,7 @@ class Sandwiche extends DataClass implements Insertable<Sandwiche> {
       this.notes,
       this.imageUrl,
       required this.source,
-      required this.isFavorite,
+      required this.isFavourite,
       required this.cookCount,
       required this.rating,
       required this.tags,
@@ -6893,7 +6936,7 @@ class Sandwiche extends DataClass implements Insertable<Sandwiche> {
       map['image_url'] = Variable<String>(imageUrl);
     }
     map['source'] = Variable<String>(source);
-    map['is_favorite'] = Variable<bool>(isFavorite);
+    map['is_favourite'] = Variable<bool>(isFavourite);
     map['cook_count'] = Variable<int>(cookCount);
     map['rating'] = Variable<int>(rating);
     map['tags'] = Variable<String>(tags);
@@ -6919,7 +6962,7 @@ class Sandwiche extends DataClass implements Insertable<Sandwiche> {
           ? const Value.absent()
           : Value(imageUrl),
       source: Value(source),
-      isFavorite: Value(isFavorite),
+      isFavourite: Value(isFavourite),
       cookCount: Value(cookCount),
       rating: Value(rating),
       tags: Value(tags),
@@ -6944,7 +6987,7 @@ class Sandwiche extends DataClass implements Insertable<Sandwiche> {
       notes: serializer.fromJson<String?>(json['notes']),
       imageUrl: serializer.fromJson<String?>(json['imageUrl']),
       source: serializer.fromJson<String>(json['source']),
-      isFavorite: serializer.fromJson<bool>(json['isFavorite']),
+      isFavourite: serializer.fromJson<bool>(json['isFavourite']),
       cookCount: serializer.fromJson<int>(json['cookCount']),
       rating: serializer.fromJson<int>(json['rating']),
       tags: serializer.fromJson<String>(json['tags']),
@@ -6968,7 +7011,7 @@ class Sandwiche extends DataClass implements Insertable<Sandwiche> {
       'notes': serializer.toJson<String?>(notes),
       'imageUrl': serializer.toJson<String?>(imageUrl),
       'source': serializer.toJson<String>(source),
-      'isFavorite': serializer.toJson<bool>(isFavorite),
+      'isFavourite': serializer.toJson<bool>(isFavourite),
       'cookCount': serializer.toJson<int>(cookCount),
       'rating': serializer.toJson<int>(rating),
       'tags': serializer.toJson<String>(tags),
@@ -6990,7 +7033,7 @@ class Sandwiche extends DataClass implements Insertable<Sandwiche> {
           Value<String?> notes = const Value.absent(),
           Value<String?> imageUrl = const Value.absent(),
           String? source,
-          bool? isFavorite,
+          bool? isFavourite,
           int? cookCount,
           int? rating,
           String? tags,
@@ -7009,7 +7052,7 @@ class Sandwiche extends DataClass implements Insertable<Sandwiche> {
         notes: notes.present ? notes.value : this.notes,
         imageUrl: imageUrl.present ? imageUrl.value : this.imageUrl,
         source: source ?? this.source,
-        isFavorite: isFavorite ?? this.isFavorite,
+        isFavourite: isFavourite ?? this.isFavourite,
         cookCount: cookCount ?? this.cookCount,
         rating: rating ?? this.rating,
         tags: tags ?? this.tags,
@@ -7032,8 +7075,8 @@ class Sandwiche extends DataClass implements Insertable<Sandwiche> {
       notes: data.notes.present ? data.notes.value : this.notes,
       imageUrl: data.imageUrl.present ? data.imageUrl.value : this.imageUrl,
       source: data.source.present ? data.source.value : this.source,
-      isFavorite:
-          data.isFavorite.present ? data.isFavorite.value : this.isFavorite,
+      isFavourite:
+          data.isFavourite.present ? data.isFavourite.value : this.isFavourite,
       cookCount: data.cookCount.present ? data.cookCount.value : this.cookCount,
       rating: data.rating.present ? data.rating.value : this.rating,
       tags: data.tags.present ? data.tags.value : this.tags,
@@ -7057,7 +7100,7 @@ class Sandwiche extends DataClass implements Insertable<Sandwiche> {
           ..write('notes: $notes, ')
           ..write('imageUrl: $imageUrl, ')
           ..write('source: $source, ')
-          ..write('isFavorite: $isFavorite, ')
+          ..write('isFavourite: $isFavourite, ')
           ..write('cookCount: $cookCount, ')
           ..write('rating: $rating, ')
           ..write('tags: $tags, ')
@@ -7081,7 +7124,7 @@ class Sandwiche extends DataClass implements Insertable<Sandwiche> {
       notes,
       imageUrl,
       source,
-      isFavorite,
+      isFavourite,
       cookCount,
       rating,
       tags,
@@ -7103,7 +7146,7 @@ class Sandwiche extends DataClass implements Insertable<Sandwiche> {
           other.notes == this.notes &&
           other.imageUrl == this.imageUrl &&
           other.source == this.source &&
-          other.isFavorite == this.isFavorite &&
+          other.isFavourite == this.isFavourite &&
           other.cookCount == this.cookCount &&
           other.rating == this.rating &&
           other.tags == this.tags &&
@@ -7124,7 +7167,7 @@ class SandwichesCompanion extends UpdateCompanion<Sandwiche> {
   final Value<String?> notes;
   final Value<String?> imageUrl;
   final Value<String> source;
-  final Value<bool> isFavorite;
+  final Value<bool> isFavourite;
   final Value<int> cookCount;
   final Value<int> rating;
   final Value<String> tags;
@@ -7143,7 +7186,7 @@ class SandwichesCompanion extends UpdateCompanion<Sandwiche> {
     this.notes = const Value.absent(),
     this.imageUrl = const Value.absent(),
     this.source = const Value.absent(),
-    this.isFavorite = const Value.absent(),
+    this.isFavourite = const Value.absent(),
     this.cookCount = const Value.absent(),
     this.rating = const Value.absent(),
     this.tags = const Value.absent(),
@@ -7163,7 +7206,7 @@ class SandwichesCompanion extends UpdateCompanion<Sandwiche> {
     this.notes = const Value.absent(),
     this.imageUrl = const Value.absent(),
     this.source = const Value.absent(),
-    this.isFavorite = const Value.absent(),
+    this.isFavourite = const Value.absent(),
     this.cookCount = const Value.absent(),
     this.rating = const Value.absent(),
     this.tags = const Value.absent(),
@@ -7186,7 +7229,7 @@ class SandwichesCompanion extends UpdateCompanion<Sandwiche> {
     Expression<String>? notes,
     Expression<String>? imageUrl,
     Expression<String>? source,
-    Expression<bool>? isFavorite,
+    Expression<bool>? isFavourite,
     Expression<int>? cookCount,
     Expression<int>? rating,
     Expression<String>? tags,
@@ -7206,7 +7249,7 @@ class SandwichesCompanion extends UpdateCompanion<Sandwiche> {
       if (notes != null) 'notes': notes,
       if (imageUrl != null) 'image_url': imageUrl,
       if (source != null) 'source': source,
-      if (isFavorite != null) 'is_favorite': isFavorite,
+      if (isFavourite != null) 'is_favourite': isFavourite,
       if (cookCount != null) 'cook_count': cookCount,
       if (rating != null) 'rating': rating,
       if (tags != null) 'tags': tags,
@@ -7228,7 +7271,7 @@ class SandwichesCompanion extends UpdateCompanion<Sandwiche> {
       Value<String?>? notes,
       Value<String?>? imageUrl,
       Value<String>? source,
-      Value<bool>? isFavorite,
+      Value<bool>? isFavourite,
       Value<int>? cookCount,
       Value<int>? rating,
       Value<String>? tags,
@@ -7247,7 +7290,7 @@ class SandwichesCompanion extends UpdateCompanion<Sandwiche> {
       notes: notes ?? this.notes,
       imageUrl: imageUrl ?? this.imageUrl,
       source: source ?? this.source,
-      isFavorite: isFavorite ?? this.isFavorite,
+      isFavourite: isFavourite ?? this.isFavourite,
       cookCount: cookCount ?? this.cookCount,
       rating: rating ?? this.rating,
       tags: tags ?? this.tags,
@@ -7293,8 +7336,8 @@ class SandwichesCompanion extends UpdateCompanion<Sandwiche> {
     if (source.present) {
       map['source'] = Variable<String>(source.value);
     }
-    if (isFavorite.present) {
-      map['is_favorite'] = Variable<bool>(isFavorite.value);
+    if (isFavourite.present) {
+      map['is_favourite'] = Variable<bool>(isFavourite.value);
     }
     if (cookCount.present) {
       map['cook_count'] = Variable<int>(cookCount.value);
@@ -7331,7 +7374,7 @@ class SandwichesCompanion extends UpdateCompanion<Sandwiche> {
           ..write('notes: $notes, ')
           ..write('imageUrl: $imageUrl, ')
           ..write('source: $source, ')
-          ..write('isFavorite: $isFavorite, ')
+          ..write('isFavourite: $isFavourite, ')
           ..write('cookCount: $cookCount, ')
           ..write('rating: $rating, ')
           ..write('tags: $tags, ')
@@ -8324,15 +8367,15 @@ class $SmokingRecipesTable extends SmokingRecipes
   late final GeneratedColumn<String> imageUrl = GeneratedColumn<String>(
       'image_url', aliasedName, true,
       type: DriftSqlType.string, requiredDuringInsert: false);
-  static const VerificationMeta _isFavoriteMeta =
-      const VerificationMeta('isFavorite');
+  static const VerificationMeta _isFavouriteMeta =
+      const VerificationMeta('isFavourite');
   @override
-  late final GeneratedColumn<bool> isFavorite = GeneratedColumn<bool>(
-      'is_favorite', aliasedName, false,
+  late final GeneratedColumn<bool> isFavourite = GeneratedColumn<bool>(
+      'is_favourite', aliasedName, false,
       type: DriftSqlType.bool,
       requiredDuringInsert: false,
-      defaultConstraints:
-          GeneratedColumn.constraintIsAlways('CHECK ("is_favorite" IN (0, 1))'),
+      defaultConstraints: GeneratedColumn.constraintIsAlways(
+          'CHECK ("is_favourite" IN (0, 1))'),
       defaultValue: const Constant(false));
   static const VerificationMeta _cookCountMeta =
       const VerificationMeta('cookCount');
@@ -8390,7 +8433,7 @@ class $SmokingRecipesTable extends SmokingRecipes
         stepImages,
         stepImageMap,
         imageUrl,
-        isFavorite,
+        isFavourite,
         cookCount,
         source,
         pairedRecipeIds,
@@ -8500,11 +8543,11 @@ class $SmokingRecipesTable extends SmokingRecipes
       context.handle(_imageUrlMeta,
           imageUrl.isAcceptableOrUnknown(data['image_url']!, _imageUrlMeta));
     }
-    if (data.containsKey('is_favorite')) {
+    if (data.containsKey('is_favourite')) {
       context.handle(
-          _isFavoriteMeta,
-          isFavorite.isAcceptableOrUnknown(
-              data['is_favorite']!, _isFavoriteMeta));
+          _isFavouriteMeta,
+          isFavourite.isAcceptableOrUnknown(
+              data['is_favourite']!, _isFavouriteMeta));
     }
     if (data.containsKey('cook_count')) {
       context.handle(_cookCountMeta,
@@ -8579,8 +8622,8 @@ class $SmokingRecipesTable extends SmokingRecipes
           .read(DriftSqlType.string, data['${effectivePrefix}step_image_map'])!,
       imageUrl: attachedDatabase.typeMapping
           .read(DriftSqlType.string, data['${effectivePrefix}image_url']),
-      isFavorite: attachedDatabase.typeMapping
-          .read(DriftSqlType.bool, data['${effectivePrefix}is_favorite'])!,
+      isFavourite: attachedDatabase.typeMapping
+          .read(DriftSqlType.bool, data['${effectivePrefix}is_favourite'])!,
       cookCount: attachedDatabase.typeMapping
           .read(DriftSqlType.int, data['${effectivePrefix}cook_count'])!,
       source: attachedDatabase.typeMapping
@@ -8620,7 +8663,7 @@ class SmokingRecipe extends DataClass implements Insertable<SmokingRecipe> {
   final String stepImages;
   final String stepImageMap;
   final String? imageUrl;
-  final bool isFavorite;
+  final bool isFavourite;
   final int cookCount;
   final String source;
   final String pairedRecipeIds;
@@ -8646,7 +8689,7 @@ class SmokingRecipe extends DataClass implements Insertable<SmokingRecipe> {
       required this.stepImages,
       required this.stepImageMap,
       this.imageUrl,
-      required this.isFavorite,
+      required this.isFavourite,
       required this.cookCount,
       required this.source,
       required this.pairedRecipeIds,
@@ -8686,7 +8729,7 @@ class SmokingRecipe extends DataClass implements Insertable<SmokingRecipe> {
     if (!nullToAbsent || imageUrl != null) {
       map['image_url'] = Variable<String>(imageUrl);
     }
-    map['is_favorite'] = Variable<bool>(isFavorite);
+    map['is_favourite'] = Variable<bool>(isFavourite);
     map['cook_count'] = Variable<int>(cookCount);
     map['source'] = Variable<String>(source);
     map['paired_recipe_ids'] = Variable<String>(pairedRecipeIds);
@@ -8724,7 +8767,7 @@ class SmokingRecipe extends DataClass implements Insertable<SmokingRecipe> {
       imageUrl: imageUrl == null && nullToAbsent
           ? const Value.absent()
           : Value(imageUrl),
-      isFavorite: Value(isFavorite),
+      isFavourite: Value(isFavourite),
       cookCount: Value(cookCount),
       source: Value(source),
       pairedRecipeIds: Value(pairedRecipeIds),
@@ -8756,7 +8799,7 @@ class SmokingRecipe extends DataClass implements Insertable<SmokingRecipe> {
       stepImages: serializer.fromJson<String>(json['stepImages']),
       stepImageMap: serializer.fromJson<String>(json['stepImageMap']),
       imageUrl: serializer.fromJson<String?>(json['imageUrl']),
-      isFavorite: serializer.fromJson<bool>(json['isFavorite']),
+      isFavourite: serializer.fromJson<bool>(json['isFavourite']),
       cookCount: serializer.fromJson<int>(json['cookCount']),
       source: serializer.fromJson<String>(json['source']),
       pairedRecipeIds: serializer.fromJson<String>(json['pairedRecipeIds']),
@@ -8787,7 +8830,7 @@ class SmokingRecipe extends DataClass implements Insertable<SmokingRecipe> {
       'stepImages': serializer.toJson<String>(stepImages),
       'stepImageMap': serializer.toJson<String>(stepImageMap),
       'imageUrl': serializer.toJson<String?>(imageUrl),
-      'isFavorite': serializer.toJson<bool>(isFavorite),
+      'isFavourite': serializer.toJson<bool>(isFavourite),
       'cookCount': serializer.toJson<int>(cookCount),
       'source': serializer.toJson<String>(source),
       'pairedRecipeIds': serializer.toJson<String>(pairedRecipeIds),
@@ -8816,7 +8859,7 @@ class SmokingRecipe extends DataClass implements Insertable<SmokingRecipe> {
           String? stepImages,
           String? stepImageMap,
           Value<String?> imageUrl = const Value.absent(),
-          bool? isFavorite,
+          bool? isFavourite,
           int? cookCount,
           String? source,
           String? pairedRecipeIds,
@@ -8842,7 +8885,7 @@ class SmokingRecipe extends DataClass implements Insertable<SmokingRecipe> {
         stepImages: stepImages ?? this.stepImages,
         stepImageMap: stepImageMap ?? this.stepImageMap,
         imageUrl: imageUrl.present ? imageUrl.value : this.imageUrl,
-        isFavorite: isFavorite ?? this.isFavorite,
+        isFavourite: isFavourite ?? this.isFavourite,
         cookCount: cookCount ?? this.cookCount,
         source: source ?? this.source,
         pairedRecipeIds: pairedRecipeIds ?? this.pairedRecipeIds,
@@ -8880,8 +8923,8 @@ class SmokingRecipe extends DataClass implements Insertable<SmokingRecipe> {
           ? data.stepImageMap.value
           : this.stepImageMap,
       imageUrl: data.imageUrl.present ? data.imageUrl.value : this.imageUrl,
-      isFavorite:
-          data.isFavorite.present ? data.isFavorite.value : this.isFavorite,
+      isFavourite:
+          data.isFavourite.present ? data.isFavourite.value : this.isFavourite,
       cookCount: data.cookCount.present ? data.cookCount.value : this.cookCount,
       source: data.source.present ? data.source.value : this.source,
       pairedRecipeIds: data.pairedRecipeIds.present
@@ -8914,7 +8957,7 @@ class SmokingRecipe extends DataClass implements Insertable<SmokingRecipe> {
           ..write('stepImages: $stepImages, ')
           ..write('stepImageMap: $stepImageMap, ')
           ..write('imageUrl: $imageUrl, ')
-          ..write('isFavorite: $isFavorite, ')
+          ..write('isFavourite: $isFavourite, ')
           ..write('cookCount: $cookCount, ')
           ..write('source: $source, ')
           ..write('pairedRecipeIds: $pairedRecipeIds, ')
@@ -8945,7 +8988,7 @@ class SmokingRecipe extends DataClass implements Insertable<SmokingRecipe> {
         stepImages,
         stepImageMap,
         imageUrl,
-        isFavorite,
+        isFavourite,
         cookCount,
         source,
         pairedRecipeIds,
@@ -8975,7 +9018,7 @@ class SmokingRecipe extends DataClass implements Insertable<SmokingRecipe> {
           other.stepImages == this.stepImages &&
           other.stepImageMap == this.stepImageMap &&
           other.imageUrl == this.imageUrl &&
-          other.isFavorite == this.isFavorite &&
+          other.isFavourite == this.isFavourite &&
           other.cookCount == this.cookCount &&
           other.source == this.source &&
           other.pairedRecipeIds == this.pairedRecipeIds &&
@@ -9003,7 +9046,7 @@ class SmokingRecipesCompanion extends UpdateCompanion<SmokingRecipe> {
   final Value<String> stepImages;
   final Value<String> stepImageMap;
   final Value<String?> imageUrl;
-  final Value<bool> isFavorite;
+  final Value<bool> isFavourite;
   final Value<int> cookCount;
   final Value<String> source;
   final Value<String> pairedRecipeIds;
@@ -9029,7 +9072,7 @@ class SmokingRecipesCompanion extends UpdateCompanion<SmokingRecipe> {
     this.stepImages = const Value.absent(),
     this.stepImageMap = const Value.absent(),
     this.imageUrl = const Value.absent(),
-    this.isFavorite = const Value.absent(),
+    this.isFavourite = const Value.absent(),
     this.cookCount = const Value.absent(),
     this.source = const Value.absent(),
     this.pairedRecipeIds = const Value.absent(),
@@ -9056,7 +9099,7 @@ class SmokingRecipesCompanion extends UpdateCompanion<SmokingRecipe> {
     this.stepImages = const Value.absent(),
     this.stepImageMap = const Value.absent(),
     this.imageUrl = const Value.absent(),
-    this.isFavorite = const Value.absent(),
+    this.isFavourite = const Value.absent(),
     this.cookCount = const Value.absent(),
     this.source = const Value.absent(),
     this.pairedRecipeIds = const Value.absent(),
@@ -9086,7 +9129,7 @@ class SmokingRecipesCompanion extends UpdateCompanion<SmokingRecipe> {
     Expression<String>? stepImages,
     Expression<String>? stepImageMap,
     Expression<String>? imageUrl,
-    Expression<bool>? isFavorite,
+    Expression<bool>? isFavourite,
     Expression<int>? cookCount,
     Expression<String>? source,
     Expression<String>? pairedRecipeIds,
@@ -9113,7 +9156,7 @@ class SmokingRecipesCompanion extends UpdateCompanion<SmokingRecipe> {
       if (stepImages != null) 'step_images': stepImages,
       if (stepImageMap != null) 'step_image_map': stepImageMap,
       if (imageUrl != null) 'image_url': imageUrl,
-      if (isFavorite != null) 'is_favorite': isFavorite,
+      if (isFavourite != null) 'is_favourite': isFavourite,
       if (cookCount != null) 'cook_count': cookCount,
       if (source != null) 'source': source,
       if (pairedRecipeIds != null) 'paired_recipe_ids': pairedRecipeIds,
@@ -9142,7 +9185,7 @@ class SmokingRecipesCompanion extends UpdateCompanion<SmokingRecipe> {
       Value<String>? stepImages,
       Value<String>? stepImageMap,
       Value<String?>? imageUrl,
-      Value<bool>? isFavorite,
+      Value<bool>? isFavourite,
       Value<int>? cookCount,
       Value<String>? source,
       Value<String>? pairedRecipeIds,
@@ -9168,7 +9211,7 @@ class SmokingRecipesCompanion extends UpdateCompanion<SmokingRecipe> {
       stepImages: stepImages ?? this.stepImages,
       stepImageMap: stepImageMap ?? this.stepImageMap,
       imageUrl: imageUrl ?? this.imageUrl,
-      isFavorite: isFavorite ?? this.isFavorite,
+      isFavourite: isFavourite ?? this.isFavourite,
       cookCount: cookCount ?? this.cookCount,
       source: source ?? this.source,
       pairedRecipeIds: pairedRecipeIds ?? this.pairedRecipeIds,
@@ -9237,8 +9280,8 @@ class SmokingRecipesCompanion extends UpdateCompanion<SmokingRecipe> {
     if (imageUrl.present) {
       map['image_url'] = Variable<String>(imageUrl.value);
     }
-    if (isFavorite.present) {
-      map['is_favorite'] = Variable<bool>(isFavorite.value);
+    if (isFavourite.present) {
+      map['is_favourite'] = Variable<bool>(isFavourite.value);
     }
     if (cookCount.present) {
       map['cook_count'] = Variable<int>(cookCount.value);
@@ -9280,7 +9323,7 @@ class SmokingRecipesCompanion extends UpdateCompanion<SmokingRecipe> {
           ..write('stepImages: $stepImages, ')
           ..write('stepImageMap: $stepImageMap, ')
           ..write('imageUrl: $imageUrl, ')
-          ..write('isFavorite: $isFavorite, ')
+          ..write('isFavourite: $isFavourite, ')
           ..write('cookCount: $cookCount, ')
           ..write('source: $source, ')
           ..write('pairedRecipeIds: $pairedRecipeIds, ')
@@ -10749,7 +10792,7 @@ typedef $$RecipesTableCreateCompanionBuilder = RecipesCompanion Function({
   Value<int?> colorValue,
   required DateTime createdAt,
   required DateTime updatedAt,
-  Value<bool> isFavorite,
+  Value<bool> isFavourite,
   Value<int> rating,
   Value<int> cookCount,
   Value<int> editCount,
@@ -10770,6 +10813,7 @@ typedef $$RecipesTableCreateCompanionBuilder = RecipesCompanion Function({
   Value<String?> scienceNotes,
   Value<String?> equipmentJson,
   Value<bool> isShared,
+  Value<String?> lineageHash,
 });
 typedef $$RecipesTableUpdateCompanionBuilder = RecipesCompanion Function({
   Value<int> id,
@@ -10796,7 +10840,7 @@ typedef $$RecipesTableUpdateCompanionBuilder = RecipesCompanion Function({
   Value<int?> colorValue,
   Value<DateTime> createdAt,
   Value<DateTime> updatedAt,
-  Value<bool> isFavorite,
+  Value<bool> isFavourite,
   Value<int> rating,
   Value<int> cookCount,
   Value<int> editCount,
@@ -10817,6 +10861,7 @@ typedef $$RecipesTableUpdateCompanionBuilder = RecipesCompanion Function({
   Value<String?> scienceNotes,
   Value<String?> equipmentJson,
   Value<bool> isShared,
+  Value<String?> lineageHash,
 });
 
 final class $$RecipesTableReferences
@@ -10936,8 +10981,8 @@ class $$RecipesTableFilterComposer
   ColumnFilters<DateTime> get updatedAt => $composableBuilder(
       column: $table.updatedAt, builder: (column) => ColumnFilters(column));
 
-  ColumnFilters<bool> get isFavorite => $composableBuilder(
-      column: $table.isFavorite, builder: (column) => ColumnFilters(column));
+  ColumnFilters<bool> get isFavourite => $composableBuilder(
+      column: $table.isFavourite, builder: (column) => ColumnFilters(column));
 
   ColumnFilters<int> get rating => $composableBuilder(
       column: $table.rating, builder: (column) => ColumnFilters(column));
@@ -10998,6 +11043,9 @@ class $$RecipesTableFilterComposer
 
   ColumnFilters<bool> get isShared => $composableBuilder(
       column: $table.isShared, builder: (column) => ColumnFilters(column));
+
+  ColumnFilters<String> get lineageHash => $composableBuilder(
+      column: $table.lineageHash, builder: (column) => ColumnFilters(column));
 
   Expression<bool> ingredientsRefs(
       Expression<bool> Function($$IngredientsTableFilterComposer f) f) {
@@ -11125,8 +11173,8 @@ class $$RecipesTableOrderingComposer
   ColumnOrderings<DateTime> get updatedAt => $composableBuilder(
       column: $table.updatedAt, builder: (column) => ColumnOrderings(column));
 
-  ColumnOrderings<bool> get isFavorite => $composableBuilder(
-      column: $table.isFavorite, builder: (column) => ColumnOrderings(column));
+  ColumnOrderings<bool> get isFavourite => $composableBuilder(
+      column: $table.isFavourite, builder: (column) => ColumnOrderings(column));
 
   ColumnOrderings<int> get rating => $composableBuilder(
       column: $table.rating, builder: (column) => ColumnOrderings(column));
@@ -11192,6 +11240,9 @@ class $$RecipesTableOrderingComposer
 
   ColumnOrderings<bool> get isShared => $composableBuilder(
       column: $table.isShared, builder: (column) => ColumnOrderings(column));
+
+  ColumnOrderings<String> get lineageHash => $composableBuilder(
+      column: $table.lineageHash, builder: (column) => ColumnOrderings(column));
 }
 
 class $$RecipesTableAnnotationComposer
@@ -11275,8 +11326,8 @@ class $$RecipesTableAnnotationComposer
   GeneratedColumn<DateTime> get updatedAt =>
       $composableBuilder(column: $table.updatedAt, builder: (column) => column);
 
-  GeneratedColumn<bool> get isFavorite => $composableBuilder(
-      column: $table.isFavorite, builder: (column) => column);
+  GeneratedColumn<bool> get isFavourite => $composableBuilder(
+      column: $table.isFavourite, builder: (column) => column);
 
   GeneratedColumn<int> get rating =>
       $composableBuilder(column: $table.rating, builder: (column) => column);
@@ -11337,6 +11388,9 @@ class $$RecipesTableAnnotationComposer
 
   GeneratedColumn<bool> get isShared =>
       $composableBuilder(column: $table.isShared, builder: (column) => column);
+
+  GeneratedColumn<String> get lineageHash => $composableBuilder(
+      column: $table.lineageHash, builder: (column) => column);
 
   Expression<T> ingredientsRefs<T extends Object>(
       Expression<T> Function($$IngredientsTableAnnotationComposer a) f) {
@@ -11428,7 +11482,7 @@ class $$RecipesTableTableManager extends RootTableManager<
             Value<int?> colorValue = const Value.absent(),
             Value<DateTime> createdAt = const Value.absent(),
             Value<DateTime> updatedAt = const Value.absent(),
-            Value<bool> isFavorite = const Value.absent(),
+            Value<bool> isFavourite = const Value.absent(),
             Value<int> rating = const Value.absent(),
             Value<int> cookCount = const Value.absent(),
             Value<int> editCount = const Value.absent(),
@@ -11449,6 +11503,7 @@ class $$RecipesTableTableManager extends RootTableManager<
             Value<String?> scienceNotes = const Value.absent(),
             Value<String?> equipmentJson = const Value.absent(),
             Value<bool> isShared = const Value.absent(),
+            Value<String?> lineageHash = const Value.absent(),
           }) =>
               RecipesCompanion(
             id: id,
@@ -11475,7 +11530,7 @@ class $$RecipesTableTableManager extends RootTableManager<
             colorValue: colorValue,
             createdAt: createdAt,
             updatedAt: updatedAt,
-            isFavorite: isFavorite,
+            isFavourite: isFavourite,
             rating: rating,
             cookCount: cookCount,
             editCount: editCount,
@@ -11496,6 +11551,7 @@ class $$RecipesTableTableManager extends RootTableManager<
             scienceNotes: scienceNotes,
             equipmentJson: equipmentJson,
             isShared: isShared,
+            lineageHash: lineageHash,
           ),
           createCompanionCallback: ({
             Value<int> id = const Value.absent(),
@@ -11522,7 +11578,7 @@ class $$RecipesTableTableManager extends RootTableManager<
             Value<int?> colorValue = const Value.absent(),
             required DateTime createdAt,
             required DateTime updatedAt,
-            Value<bool> isFavorite = const Value.absent(),
+            Value<bool> isFavourite = const Value.absent(),
             Value<int> rating = const Value.absent(),
             Value<int> cookCount = const Value.absent(),
             Value<int> editCount = const Value.absent(),
@@ -11543,6 +11599,7 @@ class $$RecipesTableTableManager extends RootTableManager<
             Value<String?> scienceNotes = const Value.absent(),
             Value<String?> equipmentJson = const Value.absent(),
             Value<bool> isShared = const Value.absent(),
+            Value<String?> lineageHash = const Value.absent(),
           }) =>
               RecipesCompanion.insert(
             id: id,
@@ -11569,7 +11626,7 @@ class $$RecipesTableTableManager extends RootTableManager<
             colorValue: colorValue,
             createdAt: createdAt,
             updatedAt: updatedAt,
-            isFavorite: isFavorite,
+            isFavourite: isFavourite,
             rating: rating,
             cookCount: cookCount,
             editCount: editCount,
@@ -11590,6 +11647,7 @@ class $$RecipesTableTableManager extends RootTableManager<
             scienceNotes: scienceNotes,
             equipmentJson: equipmentJson,
             isShared: isShared,
+            lineageHash: lineageHash,
           ),
           withReferenceMapper: (p0) => p0
               .map((e) =>
@@ -12022,7 +12080,7 @@ typedef $$PizzasTableCreateCompanionBuilder = PizzasCompanion Function({
   Value<String?> notes,
   Value<String?> imageUrl,
   Value<String> source,
-  Value<bool> isFavorite,
+  Value<bool> isFavourite,
   Value<int> cookCount,
   Value<int> rating,
   Value<String> tags,
@@ -12041,7 +12099,7 @@ typedef $$PizzasTableUpdateCompanionBuilder = PizzasCompanion Function({
   Value<String?> notes,
   Value<String?> imageUrl,
   Value<String> source,
-  Value<bool> isFavorite,
+  Value<bool> isFavourite,
   Value<int> cookCount,
   Value<int> rating,
   Value<String> tags,
@@ -12089,8 +12147,8 @@ class $$PizzasTableFilterComposer
   ColumnFilters<String> get source => $composableBuilder(
       column: $table.source, builder: (column) => ColumnFilters(column));
 
-  ColumnFilters<bool> get isFavorite => $composableBuilder(
-      column: $table.isFavorite, builder: (column) => ColumnFilters(column));
+  ColumnFilters<bool> get isFavourite => $composableBuilder(
+      column: $table.isFavourite, builder: (column) => ColumnFilters(column));
 
   ColumnFilters<int> get cookCount => $composableBuilder(
       column: $table.cookCount, builder: (column) => ColumnFilters(column));
@@ -12150,8 +12208,8 @@ class $$PizzasTableOrderingComposer
   ColumnOrderings<String> get source => $composableBuilder(
       column: $table.source, builder: (column) => ColumnOrderings(column));
 
-  ColumnOrderings<bool> get isFavorite => $composableBuilder(
-      column: $table.isFavorite, builder: (column) => ColumnOrderings(column));
+  ColumnOrderings<bool> get isFavourite => $composableBuilder(
+      column: $table.isFavourite, builder: (column) => ColumnOrderings(column));
 
   ColumnOrderings<int> get cookCount => $composableBuilder(
       column: $table.cookCount, builder: (column) => ColumnOrderings(column));
@@ -12211,8 +12269,8 @@ class $$PizzasTableAnnotationComposer
   GeneratedColumn<String> get source =>
       $composableBuilder(column: $table.source, builder: (column) => column);
 
-  GeneratedColumn<bool> get isFavorite => $composableBuilder(
-      column: $table.isFavorite, builder: (column) => column);
+  GeneratedColumn<bool> get isFavourite => $composableBuilder(
+      column: $table.isFavourite, builder: (column) => column);
 
   GeneratedColumn<int> get cookCount =>
       $composableBuilder(column: $table.cookCount, builder: (column) => column);
@@ -12266,7 +12324,7 @@ class $$PizzasTableTableManager extends RootTableManager<
             Value<String?> notes = const Value.absent(),
             Value<String?> imageUrl = const Value.absent(),
             Value<String> source = const Value.absent(),
-            Value<bool> isFavorite = const Value.absent(),
+            Value<bool> isFavourite = const Value.absent(),
             Value<int> cookCount = const Value.absent(),
             Value<int> rating = const Value.absent(),
             Value<String> tags = const Value.absent(),
@@ -12285,7 +12343,7 @@ class $$PizzasTableTableManager extends RootTableManager<
             notes: notes,
             imageUrl: imageUrl,
             source: source,
-            isFavorite: isFavorite,
+            isFavourite: isFavourite,
             cookCount: cookCount,
             rating: rating,
             tags: tags,
@@ -12304,7 +12362,7 @@ class $$PizzasTableTableManager extends RootTableManager<
             Value<String?> notes = const Value.absent(),
             Value<String?> imageUrl = const Value.absent(),
             Value<String> source = const Value.absent(),
-            Value<bool> isFavorite = const Value.absent(),
+            Value<bool> isFavourite = const Value.absent(),
             Value<int> cookCount = const Value.absent(),
             Value<int> rating = const Value.absent(),
             Value<String> tags = const Value.absent(),
@@ -12323,7 +12381,7 @@ class $$PizzasTableTableManager extends RootTableManager<
             notes: notes,
             imageUrl: imageUrl,
             source: source,
-            isFavorite: isFavorite,
+            isFavourite: isFavourite,
             cookCount: cookCount,
             rating: rating,
             tags: tags,
@@ -12364,7 +12422,7 @@ typedef $$CellarEntriesTableCreateCompanionBuilder = CellarEntriesCompanion
   Value<int?> priceRange,
   Value<String?> imageUrl,
   Value<String> source,
-  Value<bool> isFavorite,
+  Value<bool> isFavourite,
   required DateTime createdAt,
   required DateTime updatedAt,
   Value<int> version,
@@ -12383,7 +12441,7 @@ typedef $$CellarEntriesTableUpdateCompanionBuilder = CellarEntriesCompanion
   Value<int?> priceRange,
   Value<String?> imageUrl,
   Value<String> source,
-  Value<bool> isFavorite,
+  Value<bool> isFavourite,
   Value<DateTime> createdAt,
   Value<DateTime> updatedAt,
   Value<int> version,
@@ -12434,8 +12492,8 @@ class $$CellarEntriesTableFilterComposer
   ColumnFilters<String> get source => $composableBuilder(
       column: $table.source, builder: (column) => ColumnFilters(column));
 
-  ColumnFilters<bool> get isFavorite => $composableBuilder(
-      column: $table.isFavorite, builder: (column) => ColumnFilters(column));
+  ColumnFilters<bool> get isFavourite => $composableBuilder(
+      column: $table.isFavourite, builder: (column) => ColumnFilters(column));
 
   ColumnFilters<DateTime> get createdAt => $composableBuilder(
       column: $table.createdAt, builder: (column) => ColumnFilters(column));
@@ -12493,8 +12551,8 @@ class $$CellarEntriesTableOrderingComposer
   ColumnOrderings<String> get source => $composableBuilder(
       column: $table.source, builder: (column) => ColumnOrderings(column));
 
-  ColumnOrderings<bool> get isFavorite => $composableBuilder(
-      column: $table.isFavorite, builder: (column) => ColumnOrderings(column));
+  ColumnOrderings<bool> get isFavourite => $composableBuilder(
+      column: $table.isFavourite, builder: (column) => ColumnOrderings(column));
 
   ColumnOrderings<DateTime> get createdAt => $composableBuilder(
       column: $table.createdAt, builder: (column) => ColumnOrderings(column));
@@ -12551,8 +12609,8 @@ class $$CellarEntriesTableAnnotationComposer
   GeneratedColumn<String> get source =>
       $composableBuilder(column: $table.source, builder: (column) => column);
 
-  GeneratedColumn<bool> get isFavorite => $composableBuilder(
-      column: $table.isFavorite, builder: (column) => column);
+  GeneratedColumn<bool> get isFavourite => $composableBuilder(
+      column: $table.isFavourite, builder: (column) => column);
 
   GeneratedColumn<DateTime> get createdAt =>
       $composableBuilder(column: $table.createdAt, builder: (column) => column);
@@ -12602,7 +12660,7 @@ class $$CellarEntriesTableTableManager extends RootTableManager<
             Value<int?> priceRange = const Value.absent(),
             Value<String?> imageUrl = const Value.absent(),
             Value<String> source = const Value.absent(),
-            Value<bool> isFavorite = const Value.absent(),
+            Value<bool> isFavourite = const Value.absent(),
             Value<DateTime> createdAt = const Value.absent(),
             Value<DateTime> updatedAt = const Value.absent(),
             Value<int> version = const Value.absent(),
@@ -12620,7 +12678,7 @@ class $$CellarEntriesTableTableManager extends RootTableManager<
             priceRange: priceRange,
             imageUrl: imageUrl,
             source: source,
-            isFavorite: isFavorite,
+            isFavourite: isFavourite,
             createdAt: createdAt,
             updatedAt: updatedAt,
             version: version,
@@ -12638,7 +12696,7 @@ class $$CellarEntriesTableTableManager extends RootTableManager<
             Value<int?> priceRange = const Value.absent(),
             Value<String?> imageUrl = const Value.absent(),
             Value<String> source = const Value.absent(),
-            Value<bool> isFavorite = const Value.absent(),
+            Value<bool> isFavourite = const Value.absent(),
             required DateTime createdAt,
             required DateTime updatedAt,
             Value<int> version = const Value.absent(),
@@ -12656,7 +12714,7 @@ class $$CellarEntriesTableTableManager extends RootTableManager<
             priceRange: priceRange,
             imageUrl: imageUrl,
             source: source,
-            isFavorite: isFavorite,
+            isFavourite: isFavourite,
             createdAt: createdAt,
             updatedAt: updatedAt,
             version: version,
@@ -12697,7 +12755,7 @@ typedef $$CheeseEntriesTableCreateCompanionBuilder = CheeseEntriesCompanion
   Value<int?> priceRange,
   Value<String?> imageUrl,
   Value<String> source,
-  Value<bool> isFavorite,
+  Value<bool> isFavourite,
   required DateTime createdAt,
   required DateTime updatedAt,
   Value<int> version,
@@ -12716,7 +12774,7 @@ typedef $$CheeseEntriesTableUpdateCompanionBuilder = CheeseEntriesCompanion
   Value<int?> priceRange,
   Value<String?> imageUrl,
   Value<String> source,
-  Value<bool> isFavorite,
+  Value<bool> isFavourite,
   Value<DateTime> createdAt,
   Value<DateTime> updatedAt,
   Value<int> version,
@@ -12767,8 +12825,8 @@ class $$CheeseEntriesTableFilterComposer
   ColumnFilters<String> get source => $composableBuilder(
       column: $table.source, builder: (column) => ColumnFilters(column));
 
-  ColumnFilters<bool> get isFavorite => $composableBuilder(
-      column: $table.isFavorite, builder: (column) => ColumnFilters(column));
+  ColumnFilters<bool> get isFavourite => $composableBuilder(
+      column: $table.isFavourite, builder: (column) => ColumnFilters(column));
 
   ColumnFilters<DateTime> get createdAt => $composableBuilder(
       column: $table.createdAt, builder: (column) => ColumnFilters(column));
@@ -12825,8 +12883,8 @@ class $$CheeseEntriesTableOrderingComposer
   ColumnOrderings<String> get source => $composableBuilder(
       column: $table.source, builder: (column) => ColumnOrderings(column));
 
-  ColumnOrderings<bool> get isFavorite => $composableBuilder(
-      column: $table.isFavorite, builder: (column) => ColumnOrderings(column));
+  ColumnOrderings<bool> get isFavourite => $composableBuilder(
+      column: $table.isFavourite, builder: (column) => ColumnOrderings(column));
 
   ColumnOrderings<DateTime> get createdAt => $composableBuilder(
       column: $table.createdAt, builder: (column) => ColumnOrderings(column));
@@ -12883,8 +12941,8 @@ class $$CheeseEntriesTableAnnotationComposer
   GeneratedColumn<String> get source =>
       $composableBuilder(column: $table.source, builder: (column) => column);
 
-  GeneratedColumn<bool> get isFavorite => $composableBuilder(
-      column: $table.isFavorite, builder: (column) => column);
+  GeneratedColumn<bool> get isFavourite => $composableBuilder(
+      column: $table.isFavourite, builder: (column) => column);
 
   GeneratedColumn<DateTime> get createdAt =>
       $composableBuilder(column: $table.createdAt, builder: (column) => column);
@@ -12934,7 +12992,7 @@ class $$CheeseEntriesTableTableManager extends RootTableManager<
             Value<int?> priceRange = const Value.absent(),
             Value<String?> imageUrl = const Value.absent(),
             Value<String> source = const Value.absent(),
-            Value<bool> isFavorite = const Value.absent(),
+            Value<bool> isFavourite = const Value.absent(),
             Value<DateTime> createdAt = const Value.absent(),
             Value<DateTime> updatedAt = const Value.absent(),
             Value<int> version = const Value.absent(),
@@ -12952,7 +13010,7 @@ class $$CheeseEntriesTableTableManager extends RootTableManager<
             priceRange: priceRange,
             imageUrl: imageUrl,
             source: source,
-            isFavorite: isFavorite,
+            isFavourite: isFavourite,
             createdAt: createdAt,
             updatedAt: updatedAt,
             version: version,
@@ -12970,7 +13028,7 @@ class $$CheeseEntriesTableTableManager extends RootTableManager<
             Value<int?> priceRange = const Value.absent(),
             Value<String?> imageUrl = const Value.absent(),
             Value<String> source = const Value.absent(),
-            Value<bool> isFavorite = const Value.absent(),
+            Value<bool> isFavourite = const Value.absent(),
             required DateTime createdAt,
             required DateTime updatedAt,
             Value<int> version = const Value.absent(),
@@ -12988,7 +13046,7 @@ class $$CheeseEntriesTableTableManager extends RootTableManager<
             priceRange: priceRange,
             imageUrl: imageUrl,
             source: source,
-            isFavorite: isFavorite,
+            isFavourite: isFavourite,
             createdAt: createdAt,
             updatedAt: updatedAt,
             version: version,
@@ -14094,7 +14152,7 @@ typedef $$SandwichesTableCreateCompanionBuilder = SandwichesCompanion Function({
   Value<String?> notes,
   Value<String?> imageUrl,
   Value<String> source,
-  Value<bool> isFavorite,
+  Value<bool> isFavourite,
   Value<int> cookCount,
   Value<int> rating,
   Value<String> tags,
@@ -14114,7 +14172,7 @@ typedef $$SandwichesTableUpdateCompanionBuilder = SandwichesCompanion Function({
   Value<String?> notes,
   Value<String?> imageUrl,
   Value<String> source,
-  Value<bool> isFavorite,
+  Value<bool> isFavourite,
   Value<int> cookCount,
   Value<int> rating,
   Value<String> tags,
@@ -14165,8 +14223,8 @@ class $$SandwichesTableFilterComposer
   ColumnFilters<String> get source => $composableBuilder(
       column: $table.source, builder: (column) => ColumnFilters(column));
 
-  ColumnFilters<bool> get isFavorite => $composableBuilder(
-      column: $table.isFavorite, builder: (column) => ColumnFilters(column));
+  ColumnFilters<bool> get isFavourite => $composableBuilder(
+      column: $table.isFavourite, builder: (column) => ColumnFilters(column));
 
   ColumnFilters<int> get cookCount => $composableBuilder(
       column: $table.cookCount, builder: (column) => ColumnFilters(column));
@@ -14229,8 +14287,8 @@ class $$SandwichesTableOrderingComposer
   ColumnOrderings<String> get source => $composableBuilder(
       column: $table.source, builder: (column) => ColumnOrderings(column));
 
-  ColumnOrderings<bool> get isFavorite => $composableBuilder(
-      column: $table.isFavorite, builder: (column) => ColumnOrderings(column));
+  ColumnOrderings<bool> get isFavourite => $composableBuilder(
+      column: $table.isFavourite, builder: (column) => ColumnOrderings(column));
 
   ColumnOrderings<int> get cookCount => $composableBuilder(
       column: $table.cookCount, builder: (column) => ColumnOrderings(column));
@@ -14293,8 +14351,8 @@ class $$SandwichesTableAnnotationComposer
   GeneratedColumn<String> get source =>
       $composableBuilder(column: $table.source, builder: (column) => column);
 
-  GeneratedColumn<bool> get isFavorite => $composableBuilder(
-      column: $table.isFavorite, builder: (column) => column);
+  GeneratedColumn<bool> get isFavourite => $composableBuilder(
+      column: $table.isFavourite, builder: (column) => column);
 
   GeneratedColumn<int> get cookCount =>
       $composableBuilder(column: $table.cookCount, builder: (column) => column);
@@ -14349,7 +14407,7 @@ class $$SandwichesTableTableManager extends RootTableManager<
             Value<String?> notes = const Value.absent(),
             Value<String?> imageUrl = const Value.absent(),
             Value<String> source = const Value.absent(),
-            Value<bool> isFavorite = const Value.absent(),
+            Value<bool> isFavourite = const Value.absent(),
             Value<int> cookCount = const Value.absent(),
             Value<int> rating = const Value.absent(),
             Value<String> tags = const Value.absent(),
@@ -14369,7 +14427,7 @@ class $$SandwichesTableTableManager extends RootTableManager<
             notes: notes,
             imageUrl: imageUrl,
             source: source,
-            isFavorite: isFavorite,
+            isFavourite: isFavourite,
             cookCount: cookCount,
             rating: rating,
             tags: tags,
@@ -14389,7 +14447,7 @@ class $$SandwichesTableTableManager extends RootTableManager<
             Value<String?> notes = const Value.absent(),
             Value<String?> imageUrl = const Value.absent(),
             Value<String> source = const Value.absent(),
-            Value<bool> isFavorite = const Value.absent(),
+            Value<bool> isFavourite = const Value.absent(),
             Value<int> cookCount = const Value.absent(),
             Value<int> rating = const Value.absent(),
             Value<String> tags = const Value.absent(),
@@ -14409,7 +14467,7 @@ class $$SandwichesTableTableManager extends RootTableManager<
             notes: notes,
             imageUrl: imageUrl,
             source: source,
-            isFavorite: isFavorite,
+            isFavourite: isFavourite,
             cookCount: cookCount,
             rating: rating,
             tags: tags,
@@ -15071,7 +15129,7 @@ typedef $$SmokingRecipesTableCreateCompanionBuilder = SmokingRecipesCompanion
   Value<String> stepImages,
   Value<String> stepImageMap,
   Value<String?> imageUrl,
-  Value<bool> isFavorite,
+  Value<bool> isFavourite,
   Value<int> cookCount,
   Value<String> source,
   Value<String> pairedRecipeIds,
@@ -15099,7 +15157,7 @@ typedef $$SmokingRecipesTableUpdateCompanionBuilder = SmokingRecipesCompanion
   Value<String> stepImages,
   Value<String> stepImageMap,
   Value<String?> imageUrl,
-  Value<bool> isFavorite,
+  Value<bool> isFavourite,
   Value<int> cookCount,
   Value<String> source,
   Value<String> pairedRecipeIds,
@@ -15175,8 +15233,8 @@ class $$SmokingRecipesTableFilterComposer
   ColumnFilters<String> get imageUrl => $composableBuilder(
       column: $table.imageUrl, builder: (column) => ColumnFilters(column));
 
-  ColumnFilters<bool> get isFavorite => $composableBuilder(
-      column: $table.isFavorite, builder: (column) => ColumnFilters(column));
+  ColumnFilters<bool> get isFavourite => $composableBuilder(
+      column: $table.isFavourite, builder: (column) => ColumnFilters(column));
 
   ColumnFilters<int> get cookCount => $composableBuilder(
       column: $table.cookCount, builder: (column) => ColumnFilters(column));
@@ -15264,8 +15322,8 @@ class $$SmokingRecipesTableOrderingComposer
   ColumnOrderings<String> get imageUrl => $composableBuilder(
       column: $table.imageUrl, builder: (column) => ColumnOrderings(column));
 
-  ColumnOrderings<bool> get isFavorite => $composableBuilder(
-      column: $table.isFavorite, builder: (column) => ColumnOrderings(column));
+  ColumnOrderings<bool> get isFavourite => $composableBuilder(
+      column: $table.isFavourite, builder: (column) => ColumnOrderings(column));
 
   ColumnOrderings<int> get cookCount => $composableBuilder(
       column: $table.cookCount, builder: (column) => ColumnOrderings(column));
@@ -15350,8 +15408,8 @@ class $$SmokingRecipesTableAnnotationComposer
   GeneratedColumn<String> get imageUrl =>
       $composableBuilder(column: $table.imageUrl, builder: (column) => column);
 
-  GeneratedColumn<bool> get isFavorite => $composableBuilder(
-      column: $table.isFavorite, builder: (column) => column);
+  GeneratedColumn<bool> get isFavourite => $composableBuilder(
+      column: $table.isFavourite, builder: (column) => column);
 
   GeneratedColumn<int> get cookCount =>
       $composableBuilder(column: $table.cookCount, builder: (column) => column);
@@ -15415,7 +15473,7 @@ class $$SmokingRecipesTableTableManager extends RootTableManager<
             Value<String> stepImages = const Value.absent(),
             Value<String> stepImageMap = const Value.absent(),
             Value<String?> imageUrl = const Value.absent(),
-            Value<bool> isFavorite = const Value.absent(),
+            Value<bool> isFavourite = const Value.absent(),
             Value<int> cookCount = const Value.absent(),
             Value<String> source = const Value.absent(),
             Value<String> pairedRecipeIds = const Value.absent(),
@@ -15442,7 +15500,7 @@ class $$SmokingRecipesTableTableManager extends RootTableManager<
             stepImages: stepImages,
             stepImageMap: stepImageMap,
             imageUrl: imageUrl,
-            isFavorite: isFavorite,
+            isFavourite: isFavourite,
             cookCount: cookCount,
             source: source,
             pairedRecipeIds: pairedRecipeIds,
@@ -15469,7 +15527,7 @@ class $$SmokingRecipesTableTableManager extends RootTableManager<
             Value<String> stepImages = const Value.absent(),
             Value<String> stepImageMap = const Value.absent(),
             Value<String?> imageUrl = const Value.absent(),
-            Value<bool> isFavorite = const Value.absent(),
+            Value<bool> isFavourite = const Value.absent(),
             Value<int> cookCount = const Value.absent(),
             Value<String> source = const Value.absent(),
             Value<String> pairedRecipeIds = const Value.absent(),
@@ -15496,7 +15554,7 @@ class $$SmokingRecipesTableTableManager extends RootTableManager<
             stepImages: stepImages,
             stepImageMap: stepImageMap,
             imageUrl: imageUrl,
-            isFavorite: isFavorite,
+            isFavourite: isFavourite,
             cookCount: cookCount,
             source: source,
             pairedRecipeIds: pairedRecipeIds,
