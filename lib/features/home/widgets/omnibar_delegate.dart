@@ -259,31 +259,25 @@ bool _isModernistEligible(_MealContext context, {required bool isTechnique}) {
 // ─────────────────────────────────────────────────────────────────────────────
 
 int _scoreCandidate(_OmniCandidate c) {
-  final int daysSinceCooked = c.lastCookedAt != null 
-      ? DateTime.now().difference(c.lastCookedAt!).inDays 
-      : 90;
+  if (c.isMemoix) return 1;
 
-  final bool lowRecency = daysSinceCooked >= 14;
-  final bool isHighlyRecent = daysSinceCooked <= 4; // Cooked in the last 4 days
+  final double decayedCooks = c.lastCookedAt != null
+      ? c.cookCount * exp(-DateTime.now().difference(c.lastCookedAt!).inDays / 60.0)
+      : c.cookCount * 0.5;
 
   int score;
-  
-  // Circuit Breaker: If we just ate this, tank the score so it only 
-  // surfaces if the pool is incredibly small.
-  if (isHighlyRecent) {
-    score = 1; 
-  } else if (c.isMemoix) {
-    score = (c.isFavourite || c.cookCount > 0) ? 2 : 1;
-  } else if (c.cookCount >= 3 && lowRecency) {
+  if (decayedCooks >= 5.0) {
     score = 7;
-  } else if (c.isFavourite && lowRecency) {
+  } else if (decayedCooks >= 3.0) {
     score = 6;
-  } else if (c.isFavourite) {
+  } else if (decayedCooks >= 1.0) {
     score = 5;
-  } else if (c.cookCount > 0) {
+  } else if (decayedCooks > 0) {
     score = 4;
-  } else {
+  } else if (c.isFavourite) {
     score = 3;
+  } else {
+    score = 2;
   }
 
   if (c.isPitNote) score -= 1;
@@ -337,9 +331,26 @@ String _reasonLine(_OmniCandidate c) {
 // ─────────────────────────────────────────────────────────────────────────────
 
 List<_OmniCandidate> _rankAndTake(List<_OmniCandidate> pool, Random rng) {
+  // 0. Pre-sampling pass: cap large pools to 3 candidates per course so the
+  //    top score tiers contain variety rather than being dominated by the
+  //    most-populated courses.
+  List<_OmniCandidate> workingPool = pool;
+  if (pool.length > 20) {
+    final byCourse = <String, List<_OmniCandidate>>{};
+    for (final c in pool) {
+      (byCourse[c.courseLabel] ??= []).add(c);
+    }
+    final presampleRng = Random();
+    workingPool = [];
+    for (final group in byCourse.values) {
+      final shuffled = [...group]..shuffle(presampleRng);
+      workingPool.addAll(shuffled.take(3));
+    }
+  }
+
   // 1. Bucket and shuffle within tiers
   final Map<int, List<_OmniCandidate>> byScore = {};
-  for (final c in pool) {
+  for (final c in workingPool) {
     (byScore[_scoreCandidate(c)] ??= []).add(c);
   }
   for (final group in byScore.values) {
@@ -766,7 +777,7 @@ class _OmniResultsView extends ConsumerWidget {
     _addCheese();
     _addCellar();
 
-    final rng = Random(DateTime.now().millisecondsSinceEpoch);
+    final rng = Random();
     final selected = _selectSuggestions(eligible, memoixEligible, rng, omniQuery);
 
     if (selected.isEmpty) {
