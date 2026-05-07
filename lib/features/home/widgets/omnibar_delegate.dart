@@ -94,6 +94,8 @@ _MealContext _parseIntent(String query) {
   if (has('cheese|charcuterie|board')) return _MealContext.cheese;
   if (has('cellar')) return _MealContext.cellar;
   if (has('bread|sourdough|baking|bake|loaf')) return _MealContext.bread;
+  
+  // 1b. Need to update pickles once done
 
   // 2. In-between / Occasion Meals (If you add these to your _MealContext enum)
   // if (has('snack|snacks|nibble|munchies')) return _MealContext.snack;
