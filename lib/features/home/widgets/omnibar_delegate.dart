@@ -259,11 +259,20 @@ bool _isModernistEligible(_MealContext context, {required bool isTechnique}) {
 // ─────────────────────────────────────────────────────────────────────────────
 
 int _scoreCandidate(_OmniCandidate c) {
-  final bool lowRecency = c.lastCookedAt != null &&
-      DateTime.now().difference(c.lastCookedAt!).inDays >= 14;
+  final int daysSinceCooked = c.lastCookedAt != null 
+      ? DateTime.now().difference(c.lastCookedAt!).inDays 
+      : 90;
+
+  final bool lowRecency = daysSinceCooked >= 14;
+  final bool isHighlyRecent = daysSinceCooked <= 4; // Cooked in the last 4 days
 
   int score;
-  if (c.isMemoix) {
+  
+  // Circuit Breaker: If we just ate this, tank the score so it only 
+  // surfaces if the pool is incredibly small.
+  if (isHighlyRecent) {
+    score = 1; 
+  } else if (c.isMemoix) {
     score = (c.isFavourite || c.cookCount > 0) ? 2 : 1;
   } else if (c.cookCount >= 3 && lowRecency) {
     score = 7;
@@ -328,6 +337,7 @@ String _reasonLine(_OmniCandidate c) {
 // ─────────────────────────────────────────────────────────────────────────────
 
 List<_OmniCandidate> _rankAndTake(List<_OmniCandidate> pool, Random rng) {
+  // 1. Bucket and shuffle within tiers
   final Map<int, List<_OmniCandidate>> byScore = {};
   for (final c in pool) {
     (byScore[_scoreCandidate(c)] ??= []).add(c);
@@ -335,12 +345,41 @@ List<_OmniCandidate> _rankAndTake(List<_OmniCandidate> pool, Random rng) {
   for (final group in byScore.values) {
     group.shuffle(rng);
   }
+
+  // 2. Flatten into a prioritized list
   final sortedScores = byScore.keys.toList()..sort((a, b) => b.compareTo(a));
-  final result = <_OmniCandidate>[];
+  final sortedCandidates = <_OmniCandidate>[];
   for (final score in sortedScores) {
-    result.addAll(byScore[score]!);
+    sortedCandidates.addAll(byScore[score]!);
   }
-  return result.take(4).toList();
+
+  // 3. Diversity pass
+  final result = <_OmniCandidate>[];
+  final seenCourses = <String>{};
+  final leftovers = <_OmniCandidate>[];
+
+  for (final c in sortedCandidates) {
+    final course = c.courseLabel;
+    
+    if (!seenCourses.contains(course)) {
+      result.add(c);
+      seenCourses.add(course);
+      if (result.length == 4) break;
+    } else {
+      leftovers.add(c); // Save it in case we need fillers later
+    }
+  }
+
+  // 4. The Fallback Pass
+  // If we don't have enough diverse courses to hit 4, backfill from the leftovers.
+  if (result.length < 4) {
+    for (final c in leftovers) {
+      result.add(c);
+      if (result.length == 4) break;
+    }
+  }
+
+  return result;
 }
 
 List<_OmniCandidate> _selectSuggestions(
