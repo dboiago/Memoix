@@ -51,7 +51,10 @@ class OmnibarReasonLines {
 // Internal types
 // ─────────────────────────────────────────────────────────────────────────────
 
-enum _MealContext { general, breakfast, lunch, dinner, dessert, drink, bread, cheese, cellar }
+enum _MealContext { 
+  general, breakfast, lunch, dinner, dessert, 
+  drink, bread, cheese, cellar, snack, charcuterie 
+}
 
 class _OmniCandidate {
   final String name;
@@ -86,20 +89,19 @@ _MealContext _parseIntent(String query) {
   final q = query.replaceAll(RegExp(r'[^\w\s]'), '');
   
   // Helper function to check for whole words, case-insensitive
-  bool has(String pattern) => RegExp(r'(?i)\b(' + pattern + r')\b').hasMatch(q);
+  bool has(String pattern) => RegExp(r'\b(' + pattern + r')\b', caseSensitive: false).hasMatch(q);
 
   // 1. Highly specific intents (checked first)
-  if (has('dessert|sweet|sweets|cake|cookies|pastry')) return _MealContext.dessert;
-  if (has('drink|drinks|wine|beer|cocktail|beverages?|thirsty')) return _MealContext.drink;
-  if (has('cheese|charcuterie|board')) return _MealContext.cheese;
+  if (has('dessert|sweets?|cake|cookies|pastry')) return _MealContext.dessert;
+  if (has('drinks?|wine|beer|cocktail|beverages?|thirsty')) return _MealContext.drink;
+  if (has('charcuterie|board')) return _MealContext.charcuterie;
+  if (has('cheese')) return _MealContext.cheese;
   if (has('cellar')) return _MealContext.cellar;
-  if (has('bread|sourdough|baking|bake|loaf')) return _MealContext.bread;
+  if (has('bread|sourdough|bak(e|ing)|loaf')) return _MealContext.bread;
   
-  // 1b. Need to update pickles once done
 
-  // 2. In-between / Occasion Meals (If you add these to your _MealContext enum)
-  // if (has('snack|snacks|nibble|munchies')) return _MealContext.snack;
-  // if (has('appetizer|starter|tapas|apps|appy')) return _MealContext.appetizer;
+  // 2. In-between / Occasion Meals
+  if (has('snacks?|nibble|munchies|munch')) return _MealContext.snack;
 
   // 3. Core Meals (Checked last as fallbacks)
   if (has('breakfast|morning|brunch')) return _MealContext.breakfast;
@@ -108,6 +110,7 @@ _MealContext _parseIntent(String query) {
 
   return _MealContext.general;
 }
+
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Course eligibility
@@ -132,6 +135,8 @@ const Map<_MealContext, Set<String>> _mealContextCourses = {
   _MealContext.drink: {'drinks'},
   _MealContext.cheese: {'cheese'},
   _MealContext.cellar: {'cellar'},
+  _MealContext.snack: {'apps', 'sides', 'salads', 'pickles', 'sandwiches'},
+  _MealContext.charcuterie: {'cheese', 'pickles'},
 };
 
 bool _isCourseEligible(String course, _MealContext context) {
