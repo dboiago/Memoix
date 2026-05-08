@@ -17,6 +17,7 @@ import '../../ai/services/ai_key_storage.dart';
 import '../../import/ai/ai_provider.dart';
 import '../../import/ai/claude_client.dart';
 import '../../import/ai/gemini_client.dart';
+import '../../import/ai/memoix_client.dart';
 import '../../import/ai/openai_client.dart';
 import '../models/ingredient_reference.dart';
 
@@ -137,6 +138,15 @@ class IngredientReferenceService {
       final Map<String, dynamic> json;
 
       switch (provider) {
+        case AiProvider.memoix:
+          json = await MemoixClient(apiKey, model: model)
+              .analyzeRecipe(
+                systemPrompt: _systemPrompt,
+                text: userMessage,
+                temperature: 0.2,
+              )
+              .timeout(_requestTimeout);
+          break;
         case AiProvider.openai:
           json = await OpenAiClient(apiKey, model: model)
               .analyzeRecipe(
@@ -248,6 +258,8 @@ class IngredientReferenceService {
 
   static String _providerLabel(AiProvider p) {
     switch (p) {
+      case AiProvider.memoix:
+        return 'Memoix';
       case AiProvider.openai:
         return 'OpenAI';
       case AiProvider.claude:
