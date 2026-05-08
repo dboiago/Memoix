@@ -166,6 +166,18 @@ _MealContext _extractMeal(String q) {
 _OmniQuery _parseIntent(String query) {
   final q = query.replaceAll(RegExp(r'[^\w\s]'), '');
   final cuisineNames = Cuisine.all.map((c) => c.name).toList();
+
+  final mealContext = _extractMeal(q);
+  final explicitTime = _extractTime(q);
+
+  // Inject defaults to prevent "meatloaf for lunch"
+  int? resolvedTime = explicitTime;
+  if (resolvedTime == null) {
+    if (mealContext == _MealContext.lunch) resolvedTime = 60;
+    if (mealContext == _MealContext.breakfast) resolvedTime = 45;
+    if (mealContext == _MealContext.snack) resolvedTime = 30;
+  }
+  
   return _OmniQuery(
     meal: _extractMeal(q),
     cuisine: _extractCuisine(q, cuisineNames),
