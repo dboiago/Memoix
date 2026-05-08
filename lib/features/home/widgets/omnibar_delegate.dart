@@ -1172,6 +1172,7 @@ class _RagResultsShell extends ConsumerWidget {
                     )
                   : _SuggestionWithWalkin(
                       query: query,
+                      classification: classification,
                       memoixAvailable: memoixAvailable,
                       onClose: onClose,
                     ),
@@ -1189,11 +1190,13 @@ class _RagResultsShell extends ConsumerWidget {
 
 class _SuggestionWithWalkin extends StatelessWidget {
   final String query;
+  final OmniQueryClassification classification;
   final bool memoixAvailable;
   final VoidCallback onClose;
 
   const _SuggestionWithWalkin({
     required this.query,
+    required this.classification,
     required this.memoixAvailable,
     required this.onClose,
   });
@@ -1208,7 +1211,7 @@ class _SuggestionWithWalkin extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         Expanded(child: _OmniResultsView(query: query, onClose: onClose)),
-        _WalkinSection(query: query, onClose: onClose),
+        _WalkinSection(query: query, classification: classification, onClose: onClose),
       ],
     );
   }
@@ -1218,9 +1221,10 @@ class _SuggestionWithWalkin extends StatelessWidget {
 /// the local suggestion results. Collapses to nothing when there are no results.
 class _WalkinSection extends ConsumerStatefulWidget {
   final String query;
+  final OmniQueryClassification classification;
   final VoidCallback onClose;
 
-  const _WalkinSection({required this.query, required this.onClose});
+  const _WalkinSection({required this.query, required this.classification, required this.onClose});
 
   @override
   ConsumerState<_WalkinSection> createState() => _WalkinSectionState();
@@ -1233,7 +1237,11 @@ class _WalkinSectionState extends ConsumerState<_WalkinSection> {
   Future<List<RagQueryResult>> _resolve() {
     if (_future == null || _lastQuery != widget.query) {
       _lastQuery = widget.query;
-      _future = ref.read(ragRetrievalServiceProvider).query(widget.query);
+      _future = ref.read(ragRetrievalServiceProvider).query(
+        widget.query,
+        cuisine: widget.classification.detectedCuisine,
+        course: widget.classification.detectedCourse,
+      );
     }
     return _future!;
   }
@@ -1324,7 +1332,12 @@ class _WalkinCollectionViewState extends ConsumerState<_WalkinCollectionView> {
       _lastQuery = widget.query;
       _future = ref
           .read(ragRetrievalServiceProvider)
-          .query(widget.query, limit: 20);
+          .query(
+            widget.query,
+            limit: 20,
+            cuisine: widget.classification.detectedCuisine,
+            course: widget.classification.detectedCourse,
+          );
     }
     return _future!;
   }

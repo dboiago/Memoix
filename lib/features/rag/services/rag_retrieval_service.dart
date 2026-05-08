@@ -14,8 +14,13 @@ class RagRetrievalService {
 
   /// Returns the [limit] most semantically relevant results for [query],
   /// ranked by similarity score descending.
-  Future<List<RagQueryResult>> query(String query, {int limit = 10}) {
-    return _client.query(query, limit: limit);
+  Future<List<RagQueryResult>> query(
+    String query, {
+    int limit = 10,
+    String? cuisine,
+    String? course,
+  }) {
+    return _client.query(query, limit: limit, cuisine: cuisine, course: course);
   }
 }
 
