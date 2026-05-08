@@ -24,6 +24,7 @@ class SupabaseTransmissionClient implements RagTransmissionClient {
   Future<void> transmit(KnowledgePayload payload) async {
     try {
       await _supabaseClient
+          .schema('memoix')
           .from('rag_telemetry')
           .insert({
             'domain_type': 'recipe',
@@ -46,6 +47,7 @@ class SupabaseTransmissionClient implements RagTransmissionClient {
   Future<void> transmitModernist(ModernistKnowledgePayload payload) async {
     try {
       await _supabaseClient
+          .schema('memoix')
           .from('rag_telemetry')
           .insert({
             'domain_type': 'modernist',
@@ -68,6 +70,7 @@ class SupabaseTransmissionClient implements RagTransmissionClient {
   Future<void> transmitSmoking(SmokingKnowledgePayload payload) async {
     try {
       await _supabaseClient
+          .schema('memoix')
           .from('rag_telemetry')
           .insert({
             'domain_type': 'smoking',
@@ -90,6 +93,7 @@ class SupabaseTransmissionClient implements RagTransmissionClient {
   Future<void> transmitPizza(PizzaKnowledgePayload payload) async {
     try {
       await _supabaseClient
+          .schema('memoix')
           .from('rag_telemetry')
           .insert({
             'domain_type': 'pizza',
@@ -112,6 +116,7 @@ class SupabaseTransmissionClient implements RagTransmissionClient {
   Future<void> transmitSandwich(SandwichKnowledgePayload payload) async {
     try {
       await _supabaseClient
+          .schema('memoix')
           .from('rag_telemetry')
           .insert({
             'domain_type': 'sandwich',
@@ -134,6 +139,7 @@ class SupabaseTransmissionClient implements RagTransmissionClient {
   Future<void> transmitCellar(CellarKnowledgePayload payload) async {
     try {
       await _supabaseClient
+          .schema('memoix')
           .from('rag_telemetry')
           .insert({
             'domain_type': 'cellar',
@@ -156,6 +162,7 @@ class SupabaseTransmissionClient implements RagTransmissionClient {
   Future<void> transmitCheese(CheeseKnowledgePayload payload) async {
     try {
       await _supabaseClient
+          .schema('memoix')
           .from('rag_telemetry')
           .insert({
             'domain_type': 'cheese',
