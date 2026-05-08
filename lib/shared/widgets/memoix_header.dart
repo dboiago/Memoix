@@ -28,6 +28,7 @@ class MemoixHeader extends StatelessWidget {
     this.onSharePressed,
     this.onComparePressed,
     this.onEditPressed,
+    this.onSaveWalkinPressed,
     this.onDuplicatePressed,
     this.onDeletePressed,
     this.isShared,
@@ -57,6 +58,11 @@ class MemoixHeader extends StatelessWidget {
 
   /// Callback when edit is selected from menu.
   final VoidCallback? onEditPressed;
+
+  /// Callback to save an unsaved walkin recipe to the database.
+  /// When non-null, a save icon button is shown in the action row and the
+  /// Edit menu item is omitted (controlled by the caller passing onEditPressed: null).
+  final VoidCallback? onSaveWalkinPressed;
 
   /// Callback when duplicate is selected from menu.
   final VoidCallback? onDuplicatePressed;
@@ -259,6 +265,15 @@ class MemoixHeader extends StatelessWidget {
               IconButton(
                 icon: Icon(Icons.share, color: iconColor, shadows: iconShadows),
                 onPressed: onSharePressed,
+                visualDensity: VisualDensity.compact,
+                padding: const EdgeInsets.all(8),
+                constraints: const BoxConstraints(minWidth: 36, minHeight: 36),
+              ),
+            if (onSaveWalkinPressed != null)
+              IconButton(
+                icon: Icon(Icons.save_alt, color: iconColor, shadows: iconShadows),
+                tooltip: 'Save recipe',
+                onPressed: onSaveWalkinPressed,
                 visualDensity: VisualDensity.compact,
                 padding: const EdgeInsets.all(8),
                 constraints: const BoxConstraints(minWidth: 36, minHeight: 36),

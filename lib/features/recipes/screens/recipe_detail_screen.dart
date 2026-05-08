@@ -238,7 +238,12 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
             onComparePressed: shouldShowCompareButton(recipe)
               ? () => AppRoutes.toRecipeComparison(context, prefilledRecipe: recipe, resetState: true)
               : null,
-            onEditPressed: () => AppRoutes.toRecipeEdit(context, recipeId: recipe.uuid),
+            onEditPressed: recipe.source == RecipeSource.walkin
+              ? null
+              : () => AppRoutes.toRecipeEdit(context, recipeId: recipe.uuid),
+            onSaveWalkinPressed: recipe.source == RecipeSource.walkin
+              ? () => _saveWalkinRecipe(context, ref, recipe)
+              : null,
             onDuplicatePressed: () => _duplicateRecipe(context, ref),
             onDeletePressed: () => _confirmDelete(context, ref),
             isShared: recipe.isShared,
@@ -655,7 +660,12 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
             onComparePressed: recipe.course.toLowerCase() != 'drinks' 
                 ? () => AppRoutes.toRecipeComparison(context, prefilledRecipe: recipe) 
                 : null,
-            onEditPressed: () => AppRoutes.toRecipeEdit(context, recipeId: recipe.uuid),
+            onEditPressed: recipe.source == RecipeSource.walkin
+                ? null
+                : () => AppRoutes.toRecipeEdit(context, recipeId: recipe.uuid),
+            onSaveWalkinPressed: recipe.source == RecipeSource.walkin
+                ? () => _saveWalkinRecipe(context, ref, recipe)
+                : null,
             onDuplicatePressed: () => _duplicateRecipe(context, ref),
             onDeletePressed: () => _confirmDelete(context, ref),
             isShared: recipe.isShared,
@@ -1335,6 +1345,15 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
     }
   }
 
+  Future<void> _saveWalkinRecipe(BuildContext context, WidgetRef ref, Recipe recipe) async {
+    final repo = ref.read(recipeRepositoryProvider);
+    await repo.saveRecipe(recipe);
+    ref.invalidate(allRecipesProvider);
+    if (!context.mounted) return;
+    Navigator.of(context).pop();
+    AppRoutes.toRecipeDetail(context, recipe.uuid);
+  }
+
   void _duplicateRecipe(BuildContext context, WidgetRef ref) async {
     final recipe = widget.recipe;
     final repo = ref.read(recipeRepositoryProvider);
@@ -1380,7 +1399,9 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
           TextButton(
             onPressed: () async {
               await ref.read(recipeRepositoryProvider).deleteRecipe(recipe.id);
-              unawaited(SupabaseSyncService.notifyDeleted('recipes', recipe.uuid));
+              if (recipe.id > 0) {
+                unawaited(SupabaseSyncService.notifyDeleted('recipes', recipe.uuid));
+              }
               if (context.mounted) {
                 Navigator.pop(ctx);
                 Navigator.pop(context);

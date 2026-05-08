@@ -802,6 +802,11 @@ class RecipeRepository {
     // intact so pairings and meal-plan references continue to resolve.
     // The seed layer will not re-insert this UUID on the next startup because
     // the row already exists (with source = 'personal').
+    //
+    // RecipeSource.walkin is intentionally NOT promoted here. Walkin recipes
+    // sourced from the RAG corpus are persisted with their original source
+    // intact so provenance is preserved after the user saves them via the
+    // Save button on the detail screen.
     if (recipe.source == RecipeSource.memoix) {
       recipe.source = RecipeSource.personal;
     }
