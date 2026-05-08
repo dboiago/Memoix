@@ -13,7 +13,7 @@ import '../../rag/services/omni_query_classifier.dart';
 import '../../rag/services/rag_retrieval_service.dart';
 import '../../recipes/models/course.dart';
 import '../../recipes/screens/recipe_detail_screen.dart';
-import '../../../core/database/app_database.dart';
+import '../../../core/database/app_database.dart' hide Recipe, Course;
 import '../../cellar/models/cellar_entry.dart';
 import '../../cellar/repository/cellar_repository.dart';
 import '../../cheese/models/cheese_entry.dart';
@@ -511,7 +511,7 @@ class OmnibarDelegate extends SearchDelegate<void> {
 
   OmniQueryClassification _classification =
       const OmniQueryClassification(type: OmniQueryType.suggestion);
-  bool _isCollectionMode = false;
+  final ValueNotifier<bool> _collectionModeNotifier = ValueNotifier(false);
   String _lastClassifiedQuery = '';
 
   OmnibarDelegate(this.ref);
@@ -523,17 +523,17 @@ class OmnibarDelegate extends SearchDelegate<void> {
     if (q.trim().isEmpty) {
       _classification =
           const OmniQueryClassification(type: OmniQueryType.suggestion);
-      _isCollectionMode = false;
+      _collectionModeNotifier.value = false;
       return;
     }
     _classification = _classifier.classify(q);
-    _isCollectionMode = _classification.type == OmniQueryType.collection;
+    _collectionModeNotifier.value =
+        _classification.type == OmniQueryType.collection;
   }
 
-  /// Flips the collection/suggestion mode and triggers a rebuild.
+  /// Flips the collection/suggestion mode via [ValueNotifier].
   void _toggleMode() {
-    _isCollectionMode = !_isCollectionMode;
-    notifyListeners();
+    _collectionModeNotifier.value = !_collectionModeNotifier.value;
   }
 
   @override
@@ -571,7 +571,7 @@ class OmnibarDelegate extends SearchDelegate<void> {
     return _RagResultsShell(
       query: query,
       classification: _classification,
-      isCollectionMode: _isCollectionMode,
+      collectionModeNotifier: _collectionModeNotifier,
       onToggleMode: _toggleMode,
       onClose: () => close(context, null),
     );
@@ -1120,14 +1120,14 @@ void _navigateToWalkin(RagQueryResult result, VoidCallback onClose) {
 class _RagResultsShell extends ConsumerWidget {
   final String query;
   final OmniQueryClassification classification;
-  final bool isCollectionMode;
+  final ValueNotifier<bool> collectionModeNotifier;
   final VoidCallback onToggleMode;
   final VoidCallback onClose;
 
   const _RagResultsShell({
     required this.query,
     required this.classification,
-    required this.isCollectionMode,
+    required this.collectionModeNotifier,
     required this.onToggleMode,
     required this.onClose,
   });
@@ -1138,42 +1138,47 @@ class _RagResultsShell extends ConsumerWidget {
     final theme = Theme.of(context);
     final showChip = memoixAvailable && query.trim().isNotEmpty;
 
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
-        if (showChip)
-          Padding(
-            padding: const EdgeInsets.fromLTRB(16, 12, 16, 0),
-            child: Align(
-              alignment: Alignment.centerLeft,
-              child: FilterChip(
-                label: Text(isCollectionMode ? 'Browse' : 'Suggest'),
-                selected: isCollectionMode,
-                onSelected: (_) => onToggleMode(),
-                selectedColor: theme.colorScheme.secondaryContainer,
-                showCheckmark: false,
-                labelStyle: theme.textTheme.labelSmall?.copyWith(
-                  color: isCollectionMode
-                      ? theme.colorScheme.onSecondaryContainer
-                      : theme.colorScheme.onSurfaceVariant,
+    return ValueListenableBuilder<bool>(
+      valueListenable: collectionModeNotifier,
+      builder: (context, isCollectionMode, _) {
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            if (showChip)
+              Padding(
+                padding: const EdgeInsets.fromLTRB(16, 12, 16, 0),
+                child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: FilterChip(
+                    label: Text(isCollectionMode ? 'Browse' : 'Suggest'),
+                    selected: isCollectionMode,
+                    onSelected: (_) => onToggleMode(),
+                    selectedColor: theme.colorScheme.secondaryContainer,
+                    showCheckmark: false,
+                    labelStyle: theme.textTheme.labelSmall?.copyWith(
+                      color: isCollectionMode
+                          ? theme.colorScheme.onSecondaryContainer
+                          : theme.colorScheme.onSurfaceVariant,
+                    ),
+                  ),
                 ),
               ),
+            Expanded(
+              child: (memoixAvailable && isCollectionMode)
+                  ? _WalkinCollectionView(
+                      query: query,
+                      classification: classification,
+                      onClose: onClose,
+                    )
+                  : _SuggestionWithWalkin(
+                      query: query,
+                      memoixAvailable: memoixAvailable,
+                      onClose: onClose,
+                    ),
             ),
-          ),
-        Expanded(
-          child: (memoixAvailable && isCollectionMode)
-              ? _WalkinCollectionView(
-                  query: query,
-                  classification: classification,
-                  onClose: onClose,
-                )
-              : _SuggestionWithWalkin(
-                  query: query,
-                  memoixAvailable: memoixAvailable,
-                  onClose: onClose,
-                ),
-        ),
-      ],
+          ],
+        );
+      },
     );
   }
 }
