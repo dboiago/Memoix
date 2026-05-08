@@ -10,7 +10,7 @@ abstract class RagRetrievalClient {
 
   /// Queries the vector store and returns the [limit] most semantically
   /// relevant results for [query].
-  Future<List<RagQueryResult>> query(String query, {int limit = 10});
+  Future<List<RagQueryResult>> query(String query, {int limit = 10, String? cuisine, String? course});
 }
 
 /// Inert implementation used until a live retrieval backend is wired up.
@@ -20,7 +20,7 @@ class StubRetrievalClient implements RagRetrievalClient {
   const StubRetrievalClient();
 
   @override
-  Future<List<RagQueryResult>> query(String query, {int limit = 10}) async {
+  Future<List<RagQueryResult>> query(String query, {int limit = 10, String? cuisine, String? course}) async {
     return const [];
   }
 }
