@@ -5,6 +5,7 @@ import 'package:drift/drift.dart' show Value;
 import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:package_info_plus/package_info_plus.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
 
 import '../database/app_database.dart' hide Recipe;
 import '../models/cellar_knowledge_payload.dart';
@@ -16,6 +17,7 @@ import '../models/sandwich_knowledge_payload.dart';
 import '../models/smoking_knowledge_payload.dart';
 import '../utils/payload_hasher.dart';
 import 'rag_transmission_client.dart';
+import 'supabase_transmission_client.dart';
 import '../../features/cellar/models/cellar_entry.dart';
 import '../../features/cheese/models/cheese_entry.dart';
 import '../../features/modernist/models/modernist_recipe.dart';
@@ -471,6 +473,7 @@ class RagTelemetryService {
 final ragTelemetryServiceProvider = Provider<RagTelemetryService>((ref) {
   return RagTelemetryService(
     ref,
+    client: SupabaseTransmissionClient(Supabase.instance.client),
     pairedRecipeResolver: (uuids) async {
       final db = AppDatabase.instance;
       final results = <({String name, String course})>[];

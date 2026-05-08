@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 import '../models/cellar_knowledge_payload.dart';
@@ -21,93 +22,156 @@ class SupabaseTransmissionClient implements RagTransmissionClient {
 
   @override
   Future<void> transmit(KnowledgePayload payload) async {
-    await _supabaseClient
-        .from('rag_telemetry')
-        .insert({
-          'domain_type': 'recipe',
-          'schema_version': 2,
-          'lineage_hash': payload.lineageHash,
-          'content_hash': payload.contentHash,
-          'payload': payload.toJson(),
-        });
+    try {
+      await _supabaseClient
+          .from('rag_telemetry')
+          .insert({
+            'domain_type': 'recipe',
+            'schema_version': 2,
+            'lineage_hash': payload.lineageHash,
+            'content_hash': payload.contentHash,
+            'payload': payload.toJson(),
+          });
+    } on PostgrestException catch (e) {
+      debugPrint(
+        '[SupabaseTransmissionClient] transmit PostgrestException — '
+        'message: ${e.message}, code: ${e.code}, details: ${e.details}',
+      );
+    } catch (e) {
+      debugPrint('[SupabaseTransmissionClient] transmit error — $e');
+    }
   }
 
   @override
   Future<void> transmitModernist(ModernistKnowledgePayload payload) async {
-    await _supabaseClient
-        .from('rag_telemetry')
-        .insert({
-          'domain_type': 'modernist',
-          'schema_version': 2,
-          'lineage_hash': payload.lineageHash,
-          'content_hash': payload.contentHash,
-          'payload': payload.toJson(),
-        });
+    try {
+      await _supabaseClient
+          .from('rag_telemetry')
+          .insert({
+            'domain_type': 'modernist',
+            'schema_version': 2,
+            'lineage_hash': payload.lineageHash,
+            'content_hash': payload.contentHash,
+            'payload': payload.toJson(),
+          });
+    } on PostgrestException catch (e) {
+      debugPrint(
+        '[SupabaseTransmissionClient] transmitModernist PostgrestException — '
+        'message: ${e.message}, code: ${e.code}, details: ${e.details}',
+      );
+    } catch (e) {
+      debugPrint('[SupabaseTransmissionClient] transmitModernist error — $e');
+    }
   }
 
   @override
   Future<void> transmitSmoking(SmokingKnowledgePayload payload) async {
-    await _supabaseClient
-        .from('rag_telemetry')
-        .insert({
-          'domain_type': 'smoking',
-          'schema_version': 2,
-          'lineage_hash': payload.lineageHash,
-          'content_hash': payload.contentHash,
-          'payload': payload.toJson(),
-        });
+    try {
+      await _supabaseClient
+          .from('rag_telemetry')
+          .insert({
+            'domain_type': 'smoking',
+            'schema_version': 2,
+            'lineage_hash': payload.lineageHash,
+            'content_hash': payload.contentHash,
+            'payload': payload.toJson(),
+          });
+    } on PostgrestException catch (e) {
+      debugPrint(
+        '[SupabaseTransmissionClient] transmitSmoking PostgrestException — '
+        'message: ${e.message}, code: ${e.code}, details: ${e.details}',
+      );
+    } catch (e) {
+      debugPrint('[SupabaseTransmissionClient] transmitSmoking error — $e');
+    }
   }
 
   @override
   Future<void> transmitPizza(PizzaKnowledgePayload payload) async {
-    await _supabaseClient
-        .from('rag_telemetry')
-        .insert({
-          'domain_type': 'pizza',
-          'schema_version': 2,
-          'lineage_hash': payload.lineageHash,
-          'content_hash': payload.contentHash,
-          'payload': payload.toJson(),
-        });
+    try {
+      await _supabaseClient
+          .from('rag_telemetry')
+          .insert({
+            'domain_type': 'pizza',
+            'schema_version': 2,
+            'lineage_hash': payload.lineageHash,
+            'content_hash': payload.contentHash,
+            'payload': payload.toJson(),
+          });
+    } on PostgrestException catch (e) {
+      debugPrint(
+        '[SupabaseTransmissionClient] transmitPizza PostgrestException — '
+        'message: ${e.message}, code: ${e.code}, details: ${e.details}',
+      );
+    } catch (e) {
+      debugPrint('[SupabaseTransmissionClient] transmitPizza error — $e');
+    }
   }
 
   @override
   Future<void> transmitSandwich(SandwichKnowledgePayload payload) async {
-    await _supabaseClient
-        .from('rag_telemetry')
-        .insert({
-          'domain_type': 'sandwich',
-          'schema_version': 2,
-          'lineage_hash': payload.lineageHash,
-          'content_hash': payload.contentHash,
-          'payload': payload.toJson(),
-        });
+    try {
+      await _supabaseClient
+          .from('rag_telemetry')
+          .insert({
+            'domain_type': 'sandwich',
+            'schema_version': 2,
+            'lineage_hash': payload.lineageHash,
+            'content_hash': payload.contentHash,
+            'payload': payload.toJson(),
+          });
+    } on PostgrestException catch (e) {
+      debugPrint(
+        '[SupabaseTransmissionClient] transmitSandwich PostgrestException — '
+        'message: ${e.message}, code: ${e.code}, details: ${e.details}',
+      );
+    } catch (e) {
+      debugPrint('[SupabaseTransmissionClient] transmitSandwich error — $e');
+    }
   }
 
   @override
   Future<void> transmitCellar(CellarKnowledgePayload payload) async {
-    await _supabaseClient
-        .from('rag_telemetry')
-        .insert({
-          'domain_type': 'cellar',
-          'schema_version': 2,
-          'lineage_hash': payload.lineageHash,
-          'content_hash': payload.contentHash,
-          'payload': payload.toJson(),
-        });
+    try {
+      await _supabaseClient
+          .from('rag_telemetry')
+          .insert({
+            'domain_type': 'cellar',
+            'schema_version': 2,
+            'lineage_hash': payload.lineageHash,
+            'content_hash': payload.contentHash,
+            'payload': payload.toJson(),
+          });
+    } on PostgrestException catch (e) {
+      debugPrint(
+        '[SupabaseTransmissionClient] transmitCellar PostgrestException — '
+        'message: ${e.message}, code: ${e.code}, details: ${e.details}',
+      );
+    } catch (e) {
+      debugPrint('[SupabaseTransmissionClient] transmitCellar error — $e');
+    }
   }
 
   @override
   Future<void> transmitCheese(CheeseKnowledgePayload payload) async {
-    await _supabaseClient
-        .from('rag_telemetry')
-        .insert({
-          'domain_type': 'cheese',
-          'schema_version': 2,
-          'lineage_hash': payload.lineageHash,
-          'content_hash': payload.contentHash,
-          'payload': payload.toJson(),
-        });
+    try {
+      await _supabaseClient
+          .from('rag_telemetry')
+          .insert({
+            'domain_type': 'cheese',
+            'schema_version': 2,
+            'lineage_hash': payload.lineageHash,
+            'content_hash': payload.contentHash,
+            'payload': payload.toJson(),
+          });
+    } on PostgrestException catch (e) {
+      debugPrint(
+        '[SupabaseTransmissionClient] transmitCheese PostgrestException — '
+        'message: ${e.message}, code: ${e.code}, details: ${e.details}',
+      );
+    } catch (e) {
+      debugPrint('[SupabaseTransmissionClient] transmitCheese error — $e');
+    }
   }
 }
 
