@@ -1,4 +1,5 @@
 enum AiProvider {
+  memoix,
   openai,
   claude,
   gemini,
@@ -9,6 +10,7 @@ enum AiProvider {
 /// Models are ordered from most capable / recommended to least.
 /// The first entry in each list is the default.
 const Map<AiProvider, List<String>> aiProviderModels = {
+  AiProvider.memoix: [],
   AiProvider.openai: [
     'gpt-4.1',
     'gpt-4.1-mini',
@@ -34,5 +36,9 @@ const Map<AiProvider, List<String>> aiProviderModels = {
 };
 
 /// Returns the default model for the given provider.
-String defaultModelFor(AiProvider provider) =>
-    aiProviderModels[provider]!.first;
+/// Returns an empty string for providers with no available models.
+String defaultModelFor(AiProvider provider) {
+  final models = aiProviderModels[provider];
+  if (models == null || models.isEmpty) return '';
+  return models.first;
+}

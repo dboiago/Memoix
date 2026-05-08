@@ -10,6 +10,7 @@ import '../ai_settings_provider.dart';
 import '../models/ai_response.dart';
 import '../../import/ai/ai_provider.dart';
 import '../../import/ai/ai_recipe_importer.dart';
+import '../../import/ai/memoix_client.dart';
 import '../../import/ai/openai_client.dart';
 import '../../import/ai/claude_client.dart';
 import '../../import/ai/gemini_client.dart';
@@ -60,6 +61,15 @@ class MemoixAiService implements AiService {
 
       final Map<String, dynamic> json;
       switch (provider) {
+        case AiProvider.memoix:
+          json = await MemoixClient(apiKey, model: model)
+              .analyzeRecipe(
+                systemPrompt: systemPrompt,
+                text: request.text,
+                imageBytes: request.imageBytes,
+              )
+              .timeout(_requestTimeout);
+          break;
         case AiProvider.openai:
           json = await OpenAiClient(apiKey, model: model)
               .analyzeRecipe(
@@ -262,6 +272,8 @@ class MemoixAiService implements AiService {
 
   static String _providerLabel(AiProvider p) {
     switch (p) {
+      case AiProvider.memoix:
+        return 'Memoix';
       case AiProvider.openai:
         return 'OpenAI';
       case AiProvider.claude:

@@ -57,7 +57,8 @@ class AgentsSettingsScreen extends ConsumerWidget {
           // Providers section
           const _SectionHeader(title: 'Providers'),
 
-          for (final provider in AiProvider.values) ...[
+          // NOTE: AiProvider.memoix hidden until on-device pipeline is ready
+          for (final provider in AiProvider.values.where((p) => p != AiProvider.memoix)) ...[
             _ProviderTile(
               provider: provider,
               config: settings.configFor(provider),
@@ -99,6 +100,8 @@ class AgentsSettingsScreen extends ConsumerWidget {
 
   static String _providerLabel(AiProvider provider) {
     switch (provider) {
+      case AiProvider.memoix:
+        return 'Memoix';
       case AiProvider.openai:
         return 'ChatGPT (OpenAI)';
       case AiProvider.claude:
@@ -122,7 +125,9 @@ class AgentsSettingsScreen extends ConsumerWidget {
             groupValue: settings.preferredProvider,
             onChanged: (v) => Navigator.pop(ctx, v),
             child: Column(
-              children: AiProvider.values.map((p) {
+              children: AiProvider.values
+                  .where((p) => p != AiProvider.memoix)
+                  .map((p) {
                 return RadioListTile<AiProvider>(
                   title: Text(_providerLabel(p)),
                   value: p,
@@ -238,6 +243,8 @@ class _ProviderTile extends StatelessWidget {
 
   static String _label(AiProvider provider) {
     switch (provider) {
+      case AiProvider.memoix:
+        return 'Memoix';
       case AiProvider.openai:
         return 'ChatGPT (OpenAI)';
       case AiProvider.claude:

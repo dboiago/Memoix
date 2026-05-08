@@ -2,6 +2,7 @@ import 'dart:typed_data';
 
 import '../../import/models/recipe_import_result.dart';
 import 'ai_provider.dart';
+import 'memoix_client.dart';
 import 'openai_client.dart';
 import 'claude_client.dart';
 import 'gemini_client.dart';
@@ -31,6 +32,7 @@ class AiImportInput {
 }
 
 class AiRecipeImporter {
+  final MemoixClient memoix;
   final OpenAiClient openAi;
   final ClaudeClient claude;
   final GeminiClient gemini;
@@ -39,6 +41,7 @@ class AiRecipeImporter {
   final bool autoSelect;
 
   AiRecipeImporter({
+    required this.memoix,
     required this.openAi,
     required this.claude,
     required this.gemini,
@@ -53,6 +56,9 @@ class AiRecipeImporter {
     final Map<String, dynamic> responseJson;
 
     switch (provider) {
+      case AiProvider.memoix:
+        responseJson = await _importWithMemoix(systemPrompt, input);
+        break;
       case AiProvider.openai:
         responseJson = await _importWithOpenAi(systemPrompt, input);
         break;
@@ -81,6 +87,17 @@ class AiRecipeImporter {
       case AiImportInputType.rawText:
         return AiProvider.openai;
     }
+  }
+
+  Future<Map<String, dynamic>> _importWithMemoix(
+    String systemPrompt,
+    AiImportInput input,
+  ) async {
+    return memoix.analyzeRecipe(
+      systemPrompt: systemPrompt,
+      text: input.text,
+      imageBytes: input.image,
+    );
   }
 
   Future<Map<String, dynamic>> _importWithOpenAi(
