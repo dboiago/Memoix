@@ -1021,11 +1021,17 @@ class RecipeRepository {
   }
 
   /// Toggles the Culinary Intelligence sharing flag for a recipe.
-  /// This is a lightweight write: no integrity hooks, no sync \u2014 it is strictly local.
+  /// This is a lightweight write: no integrity hooks, no sync — it is strictly local.
+  /// If the new state is shared, queues the recipe for RAG telemetry export
+  /// (fire-and-forget; gates inside [RagTelemetryService] handle the master
+  /// switch and isShared checks).
   Future<void> toggleShared(int id) async {
     final existing = await getRecipeById(id);
     if (existing == null) return;
     await _db.recipeDao.toggleShared(id, existing.isShared);
+    // Reflect the new shared state in-memory then queue for telemetry.
+    existing.isShared = !existing.isShared;
+    unawaited(_ref.read(ragTelemetryServiceProvider).queueForExport(existing));
   }
 
   /// Logs a cook event for [recipe] and fires a fire-and-forget Culinary
