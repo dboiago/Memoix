@@ -1,9 +1,18 @@
 import 'dart:math';
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:uuid/uuid.dart';
 
+import '../../../app/app_shell.dart';
 import '../../../app/routes/router.dart';
+import '../../../shared/widgets/course_card.dart';
+import '../../rag/models/rag_query_result.dart';
+import '../../rag/services/omni_query_classifier.dart';
+import '../../rag/services/rag_retrieval_service.dart';
+import '../../recipes/models/course.dart';
+import '../../recipes/screens/recipe_detail_screen.dart';
 import '../../../core/database/app_database.dart';
 import '../../cellar/models/cellar_entry.dart';
 import '../../cellar/repository/cellar_repository.dart';
@@ -497,7 +506,35 @@ String _courseDisplayName(String slug) {
 class OmnibarDelegate extends SearchDelegate<void> {
   final WidgetRef ref;
 
+  // ── RAG / classification state ──────────────────────────────────────────
+  final _classifier = const HeuristicQueryClassifier();
+
+  OmniQueryClassification _classification =
+      const OmniQueryClassification(type: OmniQueryType.suggestion);
+  bool _isCollectionMode = false;
+  String _lastClassifiedQuery = '';
+
   OmnibarDelegate(this.ref);
+
+  /// Re-runs classification only when the query has changed.
+  void _reclassifyIfNeeded(String q) {
+    if (q == _lastClassifiedQuery) return;
+    _lastClassifiedQuery = q;
+    if (q.trim().isEmpty) {
+      _classification =
+          const OmniQueryClassification(type: OmniQueryType.suggestion);
+      _isCollectionMode = false;
+      return;
+    }
+    _classification = _classifier.classify(q);
+    _isCollectionMode = _classification.type == OmniQueryType.collection;
+  }
+
+  /// Flips the collection/suggestion mode and triggers a rebuild.
+  void _toggleMode() {
+    _isCollectionMode = !_isCollectionMode;
+    notifyListeners();
+  }
 
   @override
   String get searchFieldLabel => 'Ask a question...';
@@ -530,8 +567,12 @@ class OmnibarDelegate extends SearchDelegate<void> {
 
   @override
   Widget buildResults(BuildContext context) {
-    return _OmniResultsView(
+    _reclassifyIfNeeded(query);
+    return _RagResultsShell(
       query: query,
+      classification: _classification,
+      isCollectionMode: _isCollectionMode,
+      onToggleMode: _toggleMode,
       onClose: () => close(context, null),
     );
   }
@@ -1023,6 +1064,505 @@ class _FallbackTile extends StatelessWidget {
             const SizedBox(height: 2),
             Text(
               candidate.name,
+              style: theme.textTheme.bodyLarge?.copyWith(
+                color: theme.colorScheme.onSurface,
+              ),
+            ),
+            Divider(
+              height: 24,
+              color: theme.colorScheme.outlineVariant,
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Walkin navigation helper
+// ─────────────────────────────────────────────────────────────────────────────
+
+/// Constructs a temporary [Recipe] from a [RagQueryResult] and navigates to
+/// [RecipeDetailView] using the same CupertinoPageRoute mechanism as local
+/// results. The recipe is not persisted until the user explicitly saves it.
+void _navigateToWalkin(RagQueryResult result, VoidCallback onClose) {
+  final recipe = Recipe.create(
+    uuid: const Uuid().v4(),
+    name: result.name,
+    course: result.courseLabel,
+    cuisine: result.cuisine,
+    time: result.time,
+    source: RecipeSource.walkin,
+    isFavourite: result.isFavourite,
+    cookCount: result.cookCount,
+    lastCookedAt: result.lastCookedAt,
+  );
+  onClose();
+  Future.microtask(() {
+    AppShellNavigator.navigatorKey.currentState!.push(
+      CupertinoPageRoute<void>(
+        builder: (_) => RecipeDetailView(recipe: recipe),
+      ),
+    );
+  });
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// RAG results shell — toggle chip + content dispatch
+// ─────────────────────────────────────────────────────────────────────────────
+
+/// Wraps the omnibar's result area to add the mode toggle chip and dispatch
+/// between suggestion mode (local results + walkin section) and collection
+/// mode (community corpus browse). All content is gated on
+/// [memoixAvailableProvider]; when false the delegate behaves exactly as
+/// before with no changes to output.
+class _RagResultsShell extends ConsumerWidget {
+  final String query;
+  final OmniQueryClassification classification;
+  final bool isCollectionMode;
+  final VoidCallback onToggleMode;
+  final VoidCallback onClose;
+
+  const _RagResultsShell({
+    required this.query,
+    required this.classification,
+    required this.isCollectionMode,
+    required this.onToggleMode,
+    required this.onClose,
+  });
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final memoixAvailable = ref.watch(memoixAvailableProvider);
+    final theme = Theme.of(context);
+    final showChip = memoixAvailable && query.trim().isNotEmpty;
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        if (showChip)
+          Padding(
+            padding: const EdgeInsets.fromLTRB(16, 12, 16, 0),
+            child: Align(
+              alignment: Alignment.centerLeft,
+              child: FilterChip(
+                label: Text(isCollectionMode ? 'Browse' : 'Suggest'),
+                selected: isCollectionMode,
+                onSelected: (_) => onToggleMode(),
+                selectedColor: theme.colorScheme.secondaryContainer,
+                showCheckmark: false,
+                labelStyle: theme.textTheme.labelSmall?.copyWith(
+                  color: isCollectionMode
+                      ? theme.colorScheme.onSecondaryContainer
+                      : theme.colorScheme.onSurfaceVariant,
+                ),
+              ),
+            ),
+          ),
+        Expanded(
+          child: (memoixAvailable && isCollectionMode)
+              ? _WalkinCollectionView(
+                  query: query,
+                  classification: classification,
+                  onClose: onClose,
+                )
+              : _SuggestionWithWalkin(
+                  query: query,
+                  memoixAvailable: memoixAvailable,
+                  onClose: onClose,
+                ),
+        ),
+      ],
+    );
+  }
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Suggestion mode — local results + optional walkin section below
+// ─────────────────────────────────────────────────────────────────────────────
+
+class _SuggestionWithWalkin extends StatelessWidget {
+  final String query;
+  final bool memoixAvailable;
+  final VoidCallback onClose;
+
+  const _SuggestionWithWalkin({
+    required this.query,
+    required this.memoixAvailable,
+    required this.onClose,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    if (!memoixAvailable) {
+      // Memoix not available — behave exactly as before.
+      return _OmniResultsView(query: query, onClose: onClose);
+    }
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        Expanded(child: _OmniResultsView(query: query, onClose: onClose)),
+        _WalkinSection(query: query, onClose: onClose),
+      ],
+    );
+  }
+}
+
+/// Fetches walkin RAG results and renders them as a capped bottom panel below
+/// the local suggestion results. Collapses to nothing when there are no results.
+class _WalkinSection extends ConsumerStatefulWidget {
+  final String query;
+  final VoidCallback onClose;
+
+  const _WalkinSection({required this.query, required this.onClose});
+
+  @override
+  ConsumerState<_WalkinSection> createState() => _WalkinSectionState();
+}
+
+class _WalkinSectionState extends ConsumerState<_WalkinSection> {
+  Future<List<RagQueryResult>>? _future;
+  String? _lastQuery;
+
+  Future<List<RagQueryResult>> _resolve() {
+    if (_future == null || _lastQuery != widget.query) {
+      _lastQuery = widget.query;
+      _future = ref.read(ragRetrievalServiceProvider).query(widget.query);
+    }
+    return _future!;
+  }
+
+  @override
+  void didUpdateWidget(_WalkinSection oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (widget.query != oldWidget.query) {
+      _future = null;
+      _lastQuery = null;
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    return FutureBuilder<List<RagQueryResult>>(
+      future: _resolve(),
+      builder: (context, snapshot) {
+        if (!snapshot.hasData || snapshot.data!.isEmpty) {
+          return const SizedBox.shrink();
+        }
+        final results = snapshot.data!;
+        return ConstrainedBox(
+          constraints: const BoxConstraints(maxHeight: 220),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Divider(height: 1, color: theme.colorScheme.outlineVariant),
+              Padding(
+                padding: const EdgeInsets.fromLTRB(16, 10, 16, 4),
+                child: Text(
+                  'From the community',
+                  style: theme.textTheme.labelSmall?.copyWith(
+                    color: theme.colorScheme.onSurfaceVariant,
+                    letterSpacing: 0.8,
+                  ),
+                ),
+              ),
+              Expanded(
+                child: ListView.builder(
+                  padding: const EdgeInsets.fromLTRB(16, 0, 16, 12),
+                  itemCount: results.length,
+                  itemBuilder: (_, i) => _WalkinResultTile(
+                    result: results[i],
+                    onClose: widget.onClose,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        );
+      },
+    );
+  }
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Collection mode — broad (grouped by course) or specific (flat list)
+// ─────────────────────────────────────────────────────────────────────────────
+
+class _WalkinCollectionView extends ConsumerStatefulWidget {
+  final String query;
+  final OmniQueryClassification classification;
+  final VoidCallback onClose;
+
+  const _WalkinCollectionView({
+    required this.query,
+    required this.classification,
+    required this.onClose,
+  });
+
+  @override
+  ConsumerState<_WalkinCollectionView> createState() =>
+      _WalkinCollectionViewState();
+}
+
+class _WalkinCollectionViewState extends ConsumerState<_WalkinCollectionView> {
+  Future<List<RagQueryResult>>? _future;
+  String? _lastQuery;
+  bool _showAll = false;
+  String? _selectedCourse;
+
+  static const int _showMoreThreshold = 5;
+
+  Future<List<RagQueryResult>> _resolve() {
+    if (_future == null || _lastQuery != widget.query) {
+      _lastQuery = widget.query;
+      _future = ref
+          .read(ragRetrievalServiceProvider)
+          .query(widget.query, limit: 20);
+    }
+    return _future!;
+  }
+
+  /// True when exactly one of cuisine/course is detected (broad query).
+  bool get _isBroad {
+    final hasCuisine = widget.classification.detectedCuisine != null;
+    final hasCourse = widget.classification.detectedCourse != null;
+    return hasCuisine ^ hasCourse;
+  }
+
+  @override
+  void didUpdateWidget(_WalkinCollectionView oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (widget.query != oldWidget.query) {
+      _future = null;
+      _lastQuery = null;
+      _showAll = false;
+      _selectedCourse = null;
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final hasTaxonomy = widget.classification.detectedCuisine != null ||
+        widget.classification.detectedCourse != null;
+
+    // No taxonomy detected — fall back to local suggestion view.
+    if (!hasTaxonomy) {
+      return _OmniResultsView(query: widget.query, onClose: widget.onClose);
+    }
+
+    return FutureBuilder<List<RagQueryResult>>(
+      future: _resolve(),
+      builder: (context, snapshot) {
+        if (snapshot.connectionState == ConnectionState.waiting) {
+          return const Center(child: CircularProgressIndicator());
+        }
+        if (!snapshot.hasData || snapshot.data!.isEmpty) {
+          final theme = Theme.of(context);
+          return Center(
+            child: Text(
+              'No community recipes found.',
+              style: theme.textTheme.bodyMedium?.copyWith(
+                color: theme.colorScheme.onSurfaceVariant,
+              ),
+            ),
+          );
+        }
+        final results = snapshot.data!;
+        return _isBroad
+            ? _buildBroadView(context, results)
+            : _buildSpecificView(context, results);
+      },
+    );
+  }
+
+  /// Broad: one taxonomy detected — group results by course and show
+  /// [CourseCard]s. Tapping a card drills into a flat result list for that
+  /// course.
+  Widget _buildBroadView(BuildContext context, List<RagQueryResult> results) {
+    final theme = Theme.of(context);
+    final Map<String, List<RagQueryResult>> grouped = {};
+    for (final r in results) {
+      (grouped[r.courseLabel] ??= []).add(r);
+    }
+
+    if (_selectedCourse != null) {
+      final courseResults = grouped[_selectedCourse] ?? [];
+      return SingleChildScrollView(
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+        child: Center(
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(maxWidth: 600),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                TextButton.icon(
+                  onPressed: () => setState(() => _selectedCourse = null),
+                  icon: const Icon(Icons.arrow_back, size: 16),
+                  label: Text(
+                    _courseDisplayName(_selectedCourse!),
+                    style: theme.textTheme.labelMedium,
+                  ),
+                ),
+                const SizedBox(height: 8),
+                ...courseResults.map(
+                  (r) => _WalkinResultTile(result: r, onClose: widget.onClose),
+                ),
+              ],
+            ),
+          ),
+        ),
+      );
+    }
+
+    final allCourses = Course.defaults;
+    return SingleChildScrollView(
+      padding: const EdgeInsets.all(16),
+      child: Center(
+        child: ConstrainedBox(
+          constraints: const BoxConstraints(maxWidth: 600),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                'Browse by course',
+                style: theme.textTheme.labelSmall?.copyWith(
+                  color: theme.colorScheme.onSurfaceVariant,
+                  letterSpacing: 0.8,
+                ),
+              ),
+              const SizedBox(height: 12),
+              Wrap(
+                spacing: 6,
+                runSpacing: 6,
+                children: grouped.entries.map((entry) {
+                  final slug = entry.key;
+                  final count = entry.value.length;
+                  final course = allCourses.firstWhere(
+                    (c) => c.slug == slug,
+                    orElse: () => Course.create(
+                      slug: slug,
+                      name: _courseDisplayName(slug),
+                      sortOrder: 99,
+                      colorValue: 0xFF888888,
+                    ),
+                  );
+                  return SizedBox(
+                    width: 100,
+                    height: 80,
+                    child: CourseCard(
+                      course: course,
+                      recipeCount: count,
+                      onTap: () => setState(() => _selectedCourse = slug),
+                    ),
+                  );
+                }).toList(),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  /// Specific: two taxonomy parameters detected — flat list with show more.
+  Widget _buildSpecificView(BuildContext context, List<RagQueryResult> results) {
+    final theme = Theme.of(context);
+    final visible = _showAll
+        ? results
+        : results.take(_showMoreThreshold).toList();
+    final hasMore = !_showAll && results.length > _showMoreThreshold;
+
+    return SingleChildScrollView(
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+      child: Center(
+        child: ConstrainedBox(
+          constraints: const BoxConstraints(maxWidth: 600),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                'Community recipes',
+                style: theme.textTheme.labelSmall?.copyWith(
+                  color: theme.colorScheme.onSurfaceVariant,
+                  letterSpacing: 0.8,
+                ),
+              ),
+              const SizedBox(height: 8),
+              ...visible.map(
+                (r) => _WalkinResultTile(result: r, onClose: widget.onClose),
+              ),
+              if (hasMore) ...[
+                const SizedBox(height: 4),
+                TextButton(
+                  onPressed: () => setState(() => _showAll = true),
+                  child: Text(
+                    'Show ${results.length - _showMoreThreshold} more',
+                    style: theme.textTheme.labelMedium?.copyWith(
+                      color: theme.colorScheme.secondary,
+                    ),
+                  ),
+                ),
+              ],
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Walkin result tile — follows the existing _FallbackTile pattern
+// ─────────────────────────────────────────────────────────────────────────────
+
+class _WalkinResultTile extends StatelessWidget {
+  final RagQueryResult result;
+  final VoidCallback onClose;
+
+  const _WalkinResultTile({required this.result, required this.onClose});
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final dateLabel = _formatLastCooked(result.lastCookedAt);
+
+    return InkWell(
+      borderRadius: BorderRadius.circular(8),
+      onTap: () => _navigateToWalkin(result, onClose),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 4),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              children: [
+                Text(
+                  _courseDisplayName(result.courseLabel),
+                  style: theme.textTheme.labelSmall?.copyWith(
+                    color: theme.colorScheme.onSurfaceVariant,
+                  ),
+                ),
+                if (dateLabel.isNotEmpty) ...[
+                  const SizedBox(width: 8),
+                  Text(
+                    '·',
+                    style: TextStyle(color: theme.colorScheme.onSurfaceVariant),
+                  ),
+                  const SizedBox(width: 8),
+                  Text(
+                    dateLabel,
+                    style: theme.textTheme.labelSmall?.copyWith(
+                      color: theme.colorScheme.onSurfaceVariant,
+                    ),
+                  ),
+                ],
+              ],
+            ),
+            const SizedBox(height: 2),
+            Text(
+              result.name,
               style: theme.textTheme.bodyLarge?.copyWith(
                 color: theme.colorScheme.onSurface,
               ),
