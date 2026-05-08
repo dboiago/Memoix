@@ -169,7 +169,8 @@ class RecipeBackupService {
         final recipe = Recipe.fromJson(recipeJson as Map<String, dynamic>);
         
         // Mark as imported unless it was personal
-        if (recipe.source == RecipeSource.memoix) {
+        if (recipe.source == RecipeSource.memoix ||
+            recipe.source == RecipeSource.walkin) {
           recipe.source = RecipeSource.imported;
         }
         

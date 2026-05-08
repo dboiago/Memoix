@@ -10,6 +10,7 @@ enum RecipeSource {
   ocr,       // Scanned from photo
   url,       // Imported from URL
   ai,        // Scanned by AI
+  walkin,    // Community recipe sourced from the Memoix RAG corpus
 }
 
 class Recipe {
