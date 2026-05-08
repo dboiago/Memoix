@@ -47,6 +47,7 @@ class KnowledgePayload {
   Map<String, dynamic> toJson() {
     return {
       'schemaVersion': 2,
+      'domainType': 'recipe',
       'recipe': {
         'lineage_hash': lineageHash,
         'content_hash': contentHash,

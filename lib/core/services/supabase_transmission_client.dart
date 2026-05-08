@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 import '../models/cellar_knowledge_payload.dart';
@@ -22,50 +21,93 @@ class SupabaseTransmissionClient implements RagTransmissionClient {
 
   @override
   Future<void> transmit(KnowledgePayload payload) async {
-    // TODO: Uncomment when 'rag_telemetry' table is created in Supabase
-    // await _supabaseClient
-    //     .from('rag_telemetry')
-    //     .insert(payload.toJson());
-    debugPrint('[SUPABASE_CLIENT_SCAFFOLD]: Would insert recipe ${payload.recipe.name} to Supabase.');
+    await _supabaseClient
+        .from('rag_telemetry')
+        .insert({
+          'domain_type': 'recipe',
+          'schema_version': 2,
+          'lineage_hash': payload.lineageHash,
+          'content_hash': payload.contentHash,
+          'payload': payload.toJson(),
+        });
   }
 
   @override
   Future<void> transmitModernist(ModernistKnowledgePayload payload) async {
-    // TODO: Uncomment when 'rag_telemetry' table is created in Supabase
-    // await _supabaseClient
-    //     .from('rag_telemetry')
-    //     .insert(payload.toJson());
-    debugPrint('[SUPABASE_CLIENT_SCAFFOLD]: Would insert modernist ${payload.recipe.name} to Supabase.');
+    await _supabaseClient
+        .from('rag_telemetry')
+        .insert({
+          'domain_type': 'modernist',
+          'schema_version': 2,
+          'lineage_hash': payload.lineageHash,
+          'content_hash': payload.contentHash,
+          'payload': payload.toJson(),
+        });
   }
 
   @override
   Future<void> transmitSmoking(SmokingKnowledgePayload payload) async {
-    // TODO: Uncomment when 'rag_telemetry' table is created in Supabase
-    debugPrint('[SUPABASE_CLIENT_SCAFFOLD]: Would insert smoking ${payload.recipe.name} to Supabase.');
+    await _supabaseClient
+        .from('rag_telemetry')
+        .insert({
+          'domain_type': 'smoking',
+          'schema_version': 2,
+          'lineage_hash': payload.lineageHash,
+          'content_hash': payload.contentHash,
+          'payload': payload.toJson(),
+        });
   }
 
   @override
   Future<void> transmitPizza(PizzaKnowledgePayload payload) async {
-    // TODO: Uncomment when 'rag_telemetry' table is created in Supabase
-    debugPrint('[SUPABASE_CLIENT_SCAFFOLD]: Would insert pizza ${payload.pizza.name} to Supabase.');
+    await _supabaseClient
+        .from('rag_telemetry')
+        .insert({
+          'domain_type': 'pizza',
+          'schema_version': 2,
+          'lineage_hash': payload.lineageHash,
+          'content_hash': payload.contentHash,
+          'payload': payload.toJson(),
+        });
   }
 
   @override
   Future<void> transmitSandwich(SandwichKnowledgePayload payload) async {
-    // TODO: Uncomment when 'rag_telemetry' table is created in Supabase
-    debugPrint('[SUPABASE_CLIENT_SCAFFOLD]: Would insert sandwich ${payload.sandwich.name} to Supabase.');
+    await _supabaseClient
+        .from('rag_telemetry')
+        .insert({
+          'domain_type': 'sandwich',
+          'schema_version': 2,
+          'lineage_hash': payload.lineageHash,
+          'content_hash': payload.contentHash,
+          'payload': payload.toJson(),
+        });
   }
 
   @override
   Future<void> transmitCellar(CellarKnowledgePayload payload) async {
-    // TODO: Uncomment when 'rag_telemetry' table is created in Supabase
-    debugPrint('[SUPABASE_CLIENT_SCAFFOLD]: Would insert cellar ${payload.entry.name} to Supabase.');
+    await _supabaseClient
+        .from('rag_telemetry')
+        .insert({
+          'domain_type': 'cellar',
+          'schema_version': 2,
+          'lineage_hash': payload.lineageHash,
+          'content_hash': payload.contentHash,
+          'payload': payload.toJson(),
+        });
   }
 
   @override
   Future<void> transmitCheese(CheeseKnowledgePayload payload) async {
-    // TODO: Uncomment when 'rag_telemetry' table is created in Supabase
-    debugPrint('[SUPABASE_CLIENT_SCAFFOLD]: Would insert cheese ${payload.entry.name} to Supabase.');
+    await _supabaseClient
+        .from('rag_telemetry')
+        .insert({
+          'domain_type': 'cheese',
+          'schema_version': 2,
+          'lineage_hash': payload.lineageHash,
+          'content_hash': payload.contentHash,
+          'payload': payload.toJson(),
+        });
   }
 }
 
