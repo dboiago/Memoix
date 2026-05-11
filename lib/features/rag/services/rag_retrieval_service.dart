@@ -1,6 +1,9 @@
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
 
 import '../clients/rag_retrieval_client.dart';
+import '../clients/supabase_retrieval_client.dart';
 import '../models/rag_query_result.dart';
 
 /// Exposes semantic recipe retrieval to the rest of the application.
@@ -31,7 +34,25 @@ final memoixAvailableProvider = Provider<bool>((ref) => false);
 
 /// Provider for [RagRetrievalService].
 ///
-/// Wired to [StubRetrievalClient] until a live retrieval backend is available.
+/// Uses [SupabaseRetrievalClient] when both CLOUDFLARE_WORKER_URL and
+/// CLOUDFLARE_WORKER_SECRET are present in the environment; otherwise falls
+/// back to [StubRetrievalClient] silently.
 final ragRetrievalServiceProvider = Provider<RagRetrievalService>((ref) {
+  final workerUrl = dotenv.maybeGet('CLOUDFLARE_WORKER_URL');
+  final workerSecret = dotenv.maybeGet('CLOUDFLARE_WORKER_SECRET');
+
+  if (workerUrl != null &&
+      workerUrl.isNotEmpty &&
+      workerSecret != null &&
+      workerSecret.isNotEmpty) {
+    return RagRetrievalService(
+      SupabaseRetrievalClient(
+        Supabase.instance.client,
+        workerUrl,
+        workerSecret,
+      ),
+    );
+  }
+
   return RagRetrievalService(const StubRetrievalClient());
 });

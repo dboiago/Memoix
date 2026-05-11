@@ -20,6 +20,7 @@ import 'rag_retrieval_client.dart';
 class SupabaseRetrievalClient implements RagRetrievalClient {
   final SupabaseClient _supabaseClient;
   final String _embedEndpointUrl;
+  final String _workerSecret;
 
   /// SECURITY: Maximum accepted HTTP response body — 10 MB.
   static const int _maxResponseBytes = 10 * 1024 * 1024;
@@ -37,7 +38,11 @@ class SupabaseRetrievalClient implements RagRetrievalClient {
     'audio/',
   ];
 
-  const SupabaseRetrievalClient(this._supabaseClient, this._embedEndpointUrl);
+  const SupabaseRetrievalClient(
+    this._supabaseClient,
+    this._embedEndpointUrl,
+    this._workerSecret,
+  );
 
   @override
   Future<List<RagQueryResult>> query(
@@ -77,6 +82,7 @@ class SupabaseRetrievalClient implements RagRetrievalClient {
     try {
       final request = http.Request('POST', uri)
         ..headers['Content-Type'] = 'application/json'
+        ..headers['Authorization'] = 'Bearer $_workerSecret'
         ..body = jsonEncode({'text': text});
 
       final http.StreamedResponse streamedResponse;
