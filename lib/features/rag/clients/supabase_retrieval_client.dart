@@ -28,6 +28,10 @@ class SupabaseRetrievalClient implements RagRetrievalClient {
   /// SECURITY: Hard timeout for the embed endpoint POST.
   static const Duration _timeout = Duration(seconds: 10);
 
+  /// Minimum cosine similarity score for a result to be returned.
+  /// Adjust during testing to tune recall vs. precision.
+  static const double _minSimilarity = 0.45;
+
   /// Content types that must be rejected before reading the response body.
   static const List<String> _blockedContentTypePrefixes = [
     'application/pdf',
@@ -201,6 +205,7 @@ class SupabaseRetrievalClient implements RagRetrievalClient {
     final params = <String, dynamic>{
       'query_embedding': embedding,
       'match_count': limit,
+      'min_similarity': _minSimilarity,
       if (cuisine != null) 'filter_cuisine': cuisine,
       if (course != null) 'filter_course': course,
     };

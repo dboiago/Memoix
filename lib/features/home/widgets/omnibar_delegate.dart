@@ -579,6 +579,16 @@ class OmnibarDelegate extends SearchDelegate<void> {
 
   @override
   Widget buildSuggestions(BuildContext context) {
+    if (query.trim().isNotEmpty) {
+      _reclassifyIfNeeded(query);
+      return _RagResultsShell(
+        query: query,
+        classification: _classification,
+        collectionModeNotifier: _collectionModeNotifier,
+        onToggleMode: _toggleMode,
+        onClose: () => close(context, null),
+      );
+    }
     final theme = Theme.of(context);
     return Center(
       child: Text(
@@ -1150,7 +1160,7 @@ class _RagResultsShell extends ConsumerWidget {
                 child: Align(
                   alignment: Alignment.centerLeft,
                   child: FilterChip(
-                    label: Text(isCollectionMode ? 'Browse' : 'Suggest'),
+                    label: Text(isCollectionMode ? 'The Walk-in' : 'Saved Recipes'),
                     selected: isCollectionMode,
                     onSelected: (_) => onToggleMode(),
                     selectedColor: theme.colorScheme.secondaryContainer,
