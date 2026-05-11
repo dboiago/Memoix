@@ -50,6 +50,7 @@ import '../../features/reference/screens/session_ledger_screen.dart';
 import '../../features/classics/screens/classics_screen.dart';
 import '../../features/classics/screens/classics_detail_screen.dart';
 import '../../features/classics/screens/classics_entry_screen.dart';
+import '../../features/omnibar/omnibar_screen.dart';
 
 class AppRouter extends StatelessWidget {
   const AppRouter({super.key});
@@ -460,6 +461,14 @@ class AppRoutes {
     AppShellNavigator.navigatorKey.currentState!.push(
       CupertinoPageRoute(
         builder: (_) => const ClassicsEntryScreen(),
+      ),
+    );
+  }
+
+  static void toOmnibar(BuildContext context, String initialQuery) {
+    AppShellNavigator.navigatorKey.currentState!.push(
+      CupertinoPageRoute(
+        builder: (_) => OmnibarScreen(initialQuery: initialQuery),
       ),
     );
   }

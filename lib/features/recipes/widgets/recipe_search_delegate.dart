@@ -7,7 +7,6 @@ import '../../../core/services/session_index_service.dart';
 import '../../../shared/widgets/memoix_empty_state.dart';
 import '../models/recipe.dart';
 import '../repository/recipe_repository.dart';
-import '../../home/widgets/omnibar_delegate.dart';
 // ignore: unused_import
 import 'package:flutter/foundation.dart';
 
@@ -63,11 +62,7 @@ class RecipeSearchDelegate extends SearchDelegate<Recipe?> {
       final stripped = query.trimLeft().substring(1);
       WidgetsBinding.instance.addPostFrameCallback((_) {
         close(context, null);
-        showSearch(
-          context: context,
-          delegate: OmnibarDelegate(ref),
-          query: stripped,
-        );
+        AppRoutes.toOmnibar(context, stripped);
       });
       return const SizedBox.shrink();
     }

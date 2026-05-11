@@ -5,30 +5,30 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:uuid/uuid.dart';
 
-import '../../../app/app_shell.dart';
-import '../../../app/routes/router.dart';
-import '../../../shared/widgets/course_card.dart';
-import '../../rag/models/rag_query_result.dart';
-import '../../rag/services/omni_query_classifier.dart';
-import '../../rag/services/rag_retrieval_service.dart';
-import '../../recipes/models/course.dart';
-import '../../recipes/screens/recipe_detail_screen.dart';
-import '../../../core/database/app_database.dart' hide Recipe, Course;
-import '../../cellar/models/cellar_entry.dart';
-import '../../cellar/repository/cellar_repository.dart';
-import '../../cheese/models/cheese_entry.dart';
-import '../../cheese/repository/cheese_repository.dart';
-import '../../modernist/models/modernist_recipe.dart';
-import '../../modernist/repository/modernist_repository.dart';
-import '../../pizzas/models/pizza.dart';
-import '../../pizzas/repository/pizza_repository.dart';
-import '../../recipes/models/cuisine.dart';
-import '../../recipes/models/recipe.dart';
-import '../../recipes/repository/recipe_repository.dart';
-import '../../sandwiches/models/sandwich.dart';
-import '../../sandwiches/repository/sandwich_repository.dart';
-import '../../smoking/models/smoking_recipe.dart';
-import '../../smoking/repository/smoking_repository.dart';
+import '../../app/app_shell.dart';
+import '../../app/routes/router.dart';
+import '../../shared/widgets/course_card.dart';
+import '../rag/models/rag_query_result.dart';
+import '../rag/services/omni_query_classifier.dart';
+import '../rag/services/rag_retrieval_service.dart';
+import '../recipes/models/course.dart';
+import '../recipes/screens/recipe_detail_screen.dart';
+import '../../core/database/app_database.dart' hide Recipe, Course;
+import '../cellar/models/cellar_entry.dart';
+import '../cellar/repository/cellar_repository.dart';
+import '../cheese/models/cheese_entry.dart';
+import '../cheese/repository/cheese_repository.dart';
+import '../modernist/models/modernist_recipe.dart';
+import '../modernist/repository/modernist_repository.dart';
+import '../pizzas/models/pizza.dart';
+import '../pizzas/repository/pizza_repository.dart';
+import '../recipes/models/cuisine.dart';
+import '../recipes/models/recipe.dart';
+import '../recipes/repository/recipe_repository.dart';
+import '../sandwiches/models/sandwich.dart';
+import '../sandwiches/repository/sandwich_repository.dart';
+import '../smoking/models/smoking_recipe.dart';
+import '../smoking/repository/smoking_repository.dart';
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Reason line constants
@@ -61,9 +61,9 @@ class OmnibarReasonLines {
 // Internal types
 // ─────────────────────────────────────────────────────────────────────────────
 
-enum _MealContext { 
-  general, breakfast, lunch, dinner, dessert, 
-  drink, bread, cheese, cellar, snack, charcuterie 
+enum _MealContext {
+  general, breakfast, lunch, dinner, dessert,
+  drink, bread, cheese, cellar, snack, charcuterie
 }
 
 class _OmniCandidate {
@@ -392,7 +392,7 @@ List<_OmniCandidate> _rankAndTake(List<_OmniCandidate> pool, Random rng) {
 
   for (final c in sortedCandidates) {
     final course = c.courseLabel;
-    
+
     if (!seenCourses.contains(course)) {
       result.add(c);
       seenCourses.add(course);
@@ -420,7 +420,7 @@ List<_OmniCandidate> _selectSuggestions(
   Random rng,
   _OmniQuery omniQuery,
 ) {
-  List<_OmniCandidate> _applyFilters(List<_OmniCandidate> pool) {
+  List<_OmniCandidate> applyFilters(List<_OmniCandidate> pool) {
     var filtered = pool;
     if (omniQuery.cuisine != null) {
       filtered = filtered.where((c) =>
@@ -444,8 +444,8 @@ List<_OmniCandidate> _selectSuggestions(
     return filtered;
   }
 
-  final filteredEligible = _applyFilters(eligible);
-  final filteredMemoix = _applyFilters(memoixEligible);
+  final filteredEligible = applyFilters(eligible);
+  final filteredMemoix = applyFilters(memoixEligible);
   if (filteredEligible.isNotEmpty) return _rankAndTake(filteredEligible, rng);
   if (filteredMemoix.isNotEmpty) return _rankAndTake(filteredMemoix, rng);
   return [];
@@ -500,11 +500,23 @@ String _courseDisplayName(String slug) {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// Delegate
+// Omnibar screen
 // ─────────────────────────────────────────────────────────────────────────────
 
-class OmnibarDelegate extends SearchDelegate<void> {
-  final WidgetRef ref;
+/// Full-screen omnibar that fires results only on explicit submit (keyboard
+/// search action or the arrow button) — not on every keystroke.
+class OmnibarScreen extends ConsumerStatefulWidget {
+  final String initialQuery;
+
+  const OmnibarScreen({super.key, this.initialQuery = ''});
+
+  @override
+  ConsumerState<OmnibarScreen> createState() => _OmnibarScreenState();
+}
+
+class _OmnibarScreenState extends ConsumerState<OmnibarScreen> {
+  late final TextEditingController _controller;
+  late final FocusNode _focusNode;
 
   // ── RAG / classification state ──────────────────────────────────────────
   final _classifier = const HeuristicQueryClassifier();
@@ -514,9 +526,9 @@ class OmnibarDelegate extends SearchDelegate<void> {
   final ValueNotifier<bool> _collectionModeNotifier = ValueNotifier(false);
   String _lastClassifiedQuery = '';
 
-  OmnibarDelegate(this.ref);
+  /// The query that was last explicitly submitted; drives the results area.
+  String _submittedQuery = '';
 
-  /// Re-runs classification only when the query has changed.
   void _reclassifyIfNeeded(String q) {
     if (q == _lastClassifiedQuery) return;
     _lastClassifiedQuery = q;
@@ -531,72 +543,95 @@ class OmnibarDelegate extends SearchDelegate<void> {
         _classification.type == OmniQueryType.collection;
   }
 
-  /// Flips the collection/suggestion mode via [ValueNotifier].
   void _toggleMode() {
     _collectionModeNotifier.value = !_collectionModeNotifier.value;
   }
 
-  @override
-  String get searchFieldLabel => 'Ask a question...';
-
-  @override
-  List<Widget>? buildActions(BuildContext context) {
-    return [
-      if (query.isNotEmpty)
-        IconButton(
-          icon: const Icon(Icons.clear),
-          onPressed: () {
-            query = '';
-            showSuggestions(context);
-          },
-        ),
-      IconButton(
-        icon: const Icon(Icons.arrow_forward),
-        onPressed: () => showResults(context),
-      ),
-    ];
+  void _submit() {
+    final q = _controller.text.trim();
+    if (q.isEmpty) return;
+    _reclassifyIfNeeded(q);
+    setState(() => _submittedQuery = q);
+    _focusNode.unfocus();
   }
 
   @override
-  Widget? buildLeading(BuildContext context) {
-    return IconButton(
-      icon: const Icon(Icons.arrow_back),
-      onPressed: () => close(context, null),
-    );
-  }
-
-  @override
-  Widget buildResults(BuildContext context) {
-    _reclassifyIfNeeded(query);
-    return _RagResultsShell(
-      query: query,
-      classification: _classification,
-      collectionModeNotifier: _collectionModeNotifier,
-      onToggleMode: _toggleMode,
-      onClose: () => close(context, null),
-    );
-  }
-
-  @override
-  Widget buildSuggestions(BuildContext context) {
-    if (query.trim().isNotEmpty) {
-      _reclassifyIfNeeded(query);
-      return _RagResultsShell(
-        query: query,
-        classification: _classification,
-        collectionModeNotifier: _collectionModeNotifier,
-        onToggleMode: _toggleMode,
-        onClose: () => close(context, null),
-      );
+  void initState() {
+    super.initState();
+    _submittedQuery = widget.initialQuery.trim();
+    _controller = TextEditingController(text: widget.initialQuery);
+    _focusNode = FocusNode();
+    if (_submittedQuery.isNotEmpty) {
+      _reclassifyIfNeeded(_submittedQuery);
     }
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      _focusNode.requestFocus();
+    });
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    _focusNode.dispose();
+    _collectionModeNotifier.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    return Center(
-      child: Text(
-        'Try: what should I make, what should I make for dinner',
-        style: theme.textTheme.bodyMedium?.copyWith(
-          color: theme.colorScheme.onSurfaceVariant,
+    final hasText = _controller.text.isNotEmpty;
+
+    return Scaffold(
+      appBar: AppBar(
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back),
+          onPressed: () => Navigator.of(context).pop(),
         ),
+        title: TextField(
+          controller: _controller,
+          focusNode: _focusNode,
+          decoration: const InputDecoration(
+            hintText: 'Ask a question...',
+            border: InputBorder.none,
+          ),
+          style: theme.textTheme.bodyLarge,
+          textInputAction: TextInputAction.search,
+          onSubmitted: (_) => _submit(),
+          onChanged: (_) => setState(() {}),
+        ),
+        actions: [
+          if (hasText)
+            IconButton(
+              icon: const Icon(Icons.clear),
+              onPressed: () {
+                _controller.clear();
+                setState(() => _submittedQuery = '');
+                _focusNode.requestFocus();
+              },
+            ),
+          IconButton(
+            icon: const Icon(Icons.arrow_forward),
+            onPressed: _submit,
+          ),
+        ],
       ),
+      body: _submittedQuery.trim().isEmpty
+          ? Center(
+              child: Text(
+                'Try: what should I make, what should I make for dinner',
+                style: theme.textTheme.bodyMedium?.copyWith(
+                  color: theme.colorScheme.onSurfaceVariant,
+                ),
+              ),
+            )
+          : _RagResultsShell(
+              query: _submittedQuery,
+              classification: _classification,
+              collectionModeNotifier: _collectionModeNotifier,
+              onToggleMode: _toggleMode,
+              onClose: () => Navigator.of(context).pop(),
+            ),
     );
   }
 }
@@ -666,17 +701,17 @@ class _OmniResultsView extends ConsumerWidget {
     final eligible = <_OmniCandidate>[];
     final memoixEligible = <_OmniCandidate>[];
 
-        void _addRecipes() {
-        for (final r in recipes) {
-            if (!_isCourseEligible(r.course, intent)) continue;
-            if (r.course == 'modernist') {
-                final isTechnique = r.modernistType == ModernistType.technique.name;
-            if (!_isModernistEligible(intent, isTechnique: isTechnique)) continue;
-            }
-            if (r.course == 'smoking') {
-                final isPitNote = r.smokingType == SmokingType.pitNote.name;
-            if (!_isSmokingEligible(intent, isPitNote: isPitNote)) continue;
-            }
+    void addRecipes() {
+      for (final r in recipes) {
+        if (!_isCourseEligible(r.course, intent)) continue;
+        if (r.course == 'modernist') {
+          final isTechnique = r.modernistType == ModernistType.technique.name;
+          if (!_isModernistEligible(intent, isTechnique: isTechnique)) continue;
+        }
+        if (r.course == 'smoking') {
+          final isPitNote = r.smokingType == SmokingType.pitNote.name;
+          if (!_isSmokingEligible(intent, isPitNote: isPitNote)) continue;
+        }
         final isMemoix = r.source == RecipeSource.memoix;
         final candidate = _OmniCandidate(
           name: r.name,
@@ -698,7 +733,7 @@ class _OmniResultsView extends ConsumerWidget {
       }
     }
 
-    void _addPizzas() {
+    void addPizzas() {
       if (!_isCourseEligible('pizzas', intent)) return;
       for (final p in pizzas) {
         final isMemoix = p.source == PizzaSource.memoix.name;
@@ -719,7 +754,7 @@ class _OmniResultsView extends ConsumerWidget {
       }
     }
 
-    void _addSandwiches() {
+    void addSandwiches() {
       if (!_isCourseEligible('sandwiches', intent)) return;
       for (final s in sandwiches) {
         final isMemoix = s.source == SandwichSource.memoix.name;
@@ -740,57 +775,57 @@ class _OmniResultsView extends ConsumerWidget {
       }
     }
 
-    void _addSmoking() {
-    if (!_isCourseEligible('smoking', intent)) return;
-    for (final sm in smokingAll) {
+    void addSmoking() {
+      if (!_isCourseEligible('smoking', intent)) return;
+      for (final sm in smokingAll) {
         final isPitNote = sm.type == SmokingType.pitNote.name;
         if (!_isSmokingEligible(intent, isPitNote: isPitNote)) continue;
         final isMemoix = sm.source == SmokingSource.memoix.name;
         final candidate = _OmniCandidate(
-        name: sm.name,
-        courseLabel: isPitNote ? 'Pit Note' : 'Smoking',
-        isFavourite: sm.isFavourite,
-        cookCount: sm.cookCount,
-        isMemoix: isMemoix,
-        time: sm.time.isNotEmpty ? sm.time : null,
-        isPitNote: isPitNote,
-        ingredientNames: sm.seasoningsList.map((s) => s.name).toList(),
-        navigate: (ctx) => AppRoutes.toSmokingDetail(ctx, sm.uuid),
+          name: sm.name,
+          courseLabel: isPitNote ? 'Pit Note' : 'Smoking',
+          isFavourite: sm.isFavourite,
+          cookCount: sm.cookCount,
+          isMemoix: isMemoix,
+          time: sm.time.isNotEmpty ? sm.time : null,
+          isPitNote: isPitNote,
+          ingredientNames: sm.seasoningsList.map((s) => s.name).toList(),
+          navigate: (ctx) => AppRoutes.toSmokingDetail(ctx, sm.uuid),
         );
         if (isMemoix) {
-        memoixEligible.add(candidate);
+          memoixEligible.add(candidate);
         } else {
-        eligible.add(candidate);
+          eligible.add(candidate);
         }
-    }
+      }
     }
 
-    void _addModernist() {
-    if (!_isCourseEligible('modernist', intent)) return;
-    for (final m in modernists) {
+    void addModernist() {
+      if (!_isCourseEligible('modernist', intent)) return;
+      for (final m in modernists) {
         final isTechnique = m.type == ModernistType.technique;
         if (!_isModernistEligible(intent, isTechnique: isTechnique)) continue;
         final isMemoix = m.source == ModernistSource.memoix;
         final candidate = _OmniCandidate(
-        name: m.name,
-        courseLabel: 'Modernist',
-        isFavourite: m.isFavourite,
-        cookCount: m.cookCount,
-        isMemoix: isMemoix,
-        time: m.time,
-        isPitNote: isTechnique,
-        ingredientNames: m.ingredients.map((i) => i.name).toList(),
-        navigate: (ctx) => AppRoutes.toModernistDetail(ctx, m.id),
+          name: m.name,
+          courseLabel: 'Modernist',
+          isFavourite: m.isFavourite,
+          cookCount: m.cookCount,
+          isMemoix: isMemoix,
+          time: m.time,
+          isPitNote: isTechnique,
+          ingredientNames: m.ingredients.map((i) => i.name).toList(),
+          navigate: (ctx) => AppRoutes.toModernistDetail(ctx, m.id),
         );
         if (isMemoix) {
-        memoixEligible.add(candidate);
+          memoixEligible.add(candidate);
         } else {
-        eligible.add(candidate);
+          eligible.add(candidate);
         }
-    }
+      }
     }
 
-    void _addCheese() {
+    void addCheese() {
       if (intent != _MealContext.cheese) return;
       for (final c in cheeseEntries) {
         final isMemoix = c.source == CheeseSource.memoix.name;
@@ -811,7 +846,7 @@ class _OmniResultsView extends ConsumerWidget {
       }
     }
 
-    void _addCellar() {
+    void addCellar() {
       if (intent != _MealContext.cellar) return;
       for (final c in cellarEntries) {
         final isMemoix = c.source == CellarSource.memoix.name;
@@ -832,13 +867,13 @@ class _OmniResultsView extends ConsumerWidget {
       }
     }
 
-    _addRecipes();
-    _addPizzas();
-    _addSandwiches();
-    _addSmoking();
-    _addModernist();
-    _addCheese();
-    _addCellar();
+    addRecipes();
+    addPizzas();
+    addSandwiches();
+    addSmoking();
+    addModernist();
+    addCheese();
+    addCellar();
 
     final rng = Random();
     final selected = _selectSuggestions(eligible, memoixEligible, rng, omniQuery);
@@ -1125,7 +1160,7 @@ void _navigateToWalkin(RagQueryResult result, VoidCallback onClose) {
 /// Wraps the omnibar's result area to add the mode toggle chip and dispatch
 /// between suggestion mode (local results + walkin section) and collection
 /// mode (community corpus browse). All content is gated on
-/// [memoixAvailableProvider]; when false the delegate behaves exactly as
+/// [memoixAvailableProvider]; when false the screen behaves exactly as
 /// before with no changes to output.
 class _RagResultsShell extends ConsumerWidget {
   final String query;
