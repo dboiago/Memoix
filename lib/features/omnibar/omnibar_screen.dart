@@ -7,6 +7,7 @@ import 'package:uuid/uuid.dart';
 
 import '../../app/app_shell.dart';
 import '../../app/routes/router.dart';
+import '../../shared/widgets/memoix_filter_chip.dart';
 import '../../shared/widgets/course_card.dart';
 import '../rag/models/rag_query_result.dart';
 import '../rag/services/omni_query_classifier.dart';
@@ -543,10 +544,6 @@ class _OmnibarScreenState extends ConsumerState<OmnibarScreen> {
         _classification.type == OmniQueryType.collection;
   }
 
-  void _toggleMode() {
-    _collectionModeNotifier.value = !_collectionModeNotifier.value;
-  }
-
   void _submit() {
     final q = _controller.text.trim();
     if (q.isEmpty) return;
@@ -580,7 +577,7 @@ class _OmnibarScreenState extends ConsumerState<OmnibarScreen> {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    final hasText = _controller.text.isNotEmpty;
+    final memoixAvailable = ref.watch(memoixAvailableProvider);
 
     return Scaffold(
       appBar: AppBar(
@@ -598,40 +595,81 @@ class _OmnibarScreenState extends ConsumerState<OmnibarScreen> {
           style: theme.textTheme.bodyLarge,
           textInputAction: TextInputAction.search,
           onSubmitted: (_) => _submit(),
-          onChanged: (_) => setState(() {}),
         ),
         actions: [
-          if (hasText)
-            IconButton(
-              icon: const Icon(Icons.clear),
-              onPressed: () {
-                _controller.clear();
-                setState(() => _submittedQuery = '');
-                _focusNode.requestFocus();
-              },
-            ),
+          ValueListenableBuilder<TextEditingValue>(
+            valueListenable: _controller,
+            builder: (context, value, _) {
+              if (value.text.isEmpty) return const SizedBox.shrink();
+              return IconButton(
+                icon: const Icon(Icons.clear),
+                onPressed: () {
+                  _controller.clear();
+                  setState(() => _submittedQuery = '');
+                  _focusNode.requestFocus();
+                },
+              );
+            },
+          ),
           IconButton(
             icon: const Icon(Icons.arrow_forward),
             onPressed: _submit,
           ),
         ],
       ),
-      body: _submittedQuery.trim().isEmpty
-          ? Center(
-              child: Text(
-                'Try: what should I make, what should I make for dinner',
-                style: theme.textTheme.bodyMedium?.copyWith(
-                  color: theme.colorScheme.onSurfaceVariant,
-                ),
-              ),
-            )
-          : _RagResultsShell(
-              query: _submittedQuery,
-              classification: _classification,
-              collectionModeNotifier: _collectionModeNotifier,
-              onToggleMode: _toggleMode,
-              onClose: () => Navigator.of(context).pop(),
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          if (memoixAvailable)
+            ValueListenableBuilder<bool>(
+              valueListenable: _collectionModeNotifier,
+              builder: (context, isCollectionMode, _) {
+                return Padding(
+                  padding: const EdgeInsets.fromLTRB(16, 12, 16, 0),
+                  child: Row(
+                    children: [
+                      MemoixFilterChip(
+                        value: 'Saved Recipes',
+                        isSelected: !isCollectionMode,
+                        onSelected: (_) {
+                          if (isCollectionMode) {
+                            _collectionModeNotifier.value = false;
+                          }
+                        },
+                      ),
+                      MemoixFilterChip(
+                        value: 'The Walk-in',
+                        isSelected: isCollectionMode,
+                        onSelected: (_) {
+                          if (!isCollectionMode) {
+                            _collectionModeNotifier.value = true;
+                          }
+                        },
+                      ),
+                    ],
+                  ),
+                );
+              },
             ),
+          Expanded(
+            child: _submittedQuery.trim().isEmpty
+                ? Center(
+                    child: Text(
+                      'Try: what should I make, what should I make for dinner',
+                      style: theme.textTheme.bodyMedium?.copyWith(
+                        color: theme.colorScheme.onSurfaceVariant,
+                      ),
+                    ),
+                  )
+                : _RagResultsShell(
+                    query: _submittedQuery,
+                    classification: _classification,
+                    collectionModeNotifier: _collectionModeNotifier,
+                    onClose: () => Navigator.of(context).pop(),
+                  ),
+          ),
+        ],
+      ),
     );
   }
 }
@@ -1166,64 +1204,34 @@ class _RagResultsShell extends ConsumerWidget {
   final String query;
   final OmniQueryClassification classification;
   final ValueNotifier<bool> collectionModeNotifier;
-  final VoidCallback onToggleMode;
   final VoidCallback onClose;
 
   const _RagResultsShell({
     required this.query,
     required this.classification,
     required this.collectionModeNotifier,
-    required this.onToggleMode,
     required this.onClose,
   });
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final memoixAvailable = ref.watch(memoixAvailableProvider);
-    final theme = Theme.of(context);
-    final showChip = memoixAvailable && query.trim().isNotEmpty;
 
     return ValueListenableBuilder<bool>(
       valueListenable: collectionModeNotifier,
       builder: (context, isCollectionMode, _) {
-        return Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            if (showChip)
-              Padding(
-                padding: const EdgeInsets.fromLTRB(16, 12, 16, 0),
-                child: Align(
-                  alignment: Alignment.centerLeft,
-                  child: FilterChip(
-                    label: Text(isCollectionMode ? 'The Walk-in' : 'Saved Recipes'),
-                    selected: isCollectionMode,
-                    onSelected: (_) => onToggleMode(),
-                    selectedColor: theme.colorScheme.secondaryContainer,
-                    showCheckmark: false,
-                    labelStyle: theme.textTheme.labelSmall?.copyWith(
-                      color: isCollectionMode
-                          ? theme.colorScheme.onSecondaryContainer
-                          : theme.colorScheme.onSurfaceVariant,
-                    ),
-                  ),
-                ),
-              ),
-            Expanded(
-              child: (memoixAvailable && isCollectionMode)
-                  ? _WalkinCollectionView(
-                      query: query,
-                      classification: classification,
-                      onClose: onClose,
-                    )
-                  : _SuggestionWithWalkin(
-                      query: query,
-                      classification: classification,
-                      memoixAvailable: memoixAvailable,
-                      onClose: onClose,
-                    ),
-            ),
-          ],
-        );
+        return (memoixAvailable && isCollectionMode)
+            ? _WalkinCollectionView(
+                query: query,
+                classification: classification,
+                onClose: onClose,
+              )
+            : _SuggestionWithWalkin(
+                query: query,
+                classification: classification,
+                memoixAvailable: memoixAvailable,
+                onClose: onClose,
+              );
       },
     );
   }
