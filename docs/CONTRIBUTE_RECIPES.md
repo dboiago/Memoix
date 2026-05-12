@@ -19,6 +19,11 @@ proprietary culinary dataset. Your recipes contribute to a shared understanding 
 ingredient relationships, regional cuisines, dish structure, and recipe evolution 
 over time.
 
+Submitted recipes are processed server-side to generate semantic representations 
+used for search and model training. This processing happens on Cloudflare's 
+infrastructure - see their privacy policy at https://www.cloudflare.com/privacypolicy/. 
+No recipe content is used to train third-party commercial models.
+
 Your data helps the system learn things like:
 
 - Which ingredient ratios are characteristic of a dish
@@ -47,13 +52,14 @@ favourite a recipe:
 - No hidden recipes - recipes marked as Hidden are unconditionally excluded from 
   transmission, regardless of your global setting
 
-## A Note on Submitted Data
+## A Note on Privacy and Submitted Data
+
+Submitted recipes are stored without any user or device identifier. The dataset 
+has no client read access and cannot be queried by users or the app. 
 
 Because no user or device identifier is attached to any submission, it is not 
-possible to associate data in the dataset with a specific person or installation. 
-This is intentional. It also means that previously submitted recipes cannot be 
-individually withdrawn - there is no link between the dataset and you. Disabling 
-this setting stops all future transmissions.
+possible to withdraw previously submitted data - there is no link between the 
+dataset and you. Disabling this setting stops all future transmissions immediately.
 
 ## Control
 
