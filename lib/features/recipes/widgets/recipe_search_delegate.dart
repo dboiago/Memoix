@@ -5,6 +5,7 @@ import '../../../app/routes/router.dart';
 import '../../../core/services/integrity_service.dart';
 import '../../../core/services/session_index_service.dart';
 import '../../../shared/widgets/memoix_empty_state.dart';
+import '../../../features/rag/services/rag_retrieval_service.dart';
 import '../models/recipe.dart';
 import '../repository/recipe_repository.dart';
 // ignore: unused_import
@@ -59,12 +60,14 @@ class RecipeSearchDelegate extends SearchDelegate<Recipe?> {
   @override
   Widget buildSuggestions(BuildContext context) {
     if (query.trimLeft().startsWith('.')) {
-      final stripped = query.trimLeft().substring(1);
-      WidgetsBinding.instance.addPostFrameCallback((_) {
-        close(context, null);
-        AppRoutes.toOmnibar(context, stripped);
-      });
-      return const SizedBox.shrink();
+      if (ref.read(memoixAvailableProvider)) {
+        final stripped = query.trimLeft().substring(1);
+        WidgetsBinding.instance.addPostFrameCallback((_) {
+          close(context, null);
+          AppRoutes.toOmnibar(context, stripped);
+        });
+        return const SizedBox.shrink();
+      }
     }
 
     // Check once when delegate opens for transition override
