@@ -172,7 +172,6 @@ class ContributeRecipesInfoScreen extends StatelessWidget {
                   'private, open the menu on any recipe and set its visibility to Hidden. '
                   'Hidden recipes are never transmitted, even when the global setting is enabled.',
             ),
-          ],
             const SizedBox(height: 32),
             Center(
               child: Text(
