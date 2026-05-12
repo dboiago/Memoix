@@ -106,30 +106,42 @@ class ContributeRecipesInfoScreen extends StatelessWidget {
                   'recipes rather than raw internet scrapes. This feature is strictly '
                   'opt-in and has no effect unless explicitly enabled.',
             ),
-            _Section(
+            _BulletSection(
               title: 'How It Works',
-              body:
+              intro:
                   'When enabled, Memoix transmits your recipes to a secure backend to '
                   'build a proprietary culinary dataset. Your recipes contribute to a '
                   'shared understanding of ingredient relationships, regional cuisines, '
-                  'dish structure, and recipe evolution over time.',
-            ),
-            _BulletSection(
-              title: 'What Is Collected',
-              intro: 'If you opt in, the following is transmitted when you save, '
-                  'update, cook, or favourite a recipe:',
+                  'dish structure, and recipe evolution over time.\n\n'
+                  'Submitted recipes are processed server-side to generate semantic '
+                  'representations used for search and model training. This processing '
+                  'happens on Cloudflare\'s infrastructure. No recipe content is used '
+                  'to train third-party commercial models.\n\n'
+                  'Your data helps the system learn things like:',
               bullets: const [
-                'Recipe content - ingredients, instructions, and your custom notes',
-                'Original source text or URL, if the recipe was imported',
-                'Culinary statistics - cook count, favourite status, ratings',
-                'Recipe pairing relationships - the name and course of any linked recipes',
-                'A derived lineage identifier and content hash, used to track recipe '
-                    'refinement over time without transmitting any device or user identifier',
-                'Basic metadata - app version and system language',
+                'Which ingredient ratios are characteristic of a dish',
+                'How recipes are naturally categorized and tagged by real cooks',
+                'Which modifications are consistently made to improve a dish',
+                'How dishes relate to and complement one another across cuisines',
               ],
             ),
             _BulletSection(
-              title: 'What Is Never Collected',
+              title: 'What Is Collected',
+              intro:
+                  'If you opt in, the following is transmitted when you save, '
+                  'update, cook, or favourite a recipe:',
+              bullets: const [
+                'Recipe content (ingredients, instructions, and notes)',
+                'Original source text or URL (if the recipe was imported)',
+                'Culinary statistics (cook count, favourite status, ratings)',
+                'Recipe pairing relationships (the name and course of any linked recipes)',
+                'A derived lineage identifier and content hash, used to track recipe '
+                    'refinement over time without transmitting any device or user identifier',
+                'Basic metadata (app version and system language)',
+              ],
+            ),
+            _BulletSection(
+              title: 'What Is NEVER Collected',
               bullets: const [
                 'No personal identifiers - no name, email, account, or device ID',
                 'No location data',
@@ -139,24 +151,28 @@ class ContributeRecipesInfoScreen extends StatelessWidget {
               ],
             ),
             _Section(
-              title: 'A Note on Submitted Data',
+              title: 'A Note on Privacy and Submitted Data',
               body:
-                  'Because no user or device identifier is attached to any submission, '
-                  'it is not possible to associate data in the dataset with a specific '
-                  'person or installation. This is intentional. It also means that '
-                  'previously submitted recipes cannot be individually withdrawn - there '
-                  'is no link between the dataset and you. Disabling this setting stops '
-                  'all future transmissions.',
+                  'Submitted recipes are stored without any user or device identifier. The '
+                  'dataset has no client read access and cannot be queried by users or the app.\n\n'
+                  'Because no user or device identifier is attached to any submission, it is '
+                  'not possible to withdraw previously submitted data - there is no link '
+                  'between the dataset and you. Disabling this setting stops all future '
+                  'transmissions immediately.',
             ),
             _Section(
               title: 'Control',
               body:
+                  '**Global Setting**\n'
                   'Enable or disable this feature at any time in Settings > Data > '
-                  'Contribute Recipes. Disabling stops all future transmissions.\n\n'
+                  'Contribute to Culinary Intelligence. Disabling stops all future '
+                  'transmissions immediately.\n\n'
+                  '**Per-Recipe Privacy**\n'
                   'If you want to contribute but have specific recipes you want to keep '
                   'private, open the menu on any recipe and set its visibility to Hidden. '
                   'Hidden recipes are never transmitted, even when the global setting is enabled.',
             ),
+          ],
             const SizedBox(height: 32),
             Center(
               child: Text(
