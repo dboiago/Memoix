@@ -30,7 +30,7 @@ class RagRetrievalService {
 /// Availability gate for Memoix-powered features.
 ///
 /// Returns false until the live backend is ready.
-final memoixAvailableProvider = Provider<bool>((ref) => true);
+final memoixAvailableProvider = Provider<bool>((ref) => false);
 
 /// Provider for [RagRetrievalService].
 ///
