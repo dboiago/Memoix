@@ -58,7 +58,7 @@ class RecipeBackupService {
       recipes = await _recipeRepository.getAllRecipes();
     } else {
       // All user recipes (not memoix collection)
-      // Includes: personal, imported, ocr, url
+      // Includes: personal, imported, ocr, url, ai, walkin
       final allRecipes = await _recipeRepository.getAllRecipes();
       recipes = allRecipes.where((r) => r.source != RecipeSource.memoix).toList();
     }
@@ -167,13 +167,7 @@ class RecipeBackupService {
     for (final recipeJson in recipesList) {
       try {
         final recipe = Recipe.fromJson(recipeJson as Map<String, dynamic>);
-        
-        // Mark as imported unless it was personal
-        if (recipe.source == RecipeSource.memoix ||
-            recipe.source == RecipeSource.walkin) {
-          recipe.source = RecipeSource.imported;
-        }
-        
+
         // Check if recipe already exists by UUID
         final existing = await _recipeRepository.getRecipeByUuid(recipe.uuid);
         if (existing != null) {
@@ -181,8 +175,8 @@ class RecipeBackupService {
           recipe.version = existing.version + 1;
           recipe.id = existing.id; // Supply the local Drift PK so saveRecipe() performs an UPDATE, not an INSERT.
         }
-        
-        await _recipeRepository.saveRecipe(recipe);
+
+        await _recipeRepository.saveRecipe(recipe, preserveSource: true);
         imported++;
       } catch (e) {
         // Skip invalid recipes, continue with others

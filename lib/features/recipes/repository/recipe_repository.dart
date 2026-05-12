@@ -790,25 +790,29 @@ class RecipeRepository {
     return _toDomainRecipe(row, ings);
   }
 
-  Future<int> saveRecipe(Recipe recipe, {bool preserveTimestamp = false}) async {
+  Future<int> saveRecipe(Recipe recipe, {bool preserveTimestamp = false, bool preserveSource = false}) async {
     try {
       if (recipe.uuid.isEmpty) recipe.uuid = _uuid.v4();
     } catch (_) {
       recipe.uuid = _uuid.v4();
     }
 
-    // Copy-on-write: when a user saves edits to a Memoix default recipe,
-    // transfer ownership to 'personal' before persisting. The UUID is kept
-    // intact so pairings and meal-plan references continue to resolve.
-    // The seed layer will not re-insert this UUID on the next startup because
-    // the row already exists (with source = 'personal').
+    // Copy-on-write: promotes memoix and walkin recipes to 'personal' when a
+    // user saves edits. The UUID is kept intact so pairings and meal-plan
+    // references continue to resolve. The seed layer will not re-insert this
+    // UUID on the next startup because the row already exists.
     //
-    // RecipeSource.walkin is intentionally NOT promoted here. Walkin recipes
-    // sourced from the RAG corpus are persisted with their original source
-    // intact so provenance is preserved after the user saves them via the
-    // Save button on the detail screen.
-    if (recipe.source == RecipeSource.memoix) {
-      recipe.source = RecipeSource.personal;
+    // Walkin lifecycle:
+    //   First save (id == 0)     → source stays walkin; recipe receives a real DB id.
+    //   Subsequent edit (id > 0) → source promoted to personal (same as memoix).
+    //
+    // preserveSource = true bypasses all promotion. Used by the backup restore
+    // path so the source recorded in the backup is written verbatim.
+    if (!preserveSource) {
+      if (recipe.source == RecipeSource.memoix ||
+          (recipe.source == RecipeSource.walkin && recipe.id > 0)) {
+        recipe.source = RecipeSource.personal;
+      }
     }
 
     if (!preserveTimestamp) recipe.updatedAt = DateTime.now();

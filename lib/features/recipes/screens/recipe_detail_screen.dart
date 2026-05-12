@@ -221,27 +221,29 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
             title: recipe.name,
             isFavourite: recipe.isFavourite,
             headerImage: hasHeaderImage ? headerImage : null,
-            onFavoritePressed: () async {
-              final blocked = await ref
-                  .read(recipeRepositoryProvider)
-                  .toggleFavourite(recipe.id);
-              if (blocked.isNotEmpty) {
-                MemoixSnackBar.showError(
-                    blocked.first.data['text'] as String? ?? '',);
-                return;
-              }
-              ref.invalidate(allRecipesProvider);
-              processIntegrityResponses(ref);
-            },
+            onFavoritePressed: recipe.source == RecipeSource.walkin && recipe.id == 0
+              ? null
+              : () async {
+                  final blocked = await ref
+                      .read(recipeRepositoryProvider)
+                      .toggleFavourite(recipe.id);
+                  if (blocked.isNotEmpty) {
+                    MemoixSnackBar.showError(
+                        blocked.first.data['text'] as String? ?? '',);
+                    return;
+                  }
+                  ref.invalidate(allRecipesProvider);
+                  processIntegrityResponses(ref);
+                },
             onLogCookPressed: () => _logCook(context, recipe),
             onSharePressed: () => _shareRecipe(context, ref),
             onComparePressed: shouldShowCompareButton(recipe)
               ? () => AppRoutes.toRecipeComparison(context, prefilledRecipe: recipe, resetState: true)
               : null,
-            onEditPressed: recipe.source == RecipeSource.walkin
+            onEditPressed: recipe.source == RecipeSource.walkin && recipe.id == 0
               ? null
               : () => AppRoutes.toRecipeEdit(context, recipeId: recipe.uuid),
-            onSaveWalkinPressed: recipe.source == RecipeSource.walkin
+            onSaveWalkinPressed: recipe.source == RecipeSource.walkin && recipe.id == 0
               ? () => _saveWalkinRecipe(context, ref, recipe)
               : null,
             onDuplicatePressed: () => _duplicateRecipe(context, ref),
@@ -643,27 +645,29 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
             title: recipe.name,
             isFavourite: recipe.isFavourite,
             headerImage: hasHeaderImage ? headerImage : null,
-            onFavoritePressed: () async {
-              final blocked = await ref
-                  .read(recipeRepositoryProvider)
-                  .toggleFavourite(recipe.id);
-              if (blocked.isNotEmpty) {
-                MemoixSnackBar.showError(
-                    blocked.first.data['text'] as String? ?? '',);
-                return;
-              }
-              ref.invalidate(allRecipesProvider);
-              processIntegrityResponses(ref);
-            },
+            onFavoritePressed: recipe.source == RecipeSource.walkin && recipe.id == 0
+                ? null
+                : () async {
+                    final blocked = await ref
+                        .read(recipeRepositoryProvider)
+                        .toggleFavourite(recipe.id);
+                    if (blocked.isNotEmpty) {
+                      MemoixSnackBar.showError(
+                          blocked.first.data['text'] as String? ?? '',);
+                      return;
+                    }
+                    ref.invalidate(allRecipesProvider);
+                    processIntegrityResponses(ref);
+                  },
             onLogCookPressed: () => _logCook(context, recipe),
             onSharePressed: () => _shareRecipe(context, ref),
             onComparePressed: recipe.course.toLowerCase() != 'drinks' 
                 ? () => AppRoutes.toRecipeComparison(context, prefilledRecipe: recipe) 
                 : null,
-            onEditPressed: recipe.source == RecipeSource.walkin
+            onEditPressed: recipe.source == RecipeSource.walkin && recipe.id == 0
                 ? null
                 : () => AppRoutes.toRecipeEdit(context, recipeId: recipe.uuid),
-            onSaveWalkinPressed: recipe.source == RecipeSource.walkin
+            onSaveWalkinPressed: recipe.source == RecipeSource.walkin && recipe.id == 0
                 ? () => _saveWalkinRecipe(context, ref, recipe)
                 : null,
             onDuplicatePressed: () => _duplicateRecipe(context, ref),
