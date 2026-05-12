@@ -30,4 +30,14 @@ class AppConfig {
   /// ONEDRIVE_REDIRECT_URI=your-custom-uri
   static String get oneDriveRedirectUri =>
       dotenv.maybeGet('ONEDRIVE_REDIRECT_URI') ?? 'io.github.dboiago.memoix://oauth/callback';
+
+  // --- Recipe Hash Pepper ---
+
+  /// HMAC-style pepper prepended to all recipe lineage and content hashes.
+  ///
+  /// Requires RECIPE_HASH_PEPPER in .env — returns empty string if absent.
+  /// WARNING: This value must never change after first use. Changing it will
+  /// permanently invalidate all stored lineage hashes.
+  static String get recipeHashPepper =>
+      dotenv.maybeGet('RECIPE_HASH_PEPPER') ?? '';
 }

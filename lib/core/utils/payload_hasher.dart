@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:crypto/crypto.dart';
 
+import '../../config/app_config.dart';
 import '../../features/cellar/models/cellar_entry.dart';
 import '../../features/cheese/models/cheese_entry.dart';
 import '../../features/modernist/models/modernist_recipe.dart';
@@ -55,7 +56,7 @@ abstract class PayloadHasher {
       ..sort();
     final input =
         '${recipe.name.trim().toLowerCase()}$_sep${recipe.course.trim().toLowerCase()}$_sep${sortedNames.join(_sep)}';
-    return _sha256(input);
+    return _sha256('${AppConfig.recipeHashPepper}$input');
   }
 
   /// Lineage hash for a [ModernistRecipe].
@@ -66,7 +67,7 @@ abstract class PayloadHasher {
       ..sort();
     final input =
         '${recipe.name.trim().toLowerCase()}$_sep${recipe.course.trim().toLowerCase()}$_sep${sortedNames.join(_sep)}';
-    return _sha256(input);
+    return _sha256('${AppConfig.recipeHashPepper}$input');
   }
 
   /// Lineage hash for a [SmokingRecipe].
@@ -80,7 +81,7 @@ abstract class PayloadHasher {
       ..sort();
     final input =
         '${recipe.name.trim().toLowerCase()}$_sep${recipe.course.trim().toLowerCase()}$_sep${(recipe.item ?? '').trim().toLowerCase()}$_sep${ings.join(_sep)}';
-    return _sha256(input);
+    return _sha256('${AppConfig.recipeHashPepper}$input');
   }
 
   /// Lineage hash for a [Pizza].
@@ -97,7 +98,7 @@ abstract class PayloadHasher {
       ..sort();
     final input =
         '${pizza.name.trim().toLowerCase()}$_sep${pizza.base.trim().toLowerCase()}$_sep${cheeses.join(_sep)}$_sep${proteins.join(_sep)}';
-    return _sha256(input);
+    return _sha256('${AppConfig.recipeHashPepper}$input');
   }
 
   /// Lineage hash for a [Sandwich].
@@ -109,7 +110,7 @@ abstract class PayloadHasher {
       ..sort();
     final input =
         '${sandwich.name.trim().toLowerCase()}$_sep${sandwich.bread.trim().toLowerCase()}$_sep${proteins.join(_sep)}';
-    return _sha256(input);
+    return _sha256('${AppConfig.recipeHashPepper}$input');
   }
 
   // ───────────────────────────────────────────────────────────────
@@ -144,7 +145,7 @@ abstract class PayloadHasher {
       recipe.garnish.join(_sep),
       recipe.pickleMethod ?? '',
     ].join(_sep);
-    return _sha256(input);
+    return _sha256('${AppConfig.recipeHashPepper}$input');
   }
 
   /// SHA-256 of the full current modernist recipe content.
@@ -167,7 +168,7 @@ abstract class PayloadHasher {
       recipe.notes ?? '',
       recipe.scienceNotes ?? '',
     ].join(_sep);
-    return _sha256(input);
+    return _sha256('${AppConfig.recipeHashPepper}$input');
   }
 
   /// SHA-256 of the full current smoking recipe content.
@@ -187,7 +188,7 @@ abstract class PayloadHasher {
       recipe.directions,
       recipe.notes ?? '',
     ].join(_sep);
-    return _sha256(input);
+    return _sha256('${AppConfig.recipeHashPepper}$input');
   }
 
   /// SHA-256 of the full current pizza content.
@@ -201,7 +202,7 @@ abstract class PayloadHasher {
       pizza.notes ?? '',
       pizza.tags,
     ].join(_sep);
-    return _sha256(input);
+    return _sha256('${AppConfig.recipeHashPepper}$input');
   }
 
   /// SHA-256 of the full current sandwich content.
@@ -216,7 +217,7 @@ abstract class PayloadHasher {
       sandwich.notes ?? '',
       sandwich.tags,
     ].join(_sep);
-    return _sha256(input);
+    return _sha256('${AppConfig.recipeHashPepper}$input');
   }
 
   // ───────────────────────────────────────────────────────────────
@@ -233,7 +234,7 @@ abstract class PayloadHasher {
       (entry.producer ?? '').trim().toLowerCase(),
       (entry.category ?? '').trim().toLowerCase(),
     ].join(_sep);
-    return _sha256(input);
+    return _sha256('${AppConfig.recipeHashPepper}$input');
   }
 
   /// SHA-256 of the full current cellar entry content.
@@ -251,7 +252,7 @@ abstract class PayloadHasher {
       entry.priceRange?.toString() ?? '',
       entry.source,
     ].join(_sep);
-    return _sha256(input);
+    return _sha256('${AppConfig.recipeHashPepper}$input');
   }
 
   // ───────────────────────────────────────────────────────────────
@@ -269,7 +270,7 @@ abstract class PayloadHasher {
       (entry.milk ?? '').trim().toLowerCase(),
       (entry.type ?? '').trim().toLowerCase(),
     ].join(_sep);
-    return _sha256(input);
+    return _sha256('${AppConfig.recipeHashPepper}$input');
   }
 
   /// SHA-256 of the full current cheese entry content.
@@ -287,6 +288,6 @@ abstract class PayloadHasher {
       entry.priceRange?.toString() ?? '',
       entry.source,
     ].join(_sep);
-    return _sha256(input);
+    return _sha256('${AppConfig.recipeHashPepper}$input');
   }
 }
