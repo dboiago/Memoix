@@ -163,11 +163,11 @@ class ContributeRecipesInfoScreen extends StatelessWidget {
             _Section(
               title: 'Control',
               body:
-                  '**Global Setting**\n'
+                  'Global Setting\n'
                   'Enable or disable this feature at any time in Settings > Data > '
                   'Contribute to Culinary Intelligence. Disabling stops all future '
                   'transmissions immediately.\n\n'
-                  '**Per-Recipe Privacy**\n'
+                  'Per-Recipe Privacy\n'
                   'If you want to contribute but have specific recipes you want to keep '
                   'private, open the menu on any recipe and set its visibility to Hidden. '
                   'Hidden recipes are never transmitted, even when the global setting is enabled.',
