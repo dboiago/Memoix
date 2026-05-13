@@ -275,7 +275,7 @@ class _RateRecipeDialogState extends State<RateRecipeDialog> {
       case 4:
         return 'Its';
       case 5:
-        return 'Shit';
+        return 'Bad';
       default:
         return 'Tap stars to rate';
     }
