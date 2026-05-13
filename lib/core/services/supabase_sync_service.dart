@@ -322,7 +322,7 @@ abstract class SupabaseSyncService {
       await db
           .into(db.pendingDeletions)
           .insertOnConflictUpdate(PendingDeletionsCompanion(
-            tableName: Value(tableName),
+            entityType: Value(tableName),
             recordUuid: Value(recordUuid),
             deletedAt: Value(DateTime.now().toUtc()),
           ));
@@ -356,14 +356,14 @@ abstract class SupabaseSyncService {
         try {
           final now = DateTime.now().toUtc().toIso8601String();
           final Map<String, dynamic> updateData = {'deleted_at': now};
-          if (!_noUpdatedAt.contains(row.tableName)) {
+          if (!_noUpdatedAt.contains(row.entityType)) {
             updateData['updated_at'] = now;
           }
           final String keyColumn =
-              row.tableName == 'courses' ? 'slug' : 'uuid';
+              row.entityType == 'courses' ? 'slug' : 'uuid';
           await client
               .schema('memoix')
-              .from(row.tableName)
+              .from(row.entityType)
               .update(updateData)
               .eq(keyColumn, row.recordUuid);
           // Delivered successfully — remove from queue.
@@ -373,7 +373,7 @@ abstract class SupabaseSyncService {
         } catch (e) {
           debugPrint(
               'SupabaseSyncService.processPendingDeletions '
-              '(${row.tableName}, ${row.recordUuid}): $e');
+              '(${row.entityType}, ${row.recordUuid}): $e');
           // Leave in queue for next sync cycle.
         }
       }

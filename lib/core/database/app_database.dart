@@ -441,14 +441,14 @@ class RecipeImages extends Table {
 /// [SupabaseSyncService.processPendingDeletions] drains this table at the
 /// start of every sync cycle.
 @TableIndex(
-  name: 'idx_pending_deletions_table_uuid',
-  columns: {#tableName, #recordUuid},
+  name: 'idx_pending_deletions_entity_uuid',
+  columns: {#entityType, #recordUuid},
   unique: true,
 )
 class PendingDeletions extends Table {
   IntColumn get id => integer().autoIncrement()();
   /// Supabase table name (e.g. 'recipes', 'pizzas').
-  TextColumn get tableName => text()();
+  TextColumn get entityType => text()();
   /// UUID of the deleted row.
   TextColumn get recordUuid => text()();
   /// UTC timestamp when the local row was deleted.
