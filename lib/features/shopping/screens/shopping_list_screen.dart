@@ -362,6 +362,7 @@ class ShoppingListDetailScreen extends ConsumerWidget {
               TextButton(
                 onPressed: () {
                   ref.read(shoppingListServiceProvider).delete(list.id);
+                  unawaited(SupabaseSyncService.notifyDeleted('shopping_lists', list.uuid));
                   Navigator.pop(ctx);
                   Navigator.pop(context);
                 },

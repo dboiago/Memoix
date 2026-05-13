@@ -100,8 +100,7 @@ fallback. This is triggered only by a deliberate user import action.
 ## Developer Diagnostic Interface
 
 The app contains a developer diagnostic interface that requires manual
-credential provisioning and is not accessible to end users. No user data
-is transmitted through this interface.
+credential provisioning and is not accessible to end users.
 
 Navigating a valid token link contacts a developer-operated verification endpoint. 
 The token encodes only derived metadata and a cryptographic signature - 
