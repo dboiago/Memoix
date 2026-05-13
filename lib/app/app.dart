@@ -19,6 +19,7 @@ import '../features/tools/timer_service.dart';
 import '../features/personal_storage/services/personal_storage_service.dart';
 import '../core/database/database.dart';
 import '../core/services/image_migration_service.dart';
+import '../core/services/orphaned_image_cleanup_service.dart';
 
 /// Global key for the root ScaffoldMessenger - use this to show snackbars after navigation
 final rootScaffoldMessengerKey = GlobalKey<ScaffoldMessengerState>();
@@ -96,6 +97,9 @@ class _DeepLinkWrapperState extends ConsumerState<_DeepLinkWrapper>
     // with SVG warm-up) so that the 2-4 s of GZip + JSON work happens during
     // the splash rather than freezing the UI after first interaction.
     await ImageMigrationService.runIfNeeded();
+    // Run after migration so that RecipeImages is fully populated before
+    // the valid-filename set is built.
+    unawaited(OrphanedImageCleanupService.run());
   }
 
   @override
