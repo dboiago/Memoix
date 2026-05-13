@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import '../../features/modernist/models/modernist_recipe.dart';
+import '../privacy/pii_scrubber.dart';
 
 /// RAG telemetry payload for a [ModernistRecipe].
 ///
@@ -43,7 +44,7 @@ class ModernistKnowledgePayload {
                   'name': i.name,
                   'amount': i.amount,
                   'unit': i.unit,
-                  'notes': i.notes,
+                  'notes': i.notes != null ? PiiScrubber.scrub(i.notes!) : null,
                   'section': i.section,
                 })
             .toList(),

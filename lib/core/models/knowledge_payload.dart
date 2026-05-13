@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import '../../features/recipes/models/recipe.dart';
+import '../privacy/pii_scrubber.dart';
 
 /// Represents a single data point for the future Culinary Intelligence pipeline.
 ///
@@ -61,14 +62,14 @@ class KnowledgePayload {
         'cookCount': recipe.cookCount,
         'source': recipe.source.name,
         'tags': recipe.tags,
-        'comments': recipe.comments,
+        'comments': recipe.comments != null ? PiiScrubber.scrub(recipe.comments!) : null,
         'directions': recipe.directions,
         'ingredients': recipe.ingredients
             .map((i) => {
                   'name': i.name,
                   'amount': i.amount,
                   'unit': i.unit,
-                  'notes': i.preparation,
+                  'notes': i.preparation != null ? PiiScrubber.scrub(i.preparation!) : null,
                   'isOptional': i.isOptional,
                   'section': i.section,
                 })
