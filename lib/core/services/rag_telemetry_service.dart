@@ -82,8 +82,7 @@ class RagTelemetryService {
       return;
     }
 
-    final masterSwitchOn = _ref.read(contributeToIntelligenceProvider);
-    if (!masterSwitchOn) {
+    if (!await _masterSwitchEnabled()) {
       debugPrint(
         'RagTelemetryService: skipped — master Culinary Intelligence switch is OFF.',
       );
@@ -123,8 +122,7 @@ class RagTelemetryService {
     ModernistRecipe recipe, [
     String? rawSource,
   ]) async {
-    final masterSwitchOn = _ref.read(contributeToIntelligenceProvider);
-    if (!masterSwitchOn) {
+    if (!await _masterSwitchEnabled()) {
       debugPrint(
         'RagTelemetryService: modernist skipped — master Culinary Intelligence switch is OFF.',
       );
@@ -158,8 +156,7 @@ class RagTelemetryService {
     SmokingRecipe recipe, [
     String? rawSource,
   ]) async {
-    final masterSwitchOn = _ref.read(contributeToIntelligenceProvider);
-    if (!masterSwitchOn) {
+    if (!await _masterSwitchEnabled()) {
       debugPrint(
         'RagTelemetryService: smoking skipped — master Culinary Intelligence switch is OFF.',
       );
@@ -192,8 +189,7 @@ class RagTelemetryService {
   // ─────────────────────────────────────────────────────────────────────────
 
   Future<void> queuePizzaForExport(Pizza pizza, [String? rawSource]) async {
-    final masterSwitchOn = _ref.read(contributeToIntelligenceProvider);
-    if (!masterSwitchOn) {
+    if (!await _masterSwitchEnabled()) {
       debugPrint(
         'RagTelemetryService: pizza skipped — master Culinary Intelligence switch is OFF.',
       );
@@ -225,8 +221,7 @@ class RagTelemetryService {
     Sandwich sandwich, [
     String? rawSource,
   ]) async {
-    final masterSwitchOn = _ref.read(contributeToIntelligenceProvider);
-    if (!masterSwitchOn) {
+    if (!await _masterSwitchEnabled()) {
       debugPrint(
         'RagTelemetryService: sandwich skipped — master Culinary Intelligence switch is OFF.',
       );
@@ -262,8 +257,7 @@ class RagTelemetryService {
     CellarEntry entry, [
     String? rawSource,
   ]) async {
-    final masterSwitchOn = _ref.read(contributeToIntelligenceProvider);
-    if (!masterSwitchOn) {
+    if (!await _masterSwitchEnabled()) {
       debugPrint(
         'RagTelemetryService: cellar skipped — master Culinary Intelligence switch is OFF.',
       );
@@ -299,8 +293,7 @@ class RagTelemetryService {
     CheeseEntry entry, [
     String? rawSource,
   ]) async {
-    final masterSwitchOn = _ref.read(contributeToIntelligenceProvider);
-    if (!masterSwitchOn) {
+    if (!await _masterSwitchEnabled()) {
       debugPrint(
         'RagTelemetryService: cheese skipped — master Culinary Intelligence switch is OFF.',
       );
@@ -427,6 +420,14 @@ class RagTelemetryService {
   // ─────────────────────────────────────────────────────────────────────────
   // Private helpers
   // ─────────────────────────────────────────────────────────────────────────
+
+  /// Awaits preference load completion, then returns the current master switch
+  /// value. This eliminates the startup race where the synchronous [super(false)]
+  /// default is read before SharedPreferences has resolved.
+  Future<bool> _masterSwitchEnabled() async {
+    await _ref.read(contributeToIntelligenceProvider.notifier).ready;
+    return _ref.read(contributeToIntelligenceProvider);
+  }
 
   /// Returns the existing [lineageHash] unchanged if set, otherwise computes
   /// a fresh one via [compute] and persists it to the DB for [persistForId].

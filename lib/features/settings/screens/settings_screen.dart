@@ -403,6 +403,11 @@ final contributeToIntelligenceProvider =
 class ContributeToIntelligenceNotifier extends StateNotifier<bool> {
   static const _key = 'contribute_to_culinary_intelligence';
   final Ref _ref;
+  final _loadCompleter = Completer<void>();
+
+  /// Completes when the persisted preference has been loaded from
+  /// SharedPreferences. Await before trusting the current state value.
+  Future<void> get ready => _loadCompleter.future;
 
   ContributeToIntelligenceNotifier(this._ref) : super(false) {
     _loadPreference();
@@ -411,6 +416,7 @@ class ContributeToIntelligenceNotifier extends StateNotifier<bool> {
   Future<void> _loadPreference() async {
     final prefs = await SharedPreferences.getInstance();
     state = prefs.getBool(_key) ?? false; // Must default to OFF - opt-in only
+    _loadCompleter.complete();
   }
 
   Future<void> toggle() async {
