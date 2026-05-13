@@ -82,6 +82,21 @@ class PizzaRepository {
       updatedAt: Value(preserveTimestamp ? pizza.updatedAt : DateTime.now()),
       version: Value(pizza.version),
     ),);
+
+    // Keep the FTS index in sync after every save.
+    final savedRow = await _db.catalogueDao.getPizzaByUuid(entryUuid);
+    if (savedRow != null) {
+      await _db.catalogueDao.upsertPizzaFts(
+        savedRow.id,
+        name: safeName,
+        tags: pizza.tags,
+        cheeses: pizza.cheeses,
+        proteins: pizza.proteins,
+        vegetables: pizza.vegetables,
+        notes: safeNotes,
+      );
+    }
+
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
     // Fire-and-forget: queue for Culinary Intelligence export.
     unawaited(_ref.read(ragTelemetryServiceProvider).queuePizzaForExport(pizza));

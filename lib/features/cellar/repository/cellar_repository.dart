@@ -73,6 +73,18 @@ class CellarRepository {
       version: Value(entry.version),
     ),);
 
+    // Keep the FTS index in sync after every save.
+    final savedRow = await _db.cellarDao.getEntryByUuid(entryUuid);
+    if (savedRow != null) {
+      await _db.cellarDao.upsertCellarFts(
+        savedRow.id,
+        name: entry.name,
+        producer: entry.producer,
+        category: entry.category,
+        tastingNotes: entry.tastingNotes,
+      );
+    }
+
     // Notify personal storage service of change
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
     // Fire-and-forget: queue for Culinary Intelligence export.

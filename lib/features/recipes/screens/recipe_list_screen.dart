@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
@@ -100,9 +101,39 @@ class RecipeListScreen extends ConsumerStatefulWidget {
 class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
   final Set<String> _selectedCuisines = {}; // Empty = "All" (also used for base spirits in drinks)
   String _searchQuery = '';
+  Timer? _debounce;
+  List<Recipe>? _ftsResults; // null = no active search; set = debounced FTS results
 
   /// Check if this is the drinks course
   bool get _isDrinksScreen => widget.course.toLowerCase() == 'drinks';
+
+  @override
+  void dispose() {
+    _debounce?.cancel();
+    super.dispose();
+  }
+
+  /// Called on every search text change. Clears results immediately when the
+  /// query is empty; otherwise starts a 300 ms debounce before issuing the
+  /// FTS query so rapid keystrokes do not flood the database.
+  void _onSearchChanged(String value) {
+    _debounce?.cancel();
+    final trimmed = value.toLowerCase();
+    if (trimmed.isEmpty) {
+      setState(() {
+        _searchQuery = '';
+        _ftsResults = null;
+      });
+      return;
+    }
+    setState(() => _searchQuery = trimmed);
+    _debounce = Timer(const Duration(milliseconds: 300), () async {
+      final results = await ref
+          .read(recipeRepositoryProvider)
+          .searchRecipes(trimmed, courseFilter: [widget.course]);
+      if (mounted) setState(() => _ftsResults = results);
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -162,7 +193,7 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
                     return matches;
                   },
                   onSelected: (selection) {
-                    setState(() => _searchQuery = selection.toLowerCase());
+                    _onSearchChanged(selection.toLowerCase());
                   },
                   fieldViewBuilder: (context, textController, focusNode, onFieldSubmitted) {
                     return MemoixSearchBar(
@@ -174,13 +205,11 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
                               icon: Icon(Icons.clear, color: theme.colorScheme.onSurfaceVariant),
                               onPressed: () {
                                 textController.clear();
-                                setState(() => _searchQuery = '');
+                                _onSearchChanged('');
                               },
                             )
                           : null,
-                      onChanged: (value) {
-                        setState(() => _searchQuery = value.toLowerCase());
-                      },
+                      onChanged: _onSearchChanged,
                     );
                   },
                   optionsViewBuilder: (context, onSelected, options) {
@@ -272,7 +301,15 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
               Expanded(
                 child: Builder(
                   builder: (context) {
-                    final filteredRecipes = _filterRecipesInMemory(recipes);
+                    // When a FTS search is active, use those results as the
+                    // source list (already filtered by course). Otherwise fall
+                    // back to the stream-provided course list so the cuisine
+                    // chip filter can still narrow down all recipes.
+                    final sourceList =
+                        (_searchQuery.isNotEmpty && _ftsResults != null)
+                            ? _ftsResults!
+                            : recipes;
+                    final filteredRecipes = _filterRecipesInMemory(sourceList);
                     if (filteredRecipes.isEmpty) {
                       return _buildEmptyState();
                     }
@@ -570,8 +607,10 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
     }
   }
 
-  /// Filter the already-loaded recipe list in-memory to avoid
-  /// creating a new Future on every rebuild (which causes scroll jumps).
+  /// Applies the cuisine / base-spirit chip filter to [recipes].
+  ///
+  /// Text search is handled via FTS5 before this method is called — this
+  /// method only handles the structured chip filter.
   List<Recipe> _filterRecipesInMemory(List<Recipe> recipes) {
     var result = recipes;
 
@@ -585,18 +624,8 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
       }
     }
 
-    // Apply text search
-    if (_searchQuery.isNotEmpty) {
-      final q = _searchQuery.toLowerCase();
-      result = result.where((r) {
-        if (r.name.toLowerCase().contains(q)) return true;
-        if (r.cuisine != null && r.cuisine!.toLowerCase().contains(q)) return true;
-        if (r.tags.any((t) => t.toLowerCase().contains(q))) return true;
-        if (r.ingredients.any((i) => i.name.toLowerCase().contains(q))) return true;
-        if (r.ingredients.any((i) => (i.preparation ?? '').toLowerCase().contains(q))) return true;
-        return false;
-      }).toList();
-    }
+    return result;
+  }
 
     return result;
   }

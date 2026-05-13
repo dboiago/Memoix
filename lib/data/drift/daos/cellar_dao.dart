@@ -24,14 +24,39 @@ class CellarDao extends DatabaseAccessor<AppDatabase>
   Future<List<CellarEntry>> getFavourites() =>
       (select(cellarEntries)..where((t) => t.isFavourite.equals(true))).get();
 
-  Future<List<CellarEntry>> searchEntries(String query) {
-    final q = query.toLowerCase();
-    return (select(cellarEntries)
-          ..where((t) =>
-              t.name.lower().like('%$q%') |
-              t.producer.lower().like('%$q%') |
-              t.category.lower().like('%$q%'),))
-        .get();
+  /// Converts a raw user query into a safe FTS5 prefix MATCH expression.
+  /// Shared by all search methods in this DAO.
+  static String _buildFtsQuery(String query) {
+    final tokens = query
+        .trim()
+        .split(RegExp(r'\s+'))
+        .map((t) => t.replaceAll(RegExp(r'["\(\)\*\+\-:\^\{\}]'), ''))
+        .where((t) => t.isNotEmpty)
+        .toList();
+    if (tokens.isEmpty) return '';
+    return tokens.map((t) => '$t*').join(' ');
+  }
+
+  Future<List<CellarEntry>> searchEntries(String query) async {
+    final matchQuery = _buildFtsQuery(query);
+    if (matchQuery.isEmpty) return [];
+
+    final idRows = await customSelect(
+      'SELECT cellar_entries.id FROM cellar_entries '
+      'JOIN cellar_fts ON cellar_entries.id = cellar_fts.rowid '
+      'WHERE cellar_fts MATCH ? '
+      'ORDER BY bm25(cellar_fts)',
+      variables: [Variable.withString(matchQuery)],
+      readsFrom: {cellarEntries},
+    ).get();
+
+    final ids = idRows.map((r) => r.read<int>('id')).toList();
+    if (ids.isEmpty) return [];
+    final idOrder = {for (var i = 0; i < ids.length; i++) ids[i]: i};
+    final rows =
+        await (select(cellarEntries)..where((t) => t.id.isIn(ids))).get();
+    rows.sort((a, b) => (idOrder[a.id] ?? 0).compareTo(idOrder[b.id] ?? 0));
+    return rows;
   }
 
   Future<CellarEntry?> getEntryById(int id) =>
@@ -60,8 +85,12 @@ class CellarDao extends DatabaseAccessor<AppDatabase>
     );
   }
 
-  Future<int> deleteEntry(int id) =>
-      (delete(cellarEntries)..where((t) => t.id.equals(id))).go();
+  Future<int> deleteEntry(int id) async {
+    final count =
+        await (delete(cellarEntries)..where((t) => t.id.equals(id))).go();
+    await deleteCellarFts(id);
+    return count;
+  }
 
   Future<int> deleteEntryByUuid(String uuid) async {
     final entry = await getEntryByUuid(uuid);
@@ -117,15 +146,26 @@ class CellarDao extends DatabaseAccessor<AppDatabase>
   Future<List<CheeseEntry>> getCheeseFavourites() =>
       (select(cheeseEntries)..where((t) => t.isFavourite.equals(true))).get();
 
-  Future<List<CheeseEntry>> searchCheeseEntries(String query) {
-    final q = query.toLowerCase();
-    return (select(cheeseEntries)
-          ..where((t) =>
-              t.name.lower().like('%$q%') |
-              t.type.lower().like('%$q%') |
-              t.country.lower().like('%$q%') |
-              t.milk.lower().like('%$q%'),))
-        .get();
+  Future<List<CheeseEntry>> searchCheeseEntries(String query) async {
+    final matchQuery = _buildFtsQuery(query);
+    if (matchQuery.isEmpty) return [];
+
+    final idRows = await customSelect(
+      'SELECT cheese_entries.id FROM cheese_entries '
+      'JOIN cheese_fts ON cheese_entries.id = cheese_fts.rowid '
+      'WHERE cheese_fts MATCH ? '
+      'ORDER BY bm25(cheese_fts)',
+      variables: [Variable.withString(matchQuery)],
+      readsFrom: {cheeseEntries},
+    ).get();
+
+    final ids = idRows.map((r) => r.read<int>('id')).toList();
+    if (ids.isEmpty) return [];
+    final idOrder = {for (var i = 0; i < ids.length; i++) ids[i]: i};
+    final rows =
+        await (select(cheeseEntries)..where((t) => t.id.isIn(ids))).get();
+    rows.sort((a, b) => (idOrder[a.id] ?? 0).compareTo(idOrder[b.id] ?? 0));
+    return rows;
   }
 
   Future<CheeseEntry?> getCheeseEntryById(int id) =>
@@ -154,8 +194,12 @@ class CellarDao extends DatabaseAccessor<AppDatabase>
     );
   }
 
-  Future<int> deleteCheeseEntry(int id) =>
-      (delete(cheeseEntries)..where((t) => t.id.equals(id))).go();
+  Future<int> deleteCheeseEntry(int id) async {
+    final count =
+        await (delete(cheeseEntries)..where((t) => t.id.equals(id))).go();
+    await deleteCheeseFts(id);
+    return count;
+  }
 
   Future<int> deleteCheeseEntryByUuid(String uuid) async {
     final entry = await getCheeseEntryByUuid(uuid);
@@ -188,5 +232,51 @@ class CellarDao extends DatabaseAccessor<AppDatabase>
     final query = selectOnly(cheeseEntries)..addColumns([count]);
     final row = await query.getSingle();
     return row.read(count) ?? 0;
+  }
+
+  // ── FTS5 maintenance ───────────────────────────────────────────────────────
+
+  /// Upserts the [cellar_fts] row for [id].
+  Future<void> upsertCellarFts(
+    int id, {
+    required String name,
+    required String? producer,
+    required String? category,
+    required String? tastingNotes,
+  }) async {
+    await customStatement(
+      'INSERT OR REPLACE INTO cellar_fts'
+      '(rowid, name, producer, category, tasting_notes) '
+      'VALUES (?, ?, ?, ?, ?)',
+      [id, name, producer ?? '', category ?? '', tastingNotes ?? ''],
+    );
+  }
+
+  /// Removes the [cellar_fts] row for [id].
+  Future<void> deleteCellarFts(int id) async {
+    await customStatement('DELETE FROM cellar_fts WHERE rowid = ?', [id]);
+  }
+
+  /// Upserts the [cheese_fts] row for [id].
+  Future<void> upsertCheeseFts(
+    int id, {
+    required String name,
+    required String? type,
+    required String? country,
+    required String? milk,
+    required String? flavour,
+    required String? texture,
+  }) async {
+    await customStatement(
+      'INSERT OR REPLACE INTO cheese_fts'
+      '(rowid, name, type, country, milk, flavour, texture) '
+      'VALUES (?, ?, ?, ?, ?, ?, ?)',
+      [id, name, type ?? '', country ?? '', milk ?? '', flavour ?? '', texture ?? ''],
+    );
+  }
+
+  /// Removes the [cheese_fts] row for [id].
+  Future<void> deleteCheeseFts(int id) async {
+    await customStatement('DELETE FROM cheese_fts WHERE rowid = ?', [id]);
   }
 }

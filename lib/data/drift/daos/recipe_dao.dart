@@ -54,41 +54,96 @@ class RecipeDao extends DatabaseAccessor<AppDatabase>
             ..where((r) => r.recipeType.equals(recipeType)))
           .get();
 
-  /// Searches recipes across name, tags, cuisine, and ingredient name.
+  /// Converts a raw user search string into a safe FTS5 prefix MATCH expression.
   ///
-  /// Uses a LEFT OUTER JOIN on [Ingredients] so recipes without ingredients
-  /// are still returned when name/tags/cuisine match. The SQL-level [limit]
-  /// is applied to the joined row-set; Dart-side id-based deduplication then
-  /// collapses multi-ingredient matches into a single [Recipe] per row.
+  /// Each whitespace-separated token has FTS5 special characters stripped, then
+  /// a trailing `*` appended for prefix matching. Returns an empty string when
+  /// no valid tokens remain (caller must short-circuit and return an empty list).
+  static String _buildFtsQuery(String query) {
+    final tokens = query
+        .trim()
+        .split(RegExp(r'\s+'))
+        .map((t) => t.replaceAll(RegExp(r'["\(\)\*\+\-:\^\{\}]'), ''))
+        .where((t) => t.isNotEmpty)
+        .toList();
+    if (tokens.isEmpty) return '';
+    return tokens.map((t) => '$t*').join(' ');
+  }
+
+  /// Searches recipes using FTS5 full-text search across name, tags, cuisine,
+  /// ingredient names, and ingredient notes.
+  ///
+  /// Each token in [query] is suffix-matched (prefix search) so "chick" matches
+  /// "chicken". Results are ordered by BM25 relevance. Returns an empty list
+  /// when [query] is blank or produces no valid FTS tokens.
   Future<List<Recipe>> searchRecipes(String query, {int limit = 50}) async {
-    final pattern = '%${query.toLowerCase()}%';
+    final matchQuery = _buildFtsQuery(query);
+    if (matchQuery.isEmpty) return [];
 
-    final joinQuery = select(recipes).join([
-      leftOuterJoin(
-        ingredients,
-        ingredients.recipeId.equalsExp(recipes.id),
-      ),
-    ]);
+    final idRows = await customSelect(
+      'SELECT recipes.id FROM recipes '
+      'JOIN recipes_fts ON recipes.id = recipes_fts.rowid '
+      'WHERE recipes_fts MATCH ? '
+      'ORDER BY bm25(recipes_fts) '
+      'LIMIT ?',
+      variables: [Variable.withString(matchQuery), Variable.withInt(limit)],
+      readsFrom: {recipes},
+    ).get();
 
-    joinQuery.where(
-      recipes.name.lower().like(pattern) |
-          recipes.tags.lower().like(pattern) |
-          recipes.cuisine.lower().like(pattern) |
-          ingredients.name.lower().like(pattern) |
-          ingredients.notes.lower().like(pattern),
+    final ids = idRows.map((r) => r.read<int>('id')).toList();
+    if (ids.isEmpty) return [];
+
+    // Preserve BM25 order after the typed fetch.
+    final idOrder = {for (var i = 0; i < ids.length; i++) ids[i]: i};
+    final rows = await (select(recipes)..where((r) => r.id.isIn(ids))).get();
+    rows.sort((a, b) => (idOrder[a.id] ?? 0).compareTo(idOrder[b.id] ?? 0));
+    return rows;
+  }
+
+  // ── FTS5 maintenance ───────────────────────────────────────────────────────
+
+  /// Upserts the [recipes_fts] row for [recipeId].
+  ///
+  /// Fetches the recipe row and all current ingredient rows from the DB so that
+  /// this can be called immediately after ingredients are written, without the
+  /// caller having to pass data through.
+  Future<void> upsertRecipeFts(int recipeId) async {
+    final recipe =
+        await (select(recipes)..where((r) => r.id.equals(recipeId)))
+            .getSingleOrNull();
+    if (recipe == null) return;
+
+    final ings = await (select(ingredients)
+          ..where((i) => i.recipeId.equals(recipeId)))
+        .get();
+
+    final ingNames = ings.map((i) => i.name).join(' ');
+    final ingNotes = ings
+        .map((i) => i.notes ?? '')
+        .where((n) => n.isNotEmpty)
+        .join(' ');
+
+    await customStatement(
+      'INSERT OR REPLACE INTO recipes_fts'
+      '(rowid, name, tags, cuisine, ingredient_names, ingredient_notes) '
+      'VALUES (?, ?, ?, ?, ?, ?)',
+      [
+        recipeId,
+        recipe.name,
+        recipe.tags,
+        recipe.cuisine ?? '',
+        ingNames,
+        ingNotes,
+      ],
     );
+  }
 
-    final rows = await joinQuery.get();
-
-    final seen = <int>{};
-    final result = <Recipe>[];
-    for (final row in rows) {
-      final recipe = row.readTable(recipes);
-      if (seen.add(recipe.id)) {
-        result.add(recipe);
-      }
-    }
-    return result.take(limit).toList();
+  /// Removes the [recipes_fts] row for [id].
+  Future<void> deleteRecipeFts(int id) async {
+    await customStatement(
+      'DELETE FROM recipes_fts WHERE rowid = ?',
+      [id],
+    );
   }
 
   // ── Recipe write ───────────────────────────────────────────────────────────
@@ -129,6 +184,7 @@ class RecipeDao extends DatabaseAccessor<AppDatabase>
   Future<void> deleteRecipe(int id) async {
     await (delete(ingredients)..where((i) => i.recipeId.equals(id))).go();
     await (delete(recipes)..where((r) => r.id.equals(id))).go();
+    await deleteRecipeFts(id);
   }
 
   /// Writes the inverse of [current] directly without a preceding read.

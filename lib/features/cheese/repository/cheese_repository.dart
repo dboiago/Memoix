@@ -77,6 +77,20 @@ class CheeseRepository {
       version: Value(entry.version),
     ),);
 
+    // Keep the FTS index in sync after every save.
+    final savedRow = await _db.cellarDao.getCheeseEntryByUuid(entryUuid);
+    if (savedRow != null) {
+      await _db.cellarDao.upsertCheeseFts(
+        savedRow.id,
+        name: entry.name,
+        type: entry.type,
+        country: entry.country,
+        milk: entry.milk,
+        flavour: entry.flavour,
+        texture: entry.texture,
+      );
+    }
+
     // Notify personal storage service of change
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
     // Fire-and-forget: queue for Culinary Intelligence export.

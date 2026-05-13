@@ -511,7 +511,7 @@ class AppDatabase extends _$AppDatabase {
   }
 
   @override
-  int get schemaVersion => 8;
+  int get schemaVersion => 9;
 
   @override
   MigrationStrategy get migration => MigrationStrategy(
@@ -650,6 +650,104 @@ class AppDatabase extends _$AppDatabase {
       if (from < 8) {
         // Create the offline deletion queue table.
         await m.createTable(pendingDeletions);
+      }
+      if (from < 9) {
+        // Create five contentless FTS5 virtual tables for full-text search.
+        // IF NOT EXISTS makes the block idempotent on partial migration retries.
+        await customStatement('''
+          CREATE VIRTUAL TABLE IF NOT EXISTS recipes_fts USING fts5(
+            name, tags, cuisine, ingredient_names, ingredient_notes,
+            content='', tokenize='unicode61'
+          )
+        ''');
+        await customStatement('''
+          CREATE VIRTUAL TABLE IF NOT EXISTS pizzas_fts USING fts5(
+            name, tags, cheeses, proteins, vegetables, notes,
+            content='', tokenize='unicode61'
+          )
+        ''');
+        await customStatement('''
+          CREATE VIRTUAL TABLE IF NOT EXISTS sandwiches_fts USING fts5(
+            name, tags, bread, proteins, vegetables, cheeses, condiments, notes,
+            content='', tokenize='unicode61'
+          )
+        ''');
+        await customStatement('''
+          CREATE VIRTUAL TABLE IF NOT EXISTS cellar_fts USING fts5(
+            name, producer, category, tasting_notes,
+            content='', tokenize='unicode61'
+          )
+        ''');
+        await customStatement('''
+          CREATE VIRTUAL TABLE IF NOT EXISTS cheese_fts USING fts5(
+            name, type, country, milk, flavour, texture,
+            content='', tokenize='unicode61'
+          )
+        ''');
+
+        // Bulk-populate each FTS table from existing rows.
+        // COALESCE guards every nullable column so no null tokens are inserted.
+        await customStatement('''
+          INSERT INTO recipes_fts(rowid, name, tags, cuisine, ingredient_names, ingredient_notes)
+          SELECT
+            r.id,
+            r.name,
+            COALESCE(r.tags, ''),
+            COALESCE(r.cuisine, ''),
+            COALESCE(GROUP_CONCAT(i.name, ' '), ''),
+            COALESCE(GROUP_CONCAT(COALESCE(i.notes, ''), ' '), '')
+          FROM recipes r
+          LEFT JOIN ingredients i ON i.recipe_id = r.id
+          GROUP BY r.id
+        ''');
+        await customStatement('''
+          INSERT INTO pizzas_fts(rowid, name, tags, cheeses, proteins, vegetables, notes)
+          SELECT
+            id,
+            name,
+            COALESCE(tags, ''),
+            COALESCE(cheeses, ''),
+            COALESCE(proteins, ''),
+            COALESCE(vegetables, ''),
+            COALESCE(notes, '')
+          FROM pizzas
+        ''');
+        await customStatement('''
+          INSERT INTO sandwiches_fts(rowid, name, tags, bread, proteins, vegetables, cheeses, condiments, notes)
+          SELECT
+            id,
+            name,
+            COALESCE(tags, ''),
+            COALESCE(bread, ''),
+            COALESCE(proteins, ''),
+            COALESCE(vegetables, ''),
+            COALESCE(cheeses, ''),
+            COALESCE(condiments, ''),
+            COALESCE(notes, '')
+          FROM sandwiches
+        ''');
+        await customStatement('''
+          INSERT INTO cellar_fts(rowid, name, producer, category, tasting_notes)
+          SELECT
+            id,
+            name,
+            COALESCE(producer, ''),
+            COALESCE(category, ''),
+            COALESCE(tasting_notes, '')
+          FROM cellar_entries
+        ''');
+        await customStatement('''
+          INSERT INTO cheese_fts(rowid, name, type, country, milk, flavour, texture)
+          SELECT
+            id,
+            name,
+            COALESCE(type, ''),
+            COALESCE(country, ''),
+            COALESCE(milk, ''),
+            COALESCE(flavour, ''),
+            COALESCE(texture, '')
+          FROM cheese_entries
+        ''');
       }
     },
   );

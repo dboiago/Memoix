@@ -187,6 +187,7 @@ class ModernistRepository {
             ),)
         .toList();
     await _db.recipeDao.saveIngredients(ingredientCompanions);
+    await _db.recipeDao.upsertRecipeFts(recipeId);
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
     // Fire-and-forget: queue for Culinary Intelligence export.
     unawaited(_ref.read(ragTelemetryServiceProvider).queueModernistForExport(recipe));
@@ -362,17 +363,26 @@ class ModernistRepository {
     return techniques.toList()..sort();
   }
 
-  /// Search recipes
+  /// Search recipes using FTS5 full-text search.
+  ///
+  /// [searchRecipes] queries the shared [recipes_fts] table which covers all
+  /// recipe types, so results are filtered to [recipeType] == 'modernist'
+  /// before conversion.
   Future<List<ModernistRecipe>> search(String query) async {
     if (query.isEmpty) return getAll();
-    final lower = query.toLowerCase();
-    final all = await getAll();
-    return all.where((r) {
-      return r.name.toLowerCase().contains(lower) ||
-          (r.technique?.toLowerCase().contains(lower) ?? false) ||
-          r.equipment.any((e) => e.toLowerCase().contains(lower)) ||
-          r.ingredients.any((i) => i.name.toLowerCase().contains(lower));
-    }).toList();
+    final rows = await _db.recipeDao.searchRecipes(query);
+    final modernistRows =
+        rows.where((r) => r.recipeType == 'modernist').toList();
+    if (modernistRows.isEmpty) return [];
+    final allIngs = await _db.recipeDao
+        .getIngredientsForRecipes(modernistRows.map((r) => r.id));
+    final grouped = <int, List<Ingredient>>{};
+    for (final ing in allIngs) {
+      grouped.putIfAbsent(ing.recipeId, () => []).add(ing);
+    }
+    return modernistRows
+        .map((r) => _toModernistRecipe(r, grouped[r.id] ?? []))
+        .toList();
   }
 }
 

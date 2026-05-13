@@ -859,6 +859,7 @@ class RecipeRepository {
     await _db.recipeDao
         .saveIngredients(_toIngredientCompanions(recipeId, recipe.ingredients));
     if (recipeId > 0) await _db.recipeDao.touchRecipe(recipeId);
+    if (recipeId > 0) await _db.recipeDao.upsertRecipeFts(recipeId);
 
     // Persist image blobs for any new local files.
     if (recipeId > 0 && fileNameToPath.isNotEmpty) {
@@ -903,6 +904,11 @@ class RecipeRepository {
               _toIngredientCompanions(idByUuid[recipe.uuid]!, recipe.ingredients),
     };
     await _db.recipeDao.replaceIngredientsForRecipesBatch(ingredientMap);
+
+    // Update the FTS index for every recipe that was saved.
+    for (final id in idByUuid.values) {
+      await _db.recipeDao.upsertRecipeFts(id);
+    }
 
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
   }

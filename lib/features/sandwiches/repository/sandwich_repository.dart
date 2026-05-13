@@ -83,6 +83,23 @@ class SandwichRepository {
       updatedAt: Value(preserveTimestamp ? sandwich.updatedAt : DateTime.now()),
       version: Value(sandwich.version),
     ),);
+
+    // Keep the FTS index in sync after every save.
+    final savedRow = await _db.catalogueDao.getSandwichByUuid(entryUuid);
+    if (savedRow != null) {
+      await _db.catalogueDao.upsertSandwichFts(
+        savedRow.id,
+        name: safeName,
+        tags: sandwich.tags,
+        bread: sandwich.bread,
+        proteins: sandwich.proteins,
+        vegetables: sandwich.vegetables,
+        cheeses: sandwich.cheeses,
+        condiments: sandwich.condiments,
+        notes: safeNotes,
+      );
+    }
+
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
     // Fire-and-forget: queue for Culinary Intelligence export.
     unawaited(_ref.read(ragTelemetryServiceProvider).queueSandwichForExport(sandwich));
