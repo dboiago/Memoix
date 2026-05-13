@@ -15,6 +15,7 @@ import '../models/modernist_knowledge_payload.dart';
 import '../models/pizza_knowledge_payload.dart';
 import '../models/sandwich_knowledge_payload.dart';
 import '../models/smoking_knowledge_payload.dart';
+import '../privacy/pii_scrubber.dart';
 import '../utils/payload_hasher.dart';
 import 'rag_transmission_client.dart';
 import 'supabase_transmission_client.dart';
@@ -88,6 +89,8 @@ class RagTelemetryService {
       return;
     }
 
+    rawSource = rawSource == null ? null : PiiScrubber.scrub(rawSource);
+
     // Compute or reuse the stable lineage hash.
     final lineageHash = await _resolveLineageHash(
       existing: recipe.lineageHash,
@@ -127,6 +130,8 @@ class RagTelemetryService {
       return;
     }
 
+    rawSource = rawSource == null ? null : PiiScrubber.scrub(rawSource);
+
     final lineageHash = PayloadHasher.modernistLineageHash(recipe);
     final contentHash = PayloadHasher.modernistContentHash(recipe);
     final pairedRecipes = await _resolvePairings(recipe.pairedRecipeIds);
@@ -160,6 +165,8 @@ class RagTelemetryService {
       return;
     }
 
+    rawSource = rawSource == null ? null : PiiScrubber.scrub(rawSource);
+
     final pairedUuids =
         (jsonDecode(recipe.pairedRecipeIds) as List).cast<String>();
     final lineageHash = PayloadHasher.smokingLineageHash(recipe);
@@ -192,6 +199,8 @@ class RagTelemetryService {
       return;
     }
 
+    rawSource = rawSource == null ? null : PiiScrubber.scrub(rawSource);
+
     final lineageHash = PayloadHasher.pizzaLineageHash(pizza);
     final contentHash = PayloadHasher.pizzaContentHash(pizza);
     final metadata = await _buildMetadata();
@@ -222,6 +231,8 @@ class RagTelemetryService {
       );
       return;
     }
+
+    rawSource = rawSource == null ? null : PiiScrubber.scrub(rawSource);
 
     final lineageHash = PayloadHasher.sandwichLineageHash(sandwich);
     final contentHash = PayloadHasher.sandwichContentHash(sandwich);
@@ -258,6 +269,8 @@ class RagTelemetryService {
       return;
     }
 
+    rawSource = rawSource == null ? null : PiiScrubber.scrub(rawSource);
+
     final lineageHash = PayloadHasher.cellarLineageHash(entry);
     final contentHash = PayloadHasher.cellarContentHash(entry);
     final metadata = await _buildMetadata();
@@ -292,6 +305,8 @@ class RagTelemetryService {
       );
       return;
     }
+
+    rawSource = rawSource == null ? null : PiiScrubber.scrub(rawSource);
 
     final lineageHash = PayloadHasher.cheeseLineageHash(entry);
     final contentHash = PayloadHasher.cheeseContentHash(entry);
