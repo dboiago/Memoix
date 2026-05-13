@@ -627,9 +627,6 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
     return result;
   }
 
-    return result;
-  }
-
   void _showAddOptions(BuildContext context) {
     showModalBottomSheet(
       context: context,
