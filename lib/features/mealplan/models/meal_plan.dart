@@ -229,6 +229,9 @@ class MealPlanService {
   /// Clear all meals for a date
   Future<void> clearDay(DateTime date) async {
     final plan = await _db.mealPlanDao.getPlanByDate(_formatDate(date));
+    if (plan != null) {
+      await SupabaseSyncService.queueDeletion('meal_plans', plan.uuid);
+    }
     await _db.mealPlanDao.clearDay(_formatDate(date));
     if (plan != null) {
       unawaited(SupabaseSyncService.notifyDeleted('meal_plans', plan.uuid));

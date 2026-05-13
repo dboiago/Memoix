@@ -96,6 +96,7 @@ class CellarRepository {
   Future<bool> deleteEntryByUuid(String uuid, {bool fromMerge = false}) async {
     if (!fromMerge) {
       await TombstoneStore.add(TombstoneDomain.cellar, uuid);
+      await SupabaseSyncService.queueDeletion('cellar_entries', uuid);
     }
     final deleted = await _db.cellarDao.deleteEntryByUuid(uuid);
     final result = deleted > 0;

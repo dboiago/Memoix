@@ -100,6 +100,7 @@ class PizzaRepository {
   Future<bool> deletePizzaByUuid(String uuid, {bool fromMerge = false}) async {
     if (!fromMerge) {
       await TombstoneStore.add(TombstoneDomain.pizzas, uuid);
+      await SupabaseSyncService.queueDeletion('pizzas', uuid);
     }
     final count = await _db.catalogueDao.deletePizzaByUuid(uuid);
     if (count > 0) {

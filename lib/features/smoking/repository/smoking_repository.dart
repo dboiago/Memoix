@@ -121,6 +121,9 @@ class SmokingRepository {
   Future<void> deleteRecipeByUuid(String uuid, {bool fromMerge = false}) async {
     final recipe = await getRecipeByUuid(uuid);
     if (recipe != null) {
+      if (!fromMerge) {
+        await SupabaseSyncService.queueDeletion('smoking_recipes', uuid);
+      }
       await deleteRecipe(recipe, fromMerge: fromMerge);
       unawaited(SupabaseSyncService.notifyDeleted('smoking_recipes', uuid));
     }

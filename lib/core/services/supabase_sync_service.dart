@@ -110,6 +110,13 @@ abstract class SupabaseSyncService {
     final lastSyncCookingLogs = _getLastSync(prefs, _keyCookingLogs);
     final lastSyncRecipeImages = _getLastSync(prefs, _keyRecipeImages);
 
+    // ── Pending deletions — drain offline queue first ─────────────────────
+    try {
+      await processPendingDeletions();
+    } catch (e) {
+      debugPrint('Supabase sync error in processPendingDeletions: $e');
+    }
+
     // ── Recipes — independent error boundary ──────────────────────────────
     List<String> pulledRecipeUuids = [];
     try {
@@ -295,6 +302,83 @@ abstract class SupabaseSyncService {
           .eq(keyColumn, uuid);
     } catch (e) {
       debugPrint('SupabaseSyncService.notifyDeleted($entityType, $uuid): $e');
+    }
+  }
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // Offline deletion queue
+  // ─────────────────────────────────────────────────────────────────────────
+
+  /// Persists a soft-delete intent to the local [PendingDeletions] queue so
+  /// that the Supabase notification survives an app restart or offline period.
+  ///
+  /// Uses an upsert keyed on (tableName, recordUuid) so that repeated calls
+  /// for the same row are idempotent and only refresh [deletedAt].
+  ///
+  /// Never throws.
+  static Future<void> queueDeletion(String tableName, String recordUuid) async {
+    try {
+      final db = AppDatabase.instance;
+      await db
+          .into(db.pendingDeletions)
+          .insertOnConflictUpdate(PendingDeletionsCompanion(
+            tableName: Value(tableName),
+            recordUuid: Value(recordUuid),
+            deletedAt: Value(DateTime.now().toUtc()),
+          ));
+    } catch (e) {
+      debugPrint(
+          'SupabaseSyncService.queueDeletion($tableName, $recordUuid): $e');
+    }
+  }
+
+  /// Drains the [PendingDeletions] queue by replaying each queued soft-delete
+  /// against Supabase.
+  ///
+  /// Called at the start of every [sync] cycle, after connectivity and
+  /// sign-in guards have already passed. For each row, this method applies
+  /// the same Supabase UPDATE logic as [notifyDeleted]; on success the local
+  /// queue row is removed. Rows that fail (network error, Supabase error) are
+  /// left in the queue to be retried on the next sync.
+  ///
+  /// Never throws.
+  static Future<void> processPendingDeletions() async {
+    if (!SupabaseAuthService.isSignedIn) return;
+    try {
+      final db = AppDatabase.instance;
+      final client = _requireClient();
+      final rows = await db.select(db.pendingDeletions).get();
+      if (rows.isEmpty) return;
+
+      const _noUpdatedAt = {'meal_plans', 'shopping_lists', 'cooking_logs'};
+
+      for (final row in rows) {
+        try {
+          final now = DateTime.now().toUtc().toIso8601String();
+          final Map<String, dynamic> updateData = {'deleted_at': now};
+          if (!_noUpdatedAt.contains(row.tableName)) {
+            updateData['updated_at'] = now;
+          }
+          final String keyColumn =
+              row.tableName == 'courses' ? 'slug' : 'uuid';
+          await client
+              .schema('memoix')
+              .from(row.tableName)
+              .update(updateData)
+              .eq(keyColumn, row.recordUuid);
+          // Delivered successfully — remove from queue.
+          await (db.delete(db.pendingDeletions)
+                ..where((t) => t.id.equals(row.id)))
+              .go();
+        } catch (e) {
+          debugPrint(
+              'SupabaseSyncService.processPendingDeletions '
+              '(${row.tableName}, ${row.recordUuid}): $e');
+          // Leave in queue for next sync cycle.
+        }
+      }
+    } catch (e) {
+      debugPrint('SupabaseSyncService.processPendingDeletions: $e');
     }
   }
 

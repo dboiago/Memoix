@@ -433,6 +433,29 @@ class RecipeImages extends Table {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
+// PENDING DELETIONS (offline-queue for Supabase soft-deletes)
+// ─────────────────────────────────────────────────────────────────────────────
+
+/// Durable queue for soft-delete notifications that could not be delivered to
+/// Supabase immediately (e.g. device was offline at time of deletion).
+/// [SupabaseSyncService.processPendingDeletions] drains this table at the
+/// start of every sync cycle.
+@TableIndex(
+  name: 'idx_pending_deletions_table_uuid',
+  columns: {#tableName, #recordUuid},
+  unique: true,
+)
+class PendingDeletions extends Table {
+  IntColumn get id => integer().autoIncrement()();
+  /// Supabase table name (e.g. 'recipes', 'pizzas').
+  TextColumn get tableName => text()();
+  /// UUID of the deleted row.
+  TextColumn get recordUuid => text()();
+  /// UTC timestamp when the local row was deleted.
+  DateTimeColumn get deletedAt => dateTime()();
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
 // DATABASE
 // ─────────────────────────────────────────────────────────────────────────────
 
@@ -453,6 +476,7 @@ class RecipeImages extends Table {
   CookingLogs,
   Courses,
   RecipeImages,
+  PendingDeletions,
 ], daos: [
   CookingLogDao,
   UtilityDao,
@@ -487,7 +511,7 @@ class AppDatabase extends _$AppDatabase {
   }
 
   @override
-  int get schemaVersion => 7;
+  int get schemaVersion => 8;
 
   @override
   MigrationStrategy get migration => MigrationStrategy(
@@ -622,6 +646,10 @@ class AppDatabase extends _$AppDatabase {
                 'ALTER TABLE $table RENAME COLUMN is_favorite TO is_favourite');
           }
         }
+      }
+      if (from < 8) {
+        // Create the offline deletion queue table.
+        await m.createTable(pendingDeletions);
       }
     },
   );

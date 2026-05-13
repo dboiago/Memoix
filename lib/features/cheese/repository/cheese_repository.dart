@@ -100,6 +100,7 @@ class CheeseRepository {
   Future<bool> deleteEntryByUuid(String uuid, {bool fromMerge = false}) async {
     if (!fromMerge) {
       await TombstoneStore.add(TombstoneDomain.cheeses, uuid);
+      await SupabaseSyncService.queueDeletion('cheese_entries', uuid);
     }
     final deleted = await _db.cellarDao.deleteCheeseEntryByUuid(uuid);
     final result = deleted > 0;

@@ -13,6 +13,7 @@ import '../../../core/database/app_database.dart'
     hide Recipe, Ingredient, Course;
 import '../../../core/database/app_database.dart' as db
     show Recipe, Ingredient, Course;
+import '../../../core/services/supabase_sync_service.dart';
 import '../../../core/providers.dart';
 import '../../../core/services/integrity_service.dart';
 import '../../../core/services/rag_telemetry_service.dart';
@@ -911,6 +912,7 @@ class RecipeRepository {
       final row = await _db.recipeDao.getRecipeById(id);
       if (row != null) {
         await TombstoneStore.add(TombstoneDomain.recipes, row.uuid);
+        await SupabaseSyncService.queueDeletion('recipes', row.uuid);
       }
     }
     await _db.recipeDao.deleteRecipe(id);
@@ -925,6 +927,7 @@ class RecipeRepository {
     if (row == null) return false;
     if (!fromMerge) {
       await TombstoneStore.add(TombstoneDomain.recipes, uuid);
+      await SupabaseSyncService.queueDeletion('recipes', uuid);
     }
     await _db.recipeDao.deleteRecipe(row.id);
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
