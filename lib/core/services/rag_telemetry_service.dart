@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'dart:convert';
+import 'dart:io';
 
 import 'package:drift/drift.dart' show Value;
 import 'package:flutter/foundation.dart';
@@ -477,6 +478,7 @@ class RagTelemetryService {
     return {
       'appVersion': packageInfo.version,
       'buildNumber': packageInfo.buildNumber,
+      'deviceLocale': Platform.localeName,
     };
   }
 }
