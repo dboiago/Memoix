@@ -12,7 +12,7 @@ reporting are active.
 
 ## Data Storage
 
-All recipe data, notes, and settings are stored locally on your device using
+All recipe data, comments, and settings are stored locally on your device using
 an embedded SQLite database. This data never leaves your device unless you
 explicitly configure an optional sync feature.
 
@@ -24,7 +24,7 @@ configuration by the user. None are enabled by default.
 ### Cloud Sync (OneDrive / Google Drive)
 If you choose to connect OneDrive or Google Drive, recipe data is transmitted
 to and stored in your personal cloud storage account. Sync bundles may
-include a device name to identify the source of changes. This data is
+include a device model to identify the source of changes. This data is
 governed by Microsoft's or Google's respective privacy policies. The
 developer has no access to this data.
 
@@ -44,7 +44,7 @@ understanding of cooking as a domain.
 
 **Data Transmission**
 When enabled, the following is transmitted when you save, update, cook, or favourite a recipe:
-*   **Content:** Recipe text (ingredients, instructions, notes) and original source URL/text
+*   **Content:** Recipe text (ingredients, instructions, comments) and original source URL/text
 *   **Context:** Culinary statistics (cook count, favourite status, ratings) and pairing relationships
 *   **Metadata:** A derived lineage identifier and content hash (used to track refinement over time), app version, and system language
 
@@ -52,7 +52,7 @@ When enabled, the following is transmitted when you save, update, cook, or favou
 *   **No Identifiers:** No personal identifiers are ever collected - this includes name, email, account info, device IDs, or advertising identifiers
 *   **No Tracking:** No location data, screen-time metrics, or behavioural analytics are collected
 *   **Strict Exclusion:** Recipes marked as "Hidden" are unconditionally excluded from transmission regardless of global settings
-*   **User Responsibility:** Do not include sensitive personal information (such as passwords or government IDs) in recipe text or notes, as Memoix cannot guarantee the detection of all manually entered identifiers
+*   **User Responsibility:** Do not include sensitive personal information (such as passwords or government IDs) in recipe text or comments, as Memoix cannot guarantee the detection of all manually entered identifiers
 *   **Automated Scrubbing:** Memoix performs a best-effort automated scan to redact potential contact information (like emails or phone numbers) before transmission
 
 **Retention & Control**
@@ -103,6 +103,12 @@ The app contains a developer diagnostic interface that requires manual
 credential provisioning and is not accessible to end users. No user data
 is transmitted through this interface.
 
+Navigating a valid token link contacts a developer-operated verification endpoint. 
+The token encodes only derived metadata and a cryptographic signature - 
+no personal or recipe data is included. If verification succeeds, the user is 
+optionally presented with a guest book they may choose to sign. Guest book entries 
+are voluntarily submitted and retained by the developer.
+
 ## Support the Developer
 
 Memoix is free. GitHub Sponsors is available for those who wish to contribute.
@@ -114,7 +120,7 @@ By default, Memoix does not collect user data, usage statistics or crash
 reports. This remains true unless you explicitly enable the optional 
 Contribute Recipes feature described above.
 
-Device identifiers embedded in optional cloud sync bundles remain within 
+Device model embedded in optional cloud sync bundles remain within 
 your configured cloud storage accounts and are not transmitted to the 
 developer.
 
