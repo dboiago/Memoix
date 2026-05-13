@@ -593,6 +593,7 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
         if (r.cuisine != null && r.cuisine!.toLowerCase().contains(q)) return true;
         if (r.tags.any((t) => t.toLowerCase().contains(q))) return true;
         if (r.ingredients.any((i) => i.name.toLowerCase().contains(q))) return true;
+        if (r.ingredients.any((i) => (i.preparation ?? '').toLowerCase().contains(q))) return true;
         return false;
       }).toList();
     }

@@ -74,7 +74,8 @@ class RecipeDao extends DatabaseAccessor<AppDatabase>
       recipes.name.lower().like(pattern) |
           recipes.tags.lower().like(pattern) |
           recipes.cuisine.lower().like(pattern) |
-          ingredients.name.lower().like(pattern),
+          ingredients.name.lower().like(pattern) |
+          ingredients.notes.lower().like(pattern),
     );
 
     final rows = await joinQuery.get();
