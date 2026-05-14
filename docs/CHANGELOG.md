@@ -1,3 +1,54 @@
+## Memoix - v2.0.0+11 - 2026-05-14
+ 
+### Added
+ 
+- FTS5 full-text search across all recipe domains; five contentless virtual tables with `unicode61` tokenizer and diacritic preservation (`remove_diacritics 0`)
+- BM25 weighted result ranking with per-domain column weights; recipe name ranked above ingredients, notes ranked above structural fields
+- Ingredient prep notes (`ingredients.notes`) now included in search queries; covers substitutions and alternatives stored inline
+- Contribute Recipes: opt-in telemetry pipeline transmitting anonymized recipe data across all 7 domains to a developer-operated Supabase corpus
+- PII scrubber applied to all free-text fields before transmission; redacts emails, phone numbers, Canadian SINs, US SSNs, UK National Insurance numbers, IBANs, and IPv4 addresses
+- PII scrubber also applied to all Supabase backup serializers (`_recipeToRow`, `_pizzaToRow`, `_sandwichToRow`, `_cellarEntryToRow`, `_cheeseEntryToRow`, `_smokingRecipeToRow`)
+- Hidden recipe toggle (eye icon) in recipe edit and import review screens; recipes marked hidden are unconditionally excluded from Contribute Recipes transmission
+- Contribute Recipes opt-in prompt shown automatically once a minimum recipe collection exists; eligibility based on recipe count, cook count, and favourite count
+- `deviceLocale` (`Platform.localeName`) added to Contribute Recipes metadata payload alongside `appVersion` and `buildNumber`
+- Pending deletions queue (`PendingDeletions` table); recipes deleted while offline are reliably synced to Supabase on next connection, with per-domain coverage across all 9 entity types
+- Orphaned local image cleanup service runs on deferred startup after image migration; removes `.jpg`/`.png` files in `recipe_images/` not referenced by any table across all 8 image-bearing domains
+- Omnibar cuisine browse mode: queries containing a recognised cuisine term without meal-context words return a course-card layout filtered to matched cuisines rather than a suggestion list
+- Multi-cuisine detection in Omnibar; all matched cuisine terms collected and resolved via parallel retrieval queries with deduplication by name and course
+- Walk-in chip in Omnibar automatically disables and greys out when device is offline; mode auto-exits to Saved Recipes on connectivity loss
+- `MemoixFilterChip.onSelected` made nullable; Flutter's native `FilterChip` disabled state used for semantic correctness
+- [Internal] `ContinentMapping.cuisineToCountry` (231 cuisine keys) wired as the detection source for Omnibar intent classification
+
+### Changed
+ 
+- Search replaced LIKE-based queries with FTS5 `MATCH` + `bm25()` across all DAOs (`recipe_dao`, `catalogue_dao`, `cellar_dao`); in-memory text filter removed from `recipe_list_screen`; debounced `customSelect` replaces the stream-provided list during active queries
+- FTS5 query builder strips all reserved characters (`"*+-:^{}.[]\`) and appends `*` per token for prefix matching; prevents syntax errors on punctuation and special character input
+- Contribute Recipes backfill (`backfillOnOptIn`) sends in batches of 25 per network request rather than one HTTP call per recipe; all 7 domain transmission clients implement typed batch methods
+- Master switch (Contribute Recipes toggle) startup race condition resolved; `ContributeToIntelligenceNotifier` now exposes a readiness completer that `RagTelemetryService` awaits before executing the gate check
+- Unified AI service layer; `IngredientReferenceService` duplicate provider dispatch loop removed and consolidated under `AiService.sendMessage()`; `temperature: 0.2` preserved via new optional `AiRequest.temperature` field
+- `MemoixClient` wired as a first-party AI provider; participates in auto-select priority chain when `useMemoixHosted` is enabled; user-configured providers always take precedence; `baseUrl` configurable for future hosted endpoint
+- Hidden recipe toggle now unconditional in recipe detail screen; `contributeToIntelligenceProvider` watch removed from both layout builders
+- `isShared` preserved on recipe update; `toggleShared` is the only permitted mutation path; edit screen cannot inadvertently overwrite the flag
+- Omnibar results fire only on explicit submit (`onSubmitted` or arrow button); replaced `SearchDelegate`-based `OmnibarDelegate` with `OmnibarScreen` (`ConsumerStatefulWidget`)
+- [Internal] `SupabaseTransmissionClient` batch insert methods use single `.insert(List<Map>)` PostgREST call per chunk; `payloads.isEmpty` guard prevents empty requests
+- [Internal] `_buildMetadata()` called once per backfill run and shared across all 7 domain blocks
+- [Internal] Schema bumped from v7 to v11 across this branch; migrations are sequential and skip-version safe
+
+### Fixed
+ 
+- `isFavourite` spelling corrected across all 6 Drift tables, 36 files, and all serialization paths; schema migration renames `is_favorite` column via `ALTER TABLE … RENAME COLUMN` with `PRAGMA table_info` idempotency guard
+- FTS5 tables recreated with `remove_diacritics 0` tokenizer; accented characters no longer fold to base equivalents causing false-positive search matches
+- Modernist recipes now correctly indexed and searched via FTS5; `ModernistRepository.save()` calls `upsertRecipeFts` after ingredient write; `search()` routes through `recipeDao.searchRecipes()` with `recipeType` post-filter
+- `PendingDeletions` table column renamed from `tableName` to `entityType` to avoid clash with Drift's reserved `Table.tableName` getter
+- `ShoppingListService` menu action deletion path now notifies Supabase; previously only the card dismiss path was wired
+- Supabase transmission client insert calls now active with PII scrubbing confirmed end-to-end in Supabase table
+
+### Removed
+ 
+- In-memory text search block removed from `_filterRecipesInMemory` in `recipe_list_screen`; cuisine chip filter retained
+- Duplicate provider dispatch logic removed from `IngredientReferenceService` (`_selectProvider`, `_classifyError`, `_providerLabel`, direct `AiKeyStorage` access)
+
+
 ## Memoix - v1.2.0+10 - 2026-05-05
 
 ### Added
@@ -202,5 +253,4 @@
 - Removed unused and duplicate code in picker and import modules
 - Removed Apple icons from launcher assets due to build limitations
 - Removed deprecated `ingredient.dart` model from recipes feature
-
 - Removed references to unused variables and dead code in edit and comparison screens
