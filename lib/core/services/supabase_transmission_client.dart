@@ -180,5 +180,209 @@ class SupabaseTransmissionClient implements RagTransmissionClient {
       debugPrint('[SupabaseTransmissionClient] transmitCheese error — $e');
     }
   }
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // Batch methods — one POST per chunk of 25 rows, used by backfillOnOptIn().
+  // ─────────────────────────────────────────────────────────────────────────
+
+  @override
+  Future<void> transmitBatch(List<KnowledgePayload> payloads) async {
+    if (payloads.isEmpty) return;
+    try {
+      final rows = payloads
+          .map((p) => {
+                'domain_type': 'recipe',
+                'schema_version': 2,
+                'lineage_hash': p.lineageHash,
+                'content_hash': p.contentHash,
+                'payload': p.toJson(),
+              })
+          .toList();
+      await _supabaseClient
+          .schema('memoix')
+          .from('rag_telemetry')
+          .insert(rows);
+    } on PostgrestException catch (e) {
+      debugPrint(
+        '[SupabaseTransmissionClient] transmitBatch PostgrestException — '
+        'message: ${e.message}, code: ${e.code}, details: ${e.details}',
+      );
+    } catch (e) {
+      debugPrint('[SupabaseTransmissionClient] transmitBatch error — $e');
+    }
+  }
+
+  @override
+  Future<void> transmitModernistBatch(
+      List<ModernistKnowledgePayload> payloads) async {
+    if (payloads.isEmpty) return;
+    try {
+      final rows = payloads
+          .map((p) => {
+                'domain_type': 'modernist',
+                'schema_version': 2,
+                'lineage_hash': p.lineageHash,
+                'content_hash': p.contentHash,
+                'payload': p.toJson(),
+              })
+          .toList();
+      await _supabaseClient
+          .schema('memoix')
+          .from('rag_telemetry')
+          .insert(rows);
+    } on PostgrestException catch (e) {
+      debugPrint(
+        '[SupabaseTransmissionClient] transmitModernistBatch PostgrestException — '
+        'message: ${e.message}, code: ${e.code}, details: ${e.details}',
+      );
+    } catch (e) {
+      debugPrint(
+          '[SupabaseTransmissionClient] transmitModernistBatch error — $e');
+    }
+  }
+
+  @override
+  Future<void> transmitSmokingBatch(
+      List<SmokingKnowledgePayload> payloads) async {
+    if (payloads.isEmpty) return;
+    try {
+      final rows = payloads
+          .map((p) => {
+                'domain_type': 'smoking',
+                'schema_version': 2,
+                'lineage_hash': p.lineageHash,
+                'content_hash': p.contentHash,
+                'payload': p.toJson(),
+              })
+          .toList();
+      await _supabaseClient
+          .schema('memoix')
+          .from('rag_telemetry')
+          .insert(rows);
+    } on PostgrestException catch (e) {
+      debugPrint(
+        '[SupabaseTransmissionClient] transmitSmokingBatch PostgrestException — '
+        'message: ${e.message}, code: ${e.code}, details: ${e.details}',
+      );
+    } catch (e) {
+      debugPrint(
+          '[SupabaseTransmissionClient] transmitSmokingBatch error — $e');
+    }
+  }
+
+  @override
+  Future<void> transmitPizzaBatch(
+      List<PizzaKnowledgePayload> payloads) async {
+    if (payloads.isEmpty) return;
+    try {
+      final rows = payloads
+          .map((p) => {
+                'domain_type': 'pizza',
+                'schema_version': 2,
+                'lineage_hash': p.lineageHash,
+                'content_hash': p.contentHash,
+                'payload': p.toJson(),
+              })
+          .toList();
+      await _supabaseClient
+          .schema('memoix')
+          .from('rag_telemetry')
+          .insert(rows);
+    } on PostgrestException catch (e) {
+      debugPrint(
+        '[SupabaseTransmissionClient] transmitPizzaBatch PostgrestException — '
+        'message: ${e.message}, code: ${e.code}, details: ${e.details}',
+      );
+    } catch (e) {
+      debugPrint('[SupabaseTransmissionClient] transmitPizzaBatch error — $e');
+    }
+  }
+
+  @override
+  Future<void> transmitSandwichBatch(
+      List<SandwichKnowledgePayload> payloads) async {
+    if (payloads.isEmpty) return;
+    try {
+      final rows = payloads
+          .map((p) => {
+                'domain_type': 'sandwich',
+                'schema_version': 2,
+                'lineage_hash': p.lineageHash,
+                'content_hash': p.contentHash,
+                'payload': p.toJson(),
+              })
+          .toList();
+      await _supabaseClient
+          .schema('memoix')
+          .from('rag_telemetry')
+          .insert(rows);
+    } on PostgrestException catch (e) {
+      debugPrint(
+        '[SupabaseTransmissionClient] transmitSandwichBatch PostgrestException — '
+        'message: ${e.message}, code: ${e.code}, details: ${e.details}',
+      );
+    } catch (e) {
+      debugPrint(
+          '[SupabaseTransmissionClient] transmitSandwichBatch error — $e');
+    }
+  }
+
+  @override
+  Future<void> transmitCellarBatch(
+      List<CellarKnowledgePayload> payloads) async {
+    if (payloads.isEmpty) return;
+    try {
+      final rows = payloads
+          .map((p) => {
+                'domain_type': 'cellar',
+                'schema_version': 2,
+                'lineage_hash': p.lineageHash,
+                'content_hash': p.contentHash,
+                'payload': p.toJson(),
+              })
+          .toList();
+      await _supabaseClient
+          .schema('memoix')
+          .from('rag_telemetry')
+          .insert(rows);
+    } on PostgrestException catch (e) {
+      debugPrint(
+        '[SupabaseTransmissionClient] transmitCellarBatch PostgrestException — '
+        'message: ${e.message}, code: ${e.code}, details: ${e.details}',
+      );
+    } catch (e) {
+      debugPrint(
+          '[SupabaseTransmissionClient] transmitCellarBatch error — $e');
+    }
+  }
+
+  @override
+  Future<void> transmitCheeseBatch(
+      List<CheeseKnowledgePayload> payloads) async {
+    if (payloads.isEmpty) return;
+    try {
+      final rows = payloads
+          .map((p) => {
+                'domain_type': 'cheese',
+                'schema_version': 2,
+                'lineage_hash': p.lineageHash,
+                'content_hash': p.contentHash,
+                'payload': p.toJson(),
+              })
+          .toList();
+      await _supabaseClient
+          .schema('memoix')
+          .from('rag_telemetry')
+          .insert(rows);
+    } on PostgrestException catch (e) {
+      debugPrint(
+        '[SupabaseTransmissionClient] transmitCheeseBatch PostgrestException — '
+        'message: ${e.message}, code: ${e.code}, details: ${e.details}',
+      );
+    } catch (e) {
+      debugPrint(
+          '[SupabaseTransmissionClient] transmitCheeseBatch error — $e');
+    }
+  }
 }
 

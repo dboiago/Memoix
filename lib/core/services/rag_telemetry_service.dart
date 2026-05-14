@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
+import 'dart:math' show min;
 
 import 'package:drift/drift.dart' show Value;
 import 'package:flutter/foundation.dart';
@@ -346,11 +347,41 @@ class RagTelemetryService {
     required Future<List<CellarEntry>> Function() cellarFetcher,
     required Future<List<CheeseEntry>> Function() cheeseFetcher,
   }) async {
-    // Standard recipes — isShared gate enforced inside queueForExport.
+    const batchSize = 25;
+    // Metadata is identical for every payload in a single backfill run.
+    final metadata = await _buildMetadata();
+
+    // Standard recipes — non-shared entries are silently skipped.
     try {
       final recipes = await recipeFetcher();
+      final payloads = <KnowledgePayload>[];
       for (final recipe in recipes) {
-        unawaited(queueForExport(recipe));
+        if (!recipe.isShared) continue;
+        final lineageHash = await _resolveLineageHash(
+          existing: recipe.lineageHash,
+          compute: () => PayloadHasher.recipeLineageHash(recipe),
+          persistForId: recipe.id,
+        );
+        final contentHash = PayloadHasher.recipeContentHash(recipe);
+        final pairedRecipes = await _resolvePairings(recipe.pairedRecipeIds);
+        payloads.add(KnowledgePayload(
+          recipe: recipe,
+          rawSource: null,
+          metadata: metadata,
+          lineageHash: lineageHash,
+          contentHash: contentHash,
+          pairedRecipes: pairedRecipes,
+        ));
+      }
+      for (var i = 0; i < payloads.length; i += batchSize) {
+        final chunk = payloads.sublist(i, min(i + batchSize, payloads.length));
+        try {
+          await _client.transmitBatch(chunk);
+        } catch (e) {
+          debugPrint(
+            'RagTelemetryService.backfillOnOptIn: recipe batch at offset $i failed — $e',
+          );
+        }
       }
     } catch (e) {
       debugPrint('RagTelemetryService.backfillOnOptIn: recipe fetch failed — $e');
@@ -359,8 +390,29 @@ class RagTelemetryService {
     // Modernist recipes.
     try {
       final modernistRecipes = await modernistFetcher();
+      final payloads = <ModernistKnowledgePayload>[];
       for (final recipe in modernistRecipes) {
-        unawaited(queueModernistForExport(recipe));
+        final lineageHash = PayloadHasher.modernistLineageHash(recipe);
+        final contentHash = PayloadHasher.modernistContentHash(recipe);
+        final pairedRecipes = await _resolvePairings(recipe.pairedRecipeIds);
+        payloads.add(ModernistKnowledgePayload(
+          recipe: recipe,
+          rawSource: null,
+          metadata: metadata,
+          lineageHash: lineageHash,
+          contentHash: contentHash,
+          pairedRecipes: pairedRecipes,
+        ));
+      }
+      for (var i = 0; i < payloads.length; i += batchSize) {
+        final chunk = payloads.sublist(i, min(i + batchSize, payloads.length));
+        try {
+          await _client.transmitModernistBatch(chunk);
+        } catch (e) {
+          debugPrint(
+            'RagTelemetryService.backfillOnOptIn: modernist batch at offset $i failed — $e',
+          );
+        }
       }
     } catch (e) {
       debugPrint('RagTelemetryService.backfillOnOptIn: modernist fetch failed — $e');
@@ -369,8 +421,31 @@ class RagTelemetryService {
     // Smoking recipes.
     try {
       final smokingRecipes = await smokingFetcher();
+      final payloads = <SmokingKnowledgePayload>[];
       for (final recipe in smokingRecipes) {
-        unawaited(queueSmokingForExport(recipe));
+        final pairedUuids =
+            (jsonDecode(recipe.pairedRecipeIds) as List).cast<String>();
+        final lineageHash = PayloadHasher.smokingLineageHash(recipe);
+        final contentHash = PayloadHasher.smokingContentHash(recipe);
+        final pairedRecipes = await _resolvePairings(pairedUuids);
+        payloads.add(SmokingKnowledgePayload(
+          recipe: recipe,
+          rawSource: null,
+          metadata: metadata,
+          lineageHash: lineageHash,
+          contentHash: contentHash,
+          pairedRecipes: pairedRecipes,
+        ));
+      }
+      for (var i = 0; i < payloads.length; i += batchSize) {
+        final chunk = payloads.sublist(i, min(i + batchSize, payloads.length));
+        try {
+          await _client.transmitSmokingBatch(chunk);
+        } catch (e) {
+          debugPrint(
+            'RagTelemetryService.backfillOnOptIn: smoking batch at offset $i failed — $e',
+          );
+        }
       }
     } catch (e) {
       debugPrint('RagTelemetryService.backfillOnOptIn: smoking fetch failed — $e');
@@ -379,8 +454,27 @@ class RagTelemetryService {
     // Pizzas.
     try {
       final pizzas = await pizzaFetcher();
+      final payloads = <PizzaKnowledgePayload>[];
       for (final pizza in pizzas) {
-        unawaited(queuePizzaForExport(pizza));
+        final lineageHash = PayloadHasher.pizzaLineageHash(pizza);
+        final contentHash = PayloadHasher.pizzaContentHash(pizza);
+        payloads.add(PizzaKnowledgePayload(
+          pizza: pizza,
+          rawSource: null,
+          metadata: metadata,
+          lineageHash: lineageHash,
+          contentHash: contentHash,
+        ));
+      }
+      for (var i = 0; i < payloads.length; i += batchSize) {
+        final chunk = payloads.sublist(i, min(i + batchSize, payloads.length));
+        try {
+          await _client.transmitPizzaBatch(chunk);
+        } catch (e) {
+          debugPrint(
+            'RagTelemetryService.backfillOnOptIn: pizza batch at offset $i failed — $e',
+          );
+        }
       }
     } catch (e) {
       debugPrint('RagTelemetryService.backfillOnOptIn: pizza fetch failed — $e');
@@ -389,8 +483,27 @@ class RagTelemetryService {
     // Sandwiches.
     try {
       final sandwiches = await sandwichFetcher();
+      final payloads = <SandwichKnowledgePayload>[];
       for (final sandwich in sandwiches) {
-        unawaited(queueSandwichForExport(sandwich));
+        final lineageHash = PayloadHasher.sandwichLineageHash(sandwich);
+        final contentHash = PayloadHasher.sandwichContentHash(sandwich);
+        payloads.add(SandwichKnowledgePayload(
+          sandwich: sandwich,
+          rawSource: null,
+          metadata: metadata,
+          lineageHash: lineageHash,
+          contentHash: contentHash,
+        ));
+      }
+      for (var i = 0; i < payloads.length; i += batchSize) {
+        final chunk = payloads.sublist(i, min(i + batchSize, payloads.length));
+        try {
+          await _client.transmitSandwichBatch(chunk);
+        } catch (e) {
+          debugPrint(
+            'RagTelemetryService.backfillOnOptIn: sandwich batch at offset $i failed — $e',
+          );
+        }
       }
     } catch (e) {
       debugPrint('RagTelemetryService.backfillOnOptIn: sandwich fetch failed — $e');
@@ -399,8 +512,27 @@ class RagTelemetryService {
     // Cellar entries.
     try {
       final cellarEntries = await cellarFetcher();
+      final payloads = <CellarKnowledgePayload>[];
       for (final entry in cellarEntries) {
-        unawaited(queueCellarForExport(entry));
+        final lineageHash = PayloadHasher.cellarLineageHash(entry);
+        final contentHash = PayloadHasher.cellarContentHash(entry);
+        payloads.add(CellarKnowledgePayload(
+          entry: entry,
+          rawSource: null,
+          metadata: metadata,
+          lineageHash: lineageHash,
+          contentHash: contentHash,
+        ));
+      }
+      for (var i = 0; i < payloads.length; i += batchSize) {
+        final chunk = payloads.sublist(i, min(i + batchSize, payloads.length));
+        try {
+          await _client.transmitCellarBatch(chunk);
+        } catch (e) {
+          debugPrint(
+            'RagTelemetryService.backfillOnOptIn: cellar batch at offset $i failed — $e',
+          );
+        }
       }
     } catch (e) {
       debugPrint('RagTelemetryService.backfillOnOptIn: cellar fetch failed — $e');
@@ -409,8 +541,27 @@ class RagTelemetryService {
     // Cheese entries.
     try {
       final cheeseEntries = await cheeseFetcher();
+      final payloads = <CheeseKnowledgePayload>[];
       for (final entry in cheeseEntries) {
-        unawaited(queueCheeseForExport(entry));
+        final lineageHash = PayloadHasher.cheeseLineageHash(entry);
+        final contentHash = PayloadHasher.cheeseContentHash(entry);
+        payloads.add(CheeseKnowledgePayload(
+          entry: entry,
+          rawSource: null,
+          metadata: metadata,
+          lineageHash: lineageHash,
+          contentHash: contentHash,
+        ));
+      }
+      for (var i = 0; i < payloads.length; i += batchSize) {
+        final chunk = payloads.sublist(i, min(i + batchSize, payloads.length));
+        try {
+          await _client.transmitCheeseBatch(chunk);
+        } catch (e) {
+          debugPrint(
+            'RagTelemetryService.backfillOnOptIn: cheese batch at offset $i failed — $e',
+          );
+        }
       }
     } catch (e) {
       debugPrint('RagTelemetryService.backfillOnOptIn: cheese fetch failed — $e');
