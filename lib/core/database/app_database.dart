@@ -21,6 +21,8 @@ part 'app_database.g.dart';
 @TableIndex(name: 'idx_recipes_name', columns: {#name})
 @TableIndex(name: 'idx_recipes_course', columns: {#course})
 @TableIndex(name: 'idx_recipes_cuisine', columns: {#cuisine})
+@TableIndex(name: 'idx_recipes_recipe_type', columns: {#recipeType})
+@TableIndex(name: 'idx_recipes_is_shared', columns: {#isShared})
 class Recipes extends Table {
   IntColumn get id => integer().autoIncrement()();
   TextColumn get uuid => text()();
@@ -511,7 +513,7 @@ class AppDatabase extends _$AppDatabase {
   }
 
   @override
-  int get schemaVersion => 10;
+  int get schemaVersion => 11;
 
   @override
   MigrationStrategy get migration => MigrationStrategy(
@@ -857,6 +859,18 @@ class AppDatabase extends _$AppDatabase {
             COALESCE(flavour, ''),
             COALESCE(texture, '')
           FROM cheese_entries
+        ''');
+      }
+      if (from < 11) {
+        // Add indexes for two frequently-filtered Recipes columns that were
+        // previously missing. IF NOT EXISTS makes the block idempotent.
+        await customStatement('''
+          CREATE INDEX IF NOT EXISTS idx_recipes_recipe_type
+          ON recipes (recipe_type)
+        ''');
+        await customStatement('''
+          CREATE INDEX IF NOT EXISTS idx_recipes_is_shared
+          ON recipes (is_shared)
         ''');
       }
     },
