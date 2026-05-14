@@ -7,6 +7,7 @@ import 'package:uuid/uuid.dart';
 
 import '../../app/app_shell.dart';
 import '../../app/routes/router.dart';
+import '../../core/providers/connectivity_provider.dart';
 import '../../shared/widgets/memoix_filter_chip.dart';
 import '../../shared/widgets/course_card.dart';
 import '../rag/models/rag_query_result.dart';
@@ -578,6 +579,13 @@ class _OmnibarScreenState extends ConsumerState<OmnibarScreen> {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final memoixAvailable = ref.watch(memoixAvailableProvider);
+    final isOnline = ref.watch(connectivityProvider).valueOrNull ?? true;
+
+    ref.listen<AsyncValue<bool>>(connectivityProvider, (_, next) {
+      if (next.valueOrNull == false && _collectionModeNotifier.value) {
+        _collectionModeNotifier.value = false;
+      }
+    });
 
     return Scaffold(
       appBar: AppBar(
@@ -640,11 +648,13 @@ class _OmnibarScreenState extends ConsumerState<OmnibarScreen> {
                       MemoixFilterChip(
                         value: 'The Walk-in',
                         isSelected: isCollectionMode,
-                        onSelected: (_) {
-                          if (!isCollectionMode) {
-                            _collectionModeNotifier.value = true;
-                          }
-                        },
+                        onSelected: isOnline
+                            ? (_) {
+                                if (!isCollectionMode) {
+                                  _collectionModeNotifier.value = true;
+                                }
+                              }
+                            : null,
                       ),
                     ],
                   ),
@@ -1292,7 +1302,7 @@ class _WalkinSectionState extends ConsumerState<_WalkinSection> {
       _lastQuery = widget.query;
       _future = ref.read(ragRetrievalServiceProvider).query(
         widget.query,
-        cuisine: widget.classification.detectedCuisine,
+        cuisine: widget.classification.cuisinesForFilter?.firstOrNull,
         course: widget.classification.detectedCourse,
       );
     }
@@ -1383,21 +1393,47 @@ class _WalkinCollectionViewState extends ConsumerState<_WalkinCollectionView> {
   Future<List<RagQueryResult>> _resolve() {
     if (_future == null || _lastQuery != widget.query) {
       _lastQuery = widget.query;
-      _future = ref
-          .read(ragRetrievalServiceProvider)
-          .query(
-            widget.query,
-            limit: 20,
-            cuisine: widget.classification.detectedCuisine,
-            course: widget.classification.detectedCourse,
-          );
+      final cuisines = widget.classification.cuisinesForFilter;
+      if (cuisines != null && cuisines.length > 1) {
+        _future = _resolveMultiCuisine(cuisines);
+      } else {
+        _future = ref
+            .read(ragRetrievalServiceProvider)
+            .query(
+              widget.query,
+              limit: 20,
+              cuisine: cuisines?.first,
+              course: widget.classification.detectedCourse,
+            );
+      }
     }
     return _future!;
   }
 
+  Future<List<RagQueryResult>> _resolveMultiCuisine(
+    List<String> cuisines,
+  ) async {
+    final service = ref.read(ragRetrievalServiceProvider);
+    final futures = cuisines.map(
+      (c) => service.query(
+        widget.query,
+        limit: 20,
+        cuisine: c,
+        course: widget.classification.detectedCourse,
+      ),
+    );
+    final batches = await Future.wait(futures);
+    final seen = <String>{};
+    return batches
+        .expand((r) => r)
+        .where((r) => seen.add('${r.name}|${r.courseLabel}'))
+        .toList();
+  }
+
   /// True when exactly one of cuisine/course is detected (broad query).
   bool get _isBroad {
-    final hasCuisine = widget.classification.detectedCuisine != null;
+    final hasCuisine =
+        widget.classification.detectedCuisines?.isNotEmpty ?? false;
     final hasCourse = widget.classification.detectedCourse != null;
     return hasCuisine ^ hasCourse;
   }
@@ -1415,7 +1451,8 @@ class _WalkinCollectionViewState extends ConsumerState<_WalkinCollectionView> {
 
   @override
   Widget build(BuildContext context) {
-    final hasTaxonomy = widget.classification.detectedCuisine != null ||
+    final hasTaxonomy =
+        (widget.classification.detectedCuisines?.isNotEmpty ?? false) ||
         widget.classification.detectedCourse != null;
 
     // No taxonomy detected — fall back to local suggestion view.
