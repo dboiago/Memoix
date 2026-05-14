@@ -63,7 +63,7 @@ class RecipeDao extends DatabaseAccessor<AppDatabase>
     final tokens = query
         .trim()
         .split(RegExp(r'\s+'))
-        .map((t) => t.replaceAll(RegExp(r'["\(\)\*\+\-:\^\{\}]'), ''))
+        .map((t) => t.replaceAll(RegExp(r'["\(\)\*\+\-:\^\{\}\.\[\]]'), ''))
         .where((t) => t.isNotEmpty)
         .toList();
     if (tokens.isEmpty) return '';
@@ -84,7 +84,7 @@ class RecipeDao extends DatabaseAccessor<AppDatabase>
       'SELECT recipes.id FROM recipes '
       'JOIN recipes_fts ON recipes.id = recipes_fts.rowid '
       'WHERE recipes_fts MATCH ? '
-      'ORDER BY bm25(recipes_fts) '
+      'ORDER BY bm25(recipes_fts, 10, 2, 1, 7, 4) '
       'LIMIT ?',
       variables: [Variable.withString(matchQuery), Variable.withInt(limit)],
       readsFrom: {recipes},

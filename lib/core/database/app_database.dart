@@ -511,7 +511,7 @@ class AppDatabase extends _$AppDatabase {
   }
 
   @override
-  int get schemaVersion => 9;
+  int get schemaVersion => 10;
 
   @override
   MigrationStrategy get migration => MigrationStrategy(
@@ -687,6 +687,116 @@ class AppDatabase extends _$AppDatabase {
 
         // Bulk-populate each FTS table from existing rows.
         // COALESCE guards every nullable column so no null tokens are inserted.
+        await customStatement('''
+          INSERT INTO recipes_fts(rowid, name, tags, cuisine, ingredient_names, ingredient_notes)
+          SELECT
+            r.id,
+            r.name,
+            COALESCE(r.tags, ''),
+            COALESCE(r.cuisine, ''),
+            COALESCE(GROUP_CONCAT(i.name, ' '), ''),
+            COALESCE(GROUP_CONCAT(COALESCE(i.notes, ''), ' '), '')
+          FROM recipes r
+          LEFT JOIN ingredients i ON i.recipe_id = r.id
+          GROUP BY r.id
+        ''');
+        await customStatement('''
+          INSERT INTO pizzas_fts(rowid, name, tags, cheeses, proteins, vegetables, notes)
+          SELECT
+            id,
+            name,
+            COALESCE(tags, ''),
+            COALESCE(cheeses, ''),
+            COALESCE(proteins, ''),
+            COALESCE(vegetables, ''),
+            COALESCE(notes, '')
+          FROM pizzas
+        ''');
+        await customStatement('''
+          INSERT INTO sandwiches_fts(rowid, name, tags, bread, proteins, vegetables, cheeses, condiments, notes)
+          SELECT
+            id,
+            name,
+            COALESCE(tags, ''),
+            COALESCE(bread, ''),
+            COALESCE(proteins, ''),
+            COALESCE(vegetables, ''),
+            COALESCE(cheeses, ''),
+            COALESCE(condiments, ''),
+            COALESCE(notes, '')
+          FROM sandwiches
+        ''');
+        await customStatement('''
+          INSERT INTO cellar_fts(rowid, name, producer, category, tasting_notes)
+          SELECT
+            id,
+            name,
+            COALESCE(producer, ''),
+            COALESCE(category, ''),
+            COALESCE(tasting_notes, '')
+          FROM cellar_entries
+        ''');
+        await customStatement('''
+          INSERT INTO cheese_fts(rowid, name, type, country, milk, flavour, texture)
+          SELECT
+            id,
+            name,
+            COALESCE(type, ''),
+            COALESCE(country, ''),
+            COALESCE(milk, ''),
+            COALESCE(flavour, ''),
+            COALESCE(texture, '')
+          FROM cheese_entries
+        ''');
+      }
+      if (from < 10) {
+        // Drop and recreate all five FTS5 virtual tables with
+        // remove_diacritics 0 so that accented characters (e.g. é, ü, ñ) are
+        // treated as distinct tokens rather than being folded to their base
+        // equivalents. Contentless FTS5 tables cannot be ALTER-ed in place, so
+        // the tables must be dropped and recreated.
+        for (final tbl in [
+          'recipes_fts',
+          'pizzas_fts',
+          'sandwiches_fts',
+          'cellar_fts',
+          'cheese_fts',
+        ]) {
+          await customStatement('DROP TABLE IF EXISTS $tbl');
+        }
+
+        await customStatement('''
+          CREATE VIRTUAL TABLE IF NOT EXISTS recipes_fts USING fts5(
+            name, tags, cuisine, ingredient_names, ingredient_notes,
+            content='', tokenize='unicode61 remove_diacritics 0'
+          )
+        ''');
+        await customStatement('''
+          CREATE VIRTUAL TABLE IF NOT EXISTS pizzas_fts USING fts5(
+            name, tags, cheeses, proteins, vegetables, notes,
+            content='', tokenize='unicode61 remove_diacritics 0'
+          )
+        ''');
+        await customStatement('''
+          CREATE VIRTUAL TABLE IF NOT EXISTS sandwiches_fts USING fts5(
+            name, tags, bread, proteins, vegetables, cheeses, condiments, notes,
+            content='', tokenize='unicode61 remove_diacritics 0'
+          )
+        ''');
+        await customStatement('''
+          CREATE VIRTUAL TABLE IF NOT EXISTS cellar_fts USING fts5(
+            name, producer, category, tasting_notes,
+            content='', tokenize='unicode61 remove_diacritics 0'
+          )
+        ''');
+        await customStatement('''
+          CREATE VIRTUAL TABLE IF NOT EXISTS cheese_fts USING fts5(
+            name, type, country, milk, flavour, texture,
+            content='', tokenize='unicode61 remove_diacritics 0'
+          )
+        ''');
+
+        // Repopulate each FTS table from source rows.
         await customStatement('''
           INSERT INTO recipes_fts(rowid, name, tags, cuisine, ingredient_names, ingredient_notes)
           SELECT

@@ -31,7 +31,7 @@ class CatalogueDao extends DatabaseAccessor<AppDatabase>
     final tokens = query
         .trim()
         .split(RegExp(r'\s+'))
-        .map((t) => t.replaceAll(RegExp(r'["\(\)\*\+\-:\^\{\}]'), ''))
+        .map((t) => t.replaceAll(RegExp(r'["\(\)\*\+\-:\^\{\}\.\[\]]'), ''))
         .where((t) => t.isNotEmpty)
         .toList();
     if (tokens.isEmpty) return '';
@@ -47,7 +47,7 @@ class CatalogueDao extends DatabaseAccessor<AppDatabase>
       'SELECT pizzas.id FROM pizzas '
       'JOIN pizzas_fts ON pizzas.id = pizzas_fts.rowid '
       'WHERE pizzas_fts MATCH ? '
-      'ORDER BY bm25(pizzas_fts)',
+      'ORDER BY bm25(pizzas_fts, 10, 2, 5, 5, 5, 3)',
       variables: [Variable.withString(matchQuery)],
       readsFrom: {pizzas},
     ).get();
@@ -184,7 +184,7 @@ class CatalogueDao extends DatabaseAccessor<AppDatabase>
       'SELECT sandwiches.id FROM sandwiches '
       'JOIN sandwiches_fts ON sandwiches.id = sandwiches_fts.rowid '
       'WHERE sandwiches_fts MATCH ? '
-      'ORDER BY bm25(sandwiches_fts)',
+      'ORDER BY bm25(sandwiches_fts, 10, 2, 5, 5, 5, 5, 5, 3)',
       variables: [Variable.withString(matchQuery)],
       readsFrom: {sandwiches},
     ).get();

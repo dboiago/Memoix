@@ -30,7 +30,7 @@ class CellarDao extends DatabaseAccessor<AppDatabase>
     final tokens = query
         .trim()
         .split(RegExp(r'\s+'))
-        .map((t) => t.replaceAll(RegExp(r'["\(\)\*\+\-:\^\{\}]'), ''))
+        .map((t) => t.replaceAll(RegExp(r'["\(\)\*\+\-:\^\{\}\.\[\]]'), ''))
         .where((t) => t.isNotEmpty)
         .toList();
     if (tokens.isEmpty) return '';
@@ -45,7 +45,7 @@ class CellarDao extends DatabaseAccessor<AppDatabase>
       'SELECT cellar_entries.id FROM cellar_entries '
       'JOIN cellar_fts ON cellar_entries.id = cellar_fts.rowid '
       'WHERE cellar_fts MATCH ? '
-      'ORDER BY bm25(cellar_fts)',
+      'ORDER BY bm25(cellar_fts, 10, 4, 2, 3)',
       variables: [Variable.withString(matchQuery)],
       readsFrom: {cellarEntries},
     ).get();
@@ -154,7 +154,7 @@ class CellarDao extends DatabaseAccessor<AppDatabase>
       'SELECT cheese_entries.id FROM cheese_entries '
       'JOIN cheese_fts ON cheese_entries.id = cheese_fts.rowid '
       'WHERE cheese_fts MATCH ? '
-      'ORDER BY bm25(cheese_fts)',
+      'ORDER BY bm25(cheese_fts, 10, 5, 2, 3, 4, 4)',
       variables: [Variable.withString(matchQuery)],
       readsFrom: {cheeseEntries},
     ).get();
