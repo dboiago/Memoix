@@ -10,10 +10,15 @@ class AiSettings {
   final bool autoSelectProvider;
   final AiProvider? preferredProvider;
 
+  /// When true, [AiProvider.memoix] is tried first for all requests and does
+  /// not require a user-supplied API key (uses the hosted Memoix endpoint).
+  final bool useMemoixHosted;
+
   const AiSettings({
     required this.providers,
     this.autoSelectProvider = true,
     this.preferredProvider,
+    this.useMemoixHosted = false,
   });
 
   AiProviderConfig configFor(AiProvider provider) {
@@ -28,17 +33,20 @@ class AiSettings {
     Map<AiProvider, AiProviderConfig>? providers,
     bool? autoSelectProvider,
     AiProvider? preferredProvider,
+    bool? useMemoixHosted,
   }) {
     return AiSettings(
       providers: providers ?? this.providers,
       autoSelectProvider: autoSelectProvider ?? this.autoSelectProvider,
       preferredProvider: preferredProvider ?? this.preferredProvider,
+      useMemoixHosted: useMemoixHosted ?? this.useMemoixHosted,
     );
   }
 
   Map<String, dynamic> toJson() => {
         'autoSelectProvider': autoSelectProvider,
         'preferredProvider': preferredProvider?.name,
+        'useMemoixHosted': useMemoixHosted,
         'providers': providers.map(
           (key, value) => MapEntry(key.name, value.toJson()),
         ),
@@ -64,6 +72,7 @@ class AiSettings {
               (e) => e.name == json['preferredProvider'],
             )
           : null,
+      useMemoixHosted: json['useMemoixHosted'] ?? false,
       providers: providers,
     );
   }

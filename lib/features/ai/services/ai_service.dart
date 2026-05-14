@@ -16,7 +16,15 @@ class AiRequest {
   /// Which provider to use. `null` means auto-select.
   final AiProvider? provider;
 
-  const AiRequest({this.text, this.imageBytes, this.provider});
+  /// Sampling temperature forwarded to the provider. `null` uses the
+  /// service default (0.0 for recipe extraction, 0.2 for reference lookups).
+  final double? temperature;
+
+  /// Override the system prompt. When `null`, each feature supplies its own
+  /// default (e.g. [AiRecipeImporter.buildSystemPrompt] for import calls).
+  final String? systemPrompt;
+
+  const AiRequest({this.text, this.imageBytes, this.provider, this.temperature, this.systemPrompt});
 }
 
 /// Clean abstraction over any AI provider.
