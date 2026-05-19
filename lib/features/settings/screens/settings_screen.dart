@@ -23,6 +23,8 @@ import '../../../core/providers.dart';
 import '../../../core/widgets/update_available_dialog.dart';
 import '../../../core/services/rag_telemetry_service.dart';
 import '../services/recipe_backup_service.dart';
+import '../../import/screens/external_import_review_screen.dart';
+import '../../import/services/external_recipe_importer.dart';
 import '../../recipes/repository/recipe_repository.dart';
 import '../../pizzas/repository/pizza_repository.dart';
 import '../../sandwiches/repository/sandwich_repository.dart';
@@ -618,11 +620,41 @@ class SettingsScreen extends ConsumerWidget {
             onTap: () async {
               try {
                 final service = ref.read(recipeBackupServiceProvider);
-                final count = await service.importRecipes();
-                if (count > 0) {
-                  MemoixSnackBar.showSuccess('Imported $count recipe${count == 1 ? '' : 's'}');
-                } else {
-                  MemoixSnackBar.show('No recipes imported');
+                final outcome = await service.importRecipes();
+                switch (outcome) {
+                  case ImportCancelled():
+                    return;
+                  case ImportCompleted(:final imported):
+                    if (imported > 0) {
+                      MemoixSnackBar.showSuccess(
+                        'Imported $imported recipe${imported == 1 ? '' : 's'}',
+                      );
+                    } else {
+                      MemoixSnackBar.show('No recipes imported');
+                    }
+                  case ImportNeedsReview(:final recipes, :final parseSkipped):
+                    if (!context.mounted) return;
+                    final imported = await Navigator.push<int>(
+                      context,
+                      MaterialPageRoute(
+                        builder: (_) => ExternalImportReviewScreen(
+                          recipes: recipes,
+                          parseSkipped: parseSkipped,
+                        ),
+                      ),
+                    );
+                    if (imported == null) return; // user dismissed
+                    if (imported > 0) {
+                      final skipNote = parseSkipped > 0
+                          ? ' ($parseSkipped skipped)'
+                          : '';
+                      MemoixSnackBar.showSuccess(
+                        'Imported $imported '
+                        'recipe${imported == 1 ? '' : 's'}$skipNote',
+                      );
+                    } else {
+                      MemoixSnackBar.show('No recipes imported');
+                    }
                 }
               } catch (e) {
                 MemoixSnackBar.showError('Import failed: $e');

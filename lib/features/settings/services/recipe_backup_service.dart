@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'dart:io';
+import 'dart:typed_data';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:file_picker/file_picker.dart';
@@ -17,6 +18,7 @@ import '../../modernist/repository/modernist_repository.dart';
 import '../../notes/repository/scratch_pad_repository.dart';
 import '../../pizzas/models/pizza.dart';
 import '../../pizzas/repository/pizza_repository.dart';
+import '../../import/services/external_recipe_importer.dart';
 import '../../recipes/models/course.dart';
 import '../../recipes/models/recipe.dart';
 import '../../recipes/repository/recipe_repository.dart';
@@ -120,24 +122,56 @@ class RecipeBackupService {
     return file.path;
   }
 
-  /// Import recipes from a JSON file
-  /// Returns the number of recipes imported
-  Future<int> importRecipes() async {
-    // Pick file
+  /// Import recipes from a JSON backup or external app archive file.
+  ///
+  /// Returns a [RecipeImportFileResult]:
+  ///   - [ImportCancelled] — user dismissed the file picker.
+  ///   - [ImportCompleted] — JSON backup imported directly (no review needed).
+  ///   - [ImportNeedsReview] — external archive parsed; caller must push
+  ///     [ExternalImportReviewScreen] so the user can confirm which recipes
+  ///     to import.
+  Future<RecipeImportFileResult> importRecipes() async {
     final result = await FilePicker.platform.pickFiles(
       type: FileType.custom,
-      allowedExtensions: ['json'],
+      allowedExtensions: [
+        'json',
+        'melarecipes', 'melarecipe',
+        'paprikarecipes', 'paprikarecipe',
+      ],
       allowMultiple: false,
     );
 
     if (result == null || result.files.isEmpty) {
-      return 0;
+      return ImportCancelled();
     }
 
     final file = result.files.first;
-    String jsonString;
+    final ext = file.name.split('.').last.toLowerCase();
 
-    // Read file content
+    // External app formats (Mela, Paprika, …)
+    if (ExternalRecipeImporter.supportsExtension(ext)) {
+      final Uint8List bytes;
+      if (file.bytes != null) {
+        bytes = file.bytes!;
+      } else if (file.path != null) {
+        bytes = await File(file.path!).readAsBytes();
+      } else {
+        throw Exception('Could not read file');
+      }
+
+      final summary = await ExternalRecipeImporter().parse(ext, bytes);
+
+      if (summary.recipes.isEmpty && summary.skippedCount == 0) {
+        return ImportCompleted(imported: 0, skipped: 0);
+      }
+      return ImportNeedsReview(
+        recipes: summary.recipes,
+        parseSkipped: summary.skippedCount,
+      );
+    }
+
+    // JSON backup format — existing direct-to-DB behaviour
+    final String jsonString;
     if (file.path != null) {
       jsonString = await File(file.path!).readAsString();
     } else if (file.bytes != null) {
@@ -146,19 +180,18 @@ class RecipeBackupService {
       throw Exception('Could not read file');
     }
 
-    // Parse JSON
     final jsonData = jsonDecode(jsonString);
-
+    final int count;
     if (jsonData is! Map || !jsonData.containsKey('recipes')) {
-      // Try parsing as a simple array of recipes
       if (jsonData is List) {
-        return _importRecipeList(jsonData);
+        count = await _importRecipeList(jsonData);
+      } else {
+        throw Exception('Invalid backup file format');
       }
-      throw Exception('Invalid backup file format');
+    } else {
+      count = await _importRecipeList(jsonData['recipes'] as List);
     }
-
-    final recipesList = jsonData['recipes'] as List;
-    return _importRecipeList(recipesList);
+    return ImportCompleted(imported: count, skipped: 0);
   }
 
   Future<int> _importRecipeList(List recipesList) async {
