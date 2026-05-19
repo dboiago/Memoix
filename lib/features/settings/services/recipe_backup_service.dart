@@ -167,6 +167,7 @@ class RecipeBackupService {
       return ImportNeedsReview(
         recipes: summary.recipes,
         parseSkipped: summary.skippedCount,
+        failures: summary.failures,
       );
     }
 

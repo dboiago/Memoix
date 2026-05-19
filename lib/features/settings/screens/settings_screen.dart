@@ -632,25 +632,30 @@ class SettingsScreen extends ConsumerWidget {
                     } else {
                       MemoixSnackBar.show('No recipes imported');
                     }
-                  case ImportNeedsReview(:final recipes, :final parseSkipped):
+                  case ImportNeedsReview(:final recipes, :final parseSkipped, :final failures):
                     if (!context.mounted) return;
-                    final imported = await Navigator.push<int>(
+                    final result = await Navigator.push<(int, int)>(
                       context,
                       MaterialPageRoute(
                         builder: (_) => ExternalImportReviewScreen(
                           recipes: recipes,
                           parseSkipped: parseSkipped,
+                          failures: failures,
                         ),
                       ),
                     );
-                    if (imported == null) return; // user dismissed
-                    if (imported > 0) {
+                    if (result == null) return; // user dismissed
+                    final (imported, fixedCount) = result;
+                    if (imported > 0 || fixedCount > 0) {
                       final skipNote = parseSkipped > 0
                           ? ' ($parseSkipped skipped)'
                           : '';
+                      final fixNote = fixedCount > 0
+                          ? ' ($fixedCount corrected manually)'
+                          : '';
                       MemoixSnackBar.showSuccess(
                         'Imported $imported '
-                        'recipe${imported == 1 ? '' : 's'}$skipNote',
+                        'recipe${imported == 1 ? '' : 's'}$skipNote$fixNote',
                       );
                     } else {
                       MemoixSnackBar.show('No recipes imported');

@@ -6,7 +6,7 @@ import 'parsers/mela_parser.dart';
 import 'parsers/paprika_parser.dart';
 
 export 'parsers/external_format_parser.dart'
-    show ExternalImportSummary, ExternalFormatParser;
+    show ExternalImportSummary, ExternalFormatParser, ExternalParseFailure;
 
 // ---------------------------------------------------------------------------
 // Result types returned to the caller of RecipeBackupService.importRecipes()
@@ -38,7 +38,14 @@ class ImportNeedsReview extends RecipeImportFileResult {
   /// Number of archive entries that were skipped due to parse errors.
   final int parseSkipped;
 
-  ImportNeedsReview({required this.recipes, required this.parseSkipped});
+  /// Detailed failure records for entries that could not be parsed.
+  final List<ExternalParseFailure> failures;
+
+  ImportNeedsReview({
+    required this.recipes,
+    required this.parseSkipped,
+    this.failures = const [],
+  });
 }
 
 // ---------------------------------------------------------------------------

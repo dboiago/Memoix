@@ -28,32 +28,96 @@ class MelaParser implements ExternalFormatParser {
       archive = ZipDecoder().decodeBytes(bytes);
     } catch (e) {
       debugPrint('MelaParser: failed to decode zip — $e');
-      return const ExternalImportSummary(recipes: [], skippedCount: 0);
+      return ExternalImportSummary(
+        recipes: [],
+        skippedCount: 0,
+        failures: [
+          ExternalParseFailure(
+            reason: 'Corrupt archive: ${_shortMessage(e)}',
+          ),
+        ],
+      );
     }
 
     final results = <Recipe>[];
-    int skipped = 0;
+    final failures = <ExternalParseFailure>[];
 
     for (final entry in archive) {
       if (!entry.isFile) continue;
       if (!entry.name.toLowerCase().endsWith('.melarecipe')) continue;
 
+      // Phase 1: decode bytes to UTF-8 string
+      String? jsonStr;
       try {
-        final jsonStr = utf8.decode(entry.content as List<int>);
-        final json = jsonDecode(jsonStr) as Map<String, dynamic>;
+        jsonStr = utf8.decode(entry.content as List<int>);
+      } on FormatException catch (e) {
+        debugPrint('MelaParser: UTF-8 decode failed for "${entry.name}" — $e');
+        failures.add(ExternalParseFailure(
+          name: _entryBaseName(entry.name),
+          reason: 'Malformed UTF-8 encoding',
+        ));
+        continue;
+      } catch (e) {
+        debugPrint('MelaParser: decode error for "${entry.name}" — $e');
+        failures.add(ExternalParseFailure(
+          name: _entryBaseName(entry.name),
+          reason: 'Corrupt archive entry: ${_shortMessage(e)}',
+        ));
+        continue;
+      }
+
+      // Phase 2: JSON parse
+      Map<String, dynamic>? json;
+      try {
+        json = jsonDecode(jsonStr) as Map<String, dynamic>;
+      } on FormatException catch (e) {
+        debugPrint('MelaParser: JSON parse failed for "${entry.name}" — $e');
+        failures.add(ExternalParseFailure(
+          name: _entryBaseName(entry.name),
+          reason: 'Malformed JSON: ${_shortMessage(e)}',
+          rawText: jsonStr,
+        ));
+        continue;
+      } catch (e) {
+        debugPrint('MelaParser: JSON error for "${entry.name}" — $e');
+        failures.add(ExternalParseFailure(
+          name: _entryBaseName(entry.name),
+          reason: 'JSON parse error: ${_shortMessage(e)}',
+          rawText: jsonStr,
+        ));
+        continue;
+      }
+
+      // Phase 3: field mapping — graceful degradation; only fails if no title
+      try {
         final recipe = await _parseEntry(json);
         if (recipe != null) {
           results.add(recipe);
         } else {
-          skipped++;
+          // No usable title — add to failures
+          final bestEffortName = json['title']?.toString().trim();
+          failures.add(ExternalParseFailure(
+            name: bestEffortName?.isNotEmpty == true ? bestEffortName : _entryBaseName(entry.name),
+            reason: 'Missing required fields (title)',
+            rawText: jsonStr,
+          ));
         }
       } catch (e) {
-        debugPrint('MelaParser: skipping entry "${entry.name}" — $e');
-        skipped++;
+        debugPrint('MelaParser: field mapping failed for "${entry.name}" — $e');
+        final bestEffortName = json['title']?.toString().trim();
+        failures.add(ExternalParseFailure(
+          name: bestEffortName?.isNotEmpty == true ? bestEffortName : _entryBaseName(entry.name),
+          reason: 'Parse error: ${_shortMessage(e)}',
+          rawText: jsonStr,
+        ));
       }
     }
 
-    return ExternalImportSummary(recipes: results, skippedCount: skipped);
+    return ExternalImportSummary(
+      recipes: results,
+      skippedCount: failures.length,
+      failures: failures,
+    );
   }
 
   Future<Recipe?> _parseEntry(Map<String, dynamic> json) async {
@@ -195,6 +259,19 @@ class MelaParser implements ExternalFormatParser {
     }
 
     return results;
+  }
+
+  /// Strips the directory path and extension from an archive entry filename.
+  String _entryBaseName(String entryName) {
+    final base = entryName.split('/').last;
+    final dot = base.lastIndexOf('.');
+    return dot > 0 ? base.substring(0, dot) : base;
+  }
+
+  /// Returns a short (≤120 char) version of an exception message.
+  String _shortMessage(Object e) {
+    final msg = e.toString();
+    return msg.length > 120 ? '${msg.substring(0, 117)}…' : msg;
   }
 
   /// Decodes base64 image strings to temporary files.

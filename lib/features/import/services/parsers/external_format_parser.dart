@@ -3,14 +3,46 @@ import 'dart:typed_data';
 import '../../../recipes/models/recipe.dart';
 import '../../../recipes/models/course.dart';
 
+// ---------------------------------------------------------------------------
+// Failure model
+// ---------------------------------------------------------------------------
+
+/// Represents a single archive entry that could not be fully parsed.
+class ExternalParseFailure {
+  /// Best-effort name recovered before the crash point.
+  /// Falls back to the archive entry filename, then null.
+  final String? name;
+
+  /// Human-readable description of the failure reason.
+  final String reason;
+
+  /// The decoded UTF-8 string if decoding succeeded before the failure;
+  /// null if the failure was at or before the decode step.
+  final String? rawText;
+
+  const ExternalParseFailure({
+    required this.reason,
+    this.name,
+    this.rawText,
+  });
+}
+
+// ---------------------------------------------------------------------------
+// Summary
+// ---------------------------------------------------------------------------
+
 /// The result produced by any [ExternalFormatParser].
 class ExternalImportSummary {
   final List<Recipe> recipes;
   final int skippedCount;
 
+  /// Detailed records for entries that could not be parsed.
+  final List<ExternalParseFailure> failures;
+
   const ExternalImportSummary({
     required this.recipes,
     required this.skippedCount,
+    this.failures = const [],
   });
 }
 

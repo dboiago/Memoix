@@ -1884,11 +1884,11 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
       
       if (widget.redirectOnSave) {
         // Redirect to the saved recipe's course list screen
-        navigator.pop(); // Pop the review screen first
+        navigator.pop(true); // Pop the review screen first
         _navigateToCourseList(navigator, _selectedCourse);
       } else {
         // Main screen mode - just pop back
-        navigator.pop();
+        navigator.pop(true);
       }
       
       // Show snackbar with option to view
