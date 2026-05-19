@@ -1,4 +1,4 @@
-## Memoix - v1.2.0+10 - 2026-05-05
+## Memoix - v1.2.0+10 - 2026-05-19
 
 ### Added
 
@@ -19,6 +19,9 @@
 - Android launch mode changed to `singleTask` to prevent multiple app instances from share intents
 - URL validation moved ahead of all WebView/controller initialisation (prevents resource leaks)
 - Default import timeout increased to 30s to account for challenge resolution delays
+- Ingredient classification refactored from O(K) full-database substring scanning to O(N) n-gram tokenization with exact O(1) map lookups; eliminated `_sortedKeys` length-sorting entirely to prevent main-thread blocking during `initialize()`
+- Fixed word-fragment collision bugs in `IngredientService` where partial database strings (e.g., "ase", "mac") inadvertently triggered false-positive category routing on unrelated terms (e.g., "laser", "machine")
+- Ported Dart normalization regex rules directly into the build pipeline (`build_ingredients_db.py`) for name deduplication
 
 ### Fixed
 
