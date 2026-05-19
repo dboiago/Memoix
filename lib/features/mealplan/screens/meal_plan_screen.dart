@@ -16,6 +16,7 @@ import '../../recipes/repository/recipe_repository.dart';
 import '../../recipes/models/cuisine.dart';
 import '../../recipes/models/recipe.dart';
 import '../../shopping/screens/shopping_list_screen.dart';
+import '../../../core/utils/date_time_utils.dart';
 
 /// Data passed during drag operation
 class _DraggableMealData {
@@ -60,7 +61,7 @@ class _MealPlanScreenState extends ConsumerState<MealPlanScreen> {
   }
 
   DateTime _getWeekStart(DateTime date) {
-    return date.subtract(Duration(days: date.weekday - 1));
+    return date.subtract(Duration(days: date.weekday - 1)).toMidnight();
   }
 
   DateTime _getWeekForPage(int page) {
@@ -303,7 +304,7 @@ class _DayCardState extends ConsumerState<DayCard> {
   static const _undoDuration = Duration(seconds: 4);
 
   static DateTime _weekStartOf(DateTime date) =>
-      date.subtract(Duration(days: date.weekday - 1));
+      date.subtract(Duration(days: date.weekday - 1)).toMidnight();
 
   @override
   void deactivate() {
@@ -793,7 +794,7 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
   List<Recipe> _suggestions = [];
 
   static DateTime _weekStartOf(DateTime date) =>
-      date.subtract(Duration(days: date.weekday - 1));
+      date.subtract(Duration(days: date.weekday - 1)).toMidnight();
 
   @override
   void initState() {
