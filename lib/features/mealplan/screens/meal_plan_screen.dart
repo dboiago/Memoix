@@ -410,10 +410,20 @@ class _DayCardState extends ConsumerState<DayCard> {
       builder: (context, candidateData, rejectedData) {
         final isDragHovering = candidateData.isNotEmpty;
         
-        // Visual feedback when hovering over the card
-        final borderColor = isDragHovering
-            ? theme.colorScheme.primary
-            : (isHighlighted ? theme.colorScheme.secondary : theme.colorScheme.outline.withValues(alpha: 0.1));
+        // Visual feedback when hovering over the card.
+        // Priority: drag > selected > today-only (not selected) > hovered > default.
+        // Today without selection uses primary (matches the date number colour) so
+        // only the selected day uses the accent (secondary) border.
+        final Color borderColor;
+        if (isDragHovering) {
+          borderColor = theme.colorScheme.primary;
+        } else if (widget.isSelected || _hovered) {
+          borderColor = theme.colorScheme.secondary;
+        } else if (isToday) {
+          borderColor = theme.colorScheme.primary;
+        } else {
+          borderColor = theme.colorScheme.outline.withValues(alpha: 0.1);
+        }
             
         final borderWidth = (isHighlighted || isDragHovering) ? 1.5 : 1.0;
         
