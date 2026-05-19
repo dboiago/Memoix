@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../../recipes/models/course.dart';
-import '../../../recipes/models/recipe.dart';
-import '../../../recipes/repository/recipe_repository.dart';
+import '../../recipes/models/course.dart';
+import '../../recipes/models/recipe.dart';
+import '../../recipes/repository/recipe_repository.dart';
 
 /// Batch review screen for external-format imports (Mela, Paprika, etc.).
 ///
