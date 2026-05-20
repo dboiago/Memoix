@@ -128,26 +128,17 @@ class _ExternalImportReviewScreenState
     if (mounted) Navigator.pop(context, (imported, _fixedCount));
   }
 
-  /// Launch [ImportReviewScreen] for a failure row that can be fixed.
-  /// If a [ExternalParseFailure.partialResult] is available it is passed
-  /// directly so the user sees pre-populated ingredients and directions.
-  /// Otherwise a minimal result carrying only the raw text is built.
+  /// Launch [ImportReviewScreen] for a failure row that has a
+  /// [ExternalParseFailure.partialResult] with pre-populated data.
   Future<void> _launchFix(_FailureRow row) async {
     final failure = row.failure;
-    if (failure.partialResult == null && failure.rawText == null) return;
-
-    final importResult = failure.partialResult ??
-        RecipeImportResult(
-          rawText: failure.rawText,
-          rawIngredients: const [],
-          rawDirections: const [],
-        );
+    if (failure.partialResult == null) return;
 
     if (!mounted) return;
     final saved = await Navigator.push<bool>(
       context,
       MaterialPageRoute(
-        builder: (_) => ImportReviewScreen(importResult: importResult),
+        builder: (_) => ImportReviewScreen(importResult: failure.partialResult!),
       ),
     );
 
@@ -350,7 +341,7 @@ class _FailureRowWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final failure = row.failure;
-    final canFix = failure.rawText != null || failure.partialResult != null;
+    final canFix = failure.partialResult != null;
     final muted = theme.colorScheme.onSurfaceVariant;
 
     return ListTile(

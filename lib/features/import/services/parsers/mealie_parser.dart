@@ -482,7 +482,8 @@ class MealieParser implements ExternalFormatParser {
           if (name != null && name.isNotEmpty) categories.add(name);
         }
       }
-      final course = detectCourseFromCategories(categories) ?? 'mains';
+      final detectedCourse = detectCourseFromCategories(categories);
+      final course = detectedCourse ?? 'mains';
 
       // Description + notes
       final description = json['description']?.toString().trim() ?? '';
@@ -625,6 +626,10 @@ class MealieParser implements ExternalFormatParser {
         source: source,
         rawText: jsonStr,
         detectedCourses: [course],
+        nameConfidence: 0.0,
+        courseConfidence: detectedCourse != null ? 0.7 : 0.3,
+        ingredientsConfidence: rawIngredients.isNotEmpty ? 0.9 : 0.0,
+        directionsConfidence: rawDirections.isNotEmpty ? 0.8 : 0.0,
       );
     } catch (_) {
       return null;
