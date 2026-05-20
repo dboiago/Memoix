@@ -429,14 +429,9 @@ class _SandwichDetailViewState extends ConsumerState<_SandwichDetailView> {
         );
 
         if (confirmed == true) {
-          // Capture navigator before the async gap. The parent ConsumerWidget
-          // (SandwichDetailScreen) will rebuild with sandwich == null once the
-          // provider updates, removing this state from the tree and making
-          // context.mounted false. MemoixSnackBar uses a global key and
-          // needs no mounted guard.
-          final navigator = Navigator.of(context);
+          // Navigate first while context is valid, then delete.
+          Navigator.of(context).pop();
           await ref.read(sandwichRepositoryProvider).deleteSandwich(sandwich.id);
-          navigator.pop();
           MemoixSnackBar.show('${sandwich.name} deleted');
         }
         break;

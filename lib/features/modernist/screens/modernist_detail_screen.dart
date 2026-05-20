@@ -1122,13 +1122,11 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
           ),
         );
         if (confirm == true && mounted) {
-          // Capture navigator before the async gap. The parent ConsumerWidget
-          // (ModernistDetailScreen) will rebuild with recipe == null once the
-          // provider updates, removing this state from the tree and making
-          // mounted false. Capturing the reference now keeps navigation valid.
-          final navigator = Navigator.of(context);
+          // Navigate first while mounted is still true (checked synchronously above),
+          // then delete. Avoids the race where delete() fires the Drift stream,
+          // Riverpod disposes the inner widget, and navigator.pop() is never reached.
+          Navigator.of(context).pop();
           await ref.read(modernistRepositoryProvider).delete(recipe.id);
-          navigator.pop();
         }
         break;
     }

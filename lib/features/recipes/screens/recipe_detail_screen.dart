@@ -1411,15 +1411,15 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
           ),
           TextButton(
             onPressed: () async {
+              // Navigate first while all contexts are valid, then delete.
+              // Avoids the race where the Drift stream fires immediately after
+              // deleteRecipe(), Riverpod disposes the inner widget, and any
+              // post-await mounted/ctx.mounted check returns false.
+              Navigator.pop(ctx);       // dismiss dialog (root navigator)
+              nestedNavigator.pop();    // pop detail screen (nested navigator)
               await ref.read(recipeRepositoryProvider).deleteRecipe(recipe.id);
               if (recipe.id > 0) {
                 unawaited(SupabaseSyncService.notifyDeleted('recipes', recipe.uuid));
-              }
-              // ctx (dialog's BuildContext) stays mounted until we explicitly
-              // dismiss the dialog, so this guard is reliable.
-              if (ctx.mounted) {
-                Navigator.pop(ctx);    // dismiss dialog from root navigator
-                nestedNavigator.pop(); // pop detail screen from nested navigator
               }
             },
             style: TextButton.styleFrom(foregroundColor: Theme.of(ctx).colorScheme.secondary),
