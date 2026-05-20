@@ -65,7 +65,7 @@ class ZipDispatchParser implements ExternalFormatParser {
           skippedCount: 0,
           failures: [
             ExternalParseFailure(
-              reason: 'Unrecognised ZIP format — expected a Mealie or Tandoor export',
+              reason: 'Unrecognised ZIP format - expected a Mealie or Tandoor export',
             ),
           ],
         );
