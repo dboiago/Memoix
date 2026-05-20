@@ -61,17 +61,21 @@ class MealieParser implements ExternalFormatParser {
 
     // Collect JSON recipe entries (entries under recipes/ ending in .json)
     // and classify each as subfolder vs flat by path depth.
-    //   subfolder: "recipes/{slug}/{slug}.json" → 3 segments
+    //   subfolder: "recipes/{slug}/recipe.json" → 3 segments, last = recipe.json
     //   flat:      "recipes/{slug}.json"         → 2 segments
     final jsonEntries = <ArchiveFile>[];
     for (final entry in archive) {
       if (!entry.isFile) continue;
       final name = entry.name;
-      if (!name.endsWith('.json')) continue;
       final parts = name.split('/');
-      // Must start with "recipes/" and be either 2 or 3 segments
       if (parts.isEmpty || parts[0] != 'recipes') continue;
-      if (parts.length == 2 || parts.length == 3) {
+      // Subfolder format: recipes/{slug}/recipe.json
+      if (parts.length == 3 && parts[2] == 'recipe.json') {
+        jsonEntries.add(entry);
+        continue;
+      }
+      // Flat format: recipes/{slug}.json
+      if (parts.length == 2 && name.endsWith('.json')) {
         jsonEntries.add(entry);
       }
     }

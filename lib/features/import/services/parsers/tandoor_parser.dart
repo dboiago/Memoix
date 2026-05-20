@@ -56,7 +56,7 @@ class TandoorParser implements ExternalFormatParser {
       final parts = entry.name.split('/');
       // "recipes/{name}/recipe.json" → 3 segments, last is "recipe.json"
       if (parts.length == 3 &&
-          parts[0] == 'recipes' &&
+          parts[0].toLowerCase() == 'recipes' &&
           parts[2] == 'recipe.json') {
         recipeEntries.add(entry);
       }

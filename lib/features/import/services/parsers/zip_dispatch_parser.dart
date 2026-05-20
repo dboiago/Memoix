@@ -85,15 +85,17 @@ class ZipDispatchParser implements ExternalFormatParser {
       final name = entry.name;
       final parts = name.split('/');
 
-      if (parts.isEmpty || parts[0] != 'recipes') continue;
+      if (parts.isEmpty || parts[0].toLowerCase() != 'recipes') continue;
 
-      // Tandoor: recipes/{name}/recipe.json — exactly 3 segments, last = recipe.json
+      // Tandoor: {Recipes}/{name}/recipe.json — 3 segments, last = recipe.json (case-insensitive folder)
       if (parts.length == 3 && parts[2] == 'recipe.json') {
         hasTandoorStructure = true;
       }
 
       // Mealie flat: recipes/{slug}.json — exactly 2 segments ending .json
-      // Mealie subfolder: recipes/{slug}/{slug}.json — 3 segments, name.json != recipe.json
+      // Mealie subfolder: recipes/{slug}/recipe.json — 3 segments, last = recipe.json
+      // (both covered here; subfolder Mealie also matches recipe.json so the
+      // sniff step resolves the tie via recipeIngredient vs steps key)
       if (parts.length == 2 && name.endsWith('.json')) {
         hasMealieStructure = true;
       }
@@ -116,7 +118,8 @@ class ZipDispatchParser implements ExternalFormatParser {
     for (final entry in archive) {
       if (!entry.isFile) continue;
       final name = entry.name;
-      if (!name.startsWith('recipes/') || !name.endsWith('.json')) continue;
+      final lower = name.toLowerCase();
+      if (!lower.startsWith('recipes/') || !lower.endsWith('.json')) continue;
 
       try {
         final jsonStr = utf8.decode(entry.content as List<int>);
