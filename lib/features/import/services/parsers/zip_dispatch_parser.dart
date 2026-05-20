@@ -64,7 +64,7 @@ class ZipDispatchParser implements ExternalFormatParser {
           recipes: [],
           skippedCount: 0,
           failures: [
-            const ExternalParseFailure(
+            ExternalParseFailure(
               reason: 'Unrecognised ZIP format — expected a Mealie or Tandoor export',
             ),
           ],
