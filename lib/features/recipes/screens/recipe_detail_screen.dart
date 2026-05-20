@@ -1390,6 +1390,15 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
 
   void _confirmDelete(BuildContext context, WidgetRef ref) {
     final recipe = widget.recipe;
+    // Capture the nested navigator synchronously before showDialog. All detail
+    // screens are pushed on AppShell's nested Navigator, but showDialog uses the
+    // root navigator by default (useRootNavigator: true), so ctx inside the
+    // builder belongs to the root navigator. Using Navigator.of(ctx) for both
+    // pops would pop the AppShell route itself and produce a black screen.
+    // Capturing the nested navigator here (rootNavigator: false) keeps a valid
+    // NavigatorState reference even after deleteRecipe() causes the outer
+    // ConsumerWidget to rebuild with recipe == null and dispose this state.
+    final nestedNavigator = Navigator.of(context, rootNavigator: false);
     showDialog(
       context: context,
       builder: (ctx) => AlertDialog(
@@ -1406,18 +1415,11 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
               if (recipe.id > 0) {
                 unawaited(SupabaseSyncService.notifyDeleted('recipes', recipe.uuid));
               }
-              // Use ctx (dialog's BuildContext) rather than context (the detail
-              // view's BuildContext) because the provider update triggered by
-              // deleteRecipe() causes RecipeDetailScreen to rebuild with a null
-              // recipe, which removes RecipeDetailView from the tree and makes
-              // context.mounted false before this code runs. ctx stays mounted
-              // for as long as the dialog is visible, so it is always valid here.
-              // Capture the Navigator reference before any pop so both pops use
-              // a stable reference even after the dialog route is removed.
+              // ctx (dialog's BuildContext) stays mounted until we explicitly
+              // dismiss the dialog, so this guard is reliable.
               if (ctx.mounted) {
-                final navigator = Navigator.of(ctx);
-                navigator.pop(); // dismiss dialog
-                navigator.pop(); // pop detail screen
+                Navigator.pop(ctx);    // dismiss dialog from root navigator
+                nestedNavigator.pop(); // pop detail screen from nested navigator
               }
             },
             style: TextButton.styleFrom(foregroundColor: Theme.of(ctx).colorScheme.secondary),
