@@ -12,6 +12,7 @@ import '../../../../core/utils/ingredient_parser.dart';
 import '../../../../core/utils/text_normalizer.dart';
 import '../../../../core/utils/unit_normalizer.dart';
 import '../../../recipes/models/recipe.dart';
+import '../../models/recipe_import_result.dart';
 import 'external_format_parser.dart';
 
 /// Parses Tandoor Recipes export archives.
@@ -123,13 +124,12 @@ class TandoorParser implements ExternalFormatParser {
         if (recipe != null) {
           results.add(recipe);
         } else {
-          final bestEffortName = json['name']?.toString().trim();
+          // Fully parsed but name is empty — attach partial result for the Fix path.
           failures.add(ExternalParseFailure(
-            name: bestEffortName?.isNotEmpty == true
-                ? bestEffortName
-                : folderName,
+            name: null,
             reason: 'Missing required fields (name)',
             rawText: jsonStr,
+            partialResult: _buildPartialResult(json, jsonStr),
           ));
         }
       } catch (e) {
@@ -354,6 +354,145 @@ class TandoorParser implements ExternalFormatParser {
   // ---------------------------------------------------------------------------
   // Private helpers
   // ---------------------------------------------------------------------------
+
+  /// Builds a [RecipeImportResult] from a fully-decoded JSON map for use as
+  /// [ExternalParseFailure.partialResult].  Called only when the name field
+  /// is empty; image handling is skipped since the recipe is not being saved.
+  RecipeImportResult? _buildPartialResult(
+    Map<String, dynamic> json,
+    String jsonStr,
+  ) {
+    try {
+      // Description
+      final description = json['description']?.toString().trim();
+      final comments =
+          (description != null && description.isNotEmpty) ? description : null;
+
+      // Ingredients and directions from steps
+      final rawIngredients = <RawIngredientData>[];
+      final rawDirections = <String>[];
+      final stepList = json['steps'];
+      if (stepList is List) {
+        for (final step in stepList) {
+          if (step is! Map<String, dynamic>) continue;
+
+          // Directions
+          final stepName = step['name']?.toString().trim() ?? '';
+          final instruction = step['instruction']?.toString().trim() ?? '';
+          if (stepName.isNotEmpty && instruction.isNotEmpty) {
+            rawDirections.add('**$stepName**\n$instruction');
+          } else if (instruction.isNotEmpty) {
+            rawDirections.add(instruction);
+          } else if (stepName.isNotEmpty) {
+            rawDirections.add(stepName);
+          }
+
+          // Ingredients
+          final stepIngredients = step['ingredients'];
+          if (stepIngredients is! List) continue;
+          for (final item in stepIngredients) {
+            if (item is! Map<String, dynamic>) continue;
+            final amount = item['amount']?.toString().trim();
+            final unit = (item['unit'] as Map<String, dynamic>?)?['name']
+                ?.toString()
+                .trim();
+            final food = (item['food'] as Map<String, dynamic>?)?['name']
+                ?.toString()
+                .trim();
+            final note = item['note']?.toString().trim();
+            final parts = <String>[
+              if (amount != null && amount.isNotEmpty && amount != '0') amount,
+              if (unit != null && unit.isNotEmpty) unit,
+              if (food != null && food.isNotEmpty) food,
+            ];
+            if (parts.isEmpty) continue;
+            var rawLine = parts.join(' ');
+            if (note != null && note.isNotEmpty) rawLine = '$rawLine, $note';
+            final parsed = IngredientParser.parse(rawLine);
+            if (!parsed.looksLikeIngredient && parsed.name.isEmpty) continue;
+            final normalizedAmount = parsed.amount != null
+                ? TextNormalizer.normalizeFractions(parsed.amount!)
+                : null;
+            rawIngredients.add(RawIngredientData(
+              original: rawLine,
+              amount: (normalizedAmount?.isNotEmpty == true)
+                  ? normalizedAmount
+                  : null,
+              unit: UnitNormalizer.normalize(parsed.unit),
+              preparation: parsed.preparation,
+              bakerPercent: parsed.bakerPercent,
+              alternative: parsed.alternative,
+              name: TextNormalizer.cleanName(parsed.name),
+              looksLikeIngredient: parsed.looksLikeIngredient,
+            ));
+          }
+        }
+      }
+
+      // Time
+      final workingTime = json['working_time'] as int? ?? 0;
+      final waitingTime = json['waiting_time'] as int? ?? 0;
+      final totalMinutes = workingTime + waitingTime;
+      String? time;
+      if (totalMinutes > 0) {
+        final h = totalMinutes ~/ 60;
+        final m = totalMinutes % 60;
+        if (h > 0 && m > 0) {
+          time = '${h}h ${m}min';
+        } else if (h > 0) {
+          time = '${h}h';
+        } else {
+          time = '${m}min';
+        }
+      }
+
+      // Serves
+      final rawServings = json['servings'];
+      String? serves;
+      if (rawServings != null) {
+        serves = UnitNormalizer.normalizeServes(rawServings.toString());
+        if (serves?.isEmpty == true) serves = null;
+      }
+
+      // Course
+      final categories = <String>[];
+      final keywordList = json['keywords'];
+      if (keywordList is List) {
+        for (final kw in keywordList) {
+          final name = kw is Map<String, dynamic>
+              ? kw['name']?.toString().trim()
+              : kw?.toString().trim();
+          if (name != null && name.isNotEmpty) categories.add(name);
+        }
+      }
+      final course = detectCourseFromCategories(categories) ?? 'mains';
+
+      // Source
+      var sourceUrl = json['source_url']?.toString().trim();
+      if (sourceUrl?.isEmpty == true) sourceUrl = null;
+      final source = (sourceUrl != null &&
+              (sourceUrl.startsWith('http://') ||
+                  sourceUrl.startsWith('https://')))
+          ? RecipeSource.url
+          : RecipeSource.personal;
+      if (source == RecipeSource.personal) sourceUrl = null;
+
+      return RecipeImportResult(
+        course: course,
+        comments: comments,
+        rawIngredients: rawIngredients,
+        rawDirections: rawDirections,
+        serves: serves,
+        time: time,
+        sourceUrl: sourceUrl,
+        source: source,
+        rawText: jsonStr,
+        detectedCourses: [course],
+      );
+    } catch (_) {
+      return null;
+    }
+  }
 
   Future<String?> _writeImageBytes(List<int> bytes, String ext) async {
     if (bytes.isEmpty) return null;

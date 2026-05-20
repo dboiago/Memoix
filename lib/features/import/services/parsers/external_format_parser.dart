@@ -2,6 +2,7 @@ import 'dart:typed_data';
 
 import '../../../recipes/models/recipe.dart';
 import '../../../recipes/models/course.dart';
+import '../../models/recipe_import_result.dart';
 
 // ---------------------------------------------------------------------------
 // Failure model
@@ -10,7 +11,7 @@ import '../../../recipes/models/course.dart';
 /// Represents a single archive entry that could not be fully parsed.
 class ExternalParseFailure {
   /// Best-effort name recovered before the crash point.
-  /// Falls back to the archive entry filename, then null.
+  /// Null for entries that were fully parsed but rejected for a missing name.
   final String? name;
 
   /// Human-readable description of the failure reason.
@@ -20,10 +21,16 @@ class ExternalParseFailure {
   /// null if the failure was at or before the decode step.
   final String? rawText;
 
-  const ExternalParseFailure({
+  /// Pre-populated import result for entries that parsed fully but were
+  /// rejected due to a missing name.  Null for all other failure types
+  /// (UTF-8 errors, JSON errors, mid-parse exceptions).
+  final RecipeImportResult? partialResult;
+
+  ExternalParseFailure({
     required this.reason,
     this.name,
     this.rawText,
+    this.partialResult,
   });
 }
 

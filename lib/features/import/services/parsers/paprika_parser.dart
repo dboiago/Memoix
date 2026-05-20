@@ -12,6 +12,7 @@ import '../../../../core/utils/ingredient_parser.dart';
 import '../../../../core/utils/text_normalizer.dart';
 import '../../../../core/utils/unit_normalizer.dart';
 import '../../../recipes/models/recipe.dart';
+import '../../models/recipe_import_result.dart';
 import 'external_format_parser.dart';
 
 /// Parses `.paprikarecipes` and `.paprikarecipe` files produced by the
@@ -126,11 +127,12 @@ class PaprikaParser implements ExternalFormatParser {
         if (recipe != null) {
           results.add(recipe);
         } else {
-          final bestEffortName = json['name']?.toString().trim();
+          // Fully parsed but name is empty — attach partial result for the Fix path.
           failures.add(ExternalParseFailure(
-            name: bestEffortName?.isNotEmpty == true ? bestEffortName : _entryBaseName(entry.name),
+            name: null,
             reason: 'Missing required fields (name)',
             rawText: jsonStr,
+            partialResult: _buildPartialResult(json, jsonStr),
           ));
         }
       } catch (e) {
@@ -258,6 +260,93 @@ class PaprikaParser implements ExternalFormatParser {
   // ---------------------------------------------------------------------------
   // Private helpers
   // ---------------------------------------------------------------------------
+
+  /// Builds a [RecipeImportResult] from a fully-decoded JSON map for use as
+  /// [ExternalParseFailure.partialResult].  Called only when the name field
+  /// is empty; image handling is skipped since the recipe is not being saved.
+  RecipeImportResult? _buildPartialResult(
+    Map<String, dynamic> json,
+    String jsonStr,
+  ) {
+    try {
+      // Course
+      final categories = _toStringList(json['categories']);
+      final course = detectCourseFromCategories(categories) ?? 'mains';
+
+      // Description + notes
+      final description = json['description']?.toString().trim() ?? '';
+      final notes = json['notes']?.toString().trim() ?? '';
+      final comments =
+          [description, notes].where((s) => s.isNotEmpty).join('\n\n');
+
+      // Ingredients as RawIngredientData
+      final rawIngredients = <RawIngredientData>[];
+      String? currentSection;
+      for (final line in _splitLines(json['ingredients']?.toString())) {
+        final parsed = IngredientParser.parse(line);
+        if (parsed.isSection) {
+          currentSection = parsed.sectionName ?? line;
+          continue;
+        }
+        if (!parsed.looksLikeIngredient && parsed.name.isEmpty) continue;
+        final normalizedAmount = parsed.amount != null
+            ? TextNormalizer.normalizeFractions(parsed.amount!)
+            : null;
+        rawIngredients.add(RawIngredientData(
+          original: line,
+          amount:
+              (normalizedAmount?.isNotEmpty == true) ? normalizedAmount : null,
+          unit: UnitNormalizer.normalize(parsed.unit),
+          preparation: parsed.preparation,
+          bakerPercent: parsed.bakerPercent,
+          alternative: parsed.alternative,
+          name: TextNormalizer.cleanName(parsed.name),
+          looksLikeIngredient: parsed.looksLikeIngredient,
+          sectionName: currentSection,
+        ));
+      }
+
+      // Directions
+      final rawDirections = _splitLines(json['directions']?.toString());
+
+      // Time
+      final totalTimeRaw = json['total_time']?.toString();
+      final cookTimeRaw = json['cook_time']?.toString();
+      final timeInput =
+          (totalTimeRaw?.isNotEmpty == true) ? totalTimeRaw : cookTimeRaw;
+      final time = UnitNormalizer.normalizeTime(timeInput);
+
+      // Serves
+      final servesRaw =
+          UnitNormalizer.normalizeServes(json['servings']?.toString());
+      final serves =
+          (servesRaw != null && servesRaw.isNotEmpty) ? servesRaw : null;
+
+      // Source
+      var sourceUrl = json['source_url']?.toString().trim();
+      if (sourceUrl?.isEmpty == true) sourceUrl = null;
+      final source = (sourceUrl != null &&
+              (sourceUrl.startsWith('http://') ||
+                  sourceUrl.startsWith('https://')))
+          ? RecipeSource.url
+          : RecipeSource.personal;
+
+      return RecipeImportResult(
+        course: course,
+        comments: comments.isNotEmpty ? comments : null,
+        rawIngredients: rawIngredients,
+        rawDirections: rawDirections,
+        serves: serves,
+        time: (time != null && time.isNotEmpty) ? time : null,
+        sourceUrl: source == RecipeSource.url ? sourceUrl : null,
+        source: source,
+        rawText: jsonStr,
+        detectedCourses: [course],
+      );
+    } catch (_) {
+      return null;
+    }
+  }
 
   /// Strips the directory path and extension from an archive entry filename.
   String _entryBaseName(String entryName) {

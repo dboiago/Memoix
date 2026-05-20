@@ -128,20 +128,20 @@ class _ExternalImportReviewScreenState
     if (mounted) Navigator.pop(context, (imported, _fixedCount));
   }
 
-  /// Launch [ImportReviewScreen] for a failure row that has raw text.
-  /// Returns true if the user saved the recipe, null/false if they cancelled.
+  /// Launch [ImportReviewScreen] for a failure row that can be fixed.
+  /// If a [ExternalParseFailure.partialResult] is available it is passed
+  /// directly so the user sees pre-populated ingredients and directions.
+  /// Otherwise a minimal result carrying only the raw text is built.
   Future<void> _launchFix(_FailureRow row) async {
     final failure = row.failure;
-    if (failure.rawText == null) return;
+    if (failure.partialResult == null && failure.rawText == null) return;
 
-    final importResult = RecipeImportResult(
-      name: failure.name ?? '',
-      rawText: failure.rawText,
-      // Provide empty collections so ImportReviewScreen initialises cleanly
-      rawIngredients: const [],
-      rawDirections: const [],
-      imagePaths: null,
-    );
+    final importResult = failure.partialResult ??
+        RecipeImportResult(
+          rawText: failure.rawText,
+          rawIngredients: const [],
+          rawDirections: const [],
+        );
 
     if (!mounted) return;
     final saved = await Navigator.push<bool>(
@@ -350,7 +350,7 @@ class _FailureRowWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final failure = row.failure;
-    final hasRawText = failure.rawText != null;
+    final canFix = failure.rawText != null || failure.partialResult != null;
     final muted = theme.colorScheme.onSurfaceVariant;
 
     return ListTile(
@@ -367,7 +367,7 @@ class _FailureRowWidget extends StatelessWidget {
         overflow: TextOverflow.ellipsis,
         style: theme.textTheme.bodySmall?.copyWith(color: muted),
       ),
-      trailing: hasRawText
+      trailing: canFix
           ? TextButton(
               onPressed: enabled ? onFix : null,
               child: Text(
