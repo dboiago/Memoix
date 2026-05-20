@@ -137,6 +137,7 @@ class RecipeBackupService {
         'json',
         'melarecipes', 'melarecipe',
         'paprikarecipes', 'paprikarecipe',
+        'zip',
       ],
       allowMultiple: false,
     );

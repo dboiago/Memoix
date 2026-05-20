@@ -4,6 +4,7 @@ import '../../recipes/models/recipe.dart';
 import 'parsers/external_format_parser.dart';
 import 'parsers/mela_parser.dart';
 import 'parsers/paprika_parser.dart';
+import 'parsers/zip_dispatch_parser.dart';
 
 export 'parsers/external_format_parser.dart'
     show ExternalImportSummary, ExternalFormatParser, ExternalParseFailure;
@@ -78,6 +79,7 @@ class ExternalRecipeImporter {
     'melarecipe': MelaParser(),
     'paprikarecipes': PaprikaParser(),
     'paprikarecipe': PaprikaParser(),
+    'zip': ZipDispatchParser(),
   };
 
   /// Returns true when [extension] (without leading dot, any case) has a
