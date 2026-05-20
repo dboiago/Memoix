@@ -37,7 +37,7 @@ class ZipDispatchParser implements ExternalFormatParser {
     try {
       archive = ZipDecoder().decodeBytes(bytes);
     } catch (e) {
-      debugPrint('ZipDispatchParser: failed to decode zip — $e');
+      debugPrint('ZipDispatchParser: failed to decode zip - $e');
       return ExternalImportSummary(
         recipes: [],
         skippedCount: 0,
