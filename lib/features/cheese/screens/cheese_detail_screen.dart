@@ -223,11 +223,15 @@ class _CheeseDetailView extends ConsumerWidget {
     );
 
     if (confirmed == true) {
+      // Capture navigator before the async gap. The parent ConsumerWidget
+      // (CheeseDetailScreen) will rebuild with entry == null once the
+      // provider updates, removing this state from the tree and making
+      // context.mounted false. MemoixSnackBar uses a global key and
+      // needs no mounted guard.
+      final navigator = Navigator.of(context);
       await ref.read(cheeseRepositoryProvider).deleteEntry(entry.id);
-      if (context.mounted) {
-        Navigator.of(context).pop();
-        MemoixSnackBar.show('${entry.name} deleted');
-      }
+      navigator.pop();
+      MemoixSnackBar.show('${entry.name} deleted');
     }
   }
 

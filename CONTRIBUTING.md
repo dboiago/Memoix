@@ -168,6 +168,6 @@ By contributing, you agree that your contributions fall under the same license.
 
 Memoix started as a personal tool.
 
-The goal of contributions is not to make it bigger — it's to make it truer to how serious cooks actually work.
+The goal of contributions is not to make it bigger - it's to make it truer to how serious cooks actually work.
 
 If that resonates with you, you're welcome here.

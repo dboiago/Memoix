@@ -1406,9 +1406,18 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
               if (recipe.id > 0) {
                 unawaited(SupabaseSyncService.notifyDeleted('recipes', recipe.uuid));
               }
-              if (context.mounted) {
-                Navigator.pop(ctx);
-                Navigator.pop(context);
+              // Use ctx (dialog's BuildContext) rather than context (the detail
+              // view's BuildContext) because the provider update triggered by
+              // deleteRecipe() causes RecipeDetailScreen to rebuild with a null
+              // recipe, which removes RecipeDetailView from the tree and makes
+              // context.mounted false before this code runs. ctx stays mounted
+              // for as long as the dialog is visible, so it is always valid here.
+              // Capture the Navigator reference before any pop so both pops use
+              // a stable reference even after the dialog route is removed.
+              if (ctx.mounted) {
+                final navigator = Navigator.of(ctx);
+                navigator.pop(); // dismiss dialog
+                navigator.pop(); // pop detail screen
               }
             },
             style: TextButton.styleFrom(foregroundColor: Theme.of(ctx).colorScheme.secondary),

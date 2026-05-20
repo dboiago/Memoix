@@ -211,7 +211,7 @@ class _ExternalImportReviewScreenState
               child: Text(
                 '$failureCount '
                 '${failureCount == 1 ? 'entry' : 'entries'} '
-                'could not be parsed — shown below.',
+                'could not be parsed - shown below.',
                 style: theme.textTheme.bodySmall,
               ),
             ),
