@@ -208,13 +208,14 @@ class RecipeBackupService {
         bool isJsonLd = false;
         if (sniffed is Map<String, dynamic>) {
           isJsonLd =
-              (sniffed['@type'] as String?)?.toLowerCase() == 'recipe';
+              sniffed['@type']?.toString().toLowerCase() == 'recipe';
         } else if (sniffed is List &&
             sniffed.isNotEmpty &&
             sniffed.first is Map<String, dynamic>) {
           isJsonLd =
-              ((sniffed.first as Map<String, dynamic>)['@type'] as String?)
-                      ?.toLowerCase() ==
+              (sniffed.first as Map<String, dynamic>)['@type']
+                      ?.toString()
+                      .toLowerCase() ==
                   'recipe';
         }
 
