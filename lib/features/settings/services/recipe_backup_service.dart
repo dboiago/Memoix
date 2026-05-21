@@ -19,6 +19,7 @@ import '../../notes/repository/scratch_pad_repository.dart';
 import '../../pizzas/models/pizza.dart';
 import '../../pizzas/repository/pizza_repository.dart';
 import '../../import/services/external_recipe_importer.dart';
+import '../../import/services/parsers/json_ld_parser.dart';
 import '../../recipes/models/course.dart';
 import '../../recipes/models/recipe.dart';
 import '../../recipes/repository/recipe_repository.dart';
@@ -176,26 +177,84 @@ class RecipeBackupService {
       );
     }
 
-    // JSON backup format — existing direct-to-DB behaviour
-    final String jsonString;
-    if (file.path != null) {
-      jsonString = await File(file.path!).readAsString();
-    } else if (file.bytes != null) {
-      jsonString = utf8.decode(file.bytes!);
+    // JSON file — read bytes once, then sniff content to determine format.
+    final Uint8List bytes;
+    if (file.bytes != null) {
+      bytes = file.bytes!;
+    } else if (file.path != null) {
+      bytes = await File(file.path!).readAsBytes();
     } else {
       throw Exception('Could not read file');
     }
 
+    // Attempt UTF-8 + JSON decode for content sniffing.
+    // If either step fails, fall through to the Memoix backup path and let it
+    // error naturally.
+    Object? sniffed;
+    try {
+      sniffed = jsonDecode(utf8.decode(bytes));
+    } catch (_) {
+      // Decoding or parsing failed — fall through to Memoix path.
+    }
+
+    if (sniffed != null) {
+      // Priority 1: explicit Memoix v1 format tag.
+      final isMemoixV1 = sniffed is Map<String, dynamic> &&
+          sniffed['format'] == 'memoix/v1';
+
+      // Priority 2: wrapper object consistent with a Memoix backup (pre-v1
+      // exports have 'version', 'exportedAt', 'recipeCount', and 'recipes').
+      final isMemoixWrapper = !isMemoixV1 &&
+          sniffed is Map<String, dynamic> &&
+          (sniffed.containsKey('recipes') ||
+              sniffed.containsKey('version') ||
+              sniffed.containsKey('exportedAt'));
+
+      if (!isMemoixV1 && !isMemoixWrapper) {
+        // Priority 3: JSON-LD single recipe object with @type == "Recipe".
+        // Priority 4: JSON-LD array where the first element has @type == "Recipe".
+        bool isJsonLd = false;
+        if (sniffed is Map<String, dynamic>) {
+          isJsonLd =
+              (sniffed['@type'] as String?)?.toLowerCase() == 'recipe';
+        } else if (sniffed is List &&
+            sniffed.isNotEmpty &&
+            sniffed.first is Map<String, dynamic>) {
+          isJsonLd =
+              ((sniffed.first as Map<String, dynamic>)['@type'] as String?)
+                      ?.toLowerCase() ==
+                  'recipe';
+        }
+
+        if (isJsonLd) {
+          final summary = await JsonLdParser().parse(bytes);
+          if (summary.recipes.isEmpty && summary.skippedCount == 0) {
+            return ImportCompleted(imported: 0, skipped: 0);
+          }
+          return ImportNeedsReview(
+            recipes: summary.recipes,
+            parseSkipped: summary.skippedCount,
+            failures: summary.failures,
+            fileBytes: bytes,
+            detectedParserName: 'RecipeSage / JSON-LD',
+          );
+        }
+        // Priority 5: unknown JSON structure → fall through to Memoix path.
+      }
+    }
+
+    // Memoix backup path.
+    // Handles: format "memoix/v1" wrapper, pre-v1 wrapper objects, bare arrays,
+    // and files that failed JSON sniffing (let errors surface naturally).
+    final String jsonString = utf8.decode(bytes);
     final jsonData = jsonDecode(jsonString);
     final int count;
-    if (jsonData is! Map || !jsonData.containsKey('recipes')) {
-      if (jsonData is List) {
-        count = await _importRecipeList(jsonData);
-      } else {
-        throw Exception('Invalid backup file format');
-      }
-    } else {
+    if (jsonData is Map<String, dynamic> && jsonData.containsKey('recipes')) {
       count = await _importRecipeList(jsonData['recipes'] as List);
+    } else if (jsonData is List) {
+      count = await _importRecipeList(jsonData);
+    } else {
+      throw Exception('Invalid backup file format');
     }
     return ImportCompleted(imported: count, skipped: 0);
   }
