@@ -71,6 +71,7 @@ class RecipeBackupService {
 
     // Convert to JSON
     final jsonData = {
+      'format': 'memoix/v1',
       'version': 1,
       'exportedAt': DateTime.now().toIso8601String(),
       'recipeCount': recipes.length,
