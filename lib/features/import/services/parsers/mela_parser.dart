@@ -37,6 +37,7 @@ class MelaParser implements ExternalFormatParser {
             reason: 'Corrupt archive: ${_shortMessage(e)}',
           ),
         ],
+        detectedParserName: 'Mela',
       );
     }
 
@@ -118,6 +119,7 @@ class MelaParser implements ExternalFormatParser {
       recipes: results,
       skippedCount: failures.length,
       failures: failures,
+      detectedParserName: 'Mela',
     );
   }
 

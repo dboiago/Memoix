@@ -46,10 +46,15 @@ class ExternalImportSummary {
   /// Detailed records for entries that could not be parsed.
   final List<ExternalParseFailure> failures;
 
+  /// User-visible name of the parser that produced this summary
+  /// (e.g. 'Mela', 'Mealie', 'Paprika', 'Tandoor').
+  final String? detectedParserName;
+
   const ExternalImportSummary({
     required this.recipes,
     required this.skippedCount,
     this.failures = const [],
+    this.detectedParserName,
   });
 }
 

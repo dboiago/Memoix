@@ -169,6 +169,9 @@ class RecipeBackupService {
         recipes: summary.recipes,
         parseSkipped: summary.skippedCount,
         failures: summary.failures,
+        fileBytes: bytes,
+        detectedParserName: summary.detectedParserName ??
+            ExternalRecipeImporter.parserNames.first,
       );
     }
 

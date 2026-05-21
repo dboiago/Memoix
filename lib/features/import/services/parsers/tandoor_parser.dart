@@ -43,6 +43,7 @@ class TandoorParser implements ExternalFormatParser {
             reason: 'Corrupt archive: ${_shortMessage(e)}',
           ),
         ],
+        detectedParserName: 'Tandoor',
       );
     }
 
@@ -147,6 +148,7 @@ class TandoorParser implements ExternalFormatParser {
       recipes: results,
       skippedCount: failures.length,
       failures: failures,
+      detectedParserName: 'Tandoor',
     );
   }
 

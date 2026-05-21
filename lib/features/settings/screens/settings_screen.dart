@@ -632,7 +632,7 @@ class SettingsScreen extends ConsumerWidget {
                     } else {
                       MemoixSnackBar.show('No recipes imported');
                     }
-                  case ImportNeedsReview(:final recipes, :final parseSkipped, :final failures):
+                  case ImportNeedsReview(:final recipes, :final parseSkipped, :final failures, :final fileBytes, :final detectedParserName):
                     if (!context.mounted) return;
                     final result = await Navigator.push<(int, int)>(
                       context,
@@ -641,6 +641,8 @@ class SettingsScreen extends ConsumerWidget {
                           recipes: recipes,
                           parseSkipped: parseSkipped,
                           failures: failures,
+                          fileBytes: fileBytes,
+                          detectedParserName: detectedParserName,
                         ),
                       ),
                     );

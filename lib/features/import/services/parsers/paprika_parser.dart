@@ -42,6 +42,7 @@ class PaprikaParser implements ExternalFormatParser {
             reason: 'Corrupt archive: ${_shortMessage(e)}',
           ),
         ],
+        detectedParserName: 'Paprika',
       );
     }
 
@@ -150,6 +151,7 @@ class PaprikaParser implements ExternalFormatParser {
       recipes: results,
       skippedCount: failures.length,
       failures: failures,
+      detectedParserName: 'Paprika',
     );
   }
 

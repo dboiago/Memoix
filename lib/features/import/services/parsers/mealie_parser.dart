@@ -51,6 +51,7 @@ class MealieParser implements ExternalFormatParser {
             reason: 'Corrupt archive: ${_shortMessage(e)}',
           ),
         ],
+        detectedParserName: 'Mealie',
       );
     }
 
@@ -167,6 +168,7 @@ class MealieParser implements ExternalFormatParser {
       recipes: results,
       skippedCount: failures.length,
       failures: failures,
+      detectedParserName: 'Mealie',
     );
   }
 

@@ -2,8 +2,10 @@ import 'dart:typed_data';
 
 import '../../recipes/models/recipe.dart';
 import 'parsers/external_format_parser.dart';
+import 'parsers/mealie_parser.dart';
 import 'parsers/mela_parser.dart';
 import 'parsers/paprika_parser.dart';
+import 'parsers/tandoor_parser.dart';
 import 'parsers/zip_dispatch_parser.dart';
 
 export 'parsers/external_format_parser.dart'
@@ -42,9 +44,19 @@ class ImportNeedsReview extends RecipeImportFileResult {
   /// Detailed failure records for entries that could not be parsed.
   final List<ExternalParseFailure> failures;
 
+  /// Original archive bytes, retained for format-override re-parsing on
+  /// [ExternalImportReviewScreen].
+  final Uint8List fileBytes;
+
+  /// User-visible name of the parser that produced this result
+  /// (e.g. 'Mealie', 'Mela').
+  final String detectedParserName;
+
   ImportNeedsReview({
     required this.recipes,
     required this.parseSkipped,
+    required this.fileBytes,
+    required this.detectedParserName,
     this.failures = const [],
   });
 }
@@ -81,6 +93,31 @@ class ExternalRecipeImporter {
     'paprikarecipe': PaprikaParser(),
     'zip': ZipDispatchParser(),
   };
+
+  /// Named parsers for format override — keyed by user-visible app name.
+  /// Excludes [ZipDispatchParser] (a meta-parser, not a user-selectable format).
+  static final Map<String, ExternalFormatParser> _namedParsers = {
+    'Mela': MelaParser(),
+    'Mealie': MealieParser(),
+    'Paprika': PaprikaParser(),
+    'Tandoor': TandoorParser(),
+  };
+
+  /// All available parser names, sorted alphabetically.
+  static List<String> get parserNames =>
+      (_namedParsers.keys.toList()..sort());
+
+  /// Parses [bytes] using the parser identified by [name].
+  ///
+  /// Throws [UnsupportedFormatException] if [name] is not registered.
+  static Future<ExternalImportSummary> parseByName(
+    String name,
+    Uint8List bytes,
+  ) {
+    final parser = _namedParsers[name];
+    if (parser == null) throw UnsupportedFormatException(name);
+    return parser.parse(bytes);
+  }
 
   /// Returns true when [extension] (without leading dot, any case) has a
   /// registered parser.

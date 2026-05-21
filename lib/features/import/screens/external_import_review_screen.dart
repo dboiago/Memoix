@@ -1,3 +1,5 @@
+import 'dart:typed_data';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -6,7 +8,7 @@ import '../../recipes/models/recipe.dart';
 import '../../recipes/repository/recipe_repository.dart';
 import '../models/recipe_import_result.dart';
 import '../screens/import_review_screen.dart';
-import '../services/parsers/external_format_parser.dart';
+import '../services/external_recipe_importer.dart';
 
 // ---------------------------------------------------------------------------
 // Row model
@@ -54,11 +56,16 @@ class ExternalImportReviewScreen extends ConsumerStatefulWidget {
   final List<Recipe> recipes;
   final int parseSkipped;
   final List<ExternalParseFailure> failures;
+  final Uint8List fileBytes;
+  final String detectedParserName;
 
-  const ExternalImportReviewScreen({
+  // ignore: prefer_const_constructors_in_immutables
+  ExternalImportReviewScreen({
     super.key,
     required this.recipes,
     required this.parseSkipped,
+    required this.fileBytes,
+    required this.detectedParserName,
     this.failures = const [],
   });
 
@@ -71,13 +78,17 @@ class _ExternalImportReviewScreenState
     extends ConsumerState<ExternalImportReviewScreen> {
   late List<_Row> _rows;
   bool _isSaving = false;
+  bool _isReparsing = false;
+  bool _noResultsAfterReparse = false;
   int _fixedCount = 0;
+  late String _activeParserName;
 
   static final _courseOptions = Course.defaults;
 
   @override
   void initState() {
     super.initState();
+    _activeParserName = widget.detectedParserName;
     _rows = [
       for (final r in widget.recipes) _SuccessRow(r),
       for (final f in widget.failures) _FailureRow(f),
@@ -126,6 +137,37 @@ class _ExternalImportReviewScreenState
     }
 
     if (mounted) Navigator.pop(context, (imported, _fixedCount));
+  }
+
+  Future<void> _reparse(String parserName) async {
+    setState(() {
+      _isReparsing = true;
+      _noResultsAfterReparse = false;
+    });
+    try {
+      final summary = await ExternalRecipeImporter.parseByName(
+          parserName, widget.fileBytes);
+      if (!mounted) return;
+      setState(() {
+        _activeParserName = parserName;
+        _isReparsing = false;
+        _noResultsAfterReparse =
+            summary.recipes.isEmpty && summary.failures.isEmpty;
+        _fixedCount = 0;
+        _rows = [
+          for (final r in summary.recipes) _SuccessRow(r),
+          for (final f in summary.failures) _FailureRow(f),
+        ];
+      });
+    } catch (_) {
+      if (!mounted) return;
+      setState(() {
+        _activeParserName = parserName;
+        _isReparsing = false;
+        _noResultsAfterReparse = true;
+        _rows = [];
+      });
+    }
   }
 
   /// Launch [ImportReviewScreen] for a failure row that has a
@@ -193,7 +235,8 @@ class _ExternalImportReviewScreenState
       ),
       body: Column(
         children: [
-          if (failureCount > 0)
+          _buildFormatOverrideBar(theme),
+          if (failureCount > 0 && !_noResultsAfterReparse)
             Container(
               width: double.infinity,
               color: theme.colorScheme.surfaceContainerHighest,
@@ -207,30 +250,35 @@ class _ExternalImportReviewScreenState
               ),
             ),
           Expanded(
-            child: ListView.builder(
-              itemCount: _rows.length,
-              itemBuilder: (context, index) {
-                final row = _rows[index];
-                return switch (row) {
-                  _SuccessRow() => _SuccessRowWidget(
-                      row: row,
-                      courseOptions: _courseOptions,
-                      enabled: !_isSaving,
-                      onChecked: (v) =>
-                          setState(() => row.checked = v ?? false),
-                      onCourseChanged: (v) {
-                        if (v != null) setState(() => row.course = v);
-                      },
-                    ),
-                  _FailureRow() => _FailureRowWidget(
-                      row: row,
-                      enabled: !_isSaving,
-                      onFix: () => _launchFix(row),
-                      onWarning: () => _showFailureDialog(row.failure),
-                    ),
-                };
-              },
-            ),
+            child: _isReparsing
+                ? const Center(child: CircularProgressIndicator())
+                : _noResultsAfterReparse
+                    ? _buildNoResultsMessage(theme)
+                    : ListView.builder(
+                        itemCount: _rows.length,
+                        itemBuilder: (context, index) {
+                          final row = _rows[index];
+                          return switch (row) {
+                            _SuccessRow() => _SuccessRowWidget(
+                                row: row,
+                                courseOptions: _courseOptions,
+                                enabled: !_isSaving,
+                                onChecked: (v) =>
+                                    setState(() => row.checked = v ?? false),
+                                onCourseChanged: (v) {
+                                  if (v != null) setState(() => row.course = v);
+                                },
+                              ),
+                            _FailureRow() => _FailureRowWidget(
+                                row: row,
+                                enabled: !_isSaving,
+                                onFix: () => _launchFix(row),
+                                onWarning: () =>
+                                    _showFailureDialog(row.failure),
+                              ),
+                          };
+                        },
+                      ),
           ),
         ],
       ),
@@ -250,6 +298,72 @@ class _ExternalImportReviewScreenState
                     '${selectedCount == 1 ? 'Recipe' : 'Recipes'}',
                   ),
           ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildFormatOverrideBar(ThemeData theme) {
+    final names = ExternalRecipeImporter.parserNames;
+    final selected = names.contains(_activeParserName) ? _activeParserName : null;
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+      color: theme.colorScheme.surfaceContainerHighest,
+      child: Row(
+        children: [
+          Text('Detected as', style: theme.textTheme.bodySmall),
+          const SizedBox(width: 8),
+          Expanded(
+            child: DropdownButtonFormField<String>(
+              value: selected,
+              isDense: true,
+              decoration: const InputDecoration(
+                contentPadding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                border: OutlineInputBorder(),
+              ),
+              items: names
+                  .map((n) => DropdownMenuItem(value: n, child: Text(n)))
+                  .toList(),
+              onChanged: (_isReparsing || _isSaving)
+                  ? null
+                  : (v) {
+                      if (v != null && v != _activeParserName) _reparse(v);
+                    },
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildNoResultsMessage(ThemeData theme) {
+    return Center(
+      child: Padding(
+        padding: const EdgeInsets.all(32),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Icon(
+              Icons.info_outline,
+              size: 48,
+              color: theme.colorScheme.onSurfaceVariant,
+            ),
+            const SizedBox(height: 16),
+            Text(
+              'No recipes found with $_activeParserName.',
+              style: theme.textTheme.titleSmall,
+              textAlign: TextAlign.center,
+            ),
+            const SizedBox(height: 8),
+            Text(
+              'This file may not match the selected format. '
+              'Select a different format above.',
+              style: theme.textTheme.bodySmall?.copyWith(
+                color: theme.colorScheme.onSurfaceVariant,
+              ),
+              textAlign: TextAlign.center,
+            ),
+          ],
         ),
       ),
     );
