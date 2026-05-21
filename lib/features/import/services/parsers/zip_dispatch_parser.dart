@@ -77,7 +77,7 @@ class ZipDispatchParser implements ExternalFormatParser {
   // ---------------------------------------------------------------------------
 
   _Target _detect(Archive archive) {
-    bool hasTandoorStructure = false;
+    bool hasSubfolderStructure = false;
     bool hasMealieStructure = false;
 
     for (final entry in archive) {
@@ -87,28 +87,29 @@ class ZipDispatchParser implements ExternalFormatParser {
 
       if (parts.isEmpty || parts[0].toLowerCase() != 'recipes') continue;
 
-      // Tandoor: {Recipes}/{name}/recipe.json — 3 segments, last = recipe.json (case-insensitive folder)
+      // Subfolder format shared by Mealie v1.0+ and Tandoor:
+      // recipes/{slug}/recipe.json — 3 segments, last = recipe.json.
+      // Cannot be resolved structurally; _sniffFirstJson discriminates via
+      // recipeIngredient (Mealie) vs steps (Tandoor).
       if (parts.length == 3 && parts[2] == 'recipe.json') {
-        hasTandoorStructure = true;
+        hasSubfolderStructure = true;
       }
 
       // Mealie flat: recipes/{slug}.json — exactly 2 segments ending .json
-      // Mealie subfolder: recipes/{slug}/recipe.json — 3 segments, last = recipe.json
-      // (both covered here; subfolder Mealie also matches recipe.json so the
-      // sniff step resolves the tie via recipeIngredient vs steps key)
       if (parts.length == 2 && name.endsWith('.json')) {
         hasMealieStructure = true;
       }
+      // Mealie subfolder variant with non-recipe.json filename
       if (parts.length == 3 && name.endsWith('.json') && parts[2] != 'recipe.json') {
         hasMealieStructure = true;
       }
     }
 
-    // Unambiguous structural match
-    if (hasTandoorStructure && !hasMealieStructure) return _Target.tandoor;
-    if (hasMealieStructure && !hasTandoorStructure) return _Target.mealie;
+    // Flat Mealie entries unambiguously identify the format.
+    if (hasMealieStructure && !hasSubfolderStructure) return _Target.mealie;
 
-    // Ambiguous or neither — sniff first reachable JSON under recipes/
+    // Subfolder structure is shared between Mealie v1.0+ and Tandoor —
+    // always fall through to the JSON key sniff to resolve.
     return _sniffFirstJson(archive);
   }
 
