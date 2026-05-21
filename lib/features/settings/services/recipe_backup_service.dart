@@ -198,28 +198,45 @@ class RecipeBackupService {
     }
 
     if (sniffed != null) {
+      debugPrint('[sniff] sniffed runtimeType=${sniffed.runtimeType}');
       // Priority 1: explicit Memoix v1 format tag → Memoix path.
       final isMemoixV1 = sniffed is Map<String, dynamic> &&
           sniffed['format'] == 'memoix/v1';
+      debugPrint('[sniff] isMemoixV1=$isMemoixV1'
+          '${sniffed is Map ? ", format=${(sniffed as Map)['format']}" : ""}');
 
       if (!isMemoixV1) {
         // Priority 2: JSON-LD single recipe object with @type == "Recipe".
         // Priority 3: JSON-LD array where the first element has @type == "Recipe".
         bool isJsonLd = false;
         if (sniffed is Map<String, dynamic>) {
+          final atType = sniffed['@type'];
+          debugPrint('[sniff] Map branch: @type raw=$atType (${atType?.runtimeType})'
+              ', lowered=${atType?.toString().toLowerCase()}');
           isJsonLd =
               sniffed['@type']?.toString().toLowerCase() == 'recipe';
+          debugPrint('[sniff] Map branch: isJsonLd=$isJsonLd');
         } else if (sniffed is List &&
             sniffed.isNotEmpty &&
             sniffed.first is Map<String, dynamic>) {
+          final firstAtType =
+              (sniffed.first as Map<String, dynamic>)['@type'];
+          debugPrint('[sniff] List branch: first[@type] raw=$firstAtType'
+              ' (${firstAtType?.runtimeType})'
+              ', lowered=${firstAtType?.toString().toLowerCase()}');
           isJsonLd =
               (sniffed.first as Map<String, dynamic>)['@type']
                       ?.toString()
                       .toLowerCase() ==
                   'recipe';
+          debugPrint('[sniff] List branch: isJsonLd=$isJsonLd');
+        } else {
+          debugPrint('[sniff] no @type branch matched: sniffed is '
+              '${sniffed.runtimeType}, isEmpty=${sniffed is List ? (sniffed as List).isEmpty : "n/a"}');
         }
 
         if (isJsonLd) {
+          debugPrint('[sniff] → routing to JsonLdParser');
           final summary = await JsonLdParser().parse(bytes);
           if (summary.recipes.isEmpty && summary.skippedCount == 0) {
             return ImportCompleted(imported: 0, skipped: 0);
@@ -233,7 +250,12 @@ class RecipeBackupService {
           );
         }
         // Priority 4: anything else → fall through to Memoix path as fallback.
+        debugPrint('[sniff] → falling through to Memoix backup path');
+      } else {
+        debugPrint('[sniff] → routing to Memoix backup path (v1 format tag)');
       }
+    } else {
+      debugPrint('[sniff] sniffed is null — sniff failed, falling to Memoix path');
     }
 
     // Memoix backup path.
