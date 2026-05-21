@@ -2,6 +2,7 @@ import 'dart:typed_data';
 
 import '../../recipes/models/recipe.dart';
 import 'parsers/external_format_parser.dart';
+import 'parsers/json_ld_parser.dart';
 import 'parsers/mealie_parser.dart';
 import 'parsers/mela_parser.dart';
 import 'parsers/paprika_parser.dart';
@@ -100,6 +101,7 @@ class ExternalRecipeImporter {
     'Mela': MelaParser(),
     'Mealie': MealieParser(),
     'Paprika': PaprikaParser(),
+    'RecipeSage / JSON-LD': JsonLdParser(),
     'Tandoor': TandoorParser(),
   };
 

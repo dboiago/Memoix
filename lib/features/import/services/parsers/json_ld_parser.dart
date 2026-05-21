@@ -10,60 +10,71 @@ import '../../../../core/utils/unit_normalizer.dart';
 import '../../../recipes/models/recipe.dart';
 import 'external_format_parser.dart';
 
-/// Parses JSON-LD Recipe files (schema.org/Recipe format).
+/// Parses schema.org/Recipe JSON-LD files (e.g. RecipeSage exports).
 ///
-/// Accepts either a single Recipe object:
-/// ```json
-/// { "@type": "Recipe", "name": "...", "recipeIngredient": [...], ... }
-/// ```
-/// or an array of Recipe objects:
-/// ```json
-/// [{ "@type": "Recipe", ... }, ...]
-/// ```
-///
-/// This parser is not registered in [ExternalRecipeImporter._registry] and
-/// is not wired to any file extension.  It is only instantiated directly at
-/// the content-sniff site in [RecipeBackupService.importRecipes].
+/// Accepts either a single Recipe object or an array of Recipe objects.
+/// Not registered in [ExternalRecipeImporter._registry]; instantiated
+/// directly at the content-sniff site in [RecipeBackupService.importRecipes].
 class JsonLdParser implements ExternalFormatParser {
   static const _parserName = 'RecipeSage / JSON-LD';
   static const _uuid = Uuid();
 
   @override
   Future<ExternalImportSummary> parse(Uint8List bytes) async {
-    // UTF-8 decode
+    // Phase 1: UTF-8 decode
     String jsonStr;
     try {
       jsonStr = utf8.decode(bytes);
-    } catch (e) {
+    } on FormatException catch (e) {
+      debugPrint('JsonLdParser: UTF-8 decode failed — $e');
       return ExternalImportSummary(
         recipes: [],
-        skippedCount: 0,
+        skippedCount: 1,
         failures: [ExternalParseFailure(reason: 'Malformed UTF-8 encoding')],
+        detectedParserName: _parserName,
+      );
+    } catch (e) {
+      debugPrint('JsonLdParser: decode error — $e');
+      return ExternalImportSummary(
+        recipes: [],
+        skippedCount: 1,
+        failures: [ExternalParseFailure(reason: 'Decode error: ${_short(e)}')],
         detectedParserName: _parserName,
       );
     }
 
-    // JSON parse
+    // Phase 2: JSON parse
     dynamic decoded;
     try {
       decoded = jsonDecode(jsonStr);
     } on FormatException catch (e) {
+      debugPrint('JsonLdParser: JSON parse failed — $e');
       return ExternalImportSummary(
         recipes: [],
-        skippedCount: 0,
+        skippedCount: 1,
         failures: [
           ExternalParseFailure(reason: 'Malformed JSON: ${_short(e)}'),
         ],
         detectedParserName: _parserName,
       );
+    } catch (e) {
+      debugPrint('JsonLdParser: JSON error — $e');
+      return ExternalImportSummary(
+        recipes: [],
+        skippedCount: 1,
+        failures: [
+          ExternalParseFailure(reason: 'JSON parse error: ${_short(e)}'),
+        ],
+        detectedParserName: _parserName,
+      );
     }
 
-    // Normalise to a list of candidate objects
+    // Normalize top-level value to a list
     final List<dynamic> items;
-    if (decoded is List) {
-      items = decoded;
-    } else if (decoded is Map<String, dynamic>) {
+    if (decoded is Map<String, dynamic>) {
       items = [decoded];
+    } else if (decoded is List) {
+      items = decoded;
     } else {
       return ExternalImportSummary(
         recipes: [],
@@ -78,28 +89,37 @@ class JsonLdParser implements ExternalFormatParser {
     final results = <Recipe>[];
     final failures = <ExternalParseFailure>[];
 
+    // Phase 3: per-entry field mapping
     for (final item in items) {
       if (item is! Map<String, dynamic>) {
-        failures.add(ExternalParseFailure(reason: 'Expected a JSON object'));
+        failures.add(ExternalParseFailure(
+          reason: 'Expected a JSON object, got ${item.runtimeType}',
+        ));
         continue;
       }
+
+      String? rawJson;
       try {
-        final recipe = _parseItem(item);
+        rawJson = jsonEncode(item);
+      } catch (_) {}
+
+      try {
+        final recipe = _parseEntry(item);
         if (recipe != null) {
           results.add(recipe);
         } else {
           failures.add(ExternalParseFailure(
             reason: 'Missing required field: name',
-            rawText: _tryEncode(item),
+            rawText: rawJson,
           ));
         }
       } catch (e) {
-        debugPrint('JsonLdParser: parse error — $e');
+        debugPrint('JsonLdParser: field mapping failed — $e');
         final bestName = item['name']?.toString().trim();
         failures.add(ExternalParseFailure(
-          name: bestName?.isNotEmpty == true ? bestName : null,
+          name: (bestName != null && bestName.isNotEmpty) ? bestName : null,
           reason: 'Parse error: ${_short(e)}',
-          rawText: _tryEncode(item),
+          rawText: rawJson,
         ));
       }
     }
@@ -113,83 +133,100 @@ class JsonLdParser implements ExternalFormatParser {
   }
 
   // ---------------------------------------------------------------------------
-  // Field mapping
+  // Entry mapping
   // ---------------------------------------------------------------------------
 
-  Recipe? _parseItem(Map<String, dynamic> json) {
+  Recipe? _parseEntry(Map<String, dynamic> json) {
+    // name — required
     final rawName = json['name']?.toString().trim() ?? '';
     if (rawName.isEmpty) return null;
 
-    // Course — from recipeCategory
-    final rawCategory = json['recipeCategory'];
-    final categories = <String>[];
-    if (rawCategory is String && rawCategory.isNotEmpty) {
-      categories.add(rawCategory);
-    } else if (rawCategory is List) {
-      categories.addAll(rawCategory.whereType<Object>().map((e) => e.toString()));
-    }
-    final course = detectCourseFromCategories(categories) ?? 'mains';
-
-    // Cuisine
-    final rawCuisine = json['recipeCuisine'];
-    final cuisine = rawCuisine is String && rawCuisine.isNotEmpty ? rawCuisine : null;
-
-    // Serves — recipeYield may be a string or a list (e.g. ["4", "4 servings"])
-    final rawYield = json['recipeYield'];
-    final String? serves;
-    if (rawYield is String && rawYield.isNotEmpty) {
-      serves = rawYield;
-    } else if (rawYield is List && rawYield.isNotEmpty) {
-      serves = rawYield.first.toString();
-    } else {
-      serves = null;
-    }
-
-    // Time — prefer totalTime, fall back to cookTime, then prepTime
-    final time = _parseIsoDuration(
-      json['totalTime'] ?? json['cookTime'] ?? json['prepTime'],
-    );
-
-    // Comments — from description
+    // description
     final rawDesc = json['description']?.toString().trim();
     final comments = (rawDesc != null && rawDesc.isNotEmpty) ? rawDesc : null;
 
-    // Source URL
-    final rawUrl = json['url']?.toString().trim();
-    final sourceUrl = (rawUrl != null && rawUrl.isNotEmpty) ? rawUrl : null;
-
-    // Images — image may be a string, ImageObject, or list of either
-    final imageUrls = _parseImageUrls(json['image']);
-
-    // Tags — keywords is a comma-separated string or a list
-    final tags = _parseKeywords(json['keywords']);
-
-    // Ingredients
+    // recipeIngredient
     final ingredients = _parseIngredients(json['recipeIngredient']);
 
-    // Directions
+    // recipeInstructions
     final directions = _parseInstructions(json['recipeInstructions']);
+
+    // time — totalTime → cookTime → prepTime
+    final time = _parseDuration(
+      json['totalTime']?.toString() ??
+          json['cookTime']?.toString() ??
+          json['prepTime']?.toString(),
+    );
+
+    // recipeYield → extract leading integer
+    final serves = _parseYield(json['recipeYield']);
+
+    // recipeCategory + keywords → combined for course detection
+    final combined = [
+      ..._normalizeStringList(json['recipeCategory']),
+      ..._normalizeStringList(json['keywords']),
+    ];
+    final course = detectCourseFromCategories(combined) ?? 'mains';
+
+    // aggregateRating.ratingValue → clamp 0–5, round to int
+    int rating = 0;
+    final aggRating = json['aggregateRating'];
+    if (aggRating is Map<String, dynamic>) {
+      final rv = aggRating['ratingValue'];
+      if (rv != null) {
+        final d = double.tryParse(rv.toString());
+        if (d != null) rating = d.clamp(0.0, 5.0).round();
+      }
+    }
+
+    // url / mainEntityOfPage → sourceUrl + source
+    String? sourceUrl;
+    final rawUrl = json['url']?.toString().trim();
+    if (rawUrl != null &&
+        rawUrl.isNotEmpty &&
+        (rawUrl.startsWith('http://') || rawUrl.startsWith('https://'))) {
+      sourceUrl = rawUrl;
+    } else {
+      // Fall back to mainEntityOfPage (may be a string or {"@id": "..."})
+      final mep = json['mainEntityOfPage'];
+      String? mepUrl;
+      if (mep is String) {
+        mepUrl = mep.trim();
+      } else if (mep is Map<String, dynamic>) {
+        mepUrl = mep['@id']?.toString().trim();
+      }
+      if (mepUrl != null &&
+          mepUrl.isNotEmpty &&
+          (mepUrl.startsWith('http://') || mepUrl.startsWith('https://'))) {
+        sourceUrl = mepUrl;
+      }
+    }
+    final source =
+        (sourceUrl != null) ? RecipeSource.url : RecipeSource.personal;
+
+    // image — extract first URL; used as sourceUrl fallback only (not downloaded)
+    if (sourceUrl == null) {
+      sourceUrl = _firstImageUrl(json['image']);
+    }
 
     return Recipe()
       ..uuid = _uuid.v4()
       ..name = TextNormalizer.cleanName(rawName)
       ..course = course
-      ..cuisine = cuisine
-      ..serves = serves
-      ..time = time
       ..comments = comments
-      ..sourceUrl = sourceUrl
-      ..imageUrls = imageUrls
-      ..tags = tags
       ..ingredients = ingredients
       ..directions = directions
-      ..source = RecipeSource.imported
+      ..time = time
+      ..serves = serves
+      ..rating = rating
+      ..sourceUrl = sourceUrl
+      ..source = source
       ..createdAt = DateTime.now()
       ..updatedAt = DateTime.now();
   }
 
   // ---------------------------------------------------------------------------
-  // Ingredient parsing
+  // recipeIngredient
   // ---------------------------------------------------------------------------
 
   List<Ingredient> _parseIngredients(dynamic raw) {
@@ -199,7 +236,9 @@ class JsonLdParser implements ExternalFormatParser {
     if (raw is List) {
       lines.addAll(raw.map((e) => e.toString()));
     } else if (raw is String && raw.isNotEmpty) {
-      lines.addAll(raw.split('\n'));
+      lines.addAll(
+        raw.split('\n').map((l) => l.trim()).where((l) => l.isNotEmpty),
+      );
     }
 
     final results = <Ingredient>[];
@@ -233,140 +272,174 @@ class JsonLdParser implements ExternalFormatParser {
   }
 
   // ---------------------------------------------------------------------------
-  // Instruction parsing
+  // recipeInstructions
   // ---------------------------------------------------------------------------
 
   List<String> _parseInstructions(dynamic raw) {
     if (raw == null) return [];
 
-    // Plain string block — split on line breaks
+    // Plain string at top level → single direction
     if (raw is String) {
-      return raw
-          .split(RegExp(r'\n+'))
-          .map((l) => l.trim())
-          .where((l) => l.isNotEmpty)
-          .toList();
+      final s = raw.trim();
+      return s.isNotEmpty ? [s] : [];
     }
 
     if (raw is! List) return [];
 
-    final steps = <String>[];
-    _extractStepsFromList(raw, steps);
-    return steps;
+    final out = <String>[];
+    _collectSteps(raw, out);
+    return out;
   }
 
-  void _extractStepsFromList(List<dynamic> list, List<String> out) {
+  void _collectSteps(List<dynamic> list, List<String> out) {
     for (final item in list) {
+      // Plain string element
       if (item is String) {
         final s = item.trim();
         if (s.isNotEmpty) out.add(s);
         continue;
       }
+
       if (item is! Map<String, dynamic>) continue;
 
       final type = item['@type']?.toString().toLowerCase();
 
       if (type == 'howtostep') {
+        final name = item['name']?.toString().trim() ?? '';
         final text = item['text']?.toString().trim() ?? '';
-        if (text.isNotEmpty) out.add(text);
+        if (name.isNotEmpty && text.isNotEmpty) {
+          out.add('**$name**\n$text');
+        } else if (text.isNotEmpty) {
+          out.add(text);
+        } else if (name.isNotEmpty) {
+          out.add(name);
+        }
         continue;
       }
 
       if (type == 'howtosection') {
-        // Treat section name as a header step
-        final name = item['name']?.toString().trim();
-        if (name != null && name.isNotEmpty) out.add(name);
+        final sectionName = item['name']?.toString().trim() ?? '';
+        if (sectionName.isNotEmpty) out.add('**$sectionName**');
         final subItems = item['itemListElement'];
-        if (subItems is List) _extractStepsFromList(subItems, out);
+        if (subItems is List) _collectSteps(subItems, out);
         continue;
       }
 
-      // Fallback: try 'text' field for unknown types
+      // Unknown type — try 'text' field
       final text = item['text']?.toString().trim() ?? '';
       if (text.isNotEmpty) out.add(text);
     }
   }
 
   // ---------------------------------------------------------------------------
-  // Helpers
+  // recipeYield
   // ---------------------------------------------------------------------------
 
-  List<String> _parseImageUrls(dynamic raw) {
-    if (raw == null) return [];
-
-    String? urlFromObject(dynamic obj) {
-      if (obj is String && obj.isNotEmpty) return obj;
-      if (obj is Map<String, dynamic>) {
-        final u = obj['url']?.toString().trim();
-        if (u != null && u.isNotEmpty) return u;
-        final contentUrl = obj['contentUrl']?.toString().trim();
-        if (contentUrl != null && contentUrl.isNotEmpty) return contentUrl;
-      }
-      return null;
-    }
-
-    if (raw is List) {
-      return raw
-          .map(urlFromObject)
-          .whereType<String>()
-          .toList();
-    }
-    final url = urlFromObject(raw);
-    return url != null ? [url] : [];
+  String? _parseYield(dynamic raw) {
+    if (raw == null) return null;
+    final s = (raw is List && raw.isNotEmpty)
+        ? raw.first.toString().trim()
+        : raw.toString().trim();
+    if (s.isEmpty) return null;
+    final match = RegExp(r'^\d+').firstMatch(s);
+    if (match == null) return null;
+    final result = UnitNormalizer.normalizeServes(match.group(0));
+    return result.isEmpty ? null : result;
   }
 
-  List<String> _parseKeywords(dynamic raw) {
+  // ---------------------------------------------------------------------------
+  // recipeCategory / keywords normalization
+  // ---------------------------------------------------------------------------
+
+  /// Normalizes a field that may be a plain string (optionally comma-separated),
+  /// an array of strings, or null into a flat [List<String>].
+  List<String> _normalizeStringList(dynamic raw) {
     if (raw == null) return [];
-    if (raw is String) {
+    if (raw is List) {
+      final result = <String>[];
+      for (final item in raw) {
+        final s = item.toString().trim();
+        if (s.isEmpty) continue;
+        result.addAll(
+          s.split(',').map((t) => t.trim()).where((t) => t.isNotEmpty),
+        );
+      }
+      return result;
+    }
+    if (raw is String && raw.isNotEmpty) {
       return raw
           .split(',')
           .map((t) => t.trim())
           .where((t) => t.isNotEmpty)
           .toList();
     }
-    if (raw is List) {
-      return raw
-          .map((t) => t.toString().trim())
-          .where((t) => t.isNotEmpty)
-          .toList();
-    }
     return [];
   }
 
-  /// Converts an ISO 8601 duration string (e.g. "PT1H30M", "PT45M") to a
-  /// human-readable time string like "1 hr 30 min" or "45 min".
-  /// Returns null for empty, zero-length, or unrecognised values.
-  String? _parseIsoDuration(dynamic raw) {
+  // ---------------------------------------------------------------------------
+  // image
+  // ---------------------------------------------------------------------------
+
+  String? _firstImageUrl(dynamic raw) {
     if (raw == null) return null;
-    final str = raw.toString().trim().toUpperCase();
-    if (str.isEmpty) return null;
-
-    // Only attempt ISO 8601 parsing for durations starting with P
-    if (!str.startsWith('P')) return str;
-
-    final hours = _durationPart(str, 'H');
-    final minutes = _durationPart(str, 'M');
-    if (hours == 0 && minutes == 0) return null;
-    if (hours == 0) return '$minutes min';
-    if (minutes == 0) return '$hours hr';
-    return '$hours hr $minutes min';
-  }
-
-  int _durationPart(String s, String unit) {
-    final match = RegExp('(\\d+)$unit').firstMatch(s);
-    return match != null ? int.tryParse(match.group(1)!) ?? 0 : 0;
-  }
-
-  String _short(Object e) {
-    final s = e.toString();
-    return s.length > 120 ? '${s.substring(0, 120)}…' : s;
-  }
-
-  String? _tryEncode(dynamic obj) {
-    try {
-      return jsonEncode(obj);
-    } catch (_) {
+    String? extract(dynamic obj) {
+      if (obj is String && obj.isNotEmpty) return obj;
+      if (obj is Map<String, dynamic>) {
+        final u = obj['url']?.toString().trim();
+        if (u != null && u.isNotEmpty) return u;
+        final cu = obj['contentUrl']?.toString().trim();
+        if (cu != null && cu.isNotEmpty) return cu;
+      }
       return null;
     }
+    if (raw is List) {
+      for (final item in raw) {
+        final u = extract(item);
+        if (u != null) return u;
+      }
+      return null;
+    }
+    return extract(raw);
+  }
+
+  // ---------------------------------------------------------------------------
+  // ISO 8601 duration — identical to MealieParser._parseDuration
+  // ---------------------------------------------------------------------------
+
+  String? _parseDuration(String? raw) {
+    if (raw == null || raw.trim().isEmpty) return null;
+
+    final trimmed = raw.trim();
+
+    // ISO 8601: P[nD]T[nH][nM][nS]
+    final iso = RegExp(
+      r'^P(?:(\d+)D)?T?(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?$',
+      caseSensitive: false,
+    ).firstMatch(trimmed);
+
+    if (iso != null) {
+      final days = int.tryParse(iso.group(1) ?? '') ?? 0;
+      final hours = int.tryParse(iso.group(2) ?? '') ?? 0;
+      final minutes = int.tryParse(iso.group(3) ?? '') ?? 0;
+      // Seconds ignored for cooking purposes
+      final totalMinutes = days * 1440 + hours * 60 + minutes;
+      if (totalMinutes == 0) return null;
+      if (totalMinutes < 60) return '$totalMinutes min';
+      final h = totalMinutes ~/ 60;
+      final m = totalMinutes % 60;
+      return m == 0 ? '${h}h' : '${h}h ${m}min';
+    }
+
+    // Fall back to UnitNormalizer for human-readable strings
+    return UnitNormalizer.normalizeTime(trimmed);
+  }
+
+  // ---------------------------------------------------------------------------
+  // Shared helpers
+  // ---------------------------------------------------------------------------
+
+  String _short(Object e) {
+    final msg = e.toString();
+    return msg.length > 120 ? '${msg.substring(0, 117)}…' : msg;
   }
 }
