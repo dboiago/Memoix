@@ -8,6 +8,7 @@ import '../../../../core/utils/ingredient_parser.dart';
 import '../../../../core/utils/text_normalizer.dart';
 import '../../../../core/utils/unit_normalizer.dart';
 import '../../../recipes/models/recipe.dart';
+import '../../models/recipe_import_result.dart';
 import 'external_format_parser.dart';
 
 /// Parses schema.org/Recipe JSON-LD files (e.g. RecipeSage exports).
@@ -111,6 +112,9 @@ class JsonLdParser implements ExternalFormatParser {
           failures.add(ExternalParseFailure(
             reason: 'Missing required field: name',
             rawText: rawJson,
+            partialResult: rawJson != null
+                ? _buildPartialResult(item, rawJson!)
+                : null,
           ));
         }
       } catch (e) {
@@ -400,6 +404,138 @@ class JsonLdParser implements ExternalFormatParser {
       return null;
     }
     return extract(raw);
+  }
+
+  // ---------------------------------------------------------------------------
+  // Partial result (for empty-name failures)
+  // ---------------------------------------------------------------------------
+
+  RecipeImportResult? _buildPartialResult(
+    Map<String, dynamic> item,
+    String rawJson,
+  ) {
+    try {
+      // Course
+      final combined = [
+        ..._normalizeStringList(item['recipeCategory']),
+        ..._normalizeStringList(item['keywords']),
+      ];
+      final detectedCourse = detectCourseFromCategories(combined);
+      final course = detectedCourse ?? 'mains';
+
+      // Description
+      final rawDesc = item['description']?.toString().trim();
+      final comments =
+          (rawDesc != null && rawDesc.isNotEmpty) ? rawDesc : null;
+
+      // rawIngredients
+      final rawIngredients = <RawIngredientData>[];
+      final ingredientRaw = item['recipeIngredient'];
+      final ingredientLines = <String>[];
+      if (ingredientRaw is List) {
+        ingredientLines.addAll(ingredientRaw.map((e) => e.toString()));
+      } else if (ingredientRaw is String && ingredientRaw.isNotEmpty) {
+        ingredientLines.addAll(
+          ingredientRaw
+              .split('\n')
+              .map((l) => l.trim())
+              .where((l) => l.isNotEmpty),
+        );
+      }
+      String? currentSection;
+      for (final line in ingredientLines) {
+        if (line.trim().isEmpty) continue;
+        final parsed = IngredientParser.parse(line);
+        if (parsed.isSection) {
+          currentSection = parsed.sectionName ?? line.trim();
+          continue;
+        }
+        if (!parsed.looksLikeIngredient && parsed.name.isEmpty) continue;
+        final normalizedAmount = parsed.amount != null
+            ? TextNormalizer.normalizeFractions(parsed.amount!)
+            : null;
+        rawIngredients.add(RawIngredientData(
+          original: line,
+          name: TextNormalizer.cleanName(parsed.name),
+          amount:
+              (normalizedAmount?.isNotEmpty == true) ? normalizedAmount : null,
+          unit: UnitNormalizer.normalize(parsed.unit),
+          preparation: parsed.preparation,
+          alternative: parsed.alternative,
+          sectionName: currentSection,
+        ));
+      }
+
+      // rawDirections
+      final rawDirections = <String>[];
+      _collectSteps(
+        item['recipeInstructions'] is List
+            ? item['recipeInstructions'] as List
+            : [],
+        rawDirections,
+      );
+      // top-level plain string fallback
+      if (rawDirections.isEmpty &&
+          item['recipeInstructions'] is String &&
+          (item['recipeInstructions'] as String).trim().isNotEmpty) {
+        rawDirections.add((item['recipeInstructions'] as String).trim());
+      }
+
+      // Time
+      final time = _parseDuration(
+        item['totalTime']?.toString() ??
+            item['cookTime']?.toString() ??
+            item['prepTime']?.toString(),
+      );
+
+      // Serves
+      final serves = _parseYield(item['recipeYield']);
+
+      // Source
+      String? sourceUrl;
+      final rawUrl = item['url']?.toString().trim();
+      if (rawUrl != null &&
+          rawUrl.isNotEmpty &&
+          (rawUrl.startsWith('http://') || rawUrl.startsWith('https://'))) {
+        sourceUrl = rawUrl;
+      } else {
+        final mep = item['mainEntityOfPage'];
+        String? mepUrl;
+        if (mep is String) {
+          mepUrl = mep.trim();
+        } else if (mep is Map<String, dynamic>) {
+          mepUrl = mep['@id']?.toString().trim();
+        }
+        if (mepUrl != null &&
+            mepUrl.isNotEmpty &&
+            (mepUrl.startsWith('http://') ||
+                mepUrl.startsWith('https://'))) {
+          sourceUrl = mepUrl;
+        }
+      }
+      final source =
+          (sourceUrl != null) ? RecipeSource.url : RecipeSource.personal;
+
+      return RecipeImportResult(
+        course: course,
+        comments: comments,
+        rawIngredients: rawIngredients,
+        rawDirections: rawDirections,
+        serves: serves,
+        time: time,
+        sourceUrl: sourceUrl,
+        source: source,
+        rawText: rawJson,
+        detectedCourses: [course],
+        nameConfidence: 0.0,
+        courseConfidence: detectedCourse != null ? 0.7 : 0.3,
+        ingredientsConfidence: rawIngredients.isNotEmpty ? 0.9 : 0.0,
+        directionsConfidence: rawDirections.isNotEmpty ? 0.8 : 0.0,
+      );
+    } catch (e, st) {
+      debugPrint('JsonLdParser._buildPartialResult error — $e\n$st');
+      return null;
+    }
   }
 
   // ---------------------------------------------------------------------------

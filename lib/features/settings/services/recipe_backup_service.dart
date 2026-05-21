@@ -198,21 +198,13 @@ class RecipeBackupService {
     }
 
     if (sniffed != null) {
-      // Priority 1: explicit Memoix v1 format tag.
+      // Priority 1: explicit Memoix v1 format tag → Memoix path.
       final isMemoixV1 = sniffed is Map<String, dynamic> &&
           sniffed['format'] == 'memoix/v1';
 
-      // Priority 2: wrapper object consistent with a Memoix backup (pre-v1
-      // exports have 'version', 'exportedAt', 'recipeCount', and 'recipes').
-      final isMemoixWrapper = !isMemoixV1 &&
-          sniffed is Map<String, dynamic> &&
-          (sniffed.containsKey('recipes') ||
-              sniffed.containsKey('version') ||
-              sniffed.containsKey('exportedAt'));
-
-      if (!isMemoixV1 && !isMemoixWrapper) {
-        // Priority 3: JSON-LD single recipe object with @type == "Recipe".
-        // Priority 4: JSON-LD array where the first element has @type == "Recipe".
+      if (!isMemoixV1) {
+        // Priority 2: JSON-LD single recipe object with @type == "Recipe".
+        // Priority 3: JSON-LD array where the first element has @type == "Recipe".
         bool isJsonLd = false;
         if (sniffed is Map<String, dynamic>) {
           isJsonLd =
@@ -239,7 +231,7 @@ class RecipeBackupService {
             detectedParserName: 'RecipeSage / JSON-LD',
           );
         }
-        // Priority 5: unknown JSON structure → fall through to Memoix path.
+        // Priority 4: anything else → fall through to Memoix path as fallback.
       }
     }
 
