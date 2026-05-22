@@ -4,6 +4,30 @@ import '../../../core/database/app_database.dart';
 
 part 'recipe_dao.g.dart';
 
+/// Lightweight projection returned by [RecipeDao.searchRecipes].
+/// Contains only the columns rendered by search result tiles (name, cuisine,
+/// course, isFavourite, uuid) plus id (for ordering) and recipeType (so the
+/// modernist repository can filter without a second round-trip).
+class RecipeSearchResult {
+  final int id;
+  final String uuid;
+  final String name;
+  final String? cuisine;
+  final String course;
+  final bool isFavourite;
+  final String? recipeType;
+
+  const RecipeSearchResult({
+    required this.id,
+    required this.uuid,
+    required this.name,
+    this.cuisine,
+    required this.course,
+    required this.isFavourite,
+    this.recipeType,
+  });
+}
+
 @DriftAccessor(tables: [Recipes, Ingredients, Courses])
 class RecipeDao extends DatabaseAccessor<AppDatabase>
     with _$RecipeDaoMixin {
@@ -76,13 +100,16 @@ class RecipeDao extends DatabaseAccessor<AppDatabase>
   /// Each token in [query] is suffix-matched (prefix search) so "chick" matches
   /// "chicken". Results are ordered by BM25 relevance. Returns an empty list
   /// when [query] is blank or produces no valid FTS tokens.
-  Future<List<Recipe>> searchRecipes(String query, {int limit = 50}) async {
+  Future<List<RecipeSearchResult>> searchRecipes(
+    String query, {
+    int limit = 50,
+  }) async {
     final matchQuery = _buildFtsQuery(query);
     if (matchQuery.isEmpty) return [];
 
+    // F-05: direct rowid form avoids the base-table JOIN.
     final idRows = await customSelect(
-      'SELECT recipes.id FROM recipes '
-      'JOIN recipes_fts ON recipes.id = recipes_fts.rowid '
+      'SELECT rowid FROM recipes_fts '
       'WHERE recipes_fts MATCH ? '
       'ORDER BY bm25(recipes_fts, 10, 2, 1, 7, 4) '
       'LIMIT ?',
@@ -90,14 +117,43 @@ class RecipeDao extends DatabaseAccessor<AppDatabase>
       readsFrom: {recipes},
     ).get();
 
-    final ids = idRows.map((r) => r.read<int>('id')).toList();
+    final ids = idRows.map((r) => r.read<int>('rowid')).toList();
     if (ids.isEmpty) return [];
 
-    // Preserve BM25 order after the typed fetch.
+    // Preserve BM25 order after the projected fetch.
     final idOrder = {for (var i = 0; i < ids.length; i++) ids[i]: i};
-    final rows = await (select(recipes)..where((r) => r.id.isIn(ids))).get();
-    rows.sort((a, b) => (idOrder[a.id] ?? 0).compareTo(idOrder[b.id] ?? 0));
-    return rows;
+
+    // F-03: selectOnly projects only the columns search tiles render.
+    final rows = await (selectOnly(recipes)
+          ..addColumns([
+            recipes.id,
+            recipes.uuid,
+            recipes.name,
+            recipes.cuisine,
+            recipes.course,
+            recipes.isFavourite,
+            recipes.recipeType,
+          ])
+          ..where(recipes.id.isIn(ids)))
+        .get();
+
+    final results = rows
+        .map(
+          (r) => RecipeSearchResult(
+            id: r.read(recipes.id)!,
+            uuid: r.read(recipes.uuid)!,
+            name: r.read(recipes.name)!,
+            cuisine: r.read(recipes.cuisine),
+            course: r.read(recipes.course)!,
+            isFavourite: r.read(recipes.isFavourite)!,
+            recipeType: r.read(recipes.recipeType),
+          ),
+        )
+        .toList();
+
+    results.sort(
+        (a, b) => (idOrder[a.id] ?? 0).compareTo(idOrder[b.id] ?? 0));
+    return results;
   }
 
   // ── FTS5 maintenance ───────────────────────────────────────────────────────

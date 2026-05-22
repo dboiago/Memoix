@@ -5,6 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:uuid/uuid.dart';
 
 import '../../../core/database/app_database.dart';
+import '../../../data/drift/daos/cellar_dao.dart' show CheeseSearchResult;
 import '../../../core/providers.dart';
 import '../../../core/utils/collection_utils.dart';
 import '../../../core/services/integrity_service.dart';
@@ -42,8 +43,8 @@ class CheeseRepository {
       _db.cellarDao.getCheeseFavourites();
 
   /// Search entries by name, type, or country
-  Future<List<CheeseEntry>> searchEntries(String query) {
-    if (query.isEmpty) return getAllEntries();
+  Future<List<CheeseSearchResult>> searchEntries(String query) {
+    if (query.isEmpty) return Future.value([]);
     return _db.cellarDao.searchCheeseEntries(query);
   }
 

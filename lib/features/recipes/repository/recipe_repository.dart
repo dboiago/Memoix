@@ -13,6 +13,7 @@ import '../../../core/database/app_database.dart'
     hide Recipe, Ingredient, Course;
 import '../../../core/database/app_database.dart' as db
     show Recipe, Ingredient, Course;
+import '../../../data/drift/daos/recipe_dao.dart' show RecipeSearchResult;
 import '../../../core/services/supabase_sync_service.dart';
 import '../../../core/providers.dart';
 import '../../../core/services/integrity_service.dart';
@@ -765,8 +766,20 @@ class RecipeRepository {
       return getAllRecipes();
     }
 
-    final rows = await _db.recipeDao.searchRecipes(query);
-    final results = await _loadRecipesFrom(rows);
+    // DAO now returns a lightweight projection — build lean Recipe objects
+    // without fetching ingredients (search tiles only render name/cuisine/
+    // course/isFavourite/uuid).
+    final searchResults = await _db.recipeDao.searchRecipes(query);
+    final results = searchResults.map((r) {
+      final recipe = Recipe()
+        ..id = r.id
+        ..uuid = r.uuid
+        ..name = r.name
+        ..course = r.course
+        ..cuisine = r.cuisine
+        ..isFavourite = r.isFavourite;
+      return recipe;
+    }).toList();
 
     if (courseFilter != null && courseFilter.isNotEmpty) {
       return results

@@ -714,11 +714,25 @@ class _OmniResultsView extends ConsumerWidget {
     final omniQuery = _parseIntent(query);
     final intent = omniQuery.meal;
 
-    final recipesAsync = ref.watch(allRecipesProvider);
-    final pizzasAsync = ref.watch(allPizzasProvider);
-    final sandwichesAsync = ref.watch(allSandwichesProvider);
-    final smokingAsync = ref.watch(allSmokingRecipesProvider);
-    final modernistAsync = ref.watch(allModernistRecipesProvider);
+    final recipesAsync =
+        (intent != _MealContext.cheese && intent != _MealContext.cellar)
+            ? ref.watch(allRecipesProvider)
+            : const AsyncData<List<Recipe>>([]);
+    final pizzasAsync = intent == _MealContext.dinner
+        ? ref.watch(allPizzasProvider)
+        : const AsyncData<List<Pizza>>([]);
+    final sandwichesAsync = (intent == _MealContext.general ||
+            intent == _MealContext.lunch ||
+            intent == _MealContext.dinner ||
+            intent == _MealContext.snack)
+        ? ref.watch(allSandwichesProvider)
+        : const AsyncData<List<Sandwich>>([]);
+    final smokingAsync = intent == _MealContext.dinner
+        ? ref.watch(allSmokingRecipesProvider)
+        : const AsyncData<List<SmokingRecipe>>([]);
+    final modernistAsync = intent == _MealContext.dinner
+        ? ref.watch(allModernistRecipesProvider)
+        : const AsyncData<List<ModernistRecipe>>([]);
     final cheeseAsync = intent == _MealContext.cheese
         ? ref.watch(allCheeseEntriesProvider)
         : const AsyncData<List<CheeseEntry>>([]);

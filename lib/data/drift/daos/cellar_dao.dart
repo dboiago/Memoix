@@ -3,6 +3,50 @@ import '../../../core/database/app_database.dart';
 
 part 'cellar_dao.g.dart';
 
+/// Lightweight projection returned by [CellarDao.searchEntries].
+/// Contains only the columns rendered by [CellarCard] list tiles.
+class CellarSearchResult {
+  final int id;
+  final String uuid;
+  final String name;
+  final String? category;
+  final String? producer;
+  final bool buy;
+  final bool isFavourite;
+
+  const CellarSearchResult({
+    required this.id,
+    required this.uuid,
+    required this.name,
+    this.category,
+    this.producer,
+    required this.buy,
+    required this.isFavourite,
+  });
+}
+
+/// Lightweight projection returned by [CellarDao.searchCheeseEntries].
+/// Contains only the columns rendered by [CheeseCard] list tiles.
+class CheeseSearchResult {
+  final int id;
+  final String uuid;
+  final String name;
+  final String? country;
+  final String? milk;
+  final bool buy;
+  final bool isFavourite;
+
+  const CheeseSearchResult({
+    required this.id,
+    required this.uuid,
+    required this.name,
+    this.country,
+    this.milk,
+    required this.buy,
+    required this.isFavourite,
+  });
+}
+
 @DriftAccessor(tables: [CellarEntries, CheeseEntries])
 class CellarDao extends DatabaseAccessor<AppDatabase>
     with _$CellarDaoMixin {
@@ -37,26 +81,58 @@ class CellarDao extends DatabaseAccessor<AppDatabase>
     return tokens.map((t) => '$t*').join(' ');
   }
 
-  Future<List<CellarEntry>> searchEntries(String query) async {
+  Future<List<CellarSearchResult>> searchEntries(
+    String query, {
+    int limit = 50,
+  }) async {
     final matchQuery = _buildFtsQuery(query);
     if (matchQuery.isEmpty) return [];
 
+    // F-05: direct rowid form avoids the base-table JOIN.
     final idRows = await customSelect(
-      'SELECT cellar_entries.id FROM cellar_entries '
-      'JOIN cellar_fts ON cellar_entries.id = cellar_fts.rowid '
+      'SELECT rowid FROM cellar_fts '
       'WHERE cellar_fts MATCH ? '
-      'ORDER BY bm25(cellar_fts, 10, 4, 2, 3)',
-      variables: [Variable.withString(matchQuery)],
+      'ORDER BY bm25(cellar_fts, 10, 4, 2, 3) '
+      'LIMIT ?',
+      variables: [Variable.withString(matchQuery), Variable.withInt(limit)],
       readsFrom: {cellarEntries},
     ).get();
 
-    final ids = idRows.map((r) => r.read<int>('id')).toList();
+    final ids = idRows.map((r) => r.read<int>('rowid')).toList();
     if (ids.isEmpty) return [];
     final idOrder = {for (var i = 0; i < ids.length; i++) ids[i]: i};
-    final rows =
-        await (select(cellarEntries)..where((t) => t.id.isIn(ids))).get();
-    rows.sort((a, b) => (idOrder[a.id] ?? 0).compareTo(idOrder[b.id] ?? 0));
-    return rows;
+
+    // F-03: selectOnly projects only the columns CellarCard tiles render.
+    final rows = await (selectOnly(cellarEntries)
+          ..addColumns([
+            cellarEntries.id,
+            cellarEntries.uuid,
+            cellarEntries.name,
+            cellarEntries.category,
+            cellarEntries.producer,
+            cellarEntries.buy,
+            cellarEntries.isFavourite,
+          ])
+          ..where(cellarEntries.id.isIn(ids)))
+        .get();
+
+    final results = rows
+        .map(
+          (r) => CellarSearchResult(
+            id: r.read(cellarEntries.id)!,
+            uuid: r.read(cellarEntries.uuid)!,
+            name: r.read(cellarEntries.name)!,
+            category: r.read(cellarEntries.category),
+            producer: r.read(cellarEntries.producer),
+            buy: r.read(cellarEntries.buy)!,
+            isFavourite: r.read(cellarEntries.isFavourite)!,
+          ),
+        )
+        .toList();
+
+    results.sort(
+        (a, b) => (idOrder[a.id] ?? 0).compareTo(idOrder[b.id] ?? 0));
+    return results;
   }
 
   Future<CellarEntry?> getEntryById(int id) =>
@@ -146,26 +222,58 @@ class CellarDao extends DatabaseAccessor<AppDatabase>
   Future<List<CheeseEntry>> getCheeseFavourites() =>
       (select(cheeseEntries)..where((t) => t.isFavourite.equals(true))).get();
 
-  Future<List<CheeseEntry>> searchCheeseEntries(String query) async {
+  Future<List<CheeseSearchResult>> searchCheeseEntries(
+    String query, {
+    int limit = 50,
+  }) async {
     final matchQuery = _buildFtsQuery(query);
     if (matchQuery.isEmpty) return [];
 
+    // F-05: direct rowid form avoids the base-table JOIN.
     final idRows = await customSelect(
-      'SELECT cheese_entries.id FROM cheese_entries '
-      'JOIN cheese_fts ON cheese_entries.id = cheese_fts.rowid '
+      'SELECT rowid FROM cheese_fts '
       'WHERE cheese_fts MATCH ? '
-      'ORDER BY bm25(cheese_fts, 10, 5, 2, 3, 4, 4)',
-      variables: [Variable.withString(matchQuery)],
+      'ORDER BY bm25(cheese_fts, 10, 5, 2, 3, 4, 4) '
+      'LIMIT ?',
+      variables: [Variable.withString(matchQuery), Variable.withInt(limit)],
       readsFrom: {cheeseEntries},
     ).get();
 
-    final ids = idRows.map((r) => r.read<int>('id')).toList();
+    final ids = idRows.map((r) => r.read<int>('rowid')).toList();
     if (ids.isEmpty) return [];
     final idOrder = {for (var i = 0; i < ids.length; i++) ids[i]: i};
-    final rows =
-        await (select(cheeseEntries)..where((t) => t.id.isIn(ids))).get();
-    rows.sort((a, b) => (idOrder[a.id] ?? 0).compareTo(idOrder[b.id] ?? 0));
-    return rows;
+
+    // F-03: selectOnly projects only the columns CheeseCard tiles render.
+    final rows = await (selectOnly(cheeseEntries)
+          ..addColumns([
+            cheeseEntries.id,
+            cheeseEntries.uuid,
+            cheeseEntries.name,
+            cheeseEntries.country,
+            cheeseEntries.milk,
+            cheeseEntries.buy,
+            cheeseEntries.isFavourite,
+          ])
+          ..where(cheeseEntries.id.isIn(ids)))
+        .get();
+
+    final results = rows
+        .map(
+          (r) => CheeseSearchResult(
+            id: r.read(cheeseEntries.id)!,
+            uuid: r.read(cheeseEntries.uuid)!,
+            name: r.read(cheeseEntries.name)!,
+            country: r.read(cheeseEntries.country),
+            milk: r.read(cheeseEntries.milk),
+            buy: r.read(cheeseEntries.buy)!,
+            isFavourite: r.read(cheeseEntries.isFavourite)!,
+          ),
+        )
+        .toList();
+
+    results.sort(
+        (a, b) => (idOrder[a.id] ?? 0).compareTo(idOrder[b.id] ?? 0));
+    return results;
   }
 
   Future<CheeseEntry?> getCheeseEntryById(int id) =>

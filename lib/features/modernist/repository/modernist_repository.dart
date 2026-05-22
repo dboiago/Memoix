@@ -6,6 +6,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:uuid/uuid.dart';
 
 import '../../../core/database/app_database.dart';
+import '../../../data/drift/daos/recipe_dao.dart' show RecipeSearchResult;
 import '../../../core/providers.dart';
 import '../../../core/services/integrity_service.dart';
 import '../../../core/services/rag_telemetry_service.dart';
@@ -370,17 +371,23 @@ class ModernistRepository {
   /// before conversion.
   Future<List<ModernistRecipe>> search(String query) async {
     if (query.isEmpty) return getAll();
-    final rows = await _db.recipeDao.searchRecipes(query);
-    final modernistRows =
-        rows.where((r) => r.recipeType == 'modernist').toList();
-    if (modernistRows.isEmpty) return [];
+    final searchResults = await _db.recipeDao.searchRecipes(query);
+    final modernistResults = searchResults
+        .where((r) => r.recipeType == 'modernist')
+        .toList();
+    if (modernistResults.isEmpty) return [];
+    // Re-fetch full rows for the modernist subset so _toModernistRecipe
+    // has all columns available.
+    final uuids = modernistResults.map((r) => r.uuid).toList();
+    final fullRows = await _db.recipeDao.getRecipesByUuids(uuids);
+    if (fullRows.isEmpty) return [];
     final allIngs = await _db.recipeDao
-        .getIngredientsForRecipes(modernistRows.map((r) => r.id));
+        .getIngredientsForRecipes(fullRows.map((r) => r.id));
     final grouped = <int, List<Ingredient>>{};
     for (final ing in allIngs) {
       grouped.putIfAbsent(ing.recipeId, () => []).add(ing);
     }
-    return modernistRows
+    return fullRows
         .map((r) => _toModernistRecipe(r, grouped[r.id] ?? []))
         .toList();
   }

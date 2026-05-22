@@ -5,6 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:uuid/uuid.dart';
 
 import '../../../core/database/app_database.dart';
+import '../../../data/drift/daos/cellar_dao.dart' show CellarSearchResult;
 import '../../../core/providers.dart';
 import '../../../core/utils/collection_utils.dart';
 import '../../../core/services/integrity_service.dart';
@@ -38,8 +39,8 @@ class CellarRepository {
       _db.cellarDao.getFavourites();
 
   /// Search entries by name, producer, or category
-  Future<List<CellarEntry>> searchEntries(String query) {
-    if (query.isEmpty) return getAllEntries();
+  Future<List<CellarSearchResult>> searchEntries(String query) {
+    if (query.isEmpty) return Future.value([]);
     return _db.cellarDao.searchEntries(query);
   }
 

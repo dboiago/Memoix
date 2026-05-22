@@ -645,18 +645,20 @@ final ragTelemetryServiceProvider = Provider<RagTelemetryService>((ref) {
     client: SupabaseTransmissionClient(Supabase.instance.client),
     pairedRecipeResolver: (uuids) async {
       final db = AppDatabase.instance;
-      final results = <({String name, String course})>[];
-      for (final uuid in uuids) {
-        try {
-          final row = await db.recipeDao.getRecipeByUuid(uuid);
-          if (row != null) {
-            results.add((name: row.name, course: row.course));
-          }
-        } catch (_) {
-          // Skip unresolvable UUIDs — a failed lookup must not abort transmission.
-        }
+      try {
+        final rows = await db.recipeDao.getRecipesByUuids(uuids);
+        final byUuid = {for (final r in rows) r.uuid: r};
+        return uuids
+            .where((uuid) => byUuid.containsKey(uuid))
+            .map((uuid) => (
+                  name: byUuid[uuid]!.name,
+                  course: byUuid[uuid]!.course,
+                ))
+            .toList();
+      } catch (_) {
+        // Skip unresolvable UUIDs — a failed lookup must not abort transmission.
+        return [];
       }
-      return results;
     },
   );
 });
