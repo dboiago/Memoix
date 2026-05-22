@@ -153,6 +153,8 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
 
     // Memoized derivations — recalculated only when the recipe list or
     // hideMemoix setting changes, not on every setState or repaint (M-2).
+    final hideMemoix = ref.watch(hideMemoixRecipesProvider);
+    final isCompactView = ref.watch(compactViewProvider);
     final availableCuisines =
         ref.watch(_availableCuisinesForCourseProvider(widget.course));
     final availableBaseSpirits =
@@ -175,10 +177,6 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
       loading: () => const Center(child: CircularProgressIndicator()),
       error: (err, _) => Center(child: Text('Error: $err')),
       data: (allRecipes) {
-          // Watch settings
-          final hideMemoix = ref.watch(hideMemoixRecipesProvider);
-          final isCompactView = ref.watch(compactViewProvider);
-          
           // Apply source filter first, then hide memoix if enabled
           var recipes = _filterBySource(allRecipes);
           if (hideMemoix) {
