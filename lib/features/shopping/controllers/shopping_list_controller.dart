@@ -2,6 +2,7 @@ import 'package:memoix/core/utils/amount_utils.dart';
 import 'package:memoix/core/utils/ingredient_categorizer.dart';
 import 'package:memoix/core/utils/text_normalizer.dart';
 import 'package:memoix/core/utils/unit_normalizer.dart';
+import 'package:memoix/data/ingredient_aliases.dart';
 import 'package:memoix/features/recipes/models/recipe.dart';
 import 'package:memoix/features/shopping/models/shopping_list_item.dart';
 import 'package:memoix/features/tools/measurement_converter.dart';
@@ -39,11 +40,15 @@ class ShoppingListController {
         // Skip plain "water" (assumed pantry staple)
         // But allow specific types: bottled water, tonic water, sparkling water, etc.
         if (canonical == 'water') continue;
-        
+
+        // Alias pre-step: map synonyms to a shared canonical group key so
+        // "scallion" and "green onion" are treated as the same list entry.
+        final aliasKey = resolveIngredientAlias(canonical);
+
         // Get or create builder
-        final builder = builders.putIfAbsent(canonical, () => _TermBuilder(
-          canonical: canonical,
-          displayName: TextNormalizer.cleanName(canonical),
+        final builder = builders.putIfAbsent(aliasKey, () => _TermBuilder(
+          canonical: aliasKey,
+          displayName: TextNormalizer.cleanName(aliasKey),
           category: _ingredientService.classify(ingredient.name),
         ),);
 

@@ -1,6 +1,7 @@
 import 'package:drift/drift.dart';
 
 import '../../../core/database/app_database.dart';
+import '../../ingredient_aliases.dart';
 
 part 'recipe_dao.g.dart';
 
@@ -88,7 +89,23 @@ class RecipeDao extends DatabaseAccessor<AppDatabase>
   /// Each whitespace-separated token has FTS5 special characters stripped, then
   /// a trailing `*` appended for prefix matching. Returns an empty string when
   /// no valid tokens remain (caller must short-circuit and return an empty list).
+  ///
+  /// When the full trimmed query matches an entry in [ingredientAliases] (either
+  /// as a canonical key or as a known synonym), the returned expression is an
+  /// FTS5 OR clause that covers every term in the alias group, ensuring that
+  /// searching "scallion" also surfaces recipes that use "green onion".
   static String _buildFtsQuery(String query) {
+    // Alias expansion: if the whole query resolves to a known alias group,
+    // build an OR expression across all terms in that group.
+    final trimmedLower = query.trim().toLowerCase();
+    final canonicalKey = resolveIngredientAlias(trimmedLower);
+    final aliasGroup = ingredientAliases[canonicalKey];
+    if (aliasGroup != null) {
+      final allTerms = [canonicalKey, ...aliasGroup];
+      return allTerms.map(_ftsTerm).join(' OR ');
+    }
+
+    // Default: tokenize and build prefix query.
     final tokens = query
         .trim()
         .split(RegExp(r'\s+'))
@@ -97,6 +114,17 @@ class RecipeDao extends DatabaseAccessor<AppDatabase>
         .toList();
     if (tokens.isEmpty) return '';
     return tokens.map((t) => '$t*').join(' ');
+  }
+
+  /// Builds a safe FTS5 term fragment for a single alias group member.
+  ///
+  /// Multi-word terms are wrapped in double-quotes and use FTS5 phrase-prefix
+  /// syntax (`"green onion"*`). Single-word terms use plain prefix syntax
+  /// (`scallion*`). FTS5 special characters are stripped before quoting.
+  static String _ftsTerm(String term) {
+    final safe = term.replaceAll(RegExp(r'["\(\)\*\+\-:\^\{\}\.\[\]]'), '').trim();
+    if (safe.contains(' ')) return '"$safe"*';
+    return '$safe*';
   }
 
   /// Searches recipes using FTS5 full-text search across name, tags, cuisine,
