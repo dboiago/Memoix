@@ -55,6 +55,36 @@ class MealieParser implements ExternalFormatParser {
       );
     }
 
+    // Zip bomb / resource exhaustion guard
+    if (archive.files.length > ExternalFormatParser.maxEntries) {
+      return ExternalImportSummary(
+        recipes: [],
+        skippedCount: 0,
+        failures: [ExternalParseFailure(reason: 'Archive contains too many entries')],
+        detectedParserName: 'Mealie',
+      );
+    }
+    var totalInflatedBytes = 0;
+    for (final f in archive.files) {
+      if (f.size > ExternalFormatParser.maxInflatedBytes) {
+        return ExternalImportSummary(
+          recipes: [],
+          skippedCount: 0,
+          failures: [ExternalParseFailure(reason: 'Archive entry too large to process safely')],
+          detectedParserName: 'Mealie',
+        );
+      }
+      totalInflatedBytes += f.size;
+      if (totalInflatedBytes > ExternalFormatParser.maxInflatedBytes) {
+        return ExternalImportSummary(
+          recipes: [],
+          skippedCount: 0,
+          failures: [ExternalParseFailure(reason: 'Archive entry too large to process safely')],
+          detectedParserName: 'Mealie',
+        );
+      }
+    }
+
     // Build lookup maps for quick access.
     // entry.name uses forward slashes on all platforms (archive package).
     final Map<String, ArchiveFile> entryByPath = {
@@ -86,6 +116,14 @@ class MealieParser implements ExternalFormatParser {
     final failures = <ExternalParseFailure>[];
 
     for (final entry in jsonEntries) {
+      // Recipe count cap
+      if (results.length + failures.length >= ExternalFormatParser.maxRecipesPerFile) {
+        failures.add(ExternalParseFailure(
+          reason: 'Import limit reached — maximum ${ExternalFormatParser.maxRecipesPerFile} recipes per file',
+        ));
+        break;
+      }
+
       final parts = entry.name.split('/');
       final isSubfolder = parts.length == 3;
       final slug = isSubfolder ? parts[1] : parts[1].replaceAll('.json', '');
@@ -224,7 +262,7 @@ class MealieParser implements ExternalFormatParser {
     final ingredientList = json['recipeIngredient'];
     if (ingredientList is List) {
       String? currentSection;
-      for (final item in ingredientList) {
+      for (final item in ingredientList.take(ExternalFormatParser.maxInnerListItems)) {
         if (item is! Map<String, dynamic>) continue;
 
         // Section header
@@ -284,7 +322,7 @@ class MealieParser implements ExternalFormatParser {
     final directions = <String>[];
     final instructionList = json['recipeInstructions'];
     if (instructionList is List) {
-      for (final step in instructionList) {
+      for (final step in instructionList.take(ExternalFormatParser.maxInnerListItems)) {
         if (step is! Map<String, dynamic>) continue;
         final stepTitle = step['title']?.toString().trim() ?? '';
         final stepText = step['text']?.toString().trim() ?? '';
@@ -657,9 +695,11 @@ class MealieParser implements ExternalFormatParser {
   }
 
   String _extensionOf(String path) {
+    const allowed = {'jpg', 'jpeg', 'png', 'webp'};
     final dot = path.lastIndexOf('.');
     if (dot < 0 || dot == path.length - 1) return 'jpg';
-    return path.substring(dot + 1).toLowerCase();
+    final ext = path.substring(dot + 1).toLowerCase();
+    return allowed.contains(ext) ? ext : 'jpg';
   }
 
   /// Parses an ISO 8601 duration string (e.g. `PT1H30M`) or a plain

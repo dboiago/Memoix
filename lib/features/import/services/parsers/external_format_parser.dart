@@ -64,6 +64,21 @@ class ExternalImportSummary {
 /// interface and register it in [ExternalRecipeImporter._registry].
 /// No other change to the core service is required.
 abstract class ExternalFormatParser {
+  /// Maximum number of archive entries (or top-level recipe objects) allowed
+  /// per import file before processing is aborted.
+  static const int maxEntries = 2000;
+
+  /// Maximum inflated (uncompressed) size in bytes for any single archive
+  /// entry, or for the cumulative total of all entries (200 MB).
+  static const int maxInflatedBytes = 200 * 1024 * 1024;
+
+  /// Maximum number of recipes processed from a single import file.
+  static const int maxRecipesPerFile = 2000;
+
+  /// Maximum number of items processed from any inner list (ingredients,
+  /// instructions, steps) per recipe entry.
+  static const int maxInnerListItems = 500;
+
   /// Parses [bytes] (the raw archive file bytes) and returns an
   /// [ExternalImportSummary] containing all successfully parsed recipes and
   /// a count of entries that were skipped due to errors.

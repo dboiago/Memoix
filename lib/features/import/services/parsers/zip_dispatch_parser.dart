@@ -49,6 +49,39 @@ class ZipDispatchParser implements ExternalFormatParser {
       );
     }
 
+    // Zip bomb / resource exhaustion guard
+    if (archive.files.length > ExternalFormatParser.maxEntries) {
+      return ExternalImportSummary(
+        recipes: [],
+        skippedCount: 0,
+        failures: [
+          ExternalParseFailure(reason: 'Archive contains too many entries'),
+        ],
+      );
+    }
+    var totalInflatedBytes = 0;
+    for (final f in archive.files) {
+      if (f.size > ExternalFormatParser.maxInflatedBytes) {
+        return ExternalImportSummary(
+          recipes: [],
+          skippedCount: 0,
+          failures: [
+            ExternalParseFailure(reason: 'Archive entry too large to process safely'),
+          ],
+        );
+      }
+      totalInflatedBytes += f.size;
+      if (totalInflatedBytes > ExternalFormatParser.maxInflatedBytes) {
+        return ExternalImportSummary(
+          recipes: [],
+          skippedCount: 0,
+          failures: [
+            ExternalParseFailure(reason: 'Archive entry too large to process safely'),
+          ],
+        );
+      }
+    }
+
     final target = _detect(archive);
 
     switch (target) {

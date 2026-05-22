@@ -92,6 +92,13 @@ class JsonLdParser implements ExternalFormatParser {
 
     // Phase 3: per-entry field mapping
     for (final item in items) {
+      // Recipe count cap
+      if (results.length + failures.length >= ExternalFormatParser.maxRecipesPerFile) {
+        failures.add(ExternalParseFailure(
+          reason: 'Import limit reached — maximum ${ExternalFormatParser.maxRecipesPerFile} recipes per file',
+        ));
+        break;
+      }
       if (item is! Map<String, dynamic>) {
         failures.add(ExternalParseFailure(
           reason: 'Expected a JSON object, got ${item.runtimeType}',
@@ -238,7 +245,7 @@ class JsonLdParser implements ExternalFormatParser {
 
     final lines = <String>[];
     if (raw is List) {
-      lines.addAll(raw.map((e) => e.toString()));
+      lines.addAll(raw.take(ExternalFormatParser.maxInnerListItems).map((e) => e.toString()));
     } else if (raw is String && raw.isNotEmpty) {
       lines.addAll(
         raw.split('\n').map((l) => l.trim()).where((l) => l.isNotEmpty),
@@ -291,7 +298,13 @@ class JsonLdParser implements ExternalFormatParser {
     if (raw is! List) return [];
 
     final out = <String>[];
-    _collectSteps(raw, out);
+    final castRaw = raw as List<dynamic>;
+    _collectSteps(
+      castRaw.length > ExternalFormatParser.maxInnerListItems
+          ? castRaw.sublist(0, ExternalFormatParser.maxInnerListItems)
+          : castRaw,
+      out,
+    );
     return out;
   }
 

@@ -1,3 +1,4 @@
+import 'dart:io';
 import 'dart:typed_data';
 
 import '../../recipes/models/recipe.dart';
@@ -87,6 +88,9 @@ class UnsupportedFormatException implements Exception {
 /// 2. Registering it in [_registry] below.
 /// No other change is needed.
 class ExternalRecipeImporter {
+  /// Maximum raw file size accepted before any parsing begins (50 MB).
+  static const int _maxFileSizeBytes = 50 * 1024 * 1024;
+
   static final Map<String, ExternalFormatParser> _registry = {
     'melarecipes': MelaParser(),
     'melarecipe': MelaParser(),
@@ -116,6 +120,18 @@ class ExternalRecipeImporter {
     String name,
     Uint8List bytes,
   ) {
+    if (bytes.length > _maxFileSizeBytes) {
+      return Future.value(ExternalImportSummary(
+        recipes: [],
+        skippedCount: 0,
+        failures: [
+          ExternalParseFailure(
+            reason: 'File too large to import (max 50 MB)',
+          ),
+        ],
+        detectedParserName: name,
+      ));
+    }
     final parser = _namedParsers[name];
     if (parser == null) throw UnsupportedFormatException(name);
     return parser.parse(bytes);
@@ -133,8 +149,42 @@ class ExternalRecipeImporter {
     String extension,
     Uint8List bytes,
   ) {
+    if (bytes.length > _maxFileSizeBytes) {
+      return Future.value(ExternalImportSummary(
+        recipes: [],
+        skippedCount: 0,
+        failures: [
+          ExternalParseFailure(
+            reason: 'File too large to import (max 50 MB)',
+          ),
+        ],
+      ));
+    }
     final parser = _registry[extension.toLowerCase()];
     if (parser == null) throw UnsupportedFormatException(extension);
     return parser.parse(bytes);
+  }
+
+  /// Deletes temporary image files that were written during parsing for
+  /// [recipes] that were not ultimately imported.
+  ///
+  /// Silently ignores any IO errors.
+  static void cleanupTempImages(List<Recipe> recipes) {
+    for (final recipe in recipes) {
+      _deleteTempFile(recipe.headerImage);
+      for (final path in recipe.stepImages) {
+        _deleteTempFile(path);
+      }
+    }
+  }
+
+  static void _deleteTempFile(String? path) {
+    if (path == null || path.isEmpty) return;
+    try {
+      final file = File(path);
+      if (file.existsSync()) file.deleteSync();
+    } catch (_) {
+      // Silently ignore IO errors during temp file cleanup
+    }
   }
 }

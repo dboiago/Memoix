@@ -95,6 +95,14 @@ class _ExternalImportReviewScreenState
     ];
   }
 
+  @override
+  void dispose() {
+    ExternalRecipeImporter.cleanupTempImages(
+      _rows.whereType<_SuccessRow>().map((r) => r.recipe).toList(),
+    );
+    super.dispose();
+  }
+
   int get _selectedCount =>
       _rows.whereType<_SuccessRow>().where((r) => r.checked).length;
 
@@ -115,9 +123,13 @@ class _ExternalImportReviewScreenState
 
     final repo = ref.read(recipeRepositoryProvider);
     int imported = 0;
+    final notImported = <Recipe>[];
 
     for (final row in _rows.whereType<_SuccessRow>()) {
-      if (!row.checked) continue;
+      if (!row.checked) {
+        notImported.add(row.recipe);
+        continue;
+      }
       final recipe = row.recipe;
       recipe.course = row.course;
 
@@ -136,6 +148,7 @@ class _ExternalImportReviewScreenState
       }
     }
 
+    ExternalRecipeImporter.cleanupTempImages(notImported);
     if (mounted) Navigator.pop(context, (imported, _fixedCount));
   }
 

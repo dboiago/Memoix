@@ -47,6 +47,36 @@ class TandoorParser implements ExternalFormatParser {
       );
     }
 
+    // Zip bomb / resource exhaustion guard
+    if (archive.files.length > ExternalFormatParser.maxEntries) {
+      return ExternalImportSummary(
+        recipes: [],
+        skippedCount: 0,
+        failures: [ExternalParseFailure(reason: 'Archive contains too many entries')],
+        detectedParserName: 'Tandoor',
+      );
+    }
+    var totalInflatedBytes = 0;
+    for (final f in archive.files) {
+      if (f.size > ExternalFormatParser.maxInflatedBytes) {
+        return ExternalImportSummary(
+          recipes: [],
+          skippedCount: 0,
+          failures: [ExternalParseFailure(reason: 'Archive entry too large to process safely')],
+          detectedParserName: 'Tandoor',
+        );
+      }
+      totalInflatedBytes += f.size;
+      if (totalInflatedBytes > ExternalFormatParser.maxInflatedBytes) {
+        return ExternalImportSummary(
+          recipes: [],
+          skippedCount: 0,
+          failures: [ExternalParseFailure(reason: 'Archive entry too large to process safely')],
+          detectedParserName: 'Tandoor',
+        );
+      }
+    }
+
     final Map<String, ArchiveFile> entryByPath = {
       for (final e in archive) if (e.isFile) e.name: e,
     };
@@ -68,6 +98,14 @@ class TandoorParser implements ExternalFormatParser {
     final failures = <ExternalParseFailure>[];
 
     for (final entry in recipeEntries) {
+      // Recipe count cap
+      if (results.length + failures.length >= ExternalFormatParser.maxRecipesPerFile) {
+        failures.add(ExternalParseFailure(
+          reason: 'Import limit reached — maximum ${ExternalFormatParser.maxRecipesPerFile} recipes per file',
+        ));
+        break;
+      }
+
       final parts = entry.name.split('/');
       final folderName = parts[1]; // "recipes/{name}/recipe.json"
       final subfolderPrefix = 'recipes/$folderName/';
@@ -174,12 +212,12 @@ class TandoorParser implements ExternalFormatParser {
     final ingredients = <Ingredient>[];
     final stepList = json['steps'];
     if (stepList is List) {
-      for (final step in stepList) {
+      for (final step in stepList.take(ExternalFormatParser.maxInnerListItems)) {
         if (step is! Map<String, dynamic>) continue;
         final stepIngredients = step['ingredients'];
         if (stepIngredients is! List) continue;
 
-        for (final item in stepIngredients) {
+        for (final item in stepIngredients.take(ExternalFormatParser.maxInnerListItems)) {
           if (item is! Map<String, dynamic>) continue;
 
           final amount = item['amount']?.toString().trim();
@@ -230,7 +268,7 @@ class TandoorParser implements ExternalFormatParser {
     // -------------------------------------------------------------------------
     final directions = <String>[];
     if (stepList is List) {
-      for (final step in stepList) {
+      for (final step in stepList.take(ExternalFormatParser.maxInnerListItems)) {
         if (step is! Map<String, dynamic>) continue;
         final stepName = step['name']?.toString().trim() ?? '';
         final instruction = step['instruction']?.toString().trim() ?? '';
@@ -519,9 +557,11 @@ class TandoorParser implements ExternalFormatParser {
   }
 
   String _extensionOf(String path) {
+    const allowed = {'jpg', 'jpeg', 'png', 'webp'};
     final dot = path.lastIndexOf('.');
     if (dot < 0 || dot == path.length - 1) return 'jpg';
-    return path.substring(dot + 1).toLowerCase();
+    final ext = path.substring(dot + 1).toLowerCase();
+    return allowed.contains(ext) ? ext : 'jpg';
   }
 
   String _shortMessage(Object e) {

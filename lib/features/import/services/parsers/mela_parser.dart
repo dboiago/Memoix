@@ -41,12 +41,50 @@ class MelaParser implements ExternalFormatParser {
       );
     }
 
+    // Zip bomb / resource exhaustion guard
+    if (archive.files.length > ExternalFormatParser.maxEntries) {
+      return ExternalImportSummary(
+        recipes: [],
+        skippedCount: 0,
+        failures: [ExternalParseFailure(reason: 'Archive contains too many entries')],
+        detectedParserName: 'Mela',
+      );
+    }
+    var totalInflatedBytes = 0;
+    for (final f in archive.files) {
+      if (f.size > ExternalFormatParser.maxInflatedBytes) {
+        return ExternalImportSummary(
+          recipes: [],
+          skippedCount: 0,
+          failures: [ExternalParseFailure(reason: 'Archive entry too large to process safely')],
+          detectedParserName: 'Mela',
+        );
+      }
+      totalInflatedBytes += f.size;
+      if (totalInflatedBytes > ExternalFormatParser.maxInflatedBytes) {
+        return ExternalImportSummary(
+          recipes: [],
+          skippedCount: 0,
+          failures: [ExternalParseFailure(reason: 'Archive entry too large to process safely')],
+          detectedParserName: 'Mela',
+        );
+      }
+    }
+
     final results = <Recipe>[];
     final failures = <ExternalParseFailure>[];
 
     for (final entry in archive) {
       if (!entry.isFile) continue;
       if (!entry.name.toLowerCase().endsWith('.melarecipe')) continue;
+
+      // Recipe count cap
+      if (results.length + failures.length >= ExternalFormatParser.maxRecipesPerFile) {
+        failures.add(ExternalParseFailure(
+          reason: 'Import limit reached — maximum ${ExternalFormatParser.maxRecipesPerFile} recipes per file',
+        ));
+        break;
+      }
 
       // Phase 1: decode bytes to UTF-8 string
       String? jsonStr;
@@ -369,6 +407,10 @@ class MelaParser implements ExternalFormatParser {
     }
   }
 
+  /// Maximum base64 string length accepted before image decoding is skipped
+  /// (~15 MB encoded ≈ 11 MB binary).
+  static const int _maxBase64ImageLength = 15 * 1024 * 1024;
+
   /// Decodes base64 image strings to temporary files.
   ///
   /// [_saveImageBlobs] in [RecipeRepository] reads these absolute paths and
@@ -382,6 +424,7 @@ class MelaParser implements ExternalFormatParser {
 
     for (final b64 in base64Strings) {
       if (b64.isEmpty) continue;
+      if (b64.length > _maxBase64ImageLength) continue;
       try {
         final bytes = base64Decode(b64);
         final fileName = '${_uuid.v4()}.jpg';

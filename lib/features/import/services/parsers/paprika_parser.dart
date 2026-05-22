@@ -46,16 +46,61 @@ class PaprikaParser implements ExternalFormatParser {
       );
     }
 
+    // Zip bomb / resource exhaustion guard
+    if (archive.files.length > ExternalFormatParser.maxEntries) {
+      return ExternalImportSummary(
+        recipes: [],
+        skippedCount: 0,
+        failures: [ExternalParseFailure(reason: 'Archive contains too many entries')],
+        detectedParserName: 'Paprika',
+      );
+    }
+    var totalInflatedBytes = 0;
+    for (final f in archive.files) {
+      if (f.size > ExternalFormatParser.maxInflatedBytes) {
+        return ExternalImportSummary(
+          recipes: [],
+          skippedCount: 0,
+          failures: [ExternalParseFailure(reason: 'Archive entry too large to process safely')],
+          detectedParserName: 'Paprika',
+        );
+      }
+      totalInflatedBytes += f.size;
+      if (totalInflatedBytes > ExternalFormatParser.maxInflatedBytes) {
+        return ExternalImportSummary(
+          recipes: [],
+          skippedCount: 0,
+          failures: [ExternalParseFailure(reason: 'Archive entry too large to process safely')],
+          detectedParserName: 'Paprika',
+        );
+      }
+    }
+
     final results = <Recipe>[];
     final failures = <ExternalParseFailure>[];
 
     for (final entry in archive) {
       if (!entry.isFile) continue;
 
+      // Recipe count cap
+      if (results.length + failures.length >= ExternalFormatParser.maxRecipesPerFile) {
+        failures.add(ExternalParseFailure(
+          reason: 'Import limit reached — maximum ${ExternalFormatParser.maxRecipesPerFile} recipes per file',
+        ));
+        break;
+      }
+
       // Phase 0: gzip decompression — every Paprika entry is gzipped
       List<int>? jsonBytes;
       try {
         final gzipBytes = entry.content as List<int>;
+        if (gzipBytes.length > ExternalFormatParser.maxInflatedBytes) {
+          failures.add(ExternalParseFailure(
+            name: _entryBaseName(entry.name),
+            reason: 'Entry too large after decompression',
+          ));
+          continue;
+        }
         jsonBytes = GZipCodec().decode(gzipBytes);
       } on ArchiveException catch (e) {
         debugPrint('PaprikaParser: gzip decode failed for "${entry.name}" — $e');
@@ -416,6 +461,10 @@ class PaprikaParser implements ExternalFormatParser {
     return results;
   }
 
+  /// Maximum base64 string length accepted before image decoding is skipped
+  /// (~15 MB encoded ≈ 11 MB binary).
+  static const int _maxBase64ImageLength = 15 * 1024 * 1024;
+
   /// Decodes a single base64 image string to a temporary file and returns
   /// its absolute path, or null on failure.
   ///
@@ -423,6 +472,7 @@ class PaprikaParser implements ExternalFormatParser {
   /// persists the bytes to the blob store during [saveRecipe].
   Future<String?> _writeBase64Image(String b64) async {
     if (b64.isEmpty) return null;
+    if (b64.length > _maxBase64ImageLength) return null;
     try {
       final bytes = base64Decode(b64);
       final tmpDir = await getTemporaryDirectory();
