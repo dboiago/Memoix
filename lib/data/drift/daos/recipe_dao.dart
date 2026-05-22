@@ -16,6 +16,10 @@ class RecipeSearchResult {
   final String course;
   final bool isFavourite;
   final String? recipeType;
+  /// Raw enum name stored in the DB (e.g. 'memoix', 'personal'). Nullable
+  /// because legacy rows may pre-date the column; callers should default to
+  /// [RecipeSource.personal] when null.
+  final String? source;
 
   const RecipeSearchResult({
     required this.id,
@@ -25,6 +29,7 @@ class RecipeSearchResult {
     required this.course,
     required this.isFavourite,
     this.recipeType,
+    this.source,
   });
 }
 
@@ -133,6 +138,7 @@ class RecipeDao extends DatabaseAccessor<AppDatabase>
             recipes.course,
             recipes.isFavourite,
             recipes.recipeType,
+            recipes.source,
           ])
           ..where(recipes.id.isIn(ids)))
         .get();
@@ -147,6 +153,7 @@ class RecipeDao extends DatabaseAccessor<AppDatabase>
             course: r.read(recipes.course)!,
             isFavourite: r.read(recipes.isFavourite)!,
             recipeType: r.read(recipes.recipeType),
+            source: r.read(recipes.source),
           ),
         )
         .toList();

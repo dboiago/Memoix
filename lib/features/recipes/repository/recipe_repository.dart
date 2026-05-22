@@ -777,7 +777,10 @@ class RecipeRepository {
         ..name = r.name
         ..course = r.course
         ..cuisine = r.cuisine
-        ..isFavourite = r.isFavourite;
+        ..isFavourite = r.isFavourite
+        ..source = RecipeSource.values.firstWhere(
+              (s) => s.name == r.source,
+              orElse: () => RecipeSource.personal,);
       return recipe;
     }).toList();
 

@@ -131,7 +131,12 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
       final results = await ref
           .read(recipeRepositoryProvider)
           .searchRecipes(trimmed, courseFilter: [widget.course]);
-      if (mounted) setState(() => _ftsResults = results);
+      if (mounted) {
+        final hideMemoix = ref.read(hideMemoixRecipesProvider);
+        setState(() => _ftsResults = hideMemoix
+            ? results.where((r) => r.source != RecipeSource.memoix).toList()
+            : results);
+      }
     });
   }
 
@@ -139,6 +144,13 @@ class _RecipeListScreenState extends ConsumerState<RecipeListScreen> {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final recipesAsync = ref.watch(recipesByCourseProvider(widget.course));
+
+    // When the toggle changes while a search is active, clear the cached FTS
+    // results so the next debounce cycle re-fetches with the new filter state.
+    ref.listen<bool>(hideMemoixRecipesProvider, (_, __) {
+      if (_ftsResults != null) setState(() => _ftsResults = null);
+    });
+
     // Memoized derivations — recalculated only when the recipe list or
     // hideMemoix setting changes, not on every setState or repaint (M-2).
     final availableCuisines =
