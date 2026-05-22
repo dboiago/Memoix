@@ -1,5 +1,9 @@
 import 'dart:io';
 import 'dart:typed_data';
+import 'dart:ui' as ui;
+
+import 'package:flutter/foundation.dart';
+import 'package:flutter/services.dart';
 
 import '../../recipes/models/recipe.dart';
 import 'parsers/external_format_parser.dart';
@@ -12,6 +16,36 @@ import 'parsers/zip_dispatch_parser.dart';
 
 export 'parsers/external_format_parser.dart'
     show ExternalImportSummary, ExternalFormatParser, ExternalParseFailure;
+
+// ---------------------------------------------------------------------------
+// Isolate payload and dispatch for compute()
+// ---------------------------------------------------------------------------
+
+class _IsolatePayload {
+  final String parserKey;
+  final Uint8List bytes;
+  final ui.RootIsolateToken rootIsolateToken;
+
+  const _IsolatePayload({
+    required this.parserKey,
+    required this.bytes,
+    required this.rootIsolateToken,
+  });
+}
+
+ExternalFormatParser _parserForKey(String key) => switch (key) {
+      'Mela' => MelaParser(),
+      'Mealie' => MealieParser(),
+      'Paprika' => PaprikaParser(),
+      'Tandoor' => TandoorParser(),
+      'ZipDispatch' => ZipDispatchParser(),
+      _ => throw ArgumentError('Unknown parser key: $key'),
+    };
+
+Future<ExternalImportSummary> _parseInIsolate(_IsolatePayload payload) async {
+  BackgroundIsolateBinaryMessenger.ensureInitialized(payload.rootIsolateToken);
+  return _parserForKey(payload.parserKey).parse(payload.bytes);
+}
 
 // ---------------------------------------------------------------------------
 // Result types returned to the caller of RecipeBackupService.importRecipes()
@@ -85,18 +119,18 @@ class UnsupportedFormatException implements Exception {
 ///
 /// **Adding a new format** requires only:
 /// 1. Creating a class that implements [ExternalFormatParser].
-/// 2. Registering it in [_registry] below.
+/// 2. Adding a key → class mapping in [_registryKeys] and [_parserForKey].
 /// No other change is needed.
 class ExternalRecipeImporter {
   /// Maximum raw file size accepted before any parsing begins (50 MB).
   static const int _maxFileSizeBytes = 50 * 1024 * 1024;
 
-  static final Map<String, ExternalFormatParser> _registry = {
-    'melarecipes': MelaParser(),
-    'melarecipe': MelaParser(),
-    'paprikarecipes': PaprikaParser(),
-    'paprikarecipe': PaprikaParser(),
-    'zip': ZipDispatchParser(),
+  static const Map<String, String> _registryKeys = {
+    'melarecipes': 'Mela',
+    'melarecipe': 'Mela',
+    'paprikarecipes': 'Paprika',
+    'paprikarecipe': 'Paprika',
+    'zip': 'ZipDispatch',
   };
 
   /// Named parsers for format override — keyed by user-visible app name.
@@ -134,13 +168,22 @@ class ExternalRecipeImporter {
     }
     final parser = _namedParsers[name];
     if (parser == null) throw UnsupportedFormatException(name);
-    return parser.parse(bytes);
+    // JsonLdParser processes raw JSON bytes — no ZIP inflation, skip compute().
+    if (name == 'RecipeSage / JSON-LD') return parser.parse(bytes);
+    return compute(
+      _parseInIsolate,
+      _IsolatePayload(
+        parserKey: name,
+        bytes: bytes,
+        rootIsolateToken: ui.RootIsolateToken.instance!,
+      ),
+    );
   }
 
   /// Returns true when [extension] (without leading dot, any case) has a
   /// registered parser.
   static bool supportsExtension(String extension) =>
-      _registry.containsKey(extension.toLowerCase());
+      _registryKeys.containsKey(extension.toLowerCase());
 
   /// Parses [bytes] using the parser registered for [extension].
   ///
@@ -160,9 +203,16 @@ class ExternalRecipeImporter {
         ],
       ));
     }
-    final parser = _registry[extension.toLowerCase()];
-    if (parser == null) throw UnsupportedFormatException(extension);
-    return parser.parse(bytes);
+    final key = _registryKeys[extension.toLowerCase()];
+    if (key == null) throw UnsupportedFormatException(extension);
+    return compute(
+      _parseInIsolate,
+      _IsolatePayload(
+        parserKey: key,
+        bytes: bytes,
+        rootIsolateToken: ui.RootIsolateToken.instance!,
+      ),
+    );
   }
 
   /// Deletes temporary image files that were written during parsing for
