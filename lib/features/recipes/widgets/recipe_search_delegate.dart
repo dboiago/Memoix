@@ -6,6 +6,7 @@ import '../../../core/services/integrity_service.dart';
 import '../../../core/services/session_index_service.dart';
 import '../../../shared/widgets/memoix_empty_state.dart';
 import '../../../features/rag/services/rag_retrieval_service.dart';
+import '../../settings/screens/settings_screen.dart' show hideMemoixRecipesProvider;
 import '../models/recipe.dart';
 import '../repository/recipe_repository.dart';
 // ignore: unused_import
@@ -237,7 +238,11 @@ class RecipeSearchDelegate extends SearchDelegate<Recipe?> {
           return Center(child: Text('Error: ${snapshot.error}'));
         }
 
-        final recipes = snapshot.data ?? [];
+        final allRecipes = snapshot.data ?? [];
+        final hideMemoix = ref.read(hideMemoixRecipesProvider);
+        final recipes = hideMemoix
+            ? allRecipes.where((r) => r.source != RecipeSource.memoix).toList()
+            : allRecipes;
 
         // Report search event after build phase completes to avoid
         // state mutations during build and prevent duplicate events
