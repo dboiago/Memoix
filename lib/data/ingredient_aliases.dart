@@ -14,7 +14,22 @@ const Map<String, List<String>> ingredientAliases = {
   'eggplant': ['aubergine'],
   'caster sugar': ['superfine sugar', 'castor sugar'],
   'courgette': ['zucchini'],
-  'coriander': ['cilantro'],
+  'chickpea': ['garbanzo', 'garbanzo bean'],
+  'arugula': ['rocket'],
+  'powdered sugar': ['icing sugar', 'confectioners sugar', 'confectioners\' sugar'],
+  'all-purpose flour': ['plain flour'],
+  'beet': ['beetroot'],
+  'bell pepper': ['capsicum'],
+  'baking soda': ['bicarbonate of soda', 'sodium bicarbonate'],
+  'rutabaga': ['swede'],
+  'fava bean': ['broad bean'],
+  'romaine lettuce': ['cos lettuce'],
+  'cantaloupe': ['rockmelon'],
+  'whole-wheat flour': ['wholemeal flour'],
+  'napa cabbage': ['wombok'],
+  'hazelnut': ['filbert'],
+  'celeriac': ['celery root'],
+  'snow pea': ['mangetout', 'mange tout'],
 };
 
 /// Returns the canonical group key for [term], or [term] itself if no alias
