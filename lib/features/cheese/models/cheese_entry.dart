@@ -11,7 +11,7 @@ enum CheeseSource {
 /// Decode a CheeseEntry from a JSON map (for backup import).
 CheeseEntry cheeseEntryFromJson(Map<String, dynamic> json) {
   return CheeseEntry(
-    id: (json['id'] as num?)?.toInt() ?? 0,
+    id: 0,
     uuid: json['uuid']?.toString() ?? '',
     name: json['name']?.toString() ?? '',
     country: json['country']?.toString(),

@@ -187,7 +187,7 @@ SmokingRecipe smokingRecipeFromJson(Map<String, dynamic> json) {
   String encodeList(dynamic v) =>
       v is List ? jsonEncode(v) : (v as String? ?? '[]');
   return SmokingRecipe(
-    id: (json['id'] as num?)?.toInt() ?? 0,
+    id: 0,
     uuid: json['uuid']?.toString() ?? '',
     name: json['name']?.toString() ?? '',
     course: json['course']?.toString() ?? 'smoking',

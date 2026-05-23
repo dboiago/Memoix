@@ -11,7 +11,7 @@ enum CellarSource {
 /// Decode a CellarEntry from a JSON map (for backup import).
 CellarEntry cellarEntryFromJson(Map<String, dynamic> json) {
   return CellarEntry(
-    id: (json['id'] as num?)?.toInt() ?? 0,
+    id: 0,
     uuid: json['uuid']?.toString() ?? '',
     name: json['name']?.toString() ?? '',
     producer: json['producer']?.toString(),
