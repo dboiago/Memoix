@@ -10,26 +10,123 @@
 /// - Recipe FTS search: a user query matching any alias expands to OR all
 ///   terms in the group.
 const Map<String, List<String>> ingredientAliases = {
+
+  // ── Vegetables & Produce ─────────────────────────────────────────────────
+
   'green onion': ['scallion', 'spring onion'],
   'eggplant': ['aubergine'],
-  'caster sugar': ['superfine sugar', 'castor sugar'],
   'courgette': ['zucchini'],
-  'chickpea': ['garbanzo', 'garbanzo bean'],
-  'arugula': ['rocket'],
-  'powdered sugar': ['icing sugar', 'confectioners sugar', 'confectioners\' sugar'],
-  'all-purpose flour': ['plain flour'],
-  'beet': ['beetroot'],
   'bell pepper': ['capsicum'],
-  'baking soda': ['bicarbonate of soda', 'sodium bicarbonate'],
+  'arugula': ['rocket'],
+  'beet': ['beetroot'],
+  'romaine lettuce': ['cos lettuce'],
+  'napa cabbage': ['wombok'],
+  'celeriac': ['celery root'],
+  'snow pea': ['mangetout', 'mange tout'], // Keeping, but noting the UK umbrella term caveat
   'rutabaga': ['swede'],
   'fava bean': ['broad bean'],
-  'romaine lettuce': ['cos lettuce'],
+  'okra': ['ladys finger', 'lady\'s finger'],
+  'garlic chive': ['chinese chive'],
+  'wood ear mushroom': ['black fungus', 'wood ear'],
+  'cassava': ['yuca', 'manioc'],
+  'shallot': ['eschalot'],
+  'japanese persimmon': ['kaki'],
+  'bitter melon': ['bitter gourd', 'balsam pear'],
+  'daikon': ['mooli'],
+  'jicama': ['yam bean'],
+  'dragon fruit': ['pitaya', 'pitahaya'],
   'cantaloupe': ['rockmelon'],
+
+  // ── Legumes ───────────────────────────────────────────────────────────────
+
+  'chickpea': ['garbanzo', 'garbanzo bean'],
+  'chana dal': ['channa dal'],
+  'toor dal': ['tuvar dal', 'arhar dal'],
+  'moong dal': ['mung dal', 'mung bean dal'],
+  'black-eyed pea': ['black-eyed bean'],
+  'navy bean': ['haricot bean', 'haricot'],
+  'cannellini bean': ['white kidney bean'],
+
+  // ── Flours & Starches ─────────────────────────────────────────────────────
+
+  'all-purpose flour': ['plain flour'],
   'whole-wheat flour': ['wholemeal flour'],
-  'napa cabbage': ['wombok'],
+  'bread flour': ['strong flour', 'strong white flour'],
+  'self-rising flour': ['self-raising flour'],
+  'tapioca starch': ['tapioca flour'],
+  'glutinous rice flour': ['sweet rice flour'],
+
+  // ── Sweeteners & Sugar ───────────────────────────────────────────────────
+
+  'caster sugar': ['superfine sugar', 'castor sugar'],
+  'powdered sugar': ['icing sugar', 'confectioners sugar', 'confectioners\' sugar'],
+  'golden raisin': ['sultana'], // Noting that UK/Aus actually uses Sultania grapes, but I think it's ok here
+  'agave nectar': ['agave syrup'],
+
+  // ── Dairy ─────────────────────────────────────────────────────────────────
+
+  'whole milk': ['full cream milk', 'full fat milk'],
+  'sour cream': ['soured cream'],
+
+  // ── Nuts, Seeds & Dried Fruit ─────────────────────────────────────────────
+
   'hazelnut': ['filbert'],
-  'celeriac': ['celery root'],
-  'snow pea': ['mangetout', 'mange tout'],
+  'pine nut': ['pignoli'],
+
+  // ── Spices & Pantry (Indian) ──────────────────────────────────────────────
+
+  'asafoetida': ['hing', 'asafetida'],
+  'ajwain': ['carom seed'],
+  'kalonji': ['nigella seed', 'black onion seed'],
+  'amchur': ['amchoor'],
+  'baking soda': ['bicarbonate of soda', 'sodium bicarbonate'],
+
+  // ── Spices & Pantry (Middle Eastern / North African) ─────────────────────
+
+  'sumac': ['sumach'],
+  'halloumi': ['haloumi'],
+  'labneh': ['labne', 'labaneh'],
+  'freekeh': ['farik', 'frikeh'],
+
+  // ── Spices & Pantry (Chinese) ─────────────────────────────────────────────
+
+  'sichuan pepper': ['szechuan pepper', 'szechwan pepper', 'sichuan peppercorn', 'szechuan peppercorn'],
+  'shaoxing wine': ['shaohsing wine', 'shao xing wine', 'shaoxing rice wine'],
+  'bok choy': ['pak choi', 'bak choy', 'pok choi'],
+  'doubanjiang': ['toban djan', 'douban jiang', 'tobanjiang'],
+
+  // ── Spices & Pantry (Japanese) ───────────────────────────────────────────
+
+  'kombu': ['konbu'],
+
+  // ── Spices & Pantry (Korean) ─────────────────────────────────────────────
+
+  'doenjang': ['dwenjang', 'doen jang'],
+  'gochugaru': ['korean chili flake', 'korean red pepper flake', 'korean chilli flake'],
+
+  // ── Spices & Pantry (Southeast Asian) ────────────────────────────────────
+
+  'galangal': ['galangale', 'galingale'],
+  'makrut lime': ['kaffir lime'],
+
+  // ── Spices & Pantry (Latin American) ─────────────────────────────────────
+
+  'achiote': ['annatto'],
+  'chayote': ['choko', 'christophene'],
+
+  // ── Meat (Regional naming only) ───────────────────────────────────────────
+
+  'ground beef': ['beef mince', 'minced beef'],
+  'ground pork': ['pork mince', 'minced pork'],
+  'ground lamb': ['lamb mince', 'minced lamb'],
+  'ground turkey': ['turkey mince', 'minced turkey'],
+  'ground chicken': ['chicken mince', 'minced chicken'],
+
+  // ── Seafood ───────────────────────────────────────────────────────────────
+
+  'mahi-mahi': ['dolphinfish', 'mahi mahi'],
+  'chilean sea bass': ['patagonian toothfish'],
+
 };
 
 /// Returns the canonical group key for [term], or [term] itself if no alias
