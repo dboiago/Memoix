@@ -302,16 +302,16 @@ class RecipeBackupService {
     // and files that failed JSON sniffing (let errors surface naturally).
     final String jsonString = utf8.decode(bytes);
     final jsonData = jsonDecode(jsonString);
-    final int count;
+    var count = 0;
     if (jsonData is Map<String, dynamic> && jsonData.containsKey('recipes')) {
       count = await _importRecipeList(jsonData['recipes'] as List);
       // Specialist domains — silently skipped when key absent (backward compatibility).
-      if (jsonData['pizzas'] is List) await _importPizzas(jsonData['pizzas'] as List);
-      if (jsonData['sandwiches'] is List) await _importSandwiches(jsonData['sandwiches'] as List);
-      if (jsonData['smoking'] is List) await _importSmoking(jsonData['smoking'] as List);
-      if (jsonData['modernist'] is List) await _importModernist(jsonData['modernist'] as List);
-      if (jsonData['cellar'] is List) await _importCellar(jsonData['cellar'] as List);
-      if (jsonData['cheese'] is List) await _importCheese(jsonData['cheese'] as List);
+      if (jsonData['pizzas'] is List) count += await _importPizzas(jsonData['pizzas'] as List);
+      if (jsonData['sandwiches'] is List) count += await _importSandwiches(jsonData['sandwiches'] as List);
+      if (jsonData['smoking'] is List) count += await _importSmoking(jsonData['smoking'] as List);
+      if (jsonData['modernist'] is List) count += await _importModernist(jsonData['modernist'] as List);
+      if (jsonData['cellar'] is List) count += await _importCellar(jsonData['cellar'] as List);
+      if (jsonData['cheese'] is List) count += await _importCheese(jsonData['cheese'] as List);
       if (jsonData['scratch'] is Map<String, dynamic>) await _importScratch(jsonData['scratch'] as Map<String, dynamic>);
     } else if (jsonData is List) {
       count = await _importRecipeList(jsonData);
@@ -535,7 +535,7 @@ class RecipeBackupService {
         }
         await _pizzaRepository.savePizza(pizza);
         imported++;
-      } catch (_) { continue; }
+      } catch (e) { debugPrint('domain import error: $e'); continue; }
     }
     return imported;
   }
@@ -555,7 +555,7 @@ class RecipeBackupService {
         }
         await _sandwichRepository.saveSandwich(sandwich);
         imported++;
-      } catch (_) { continue; }
+      } catch (e) { debugPrint('domain import error: $e'); continue; }
     }
     return imported;
   }
@@ -573,7 +573,7 @@ class RecipeBackupService {
         if (existing != null) recipe = recipe.copyWith(id: existing.id);
         await _smokingRepository.saveRecipe(recipe);
         imported++;
-      } catch (_) { continue; }
+      } catch (e) { debugPrint('domain import error: $e'); continue; }
     }
     return imported;
   }
@@ -589,7 +589,7 @@ class RecipeBackupService {
         if (existing != null) recipe.id = existing.id;
         await _modernistRepository.save(recipe);
         imported++;
-      } catch (_) { continue; }
+      } catch (e) { debugPrint('domain import error: $e'); continue; }
     }
     return imported;
   }
@@ -609,7 +609,7 @@ class RecipeBackupService {
         }
         await _cellarRepository.saveEntry(entry);
         imported++;
-      } catch (_) { continue; }
+      } catch (e) { debugPrint('domain import error: $e'); continue; }
     }
     return imported;
   }
@@ -629,7 +629,7 @@ class RecipeBackupService {
         }
         await _cheeseRepository.saveEntry(entry);
         imported++;
-      } catch (_) { continue; }
+      } catch (e) { debugPrint('domain import error: $e'); continue; }
     }
     return imported;
   }
