@@ -128,6 +128,13 @@ class SandwichRepository {
     return count > 0;
   }
 
+  /// Toggle the Culinary Intelligence sharing flag.
+  Future<void> toggleShared(Sandwich sandwich) async {
+    await (_db.update(_db.sandwiches)..where((t) => t.id.equals(sandwich.id)))
+        .write(SandwichesCompanion(isShared: Value(!sandwich.isShared)));
+    _ref.read(personalStorageServiceProvider).onRecipeChanged();
+  }
+
   /// Toggle favourite status
   Future<void> toggleFavourite(Sandwich sandwich) async {
     final wasFavorited = sandwich.isFavourite;

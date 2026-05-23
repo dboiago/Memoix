@@ -129,6 +129,13 @@ class SmokingRepository {
     }
   }
 
+  /// Toggle the Culinary Intelligence sharing flag.
+  Future<void> toggleShared(SmokingRecipe recipe) async {
+    await (_db.update(_db.smokingRecipes)..where((t) => t.id.equals(recipe.id)))
+        .write(SmokingRecipesCompanion(isShared: Value(!recipe.isShared)));
+    _ref.read(personalStorageServiceProvider).onRecipeChanged();
+  }
+
   /// Toggle favourite status
   Future<void> toggleFavourite(SmokingRecipe recipe) async {
     final wasFavorited = recipe.isFavourite;

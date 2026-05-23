@@ -109,6 +109,11 @@ class _SandwichDetailViewState extends ConsumerState<_SandwichDetailView> {
             onEditPressed: () => _handleMenuAction(context, ref, sandwich, 'edit'),
             onDuplicatePressed: () => _handleMenuAction(context, ref, sandwich, 'duplicate'),
             onDeletePressed: () => _handleMenuAction(context, ref, sandwich, 'delete'),
+            isShared: sandwich.isShared,
+            onToggleSharedPressed: () async {
+              await ref.read(sandwichRepositoryProvider).toggleShared(sandwich);
+              ref.invalidate(allSandwichesProvider);
+            },
           ),
 
           // 2. THE CONTENT - Scrollable, sits below header
@@ -220,6 +225,11 @@ class _SandwichDetailViewState extends ConsumerState<_SandwichDetailView> {
             onEditPressed: () => _handleMenuAction(context, ref, sandwich, 'edit'),
             onDuplicatePressed: () => _handleMenuAction(context, ref, sandwich, 'duplicate'),
             onDeletePressed: () => _handleMenuAction(context, ref, sandwich, 'delete'),
+            isShared: sandwich.isShared,
+            onToggleSharedPressed: () async {
+              await ref.read(sandwichRepositoryProvider).toggleShared(sandwich);
+              ref.invalidate(allSandwichesProvider);
+            },
           ),
 
           // 2. THE CONTENT - Scrollable

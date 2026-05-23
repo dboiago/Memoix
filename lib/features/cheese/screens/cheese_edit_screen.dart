@@ -36,6 +36,7 @@ class _CheeseEditScreenState extends ConsumerState<CheeseEditScreen> {
   String? _imagePath;
   CheeseEntry? _existingEntry;
   bool _isLoading = true;
+  bool _isShared = true;
 
   // Common milk types for autocomplete
   static const List<String> _defaultMilkTypes = [
@@ -118,6 +119,7 @@ class _CheeseEditScreenState extends ConsumerState<CheeseEditScreen> {
         _priceRange = entry.priceRange ?? 0;
         _buy = entry.buy;
         _imagePath = entry.imageUrl;
+        _isShared = entry.isShared;
       }
     }
     setState(() => _isLoading = false);
@@ -139,6 +141,11 @@ class _CheeseEditScreenState extends ConsumerState<CheeseEditScreen> {
       appBar: AppBar(
         title: Text(isEditing ? 'Edit Cheese' : 'New Cheese'),
         actions: [
+          IconButton(
+            icon: Icon(_isShared ? Icons.visibility : Icons.visibility_off),
+            tooltip: _isShared ? 'Shared' : 'Hidden',
+            onPressed: () => setState(() => _isShared = !_isShared),
+          ),
           TextButton.icon(
             onPressed: _saveEntry,
             icon: const Icon(Icons.save),
@@ -517,6 +524,7 @@ class _CheeseEditScreenState extends ConsumerState<CheeseEditScreen> {
       createdAt: _existingEntry?.createdAt ?? now,
       updatedAt: now,
       version: _existingEntry?.version ?? 1,
+      isShared: _isShared,
     );
 
     final repo = ref.read(cheeseRepositoryProvider);

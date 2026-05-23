@@ -126,6 +126,13 @@ class CheeseRepository {
     return result;
   }
 
+  /// Toggle the Culinary Intelligence sharing flag.
+  Future<void> toggleShared(CheeseEntry entry) async {
+    await (_db.update(_db.cheeseEntries)..where((t) => t.id.equals(entry.id)))
+        .write(CheeseEntriesCompanion(isShared: Value(!entry.isShared)));
+    _ref.read(personalStorageServiceProvider).onRecipeChanged();
+  }
+
   /// Toggle favourite status
   Future<void> toggleFavourite(CheeseEntry entry) async {
     final wasFavorited = entry.isFavourite;

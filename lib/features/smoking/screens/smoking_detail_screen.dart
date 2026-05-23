@@ -112,6 +112,11 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
             onEditPressed: () => _editRecipe(context, recipe),
             onDuplicatePressed: () => _duplicateRecipe(context, ref, recipe),
             onDeletePressed: () => _confirmDelete(context, ref, recipe),
+            isShared: recipe.isShared,
+            onToggleSharedPressed: () async {
+              await ref.read(smokingRepositoryProvider).toggleShared(recipe);
+              ref.invalidate(allSmokingRecipesProvider);
+            },
           ),
 
           // Compact metadata row (below header)
@@ -416,6 +421,11 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
             onEditPressed: () => _editRecipe(context, recipe),
             onDuplicatePressed: () => _duplicateRecipe(context, ref, recipe),
             onDeletePressed: () => _confirmDelete(context, ref, recipe),
+            isShared: recipe.isShared,
+            onToggleSharedPressed: () async {
+              await ref.read(smokingRepositoryProvider).toggleShared(recipe);
+              ref.invalidate(allSmokingRecipesProvider);
+            },
           ),
 
           // 2. THE CONTENT - Scrollable

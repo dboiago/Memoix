@@ -108,6 +108,11 @@ class _PizzaDetailViewState extends ConsumerState<_PizzaDetailView> {
             onEditPressed: () => _handleMenuAction(context, ref, pizza, 'edit'),
             onDuplicatePressed: () => _handleMenuAction(context, ref, pizza, 'duplicate'),
             onDeletePressed: () => _handleMenuAction(context, ref, pizza, 'delete'),
+            isShared: pizza.isShared,
+            onToggleSharedPressed: () async {
+              await ref.read(pizzaRepositoryProvider).toggleShared(pizza);
+              ref.invalidate(allPizzasProvider);
+            },
           ),
 
           // 2. THE CONTENT - Scrollable, sits below header
@@ -229,6 +234,11 @@ class _PizzaDetailViewState extends ConsumerState<_PizzaDetailView> {
             onEditPressed: () => _handleMenuAction(context, ref, pizza, 'edit'),
             onDuplicatePressed: () => _handleMenuAction(context, ref, pizza, 'duplicate'),
             onDeletePressed: () => _handleMenuAction(context, ref, pizza, 'delete'),
+            isShared: pizza.isShared,
+            onToggleSharedPressed: () async {
+              await ref.read(pizzaRepositoryProvider).toggleShared(pizza);
+              ref.invalidate(allPizzasProvider);
+            },
           ),
 
           // 2. THE CONTENT - Scrollable

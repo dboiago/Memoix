@@ -76,6 +76,11 @@ class _CellarDetailView extends ConsumerWidget {
             onEditPressed: () => AppRoutes.toCellarEdit(context, entryId: entry.uuid),
             onDuplicatePressed: () => _duplicateEntry(context, ref),
             onDeletePressed: () => _confirmDelete(context, ref),
+            isShared: entry.isShared,
+            onToggleSharedPressed: () async {
+              await ref.read(cellarRepositoryProvider).toggleShared(entry);
+              ref.invalidate(allCellarEntriesProvider);
+            },
           ),
           Expanded(
             child: ListView(

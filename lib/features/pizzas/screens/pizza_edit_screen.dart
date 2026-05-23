@@ -41,6 +41,7 @@ class _PizzaEditScreenState extends ConsumerState<PizzaEditScreen> {
   String? _imagePath;
   Pizza? _existingPizza;
   bool _isLoading = true;
+  bool _isShared = true;
 
   // Predefined bases
   static const List<String> _defaultBases = [

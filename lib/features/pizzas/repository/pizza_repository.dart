@@ -125,6 +125,13 @@ class PizzaRepository {
     return count > 0;
   }
 
+  /// Toggle the Culinary Intelligence sharing flag.
+  Future<void> toggleShared(Pizza pizza) async {
+    await (_db.update(_db.pizzas)..where((t) => t.id.equals(pizza.id)))
+        .write(PizzasCompanion(isShared: Value(!pizza.isShared)));
+    _ref.read(personalStorageServiceProvider).onRecipeChanged();
+  }
+
   /// Toggle favourite status
   Future<void> toggleFavourite(Pizza pizza) async {
     final wasFavorited = pizza.isFavourite;

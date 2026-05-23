@@ -76,6 +76,11 @@ class _CheeseDetailView extends ConsumerWidget {
             onEditPressed: () => AppRoutes.toCheeseEdit(context, entryId: entry.uuid),
             onDuplicatePressed: () => _duplicateEntry(context, ref),
             onDeletePressed: () => _confirmDelete(context, ref),
+            isShared: entry.isShared,
+            onToggleSharedPressed: () async {
+              await ref.read(cheeseRepositoryProvider).toggleShared(entry);
+              ref.invalidate(allCheeseEntriesProvider);
+            },
           ),
           Expanded(
             child: ListView(

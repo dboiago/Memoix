@@ -36,6 +36,7 @@ class _CellarEditScreenState extends ConsumerState<CellarEditScreen> {
   String? _imagePath;
   CellarEntry? _existingEntry;
   bool _isLoading = true;
+  bool _isShared = true;
 
   // Common categories for autocomplete
   static const List<String> _defaultCategories = [
@@ -88,6 +89,7 @@ class _CellarEditScreenState extends ConsumerState<CellarEditScreen> {
         _priceRange = entry.priceRange ?? 0;
         _buy = entry.buy;
         _imagePath = entry.imageUrl;
+        _isShared = entry.isShared;
       }
     }
     setState(() => _isLoading = false);
@@ -109,6 +111,11 @@ class _CellarEditScreenState extends ConsumerState<CellarEditScreen> {
       appBar: AppBar(
         title: Text(isEditing ? 'Edit Entry' : 'New Entry'),
         actions: [
+          IconButton(
+            icon: Icon(_isShared ? Icons.visibility : Icons.visibility_off),
+            tooltip: _isShared ? 'Shared' : 'Hidden',
+            onPressed: () => setState(() => _isShared = !_isShared),
+          ),
           TextButton.icon(
             onPressed: _saveEntry,
             icon: const Icon(Icons.save),
@@ -437,6 +444,7 @@ class _CellarEditScreenState extends ConsumerState<CellarEditScreen> {
       createdAt: _existingEntry?.createdAt ?? now,
       updatedAt: now,
       version: _existingEntry?.version ?? 1,
+      isShared: _isShared,
     );
 
     final repo = ref.read(cellarRepositoryProvider);
