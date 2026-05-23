@@ -1708,6 +1708,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
       pairedRecipeIds: '[]',
       createdAt: now,
       updatedAt: now,
+      isShared: true,
     );
   }
   
@@ -1797,6 +1798,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
       createdAt: now,
       updatedAt: now,
       version: 1,
+      isShared: true,
     );
   }
 

@@ -1104,6 +1104,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
       pairedRecipeIds: recipe.pairedRecipeIds,
       createdAt: now,
       updatedAt: now,
+      isShared: recipe.isShared,
     );
     
     await repo.saveRecipe(newRecipe);

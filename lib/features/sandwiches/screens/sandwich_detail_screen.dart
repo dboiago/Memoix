@@ -468,6 +468,7 @@ class _SandwichDetailViewState extends ConsumerState<_SandwichDetailView> {
       createdAt: DateTime.now(),
       updatedAt: DateTime.now(),
       version: 1,
+      isShared: sandwich.isShared,
     );
 
     final repo = ref.read(sandwichRepositoryProvider);

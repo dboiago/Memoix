@@ -820,6 +820,7 @@ class _PizzaEditScreenState extends ConsumerState<PizzaEditScreen> {
       createdAt: _existingPizza?.createdAt ?? now,
       updatedAt: now,
       version: _existingPizza?.version ?? 1,
+      isShared: _isShared,
     );
 
     final repo = ref.read(pizzaRepositoryProvider);

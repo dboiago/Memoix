@@ -33,7 +33,7 @@ class CheeseDetailScreen extends ConsumerWidget {
       data: (entries) {
         final entry = entries.firstWhere(
           (e) => e.uuid == entryId,
-          orElse: () => CheeseEntry(id: 0, uuid: '', name: '', buy: false, source: CheeseSource.personal.name, isFavourite: false, createdAt: DateTime.now(), updatedAt: DateTime.now(), version: 1),
+          orElse: () => CheeseEntry(id: 0, uuid: '', name: '', buy: false, source: CheeseSource.personal.name, isFavourite: false, createdAt: DateTime.now(), updatedAt: DateTime.now(), version: 1, isShared: true),
         );
 
         if (entry.name.isEmpty) {
@@ -255,6 +255,7 @@ class _CheeseDetailView extends ConsumerWidget {
       createdAt: now,
       updatedAt: now,
       version: 1,
+      isShared: entry.isShared,
     );
     
     await repo.saveEntry(newEntry);

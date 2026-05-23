@@ -534,6 +534,7 @@ class RecipeImportResult {
       pairedRecipeIds: '[]',
       createdAt: now,
       updatedAt: now,
+      isShared: true,
     );
   }
 
@@ -618,6 +619,7 @@ class RecipeImportResult {
       pairedRecipeIds: '[]',
       createdAt: now,
       updatedAt: now,
+      isShared: true,
     );
   }
 
@@ -725,6 +727,7 @@ class RecipeImportResult {
       createdAt: now,
       updatedAt: now,
       version: 1,
+      isShared: true,
     );
   }
   RecipeImportResult copyWith({

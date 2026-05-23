@@ -1721,6 +1721,7 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
       pairedRecipeIds: jsonEncode(_pairedRecipeIds),
       createdAt: _existingRecipe?.createdAt ?? DateTime.now(),
       updatedAt: DateTime.now(),
+      isShared: true,
     );
   }
 

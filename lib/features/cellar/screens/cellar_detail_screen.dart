@@ -33,7 +33,7 @@ class CellarDetailScreen extends ConsumerWidget {
       data: (entries) {
         final entry = entries.firstWhere(
           (e) => e.uuid == entryId,
-          orElse: () => CellarEntry(id: 0, uuid: '', name: '', buy: false, source: CellarSource.personal.name, isFavourite: false, createdAt: DateTime.now(), updatedAt: DateTime.now(), version: 1),
+          orElse: () => CellarEntry(id: 0, uuid: '', name: '', buy: false, source: CellarSource.personal.name, isFavourite: false, createdAt: DateTime.now(), updatedAt: DateTime.now(), version: 1, isShared: true),
         );
 
         if (entry.name.isEmpty) {
@@ -260,6 +260,7 @@ class _CellarDetailView extends ConsumerWidget {
       createdAt: now,
       updatedAt: now,
       version: 1,
+      isShared: entry.isShared,
     );
     
     await repo.saveEntry(newEntry);
