@@ -71,12 +71,20 @@ class RecipeBackupService {
     }
 
     // Fetch specialist domains
-    final pizzas = await _pizzaRepository.getAllPizzas();
-    final sandwiches = await _sandwichRepository.getAllSandwiches();
-    final smokingRecipes = await _smokingRepository.getAllRecipes();
-    final modernistRecipes = await _modernistRepository.getAll();
-    final cellarEntries = await _cellarRepository.getAllEntries();
-    final cheeseEntries = await _cheeseRepository.getAllEntries();
+    var pizzas = await _pizzaRepository.getAllPizzas();
+    var sandwiches = await _sandwichRepository.getAllSandwiches();
+    var smokingRecipes = await _smokingRepository.getAllRecipes();
+    var modernistRecipes = await _modernistRepository.getAll();
+    var cellarEntries = await _cellarRepository.getAllEntries();
+    var cheeseEntries = await _cheeseRepository.getAllEntries();
+    if (!includeAll) {
+      pizzas = pizzas.where((p) => p.source != PizzaSource.memoix.name).toList();
+      sandwiches = sandwiches.where((s) => s.source != SandwichSource.memoix.name).toList();
+      smokingRecipes = smokingRecipes.where((s) => s.source != SmokingSource.memoix.name).toList();
+      modernistRecipes = modernistRecipes.where((m) => m.source != ModernistSource.memoix).toList();
+      cellarEntries = cellarEntries.where((c) => c.source != CellarSource.memoix.name).toList();
+      cheeseEntries = cheeseEntries.where((c) => c.source != CheeseSource.memoix.name).toList();
+    }
     final quickNotes = await _scratchPadRepository.getQuickNotes();
     final drafts = await _scratchPadRepository.getAllDrafts();
 
@@ -515,8 +523,9 @@ class RecipeBackupService {
   Future<int> _importPizzas(List jsonList) async {
     int imported = 0;
     for (final json in jsonList) {
+      if (json is! Map<String, dynamic>) continue;
       try {
-        var pizza = pizzaFromJson(json as Map<String, dynamic>);
+        var pizza = pizzaFromJson(json);
         if (pizza.source == PizzaSource.memoix.name) {
           pizza = pizza.copyWith(source: PizzaSource.imported.name);
         }
@@ -534,8 +543,9 @@ class RecipeBackupService {
   Future<int> _importSandwiches(List jsonList) async {
     int imported = 0;
     for (final json in jsonList) {
+      if (json is! Map<String, dynamic>) continue;
       try {
-        var sandwich = sandwichFromJson(json as Map<String, dynamic>);
+        var sandwich = sandwichFromJson(json);
         if (sandwich.source == SandwichSource.memoix.name) {
           sandwich = sandwich.copyWith(source: SandwichSource.imported.name);
         }
@@ -553,8 +563,9 @@ class RecipeBackupService {
   Future<int> _importSmoking(List jsonList) async {
     int imported = 0;
     for (final json in jsonList) {
+      if (json is! Map<String, dynamic>) continue;
       try {
-        var recipe = smokingRecipeFromJson(json as Map<String, dynamic>);
+        var recipe = smokingRecipeFromJson(json);
         if (recipe.source == SmokingSource.memoix.name) {
           recipe = recipe.copyWith(source: SmokingSource.imported.name);
         }
@@ -570,8 +581,9 @@ class RecipeBackupService {
   Future<int> _importModernist(List jsonList) async {
     int imported = 0;
     for (final json in jsonList) {
+      if (json is! Map<String, dynamic>) continue;
       try {
-        final recipe = ModernistRecipe.fromJson(json as Map<String, dynamic>);
+        final recipe = ModernistRecipe.fromJson(json);
         if (recipe.source == ModernistSource.memoix) recipe.source = ModernistSource.imported;
         final existing = await _modernistRepository.getByUuid(recipe.uuid);
         if (existing != null) recipe.id = existing.id;
@@ -585,8 +597,9 @@ class RecipeBackupService {
   Future<int> _importCellar(List jsonList) async {
     int imported = 0;
     for (final json in jsonList) {
+      if (json is! Map<String, dynamic>) continue;
       try {
-        var entry = cellarEntryFromJson(json as Map<String, dynamic>);
+        var entry = cellarEntryFromJson(json);
         if (entry.source == CellarSource.personal.name) {
           entry = entry.copyWith(source: CellarSource.imported.name);
         }
@@ -604,8 +617,9 @@ class RecipeBackupService {
   Future<int> _importCheese(List jsonList) async {
     int imported = 0;
     for (final json in jsonList) {
+      if (json is! Map<String, dynamic>) continue;
       try {
-        var entry = cheeseEntryFromJson(json as Map<String, dynamic>);
+        var entry = cheeseEntryFromJson(json);
         if (entry.source == CheeseSource.personal.name) {
           entry = entry.copyWith(source: CheeseSource.imported.name);
         }
