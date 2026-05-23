@@ -139,6 +139,9 @@ class Pizzas extends Table {
   DateTimeColumn get createdAt => dateTime()();
   DateTimeColumn get updatedAt => dateTime()();
   IntColumn get version => integer().withDefault(const Constant(1))();
+  // Whether this pizza's data may be contributed to the Culinary Intelligence pipeline.
+  // Defaults to true (opt-in per-entry), but the master privacy switch must ALSO be on.
+  BoolColumn get isShared => boolean().withDefault(const Constant(true))();
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -165,6 +168,9 @@ class CellarEntries extends Table {
   DateTimeColumn get createdAt => dateTime()();
   DateTimeColumn get updatedAt => dateTime()();
   IntColumn get version => integer().withDefault(const Constant(1))();
+  // Whether this cellar entry's data may be contributed to the Culinary Intelligence pipeline.
+  // Defaults to true (opt-in per-entry), but the master privacy switch must ALSO be on.
+  BoolColumn get isShared => boolean().withDefault(const Constant(true))();
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -191,6 +197,9 @@ class CheeseEntries extends Table {
   DateTimeColumn get createdAt => dateTime()();
   DateTimeColumn get updatedAt => dateTime()();
   IntColumn get version => integer().withDefault(const Constant(1))();
+  // Whether this cheese entry's data may be contributed to the Culinary Intelligence pipeline.
+  // Defaults to true (opt-in per-entry), but the master privacy switch must ALSO be on.
+  BoolColumn get isShared => boolean().withDefault(const Constant(true))();
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -297,6 +306,9 @@ class Sandwiches extends Table {
   DateTimeColumn get createdAt => dateTime()();
   DateTimeColumn get updatedAt => dateTime()();
   IntColumn get version => integer().withDefault(const Constant(1))();
+  // Whether this sandwich's data may be contributed to the Culinary Intelligence pipeline.
+  // Defaults to true (opt-in per-entry), but the master privacy switch must ALSO be on.
+  BoolColumn get isShared => boolean().withDefault(const Constant(true))();
 }
 
 /// Type alias: Drift generates 'Sandwiche' from the Sandwiches table name.
@@ -381,6 +393,9 @@ class SmokingRecipes extends Table {
   TextColumn get pairedRecipeIds => text().withDefault(const Constant('[]'))();
   DateTimeColumn get createdAt => dateTime()();
   DateTimeColumn get updatedAt => dateTime()();
+  // Whether this smoking recipe's data may be contributed to the Culinary Intelligence pipeline.
+  // Defaults to true (opt-in per-entry), but the master privacy switch must ALSO be on.
+  BoolColumn get isShared => boolean().withDefault(const Constant(true))();
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -513,7 +528,7 @@ class AppDatabase extends _$AppDatabase {
   }
 
   @override
-  int get schemaVersion => 11;
+  int get schemaVersion => 12;
 
   @override
   MigrationStrategy get migration => MigrationStrategy(
@@ -872,6 +887,35 @@ class AppDatabase extends _$AppDatabase {
           CREATE INDEX IF NOT EXISTS idx_recipes_is_shared
           ON recipes (is_shared)
         ''');
+      }
+      if (from < 12) {
+        // Add the Culinary Intelligence sharing flag to all specialist domain
+        // tables. Guards with PRAGMA table_info so the migration is idempotent.
+        final smokingCols =
+            await customSelect('PRAGMA table_info(smoking_recipes)').get();
+        if (!smokingCols.any((r) => r.read<String>('name') == 'is_shared')) {
+          await m.addColumn(smokingRecipes, smokingRecipes.isShared);
+        }
+        final pizzaCols =
+            await customSelect('PRAGMA table_info(pizzas)').get();
+        if (!pizzaCols.any((r) => r.read<String>('name') == 'is_shared')) {
+          await m.addColumn(pizzas, pizzas.isShared);
+        }
+        final sandwichCols =
+            await customSelect('PRAGMA table_info(sandwiches)').get();
+        if (!sandwichCols.any((r) => r.read<String>('name') == 'is_shared')) {
+          await m.addColumn(sandwiches, sandwiches.isShared);
+        }
+        final cellarCols =
+            await customSelect('PRAGMA table_info(cellar_entries)').get();
+        if (!cellarCols.any((r) => r.read<String>('name') == 'is_shared')) {
+          await m.addColumn(cellarEntries, cellarEntries.isShared);
+        }
+        final cheeseCols =
+            await customSelect('PRAGMA table_info(cheese_entries)').get();
+        if (!cheeseCols.any((r) => r.read<String>('name') == 'is_shared')) {
+          await m.addColumn(cheeseEntries, cheeseEntries.isShared);
+        }
       }
     },
   );

@@ -35,6 +35,7 @@ CheeseEntry cheeseEntryFromJson(Map<String, dynamic> json) {
             ? DateTime.parse(json['updatedAt'].toString()).toUtc()
             : DateTime.now().toUtc(),
     version: (json['version'] as num?)?.toInt() ?? 1,
+    isShared: json['isShared'] as bool? ?? true,
   );
 }
 
@@ -56,6 +57,7 @@ extension CheeseEntryX on CheeseEntry {
         'createdAt': createdAt.toUtc().toIso8601String(),
         'updatedAt': updatedAt.toUtc().toIso8601String(),
         'version': version,
+        'isShared': isShared,
       };
 
   Map<String, dynamic> toShareableJson() => {

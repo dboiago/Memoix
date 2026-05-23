@@ -220,6 +220,7 @@ SmokingRecipe smokingRecipeFromJson(Map<String, dynamic> json) {
         : json['updatedAt'] != null
             ? DateTime.parse(json['updatedAt'].toString())
             : DateTime.now(),
+    isShared: json['isShared'] as bool? ?? true,
   );
 }
 
@@ -263,6 +264,7 @@ extension SmokingRecipeX on SmokingRecipe {
         'pairedRecipeIds': jsonDecode(pairedRecipeIds),
         'createdAt': createdAt.toIso8601String(),
         'updatedAt': updatedAt.toIso8601String(),
+        'isShared': isShared,
       };
 
   Map<String, dynamic> toShareableJson() => {

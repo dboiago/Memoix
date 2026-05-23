@@ -97,6 +97,7 @@ Pizza pizzaFromJson(Map<String, dynamic> json) {
             ? DateTime.parse(json['updatedAt'].toString())
             : DateTime.now(),
     version: (json['version'] as num?)?.toInt() ?? 1,
+    isShared: json['isShared'] as bool? ?? true,
   );
 }
 
@@ -126,6 +127,7 @@ extension PizzaX on Pizza {
         'createdAt': createdAt.toIso8601String(),
         'updatedAt': updatedAt.toIso8601String(),
         'version': version,
+        'isShared': isShared,
       };
 
   Map<String, dynamic> toShareableJson() => {

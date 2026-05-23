@@ -156,6 +156,14 @@ class RagTelemetryService {
     SmokingRecipe recipe, [
     String? rawSource,
   ]) async {
+    if (!recipe.isShared) {
+      debugPrint(
+        'RagTelemetryService: skipped — smoking recipe "${recipe.name}" '
+        'has isShared = false.',
+      );
+      return;
+    }
+
     if (!await _masterSwitchEnabled()) {
       debugPrint(
         'RagTelemetryService: smoking skipped — master Culinary Intelligence switch is OFF.',
@@ -189,6 +197,14 @@ class RagTelemetryService {
   // ─────────────────────────────────────────────────────────────────────────
 
   Future<void> queuePizzaForExport(Pizza pizza, [String? rawSource]) async {
+    if (!pizza.isShared) {
+      debugPrint(
+        'RagTelemetryService: skipped — pizza "${pizza.name}" '
+        'has isShared = false.',
+      );
+      return;
+    }
+
     if (!await _masterSwitchEnabled()) {
       debugPrint(
         'RagTelemetryService: pizza skipped — master Culinary Intelligence switch is OFF.',
@@ -221,6 +237,14 @@ class RagTelemetryService {
     Sandwich sandwich, [
     String? rawSource,
   ]) async {
+    if (!sandwich.isShared) {
+      debugPrint(
+        'RagTelemetryService: skipped — sandwich "${sandwich.name}" '
+        'has isShared = false.',
+      );
+      return;
+    }
+
     if (!await _masterSwitchEnabled()) {
       debugPrint(
         'RagTelemetryService: sandwich skipped — master Culinary Intelligence switch is OFF.',
@@ -251,12 +275,20 @@ class RagTelemetryService {
 
   /// Computes hashes and transmits a [CellarEntry] to the RAG pipeline.
   ///
-  /// Cellar entries have no per-entry sharing flag; only the master
-  /// Culinary Intelligence switch gates transmission.
+  /// The individual [CellarEntry.isShared] flag must be true, and the master
+  /// Culinary Intelligence switch must also be on.
   Future<void> queueCellarForExport(
     CellarEntry entry, [
     String? rawSource,
   ]) async {
+    if (!entry.isShared) {
+      debugPrint(
+        'RagTelemetryService: skipped — cellar entry "${entry.name}" '
+        'has isShared = false.',
+      );
+      return;
+    }
+
     if (!await _masterSwitchEnabled()) {
       debugPrint(
         'RagTelemetryService: cellar skipped — master Culinary Intelligence switch is OFF.',
@@ -287,12 +319,20 @@ class RagTelemetryService {
 
   /// Computes hashes and transmits a [CheeseEntry] to the RAG pipeline.
   ///
-  /// Cheese entries have no per-entry sharing flag; only the master
-  /// Culinary Intelligence switch gates transmission.
+  /// The individual [CheeseEntry.isShared] flag must be true, and the master
+  /// Culinary Intelligence switch must also be on.
   Future<void> queueCheeseForExport(
     CheeseEntry entry, [
     String? rawSource,
   ]) async {
+    if (!entry.isShared) {
+      debugPrint(
+        'RagTelemetryService: skipped — cheese entry "${entry.name}" '
+        'has isShared = false.',
+      );
+      return;
+    }
+
     if (!await _masterSwitchEnabled()) {
       debugPrint(
         'RagTelemetryService: cheese skipped — master Culinary Intelligence switch is OFF.',
@@ -335,8 +375,8 @@ class RagTelemetryService {
   ///
   /// The [Recipe.isShared] gate is enforced inside [queueForExport], so
   /// recipes the user has hidden will be silently skipped without any
-  /// special handling here. All other domain types have no per-entry
-  /// visibility flag and are included unconditionally.
+  /// special handling here. All specialist domain types also enforce their
+  /// own [isShared] flag in the respective backfill loops below.
   Future<void> backfillOnOptIn({
     required Future<List<Recipe>> Function() recipeFetcher,
     required Future<List<ModernistRecipe>> Function() modernistFetcher,
@@ -422,6 +462,7 @@ class RagTelemetryService {
       final smokingRecipes = await smokingFetcher();
       final payloads = <SmokingKnowledgePayload>[];
       for (final recipe in smokingRecipes) {
+        if (!recipe.isShared) continue;
         final pairedUuids =
             (jsonDecode(recipe.pairedRecipeIds) as List).cast<String>();
         final lineageHash = PayloadHasher.smokingLineageHash(recipe);
@@ -455,6 +496,7 @@ class RagTelemetryService {
       final pizzas = await pizzaFetcher();
       final payloads = <PizzaKnowledgePayload>[];
       for (final pizza in pizzas) {
+        if (!pizza.isShared) continue;
         final lineageHash = PayloadHasher.pizzaLineageHash(pizza);
         final contentHash = PayloadHasher.pizzaContentHash(pizza);
         payloads.add(PizzaKnowledgePayload(
@@ -484,6 +526,7 @@ class RagTelemetryService {
       final sandwiches = await sandwichFetcher();
       final payloads = <SandwichKnowledgePayload>[];
       for (final sandwich in sandwiches) {
+        if (!sandwich.isShared) continue;
         final lineageHash = PayloadHasher.sandwichLineageHash(sandwich);
         final contentHash = PayloadHasher.sandwichContentHash(sandwich);
         payloads.add(SandwichKnowledgePayload(
@@ -513,6 +556,7 @@ class RagTelemetryService {
       final cellarEntries = await cellarFetcher();
       final payloads = <CellarKnowledgePayload>[];
       for (final entry in cellarEntries) {
+        if (!entry.isShared) continue;
         final lineageHash = PayloadHasher.cellarLineageHash(entry);
         final contentHash = PayloadHasher.cellarContentHash(entry);
         payloads.add(CellarKnowledgePayload(
@@ -542,6 +586,7 @@ class RagTelemetryService {
       final cheeseEntries = await cheeseFetcher();
       final payloads = <CheeseKnowledgePayload>[];
       for (final entry in cheeseEntries) {
+        if (!entry.isShared) continue;
         final lineageHash = PayloadHasher.cheeseLineageHash(entry);
         final contentHash = PayloadHasher.cheeseContentHash(entry);
         payloads.add(CheeseKnowledgePayload(
