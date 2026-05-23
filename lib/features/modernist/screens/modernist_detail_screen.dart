@@ -394,6 +394,14 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
         icon: const Icon(Icons.share),
         onPressed: () => _shareRecipe(context, recipe),
       ),
+      IconButton(
+        icon: Icon(recipe.isShared ? Icons.visibility : Icons.visibility_off),
+        tooltip: recipe.isShared ? 'Shared' : 'Hidden',
+        onPressed: () async {
+          await ref.read(modernistRepositoryProvider).toggleShared(recipe.id);
+          ref.invalidate(modernistRecipeProvider(widget.recipeId));
+        },
+      ),
       PopupMenuButton<String>(
         onSelected: (value) => _handleMenuAction(value, recipe),
         itemBuilder: (_) => [

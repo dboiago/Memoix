@@ -284,6 +284,9 @@ class ModernistRecipe {
   /// Whether this is a favorite
   bool isFavourite = false;
 
+  /// Whether this recipe's data may be contributed to the Culinary Intelligence pipeline.
+  bool isShared = true;
+
   /// How many times this has been made
   int cookCount = 0;
 
@@ -321,6 +324,7 @@ class ModernistRecipe {
     String? imageUrl,
     List<String>? imageUrls,
     bool isFavourite = false,
+    bool isShared = true,
     int cookCount = 0,
     ModernistSource source = ModernistSource.personal,
     List<String>? pairedRecipeIds,
@@ -346,6 +350,7 @@ class ModernistRecipe {
       ..imageUrl = imageUrl
       ..imageUrls = imageUrls ?? []
       ..isFavourite = isFavourite
+      ..isShared = isShared
       ..cookCount = cookCount
       ..source = source
       ..pairedRecipeIds = pairedRecipeIds ?? []

@@ -58,6 +58,7 @@ class ModernistRepository {
       ..imageUrl = r.imageUrl
       ..imageUrls = (jsonDecode(r.imageUrls) as List).cast<String>()
       ..isFavourite = r.isFavourite
+      ..isShared = r.isShared
       ..cookCount = r.cookCount
       ..source = ModernistSource.values.firstWhere(
             (s) => s.name == r.source,
@@ -166,6 +167,7 @@ class ModernistRepository {
       imageUrl: Value(recipe.imageUrl),
       imageUrls: Value(jsonEncode(recipe.imageUrls)),
       isFavourite: Value(recipe.isFavourite),
+      isShared: Value(recipe.isShared),
       cookCount: Value(recipe.cookCount),
       source: Value(recipe.source.name),
       pairedRecipeIds: Value(jsonEncode(recipe.pairedRecipeIds)),
@@ -217,6 +219,7 @@ class ModernistRepository {
     List<String>? imageUrls,
     List<String>? pairedRecipeIds,
     ModernistSource source = ModernistSource.personal,
+    bool isShared = true,
   }) async {
     final recipe = ModernistRecipe.create(
       uuid: _uuid.v4(),
@@ -240,6 +243,7 @@ class ModernistRepository {
       imageUrls: imageUrls,
       pairedRecipeIds: pairedRecipeIds,
       source: source,
+      isShared: isShared,
     );
     final dbId = await save(recipe);
     recipe.id = dbId;
@@ -261,6 +265,19 @@ class ModernistRepository {
     final recipe = await getByUuid(uuid);
     if (recipe == null) return false;
     return delete(recipe.id);
+  }
+
+  /// Toggle the Culinary Intelligence sharing flag for a modernist recipe.
+  Future<void> toggleShared(int id) async {
+    final existing = await _db.recipeDao.getRecipeById(id);
+    if (existing == null) return;
+    await _db.recipeDao.toggleShared(id, existing.isShared);
+    _ref.read(personalStorageServiceProvider).onRecipeChanged();
+    unawaited(getById(id).then((r) {
+      if (r == null) return;
+      r.isShared = !existing.isShared;
+      _ref.read(ragTelemetryServiceProvider).queueModernistForExport(r);
+    }));
   }
 
   /// Toggle favourite status

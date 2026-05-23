@@ -80,6 +80,7 @@ typedef _RecipeRaw = ({
   String? pickleMethod,
   bool isShared,
   String? lineageHash,
+  String recipeType,
 });
 
 /// Single ingredient row as a primitive record (no JSON columns).
@@ -140,6 +141,7 @@ typedef _RecipeDecoded = ({
   String? pickleMethod,
   bool isShared,
   String? lineageHash,
+  String recipeType,
   List<_IngRaw> ingredients,
 });
 
@@ -187,6 +189,7 @@ _RecipeRaw _toRecipeRaw(db.Recipe r) => (
       pickleMethod: r.pickleMethod,
       isShared: r.isShared,
       lineageHash: r.lineageHash,
+      recipeType: r.recipeType,
     );
 
 /// Converts a Drift [db.Ingredient] row to an [_IngRaw] record.
@@ -310,6 +313,7 @@ List<_RecipeDecoded> _batchDecodeRecipes(
         pickleMethod: r.pickleMethod,
         isShared: r.isShared,
         lineageHash: r.lineageHash,
+        recipeType: r.recipeType,
         ingredients: ings,
       ),);
     } catch (_) {
@@ -455,6 +459,7 @@ class RecipeRepository {
       ..pickleMethod = r.pickleMethod
       ..isShared = r.isShared
       ..lineageHash = r.lineageHash
+      ..recipeType = r.recipeType
       ..ingredients = ings
           .map((i) => Ingredient()
             ..uuid = i.uuid
@@ -614,6 +619,7 @@ class RecipeRepository {
           ..pickleMethod = d.pickleMethod
           ..isShared = d.isShared
           ..lineageHash = d.lineageHash
+          ..recipeType = d.recipeType
           ..ingredients = d.ingredients
               .map((i) => Ingredient()
                 ..uuid = i.uuid

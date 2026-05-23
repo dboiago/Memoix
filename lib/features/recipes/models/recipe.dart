@@ -346,6 +346,7 @@ class Recipe {
       if (garnish.isNotEmpty) 'garnish': garnish,
       if (pickleMethod != null) 'pickleMethod': pickleMethod,
       'isShared': isShared,
+      'recipeType': recipeType,
     };
   }
 
