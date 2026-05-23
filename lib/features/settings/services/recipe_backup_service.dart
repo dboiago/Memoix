@@ -56,14 +56,20 @@ class RecipeBackupService {
   /// Returns the path to the exported file or null if cancelled/failed
   Future<String?> exportRecipes({bool includeAll = false}) async {
     // Get recipes to export
+    // Modernist records are stored in the recipes table (recipeType == 'modernist')
+    // but are always exported via the dedicated modernist[] array, so exclude them here
+    // to prevent duplication regardless of the includeAll flag.
     List<Recipe> recipes;
     if (includeAll) {
-      recipes = await _recipeRepository.getAllRecipes();
+      final allRecipes = await _recipeRepository.getAllRecipes();
+      recipes = allRecipes.where((r) => r.recipeType != 'modernist').toList();
     } else {
       // All user recipes (not memoix collection)
       // Includes: personal, imported, ocr, url, ai, walkin
       final allRecipes = await _recipeRepository.getAllRecipes();
-      recipes = allRecipes.where((r) => r.source != RecipeSource.memoix).toList();
+      recipes = allRecipes
+          .where((r) => r.source != RecipeSource.memoix && r.recipeType != 'modernist')
+          .toList();
     }
 
     // Fetch specialist domains

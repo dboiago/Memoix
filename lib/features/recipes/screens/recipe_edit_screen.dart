@@ -1655,7 +1655,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
       pairedRecipeIds: jsonEncode(_pairedRecipeIds),
       createdAt: _existingRecipe?.createdAt ?? DateTime.now(),
       updatedAt: DateTime.now(),
-      isShared: true,
+      isShared: _existingRecipe?.isShared ?? true,
     );
   }
 
