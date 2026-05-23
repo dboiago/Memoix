@@ -66,10 +66,6 @@ class RecipeBackupService {
       recipes = allRecipes.where((r) => r.source != RecipeSource.memoix).toList();
     }
 
-    if (recipes.isEmpty) {
-      throw Exception('No recipes to export');
-    }
-
     // Fetch specialist domains
     var pizzas = await _pizzaRepository.getAllPizzas();
     var sandwiches = await _sandwichRepository.getAllSandwiches();
@@ -81,9 +77,15 @@ class RecipeBackupService {
       pizzas = pizzas.where((p) => p.source != PizzaSource.memoix.name).toList();
       sandwiches = sandwiches.where((s) => s.source != SandwichSource.memoix.name).toList();
       smokingRecipes = smokingRecipes.where((s) => s.source != SmokingSource.memoix.name).toList();
-      modernistRecipes = modernistRecipes.where((m) => m.source != ModernistSource.memoix).toList();
+      modernistRecipes = modernistRecipes.where((m) => m.source.name != ModernistSource.memoix.name).toList();
       cellarEntries = cellarEntries.where((c) => c.source != CellarSource.memoix.name).toList();
       cheeseEntries = cheeseEntries.where((c) => c.source != CheeseSource.memoix.name).toList();
+    }
+
+    if (recipes.isEmpty && pizzas.isEmpty && sandwiches.isEmpty &&
+        smokingRecipes.isEmpty && modernistRecipes.isEmpty &&
+        cellarEntries.isEmpty && cheeseEntries.isEmpty) {
+      throw Exception('No personal recipes or entries to export');
     }
     final quickNotes = await _scratchPadRepository.getQuickNotes();
     final drafts = await _scratchPadRepository.getAllDrafts();
