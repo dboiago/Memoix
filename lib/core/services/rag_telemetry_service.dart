@@ -7,7 +7,6 @@ import 'package:drift/drift.dart' show Value;
 import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:package_info_plus/package_info_plus.dart';
-import 'package:supabase_flutter/supabase_flutter.dart';
 
 import '../database/app_database.dart' hide Recipe;
 import '../models/cellar_knowledge_payload.dart';
@@ -642,7 +641,7 @@ class RagTelemetryService {
 final ragTelemetryServiceProvider = Provider<RagTelemetryService>((ref) {
   return RagTelemetryService(
     ref,
-    client: SupabaseTransmissionClient(Supabase.instance.client),
+    client: const SupabaseTransmissionClient(),
     pairedRecipeResolver: (uuids) async {
       final db = AppDatabase.instance;
       try {

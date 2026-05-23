@@ -16,14 +16,24 @@ import 'rag_transmission_client.dart';
 /// `rag_telemetry` table exists in Supabase. Swap this into
 /// [ragTelemetryServiceProvider] to activate.
 class SupabaseTransmissionClient implements RagTransmissionClient {
-  const SupabaseTransmissionClient(this._supabaseClient);
+  const SupabaseTransmissionClient();
 
-  final SupabaseClient _supabaseClient;
+  /// Returns the Supabase client only when Supabase is fully initialised.
+  /// Returns null if called before [Supabase.initialize] has completed.
+  SupabaseClient? get _supabaseClient {
+    try {
+      return Supabase.instance.client;
+    } catch (_) {
+      return null;
+    }
+  }
 
   @override
   Future<void> transmit(KnowledgePayload payload) async {
+    final client = _supabaseClient;
+    if (client == null) return;
     try {
-      await _supabaseClient
+      await client
           .schema('memoix')
           .from('rag_telemetry')
           .insert({
@@ -45,8 +55,10 @@ class SupabaseTransmissionClient implements RagTransmissionClient {
 
   @override
   Future<void> transmitModernist(ModernistKnowledgePayload payload) async {
+    final client = _supabaseClient;
+    if (client == null) return;
     try {
-      await _supabaseClient
+      await client
           .schema('memoix')
           .from('rag_telemetry')
           .insert({
@@ -68,8 +80,10 @@ class SupabaseTransmissionClient implements RagTransmissionClient {
 
   @override
   Future<void> transmitSmoking(SmokingKnowledgePayload payload) async {
+    final client = _supabaseClient;
+    if (client == null) return;
     try {
-      await _supabaseClient
+      await client
           .schema('memoix')
           .from('rag_telemetry')
           .insert({
@@ -91,8 +105,10 @@ class SupabaseTransmissionClient implements RagTransmissionClient {
 
   @override
   Future<void> transmitPizza(PizzaKnowledgePayload payload) async {
+    final client = _supabaseClient;
+    if (client == null) return;
     try {
-      await _supabaseClient
+      await client
           .schema('memoix')
           .from('rag_telemetry')
           .insert({
@@ -114,8 +130,10 @@ class SupabaseTransmissionClient implements RagTransmissionClient {
 
   @override
   Future<void> transmitSandwich(SandwichKnowledgePayload payload) async {
+    final client = _supabaseClient;
+    if (client == null) return;
     try {
-      await _supabaseClient
+      await client
           .schema('memoix')
           .from('rag_telemetry')
           .insert({
@@ -137,8 +155,10 @@ class SupabaseTransmissionClient implements RagTransmissionClient {
 
   @override
   Future<void> transmitCellar(CellarKnowledgePayload payload) async {
+    final client = _supabaseClient;
+    if (client == null) return;
     try {
-      await _supabaseClient
+      await client
           .schema('memoix')
           .from('rag_telemetry')
           .insert({
@@ -160,8 +180,10 @@ class SupabaseTransmissionClient implements RagTransmissionClient {
 
   @override
   Future<void> transmitCheese(CheeseKnowledgePayload payload) async {
+    final client = _supabaseClient;
+    if (client == null) return;
     try {
-      await _supabaseClient
+      await client
           .schema('memoix')
           .from('rag_telemetry')
           .insert({
@@ -188,6 +210,8 @@ class SupabaseTransmissionClient implements RagTransmissionClient {
   @override
   Future<void> transmitBatch(List<KnowledgePayload> payloads) async {
     if (payloads.isEmpty) return;
+    final client = _supabaseClient;
+    if (client == null) return;
     try {
       final rows = payloads
           .map((p) => {
@@ -198,7 +222,7 @@ class SupabaseTransmissionClient implements RagTransmissionClient {
                 'payload': p.toJson(),
               })
           .toList();
-      await _supabaseClient
+      await client
           .schema('memoix')
           .from('rag_telemetry')
           .insert(rows);
@@ -216,6 +240,8 @@ class SupabaseTransmissionClient implements RagTransmissionClient {
   Future<void> transmitModernistBatch(
       List<ModernistKnowledgePayload> payloads) async {
     if (payloads.isEmpty) return;
+    final client = _supabaseClient;
+    if (client == null) return;
     try {
       final rows = payloads
           .map((p) => {
@@ -226,7 +252,7 @@ class SupabaseTransmissionClient implements RagTransmissionClient {
                 'payload': p.toJson(),
               })
           .toList();
-      await _supabaseClient
+      await client
           .schema('memoix')
           .from('rag_telemetry')
           .insert(rows);
@@ -245,6 +271,8 @@ class SupabaseTransmissionClient implements RagTransmissionClient {
   Future<void> transmitSmokingBatch(
       List<SmokingKnowledgePayload> payloads) async {
     if (payloads.isEmpty) return;
+    final client = _supabaseClient;
+    if (client == null) return;
     try {
       final rows = payloads
           .map((p) => {
@@ -255,7 +283,7 @@ class SupabaseTransmissionClient implements RagTransmissionClient {
                 'payload': p.toJson(),
               })
           .toList();
-      await _supabaseClient
+      await client
           .schema('memoix')
           .from('rag_telemetry')
           .insert(rows);
@@ -274,6 +302,8 @@ class SupabaseTransmissionClient implements RagTransmissionClient {
   Future<void> transmitPizzaBatch(
       List<PizzaKnowledgePayload> payloads) async {
     if (payloads.isEmpty) return;
+    final client = _supabaseClient;
+    if (client == null) return;
     try {
       final rows = payloads
           .map((p) => {
@@ -284,7 +314,7 @@ class SupabaseTransmissionClient implements RagTransmissionClient {
                 'payload': p.toJson(),
               })
           .toList();
-      await _supabaseClient
+      await client
           .schema('memoix')
           .from('rag_telemetry')
           .insert(rows);
@@ -302,6 +332,8 @@ class SupabaseTransmissionClient implements RagTransmissionClient {
   Future<void> transmitSandwichBatch(
       List<SandwichKnowledgePayload> payloads) async {
     if (payloads.isEmpty) return;
+    final client = _supabaseClient;
+    if (client == null) return;
     try {
       final rows = payloads
           .map((p) => {
@@ -312,7 +344,7 @@ class SupabaseTransmissionClient implements RagTransmissionClient {
                 'payload': p.toJson(),
               })
           .toList();
-      await _supabaseClient
+      await client
           .schema('memoix')
           .from('rag_telemetry')
           .insert(rows);
@@ -331,6 +363,8 @@ class SupabaseTransmissionClient implements RagTransmissionClient {
   Future<void> transmitCellarBatch(
       List<CellarKnowledgePayload> payloads) async {
     if (payloads.isEmpty) return;
+    final client = _supabaseClient;
+    if (client == null) return;
     try {
       final rows = payloads
           .map((p) => {
@@ -341,7 +375,7 @@ class SupabaseTransmissionClient implements RagTransmissionClient {
                 'payload': p.toJson(),
               })
           .toList();
-      await _supabaseClient
+      await client
           .schema('memoix')
           .from('rag_telemetry')
           .insert(rows);
@@ -360,6 +394,8 @@ class SupabaseTransmissionClient implements RagTransmissionClient {
   Future<void> transmitCheeseBatch(
       List<CheeseKnowledgePayload> payloads) async {
     if (payloads.isEmpty) return;
+    final client = _supabaseClient;
+    if (client == null) return;
     try {
       final rows = payloads
           .map((p) => {
@@ -370,7 +406,7 @@ class SupabaseTransmissionClient implements RagTransmissionClient {
                 'payload': p.toJson(),
               })
           .toList();
-      await _supabaseClient
+      await client
           .schema('memoix')
           .from('rag_telemetry')
           .insert(rows);
