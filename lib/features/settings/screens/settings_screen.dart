@@ -615,7 +615,7 @@ class SettingsScreen extends ConsumerWidget {
           ListTile(
             leading: const Icon(Icons.file_upload),
             title: const Text('Import Recipes'),
-            subtitle: const Text('Load recipes from a JSON file'),
+            subtitle: const Text('Import backups or exports from other apps'),
             trailing: const Icon(Icons.chevron_right),
             onTap: () async {
               try {
@@ -662,28 +662,6 @@ class SettingsScreen extends ConsumerWidget {
                     } else {
                       MemoixSnackBar.show('No recipes imported');
                     }
-                }
-              } catch (e) {
-                MemoixSnackBar.showError('Import failed: $e');
-              }
-            },
-          ),
-          // Import recipes from folder (advanced, includes all cuisines and metadata)
-          ListTile(
-            leading: const Icon(Icons.folder_open),
-            title: const Text('Import from Folder'),
-            subtitle: const Text('Restore all cuisines from folder'),
-            trailing: const Icon(Icons.chevron_right),
-            onTap: () async {
-              try {
-                final service = ref.read(recipeBackupServiceProvider);
-                final results = await service.importFromFolder();
-                if (results.isNotEmpty) {
-                  final total = results.values.fold(0, (a, b) => a + b);
-                  final cuisines = results.keys.join(', ');
-                  MemoixSnackBar.showSuccess('Imported $total items from: $cuisines');
-                } else {
-                  MemoixSnackBar.show('No items imported');
                 }
               } catch (e) {
                 MemoixSnackBar.showError('Import failed: $e');
