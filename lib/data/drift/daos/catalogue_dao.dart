@@ -85,8 +85,8 @@ class CatalogueDao extends DatabaseAccessor<AppDatabase>
   }
 
   Future<int> deletePizza(int id) async {
-    final count = await (delete(pizzas)..where((t) => t.id.equals(id))).go();
     await deletePizzaFts(id);
+    final count = await (delete(pizzas)..where((t) => t.id.equals(id))).go();
     return count;
   }
 
@@ -224,9 +224,9 @@ class CatalogueDao extends DatabaseAccessor<AppDatabase>
   }
 
   Future<int> deleteSandwich(int id) async {
+    await deleteSandwichFts(id);
     final count =
         await (delete(sandwiches)..where((t) => t.id.equals(id))).go();
-    await deleteSandwichFts(id);
     return count;
   }
 
@@ -306,9 +306,16 @@ class CatalogueDao extends DatabaseAccessor<AppDatabase>
     );
   }
 
-  /// Removes the [pizzas_fts] row for [id].
+  /// Removes the [pizzas_fts] row for [id] using the correct contentless FTS5
+  /// deletion marker. Must be called before the pizza row is deleted.
   Future<void> deletePizzaFts(int id) async {
-    await customStatement('DELETE FROM pizzas_fts WHERE rowid = ?', [id]);
+    final pizza = await getPizzaById(id);
+    if (pizza == null) return;
+    await customStatement(
+      'INSERT INTO pizzas_fts(pizzas_fts, rowid, name, tags, cheeses, proteins, vegetables, notes) '
+      "VALUES ('delete', ?, ?, ?, ?, ?, ?, ?)",
+      [id, pizza.name, pizza.tags, pizza.cheeses, pizza.proteins, pizza.vegetables, pizza.notes ?? ''],
+    );
   }
 
   /// Upserts the [sandwiches_fts] row for [id].
@@ -331,8 +338,15 @@ class CatalogueDao extends DatabaseAccessor<AppDatabase>
     );
   }
 
-  /// Removes the [sandwiches_fts] row for [id].
+  /// Removes the [sandwiches_fts] row for [id] using the correct contentless
+  /// FTS5 deletion marker. Must be called before the sandwich row is deleted.
   Future<void> deleteSandwichFts(int id) async {
-    await customStatement('DELETE FROM sandwiches_fts WHERE rowid = ?', [id]);
+    final sandwich = await getSandwichById(id);
+    if (sandwich == null) return;
+    await customStatement(
+      'INSERT INTO sandwiches_fts(sandwiches_fts, rowid, name, tags, bread, proteins, vegetables, cheeses, condiments, notes) '
+      "VALUES ('delete', ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+      [id, sandwich.name, sandwich.tags, sandwich.bread, sandwich.proteins, sandwich.vegetables, sandwich.cheeses, sandwich.condiments, sandwich.notes ?? ''],
+    );
   }
 }

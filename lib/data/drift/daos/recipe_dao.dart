@@ -229,11 +229,24 @@ class RecipeDao extends DatabaseAccessor<AppDatabase>
     );
   }
 
-  /// Removes the [recipes_fts] row for [id].
+  /// Removes the [recipes_fts] row for [id] using the correct contentless FTS5
+  /// deletion marker. Must be called before the recipe and its ingredients are
+  /// deleted so the original text is still available.
   Future<void> deleteRecipeFts(int id) async {
+    final recipe =
+        await (select(recipes)..where((r) => r.id.equals(id))).getSingleOrNull();
+    if (recipe == null) return;
+    final ings =
+        await (select(ingredients)..where((i) => i.recipeId.equals(id))).get();
+    final ingNames = ings.map((i) => i.name).join(' ');
+    final ingNotes = ings
+        .map((i) => i.notes ?? '')
+        .where((n) => n.isNotEmpty)
+        .join(' ');
     await customStatement(
-      'DELETE FROM recipes_fts WHERE rowid = ?',
-      [id],
+      'INSERT INTO recipes_fts(recipes_fts, rowid, name, tags, cuisine, ingredient_names, ingredient_notes) '
+      "VALUES ('delete', ?, ?, ?, ?, ?, ?)",
+      [id, recipe.name, recipe.tags, recipe.cuisine ?? '', ingNames, ingNotes],
     );
   }
 
@@ -273,9 +286,9 @@ class RecipeDao extends DatabaseAccessor<AppDatabase>
   /// Deletes all [Ingredient] rows for [id] before deleting the [Recipe] row.
   /// No cascade is defined in the schema, so order matters.
   Future<void> deleteRecipe(int id) async {
+    await deleteRecipeFts(id);
     await (delete(ingredients)..where((i) => i.recipeId.equals(id))).go();
     await (delete(recipes)..where((r) => r.id.equals(id))).go();
-    await deleteRecipeFts(id);
   }
 
   /// Writes the inverse of [current] directly without a preceding read.

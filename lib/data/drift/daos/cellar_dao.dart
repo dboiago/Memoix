@@ -162,9 +162,9 @@ class CellarDao extends DatabaseAccessor<AppDatabase>
   }
 
   Future<int> deleteEntry(int id) async {
+    await deleteCellarFts(id);
     final count =
         await (delete(cellarEntries)..where((t) => t.id.equals(id))).go();
-    await deleteCellarFts(id);
     return count;
   }
 
@@ -303,9 +303,9 @@ class CellarDao extends DatabaseAccessor<AppDatabase>
   }
 
   Future<int> deleteCheeseEntry(int id) async {
+    await deleteCheeseFts(id);
     final count =
         await (delete(cheeseEntries)..where((t) => t.id.equals(id))).go();
-    await deleteCheeseFts(id);
     return count;
   }
 
@@ -360,9 +360,16 @@ class CellarDao extends DatabaseAccessor<AppDatabase>
     );
   }
 
-  /// Removes the [cellar_fts] row for [id].
+  /// Removes the [cellar_fts] row for [id] using the correct contentless FTS5
+  /// deletion marker. Must be called before the cellar entry row is deleted.
   Future<void> deleteCellarFts(int id) async {
-    await customStatement('DELETE FROM cellar_fts WHERE rowid = ?', [id]);
+    final entry = await getEntryById(id);
+    if (entry == null) return;
+    await customStatement(
+      'INSERT INTO cellar_fts(cellar_fts, rowid, name, producer, category, tasting_notes) '
+      "VALUES ('delete', ?, ?, ?, ?, ?)",
+      [id, entry.name, entry.producer ?? '', entry.category ?? '', entry.tastingNotes ?? ''],
+    );
   }
 
   /// Upserts the [cheese_fts] row for [id].
@@ -383,8 +390,15 @@ class CellarDao extends DatabaseAccessor<AppDatabase>
     );
   }
 
-  /// Removes the [cheese_fts] row for [id].
+  /// Removes the [cheese_fts] row for [id] using the correct contentless FTS5
+  /// deletion marker. Must be called before the cheese entry row is deleted.
   Future<void> deleteCheeseFts(int id) async {
-    await customStatement('DELETE FROM cheese_fts WHERE rowid = ?', [id]);
+    final entry = await getCheeseEntryById(id);
+    if (entry == null) return;
+    await customStatement(
+      'INSERT INTO cheese_fts(cheese_fts, rowid, name, type, country, milk, flavour, texture) '
+      "VALUES ('delete', ?, ?, ?, ?, ?, ?, ?)",
+      [id, entry.name, entry.type ?? '', entry.country ?? '', entry.milk ?? '', entry.flavour ?? '', entry.texture ?? ''],
+    );
   }
 }
