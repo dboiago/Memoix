@@ -12,7 +12,7 @@
     "priceRange": null,
     "imageUrl": null,
     "source": "memoix",
-    "isFavorite": false,
+    "isFavourite": false,
     "createdAt": 1766512187000,
     "updatedAt": 1776979785000,
     "version": 1
@@ -30,7 +30,7 @@
     "priceRange": null,
     "imageUrl": null,
     "source": "memoix",
-    "isFavorite": false,
+    "isFavourite": false,
     "createdAt": 1766512411000,
     "updatedAt": 1776979785000,
     "version": 1
@@ -48,7 +48,7 @@
     "priceRange": null,
     "imageUrl": null,
     "source": "memoix",
-    "isFavorite": false,
+    "isFavourite": false,
     "createdAt": 1766512131000,
     "updatedAt": 1776979785000,
     "version": 1
@@ -66,7 +66,7 @@
     "priceRange": 3,
     "imageUrl": null,
     "source": "memoix",
-    "isFavorite": false,
+    "isFavourite": false,
     "createdAt": 1766512095000,
     "updatedAt": 1776979785000,
     "version": 1
@@ -84,7 +84,7 @@
     "priceRange": 5,
     "imageUrl": null,
     "source": "memoix",
-    "isFavorite": false,
+    "isFavourite": false,
     "createdAt": 1766512269000,
     "updatedAt": 1776979785000,
     "version": 1
@@ -102,7 +102,7 @@
     "priceRange": null,
     "imageUrl": null,
     "source": "memoix",
-    "isFavorite": false,
+    "isFavourite": false,
     "createdAt": 1766512349000,
     "updatedAt": 1776979785000,
     "version": 1

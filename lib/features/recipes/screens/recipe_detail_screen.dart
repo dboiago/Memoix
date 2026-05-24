@@ -219,28 +219,42 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
           // 1. THE RICH HEADER - Fixed at top, does not scroll
           MemoixHeader(
             title: recipe.name,
-            isFavorite: recipe.isFavorite,
+            isFavourite: recipe.isFavourite,
             headerImage: hasHeaderImage ? headerImage : null,
-            onFavoritePressed: () async {
-              final blocked = await ref
-                  .read(recipeRepositoryProvider)
-                  .toggleFavourite(recipe.id);
-              if (blocked.isNotEmpty) {
-                MemoixSnackBar.showError(
-                    blocked.first.data['text'] as String? ?? '',);
-                return;
-              }
-              ref.invalidate(allRecipesProvider);
-              processIntegrityResponses(ref);
-            },
+            onFavoritePressed: recipe.source == RecipeSource.walkin && recipe.id == 0
+              ? null
+              : () async {
+                  final blocked = await ref
+                      .read(recipeRepositoryProvider)
+                      .toggleFavourite(recipe.id);
+                  if (blocked.isNotEmpty) {
+                    MemoixSnackBar.showError(
+                        blocked.first.data['text'] as String? ?? '',);
+                    return;
+                  }
+                  ref.invalidate(allRecipesProvider);
+                  processIntegrityResponses(ref);
+                },
             onLogCookPressed: () => _logCook(context, recipe),
             onSharePressed: () => _shareRecipe(context, ref),
             onComparePressed: shouldShowCompareButton(recipe)
               ? () => AppRoutes.toRecipeComparison(context, prefilledRecipe: recipe, resetState: true)
               : null,
-            onEditPressed: () => AppRoutes.toRecipeEdit(context, recipeId: recipe.uuid),
+            onEditPressed: recipe.source == RecipeSource.walkin && recipe.id == 0
+              ? null
+              : () => AppRoutes.toRecipeEdit(context, recipeId: recipe.uuid),
+            onSaveWalkinPressed: recipe.source == RecipeSource.walkin && recipe.id == 0
+              ? () => _saveWalkinRecipe(context, ref, recipe)
+              : null,
             onDuplicatePressed: () => _duplicateRecipe(context, ref),
             onDeletePressed: () => _confirmDelete(context, ref),
+            isShared: recipe.isShared,
+            onToggleSharedPressed: () async {
+                    await ref
+                        .read(recipeRepositoryProvider)
+                        .toggleShared(recipe.id);
+                    ref.invalidate(allRecipesProvider);
+                  },
           ),
 
           // 2. THE CONTENT (Split View) - Scrollable, sits below header
@@ -629,28 +643,42 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
           // 1. THE RICH HEADER - Fixed at top, does not scroll
           MemoixHeader(
             title: recipe.name,
-            isFavorite: recipe.isFavorite,
+            isFavourite: recipe.isFavourite,
             headerImage: hasHeaderImage ? headerImage : null,
-            onFavoritePressed: () async {
-              final blocked = await ref
-                  .read(recipeRepositoryProvider)
-                  .toggleFavourite(recipe.id);
-              if (blocked.isNotEmpty) {
-                MemoixSnackBar.showError(
-                    blocked.first.data['text'] as String? ?? '',);
-                return;
-              }
-              ref.invalidate(allRecipesProvider);
-              processIntegrityResponses(ref);
-            },
+            onFavoritePressed: recipe.source == RecipeSource.walkin && recipe.id == 0
+                ? null
+                : () async {
+                    final blocked = await ref
+                        .read(recipeRepositoryProvider)
+                        .toggleFavourite(recipe.id);
+                    if (blocked.isNotEmpty) {
+                      MemoixSnackBar.showError(
+                          blocked.first.data['text'] as String? ?? '',);
+                      return;
+                    }
+                    ref.invalidate(allRecipesProvider);
+                    processIntegrityResponses(ref);
+                  },
             onLogCookPressed: () => _logCook(context, recipe),
             onSharePressed: () => _shareRecipe(context, ref),
             onComparePressed: recipe.course.toLowerCase() != 'drinks' 
                 ? () => AppRoutes.toRecipeComparison(context, prefilledRecipe: recipe) 
                 : null,
-            onEditPressed: () => AppRoutes.toRecipeEdit(context, recipeId: recipe.uuid),
+            onEditPressed: recipe.source == RecipeSource.walkin && recipe.id == 0
+                ? null
+                : () => AppRoutes.toRecipeEdit(context, recipeId: recipe.uuid),
+            onSaveWalkinPressed: recipe.source == RecipeSource.walkin && recipe.id == 0
+                ? () => _saveWalkinRecipe(context, ref, recipe)
+                : null,
             onDuplicatePressed: () => _duplicateRecipe(context, ref),
             onDeletePressed: () => _confirmDelete(context, ref),
+            isShared: recipe.isShared,
+            onToggleSharedPressed: () async {
+                    await ref
+                        .read(recipeRepositoryProvider)
+                        .toggleShared(recipe.id);
+                    ref.invalidate(allRecipesProvider);
+                  },
           ),
 
           // 2. THE CONTENT - Scrollable
@@ -1227,14 +1255,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
   }
 
   Future<void> _logCook(BuildContext context, Recipe recipe) async {
-    await ref.read(cookingStatsServiceProvider).logCook(
-      recipeId: recipe.uuid,
-      recipeName: recipe.name,
-      course: recipe.course,
-      cuisine: recipe.course?.toLowerCase() == 'drinks'
-          ? recipe.subcategory
-          : recipe.cuisine,
-    );
+    await ref.read(recipeRepositoryProvider).logCookForRecipe(recipe);
     if (!mounted) return;
     ref.invalidate(cookingStatsProvider);
     ref.invalidate(recipeCookCountProvider(recipe.uuid));
@@ -1328,6 +1349,15 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
     }
   }
 
+  Future<void> _saveWalkinRecipe(BuildContext context, WidgetRef ref, Recipe recipe) async {
+    final repo = ref.read(recipeRepositoryProvider);
+    await repo.saveRecipe(recipe);
+    ref.invalidate(allRecipesProvider);
+    if (!context.mounted) return;
+    Navigator.of(context).pop();
+    AppRoutes.toRecipeDetail(context, recipe.uuid);
+  }
+
   void _duplicateRecipe(BuildContext context, WidgetRef ref) async {
     final recipe = widget.recipe;
     final repo = ref.read(recipeRepositoryProvider);
@@ -1360,6 +1390,15 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
 
   void _confirmDelete(BuildContext context, WidgetRef ref) {
     final recipe = widget.recipe;
+    // Capture the nested navigator synchronously before showDialog. All detail
+    // screens are pushed on AppShell's nested Navigator, but showDialog uses the
+    // root navigator by default (useRootNavigator: true), so ctx inside the
+    // builder belongs to the root navigator. Using Navigator.of(ctx) for both
+    // pops would pop the AppShell route itself and produce a black screen.
+    // Capturing the nested navigator here (rootNavigator: false) keeps a valid
+    // NavigatorState reference even after deleteRecipe() causes the outer
+    // ConsumerWidget to rebuild with recipe == null and dispose this state.
+    final nestedNavigator = Navigator.of(context, rootNavigator: false);
     showDialog(
       context: context,
       builder: (ctx) => AlertDialog(
@@ -1372,11 +1411,15 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
           ),
           TextButton(
             onPressed: () async {
+              // Navigate first while all contexts are valid, then delete.
+              // Avoids the race where the Drift stream fires immediately after
+              // deleteRecipe(), Riverpod disposes the inner widget, and any
+              // post-await mounted/ctx.mounted check returns false.
+              Navigator.pop(ctx);       // dismiss dialog (root navigator)
+              nestedNavigator.pop();    // pop detail screen (nested navigator)
               await ref.read(recipeRepositoryProvider).deleteRecipe(recipe.id);
-              unawaited(SupabaseSyncService.notifyDeleted('recipes', recipe.uuid));
-              if (context.mounted) {
-                Navigator.pop(ctx);
-                Navigator.pop(context);
+              if (recipe.id > 0) {
+                unawaited(SupabaseSyncService.notifyDeleted('recipes', recipe.uuid));
               }
             },
             style: TextButton.styleFrom(foregroundColor: Theme.of(ctx).colorScheme.secondary),

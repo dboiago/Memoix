@@ -11,7 +11,7 @@ enum CellarSource {
 /// Decode a CellarEntry from a JSON map (for backup import).
 CellarEntry cellarEntryFromJson(Map<String, dynamic> json) {
   return CellarEntry(
-    id: (json['id'] as num?)?.toInt() ?? 0,
+    id: 0,
     uuid: json['uuid']?.toString() ?? '',
     name: json['name']?.toString() ?? '',
     producer: json['producer']?.toString(),
@@ -23,7 +23,7 @@ CellarEntry cellarEntryFromJson(Map<String, dynamic> json) {
     priceRange: (json['priceRange'] as num?)?.toInt(),
     imageUrl: json['imageUrl']?.toString(),
     source: json['source']?.toString() ?? CellarSource.personal.name,
-    isFavorite: json['isFavorite'] as bool? ?? false,
+    isFavourite: (json['isFavourite'] ?? json['isFavorite']) as bool? ?? false,
     createdAt: json['createdAt'] is int
         ? DateTime.fromMillisecondsSinceEpoch(json['createdAt'] as int).toUtc()
         : json['createdAt'] != null
@@ -35,6 +35,7 @@ CellarEntry cellarEntryFromJson(Map<String, dynamic> json) {
             ? DateTime.parse(json['updatedAt'].toString()).toUtc()
             : DateTime.now().toUtc(),
     version: (json['version'] as num?)?.toInt() ?? 1,
+    isShared: json['isShared'] as bool? ?? true,
   );
 }
 
@@ -52,10 +53,11 @@ extension CellarEntryX on CellarEntry {
         'priceRange': priceRange,
         'imageUrl': imageUrl,
         'source': source,
-        'isFavorite': isFavorite,
+        'isFavourite': isFavourite,
         'createdAt': createdAt.toUtc().toIso8601String(),
         'updatedAt': updatedAt.toUtc().toIso8601String(),
         'version': version,
+        'isShared': isShared,
       };
 
   Map<String, dynamic> toShareableJson() => {

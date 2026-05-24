@@ -88,10 +88,11 @@ class ScratchPadRepository {
   }
 
   /// Delete a draft by UUID
-  Future<void> deleteDraft(String uuid) =>
-      _db.utilityDao.deleteDraftByUuid(uuid).then((_) {
-        unawaited(SupabaseSyncService.notifyDeleted('recipe_drafts', uuid));
-      });
+  Future<void> deleteDraft(String uuid) async {
+    await SupabaseSyncService.queueDeletion('recipe_drafts', uuid);
+    await _db.utilityDao.deleteDraftByUuid(uuid);
+    unawaited(SupabaseSyncService.notifyDeleted('recipe_drafts', uuid));
+  }
 
   /// Delete a draft by ID
   Future<void> deleteDraftById(int id) =>

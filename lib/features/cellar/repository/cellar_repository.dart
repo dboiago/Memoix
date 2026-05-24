@@ -5,9 +5,11 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:uuid/uuid.dart';
 
 import '../../../core/database/app_database.dart';
+import '../../../data/drift/daos/cellar_dao.dart' show CellarSearchResult;
 import '../../../core/providers.dart';
 import '../../../core/utils/collection_utils.dart';
 import '../../../core/services/integrity_service.dart';
+import '../../../core/services/rag_telemetry_service.dart';
 import '../../../core/services/supabase_sync_service.dart';
 import '../../personal_storage/services/personal_storage_service.dart';
 import '../../personal_storage/services/tombstone_store.dart';
@@ -37,8 +39,8 @@ class CellarRepository {
       _db.cellarDao.getFavourites();
 
   /// Search entries by name, producer, or category
-  Future<List<CellarEntry>> searchEntries(String query) {
-    if (query.isEmpty) return getAllEntries();
+  Future<List<CellarSearchResult>> searchEntries(String query) {
+    if (query.isEmpty) return Future.value([]);
     return _db.cellarDao.searchEntries(query);
   }
 
@@ -66,14 +68,28 @@ class CellarRepository {
       priceRange: Value(entry.priceRange),
       imageUrl: Value(entry.imageUrl),
       source: Value(entry.source),
-      isFavorite: Value(entry.isFavorite),
+      isFavourite: Value(entry.isFavourite),
       createdAt: Value(entry.createdAt),
       updatedAt: Value(preserveTimestamp ? entry.updatedAt : DateTime.now()),
       version: Value(entry.version),
     ),);
 
+    // Keep the FTS index in sync after every save.
+    final savedRow = await _db.cellarDao.getEntryByUuid(entryUuid);
+    if (savedRow != null) {
+      await _db.cellarDao.upsertCellarFts(
+        savedRow.id,
+        name: entry.name,
+        producer: entry.producer,
+        category: entry.category,
+        tastingNotes: entry.tastingNotes,
+      );
+    }
+
     // Notify personal storage service of change
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
+    // Fire-and-forget: queue for Culinary Intelligence export.
+    unawaited(_ref.read(ragTelemetryServiceProvider).queueCellarForExport(entry));
   }
 
   /// Delete an entry by ID
@@ -93,6 +109,7 @@ class CellarRepository {
   Future<bool> deleteEntryByUuid(String uuid, {bool fromMerge = false}) async {
     if (!fromMerge) {
       await TombstoneStore.add(TombstoneDomain.cellar, uuid);
+      await SupabaseSyncService.queueDeletion('cellar_entries', uuid);
     }
     final deleted = await _db.cellarDao.deleteEntryByUuid(uuid);
     final result = deleted > 0;
@@ -103,10 +120,17 @@ class CellarRepository {
     return result;
   }
 
+  /// Toggle the Culinary Intelligence sharing flag.
+  Future<void> toggleShared(CellarEntry entry) async {
+    await (_db.update(_db.cellarEntries)..where((t) => t.id.equals(entry.id)))
+        .write(CellarEntriesCompanion(isShared: Value(!entry.isShared)));
+    _ref.read(personalStorageServiceProvider).onRecipeChanged();
+  }
+
   /// Toggle favourite status
   Future<void> toggleFavourite(CellarEntry entry) async {
-    final wasFavorited = entry.isFavorite;
-    await _db.cellarDao.toggleFavourite(entry.id, entry.isFavorite);
+    final wasFavorited = entry.isFavourite;
+    await _db.cellarDao.toggleFavourite(entry.id, entry.isFavourite);
 
     // Notify personal storage service of change
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
@@ -119,6 +143,8 @@ class CellarRepository {
         'is_adding': !wasFavorited,
       },
     );
+    // Fire-and-forget: queue updated favourite state for Culinary Intelligence export.
+    unawaited(_ref.read(ragTelemetryServiceProvider).queueCellarForExport(entry.copyWith(isFavourite: !wasFavorited)));
   }
 
   /// Toggle buy status

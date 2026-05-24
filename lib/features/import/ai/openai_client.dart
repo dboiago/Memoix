@@ -13,7 +13,7 @@ class OpenAiClient {
   final String apiKey;
   final String model;
 
-  OpenAiClient(this.apiKey, {this.model = 'gpt-4.1'});
+  OpenAiClient(this.apiKey, {this.model = 'gpt-5.5'});
 
   Future<Map<String, dynamic>> analyzeRecipe({
     required String systemPrompt,

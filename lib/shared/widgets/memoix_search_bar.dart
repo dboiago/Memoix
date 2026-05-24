@@ -21,6 +21,9 @@ class MemoixSearchBar extends StatelessWidget {
   /// Optional suffix widget, e.g. a clear [IconButton].
   final Widget? suffixIcon;
 
+  /// Optional override for the leading icon. Defaults to [Icons.search].
+  final IconData? prefixIcon;
+
   const MemoixSearchBar({
     super.key,
     required this.hintText,
@@ -28,6 +31,7 @@ class MemoixSearchBar extends StatelessWidget {
     this.controller,
     this.focusNode,
     this.suffixIcon,
+    this.prefixIcon,
   });
 
   @override
@@ -40,7 +44,7 @@ class MemoixSearchBar extends StatelessWidget {
       decoration: InputDecoration(
         hintText: hintText,
         hintStyle: TextStyle(color: theme.colorScheme.onSurfaceVariant),
-        prefixIcon: Icon(Icons.search, color: theme.colorScheme.onSurfaceVariant),
+        prefixIcon: Icon(prefixIcon ?? Icons.search, color: theme.colorScheme.onSurfaceVariant),
         suffixIcon: suffixIcon,
         filled: true,
         fillColor: theme.colorScheme.surfaceContainerHighest,

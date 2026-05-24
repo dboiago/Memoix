@@ -9,6 +9,7 @@ import '../../../core/database/app_database.dart';
 import '../../../core/providers.dart';
 import '../../../core/utils/collection_utils.dart';
 import '../../../core/services/integrity_service.dart';
+import '../../../core/services/rag_telemetry_service.dart';
 import '../../../core/services/supabase_sync_service.dart';
 import '../../personal_storage/services/personal_storage_service.dart';
 import '../../personal_storage/services/tombstone_store.dart';
@@ -74,7 +75,7 @@ class SandwichRepository {
       notes: Value(safeNotes),
       imageUrl: Value(sandwich.imageUrl),
       source: Value(sandwich.source),
-      isFavorite: Value(sandwich.isFavorite),
+      isFavourite: Value(sandwich.isFavourite),
       cookCount: Value(sandwich.cookCount),
       rating: Value(sandwich.rating),
       tags: Value(sandwich.tags),
@@ -82,7 +83,26 @@ class SandwichRepository {
       updatedAt: Value(preserveTimestamp ? sandwich.updatedAt : DateTime.now()),
       version: Value(sandwich.version),
     ),);
+
+    // Keep the FTS index in sync after every save.
+    final savedRow = await _db.catalogueDao.getSandwichByUuid(entryUuid);
+    if (savedRow != null) {
+      await _db.catalogueDao.upsertSandwichFts(
+        savedRow.id,
+        name: safeName,
+        tags: sandwich.tags,
+        bread: sandwich.bread,
+        proteins: sandwich.proteins,
+        vegetables: sandwich.vegetables,
+        cheeses: sandwich.cheeses,
+        condiments: sandwich.condiments,
+        notes: safeNotes,
+      );
+    }
+
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
+    // Fire-and-forget: queue for Culinary Intelligence export.
+    unawaited(_ref.read(ragTelemetryServiceProvider).queueSandwichForExport(sandwich));
   }
 
   /// Delete a sandwich by ID
@@ -98,6 +118,7 @@ class SandwichRepository {
   Future<bool> deleteSandwichByUuid(String uuid, {bool fromMerge = false}) async {
     if (!fromMerge) {
       await TombstoneStore.add(TombstoneDomain.sandwiches, uuid);
+      await SupabaseSyncService.queueDeletion('sandwiches', uuid);
     }
     final count = await _db.catalogueDao.deleteSandwichByUuid(uuid);
     if (count > 0) {
@@ -107,10 +128,17 @@ class SandwichRepository {
     return count > 0;
   }
 
+  /// Toggle the Culinary Intelligence sharing flag.
+  Future<void> toggleShared(Sandwich sandwich) async {
+    await (_db.update(_db.sandwiches)..where((t) => t.id.equals(sandwich.id)))
+        .write(SandwichesCompanion(isShared: Value(!sandwich.isShared)));
+    _ref.read(personalStorageServiceProvider).onRecipeChanged();
+  }
+
   /// Toggle favourite status
   Future<void> toggleFavourite(Sandwich sandwich) async {
-    final wasFavorited = sandwich.isFavorite;
-    await _db.catalogueDao.toggleSandwichFavourite(sandwich.id, sandwich.isFavorite);
+    final wasFavorited = sandwich.isFavourite;
+    await _db.catalogueDao.toggleSandwichFavourite(sandwich.id, sandwich.isFavourite);
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
     await IntegrityService.reportEvent(
       'activity.recipe_favourited',
@@ -119,6 +147,8 @@ class SandwichRepository {
         'is_adding': !wasFavorited,
       },
     );
+    // Fire-and-forget: queue updated favourite state for Culinary Intelligence export.
+    unawaited(_ref.read(ragTelemetryServiceProvider).queueSandwichForExport(sandwich.copyWith(isFavourite: !wasFavorited)));
   }
 
   /// Increment cook count
@@ -139,6 +169,8 @@ class SandwichRepository {
       cuisine: dotKey,
     );
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
+    // Fire-and-forget: queue for Culinary Intelligence export.
+    unawaited(_ref.read(ragTelemetryServiceProvider).queueSandwichForExport(sandwich));
   }
 
   /// Update rating
@@ -172,7 +204,7 @@ class SandwichRepository {
           notes: Value(sandwich.notes),
           imageUrl: Value(sandwich.imageUrl),
           source: Value(sandwich.source),
-          isFavorite: Value(sandwich.isFavorite),
+          isFavourite: Value(sandwich.isFavourite),
           cookCount: Value(sandwich.cookCount),
           rating: Value(sandwich.rating),
           tags: Value(sandwich.tags),

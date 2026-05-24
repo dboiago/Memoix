@@ -155,6 +155,8 @@ const Map<String, String?> _pluralExceptions = {
   'garlic': null, 
   'ginger': null,
   'bacon': null,
+  'cilantor': null,
+  'corn': null,
   // add entries here as edge cases are found
 };
 

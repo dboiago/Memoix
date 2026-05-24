@@ -9,6 +9,7 @@ import '../../../core/database/app_database.dart';
 import '../../../core/providers.dart';
 import '../../../core/utils/collection_utils.dart';
 import '../../../core/services/integrity_service.dart';
+import '../../../core/services/rag_telemetry_service.dart';
 import '../../../core/services/supabase_sync_service.dart';
 import '../../personal_storage/services/personal_storage_service.dart';
 import '../../personal_storage/services/tombstone_store.dart';
@@ -73,7 +74,7 @@ class PizzaRepository {
       notes: Value(safeNotes),
       imageUrl: Value(pizza.imageUrl),
       source: Value(pizza.source),
-      isFavorite: Value(pizza.isFavorite),
+      isFavourite: Value(pizza.isFavourite),
       cookCount: Value(pizza.cookCount),
       rating: Value(pizza.rating),
       tags: Value(pizza.tags),
@@ -81,7 +82,24 @@ class PizzaRepository {
       updatedAt: Value(preserveTimestamp ? pizza.updatedAt : DateTime.now()),
       version: Value(pizza.version),
     ),);
+
+    // Keep the FTS index in sync after every save.
+    final savedRow = await _db.catalogueDao.getPizzaByUuid(entryUuid);
+    if (savedRow != null) {
+      await _db.catalogueDao.upsertPizzaFts(
+        savedRow.id,
+        name: safeName,
+        tags: pizza.tags,
+        cheeses: pizza.cheeses,
+        proteins: pizza.proteins,
+        vegetables: pizza.vegetables,
+        notes: safeNotes,
+      );
+    }
+
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
+    // Fire-and-forget: queue for Culinary Intelligence export.
+    unawaited(_ref.read(ragTelemetryServiceProvider).queuePizzaForExport(pizza));
   }
 
   /// Delete a pizza by ID
@@ -97,6 +115,7 @@ class PizzaRepository {
   Future<bool> deletePizzaByUuid(String uuid, {bool fromMerge = false}) async {
     if (!fromMerge) {
       await TombstoneStore.add(TombstoneDomain.pizzas, uuid);
+      await SupabaseSyncService.queueDeletion('pizzas', uuid);
     }
     final count = await _db.catalogueDao.deletePizzaByUuid(uuid);
     if (count > 0) {
@@ -106,10 +125,17 @@ class PizzaRepository {
     return count > 0;
   }
 
+  /// Toggle the Culinary Intelligence sharing flag.
+  Future<void> toggleShared(Pizza pizza) async {
+    await (_db.update(_db.pizzas)..where((t) => t.id.equals(pizza.id)))
+        .write(PizzasCompanion(isShared: Value(!pizza.isShared)));
+    _ref.read(personalStorageServiceProvider).onRecipeChanged();
+  }
+
   /// Toggle favourite status
   Future<void> toggleFavourite(Pizza pizza) async {
-    final wasFavorited = pizza.isFavorite;
-    await _db.catalogueDao.togglePizzaFavourite(pizza.id, pizza.isFavorite);
+    final wasFavorited = pizza.isFavourite;
+    await _db.catalogueDao.togglePizzaFavourite(pizza.id, pizza.isFavourite);
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
     await IntegrityService.reportEvent(
       'activity.recipe_favourited',
@@ -118,6 +144,8 @@ class PizzaRepository {
         'is_adding': !wasFavorited,
       },
     );
+    // Fire-and-forget: queue updated favourite state for Culinary Intelligence export.
+    unawaited(_ref.read(ragTelemetryServiceProvider).queuePizzaForExport(pizza.copyWith(isFavourite: !wasFavorited)));
   }
 
   /// Increment cook count
@@ -135,6 +163,8 @@ class PizzaRepository {
       cuisine: pizza.base,
     );
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
+    // Fire-and-forget: queue for Culinary Intelligence export.
+    unawaited(_ref.read(ragTelemetryServiceProvider).queuePizzaForExport(pizza));
   }
 
   /// Update rating
@@ -174,7 +204,7 @@ class PizzaRepository {
           notes: Value(pizza.notes),
           imageUrl: Value(pizza.imageUrl),
           source: Value(pizza.source),
-          isFavorite: Value(pizza.isFavorite),
+          isFavourite: Value(pizza.isFavourite),
           cookCount: Value(pizza.cookCount),
           rating: Value(pizza.rating),
           tags: Value(pizza.tags),

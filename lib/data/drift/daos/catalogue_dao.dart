@@ -23,19 +23,41 @@ class CatalogueDao extends DatabaseAccessor<AppDatabase>
   Future<List<Pizza>> getMemoixPizzas() => getPizzasBySource('memoix');
 
   Future<List<Pizza>> getFavouritePizzas() =>
-      (select(pizzas)..where((t) => t.isFavorite.equals(true))).get();
+      (select(pizzas)..where((t) => t.isFavourite.equals(true))).get();
 
-  Future<List<Pizza>> searchPizzas(String query) {
+  /// Converts a raw user query into a safe FTS5 prefix MATCH expression.
+  /// Shared by all search methods in this DAO.
+  static String _buildFtsQuery(String query) {
+    final tokens = query
+        .trim()
+        .split(RegExp(r'\s+'))
+        .map((t) => t.replaceAll(RegExp(r'["\(\)\*\+\-:\^\{\}\.\[\]]'), ''))
+        .where((t) => t.isNotEmpty)
+        .toList();
+    if (tokens.isEmpty) return '';
+    return tokens.map((t) => '$t*').join(' ');
+  }
+
+  Future<List<Pizza>> searchPizzas(String query) async {
     if (query.isEmpty) return getAllPizzas();
-    final q = '%${query.toLowerCase()}%';
-    return (select(pizzas)
-          ..where((t) =>
-              t.name.lower().like(q) |
-              t.cheeses.lower().like(q) |
-              t.proteins.lower().like(q) |
-              t.vegetables.lower().like(q) |
-              t.tags.lower().like(q),))
-        .get();
+    final matchQuery = _buildFtsQuery(query);
+    if (matchQuery.isEmpty) return [];
+
+    final idRows = await customSelect(
+      'SELECT pizzas.id FROM pizzas '
+      'JOIN pizzas_fts ON pizzas.id = pizzas_fts.rowid '
+      'WHERE pizzas_fts MATCH ? '
+      'ORDER BY bm25(pizzas_fts, 10, 2, 5, 5, 5, 3)',
+      variables: [Variable.withString(matchQuery)],
+      readsFrom: {pizzas},
+    ).get();
+
+    final ids = idRows.map((r) => r.read<int>('id')).toList();
+    if (ids.isEmpty) return [];
+    final idOrder = {for (var i = 0; i < ids.length; i++) ids[i]: i};
+    final rows = await (select(pizzas)..where((t) => t.id.isIn(ids))).get();
+    rows.sort((a, b) => (idOrder[a.id] ?? 0).compareTo(idOrder[b.id] ?? 0));
+    return rows;
   }
 
   Future<Pizza?> getPizzaById(int id) =>
@@ -62,8 +84,11 @@ class CatalogueDao extends DatabaseAccessor<AppDatabase>
     );
   }
 
-  Future<int> deletePizza(int id) =>
-      (delete(pizzas)..where((t) => t.id.equals(id))).go();
+  Future<int> deletePizza(int id) async {
+    await deletePizzaFts(id);
+    final count = await (delete(pizzas)..where((t) => t.id.equals(id))).go();
+    return count;
+  }
 
   Future<int> deletePizzaByUuid(String uuid) async {
     final pizza = await getPizzaByUuid(uuid);
@@ -74,7 +99,7 @@ class CatalogueDao extends DatabaseAccessor<AppDatabase>
   Future<void> togglePizzaFavourite(int id, bool current) async {
     // Atomic NOT flip — avoids a read-then-write race condition.
     await customUpdate(
-      'UPDATE pizzas SET is_favorite = NOT is_favorite WHERE id = ?',
+      'UPDATE pizzas SET is_favourite = NOT is_favourite WHERE id = ?',
       variables: [Variable.withInt(id)],
       updates: {pizzas},
       updateKind: UpdateKind.update,
@@ -101,7 +126,7 @@ class CatalogueDao extends DatabaseAccessor<AppDatabase>
       (select(pizzas)..where((t) => t.base.equals(base))).watch();
 
   Stream<List<Pizza>> watchFavouritePizzas() =>
-      (select(pizzas)..where((t) => t.isFavorite.equals(true))).watch();
+      (select(pizzas)..where((t) => t.isFavourite.equals(true))).watch();
 
   Future<int> getPizzaCount() async {
     final count = countAll();
@@ -119,9 +144,18 @@ class CatalogueDao extends DatabaseAccessor<AppDatabase>
     return row.read(count) ?? 0;
   }
 
-  Future<void> importPizzas(List<PizzasCompanion> pizzas) async {
-    for (final pizza in pizzas) {
-      await into(this.pizzas).insertOnConflictUpdate(pizza);
+  Future<void> importPizzas(List<PizzasCompanion> pizzaList) async {
+    for (final pizza in pizzaList) {
+      final id = await into(this.pizzas).insertOnConflictUpdate(pizza);
+      await upsertPizzaFts(
+        id,
+        name: pizza.name.value,
+        tags: pizza.tags.value,
+        cheeses: pizza.cheeses.value,
+        proteins: pizza.proteins.value,
+        vegetables: pizza.vegetables.value,
+        notes: pizza.notes.present ? pizza.notes.value : null,
+      );
     }
   }
 
@@ -139,21 +173,29 @@ class CatalogueDao extends DatabaseAccessor<AppDatabase>
       getSandwichesBySource('memoix');
 
   Future<List<Sandwich>> getFavouriteSandwiches() =>
-      (select(sandwiches)..where((t) => t.isFavorite.equals(true))).get();
+      (select(sandwiches)..where((t) => t.isFavourite.equals(true))).get();
 
-  Future<List<Sandwich>> searchSandwiches(String query) {
+  Future<List<Sandwich>> searchSandwiches(String query) async {
     if (query.isEmpty) return getAllSandwiches();
-    final q = '%${query.toLowerCase()}%';
-    return (select(sandwiches)
-          ..where((t) =>
-              t.name.lower().like(q) |
-              t.bread.lower().like(q) |
-              t.proteins.lower().like(q) |
-              t.vegetables.lower().like(q) |
-              t.cheeses.lower().like(q) |
-              t.condiments.lower().like(q) |
-              t.tags.lower().like(q),))
-        .get();
+    final matchQuery = _buildFtsQuery(query);
+    if (matchQuery.isEmpty) return [];
+
+    final idRows = await customSelect(
+      'SELECT sandwiches.id FROM sandwiches '
+      'JOIN sandwiches_fts ON sandwiches.id = sandwiches_fts.rowid '
+      'WHERE sandwiches_fts MATCH ? '
+      'ORDER BY bm25(sandwiches_fts, 10, 2, 5, 5, 5, 5, 5, 3)',
+      variables: [Variable.withString(matchQuery)],
+      readsFrom: {sandwiches},
+    ).get();
+
+    final ids = idRows.map((r) => r.read<int>('id')).toList();
+    if (ids.isEmpty) return [];
+    final idOrder = {for (var i = 0; i < ids.length; i++) ids[i]: i};
+    final rows =
+        await (select(sandwiches)..where((t) => t.id.isIn(ids))).get();
+    rows.sort((a, b) => (idOrder[a.id] ?? 0).compareTo(idOrder[b.id] ?? 0));
+    return rows;
   }
 
   Future<Sandwich?> getSandwichById(int id) =>
@@ -181,8 +223,12 @@ class CatalogueDao extends DatabaseAccessor<AppDatabase>
     );
   }
 
-  Future<int> deleteSandwich(int id) =>
-      (delete(sandwiches)..where((t) => t.id.equals(id))).go();
+  Future<int> deleteSandwich(int id) async {
+    await deleteSandwichFts(id);
+    final count =
+        await (delete(sandwiches)..where((t) => t.id.equals(id))).go();
+    return count;
+  }
 
   Future<int> deleteSandwichByUuid(String uuid) async {
     final sandwich = await getSandwichByUuid(uuid);
@@ -194,7 +240,7 @@ class CatalogueDao extends DatabaseAccessor<AppDatabase>
     final sandwich = await getSandwichById(id);
     if (sandwich == null) return;
     await (update(sandwiches)..where((t) => t.id.equals(id)))
-        .write(SandwichesCompanion(isFavorite: Value(!sandwich.isFavorite)));
+        .write(SandwichesCompanion(isFavourite: Value(!sandwich.isFavourite)));
   }
 
   Future<void> incrementSandwichCookCount(int id) async {
@@ -214,7 +260,7 @@ class CatalogueDao extends DatabaseAccessor<AppDatabase>
   Stream<List<Sandwich>> watchAllSandwiches() => select(sandwiches).watch();
 
   Stream<List<Sandwich>> watchFavouriteSandwiches() =>
-      (select(sandwiches)..where((t) => t.isFavorite.equals(true))).watch();
+      (select(sandwiches)..where((t) => t.isFavourite.equals(true))).watch();
 
   Future<int> getSandwichCount() async {
     final count = countAll();
@@ -223,9 +269,84 @@ class CatalogueDao extends DatabaseAccessor<AppDatabase>
     return row.read(count) ?? 0;
   }
 
-  Future<void> importSandwiches(List<SandwichesCompanion> sandwiches) async {
-    for (final sandwich in sandwiches) {
-      await into(this.sandwiches).insertOnConflictUpdate(sandwich);
+  Future<void> importSandwiches(List<SandwichesCompanion> sandwichList) async {
+    for (final sandwich in sandwichList) {
+      final id = await into(this.sandwiches).insertOnConflictUpdate(sandwich);
+      await upsertSandwichFts(
+        id,
+        name: sandwich.name.value,
+        tags: sandwich.tags.value,
+        bread: sandwich.bread.value,
+        proteins: sandwich.proteins.value,
+        vegetables: sandwich.vegetables.value,
+        cheeses: sandwich.cheeses.value,
+        condiments: sandwich.condiments.value,
+        notes: sandwich.notes.present ? sandwich.notes.value : null,
+      );
     }
+  }
+
+  // ── FTS5 maintenance ───────────────────────────────────────────────────────
+
+  /// Upserts the [pizzas_fts] row for [id].
+  Future<void> upsertPizzaFts(
+    int id, {
+    required String name,
+    required String tags,
+    required String cheeses,
+    required String proteins,
+    required String vegetables,
+    required String? notes,
+  }) async {
+    await customStatement(
+      'INSERT OR REPLACE INTO pizzas_fts'
+      '(rowid, name, tags, cheeses, proteins, vegetables, notes) '
+      'VALUES (?, ?, ?, ?, ?, ?, ?)',
+      [id, name, tags, cheeses, proteins, vegetables, notes ?? ''],
+    );
+  }
+
+  /// Removes the [pizzas_fts] row for [id] using the correct contentless FTS5
+  /// deletion marker. Must be called before the pizza row is deleted.
+  Future<void> deletePizzaFts(int id) async {
+    final pizza = await getPizzaById(id);
+    if (pizza == null) return;
+    await customStatement(
+      'INSERT INTO pizzas_fts(pizzas_fts, rowid, name, tags, cheeses, proteins, vegetables, notes) '
+      "VALUES ('delete', ?, ?, ?, ?, ?, ?, ?)",
+      [id, pizza.name, pizza.tags, pizza.cheeses, pizza.proteins, pizza.vegetables, pizza.notes ?? ''],
+    );
+  }
+
+  /// Upserts the [sandwiches_fts] row for [id].
+  Future<void> upsertSandwichFts(
+    int id, {
+    required String name,
+    required String tags,
+    required String bread,
+    required String proteins,
+    required String vegetables,
+    required String cheeses,
+    required String condiments,
+    required String? notes,
+  }) async {
+    await customStatement(
+      'INSERT OR REPLACE INTO sandwiches_fts'
+      '(rowid, name, tags, bread, proteins, vegetables, cheeses, condiments, notes) '
+      'VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)',
+      [id, name, tags, bread, proteins, vegetables, cheeses, condiments, notes ?? ''],
+    );
+  }
+
+  /// Removes the [sandwiches_fts] row for [id] using the correct contentless
+  /// FTS5 deletion marker. Must be called before the sandwich row is deleted.
+  Future<void> deleteSandwichFts(int id) async {
+    final sandwich = await getSandwichById(id);
+    if (sandwich == null) return;
+    await customStatement(
+      'INSERT INTO sandwiches_fts(sandwiches_fts, rowid, name, tags, bread, proteins, vegetables, cheeses, condiments, notes) '
+      "VALUES ('delete', ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+      [id, sandwich.name, sandwich.tags, sandwich.bread, sandwich.proteins, sandwich.vegetables, sandwich.cheeses, sandwich.condiments, sandwich.notes ?? ''],
+    );
   }
 }

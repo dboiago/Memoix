@@ -61,6 +61,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
   String _selectedCourse = 'smoking';
 
   bool _isLoading = true;
+  bool _isShared = true;
   SmokingRecipe? _existingRecipe;
 
   @override
@@ -127,6 +128,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
       
       // Load course
       _selectedCourse = recipe.course;
+      _isShared = recipe.isShared;
     } else if (widget.recipeId != null) {
       final recipe = await ref
           .read(smokingRepositoryProvider)
@@ -187,6 +189,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
         
         // Load course
         _selectedCourse = recipe.course;
+        _isShared = recipe.isShared;
       }
     }
 
@@ -255,6 +258,11 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
       appBar: AppBar(
         title: Text(title),
         actions: [
+          IconButton(
+            icon: Icon(_isShared ? Icons.visibility : Icons.visibility_off),
+            tooltip: _isShared ? 'Shared' : 'Hidden',
+            onPressed: () => setState(() => _isShared = !_isShared),
+          ),
           TextButton.icon(
             onPressed: _saveRecipe,
             icon: const Icon(Icons.save),
@@ -1860,11 +1868,12 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
       stepImageMap: jsonEncode(_stepImageMap.entries.map((e) => '${e.key}:${e.value}').toList()),
       pairedRecipeIds: jsonEncode(_pairedRecipeIds),
       source: _existingRecipe?.source ?? SmokingSource.personal.name,
-      isFavorite: _existingRecipe?.isFavorite ?? false,
+      isFavourite: _existingRecipe?.isFavourite ?? false,
       cookCount: _existingRecipe?.cookCount ?? 0,
       imageUrl: _existingRecipe?.imageUrl,
       createdAt: _existingRecipe?.createdAt ?? now,
       updatedAt: now,
+      isShared: _isShared,
     );
 
     await ref.read(smokingRepositoryProvider).saveRecipe(recipe);

@@ -21,6 +21,8 @@ part 'app_database.g.dart';
 @TableIndex(name: 'idx_recipes_name', columns: {#name})
 @TableIndex(name: 'idx_recipes_course', columns: {#course})
 @TableIndex(name: 'idx_recipes_cuisine', columns: {#cuisine})
+@TableIndex(name: 'idx_recipes_recipe_type', columns: {#recipeType})
+@TableIndex(name: 'idx_recipes_is_shared', columns: {#isShared})
 class Recipes extends Table {
   IntColumn get id => integer().autoIncrement()();
   TextColumn get uuid => text()();
@@ -53,7 +55,7 @@ class Recipes extends Table {
   IntColumn get colorValue => integer().nullable()();
   DateTimeColumn get createdAt => dateTime()();
   DateTimeColumn get updatedAt => dateTime()();
-  BoolColumn get isFavorite => boolean().withDefault(const Constant(false))();
+  BoolColumn get isFavourite => boolean().withDefault(const Constant(false))();
   IntColumn get rating => integer().withDefault(const Constant(0))();
   IntColumn get cookCount => integer().withDefault(const Constant(0))();
   IntColumn get editCount => integer().withDefault(const Constant(0))();
@@ -79,6 +81,12 @@ class Recipes extends Table {
   TextColumn get scienceNotes => text().nullable()();
   // List<String> stored as JSON array — modernist equipment
   TextColumn get equipmentJson => text().nullable()();
+  // Whether this recipe's data may be contributed to the Culinary Intelligence pipeline
+  // Defaults to true (opt-in per-recipe), but the master privacy switch must ALSO be on.
+  BoolColumn get isShared => boolean().withDefault(const Constant(true))();
+  // Stable hash of name + course + original ingredient names.
+  // Set on first RAG transmission and frozen thereafter regardless of edits.
+  TextColumn get lineageHash => text().nullable()();
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -123,7 +131,7 @@ class Pizzas extends Table {
   TextColumn get imageUrl => text().nullable()();
   // PizzaSource enum stored as name string
   TextColumn get source => text().withDefault(const Constant('personal'))();
-  BoolColumn get isFavorite => boolean().withDefault(const Constant(false))();
+  BoolColumn get isFavourite => boolean().withDefault(const Constant(false))();
   IntColumn get cookCount => integer().withDefault(const Constant(0))();
   IntColumn get rating => integer().withDefault(const Constant(0))();
   // List<String> stored as JSON array
@@ -131,6 +139,9 @@ class Pizzas extends Table {
   DateTimeColumn get createdAt => dateTime()();
   DateTimeColumn get updatedAt => dateTime()();
   IntColumn get version => integer().withDefault(const Constant(1))();
+  // Whether this pizza's data may be contributed to the Culinary Intelligence pipeline.
+  // Defaults to true (opt-in per-entry), but the master privacy switch must ALSO be on.
+  BoolColumn get isShared => boolean().withDefault(const Constant(true))();
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -153,10 +164,13 @@ class CellarEntries extends Table {
   TextColumn get imageUrl => text().nullable()();
   // CellarSource enum stored as name string
   TextColumn get source => text().withDefault(const Constant('personal'))();
-  BoolColumn get isFavorite => boolean().withDefault(const Constant(false))();
+  BoolColumn get isFavourite => boolean().withDefault(const Constant(false))();
   DateTimeColumn get createdAt => dateTime()();
   DateTimeColumn get updatedAt => dateTime()();
   IntColumn get version => integer().withDefault(const Constant(1))();
+  // Whether this cellar entry's data may be contributed to the Culinary Intelligence pipeline.
+  // Defaults to true (opt-in per-entry), but the master privacy switch must ALSO be on.
+  BoolColumn get isShared => boolean().withDefault(const Constant(true))();
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -179,10 +193,13 @@ class CheeseEntries extends Table {
   TextColumn get imageUrl => text().nullable()();
   // CheeseSource enum stored as name string
   TextColumn get source => text().withDefault(const Constant('personal'))();
-  BoolColumn get isFavorite => boolean().withDefault(const Constant(false))();
+  BoolColumn get isFavourite => boolean().withDefault(const Constant(false))();
   DateTimeColumn get createdAt => dateTime()();
   DateTimeColumn get updatedAt => dateTime()();
   IntColumn get version => integer().withDefault(const Constant(1))();
+  // Whether this cheese entry's data may be contributed to the Culinary Intelligence pipeline.
+  // Defaults to true (opt-in per-entry), but the master privacy switch must ALSO be on.
+  BoolColumn get isShared => boolean().withDefault(const Constant(true))();
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -281,7 +298,7 @@ class Sandwiches extends Table {
   TextColumn get imageUrl => text().nullable()();
   // SandwichSource enum stored as name string
   TextColumn get source => text().withDefault(const Constant('personal'))();
-  BoolColumn get isFavorite => boolean().withDefault(const Constant(false))();
+  BoolColumn get isFavourite => boolean().withDefault(const Constant(false))();
   IntColumn get cookCount => integer().withDefault(const Constant(0))();
   IntColumn get rating => integer().withDefault(const Constant(0))();
   // List<String> stored as JSON array
@@ -289,6 +306,9 @@ class Sandwiches extends Table {
   DateTimeColumn get createdAt => dateTime()();
   DateTimeColumn get updatedAt => dateTime()();
   IntColumn get version => integer().withDefault(const Constant(1))();
+  // Whether this sandwich's data may be contributed to the Culinary Intelligence pipeline.
+  // Defaults to true (opt-in per-entry), but the master privacy switch must ALSO be on.
+  BoolColumn get isShared => boolean().withDefault(const Constant(true))();
 }
 
 /// Type alias: Drift generates 'Sandwiche' from the Sandwiches table name.
@@ -365,7 +385,7 @@ class SmokingRecipes extends Table {
   // List<String> stored as JSON array
   TextColumn get stepImageMap => text().withDefault(const Constant('[]'))();
   TextColumn get imageUrl => text().nullable()();
-  BoolColumn get isFavorite => boolean().withDefault(const Constant(false))();
+  BoolColumn get isFavourite => boolean().withDefault(const Constant(false))();
   IntColumn get cookCount => integer().withDefault(const Constant(0))();
   // SmokingSource enum stored as name string
   TextColumn get source => text().withDefault(const Constant('personal'))();
@@ -373,6 +393,9 @@ class SmokingRecipes extends Table {
   TextColumn get pairedRecipeIds => text().withDefault(const Constant('[]'))();
   DateTimeColumn get createdAt => dateTime()();
   DateTimeColumn get updatedAt => dateTime()();
+  // Whether this smoking recipe's data may be contributed to the Culinary Intelligence pipeline.
+  // Defaults to true (opt-in per-entry), but the master privacy switch must ALSO be on.
+  BoolColumn get isShared => boolean().withDefault(const Constant(true))();
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -427,6 +450,29 @@ class RecipeImages extends Table {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
+// PENDING DELETIONS (offline-queue for Supabase soft-deletes)
+// ─────────────────────────────────────────────────────────────────────────────
+
+/// Durable queue for soft-delete notifications that could not be delivered to
+/// Supabase immediately (e.g. device was offline at time of deletion).
+/// [SupabaseSyncService.processPendingDeletions] drains this table at the
+/// start of every sync cycle.
+@TableIndex(
+  name: 'idx_pending_deletions_entity_uuid',
+  columns: {#entityType, #recordUuid},
+  unique: true,
+)
+class PendingDeletions extends Table {
+  IntColumn get id => integer().autoIncrement()();
+  /// Supabase table name (e.g. 'recipes', 'pizzas').
+  TextColumn get entityType => text()();
+  /// UUID of the deleted row.
+  TextColumn get recordUuid => text()();
+  /// UTC timestamp when the local row was deleted.
+  DateTimeColumn get deletedAt => dateTime()();
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
 // DATABASE
 // ─────────────────────────────────────────────────────────────────────────────
 
@@ -447,6 +493,7 @@ class RecipeImages extends Table {
   CookingLogs,
   Courses,
   RecipeImages,
+  PendingDeletions,
 ], daos: [
   CookingLogDao,
   UtilityDao,
@@ -481,7 +528,7 @@ class AppDatabase extends _$AppDatabase {
   }
 
   @override
-  int get schemaVersion => 4;
+  int get schemaVersion => 12;
 
   @override
   MigrationStrategy get migration => MigrationStrategy(
@@ -578,6 +625,297 @@ class AppDatabase extends _$AppDatabase {
           CREATE INDEX IF NOT EXISTS idx_recipe_images_recipe_id
           ON recipe_images (recipe_id)
         ''');
+      }
+      if (from < 5) {
+        // Add the Culinary Intelligence sharing flag.
+        // Guard with PRAGMA so repeated partial migrations are safe.
+        final recipeCols =
+            await customSelect('PRAGMA table_info(recipes)').get();
+        if (!recipeCols.any((r) => r.read<String>('name') == 'is_shared')) {
+          await m.addColumn(recipes, recipes.isShared);
+        }
+      }
+      if (from < 6) {
+        // Add the RAG lineage hash column.
+        // Guard with PRAGMA so repeated partial migrations are safe.
+        final recipeCols =
+            await customSelect('PRAGMA table_info(recipes)').get();
+        if (!recipeCols.any((r) => r.read<String>('name') == 'lineage_hash')) {
+          await customStatement('ALTER TABLE recipes ADD COLUMN lineage_hash TEXT');
+        }
+      }
+      if (from < 7) {
+        // Rename is_favorite → is_favourite on all tables that carry the column.
+        // Guard with PRAGMA table_info so the migration is idempotent.
+        // ALTER TABLE … RENAME COLUMN is available since SQLite 3.25.0 (2018).
+        for (final table in [
+          'recipes',
+          'pizzas',
+          'sandwiches',
+          'cellar_entries',
+          'cheese_entries',
+          'smoking_recipes',
+        ]) {
+          final cols =
+              await customSelect('PRAGMA table_info($table)').get();
+          if (cols.any((r) => r.read<String>('name') == 'is_favorite')) {
+            await customStatement(
+                'ALTER TABLE $table RENAME COLUMN is_favorite TO is_favourite');
+          }
+        }
+      }
+      if (from < 8) {
+        // Create the offline deletion queue table.
+        await m.createTable(pendingDeletions);
+      }
+      if (from < 9) {
+        // Create five contentless FTS5 virtual tables for full-text search.
+        // IF NOT EXISTS makes the block idempotent on partial migration retries.
+        await customStatement('''
+          CREATE VIRTUAL TABLE IF NOT EXISTS recipes_fts USING fts5(
+            name, tags, cuisine, ingredient_names, ingredient_notes,
+            content='', tokenize='unicode61'
+          )
+        ''');
+        await customStatement('''
+          CREATE VIRTUAL TABLE IF NOT EXISTS pizzas_fts USING fts5(
+            name, tags, cheeses, proteins, vegetables, notes,
+            content='', tokenize='unicode61'
+          )
+        ''');
+        await customStatement('''
+          CREATE VIRTUAL TABLE IF NOT EXISTS sandwiches_fts USING fts5(
+            name, tags, bread, proteins, vegetables, cheeses, condiments, notes,
+            content='', tokenize='unicode61'
+          )
+        ''');
+        await customStatement('''
+          CREATE VIRTUAL TABLE IF NOT EXISTS cellar_fts USING fts5(
+            name, producer, category, tasting_notes,
+            content='', tokenize='unicode61'
+          )
+        ''');
+        await customStatement('''
+          CREATE VIRTUAL TABLE IF NOT EXISTS cheese_fts USING fts5(
+            name, type, country, milk, flavour, texture,
+            content='', tokenize='unicode61'
+          )
+        ''');
+
+        // Bulk-populate each FTS table from existing rows.
+        // COALESCE guards every nullable column so no null tokens are inserted.
+        await customStatement('''
+          INSERT INTO recipes_fts(rowid, name, tags, cuisine, ingredient_names, ingredient_notes)
+          SELECT
+            r.id,
+            r.name,
+            COALESCE(r.tags, ''),
+            COALESCE(r.cuisine, ''),
+            COALESCE(GROUP_CONCAT(i.name, ' '), ''),
+            COALESCE(GROUP_CONCAT(COALESCE(i.notes, ''), ' '), '')
+          FROM recipes r
+          LEFT JOIN ingredients i ON i.recipe_id = r.id
+          GROUP BY r.id
+        ''');
+        await customStatement('''
+          INSERT INTO pizzas_fts(rowid, name, tags, cheeses, proteins, vegetables, notes)
+          SELECT
+            id,
+            name,
+            COALESCE(tags, ''),
+            COALESCE(cheeses, ''),
+            COALESCE(proteins, ''),
+            COALESCE(vegetables, ''),
+            COALESCE(notes, '')
+          FROM pizzas
+        ''');
+        await customStatement('''
+          INSERT INTO sandwiches_fts(rowid, name, tags, bread, proteins, vegetables, cheeses, condiments, notes)
+          SELECT
+            id,
+            name,
+            COALESCE(tags, ''),
+            COALESCE(bread, ''),
+            COALESCE(proteins, ''),
+            COALESCE(vegetables, ''),
+            COALESCE(cheeses, ''),
+            COALESCE(condiments, ''),
+            COALESCE(notes, '')
+          FROM sandwiches
+        ''');
+        await customStatement('''
+          INSERT INTO cellar_fts(rowid, name, producer, category, tasting_notes)
+          SELECT
+            id,
+            name,
+            COALESCE(producer, ''),
+            COALESCE(category, ''),
+            COALESCE(tasting_notes, '')
+          FROM cellar_entries
+        ''');
+        await customStatement('''
+          INSERT INTO cheese_fts(rowid, name, type, country, milk, flavour, texture)
+          SELECT
+            id,
+            name,
+            COALESCE(type, ''),
+            COALESCE(country, ''),
+            COALESCE(milk, ''),
+            COALESCE(flavour, ''),
+            COALESCE(texture, '')
+          FROM cheese_entries
+        ''');
+      }
+      if (from < 10) {
+        // Drop and recreate all five FTS5 virtual tables with
+        // remove_diacritics 0 so that accented characters (e.g. é, ü, ñ) are
+        // treated as distinct tokens rather than being folded to their base
+        // equivalents. Contentless FTS5 tables cannot be ALTER-ed in place, so
+        // the tables must be dropped and recreated.
+        for (final tbl in [
+          'recipes_fts',
+          'pizzas_fts',
+          'sandwiches_fts',
+          'cellar_fts',
+          'cheese_fts',
+        ]) {
+          await customStatement('DROP TABLE IF EXISTS $tbl');
+        }
+
+        await customStatement('''
+          CREATE VIRTUAL TABLE IF NOT EXISTS recipes_fts USING fts5(
+            name, tags, cuisine, ingredient_names, ingredient_notes,
+            content='', tokenize='unicode61 remove_diacritics 0'
+          )
+        ''');
+        await customStatement('''
+          CREATE VIRTUAL TABLE IF NOT EXISTS pizzas_fts USING fts5(
+            name, tags, cheeses, proteins, vegetables, notes,
+            content='', tokenize='unicode61 remove_diacritics 0'
+          )
+        ''');
+        await customStatement('''
+          CREATE VIRTUAL TABLE IF NOT EXISTS sandwiches_fts USING fts5(
+            name, tags, bread, proteins, vegetables, cheeses, condiments, notes,
+            content='', tokenize='unicode61 remove_diacritics 0'
+          )
+        ''');
+        await customStatement('''
+          CREATE VIRTUAL TABLE IF NOT EXISTS cellar_fts USING fts5(
+            name, producer, category, tasting_notes,
+            content='', tokenize='unicode61 remove_diacritics 0'
+          )
+        ''');
+        await customStatement('''
+          CREATE VIRTUAL TABLE IF NOT EXISTS cheese_fts USING fts5(
+            name, type, country, milk, flavour, texture,
+            content='', tokenize='unicode61 remove_diacritics 0'
+          )
+        ''');
+
+        // Repopulate each FTS table from source rows.
+        await customStatement('''
+          INSERT INTO recipes_fts(rowid, name, tags, cuisine, ingredient_names, ingredient_notes)
+          SELECT
+            r.id,
+            r.name,
+            COALESCE(r.tags, ''),
+            COALESCE(r.cuisine, ''),
+            COALESCE(GROUP_CONCAT(i.name, ' '), ''),
+            COALESCE(GROUP_CONCAT(COALESCE(i.notes, ''), ' '), '')
+          FROM recipes r
+          LEFT JOIN ingredients i ON i.recipe_id = r.id
+          GROUP BY r.id
+        ''');
+        await customStatement('''
+          INSERT INTO pizzas_fts(rowid, name, tags, cheeses, proteins, vegetables, notes)
+          SELECT
+            id,
+            name,
+            COALESCE(tags, ''),
+            COALESCE(cheeses, ''),
+            COALESCE(proteins, ''),
+            COALESCE(vegetables, ''),
+            COALESCE(notes, '')
+          FROM pizzas
+        ''');
+        await customStatement('''
+          INSERT INTO sandwiches_fts(rowid, name, tags, bread, proteins, vegetables, cheeses, condiments, notes)
+          SELECT
+            id,
+            name,
+            COALESCE(tags, ''),
+            COALESCE(bread, ''),
+            COALESCE(proteins, ''),
+            COALESCE(vegetables, ''),
+            COALESCE(cheeses, ''),
+            COALESCE(condiments, ''),
+            COALESCE(notes, '')
+          FROM sandwiches
+        ''');
+        await customStatement('''
+          INSERT INTO cellar_fts(rowid, name, producer, category, tasting_notes)
+          SELECT
+            id,
+            name,
+            COALESCE(producer, ''),
+            COALESCE(category, ''),
+            COALESCE(tasting_notes, '')
+          FROM cellar_entries
+        ''');
+        await customStatement('''
+          INSERT INTO cheese_fts(rowid, name, type, country, milk, flavour, texture)
+          SELECT
+            id,
+            name,
+            COALESCE(type, ''),
+            COALESCE(country, ''),
+            COALESCE(milk, ''),
+            COALESCE(flavour, ''),
+            COALESCE(texture, '')
+          FROM cheese_entries
+        ''');
+      }
+      if (from < 11) {
+        // Add indexes for two frequently-filtered Recipes columns that were
+        // previously missing. IF NOT EXISTS makes the block idempotent.
+        await customStatement('''
+          CREATE INDEX IF NOT EXISTS idx_recipes_recipe_type
+          ON recipes (recipe_type)
+        ''');
+        await customStatement('''
+          CREATE INDEX IF NOT EXISTS idx_recipes_is_shared
+          ON recipes (is_shared)
+        ''');
+      }
+      if (from < 12) {
+        // Add the Culinary Intelligence sharing flag to all specialist domain
+        // tables. Guards with PRAGMA table_info so the migration is idempotent.
+        final smokingCols =
+            await customSelect('PRAGMA table_info(smoking_recipes)').get();
+        if (!smokingCols.any((r) => r.read<String>('name') == 'is_shared')) {
+          await m.addColumn(smokingRecipes, smokingRecipes.isShared);
+        }
+        final pizzaCols =
+            await customSelect('PRAGMA table_info(pizzas)').get();
+        if (!pizzaCols.any((r) => r.read<String>('name') == 'is_shared')) {
+          await m.addColumn(pizzas, pizzas.isShared);
+        }
+        final sandwichCols =
+            await customSelect('PRAGMA table_info(sandwiches)').get();
+        if (!sandwichCols.any((r) => r.read<String>('name') == 'is_shared')) {
+          await m.addColumn(sandwiches, sandwiches.isShared);
+        }
+        final cellarCols =
+            await customSelect('PRAGMA table_info(cellar_entries)').get();
+        if (!cellarCols.any((r) => r.read<String>('name') == 'is_shared')) {
+          await m.addColumn(cellarEntries, cellarEntries.isShared);
+        }
+        final cheeseCols =
+            await customSelect('PRAGMA table_info(cheese_entries)').get();
+        if (!cheeseCols.any((r) => r.read<String>('name') == 'is_shared')) {
+          await m.addColumn(cheeseEntries, cheeseEntries.isShared);
+        }
       }
     },
   );

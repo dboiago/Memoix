@@ -21,22 +21,25 @@ class MemoixHeader extends StatelessWidget {
   const MemoixHeader({
     super.key,
     required this.title,
-    this.isFavorite = false,
+    this.isFavourite = false,
     this.headerImage,
     this.onFavoritePressed,
     this.onLogCookPressed,
     this.onSharePressed,
     this.onComparePressed,
     this.onEditPressed,
+    this.onSaveWalkinPressed,
     this.onDuplicatePressed,
     this.onDeletePressed,
+    this.isShared,
+    this.onToggleSharedPressed,
   });
 
   /// The title to display in the header.
   final String title;
 
-  /// Whether this item is marked as favorite.
-  final bool isFavorite;
+  /// Whether this item is marked as favourite.
+  final bool isFavourite;
 
   /// Optional header image URL or file path.
   final String? headerImage;
@@ -56,11 +59,23 @@ class MemoixHeader extends StatelessWidget {
   /// Callback when edit is selected from menu.
   final VoidCallback? onEditPressed;
 
+  /// Callback to save an unsaved walkin recipe to the database.
+  /// When non-null, a save icon button is shown in the action row and the
+  /// Edit menu item is omitted (controlled by the caller passing onEditPressed: null).
+  final VoidCallback? onSaveWalkinPressed;
+
   /// Callback when duplicate is selected from menu.
   final VoidCallback? onDuplicatePressed;
 
   /// Callback when delete is selected from menu.
   final VoidCallback? onDeletePressed;
+
+  /// Current sharing state for the Culinary Intelligence toggle.
+  /// When null, the menu item is hidden (master switch is OFF).
+  final bool? isShared;
+
+  /// Callback when the Culinary Intelligence sharing toggle is selected.
+  final VoidCallback? onToggleSharedPressed;
 
   bool get _hasHeaderImage => headerImage != null && headerImage!.isNotEmpty;
 
@@ -228,8 +243,8 @@ class MemoixHeader extends StatelessWidget {
             if (onFavoritePressed != null)
               IconButton(
                 icon: Icon(
-                  isFavorite ? Icons.favorite : Icons.favorite_border,
-                  color: isFavorite ? theme.colorScheme.secondary : iconColor,
+                  isFavourite ? Icons.favorite : Icons.favorite_border,
+                  color: isFavourite ? theme.colorScheme.secondary : iconColor,
                   shadows: iconShadows,
                 ),
                 onPressed: onFavoritePressed,
@@ -254,6 +269,15 @@ class MemoixHeader extends StatelessWidget {
                 padding: const EdgeInsets.all(8),
                 constraints: const BoxConstraints(minWidth: 36, minHeight: 36),
               ),
+            if (onSaveWalkinPressed != null)
+              IconButton(
+                icon: Icon(Icons.save_alt, color: iconColor, shadows: iconShadows),
+                tooltip: 'Save recipe',
+                onPressed: onSaveWalkinPressed,
+                visualDensity: VisualDensity.compact,
+                padding: const EdgeInsets.all(8),
+                constraints: const BoxConstraints(minWidth: 36, minHeight: 36),
+              ),
             if (onEditPressed != null || onDuplicatePressed != null || onDeletePressed != null)
               PopupMenuButton<String>(
                 onSelected: (value) {
@@ -270,6 +294,9 @@ class MemoixHeader extends StatelessWidget {
                     case 'delete':
                       onDeletePressed?.call();
                       break;
+                    case 'toggle_shared':
+                      onToggleSharedPressed?.call();
+                      break;
                   }
                 },
                 constraints: const BoxConstraints(maxWidth: 200),
@@ -280,6 +307,22 @@ class MemoixHeader extends StatelessWidget {
                     const PopupMenuItem(value: 'edit', child: Text('Edit')),
                   if (onDuplicatePressed != null)
                     const PopupMenuItem(value: 'duplicate', child: Text('Duplicate')),
+                  // Culinary Intelligence toggle — only shown when master switch is ON
+                  if (isShared != null && onToggleSharedPressed != null)
+                    PopupMenuItem(
+                      value: 'toggle_shared',
+                      child: Row(
+                        children: [
+                          Text(isShared! ? 'Shared' : 'Hidden'),
+                          const SizedBox(width: 8),
+                          Icon(
+                            isShared! ? Icons.visibility : Icons.visibility_off,
+                            size: 18,
+                            color: theme.colorScheme.secondary,
+                          ),
+                        ],
+                      ),
+                    ),
                   if (onDeletePressed != null)
                     PopupMenuItem(
                       value: 'delete',

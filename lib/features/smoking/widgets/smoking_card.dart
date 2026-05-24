@@ -100,12 +100,12 @@ class _SmokingCardState extends ConsumerState<SmokingCard> {
                   // Favorite button
                   IconButton(
                     icon: Icon(
-                      widget.recipe.isFavorite
+                      widget.recipe.isFavourite
                           ? Icons.favorite
                           : Icons.favorite_border,
                       size: 20,
                     ),
-                    color: widget.recipe.isFavorite
+                    color: widget.recipe.isFavourite
                         ? theme.colorScheme.secondary
                         : theme.colorScheme.onSurfaceVariant,
                     onPressed: () async {

@@ -64,7 +64,7 @@ class SmokingDao extends DatabaseAccessor<AppDatabase>
     final recipe = await getRecipeById(id);
     if (recipe == null) return;
     await (update(smokingRecipes)..where((t) => t.id.equals(id)))
-        .write(SmokingRecipesCompanion(isFavorite: Value(!recipe.isFavorite)));
+        .write(SmokingRecipesCompanion(isFavourite: Value(!recipe.isFavourite)));
   }
 
   Future<void> incrementCookCount(int id) async {
@@ -90,7 +90,7 @@ class SmokingDao extends DatabaseAccessor<AppDatabase>
 
   Stream<List<SmokingRecipe>> watchFavourites() =>
       (select(smokingRecipes)
-            ..where((t) => t.isFavorite.equals(true))
+            ..where((t) => t.isFavourite.equals(true))
             ..orderBy([(t) => OrderingTerm.asc(t.name)]))
           .watch();
 

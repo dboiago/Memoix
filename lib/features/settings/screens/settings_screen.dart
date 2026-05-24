@@ -21,7 +21,10 @@ import '../../../core/database/database.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
 import '../../../core/providers.dart';
 import '../../../core/widgets/update_available_dialog.dart';
+import '../../../core/services/rag_telemetry_service.dart';
 import '../services/recipe_backup_service.dart';
+import '../../import/screens/external_import_review_screen.dart';
+import '../../import/services/external_recipe_importer.dart';
 import '../../recipes/repository/recipe_repository.dart';
 import '../../pizzas/repository/pizza_repository.dart';
 import '../../sandwiches/repository/sandwich_repository.dart';
@@ -51,9 +54,9 @@ final hideMemoixRecipesProvider = StateNotifierProvider<HideMemoixRecipesNotifie
 
 
 // Arrange from me what's been arranged for you - a life's work distilled
-// Knowledge wrest from fire and oil — contained between A and Z
-// Decorative made way for the declarative — only bringing what can be consumed
-// My name no longer found but remembered — not in the recipe but the rule
+// Knowledge wrest from fire and oil - contained between A and Z
+// Decorative made way for the declarative - only bringing what can be consumed
+// My name no longer found but remembered - not in the recipe but the rule
 const _legacy = 'XBLCNBLPAQNUNWBW';
 
 class HideMemoixRecipesNotifier extends StateNotifier<bool> {
@@ -73,6 +76,196 @@ class HideMemoixRecipesNotifier extends StateNotifier<bool> {
     final prefs = await SharedPreferences.getInstance();
     await prefs.setBool(_key, state);
     IntegrityService.reportEvent('activity.setting_changed', metadata: {'key': _key, 'value': state});
+  }
+}
+
+class ContributeRecipesInfoScreen extends StatelessWidget {
+  const ContributeRecipesInfoScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Recipe Contributions'),
+      ),
+      body: SingleChildScrollView(
+        padding: const EdgeInsets.all(24),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            _Section(
+              title: 'Overview',
+              body:
+                  'Memoix is developing a system to understand recipes semantically - '
+                  'moving beyond text search toward a tool that understands cooking as '
+                  'a domain. The long-term goal is cross-cuisine discovery: surfacing '
+                  'relevant recipes across languages and culinary traditions, with the '
+                  'AI handling translation, unit conversion, and contextual adaptation '
+                  'automatically.\n\n'
+                  'To build this, the system needs to learn from real, human-tested '
+                  'recipes rather than raw internet scrapes. This feature is strictly '
+                  'opt-in and has no effect unless explicitly enabled.',
+            ),
+            _BulletSection(
+              title: 'How It Works',
+              intro:
+                  'When enabled, Memoix transmits your recipes to a secure backend to '
+                  'build a proprietary culinary dataset. Your recipes contribute to a '
+                  'shared understanding of ingredient relationships, regional cuisines, '
+                  'dish structure, and recipe evolution over time.\n\n'
+                  'Submitted recipes are processed server-side to generate semantic '
+                  'representations used for search and model training. This processing '
+                  'happens on Cloudflare\'s infrastructure. No recipe content is used '
+                  'to train third-party commercial models.\n\n'
+                  'Your data helps the system learn things like:',
+              bullets: const [
+                'Which ingredient ratios are characteristic of a dish',
+                'How recipes are naturally categorized and tagged by real cooks',
+                'Which modifications are consistently made to improve a dish',
+                'How dishes relate to and complement one another across cuisines',
+              ],
+            ),
+            _BulletSection(
+              title: 'What Is Collected',
+              intro:
+                  'If you opt in, the following is transmitted when you save, '
+                  'update, cook, or favourite a recipe:',
+              bullets: const [
+                'Recipe content (ingredients, instructions, and notes)',
+                'Original source text or URL (if the recipe was imported)',
+                'Culinary statistics (cook count, favourite status, ratings)',
+                'Recipe pairing relationships (the name and course of any linked recipes)',
+                'A derived lineage identifier and content hash, used to track recipe '
+                    'refinement over time without transmitting any device or user identifier',
+                'Basic metadata (app version and system language)',
+              ],
+            ),
+            _BulletSection(
+              title: 'What Is NEVER Collected',
+              bullets: const [
+                'No personal identifiers - no name, email, account, or device ID',
+                'No location data',
+                'No behavioural tracking - no screen time, session data, or usage patterns',
+                'No hidden recipes - recipes marked as Hidden are unconditionally excluded '
+                    'from transmission, regardless of your global setting',
+              ],
+            ),
+            _Section(
+              title: 'A Note on Privacy and Submitted Data',
+              body:
+                  'Submitted recipes are stored without any user or device identifier. The '
+                  'dataset has no client read access and cannot be queried by users or the app.\n\n'
+                  'Because no user or device identifier is attached to any submission, it is '
+                  'not possible to withdraw previously submitted data - there is no link '
+                  'between the dataset and you. Disabling this setting stops all future '
+                  'transmissions immediately.',
+            ),
+            _Section(
+              title: 'Control',
+              body:
+                  'Global Setting\n'
+                  'Enable or disable this feature at any time in Settings > Data > '
+                  'Contribute to Culinary Intelligence. Disabling stops all future '
+                  'transmissions immediately.\n\n'
+                  'Per-Recipe Privacy\n'
+                  'If you want to contribute but have specific recipes you want to keep '
+                  'private, open the menu on any recipe and set its visibility to Hidden. '
+                  'Hidden recipes are never transmitted, even when the global setting is enabled.',
+            ),
+            const SizedBox(height: 32),
+            Center(
+              child: Text(
+                'Built for cooking, not tracking.',
+                style: theme.textTheme.bodySmall?.copyWith(
+                  fontStyle: FontStyle.italic,
+                  color: theme.colorScheme.onSurfaceVariant,
+                ),
+              ),
+            ),
+            const SizedBox(height: 24),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _Section extends StatelessWidget {
+  const _Section({required this.title, required this.body});
+
+  final String title;
+  final String body;
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 24),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(title, style: theme.textTheme.titleSmall?.copyWith(
+            color: theme.colorScheme.primary,
+          )),
+          const SizedBox(height: 8),
+          Text(body, style: theme.textTheme.bodyMedium?.copyWith(
+            color: theme.colorScheme.onSurface,
+          )),
+        ],
+      ),
+    );
+  }
+}
+
+class _BulletSection extends StatelessWidget {
+  const _BulletSection({
+    required this.title,
+    required this.bullets,
+    this.intro,
+  });
+
+  final String title;
+  final String? intro;
+  final List<String> bullets;
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 24),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(title, style: theme.textTheme.titleSmall?.copyWith(
+            color: theme.colorScheme.primary,
+          )),
+          const SizedBox(height: 8),
+          if (intro != null) ...[
+            Text(intro!, style: theme.textTheme.bodyMedium),
+            const SizedBox(height: 8),
+          ],
+          ...bullets.map(
+            (b) => Padding(
+              padding: const EdgeInsets.only(bottom: 6),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text('· ',
+                      style: theme.textTheme.bodyMedium?.copyWith(
+                        color: theme.colorScheme.onSurfaceVariant,
+                      )),
+                  Expanded(
+                    child: Text(b, style: theme.textTheme.bodyMedium),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }
 
@@ -201,6 +394,109 @@ class AutoCheckUpdatesNotifier extends StateNotifier<bool> {
   }
 }
 
+/// Master opt-in switch for the Culinary Intelligence RAG pipeline.
+/// Defaults to OFF - this app is strictly opt-in and privacy-focused.
+/// When OFF, no recipe data is ever queued for export regardless of per-recipe flags.
+final contributeToIntelligenceProvider =
+    StateNotifierProvider<ContributeToIntelligenceNotifier, bool>((ref) {
+  return ContributeToIntelligenceNotifier(ref);
+});
+
+class ContributeToIntelligenceNotifier extends StateNotifier<bool> {
+  static const _key = 'contribute_to_culinary_intelligence';
+  final Ref _ref;
+  final _loadCompleter = Completer<void>();
+
+  /// Completes when the persisted preference has been loaded from
+  /// SharedPreferences. Await before trusting the current state value.
+  Future<void> get ready => _loadCompleter.future;
+
+  ContributeToIntelligenceNotifier(this._ref) : super(false) {
+    _loadPreference();
+  }
+
+  Future<void> _loadPreference() async {
+    final prefs = await SharedPreferences.getInstance();
+    state = prefs.getBool(_key) ?? false; // Must default to OFF - opt-in only
+    _loadCompleter.complete();
+  }
+
+  Future<void> toggle() async {
+    state = !state;
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setBool(_key, state);
+    if (state) {
+      // Just transitioned OFF→ON: queue all existing entries for the
+      // backfill. Fire-and-forget — failures are silently dropped inside
+      // the service. Runs once per deliberate opt-in action, not on launch.
+      unawaited(
+        _ref.read(ragTelemetryServiceProvider).backfillOnOptIn(
+          recipeFetcher: () => _ref
+              .read(recipeRepositoryProvider)
+              .watchAllRecipes()
+              .first
+              .then(
+                (all) => all
+                    .where((r) => r.recipeType == 'standard')
+                    .toList(),
+              ),
+          modernistFetcher: () =>
+              _ref.read(modernistRepositoryProvider).getAll(),
+          smokingFetcher: () =>
+              _ref.read(smokingRepositoryProvider).getAllRecipes(),
+          pizzaFetcher: () =>
+              _ref.read(pizzaRepositoryProvider).getAllPizzas(),
+          sandwichFetcher: () =>
+              _ref.read(sandwichRepositoryProvider).getAllSandwiches(),
+          cellarFetcher: () =>
+              _ref.read(cellarRepositoryProvider).getAllEntries(),
+          cheeseFetcher: () =>
+              _ref.read(cheeseRepositoryProvider).getAllEntries(),
+        ),
+      );
+    }
+  }
+}
+
+/// Whether the user has already been shown the Culinary Intelligence opt-in prompt.
+/// Defaults to false. Flipped to true by the prompt regardless of the user's choice.
+final hasSeenIntelligenceOptInProvider =
+    StateNotifierProvider<HasSeenIntelligenceOptInNotifier, bool>((ref) {
+  return HasSeenIntelligenceOptInNotifier();
+});
+
+class HasSeenIntelligenceOptInNotifier extends StateNotifier<bool> {
+  static const _key = 'has_seen_intelligence_opt_in';
+
+  HasSeenIntelligenceOptInNotifier() : super(false) {
+    _loadPreference();
+  }
+
+  Future<void> _loadPreference() async {
+    final prefs = await SharedPreferences.getInstance();
+    state = prefs.getBool(_key) ?? false;
+  }
+
+  Future<void> markSeen() async {
+    state = true;
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setBool(_key, true);
+  }
+}
+
+/// Whether the user has enough engagement to be shown the intelligence opt-in prompt.
+///
+/// Evaluates: `recipeCount >= 3 || madeCount >= 1 || favouriteCount >= 2`.
+/// Only personal recipes and all cooking logs / recipe favourites are counted.
+/// This is a one-shot read - it is not reactive to later DB changes.
+final intelligencePromptEligibilityProvider = FutureProvider<bool>((ref) async {
+  final db = ref.read(databaseProvider);
+  final recipeCount = (await db.recipeDao.getPersonalRecipes()).length;
+  final madeCount = (await db.cookingLogDao.getStats()).length;
+  final favouriteCount = (await db.recipeDao.getFavouriteRecipes()).length;
+  return recipeCount >= 3 || madeCount >= 1 || favouriteCount >= 2;
+});
+
 class SettingsScreen extends ConsumerWidget {
   const SettingsScreen({super.key});
 
@@ -319,43 +615,89 @@ class SettingsScreen extends ConsumerWidget {
           ListTile(
             leading: const Icon(Icons.file_upload),
             title: const Text('Import Recipes'),
-            subtitle: const Text('Load recipes from a JSON file'),
+            subtitle: const Text('Import backups or exports from other apps'),
             trailing: const Icon(Icons.chevron_right),
             onTap: () async {
               try {
                 final service = ref.read(recipeBackupServiceProvider);
-                final count = await service.importRecipes();
-                if (count > 0) {
-                  MemoixSnackBar.showSuccess('Imported $count recipe${count == 1 ? '' : 's'}');
-                } else {
-                  MemoixSnackBar.show('No recipes imported');
+                final outcome = await service.importRecipes();
+                switch (outcome) {
+                  case ImportCancelled():
+                    return;
+                  case ImportCompleted(:final imported):
+                    if (imported > 0) {
+                      MemoixSnackBar.showSuccess(
+                        'Imported $imported recipe${imported == 1 ? '' : 's'}',
+                      );
+                    } else {
+                      MemoixSnackBar.show('No recipes imported');
+                    }
+                  case ImportNeedsReview(:final recipes, :final parseSkipped, :final failures, :final fileBytes, :final detectedParserName):
+                    if (!context.mounted) return;
+                    final result = await Navigator.push<(int, int)>(
+                      context,
+                      MaterialPageRoute(
+                        builder: (_) => ExternalImportReviewScreen(
+                          recipes: recipes,
+                          parseSkipped: parseSkipped,
+                          failures: failures,
+                          fileBytes: fileBytes,
+                          detectedParserName: detectedParserName,
+                        ),
+                      ),
+                    );
+                    if (result == null) return; // user dismissed
+                    final (imported, fixedCount) = result;
+                    if (imported > 0 || fixedCount > 0) {
+                      final skipNote = parseSkipped > 0
+                          ? ' ($parseSkipped skipped)'
+                          : '';
+                      final fixNote = fixedCount > 0
+                          ? ' ($fixedCount corrected manually)'
+                          : '';
+                      MemoixSnackBar.showSuccess(
+                        'Imported $imported '
+                        'recipe${imported == 1 ? '' : 's'}$skipNote$fixNote',
+                      );
+                    } else {
+                      MemoixSnackBar.show('No recipes imported');
+                    }
                 }
               } catch (e) {
                 MemoixSnackBar.showError('Import failed: $e');
               }
             },
           ),
-          // Import recipes from folder (advanced, includes all cuisines and metadata)
-          ListTile(
-            leading: const Icon(Icons.folder_open),
-            title: const Text('Import from Folder'),
-            subtitle: const Text('Restore all cuisines from folder'),
-            trailing: const Icon(Icons.chevron_right),
-            onTap: () async {
-              try {
-                final service = ref.read(recipeBackupServiceProvider);
-                final results = await service.importFromFolder();
-                if (results.isNotEmpty) {
-                  final total = results.values.fold(0, (a, b) => a + b);
-                  final cuisines = results.keys.join(', ');
-                  MemoixSnackBar.showSuccess('Imported $total items from: $cuisines');
-                } else {
-                  MemoixSnackBar.show('No items imported');
-                }
-              } catch (e) {
-                MemoixSnackBar.showError('Import failed: $e');
-              }
-            },
+          SwitchListTile(
+            secondary: const Icon(Icons.tune),
+            title: const Text('Contribute Recipes'),
+            subtitle: const Text(
+              'Help build a culinary dataset from real, tested recipes.\n'
+              'No account, no tracking - your recipe content only.',
+            ),
+            value: ref.watch(contributeToIntelligenceProvider),
+            onChanged: (_) =>
+                ref.read(contributeToIntelligenceProvider.notifier).toggle(),
+          ),
+          Align(
+            alignment: Alignment.centerLeft,
+            child: Padding(
+              padding: const EdgeInsets.only(left: 53),
+              child: TextButton(
+                style: TextButton.styleFrom(
+                  padding: EdgeInsets.zero,
+                  minimumSize: Size.zero,
+                  tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                ),
+                onPressed: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (_) => const ContributeRecipesInfoScreen(),
+                  ),
+                ),
+                child: const Text('Learn more'),
+              ),
+            ),
           ),
 
           const Divider(),

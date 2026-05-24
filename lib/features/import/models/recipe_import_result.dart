@@ -528,12 +528,13 @@ class RecipeImportResult {
       stepImages: jsonEncode(stepImgs),
       stepImageMap: '[]',
       imageUrl: null,
-      isFavorite: false,
+      isFavourite: false,
       cookCount: 0,
       source: SmokingSource.imported.name,
       pairedRecipeIds: '[]',
       createdAt: now,
       updatedAt: now,
+      isShared: true,
     );
   }
 
@@ -612,12 +613,13 @@ class RecipeImportResult {
       stepImages: jsonEncode(stepImgs),
       stepImageMap: '[]',
       imageUrl: null,
-      isFavorite: false,
+      isFavourite: false,
       cookCount: 0,
       source: SmokingSource.imported.name,
       pairedRecipeIds: '[]',
       createdAt: now,
       updatedAt: now,
+      isShared: true,
     );
   }
 
@@ -718,13 +720,14 @@ class RecipeImportResult {
       notes: comments,
       imageUrl: imageUrl,
       source: PizzaSource.imported.name,
-      isFavorite: false,
+      isFavourite: false,
       cookCount: 0,
       rating: 0,
       tags: '[]',
       createdAt: now,
       updatedAt: now,
       version: 1,
+      isShared: true,
     );
   }
   RecipeImportResult copyWith({

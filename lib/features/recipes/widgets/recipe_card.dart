@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../models/recipe.dart';
@@ -200,10 +201,10 @@ class _RecipeCardState extends ConsumerState<RecipeCard> {
                 // Favorite button
                 IconButton(
                   icon: Icon(
-                    widget.recipe.isFavorite ? Icons.favorite : Icons.favorite_border,
+                    widget.recipe.isFavourite ? Icons.favorite : Icons.favorite_border,
                     size: 20,
                   ),
-                  color: widget.recipe.isFavorite 
+                  color: widget.recipe.isFavourite 
                       ? theme.colorScheme.secondary 
                       : theme.colorScheme.onSurfaceVariant,
                   onPressed: () async {
@@ -231,14 +232,7 @@ class _RecipeCardState extends ConsumerState<RecipeCard> {
                   ),
                   color: theme.colorScheme.onSurfaceVariant,
                   onPressed: () {
-                    ref.read(cookingStatsServiceProvider).logCook(
-                      recipeId: widget.recipe.uuid,
-                      recipeName: widget.recipe.name,
-                      course: widget.recipe.course,
-                      cuisine: widget.recipe.course?.toLowerCase() == 'drinks'
-                          ? widget.recipe.subcategory
-                          : widget.recipe.cuisine,
-                    );
+                    unawaited(ref.read(recipeRepositoryProvider).logCookForRecipe(widget.recipe));
                     MemoixSnackBar.showLoggedCook(
                       recipeName: widget.recipe.name,
                       onViewStats: () => AppRoutes.toStatistics(context),
@@ -266,13 +260,13 @@ class _RecipeCardState extends ConsumerState<RecipeCard> {
   /// Check if this recipe is a drink/cocktail
   bool _isDrink() {
     final course = widget.recipe.course.toLowerCase();
-    return course == 'drinks' || course == 'drink' || course == 'beverages';
+    return course == 'drinks';
   }
 
   /// Check if this recipe is a pickle/preserve
   bool _isPickles() {
     final course = widget.recipe.course.toLowerCase();
-    return course == 'pickles' || course == 'pickle' || course == 'preserves';
+    return course == 'pickles';
   }
 
   /// Display drink info: spirit name + optional cuisine origin

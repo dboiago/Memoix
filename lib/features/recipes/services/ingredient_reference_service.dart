@@ -1,27 +1,15 @@
 /// Service that fetches AI-generated reference data for a single ingredient.
 ///
-/// Reuses the existing [ClaudeClient] / [OpenAiClient] / [GeminiClient]
-/// pipeline and follows the same error-handling pattern as [MemoixAiService].
-///
-/// This service is stateless — caching lives in the Riverpod provider layer.
-import 'dart:async';
+/// Delegates provider dispatch, key management, and error classification to
+/// [AiService] — caching lives in the Riverpod provider layer.
 import 'dart:convert';
-import 'dart:io';
 
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../ai/ai_settings.dart';
-import '../../ai/ai_settings_provider.dart';
-import '../../ai/ai_provider_config.dart';
-import '../../ai/services/ai_key_storage.dart';
-import '../../import/ai/ai_provider.dart';
-import '../../import/ai/claude_client.dart';
-import '../../import/ai/gemini_client.dart';
-import '../../import/ai/openai_client.dart';
+import '../../ai/models/ai_response.dart';
+import '../../ai/services/ai_service.dart';
+import '../../ai/services/memoix_ai_service.dart';
 import '../models/ingredient_reference.dart';
-
-/// Timeout for a single ingredient reference request.
-const _requestTimeout = Duration(seconds: 30);
 
 /// System prompt sent to the AI for ingredient reference lookups.
 const _systemPrompt = '''
@@ -80,11 +68,11 @@ class IngredientReferenceResult {
 ///
 /// Does NOT cache — that responsibility belongs to the provider layer.
 class IngredientReferenceService {
-  final AiSettings _settings;
+  final AiService _aiService;
 
-  IngredientReferenceService(this._settings);
+  IngredientReferenceService(this._aiService);
 
-  /// Build the user message for the AI request.
+  /// Build the user-facing text sent to the AI.
   static String _buildUserMessage({
     required String ingredientName,
     String? category,
@@ -109,151 +97,33 @@ class IngredientReferenceService {
     String? category,
     String? cuisine,
   }) async {
-    final active = _settings.activeProviders;
-    if (active.isEmpty) {
-      return const IngredientReferenceResult.error(
-        'No AI providers are enabled. Enable one in Settings.',
-      );
-    }
-
-    // Select provider — text-only, so prefer OpenAI > Claude > Gemini
-    final provider = _selectProvider(active);
-
-    final apiKey = await AiKeyStorage.getToken(provider);
-    if (apiKey == null || apiKey.isEmpty) {
-      return IngredientReferenceResult.error(
-        'No API key set for ${_providerLabel(provider)}.',
-      );
-    }
-
     final userMessage = _buildUserMessage(
       ingredientName: ingredientName,
       category: category,
       cuisine: cuisine,
     );
 
+    final response = await _aiService.sendMessage(AiRequest(
+      text: userMessage,
+      systemPrompt: _systemPrompt,
+      temperature: 0.2,
+    ));
+
+    if (!response.isSuccess) {
+      return IngredientReferenceResult.error(
+        response.errorMessage,
+        rawError: response.rawError,
+      );
+    }
+
     try {
-      final model = _settings.configFor(provider).effectiveModel;
-      final Map<String, dynamic> json;
-
-      switch (provider) {
-        case AiProvider.openai:
-          json = await OpenAiClient(apiKey, model: model)
-              .analyzeRecipe(
-                systemPrompt: _systemPrompt,
-                text: userMessage,
-                temperature: 0.2,
-              )
-              .timeout(_requestTimeout);
-          break;
-        case AiProvider.claude:
-          json = await ClaudeClient(apiKey, model: model)
-              .analyzeRecipe(
-                systemPrompt: _systemPrompt,
-                text: userMessage,
-                temperature: 0.2,
-              )
-              .timeout(_requestTimeout);
-          break;
-        case AiProvider.gemini:
-          json = await GeminiClient(apiKey, model: model)
-              .analyzeRecipe(
-                systemPrompt: _systemPrompt,
-                text: userMessage,
-                temperature: 0.2,
-              )
-              .timeout(_requestTimeout);
-          break;
-      }
-
-      // Parse the structured result — same try/catch pattern as AI import
-      try {
-        final ref = IngredientReference.fromJson(json);
-        return IngredientReferenceResult.success(ref);
-      } catch (e) {
-        return IngredientReferenceResult.error(
-          'Unable to parse ingredient reference',
-          rawError: jsonEncode(json),
-        );
-      }
-    } on TimeoutException {
-      return const IngredientReferenceResult.error(
-        'Request timed out. Try again.',
-      );
-    } on SocketException {
-      return const IngredientReferenceResult.error(
-        'No internet connection. Check your network.',
-      );
-    } on Exception catch (e) {
-      return _classifyError(e, provider);
-    }
-  }
-
-  /// Text-only request: prefer OpenAI > Claude > Gemini.
-  AiProvider _selectProvider(List<AiProviderConfig> active) {
-    final activeIds = active.map((c) => c.provider).toSet();
-
-    if (!_settings.autoSelectProvider) {
-      final preferred = _settings.preferredProvider;
-      if (preferred != null && activeIds.contains(preferred)) {
-        return preferred;
-      }
-      return active.first.provider;
-    }
-
-    for (final ideal in [
-      AiProvider.openai,
-      AiProvider.claude,
-      AiProvider.gemini,
-    ]) {
-      if (activeIds.contains(ideal)) return ideal;
-    }
-    return active.first.provider;
-  }
-
-  /// Mirror [MemoixAiService._classifyError] — maps raw exceptions to
-  /// user-facing messages with raw detail for clipboard copy.
-  IngredientReferenceResult _classifyError(Exception e, AiProvider provider) {
-    final raw = e.toString();
-    final msg = raw.toLowerCase();
-    final label = _providerLabel(provider);
-    final rawForClipboard = raw.replaceFirst('Exception: ', '');
-
-    if (msg.contains('401') || msg.contains('unauthorized')) {
+      final ref = IngredientReference.fromJson(response.data!);
+      return IngredientReferenceResult.success(ref);
+    } catch (e) {
       return IngredientReferenceResult.error(
-        'Invalid API key for $label. Check Settings.',
-        rawError: rawForClipboard,
+        'Unable to parse ingredient reference',
+        rawError: jsonEncode(response.data!),
       );
-    }
-    if (msg.contains('429') ||
-        msg.contains('rate_limit') ||
-        msg.contains('quota')) {
-      return IngredientReferenceResult.error(
-        '$label is rate-limited. Wait a moment.',
-        rawError: rawForClipboard,
-      );
-    }
-    if (msg.contains('formatexception') || msg.contains('unexpected')) {
-      return IngredientReferenceResult.error(
-        'Unable to fetch ingredient reference',
-        rawError: rawForClipboard,
-      );
-    }
-
-    return IngredientReferenceResult.error(
-      'Unable to fetch ingredient reference',
-      rawError: rawForClipboard,
-    );
-  }
-
-  static String _providerLabel(AiProvider p) {
-    switch (p) {
-      case AiProvider.openai:
-        return 'OpenAI';
-      case AiProvider.claude:
-        return 'Claude';
-      case AiProvider.gemini:
-        return 'Gemini';
     }
   }
 }
@@ -261,6 +131,6 @@ class IngredientReferenceService {
 /// Riverpod provider for the ingredient reference service.
 final ingredientReferenceServiceProvider =
     Provider<IngredientReferenceService>((ref) {
-  final settings = ref.watch(aiSettingsProvider);
-  return IngredientReferenceService(settings);
+  final service = ref.watch(aiServiceProvider);
+  return IngredientReferenceService(service);
 });

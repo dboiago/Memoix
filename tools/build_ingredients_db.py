@@ -27,6 +27,7 @@ import json
 import os
 import re
 import sys
+import re
 
 csv.field_size_limit(sys.maxsize)
 
@@ -827,17 +828,38 @@ OFF_CATEGORY_MAP = [
     ("spirit", "alcohol"),
     ("soda", "pop"),
     ("soft drink", "pop"),
-    ("juice", "juice"),
-    ("coffee", "beverage"),
-    ("tea", "beverage"),
-    ("water", "beverage"),
-    ("beverage", "beverage"),
-    ("drink", "beverage"),
+    ("juice", None),
+    ("coffee", None),
+    ("tea", None),
+    ("water", None),
+    ("beverage", None),
+    ("drink", None),
     ("snack", None),               # Too ambiguous
     ("frozen", None),
     ("canned", None),
 ]
 
+import re
+
+def normalize_name(name: str) -> str:
+    name = name.lower().strip()
+    
+    # Remove quantities and common measurement units
+    name = re.sub(r'\b(\d+|cups?|tbsps?|tsps?|oz|grams?|kg|ml|l|lb|units?|pinch|handful|dash)\b', '', name)
+    
+    # Remove common recipe adjectives (negative lookbehind protects "sun-dried")
+    name = re.sub(r'(?<!-)\b(organic|fresh|diced|chopped|sliced|frozen|dried|cold|pressed|extra|virgin|large|small|minced|ground|whole|crushed|roasted|toasted|raw|cooked|boneless|skinless|thick|thin|finely|roughly|coarsely)\b', '', name)
+    
+    # Proper plural handling
+    name = re.sub(r'ies$', 'y', name)
+    name = re.sub(r'oes$', 'o', name)
+    name = re.sub(r'ses$', 'se', name)
+    name = re.sub(r'(?<![sui])s$', '', name)
+    
+    # Collapse whitespace
+    name = re.sub(r'\s+', ' ', name).strip()
+    
+    return name
 
 def classify_by_name(name: str) -> str | None:
     """Classify by product name using KEYWORD_RULES. Returns category or None."""
@@ -902,6 +924,14 @@ def build_database(file_path: str, generate_meta: bool = False):
                 print(f"  ...processed {i:,} rows ({classified:,} classified, {skipped:,} skipped)")
 
             name = (row.get('product_name', '') or '').lower().strip()
+            if not name or len(name) < 2:
+                skipped += 1
+                continue
+
+            # Normalize the string to deduplicate variations
+            name = normalize_name(name)
+
+            # If normalization stripped the whole string (e.g. it was just "500g"), skip it
             if not name or len(name) < 2:
                 skipped += 1
                 continue

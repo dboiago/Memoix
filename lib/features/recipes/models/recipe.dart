@@ -10,6 +10,7 @@ enum RecipeSource {
   ocr,       // Scanned from photo
   url,       // Imported from URL
   ai,        // Scanned by AI
+  walkin,    // Community recipe sourced from the Memoix RAG corpus
 }
 
 class Recipe {
@@ -92,7 +93,7 @@ class Recipe {
   DateTime updatedAt = DateTime.now();
 
   /// Whether this is a favourite
-  bool isFavorite = false;
+  bool isFavourite = false;
 
   /// User rating (1-5 stars, 0 = unrated)
   int rating = 0;
@@ -140,6 +141,15 @@ class Recipe {
   /// Domain type discriminator: 'standard' | 'modernist' | 'smoking'
   String recipeType = 'standard';
 
+  /// Whether this recipe's data may be contributed to the Culinary Intelligence pipeline.
+  /// Defaults to true per-recipe; the master privacy switch must ALSO be enabled.
+  bool isShared = true;
+
+  /// Stable lineage hash (SHA-256 of name + course + sorted original ingredient names).
+  /// Set on first RAG transmission and frozen thereafter regardless of subsequent edits.
+  /// Null until the first transmission occurs.
+  String? lineageHash;
+
   /// Whether this recipe type supports pairing with other recipes.
   /// Excluded: Pizzas, Sandwiches, Cellar, Cheese (component assemblies or non-recipes)
   bool get supportsPairing {
@@ -167,7 +177,7 @@ class Recipe {
     this.imageUrl,
     this.source = RecipeSource.personal,
     this.colorValue,
-    this.isFavorite = false,
+    this.isFavourite = false,
     this.rating = 0,
     this.cookCount = 0,
     this.lastCookedAt,
@@ -255,7 +265,7 @@ class Recipe {
         orElse: () => RecipeSource.personal,
       )
       ..colorValue = json['colorValue'] as int?
-      ..isFavorite = json['isFavorite'] as bool? ?? false
+      ..isFavourite = (json['isFavourite'] ?? json['isFavorite']) as bool? ?? false
       ..rating = json['rating'] as int? ?? 0
       ..cookCount = json['cookCount'] as int? ?? 0
       ..tags =
@@ -277,6 +287,9 @@ class Recipe {
       ..modernistType = json['modernistType']?.toString()
       ..smokingType = json['smokingType']?.toString()
       ..recipeType = json['recipeType']?.toString() ?? 'standard';
+
+    // isShared defaults true — existing records not exported until master switch is on
+    recipe.isShared = json['isShared'] as bool? ?? true;
 
     if (json['createdAt'] != null) {
       recipe.createdAt = DateTime.parse(json['createdAt'].toString()).toUtc();
@@ -320,7 +333,7 @@ class Recipe {
       'stepImageMap': stepImageMap,
       'source': source.name,
       'colorValue': colorValue,
-      'isFavorite': isFavorite,
+      'isFavourite': isFavourite,
       'rating': rating,
       'cookCount': cookCount,
       'lastCookedAt': lastCookedAt?.toUtc().toIso8601String(),
@@ -332,6 +345,8 @@ class Recipe {
       if (glass != null) 'glass': glass,
       if (garnish.isNotEmpty) 'garnish': garnish,
       if (pickleMethod != null) 'pickleMethod': pickleMethod,
+      'isShared': isShared,
+      'recipeType': recipeType,
     };
   }
 

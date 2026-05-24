@@ -10,6 +10,7 @@ import '../ai_settings_provider.dart';
 import '../models/ai_response.dart';
 import '../../import/ai/ai_provider.dart';
 import '../../import/ai/ai_recipe_importer.dart';
+import '../../import/ai/memoix_client.dart';
 import '../../import/ai/openai_client.dart';
 import '../../import/ai/claude_client.dart';
 import '../../import/ai/gemini_client.dart';
@@ -31,7 +32,16 @@ class MemoixAiService implements AiService {
 
   @override
   Future<AiResponse> sendMessage(AiRequest request) async {
-    final active = _settings.activeProviders;
+    // When useMemoixHosted is true, inject a virtual memoix config so it can
+    // be selected even without a stored key.
+    var active = _settings.activeProviders;
+    if (_settings.useMemoixHosted &&
+        !active.any((c) => c.provider == AiProvider.memoix)) {
+      active = [
+        const AiProviderConfig(provider: AiProvider.memoix, enabled: true),
+        ...active,
+      ];
+    }
 
     // No providers enabled + configured → hard stop
     if (active.isEmpty) {
@@ -44,28 +54,47 @@ class MemoixAiService implements AiService {
     // Resolve which provider to use (respects enabled state)
     final provider = request.provider ?? _selectProvider(request, active);
 
-    // Read key from secure storage
-    final apiKey = await AiKeyStorage.getToken(provider);
-    if (apiKey == null || apiKey.isEmpty) {
-      return AiResponse.error(
-        'No API key set for ${_providerLabel(provider)}. '
-        'Add one in Settings → Agents.',
-        AiErrorType.noToken,
-      );
+    // When useMemoixHosted is true and memoix was selected, skip key lookup —
+    // the hosted endpoint does not require a user-supplied API key.
+    final String apiKey;
+    if (provider == AiProvider.memoix && _settings.useMemoixHosted) {
+      apiKey = '';
+    } else {
+      final storedKey = await AiKeyStorage.getToken(provider);
+      if (storedKey == null || storedKey.isEmpty) {
+        return AiResponse.error(
+          'No API key set for ${_providerLabel(provider)}. '
+          'Add one in Settings → Agents.',
+          AiErrorType.noToken,
+        );
+      }
+      apiKey = storedKey;
     }
 
     try {
-      final systemPrompt = AiRecipeImporter.buildSystemPrompt();
+      final systemPrompt = request.systemPrompt ?? AiRecipeImporter.buildSystemPrompt();
       final model = _settings.configFor(provider).effectiveModel;
 
+      final temperature = request.temperature ?? 0.0;
       final Map<String, dynamic> json;
       switch (provider) {
+        case AiProvider.memoix:
+          json = await MemoixClient(apiKey, model: model)
+              .analyzeRecipe(
+                systemPrompt: systemPrompt,
+                text: request.text,
+                imageBytes: request.imageBytes,
+                temperature: temperature,
+              )
+              .timeout(_requestTimeout);
+          break;
         case AiProvider.openai:
           json = await OpenAiClient(apiKey, model: model)
               .analyzeRecipe(
                 systemPrompt: systemPrompt,
                 text: request.text,
                 imageBytes: request.imageBytes,
+                temperature: temperature,
               )
               .timeout(_requestTimeout);
           break;
@@ -75,6 +104,7 @@ class MemoixAiService implements AiService {
                 systemPrompt: systemPrompt,
                 text: request.text,
                 imageBytes: request.imageBytes,
+                temperature: temperature,
               )
               .timeout(_requestTimeout);
           break;
@@ -84,6 +114,7 @@ class MemoixAiService implements AiService {
                 systemPrompt: systemPrompt,
                 text: request.text,
                 imageBytes: request.imageBytes,
+                temperature: temperature,
               )
               .timeout(_requestTimeout);
           break;
@@ -131,6 +162,10 @@ class MemoixAiService implements AiService {
     }
 
     // ── Auto-select: pick best match from active providers ──
+    // When useMemoixHosted is true, memoix is always tried first.
+    if (_settings.useMemoixHosted && activeIds.contains(AiProvider.memoix)) {
+      return AiProvider.memoix;
+    }
     if (request.imageBytes != null) {
       // Vision: prefer Claude > Gemini > OpenAI
       for (final ideal in [AiProvider.claude, AiProvider.gemini, AiProvider.openai]) {
@@ -262,6 +297,8 @@ class MemoixAiService implements AiService {
 
   static String _providerLabel(AiProvider p) {
     switch (p) {
+      case AiProvider.memoix:
+        return 'Memoix';
       case AiProvider.openai:
         return 'OpenAI';
       case AiProvider.claude:

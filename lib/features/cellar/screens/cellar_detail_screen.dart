@@ -33,7 +33,7 @@ class CellarDetailScreen extends ConsumerWidget {
       data: (entries) {
         final entry = entries.firstWhere(
           (e) => e.uuid == entryId,
-          orElse: () => CellarEntry(id: 0, uuid: '', name: '', buy: false, source: CellarSource.personal.name, isFavorite: false, createdAt: DateTime.now(), updatedAt: DateTime.now(), version: 1),
+          orElse: () => CellarEntry(id: 0, uuid: '', name: '', buy: false, source: CellarSource.personal.name, isFavourite: false, createdAt: DateTime.now(), updatedAt: DateTime.now(), version: 1, isShared: true),
         );
 
         if (entry.name.isEmpty) {
@@ -66,7 +66,7 @@ class _CellarDetailView extends ConsumerWidget {
           MemoixHeader(
             title: entry.name,
             headerImage: showHeaderImages ? entry.imageUrl : null,
-            isFavorite: entry.isFavorite,
+            isFavourite: entry.isFavourite,
             onFavoritePressed: () async {
               await ref.read(cellarRepositoryProvider).toggleFavourite(entry);
               ref.invalidate(allCellarEntriesProvider);
@@ -76,6 +76,11 @@ class _CellarDetailView extends ConsumerWidget {
             onEditPressed: () => AppRoutes.toCellarEdit(context, entryId: entry.uuid),
             onDuplicatePressed: () => _duplicateEntry(context, ref),
             onDeletePressed: () => _confirmDelete(context, ref),
+            isShared: entry.isShared,
+            onToggleSharedPressed: () async {
+              await ref.read(cellarRepositoryProvider).toggleShared(entry);
+              ref.invalidate(allCellarEntriesProvider);
+            },
           ),
           Expanded(
             child: ListView(
@@ -228,11 +233,10 @@ class _CellarDetailView extends ConsumerWidget {
     );
 
     if (confirmed == true) {
+      // Navigate first while context is valid, then delete.
+      Navigator.of(context).pop();
       await ref.read(cellarRepositoryProvider).deleteEntry(entry.id);
-      if (context.mounted) {
-        Navigator.of(context).pop();
-        MemoixSnackBar.show('${entry.name} deleted');
-      }
+      MemoixSnackBar.show('${entry.name} deleted');
     }
   }
 
@@ -252,10 +256,11 @@ class _CellarDetailView extends ConsumerWidget {
       priceRange: entry.priceRange,
       imageUrl: entry.imageUrl,
       source: CellarSource.personal.name,
-      isFavorite: false,
+      isFavourite: false,
       createdAt: now,
       updatedAt: now,
       version: 1,
+      isShared: entry.isShared,
     );
     
     await repo.saveEntry(newEntry);

@@ -282,7 +282,10 @@ class ModernistRecipe {
   List<String> imageUrls = [];
 
   /// Whether this is a favorite
-  bool isFavorite = false;
+  bool isFavourite = false;
+
+  /// Whether this recipe's data may be contributed to the Culinary Intelligence pipeline.
+  bool isShared = true;
 
   /// How many times this has been made
   int cookCount = 0;
@@ -320,7 +323,8 @@ class ModernistRecipe {
     List<String>? stepImageMap,
     String? imageUrl,
     List<String>? imageUrls,
-    bool isFavorite = false,
+    bool isFavourite = false,
+    bool isShared = true,
     int cookCount = 0,
     ModernistSource source = ModernistSource.personal,
     List<String>? pairedRecipeIds,
@@ -345,7 +349,8 @@ class ModernistRecipe {
       ..stepImageMap = stepImageMap ?? []
       ..imageUrl = imageUrl
       ..imageUrls = imageUrls ?? []
-      ..isFavorite = isFavorite
+      ..isFavourite = isFavourite
+      ..isShared = isShared
       ..cookCount = cookCount
       ..source = source
       ..pairedRecipeIds = pairedRecipeIds ?? []
@@ -438,7 +443,7 @@ class ModernistRecipe {
       'stepImageMap': stepImageMap,
       'imageUrl': imageUrl,
       'imageUrls': imageUrls,
-      'isFavorite': isFavorite,
+      'isFavourite': isFavourite,
       'cookCount': cookCount,
       'source': source.name,
       'pairedRecipeIds': pairedRecipeIds,
@@ -484,7 +489,7 @@ class ModernistRecipe {
       ..imageUrls = (json['imageUrls'] as List<dynamic>?)
           ?.map((e) => e.toString())
           .toList() ?? []
-      ..isFavorite = json['isFavorite'] as bool? ?? false
+      ..isFavourite = (json['isFavourite'] ?? json['isFavorite']) as bool? ?? false
       ..cookCount = json['cookCount'] as int? ?? 0
       ..source = ModernistSource.values.firstWhere(
         (e) => e.name == json['source'],

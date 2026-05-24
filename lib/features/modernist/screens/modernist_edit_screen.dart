@@ -57,6 +57,7 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
 
   bool _isLoading = true;
   bool _isSaving = false;
+  bool _isShared = true;
   ModernistRecipe? _existingRecipe;
 
   bool get _isEditing => _existingRecipe != null;
@@ -75,6 +76,7 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
       recipe = await repo.getById(widget.recipeId!);
       if (recipe != null) {
         _existingRecipe = recipe;
+        _isShared = recipe.isShared;
       }
     } else if (widget.importedRecipe != null) {
       recipe = widget.importedRecipe;
@@ -242,6 +244,11 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
       appBar: AppBar(
         title: Text(_isEditing ? 'Edit Recipe' : 'New Recipe'),
         actions: [
+          IconButton(
+            icon: Icon(_isShared ? Icons.visibility : Icons.visibility_off),
+            tooltip: _isShared ? 'Shared' : 'Hidden',
+            onPressed: () => setState(() => _isShared = !_isShared),
+          ),
           TextButton.icon(
             onPressed: _isSaving ? null : _saveRecipe,
             icon: _isSaving
@@ -1715,12 +1722,13 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
       stepImages: jsonEncode(_stepImages),
       stepImageMap: jsonEncode(_stepImageMap.entries.map((e) => '${e.key}:${e.value}').toList()),
       imageUrl: null,
-      isFavorite: false,
+      isFavourite: false,
       cookCount: 0,
       source: SmokingSource.personal.name,
       pairedRecipeIds: jsonEncode(_pairedRecipeIds),
       createdAt: _existingRecipe?.createdAt ?? DateTime.now(),
       updatedAt: DateTime.now(),
+      isShared: true,
     );
   }
 
@@ -1806,6 +1814,7 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
           ..stepImages = _stepImages
           ..stepImageMap = stepImageMapStrings
           ..pairedRecipeIds = _pairedRecipeIds
+          ..isShared = _isShared
           ..updatedAt = DateTime.now();
 
         await repo.save(_existingRecipe!);
@@ -1833,6 +1842,7 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
           stepImages: _stepImages,
           stepImageMap: stepImageMapStrings,
           pairedRecipeIds: _pairedRecipeIds,
+          isShared: _isShared,
         );
       }
 

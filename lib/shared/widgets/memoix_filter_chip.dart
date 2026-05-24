@@ -9,13 +9,13 @@ class MemoixFilterChip extends StatelessWidget {
   final String? value;
 
   final bool isSelected;
-  final ValueChanged<bool> onSelected;
+  final ValueChanged<bool>? onSelected;
 
   const MemoixFilterChip({
     super.key,
     required this.value,
     required this.isSelected,
-    required this.onSelected,
+    this.onSelected,
   });
 
   @override

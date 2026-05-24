@@ -145,8 +145,7 @@
       }
     ],
     "directions": [
-      "Not sure if this is the \"good one\"",
-      "The good one had lemon pepper, so maybe"
+      "NThe \"good ones\" use lemon pepper"
     ],
     "sourceUrl": null,
     "imageUrl": null,
@@ -156,7 +155,7 @@
     "stepImageMap": [],
     "source": "memoix",
     "colorValue": null,
-    "isFavorite": false,
+    "isFavourite": false,
     "rating": 0,
     "cookCount": 0,
     "lastCookedAt": null,
@@ -270,7 +269,7 @@
     ],
     "directions": [
       "Mix everything in a bowl..that's it",
-      "This shit is good, don't leave out rosemary and stuff",
+      "Don't leave out rosemary and stuff",
       "It's also only like 1 tsp of sugar per serving, this make a fair amount"
     ],
     "sourceUrl": null,
@@ -281,7 +280,7 @@
     "stepImageMap": [],
     "source": "memoix",
     "colorValue": null,
-    "isFavorite": false,
+    "isFavourite": false,
     "rating": 0,
     "cookCount": 0,
     "lastCookedAt": null,
@@ -422,7 +421,7 @@
     "stepImageMap": [],
     "source": "memoix",
     "colorValue": null,
-    "isFavorite": false,
+    "isFavourite": false,
     "rating": 0,
     "cookCount": 0,
     "lastCookedAt": null,

@@ -187,7 +187,7 @@ SmokingRecipe smokingRecipeFromJson(Map<String, dynamic> json) {
   String encodeList(dynamic v) =>
       v is List ? jsonEncode(v) : (v as String? ?? '[]');
   return SmokingRecipe(
-    id: (json['id'] as num?)?.toInt() ?? 0,
+    id: 0,
     uuid: json['uuid']?.toString() ?? '',
     name: json['name']?.toString() ?? '',
     course: json['course']?.toString() ?? 'smoking',
@@ -206,7 +206,7 @@ SmokingRecipe smokingRecipeFromJson(Map<String, dynamic> json) {
     stepImages: encodeList(json['stepImages']),
     stepImageMap: encodeList(json['stepImageMap']),
     imageUrl: json['imageUrl']?.toString(),
-    isFavorite: json['isFavorite'] as bool? ?? false,
+    isFavourite: (json['isFavourite'] ?? json['isFavorite']) as bool? ?? false,
     cookCount: (json['cookCount'] as num?)?.toInt() ?? 0,
     source: json['source']?.toString() ?? SmokingSource.personal.name,
     pairedRecipeIds: encodeList(json['pairedRecipeIds']),
@@ -220,6 +220,7 @@ SmokingRecipe smokingRecipeFromJson(Map<String, dynamic> json) {
         : json['updatedAt'] != null
             ? DateTime.parse(json['updatedAt'].toString())
             : DateTime.now(),
+    isShared: json['isShared'] as bool? ?? true,
   );
 }
 
@@ -257,12 +258,13 @@ extension SmokingRecipeX on SmokingRecipe {
         'stepImages': jsonDecode(stepImages),
         'stepImageMap': jsonDecode(stepImageMap),
         'imageUrl': imageUrl,
-        'isFavorite': isFavorite,
+        'isFavourite': isFavourite,
         'cookCount': cookCount,
         'source': source,
         'pairedRecipeIds': jsonDecode(pairedRecipeIds),
         'createdAt': createdAt.toIso8601String(),
         'updatedAt': updatedAt.toIso8601String(),
+        'isShared': isShared,
       };
 
   Map<String, dynamic> toShareableJson() => {

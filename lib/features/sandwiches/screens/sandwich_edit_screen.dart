@@ -40,6 +40,7 @@ class _SandwichEditScreenState extends ConsumerState<SandwichEditScreen> {
   String? _imagePath;
   Sandwich? _existingSandwich;
   bool _isLoading = true;
+  bool _isShared = true;
 
   @override
   void initState() {
@@ -174,6 +175,7 @@ class _SandwichEditScreenState extends ConsumerState<SandwichEditScreen> {
       _breadController.text = sandwich.bread;
       _notesController.text = sandwich.notes ?? '';
       _imagePath = sandwich.imageUrl;
+      _isShared = sandwich.isShared;
 
       // Load proteins
       for (final c in _proteinControllers) {
@@ -234,6 +236,11 @@ class _SandwichEditScreenState extends ConsumerState<SandwichEditScreen> {
       appBar: AppBar(
         title: Text(isEditing ? 'Edit Sandwich' : 'New Sandwich'),
         actions: [
+          IconButton(
+            icon: Icon(_isShared ? Icons.visibility : Icons.visibility_off),
+            tooltip: _isShared ? 'Shared' : 'Hidden',
+            onPressed: () => setState(() => _isShared = !_isShared),
+          ),
           TextButton(
             onPressed: _saveSandwich,
             child: Text(
@@ -790,13 +797,14 @@ class _SandwichEditScreenState extends ConsumerState<SandwichEditScreen> {
       notes: _notesController.text.trim().isEmpty ? null : _notesController.text.trim(),
       imageUrl: _imagePath,
       source: _existingSandwich?.source ?? SandwichSource.personal.name,
-      isFavorite: _existingSandwich?.isFavorite ?? false,
+      isFavourite: _existingSandwich?.isFavourite ?? false,
       cookCount: _existingSandwich?.cookCount ?? 0,
       rating: _existingSandwich?.rating ?? 0,
       tags: _existingSandwich?.tags ?? '[]',
       createdAt: _existingSandwich?.createdAt ?? now,
       updatedAt: now,
       version: _existingSandwich?.version ?? 1,
+      isShared: _isShared,
     );
 
     final repo = ref.read(sandwichRepositoryProvider);

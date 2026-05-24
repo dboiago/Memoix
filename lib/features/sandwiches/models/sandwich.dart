@@ -14,7 +14,7 @@ Sandwich sandwichFromJson(Map<String, dynamic> json) {
   String encodeList(dynamic v) =>
       v is List ? jsonEncode(v) : (v as String? ?? '[]');
   return Sandwich(
-    id: (json['id'] as num?)?.toInt() ?? 0,
+    id: 0,
     uuid: json['uuid']?.toString() ?? '',
     name: json['name']?.toString() ?? '',
     bread: json['bread']?.toString() ?? '',
@@ -25,7 +25,7 @@ Sandwich sandwichFromJson(Map<String, dynamic> json) {
     notes: json['notes']?.toString(),
     imageUrl: json['imageUrl']?.toString(),
     source: json['source']?.toString() ?? SandwichSource.personal.name,
-    isFavorite: json['isFavorite'] as bool? ?? false,
+    isFavourite: (json['isFavourite'] ?? json['isFavorite']) as bool? ?? false,
     cookCount: (json['cookCount'] as num?)?.toInt() ?? 0,
     rating: (json['rating'] as num?)?.toInt() ?? 0,
     tags: encodeList(json['tags']),
@@ -40,6 +40,7 @@ Sandwich sandwichFromJson(Map<String, dynamic> json) {
             ? DateTime.parse(json['updatedAt'].toString())
             : DateTime.now(),
     version: (json['version'] as num?)?.toInt() ?? 1,
+    isShared: json['isShared'] as bool? ?? true,
   );
 }
 
@@ -65,13 +66,14 @@ extension SandwichX on Sandwich {
         'notes': notes,
         'imageUrl': imageUrl,
         'source': source,
-        'isFavorite': isFavorite,
+        'isFavourite': isFavourite,
         'cookCount': cookCount,
         'rating': rating,
         'tags': jsonDecode(tags),
         'createdAt': createdAt.toIso8601String(),
         'updatedAt': updatedAt.toIso8601String(),
         'version': version,
+        'isShared': isShared,
       };
 
   Map<String, dynamic> toShareableJson() => {

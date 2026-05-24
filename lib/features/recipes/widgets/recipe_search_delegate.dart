@@ -5,6 +5,8 @@ import '../../../app/routes/router.dart';
 import '../../../core/services/integrity_service.dart';
 import '../../../core/services/session_index_service.dart';
 import '../../../shared/widgets/memoix_empty_state.dart';
+import '../../../features/rag/services/rag_retrieval_service.dart';
+import '../../settings/screens/settings_screen.dart' show hideMemoixRecipesProvider;
 import '../models/recipe.dart';
 import '../repository/recipe_repository.dart';
 // ignore: unused_import
@@ -58,6 +60,17 @@ class RecipeSearchDelegate extends SearchDelegate<Recipe?> {
 
   @override
   Widget buildSuggestions(BuildContext context) {
+    if (query.trimLeft().startsWith('.')) {
+      if (ref.read(memoixAvailableProvider)) {
+        final stripped = query.trimLeft().substring(1);
+        WidgetsBinding.instance.addPostFrameCallback((_) {
+          close(context, null);
+          AppRoutes.toOmnibar(context, stripped);
+        });
+        return const SizedBox.shrink();
+      }
+    }
+
     // Check once when delegate opens for transition override
     if (!_hasCheckedForEffect) {
       _hasCheckedForEffect = true;
@@ -183,7 +196,7 @@ class RecipeSearchDelegate extends SearchDelegate<Recipe?> {
                             .whereType<String>()
                             .join(' • '),
                       ),
-                      trailing: recipe.isFavorite
+                      trailing: recipe.isFavourite
                           ? Icon(Icons.favorite,
                               color: theme.colorScheme.secondary, size: 20,)
                           : null,
@@ -225,7 +238,11 @@ class RecipeSearchDelegate extends SearchDelegate<Recipe?> {
           return Center(child: Text('Error: ${snapshot.error}'));
         }
 
-        final recipes = snapshot.data ?? [];
+        final allRecipes = snapshot.data ?? [];
+        final hideMemoix = ref.read(hideMemoixRecipesProvider);
+        final recipes = hideMemoix
+            ? allRecipes.where((r) => r.source != RecipeSource.memoix).toList()
+            : allRecipes;
 
         // Report search event after build phase completes to avoid
         // state mutations during build and prevent duplicate events
@@ -257,7 +274,7 @@ class RecipeSearchDelegate extends SearchDelegate<Recipe?> {
               subtitle: Text(
                 [recipe.cuisine, recipe.course].whereType<String>().join(' • '),
               ),
-              trailing: recipe.isFavorite
+              trailing: recipe.isFavourite
                   ? Icon(Icons.favorite,
                       color: Theme.of(context).colorScheme.secondary, size: 20,)
                   : null,

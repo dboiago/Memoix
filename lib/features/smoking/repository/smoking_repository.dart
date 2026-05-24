@@ -8,6 +8,7 @@ import 'package:uuid/uuid.dart';
 import '../../../core/database/app_database.dart';
 import '../../../core/providers.dart';
 import '../../../core/services/integrity_service.dart';
+import '../../../core/services/rag_telemetry_service.dart';
 import '../../../core/services/supabase_sync_service.dart';
 import '../../../core/utils/unit_normalizer.dart';
 import '../../personal_storage/services/personal_storage_service.dart';
@@ -89,7 +90,7 @@ class SmokingRepository {
       stepImages: Value(recipe.stepImages),
       stepImageMap: Value(recipe.stepImageMap),
       imageUrl: Value(recipe.imageUrl),
-      isFavorite: Value(recipe.isFavorite),
+      isFavourite: Value(recipe.isFavourite),
       cookCount: Value(recipe.cookCount),
       source: Value(recipe.source),
       pairedRecipeIds: Value(recipe.pairedRecipeIds),
@@ -97,6 +98,8 @@ class SmokingRepository {
       updatedAt: Value(preserveTimestamp ? recipe.updatedAt : DateTime.now()),
     ),);
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
+    // Fire-and-forget: queue for Culinary Intelligence export.
+    unawaited(_ref.read(ragTelemetryServiceProvider).queueSmokingForExport(recipe));
   }
 
   List<SmokingSeasoning> _normalizeSeasoningUnits(List<SmokingSeasoning> items) {
@@ -118,15 +121,25 @@ class SmokingRepository {
   Future<void> deleteRecipeByUuid(String uuid, {bool fromMerge = false}) async {
     final recipe = await getRecipeByUuid(uuid);
     if (recipe != null) {
+      if (!fromMerge) {
+        await SupabaseSyncService.queueDeletion('smoking_recipes', uuid);
+      }
       await deleteRecipe(recipe, fromMerge: fromMerge);
       unawaited(SupabaseSyncService.notifyDeleted('smoking_recipes', uuid));
     }
   }
 
+  /// Toggle the Culinary Intelligence sharing flag.
+  Future<void> toggleShared(SmokingRecipe recipe) async {
+    await (_db.update(_db.smokingRecipes)..where((t) => t.id.equals(recipe.id)))
+        .write(SmokingRecipesCompanion(isShared: Value(!recipe.isShared)));
+    _ref.read(personalStorageServiceProvider).onRecipeChanged();
+  }
+
   /// Toggle favourite status
   Future<void> toggleFavourite(SmokingRecipe recipe) async {
-    final wasFavorited = recipe.isFavorite;
-    await _db.smokingDao.toggleFavourite(recipe.id, recipe.isFavorite);
+    final wasFavorited = recipe.isFavourite;
+    await _db.smokingDao.toggleFavourite(recipe.id, recipe.isFavourite);
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
     await IntegrityService.reportEvent(
       'activity.recipe_favourited',
@@ -135,6 +148,8 @@ class SmokingRepository {
         'is_adding': !wasFavorited,
       },
     );
+    // Fire-and-forget: queue updated favourite state for Culinary Intelligence export.
+    unawaited(_ref.read(ragTelemetryServiceProvider).queueSmokingForExport(recipe.copyWith(isFavourite: !wasFavorited)));
   }
 
   /// Increment cook count
@@ -149,6 +164,8 @@ class SmokingRepository {
       course: 'smoking',
       cuisine: recipe.category,
     );
+    // Fire-and-forget: queue for Culinary Intelligence export.
+    unawaited(_ref.read(ragTelemetryServiceProvider).queueSmokingForExport(recipe));
   }
 
   /// Watch all recipes

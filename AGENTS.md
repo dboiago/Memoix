@@ -46,6 +46,13 @@ These rules apply to ALL code. Violations will require rework.
 | **NO BACKGROUND AI** | Do not trigger AI calls implicitly, via background tasks, or on app lifecycle events. |
 | **FAIL CLEANLY** | Handle all API errors, rate limits, and missing keys gracefully without blocking core offline functionality. |
 
+### 1.5 Specialized Domain Consistency
+
+| Rule | Details |
+|------|---------|
+| **UNIFORM SCOPING** | **Modernist, Smoking, Pizza, Sandwiches, Cheese, and Cellar** must always be treated identically to standard recipes unless explicitly told otherwise. |
+| **BUG DEFINITION** | Never scope a change to "recipes" without confirming it covers all specialized domains. If a specialized domain path is missing from a change, that is a bug, not a deliberate omission. |
+
 ---
 
 ## 2. CORE PHILOSOPHY
@@ -129,7 +136,8 @@ Pairings use **parent-side storage only**.
 
 ### 6.2 Domain Schema Types
 * **Type A (Standard):** Mains, Desserts, Drinks, Baking, Modernist, Smoking (Uses Directions List).
-* **Type B (Component):** Pizzas, Sandwiches, Charcuterie (Uses Base + Components + Sub-recipes).
+* **Type B (Component):** Pizzas, Sandwiches (Uses Base + Components + Sub-recipes).
+* **Type C (Log):** Cheese, Cellar (Uses descriptive attributes and logs)
 
 ---
 

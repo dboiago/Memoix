@@ -96,7 +96,7 @@ class _PizzaDetailViewState extends ConsumerState<_PizzaDetailView> {
           // 1. THE RICH HEADER - Fixed at top, does not scroll
           MemoixHeader(
             title: pizza.name,
-            isFavorite: pizza.isFavorite,
+            isFavourite: pizza.isFavourite,
             headerImage: hasHeaderImage ? pizza.imageUrl : null,
             onFavoritePressed: () async {
               await ref.read(pizzaRepositoryProvider).toggleFavourite(pizza);
@@ -108,6 +108,11 @@ class _PizzaDetailViewState extends ConsumerState<_PizzaDetailView> {
             onEditPressed: () => _handleMenuAction(context, ref, pizza, 'edit'),
             onDuplicatePressed: () => _handleMenuAction(context, ref, pizza, 'duplicate'),
             onDeletePressed: () => _handleMenuAction(context, ref, pizza, 'delete'),
+            isShared: pizza.isShared,
+            onToggleSharedPressed: () async {
+              await ref.read(pizzaRepositoryProvider).toggleShared(pizza);
+              ref.invalidate(allPizzasProvider);
+            },
           ),
 
           // 2. THE CONTENT - Scrollable, sits below header
@@ -217,7 +222,7 @@ class _PizzaDetailViewState extends ConsumerState<_PizzaDetailView> {
           // 1. THE RICH HEADER - Fixed at top, does not scroll
           MemoixHeader(
             title: pizza.name,
-            isFavorite: pizza.isFavorite,
+            isFavourite: pizza.isFavourite,
             headerImage: hasHeaderImage ? pizza.imageUrl : null,
             onFavoritePressed: () async {
               await ref.read(pizzaRepositoryProvider).toggleFavourite(pizza);
@@ -229,6 +234,11 @@ class _PizzaDetailViewState extends ConsumerState<_PizzaDetailView> {
             onEditPressed: () => _handleMenuAction(context, ref, pizza, 'edit'),
             onDuplicatePressed: () => _handleMenuAction(context, ref, pizza, 'duplicate'),
             onDeletePressed: () => _handleMenuAction(context, ref, pizza, 'delete'),
+            isShared: pizza.isShared,
+            onToggleSharedPressed: () async {
+              await ref.read(pizzaRepositoryProvider).toggleShared(pizza);
+              ref.invalidate(allPizzasProvider);
+            },
           ),
 
           // 2. THE CONTENT - Scrollable
@@ -311,8 +321,8 @@ class _PizzaDetailViewState extends ConsumerState<_PizzaDetailView> {
     return [
       IconButton(
         icon: Icon(
-          pizza.isFavorite ? Icons.favorite : Icons.favorite_border,
-          color: pizza.isFavorite ? theme.colorScheme.secondary : null,
+          pizza.isFavourite ? Icons.favorite : Icons.favorite_border,
+          color: pizza.isFavourite ? theme.colorScheme.secondary : null,
         ),
         onPressed: () async {
           await ref.read(pizzaRepositoryProvider).toggleFavourite(pizza);
@@ -383,11 +393,10 @@ class _PizzaDetailViewState extends ConsumerState<_PizzaDetailView> {
         );
 
         if (confirmed == true) {
+          // Navigate first while context is valid, then delete.
+          Navigator.of(context).pop();
           await ref.read(pizzaRepositoryProvider).deletePizza(pizza.id);
-          if (context.mounted) {
-            Navigator.of(context).pop();
-            MemoixSnackBar.show('${pizza.name} deleted');
-          }
+          MemoixSnackBar.show('${pizza.name} deleted');
         }
         break;
     }

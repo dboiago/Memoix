@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
 
@@ -12,12 +13,16 @@ import '../../../core/database/app_database.dart'
     hide Recipe, Ingredient, Course;
 import '../../../core/database/app_database.dart' as db
     show Recipe, Ingredient, Course;
+import '../../../data/drift/daos/recipe_dao.dart' show RecipeSearchResult;
+import '../../../core/services/supabase_sync_service.dart';
 import '../../../core/providers.dart';
 import '../../../core/services/integrity_service.dart';
+import '../../../core/services/rag_telemetry_service.dart';
 import '../../../core/utils/suggestions.dart';
 import '../../../core/utils/unit_normalizer.dart';
 import '../../personal_storage/services/personal_storage_service.dart';
 import '../../personal_storage/services/tombstone_store.dart';
+import '../../statistics/models/cooking_stats.dart';
 import '../models/course.dart';
 import '../models/cuisine.dart';
 import '../models/recipe.dart';
@@ -58,7 +63,7 @@ typedef _RecipeRaw = ({
   int? colorValue,
   DateTime createdAt,
   DateTime updatedAt,
-  bool isFavorite,
+  bool isFavourite,
   int rating,
   int cookCount,
   int editCount,
@@ -73,6 +78,9 @@ typedef _RecipeRaw = ({
   String? glass,
   String garnish,
   String? pickleMethod,
+  bool isShared,
+  String? lineageHash,
+  String recipeType,
 });
 
 /// Single ingredient row as a primitive record (no JSON columns).
@@ -116,7 +124,7 @@ typedef _RecipeDecoded = ({
   int? colorValue,
   DateTime createdAt,
   DateTime updatedAt,
-  bool isFavorite,
+  bool isFavourite,
   int rating,
   int cookCount,
   int editCount,
@@ -131,6 +139,9 @@ typedef _RecipeDecoded = ({
   String? glass,
   List<String> garnish,
   String? pickleMethod,
+  bool isShared,
+  String? lineageHash,
+  String recipeType,
   List<_IngRaw> ingredients,
 });
 
@@ -161,7 +172,7 @@ _RecipeRaw _toRecipeRaw(db.Recipe r) => (
       colorValue: r.colorValue,
       createdAt: r.createdAt,
       updatedAt: r.updatedAt,
-      isFavorite: r.isFavorite,
+      isFavourite: r.isFavourite,
       rating: r.rating,
       cookCount: r.cookCount,
       editCount: r.editCount,
@@ -176,6 +187,9 @@ _RecipeRaw _toRecipeRaw(db.Recipe r) => (
       glass: r.glass,
       garnish: r.garnish,
       pickleMethod: r.pickleMethod,
+      isShared: r.isShared,
+      lineageHash: r.lineageHash,
+      recipeType: r.recipeType,
     );
 
 /// Converts a Drift [db.Ingredient] row to an [_IngRaw] record.
@@ -280,7 +294,7 @@ List<_RecipeDecoded> _batchDecodeRecipes(
         colorValue: r.colorValue,
         createdAt: r.createdAt,
         updatedAt: r.updatedAt,
-        isFavorite: r.isFavorite,
+        isFavourite: r.isFavourite,
         rating: r.rating,
         cookCount: r.cookCount,
         editCount: r.editCount,
@@ -297,6 +311,9 @@ List<_RecipeDecoded> _batchDecodeRecipes(
         glass: r.glass,
         garnish: (jsonDecode(r.garnish) as List).cast<String>(),
         pickleMethod: r.pickleMethod,
+        isShared: r.isShared,
+        lineageHash: r.lineageHash,
+        recipeType: r.recipeType,
         ingredients: ings,
       ),);
     } catch (_) {
@@ -342,7 +359,7 @@ class RecipeRepository {
       colorValue: Value(recipe.colorValue),
       createdAt: Value(recipe.createdAt),
       updatedAt: Value(recipe.updatedAt),
-      isFavorite: Value(recipe.isFavorite),
+      isFavourite: Value(recipe.isFavourite),
       rating: Value(recipe.rating),
       cookCount: Value(recipe.cookCount),
       editCount: Value(recipe.editCount),
@@ -357,6 +374,8 @@ class RecipeRepository {
       glass: Value(recipe.glass),
       garnish: Value(jsonEncode(recipe.garnish)),
       pickleMethod: Value(recipe.pickleMethod),
+      isShared: Value(recipe.isShared),
+      lineageHash: Value(recipe.lineageHash),
       recipeType: const Value('standard'),
       technique: const Value(null),
       difficulty: const Value(null),
@@ -381,6 +400,16 @@ class RecipeRepository {
               bakerPercent: Value(i.bakerPercent),
             ),)
         .toList();
+  }
+
+  /// Persists a lineage hash for the given recipe row by id.
+  ///
+  /// Called at most once per recipe — only when [Recipe.lineageHash] is null
+  /// at the point of first RAG transmission. Uses a targeted single-column
+  /// update to avoid touching any other recipe field.
+  Future<void> updateLineageHash(int recipeId, String hash) async {
+    await (_db.update(_db.recipes)..where((r) => r.id.equals(recipeId)))
+        .write(RecipesCompanion(lineageHash: Value(hash)));
   }
 
   Future<Recipe> _toDomainRecipe(db.Recipe r, List<db.Ingredient> ings) async {
@@ -411,7 +440,7 @@ class RecipeRepository {
       ..colorValue = r.colorValue
       ..createdAt = r.createdAt
       ..updatedAt = r.updatedAt
-      ..isFavorite = r.isFavorite
+      ..isFavourite = r.isFavourite
       ..rating = r.rating
       ..cookCount = r.cookCount
       ..editCount = r.editCount
@@ -428,6 +457,9 @@ class RecipeRepository {
       ..glass = r.glass
       ..garnish = (jsonDecode(r.garnish) as List).cast<String>()
       ..pickleMethod = r.pickleMethod
+      ..isShared = r.isShared
+      ..lineageHash = r.lineageHash
+      ..recipeType = r.recipeType
       ..ingredients = ings
           .map((i) => Ingredient()
             ..uuid = i.uuid
@@ -568,7 +600,7 @@ class RecipeRepository {
           ..colorValue = d.colorValue
           ..createdAt = d.createdAt
           ..updatedAt = d.updatedAt
-          ..isFavorite = d.isFavorite
+          ..isFavourite = d.isFavourite
           ..rating = d.rating
           ..cookCount = d.cookCount
           ..editCount = d.editCount
@@ -585,6 +617,9 @@ class RecipeRepository {
           ..glass = d.glass
           ..garnish = d.garnish
           ..pickleMethod = d.pickleMethod
+          ..isShared = d.isShared
+          ..lineageHash = d.lineageHash
+          ..recipeType = d.recipeType
           ..ingredients = d.ingredients
               .map((i) => Ingredient()
                 ..uuid = i.uuid
@@ -737,8 +772,23 @@ class RecipeRepository {
       return getAllRecipes();
     }
 
-    final rows = await _db.recipeDao.searchRecipes(query);
-    final results = await _loadRecipesFrom(rows);
+    // DAO now returns a lightweight projection — build lean Recipe objects
+    // without fetching ingredients (search tiles only render name/cuisine/
+    // course/isFavourite/uuid).
+    final searchResults = await _db.recipeDao.searchRecipes(query);
+    final results = searchResults.map((r) {
+      final recipe = Recipe()
+        ..id = r.id
+        ..uuid = r.uuid
+        ..name = r.name
+        ..course = r.course
+        ..cuisine = r.cuisine
+        ..isFavourite = r.isFavourite
+        ..source = RecipeSource.values.firstWhere(
+              (s) => s.name == r.source,
+              orElse: () => RecipeSource.personal,);
+      return recipe;
+    }).toList();
 
     if (courseFilter != null && courseFilter.isNotEmpty) {
       return results
@@ -763,20 +813,29 @@ class RecipeRepository {
     return _toDomainRecipe(row, ings);
   }
 
-  Future<int> saveRecipe(Recipe recipe, {bool preserveTimestamp = false}) async {
+  Future<int> saveRecipe(Recipe recipe, {bool preserveTimestamp = false, bool preserveSource = false}) async {
     try {
       if (recipe.uuid.isEmpty) recipe.uuid = _uuid.v4();
     } catch (_) {
       recipe.uuid = _uuid.v4();
     }
 
-    // Copy-on-write: when a user saves edits to a Memoix default recipe,
-    // transfer ownership to 'personal' before persisting. The UUID is kept
-    // intact so pairings and meal-plan references continue to resolve.
-    // The seed layer will not re-insert this UUID on the next startup because
-    // the row already exists (with source = 'personal').
-    if (recipe.source == RecipeSource.memoix) {
-      recipe.source = RecipeSource.personal;
+    // Copy-on-write: promotes memoix and walkin recipes to 'personal' when a
+    // user saves edits. The UUID is kept intact so pairings and meal-plan
+    // references continue to resolve. The seed layer will not re-insert this
+    // UUID on the next startup because the row already exists.
+    //
+    // Walkin lifecycle:
+    //   First save (id == 0)     → source stays walkin; recipe receives a real DB id.
+    //   Subsequent edit (id > 0) → source promoted to personal (same as memoix).
+    //
+    // preserveSource = true bypasses all promotion. Used by the backup restore
+    // path so the source recorded in the backup is written verbatim.
+    if (!preserveSource) {
+      if (recipe.source == RecipeSource.memoix ||
+          (recipe.source == RecipeSource.walkin && recipe.id > 0)) {
+        recipe.source = RecipeSource.personal;
+      }
     }
 
     if (!preserveTimestamp) recipe.updatedAt = DateTime.now();
@@ -799,6 +858,17 @@ class RecipeRepository {
       }
     }
 
+    // Preserve the isShared flag for existing recipes.
+    // This field is exclusively controlled via toggleShared(); UI forms and
+    // import pipelines default Recipe objects to isShared = true, which would
+    // silently overwrite a user's 'Hidden' preference on every save.
+    if (recipe.id > 0) {
+      final existingRow = await _db.recipeDao.getRecipeByUuid(recipe.uuid);
+      if (existingRow != null) {
+        recipe.isShared = existingRow.isShared;
+      }
+    }
+
     // Replace absolute image paths with basenames before persisting.
     // Collect the originals so blobs can be written after we have a recipeId.
     final fileNameToPath = <String, String>{};
@@ -811,6 +881,7 @@ class RecipeRepository {
     await _db.recipeDao
         .saveIngredients(_toIngredientCompanions(recipeId, recipe.ingredients));
     if (recipeId > 0) await _db.recipeDao.touchRecipe(recipeId);
+    if (recipeId > 0) await _db.recipeDao.upsertRecipeFts(recipeId);
 
     // Persist image blobs for any new local files.
     if (recipeId > 0 && fileNameToPath.isNotEmpty) {
@@ -818,6 +889,9 @@ class RecipeRepository {
     }
 
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
+    // Fire-and-forget: queue the saved recipe for Culinary Intelligence export.
+    // The service enforces both privacy gates; this call never blocks the UI.
+    unawaited(_ref.read(ragTelemetryServiceProvider).queueForExport(recipe));
     return recipeId;
   }
 
@@ -853,6 +927,11 @@ class RecipeRepository {
     };
     await _db.recipeDao.replaceIngredientsForRecipesBatch(ingredientMap);
 
+    // Update the FTS index for every recipe that was saved.
+    for (final id in idByUuid.values) {
+      await _db.recipeDao.upsertRecipeFts(id);
+    }
+
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
   }
 
@@ -861,6 +940,7 @@ class RecipeRepository {
       final row = await _db.recipeDao.getRecipeById(id);
       if (row != null) {
         await TombstoneStore.add(TombstoneDomain.recipes, row.uuid);
+        await SupabaseSyncService.queueDeletion('recipes', row.uuid);
       }
     }
     await _db.recipeDao.deleteRecipe(id);
@@ -875,6 +955,7 @@ class RecipeRepository {
     if (row == null) return false;
     if (!fromMerge) {
       await TombstoneStore.add(TombstoneDomain.recipes, uuid);
+      await SupabaseSyncService.queueDeletion('recipes', uuid);
     }
     await _db.recipeDao.deleteRecipe(row.id);
     _ref.read(personalStorageServiceProvider).onRecipeChanged();
@@ -942,7 +1023,7 @@ class RecipeRepository {
   Future<List<IntegrityResponse>> toggleFavourite(int id) async {
     final existing = await getRecipeById(id);
     if (existing == null) return [];
-    final wasFavorited = existing.isFavorite;
+    final wasFavorited = existing.isFavourite;
 
     if (!wasFavorited) {
       final preflight = await IntegrityService.preflightSecondary(
@@ -972,7 +1053,43 @@ class RecipeRepository {
       },
     );
 
+    // Reflect the new favourite state in-memory then queue for telemetry (fire-and-forget).
+    existing.isFavourite = !wasFavorited;
+    unawaited(_ref.read(ragTelemetryServiceProvider).queueForExport(existing));
+
     return [];
+  }
+
+  /// Toggles the Culinary Intelligence sharing flag for a recipe.
+  /// This is a lightweight write: no integrity hooks, no sync — it is strictly local.
+  /// If the new state is shared, queues the recipe for RAG telemetry export
+  /// (fire-and-forget; gates inside [RagTelemetryService] handle the master
+  /// switch and isShared checks).
+  Future<void> toggleShared(int id) async {
+    final existing = await getRecipeById(id);
+    if (existing == null) return;
+    await _db.recipeDao.toggleShared(id, existing.isShared);
+    // Reflect the new shared state in-memory then queue for telemetry.
+    existing.isShared = !existing.isShared;
+    unawaited(_ref.read(ragTelemetryServiceProvider).queueForExport(existing));
+  }
+
+  /// Logs a cook event for [recipe] and fires a fire-and-forget Culinary
+  /// Intelligence telemetry export.
+  ///
+  /// This is the single domain-layer entry point for cook logging on standard
+  /// recipes. UI layers call this instead of [CookingStatsService.logCook]
+  /// directly so telemetry is guaranteed regardless of which surface the user taps.
+  Future<void> logCookForRecipe(Recipe recipe) async {
+    await _ref.read(cookingStatsServiceProvider).logCook(
+      recipeId: recipe.uuid,
+      recipeName: recipe.name,
+      course: recipe.course,
+      cuisine: recipe.course?.toLowerCase() == 'drinks'
+          ? recipe.subcategory
+          : recipe.cuisine,
+    );
+    unawaited(_ref.read(ragTelemetryServiceProvider).queueForExport(recipe));
   }
 
   Stream<List<Recipe>> watchAllRecipes() {

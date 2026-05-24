@@ -115,7 +115,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
           // 1. THE RICH HEADER - Fixed at top, does not scroll
           MemoixHeader(
             title: recipe.name,
-            isFavorite: recipe.isFavorite,
+            isFavourite: recipe.isFavourite,
             headerImage: hasHeaderImage ? headerImage : null,
             onFavoritePressed: () async {
               await ref.read(modernistRepositoryProvider).toggleFavourite(recipe.id);
@@ -131,6 +131,11 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
             onEditPressed: () => _handleMenuAction('edit', recipe),
             onDuplicatePressed: () => _handleMenuAction('duplicate', recipe),
             onDeletePressed: () => _handleMenuAction('delete', recipe),
+            isShared: recipe.isShared,
+            onToggleSharedPressed: () async {
+              await ref.read(modernistRepositoryProvider).toggleShared(recipe.id);
+              ref.invalidate(modernistRecipeProvider(widget.recipeId));
+            },
           ),
 
           // 2. Compact metadata row (below header)
@@ -365,53 +370,6 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
     );
   }
 
-  List<Widget> _buildAppBarActions(BuildContext context, ModernistRecipe recipe, ThemeData theme) {
-    return [
-      IconButton(
-        icon: Icon(
-          recipe.isFavorite ? Icons.favorite : Icons.favorite_border,
-          color: recipe.isFavorite ? theme.colorScheme.primary : null,
-        ),
-        onPressed: () async {
-          await ref.read(modernistRepositoryProvider).toggleFavourite(recipe.id);
-          ref.invalidate(modernistRecipeProvider(widget.recipeId));
-          await processIntegrityResponses(ref);
-        },
-      ),
-      IconButton(
-        icon: const Icon(Icons.check_circle_outline),
-        tooltip: 'I made this',
-        onPressed: () {
-          ref.read(modernistRepositoryProvider).incrementCookCount(recipe);
-          ref.invalidate(modernistRecipeProvider(widget.recipeId));
-          MemoixSnackBar.showLoggedCook(
-            recipeName: recipe.name,
-            onViewStats: () => AppRoutes.toStatistics(context),
-          );
-        },
-      ),
-      IconButton(
-        icon: const Icon(Icons.share),
-        onPressed: () => _shareRecipe(context, recipe),
-      ),
-      PopupMenuButton<String>(
-        onSelected: (value) => _handleMenuAction(value, recipe),
-        itemBuilder: (_) => [
-          const PopupMenuItem(value: 'edit', child: Text('Edit')),
-          const PopupMenuItem(value: 'duplicate', child: Text('Duplicate')),
-          PopupMenuItem(
-            value: 'delete',
-            child: Text(
-              'Delete',
-              style: TextStyle(color: theme.colorScheme.secondary),
-            ),
-          ),
-        ],
-        icon: const Icon(Icons.more_vert),
-      ),
-    ];
-  }
-
   Widget _buildStandardLayout(BuildContext context, ThemeData theme, ModernistRecipe recipe) {
     // Use headerImage for the app bar, fall back to legacy imageUrl
     final headerImage = recipe.headerImage ?? recipe.imageUrl;
@@ -425,7 +383,7 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
           // 1. THE RICH HEADER - Fixed at top, does not scroll
           MemoixHeader(
             title: recipe.name,
-            isFavorite: recipe.isFavorite,
+            isFavourite: recipe.isFavourite,
             headerImage: hasHeaderImage ? headerImage : null,
             onFavoritePressed: () async {
               await ref.read(modernistRepositoryProvider).toggleFavourite(recipe.id);
@@ -441,6 +399,11 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
             onEditPressed: () => _handleMenuAction('edit', recipe),
             onDuplicatePressed: () => _handleMenuAction('duplicate', recipe),
             onDeletePressed: () => _handleMenuAction('delete', recipe),
+            isShared: recipe.isShared,
+            onToggleSharedPressed: () async {
+              await ref.read(modernistRepositoryProvider).toggleShared(recipe.id);
+              ref.invalidate(modernistRecipeProvider(widget.recipeId));
+            },
           ),
 
           // 2. THE CONTENT - Scrollable
@@ -1122,9 +1085,11 @@ class _ModernistDetailScreenState extends ConsumerState<ModernistDetailScreen> {
           ),
         );
         if (confirm == true && mounted) {
+          // Navigate first while mounted is still true (checked synchronously above),
+          // then delete. Avoids the race where delete() fires the Drift stream,
+          // Riverpod disposes the inner widget, and navigator.pop() is never reached.
+          Navigator.of(context).pop();
           await ref.read(modernistRepositoryProvider).delete(recipe.id);
-          if (!mounted) return;
-          Navigator.pop(context);
         }
         break;
     }

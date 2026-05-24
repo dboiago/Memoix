@@ -13,6 +13,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 import '../database/app_database.dart';
+import '../privacy/pii_scrubber.dart';
 import 'supabase_auth_service.dart';
 
 /// Sync service for the invite-only Supabase backend.
@@ -108,6 +109,13 @@ abstract class SupabaseSyncService {
     final lastSyncRecipeDrafts = _getLastSync(prefs, _keyRecipeDrafts);
     final lastSyncCookingLogs = _getLastSync(prefs, _keyCookingLogs);
     final lastSyncRecipeImages = _getLastSync(prefs, _keyRecipeImages);
+
+    // ── Pending deletions — drain offline queue first ─────────────────────
+    try {
+      await processPendingDeletions();
+    } catch (e) {
+      debugPrint('Supabase sync error in processPendingDeletions: $e');
+    }
 
     // ── Recipes — independent error boundary ──────────────────────────────
     List<String> pulledRecipeUuids = [];
@@ -298,6 +306,83 @@ abstract class SupabaseSyncService {
   }
 
   // ─────────────────────────────────────────────────────────────────────────
+  // Offline deletion queue
+  // ─────────────────────────────────────────────────────────────────────────
+
+  /// Persists a soft-delete intent to the local [PendingDeletions] queue so
+  /// that the Supabase notification survives an app restart or offline period.
+  ///
+  /// Uses an upsert keyed on (tableName, recordUuid) so that repeated calls
+  /// for the same row are idempotent and only refresh [deletedAt].
+  ///
+  /// Never throws.
+  static Future<void> queueDeletion(String tableName, String recordUuid) async {
+    try {
+      final db = AppDatabase.instance;
+      await db
+          .into(db.pendingDeletions)
+          .insertOnConflictUpdate(PendingDeletionsCompanion(
+            entityType: Value(tableName),
+            recordUuid: Value(recordUuid),
+            deletedAt: Value(DateTime.now().toUtc()),
+          ));
+    } catch (e) {
+      debugPrint(
+          'SupabaseSyncService.queueDeletion($tableName, $recordUuid): $e');
+    }
+  }
+
+  /// Drains the [PendingDeletions] queue by replaying each queued soft-delete
+  /// against Supabase.
+  ///
+  /// Called at the start of every [sync] cycle, after connectivity and
+  /// sign-in guards have already passed. For each row, this method applies
+  /// the same Supabase UPDATE logic as [notifyDeleted]; on success the local
+  /// queue row is removed. Rows that fail (network error, Supabase error) are
+  /// left in the queue to be retried on the next sync.
+  ///
+  /// Never throws.
+  static Future<void> processPendingDeletions() async {
+    if (!SupabaseAuthService.isSignedIn) return;
+    try {
+      final db = AppDatabase.instance;
+      final client = _requireClient();
+      final rows = await db.select(db.pendingDeletions).get();
+      if (rows.isEmpty) return;
+
+      const _noUpdatedAt = {'meal_plans', 'shopping_lists', 'cooking_logs'};
+
+      for (final row in rows) {
+        try {
+          final now = DateTime.now().toUtc().toIso8601String();
+          final Map<String, dynamic> updateData = {'deleted_at': now};
+          if (!_noUpdatedAt.contains(row.entityType)) {
+            updateData['updated_at'] = now;
+          }
+          final String keyColumn =
+              row.entityType == 'courses' ? 'slug' : 'uuid';
+          await client
+              .schema('memoix')
+              .from(row.entityType)
+              .update(updateData)
+              .eq(keyColumn, row.recordUuid);
+          // Delivered successfully — remove from queue.
+          await (db.delete(db.pendingDeletions)
+                ..where((t) => t.id.equals(row.id)))
+              .go();
+        } catch (e) {
+          debugPrint(
+              'SupabaseSyncService.processPendingDeletions '
+              '(${row.entityType}, ${row.recordUuid}): $e');
+          // Leave in queue for next sync cycle.
+        }
+      }
+    } catch (e) {
+      debugPrint('SupabaseSyncService.processPendingDeletions: $e');
+    }
+  }
+
+  // ─────────────────────────────────────────────────────────────────────────
   // Recipes
   // ─────────────────────────────────────────────────────────────────────────
 
@@ -365,7 +450,7 @@ abstract class SupabaseSyncService {
           // Remote is newer: update, preserving personal fields.
           final companion = _remoteToRecipeCompanion(
             row,
-            isFavorite: existing.isFavorite,
+            isFavourite: existing.isFavourite,
             rating: existing.rating,
             cookCount: existing.cookCount,
             lastCookedAt: existing.lastCookedAt,
@@ -376,7 +461,7 @@ abstract class SupabaseSyncService {
           // New recipe from remote: insert with clean personal fields.
           final companion = _remoteToRecipeCompanion(
             row,
-            isFavorite: false,
+            isFavourite: false,
             rating: 0,
             cookCount: 0,
             lastCookedAt: null,
@@ -567,15 +652,15 @@ abstract class SupabaseSyncService {
       'time': r.time,
       'pairs_with': r.pairsWith,
       'paired_recipe_ids': r.pairedRecipeIds,
-      'comments': r.comments,
-      'directions': r.directions,
+      'comments': r.comments == null ? null : PiiScrubber.scrub(r.comments!),
+      'directions': PiiScrubber.scrub(r.directions),
       'source_url': r.sourceUrl,
       'image_urls': r.imageUrls,
       'image_url': r.imageUrl,
       'header_image': r.headerImage,
       'step_images': r.stepImages,
       'step_image_map': r.stepImageMap,
-      'source': r.source,
+      'source': PiiScrubber.scrub(r.source),
       'color_value': r.colorValue,
       'created_at': r.createdAt.toUtc().toIso8601String(),
       'updated_at': r.updatedAt.toUtc().toIso8601String(),
@@ -595,6 +680,7 @@ abstract class SupabaseSyncService {
       'difficulty': r.difficulty,
       'science_notes': r.scienceNotes,
       'equipment_json': r.equipmentJson,
+      'lineage_hash': r.lineageHash,
       'group_id': groupId,
       'updated_by': userId,
     };
@@ -629,11 +715,11 @@ abstract class SupabaseSyncService {
   /// The companion does NOT include [id] — add it at the call site via
   /// `companion.copyWith(id: Value(existingId))` when updating an existing row.
   ///
-  /// The personal fields [isFavorite], [rating], [cookCount], [lastCookedAt]
+  /// The personal fields [isFavourite], [rating], [cookCount], [lastCookedAt]
   /// are always supplied by the caller and are never read from the remote row.
   static RecipesCompanion _remoteToRecipeCompanion(
     Map<String, dynamic> row, {
-    required bool isFavorite,
+    required bool isFavourite,
     required int rating,
     required int cookCount,
     required DateTime? lastCookedAt,
@@ -669,7 +755,7 @@ abstract class SupabaseSyncService {
       colorValue: Value(row['color_value'] as int?),
       createdAt: Value(DateTime.parse(row['created_at'] as String).toLocal()),
       updatedAt: Value(DateTime.parse(row['updated_at'] as String).toLocal()),
-      isFavorite: Value(isFavorite),
+      isFavourite: Value(isFavourite),
       rating: Value(rating),
       cookCount: Value(cookCount),
       lastCookedAt: Value(lastCookedAt),
@@ -689,6 +775,7 @@ abstract class SupabaseSyncService {
       difficulty: Value(row['difficulty'] as String?),
       scienceNotes: Value(row['science_notes'] as String?),
       equipmentJson: Value(row['equipment_json'] as String?),
+      lineageHash: Value(row['lineage_hash'] as String?),
     );
   }
 
@@ -764,14 +851,14 @@ abstract class SupabaseSyncService {
                 ..where((t) => t.id.equals(existing.id)))
               .write(_remoteToPizzaCompanion(
                 row,
-                isFavorite: existing.isFavorite,
+                isFavourite: existing.isFavourite,
                 cookCount: existing.cookCount,
                 rating: existing.rating,
               ),
               );
         } else {
           await db.into(db.pizzas).insert(
-            _remoteToPizzaCompanion(row, isFavorite: false, cookCount: 0, rating: 0),
+            _remoteToPizzaCompanion(row, isFavourite: false, cookCount: 0, rating: 0),
             mode: InsertMode.insertOrIgnore,
           );
         }
@@ -852,14 +939,14 @@ abstract class SupabaseSyncService {
                 ..where((t) => t.id.equals(existing.id)))
               .write(_remoteToSandwichCompanion(
                 row,
-                isFavorite: existing.isFavorite,
+                isFavourite: existing.isFavourite,
                 cookCount: existing.cookCount,
                 rating: existing.rating,
               ),
               );
         } else {
           await db.into(db.sandwiches).insert(
-            _remoteToSandwichCompanion(row, isFavorite: false, cookCount: 0, rating: 0),
+            _remoteToSandwichCompanion(row, isFavourite: false, cookCount: 0, rating: 0),
             mode: InsertMode.insertOrIgnore,
           );
         }
@@ -944,13 +1031,13 @@ abstract class SupabaseSyncService {
                 ..where((t) => t.id.equals(existing.id)))
               .write(_remoteToCellarEntryCompanion(
                 row,
-                isFavorite: existing.isFavorite,
+                isFavourite: existing.isFavourite,
                 buy: existing.buy,
               ),
               );
         } else {
           await db.into(db.cellarEntries).insert(
-            _remoteToCellarEntryCompanion(row, isFavorite: false, buy: false),
+            _remoteToCellarEntryCompanion(row, isFavourite: false, buy: false),
             mode: InsertMode.insertOrIgnore,
           );
         }
@@ -1030,13 +1117,13 @@ abstract class SupabaseSyncService {
                 ..where((t) => t.id.equals(existing.id)))
               .write(_remoteToCheeseEntryCompanion(
                 row,
-                isFavorite: existing.isFavorite,
+                isFavourite: existing.isFavourite,
                 buy: existing.buy,
               ),
               );
         } else {
           await db.into(db.cheeseEntries).insert(
-            _remoteToCheeseEntryCompanion(row, isFavorite: false, buy: false),
+            _remoteToCheeseEntryCompanion(row, isFavourite: false, buy: false),
             mode: InsertMode.insertOrIgnore,
           );
         }
@@ -1117,13 +1204,13 @@ abstract class SupabaseSyncService {
                 ..where((t) => t.id.equals(existing.id)))
               .write(_remoteToSmokingRecipeCompanion(
                 row,
-                isFavorite: existing.isFavorite,
+                isFavourite: existing.isFavourite,
                 cookCount: existing.cookCount,
               ),
               );
         } else {
           await db.into(db.smokingRecipes).insert(
-            _remoteToSmokingRecipeCompanion(row, isFavorite: false, cookCount: 0),
+            _remoteToSmokingRecipeCompanion(row, isFavourite: false, cookCount: 0),
             mode: InsertMode.insertOrIgnore,
           );
         }
@@ -1340,9 +1427,9 @@ abstract class SupabaseSyncService {
       'cheeses': p.cheeses,
       'proteins': p.proteins,
       'vegetables': p.vegetables,
-      'notes': p.notes,
+      'notes': p.notes == null ? null : PiiScrubber.scrub(p.notes!),
       'image_url': p.imageUrl,
-      'source': p.source,
+      'source': PiiScrubber.scrub(p.source),
       'tags': p.tags,
       'created_at': p.createdAt.toUtc().toIso8601String(),
       'updated_at': p.updatedAt.toUtc().toIso8601String(),
@@ -1362,9 +1449,9 @@ abstract class SupabaseSyncService {
       'vegetables': s.vegetables,
       'cheeses': s.cheeses,
       'condiments': s.condiments,
-      'notes': s.notes,
+      'notes': s.notes == null ? null : PiiScrubber.scrub(s.notes!),
       'image_url': s.imageUrl,
-      'source': s.source,
+      'source': PiiScrubber.scrub(s.source),
       'tags': s.tags,
       'created_at': s.createdAt.toUtc().toIso8601String(),
       'updated_at': s.updatedAt.toUtc().toIso8601String(),
@@ -1381,12 +1468,12 @@ abstract class SupabaseSyncService {
       'name': e.name,
       'producer': e.producer,
       'category': e.category,
-      'tasting_notes': e.tastingNotes,
+      'tasting_notes': e.tastingNotes == null ? null : PiiScrubber.scrub(e.tastingNotes!),
       'abv': e.abv,
       'age_vintage': e.ageVintage,
       'price_range': e.priceRange,
       'image_url': e.imageUrl,
-      'source': e.source,
+      'source': PiiScrubber.scrub(e.source),
       'created_at': e.createdAt.toUtc().toIso8601String(),
       'updated_at': e.updatedAt.toUtc().toIso8601String(),
       'version': e.version,
@@ -1407,7 +1494,7 @@ abstract class SupabaseSyncService {
       'flavour': e.flavour,
       'price_range': e.priceRange,
       'image_url': e.imageUrl,
-      'source': e.source,
+      'source': PiiScrubber.scrub(e.source),
       'created_at': e.createdAt.toUtc().toIso8601String(),
       'updated_at': e.updatedAt.toUtc().toIso8601String(),
       'version': e.version,
@@ -1428,16 +1515,16 @@ abstract class SupabaseSyncService {
       'temperature': r.temperature,
       'time': r.time,
       'wood': r.wood,
-      'seasonings_json': r.seasoningsJson,
-      'ingredients_json': r.ingredientsJson,
+      'seasonings_json': PiiScrubber.scrub(r.seasoningsJson),
+      'ingredients_json': PiiScrubber.scrub(r.ingredientsJson),
       'serves': r.serves,
-      'directions': r.directions,
-      'notes': r.notes,
+      'directions': PiiScrubber.scrub(r.directions),
+      'notes': r.notes == null ? null : PiiScrubber.scrub(r.notes!),
       'header_image': r.headerImage,
       'step_images': r.stepImages,
       'step_image_map': r.stepImageMap,
       'image_url': r.imageUrl,
-      'source': r.source,
+      'source': PiiScrubber.scrub(r.source),
       'paired_recipe_ids': r.pairedRecipeIds,
       'created_at': r.createdAt.toUtc().toIso8601String(),
       'updated_at': r.updatedAt.toUtc().toIso8601String(),
@@ -1479,7 +1566,7 @@ abstract class SupabaseSyncService {
 
   static PizzasCompanion _remoteToPizzaCompanion(
     Map<String, dynamic> row, {
-    required bool isFavorite,
+    required bool isFavourite,
     required int cookCount,
     required int rating,
   }) {
@@ -1499,7 +1586,7 @@ abstract class SupabaseSyncService {
       createdAt: Value(DateTime.parse(row['created_at'] as String).toLocal()),
       updatedAt: Value(DateTime.parse(row['updated_at'] as String).toLocal()),
       version: Value(row['version'] as int? ?? 1),
-      isFavorite: Value(isFavorite),
+      isFavourite: Value(isFavourite),
       cookCount: Value(cookCount),
       rating: Value(rating),
     );
@@ -1507,7 +1594,7 @@ abstract class SupabaseSyncService {
 
   static SandwichesCompanion _remoteToSandwichCompanion(
     Map<String, dynamic> row, {
-    required bool isFavorite,
+    required bool isFavourite,
     required int cookCount,
     required int rating,
   }) {
@@ -1528,7 +1615,7 @@ abstract class SupabaseSyncService {
       createdAt: Value(DateTime.parse(row['created_at'] as String).toLocal()),
       updatedAt: Value(DateTime.parse(row['updated_at'] as String).toLocal()),
       version: Value(row['version'] as int? ?? 1),
-      isFavorite: Value(isFavorite),
+      isFavourite: Value(isFavourite),
       cookCount: Value(cookCount),
       rating: Value(rating),
     );
@@ -1536,7 +1623,7 @@ abstract class SupabaseSyncService {
 
   static CellarEntriesCompanion _remoteToCellarEntryCompanion(
     Map<String, dynamic> row, {
-    required bool isFavorite,
+    required bool isFavourite,
     required bool buy,
   }) {
     return CellarEntriesCompanion(
@@ -1553,14 +1640,14 @@ abstract class SupabaseSyncService {
       createdAt: Value(DateTime.parse(row['created_at'] as String).toLocal()),
       updatedAt: Value(DateTime.parse(row['updated_at'] as String).toLocal()),
       version: Value(row['version'] as int? ?? 1),
-      isFavorite: Value(isFavorite),
+      isFavourite: Value(isFavourite),
       buy: Value(buy),
     );
   }
 
   static CheeseEntriesCompanion _remoteToCheeseEntryCompanion(
     Map<String, dynamic> row, {
-    required bool isFavorite,
+    required bool isFavourite,
     required bool buy,
   }) {
     return CheeseEntriesCompanion(
@@ -1577,14 +1664,14 @@ abstract class SupabaseSyncService {
       createdAt: Value(DateTime.parse(row['created_at'] as String).toLocal()),
       updatedAt: Value(DateTime.parse(row['updated_at'] as String).toLocal()),
       version: Value(row['version'] as int? ?? 1),
-      isFavorite: Value(isFavorite),
+      isFavourite: Value(isFavourite),
       buy: Value(buy),
     );
   }
 
   static SmokingRecipesCompanion _remoteToSmokingRecipeCompanion(
     Map<String, dynamic> row, {
-    required bool isFavorite,
+    required bool isFavourite,
     required int cookCount,
   }) {
     String text(String key, [String fallback = '']) =>
@@ -1612,7 +1699,7 @@ abstract class SupabaseSyncService {
       pairedRecipeIds: Value(text('paired_recipe_ids', '[]')),
       createdAt: Value(DateTime.parse(row['created_at'] as String).toLocal()),
       updatedAt: Value(DateTime.parse(row['updated_at'] as String).toLocal()),
-      isFavorite: Value(isFavorite),
+      isFavourite: Value(isFavourite),
       cookCount: Value(cookCount),
     );
   }
@@ -1637,7 +1724,7 @@ abstract class SupabaseSyncService {
   /// into memoix.user_entity_preferences, keyed on (user_id, entity_type, entity_uuid).
   ///
   /// Pulls back rows updated since [lastSync] and writes the personal fields
-  /// (isFavorite, cookCount, buy, lastCookedAt, rating) into the matching local
+  /// (isFavourite, cookCount, buy, lastCookedAt, rating) into the matching local
   /// entity rows. Only those fields are overwritten — shared columns are untouched.
   static Future<void> _syncUserEntityPreferences(
       String userId, DateTime? lastSync,) async {
@@ -1652,7 +1739,7 @@ abstract class SupabaseSyncService {
         'user_id': userId,
         'entity_type': 'recipe',
         'entity_uuid': r.uuid,
-        'is_favorite': r.isFavorite,
+        'is_favourite': r.isFavourite,
         'cook_count': r.cookCount,
         'buy': null,
         'last_cooked_at': r.lastCookedAt?.toUtc().toIso8601String(),
@@ -1664,7 +1751,7 @@ abstract class SupabaseSyncService {
         'user_id': userId,
         'entity_type': 'pizza',
         'entity_uuid': p.uuid,
-        'is_favorite': p.isFavorite,
+        'is_favourite': p.isFavourite,
         'cook_count': p.cookCount,
         'buy': null,
         'last_cooked_at': null,
@@ -1676,7 +1763,7 @@ abstract class SupabaseSyncService {
         'user_id': userId,
         'entity_type': 'cellar',
         'entity_uuid': e.uuid,
-        'is_favorite': e.isFavorite,
+        'is_favourite': e.isFavourite,
         'cook_count': null,
         'buy': e.buy,
         'last_cooked_at': null,
@@ -1688,7 +1775,7 @@ abstract class SupabaseSyncService {
         'user_id': userId,
         'entity_type': 'cheese',
         'entity_uuid': e.uuid,
-        'is_favorite': e.isFavorite,
+        'is_favourite': e.isFavourite,
         'cook_count': null,
         'buy': e.buy,
         'last_cooked_at': null,
@@ -1700,7 +1787,7 @@ abstract class SupabaseSyncService {
         'user_id': userId,
         'entity_type': 'sandwich',
         'entity_uuid': s.uuid,
-        'is_favorite': s.isFavorite,
+        'is_favourite': s.isFavourite,
         'cook_count': s.cookCount,
         'buy': null,
         'last_cooked_at': null,
@@ -1712,7 +1799,7 @@ abstract class SupabaseSyncService {
         'user_id': userId,
         'entity_type': 'smoking',
         'entity_uuid': r.uuid,
-        'is_favorite': r.isFavorite,
+        'is_favourite': r.isFavourite,
         'cook_count': r.cookCount,
         'buy': null,
         'last_cooked_at': null,
@@ -1745,7 +1832,7 @@ abstract class SupabaseSyncService {
       for (final pref in prefs) {
         final entityType = pref['entity_type'] as String;
         final entityUuid = pref['entity_uuid'] as String;
-        final isFavorite = pref['is_favorite'] as bool? ?? false;
+        final isFavorite = pref['is_favourite'] as bool? ?? false;
         final cookCount = pref['cook_count'] as int? ?? 0;
         final buy = pref['buy'] as bool? ?? false;
         final lastCookedAtStr = pref['last_cooked_at'] as String?;
@@ -1757,7 +1844,7 @@ abstract class SupabaseSyncService {
           case 'recipe':
             await (db.update(db.recipes)..where((r) => r.uuid.equals(entityUuid)))
                 .write(RecipesCompanion(
-                  isFavorite: Value(isFavorite),
+                  isFavourite: Value(isFavorite),
                   cookCount: Value(cookCount),
                   lastCookedAt: Value(lastCookedAt),
                   rating: Value(rating),
@@ -1766,7 +1853,7 @@ abstract class SupabaseSyncService {
           case 'pizza':
             await (db.update(db.pizzas)..where((p) => p.uuid.equals(entityUuid)))
                 .write(PizzasCompanion(
-                  isFavorite: Value(isFavorite),
+                  isFavourite: Value(isFavorite),
                   cookCount: Value(cookCount),
                   rating: Value(rating),
                 ),);
@@ -1775,7 +1862,7 @@ abstract class SupabaseSyncService {
             await (db.update(db.cellarEntries)
                   ..where((e) => e.uuid.equals(entityUuid)))
                 .write(CellarEntriesCompanion(
-                  isFavorite: Value(isFavorite),
+                  isFavourite: Value(isFavorite),
                   buy: Value(buy),
                 ),);
             break;
@@ -1783,7 +1870,7 @@ abstract class SupabaseSyncService {
             await (db.update(db.cheeseEntries)
                   ..where((e) => e.uuid.equals(entityUuid)))
                 .write(CheeseEntriesCompanion(
-                  isFavorite: Value(isFavorite),
+                  isFavourite: Value(isFavorite),
                   buy: Value(buy),
                 ),);
             break;
@@ -1791,7 +1878,7 @@ abstract class SupabaseSyncService {
             await (db.update(db.sandwiches)
                   ..where((s) => s.uuid.equals(entityUuid)))
                 .write(SandwichesCompanion(
-                  isFavorite: Value(isFavorite),
+                  isFavourite: Value(isFavorite),
                   cookCount: Value(cookCount),
                   rating: Value(rating),
                 ),);
@@ -1800,7 +1887,7 @@ abstract class SupabaseSyncService {
             await (db.update(db.smokingRecipes)
                   ..where((r) => r.uuid.equals(entityUuid)))
                 .write(SmokingRecipesCompanion(
-                  isFavorite: Value(isFavorite),
+                  isFavourite: Value(isFavorite),
                   cookCount: Value(cookCount),
                 ),);
             break;

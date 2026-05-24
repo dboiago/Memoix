@@ -62,7 +62,8 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
   // Track selections
   String _selectedCourse = 'Mains';
   String? _selectedCuisine;
-  
+  bool _isShared = true;
+
   // Modernist-specific fields
   ModernistType _selectedModernistType = ModernistType.concept;
 
@@ -139,6 +140,11 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
             ),
           if (_canCompare)
             const SizedBox(width: 4),
+          IconButton(
+            icon: Icon(_isShared ? Icons.visibility : Icons.visibility_off),
+            tooltip: _isShared ? 'Shared' : 'Hidden',
+            onPressed: () => setState(() => _isShared = !_isShared),
+          ),
           TextButton(
             onPressed: _saveRecipe,
             child: const Text('Save'),
@@ -1696,12 +1702,13 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
       stepImages: jsonEncode(stepImages ?? []),
       stepImageMap: '[]',
       imageUrl: null,
-      isFavorite: false,
+      isFavourite: false,
       cookCount: 0,
       source: SmokingSource.imported.name,
       pairedRecipeIds: '[]',
       createdAt: now,
       updatedAt: now,
+      isShared: true,
     );
   }
   
@@ -1784,13 +1791,14 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
       notes: widget.importResult.comments,
       imageUrl: widget.importResult.imageUrl,
       source: PizzaSource.imported.name,
-      isFavorite: false,
+      isFavourite: false,
       cookCount: 0,
       rating: 0,
       tags: '[]',
       createdAt: now,
       updatedAt: now,
       version: 1,
+      isShared: true,
     );
   }
 
@@ -1865,6 +1873,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
       detailScreenBuilder = (_) => PizzaDetailScreen(pizzaId: savedId);
     } else {
       final recipe = _buildRecipe();
+      recipe.isShared = _isShared;
       await ref.read(recipeRepositoryProvider).saveRecipe(recipe);
       savedName = recipe.name;
       final savedId = recipe.uuid; // Recipe uses String uuid
@@ -1877,11 +1886,11 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
       
       if (widget.redirectOnSave) {
         // Redirect to the saved recipe's course list screen
-        navigator.pop(); // Pop the review screen first
+        navigator.pop(true); // Pop the review screen first
         _navigateToCourseList(navigator, _selectedCourse);
       } else {
         // Main screen mode - just pop back
-        navigator.pop();
+        navigator.pop(true);
       }
       
       // Show snackbar with option to view

@@ -70,7 +70,6 @@ class IngredientService {
 
   Map<String, int> _lookupMap = {};
   Map<String, IngredientMeta> _metaMap = {};
-  List<String> _sortedKeys = [];
   bool _isInitialized = false;
   bool _metaLoaded = false;
 
@@ -142,10 +141,6 @@ class IngredientService {
       
       _lookupMap = rawMap.map((key, value) => MapEntry(key, value as int));
 
-      // 3. Pre-sort keys by length (Descending) for "Longest Match Wins"
-      // This ensures "coconut milk" (length 12) is checked before "milk" (length 4)
-      _sortedKeys = _lookupMap.keys.toList()
-        ..sort((a, b) => b.length.compareTo(a.length));
       
       // Inject fallback map for guarantee
       _injectFallbackData();
@@ -573,6 +568,7 @@ class IngredientService {
       'dried shrimp': IngredientCategory.pantry.index,
       'fish paste': IngredientCategory.pantry.index,
       'shrimp paste': IngredientCategory.pantry.index,
+      'douchi': IngredientCategory.pantry.index,
       'curry paste': IngredientCategory.pantry.index,
       'bean paste': IngredientCategory.pantry.index,
       'chili paste': IngredientCategory.pantry.index,
@@ -626,6 +622,7 @@ class IngredientService {
       'walnut': IngredientCategory.nut.index,
       'pecan': IngredientCategory.nut.index,
       'cashew': IngredientCategory.nut.index,
+      'hazelnut': IngredientCategory.nut.index,
       'pistachio': IngredientCategory.nut.index,
       'peanut': IngredientCategory.nut.index,
       'pine nut': IngredientCategory.nut.index,
@@ -685,10 +682,6 @@ class IngredientService {
     fallback.forEach((k, v) {
       _lookupMap[k] = v;
     });
-
-    // Re-sort keys by length descending for longest-match-first
-    _sortedKeys = _lookupMap.keys.toList()
-        ..sort((a, b) => b.length.compareTo(a.length));
   }
 
   /// Classifies a recipe ingredient line.
@@ -698,23 +691,30 @@ class IngredientService {
     final normalized = _normalize(input);
     if (normalized.isEmpty) return IngredientCategory.unknown;
 
-    // Step 1: Exact match on the full normalized string
-    if (_lookupMap.containsKey(normalized)) {
-      final idx = _lookupMap[normalized]!;
-      return _indexToCategory(idx); // trust all gzip results now — script no longer defaults to produce
-    }
+    // Generate combinations of words from longest to shortest
+    // e.g., "dark chocolate chips" -> ["dark chocolate chips", "dark chocolate", "chocolate chips", "dark", "chocolate", "chips"]
+    final candidates = _generateNGrams(normalized);
 
-    // Step 2: Greedy Substring Match (longest key first)
-    // Minimum key length of 3 to prevent false matches like "za" from "pizza"
-    for (final key in _sortedKeys) {
-      if (key.length < 3) continue;
-      if (normalized.contains(key)) {
-        final idx = _lookupMap[key]!;
-        return _indexToCategory(idx);
+    for (final candidate in candidates) {
+      if (_lookupMap.containsKey(candidate)) {
+        return _indexToCategory(_lookupMap[candidate]!);
       }
     }
 
     return IngredientCategory.unknown;
+  }
+
+  /// Breaks a string down into word combinations (longest first)
+  List<String> _generateNGrams(String text) {
+    final words = text.split(' ').where((w) => w.isNotEmpty).toList();
+    final nGrams = <String>[];
+    
+    for (int n = words.length; n >= 1; n--) {
+      for (int i = 0; i <= words.length - n; i++) {
+        nGrams.add(words.sublist(i, i + n).join(' '));
+      }
+    }
+    return nGrams;
   }
 
   /// Normalizes input to isolate core ingredient name

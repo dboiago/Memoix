@@ -1,8 +1,38 @@
 import 'package:drift/drift.dart';
 
 import '../../../core/database/app_database.dart';
+import '../../ingredient_aliases.dart';
 
 part 'recipe_dao.g.dart';
+
+/// Lightweight projection returned by [RecipeDao.searchRecipes].
+/// Contains only the columns rendered by search result tiles (name, cuisine,
+/// course, isFavourite, uuid) plus id (for ordering) and recipeType (so the
+/// modernist repository can filter without a second round-trip).
+class RecipeSearchResult {
+  final int id;
+  final String uuid;
+  final String name;
+  final String? cuisine;
+  final String course;
+  final bool isFavourite;
+  final String? recipeType;
+  /// Raw enum name stored in the DB (e.g. 'memoix', 'personal'). Nullable
+  /// because legacy rows may pre-date the column; callers should default to
+  /// [RecipeSource.personal] when null.
+  final String? source;
+
+  const RecipeSearchResult({
+    required this.id,
+    required this.uuid,
+    required this.name,
+    this.cuisine,
+    required this.course,
+    required this.isFavourite,
+    this.recipeType,
+    this.source,
+  });
+}
 
 @DriftAccessor(tables: [Recipes, Ingredients, Courses])
 class RecipeDao extends DatabaseAccessor<AppDatabase>
@@ -36,7 +66,7 @@ class RecipeDao extends DatabaseAccessor<AppDatabase>
       (select(recipes)..where((r) => r.source.equals('imported'))).get();
 
   Future<List<Recipe>> getFavouriteRecipes() =>
-      (select(recipes)..where((r) => r.isFavorite.equals(true))).get();
+      (select(recipes)..where((r) => r.isFavourite.equals(true))).get();
 
   Future<Recipe?> getRecipeById(int id) =>
       (select(recipes)..where((r) => r.id.equals(id))).getSingleOrNull();
@@ -54,40 +84,170 @@ class RecipeDao extends DatabaseAccessor<AppDatabase>
             ..where((r) => r.recipeType.equals(recipeType)))
           .get();
 
-  /// Searches recipes across name, tags, cuisine, and ingredient name.
+  /// Converts a raw user search string into a safe FTS5 prefix MATCH expression.
   ///
-  /// Uses a LEFT OUTER JOIN on [Ingredients] so recipes without ingredients
-  /// are still returned when name/tags/cuisine match. The SQL-level [limit]
-  /// is applied to the joined row-set; Dart-side id-based deduplication then
-  /// collapses multi-ingredient matches into a single [Recipe] per row.
-  Future<List<Recipe>> searchRecipes(String query, {int limit = 50}) async {
-    final pattern = '%${query.toLowerCase()}%';
-
-    final joinQuery = select(recipes).join([
-      leftOuterJoin(
-        ingredients,
-        ingredients.recipeId.equalsExp(recipes.id),
-      ),
-    ]);
-
-    joinQuery.where(
-      recipes.name.lower().like(pattern) |
-          recipes.tags.lower().like(pattern) |
-          recipes.cuisine.lower().like(pattern) |
-          ingredients.name.lower().like(pattern),
-    );
-
-    final rows = await joinQuery.get();
-
-    final seen = <int>{};
-    final result = <Recipe>[];
-    for (final row in rows) {
-      final recipe = row.readTable(recipes);
-      if (seen.add(recipe.id)) {
-        result.add(recipe);
-      }
+  /// Each whitespace-separated token has FTS5 special characters stripped, then
+  /// a trailing `*` appended for prefix matching. Returns an empty string when
+  /// no valid tokens remain (caller must short-circuit and return an empty list).
+  ///
+  /// When the full trimmed query matches an entry in [ingredientAliases] (either
+  /// as a canonical key or as a known synonym), the returned expression is an
+  /// FTS5 OR clause that covers every term in the alias group, ensuring that
+  /// searching "scallion" also surfaces recipes that use "green onion".
+  static String _buildFtsQuery(String query) {
+    // Alias expansion: if the whole query resolves to a known alias group,
+    // build an OR expression across all terms in that group.
+    final trimmedLower = query.trim().toLowerCase();
+    final canonicalKey = resolveIngredientAlias(trimmedLower);
+    final aliasGroup = ingredientAliases[canonicalKey];
+    if (aliasGroup != null) {
+      final allTerms = [canonicalKey, ...aliasGroup];
+      return allTerms.map(_ftsTerm).join(' OR ');
     }
-    return result.take(limit).toList();
+
+    // Default: tokenize and build prefix query.
+    final tokens = query
+        .trim()
+        .split(RegExp(r'\s+'))
+        .map((t) => t.replaceAll(RegExp(r'["\(\)\*\+\-:\^\{\}\.\[\]]'), ''))
+        .where((t) => t.isNotEmpty)
+        .toList();
+    if (tokens.isEmpty) return '';
+    return tokens.map((t) => '$t*').join(' ');
+  }
+
+  /// Builds a safe FTS5 term fragment for a single alias group member.
+  ///
+  /// Multi-word terms are wrapped in double-quotes and use FTS5 phrase-prefix
+  /// syntax (`"green onion"*`). Single-word terms use plain prefix syntax
+  /// (`scallion*`). FTS5 special characters are stripped before quoting.
+  static String _ftsTerm(String term) {
+    final safe = term.replaceAll(RegExp(r'["\(\)\*\+\-:\^\{\}\.\[\]]'), '').trim();
+    if (safe.contains(' ')) return '"$safe"*';
+    return '$safe*';
+  }
+
+  /// Searches recipes using FTS5 full-text search across name, tags, cuisine,
+  /// ingredient names, and ingredient notes.
+  ///
+  /// Each token in [query] is suffix-matched (prefix search) so "chick" matches
+  /// "chicken". Results are ordered by BM25 relevance. Returns an empty list
+  /// when [query] is blank or produces no valid FTS tokens.
+  Future<List<RecipeSearchResult>> searchRecipes(
+    String query, {
+    int limit = 50,
+  }) async {
+    final matchQuery = _buildFtsQuery(query);
+    if (matchQuery.isEmpty) return [];
+
+    // F-05: direct rowid form avoids the base-table JOIN.
+    final idRows = await customSelect(
+      'SELECT rowid FROM recipes_fts '
+      'WHERE recipes_fts MATCH ? '
+      'ORDER BY bm25(recipes_fts, 10, 2, 1, 7, 4) '
+      'LIMIT ?',
+      variables: [Variable.withString(matchQuery), Variable.withInt(limit)],
+      readsFrom: {recipes},
+    ).get();
+
+    final ids = idRows.map((r) => r.read<int>('rowid')).toList();
+    if (ids.isEmpty) return [];
+
+    // Preserve BM25 order after the projected fetch.
+    final idOrder = {for (var i = 0; i < ids.length; i++) ids[i]: i};
+
+    // F-03: selectOnly projects only the columns search tiles render.
+    final rows = await (selectOnly(recipes)
+          ..addColumns([
+            recipes.id,
+            recipes.uuid,
+            recipes.name,
+            recipes.cuisine,
+            recipes.course,
+            recipes.isFavourite,
+            recipes.recipeType,
+            recipes.source,
+          ])
+          ..where(recipes.id.isIn(ids)))
+        .get();
+
+    final results = rows
+        .map(
+          (r) => RecipeSearchResult(
+            id: r.read(recipes.id)!,
+            uuid: r.read(recipes.uuid)!,
+            name: r.read(recipes.name)!,
+            cuisine: r.read(recipes.cuisine),
+            course: r.read(recipes.course)!,
+            isFavourite: r.read(recipes.isFavourite)!,
+            recipeType: r.read(recipes.recipeType),
+            source: r.read(recipes.source),
+          ),
+        )
+        .toList();
+
+    results.sort(
+        (a, b) => (idOrder[a.id] ?? 0).compareTo(idOrder[b.id] ?? 0));
+    return results;
+  }
+
+  // ── FTS5 maintenance ───────────────────────────────────────────────────────
+
+  /// Upserts the [recipes_fts] row for [recipeId].
+  ///
+  /// Fetches the recipe row and all current ingredient rows from the DB so that
+  /// this can be called immediately after ingredients are written, without the
+  /// caller having to pass data through.
+  Future<void> upsertRecipeFts(int recipeId) async {
+    final recipe =
+        await (select(recipes)..where((r) => r.id.equals(recipeId)))
+            .getSingleOrNull();
+    if (recipe == null) return;
+
+    final ings = await (select(ingredients)
+          ..where((i) => i.recipeId.equals(recipeId)))
+        .get();
+
+    final ingNames = ings.map((i) => i.name).join(' ');
+    final ingNotes = ings
+        .map((i) => i.notes ?? '')
+        .where((n) => n.isNotEmpty)
+        .join(' ');
+
+    await customStatement(
+      'INSERT OR REPLACE INTO recipes_fts'
+      '(rowid, name, tags, cuisine, ingredient_names, ingredient_notes) '
+      'VALUES (?, ?, ?, ?, ?, ?)',
+      [
+        recipeId,
+        recipe.name,
+        recipe.tags,
+        recipe.cuisine ?? '',
+        ingNames,
+        ingNotes,
+      ],
+    );
+  }
+
+  /// Removes the [recipes_fts] row for [id] using the correct contentless FTS5
+  /// deletion marker. Must be called before the recipe and its ingredients are
+  /// deleted so the original text is still available.
+  Future<void> deleteRecipeFts(int id) async {
+    final recipe =
+        await (select(recipes)..where((r) => r.id.equals(id))).getSingleOrNull();
+    if (recipe == null) return;
+    final ings =
+        await (select(ingredients)..where((i) => i.recipeId.equals(id))).get();
+    final ingNames = ings.map((i) => i.name).join(' ');
+    final ingNotes = ings
+        .map((i) => i.notes ?? '')
+        .where((n) => n.isNotEmpty)
+        .join(' ');
+    await customStatement(
+      'INSERT INTO recipes_fts(recipes_fts, rowid, name, tags, cuisine, ingredient_names, ingredient_notes) '
+      "VALUES ('delete', ?, ?, ?, ?, ?, ?)",
+      [id, recipe.name, recipe.tags, recipe.cuisine ?? '', ingNames, ingNotes],
+    );
   }
 
   // ── Recipe write ───────────────────────────────────────────────────────────
@@ -126,6 +286,7 @@ class RecipeDao extends DatabaseAccessor<AppDatabase>
   /// Deletes all [Ingredient] rows for [id] before deleting the [Recipe] row.
   /// No cascade is defined in the schema, so order matters.
   Future<void> deleteRecipe(int id) async {
+    await deleteRecipeFts(id);
     await (delete(ingredients)..where((i) => i.recipeId.equals(id))).go();
     await (delete(recipes)..where((r) => r.id.equals(id))).go();
   }
@@ -134,7 +295,13 @@ class RecipeDao extends DatabaseAccessor<AppDatabase>
   /// The caller owns the current state, so no read is needed at the DAO level.
   Future<void> toggleFavourite(int id, bool current) =>
       (update(recipes)..where((r) => r.id.equals(id))).write(
-        RecipesCompanion(isFavorite: Value(!current)),
+        RecipesCompanion(isFavourite: Value(!current)),
+      );
+
+  /// Writes the inverse of [current] for the Culinary Intelligence sharing flag.
+  Future<void> toggleShared(int id, bool current) =>
+      (update(recipes)..where((r) => r.id.equals(id))).write(
+        RecipesCompanion(isShared: Value(!current)),
       );
 
   /// Stamps [updatedAt] to now for a single recipe row. No other fields are
@@ -171,7 +338,7 @@ class RecipeDao extends DatabaseAccessor<AppDatabase>
   Stream<List<Recipe>> watchAllRecipes() => select(recipes).watch();
 
   Stream<List<Recipe>> watchFavouriteRecipes() =>
-      (select(recipes)..where((r) => r.isFavorite.equals(true))).watch();
+      (select(recipes)..where((r) => r.isFavourite.equals(true))).watch();
 
   /// Returns a stream of recipes filtered by [course] (case-insensitive).
   ///

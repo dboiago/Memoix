@@ -5,6 +5,8 @@ import '../../../core/database/app_database.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:uuid/uuid.dart';
 import '../../../core/providers.dart';
+import '../../../core/services/supabase_sync_service.dart';
+import '../../../core/utils/date_time_utils.dart';
 
 /// Helper class for pending delete data
 class _PendingDelete {
@@ -226,8 +228,16 @@ class MealPlanService {
       _db.mealPlanDao.watchDateRange(_formatDate(start), _formatDate(end));
 
   /// Clear all meals for a date
-  Future<void> clearDay(DateTime date) =>
-      _db.mealPlanDao.clearDay(_formatDate(date));
+  Future<void> clearDay(DateTime date) async {
+    final plan = await _db.mealPlanDao.getPlanByDate(_formatDate(date));
+    if (plan != null) {
+      await SupabaseSyncService.queueDeletion('meal_plans', plan.uuid);
+    }
+    await _db.mealPlanDao.clearDay(_formatDate(date));
+    if (plan != null) {
+      unawaited(SupabaseSyncService.notifyDeleted('meal_plans', plan.uuid));
+    }
+  }
 
   /// Copy a day's meals to another day
   Future<void> copyDay(DateTime from, DateTime to) =>
@@ -268,5 +278,5 @@ final weeklyPlanProvider = FutureProvider.family<WeeklyPlan, DateTime>((ref, wee
 final selectedWeekProvider = StateProvider<DateTime>((ref) {
   final now = DateTime.now();
   // Start of current week (Monday)
-  return now.subtract(Duration(days: now.weekday - 1));
+  return now.subtract(Duration(days: now.weekday - 1)).toMidnight();
 });

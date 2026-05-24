@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'dart:io';
+import 'dart:typed_data';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:file_picker/file_picker.dart';
@@ -17,6 +18,8 @@ import '../../modernist/repository/modernist_repository.dart';
 import '../../notes/repository/scratch_pad_repository.dart';
 import '../../pizzas/models/pizza.dart';
 import '../../pizzas/repository/pizza_repository.dart';
+import '../../import/services/external_recipe_importer.dart';
+import '../../import/services/parsers/json_ld_parser.dart';
 import '../../recipes/models/course.dart';
 import '../../recipes/models/recipe.dart';
 import '../../recipes/repository/recipe_repository.dart';
@@ -53,26 +56,74 @@ class RecipeBackupService {
   /// Returns the path to the exported file or null if cancelled/failed
   Future<String?> exportRecipes({bool includeAll = false}) async {
     // Get recipes to export
+    // Modernist records are stored in the recipes table (recipeType == 'modernist')
+    // but are always exported via the dedicated modernist[] array, so exclude them here
+    // to prevent duplication regardless of the includeAll flag.
     List<Recipe> recipes;
     if (includeAll) {
-      recipes = await _recipeRepository.getAllRecipes();
+      final allRecipes = await _recipeRepository.getAllRecipes();
+      recipes = allRecipes.where((r) => r.recipeType != 'modernist').toList();
     } else {
       // All user recipes (not memoix collection)
-      // Includes: personal, imported, ocr, url
+      // Includes: personal, imported, ocr, url, ai, walkin
       final allRecipes = await _recipeRepository.getAllRecipes();
-      recipes = allRecipes.where((r) => r.source != RecipeSource.memoix).toList();
+      recipes = allRecipes
+          .where((r) => r.source != RecipeSource.memoix && r.recipeType != 'modernist')
+          .toList();
     }
 
-    if (recipes.isEmpty) {
-      throw Exception('No recipes to export');
+    // Fetch specialist domains
+    var pizzas = await _pizzaRepository.getAllPizzas();
+    var sandwiches = await _sandwichRepository.getAllSandwiches();
+    var smokingRecipes = await _smokingRepository.getAllRecipes();
+    var modernistRecipes = await _modernistRepository.getAll();
+    var cellarEntries = await _cellarRepository.getAllEntries();
+    var cheeseEntries = await _cheeseRepository.getAllEntries();
+    if (!includeAll) {
+      pizzas = pizzas.where((p) => p.source != PizzaSource.memoix.name).toList();
+      sandwiches = sandwiches.where((s) => s.source != SandwichSource.memoix.name).toList();
+      smokingRecipes = smokingRecipes.where((s) => s.source != SmokingSource.memoix.name).toList();
+      modernistRecipes = modernistRecipes.where((m) => m.source.name != ModernistSource.memoix.name).toList();
+      cellarEntries = cellarEntries.where((c) => c.source != CellarSource.memoix.name).toList();
+      cheeseEntries = cheeseEntries.where((c) => c.source != CheeseSource.memoix.name).toList();
     }
+
+    if (recipes.isEmpty && pizzas.isEmpty && sandwiches.isEmpty &&
+        smokingRecipes.isEmpty && modernistRecipes.isEmpty &&
+        cellarEntries.isEmpty && cheeseEntries.isEmpty) {
+      throw Exception('No personal recipes or entries to export');
+    }
+    final quickNotes = await _scratchPadRepository.getQuickNotes();
+    final drafts = await _scratchPadRepository.getAllDrafts();
 
     // Convert to JSON
     final jsonData = {
+      'format': 'memoix/v1',
       'version': 1,
       'exportedAt': DateTime.now().toIso8601String(),
       'recipeCount': recipes.length,
       'recipes': recipes.map((r) => r.toJson()).toList(),
+      'pizzas': pizzas.map((p) => p.toJson()).toList(),
+      'sandwiches': sandwiches.map((s) => s.toJson()).toList(),
+      'smoking': smokingRecipes.map((s) => s.toJson()).toList(),
+      'modernist': modernistRecipes.map((m) => m.toJson()).toList(),
+      'cellar': cellarEntries.map((c) => c.toJson()).toList(),
+      'cheese': cheeseEntries.map((c) => c.toJson()).toList(),
+      'scratch': {
+        'quickNotes': quickNotes,
+        'drafts': drafts.map((d) => <String, dynamic>{
+          'uuid': d.uuid,
+          'name': d.name,
+          'imagePath': d.imagePath,
+          'serves': d.serves,
+          'time': d.time,
+          'structuredIngredients': d.structuredIngredients,
+          'structuredDirections': d.structuredDirections,
+          'notes': d.notes,
+          'createdAt': d.createdAt.toIso8601String(),
+          'updatedAt': d.updatedAt.toIso8601String(),
+        }).toList(),
+      },
     };
 
     final jsonString = const JsonEncoder.withIndent('  ').convert(jsonData);
@@ -120,45 +171,162 @@ class RecipeBackupService {
     return file.path;
   }
 
-  /// Import recipes from a JSON file
-  /// Returns the number of recipes imported
-  Future<int> importRecipes() async {
-    // Pick file
+  /// Import recipes from a JSON backup or external app archive file.
+  ///
+  /// Returns a [RecipeImportFileResult]:
+  ///   - [ImportCancelled] — user dismissed the file picker.
+  ///   - [ImportCompleted] — JSON backup imported directly (no review needed).
+  ///   - [ImportNeedsReview] — external archive parsed; caller must push
+  ///     [ExternalImportReviewScreen] so the user can confirm which recipes
+  ///     to import.
+  Future<RecipeImportFileResult> importRecipes() async {
     final result = await FilePicker.platform.pickFiles(
       type: FileType.custom,
-      allowedExtensions: ['json'],
+      allowedExtensions: [
+        'json',
+        'melarecipes', 'melarecipe',
+        'paprikarecipes', 'paprikarecipe',
+        'zip',
+      ],
       allowMultiple: false,
     );
 
     if (result == null || result.files.isEmpty) {
-      return 0;
+      return ImportCancelled();
     }
 
     final file = result.files.first;
-    String jsonString;
+    final ext = file.name.split('.').last.toLowerCase();
 
-    // Read file content
-    if (file.path != null) {
-      jsonString = await File(file.path!).readAsString();
-    } else if (file.bytes != null) {
-      jsonString = utf8.decode(file.bytes!);
+    // External app formats (Mela, Paprika, …)
+    if (ExternalRecipeImporter.supportsExtension(ext)) {
+      final Uint8List bytes;
+      if (file.bytes != null) {
+        bytes = file.bytes!;
+      } else if (file.path != null) {
+        bytes = await File(file.path!).readAsBytes();
+      } else {
+        throw Exception('Could not read file');
+      }
+
+      final summary = await ExternalRecipeImporter().parse(ext, bytes);
+
+      if (summary.recipes.isEmpty && summary.skippedCount == 0) {
+        return ImportCompleted(imported: 0, skipped: 0);
+      }
+      return ImportNeedsReview(
+        recipes: summary.recipes,
+        parseSkipped: summary.skippedCount,
+        failures: summary.failures,
+        fileBytes: bytes,
+        detectedParserName: summary.detectedParserName ??
+            ExternalRecipeImporter.parserNames.first,
+      );
+    }
+
+    // JSON file — read bytes once, then sniff content to determine format.
+    final Uint8List bytes;
+    if (file.bytes != null) {
+      bytes = file.bytes!;
+    } else if (file.path != null) {
+      bytes = await File(file.path!).readAsBytes();
     } else {
       throw Exception('Could not read file');
     }
 
-    // Parse JSON
-    final jsonData = jsonDecode(jsonString);
-
-    if (jsonData is! Map || !jsonData.containsKey('recipes')) {
-      // Try parsing as a simple array of recipes
-      if (jsonData is List) {
-        return _importRecipeList(jsonData);
-      }
-      throw Exception('Invalid backup file format');
+    // Attempt UTF-8 + JSON decode for content sniffing.
+    // If either step fails, fall through to the Memoix backup path and let it
+    // error naturally.
+    Object? sniffed;
+    try {
+      sniffed = jsonDecode(utf8.decode(bytes));
+    } catch (_) {
+      // Decoding or parsing failed — fall through to Memoix path.
     }
 
-    final recipesList = jsonData['recipes'] as List;
-    return _importRecipeList(recipesList);
+    if (sniffed != null) {
+      debugPrint('[sniff] sniffed runtimeType=${sniffed.runtimeType}');
+      // Priority 1: explicit Memoix v1 format tag → Memoix path.
+      final isMemoixV1 = sniffed is Map<String, dynamic> &&
+          sniffed['format'] == 'memoix/v1';
+      debugPrint('[sniff] isMemoixV1=$isMemoixV1'
+          '${sniffed is Map ? ", format=${(sniffed as Map)['format']}" : ""}');
+
+      if (!isMemoixV1) {
+        // Priority 2: JSON-LD single recipe object with @type == "Recipe".
+        // Priority 3: JSON-LD array where the first element has @type == "Recipe".
+        bool isJsonLd = false;
+        if (sniffed is Map<String, dynamic>) {
+          final atType = sniffed['@type'];
+          debugPrint('[sniff] Map branch: @type raw=$atType (${atType?.runtimeType})'
+              ', lowered=${atType?.toString().toLowerCase()}');
+          isJsonLd =
+              sniffed['@type']?.toString().toLowerCase() == 'recipe';
+          debugPrint('[sniff] Map branch: isJsonLd=$isJsonLd');
+        } else if (sniffed is List &&
+            sniffed.isNotEmpty &&
+            sniffed.first is Map<String, dynamic>) {
+          final firstAtType =
+              (sniffed.first as Map<String, dynamic>)['@type'];
+          debugPrint('[sniff] List branch: first[@type] raw=$firstAtType'
+              ' (${firstAtType?.runtimeType})'
+              ', lowered=${firstAtType?.toString().toLowerCase()}');
+          isJsonLd =
+              (sniffed.first as Map<String, dynamic>)['@type']
+                      ?.toString()
+                      .toLowerCase() ==
+                  'recipe';
+          debugPrint('[sniff] List branch: isJsonLd=$isJsonLd');
+        } else {
+          debugPrint('[sniff] no @type branch matched: sniffed is '
+              '${sniffed.runtimeType}, isEmpty=${sniffed is List ? (sniffed as List).isEmpty : "n/a"}');
+        }
+
+        if (isJsonLd) {
+          debugPrint('[sniff] → routing to JsonLdParser');
+          final summary = await JsonLdParser().parse(bytes);
+          if (summary.recipes.isEmpty && summary.skippedCount == 0) {
+            return ImportCompleted(imported: 0, skipped: 0);
+          }
+          return ImportNeedsReview(
+            recipes: summary.recipes,
+            parseSkipped: summary.skippedCount,
+            failures: summary.failures,
+            fileBytes: bytes,
+            detectedParserName: 'RecipeSage / JSON-LD',
+          );
+        }
+        // Priority 4: anything else → fall through to Memoix path as fallback.
+        debugPrint('[sniff] → falling through to Memoix backup path');
+      } else {
+        debugPrint('[sniff] → routing to Memoix backup path (v1 format tag)');
+      }
+    } else {
+      debugPrint('[sniff] sniffed is null — sniff failed, falling to Memoix path');
+    }
+
+    // Memoix backup path.
+    // Handles: format "memoix/v1" wrapper, pre-v1 wrapper objects, bare arrays,
+    // and files that failed JSON sniffing (let errors surface naturally).
+    final String jsonString = utf8.decode(bytes);
+    final jsonData = jsonDecode(jsonString);
+    var count = 0;
+    if (jsonData is Map<String, dynamic> && jsonData.containsKey('recipes')) {
+      count = await _importRecipeList(jsonData['recipes'] as List);
+      // Specialist domains — silently skipped when key absent (backward compatibility).
+      if (jsonData['pizzas'] is List) count += await _importPizzas(jsonData['pizzas'] as List);
+      if (jsonData['sandwiches'] is List) count += await _importSandwiches(jsonData['sandwiches'] as List);
+      if (jsonData['smoking'] is List) count += await _importSmoking(jsonData['smoking'] as List);
+      if (jsonData['modernist'] is List) count += await _importModernist(jsonData['modernist'] as List);
+      if (jsonData['cellar'] is List) count += await _importCellar(jsonData['cellar'] as List);
+      if (jsonData['cheese'] is List) count += await _importCheese(jsonData['cheese'] as List);
+      if (jsonData['scratch'] is Map<String, dynamic>) await _importScratch(jsonData['scratch'] as Map<String, dynamic>);
+    } else if (jsonData is List) {
+      count = await _importRecipeList(jsonData);
+    } else {
+      throw Exception('Invalid backup file format');
+    }
+    return ImportCompleted(imported: count, skipped: 0);
   }
 
   Future<int> _importRecipeList(List recipesList) async {
@@ -167,12 +335,7 @@ class RecipeBackupService {
     for (final recipeJson in recipesList) {
       try {
         final recipe = Recipe.fromJson(recipeJson as Map<String, dynamic>);
-        
-        // Mark as imported unless it was personal
-        if (recipe.source == RecipeSource.memoix) {
-          recipe.source = RecipeSource.imported;
-        }
-        
+
         // Check if recipe already exists by UUID
         final existing = await _recipeRepository.getRecipeByUuid(recipe.uuid);
         if (existing != null) {
@@ -180,8 +343,8 @@ class RecipeBackupService {
           recipe.version = existing.version + 1;
           recipe.id = existing.id; // Supply the local Drift PK so saveRecipe() performs an UPDATE, not an INSERT.
         }
-        
-        await _recipeRepository.saveRecipe(recipe);
+
+        await _recipeRepository.saveRecipe(recipe, preserveSource: true);
         imported++;
       } catch (e) {
         // Skip invalid recipes, continue with others
@@ -361,251 +524,131 @@ class RecipeBackupService {
     await file.writeAsString(jsonString);
   }
 
-  /// Import all domains from a folder of JSON files
-  /// Returns a map of domain -> count imported
-  Future<Map<String, int>> importFromFolder() async {
-    final result = <String, int>{};
+  // ── Per-domain import helpers ─────────────────────────────────────────────
+  // Called from importRecipes() when a specialist domain key is present in the
+  // backup file.
 
-    // On desktop, use folder picker
-    String? inputDir;
-    if (!kIsWeb && (Platform.isWindows || Platform.isMacOS || Platform.isLinux)) {
-      inputDir = await FilePicker.platform.getDirectoryPath(
-        dialogTitle: 'Select folder containing JSON backup files',
-      );
-    } else {
-      // On mobile, pick multiple files
-      final pickResult = await FilePicker.platform.pickFiles(
-        type: FileType.custom,
-        allowedExtensions: ['json'],
-        allowMultiple: true,
-      );
-      
-      if (pickResult == null || pickResult.files.isEmpty) {
-        return result;
-      }
-      
-      // Process each picked file
-      for (final file in pickResult.files) {
-        if (file.path == null) continue;
-        final filename = file.name.toLowerCase().replaceAll('.json', '');
-        final count = await _importDomainFile(File(file.path!), filename);
-        if (count > 0) {
-          result[filename] = count;
-        }
-      }
-      return result;
-    }
-
-    if (inputDir == null) {
-      return result;
-    }
-
-    // Read all JSON files in the directory
-    final dir = Directory(inputDir);
-    await for (final entity in dir.list()) {
-      if (entity is File && entity.path.endsWith('.json')) {
-        final filename = entity.path.split(Platform.pathSeparator).last.toLowerCase().replaceAll('.json', '');
-        final count = await _importDomainFile(entity, filename);
-        if (count > 0) {
-          result[filename] = count;
-        }
-      }
-    }
-
-    return result;
-  }
-
-  /// Import a single domain file
-  /// Returns count of items imported
-  Future<int> _importDomainFile(File file, String domain) async {
-    try {
-      final jsonString = await file.readAsString();
-      final jsonData = jsonDecode(jsonString);
-
-      switch (domain) {
-        case 'pizzas':
-          return _importPizzas(jsonData as List);
-        case 'sandwiches':
-          return _importSandwiches(jsonData as List);
-        case 'smoking':
-          return _importSmoking(jsonData as List);
-        case 'modernist':
-          return _importModernist(jsonData as List);
-        case 'cellar':
-          return _importCellar(jsonData as List);
-        case 'cheese':
-          return _importCheese(jsonData as List);
-        case 'scratch':
-          return _importScratch(jsonData as Map<String, dynamic>);
-        default:
-          // Assume it's a recipe course file
-          if (jsonData is List) {
-            return _importRecipeList(jsonData);
-          }
-          return 0;
-      }
-    } catch (e) {
-      // Skip files that fail to parse
-      return 0;
-    }
-  }
-
-  /// Import pizzas from JSON array
   Future<int> _importPizzas(List jsonList) async {
     int imported = 0;
     for (final json in jsonList) {
+      if (json is! Map<String, dynamic>) continue;
       try {
-        var pizza = pizzaFromJson(json as Map<String, dynamic>);
+        var pizza = pizzaFromJson(json);
         if (pizza.source == PizzaSource.memoix.name) {
           pizza = pizza.copyWith(source: PizzaSource.imported.name);
         }
         final existing = await _pizzaRepository.getPizzaByUuid(pizza.uuid);
         if (existing != null) {
-          pizza = pizza.copyWith(
-            version: existing.version + 1,
-            id: existing.id,
-          );
+          pizza = pizza.copyWith(version: existing.version + 1, id: existing.id);
         }
         await _pizzaRepository.savePizza(pizza);
         imported++;
-      } catch (_) {
-        continue;
-      }
+      } catch (e) { debugPrint('domain import error: $e'); continue; }
     }
     return imported;
   }
 
-  /// Import sandwiches from JSON array
   Future<int> _importSandwiches(List jsonList) async {
     int imported = 0;
     for (final json in jsonList) {
+      if (json is! Map<String, dynamic>) continue;
       try {
-        var sandwich = sandwichFromJson(json as Map<String, dynamic>);
+        var sandwich = sandwichFromJson(json);
         if (sandwich.source == SandwichSource.memoix.name) {
           sandwich = sandwich.copyWith(source: SandwichSource.imported.name);
         }
         final existing = await _sandwichRepository.getSandwichByUuid(sandwich.uuid);
         if (existing != null) {
-          sandwich = sandwich.copyWith(
-            version: existing.version + 1,
-            id: existing.id,
-          );
+          sandwich = sandwich.copyWith(version: existing.version + 1, id: existing.id);
         }
         await _sandwichRepository.saveSandwich(sandwich);
         imported++;
-      } catch (_) {
-        continue;
-      }
+      } catch (e) { debugPrint('domain import error: $e'); continue; }
     }
     return imported;
   }
 
-  /// Import smoking recipes from JSON array
   Future<int> _importSmoking(List jsonList) async {
     int imported = 0;
     for (final json in jsonList) {
+      if (json is! Map<String, dynamic>) continue;
       try {
-        var recipe = smokingRecipeFromJson(json as Map<String, dynamic>);
+        var recipe = smokingRecipeFromJson(json);
         if (recipe.source == SmokingSource.memoix.name) {
           recipe = recipe.copyWith(source: SmokingSource.imported.name);
         }
         final existing = await _smokingRepository.getRecipeByUuid(recipe.uuid);
-        if (existing != null) {
-          recipe = recipe.copyWith(id: existing.id);
-        }
+        if (existing != null) recipe = recipe.copyWith(id: existing.id);
         await _smokingRepository.saveRecipe(recipe);
         imported++;
-      } catch (_) {
-        continue;
-      }
+      } catch (e) { debugPrint('domain import error: $e'); continue; }
     }
     return imported;
   }
 
-  /// Import modernist recipes from JSON array
   Future<int> _importModernist(List jsonList) async {
     int imported = 0;
     for (final json in jsonList) {
+      if (json is! Map<String, dynamic>) continue;
       try {
-        final recipe = ModernistRecipe.fromJson(json as Map<String, dynamic>);
-        if (recipe.source == ModernistSource.memoix) {
-          recipe.source = ModernistSource.imported;
-        }
+        final recipe = ModernistRecipe.fromJson(json);
+        if (recipe.source == ModernistSource.memoix) recipe.source = ModernistSource.imported;
         final existing = await _modernistRepository.getByUuid(recipe.uuid);
-        if (existing != null) {
-          recipe.id = existing.id;
-        }
+        if (existing != null) recipe.id = existing.id;
         await _modernistRepository.save(recipe);
         imported++;
-      } catch (_) {
-        continue;
-      }
+      } catch (e) { debugPrint('domain import error: $e'); continue; }
     }
     return imported;
   }
 
-  /// Import cellar entries from JSON array
   Future<int> _importCellar(List jsonList) async {
     int imported = 0;
     for (final json in jsonList) {
+      if (json is! Map<String, dynamic>) continue;
       try {
-        var entry = cellarEntryFromJson(json as Map<String, dynamic>);
+        var entry = cellarEntryFromJson(json);
         if (entry.source == CellarSource.personal.name) {
           entry = entry.copyWith(source: CellarSource.imported.name);
         }
         final existing = await _cellarRepository.getEntryByUuid(entry.uuid);
         if (existing != null) {
-          entry = entry.copyWith(
-            version: existing.version + 1,
-            id: existing.id,
-          );
+          entry = entry.copyWith(version: existing.version + 1, id: existing.id);
         }
         await _cellarRepository.saveEntry(entry);
         imported++;
-      } catch (_) {
-        continue;
-      }
+      } catch (e) { debugPrint('domain import error: $e'); continue; }
     }
     return imported;
   }
 
-  /// Import cheese entries from JSON array
   Future<int> _importCheese(List jsonList) async {
     int imported = 0;
     for (final json in jsonList) {
+      if (json is! Map<String, dynamic>) continue;
       try {
-        var entry = cheeseEntryFromJson(json as Map<String, dynamic>);
+        var entry = cheeseEntryFromJson(json);
         if (entry.source == CheeseSource.personal.name) {
           entry = entry.copyWith(source: CheeseSource.imported.name);
         }
         final existing = await _cheeseRepository.getEntryByUuid(entry.uuid);
         if (existing != null) {
-          entry = entry.copyWith(
-            version: existing.version + 1,
-            id: existing.id,
-          );
+          entry = entry.copyWith(version: existing.version + 1, id: existing.id);
         }
         await _cheeseRepository.saveEntry(entry);
         imported++;
-      } catch (_) {
-        continue;
-      }
+      } catch (e) { debugPrint('domain import error: $e'); continue; }
     }
     return imported;
   }
 
-  /// Import scratch pad data from JSON object
   Future<int> _importScratch(Map<String, dynamic> json) async {
     int imported = 0;
-    
-    // Import quick notes
     final quickNotes = json['quickNotes'] as String?;
     if (quickNotes != null && quickNotes.isNotEmpty) {
       await _scratchPadRepository.saveQuickNotes(quickNotes);
       imported++;
     }
-    
-    // Import drafts
     final drafts = json['drafts'] as List?;
     if (drafts != null) {
       for (final draftJson in drafts) {
@@ -618,10 +661,8 @@ class RecipeBackupService {
             serves: draftJson['serves'] as String?,
             time: draftJson['time'] as String?,
             course: draftJson['course'] as String? ?? 'mains',
-            structuredIngredients:
-                draftJson['structuredIngredients'] as String? ?? '[]',
-            structuredDirections:
-                draftJson['structuredDirections'] as String? ?? '[]',
+            structuredIngredients: draftJson['structuredIngredients'] as String? ?? '[]',
+            structuredDirections: draftJson['structuredDirections'] as String? ?? '[]',
             legacyIngredients: null,
             legacyDirections: null,
             notes: draftJson['notes'] as String? ?? '',
@@ -633,15 +674,11 @@ class RecipeBackupService {
                 : DateTime.now(),
             updatedAt: DateTime.now(),
           );
-          
           await _scratchPadRepository.updateDraft(draft);
           imported++;
-        } catch (_) {
-          continue;
-        }
+        } catch (_) { continue; }
       }
     }
-    
     return imported;
   }
 }

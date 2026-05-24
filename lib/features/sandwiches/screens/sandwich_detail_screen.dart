@@ -97,7 +97,7 @@ class _SandwichDetailViewState extends ConsumerState<_SandwichDetailView> {
           // 1. THE RICH HEADER - Fixed at top, does not scroll
           MemoixHeader(
             title: sandwich.name,
-            isFavorite: sandwich.isFavorite,
+            isFavourite: sandwich.isFavourite,
             headerImage: hasHeaderImage ? sandwich.imageUrl : null,
             onFavoritePressed: () async {
               await ref.read(sandwichRepositoryProvider).toggleFavourite(sandwich);
@@ -109,6 +109,11 @@ class _SandwichDetailViewState extends ConsumerState<_SandwichDetailView> {
             onEditPressed: () => _handleMenuAction(context, ref, sandwich, 'edit'),
             onDuplicatePressed: () => _handleMenuAction(context, ref, sandwich, 'duplicate'),
             onDeletePressed: () => _handleMenuAction(context, ref, sandwich, 'delete'),
+            isShared: sandwich.isShared,
+            onToggleSharedPressed: () async {
+              await ref.read(sandwichRepositoryProvider).toggleShared(sandwich);
+              ref.invalidate(allSandwichesProvider);
+            },
           ),
 
           // 2. THE CONTENT - Scrollable, sits below header
@@ -208,7 +213,7 @@ class _SandwichDetailViewState extends ConsumerState<_SandwichDetailView> {
           // 1. THE RICH HEADER - Fixed at top, does not scroll
           MemoixHeader(
             title: sandwich.name,
-            isFavorite: sandwich.isFavorite,
+            isFavourite: sandwich.isFavourite,
             headerImage: hasHeaderImage ? sandwich.imageUrl : null,
             onFavoritePressed: () async {
               await ref.read(sandwichRepositoryProvider).toggleFavourite(sandwich);
@@ -220,6 +225,11 @@ class _SandwichDetailViewState extends ConsumerState<_SandwichDetailView> {
             onEditPressed: () => _handleMenuAction(context, ref, sandwich, 'edit'),
             onDuplicatePressed: () => _handleMenuAction(context, ref, sandwich, 'duplicate'),
             onDeletePressed: () => _handleMenuAction(context, ref, sandwich, 'delete'),
+            isShared: sandwich.isShared,
+            onToggleSharedPressed: () async {
+              await ref.read(sandwichRepositoryProvider).toggleShared(sandwich);
+              ref.invalidate(allSandwichesProvider);
+            },
           ),
 
           // 2. THE CONTENT - Scrollable
@@ -350,8 +360,8 @@ class _SandwichDetailViewState extends ConsumerState<_SandwichDetailView> {
     return [
       IconButton(
         icon: Icon(
-          sandwich.isFavorite ? Icons.favorite : Icons.favorite_border,
-          color: sandwich.isFavorite ? theme.colorScheme.secondary : null,
+          sandwich.isFavourite ? Icons.favorite : Icons.favorite_border,
+          color: sandwich.isFavourite ? theme.colorScheme.secondary : null,
         ),
         onPressed: () async {
           await ref.read(sandwichRepositoryProvider).toggleFavourite(sandwich);
@@ -429,11 +439,10 @@ class _SandwichDetailViewState extends ConsumerState<_SandwichDetailView> {
         );
 
         if (confirmed == true) {
+          // Navigate first while context is valid, then delete.
+          Navigator.of(context).pop();
           await ref.read(sandwichRepositoryProvider).deleteSandwich(sandwich.id);
-          if (context.mounted) {
-            Navigator.of(context).pop();
-            MemoixSnackBar.show('${sandwich.name} deleted');
-          }
+          MemoixSnackBar.show('${sandwich.name} deleted');
         }
         break;
     }
@@ -452,13 +461,14 @@ class _SandwichDetailViewState extends ConsumerState<_SandwichDetailView> {
       notes: sandwich.notes,
       imageUrl: sandwich.imageUrl,
       source: SandwichSource.personal.name,
-      isFavorite: false,
+      isFavourite: false,
       cookCount: 0,
       rating: 0,
       tags: sandwich.tags,
       createdAt: DateTime.now(),
       updatedAt: DateTime.now(),
       version: 1,
+      isShared: sandwich.isShared,
     );
 
     final repo = ref.read(sandwichRepositoryProvider);
