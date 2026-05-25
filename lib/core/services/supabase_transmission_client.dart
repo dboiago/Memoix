@@ -41,7 +41,7 @@ class SupabaseTransmissionClient implements RagTransmissionClient {
             'schema_version': 2,
             'lineage_hash': payload.lineageHash,
             'content_hash': payload.contentHash,
-            'payload': payload.toJson(),
+            'payload': _enrichRecipePayload(payload),
           });
     } on PostgrestException catch (e) {
       debugPrint(
@@ -66,7 +66,7 @@ class SupabaseTransmissionClient implements RagTransmissionClient {
             'schema_version': 2,
             'lineage_hash': payload.lineageHash,
             'content_hash': payload.contentHash,
-            'payload': payload.toJson(),
+            'payload': _enrichModernistPayload(payload),
           });
     } on PostgrestException catch (e) {
       debugPrint(
@@ -116,7 +116,7 @@ class SupabaseTransmissionClient implements RagTransmissionClient {
             'schema_version': 2,
             'lineage_hash': payload.lineageHash,
             'content_hash': payload.contentHash,
-            'payload': payload.toJson(),
+            'payload': _enrichPizzaPayload(payload),
           });
     } on PostgrestException catch (e) {
       debugPrint(
@@ -141,7 +141,7 @@ class SupabaseTransmissionClient implements RagTransmissionClient {
             'schema_version': 2,
             'lineage_hash': payload.lineageHash,
             'content_hash': payload.contentHash,
-            'payload': payload.toJson(),
+            'payload': _enrichSandwichPayload(payload),
           });
     } on PostgrestException catch (e) {
       debugPrint(
@@ -166,7 +166,7 @@ class SupabaseTransmissionClient implements RagTransmissionClient {
             'schema_version': 2,
             'lineage_hash': payload.lineageHash,
             'content_hash': payload.contentHash,
-            'payload': payload.toJson(),
+            'payload': _enrichCellarPayload(payload),
           });
     } on PostgrestException catch (e) {
       debugPrint(
@@ -191,7 +191,7 @@ class SupabaseTransmissionClient implements RagTransmissionClient {
             'schema_version': 2,
             'lineage_hash': payload.lineageHash,
             'content_hash': payload.contentHash,
-            'payload': payload.toJson(),
+            'payload': _enrichCheesePayload(payload),
           });
     } on PostgrestException catch (e) {
       debugPrint(
@@ -219,7 +219,7 @@ class SupabaseTransmissionClient implements RagTransmissionClient {
                 'schema_version': 2,
                 'lineage_hash': p.lineageHash,
                 'content_hash': p.contentHash,
-                'payload': p.toJson(),
+                'payload': _enrichRecipePayload(p),
               })
           .toList();
       await client
@@ -249,7 +249,7 @@ class SupabaseTransmissionClient implements RagTransmissionClient {
                 'schema_version': 2,
                 'lineage_hash': p.lineageHash,
                 'content_hash': p.contentHash,
-                'payload': p.toJson(),
+                'payload': _enrichModernistPayload(p),
               })
           .toList();
       await client
@@ -311,7 +311,7 @@ class SupabaseTransmissionClient implements RagTransmissionClient {
                 'schema_version': 2,
                 'lineage_hash': p.lineageHash,
                 'content_hash': p.contentHash,
-                'payload': p.toJson(),
+                'payload': _enrichPizzaPayload(p),
               })
           .toList();
       await client
@@ -341,7 +341,7 @@ class SupabaseTransmissionClient implements RagTransmissionClient {
                 'schema_version': 2,
                 'lineage_hash': p.lineageHash,
                 'content_hash': p.contentHash,
-                'payload': p.toJson(),
+                'payload': _enrichSandwichPayload(p),
               })
           .toList();
       await client
@@ -372,7 +372,7 @@ class SupabaseTransmissionClient implements RagTransmissionClient {
                 'schema_version': 2,
                 'lineage_hash': p.lineageHash,
                 'content_hash': p.contentHash,
-                'payload': p.toJson(),
+                'payload': _enrichCellarPayload(p),
               })
           .toList();
       await client
@@ -403,7 +403,7 @@ class SupabaseTransmissionClient implements RagTransmissionClient {
                 'schema_version': 2,
                 'lineage_hash': p.lineageHash,
                 'content_hash': p.contentHash,
-                'payload': p.toJson(),
+                'payload': _enrichCheesePayload(p),
               })
           .toList();
       await client
@@ -419,6 +419,79 @@ class SupabaseTransmissionClient implements RagTransmissionClient {
       debugPrint(
           '[SupabaseTransmissionClient] transmitCheeseBatch error — $e');
     }
+  }
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // Payload enrichment helpers
+  //
+  // Each helper calls the payload’s own toJson() (preserving all existing
+  // serialisation) then injects fields that are present on the local model
+  // but absent from the payload’s toJson() implementation.
+  // Null / empty values are included explicitly so the telemetry row always
+  // carries the fullest possible snapshot of the record.
+  // ─────────────────────────────────────────────────────────────────────────
+
+  /// Adds [subcategory], [continent], [country], [sourceUrl], [editCount],
+  /// [version] to the recipe object, and [alternative] + [bakerPercent] to
+  /// every ingredient entry.
+  Map<String, dynamic> _enrichRecipePayload(KnowledgePayload p) {
+    final json = p.toJson();
+    final recipe = json['recipe'] as Map<String, dynamic>;
+    recipe['region'] = p.recipe.subcategory;
+    recipe['continent'] = p.recipe.continent;
+    recipe['country'] = p.recipe.country;
+    recipe['sourceUrl'] = p.recipe.sourceUrl;
+    recipe['editCount'] = p.recipe.editCount;
+    recipe['version'] = p.recipe.version;
+    final ingredients = (recipe['ingredients'] as List<dynamic>)
+        .asMap()
+        .entries
+        .map((e) {
+          final m =
+              Map<String, dynamic>.from(e.value as Map<String, dynamic>);
+          final ing = p.recipe.ingredients[e.key];
+          m['alternative'] = ing.alternative;
+          m['bakerPercent'] = ing.bakerPercent;
+          return m;
+        })
+        .toList();
+    recipe['ingredients'] = ingredients;
+    return json;
+  }
+
+  /// Adds [sourceUrl] to the modernist recipe object.
+  Map<String, dynamic> _enrichModernistPayload(ModernistKnowledgePayload p) {
+    final json = p.toJson();
+    (json['recipe'] as Map<String, dynamic>)['sourceUrl'] = p.recipe.sourceUrl;
+    return json;
+  }
+
+  /// Adds [version] to the pizza recipe object.
+  Map<String, dynamic> _enrichPizzaPayload(PizzaKnowledgePayload p) {
+    final json = p.toJson();
+    (json['recipe'] as Map<String, dynamic>)['version'] = p.pizza.version;
+    return json;
+  }
+
+  /// Adds [version] to the sandwich recipe object.
+  Map<String, dynamic> _enrichSandwichPayload(SandwichKnowledgePayload p) {
+    final json = p.toJson();
+    (json['recipe'] as Map<String, dynamic>)['version'] = p.sandwich.version;
+    return json;
+  }
+
+  /// Adds [version] to the cellar entry object.
+  Map<String, dynamic> _enrichCellarPayload(CellarKnowledgePayload p) {
+    final json = p.toJson();
+    (json['entry'] as Map<String, dynamic>)['version'] = p.entry.version;
+    return json;
+  }
+
+  /// Adds [version] to the cheese entry object.
+  Map<String, dynamic> _enrichCheesePayload(CheeseKnowledgePayload p) {
+    final json = p.toJson();
+    (json['entry'] as Map<String, dynamic>)['version'] = p.entry.version;
+    return json;
   }
 }
 
