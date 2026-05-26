@@ -4,16 +4,30 @@ import '../../recipes/models/cuisine.dart';
 
 enum OmniQueryType { suggestion, collection }
 
+/// Meal-time context extracted from a free-form query.
+enum MealContext {
+  general, breakfast, lunch, dinner, dessert,
+  drink, bread, cheese, cellar, snack, charcuterie
+}
+
 class OmniQueryClassification {
   final OmniQueryType type;
   /// Title-cased cuisine terms detected in the query (e.g. ['Italian', 'South African']).
   final List<String>? detectedCuisines;
   final String? detectedCourse;
+  final String? detectedIngredient;
+  final int? maxTimeMinutes;
+  final bool wantsUntried;
+  final MealContext mealContext;
 
   const OmniQueryClassification({
     required this.type,
     this.detectedCuisines,
     this.detectedCourse,
+    this.detectedIngredient,
+    this.maxTimeMinutes,
+    this.wantsUntried = false,
+    this.mealContext = MealContext.general,
   });
 
   /// Lowercased cuisine list for RPC filter_cuisine calls.
@@ -50,6 +64,19 @@ class HeuristicQueryClassifier implements OmniQueryClassifier {
   OmniQueryClassification classify(String query) {
     final q = query.toLowerCase();
 
+    // Pre-compute intent fields from a single pass over the query.
+    final mealCtx = _extractMeal(q);
+    final rawTime = _extractTime(q);
+    // Apply meal-context time defaults when no explicit time is present.
+    int? resolvedTime = rawTime;
+    if (resolvedTime == null) {
+      if (mealCtx == MealContext.lunch)      resolvedTime = 40;
+      if (mealCtx == MealContext.breakfast)  resolvedTime = 30;
+      if (mealCtx == MealContext.snack)      resolvedTime = 15;
+    }
+    final ingredient = _extractIngredient(q);
+    final untried = _extractUntried(q);
+
     final (:cuisine, :course, :matchCount) = _scanTaxonomy(q);
 
     // Step 0: Cuisine-browse intent.
@@ -68,6 +95,10 @@ class HeuristicQueryClassifier implements OmniQueryClassifier {
         type: OmniQueryType.collection,
         detectedCuisines: matchedCuisines,
         detectedCourse: course,
+        detectedIngredient: ingredient,
+        maxTimeMinutes: resolvedTime,
+        wantsUntried: untried,
+        mealContext: mealCtx,
       );
     }
 
@@ -78,6 +109,10 @@ class HeuristicQueryClassifier implements OmniQueryClassifier {
           type: OmniQueryType.suggestion,
           detectedCuisines: cuisine != null ? [_toTitleCase(cuisine)] : null,
           detectedCourse: course,
+          detectedIngredient: ingredient,
+          maxTimeMinutes: resolvedTime,
+          wantsUntried: untried,
+          mealContext: mealCtx,
         );
       }
     }
@@ -89,6 +124,10 @@ class HeuristicQueryClassifier implements OmniQueryClassifier {
         type: OmniQueryType.suggestion,
         detectedCuisines: cuisine != null ? [_toTitleCase(cuisine)] : null,
         detectedCourse: course,
+        detectedIngredient: ingredient,
+        maxTimeMinutes: resolvedTime,
+        wantsUntried: untried,
+        mealContext: mealCtx,
       );
     }
 
@@ -99,6 +138,10 @@ class HeuristicQueryClassifier implements OmniQueryClassifier {
         type: OmniQueryType.collection,
         detectedCuisines: cuisine != null ? [_toTitleCase(cuisine)] : null,
         detectedCourse: course,
+        detectedIngredient: ingredient,
+        maxTimeMinutes: resolvedTime,
+        wantsUntried: untried,
+        mealContext: mealCtx,
       );
     }
 
@@ -110,6 +153,10 @@ class HeuristicQueryClassifier implements OmniQueryClassifier {
         type: OmniQueryType.collection,
         detectedCuisines: cuisine != null ? [_toTitleCase(cuisine)] : null,
         detectedCourse: course,
+        detectedIngredient: ingredient,
+        maxTimeMinutes: resolvedTime,
+        wantsUntried: untried,
+        mealContext: mealCtx,
       );
     }
     if (matchCount >= 2) {
@@ -117,6 +164,10 @@ class HeuristicQueryClassifier implements OmniQueryClassifier {
         type: OmniQueryType.suggestion,
         detectedCuisines: cuisine != null ? [_toTitleCase(cuisine)] : null,
         detectedCourse: course,
+        detectedIngredient: ingredient,
+        maxTimeMinutes: resolvedTime,
+        wantsUntried: untried,
+        mealContext: mealCtx,
       );
     }
 
@@ -125,8 +176,49 @@ class HeuristicQueryClassifier implements OmniQueryClassifier {
       type: OmniQueryType.suggestion,
       detectedCuisines: cuisine != null ? [_toTitleCase(cuisine)] : null,
       detectedCourse: course,
+      detectedIngredient: ingredient,
+      maxTimeMinutes: resolvedTime,
+      wantsUntried: untried,
+      mealContext: mealCtx,
     );
   }
+
+  MealContext _extractMeal(String q) {
+    bool has(String pattern) =>
+        RegExp(r'\b(' + pattern + r')\b', caseSensitive: false).hasMatch(q);
+
+    if (has('dessert|sweets?|cake|cookies|pastry')) return MealContext.dessert;
+    if (has('drinks?|wine|beer|cocktail|beverages?|thirsty')) return MealContext.drink;
+    if (has('charcuterie|board')) return MealContext.charcuterie;
+    if (has('cheese')) return MealContext.cheese;
+    if (has('cellar')) return MealContext.cellar;
+    if (has('bread|sourdough|bak(e|ing)|loaf')) return MealContext.bread;
+    if (has('snacks?|nibble|munchies|munch')) return MealContext.snack;
+    if (has('breakfast|morning|brunch')) return MealContext.breakfast;
+    if (has('lunch|midday|afternoon')) return MealContext.lunch;
+    if (has('dinner|tonight|supper|evening')) return MealContext.dinner;
+    return MealContext.general;
+  }
+
+  int? _extractTime(String q) {
+    final hrMatch = RegExp(r'(\d+)\s*h').firstMatch(q);
+    final minMatch = RegExp(r'(\d+)\s*m').firstMatch(q);
+    int total = 0;
+    if (hrMatch != null) total += int.parse(hrMatch.group(1)!) * 60;
+    if (minMatch != null) total += int.parse(minMatch.group(1)!);
+    return total > 0 ? total : null;
+  }
+
+  String? _extractIngredient(String q) {
+    final m = RegExp(
+        r'\b(?:with|use up|using|got)\s+([a-zA-Z]+)\b',
+        caseSensitive: false).firstMatch(q);
+    return m?.group(1);
+  }
+
+  bool _extractUntried(String q) =>
+      RegExp(r'\b(untried|never made|new|test|backlog)\b',
+          caseSensitive: false).hasMatch(q);
 
   ({String? cuisine, String? course, int matchCount}) _scanTaxonomy(String q) {
     String? firstCuisine;
