@@ -42,6 +42,18 @@ class OmniQueryClassification {
   /// Lowercased cuisine list for RPC filter_cuisine calls.
   List<String>? get cuisinesForFilter =>
       detectedCuisines?.map((c) => c.toLowerCase()).toList();
+
+  /// True when no structured SQL signals can be derived from this classification.
+  /// Used to detect vibe queries that cannot be meaningfully served without a
+  /// provider key.
+  bool get isUnmappable =>
+      preferredCourses.isEmpty &&
+      !prefersLongProject &&
+      excludeCuisine == null &&
+      (detectedCuisines == null || detectedCuisines!.isEmpty) &&
+      detectedCourse == null &&
+      detectedIngredient == null &&
+      maxTimeMinutes == null;
 }
 
 abstract class OmniQueryClassifier {

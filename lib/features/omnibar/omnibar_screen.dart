@@ -1209,6 +1209,8 @@ class _WalkinSection extends ConsumerStatefulWidget {
 class _WalkinSectionState extends ConsumerState<_WalkinSection> {
   Future<List<RagQueryResult>>? _future;
   String? _lastQuery;
+  bool _showingDiscover = false;
+  Future<List<RagQueryResult>>? _discoverFuture;
 
   Future<List<RagQueryResult>> _resolve() {
     if (_future == null || _lastQuery != widget.query) {
@@ -1242,12 +1244,102 @@ class _WalkinSectionState extends ConsumerState<_WalkinSection> {
       _future = null;
       _lastQuery = null;
     }
+    if (widget.classification != oldWidget.classification) {
+      _showingDiscover = false;
+      _discoverFuture = null;
+    }
   }
 
   @override
   Widget build(BuildContext context) {
     ref.watch(aiSettingsProvider);
     final theme = Theme.of(context);
+    final hasActiveProvider =
+        ref.read(aiSettingsProvider.notifier).hasActiveProvider;
+
+    if (!hasActiveProvider && widget.classification.isUnmappable) {
+      if (!_showingDiscover) {
+        return ConstrainedBox(
+          constraints: const BoxConstraints(maxHeight: 220),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Divider(height: 1, color: theme.colorScheme.outlineVariant),
+              Padding(
+                padding: const EdgeInsets.fromLTRB(16, 10, 16, 4),
+                child: Text(
+                  'This kind of question needs an agent key to answer well.',
+                  style: theme.textTheme.labelSmall?.copyWith(
+                    color: theme.colorScheme.onSurfaceVariant,
+                    letterSpacing: 0.8,
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.fromLTRB(8, 0, 16, 8),
+                child: TextButton(
+                  onPressed: () {
+                    setState(() {
+                      _showingDiscover = true;
+                      _discoverFuture = ref
+                          .read(ragRetrievalServiceProvider)
+                          .sqlDiscover(limit: 20);
+                    });
+                  },
+                  child: Text(
+                    'Show me some recipes anyway.',
+                    style: theme.textTheme.labelMedium?.copyWith(
+                      color: theme.colorScheme.secondary,
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        );
+      }
+
+      return FutureBuilder<List<RagQueryResult>>(
+        future: _discoverFuture,
+        builder: (context, snapshot) {
+          if (!snapshot.hasData || snapshot.data!.isEmpty) {
+            return const SizedBox.shrink();
+          }
+          final results = snapshot.data!;
+          return ConstrainedBox(
+            constraints: const BoxConstraints(maxHeight: 220),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Divider(height: 1, color: theme.colorScheme.outlineVariant),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(16, 10, 16, 4),
+                  child: Text(
+                    'Some recipes from your collection.',
+                    style: theme.textTheme.labelSmall?.copyWith(
+                      color: theme.colorScheme.onSurfaceVariant,
+                      letterSpacing: 0.8,
+                    ),
+                  ),
+                ),
+                Expanded(
+                  child: ListView.builder(
+                    padding: const EdgeInsets.fromLTRB(16, 0, 16, 12),
+                    itemCount: results.length,
+                    itemBuilder: (_, i) => _WalkinResultTile(
+                      result: results[i],
+                      onClose: widget.onClose,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          );
+        },
+      );
+    }
+
     return FutureBuilder<List<RagQueryResult>>(
       future: _resolve(),
       builder: (context, snapshot) {
