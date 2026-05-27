@@ -8,6 +8,7 @@ import 'package:uuid/uuid.dart';
 import '../../app/app_shell.dart';
 import '../../app/routes/router.dart';
 import '../../core/providers/connectivity_provider.dart';
+import '../ai/ai_settings_provider.dart';
 import '../../shared/widgets/memoix_filter_chip.dart';
 import '../../shared/widgets/course_card.dart';
 import '../rag/models/rag_query_result.dart';
@@ -1212,11 +1213,24 @@ class _WalkinSectionState extends ConsumerState<_WalkinSection> {
   Future<List<RagQueryResult>> _resolve() {
     if (_future == null || _lastQuery != widget.query) {
       _lastQuery = widget.query;
-      _future = ref.read(ragRetrievalServiceProvider).query(
-        widget.query,
-        cuisine: widget.classification.cuisinesForFilter?.firstOrNull,
-        course: widget.classification.detectedCourse,
-      );
+      final hasActiveProvider =
+          ref.read(aiSettingsProvider.notifier).hasActiveProvider;
+      if (hasActiveProvider) {
+        _future = ref.read(ragRetrievalServiceProvider).query(
+          widget.query,
+          cuisine: widget.classification.cuisinesForFilter?.firstOrNull,
+          course: widget.classification.detectedCourse,
+        );
+      } else {
+        _future = ref.read(ragRetrievalServiceProvider).sqlFilter(
+          query: widget.query,
+          cuisine: widget.classification.cuisinesForFilter?.firstOrNull,
+          course: widget.classification.detectedCourse,
+          ingredient: widget.classification.detectedIngredient,
+          maxTimeMinutes: widget.classification.maxTimeMinutes,
+          wantsUntried: widget.classification.wantsUntried,
+        );
+      }
     }
     return _future!;
   }
@@ -1232,6 +1246,7 @@ class _WalkinSectionState extends ConsumerState<_WalkinSection> {
 
   @override
   Widget build(BuildContext context) {
+    ref.watch(aiSettingsProvider);
     final theme = Theme.of(context);
     return FutureBuilder<List<RagQueryResult>>(
       future: _resolve(),
@@ -1296,6 +1311,7 @@ class _WalkinCollectionView extends ConsumerStatefulWidget {
 
 class _WalkinCollectionViewState extends ConsumerState<_WalkinCollectionView> {
   Future<List<RagQueryResult>>? _future;
+  Future<List<RagQueryResult>>? _discoverFuture;
   String? _lastQuery;
   bool _showAll = false;
   String? _selectedCourse;
@@ -1355,21 +1371,55 @@ class _WalkinCollectionViewState extends ConsumerState<_WalkinCollectionView> {
     super.didUpdateWidget(oldWidget);
     if (widget.query != oldWidget.query) {
       _future = null;
+      _discoverFuture = null;
       _lastQuery = null;
       _showAll = false;
       _selectedCourse = null;
     }
   }
 
+  Future<List<RagQueryResult>> _resolveDiscover() {
+    _discoverFuture ??=
+        ref.read(ragRetrievalServiceProvider).sqlDiscover();
+    return _discoverFuture!;
+  }
+
   @override
   Widget build(BuildContext context) {
+    ref.watch(aiSettingsProvider);
+    final hasActiveProvider =
+        ref.read(aiSettingsProvider.notifier).hasActiveProvider;
+
     final hasTaxonomy =
         (widget.classification.detectedCuisines?.isNotEmpty ?? false) ||
         widget.classification.detectedCourse != null;
 
-    // No taxonomy detected — fall back to local suggestion view.
+    // No taxonomy detected — use sqlDiscover when no BYOK key; otherwise
+    // fall back to local suggestion view.
     if (!hasTaxonomy) {
-      return _OmniResultsView(query: widget.query, classification: widget.classification, onClose: widget.onClose);
+      if (!hasActiveProvider) {
+        return FutureBuilder<List<RagQueryResult>>(
+          future: _resolveDiscover(),
+          builder: (context, snapshot) {
+            if (snapshot.connectionState == ConnectionState.waiting) {
+              return const Center(child: CircularProgressIndicator());
+            }
+            if (!snapshot.hasData || snapshot.data!.isEmpty) {
+              return _OmniResultsView(
+                query: widget.query,
+                classification: widget.classification,
+                onClose: widget.onClose,
+              );
+            }
+            return _buildSpecificView(context, snapshot.data!);
+          },
+        );
+      }
+      return _OmniResultsView(
+        query: widget.query,
+        classification: widget.classification,
+        onClose: widget.onClose,
+      );
     }
 
     return FutureBuilder<List<RagQueryResult>>(

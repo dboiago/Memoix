@@ -25,6 +25,35 @@ class RagRetrievalService {
   }) {
     return _client.query(query, limit: limit, cuisine: cuisine, course: course);
   }
+
+  /// Queries the Walk-in corpus using SQL filters, with no vector embedding
+  /// required. Suitable when no BYOK AI key is active.
+  Future<List<RagQueryResult>> sqlFilter({
+    String? query,
+    String? cuisine,
+    String? region,
+    String? course,
+    String? ingredient,
+    int? maxTimeMinutes,
+    bool wantsUntried = false,
+    int limit = 20,
+  }) {
+    return _client.sqlFilter(
+      query: query,
+      cuisine: cuisine,
+      region: region,
+      course: course,
+      ingredient: ingredient,
+      maxTimeMinutes: maxTimeMinutes,
+      wantsUntried: wantsUntried,
+      limit: limit,
+    );
+  }
+
+  /// Queries the Walk-in corpus for a curated discovery set with no filters.
+  Future<List<RagQueryResult>> sqlDiscover({int limit = 20}) {
+    return _client.sqlDiscover(limit: limit);
+  }
 }
 
 /// Availability gate for Memoix-powered features.

@@ -220,4 +220,54 @@ class SupabaseRetrievalClient implements RagRetrievalClient {
         .map((row) => RagQueryResult.fromJson(row as Map<String, dynamic>))
         .toList();
   }
+
+  @override
+  Future<List<RagQueryResult>> sqlFilter({
+    String? query,
+    String? cuisine,
+    String? region,
+    String? course,
+    String? ingredient,
+    int? maxTimeMinutes,
+    bool wantsUntried = false,
+    int limit = 20,
+  }) async {
+    final params = <String, dynamic>{
+      'match_count': limit,
+      if (query != null) 'filter_query': query,
+      if (cuisine != null) 'filter_cuisine': cuisine,
+      if (region != null) 'filter_region': region,
+      if (course != null) 'filter_course': course,
+      if (ingredient != null) 'filter_ingredient': ingredient,
+      if (maxTimeMinutes != null) 'filter_max_time_minutes': maxTimeMinutes,
+      if (wantsUntried) 'filter_wants_untried': true,
+    };
+
+    final dynamic result = await _supabaseClient.rpc(
+      'search_walkin_sql_filter',
+      params: params,
+    );
+
+    final rows = result as List<dynamic>;
+    return rows
+        .map((row) => RagQueryResult.fromJson(row as Map<String, dynamic>))
+        .toList();
+  }
+
+  @override
+  Future<List<RagQueryResult>> sqlDiscover({int limit = 20}) async {
+    final params = <String, dynamic>{
+      'match_count': limit,
+    };
+
+    final dynamic result = await _supabaseClient.rpc(
+      'search_walkin_sql_discover',
+      params: params,
+    );
+
+    final rows = result as List<dynamic>;
+    return rows
+        .map((row) => RagQueryResult.fromJson(row as Map<String, dynamic>))
+        .toList();
+  }
 }

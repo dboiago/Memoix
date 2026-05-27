@@ -42,6 +42,22 @@ class RagQueryResult {
   /// Higher values indicate stronger semantic relevance to the query.
   final double similarityScore;
 
+  /// Geographic region (e.g. `'Eastern Europe'`). Null when not specified.
+  final String? region;
+
+  /// Technique or method label (e.g. `'slow-cooked'`). Null when not specified.
+  final String? technique;
+
+  /// Difficulty label (e.g. `'beginner'`, `'advanced'`). Null when not specified.
+  final String? difficulty;
+
+  /// Taxonomy tags returned by the RPC (e.g. `['gluten-free', 'quick']`).
+  final List<String> tags;
+
+  /// Domain type slug that distinguishes specialised recipe kinds
+  /// (e.g. `'pizza'`, `'smoking'`). Null when not specified.
+  final String? domainType;
+
   const RagQueryResult({
     required this.name,
     required this.courseLabel,
@@ -54,6 +70,11 @@ class RagQueryResult {
     this.isPitNote = false,
     this.cuisine,
     this.ingredientNames = const [],
+    this.region,
+    this.technique,
+    this.difficulty,
+    this.tags = const [],
+    this.domainType,
   });
 
   /// Deserialises a [RagQueryResult] from a Supabase response row.
@@ -75,7 +96,12 @@ class RagQueryResult {
       ingredientNames: (json['ingredient_names'] as List<dynamic>?)
               ?.cast<String>() ??
           const [],
-      similarityScore: (json['similarity_score'] as num).toDouble(),
+      similarityScore: (json['similarity_score'] as num?)?.toDouble() ?? 0.0,
+      region: json['region'] as String?,
+      technique: json['technique'] as String?,
+      difficulty: json['difficulty'] as String?,
+      tags: (json['tags'] as List<dynamic>?)?.cast<String>() ?? const [],
+      domainType: json['domain_type'] as String?,
     );
   }
 }
