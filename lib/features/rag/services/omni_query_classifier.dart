@@ -19,6 +19,12 @@ class OmniQueryClassification {
   final int? maxTimeMinutes;
   final bool wantsUntried;
   final MealContext mealContext;
+  /// Soft course hints derived from vibe markers. Not a hard filter.
+  final List<String> preferredCourses;
+  /// True when the query signals the user has time for a long project.
+  final bool prefersLongProject;
+  /// Cuisine to hard-exclude, extracted from aversion phrases (e.g. "sick of Italian").
+  final String? excludeCuisine;
 
   const OmniQueryClassification({
     required this.type,
@@ -28,6 +34,9 @@ class OmniQueryClassification {
     this.maxTimeMinutes,
     this.wantsUntried = false,
     this.mealContext = MealContext.general,
+    this.preferredCourses = const [],
+    this.prefersLongProject = false,
+    this.excludeCuisine,
   });
 
   /// Lowercased cuisine list for RPC filter_cuisine calls.
@@ -76,6 +85,9 @@ class HeuristicQueryClassifier implements OmniQueryClassifier {
     }
     final ingredient = _extractIngredient(q);
     final untried = _extractUntried(q);
+    final preferredCourses = _extractPreferredCourses(q);
+    final prefersLongProject = _extractPrefersLongProject(q);
+    final excludeCuisine = _extractExcludeCuisine(q);
 
     final (:cuisine, :course, :matchCount) = _scanTaxonomy(q);
 
@@ -99,6 +111,9 @@ class HeuristicQueryClassifier implements OmniQueryClassifier {
         maxTimeMinutes: resolvedTime,
         wantsUntried: untried,
         mealContext: mealCtx,
+        preferredCourses: preferredCourses,
+        prefersLongProject: prefersLongProject,
+        excludeCuisine: excludeCuisine,
       );
     }
 
@@ -113,6 +128,9 @@ class HeuristicQueryClassifier implements OmniQueryClassifier {
           maxTimeMinutes: resolvedTime,
           wantsUntried: untried,
           mealContext: mealCtx,
+          preferredCourses: preferredCourses,
+          prefersLongProject: prefersLongProject,
+          excludeCuisine: excludeCuisine,
         );
       }
     }
@@ -128,6 +146,9 @@ class HeuristicQueryClassifier implements OmniQueryClassifier {
         maxTimeMinutes: resolvedTime,
         wantsUntried: untried,
         mealContext: mealCtx,
+        preferredCourses: preferredCourses,
+        prefersLongProject: prefersLongProject,
+        excludeCuisine: excludeCuisine,
       );
     }
 
@@ -142,6 +163,9 @@ class HeuristicQueryClassifier implements OmniQueryClassifier {
         maxTimeMinutes: resolvedTime,
         wantsUntried: untried,
         mealContext: mealCtx,
+        preferredCourses: preferredCourses,
+        prefersLongProject: prefersLongProject,
+        excludeCuisine: excludeCuisine,
       );
     }
 
@@ -157,6 +181,9 @@ class HeuristicQueryClassifier implements OmniQueryClassifier {
         maxTimeMinutes: resolvedTime,
         wantsUntried: untried,
         mealContext: mealCtx,
+        preferredCourses: preferredCourses,
+        prefersLongProject: prefersLongProject,
+        excludeCuisine: excludeCuisine,
       );
     }
     if (matchCount >= 2) {
@@ -168,6 +195,9 @@ class HeuristicQueryClassifier implements OmniQueryClassifier {
         maxTimeMinutes: resolvedTime,
         wantsUntried: untried,
         mealContext: mealCtx,
+        preferredCourses: preferredCourses,
+        prefersLongProject: prefersLongProject,
+        excludeCuisine: excludeCuisine,
       );
     }
 
@@ -180,6 +210,9 @@ class HeuristicQueryClassifier implements OmniQueryClassifier {
       maxTimeMinutes: resolvedTime,
       wantsUntried: untried,
       mealContext: mealCtx,
+      preferredCourses: preferredCourses,
+      prefersLongProject: prefersLongProject,
+      excludeCuisine: excludeCuisine,
     );
   }
 
@@ -253,4 +286,34 @@ class HeuristicQueryClassifier implements OmniQueryClassifier {
       .split(' ')
       .map((w) => w.isEmpty ? '' : '${w[0].toUpperCase()}${w.substring(1)}')
       .join(' ');
+
+  List<String> _extractPreferredCourses(String q) {
+    final courses = <String>{};
+    if (_matchesBoundary(q, 'light') || _matchesBoundary(q, 'fresh') || _matchesBoundary(q, 'simple')) {
+      courses.addAll(['soups', 'salad', 'sides']);
+    }
+    if (_matchesBoundary(q, 'cozy') || _matchesBoundary(q, 'comfort') ||
+        _matchesBoundary(q, 'warm') || _matchesBoundary(q, 'hearty') || _matchesBoundary(q, 'rainy')) {
+      courses.addAll(['mains', 'soups']);
+    }
+    if (_matchesBoundary(q, 'heavy') || _matchesBoundary(q, 'rich') || _matchesBoundary(q, 'indulgent')) {
+      courses.addAll(['mains', 'desserts', 'smoking']);
+    }
+    return courses.toList();
+  }
+
+  bool _extractPrefersLongProject(String q) =>
+      q.contains('long weekend') ||
+      _matchesBoundary(q, 'project') ||
+      q.contains('i have time') ||
+      q.contains('day off') ||
+      q.contains('taking my time');
+
+  String? _extractExcludeCuisine(String q) {
+    final m = RegExp(
+      r'\b(?:sick of|tired of|avoid|no)\s+([a-z]+)\b',
+      caseSensitive: false,
+    ).firstMatch(q);
+    return m?.group(1)?.trim().toLowerCase();
+  }
 }
