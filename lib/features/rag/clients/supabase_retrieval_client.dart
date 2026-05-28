@@ -236,14 +236,14 @@ class SupabaseRetrievalClient implements RagRetrievalClient {
     String? excludeCuisine,
   }) async {
     final params = <String, dynamic>{
-      'match_count': limit,
-      if (query != null) 'filter_query': query,
-      if (cuisine != null) 'filter_cuisine': cuisine,
-      if (region != null) 'filter_region': region,
-      if (course != null) 'filter_course': course,
-      if (ingredient != null) 'filter_ingredient': ingredient,
-      if (maxTimeMinutes != null) 'filter_max_time_minutes': maxTimeMinutes,
-      if (wantsUntried) 'filter_wants_untried': true,
+      'p_match_count': limit,
+      if (query != null) 'p_query': query,
+      if (cuisine != null) 'p_cuisine': cuisine,
+      if (region != null) 'p_region': region,
+      if (course != null) 'p_course': course,
+      if (ingredient != null) 'p_ingredient': ingredient,
+      if (maxTimeMinutes != null) 'p_max_time_minutes': maxTimeMinutes,
+      if (wantsUntried) 'p_wants_untried': true,
       if (preferredCourses != null && preferredCourses.isNotEmpty)
         'p_preferred_courses': preferredCourses,
       if (prefersLongProject) 'p_prefers_long_project': true,
