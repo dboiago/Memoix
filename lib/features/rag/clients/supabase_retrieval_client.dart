@@ -264,7 +264,7 @@ class SupabaseRetrievalClient implements RagRetrievalClient {
   @override
   Future<List<RagQueryResult>> sqlDiscover({int limit = 20}) async {
     final params = <String, dynamic>{
-      'match_count': limit,
+      'p_match_count': limit,
     };
 
     final dynamic result = await _supabaseClient.rpc(
