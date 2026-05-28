@@ -585,7 +585,7 @@ class _OmnibarScreenState extends ConsumerState<OmnibarScreen> {
 // Results view
 // ─────────────────────────────────────────────────────────────────────────────
 
-class _OmniResultsView extends ConsumerWidget {
+class _OmniResultsView extends ConsumerStatefulWidget {
   final String query;
   final OmniQueryClassification classification;
   final VoidCallback onClose;
@@ -597,8 +597,27 @@ class _OmniResultsView extends ConsumerWidget {
   });
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
-    if (query.trim().isEmpty) {
+  ConsumerState<_OmniResultsView> createState() => _OmniResultsViewState();
+}
+
+class _OmniResultsViewState extends ConsumerState<_OmniResultsView> {
+  // Cached candidate pool — rebuilt only when source data or intent changes.
+  List<_OmniCandidate> _cachedEligible = [];
+  List<_OmniCandidate> _cachedMemoixEligible = [];
+
+  // Identity keys for the last source data and intent the pool was built from.
+  Object? _poolKeyRecipes;
+  Object? _poolKeyPizzas;
+  Object? _poolKeySandwiches;
+  Object? _poolKeySmoking;
+  Object? _poolKeyModernist;
+  Object? _poolKeyCheese;
+  Object? _poolKeyCellar;
+  MealContext? _poolKeyIntent;
+
+  @override
+  Widget build(BuildContext context) {
+    if (widget.query.trim().isEmpty) {
       final theme = Theme.of(context);
       return Center(
         child: Text(
@@ -610,7 +629,7 @@ class _OmniResultsView extends ConsumerWidget {
       );
     }
 
-    final intent = classification.mealContext;
+    final intent = widget.classification.mealContext;
 
     final recipesAsync =
         (intent != MealContext.cheese && intent != MealContext.cellar)
@@ -827,24 +846,44 @@ class _OmniResultsView extends ConsumerWidget {
       }
     }
 
-    addRecipes();
-    addPizzas();
-    addSandwiches();
-    addSmoking();
-    addModernist();
-    addCheese();
-    addCellar();
+    if (!identical(_poolKeyRecipes, recipes) ||
+        !identical(_poolKeyPizzas, pizzas) ||
+        !identical(_poolKeySandwiches, sandwiches) ||
+        !identical(_poolKeySmoking, smokingAll) ||
+        !identical(_poolKeyModernist, modernists) ||
+        !identical(_poolKeyCheese, cheeseEntries) ||
+        !identical(_poolKeyCellar, cellarEntries) ||
+        _poolKeyIntent != intent) {
+      addRecipes();
+      addPizzas();
+      addSandwiches();
+      addSmoking();
+      addModernist();
+      addCheese();
+      addCellar();
+
+      _cachedEligible = eligible;
+      _cachedMemoixEligible = memoixEligible;
+      _poolKeyRecipes = recipes;
+      _poolKeyPizzas = pizzas;
+      _poolKeySandwiches = sandwiches;
+      _poolKeySmoking = smokingAll;
+      _poolKeyModernist = modernists;
+      _poolKeyCheese = cheeseEntries;
+      _poolKeyCellar = cellarEntries;
+      _poolKeyIntent = intent;
+    }
 
     final rng = Random();
-    final selected = _selectSuggestions(eligible, memoixEligible, rng, classification);
+    final selected = _selectSuggestions(_cachedEligible, _cachedMemoixEligible, rng, widget.classification);
 
     if (selected.isEmpty) {
       final theme = Theme.of(context);
       final bool isGeneral = intent == MealContext.general &&
-          (classification.detectedCuisines == null || classification.detectedCuisines!.isEmpty) &&
-          classification.detectedIngredient == null &&
-          classification.maxTimeMinutes == null &&
-          !classification.wantsUntried;
+          (widget.classification.detectedCuisines == null || widget.classification.detectedCuisines!.isEmpty) &&
+          widget.classification.detectedIngredient == null &&
+          widget.classification.maxTimeMinutes == null &&
+          !widget.classification.wantsUntried;
       if (!isGeneral) {
         final mealLabel = intent != MealContext.general ? intent.name : 'matching';
         return Center(
@@ -876,7 +915,7 @@ class _OmniResultsView extends ConsumerWidget {
 
     return _SuggestionsLayout(
       candidates: selected,
-      onClose: onClose,
+      onClose: widget.onClose,
     );
   }
 }
