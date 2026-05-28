@@ -1261,7 +1261,9 @@ class _WalkinSectionState extends ConsumerState<_WalkinSection> {
       _lastQuery = widget.query;
       final hasActiveProvider =
           ref.read(aiSettingsProvider.notifier).hasActiveProvider;
-      if (hasActiveProvider) {
+      if (hasActiveProvider && widget.classification.isUnmappable) {
+        _future = ref.read(ragRetrievalServiceProvider).sqlDiscover();
+      } else if (hasActiveProvider) {
         _future = ref.read(ragRetrievalServiceProvider).query(
           widget.query,
           cuisine: widget.classification.cuisinesForFilter?.firstOrNull,
