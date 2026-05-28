@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'dart:math';
 
 import 'package:flutter/cupertino.dart';
@@ -9,6 +10,9 @@ import '../../app/app_shell.dart';
 import '../../app/routes/router.dart';
 import '../../core/providers/connectivity_provider.dart';
 import '../ai/ai_settings_provider.dart';
+import '../ai/services/ai_service.dart';
+import '../ai/services/memoix_ai_service.dart';
+import '../import/ai/walkin_reason_line_prompt.dart';
 import '../../shared/widgets/memoix_filter_chip.dart';
 import '../../shared/widgets/course_card.dart';
 import '../rag/models/rag_query_result.dart';
@@ -1211,6 +1215,7 @@ class _WalkinSectionState extends ConsumerState<_WalkinSection> {
   String? _lastQuery;
   bool _showingDiscover = false;
   Future<List<RagQueryResult>>? _discoverFuture;
+  Future<Map<String, String>>? _reasonsFuture;
 
   Future<List<RagQueryResult>> _resolve() {
     if (_future == null || _lastQuery != widget.query) {
@@ -1243,10 +1248,41 @@ class _WalkinSectionState extends ConsumerState<_WalkinSection> {
     if (widget.query != oldWidget.query) {
       _future = null;
       _lastQuery = null;
+      _reasonsFuture = null;
     }
     if (widget.classification != oldWidget.classification) {
       _showingDiscover = false;
       _discoverFuture = null;
+      _reasonsFuture = null;
+    }
+  }
+
+  Future<Map<String, String>> _generateReasons(
+    List<RagQueryResult> results,
+  ) async {
+    try {
+      final service = ref.read(aiServiceProvider);
+      final response = await service.sendMessage(AiRequest(
+        systemPrompt: WalkinReasonLinePrompt.buildSystemPrompt(),
+        text: WalkinReasonLinePrompt.buildUserMessage(widget.query, results),
+        temperature: 0.7,
+      ));
+      if (!response.isSuccess) return {};
+      final raw = response.data!['reasons'];
+      if (raw is! List) return {};
+      final map = <String, String>{};
+      for (final item in raw) {
+        if (item is Map<String, dynamic>) {
+          final name = item['name'] as String?;
+          final reason = item['reason'] as String?;
+          if (name != null && reason != null) {
+            map[name] = reason;
+          }
+        }
+      }
+      return map;
+    } catch (_) {
+      return {};
     }
   }
 
@@ -1347,6 +1383,15 @@ class _WalkinSectionState extends ConsumerState<_WalkinSection> {
           return const SizedBox.shrink();
         }
         final results = snapshot.data!;
+        if (hasActiveProvider && _reasonsFuture == null) {
+          WidgetsBinding.instance.addPostFrameCallback((_) {
+            if (mounted) {
+              setState(() {
+                _reasonsFuture = _generateReasons(results);
+              });
+            }
+          });
+        }
         return ConstrainedBox(
           constraints: const BoxConstraints(maxHeight: 220),
           child: Column(
@@ -1364,13 +1409,20 @@ class _WalkinSectionState extends ConsumerState<_WalkinSection> {
                 ),
               ),
               Expanded(
-                child: ListView.builder(
-                  padding: const EdgeInsets.fromLTRB(16, 0, 16, 12),
-                  itemCount: results.length,
-                  itemBuilder: (_, i) => _WalkinResultTile(
-                    result: results[i],
-                    onClose: widget.onClose,
-                  ),
+                child: FutureBuilder<Map<String, String>>(
+                  future: _reasonsFuture,
+                  builder: (context, reasonsSnapshot) {
+                    final reasons = reasonsSnapshot.data ?? const {};
+                    return ListView.builder(
+                      padding: const EdgeInsets.fromLTRB(16, 0, 16, 12),
+                      itemCount: results.length,
+                      itemBuilder: (_, i) => _WalkinResultTile(
+                        result: results[i],
+                        onClose: widget.onClose,
+                        reason: reasons[results[i].name],
+                      ),
+                    );
+                  },
                 ),
               ),
             ],
@@ -1682,8 +1734,13 @@ class _WalkinCollectionViewState extends ConsumerState<_WalkinCollectionView> {
 class _WalkinResultTile extends StatelessWidget {
   final RagQueryResult result;
   final VoidCallback onClose;
+  final String? reason;
 
-  const _WalkinResultTile({required this.result, required this.onClose});
+  const _WalkinResultTile({
+    required this.result,
+    required this.onClose,
+    this.reason,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -1729,6 +1786,16 @@ class _WalkinResultTile extends StatelessWidget {
                 color: theme.colorScheme.onSurface,
               ),
             ),
+            if (reason != null) ...[
+              const SizedBox(height: 4),
+              Text(
+                reason!,
+                style: theme.textTheme.bodySmall?.copyWith(
+                  color: theme.colorScheme.onSurfaceVariant,
+                  fontStyle: FontStyle.italic,
+                ),
+              ),
+            ],
             Divider(
               height: 24,
               color: theme.colorScheme.outlineVariant,
