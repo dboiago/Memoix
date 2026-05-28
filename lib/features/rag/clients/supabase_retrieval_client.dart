@@ -224,7 +224,7 @@ class SupabaseRetrievalClient implements RagRetrievalClient {
   @override
   Future<List<RagQueryResult>> sqlFilter({
     String? query,
-    String? cuisine,
+    List<String>? cuisine,
     String? region,
     String? course,
     String? ingredient,
@@ -238,7 +238,7 @@ class SupabaseRetrievalClient implements RagRetrievalClient {
     final params = <String, dynamic>{
       'p_match_count': limit,
       if (query != null) 'p_query': query,
-      if (cuisine != null) 'p_cuisine': cuisine,
+      if (cuisine != null && cuisine.isNotEmpty) 'p_cuisine': cuisine,
       if (region != null) 'p_region': region,
       if (course != null) 'p_course': course,
       if (ingredient != null) 'p_ingredient': ingredient,

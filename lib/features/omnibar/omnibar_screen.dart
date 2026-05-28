@@ -1272,7 +1272,7 @@ class _WalkinSectionState extends ConsumerState<_WalkinSection> {
       } else {
         _future = ref.read(ragRetrievalServiceProvider).sqlFilter(
           query: widget.query,
-          cuisine: widget.classification.cuisinesForFilter?.firstOrNull,
+          cuisine: widget.classification.cuisinesForFilter,
           course: widget.classification.detectedCourse,
           ingredient: widget.classification.detectedIngredient,
           maxTimeMinutes: widget.classification.maxTimeMinutes,

@@ -1,6 +1,6 @@
 CREATE OR REPLACE FUNCTION search_walkin_sql_filter(
   p_query text DEFAULT NULL,
-  p_cuisine text DEFAULT NULL,
+  p_cuisine text[] DEFAULT NULL,
   p_region text DEFAULT NULL,
   p_course text DEFAULT NULL,
   p_ingredient text DEFAULT NULL,
@@ -93,7 +93,9 @@ AS $$
       -- Cuisine filter: exact match on cuisine code (e.g. 'JP', 'IT')
 	 (
         p_cuisine IS NULL
-        OR upper(rt.payload->'recipe'->>'cuisine') = upper(p_cuisine)
+        OR upper(rt.payload->'recipe'->>'cuisine') = ANY(
+          SELECT upper(c) FROM unnest(p_cuisine) c
+        )
       )
 
       -- Region filter: partial match to handle 'Oaxacan', 'Bordeaux' etc

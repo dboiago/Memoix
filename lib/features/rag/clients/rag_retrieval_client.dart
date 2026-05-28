@@ -16,7 +16,7 @@ abstract class RagRetrievalClient {
   /// rather than a vector embedding. Suitable when no BYOK AI key is active.
   Future<List<RagQueryResult>> sqlFilter({
     String? query,
-    String? cuisine,
+    List<String>? cuisine,
     String? region,
     String? course,
     String? ingredient,
@@ -47,7 +47,7 @@ class StubRetrievalClient implements RagRetrievalClient {
   @override
   Future<List<RagQueryResult>> sqlFilter({
     String? query,
-    String? cuisine,
+    List<String>? cuisine,
     String? region,
     String? course,
     String? ingredient,
