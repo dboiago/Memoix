@@ -37,6 +37,9 @@ class RagRetrievalService {
     int? maxTimeMinutes,
     bool wantsUntried = false,
     int limit = 20,
+    List<String>? preferredCourses,
+    bool prefersLongProject = false,
+    String? excludeCuisine,
   }) {
     return _client.sqlFilter(
       query: query,
@@ -47,6 +50,9 @@ class RagRetrievalService {
       maxTimeMinutes: maxTimeMinutes,
       wantsUntried: wantsUntried,
       limit: limit,
+      preferredCourses: preferredCourses,
+      prefersLongProject: prefersLongProject,
+      excludeCuisine: excludeCuisine,
     );
   }
 

@@ -231,6 +231,9 @@ class SupabaseRetrievalClient implements RagRetrievalClient {
     int? maxTimeMinutes,
     bool wantsUntried = false,
     int limit = 20,
+    List<String>? preferredCourses,
+    bool prefersLongProject = false,
+    String? excludeCuisine,
   }) async {
     final params = <String, dynamic>{
       'match_count': limit,
@@ -241,6 +244,10 @@ class SupabaseRetrievalClient implements RagRetrievalClient {
       if (ingredient != null) 'filter_ingredient': ingredient,
       if (maxTimeMinutes != null) 'filter_max_time_minutes': maxTimeMinutes,
       if (wantsUntried) 'filter_wants_untried': true,
+      if (preferredCourses != null && preferredCourses.isNotEmpty)
+        'p_preferred_courses': preferredCourses,
+      if (prefersLongProject) 'p_prefers_long_project': true,
+      if (excludeCuisine != null) 'p_exclude_cuisine': excludeCuisine,
     };
 
     final dynamic result = await _supabaseClient.rpc(

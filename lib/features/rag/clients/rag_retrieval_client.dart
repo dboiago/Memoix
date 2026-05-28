@@ -23,6 +23,9 @@ abstract class RagRetrievalClient {
     int? maxTimeMinutes,
     bool wantsUntried = false,
     int limit = 20,
+    List<String>? preferredCourses,
+    bool prefersLongProject = false,
+    String? excludeCuisine,
   });
 
   /// Queries the `search_walkin_sql_discover` RPC for a curated selection
@@ -51,6 +54,9 @@ class StubRetrievalClient implements RagRetrievalClient {
     int? maxTimeMinutes,
     bool wantsUntried = false,
     int limit = 20,
+    List<String>? preferredCourses,
+    bool prefersLongProject = false,
+    String? excludeCuisine,
   }) async {
     return const [];
   }

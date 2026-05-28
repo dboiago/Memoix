@@ -1275,6 +1275,9 @@ class _WalkinSectionState extends ConsumerState<_WalkinSection> {
           ingredient: widget.classification.detectedIngredient,
           maxTimeMinutes: widget.classification.maxTimeMinutes,
           wantsUntried: widget.classification.wantsUntried,
+          preferredCourses: widget.classification.preferredCourses,
+          prefersLongProject: widget.classification.prefersLongProject,
+          excludeCuisine: widget.classification.excludeCuisine,
         );
       }
     }
