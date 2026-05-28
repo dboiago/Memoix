@@ -59,9 +59,6 @@ AS $$
       COALESCE(
         (rt.payload->'recipe'->>'rating')::int, 0
       )                                                  AS rating,
-      -- Quality score: cook count capped at 10 weighted most heavily,
-      -- favourite and rating as secondary signals.
-      -- Course preference boost: +2.0 when course matches p_preferred_courses.
       (
         LEAST(
           COALESCE((rt.payload->'recipe'->>'cookCount')::int, 0), 10
@@ -89,13 +86,13 @@ AS $$
 
     WHERE
 
-
-      -- Cuisine filter: exact match on cuisine code (e.g. 'JP', 'IT')
-	 (
+      -- Cuisine filter: matches against any value in the array
+      (
         p_cuisine IS NULL
+        OR array_length(p_cuisine, 1) = 0
         OR upper(rt.payload->'recipe'->>'cuisine') = ANY(
-          SELECT upper(c) FROM unnest(p_cuisine) c
-        )
+             SELECT upper(c) FROM unnest(p_cuisine) c
+           )
       )
 
       -- Region filter: partial match to handle 'Oaxacan', 'Bordeaux' etc
@@ -167,11 +164,7 @@ AS $$
              ILIKE '%' || lower(p_query) || '%'
       )
 
-      -- Long-project filter: passes when p_prefers_long_project is false,
-      -- or when the recipe qualifies as a project by any signal:
-      --   • directions >= 6 steps
-      --   • parsed time >= 90 minutes
-      --   • smoking domain with parsed time >= 30 minutes
+      -- Long-project filter
       AND (
         NOT p_prefers_long_project
         OR COALESCE(
@@ -208,8 +201,7 @@ AS $$
         )
       )
 
-      -- Cuisine exclusion: hard filter; trims whitespace to guard against
-      -- accidental empty-string calls
+      -- Cuisine exclusion
       AND (
         p_exclude_cuisine IS NULL
         OR trim(p_exclude_cuisine) = ''
