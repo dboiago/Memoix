@@ -1317,15 +1317,16 @@ class _WalkinSectionState extends ConsumerState<_WalkinSection> {
       final map = <String, String>{};
       for (final item in raw) {
         if (item is Map<String, dynamic>) {
-          final name = item['name'] as String?;
-          final reason = item['reason'] as String?;
+          final name = item['name'] is String ? item['name'] as String : null;
+          final reason = item['reason'] is String ? item['reason'] as String : null;
           if (name != null && reason != null) {
             map[name] = reason;
           }
         }
       }
       return map;
-    } catch (_) {
+    } catch (e) {
+      debugPrint('_generateReasons failed: $e');
       return {};
     }
   }
