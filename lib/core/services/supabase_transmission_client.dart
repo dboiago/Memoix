@@ -28,6 +28,18 @@ class SupabaseTransmissionClient implements RagTransmissionClient {
     }
   }
 
+  Future<SupabaseClient?> _awaitClient({
+    int retries = 3,
+    Duration delay = const Duration(milliseconds: 500),
+  }) async {
+    for (var i = 0; i < retries; i++) {
+      final client = _supabaseClient;
+      if (client != null) return client;
+      if (i < retries - 1) await Future<void>.delayed(delay);
+    }
+    return null;
+  }
+
   @override
   Future<void> transmit(KnowledgePayload payload) async {
     final client = _supabaseClient;
@@ -210,7 +222,7 @@ class SupabaseTransmissionClient implements RagTransmissionClient {
   @override
   Future<void> transmitBatch(List<KnowledgePayload> payloads) async {
     if (payloads.isEmpty) return;
-    final client = _supabaseClient;
+    final client = await _awaitClient();
     if (client == null) return;
     try {
       final rows = payloads
@@ -240,7 +252,7 @@ class SupabaseTransmissionClient implements RagTransmissionClient {
   Future<void> transmitModernistBatch(
       List<ModernistKnowledgePayload> payloads) async {
     if (payloads.isEmpty) return;
-    final client = _supabaseClient;
+    final client = await _awaitClient();
     if (client == null) return;
     try {
       final rows = payloads
@@ -271,7 +283,7 @@ class SupabaseTransmissionClient implements RagTransmissionClient {
   Future<void> transmitSmokingBatch(
       List<SmokingKnowledgePayload> payloads) async {
     if (payloads.isEmpty) return;
-    final client = _supabaseClient;
+    final client = await _awaitClient();
     if (client == null) return;
     try {
       final rows = payloads
@@ -302,7 +314,7 @@ class SupabaseTransmissionClient implements RagTransmissionClient {
   Future<void> transmitPizzaBatch(
       List<PizzaKnowledgePayload> payloads) async {
     if (payloads.isEmpty) return;
-    final client = _supabaseClient;
+    final client = await _awaitClient();
     if (client == null) return;
     try {
       final rows = payloads
