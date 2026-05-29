@@ -61,14 +61,19 @@ AS $$
       )                                                  AS rating,
       (
         LEAST(
-          COALESCE((rt.payload->'recipe'->>'cookCount')::int, 0), 10
+          COALESCE(
+            (rt.payload->'recipe'->>'cookCount')::int,
+            (rt.payload->'entry'->>'cookCount')::int,
+            0
+          ), 10
         ) * 1.0
-        + COALESCE(
-            (rt.payload->'recipe'->>'isFavourite')::bool::int, 0
-          ) * 3.0
-        + LEAST(
-            COALESCE((rt.payload->'recipe'->>'rating')::int, 0), 5
-          ) * 0.5
+        + CASE WHEN NOT p_wants_untried THEN
+            COALESCE(
+              (rt.payload->'recipe'->>'isFavourite')::bool::int,
+              (rt.payload->'entry'->>'isFavourite')::bool::int,
+              0
+            ) * 3.0
+          ELSE 0.0 END
         + CASE
             WHEN p_preferred_courses IS NOT NULL
                  AND array_length(p_preferred_courses, 1) > 0
@@ -76,6 +81,15 @@ AS $$
                    SELECT 1
                    FROM unnest(p_preferred_courses) pc
                    WHERE lower(pc) = lower(rt.payload->'recipe'->>'course')
+                 )
+            THEN 2.0
+            ELSE 0.0
+          END
+        + CASE
+            WHEN p_query IS NOT NULL
+                 AND (
+                   lower(rt.payload->'recipe'->>'name') ILIKE '%' || lower(p_query) || '%'
+                   OR lower(rt.payload->'entry'->>'name') ILIKE '%' || lower(p_query) || '%'
                  )
             THEN 2.0
             ELSE 0.0
