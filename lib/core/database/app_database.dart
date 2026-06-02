@@ -528,7 +528,7 @@ class AppDatabase extends _$AppDatabase {
   }
 
   @override
-  int get schemaVersion => 12;
+  int get schemaVersion => 13;
 
   @override
   MigrationStrategy get migration => MigrationStrategy(
@@ -949,6 +949,115 @@ class AppDatabase extends _$AppDatabase {
         if (!cheeseCols.any((r) => r.read<String>('name') == 'is_shared')) {
           await m.addColumn(cheeseEntries, cheeseEntries.isShared);
         }
+      }
+      if (from < 13) {
+        await customStatement('''
+          CREATE VIRTUAL TABLE IF NOT EXISTS recipes_fts USING fts5(
+            name, tags, cuisine, ingredient_names, ingredient_notes,
+            content='', tokenize='unicode61 remove_diacritics 0'
+          )
+        ''');
+        await customStatement('''
+          CREATE VIRTUAL TABLE IF NOT EXISTS pizzas_fts USING fts5(
+            name, tags, cheeses, proteins, vegetables, notes,
+            content='', tokenize='unicode61 remove_diacritics 0'
+          )
+        ''');
+        await customStatement('''
+          CREATE VIRTUAL TABLE IF NOT EXISTS sandwiches_fts USING fts5(
+            name, tags, bread, proteins, vegetables, cheeses, condiments, notes,
+            content='', tokenize='unicode61 remove_diacritics 0'
+          )
+        ''');
+        await customStatement('''
+          CREATE VIRTUAL TABLE IF NOT EXISTS cellar_fts USING fts5(
+            name, producer, category, tasting_notes,
+            content='', tokenize='unicode61 remove_diacritics 0'
+          )
+        ''');
+        await customStatement('''
+          CREATE VIRTUAL TABLE IF NOT EXISTS cheese_fts USING fts5(
+            name, type, country, milk, flavour, texture,
+            content='', tokenize='unicode61 remove_diacritics 0'
+          )
+        ''');
+        await customStatement('''
+          CREATE UNIQUE INDEX IF NOT EXISTS idx_recipe_images_file_name
+          ON recipe_images (file_name)
+        ''');
+        await customStatement('''
+          CREATE INDEX IF NOT EXISTS idx_recipe_images_recipe_id
+          ON recipe_images (recipe_id)
+        ''');
+        await customStatement('''
+          CREATE INDEX IF NOT EXISTS idx_recipes_recipe_type
+          ON recipes (recipe_type)
+        ''');
+        await customStatement('''
+          CREATE INDEX IF NOT EXISTS idx_recipes_is_shared
+          ON recipes (is_shared)
+        ''');
+        await customStatement('''
+          INSERT INTO recipes_fts(rowid, name, tags, cuisine, ingredient_names, ingredient_notes)
+          SELECT
+            r.id,
+            r.name,
+            COALESCE(r.tags, ''),
+            COALESCE(r.cuisine, ''),
+            COALESCE(GROUP_CONCAT(i.name, ' '), ''),
+            COALESCE(GROUP_CONCAT(COALESCE(i.notes, ''), ' '), '')
+          FROM recipes r
+          LEFT JOIN ingredients i ON i.recipe_id = r.id
+          GROUP BY r.id
+        ''');
+        await customStatement('''
+          INSERT INTO pizzas_fts(rowid, name, tags, cheeses, proteins, vegetables, notes)
+          SELECT
+            id,
+            name,
+            COALESCE(tags, ''),
+            COALESCE(cheeses, ''),
+            COALESCE(proteins, ''),
+            COALESCE(vegetables, ''),
+            COALESCE(notes, '')
+          FROM pizzas
+        ''');
+        await customStatement('''
+          INSERT INTO sandwiches_fts(rowid, name, tags, bread, proteins, vegetables, cheeses, condiments, notes)
+          SELECT
+            id,
+            name,
+            COALESCE(tags, ''),
+            COALESCE(bread, ''),
+            COALESCE(proteins, ''),
+            COALESCE(vegetables, ''),
+            COALESCE(cheeses, ''),
+            COALESCE(condiments, ''),
+            COALESCE(notes, '')
+          FROM sandwiches
+        ''');
+        await customStatement('''
+          INSERT INTO cellar_fts(rowid, name, producer, category, tasting_notes)
+          SELECT
+            id,
+            name,
+            COALESCE(producer, ''),
+            COALESCE(category, ''),
+            COALESCE(tasting_notes, '')
+          FROM cellar_entries
+        ''');
+        await customStatement('''
+          INSERT INTO cheese_fts(rowid, name, type, country, milk, flavour, texture)
+          SELECT
+            id,
+            name,
+            COALESCE(type, ''),
+            COALESCE(country, ''),
+            COALESCE(milk, ''),
+            COALESCE(flavour, ''),
+            COALESCE(texture, '')
+          FROM cheese_entries
+        ''');
       }
     },
   );
