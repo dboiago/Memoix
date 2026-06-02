@@ -1,8 +1,6 @@
-<<<<<<< HEAD
-## Memoix - v2.0.0+11 - 2026-05-14
- 
+## Memoix - v2.0.0+11 - 2026-05-19
+
 ### Added
- 
 - FTS5 full-text search across all recipe domains; five contentless virtual tables with `unicode61` tokenizer and diacritic preservation (`remove_diacritics 0`)
 - BM25 weighted result ranking with per-domain column weights; recipe name ranked above ingredients, notes ranked above structural fields
 - Ingredient prep notes (`ingredients.notes`) now included in search queries; covers substitutions and alternatives stored inline
@@ -18,10 +16,13 @@
 - Multi-cuisine detection in Omnibar; all matched cuisine terms collected and resolved via parallel retrieval queries with deduplication by name and course
 - Walk-in chip in Omnibar automatically disables and greys out when device is offline; mode auto-exits to Saved Recipes on connectivity loss
 - `MemoixFilterChip.onSelected` made nullable; Flutter's native `FilterChip` disabled state used for semantic correctness
+- Full Android share integration (text, URLs, single/multiple images) via platform `MethodChannel`
+- `ShareHandlerService` for unified handling of cold/warm share flows and navigation dispatch
+- Low-confidence ingredient recovery pipeline when primary parsing fails (fallback extraction with review flag)
+- Sendable SVG asset pipeline to prevent isolate crashes and cache poisoning in release builds
 - [Internal] `ContinentMapping.cuisineToCountry` (231 cuisine keys) wired as the detection source for Omnibar intent classification
 
 ### Changed
- 
 - Search replaced LIKE-based queries with FTS5 `MATCH` + `bm25()` across all DAOs (`recipe_dao`, `catalogue_dao`, `cellar_dao`); in-memory text filter removed from `recipe_list_screen`; debounced `customSelect` replaces the stream-provided list during active queries
 - FTS5 query builder strips all reserved characters (`"*+-:^{}.[]\`) and appends `*` per token for prefix matching; prevents syntax errors on punctuation and special character input
 - Contribute Recipes backfill (`backfillOnOptIn`) sends in batches of 25 per network request rather than one HTTP call per recipe; all 7 domain transmission clients implement typed batch methods
@@ -31,39 +32,6 @@
 - Hidden recipe toggle now unconditional in recipe detail screen; `contributeToIntelligenceProvider` watch removed from both layout builders
 - `isShared` preserved on recipe update; `toggleShared` is the only permitted mutation path; edit screen cannot inadvertently overwrite the flag
 - Omnibar results fire only on explicit submit (`onSubmitted` or arrow button); replaced `SearchDelegate`-based `OmnibarDelegate` with `OmnibarScreen` (`ConsumerStatefulWidget`)
-- [Internal] `SupabaseTransmissionClient` batch insert methods use single `.insert(List<Map>)` PostgREST call per chunk; `payloads.isEmpty` guard prevents empty requests
-- [Internal] `_buildMetadata()` called once per backfill run and shared across all 7 domain blocks
-- [Internal] Schema bumped from v7 to v11 across this branch; migrations are sequential and skip-version safe
-
-### Fixed
- 
-- `isFavourite` spelling corrected across all 6 Drift tables, 36 files, and all serialization paths; schema migration renames `is_favorite` column via `ALTER TABLE … RENAME COLUMN` with `PRAGMA table_info` idempotency guard
-- FTS5 tables recreated with `remove_diacritics 0` tokenizer; accented characters no longer fold to base equivalents causing false-positive search matches
-- Modernist recipes now correctly indexed and searched via FTS5; `ModernistRepository.save()` calls `upsertRecipeFts` after ingredient write; `search()` routes through `recipeDao.searchRecipes()` with `recipeType` post-filter
-- `PendingDeletions` table column renamed from `tableName` to `entityType` to avoid clash with Drift's reserved `Table.tableName` getter
-- `ShoppingListService` menu action deletion path now notifies Supabase; previously only the card dismiss path was wired
-- Supabase transmission client insert calls now active with PII scrubbing confirmed end-to-end in Supabase table
-
-### Removed
- 
-- In-memory text search block removed from `_filterRecipesInMemory` in `recipe_list_screen`; cuisine chip filter retained
-- Duplicate provider dispatch logic removed from `IngredientReferenceService` (`_selectProvider`, `_classifyError`, `_providerLabel`, direct `AiKeyStorage` access)
-
-
-## Memoix - v1.2.0+10 - 2026-05-05
-=======
-## Memoix - v2.0.0+11 - 2026-05-19
->>>>>>> feature/rag-service
-
-### Added
-
-- Full Android share integration (text, URLs, single/multiple images) via platform `MethodChannel`
-- `ShareHandlerService` for unified handling of cold/warm share flows and navigation dispatch
-- Low-confidence ingredient recovery pipeline when primary parsing fails (fallback extraction with review flag)
-- Sendable SVG asset pipeline to prevent isolate crashes and cache poisoning in release builds
-
-### Changed
-
 - Web import fallback logic expanded; now detects bot-block responses (403/429/503 + challenge markers) and escalates immediately
 - HTTP header set modernised to match current Chrome fingerprinting expectations
 - WebView fallback behaviour refined:
@@ -77,9 +45,17 @@
 - Ingredient classification refactored from O(K) full-database substring scanning to O(N) n-gram tokenization with exact O(1) map lookups; eliminated `_sortedKeys` length-sorting entirely to prevent main-thread blocking during `initialize()`
 - Fixed word-fragment collision bugs in `IngredientService` where partial database strings (e.g., "ase", "mac") inadvertently triggered false-positive category routing on unrelated terms (e.g., "laser", "machine")
 - Ported Dart normalization regex rules directly into the build pipeline (`build_ingredients_db.py`) for name deduplication
+- [Internal] `SupabaseTransmissionClient` batch insert methods use single `.insert(List<Map>)` PostgREST call per chunk; `payloads.isEmpty` guard prevents empty requests
+- [Internal] `_buildMetadata()` called once per backfill run and shared across all 7 domain blocks
+- [Internal] Schema bumped from v7 to v11 across this branch; migrations are sequential and skip-version safe
 
 ### Fixed
-
+- `isFavourite` spelling corrected across all 6 Drift tables, 36 files, and all serialization paths; schema migration renames `is_favorite` column via `ALTER TABLE … RENAME COLUMN` with `PRAGMA table_info` idempotency guard
+- FTS5 tables recreated with `remove_diacritics 0` tokenizer; accented characters no longer fold to base equivalents causing false-positive search matches
+- Modernist recipes now correctly indexed and searched via FTS5; `ModernistRepository.save()` calls `upsertRecipeFts` after ingredient write; `search()` routes through `recipeDao.searchRecipes()` with `recipeType` post-filter
+- `PendingDeletions` table column renamed from `tableName` to `entityType` to avoid clash with Drift's reserved `Table.tableName` getter
+- `ShoppingListService` menu action deletion path now notifies Supabase; previously only the card dismiss path was wired
+- Supabase transmission client insert calls now active with PII scrubbing confirmed end-to-end in Supabase table
 - Ingredient parsing edge cases:
   - Anchor-wrapped headings no longer terminate traversal
   - Non-section utility headings no longer prematurely stop extraction
@@ -91,15 +67,15 @@
 - Keyboard overlap in `ScratchPadScreen` via `resizeToAvoidBottomInset`
 
 ### Removed
-
+- In-memory text search block removed from `_filterRecipesInMemory` in `recipe_list_screen`; cuisine chip filter retained
+- Duplicate provider dispatch logic removed from `IngredientReferenceService` (`_selectProvider`, `_classifyError`, `_providerLabel`, direct `AiKeyStorage` access)
 - Redundant / ineffective WebView media playback override (platform-restricted API)
 - Partial anti-bot bypass attempts that did not generalise beyond niche sites
 
 
-## Memoix - v1.1.1+8 - 2026-04-30
+## Memoix - v1.2.0+10 - 2026-05-05
 
 ### Added
-
 - Multi-select filtering for milk across relevant lists; empty set shows all, chips toggle membership
 - SVG-based logo rendering in Settings and empty states; removed raster tint pipeline
 - Cook Map upgraded to rolling-velocity model with decay and dynamic chip count per screen width
@@ -107,7 +83,6 @@
 - Full data wipe now includes on-disk media directories and secure stores (AI keys, Supabase session)
 
 ### Changed
-
 - Unified `MemoixFilterChip` across 10 screens; removed per-screen styling overrides in favour of centralised behaviour
 - `MemoixSearchBar` icons now theme-aware; removed hardcoded `const Icon(...)`
 - Replaced `SyncNotifier` flow with stateless `LocalDataSeeder`; seeding now invoked from init and background paths
@@ -119,7 +94,6 @@
 - Database clear now wipes all 16 tables including `recipe_images`
 
 ### Fixed
-
 - Cook Map exclusion for modernist, pizza, sandwich, and smoking logs due to null `recipeCuisine`
 - UUID constraint violations in `cooking_logs` by generating v4 UUID per insert
 - Dismissible assertion in lists by implementing `confirmDismiss` with snap-back behaviour and meal-plan action
@@ -129,7 +103,7 @@
 - Various residual Isar references in comments and documentation
 
 
-## Memoix - v1.1.0+7 - 2026-04-28
+## Memoix - v1.1.1+8 - 2026-04-30
 
 ### Added
 - Implemented Android 15+ edge-to-edge system window support and free-form resizing (`resizeableActivity="true"`)
