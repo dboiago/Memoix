@@ -532,6 +532,39 @@ class AppDatabase extends _$AppDatabase {
 
   @override
   MigrationStrategy get migration => MigrationStrategy(
+    onCreate: (m) async {
+      await m.createAll();
+      await customStatement('''
+        CREATE VIRTUAL TABLE IF NOT EXISTS recipes_fts USING fts5(
+          name, tags, cuisine, ingredient_names, ingredient_notes,
+          content='', tokenize='unicode61 remove_diacritics 0'
+        )
+      ''');
+      await customStatement('''
+        CREATE VIRTUAL TABLE IF NOT EXISTS pizzas_fts USING fts5(
+          name, tags, cheeses, proteins, vegetables, notes,
+          content='', tokenize='unicode61 remove_diacritics 0'
+        )
+      ''');
+      await customStatement('''
+        CREATE VIRTUAL TABLE IF NOT EXISTS sandwiches_fts USING fts5(
+          name, tags, bread, proteins, vegetables, cheeses, condiments, notes,
+          content='', tokenize='unicode61 remove_diacritics 0'
+        )
+      ''');
+      await customStatement('''
+        CREATE VIRTUAL TABLE IF NOT EXISTS cellar_fts USING fts5(
+          name, producer, category, tasting_notes,
+          content='', tokenize='unicode61 remove_diacritics 0'
+        )
+      ''');
+      await customStatement('''
+        CREATE VIRTUAL TABLE IF NOT EXISTS cheese_fts USING fts5(
+          name, type, country, milk, flavour, texture,
+          content='', tokenize='unicode61 remove_diacritics 0'
+        )
+      ''');
+    },
     onUpgrade: (m, from, to) async {
       if (from < 2) {
         await m.createTable(recipeImages);
