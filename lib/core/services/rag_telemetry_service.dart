@@ -74,11 +74,6 @@ class RagTelemetryService {
   /// [rawSource] — the original text that produced this recipe. Null for
   /// recipes created or edited manually without an import source.
   Future<void> queueForExport(Recipe recipe, [String? rawSource]) async {
-    debugPrint(
-      'RagTelemetryService.queueForExport [QFE-01 START] '
-      'name="${recipe.name}", uuid=${recipe.uuid}, id=${recipe.id}.',
-    );
-
     if (!recipe.isShared) {
       debugPrint(
         'RagTelemetryService: skipped — recipe "${recipe.name}" '
@@ -95,10 +90,6 @@ class RagTelemetryService {
     }
 
     rawSource = rawSource == null ? null : PiiScrubber.scrub(rawSource);
-    debugPrint(
-      'RagTelemetryService.queueForExport [QFE-02 RAW_SOURCE_SCRUBBED] '
-      'rawSourcePresent=${rawSource != null}.',
-    );
 
     // Compute or reuse the stable lineage hash.
     final lineageHash = await _resolveLineageHash(
@@ -106,28 +97,10 @@ class RagTelemetryService {
       compute: () => PayloadHasher.recipeLineageHash(recipe),
       persistForId: recipe.id,
     );
-    debugPrint(
-      'RagTelemetryService.queueForExport [QFE-03 LINEAGE_HASH_RESOLVED] '
-      'lineageHash=$lineageHash.',
-    );
 
     final contentHash = PayloadHasher.recipeContentHash(recipe);
-    debugPrint(
-      'RagTelemetryService.queueForExport [QFE-04 CONTENT_HASH_COMPUTED] '
-      'contentHash=$contentHash.',
-    );
-
     final pairedRecipes = await _resolvePairings(recipe.pairedRecipeIds);
-    debugPrint(
-      'RagTelemetryService.queueForExport [QFE-05 PAIRINGS_RESOLVED] '
-      'pairingsCount=${pairedRecipes.length}.',
-    );
-
     final metadata = await _buildMetadata();
-    debugPrint(
-      'RagTelemetryService.queueForExport [QFE-06 METADATA_BUILT] '
-      'metadataKeys=${metadata.keys.join(',')}.',
-    );
 
     final payload = KnowledgePayload(
       recipe: recipe,
@@ -137,20 +110,7 @@ class RagTelemetryService {
       contentHash: contentHash,
       pairedRecipes: pairedRecipes,
     );
-
-    debugPrint(
-      'RagTelemetryService.queueForExport [QFE-07 BEFORE_TRANSMIT] '
-      'domain=recipe, uuid=${recipe.uuid}.',
-    );
     await _client.transmit(payload);
-    debugPrint(
-      'RagTelemetryService.queueForExport [QFE-08 AFTER_TRANSMIT] '
-      'domain=recipe, uuid=${recipe.uuid}.',
-    );
-    debugPrint(
-      'RagTelemetryService.queueForExport [QFE-09 END] '
-      'name="${recipe.name}", uuid=${recipe.uuid}, id=${recipe.id}.',
-    );
   }
 
   // ─────────────────────────────────────────────────────────────────────────

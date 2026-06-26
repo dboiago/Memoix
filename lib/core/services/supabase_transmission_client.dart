@@ -52,11 +52,6 @@ class SupabaseTransmissionClient implements RagTransmissionClient {
         'content_hash': payload.contentHash,
         'payload': _enrichRecipePayload(payload),
       };
-      debugPrint(
-        '[SupabaseTransmissionClient] transmit request body: '
-        '$insertRow | payloadType=${insertRow['payload'].runtimeType} | '
-        'payloadPreview=${_truncateForLog(insertRow['payload'].toString())}',
-      );
       await client
           .schema('memoix')
           .from('rag_telemetry')
@@ -133,11 +128,6 @@ class SupabaseTransmissionClient implements RagTransmissionClient {
         'content_hash': payload.contentHash,
         'payload': _enrichPizzaPayload(payload),
       };
-      debugPrint(
-        '[SupabaseTransmissionClient] transmitPizza request body: '
-        '$insertRow | payloadType=${insertRow['payload'].runtimeType} | '
-        'payloadPreview=${_truncateForLog(insertRow['payload'].toString())}',
-      );
       await client
           .schema('memoix')
           .from('rag_telemetry')
@@ -518,9 +508,5 @@ class SupabaseTransmissionClient implements RagTransmissionClient {
     return json;
   }
 
-  String _truncateForLog(String value, {int maxLength = 1200}) {
-    if (value.length <= maxLength) return value;
-    return '${value.substring(0, maxLength)}…(truncated ${value.length - maxLength} chars)';
-  }
 }
 
