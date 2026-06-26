@@ -45,16 +45,22 @@ class SupabaseTransmissionClient implements RagTransmissionClient {
     final client = await _awaitClient();
     if (client == null) return;
     try {
+      final insertRow = {
+        'domain_type': 'recipe',
+        'schema_version': 2,
+        'lineage_hash': payload.lineageHash,
+        'content_hash': payload.contentHash,
+        'payload': _enrichRecipePayload(payload),
+      };
+      debugPrint(
+        '[SupabaseTransmissionClient] transmit request body: '
+        '$insertRow | payloadType=${insertRow['payload'].runtimeType} | '
+        'payloadPreview=${_truncateForLog(insertRow['payload'].toString())}',
+      );
       final insertedRows = await client
           .schema('memoix')
           .from('rag_telemetry')
-          .insert({
-            'domain_type': 'recipe',
-            'schema_version': 2,
-            'lineage_hash': payload.lineageHash,
-            'content_hash': payload.contentHash,
-            'payload': _enrichRecipePayload(payload),
-          })
+          .insert(insertRow)
           .select();
       debugPrint(
         '[SupabaseTransmissionClient] transmit insert returned rows: '
@@ -125,16 +131,22 @@ class SupabaseTransmissionClient implements RagTransmissionClient {
     final client = _supabaseClient;
     if (client == null) return;
     try {
+      final insertRow = {
+        'domain_type': 'pizza',
+        'schema_version': 2,
+        'lineage_hash': payload.lineageHash,
+        'content_hash': payload.contentHash,
+        'payload': _enrichPizzaPayload(payload),
+      };
+      debugPrint(
+        '[SupabaseTransmissionClient] transmitPizza request body: '
+        '$insertRow | payloadType=${insertRow['payload'].runtimeType} | '
+        'payloadPreview=${_truncateForLog(insertRow['payload'].toString())}',
+      );
       await client
           .schema('memoix')
           .from('rag_telemetry')
-          .insert({
-            'domain_type': 'pizza',
-            'schema_version': 2,
-            'lineage_hash': payload.lineageHash,
-            'content_hash': payload.contentHash,
-            'payload': _enrichPizzaPayload(payload),
-          });
+          .insert(insertRow);
     } on PostgrestException catch (e) {
       debugPrint(
         '[SupabaseTransmissionClient] transmitPizza PostgrestException — '
@@ -509,6 +521,11 @@ class SupabaseTransmissionClient implements RagTransmissionClient {
     final json = p.toJson();
     (json['entry'] as Map<String, dynamic>)['version'] = p.entry.version;
     return json;
+  }
+
+  String _truncateForLog(String value, {int maxLength = 1200}) {
+    if (value.length <= maxLength) return value;
+    return '${value.substring(0, maxLength)}…(truncated ${value.length - maxLength} chars)';
   }
 }
 
