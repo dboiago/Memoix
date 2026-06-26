@@ -45,7 +45,7 @@ class SupabaseTransmissionClient implements RagTransmissionClient {
     final client = await _awaitClient();
     if (client == null) return;
     try {
-      await client
+      final insertedRows = await client
           .schema('memoix')
           .from('rag_telemetry')
           .insert({
@@ -54,7 +54,12 @@ class SupabaseTransmissionClient implements RagTransmissionClient {
             'lineage_hash': payload.lineageHash,
             'content_hash': payload.contentHash,
             'payload': _enrichRecipePayload(payload),
-          });
+          })
+          .select();
+      debugPrint(
+        '[SupabaseTransmissionClient] transmit insert returned rows: '
+        '$insertedRows',
+      );
     } on PostgrestException catch (e) {
       debugPrint(
         '[SupabaseTransmissionClient] transmit PostgrestException — '
