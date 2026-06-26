@@ -44,7 +44,18 @@ final appInitProvider = FutureProvider<void>((ref) async {
   final storage = const SupabaseSecureStorage();
   final hasSession = await storage.hasAccessToken();
 
-  if (hasSession) {
+  // Read the Culinary Intelligence opt-in flag directly from SharedPreferences.
+  // Defaults to false if the key is absent (fresh install / never opted in) or
+  // if the read itself throws, so Supabase is never initialized unexpectedly.
+  bool telemetryEnabled = false;
+  try {
+    final prefs = await SharedPreferences.getInstance();
+    telemetryEnabled = prefs.getBool('contribute_to_culinary_intelligence') ?? false;
+  } catch (e) {
+    debugPrint('appInitProvider: could not read telemetry preference — $e');
+  }
+
+  if (hasSession || telemetryEnabled) {
     final supabaseUrl = dotenv.maybeGet('SUPABASE_URL');
     final supabaseAnonKey = dotenv.maybeGet('SUPABASE_ANON_KEY');
 
