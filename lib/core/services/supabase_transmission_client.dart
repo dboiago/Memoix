@@ -57,15 +57,10 @@ class SupabaseTransmissionClient implements RagTransmissionClient {
         '$insertRow | payloadType=${insertRow['payload'].runtimeType} | '
         'payloadPreview=${_truncateForLog(insertRow['payload'].toString())}',
       );
-      final insertedRows = await client
+      await client
           .schema('memoix')
           .from('rag_telemetry')
-          .insert(insertRow)
-          .select();
-      debugPrint(
-        '[SupabaseTransmissionClient] transmit insert returned rows: '
-        '$insertedRows',
-      );
+          .insert(insertRow);
     } on PostgrestException catch (e) {
       debugPrint(
         '[SupabaseTransmissionClient] transmit PostgrestException — '
