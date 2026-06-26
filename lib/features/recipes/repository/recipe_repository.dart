@@ -874,25 +874,35 @@ class RecipeRepository {
     final fileNameToPath = <String, String>{};
     _collectAndNormaliseImagePaths(recipe, fileNameToPath);
 
-    final companion = _toCompanion(recipe);
-    await _db.recipeDao.saveRecipe(companion);
-    final recipeId = await _db.recipeDao.getIdByUuid(recipe.uuid) ?? 0;
-    await _db.recipeDao.deleteIngredientsForRecipe(recipeId);
-    await _db.recipeDao
-        .saveIngredients(_toIngredientCompanions(recipeId, recipe.ingredients));
-    if (recipeId > 0) await _db.recipeDao.touchRecipe(recipeId);
-    if (recipeId > 0) await _db.recipeDao.upsertRecipeFts(recipeId);
+    try {
+      final companion = _toCompanion(recipe);
+      await _db.recipeDao.saveRecipe(companion);
+      final recipeId = await _db.recipeDao.getIdByUuid(recipe.uuid) ?? 0;
+      await _db.recipeDao.deleteIngredientsForRecipe(recipeId);
+      await _db.recipeDao
+          .saveIngredients(_toIngredientCompanions(recipeId, recipe.ingredients));
+      if (recipeId > 0) await _db.recipeDao.touchRecipe(recipeId);
+      if (recipeId > 0) await _db.recipeDao.upsertRecipeFts(recipeId);
 
-    // Persist image blobs for any new local files.
-    if (recipeId > 0 && fileNameToPath.isNotEmpty) {
-      await _saveImageBlobs(recipeId, recipe, fileNameToPath);
+      // Persist image blobs for any new local files.
+      if (recipeId > 0 && fileNameToPath.isNotEmpty) {
+        await _saveImageBlobs(recipeId, recipe, fileNameToPath);
+      }
+
+      _ref.read(personalStorageServiceProvider).onRecipeChanged();
+      // Fire-and-forget: queue the saved recipe for Culinary Intelligence export.
+      // The service enforces both privacy gates; this call never blocks the UI.
+      debugPrint(
+        'RecipeRepository.saveRecipe: queueing telemetry export for '
+        'recipe uuid=${recipe.uuid}, id=${recipe.id}.',
+      );
+      unawaited(_ref.read(ragTelemetryServiceProvider).queueForExport(recipe));
+      return recipeId;
+    } catch (e, st) {
+      debugPrint('RecipeRepository.saveRecipe failed: $e');
+      debugPrint('$st');
+      rethrow;
     }
-
-    _ref.read(personalStorageServiceProvider).onRecipeChanged();
-    // Fire-and-forget: queue the saved recipe for Culinary Intelligence export.
-    // The service enforces both privacy gates; this call never blocks the UI.
-    unawaited(_ref.read(ragTelemetryServiceProvider).queueForExport(recipe));
-    return recipeId;
   }
 
   Future<void> saveRecipes(List<Recipe> recipes) async {
