@@ -42,7 +42,7 @@ class SupabaseTransmissionClient implements RagTransmissionClient {
 
   @override
   Future<void> transmit(KnowledgePayload payload) async {
-    final client = _supabaseClient;
+    final client = await _awaitClient();
     if (client == null) return;
     try {
       await client

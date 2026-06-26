@@ -416,9 +416,26 @@ class ContributeToIntelligenceNotifier extends StateNotifier<bool> {
   }
 
   Future<void> _loadPreference() async {
-    final prefs = await SharedPreferences.getInstance();
-    state = prefs.getBool(_key) ?? false; // Must default to OFF - opt-in only
-    _loadCompleter.complete();
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      state = prefs.getBool(_key) ?? false; // Must default to OFF - opt-in only
+      debugPrint(
+        'ContributeToIntelligenceNotifier._loadPreference success: '
+        'resolved state=$state, completing ready.',
+      );
+      if (!_loadCompleter.isCompleted) {
+        _loadCompleter.complete();
+      }
+    } catch (e) {
+      state = false;
+      debugPrint(
+        'ContributeToIntelligenceNotifier._loadPreference catch: '
+        'resolved state=false after exception ($e), completing ready.',
+      );
+      if (!_loadCompleter.isCompleted) {
+        _loadCompleter.complete();
+      }
+    }
   }
 
   Future<void> toggle() async {
