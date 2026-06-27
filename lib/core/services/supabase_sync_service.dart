@@ -596,6 +596,14 @@ abstract class SupabaseSyncService {
           final currentUuids = deduplicatedRows
               .map((row) => row['uuid'] as String)
               .toList();
+            debugPrint(
+              'SupabaseSyncService._syncIngredients recipesToPush count: ${recipesToPush.length}');
+            debugPrint(
+              'SupabaseSyncService._syncIngredients changedIngredients count: ${changedIngredients.length}');
+            debugPrint(
+              'SupabaseSyncService._syncIngredients currentUuids count: ${currentUuids.length}');
+            debugPrint(
+              "SupabaseSyncService._syncIngredients not-in string char length: ${'(${currentUuids.join(',')})'.length}");
           // PostgREST requires not.in values as (a,b,c) — parentheses, not
           // curly braces. Using .not().inFilter() produces the correct syntax.
           await client
