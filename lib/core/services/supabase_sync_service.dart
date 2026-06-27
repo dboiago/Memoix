@@ -604,15 +604,14 @@ abstract class SupabaseSyncService {
               'SupabaseSyncService._syncIngredients currentUuids count: ${currentUuids.length}');
             debugPrint(
               "SupabaseSyncService._syncIngredients not-in string char length: ${'(${currentUuids.join(',')})'.length}");
-          // PostgREST requires not.in values as (a,b,c) — parentheses, not
-          // curly braces. Using .not().inFilter() produces the correct syntax.
-          await client
-              .schema('memoix')
-              .from('ingredients')
-              .delete()
-              .inFilter('recipe_uuid', affectedRecipeUuids)
-              .not('uuid', 'in', '(${currentUuids.join(',')})')
-              .eq('group_id', groupId);
+          await client.schema('memoix').rpc(
+            'delete_stale_ingredients',
+            params: {
+              'p_recipe_uuids': affectedRecipeUuids,
+              'p_keep_uuids': currentUuids,
+              'p_group_id': groupId,
+            },
+          );
         }
       }
     }
