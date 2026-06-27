@@ -114,7 +114,7 @@ abstract class SupabaseSyncService {
     try {
       await processPendingDeletions();
     } catch (e) {
-      debugPrint('Supabase sync error in processPendingDeletions: $e');
+      _logSyncBoundaryError('processPendingDeletions', e);
     }
 
     // ── Recipes — independent error boundary ──────────────────────────────
@@ -123,7 +123,7 @@ abstract class SupabaseSyncService {
       pulledRecipeUuids = await _syncRecipes(groupId, lastSyncRecipes);
       await _setLastSync(prefs, _keyRecipes, DateTime.now().toUtc());
     } catch (e) {
-      debugPrint('Supabase sync error in _syncRecipes: $e');
+      _logSyncBoundaryError('_syncRecipes', e);
     }
 
     // ── Ingredients — independent error boundary ──────────────────────────
@@ -131,7 +131,7 @@ abstract class SupabaseSyncService {
       await _syncIngredients(groupId, lastSyncIngredients, pulledRecipeUuids);
       await _setLastSync(prefs, _keyIngredients, DateTime.now().toUtc());
     } catch (e) {
-      debugPrint('Supabase sync error in _syncIngredients: $e');
+      _logSyncBoundaryError('_syncIngredients', e);
     }
 
     // ── Pizzas ────────────────────────────────────────────────────────────
@@ -139,7 +139,7 @@ abstract class SupabaseSyncService {
       await _syncPizzas(groupId, lastSyncPizzas);
       await _setLastSync(prefs, _keyPizzas, DateTime.now().toUtc());
     } catch (e) {
-      debugPrint('Supabase sync error in _syncPizzas: $e');
+      _logSyncBoundaryError('_syncPizzas', e);
     }
 
     // ── Sandwiches ────────────────────────────────────────────────────────
@@ -147,7 +147,7 @@ abstract class SupabaseSyncService {
       await _syncSandwiches(groupId, lastSyncSandwiches);
       await _setLastSync(prefs, _keySandwiches, DateTime.now().toUtc());
     } catch (e) {
-      debugPrint('Supabase sync error in _syncSandwiches: $e');
+      _logSyncBoundaryError('_syncSandwiches', e);
     }
 
     // ── Cellar entries ────────────────────────────────────────────────────
@@ -155,7 +155,7 @@ abstract class SupabaseSyncService {
       await _syncCellarEntries(groupId, lastSyncCellarEntries);
       await _setLastSync(prefs, _keyCellarEntries, DateTime.now().toUtc());
     } catch (e) {
-      debugPrint('Supabase sync error in _syncCellarEntries: $e');
+      _logSyncBoundaryError('_syncCellarEntries', e);
     }
 
     // ── Cheese entries ────────────────────────────────────────────────────
@@ -163,7 +163,7 @@ abstract class SupabaseSyncService {
       await _syncCheeseEntries(groupId, lastSyncCheeseEntries);
       await _setLastSync(prefs, _keyCheeseEntries, DateTime.now().toUtc());
     } catch (e) {
-      debugPrint('Supabase sync error in _syncCheeseEntries: $e');
+      _logSyncBoundaryError('_syncCheeseEntries', e);
     }
 
     // ── Smoking recipes ───────────────────────────────────────────────────
@@ -171,7 +171,7 @@ abstract class SupabaseSyncService {
       await _syncSmokingRecipes(groupId, lastSyncSmokingRecipes);
       await _setLastSync(prefs, _keySmokingRecipes, DateTime.now().toUtc());
     } catch (e) {
-      debugPrint('Supabase sync error in _syncSmokingRecipes: $e');
+      _logSyncBoundaryError('_syncSmokingRecipes', e);
     }
 
     // ── Courses ───────────────────────────────────────────────────────────
@@ -179,7 +179,7 @@ abstract class SupabaseSyncService {
       await _syncCourses(groupId, lastSyncCourses);
       await _setLastSync(prefs, _keyCourses, DateTime.now().toUtc());
     } catch (e) {
-      debugPrint('Supabase sync error in _syncCourses: $e');
+      _logSyncBoundaryError('_syncCourses', e);
     }
 
     // ── Scratch pads ──────────────────────────────────────────────────────
@@ -187,7 +187,7 @@ abstract class SupabaseSyncService {
       await _syncScratchPads(groupId, lastSyncScratchPads);
       await _setLastSync(prefs, _keyScratchPads, DateTime.now().toUtc());
     } catch (e) {
-      debugPrint('Supabase sync error in _syncScratchPads: $e');
+      _logSyncBoundaryError('_syncScratchPads', e);
     }
 
     // ── User entity preferences ───────────────────────────────────────────
@@ -195,7 +195,7 @@ abstract class SupabaseSyncService {
       await _syncUserEntityPreferences(userId, lastSyncUserEntityPrefs);
       await _setLastSync(prefs, _keyUserEntityPrefs, DateTime.now().toUtc());
     } catch (e) {
-      debugPrint('Supabase sync error in _syncUserEntityPreferences: $e');
+      _logSyncBoundaryError('_syncUserEntityPreferences', e);
     }
 
     // ── Meal plans + planned meals ────────────────────────────────────────
@@ -203,7 +203,7 @@ abstract class SupabaseSyncService {
       await _syncMealPlans(userId, lastSyncMealPlans);
       await _setLastSync(prefs, _keyMealPlans, DateTime.now().toUtc());
     } catch (e) {
-      debugPrint('Supabase sync error in _syncMealPlans: $e');
+      _logSyncBoundaryError('_syncMealPlans', e);
     }
 
     // ── Shopping lists + shopping items ───────────────────────────────────
@@ -211,7 +211,7 @@ abstract class SupabaseSyncService {
       await _syncShoppingLists(userId, lastSyncShoppingLists);
       await _setLastSync(prefs, _keyShoppingLists, DateTime.now().toUtc());
     } catch (e) {
-      debugPrint('Supabase sync error in _syncShoppingLists: $e');
+      _logSyncBoundaryError('_syncShoppingLists', e);
     }
 
     // ── Recipe drafts ─────────────────────────────────────────────────────
@@ -219,7 +219,7 @@ abstract class SupabaseSyncService {
       await _syncRecipeDrafts(userId, lastSyncRecipeDrafts);
       await _setLastSync(prefs, _keyRecipeDrafts, DateTime.now().toUtc());
     } catch (e) {
-      debugPrint('Supabase sync error in _syncRecipeDrafts: $e');
+      _logSyncBoundaryError('_syncRecipeDrafts', e);
     }
 
     // ── Cooking logs ──────────────────────────────────────────────────────
@@ -227,7 +227,7 @@ abstract class SupabaseSyncService {
       await _syncCookingLogs(userId, lastSyncCookingLogs);
       await _setLastSync(prefs, _keyCookingLogs, DateTime.now().toUtc());
     } catch (e) {
-      debugPrint('Supabase sync error in _syncCookingLogs: $e');
+      _logSyncBoundaryError('_syncCookingLogs', e);
     }
 
     // ── Recipe images ─────────────────────────────────────────────────────
@@ -235,8 +235,21 @@ abstract class SupabaseSyncService {
       await _syncRecipeImages(groupId, lastSyncRecipeImages);
       await _setLastSync(prefs, _keyRecipeImages, DateTime.now().toUtc());
     } catch (e) {
-      debugPrint('Supabase sync error in _syncRecipeImages: $e');
+      _logSyncBoundaryError('_syncRecipeImages', e);
     }
+  }
+
+  static void _logSyncBoundaryError(String boundary, Object error) {
+    if (error is PostgrestException) {
+      debugPrint(
+          'Supabase sync error in $boundary: '
+          'message: ${error.message}, '
+          'code: ${error.code}, '
+          'details: ${error.details}, '
+          'hint: ${error.hint}');
+      return;
+    }
+    debugPrint('Supabase sync error in $boundary: $error');
   }
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -555,6 +568,16 @@ abstract class SupabaseSyncService {
         if (pushRows.isNotEmpty) {
           // Deduplicate by uuid — duplicate local rows cause Postgres error 21000.
           final deduplicatedRows = { for (final row in pushRows) row['uuid'] as String: row }.values.toList();
+          final uuidPattern = RegExp(
+            r'^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$',
+          );
+          for (final row in deduplicatedRows) {
+            final uuid = row['uuid'] as String? ?? '';
+            if (!uuidPattern.hasMatch(uuid)) {
+              debugPrint(
+                  'SupabaseSyncService._syncIngredients non-standard ingredient uuid before upsert: $uuid');
+            }
+          }
           // Ingredient UUIDs are now stable (generated once, round-tripped through
           // the model), so upsert-by-uuid correctly updates existing rows and
           // inserts new ones without accumulating stale rows.
