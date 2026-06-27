@@ -240,6 +240,7 @@ abstract class SupabaseSyncService {
   }
 
   static void _logSyncBoundaryError(String boundary, Object error) {
+    if (!kDebugMode) return;
     if (error is PostgrestException) {
       debugPrint(
           'Supabase sync error in $boundary: '
