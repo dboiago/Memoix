@@ -17,6 +17,7 @@ import '../../features/recipes/models/spirit.dart';
 import '../../features/import/models/recipe_import_result.dart';
 import '../utils/text_normalizer.dart';
 import '../utils/unit_normalizer.dart';
+import '../utils/schema_org_parser.dart';
 
 /// Helper class for YouTube chapters
 class YouTubeChapter {
@@ -3809,6 +3810,18 @@ class UrlRecipeImporter {
     if (data is Map && data['@graph'] != null) {
       final graph = data['@graph'] as List;
       for (final item in graph) {
+        // If this graph item is a WebPage wrapping a Recipe via mainEntity
+        // that is itself only an @id reference, try to resolve the sibling
+        // node in the same @graph array before recursing normally. Additive:
+        // if resolution isn't trivial, this returns null and the normal
+        // per-item recursion below handles (or gracefully skips) it as before.
+        if (item is Map) {
+          final resolvedSibling = SchemaOrgParser.resolveWebPageMainEntityId(item, graph);
+          if (resolvedSibling != null) {
+            final result = _parseJsonLdWithConfidence(resolvedSibling, sourceUrl);
+            if (result != null) return result;
+          }
+        }
         final result = _parseJsonLdWithConfidence(item, sourceUrl);
         if (result != null) return result;
       }
@@ -3827,6 +3840,18 @@ class UrlRecipeImporter {
     // Check if this is a Recipe type
     if (data is! Map) {
       return null;
+    }
+
+    // Handle WebPage nodes that wrap a Recipe via `mainEntity` (a common
+    // schema.org pattern). Additive: unwraps and re-parses the inline
+    // mainEntity through this same function unchanged. Falls through
+    // gracefully to the standard Recipe check below when mainEntity is
+    // missing, not a Recipe, or an unresolvable @id-only reference (no
+    // surrounding @graph context available at this call site).
+    final unwrappedMainEntity = SchemaOrgParser.unwrapWebPageMainEntity(data);
+    if (unwrappedMainEntity != null) {
+      final result = _parseJsonLdWithConfidence(unwrappedMainEntity, sourceUrl);
+      if (result != null) return result;
     }
     
     final type = data['@type'];
@@ -3975,10 +4000,19 @@ class UrlRecipeImporter {
           final decoded = _decodeHtml(item.trim());
           if (decoded.isNotEmpty) result.add(decoded);
         } else if (item is Map) {
+          // Schema.org PropertyValue-shaped ingredient (value + unitText or
+          // unitCode + name). Reconstructed as "value unit name" before it
+          // would otherwise degrade to a name-only (or empty) string via the
+          // generic text/name fallback further below. Additive: falls
+          // through unchanged for any non-PropertyValue item.
+          final propertyValueIngredient = SchemaOrgParser.reconstructPropertyValueIngredient(item);
+          if (propertyValueIngredient != null) {
+            result.add(_decodeHtml(propertyValueIngredient));
+          }
           // Handle nested ingredient objects
           // Great British Chefs format: {groupName: "Section", unstructuredTextMetric: "1.5kg lamb shoulder"}
           // Check this FIRST because GBC items also have an 'ingredient' key (nested object with metadata)
-          if (item.containsKey('unstructuredTextMetric') || item.containsKey('linkTextMetric')) {
+          else if (item.containsKey('unstructuredTextMetric') || item.containsKey('linkTextMetric')) {
             final groupName = _parseString(item['groupName']) ?? '';
             final ingredientText = _parseString(item['unstructuredTextMetric']) ??
                                    _parseString(item['linkTextMetric']) ?? '';
@@ -4211,10 +4245,44 @@ class UrlRecipeImporter {
   }
 
   /// Extract raw direction strings
+  /// Test-only accessor for [_extractRawDirections], which is otherwise
+  /// library-private. Lets tests exercise the raw-directions extraction path
+  /// (including HowToSection/HowToStep flattening) without going through
+  /// network I/O. Does not change `_extractRawDirections` behavior.
+  @visibleForTesting
+  List<String> extractRawDirectionsForTesting(dynamic value) =>
+      _extractRawDirections(value);
+
   List<String> _extractRawDirections(dynamic value) {
     if (value == null) return [];
     if (value is String) return [_decodeHtml(value)];
     if (value is List) {
+      // Recursively flatten nested HowToSection/HowToStep trees when present,
+      // mirroring _parseInstructions so the review screen's raw directions
+      // get the same section structure as the parsed `directions` field.
+      // Additive: when no HowToSection/HowToStep types are found, or
+      // flattening yields nothing usable, this falls through to the
+      // existing flat text/name handling below unchanged.
+      final hasHowToTypes = value.any((item) {
+        if (item is! Map) return false;
+        final t = item['@type'];
+        return t == 'HowToSection' ||
+            t == 'HowToStep' ||
+            (t is List && (t.contains('HowToSection') || t.contains('HowToStep')));
+      });
+
+      if (hasHowToTypes) {
+        final flattened = <String>[];
+        for (final item in value) {
+          flattened.addAll(SchemaOrgParser.flattenHowToInstructions(item));
+        }
+        final decoded = flattened
+            .map((s) => _decodeHtml(s))
+            .where((s) => s.trim().isNotEmpty)
+            .toList();
+        if (decoded.isNotEmpty) return decoded;
+      }
+
       return value.map((item) {
         if (item is String) return _decodeHtml(item.trim());
         if (item is Map) {
@@ -4323,6 +4391,15 @@ class UrlRecipeImporter {
     }
     
     if (raw == null) return null;
+    
+    // "X dozen" / "X.X dozen" -> total integer count (e.g. "2 dozen" -> "24",
+    // "1.5 dozen" -> "18"). Checked before standard digit extraction so a
+    // bare leading-number match (e.g. just "2" from "2 dozen") never wins.
+    // Falls through unchanged when no dozen pattern is present.
+    final dozenYield = SchemaOrgParser.parseDozenYield(raw);
+    if (dozenYield != null) {
+      return dozenYield;
+    }
     
     // Check for "(X servings)" pattern first - common in King Arthur, etc.
     // e.g., "one 9" x 4" loaf (16 servings)" -> "16"
@@ -4562,6 +4639,17 @@ class UrlRecipeImporter {
     if (value == null) return 0;
     var str = value.toString().toLowerCase().trim();
     
+    // RANGE DETECTION (additive): "12-15 minutes", "12–15 minutes",
+    // "12 to 15 minutes", "1-2 hours", etc. Unit-agnostic - averages the two
+    // numbers and converts using whichever unit follows, short-circuiting
+    // before the ISO/word normalization below. Falls through to existing
+    // single-value parsing when no range is present, so all previously
+    // supported formats (including "6 hours 20 minutes") are unaffected.
+    final rangeMinutes = SchemaOrgParser.extractDurationRangeMinutes(str);
+    if (rangeMinutes != null) {
+      return rangeMinutes;
+    }
+    
     // Normalize malformed ISO 8601 durations
     // Some sites use "PT1hour5M" instead of "PT1H5M"
     str = str.replaceAll(RegExp(r'hours?'), 'h');
@@ -4621,6 +4709,15 @@ class UrlRecipeImporter {
   String? _parseDuration(dynamic value) {
     if (value == null) return null;
     var str = value.toString();
+    
+    // RANGE DETECTION (additive) - see _parseDurationMinutes /
+    // SchemaOrgParser.extractDurationRangeMinutes for details. Only the
+    // extraction step changes here; formatting still goes through
+    // _formatMinutes exactly as before.
+    final rangeMinutes = SchemaOrgParser.extractDurationRangeMinutes(str.toLowerCase());
+    if (rangeMinutes != null) {
+      return _formatMinutes(rangeMinutes);
+    }
     
     // Normalize malformed ISO 8601 durations
     // Some sites use "PT1hour5M" instead of "PT1H5M"
@@ -5781,6 +5878,31 @@ class UrlRecipeImporter {
     }
     
     if (value is List) {
+      // Recursively flatten nested HowToSection/HowToStep trees when present
+      // (e.g. sectioned instructions like "For the glaze" wrapping one or
+      // more steps). Additive: when no HowToSection/HowToStep types are
+      // found, or flattening yields nothing usable, this falls through to
+      // the existing flat text/name handling below unchanged.
+      final hasHowToTypes = value.any((item) {
+        if (item is! Map) return false;
+        final t = item['@type'];
+        return t == 'HowToSection' ||
+            t == 'HowToStep' ||
+            (t is List && (t.contains('HowToSection') || t.contains('HowToStep')));
+      });
+
+      if (hasHowToTypes) {
+        final flattened = <String>[];
+        for (final item in value) {
+          flattened.addAll(SchemaOrgParser.flattenHowToInstructions(item));
+        }
+        final decoded = flattened
+            .map((s) => _decodeHtml(s))
+            .where((s) => s.trim().isNotEmpty)
+            .toList();
+        if (decoded.isNotEmpty) return decoded;
+      }
+
       return value.map((item) {
         if (item is String) return _decodeHtml(item.trim());
         if (item is Map) {
