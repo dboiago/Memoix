@@ -727,6 +727,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
                   name: m['name'] as String? ?? '',
                   amount: m['amount'] as String?,
                   unit: m['unit'] as String?,
+                  notes: m['notes']?.toString(),
                 ).displayText;
               }).toList(),
             ),
@@ -752,6 +753,7 @@ class _SmokingDetailViewState extends ConsumerState<_SmokingDetailView> {
           name: m['name'] as String? ?? '',
           amount: m['amount'] as String?,
           unit: m['unit'] as String?,
+          notes: m['notes']?.toString(),
         );
       }).toList(),
       onIngredientLongPress: _ingredientLongPressHandler(),
@@ -1420,6 +1422,17 @@ class _SmokingIngredientsListState extends State<_SmokingIngredientsList> {
                             color: isChecked
                                 ? theme.colorScheme.onSurface.withValues(alpha: 0.5)
                                 : theme.colorScheme.onSurfaceVariant,
+                          ),
+                        ),
+                      if (ingredient.notes != null && ingredient.notes!.isNotEmpty)
+                        Text(
+                          ingredient.notes!,
+                          style: theme.textTheme.bodySmall?.copyWith(
+                            decoration: isChecked ? TextDecoration.lineThrough : null,
+                            color: isChecked
+                                ? theme.colorScheme.onSurface.withValues(alpha: 0.5)
+                                : theme.colorScheme.primary,
+                            fontStyle: FontStyle.italic,
                           ),
                         ),
                     ],

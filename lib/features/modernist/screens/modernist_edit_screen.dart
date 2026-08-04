@@ -1691,7 +1691,10 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
         ..name = row.nameController.text.trim()
         ..amount = row.amountController.text.trim().isEmpty 
             ? null 
-            : row.amountController.text.trim(),);
+            : row.amountController.text.trim()
+        ..notes = row.notesController.text.trim().isEmpty
+            ? null
+            : row.notesController.text.trim(),);
     }
     
     // Build directions from direction rows
@@ -1712,7 +1715,7 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
       time: '',
       wood: '',
       seasoningsJson: jsonEncode(seasonings
-          .map((s) => {'name': s.name, 'amount': s.amount, 'unit': s.unit})
+          .map((s) => {'name': s.name, 'amount': s.amount, 'unit': s.unit, 'notes': s.notes})
           .toList(),),
       ingredientsJson: '[]',
       serves: null,

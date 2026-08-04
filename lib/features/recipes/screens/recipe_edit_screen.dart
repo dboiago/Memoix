@@ -1618,7 +1618,10 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
         ..name = row.nameController.text.trim()
         ..amount = row.amountController.text.trim().isEmpty 
             ? null 
-            : row.amountController.text.trim(),);
+            : row.amountController.text.trim()
+        ..notes = row.notesController.text.trim().isEmpty
+            ? null
+            : row.notesController.text.trim(),);
     }
     
     // Build directions
@@ -1639,7 +1642,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
       time: '',
       wood: '',
       seasoningsJson: jsonEncode(seasonings
-          .map((s) => {'name': s.name, 'amount': s.amount, 'unit': s.unit})
+          .map((s) => {'name': s.name, 'amount': s.amount, 'unit': s.unit, 'notes': s.notes})
           .toList(),),
       ingredientsJson: '[]',
       serves: null,

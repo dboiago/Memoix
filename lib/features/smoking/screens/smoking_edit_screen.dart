@@ -108,6 +108,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
         _seasonings.add(_SeasoningEntry(
           nameController: TextEditingController(text: seasoning['name'] as String? ?? ''),
           amountController: TextEditingController(text: seasoning['amount'] as String? ?? ''),
+          notesController: TextEditingController(text: seasoning['notes'] as String? ?? ''),
         ),);
       }
 
@@ -116,6 +117,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
         _ingredients.add(_SeasoningEntry(
           nameController: TextEditingController(text: ingredient['name'] as String? ?? ''),
           amountController: TextEditingController(text: ingredient['amount'] as String? ?? ''),
+          notesController: TextEditingController(text: ingredient['notes'] as String? ?? ''),
         ),);
       }
 
@@ -169,6 +171,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
           _seasonings.add(_SeasoningEntry(
             nameController: TextEditingController(text: seasoning['name'] as String? ?? ''),
             amountController: TextEditingController(text: seasoning['amount'] as String? ?? ''),
+            notesController: TextEditingController(text: seasoning['notes'] as String? ?? ''),
           ),);
         }
 
@@ -177,6 +180,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
           _ingredients.add(_SeasoningEntry(
             nameController: TextEditingController(text: ingredient['name'] as String? ?? ''),
             amountController: TextEditingController(text: ingredient['amount'] as String? ?? ''),
+            notesController: TextEditingController(text: ingredient['notes'] as String? ?? ''),
           ),);
         }
 
@@ -1733,7 +1737,10 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
         ..name = entry.nameController.text.trim()
         ..amount = entry.amountController.text.trim().isEmpty 
             ? null 
-            : entry.amountController.text.trim(),);
+            : entry.amountController.text.trim()
+        ..preparation = entry.notesController.text.trim().isEmpty
+            ? null
+            : entry.notesController.text.trim(),);
     }
     
     // Build directions
@@ -1791,6 +1798,9 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
         amount: entry.amountController.text.trim().isEmpty 
             ? null 
             : entry.amountController.text.trim(),
+        notes: entry.notesController.text.trim().isEmpty
+            ? null
+            : entry.notesController.text.trim(),
       ),);
     }
     
@@ -1827,7 +1837,10 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
           ..name = s.nameController.text.trim()
           ..amount = s.amountController.text.trim().isEmpty
               ? null
-              : s.amountController.text.trim(),)
+          : s.amountController.text.trim()
+        ..notes = s.notesController.text.trim().isEmpty
+          ? null
+          : s.notesController.text.trim(),)
         .toList();
 
     // Build ingredients list (for Recipes)
@@ -1837,7 +1850,10 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
           ..name = i.nameController.text.trim()
           ..amount = i.amountController.text.trim().isEmpty
               ? null
-              : i.amountController.text.trim(),)
+          : i.amountController.text.trim()
+        ..notes = i.notesController.text.trim().isEmpty
+          ? null
+          : i.notesController.text.trim(),)
         .toList();
 
     // Build directions list
@@ -1858,8 +1874,8 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
       temperature: _temperatureController.text.trim(),
       time: _timeController.text.trim(),
       wood: _woodController.text.trim(),
-      seasoningsJson: jsonEncode(seasonings.map((s) => {'name': s.name, 'amount': s.amount, 'unit': s.unit}).toList()),
-      ingredientsJson: jsonEncode(ingredients.map((i) => {'name': i.name, 'amount': i.amount, 'unit': i.unit}).toList()),
+      seasoningsJson: jsonEncode(seasonings.map((s) => {'name': s.name, 'amount': s.amount, 'unit': s.unit, 'notes': s.notes}).toList()),
+      ingredientsJson: jsonEncode(ingredients.map((i) => {'name': i.name, 'amount': i.amount, 'unit': i.unit, 'notes': i.notes}).toList()),
       serves: _servesController.text.trim().isEmpty ? null : _servesController.text.trim(),
       directions: jsonEncode(directions),
       notes: _notesController.text.trim().isEmpty ? null : _notesController.text.trim(),
