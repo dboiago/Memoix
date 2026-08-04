@@ -6,6 +6,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../app/app_shell.dart';
 import '../../app/routes/router.dart';
 import '../../core/services/integrity_service.dart';
+import '../../features/settings/screens/design_notes_screen.dart';
+import '../../features/settings/services/design_notes_unread_notifier.dart';
 
 bool _hasNoCamera() =>
     kIsWeb ||
@@ -31,6 +33,10 @@ class _AppDrawerState extends ConsumerState<AppDrawer> {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final overrides = ref.watch(viewOverrideProvider);
+    final lastSeenDesignNotesVersion =
+      ref.watch(designNotesLastSeenVersionProvider);
+    final showUnreadDesignNotesDot = lastSeenDesignNotesVersion != null &&
+      lastSeenDesignNotesVersion < designNotesVersion;
     
     String timerLabel = 'Kitchen Timer';
     final labelOverride = overrides['ui_07'];
@@ -232,6 +238,7 @@ class _AppDrawerState extends ConsumerState<AppDrawer> {
                   _DrawerTile(
                     icon: Icons.lightbulb_outline,
                     title: 'Design Notes',
+                    showUnreadDot: showUnreadDesignNotesDot,
                     onTap: () {
                       Navigator.pop(context);
                       AppRoutes.toDesignNotes(context);
@@ -294,11 +301,13 @@ class _DrawerSectionHeader extends StatelessWidget {
 class _DrawerTile extends StatefulWidget {
   final IconData icon;
   final String title;
+  final bool showUnreadDot;
   final VoidCallback onTap;
 
   const _DrawerTile({
     required this.icon,
     required this.title,
+    this.showUnreadDot = false,
     required this.onTap,
   });
 
@@ -326,7 +335,38 @@ class _DrawerTileState extends State<_DrawerTile> {
             padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
             child: Row(
               children: [
-                Icon(widget.icon, size: 20, color: theme.colorScheme.onSurfaceVariant),
+                SizedBox(
+                  width: 20,
+                  height: 20,
+                  child: Stack(
+                    clipBehavior: Clip.none,
+                    children: [
+                      Positioned.fill(
+                        child: Icon(
+                          widget.icon,
+                          size: 20,
+                          color: theme.colorScheme.onSurfaceVariant,
+                        ),
+                      ),
+                      if (widget.showUnreadDot)
+                        Positioned(
+                          top: 0,
+                          right: 0,
+                          child: Semantics(
+                            label: 'unread',
+                            child: Container(
+                              width: 8,
+                              height: 8,
+                              decoration: BoxDecoration(
+                                color: theme.colorScheme.secondary,
+                                shape: BoxShape.circle,
+                              ),
+                            ),
+                          ),
+                        ),
+                    ],
+                  ),
+                ),
                 const SizedBox(width: 12),
                 Expanded(
                   child: Text(
