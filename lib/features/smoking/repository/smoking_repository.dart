@@ -50,11 +50,10 @@ class SmokingRepository {
                 name: m['name']?.toString() ?? '',
                 amount: m['amount']?.toString(),
                 unit: m['unit']?.toString(),
-                notes: m['notes']?.toString(),
               );
             })
             .toList(),
-      ).map((s) => {'name': s.name, 'amount': s.amount, 'unit': s.unit, 'notes': s.notes}).toList(),
+      ).map((s) => {'name': s.name, 'amount': s.amount, 'unit': s.unit}).toList(),
     );
     final normalizedIngredientsJson = jsonEncode(
       _normalizeSeasoningUnits(
@@ -65,11 +64,10 @@ class SmokingRepository {
                 name: m['name']?.toString() ?? '',
                 amount: m['amount']?.toString(),
                 unit: m['unit']?.toString(),
-                notes: m['notes']?.toString(),
               );
             })
             .toList(),
-      ).map((s) => {'name': s.name, 'amount': s.amount, 'unit': s.unit, 'notes': s.notes}).toList(),
+      ).map((s) => {'name': s.name, 'amount': s.amount, 'unit': s.unit}).toList(),
     );
     final entryUuid = recipe.uuid.isEmpty ? _uuid.v4() : recipe.uuid;
     await _db.smokingDao.saveRecipe(SmokingRecipesCompanion(

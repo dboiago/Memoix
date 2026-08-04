@@ -485,7 +485,6 @@ class RecipeImportResult {
           name: ingredient.name,
           amount: ingredient.amount,
           unit: ingredient.unit,
-          notes: ingredient.preparation,
         ),);
       }
     }
@@ -498,7 +497,6 @@ class RecipeImportResult {
             name: i.name,
             amount: i.amount,
             unit: i.unit,
-            notes: i.preparation,
           ),).toList();
 
     final headerImg = (imagePaths != null && imagePaths!.isNotEmpty)
@@ -520,7 +518,7 @@ class RecipeImportResult {
       time: time ?? '',
       wood: woodType ?? 'Hickory',
       seasoningsJson: jsonEncode(finalSeasonings
-          .map((s) => {'name': s.name, 'amount': s.amount, 'unit': s.unit, 'notes': s.notes})
+          .map((s) => {'name': s.name, 'amount': s.amount, 'unit': s.unit})
           .toList(),),
       ingredientsJson: '[]',
       serves: null,
@@ -548,7 +546,6 @@ class RecipeImportResult {
       name: i.name,
       amount: i.amount,
       unit: i.unit,
-      notes: i.preparation,
     ),).toList();
     
     // Detect category from name, URL, and ingredients
@@ -607,7 +604,7 @@ class RecipeImportResult {
       wood: woodType ?? '',
       seasoningsJson: '[]',
       ingredientsJson: jsonEncode(recipeIngredients
-          .map((i) => {'name': i.name, 'amount': i.amount, 'unit': i.unit, 'notes': i.notes})
+          .map((i) => {'name': i.name, 'amount': i.amount, 'unit': i.unit})
           .toList(),),
       serves: serves,
       directions: jsonEncode(directions),

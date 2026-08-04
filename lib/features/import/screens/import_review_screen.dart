@@ -1659,7 +1659,6 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
             name: rawIngredient.name,
             amount: rawIngredient.amount,
             unit: rawIngredient.unit,
-            notes: rawIngredient.preparation,
           ),);
         }
       }
@@ -1693,7 +1692,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
       time: _timeController.text.trim().isEmpty ? '' : _timeController.text.trim(),
       wood: woodType,
       seasoningsJson: jsonEncode(seasonings
-          .map((s) => {'name': s.name, 'amount': s.amount, 'unit': s.unit, 'notes': s.notes})
+          .map((s) => {'name': s.name, 'amount': s.amount, 'unit': s.unit})
           .toList(),),
       ingredientsJson: '[]',
       serves: null,

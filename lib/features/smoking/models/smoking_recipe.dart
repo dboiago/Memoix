@@ -159,7 +159,6 @@ class SmokingSeasoning {
   String name = '';
   String? amount;
   String? unit;
-  String? notes;
   
   SmokingSeasoning();
   
@@ -167,7 +166,6 @@ class SmokingSeasoning {
     required this.name,
     this.amount,
     this.unit,
-    this.notes,
   });
 
   /// Display string like "2 Tbsp Sugar" or just "Salt"
@@ -234,7 +232,6 @@ extension SmokingRecipeX on SmokingRecipe {
           name: map['name']?.toString() ?? '',
           amount: map['amount']?.toString(),
           unit: map['unit']?.toString(),
-          notes: map['notes']?.toString(),
         );
       }).toList();
 
@@ -299,16 +296,14 @@ extension SmokingRecipeX on SmokingRecipe {
       ings.add(r.Ingredient()
         ..name = map['name']?.toString() ?? ''
         ..amount = map['amount']?.toString()
-        ..unit = map['unit']?.toString()
-        ..preparation = map['notes']?.toString(),);
+        ..unit = map['unit']?.toString(),);
     }
     for (final m in (jsonDecode(seasoningsJson) as List)) {
       final map = m as Map<String, dynamic>;
       ings.add(r.Ingredient()
         ..name = map['name']?.toString() ?? ''
         ..amount = map['amount']?.toString()
-        ..unit = map['unit']?.toString()
-        ..preparation = map['notes']?.toString(),);
+        ..unit = map['unit']?.toString(),);
     }
 
     return r.Recipe()
