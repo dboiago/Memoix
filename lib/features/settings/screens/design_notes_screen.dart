@@ -6,6 +6,10 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:vibration/vibration.dart';
 
 import '../../../core/services/integrity_service.dart';
+import '../services/design_notes_unread_notifier.dart';
+
+// Increment this whenever the Design Notes content changes.
+const int designNotesVersion = 1;
 
 class DesignNotesScreen extends ConsumerStatefulWidget {
   const DesignNotesScreen({super.key});
@@ -33,6 +37,14 @@ class _DesignNotesScreenState extends ConsumerState<DesignNotesScreen> {
   void initState() {
     super.initState();
     _loadInputSchema();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted) return;
+      unawaited(
+        ref
+            .read(designNotesLastSeenVersionProvider.notifier)
+            .markAsSeen(designNotesVersion),
+      );
+    });
     _ouRecognizer = TapGestureRecognizer()
       ..onTapDown = (_) async {
         _tapStart = DateTime.now();
@@ -311,4 +323,3 @@ class _DesignNote extends StatelessWidget {
     );
   }
 }
-
