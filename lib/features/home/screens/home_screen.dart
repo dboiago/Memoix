@@ -237,6 +237,7 @@ class _CourseGridViewState extends ConsumerState<_CourseGridView> {
                                   behavior: HitTestBehavior.opaque,
                                   onTap: () {},
                                   child: PopupMenuButton<String>(
+                                    tooltip: '',
                                     padding: EdgeInsets.zero,
                                     constraints: const BoxConstraints(maxWidth: 200),
                                     onSelected: (value) {
@@ -254,7 +255,7 @@ class _CourseGridViewState extends ConsumerState<_CourseGridView> {
                                     },
                                     itemBuilder: (_) => const [
                                       PopupMenuItem(value: 'search', child: Text('Search')),
-                                      PopupMenuItem(value: 'walkin', child: Text('Walk-In')),
+                                      PopupMenuItem(value: 'walkin', child: Text('The Walk-in')),
                                     ],
                                     child: Container(
                                       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
