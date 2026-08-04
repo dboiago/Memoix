@@ -116,6 +116,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
         _ingredients.add(_SeasoningEntry(
           nameController: TextEditingController(text: ingredient['name'] as String? ?? ''),
           amountController: TextEditingController(text: ingredient['amount'] as String? ?? ''),
+          notesController: TextEditingController(text: ingredient['notes'] as String? ?? ''),
         ),);
       }
 
@@ -177,6 +178,7 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
           _ingredients.add(_SeasoningEntry(
             nameController: TextEditingController(text: ingredient['name'] as String? ?? ''),
             amountController: TextEditingController(text: ingredient['amount'] as String? ?? ''),
+            notesController: TextEditingController(text: ingredient['notes'] as String? ?? ''),
           ),);
         }
 
@@ -1837,7 +1839,10 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
           ..name = i.nameController.text.trim()
           ..amount = i.amountController.text.trim().isEmpty
               ? null
-              : i.amountController.text.trim(),)
+          : i.amountController.text.trim()
+        ..notes = i.notesController.text.trim().isEmpty
+          ? null
+          : i.notesController.text.trim(),)
         .toList();
 
     // Build directions list
@@ -1859,7 +1864,11 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
       time: _timeController.text.trim(),
       wood: _woodController.text.trim(),
       seasoningsJson: jsonEncode(seasonings.map((s) => {'name': s.name, 'amount': s.amount, 'unit': s.unit}).toList()),
-      ingredientsJson: jsonEncode(ingredients.map((i) => {'name': i.name, 'amount': i.amount, 'unit': i.unit}).toList()),
+      ingredientsJson: jsonEncode(
+        ingredients
+        .map((i) => {'name': i.name, 'amount': i.amount, 'unit': i.unit, 'notes': i.notes})
+        .toList(),
+      ),
       serves: _servesController.text.trim().isEmpty ? null : _servesController.text.trim(),
       directions: jsonEncode(directions),
       notes: _notesController.text.trim().isEmpty ? null : _notesController.text.trim(),

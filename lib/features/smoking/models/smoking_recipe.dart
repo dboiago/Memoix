@@ -159,6 +159,7 @@ class SmokingSeasoning {
   String name = '';
   String? amount;
   String? unit;
+  String? notes;
   
   SmokingSeasoning();
   
@@ -166,6 +167,7 @@ class SmokingSeasoning {
     required this.name,
     this.amount,
     this.unit,
+    this.notes,
   });
 
   /// Display string like "2 Tbsp Sugar" or just "Salt"
