@@ -9,6 +9,7 @@ import '../../../core/providers.dart';
 import '../../../core/services/integrity_service.dart';
 import '../../../core/services/update_service.dart';
 import '../../../core/widgets/update_available_dialog.dart';
+import '../../rag/services/rag_retrieval_service.dart';
 import '../../settings/screens/settings_screen.dart';
 import '../../settings/widgets/culinary_intelligence_bottom_sheet.dart';
 import '../../../shared/widgets/course_card.dart';
@@ -29,7 +30,6 @@ import '../../cheese/models/cheese_entry.dart';
 import '../../cellar/repository/cellar_repository.dart';
 import '../../cellar/models/cellar_entry.dart';
 import '../../notes/repository/scratch_pad_repository.dart';
-import '../../settings/screens/settings_screen.dart';
 
 class HomeScreen extends ConsumerWidget {
   const HomeScreen({super.key});
@@ -190,6 +190,7 @@ class _CourseGridViewState extends ConsumerState<_CourseGridView> {
                 child: Builder(
                   builder: (context) {
                     final theme = Theme.of(context);
+                    final memoixAvailable = ref.watch(memoixAvailableProvider);
                     final overrides = ref.watch(viewOverrideProvider);
                     final hintOverride = overrides['ui_23'];
                     String searchHint = 'Search recipes...';
@@ -229,6 +230,68 @@ class _CourseGridViewState extends ConsumerState<_CourseGridView> {
                         hintText: searchHint,
                         hintStyle: TextStyle(color: theme.colorScheme.onSurfaceVariant),
                         prefixIcon: Icon(searchIcon, color: theme.colorScheme.onSurfaceVariant),
+                        suffixIcon: memoixAvailable
+                            ? Padding(
+                                padding: const EdgeInsets.only(right: 8),
+                                child: GestureDetector(
+                                  behavior: HitTestBehavior.opaque,
+                                  onTap: () {},
+                                  child: PopupMenuButton<String>(
+                                    padding: EdgeInsets.zero,
+                                    constraints: const BoxConstraints(maxWidth: 200),
+                                    onSelected: (value) {
+                                      if (!mounted || !context.mounted) return;
+                                      if (value == 'search') {
+                                        showSearch(
+                                          context: context,
+                                          delegate: RecipeSearchDelegate(ref),
+                                        );
+                                        return;
+                                      }
+                                      if (value == 'walkin') {
+                                        AppRoutes.toOmnibar(context, '');
+                                      }
+                                    },
+                                    itemBuilder: (_) => const [
+                                      PopupMenuItem(value: 'search', child: Text('Search')),
+                                      PopupMenuItem(value: 'walkin', child: Text('Walk-In')),
+                                    ],
+                                    child: Container(
+                                      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+                                      decoration: BoxDecoration(
+                                        color: theme.colorScheme.surfaceContainerHighest,
+                                        borderRadius: BorderRadius.circular(12),
+                                        border: Border.all(
+                                          color: theme.colorScheme.outline.withValues(alpha: 0.2),
+                                          width: 1.0,
+                                        ),
+                                      ),
+                                      child: Row(
+                                        mainAxisSize: MainAxisSize.min,
+                                        children: [
+                                          Text(
+                                            'Search',
+                                            style: TextStyle(
+                                              fontSize: 13,
+                                              color: theme.colorScheme.onSurface,
+                                            ),
+                                          ),
+                                          const SizedBox(width: 4),
+                                          Icon(
+                                            Icons.arrow_drop_down,
+                                            size: 16,
+                                            color: theme.colorScheme.onSurfaceVariant,
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              )
+                            : null,
+                        suffixIconConstraints: memoixAvailable
+                            ? const BoxConstraints(minWidth: 0, minHeight: 0)
+                            : null,
                         filled: true,
                         fillColor: theme.colorScheme.surfaceContainerHighest,
                         border: OutlineInputBorder(
