@@ -1,0 +1,15 @@
+{
+  "name": "memoix-corpus-pipeline",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "discover": "node 01_discover.js",
+    "fetch": "node 02_fetch.js",
+    "extract": "node 03_extract.js"
+  },
+  "dependencies": {
+    "@mozilla/readability": "^0.5.0",
+    "jsdom": "^25.0.0",
+    "turndown": "^7.2.0"
+  }
+}

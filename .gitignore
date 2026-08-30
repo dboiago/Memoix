@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+
+# Binaries & Compiled Files
+
+
+# Scrape Data & Ingestion Artifacts
+urls/
+raw*/
+extracted*/
+needs-review*/
+cuisine-review*/
+
+# Logs & Review Summaries
+logs*/
+*.jsonl
+*.log
+
+# Loose One-Off Testing Scripts
+comfytest.py
+cleanup*.js
+02_fetch-old.js
+
+# OS & Environment Metadata
+.DS_Store
+Thumbs.db
+*.tmp
