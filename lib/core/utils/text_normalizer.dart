@@ -38,7 +38,7 @@ class TextNormalizer {
       'bbq', 'xo', 'msg', 'aoc', 'dop', 'igp', 'pdo', 'pgi', 'abv', 'ibu', 's&p', 'tt', 'ap', 'gf', 'df', 'vg', 'gmo', 'hp', 'a1',
       'usa', 'uk', 'eu', 'nyc', 'la', 'sf', 'doc', 'docg', 'aop',
       'ipa', 'blt', 'pb', 'pbj',
-      'evoo', 'evo', 'ev'
+      'evoo', 'evo', 'ev',
       'diy', 'usda', 'fda',
       'ai', 'ml', 'tv', 'dvd', 'cd',
     };
