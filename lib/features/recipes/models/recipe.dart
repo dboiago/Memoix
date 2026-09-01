@@ -11,6 +11,7 @@ enum RecipeSource {
   url,       // Imported from URL
   ai,        // Scanned by AI
   walkin,    // Community recipe sourced from the Memoix RAG corpus
+  scraped,   // Recipe sourced from the automated corpus-scraping pipeline
 }
 
 class Recipe {
