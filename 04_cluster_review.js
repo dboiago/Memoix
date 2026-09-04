@@ -16,7 +16,7 @@
 // --top limits how many distinct values are shown per reason (default 15) —
 // the log itself is the full record, this is a triage view, not a report.
 
-const { readFileSync, existsSync } = require('fs');
+import { readFileSync, existsSync } from 'fs';
 
 function parseArgs() {
   const args = process.argv.slice(2);

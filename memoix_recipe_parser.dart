@@ -2464,6 +2464,35 @@ final _measurementNormalisation = {
       }
     }
     
+    if (amount == null) {
+      // Bare-unit lines with no leading number at all ("pinch of baking
+      // soda", "dash of bitters", "handful of herbs", "drop of vanilla
+      // extract") -- confirmed as the actual gap: none of the four patterns
+      // above can match these, since every one of them requires the string
+      // to start with a digit or fraction glyph. With amount left null, the
+      // whole phrase, including the unit word itself, falls through into
+      // the ingredient name untouched ("pinch of baking soda" -> name
+      // "Pinch Baking Soda", unit never set). These words always imply a
+      // quantity of exactly one, so amount is set to "1 <unit>" here, same
+      // combined-string convention the four patterns above already use,
+      // and gets split into amount/unit by the same downstream logic in
+      // main() that already handles that split for every other branch.
+      // Scoped to words that are unambiguously a quantity, never plausibly
+      // the ingredient's own name on their own -- extend this list if more
+      // real cases surface, but each addition should be confirmed against
+      // an actual corpus line first, not assumed.
+      final unitOnlyMatch = RegExp(
+        r'^(pinch(?:es)?|dash(?:es)?|handful(?:s)?|drop(?:s)?)\s+',
+        caseSensitive: false,
+      ).firstMatch(remaining);
+
+      if (unitOnlyMatch != null) {
+        final unit = unitOnlyMatch.group(1)?.trim() ?? '';
+        amount = '1 ${_normalizeUnit(unit)}';
+        remaining = remaining.substring(unitOnlyMatch.end).trim();
+      }
+    }
+
     // Strip leading "of" that some sites include after the amount
     // e.g., "2 tbsp of sunflower oil" -> remaining is "of sunflower oil" after amount extraction
     remaining = remaining.replaceFirst(RegExp(r'^of\s+', caseSensitive: false), '');

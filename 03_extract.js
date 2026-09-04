@@ -25,13 +25,14 @@
 //
 // IMPORTANT: --out-dir alone does NOT isolate a test run. needs-review/,
 // cuisine-review/, and logs/ are shared with the real corpus run unless you
-// also pass --needs-review-dir/--cuisine-review-dir/--log-dir — otherwise a
+// also pass --needs-review-dir/--cuisine-review-dir/--log-dir -- otherwise a
 // recipe flagged during a small test will be treated as already handled by
 // the real run later and silently skipped.
 
 import { readdirSync, readFileSync, writeFileSync, existsSync, mkdirSync, appendFileSync } from 'fs';
 import { createHash } from 'crypto';
 import { spawn } from 'child_process';
+import { cleanName, normalizeFractions, normalizeUnit, normalizeGarnish, normalizeGlass, COMPOUND_DETECTION_UNIT_WORDS } from './normalizers.js';
 
 // let, not const: --raw-dir/--out-dir/--model can override these in main()
 // before anything else runs, for A/B testing against a fixed input set
@@ -48,7 +49,7 @@ let OUT_DIR          = 'extracted';
 // let, not const: --needs-review-dir/--cuisine-review-dir/--log-dir can
 // override these. Previously these three were hardcoded regardless of
 // --out-dir, which meant a --raw-dir/--out-dir test run still wrote into
-// the same needs-review/cuisine-review/logs the real corpus run uses —
+// the same needs-review/cuisine-review/logs the real corpus run uses --
 // a recipe flagged during a small test would then be silently skipped by
 // the real run's resumability check (existsSync sees it as already done)
 // and would never make it into extracted/. Fixed: these now default to the
@@ -85,7 +86,7 @@ const VALID_COURSES = [
 // Base-spirit categories for drink recipes, confirmed against the app's
 // spirit color constants (spiritWhiskey, spiritRum, etc.). Canonical casing
 // (Title Case) matches the app's own example data ("subcategory": "Gin"),
-// unlike VALID_COURSES which the app stores lowercase — the two fields use
+// unlike VALID_COURSES which the app stores lowercase -- the two fields use
 // different casing conventions in the real schema, not an inconsistency here.
 const VALID_SUBCATEGORIES = [
   'Gin', 'Vodka', 'Whiskey', 'Rum', 'Tequila', 'Brandy', 'Wine',
@@ -93,7 +94,7 @@ const VALID_SUBCATEGORIES = [
 ];
 
 // Deterministic pre-resolution from PAGE-level structured data (ldCategory,
-// ldCuisine) only — never siteCourseHint/siteRegionHint. Site-level hints
+// ldCuisine) only -- never siteCourseHint/siteRegionHint. Site-level hints
 // describe the site in general, not this specific recipe, and locking a
 // value from them would reintroduce the exact bias risk the blind cuisine
 // check exists to catch (a stray recipe on a JP-tagged site getting hard-
@@ -103,7 +104,7 @@ const VALID_SUBCATEGORIES = [
 // stronger than site tags.
 //
 // Every entry here maps to exactly one confident answer. Deliberately
-// excludes broad multi-country groupings ("Mediterranean", "Caribbean") —
+// excludes broad multi-country groupings ("Mediterranean", "Caribbean") --
 // those span several genuinely different national cuisines, and collapsing
 // one to a single country (e.g. Mediterranean -> Greece) would ship a
 // specific wrong answer that looks confident and never gets reviewed. Those
@@ -162,7 +163,7 @@ const RECIPE_SCHEMA = {
     // enum, not just prose instructions: Ollama's format parameter (v0.3.0+)
     // applies real grammar-based constrained decoding, so this makes it
     // physically impossible for the model to emit a value outside
-    // VALID_COURSES/VALID_SUBCATEGORIES — a stronger guarantee than the
+    // VALID_COURSES/VALID_SUBCATEGORIES -- a stronger guarantee than the
     // post-hoc invalid-course/invalid-subcategory checks below, which still
     // stay in place as a safety net in case a future model/library swap
     // changes how strictly this is enforced. '' stays in the enum so "I
@@ -212,7 +213,7 @@ function sleep(ms) {
 function logError(slug, reason, detail = '') {
   const entry = JSON.stringify({ ts: new Date().toISOString(), slug, reason, detail });
   appendFileSync(ERROR_LOG, entry + '\n');
-  console.error(`  SKIP [${reason}]: ${slug}${detail ? ' — ' + detail : ''}`);
+  console.error(`  SKIP [${reason}]: ${slug}${detail ? ' -- ' + detail : ''}`);
 }
 
 let REVIEW_LOG  = `${LOG_DIR}/manual-review.jsonl`;
@@ -238,14 +239,27 @@ function logLineTiming(slug, lineIndex, totalLines, elapsedMs, outcome) {
 function logForReview(slug, url, reason, line, detail = '') {
   const entry = JSON.stringify({ ts: new Date().toISOString(), slug, url, reason, line, detail });
   appendFileSync(REVIEW_LOG, entry + '\n');
-  console.log(`  FLAGGED [${reason}]: ${slug} — "${line}"`);
+  console.log(`  FLAGGED [${reason}]: ${slug} -- "${line}"`);
 }
 
 // A single amount+unit pattern, matched globally against a raw ingredient line.
-// Deliberately loose (covers whole/decimal/fraction numbers and common units)
-// since this only needs to flag for a human, not classify correctly itself.
+// Deliberately loose (covers whole/decimal/fraction numbers) since this only
+// needs to flag for a human, not classify correctly itself. Unit vocabulary
+// is built from the shared COMPOUND_DETECTION_UNIT_WORDS list (same source
+// as UnitNormalizer.normalize on the Dart side) rather than a separately
+// hand-typed list -- confirmed real gap: the previous hand-typed list only
+// had abbreviated units (tbsp, oz, lb), so a line reading "1/2 cup + 4
+// tablespoons water, divided" (spelled-out "tablespoons") only ever matched
+// one amount+unit pattern ("1/2 cup"), never reached the two-match
+// threshold, and silently shipped as clean with the Dart parser's bad split
+// ("+ 4 Tablespoons Water" as the ingredient name) never flagged for review.
+const UNIT_ALTERNATION = COMPOUND_DETECTION_UNIT_WORDS
+  .slice()
+  .sort((a, b) => b.length - a.length) // longest-first so e.g. "tablespoons" matches before "t"
+  .map(u => u.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))
+  .join('|');
 const AMOUNT_UNIT_PATTERN =
-  /\b\d+(?:\.\d+)?(?:\/\d+)?\s*(g|kg|ml|l|tsp|tbsp|cup|cups|oz|lb|lbs|pinch|clove|cloves|piece|pieces)\b/gi;
+  new RegExp(`\\b\\d+(?:\\.\\d+)?(?:\\/\\d+)?\\s*(${UNIT_ALTERNATION})\\b`, 'gi');
 
 // Deterministic, not model-judged: if a raw ingredient line contains more than
 // one standalone amount+unit pattern outside of a parenthetical, it likely
@@ -259,17 +273,17 @@ const AMOUNT_UNIT_PATTERN =
 // shapes that are NOT compound uses, both confirmed against real corpus
 // output:
 //   - a unit conversion in parentheses, e.g. "1/2 cup cashews, soaked (75g)*"
-//     or "8 oz pasta (224g // any shape you like)" — the parenthetical
+//     or "8 oz pasta (224g // any shape you like)" -- the parenthetical
 //     amount isn't a second use, just an alternate unit or a note.
 //   - a slash- or comma-joined dual/triple-unit value with no parentheses,
-//     e.g. "200g/7oz shaved burdock" or "3/4 cup water, 6 oz/180 ml" — same
+//     e.g. "200g/7oz shaved burdock" or "3/4 cup water, 6 oz/180 ml" -- same
 //     quantity expressed in multiple units back to back, not two ingredients
-//     (confirmed against a real corpus line: 3/4 cup = 6 fl oz ≈ 180ml).
+//     (confirmed against a real corpus line: 3/4 cup = 6 fl oz = 180ml).
 // Matches inside parentheses are excluded before counting, and adjacent
 // slash- or comma-joined pairs outside parentheses are collapsed into one,
 // so only amounts that represent genuinely separate uses in the line's main
 // text still trigger a flag. A bare comma/slash with nothing else between
-// two amounts is a safe signal for this — a real second ingredient on the
+// two amounts is a safe signal for this -- a real second ingredient on the
 // same line always has descriptive text between the amounts, not just a
 // separator.
 function detectCompoundAmount(line) {
@@ -289,7 +303,7 @@ function detectCompoundAmount(line) {
   if (primary.length < 2) return null;
 
   // Pass 1: collapse bare slash/comma-adjacent pairs (nothing but the
-  // separator between them) into one item — e.g. "6 oz/180 ml". Tracks
+  // separator between them) into one item -- e.g. "6 oz/180 ml". Tracks
   // isCluster so pass 2 can tell a multi-unit conversion apart from a lone
   // amount, which matters for the distinction below.
   let collapsed = [];
@@ -312,10 +326,10 @@ function detectCompoundAmount(line) {
 
   // Pass 2: a leading amount followed by ", <already-collapsed multi-unit
   // cluster>" with no other digits in between is the same shape as
-  // "3/4 cup water, 6 oz/180 ml" — a single quantity restated in further
+  // "3/4 cup water, 6 oz/180 ml" -- a single quantity restated in further
   // units after a comma, not a second ingredient. Only fires when the
   // following item is a cluster (a real multi-unit conversion signal from
-  // pass 1), not a lone amount — "2 cups flour, 1 cup sugar" must still
+  // pass 1), not a lone amount -- "2 cups flour, 1 cup sugar" must still
   // flag as compound, and nothing here collapses it, since "1 cup" alone
   // isn't a cluster.
   const final = [];
@@ -341,7 +355,7 @@ function sha256(str) {
 }
 
 // serves is used for ingredient-scaling in the app, so it must land as a
-// bare integer regardless of what the model actually returned — the prompt
+// bare integer regardless of what the model actually returned -- the prompt
 // asks for one, but instruction-following alone isn't trustworthy (the same
 // gap that let "breakfast" through past VALID_COURSES). This is a
 // deterministic safety net, not a replacement for the prompt instruction.
@@ -428,13 +442,21 @@ function buildPayload(extracted, meta) {
   }
   n = n || {};
   const hasNutrition = [n.calories, n.carbs, n.fat, n.protein].some(v => v && v.trim());
+  // Matches NutritionInfo.toJson() exactly: a plain object (never an array)
+  // with calories/fatContent/carbohydrateContent/proteinContent keys. The
+  // pipeline's own internal vocabulary (n.carbs/n.fat/n.protein, matching
+  // the LLM prompt) is kept as-is above; only the keys written into the
+  // final payload needed to match the real app schema. Previously this was
+  // array-wrapped with carbs/fat/protein keys, which either threw on
+  // NutritionInfo.fromJson()'s Map cast or silently dropped three of four
+  // fields depending on how it was deserialized.
   const builtNutrition = hasNutrition
-    ? [{
+    ? {
         calories: nullIfEmpty(n.calories),
-        carbs:    nullIfEmpty(n.carbs),
-        fat:      nullIfEmpty(n.fat),
-        protein:  nullIfEmpty(n.protein),
-      }]
+        carbohydrateContent: nullIfEmpty(n.carbs),
+        fatContent: nullIfEmpty(n.fat),
+        proteinContent: nullIfEmpty(n.protein),
+      }
     : null;
 
   const coercedCount = ingredients.filter(i => typeof i === 'string').length;
@@ -450,6 +472,27 @@ function buildPayload(extracted, meta) {
     typeof i === 'string' ? parseIngredientString(i) : i
   );
 
+  // Region/subcategory: only ever set from a deterministic, page-provided
+  // source -- never from the model's own inference, whether from the main
+  // extraction call or the blind cuisine classifier. Confirmed necessary,
+  // not theoretical: the blind classifier was observed keying off
+  // place-names embedded in ingredient names ("Sichuan Lovage Rhizome" ->
+  // "Sichuan" on a soup with no other Sichuan-specific ingredients or
+  // technique; "Chihuahua cheese" -> "Chihuahua" on a goat birria empanada,
+  // a dish more commonly associated with Jalisco) rather than real evidence
+  // about the dish's actual origin. For an app aimed at kitchen
+  // professionals, a missing region costs nothing; a wrong one sitting next
+  // to real ingredient data looks exactly as authoritative as a correct one
+  // and actively misleads. No schema.org property or other deterministic
+  // page-level region signal exists yet, so this resolves to null for every
+  // non-drink recipe until a real one is added -- not a bug, the correct
+  // behavior given no trustworthy source currently exists. `region` is
+  // still computed upstream (main call, blind call) and left available on
+  // `extracted` for a future deterministic mapping, it's just never written
+  // into the payload.
+  const isDrink = nullIfEmpty(course) === 'drinks';
+  const resolvedSubcategory = isDrink ? nullIfEmpty(subcategory) : null;
+
   const recipe = {
     name:         name.trim(),
     time:         nullIfEmpty(time),
@@ -458,10 +501,9 @@ function buildPayload(extracted, meta) {
     serves:       nullIfEmpty(serves),
     source:       'scraped',
     cuisine:      nullIfEmpty(cuisine),
-    region:       nullIfEmpty(region),
-    glass:        nullIfEmpty(glass),
-    garnish:      Array.isArray(garnish) ? garnish.filter(g => g && g.trim()).map(g => g.trim()) : [],
-    subcategory:  nullIfEmpty(subcategory),
+    glass:        nullIfEmpty(normalizeGlass(glass)),
+    garnish:      Array.isArray(garnish) ? garnish.filter(g => g && g.trim()).map(g => normalizeGarnish(g.trim())) : [],
+    subcategory:  resolvedSubcategory,
     comments:     null,
     cookCount:    0,
     nutrition:    builtNutrition,
@@ -471,10 +513,10 @@ function buildPayload(extracted, meta) {
       const built = normalizedIngredients
         .filter(i => i.name && i.name.trim())
         .map(i => ({
-          name:       i.name.trim(),
-          unit:       nullIfEmpty(i.unit),
+          name:       cleanName(i.name.trim()),
+          unit:       nullIfEmpty(normalizeUnit(i.unit)),
           notes:      nullIfEmpty(i.notes),
-          amount:     i.amount && i.amount.trim() ? i.amount.trim() : '0',
+          amount:     i.amount && i.amount.trim() ? normalizeFractions(i.amount.trim()) : '0',
           section:    nullIfEmpty(i.section),
           isOptional: false,
         }));
@@ -523,16 +565,16 @@ function buildLdHints(meta) {
   if (meta.ldKeywords) hints.push(`Keywords (from page data): ${meta.ldKeywords}`);
   // Site-level hints from urls/site-tags.json, weaker than the page-level
   // JSON-LD hints above since they describe the site in general, not this
-  // specific recipe — a stray off-topic post on an otherwise CN-focused
+  // specific recipe -- a stray off-topic post on an otherwise CN-focused
   // blog should still follow what's actually on the page, not the site tag.
   if (meta.siteRegionHint) {
-    hints.push(`Site's general region/cuisine focus (soft default, not authoritative — prefer what this specific page actually says): ${meta.siteRegionHint}. ` +
+    hints.push(`Site's general region/cuisine focus (soft default, not authoritative -- prefer what this specific page actually says): ${meta.siteRegionHint}. ` +
       `A general blog with an overall regional focus still posts recipes that genuinely originate elsewhere ` +
       `(e.g. a Japanese-food-focused site posting a Russian-derived Beef Stroganoff, or a fusion/international dish) ` +
-      `— classify by what this specific dish actually is, not by the site's overall identity.`);
+      `-- classify by what this specific dish actually is, not by the site's overall identity.`);
   }
   if (meta.siteCourseHint) {
-    hints.push(`Site's general course focus (soft default, not authoritative — prefer what this specific page actually says): ${meta.siteCourseHint}`);
+    hints.push(`Site's general course focus (soft default, not authoritative -- prefer what this specific page actually says): ${meta.siteCourseHint}`);
   }
   return hints.length > 0 ? hints.join('\n') : null;
 }
@@ -540,20 +582,20 @@ function buildLdHints(meta) {
 // Recipe-plugin markdown (WP Recipe Maker and similar) commonly renders an
 // interactive checkbox glyph in front of every ingredient line. This was
 // flowing straight through, unstripped, into the Dart parser and out the
-// other side as part of the ingredient name (e.g. "▢ 3 to 4 Tablespoons
-// Oil"). Stripped here, once, before any downstream parsing sees the line —
+// other side as part of the ingredient name (e.g. "[] 3 to 4 Tablespoons
+// Oil"). Stripped here, once, before any downstream parsing sees the line --
 // not inside the Dart binary, since this is markdown-source noise, not an
 // ingredient-parsing decision.
 const LEADING_GLYPH_PATTERN = /^[\s\u2610\u2611\u2612\u25a1\u25a2\u25fb\u25fc\u2022\u25e6\u2043\-\*]+/;
 
 // Detects whether a recipe's own name signals it's a dietary adaptation of
-// something else (e.g. "Vegan Mushroom Stroganoff") — used to tell apart two
+// something else (e.g. "Vegan Mushroom Stroganoff") -- used to tell apart two
 // cases that both produce an empty extracted.cuisine and would otherwise
 // look identical: genuine fusion content with no real origin to find (where
 // falling back to the chef/site is the right call, per design), versus an
 // adaptation of a dish that DOES have a real origin, which the model simply
 // failed to identify despite the adaptation-aware prompt instruction. The
-// first case belongs in the chef/site waterfall; the second does not — the
+// first case belongs in the chef/site waterfall; the second does not -- the
 // site tag is most likely to be wrong exactly when a recipe like this one
 // is hosted on a differently-focused site, which is the same reasoning that
 // motivated the blind classifier in the first place. Confirmed necessary,
@@ -619,7 +661,7 @@ const INGREDIENT_LINE_SYSTEM_PROMPT =
 // recipe, and are exactly what biased the model toward "JP" on a Stroganoff
 // recipe. PAGE-level structured data (meta.ldCuisine, meta.ldCategory) is
 // different: it's the page's own stated claim about this specific recipe,
-// not a site-wide generalization, and omitting it was a real regression —
+// not a site-wide generalization, and omitting it was a real regression --
 // caught when it flipped a real Chinese recipe (madewithlau, ldCuisine:
 // "Chinese") to "SG" purely because the blind call had nothing to work with
 // beyond ingredients/directions. Confirmed via the recipe's own .meta.json,
@@ -638,14 +680,14 @@ const CUISINE_SCHEMA = {
 const CUISINE_SYSTEM_PROMPT =
   'You are classifying the national cuisine of a single recipe from its name, ingredients, directions, and (if ' +
   'given) the page\'s own stated cuisine/category. You are given no information about which website this recipe ' +
-  'came from or that site\'s general focus — classify from this specific recipe\'s own data only.\n\n' +
+  'came from or that site\'s general focus -- classify from this specific recipe\'s own data only.\n\n' +
   '- cuisine: the two-letter ISO 3166-1 alpha-2 country code for the national cuisine this recipe belongs to ' +
     '(e.g. "CN" for Chinese, "FR" for French, "DE" for German, "KR" for Korean, "RU" for Russian). ' +
     'Always a two-letter code, never a full name. If a page-stated cuisine/category is given below, treat it as ' +
     'a real signal from the page itself (not a site-wide generalization) and prefer it unless the recipe\'s own ' +
     'ingredients/directions clearly contradict it. ' +
     'If this recipe is a dietary adaptation of a traditionally-named dish (vegan, vegetarian, gluten-free, dairy-' +
-    'free, etc. — e.g. "Vegan Mushroom Stroganoff", "Gluten-Free Beef Bulgogi"), classify by the origin of the ' +
+    'free, etc. -- e.g. "Vegan Mushroom Stroganoff", "Gluten-Free Beef Bulgogi"), classify by the origin of the ' +
     'traditional dish being adapted, not by the substituted ingredients actually used. A vegan stroganoff is ' +
     'still Russian in origin even though the beef and sour cream have been replaced. ' +
     'If the recipe is a genuine fusion with no single traditional dish it is adapting, or has no clear national ' +
@@ -914,12 +956,12 @@ async function extractWithOllama(markdown, meta) {
 
     'Field rules:\n' +
     '- name: the recipe name. Use the page title if no clearer name is in the content. ' +
-      'Many blog titles are written as a narrative sentence or a personal story rather than a dish name — ' +
+      'Many blog titles are written as a narrative sentence or a personal story rather than a dish name -- ' +
       'strip that framing down to the plain dish name. Remove first-person narrative asides, possessive ' +
       'personal references, and hyperbolic claims that are not part of the dish\'s actual name (e.g. ' +
       '"My Dad\'s Made 100,000 Times", "The Best Ever", "You Won\'t Believe How Easy"), while keeping any ' +
       'native-language name in parentheses. For example, "The Ong Choy With Fermented Bean Curd My Dad\'s ' +
-      'Made 100,000 Times (腐乳炒蕹菜)" should become "Ong Choy With Fermented Bean Curd (腐乳炒蕹菜)". ' +
+      'Made 100,000 Times" should become "Ong Choy With Fermented Bean Curd". ' +
       'If the name contains an alternate or native-language name separated by a dash or colon ' +
       '(e.g. "Mala Dry Hot Pot - Mala Xiang Guo"), reformat it as "Primary Name (Alternate Name)" instead. ' +
       'But if a trailing segment after a dash or pipe is just the site\'s own branding rather than an ' +
@@ -947,13 +989,14 @@ async function extractWithOllama(markdown, meta) {
       '(e.g. "CN" for Chinese, "FR" for French, "DE" for German, "KR" for Korean). Always a two-letter code, never a full name. ' +
       'If this recipe is a dietary adaptation of a traditionally-named dish (vegan, vegetarian, gluten-free, ' +
       'dairy-free, etc.), classify by the origin of the traditional dish being adapted, not by the substituted ' +
-      'ingredients actually used — a vegan stroganoff is still Russian in origin.\n' +
+      'ingredients actually used -- a vegan stroganoff is still Russian in origin.\n' +
     '- region: the specific province, state, city, or sub-regional origin, if identifiable ' +
       '(e.g. "Sichuan", "Tuscany", "Oaxaca"). Give only the place name itself, without words like ' +
       '"cuisine", "province", or "style". Leave empty if no sub-regional origin is identifiable.\n' +
-    '- glass: for a cocktail or drink recipe only, the specific glass called for on the page ' +
-      '(e.g. "Coupe", "Rocks glass", "Collins glass"). Leave empty for any non-drink recipe, or if the ' +
-      'source page does not specify a glass.\n' +
+    '- glass: for a cocktail or drink recipe only, the specific glass style called for on the page, as the ' +
+      'bare style name only -- never include the word "glass" or "glassware" itself (e.g. "Coupe", "Collins", ' +
+      '"Rocks", "Nick and Nora", "Highball"). Leave empty for any non-drink recipe, or if the source page does ' +
+      'not specify a glass.\n' +
     '- garnish: for a cocktail or drink recipe only, a list of the garnish(es) described on the page, each as ' +
       'a short phrase (e.g. ["Lemon twist"], ["Mint sprig", "Angostura bitters"]). Return an empty array for ' +
       'any non-drink recipe, or if the source page does not specify a garnish.\n' +
@@ -1045,7 +1088,7 @@ async function extractWithOllama(markdown, meta) {
     // Confirmed against server.log for two real complex-recipe timeouts
     // (beef-wellington: 1699/3000 tokens decoded at ~9.4 t/s average when
     // killed at 180s; a modernist multi-component pie: 1538/3000 at ~8.5
-    // t/s) — both were genuinely still generating, not hung, and needed
+    // t/s) -- both were genuinely still generating, not hung, and needed
     // roughly 320-350s to finish the num_predict budget at this hardware's
     // observed decode speed. 420s gives real margin above that measured
     // worst case rather than a guessed round number.
@@ -1071,7 +1114,7 @@ async function extractWithOllama(markdown, meta) {
   // so the failure can be told apart from a genuine source-side absence without
   // needing to re-instrument and re-run. Not a fix, just makes the next run
   // self-diagnosing. Gated on that actual failure condition rather than
-  // writing for every recipe — at 100k-recipe scale, an unconditional dump
+  // writing for every recipe -- at 100k-recipe scale, an unconditional dump
   // here was writing 100k+ small files for runs that had nothing wrong.
   const hasBlankNamedIngredient = rawIngredients.some(i => !i || typeof i !== 'object' || !i.name);
   const shouldDumpRaw = rawIngredients.length === 0 || hasBlankNamedIngredient;
@@ -1159,7 +1202,7 @@ async function main() {
   const logDirIdx = args.indexOf('--log-dir');
   if (logDirIdx !== -1) LOG_DIR = args[logDirIdx + 1];
   // Recompute paths derived from LOG_DIR now that a --log-dir override (if
-  // any) has been applied — these were computed once at module load using
+  // any) has been applied -- these were computed once at module load using
   // the default, so they must be redone here or a --log-dir override would
   // be silently ignored.
   ERROR_LOG  = `${LOG_DIR}/extract-errors.jsonl`;
@@ -1201,7 +1244,7 @@ async function main() {
     const metaPath           = `${RAW_DIR}/${slug}.meta.json`;
 
     // Output can land in any of the three folders now, so resumability has
-    // to check all of them — otherwise a recipe already sitting in
+    // to check all of them -- otherwise a recipe already sitting in
     // needs-review/ or cuisine-review/ would get silently reprocessed and
     // duplicated into a different folder on the next run.
     if (existsSync(outPath) || existsSync(needsReviewPath) || existsSync(cuisineReviewPath)) {
@@ -1220,11 +1263,50 @@ async function main() {
 
     console.log(`Extracting [${processed + 1}]: ${meta.url}`);
 
-    // Set at each logForReview() call below — anything flagged this way is
+    // Set at each logForReview() call below -- anything flagged this way is
     // an extraction-completeness concern, so the whole recipe routes to
     // NEEDS_REVIEW_DIR rather than shipping partially-trusted data into the
     // clean corpus.
     let flaggedForReview = false;
+
+    // Deterministic, name/content-based scope gate: pizza and sandwich
+    // content are explicitly out of scope per VALID_COURSES' own comment
+    // (separate domainTypes with their own schemas, not yet built here).
+    // Nothing previously enforced that -- a pizza recipe would silently
+    // fall through to whatever course the model picked (observed: "mains")
+    // and ship as a standard recipe. Routed to needs-review instead of
+    // guessed at, same as every other domain-fit question in this pipeline.
+    //
+    // Checked as separate fields, not one joined blob: a false positive
+    // (starchefs-electric-jellyfish-ipa, a beer recipe, tripped this on
+    // its first run) is undebuggable if the log entry can't say which
+    // field matched or what text actually triggered it -- the original
+    // version logged the literal string 'pizza' regardless of cause.
+    //
+    // meta.title commonly appends a byline/attribution after a "|"
+    // separator, and the byline can name an unrelated business -- confirmed
+    // real: "StarChefs - Electric Jellyfish IPA | Brewer Joe Mohrfeld of
+    // Pinthouse Pizza" matched on the brewer's restaurant affiliation, not
+    // the dish, which is an IPA. Stripping everything from the first "|"
+    // onward before checking removes that false positive. Confirmed this
+    // doesn't lose the one real positive seen so far either: "Pizza with
+    // blue cheese and pineapple – Khymos" has no "|" at all, so the strip
+    // is a no-op there and the dish name still matches.
+    const PIZZA_PATTERN = /\bpizzas?\b/i;
+    const stripByline = (s) => (s ? s.split('|')[0] : s);
+    const scopeCheckFields = [
+      ['title', stripByline(meta.title)],
+      ['ldName', stripByline(meta.ldName)],
+      ['url', meta.url],
+    ];
+    const pizzaMatch = scopeCheckFields.find(([, value]) => value && PIZZA_PATTERN.test(value));
+    if (pizzaMatch) {
+      const [matchedField, matchedValue] = pizzaMatch;
+      logForReview(slug, meta.url, 'unsupported-domain-type', matchedValue,
+        `Matched "pizza" in meta.${matchedField}. Pizza is a separate domainType with its own ` +
+        'schema, not yet built in this pipeline -- quarantined rather than shipped as a standard recipe.');
+      flaggedForReview = true;
+    }
 
     try {
       const extracted = await extractWithOllama(markdown, meta);
@@ -1240,7 +1322,7 @@ async function main() {
       }
 
       // Unlike course, there's no fixed list to validate a cleaned-up name
-      // against — whether the model actually stripped narrative blog-title
+      // against -- whether the model actually stripped narrative blog-title
       // framing is a judgment call, not a lookup. This is a soft heuristic,
       // not a hard rule: a long name is a plausible signal the model kept
       // narrative framing instead of a plain dish name, worth a human
@@ -1249,12 +1331,12 @@ async function main() {
       const NAME_LENGTH_REVIEW_THRESHOLD = 70;
       if (extracted.name.trim().length > NAME_LENGTH_REVIEW_THRESHOLD) {
         logForReview(slug, meta.url, 'long-name', extracted.name,
-          `Name is ${extracted.name.trim().length} chars — check it isn't still a narrative blog title rather than a plain dish name.`);
+          `Name is ${extracted.name.trim().length} chars -- check it isn't still a narrative blog title rather than a plain dish name.`);
         flaggedForReview = true;
       }
 
       // Deterministic override: if the page itself states a category that
-      // maps unambiguously, that beats whatever the model guessed — no
+      // maps unambiguously, that beats whatever the model guessed -- no
       // instruction-following risk, and it's guaranteed to already be a
       // valid VALID_COURSES value by construction, so the check below
       // can't fire a false invalid-course flag on it.
@@ -1264,13 +1346,13 @@ async function main() {
       }
 
       // course is a hard-set enum in the app's domain model, not a free-text
-      // field — VALID_COURSES was previously only ever interpolated into the
+      // field -- VALID_COURSES was previously only ever interpolated into the
       // prompt, never checked against what the model actually returned, so
       // an instruction-following miss (e.g. "breakfast" instead of "brunch")
       // shipped straight into the corpus with no signal. Enforced here: an
       // empty course is fine (means the model couldn't determine one), but
       // a non-empty value outside VALID_COURSES is never silently coerced or
-      // dropped — it's flagged so a human decides the right mapping.
+      // dropped -- it's flagged so a human decides the right mapping.
       if (extracted.course && extracted.course.trim()
           && !VALID_COURSES.includes(extracted.course.trim().toLowerCase())) {
         logForReview(slug, meta.url, 'invalid-course', extracted.course,
@@ -1302,11 +1384,11 @@ async function main() {
       extracted.serves = servesNormalized ?? '';
       if (ambiguousRange) {
         logForReview(slug, meta.url, 'serves-range', servesRaw,
-          `Resolved to "${servesNormalized}" (higher end of the range) — confirm this is the intended yield.`);
+          `Resolved to "${servesNormalized}" (higher end of the range) -- confirm this is the intended yield.`);
         flaggedForReview = true;
       } else if (servesRaw && servesRaw.trim() && !servesNormalized) {
         // Model returned non-empty text with no extractable number at all
-        // (e.g. "a crowd") — can't normalize this deterministically.
+        // (e.g. "a crowd") -- can't normalize this deterministically.
         logForReview(slug, meta.url, 'serves-unparseable', servesRaw,
           'Could not extract a whole number from the model\'s serves value.');
         flaggedForReview = true;
@@ -1348,7 +1430,7 @@ async function main() {
             // 'alternative' (e.g. "OR maple syrup" substitutions). Neither
             // alone is a clean fit for lines that are really just a free-form
             // note ("adjust spice level to taste"), so both are joined here
-            // rather than picking one — alternative gets an explicit "alt:"
+            // rather than picking one -- alternative gets an explicit "alt:"
             // label so it reads as a substitution, not another prep note.
             const notes = [item.preparation, item.alternative ? `alt: ${item.alternative}` : null]
               .filter(Boolean).join('; ');
@@ -1386,7 +1468,7 @@ async function main() {
       }
 
       // Deterministic override first: if the page itself states an
-      // unambiguous cuisine, that's a stronger, free, per-recipe signal —
+      // unambiguous cuisine, that's a stronger, free, per-recipe signal --
       // lock it and skip the blind Ollama call entirely for this recipe.
       // Falls through to the blind check below when ldCuisine is absent or
       // too broad to map confidently (e.g. "Mediterranean").
@@ -1395,7 +1477,7 @@ async function main() {
         extracted.cuisine = ldCuisine;
       } else if (meta.siteRegionHint) {
         // Only worth the extra call when there's a hint that could have
-        // biased the main call's cuisine field in the first place — an
+        // biased the main call's cuisine field in the first place -- an
         // unhinted site has nothing for the model to lean on, so there's no
         // bias risk to check.
         try {
@@ -1403,14 +1485,14 @@ async function main() {
             extracted.name, extracted.ingredients, extracted.directions,
             meta.ldCuisine, meta.ldCategory
           );
-          // The blind result becomes authoritative — it was never shown the
+          // The blind result becomes authoritative -- it was never shown the
           // SITE-level hint, so it can't be biased by that. It was shown the
           // page's own ldCuisine/ldCategory, which is a real per-recipe
           // signal, not the same failure mode.
           extracted.cuisine = blind.cuisine;
           extracted.region  = blind.region;
         } catch (e) {
-          // Don't fail the whole recipe over this — fall back to the
+          // Don't fail the whole recipe over this -- fall back to the
           // hint-informed cuisine/region already in extracted, but flag it
           // so a silent fallback to the potentially-biased value isn't
           // invisible.
@@ -1420,35 +1502,17 @@ async function main() {
         }
       }
 
-      // Chef -> site waterfall, only for recipes still empty after the
-      // above AND whose name doesn't itself signal a dietary adaptation of
-      // something with a real origin (DIETARY_ADAPTATION_PATTERN below) —
-      // that case gets quarantined instead, not guessed via chef/site, since
-      // there IS a right answer the model just missed. No objectively-
-      // correct answer exists to be biased away from for genuine fusion/
-      // technique-driven content, so falling back to the named chef's own
-      // culinary identity, then the site's general identity, is a
-      // deliberate design choice there. The site-fallback tier is logged
-      // for traceability via the aggregator but not flagged for review —
-      // an accepted, designed resolution path, not a failure needing a
-      // human decision. The chef-fallback tier that used to sit here
-      // (meta.byline -> classifyChefCuisine) was removed after two real
-      // results confirmed wrong: Noma Projects (siteRegionHint "DK") came
-      // back "DE", not a plausible near-miss; and David Lebovitz (an
-      // American writer whose actual content is French pastry,
-      // siteRegionHint "FR") came back "US" — a chef's nationality and the
-      // cuisine they actually cook are different things, and this tier only
-      // ever asked for nationality. Site-fallback alone would have gotten
-      // both of these right.
+      // Site fallback only, no chef tier -- classifyChefCuisine was removed
+      // after two confirmed-wrong results (Noma Projects, David Lebovitz).
       // Checked against the cleaned extracted.name, the raw meta.title/
-      // meta.ldName, AND meta.url — the name-cleanup step earlier in the
+      // meta.ldName, AND meta.url -- the name-cleanup step earlier in the
       // pipeline is allowed to rewrite extracted.name and nothing
       // guarantees a dietary modifier survives that rewrite, and confirmed
       // against a real case (okonomikitchen's vegan cereal) that the word
       // can be missing from title/ldName too and only survive in the URL
       // slug itself ("diy-3-ingredient-healthy-vegan-cereal"). ALSO treats
       // a site tagged siteCourseHint "veg'n" as an adaptation signal on its
-      // own, regardless of what any single recipe's title says — a
+      // own, regardless of what any single recipe's title says -- a
       // dedicated vegan blog's own posts don't always restate "vegan" in
       // every title since it's implied by the site itself, and this site
       // has repeatedly shown that exact pattern across this corpus.
@@ -1469,7 +1533,7 @@ async function main() {
       } else if (looksLikeUnresolvedAdaptation) {
         logForReview(slug, meta.url, 'adapted-dish-cuisine-unresolved', extracted.name,
           'Name suggests a dietary adaptation of a traditionally-named dish, but no origin could be determined ' +
-          'from the recipe content — needs a human (or a targeted lookup) rather than a chef/site guess, since ' +
+          'from the recipe content -- needs a human (or a targeted lookup) rather than a chef/site guess, since ' +
           'a real origin likely exists.');
         flaggedForReview = true;
       }
@@ -1477,7 +1541,7 @@ async function main() {
       const payload = buildPayload(extracted, meta);
 
       // course and cuisine are the two fields the app's search/discovery
-      // depends on — a recipe with either null isn't just incomplete, it's
+      // depends on -- a recipe with either null isn't just incomplete, it's
       // invisible to a user browsing by cuisine or course. Previously an
       // empty value here shipped silently into extracted/ with no signal at
       // all; now it's quarantined into needs-review like any other
@@ -1487,14 +1551,14 @@ async function main() {
         const missing = [!payload.recipe.course && 'course', !payload.recipe.cuisine && 'cuisine']
           .filter(Boolean).join(' and ');
         logForReview(slug, meta.url, 'not-searchable', missing,
-          `Recipe has no ${missing} — would not be discoverable by that field in the app.`);
+          `Recipe has no ${missing} -- would not be discoverable by that field in the app.`);
         flaggedForReview = true;
       }
 
       // Cuisine-review is a separate question from extraction completeness:
       // "does this content belong on this site at all," not "did we get it
       // correctly." Only fires when both the site tag and the model's own
-      // cuisine call are present and disagree — a site with no region tag,
+      // cuisine call are present and disagree -- a site with no region tag,
       // or a recipe where cuisine came back empty, has nothing to compare.
       const cuisineMismatch = meta.siteRegionHint
         && payload.recipe.cuisine
@@ -1507,7 +1571,7 @@ async function main() {
       } else if (cuisineMismatch) {
         destPath = cuisineReviewPath;
         cuisineReviewCount++;
-        console.log(`  CUISINE-REVIEW: ${slug} — site tagged "${meta.siteRegionHint}", recipe classified "${payload.recipe.cuisine}"`);
+        console.log(`  CUISINE-REVIEW: ${slug} -- site tagged "${meta.siteRegionHint}", recipe classified "${payload.recipe.cuisine}"`);
       } else {
         destPath = outPath;
         cleanCount++;
