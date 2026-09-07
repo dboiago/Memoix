@@ -32,14 +32,26 @@ const UPPERCASE_WORDS = new Set([
 ]);
 
 /**
- * Port of TextNormalizer.cleanName. Collapses whitespace, strips trailing
- * punctuation, applies Title Case with lowercase connectors and preserved
- * acronyms (BBQ, XO, MSG, etc.) exactly as the app does for every other
- * import path.
+ * Port of TextNormalizer.cleanName. Collapses whitespace, strips a trailing
+ * footnote-marker suffix, strips trailing punctuation, applies Title Case
+ * with lowercase connectors and preserved acronyms (BBQ, XO, MSG, etc.)
+ * exactly as the app does for every other import path.
  */
 export function cleanName(name) {
   let cleaned = (name ?? '').trim().replace(/\s+/g, ' ');
+
+  // Strip footnote-marker suffixes like " *1" or "*2" before the trailing-
+  // punctuation strip below, which only handles ,;:. and would otherwise
+  // leave the digit in place. Confirmed on chopstickchronicles.com's
+  // Shiratama Dango: ingredient name "Glutinous Rice Flour *1" survived
+  // unchanged into the final payload. Anchored to end-of-string so it only
+  // strips a genuine trailing footnote marker, not an asterisk-digit
+  // sequence appearing mid-name for some other reason.
+  cleaned = cleaned.replace(/\s*\*\s*\d+$/, '');
+
+  // Remove trailing punctuation
   cleaned = cleaned.replace(/[,;:.]+$/, '').trim();
+
   if (!cleaned) return cleaned;
 
   const words = cleaned.split(' ');

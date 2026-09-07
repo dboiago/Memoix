@@ -1478,6 +1478,22 @@ final _measurementNormalisation = {
     RegExp(r'\blitre[s]?\b', caseSensitive: false): 'L',
 };
 
+// Shared unit alternation for the four amount-extraction regexes in
+// _parseIngredientString below. Previously this alternation was duplicated
+// verbatim four times, inline, inside each regex literal -- which is exactly
+// how "lb" missing its plural form ("lbs" never matched) and "quarts" being
+// absent entirely went unnoticed for so long: fixing it meant remembering to
+// find and edit all four copies. Confirmed on vickypham.com's Vietnamese
+// Crab and Tomato Noodle Soup: "3 lbs pork spare ribs or pork neck bones"
+// parsed with amount left unset and "Lbs Pork Spare Ribs" as the name; "5
+// quarts water" parsed the same way as "Quarts Water". Both are fixed by
+// this constant alone, in one place, applied identically everywhere.
+const _ingredientUnitAlternation =
+    'teaspoons?|tablespoons?|cups?|c|Tbsp|tbsp|tsp|oz|lbs?|kg|g|ml|L|'
+    'pounds?|ounces?|inch(?:es)?|in|cm|slices?|cloves?|sprigs?|cans?|'
+    'stalks?|heads?|bunche?s?|pieces?|pinch(?:es)?|dash(?:es)?|drops?|'
+    'quarts?|qt|large|medium|small';
+
 
 // ---- Parsing functions (from url_importer.dart, converted to top-level) ----
   String _decodeHtml(String text) {
@@ -2172,220 +2188,56 @@ final _measurementNormalisation = {
     final wordNumberMatch = RegExp(r'^(one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|a|an|half|quarter)\b\s*', caseSensitive: false).firstMatch(remaining);
     if (wordNumberMatch != null) {
       final word = wordNumberMatch.group(1)!.toLowerCase();
-      final digit = wordNumbers[word] ?? word;
-      remaining = digit + remaining.substring(wordNumberMatch.end);
+      final rest = remaining.substring(wordNumberMatch.end);
+      // "a"/"an" precede a genuine countable noun ("a lemon" -> "1 lemon")
+      // often enough to be worth converting, but the same word also precedes
+      // vague, non-numeric quantity phrases ("a few sprinkles", "a splash of
+      // milk") where forcing a literal "1" is wrong -- there's no single unit
+      // being counted. Confirmed on mykoreankitchen.com's Tuna Pancakes: "A
+      // few sprinkles ground black pepper" converted to "1few Sprinkles
+      // Ground Black Pepper" (missing-space bug below) instead of staying
+      // unquantified the way "Some cooking oil" already correctly does on
+      // the same page, since "some" isn't in this map at all.
+      final nextWordMatch = RegExp(r'^\S+').firstMatch(rest);
+      final nextWord = (nextWordMatch?.group(0) ?? '').toLowerCase();
+      const vagueQuantityWords = {
+        'few', 'bit', 'splash', 'splashes', 'couple', 'handful', 'handfuls',
+        'touch', 'sprinkle', 'sprinkles', 'sprinkling', 'drizzle',
+      };
+      final isVagueArticle = (word == 'a' || word == 'an') && vagueQuantityWords.contains(nextWord);
+      if (!isVagueArticle) {
+        final digit = wordNumbers[word] ?? word;
+        // Preserve a separating space -- the original substitution
+        // concatenated digit + rest directly with nothing in between,
+        // because the regex's trailing \s* consumed all whitespace into the
+        // match itself, leaving nothing for remaining.substring(match.end)
+        // to start with. "Two large eggs" silently became "2large eggs",
+        // which then failed every downstream regex in this function that
+        // requires whitespace after the amount, falling through to
+        // name-only parsing with no amount extracted at all. Not limited to
+        // "a"/"an" -- confirmed against every entry in wordNumbers.
+        remaining = '$digit $rest';
+      }
     }
     
-    // Handle King Arthur Baking complex format:
-    // "2 cups plus 2 tablespoons (255g) King Arthur Unbleached Cake Flour or King Arthur Gluten-Free Flour*"
-    // Pattern: amount unit "plus" amount unit (weight) Name or Alternative
-    final kingArthurMatch = RegExp(
-      r'^([\d\s½¼¾⅓⅔⅛⅜⅝⅞/]+)\s*(cups?|tablespoons?|teaspoons?|tbsp|tsp|oz|lb)\.?\s+plus\s+([\d\s½¼¾⅓⅔⅛⅜⅝⅞/]+)\s*(cups?|tablespoons?|teaspoons?|tbsp|tsp|oz|lb)\.?\s*(?:\((\d+g?)\))?\s*(.+)$',
+    // Try baker's percentage format: "Name, XX% –" amount"
+    final bakerMatch = RegExp(
+      r'^([^,]+),\s*([\d.]+)%\s*[–—-]\s*(\d+\s*(?:g|kg|ml|l|oz|lb)?)\s*(?:\(([^)]+)\))?',
       caseSensitive: false,
     ).firstMatch(remaining);
-    if (kingArthurMatch != null) {
-      final primaryAmt = kingArthurMatch.group(1)?.trim() ?? '';
-      final primaryUnit = _normalizeUnit(kingArthurMatch.group(2)?.trim() ?? '');
-      final secondaryAmt = kingArthurMatch.group(3)?.trim() ?? '';
-      final secondaryUnit = _normalizeUnit(kingArthurMatch.group(4)?.trim() ?? '');
-      final weight = kingArthurMatch.group(5)?.trim();
-      var nameAndAlt = kingArthurMatch.group(6)?.trim() ?? '';
-      
-      // Remove trailing asterisk/footnote markers
-      nameAndAlt = nameAndAlt.replaceAll(RegExp(r'\*+$'), '').trim();
-      
-      // Check for "or" alternatives
-      String name;
-      String? alternative;
-      final orMatch = RegExp(r'^(.+?)\s+or\s+(.+)$', caseSensitive: false).firstMatch(nameAndAlt);
-      if (orMatch != null) {
-        name = orMatch.group(1)?.trim() ?? nameAndAlt;
-        alternative = orMatch.group(2)?.trim();
-      } else {
-        name = nameAndAlt;
-      }
-      
-      // Build preparation string with additional info
-      final prepParts = <String>[];
-      prepParts.add('plus $secondaryAmt $secondaryUnit');
-      if (weight != null && weight.isNotEmpty) {
-        // Ensure weight has 'g' suffix
-        final weightStr = weight.endsWith('g') ? weight : '${weight}g';
-        prepParts.add(weightStr);
-      }
-      if (alternative != null) {
-        prepParts.add('alt: $alternative');
-      }
-      
+    if (bakerMatch != null) {
       return Ingredient.create(
-        name: _cleanIngredientName(name),
-        amount: '$primaryAmt $primaryUnit',
-        preparation: prepParts.join(', '),
+        name: _cleanIngredientName(bakerMatch.group(1)?.trim() ?? remaining),
+        bakerPercent: '${bakerMatch.group(2)}%',
+        amount: bakerMatch.group(3)?.trim(),
+        preparation: bakerMatch.group(4)?.trim(),
       );
     }
     
-    // Handle simpler "X plus Y" format without the complex alternative
-    // e.g., "3/4 cup plus 2 tablespoons (173g) granulated sugar"
-    final simplePlusMatch = RegExp(
-      r'^([\d\s½¼¾⅓⅔⅛⅜⅝⅞/]+)\s*(cups?|tablespoons?|teaspoons?|tbsp|tsp|oz|lb)\.?\s+plus\s+([\d\s½¼¾⅓⅔⅛⅜⅝⅞/]+)\s*(cups?|tablespoons?|teaspoons?|tbsp|tsp|oz|lb)\.?\s*(?:\((\d+g?)\))?\s+(.+)$',
-      caseSensitive: false,
-    ).firstMatch(remaining);
-    if (simplePlusMatch != null) {
-      final primaryAmt = simplePlusMatch.group(1)?.trim() ?? '';
-      final primaryUnit = _normalizeUnit(simplePlusMatch.group(2)?.trim() ?? '');
-      final secondaryAmt = simplePlusMatch.group(3)?.trim() ?? '';
-      final secondaryUnit = _normalizeUnit(simplePlusMatch.group(4)?.trim() ?? '');
-      final weight = simplePlusMatch.group(5)?.trim();
-      final name = simplePlusMatch.group(6)?.trim() ?? '';
-      
-      // Build preparation string
-      final prepParts = <String>[];
-      prepParts.add('plus $secondaryAmt $secondaryUnit');
-      if (weight != null && weight.isNotEmpty) {
-        final weightStr = weight.endsWith('g') ? weight : '${weight}g';
-        prepParts.add(weightStr);
-      }
-      
-      return Ingredient.create(
-        name: _cleanIngredientName(name.replaceAll(RegExp(r'\*+$'), '').trim()),
-        amount: '$primaryAmt $primaryUnit',
-        preparation: prepParts.join(', '),
-      );
-    }
-    
-    // Handle Bon Appétit style: "1 28-oz./794-g can crushed tomatoes"
-    // Pattern: quantity + size-unit./size-metric + container + name
-    // e.g., "1 28-oz./794-g can crushed tomatoes" -> amount: "1 can (28-oz./794-g)", name: "crushed tomatoes"
-    // e.g., "1 12-oz./355-ml jar banana peppers" -> amount: "1 jar (12-oz./355-ml)", name: "banana peppers"
-    final quantitySizeContainerMatch = RegExp(
-      r'^(\d+)\s+([\d.]+)\s*[-–—−]?\s*(oz|ounces?)\.?\s*/\s*([\d.]+)\s*[-–—−]?\s*(g|grams?|ml|l)\s+(can|jar|bottle|package|pkg|box|bag|container|carton)\s+(.+)$',
-      caseSensitive: false,
-    ).firstMatch(remaining);
-    if (quantitySizeContainerMatch != null) {
-      final quantity = quantitySizeContainerMatch.group(1)?.trim() ?? '';
-      final sizeAmt = quantitySizeContainerMatch.group(2)?.trim() ?? '';
-      final sizeUnit = quantitySizeContainerMatch.group(3)?.trim() ?? '';
-      final metricAmt = quantitySizeContainerMatch.group(4)?.trim() ?? '';
-      final metricUnit = quantitySizeContainerMatch.group(5)?.trim() ?? '';
-      final container = quantitySizeContainerMatch.group(6)?.trim() ?? '';
-      final ingredientName = quantitySizeContainerMatch.group(7)?.trim() ?? '';
-      
-      // Normalize units
-      String normalizedSizeUnit = sizeUnit.toLowerCase();
-      if (normalizedSizeUnit.startsWith('ounce')) normalizedSizeUnit = 'oz';
-      
-      String normalizedMetricUnit = metricUnit.toLowerCase();
-      if (normalizedMetricUnit.startsWith('gram')) normalizedMetricUnit = 'g';
-      
-      // Format: amount = "1 can", preparation = "(28-oz./794-g)" or just the metric info
-      final sizeInfo = '$sizeAmt $normalizedSizeUnit / $metricAmt$normalizedMetricUnit';
-      
-      return Ingredient.create(
-        name: _cleanIngredientName(ingredientName),
-        amount: '$quantity $container',
-        preparation: sizeInfo,
-      );
-    }
-    
-    // Handle dual unit amounts EARLY - before other patterns can partially match
-    // Pattern: "28-oz./794-g can" or "14.5-oz./411-g can" or "One 28-oz./794-g can"
-    // These have number-unit./number-unit followed by descriptor/name
-    // Handle various dash types (hyphen, en-dash, em-dash) and Unicode minus
-    // Also handle ounces as 'ounce' or 'ounces' not just 'oz'
-    final dualUnitMatch = RegExp(
-      r'^([\d.]+)\s*[-–—−]?\s*(oz|ounces?|lb|pounds?|cups?|tbsp|tsp)\.?\s*/\s*([\d.]+)\s*[-–—−]?\s*(g|kg|ml|l|grams?)\s+(.+)$',
-      caseSensitive: false,
-    ).firstMatch(remaining);
-    if (dualUnitMatch != null) {
-      final primaryAmt = dualUnitMatch.group(1)?.trim() ?? '';
-      final primaryUnit = dualUnitMatch.group(2)?.trim() ?? '';
-      final metricAmt = dualUnitMatch.group(3)?.trim() ?? '';
-      final metricUnit = dualUnitMatch.group(4)?.trim() ?? '';
-      final nameWithDescriptor = dualUnitMatch.group(5)?.trim() ?? '';
-      
-      // Normalize units (ounces -> oz, pounds -> lb, grams -> g)
-      String normalizedPrimaryUnit = primaryUnit.toLowerCase();
-      if (normalizedPrimaryUnit.startsWith('ounce')) normalizedPrimaryUnit = 'oz';
-      if (normalizedPrimaryUnit.startsWith('pound')) normalizedPrimaryUnit = 'lb';
-      
-      String normalizedMetricUnit = metricUnit.toLowerCase();
-      if (normalizedMetricUnit.startsWith('gram')) normalizedMetricUnit = 'g';
-      
-      // Check for "can", "jar", "bottle" etc. as part of the ingredient description
-      // e.g., "can crushed tomatoes" -> name: "can crushed tomatoes" or just "crushed tomatoes"
-      return Ingredient.create(
-        name: _cleanIngredientName(nameWithDescriptor),
-        amount: '$primaryAmt $normalizedPrimaryUnit',
-        preparation: '$metricAmt$normalizedMetricUnit',
-      );
-    }
-    
-    // Check for optional markers anywhere and extract to notes
-    final optionalPatterns = [
-      RegExp(r'\(\s*optional\s*\)', caseSensitive: false),
-      RegExp(r',\s*optional\s*$', caseSensitive: false),
-      RegExp(r'\s+optional\s*$', caseSensitive: false),
-    ];
-    
-    for (final pattern in optionalPatterns) {
-      if (pattern.hasMatch(remaining)) {
-        isOptional = true;
-        remaining = remaining.replaceAll(pattern, '').trim();
-        notesParts.add('optional');
-        break;
-      }
-    }
-    
-    // Extract ALL parenthetical content as notes (preparation info, alternatives, etc.)
-    // Handle double parentheses like ((0.6 pounds)) and leading commas like (, regular)
-    // First normalize double parentheses to single
-    remaining = remaining.replaceAll('((', '(').replaceAll('))', ')');
-    
-    final parenMatches = RegExp(r'\(([^)]+)\)').allMatches(remaining).toList();
-    for (final match in parenMatches.reversed) {
-      var content = match.group(1)?.trim() ?? '';
-      
-      // Remove leading commas/spaces from inside parentheses (site-specific quirk)
-      content = content.replaceAll(RegExp(r'^[,\s]+'), '').trim();
-      
-      if (content.isNotEmpty && content.toLowerCase() != 'optional') {
-        // Check if this looks like a ratio/recipe description that should stay with the name
-        // e.g., "(2 sugar to 1 water, 65.0°Brix)" or "(3:1 simple syrup)"
-        // These describe the ingredient itself, not preparation
-        final looksLikeRatio = RegExp(
-          r'\d+\s*(to|:|parts?)\s*\d+|brix|syrup|ratio|simple|rich',
-          caseSensitive: false,
-        ).hasMatch(content);
-        
-        if (looksLikeRatio) {
-          // Keep this as part of the ingredient name, don't extract to notes
-          continue;
-        }
-        
-        // Check if it's a weight conversion (e.g., "0.6 pounds", "1 lb", "500g")
-        final isWeightConversion = RegExp(
-          r'^[\d.]+\s*(?:pounds?|lbs?|oz|ounces?|kg|g|grams?)$',
-          caseSensitive: false,
-        ).hasMatch(content);
-        
-        if (isWeightConversion) {
-          // Add weight conversion to notes
-          notesParts.insert(0, content);
-        } else {
-          // Add other parenthetical content to notes
-          notesParts.insert(0, content);
-        }
-      }
-      remaining = remaining.substring(0, match.start) + remaining.substring(match.end);
-    }
-    remaining = remaining.replaceAll(RegExp(r'\s+'), ' ').trim();
-    
-    // Try to extract amount (number at start, possibly with range and unit)
-    // Handle compound fractions like "1 1/2" or "1 ½" (whole number + fraction)
-    // Handle ranges like "1-1.5 Tbsp" or "1 -1.5 Tbsp" (space before dash)
+    // Try standard format: "amount unit name"
     final compoundFractionMatch = RegExp(
       r'^(\d+)\s+([½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚]|1/2|1/4|3/4|1/3|2/3|1/8|3/8|5/8|7/8)'
-      r'(\s*(?:teaspoons?|tablespoons?|cups?|c|Tbsp|tbsp|tsp|oz|lb|kg|g|ml|L|pounds?|ounces?|inch(?:es)?|in|cm|slices?|cloves?|sprigs?|cans?|stalks?|heads?|bunche?s?|pieces?|pinch(?:es)?|dash(?:es)?|drops?|large|medium|small)\.?)?\s+',
+      r'(\s*(?:' + _ingredientUnitAlternation + r')\.?)?\s+',
       caseSensitive: false,
     ).firstMatch(remaining);
     
@@ -2407,7 +2259,7 @@ final _measurementNormalisation = {
     if (amount == null) {
       final textFractionMatch = RegExp(
         r'^(\d+/\d+)'
-        r'(\s*(?:teaspoons?|tablespoons?|cups?|c|Tbsp|tbsp|tsp|oz|lb|kg|g|ml|L|pounds?|ounces?|inch(?:es)?|in|cm|slices?|cloves?|sprigs?|cans?|stalks?|heads?|bunche?s?|pieces?|pinch(?:es)?|dash(?:es)?|drops?|large|medium|small)\.?)?\s+',
+        r'(\s*(?:' + _ingredientUnitAlternation + r')\.?)?\s+',
         caseSensitive: false,
       ).firstMatch(remaining);
       
@@ -2428,7 +2280,7 @@ final _measurementNormalisation = {
       // Handle "X to Y unit" range format (e.g., "1 to 2 teaspoons")
       final toRangeMatch = RegExp(
         r'^([\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚.]+)\s+to\s+([\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚.]+)'
-        r'(\s*(?:teaspoons?|tablespoons?|cups?|c|Tbsp|tbsp|tsp|oz|lb|kg|g|ml|L|pounds?|ounces?|inch(?:es)?|in|cm|slices?|cloves?|sprigs?|cans?|stalks?|heads?|bunche?s?|pieces?|pinch(?:es)?|dash(?:es)?|drops?|large|medium|small)\.?)?\s+',
+        r'(\s*(?:' + _ingredientUnitAlternation + r')\.?)?\s+',
         caseSensitive: false,
       ).firstMatch(remaining);
       
@@ -2448,7 +2300,7 @@ final _measurementNormalisation = {
       // Original pattern for simple amounts and ranges with dash/en-dash
       final amountMatch = RegExp(
         r'^([\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚.]+\s*[-–]\s*[\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚.]+|[\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚.]+)'
-        r'(\s*(?:teaspoons?|tablespoons?|cups?|c|Tbsp|tbsp|tsp|oz|lb|kg|g|ml|L|pounds?|ounces?|inch(?:es)?|in|cm|slices?|cloves?|sprigs?|cans?|stalks?|heads?|bunche?s?|pieces?|pinch(?:es)?|dash(?:es)?|drops?|large|medium|small)\.?)?\s+',
+        r'(\s*(?:' + _ingredientUnitAlternation + r')\.?)?\s+',
         caseSensitive: false,
       ).firstMatch(remaining);
       

@@ -423,6 +423,25 @@ function parseIngredientString(raw) {
   return { name: main.trim(), amount: '0', unit: '', notes: notes, section: '' };
 }
 
+// Confirmed necessary on vickypham.com: some sites' JSON-LD recipeInstructions
+// is just a list of section headers ("Pork Stock", "Assembly"), not real
+// steps. Real steps end in sentence-ending punctuation and are more than a
+// couple of words; bare headers don't and aren't. Requiring every line in the
+// array to look like a real step (not just some of them) means a partially-
+// broken ldInstructionsRaw gets rejected outright rather than partially
+// trusted, since a mix of real steps and stray headers is worse than either
+// extreme -- it would silently drop steps with no signal that anything's missing.
+function looksLikeRealInstructionLines(lines) {
+  if (!Array.isArray(lines) || lines.length === 0) return false;
+  return lines.every(line => {
+    const trimmed = (line || '').trim();
+    if (trimmed.length < 12) return false;
+    if (!/[.!?]$/.test(trimmed)) return false;
+    if (trimmed.split(/\s+/).length < 3) return false;
+    return true;
+  });
+}
+
 function buildPayload(extracted, meta) {
   const { name, time, serves, course, cuisine, region, glass, garnish, subcategory, ingredients, directions, nutrition } = extracted;
   const nullIfEmpty = s => (s && s.trim() ? s.trim() : null);
@@ -1025,7 +1044,14 @@ async function extractWithOllama(markdown, meta) {
       'Never return an ingredient as a plain string. ' +
       'The notes field is for genuinely additional detail (preparation, substitution, qualifier) only. ' +
       'If there is nothing beyond the name/amount/unit to add, leave notes as an empty string. ' +
-      'Never repeat the ingredient name, amount, or unit back into notes.\n' +
+      'Never repeat the ingredient name, amount, or unit back into notes. ' +
+      'CRITICAL: if the page content contains no explicit ingredient list at all (only method/narrative text ' +
+      'describing what was done, with no bulleted or numbered quantities anywhere), return an empty ingredients ' +
+      'array. Do NOT invent, infer, or reconstruct a plausible-sounding ingredient from a phrase in the method ' +
+      'text that merely refers to an ingredient list, such as "the milk sauce ingredients" or "the syrup ' +
+      'ingredients" -- these phrases reference an ingredient list, they are not ingredients themselves. An ' +
+      'empty array is the correct output when there is nothing to extract; inventing placeholder entries is ' +
+      'never acceptable, regardless of how plausible they would look.\n' +
     '- directions: each step as a separate string in the array, drawn only from step-by-step instruction ' +
       'text that actually appears in the page content below. Exclude photo captions, image labels, and ' +
       'standalone descriptive text that does not describe an action to perform. A caption like "Homemade ' +
@@ -1345,6 +1371,26 @@ async function main() {
         extracted.course = ldCourse;
       }
 
+      // Deterministic name-literal override, same mechanism and trust tier
+      // as DIETARY_ADAPTATION_PATTERN below: a recipe's own name saying
+      // exactly what it is beats model inference or even the ldCourse
+      // signal above. Deliberately narrow -- this closes one specific hole
+      // (name says "soup," model/page said something else), not a general
+      // course classifier. Extend this list only against confirmed real
+      // cases, the same discipline used everywhere else in this file. Note:
+      // this is intentionally unconditional, so a genuinely ambiguous case
+      // like "soup dumplings" (conventionally apps/dim sum, not soup) will
+      // also be forced to "soups" -- accepted tradeoff per the same
+      // reasoning that made this override worth adding in the first place.
+      const NAME_COURSE_OVERRIDES = [
+        { pattern: /\bsoups?\b/i, course: 'soups' },
+      ];
+      for (const { pattern, course } of NAME_COURSE_OVERRIDES) {
+        if (pattern.test(extracted.name)) {
+          extracted.course = course;
+        }
+      }
+
       // course is a hard-set enum in the app's domain model, not a free-text
       // field -- VALID_COURSES was previously only ever interpolated into the
       // prompt, never checked against what the model actually returned, so
@@ -1398,9 +1444,28 @@ async function main() {
       // call produced. Site-config HTML extraction (with real section headers)
       // takes priority over flat JSON-LD recipeIngredient (no sections), which
       // takes priority over the model's own whole-page ingredient guess.
+      //
+      // ldIngredientsRaw is gated on a minimum-plausibility floor before it's
+      // allowed to override anything. Confirmed necessary on ranveerbrar.com's
+      // Moong Dal Mughlai: JSON-LD recipeIngredient was a single broken entry
+      // ("Moong dal") that would otherwise have silently overridden a complete
+      // 20-line markdown ingredient list. Real recipes essentially never have
+      // exactly one ingredient, so anything under this floor is treated as
+      // broken markup, not real data, and the whole-page extraction is trusted
+      // instead. htmlIngredientLines (site-config match) is not gated the same
+      // way -- it comes from a per-site config built and reviewed against that
+      // specific site's real markup, a materially higher trust level than
+      // auto-generated JSON-LD from a random plugin.
+      const LD_INGREDIENTS_MIN_PLAUSIBLE = 2;
+      const ldIngredientsUsable = meta.ldIngredientsRaw
+        && meta.ldIngredientsRaw.length >= LD_INGREDIENTS_MIN_PLAUSIBLE;
+      if (meta.ldIngredientsRaw && meta.ldIngredientsRaw.length > 0 && !ldIngredientsUsable
+          && !(meta.htmlIngredientLines && meta.htmlIngredientLines.length > 0)) {
+        console.log(`  (ldIngredientsRaw has only ${meta.ldIngredientsRaw.length} entr${meta.ldIngredientsRaw.length === 1 ? 'y' : 'ies'} -- too few to trust, falling back to whole-page extraction)`);
+      }
       const detSectionedRaw = meta.htmlIngredientLines && meta.htmlIngredientLines.length > 0
         ? expandSectionedLines(meta.htmlIngredientLines)
-        : (meta.ldIngredientsRaw && meta.ldIngredientsRaw.length > 0
+        : (ldIngredientsUsable
             ? meta.ldIngredientsRaw.map(text => ({ section: null, text }))
             : null);
       const detSectioned = detSectionedRaw
@@ -1448,6 +1513,72 @@ async function main() {
           // extracted.ingredients keeps whatever the whole-page call produced.
           flaggedForReview = true;
         }
+      }
+
+      // Deterministic directions override, same trust tier and reasoning as
+      // the ingredients override above. Confirmed necessary on
+      // diffordsguide.com: 02_fetch.js already saves ldInstructionsRaw to
+      // every meta file, but until now 03_extract.js never used it for
+      // anything except course/cuisine hints, leaving directions entirely
+      // dependent on the whole-page markdown extraction. For diffordsguide's
+      // community-recipe pages, that markdown is a "you might also like"
+      // sidebar with no real recipe content at all, so directions came back
+      // empty even though the real steps were sitting in ldInstructionsRaw
+      // the whole time. Gated on looksLikeRealInstructionLines rather than
+      // simply "non-empty" for the same reason ldIngredientsRaw is gated
+      // above: confirmed on vickypham.com, some sites' JSON-LD
+      // recipeInstructions is just a list of section headers ("Pork Stock",
+      // "Assembly"), not real steps, and blindly trusting that would have
+      // silently destroyed a working whole-page extraction.
+      if (looksLikeRealInstructionLines(meta.ldInstructionsRaw)) {
+        extracted.directions = meta.ldInstructionsRaw.map(d => d.trim()).filter(Boolean);
+      } else if (meta.ldInstructionsRaw && meta.ldInstructionsRaw.length > 0) {
+        console.log(`  (ldInstructionsRaw present but doesn't look like real steps -- keeping whole-page directions)`);
+      }
+
+      // Deterministic guard against ingredient fabrication when there's no
+      // real ingredient list on the page at all. Confirmed on
+      // maunikagowardhan.co.uk's Kesar Ras Malai: prose-only content with no
+      // bulleted ingredient list caused the model to invent "Milk Sauce
+      // Ingredients" and "Syrup Ingredients" as entries, lifted verbatim
+      // from phrases in the method text describing what to do with an
+      // ingredient list, not stating one. A real ingredient is never itself
+      // named "...Ingredients" -- that word appearing in a name is a
+      // reliable signal of this exact fabrication, not a coincidence.
+      const placeholderIngredientPattern = /\bingredients?\b/i;
+      const placeholderIngredients = extracted.ingredients.filter(i => {
+        const name = typeof i === 'string' ? i : i?.name;
+        return name && placeholderIngredientPattern.test(name);
+      });
+      if (placeholderIngredients.length > 0) {
+        extracted.ingredients = extracted.ingredients.filter(i => {
+          const name = typeof i === 'string' ? i : i?.name;
+          return !(name && placeholderIngredientPattern.test(name));
+        });
+        logForReview(slug, meta.url, 'ingredient-placeholder-fabricated',
+          placeholderIngredients.map(i => (typeof i === 'string' ? i : i?.name)).join(', '),
+          'Model returned placeholder ingredient name(s) referencing "ingredients" itself -- ' +
+          'likely fabricated from prose when no real ingredient list was present on the page. Removed from output.');
+        flaggedForReview = true;
+      }
+
+      // Post-hoc schema check: amount must be a bare number/fraction/range,
+      // never text with letters mixed in (e.g. a unit repeated into it).
+      // The prompt already instructs this; instruction-following alone
+      // isn't trustworthy, same reasoning as the course/serves enforcement
+      // above. Confirmed on annaolson.ca's Best Banana Muffins: whole-page
+      // model output returned amount "½ cup" with unit "C" set separately,
+      // duplicating the unit already captured in amount.
+      const AMOUNT_ALPHA_PATTERN = /[a-zA-Z]/;
+      const badAmountIngredients = extracted.ingredients.filter(i => {
+        const amount = typeof i === 'string' ? null : i?.amount;
+        return typeof amount === 'string' && amount.trim() && AMOUNT_ALPHA_PATTERN.test(amount);
+      });
+      if (badAmountIngredients.length > 0) {
+        logForReview(slug, meta.url, 'ingredient-amount-alpha-chars',
+          badAmountIngredients.map(i => `${i.name}: "${i.amount}"`).join('; '),
+          'One or more ingredient amounts contain alphabetic characters (likely a unit duplicated into the amount field).');
+        flaggedForReview = true;
       }
 
       if (extracted.ingredients.length === 0 && extracted.directions.length === 0) {
