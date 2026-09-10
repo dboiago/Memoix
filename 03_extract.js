@@ -1563,21 +1563,43 @@ async function main() {
       }
 
       // Post-hoc schema check: amount must be a bare number/fraction/range,
-      // never text with letters mixed in (e.g. a unit repeated into it).
-      // The prompt already instructs this; instruction-following alone
-      // isn't trustworthy, same reasoning as the course/serves enforcement
-      // above. Confirmed on annaolson.ca's Best Banana Muffins: whole-page
-      // model output returned amount "½ cup" with unit "C" set separately,
-      // duplicating the unit already captured in amount.
-      const AMOUNT_ALPHA_PATTERN = /[a-zA-Z]/;
+      // never a unit duplicated into it (e.g. "½ cup" with unit "C" also
+      // set). The prompt already instructs this; instruction-following
+      // alone isn't trustworthy, same reasoning as the course/serves
+      // enforcement above. Confirmed on annaolson.ca's Best Banana Muffins.
+      //
+      // Deliberately narrower than "any alphabetic character in amount":
+      // a first version of this check flagged every letter, which also
+      // caught "salt: to taste", "coriander: handful", "asafoetida: a
+      // pinch" -- none of those are duplicated units, they're legitimate
+      // free-text answers to "how much" when there's no quantity to give,
+      // and quarantining them for review only adds noise without
+      // surfacing a real problem. The actual defect requires a digit (or
+      // fraction glyph) AND a recognized unit word to co-occur in the same
+      // string -- that combination is what "unit got left in amount"
+      // looks like; a bare descriptive phrase with no digit at all never
+      // trips it. large/medium/small are added on top of the shared
+      // COMPOUND_DETECTION_UNIT_WORDS list specifically for this check,
+      // since that list deliberately excludes them for a different reason
+      // (avoiding false compound-amount flags on "2 large eggs") that
+      // doesn't apply here.
+      // Known residual gap: a unit glued directly to the digit with zero
+      // separating space (e.g. "80mls") won't match, since the unit-word
+      // side of this check requires a proper word boundary on both sides
+      // to avoid false-positiving on ordinary words that happen to end in
+      // a bare unit letter (e.g. "remaining" ends in "g"). Rare enough in
+      // practice, and safer than the false-positive risk of relaxing it.
+      const AMOUNT_HAS_NUMERIC = /[\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚]/;
+      const AMOUNT_UNIT_WORD_PATTERN = new RegExp(`\\b(?:${UNIT_ALTERNATION}|large|medium|small)\\b`, 'i');
       const badAmountIngredients = extracted.ingredients.filter(i => {
         const amount = typeof i === 'string' ? null : i?.amount;
-        return typeof amount === 'string' && amount.trim() && AMOUNT_ALPHA_PATTERN.test(amount);
+        if (typeof amount !== 'string' || !amount.trim()) return false;
+        return AMOUNT_HAS_NUMERIC.test(amount) && AMOUNT_UNIT_WORD_PATTERN.test(amount);
       });
       if (badAmountIngredients.length > 0) {
         logForReview(slug, meta.url, 'ingredient-amount-alpha-chars',
           badAmountIngredients.map(i => `${i.name}: "${i.amount}"`).join('; '),
-          'One or more ingredient amounts contain alphabetic characters (likely a unit duplicated into the amount field).');
+          'One or more ingredient amounts contain a unit word alongside a number (likely a unit duplicated into the amount field).');
         flaggedForReview = true;
       }
 
