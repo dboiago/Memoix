@@ -56,6 +56,22 @@ let OUT_DIR          = 'extracted';
 // same shared paths for a normal run, but a test run must pass its own.
 let NEEDS_REVIEW_DIR   = 'needs-review';
 let CUISINE_REVIEW_DIR = 'cuisine-review';
+// A fourth bucket, distinct from the three above: those three all hold a
+// real recipe payload (clean, needs-review, or cuisine-review) that the
+// resumability check below already protects from reprocessing.
+// UNRECOVERABLE_DIR holds a small marker file, no payload, for the three
+// deterministic dead-end reasons (missing-meta, no-name, empty-content)
+// that previously wrote only to ERROR_LOG and nothing else. Without this,
+// every one of those got silently reprocessed from scratch on any restart
+// -- at 100k-recipe scale, with however many restarts a run this long
+// actually needs, that's real repeated Ollama compute spent rediscovering
+// the same "there's nothing here" conclusion. Deliberately excludes
+// extract-error: that's the broad catch-all covering genuinely transient
+// failures (a timeout, a dropped connection to Ollama), and permanently
+// skipping those on restart would risk silently losing a recipe that
+// would have succeeded on retry, which is a worse failure mode than the
+// wasted compute this is meant to save.
+let UNRECOVERABLE_DIR = 'unrecoverable';
 let LOG_DIR        = 'logs';
 let ERROR_LOG      = `${LOG_DIR}/extract-errors.jsonl`;
 const OLLAMA_URL     = 'http://localhost:11434/api/chat';
@@ -240,6 +256,18 @@ function logForReview(slug, url, reason, line, detail = '') {
   const entry = JSON.stringify({ ts: new Date().toISOString(), slug, url, reason, line, detail });
   appendFileSync(REVIEW_LOG, entry + '\n');
   console.log(`  FLAGGED [${reason}]: ${slug} -- "${line}"`);
+}
+
+// Writes a small marker file to UNRECOVERABLE_DIR so the main resumability
+// check (alongside outPath/needsReviewPath/cuisineReviewPath) can see this
+// slug was already conclusively dead-ended, without needing to grep
+// ERROR_LOG on every startup. No recipe payload here, just enough to audit
+// why later without re-deriving it: reason, detail, and the URL when it's
+// known (missing-meta fires before meta.json is even readable, so url is
+// genuinely unknown at that call site, not an oversight).
+function markUnrecoverable(slug, reason, detail, url = null) {
+  const entry = { ts: new Date().toISOString(), slug, url, reason, detail };
+  writeFileSync(`${UNRECOVERABLE_DIR}/${slug}.json`, JSON.stringify(entry, null, 2), 'utf8');
 }
 
 // A single amount+unit pattern, matched globally against a raw ingredient line.
@@ -436,7 +464,13 @@ function looksLikeRealInstructionLines(lines) {
   return lines.every(line => {
     const trimmed = (line || '').trim();
     if (trimmed.length < 12) return false;
-    if (!/[.!?]$/.test(trimmed)) return false;
+    // Allow a closing quote/paren/bracket after the actual terminal mark --
+    // confirmed necessary on hot-thai-kitchen.com's 3-Chili Fried Rice:
+    // "...everything looks the same colour.)" is a complete, real sentence
+    // that just ends with a parenthetical aside, not a fragment. Anchoring
+    // [.!?] to the literal last character rejected two genuinely good steps
+    // and took the whole array down with them (every() requires all to pass).
+    if (!/[.!?]["'\)\]]*$/.test(trimmed)) return false;
     if (trimmed.split(/\s+/).length < 3) return false;
     return true;
   });
@@ -1225,6 +1259,8 @@ async function main() {
   if (needsReviewDirIdx !== -1) NEEDS_REVIEW_DIR = args[needsReviewDirIdx + 1];
   const cuisineReviewDirIdx = args.indexOf('--cuisine-review-dir');
   if (cuisineReviewDirIdx !== -1) CUISINE_REVIEW_DIR = args[cuisineReviewDirIdx + 1];
+  const unrecoverableDirIdx = args.indexOf('--unrecoverable-dir');
+  if (unrecoverableDirIdx !== -1) UNRECOVERABLE_DIR = args[unrecoverableDirIdx + 1];
   const logDirIdx = args.indexOf('--log-dir');
   if (logDirIdx !== -1) LOG_DIR = args[logDirIdx + 1];
   // Recompute paths derived from LOG_DIR now that a --log-dir override (if
@@ -1237,11 +1273,11 @@ async function main() {
 
   console.log(`Model: ${MODEL}`);
   console.log(`Raw dir: ${RAW_DIR} | Out dir: ${OUT_DIR}`);
-  console.log(`Needs-review dir: ${NEEDS_REVIEW_DIR} | Cuisine-review dir: ${CUISINE_REVIEW_DIR} | Log dir: ${LOG_DIR}`);
+  console.log(`Needs-review dir: ${NEEDS_REVIEW_DIR} | Cuisine-review dir: ${CUISINE_REVIEW_DIR} | Unrecoverable dir: ${UNRECOVERABLE_DIR} | Log dir: ${LOG_DIR}`);
   if (NEEDS_REVIEW_DIR === 'needs-review' && OUT_DIR !== 'extracted') {
-    console.warn('WARNING: --out-dir is overridden but needs-review/cuisine-review/logs are not. ' +
-      'Any recipe flagged in this run will be treated as already processed by a later real-corpus run. ' +
-      'Pass --needs-review-dir/--cuisine-review-dir/--log-dir for an isolated test run.');
+    console.warn('WARNING: --out-dir is overridden but needs-review/cuisine-review/unrecoverable/logs are not. ' +
+      'Any recipe flagged or dead-ended in this run will be treated as already processed by a later real-corpus run. ' +
+      'Pass --needs-review-dir/--cuisine-review-dir/--unrecoverable-dir/--log-dir for an isolated test run.');
   }
 
   await warmupOllama();
@@ -1249,6 +1285,7 @@ async function main() {
   mkdirSync(OUT_DIR, { recursive: true });
   mkdirSync(NEEDS_REVIEW_DIR, { recursive: true });
   mkdirSync(CUISINE_REVIEW_DIR, { recursive: true });
+  mkdirSync(UNRECOVERABLE_DIR, { recursive: true });
   mkdirSync(LOG_DIR, { recursive: true });
 
   const mdFiles = readdirSync(RAW_DIR)
@@ -1267,19 +1304,22 @@ async function main() {
     const outPath            = `${OUT_DIR}/${slug}.json`;
     const needsReviewPath    = `${NEEDS_REVIEW_DIR}/${slug}.json`;
     const cuisineReviewPath  = `${CUISINE_REVIEW_DIR}/${slug}.json`;
+    const unrecoverablePath  = `${UNRECOVERABLE_DIR}/${slug}.json`;
     const metaPath           = `${RAW_DIR}/${slug}.meta.json`;
 
-    // Output can land in any of the three folders now, so resumability has
+    // Output can land in any of the four folders now, so resumability has
     // to check all of them -- otherwise a recipe already sitting in
-    // needs-review/ or cuisine-review/ would get silently reprocessed and
-    // duplicated into a different folder on the next run.
-    if (existsSync(outPath) || existsSync(needsReviewPath) || existsSync(cuisineReviewPath)) {
+    // needs-review/, cuisine-review/, or unrecoverable/ would get silently
+    // reprocessed and (for the first two) duplicated into a different
+    // folder on the next run.
+    if (existsSync(outPath) || existsSync(needsReviewPath) || existsSync(cuisineReviewPath) || existsSync(unrecoverablePath)) {
       skipped++;
       continue;
     }
 
     if (!existsSync(metaPath)) {
       logError(slug, 'missing-meta', 'No .meta.json found alongside .md file');
+      markUnrecoverable(slug, 'missing-meta', 'No .meta.json found alongside .md file');
       failed++;
       continue;
     }
@@ -1342,6 +1382,7 @@ async function main() {
           extracted.name = meta.title.trim();
         } else {
           logError(slug, 'no-name', 'Extracted recipe has no name and page has no title');
+          markUnrecoverable(slug, 'no-name', 'Extracted recipe has no name and page has no title', meta.url);
           failed++;
           continue;
         }
@@ -1605,6 +1646,7 @@ async function main() {
 
       if (extracted.ingredients.length === 0 && extracted.directions.length === 0) {
         logError(slug, 'empty-content', 'No ingredients or directions extracted');
+        markUnrecoverable(slug, 'empty-content', 'No ingredients or directions extracted', meta.url);
         failed++;
         continue;
       }
