@@ -1,0 +1,51 @@
+{
+  "url": "https://muybuenoblog.com/easy-bunuelos-tree-ornaments/",
+  "slug": "easy-bu-uelos-tree-ornaments_muybuenoblog_e9188349",
+  "title": "Easy Buñuelos {Tree Ornaments}",
+  "byline": "Yvette Marquez-Sharpnack | Muy Bueno",
+  "fetchedAt": "2026-08-01T22:27:10.164Z",
+  "ldName": "Buñuelo Ornaments",
+  "ldTime": "PT20M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT15M",
+  "ldYield": [
+    "40"
+  ],
+  "ldCuisine": "Mexican",
+  "ldCategory": "Desserts",
+  "ldKeywords": "anise, bunuelos, christmas, cinnamon",
+  "ldIngredientsRaw": [
+    "10  uncooked flour tortillas (also works with regular flour tortillas although results are not as crispy)",
+    "vegetable oil (for frying)",
+    "1 cup granulated sugar",
+    "1 1/2 teaspoons ground cinnamon"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat oven to 400F. Oil 1 large baking sheet. Using cookie cutters or scissors, cut any shape from the tortillas.",
+    "Make small hole in each shape so you can hang the ornament (I took the eraser out of a lead pencil and used that to punch out the little holes). Place ornaments on prepared baking sheet, spacing apart, and brush with additional oil (work in batches if they don’t all fit on one sheet).",
+    "Top with second baking sheet. (Flour tortillas tend to puff while frying or cooking so I stack two baking sheets to get them to pre-bake, stay flat and hold their shape. That way, when you go to fry them, they only bubble slightly). Bake 10 minutes or until golden.",
+    "Meanwhile, mix sugar and cinnamon on a large plate. Remove ornaments from oven and cool slightly.",
+    "Heat enough oil to come halfway up a medium saucepan to 350F. Fry ornaments in batches until dark golden, about 4 minutes. Transfer to paper towels to drain. Transfer to cinnamon-sugar while still warm and toss to coat completely. Place hooks in ornaments and hang on tree."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "46 kcal",
+    "sugarContent": "6 g",
+    "sodiumContent": "52 mg",
+    "fatContent": "1 g",
+    "saturatedFatContent": "1 g",
+    "carbohydrateContent": "10 g",
+    "fiberContent": "1 g",
+    "proteinContent": "1 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 10 uncooked flour tortillas, also works with regular flour tortillas although results are not as crispy",
+    "▢ vegetable oil, for frying",
+    "▢ 1 cup granulated sugar",
+    "▢ 1 1/2 teaspoons ground cinnamon"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "MX",
+  "siteCourseHint": null
+}

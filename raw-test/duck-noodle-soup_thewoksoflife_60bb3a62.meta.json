@@ -1,0 +1,63 @@
+{
+  "url": "https://thewoksoflife.com/duck-noodle-soup/",
+  "slug": "duck-noodle-soup_thewoksoflife_60bb3a62",
+  "title": "Duck Noodle Soup",
+  "byline": "Sarah",
+  "fetchedAt": "2026-08-02T16:15:01.151Z",
+  "ldName": "Chinese Duck Noodle Soup (Easy!)",
+  "ldTime": "PT30M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT25M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Noodles",
+  "ldKeywords": "duck noodle soup",
+  "ldIngredientsRaw": [
+    "12 ounces Cantonese roast duck ((on the bone))",
+    "4 cups water",
+    "1 teaspoon chicken bouillon paste ((or 1 tablespoon light soy sauce, optional))",
+    "8 ounces napa cabbage ((about 8 oz./225g = about 4 large leaves))",
+    "3/4 teaspoon salt ((alternatively, 1/2 tsp salt plus 1/4 tsp MSG))",
+    "1/4 teaspoon  sesame oil",
+    "1/8 teaspoon  white pepper",
+    "8 ounces fresh noodles ((or 4 ounces/110g dried))",
+    "2 tablespoons cilantro ((chopped))"
+  ],
+  "ldInstructionsRaw": [
+    "Set aside about 4-6 of your meatiest pieces of roast duck for topping the soup, and add the remaining duck to a medium pot along with the water and chicken bouillon paste. (Alternatively, add all of the duck to the soup, and forgo the bouillon paste. This is the best course of action if your duck is frozen). Bring to a boil. Once boiling, cover, and simmer for 20 minutes.",
+    "Meanwhile, prepare the napa cabbage. Trim the ends off the leaves, cut them in half lengthwise, and then cut them cross-wise into 3/4-inch thick strips. Bring a pot of water to a boil for the noodles.",
+    "If you set aside meaty pieces of duck, put them on a foil-lined baking sheet. Reheat in the oven at 325°F for 8-10 minutes, and then keep warm in the oven.",
+    "Once the soup has simmered for 20 minutes, add the napa cabbage, salt, sesame oil, and white pepper. Increase the heat to bring the soup to a simmer again, and then reduce the heat to medium-low and simmer uncovered for another 5 minutes, until the napa is tender. Boil the noodles according to package instructions.",
+    "Divide the noodles between 2 bowls. Add the soup with the boiled duck pieces and the napa to each bowl (top with the meaty roast duck pieces on top if you reheated them in the oven). Garnish with cilantro (if using), and serve!"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "677 kcal",
+    "carbohydrateContent": "42 g",
+    "proteinContent": "23 g",
+    "fatContent": "47 g",
+    "saturatedFatContent": "15 g",
+    "cholesterolContent": "86 mg",
+    "sodiumContent": "947 mg",
+    "fiberContent": "5 g",
+    "sugarContent": "7 g",
+    "unsaturatedFatContent": "27 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 12 ounces Cantonese roast duck (on the bone)",
+    "▢ 4 cups water",
+    "▢ 1 teaspoon chicken bouillon paste (or 1 tablespoon light soy sauce, optional)",
+    "▢ 8 ounces napa cabbage (about 8 oz./225g = about 4 large leaves)",
+    "▢ 3/4 teaspoon salt (alternatively, 1/2 tsp salt plus 1/4 tsp MSG)",
+    "▢ 1/4 teaspoon  sesame oil",
+    "▢ 1/8 teaspoon  white pepper",
+    "▢ 8 ounces fresh noodles (or 4 ounces/110g dried)",
+    "▢ 2 tablespoons cilantro (chopped)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

@@ -1,0 +1,54 @@
+{
+  "url": "https://www.chopstickchronicles.com/tofu-steak/",
+  "slug": "easy-crispy-japanese-tofu-steak-chopstick-chronicl_chopstickchronicles_80fbf02d",
+  "title": "Easy Crispy Japanese Tofu Steak 豆腐のステーキ - Chopstick Chronicles",
+  "byline": "Author: Shihoko | Chopstick Chronicles",
+  "fetchedAt": "2026-08-02T00:03:35.009Z",
+  "ldName": "Easy Crispy Japanese Tofu Steak 豆腐のステーキ",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "Japanese",
+  "ldCategory": "Main Dish, Side Dish",
+  "ldKeywords": "#tofu steak",
+  "ldIngredientsRaw": [
+    "150 g firm tofu (*1)",
+    "1 bunch bok choy (or any of your favourite veggies)",
+    "1/2 tbsp  vegetable oil (*3 )",
+    "1 tbsp soy sauce",
+    "1 tsp mirin",
+    "1 cup cooked rice (*2 )"
+  ],
+  "ldInstructionsRaw": [
+    "Wrap the tofu in a paper towel and place it on a plate with another plate on top of the tofu to drain the excess water. Leave for about 10 minutes.",
+    "In the meantime, wash the bok choy and cook it in boiling water for about 2-3 minutes.",
+    "Drain the bok choy and serve it on a plate with the brown rice.",
+    "Heat the oil in a pan on high heat and cook the tofu until browned on both sides.",
+    "Combine the soy sauce and mirin in a small mixing bowl.",
+    "Pour the sauce over the tofu in the pan until the sauce has reduced/evaporated a little.",
+    "Serve the tofu on top of the rice and bok choy and drizzle the extra sauce on top."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "118 kcal",
+    "carbohydrateContent": "24 g",
+    "proteinContent": "3 g",
+    "sodiumContent": "522 mg",
+    "fiberContent": "1 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 150 g firm tofu *1",
+    "▢ 1 bunch bok choy or any of your favourite veggies",
+    "▢ 1/2 tbsp  vegetable oil *3",
+    "▢ 1 tbsp soy sauce",
+    "▢ 1 tsp mirin",
+    "▢ 1 cup cooked rice *2"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "JP",
+  "siteCourseHint": null
+}
