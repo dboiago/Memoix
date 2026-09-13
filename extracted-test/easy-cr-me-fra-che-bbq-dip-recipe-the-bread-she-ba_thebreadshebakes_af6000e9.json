@@ -1,0 +1,111 @@
+{
+  "recipe": {
+    "name": "crème fraîche BBQ dip",
+    "time": "10 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the crème fraîche (or sour cream) with the curd cheese and natural yoghurt (or buttermilk) and whisk for a minute to mix well, for an even and smooth texture",
+      "Add the garlic, shallots, herbs and lemon juice and mix well",
+      "Add the turmeric if using",
+      "Season to taste",
+      "Spoon into a decorative bowl and keep covered in the fridge until you’re ready to serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Crème Fraîche",
+        "unit": "g",
+        "notes": "alt: sour cream",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curd Cheese (i Used Łowicz Twarog Full Fat Curd Cheese)",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Natural Yoghurt",
+        "unit": "g",
+        "notes": "alt: buttermilk",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handfuls Mixed Fresh Herbs (chives, Parsley, Oregano, Thyme, Fennel)",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder (optional)",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c6cec3f1df81348440c9910582197e2e959810a162abc20c327a37cd31bf8c71",
+    "lineage_hash": "b40e72915368d69df35d42a9fd63a8fee395a82671f5ebc7662cd83103f9e9c1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.thebreadshebakes.com/2016/07/easy-creme-fraiche-bbq-dip-recipe/",
+    "fetchedAt": "2026-08-01T19:28:04.008Z"
+  },
+  "rawSource": "https://www.thebreadshebakes.com/2016/07/easy-creme-fraiche-bbq-dip-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

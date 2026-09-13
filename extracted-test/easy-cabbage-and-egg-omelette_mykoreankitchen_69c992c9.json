@@ -1,0 +1,135 @@
+{
+  "recipe": {
+    "name": "Cabbage and Egg Omelette",
+    "time": "15 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "KR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the cabbage, green onions, egg, rice flour, and crab stick in a mixing bowl. Season with salt and pepper.",
+      "Heat a pan over medium-high heat. Once heated, add some cooking oil and spread it evenly.",
+      "Pour half of the cabbage mixture onto the pan. Once the omelette is set, reduce the heat to medium to prevent burning. When the edges are firm and the center is still slightly soft, carefully flip it over. Cook the other side until fully done, then transfer to a plate.",
+      "Repeat the process with the remaining cabbage mixture.",
+      "Enjoy the simple flavor of the cabbage omelette as is, or elevate it with a drizzle of okonomiyaki sauce and mayonnaise. Top with katsuobushi and seaweed for an easy okonomiyaki twist. Serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cabbage (4.9 Ounces)",
+        "unit": "g",
+        "notes": "shredded",
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions (0.7 Ounces)",
+        "unit": "g",
+        "notes": "thinly sliced",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crab Sticks (40g / 1.4 Ounces)",
+        "unit": null,
+        "notes": "shredded, optional",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "taste",
+        "notes": null,
+        "amount": "to",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "taste",
+        "notes": null,
+        "amount": "to",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Okonomiyaki Sauce (or Tonkatsu Sauce",
+        "unit": null,
+        "notes": "alt: ketchup, optional",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": null,
+        "notes": "optional",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Katsuobushi (dried Bonito Flakes)",
+        "unit": null,
+        "notes": "optional",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Seaweed",
+        "unit": null,
+        "notes": "dried, shredded, optional",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0e80b7181fb0cf3c318abee4798c9c91b15cab7b21bec5f2f8feeb86ec5f0ce6",
+    "lineage_hash": "536877b40ad9d9cb416f09c89c162d4bf9d97208ec5aadd9906093b93eee4ab2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://mykoreankitchen.com/cabbage-and-egg-omelette/",
+    "fetchedAt": "2026-08-02T01:43:34.489Z"
+  },
+  "rawSource": "https://mykoreankitchen.com/cabbage-and-egg-omelette/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

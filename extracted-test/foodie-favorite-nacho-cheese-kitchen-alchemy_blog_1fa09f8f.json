@@ -1,0 +1,77 @@
+{
+  "recipe": {
+    "name": "Foodie Favorite Nacho Cheese",
+    "time": "15 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a small pot over low heat, combine all ingredients listed above. Gently cook until cheese is melted.",
+      "Using an immersion blender, blend the contents of the pan until smooth and uniform.",
+      "Allow the cheese sauce to cool before serving. Cheese can be cooled completely and reheated for future use."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cheddar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Jalapeno",
+        "unit": "g",
+        "notes": "Seeded & Chopped",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sodium Citrate",
+        "unit": "g",
+        "notes": null,
+        "amount": "4.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "447094c825a1f5786c693d487853b33d30b3257a5d20217e9c7b4d4b5a8ae05a",
+    "lineage_hash": "a0af20585b280021d1c3f107a6d3fa5f7c8486d1e05b62e7a5e6146b5682d327"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://blog.modernistpantry.com/recipes/foodie-favorite-nacho-cheese/",
+    "fetchedAt": "2026-08-02T07:22:58.830Z"
+  },
+  "rawSource": "https://blog.modernistpantry.com/recipes/foodie-favorite-nacho-cheese/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

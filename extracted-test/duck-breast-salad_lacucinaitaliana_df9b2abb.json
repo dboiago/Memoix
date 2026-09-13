@@ -1,0 +1,108 @@
+{
+  "recipe": {
+    "name": "Duck Breast Salad",
+    "time": null,
+    "course": "apps",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a pan, quickly toast a handful of almonds. Break up the lettuce leaves; remove the seeds from the pomegranate; peel 2 tangerines and separate them into wedges.",
+      "Prepare a vinaigrette by vigorously combining 2 1/2 tablespoons of oil with 2 tablespoons of tangerine juice and 1 teaspoon of soy sauce. Combine all of the ingredients to form the salad and dress with the vinaigrette."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Smoked Duck Breast",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curly Endive",
+        "unit": "OZ",
+        "notes": "washed",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Belgian Endive",
+        "unit": "OZ",
+        "notes": "washed",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Spinach",
+        "unit": null,
+        "notes": "washed",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tangerines",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pomegranate",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Slivered Almonds",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extravirgin Olive Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0c545f83fa865cb5482fe534a0e7bf033395a8261defd65fef0326ad5293a496",
+    "lineage_hash": "ae581f7bb5d79ed9f190f0bd26a0fae90c882b9fb99c329657ae159fd87b7c92"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/appetizers/duck-breast-salad",
+    "fetchedAt": "2026-08-03T08:14:17.201Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/appetizers/duck-breast-salad",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

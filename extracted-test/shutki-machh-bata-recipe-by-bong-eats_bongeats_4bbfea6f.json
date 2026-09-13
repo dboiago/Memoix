@@ -1,0 +1,205 @@
+{
+  "recipe": {
+    "name": "Shutki Mach Bata",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "193",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Cut shutki into small segments and soak them in water for 30 minutes. This will soften the shutki, and dissolve/loosen the sand and salt used to cure the fish. (If you are using loose shutki bought from the market, be sure to discard the heads, tails, and fins.)",
+      "Wash and rinse multiple times until no sand or grit remains.",
+      "Transfer to a saucepan. Add turmeric, salt and water. Cover and steam on low heat for 6 minutes. Then, strain and transfer the boiled shutki to a grinder jar.",
+      "Grind with green chillies and garlic. Don't grind it too fine as we want to retain some texture. Remove from the grinder jar and set aside.",
+      "Now, roughly chop onions, garlic, and green chillies, and add these to the grinder jar. Blitz into a paste.",
+      "Slice onions thinly. Chop green chillies and tomatoes.",
+      "Heat 30 g mustard oil in kadai. Add shutki. Fry it on low heat for 5 minutes, stirring often. Set aside when done.",
+      "Add another 45 g mustard oil to the kadai and heat it until it becomes pale yellow and smokes gently. Temper it with the dried red chilli and kalo jeere (nigella seeds).",
+      "Add the sliced onions and sauté them on medium heat for 10 minutes.",
+      "Add the onion-garlic-chilli paste, and continue sautéing everything on medium heat for 15 minutes.",
+      "Add turmeric powder, red chilli powder, Kashmiri red chilli powder, and salt. Add a splash of hot water, and sauté the spices on medium heat for 10 minutes.",
+      "Add chopped tomatoes, fry for 2 minutes, add the fried shutki.",
+      "Continue cooking everything on low heat, until the colour darkens. Do not add any extra water; keep scraping the bottom of the kadai from time to time.",
+      "Once the colour has changed to a deep red, turn off the heat and sprinkle chopped green chillies."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "‍100 G Loitta Shutki (dry-cured Bombay Duck)‍",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder‍",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt‍",
+        "unit": "g",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "‍200 ML Water‍",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies‍",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "g",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Total Mustard Oil ‍",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pc Dried Red Chilli‍",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nigella Seeds (kalo Jeere)",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions (thinly Sliced)",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato (roughly Chopped)",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies (finely Chopped)",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "‍4 G Turmeric Powder‍",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli Powder‍",
+        "unit": "g",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kashmiri Red Chilli Powder‍",
+        "unit": "g",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d08c32b2e4ccc0f52e3c8f4b47d3e66d54f1c76eeb02e26d03bcd096467086a4",
+    "lineage_hash": "7107db0ebfc3777562931a595693a100eeacbd6993455424b2acc57cf0efc7ea"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.bongeats.com/recipe/shutki-mach-bata",
+    "fetchedAt": "2026-08-02T00:35:14.157Z"
+  },
+  "rawSource": "https://www.bongeats.com/recipe/shutki-mach-bata",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

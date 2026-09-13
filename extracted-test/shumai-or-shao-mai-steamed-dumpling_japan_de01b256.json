@@ -1,0 +1,169 @@
+{
+  "recipe": {
+    "name": "Shumai (or Shao Mai, Steamed Dumpling)",
+    "time": "35 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "24",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add shumai mixture, excluding onion and cornflour, to the bowl. Mix well until the mixture becomes almost like a paste.",
+      "Then add onion and cornflour and mix well. Cover and leave for 1-2 hours in the fridge.",
+      "Sprinkle small amount of cornflour (not in ingredients) over the tray where the shumai will be placed as you make them.",
+      "Using your non-dominant hand, make a round hole by connecting the thumb and the index finger with the rest of fingers next each other. Place a shumai sheet onto the circle made with the thumb and the index finger.",
+      "Scoop about a tablespoon heap of meat mixture (note 2) and place it in the centre of the shumai sheet.",
+      "Using the back and tip of the spoon, press the meat down gently through the hole while holding the fingers firmly. Slide the meat with the sheet downwards until the surface of the meat levels with the circle of the fingers.",
+      "Smooth out the surface of the shumai and place a green pea in the middle, if using.",
+      "Repeat steps 4 – 7 to make 24 shumai in total or until either meat mixture or the wrapping sheets run out.",
+      "Make a round steaming paper liner with many holes (see the video) which will just fit inside the steamer. This is to prevent the shumai skin from sticking to the bamboo.",
+      "Place a wok with a cup of water over the high heat.",
+      "Place the paper liner inside the bamboo steamer, then place shumai in the steamer without touching each other. If the steamer cannot take 24 shumai at once, you will need to steam them in batches.",
+      "When the water starts boiling, place the bamboo steamer onto the wok and steam for 8-10 minutes until the meat is cooked through.",
+      "If the shumai skin is likely to stick to the bottom, make a round steaming paper liner with many holes (see the video) which will just fit inside the steamer.",
+      "Place the paper liner inside the steamer, if using, then place shumai in the steamer without touching each other. If the steamer cannot take 24 shumai at once, you will need to steam them in batches.",
+      "Steam for 8-10 minutes until the meat is cooked through.",
+      "You will need a large pot, a plate which will just fit inside the pot, and either 3 small ramekins or 3 balls of the same size made by scrunching aluminium foils (these are to lift the plate above the water level).",
+      "Make a round steaming paper liner with many holes (see the video) which is slightly smaller in diameter than the plate (note 4).",
+      "Place the paper liner on the plate, if using, then place shumai on the plate without touching each other.",
+      "Add a cup of water to the pot, place the ramekins or aluminium balls in a triangle position, then heat over high heat.",
+      "When the water starts boiling, place the plate on top of the ramekins/aluminium balls.",
+      "Steam for 8-10 minutes until the meat is cooked through.",
+      "If you are using a bamboo steamer, you could serve shumai in the bamboo steamer. If using a steamer pot/pan, transfer the shumai onto a plate. If steamed on a plate using a pot, serve the steaming plate with the shumai on.",
+      "Serve with soy sauce, vinegar, chilli oil/hot mustard."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "(10.6oz) Pork Mince (ground Pork)",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Juice (by Squeezing Grated Ginger)",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "(5.3oz) Onion Very Finely Chopped",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour/corn Starch (cornstarch)",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shumai Sheets (note 1)",
+        "unit": null,
+        "notes": null,
+        "amount": "24",
+        "section": "Wrapping",
+        "isOptional": false
+      },
+      {
+        "name": "Green Peas (optional)",
+        "unit": null,
+        "notes": "frozen",
+        "amount": "24",
+        "section": "Wrapping",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Serving",
+        "isOptional": false
+      },
+      {
+        "name": "Vinegar (optional)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Serving",
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Oil",
+        "unit": null,
+        "notes": "alt: hot mustard \n\t\t\t\t\t\t\t\t\t\t(optional",
+        "amount": "0",
+        "section": "Serving",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "103e5122758f35cbb28672ca32eb6d05b68ff55d0317dbcf25e49b65db52e010",
+    "lineage_hash": "79f61acaded5743a463c2643c9470489343503efad10cd13a3bd09e5a34b461e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://japan.recipetineats.com/shumai-or-shao-mai-steamed-dumpling/",
+    "fetchedAt": "2026-08-02T02:45:04.798Z"
+  },
+  "rawSource": "https://japan.recipetineats.com/shumai-or-shao-mai-steamed-dumpling/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

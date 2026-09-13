@@ -1,0 +1,63 @@
+{
+  "recipe": {
+    "name": "Blanched Bok Choy",
+    "time": "5 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "VN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Fill your stock pot with water &#8211; enough to fully submerge the bok choy. Bring the water to a boil over high heat. Add salt and stir to evenly disperse the salt.",
+      "While we are waiting for the water to come to a boil, clean the bok choy. Cut off the base of each head so the stems separate easily or just pull apart the leaves. Soak the bok choy in water and remove any dirt. Dirt and sand tend to collect on the bottom part of the stems so give it a good scrubbing. Rinse and set aside.",
+      "Once the water is boiling, add sesame oil. Stir the water to ensure the oil is evenly dispersed.",
+      "Add bok choy and blanch for 2 minutes. Make sure to gently push it down into the water for even cooking and seasoning. Watch for the leaves to turn a bright green and become slightly wilted, but still crisp. Avoid overcooking; the bok choy should retain some crunch. Using tongs or a slotted spoon, transfer bok choy to a serving platter. Tilt the platter to drain off any excess water.",
+      "The bok choy is best served warm, so consider serving it immediately. For an extra touch, sprinkle the top with toasted sesame seeds. If you like it spicy, consider a drizzle of chili oil or a sprinkle of red pepper flakes. Enjoy as is or with rice or noodles. Add proteins such as chicken, fish, tofu, or a fried egg for a more complete meal."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bok Choy",
+        "unit": "oz",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "95fc81dcb464c3dded65d24f60ae409a953ece476cd8aeab77c5c73deb55b93e",
+    "lineage_hash": "731ea36e4f953b4c49b0c32ec3a74a1fccb589a06808bc56d9979d62c1c3b1da"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://vickypham.com/blog/easy-blanched-bok-choy/",
+    "fetchedAt": "2026-08-01T18:41:31.104Z"
+  },
+  "rawSource": "https://vickypham.com/blog/easy-blanched-bok-choy/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

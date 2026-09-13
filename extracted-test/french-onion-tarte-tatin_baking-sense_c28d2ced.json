@@ -1,0 +1,118 @@
+{
+  "recipe": {
+    "name": "French Onion Tarte Tatin",
+    "time": "1 hr 5 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "163",
+      "carbohydrateContent": "13",
+      "fatContent": "10",
+      "proteinContent": "5"
+    },
+    "directions": [
+      "Preheat the oven to 375 °F. Roll the pie dough to a 12\" round and refrigerate while you prepare the filling.",
+      "Melt 2 oz unsalted butter with ¼ teaspoon table salt, pepper to taste and the leaves from 2 large sprigs thyme in a 10\" cast iron skillet. Arrange as many onions as you can fit in a single layer into the pan. Cook over medium heat for 15-20 minutes, until the bottoms are golden brown. As the onions shrink, rearrange and tuck more onions into the pan. Flip the onions and brown the other side. Cook until all the onions are browned and mostly translucent.",
+      "Pour 2 oz white wine and 2 oz chicken or vegetable stock over the onions. Cook until the liquid has reduced by half, 5-6 minutes. Remove the pan from the heat.",
+      "Sprinkle 4 oz gruyere cheese over the onions. Lay the pie crust over the onions, tucking the edges between the onions and the pan.",
+      "Bake until the crust is golden brown, about 15 minutes. Cool 5 minutes.",
+      "Run a knife or spatula around the edges of the tart to make sure there is no cheese sticking. Flip onto serving platter, place any onions that stick to the pan onto the tart",
+      "Serve warm."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Recipe Perfect Pie Crust",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter (see Note)",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sprigs Thyme (about 1 ½ Tbsp Leaves)",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vadalia (sweet) Onions (3-4 Large, Peeled and Sliced Into 1\" Thick Slabs)",
+        "unit": "lb",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine (¼ Cup)",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken",
+        "unit": "oz",
+        "notes": "alt: vegetable stock (¼ cup",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gruyere Cheese (shredded)",
+        "unit": "oz",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5e44f67dcb83f1f1733a8bd3cf32e8ab8e2bff1c33bc688df8873d33538b7a0f",
+    "lineage_hash": "e533e4ca8778239bc84bdfcaa86640f2d00e4a3ab1c504272fe0159d46723d2d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2017/11/07/french-onion-tarte-tatin/",
+    "fetchedAt": "2026-08-02T02:06:50.595Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2017/11/07/french-onion-tarte-tatin/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

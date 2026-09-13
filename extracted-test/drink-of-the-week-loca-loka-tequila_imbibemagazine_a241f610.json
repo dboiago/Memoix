@@ -1,0 +1,78 @@
+{
+  "recipe": {
+    "name": "Loca Loka Sparkler",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": "Coupe",
+    "garnish": [
+      "Lime Twist"
+    ],
+    "subcategory": "Tequila",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pour the first 4 ingredients into a shaker, add ice, then shake to chill.",
+      "Strain into a chilled coupe, then top with sparkling wine and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Loca Loka Tequila Reposado",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cointreau",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fresh Lime Juice",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Simple Syrup",
+        "unit": "oz",
+        "notes": "(1:1)",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sparkling Wine",
+        "unit": null,
+        "notes": "chilled",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b25e23fbd1fad2c24f8efe7c7b6867eb4ac343d21e26701f07aab509eb5f3e44",
+    "lineage_hash": "9112d30b962484dfa97cd0cdb6420861c4d8ccdb7ce565827b517923bd7bf264"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/drink-of-the-week-loca-loka-tequila/",
+    "fetchedAt": "2026-08-03T12:41:32.806Z"
+  },
+  "rawSource": "https://imbibemagazine.com/drink-of-the-week-loca-loka-tequila/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

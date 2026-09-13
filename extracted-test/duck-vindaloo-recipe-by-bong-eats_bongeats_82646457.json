@@ -1,0 +1,223 @@
+{
+  "recipe": {
+    "name": "Duck Vindaloo",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "365",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Soak tamarind in hot water for 10 mins. Extract the pulp.",
+      "Dry-roast all the spices for 6–8 mins on low heat. Then grind to a fine powder.",
+      "Grind together garlic, ginger, fresh red chillies, and palm vinegar.",
+      "Marinate the duck with the dry spice powder, the wet paste, along with tamarind pulp, and salt.",
+      "Heat mustard oil in a pan until smoking. Temper with mustard seeds.",
+      "Add the marinated meat and leave it to braise on low heat, with lid on. Check and stir every so often to make sure it’s not sticking.",
+      "Add jaggery and continue cooking on low heat until the meat is tender. You may need to add water to adjust the gravy, or to deglaze the pan if the spices are sticking.",
+      "When the meat is soft, add water just enough to form a thick gravy. Garnish with fresh curry leaves."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pork / Mutton / Chicken / Duck (use a Fatty Cut for Mutton",
+        "unit": "kg",
+        "notes": "alt: pork; in case of chicken, get it with skin on",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chillies (if You Can’t Find, Use Green Chillies)",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Palm Vinegar (if You Can’t Find, Use Any Good Non-synthetic Vinegar)",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tamarind (pulped)",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "15-18",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vindaloo Masala",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chillies",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Cumin",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Poppy Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Mustard Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stick of Cinnamon",
+        "unit": "cm",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kashmiri Red Chilli",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jaggery",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves (optional)",
+        "unit": "sprig",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0bbdef2cd556f1bd37165e37228b67f5bffe21530397be84e770f6e9d52e3fb4",
+    "lineage_hash": "9d6d7cf8f0fa274cc38c338b24054a3075ad53fe691b79e21d0c446cf1b8f750"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.bongeats.com/recipe/duck-vindaloo",
+    "fetchedAt": "2026-08-01T19:24:45.681Z"
+  },
+  "rawSource": "https://www.bongeats.com/recipe/duck-vindaloo",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}
