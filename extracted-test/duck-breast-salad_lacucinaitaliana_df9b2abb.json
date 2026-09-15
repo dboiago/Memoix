@@ -29,7 +29,7 @@
       },
       {
         "name": "Curly Endive",
-        "unit": "OZ",
+        "unit": "oz",
         "notes": "washed",
         "amount": "3",
         "section": null,
@@ -37,7 +37,7 @@
       },
       {
         "name": "Belgian Endive",
-        "unit": "OZ",
+        "unit": "oz",
         "notes": "washed",
         "amount": "3",
         "section": null,
@@ -93,7 +93,7 @@
       }
     ],
     "isFavourite": false,
-    "content_hash": "0c545f83fa865cb5482fe534a0e7bf033395a8261defd65fef0326ad5293a496",
+    "content_hash": "7435a5542a36bf7c2d6645837e6600c20ecda8ff8c1c8e509937d2f80b60e2af",
     "lineage_hash": "ae581f7bb5d79ed9f190f0bd26a0fae90c882b9fb99c329657ae159fd87b7c92"
   },
   "metadata": {

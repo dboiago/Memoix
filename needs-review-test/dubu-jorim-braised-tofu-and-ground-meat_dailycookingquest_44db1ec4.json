@@ -27,7 +27,7 @@
       {
         "name": "Anchovies",
         "unit": null,
-        "notes": "dried, break into small pieces (Note 1",
+        "notes": "dried, break into small pieces (Note 1)",
         "amount": "3",
         "section": null,
         "isOptional": false
@@ -186,7 +186,7 @@
       }
     ],
     "isFavourite": false,
-    "content_hash": "c7369838c0a9e8dd27af6b3611b9232d53e5814315295a94f133ab4997991aa8",
+    "content_hash": "1d9b5299cb0bbe1a3af43c005c54fd1267ab83c1d2599447b65de70c19dd9dfd",
     "lineage_hash": "b62012ffa03e4732f8af3ded94cf34019e75450e745bbd86643f2c07500c466b"
   },
   "metadata": {

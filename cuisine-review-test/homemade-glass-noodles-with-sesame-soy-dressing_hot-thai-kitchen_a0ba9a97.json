@@ -87,7 +87,7 @@
       {
         "name": "Homemade Glass Noodles",
         "unit": "oz",
-        "notes": "mung bean jelly noodles",
+        "notes": "(mung bean jelly noodles)",
         "amount": "9",
         "section": "The Salad (serves 2)",
         "isOptional": false
@@ -134,7 +134,7 @@
       }
     ],
     "isFavourite": false,
-    "content_hash": "0ae1062a1d59e2e166beb9c987a22159c1ab73d1fdbd23eeb9fc4a928673f1c2",
+    "content_hash": "330abd5f16aebb776ace31122f53abcfe0c8726e5ebd4d1879c73cb3acf4793f",
     "lineage_hash": "7a601a9793eac3ab235eb8d8d0c29a0df5f43c025443e06f06194d99b0cc0c96"
   },
   "metadata": {

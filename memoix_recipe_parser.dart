@@ -1049,10 +1049,23 @@ class UnitNormalizer {
       return _unitMap[lower]!;
     }
     
-    // Check if it's already a normalized abbreviation (preserve case)
+    // Case-insensitive match against already-normalized values (e.g. "OZ" or
+    // "Oz" should resolve to "oz" the same way "ounce" does). Confirmed gap:
+    // the previous check here (`normalizedValues.contains(trimmed)`) was
+    // case-sensitive, and "oz" itself is never a _unitMap key -- only
+    // "ounce"/"ounces" are -- so a source that already used the abbreviation
+    // in caps (lacucinaitaliana.com's Duck Breast Salad: "OZ.") skipped
+    // normalization entirely and shipped uppercase. Comparing lowercased
+    // closes that gap without adding "oz" as a redundant key alongside every
+    // abbreviation already present as a map value.
     final normalizedValues = _unitMap.values.toSet();
     if (normalizedValues.contains(trimmed)) {
       return trimmed;
+    }
+    for (final value in normalizedValues) {
+      if (value.toLowerCase() == lower) {
+        return value;
+      }
     }
     
     // Return original if no match
@@ -1489,7 +1502,7 @@ final _measurementNormalisation = {
 // quarts water" parsed the same way as "Quarts Water". Both are fixed by
 // this constant alone, in one place, applied identically everywhere.
 const _ingredientUnitAlternation =
-    'teaspoons?|tablespoons?|cups?|c|Tbsp|tbsp|tsp|oz|lbs?|kg|g|ml|L|'
+    'teaspoons?|tablespoons?|cups?|c|Tbsp|tbsp|tsp|oz|lbs?|kg|g|ml|L|liters?|litres?|'
     'pounds?|ounces?|inch(?:es)?|in|cm|slices?|cloves?|sprigs?|cans?|'
     'stalks?|heads?|bunche?s?|pieces?|pinch(?:es)?|dash(?:es)?|drops?|'
     'quarts?|qt|large|medium|small';
@@ -1962,12 +1975,53 @@ const _ingredientUnitAlternation =
   }
 
 
+  /// Strips a leading "(" only if it has no matching closing paren anywhere
+  /// later in the string, and a trailing ")" only if it has no matching
+  /// opening paren earlier in the string. Replaces a previous unconditional
+  /// `^\(+|\)+$` strip that removed a legitimately balanced trailing ")" on
+  /// any note that happened to end with one -- confirmed on
+  /// baking-sense.com's French Onion Tarte Tatin: "alt: vegetable stock
+  /// (¼ cup)" lost its closing paren even though the parenthetical was never
+  /// unbalanced to begin with, since the old strip didn't check for a match
+  /// before removing it.
+  String _stripUnbalancedParens(String s) {
+    var result = s;
+    if (result.startsWith('(') && !result.contains(')')) {
+      result = result.substring(1);
+    }
+    if (result.endsWith(')') && !result.contains('(')) {
+      result = result.substring(0, result.length - 1);
+    }
+    return result;
+  }
+
+
   Ingredient _parseIngredientString(String text) {
     var remaining = text;
     bool isOptional = false;
     final List<String> notesParts = [];
     String? amount;
     String? inlineSection;
+
+    // Normalize compound "whole + fraction" notations that use a joiner
+    // other than a plain space into the space-joined form ("1 1/2") the
+    // compound-fraction regex below already handles. Confirmed as two
+    // distinct real gaps: "1 & 1/2 teaspoon ginger garlic paste"
+    // (cookwithmanali.com, ampersand joiner) and "1-1/2 inches fresh ginger"
+    // (barbecuebible.com, hyphen joiner) both left the fraction fragment and
+    // the unit stranded in the name because no existing amount pattern
+    // recognized either joiner as a mixed-number separator. The hyphen form
+    // is deliberately narrow (requires a following "digit/digit", not just
+    // any hyphen-number) so it can't be confused with a genuine range like
+    // "2-3", which has no fraction slash.
+    remaining = remaining.replaceAllMapped(
+      RegExp(r'^(\d+)\s*&\s*(\d+/\d+)\b'),
+      (m) => '${m.group(1)} ${m.group(2)}',
+    );
+    remaining = remaining.replaceAllMapped(
+      RegExp(r'^(\d+)-(\d+/\d+)\b'),
+      (m) => '${m.group(1)} ${m.group(2)}',
+    );
     
     // Handle "Optional:" prefix at the start of ingredient line
     // e.g., "Optional: 1/4 tsp calcium chloride (aka Pickle Crisp granules)"
@@ -2413,7 +2467,34 @@ const _ingredientUnitAlternation =
     // BUT: Don't split on "or" when it's between adjectives describing the same ingredient
     // e.g., "red or yellow onion" should stay as "red or yellow onion", not split to "red" + "alt: yellow onion"
     // Match " or " but not at very start, and not "for" or other words ending in "or"
-    final orMatch = RegExp(r'\s+or\s+', caseSensitive: false).firstMatch(remaining);
+    //
+    // The search is paren-depth-aware, mirroring the comma search above.
+    // Confirmed necessary: without this, an "or" appearing inside a
+    // parenthetical aside (e.g. bongeats.com's duck vindaloo, "duck (use a
+    // fatty cut for mutton or pork; ...)") was treated as the ingredient's
+    // own alternative-name separator, splitting the string mid-parenthetical
+    // and leaving an unbalanced, unclosed "(" in the ingredient name. Same
+    // root cause hit mykoreankitchen.com's "okonomiyaki sauce (or tonkatsu
+    // sauce or ketchup)", where the "or" nested one level inside the parens
+    // was picked over the truly top-level one.
+    Match? orMatch;
+    {
+      final orPattern = RegExp(r'\s+or\s+', caseSensitive: false);
+      for (final candidate in orPattern.allMatches(remaining)) {
+        var depth = 0;
+        for (var i = 0; i < candidate.start; i++) {
+          if (remaining[i] == '(') {
+            depth++;
+          } else if (remaining[i] == ')') {
+            depth = depth > 0 ? depth - 1 : 0;
+          }
+        }
+        if (depth == 0) {
+          orMatch = candidate;
+          break;
+        }
+      }
+    }
     if (orMatch != null && orMatch.start > 0) {
       final beforeOr = remaining.substring(0, orMatch.start).trim();
       final afterOr = remaining.substring(orMatch.end).trim();
@@ -2475,8 +2556,7 @@ const _ingredientUnitAlternation =
     String? finalNotes;
     if (notesParts.isNotEmpty) {
       finalNotes = notesParts
-          .map((n) => n
-              .replaceAll(RegExp(r'^\(+|\)+$'), '')  // Remove stray parentheses
+          .map((n) => _stripUnbalancedParens(n)
               .replaceAll(RegExp(r'^[,\s]+|[,\s]+$'), '')  // Remove leading/trailing commas and spaces
               .trim(),)
           .where((n) => n.isNotEmpty)
@@ -2617,11 +2697,24 @@ void main() async {
           // when this function's own branches left unit empty, so branches
           // that already split correctly (compound fractions, colon-format,
           // etc.) are untouched.
+          //
+          // Guarded on the first token actually looking like a quantity
+          // (a digit or a unicode fraction glyph) before splitting.
+          // Confirmed necessary: several branches above deliberately store a
+          // qualifier phrase directly in `amount` when there's no real
+          // quantity to give -- "to taste", "as needed" (simpleAsNeededMatch)
+          // and "Top" (topUpWithMatch/colonAmountMatch) are all intentional,
+          // matching the app's own display convention for those cases. Without
+          // this guard, "to taste" split on whitespace into amount "to" /
+          // unit "taste", silently destroying that convention for every
+          // comma-delimited "X, to taste" ingredient line in the corpus.
           if ((ingredient.unit == null || ingredient.unit!.isEmpty) &&
               ingredient.amount != null) {
             final normalized = TextNormalizer.normalizeFractions(ingredient.amount!) ?? ingredient.amount!;
             final parts = normalized.split(RegExp(r'\s+'));
-            if (parts.length >= 2) {
+            final firstTokenLooksNumeric = parts.isNotEmpty &&
+                RegExp(r'^[\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚]').hasMatch(parts.first);
+            if (parts.length >= 2 && firstTokenLooksNumeric) {
               ingredient.amount = parts.first;
               ingredient.unit = parts.sublist(1).join(' ');
             }

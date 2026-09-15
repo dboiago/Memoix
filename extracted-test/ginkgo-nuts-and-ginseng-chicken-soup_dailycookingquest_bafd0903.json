@@ -69,8 +69,8 @@
         "isOptional": false
       },
       {
-        "name": "Liter Water",
-        "unit": null,
+        "name": "Water",
+        "unit": "L",
         "notes": null,
         "amount": "1",
         "section": null,
@@ -78,7 +78,7 @@
       }
     ],
     "isFavourite": false,
-    "content_hash": "31186fb673d66b8c66b138d0501f377d4e764dc130918c1127f553cc15174ff3",
+    "content_hash": "c4971ae970f31964f07d3dc78612a333b8c5aaf76da854d77eef388a60bf366b",
     "lineage_hash": "7a5a8e84bc73ad3870f0d6764f7bbd0a556b1fc0c5bc4b97522bd849633018dc"
   },
   "metadata": {

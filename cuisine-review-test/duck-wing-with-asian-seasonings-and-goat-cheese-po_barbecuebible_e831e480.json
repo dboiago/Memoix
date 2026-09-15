@@ -30,10 +30,10 @@
         "isOptional": false
       },
       {
-        "name": "1-1/2 Inches Fresh Ginger",
-        "unit": null,
-        "notes": "sliced into thin coins (no need to peel",
-        "amount": "0",
+        "name": "Ginger",
+        "unit": "inches",
+        "notes": "fresh, sliced into thin coins (no need to peel)",
+        "amount": "1½",
         "section": null,
         "isOptional": false
       },
@@ -87,7 +87,7 @@
       }
     ],
     "isFavourite": false,
-    "content_hash": "abdaf7eaa54dde2b815ad47b29706fee1733f69f8c655170e7d0d8aafd197be8",
+    "content_hash": "dc89d84559085e5077f7b9666e711f2a7f8217e0b71f12e9b390c13f99329bb3",
     "lineage_hash": "e65038c4788c9a04f43c1cbb2881be8798ffeffb4523acba3a96f0a176eb3d95"
   },
   "metadata": {

@@ -34,32 +34,320 @@
     "recipeType": "standard",
     "ingredients": [
       {
-        "name": "Aloo",
-        "unit": null,
+        "name": "Fenugreek Leaves",
+        "unit": "C",
         "notes": null,
-        "amount": "0",
-        "section": null,
+        "amount": "2",
+        "section": "For Soak Methi Leaves",
         "isOptional": false
       },
       {
-        "name": "Methi",
-        "unit": null,
+        "name": "Water",
+        "unit": "C",
         "notes": null,
+        "amount": "2",
+        "section": "For Soak Methi Leaves",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": "to taste",
         "amount": "0",
-        "section": null,
+        "section": "For Soak Methi Leaves",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "large",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Tempering",
         "isOptional": false
       },
       {
         "name": "Potato",
+        "unit": "medium size",
+        "notes": "peeled, diced",
+        "amount": "4-5",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": "to taste",
+        "amount": "0",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": "little",
+        "amount": "0",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": "medium size",
+        "notes": "chopped",
+        "amount": "½",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilli",
+        "unit": null,
+        "notes": "less spicy, chopped",
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Fenugreek Leaves",
+        "unit": "C",
+        "notes": "soaked, chopped",
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "julienned",
+        "amount": "½",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Restaurant Style Aloo Methi",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Restaurant Style Aloo Methi",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": "Restaurant Style Aloo Methi",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "large",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "Restaurant Style Aloo Methi",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilli",
+        "unit": null,
+        "notes": "less spicy, chopped",
+        "amount": "2",
+        "section": "Restaurant Style Aloo Methi",
+        "isOptional": false
+      },
+      {
+        "name": "Asafoetida",
+        "unit": null,
+        "notes": null,
+        "amount": "a pinch",
+        "section": "Restaurant Style Aloo Methi",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Restaurant Style Aloo Methi",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Restaurant Style Aloo Methi",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Restaurant Style Aloo Methi",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Puree",
+        "unit": "C",
+        "notes": "fresh",
+        "amount": "½",
+        "section": "Restaurant Style Aloo Methi",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": "to taste",
+        "amount": "0",
+        "section": "Restaurant Style Aloo Methi",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Restaurant Style Aloo Methi",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": "little",
+        "amount": "0",
+        "section": "Restaurant Style Aloo Methi",
+        "isOptional": false
+      },
+      {
+        "name": "Fenugreek Leaves",
+        "unit": "C",
+        "notes": "fresh",
+        "amount": "1",
+        "section": "Restaurant Style Aloo Methi",
+        "isOptional": false
+      },
+      {
+        "name": "Potato",
+        "unit": "medium size",
+        "notes": "boiled, peeled, diced",
+        "amount": "2",
+        "section": "Restaurant Style Aloo Methi",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": "to taste",
+        "amount": "0",
+        "section": "Restaurant Style Aloo Methi",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Restaurant Style Aloo Methi",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
         "unit": null,
         "notes": null,
         "amount": "0",
-        "section": null,
+        "section": "Restaurant Style Aloo Methi",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": "to taste",
+        "amount": "0",
+        "section": "Restaurant Style Aloo Methi",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Restaurant Style Aloo Methi",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Fenugreek Leaves",
+        "unit": "tsp",
+        "notes": "crushed",
+        "amount": "½",
+        "section": "For Garnish",
         "isOptional": false
       }
     ],
     "isFavourite": false,
-    "content_hash": "4a19d20d0fb5b36eb8217c68a362681f142b99f70004a73003295e3252507b36",
+    "content_hash": "4f35569ccb08013635184d62810ce60aa401f3ce869961eb86287a71dce0ddd2",
     "lineage_hash": "6dcd7dbdd730d95fb590e61dea351da3a10f1cc6a89011040ca3923a5f1c276c"
   },
   "metadata": {

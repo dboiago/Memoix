@@ -147,14 +147,14 @@
       {
         "name": "Chilli Oil",
         "unit": null,
-        "notes": "alt: hot mustard \n\t\t\t\t\t\t\t\t\t\t(optional",
+        "notes": "alt: hot mustard \n\t\t\t\t\t\t\t\t\t\t(optional)",
         "amount": "0",
         "section": "Serving",
         "isOptional": false
       }
     ],
     "isFavourite": false,
-    "content_hash": "103e5122758f35cbb28672ca32eb6d05b68ff55d0317dbcf25e49b65db52e010",
+    "content_hash": "ce53f930bf6f132002eb9134370aa2ba5393994ebb37bb961a24f3ae5242eab1",
     "lineage_hash": "79f61acaded5743a463c2643c9470489343503efad10cd13a3bd09e5a34b461e"
   },
   "metadata": {

@@ -88,7 +88,7 @@
       {
         "name": "Chicken",
         "unit": "oz",
-        "notes": "alt: vegetable stock (¼ cup",
+        "notes": "alt: vegetable stock (¼ cup)",
         "amount": "2",
         "section": null,
         "isOptional": false
@@ -103,7 +103,7 @@
       }
     ],
     "isFavourite": false,
-    "content_hash": "5e44f67dcb83f1f1733a8bd3cf32e8ab8e2bff1c33bc688df8873d33538b7a0f",
+    "content_hash": "99eb42e357d5207bc2eaae7856667aaf8c1a641d9b19a0d059ea29d2d33050c0",
     "lineage_hash": "e533e4ca8778239bc84bdfcaa86640f2d00e4a3ab1c504272fe0159d46723d2d"
   },
   "metadata": {

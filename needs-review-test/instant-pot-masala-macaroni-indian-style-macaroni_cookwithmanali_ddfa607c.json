@@ -61,10 +61,10 @@
         "isOptional": false
       },
       {
-        "name": "& 1/2 Teaspoon Ginger Garlic Paste",
-        "unit": null,
+        "name": "Ginger Garlic Paste",
+        "unit": "tsp",
         "notes": null,
-        "amount": "1",
+        "amount": "1½",
         "section": null,
         "isOptional": false
       },
@@ -77,10 +77,10 @@
         "isOptional": false
       },
       {
-        "name": "& 1/2 Medium Tomatoes",
-        "unit": null,
+        "name": "Tomatoes",
+        "unit": "medium",
         "notes": "chopped",
-        "amount": "1",
+        "amount": "1½",
         "section": null,
         "isOptional": false
       },
@@ -109,10 +109,10 @@
         "isOptional": false
       },
       {
-        "name": "& 1/2 Cup Water",
-        "unit": null,
+        "name": "Water",
+        "unit": "C",
         "notes": null,
-        "amount": "1",
+        "amount": "1½",
         "section": null,
         "isOptional": false
       },
@@ -150,7 +150,7 @@
       }
     ],
     "isFavourite": false,
-    "content_hash": "0fcc5bbbc80137ba53cf774f6f9da4236bc6223588c0e2dede5c232c2889ea24",
+    "content_hash": "59ec57432842481f4a27ed49676ebae4a67cebfa3e60c02dd0c48816e38b262f",
     "lineage_hash": "75d503233171fececcaf69798c09ed7f7f9f3a1cde70dc051298c0f692169448"
   },
   "metadata": {

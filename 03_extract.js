@@ -14,7 +14,7 @@
 //
 // Usage:
 //   node 03_extract.js [--limit N]
-//   node 03_extract.js --model qwen3:14b-q4_k_m --raw-dir raw-test --out-dir extracted-test-14b \
+//   node 03_extract.js --model qwen3:14b-q4_k_m --raw-dir raw-test --out-dir extracted-test \
 //     --needs-review-dir needs-review-test --cuisine-review-dir cuisine-review-test --log-dir logs-test
 //
 // --model overrides MODEL for this run only (e.g. for A/B testing a different
@@ -473,6 +473,36 @@ function looksLikeRealInstructionLines(lines) {
     if (!/[.!?]["'\)\]]*$/.test(trimmed)) return false;
     if (trimmed.split(/\s+/).length < 3) return false;
     return true;
+  });
+}
+
+// Deterministic plausibility check on JSON-LD's recipeIngredient field,
+// analogous in spirit to looksLikeRealInstructionLines above but checking
+// content quality rather than sentence shape. Confirmed necessary on
+// ranveerbrar.com's "2 types of Aloo Methi": ldIngredientsRaw was
+// ["aloo", "Methi", "potato"] -- three single-word category names with no
+// amount, no unit, nothing distinguishing them from a tag list. This cleared
+// LD_INGREDIENTS_MIN_PLAUSIBLE (>= 2 entries) and silently overrode a
+// complete, fully-quantified ~20-line ingredient list sitting in the page's
+// own markdown, shipping "Aloo"/"Methi"/"Potato" (amount 0, no units) as the
+// entire ingredient list with nothing flagging it.
+//
+// A real ingredient line almost always has either a quantity (a digit or a
+// unicode fraction glyph) or is a multi-word phrase ("firm tofu", "soy
+// sauce") -- a single bare noun with no quantity is the one shape a genuine
+// ingredient list essentially never takes across every line at once. This
+// check requires EVERY line to clear that bar, not just some of them, for
+// the same reason looksLikeRealInstructionLines does: a JSON-LD field that's
+// mostly real content with one bare-word outlier is a materially safer case
+// than one where nothing in the field has a quantity anywhere.
+function looksLikeRealIngredientLines(lines) {
+  if (!Array.isArray(lines) || lines.length === 0) return false;
+  const AMOUNT_OR_FRACTION_PATTERN = /\d|[½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚]/;
+  return lines.every(line => {
+    const trimmed = (line || '').trim();
+    if (!trimmed) return false;
+    if (AMOUNT_OR_FRACTION_PATTERN.test(trimmed)) return true;
+    return trimmed.split(/\s+/).length > 1;
   });
 }
 
@@ -1497,12 +1527,33 @@ async function main() {
       // way -- it comes from a per-site config built and reviewed against that
       // specific site's real markup, a materially higher trust level than
       // auto-generated JSON-LD from a random plugin.
+      //
+      // A second, independent gate sits alongside the count floor:
+      // looksLikeRealIngredientLines checks the CONTENT of the entries, not
+      // just how many there are. Confirmed necessary on ranveerbrar.com's
+      // "2 types of Aloo Methi" (a different recipe on the same site as the
+      // Moong Dal case above, same underlying JSON-LD quality problem, a
+      // different symptom): ldIngredientsRaw was ["aloo", "Methi", "potato"]
+      // -- three single-word category names with no amount or unit anywhere.
+      // That clears the >=2 count floor, so the count check alone waved it
+      // through and silently overrode a complete, fully-quantified ~20-line
+      // ingredient list already sitting in the page's own markdown. A count
+      // floor answers "is there enough here to plausibly be a real list";
+      // the content check answers the different question "does this actually
+      // read like ingredient lines" -- both are needed, since three garbage
+      // entries and three real ones look identical to a bare count check.
       const LD_INGREDIENTS_MIN_PLAUSIBLE = 2;
-      const ldIngredientsUsable = meta.ldIngredientsRaw
+      const ldIngredientsCountOk = meta.ldIngredientsRaw
         && meta.ldIngredientsRaw.length >= LD_INGREDIENTS_MIN_PLAUSIBLE;
+      const ldIngredientsUsable = ldIngredientsCountOk
+        && looksLikeRealIngredientLines(meta.ldIngredientsRaw);
       if (meta.ldIngredientsRaw && meta.ldIngredientsRaw.length > 0 && !ldIngredientsUsable
           && !(meta.htmlIngredientLines && meta.htmlIngredientLines.length > 0)) {
-        console.log(`  (ldIngredientsRaw has only ${meta.ldIngredientsRaw.length} entr${meta.ldIngredientsRaw.length === 1 ? 'y' : 'ies'} -- too few to trust, falling back to whole-page extraction)`);
+        if (!ldIngredientsCountOk) {
+          console.log(`  (ldIngredientsRaw has only ${meta.ldIngredientsRaw.length} entr${meta.ldIngredientsRaw.length === 1 ? 'y' : 'ies'} -- too few to trust, falling back to whole-page extraction)`);
+        } else {
+          console.log(`  (ldIngredientsRaw has ${meta.ldIngredientsRaw.length} entries but none look like real ingredient lines (no amounts, all single words) -- falling back to whole-page extraction)`);
+        }
       }
       const detSectionedRaw = meta.htmlIngredientLines && meta.htmlIngredientLines.length > 0
         ? expandSectionedLines(meta.htmlIngredientLines)
@@ -1733,7 +1784,93 @@ async function main() {
         flaggedForReview = true;
       }
 
+      // Deterministic completeness check, not a correctness judgment: once
+      // both the deterministic ldCuisine override and the site-hint-gated
+      // blind re-classification have had their chance to run, a non-empty
+      // cuisine that came from neither -- i.e. the page offered no ldCuisine
+      // AND the site carries no siteRegionHint at all -- is a bare, unchecked
+      // model guess from the main extraction call, with nothing on either
+      // axis to verify it against. Confirmed on punchdrink.com's
+      // Equal-Parts Martini: no ldCuisine, no siteRegionHint, and the model
+      // landed on "FR" off what reads like a single incidental French
+      // liqueur mention (absinthe) in an otherwise US/Spanish-ingredient
+      // cocktail -- the same "one stray ingredient decides the whole
+      // classification" failure mode the blind classifier already exists to
+      // catch, just occurring here with no hint present to ever trigger
+      // that check. This never fires when either grounding signal exists,
+      // so it only catches the specific case where nothing else in the
+      // pipeline had a chance to catch it either.
+      if (extracted.cuisine && !ldCuisine && !meta.siteRegionHint) {
+        logForReview(slug, meta.url, 'cuisine-unverified-no-grounding', extracted.cuisine,
+          'Cuisine has no page-level (ldCuisine) or site-level (siteRegionHint) signal to check it against -- ' +
+          'model-inferred with no grounding at all.');
+        flaggedForReview = true;
+      }
+
       const payload = buildPayload(extracted, meta);
+
+      // Deterministic tie check on drink subcategory, not a spirits
+      // classifier: the prompt already instructs the model to leave
+      // subcategory empty "on an even split between two spirits," but
+      // instruction-following alone isn't trustworthy, same reasoning as
+      // every other post-hoc enforcement in this file. Confirmed on
+      // punchdrink.com's Equal-Parts Martini (gin 1½oz vs vermouth 1½oz --
+      // an exact tie, named for being one): subcategory shipped as "Gin"
+      // despite this being precisely the case the prompt names as the
+      // exception. Detected here by finding two or more ingredients that
+      // share the same unit and are tied for the largest parsed amount in
+      // that unit group -- deliberately flagged rather than nulled outright,
+      // since correctly picking which of several tied ingredients is "the"
+      // base spirit (vs. a modifier poured at the same volume) needs
+      // judgment this check doesn't have.
+      if (payload.recipe.subcategory) {
+        const UNICODE_FRACTION_VALUES = {
+          '½': 0.5, '¼': 0.25, '¾': 0.75, '⅓': 1 / 3, '⅔': 2 / 3,
+          '⅛': 0.125, '⅜': 0.375, '⅝': 0.625, '⅞': 0.875,
+          '⅕': 0.2, '⅖': 0.4, '⅗': 0.6, '⅘': 0.8, '⅙': 1 / 6, '⅚': 5 / 6,
+        };
+        const parseAmountNumeric = (amount) => {
+          if (!amount || typeof amount !== 'string') return null;
+          const trimmed = amount.trim();
+          if (!trimmed || /[-–]/.test(trimmed)) return null; // ranges are ambiguous, skip
+          let total = 0;
+          let matched = false;
+          const rx = /(\d+(?:\.\d+)?)|([½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚])/g;
+          let m;
+          while ((m = rx.exec(trimmed)) !== null) {
+            matched = true;
+            total += m[1] ? parseFloat(m[1]) : (UNICODE_FRACTION_VALUES[m[2]] || 0);
+          }
+          return matched ? total : null;
+        };
+
+        const byUnit = new Map();
+        for (const ing of payload.recipe.ingredients) {
+          if (!ing.unit || !ing.amount) continue;
+          const value = parseAmountNumeric(ing.amount);
+          if (value === null || value <= 0) continue;
+          if (!byUnit.has(ing.unit)) byUnit.set(ing.unit, []);
+          byUnit.get(ing.unit).push({ name: ing.name, value });
+        }
+
+        let tieDetail = null;
+        for (const [unit, entries] of byUnit) {
+          if (entries.length < 2) continue;
+          const maxValue = Math.max(...entries.map(e => e.value));
+          const atMax = entries.filter(e => Math.abs(e.value - maxValue) < 1e-9);
+          if (atMax.length >= 2) {
+            tieDetail = atMax.map(e => `${e.name} (${maxValue} ${unit})`).join(' vs ');
+            break;
+          }
+        }
+
+        if (tieDetail) {
+          logForReview(slug, meta.url, 'subcategory-spirit-tie', payload.recipe.subcategory,
+            `Two or more ingredients are tied for the largest amount (${tieDetail}) -- the prompt's own ` +
+            'instruction says to leave subcategory empty on an even split between spirits, but a value was set anyway.');
+          flaggedForReview = true;
+        }
+      }
 
       // course and cuisine are the two fields the app's search/discovery
       // depends on -- a recipe with either null isn't just incomplete, it's

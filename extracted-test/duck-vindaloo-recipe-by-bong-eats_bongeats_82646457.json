@@ -31,9 +31,9 @@
     "recipeType": "standard",
     "ingredients": [
       {
-        "name": "Pork / Mutton / Chicken / Duck (use a Fatty Cut for Mutton",
+        "name": "Pork / Mutton / Chicken / Duck (use a Fatty Cut for Mutton or Pork; in Case of Chicken, Get It with Skin On)",
         "unit": "kg",
-        "notes": "alt: pork; in case of chicken, get it with skin on",
+        "notes": null,
         "amount": "1",
         "section": null,
         "isOptional": false
@@ -208,7 +208,7 @@
       }
     ],
     "isFavourite": false,
-    "content_hash": "0bbdef2cd556f1bd37165e37228b67f5bffe21530397be84e770f6e9d52e3fb4",
+    "content_hash": "04f7a2a549c0b1a888d3d008d40e7eb0f8dd35463eaa3552df110b0b75acf8cf",
     "lineage_hash": "9d6d7cf8f0fa274cc38c338b24054a3075ad53fe691b79e21d0c446cf1b8f750"
   },
   "metadata": {

@@ -64,17 +64,17 @@
       },
       {
         "name": "Salt",
-        "unit": "taste",
+        "unit": null,
         "notes": null,
-        "amount": "to",
+        "amount": "to taste",
         "section": null,
         "isOptional": false
       },
       {
         "name": "Ground Black Pepper",
-        "unit": "taste",
+        "unit": null,
         "notes": null,
-        "amount": "to",
+        "amount": "to taste",
         "section": null,
         "isOptional": false
       },
@@ -87,9 +87,9 @@
         "isOptional": false
       },
       {
-        "name": "Okonomiyaki Sauce (or Tonkatsu Sauce",
+        "name": "Okonomiyaki Sauce (or Tonkatsu Sauce or Ketchup)",
         "unit": null,
-        "notes": "alt: ketchup, optional",
+        "notes": "optional",
         "amount": "0",
         "section": null,
         "isOptional": false
@@ -120,7 +120,7 @@
       }
     ],
     "isFavourite": false,
-    "content_hash": "0e80b7181fb0cf3c318abee4798c9c91b15cab7b21bec5f2f8feeb86ec5f0ce6",
+    "content_hash": "6222635e07b12e01c55ea616502f37d9bac4e68e662ae03131d852f86b7a7967",
     "lineage_hash": "536877b40ad9d9cb416f09c89c162d4bf9d97208ec5aadd9906093b93eee4ab2"
   },
   "metadata": {

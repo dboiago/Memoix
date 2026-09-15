@@ -29,7 +29,7 @@
       {
         "name": "Coconut Yogurt",
         "unit": "C",
-        "notes": "alt: silken tofu puree (166 // I use a combination of both half and half",
+        "notes": "alt: silken tofu puree (166 // I use a combination of both half and half)",
         "amount": "⅔",
         "section": null,
         "isOptional": false
@@ -43,9 +43,9 @@
         "isOptional": false
       },
       {
-        "name": "Lemon Juice (45g //",
+        "name": "Lemon Juice (45g // or 1 Tbsp Apple Cider Vinegar + 2 Tbsp Water)",
         "unit": "Tbsp",
-        "notes": "alt: 1 tbsp apple cider vinegar + 2 tbsp water",
+        "notes": null,
         "amount": "3",
         "section": null,
         "isOptional": false
@@ -75,9 +75,9 @@
         "isOptional": false
       },
       {
-        "name": "Potato Starch (14g //",
+        "name": "Potato Starch (14g // or Tapioca Starch)",
         "unit": "Tbsp",
-        "notes": "alt: tapioca starch",
+        "notes": null,
         "amount": "2",
         "section": null,
         "isOptional": false
@@ -124,7 +124,7 @@
       }
     ],
     "isFavourite": false,
-    "content_hash": "acdd6e890bad73b452772f142b0a836877a8d042a077e57824cbec49b986baa0",
+    "content_hash": "18549aebd95bf3dd6687ba771a7f243e71d295d0fe0a3e9220132c8eed600429",
     "lineage_hash": "9d4344bb6b89241dcad22e7535e3c71fce029ce41c564469fc033301a17cbd95"
   },
   "metadata": {
