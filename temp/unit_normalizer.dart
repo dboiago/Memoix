@@ -1,0 +1,347 @@
+/// Utility for normalizing measurement units to their abbreviations
+class UnitNormalizer {
+  /// Map of common unit variations to their normalized abbreviation
+  static const Map<String, String> _unitMap = {
+    // Volume - cups
+    'cup': 'C',
+    'cups': 'C',
+    'c': 'C',
+    
+    // Volume - tablespoons
+    'tablespoon': 'Tbsp',
+    'tablespoons': 'Tbsp',
+    'tbsp': 'Tbsp',
+    'tbs': 'Tbsp',  // OCR often reads "Tbs." without the 'p'
+    'tb': 'Tbsp',
+    't': 'Tbsp', // Only uppercase T, lowercase t is teaspoon
+    
+    // Volume - teaspoons
+    'teaspoon': 'tsp',
+    'teaspoons': 'tsp',
+    'tsp': 'tsp',
+    'ts': 'tsp',
+    
+    // Volume - fluid ounces
+    'fluid ounce': 'fl oz',
+    'fluid ounces': 'fl oz',
+    'fl. oz': 'fl oz',
+    'fl.oz': 'fl oz',
+    'floz': 'fl oz',
+    
+    // Volume - liters
+    'liter': 'L',
+    'liters': 'L',
+    'litre': 'L',
+    'litres': 'L',
+    'l': 'L',
+    
+    // Volume - milliliters
+    'milliliter': 'ml',
+    'milliliters': 'ml',
+    'millilitre': 'ml',
+    'millilitres': 'ml',
+    'mls': 'ml',
+    
+    // Weight - grams
+    'gram': 'g',
+    'grams': 'g',
+    'gr': 'g',
+    'gm': 'g',
+    'gms': 'g',
+    
+    // Weight - kilograms
+    'kilogram': 'kg',
+    'kilograms': 'kg',
+    'kilo': 'kg',
+    'kilos': 'kg',
+    'kgs': 'kg',
+    
+    // Weight - milligrams
+    'milligram': 'mg',
+    'milligrams': 'mg',
+    'mgs': 'mg',
+    
+    // Weight - ounces
+    'ounce': 'oz',
+    'ounces': 'oz',
+    
+    // Weight - pounds
+    'pound': 'lb',
+    'pounds': 'lb',
+    'lbs': 'lb',
+    
+    // Common cooking units
+    'can': 'can',
+    'cans': 'cans',
+    'bunch': 'bunch',
+    'bunches': 'bunches',
+    'clove': 'clove',
+    'cloves': 'clove',
+    'pinch': 'pinch',
+    'pinches': 'pinches',
+    'dash': 'dash',
+    'dashes': 'dashes',
+    'slice': 'slice',
+    'slices': 'slices',
+    'piece': 'pc',
+    'pieces': 'pcs',
+    'pcs': 'pcs',
+    'pc': 'pc',
+    'sprig': 'sprig',
+    'sprigs': 'sprigs',
+    'stalk': 'stalk',
+    'stalks': 'stalks',
+    'head': 'head',
+    'heads': 'heads',
+    'package': 'pkg',
+    'packages': 'pkgs',
+    'pkg': 'pkg',
+    'pkgs': 'pkgs',
+    // "pack" alone (not just "package") is common on Korean/Asian recipe
+    // sites for a countable unit of packaged goods, e.g. koreanbapsang.com's
+    // "1  about 18-oz pack firm tofu" -- confirmed missing, not just
+    // "package"/"pkg" already covered above.
+    'pack': 'pkg',
+    'packs': 'pkgs',
+    'stick': 'stick',
+    'sticks': 'sticks',
+    'drop': 'drop',
+    'drops': 'drops',
+    'handful': 'handful',
+    'handfuls': 'handfuls',
+    'pint': 'pt',
+    'pints': 'pt',
+    'pt': 'pt',
+    'quart': 'qt',
+    'quarts': 'qt',
+    'qt': 'qt',
+    'gallon': 'gal',
+    'gallons': 'gal',
+    'gal': 'gal',
+    
+    // Size descriptors (kept as-is for countable items like "2 large eggs")
+    'large': 'large',
+    'medium': 'medium',
+    'small': 'small',
+  };
+  
+  /// Normalize a unit string to its abbreviation
+  /// Returns the original string if no match is found
+  static String normalize(String? unit) {
+    if (unit == null || unit.isEmpty) return '';
+    
+    var trimmed = unit.trim();
+    
+    // Strip trailing period (e.g., "tsp." -> "tsp")
+    if (trimmed.endsWith('.')) {
+      trimmed = trimmed.substring(0, trimmed.length - 1);
+    }
+    
+    final lower = trimmed.toLowerCase();
+    
+    // Check for exact match in map
+    if (_unitMap.containsKey(lower)) {
+      return _unitMap[lower]!;
+    }
+    
+    // Case-insensitive match against already-normalized values (e.g. "OZ" or
+    // "Oz" should resolve to "oz" the same way "ounce" does). Confirmed gap:
+    // the previous check here (`normalizedValues.contains(trimmed)`) was
+    // case-sensitive, and "oz" itself is never a _unitMap key -- only
+    // "ounce"/"ounces" are -- so a source that already used the abbreviation
+    // in caps (lacucinaitaliana.com's Duck Breast Salad: "OZ.") skipped
+    // normalization entirely and shipped uppercase. Comparing lowercased
+    // closes that gap without adding "oz" as a redundant key alongside every
+    // abbreviation already present as a map value.
+    final normalizedValues = _unitMap.values.toSet();
+    if (normalizedValues.contains(trimmed)) {
+      return trimmed;
+    }
+    for (final value in normalizedValues) {
+      if (value.toLowerCase() == lower) {
+        return value;
+      }
+    }
+    
+    // Return original if no match
+    return trimmed;
+  }
+
+  /// De-pluralizes a unit string for use as a grouping key.
+  ///
+  /// Applied **only** during shopping list aggregation to ensure that variant
+  /// spellings of the same unit (e.g. "cloves" vs "clove", "pinches" vs
+  /// "pinch") land in the same quantity bucket.
+  ///
+  /// Does NOT modify the stored or displayed unit — purely for bucketing.
+  ///
+  /// Examples:
+  ///   normalizeUnit('cloves')  → 'clove'
+  ///   normalizeUnit('pinches') → 'pinch'
+  ///   normalizeUnit('tbsp')    → 'tbsp'   (no trailing 's', unchanged)
+  ///   normalizeUnit('C')       → 'c'      (lowercased)
+  static String normalizeUnit(String unit) {
+    var u = unit.toLowerCase().trim();
+    u = u.replaceAll(RegExp(r'ies$'), 'y');
+    u = u.replaceAll(RegExp(r'oes$'), 'o');
+    u = u.replaceAll(RegExp(r'(?<=[^aeiou])es$'), ''); // bunches→bunch, dashes→dash, pinches→pinch
+    u = u.replaceAll(RegExp(r'ses$'), 's');
+    u = u.replaceAll(RegExp(r'(?<![sui])s$'), '');
+    return u;
+  }
+
+  /// Check if a string is a recognized unit
+  static bool isRecognizedUnit(String? unit) {
+    if (unit == null || unit.isEmpty) return false;
+    var cleaned = unit.trim();
+    // Strip trailing period (e.g. "C." → "C", "tsp." → "tsp")
+    if (cleaned.endsWith('.')) {
+      cleaned = cleaned.substring(0, cleaned.length - 1);
+    }
+    final lower = cleaned.toLowerCase();
+    return _unitMap.containsKey(lower) ||
+           _unitMap.values.contains(cleaned);
+  }
+  
+  /// Get all possible unit options for autocomplete
+  static List<String> get allUnits {
+    return _unitMap.values.toSet().toList()..sort();
+  }
+  
+  /// Get common units for display in UI
+  static const List<String> commonUnits = [
+    'C',
+    'Tbsp',
+    'tsp',
+    'oz',
+    'lb',
+    'g',
+    'kg',
+    'ml',
+    'L',
+    'can',
+    'clove',
+    'bunch',
+    'pinch',
+    'dash',
+    'slice',
+    'pc',
+  ];
+
+  /// Normalize units for all items in a list that have a unit field
+  /// Works with List<Ingredient>, List<SmokingSeasoning>, List<ModernistIngredient>, etc.
+  static void normalizeUnitsInList(List list) {
+    for (final item in list) {
+      // Use dynamic to access unit field regardless of type
+      final dynamic itemWithUnit = item;
+      if (itemWithUnit.unit != null && itemWithUnit.unit is String) {
+        final unit = itemWithUnit.unit as String;
+        if (unit.isNotEmpty) {
+          itemWithUnit.unit = normalize(unit);
+        }
+      }
+    }
+  }
+
+  /// Normalize time strings to compact format (e.g., "4h 30m", "1d", "45m")
+  /// Handles various input formats: "1 hour", "30 minutes", "1 day 2 hours", "1.5h", etc.
+  static String normalizeTime(String? timeStr) {
+    if (timeStr == null || timeStr.isEmpty) return '';
+    
+    final trimmed = timeStr.trim().toLowerCase();
+    
+    // Parse components
+    double totalMinutes = 0;
+    
+    // Match days (including decimals like "1.5 days")
+    final dayMatch = RegExp(r'(\d+(?:\.\d+)?)\s*(?:days?|d\b)').firstMatch(trimmed);
+    if (dayMatch != null) {
+      totalMinutes += double.parse(dayMatch.group(1)!) * 1440;
+    }
+    
+    // Match hours (including decimals like "1.5h" or "1.5 hours")
+    final hourMatch = RegExp(r'(\d+(?:\.\d+)?)\s*(?:hours?|hrs?|h\b)').firstMatch(trimmed);
+    if (hourMatch != null) {
+      totalMinutes += double.parse(hourMatch.group(1)!) * 60;
+    }
+    
+    // Match minutes (including decimals)
+    final minMatch = RegExp(r'(\d+(?:\.\d+)?)\s*(?:minutes?|mins?|m\b)').firstMatch(trimmed);
+    if (minMatch != null) {
+      totalMinutes += double.parse(minMatch.group(1)!);
+    }
+    
+    // If nothing parsed, return original
+    if (totalMinutes == 0) return timeStr;
+    
+    return formatMinutes(totalMinutes.round());
+  }
+
+  /// Format total minutes as compact string (e.g., "4h 30m", "1d", "45m")
+  static String formatMinutes(int totalMinutes) {
+    if (totalMinutes <= 0) return '0m';
+    
+    final days = totalMinutes ~/ 1440;
+    final remAfterDays = totalMinutes % 1440;
+    final hours = remAfterDays ~/ 60;
+    final mins = remAfterDays % 60;
+    
+    final parts = <String>[];
+    if (days > 0) parts.add('${days}d');
+    if (hours > 0) parts.add('${hours}h');
+    if (mins > 0) parts.add('${mins}m');
+    
+    return parts.join(' ');
+  }
+
+  /// Normalize serves string to just numbers (e.g., "Serves 4" -> "4", "4 people" -> "4")
+  static String normalizeServes(String? serves) {
+    if (serves == null || serves.isEmpty) return '';
+    
+    // Remove leading colons and whitespace
+    var cleaned = serves.trim();
+    cleaned = cleaned.replaceAll(RegExp(r'^[:\s]+'), '');
+    
+    // Extract just the number(s)
+    final match = RegExp(r'(\d+(?:\s*[-–]\s*\d+)?)').firstMatch(cleaned);
+    if (match != null) {
+      return match.group(1)!.replaceAll(RegExp(r'\s+'), '');
+    }
+    
+    return cleaned.trim();
+  }
+
+  /// Normalize temperature string to include degree symbol
+  /// Handles various formats: "225", "225F", "225 F", "225°F", "107C", etc.
+  static String normalizeTemperature(String? temp) {
+    if (temp == null || temp.isEmpty) return '';
+    
+    final trimmed = temp.trim();
+    
+    // Already has degree symbol - return as-is
+    if (trimmed.contains('°')) return trimmed;
+    
+    // Match number optionally followed by F/C
+    final match = RegExp(r'^(\d+(?:-\d+)?)\s*([FfCc])?$').firstMatch(trimmed);
+    if (match != null) {
+      final number = match.group(1)!;
+      final unit = match.group(2)?.toUpperCase() ?? '';
+      return '$number°$unit'.trimRight();
+    }
+    
+    // If it ends with a letter (F/C), insert degree symbol
+    final unitMatch = RegExp(r'^(.+?)\s*([FfCc])$').firstMatch(trimmed);
+    if (unitMatch != null) {
+      final value = unitMatch.group(1)!.trim();
+      final unit = unitMatch.group(2)!.toUpperCase();
+      return '$value°$unit';
+    }
+    
+    // Just a number - add degree symbol
+    if (RegExp(r'^\d+(?:-\d+)?$').hasMatch(trimmed)) {
+      return '$trimmed°';
+    }
+    
+    return trimmed;
+  }
+}
