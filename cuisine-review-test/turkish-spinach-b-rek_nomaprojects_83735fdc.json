@@ -14,7 +14,7 @@
     "cookCount": 0,
     "nutrition": null,
     "directions": [
-      "Preheat the oven to 190 **°**C.",
+      "Preheat the oven to 190 °C.",
       "To a mixing bowl, add the chopped spinach and diced onion. Season with a pinch of salt and set aside. Wait about 5 minutes and the spinach will have released some water; dry off any excess moisture with a towel. Add Pepper RDX to the mixture and toss.",
       "In another bowl, prepare the egg wash: whisk the eggs. Add the Greek yogurt and olive oil and whisk again until homogenous.",
       "Lay out your filo sheets and cover with a slightly damp towel to prevent the dough from drying out.",
@@ -106,7 +106,7 @@
       }
     ],
     "isFavourite": false,
-    "content_hash": "7aab1c76236e1eb1cb04846f5c9d30a18ada3ff6a5c9501e13d0f0ffe99ec205",
+    "content_hash": "b81cd4dbf0b060792823dff0ea25d832726fcd72673f1f959c82280825b98eb6",
     "lineage_hash": "a37c1a10ce86d0595bff8045ba41e086f54089c6ff47ff2a2b1af366023679a7"
   },
   "metadata": {

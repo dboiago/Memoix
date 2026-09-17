@@ -37,15 +37,15 @@
     "recipeType": "standard",
     "ingredients": [
       {
-        "name": "‍100 G Loitta Shutki (dry-cured Bombay Duck)‍",
-        "unit": null,
+        "name": "Loitta Shutki (dry-cured Bombay Duck)",
+        "unit": "g",
         "notes": null,
-        "amount": "0",
+        "amount": "100",
         "section": null,
         "isOptional": false
       },
       {
-        "name": "Turmeric Powder‍",
+        "name": "Turmeric Powder",
         "unit": "tsp",
         "notes": null,
         "amount": "¼",
@@ -53,7 +53,7 @@
         "isOptional": false
       },
       {
-        "name": "Salt‍",
+        "name": "Salt",
         "unit": "g",
         "notes": null,
         "amount": "8",
@@ -61,15 +61,15 @@
         "isOptional": false
       },
       {
-        "name": "‍200 ML Water‍",
-        "unit": null,
+        "name": "Water",
+        "unit": "ml",
         "notes": null,
-        "amount": "0",
+        "amount": "200",
         "section": null,
         "isOptional": false
       },
       {
-        "name": "Green Chillies‍",
+        "name": "Green Chillies",
         "unit": "g",
         "notes": null,
         "amount": "3",
@@ -109,7 +109,7 @@
         "isOptional": false
       },
       {
-        "name": "Total Mustard Oil ‍",
+        "name": "Total Mustard Oil",
         "unit": "g",
         "notes": null,
         "amount": "75",
@@ -117,7 +117,7 @@
         "isOptional": false
       },
       {
-        "name": "Pc Dried Red Chilli‍",
+        "name": "Pc Dried Red Chilli",
         "unit": null,
         "notes": null,
         "amount": "1",
@@ -157,15 +157,7 @@
         "isOptional": false
       },
       {
-        "name": "‍4 G Turmeric Powder‍",
-        "unit": null,
-        "notes": null,
-        "amount": "0",
-        "section": null,
-        "isOptional": false
-      },
-      {
-        "name": "Red Chilli Powder‍",
+        "name": "Turmeric Powder",
         "unit": "g",
         "notes": null,
         "amount": "4",
@@ -173,7 +165,15 @@
         "isOptional": false
       },
       {
-        "name": "Kashmiri Red Chilli Powder‍",
+        "name": "Red Chilli Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kashmiri Red Chilli Powder",
         "unit": "g",
         "notes": null,
         "amount": "4",
@@ -190,7 +190,7 @@
       }
     ],
     "isFavourite": false,
-    "content_hash": "d08c32b2e4ccc0f52e3c8f4b47d3e66d54f1c76eeb02e26d03bcd096467086a4",
+    "content_hash": "b4146ee52e9f52e3ed58f543027568ba3eb594c91047e2e017da623964120409",
     "lineage_hash": "7107db0ebfc3777562931a595693a100eeacbd6993455424b2acc57cf0efc7ea"
   },
   "metadata": {

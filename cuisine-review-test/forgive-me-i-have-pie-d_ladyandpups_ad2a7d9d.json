@@ -1,0 +1,156 @@
+{
+  "recipe": {
+    "name": "Crème Brûlée Pie",
+    "time": "8 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Measure the flour, salt and sugar in a bowl, and set aside. Measure the butter and cut it in cubes. Leave it in the freezer to chill for 30 min.",
+      "Take out the butter and add to a stand mixer bowl. Add HALF of the flour mixture and start on low then gradually increase the speed, let the stand mixer incorporate the cold butter into the flour. Covering the mixer with a towel looks ridiculous but it prevents flour or butter from popping out. Once the butter's completely incorporated (no visible \"pea size\" or \"lump size\" or whatever pieces of butter). Add the rest of the HALF of flour and mix. Add the 3 1/2 tbsp of ice water 1 at a time. When a dough forms, stop the mixer. Take the dough out and pat loose flour bits into the dough to incorporate and pat into a disk. Wrap in plastic wrap and chill in the fridge for AT LEAST 1 HOUR (or this can be done the day before).",
+      "Take the dough out of the fridge. Flour the working surface and the rolling pin. The dough would be almost \"unrollable\" in the beginning because the butter is so cold. Just keep at it. It should become easier in 10 min. Roll it out into a thin, round disk about 1/5\"/5mm thick. Lightly oil the surface of the baking mold (I'm using my iron pan). Use the rolling pin to \"roll up\" the disk like a scroll, then transfer it to the baking mold. The dough is likely to SHRINK in the oven, so DON'T stretch it out. Instead, fold the dough up so it drops into the baking mold, then lightly use the finger tips to press the dough to fit the mold. Drape the excess dough over the edge of the mold (Again. Don't stretch it out). Trim off any dough extending more than 1\"/3cm over the the edge. Reserve the scraps. Return the mold, dough and scraps back into the fridge for 30 min. Preheat the oven on 375 ºF/190 ºC.",
+      "Take the mold out. Use a sheet of foil or wax paper, lay it over the dough and add enough dry beans to fill it up all the way to the top. This is to prevent the dough from puffing too much. Put the mold into the oven and bake until the edge is SLIGHTLY brown, about 30 ~ 40 min. During this time, crack 1 whole egg and 4 egg yolks into a bowl. Reserve the egg white. Then... I don't know. Pluck eyebrows or floss.",
+      "Take the mold out. Carefully lift the foil/wax paper with the beans away from the dough. Patch up any cracks and holes with the leftover dough. Brush a thin film of egg white all over the surface. This is NOT in the cookbook instruction, but I think it adds a nice sheen plus a protection on the dough from the custard (so it doesn't get soggy). Return the mold to the oven, and bake for another 20 min until the dough is browned all over.",
+      "Add the milk, heavy cream, sweeten condensed milk and salt in a sauce pot. Bring to a simmer on low heat. Meanwhile beat the egg and yolks together. Once the milk mixture has come to a simmer, remove from the heat. Add HALF of the hot milk, 1 ladle at a time, into the eggs while whisking at the same time. Then add/whisk the egg +milk mixture back into the milk sauce pot. This is of course \"tempering\". To bring up the temperature of the egg slowly so it doesn't curdle. Add the vanilla extract now, OR... The following isn't necessary but it will shorten the custard baking time a little. I didn't. It's optional. Return the sauce pot on the stove under really low heat, then heat up the milk + eggs mixture slightly while whisking like CRAZY (seriously, feeeeel the burn!). When the mixture become slightly thicken, remove from the heat immediately. Add the vanilla extract to combine now",
+      "Turn the oven temperature down to 310 °F/150 ºC. Pour the milk + eggs mixture into the pie shell through a fine sieve (This is ESPECIALLY important if the custard was pre-heated. There could be lumps of curdled egg). With VERY STEADY movement, move the pie into the oven. Bake until the custard is set, meaning a toothpick could insert and come out clean (see those big holes in mine? Chopstick... STUPID!). The baking time will take around 1:20 ~ 1:40 min.",
+      "Put all the dirty dishes in the dishwasher. Brush my dogs. Sweep the floor. Put on then take off an outfit... Put on then take off some make-up... Staaaaaaaaaaaaaarrre at the TV...",
+      "Check the custard doneness. Should be set by now. Take the pie out of the oven and let it cool for 15 min.",
+      "Take a sheet of foil and fold it in half, then half again. Do it enough times so I end up with a thin wedge. Point the tip at the center of the pie and snip off the tip at where it meets the pie shell. Unfold and it'll be a sheet with a big hole in the middle. Wrap and cover the edge of the pie shell tightly with this. Spread a layer of raw sugar (a relatively thick layer) on top of the custard that's exposed. Light the torch and start caramelizing the sugar. Try NOT to burn the edge of the custard like I DID. The custard needs to set and the caramel needs to harden so, LET THE ENTIRE PIE COOL DOWN COMPLETELY, at l"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1.6",
+        "section": "Pie Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "COLD COLD COLD COLD",
+        "amount": "180",
+        "section": "Pie Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Ice Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3.5",
+        "section": "Pie Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Pie Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1.5",
+        "section": "Pie Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "1.5",
+        "section": "Crème Brûlée Custard",
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Crème Brûlée Custard",
+        "isOptional": false
+      },
+      {
+        "name": "Sweetened Condensed Milk",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "10",
+        "section": "Crème Brûlée Custard",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": "Crème Brûlée Custard",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1.5",
+        "section": "Crème Brûlée Custard",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "whole",
+        "notes": null,
+        "amount": "1",
+        "section": "Crème Brûlée Custard",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": "whole",
+        "notes": null,
+        "amount": "4",
+        "section": "Crème Brûlée Custard",
+        "isOptional": false
+      },
+      {
+        "name": "Raw Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "To Finish",
+        "isOptional": false
+      },
+      {
+        "name": "Torch",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "To Finish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2e3b4e63681c8d2d8ecf7592f9b84df02579e74cdb45d205dabe08d81cf51f8d",
+    "lineage_hash": "3cda29821b371cf115b8b343a1501c4dec5dd74fd81b8cf78ffa0d7351101283"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ladyandpups.com/2012/06/07/omg-i-made-a-pie-eng/",
+    "fetchedAt": "2026-08-02T06:56:04.247Z"
+  },
+  "rawSource": "https://ladyandpups.com/2012/06/07/omg-i-made-a-pie-eng/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

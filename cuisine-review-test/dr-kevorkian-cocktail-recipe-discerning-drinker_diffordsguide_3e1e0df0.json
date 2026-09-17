@@ -1,0 +1,85 @@
+{
+  "recipe": {
+    "name": "Dr. Kevorkian",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Martini",
+    "garnish": [
+      "Freshly Grated Nutmeg"
+    ],
+    "subcategory": "Vodka",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "A dusting of freshly grated nutmeg completes this satisfying old-school cocktail"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Absolut Pears Vodka",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "St-germain Elderflower Liqueur",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "ml",
+        "notes": "freshly squeezed",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar Syrup 'rich'",
+        "unit": "ml",
+        "notes": "2 sugar to 1 water, 65.0°Brix",
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "De Kuyper Blue Curaçao",
+        "unit": "barspoon",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fee Brothers Rhubarb Bitters",
+        "unit": "dash",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "115ee9a8485ebb65edb53d47c5a700c65365607c0dffd594f27592dc0033cdd7",
+    "lineage_hash": "faaf4938484d8063bb5262311ea724601003ea6bab7bd8a9f8746302fe77bdf9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/29800/dr-kevorkian",
+    "fetchedAt": "2026-08-04T07:59:40.860Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/29800/dr-kevorkian",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}
