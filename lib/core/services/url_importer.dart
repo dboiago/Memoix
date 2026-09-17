@@ -445,6 +445,14 @@ class UrlRecipeImporter {
   /// SHARED CONSTANTS - Reduces duplication and improves maintainability
   /// ========================================================================
   
+  /// Unit alternation shared by every amount-extraction regex in
+  /// _parseIngredientString, so a fix (e.g. "lbs", "quarts") only needs to be
+  /// made in one place instead of 4 duplicated regex literals.
+  static const _ingredientUnitAlternation =
+      'teaspoons?|tablespoons?|cups?|Tbsp|tbsp|tsp|oz|lbs?|kg|g|ml|L|pounds?|ounces?|'
+      'quarts?|qt|inch(?:es)?|in|cm|slices?|cloves?|sprigs?|cans?|stalks?|heads?|'
+      'bunche?s?|pieces?|pinch(?:es)?|dash(?:es)?|drops?|large|medium|small';
+  
   /// Unicode fraction characters for ingredient parsing
   static const _unicodeFractions = r'[½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚]';
   
@@ -4482,6 +4490,12 @@ class UrlRecipeImporter {
     }).join(' ');
   }
 
+  /// Strip a redundant trailing "glass"/"glasses" suffix, then title-case.
+  String _normalizeGlassString(String raw) {
+    final stripped = raw.replaceAll(RegExp(r'\s*glass(es)?\s*$', caseSensitive: false), '').trim();
+    return _toTitleCase(stripped.isNotEmpty ? stripped : raw);
+  }
+
   /// Normalize serves/yield string - extract just the serving count number
   String _normalizeServes(String text) {
     var cleaned = text.trim();
@@ -5032,11 +5046,29 @@ class UrlRecipeImporter {
 
   /// Parse a single ingredient string into structured data
   Ingredient _parseIngredientString(String text) {
-    var remaining = text;
+    // Strip invisible Unicode formatting chars (ZWJ/ZWNJ/ZWSP/word-joiner/BOM/soft-hyphen)
+    // that break every ^-anchored amount regex below by sitting ahead of the digit.
+    var remaining = text.replaceAll(RegExp(r'[\u200B\u200C\u200D\u2060\uFEFF\u00AD]'), '');
+    // Strip a leading checkbox/bullet glyph (e.g. a WP Recipe Maker checkbox
+    // rendered as a literal character) that would otherwise sit ahead of the
+    // amount and break every ^-anchored regex below, same failure mode as
+    // the invisible-char strip above.
+    remaining = remaining.replaceFirst(RegExp(r'^[\s\u2610\u2611\u2612\u25a1\u25a2\u25fb\u25fc\u2022\u25e6\u2043\-\*]+'), '');
     bool isOptional = false;
     final List<String> notesParts = [];
     String? amount;
     String? inlineSection;
+    
+    // Normalize "whole & fraction" / "whole-fraction" joiners into the space-joined
+    // form the compound-fraction regex below expects (e.g. "1 & 1/2" -> "1 1/2").
+    remaining = remaining.replaceAllMapped(
+      RegExp(r'^(\d+)\s*&\s*(\d+/\d+)\b'),
+      (m) => '${m.group(1)} ${m.group(2)}',
+    );
+    remaining = remaining.replaceAllMapped(
+      RegExp(r'^(\d+)\s*-\s*(\d+/\d+)\b'),
+      (m) => '${m.group(1)} ${m.group(2)}',
+    );
     
     // Handle "Optional:" prefix at the start of ingredient line
     // e.g., "Optional: 1/4 tsp calcium chloride (aka Pickle Crisp granules)"
@@ -5245,6 +5277,21 @@ class UrlRecipeImporter {
     // Remove footnote markers like [1], *, †, etc. from both start and end
     remaining = remaining.replaceAll(RegExp(r'^[\*†]+|[\*†]+$|\[\d+\]'), '').trim();
     
+    // "A few sprinkles", "a splash of", "a couple of drizzles of" -- treat the
+    // vague quantifier phrase itself as an implicit "1 <unit>", rather than
+    // literally substituting "a"/"an" -> "1" via wordNumberMatch below and
+    // leaving "few"/"splash" stuck in the name.
+    final vagueQuantityMatch = RegExp(
+      r'^(?:a|an)\s+(?:(?:few|couple)\s+(?:of\s+)?)?'
+      r'(bits?|splash(?:es)?|handfuls?|touch(?:es)?|sprinklings?|sprinkles?|drizzles?)\s+(?:of\s+)?',
+      caseSensitive: false,
+    ).firstMatch(remaining);
+    if (vagueQuantityMatch != null) {
+      final unit = vagueQuantityMatch.group(1)?.trim() ?? '';
+      amount = '1 ${_normalizeUnit(unit)}';
+      remaining = remaining.substring(vagueQuantityMatch.end).trim();
+    }
+    
     // Convert word numbers to digits at the start of ingredient
     // e.g., "One 6-in. sage sprig" -> "1 6-in. sage sprig"
     // e.g., "Two large eggs" -> "2 large eggs"
@@ -5258,7 +5305,8 @@ class UrlRecipeImporter {
     if (wordNumberMatch != null) {
       final word = wordNumberMatch.group(1)!.toLowerCase();
       final digit = wordNumbers[word] ?? word;
-      remaining = digit + remaining.substring(wordNumberMatch.end);
+      // \s* in the match above consumes the separating space; restore it here.
+      remaining = '$digit ${remaining.substring(wordNumberMatch.end)}';
     }
     
     // Handle King Arthur Baking complex format:
@@ -5470,7 +5518,7 @@ class UrlRecipeImporter {
     // Handle ranges like "1-1.5 Tbsp" or "1 -1.5 Tbsp" (space before dash)
     final compoundFractionMatch = RegExp(
       r'^(\d+)\s+([½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚]|1/2|1/4|3/4|1/3|2/3|1/8|3/8|5/8|7/8)'
-      r'(\s*(?:teaspoons?|tablespoons?|cups?|Tbsp|tbsp|tsp|oz|lb|kg|g|ml|L|pounds?|ounces?|inch(?:es)?|in|cm|slices?|cloves?|sprigs?|cans?|stalks?|heads?|bunche?s?|pieces?|pinch(?:es)?|dash(?:es)?|drops?|large|medium|small)\.?)?\s+',
+      r'(\s*(?:' + _ingredientUnitAlternation + r')\.?)?\s+',
       caseSensitive: false,
     ).firstMatch(remaining);
     
@@ -5492,7 +5540,7 @@ class UrlRecipeImporter {
     if (amount == null) {
       final textFractionMatch = RegExp(
         r'^(\d+/\d+)'
-        r'(\s*(?:teaspoons?|tablespoons?|cups?|Tbsp|tbsp|tsp|oz|lb|kg|g|ml|L|pounds?|ounces?|inch(?:es)?|in|cm|slices?|cloves?|sprigs?|cans?|stalks?|heads?|bunche?s?|pieces?|pinch(?:es)?|dash(?:es)?|drops?|large|medium|small)\.?)?\s+',
+        r'(\s*(?:' + _ingredientUnitAlternation + r')\.?)?\s+',
         caseSensitive: false,
       ).firstMatch(remaining);
       
@@ -5513,7 +5561,7 @@ class UrlRecipeImporter {
       // Handle "X to Y unit" range format (e.g., "1 to 2 teaspoons")
       final toRangeMatch = RegExp(
         r'^([\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚.]+)\s+to\s+([\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚.]+)'
-        r'(\s*(?:teaspoons?|tablespoons?|cups?|Tbsp|tbsp|tsp|oz|lb|kg|g|ml|L|pounds?|ounces?|inch(?:es)?|in|cm|slices?|cloves?|sprigs?|cans?|stalks?|heads?|bunche?s?|pieces?|pinch(?:es)?|dash(?:es)?|drops?|large|medium|small)\.?)?\s+',
+        r'(\s*(?:' + _ingredientUnitAlternation + r')\.?)?\s+',
         caseSensitive: false,
       ).firstMatch(remaining);
       
@@ -5533,7 +5581,7 @@ class UrlRecipeImporter {
       // Original pattern for simple amounts and ranges with dash/en-dash
       final amountMatch = RegExp(
         r'^([\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚.]+\s*[-–]\s*[\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚.]+|[\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚.]+)'
-        r'(\s*(?:teaspoons?|tablespoons?|cups?|Tbsp|tbsp|tsp|oz|lb|kg|g|ml|L|pounds?|ounces?|inch(?:es)?|in|cm|slices?|cloves?|sprigs?|cans?|stalks?|heads?|bunche?s?|pieces?|pinch(?:es)?|dash(?:es)?|drops?|large|medium|small)\.?)?\s+',
+        r'(\s*(?:' + _ingredientUnitAlternation + r')\.?)?\s+',
         caseSensitive: false,
       ).firstMatch(remaining);
       
@@ -5546,6 +5594,21 @@ class UrlRecipeImporter {
           amount = '$amount ${_normalizeUnit(unit)}';
         }
         remaining = remaining.substring(amountMatch.end).trim();
+      }
+    }
+    
+    if (amount == null) {
+      // Bare-unit lines with no leading number ("pinch of baking soda") imply a
+      // quantity of exactly one; the word itself would otherwise be swallowed
+      // into the ingredient name with no amount/unit ever extracted.
+      final unitOnlyMatch = RegExp(
+        r'^(pinch(?:es)?|dash(?:es)?|handful(?:s)?|drop(?:s)?)\s+(?:of\s+)?',
+        caseSensitive: false,
+      ).firstMatch(remaining);
+      if (unitOnlyMatch != null) {
+        final unit = unitOnlyMatch.group(1)?.trim() ?? '';
+        amount = '1 ${_normalizeUnit(unit)}';
+        remaining = remaining.substring(unitOnlyMatch.end).trim();
       }
     }
     
@@ -6555,7 +6618,7 @@ class UrlRecipeImporter {
         final pMatch = RegExp(r'<p[^>]*>(.*?)</p>', caseSensitive: false, dotAll: true).firstMatch(afterH4);
         if (pMatch != null && glassType == null) {
           final text = _decodeHtml((pMatch.group(1) ?? '').replaceAll(RegExp(r'<[^>]+>'), '').trim());
-          if (text.isNotEmpty) glassType = text;
+          if (text.isNotEmpty) glassType = _normalizeGlassString(text);
         }
       } else if (h4Title == 'garnish') {
         final pMatch = RegExp(r'<p[^>]*>(.*?)</p>', caseSensitive: false, dotAll: true).firstMatch(afterH4);
@@ -6594,7 +6657,7 @@ class UrlRecipeImporter {
             }
           } else if (h4Title == 'glass' || h4Title == 'glassware') {
             if (pContent != null && pContent.isNotEmpty && glassType == null) {
-              glassType = _decodeHtml(pContent);
+              glassType = _normalizeGlassString(_decodeHtml(pContent));
             }
           } else if (h4Title == 'garnish') {
             if (pContent != null && pContent.isNotEmpty && garnishItems.isEmpty) {
@@ -9356,9 +9419,9 @@ class UrlRecipeImporter {
       }
     }
     
-    // Normalize glass (title case)
+    // Normalize glass (strip redundant "glass"/"glasses" suffix, then title case)
     if (result['glass'] != null && (result['glass'] as String).isNotEmpty) {
-      result['glass'] = _toTitleCase(result['glass'] as String);
+      result['glass'] = _normalizeGlassString(result['glass'] as String);
     }
     
     // Normalize garnish (remove leading articles, title case each item)

@@ -104,10 +104,26 @@ class IngredientParser {
     if (line.trim().isEmpty) return ParsedIngredient.empty;
     
     final original = line.trim();
-    var workingLine = original;
+    // Strip invisible Unicode formatting chars that break every ^-anchored regex below.
+    var workingLine = original.replaceAll(RegExp(r'[\u200B\u200C\u200D\u2060\uFEFF\u00AD]'), '');
+    // Strip a leading checkbox/bullet glyph that would otherwise sit ahead
+    // of the amount and break every ^-anchored regex below, same failure
+    // mode as the invisible-char strip above.
+    workingLine = workingLine.replaceFirst(RegExp(r'^[\s\u2610\u2611\u2612\u25a1\u25a2\u25fb\u25fc\u2022\u25e6\u2043\-\*]+'), '');
     String? preparation;
     String? alternative;
     String? sectionName;
+    
+    // Normalize "whole & fraction" / "whole-fraction" joiners into the space-joined
+    // form the amount-capture regexes below expect (e.g. "1 & 1/2" -> "1 1/2").
+    workingLine = workingLine.replaceAllMapped(
+      RegExp(r'^(\d+)\s*&\s*(\d+/\d+)\b'),
+      (m) => '${m.group(1)} ${m.group(2)}',
+    );
+    workingLine = workingLine.replaceAllMapped(
+      RegExp(r'^(\d+)\s*-\s*(\d+/\d+)\b'),
+      (m) => '${m.group(1)} ${m.group(2)}',
+    );
     
     // Check for section markers like "[Sauce]" or "(For the sauce)"
     final sectionMatch = RegExp(
@@ -234,6 +250,30 @@ class IngredientParser {
       workingLine = workingLine.substring(0, orMatch.start).trim();
     }
     
+    // "A few sprinkles", "a splash of", "a couple of drizzles of" -- treat the
+    // vague quantifier phrase itself as an implicit "1 <unit>", rather than
+    // literally substituting "a"/"an" -> "1" via wordNumberMatch below and
+    // leaving "few"/"splash" stuck in the name.
+    final vagueQuantityMatch = RegExp(
+      r'^(?:a|an)\s+(?:(?:few|couple)\s+(?:of\s+)?)?'
+      r'(bits?|splash(?:es)?|handfuls?|touch(?:es)?|sprinklings?|sprinkles?|drizzles?)\s+(?:of\s+)?(.+)',
+      caseSensitive: false,
+    ).firstMatch(workingLine);
+    if (vagueQuantityMatch != null) {
+      final unit = UnitNormalizer.normalize(vagueQuantityMatch.group(1)?.trim());
+      final name = vagueQuantityMatch.group(2)?.trim() ?? '';
+      return ParsedIngredient(
+        original: original,
+        name: TextNormalizer.cleanName(name),
+        amount: '1',
+        unit: unit,
+        preparation: preparation,
+        alternative: alternative,
+        sectionName: sectionName,
+        looksLikeIngredient: true,
+      );
+    }
+    
     // Remove footnote markers like [1], *, โ€ 
     workingLine = workingLine.replaceAll(RegExp(r'^[\*โ€ ]+|[\*โ€ ]+$|\[\d+\]'), '').trim();
     
@@ -245,7 +285,8 @@ class IngredientParser {
     if (wordNumberMatch != null) {
       final word = wordNumberMatch.group(1)!.toLowerCase();
       final digit = wordNumbers[word] ?? word;
-      workingLine = digit + workingLine.substring(wordNumberMatch.end);
+      // \s* in the match above consumes the separating space; restore it here.
+      workingLine = '$digit ${workingLine.substring(wordNumberMatch.end)}';
     }
     
     // Try baker's percentage format: "Name, XX% โ€" amount"
@@ -374,6 +415,28 @@ class IngredientParser {
         original: original,
         name: formattedName,
         amount: amount,
+        preparation: preparation,
+        alternative: alternative,
+        sectionName: sectionName,
+        looksLikeIngredient: true,
+      );
+    }
+    
+    // Bare-unit lines with no leading number ("pinch of baking soda") imply a
+    // quantity of exactly one, distinct from unitStartMatch below where the
+    // amount is genuinely on a separate line and should stay unfilled.
+    final unitOnlyMatch = RegExp(
+      r'^(pinch(?:es)?|dash(?:es)?|handful(?:s)?|drop(?:s)?)\s+(?:of\s+)?(.+)',
+      caseSensitive: false,
+    ).firstMatch(workingLine);
+    if (unitOnlyMatch != null) {
+      final unit = UnitNormalizer.normalize(unitOnlyMatch.group(1)?.trim());
+      final name = unitOnlyMatch.group(2)?.trim() ?? '';
+      return ParsedIngredient(
+        original: original,
+        name: TextNormalizer.cleanName(name),
+        amount: '1',
+        unit: unit,
         preparation: preparation,
         alternative: alternative,
         sectionName: sectionName,

@@ -25,6 +25,9 @@ class TextNormalizer {
     // Remove leading/trailing whitespace and collapse internal whitespace
     var cleaned = name.trim().replaceAll(RegExp(r'\s+'), ' ');
     
+    // Strip a trailing footnote marker (e.g. "Rice Flour *1") before punctuation stripping below
+    cleaned = cleaned.replaceAll(RegExp(r'\s*\*\s*\d+$'), '');
+    
     // Remove trailing punctuation
     cleaned = cleaned.replaceAll(RegExp(r'[,;:.]+$'), '').trim();
     
