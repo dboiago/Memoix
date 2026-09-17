@@ -1008,6 +1008,12 @@ class UnitNormalizer {
     'packages': 'pkgs',
     'pkg': 'pkg',
     'pkgs': 'pkgs',
+    // "pack" alone (not just "package") is common on Korean/Asian recipe
+    // sites for a countable unit of packaged goods, e.g. koreanbapsang.com's
+    // "1  about 18-oz pack firm tofu" -- confirmed missing, not just
+    // "package"/"pkg" already covered above.
+    'pack': 'pkg',
+    'packs': 'pkgs',
     'stick': 'stick',
     'sticks': 'sticks',
     'drop': 'drop',
@@ -1505,7 +1511,7 @@ const _ingredientUnitAlternation =
     'teaspoons?|tablespoons?|cups?|c|Tbsp|tbsp|tsp|oz|lbs?|kg|g|ml|L|liters?|litres?|'
     'pounds?|ounces?|inch(?:es)?|in|cm|slices?|cloves?|sprigs?|cans?|'
     'stalks?|heads?|bunche?s?|pieces?|pinch(?:es)?|dash(?:es)?|drops?|'
-    'quarts?|qt|large|medium|small';
+    'quarts?|qt|packs?|large|medium|small';
 
 
 // ---- Parsing functions (from url_importer.dart, converted to top-level) ----

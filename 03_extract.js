@@ -289,6 +289,56 @@ const UNIT_ALTERNATION = COMPOUND_DETECTION_UNIT_WORDS
 const AMOUNT_UNIT_PATTERN =
   new RegExp(`\\b\\d+(?:\\.\\d+)?(?:\\/\\d+)?\\s*(${UNIT_ALTERNATION})\\b`, 'gi');
 
+// Same unit vocabulary as AMOUNT_UNIT_PATTERN above, but joined by an
+// optional hyphen as well as whitespace ("18-oz" as well as "18 oz"), and
+// applied to already-PARSED ingredient names rather than raw pre-parse
+// lines. Confirmed necessary on koreanbapsang.com's Dubu Jorim: "1  about
+// 18-oz pack firm tofu" parsed to amount "1", name "About 18-oz Pack Firm
+// Tofu" -- the leading "1" was correctly split off, but "18-oz" is a
+// second, real quantity that never got recognized as a second amount+unit
+// pattern, because there's no whitespace between the digit and the unit
+// (a hyphen instead) and it isn't adjacent to the leading "1" the way the
+// raw-line AMOUNT_UNIT_PATTERN above expects. It just rides along untouched
+// inside the name. This does not try to correctly reparse that ambiguous
+// shape -- "amount, then descriptive prose, then a second embedded
+// quantity" is exactly the kind of source data this pipeline flags for a
+// human rather than guesses at.
+const AMOUNT_UNIT_NAME_PATTERN =
+  new RegExp(`\\b\\d+(?:\\.\\d+)?(?:\\/\\d+)?[\\s-]*(?:${UNIT_ALTERNATION})\\b`, 'i');
+
+// Recipe markdown converted from HTML via turndown, or raw JSON-LD/HTML
+// text pulled straight off the page, can carry two kinds of artifact a
+// human reader never notices but downstream app rendering would show
+// literally: markdown emphasis syntax, and invisible zero-width Unicode
+// formatting characters. Confirmed on two unrelated sites:
+//   - nomaprojects.com's Turkish Spinach Börek: the source HTML wraps the
+//     degree symbol in <strong>, turndown converts that verbatim to
+//     "190 **°**C", and nothing downstream strips it before it lands in a
+//     direction string. The app has no markdown renderer, so this would
+//     display as literal asterisks to a user.
+//   - Any field pulled through the same scraped-HTML pipeline can just as
+//     easily carry a stray zero-width character (see INVISIBLE_CHAR_PATTERN
+//     above, which fixes the pre-parse ingredient-line case specifically --
+//     this is the same character class, applied as a general safety net
+//     over the final text instead).
+// Applied as a single pass over every text field in the final payload --
+// name, directions, ingredient name/notes, garnish -- rather than fixed
+// per-field, since both artifacts can originate from the same pipeline
+// regardless of which field they end up in. Only touches markdown emphasis
+// syntax (paired */** /__ markers) and the specific invisible-character
+// class, never a bare "*" or "_" used for anything else, since neither
+// otherwise appears in cooking text.
+function sanitizeText(text) {
+  if (!text) return text;
+  return text
+    .replace(INVISIBLE_CHAR_PATTERN, '')
+    .replace(/\*\*\*(.+?)\*\*\*/g, '$1')
+    .replace(/\*\*(.+?)\*\*/g, '$1')
+    .replace(/__(.+?)__/g, '$1')
+    .replace(/\*(.+?)\*/g, '$1')
+    .trim();
+}
+
 // Deterministic, not model-judged: if a raw ingredient line contains more than
 // one standalone amount+unit pattern outside of a parenthetical, it likely
 // encodes two separate uses (e.g. "50 g for beans +40g (for fresh peppers)
@@ -577,7 +627,7 @@ function buildPayload(extracted, meta) {
   const resolvedSubcategory = isDrink ? nullIfEmpty(subcategory) : null;
 
   const recipe = {
-    name:         name.trim(),
+    name:         sanitizeText(name.trim()),
     time:         nullIfEmpty(time),
     course:       nullIfEmpty(course),
     rating:       0,
@@ -585,20 +635,20 @@ function buildPayload(extracted, meta) {
     source:       'scraped',
     cuisine:      nullIfEmpty(cuisine),
     glass:        nullIfEmpty(normalizeGlass(glass)),
-    garnish:      Array.isArray(garnish) ? garnish.filter(g => g && g.trim()).map(g => normalizeGarnish(g.trim())) : [],
+    garnish:      Array.isArray(garnish) ? garnish.filter(g => g && g.trim()).map(g => normalizeGarnish(sanitizeText(g.trim()))) : [],
     subcategory:  resolvedSubcategory,
     comments:     null,
     cookCount:    0,
     nutrition:    builtNutrition,
-    directions:   directions.filter(d => d && d.trim()),
+    directions:   directions.filter(d => d && d.trim()).map(d => sanitizeText(d.trim())),
     recipeType:   'standard',
     ingredients:  (() => {
       const built = normalizedIngredients
         .filter(i => i.name && i.name.trim())
         .map(i => ({
-          name:       cleanName(i.name.trim()),
+          name:       cleanName(sanitizeText(i.name.trim())),
           unit:       nullIfEmpty(normalizeUnit(i.unit)),
-          notes:      nullIfEmpty(i.notes),
+          notes:      nullIfEmpty(sanitizeText(i.notes)),
           amount:     i.amount && i.amount.trim() ? normalizeFractions(i.amount.trim()) : '0',
           section:    nullIfEmpty(i.section),
           isOptional: false,
@@ -671,6 +721,24 @@ function buildLdHints(meta) {
 // ingredient-parsing decision.
 const LEADING_GLYPH_PATTERN = /^[\s\u2610\u2611\u2612\u25a1\u25a2\u25fb\u25fc\u2022\u25e6\u2043\-\*]+/;
 
+// Zero-width and other invisible Unicode formatting characters (ZWJ, ZWNJ,
+// ZWSP, word joiner, BOM, soft hyphen) sometimes wrap scraped ingredient
+// quantities for styling reasons invisible to a human reader. Confirmed on
+// bongeats.com's Shutki Machh Bata: three ingredient lines ("\u200d100 g
+// loitta shutki...\u200d", "\u200d200 ml water\u200d", "\u200d4 g turmeric
+// powder\u200d") carry a leading and/or trailing zero-width joiner
+// (U+200D). Every amount-extraction regex in the Dart parser is anchored
+// to the start of the string with `^`, so the invisible character sitting
+// before the digit breaks the match entirely and the whole line falls
+// through unparsed into the ingredient name. Stripped globally, not just
+// leading/trailing, since nothing guarantees a future case only places it
+// at the edges.
+const INVISIBLE_CHAR_PATTERN = /[\u200B\u200C\u200D\u2060\uFEFF\u00AD]/g;
+
+function stripIngredientLineNoise(text) {
+  return text.replace(INVISIBLE_CHAR_PATTERN, '').replace(LEADING_GLYPH_PATTERN, '').trim();
+}
+
 // Detects whether a recipe's own name signals it's a dietary adaptation of
 // something else (e.g. "Vegan Mushroom Stroganoff") -- used to tell apart two
 // cases that both produce an empty extracted.cuisine and would otherwise
@@ -688,10 +756,6 @@ const LEADING_GLYPH_PATTERN = /^[\s\u2610\u2611\u2612\u25a1\u25a2\u25fb\u25fc\u2
 // silently locked to "JP" via the site fallback.
 const DIETARY_ADAPTATION_PATTERN =
   /\b(vegan|vegetarian|gluten-?free|dairy-?free|plant-?based|meatless|keto|paleo|low-?carb)\b/i;
-
-function stripIngredientLineNoise(text) {
-  return text.replace(LEADING_GLYPH_PATTERN, '').trim();
-}
 
 // Parses the "[Section Name]" bracket convention from site_configs.js output
 // (matches url_importer.dart's own line convention) into section-tagged lines.
@@ -1365,6 +1429,17 @@ async function main() {
     // clean corpus.
     let flaggedForReview = false;
 
+    // Separate from flaggedForReview above: cuisine-unverified-no-grounding
+    // is a "go spot-check this one field" concern, not an ingredients/
+    // directions/completeness concern, so it routes to CUISINE_REVIEW_DIR
+    // alongside the existing site-hint-mismatch case rather than
+    // NEEDS_REVIEW_DIR -- the same bucket for the same kind of decision,
+    // per the distinction: cuisine-review is "is this field right," needs-
+    // review is "is something else wrong or missing." Still overridden by
+    // flaggedForReview if BOTH fire on the same recipe: a genuine
+    // completeness defect always takes priority over a cuisine spot-check.
+    let cuisineUnverified = false;
+
     // Deterministic, name/content-based scope gate: pizza and sandwich
     // content are explicitly out of scope per VALID_COURSES' own comment
     // (separate domainTypes with their own schemas, not yet built here).
@@ -1695,6 +1770,29 @@ async function main() {
         flaggedForReview = true;
       }
 
+      // Companion check to the one above, but looking at the NAME field
+      // instead of amount: catches a genuinely different failure shape,
+      // where the primary amount was split off correctly but a SECOND,
+      // real quantity was left stuck in the name. Confirmed on
+      // koreanbapsang.com's Dubu Jorim ("1  about 18-oz pack firm tofu" ->
+      // amount "1", name "About 18-oz Pack Firm Tofu"). Uses
+      // AMOUNT_UNIT_NAME_PATTERN (hyphen-joined as well as space-joined)
+      // rather than trying to correctly reparse the ambiguous "amount,
+      // then prose, then a second embedded quantity" shape -- that's
+      // exactly the kind of source data this pipeline flags for a human
+      // rather than guesses at.
+      const nameHasEmbeddedAmount = extracted.ingredients.filter(i => {
+        const name = typeof i === 'string' ? null : i?.name;
+        return typeof name === 'string' && name.trim() && AMOUNT_UNIT_NAME_PATTERN.test(name);
+      });
+      if (nameHasEmbeddedAmount.length > 0) {
+        logForReview(slug, meta.url, 'ingredient-name-embedded-amount',
+          nameHasEmbeddedAmount.map(i => i.name).join('; '),
+          'One or more ingredient names contain a number+unit pattern (e.g. "18-oz") that was never split out ' +
+          'as a second amount -- likely a real quantity left stuck in the name after the primary amount was extracted.');
+        flaggedForReview = true;
+      }
+
       if (extracted.ingredients.length === 0 && extracted.directions.length === 0) {
         logError(slug, 'empty-content', 'No ingredients or directions extracted');
         markUnrecoverable(slug, 'empty-content', 'No ingredients or directions extracted', meta.url);
@@ -1804,7 +1902,7 @@ async function main() {
         logForReview(slug, meta.url, 'cuisine-unverified-no-grounding', extracted.cuisine,
           'Cuisine has no page-level (ldCuisine) or site-level (siteRegionHint) signal to check it against -- ' +
           'model-inferred with no grounding at all.');
-        flaggedForReview = true;
+        cuisineUnverified = true;
       }
 
       const payload = buildPayload(extracted, meta);
@@ -1888,10 +1986,14 @@ async function main() {
       }
 
       // Cuisine-review is a separate question from extraction completeness:
-      // "does this content belong on this site at all," not "did we get it
-      // correctly." Only fires when both the site tag and the model's own
-      // cuisine call are present and disagree -- a site with no region tag,
-      // or a recipe where cuisine came back empty, has nothing to compare.
+      // "does this content belong on this site at all" or "is this field
+      // right," not "did we get the ingredients/directions/etc. correctly."
+      // Two independent ways in: the site tag and the model's own cuisine
+      // call are both present and disagree (a site with no region tag, or a
+      // recipe where cuisine came back empty, has nothing to compare), or
+      // cuisineUnverified above (cuisine has no signal on either axis to
+      // check it against at all). Either way this is the same kind of
+      // decision -- go look at the cuisine field -- so both share a bucket.
       const cuisineMismatch = meta.siteRegionHint
         && payload.recipe.cuisine
         && meta.siteRegionHint.trim().toLowerCase() !== payload.recipe.cuisine.trim().toLowerCase();
@@ -1900,10 +2002,14 @@ async function main() {
       if (flaggedForReview) {
         destPath = needsReviewPath;
         needsReviewCount++;
-      } else if (cuisineMismatch) {
+      } else if (cuisineMismatch || cuisineUnverified) {
         destPath = cuisineReviewPath;
         cuisineReviewCount++;
-        console.log(`  CUISINE-REVIEW: ${slug} -- site tagged "${meta.siteRegionHint}", recipe classified "${payload.recipe.cuisine}"`);
+        if (cuisineMismatch) {
+          console.log(`  CUISINE-REVIEW: ${slug} -- site tagged "${meta.siteRegionHint}", recipe classified "${payload.recipe.cuisine}"`);
+        } else {
+          console.log(`  CUISINE-REVIEW: ${slug} -- cuisine "${payload.recipe.cuisine}" has no grounding signal to verify against`);
+        }
       } else {
         destPath = outPath;
         cleanCount++;

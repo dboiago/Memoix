@@ -5,7 +5,7 @@
 // needs (cleanName, normalizeFractions, normalizeUnit, normalizeGarnish).
 //
 // Per recipe_import_result.dart's fromAi() comment: "Apply normalizers per
-// AGENTS.md: all imports MUST pass through normalizers" — OCR import and
+// AGENTS.md: all imports MUST pass through normalizers" -- OCR import and
 // URL import both do this; 03_extract.js currently does not. This module
 // closes that gap so corpus-pipeline output matches every other import path.
 //
@@ -156,6 +156,11 @@ const UNIT_MAP = {
   stalk: 'stalk', stalks: 'stalks',
   head: 'head', heads: 'heads',
   package: 'pkg', packages: 'pkgs', pkg: 'pkg', pkgs: 'pkgs',
+  // "pack" alone (not just "package") is common on Korean/Asian recipe
+  // sites for a countable unit of packaged goods, e.g. koreanbapsang.com's
+  // "1  about 18-oz pack firm tofu" -- confirmed missing, not just
+  // "package"/"pkg" already covered above.
+  pack: 'pkg', packs: 'pkgs',
   stick: 'stick', sticks: 'sticks',
   drop: 'drop', drops: 'drops',
   handful: 'handful', handfuls: 'handfuls',
@@ -196,6 +201,15 @@ export function normalizeUnit(unit) {
   const lower = trimmed.toLowerCase();
   if (UNIT_MAP[lower]) return UNIT_MAP[lower];
   if (NORMALIZED_UNIT_VALUES.has(trimmed)) return trimmed;
+  // Case-insensitive match against already-normalized values (e.g. "OZ" or
+  // "Oz" should resolve to "oz" the same way "ounce" does). Confirmed gap,
+  // same root cause as the Dart-side UnitNormalizer.normalize fix: "oz"
+  // itself is never a UNIT_MAP key -- only "ounce"/"ounces" are -- so a
+  // source that already used the abbreviation in caps skipped
+  // normalization entirely and shipped uppercase.
+  for (const value of NORMALIZED_UNIT_VALUES) {
+    if (value.toLowerCase() === lower) return value;
+  }
   return trimmed;
 }
 
@@ -206,7 +220,7 @@ export function normalizeUnit(unit) {
 /**
  * Port of normalizeGarnish: strips trailing punctuation, drops a leading
  * article (a/an/the), then applies the same cleanName Title Case as every
- * other name field. NOT the same as a bare capitalize-first-letter pass —
+ * other name field. NOT the same as a bare capitalize-first-letter pass --
  * "chamomile powder" -> "Chamomile Powder", not "Chamomile powder".
  */
 export function normalizeGarnish(text) {
@@ -217,7 +231,7 @@ export function normalizeGarnish(text) {
 }
 
 // ---------------------------------------------------------------------------
-// normalizeGlass — corpus-pipeline-only, no Dart-side equivalent exists.
+// normalizeGlass -- corpus-pipeline-only, no Dart-side equivalent exists.
 // Confirmed against the app's own glassware suggestion list: entries are
 // bare style names ("Coupe", "Highball"), never "<style> glass".
 // ---------------------------------------------------------------------------

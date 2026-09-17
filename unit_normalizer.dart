@@ -97,6 +97,12 @@ class UnitNormalizer {
     'packages': 'pkgs',
     'pkg': 'pkg',
     'pkgs': 'pkgs',
+    // "pack" alone (not just "package") is common on Korean/Asian recipe
+    // sites for a countable unit of packaged goods, e.g. koreanbapsang.com's
+    // "1  about 18-oz pack firm tofu" -- confirmed missing, not just
+    // "package"/"pkg" already covered above.
+    'pack': 'pkg',
+    'packs': 'pkgs',
     'stick': 'stick',
     'sticks': 'sticks',
     'drop': 'drop',
