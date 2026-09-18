@@ -1,0 +1,149 @@
+{
+  "recipe": {
+    "name": "Homemade Glass Noodles with Sesame Soy Dressing",
+    "time": "45 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pour about ⅔ of the water into a medium pot and bring to almost a simmer over high heat. Meanwhile, stir the mung bean starch together with the rest of the water.",
+      "Once the water steams and bubbles start to form (but it is not simmering) reduce the heat to medium high, then give the starch slurry a stir and pour it into the pot while stirring.",
+      "Keep stirring CONSTANTLY until the thickens into a white paste.",
+      "Once it turns white, keep stirring until the paste turns translucent. Once it is no longer changing and everything looks evenly translucent, remove from heat.",
+      "Pour into the prepared mold and let cool to room temp, then chill for at least 3 hours and ideally overnight where it will solidify and firm up.",
+      "Pop the chilled jelly out onto a clean work surface.",
+      "Use a grater to grate the jelly, creating noodles, by applying even pressure as you pull the grater towards you.",
+      "Blanch the noodles in boiling water.",
+      "Once the noodles turn translucent (about 10 seconds) they are done.",
+      "Drain and cool them by running them under cold tap water. They are now ready to use!",
+      "Combine the ingredients for the salad dressing together, pour over plated noodles and place the veggies on the side. Mix it up before you eat!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mung Bean Starch",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅔",
+        "section": "*Makes enough for about 3x of the salad recipe below (6 servings total)",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "3",
+        "section": "*Makes enough for about 3x of the salad recipe below (6 servings total)",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "1",
+        "section": "The Salad (serves 2)",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "The Salad (serves 2)",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "The Salad (serves 2)",
+        "isOptional": false
+      },
+      {
+        "name": "Rice Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "The Salad (serves 2)",
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Oil",
+        "unit": "tsp",
+        "notes": "add more for a stronger sesame flavour",
+        "amount": "1",
+        "section": "The Salad (serves 2)",
+        "isOptional": false
+      },
+      {
+        "name": "Homemade Glass Noodles",
+        "unit": "oz",
+        "notes": "(mung bean jelly noodles)",
+        "amount": "9",
+        "section": "The Salad (serves 2)",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": "The Salad (serves 2)",
+        "isOptional": false
+      },
+      {
+        "name": "Chili Crisp",
+        "unit": "tsp",
+        "notes": "such as lao gan ma",
+        "amount": "2",
+        "section": "The Salad (serves 2)",
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Peanuts",
+        "unit": "Tbsp",
+        "notes": "chopped, or toasted sesame seeds",
+        "amount": "2",
+        "section": "The Salad (serves 2)",
+        "isOptional": false
+      },
+      {
+        "name": "3- Inch Section of an English Cucumber",
+        "unit": null,
+        "notes": "julienned",
+        "amount": "0",
+        "section": "The Salad (serves 2)",
+        "isOptional": false
+      },
+      {
+        "name": "2- Inch Section of a Carrot",
+        "unit": null,
+        "notes": "julienned",
+        "amount": "0",
+        "section": "The Salad (serves 2)",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "330abd5f16aebb776ace31122f53abcfe0c8726e5ebd4d1879c73cb3acf4793f",
+    "lineage_hash": "7a601a9793eac3ab235eb8d8d0c29a0df5f43c025443e06f06194d99b0cc0c96"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://hot-thai-kitchen.com/homemade-glass-noodles/",
+    "fetchedAt": "2026-08-01T23:10:54.719Z"
+  },
+  "rawSource": "https://hot-thai-kitchen.com/homemade-glass-noodles/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

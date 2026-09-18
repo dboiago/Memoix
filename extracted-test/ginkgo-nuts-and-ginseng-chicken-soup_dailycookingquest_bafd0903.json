@@ -1,0 +1,93 @@
+{
+  "recipe": {
+    "name": "Ginkgo Nuts and Ginseng Chicken Soup",
+    "time": "1 hr 30 min",
+    "course": "soups",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Rinse and drain all the dried herbs to remove dust and dirt.",
+      "Place all ingredients in a soup pot and bring to a boil. Reduce heat and simmer for 1 hour or until chicken is tender and fully cooked.",
+      "Remove from heat and serve warm."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Free Range Chicken (indonesian: Ayam Kampung)",
+        "unit": null,
+        "notes": "cut into 4-8 pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginkgo Nuts (chinese: Bai Guo)",
+        "unit": null,
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginseng",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lotus Seeds (chinese: Lian Zi)",
+        "unit": null,
+        "notes": "dried",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jujube Fruit (chinese: Hong Zao)",
+        "unit": null,
+        "notes": "dried",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c4971ae970f31964f07d3dc78612a333b8c5aaf76da854d77eef388a60bf366b",
+    "lineage_hash": "7a5a8e84bc73ad3870f0d6764f7bbd0a556b1fc0c5bc4b97522bd849633018dc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/ginkgo-nuts-and-ginseng-chicken-soup.html",
+    "fetchedAt": "2026-08-02T11:49:30.362Z"
+  },
+  "rawSource": "https://dailycookingquest.com/ginkgo-nuts-and-ginseng-chicken-soup.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

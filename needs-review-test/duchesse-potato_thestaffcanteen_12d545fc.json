@@ -1,0 +1,91 @@
+{
+  "recipe": {
+    "name": "Duchesse Potato",
+    "time": "1 hr 30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To cook the potatoes, place in a large vacuum bag and seal on high setting.",
+      "Cook en sous vide at 90C (194F) for 11/2 hours, or until tender.",
+      "Press potatoes through a tamis.",
+      "Weigh 500 g (1 lb 1.6 oz) of pressed potato and place in a medium bowl.",
+      "Add the eggs, salt and egg yolk and stir until combined.",
+      "Transfer to a piping bag with a star tip.",
+      "Pipe the mixture in a spiral pattern 3 inches (7.6 cm) wide onto a heat-proof silicone baking mat.",
+      "Brush with wash and bake in the oven at 350T (177\"C) for 6 minutes or until golden brown.",
+      "Remove and rest at room temperature until ready to service"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "(3 Lb 4.9 Oz) Russet Potatoes",
+        "unit": "g",
+        "notes": "cooked",
+        "amount": "1500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "(7.1 Oz) Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "(0.7 Oz) Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "(3.5 Oz) Whole Eggs",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "(2.8 Oz) Egg Yolks",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Wash",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4fd8e5706454c2b7ca8da23be43309df27d7869d2dbada4ae804a316510a19a2",
+    "lineage_hash": "3b250969b923674992d3ef84c2336a45e227bc6bc1587cbcbfb8a089af20b6db"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.thestaffcanteen.com/chefs-recipes/duchesse-potato",
+    "fetchedAt": "2026-08-03T02:45:53.919Z"
+  },
+  "rawSource": "https://www.thestaffcanteen.com/chefs-recipes/duchesse-potato",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}
