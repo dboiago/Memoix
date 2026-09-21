@@ -167,6 +167,19 @@ const UNIT_MAP = {
   pint: 'pt', pints: 'pt', pt: 'pt',
   quart: 'qt', quarts: 'qt', qt: 'qt',
   gallon: 'gal', gallons: 'gal', gal: 'gal',
+  // Length units, recognized on the Dart side (memoix_recipe_parser.dart's
+  // _ingredientUnitAlternation: "inch(?:es)?|in|cm") for amount extraction,
+  // but never abbreviated there either -- Dart's _unitMap has no entry for
+  // these, so UnitNormalizer.normalize('inches') just returns 'inches'
+  // unchanged. Identity-mapped here (not abbreviated to "in"/"cm") to match
+  // that exact no-op behavior on both engines; the only reason to add them
+  // to UNIT_MAP at all is so they flow into COMPOUND_DETECTION_UNIT_WORDS
+  // below and become visible to detectCompoundAmount and the ingredient-
+  // name-embedded-amount check -- confirmed missing before this: "1-Inch
+  // Ginger" (a real unparsed-amount case, same shape as the koreanbapsang
+  // "18-oz" bug) never matched either check since "inch" wasn't recognized
+  // as a unit word by either JS-side pattern at all.
+  inch: 'inch', inches: 'inches', in: 'in', cm: 'cm',
   large: 'large', medium: 'medium', small: 'small',
 };
 

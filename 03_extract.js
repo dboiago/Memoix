@@ -303,8 +303,36 @@ const AMOUNT_UNIT_PATTERN =
 // shape -- "amount, then descriptive prose, then a second embedded
 // quantity" is exactly the kind of source data this pipeline flags for a
 // human rather than guesses at.
+//
+// Global ('g' flag) and paired with a paren-depth check below, not a bare
+// .test(): confirmed against a real 35-recipe batch that most hits on the
+// naive single-match version were a completely different, benign shape --
+// a parenthetical unit-conversion note on an otherwise-correctly-parsed
+// ingredient ("Maple Syrup (100g)", "(3 lb 4.9 oz) Russet Potatoes",
+// "Napa Cabbage (about 8 oz./225g = about 4 large leaves)"). A human
+// reading that isn't confused about what's being counted, and
+// detectCompoundAmount above already carves out the identical shape for
+// raw lines with its own isInsideParens check, for the identical reason.
+// Applying that same exclusion here removed 6 of 8 hits in that batch,
+// leaving only the two that were genuinely the koreanbapsang shape: a
+// quantity sitting bare in the name with nothing marking it as a mere
+// conversion, actively obscuring what's actually being counted ("About
+// 18-oz Pack Firm Tofu" -- is it 1 pack, 18 oz, or both?).
 const AMOUNT_UNIT_NAME_PATTERN =
-  new RegExp(`\\b\\d+(?:\\.\\d+)?(?:\\/\\d+)?[\\s-]*(?:${UNIT_ALTERNATION})\\b`, 'i');
+  new RegExp(`\\b\\d+(?:\\.\\d+)?(?:\\/\\d+)?[\\s-]*(?:${UNIT_ALTERNATION})\\b`, 'gi');
+
+function hasEmbeddedAmountOutsideParens(name) {
+  const matches = [...name.matchAll(AMOUNT_UNIT_NAME_PATTERN)];
+  if (matches.length === 0) return false;
+  return matches.some(m => {
+    let depth = 0;
+    for (let i = 0; i < m.index; i++) {
+      if (name[i] === '(') depth++;
+      else if (name[i] === ')') depth = Math.max(0, depth - 1);
+    }
+    return depth === 0;
+  });
+}
 
 // Recipe markdown converted from HTML via turndown, or raw JSON-LD/HTML
 // text pulled straight off the page, can carry two kinds of artifact a
@@ -1783,7 +1811,7 @@ async function main() {
       // rather than guesses at.
       const nameHasEmbeddedAmount = extracted.ingredients.filter(i => {
         const name = typeof i === 'string' ? null : i?.name;
-        return typeof name === 'string' && name.trim() && AMOUNT_UNIT_NAME_PATTERN.test(name);
+        return typeof name === 'string' && name.trim() && hasEmbeddedAmountOutsideParens(name);
       });
       if (nameHasEmbeddedAmount.length > 0) {
         logForReview(slug, meta.url, 'ingredient-name-embedded-amount',
