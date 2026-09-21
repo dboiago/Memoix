@@ -1,0 +1,116 @@
+{
+  "recipe": {
+    "name": "Easy Crispy Vegan Crackers",
+    "time": "33 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "126",
+      "carbohydrateContent": "19",
+      "fatContent": "4",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "Preheat your oven to 375F (190C). Line two large baking sheets with parchment paper.",
+      "Add the flour, nutritional yeast, Italian seasoning, salt, garlic powder, black pepper, and baking powder to a food processor and pulse several times to combine. Add the water and olive oil and pulse, stopping the sides as needed until everything is mixed and you have a crumbled dough.",
+      "Dump the dough crumbles onto a clean work surface and gather together with your hands to form a ball of dough. Use a rolling pin to roll the dough out as thinly as possible (about 1/16&quot; thick). They will puff up and get a bit thicker once baked. I find it helpful to peel up the dough and rotate it a few times while rolling it out to help get it thin.",
+      "Use a pizza cutter or sharp knife to cut the dough into a grid pattern making crackers that are about 1 1/2&quot; square. Use a fork to prick each cracker 2 - 3 times, this will stop them from getting large bubbles when baking. Peel up each cracker and place on the prepared baking sheets, making sure the crackers don&#039;t touch. Re-roll any leftover dough scraps and cut more crackers until all the dough is used up.",
+      "Bake for 12 - 18 minutes, until the crackers are golden brown around the edges, making sure to keep an eye on them so they don&#039;t burn. If some crackers look browned before the rest of the crackers are finished baking, remove them from the pan and continue baking the rest. Let cool completely on the pan. Store crackers in an air-tight container at room temperature for up to 1 week."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutritional Yeast",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Italian Seasoning",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e6c891bb27a85b1d69eb1bdb329e9025e8e989d83521b8c29ea656cf3a0d59ef",
+    "lineage_hash": "5bb771df6d98b5e27d843455a0efaf6b4be6fd3fc5a0a3cba7c971fc96e6cb42"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/easy-crispy-vegan-crackers/",
+    "fetchedAt": "2026-08-02T04:19:57.786Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/easy-crispy-vegan-crackers/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

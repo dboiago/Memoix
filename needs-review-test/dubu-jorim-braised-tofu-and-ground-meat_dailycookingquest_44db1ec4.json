@@ -1,0 +1,201 @@
+{
+  "recipe": {
+    "name": "Dubu Jorim - Braised Tofu and Ground Meat",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "KR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Ground meat mixture: Combine ground pork, grated garlic, grated ginger, the white part of scallions (thinly sliced), and sesame oil. Mix well and set aside.",
+      "Sauce mixture: Stir gochujang, gochugaru, grated garlic, soy sauce, sake, mirin, and sugar in a bowl and set aside.",
+      "Sauté ground meat: Sauté ground meat mixture in a skillet or a deep frying pan over medium-high heat until no longer pink.",
+      "Add tofu and anchovy stock: Add dried sardines and stir, then add tofu and water and cook until boiling. Alternatively, mix anchovy stock granules and water in a bowl and pour it into the skillet/pan, then add tofu and cook until boiling.",
+      "Add sauce: Add sauce mixture into the skillet/pan and stir gently to mix. Reduce the heat to a simmer and continue cooking for 10 minutes.",
+      "Thicken the sauce (optional): If you prefer a thick sauce, increase the heat, add katakuriko/cornstarch slurry, and stir for 1 minute or until the sauce is thick.",
+      "Garnish and serve: Turn off the heat. Garnish with the green part of the scallions and mix gently. Transfer the dish to a serving bowl and serve it immediately with steamed rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Anchovies",
+        "unit": null,
+        "notes": "dried, break into small pieces (Note 1)",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tubes of Soft Tofu (~ 450 Gram in Total)",
+        "unit": null,
+        "notes": "1-inch slices",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "green part only, thinly sliced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Meat Mixture",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Ground Pork/beef/chicken",
+        "unit": null,
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "grated",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "white part only, thinly sliced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sauce Mixture",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sake",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mirin",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gochujang",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gochugaru",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Katakuriko/cornstarch Slurry (optional)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Katakuriko/cornstarch + 2 Tablespoon Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1d9b5299cb0bbe1a3af43c005c54fd1267ab83c1d2599447b65de70c19dd9dfd",
+    "lineage_hash": "b62012ffa03e4732f8af3ded94cf34019e75450e745bbd86643f2c07500c466b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/dubu-jorim-braised-tofu-and-ground-beef.html",
+    "fetchedAt": "2026-08-01T16:14:07.030Z"
+  },
+  "rawSource": "https://dailycookingquest.com/dubu-jorim-braised-tofu-and-ground-beef.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}
