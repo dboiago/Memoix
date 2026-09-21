@@ -109,6 +109,23 @@ const VALID_SUBCATEGORIES = [
   'Sparkling', 'Liqueur', 'Beer', 'Tea', 'Coffee', 'Mocktail',
 ];
 
+// Name-matching for the BASE-spirit subset of VALID_SUBCATEGORIES only --
+// used below to tell a genuine "two base spirits tied" ambiguity apart from
+// a base spirit merely tied with a modifier (vermouth, liqueur, juice) at
+// the same volume, which every real cocktail reference still categorizes by
+// the base spirit alone (a Negroni is "a Gin cocktail" despite equal parts
+// Campari and vermouth). Deliberately excludes Wine/Sparkling/Liqueur/etc.:
+// those are exactly the modifier-shaped categories a tied base spirit should
+// win against, not compete with.
+const BASE_SPIRIT_KEYWORDS = {
+  Gin: /\bgin\b/i,
+  Vodka: /\bvodka\b/i,
+  Whiskey: /\b(?:whiskey|whisky|bourbon|rye|scotch)\b/i,
+  Rum: /\brum\b/i,
+  Tequila: /\b(?:tequila|mezcal)\b/i,
+  Brandy: /\b(?:brandy|cognac|armagnac|calvados)\b/i,
+};
+
 // Deterministic pre-resolution from PAGE-level structured data (ldCategory,
 // ldCuisine) only -- never siteCourseHint/siteRegionHint. Site-level hints
 // describe the site in general, not this specific recipe, and locking a
@@ -1936,19 +1953,21 @@ async function main() {
       const payload = buildPayload(extracted, meta);
 
       // Deterministic tie check on drink subcategory, not a spirits
-      // classifier: the prompt already instructs the model to leave
-      // subcategory empty "on an even split between two spirits," but
-      // instruction-following alone isn't trustworthy, same reasoning as
-      // every other post-hoc enforcement in this file. Confirmed on
-      // punchdrink.com's Equal-Parts Martini (gin 1½oz vs vermouth 1½oz --
-      // an exact tie, named for being one): subcategory shipped as "Gin"
-      // despite this being precisely the case the prompt names as the
-      // exception. Detected here by finding two or more ingredients that
-      // share the same unit and are tied for the largest parsed amount in
-      // that unit group -- deliberately flagged rather than nulled outright,
-      // since correctly picking which of several tied ingredients is "the"
-      // base spirit (vs. a modifier poured at the same volume) needs
-      // judgment this check doesn't have.
+      // classifier: finds ingredients that share a unit and are tied for
+      // the largest parsed amount in that unit group, the same signal as
+      // before. What changed is what counts as worth a human's time.
+      // Originally any tie at all was flagged, on the theory that the
+      // prompt's own instruction ("leave subcategory empty on an even split
+      // between spirits") wasn't being followed. Confirmed on punchdrink.com's
+      // Equal-Parts Martini (gin 1½oz vs vermouth 1½oz): that's real, but on
+      // review it's also not actually wrong -- a modifier (vermouth, a
+      // liqueur, a juice) tied with a base spirit at equal volume doesn't
+      // make the drink any less defined by that spirit, which is exactly how
+      // real cocktail references categorize a Negroni (equal parts gin,
+      // Campari, sweet vermouth) as "a Gin cocktail." The only tie shape that
+      // genuinely has no deterministic answer is two DIFFERENT base spirits
+      // tied for the max (e.g. an even gin/vodka split) -- there's no
+      // convention to fall back on there, so that case still needs a human.
       if (payload.recipe.subcategory) {
         const UNICODE_FRACTION_VALUES = {
           '½': 0.5, '¼': 0.25, '¾': 0.75, '⅓': 1 / 3, '⅔': 2 / 3,
@@ -1980,21 +1999,42 @@ async function main() {
         }
 
         let tieDetail = null;
+        let tiedEntries = null;
         for (const [unit, entries] of byUnit) {
           if (entries.length < 2) continue;
           const maxValue = Math.max(...entries.map(e => e.value));
           const atMax = entries.filter(e => Math.abs(e.value - maxValue) < 1e-9);
           if (atMax.length >= 2) {
             tieDetail = atMax.map(e => `${e.name} (${maxValue} ${unit})`).join(' vs ');
+            tiedEntries = atMax;
             break;
           }
         }
 
         if (tieDetail) {
-          logForReview(slug, meta.url, 'subcategory-spirit-tie', payload.recipe.subcategory,
-            `Two or more ingredients are tied for the largest amount (${tieDetail}) -- the prompt's own ` +
-            'instruction says to leave subcategory empty on an even split between spirits, but a value was set anyway.');
-          flaggedForReview = true;
+          const tiedBaseSpirits = new Set();
+          for (const e of tiedEntries) {
+            for (const [category, pattern] of Object.entries(BASE_SPIRIT_KEYWORDS)) {
+              if (pattern.test(e.name)) tiedBaseSpirits.add(category);
+            }
+          }
+
+          if (tiedBaseSpirits.size >= 2) {
+            logForReview(slug, meta.url, 'subcategory-spirit-tie', payload.recipe.subcategory,
+              `Two or more different base spirits are tied for the largest amount (${tieDetail}) -- no ` +
+              'deterministic way to prefer one, needs a human call.');
+            flaggedForReview = true;
+          } else if (tiedBaseSpirits.size === 1 && !tiedBaseSpirits.has(payload.recipe.subcategory)) {
+            logForReview(slug, meta.url, 'subcategory-spirit-mismatch', payload.recipe.subcategory,
+              `The base spirit tied for the largest amount (${tieDetail}) doesn't match the chosen ` +
+              `subcategory "${payload.recipe.subcategory}".`);
+            flaggedForReview = true;
+          }
+          // Otherwise: 0 or 1 base spirit among the tied ingredients, and it
+          // matches what was chosen (or none of the tied ingredients are a
+          // base spirit at all, e.g. two modifiers/juices tied with each
+          // other) -- a modifier tied with the base spirit, or a tie
+          // unrelated to spirit classification. Not worth a human's time.
         }
       }
 
