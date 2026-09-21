@@ -1,0 +1,42 @@
+{
+  "url": "https://www.diffordsguide.com/cocktails/recipe/3536/roman-highball",
+  "slug": "roman-highball-cocktail-recipe_diffordsguide_c4bb93d6",
+  "title": "Roman Highball Cocktail Recipe",
+  "byline": "",
+  "fetchedAt": "2026-08-03T10:34:34.903Z",
+  "ldName": "Roman Highball",
+  "ldTime": "PT04M0S",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": [
+    "1",
+    "1 cocktail"
+  ],
+  "ldCuisine": "Cocktail",
+  "ldCategory": "Drink",
+  "ldKeywords": [
+    "Summer"
+  ],
+  "ldIngredientsRaw": [
+    "45 ml Amaro (e.g. Averna)",
+    "22.5 ml Ginger liqueur",
+    "15 ml Lime juice",
+    "50 ml Soda (club soda) water"
+  ],
+  "ldInstructionsRaw": [
+    "Select and pre-chill a HIGHBALL (MAX 10OZ/300ML) GLASS.",
+    "Prepare skewered crystallised ginger for garnish.",
+    "SHAKE first 3 ingredients with ice.",
+    "STRAIN into ice-filled glass.",
+    "TOP with soda.",
+    "Garnish with skewered crystallised ginger."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "219 calories"
+  },
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": null,
+  "siteCourseHint": "Drinks"
+}

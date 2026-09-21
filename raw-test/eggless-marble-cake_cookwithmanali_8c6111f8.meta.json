@@ -1,0 +1,70 @@
+{
+  "url": "https://www.cookwithmanali.com/eggless-marble-cake/",
+  "slug": "eggless-marble-cake_cookwithmanali_8c6111f8",
+  "title": "Eggless Marble Cake",
+  "byline": "Manali Singh",
+  "fetchedAt": "2026-08-02T04:53:38.383Z",
+  "ldName": "Eggless Marble Cake",
+  "ldTime": "PT60M",
+  "ldPrepTime": "PT20M",
+  "ldCookTime": "PT40M",
+  "ldYield": [
+    "8"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Dessert",
+  "ldKeywords": "eggless marble cake",
+  "ldIngredientsRaw": [
+    "1.5 cups all purpose flour (195 grams)",
+    "3 tablespoons cornstarch (33 grams)",
+    "1.25 teaspoon baking powder",
+    "1/2 teaspoon baking soda",
+    "pinch salt",
+    "1.25 cups milk (10 oz)",
+    "1 tablespoon + 1 teaspoon white vinegar (15 ml + 5 ml)",
+    "1/3 cup oil (80 ml)",
+    "3/4 cup superfine caster sugar (150 grams, or you may use granulated white sugar)",
+    "1.5 teaspoon vanilla extract (7.5 ml)",
+    "2 tablespoons cocoa powder (14 grams)"
+  ],
+  "ldInstructionsRaw": [
+    "Pre-heat oven to 350 F degrees. Spray a 8 x 4 inch load pan with non-stick spray and set aside.",
+    "In a large bowl, sift together flour, cornstarch, baking powder, baking soda and salt. Set aside.",
+    "In a bowl or measuring jar, mix in 1.25 cups (10 oz) milk with 1 tablespoon + 1 teaspoon (20 ml) white vinegar. Stir and set aside for 5 to 10 minutes until it curdles a little.",
+    "Using the paddle attachment of your stand mixer or using your hand mixer, beat together oil and sugar until creamy and combined. Then add in the vanilla and mix.",
+    "Start adding the flour mix. Add 1/2 of it and mix. Then add the prepared milk+vinegar mixture (all of it). Stir in the remaining 1/2 of the flour mix. Remember to not overmix. The batter is now ready.",
+    "Divide the batter into 2 equal parts. I had 2 parts of 355 gram each. To one part, add 2 tablespoons of cocoa powder and mix.",
+    "Pour half of the vanilla batter in to the bottom of the prepared loaf pan. Spread with a spatula. Then pour whole of the chocolate batter on top. Spread with a spatula. Top with the remaining half of the vanilla batter.",
+    "Now, take a knife and insert it into the batter. Make a swirl going up and down once across the batter (see pictures in the recipe above).",
+    "Bake at 350 F degrees for 40 minutes or until toothpick inserted in the center comes out clean. Let the cake cool completely on a wire rack and then cut into slices. Enjoy marble cake with coffee!"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "276 kcal",
+    "carbohydrateContent": "42 g",
+    "proteinContent": "4 g",
+    "fatContent": "10 g",
+    "saturatedFatContent": "1 g",
+    "cholesterolContent": "3 mg",
+    "sodiumContent": "88 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "21 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 1.5 cups all purpose flour, 195 grams",
+    "▢ 3 tablespoons cornstarch, 33 grams",
+    "▢ 1.25 teaspoon baking powder",
+    "▢ 1/2 teaspoon baking soda",
+    "▢ pinch salt",
+    "▢ 1.25 cups milk, 10 oz",
+    "▢ 1 tablespoon + 1 teaspoon white vinegar, 15 ml + 5 ml",
+    "▢ 1/3 cup oil, 80 ml",
+    "▢ 3/4 cup superfine caster sugar, 150 grams, or you may use granulated white sugar",
+    "▢ 1.5 teaspoon vanilla extract, 7.5 ml",
+    "▢ 2 tablespoons cocoa powder, 14 grams"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "IN",
+  "siteCourseHint": null
+}

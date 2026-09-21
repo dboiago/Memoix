@@ -6,7 +6,7 @@ node_modules/
 
 # Scrape Data & Ingestion Artifacts
 urls/
-raw*/
+raw/
 extracted*/
 needs-review*/
 cuisine-review*/
