@@ -1558,8 +1558,10 @@ async function main() {
       // valid VALID_COURSES value by construction, so the check below
       // can't fire a false invalid-course flag on it.
       const ldCourse = resolveCourseFromLd(meta.ldCategory);
+      let courseGrounded = false;
       if (ldCourse) {
         extracted.course = ldCourse;
+        courseGrounded = true;
       }
 
       // Deterministic name-literal override, same mechanism and trust tier
@@ -1579,6 +1581,7 @@ async function main() {
       for (const { pattern, course } of NAME_COURSE_OVERRIDES) {
         if (pattern.test(extracted.name)) {
           extracted.course = course;
+          courseGrounded = true;
         }
       }
 
@@ -1594,6 +1597,20 @@ async function main() {
           && !VALID_COURSES.includes(extracted.course.trim().toLowerCase())) {
         logForReview(slug, meta.url, 'invalid-course', extracted.course,
           `Model returned "${extracted.course}", which is not in VALID_COURSES.`);
+        flaggedForReview = true;
+      }
+
+      // Mirrors cuisine-unverified-no-grounding below, same reasoning, one
+      // field over: a valid-looking course with no ldCategory and no
+      // name-literal override behind it is a bare, unchecked model guess,
+      // exactly the gap cuisine had before this session's fix. Only checked
+      // when the value is already a valid VALID_COURSES member -- an
+      // invalid value is caught by the check just above instead.
+      if (extracted.course && extracted.course.trim() && !courseGrounded
+          && VALID_COURSES.includes(extracted.course.trim().toLowerCase())) {
+        logForReview(slug, meta.url, 'course-unverified-no-grounding', extracted.course,
+          'Course has no page-level (ldCategory) or name-literal signal to check it against -- ' +
+          'model-inferred with no grounding at all.');
         flaggedForReview = true;
       }
 
@@ -1685,15 +1702,6 @@ async function main() {
         : null;
 
       if (detSectioned && detSectioned.length > 0) {
-        for (const { text } of detSectioned) {
-          const matches = detectCompoundAmount(text);
-          if (matches) {
-            logForReview(slug, meta.url, 'compound-amount-detected', text,
-              `Multiple amount+unit patterns found (${matches.join(', ')}); model may drop one silently.`);
-            flaggedForReview = true;
-          }
-        }
-
         try {
           const structured = await structureIngredientsWithDart(detSectioned.map(l => l.text));
           extracted.ingredients = structured.map((item, i) => {
@@ -1718,6 +1726,33 @@ async function main() {
               notes,
               section: detSectioned[i].section,
             };
+          });
+
+          // compound-amount-detected used to fire on the raw line alone, before
+          // parsing -- purely "does this line have 2+ amount+unit patterns",
+          // with no check of what the parser actually did with them. Confirmed
+          // against a real batch that this over-flagged: both real hits
+          // ("2 tablespoons oil ... 30 ml", "8 oz chicken breast ... 1 cm
+          // thick") were already parsed correctly, with the second reading
+          // sitting exactly where it should -- in notes -- so the flag was
+          // pure noise on every confirmed case. Now runs after parsing and
+          // only flags when the secondary amount+unit text genuinely isn't
+          // anywhere in the parsed ingredient's name or notes -- a real sign
+          // something was dropped, not just a shape that looks risky.
+          detSectioned.forEach(({ text }, i) => {
+            const matches = detectCompoundAmount(text);
+            if (!matches) return;
+            const ingredient = extracted.ingredients[i];
+            const haystack = `${ingredient?.name ?? ''} ${ingredient?.notes ?? ''}`
+              .toLowerCase().replace(/\s+/g, ' ');
+            const missing = matches.slice(1).filter(m =>
+              !haystack.includes(m.toLowerCase().replace(/\s+/g, ' ')));
+            if (missing.length > 0) {
+              logForReview(slug, meta.url, 'compound-amount-detected', text,
+                `Multiple amount+unit patterns found (${matches.join(', ')}); "${missing.join(', ')}" ` +
+                `doesn't appear anywhere in the parsed ingredient's name or notes -- may have been dropped.`);
+              flaggedForReview = true;
+            }
           });
         } catch (e) {
           logError(slug, 'ingredient-structuring-failed',
