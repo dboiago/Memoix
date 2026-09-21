@@ -2028,6 +2028,25 @@ const _ingredientUnitAlternation =
       RegExp(r'^(\d+)-(\d+/\d+)\b'),
       (m) => '${m.group(1)} ${m.group(2)}',
     );
+
+    // Normalize a hyphen (with or without a following space) between a
+    // leading digit and a recognized unit word into the space-joined form
+    // ("3- inch" / "3-inch" -> "3 inch") so the standard amount regexes
+    // below -- which all require literal whitespace right after the digit
+    // -- can recognize it. Confirmed on hot-thai-kitchen.com's Homemade
+    // Glass Noodles: "3- inch section of an English cucumber, julienned"
+    // left amount unset entirely, with the whole phrase (including the
+    // "3-") stuck in the name. Unlike the ambiguous "18-oz" shape flagged
+    // by ingredient-name-embedded-amount in 03_extract.js, there's no
+    // separate leading amount competing for the same quantity here, so
+    // it's safe to normalize outright. Requires a unit word (not a digit)
+    // immediately after the hyphen, so a genuine range like "8-10 oz" is
+    // untouched, and the trailing \b keeps it from matching a unit word
+    // that's just a prefix of a longer word (e.g. "c" in "2-course").
+    remaining = remaining.replaceFirstMapped(
+      RegExp(r'^(\d+)-\s*(' + _ingredientUnitAlternation + r')\b', caseSensitive: false),
+      (m) => '${m.group(1)} ${m.group(2)} ',
+    );
     
     // Handle "Optional:" prefix at the start of ingredient line
     // e.g., "Optional: 1/4 tsp calcium chloride (aka Pickle Crisp granules)"
