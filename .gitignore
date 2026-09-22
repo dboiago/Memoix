@@ -18,7 +18,7 @@ logs/
 
 # Loose One-Off Testing Scripts
 comfytest.py
-cleanup*.js
+cleanup.js
 02_fetch-old.js
 
 # OS & Environment Metadata

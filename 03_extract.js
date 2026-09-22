@@ -1637,18 +1637,37 @@ async function main() {
       }
 
       const servesRaw = extracted.serves;
-      const { value: servesNormalized, ambiguousRange } = normalizeServes(servesRaw);
-      extracted.serves = servesNormalized ?? '';
-      if (ambiguousRange) {
-        logForReview(slug, meta.url, 'serves-range', servesRaw,
-          `Resolved to "${servesNormalized}" (higher end of the range) -- confirm this is the intended yield.`);
-        flaggedForReview = true;
-      } else if (servesRaw && servesRaw.trim() && !servesNormalized) {
-        // Model returned non-empty text with no extractable number at all
-        // (e.g. "a crowd") -- can't normalize this deterministically.
-        logForReview(slug, meta.url, 'serves-unparseable', servesRaw,
-          'Could not extract a whole number from the model\'s serves value.');
-        flaggedForReview = true;
+      // A "serves" value carrying a weight/volume unit (e.g. "120-150 gm")
+      // is answering "how big is one portion," not "how many portions" --
+      // a different question normalizeServes can't resolve, since a
+      // per-portion or total weight alone never implies a headcount without
+      // also knowing the recipe's total yield, which usually isn't stated.
+      // Confirmed on ranveerbrar.com's Sour Cream Potato Shells: "Serving
+      // Size: 120-150 gm" got treated as an ambiguous range and resolved to
+      // "150" as if 150 people were served. Nulled outright rather than
+      // guessed at or routed for review -- an honest "couldn't determine
+      // one" beats both a wrong number and asking a human to resolve
+      // something no amount of judgment can answer from this data alone.
+      const SERVES_WEIGHT_UNIT_PATTERN = /\b(?:g|gm|grams?|kgs?|kilograms?|oz|ounces?|lbs?|pounds?|ml|mls?|millilitres?|l|litres?|liters?)\b/i;
+      if (servesRaw && SERVES_WEIGHT_UNIT_PATTERN.test(servesRaw)) {
+        logForReview(slug, meta.url, 'serves-looks-like-weight', servesRaw,
+          'Serves value contains a weight/volume unit -- likely a per-portion or total weight, not a servings ' +
+          'count, and cannot be converted to one without a stated total yield. Nulled rather than guessed.');
+        extracted.serves = '';
+      } else {
+        const { value: servesNormalized, ambiguousRange } = normalizeServes(servesRaw);
+        extracted.serves = servesNormalized ?? '';
+        if (ambiguousRange) {
+          logForReview(slug, meta.url, 'serves-range', servesRaw,
+            `Resolved to "${servesNormalized}" (higher end of the range) -- confirm this is the intended yield.`);
+          flaggedForReview = true;
+        } else if (servesRaw && servesRaw.trim() && !servesNormalized) {
+          // Model returned non-empty text with no extractable number at all
+          // (e.g. "a crowd") -- can't normalize this deterministically.
+          logForReview(slug, meta.url, 'serves-unparseable', servesRaw,
+            'Could not extract a whole number from the model\'s serves value.');
+          flaggedForReview = true;
+        }
       }
 
       // Prefer a deterministic ingredient source over whatever the whole-page
@@ -1761,6 +1780,72 @@ async function main() {
           logError(slug, 'ingredient-structuring-failed',
             `Falling back to whole-page ingredients: ${e.message}`);
           // extracted.ingredients keeps whatever the whole-page call produced.
+          flaggedForReview = true;
+        }
+      } else if (extracted.ingredients.length > 0) {
+        // No deterministic ingredient source at all here -- no site-config
+        // match, no usable ldIngredientsRaw. Confirmed on a real 130-recipe
+        // run that this is the majority shape (65% of raw files had neither):
+        // these ingredients came straight from the model's own whole-page
+        // JSON output, which already asks for the same {name, amount, unit,
+        // notes, section} split the Dart parser produces, but isn't reliable
+        // at actually doing the split -- e.g. "1/4 cup" left whole in amount
+        // with unit never set, "2 Tablespoons Lemon Juice" landing in name
+        // while "30 ml" took amount/unit instead. Reconstructing one line per
+        // ingredient from whatever the model returned and re-running it
+        // through the same deterministic parser the branch above uses gives
+        // every recipe the same guarantee, not just the ones lucky enough to
+        // have a site config or clean JSON-LD.
+        const modelLines = extracted.ingredients.map(item => {
+          const amount = (item?.amount ?? '').trim();
+          const unit   = (item?.unit   ?? '').trim();
+          const name   = (item?.name   ?? '').trim();
+          const notes  = (item?.notes  ?? '').trim();
+          let line = [amount, unit, name].filter(Boolean).join(' ').trim();
+          if (notes) line = line ? `${line}, ${notes}` : notes;
+          return { text: line, section: item?.section || null };
+        });
+
+        try {
+          const structured = await structureIngredientsWithDart(modelLines.map(l => l.text));
+          const originalIngredients = extracted.ingredients;
+          extracted.ingredients = structured.map((item, i) => {
+            // Nothing to reparse (blank line) or the parser itself errored --
+            // keep whatever the model originally said rather than discard it.
+            if (item.error || !modelLines[i].text) return originalIngredients[i];
+            const notes = [item.preparation, item.alternative ? `alt: ${item.alternative}` : null]
+              .filter(Boolean).join('; ');
+            return {
+              name:    item.name   ?? '',
+              amount:  item.amount ?? '',
+              unit:    item.unit   ?? '',
+              notes,
+              section: modelLines[i].section,
+            };
+          });
+
+          // Same self-consistency check as the branch above, applied to the
+          // line reconstructed from the model's own fields rather than a raw
+          // source line.
+          modelLines.forEach(({ text }, i) => {
+            if (!text) return;
+            const matches = detectCompoundAmount(text);
+            if (!matches) return;
+            const ingredient = extracted.ingredients[i];
+            const haystack = `${ingredient?.name ?? ''} ${ingredient?.notes ?? ''}`
+              .toLowerCase().replace(/\s+/g, ' ');
+            const missing = matches.slice(1).filter(m =>
+              !haystack.includes(m.toLowerCase().replace(/\s+/g, ' ')));
+            if (missing.length > 0) {
+              logForReview(slug, meta.url, 'compound-amount-detected', text,
+                `Multiple amount+unit patterns found (${matches.join(', ')}); "${missing.join(', ')}" ` +
+                `doesn't appear anywhere in the parsed ingredient's name or notes -- may have been dropped.`);
+              flaggedForReview = true;
+            }
+          });
+        } catch (e) {
+          logError(slug, 'ingredient-structuring-failed',
+            `Falling back to model's own ingredient split: ${e.message}`);
           flaggedForReview = true;
         }
       }

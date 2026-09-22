@@ -41,6 +41,67 @@ const USER_AGENT       = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/
 const IGNORE_PATTERN   = /\.(png|jpg|jpeg|gif|webp|svg|css|js|md|json|pdf|zip|gz)$|xmlrpc\.php|javascript:void\(0\)|#$/i;
 const INDEX_PATTERN    = /\/(recipe-archives|category|blog|tag|recipes|pages)\/?$/i;
 
+// Consolidated from cleanup.js/cleanup2.js/cleanup3.js -- those existed as
+// separate manual passes over urls/queue.txt because these rules were never
+// folded into the fetch step itself, so a stale queue entry (or a future
+// discovery run missing one of these) still cost a real fetch. Applied here
+// instead, at the point that actually spends a network request, rather than
+// needing a separate cleanup pass remembered and re-run before every batch.
+const NON_ENGLISH_URL_PATTERNS = [
+  /meilleurduchef\.com\/(fr|it|es|de)\//i,
+  /meilleurduchef\.com\/mdc\/sitemap_(fr|it)\.xml/i,
+  /lyres\.com\/(it-eu|de-eu|fr-eu|nl-eu|pl-eu|es-eu)\//i,
+  /seedlipdrinks\.com\/fr-ca\//i,
+  /\/fr\//i, /\/it\//i, /\/de\//i, /\/es\//i,
+];
+
+// Whole-domain exclusions: monolingual non-English sites with no path
+// segment to filter on -- same reasoning as NON_ENGLISH_DOMAINS in
+// 01_discover.js (confirmed there against academiedugout.fr).
+const NON_ENGLISH_DOMAINS = ['directoalpaladar.com'];
+
+const GENERIC_UGC_PATTERNS = [
+  /\/forum\//i, /\/forums\//i, /\/community\//i,
+  /\/user-generated\//i, /\/user-recipe\//i, /\/user\//i,
+];
+
+// Index/listing pages, not individual recipes. chinasichuanfood.com's
+// /collections/ pages are a confirmed exception -- they're this site's real
+// recipe-index entry point, not a generic storefront listing the way
+// /collections/ usually signals elsewhere.
+const GENERIC_INDEX_PATTERNS = [/\/category\//i, /\/tag\//i, /\/curso-de-cocina\//i];
+
+function isAllowedUrl(url) {
+  let hostname;
+  try {
+    hostname = new URL(url).hostname.replace(/^www\./, '');
+  } catch {
+    return false;
+  }
+
+  // Keeps only the official recipe path -- doesn't distinguish community
+  // vs. official (see the content-based check in main() for that), just
+  // excludes encyclopedia/glossary/profile pages.
+  if (hostname.includes('diffordsguide.com')) return url.includes('/cocktails/recipe/');
+  if (hostname.includes('meilleurduchef.com')) return url.includes('/en/');
+
+  if (NON_ENGLISH_DOMAINS.some(d => hostname.includes(d))) return false;
+  if (NON_ENGLISH_URL_PATTERNS.some(p => p.test(url))) return false;
+  if (GENERIC_UGC_PATTERNS.some(p => p.test(url))) return false;
+
+  if (hostname.includes('chinasichuanfood.com') && url.includes('/collections/')) return true;
+  if (GENERIC_INDEX_PATTERNS.some(p => p.test(url)) || /\/collections\//i.test(url)) return false;
+
+  return true;
+}
+
+// Community and official recipes on diffordsguide.com share the exact same
+// URL path (/cocktails/recipe/NNNN/slug), so no URL rule -- here or in
+// 01_discover.js/cleanup.js -- can ever tell them apart; confirmed against a
+// real batch that this template text is the only reliable signal, present
+// on every community submission and absent on official recipes.
+const COMMUNITY_RECIPE_MARKER = /Community recipes are not tested or verified by Difford/i;
+
 // Mute JSDOM internal CSS parsing warnings
 const virtualConsole = new VirtualConsole();
 virtualConsole.on('error', () => {});
@@ -291,8 +352,8 @@ async function main() {
       continue;
     }
 
-    if (!isRecipeCandidate(url)) {
-      logError(url, 'filtered-asset-or-index', 'Skipped static asset, homepage, or category index page');
+    if (!isRecipeCandidate(url) || !isAllowedUrl(url)) {
+      logError(url, 'filtered-asset-or-index', 'Skipped static asset, homepage, category index, non-English, or UGC page');
       failed++;
       continue;
     }
@@ -311,6 +372,12 @@ async function main() {
 
       if (!extracted) {
         logError(url, 'readability-failed', 'No usable content: Readability found no article, and no JSON-LD or site-config data either');
+        failed++;
+        continue;
+      }
+
+      if (new URL(url).hostname.includes('diffordsguide.com') && COMMUNITY_RECIPE_MARKER.test(extracted.markdown)) {
+        logError(url, 'community-recipe-excluded', 'Diffords Guide community-submitted recipe, not official -- excluded by design');
         failed++;
         continue;
       }
