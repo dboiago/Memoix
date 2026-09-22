@@ -1107,7 +1107,21 @@ async function structureIngredientsWithDart(lines) {
   });
 }
 
-async function extractWithOllama(markdown, meta) {
+// skip.canSkipIngredients/canSkipDirections: set when a deterministic
+// source (htmlIngredientLines/ldIngredientsRaw/ldInstructionsRaw) already
+// passed its own content-quality check before this call runs, so whatever
+// the model says for that field will be overridden anyway further down.
+// Confirmed necessary on meilleurduchef.com's Christmas Yule Log: the whole
+// page call was still asked to generate a full ~30-item ingredient list and
+// 124+ directions steps even though htmlIngredientLines/ldInstructionsRaw
+// already had usable data for both, and that generation alone was what blew
+// the 420s timeout on two separate real runs -- not a genuine need for the
+// model to do that work. Telling it to skip fields already covered
+// elsewhere shrinks the response dramatically for exactly the recipes most
+// likely to be large/slow, without changing the response schema or any
+// downstream code that consumes it.
+async function extractWithOllama(markdown, meta, skip = {}) {
+  const { canSkipIngredients = false, canSkipDirections = false } = skip;
   // Image markdown lines carry no extraction signal but consume significant
   // character budget (long CDN URLs), and on narrative-heavy posts the actual
   // recipe card sits after most of the images, past the truncation point.
@@ -1249,18 +1263,28 @@ async function extractWithOllama(markdown, meta) {
     'region is "Sichuan". The cuisine field is always the national category; the region field holds the ' +
     'specific place name alone, with no descriptive words attached.';
 
-  const ldBlock = ldHints ? `\nStructured page data (use these values directly where applicable):\n${ldHints}\n` : '';
+  const skipOverrides = [];
+  if (canSkipIngredients) {
+    skipOverrides.push('This page\'s ingredients will be extracted separately by a deterministic process -- ' +
+      'for the "ingredients" field, always return an empty array regardless of what the page contains. Do not ' +
+      'spend effort analyzing the ingredient list.');
+  }
+  if (canSkipDirections) {
+    skipOverrides.push('This page\'s directions will be extracted separately by a deterministic process -- ' +
+      'for the "directions" field, always return an empty array regardless of what the page contains. Do not ' +
+      'spend effort analyzing the method steps.');
+  }
+  const skipBlock = skipOverrides.length > 0
+    ? `\n\nIMPORTANT overrides for this page:\n${skipOverrides.join('\n')}`
+    : '';
 
-  const userPrompt =
-    `Page title: ${meta.title || ''}\n` +
-    `Source URL: ${meta.url}\n` +
     ldBlock +
     `\n--- BEGIN CONTENT ---\n${truncated}\n--- END CONTENT ---`;
 
   const body = {
     model:    MODEL,
     messages: [
-      { role: 'system', content: systemPrompt },
+      { role: 'system', content: systemPrompt + skipBlock },
       { role: 'user',   content: userPrompt },
     ],
     format:   RECIPE_SCHEMA,
@@ -1276,7 +1300,12 @@ async function extractWithOllama(markdown, meta) {
       temperature: TEMPERATURE,
       // Generous cap for a full recipe JSON object, still bounds a runaway
       // generation loop rather than letting it run the full timeout duration.
-      num_predict: 3000,
+      // Reduced when ingredients/directions are skipped above -- there's far
+      // less left to generate, so a smaller budget is both sufficient and
+      // finishes faster, which is the actual point of skipping them.
+      num_predict: canSkipIngredients && canSkipDirections ? 800
+        : (canSkipIngredients || canSkipDirections) ? 2000
+        : 3000,
     },
   };
 
@@ -1316,7 +1345,10 @@ async function extractWithOllama(markdown, meta) {
   // writing for every recipe -- at 100k-recipe scale, an unconditional dump
   // here was writing 100k+ small files for runs that had nothing wrong.
   const hasBlankNamedIngredient = rawIngredients.some(i => !i || typeof i !== 'object' || !i.name);
-  const shouldDumpRaw = rawIngredients.length === 0 || hasBlankNamedIngredient;
+  // An empty array is expected, not a failure, when ingredients were
+  // deliberately skipped above -- don't dump a debug file for the correct
+  // behavior on every recipe that has a deterministic ingredient source.
+  const shouldDumpRaw = !canSkipIngredients && (rawIngredients.length === 0 || hasBlankNamedIngredient);
   if (shouldDumpRaw) {
     mkdirSync('logs/raw-responses', { recursive: true });
     const debugSlug = meta.slug;
@@ -1524,8 +1556,22 @@ async function main() {
       flaggedForReview = true;
     }
 
+    // Computed here, before the model call, purely to decide whether it's
+    // worth asking the model to generate ingredients/directions at all --
+    // recomputed properly (and gated more strictly for htmlIngredientLines)
+    // further down where the actual deterministic override happens. This
+    // early pass only needs to be right often enough to save real time; the
+    // later one is the authoritative source of what actually ships.
+    const canSkipIngredients = Boolean(
+      (meta.htmlIngredientLines && meta.htmlIngredientLines.length > 0
+        && looksLikeRealIngredientLines(meta.htmlIngredientLines))
+      || (meta.ldIngredientsRaw && meta.ldIngredientsRaw.length >= 2
+        && looksLikeRealIngredientLines(meta.ldIngredientsRaw))
+    );
+    const canSkipDirections = looksLikeRealInstructionLines(meta.ldInstructionsRaw);
+
     try {
-      const extracted = await extractWithOllama(markdown, meta);
+      const extracted = await extractWithOllama(markdown, meta, { canSkipIngredients, canSkipDirections });
 
       if (!extracted.name || extracted.name.trim() === '') {
         if (meta.title && meta.title.trim()) {
@@ -1701,21 +1747,41 @@ async function main() {
       // the content check answers the different question "does this actually
       // read like ingredient lines" -- both are needed, since three garbage
       // entries and three real ones look identical to a bare count check.
+      // htmlIngredientLines was previously trusted unconditionally (no
+      // content-quality gate the way ldIngredientsRaw gets below), on the
+      // theory that a per-site config match is inherently more trustworthy
+      // than auto-generated JSON-LD. Confirmed wrong on meilleurduchef.com's
+      // Christmas Yule Log: the matched config actually captured an
+      // unrelated site navigation/filter widget ("Acidifiers", "Agar agar",
+      // "Cake fillings"...), not the real ingredient list -- a site config
+      // can match the wrong DOM element just as easily as JSON-LD can be
+      // garbage. Checked after expandSectionedLines so a real recipe's own
+      // "[Section]" header lines (stripped out by that function, never
+      // reaching here as their own entries) can't cause a false rejection.
+      const htmlIngredientLinesExpanded = meta.htmlIngredientLines && meta.htmlIngredientLines.length > 0
+        ? expandSectionedLines(meta.htmlIngredientLines)
+        : null;
+      const htmlIngredientLinesUsable = Boolean(htmlIngredientLinesExpanded && htmlIngredientLinesExpanded.length > 0
+        && looksLikeRealIngredientLines(htmlIngredientLinesExpanded.map(l => l.text)));
+      if (meta.htmlIngredientLines && meta.htmlIngredientLines.length > 0 && !htmlIngredientLinesUsable) {
+        console.log(`  (htmlIngredientLines matched a site config but doesn't look like real ingredient lines (no amounts, mostly single words) -- likely matched the wrong element on the page, falling back)`);
+      }
+
       const LD_INGREDIENTS_MIN_PLAUSIBLE = 2;
       const ldIngredientsCountOk = meta.ldIngredientsRaw
         && meta.ldIngredientsRaw.length >= LD_INGREDIENTS_MIN_PLAUSIBLE;
       const ldIngredientsUsable = ldIngredientsCountOk
         && looksLikeRealIngredientLines(meta.ldIngredientsRaw);
       if (meta.ldIngredientsRaw && meta.ldIngredientsRaw.length > 0 && !ldIngredientsUsable
-          && !(meta.htmlIngredientLines && meta.htmlIngredientLines.length > 0)) {
+          && !htmlIngredientLinesUsable) {
         if (!ldIngredientsCountOk) {
           console.log(`  (ldIngredientsRaw has only ${meta.ldIngredientsRaw.length} entr${meta.ldIngredientsRaw.length === 1 ? 'y' : 'ies'} -- too few to trust, falling back to whole-page extraction)`);
         } else {
           console.log(`  (ldIngredientsRaw has ${meta.ldIngredientsRaw.length} entries but none look like real ingredient lines (no amounts, all single words) -- falling back to whole-page extraction)`);
         }
       }
-      const detSectionedRaw = meta.htmlIngredientLines && meta.htmlIngredientLines.length > 0
-        ? expandSectionedLines(meta.htmlIngredientLines)
+      const detSectionedRaw = htmlIngredientLinesUsable
+        ? htmlIngredientLinesExpanded
         : (ldIngredientsUsable
             ? meta.ldIngredientsRaw.map(text => ({ section: null, text }))
             : null);
