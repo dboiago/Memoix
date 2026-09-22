@@ -1600,17 +1600,20 @@ async function main() {
         flaggedForReview = true;
       }
 
-      // Mirrors cuisine-unverified-no-grounding below, same reasoning, one
-      // field over: a valid-looking course with no ldCategory and no
-      // name-literal override behind it is a bare, unchecked model guess,
-      // exactly the gap cuisine had before this session's fix. Only checked
-      // when the value is already a valid VALID_COURSES member -- an
-      // invalid value is caught by the check just above instead.
-      if (extracted.course && extracted.course.trim() && !courseGrounded
+      // Also treats meta.siteCourseHint as sufficient grounding, same as
+      // cuisine treats meta.siteRegionHint -- a soft site-level signal, not
+      // a per-recipe one, but enough to say "there was something to check
+      // this against," matching cuisine's own precedent exactly. Confirmed
+      // necessary on a real 130-recipe run: without this, course-unverified
+      // fired on the large majority of recipes (most sites have no
+      // ldCategory at all, and the "soups" name override is narrow by
+      // design), flooding needs-review with volume the flag was never meant
+      // to produce.
+      if (extracted.course && extracted.course.trim() && !courseGrounded && !meta.siteCourseHint
           && VALID_COURSES.includes(extracted.course.trim().toLowerCase())) {
         logForReview(slug, meta.url, 'course-unverified-no-grounding', extracted.course,
-          'Course has no page-level (ldCategory) or name-literal signal to check it against -- ' +
-          'model-inferred with no grounding at all.');
+          'Course has no page-level (ldCategory), name-literal, or site-level (siteCourseHint) signal to check it ' +
+          'against -- model-inferred with no grounding at all.');
         flaggedForReview = true;
       }
 
