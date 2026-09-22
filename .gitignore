@@ -10,10 +10,11 @@ raw/
 extracted/
 needs-review/
 cuisine-review/
+unrecoverable/
 
 # Logs & Review Summaries
 logs/
-*.jsonl
+.jsonl
 *.log
 
 # Loose One-Off Testing Scripts
