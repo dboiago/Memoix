@@ -1,0 +1,202 @@
+{
+  "recipe": {
+    "name": "Celebration tah chin with chicken and spinach",
+    "time": "2 hr 15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a large saute pan for which you have a lid, heat two tablespoons of oil on a medium-high flame. Once hot, fry the onions, stirring from time to time, until softened and lightly browned – about 10 minutes. Add the garlic, ginger, cumin, cardamom and a teaspoon and a half of cinnamon, and cook for two minutes more, until fragrant.",
+      "Add the chicken, two teaspoons of salt and a generous grind of pepper, and cook for about five minutes, to sear lightly, then pour in the stock, bring to a boil and turn the heat to medium-low. Cover and leave to cook for about 30 minutes, until the chicken is cooked through.",
+      "Lift out the chicken and set aside. Stir 20g barberries into the pot and cook for 15-20 minutes on a medium-high heat, or until the sauce reduces to a thick gravy. Meanwhile, shred the chicken into large chunks. Stir the chicken meat back into the sauce, then stir in the spinach to wilt, followed by the herbs. Turn off the heat and leave to cool.",
+      "Heat the oven to 200C (180C fan). Put the well-drained rice in a pot filled with boiling water and simmer for five minutes, until just cooked. Drain, run under the cold tap to remove any excess starch, then leave to drain for at least 15 minutes.",
+      "In a large bowl, combine the egg, egg yolks, yoghurt, saffron and its liquid, two tablespoons of olive oil, the remaining half-teaspoon of cinnamon and a teaspoon and a half of salt, then gently stir in the rice until well coated.",
+      "Heat the remaining two tablespoons of oil in a large, 22cm nonstick saute pan and swirl it around the base and sides. Press two-thirds of the rice mixture evenly over the bottom of the pan and about 4cm up the sides. Fill with the chicken mixture and press down firmly, so the chicken is surrounded by rice. Top with the remaining rice to encase the chicken, again pressing down firmly. Smooth the top with the back of a spoon, then scatter with 25g of the butter cubes. Wrap the pan tightly in foil and bake for 45 minutes. Remove the foil and bake for 35 minutes more, or until the edges go golden, then leave to cool for 10 minutes.",
+      "Put a large, round serving plate on top of the pan. Holding both the pan and the plate tightly, quickly and carefully flip the whole thing over to release the tah chin.",
+      "Melt the remaining butter in a small frying pan on a medium-high heat, add the remaining barberries and cook for 90 seconds, until plump. Pour over the rice, followed by the pistachios and parsley leaves, and serve warm."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": null,
+        "notes": "peeled and thinly sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "peeled and crushed",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Piece Fresh Ginger",
+        "unit": "cm",
+        "notes": "peeled and grated",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cumin",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom Pods",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "And Skinless Chicken Thighs",
+        "unit": "kg",
+        "notes": "boneless",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Barberries (if You Can’t Get Them, Use Chopped Dried Cranberries)",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Spinach",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley Leaves",
+        "unit": "g",
+        "notes": "roughly chopped, plus extra leaves to garnish",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "g",
+        "notes": "roughly chopped",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basmati Rice",
+        "unit": "g",
+        "notes": "washed and soaked in plenty of cold water for 2-8 hours",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Egg",
+        "unit": null,
+        "notes": "plus 2 yolks",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Greek Yoghurt",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Saffron Threads",
+        "unit": "tsp",
+        "notes": "lightly crushed and soaked in 50ml hot water for 45 minutes",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "cut into roughly 1½cm cubes",
+        "amount": "55",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pistachios",
+        "unit": "g",
+        "notes": "roughly chopped",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "344f29165a6925ed83d1c5714d66cd13683207497804bc512f2813dd1a2105a3",
+    "lineage_hash": "6e27dd8adea2f6d2e30430918ccca9fb1c338c42c798c2aee9190e4a97c9563d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ottolenghi.co.uk/pages/recipes/celebration-tah-chin-chicken-spinach",
+    "fetchedAt": "2026-08-02T08:17:44.424Z"
+  },
+  "rawSource": "https://ottolenghi.co.uk/pages/recipes/celebration-tah-chin-chicken-spinach",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

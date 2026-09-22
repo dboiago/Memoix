@@ -1,0 +1,360 @@
+{
+  "recipe": {
+    "name": "Blackened Redfish",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a mixing bowl, whisk to combine olive oil and vinegar. Season with salt. Set aside.",
+      "Prepare and heat a grill. Heat oven to 500°F. Grill leek tops and scallions until thoroughly charred. Transfer to a sheet tray. Place in the oven and roast until burnt through. Let cool. Add burnt leeks and scallions to a Vitamix blender, then grind until smooth. Sift through a tamis into a bowl or container. Mix to combine with all remaining ingredients. Reserve.",
+      "In a Vitamix blender, combine scallions and grapeseed oil. Blend until well combined. Transfer to a saucepan over medium heat. Whisk constantly until the mixture reaches 215°F. Pour into a mixing bowl set over an ice bath, then continue whisking until cool. Strain through a coffee filter. Reserve.",
+      "In a food processor, blend to combine egg yolk, lemon, and mustard. While blending, slowly stream in 190 grams Scallion Oil until emulsified. Season with salt. Transfer to a squeeze bottle. Refrigerate until needed.",
+      "In a pot, combine vinegar, sugar, salt, and ½ cup water. Bring to a simmer. Place parsnips in a nonreactive container. Pour hot brine over parsnips. Let cool completely. Refrigerate.",
+      "In a medium-sized pot, cover crab bodies and kombu with 3 quarts water. Bring to a simmer, then reduce heat to low. Let steep 30 minutes. Remove from heat and add bonito. Let sit 30 minutes. Strain through a chinois into a nonreactive container. Season with salt. Refrigerate until needed.",
+      "Heat oven to 350°F. Season parsnips with salt, then individually wrap them with foil. Roast 30 minutes or until al dente. Let cool. Peel parsnips, then roughly dice. Set aside.",
+      "In a sauce pot, combine cream, lemon, and 200 grams Crab Dashi. Bring to a simmer. Whisk in butter, a little at a time, until emulsified. Whisk in xanthan gum. Transfer to Vitamix blender, then blend until smooth. Season with salt. Keep warm.",
+      "In a pot over medium heat, bring 100 grams Crab Dashi to a simmer. Add butter and 500 grams Roasted Parsnips. Crush parsnips against the side of the pot until evenly crumbled. Fold in parsley and crab meat until fully incorporated. Season with salt. Keep warm.",
+      "Prepare and heat a smoker to 300°F. In a pot, cover garlic with water. Bring to a boil. Drain out water, then refill with fresh, cold water. Repeat twice more. After draining the last time, cover garlic with milk. Place in the smoker, uncovered. Smoke until cooked through. Strain garlic through a chinois, then transfer solids to a Vitamix blender. Purée until smooth, adding enough milk to reach desired consistency. Keep warm.",
+      "In a deep fryer, heat oil to 325°F. In a large bowl, cover parsnips with hot water. Allow to soak 5 minutes. Drain parsnips, then pat dry. Place in the deep fryer and fry until crispy. Transfer fried parsnips to a wire rack to drain. Season with salt. Set aside.",
+      "In a mixing bowl, combine chives and chicories. Season with White Balsamic Vinaigrette and salt. Toss until evenly coated. Set aside.",
+      "Heat the water bath of an immersion circulator to 140°F. Season redfish with salt. In a vacuum bag, add clarified butter and seasoned redfish. Place vacuum bag in immersion circulator so that air can escape through the opening, and clip the top of the bag to the side of the bath. Cook 10 to 12 minutes depending on the thickness of the fillet. Remove redfish from bag and place on a roasting rack to drain. Dust with Blackening Spice so that the top of the fillet is completely black. Using a torch, evenly char the Blackening Spice until it glows like embers.",
+      "Place a spoonful of Crab-Parsnip Écrasé on the right side of a serving plate, then top with Blackened Redfish. Squeeze Scallion Mayonnaise over the Blackened Redfish in a zig-zag pattern. Randomly place 3 to 4 pieces Pickled Parsnips over the Scallion Mayonnaise. Arrange some Chicory Salad along the top of the Blackened Redfish, then top the salad with a few pieces Fried Parsnip. In the lower left corner of the plate, place a spoonful of Smoked Garlic Purée and dust with Blackening Spice. In the center of the plate, spoon Crab Dashi Butter Sauce and break with Scallion Oil."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Olive Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "White Balsamic Vinaigrette",
+        "isOptional": false
+      },
+      {
+        "name": "Vinegar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "White Balsamic Vinaigrette",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "White Balsamic Vinaigrette",
+        "isOptional": false
+      },
+      {
+        "name": "Leek Tops",
+        "unit": "pc",
+        "notes": null,
+        "amount": "1",
+        "section": "Blackening Spice",
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": "bunch",
+        "notes": null,
+        "amount": "1",
+        "section": "Blackening Spice",
+        "isOptional": false
+      },
+      {
+        "name": "Grapeseed Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Scallion Oil",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "pc",
+        "notes": null,
+        "amount": "1",
+        "section": "Scallion Mayonnaise",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": "pc",
+        "notes": null,
+        "amount": "1",
+        "section": "Scallion Mayonnaise",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Scallion Mayonnaise",
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": "bunch",
+        "notes": null,
+        "amount": "1",
+        "section": "Scallion Oil",
+        "isOptional": false
+      },
+      {
+        "name": "Vinegar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Pickled Parsnips",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Pickled Parsnips",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Pickled Parsnips",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Pickled Parsnips",
+        "isOptional": false
+      },
+      {
+        "name": "Crab Bodies",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": "Crab Dashi",
+        "isOptional": false
+      },
+      {
+        "name": "Kombu",
+        "unit": "pc",
+        "notes": null,
+        "amount": "1",
+        "section": "Crab Dashi",
+        "isOptional": false
+      },
+      {
+        "name": "Bonito",
+        "unit": "pc",
+        "notes": null,
+        "amount": "1",
+        "section": "Crab Dashi",
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Crab Dashi Butter Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": "pc",
+        "notes": null,
+        "amount": "1",
+        "section": "Crab Dashi Butter Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Crab Dashi",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": "Crab Dashi Butter Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Crab Dashi Butter Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Xanthan Gum",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Crab Dashi Butter Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Crab Dashi",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": "Crab-Parsnip Écrasé",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Crab-Parsnip Écrasé",
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Parsnips",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": "Crab-Parsnip Écrasé",
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Crab-Parsnip Écrasé",
+        "isOptional": false
+      },
+      {
+        "name": "Crab Meat",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": "Crab-Parsnip Écrasé",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "head",
+        "notes": null,
+        "amount": "1",
+        "section": "Smoked Garlic Purée",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Smoked Garlic Purée",
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Smoked Garlic Purée",
+        "isOptional": false
+      },
+      {
+        "name": "Parsnips",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": "Fried Parsnip",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Fried Parsnip",
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Chicory Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Chicories",
+        "unit": "head",
+        "notes": null,
+        "amount": "1",
+        "section": "Chicory Salad",
+        "isOptional": false
+      },
+      {
+        "name": "White Balsamic Vinaigrette",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Chicory Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Chicory Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Clarified Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Blackened Redfish",
+        "isOptional": false
+      },
+      {
+        "name": "Redfish",
+        "unit": "fillet",
+        "notes": null,
+        "amount": "1",
+        "section": "Blackened Redfish",
+        "isOptional": false
+      },
+      {
+        "name": "Blackening Spice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Blackened Redfish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7248bb6c97b93794edeef1da77f14d83c8123f41e62bb8197540f5e767b23a72",
+    "lineage_hash": "b55934e90dad69522bf5cec5f0ce2c636417dc052aaae3c74c3e79c99c40640e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.starchefs.com/recipes/blackened-redfish",
+    "fetchedAt": "2026-08-04T00:43:04.990Z"
+  },
+  "rawSource": "https://www.starchefs.com/recipes/blackened-redfish",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

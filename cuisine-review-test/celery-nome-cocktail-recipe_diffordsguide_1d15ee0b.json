@@ -1,0 +1,76 @@
+{
+  "recipe": {
+    "name": "Celery Nome",
+    "time": "3 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "136",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Select and pre-chill a NICK &AMP; NORA GLASS.",
+      "Prepare garnish of celery sprig or celery stick.",
+      "STIR all ingredients with ice.",
+      "FINE STRAIN into chilled glass.",
+      "Garnish with a celery sprig or celery stalk."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Celery Gin",
+        "unit": "ml",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fino Sherry",
+        "unit": "ml",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Saccharum",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Bitters",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b9f7c0f13daabd1985cecd5d6d078c014285b97a65cf11972f93f51708167bd3",
+    "lineage_hash": "1048cefff9ca067a1068b628f8d9117bb6388564921022d9e2502378e619e86c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/5266/celery-nome",
+    "fetchedAt": "2026-08-03T15:16:35.533Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/5266/celery-nome",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

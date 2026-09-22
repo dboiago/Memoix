@@ -1,0 +1,127 @@
+{
+  "recipe": {
+    "name": "Celeriac and lentils with hazelnuts & mint",
+    "time": "1 hr 5 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 140°C. Scatter the hazelnuts on a small baking sheet and roast in the oven for 15 minutes. Let them cool down, then chop roughly.",
+      "Combine the lentils, water, bay leaves and thyme in a small saucepan. Bring to the boil, then simmer for 15–20 minutes, or until al dente. Drain in a sieve. Meanwhile, in a separate saucepan, cook the celeriac in plenty of boiling salted water for 8–12 minutes, or until just tender. Drain.",
+      "In a large bowl mix the hot lentils (if they have cooled down they won’t soak up all the flavours) with the olive oil, 2 tablespoons of the hazelnut oil, the vinegar, some black pepper and plenty of salt. Add the celeriac and stir well. Taste and adjust the seasoning.",
+      "To serve straight away, stir in half the mint and half the hazelnuts. Pile onto a serving dish or in a bowl and drizzle the remaining hazelnut oil on top. Garnish with the rest of the mint and hazelnuts.",
+      "To serve cold, wait for the lentils and celeriac to cool down before finally adjusting the seasoning and possibly adding some more vinegar, if you like. Add hazelnut oil, mint and nuts in the same way as when serving hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Hazelnuts (skin On)",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Puy Lentils",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "700",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme Sprigs",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celeriac (650g)",
+        "unit": "small",
+        "notes": "peeled and cut into 1cm chips",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hazelnut Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Good-quality Red Wine Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "60caff1d8318e1ccf0c1f02718b7ba1d3d5bbdc66757b6b7e55c9cecf932f279",
+    "lineage_hash": "9c19d76ec0f77ac17afc0afe22ab6219061825e5a37e01b1ef2e57b6d22332bd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ottolenghi.co.uk/pages/recipes/celeriac-lentils-hazelnuts-mint",
+    "fetchedAt": "2026-08-02T08:18:58.708Z"
+  },
+  "rawSource": "https://ottolenghi.co.uk/pages/recipes/celeriac-lentils-hazelnuts-mint",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

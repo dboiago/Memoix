@@ -1,0 +1,101 @@
+{
+  "recipe": {
+    "name": "Zwieback Crackers",
+    "time": "2 hr 15 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "DE",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all ingredients in a large bowl and form a dough.",
+      "Knead for 10 minutes on your work surface to produce a smooth and elastic dough.",
+      "Place the dough back into the bowl, cover with a lid and leave to rest at room temperature for about 60 minutes until significantly increased in size.",
+      "Punch down the dough and knead for a few seconds.",
+      "Shape into a tight log (this will ensure a fine crumb structure) and place in a baking tin (no need to oil or butter the form) – I used a large form at 12.2 x 8.6 x 31 cm.",
+      "Cover the tin with a clean kitchen towel or wrap in a polythene bag and rest for another hour in the tin.",
+      "Bake in a preheated oven at 180°C for approximately 60 minutes.",
+      "Take the loaf out of the tin and cool on a wire rack.",
+      "Rest for 24 hours.",
+      "Cut the loaf into 7mm slices.",
+      "Lay them out on a baking tray and bake at 100°C for approximately one hour until golden brown."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "265",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dried Yeast",
+        "unit": "g",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "99057cd32d6184df9ad8185d405de84f5f7a242777ccfb9492f2209f6dfa2bd9",
+    "lineage_hash": "087a2c3b8681549e2784b12bead5498a34cd8ec8d9cf591faf9c5339461076f9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.thebreadshebakes.com/2016/11/zwieback-crackers-recipe/",
+    "fetchedAt": "2026-08-01T19:38:06.921Z"
+  },
+  "rawSource": "https://www.thebreadshebakes.com/2016/11/zwieback-crackers-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

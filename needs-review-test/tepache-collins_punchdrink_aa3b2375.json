@@ -1,0 +1,81 @@
+{
+  "recipe": {
+    "name": "Tepache Collins",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": "Collins",
+    "garnish": [
+      "Mint Sprig",
+      "Thai Basil Leaf"
+    ],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add rum, lemon juice, honey syrup and Thai basil to a Collins glass.",
+      "Muddle basil lightly to release oils.",
+      "Add tepache and top with crushed ice.",
+      "Garnish with a straw, mint sprig and Thai basil leaf."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rum",
+        "unit": "oz",
+        "notes": "white or golden",
+        "amount": "1 ½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tepache",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1 ½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey Syrup",
+        "unit": "oz",
+        "notes": "2:1, honey:water",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thai Basil",
+        "unit": "leaves",
+        "notes": null,
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b322fc2e71e7e67a4808a7d38f5991064b54be694729a639ed95ede964e7b70b",
+    "lineage_hash": "24a948fe531b0d93b37239fc0aa079a9126b0d34447a244deba78292935ed9d2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://punchdrink.com/recipes/tepache-collins/",
+    "fetchedAt": "2026-08-02T04:26:31.694Z"
+  },
+  "rawSource": "https://punchdrink.com/recipes/tepache-collins/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

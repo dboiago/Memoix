@@ -1,0 +1,126 @@
+{
+  "recipe": {
+    "name": "Caveman Strip Steaks with Bell Pepper Pan-Fry and Smoky Potato Salad",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Set up grill for indirect grilling and preheat to medium-high.",
+      "Place potatoes in aluminum foil pan and stir in olive oil, salt and pepper.",
+      "Add wood chips to coals or place in gas grill’s smoker box.",
+      "Indirect grill potatoes until browned and tender (test with a bamboo skewer), 1 hour or as needed.",
+      "Transfer to cutting board and let cool to room temperature.",
+      "Place mayonnaise, BUSH’S Smokehouse Tradition Grillin’ Beans sauce, vinegar, mustard, scallions and capers in large mixing bowl and whisk.",
+      "Stir in salt and pepper to taste.",
+      "Serve with remaining BUSH’S Smokehouse Tradition Grillin’ Beans on side.",
+      "Build charcoal fire using natural lump charcoal and rake coals into even layer, leaving front third of grill coal-free.",
+      "When coals glow orange, fan with newspaper to blow off loose ash.",
+      "Season steaks on both sides with salt and cracked pepper and place directly on embers, about 2 inches apart.",
+      "Grill until cooked to taste, about 4 minutes per side for medium-rare, turning with tongs.",
+      "Move steaks after 2 minutes on each side to cook evenly.",
+      "Use tongs to lift steaks out of fire and shake to dislodge clinging embers.",
+      "Brush off loose ash with basting brush and arrange steaks on platter or plates.",
+      "Let steaks rest for 2 minutes and prepare pepper pan-fry.",
+      "Heat olive oil in cast-iron skillet directly on embers, on gas grill side burner, or on stove.",
+      "When oil is hot, add peppers, scallions, garlic and parsley.",
+      "Cook over high heat until peppers and garlic are golden brown, 2 minutes.",
+      "Pour mixture over steaks and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Small Fingerling",
+        "unit": "lb",
+        "notes": "alt: new potatoes, scrubbed and cut in half",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "(22 Ounces) Bush’s® Smokehouse Tradition Grillin’ Beans",
+        "unit": "can",
+        "notes": "¼ cup sauce",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wine Vinegar",
+        "unit": "Tbsp",
+        "notes": "or to taste",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Each Scallions",
+        "unit": null,
+        "notes": "trimmed and finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Capers",
+        "unit": "Tbsp",
+        "notes": "drained",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e1a378228cfccd0d6eb87434631408e353a8d82f1f19f1414f5d54223fa5cf5b",
+    "lineage_hash": "aec6e7b70bcdbd49affec76379c9a88b74172b9ea4ca5ea2867a4a76b12376d7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/caveman-strip-steaks-bell-pepper-pan-fry-smoky-potato-salad/",
+    "fetchedAt": "2026-08-03T04:26:38.892Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/caveman-strip-steaks-bell-pepper-pan-fry-smoky-potato-salad/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

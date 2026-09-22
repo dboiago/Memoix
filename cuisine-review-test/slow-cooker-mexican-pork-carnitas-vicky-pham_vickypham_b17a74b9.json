@@ -1,0 +1,127 @@
+{
+  "recipe": {
+    "name": "Slow Cooker Mexican Pork Carnitas",
+    "time": "4 hr 25 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Season the pork shoulder with oregano, cumin, black pepper, salt, chili powder, and cinnamon.",
+      "Add pork to a slow cooker. Add water, onion, garlic and bay leaf.",
+      "Cook on high for 4 hours.",
+      "Remove from cooker and chop into small pieces against the grain.",
+      "Brown the pork in a large skillet with a bit of oil from the slow cooker. Serve with flour or corn tortillas, salsa and pickled jalapenos."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pork Shoulder/butt (trim Off Excess Fat)",
+        "unit": "lb",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mexican Oregano",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion (slice)",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves (peel and Smash)",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "41d8a9be7c2fc4aba680bbbb73358528b6a02f24d0c77fba27e80ccfb1e8bb74",
+    "lineage_hash": "58395095a2ab1e106e24366e21115aa3e032c2a011ef267c93e29443ea32e17c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://vickypham.com/blog/slow-cooker-mexican-pork-carnitas/",
+    "fetchedAt": "2026-08-01T18:20:21.507Z"
+  },
+  "rawSource": "https://vickypham.com/blog/slow-cooker-mexican-pork-carnitas/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

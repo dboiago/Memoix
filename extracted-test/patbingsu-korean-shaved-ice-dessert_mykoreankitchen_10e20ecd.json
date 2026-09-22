@@ -1,0 +1,106 @@
+{
+  "recipe": {
+    "name": "Patbingsu (Korean Shaved Ice Dessert)",
+    "time": "10 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "KR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "154",
+      "carbohydrateContent": "32",
+      "fatContent": "2",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "Put the ice blocks into a food processor (or shaved ice machine if you have one). Grind the ice (for about 20 seconds) until it has a smooth texture.",
+      "Place the shaved ice into a chilled serving bowl. Top up with your choice of fruit, red bean paste, mochi. Garnish with sweetened condensed milk. (FYI: I like layering the sweetened condensed milk on top of the shaved ice as well as on top of the fruit.)",
+      "Serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ice Cubes (0.9 Pounds)",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweetened Red Bean Paste (or More to Taste)",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweetened Condensed Milk (or More to Taste)",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mini Sweet Rice Cakes (mochi)",
+        "unit": null,
+        "notes": null,
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strawberry (2.8 Ounces)",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kiwi (1.6 Ounces)",
+        "unit": "g",
+        "notes": "thinly sliced",
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blueberry (1.6 Ounces)",
+        "unit": "g",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pineapple (1.6 Ounces)",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "91b8b8293d8219942203f9abbbab052ce2f5f47671aaaafa94899b1512605d92",
+    "lineage_hash": "0dd390a458d47663c1bb173bc13183048677bc20137515b1d9250b2e96fea0c5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://mykoreankitchen.com/patbingsu-korean-shaved-ice/",
+    "fetchedAt": "2026-08-01T17:01:41.248Z"
+  },
+  "rawSource": "https://mykoreankitchen.com/patbingsu-korean-shaved-ice/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

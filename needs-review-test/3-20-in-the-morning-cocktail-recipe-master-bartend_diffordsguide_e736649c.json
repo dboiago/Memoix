@@ -1,0 +1,83 @@
+{
+  "recipe": {
+    "name": "3:20 In The Morning",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": null,
+    "glass": "Old-fashioned",
+    "garnish": [
+      "Dusting of Freshly Grated Nutmeg"
+    ],
+    "subcategory": "Liqueur",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Compass Box Great King Street 'the Artist's Blend'",
+        "unit": "ml",
+        "notes": null,
+        "amount": "22.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Laird's Bottled-in-bond Applejack",
+        "unit": "ml",
+        "notes": null,
+        "amount": "22.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Drambuie Liqueur",
+        "unit": "ml",
+        "notes": null,
+        "amount": "22.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cynar Artichoke Amaro",
+        "unit": "ml",
+        "notes": null,
+        "amount": "22.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "ml",
+        "notes": "freshly squeezed",
+        "amount": "22.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey Syrup",
+        "unit": "ml",
+        "notes": "3 parts honey to 1 water by weight",
+        "amount": "7.5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0a8454d073ca0bc749246a946a719a5b4269a64ae66e53405726930085d70fd2",
+    "lineage_hash": "9663d1b5ece96aa9bcf00c989a8f4ec91495bb17df29b5e467449eebcf873099"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/42121/320-in-the-morning",
+    "fetchedAt": "2026-08-04T10:54:29.927Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/42121/320-in-the-morning",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

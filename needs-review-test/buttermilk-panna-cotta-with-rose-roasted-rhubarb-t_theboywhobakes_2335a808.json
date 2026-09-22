@@ -1,0 +1,107 @@
+{
+  "recipe": {
+    "name": "Buttermilk Panna Cotta with Rose Roasted Rhubarb",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the roasted rhubarb make as per the instructions here. Once finished simply add rose water, to taste. I would suggest 2-3 teaspoons.",
+      "If serving chilled carefully transfer to a small container and refrigerate until needed. If serving warm I would make this as and when needed, if you reheat the rhubarb you run the risk of turning it mushy, I prefer it just to be holding its shape.",
+      "For the panna cotta place the gelatine into a small bowl and cover with ice cold water.",
+      "Place the cream, sugar and vanilla into a small saucepan and bring to a simmer over medium heat, stirring to help the sugar dissolve evenly.",
+      "Remove the gelatine from the water, squeezing off any excess moisture. Add to the pan and stir until dissolved.",
+      "Remove from the heat and pour into a jug.",
+      "Carefully divide the mixture between the dariole moulds and refrigerate for at least four hours.",
+      "When ready to serve dip the dariole moulds into hot water to loosen the puddings then gently invert onto a plate to serve.",
+      "Spoon some of the rhubarb onto the plate and enjoy."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gelatine Sheets",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Panna Cotta",
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250ml",
+        "section": "Panna Cotta",
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50g",
+        "section": "Panna Cotta",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2 tsp",
+        "section": "Panna Cotta",
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250ml",
+        "section": "Panna Cotta",
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Rhubarb",
+        "unit": null,
+        "notes": "recipe here",
+        "amount": "1 batch",
+        "section": "Rose Roasted Rhubarb",
+        "isOptional": false
+      },
+      {
+        "name": "Rose Water",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2-3 tsp",
+        "section": "Rose Roasted Rhubarb",
+        "isOptional": false
+      },
+      {
+        "name": "Edible Rose Petals",
+        "unit": null,
+        "notes": "to serve (optional)",
+        "amount": "0",
+        "section": "Rose Roasted Rhubarb",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7a11c46c2951e61d82d182c72ef1f94de334a95d2be90b79c4c2df7b7b79cae8",
+    "lineage_hash": "55e70f64ead3702accdb259988c525e6664447b7f83b80b293a6fa56e6942243"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.theboywhobakes.co.uk/recipes/2017/2/22/buttermilk-panna-cotta-with-rose-roasted-rhubarb",
+    "fetchedAt": "2026-08-01T21:22:04.038Z"
+  },
+  "rawSource": "https://www.theboywhobakes.co.uk/recipes/2017/2/22/buttermilk-panna-cotta-with-rose-roasted-rhubarb",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

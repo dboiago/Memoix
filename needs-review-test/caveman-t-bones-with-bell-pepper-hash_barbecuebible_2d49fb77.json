@@ -1,0 +1,54 @@
+{
+  "recipe": {
+    "name": "Caveman T-Bones with Bell Pepper Hash",
+    "time": "15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Build a charcoal fire and rake the coals into an even layer. (Leave the front third of your grill coal-free.) When the coals glow orange, fan them with a newspaper to blow off any loose ash.",
+      "Generously, and I mean generously, season the steaks on both sides with salt and cracked pepper. Place the steaks directly on the embers about 2 inches apart. Grill until cooked to taste, about 4 minutes per side for medium-rare, turning with tongs. Move the steaks after 2 minutes on each side so they cook evenly.",
+      "Using tongs, lift the steaks out of the fire, shaking each to dislodge any clinging embers. Using a basting brush, brush off any loose ash and arrange the steaks on a platter or plates. Let the steaks rest, loosely tented with aluminum foil, while you make the hash.",
+      "Make the pepper pan-roast: Heat the olive oil in a cast-iron skillet directly on the embers on the side burner of a gas grill or on the stove. When the oil is hot, add the peppers, garlic, and parsley. Cook over high heat until the peppers and garlic begin to brown, 2 minutes. Immediately pour over the steaks and serve at once."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "T-bone Steaks (each 12 to 16 Ounces and 1 1/4 to 1 1/2 Inches Thick)",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Salt (kosher or Sea) and Coarsely Cracked Black Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7b237d6d8c797471455cb1d3a1366a2fc88ff2f128f10bcf115709fd4db87bde",
+    "lineage_hash": "b03d502a4b745d71e84e6ebaa4654facf517b746759e367dd9c1437f88eab79a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/caveman-t-bones-with-bell-pepper-hash/",
+    "fetchedAt": "2026-08-03T06:29:53.903Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/caveman-t-bones-with-bell-pepper-hash/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

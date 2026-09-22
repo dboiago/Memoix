@@ -1,0 +1,62 @@
+{
+  "recipe": {
+    "name": "Mediterranean Cooler",
+    "time": "3 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "87",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Strawberry Flavoured Vodka",
+        "unit": "ml",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tawny Port",
+        "unit": "ml",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mediterranean Tonic",
+        "unit": "ml",
+        "notes": null,
+        "amount": "110",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2d03ca7dec2695f1723eadc2258e8cb80edc2dcff506e3e4fff5fe53f30ca1cb",
+    "lineage_hash": "e1b6cdcaa8e3e77b983fd8d9bed8c112dce622a8c02a791d77220066e562e478"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/6442/mediterranean-cooler",
+    "fetchedAt": "2026-08-03T15:46:44.007Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/6442/mediterranean-cooler",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

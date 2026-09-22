@@ -1,0 +1,199 @@
+{
+  "recipe": {
+    "name": "Biang Biang Noodles (Yu Po Mian)",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "452",
+      "carbohydrateContent": "36.4",
+      "fatContent": "32",
+      "proteinContent": "9.1"
+    },
+    "directions": [
+      "Add 1 tablespoon of oil into a medium-sized skillet and heat over medium heat until hot. Add the tomato and a pinch of salt. Chop and stir the tomatoes until the tomato pieces break down, 4 to 5 minutes. Pour in a small splash of water if the pan becomes too dry. Add the tomato paste. Keep stirring for 1 minute until the tomato paste is evenly mixed. Transfer to a bowl and set aside.",
+      "Combine the soy sauce, Chinkiang vinegar, sesame oil and sugar in a large bowl. Stir to mix until the sugar has dissolved.",
+      "Bring a large pot of water to a boil. Blanch the baby bok choy for 2 minutes or so, until tender. Transfer the bok choy to a plate to cool off.",
+      "In the same pot, boil the noodles according to instructions. Once the noodles are done, quickly rinse with running tap water to stop cooking. Then drain thoroughly and transfer to the bowl with the soy sauce mixture. Stir to combine.",
+      "Add the white part of the green onion, garlic, chili flakes, sesame seeds, cumin powder and ground Sichuan peppercorn on top of the noodles.",
+      "Heat the oil in a small saucepan over medium heat until hot. Immediately pour the hot oil over the noodles, covering as much seasoning as possible. Then stir everything together to mix well while the oil is still hot.",
+      "Add the tomato sauce and mix again (if using).",
+      "Garnish with baby bok choy and cilantro. Serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Peanut Oil (or Vegetable Oil)",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Tomato sauce (optional but recommended)",
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": null,
+        "notes": "diced",
+        "amount": "2",
+        "section": "Tomato sauce (optional but recommended)",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "Tomato sauce (optional but recommended)",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Tomato sauce (optional but recommended)",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Noodle sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Chinkiang Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Noodle sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce (optional)",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Noodle sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Noodle sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Noodle sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion",
+        "unit": null,
+        "notes": "white part minced, green part sliced for garnish",
+        "amount": "1",
+        "section": "Noodle sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "grated",
+        "amount": "3",
+        "section": "Noodle sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Chili Flakes",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Noodle sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Toasted White Sesame Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Noodle sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Noodle sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Sichuan Peppercorn (optional But Highly Recommended)",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Noodle sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil (or Vegetable Oil)",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "Noodle sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Bundles (150 G) Dried Knife Shaved Noodles (or 400 G Fresh Wide Noodles or Hand Pulled-noodles)",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Noodles",
+        "isOptional": false
+      },
+      {
+        "name": "Baby Bok Choy",
+        "unit": "heads",
+        "notes": "tough ends removed and cut into large bite size pieces (*Footnote 1)",
+        "amount": "4",
+        "section": "Noodles",
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro for Garnish (optional)",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "0",
+        "section": "Noodles",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8e4248315767fededc005aaf24338cb72019967e24b4d00e63730afa9d73779a",
+    "lineage_hash": "82a5bd766a0a7dce71c048c0e5fb261187007688c11e62a6ca3864ad5cd8005c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/biang-biang-noodles/",
+    "fetchedAt": "2026-08-02T06:40:21.990Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/biang-biang-noodles/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

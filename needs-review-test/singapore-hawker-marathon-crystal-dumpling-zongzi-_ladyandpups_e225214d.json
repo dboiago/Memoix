@@ -1,0 +1,151 @@
+{
+  "recipe": {
+    "name": "Crystal Dumpling (Zongzi) Made With Sago Pearls",
+    "time": "1 hr 45 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "SG",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "PREPARATION: Soak the dried bamboo leaves in hot tap water, pressing them down with something heavy, for 1:30 to 2 hours until hydrated. Meanwhile, make the coconut dark brown sugar syrup. In a small pot, bring coconut milk, dark brown sugar and sea salt to a simmer. Cook for a couple minutes until the sugar and salt has completely melted. Chill in the fridge to cool down completely.",
+      "30 minutes before making the dumplings, prepare the sago pearls. You can make all the dumplings in one batch the same color, or divide the recipes accordingly to make multiple colors in one batch, or make a dual-colored one like the first photo. Place the sago pearls inside a large bowl. To make clear dumplings: Evenly mix the sago pearls with water and granulated sugar, and let soak for 30 minutes. To make yellow dumplings: Evenly mix the sago pearls with water, light brown sugar and ground turmeric, and let soak for 30 minutes. To make green dumpling: In a blender, blend water and pandan leaves together until finely pureed. Strain it through a fine sieve, pressing on the solids to extract as much liquid as you can, then discard the solids. Evenly mix the pandan-water and granulated sugar with sago pearls, and let soak for 30 minutes. The sago pearls are ready when you squeeze one in between your fingers, it’s completely softened and mushy inside out, without any hard center.",
+      "TO SHAPE THE DUMPLINGS: Use a scissor to trim off the top stems/ends of every bamboo leaves (see photo), then soak them back in the water as you work. Lay a large towel on the working surface. Place two bamboo leaves on top, with the tough stem-side facing down, then wipe them dry with another towel. Very lightly brush the top surface with canola oil to prevent sticking. Then proceed to shape the dumplings according to the video above (excuse the slightly blurry quality…).",
+      "TO COOK THE DUMPLINGS: Bring a large pot of water to boil. Lower the dumplings then put the lid on. Once the water comes back to a boil, lower the heat to maintain a gentle boil, then continue to cook for 45 minutes with the lid on (I know that sounds long but trust me). Once done, transfer the dumplings into the ice-bath to cool down completely. Drain well.",
+      "TO SERVE: You can serve the dumplings immediately once they are chilled in the ice-bath. Or you can chill them in the fridge for up to 5 days. Because of the nature of tapioca, the dumplings will harden once they have sat in the fridge for too long, so you’ll need to rewarm them thoroughly in hot water for 15 minutes. Or, how I like it, microwave it on high for 1 minute for each dumplings. After which, shock the dumplings in ice-bath again for 10~15 minutes before serving. I know it’s not the most convenient situation, but once you’ve tasted them together with coconut dark brown sugar syrup, all will be justified."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dried Bamboo Leaves for Zongzi",
+        "unit": null,
+        "notes": null,
+        "amount": "16~20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sago Pearls",
+        "unit": "C",
+        "notes": "small-size",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Canola Oil",
+        "unit": null,
+        "notes": "for brushing",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "2 ½",
+        "section": "CLEAR DUMPLINGS",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "CLEAR DUMPLINGS",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "2 ½",
+        "section": "YELLOW DUMPLINGS",
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "YELLOW DUMPLINGS",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼ + ⅛",
+        "section": "YELLOW DUMPLINGS",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "2 ½",
+        "section": "GREEN DUMPLINGS",
+        "isOptional": false
+      },
+      {
+        "name": "Pandan Leaf",
+        "unit": null,
+        "notes": "fresh or frozen, cut into segments",
+        "amount": "2",
+        "section": "GREEN DUMPLINGS",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "GREEN DUMPLINGS",
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "C",
+        "notes": "(55 grams)",
+        "amount": "¼",
+        "section": "COCONUT DARK BROWN SUGAR SYRUP",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Brown Sugar",
+        "unit": null,
+        "notes": "(64 grams)",
+        "amount": "¼ + 1 tbsp",
+        "section": "COCONUT DARK BROWN SUGAR SYRUP",
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": "COCONUT DARK BROWN SUGAR SYRUP",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d424a759b53e3c06936efd7245ba621f982448de492551da6f1a993ba4c2f3ba",
+    "lineage_hash": "411f08d4b0cee27512c062d35ff95d258f7abaebcb0c5641da9b470a1b942132"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ladyandpups.com/2018/04/26/singapore-hawker-marathon-crystal-dumpling-zongzi-made-with-sago-pearls/",
+    "fetchedAt": "2026-08-02T05:02:27.470Z"
+  },
+  "rawSource": "https://ladyandpups.com/2018/04/26/singapore-hawker-marathon-crystal-dumpling-zongzi-made-with-sago-pearls/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

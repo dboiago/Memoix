@@ -7,12 +7,12 @@ node_modules/
 # Scrape Data & Ingestion Artifacts
 urls/
 raw/
-extracted*/
-needs-review*/
-cuisine-review*/
+extracted/
+needs-review/
+cuisine-review/
 
 # Logs & Review Summaries
-logs*/
+logs/
 *.jsonl
 *.log
 

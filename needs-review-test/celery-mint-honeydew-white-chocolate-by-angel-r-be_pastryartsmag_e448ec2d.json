@@ -1,0 +1,269 @@
+{
+  "recipe": {
+    "name": "Celery + Mint + Honeydew + White Chocolate",
+    "time": "1 hr 5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a saucepan, combine sugar, water, glucose powder and sorbet stabilizer and bring to a boil.",
+      "Pour over white chocolate and allow to stand for a minute. Emulsify with immersion blender. Cover tightly with plastic wrap and reserve for 20 minutes.",
+      "Whisk in Godiva White Chocolate Liqueur and process in ice cream machine.",
+      "Pipe into 1 ½ʺ (3.8 cm) tubes.",
+      "Mix together sugar and Sosa Elastic.",
+      "In a heavy saucepan, combine the honeydew-celery juice, simple syrup and sugar mixture and bring to a simmer.",
+      "Pour onto a sheet pan and set aside to cool completely.",
+      "Cut into rectangles that will fit around the sorbet tubes, and reserve to wrap the white chocolate sorbet.",
+      "Shave celery stalks with a potato peeler to create ribbons.",
+      "Combine celery ribbons with simple syrup in a vacuum pack bag.",
+      "Seal and then vacuum- seal using a vacuum pack machine.",
+      "Whip the egg whites on medium-high speed, gradually adding the sugars. Whip to stiff peaks.",
+      "Spread meringue on silicone baking mat and dry in the oven at 390°F (200°C) for 45 minutes.",
+      "Purée ingredients in food processor.",
+      "Combine all ingredients and pass the mix through a chinois.",
+      "Pour into an ISI siphon with two charges. Discharge into plastic cups and cook in the microwave on high for about 40 seconds.",
+      "Combine all ingredients and strain through a cheesecloth.",
+      "Wrap sorbet tubes in Honeydew Veil and place vertically at one end of shallow soup bowl. Arrange 2 celery ribbons on their sides on one side of the plate. Tear off chunks of the sponge and arrange 3 on the plate. Cut the meringue into rectangles and arrange 3 on the plate. Garnish with edible flowers and micro greens.",
+      "Add celery ribbons, mint sponge, meringue sheets, edible flowers and micro greens. Right before serving, pour some of the soup into the bowl and accent with some of the Mint Pesto."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Granulated Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": "White Chocolate Sorbet",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "1000",
+        "section": "White Chocolate Sorbet",
+        "isOptional": false
+      },
+      {
+        "name": "Glucose Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": "White Chocolate Sorbet",
+        "isOptional": false
+      },
+      {
+        "name": "Sorbet Stabilizer",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": "White Chocolate Sorbet",
+        "isOptional": false
+      },
+      {
+        "name": "White Chocolate",
+        "unit": "g",
+        "notes": "chopped or use wafers",
+        "amount": "400",
+        "section": "White Chocolate Sorbet",
+        "isOptional": false
+      },
+      {
+        "name": "Godiva White Chocolate Liqueur",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": "White Chocolate Sorbet",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": "Honeydew Veil and Wrap",
+        "isOptional": false
+      },
+      {
+        "name": "Sosa Elastic Gelling Agent",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": "Honeydew Veil and Wrap",
+        "isOptional": false
+      },
+      {
+        "name": "Honeydew-celery Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "380",
+        "section": "Honeydew Veil and Wrap",
+        "isOptional": false
+      },
+      {
+        "name": "Simple Syrup",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": "Honeydew Veil and Wrap",
+        "isOptional": false
+      },
+      {
+        "name": "Celery Stalks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Compressed Celery",
+        "isOptional": false
+      },
+      {
+        "name": "Simple Syrup",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": "Compressed Celery",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": "Meringue Sheets",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": "Meringue Sheets",
+        "isOptional": false
+      },
+      {
+        "name": "Confectioners’ Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": "Meringue Sheets",
+        "isOptional": false
+      },
+      {
+        "name": "Fresh Mint Leaves",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": "Mint Pesto",
+        "isOptional": false
+      },
+      {
+        "name": "Simple Syrup",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": "Mint Pesto",
+        "isOptional": false
+      },
+      {
+        "name": "Citric Acid",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": "Mint Pesto",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": "Mint M-Sponge",
+        "isOptional": false
+      },
+      {
+        "name": "Mint Pesto",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": "Mint M-Sponge",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "70",
+        "section": "Mint M-Sponge",
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": "Mint M-Sponge",
+        "isOptional": false
+      },
+      {
+        "name": "Honeydew Purée",
+        "unit": "g",
+        "notes": "honeydew flesh that has been puréed and strained",
+        "amount": "300",
+        "section": "Honeydew, Celery, Mint Soup",
+        "isOptional": false
+      },
+      {
+        "name": "Peeled Celery",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": "Honeydew, Celery, Mint Soup",
+        "isOptional": false
+      },
+      {
+        "name": "Fresh Mint Leaves",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": "Honeydew, Celery, Mint Soup",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": "Honeydew, Celery, Mint Soup",
+        "isOptional": false
+      },
+      {
+        "name": "Simple Syrup",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": "Honeydew, Celery, Mint Soup",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "839455c3830e1c4d1b985d7381aa1695bbab606315726f1458bcf08595e1a39d",
+    "lineage_hash": "4fe6e25239319e63224a0f8b8f6cf5e7a0cd01c9f44b285d7bf0f33f478f4179"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://pastryartsmag.com/recipes/celery-mint-honeydew-white-chocolate-by-angel-r-betancourt/",
+    "fetchedAt": "2026-08-02T11:58:38.275Z"
+  },
+  "rawSource": "https://pastryartsmag.com/recipes/celery-mint-honeydew-white-chocolate-by-angel-r-betancourt/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

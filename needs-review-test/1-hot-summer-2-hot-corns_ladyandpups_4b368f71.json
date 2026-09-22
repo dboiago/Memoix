@@ -1,0 +1,146 @@
+{
+  "recipe": {
+    "name": "Hot Spicy Grilled Corns",
+    "time": "45 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Whisk together soy sauce, granulated sugar, dark brown sugar, balsamic vinegar, all-purpose flour, smashed garlic and cayenne pepper in a small pot. Bring to a simmer over low heat while continuously whisking, until the sugar has fully melted and mixture has thickened. Set aside until needed.",
+      "Preheat the top-broiler on high. If you are using corns still in husks, peel the husks away then braid them into a natural handle for turning the cobs. Place the corns on a baking-rack over a baking-sheet lined with parchment. Bake 3\" (7.5 cm) under the broiler for a couple minutes, turning them half way, until partially cooked through (the corn will look \"yellower\").",
+      "Then brush the corns evenly with the sauce (the sauce is quite thick so you'll need to try a bit harder to get it into the folds of the corn kernels), and return under the broiler, turning them once, until the sauce starts to bubble and caramelize on both sides. Re-apply the sauce again and repeat.",
+      "To serve, give the corns a final brush of sauce and dust with more ground cayenne pepper.",
+      "Mix unsalted butter, dark miso paste and sugar together until smooth. Evenly mix together Parmigiano cheese and 2 ~ 3 tbsp of togarashi powder (depending on how spicy you like it), then set aside.",
+      "Preheat the top-broiler on high. If you are using corns still in husks, peel the husks away then braid them into a natural handle for turning the cobs. Place the corns on a baking-rack over a baking-sheet lined with parchment. Bake 3\" (7.5 cm) under the broiler for a couple minutes, turning them half way, until partially cooked through (the corn will look \"yellower\").",
+      "Then coat the corns evenly with the miso-butter and return them under the broiler, turning once or twice, until the miso-butter has slightly caramelized.",
+      "Roll the grilled corns in Parmigiano-togarashi powder before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sweet Summer Corns",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": "Sweet soy sauce, balsamic vinegar and cayenne",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "C",
+        "notes": "70 grams",
+        "amount": "¼ cup",
+        "section": "Sweet soy sauce, balsamic vinegar and cayenne",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "Tbsp",
+        "notes": "45 grams",
+        "amount": "3 tbsp",
+        "section": "Sweet soy sauce, balsamic vinegar and cayenne",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Brown Sugar",
+        "unit": "Tbsp",
+        "notes": "15 grams",
+        "amount": "1 tbsp",
+        "section": "Sweet soy sauce, balsamic vinegar and cayenne",
+        "isOptional": false
+      },
+      {
+        "name": "Balsamic Vinegar",
+        "unit": "Tbsp",
+        "notes": "30 grams",
+        "amount": "2 tbsp",
+        "section": "Sweet soy sauce, balsamic vinegar and cayenne",
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1 ½ tbsp",
+        "section": "Sweet soy sauce, balsamic vinegar and cayenne",
+        "isOptional": false
+      },
+      {
+        "name": "Smashed Garlics",
+        "unit": "clove",
+        "notes": null,
+        "amount": "3 cloves",
+        "section": "Sweet soy sauce, balsamic vinegar and cayenne",
+        "isOptional": false
+      },
+      {
+        "name": "Cayenne Pepper",
+        "unit": "tsp",
+        "notes": "plus more to dust",
+        "amount": "2 tsp",
+        "section": "Sweet soy sauce, balsamic vinegar and cayenne",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": "28 grams",
+        "amount": "2 tbsp",
+        "section": "Miso butter, Parmigiano and togarashi",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Miso Paste",
+        "unit": "Tbsp",
+        "notes": "34 grams",
+        "amount": "2 tbsp",
+        "section": "Miso butter, Parmigiano and togarashi",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2 tsp",
+        "section": "Miso butter, Parmigiano and togarashi",
+        "isOptional": false
+      },
+      {
+        "name": "Parmigiano Cheese",
+        "unit": "C",
+        "notes": "50 grams",
+        "amount": "⅓ cup",
+        "section": "Miso butter, Parmigiano and togarashi",
+        "isOptional": false
+      },
+      {
+        "name": "Togarashi Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2 ~ 3 tbsp",
+        "section": "Miso butter, Parmigiano and togarashi",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f2b77e5afbef08ccd9f435a2e93fa1594be20694cba31763c3ddb46c4576f320",
+    "lineage_hash": "fbe32f6301a4ddb7a2573d649be418b68975966271eeab980011c79731cb98f5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ladyandpups.com/2014/09/01/1-hot-summer-2-hot-corns/",
+    "fetchedAt": "2026-08-02T05:53:04.451Z"
+  },
+  "rawSource": "https://ladyandpups.com/2014/09/01/1-hot-summer-2-hot-corns/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

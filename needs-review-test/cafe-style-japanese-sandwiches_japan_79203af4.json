@@ -1,0 +1,194 @@
+{
+  "recipe": {
+    "name": "Cafe-style Japanese Sandwiches",
+    "time": "25 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Butter inside of the sandwich breads.",
+      "Place the fillings.",
+      "Trim the crust off.",
+      "Cut the sandwich into 6 pieces.",
+      "Spread butter on one side of each slice of bread and place them on a work bench, buttered side up.",
+      "Spread karashi mustard on one side of the bread.",
+      "Place cheese on the mustard, then place ham on it. If the ham is larger than the bread, fold the edges so that the ham is contained within the surface of the bread.",
+      "Place tomato slices covering the ham. You may halve the round tomato slice to fill the gaps.",
+      "Place the cucumber strips lengthwise, evenly overlapping each other.",
+      "Place the other slice of bread on top, buttered side down, then press down gently with your palm.",
+      "Remove your palm and leave it for 5 minutes or so to let the ingredients blend in.",
+      "Using a sharp knife (do not use a serrated knife), trim the crust off each slice. Ensure that the corner of the bread is 90 degrees.",
+      "Cut the sandwich in half lengthwise, then cut them perpendicular to the first cut into three equal widths. You should have 6 small pieces.",
+      "Mix all the Filling ingredients in a bowl, excluding lettuce.",
+      "Spread the egg filling on a slice of bread. Ensure that the edges are filled with the egg mixture. Try to spread the filling slightly thinner in the centre of the bread.",
+      "Place the lettuce on top, fully covering the egg filling.",
+      "Follow the Ham Sando steps 5, 6, 7, and 8.",
+      "Mix all the Filling ingredients in a bowl.",
+      "Spread the chicken filling on a slice of bread. Ensure that the edges are filled with the chicken mixture. Try to spread the filling slightly thinner in the centre of the bread",
+      "Follow the Ham Sando steps 5, 6, 7, and 8.",
+      "To serve individually, place 3 sandwich pieces with the same filling next to each other on a serving plate. It will look good if you stagger them slightly.",
+      "Place the three pieces with other filling next to the first row in the same way, then place the last three pieces.",
+      "Place a sprig of parsley on the side of the plate.",
+      "If you are serving on a large plate, you can either cluster the sandwiches with the same fillings together or scatter them."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Japanese Sandwich Bread (note 1)",
+        "unit": "slices",
+        "notes": null,
+        "amount": "2",
+        "section": "Sandwich Bread (per filling)",
+        "isOptional": false
+      },
+      {
+        "name": "Butter Softened",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sandwich Bread (per filling)",
+        "isOptional": false
+      },
+      {
+        "name": "Ham (note 2)",
+        "unit": "slice",
+        "notes": null,
+        "amount": "1",
+        "section": "Hamu Sando (Ham Sandwiches) Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Mature Cheddar Cheese (note 3)",
+        "unit": "slice",
+        "notes": null,
+        "amount": "1",
+        "section": "Hamu Sando (Ham Sandwiches) Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Strips Thinly Sliced Cucumber (note 4)",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": "Hamu Sando (Ham Sandwiches) Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes (note 5)",
+        "unit": "slices",
+        "notes": null,
+        "amount": "4",
+        "section": "Hamu Sando (Ham Sandwiches) Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Karashi (japanese Mustard, Note 6)",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Hamu Sando (Ham Sandwiches) Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Boiled Eggs Finely Diced (note 7)",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Tamago Sando (Egg Sandwiches) Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Tamago Sando (Egg Sandwiches) Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Tamago Sando (Egg Sandwiches) Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Butter Lettuce (note 8)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Tamago Sando (Egg Sandwiches) Filling",
+        "isOptional": false
+      },
+      {
+        "name": "70g/2.5oz Chicken Steamed",
+        "unit": null,
+        "notes": "alt: boiled, shredded (note 9)",
+        "amount": "0",
+        "section": "Chikin Sando (Chicken Sandwiches) Filling",
+        "isOptional": false
+      },
+      {
+        "name": "30g/1.1oz Celery Finely Sliced",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Chikin Sando (Chicken Sandwiches) Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Chikin Sando (Chicken Sandwiches) Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Shiro Dashi (optional, Note 10)",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": "Chikin Sando (Chicken Sandwiches) Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Salt & Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Chikin Sando (Chicken Sandwiches) Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Curly Parsley (note 11)",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "2",
+        "section": "Serving",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a137c81e980479dec910372c072dfe7e801a3bf0ed954b88991ce4a32fadbfd2",
+    "lineage_hash": "1a6a475c0cbdaa04e07852ec7bbe5698d869bb11110088df78645bef99cbad97"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://japan.recipetineats.com/cafe-style-japanese-sandwiches/",
+    "fetchedAt": "2026-08-02T00:42:39.151Z"
+  },
+  "rawSource": "https://japan.recipetineats.com/cafe-style-japanese-sandwiches/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

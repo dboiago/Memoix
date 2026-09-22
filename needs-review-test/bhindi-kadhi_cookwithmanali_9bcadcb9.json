@@ -1,0 +1,182 @@
+{
+  "recipe": {
+    "name": "Bhindi Kadhi",
+    "time": "1 hr 20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "177",
+      "carbohydrateContent": "21",
+      "fatContent": "7",
+      "proteinContent": "8"
+    },
+    "directions": [
+      "Wash and pat dry the okra. It is very important to pat dry the okra else it will be all slimy when you try to cut it. Use a paper towel to dry them thoroughly. Chop the okra into 2-3 pieces. Since the okra I used were small I chopped them into 2-3 pieces, the one we get in India are longer than these so I would probably then chop them into more pieces.",
+      "Heat a tablespoon of oil in nonstick pan on medium heat. Once the oil is hot add the cut okra pieces. [You can also deep fry the okra pieces]",
+      "Cook the okra for 5-6 minutes or till the okra is no more slimy. Set aside.",
+      "In a bowl whisk together room temperature yogurt, chickpea flour (besan), red chili powder and turmeric powder.",
+      "Add around 2.5 cups of water and make a very thin paste. Make sure they are no lumps in this batter. Set aside.",
+      "Heat 2 teaspoons of oil in a pan on medium heat. Once the oil is hot, add cumin seeds and fenugreek seeds and let it crackle.",
+      "Once the seeds crackle, add curry leaves and chopped ginger. Cook till ginger is very light golden brown in color [don’t burn it!]",
+      "Now add the yogurt-chickpea flour batter that we had prepared to the pan.",
+      "Keep stirring the kadhi on medium heat and once it comes to a boil add around 3 cups of water to it. Lower the flame to medium low and let it cook for 10-15 minutes. Make sure to stir in between.",
+      "After 10-15 minutes, add the sautéed okra (bhindi) to the kadhi. Also add the salt.",
+      "Let the kadhi simmer on medium-low flame for 20-25 minutes till it gets little thick. You can adjust the consistency to preference but this kadhi tastes better when it’s little thick. Remove from heat and switch off the flame.",
+      "In another pan heat 1/2 tablespoon of ghee (clarified butter) on medium heat. Once ghee is hot, add mustard seeds and whole dried red chilies (broken into pieces).",
+      "Saute till the mustard seeds start crackling and the red chilies turn dark brown in color. Transfer the tempering to the kadhi.",
+      "Add 2 tablespoons of chopped coriander leaves and mix.",
+      "Garnish with some more coriander leaves and serve bhindi kadhi hot with steamed rice. You might also sprinkle some paprika powder on top for presentation."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Yogurt",
+        "unit": "C",
+        "notes": "at room temperature",
+        "amount": "1",
+        "section": "yogurt-chickpeas batter",
+        "isOptional": false
+      },
+      {
+        "name": "Chickpea Flour",
+        "unit": "C",
+        "notes": "besan",
+        "amount": "½",
+        "section": "yogurt-chickpeas batter",
+        "isOptional": false
+      },
+      {
+        "name": "Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "yogurt-chickpeas batter",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "yogurt-chickpeas batter",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "2.5",
+        "section": "yogurt-chickpeas batter",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "kadhi",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": "jeera",
+        "amount": "½",
+        "section": "kadhi",
+        "isOptional": false
+      },
+      {
+        "name": "Fenugreek Seeds",
+        "unit": "tsp",
+        "notes": "methi",
+        "amount": "½",
+        "section": "kadhi",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": "kadhi",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "3",
+        "section": "kadhi",
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "6-7",
+        "section": "kadhi",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "finely chopped + more to garnish",
+        "amount": "2",
+        "section": "kadhi",
+        "isOptional": false
+      },
+      {
+        "name": "Okra",
+        "unit": null,
+        "notes": "bhindi, small sauteed in 1 tablespoon oil",
+        "amount": "30",
+        "section": "kadhi",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": "clarified butter",
+        "amount": "½",
+        "section": "To temper",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "To temper",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Red Chilies",
+        "unit": null,
+        "notes": "broken",
+        "amount": "2",
+        "section": "To temper",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f320bc18079a77befcd579298426e9e0dca550ad7b0337951b8790d60954e40d",
+    "lineage_hash": "a1ab0d151bae16488be3aa7bd498d3d64788b05479a7564f77cd72b1c68a80bf"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/bhindi-kadhi/",
+    "fetchedAt": "2026-08-01T18:36:07.657Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/bhindi-kadhi/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

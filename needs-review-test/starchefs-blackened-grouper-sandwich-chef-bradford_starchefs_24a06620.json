@@ -1,0 +1,296 @@
+{
+  "recipe": {
+    "name": "Blackened Grouper Sandwich",
+    "time": "1 hr 5 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat oven to 400°F. Place all ingredients on a sheet tray and toast in oven 5 minutes. Remove and let cool. In a food processor, grind toasted spices until a fine powder is achieved. Transfer to an airtight container and reserve.",
+      "In a Vitamix blender, purée blanched spinach, miso, capers, and brine. Transfer purée to a mixing bowl. Whisk in remaining ingredients. Transfer to an airtight container and refrigerate.",
+      "Season tomato slices with salt. Add a sprinkle of chopped basil on top. Set aside.",
+      "In a small mixing bowl, combine all ingredients. Set aside.",
+      "Heat oven to 450°F. On a work surface, generously season the flesh side of the fish with salt and Blackening Spice. In a cast iron skillet over high flame, heat a ⅛-inch-deep pool of oil until it begins to smoke. Add the fish flesh side down and sear until edges begin to turn white. Transfer skillet to oven and cook 3 minutes. When fish is almost cooked through, remove from oven and transfer back to a stovetop. Cook skin side down until cooked through. Remove from heat and let cool.",
+      "Spread Florida Sauce on the top and bottom buns. Place the bottom bun on a serving plate. Top with 4 banana pepper rings followed by two slices Seasoned Tomato, 1 Grouper fillet, 2 pieces lettuce, a heavy pinch of Herb Mix, and bun top."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Szechuan Peppercorns",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": "Blackening Spice",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": "Blackening Spice",
+        "isOptional": false
+      },
+      {
+        "name": "Korean Chile Flakes",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": "Blackening Spice",
+        "isOptional": false
+      },
+      {
+        "name": "Clove",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": "Blackening Spice",
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": "g",
+        "notes": null,
+        "amount": "6",
+        "section": "Blackening Spice",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cumin",
+        "unit": "g",
+        "notes": null,
+        "amount": "6",
+        "section": "Blackening Spice",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Coriander",
+        "unit": "g",
+        "notes": null,
+        "amount": "6",
+        "section": "Blackening Spice",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Fennel Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "6",
+        "section": "Blackening Spice",
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Sticks",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": "Blackening Spice",
+        "isOptional": false
+      },
+      {
+        "name": "Dehydrated Onion Flakes",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": "Blackening Spice",
+        "isOptional": false
+      },
+      {
+        "name": "Dried Thai Red Chiles",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": "Blackening Spice",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": "Blackening Spice",
+        "isOptional": false
+      },
+      {
+        "name": "Spinach",
+        "unit": "g",
+        "notes": "blanched and shocked",
+        "amount": "300",
+        "section": "Florida Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Miso",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": "Florida Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Chopped Capers",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": "Florida Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Caper Brine",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": "Florida Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "g",
+        "notes": null,
+        "amount": "800",
+        "section": "Florida Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Dill Relish",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": "Florida Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Chopped Dill",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": "Florida Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "g",
+        "notes": "toasted and ground",
+        "amount": "12",
+        "section": "Florida Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": "slices",
+        "notes": "salt, chopped basil",
+        "amount": "8",
+        "section": "Seasoned Tomatoes",
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": "Herb Mix",
+        "isOptional": false
+      },
+      {
+        "name": "Mint",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": "Herb Mix",
+        "isOptional": false
+      },
+      {
+        "name": "Torn Basil",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": "Herb Mix",
+        "isOptional": false
+      },
+      {
+        "name": "Tarragon",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": "Herb Mix",
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": "Herb Mix",
+        "isOptional": false
+      },
+      {
+        "name": "Dill",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": "Herb Mix",
+        "isOptional": false
+      },
+      {
+        "name": "Grouper Fillets",
+        "unit": "6-to-8 ounce",
+        "notes": "tail on and skin removed, salt, Blackening Spice",
+        "amount": "4",
+        "section": "Grouper",
+        "isOptional": false
+      },
+      {
+        "name": "Neutral Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Grouper",
+        "isOptional": false
+      },
+      {
+        "name": "Hamburger Buns",
+        "unit": null,
+        "notes": "toasted and buttered",
+        "amount": "0",
+        "section": "To Assemble and Serve",
+        "isOptional": false
+      },
+      {
+        "name": "Pickled Banana Peppers",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "To Assemble and Serve",
+        "isOptional": false
+      },
+      {
+        "name": "Little Gem Lettuce",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "To Assemble and Serve",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "839dff77c4f01e414d77c4b569b32c15c425bccc7b9f42c3044a5537c14e1834",
+    "lineage_hash": "5ddf205c78d6341bf48c5189567a9a9093b009c02bacd9ba0dd3330a8676af3a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.starchefs.com/recipes/blackened-grouper-sandwich",
+    "fetchedAt": "2026-08-03T23:54:57.835Z"
+  },
+  "rawSource": "https://www.starchefs.com/recipes/blackened-grouper-sandwich",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

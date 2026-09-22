@@ -1,0 +1,59 @@
+{
+  "recipe": {
+    "name": "Chrysanthemum #1",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": null,
+    "glass": "Nick & Nora",
+    "garnish": [
+      "Dusting of Freshly Grated Nutmeg"
+    ],
+    "subcategory": "Liqueur",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bénédictine D.o.m. Liqueur",
+        "unit": "ml",
+        "notes": null,
+        "amount": "22.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Noilly Prat Original Dry Vermouth",
+        "unit": "ml",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "L'entete Absinthe De Qualite",
+        "unit": "ml",
+        "notes": null,
+        "amount": "7.5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f2029df09ef882df02b0529e4294d13d771e804ab04920c57367a7037f8eeafb",
+    "lineage_hash": "dd0c4257257d8c0d52dad8ca8dac70d267fad6b37329a10a9722749019a51d94"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/13668/chrysanthemum-1",
+    "fetchedAt": "2026-08-04T04:42:38.758Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/13668/chrysanthemum-1",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

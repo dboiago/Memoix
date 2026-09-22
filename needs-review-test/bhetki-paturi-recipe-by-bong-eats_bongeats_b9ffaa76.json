@@ -1,0 +1,284 @@
+{
+  "recipe": {
+    "name": "Bhetki Paturi",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "15",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Soak mustard seeds (we have used 50% brown and 50% yellow mustard) in room temperature water.",
+      "No matter which variation you are making you need to start with the basic mustard paste. Try to keep the water in the marinade as low as possible. It should be more like paste and less like a batter for best results. In the video we have ground the mustard in a traditional sheel nora (a flat grinding stone similar to the Mexican metate). In an electric grinder add water a tiny bit at a time, scrape the mixture and grind again. This takes patience. Grinding the mustard properly is the most important step of this recipe.",
+      "Grind 100 g mustard, 30 g salt, 15 g green chillies, and 3 g turmeric into a paste with a little water. Stir in 50 g of mustard oil. You can also add the mustard oil directly in the grinder when making the paste.",
+      "Grind 100 g mustard, 25 g charmagaz, 30 g salt, 15 g green chillies, and 3 g turmeric into a paste with a little water. Stir in 50 g of mustard oil, and 25 g of hung curd.",
+      "Grind 100 g mustard, 25 g charmagaz, 30 g salt, 15 g green chillies, and 3 g turmeric into a paste with a little water. Stir in 50 g of mustard oil and gondhoraj lime juice (about 25 g). If you don't find gondhoraj limes, try looking for Thai makrut lime.",
+      "Grind 100 g mustard, 25 g charmagaz, 30 g salt, 15 g green chillies, and 3 g turmeric into a paste with a little water. Stir in 50 g of mustard oil, 6 g of ginger paste, 6 g of red chilli paste, 30 g of sliced onions, 10 g of chopped green chillies, and a pinch of sugar.",
+      "Try and get fresh (non-frozen) bhetki or another white fish. It is vital that your fish fillet are dry. Wipe the fillets with a clean cloth or paper towels until they are dry and they feel sticky to the touch. Alternatively, you can place the fillets on a flat tray lined with folded cloth or paper napkins to absorb any water, and leave them uncovered in the refrigerator (not freezer) overnight.",
+      "Weigh the fish fillet after they are dried, and coat them with 1% (of the fish fillets' weight) salt by weight. For 1 kg ( i.e. 1000 g) of bhetki fillet we have used 10 g of salt. Place them in the fridge for 20–30 minutes while you prepare the marinade.",
+      "Make the mustard marinade. We will describe this step for each marinade variation in a separate section later.",
+      "Coat the fish fillets with the marinade.",
+      "Wash and cut up some banana leaves into rectangular sheets, about 20 cm by 20 cm work fine for individual bhetki fillets. Gently toast them on a pan set on medium heat. This will increase malleability of the banana leaves, ensuring that they don’t crack when folded. Remove from heat and set aside.",
+      "If making individual parcels, take a banana-leaf sheet in front of you. Spoon some mustard marinade paste in the centre of one of the sheet. Set one piece of the fish fillet on it. Top off with some more of the paste. For all four variations of marinade, top off with a slit green chilli and drizzle of raw mustard oil.",
+      "If making Version 3 (see ingredient list above) finish each parcel with a gondhoraj lime leaf on top.",
+      "Carefully wrap the fish with the banana leaf making sure that it is fully covered. If you find that your leaf is torn, wrap another layer of leaf around it. Tie this parcel up securely with a cotton string (don’t use synthetic or it will melt when heated).",
+      "If you are making one large parcel, make sure you measure the pan or tray you are going to be cooking it on, or you may end up with a parcel that does not fit or lie flat. Use at least 5 layers of banana leaves at the bottom and 3 or more on the top.",
+      "Steaming: You can steam the parcels in a single layer for ten minutes or until the internal temperature of the fillet is 62ºC.",
+      "Bake: You can bake the parcels in an oven until the fillets are white and flaky (about 62ºC). Use an instant read thermometer if you want perfectly cooked fillets.",
+      "Pan fry: You can heat a frying pan or korai (wok), coat the pan with a little vegetable oil and cook the parcel(s) for about 10 minutes. In the video we used coal fire in a clay oven. So, we also placed a few pieces of burning coals on top. This creates a mild smokey flavour."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bhetki Machh (bhetki Fillet)",
+        "unit": "kg",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kolapata (banana Leaves)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basic Mustard Paste +",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pcs Slit Green Chillies",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basic Mustard Paste +",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Charmagaz (mixed-melon Seed) Paste",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hung Curd",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pcs Slit Green Chillies",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basic Mustard Paste +",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Charmagaz (mixed-melon Seed) Paste",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gondhoraj Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pcs Slit Green Chillies",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pcs Gondhoraj Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basic Mustard Paste +",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Charmagaz (mixed-melon Seed) Paste",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Paste",
+        "unit": "g",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli Paste",
+        "unit": "g",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "g",
+        "notes": "sliced",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e48da294b1bd9ac0372360d479638407fa9344d6bb2d0273e16ee2228f592bc5",
+    "lineage_hash": "9a6381c81a2a0baa705191fc6bbfd0629fd0b6dfd4471dd6bd8da3f0c01110a2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.bongeats.com/recipe/bhetki-paturi",
+    "fetchedAt": "2026-08-01T17:24:40.138Z"
+  },
+  "rawSource": "https://www.bongeats.com/recipe/bhetki-paturi",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,105 @@
+{
+  "recipe": {
+    "name": "Biancomangiare - Almond Milk Pudding",
+    "time": "30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Almond Milk",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "organic, zested",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn Starch",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Blossom Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Passion Fruits",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almonds",
+        "unit": "g",
+        "notes": "peeled",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fbe20c52329af8348a032ebd522d19a9f797316ac7f9c4f0800a97714ac042ab",
+    "lineage_hash": "69f652b2510f0b53138d52a4b438c973a0feecc41b7a504d7b39b24f5ad2d1a4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/biancomangiare-almond-milk-pudding-recipe",
+    "fetchedAt": "2026-08-03T23:29:15.704Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/biancomangiare-almond-milk-pudding-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,152 @@
+{
+  "recipe": {
+    "name": "Sourdough Shokupan (Japanese Milk Bread)",
+    "time": "4 hr 30 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Prepare the levain – 9:00 p.m., the night before mixing. Mix the following ingredients in a container and leave them covered at a warm temperature, 74-76°F (23-24°C), to ripen overnight.",
+      "Make the tangzhong – 8:00 a.m., the day of mixing. In a medium saucepan over medium-low heat, add the 31 grams tangzhong flour and 122 grams tangzhong milk. Cook, whisking continuously, until the mixture thickens and becomes a paste (like mashed potatoes), 4 to 6 minutes. Because the tangzhong is very small, keep a close watch on it as it will thicken quickly. Remove the pan from the heat and spread the tangzhong out on a small plate to expedite cooling. Set aside.",
+      "Mix – 9:00 a.m. There is no autolyse step for this dough because the dough is quickly and effectively strengthened in my KitchenAid stand mixer. First, cut the butter into 1/2\" pats. Set them on a plate to warm to room temperature. To the bowl of a stand mixer fitted with the paddle attachment, add the flour, milk, egg, sugar, salt, ripe levain, and tangzhong. Mix on low speed (STIR on a KitchenAid) for 1 to 2 minutes until the ingredients come together and no dry bits remain. Next, switch to the dough hook attachment and mix on medium speed (2 to 3 on a KitchenAid) for 4 to 5 minutes until the dough smooths and begins to cling slightly to the hook. This is a very soft dough and won’t completely clear the sides of the bowl at this point. Let the dough rest in the bowl for 10 minutes. Turn the mixer on low speed (STIR on a KitchenAid) and mix for 2 to 4 minutes until the dough gains more strength and begins to cling once again to the dough hook. Next, with the mixer running, add the room temperature butter, one pat at a time, waiting to add each pat until the previous one is fully absorbed. Adding all the butter will take 5 to 8 minutes. In the end, the dough will still be very soft, and it won’t altogether remove from the sides of the bowl. Transfer the dough to a bulk fermentation container and cover.",
+      "Bulk fermentation – 9:30 a.m. to 1:30 p.m. (4 hours). At a warm room temperature, 74-76°F (23-24°C), bulk fermentation should take about 4 hours. If your kitchen is cooler, place your bulk container in a small home dough proofer, or extend the bulk fermentation time to give the dough more time to ferment. The dough is ready when it is smooth, puffy, and well-risen. Give this dough two strengthening sets at 30-minute intervals. The first set starts after 30 minutes from the start of bulk fermentation. Give the dough a series of stretches and folds for the first set. Wet your hands, grab one side, and stretch it up and over the dough to the other side. Next, rotate the bowl 180° and perform another stretch and fold (this forms a long rectangle in the bowl). Then, rotate the bowl 90° and do another stretch and fold. Finally, turn the bowl 180° and do one last stretch and fold. The dough should be neatly folded up in the bowl. For the second set, which starts 30 minutes after the completion of the first set, scrape the dough onto a clean counter. With wet hands, perform a few slaps and folds until the dough tightens and smooths. Then, rotate the dough with a bench scraper to form a tight ball (similar to how you’d shape a boule). Finally, transfer the dough back to the bulk fermentation container, cover, and rest for the remainder of bulk fermentation.",
+      "Divide and shape – 1:30 p.m. Grease a 9 x 4 x 4-inch Pullman pan with neutral oil. Fill a small bowl with water and place it next to your work surface. Scrape the dough onto a clean counter. Using a bench scraper in your dominant hand and other hand wet, divide the dough into three pieces, each weighing 200 grams (you will have a tiny bit of scrap leftover). Then, shape each piece into a very taut round. As you shape each piece, place it into the Pullman pan, tucking it in tight so that each subsequent piece fits.",
+      "Proof – 1:45 p.m. to 5:15 p.m. At warm room temperature, 74-76°F (23-24°C), this dough should take 3 ½ hours to fully proof. If your kitchen is cooler, expect it to take longer."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "High-protein White Flour (king Arthur Bread Flour)",
+        "unit": "g",
+        "notes": null,
+        "amount": "275",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tangzhong: High-protein White Flour (king Arthur Bread Flour)",
+        "unit": "g",
+        "notes": null,
+        "amount": "31",
+        "section": "Total formula",
+        "isOptional": false
+      },
+      {
+        "name": "Tangzhong: Whole Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "122",
+        "section": "Total formula",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "79",
+        "section": "Total formula",
+        "isOptional": false
+      },
+      {
+        "name": "Egg, Beaten (about One Medium)",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": "Total formula",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "49",
+        "section": "Total formula",
+        "isOptional": false
+      },
+      {
+        "name": "Superfine Sugar (caster Sugar)",
+        "unit": "g",
+        "notes": null,
+        "amount": "22",
+        "section": "Total formula",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "34",
+        "section": "Total formula",
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "6",
+        "section": "Total formula",
+        "isOptional": false
+      },
+      {
+        "name": "Ripe Sourdough Starter, 100% Hydration",
+        "unit": "g",
+        "notes": null,
+        "amount": "13",
+        "section": "Total formula",
+        "isOptional": false
+      },
+      {
+        "name": "High-protein White Flour (king Arthur Bread Flour)",
+        "unit": "g",
+        "notes": null,
+        "amount": "34",
+        "section": "Prepare the levain",
+        "isOptional": false
+      },
+      {
+        "name": "Superfine Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "7",
+        "section": "Prepare the levain",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "34",
+        "section": "Prepare the levain",
+        "isOptional": false
+      },
+      {
+        "name": "Ripe Sourdough Starter, 100% Hydration",
+        "unit": "g",
+        "notes": null,
+        "amount": "13",
+        "section": "Prepare the levain",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "65b2ba86103cc47f5cfdbd8a364c4ccb409a5588d94379aa87506c7fc565dca9",
+    "lineage_hash": "1581120ca0d3ec996645334095b33fe32f245c754d22ff8e77cb12608a14b227"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.theperfectloaf.com/sourdough-shokupan-japanese-milk-bread/",
+    "fetchedAt": "2026-08-01T19:20:13.125Z"
+  },
+  "rawSource": "https://www.theperfectloaf.com/sourdough-shokupan-japanese-milk-bread/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

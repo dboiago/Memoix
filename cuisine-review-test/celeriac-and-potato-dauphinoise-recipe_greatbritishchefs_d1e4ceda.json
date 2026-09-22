@@ -1,0 +1,131 @@
+{
+  "recipe": {
+    "name": "Celeriac and Potato Dauphinoise",
+    "time": "2 hr",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 180˚C fan",
+      "Wrap the whole garlic bulb in foil and roast in the oven for 30 minutes",
+      "Combine the cream, milk, nutmeg, a roasted garlic clove or two, the bay leaves, thyme and a pinch of salt and pepper in a large saucepan and bring to the boil. Once boiling, remove from the heat and remove the herbs",
+      "Grate the potatoes and celeriac using the coarse side of a box grater",
+      "Stir the grated potatoes into the cream mixture along with the celery leaves and season with salt and pepper to taste",
+      "Transfer to a baking dish and top with the grated cheddar",
+      "Bake in the oven for 45 minutes or until slightly golden on top and the potatoes are tender all the way through",
+      "Either serve immediately, or, to portion it more neatly, remove from the oven and allow to cool. Cover the dauphinoise with foil or baking paper, then weigh down with tins or any other heavy object and chill in the fridge to press for 6–12 hours",
+      "When ready to serve, reheat the dauphinoise in a 180°C fan oven for 15 minutes. Divide into four portions and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Garlic Bulb",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Nutmeg",
+        "unit": "pinches",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": "g",
+        "notes": "peeled",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celeriac",
+        "unit": "g",
+        "notes": "peeled",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Celery Leaves",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Cheddar",
+        "unit": null,
+        "notes": "grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c88c8bcedbffa1b8215d1bc0c323b4b2c05fab6f927b4b2286fd1f8ea14d31c1",
+    "lineage_hash": "a575bfb10d098ecd3972ea64f151e3ddf51e2865cd848d5f68c3503a7211adac"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/celeriac-potato-dauphinoise-recipe",
+    "fetchedAt": "2026-08-02T04:50:42.712Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/celeriac-potato-dauphinoise-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

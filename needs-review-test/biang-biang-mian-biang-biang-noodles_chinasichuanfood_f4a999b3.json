@@ -1,0 +1,140 @@
+{
+  "recipe": {
+    "name": "Biang Biang Mian (Biang Biang Noodles)",
+    "time": "1 hr 15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "759",
+      "carbohydrateContent": "122",
+      "fatContent": "21",
+      "proteinContent": "19"
+    },
+    "directions": [
+      "make the dough. I will recommend measuring the ingredients to get the best results.",
+      "In a large bowl, mix salt with flour. And stir in water in batches. I usually add 135ml first and then see whether the dough is too tough to knead. Less water indicates a chewier taste. Grasp everything by hand and continue kneading the dough until smooth. Forcefully please or resort to a standard mixer. Cover with a plastic wrapper and rest for 20 minutes.",
+      "Knead the dough again for several minutes until the surface is really smooth as I show in the video. Cover with plastic wrapper again and rest for another 15-20 minutes",
+      "Prepare a plate and brush some vegetable oil on the surface. And then cut the noodle dough into halves and each half into 6 portions (as equal as possible and cover the other half with a plastic wrapper to avoid drying out ). So we will end up with 12 portions.",
+      "Shape each one into a long log and brush the oil around. Cover with a plastic wrapper and let the noodle strip log rest for 1 hour.",
+      "Take one portion out, flat it, and roll it out to a rectangle. Press the center with a chopstick so we can separate the noodles later. Hold the two ends of the noodle strip and smash it against the operating board. You can slightly stretch it during the smashing process. But do not hurry; slow down so that you will not break it.",
+      "Separate the noodles along with the chop sticker trace.",
+      "Now we get the wide, thick Chinese noodles.",
+      "Boil water in a pot and add noodles. If you feel they shrink, stretch each strip slightly. Bring the large pot to a boil.",
+      "Add cold water once after it boils again.",
+      "And then add green vegetables to the blanch. The whole process of cooking lasts for around 4 minutes. Transfer out to serving bowl.",
+      "Heat up 2 tablespoons of cooking oil in a small pot until slightly smoky.",
+      "Place garlic, green onion, and chili peppers on top and pour the hot oil over the noodles (mainly on the chili powders). Add soy sauce and vinegar and combine well."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "300 G All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "Noodle dough",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": "Noodle dough",
+        "isOptional": false
+      },
+      {
+        "name": "To 140ml Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "130",
+        "section": "Noodle dough",
+        "isOptional": false
+      },
+      {
+        "name": "Chili Powder+pinch of Salt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Assemble the noodles",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Assemble the noodles",
+        "isOptional": false
+      },
+      {
+        "name": "Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Assemble the noodles",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "minced",
+        "amount": "2",
+        "section": "Assemble the noodles",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion",
+        "unit": null,
+        "notes": "minced",
+        "amount": "2",
+        "section": "Assemble the noodles",
+        "isOptional": false
+      },
+      {
+        "name": "Green Vegetable for Blanching",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Assemble the noodles",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Cooking Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Assemble the noodles",
+        "isOptional": false
+      },
+      {
+        "name": "Oil for Brushing",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Assemble the noodles",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a5925bb4cdf6ec85e1f51e049348cc34b219efa3f44c5aa302361a96532aa76c",
+    "lineage_hash": "3ccc60a24948b1e9ddbc98a3cc43bad0549b2341c3ae75d86ebfae20724f09ff"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/biang-biang-mian-biang-biang-noodles/",
+    "fetchedAt": "2026-08-02T00:30:19.626Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/biang-biang-mian-biang-biang-noodles/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,125 @@
+{
+  "recipe": {
+    "name": "Eggless French Toast",
+    "time": "25 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "202",
+      "carbohydrateContent": "36",
+      "fatContent": "3",
+      "proteinContent": "6"
+    },
+    "directions": [
+      "To a large bowl (make sure it&#039;s large enough for the bread to fit it else use a shallow baking dish) add milk and then add cornstarch.Also add sugar. You can add an extra tablespoon if you prefer sweeter French toast.",
+      "Followed by vanilla extract, cinnamon powder, nutmeg, cardamom powder and pinch of salt. Mix until everything is combined.",
+      "Heat a skillet on medium heat. Add 1/2 to 1 tablespoon butter onto the skillet and let it melt. Now, take your bread and dip it into the liquid mixture. Make sure to stir the mixture before dipping the bread into it (do this each time before dipping the bread since cornstarch settles at the bottom).",
+      "Dip one side for few seconds and then flip and dip the other side as well until the bread is well coated.",
+      "Carefully place the soaked bread onto the skillet. Fry for 3 to 4 minutes on one side.Then flip and fry the other side as well until both sides are golden brown in color. Repeat with all the remaining bread. Remember to wipe the skillet after frying each slice and add more butter every time.",
+      "Serve with berries, maple syrup and butter!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Milk",
+        "unit": "C",
+        "notes": "8 0z/240 ml",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": "36 grams",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated White Sugar",
+        "unit": "Tbsp",
+        "notes": "25 grams",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thick Bread Slices",
+        "unit": null,
+        "notes": null,
+        "amount": "6-8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strawberries",
+        "unit": null,
+        "notes": "maple syrup, butter, for serving",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1b287a75c6cc9af5c71551a2015d71d878d6b3f1325e70baae959fd8cec128d0",
+    "lineage_hash": "bc1c19211ee8de51335c8ced46a77dec3599bc7eebaa7e8a087582f5ea26a59f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/eggless-french-toast/",
+    "fetchedAt": "2026-08-02T07:56:11.424Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/eggless-french-toast/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

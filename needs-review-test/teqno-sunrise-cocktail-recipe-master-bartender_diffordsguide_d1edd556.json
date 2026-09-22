@@ -1,0 +1,81 @@
+{
+  "recipe": {
+    "name": "Teqno Sunrise",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": null,
+    "glass": "Fizz or Highball",
+    "garnish": [],
+    "subcategory": "Liqueur",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bols Pomegranate",
+        "unit": "ml",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bols Triple Sec Liqueur",
+        "unit": "ml",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fluère Smoked Agave (non-alc. Mezcal Alternative)",
+        "unit": "ml",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rooibos Lapsang Tea Low Sugar Cordial",
+        "unit": "ml",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Riemerschmid Grenadine Sirup",
+        "unit": "ml",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Homemade Orange Soda",
+        "unit": "ml",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5eec3b7fffe9cba42744723788b1db6f59f99d82196ae5db846918d53343fdae",
+    "lineage_hash": "5287e69200ecd66a6b5c7d39803eeab898b7d18c4e4ae0b9d2af2b1deb41df1e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/40195/teqno-sunrise",
+    "fetchedAt": "2026-08-04T10:19:52.871Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/40195/teqno-sunrise",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}
