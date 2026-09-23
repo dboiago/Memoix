@@ -1,0 +1,53 @@
+{
+  "url": "https://mykoreankitchen.com/pickled-radish-paper/",
+  "slug": "pickled-radish-paper-ssam-mu_mykoreankitchen_247d6af2",
+  "title": "Pickled Radish Paper (Ssam-Mu)",
+  "byline": "Sue",
+  "fetchedAt": "2026-08-02T03:09:37.832Z",
+  "ldName": "Pickled Radish Paper (Ssam-Mu)",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "20"
+  ],
+  "ldCuisine": "Korean",
+  "ldCategory": "Side dishes",
+  "ldKeywords": "korean pickled radish, pickled radish, radish paper, Ssam-Mu",
+  "ldIngredientsRaw": [
+    "500 g radish (, Korean or daikon radish (round and stout), (1.1 pounds), peeled and ends trimmed)",
+    "1 cup water",
+    "1/2 cup white sugar",
+    "1/2 cup white vinegar",
+    "1 tsp fine sea salt"
+  ],
+  "ldInstructionsRaw": [
+    "Use a mandoline slicer to thinly slice the radish into rounds that are about 0.3cm / 0.1 inch in thickness. Place the slices into a sterilized wide-base glass jar.",
+    "Combine the water, sugar, vinegar, and salt in a saucepan. Heat over low to medium-low heat, stirring, just until the sugar dissolves (about 2 to 3 minutes). A gentle simmer is fine, but boiling is not necessary.",
+    "Pour the brine over the sliced radish and close the lid. Leave the jar at room temperature for 3 to 4 hours then refrigerate. The pickled radish should be ready to eat within 1 to 2 days.",
+    "Serve chilled with your favorite meal (e.g. Korean BBQ pork). It can be refrigerated in an air tight container for several weeks."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "24 kcal",
+    "carbohydrateContent": "6 g",
+    "proteinContent": "0.2 g",
+    "fatContent": "0.04 g",
+    "saturatedFatContent": "0.01 g",
+    "sodiumContent": "127 mg",
+    "fiberContent": "0.4 g",
+    "sugarContent": "5 g",
+    "unsaturatedFatContent": "0.014 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 500 g radish , Korean or daikon radish (round and stout), (1.1 pounds), peeled and ends trimmed",
+    "▢ 1 cup water",
+    "▢ 1/2 cup white sugar",
+    "▢ 1/2 cup white vinegar",
+    "▢ 1 tsp fine sea salt"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "KR",
+  "siteCourseHint": null
+}

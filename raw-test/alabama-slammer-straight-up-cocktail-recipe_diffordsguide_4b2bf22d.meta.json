@@ -1,0 +1,41 @@
+{
+  "url": "https://www.diffordsguide.com/cocktails/recipe/29/alabama-slammer-straight-up",
+  "slug": "alabama-slammer-straight-up-cocktail-recipe_diffordsguide_4b2bf22d",
+  "title": "Alabama Slammer (straight-up) Cocktail Recipe",
+  "byline": "",
+  "fetchedAt": "2026-08-01T16:44:04.410Z",
+  "ldName": "Alabama Slammer (straight-up)",
+  "ldTime": "PT02M0S",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": [
+    "1",
+    "1 cocktail"
+  ],
+  "ldCuisine": "Cocktail",
+  "ldCategory": "Drink",
+  "ldKeywords": [
+    "Alabama Slammer (straight-up)"
+  ],
+  "ldIngredientsRaw": [
+    "45 ml Vodka",
+    "22.5 ml Southern liqueur",
+    "30 ml Orange juice",
+    "7.5 ml Grenadine syrup"
+  ],
+  "ldInstructionsRaw": [
+    "Select and pre-chill a MARTINI GLASS.",
+    "Prepare garnish of orange zest twist.",
+    "SHAKE all ingredients with ice.",
+    "FINE STRAIN into chilled glass.",
+    "EXPRESS orange zest twist over the cocktail and use as garnish."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "192 calories"
+  },
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": null,
+  "siteCourseHint": "Drinks"
+}

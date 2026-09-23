@@ -1,0 +1,41 @@
+{
+  "url": "https://www.diffordsguide.com/cocktails/recipe/4275/alabama-slammer-shot",
+  "slug": "alabama-slammer-shot-cocktail-recipe_diffordsguide_493a3bd7",
+  "title": "Alabama Slammer (shot) Cocktail Recipe",
+  "byline": "",
+  "fetchedAt": "2026-08-03T13:06:52.532Z",
+  "ldName": "Alabama Slammer (shot)",
+  "ldTime": "PT01M0S",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": [
+    "1",
+    "1 cocktail"
+  ],
+  "ldCuisine": "Cocktail",
+  "ldCategory": "Drink",
+  "ldKeywords": [
+    "Shot cocktails"
+  ],
+  "ldIngredientsRaw": [
+    "15 ml Amaretto liqueur",
+    "15 ml Southern liqueur",
+    "15 ml Sloe gin liqueur",
+    "7.5 ml Orange juice",
+    "7.5 ml Lemon juice"
+  ],
+  "ldInstructionsRaw": [
+    "Select and pre-chill a SHOT GLASS.",
+    "Prepare garnish of split Luxardo Maraschino Cherry on rim.",
+    "SHAKE all ingredients with ice.",
+    "FINE STRAIN into chilled glass."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "132 calories"
+  },
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": null,
+  "siteCourseHint": "Drinks"
+}

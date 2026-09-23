@@ -1,0 +1,59 @@
+{
+  "url": "https://omnivorescookbook.com/stir-fried-garlic-scape-with-eggs/",
+  "slug": "stir-fried-garlic-scape-with-eggs_omnivorescookbook_3657e9ea",
+  "title": "Stir Fried Garlic Scape with Eggs (蒜苔炒鸡蛋)",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-01T21:41:08.467Z",
+  "ldName": "Stir Fried Garlic Scape with Eggs (蒜苔炒鸡蛋)",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "2",
+    "2 to 4 servings"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Main, Side",
+  "ldKeywords": "homestyle",
+  "ldIngredientsRaw": [
+    "2 tablespoons vegetarian oyster sauce ((or regular oyster sauce))",
+    "2 teaspoons soy sauce",
+    "1 1/2 tablespoon peanut oil ((or vegetable oil))",
+    "4  egg (, beaten)",
+    "1/2  thumb ginger (, minced)",
+    "2  green onion (, sliced (Reserve a small portion for garnish))",
+    "12 oz (340 g) garlic scapes (, sliced to 1” (2.5 cm) pieces (Yield 2 2/1 cup once cut))"
+  ],
+  "ldInstructionsRaw": [
+    "Mix the oyster sauce and soy sauce together in a small bowl. Set aside.",
+    "Heat 1 tablespoon of oil in a large skillet over medium-high heat until hot. Add the eggs. Let cook for a few seconds until the bottom sets. Scramble the eggs lightly until just cooked through, then transfer them to a plate and set aside.",
+    "Add the remaining 1/2 tablespoon of oil, ginger and green onion. Stir a few times to release the fragrance.",
+    "Add the garlic scapes. Stir and cook for 2 minutes, until it starts to soften if using Asian garlic scapes. Cook for a longer time if using US garlic scapess (*Footnote 1). Pour in the oyster sauce mixture and stir a few times to mix well. Taste a piece of garlic scape. It should be tender but still a bit crisp. You can cook it longer for a more tender texture, if you prefer.",
+    "Return the eggs to the pan. Stir and cook for another 30 seconds. Transfer everything to a large serving plate. Garnish with the remaining fresh green onions, if using. Serve hot over rice as a main dish or as a side dish."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "242 kcal",
+    "carbohydrateContent": "29.9 g",
+    "proteinContent": "11.4 g",
+    "fatContent": "9.9 g",
+    "saturatedFatContent": "2.3 g",
+    "cholesterolContent": "164 mg",
+    "sodiumContent": "282 mg",
+    "fiberContent": "2.1 g",
+    "sugarContent": "1.4 g"
+  },
+  "htmlIngredientLines": [
+    "2 tablespoons vegetarian oyster sauce (or regular oyster sauce)",
+    "2 teaspoons soy sauce",
+    "1 1/2 tablespoon peanut oil (or vegetable oil)",
+    "4 egg , beaten",
+    "1/2 thumb ginger , minced",
+    "2 green onion , sliced (Reserve a small portion for garnish)",
+    "12 oz (340 g) garlic scapes , sliced to 1” (2.5 cm) pieces (Yield 2 2/1 cup once cut)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

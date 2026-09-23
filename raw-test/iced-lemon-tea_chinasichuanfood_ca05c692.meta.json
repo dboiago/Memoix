@@ -1,0 +1,54 @@
+{
+  "url": "https://www.chinasichuanfood.com/iced-lemon-tea/",
+  "slug": "iced-lemon-tea_chinasichuanfood_ca05c692",
+  "title": "Iced Lemon Tea",
+  "byline": "",
+  "fetchedAt": "2026-08-02T08:51:09.767Z",
+  "ldName": "How to Make Lemon Tea",
+  "ldTime": "PT5M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": null,
+  "ldCategory": null,
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "2 tbsp. Black or Green Tea ( ,or 1 bag loose leaves)",
+    "1  Fresh Lemon",
+    "1  long lime",
+    "300 ml Hot Water",
+    "2 tbsp.  rock syrup or other syrup"
+  ],
+  "ldInstructionsRaw": [
+    "Steep the tea base: Add water to the tea mixture. If you are using black tea, add hot boiling water. Cover the lid and steep for 10 minutes.",
+    "Strain the tea base out. I love to add some ice cubes to cool down the base quickly.",
+    "Cut lemon int and lime into slices around 1 cm thick and then pick the seeds out.",
+    "Place lemon and lime slices along with ice cubes in a shaking cup, and use a muddler to break the lemon juice and flavors from the skin.",
+    "Pour in the black tea base and add syrup. Combine well by either shaking or stirring. Then transfer to serving cups."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "57 kcal",
+    "carbohydrateContent": "16 g",
+    "proteinContent": "1 g",
+    "fatContent": "0.2 g",
+    "saturatedFatContent": "0.02 g",
+    "sodiumContent": "18 mg",
+    "fiberContent": "2 g",
+    "sugarContent": "13 g",
+    "unsaturatedFatContent": "0.11 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "2 tbsp. Black or Green Tea  ,or 1 bag loose leaves",
+    "1 Fresh Lemon",
+    "1 long lime",
+    "300 ml Hot Water",
+    "2 tbsp.  rock syrup or other syrup"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

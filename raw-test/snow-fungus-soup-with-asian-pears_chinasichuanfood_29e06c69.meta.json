@@ -1,0 +1,50 @@
+{
+  "url": "https://www.chinasichuanfood.com/snow-fungus-soup/",
+  "slug": "snow-fungus-soup-with-asian-pears_chinasichuanfood_29e06c69",
+  "title": "Snow Fungus Soup with Asian Pears",
+  "byline": "",
+  "fetchedAt": "2026-08-01T15:37:20.913Z",
+  "ldName": "Snow Fungus Soup",
+  "ldTime": "PT270M",
+  "ldPrepTime": "PT240M",
+  "ldCookTime": "PT30M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Dessert, Soup",
+  "ldKeywords": "Snow Fungus",
+  "ldIngredientsRaw": [
+    "dried snow fungus ( ,25g (around 3/4 head, remove the yellow end)",
+    "5-7  red dates",
+    "1 tbsp. goji berries",
+    "30 g rock sugar  (or more based on personal preference)",
+    "2 L water ( ,for high pressure cooker or 2L for regular cooker)",
+    "1  Asian pear ( , peeled and cut into small cubes )"
+  ],
+  "ldInstructionsRaw": [
+    "Soak snow fungus firstly until soft (around 30 minutes ). Then move the yellow end. Hand shred into small chunks.",
+    "Instant pot version",
+    "Regular pot version"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "2 g",
+    "calories": "199 kcal",
+    "carbohydrateContent": "44 g",
+    "proteinContent": "1 g",
+    "sodiumContent": "40 mg",
+    "sugarContent": "24 g"
+  },
+  "htmlIngredientLines": [
+    "dried snow fungus  ,25g (around 3/4 head, remove the yellow end",
+    "5-7 red dates",
+    "1 tbsp. goji berries",
+    "30 g rock sugar  or more based on personal preference",
+    "2 L water  ,for high pressure cooker or 2L for regular cooker",
+    "1 Asian pear  , peeled and cut into small cubes"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

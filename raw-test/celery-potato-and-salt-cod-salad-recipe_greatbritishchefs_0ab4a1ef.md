@@ -1,0 +1,3 @@
+This is a recipe where the three core ingredients really stand out on their own and sit harmoniously next to one another. Salty cod, soothing, gentle potato and aromatic, crunchy celery. This could be served as a delicious starter or a light lunch. Any leftovers can be fried up to make a wonderful hash with a fried egg.
+
+The dish would also work wonderfully with sliced octopus instead of salt cod. You could also try it with ox tongue, cut into slices slightly larger than the celery. In this instance replace the lemon juice with two tablespoons of red wine vinegar, and add a generous teaspoon of Dijon mustard when dressing the potatoes.

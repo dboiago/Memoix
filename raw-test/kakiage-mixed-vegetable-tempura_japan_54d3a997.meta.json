@@ -1,0 +1,55 @@
+{
+  "url": "https://japan.recipetineats.com/kakiage-mixed-vegetable-tempura/",
+  "slug": "kakiage-mixed-vegetable-tempura_japan_54d3a997",
+  "title": "Kakiage (Mixed Vegetable Tempura)",
+  "byline": "Yumiko",
+  "fetchedAt": "2026-08-01T22:25:24.018Z",
+  "ldName": "Kakiage (Mixed Vegetable Tempura)",
+  "ldTime": "PT20M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT15M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "Japanese",
+  "ldCategory": "Main",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "120 ml of ½ egg + cold water ((note 1))",
+    "6 tbsp flour",
+    "A pinch of salt",
+    "Oil for deep fry",
+    "20 g dried small anchovies ((note 3))",
+    "50 g carrots (, cut to 3mm thick, 5 cm long sticks (note 4))",
+    "2  stems of shallots ((scallions), thinly sliced diagonally)",
+    "50 g frozen shredded burdock or fresh burdock finely julienned",
+    "Tempura dipping sauce ((note 5))"
+  ],
+  "ldInstructionsRaw": [
+    "Add the egg and cold water to a large bowl and mix well to make egg water.",
+    "Add flour to the bowl and gently mix by drawing the number 8 several times leaving powdery lumps of flour.",
+    "Add Kakiage ingredients to the bowl and mix gently to coat the vegetable with the batter, trying not to lose powdery lumps of flour.",
+    "Fill a deep frypan or a pot with oil up to a minimum depth of 3cm (1¼“) and heat the oil to 170C (335F). Drop a tiny amount of batter onto the surface, and if it hardly touches the bottom and returns to the surface, it is at the right temperature.",
+    "Place 1/6 of the tempura mixture on to a flat spatula spreading evenly (note 6), then using cooking chopsticks or a fork, gently slide the mixture onto the oil.",
+    "Cook for about 1.5 minutes, then turn it over and cook further 1 minute (note 7). Transfer to a tray/plate lined with two layers of kitchen papers to absorb the excess oil.",
+    "Repeat for the rest of kakiage mixture. If your frypan/pot is large, you could fry 2-3 kakiage at once but ensure that you do not overcrowd as it will bring down the temperature of the oil too much resulting in soggy tempura. I used a 24cm frypan and fried only two kakiage at a time.",
+    "Serve while hot with dipping sauce."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "120\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tml\n\t\t\t\t\t\t\t\t\t\tof ½ egg + cold water\n\t\t\t\t\t\t\t\t\t\t(note 1)",
+    "6\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\ttbsp\n\t\t\t\t\t\t\t\t\t\tflour",
+    "A pinch of salt",
+    "Oil for deep fry",
+    "[Kakiage Ingredients (note 2)]",
+    "20\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tg\n\t\t\t\t\t\t\t\t\t\tdried small anchovies\n\t\t\t\t\t\t\t\t\t\t(note 3)",
+    "50\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tg\n\t\t\t\t\t\t\t\t\t\tcarrots\n\t\t\t\t\t\t\t\t\t\t, cut to 3mm thick, 5 cm long sticks (note 4)",
+    "2\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tstems of shallots\n\t\t\t\t\t\t\t\t\t\t(scallions), thinly sliced diagonally",
+    "50\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tg\n\t\t\t\t\t\t\t\t\t\tfrozen shredded burdock or fresh burdock finely julienned",
+    "[Serving]",
+    "Tempura dipping sauce\n\t\t\t\t\t\t\t\t\t\t(note 5)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "JP",
+  "siteCourseHint": null
+}

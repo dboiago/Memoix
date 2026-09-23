@@ -1,0 +1,65 @@
+{
+  "url": "https://www.cookwithmanali.com/eggless-lemon-cake/",
+  "slug": "eggless-lemon-cake_cookwithmanali_42f7f730",
+  "title": "Eggless Lemon Cake",
+  "byline": "Manali Singh",
+  "fetchedAt": "2026-08-02T09:22:02.252Z",
+  "ldName": "Eggless Lemon Cake",
+  "ldTime": "PT55M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT40M",
+  "ldYield": [
+    "8"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Dessert",
+  "ldKeywords": "eggless lemon cake",
+  "ldIngredientsRaw": [
+    "2 cups all purpose flour (260 grams)",
+    "1 &amp; 1/2 teaspoon baking powder",
+    "1/2 cup butter (salted, 113 grams, at room temperature)",
+    "3/4 cup granulated white sugar (150 grams)",
+    "1  tablespoon lemon zest",
+    "1/2 teaspoon vanilla extract",
+    "1/2 cup + 2 tablespoons plain yogurt (150 grams, at room temperature)",
+    "1/2 + 1/8 teaspoon baking soda",
+    "2 tablespoons lemon juice (30 ml)",
+    "1/2 cup milk (120 ml, at room temperature, I used whole milk)"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat the oven to 350 F degrees. Also prepare your baking pan (8 x 4 inch loaf pan) by spraying it with non stick oil spray. In a large bowl, sift the flour and baking powder. Set this aside.",
+    "Add room temperature butter and sugar to the steel bowl of your stand mixer (or use your hand mixer). Using the paddle attachment, beat the butter and sugar on medium speed for 3 minutes until pale and fluffy. Then add the lemon zest and vanilla and mix until combined.",
+    "To another bowl or measuring jar, combine yogurt with baking soda. Stir and wait for a few seconds. The yogurt and soda will react and the mixture will rise and become bubbly. Now, add this to your stand mixer with everything else and mix using the paddle attachment. Add lemon juice and mix that as well.",
+    "Add flour mixture in 2 parts alternating with milk and mix until everything is combined. Do not overmix the batter at this point. Transfer the batter to the prepared pan and bake at 350 F degrees for 40 to 42 minutes or until a toothpick inserted in the center comes out clean. Let the cake cool completely on a wire rack, then slice and enjoy."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "309 kcal",
+    "carbohydrateContent": "45 g",
+    "proteinContent": "5 g",
+    "fatContent": "13 g",
+    "saturatedFatContent": "8 g",
+    "transFatContent": "0.5 g",
+    "cholesterolContent": "34 mg",
+    "sodiumContent": "125 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "21 g",
+    "unsaturatedFatContent": "4 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 2 cups all purpose flour, 260 grams",
+    "▢ 1 & 1/2 teaspoon baking powder",
+    "▢ 1/2 cup butter, salted, 113 grams, at room temperature",
+    "▢ 3/4 cup granulated white sugar, 150 grams",
+    "▢ 1  tablespoon lemon zest",
+    "▢ 1/2 teaspoon vanilla extract",
+    "▢ 1/2 cup + 2 tablespoons plain yogurt, 150 grams, at room temperature",
+    "▢ 1/2 + 1/8 teaspoon baking soda",
+    "▢ 2 tablespoons lemon juice, 30 ml",
+    "▢ 1/2 cup milk, 120 ml, at room temperature, I used whole milk"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "IN",
+  "siteCourseHint": null
+}

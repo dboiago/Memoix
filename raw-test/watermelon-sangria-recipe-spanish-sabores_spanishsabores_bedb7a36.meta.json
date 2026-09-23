@@ -1,0 +1,53 @@
+{
+  "url": "https://spanishsabores.com/watermelon-sangria-recipe/",
+  "slug": "watermelon-sangria-recipe-spanish-sabores_spanishsabores_bedb7a36",
+  "title": "Watermelon Sangria Recipe - Spanish Sabores",
+  "byline": "Lauren Aloise",
+  "fetchedAt": "2026-08-02T08:07:07.847Z",
+  "ldName": "Watermelon Sangria Recipe",
+  "ldTime": "PT70M",
+  "ldPrepTime": "PT70M",
+  "ldCookTime": null,
+  "ldYield": [
+    "8",
+    "8 glasses"
+  ],
+  "ldCuisine": "Spanish",
+  "ldCategory": "Cocktail",
+  "ldKeywords": "easy watermelon cocktail, how to make sangria, watermelon sangria",
+  "ldIngredientsRaw": [
+    "4 pound 1.8 kg watermelon, cut into small cubes or slices, rind removed",
+    "1 to 1 1/2 cups honey (or sugar, depending on how sweet you like it)",
+    "1 750 mL bottle of dry unoaked white wine",
+    "1 cup vodka",
+    "1/2 cup fresh lime juice"
+  ],
+  "ldInstructionsRaw": [
+    "Using a blender, combine the watermelon pieces and honey until smooth.",
+    "Pour the watermelon/honey mixture through a fine mesh sieve into a large cocktail pitcher. Press any solids that get caught in the sieve with a spatula to release any last juices, and then discard.",
+    "Add the white wine, vodka, and lime juice to the pitcher and stir well to combine. Taste for sweetness and acidity and adjust as necessary with more honey or lime juice. If it tastes too strong for your liking, add 1 to 2 cups of chilled water to dilute and then mix again.",
+    "Chill in the fridge for at least 1 hour before serving."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "411.33 kcal",
+    "carbohydrateContent": "73.21 g",
+    "proteinContent": "1.7 g",
+    "fatContent": "0.35 g",
+    "saturatedFatContent": "0.04 g",
+    "sodiumContent": "10.11 mg",
+    "fiberContent": "1.09 g",
+    "sugarContent": "67.41 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 4 pound 1.8 kg watermelon, cut into small cubes or slices, rind removed",
+    "▢ 1 to 1 ½ cups honey or sugar, depending on how sweet you like it",
+    "▢ 1 750 mL bottle of dry unoaked white wine",
+    "▢ 1 cup vodka",
+    "▢ ½ cup fresh lime juice"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "ES",
+  "siteCourseHint": "Mains"
+}

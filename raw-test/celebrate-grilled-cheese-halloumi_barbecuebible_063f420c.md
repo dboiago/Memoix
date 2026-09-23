@@ -1,0 +1,24 @@
+### [World BBQ](https://barbecuebible.com/category/blog-categories/world-bbq/)
+
+![Halloumi cheese](https://d21klxpge3tttg.cloudfront.net/wp-content/uploads/2017/01/HALLOUMI-630x407.jpg)   January 20, 2017
+
+Here’s something to go with the presidential inauguration: According to Foodimentary, today has been declared National Cheese Lover’s Day.
+
+It’s an easy holiday to love, granting permission to American cheese beasts to indulge in one or more of their favorite cheeses. Perhaps your cravings are satisfied by the processed cellophane-wrapped singles of your youth. Or maybe you’ve graduated to runny and pungent washed rind cheeses such as Italy’s Taleggio or [Red Hawk from California’s Cowgirl Creamery](http://barbecuebible.com/product/cowgirl-creamery-red-hawk-washed-rind-cheese/).
+
+But I’d like to single out a cheese that doesn’t get a lot of attention in the U.S., a cheese made since Byzantine times on Cyprus in the Mediterranean sea: Halloumi, pronounced “ha loom’ ee”. So revered is [Halloumi](http://barbecuebible.com/product/grilling-cheese-assortment/) in this island culture that per capita consumption per year is nearly 18 pounds. For me, the main attraction is that the cheese has a high melting point, meaning it can be grilled without collapsing through the bars of the grill grate. You can even fry it on a _[plancha](http://barbecuebible.com/product/best-barbecue-cast-iron-griddle/)_.
+
+Primarily made of sheep’s milk and goat’s milk (post-20th century versions of Halloumi often include cow’s milk as well), this salty white cheese has a toothsome, almost squeaky texture. The outside caramelizes to an appetizing golden-brown where it makes contact with the heat—notice the grill marks in the photo above—while the inside softens somewhat. It is usually sold in vacuum-packaged slabs in a small amount of brine. Halloumi’s versatility has endeared it not only to Cypriots, who enjoy it for breakfast with smoked pork loin called _lounza_, but to Middle Eastern countries and improbably, Great Britain.
+
+Here are some terrific ways to enjoy this remarkable cheese. (Please note: Before cooking, drain off the brine and lightly pat the cheese dry with paper towels.)
+
+-   Slice the cheese (about 12 ounces) into 3/4-inch slabs. Brush on both sides with a good-quality olive oil. Preheat the grill to medium-high and grill the cheese for 2 to 3 minutes per side, turning 90 degrees after the first minute or two for a handsome crosshatch of grill marks. For serving, shingle the cheese on a platter, drizzle with additional olive oil, and sprinkle with coarse salt. Serves 4 as an appetizer or _meze_.
+-   Grill the cheese as described above, but drizzle with honey and omit the salt. Serve with grilled bread.
+-   The Parthenon restaurant in Chicago’s Greektown debuted this dish in 1968: Grill the cheese as described above and arrange on a heatproof platter. Preferably wearing [extra-long grilling gloves](http://barbecuebible.com/product/best-barbecue-ultimate-suede-grilling-gloves/), pour a small amount (about 1/2 cup) of slightly warmed ouzo or metaxa (Greek brandy) over the cheese and carefully flame with a long-stemmed match. Douse with a squirt of fresh lemon juice. Serve immediately.
+-   Make a marinade: Combine the juice of 1 lemon with 1/2 teaspoon salt, 1/4 teaspoon red hot pepper flakes, 1 tablespoon chopped fresh dill or other herbs, and 6 tablespoons of olive oil. Arrange the slabs of Halloumi in a single layer in a nonreactive baking dish. Pour the marinade over the cheese, gently turning to coat it on all sides with the marinade. Let marinate for 1 to 2 hours. Grill as described above.
+-   Double the marinade recipe above. Cut the cheese into 1-inch cubes along with onions, bell peppers, zucchini or yellow squash, or mushrooms. (Make sure the cheese cubes and vegetables are the same size.) Marinate the cheese and vegetables for 2 hours. Thread the Halloumi and vegetables on skewers ([bamboo or metal skewers](http://barbecuebible.com/product-type/skewers/)). Grill for 1 to 2 minutes per side, or until the cheese is lightly browned and the vegetables are tender-crisp.
+-   Grill Halloumi as directed above and serve with cubes or slices of melon. In Cyprus, the combination of cool watermelon and Halloumi is classic, but use whatever melon is in season.
+-   Substitute cubes of grilled Halloumi for smoked mozzarella in my take on [Caprese Salad](http://barbecuebible.com/recipe/hay-smoked-mozzarella/).
+-   Top a Portobello burger with a slice of grilled Halloumi. (Note: Because it contains rennet, Halloumi is not suitable for vegetarians.)
+
+**[Read about other cheeses that can be grilled.](http://barbecuebible.com/2015/04/24/best-cheeses-for-grilling/)**
