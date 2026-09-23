@@ -619,6 +619,47 @@ function looksLikeRealIngredientLines(lines) {
   return failing.length <= Math.max(1, Math.floor(lines.length * 0.2));
 }
 
+// Deterministic last-resort recovery for when both the model and
+// ldInstructionsRaw come up with zero directions, but the raw markdown
+// itself has an unambiguous "## Method"/"## Instructions"-style heading
+// followed by one or more numbered step lists. Confirmed necessary on
+// bongeats.com's Bhetki Paturi: a real "## Method" heading with three
+// numbered sub-lists under nested "###" subheadings (~17 real steps total)
+// sat untouched in the raw markdown while the whole-page model call
+// returned zero directions -- same deterministic input as an earlier run
+// that extracted all 17 correctly, i.e. an LLM recall miss on a long,
+// bullet-heavy page, not missing content. Deliberately narrow: only
+// numbered ("1.", "2.", ...) list items count, gathered across any nested
+// subheadings until the next same-or-shallower heading, and every
+// candidate still has to pass isRealInstructionLine -- this never invents
+// steps, it only recovers ones already sitting in an unambiguous heading.
+const METHOD_HEADING_PATTERN = /^(#{1,6})\s*(method|instructions?|directions?|steps?|preparation|how to make)\b/i;
+function extractMarkdownDirections(markdown) {
+  if (!markdown) return null;
+  const lines = markdown.split('\n');
+  const startIdx = lines.findIndex(l => METHOD_HEADING_PATTERN.test(l.trim()));
+  if (startIdx === -1) return null;
+  const level = lines[startIdx].trim().match(METHOD_HEADING_PATTERN)[1].length;
+  const boundaryPattern = new RegExp(`^#{1,${level}}\\s`);
+  let endIdx = lines.length;
+  for (let i = startIdx + 1; i < lines.length; i++) {
+    if (boundaryPattern.test(lines[i].trim())) { endIdx = i; break; }
+  }
+  const steps = [];
+  for (const line of lines.slice(startIdx + 1, endIdx)) {
+    const m = line.trim().match(/^\d+\.\s+(.+)$/);
+    if (!m) continue;
+    const cleaned = m[1]
+      .replace(/\*\*(.+?)\*\*/g, '$1')
+      .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+      .replace(INVISIBLE_CHAR_PATTERN, '')
+      .trim();
+    if (cleaned) steps.push(cleaned);
+  }
+  if (steps.length < 2 || !looksLikeRealInstructionLines(steps)) return null;
+  return steps.filter(isRealInstructionLine);
+}
+
 function buildPayload(extracted, meta) {
   const { name, time, serves, course, cuisine, region, glass, garnish, subcategory, ingredients, directions, nutrition } = extracted;
   const nullIfEmpty = s => (s && s.trim() ? s.trim() : null);
@@ -2064,14 +2105,23 @@ async function main() {
       }
 
       if (extracted.ingredients.length > 0 && extracted.directions.length === 0) {
-        // Not a hard failure: real recipe content exists, the source page
-        // just has no actual step-by-step method text (confirmed on the mac
-        // and cheese recipe, 2026-07-22, where directions were previously
-        // fabricated rather than left empty). Flagged so it surfaces for
-        // manual attention instead of silently shipping with no directions.
-        logForReview(slug, meta.url, 'no-directions-found',
-          '(whole recipe)', 'Ingredients present but no method/directions text found in source content.');
-        flaggedForReview = true;
+        // Try a deterministic markdown-based recovery before giving up --
+        // see extractMarkdownDirections for why (LLM recall miss on
+        // content that's actually present, not content genuinely absent).
+        const recoveredDirections = extractMarkdownDirections(markdown);
+        if (recoveredDirections) {
+          extracted.directions = recoveredDirections;
+          console.log(`  (recovered ${recoveredDirections.length} directions from a markdown Method/Instructions section after the model found none)`);
+        } else {
+          // Not a hard failure: real recipe content exists, the source page
+          // just has no actual step-by-step method text (confirmed on the mac
+          // and cheese recipe, 2026-07-22, where directions were previously
+          // fabricated rather than left empty). Flagged so it surfaces for
+          // manual attention instead of silently shipping with no directions.
+          logForReview(slug, meta.url, 'no-directions-found',
+            '(whole recipe)', 'Ingredients present but no method/directions text found in source content.');
+          flaggedForReview = true;
+        }
       }
 
       // Deterministic override first: if the page itself states an
