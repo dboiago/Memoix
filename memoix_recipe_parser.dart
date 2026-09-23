@@ -2481,6 +2481,26 @@ const _ingredientUnitAlternation =
       remaining = bracketedMetricMatch.group(2)!.trim();
     }
 
+    // A trailing parenthetical aside on a line that ALREADY has a real
+    // leading amount (e.g. "1 shallot (about 100g)") is supplementary
+    // info, not the ingredient's identity -- move it to notes instead of
+    // leaving it merged into the name ("Shallot About 100g"). Confirmed on
+    // woonheng.com's Easy Vegan Sambal.
+    //
+    // Deliberately gated on `amount != null`: a line with NO leading
+    // amount at all (bare "shallot (about 100g)") may have the parenthetical
+    // as its ONLY quantity information, in which case "100g" is the real
+    // amount+unit, not a note -- stripping it there would silently discard
+    // the one real quantity present instead of just tidying up a redundant
+    // second one.
+    if (amount != null) {
+      final trailingParenMatch = RegExp(r'^(.+?)\s*\(([^()]+)\)$').firstMatch(remaining);
+      if (trailingParenMatch != null) {
+        remaining = trailingParenMatch.group(1)!.trim();
+        notesParts.add(trailingParenMatch.group(2)!.trim());
+      }
+    }
+
     // Strip leading "of" that some sites include after the amount
     // e.g., "2 tbsp of sunflower oil" -> remaining is "of sunflower oil" after amount extraction
     remaining = remaining.replaceFirst(RegExp(r'^of\s+', caseSensitive: false), '');
