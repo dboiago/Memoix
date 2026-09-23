@@ -1,0 +1,197 @@
+{
+  "recipe": {
+    "name": "Pear and Raspberry Bakewell Brioche Buns",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Sterilise the jars by washing them and lids with hot soapy water, then placing them on a roasting tray in an oven heated to 180C for about 15 mins. Place a plate in the freezer.",
+      "Place all of the raspberry jam ingredients into a large saucepan and set over medium/low heat, stirring occasionally until the sugar has dissolved. Increase the heat to medium/high and bring the jam to a rolling boil, cooking for about 10 minutes.",
+      "Test if the jam is fully cooked using the flake test or the plate test. For the flake test, lift the wooden spoon above the pan and allow the jam to drip back into the pan; if some drips cling to the spoon, it's ready. For the plate test, spoon a little jam onto the frozen plate, let it sit for a minute, then push with your finger; if it wrinkles, it will set.",
+      "Once the jam has finished cooking, turn off the heat and let it settle. Skim off any foam on top and discard it. Remove the jars from the oven and divide the jam between them, sealing immediately.",
+      "For the brioche, mix the flour, sugar, salt, and yeast in a large bowl. Add the eggs and milk to form a rough shaggy dough. Using an electric mixer with a dough hook, knead on medium/low speed for about 10 minutes or until smooth and elastic. Add the butter a little at a time while the mixer is running.",
+      "Once all the butter has been incorporated, knead for a further 10-15 minutes or until the dough is elastic and no longer sticking to the bowl. Scrape the dough into a lightly oiled bowl, cover with clingfilm, and refrigerate overnight.",
+      "In the morning, divide the dough into 8 equal pieces and form into balls. Roll into flat discs, about 10-12cm wide, and place on parchment-lined baking trays. Cover with clingfilm and let rise for about 45 minutes or until risen and puffy. Preheat the oven to 190C (170C fan).",
+      "Make the frangipane by beating together the butter, sugar, and almonds until light and smooth. Add the egg and flour and stir to combine.",
+      "Form a depression in the middle of each dough disc, leaving a 2cm border. Fill with a couple of teaspoons of raspberry jam and top with the frangipane, spreading it to the edge.",
+      "Slice each pear half into thin slices and place gently on top of the frangipane, pressing in slightly. Brush the brioche border with beaten egg and sprinkle with flaked almonds.",
+      "Bake the buns in the preheated oven for about 20-25 minutes or until golden brown. Remove from the oven and serve while still warm."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "180",
+        "section": "Brioche",
+        "isOptional": false
+      },
+      {
+        "name": "Strong Bread Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "180",
+        "section": "Brioche",
+        "isOptional": false
+      },
+      {
+        "name": "Tate & Lyle Golden Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": "Brioche",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Brioche",
+        "isOptional": false
+      },
+      {
+        "name": "Fast Action Yeast",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "7",
+        "section": "Brioche",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "plus extra for egg wash",
+        "amount": "3",
+        "section": "Brioche",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "85",
+        "section": "Brioche",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "diced, at room temperature",
+        "amount": "225",
+        "section": "Brioche",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "room temperature",
+        "amount": "60",
+        "section": "Frangipane",
+        "isOptional": false
+      },
+      {
+        "name": "Tate & Lyle Golden Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": "Frangipane",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": "Frangipane",
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Frangipane",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": "Frangipane",
+        "isOptional": false
+      },
+      {
+        "name": "Raspberry Jam",
+        "unit": null,
+        "notes": "see above",
+        "amount": "0",
+        "section": "Frangipane",
+        "isOptional": false
+      },
+      {
+        "name": "Tinned Pear Halves",
+        "unit": null,
+        "notes": "you can poach your own but for simplicity I am using tinned this time",
+        "amount": "8",
+        "section": "Frangipane",
+        "isOptional": false
+      },
+      {
+        "name": "Flaked Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": "Frangipane",
+        "isOptional": false
+      },
+      {
+        "name": "Raspberries",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": "Easy Raspberry Jam",
+        "isOptional": false
+      },
+      {
+        "name": "Tate & Lyle Jam Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": "Easy Raspberry Jam",
+        "isOptional": false
+      },
+      {
+        "name": "Juice of Lemon Juice",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Easy Raspberry Jam",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f3aedca360acfe0861897e743371e74eb7b4c3f0ade276e7cb0ebfe9fec9d149",
+    "lineage_hash": "6ee21a49b8a3a90fa141c6fcb7f3d56dec945745801761d1c306a28da2ee4356"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.theboywhobakes.co.uk/recipes/2017/6/21/pear-and-raspberry-bakewell-brioche-buns",
+    "fetchedAt": "2026-08-01T21:08:21.880Z"
+  },
+  "rawSource": "https://www.theboywhobakes.co.uk/recipes/2017/6/21/pear-and-raspberry-bakewell-brioche-buns",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

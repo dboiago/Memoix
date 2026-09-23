@@ -1,0 +1,78 @@
+{
+  "recipe": {
+    "name": "Patatas Bravas",
+    "time": "1 hr 0 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "ES",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the potatoes and rosemary in an oven tray and coat with the olive oil.",
+      "Roast for 40 minutes in an oven preheated to 200˚C, turning halfway through the cooking time.",
+      "While the potatoes are in the oven, warm the Rich & Rustic tomato sauce in a saucepan and stir through the smoked paprika.",
+      "Serve the roast potatoes and rosemary in small sharing bowls topped with the spiced tomato sauce."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Waxy Potatoes",
+        "unit": "kg",
+        "notes": "such as Charlotte, cubed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maggi Rich & Rustic Tomato Sauce",
+        "unit": "ml",
+        "notes": null,
+        "amount": "1600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3db356cbb78b5672c39318f806340ce92f264472d6ee6af794c482d4b1a6aa75",
+    "lineage_hash": "14c2e727f305a5558ac6f2588fa56bf4b009992702b29e745ba15ea05e97506b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.thestaffcanteen.com/chefs-recipes/patatas-bravas",
+    "fetchedAt": "2026-08-03T04:37:51.662Z"
+  },
+  "rawSource": "https://www.thestaffcanteen.com/chefs-recipes/patatas-bravas",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

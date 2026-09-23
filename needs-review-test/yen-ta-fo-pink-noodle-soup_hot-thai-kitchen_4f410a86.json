@@ -1,0 +1,185 @@
+{
+  "recipe": {
+    "name": "Yen Ta Fo",
+    "time": "45 min",
+    "course": "soups",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cubes Chinese Red Bean Curd",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Bean Curd Liquid",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sriracha Hot Sauce (if You're Making This for Kids and You Want No Heat at All, You Can Substitute Ketchup)",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thai Chilies",
+        "unit": null,
+        "notes": "optional",
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pork Stock",
+        "unit": "ml",
+        "notes": "unsalted (or sub chicken stock, see note)",
+        "amount": "720",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Noodles",
+        "unit": null,
+        "notes": "any kind you like in your soup. For dry rice noodles, soak them in water until softened and drain.",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Protein Options: Fish Balls",
+        "unit": null,
+        "notes": "shrimp balls, squid balls, fish cakes, or any kind of Asian style seafood balls/cakes. These are available at Asian grocery stores at the seafood counter, in the refrigerated section, or in the frozen section. You can also just use fresh seafood if you can't find these.",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetables: Water Spinach",
+        "unit": null,
+        "notes": "alt: regular spinach leaves, a handful per person",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fried Garlic &amp; Garlic Oil (see Instructions)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro And/or Green Onion for Garnish",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Other Common Toppings: Tofu Puffs",
+        "unit": null,
+        "notes": "fried wonton wrappers, cooked chicken or pork blood, and if you're in Thailand, preserved squid is a classic in Yen Ta Fo (but I don't like it!).",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fcc7f02c243b22f36bf89038d6678868b3435ead48e4c6106374e4b37a1e728d",
+    "lineage_hash": "e3c70eccdb15d939a07f49e496dcfdc2c5088ac0184b145871ad14d6aed258ed"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://hot-thai-kitchen.com/yen-ta-fo/",
+    "fetchedAt": "2026-08-02T01:04:06.786Z"
+  },
+  "rawSource": "https://hot-thai-kitchen.com/yen-ta-fo/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

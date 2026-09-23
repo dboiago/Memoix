@@ -1,0 +1,141 @@
+{
+  "recipe": {
+    "name": "Wonton Egg Drop Soup",
+    "time": "25 min",
+    "course": "soups",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "109",
+      "carbohydrateContent": "10",
+      "fatContent": "4",
+      "proteinContent": "7"
+    },
+    "directions": [
+      "Bring a pot of water to a boil for the wontons. Keep the wontons frozen right up until you’re ready to boil them, or they will become soggy and break open during cooking.",
+      "In a wide soup pot, bring the chicken stock to a simmer. Stir in the salt, MSG (if using), sugar, and white pepper. Add in the turmeric, if using. Add the sesame oil, taste the soup, and adjust the seasoning if needed.",
+      "Mix the cornstarch with the water to make a slurry. Mix thoroughly before adding to the soup, as cornstarch settles very quickly. Make sure the soup is bubbling lightly, and add the cornstarch slurry, stirring continuously as you drizzle it in to avoid clumps. If you prefer a thinner soup, don’t use all of it.",
+      "Use a ladle to stir the soup in a circular motion (slower for large ribbons of egg, or faster for smaller ones), and slowly drizzle in the egg in a thin stream. Stir in the scallions.",
+      "By now, the water for the wontons should be boiling. Cook the wontons according to the package instructions. General rule of thumb is once the wontons are floating, cook for an additional 1-2 minutes. Once you add the wontons, the boiling water will slow to a simmer. Keep it at a gentle boil.",
+      "To serve the soup, ladle 3 wontons into a small bowl with a little bit of the wonton cooking water. Then ladle over the egg drop soup and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Wontons (3 Wontons Per Serving)",
+        "unit": null,
+        "notes": "frozen",
+        "amount": "18",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "C",
+        "notes": "alt: broth",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "MSG (optional, Increase Amount to Personal Preference)",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric (optional, But If You Want \"the Look…\")",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼-½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs (lightly Beaten)",
+        "unit": "large",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallion (chopped)",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4e826756595e7c498dd43eca442535c058f515b57eca4e44872a9b3627e87354",
+    "lineage_hash": "5ed42df6d0e90a68d705f7d702d3f5911d0a3605307176fba69c21fab9ea9f60"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/wonton-egg-drop-soup/",
+    "fetchedAt": "2026-08-02T17:09:04.369Z"
+  },
+  "rawSource": "https://thewoksoflife.com/wonton-egg-drop-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,218 @@
+{
+  "recipe": {
+    "name": "Caramelized Apple Mille-Feuille",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": null,
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a mixing bowl, combine the sugar and egg yolks. Whisk until the mixture turns pale.",
+      "Add the milk and softened butter and mix well. Gradually incorporate the flour and baking powder into the mixture. Combine thoroughly.",
+      "Roll out the dough thinly between two sheets of parchment paper. Pass through a pasta roller 2 to 3 times if necessary. Freeze.",
+      "After 15 minutes, cut into desired shapes using a cookie cutter. Bake at 160°C (320°F) for approximately 6 minutes.",
+      "Dice the apples into small cubes and caramelize them with sugar and a vanilla bean.",
+      "Sauté in a hot pan until golden brown, then place them in a suitable mold while still hot.",
+      "Whisk together the sugar and egg yolks, then pour in the hot cream along with the vanilla bean.",
+      "Pour the cream over the apples. Bake in the oven at 90°C (194°F). Chill before serving.",
+      "Dry cook the sugar until it turns a deep brown caramel. Deglaze with the salted butter and add the cream.",
+      "Cook the caramel again until it reaches 103°C (217°F).",
+      "In a mixing bowl, whip the cream at low speed and add the vanilla bean.",
+      "Finish by folding in 150 g of the Caramel.",
+      "Assemble the mille-feuille in the following order: Start with the Traou Mad pastry, then add the unmolded Caramelized Apples and Vanilla Cream",
+      "Add a thin layer of the Caramel.",
+      "Next, add the Whipped Cream and the milk chocolate plaque.",
+      "Finish with a julienne of Granny Smith apple on top."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Super-fine Granulated Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "170",
+        "section": "Traou Mad Pastry",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": "Traou Mad Pastry",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": "Traou Mad Pastry",
+        "isOptional": false
+      },
+      {
+        "name": "Salted Butter",
+        "unit": "g",
+        "notes": "softened",
+        "amount": "260",
+        "section": "Traou Mad Pastry",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": "Traou Mad Pastry",
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": "Traou Mad Pastry",
+        "isOptional": false
+      },
+      {
+        "name": "Golden Apples",
+        "unit": "kg",
+        "notes": null,
+        "amount": "1",
+        "section": "Caramelized Apples",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": "Caramelized Apples",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Caramelized Apples",
+        "isOptional": false
+      },
+      {
+        "name": "Super-fine Granulated Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": "Vanilla Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": "Vanilla Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": "Vanilla Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Vanilla Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "210",
+        "section": "Caramel",
+        "isOptional": false
+      },
+      {
+        "name": "Salted Butter",
+        "unit": "g",
+        "notes": "softened",
+        "amount": "40",
+        "section": "Caramel",
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "210",
+        "section": "Caramel",
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": "Whipped Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Whipped Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Caramel",
+        "unit": "g",
+        "notes": "from the Caramel recipe above",
+        "amount": "150",
+        "section": "Whipped Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Tempered Milk Chocolate Plaque",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Granny Smith Apples",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Assembly",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "956a7e5221436101dc22626d86246b3a4f18645929fc537371c94efc37dea016",
+    "lineage_hash": "5091259aa9f94a24568eecda2e1ed57ed1f2d76f2ed414fb6a75012d9d8442f1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://pastryartsmag.com/recipes/caramelized-apple-mille-feuille-by-sylvain-fond/",
+    "fetchedAt": "2026-08-02T12:14:45.269Z"
+  },
+  "rawSource": "https://pastryartsmag.com/recipes/caramelized-apple-mille-feuille-by-sylvain-fond/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

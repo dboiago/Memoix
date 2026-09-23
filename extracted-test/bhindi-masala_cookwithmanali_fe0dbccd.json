@@ -1,0 +1,158 @@
+{
+  "recipe": {
+    "name": "Bhindi Masala",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "133",
+      "carbohydrateContent": "12",
+      "fatContent": "9",
+      "proteinContent": "2"
+    },
+    "directions": [
+      "Wash and pat dry each bhindi with a paper towel and then chop it into rounds (remove the head and little bit from the tail before chopping). Set aside. Heat 1 tablespoon oil in a pan on medium heat. Once the oil is hot, add the chopped bhindi to the pan. Let is cook on medium heat for 10 mins, then lower the heat to low and cook 5 more minutes. Stir often.The bhindi is mostly cooked by now&nbsp; (after 15 mins) and there should be very little sliminess left. Remove pan from heat.",
+      "To another pan (or use the same pan after transferring bhindi to a bowl), now add the remaining 1.5 tablespoons oil on medium heat. Once the oil is hot, add cumin seeds and let them sizzle for few seconds.",
+      "Add chopped onion and saute for 2 to 3 minutes until soft. Then add the ginger and green chili and cook for 1 more minute.",
+      "Add chopped tomatoes and cook for around 4 minutes until soft and mushy.",
+      "Then add the spices - coriander powder, turmeric, amchur, red chili powder and salt. Mix the spices well with the masala.I added a tablespoon of water at this point so that the spices do not burn. Stir well.",
+      "Add the cooked bhindi to the pan and mix well.&nbsp;Set heat to low-medium and cook for 5 minutes without covering the pan.",
+      "Sprinkle with garam masala. Garnish with ginger julienne if needed. Serve bhindi masala with rotis/paratha/rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": "divided",
+        "amount": "2.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Bhindi",
+        "unit": null,
+        "notes": "okra, chopped into rounds",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "medium",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chili",
+        "unit": null,
+        "notes": "chopped, or more to taste",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "medium",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amchur",
+        "unit": "tsp",
+        "notes": "dried mango powder",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chili Powder",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala",
+        "unit": null,
+        "notes": "to sprinkle",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Julienne",
+        "unit": null,
+        "notes": "to garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a3241018ea6a353e7ad34ed700616144d86aa07b0bbc3b229527f241fd5df51f",
+    "lineage_hash": "8fe70ed4f05616647bdc9929e4dfa14c92793bde38139f5a4df8dd02d36f6fac"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/bhindi-masala-okra-stir-fry/",
+    "fetchedAt": "2026-08-01T23:42:33.036Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/bhindi-masala-okra-stir-fry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

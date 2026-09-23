@@ -1,0 +1,79 @@
+{
+  "recipe": {
+    "name": "Americano",
+    "time": "5 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": "Highball",
+    "garnish": [
+      "Slice of Fresh Orange"
+    ],
+    "subcategory": "Liqueur",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Fill a heavy-bottomed highball glass with ice",
+      "Add the Campari and vermouth then top up with a splash of soda water",
+      "Garnish with a slice of fresh orange and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Campari",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Vermouth",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soda Water",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ice",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": "slice",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f33508da1c2fa89605a2860eadf2dccc097ce3f60fc7acf48ab04a3deeee9e1a",
+    "lineage_hash": "0ce21963f42572b99f3ebf3e4201adee96b97a8d8acde3b0281ef6b086db1ce8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/americano-cocktail-recipe",
+    "fetchedAt": "2026-08-01T23:42:19.034Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/americano-cocktail-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}
