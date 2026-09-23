@@ -1,0 +1,121 @@
+{
+  "recipe": {
+    "name": "Celeriac and morel gratin",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": null,
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "( 1 Litre Container) Onions - Finely Sliced",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Duck Fat",
+        "unit": "g",
+        "notes": "alt: BUTTER",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "crushed",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Chicken Stock",
+        "unit": "L",
+        "notes": "alt: VEGETABLE STOCK - SEASONED",
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt and Pepper to Season",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "( 7-8 Heads ) Celeriac - Peeled & Sliced on Mandolin 3-4mm Thick",
+        "unit": "kg",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Morel Mushrooms - Soaked",
+        "unit": "C",
+        "notes": "dried, TRIMMED, WASH FREE OF GRIT!",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour for Dusting",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gruyere Cheese - Grated",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7680c7d1e13cc834394010905db0d81a56866a0a14e58a1cc618e84543577d6e",
+    "lineage_hash": "11d0c5910c9058d3b8109ac8036e3accb837b2de0881c6eba0ec976580efec9c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.thestaffcanteen.com/chefs-recipes/celeriac-and-morel-gratin",
+    "fetchedAt": "2026-08-02T18:14:27.218Z"
+  },
+  "rawSource": "https://www.thestaffcanteen.com/chefs-recipes/celeriac-and-morel-gratin",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

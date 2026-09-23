@@ -1,0 +1,109 @@
+{
+  "recipe": {
+    "name": "Steak Tartare with Dill Yogurt Sauce",
+    "time": "20 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Chop the beef using the blade of a knife until you achieve an even consistency. Season with a drizzle of oil, salt, pepper, and a handful of fresh chopped cilantro.",
+      "Chop a large handful of dill and add it to the yogurt; add in a small chopped shallot, the zest of one lime and a few drops of its juice, a drizzle of oil, and a pinch of salt.",
+      "Serve the meat garnished with cilantro and dill leaves and lime wedges."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef",
+        "unit": "oz",
+        "notes": null,
+        "amount": "14",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Greek Yogurt",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dill",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallot",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extravirgin Olive Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4d3bb0c5c0932a731fd4a1cf4e8eeb0a4fb95045f03be3051a2d8f2ffc98d46b",
+    "lineage_hash": "e455c725f1e61a8473a3b41dec83ed11e1a63fde3c22579b60cacab498f509e8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/appetizers/steak-tartare-with-dill-yogurt-sauce",
+    "fetchedAt": "2026-08-02T16:53:45.050Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/appetizers/steak-tartare-with-dill-yogurt-sauce",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

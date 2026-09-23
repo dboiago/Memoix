@@ -1,0 +1,162 @@
+{
+  "recipe": {
+    "name": "Halloumi",
+    "time": "45 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CY",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Slice the cheese (about 12 ounces) into 3/4-inch slabs. Brush on both sides with a good-quality olive oil.",
+      "Preheat the grill to medium-high and grill the cheese for 2 to 3 minutes per side, turning 90 degrees after the first minute or two for a handsome crosshatch of grill marks.",
+      "For serving, shingle the cheese on a platter, drizzle with additional olive oil, and sprinkle with coarse salt.",
+      "Grill the cheese as described above, but drizzle with honey and omit the salt. Serve with grilled bread.",
+      "Arrange the slabs of Halloumi in a single layer in a nonreactive baking dish. Pour the marinade over the cheese, gently turning to coat it on all sides with the marinade. Let marinate for 1 to 2 hours.",
+      "Cut the cheese into 1-inch cubes along with onions, bell peppers, zucchini or yellow squash, or mushrooms. (Make sure the cheese cubes and vegetables are the same size.)",
+      "Marinate the cheese and vegetables for 2 hours. Thread the Halloumi and vegetables on skewers (bamboo or metal skewers). Grill for 1 to 2 minutes per side, or until the cheese is lightly browned and the vegetables are tender-crisp.",
+      "Grill Halloumi as directed above and serve with cubes or slices of melon."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Halloumi Cheese",
+        "unit": "oz",
+        "notes": "drained and patted dry",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Good-quality Olive Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Juice of 1 Lemon Lemon Juice",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Red Hot Pepper Flakes",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Dill",
+        "unit": "Tbsp",
+        "notes": "chopped, fresh, or other herbs",
+        "amount": "1",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "6",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Skewers",
+        "isOptional": false
+      },
+      {
+        "name": "Bell Peppers",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Skewers",
+        "isOptional": false
+      },
+      {
+        "name": "Zucchini",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Skewers",
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Squash",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Skewers",
+        "isOptional": false
+      },
+      {
+        "name": "Mushrooms",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Skewers",
+        "isOptional": false
+      },
+      {
+        "name": "Melon",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "046c2079c45dbed967c6e525517d906ae16c0d821bae6c9550ae339f119222a7",
+    "lineage_hash": "fe8850fcb602a32942c7721d66557e5cb9466429f33cfbd5fcd0f76d239983d7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/2017/01/20/celebrate-grilled-cheese-halloumi/",
+    "fetchedAt": "2026-08-02T12:03:15.026Z"
+  },
+  "rawSource": "https://barbecuebible.com/2017/01/20/celebrate-grilled-cheese-halloumi/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

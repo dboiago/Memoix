@@ -1,0 +1,79 @@
+{
+  "recipe": {
+    "name": "Roman Highball Cocktail",
+    "time": "4 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": null,
+    "glass": "Highball",
+    "garnish": [
+      "Skewered Crystallised Ginger"
+    ],
+    "subcategory": "Sparkling",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "219",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Select and pre-chill a HIGHBALL (MAX 10OZ/300ML) GLASS.",
+      "Prepare skewered crystallised ginger for garnish.",
+      "SHAKE first 3 ingredients with ice.",
+      "STRAIN into ice-filled glass.",
+      "TOP with soda.",
+      "Garnish with skewered crystallised ginger."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Amaro (e.g. Averna)",
+        "unit": "ml",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Liqueur",
+        "unit": "ml",
+        "notes": null,
+        "amount": "22.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soda (club Soda) Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "93a64e3659bcea83ff56ff0cd68d262a622f9812cd20e28579f3388d9e01203a",
+    "lineage_hash": "3a1f9bc61d22809fbf96e52564865f3d4c30a823f9ff4367122ff65e17144e84"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/3536/roman-highball",
+    "fetchedAt": "2026-08-03T10:34:34.903Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/3536/roman-highball",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,105 @@
+{
+  "recipe": {
+    "name": "Caveman Strip Steaks with Bell Pepper Pan-Fry and Smoky Potato Salad",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Small Fingerling",
+        "unit": "lb",
+        "notes": "alt: new potatoes, scrubbed and cut in half",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "(22 Ounces) Bush’s® Smokehouse Tradition Grillin’ Beans",
+        "unit": "can",
+        "notes": "¼ cup sauce",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wine Vinegar",
+        "unit": "Tbsp",
+        "notes": "or to taste",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Each Scallions",
+        "unit": null,
+        "notes": "trimmed and finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Capers",
+        "unit": "Tbsp",
+        "notes": "drained",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4174140ff0cd39dcafde4d3fbf265b753a568f6d57a17a2bba507a3613b45dc8",
+    "lineage_hash": "aec6e7b70bcdbd49affec76379c9a88b74172b9ea4ca5ea2867a4a76b12376d7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/caveman-strip-steaks-bell-pepper-pan-fry-smoky-potato-salad/",
+    "fetchedAt": "2026-08-03T04:26:38.892Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/caveman-strip-steaks-bell-pepper-pan-fry-smoky-potato-salad/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

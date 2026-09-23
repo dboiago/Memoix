@@ -1,0 +1,62 @@
+{
+  "recipe": {
+    "name": "Gelling ketchup with horseradish",
+    "time": null,
+    "course": "modernist",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": null,
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Grate/grind horseradish with a little water.",
+      "Mix with ketchup.",
+      "Adjust with lemon juice (and possibly salt) to taste.",
+      "Refrigerate."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Horseradish",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ketchup",
+        "unit": "L",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c76809dd5c79002dc33e175c0877b83b4021c1e6a0b278ec4d5e182fcf24f75b",
+    "lineage_hash": "74d5da8aa23ca802d1da26c136bba02db3fa098141979c8b9325c19c4fe00584"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://khymos.org/2010/12/17/gelling-ketchup-with-horseradish/",
+    "fetchedAt": "2026-08-01T23:49:36.188Z"
+  },
+  "rawSource": "https://khymos.org/2010/12/17/gelling-ketchup-with-horseradish/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}
