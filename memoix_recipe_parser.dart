@@ -2462,6 +2462,25 @@ const _ingredientUnitAlternation =
       }
     }
 
+    // A second, bracketed metric-equivalent measurement glued directly to
+    // the name with no separating space (e.g. "14 oz [397g]firm tofu" ->
+    // after the leading "14 oz" is stripped above, remaining is
+    // "[397g]firm tofu" with nothing between "]" and "firm"). Confirmed
+    // site-wide on woonheng.com. The existing "[Section]" inline-marker
+    // check above only runs once, on the ORIGINAL line, before any amount
+    // is stripped -- it never gets a second look at a new remaining string
+    // that happens to start with "[...]" only after this point, so
+    // "[397g]" was falling straight through into the ingredient name
+    // untouched.
+    final bracketedMetricMatch = RegExp(
+      r'^\[([\d.]+\s*(?:' + _ingredientUnitAlternation + r'))\]\s*(\S.*)$',
+      caseSensitive: false,
+    ).firstMatch(remaining);
+    if (bracketedMetricMatch != null) {
+      notesParts.add(bracketedMetricMatch.group(1)!.trim());
+      remaining = bracketedMetricMatch.group(2)!.trim();
+    }
+
     // Strip leading "of" that some sites include after the amount
     // e.g., "2 tbsp of sunflower oil" -> remaining is "of sunflower oil" after amount extraction
     remaining = remaining.replaceFirst(RegExp(r'^of\s+', caseSensitive: false), '');
