@@ -648,17 +648,43 @@ function extractMarkdownDirections(markdown) {
   for (let i = startIdx + 1; i < lines.length; i++) {
     if (boundaryPattern.test(lines[i].trim())) { endIdx = i; break; }
   }
+  const sectionLines = lines.slice(startIdx + 1, endIdx);
+  const clean = (text) => text
+    .replace(/\*\*(.+?)\*\*/g, '$1')
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+    .replace(INVISIBLE_CHAR_PATTERN, '')
+    .trim();
+
   const steps = [];
-  for (const line of lines.slice(startIdx + 1, endIdx)) {
+  for (const line of sectionLines) {
     const m = line.trim().match(/^\d+\.\s+(.+)$/);
     if (!m) continue;
-    const cleaned = m[1]
-      .replace(/\*\*(.+?)\*\*/g, '$1')
-      .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
-      .replace(INVISIBLE_CHAR_PATTERN, '')
-      .trim();
+    const cleaned = clean(m[1]);
     if (cleaned) steps.push(cleaned);
   }
+
+  // Second shape, only tried when the first found nothing: a bare step
+  // number alone on its own line, with the step's prose description as the
+  // next non-blank line, followed by an ingredient-callout bullet list for
+  // that step -- confirmed on greatbritishchefs.com ("1" / blank / "Mix the
+  // celeriac..." / blank / "-   400g of celeriac..."), the same convention
+  // already confirmed on meilleurduchef.com's yule log. Stops at the first
+  // bullet or another bare number rather than accumulating lines, since
+  // every confirmed example is a single prose sentence, not a wrapped
+  // paragraph.
+  if (steps.length === 0) {
+    for (let i = 0; i < sectionLines.length; i++) {
+      if (!/^\d+$/.test(sectionLines[i].trim())) continue;
+      let j = i + 1;
+      while (j < sectionLines.length && !sectionLines[j].trim()) j++;
+      if (j >= sectionLines.length) continue;
+      const candidate = sectionLines[j].trim();
+      if (!candidate || /^\d+$/.test(candidate) || /^[-*]\s/.test(candidate)) continue;
+      const cleaned = clean(candidate);
+      if (cleaned) steps.push(cleaned);
+    }
+  }
+
   // Deliberately NOT gated on isRealInstructionLine/looksLikeRealInstructionLines
   // here -- those exist to tell real steps apart from bare section headers
   // in a flat, unstructured ldInstructionsRaw array where punctuation is
