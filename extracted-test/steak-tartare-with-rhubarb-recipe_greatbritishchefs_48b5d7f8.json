@@ -13,7 +13,14 @@
     "comments": null,
     "cookCount": 0,
     "nutrition": null,
-    "directions": [],
+    "directions": [
+      "Put the diced rhubarb in one bowl and the ribbons in another. Whisk together the remaining ingredients for the rhubarb then divide between both bowls. Cover and leave to pickle in the fridge for at least 2 hours (ideally overnight)",
+      "To make the crisps, bring a pan of vegetable oil to 170°C. Pat the sliced potatoes dry then, working in batches, add the potatoes and fry until golden brown and crisp. Drain on kitchen paper, then transfer to a bowl and toss with the MSG and a pinch of salt",
+      "Once the rhubarb is pickled, prepare the tartare. Put the steak in the freezer for 20 minutes to firm up – this makes it easier to chop",
+      "Slice the beef against the grain into 0.5cm slices. Dice these slices into 0.5cm cubes, then add them to a bowl with the cornichons, parsley, capers, shallot, chives and 1 tbsp of the drained diced rhubarb. Stir to combine",
+      "Stir in the mayo, mustard, vinegar, Worcestershire sauce and 2 of the egg yolks. Season with salt and pepper to taste",
+      "To serve, put a ring cutter on a plate and spoon in half the tartare. Repeat with the other plate. Top with some pickled rhubarb ribbons and chives, then nestle in another egg yolk on top of each tartare. Serve with the crisps on the side"
+    ],
     "recipeType": "standard",
     "ingredients": [
       {
@@ -178,7 +185,7 @@
       }
     ],
     "isFavourite": false,
-    "content_hash": "954467c172202e5d977b914b94953b1ee491b2638d9ba8a8b8ad79e6e70bc49c",
+    "content_hash": "4ef6c146546df50efb0bebd05e970d4ae9338218094e9e81fcdd903c69e2f323",
     "lineage_hash": "5dc5a07b7044a879146d8a43f33f8f6e0da654d09ab1a9373e70fb65dda37315"
   },
   "metadata": {

@@ -23,38 +23,30 @@
       {
         "name": "Whole Chicken",
         "unit": null,
-        "notes": "see recipe for preparation details",
+        "notes": "see recipe for specifics",
         "amount": "1",
         "section": null,
         "isOptional": false
       },
       {
-        "name": "Vinegar",
+        "name": "Vinegar Mixture",
         "unit": "C",
-        "notes": null,
-        "amount": "¼",
+        "notes": "for mop sauce",
+        "amount": "½",
         "section": null,
         "isOptional": false
       },
       {
-        "name": "As Needed Barbecue Mop",
-        "unit": null,
-        "notes": null,
-        "amount": "0",
-        "section": null,
-        "isOptional": false
-      },
-      {
-        "name": "As Needed Barbecue Sauce",
-        "unit": null,
+        "name": "Barbecue Sauce",
+        "unit": "C",
         "notes": "applied last few minutes of grilling",
-        "amount": "0",
+        "amount": "½",
         "section": null,
         "isOptional": false
       }
     ],
     "isFavourite": false,
-    "content_hash": "35185868443d66bc0089dd6abaca2d7452bfe5690a15de81ff02ff2b5df1d337",
+    "content_hash": "f83c41b83087d784e1d0532aaea6d50dcbf8d6b12e02d178a8f624dd4a89bb71",
     "lineage_hash": "a0dcef4d69d0d18c9c00c354d86f2754991c1b21ce6df67d0284309563f68f33"
   },
   "metadata": {

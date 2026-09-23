@@ -14,6 +14,7 @@
     "cookCount": 0,
     "nutrition": null,
     "directions": [
+      "In a large bowl, mix together all of the ingredients for the steak tartare until the mix starts to bind together",
       "Shape the mix into 4 patties using a round cutter (there will be sauce leftover in the bowl, do not discard as it is needed for step 4)",
       "Plate up the steak tartare patties and drizzle with a little of the sauce left in the bowl. Top with a raw egg yolk and accompany with a slice of sourdough bread and rocket. Season and serve immediately"
     ],
@@ -157,7 +158,7 @@
       }
     ],
     "isFavourite": false,
-    "content_hash": "e73879861629c954d361d6ac81ab92aa4bb368298f77de44fa0aff30d17f8fe3",
+    "content_hash": "73300ff3aa05d1fc324c8d314337bfbc8d3e647cb973ae3bf8e12fd48da1f2de",
     "lineage_hash": "9eb49a616cfbe932f0cb67e888580bb67dfcd3d28073c00df49e90c5df6be05e"
   },
   "metadata": {

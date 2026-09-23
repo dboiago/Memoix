@@ -17,8 +17,11 @@
       "Prepare the frites: Soak the sliced potatoes in 1 litre cold water for 1 hour, then drain them and dry thoroughly",
       "Heat oil to 150°C and fry in batches for 5–6 minutes until cooked but not browned. Remove and drain on paper towels",
       "Increase the oil temperature to 190°C and fry again until golden and crispy, about 2–3 minutes. Sprinkle with salt",
+      "In a small bowl, mix the Parmesan, garlic, and parsley",
       "While the frites are still hot, toss them in the mixture until evenly coated",
-      "Meanwhile, make the steak tartar. In a bowl, mix beef, mustard, capers, cornichons, shallot, parsley, Worcestershire sauce and Tabasco. Season with salt and pepper to taste"
+      "Meanwhile, make the steak tartar. In a bowl, mix beef, mustard, capers, cornichons, shallot, parsley, Worcestershire sauce and Tabasco. Season with salt and pepper to taste",
+      "Shape into two portions and place on plates",
+      "To serve, carefully place an egg yolk on top of each tartare portion. Serve immediately with frites on the side"
     ],
     "recipeType": "standard",
     "ingredients": [
@@ -144,7 +147,7 @@
       }
     ],
     "isFavourite": false,
-    "content_hash": "730465f2c36fb2efb9f0f9db56c294b76942f96215fbea9414e69d7f5badb5a4",
+    "content_hash": "ff653f024a83ce2916270dfcc1ff1301fa8f4fe2b5e04af8d3641850a25e0c9a",
     "lineage_hash": "d23bcd0496f52242c3ab6906c25b885266dc0d7d74c2a83a431f470a3996aa2b"
   },
   "metadata": {

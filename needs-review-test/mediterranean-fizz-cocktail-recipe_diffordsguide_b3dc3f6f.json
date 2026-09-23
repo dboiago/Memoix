@@ -16,7 +16,7 @@
     "cookCount": 0,
     "nutrition": null,
     "directions": [
-      "Muddle grapes in base of shake. Add next four ingredients, SHAKE with ice and fine strain into ice filled glass.",
+      "Add next four ingredients, SHAKE with ice and fine strain into ice filled glass",
       "TOP with soda water."
     ],
     "recipeType": "standard",
@@ -71,7 +71,7 @@
       }
     ],
     "isFavourite": false,
-    "content_hash": "a2f6f67876b32d46633e93c6fcb539e0b4f6c474693c9743918af4f57d568b66",
+    "content_hash": "90c09dc6ca7f85ca803c1a62034f20dfc1650fd84fb39de60db8a8c26455a88c",
     "lineage_hash": "e27cb09fb45693a2f14438e1c5142c0045c17e93c74cc36cf2bdf92cfc520c7d"
   },
   "metadata": {

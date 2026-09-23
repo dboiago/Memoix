@@ -14,6 +14,7 @@
     "cookCount": 0,
     "nutrition": null,
     "directions": [
+      "Add all the Dipping Sauce ingredients to a small saucepan and bring it to a boil.&nbsp;",
       "Remove from the heat and cool it down quickly by leaving the pan in the cold water for a while, then place it in the fridge to chill.",
       "Boil water in a large saucepan. Remove the tape around each bunch of sōmen noodles and place the noodles in the boiling water by spreading the strands.",
       "Using chopsticks or a thin wooden spatula, stir the pot so that noodles are separated.",
@@ -90,7 +91,7 @@
       }
     ],
     "isFavourite": false,
-    "content_hash": "e253acf21a23a8a1f0cb16856e4edeaf10ccfa5c8c4ec70ef2a2fa101fbcbf7f",
+    "content_hash": "01a8d4c5e686c4baf6ab3e5c48e01ec0d2ed7f184c61927484a6909ddc3568bf",
     "lineage_hash": "3d4fc254d9d34df95df6679a28945395371c10c1fd6058a3ffbff4de0a287ba8"
   },
   "metadata": {

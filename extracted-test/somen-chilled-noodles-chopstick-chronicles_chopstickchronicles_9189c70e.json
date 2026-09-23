@@ -18,7 +18,18 @@
       "fatContent": null,
       "proteinContent": "1"
     },
-    "directions": [],
+    "directions": [
+      "Place 3 dry shiitake mushrooms into a bowl of water and put some kind of weight on the mushrooms so that the mushrooms submerge. Leave it refrigerated over night.",
+      "The next day, squeeze the soaking water out but save it in a bowl. Place 1/4 cup of the soaking water, sugar, soy sauce and mirin (listed in the 'toppings' ingredients) in a saucepan over medium heat. Slice the shiitake mushroom and put them into the saucepan to simmer for about 20 minutes with otoshibuta (dollop lid).",
+      "Let the shiitake mushrooms cool down to room temperature, place them into a storage container and chill in the fridge till the somen noodle is ready to serve.",
+      "Make the dipping sauce if you are making mentsuyu from scratch.",
+      "Dilute the mentsuyu with water and set aside.",
+      "Prepare the garnishes: slice the okura, grate the ginger, thinly slice the myoga, and cut the negi shallots finely.",
+      "Boil water (1- 1.5 liters or 6½ cups) in a large pot, add 1 bundle of somen noodle and cook for 2 minutes.",
+      "Drain the water and then leave the noodles under the running water to wash and cool down.",
+      "Place the noodles in a bowl of ice water to chill.",
+      "Serve the noodles with a few ice cubes, the toppings, the garnishes, and the dipping sauce separately."
+    ],
     "recipeType": "standard",
     "ingredients": [
       {
@@ -151,7 +162,7 @@
       }
     ],
     "isFavourite": false,
-    "content_hash": "1c272d38a906cf0975505ce3907744010e4e7a0de0c7f0add62f66619910a4dc",
+    "content_hash": "da2f2d0551189bd768335baefd825f248bed00f9a1b20262539c31749983c03b",
     "lineage_hash": "1b485c7977303274478b2fed3f4f9072ddddec8996c6384ed0d5f1c7e16978a5"
   },
   "metadata": {

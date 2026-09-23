@@ -18,7 +18,15 @@
       "fatContent": "2",
       "proteinContent": "7"
     },
-    "directions": [],
+    "directions": [
+      "Boil water in a large cooking pot.",
+      "Add udon noodles and cook for about 2-3 minutes.",
+      "Turn the heat off and drain the udon noodles.",
+      "Serve into two noodles bowls.",
+      "Place dashi, soy sauce, mirin and sugar into a sauce pan and bring it to boil.",
+      "Turn the heat off and pour it over the cooked udon noodles.",
+      "Garnish with your choice of toppings."
+    ],
     "recipeType": "standard",
     "ingredients": [
       {
@@ -79,7 +87,7 @@
       }
     ],
     "isFavourite": false,
-    "content_hash": "852f8be144c24bf949279ad0349e6cc9a52a398abac51e44ee98f44ce1f6dde3",
+    "content_hash": "48e155f8afa8ccaf50ca465d828d7aa6adf3905d82cc4a60fc9114440a96a578",
     "lineage_hash": "bef0332da79b050e010d86646ce4ae415174a796c432ff6aa03cda198f21b48e"
   },
   "metadata": {

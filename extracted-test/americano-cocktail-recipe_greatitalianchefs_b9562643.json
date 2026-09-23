@@ -16,7 +16,6 @@
     "cookCount": 0,
     "nutrition": null,
     "directions": [
-      "Fill a heavy-bottomed highball glass with ice",
       "Add the Campari and vermouth then top up with a splash of soda water",
       "Garnish with a slice of fresh orange and serve"
     ],
@@ -64,7 +63,7 @@
       }
     ],
     "isFavourite": false,
-    "content_hash": "f33508da1c2fa89605a2860eadf2dccc097ce3f60fc7acf48ab04a3deeee9e1a",
+    "content_hash": "d04dd7a26e131a61f9b12dd27f31ee52e0c66971852057eaf6651ea5c3374965",
     "lineage_hash": "0ce21963f42572b99f3ebf3e4201adee96b97a8d8acde3b0281ef6b086db1ce8"
   },
   "metadata": {

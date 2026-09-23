@@ -13,7 +13,14 @@
     "comments": null,
     "cookCount": 0,
     "nutrition": null,
-    "directions": [],
+    "directions": [
+      "Dry-roast the Hōjicha gently in a pan for a couple of minutes, until the tea smells aromatic. Grind in a spice grinder with the salt until the mixture is finely ground, then set aside. This will make more than you need but will keep in an airtight container indefinitely",
+      "Pour the vegetable oil into a deep pan and heat to 160-170ºC",
+      "Mix the carrots, enoki mushrooms and shungiku greens in a bowl",
+      "In another bowl, beat 150g of tempura flour with the cold water using a whisk. Rather than whisking normally, use an up and down motion to press the flour into the water – the idea is to have a slightly lumpy batter",
+      "On a large tray, scatter the remaining 50g of tempura flour and put the vegetables on top. Mix them well with your hands to give the vegetables a thin coating of flour. Take the vegetables out of the flour, shake off any excess flour and place in the batter",
+      "Take a small handful of vegetables from the batter and carefully lower them into the oil. Only cook a few at a time – this helps to keep the tempura light and airy. Let the tempura fry for 1 minute on one side, then gently turn over to fry the other side. When golden brown all over, remove onto kitchen roll and sprinkle with a pinch of Hōjicha salt. Repeat with the rest of the vegetables. Serve immediately with extra salt"
+    ],
     "recipeType": "standard",
     "ingredients": [
       {
@@ -82,7 +89,7 @@
       }
     ],
     "isFavourite": false,
-    "content_hash": "c4ad77d2cadb8db0cbbb1c32b3bd8d9f45fe281552ffc4c36b883d56839bd418",
+    "content_hash": "9d692975bc013b845628c5b4412fda66cd446b986d8a7c4090e91dc10e048318",
     "lineage_hash": "108e1fa5e75ada07375ebf56d063da21b49837375684979219b0494d01be7f38"
   },
   "metadata": {

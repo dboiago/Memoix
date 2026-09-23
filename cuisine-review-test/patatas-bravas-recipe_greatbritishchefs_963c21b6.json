@@ -13,7 +13,14 @@
     "comments": null,
     "cookCount": 0,
     "nutrition": null,
-    "directions": [],
+    "directions": [
+      "To begin, make the allioli. Slice the garlic bulb in half along its equator, drizzle with olive oil and sprinkle with salt. Tightly wrap in foil and roast in the oven for 1 hour",
+      "Meanwhile, make the brava sauce. Place the tomatoes in a blender and blitz until smooth. Add 2 tablespoons of olive oil to a pan over a low heat, then add the blended tomatoes. Cook, stirring often, for 30 minutes or until reduced by a third",
+      "Add the olive oil, spring onions, garlic cloves, dried chillies, choricero pepper (if using) and red pepper to the blender. Blitz to a paste, then add to a separate saucepan with a dash more oil. Place over a medium heat and cook for 5 minutes, then stir in the honey and vinegar. Add the flour then cook for 2 minutes, before adding the tomato purée, chicken stock and reduced blitzed tomatoes. Simmer for 30 minutes, then blitz until smooth once more. Season with salt and set aside",
+      "Once the garlic bulb has finished roasting, squeeze the soft cloves out of their skins into the blender. Add the raw garlic and egg yolks and blitz to a paste, then with the motor still running gradually drizzle in the oil until emulsified. Season with a pinch of salt and add most of the parsley (reserving some to garnish). Transfer to a piping bag or squeezy bottle if you have one and reserve in the fridge until needed",
+      "Around 30 minutes before you plan to serve, heat a deep pan of vegetable oil to 150°C. Peel the potatoes then 'chip' them into bite-sized pieces by cutting into the potato then twisting the blade – this creates shards of potato which will become extra-crisp. Working in batches, fry the potatoes for around 8 minutes, until soft inside and crisp on the outside. Drain on kitchen paper and sprinkle with salt",
+      "To serve, divide the potatoes between bowls and top with the brava sauce. Pipe over the allioli then garnish with parsley"
+    ],
     "recipeType": "standard",
     "ingredients": [
       {
@@ -178,7 +185,7 @@
       }
     ],
     "isFavourite": false,
-    "content_hash": "477d9ba4f6cdf49050b952aa65cedb6831c2bbd2dd1cc621d3a4c7ed44acf8e1",
+    "content_hash": "001a583a6aa1d781ea587d30b33d6940079872038b3da1314ad8aabd41536fbd",
     "lineage_hash": "af12a6e83502aad1b3be81fe9a75a011d93dfea197d6f6ffc999400e2643ab32"
   },
   "metadata": {

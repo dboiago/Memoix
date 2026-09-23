@@ -13,7 +13,17 @@
     "comments": null,
     "cookCount": 0,
     "nutrition": null,
-    "directions": [],
+    "directions": [
+      "To prepare the pudding mix, sift the flour into a bowl and combine with the breadcrumbs, suet, almonds, sugar and spices",
+      "Remove the stones from the dates, chop the flesh and combine with the remaining fruits. Add to the flour mixture and mix well",
+      "Whisk the eggs together and add to the pudding mixture with the rum, brandy, Guinness and golden syrup. Stir thoroughly to combine",
+      "Leave the mix in the fridge for 1 week to develop its flavour. During this time, taste the mixture occasionally - more spices or alcohol can be added if required",
+      "To cook the pudding, butter and flour a pudding basin, then fill it 3/4 of the way up the side with the mixture. Place a circle of parchment paper on top of the mixture, cover the basin with tin foil and seal tightly",
+      "Place in a steamer and steam the pudding for 4 hours. Once cooked, allow to cool and store tightly wrapped in the fridge or a cool place until required. To reheat the puddings, return to the steamer and steam for a further 2 hours",
+      "To prepare the brandy butter, add the butter to a large bowl and allow to soften. Once soft enough to beat, whisk the butter until light and creamy",
+      "Add the icing sugar and beat again until all of the sugar is mixed in, then whisk in the brandy, tasting to achieve the right balance of sweetness and alcohol. Store the butter in the fridge until required",
+      "Serve the reheated Christmas pudding with a good dollop of brandy butter or some cream. If desired, turn down the lights, splash some more brandy over the hot pudding and set it alight!"
+    ],
     "recipeType": "standard",
     "ingredients": [
       {
@@ -226,7 +236,7 @@
       }
     ],
     "isFavourite": false,
-    "content_hash": "42e4ea940bb6c4e1c5f97249e31ee10371cfc110f24718cbdc80f8e04fc12826",
+    "content_hash": "13a2ca289311a434e64bf82d5a4bc77b0d062531c2b0d656a6ff189f9048278b",
     "lineage_hash": "8e100367eba444f87b6bf18ae5346f9e59c4479dd0c5b4b45653852773a3fbdf"
   },
   "metadata": {

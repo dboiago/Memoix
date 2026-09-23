@@ -13,7 +13,16 @@
     "comments": null,
     "cookCount": 0,
     "nutrition": null,
-    "directions": [],
+    "directions": [
+      "Wrap the whole garlic bulb in foil and roast in the oven for 30 minutes",
+      "Combine the cream, milk, nutmeg, a roasted garlic clove or two, the bay leaves, thyme and a pinch of salt and pepper in a large saucepan and bring to the boil. Once boiling, remove from the heat and remove the herbs",
+      "Grate the potatoes and celeriac using the coarse side of a box grater",
+      "Stir the grated potatoes into the cream mixture along with the celery leaves and season with salt and pepper to taste",
+      "Transfer to a baking dish and top with the grated cheddar",
+      "Bake in the oven for 45 minutes or until slightly golden on top and the potatoes are tender all the way through",
+      "Either serve immediately, or, to portion it more neatly, remove from the oven and allow to cool. Cover the dauphinoise with foil or baking paper, then weigh down with tins or any other heavy object and chill in the fridge to press for 6–12 hours",
+      "When ready to serve, reheat the dauphinoise in a 180°C fan oven for 15 minutes. Divide into four portions and serve"
+    ],
     "recipeType": "standard",
     "ingredients": [
       {
@@ -106,7 +115,7 @@
       }
     ],
     "isFavourite": false,
-    "content_hash": "3a3ff617d916f2c1910d8992b45a36270802a834e09810dbdce4880702158187",
+    "content_hash": "510aeff7afa4c384ad32c67ec3e2471d4d415d5fb2e3f0bb666241c802768c23",
     "lineage_hash": "a575bfb10d098ecd3972ea64f151e3ddf51e2865cd848d5f68c3503a7211adac"
   },
   "metadata": {

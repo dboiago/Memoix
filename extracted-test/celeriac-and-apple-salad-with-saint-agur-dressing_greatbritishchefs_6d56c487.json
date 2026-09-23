@@ -16,6 +16,7 @@
     "directions": [
       "Mix the celeriac with the salt in a large bowl and set aside for 10 minutes to allow the celeriac to soften slightly",
       "Meanwhile, whisk together all the ingredients for the dressing until thoroughly combined",
+      "Add the remaining ingredients for the salad to the celeriac and mix well, then toss in the dressing",
       "To serve, place the sliced lettuce on the base of a large serving platter (or individual bowls, if you prefer). Top with the salad and garnish with the diced Saint Agur"
     ],
     "recipeType": "standard",
@@ -110,7 +111,7 @@
       }
     ],
     "isFavourite": false,
-    "content_hash": "df7faad78914cbffbefbf056deec2973ce0c7ed4522d3100548a4af18d1aedb1",
+    "content_hash": "6524d5e9f4f80ba988c967d8cc0f6b3525d1b77d92b7cac739d9d9a55624a136",
     "lineage_hash": "9a2baaf57be568f3d2e405b7b3d0f7090a9c6e6ddd937b0fb96dbcaa1547aea0"
   },
   "metadata": {
