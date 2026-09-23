@@ -548,27 +548,36 @@ function parseIngredientString(raw) {
 
 // Confirmed necessary on vickypham.com: some sites' JSON-LD recipeInstructions
 // is just a list of section headers ("Pork Stock", "Assembly"), not real
-// steps. Real steps end in sentence-ending punctuation and are more than a
-// couple of words; bare headers don't and aren't. Requiring every line in the
-// array to look like a real step (not just some of them) means a partially-
-// broken ldInstructionsRaw gets rejected outright rather than partially
-// trusted, since a mix of real steps and stray headers is worse than either
-// extreme -- it would silently drop steps with no signal that anything's missing.
+// steps. Real steps end in sentence-ending punctuation; bare headers don't.
+// Split out from the aggregate check below so a mostly-real list can be
+// filtered down to just the lines that pass, instead of the whole field
+// being judged (and used) as one all-or-nothing unit.
+function isRealInstructionLine(line) {
+  const trimmed = (line || '').trim();
+  if (trimmed.length < 6) return false;
+  // Allow a closing quote/paren/bracket after the actual terminal mark --
+  // confirmed necessary on hot-thai-kitchen.com's 3-Chili Fried Rice:
+  // "...everything looks the same colour.)" is a complete, real sentence
+  // that just ends with a parenthetical aside, not a fragment.
+  if (!/[.!?]["'\)\]]*$/.test(trimmed)) return false;
+  if (trimmed.split(/\s+/).length < 2) return false;
+  return true;
+}
+
+// Tolerates a small minority of non-conforming lines rather than requiring
+// every single one to pass. Confirmed necessary on meilleurduchef.com's
+// 3-Chocolate & Cocoa Nib Yule Log: a genuine ~90-step instruction list was
+// discarded outright over exactly one entry, "Set aside." (10 chars, 2
+// words) -- a real, complete step, just shorter than the old 12-char/3-word
+// minimums. A single short-but-real step shouldn't sink an otherwise
+// excellent list any more than a single unquantified ingredient should (see
+// looksLikeRealIngredientLines below). The known-bad case this must still
+// catch (vickypham.com's all-headers recipeInstructions) fails this
+// threshold too, since none of its lines look real at all.
 function looksLikeRealInstructionLines(lines) {
   if (!Array.isArray(lines) || lines.length === 0) return false;
-  return lines.every(line => {
-    const trimmed = (line || '').trim();
-    if (trimmed.length < 12) return false;
-    // Allow a closing quote/paren/bracket after the actual terminal mark --
-    // confirmed necessary on hot-thai-kitchen.com's 3-Chili Fried Rice:
-    // "...everything looks the same colour.)" is a complete, real sentence
-    // that just ends with a parenthetical aside, not a fragment. Anchoring
-    // [.!?] to the literal last character rejected two genuinely good steps
-    // and took the whole array down with them (every() requires all to pass).
-    if (!/[.!?]["'\)\]]*$/.test(trimmed)) return false;
-    if (trimmed.split(/\s+/).length < 3) return false;
-    return true;
-  });
+  const failing = lines.filter(line => !isRealInstructionLine(line));
+  return failing.length <= Math.max(1, Math.floor(lines.length * 0.2));
 }
 
 // Deterministic plausibility check on JSON-LD's recipeIngredient field,
@@ -585,20 +594,29 @@ function looksLikeRealInstructionLines(lines) {
 // A real ingredient line almost always has either a quantity (a digit or a
 // unicode fraction glyph) or is a multi-word phrase ("firm tofu", "soy
 // sauce") -- a single bare noun with no quantity is the one shape a genuine
-// ingredient list essentially never takes across every line at once. This
-// check requires EVERY line to clear that bar, not just some of them, for
-// the same reason looksLikeRealInstructionLines does: a JSON-LD field that's
-// mostly real content with one bare-word outlier is a materially safer case
-// than one where nothing in the field has a quantity anywhere.
+// ingredient list essentially never takes across every line at once. Unlike
+// looksLikeRealInstructionLines, a "failing" line here is still a legitimate
+// ingredient (e.g. "Mayonnaise" or "brandy" listed with no quantity as a
+// to-taste condiment/garnish) -- it just isn't proof by itself that the
+// field is real, so it's tolerated in the same small-minority proportion
+// rather than dropped. Confirmed necessary on omnivorescookbook.com's
+// 3-Ingredient Fried Shrimp (10/11 lines quantified, "Mayonnaise" alone
+// failing) and greatbritishchefs.com's Christmas Pudding (25/26, "brandy"
+// alone) -- both real, complete ingredient lists were discarded wholesale
+// over one legitimate no-quantity line, falling back to a strictly worse
+// whole-page LLM re-extraction of the same content. The known-bad case this
+// must still catch (ranveerbrar.com's aloo/Methi/potato tag list) fails this
+// threshold too, since none of those lines look real at all.
 function looksLikeRealIngredientLines(lines) {
   if (!Array.isArray(lines) || lines.length === 0) return false;
   const AMOUNT_OR_FRACTION_PATTERN = /\d|[½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚]/;
-  return lines.every(line => {
+  const failing = lines.filter(line => {
     const trimmed = (line || '').trim();
-    if (!trimmed) return false;
-    if (AMOUNT_OR_FRACTION_PATTERN.test(trimmed)) return true;
-    return trimmed.split(/\s+/).length > 1;
+    if (!trimmed) return true;
+    if (AMOUNT_OR_FRACTION_PATTERN.test(trimmed)) return false;
+    return trimmed.split(/\s+/).length <= 1;
   });
+  return failing.length <= Math.max(1, Math.floor(lines.length * 0.2));
 }
 
 function buildPayload(extracted, meta) {
@@ -1933,8 +1951,17 @@ async function main() {
       // recipeInstructions is just a list of section headers ("Pork Stock",
       // "Assembly"), not real steps, and blindly trusting that would have
       // silently destroyed a working whole-page extraction.
+      //
+      // The gate above now tolerates a small minority of non-conforming
+      // lines (see looksLikeRealInstructionLines), so filter to just the
+      // individually-real lines here rather than using the raw array
+      // verbatim -- otherwise an occasional stray header mixed into an
+      // otherwise-real list would ship straight into directions unfiltered.
       if (looksLikeRealInstructionLines(meta.ldInstructionsRaw)) {
-        extracted.directions = meta.ldInstructionsRaw.map(d => d.trim()).filter(Boolean);
+        extracted.directions = meta.ldInstructionsRaw
+          .filter(isRealInstructionLine)
+          .map(d => d.trim())
+          .filter(Boolean);
       } else if (meta.ldInstructionsRaw && meta.ldInstructionsRaw.length > 0) {
         console.log(`  (ldInstructionsRaw present but doesn't look like real steps -- keeping whole-page directions)`);
       }
