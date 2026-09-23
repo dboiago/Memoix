@@ -641,47 +641,70 @@ function extractMarkdownDirections(markdown) {
   if (!markdown) return null;
   const lines = markdown.split('\n');
   const startIdx = lines.findIndex(l => METHOD_HEADING_PATTERN.test(l.trim()));
-  if (startIdx === -1) return null;
-  const level = lines[startIdx].trim().match(METHOD_HEADING_PATTERN)[1].length;
-  const boundaryPattern = new RegExp(`^#{1,${level}}\\s`);
-  let endIdx = lines.length;
-  for (let i = startIdx + 1; i < lines.length; i++) {
-    if (boundaryPattern.test(lines[i].trim())) { endIdx = i; break; }
-  }
-  const sectionLines = lines.slice(startIdx + 1, endIdx);
   const clean = (text) => text
     .replace(/\*\*(.+?)\*\*/g, '$1')
     .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
     .replace(INVISIBLE_CHAR_PATTERN, '')
     .trim();
 
-  const steps = [];
-  for (const line of sectionLines) {
-    const m = line.trim().match(/^\d+\.\s+(.+)$/);
-    if (!m) continue;
-    const cleaned = clean(m[1]);
-    if (cleaned) steps.push(cleaned);
-  }
+  const collectFromLines = (sectionLines) => {
+    const found = [];
+    for (const line of sectionLines) {
+      const m = line.trim().match(/^\d+\.\s+(.+)$/);
+      if (!m) continue;
+      const cleaned = clean(m[1]);
+      if (cleaned) found.push(cleaned);
+    }
+    if (found.length === 0) {
+      for (let i = 0; i < sectionLines.length; i++) {
+        if (!/^\d+$/.test(sectionLines[i].trim())) continue;
+        let j = i + 1;
+        while (j < sectionLines.length && !sectionLines[j].trim()) j++;
+        if (j >= sectionLines.length) continue;
+        const candidate = sectionLines[j].trim();
+        if (!candidate || /^\d+$/.test(candidate) || /^[-*]\s/.test(candidate)) continue;
+        const cleaned = clean(candidate);
+        if (cleaned) found.push(cleaned);
+      }
+    }
+    return found;
+  };
 
-  // Second shape, only tried when the first found nothing: a bare step
-  // number alone on its own line, with the step's prose description as the
-  // next non-blank line, followed by an ingredient-callout bullet list for
-  // that step -- confirmed on greatbritishchefs.com ("1" / blank / "Mix the
-  // celeriac..." / blank / "-   400g of celeriac..."), the same convention
-  // already confirmed on meilleurduchef.com's yule log. Stops at the first
-  // bullet or another bare number rather than accumulating lines, since
-  // every confirmed example is a single prose sentence, not a wrapped
-  // paragraph.
-  if (steps.length === 0) {
-    for (let i = 0; i < sectionLines.length; i++) {
-      if (!/^\d+$/.test(sectionLines[i].trim())) continue;
-      let j = i + 1;
-      while (j < sectionLines.length && !sectionLines[j].trim()) j++;
-      if (j >= sectionLines.length) continue;
-      const candidate = sectionLines[j].trim();
-      if (!candidate || /^\d+$/.test(candidate) || /^[-*]\s/.test(candidate)) continue;
-      const cleaned = clean(candidate);
-      if (cleaned) steps.push(cleaned);
+  let steps;
+  if (startIdx !== -1) {
+    const level = lines[startIdx].trim().match(METHOD_HEADING_PATTERN)[1].length;
+    const boundaryPattern = new RegExp(`^#{1,${level}}\\s`);
+    let endIdx = lines.length;
+    for (let i = startIdx + 1; i < lines.length; i++) {
+      if (boundaryPattern.test(lines[i].trim())) { endIdx = i; break; }
+    }
+    steps = collectFromLines(lines.slice(startIdx + 1, endIdx));
+  } else {
+    // No heading text at all to anchor on -- confirmed on
+    // greatbritishchefs.com's Celeriac and Le Gruyère AOP Agnolotti: the
+    // page's own "Method" label isn't real heading markup at all (nothing
+    // for METHOD_HEADING_PATTERN to match), so the bare-numbered steps
+    // just start right after the equipment list with no heading boundary.
+    // Falls back to finding the first strictly sequential run of bare
+    // numbers (1, 2, 3, ...) anywhere in the document -- the sequence
+    // itself, not a heading, is the structural signal here, so it's
+    // deliberately required to start exactly at "1" and increment with no
+    // gaps, which an unrelated numbered list elsewhere on the page (e.g.
+    // equipment, FAQ) is very unlikely to do.
+    const seqStart = lines.findIndex(l => l.trim() === '1');
+    if (seqStart === -1) {
+      steps = [];
+    } else {
+      let expected = 1;
+      let endIdx = lines.length;
+      for (let i = seqStart; i < lines.length; i++) {
+        const trimmed = lines[i].trim();
+        if (!/^\d+$/.test(trimmed)) continue;
+        if (Number(trimmed) === expected) { expected++; continue; }
+        endIdx = i;
+        break;
+      }
+      steps = collectFromLines(lines.slice(seqStart, endIdx));
     }
   }
 
@@ -2331,8 +2354,21 @@ async function main() {
         }
 
         if (tieDetail) {
+          // Skip any tied entry whose own name says it's a liqueur/cordial --
+          // confirmed on Diffordsguide's Alabama Slammer (shot): "Sloe Gin
+          // Liqueur" contains "Gin" and "Southern Liqueur" was cleaned from
+          // "...whisky liqueur", both matching a base-spirit keyword despite
+          // neither actually being that base spirit -- a liqueur named after
+          // the spirit it's flavored with (sloe gin, coffee rum liqueur,
+          // cherry brandy liqueur) is still a liqueur, not a competing base
+          // spirit, and VALID_SUBCATEGORIES already has "Liqueur" as its own
+          // distinct category for exactly this. Without this, the tie
+          // between three liqueurs at equal volume misfired as a spirit
+          // mismatch against the model's correct "Liqueur" choice.
+          const LIQUEUR_NAME_PATTERN = /\b(liqueur|cordial)\b/i;
           const tiedBaseSpirits = new Set();
           for (const e of tiedEntries) {
+            if (LIQUEUR_NAME_PATTERN.test(e.name)) continue;
             for (const [category, pattern] of Object.entries(BASE_SPIRIT_KEYWORDS)) {
               if (pattern.test(e.name)) tiedBaseSpirits.add(category);
             }
