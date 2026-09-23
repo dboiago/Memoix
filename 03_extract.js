@@ -1278,7 +1278,9 @@ async function extractWithOllama(markdown, meta, skip = {}) {
     ? `\n\nIMPORTANT overrides for this page:\n${skipOverrides.join('\n')}`
     : '';
 
-    ldBlock +
+  const userPrompt =
+    `Page title: ${meta.title || ''}\n` +
+    (ldHints ? `\nStructured page data hints:\n${ldHints}\n` : '') +
     `\n--- BEGIN CONTENT ---\n${truncated}\n--- END CONTENT ---`;
 
   const body = {
