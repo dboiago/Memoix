@@ -2132,11 +2132,23 @@ async function main() {
       const ldCuisine = resolveCuisineFromLd(meta.ldCuisine);
       if (ldCuisine) {
         extracted.cuisine = ldCuisine;
-      } else if (meta.siteRegionHint) {
-        // Only worth the extra call when there's a hint that could have
-        // biased the main call's cuisine field in the first place -- an
-        // unhinted site has nothing for the model to lean on, so there's no
-        // bias risk to check.
+      } else {
+        // Previously only ran when meta.siteRegionHint existed, on the
+        // theory that an unhinted site has nothing for the model to lean
+        // on, so there's no bias risk to check. That missed a second,
+        // distinct role this call plays: its prompt explicitly instructs
+        // "return an empty string rather than guessing" on a genuine-fusion/
+        // no-clear-origin recipe -- exactly the safeguard an UNHINTED
+        // recipe needs most, since nothing else in the pipeline grounds it
+        // either. Confirmed on punchdrink.com's Bhoomi: no ldCuisine, no
+        // siteRegionHint, and the main extraction call landed on "IN" off
+        // the Hindi drink name and a gin brand called "India Dry Gin" for
+        // what's actually a modern Chicago-invented Gin & Tonic riff -- a
+        // bare, ungrounded guess that then had nothing catching it except
+        // the after-the-fact cuisine-unverified-no-grounding review flag.
+        // Now runs whenever ldCuisine didn't already resolve things,
+        // regardless of siteRegionHint, at the cost of one extra Ollama
+        // call per recipe with no page-stated cuisine.
         try {
           const blind = await classifyCuisineBlind(
             extracted.name, extracted.ingredients, extracted.directions,

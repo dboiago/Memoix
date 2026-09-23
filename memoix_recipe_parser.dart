@@ -2198,7 +2198,23 @@ const _ingredientUnitAlternation =
       r'^([^,]+),\s*(\d+(?:/\d+|[½¼¾⅓⅔⅛⅜⅝⅞])?(?:\s*\d+(?:/\d+|[½¼¾⅓⅔⅛⅜⅝⅞])?)?)\s*(g|kg|ml|l|oz|lb|cup|cups|c|tbsp|tsp|each|whole|large|medium|small)?\.?\s*(?:\(([^)]+)\))?$',
       caseSensitive: false,
     ).firstMatch(remaining);
-    if (nameAmountMatch != null) {
+    // Guards against a dual-measurement line like "300 g all-purpose flour ,
+    // 2 cups" being mistaken for this branch's "Name, amount unit" shape.
+    // Both are syntactically identical (TEXT, NUMBER UNIT) so the regex
+    // above can't tell them apart on its own -- confirmed on
+    // chinasichuanfood.com's Biang Biang Mian: "300 g all-purpose flour"
+    // (a real leading amount+unit+name, not a name) got swallowed whole
+    // into the name group, with the trailing metric-to-cups conversion
+    // "2 cups" taken as the primary amount instead. The distinguishing
+    // signal is whether the text before the comma itself starts with a
+    // digit immediately followed by a recognized unit word -- "00 Flour"
+    // (the worked example above) starts with a digit but "Flour" isn't a
+    // unit, so it's unaffected; "300 g all-purpose flour" is.
+    final nameCandidateIsActuallyAmountUnit = nameAmountMatch != null &&
+        RegExp(r'^[\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚./]+\s*(?:' + _ingredientUnitAlternation + r')\b',
+            caseSensitive: false)
+        .hasMatch(nameAmountMatch.group(1)?.trim() ?? '');
+    if (nameAmountMatch != null && !nameCandidateIsActuallyAmountUnit) {
       final name = nameAmountMatch.group(1)?.trim() ?? '';
       var amountNum = nameAmountMatch.group(2)?.trim() ?? '';
       final unit = nameAmountMatch.group(3)?.trim() ?? '';
@@ -2356,17 +2372,34 @@ const _ingredientUnitAlternation =
     }
     
     if (amount == null) {
-      // Handle "X to Y unit" range format (e.g., "1 to 2 teaspoons")
+      // Handle "X to Y unit" range format (e.g., "1 to 2 teaspoons"), and
+      // also "X unit to Yunit" where the first number already carries its
+      // own unit before "to" (e.g. "130 ml to 140ml water"). The optional
+      // unit group's own leading \s* is nested INSIDE that group (rather
+      // than shared with the \s+to\s+ that follows) so a failed unit match
+      // backtracks the whole group to zero-width instead of leaving the
+      // separating space already consumed -- without that, the simple
+      // no-unit-before-"to" case ("1 to 2 teaspoons") would fail to match
+      // at all. Confirmed necessary on chinasichuanfood.com's Biang Biang
+      // Mian: "130 ml to 140ml water" fell through this pattern entirely
+      // (no literal "to" immediately after "130") and was instead caught
+      // by the plain single-amount pattern below, which took "130 ml" as
+      // the full amount and left "to 140ml water" -- literally, with "to"
+      // title-cased -- as the ingredient name.
       final toRangeMatch = RegExp(
-        r'^([\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚.]+)\s+to\s+([\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚.]+)'
-        r'(\s*(?:' + _ingredientUnitAlternation + r')\.?)?\s+',
+        r'^([\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚.]+)(?:\s*(' + _ingredientUnitAlternation + r')\.?)?'
+        r'\s+to\s+([\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚.]+)'
+        r'(?:\s*(' + _ingredientUnitAlternation + r')\.?)?\s+',
         caseSensitive: false,
       ).firstMatch(remaining);
       
       if (toRangeMatch != null) {
         final start = toRangeMatch.group(1)?.trim() ?? '';
-        final end = toRangeMatch.group(2)?.trim() ?? '';
-        final unit = toRangeMatch.group(3)?.trim() ?? '';
+        final end = toRangeMatch.group(3)?.trim() ?? '';
+        // Prefer the unit stated after the SECOND number (closer to "to",
+        // and the more common placement) but fall back to the one after
+        // the first number if that's the only one present.
+        final unit = (toRangeMatch.group(4) ?? toRangeMatch.group(2) ?? '').trim();
         amount = '$start-$end';
         if (unit.isNotEmpty) {
           amount = '$amount ${_normalizeUnit(unit)}';
