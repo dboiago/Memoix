@@ -647,8 +647,10 @@ function looksLikeRealIngredientLines(lines) {
 // steps, it only recovers ones already sitting in an unambiguous heading.
 // Allows the heading text to be wrapped in bold/italic markers ("##
 // **Method**") -- confirmed necessary on okonomikitchen.com's 3-Ingredient
-// Chocolate Hazelnut Cereal, which uses exactly that heading style.
-const METHOD_HEADING_PATTERN = /^(#{1,6})\s*[*_]{0,2}\s*(method|instructions?|directions?|steps?|preparation|how to make)\b/i;
+// Chocolate Hazelnut Cereal, which uses exactly that heading style. Also
+// allows a leading descriptor word before the keyword ("## Recipe Steps")
+// -- confirmed necessary on barbecuebible.com, used site-wide.
+const METHOD_HEADING_PATTERN = /^(#{1,6})\s*[*_]{0,2}\s*(?:recipe\s+)?(method|instructions?|directions?|steps?|preparation|how to make)\b/i;
 function extractMarkdownDirections(markdown) {
   if (!markdown) return null;
   const lines = markdown.split('\n');
@@ -662,7 +664,11 @@ function extractMarkdownDirections(markdown) {
   const collectFromLines = (sectionLines) => {
     const found = [];
     for (const line of sectionLines) {
-      const m = line.trim().match(/^\d+\.\s+(.+)$/);
+      const trimmed = line.trim();
+      // Plain markdown numbered list ("1. text"), or barbecuebible.com's
+      // own bold-inline-number style ("**1:** text" / "**Step 1:** text"),
+      // site-wide there instead of any numbered-list markup at all.
+      const m = trimmed.match(/^\d+\.\s+(.+)$/) || trimmed.match(/^\*\*(?:step\s+)?\d+:\*\*\s*(.+)$/i);
       if (!m) continue;
       const cleaned = clean(m[1]);
       if (cleaned) found.push(cleaned);
