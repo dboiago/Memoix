@@ -2409,9 +2409,14 @@ const _ingredientUnitAlternation =
     }
     
     if (amount == null) {
-      // Original pattern for simple amounts and ranges with dash/en-dash
+      // Original pattern for simple amounts and ranges with dash/en-dash.
+      // Also accepts "~" as a range separator ("2 ~ 3 tbsp") -- confirmed
+      // on ladyandpups.com's 1 Hot Summer, 2 Hot Corns, which uses that
+      // notation instead of a dash; previously unmatched here entirely and
+      // caught by nothing downstream either, leaving the whole "~ 3 tbsp"
+      // stuck in the ingredient name alongside a duplicated unit word.
       final amountMatch = RegExp(
-        r'^([\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚.]+\s*[-–]\s*[\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚.]+|[\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚.]+)'
+        r'^([\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚.]+\s*[-–~]\s*[\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚.]+|[\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚.]+)'
         r'(\s*(?:' + _ingredientUnitAlternation + r')\.?)?\s+',
         caseSensitive: false,
       ).firstMatch(remaining);
@@ -2419,8 +2424,8 @@ const _ingredientUnitAlternation =
       if (amountMatch != null) {
         final number = amountMatch.group(1)?.trim() ?? '';
         final unit = amountMatch.group(2)?.trim() ?? '';
-        // Normalize the range format (remove extra spaces around dash)
-        amount = number.replaceAll(RegExp(r'\s*[-–]\s*'), '-');
+        // Normalize the range format (remove extra spaces around dash/tilde)
+        amount = number.replaceAll(RegExp(r'\s*[-–~]\s*'), '-');
         if (unit.isNotEmpty) {
           amount = '$amount ${_normalizeUnit(unit)}';
         }

@@ -633,7 +633,10 @@ function looksLikeRealIngredientLines(lines) {
 // subheadings until the next same-or-shallower heading, and every
 // candidate still has to pass isRealInstructionLine -- this never invents
 // steps, it only recovers ones already sitting in an unambiguous heading.
-const METHOD_HEADING_PATTERN = /^(#{1,6})\s*(method|instructions?|directions?|steps?|preparation|how to make)\b/i;
+// Allows the heading text to be wrapped in bold/italic markers ("##
+// **Method**") -- confirmed necessary on okonomikitchen.com's 3-Ingredient
+// Chocolate Hazelnut Cereal, which uses exactly that heading style.
+const METHOD_HEADING_PATTERN = /^(#{1,6})\s*[*_]{0,2}\s*(method|instructions?|directions?|steps?|preparation|how to make)\b/i;
 function extractMarkdownDirections(markdown) {
   if (!markdown) return null;
   const lines = markdown.split('\n');
@@ -656,8 +659,18 @@ function extractMarkdownDirections(markdown) {
       .trim();
     if (cleaned) steps.push(cleaned);
   }
-  if (steps.length < 2 || !looksLikeRealInstructionLines(steps)) return null;
-  return steps.filter(isRealInstructionLine);
+  // Deliberately NOT gated on isRealInstructionLine/looksLikeRealInstructionLines
+  // here -- those exist to tell real steps apart from bare section headers
+  // in a flat, unstructured ldInstructionsRaw array where punctuation is
+  // the only available signal. Here, "numbered list item directly under an
+  // explicit Method/Instructions heading" is already a much stronger
+  // structural signal that a header line could never satisfy, so requiring
+  // terminal sentence punctuation on top of it only rejects real content.
+  // Confirmed necessary on okonomikitchen.com's 3-Ingredient Chocolate
+  // Hazelnut Cereal: all 6 real numbered steps ("Preheat oven 160 C", etc.)
+  // are written with no trailing punctuation at all.
+  if (steps.length < 2) return null;
+  return steps.filter(s => s.length >= 4);
 }
 
 function buildPayload(extracted, meta) {
