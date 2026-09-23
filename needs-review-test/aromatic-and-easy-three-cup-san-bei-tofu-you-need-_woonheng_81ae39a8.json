@@ -1,0 +1,153 @@
+{
+  "recipe": {
+    "name": "Three Cup (San Bei) Tofu",
+    "time": "40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix the sauce ingredients in a bowl until well combined and set aside.",
+      "To prepare the tofu, pat the tofu dry with paper towels and cut into cubes or rectangle slices, about 1cmm thick.",
+      "Place ¼ cup corn starch in a shallow plate or baking sheet pan. Then, coat the slices generously with corn starch, making sure all sides have a thin layer of starch.",
+      "Preheat the air-fryer using the fries settings (390F).",
+      "Brush the top side of the tofu with a thin layer of oil. Then, grease the inner air-fryer rack.",
+      "Using a tong or a pair of chopsticks, transfer tofu slices onto the greased rack in a single layer.",
+      "Air-fry tofu slices until golden brown, about 4-8 minutes. Check periodically and flip if needed. To pan-fry the tofu, please check the section &#039;Crispy Tofu - 2 ways&#039; or notes below.",
+      "Transfer the air-fried tofu to a cookie rack to cool while you work on the next batch.",
+      "To cook the tofu, heat a large skillet with 2 tablespoons of oil. Then, sauté ginger slices until the sides turn crispy and aromatic.",
+      "Add the garlic and chopped chile and continue to cook until the garlic is fragrant.",
+      "Pour in the sauce and cook until the sugar has melted.",
+      "Add the tofu slices then toss everything to combine. If you prefer not to serve it in a clay pot, then add the Thai basil along with the tofu and continue to cook until the sauce has reduced.",
+      "To cook the tofu in claypot: Heat a claypot and add a drizzle of oil. Then, sauté green onions and half of the Thai basil until aromatic.",
+      "Transfer the tofu into the clay pot then top with the remaining Thai basil, cover and cook it over low heat for another 1- 2 minutes. This step will create a charred bottom which give the tofu a more flavorful taste.",
+      "Turn off the heat and serve warm with rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "[397g]firm Tofu Drained",
+        "unit": "oz",
+        "notes": null,
+        "amount": "14",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "[35g] Ginger",
+        "unit": "slices",
+        "notes": null,
+        "amount": "8-10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Sliced",
+        "unit": "clove",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Jalapenõ Chopped (or Any Chili)",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Packed Fresh Thai Basil Sub with Basil",
+        "unit": "C",
+        "notes": "alt: adjust to your preference",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn Starch for Coating",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "A Handful of Chopped Scallion/green Onion",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil for Cooking",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Cooking Wine Michiu",
+        "unit": "Tbsp",
+        "notes": "alt: use rice wine/dry sherry⁣/vegetable broth",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce⁣",
+        "unit": "Tbsp",
+        "notes": "alt: tamari",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Oil⁣",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar⁣",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "[80g] Water⁣",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c84ca63d13e621f39eb9d1154fca3746dbc1c8d95e17905456e3f42da8539b02",
+    "lineage_hash": "10a7a573f33ed425ff28e2adfa5e3ae493b4886e60594022d5d97444f819f378"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://woonheng.com/three-cup-san-bei-tofu/",
+    "fetchedAt": "2026-08-01T18:53:24.657Z"
+  },
+  "rawSource": "https://woonheng.com/three-cup-san-bei-tofu/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

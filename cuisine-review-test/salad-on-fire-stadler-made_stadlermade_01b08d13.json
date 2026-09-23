@@ -1,0 +1,137 @@
+{
+  "recipe": {
+    "name": "Salad on Fire",
+    "time": null,
+    "course": "salads",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cut the romaine lettuce in half and drizzle with olive oil.",
+      "Grill over the fire for a few minutes until it has a lovely colour.",
+      "Take the bread, cut it into pieces, and drizzle with olive oil and coarse salt.",
+      "Place it in the oven until golden brown.",
+      "Melt the butter in a pan, then add the peas, broad beans, sun-dried tomatoes, mint, tarragon and salt, and cook them until tender.",
+      "Mix the mayonnaise with a little water to create a slightly runny consistency.",
+      "Now assemble the salad by layering the vegetables, adding a drizzle of the mayonnaise dressing, and top it off with croutons."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Romaine Lettuce Heads",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Some Leftover Bread",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Knob of Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peas",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Broad Beans",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sun-dried Tomatoes",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tarragon",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemons",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "272ecea1746934610e3ad2eb418e3a8b239b12f3f7de6303d6dcfecef0cf14eb",
+    "lineage_hash": "9e9a2556895dcd0d8640cbce5ac0dc4af5410e74e184705b3a2bedc2d1ead1c4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.stadlermade.com/oven-recipes/salad/salad-on-fire/",
+    "fetchedAt": "2026-08-01T18:42:00.059Z"
+  },
+  "rawSource": "https://www.stadlermade.com/oven-recipes/salad/salad-on-fire/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

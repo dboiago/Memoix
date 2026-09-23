@@ -1,0 +1,100 @@
+{
+  "recipe": {
+    "name": "Stir Fried Garlic Scape with Eggs",
+    "time": "15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "242",
+      "carbohydrateContent": "29.9",
+      "fatContent": "9.9",
+      "proteinContent": "11.4"
+    },
+    "directions": [
+      "Mix the oyster sauce and soy sauce together in a small bowl. Set aside.",
+      "Heat 1 tablespoon of oil in a large skillet over medium-high heat until hot. Add the eggs. Let cook for a few seconds until the bottom sets. Scramble the eggs lightly until just cooked through, then transfer them to a plate and set aside.",
+      "Add the remaining 1/2 tablespoon of oil, ginger and green onion. Stir a few times to release the fragrance.",
+      "Add the garlic scapes. Stir and cook for 2 minutes, until it starts to soften if using Asian garlic scapes. Cook for a longer time if using US garlic scapess (*Footnote 1). Pour in the oyster sauce mixture and stir a few times to mix well. Taste a piece of garlic scape. It should be tender but still a bit crisp. You can cook it longer for a more tender texture, if you prefer.",
+      "Return the eggs to the pan. Stir and cook for another 30 seconds. Transfer everything to a large serving plate. Garnish with the remaining fresh green onions, if using. Serve hot over rice as a main dish or as a side dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vegetarian Oyster Sauce (or Regular Oyster Sauce)",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil (or Vegetable Oil)",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thumb Ginger",
+        "unit": null,
+        "notes": "minced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion",
+        "unit": null,
+        "notes": "sliced (Reserve a small portion for garnish)",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "(340 G) Garlic Scapes",
+        "unit": "oz",
+        "notes": "sliced to 1” (2.5 cm) pieces (Yield 2 2/1 cup once cut)",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0b0b37d12976c73dbf74297d96af19637c1f1fc0fc6d877ae7b4b904868101a1",
+    "lineage_hash": "0336e9ab822fd992dc4eef9896b00e07020fd49564330d14e71d179109629c89"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/stir-fried-garlic-scape-with-eggs/",
+    "fetchedAt": "2026-08-01T21:41:08.467Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/stir-fried-garlic-scape-with-eggs/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

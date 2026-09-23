@@ -1,0 +1,267 @@
+{
+  "recipe": {
+    "name": "Chiles en Nogada",
+    "time": "1 hr 5 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "704",
+      "carbohydrateContent": "36",
+      "fatContent": "51",
+      "proteinContent": "28"
+    },
+    "directions": [
+      "Roast poblanos: Broil until skins blister, steam in a bag 10 minutes, then peel. Carefully slit and remove seeds.",
+      "Cook filling: In a skillet, heat oil. Sauté onion and garlic, then add meat, oregano, thyme, nutmeg, pepper, cloves, cinnamon, and salt. Cook until browned. Stir in tomato, apple, pear, wine, parsley, and raisins. Cook until softened and fragrant.",
+      "Make sauce: Toast walnuts in oven at 400°F until fragrant. Rub between towels to remove skins. Blend with milk, crema, cheeses, wine, and sugar until smooth and creamy.",
+      "Assemble: Stuff each chile with filling. Place on a platter or plates, pour walnut sauce over, and garnish with pomegranate seeds and parsley."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Poblanos Chiles",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Onion",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Pork",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Beef",
+        "unit": "lb",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mexican Oregano",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Nutmeg",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cloves",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Roma Tomato",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gala Apple",
+        "unit": null,
+        "notes": "peeled and chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bartlett Pear",
+        "unit": null,
+        "notes": "peeled and chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "C",
+        "notes": "fresh, chopped",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raisins",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Walnuts",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Nogada (Walnut Sauce)",
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": "plus more if needed",
+        "amount": "¼",
+        "section": "Nogada (Walnut Sauce)",
+        "isOptional": false
+      },
+      {
+        "name": "Crema Mexicana",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Nogada (Walnut Sauce)",
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Nogada (Walnut Sauce)",
+        "isOptional": false
+      },
+      {
+        "name": "Cream Cheese",
+        "unit": "lb",
+        "notes": "room temperature",
+        "amount": "¼",
+        "section": "Nogada (Walnut Sauce)",
+        "isOptional": false
+      },
+      {
+        "name": "Goat Cheese",
+        "unit": "oz",
+        "notes": "room temperature",
+        "amount": "2",
+        "section": "Nogada (Walnut Sauce)",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Nogada (Walnut Sauce)",
+        "isOptional": false
+      },
+      {
+        "name": "Pomegranate Seeds",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Toppings",
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "0",
+        "section": "Toppings",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "09e985e8bbf6e23c3967d3cfb9cb097fafc30c167e7c465dd7702a9b895d97dd",
+    "lineage_hash": "b9761df8cba2da09777c4bb0386fa0e0e50634ff2d79b28840cf0aa9d3b4404b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/chiles-en-nogada-stuffed-poblano-chiles-with-walnut-sauce/",
+    "fetchedAt": "2026-08-02T09:54:27.543Z"
+  },
+  "rawSource": "https://muybuenoblog.com/chiles-en-nogada-stuffed-poblano-chiles-with-walnut-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

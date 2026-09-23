@@ -1,0 +1,146 @@
+{
+  "recipe": {
+    "name": "Chewy Sourdough Discard Oatmeal Raisin Cookies",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "20",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat the oven to 350ºF with a rack in the center. Line two sheet pans with parchment paper.",
+      "Place the butter in a small saucepan or skillet over medium heat. Melt the butter until it starts to foam and sputter, about 3 minutes. Whisking often, continue to cook the butter until it starts to quiet down, smells nutty, and turns deeply golden brown, 5 to 7 minutes. As you whisk, try to lift any browning milk solids that are stuck to the pot. Remove from the heat and immediately pour into a large heatsafe bowl placed over a digital scale, making sure to scrape in as many browned bits stuck to the pan as possible. You should have about 180 to 190 grams butter remaining. Immediately whisk the sugar into the hot brown butter until combined, then whisk in the vanilla and cinnamon. Let the mixture cool slightly while you prep the dry ingredients.",
+      "In a medium bowl, stir together the oats, raisins, flour, baking soda, salt, and baking powder.",
+      "To the large bowl with the butter mixture, whisk in the starter discard and egg yolks. Fold in the dry ingredients. Let the cookie dough sit at room temperature for 10 minutes.",
+      "Use a #24/2.6-tablespoon cookie scoop to scoop out 7 dough mounds (about 50 grams each) onto one of the prepared sheets, at least 2 inches apart (if your sheet pan is too small, do 5 or 6 at a time). Roll each mound into a ball. Bake the cookies for 9 to 11 minutes, until the edges are lightly golden and the surface of the cookies are just set.",
+      "While the first batch is in the oven, scoop another 7 dough balls for the second batch.",
+      "Remove the first batch from the oven and let cool on the sheet pan for at least 5 minutes, then transfer to a wire rack to cool completely. (One that tray is free again, scoop the final 6 cookie dough balls.) Repeat with the second and third batch of cookies.",
+      "Store cookies in an airtight container at room temperature for up to 1 week, or freeze for 3 months."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Grams (2 Sticks, 1 Cup) Unsalted Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "226",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams (3/4 Cup) Dark",
+        "unit": null,
+        "notes": "alt: light brown sugar",
+        "amount": "166",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams (2 Teaspoons) Vanilla Extract",
+        "unit": null,
+        "notes": null,
+        "amount": "9",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams (1 Teaspoon) Ground Cinnamon",
+        "unit": null,
+        "notes": "alt: cardamom",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams (2 Cups) Rolled Oats",
+        "unit": null,
+        "notes": null,
+        "amount": "226",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams (½ Cup) Raisins",
+        "unit": null,
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams (1 Cup Plus Scant 3 Tablespoons) Bread Flour",
+        "unit": null,
+        "notes": null,
+        "amount": "146",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams (1 Teaspoon) Baking Soda",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams (1 Teaspoon Diamond Crystal or ½ Teaspoon Morton) Kosher Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams (1/2 Teaspoon) Baking Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams (3/4 Cup) Sourdough Starter Discard (unfed, 100% Hydration)",
+        "unit": null,
+        "notes": null,
+        "amount": "166",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams (2 Large) Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "28",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt",
+        "unit": null,
+        "notes": "for sprinkling",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6076d5d8999c308579f4dfc454c8b579b3b4bad8a541ff8f7a473e2466317146",
+    "lineage_hash": "9629aa3199fb69b608410216e78c23720acb6f533e33326f6609204c6495a15a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.theperfectloaf.com/sourdough-discard-oatmeal-raisin-cookies/",
+    "fetchedAt": "2026-08-01T16:59:53.467Z"
+  },
+  "rawSource": "https://www.theperfectloaf.com/sourdough-discard-oatmeal-raisin-cookies/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

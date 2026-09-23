@@ -1,0 +1,177 @@
+{
+  "recipe": {
+    "name": "Celeriac and Kale Sausage Stew",
+    "time": "50 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": null,
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a large heavy based sauté or saucepan, fry the sausages and lardons in the olive oil for 5 minutes, then remove from the pan and place to one side.",
+      "In the same pan, gently cook the onions for 5 minutes then add the celeriac and cook for a further 3 minutes, stirring frequently.",
+      "Add the garlic, thyme and tomato purée, stir well and cook for 2 more minutes.",
+      "Pour in the red wine, bouillon, Worcestershire sauce, mustard and bay leaves, then stir well.",
+      "Bring the contents of the pan to a simmer, return the sausages and bacon to the pan and cook for about 10 minutes uncovered.",
+      "Add the kale and beans and cook for a further 5 minutes.",
+      "Thicken with the Bisto Gravy Granules and serve in a bowl with crusty bread."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pork Sausages",
+        "unit": "kg",
+        "notes": "size 8’s - 3 per portion",
+        "amount": "1.7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bacon Lardons",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "g",
+        "notes": "sliced",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celeriac",
+        "unit": "g",
+        "notes": "peeled and chopped into 2cm pieces",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": "or a pinch of dried thyme",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Purée",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bisto Chicken Bouillon",
+        "unit": "ml",
+        "notes": "made as instructions",
+        "amount": "1000",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Worcestershire Sauce",
+        "unit": "ml",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curly Leafed Kale",
+        "unit": "g",
+        "notes": "stripped from stalks and shredded",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Canned Cannellini Beans",
+        "unit": "g",
+        "notes": "rinsed and drained",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt and Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bisto Gravy Granules",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "04c339dac13b42dbe31e4e1afe4c9c5234302e48bb06337187379dd8b8d87f49",
+    "lineage_hash": "d80ff707b6dac8e7b64ae27f606d19a725a85ccc49c46866c545f7dec5650e38"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.thestaffcanteen.com/chefs-recipes/celeriac-and-kale-sausage-stew",
+    "fetchedAt": "2026-08-03T05:22:03.865Z"
+  },
+  "rawSource": "https://www.thestaffcanteen.com/chefs-recipes/celeriac-and-kale-sausage-stew",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

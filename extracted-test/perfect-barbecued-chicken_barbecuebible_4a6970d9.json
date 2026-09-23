@@ -1,0 +1,61 @@
+{
+  "recipe": {
+    "name": "Barbecued Chicken",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Move the fire to the sides of the grill—away from where the chicken cooks.",
+      "Apply a mop sauce (thin vinegar mixture) to the chicken with a barbecue mop.",
+      "Apply barbecue sauce the last few minutes of grilling, then sizzle directly over the fire to set the sauce."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Chicken",
+        "unit": null,
+        "notes": "see recipe for specifics",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vinegar Mixture",
+        "unit": "C",
+        "notes": "for mop sauce",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Barbecue Sauce",
+        "unit": "C",
+        "notes": "applied last few minutes of grilling",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f83c41b83087d784e1d0532aaea6d50dcbf8d6b12e02d178a8f624dd4a89bb71",
+    "lineage_hash": "a0dcef4d69d0d18c9c00c354d86f2754991c1b21ce6df67d0284309563f68f33"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/2019/10/11/perfect-barbecued-chicken/",
+    "fetchedAt": "2026-08-02T15:04:14.250Z"
+  },
+  "rawSource": "https://barbecuebible.com/2019/10/11/perfect-barbecued-chicken/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

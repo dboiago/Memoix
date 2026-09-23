@@ -1,0 +1,126 @@
+{
+  "recipe": {
+    "name": "Cucumber Kimchi (Oi Kimchi)",
+    "time": "45 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "KR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cut the cucumbers in half lengthwise. Cut each one in half again lengthwise. Dice the cucumbern quarters into about 1 to 1.5 inch-long pieces. Sprinkle the salt evenly all over the cucumber pieces. Let them sit for about 30 minutes.",
+      "Drain the cucumbers well in a strainer to remove any water released. Do not rinse the cucumbers.",
+      "Cut the garlic chives into 1.5 inch long pieces. Thinly slice the onions.",
+      "Add the onions and garlic chives along with all the remaining ingredients to the salted cucumbers. Toss everything until the cucumbers are well coated with the seasoning. The cucumbers will look dry at this point, but will release moisture as they absorb the seasonings."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cucumbers (korean Cucumbers or Other Type Such As Kirby Pickling Cucumbers)",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Sea Salt Less If Using Fine Salt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Chives (buchu, 부추)",
+        "unit": "oz",
+        "notes": "alt: scallions",
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gochugaru 고추가루 (korean Red Chili Pepper Flakes)",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Myulchi Aekjeot 멸치액젓 (fish Sauce)",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Saeujeot 새우젓 (salted and Fermented Shrimp)",
+        "unit": "Tbsp",
+        "notes": "alt: use more fish sauce",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "Tbsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "grated",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": "alt: 2 tablespoons maesilcheong (Korean plum syrup) Or your favorite sugar substitute",
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Sesame Seeds - Optional",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c7532f1ce3c9fe6c78b93ab1ced5f9cd0efb6171871dd7172e7603c36f528da5",
+    "lineage_hash": "d0c23b066abe189b152e737eb94c542631207c0b4fc8c329e5f2d49a3288fa93"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.koreanbapsang.com/oi-kimchi-cucumber-kimchi-and-blog/",
+    "fetchedAt": "2026-08-01T21:20:39.430Z"
+  },
+  "rawSource": "https://www.koreanbapsang.com/oi-kimchi-cucumber-kimchi-and-blog/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

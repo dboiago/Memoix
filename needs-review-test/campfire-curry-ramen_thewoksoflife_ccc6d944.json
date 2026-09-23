@@ -1,0 +1,89 @@
+{
+  "recipe": {
+    "name": "Campfire Curry Ramen",
+    "time": "10 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "541",
+      "carbohydrateContent": "61",
+      "fatContent": "29",
+      "proteinContent": "12"
+    },
+    "directions": [
+      "In a medium pot over medium high heat, add the vegetable oil, onion, and beef jerky (if using). Sauté until the onion is slightly softened, and add the curry powder. Cook for another 30 seconds, until fragrant.",
+      "Add the water and bring to a boil. Add the seasoning packet from the instant ramen package and then add the noodles. Simmer for 2-3 minutes, until the noodles are cooked but still al dente. Serve immediately!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion (thinly Sliced)",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Jerky (roughly Chopped, Optional)",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Packet Beef-flavored Instant Ramen",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5f242c0fbe67ac3ab59d0a3675223d00c76e3d1cc0ea5b84ab725136b9a85e66",
+    "lineage_hash": "d18328c2bb7444fadfef07585ffcf224ebbd96802b775c19b9b8780392d94e7d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/campfire-curry-ramen/",
+    "fetchedAt": "2026-08-02T18:48:23.074Z"
+  },
+  "rawSource": "https://thewoksoflife.com/campfire-curry-ramen/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

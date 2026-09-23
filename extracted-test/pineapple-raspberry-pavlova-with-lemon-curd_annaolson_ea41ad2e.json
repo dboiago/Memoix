@@ -1,0 +1,227 @@
+{
+  "recipe": {
+    "name": "Pineapple & Raspberry Pavlova with Lemon Curd",
+    "time": "2 hr 15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 250°F (120°C). Trace eight 3-inch circles onto a sheet of parchment paper and place it marker side down onto a baking tray.",
+      "Pulse the sugar in a mini chopper or food processor to make it finer.",
+      "Whip the egg whites using electric beaters or a stand mixer fitted with the whip attachment on high speed until they turn frothy. Slowly pour the sugar into the egg whites, whipping continuously until the whites hold a stiff peak when the beaters are lifted.",
+      "Finish and shape the meringues. Quickly but gently fold in the lime zest, cornstarch, vinegar, pink peppercorns and vanilla. Dollop the meringue onto the baking tray and use your spatula to shape it within the traced circles, making the tops level or even giving it a little divot in the centre (to hold the cream and fruits).",
+      "Bake the meringues. Place the meringues in the oven and immediately turn down the temperature to 225°F (107°C). Bake for 75-90 minutes, until the pavlovas lose their shine and develops small cracks. The meringue should not brown at all. If it starts to brown, crack the oven door open for 15 minutes and then close it to complete baking. Completely cool the meringues on the tray on a rack.",
+      "Cook the curd. Whisk the lemon juice, sugar, egg, egg yolks, lemon zest and cornstarch together in a medium saucepan. Add the butter and place the pan over medium heat, whisking constantly until the curd thickens slightly and just begins to show signs of starting to bubble, about 7 minutes. The curd should coat the back of a spoon but it will remain fluid.",
+      "Cool and chill the curd. Remove the curd from the heat and whisk in the sour cream (or crème fraîche). Transfer the curd to a container to cool to room temperature. Cover the container and chill until set, at least 3 hours.",
+      "Make the guava sauce. Place all ingredients in a saucepan and simmer over medium-low heat for about 10 minutes, whisking often, until the sauce is smooth and shiny. Strain and chill until ready to serve.",
+      "Assemble the pavlovas immediately before serving. Place the meringue on a plate. Top with the key lime curd and then the pineapple (or mango) and raspberries. Sprinkle with cracked pink peppercorns and serve with guava sauce and a sprinkle of edible flowers."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": "200 g",
+        "amount": "1",
+        "section": "Pavlovas",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": "large",
+        "notes": "at room temperature",
+        "amount": "4",
+        "section": "Pavlovas",
+        "isOptional": false
+      },
+      {
+        "name": "Lime Zest",
+        "unit": null,
+        "notes": "of 1 lime",
+        "amount": "0",
+        "section": "Pavlovas",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": "8 g",
+        "amount": "1",
+        "section": "Pavlovas",
+        "isOptional": false
+      },
+      {
+        "name": "White Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Pavlovas",
+        "isOptional": false
+      },
+      {
+        "name": "Cracked Pink Peppercorns",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Pavlovas",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Pavlovas",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "C",
+        "notes": "fresh, 125 mL",
+        "amount": "½",
+        "section": "Lemon Curd",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": "140 g",
+        "amount": "⅔",
+        "section": "Lemon Curd",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": "Lemon Curd",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": "large",
+        "notes": null,
+        "amount": "3",
+        "section": "Lemon Curd",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Zest",
+        "unit": "Tbsp",
+        "notes": "finely grated",
+        "amount": "1",
+        "section": "Lemon Curd",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Lemon Curd",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "115 g, cut into pieces",
+        "amount": "½",
+        "section": "Lemon Curd",
+        "isOptional": false
+      },
+      {
+        "name": "Sour Cream",
+        "unit": "C",
+        "notes": "alt: Crème Fraîche, 60 mL",
+        "amount": "¼",
+        "section": "Lemon Curd",
+        "isOptional": false
+      },
+      {
+        "name": "Guava Paste",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": "Guava Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "125 mL",
+        "amount": "½",
+        "section": "Guava Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Guava Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": "alt: sugar",
+        "amount": "1",
+        "section": "Guava Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Pineapple",
+        "unit": "C",
+        "notes": "diced, fresh, 225 g",
+        "amount": "1½",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Raspberries",
+        "unit": "C",
+        "notes": "fresh, 63 g",
+        "amount": "½",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Cracked Pink Peppercorns",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Edible Flowers",
+        "unit": null,
+        "notes": "for garnish (optional)",
+        "amount": "0",
+        "section": "Assembly",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6f59e7041151b5aca0f2e5eafff8e87022ae73365ed4ee22f1efc25d57e9083f",
+    "lineage_hash": "56995ed5abb69a73e27bdd124e736185fe780b4555566644baab6870f078b2fa"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/pineapple-raspberry-pavlova-with-lemon-curd/",
+    "fetchedAt": "2026-08-02T01:01:11.819Z"
+  },
+  "rawSource": "https://annaolson.ca/project/pineapple-raspberry-pavlova-with-lemon-curd/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

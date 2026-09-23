@@ -1,0 +1,64 @@
+{
+  "recipe": {
+    "name": "Shora or Chitoi Pithe",
+    "time": "4 hr",
+    "course": "sides",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Wash and rinse the rice 4–5 times, until the water runs clean. Soak rice overnight in boiling hot water. This will par-cook the rice and make the pithe soft.",
+      "The next morning, strain the rice, and grind it using hot water. Keep adding the rice and hot water gradually. We use a wet grinder like the kind used for dosa and idli batters. You can use your regular electric grinder or a sheel nora. The rice has to be ground to a smooth paste. We ended up using a total of 1.8 L of hot water to adjust the consistency of the batter.",
+      "Add salt.",
+      "Place the shora (terracotta mould) on the clay oven or gas stove. If the shora is new, you will need to season it with salt first. When the salt has heated through, discard it. Splash a few drops of water on the shora to bring down the temperature. Grease with vegetable oil.",
+      "Ladles batter into the moulds, cover and cook on one side only for 90 seconds. Once done, set aside.",
+      "Serve with freshly grated coconut and jhola gur."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rice (non-fragrant, Parboiled)",
+        "unit": "kg",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "1.8",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "94ae43dd75cba1b665a84b36549ea755843956581430b00863989cf8b0bc25db",
+    "lineage_hash": "ad004c021d0c1bbb74a909b8b3874b8a335cbcf96553f8e6aad08d38484cc25b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.bongeats.com/recipe/shora-chitoi-pithe",
+    "fetchedAt": "2026-08-02T00:28:40.614Z"
+  },
+  "rawSource": "https://www.bongeats.com/recipe/shora-chitoi-pithe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

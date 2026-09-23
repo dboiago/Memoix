@@ -1,0 +1,143 @@
+{
+  "recipe": {
+    "name": "Spicy Cumin Lion's Mane Mushrooms",
+    "time": "35 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Gently clean mushrooms with a brush, then cut off any tough parts from the stems, if any. Next, use your fingers to tear mushrooms into larger than bite-sized pieces.",
+      "Fill a large pot or pan with water (about 6-8 cups depending on the pan size) and bring it to a boil. Then, add ½ teaspoon of sugar into the hot water.",
+      "Add mushrooms and cook for about 3 minutes until slightly tender. Cooking time may be shorter for smaller mushrooms pieces.",
+      "Drain out the water. Once cooled, using your palms, gently squeeze mushrooms to remove all the liquid and transfer to a bowl.",
+      "Meanwhile, whisk together flour and water into a thin paste, set aside.",
+      "Rub mushrooms with cumin seeds, cumin powder, chili powder, salt, and mushrooms seasoning until all mushrooms are coated. [Increase the salt if you plan to serve this as-is]",
+      "Add the batter and sesame seeds, then use your fingers to coat the mushrooms until well combined.",
+      "Thread a few pieces of mushrooms (about 4) onto the skewer. Repeat until all mushrooms are done. (I got about 9 skewers)",
+      "Set a large shallow pan (big enough to fit the skewer) over medium-low heat. Cover the bottom with a thin layer of oil (see video or picture above for reference).",
+      "Carefully lower the skewer onto the hot oil.",
+      "Cook until all sides turn golden brown and a thin crust forms, turning occasionally. Please make sure to maintain a light sizzle over medium-low heat and fully cook through the mushrooms.",
+      "To prepare another spice mix for topping, combine 1 tablespoon of cumin powder and chili powder with ¼ teaspoon of salt.",
+      "Sprinkle onto the cooked mushrooms before serving. Alternatively, serve the skewers with chili oil and sediment for a spicier kick."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Lion’s Mane Mushrooms",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Spice Mix",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Powder Plus Extra for Topping",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Spice Mix",
+        "isOptional": false
+      },
+      {
+        "name": "Chili Powder Plus Extra for Topping",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Spice Mix",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Spice Mix",
+        "isOptional": false
+      },
+      {
+        "name": "Salt Plus Extra for Topping",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Spice Mix",
+        "isOptional": false
+      },
+      {
+        "name": "Mushrooms Seasoning",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Spice Mix",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "938d4d11ecb7135aefbc59fa4e51a7aa09544aa691791fd5380ad7a70e49d966",
+    "lineage_hash": "a7a409330dbbf6f1320927e155874e6aba52c3f183791566a683e843ea0f14f2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://woonheng.com/spicy-cumin-lions-mane-mushrooms/",
+    "fetchedAt": "2026-08-01T22:06:15.899Z"
+  },
+  "rawSource": "https://woonheng.com/spicy-cumin-lions-mane-mushrooms/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

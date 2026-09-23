@@ -1,0 +1,83 @@
+{
+  "recipe": {
+    "name": "Pickled Radish Paper (Ssam-Mu)",
+    "time": "15 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "20",
+    "source": "scraped",
+    "cuisine": "KR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "24",
+      "carbohydrateContent": "6",
+      "fatContent": "0.04",
+      "proteinContent": "0.2"
+    },
+    "directions": [
+      "Use a mandoline slicer to thinly slice the radish into rounds that are about 0.3cm / 0.1 inch in thickness. Place the slices into a sterilized wide-base glass jar.",
+      "Combine the water, sugar, vinegar, and salt in a saucepan. Heat over low to medium-low heat, stirring, just until the sugar dissolves (about 2 to 3 minutes). A gentle simmer is fine, but boiling is not necessary.",
+      "Pour the brine over the sliced radish and close the lid. Leave the jar at room temperature for 3 to 4 hours then refrigerate. The pickled radish should be ready to eat within 1 to 2 days.",
+      "Serve chilled with your favorite meal (e.g. Korean BBQ pork). It can be refrigerated in an air tight container for several weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Radish",
+        "unit": "g",
+        "notes": "Korean or daikon radish (round and stout), (1.1 pounds), peeled and ends trimmed",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Vinegar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "43145339c2cd971c140f10362c729bf9f7f1c34d0409f2ab543cfcd57f5d1006",
+    "lineage_hash": "9394678b964c46c8a3d5d71c42e3d2ff12c9f023f1380ea14f9d7473a24fa91a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://mykoreankitchen.com/pickled-radish-paper/",
+    "fetchedAt": "2026-08-02T03:09:37.832Z"
+  },
+  "rawSource": "https://mykoreankitchen.com/pickled-radish-paper/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

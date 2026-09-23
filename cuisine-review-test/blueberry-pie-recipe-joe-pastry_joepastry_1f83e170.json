@@ -1,0 +1,113 @@
+{
+  "recipe": {
+    "name": "Blueberry Pie",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the crust, follow along with this recipe for peach pie.",
+      "Combine all the remaining ingredients except the egg wash and stir.",
+      "Place a rack in the middle of the oven and preheat it to 500 degrees Fahrenheit.",
+      "After the pie has rested the last time, paint it with egg wash and insert it into the oven, immediately turning the temperature down to 425 degrees.",
+      "Bake it for 30 minutes, rotate the pie and turn the oven down still lower to 350 to finish the bake.",
+      "Apply a pie shield to the edges or a sheet of tin foil over the top if the top crust or edges browning overly.",
+      "The pie is done when you can see a little boiling filling bubbling up through the vents."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pie Crust",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blueberries",
+        "unit": "C",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "oz",
+        "notes": "(3/4 cup)",
+        "amount": "5.25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Instant Tapioca",
+        "unit": "oz",
+        "notes": "(4 tablespoons)",
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tapioca Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Wash",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e641bded34c4feae3b8556a7335a2164e2b56f99e85485747481f61b295bbd87",
+    "lineage_hash": "a923533cc0bacbbf51ad13601b6831a8774af3fb8db689684b4044d6487c617c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "http://joepastry.com/2015/blueberry-pie-recipe-2/",
+    "fetchedAt": "2026-08-01T17:07:34.656Z"
+  },
+  "rawSource": "http://joepastry.com/2015/blueberry-pie-recipe-2/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

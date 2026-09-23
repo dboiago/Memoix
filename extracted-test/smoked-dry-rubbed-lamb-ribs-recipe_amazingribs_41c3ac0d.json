@@ -1,0 +1,129 @@
+{
+  "recipe": {
+    "name": "Smoked Dry Rubbed Lamb Ribs",
+    "time": "3 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Prep. For the lamb, remove the membrane from the ribs (read more on removing rib membranes here).",
+      "Season the rack of ribs with 1/4 teaspoon Morton coarse kosher salt per pound of meat. If you can, give the salt 1 to 2 hours to be absorbed. The process of salting in advance is called dry brining. The rule of thumb is 1/2 teaspoon of kosher salt per pound of meat, but ribs are about 50% meat, so use about 1/4 teaspoon per pound. You can simply eyeball it by sprinkling on the same amount of salt you would sprinkle on the ribs if they were served to you unseasoned.",
+      "For the rub, combine the paprika, brown sugar, ground mustard, granulated garlic, dried thyme, lemon pepper, ground rosemary, and ground coriander in a small bowl and blend well.",
+      "Fire up. Prepare a smoker for indirect cooking. Alternatively, you can set up a charcoal grill for 2-zone cooking by placing a chimney full of lit charcoal briquets on one side of the grill&#39;s charcoal grate in order to create direct and indirect cooking zones. Adjust the smoker or grill vents to bring the temperature to about 225°F (107°C) and add 2 to 3 chunks of your favorite smoking wood to the charcoal for flavor. On a gas grill, adjust the temperature knobs so that one half of the grill is off and the other half is heated enough to maintain a temperature of approximately 225°F (107°C) on the indirect side.",
+      "Once the smoker or grill is ready, brush both sides of the ribs with mayonnaise and season with the dry rub.",
+      "Cook. Place the rack of ribs on the main cooking grate as far away from the heat source as possible. Set the lid on the grill with top vent fully open and positioned directly above the ribs in order to force the smoke over and around the meat. Allow the ribs to smoke until the meat is tender, about 3 hours.",
+      "Serve. Remove the ribs from the grill, slice, and serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rack Lamb Ribs (a Rack Weighs About 1 1/4 Pounds)",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Lamb",
+        "isOptional": false
+      },
+      {
+        "name": "Morton Coarse Kosher Salt (¼ Teaspoon Kosher Salt Per Pound of Meat)",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Lamb",
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Lamb",
+        "isOptional": false
+      },
+      {
+        "name": "Paprika",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Dry Rub",
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Dry Rub",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Mustard",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Dry Rub",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Garlic",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Dry Rub",
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "1",
+        "section": "Dry Rub",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Pepper Seasoning",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Dry Rub",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Rosemary",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Dry Rub",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Coriander",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Dry Rub",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9962164df1577830ddf85f848e33ab06e41bee79eda0b25b7a556d4bee359a5a",
+    "lineage_hash": "fafc3945ba35ba3ab394d1d6758755905f0aeacf16c5f7365432da7f206725aa"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://amazingribs.com/tested-recipes/lamb-recipes/smoked-lamb-ribs-recipe/",
+    "fetchedAt": "2026-08-02T11:46:36.334Z"
+  },
+  "rawSource": "https://amazingribs.com/tested-recipes/lamb-recipes/smoked-lamb-ribs-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

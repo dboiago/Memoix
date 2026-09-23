@@ -1,0 +1,124 @@
+{
+  "recipe": {
+    "name": "Beef Tartare With Sea Urchin",
+    "time": null,
+    "course": "mains",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cut the beef into thin 1/8\" slices, then into thin 1/8\" strips, then into small 1/8\" cubes. They don’t have to be perfectly sized. And if you feel that the cubes are too large, you can roughly chop them further. You can prepare the beef ahead of time, transfer into a large bowl, plastic-wrap and keep chilled until it’s time to serve.",
+      "Right before serving, add grated shallot, egg yolk, minced black olives (or capers), Dijon mustard, sea salt, ground black pepper and sugar to the cubed beef. With a large fork, mix to combine, then add the extra virgin olive oil 1 tbsp at a time, and mix until the mixture has just formed an emulsion and is creamy. DO NOT over-mix the beef that it breaks up and turn into ground beef-like! Re-season with more sea salt if needed. Transfer the beef tartare to a serving plate, then top with about 3 tbsp~1/4 cup amount of fresh sea urchins. Sprinkle with more sea salt on top, maybe a little minced chives or scallions. Serve with toasted sliced baguette."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef Tenderloin",
+        "unit": "oz",
+        "notes": "alt: top round, 200 grams",
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallot",
+        "unit": "medium",
+        "notes": "peeled and grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Olives",
+        "unit": "tsp",
+        "notes": "alt: caper, finely minced pitted",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "tsp",
+        "notes": "heaping, plus more to adjust",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pinch Sugar",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Urchin Roe/uni",
+        "unit": "Tbsp",
+        "notes": "~1/4 cup of super fresh",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baguette",
+        "unit": null,
+        "notes": "toasted sliced, to serve",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "845c763357efbbb2f6a6ce8b5292b2dde2599af9bc4f1ba83e088ad136e80ec4",
+    "lineage_hash": "84ff37fa4dffc6f8bb061373ef0793537104ad3e574dd620cf8ef76ed6f5a4a0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ladyandpups.com/2017/10/30/beef-tartare-with-sea-urchin-from-the-neighborhood/",
+    "fetchedAt": "2026-08-02T05:10:37.460Z"
+  },
+  "rawSource": "https://ladyandpups.com/2017/10/30/beef-tartare-with-sea-urchin-from-the-neighborhood/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

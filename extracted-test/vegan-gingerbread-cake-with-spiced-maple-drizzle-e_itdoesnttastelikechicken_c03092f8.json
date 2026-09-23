@@ -1,0 +1,182 @@
+{
+  "recipe": {
+    "name": "Vegan Gingerbread Cake with Spiced Maple Drizzle",
+    "time": "50 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "24",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "187",
+      "carbohydrateContent": "34",
+      "fatContent": "5",
+      "proteinContent": "2"
+    },
+    "directions": [
+      "To make the cake: Preheat oven to 350°F (180°C). Lightly grease or line a 9×13-inch (23×33 cm) baking pan with parchment.",
+      "Mix the dry ingredients: In a large bowl, whisk together flour, brown sugar, baking soda, salt, cinnamon, ginger, nutmeg, and cloves.",
+      "Mix the wet ingredients: In a medium bowl or large measuring cup, whisk together plant-based milk, molasses, oil, vinegar, and vanilla.",
+      "Combine: Pour the wet mixture into the dry and stir until just combined. Do not overmix, it&#39;s ok if there are lumps. Overmixing can make the cake too dense.",
+      "Bake: Spread the batter evenly into the prepared pan. Bake for 32–38 minutes, or until a toothpick inserted in the center comes out clean. Let cool in the pan.",
+      "For the Spiced Maple Drizzle (optional): Warm maple syrup with cinnamon and nutmeg in a small saucepan or microwave.",
+      "Serve: Cut the cake into slices and serve as is, or with whipped cream, ice cream, and/or warm spiced maple drizzle."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "3",
+        "section": "Gingerbread Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Gingerbread Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "Gingerbread Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Gingerbread Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Gingerbread Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Ginger",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "Gingerbread Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Nutmeg",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Gingerbread Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cloves",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Gingerbread Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Plant-based Milk",
+        "unit": "C",
+        "notes": "(such as oat or soy)",
+        "amount": "1",
+        "section": "Gingerbread Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Unsulphured Molasses",
+        "unit": "C",
+        "notes": "(not blackstrap)",
+        "amount": "¾",
+        "section": "Gingerbread Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Light Oil",
+        "unit": "C",
+        "notes": "(such as canola or vegetable)",
+        "amount": "½",
+        "section": "Gingerbread Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Apple Cider Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Gingerbread Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Gingerbread Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Maple Syrup",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Spiced Maple Drizzle (optional)",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Spiced Maple Drizzle (optional)",
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "Spiced Maple Drizzle (optional)",
+        "isOptional": false
+      },
+      {
+        "name": "Vegan Whipped Cream",
+        "unit": null,
+        "notes": "alt: vegan vanilla ice cream, optional, for serving",
+        "amount": "0",
+        "section": "Spiced Maple Drizzle (optional)",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "940094494215501e69b1d16ddcc5238521f54a399bfaa4bb75517864a23b2abe",
+    "lineage_hash": "37545963cca2b87b1d6c6edca823cb5eb0a99f8b1f5349fd88d16fe80b1aa015"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/vegan-gingerbread-cake/",
+    "fetchedAt": "2026-08-02T08:56:00.070Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/vegan-gingerbread-cake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

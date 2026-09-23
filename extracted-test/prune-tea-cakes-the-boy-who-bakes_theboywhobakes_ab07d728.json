@@ -1,0 +1,137 @@
+{
+  "recipe": {
+    "name": "Prune Tea Cakes",
+    "time": "20 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat the oven to 180C (160C fan)/350F/gas 4, and lightly grease a six-hole muffin tray.",
+      "Put the prunes in a small saucepan, pour in the hot tea and bring to a simmer. Continue simmering on a medium heat, stirring occasionally, until almost all the liquid has been absorbed by the fruit.",
+      "Meanwhile, put the butter, sugar and treacle in a bowl and beat for about five minutes, until light and fluffy, then beat in the egg until fully combined.",
+      "In another bowl, whisk the flours, salt and baking powder, then add to the butter mixture and mix briefly just to combine.",
+      "Take the pan of prunes off the heat, add the bicarb and stir just until it starts to foam. Add to the batter and mix briefly until combined.",
+      "Spoon the batter into the prepared muffin tray, sprinkle liberally with demerara sugar, then bake for about 20 minutes, or until the cakes spring back to a light touch.",
+      "Remove and leave to cool for five minutes, then carefully turn out and put on a wire rack to cool completely. The cakes will keep in a sealed container for at least four days."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ready-to-eat Prunes",
+        "unit": "g",
+        "notes": "halved",
+        "amount": "115",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brewed Black Tea",
+        "unit": "ml",
+        "notes": "I like earl grey",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Treacle",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wholemeal Rye Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bicarbonate of Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Demerara Sugar",
+        "unit": null,
+        "notes": "for sprinkling",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d7a04841a29b1d6bb4dc2fd576ba6dcb2f254965995b0188d91f871a04c5d557",
+    "lineage_hash": "c2b0ffd92be0bc7d98460f8cd0e711f99ad58f64df48f2579db8e1073535a6f2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.theboywhobakes.co.uk/recipes/2022/12/27/prune-tea-cakes",
+    "fetchedAt": "2026-08-01T15:56:29.560Z"
+  },
+  "rawSource": "https://www.theboywhobakes.co.uk/recipes/2022/12/27/prune-tea-cakes",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

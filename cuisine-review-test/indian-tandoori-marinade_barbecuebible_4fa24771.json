@@ -1,0 +1,190 @@
+{
+  "recipe": {
+    "name": "Indian Tandoori Marinade",
+    "time": null,
+    "course": "sauces",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat a dry skillet over medium heat. Add the coriander, peppercorns, cumin, mace, fennel, cardamom, cloves, and cinnamon. Toast, shaking the pan, until fragrant, 3 minutes. Transfer the spices to a bowl to cool. Grind to a fine powder in a spice mill.",
+      "Crumble the saffron threads between your thumb and forefinger and place in a small bowl with hot water. Let the saffron infuse for 10 minutes.",
+      "Combine the onion, garlic, ginger, chiles, lemon juice, and oil in a blender or mini processor and purée to a smooth paste. You may need to add a tablespoon or so of water to obtain a paste.",
+      "Combine the yogurt, spices, saffron mixture, onion paste, salt, and food coloring, if using, in a bowl and stir to mix. Use within a few hours of making."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Coriander Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mace Blades",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom Pods",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick (about 1 Inch)",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Saffron Threads",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "small",
+        "notes": "peeled and coarsely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "peeled and coarsely chopped",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "(each 1/4 Inch Thick) Peeled Fresh Ginger",
+        "unit": "slices",
+        "notes": "coarsely chopped",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jalapeño Peppers",
+        "unit": null,
+        "notes": "preferably red, seeded and coarsely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": "fresh",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Whole Milk Yogurt",
+        "unit": "C",
+        "notes": "preferably Greek-style",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Salt (sea or Kosher)",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Food Coloring (optional)",
+        "unit": "drops",
+        "notes": null,
+        "amount": "2-4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6fde2dba77c354bc56eacf03c1ca143b4cd0b11200d2d6520e9c58d8881c6a14",
+    "lineage_hash": "4634beaea8042827d23a38e658df9b3ca53fe82a262cea186e68d402fda9665b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/indian-tandoori-marinade/",
+    "fetchedAt": "2026-08-03T07:52:55.657Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/indian-tandoori-marinade/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

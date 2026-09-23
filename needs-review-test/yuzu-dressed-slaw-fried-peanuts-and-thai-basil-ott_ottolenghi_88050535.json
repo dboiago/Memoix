@@ -1,0 +1,166 @@
+{
+  "recipe": {
+    "name": "Yuzu dressed slaw, fried peanuts and Thai basil",
+    "time": "45 min",
+    "course": "salads",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": null,
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place a small frying with the oil on medium heat. Once hot, add in the peanuts and fry for 4-6 minutes, until golden. Remove with a slotted spoon, drain on kitchen paper, scatter over some salt and set aside to cool. Keep the oil in the pan, off the heat.",
+      "Meanwhile, rehydrate the wakame in boiling water for 3 minutes, then drain and run under cold water to cool. Squeeze out all the water and set aside until needed.",
+      "In a large bowl, whisk all the dressing ingredients together, along with 3 tablespoons of the oil from the peanuts and ½ teaspoon of salt. Add the wakame, mix really well, then add in the cabbage and carrots and toss together.",
+      "To assemble, place one third of the slaw onto a serving platter, scatter over some of the peanuts, chillies and basil. Repeat twice more and then drizzle over the remaining oil from the peanuts. Just before eating, crumble some of the seaweed sheets on top, adding more as you eat, for the crispy texture."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Good Quality Rapeseed Oil",
+        "unit": "ml",
+        "notes": "or another neutral oil",
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Skin Peanuts",
+        "unit": "g",
+        "notes": "or regular raw peanuts",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wakame",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "A Cabbage",
+        "unit": null,
+        "notes": "red or white (or a combination of the two) (560g)",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": null,
+        "notes": "cut into thin matchsticks (280g)",
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mild Red Chillies",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Picked Thai Basil",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Snacking Seaweed Sheets",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": "peeled and finely grated",
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yuzu Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice (from 1-2 Limes)",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Palm Sugar",
+        "unit": "Tbsp",
+        "notes": "or soft brown sugar",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "afcb7127dc75dfaf8288174c2b4433c5c8231348aebfcc00f8a3c3d097ba8839",
+    "lineage_hash": "beabd2bbd149ec0e8c834c6e6ba7f50210768109646579a8012b7758ed7f9dcf"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ottolenghi.co.uk/pages/recipes/yuzu-dressed-slaw-fried-peanuts-thai-basil",
+    "fetchedAt": "2026-08-02T15:37:40.135Z"
+  },
+  "rawSource": "https://ottolenghi.co.uk/pages/recipes/yuzu-dressed-slaw-fried-peanuts-thai-basil",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

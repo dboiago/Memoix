@@ -1,0 +1,65 @@
+{
+  "recipe": {
+    "name": "Tom Collins Mocktail",
+    "time": "3 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": null,
+    "glass": "Collins",
+    "garnish": [],
+    "subcategory": "Mocktail",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "60mllyre's Dry London Spirit",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Sugar Syrup (1:1)",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Premium Bottled Soda Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "54a53b15cf45da86053dfa6e73e092ef8bc67d5e9e387f51c3ade03b1e6cccce",
+    "lineage_hash": "39e39ae9d429fe684d73152dbd672a31011c71d0cb381ae8a0ea0250819840ef"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://lyres.com/en-me/products/lyres-london-dry-collins",
+    "fetchedAt": "2026-08-03T02:13:12.435Z"
+  },
+  "rawSource": "https://lyres.com/en-me/products/lyres-london-dry-collins",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

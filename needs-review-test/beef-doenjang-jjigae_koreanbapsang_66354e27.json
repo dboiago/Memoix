@@ -1,0 +1,144 @@
+{
+  "recipe": {
+    "name": "Beef Doenjang Jjigae",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "KR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cut the radish into thin 1-inch squares. Cut the zucchini into bite size pieces. Thinly slice the onion and chili pepper. Cut the scallion into 1-inch lengths.",
+      "Cut the tofu into 1/2-inch thick slices. Slice the meat into thin strips.",
+      "Preheat a small pot. Sauté the meat until no longer pink. Add the radish and continue to sauté until the radish is wilted.",
+      "Add the water, soybean paste, and chili pepper paste. Stir well to dissolve the pastes. Boil over medium high heat for 4 to 5 minutes.",
+      "Add the tofu, onion, zucchini and garlic. Boil for an additional 5 to 6 minutes. Stir in the vinegar, and throw in the scallion and chili pepper. Cook for another minute or two.",
+      "Serve with rice while it is still bubbling from the heat."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Radish",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Zucchini About 3 Ounces (mushrooms and Potatoes Can Be Added If Desired)",
+        "unit": "small",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "small",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili Pepper Green And/or Red",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallion",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Stew Meat",
+        "unit": "oz",
+        "notes": "alt: other well-marbled cut",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tofu",
+        "unit": "oz",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Korean Soybean Paste Doenjang",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Korean Chili Pepper Paste Gochujang",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water Used to Rinse Rice Ssal Ddeum Mul (or Add 1/2 Teaspoon Flour or Rice Powder to Clear Water)",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6c4ec615efc22b99040e33ac7a6d02631e3a8aace76bb91806331450e189b85a",
+    "lineage_hash": "1691322db2192b8cead7386b9d75e294e8d5ed723fa926982287cf8a60de1390"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.koreanbapsang.com/beef-doenjang-jjigae/",
+    "fetchedAt": "2026-08-01T22:55:34.624Z"
+  },
+  "rawSource": "https://www.koreanbapsang.com/beef-doenjang-jjigae/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,119 @@
+{
+  "recipe": {
+    "name": "Seedlip Garden Mojito",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": null,
+    "glass": "Highball",
+    "garnish": [
+      "Fresh Mint Sprigs"
+    ],
+    "subcategory": "Mocktail",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all ingredients minus club soda in a cocktail shaker and fill with ice",
+      "Shake & strain over fresh cubes of ice in a tall glass",
+      "Top with soda and garnish with fresh mint sprigs"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Seedlip Garden 108",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Simple Syrup: 1/2 Oz",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice: 3/4 Oz",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Club Soda",
+        "unit": null,
+        "notes": null,
+        "amount": "Top",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "7-10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Seedlip Garden 108",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Simple Syrup: 1/2 Oz",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice: 3/4 Oz",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Club Soda",
+        "unit": null,
+        "notes": null,
+        "amount": "Top",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "7-10",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4b2d6f6225b3d239e5638526e584fe385a5d89a328b8fba27df27283009f4e5e",
+    "lineage_hash": "aa7e39f94b570b483fe57901894d248c80f635021d97db6b5e3ebae107ebe062"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.seedlipdrinks.com/en-us/recipes/garden-mojito",
+    "fetchedAt": "2026-08-01T15:47:44.109Z"
+  },
+  "rawSource": "https://www.seedlipdrinks.com/en-us/recipes/garden-mojito",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

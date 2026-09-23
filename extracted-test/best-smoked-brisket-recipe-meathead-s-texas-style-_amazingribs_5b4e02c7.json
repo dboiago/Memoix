@@ -1,0 +1,79 @@
+{
+  "recipe": {
+    "name": "Smoked Brisket",
+    "time": "12 hr 10 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "704",
+      "carbohydrateContent": "0.1",
+      "fatContent": "34",
+      "proteinContent": "94"
+    },
+    "directions": [
+      "Trim. Trim off most of the fat cap but leave about 1/4&quot; (6.3 mm). Clean the meaty side of any silverskin, a shiny, thin, tough membrane. Set aside some fat for making burnt ends if you&#39;re going that route. I always freeze some of the fat and grind it for my burgers. I also render beef fat in a saucepan, and freeze that too. I use beef fat to paint my steaks with fat just before searing. If you want to separate the point and the flat muscles before cooking, now&#39;s the time to do it (see Notes).",
+      "Season. Sprinkle 1/2 teaspoon Morton&#39;s Coarse Kosher Salt per pound of meat evenly over the surface. Do this about 12 to 24 hours in advance, or at least 2 to 4 hours before you put it on the smoker. Notice the direction of the meat grain so you can slice across the grain when the brisket is done. After salting, sprinkle Big Bad Beef Rub liberally on all areas of the meat and rub it in. Keep the meat chilled until just before you cook it. Chilled meat attracts more smoke.",
+      "Fire up. Preheat your smoker, or if you are using a grill, set it up for indirect cooking. Click here to see how to set up a gas grill, here for how to set up a charcoal grill, or here for how to set up a bullet smoker like the Weber Smokey Mountain. Get the cooker temp stabilized at about 235°F (113°C). We want to cook at about 225°F (107°C), but the temp will drop a bit once you open the lid and load in the cold meat.",
+      "Cook. Put the meat on the cooker. I strongly recommend you use a remote digital thermometer and insert the probe with the tip centered in the thickest part of the meat furthest from the heat. On a smoker with a water pan, put the meat right above the water. Place the oven temp probe on the grate next to the meat. Add about 2 cups (4 ounces (113 g) of smoking wood right after the meat goes on. When the smoke stops, add 4 ounces more during the first 2 hours, which usually means adding some every 30 minutes or so. Keep an eye on the water in the pan. Don&#39;t let it dry out. After 3 hours, turn the meat over if the color is different from top to bottom. Otherwise, leave the meat alone.",
+      "Wrap. The Texas Crutch is optional but I always crutch brisket. It helps beat  the BBQ stall. When the brisket bark is set and the internal temp stops rising, at an internal temp of about 150°F to 165°F (after about 6 to 8 hours), put the brisket on a long sheet of double-layered heavy-duty foil or butcher paper, drizzle on 1/2 cup beef broth, and wrap the brisket, crimping and folding tightly around the meat. Then continue cooking it wrapped at 225°F (either on the smoker or in an oven).",
+      "Hold it. When the meat temp hits 195°F (95°C), after another 5 to 7 hours, start poking it. When it is done, a thermometer probe will slide in and out with little resistance. Poke it with a finger or pick it up and jiggle it. If it goes &quot;wubba wubba&quot; and wiggles like jelly, it is done. This usually happens at around 203°F (95°C). At that point, hold the wrapped brisket in a faux cambro (plastic cooler) for 2 to 4 hours. That extra time helps tenderize the meat by allowing some carryover cooking to soften tough connective tissue. And it’s a great fudge factor that lets you take the meat off when it is ready and hold it for a few hours until the guests are ready.",
+      "Slice. Wait to slice until the last possible minute. Brisket dries out very quickly when cut. Turn the meat fat side up so the juices will run onto the meat as you slice. The easy way is to lop off about 1&quot; (2 cm) from the thick end and about 2&quot; (5 cm) from the thin end, which is the tip of the flat. These ends are likely overcooked and dry. Chop them and smother them in sauce for chopped brisket. Then find the fat layer between the point and flat and slide your blade between the two muscles. Separate them, and trim off most of the excess fat. Find the grain of the flat and cut across the grain into slices 1/8″ to 1/4″ (3 to 6 mm) thick, or about as thick as a pencil. You can also slice against the grain of the point, and offer your guests &quot;lean&quot; (flat) or &quot;fatty&quot; (point). Most will choose the lean, which will leave the better, fattier, point cut for you. Turn it into burnt ends!",
+      "Serve. If the brisket is perfectly cooked, it should be moist and juicy. You can serve it simply sliced on a plate or as a sandwich made with Texas Toast. If you want to drizzle on the juices, taste them first: they can be salty. In that case, you can dilute them with water or unsalted beef broth. You can also mix them with some Texas Barbecue Mop Sauce."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef Brisket Whole Packer (point and Flat Together) Untrimmed",
+        "unit": "lb",
+        "notes": "USDA Choice grade or higher",
+        "amount": "12",
+        "section": "Brisket",
+        "isOptional": false
+      },
+      {
+        "name": "Morton Coarse Kosher Salt (approximately ½ Teaspoon Per Pound)",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "6",
+        "section": "Brisket",
+        "isOptional": false
+      },
+      {
+        "name": "Big Bad Beef Rub (alternatively, You Can Use Our Bottled Commercial Beef Rub)",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Brisket",
+        "isOptional": false
+      },
+      {
+        "name": "Beef Broth",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Texas Crutch",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fa0e0bb611e0e441c49378f4a8d925931741dbf80f856b918a256abddf0581f3",
+    "lineage_hash": "5040c6b7607773988ca77e4077daca75fdd202f2f7a437a859df3af83efe46be"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://amazingribs.com/tested-recipes/beef-and-bison-recipes/smoked-brisket-texas-style/",
+    "fetchedAt": "2026-08-02T11:56:52.716Z"
+  },
+  "rawSource": "https://amazingribs.com/tested-recipes/beef-and-bison-recipes/smoked-brisket-texas-style/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

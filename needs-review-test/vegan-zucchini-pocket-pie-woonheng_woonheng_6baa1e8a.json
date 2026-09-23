@@ -1,0 +1,135 @@
+{
+  "recipe": {
+    "name": "Vegan Zucchini Pocket Pie",
+    "time": "55 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "5",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Prepare the filling: Reconstitute wood ear mushrooms in water (skip this step if using fresh ones). It took me about 30 to 45 minutes to get them fully hydrated depending on the size of the mushrooms. Then, slice them thinly.",
+      "Using a grater, shred zucchini and carrot in a large bowl, separately. Massage each ingredient with salt and let them sit for about 15 minutes to draw out the moisture. Tip: You should see a small pool of water at the bottom of the bowl and the ingredients are tender.",
+      "While waiting, soak dried mung bean vermicelli or fensi in hot water until softened, about 5-8 minutes. Snip it to make them shorter.",
+      "When ready, place zucchini in a nut milk bag and wring out the excess liquid, then transfer to a large mixing bowl. Repeat the same for carrots.",
+      "Add cut-up mung bean vermicelli, mushrooms, and chopped green onions, then season with vegan oyster sauce, mushrooms seasoning, white pepper, and toasted black sesame oil. Taste and add a pinch of salt or soy sauce, if needed.",
+      "Assemble: Since the store-bought cong you bing came in frozen, place them on the countertop to soften them while preparing the filling. Do not thaw the pancake completely! It will be hard to roll out when it’s too soft and it will stick to the packaging that comes with it, making it really messy to assemble.",
+      "Place one pancake along with the wraps on a working surface. Each pancake is stored in between two wraps, so keep it this way. Using a rolling pin or glass jar, roll it into a larger circle, about 10 to 12 inches in diameter. If you find it hard to roll, use the rolling pin to press down the pancake to thin it out or thaw it for another 5 minutes. On the other hand, if it’s too soft, stick it back in the freezer to harden it.",
+      "Remove the top wrap and place a mound of filling on one side of the pancake. Use the bottom wrap to lift the pancake up to create a half-moon pocket. Pinch to close all the openings. Gently flatten the pocket so it will cook evenly later. Continue with the rest of the ingredients until you get 5 pockets.",
+      "Store the wrapped pocket in a freezer along with the wrap if not planning to consume them all. Normally placed in an airtight container to avoid freezer burn taste.",
+      "Cook – 3 ways: Bake, Pan fry, Air fry.",
+      "Method 1 – Bake: Preheat oven to 400F. Place pockets on a greased baking pan. Spray or brush the top with oil. Bake for 15-18 minutes, flip and bake for another 8-10 minutes until golden brown. Serve as-is or dip with your favorite condiment.",
+      "Method 2 – Pan fry: Set a non-stick pan over medium heat and drizzle a little oil. Place pocket in and cook until golden brown, about 5-8 minutes. If it browns too fast, please reduce the heat. Flip and continue to cook for another 3-4 minutes. Push the pocket to the pan’s rim so all sides get cooked as well.",
+      "Method 3 – Air fry: Preheat air fryer to 390F for 3 minutes. Spray the inner basket with oil, place in the pocket. Brush or spray the top with oil. Air fry for 10 minutes until golden brown, flip in between if needed."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Zucchini",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Small-sized Carrot",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wood Ear Mushrooms Also Known As Black Fungus",
+        "unit": "C",
+        "notes": "dried",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vermicelli 50g Optional",
+        "unit": "bunch",
+        "notes": "softened",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions Finely Chopped",
+        "unit": "stalks",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mushrooms Seasoning Plus More If Needed",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegan Oyster Sauce Plus More If Needed",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "A Few Dashes of White Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Taste and More for Salting",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallion Pancake Used Trader Joe’s Brand",
+        "unit": null,
+        "notes": "frozen",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a9e585d2f592683d55906404190d928794b36f15bb3dc096b8947549781b7fef",
+    "lineage_hash": "5aca43ed86c677e71cdc584dcfcfa326d2354b1a7314e7216ac062418fee73f8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://woonheng.com/vegan-zucchini-pocket-pie/",
+    "fetchedAt": "2026-08-01T22:04:22.900Z"
+  },
+  "rawSource": "https://woonheng.com/vegan-zucchini-pocket-pie/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

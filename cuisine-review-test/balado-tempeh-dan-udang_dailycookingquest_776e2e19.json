@@ -1,0 +1,185 @@
+{
+  "recipe": {
+    "name": "Balado Tempeh dan Udang",
+    "time": "2 hr",
+    "course": "sides",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "ID",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Marinate the shrimp with lime juice, salt, ground pepper, and corn starch for 15 minutes.",
+      "Cut the tempeh into thin slices, about 2 cm wide x 4 cm long x as thin as you can manage.",
+      "Prepare a pot with enough oil for deep frying. Deep fry the tempeh until golden brown and crispy, about 5-7 minutes. Drain on paper towel.",
+      "Heat 2 tablespoon of oil in a pan and cook the spice paste until fragrant, about 3-5 minutes.",
+      "Add the shrimps and cook until no longer pink, about 1 minute.",
+      "Add the water, salt, sugar, and kaffir lime leaves. Mix well and cook until liquid is reduced.",
+      "Add the fried tempeh. Toss gently so the tempeh pieces are coated with the sauce. Turn off the heat and serve immediately or at room temperature."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gram Shelled Shrimps",
+        "unit": null,
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn Starch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Enough Oil for Deep Frying",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Tempeh",
+        "unit": null,
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kaffir Lime Leaves (indonesian: Daun Jeruk)",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grind the Following Into Spice Paste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Candlenuts (indonesian: Kemiri)",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilies",
+        "unit": null,
+        "notes": "seeded (optional)",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric (indonesian: Kunyit)",
+        "unit": null,
+        "notes": "fresh, about 1 inch, peeled",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "24e889dd6d5a8cdb987bc29c88cb5b5828cf99b6e11cbccba1fc52fe6d272481",
+    "lineage_hash": "e3f02aed0c15436f4a3b0352b919b41d97f586733da4b75061abf5f07032d7cb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/balado-tempeh-dan-udang.html",
+    "fetchedAt": "2026-08-02T11:50:22.484Z"
+  },
+  "rawSource": "https://dailycookingquest.com/balado-tempeh-dan-udang.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

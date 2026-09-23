@@ -1,0 +1,97 @@
+{
+  "recipe": {
+    "name": "German Pumpernickel Bread",
+    "time": "14 hr",
+    "course": "breads",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "DE",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rye Sourdough Starter 350g Fine to Medium Cracked Rye",
+        "unit": "g",
+        "notes": "350g water",
+        "amount": "50",
+        "section": "Preferment",
+        "isOptional": false
+      },
+      {
+        "name": "Rye Berries 200g Boiling Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": "Scalded Rye Berry Soaker",
+        "isOptional": false
+      },
+      {
+        "name": "Fine to Medium Cracked Rye 150g Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": "Cracked Rye Soaker",
+        "isOptional": false
+      },
+      {
+        "name": "Fine to Medium Cracked Rye",
+        "unit": "g",
+        "notes": null,
+        "amount": "550",
+        "section": "Additional Dough Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": "Additional Dough Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "22",
+        "section": "Additional Dough Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Maple Syrup Traditionally Cane Sugar Syrup Is Used But I Prefer Maple Syrup",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": "Additional Dough Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed",
+        "unit": "Tbsp",
+        "notes": "alt: sunflower oil for the tin",
+        "amount": "1",
+        "section": "Additional Dough Ingredients",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e336e26356a20e6462a48bfb8a2e79eeec92383eb53f144a60b88477932c7686",
+    "lineage_hash": "7db3361896cee33c0974c5379496401d8e7e28e8c915dea55e80238d2239ab33"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.thebreadshebakes.com/2014/08/baking-traditional-real-german-pumpernickel-bread/",
+    "fetchedAt": "2026-08-01T21:55:24.707Z"
+  },
+  "rawSource": "https://www.thebreadshebakes.com/2014/08/baking-traditional-real-german-pumpernickel-bread/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

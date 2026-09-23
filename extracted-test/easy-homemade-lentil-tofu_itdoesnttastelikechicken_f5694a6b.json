@@ -1,0 +1,112 @@
+{
+  "recipe": {
+    "name": "Easy Homemade Lentil Tofu",
+    "time": "50 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "635",
+      "carbohydrateContent": "108",
+      "fatContent": "2",
+      "proteinContent": "46"
+    },
+    "directions": [
+      "For My Favorite Way to Cook Red Lentil Tofu (optional):"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Boiling Water",
+        "unit": "C",
+        "notes": "*see notes",
+        "amount": "3",
+        "section": "Lentil Tofu",
+        "isOptional": false
+      },
+      {
+        "name": "Red Split Lentils",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Lentil Tofu",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "(optional)",
+        "amount": "½",
+        "section": "Lentil Tofu",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "My Favorite Way to Cook Red Lentil Tofu (optional)",
+        "isOptional": false
+      },
+      {
+        "name": "Nutritional Yeast",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "My Favorite Way to Cook Red Lentil Tofu (optional)",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "My Favorite Way to Cook Red Lentil Tofu (optional)",
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "My Favorite Way to Cook Red Lentil Tofu (optional)",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "My Favorite Way to Cook Red Lentil Tofu (optional)",
+        "isOptional": false
+      },
+      {
+        "name": "Cayenne",
+        "unit": "tsp",
+        "notes": "(optional for spice)",
+        "amount": "¼",
+        "section": "My Favorite Way to Cook Red Lentil Tofu (optional)",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c035188474937d2657e952f5a8a38ec5625016f6843e666d42c873d3b3cf4169",
+    "lineage_hash": "5fec1736c5f97369b1888af2afeae41f5c1d363b357e77cf93679ebca293820d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/easy-homemade-lentil-tofu/",
+    "fetchedAt": "2026-08-02T06:49:59.806Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/easy-homemade-lentil-tofu/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

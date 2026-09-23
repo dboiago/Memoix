@@ -1,0 +1,67 @@
+{
+  "recipe": {
+    "name": "Grape Bread",
+    "time": "2 days",
+    "course": "breads",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "On day one, prepare the poolish. Combine the ingredients in a medium bowl, cover and leave to ripen at room temperature for 16 – 20 hours.",
+      "Prepare the soaker on day one as well. In a medium bowl, combine the wholemeal spelt flour and water. Cover and place in the fridge for 16- 20 hours.",
+      "On day two, combine all of the ingredients except for  itthe grapes (poolish and wholewheat soaker from day one, 50g strong white and 50g wholemeal wheat flour, 3g dry yeast, 5g rapeseed oil and 7g salt) and knead for 10 minutes.",
+      "Place back into a bowl and leave to rest at room temperature for two hours.",
+      "Knead the dough for a few seconds and work in the grapes. I managed to incorporate 180g of sweet red grapes, but feel free to use more if you can manage it.",
+      "Shape into a round flat loaf, place on a baking tray lined with baking paper, cover with a kitchen towel and prove for several hours.",
+      "Score with a knife.",
+      "Bake for 10 minutes at 230°C and a further 30 minutes at 210°C.",
+      "Cool on a wire rack."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Strong White Wheat Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Yeast",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "976e4072cd85cac0d831f8c36b2598050844e48e41a073f2efae147af0d3cd4d",
+    "lineage_hash": "7bcb9354c29c754c8cac43d9a46315b833496680c48e014c2ad50aad2b5a839d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.thebreadshebakes.com/2016/07/grape-bread-recipe/",
+    "fetchedAt": "2026-08-01T20:46:52.271Z"
+  },
+  "rawSource": "https://www.thebreadshebakes.com/2016/07/grape-bread-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,64 @@
+{
+  "recipe": {
+    "name": "Ginger milk curd",
+    "time": "5 min",
+    "course": "modernist",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine milk and sugar in a pan and heat carefully to 65 °C.",
+      "Peel and microplane ginger, and squeeze out the juice.",
+      "Place juice in a bowl and pour milk into the ginger juice from a height to allow sufficient mixing.",
+      "Do NOT stir as this will interfere with the gel formation.",
+      "Leave to set at room temperature.",
+      "After 5-10 min a gel has formed. The curd may be served immediately or kept in the fridge."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": "skimmed",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Juice",
+        "unit": "g",
+        "notes": "fresh, see comment below regarding stability of enzymes",
+        "amount": "18",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b8f36d49c923dc88179ba6038b0904750ce28cd23e9540ab6bf44e8365517e2c",
+    "lineage_hash": "8e34d7386b340e41df54e282d88d4c2a352cefb14f8308a186f7069909f25708"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://khymos.org/2014/02/24/ginger-milk-curd/",
+    "fetchedAt": "2026-08-02T01:13:22.804Z"
+  },
+  "rawSource": "https://khymos.org/2014/02/24/ginger-milk-curd/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

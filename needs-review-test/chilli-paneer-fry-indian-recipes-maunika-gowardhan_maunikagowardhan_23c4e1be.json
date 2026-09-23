@@ -1,0 +1,159 @@
+{
+  "recipe": {
+    "name": "Chilli Paneer Fry",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat couple of inches of oil in a wide sauce pan or a wok. Mix the water with all the batter ingredients in a bowl you want a sticky thick batter like consistency. Toss the paneer cubes in the bowl to coat the pieces evenly",
+      "Fry the paneer in the hot oil in batches for 2-3 minutes. They should have a light brown crisp coating on all sides. Drain the paneer on kitchen paper and set aside.",
+      "To make the sauce; heat the vegetable oil in a sauce pan on a medium heat. Add the garlic and chopped ginger. Fry for 20 seconds and add the red onions. Sauté the onions for a further minute until they soften and tip in the red peppers along with the slit chilli and fry for a couple of minutes.",
+      "Add the chilli garlic sauce and the dark soy & stir well. If the sauce is a little thick add a couple of tablespoons of water to thin it out slightly",
+      "Now add the fried paneer cubes, stirring well making sure to coat all the pieces with the sauce evenly. Simmer the sauce for a minute. Season to taste with salt, sugar and vinegar. Serve warm with some noodles or fried rice with a garnish of ginger and chilli."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Paneer Cubes",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Couple of Inches Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "As Needed Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "As Needed Vegetable Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onions",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "As Needed Red Peppers",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli",
+        "unit": null,
+        "notes": "slit",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "As Needed Chilli Garlic Sauce",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": "to thin the sauce",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "As Needed Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "As Needed Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vinegar",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "14d8e6309565a8bbf87acff9909d0abe1e678974afa82318132ddb75ff2f6977",
+    "lineage_hash": "eb7f91b9d82adbaab12a6f6504a727594663d03eed1b0e9918e81f28e3cc76d4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://maunikagowardhan.co.uk/cook-in-a-curry/chilli-paneer-fry-indian-chinese-style/",
+    "fetchedAt": "2026-08-01T20:13:46.639Z"
+  },
+  "rawSource": "https://maunikagowardhan.co.uk/cook-in-a-curry/chilli-paneer-fry-indian-chinese-style/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

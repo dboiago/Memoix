@@ -1,0 +1,160 @@
+{
+  "recipe": {
+    "name": "Blueberry Pound Cake",
+    "time": "1 hr 25 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "329",
+      "carbohydrateContent": "46",
+      "fatContent": "15",
+      "proteinContent": "4"
+    },
+    "directions": [
+      "Preheat the oven to 350 °F. Generously butter and flour a tube pan or Bundt pan.",
+      "Toss 10 oz&#32;blueberries with a teaspoon of water until moistened (see note). Sprinkle with 1 teaspoon&#32;flour and toss until the flour coats the berries to form paste. Set the berries aside while you make the cake batter.",
+      "Combine 3&#32;large eggs, 4&#32;egg yolks, 2 teaspoon&#32;vanilla extract, finely grated zest from 1&#32;large lemon and half of the sour cream in a small bowl, whisk to combine and set aside.",
+      "Sift together 8 oz&#32;cake flour, ¼ teaspoon&#32;table salt, and 1 teaspoon&#32;baking powder in a mixing bowl. Add 10 oz&#32;granulated sugar to the flour and mix at low speed for 10 seconds. Add 8 oz&#32;unsalted butter to the flour and mix until combined. Add the remaining sour cream and increase the speed to medium.  Mix for a full 2-3 minutes. The batter will lighten in color and texture. If using a hand mixer add another minute to the mixing time.",
+      "Scrape the bowl and beater thoroughly. On low speed, add the egg mixture in 3 increments, scraping the bowl after each addition. Mix just until the eggs are incorporated.",
+      "Pour ¼ the batter into the prepared pan and spread to cover the bottom of the pan. Fold the blueberries into the remaining batter and add that to the pan and spread to an even layer. Bake at 350°F until a toothpick inserted in the middle comes out clean (about 55 minutes).",
+      "Cool in the pan for 15-20 minutes before turning the cake out onto a cooling rack set over a clean sheet pan (see note).",
+      "Whisk together the confectioner&#39;s sugar and lemon juice to make the glaze. The glaze should be the consistency of thin pancake batter. Adjust the sugar and/or lemon juice to correct the thickness of the glaze. While the cake is still slightly warm drizzle the glaze over the cake. Allow the glaze to set before moving the cake to a serving platter.",
+      "Cool completely before slicing."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Blueberries (2 Cups, Fresh or Frozen)",
+        "unit": "oz",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs (room Temp)",
+        "unit": "large",
+        "notes": null,
+        "amount": "3",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks (room Temp)",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Sour Cream (½ Cup, Divided)",
+        "unit": "oz",
+        "notes": null,
+        "amount": "4",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Cake Flour (1 ¾ Cups, See Note)",
+        "unit": "oz",
+        "notes": null,
+        "amount": "8",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar (1 ¼ Cups)",
+        "unit": "oz",
+        "notes": null,
+        "amount": "10",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter (room Temperature)",
+        "unit": "oz",
+        "notes": null,
+        "amount": "8",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Confectioner Sugar (2 Cups)",
+        "unit": "oz",
+        "notes": null,
+        "amount": "8",
+        "section": "Lemon Glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice (¼ Cup)",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": "Lemon Glaze",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8078d1632f6fb0a238ced8638158e2ee7e3f190339c56f02e42d3879cd175adb",
+    "lineage_hash": "87f69d2a47e5ba0f9587fa6b6f94ba477e7a693d52df1caff26bd6bed79aea7f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2023/07/05/blueberry-pound-cake/",
+    "fetchedAt": "2026-08-02T08:18:08.548Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2023/07/05/blueberry-pound-cake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

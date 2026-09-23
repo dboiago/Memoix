@@ -1,0 +1,256 @@
+{
+  "recipe": {
+    "name": "Eggless Fruit Cake",
+    "time": "1 hr 20 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "9",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "571",
+      "carbohydrateContent": "86",
+      "fatContent": "24",
+      "proteinContent": "7"
+    },
+    "directions": [
+      "Toss together all the dried fruits and nuts in a large bowl. Add apple juice, mix well and refrigerate overnight.",
+      "Next morning, the fruits and nuts would have soaked some of the apple juice. Drain the juice (you can drink it later) and set the soaked fruits & nuts aside and start working on the cake.",
+      "Pre-heat oven to 350 F degrees. Line a 9 x 2 inch cake pan with parchment paper and then spray with a non-stick spray. Set aside.",
+      "In a large bowl, whisk together flour, cornstarch, salt, baking powder and baking soda.",
+      "Add the spices - cinnamon powder, all spice powder, cardamom powder and nutmeg powder. Mix to combine all the spices with the flour.",
+      "Sift the flour once so that everything is well combined and set aside.",
+      "In a bowl mix together 1.5 cups milk with 1.5 tablespoons white vinegar and set aside for 5-10 minutes. The milk will curdle and that's what we want before using in the recipe.",
+      "Using the paddle attachment of your stand mixer or using your hand mixer, beat the oil with sugar on medium speed till well combined.",
+      "Add vanilla extract, lemon extract, orange extract and whisk to combine.",
+      "Add honey (if using) and whisk to combine.",
+      "Start adding the flour mix and milk-vinegar mix in parts, starting and ending with the flour mix. So add the flour mix in 3 parts and the milk-vinegar mix in 2 parts, mixing well after each addition.",
+      "Mix till everything is just combined and remember not to over-beat the mixture.",
+      "Fold in the soaked & drained dried fruits & nuts.",
+      "Pour the cake batter into the prepared pan. Bake the cake at 350 F degrees for 60-65 minutes, or till a toothpick inserted in the center comes out clean. At around 30-35 minute mark, you can cover the cake with a sheet of aluminium foil to prevent excessive browning.",
+      "Once done, remove the cake carefully from the oven. Wait for 5-10 minutes and then flip the cake on a wire rack.",
+      "Peel the parchment paper and let the cake cool down completely.",
+      "Dust the eggless fruit cake with powdered sugar and enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Apricots",
+        "unit": null,
+        "notes": "dried, chopped",
+        "amount": "10",
+        "section": "dried fruits & nuts",
+        "isOptional": false
+      },
+      {
+        "name": "Dates",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "10",
+        "section": "dried fruits & nuts",
+        "isOptional": false
+      },
+      {
+        "name": "Tutti Frutti",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "dried fruits & nuts",
+        "isOptional": false
+      },
+      {
+        "name": "Raisins",
+        "unit": "C",
+        "notes": "a mix of golden and black",
+        "amount": "¼",
+        "section": "dried fruits & nuts",
+        "isOptional": false
+      },
+      {
+        "name": "Almonds",
+        "unit": "C",
+        "notes": "cashews",
+        "amount": "½",
+        "section": "dried fruits & nuts",
+        "isOptional": false
+      },
+      {
+        "name": "Fruit",
+        "unit": "C",
+        "notes": "dried",
+        "amount": "½",
+        "section": "dried fruits & nuts",
+        "isOptional": false
+      },
+      {
+        "name": "Cherries",
+        "unit": "Tbsp",
+        "notes": "maraschino cherries red & green",
+        "amount": "3",
+        "section": "dried fruits & nuts",
+        "isOptional": false
+      },
+      {
+        "name": "Apple Juice",
+        "unit": "C",
+        "notes": "or you may use rum or orange juice",
+        "amount": "1.5",
+        "section": "dried fruits & nuts",
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "C",
+        "notes": "288 grams",
+        "amount": "2.25",
+        "section": "Cake - dry ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": "48 grams",
+        "amount": "4",
+        "section": "Cake - dry ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Cake - dry ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1.5",
+        "section": "Cake - dry ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": "Cake - dry ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Cake - dry ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "All Spice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Cake - dry ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Cake - dry ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Cake - dry ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": "12 oz",
+        "amount": "1.5",
+        "section": "Cake- wet ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "White Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1.5",
+        "section": "Cake- wet ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Canola Oil",
+        "unit": "C",
+        "notes": "180 ml, or use vegetable oil or any flavorless oil",
+        "amount": "¾",
+        "section": "Cake- wet ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "C",
+        "notes": "256 grams",
+        "amount": "1.25",
+        "section": "Cake- wet ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Cake- wet ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Extract",
+        "unit": "tsp",
+        "notes": "or use 1 teaspoon lemon zest",
+        "amount": "¼",
+        "section": "Cake- wet ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Orange Extract",
+        "unit": "tsp",
+        "notes": "or use 1 teaspoon orange zest",
+        "amount": "¼",
+        "section": "Cake- wet ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": "optional",
+        "amount": "1",
+        "section": "Cake- wet ingredients",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e0b854924325e5bc850119d3a48aa2372bf23e154c30827970535de18b65da98",
+    "lineage_hash": "8299e0d8148e6802fdcf93c5f43c1bc4200ced54c1f244de634faaf18de4795f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/eggless-fruit-cake/",
+    "fetchedAt": "2026-08-02T05:03:19.750Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/eggless-fruit-cake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

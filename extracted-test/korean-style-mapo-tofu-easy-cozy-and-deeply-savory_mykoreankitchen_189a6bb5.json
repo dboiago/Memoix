@@ -1,0 +1,247 @@
+{
+  "recipe": {
+    "name": "Korean-Style Mapo Tofu",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "KR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "394",
+      "carbohydrateContent": "26",
+      "fatContent": "29",
+      "proteinContent": "9"
+    },
+    "directions": [
+      "Prepare the sauce - Combine all the sauce ingredients in a measuring cup or small bowl and stir until well combined. Set aside.",
+      "Make the chili oil. - In a pan, add the cooking oil, onion and minced garlic. Stir fry over medium-high heat until the onion is softened and lightly golden. Strain the oil and discard the onion and garlic. Return the oil to the pan, add the chili flakes, and cook over low heat until fragrant, stirring frequently. Strain the oil again and discard the chili flakes. Set the oil aside. You should have about 1/4 cup remaining.",
+      "Prepare the tofu - Bring a pot of water to a boil and add the salt. Add the tofu and blanch for about 1 minute. Drain and set aside.",
+      "Cook the pork - Heat 3 Tbsp of the prepared Korean chili oil in a pan over medium-high heat. Add the minced pork and cook until lightly browned, breaking it up with a spatula as it cooks.",
+      "Build the sauce - Pour in the prepared sauce mixture and stir to combine. Bring it to a gentle simmer and cook for 2 to 3 minutes.",
+      "Add the tofu - Gently add the tofu and carefully fold to combine. Simmer for 1 to 2 minutes, gently folding once or twice.",
+      "Finish the dish - Reduce the heat to medium. Pour in the starch slurry and stir gently until the sauce thickens and lightly coats the tofu. Add the chili peppers and green onion, then fold them through. Drizzle with the remaining chili oil (about 1 Tbsp) and the sesame oil, then sprinkle with the sesame seeds.",
+      "Serve - Serve hot with rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Firm Tofu (21 Oz)",
+        "unit": "g",
+        "notes": "cut into 2 cm (3/4 inch) cubes",
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pork (3.5 Oz)",
+        "unit": "g",
+        "notes": "minced",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chili Pepper (0.7 Oz)",
+        "unit": "g",
+        "notes": "sliced (optional)",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chili Pepper (0.4 Oz)",
+        "unit": "g",
+        "notes": "dried, sliced (optional)",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion (green Part Only)",
+        "unit": "g",
+        "notes": "(0.7 oz), chopped",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Korean Anchovy Stock",
+        "unit": "C",
+        "notes": "alt: water",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ssamjang (korean Spicy Dipping Sauce)",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mirin (sweet Rice Wine)",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce (sempyo Yangjo 701 or Kikkoman)",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Korean Anchovy Fish Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gochugaru (korean Chili Flakes)",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Juice (from Squeezing About 1/2 Tsp Minced Ginger)",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Neutral Flavored Cooking Oil (e.g. Rice Bran Oil or Vegetable Oil)",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion (4 Oz)",
+        "unit": "g",
+        "notes": "thinly sliced",
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "Tbsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gochugaru (korean Chili Flakes)",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potato Starch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d60c929310d68ef9a3b6973d3604354f8747801654cca9ba39c8f881aa8079aa",
+    "lineage_hash": "5945cd79b4da83ea892ee052292c225510513ce489726e1a2fa22089c888e811"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://mykoreankitchen.com/korean-mapo-tofu/",
+    "fetchedAt": "2026-08-02T03:29:01.123Z"
+  },
+  "rawSource": "https://mykoreankitchen.com/korean-mapo-tofu/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

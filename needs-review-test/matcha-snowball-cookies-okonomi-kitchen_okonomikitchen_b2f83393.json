@@ -1,0 +1,110 @@
+{
+  "recipe": {
+    "name": "Matcha Snowball Cookies",
+    "time": "52 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "EU",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "45",
+      "carbohydrateContent": "4.4",
+      "fatContent": "2.9",
+      "proteinContent": "0.7"
+    },
+    "directions": [
+      "Add the butter to the bowl of a stand mixer fitted with the paddle attachment (or use a medium bowl with a hand mixer). Beat on medium speed (KitchenAid setting 4) for about 1 minute, until smooth and creamy.",
+      "Add the powdered sugar and continue mixing on medium speed until well combined. Scrape down the sides of the bowl as needed.",
+      "Add the vanilla extract and a pinch of salt. Beat until smooth. Add the milk powder, almond flour, cake flour and matcha powder. Mix on low speed for a few seconds, then increase to medium speed and mix until the dough is no longer powdery and everything is evenly combined.The dough should come together when pinched.",
+      "Gather the dough into a ball, wrap tightly in plastic wrap, and chill in the fridge for at least 30 minutes.\n\nThe dough can be refrigerated for up to 5 days or frozen for up to 3 weeks.",
+      "Remove the dough from the fridge. Cut into 12 equal pieces (about 14 g each). Roll each piece into a smooth ball and place on a parchment-lined baking tray.",
+      "Preheat oven to 180°C / 350°F (170°C/338°F convection). Bake for 15 minutes, or until the bottoms are just lightly browned.",
+      "Remove from the oven and let cool on the tray for about 10 minutes. Place powdered sugar and the warm cookies into a bag or bowl and gently shake to coat evenly. Let cool completely, then serve and enjoy!!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "+ 1 Tsp (50 G) Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "(20 G) Powder Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "(2.5 ML) Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt If Using Unsalted",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "(8 G) Milk Powder",
+        "unit": "Tbsp",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "+ 1 Tsp (25 G) Almond Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "(5 G) Matcha Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "(60 G) Cake Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c2ca51e5bf475acdc2ffc06542a6f47a5fb491852201a3c12b328dda25ec91c4",
+    "lineage_hash": "2c3b8468a14f0af8a7c809952e1f67ead62f8f4c8560077aa2a3440d03c02338"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.okonomikitchen.com/matcha-snowball-cookies/",
+    "fetchedAt": "2026-08-02T10:24:18.422Z"
+  },
+  "rawSource": "https://www.okonomikitchen.com/matcha-snowball-cookies/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

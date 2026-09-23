@@ -1,0 +1,97 @@
+{
+  "recipe": {
+    "name": "Concord Grape Pie",
+    "time": "1 hr 40 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Prep. If you are not using store bought pie crust, begin by making a double batch of our foolproof pie dough recipe. Refrigerate for about 4 hours.",
+      "Rinse the grapes, pat them dry so there is no more liquid in the filling than necessary, and remove them from the stems, discarding any berries that are green, hard, rotten, or moldy. Concords are dark purple, almost black, with thick slip-skins, and the meaty pulp of the grape is juicy green, complete with seeds. Pinch each grape so the pulp pops out. Don&#039;t squeeze the skins dry or they will be leathery in the filling. Leave a little juice under the skin. Put the pulp in a saucepan and the skins in another pan or a bowl.",
+      "Cook. Bring the pulp to a rolling boil and let it go for at least 5 minutes. This breaks down the fibers in the pulp and releases their grip on the seeds as well as releasing some pectin that helps the filling hold together. Don&#039;t worry if there is a little foam on the surface. Stir every few minutes while boiling to make sure it does not burn. While the pulp is hot, remove the seeds by pressing it through a strainer into the bowl of skins. Stir.",
+      "Prep again. Mix the tapioca and sugar into the filling, let it cool in the fridge for about 2 hours. The rest lets the juice extract maximum color from the skins and allows the tapioca to swell and absorb more of the juices. Put the bottom crust into a pie pan. Irene suggests a metal pie pan, but my wife uses ceramic or pyrex with great success.",
+      "Add the filling. If you wish, do as Irene does and dot the top with the butter. Now cover the filling with the top crust. Irene and Monica both use a &quot;floating&quot; top crust, a circle of dough slightly smaller than the top of the pie, because it makes a pretty purple ring around the edge, and because it is easier. You can use a lattice or a full crimped crust if you wish. Prick the top near the center 4-5 times with a knife to allow steam to escape. If you wish, do as Irene does and brush the crust with the milk to help it brown, and then sprinkle the sugar on the top crust. If you have an aluminum pie shield for the edges, you can put it on now. It can help the edges from over browning.",
+      "Bake. Preheat the oven to 400°F (204°C) and put one rack in the center. Put the other below and put a sheet of aluminum foil on it to catch drips. Bake at 400°F (204°C) for 20 minutes, lower the temp to 350°F (167°C), and bake another 30 minutes until the crust is golden brown and juice bubbles out of the cuts in the center.",
+      "Serve. Let it cool for about 2 hours before slicing and serving with vanilla ice cream."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ripe Concord Grapes",
+        "unit": "C",
+        "notes": null,
+        "amount": "5½",
+        "section": "The Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Instant",
+        "unit": "Tbsp",
+        "notes": "alt: minute tapioca",
+        "amount": "2",
+        "section": "The Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "The Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Pie Crust (ready Made Pie Crust or a Double Batch of Our Single Crust Pie Dough Recipe)",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "The Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "cut into pea size chunks",
+        "amount": "3",
+        "section": "Optional",
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": "Optional",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Optional",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a5f04364984584bd332e5eb9c8ac189847ad7fa9a39d711b840b02c8561aa77d",
+    "lineage_hash": "aacb271b434d3051e6d6ac276b4d63ea5e7207eb0eae6bdcc98d5ed2bc363280"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://amazingribs.com/tested-recipes/dessert-recipes/purple-passion-grape-pie-recipe/",
+    "fetchedAt": "2026-08-02T11:53:29.040Z"
+  },
+  "rawSource": "https://amazingribs.com/tested-recipes/dessert-recipes/purple-passion-grape-pie-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

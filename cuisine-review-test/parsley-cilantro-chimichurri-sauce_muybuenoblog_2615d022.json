@@ -1,0 +1,105 @@
+{
+  "recipe": {
+    "name": "Parsley-Cilantro Chimichurri Sauce",
+    "time": "5 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "AR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "164",
+      "carbohydrateContent": "1",
+      "fatContent": "18",
+      "proteinContent": "0.2"
+    },
+    "directions": [
+      "Puree all ingredients in a blender or food processor.",
+      "Transfer sauce to an airtight container and refrigerate at least 2 hours or up to 1 day to allow the flavors to meld. Before serving, stir and season as needed."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Italian Parsley",
+        "unit": "C",
+        "notes": "stems removed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "C",
+        "notes": "fresh, stems removed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine Vinegar",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "peeled",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Pepper",
+        "unit": "tsp",
+        "notes": "dried, crushed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "16977b99632ce50f8ebaf3c62711ac5d71fdfdffc0d8c168e2659cd723d51619",
+    "lineage_hash": "20622ed7ce1e205c0d4b523066a063274d21c29c6afab0fd2db498ec6e43c037"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/chimichuri-sauce/",
+    "fetchedAt": "2026-08-02T05:57:00.555Z"
+  },
+  "rawSource": "https://muybuenoblog.com/chimichuri-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

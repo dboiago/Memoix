@@ -1,0 +1,104 @@
+{
+  "recipe": {
+    "name": "Easy Vegan Sambal - Chili paste",
+    "time": "40 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "MY",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place chili, lemongrass, shallot, garlic, ginger and 1/2 cup of oil in a blender. Blend until smooth.",
+      "Heat a non-stick tall pan then add in the remaining oil.",
+      "Slowly pour in the blended mixture into the pan.",
+      "Cook until the oil starts to separate from the chili by stirring continuously, about 20 minutes.",
+      "Add sugar, salt and continue to cook for another 2-3 minutes. The mixture will turn darker.",
+      "Turn off the heat and let cool before storing it into a jar."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "[200g] Red Chili Used Red Jalapeno",
+        "unit": "lb",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemongrass White Part Only",
+        "unit": "stalks",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallot About 100g",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bulb Garlic About 6-8 Cloves",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "A Few Slices of Ginger About 8 G",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "[168g] Oil for Blending and Cooking *separated to 1/2 Cup + 1/4 Cup",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1cb9b1daeba648b4f03a519fdbc6b9a47b38158ae2475abc5a398b1e1f3e8ad3",
+    "lineage_hash": "4ac032fa87e74401ebee7d41463821ee7eb85822f1ca089d716d7031b1359982"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://woonheng.com/easy-vegan-sambal/",
+    "fetchedAt": "2026-08-01T15:49:01.908Z"
+  },
+  "rawSource": "https://woonheng.com/easy-vegan-sambal/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

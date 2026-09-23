@@ -1,0 +1,205 @@
+{
+  "recipe": {
+    "name": "Patatas Aliñadas with Pan-Fried Cod",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, place the potatoes in a pan of heavily salted water and bring to the boil. Turn down to a gentle simmer and cook for 20–25 minutes, until tender. Drain the cooked potatoes and place in a colander to steam-dry",
+      "Whilst the potatoes are cooking, bring another pan of salted water to the boil. Separate the chard stalks from the leaves",
+      "Once boiling, blanch the stalks for around 3–4 minutes. Remove and refresh in iced water",
+      "Blanch the leaves for 2–3 minutes, depending on how big and tough they are. Remove and refresh in ice water. Remove both the stalks and the leaves from the water and set aside to drain in a colander. Squeeze the water from the leaves and roughly chop. Roughly chop the stalks into pieces",
+      "Once the potatoes have dried and are cool enough to handle, roughly break them into pieces and place in a pan or bowl. Pour over the olive oil, stirring and crushing lightly with a fork or spoon, until the potatoes start to emulsify with the oil. You want the potatoes to retain a little texture, so avoid breaking them down too much. Season to taste and set aside in a warm place",
+      "Soak the red onion in cold water for a few minutes to remove some of its astringency. Drain and transfer to a bowl with the green pepper, season with the two vinegars and set aside",
+      "To make the seasoning for the chard, cut the preserved lemons in half and then half again. Remove and discard the flesh, then finely chop the skins",
+      "Place a frying pan over a medium heat and allow to come to temperature. Add the oil, followed by the garlic slices, and gently fry until they start to turn light golden in colour. Add the chopped preserved lemons, cumin seeds and hazelnuts and stir together",
+      "Add the chard leaves and stalks and stir to warm through",
+      "Place a non-stick frying pan over a medium-high heat. Once hot, add a dash of oil, followed by the cod, skin-side down. Cook until the skin is crisp, then turn over. Continue to cook for a minute or so, then add a knob of butter. When melted and foaming, baste the fish with the butter",
+      "Finish the potatoes by adding the red onion and pepper and some of the vinegar dressing to taste. Divide between plates, along with the chard. Top with the cod and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cod Loin",
+        "unit": "g",
+        "notes": "skin on, cut into 120g portions",
+        "amount": "480",
+        "section": "Cod",
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Cod",
+        "isOptional": false
+      },
+      {
+        "name": "Knobs Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Cod",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Cod",
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Cod",
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": "g",
+        "notes": "varieties such as Desiree and Cyprus work well",
+        "amount": "800",
+        "section": "Patatas aliñadas",
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": "Patatas aliñadas",
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "small",
+        "notes": "very finely diced",
+        "amount": "1",
+        "section": "Patatas aliñadas",
+        "isOptional": false
+      },
+      {
+        "name": "Green Pepper",
+        "unit": null,
+        "notes": "very finely diced",
+        "amount": "½",
+        "section": "Patatas aliñadas",
+        "isOptional": false
+      },
+      {
+        "name": "Moscatel Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": "Patatas aliñadas",
+        "isOptional": false
+      },
+      {
+        "name": "Sherry Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": "Patatas aliñadas",
+        "isOptional": false
+      },
+      {
+        "name": "Handful Flat-leaf Parsley",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": "Patatas aliñadas",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Patatas aliñadas",
+        "isOptional": false
+      },
+      {
+        "name": "Rainbow Chard",
+        "unit": "bunch",
+        "notes": null,
+        "amount": "1",
+        "section": "Rainbow chard",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Rainbow chard",
+        "isOptional": false
+      },
+      {
+        "name": "Preserved Lemon",
+        "unit": null,
+        "notes": "or 2 if they’re small",
+        "amount": "1",
+        "section": "Rainbow chard",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "2",
+        "section": "Rainbow chard",
+        "isOptional": false
+      },
+      {
+        "name": "Handful Blanched Hazelnuts",
+        "unit": null,
+        "notes": "toasted (you can also add some toasted almonds, if desired)",
+        "amount": "1",
+        "section": "Rainbow chard",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Rainbow chard",
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Rainbow chard",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2a04d9fda6dbfaef9f98cf116a60101a1d3ef8bceefd24f7fe8d3c5f874d1b32",
+    "lineage_hash": "c3fdfa111daa3a841149c5afb5b12341654237226677ca073d0926f9c1d27d12"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/patatas-alinadas-with-cod-recipe",
+    "fetchedAt": "2026-08-03T08:17:18.062Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/patatas-alinadas-with-cod-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

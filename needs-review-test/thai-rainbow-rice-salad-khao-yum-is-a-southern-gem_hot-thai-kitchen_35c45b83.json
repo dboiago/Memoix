@@ -1,0 +1,229 @@
+{
+  "recipe": {
+    "name": "Thai Rainbow Rice Salad (Khao Yum)",
+    "time": "1 hr 5 min",
+    "course": "salads",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "TH",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat the cabbage and the water until it comes to a simmer, then simmer for 5 minutes.",
+      "Drain the purple cabbage water into a mixing bowl. If you want to make purple rice, simply use this water to cook your rice. If you want to make it blue, proceed to the next step.",
+      "Add a tiny bit of baking soda (as in 1/16 of a teaspoon) and stir; you will notice it turning less reddish and more towards blue. Continue to add more baking soda, a tiny smidge at a time, until it turns the shade of blue you like. DO NOT ADD TOO MUCH or it will start to turn green, but if that happens, you can bring it back by adding a little acid such as vinegar or lime juice.*Tip: To check colour, spoon some of the water onto a white plate; I find this is more representative of how it will show up on the rice.",
+      "Use this blue water to cook the jasmine rice as you normally would, adding more plain water if you want a lighter blue. *Use only stainless steel or non-stick pot to cook the rice. Do not use an aluminum as it is reactive and will turn the blue cabbage water back to purple (as I found out the hard way!).",
+      "In a blender, combine ¼ cup of water, shallots, garlic, lemongrass and ginger or galangal and blend until there are no more big chunks but it doesn't have to be smooth. If needed you can add the remaining ¼ cup of water to help it blend. Transfer into a small pot.",
+      "Add the fish sauce, shrimp paste, palm sugar, tamarind paste, and makrut lime leaves and simmer gently for about 5 minutes.",
+      "Remove the lime leaves, then taste and adjust flavour. It should be equally salty and sweet, with a little acidity to balance. It will be pungent and strong so taste only a little bit! The consistency of the dressing once cooled should be runny and easily pourable; if it's thick, add a little water to thin it out.",
+      "Toast the dried shrimp: Grind dried shrimp in the coffee grinder or blender until fluffy. Transfer to a dry saute pan and stir over medium heat until it is aromatic and darkened slightly. Remove from pan immediately and let cool. You can toast the dried shrimp up to a week ahead and kept in the fridge.",
+      "Toasted coconut: Add the coconut to a dry saute pan and cook over medium heat, stirring constantly, until it is DARK brown. Not golden brown, you want it deep, dark and toasty. You can toast the coconut up to a week ahead and kept in the fridge.",
+      "Assembly: Place the blue rice in the center of a plate and arrange the other salad components around the rice, putting as much of each ingredient as you wish, and you can use my photo as a visual guide if needed. Serve the chili flakes and lime wedge on the side.",
+      "To Eat: Each plate of the size shown in the video should get about 1 Tbsp of the dressing. If it's your first time, add just half a tablespoon of dressing and see how it goes. If half a Tbsp is already too strong, your dressing is too concentrated so you'll need to thin out the dressing with some water. Squeeze the lime over and add the chili flakes, then toss all the salad components with the dressing very well (you don't want a bite full of just lemongrass). Enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Red Cabbage (see Note 1)",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Uncooked Jasmine Rice",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛-¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Roughly Chopped Shallot",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemongrass",
+        "unit": "inches",
+        "notes": "bottom half only, finely sliced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thin Slices Ginger",
+        "unit": null,
+        "notes": "alt: galangal",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "(60-120 ML) Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼-½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "(60 ML) Fish Sauce",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "(5 ML) Fermented Shrimp Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "(3.5 Oz) Palm Sugar",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "(15-30 ML) Thai Tamarind Paste",
+        "unit": "Tbsp",
+        "notes": "store bought or homemade",
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Makrut Lime Leaves",
+        "unit": null,
+        "notes": "center ribs removed and torn into chunks",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "(45 ML) Dried Shrimp",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "(180 ML) Dried Shredded Coconut",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemongrass",
+        "unit": "stalks",
+        "notes": "bottom half only, very thinly sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Makrut Lime Leaves",
+        "unit": null,
+        "notes": "center ribs removed and very finely julienned",
+        "amount": "10-12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Segments Pomelo",
+        "unit": null,
+        "notes": "torn into small chunks (or sub grapefruit segments)",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Limes",
+        "unit": null,
+        "notes": "cut into wedges",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Chili Flakes",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "A Few Fresh Crunchy Vegetables",
+        "unit": null,
+        "notes": "julienned or finely chopped such as red/green cabbage, carrots, long beans, bean sprouts or cucumber",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Leafy Greens",
+        "unit": null,
+        "notes": "finely julienned, such as wild betel leaves (traditional), Chinese broccoli or kale",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "18fb2e9cd02dad09074c2469d13d9da04d67667fd2f164af2bb4846311b9ba39",
+    "lineage_hash": "214d57591b733add16a080d3cacb08b1669a3c709e05c58db7fcae00d5ffd1c4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://hot-thai-kitchen.com/kao-yum/",
+    "fetchedAt": "2026-08-02T00:55:51.793Z"
+  },
+  "rawSource": "https://hot-thai-kitchen.com/kao-yum/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

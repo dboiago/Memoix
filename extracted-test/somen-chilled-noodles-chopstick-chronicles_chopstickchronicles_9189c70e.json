@@ -1,0 +1,177 @@
+{
+  "recipe": {
+    "name": "Somen (Chilled Noodles)",
+    "time": "1 hr 15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "37",
+      "carbohydrateContent": "8",
+      "fatContent": null,
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Place 3 dry shiitake mushrooms into a bowl of water and put some kind of weight on the mushrooms so that the mushrooms submerge. Leave it refrigerated over night.",
+      "The next day, squeeze the soaking water out but save it in a bowl. Place 1/4 cup of the soaking water, sugar, soy sauce and mirin (listed in the 'toppings' ingredients) in a saucepan over medium heat. Slice the shiitake mushroom and put them into the saucepan to simmer for about 20 minutes with otoshibuta (dollop lid).",
+      "Let the shiitake mushrooms cool down to room temperature, place them into a storage container and chill in the fridge till the somen noodle is ready to serve.",
+      "Make the dipping sauce if you are making mentsuyu from scratch.",
+      "Dilute the mentsuyu with water and set aside.",
+      "Prepare the garnishes: slice the okura, grate the ginger, thinly slice the myoga, and cut the negi shallots finely.",
+      "Boil water (1- 1.5 liters or 6½ cups) in a large pot, add 1 bundle of somen noodle and cook for 2 minutes.",
+      "Drain the water and then leave the noodles under the running water to wash and cool down.",
+      "Place the noodles in a bowl of ice water to chill.",
+      "Serve the noodles with a few ice cubes, the toppings, the garnishes, and the dipping sauce separately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dry Somen Noodles",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mentsuyu",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Dipping sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Water for Diluting Mentsuyu",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Dipping sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Shiitake Mushrooms",
+        "unit": null,
+        "notes": "dried",
+        "amount": "3",
+        "section": "Toppings",
+        "isOptional": false
+      },
+      {
+        "name": "Water From the Soaked Dried Mushrooms",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Toppings",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Toppings",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Toppings",
+        "isOptional": false
+      },
+      {
+        "name": "Mirin",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Toppings",
+        "isOptional": false
+      },
+      {
+        "name": "Kinshi Tamago",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Toppings",
+        "isOptional": false
+      },
+      {
+        "name": "Okura",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Toppings",
+        "isOptional": false
+      },
+      {
+        "name": "Ham(shredded)",
+        "unit": "slices",
+        "notes": null,
+        "amount": "2",
+        "section": "Toppings",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger (grated)",
+        "unit": "cm",
+        "notes": null,
+        "amount": "3",
+        "section": "Yakumi (Garnishes)",
+        "isOptional": false
+      },
+      {
+        "name": "Tbs Finely Chopped Negi Shallots",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Yakumi (Garnishes)",
+        "isOptional": false
+      },
+      {
+        "name": "Shiso Leaves(thinly Cut)",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Yakumi (Garnishes)",
+        "isOptional": false
+      },
+      {
+        "name": "Myoga (thinly Sliced)",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Yakumi (Garnishes)",
+        "isOptional": false
+      },
+      {
+        "name": "Wasabi Optional",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Yakumi (Garnishes)",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "da2f2d0551189bd768335baefd825f248bed00f9a1b20262539c31749983c03b",
+    "lineage_hash": "1b485c7977303274478b2fed3f4f9072ddddec8996c6384ed0d5f1c7e16978a5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chopstickchronicles.com/somen/",
+    "fetchedAt": "2026-08-01T20:33:09.525Z"
+  },
+  "rawSource": "https://www.chopstickchronicles.com/somen/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

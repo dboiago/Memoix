@@ -1,0 +1,76 @@
+{
+  "recipe": {
+    "name": "Banana and Papaya Juice",
+    "time": "10 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "ID",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Mocktail",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Put everything in a blender and process until smooth.",
+      "Divide into serving glasses and serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Banana (about 200 Gram)",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Papaya",
+        "unit": null,
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cold Drinking Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Juice of 1 Lemon/lime",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7d72e48ea4ad9a93f4481d7bb5659d8fa6ffb1a053478393ed3b67eaa91c345b",
+    "lineage_hash": "bb9650609160807feb6f51334399ca026aa48c87939c2d168a5be070a448e96d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/banana-and-papaya-juice.html",
+    "fetchedAt": "2026-08-02T11:52:03.846Z"
+  },
+  "rawSource": "https://dailycookingquest.com/banana-and-papaya-juice.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}
