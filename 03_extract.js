@@ -555,12 +555,24 @@ function parseIngredientString(raw) {
 function isRealInstructionLine(line) {
   const trimmed = (line || '').trim();
   if (trimmed.length < 6) return false;
+  const wordCount = trimmed.split(/\s+/).length;
+  // A bare section header ("Pork Stock", "Assembly", "For the Sauce") is
+  // essentially never this long -- confirmed on greatbritishchefs.com's
+  // Biancomangiare: all 8 real, accurate steps end with no terminal
+  // punctuation at all ("...keep the soaking water", no period), a genuine
+  // site-wide style choice, not a header. Requiring terminal punctuation
+  // unconditionally rejected this entire real ldInstructionsRaw array and
+  // fell through to a worse whole-page model re-extraction that came up
+  // empty. A sufficiently long line is the same strong alternate signal
+  // extractMarkdownDirections already relies on instead of punctuation for
+  // the identical reason (see its own comment on okonomikitchen.com).
+  if (wordCount >= 8) return true;
   // Allow a closing quote/paren/bracket after the actual terminal mark --
   // confirmed necessary on hot-thai-kitchen.com's 3-Chili Fried Rice:
   // "...everything looks the same colour.)" is a complete, real sentence
   // that just ends with a parenthetical aside, not a fragment.
   if (!/[.!?]["'\)\]]*$/.test(trimmed)) return false;
-  if (trimmed.split(/\s+/).length < 2) return false;
+  if (wordCount < 2) return false;
   return true;
 }
 
@@ -705,6 +717,48 @@ function extractMarkdownDirections(markdown) {
         break;
       }
       steps = collectFromLines(lines.slice(seqStart, endIdx));
+    }
+  }
+
+  // Third shape, only tried when neither of the above found anything: WP
+  // Recipe Maker-style plugin output (the "▢" checkbox ingredient bullets
+  // seen across ~20 files in this corpus), where the actual method lives
+  // as plain "-   Step text." bullets grouped under step-group subheadings
+  // ("#### Cook Udon noodles") -- never as a numbered list at all.
+  // Confirmed on chopstickchronicles.com's Kakeudon and Somen: the page's
+  // own "## How to Make X" heading exists but sits far above the real
+  // recipe-card content (past several unrelated headings in between), so
+  // neither the heading-boundary nor the bare-number-sequence shape above
+  // ever reaches it. Anchored on the LAST "▢" line instead of any heading,
+  // since that reliably marks the end of the ingredient checklist and the
+  // start of the recipe-card's method section right after it; stops at the
+  // next "## "-level heading (not "###"/"####", which are legitimate
+  // step-group subheadings within this same section) or end of document.
+  // Requires terminal punctuation on every candidate bullet (not the
+  // word-count fallback used above) since confirmed real bullets on both
+  // pages do end in a period -- a plain unpunctuated bullet elsewhere on
+  // the page (equipment, notes) is more likely to be a false match here
+  // than on the numbered-step shapes, so this stays strict.
+  if (steps.length === 0) {
+    let lastCheckboxIdx = -1;
+    for (let i = 0; i < lines.length; i++) {
+      if (lines[i].includes('▢')) lastCheckboxIdx = i;
+    }
+    if (lastCheckboxIdx !== -1) {
+      let endIdx = lines.length;
+      for (let i = lastCheckboxIdx + 1; i < lines.length; i++) {
+        if (/^##\s/.test(lines[i].trim())) { endIdx = i; break; }
+      }
+      const found = [];
+      for (const line of lines.slice(lastCheckboxIdx + 1, endIdx)) {
+        const m = line.trim().match(/^[-*]\s+(?!▢)(.+)$/);
+        if (!m) continue;
+        const candidate = m[1].trim();
+        if (!/[.!?]["'\)\]]*$/.test(candidate)) continue;
+        const cleaned = clean(candidate);
+        if (cleaned) found.push(cleaned);
+      }
+      steps = found;
     }
   }
 
@@ -2061,9 +2115,18 @@ async function main() {
       // verbatim -- otherwise an occasional stray header mixed into an
       // otherwise-real list would ship straight into directions unfiltered.
       if (looksLikeRealInstructionLines(meta.ldInstructionsRaw)) {
+        // Some sites' JSON-LD recipeInstructions embed raw HTML inside the
+        // string itself (e.g. "<p dir=\"ltr\">Wrap the garlic in foil...</p>")
+        // rather than plain text -- confirmed on greatbritishchefs.com's
+        // Celeriac and Potato Dauphinoise. Previously this recipe fell
+        // through to whole-page extraction anyway (no terminal punctuation
+        // tripped the old strict gate), so the raw tags never shipped; now
+        // that real-but-unpunctuated lines are accepted above, they need
+        // stripping here or literal markup would ship straight into
+        // directions text.
         extracted.directions = meta.ldInstructionsRaw
           .filter(isRealInstructionLine)
-          .map(d => d.trim())
+          .map(d => d.replace(/<[^>]+>/g, '').replace(/&amp;/g, '&').trim())
           .filter(Boolean);
       } else if (meta.ldInstructionsRaw && meta.ldInstructionsRaw.length > 0) {
         console.log(`  (ldInstructionsRaw present but doesn't look like real steps -- keeping whole-page directions)`);
