@@ -1,0 +1,278 @@
+{
+  "chefsteps.com": {
+    "region": null,
+    "course": "Modernist"
+  },
+  "khymos.org": {
+    "region": null,
+    "course": "Modernist"
+  },
+  "blog.khymos.org": {
+    "region": null,
+    "course": "Modernist"
+  },
+  "blog.modernistpantry.com": {
+    "region": null,
+    "course": "Modernist"
+  },
+  "insaneinthebrine.com": {
+    "region": null,
+    "course": "Pickles"
+  },
+  "amazingribs.com": {
+    "region": "US",
+    "course": "Smoking"
+  },
+  "barbecuebible.com": {
+    "region": "US",
+    "course": "Smoking"
+  },
+  "baking-sense.com": {
+    "region": null,
+    "course": "Desserts"
+  },
+  "pastryartsmag.com": {
+    "region": null,
+    "course": "Desserts"
+  },
+  "joepastry.com": {
+    "region": null,
+    "course": "Desserts"
+  },
+  "davidlebovitz.com": {
+    "region": "FR",
+    "course": "Desserts"
+  },
+  "theboywhobakes.co.uk": {
+    "region": "GB",
+    "course": "Desserts"
+  },
+  "theperfectloaf.com": {
+    "region": null,
+    "course": "Breads"
+  },
+  "thebreadshebakes.com": {
+    "region": null,
+    "course": "Breads"
+  },
+  "modernistbread.com": {
+    "region": null,
+    "course": "Breads"
+  },
+  "the-bread-code.io": {
+    "region": null,
+    "course": "Breads"
+  },
+  "bakefromscratch.com": {
+    "region": null,
+    "course": "Sandwich"
+  },
+  "stadlermade.com": {
+    "region": null,
+    "course": "Pizza"
+  },
+  "bakingsteel.com": {
+    "region": null,
+    "course": "Pizza"
+  },
+  "punchdrink.com": {
+    "region": null,
+    "course": "Drinks"
+  },
+  "imbibemagazine.com": {
+    "region": null,
+    "course": "Drinks"
+  },
+  "diffordsguide.com": {
+    "region": null,
+    "course": "Drinks"
+  },
+  "alcademics.com": {
+    "region": null,
+    "course": "Drinks"
+  },
+  "seedlipdrinks.com": {
+    "region": null,
+    "course": "Drinks"
+  },
+  "lyres.com": {
+    "region": null,
+    "course": "Drinks"
+  },
+  "thefirstmess.com": {
+    "region": null,
+    "course": "Veg'n"
+  },
+  "woonheng.com": {
+    "region": null,
+    "course": "Veg'n"
+  },
+  "itdoesnttastelikechicken.com": {
+    "region": null,
+    "course": "Veg'n"
+  },
+  "avantgardevegan.com": {
+    "region": null,
+    "course": "Veg'n"
+  },
+  "ladyandpups.com": {
+    "region": null,
+    "course": "Brunch"
+  },
+  "thestaffcanteen.com": {
+    "region": null,
+    "course": "Apps"
+  },
+  "starchefs.com": {
+    "region": null,
+    "course": "Mains"
+  },
+  "ottolenghi.co.uk": {
+    "region": null,
+    "course": "Sides"
+  },
+  "dailycookingquest.com": {
+    "region": null,
+    "course": "Sides"
+  },
+  "mimithorisson.com": {
+    "region": null,
+    "course": "Sides"
+  },
+  "greatbritishchefs.com": {
+    "region": "GB",
+    "course": null
+  },
+  "academiedugout.fr": {
+    "region": "FR",
+    "course": "Apps"
+  },
+  "frenchcookingacademy.com": {
+    "region": "FR",
+    "course": null
+  },
+  "meilleurduchef.com": {
+    "region": "FR",
+    "course": null
+  },
+  "chefsimon.com": {
+    "region": "FR",
+    "course": null
+  },
+  "greatitalianchefs.com": {
+    "region": "IT",
+    "course": null
+  },
+  "lacucinaitaliana.com": {
+    "region": "IT",
+    "course": null
+  },
+  "spanishsabores.com": {
+    "region": "ES",
+    "course": "Mains"
+  },
+  "directoalpaladar.com": {
+    "region": "ES",
+    "course": null
+  },
+  "rollingpin.at": {
+    "region": "AT",
+    "course": null
+  },
+  "nomaprojects.com": {
+    "region": "DK",
+    "course": null
+  },
+  "laroussecocina.mx": {
+    "region": "MX",
+    "course": null
+  },
+  "muybuenoblog.com": {
+    "region": "MX",
+    "course": null
+  },
+  "animalgourmet.com": {
+    "region": "MX",
+    "course": null
+  },
+  "chinasichuanfood.com": {
+    "region": "CN",
+    "course": "Mains"
+  },
+  "thewoksoflife.com": {
+    "region": "CN",
+    "course": null
+  },
+  "madewithlau.com": {
+    "region": "CN",
+    "course": null
+  },
+  "omnivorescookbook.com": {
+    "region": "CN",
+    "course": null
+  },
+  "justonecookbook.com": {
+    "region": "JP",
+    "course": null
+  },
+  "chopstickchronicles.com": {
+    "region": "JP",
+    "course": null
+  },
+  "japan.recipetineats.com": {
+    "region": "JP",
+    "course": null
+  },
+  "okonomikitchen.com": {
+    "region": "JP",
+    "course": null
+  },
+  "mykoreankitchen.com": {
+    "region": "KR",
+    "course": null
+  },
+  "koreanbapsang.com": {
+    "region": "KR",
+    "course": null
+  },
+  "hot-thai-kitchen.com": {
+    "region": "TH",
+    "course": null
+  },
+  "vickypham.com": {
+    "region": "VN",
+    "course": null
+  },
+  "nyonyacooking.com": {
+    "region": "MY",
+    "course": null
+  },
+  "maunikagowardhan.co.uk": {
+    "region": "IN",
+    "course": null
+  },
+  "ranveerbrar.com": {
+    "region": "IN",
+    "course": "Sides"
+  },
+  "bongeats.com": {
+    "region": "IN",
+    "course": null
+  },
+  "cookwithmanali.com": {
+    "region": "IN",
+    "course": null
+  },
+  "indianhealthyrecipes.com": {
+    "region": "IN",
+    "course": null
+  },
+  "modernistcuisine.com": {
+    "region": null,
+    "course": "Sauce"
+  },
+  "annaolson.ca": {
+    "region": "CA",
+    "course": "Desserts"
+  }
+}
