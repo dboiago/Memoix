@@ -1,0 +1,35 @@
+{
+  "url": "https://lyres.com/en-me/products/lyres-london-dry-collins",
+  "slug": "tom-collins-mocktail-recipe-non-alcoholic-tom-coll_lyres_92a0569c",
+  "title": "Tom Collins Mocktail Recipe | Non-Alcoholic Tom Collins",
+  "byline": "",
+  "fetchedAt": "2026-08-03T02:13:12.435Z",
+  "ldName": "Lyre's London Dry Collins",
+  "ldTime": "PT3M",
+  "ldPrepTime": "PT2M",
+  "ldCookTime": "PT1M",
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": null,
+  "ldKeywords": "London Dry Collins mocktail, non-alcoholic Tom Collins, alcohol-free gin Collins, citrus highball mocktail, botanical Collins alternative",
+  "ldIngredientsRaw": [
+    "60mL Lyre's Dry London Spirit",
+    "15mL white sugar syrup (1:1)",
+    "30mL lemon juice",
+    "60mL premium bottled soda water"
+  ],
+  "ldInstructionsRaw": null,
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": ""
+  },
+  "htmlIngredientLines": [
+    "60mLLyre's Dry London Spirit",
+    "15mL white sugar syrup (1:1)",
+    "30mL lemon juice",
+    "60mL premium bottled soda water"
+  ],
+  "htmlIngredientConfig": "generic-text-heading",
+  "siteRegionHint": null,
+  "siteCourseHint": "Drinks"
+}

@@ -1,0 +1,62 @@
+{
+  "url": "https://itdoesnttastelikechicken.com/easy-homemade-lentil-tofu/",
+  "slug": "easy-homemade-lentil-tofu_itdoesnttastelikechicken_f5694a6b",
+  "title": "Easy Homemade Lentil Tofu!",
+  "byline": "Sam Turnbull @ It Doesn't Taste Like Chicken",
+  "fetchedAt": "2026-08-02T06:49:59.806Z",
+  "ldName": "Easy Homemade Lentil Tofu",
+  "ldTime": "PT50M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "1",
+    "1 large block of lentil tofu about 600g/21.2oz"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Appetizer, Main Course, Side Dish, Snack",
+  "ldKeywords": "10 ingredients or less, lentil, no soy, soy free, tofu, vegan",
+  "ldIngredientsRaw": [
+    "3 cups boiling water (*see notes)",
+    "1 cup red split lentils",
+    "1/2 teaspoon salt ((optional))",
+    "2 tablespoons cornstarch",
+    "2 tablespoons nutritional yeast",
+    "2 tablespoons soy sauce",
+    "1 tablespoon olive oil",
+    "1/2 teaspoon garlic powder",
+    "1/4 teaspoon cayenne ((optional for spice))"
+  ],
+  "ldInstructionsRaw": [
+    "To make the Lentil Tofu:",
+    "For My Favorite Way to Cook Red Lentil Tofu (optional):"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 entire block of lentil tofu (the full recipe without salt or added seasonings)",
+    "calories": "635 kcal",
+    "carbohydrateContent": "108 g",
+    "proteinContent": "46 g",
+    "fatContent": "2 g",
+    "saturatedFatContent": "1 g",
+    "sodiumContent": "46 mg",
+    "fiberContent": "28 g",
+    "sugarContent": "4 g",
+    "unsaturatedFatContent": "2 g"
+  },
+  "htmlIngredientLines": [
+    "[Lentil Tofu]",
+    "▢ 3 cups boiling water, *see notes",
+    "▢ 1 cup red split lentils",
+    "▢ ½ teaspoon salt, (optional)",
+    "[My Favorite Way to Cook Red Lentil Tofu (optional)]",
+    "▢ 2 tablespoons cornstarch",
+    "▢ 2 tablespoons nutritional yeast",
+    "▢ 2 tablespoons soy sauce",
+    "▢ 1 tablespoon olive oil",
+    "▢ ½ teaspoon garlic powder",
+    "▢ ¼ teaspoon cayenne, (optional for spice)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Veg'n"
+}

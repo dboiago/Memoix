@@ -1,0 +1,61 @@
+{
+  "url": "https://itdoesnttastelikechicken.com/vegan-butternut-squash-mac-and-cheese/",
+  "slug": "vegan-butternut-squash-mac-and-cheese_itdoesnttastelikechicken_ccd460cf",
+  "title": "Vegan Butternut Squash Mac and Cheese!",
+  "byline": "Sam Turnbull @ It Doesn't Taste Like Chicken",
+  "fetchedAt": "2026-08-02T04:09:05.931Z",
+  "ldName": "Vegan Butternut Squash Mac &amp; Cheese",
+  "ldTime": "PT30M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT20M",
+  "ldYield": [
+    "6",
+    "6 (makes about 6 cups)"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Main Course, Pasta",
+  "ldKeywords": "butternut squash, dairy free, mac &amp; cheese, mac and cheese, macaroni, squash, vegan",
+  "ldIngredientsRaw": [
+    "3 cups macaroni noodles ((gluten-free if preferred))",
+    "1 tablespoon vegan butter ((or other light oil))",
+    "1  yellow onion, (chopped)",
+    "3 cloves garlic, (minced)",
+    "1/2  medium butternut squash (580g peeled, deseeded, and chopped into 2 inch cubes (4 cups cubed))",
+    "1  1/2 cups vegetable broth",
+    "2 tablespoons nutritional yeast",
+    "1 tablespoon white miso paste",
+    "1 teaspoon salt"
+  ],
+  "ldInstructionsRaw": [
+    "Bring a large pot of water to a boil and cook the macaroni according to the package directions.",
+    "In a large saucepan, melt the vegan butter over medium-high heat. Add the onion and garlic and sauté for about 5 minutes until the onion turns translucent and begins to brown. Add the butternut squash and vegetable broth. Cover and cook 10 - 15 minutes until the butternut squash is very tender when pierced with a fork.",
+    "Add the cooked butternut squash mixture to a blender along with the nutritional yeast, miso paste, and salt. Blend until completely smooth and creamy, stopping to scrape the sides as needed. Be careful not to fill the blender too high so it doesn’t erupt. Alternatively you could use an immersion blender straight in the pan. If your sauce is too thick, you can add another 1/4 cup of vegetable broth or water.",
+    "Return the sauce the pan, and add the cooked macaroni to the sauce and toss well to coat. Serve hot."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving (recipe makes 6 servings)",
+    "calories": "279 kcal",
+    "carbohydrateContent": "55 g",
+    "proteinContent": "10 g",
+    "fatContent": "3 g",
+    "saturatedFatContent": "1 g",
+    "sodiumContent": "751 mg",
+    "fiberContent": "5 g",
+    "sugarContent": "5 g"
+  },
+  "htmlIngredientLines": [
+    "▢ 3 cups macaroni noodles, (gluten-free if preferred)",
+    "▢ 1 tablespoon vegan butter, (or other light oil)",
+    "▢ 1 yellow onion,, chopped",
+    "▢ 3 cloves garlic,, minced",
+    "▢ ½ medium butternut squash, 580g peeled, deseeded, and chopped into 2 inch cubes (4 cups cubed)",
+    "▢ 1  ½ cups vegetable broth",
+    "▢ 2 tablespoons nutritional yeast",
+    "▢ 1 tablespoon white miso paste",
+    "▢ 1 teaspoon salt"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Veg'n"
+}

@@ -1,0 +1,36 @@
+![White Sandwich Bread](https://bakefromscratch.com/wp-content/uploads/2026/07/Sliced-Option-2007KG-696x1044.jpeg "Sliced Option 2007KG")
+
+Built for the perfect sandwich, classic White Sandwich Bread is a master class in balance: soft yet structured, tender but sturdy, engineered to cradle fillings without competing with them.
+
+Makes 1 (9x5-inch) loaf
+
+-   ½ cup (120 grams) warm water (105°F/41°C to 110°F/43°C)
+-   ½ cup (120 grams) warm whole milk (105°F/41°C to 110°F/43°C)
+-   4 tablespoons (48 grams) granulated sugar, divided
+-   2¼ teaspoons (7 grams) active dry yeast
+-   3½ cups (438 grams) all-purpose fl our
+-   2 large eggs (100 grams), room temperature and divided
+-   3 tablespoons (42 grams) neutral oil or melted unsalted butter
+-   2½ teaspoons (8 grams) kosher salt
+-   1 tablespoon (15 grams) water
+
+-   In a small bowl, whisk together ½ cup (120 grams) warm water, warm milk, 1 tablespoon (12 grams) sugar, and yeast. Let stand until foamy, about 5 minutes.
+    
+-   In the bowl of a stand mixer fitted with the paddle attachment, combine fl our, 1 egg (50 grams), oil or melted butter, salt, and remaining 3 tablespoons (36 grams) sugar. Add yeast mixture, and beat at low speed until combined and a shaggy dough forms.
+    
+-   Switch to the dough hook attachment. Beat at medium-low speed until dough is soft and slightly sticky and pulls away from sides of bowl, 8 to 10 minutes.
+    
+-   Oil a large bowl. Place dough in bowl, turning to grease top. Cover and let rise in a warm, draft-free place (75°F/24°C) until doubled in size, 45 minutes to 1 hour.
+    
+-   Punch down dough, and turn out onto a lightly floured surface. Cover and let stand for 15 minutes. Pat dough into a 9x7-inch rectangle, with one short side closest to you. Fold bottom third of dough up; starting at short side where dough is folded, roll up dough into a log. Pull log, seam side down, toward you to create tension on surface.
+    
+-   Lightly spray a 9x5-inch loaf pan with baking spray with flour. Place dough, seam side down, in prepared pan, tucking ends slightly. Cover and let rise in a warm, draft-free place (75°F/24°C) until doubled in size and risen just above sides of pan, 1 to 1½ hours.
+    
+-   Preheat oven to 375°F (190°C).
+    
+-   In another small bowl, whisk together 1 tablespoon (15 grams) water and remaining 1 egg (50 grams). Using a pastry brush, brush egg wash onto dough.
+    
+-   Bake until golden brown and an instant-read thermometer inserted in center registers at least 190°F (88°C), about 30 minutes, covering with foil during final 10 minutes of baking to prevent excess browning. Let cool in pan for 15 minutes. Remove from pan, and let cool completely on a wire rack. Store in an airtight container for up to 5 days. Tightly wrap in plastic wrap, and freeze for up to 3 months.
+    
+
+[Let us know](#comment) how it was!

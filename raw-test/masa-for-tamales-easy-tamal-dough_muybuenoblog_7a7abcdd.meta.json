@@ -1,0 +1,58 @@
+{
+  "url": "https://muybuenoblog.com/tamal-dough-masa-para-tamales/",
+  "slug": "masa-for-tamales-easy-tamal-dough_muybuenoblog_7a7abcdd",
+  "title": "Masa For Tamales (Easy Tamal Dough)",
+  "byline": "Yvette Marquez-Sharpnack | Muy Bueno",
+  "fetchedAt": "2026-08-02T11:02:11.247Z",
+  "ldName": "Tamale Masa Recipe",
+  "ldTime": "PT220M",
+  "ldPrepTime": "PT40M",
+  "ldCookTime": "PT180M",
+  "ldYield": [
+    "72",
+    "72 tamales"
+  ],
+  "ldCuisine": "Mexican",
+  "ldCategory": "Appetizer",
+  "ldKeywords": "authentic tamales recipe, homemade Mexican tamales, tamales dough",
+  "ldIngredientsRaw": [
+    "2 pounds lard (If you are using rendered lard you will need to use less broth)",
+    "2 teaspoons baking powder (divided)",
+    "2 tablespoons salt (divided)",
+    "5 pounds fresh ground masa (unprepared for tamales, divided)",
+    "2 to 3 cups broth from cooked pork roast or chicken broth (divided)",
+    "½ cup red chile sauce",
+    "corn husks"
+  ],
+  "ldInstructionsRaw": [
+    "Make tamal masa:",
+    "Prepare Hojas (Corn Husks):",
+    "Spread Masa:",
+    "Fill Corn Husks:",
+    "Steam Tamales:"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 tamal without filling",
+    "calories": "121.34 kcal",
+    "sugarContent": "0.4 g",
+    "sodiumContent": "304.44 mg",
+    "fatContent": "1.29 g",
+    "saturatedFatContent": "0.17 g",
+    "carbohydrateContent": "25.23 g",
+    "fiberContent": "2.59 g",
+    "proteinContent": "3.3 g"
+  },
+  "htmlIngredientLines": [
+    "▢ 2 pounds lard, If you are using rendered lard you will need to use less broth",
+    "▢ 2 teaspoons baking powder, divided",
+    "▢ 2 tablespoons salt, divided",
+    "▢ 5 pounds fresh ground masa, unprepared for tamales, divided",
+    "▢ 2 to 3 cups broth from cooked pork roast or chicken broth, divided",
+    "▢ ½ cup red chile sauce, only add if making red chile pork tamales",
+    "▢ corn husks"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "MX",
+  "siteCourseHint": null
+}

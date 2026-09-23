@@ -1,0 +1,5 @@
+Inclusions, such as dried fruit, nuts, pressure-cooked grains, purees, herbs, and more, can be added to a recipe to enhance a bread’s flavor and appearance. The inclusion combinations you can add to a dough are virtually limitless and a source of endless creative possibilities. Our Chocolate and Cherry Sourdough is a perfect example of how additions like these can transform a recipe.
+
+By adding cherries, we have taken the beloved combination of bread and chocolate in a new direction. A variation of our Sourdough Master Recipe, this dough is only moderately sweet; the natural sourness of the dough tempers the sweet character of the inclusions. Given how many taste testers were waiting when these loaves came out of the oven, it’s a captivating combination (and a team favorite). As a bonus, the bake-proof chocolate chips remain melted for a good while (while still holding their shape), adding to the indulgence of each bite. It’s a crowd-pleaser every time we make it.
+
+Click [here](https://modernistcuisine.com/recipes/chocolate-and-cherry-sourdough/) for the full recipe, which is now available in our recipe archive.

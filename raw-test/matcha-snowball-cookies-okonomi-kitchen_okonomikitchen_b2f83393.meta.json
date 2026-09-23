@@ -1,0 +1,56 @@
+{
+  "url": "https://www.okonomikitchen.com/matcha-snowball-cookies/",
+  "slug": "matcha-snowball-cookies-okonomi-kitchen_okonomikitchen_b2f83393",
+  "title": "Matcha Snowball Cookies - Okonomi Kitchen",
+  "byline": "Lisa Kitahara",
+  "fetchedAt": "2026-08-02T10:24:18.422Z",
+  "ldName": "Matcha Snowball Cookies",
+  "ldTime": "PT52M",
+  "ldPrepTime": "PT40M",
+  "ldCookTime": "PT12M",
+  "ldYield": [
+    "12",
+    "12 cookies"
+  ],
+  "ldCuisine": "European",
+  "ldCategory": null,
+  "ldKeywords": "snowball cookies, matcha cookies, easy cookies, christmas cookies",
+  "ldIngredientsRaw": [
+    "3 tbsp + 1 tsp (50 g) butter",
+    "3 tbsp (20 g) powder sugar",
+    "1/2 tsp (2.5 ml) vanilla extract",
+    "pinch of salt if using unsalted",
+    "1 tbsp (8 g) milk powder, optional",
+    "3 tbsp + 1 tsp (25 g) almond flour",
+    "1 tsp (5 g) matcha powder",
+    "1/2 cup (60 g) cake flour"
+  ],
+  "ldInstructionsRaw": [
+    "Add the butter to the bowl of a stand mixer fitted with the paddle attachment (or use a medium bowl with a hand mixer). Beat on medium speed (KitchenAid setting 4) for about 1 minute, until smooth and creamy.",
+    "Add the powdered sugar and continue mixing on medium speed until well combined. Scrape down the sides of the bowl as needed.",
+    "Add the vanilla extract and a pinch of salt. Beat until smooth. Add the milk powder, almond flour, cake flour and matcha powder. Mix on low speed for a few seconds, then increase to medium speed and mix until the dough is no longer powdery and everything is evenly combined.The dough should come together when pinched.",
+    "Gather the dough into a ball, wrap tightly in plastic wrap, and chill in the fridge for at least 30 minutes.\n\nThe dough can be refrigerated for up to 5 days or frozen for up to 3 weeks.",
+    "Remove the dough from the fridge. Cut into 12 equal pieces (about 14 g each). Roll each piece into a smooth ball and place on a parchment-lined baking tray.",
+    "Preheat oven to 180°C / 350°F (170°C/338°F convection). Bake for 15 minutes, or until the bottoms are just lightly browned.",
+    "Remove from the oven and let cool on the tray for about 10 minutes. Place powdered sugar and the warm cookies into a bag or bowl and gently shake to coat evenly. Let cool completely, then serve and enjoy!!"
+  ],
+  "ldNutritionRaw": {
+    "servingSize": "1 cookie",
+    "calories": "45 calories",
+    "sugarContent": "3 g",
+    "sodiumContent": "6 mg",
+    "fatContent": "2.9 g",
+    "saturatedFatContent": "1.6 g",
+    "unsaturatedFatContent": "1.2 g",
+    "transFatContent": "0",
+    "carbohydrateContent": "4.4 g",
+    "fiberContent": "0.4 g",
+    "proteinContent": "0.7 g",
+    "cholesterolContent": "6 mg",
+    "@type": "nutritionInformation"
+  },
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "JP",
+  "siteCourseHint": null
+}

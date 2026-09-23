@@ -1,0 +1,37 @@
+{
+  "url": "https://www.bongeats.com/recipe/doodh-potol",
+  "slug": "doodh-potol-recipe-by-bong-eats_bongeats_26cf6bf5",
+  "title": "Doodh Potol recipe by Bong Eats",
+  "byline": "",
+  "fetchedAt": "2026-08-01T19:20:45.269Z",
+  "ldName": "Doodh Potol",
+  "ldTime": "PT30M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT15M",
+  "ldYield": "5 servings",
+  "ldCuisine": "Indian",
+  "ldCategory": "side",
+  "ldKeywords": "parwal recipe, bengali veg recipe",
+  "ldIngredientsRaw": null,
+  "ldInstructionsRaw": null,
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "88"
+  },
+  "htmlIngredientLines": [
+    "500 g small, kochi potol (pointed gourd)",
+    "20 g vegetable oil",
+    "2 pcs cardamom",
+    "2 pcs cloves",
+    "1 pc cinnamon",
+    "½ tsp cumin powder",
+    "¼ tsp turmeric",
+    "200 g hot milk",
+    "6 g salt",
+    "8 g sugar",
+    "5 g ghee"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IN",
+  "siteCourseHint": null
+}
