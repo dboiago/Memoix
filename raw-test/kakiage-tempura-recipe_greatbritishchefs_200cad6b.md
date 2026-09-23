@@ -1,3 +1,0 @@
-Everyone loves [Japanese](https://www.greatbritishchefs.com/collections/japanese-recipes) tempura – it's a guaranteed crowd-pleaser, easy to make in a pinch and great as a snack, side dish or a main course. Shuko Oda's recipe is super versatile – she uses a mixture of [carrot](https://www.greatbritishchefs.com/ingredients/carrot-recipes), enoki [mushrooms](https://www.greatbritishchefs.com/ingredients/mushroom-recipes) and shungiku greens, but you can use any seasonal veg you like, as long as they aren't too watery.
-
-Shuko serves her tempura with salt blitzed with Hōjicha, a roasted green tea, which gives the dish a deeply savoury and complex finish.
