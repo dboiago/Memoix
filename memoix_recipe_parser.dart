@@ -2481,6 +2481,45 @@ const _ingredientUnitAlternation =
       remaining = bracketedMetricMatch.group(2)!.trim();
     }
 
+    // A "+" continuation of the primary amount (e.g. "3 tbsp + 1 tsp
+    // (50 g) butter" -> amount already "3 tbsp", remaining "+ 1 tsp (50 g)
+    // butter"). Confirmed recurring across several unrelated sites
+    // (okonomikitchen.com, cookwithmanali.com, ladyandpups.com,
+    // dailycookingquest.com) as a way of writing a quantity that doesn't
+    // reduce to one clean unit. Folded into the amount string as-is rather
+    // than summed -- this parser already treats a combined "amount unit"
+    // string as free text for the app's own save-path splitting, and "3
+    // tbsp + 1 tsp" is unambiguous read back as-is, unlike trying to
+    // compute a single normalized number here.
+    if (amount != null) {
+      final plusContinuationMatch = RegExp(
+        r'^\+\s*([\d½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚./]+)\s*(?:(' + _ingredientUnitAlternation + r')\.?)?\s*',
+        caseSensitive: false,
+      ).firstMatch(remaining);
+      if (plusContinuationMatch != null) {
+        final extraAmount = plusContinuationMatch.group(1)!.trim();
+        final extraUnit = plusContinuationMatch.group(2)?.trim() ?? '';
+        amount = extraUnit.isNotEmpty
+            ? '$amount + $extraAmount ${_normalizeUnit(extraUnit)}'
+            : '$amount + $extraAmount';
+        remaining = remaining.substring(plusContinuationMatch.end).trim();
+      }
+    }
+
+    // A parenthetical immediately after the amount, before the name (e.g.
+    // "3 tbsp (20 g) powder sugar") -- a metric equivalent inserted before
+    // the name rather than after it. Confirmed site-wide on
+    // okonomikitchen.com, where nearly every ingredient line uses this
+    // exact shape. Same `amount != null` gating as the trailing-paren
+    // check below, for the same reason.
+    if (amount != null) {
+      final leadingParenMatch = RegExp(r'^\(([^()]+)\)\s*(\S.*)$').firstMatch(remaining);
+      if (leadingParenMatch != null) {
+        notesParts.add(leadingParenMatch.group(1)!.trim());
+        remaining = leadingParenMatch.group(2)!.trim();
+      }
+    }
+
     // A trailing parenthetical aside on a line that ALREADY has a real
     // leading amount (e.g. "1 shallot (about 100g)") is supplementary
     // info, not the ingredient's identity -- move it to notes instead of

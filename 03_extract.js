@@ -983,6 +983,23 @@ function stripIngredientLineNoise(text) {
 const DIETARY_ADAPTATION_PATTERN =
   /\b(vegan|vegetarian|gluten-?free|dairy-?free|plant-?based|meatless|keto|paleo|low-?carb)\b/i;
 
+// Confirmed on seedlipdrinks.com's Garden Mojito: htmlIngredientLines came
+// back as the same 5-line ingredient list twice in a row, back to back --
+// the site config's selector matched two separate copies of the recipe
+// card present in the page's own DOM (a regular view and a print/duplicate
+// view). Deliberately narrow: only collapses an EVEN-length list whose
+// second half is an EXACT copy of the first, so a real recipe that just
+// happens to repeat one ingredient isn't affected -- that requires the
+// entire list to repeat, not a single coincidental match.
+function dedupeIfFullyRepeated(lines) {
+  if (!Array.isArray(lines) || lines.length === 0 || lines.length % 2 !== 0) return lines;
+  const half = lines.length / 2;
+  const firstHalf = lines.slice(0, half);
+  const secondHalf = lines.slice(half);
+  const isFullRepeat = firstHalf.every((line, i) => line === secondHalf[i]);
+  return isFullRepeat ? firstHalf : lines;
+}
+
 // Parses the "[Section Name]" bracket convention from site_configs.js output
 // (matches url_importer.dart's own line convention) into section-tagged lines.
 function expandSectionedLines(lines) {
@@ -1680,6 +1697,8 @@ async function main() {
 
     const markdown = readFileSync(`${RAW_DIR}/${mdFile}`, 'utf8');
     const meta     = JSON.parse(readFileSync(metaPath, 'utf8'));
+    meta.htmlIngredientLines = dedupeIfFullyRepeated(meta.htmlIngredientLines);
+    meta.ldIngredientsRaw    = dedupeIfFullyRepeated(meta.ldIngredientsRaw);
 
     console.log(`Extracting [${processed + 1}]: ${meta.url}`);
 
