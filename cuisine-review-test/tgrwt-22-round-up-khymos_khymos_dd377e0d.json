@@ -97,14 +97,14 @@
       {
         "name": "Mustard Seeds",
         "unit": null,
-        "notes": "for garnish",
+        "notes": null,
         "amount": "0",
         "section": null,
         "isOptional": false
       }
     ],
     "isFavourite": false,
-    "content_hash": "a413482c9569c26fb7505b437a9a1475435ffa3ce35bee2fbfecf48ea42dce97",
+    "content_hash": "9dd114e00d54f45c9a8fb5c962596b5cee8cc038c5d23ebbef2ab0caf79baa70",
     "lineage_hash": "68448681c2456b7ffd149e86b847c7cd35954272badf13a2df5841dadae9f462"
   },
   "metadata": {

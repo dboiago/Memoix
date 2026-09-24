@@ -24,7 +24,8 @@
       "For the cake, sift the flour and baking powder into a medium bowl.",
       "Combine the buttermilk and vanilla.",
       "Next, in a stand mixer fitted with the whip, combine the sugar and butter.",
-      "Whip until fluffy. Add the eggs one at a time, then alternate the flour and the buttermilk mixture, adding 1/3 of the flour mixture first, then half the buttermilk and so on until everything is used up.",
+      "Whip until fluffy.",
+      "Add the eggs one at a time, then alternate the flour and the buttermilk mixture, adding 1/3 of the flour mixture first, then half the buttermilk and so on until everything is used up.",
       "Scrape the bowl several times during the process.",
       "Sharpe the finished batter into the pan on top of the caramel and bananas.",
       "Bake about 50 minutes until the cake is golden, bounces a bit when tapped with a finger, and begins to pull away from the pan.",
@@ -123,7 +124,7 @@
       }
     ],
     "isFavourite": false,
-    "content_hash": "f511180c8779abb91cf469133a938cd46024ea84f28b846104356955d5a1210e",
+    "content_hash": "a5bd586a9516f38c0b4e0a70d8ce19f127c0ccbc0df616644bf42648211ad74a",
     "lineage_hash": "547627dbbff7ea25650cd69f4183f4f3e6a34f685640fd215185dc08bd5b4151"
   },
   "metadata": {

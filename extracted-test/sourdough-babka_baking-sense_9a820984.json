@@ -18,7 +18,25 @@
       "fatContent": "15",
       "proteinContent": "4"
     },
-    "directions": [],
+    "directions": [
+      "Combine the starter, milk and a portion of the flour. After 30 minutes add the eggs, sugar, salt and more flour to form a thick batter.",
+      "Mix until combined and switch to the dough hook.",
+      "Add the remaining flour to form a shaggy dough.",
+      "Knead until the dough clears the sides of the bowl.",
+      "Add the butter gradually with the mixer running.",
+      "The dough will break apart; scrape the bowl if butter sticks to the sides.",
+      "Continue kneading until the dough comes back together and clears the sides of the bowl again.",
+      "The dough will be soft but strong and elastic.",
+      "Set the dough aside at room temperature for 3-5 hours of bulk fermentation. Every hour fold and flip the dough.",
+      "Refrigerate the dough overnight.",
+      "Make the filling and set aside to cool.",
+      "The next day, divide the chilled dough in half.",
+      "Roll the dough. If the dough starts springing back let it rest a few minutes and continue.",
+      "Fill, and shape the logs. Freeze briefly to make splitting easier.",
+      "Split the logs lengthwise and twist into a coil.",
+      "Place in pans, allow the final rise, and bake.",
+      "Turn out and brush with syrup. Cool before slicing."
+    ],
     "recipeType": "standard",
     "ingredients": [
       {
@@ -151,7 +169,7 @@
       }
     ],
     "isFavourite": false,
-    "content_hash": "19679a9c6474932cffd4f7e09a2535aa2576174fd67605b62ffc44327b16d7ab",
+    "content_hash": "404f1991b3f98787fa8670ddd568bc59529810f6e214af9bc1002cc0520ff809",
     "lineage_hash": "400be8cef6f9606aeb5b0ee687588405e725ad33063454962528e6325709791e"
   },
   "metadata": {

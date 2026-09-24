@@ -19,7 +19,7 @@
       "Place a rack in the middle of the oven and preheat it to 500 degrees Fahrenheit.",
       "After the pie has rested the last time, paint it with egg wash and insert it into the oven, immediately turning the temperature down to 425 degrees.",
       "Bake it for 30 minutes, rotate the pie and turn the oven down still lower to 350 to finish the bake.",
-      "Apply a pie shield to the edges or a sheet of tin foil over the top if the top crust or edges browning overly.",
+      "Apply a pie shield to the edges or a sheet of tin foil over the top if the top crust or the edges are browning overly.",
       "The pie is done when you can see a little boiling filling bubbling up through the vents."
     ],
     "recipeType": "standard",
@@ -98,7 +98,7 @@
       }
     ],
     "isFavourite": false,
-    "content_hash": "c8573b7a7d66424fdad45c78e5fe34ede8a67fb1ea5a364b777ea06a4c813e0d",
+    "content_hash": "324af733bb1ffce4bd39b27c66ae40a0d923145b0b51966abbe571348dae0c73",
     "lineage_hash": "a923533cc0bacbbf51ad13601b6831a8774af3fb8db689684b4044d6487c617c"
   },
   "metadata": {

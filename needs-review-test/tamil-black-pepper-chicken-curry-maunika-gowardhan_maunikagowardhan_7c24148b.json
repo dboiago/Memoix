@@ -40,15 +40,7 @@
         "isOptional": false
       },
       {
-        "name": "Splash Water",
-        "unit": null,
-        "notes": null,
-        "amount": "0",
-        "section": null,
-        "isOptional": false
-      },
-      {
-        "name": "Tsp Turmeric Powder",
+        "name": "Turmeric Powder",
         "unit": "tsp",
         "notes": null,
         "amount": "1",
@@ -56,7 +48,7 @@
         "isOptional": false
       },
       {
-        "name": "Drumsticks Drumstick Chicken",
+        "name": "Drumsticks Chicken",
         "unit": null,
         "notes": null,
         "amount": "4",
@@ -64,39 +56,39 @@
         "isOptional": false
       },
       {
-        "name": "Leaf Curry Leaves",
+        "name": "Handful Curry Leaves",
         "unit": null,
         "notes": null,
-        "amount": "10-12",
+        "amount": "1",
         "section": null,
         "isOptional": false
       },
       {
-        "name": "Large Onions",
-        "unit": "large",
+        "name": "Onions",
+        "unit": "medium",
         "notes": null,
         "amount": "2",
         "section": null,
         "isOptional": false
       },
       {
-        "name": "Chilli Green Chillies",
+        "name": "Whole Green Chillies",
         "unit": null,
         "notes": null,
-        "amount": "4-5",
+        "amount": "4",
         "section": null,
         "isOptional": false
       },
       {
-        "name": "Large Tomatoes",
-        "unit": "large",
+        "name": "Tomatoes",
+        "unit": "medium",
         "notes": null,
         "amount": "2",
         "section": null,
         "isOptional": false
       },
       {
-        "name": "Tbsp Pepper Masala Powder",
+        "name": "Pepper Masala Powder",
         "unit": "Tbsp",
         "notes": null,
         "amount": "1",
@@ -104,24 +96,24 @@
         "isOptional": false
       },
       {
-        "name": "ML Water",
-        "unit": "ml",
+        "name": "Mls Water",
+        "unit": null,
         "notes": null,
         "amount": "500",
         "section": null,
         "isOptional": false
       },
       {
-        "name": "To Garnish Fresh Coriander",
+        "name": "Handful Fresh Coriander",
         "unit": null,
         "notes": null,
-        "amount": "0",
+        "amount": "1",
         "section": null,
         "isOptional": false
       }
     ],
     "isFavourite": false,
-    "content_hash": "5e3f10a04b5529a26206def05ed1065e40effa7fcc71f7fb59c12c2786b6d5f0",
+    "content_hash": "37357e63b203cfbba21398154e5c9c9144301a0d3c761e77bf2339305abab551",
     "lineage_hash": "8d5ed5749e1c39f55c9a31593d8f6ef05e5a9975e57e5a1cb46e367a158cdde8"
   },
   "metadata": {

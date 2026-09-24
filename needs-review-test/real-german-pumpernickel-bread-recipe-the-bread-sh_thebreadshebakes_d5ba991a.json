@@ -13,7 +13,12 @@
     "comments": null,
     "cookCount": 0,
     "nutrition": null,
-    "directions": [],
+    "directions": [
+      "All you need is a rye sourdough starter, rye grains, cracked rye, salt, water and syrup.",
+      "No colouring agent such as caramel colour is added.",
+      "The characteristic dark colour is achieved through a very long baking period (about 14 hours in a low temperature of around 120°C) and caramelising fruit sugars.",
+      "In this process it’s important that the steam doesn’t escape – otherwise the bread will completely dehydrate during the long bake. The moisture can be retained by wrapping your baking tin with a few layers of tin foil. However, I invested in a large Pullman pan, a loaf tin with a lid that slides on top to keep the loaf entirely contained. I still wrap a layer of tin foil around to be doubly sure."
+    ],
     "recipeType": "standard",
     "ingredients": [
       {
@@ -82,7 +87,7 @@
       }
     ],
     "isFavourite": false,
-    "content_hash": "e336e26356a20e6462a48bfb8a2e79eeec92383eb53f144a60b88477932c7686",
+    "content_hash": "1c3bbbdedf3056a848828879809a8688d3b38afd5b49192dff5c5f4f0d32bd97",
     "lineage_hash": "7db3361896cee33c0974c5379496401d8e7e28e8c915dea55e80238d2239ab33"
   },
   "metadata": {

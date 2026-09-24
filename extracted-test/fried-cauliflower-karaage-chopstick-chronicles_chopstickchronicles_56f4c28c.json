@@ -1,6 +1,6 @@
 {
   "recipe": {
-    "name": "Fried Cauliflower Karaage",
+    "name": "Fried Cauliflower Karaage (唐揚げカリフラワー)",
     "time": "25 min",
     "course": "sides",
     "rating": 0,
@@ -97,8 +97,8 @@
       }
     ],
     "isFavourite": false,
-    "content_hash": "75c404b0ccbed876908330f32c9cd1c252a1c65be5f3eb67ac17d5cb3a695012",
-    "lineage_hash": "1e416421f508cfb4b49024ac39cc4cbd6d290b65e85d4a2e546710b7e75c7be3"
+    "content_hash": "71496f9906f5839bc01843b7ba668b445ade04cfb6c0d58c5b7f23c23d58e2d2",
+    "lineage_hash": "04e0fec924e97960c8270bdaaf1b129dfa9192d71541dd6e533b8db2b08e28aa"
   },
   "metadata": {
     "appVersion": "corpus-pipeline",

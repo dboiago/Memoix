@@ -18,7 +18,9 @@
       "fatContent": "21",
       "proteinContent": "19"
     },
-    "directions": [],
+    "directions": [
+      "make the dough. I will recommend measuring the ingredients to get the best results."
+    ],
     "recipeType": "standard",
     "ingredients": [
       {
@@ -111,7 +113,7 @@
       }
     ],
     "isFavourite": false,
-    "content_hash": "ceac5e45a60a6e94d896d2a6b7104ae7b96c79e8e38fe13ad4ea502b6d8b28cc",
+    "content_hash": "dc465c76e191e6b857c9ce60f9c329acda80338d997bf2b7c77b84694fe1903d",
     "lineage_hash": "6da9041a1ac1c685ac8687c02d41348aa2cf8789460851014b6c0115a31accb1"
   },
   "metadata": {

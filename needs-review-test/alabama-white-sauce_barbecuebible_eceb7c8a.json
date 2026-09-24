@@ -13,7 +13,9 @@
     "comments": null,
     "cookCount": 0,
     "nutrition": null,
-    "directions": [],
+    "directions": [
+      "Combine all the ingredients in a bowl and whisk to mix well. Transfer to a container, cover, and refrigerate until ready to use. Tightly covered, the sauce will keep for up to 5 days in the refrigerator."
+    ],
     "recipeType": "standard",
     "ingredients": [
       {
@@ -114,7 +116,7 @@
       }
     ],
     "isFavourite": false,
-    "content_hash": "782be0413ed565042ea099f48e722563017bfeafb7f4cede7eb48b8360e73907",
+    "content_hash": "fb7f29544069aed071e43905cba0340d557a946b686db3e6316aaec1d967430a",
     "lineage_hash": "08067d64b7ea3418d51c30f25f53bb61f919108d6f703443292054633d60ff00"
   },
   "metadata": {
