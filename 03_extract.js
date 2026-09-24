@@ -673,22 +673,29 @@ function extractMarkdownDirections(markdown) {
       const cleaned = clean(m[1]);
       if (cleaned) found.push(cleaned);
     }
-    if (found.length === 0) {
-      for (let i = 0; i < sectionLines.length; i++) {
-        if (!/^\d+$/.test(sectionLines[i].trim())) continue;
-        let j = i + 1;
-        while (j < sectionLines.length && !sectionLines[j].trim()) j++;
-        if (j >= sectionLines.length) continue;
-        const candidate = sectionLines[j].trim();
-        if (!candidate || /^\d+$/.test(candidate) || /^[-*]\s/.test(candidate)) continue;
-        const cleaned = clean(candidate);
-        if (cleaned) found.push(cleaned);
-      }
+    // An explicit numbered marker is strong enough on its own that a
+    // single real result doesn't need a second to be trustworthy --
+    // confirmed on barbecuebible.com's Alabama White Sauce, a genuine
+    // one-step recipe ("**1:** Combine all the ingredients...") under a
+    // real "## Recipe Steps" heading. The bare-number-sequence fallback
+    // just below has real coincidence risk (a stray "1" elsewhere on the
+    // page) and keeps its own >= 2 requirement further down instead.
+    if (found.length > 0) return { steps: found, explicit: true };
+    for (let i = 0; i < sectionLines.length; i++) {
+      if (!/^\d+$/.test(sectionLines[i].trim())) continue;
+      let j = i + 1;
+      while (j < sectionLines.length && !sectionLines[j].trim()) j++;
+      if (j >= sectionLines.length) continue;
+      const candidate = sectionLines[j].trim();
+      if (!candidate || /^\d+$/.test(candidate) || /^[-*]\s/.test(candidate)) continue;
+      const cleaned = clean(candidate);
+      if (cleaned) found.push(cleaned);
     }
-    return found;
+    return { steps: found, explicit: false };
   };
 
   let steps;
+  let explicitMarker = false;
   if (startIdx !== -1) {
     const level = lines[startIdx].trim().match(METHOD_HEADING_PATTERN)[1].length;
     const boundaryPattern = new RegExp(`^#{1,${level}}\\s`);
@@ -696,7 +703,7 @@ function extractMarkdownDirections(markdown) {
     for (let i = startIdx + 1; i < lines.length; i++) {
       if (boundaryPattern.test(lines[i].trim())) { endIdx = i; break; }
     }
-    steps = collectFromLines(lines.slice(startIdx + 1, endIdx));
+    ({ steps, explicit: explicitMarker } = collectFromLines(lines.slice(startIdx + 1, endIdx)));
   } else {
     // No heading text at all to anchor on -- confirmed on
     // greatbritishchefs.com's Celeriac and Le Gruyère AOP Agnolotti: the
@@ -722,7 +729,7 @@ function extractMarkdownDirections(markdown) {
         endIdx = i;
         break;
       }
-      steps = collectFromLines(lines.slice(seqStart, endIdx));
+      ({ steps } = collectFromLines(lines.slice(seqStart, endIdx)));
     }
   }
 
@@ -768,17 +775,59 @@ function extractMarkdownDirections(markdown) {
     }
   }
 
+  // Fourth shape, only tried when nothing else found anything: multi-
+  // component recipes that label each part with a bold "For the X:" (or
+  // "Assembly:") lead-in phrase followed by plain prose paragraphs, no
+  // numbered or bulleted list at all -- confirmed on both
+  // meilleurduchef.com's Christmas Yule Log and hot-thai-kitchen.com's Yen
+  // Ta Fo. Markdown emphasis markers are stripped before matching since the
+  // label itself is often nested bold/italic ("**For the _Yen Ta Fo_
+  // sauce:**"). Every non-empty, non-image, non-heading line between one
+  // label and the next is treated as its own direction -- confirmed lines
+  // are one full sentence-or-more per line, not a wrapped paragraph.
+  // Requires 2+ labels found before trusting this shape at all, since a
+  // single "For the X:" phrase could plausibly appear as an incidental
+  // aside rather than a real component structure.
+  if (steps.length === 0) {
+    const stripMarkup = (s) => s.replace(/[*_]/g, '').trim();
+    const labelIdxs = [];
+    for (let i = 0; i < lines.length; i++) {
+      if (/^(for\s+(?:the\s+)?[^:]+|assembly)\s*:$/i.test(stripMarkup(lines[i]))) {
+        labelIdxs.push(i);
+      }
+    }
+    if (labelIdxs.length >= 2) {
+      const found = [];
+      for (let k = 0; k < labelIdxs.length; k++) {
+        const start = labelIdxs[k] + 1;
+        let end = k + 1 < labelIdxs.length ? labelIdxs[k + 1] : lines.length;
+        for (let i = start; i < end; i++) {
+          if (/^##\s/.test(lines[i].trim())) { end = i; break; }
+        }
+        for (const line of lines.slice(start, end)) {
+          const trimmed = line.trim();
+          if (!trimmed || /^!\[/.test(trimmed) || /^#{1,6}\s/.test(trimmed)) continue;
+          if (!isRealInstructionLine(trimmed)) continue;
+          const cleaned = clean(trimmed);
+          if (cleaned) found.push(cleaned);
+        }
+      }
+      steps = found;
+    }
+  }
+
   // Deliberately NOT gated on isRealInstructionLine/looksLikeRealInstructionLines
-  // here -- those exist to tell real steps apart from bare section headers
-  // in a flat, unstructured ldInstructionsRaw array where punctuation is
-  // the only available signal. Here, "numbered list item directly under an
-  // explicit Method/Instructions heading" is already a much stronger
-  // structural signal that a header line could never satisfy, so requiring
-  // terminal sentence punctuation on top of it only rejects real content.
-  // Confirmed necessary on okonomikitchen.com's 3-Ingredient Chocolate
-  // Hazelnut Cereal: all 6 real numbered steps ("Preheat oven 160 C", etc.)
-  // are written with no trailing punctuation at all.
-  if (steps.length < 2) return null;
+  // here for the numbered/bullet shapes above -- those exist to tell real
+  // steps apart from bare section headers in a flat, unstructured
+  // ldInstructionsRaw array where punctuation is the only available
+  // signal. Here, "numbered list item directly under an explicit
+  // Method/Instructions heading" is already a much stronger structural
+  // signal that a header line could never satisfy, so requiring terminal
+  // sentence punctuation on top of it only rejects real content. Confirmed
+  // necessary on okonomikitchen.com's 3-Ingredient Chocolate Hazelnut
+  // Cereal: all 6 real numbered steps ("Preheat oven 160 C", etc.) are
+  // written with no trailing punctuation at all.
+  if (steps.length < (explicitMarker ? 1 : 2)) return null;
   return steps.filter(s => s.length >= 4);
 }
 
