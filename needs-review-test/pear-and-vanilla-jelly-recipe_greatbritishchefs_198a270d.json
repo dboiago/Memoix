@@ -1,0 +1,105 @@
+{
+  "recipe": {
+    "name": "Pear and Vanilla Jelly",
+    "time": "2 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the jelly, line a 25cm x 18cm x 2 cm terrine mould with a double layer of cling ﬁlm",
+      "In a large heavy based pan bring the pear juice and vanilla to 85°C",
+      "Add 50g of the sugar and pectin. Stir with a whisk. Add the remaining sugar in four batches along with the pectin",
+      "Add the glucose and heat to 180°C. Add the acid and Xante pear liqueur",
+      "Pass through a ﬁne sieve into the terrine mould. Allow to set for 10 minutes then transfer to the fridge to ﬁnish setting",
+      "Remove from the terrine and cut into manageable pieces. Wrap in cling ﬁlm and refrigerate until serving",
+      "To serve, using a hot knife, cut the jelly into small rectangles - around 3cm x 1.5cm x 1.5cm"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pear Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "450",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Pectin",
+        "unit": "g",
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glucose",
+        "unit": "ml",
+        "notes": null,
+        "amount": "110",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tartaric Acid",
+        "unit": "g",
+        "notes": null,
+        "amount": "9",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Xanté Pear Liqueur",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ae670456b61b51e6bfe6c6ffd9e66c59a50360e9e500a866fd88beabffb566bf",
+    "lineage_hash": "d5acd7aca64c6a173347c2d7e2ee2c65b407c67884cb8ac9baa1e408417528af"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/pear-vanilla-jelly-recipe",
+    "fetchedAt": "2026-08-03T18:58:21.008Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/pear-vanilla-jelly-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

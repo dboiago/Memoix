@@ -1,0 +1,101 @@
+{
+  "recipe": {
+    "name": "Masa For Tamales",
+    "time": "3 hr 40 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "72",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "121",
+      "carbohydrateContent": "25.23",
+      "fatContent": "1.29",
+      "proteinContent": "3.3"
+    },
+    "directions": [
+      "Cream the lard. Place 1 pound of lard in a large stand mixer and mix until fluffy, scraping sides so the lard stays in the center of the mixing bowl. (The flat beater is the ideal accessory for mixing.)",
+      "Add half of each the baking powder and salt to the lard and mix together.",
+      "Finish tamal dough. Add half the masa and mix together. Slowly add half the broth and half the red chile sauce, if using, to the masa and mix until combined. The mixture should be about the consistency of smooth peanut butter. If not, add more broth as necessary. Test the masa by taking a small piece (1/2 teaspoon) and dropping it into a cup of warm water. If it floats it is ready; if it sinks, add a little more lard, beat for another minute and test it again. Repeat this process until the masa floats. Pour the prepared masa mix into a bigger bowl.",
+      "Repeat the process with the remaining ingredients, using the same mixing bowl from the first batch. There’s no need to wash it first.",
+      "Cover the prepared masa for tamales and set it aside while you make your filling of choice.",
+      "Assemble tamales. For a refresher on how it’s done, visit my YouTube video on How to Make Tamales."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Lard",
+        "unit": "lb",
+        "notes": "If you are using rendered lard you will need to use less broth",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": "divided",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "Tbsp",
+        "notes": "divided",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Masa",
+        "unit": "lb",
+        "notes": "fresh, unprepared for tamales, divided",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Broth From Cooked Pork Roast",
+        "unit": "C",
+        "notes": "alt: chicken broth, divided",
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chile Sauce",
+        "unit": "C",
+        "notes": "only add if making red chile pork tamales",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn Husks",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "021596c8d26d6eef1709d87d13a2f2c819afac183dfae8f0b9e93a6119e223e6",
+    "lineage_hash": "313fa5014fe39b07f8fa906a15212b65b262e2248d2fed89c3b7f8990b549e26"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/tamal-dough-masa-para-tamales/",
+    "fetchedAt": "2026-08-02T11:02:11.247Z"
+  },
+  "rawSource": "https://muybuenoblog.com/tamal-dough-masa-para-tamales/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

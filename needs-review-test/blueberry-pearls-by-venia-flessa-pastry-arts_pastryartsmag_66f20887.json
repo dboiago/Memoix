@@ -1,0 +1,324 @@
+{
+  "recipe": {
+    "name": "Blueberry Pearls",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": null,
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Bring the water, sugar and glucose to 221˚F (105˚C).",
+      "Combine the remaining ingredients and pour the syrup over. Let it stand for few minutes and emulsify with a hand blender. Allow to crystallize in the refrigerator for 24 hours.",
+      "In a bowl, combine the pistachio flour, confectioners’ sugar and almond flour.",
+      "Make a medium-soft peak meringue with the egg whites and the sugar.",
+      "Add the wet ingredients to the meringue in 3 stages, incorporating with a rubber spatula.",
+      "Fill a pastry fitted a plain pastry tip with the mixture and pipe 3cm buttons on a silicone mat. Sprinkle with chopped pistachios and confectioners’ sugar. Bake in a preheated oven at 320˚F (160˚C) for 8-10 minutes.",
+      "Cut the butter in small cubes.",
+      "Combine the dry ingredients in the mixer bowl. Add the butter cubes, start the mixer with the paddle attachment on the lowest speed until all the butter has broken into tiny pieces and the mixture resembles sand. Add the eggs while mixing on low speed until a mass forms. Chill the dough for at least 2 hours.",
+      "Put the dough between 2 guitar sheets and pass through a dough sheeter at 3 mm thickness. Cut out 5 cm circles and bake at 320˚F (160˚C) for 12-15 minutes. Sprinkle with Mycryo cocoa butter powder.",
+      "Combine the purée, lime juice and sugar and cook to 180˚F (82˚C) in a Thermomix.",
+      "Add the gelatin and butter and emulsify.",
+      "Pour the hot cremeux in 40 ml sphere silicone molds and blast freeze.",
+      "Heat the milk with the glucose, the lime zest and the vanilla pod and pulp. Cover with cling film and let it infuse for 15 minutes.",
+      "Combine the chocolate, cocoa butter and gelatin in a bowl.",
+      "Strain the milk mixture, heat again if necessary, and then pour over the chocolate mixture. Let it stand for a few minutes, then emulsify with a hand blender. Once it cools down to 79˚F (26˚C,) add the whipped cream in 3 stages. Transfer to a pastry bag and refrigerate for 1-2 hours.",
+      "Fill 1/3 of each 120 ml sphere silicone mold with the mousse and blast freeze for 20 minutes.",
+      "Add the Blueberry Cremeux insert and fill with the mousse, leaving enough space for the Pistachio Dacquoise. Put the dacquoise on top and press gently. Blast freeze for 2-3 hours.",
+      "Heat the Mirror Glaze to 122˚F (50˚C) and emulsify with a hand blender. Apply on the spheres at 86-89˚F (30-32˚C). Place the glazed spheres on the cookies and decorate with fresh pansies."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "106",
+        "section": "Mirror Glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "213",
+        "section": "Mirror Glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Glucose",
+        "unit": "g",
+        "notes": null,
+        "amount": "213",
+        "section": "Mirror Glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Barry Zephyr White Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "213",
+        "section": "Mirror Glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Sweetened Condensed Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "142",
+        "section": "Mirror Glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Gelatin Mass",
+        "unit": "g",
+        "notes": "200 bloom",
+        "amount": "113",
+        "section": "Mirror Glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Blue Water-soluble Food Coloring",
+        "unit": null,
+        "notes": "as needed",
+        "amount": "0",
+        "section": "Mirror Glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Pistachio Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "55",
+        "section": "Pistachio Dacquoise",
+        "isOptional": false
+      },
+      {
+        "name": "Confectioners’ Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "135",
+        "section": "Pistachio Dacquoise",
+        "isOptional": false
+      },
+      {
+        "name": "Almond Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": "Pistachio Dacquoise",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": "Pistachio Dacquoise",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": "Pistachio Dacquoise",
+        "isOptional": false
+      },
+      {
+        "name": "Pistachios",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "0",
+        "section": "Pistachio Dacquoise",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "82% fat",
+        "amount": "300",
+        "section": "Pâte Sucrée",
+        "isOptional": false
+      },
+      {
+        "name": "Confectioners’ Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": "Pâte Sucrée",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": "Pâte Sucrée",
+        "isOptional": false
+      },
+      {
+        "name": "Pastry Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": "Pâte Sucrée",
+        "isOptional": false
+      },
+      {
+        "name": "Almond Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "70",
+        "section": "Pâte Sucrée",
+        "isOptional": false
+      },
+      {
+        "name": "Lime Zest",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Pâte Sucrée",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Eggs",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": "Pâte Sucrée",
+        "isOptional": false
+      },
+      {
+        "name": "Mycryo Cocoa Butter Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Pâte Sucrée",
+        "isOptional": false
+      },
+      {
+        "name": "Blueberry Purée",
+        "unit": "g",
+        "notes": null,
+        "amount": "215",
+        "section": "Blueberry Cremeux",
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": "Blueberry Cremeux",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": "Blueberry Cremeux",
+        "isOptional": false
+      },
+      {
+        "name": "Gelatin",
+        "unit": "g",
+        "notes": "200 bloom, bloomed",
+        "amount": "7",
+        "section": "Blueberry Cremeux",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "82% fat",
+        "amount": "128",
+        "section": "Blueberry Cremeux",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "223",
+        "section": "Lime Vanilla White Chocolate Mousse",
+        "isOptional": false
+      },
+      {
+        "name": "Glucose",
+        "unit": "g",
+        "notes": null,
+        "amount": "22",
+        "section": "Lime Vanilla White Chocolate Mousse",
+        "isOptional": false
+      },
+      {
+        "name": "Lime Zest",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Lime Vanilla White Chocolate Mousse",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": "scraped",
+        "amount": "1",
+        "section": "Lime Vanilla White Chocolate Mousse",
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Barry Zephyr White Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "251",
+        "section": "Lime Vanilla White Chocolate Mousse",
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "22",
+        "section": "Lime Vanilla White Chocolate Mousse",
+        "isOptional": false
+      },
+      {
+        "name": "Gelatin",
+        "unit": "g",
+        "notes": "200 bloom, bloomed",
+        "amount": "6.5",
+        "section": "Lime Vanilla White Chocolate Mousse",
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "g",
+        "notes": "35% fat, softly whipped",
+        "amount": "450",
+        "section": "Lime Vanilla White Chocolate Mousse",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3b6b508261a5bd184f31a781357a144a0e7b9be435bd484997181f29008b0df0",
+    "lineage_hash": "697cb1716729ba2aa6126506029995b59bca9d2406c776922676c5ac22100c71"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://pastryartsmag.com/recipes/blueberry-pearls-by-venia-flessa/",
+    "fetchedAt": "2026-08-02T08:24:27.822Z"
+  },
+  "rawSource": "https://pastryartsmag.com/recipes/blueberry-pearls-by-venia-flessa/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

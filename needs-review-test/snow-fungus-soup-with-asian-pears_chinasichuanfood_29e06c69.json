@@ -1,0 +1,86 @@
+{
+  "recipe": {
+    "name": "Snow Fungus Soup with Asian Pears",
+    "time": "4 hr 30 min",
+    "course": "soups",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "199",
+      "carbohydrateContent": "44",
+      "fatContent": null,
+      "proteinContent": "1"
+    },
+    "directions": [],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Snow Fungus",
+        "unit": null,
+        "notes": "dried, 25g (around 3/4 head, remove the yellow end",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Dates",
+        "unit": null,
+        "notes": null,
+        "amount": "5-7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Goji Berries",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rock Sugar",
+        "unit": "g",
+        "notes": "alt: more based on personal preference",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": "for high pressure cooker or 2L for regular cooker",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Asian Pear",
+        "unit": null,
+        "notes": "peeled and cut into small cubes",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3d50b599a9d9ab73713fc6dda194df1bc6913965f3a458b11f3b023064851586",
+    "lineage_hash": "e7c2a5895e2ecc6bc11d16f2fe31145b19b1c0e0741aa4a987041466ef6a6b5b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/snow-fungus-soup/",
+    "fetchedAt": "2026-08-01T15:37:20.913Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/snow-fungus-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

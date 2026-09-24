@@ -1,0 +1,80 @@
+{
+  "recipe": {
+    "name": "Blackberry Lavender Preserves",
+    "time": "55 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "80",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "49",
+      "carbohydrateContent": "12",
+      "fatContent": "0.1",
+      "proteinContent": "0.2"
+    },
+    "directions": [
+      "Bring a very large pot of water to a full boil. Sterilize your canning jars (5 half pints) and lids by boiling in the water for 10 minutes (or with the sterilize setting on your dishwasher). Meanwhile, place a small saucer in the freezer.",
+      "Use a jar lifter or tongs to remove the hot jars from the water. Line them up on a clean kitchen towel.",
+      "In a heavy pot, combine 32 oz&#32;blackberries with 32 oz&#32;granulated sugar. Use the back of a large spoon or a potato masher to crush the berries until they begin to release some juice. Toss 4&#32;large sprigs fresh lavender with leaves and blossoms in with the berries and sugar.",
+      "Over medium heat, cook the berries until the sugar dissolves and the juice begins to boil. Bring the preserves to a full boil and continue cooking, stirring frequently, until the mixture thickens, about 10 minutes.",
+      "To test if the preserves are gelled, spoon a dollop of preserves onto the chilled saucer and return to the freezer for a minute to cool completely.  Remove the plate from the freezer and use the tip of your finger to push against the edge of the preserves. A properly set gel will &quot;wrinkle&quot; as it's pushed. Turn off the heat and use a pair of tongs to remove the lavender sprigs from the pot. Discard the used lavender.",
+      "Immediately ladle the hot preserves into the sterilized jars, leaving 1/4&quot; head space. Place 1 lavender blossom on the surface of the preserves in each jar. Use a damp paper towel to wipe the rim of each jar. The rim needs to be clean for the lid to seal properly.",
+      "Place the lids and screw tops on the jars. Bring the water in the big pot back to a full boil. Use the tongs or jar lifter to lower the jars into the water. Make sure there is enough water to cover the jars by at least an inch. Cover the pot and bring back to a boil. Once the water comes back to a boil start your timer.",
+      "Process the jars for 15 minutes. Use the jar lifter or tongs to remove the jars from the water. Place them on a kitchen towel to cool. Do not retighten the screw tops or the lids may not seal. As the jars cool and the lids seal you should hear a little &quot;pop&quot;. You should see the circle in the middle of the lid indented rather than popped up.",
+      "Once the jars are completely cooled unscrew the tops and check that the lids are firmly sealed. If any lids don't properly seal, refrigerate and use those preserves first."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Blackberries",
+        "unit": "oz",
+        "notes": "fresh or frozen",
+        "amount": "32",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "4 cups",
+        "amount": "32",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sprigs Fresh Lavender with Leaves and Blossoms",
+        "unit": "large",
+        "notes": "or to taste",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lavender Blossoms",
+        "unit": null,
+        "notes": "fresh or dried",
+        "amount": "4-5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "be8b298088ac504b8f6e02b688388ce73e47fbda569091af903475db2573b3df",
+    "lineage_hash": "f7b3eae82a6d724df47438ad05f1818420cb11720aef392cde441810e015b641"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2021/07/15/blackberry-lavender-preserves/",
+    "fetchedAt": "2026-08-02T07:49:55.883Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2021/07/15/blackberry-lavender-preserves/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

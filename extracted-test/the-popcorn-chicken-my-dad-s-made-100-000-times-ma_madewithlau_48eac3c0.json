@@ -1,0 +1,161 @@
+{
+  "recipe": {
+    "name": "Popcorn Chicken",
+    "time": "25 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cut the chicken breast in half lengthwise, then into slices, then strips about 1/2 inches thick.",
+      "Add white pepper powder, five spice powder, garlic salt, salt, sugar, chicken bouillon, cornstarch, and water to a bowl, throw in the chicken slices, and mix by hand.",
+      "Distribute cornstarch evenly on a plate.",
+      "Blend salt, garlic salt, five spice powder, and white pepper powder in a small bowl.",
+      "Add oil to a wok, heat on high to about 350F, then turn the temperature down to medium while frying.",
+      "Set to high heat, and heat the oil to 380-400F. Fry in 2 batches, about 30 seconds each. The chicken should turn much more golden brown.",
+      "Blend the seasoning ingredients in a small bowl, and place the chicken in a mixing bowl. Gradually sprinkle the blend and toss the chicken simultaneously."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Breast",
+        "unit": "oz",
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Five Spice Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Bouillon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Five Spice Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "73efc94318f43552dbdb29a7a0b80372f065093c773dd1a52549ba024b071eb5",
+    "lineage_hash": "5c40ba6c38971bf501234321f89c4f3ac56cbb9da2bd2d4387336abbccdfe804"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.madewithlau.com/recipes/popcorn-chicken",
+    "fetchedAt": "2026-08-03T00:58:59.049Z"
+  },
+  "rawSource": "https://www.madewithlau.com/recipes/popcorn-chicken",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

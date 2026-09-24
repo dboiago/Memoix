@@ -1,0 +1,91 @@
+{
+  "recipe": {
+    "name": "Silken Tofu Chocolate Mousse",
+    "time": "12 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "255",
+      "carbohydrateContent": "31",
+      "fatContent": "14",
+      "proteinContent": "6"
+    },
+    "directions": [
+      "Melt the chocolate: Melt the chocolate gently in the microwave (in 20–30 second bursts, stirring between) or over a double boiler. Let it cool slightly so it’s warm but not hot.",
+      "Blend until silky: Add the silken tofu, melted chocolate, 2 tablespoons maple syrup, vanilla, salt, and espresso powder (if using) to a blender, food processor, or the cup of an immersion blender. Blend until completely smooth, scraping down the sides as needed. Taste and add 1 more tablespoon of maple syrup if you want it sweeter.",
+      "Chill (optional): Spoon into ramekins or small serving dishes. Chill for at least 1 hour for a thicker mousse texture. Or enjoy right away for a softer, pudding-like texture.",
+      "Serve: Serve chilled, plain or with your favorite toppings (see notes for ideas)."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vegan Dark Chocolate",
+        "unit": "oz",
+        "notes": "chopped",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Silken Tofu",
+        "unit": "oz",
+        "notes": "drained",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maple Syrup",
+        "unit": "Tbsp",
+        "notes": "or agave",
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Instant Espresso Powder",
+        "unit": "tsp",
+        "notes": "optional to enhance chocolate flavor",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7f991c7df07f81802db34849f72bcbd9d6568cd7dfa15a7fd214958894551c9d",
+    "lineage_hash": "3ddfbc7fcd19f6d93bb08c9d05909e2fbb7856496f1dd1bc736fe7c15ba16afe"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/silken-tofu-chocolate-mousse/",
+    "fetchedAt": "2026-08-02T09:45:32.377Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/silken-tofu-chocolate-mousse/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

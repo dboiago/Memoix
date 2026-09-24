@@ -1,0 +1,175 @@
+{
+  "recipe": {
+    "name": "Yukjeon (Pan-fried Battered Beef)",
+    "time": null,
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "KR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Thinly slice the beef if it’s not pre-cut. Partially freeze the meat for about an hour to firm it up for easier slicing.",
+      "Lightly season both sides with the marinade, and let it stand for 20 minutes.",
+      "Dredge both sides of the beef slice in sweet rice flour, one piece at a time. Let it stand for a few minutes until the flour absorbs the marinade. Then, dredge again in the sweet rice flour to create a nice coating.",
+      "Heat a large non-stick skillet over medium low heat. Add a tablespoon of oil. Place in the skillet. Cook for 1 to 2 minutes on each side, adding more oil if needed, until lightly golden.",
+      "Repeat until all the beef slices are pan fried. Serve warm with a dipping sauce."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Thinly Sliced Beef Any Tender Cut Such As Loin and Rib Eye",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Rice Flour Chapssal Garu",
+        "unit": "C",
+        "notes": "찹쌀가루",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil for Pan-frying",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions Thinly Sliced",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Beef marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Rice Wine",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Beef marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Beef marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Beef marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Beef marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "Beef marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "½",
+        "section": "Beef marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Hot Mustard Gyeoja",
+        "unit": "tsp",
+        "notes": "겨자",
+        "amount": "1",
+        "section": "Hot mustard sauce (겨자장)",
+        "isOptional": false
+      },
+      {
+        "name": "Hot Water",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Hot mustard sauce (겨자장)",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Hot mustard sauce (겨자장)",
+        "isOptional": false
+      },
+      {
+        "name": "Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Hot mustard sauce (겨자장)",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Hot mustard sauce (겨자장)",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "Hot mustard sauce (겨자장)",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ac5c3aa02fcb8bd73bac4e6cea8378a3d173095ed8b56f3f47fbe31de6322894",
+    "lineage_hash": "003cfdda6992869ec7d3b9d2dc8601fd411b42dcde3d042e0568829d8fefb19d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.koreanbapsang.com/yukjeon-pan-fried-battered-beef/",
+    "fetchedAt": "2026-08-02T00:43:22.111Z"
+  },
+  "rawSource": "https://www.koreanbapsang.com/yukjeon-pan-fried-battered-beef/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

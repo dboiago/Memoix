@@ -1,0 +1,209 @@
+{
+  "recipe": {
+    "name": "Caramelized Cornbread with Maple Bacon Butter",
+    "time": "2 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": null,
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat an oven to 325°F. In a saute pan over medium heat melt the butter.",
+      "Once the butter has melted add the thyme and corn. Lower the heat to medium low and begin to saute the corn. Cook until golden brown, this should take between 20 and 30 minutes.",
+      "Remove the corn, butter, and thyme and set aside for later in the recipe.",
+      "In a stand mixer place the all purpose flour, sugar, semolina, coarse cornmeal, salt , baking powder, baking soda, and sunflower lecithin.",
+      "Mix on low until the dry mixture has just combined.",
+      "Continue mixing on low and add the eggs, heavy cream, and buttermilk. Mix until combined this should take about 30 seconds to a minute.",
+      "Add the caramelized corn and honey, mix for 1 more minute.",
+      "Butter a cast iron skillet and pour in the cornbread batter.",
+      "Bake at 325°F for 35-40 minutes or until a cake tester comes out clean from the center.",
+      "Rest for 30 minutes before slicing and serving with bacon maple butter.",
+      "Wrap and store at room temperature for up to a week.",
+      "In a stand mixer place the butter and paddle on low until it is smooth.",
+      "Slowly add in the Bacon, thyme, salt, and maple syrup and paddle until combined.",
+      "Remove the butter from the mixer bowl, and place in a container and chill until needed.",
+      "Bring the butter to room temperature before serving for best results."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "165",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "g",
+        "notes": "Fresh, Stemmed and Chopped",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Semolina",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornmeal",
+        "unit": "g",
+        "notes": "Coarse",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "I’m Free Baking Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sunflower Lecithin",
+        "unit": "g",
+        "notes": null,
+        "amount": "12.4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "Room Temperature",
+        "amount": "282",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bacon",
+        "unit": "g",
+        "notes": "Cooked Crisp, Chopped",
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "g",
+        "notes": "Fresh, Stemmed and Chopped",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maple Syrup",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "eaeca2b1d3779f30bfac7a7eea7cb90717560c259b07a919f2d1c2aca41d1ad4",
+    "lineage_hash": "eab2b3152200423507a6b026b87ef42de23bcc676cadf2f4295e16fc61ed7591"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://blog.modernistpantry.com/recipes/caramelized-cornbread-with-maple-bacon-butter/",
+    "fetchedAt": "2026-08-02T01:58:12.738Z"
+  },
+  "rawSource": "https://blog.modernistpantry.com/recipes/caramelized-cornbread-with-maple-bacon-butter/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

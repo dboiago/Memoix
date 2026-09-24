@@ -1,0 +1,133 @@
+{
+  "recipe": {
+    "name": "Aguachile Verde",
+    "time": null,
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a hot cast iron pan over medium-low heat, place onion halves cut-side-down. Add garlic and serranos to the pan.",
+      "Slow roast until garlic is caramelized, onion is charred on cut sides, and serrano is slightly charred and blistered.",
+      "Transfer onion, garlic, and serrano directly to a container, seal, and let steam.",
+      "In a shallow bowl with ½ cup lime juice, dip each shrimp to coat and transfer to a plate to cure.",
+      "To a Vitamix blender with the cilantro and half the uncut red onion, add the steamed onion, garlic, and serranos and the remaining lime juice; purée.",
+      "Season sauce with salt and pepper.",
+      "Line the edge of a circular platter with cucumber.",
+      "Arrange shrimp within cucumber.",
+      "Spoon sauce over each shrimp.",
+      "Garnish with sliced red onion.",
+      "Finish with salt and pepper and a sprinkle of Maggi seasoning."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "White Onion",
+        "unit": null,
+        "notes": "halved",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "peeled",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Serrano Peppers",
+        "unit": null,
+        "notes": "stemmed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "C",
+        "notes": "20 to 25 limes",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pacific Shrimp",
+        "unit": "lb",
+        "notes": "21/25, butterflied",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "bunch",
+        "notes": "rinsed and trimmed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": null,
+        "notes": "halved, 1 half thinly sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber",
+        "unit": null,
+        "notes": "peeled and cut into ½-inch-thick circular slices",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maggi Seasoning",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "dcf1aa9172cd7f55b04c977f9c3d4b55092fd560e367c1331aa593d1389c6d44",
+    "lineage_hash": "e9133a3f39718167ee07a324a7ecfacc26e9fb731187c5367215024976500970"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.starchefs.com/recipes/aguachile-verde",
+    "fetchedAt": "2026-08-04T02:22:26.432Z"
+  },
+  "rawSource": "https://www.starchefs.com/recipes/aguachile-verde",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

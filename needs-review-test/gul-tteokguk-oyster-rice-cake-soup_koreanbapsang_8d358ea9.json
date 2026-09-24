@@ -1,0 +1,112 @@
+{
+  "recipe": {
+    "name": "Gul Tteokguk (Oyster Rice Cake Soup)",
+    "time": "20 min",
+    "course": "soups",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "KR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Soak the rice cakes in cold water for 10 to 20 minutes.",
+      "Clean the oysters by gently swishing around in salted water. Drain. Rinse again in clean water and drain again.",
+      "Add 6 cups of water and the optional dried kelp to a medium size pot. Bring it to a boil, and continue to boil for 5 minutes.",
+      "To make the optional egg garnish (jidan), separate the egg. Lightly beat the white by gently cutting it with a spoon. Stir the yoke with a spoon until smooth. Heat a lightly oiled nonstick skillet over medium low heat. Pour each egg part into a thin layer, tilting the skillet and/or spreading with a spoon. Cook each side briefly until no visible liquid remains. (Do not brown the egg.) Slice into small diamond shape pieces or short thin strips.",
+      "Remove the kelp if used. Add the rice cake slices, garlic and soup soy sauce (or fish sauce), and cook until very soft.",
+      "Drop the oysters in. Cook for a couple of minutes after the soup comes to a boil again. Season with salt and pepper to taste. Remove the scum. Ladle the steaming soup into individual bowls and top with the scallion and the optional egg and gim strips."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ounces Rice Cake Slices Tteokguk Tteok",
+        "unit": null,
+        "notes": "to 10, 떡국떡",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "3-inch Square Dried Kelp Dashima - Optional",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soup Soy Sauce Gukganjang 국간장",
+        "unit": "Tbsp",
+        "notes": "alt: fish sauce",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ounces Small Shucked Oysters",
+        "unit": null,
+        "notes": "to 8",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallion Thinly Sliced",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg for Jidan Egg Garnish",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sheet Roasted Gim Nori",
+        "unit": null,
+        "notes": "cut into thin, short strips with kitchen shears",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b1295a2c95070eba1b891344f3b30842373d47f95c09ffe18656f77129b31f56",
+    "lineage_hash": "1e68be3d31845bb92947abf8defb94d6f3b2cf9d479287ced3bdadd3ddbcc691"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.koreanbapsang.com/gul-tteokguk-oyster-rice-cake-soup/",
+    "fetchedAt": "2026-08-01T17:11:31.444Z"
+  },
+  "rawSource": "https://www.koreanbapsang.com/gul-tteokguk-oyster-rice-cake-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

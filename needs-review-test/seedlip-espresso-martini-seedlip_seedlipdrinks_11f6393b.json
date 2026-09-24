@@ -1,0 +1,63 @@
+{
+  "recipe": {
+    "name": "Seedlip Espresso Martini",
+    "time": "10 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": null,
+    "glass": "Coupe",
+    "garnish": [
+      "Three Coffee Beans"
+    ],
+    "subcategory": "Mocktail",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add Spice 94, cold brew concentrate & sugar syrup to a shaker",
+      "Add ice & shake",
+      "Double strain into a coupe glass"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Seedlip Spice 94",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cold Brew Coffee Concentrate",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Simple Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bbcf7c392f15d2a2783dd3fb66748f6306905253dc60e54c7f822d92c7a68a0d",
+    "lineage_hash": "8ee0204029d3ca6429ae90079a7d289511df067e21cf3278d14599bdcfa1af72"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.seedlipdrinks.com/en-ca/recipes/seedlip-espresso-martini",
+    "fetchedAt": "2026-08-01T18:33:34.329Z"
+  },
+  "rawSource": "https://www.seedlipdrinks.com/en-ca/recipes/seedlip-espresso-martini",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

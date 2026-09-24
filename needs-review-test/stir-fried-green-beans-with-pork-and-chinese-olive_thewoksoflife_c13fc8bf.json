@@ -1,0 +1,154 @@
+{
+  "recipe": {
+    "name": "Stir-Fried Green Beans with Pork and Chinese Olive Vegetable",
+    "time": "30 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "254",
+      "carbohydrateContent": "10",
+      "fatContent": "21",
+      "proteinContent": "7"
+    },
+    "directions": [
+      "Marinate the ground pork with 1 teaspoon Shaoxing wine, 1 teaspoon light soy sauce and a pinch of white pepper powder. Let sit for 15 minutes.",
+      "Heat 1½ tablespoons of oil in your wok over medium heat. Add the green beans, stir-fry, and spread the beans out in a single layer. Let cook for 20 seconds. Then stir and repeat the spreading step several times until the green beans are slightly wilted and cooked through. Turn the heat down to medium if needed to avoid burning. It takes about 5 minutes to cook the green beans this way. Transfer to a dish and set aside.",
+      "Next, heat 1 tablespoon of oil in your wok over medium heat. Add the minced ginger and garlic. Stir for a few seconds, turn up the heat, and add the pork. Stir-fry the pork until it’s cooked through. Now add the olive vegetable, Shaoxing wine, and sugar. Stir-fry everything to combine. Add the green beans back to the wok along with the dried hot peppers and sesame oil. Stir for about a minute, salt to taste, and serve!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ground Pork",
+        "unit": "oz",
+        "notes": "or chicken, 115g",
+        "amount": "4",
+        "section": "meat",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "meat",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "meat",
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": "meat",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": "divided",
+        "amount": "2½",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Green Beans",
+        "unit": "lb",
+        "notes": "450g, cut into ½-inch pieces",
+        "amount": "1",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "3",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Preserved Olive Vegetable",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Chili Peppers",
+        "unit": null,
+        "notes": "deseeded and chopped into coarse pieces, optional, dried",
+        "amount": "6-7",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "¼",
+        "section": "rest of the dish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "cf4b44dd0e783d0d0724c0412e5511e5ce8ff8f26b857491384067523a3eba5a",
+    "lineage_hash": "10a512ae02fbc54f0ad71f075746a2c8abdd220388f4b01c35ba71739a5986cf"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/stir-fried-green-beans/",
+    "fetchedAt": "2026-08-01T23:36:29.458Z"
+  },
+  "rawSource": "https://thewoksoflife.com/stir-fried-green-beans/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

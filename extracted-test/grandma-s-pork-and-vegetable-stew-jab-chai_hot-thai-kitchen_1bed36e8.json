@@ -1,0 +1,159 @@
+{
+  "recipe": {
+    "name": "Grandma's Pork and Vegetable Stew (Jab Chai)",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "TH",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a large pot, add the oil, garlic and white pepper and saute over medium heat until the garlic starts to turn golden.",
+      "Add the pork ribs and quickly stir to mix with the garlic, then add the water. Add the shiitake mushrooms, daikon, soy sauce, oyster sauce, Thai seasoning sauce, and just enough black soy sauce to darken the stew color slightly. Simmer gently over medium-low heat, partially covered, for about 30 minutes, until the meat is fork-tender.",
+      "Use tongs to remove the mushrooms from the soup, squeezing them to get rid of excess liquid, and set aside to cool on a cutting board. Then add the carrots, cabbage, and Chinese broccoli; simmer for another 10 minutes, or until the veggies are tender. If needed, top up the soup with more water so everything is barely submerged.",
+      "While the veggies are cooking, slice off the mushroom stems. Thinly slice the caps and add them back to the soup.",
+      "Taste and adjust the seasoning with more soy sauce as needed. Serve with jasmine rice (this is what Thai people do) or enjoy on its own."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Neutral Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "chopped",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pork Ribs",
+        "unit": "lb",
+        "notes": "see note 1, chopped",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shiitake Mushrooms",
+        "unit": null,
+        "notes": "dried, rinsed",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Daikon",
+        "unit": "oz",
+        "notes": "peeled, 1-inch chunks about 2 cups",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Mountain Sauce",
+        "unit": "Tbsp",
+        "notes": "or Maggi Seasoning",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Soy Sauce",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": "medium",
+        "notes": "(about 100 g) cut in bite-sized pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Cabbage Pieces",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Broccoli (gai Lan)",
+        "unit": "C",
+        "notes": "or kale, roughly chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jasmine Rice",
+        "unit": null,
+        "notes": "optional for serving",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "27c2ada826c6318cda58c7d3f71412b0ef6f90243d25d2a0af3947cac987773d",
+    "lineage_hash": "38b248956948857eee680608b4c2b328ea7d8e94344ace355499b6e6b968331e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://hot-thai-kitchen.com/jab-chai/",
+    "fetchedAt": "2026-08-02T04:14:48.805Z"
+  },
+  "rawSource": "https://hot-thai-kitchen.com/jab-chai/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,281 @@
+{
+  "recipe": {
+    "name": "Super Soft Sourdough Hot Cross Buns",
+    "time": "12 hr 30 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "9",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Prepare the levain and fruit soaker (Day One, 9:00 p.m.)Mix the levain ingredients in a container and leave covered to ripen at about 78°F (25°C) for 12 hours overnight. In a separate bowl, cover the raisins and currants with water and let soak overnight.",
+      "Make the tangzhong (Day Two, 8:00 a.m.)Cook flour and milk portion in a saucepan over medium heat, whisking continuously, until the mixture thickens into a paste, about 5–8 minutes. Set aside to cool.",
+      "Mix (8:30 a.m.)Cut the butter into ½-inch pats and set on a plate to come to room temperature. To the bowl of a stand mixer fitted with the dough hook, add the flour, beaten egg, sugar, spices and zests, water, salt, tangzhong, and ripe levain. Mix on low speed for 1 to 2 minutes until combined. Increase to medium and mix for 5 minutes until the dough tightens and clings to the hook. Rest 10 minutes. Then mix on medium for 3 to 6 minutes, until smooth and strong. Add the butter one pat at a time on low speed, waiting for each to absorb. Add the inclusions (raisins and peel) and mix on low speed for 1 to 2 more minutes until silky and elastic. Transfer to a bulk fermentation container.",
+      "Bulk fermentation (9:00 a.m. to 1:00 p.m.)Give the dough 2 sets of stretch and folds at 30-minute intervals. After the last fold, let the dough rest undisturbed for the remainder of bulk fermentation, about 3 hours.",
+      "Divide and shape (1:00 p.m.)Liberally butter a 9-inch square baking pan. Divide the dough into 9 pieces of 115g each and shape each into a tight round. Place in the pan in 3 rows of 3. Cover with a reusable plastic bag.",
+      "Proof (1:30 p.m. to 5:30 p.m.)Let the buns proof in a warm place for about 3 hours, or until very soft to the touch, well risen, and the dough has risen to the rim of the pan. Don&#8217;t rush the dough, keep it warm and proof until the dough is very soft.",
+      "Prepare the glaze, crosses, and bake (5:30 p.m.)Preheat the oven to 400°F (200°C). Make the simple syrup by simmering 50g water and 50g sugar until clear, 2 to 4 minutes; set aside. Mix the cross ingredients into a thick paste and transfer to a piping bag. Whisk the egg wash and brush lightly on the buns. Pipe crosses on each bun. Bake for 15 minutes, rotate the pan, reduce the oven to 350°F (175°C), and bake for 10 to 15 minutes more until the internal temperature reaches 195°F (90°C). Brush with simple syrup and let cool for 5 minutes before serving with salted butter."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "High-protein White Flour",
+        "unit": "g",
+        "notes": "~12–14% protein",
+        "amount": "77",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Superfine Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "19",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "77",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ripe Sourdough Starter",
+        "unit": "g",
+        "notes": "100% hydration",
+        "amount": "31",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "High-protein White Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "39",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "178",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All the Tangzhong",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All the Levain",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "High-protein White Flour",
+        "unit": "g",
+        "notes": "~12–14% protein",
+        "amount": "378",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "g",
+        "notes": "about 1 medium, beaten",
+        "amount": "49",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "77",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Superfine Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "9",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thompson Raisins",
+        "unit": "g",
+        "notes": "alt: candied orange peel",
+        "amount": "74",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Currants",
+        "unit": "g",
+        "notes": "alt: chocolate chips, dried",
+        "amount": "49",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "g",
+        "notes": "about 1 teaspoon",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Allspice",
+        "unit": "g",
+        "notes": "about ½ teaspoon",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Nutmeg",
+        "unit": "g",
+        "notes": "about ½ teaspoon",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Zest of 1 Lemon",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Zest of 1 Orange",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "room temperature, cut into ½-inch pats",
+        "amount": "69",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "g",
+        "notes": "or more water",
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "eebf61c588004b35431b18fa6639a3eeaa4541de50a0b61e170288f3c0bd9652",
+    "lineage_hash": "55af50db592cd302a083683bf769cadd71374abfe8a66d874601aace9e662c61"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.theperfectloaf.com/super-soft-sourdough-hot-cross-buns/",
+    "fetchedAt": "2026-08-01T16:01:06.386Z"
+  },
+  "rawSource": "https://www.theperfectloaf.com/super-soft-sourdough-hot-cross-buns/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

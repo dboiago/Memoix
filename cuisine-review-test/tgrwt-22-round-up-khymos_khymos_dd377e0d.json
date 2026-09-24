@@ -1,0 +1,119 @@
+{
+  "recipe": {
+    "name": "Raisin marmalade & cucumber sushi",
+    "time": null,
+    "course": "mains",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Boil until the raisins absorb most of the liquid. Add the cinnamon after boiling.",
+      "Peel the cucumber, add to a bowl and combine with 1 tablespoon of crushed peanuts.",
+      "Line nori sheet and place half a cup of basmatti/wild rice (previously cooked with extra water + 1 tablespoon of apple cider vinegar).",
+      "Carefully spread evenly 1/4 tablespoon of mustard, then layer the cucumber-peanut mixture and finally add 1 tablespoon of the raisin marmalade.",
+      "Roll the sheet. Serve on contrasting color plate. Garnish with mustard seeds."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Raisins",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Raisin marmalade",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Raisin marmalade",
+        "isOptional": false
+      },
+      {
+        "name": "Balsamic Vinegar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Raisin marmalade",
+        "isOptional": false
+      },
+      {
+        "name": "Hibiscus Flowers",
+        "unit": "tsp",
+        "notes": "to prepare 1 cup of tea or hibiscus tea directly",
+        "amount": "½",
+        "section": "Raisin marmalade",
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Raisin marmalade",
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": "Cucumber-peanut layer",
+        "isOptional": false
+      },
+      {
+        "name": "Peanuts",
+        "unit": "Tbsp",
+        "notes": "crushed",
+        "amount": "1",
+        "section": "Cucumber-peanut layer",
+        "isOptional": false
+      },
+      {
+        "name": "A Cup Basmatti/wild Rice",
+        "unit": null,
+        "notes": "previously cooked with extra water + 1 tablespoon of apple cider vinegar",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "unit": null,
+        "notes": "for garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a413482c9569c26fb7505b437a9a1475435ffa3ce35bee2fbfecf48ea42dce97",
+    "lineage_hash": "68448681c2456b7ffd149e86b847c7cd35954272badf13a2df5841dadae9f462"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://khymos.org/2012/09/16/tgrwt-22-round-up/",
+    "fetchedAt": "2026-08-02T01:03:21.170Z"
+  },
+  "rawSource": "https://khymos.org/2012/09/16/tgrwt-22-round-up/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

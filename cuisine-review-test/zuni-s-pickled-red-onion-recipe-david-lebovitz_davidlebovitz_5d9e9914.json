@@ -1,0 +1,47 @@
+{
+  "recipe": {
+    "name": "Zuni's Pickled Red Onion",
+    "time": "1 hr 30 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Make a brine with 3 cups (.75l) white vinegar, 1½ cups (300g) of sugar, cinnamon stick, a few cloves, allspice berries and peppercorns. Add 2 bay leaves and a small dried chili, then bring it all to a boil in a 4-quart non-reactive saucepan.",
+      "Simmer the onion rings, in three separate batches (that means, one-third of the onion rings at a time), for 20 seconds each (20 seconds for each batch) in the brine. Remove onions to a baking sheet using a slotted spoon to drain them, and let cool.",
+      "Then you do it again, simmer the onions in three separate batches, for 20 seconds each. Drain them, and cool.",
+      "Then you do it again...simmer the onions in three separate batches (yes, have you memorized it yet?... 20 seconds each...then drain them and let them cool.)",
+      "Chill the brine thoroughly. Once chilled, add the onions and store in the refrigerator."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Red Onions",
+        "unit": "lb",
+        "notes": "450g, peeled and cut into rings",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "30bdaa7d833445da04248f94ee60fe6e6f196b472713242134a5dfa836c7d68c",
+    "lineage_hash": "07b4c0399095d6ed7e41041b417a0266c3a3aa8582ad38644dc3a1ae5cb36808"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/a-bit-of-a-pick/",
+    "fetchedAt": "2026-08-02T19:07:00.592Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/a-bit-of-a-pick/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

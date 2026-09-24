@@ -1,0 +1,126 @@
+{
+  "recipe": {
+    "name": "Biang Biang Noodles",
+    "time": "1 hr 15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "759",
+      "carbohydrateContent": "122",
+      "fatContent": "21",
+      "proteinContent": "19"
+    },
+    "directions": [],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-purpose Flour",
+        "unit": "g",
+        "notes": "2 cups",
+        "amount": "300",
+        "section": "Noodle dough",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": "Noodle dough",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "130-140",
+        "section": "Noodle dough",
+        "isOptional": false
+      },
+      {
+        "name": "Chili Powder+pinch of Salt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Assemble the noodles",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Assemble the noodles",
+        "isOptional": false
+      },
+      {
+        "name": "Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Assemble the noodles",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "minced",
+        "amount": "2",
+        "section": "Assemble the noodles",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion",
+        "unit": null,
+        "notes": "minced",
+        "amount": "2",
+        "section": "Assemble the noodles",
+        "isOptional": false
+      },
+      {
+        "name": "Green Vegetable for Blanching",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Assemble the noodles",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Cooking Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Assemble the noodles",
+        "isOptional": false
+      },
+      {
+        "name": "Oil for Brushing",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Assemble the noodles",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ceac5e45a60a6e94d896d2a6b7104ae7b96c79e8e38fe13ad4ea502b6d8b28cc",
+    "lineage_hash": "6da9041a1ac1c685ac8687c02d41348aa2cf8789460851014b6c0115a31accb1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/biang-biang-mian-biang-biang-noodles/",
+    "fetchedAt": "2026-08-02T00:30:19.626Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/biang-biang-mian-biang-biang-noodles/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

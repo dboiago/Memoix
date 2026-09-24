@@ -1,0 +1,166 @@
+{
+  "recipe": {
+    "name": "Sourdough Chocolate Babka",
+    "time": "14 hr 40 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "24",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "270",
+      "carbohydrateContent": "31",
+      "fatContent": "15",
+      "proteinContent": "4"
+    },
+    "directions": [],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Active Sourdough Starter",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "oz",
+        "notes": "½ cup, scalded and cooled",
+        "amount": "4",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Bread Flour",
+        "unit": "oz",
+        "notes": "3 ½ cups, see note",
+        "amount": "17½",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "room temperature",
+        "amount": "4",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "⅓ cup",
+        "amount": "3",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted European Butter",
+        "unit": "oz",
+        "notes": "at cool room temperature",
+        "amount": "8",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Semi-sweet Chocolate",
+        "unit": "oz",
+        "notes": "finely chopped",
+        "amount": "4",
+        "section": "Chocolate Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": null,
+        "amount": "4",
+        "section": "Chocolate Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Confectioner Sugar",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "2",
+        "section": "Chocolate Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Dutch Process Cocoa Powder",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "1",
+        "section": "Chocolate Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "½",
+        "section": "Chocolate Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Chocolate Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": "Syrup",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": "Syrup",
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": "Syrup",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "19679a9c6474932cffd4f7e09a2535aa2576174fd67605b62ffc44327b16d7ab",
+    "lineage_hash": "400be8cef6f9606aeb5b0ee687588405e725ad33063454962528e6325709791e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2025/11/29/sourdough-chocolate-babka/",
+    "fetchedAt": "2026-08-02T06:03:37.230Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2025/11/29/sourdough-chocolate-babka/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

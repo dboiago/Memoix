@@ -1,0 +1,134 @@
+{
+  "recipe": {
+    "name": "Beef And Mushroom Blended Burgers",
+    "time": "25 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Fire up. Prepare a grill for indirect cooking by placing a chimney full of pre-heated charcoal briquets on one side of the grill’s charcoal grate in order to create direct and indirect cooking zones. Adjust the grill vents to bring the temperature to about 400°F (204.4°C) on the indirect side. On a gas grill, adjust the temperature knobs so that one half of the grill is off and the other half is heated enough to maintain a temperature of approximately 400°F (204.4°C) on the indirect side.",
+      "Lightly oil a vegetable grilling basket and place it on the hot side of the grill. Allow it to preheat for approximately 5 minutes.",
+      "Cook. Place the sliced mushrooms in the vegetable grilling basket and allow them to cook while turning frequently until they are just beginning to soften and are lightly browned, approximately 3 to 4 minutes. Remove the mushrooms, cover the grill, and close the vents (or dials if using a gas grill) to bring the temperature to approximately 225°F (107.2°C).",
+      "Prep and mix. Roughly chop the grilled mushrooms. Place the chopped mushrooms in a food processor and pulse until finely diced. If a food processor isn’t available, simply chop the mushrooms as fine as possible.",
+      "Place the minced mushrooms in a mixing bowl. Add the ground chuck, 1/2 teaspoon of the kosher salt, garlic powder, and onion powder to the bowl and gently mix the ingredients until the mushrooms are fully incorporated into the beef.",
+      "Divide the mixture into four equal portions, approximately 5 ounces (141.7 g) each, and form them into patties. Season both sides of the patties with the remaining kosher salt and the black pepper.",
+      "Cook again. Add 2 to 3 chunks of your favorite smoking wood to the charcoal for additional smoke flavor. Place the burgers on the indirect side of the grill, positioning the vent directly above the burgers in order to force the smoke over and around the meat. Cook the patties for about 5 minutes.",
+      "Push the tip of a rapid-read thermometer such as the Thermapen into the side of both burgers. When the temperature reaches 105°F (40.6°C), flip the burgers and cook for approximately 7 to 10 more minutes. Because they are not over direct heat, you do not need to flip them often.",
+      "When the burgers are about 20°F (-6.7°C) below the final doneness temp you want (see AmazingRibs.com’s award winning Food Temperature Guide), get ready to move them to the direct-heat zone. If you are on a gas grill, crank it up to high. On a charcoal grill, you may want to add more pre-lit coals. If necessary, take the meat off of the grill and close the lid while the hot side heats up.",
+      "Put the burgers on the direct heat side to brown them. Leave the lid up so the heat is concentrated on one side of each burger. If the fire flares up, move the burger to another spot. Flip the meat every minute to form a nice crust on both sides.",
+      "When the interior reaches 5°F (-15°C) below the desired doneness, add a slice of cheese to each one and let them cook until the cheese melts, approximately 2 minutes.",
+      "Serve. To assemble the burgers, add the lettuce and tomato to each bottom bun and top with a patty. Spread your favorite burger condiments on the top buns before placing on the burgers. Serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mushrooms",
+        "unit": "oz",
+        "notes": "a.k.a. cremini, sliced, preferably baby bella",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Chuck",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Morton Coarse Kosher Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Swiss Cheese",
+        "unit": "slices",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lettuce",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Slices",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hamburger Buns",
+        "unit": null,
+        "notes": "preferably onion rolls if available",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Your Favorite Burger Condiments",
+        "unit": null,
+        "notes": "such as ketchup",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7c3b5618ec147062d2e774bae4df67ecc20fe76166ccd47600e55c794d15539d",
+    "lineage_hash": "7fee0355a988ab7a0a7274b89a6d4c7f2911fe6721b6dcc877fdd04b50284999"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://amazingribs.com/tested-recipes/hamburger-sloppy-joe-salisbury-steak-recipes/beef-and-mushroom-blended-burgers/",
+    "fetchedAt": "2026-08-02T11:20:37.936Z"
+  },
+  "rawSource": "https://amazingribs.com/tested-recipes/hamburger-sloppy-joe-salisbury-steak-recipes/beef-and-mushroom-blended-burgers/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

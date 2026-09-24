@@ -1,0 +1,101 @@
+{
+  "recipe": {
+    "name": "Liège Waffles",
+    "time": "18 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "BE",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the sparkling water in the bowl of a stand mixer fitted with the hook attachment, then add the yeast. Add the eggs and granulated sugar and mix for a moment to blend. Add the flour and salt and start the mixer at low speed, pouring in the melted butter while mixing. Once the ingredients are blended, increase the speed to medium-low and knead the dough until it becomes elastic and smooth, about 5 minutes. Cover the bowl with plastic wrap and set aside for 1 hour to rise (it will double in size).",
+      "Turn the dough out onto a clean work surface (because of the butter in the dough, it’s unlikely you’ll need to dust your work area with flour). Press the dough into a rough rectangle and sprinkle with the pearl sugar (or crushed sugar cubes; see note). Roll up the dough and knead and twist it to work the sugar into the dough. Shape the dough into a log and cut it into 12 equal pieces. Shape each piece into a rough ball and set aside.",
+      "Preheat your waffle iron according to the manufacturer’s instructions. Place a piece of dough into the centre of the iron and close it. Cook the waffle for about 3 minutes, until a rich golden brown (the pockets of sugar will caramelize). Transfer the cooked waffle to a serving platter and repeat with the remaining balls of dough."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sparkling Water",
+        "unit": "C",
+        "notes": "room temperature",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Instant Dry Yeast",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "room temperature",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "still warm is OK, melted",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pearl Sugar",
+        "unit": "C",
+        "notes": "alt: crushed sugar cubes",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6c88c952d294632bfa6fd2aae3dc4d225672bf07981f398aa484ccf937086be9",
+    "lineage_hash": "b5f4292589569421a01ae87aada9b24f99e386fdcc2f7a078a7ad47a3706797f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/liege-waffles/",
+    "fetchedAt": "2026-08-01T19:59:44.389Z"
+  },
+  "rawSource": "https://annaolson.ca/project/liege-waffles/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

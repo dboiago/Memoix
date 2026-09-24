@@ -1,0 +1,104 @@
+{
+  "recipe": {
+    "name": "Bunker Crack Slurp",
+    "time": null,
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": null,
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Stack the chicken skins on top of each other over a large plastic-wrap. Roll the chicken skins into a thick log as tightly as you can, then twist the two ends of the plastic-wrap together to secure. Apply another layer of plastic-wrap if need to. Freeze for at least 2 hours until harden.",
+      "Remove from the plastic-wrap and cut into thin slices, which will give you even strips of chicken skins. Add the skins to a non-stick pot/deep skillet over medium heat. Let the skins render out its own fat, and stir occasionally as they slowly dehydrate and crisp up as they fries (they will get sticky mid-way through frying, then not-sticky again when they're done), until they are golden-brown and crispy, approx 8~9 min.",
+      "Drain through a fine sieve. Then season it immediately with 1/4 tsp of fine sea salt and 1/4 tsp of ground white pepper. Set aside.",
+      "Add however much vegetable oil you need to make it a heaping 1/2 cup, and return it to the same pot/skillet. Add the thinly sliced shallots and cook over medium-low heat. Stir constantly until the shallots dehydrate and turn lightly golden-browned, approx 10 min (they will continue to darken a bit, and will crisp up after removed from the oil).",
+      "Drain through a fine sieve, then immediately season with 1/4 tsp of fine sea salt and 1/4 tsp of ground white pepper. Mix the fried shallots and chicken cracklings together, season with more fine sea salt if need to. Set aside.",
+      "If you want to store crack. Freeze the chicken crackling + fried shallots in an air-tight container, and refrigerate the oil in an air-tight container."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oz Chicken Skins",
+        "unit": "oz",
+        "notes": "rinsed clean and dab dry",
+        "amount": "6.2",
+        "section": "The crack",
+        "isOptional": false
+      },
+      {
+        "name": "Or 4 Medium Asian Shallots",
+        "unit": "small",
+        "notes": "thinly sliced",
+        "amount": "5",
+        "section": "The crack",
+        "isOptional": false
+      },
+      {
+        "name": "Tsp Fine Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "The crack",
+        "isOptional": false
+      },
+      {
+        "name": "Tsp Ground White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "The crack",
+        "isOptional": false
+      },
+      {
+        "name": "Tbsp Crack-oil (chicken Fat)",
+        "unit": "Tbsp",
+        "notes": "reserved fat",
+        "amount": "2",
+        "section": "The slurp/noodle",
+        "isOptional": false
+      },
+      {
+        "name": "Tbsp Crack",
+        "unit": "Tbsp",
+        "notes": "chicken crackling + fried shallots",
+        "amount": "3",
+        "section": "The slurp/noodle",
+        "isOptional": false
+      },
+      {
+        "name": "Oz Fresh",
+        "unit": "oz",
+        "notes": "thick-cut Chinese hand-rolled noodles",
+        "amount": "14",
+        "section": "The slurp/noodle",
+        "isOptional": false
+      },
+      {
+        "name": "Tbsp Sichuan Douban Chili Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "The slurp/noodle",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "add039915a5aacd7e8fe8cc533d35511804c2412ab7cfbe09bc67f6cc184d00e",
+    "lineage_hash": "6f86e265202983c132550c94192040e2796ebccfa93895778616da8a91fc1c05"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ladyandpups.com/2014/05/16/bunker-crack-slurp-eng/",
+    "fetchedAt": "2026-08-02T05:56:52.158Z"
+  },
+  "rawSource": "https://ladyandpups.com/2014/05/16/bunker-crack-slurp-eng/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

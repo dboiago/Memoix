@@ -1,0 +1,132 @@
+{
+  "recipe": {
+    "name": "Kaju Pista Roll",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "17",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "112",
+      "carbohydrateContent": "12",
+      "fatContent": "6",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "Grind pistachios to fine powder. I like using my spice grinder for this, it grinds it really fine. Make sure to not over-grind it else it may release oil.",
+      "Transfer to a bowl, add 1/4 cup powdered sugar, and 1 tablespoon milk powder. Then add milk, little by little and form a dough. I added 2 teaspoons milk here, you may need more or less.The dough will feel sticky so grease your handle a little with ghee while bringing the dough together. Set aside.",
+      "To the same grinder, now add cashews. Grind cashews in batches (or if you have a bigger mixer, you can do it in one batch). Be careful and not over-grind. If your cashew powder looks sticky, it means you over did it and cashews released oil. You have to start over again if that happens. Sieve the cashew powder, you want a fine powder. I used a sifter for this. Set aside.",
+      "To a pan, add 1/2 cup granulated white sugar, 1/4 cup water and 1/2 teaspoon rose water. Let it come to a boil on medium-high heat.",
+      "After 5 to 6 minutes it reaches 1 string consistency (thermometer reading around 109-110 C (228-230 F). If you don&#39;t have a kitchen thermometer, place a drop of syrup between your thumb and index finger (be careful though as syrup is hot) and pull the fingers apart, you should see the syrup forming a thin thread. Kitchen thermometer gives accurate results and eliminates the guess work and so it you make Indian sweets often, I would recommend investing in one.",
+      "Immediately lower heat to low and add the prepared cashew powder. Also add 2 tablespoons milk powder. Stir until it all combines. Add 1 teaspoon ghee.",
+      "Cook on low heat for 3 to 5 minutes until mixture looks non-sticky and you are able to roll a non-sticky ball from the dough. It took me 4 minutes, it may take more or less depending on intensity of heat and thickness of pan, so time accordingly.",
+      "Immediately turn off heat and transfer mixture to parchment paper. Using the parchment paper knead the dough, you may add 1/2 tsp ghee at this point to make the dough smooth. We are using the parchment paper to knead the dough since the dough is very hot right now but we want to smooth is out while it&#39;s still warm.",
+      "Once it can be handled by hand, give a quick knead. Then place another piece of parchment paper on top and then using a rolling pin, roll into a thin sheet between two sheets of parchment paper.",
+      "Divide into 2 parts from the center. You have to do this while dough is still warm so you have to act quickly here. Also, divide the pistachio dough in 2 parts. Take one part and roll it into log. Place it into one of the rolled cashew sheet. (see pictures in the post for reference).",
+      "Start rolling it with while peeling the parchment paper beneath. Roll until you reach the other end and then seal it.",
+      "Now using your hands, roll it into a thin log, around 15 inches in length. Similarly fill and roll the other log as well. Roll both the logs first and then cut later else it becomes difficult to roll as the dough cools. You may apply edible silver leaves (chandi ka vark) on top to decorate.",
+      "Cut each log into 1.5 to 2 inches rolls. Kaju Pista rolls are ready to serve!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pistachios Kernels",
+        "unit": "C",
+        "notes": "90 grams, comes to 3/4 cup pistachio powder after grinding",
+        "amount": "¾",
+        "section": "Pistachio Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Powdered Sugar",
+        "unit": "C",
+        "notes": "30 grams, also known as icing sugar/confectioners sugar. Do not replace with granulated white sugar.",
+        "amount": "¼",
+        "section": "Pistachio Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Milk Powder",
+        "unit": "Tbsp",
+        "notes": "9 grams",
+        "amount": "1",
+        "section": "Pistachio Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "tsp",
+        "notes": "10 ml, or as needed",
+        "amount": "2",
+        "section": "Pistachio Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Cashews",
+        "unit": "C",
+        "notes": "150 grams",
+        "amount": "1",
+        "section": "Cashew Layer",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated White Sugar",
+        "unit": "C",
+        "notes": "100 grams",
+        "amount": "½",
+        "section": "Cashew Layer",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "60 ml",
+        "amount": "¼",
+        "section": "Cashew Layer",
+        "isOptional": false
+      },
+      {
+        "name": "Rose Water",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Cashew Layer",
+        "isOptional": false
+      },
+      {
+        "name": "Milk Powder",
+        "unit": "Tbsp",
+        "notes": "18 grams",
+        "amount": "2",
+        "section": "Cashew Layer",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Cashew Layer",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "559937d750ae3b8f4a69e9cae96c4b7867c9fcc3df50ca5c3e03f86fb2331b98",
+    "lineage_hash": "0ca15b4f27fad111ab0ee154143b3191f64fee873787d640330b9698781b205e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/kaju-pista-roll/",
+    "fetchedAt": "2026-08-02T02:25:17.013Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/kaju-pista-roll/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,86 @@
+{
+  "recipe": {
+    "name": "Frozen rosy apple foam",
+    "time": null,
+    "course": "modernist",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": null,
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Grind xanthan, methyl cellulose and sugar in mortar (easier dispersion of hydrocolloid in water).",
+      "Mix liquids in a bowl and disperse sugar and hydrocolloids into solution with a hand held immersion blender.",
+      "For better foam production change to tilted disk attachment or use an electric whisk.",
+      "Freeze."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Xanthan",
+        "unit": "g",
+        "notes": null,
+        "amount": "2.1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Methyl Cellulose",
+        "unit": "g",
+        "notes": null,
+        "amount": "3.6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rose Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "6.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d75f38b6fa0649d9427ee81eda9e21a883f5581c7b97d955f37b5064c5c2666b",
+    "lineage_hash": "2183c3140b90790ce4a0e3fffa997f100444d4bee46fee82240dea21808a1f77"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://khymos.org/2009/05/07/tgfwt-17-frozen-rosy-apple-foam/",
+    "fetchedAt": "2026-08-01T22:22:47.829Z"
+  },
+  "rawSource": "https://khymos.org/2009/05/07/tgfwt-17-frozen-rosy-apple-foam/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

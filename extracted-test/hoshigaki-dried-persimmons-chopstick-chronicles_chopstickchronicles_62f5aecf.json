@@ -1,0 +1,60 @@
+{
+  "recipe": {
+    "name": "Hoshigaki Dried Persimmons",
+    "time": "14 days 20 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "20",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "213",
+      "carbohydrateContent": "56",
+      "fatContent": "1",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Wash and peel persimmons with a sharp paring knife or a peeler. It’s personal preference.",
+      "Starting from the bottom of the persimmon, peel vertically towards the top of each fruit.",
+      "Tie a slip knot at the end of each string.",
+      "Spread out the space between the twisted strings just above the knot.",
+      "Hang a persimmon stem through the opening of the string.",
+      "Repeat above for all persimmons.",
+      "Boil water in a pot and dip the persimmons in it for about 5 seconds. Don’t forget to do this step as it sterilises the food and prevents mold from growing.",
+      "Hang the persimmons on a drying laundry rack outside in a well-ventilated and sunny spot with good air circulation. Arrange the persimmons so that they are staggered and not next to each other. On rainy days, move the laundry rack indoors or to a place where it will not be exposed to direct rain. Also if you dry your persimmons outside, they may be eaten by birds and other animals such as mice or insects such as stink bugs, so bring it indoors at night.",
+      "After about 5 days to a week, the outer skin will start to harden. At this point, give each persimmon a gentle squeeze/massage each persimmon with your fingers (avoid squishing it). Massage them again every second day onwards. This removes the bitterness and will become sweeter quickly.",
+      "It depends on the size of the persimmons and the weather, but it usually takes a couple of weeks (about 2 to 3) until the bitterness is gone and the desired firmness is achieved, then cut off the strings along with the branches. The degree of dryness depends on how long you leave them. If you like hard persimmons, you can dry them longer, and if you like softer persimmons, you can dry them shorter.",
+      "Leave the stem part in a T shape to make it easier to tie the string.",
+      "Hang the persimmons on a laundry rack, leaving space between them so they don’t stick together.",
+      "Massage persimmons with clean hands after the outer skin hardens. By massaging, the taste and softness become uniform."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Astringent Persimmons",
+        "unit": null,
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d7bc6d5a25e51a174741dd55eba973cd071c11a488c1546ad8f71762399e1933",
+    "lineage_hash": "f56ebf2dfa3436d584058c4e4e1545512a2d6bcf65f02c0288159ab9f4756b60"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chopstickchronicles.com/hoshigaki-dried-persimmon/",
+    "fetchedAt": "2026-08-02T02:57:13.162Z"
+  },
+  "rawSource": "https://www.chopstickchronicles.com/hoshigaki-dried-persimmon/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,190 @@
+{
+  "recipe": {
+    "name": "Fettuccine with Sea Bream",
+    "time": "1 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the sea bream tartare, carefully check the fish for any remaining bones then finely dice the flesh. Chop the langoustine into quarters and reserve both (separately) in the fridge until ready to serve",
+      "Place the butter and oil together in a pan and melt over a medium heat. Stir in the chopped garlic and allow to soften for a few minutes without colouring",
+      "Pour in the chicken stock and bring to a simmer. Allow the liquid to reduce by half – about 5–10 minutes",
+      "Meanwhile, bring a pan of salted water to the boil over a medium heat and add the fettuccine. Cook for 7 minutes – the pasta should not be cooked through completely",
+      "Drain the pasta and transfer to the pan of reduced chicken stock to finish cooking for another 5 minutes – keep warm while making the sauce",
+      "For the pasta sauce, place the milk and cream in another pan and bring to the boil over a medium heat. Once boiling, remove from the heat and whisk a third of the hot cream into the whisked egg yolks",
+      "Pour this egg yolk mixture back into the pan with the remaining hot cream and stir in the cheese so that it melts into the sauce",
+      "Transfer the sauce to a bowl and place over a pan of barely simmering water, being careful not to let the bowl touch the water. Heat the sauce through until it reaches 80°C, then pass through a fine sieve to remove any lumps. Season well",
+      "Drain any remaining stock from the cooked pasta then stir in 100g of the cheese sauce. Mix thoroughly so that the pasta is fully coated in the rich cheese and egg sauce",
+      "Bring a large pan of salted water to the boil and blanch the asparagus tips for 2 minutes. Drain and plunge into iced water to cool quickly and to stop the cooking process",
+      "To serve, twirl a nest of fettuccine on to each plate and pour over any remaining sauce. Add a line of the diced sea bream tartare and the langoustine pieces, then scatter over the asparagus tips",
+      "Pile up the slices of black truffle over the pasta and finish with a few edible flowers for garnish and a drizzle of extra virgin olive oil to serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Fettuccine",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Knob of Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": "whisked",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Provolone Cheese",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Bream Fillet",
+        "unit": "g",
+        "notes": "skinless, pin-boned",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Asparagus Spears",
+        "unit": "bunch",
+        "notes": "stalks discarded, tips only",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Langoustine",
+        "unit": null,
+        "notes": "cooked and peeled",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Truffle",
+        "unit": null,
+        "notes": "finely sliced or shaved",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Edible Flowers",
+        "unit": null,
+        "notes": "to garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "851781cb4588a8f4db06863afb00d4395335992576a6d2296152ca251821f979",
+    "lineage_hash": "771dce1d8c97f1815b16949d051409b52fbcc140ed716de07c31e3b4fe52c80f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/sea-bream-fettuccine-recipe",
+    "fetchedAt": "2026-08-02T05:34:31.872Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/sea-bream-fettuccine-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

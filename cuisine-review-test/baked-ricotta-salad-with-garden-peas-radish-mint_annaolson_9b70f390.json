@@ -1,0 +1,142 @@
+{
+  "recipe": {
+    "name": "Baked Ricotta Salad with Garden Peas, Radish & Mint",
+    "time": "15 min",
+    "course": "salads",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 375°F (190°C).",
+      "In a small bowl, stir the ricotta, Parmesan, lemon zest and thyme. Spread this into a small baking dish and bake, uncovered, for about 10 minutes to warm it through.",
+      "While the ricotta warms, assemble the salad. Arrange the pea shoots on a platter or on individual salad plates. Top with the cucumbers, radishes and peas. Spoon the vinaigrette overtop and season lightly with salt and pepper.",
+      "Dollop the warm ricotta onto the salad and sprinkle with chives. Serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ricotta Cheese",
+        "unit": "C",
+        "notes": "225 g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan Cheese",
+        "unit": "C",
+        "notes": "25 g",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Zest",
+        "unit": "tsp",
+        "notes": "finely grated",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "tsp",
+        "notes": "finely chopped fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pea Shoots",
+        "unit": "C",
+        "notes": "360 g",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumbers",
+        "unit": "C",
+        "notes": "315 g, sliced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Radishes",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garden Peas",
+        "unit": "C",
+        "notes": "fresh, 210 g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "Tbsp",
+        "notes": "15 mL",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": "45 mL",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallot",
+        "unit": "small",
+        "notes": "finely diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra-virgin Olive Oil",
+        "unit": "C",
+        "notes": "80 mL",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ec011b92b0c86e4b7bca49321602b27886335420a3440c19c1e447e78a17da9f",
+    "lineage_hash": "ddad2e86b92bf244766f1e72cdc523583e2ef4c8baa0eee51d396af1d265d548"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/baked-ricotta-salad-with-garden-peas-radish-mint/",
+    "fetchedAt": "2026-08-02T01:16:15.771Z"
+  },
+  "rawSource": "https://annaolson.ca/project/baked-ricotta-salad-with-garden-peas-radish-mint/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

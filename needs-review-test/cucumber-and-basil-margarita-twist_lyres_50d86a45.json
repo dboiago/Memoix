@@ -1,0 +1,87 @@
+{
+  "recipe": {
+    "name": "Cucumber and Basil Margarita Twist",
+    "time": "3 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": null,
+    "glass": "Rocks",
+    "garnish": [
+      "Cucumber Ribbon",
+      "Basil Leaf"
+    ],
+    "subcategory": "Liqueur",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "95",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Gently muddle the cucumber and basil leaves in a cocktail shaker.",
+      "Add Lyre's Agave Blanco, fresh lime juice and sugar syrup.",
+      "Fill the shaker with ice and shake briefly to chill.",
+      "Fine strain into a rocks glass filled with fresh ice.",
+      "Garnish with a cucumber ribbon, basil sprig and a lime wheel. Optional: add a light salt rim."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Lyre's Agave Blanco Spirit",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "ml",
+        "notes": "fresh",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Simple Syrup",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber",
+        "unit": "g",
+        "notes": "3-4 thick slices, fresh",
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basil Leaves",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "5-6",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9b8bbc3f3440efda6cda46f1cdfec4f0226ac3418077071854103416283061b1",
+    "lineage_hash": "16c6891a5f92fbe06431ac79c10cfb7d9da3fe0e5411aaa8cf504f0335437378"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://lyres.com/en-uk/products/lyres-cucumber-and-basil-margarita-twist",
+    "fetchedAt": "2026-08-02T22:07:32.621Z"
+  },
+  "rawSource": "https://lyres.com/en-uk/products/lyres-cucumber-and-basil-margarita-twist",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}
