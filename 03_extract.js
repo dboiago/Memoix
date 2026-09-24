@@ -650,7 +650,11 @@ function looksLikeRealIngredientLines(lines) {
 // Chocolate Hazelnut Cereal, which uses exactly that heading style. Also
 // allows a leading descriptor word before the keyword ("## Recipe Steps")
 // -- confirmed necessary on barbecuebible.com, used site-wide.
-const METHOD_HEADING_PATTERN = /^(#{1,6})\s*[*_]{0,2}\s*(?:recipe\s+)?(method|instructions?|directions?|steps?|preparation|how to make)\b/i;
+// "process photos" added for baking-sense.com: its caption bullets under
+// that heading are the only place real step text sits when the model
+// misses directions there -- confirmed on Sourdough Chocolate Babka and
+// Triple Guinness Bundt Cake.
+const METHOD_HEADING_PATTERN = /^(#{1,6})\s*[*_]{0,2}\s*(?:recipe\s+)?(method|instructions?|directions?|steps?|preparation|how to make|process photos)\b/i;
 function extractMarkdownDirections(markdown) {
   if (!markdown) return null;
   const lines = markdown.split('\n');
@@ -661,7 +665,7 @@ function extractMarkdownDirections(markdown) {
     .replace(INVISIBLE_CHAR_PATTERN, '')
     .trim();
 
-  const collectFromLines = (sectionLines) => {
+  const collectFromLines = (sectionLines, allowPlainBulletFallback = false) => {
     const found = [];
     for (const line of sectionLines) {
       const trimmed = line.trim();
@@ -691,6 +695,27 @@ function extractMarkdownDirections(markdown) {
       const cleaned = clean(candidate);
       if (cleaned) found.push(cleaned);
     }
+    // Third shape, gated on allowPlainBulletFallback (only passed true for a
+    // heading section with a confirmed closing boundary -- see call site):
+    // baking-sense.com's "## Process Photos" captions are plain "- " bullets
+    // with no numbering at all. Terminal punctuation is the only thing that
+    // tells a caption from that same site's unpunctuated ingredient bullets
+    // ("8 oz golden raisins (1 ½ cups)"), so an unbounded section (running to
+    // end of document instead of a real next heading) is deliberately never
+    // allowed to use this shape -- with no closing heading to trust, it could
+    // just as easily sweep in an unrelated punctuated bullet list (notes,
+    // FAQ, related-recipe links) further down the same page.
+    if (allowPlainBulletFallback && found.length === 0) {
+      for (const line of sectionLines) {
+        const trimmed = line.trim();
+        const m = trimmed.match(/^[-*]\s+(.+)$/);
+        if (!m) continue;
+        const candidate = m[1].trim();
+        if (!/[.!?]["'\)\]]*$/.test(candidate)) continue;
+        const cleaned = clean(candidate);
+        if (cleaned) found.push(cleaned);
+      }
+    }
     return { steps: found, explicit: false };
   };
 
@@ -700,10 +725,11 @@ function extractMarkdownDirections(markdown) {
     const level = lines[startIdx].trim().match(METHOD_HEADING_PATTERN)[1].length;
     const boundaryPattern = new RegExp(`^#{1,${level}}\\s`);
     let endIdx = lines.length;
+    let boundaryClosed = false;
     for (let i = startIdx + 1; i < lines.length; i++) {
-      if (boundaryPattern.test(lines[i].trim())) { endIdx = i; break; }
+      if (boundaryPattern.test(lines[i].trim())) { endIdx = i; boundaryClosed = true; break; }
     }
-    ({ steps, explicit: explicitMarker } = collectFromLines(lines.slice(startIdx + 1, endIdx)));
+    ({ steps, explicit: explicitMarker } = collectFromLines(lines.slice(startIdx + 1, endIdx), boundaryClosed));
   } else {
     // No heading text at all to anchor on -- confirmed on
     // greatbritishchefs.com's Celeriac and Le Gruyère AOP Agnolotti: the
