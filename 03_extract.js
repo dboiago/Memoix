@@ -2512,6 +2512,30 @@ async function main() {
 
       const payload = buildPayload(extracted, meta);
 
+      // buildPayload defaults amount to '0' whenever nothing real was ever
+      // extracted for that ingredient. A single '0' alongside real amounts
+      // is fine and common (ice, garnish, salt to taste -- confirmed on
+      // americano-cocktail-recipe: only "Ice" is unmeasured, everything
+      // else has a real ml/dash/slice amount). But when MOST or ALL
+      // ingredients in a recipe are '0', that's not "unmeasured items," it's
+      // ingredient-amount extraction failing wholesale -- confirmed on two
+      // real but different causes: anpan-sweet-red-bean-buns (a narrative
+      // "why these ingredients" blurb got extracted as the ingredient list
+      // instead of the page's own fully-quantified recipe card further
+      // down) and steak-tartare-with-dill-yogurt-sauce (the source page
+      // itself never states real quantities anywhere, only vague prose like
+      // "a pinch of salt"). Both need a human, not a silent ship as clean.
+      // Same tolerate-a-small-minority threshold as looksLikeRealIngredientLines.
+      const zeroAmountCount = payload.recipe.ingredients.filter(i => i.amount === '0').length;
+      if (payload.recipe.ingredients.length > 0 &&
+          zeroAmountCount > Math.max(1, Math.floor(payload.recipe.ingredients.length * 0.2))) {
+        logForReview(slug, meta.url, 'mostly-unquantified-ingredients',
+          `${zeroAmountCount}/${payload.recipe.ingredients.length} ingredients have no amount`,
+          'Most or all ingredients have no extracted quantity -- likely a wholesale amount-extraction failure ' +
+          'rather than genuinely unmeasured items.');
+        flaggedForReview = true;
+      }
+
       // Deterministic tie check on drink subcategory, not a spirits
       // classifier: finds ingredients that share a unit and are tied for
       // the largest parsed amount in that unit group, the same signal as
