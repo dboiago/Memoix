@@ -170,9 +170,13 @@ function tokenizeLdField(input) {
   return input.toLowerCase().split(/[,/&]+/).map(s => s.trim()).filter(Boolean);
 }
 
-// Returns a VALID_COURSES value or null. Only ever called with meta.ldCategory.
-function resolveCourseFromLd(ldCategory) {
-  for (const token of tokenizeLdField(ldCategory)) {
+// Returns a VALID_COURSES value or null. Called with both meta.ldCategory
+// and meta.ldCuisine -- confirmed on real corpus data ("American, Dessert"
+// in a page's own ldCuisine field) that some sites mix a course word into
+// the cuisine property instead of ever setting a real category, wasting a
+// real per-recipe signal if only ldCategory were checked.
+function resolveCourseFromLd(ldField) {
+  for (const token of tokenizeLdField(ldField)) {
     if (LD_COURSE_MAP[token]) return LD_COURSE_MAP[token];
   }
   return null;
@@ -1918,8 +1922,9 @@ async function main() {
       // maps unambiguously, that beats whatever the model guessed -- no
       // instruction-following risk, and it's guaranteed to already be a
       // valid VALID_COURSES value by construction, so the check below
-      // can't fire a false invalid-course flag on it.
-      const ldCourse = resolveCourseFromLd(meta.ldCategory);
+      // can't fire a false invalid-course flag on it. Also tries ldCuisine
+      // second -- see resolveCourseFromLd for why.
+      const ldCourse = resolveCourseFromLd(meta.ldCategory) || resolveCourseFromLd(meta.ldCuisine);
       let courseGrounded = false;
       if (ldCourse) {
         extracted.course = ldCourse;
