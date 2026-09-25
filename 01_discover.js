@@ -31,9 +31,14 @@
 import fs from 'fs';
 import readline from 'readline';
 import { parseStringPromise } from 'xml2js';
+import { JSDOM } from 'jsdom';
 
 const SITES_FILE = './urls/sites.txt';
 const OUTPUT_QUEUE = './urls/queue.txt';
+const MAX_CRAWL_PAGES = 25;
+const CRAWL_DELAY_MS = 500;
+
+const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 // --- CONFIGURATION & FILTERS ---
 
@@ -105,6 +110,12 @@ function normalizeDomain(urlStr) {
 
 // --- SITEMAP PARSER ---
 
+// Some sites emit sitemaps with stray literal "&" in <loc> text (e.g. unescaped
+// query strings), which is invalid XML and otherwise kills the whole parse.
+function sanitizeXmlEntities(xmlText) {
+  return xmlText.replace(/&(?!amp;|lt;|gt;|quot;|apos;|#\d+;|#x[0-9a-fA-F]+;)/g, '&amp;');
+}
+
 async function fetchAndParseXml(url) {
   try {
     const res = await fetch(url, { headers: FETCH_HEADERS, signal: AbortSignal.timeout(15000) });
@@ -113,30 +124,33 @@ async function fetchAndParseXml(url) {
       return null;
     }
     const xmlText = await res.text();
-    return await parseStringPromise(xmlText);
+    return await parseStringPromise(sanitizeXmlEntities(xmlText));
   } catch (err) {
     console.error(`Error fetching/parsing XML at ${url}:`, err.message);
     return null;
   }
 }
 
-async function processSitemap(sitemapUrl, baseDomain, discoveredUrls) {
-  // Check if sub-sitemap should be skipped
-  if (IGNORED_SITEMAP_PATTERNS.some(pattern => pattern.test(sitemapUrl))) {
+// isChildSitemap is only true for <sitemap> entries found inside a
+// <sitemapindex> -- the ignore patterns target known non-recipe sub-sitemaps
+// (e.g. "category-sitemap.xml") and must never gate the site's own top-level
+// URL, which can legitimately contain words like "category" in its path.
+async function processSitemap(sitemapUrl, baseDomain, discoveredUrls, isChildSitemap = false) {
+  if (isChildSitemap && IGNORED_SITEMAP_PATTERNS.some(pattern => pattern.test(sitemapUrl))) {
     console.log(`Skipping ignored sub-sitemap: ${sitemapUrl}`);
-    return;
+    return false;
   }
 
   console.log(`Processing sitemap: ${sitemapUrl}`);
   const xml = await fetchAndParseXml(sitemapUrl);
-  if (!xml) return;
+  if (!xml) return false;
 
   // Handle Sitemap Index (<sitemapindex><sitemap><loc>...</loc></sitemap></sitemapindex>)
   if (xml.sitemapindex && xml.sitemapindex.sitemap) {
     for (const entry of xml.sitemapindex.sitemap) {
       const childLoc = entry.loc ? entry.loc[0].trim() : null;
       if (childLoc) {
-        await processSitemap(childLoc, baseDomain, discoveredUrls);
+        await processSitemap(childLoc, baseDomain, discoveredUrls, true);
       }
     }
   }
@@ -149,6 +163,58 @@ async function processSitemap(sitemapUrl, baseDomain, discoveredUrls) {
         discoveredUrls.add(loc);
       }
     }
+  }
+
+  return true;
+}
+
+// Fallback for sites with no reachable sitemap: crawl the provided index page
+// directly, following rel="next" pagination up to MAX_CRAWL_PAGES. Downstream
+// (02_fetch.js) already filters out non-recipe pages via JSON-LD/site-config
+// checks, so being permissive about which links get queued here is safe.
+async function crawlIndexPage(startUrl, baseDomain, discoveredUrls) {
+  let currentUrl = startUrl;
+  const visited = new Set();
+  let pagesVisited = 0;
+
+  while (currentUrl && !visited.has(currentUrl) && pagesVisited < MAX_CRAWL_PAGES) {
+    visited.add(currentUrl);
+    pagesVisited++;
+    console.log(`Crawling index page: ${currentUrl}`);
+
+    let html;
+    try {
+      const res = await fetch(currentUrl, { headers: FETCH_HEADERS, signal: AbortSignal.timeout(15000) });
+      if (!res.ok) {
+        console.warn(`[HTTP ${res.status}] Failed to fetch index page: ${currentUrl}`);
+        break;
+      }
+      html = await res.text();
+    } catch (err) {
+      console.error(`Error fetching index page at ${currentUrl}:`, err.message);
+      break;
+    }
+
+    let dom;
+    try {
+      dom = new JSDOM(html, { url: currentUrl });
+    } catch (err) {
+      console.error(`Error parsing HTML at ${currentUrl}:`, err.message);
+      break;
+    }
+
+    let added = 0;
+    for (const a of dom.window.document.querySelectorAll('a[href]')) {
+      const absolute = a.href;
+      if (normalizeDomain(absolute) !== baseDomain || !isAllowedUrl(absolute, baseDomain)) continue;
+      if (!discoveredUrls.has(absolute)) added++;
+      discoveredUrls.add(absolute);
+    }
+    console.log(`  Found ${added} new URL(s) on this page.`);
+
+    const nextEl = dom.window.document.querySelector('a[rel="next"], link[rel="next"]');
+    currentUrl = nextEl ? nextEl.href : null;
+    if (currentUrl) await sleep(CRAWL_DELAY_MS);
   }
 }
 
@@ -184,14 +250,37 @@ async function runDiscovery() {
     if (!rawUrl) continue;
 
     const baseDomain = normalizeDomain(rawUrl);
-    
-    // Default fallback to standard /sitemap.xml if direct root provided
-    const sitemapTarget = rawUrl.endsWith('.xml') 
-      ? rawUrl 
-      : `${rawUrl.replace(/\/$/, '')}/sitemap.xml`;
+
+    // Sitemap candidates: the guessed sub-path first (preserves sites whose
+    // real sitemap lives under a specific section), then the common
+    // root-domain locations WordPress/Yoast-style sites actually use.
+    let sitemapCandidates;
+    if (rawUrl.endsWith('.xml')) {
+      sitemapCandidates = [rawUrl];
+    } else {
+      const trimmedRaw = rawUrl.replace(/\/$/, '');
+      const root = `${new URL(rawUrl).protocol}//${new URL(rawUrl).hostname}`;
+      sitemapCandidates = [...new Set([
+        `${trimmedRaw}/sitemap.xml`,
+        `${root}/sitemap.xml`,
+        `${root}/sitemap_index.xml`
+      ])];
+    }
 
     console.log(`\n--- Starting Discovery for: ${baseDomain} ---`);
-    await processSitemap(sitemapTarget, baseDomain, discoveredUrls);
+
+    let sitemapFound = false;
+    for (const candidate of sitemapCandidates) {
+      if (await processSitemap(candidate, baseDomain, discoveredUrls)) {
+        sitemapFound = true;
+        break;
+      }
+    }
+
+    if (!sitemapFound) {
+      console.log(`No sitemap found for ${baseDomain}, falling back to crawling: ${rawUrl}`);
+      await crawlIndexPage(rawUrl, baseDomain, discoveredUrls);
+    }
   }
 
   console.log(`\n========================================`);
