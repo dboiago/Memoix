@@ -187,6 +187,36 @@ function resolveCuisineFromLd(ldCuisine) {
   return null;
 }
 
+// Famous, well-documented cases of a dish reading as one nationality but not
+// actually being from there -- German chocolate cake (named after Sam
+// German, a person), French toast/fries/dressing/vanilla, English muffins
+// and Italian dressing (both American inventions), Spanish rice
+// (Mexican-American). Checked before the demonym match below so none of
+// these can ever ground a cuisine off the title alone.
+const CUISINE_NAME_EXCLUSION_PATTERNS = [
+  /french\s+toast/i, /french\s+fries?/i, /french\s+dressing/i, /french\s+vanilla/i,
+  /german\s+chocolate/i,
+  /english\s+muffins?/i, /english\s+toffee/i,
+  /spanish\s+rice/i,
+  /italian\s+dressing/i,
+];
+
+// Returns a two-letter ISO code or null. Reuses LD_CUISINE_MAP's exact
+// demonym->code mapping so a title-literal match ("Indian Tandoori
+// Marinade") resolves to the identical code ldCuisine would, rather than
+// maintaining a second, divergent list. Word-boundary matched so a demonym
+// embedded in an unrelated word can't fire. Only ever called on real prose
+// (name/title/ldName), never a hyphenated URL slug -- the exclusion
+// patterns above rely on a literal space, which a slug wouldn't have.
+function resolveCuisineFromNameLiteral(text) {
+  if (!text) return null;
+  if (CUISINE_NAME_EXCLUSION_PATTERNS.some(p => p.test(text))) return null;
+  for (const [word, code] of Object.entries(LD_CUISINE_MAP)) {
+    if (new RegExp(`\\b${word}\\b`, 'i').test(text)) return code;
+  }
+  return null;
+}
+
 const RECIPE_SCHEMA = {
   type: 'object',
   properties: {
@@ -2364,8 +2394,18 @@ async function main() {
       // Falls through to the blind check below when ldCuisine is absent or
       // too broad to map confidently (e.g. "Mediterranean").
       const ldCuisine = resolveCuisineFromLd(meta.ldCuisine);
+      // Second-tier, equally-trusted override: an unambiguous demonym in the
+      // recipe's own title/name is as certain a signal as ldCuisine, and
+      // checked before any site-tag fallback below so it can correctly
+      // override a stale/drifted site tag (e.g. a Korean-tagged site's
+      // occasional Thai post) instead of inheriting the wrong region.
+      const nameLiteralCuisine = !ldCuisine
+        ? resolveCuisineFromNameLiteral([extracted.name, meta.title, meta.ldName].filter(Boolean).join(' '))
+        : null;
       if (ldCuisine) {
         extracted.cuisine = ldCuisine;
+      } else if (nameLiteralCuisine) {
+        extracted.cuisine = nameLiteralCuisine;
       } else {
         // Previously only ran when meta.siteRegionHint existed, on the
         // theory that an unhinted site has nothing for the model to lean
@@ -2457,7 +2497,7 @@ async function main() {
       // that check. This never fires when either grounding signal exists,
       // so it only catches the specific case where nothing else in the
       // pipeline had a chance to catch it either.
-      if (extracted.cuisine && !ldCuisine && !meta.siteRegionHint) {
+      if (extracted.cuisine && !ldCuisine && !nameLiteralCuisine && !meta.siteRegionHint) {
         logForReview(slug, meta.url, 'cuisine-unverified-no-grounding', extracted.cuisine,
           'Cuisine has no page-level (ldCuisine) or site-level (siteRegionHint) signal to check it against -- ' +
           'model-inferred with no grounding at all.');
