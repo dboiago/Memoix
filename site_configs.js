@@ -78,6 +78,28 @@ const SITE_CONFIGS = {
     ingredientSelector: 'li:not(.category)',
     mode: 'mixedList',
   },
+  // The "Tasty Recipes" WP plugin (WP Tasty) -- unrelated to the "tasty" key
+  // above (Tasty.co/BuzzFeed). Confirmed via real page source on
+  // okonomikitchen.com's Anpan: its own ingredients <h3> literally reads
+  // "Ingredients" too, duplicating the page's earlier narrative-blurb
+  // heading text -- which is exactly why generic-text-heading below was
+  // matching that wrong, unquantified section instead of this one. Placed
+  // before generic-text-heading so this specific container gets first
+  // chance to match. Real sub-group headers are plain <h4> (not a class),
+  // each immediately followed by its <ul> -- one exception confirmed on the
+  // same page: a "Dough Ingredients:" h4 has an extra <p><strong>Original
+  // Version</strong></p> label before its <ul>, which siblingHeaderList's
+  // walk already tolerates (skips non-h2/h3 siblings until it finds the
+  // list). A second, unlabeled variant list ("Vegan Eggless Version",
+  // introduced by a bare <p>, no owning h4) is silently NOT captured by this
+  // config -- accepted tradeoff: dropping an alternate version is safer
+  // than merging two different ingredient sets under one heading.
+  'tasty-recipes-plugin': {
+    containerSelector: '.tasty-recipes-ingredients',
+    headerSelector: 'h4',
+    ingredientSelector: 'li',
+    mode: 'siblingHeaderList',
+  },
   // Last-resort fallback for pages with zero recipe-plugin markup at all --
   // confirmed 2026-07-10 against an okonomikitchen.com post from 2018 that
   // predates the site's later recipe-plugin adoption: just a bare `<h2>` (or
