@@ -30,6 +30,7 @@
 
 import fs from 'fs';
 import readline from 'readline';
+import zlib from 'zlib';
 import { parseStringPromise } from 'xml2js';
 import { JSDOM } from 'jsdom';
 
@@ -52,7 +53,11 @@ const FETCH_HEADERS = {
 const IGNORED_SITEMAP_PATTERNS = [
   /_fr\.xml/i, /_it\.xml/i, /_de\.xml/i, /_es\.xml/i,
   /\/fr-ca\//i, /\/it-eu\//i, /\/de-eu\//i, /\/fr-eu\//i,
-  /forum/i, /user-generated/i, /post_tag/i, /author/i, /category/i
+  /forum/i, /user-generated/i, /post_tag/i, /author/i, /category/i,
+  // Confirmed non-recipe WP taxonomy/CPT sitemaps (shop products, media
+  // attachments/images, job listings, company pages).
+  /product(_cat|_tag)?-sitemap/i, /attachment-sitemap/i, /image-sitemap/i,
+  /jobs?-sitemap/i, /unternehmen-sitemap/i
 ];
 
 // Non-English path segments to drop
@@ -123,7 +128,12 @@ async function fetchAndParseXml(url) {
       console.warn(`[HTTP ${res.status}] Failed to fetch: ${url}`);
       return null;
     }
-    const xmlText = await res.text();
+    // Some sitemap indexes point at statically pre-gzipped files (.xml.gz)
+    // rather than relying on transport-level Content-Encoding, so fetch()
+    // won't auto-decompress them -- gunzip manually in that case.
+    const xmlText = url.endsWith('.gz')
+      ? zlib.gunzipSync(Buffer.from(await res.arrayBuffer())).toString('utf-8')
+      : await res.text();
     return await parseStringPromise(sanitizeXmlEntities(xmlText));
   } catch (err) {
     console.error(`Error fetching/parsing XML at ${url}:`, err.message);
