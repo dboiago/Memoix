@@ -55,9 +55,11 @@ const IGNORED_SITEMAP_PATTERNS = [
   /\/fr-ca\//i, /\/it-eu\//i, /\/de-eu\//i, /\/fr-eu\//i,
   /forum/i, /user-generated/i, /post_tag/i, /author/i, /category/i,
   // Confirmed non-recipe WP taxonomy/CPT sitemaps (shop products, media
-  // attachments/images, job listings, company pages).
+  // attachments/images, job listings, company pages, cookbook product
+  // pages, trade-press news). video-sitemap is deliberately NOT here --
+  // verified it mixes real "Rezept ..." recipe entries in with interviews.
   /product(_cat|_tag)?-sitemap/i, /attachment-sitemap/i, /image-sitemap/i,
-  /jobs?-sitemap/i, /unternehmen-sitemap/i
+  /jobs?-sitemap/i, /unternehmen-sitemap/i, /books-sitemap/i, /news-sitemap/i
 ];
 
 // Non-English path segments to drop
