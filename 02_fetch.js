@@ -39,7 +39,11 @@ const USER_AGENT       = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/
 
 // Filters for non-HTML static assets, API endpoints, and category/archive pages
 const IGNORE_PATTERN   = /\.(png|jpg|jpeg|gif|webp|svg|css|js|md|json|pdf|zip|gz)$|xmlrpc\.php|javascript:void\(0\)|#$/i;
-const INDEX_PATTERN    = /\/(recipe-archives|category|blog|tag|recipes|pages)\/?$/i;
+// /page/N/ catches WordPress-style pagination archive URLs -- these start
+// showing up in the queue now that 01_discover.js's crawl fallback follows
+// (and picks up the widget links for) paginated index pages, not just
+// sitemaps.
+const INDEX_PATTERN    = /\/(recipe-archives|category|blog|tag|recipes|pages)\/?$|\/page\/\d+\/?$/i;
 
 // Consolidated from cleanup.js/cleanup2.js/cleanup3.js -- those existed as
 // separate manual passes over urls/queue.txt because these rules were never
