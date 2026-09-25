@@ -162,6 +162,7 @@ const LD_CUISINE_MAP = {
   'american': 'US', 'italian': 'IT', 'mexican': 'MX', 'french': 'FR', 'chinese': 'CN',
   'japanese': 'JP', 'indian': 'IN', 'thai': 'TH', 'greek': 'GR', 'spanish': 'ES',
   'german': 'DE', 'korean': 'KR', 'vietnamese': 'VN', 'british': 'GB', 'english': 'GB',
+  'indonesian': 'ID', 'malaysian': 'MY', 'malay': 'MY', 'argentinian': 'AR', 'irish': 'IE',
 };
 
 function tokenizeLdField(input) {
