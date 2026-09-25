@@ -274,5 +274,73 @@
   "annaolson.ca": {
     "region": "CA",
     "course": "Desserts"
+  },
+  "japancentre.com": {
+    "region": "JP",
+    "course": null
+  },
+  "ozlemsturkishtable.com": {
+    "region": "TR",
+    "course": null
+  },
+  "themediterraneandish.com": {
+    "region": "EG",
+    "course": null
+  },
+  "giverecipe.com": {
+    "region": "TR",
+    "course": null
+  },
+  "cnz.to": {
+    "region": "FR",
+    "course": null
+  },
+  "cookingwithria.com": {
+    "region": "TT",
+    "course": null
+  },
+  "simplytrinicooking.com": {
+    "region": "TT",
+    "course": null
+  },
+  "originalflava.com": {
+    "region": "JM",
+    "course": null
+  },
+  "tasteofculture.com": {
+    "region": "JP",
+    "course": null
+  },
+  "sudachirecipes.com": {
+    "region": "JP",
+    "course": null
+  },
+  "quick-german-recipes.com": {
+    "region": "DE",
+    "course": null
+  },
+  "alltastesgerman.com": {
+    "region": "DE",
+    "course": null
+  },
+  "marcussamuelsson.com": {
+    "region": "ET",
+    "course": null
+  },
+  "9jafoodie.com": {
+    "region": "NG",
+    "course": null
+  },
+  "persianmama.com": {
+    "region": "FA",
+    "course": null
+  },
+  "perudelights.com": {
+    "region": "PE",
+    "course": null
+  },
+  "braziliankitchenabroad.com": {
+    "region": "BR",
+    "course": null
   }
 }
