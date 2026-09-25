@@ -30,7 +30,6 @@
 
 import fs from 'fs';
 import readline from 'readline';
-import fetch from 'node-fetch';
 import { parseStringPromise } from 'xml2js';
 
 const SITES_FILE = './urls/sites.txt';
@@ -108,7 +107,7 @@ function normalizeDomain(urlStr) {
 
 async function fetchAndParseXml(url) {
   try {
-    const res = await fetch(url, { headers: FETCH_HEADERS, timeout: 15000 });
+    const res = await fetch(url, { headers: FETCH_HEADERS, signal: AbortSignal.timeout(15000) });
     if (!res.ok) {
       console.warn(`[HTTP ${res.status}] Failed to fetch: ${url}`);
       return null;
