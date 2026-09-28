@@ -159,12 +159,20 @@ const LD_COURSE_MAP = {
   'vegan': "veg'n", 'vegetarian': "veg'n", "veg'n": "veg'n", 'plant-based': "veg'n",
 };
 
-// 'dinner'/'lunch'/'breakfast' describe WHEN a dish is eaten, not what kind
-// of dish it is -- confirmed on real corpus data (cookingwithria.com) that
-// these can sit before a more specific dish-type word in the same
-// multi-value field ("dinner, lunch, Side Dish"), which let the meal-time
-// word win purely by appearing first. Tried last, only as a fallback.
-const LOW_CONFIDENCE_MEAL_TIME_TOKENS = new Set(['dinner', 'lunch', 'breakfast']);
+// "Smallest wins": 'mains' is the generic catch-all a dish defaults to when
+// nothing more specific applies -- a side dish could always also be called
+// a main, but a main is never really a side or an app, so 'mains' should
+// never beat a more specific category when both are tagged on the same
+// page. 'dinner'/'lunch'/'breakfast' are included here too since they're
+// meal-TIME words that resolve to mains/brunch, not real dish-type claims,
+// and were confirmed on real corpus data (cookingwithria.com) to sit before
+// a more specific word in the same multi-value field ("dinner, lunch, Side
+// Dish"), letting the meal-time word win purely by appearing first. Tried
+// last, only as a fallback if nothing else in the field resolves.
+const LOWEST_PRIORITY_COURSE_TOKENS = new Set([
+  'dinner', 'lunch', 'breakfast',
+  'main', 'mains', 'main course', 'main dish', 'entree', 'entrees',
+]);
 
 const LD_CUISINE_MAP = {
   'american': 'US', 'italian': 'IT', 'mexican': 'MX', 'french': 'FR', 'chinese': 'CN',
@@ -186,8 +194,8 @@ function tokenizeLdField(input) {
 // real per-recipe signal if only ldCategory were checked.
 function resolveCourseFromLd(ldField) {
   const tokens = tokenizeLdField(ldField);
-  const priorityTokens = tokens.filter(t => !LOW_CONFIDENCE_MEAL_TIME_TOKENS.has(t));
-  const deferredTokens = tokens.filter(t => LOW_CONFIDENCE_MEAL_TIME_TOKENS.has(t));
+  const priorityTokens = tokens.filter(t => !LOWEST_PRIORITY_COURSE_TOKENS.has(t));
+  const deferredTokens = tokens.filter(t => LOWEST_PRIORITY_COURSE_TOKENS.has(t));
 
   for (const token of priorityTokens) {
     if (LD_COURSE_MAP[token]) return LD_COURSE_MAP[token];
@@ -246,6 +254,62 @@ function resolveCuisineFromNameLiteral(text) {
     if (new RegExp(`\\b${word}\\b`, 'i').test(text)) return code;
   }
   return null;
+}
+
+// Deterministic name-literal override, same mechanism and trust tier as
+// DIETARY_ADAPTATION_PATTERN below: a recipe's own name saying exactly what
+// it is beats model inference or even the ldCourse signal. Deliberately
+// narrow -- this closes one specific hole (name says "soup," model/page
+// said something else), not a general course classifier. Extend this list
+// only against confirmed real cases, the same discipline used everywhere
+// else in this file. Hoisted to module scope (was previously declared
+// per-recipe) so the pre-model viability check below can reuse the exact
+// same patterns as the post-extraction override further down.
+const NAME_COURSE_OVERRIDES = [
+  { pattern: /\bsoups?\b/i, course: 'soups' },
+];
+
+// Conservative pre-model gate: skip the (slow, local) Ollama call entirely
+// only when ingredients, directions, AND course are ALL independently
+// certain to be unrecoverable -- never on a probabilistic judgment call,
+// since a false positive here silently drops a real recipe instead of just
+// flagging it. Each check is deliberately permissive (errs toward "still
+// try"): ingredients only counts as certainly-absent if there's no
+// structured source AND not even one measurement-shaped mention anywhere
+// in the raw markdown; directions reuse extractMarkdownDirections, the
+// same deterministic recovery already trusted as the last-resort fallback
+// after a failed model call; course reuses the exact same signals
+// (ldCategory/ldCuisine/siteCourseHint/name-literal) the rest of this file
+// already treats as sufficient grounding. Returns an array of missing
+// categories -- empty means still worth attempting.
+const ANY_MEASUREMENT_PATTERN =
+  /\d+\s*(?:g|kg|oz|lb|lbs?|cups?|tbsp|tsp|ml|l|pounds?|ounces?|grams?|kilograms?|teaspoons?|tablespoons?)\b|[½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚]/i;
+function assessExtractionViability(meta, markdown) {
+  const missing = [];
+
+  const hasStructuredIngredients = Boolean(
+    (meta.htmlIngredientLines && meta.htmlIngredientLines.length > 0)
+    || (meta.ldIngredientsRaw && meta.ldIngredientsRaw.length > 0)
+  );
+  const hasAnyMeasurementInMarkdown = Boolean(markdown) && ANY_MEASUREMENT_PATTERN.test(markdown);
+  if (!hasStructuredIngredients && !hasAnyMeasurementInMarkdown) {
+    missing.push('ingredients');
+  }
+
+  const hasLdDirections = looksLikeRealInstructionLines(meta.ldInstructionsRaw);
+  const hasRecoverableMarkdownDirections = Boolean(extractMarkdownDirections(markdown));
+  if (!hasLdDirections && !hasRecoverableMarkdownDirections) {
+    missing.push('directions');
+  }
+
+  const ldCourse = resolveCourseFromLd(meta.ldCategory) || resolveCourseFromLd(meta.ldCuisine);
+  const nameText = meta.ldName || meta.title || '';
+  const nameHasCourseOverride = NAME_COURSE_OVERRIDES.some(({ pattern }) => pattern.test(nameText));
+  if (!ldCourse && !meta.siteCourseHint && !nameHasCourseOverride) {
+    missing.push('course');
+  }
+
+  return missing;
 }
 
 const RECIPE_SCHEMA = {
@@ -1917,6 +1981,20 @@ async function main() {
     );
     const canSkipDirections = looksLikeRealInstructionLines(meta.ldInstructionsRaw);
 
+    // Skip the model call entirely when ingredients, directions, AND course
+    // are all independently certain to be unrecoverable -- confirmed the
+    // app's own required-fields policy makes an ungrounded/empty course as
+    // fatal to usability as missing ingredients or directions, so there's
+    // no partial-credit outcome worth spending a local LLM call on here.
+    const missingViability = assessExtractionViability(meta, markdown);
+    if (missingViability.length > 0) {
+      const detail = `No deterministic source for: ${missingViability.join(', ')} -- skipped before the model call.`;
+      logError(slug, 'no-viable-data', detail);
+      markUnrecoverable(slug, 'no-viable-data', detail, meta.url);
+      failed++;
+      continue;
+    }
+
     try {
       const extracted = await extractWithOllama(markdown, meta, { canSkipIngredients, canSkipDirections });
 
@@ -1961,20 +2039,34 @@ async function main() {
       // Deterministic name-literal override, same mechanism and trust tier
       // as DIETARY_ADAPTATION_PATTERN below: a recipe's own name saying
       // exactly what it is beats model inference or even the ldCourse
-      // signal above. Deliberately narrow -- this closes one specific hole
-      // (name says "soup," model/page said something else), not a general
-      // course classifier. Extend this list only against confirmed real
-      // cases, the same discipline used everywhere else in this file. Note:
-      // this is intentionally unconditional, so a genuinely ambiguous case
-      // like "soup dumplings" (conventionally apps/dim sum, not soup) will
-      // also be forced to "soups" -- accepted tradeoff per the same
-      // reasoning that made this override worth adding in the first place.
-      const NAME_COURSE_OVERRIDES = [
-        { pattern: /\bsoups?\b/i, course: 'soups' },
-      ];
+      // signal above. NAME_COURSE_OVERRIDES is defined at module scope
+      // (near resolveCuisineFromNameLiteral) -- intentionally unconditional,
+      // so a genuinely ambiguous case like "soup dumplings" (conventionally
+      // apps/dim sum, not soup) will also be forced to "soups", accepted
+      // per the same reasoning that made this override worth adding.
       for (const { pattern, course } of NAME_COURSE_OVERRIDES) {
         if (pattern.test(extracted.name)) {
           extracted.course = course;
+          courseGrounded = true;
+        }
+      }
+
+      // Deterministic ingredient-content override for Breads, ported from
+      // Memoix's own live-app importer (url_importer.dart's
+      // _hasBreadIndicators): flour + a leavening agent together is a
+      // near-unambiguous bread signal, unlike either word alone (plain
+      // "flour" also appears in cakes/cookies/batters with no yeast/starter
+      // in sight). Lower trust tier than ldCourse/name-literal since it
+      // reads the model's own ingredient names rather than page-stated
+      // data, so only checked when nothing else has grounded course yet --
+      // still deterministic pattern-matching, not model judgment, so it's
+      // treated as real grounding once it fires.
+      if (!courseGrounded) {
+        const ingredientText = extracted.ingredients.map(i => i.name || '').join(' ').toLowerCase();
+        const hasFlour = /\bflour\b/.test(ingredientText);
+        const hasLeavening = /\byeast\b|\bstarter\b|\blevain\b/.test(ingredientText);
+        if (hasFlour && hasLeavening) {
+          extracted.course = 'breads';
           courseGrounded = true;
         }
       }
