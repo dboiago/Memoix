@@ -1,7 +1,7 @@
 {
-  "ts": "2026-09-27T17:01:46.470Z",
+  "ts": "2026-09-28T18:58:07.947Z",
   "slug": "yuzu-fruits-chopstick-chronicles_chopstickchronicles_4636f630",
   "url": "https://www.chopstickchronicles.com/yuzu-fruits/",
-  "reason": "empty-content",
-  "detail": "No ingredients or directions extracted"
+  "reason": "no-viable-data",
+  "detail": "No deterministic source for: ingredients, directions, course -- skipped before the model call."
 }

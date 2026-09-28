@@ -2,7 +2,7 @@
   "recipe": {
     "name": "Bialy Stuffed With Cream Cheese And Honey Dates",
     "time": "4 hr",
-    "course": "brunch",
+    "course": "breads",
     "rating": 0,
     "serves": "5",
     "source": "scraped",
@@ -35,7 +35,7 @@
         "name": "Water",
         "unit": "C",
         "notes": null,
-        "amount": "1.25",
+        "amount": "1.5",
         "section": "DOUGH:",
         "isOptional": false
       },
@@ -81,7 +81,7 @@
       },
       {
         "name": "Dates",
-        "unit": null,
+        "unit": "large",
         "notes": null,
         "amount": "7-8",
         "section": "STUFFING:",
@@ -121,7 +121,7 @@
       }
     ],
     "isFavourite": false,
-    "content_hash": "2a9fa56cc7eee6035fd08ac6567a43589b5ddb5978512fa6259501b3684bef9b",
+    "content_hash": "4d9cbaa45a40a822ec11813e250a844c6940d014a67cc6cba16873f8c46ec422",
     "lineage_hash": "74b99f26ffecd53d5de38ed3a925fcba0b89979ef24c5faaa5f3232681b7a96c"
   },
   "metadata": {

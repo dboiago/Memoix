@@ -1,7 +1,7 @@
 {
-  "ts": "2026-09-27T15:24:27.293Z",
+  "ts": "2026-09-28T17:33:45.696Z",
   "slug": "mediterranean-daiquiri-cocktail-recipe-master-bart_diffordsguide_6c999e2b",
   "url": "https://www.diffordsguide.com/cocktails/recipe/40631/mediterranean-daiquiri",
-  "reason": "empty-content",
-  "detail": "No ingredients or directions extracted"
+  "reason": "no-viable-data",
+  "detail": "No deterministic source for: ingredients, directions -- skipped before the model call."
 }

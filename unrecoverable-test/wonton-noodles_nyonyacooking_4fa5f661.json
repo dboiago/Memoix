@@ -1,7 +1,7 @@
 {
-  "ts": "2026-09-27T17:01:00.044Z",
+  "ts": "2026-09-28T18:57:29.742Z",
   "slug": "wonton-noodles_nyonyacooking_4fa5f661",
   "url": "https://www.nyonyacooking.com/snaps/Guc7MjIsJL",
-  "reason": "empty-content",
-  "detail": "No ingredients or directions extracted"
+  "reason": "no-viable-data",
+  "detail": "No deterministic source for: ingredients, directions, course -- skipped before the model call."
 }

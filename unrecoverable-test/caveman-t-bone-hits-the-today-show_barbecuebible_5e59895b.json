@@ -1,7 +1,7 @@
 {
-  "ts": "2026-09-27T14:11:11.964Z",
+  "ts": "2026-09-28T16:45:38.808Z",
   "slug": "caveman-t-bone-hits-the-today-show_barbecuebible_5e59895b",
   "url": "https://barbecuebible.com/2009/06/30/caveman-t-bone-hits-the-today-show/",
-  "reason": "empty-content",
-  "detail": "No ingredients or directions extracted"
+  "reason": "no-viable-data",
+  "detail": "No deterministic source for: ingredients, directions -- skipped before the model call."
 }

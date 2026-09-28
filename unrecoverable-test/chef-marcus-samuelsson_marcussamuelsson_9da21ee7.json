@@ -1,7 +1,7 @@
 {
-  "ts": "2026-09-27T14:23:26.150Z",
+  "ts": "2026-09-28T16:58:10.155Z",
   "slug": "chef-marcus-samuelsson_marcussamuelsson_9da21ee7",
   "url": "https://marcussamuelsson.com/shop",
-  "reason": "empty-content",
-  "detail": "No ingredients or directions extracted"
+  "reason": "no-viable-data",
+  "detail": "No deterministic source for: ingredients, directions, course -- skipped before the model call."
 }

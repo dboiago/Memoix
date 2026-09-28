@@ -1,6 +1,6 @@
 {
   "recipe": {
-    "name": "Creamy Mushroom Sauce for Steak",
+    "name": "Creamy Mushroom Sauce",
     "time": "30 min",
     "course": "sauces",
     "rating": 0,
@@ -148,8 +148,8 @@
       }
     ],
     "isFavourite": false,
-    "content_hash": "b6ac8525a1e7b79d75c1c07f057139b0ba10bde4eb1b494a8f0f4b4b81732567",
-    "lineage_hash": "f7438839aff912117155868a32b85d97c2016af893d41b2527f8aa36e8184a21"
+    "content_hash": "d3a773564507b3acb805e498829b595accd5dce4df5c3a0accae36ce85e51f1b",
+    "lineage_hash": "f034168069ba1b4c008d2a474081622b2aecbbeafa0508d554dcef78fa8632c4"
   },
   "metadata": {
     "appVersion": "corpus-pipeline",

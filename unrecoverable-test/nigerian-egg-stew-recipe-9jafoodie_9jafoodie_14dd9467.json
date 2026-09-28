@@ -1,7 +1,7 @@
 {
-  "ts": "2026-09-27T15:28:19.124Z",
+  "ts": "2026-09-28T17:36:18.496Z",
   "slug": "nigerian-egg-stew-recipe-9jafoodie_9jafoodie_14dd9467",
   "url": "https://9jafoodie.com/nigerian-egg-stew-recipe/",
-  "reason": "empty-content",
-  "detail": "No ingredients or directions extracted"
+  "reason": "no-viable-data",
+  "detail": "No deterministic source for: ingredients, course -- skipped before the model call."
 }

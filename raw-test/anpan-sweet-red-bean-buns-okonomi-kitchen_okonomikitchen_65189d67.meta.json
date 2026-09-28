@@ -3,7 +3,7 @@
   "slug": "anpan-sweet-red-bean-buns-okonomi-kitchen_okonomikitchen_65189d67",
   "title": "Anpan (Sweet Red Bean Buns) あんパン - Okonomi Kitchen",
   "byline": "Lisa Kitahara",
-  "fetchedAt": "2026-08-02T08:33:37.202Z",
+  "fetchedAt": "2026-09-26T00:57:56.309Z",
   "ldName": "Anpan",
   "ldTime": "PT1H52M",
   "ldPrepTime": "PT1H40M",
@@ -65,16 +65,25 @@
     "@type": "nutritionInformation"
   },
   "htmlIngredientLines": [
-    "Bread flour and Cake flour: this combination of flours make the perfect soft textured bread but you can substitute the total amount for all purpose flour.",
-    "Whole milk",
-    "Egg yolk",
-    "Granulated sugar",
-    "Dry yeast",
-    "Salt",
-    "Red bean paste (anko): You can use smooth bean paste (koshian), chunky bean paste (tsubuan) or mashed sweet bean paste (tsubushian)",
-    "Black sesame seeds or poppy seeds"
+    "[Yudane (Pre-dough mixture)]",
+    "60 ml water",
+    "40 g bread flour",
+    "[Dough Ingredients]",
+    "3 tbsp + 1 tsp (50 ml) whole milk",
+    "1 large (20 g) egg yolk",
+    "2.5 tbsp (30 g) granulated white sugar",
+    "2/3 tsp (3 g) dry yeast",
+    "140 bread flour",
+    "20 g cake flour",
+    "2/3 tsp (3 g) salt",
+    "2 tbsp (30 g) unsalted butter",
+    "[Other Ingredients]",
+    "300 grams sweet red bean paste (smooth, chunky or mashed)",
+    "1 large egg",
+    "1 tbsp water",
+    "black sesame seeds or poppy seeds"
   ],
-  "htmlIngredientConfig": "generic-text-heading",
+  "htmlIngredientConfig": "tasty-recipes-plugin",
   "siteRegionHint": "JP",
   "siteCourseHint": null
 }

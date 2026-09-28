@@ -30,59 +30,107 @@
     "recipeType": "standard",
     "ingredients": [
       {
-        "name": "Bread Flour and Cake Flour: This Combination of Flours Make the Perfect Soft Textured Bread But You Can Substitute the Total Amount for All Purpose Flour",
-        "unit": null,
+        "name": "Water",
+        "unit": "ml",
         "notes": null,
-        "amount": "0",
-        "section": null,
+        "amount": "60",
+        "section": "Yudane (Pre-dough mixture)",
+        "isOptional": false
+      },
+      {
+        "name": "Bread Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": "Yudane (Pre-dough mixture)",
         "isOptional": false
       },
       {
         "name": "Whole Milk",
-        "unit": null,
-        "notes": null,
-        "amount": "0",
-        "section": null,
+        "unit": "Tbsp + 1 tsp",
+        "notes": "50 ml",
+        "amount": "3",
+        "section": "Dough Ingredients",
         "isOptional": false
       },
       {
         "name": "Egg Yolk",
-        "unit": null,
-        "notes": null,
-        "amount": "0",
-        "section": null,
+        "unit": "large",
+        "notes": "20 g",
+        "amount": "1",
+        "section": "Dough Ingredients",
         "isOptional": false
       },
       {
-        "name": "Granulated Sugar",
-        "unit": null,
-        "notes": null,
-        "amount": "0",
-        "section": null,
+        "name": "Granulated White Sugar",
+        "unit": "Tbsp",
+        "notes": "30 g",
+        "amount": "2.5",
+        "section": "Dough Ingredients",
         "isOptional": false
       },
       {
         "name": "Dry Yeast",
+        "unit": "tsp",
+        "notes": "3 g",
+        "amount": "⅔",
+        "section": "Dough Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Bread Flour",
         "unit": null,
         "notes": null,
-        "amount": "0",
-        "section": null,
+        "amount": "140",
+        "section": "Dough Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Cake Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": "Dough Ingredients",
         "isOptional": false
       },
       {
         "name": "Salt",
-        "unit": null,
-        "notes": null,
-        "amount": "0",
-        "section": null,
+        "unit": "tsp",
+        "notes": "3 g",
+        "amount": "⅔",
+        "section": "Dough Ingredients",
         "isOptional": false
       },
       {
-        "name": "Red Bean Paste (anko): You Can Use Smooth Bean Paste (koshian)",
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": "30 g",
+        "amount": "2",
+        "section": "Dough Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Grams Sweet Red Bean Paste",
         "unit": null,
-        "notes": "chunky bean paste (tsubuan) or mashed sweet bean paste (tsubushian)",
-        "amount": "0",
-        "section": null,
+        "notes": "smooth, chunky or mashed",
+        "amount": "300",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Other Ingredients",
         "isOptional": false
       },
       {
@@ -90,19 +138,19 @@
         "unit": null,
         "notes": "alt: poppy seeds",
         "amount": "0",
-        "section": null,
+        "section": "Other Ingredients",
         "isOptional": false
       }
     ],
     "isFavourite": false,
-    "content_hash": "b0c40ef294b4569632c0230db96b8d1dd0ae7dcbe194bdf2c0f0e34bd201dc44",
+    "content_hash": "ee95f06306ab5167aad71926ddf439baf5fa4a15c3839209c4d46b5a02c82d17",
     "lineage_hash": "c94911a827e2c2a2e35935feb9fe84fd23ed84a18b9ada5cc34177eb514b5d8a"
   },
   "metadata": {
     "appVersion": "corpus-pipeline",
     "buildNumber": "0",
     "sourceUrl": "https://www.okonomikitchen.com/anpan/",
-    "fetchedAt": "2026-08-02T08:33:37.202Z"
+    "fetchedAt": "2026-09-26T00:57:56.309Z"
   },
   "rawSource": "https://www.okonomikitchen.com/anpan/",
   "domainType": "recipe",

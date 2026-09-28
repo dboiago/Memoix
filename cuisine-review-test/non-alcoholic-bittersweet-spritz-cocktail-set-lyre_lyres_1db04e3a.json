@@ -35,7 +35,7 @@
         "isOptional": false
       },
       {
-        "name": "ML Italian Orange",
+        "name": "ML Carbonated Water",
         "unit": "ml",
         "notes": null,
         "amount": "30",
@@ -44,7 +44,7 @@
       }
     ],
     "isFavourite": false,
-    "content_hash": "bf66445075b7a3002239581810dcf606fa97d70216c410fe5407ece65671ecc4",
+    "content_hash": "ac0671aae32ee9dc93b6b919fd1ace3e64c7b27a5d103088b35b09a67e0d33c4",
     "lineage_hash": "3db8edba06792b3c3a3831aaa168c2f67483e3dd517191e02cc23b844e5c0d56"
   },
   "metadata": {

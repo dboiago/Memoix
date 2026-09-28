@@ -1,7 +1,7 @@
 {
-  "ts": "2026-09-27T15:15:14.427Z",
+  "ts": "2026-09-28T17:29:36.660Z",
   "slug": "kaki-fry-ingredients-8077-recipetin-japan_japan_39d7d7ef",
   "url": "https://japan.recipetineats.com/deep-fried-crumbed-oysters-kaki-fry/kaki_fry_ingredients_8077/",
-  "reason": "empty-content",
-  "detail": "No ingredients or directions extracted"
+  "reason": "no-viable-data",
+  "detail": "No deterministic source for: ingredients, directions, course -- skipped before the model call."
 }

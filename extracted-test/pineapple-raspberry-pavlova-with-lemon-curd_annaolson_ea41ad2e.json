@@ -31,7 +31,7 @@
         "unit": "C",
         "notes": "200 g",
         "amount": "1",
-        "section": "Pavlovas",
+        "section": "Pavlovas:",
         "isOptional": false
       },
       {
@@ -39,7 +39,7 @@
         "unit": "large",
         "notes": "at room temperature",
         "amount": "4",
-        "section": "Pavlovas",
+        "section": "Pavlovas:",
         "isOptional": false
       },
       {
@@ -47,7 +47,7 @@
         "unit": null,
         "notes": "of 1 lime",
         "amount": "0",
-        "section": "Pavlovas",
+        "section": "Pavlovas:",
         "isOptional": false
       },
       {
@@ -55,7 +55,7 @@
         "unit": "Tbsp",
         "notes": "8 g",
         "amount": "1",
-        "section": "Pavlovas",
+        "section": "Pavlovas:",
         "isOptional": false
       },
       {
@@ -63,7 +63,7 @@
         "unit": "tsp",
         "notes": null,
         "amount": "1",
-        "section": "Pavlovas",
+        "section": "Pavlovas:",
         "isOptional": false
       },
       {
@@ -71,7 +71,7 @@
         "unit": "tsp",
         "notes": null,
         "amount": "1",
-        "section": "Pavlovas",
+        "section": "Pavlovas:",
         "isOptional": false
       },
       {
@@ -79,7 +79,7 @@
         "unit": "tsp",
         "notes": null,
         "amount": "1",
-        "section": "Pavlovas",
+        "section": "Pavlovas:",
         "isOptional": false
       },
       {
@@ -87,7 +87,7 @@
         "unit": "C",
         "notes": "fresh, 125 mL",
         "amount": "½",
-        "section": "Lemon Curd",
+        "section": "Lemon Curd:",
         "isOptional": false
       },
       {
@@ -95,7 +95,7 @@
         "unit": "C",
         "notes": "140 g",
         "amount": "⅔",
-        "section": "Lemon Curd",
+        "section": "Lemon Curd:",
         "isOptional": false
       },
       {
@@ -103,7 +103,7 @@
         "unit": "large",
         "notes": null,
         "amount": "1",
-        "section": "Lemon Curd",
+        "section": "Lemon Curd:",
         "isOptional": false
       },
       {
@@ -111,7 +111,7 @@
         "unit": "large",
         "notes": null,
         "amount": "3",
-        "section": "Lemon Curd",
+        "section": "Lemon Curd:",
         "isOptional": false
       },
       {
@@ -119,7 +119,7 @@
         "unit": "Tbsp",
         "notes": "finely grated",
         "amount": "1",
-        "section": "Lemon Curd",
+        "section": "Lemon Curd:",
         "isOptional": false
       },
       {
@@ -127,7 +127,7 @@
         "unit": "tsp",
         "notes": null,
         "amount": "2",
-        "section": "Lemon Curd",
+        "section": "Lemon Curd:",
         "isOptional": false
       },
       {
@@ -135,7 +135,7 @@
         "unit": "C",
         "notes": "115 g, cut into pieces",
         "amount": "½",
-        "section": "Lemon Curd",
+        "section": "Lemon Curd:",
         "isOptional": false
       },
       {
@@ -143,7 +143,7 @@
         "unit": "C",
         "notes": "alt: Crème Fraîche, 60 mL",
         "amount": "¼",
-        "section": "Lemon Curd",
+        "section": "Lemon Curd:",
         "isOptional": false
       },
       {
@@ -151,7 +151,7 @@
         "unit": "g",
         "notes": null,
         "amount": "100",
-        "section": "Guava Sauce",
+        "section": "Guava Sauce:",
         "isOptional": false
       },
       {
@@ -159,7 +159,7 @@
         "unit": "C",
         "notes": "125 mL",
         "amount": "½",
-        "section": "Guava Sauce",
+        "section": "Guava Sauce:",
         "isOptional": false
       },
       {
@@ -167,7 +167,7 @@
         "unit": "Tbsp",
         "notes": null,
         "amount": "1",
-        "section": "Guava Sauce",
+        "section": "Guava Sauce:",
         "isOptional": false
       },
       {
@@ -175,7 +175,7 @@
         "unit": "Tbsp",
         "notes": "alt: sugar",
         "amount": "1",
-        "section": "Guava Sauce",
+        "section": "Guava Sauce:",
         "isOptional": false
       },
       {
@@ -183,7 +183,7 @@
         "unit": "C",
         "notes": "diced, fresh, 225 g",
         "amount": "1½",
-        "section": "Assembly",
+        "section": "Assembly:",
         "isOptional": false
       },
       {
@@ -191,7 +191,7 @@
         "unit": "C",
         "notes": "fresh, 63 g",
         "amount": "½",
-        "section": "Assembly",
+        "section": "Assembly:",
         "isOptional": false
       },
       {
@@ -199,7 +199,7 @@
         "unit": "tsp",
         "notes": null,
         "amount": "½",
-        "section": "Assembly",
+        "section": "Assembly:",
         "isOptional": false
       },
       {
@@ -207,12 +207,12 @@
         "unit": null,
         "notes": "for garnish (optional)",
         "amount": "0",
-        "section": "Assembly",
+        "section": "Assembly:",
         "isOptional": false
       }
     ],
     "isFavourite": false,
-    "content_hash": "6f59e7041151b5aca0f2e5eafff8e87022ae73365ed4ee22f1efc25d57e9083f",
+    "content_hash": "4274ecc08b786d568b60bcb401dcefa9c2743390a1d237420080e70ef3dffadd",
     "lineage_hash": "56995ed5abb69a73e27bdd124e736185fe780b4555566644baab6870f078b2fa"
   },
   "metadata": {

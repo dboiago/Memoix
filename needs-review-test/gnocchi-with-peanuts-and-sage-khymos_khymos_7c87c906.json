@@ -53,7 +53,7 @@
         "isOptional": false
       },
       {
-        "name": "Egg",
+        "name": "T Egg",
         "unit": null,
         "notes": null,
         "amount": "1",
@@ -110,7 +110,7 @@
       }
     ],
     "isFavourite": false,
-    "content_hash": "5cc92454bf07d87ed4c9d28e8bcf2a09a39cd105c91134503c91c0eca7554c62",
+    "content_hash": "b2ac92f251bd00fd6b8c3654ac78f6e9497b495a6bc59bc4c69e5d1bcea04846",
     "lineage_hash": "7a1db146056e8650a602668457ca5bfabefb6400afff89319446cf06d5c9178d"
   },
   "metadata": {

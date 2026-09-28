@@ -1,7 +1,7 @@
 {
-  "ts": "2026-09-27T15:58:46.510Z",
+  "ts": "2026-09-28T17:59:08.521Z",
   "slug": "salted-sesame-challah-the-boy-who-bakes_theboywhobakes_cc5665c2",
   "url": "https://www.theboywhobakes.co.uk/recipes/2021/4/7/salted-sesame-challah",
-  "reason": "empty-content",
-  "detail": "No ingredients or directions extracted"
+  "reason": "no-viable-data",
+  "detail": "No deterministic source for: ingredients -- skipped before the model call."
 }

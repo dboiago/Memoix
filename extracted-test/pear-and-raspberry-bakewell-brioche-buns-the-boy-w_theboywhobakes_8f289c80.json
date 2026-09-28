@@ -2,7 +2,7 @@
   "recipe": {
     "name": "Pear and Raspberry Bakewell Brioche Buns",
     "time": "1 hr 30 min",
-    "course": "desserts",
+    "course": "breads",
     "rating": 0,
     "serves": "8",
     "source": "scraped",
@@ -24,7 +24,7 @@
       "Make the frangipane by beating together the butter, sugar, and almonds until light and smooth. Add the egg and flour and stir to combine.",
       "Form a depression in the middle of each dough disc, leaving a 2cm border. Fill with a couple of teaspoons of raspberry jam and top with the frangipane, spreading it to the edge.",
       "Slice each pear half into thin slices and place gently on top of the frangipane, pressing in slightly. Brush the brioche border with beaten egg and sprinkle with flaked almonds.",
-      "Bake the buns for about 20-25 minutes or until golden brown. Remove from the oven and serve while still warm."
+      "Bake the buns in the preheated oven for about 20-25 minutes or until golden brown. Remove from the oven and serve while still a little warm."
     ],
     "recipeType": "standard",
     "ingredients": [
@@ -182,7 +182,7 @@
       }
     ],
     "isFavourite": false,
-    "content_hash": "7cd0adf9875460d13014657cf691bcd5b6cfe3a7a9781a5153168458c36fead6",
+    "content_hash": "b26b7a115b6fbbe665fbf61b480d6cf48c0bfae39d5ba21d99c1405c0f3cd05a",
     "lineage_hash": "6ee21a49b8a3a90fa141c6fcb7f3d56dec945745801761d1c306a28da2ee4356"
   },
   "metadata": {

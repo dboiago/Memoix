@@ -120,7 +120,7 @@
       {
         "name": "A Few Sprigs Thyme",
         "unit": null,
-        "notes": "leaves picked",
+        "notes": "fresh, leaves picked",
         "amount": "0",
         "section": "Onion, anchovy & olive topping",
         "isOptional": false
@@ -128,7 +128,7 @@
       {
         "name": "A Few Sprigs Oregano",
         "unit": null,
-        "notes": "leaves picked",
+        "notes": "fresh, leaves picked",
         "amount": "0",
         "section": "Onion, anchovy & olive topping",
         "isOptional": false
@@ -167,7 +167,7 @@
       }
     ],
     "isFavourite": false,
-    "content_hash": "14c6048ce1801a6694a9460ae92e4cfc06b116323d2b15effc8599a60038d6fc",
+    "content_hash": "ba50f68714660712dc2e75c5a8c812f910bf0be6f772d702ac99a37b06f468bf",
     "lineage_hash": "17a3d8acd6d65b53886fccd66142c5a3301e32437db088d74c8e09ebc2a9a9e6"
   },
   "metadata": {

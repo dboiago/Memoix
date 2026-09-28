@@ -1,7 +1,7 @@
 {
-  "ts": "2026-09-27T15:15:45.102Z",
+  "ts": "2026-09-28T17:29:55.799Z",
   "slug": "kakiageingredients-recipetin-japan_japan_e1579c8a",
   "url": "https://japan.recipetineats.com/kakiage-mixed-vegetable-tempura/kakiageingredients/",
-  "reason": "empty-content",
-  "detail": "No ingredients or directions extracted"
+  "reason": "no-viable-data",
+  "detail": "No deterministic source for: ingredients, directions, course -- skipped before the model call."
 }

@@ -1,10 +1,10 @@
 {
   "recipe": {
     "name": "Nobody Calls it 'Hotlanta' Sauce (w/ Grilled Peach & Vidalia Onion)",
-    "time": "1 hr 30 min",
+    "time": null,
     "course": "sauces",
     "rating": 0,
-    "serves": "8",
+    "serves": null,
     "source": "scraped",
     "cuisine": "US",
     "glass": null,

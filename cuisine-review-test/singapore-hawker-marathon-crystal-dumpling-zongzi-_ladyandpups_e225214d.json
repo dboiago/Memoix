@@ -4,7 +4,7 @@
     "time": "1 hr 45 min",
     "course": "brunch",
     "rating": 0,
-    "serves": "6",
+    "serves": "8",
     "source": "scraped",
     "cuisine": "CN",
     "glass": null,
@@ -31,9 +31,9 @@
         "isOptional": false
       },
       {
-        "name": "Sago Pearls",
+        "name": "Small-size Sago Pearls",
         "unit": "C",
-        "notes": "small-size",
+        "notes": null,
         "amount": "2",
         "section": null,
         "isOptional": false
@@ -95,9 +95,9 @@
         "isOptional": false
       },
       {
-        "name": "Pandan Leaf",
+        "name": "Or Frozen Pandan Leaf",
         "unit": null,
-        "notes": "fresh or frozen, cut into segments",
+        "notes": "fresh, cut into segments",
         "amount": "2",
         "section": "GREEN DUMPLINGS",
         "isOptional": false
@@ -136,7 +136,7 @@
       }
     ],
     "isFavourite": false,
-    "content_hash": "57f8dad4aedd430940b0c7e30a39e6a162b5dbd7cb9316beb343eaf109bf7b0a",
+    "content_hash": "352b490d571e3cc272a87d051cc65506b1f1dc76fbc871958d10e38b03781621",
     "lineage_hash": "411f08d4b0cee27512c062d35ff95d258f7abaebcb0c5641da9b470a1b942132"
   },
   "metadata": {

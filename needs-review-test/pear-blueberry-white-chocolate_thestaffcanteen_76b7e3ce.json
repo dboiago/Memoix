@@ -85,7 +85,7 @@
         "name": "Pro Espuma",
         "unit": "g",
         "notes": null,
-        "amount": "13",
+        "amount": "15",
         "section": null,
         "isOptional": false
       },
@@ -93,7 +93,7 @@
         "name": "Pear Compound",
         "unit": "g",
         "notes": null,
-        "amount": "15",
+        "amount": "13",
         "section": null,
         "isOptional": false
       },
@@ -283,7 +283,7 @@
       }
     ],
     "isFavourite": false,
-    "content_hash": "c3ada387ede34ec2699c51be2f76892ecc368dd1091477730dc73cd9d4c05e07",
+    "content_hash": "910d7c04d38591a2419584cd0a5dbd1dff47d561ebf8d01c43c389527b96c304",
     "lineage_hash": "08fb36a118df01f4d538d482f8eb8fa6f4c7a80a56e0a0ff153dc82cb783082f"
   },
   "metadata": {

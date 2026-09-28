@@ -1,7 +1,7 @@
 {
-  "ts": "2026-09-27T15:21:56.122Z",
+  "ts": "2026-09-28T17:31:42.097Z",
   "slug": "lemon-and-passion-fruit-bundt-the-boy-who-bakes_theboywhobakes_abe23c0a",
   "url": "https://www.theboywhobakes.co.uk/blog/2015/11/27/lemon-and-passion",
-  "reason": "empty-content",
-  "detail": "No ingredients or directions extracted"
+  "reason": "no-viable-data",
+  "detail": "No deterministic source for: ingredients, directions -- skipped before the model call."
 }
