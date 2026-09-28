@@ -180,11 +180,87 @@ const LOWEST_PRIORITY_COURSE_TOKENS = new Set([
   'main', 'mains', 'main course', 'main dish', 'entree', 'entrees',
 ]);
 
+// Ported from Memoix's own live-app Cuisine model (cuisine.dart's
+// Cuisine.all + regionToParent) so this pipeline resolves to the exact same
+// ~90-cuisine set the app actually validates against, rather than the 20
+// demonyms this map started with. Regional/provincial terms (Sichuan,
+// Tuscan, Cajun, etc.) map to their parent national code here too, same as
+// the app's own regionToParent -- the model's separate "region" field still
+// captures the specific province/state name, this only grounds the country.
 const LD_CUISINE_MAP = {
-  'american': 'US', 'italian': 'IT', 'mexican': 'MX', 'french': 'FR', 'chinese': 'CN',
-  'japanese': 'JP', 'indian': 'IN', 'thai': 'TH', 'greek': 'GR', 'spanish': 'ES',
-  'german': 'DE', 'korean': 'KR', 'vietnamese': 'VN', 'british': 'GB', 'english': 'GB',
-  'indonesian': 'ID', 'malaysian': 'MY', 'malay': 'MY', 'argentinian': 'AR', 'irish': 'IE',
+  // African
+  'algerian': 'DZ', 'cameroonian': 'CM', 'egyptian': 'EG', 'ethiopian': 'ET',
+  'ghanaian': 'GH', 'kenyan': 'KE', 'moroccan': 'MA', 'nigerian': 'NG',
+  'senegalese': 'SN', 'south african': 'ZA', 'tanzanian': 'TZ', 'tunisian': 'TN', 'ugandan': 'UG',
+  // North American
+  'canadian': 'CA', 'mexican': 'MX', 'american': 'US',
+  // Central American
+  'costa rican': 'CR', 'salvadoran': 'SV', 'guatemalan': 'GT', 'honduran': 'HN',
+  'nicaraguan': 'NI', 'panamanian': 'PA',
+  // South American
+  'argentine': 'AR', 'argentinian': 'AR', 'bolivian': 'BO', 'brazilian': 'BR',
+  'chilean': 'CL', 'colombian': 'CO', 'ecuadorian': 'EC', 'paraguayan': 'PY',
+  'peruvian': 'PE', 'uruguayan': 'UY', 'venezuelan': 'VE',
+  // Asian
+  'bangladeshi': 'BD', 'burmese': 'MM', 'cambodian': 'KH', 'chinese': 'CN',
+  'indian': 'IN', 'indonesian': 'ID', 'japanese': 'JP', 'korean': 'KR',
+  'laotian': 'LA', 'malaysian': 'MY', 'malay': 'MY', 'mongolian': 'MN',
+  'nepali': 'NP', 'pakistani': 'PK', 'filipino': 'PH', 'singaporean': 'SG',
+  'sri lankan': 'LK', 'taiwanese': 'TW', 'thai': 'TH', 'vietnamese': 'VN',
+  // Caribbean
+  'bahamian': 'BS', 'barbadian': 'BB', 'cuban': 'CU', 'dominican': 'DO',
+  'guyanese': 'GY', 'haitian': 'HT', 'jamaican': 'JM', 'puerto rican': 'PR',
+  'trinidadian': 'TT',
+  // European
+  'albanian': 'AL', 'austrian': 'AT', 'belarusian': 'BY', 'belgian': 'BE',
+  'bosnian': 'BA', 'british': 'GB', 'english': 'GB', 'bulgarian': 'BG',
+  'croatian': 'HR', 'cypriot': 'CY', 'czech': 'CZ', 'danish': 'DK',
+  'dutch': 'NL', 'estonian': 'EE', 'finnish': 'FI', 'french': 'FR',
+  'georgian': 'GE', 'german': 'DE', 'greek': 'GR', 'hungarian': 'HU',
+  'icelandic': 'IS', 'irish': 'IE', 'italian': 'IT', 'latvian': 'LV',
+  'lithuanian': 'LT', 'maltese': 'MT', 'moldovan': 'MD', 'montenegrin': 'ME',
+  'norwegian': 'NO', 'polish': 'PL', 'portuguese': 'PT', 'romanian': 'RO',
+  'russian': 'RU', 'serbian': 'RS', 'slovak': 'SK', 'slovenian': 'SI',
+  'spanish': 'ES', 'swedish': 'SE', 'swiss': 'CH', 'ukrainian': 'UA',
+  // Middle Eastern
+  'afghan': 'AF', 'bahraini': 'BH', 'emirati': 'AE', 'persian': 'IR', 'iranian': 'IR',
+  'iraqi': 'IQ', 'israeli': 'IL', 'jordanian': 'JO', 'kuwaiti': 'KW',
+  'lebanese': 'LB', 'omani': 'OM', 'palestinian': 'PS', 'qatari': 'QA',
+  'saudi': 'SA', 'syrian': 'SY', 'turkish': 'TR', 'yemeni': 'YE',
+  // Oceanian
+  'australian': 'AU', 'fijian': 'FJ', 'hawaiian': 'HI', 'new zealand': 'NZ',
+  'papua new guinean': 'PG', 'samoan': 'WS', 'tongan': 'TO',
+  // Regional/provincial terms -> parent national code, mirroring
+  // cuisine.dart's regionToParent exactly (same choices, e.g. Levantine->
+  // Lebanese, Bavarian->German, not a broader Middle-Eastern/European code).
+  'sichuan': 'CN', 'szechuan': 'CN', 'szechwan': 'CN', 'cantonese': 'CN',
+  'hunan': 'CN', 'hunanese': 'CN', 'shanghai': 'CN', 'shanghainese': 'CN',
+  'beijing': 'CN', 'peking': 'CN', 'fujian': 'CN', 'hokkien': 'CN',
+  'teochew': 'CN', 'hakka': 'CN', 'dongbei': 'CN', 'manchurian': 'CN',
+  'xinjiang': 'CN', 'uyghur': 'CN', 'yunnan': 'CN', 'guangdong': 'CN',
+  'zhejiang': 'CN', 'jiangsu': 'CN', 'anhui': 'CN', 'shandong': 'CN',
+  'punjabi': 'IN', 'gujarati': 'IN', 'rajasthani': 'IN', 'goan': 'IN',
+  'kerala': 'IN', 'bengali': 'IN', 'kashmiri': 'IN', 'hyderabadi': 'IN',
+  'chettinad': 'IN', 'mughlai': 'IN', 'maharashtrian': 'IN', 'tamil': 'IN',
+  'andhra': 'IN', 'telugu': 'IN', 'konkani': 'IN',
+  'osaka': 'JP', 'kansai': 'JP', 'kanto': 'JP', 'hokkaido': 'JP',
+  'okinawan': 'JP', 'kyoto': 'JP',
+  'tuscan': 'IT', 'sicilian': 'IT', 'neapolitan': 'IT', 'venetian': 'IT',
+  'lombardy': 'IT', 'milanese': 'IT', 'piedmont': 'IT', 'piedmontese': 'IT',
+  'bolognese': 'IT', 'ligurian': 'IT', 'sardinian': 'IT', 'calabrian': 'IT',
+  'puglia': 'IT', 'amalfi': 'IT',
+  'provencal': 'FR', 'normandy': 'FR', 'norman': 'FR', 'breton': 'FR',
+  'brittany': 'FR', 'alsatian': 'FR', 'alsace': 'FR', 'burgundy': 'FR',
+  'burgundian': 'FR', 'lyonnaise': 'FR', 'basque': 'FR', 'parisian': 'FR',
+  'bordeaux': 'FR',
+  'catalan': 'ES', 'catalonia': 'ES', 'andalusian': 'ES', 'andalusia': 'ES',
+  'galician': 'ES', 'valencian': 'ES', 'castilian': 'ES',
+  'cajun': 'US', 'creole': 'US', 'tex-mex': 'US', 'southwestern': 'US',
+  'new england': 'US', 'new orleans': 'US', 'louisiana': 'US',
+  'isaan': 'TH', 'isan': 'TH',
+  'oaxacan': 'MX', 'yucatecan': 'MX', 'veracruz': 'MX', 'jalisco': 'MX',
+  'michoacan': 'MX', 'puebla': 'MX',
+  'levantine': 'LB', 'aegean': 'GR', 'bavarian': 'DE', 'viennese': 'AT',
 };
 
 function tokenizeLdField(input) {
@@ -244,6 +320,13 @@ const CUISINE_NAME_EXCLUSION_PATTERNS = [
   /english\s+muffins?/i, /english\s+toffee/i,
   /spanish\s+rice/i,
   /italian\s+dressing/i,
+  // Found auditing the expanded cuisine list above for the same misnomer
+  // risk: "Mongolian beef" is a Chinese-American dish, not Mongolian;
+  // "Dutch oven" names cookware, not a cuisine; "Afghan biscuits" is a New
+  // Zealand cornflake cookie with no connection to Afghan cuisine.
+  /mongolian\s+beef/i,
+  /dutch\s+oven/i,
+  /afghans?\s+biscuits?/i,
 ];
 
 // Returns a two-letter ISO code or null. Reuses LD_CUISINE_MAP's exact
