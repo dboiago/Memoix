@@ -94,9 +94,15 @@ const INGREDIENT_LINE_TIMEOUT_MS = 300_000;
 // with their own schemas and are out of scope for this script (deferred:
 // per-page domain classification not yet built). 'modernist' here refers
 // only to modernist recipes that are structurally standard recipes.
+// 'smoking' added: confirmed a real, intentional source category (see
+// memoix-source-list-v2.md's own "## Smoking" section, barbecuebible.com/
+// amazingribs.com already carrying siteCourseHint: "Smoking" in
+// urls/site-tags.json), and the app's own url_importer.dart already emits
+// 'Smoking' as a course value -- its prior absence here was a pipeline-side
+// gap, not an intentional exclusion the way Pizza/Sandwich are.
 const VALID_COURSES = [
   'apps', 'soups', 'mains', 'sides', 'salads', 'desserts', 'brunch',
-  'drinks', 'breads', 'sauces', 'rubs', 'pickles', "veg'n", 'modernist',
+  'drinks', 'breads', 'sauces', 'rubs', 'pickles', "veg'n", 'modernist', 'smoking',
 ];
 
 // Base-spirit categories for drink recipes, confirmed against the app's
@@ -265,13 +271,55 @@ function resolveCuisineFromNameLiteral(text) {
 // else in this file. Hoisted to module scope (was previously declared
 // per-recipe) so the pre-model viability check below can reuse the exact
 // same patterns as the post-extraction override further down.
+// Dessert words below are restricted to ones with no known savory
+// counter-example, checked the same way the cuisine demonym list was --
+// deliberately EXCLUDES cake, pie, tart, pudding, custard, truffle, candy,
+// souffle, choux, glaze, and praline: each has a real savory counterpart
+// (fish cake, shepherd's pie, quiche-shaped savory tart, Yorkshire/black
+// pudding, savory custard, mushroom truffle/truffle oil, candied bacon,
+// cheese souffle, savory choux like gougeres, ham glaze, praline-crusted
+// salmon). "sponge cake"/"layer cake"/"opera came" are safe as full phrases
+// even though bare "cake" isn't.
 const NAME_COURSE_OVERRIDES = [
   { pattern: /\bsoups?\b/i, course: 'soups' },
+  // stew/goulash/chili excluded: conventionally classified as mains, not
+  // soups, on real recipe sites (confirmed: campfire-curry-ramen's own
+  // ldCategory was "Noodles and Pasta", not "Soup" -- the same one-bowl-
+  // meal ambiguity applies to ramen/pho/laksa, also excluded).
+  { pattern: /\b(?:chowder|bisque|consomm[ée]|gazpacho|minestrone|tom\s*yum)\b/i, course: 'soups' },
+  { pattern: /\b(?:cheesecake|cupcakes?|macarons?|tiramisu|(?:creme|cr[eè]me)\s*br[uû]l[ée]e|pavlova|baklava|gelato|meringues?|gateau|petit\s*fours?|entremets?|mille-?feuille|[ée]clairs?|profiteroles?|dacquoise|genoise|brownies?|trifle|torte|bonbons?|ganache|sponge\s*cake|layer\s*cake|opera\s*cake|ice\s*cream|sorbet)\b/i, course: 'desserts' },
+  // "bread"/"buns"/"rolls"/"dough"/"loaf"/"loaves" excluded: bread pudding,
+  // cinnamon buns, spring/egg rolls, cookie/pasta dough, and meatloaf are
+  // all real dishes containing that word that are not bread.
+  { pattern: /\b(?:focaccia|ciabatta|baguettes?|sourdough|naan|flatbreads?|bagels?|pretzels?|challah|croissants?|brioche)\b/i, course: 'breads' },
+  { pattern: /\bsalads?\b/i, course: 'salads' },
+  // "wedges"/"rice dish"/"risotto" excluded: risotto especially is
+  // routinely a main (vegetarian/seafood mains), not reliably a side.
+  { pattern: /\b(?:slaw|coleslaw|side\s*dish|mashed|roasted\s*vegetables|french\s*fries|gratin|pilaf)\b/i, course: 'sides' },
+  // "dressing"/"dip"/"guacamole"/"hummus"/"glaze" excluded: "dressing" also
+  // means stuffing (a side, not a sauce) in US usage; dip/guacamole/hummus
+  // are commonly served as apps, not poured-on sauces; glaze is equally
+  // common as a dessert glaze (donut) as a savory one (ham).
+  { pattern: /\b(?:gravy|aioli|mayonnaise|mayo|ketchup|mustard|vinaigrette|pesto|salsa|relish|chutney|coulis|marinade|reduction|chimichurri|gremolata)\b/i, course: 'sauces' },
+  // "hash" excluded: used loosely outside a breakfast context.
+  { pattern: /\b(?:brunch|breakfast|pancakes?|waffles?|french\s*toast|eggs?\s*benedict|omelett?e|frittata|poached\s*eggs?|quiche)\b/i, course: 'brunch' },
+  // "dumpling(s)"/"wonton"/"croquette(s)" excluded: routinely a full main
+  // (potstickers, wonton soup, croquettes as a side), not reliably an app.
+  { pattern: /\b(?:appetizers?|starters?|tapas|antipasto|bruschetta|crostini|canap[ée]s?|spring\s*rolls?|egg\s*rolls?|arancini|tartare|carpaccio|samosas?|empanadas?|ceviche)\b/i, course: 'apps' },
+  { pattern: /\b(?:pickles?|pickled|ferment(?:ed)?|kimchi|sauerkraut|preserves?|canning|jams?|jell(?:y|ies)|marmalade)\b/i, course: 'pickles' },
+  { pattern: /\b(?:rubs?|seasonings?|spice\s*mix|spice\s*blend)\b/i, course: 'rubs' },
+  // "sous vide" excluded: mainstream technique now used on ordinary mains
+  // recipes, not a reliable modernist signal on its own. "foam"/"caviar"
+  // excluded: caviar is usually a real garnish, not spherified "caviar",
+  // and "foam" alone is too weak/generic a word to trust unconditionally.
+  { pattern: /\b(?:modernist|molecular|spherification|gelification|agar|xanthan|sodium\s*alginate|calcium\s*chloride|lecithin|maltodextrin|methylcellulose|gellan|transglutaminase|immersion\s*circulator)\b/i, course: 'modernist' },
 ];
 
 // Conservative pre-model gate: skip the (slow, local) Ollama call entirely
-// only when ingredients, directions, AND course are ALL independently
-// certain to be unrecoverable -- never on a probabilistic judgment call,
+// when ANY of ingredients, directions, or course is independently certain
+// to be unrecoverable -- a recipe missing even one of these three would
+// never be seeded regardless of the other two, so there's no partial-
+// credit case worth spending a call on. Never a probabilistic judgment call,
 // since a false positive here silently drops a real recipe instead of just
 // flagging it. Each check is deliberately permissive (errs toward "still
 // try"): ingredients only counts as certainly-absent if there's no
@@ -2067,6 +2115,35 @@ async function main() {
         const hasLeavening = /\byeast\b|\bstarter\b|\blevain\b/.test(ingredientText);
         if (hasFlour && hasLeavening) {
           extracted.course = 'breads';
+          courseGrounded = true;
+        }
+      }
+
+      // Deterministic ingredient-content override for Smoking, ported from
+      // url_importer.dart's _hasSmokingIndicators. Deliberately excludes
+      // bare "oak" (unlike the Dart list) -- oak shows up constantly as a
+      // wine/whiskey barrel-aging descriptor with no relation to smoking
+      // food, a false-positive risk the named smoking woods below don't share.
+      if (!courseGrounded) {
+        const ingredientText = extracted.ingredients.map(i => i.name || '').join(' ').toLowerCase();
+        if (/\b(?:hickory|mesquite|applewood|cherrywood|pecan\s*wood|wood\s*chips?|wood\s*chunks?|smoking\s*wood)\b/.test(ingredientText)) {
+          extracted.course = 'smoking';
+          courseGrounded = true;
+        }
+      }
+
+      // Deterministic ingredient-content override for Drinks, ported from
+      // url_importer.dart's _hasSpiritsInIngredients. Gated on a short
+      // ingredient list (a real cocktail/mocktail recipe is almost always
+      // spirit + mixer + garnish, a handful of lines) specifically to avoid
+      // the failure mode the Dart app itself only trusts this signal at low
+      // confidence for: a savory or dessert dish that merely uses alcohol as
+      // a flavoring ingredient among many others (bourbon-glazed salmon, rum
+      // cake, whiskey BBQ sauce) has 8+ ingredients, not 2-6.
+      if (!courseGrounded && extracted.ingredients.length > 0 && extracted.ingredients.length <= 6) {
+        const ingredientText = extracted.ingredients.map(i => i.name || '').join(' ').toLowerCase();
+        if (/\b(?:vodka|gin|rum|tequila|mezcal|whisk(?:e)?y|bourbon|scotch|brandy|cognac)\b/.test(ingredientText)) {
+          extracted.course = 'drinks';
           courseGrounded = true;
         }
       }
