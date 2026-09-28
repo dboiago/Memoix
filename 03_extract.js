@@ -145,18 +145,26 @@ const BASE_SPIRIT_KEYWORDS = {
 const LD_COURSE_MAP = {
   'dessert': 'desserts', 'desserts': 'desserts', 'sweets': 'desserts', 'sweet': 'desserts',
   'breakfast': 'brunch', 'brunch': 'brunch',
-  'appetizer': 'apps', 'appetizers': 'apps', 'starter': 'apps', 'starters': 'apps', 'snack': 'apps', 'snacks': 'apps',
+  'appetizer': 'apps', 'appetizers': 'apps', 'appetiser': 'apps', 'appetisers': 'apps',
+  'starter': 'apps', 'starters': 'apps', 'snack': 'apps', 'snacks': 'apps',
   'main': 'mains', 'mains': 'mains', 'main course': 'mains', 'main dish': 'mains', 'dinner': 'mains', 'entree': 'mains', 'entrees': 'mains',
   'side': 'sides', 'sides': 'sides', 'side dish': 'sides',
   'salad': 'salads', 'salads': 'salads',
   'soup': 'soups', 'soups': 'soups',
   'drink': 'drinks', 'drinks': 'drinks', 'beverage': 'drinks', 'cocktail': 'drinks', 'cocktails': 'drinks',
   'bread': 'breads', 'breads': 'breads',
-  'sauce': 'sauces', 'sauces': 'sauces', 'condiment': 'sauces', 'dressing': 'sauces',
+  'sauce': 'sauces', 'sauces': 'sauces', 'condiment': 'sauces', 'condiments': 'sauces', 'dressing': 'sauces',
   'rub': 'rubs', 'rubs': 'rubs', 'seasoning': 'rubs',
   'pickle': 'pickles', 'pickles': 'pickles', 'preserves': 'pickles', 'ferment': 'pickles',
   'vegan': "veg'n", 'vegetarian': "veg'n", "veg'n": "veg'n", 'plant-based': "veg'n",
 };
+
+// 'dinner'/'lunch'/'breakfast' describe WHEN a dish is eaten, not what kind
+// of dish it is -- confirmed on real corpus data (cookingwithria.com) that
+// these can sit before a more specific dish-type word in the same
+// multi-value field ("dinner, lunch, Side Dish"), which let the meal-time
+// word win purely by appearing first. Tried last, only as a fallback.
+const LOW_CONFIDENCE_MEAL_TIME_TOKENS = new Set(['dinner', 'lunch', 'breakfast']);
 
 const LD_CUISINE_MAP = {
   'american': 'US', 'italian': 'IT', 'mexican': 'MX', 'french': 'FR', 'chinese': 'CN',
@@ -177,7 +185,25 @@ function tokenizeLdField(input) {
 // the cuisine property instead of ever setting a real category, wasting a
 // real per-recipe signal if only ldCategory were checked.
 function resolveCourseFromLd(ldField) {
-  for (const token of tokenizeLdField(ldField)) {
+  const tokens = tokenizeLdField(ldField);
+  const priorityTokens = tokens.filter(t => !LOW_CONFIDENCE_MEAL_TIME_TOKENS.has(t));
+  const deferredTokens = tokens.filter(t => LOW_CONFIDENCE_MEAL_TIME_TOKENS.has(t));
+
+  for (const token of priorityTokens) {
+    if (LD_COURSE_MAP[token]) return LD_COURSE_MAP[token];
+  }
+  // Whole-word fallback for a multi-word phrase the exact-token lookup
+  // missed -- confirmed real case: lacucinaitaliana.com's "cakes and
+  // desserts" never matches 'dessert'/'desserts' as a full token because
+  // tokenizeLdField only splits on [,/&], never on spaces. Word-boundary
+  // matched so this can't fire inside an unrelated compound word.
+  for (const token of priorityTokens) {
+    for (const [key, course] of Object.entries(LD_COURSE_MAP)) {
+      if (new RegExp(`\\b${key}\\b`, 'i').test(token)) return course;
+    }
+  }
+  // Only reached if nothing but meal-time words was present at all.
+  for (const token of deferredTokens) {
     if (LD_COURSE_MAP[token]) return LD_COURSE_MAP[token];
   }
   return null;
