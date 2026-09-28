@@ -407,14 +407,24 @@ const NAME_COURSE_OVERRIDES = [
 // flagging it. Each check is deliberately permissive (errs toward "still
 // try"): ingredients only counts as certainly-absent if there's no
 // structured source AND not even one measurement-shaped mention anywhere
-// in the raw markdown; directions reuse extractMarkdownDirections, the
-// same deterministic recovery already trusted as the last-resort fallback
-// after a failed model call; course reuses the exact same signals
+// in the raw markdown; course reuses the exact same signals
 // (ldCategory/ldCuisine/siteCourseHint/name-literal) the rest of this file
 // already treats as sufficient grounding. Returns an array of missing
 // categories -- empty means still worth attempting.
 const ANY_MEASUREMENT_PATTERN =
   /\d+\s*(?:g|kg|oz|lb|lbs?|cups?|tbsp|tsp|ml|l|pounds?|ounces?|grams?|kilograms?|teaspoons?|tablespoons?)\b|[½¼¾⅓⅔⅛⅜⅝⅞⅕⅖⅗⅘⅙⅚]/i;
+// Deliberately broader than extractMarkdownDirections (which only recovers
+// directions sitting under a specific "## Method"-style heading, a narrow
+// tool built for a different job). Confirmed necessary on
+// theboywhobakes.co.uk's Buttermilk Panna Cotta: real, complete directions
+// ("Place the gelatine...", "bring to a simmer", "refrigerate for at least
+// four hours") sit in plain paragraphs with no heading above them at all --
+// extractMarkdownDirections correctly returned null for its own narrow
+// purpose, but that null was wrongly reused here as "certainly no
+// directions exist," causing a real recipe to be skipped before the model
+// ever got a chance to read it.
+const ANY_DIRECTION_VERB_PATTERN =
+  /\b(?:preheat|whisk|simmer|marinate|refrigerate|saut[ée]|mince|knead|dice|drain|rinse|fold\s+in|bake|roast|blend|pur[ée]e|transfer\s+to|stir(?:\s+(?:in|until))?|combine|pour|place\s+the|add\s+the|remove\s+from|mix(?:\s+(?:in|until|together))?)\b/i;
 function assessExtractionViability(meta, markdown) {
   const missing = [];
 
@@ -428,7 +438,8 @@ function assessExtractionViability(meta, markdown) {
   }
 
   const hasLdDirections = looksLikeRealInstructionLines(meta.ldInstructionsRaw);
-  const hasRecoverableMarkdownDirections = Boolean(extractMarkdownDirections(markdown));
+  const hasAnyDirectionTextInMarkdown = Boolean(markdown) && ANY_DIRECTION_VERB_PATTERN.test(markdown);
+  const hasRecoverableMarkdownDirections = Boolean(extractMarkdownDirections(markdown)) || hasAnyDirectionTextInMarkdown;
   if (!hasLdDirections && !hasRecoverableMarkdownDirections) {
     missing.push('directions');
   }
