@@ -392,7 +392,13 @@ async function main() {
         continue;
       }
 
-      const slug     = friendlySlug(url, extracted.title);
+      // Prefers ldName (structured recipe name) over the raw page title --
+      // confirmed necessary on marcussamuelsson.com: every page's <title>
+      // is just "Chef Marcus Samuelsson", never the dish name, so every
+      // recipe on that site collapsed to the same slug prefix. ldName
+      // correctly has the real name ("Glazed Arctic Char...") since it's
+      // JSON-LD structured data tied to the specific recipe, not the page.
+      const slug     = friendlySlug(url, extracted.ldData?.ldName || extracted.title);
       const mdPath   = `${RAW_DIR}/${slug}.md`;
       const metaPath = `${RAW_DIR}/${slug}.meta.json`;
       const siteTags = siteTagsFor(url);
