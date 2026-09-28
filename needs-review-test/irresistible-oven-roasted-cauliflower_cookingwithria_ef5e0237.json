@@ -1,0 +1,96 @@
+{
+  "recipe": {
+    "name": "Oven Roasted Cauliflower",
+    "time": "45 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat oven to 450F.",
+      "Cut large stem off cauliflower.",
+      "Wash under running water. Drain or dry thoroughly.",
+      "Slice cauliflower florets in half (thirds if possible). Cut into similar sizes for even browning.",
+      "Make dressing: In a large bowl squeeze the juice of half of a large lemon (2 tablespoons). Add olive oil, salt and freshly ground black pepper.",
+      "Whisk to mix until cloudy.",
+      "Add dressing to cauliflower and toss gently to combine.",
+      "Brush a baking sheet with oil.",
+      "Spread the cauliflower in single layer on a baking sheet, flat side down.",
+      "Brush top of cauliflower with a little more olive oil (about 1 teaspoon)",
+      "Do not include any \"water\" that has collected at the bottom of the bowl.",
+      "OPTIONAL: Cut one-half of the lemon in thin slices. Place the lemon slices on top the cauliflower. The lemons add more lemon flavor....and I like eating the lemons too.",
+      "Place the pan in the oven and roast until cauliflower is golden brown [checking and turning after 10 minutes], about 15-30 minutes--depending on your oven...",
+      "Pay close attention after the 10 minute point, as they brown very quickly after that."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cauliflower",
+        "unit": "head",
+        "notes": "small or medium, organic, trimmed and florets sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Himalayan Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": "juice of 1/2 large lemon",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "tsp",
+        "notes": "for brushing pan and cauliflower, divided",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "55d4a8530544caf1653cc1f90e7eb735fc8e7e0e4d1b697ddf5f0d024daa0b7a",
+    "lineage_hash": "97f339790a7f167833a4534ca4d7f52e62c921e1cac8ebcc0d294f5b1307862f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cookingwithria.com/2013/01/irresistible-roasted-cauliflower/",
+    "fetchedAt": "2026-09-25T22:09:39.964Z"
+  },
+  "rawSource": "https://cookingwithria.com/2013/01/irresistible-roasted-cauliflower/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

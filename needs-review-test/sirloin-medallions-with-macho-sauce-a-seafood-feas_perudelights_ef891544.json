@@ -1,0 +1,176 @@
+{
+  "recipe": {
+    "name": "Sirloin medallions with macho sauce",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "PE",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Season the sirloin with salt and pepper. Heat 2 tablespoons oil in a skillet over medium heat, add the steaks and sear on both sides until golden.",
+      "In the meantime, heat the oil in a skillet over medium heat; add onion, garlic, paprika and oregano, and sauté for 5 minutes or until the onion looks translucent. Add ají amarillo paste, stir, and after 3 minutes add tomato, cooking for 5 more minutes. Add wine, bring to a boil, lower the heat and simmer for 3 minutes. Season with salt and pepper.",
+      "Add fish stock and simmer for 10 minutes. Dissolve potato starch in 3 tablespoons cold water, add to the saucepan and stir until it is slightly thick. Finally add the mussels, scallops, shrimp, and squid, stir and steam for a few minutes, just until the mussels open their shells, the scallops look opaque, and the shrimp turn pink, about four minutes.",
+      "Sprinkle with cilantro, salt, and pepper. Turn off the heat.",
+      "Transfer the sirloin medallions to 4 plates, surround with the seafood sauce, and serve immediately.",
+      "To make fish stock put the bones and heads of the fish in a saucepan, cover with water, add two parsley sprigs, 1 celery rib, and ¼ onion. Bring to a boil over high heat, turn the heat to low and simmer for 25 minutes. Strain and discard the solids."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Filet Mignon",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oregano",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Aji Amarillo Paste",
+        "unit": "C",
+        "notes": "or more",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": null,
+        "notes": "peeled, seeded and chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Stock",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potato Starch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mussels",
+        "unit": null,
+        "notes": "cleaned",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallops",
+        "unit": "oz",
+        "notes": "cleaned",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shrimps",
+        "unit": "oz",
+        "notes": "peeled and deveined",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooked Squid",
+        "unit": "oz",
+        "notes": "cut into rings",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d0c61becfbd934c1eb800ab739c45b5af107f8755fc9a4f273476cb81f2d60c1",
+    "lineage_hash": "7490b8505c7ba25cd702282ae5792fa363b7080913b531a708121274e0982527"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://perudelights.com/sirloin-medallions-with-macho-sauce-a-seafood-feast-for-brave-men/",
+    "fetchedAt": "2026-09-25T23:24:34.076Z"
+  },
+  "rawSource": "https://perudelights.com/sirloin-medallions-with-macho-sauce-a-seafood-feast-for-brave-men/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

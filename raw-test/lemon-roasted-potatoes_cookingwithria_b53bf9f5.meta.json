@@ -1,0 +1,59 @@
+{
+  "url": "https://cookingwithria.com/2025/04/lemon-roasted-potatoes/",
+  "slug": "lemon-roasted-potatoes_cookingwithria_b53bf9f5",
+  "title": "Lemon Roasted Potatoes",
+  "byline": "CookingwithRia",
+  "fetchedAt": "2026-09-25T21:43:45.464Z",
+  "ldName": "Greek-Style Lemon Roasted Potatoes",
+  "ldTime": "PT60M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT60M",
+  "ldYield": [
+    "6",
+    "6 servings"
+  ],
+  "ldCuisine": "American, Greek, Mediterranean",
+  "ldCategory": "dinner, lunch, Side Dish",
+  "ldKeywords": "greek lemon potatoes, greek style lemon potatoes, lemon potatoes, lemony potatoes",
+  "ldIngredientsRaw": [
+    "3 lbs potatoes (peeled and quartered lengthwise)",
+    "1 tablespoon dried oregano",
+    "4 cloves garlic (minced)",
+    "1/4 cup extra virgin olive oil",
+    "1/2 cup chicken or vegetable stock",
+    "Juice of 1–2 lemons (adjust to taste)",
+    "1 tsp salt (or to taste)"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat Oven: Preheat your oven to 400°F (200°C).",
+    "Prep the Potatoes: Peel, rinse, and drain the potatoes. Cut each into long quarters.",
+    "Mix: In a large baking dish, combine potatoes, oregano, garlic, olive oil, stock, and lemon juice. Toss everything together to ensure the potatoes are evenly coated.",
+    "Roast: Spread the potatoes in a single layer. Roast uncovered for 50–60 minutes, turning occasionally, until the potatoes are golden brown and crispy on the edges.",
+    "Serve: Sprinkle with additional oregano or lemon juice if desired and serve hot."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "259 kcal",
+    "carbohydrateContent": "41 g",
+    "proteinContent": "5 g",
+    "fatContent": "9 g",
+    "saturatedFatContent": "1 g",
+    "sodiumContent": "402 mg",
+    "fiberContent": "5 g",
+    "sugarContent": "2 g",
+    "unsaturatedFatContent": "8 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "3 lbs potatoes peeled and quartered lengthwise",
+    "1 tablespoon dried oregano",
+    "4 cloves garlic minced",
+    "1/4 cup extra virgin olive oil",
+    "1/2 cup chicken or vegetable stock",
+    "Juice of 1–2 lemons adjust to taste",
+    "1 tsp salt or to taste"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "TT",
+  "siteCourseHint": null
+}

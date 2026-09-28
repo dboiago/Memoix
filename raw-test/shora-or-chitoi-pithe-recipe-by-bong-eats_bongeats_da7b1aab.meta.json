@@ -1,0 +1,29 @@
+{
+  "url": "https://www.bongeats.com/recipe/shora-chitoi-pithe",
+  "slug": "shora-or-chitoi-pithe-recipe-by-bong-eats_bongeats_da7b1aab",
+  "title": "Shora or Chitoi Pithe recipe by Bong Eats",
+  "byline": "",
+  "fetchedAt": "2026-08-02T00:28:40.614Z",
+  "ldName": "Shora or Chitoi Pithe",
+  "ldTime": "PT4H",
+  "ldPrepTime": "PT1H",
+  "ldCookTime": "PT3H",
+  "ldYield": "10–12 servings",
+  "ldCuisine": "Indian",
+  "ldCategory": null,
+  "ldKeywords": "shora pitha, chitoi pitha, poush pithe, poush sonkranti pithe puli",
+  "ldIngredientsRaw": null,
+  "ldInstructionsRaw": null,
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": ""
+  },
+  "htmlIngredientLines": [
+    "1 kg rice (non-fragrant, parboiled)",
+    "25 g salt",
+    "1.8 L hot water"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IN",
+  "siteCourseHint": null
+}

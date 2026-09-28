@@ -1,0 +1,180 @@
+{
+  "recipe": {
+    "name": "Corn Pie",
+    "time": "40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "196",
+      "carbohydrateContent": "28",
+      "fatContent": "8",
+      "proteinContent": "4"
+    },
+    "directions": [
+      "Preheat oven to 350 degrees Fahrenheit.",
+      "To make buttermilk, add 1 tbs of vinegar to a measuring cup, fill up to the 1 cup mark with whole milk. Allow it to sit for 5 mins. Mix in ½ tsp baking soda.",
+      "Place all dry ingredients in a bowl (1 cup cornmeal, 1 cup flour, ½ cup brown sugar) and mix to combine. Mix in whole corn, bell pepper, scallions, onion, pimento pepper(and hot pepper, if using).",
+      "Add the wet ingredients (6 tbs melted butter, buttermilk and 1 egg)  to the dry ingredients and mix to combine.",
+      "Pour batter into a greased baking dish, place in the oven and cook for 40-60 mins until firm and the top is golden brown."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Buttermilk",
+        "unit": "C",
+        "notes": "1 tbs vinegar plus 1 cup whole milk minus 1 tbs",
+        "amount": "1",
+        "section": "Wet Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Wet Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Wet Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Tbs Butter Melted",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": "Wet Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Wet Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Cream Style Corn",
+        "unit": "can",
+        "notes": null,
+        "amount": "1",
+        "section": "Wet Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "Wet Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Green Seasoning Optional",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Wet Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Fine Cornmeal",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Dry Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Dry Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Dry Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Corn Drained",
+        "unit": "can",
+        "notes": null,
+        "amount": "1",
+        "section": "Dry Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Red Bell Pepper",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "¼",
+        "section": "Dry Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "¼",
+        "section": "Dry Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "¼",
+        "section": "Dry Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Pimento Peppers Finely Diced",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Dry Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Hot Pepper Optional",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Dry Ingredients",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3272c391e2ac257d4ff33809a951edf72522c9a7e79fac6cb27320406d44ac0f",
+    "lineage_hash": "034a6586ad9a1e15409ac3add5f30065c310843ba63246ea55c37f76bbf505ab"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cookingwithria.com/2020/06/amazing-corn-pie-recipe/",
+    "fetchedAt": "2026-09-25T19:53:09.814Z"
+  },
+  "rawSource": "https://cookingwithria.com/2020/06/amazing-corn-pie-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

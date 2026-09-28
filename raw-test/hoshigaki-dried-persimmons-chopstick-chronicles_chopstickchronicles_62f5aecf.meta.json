@@ -1,0 +1,39 @@
+{
+  "url": "https://www.chopstickchronicles.com/hoshigaki-dried-persimmon/",
+  "slug": "hoshigaki-dried-persimmons-chopstick-chronicles_chopstickchronicles_62f5aecf",
+  "title": "Hoshigaki Dried Persimmons 干し柿 | Chopstick Chronicles",
+  "byline": "Author: Shihoko | Chopstick Chronicles",
+  "fetchedAt": "2026-08-02T02:57:13.162Z",
+  "ldName": "Hoshigaki Dried Persimmons 干し柿",
+  "ldTime": "PT20180M",
+  "ldPrepTime": "PT20M",
+  "ldCookTime": null,
+  "ldYield": [
+    "20"
+  ],
+  "ldCuisine": "Japanese",
+  "ldCategory": "Appetiser, condiments, Snack",
+  "ldKeywords": "dried persimmons, hoshigaki",
+  "ldIngredientsRaw": [
+    "20  astringent persimmons"
+  ],
+  "ldInstructionsRaw": [
+    "Preparation of Persimmons",
+    "Drying Process"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "213 kcal",
+    "carbohydrateContent": "56 g",
+    "proteinContent": "1 g",
+    "fatContent": "1 g",
+    "sodiumContent": "2 mg",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 20 astringent persimmons"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "JP",
+  "siteCourseHint": null
+}

@@ -1,0 +1,76 @@
+{
+  "recipe": {
+    "name": "Chimichurri Chicken Skewers",
+    "time": "10-15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "AR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the cubes of chicken to a bowl, then add the chimichurri sauce. Stir to combine. Now add the coarse salt and stir again.",
+      "Thread the chicken, peppers, and onion onto soaked skewers to assemble. Grill over direct heat for about 10-15 minutes, flipping halfway for even cooking. Ensure the chicken reaches an internal temperature of 165 degrees F when checked with a thermometer to confirm it's fully cooked."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cube Chicken",
+        "unit": null,
+        "notes": "add to bowl with chimichurri sauce and coarse salt",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chimichurri Sauce",
+        "unit": null,
+        "notes": "added to chicken cubes",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Salt",
+        "unit": null,
+        "notes": "added to chicken and chimichurri sauce",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peppers",
+        "unit": null,
+        "notes": "grilled on skewers",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "grilled on skewers",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d33a2d72fe214ec6f6efbbcfe9ae5812cb95bc69d0747ce65cdbe3983852b8d4",
+    "lineage_hash": "a30077c9988ea5b4496244ea2d00d42e7eede564531dc3776c29ea514e45de30"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://braziliankitchenabroad.com/web-stories/chimichurri-chicken-skewers-flavorful-grilled-crowd-pleasers/",
+    "fetchedAt": "2026-09-26T00:16:02.413Z"
+  },
+  "rawSource": "https://braziliankitchenabroad.com/web-stories/chimichurri-chicken-skewers-flavorful-grilled-crowd-pleasers/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

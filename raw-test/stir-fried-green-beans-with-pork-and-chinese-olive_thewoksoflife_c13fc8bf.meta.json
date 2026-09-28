@@ -1,0 +1,73 @@
+{
+  "url": "https://thewoksoflife.com/stir-fried-green-beans/",
+  "slug": "stir-fried-green-beans-with-pork-and-chinese-olive_thewoksoflife_c13fc8bf",
+  "title": "Stir-Fried Green Beans with Pork and Chinese Olive Vegetable",
+  "byline": "Judy",
+  "fetchedAt": "2026-08-01T23:36:29.458Z",
+  "ldName": "Stir-Fried Green Beans with Pork and Chinese Olive Vegetable",
+  "ldTime": "PT30M",
+  "ldPrepTime": "PT20M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "4",
+    "4 servings"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Vegetables",
+  "ldKeywords": "stir-fried green beans",
+  "ldIngredientsRaw": [
+    "4 ounces ground pork ((or chicken, 115g))",
+    "1 teaspoon Shaoxing wine",
+    "1 teaspoon light soy sauce",
+    "1/8 teaspoon white pepper powder",
+    "2 1/2 tablespoons vegetable oil ((divided))",
+    "1 pound green beans ((450g, cut into ½-inch pieces))",
+    "1 teaspoon ginger ((minced))",
+    "3 cloves garlic ((minced))",
+    "¼ cup preserved olive vegetable",
+    "1 tablespoon Shaoxing wine",
+    "¼ teaspoon sugar",
+    "6-7  dried chili peppers ((deseeded and chopped into coarse pieces, optional))",
+    "½ teaspoon sesame oil",
+    "1/4 teaspoon salt ((or to taste))"
+  ],
+  "ldInstructionsRaw": [
+    "Marinate the ground pork with 1 teaspoon Shaoxing wine, 1 teaspoon light soy sauce and a pinch of white pepper powder. Let sit for 15 minutes.",
+    "Heat 1½ tablespoons of oil in your wok over medium heat. Add the green beans, stir-fry, and spread the beans out in a single layer. Let cook for 20 seconds. Then stir and repeat the spreading step several times until the green beans are slightly wilted and cooked through. Turn the heat down to medium if needed to avoid burning. It takes about 5 minutes to cook the green beans this way. Transfer to a dish and set aside.",
+    "Next, heat 1 tablespoon of oil in your wok over medium heat. Add the minced ginger and garlic. Stir for a few seconds, turn up the heat, and add the pork. Stir-fry the pork until it’s cooked through. Now add the olive vegetable, Shaoxing wine, and sugar. Stir-fry everything to combine. Add the green beans back to the wok along with the dried hot peppers and sesame oil. Stir for about a minute, salt to taste, and serve!"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "254 kcal",
+    "carbohydrateContent": "10 g",
+    "proteinContent": "7 g",
+    "fatContent": "21 g",
+    "saturatedFatContent": "10 g",
+    "cholesterolContent": "20 mg",
+    "sodiumContent": "253 mg",
+    "fiberContent": "3 g",
+    "sugarContent": "4 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "[meat]",
+    "▢ 4 ounces ground pork (or chicken, 115g)",
+    "▢ 1 teaspoon Shaoxing wine",
+    "▢ 1 teaspoon light soy sauce",
+    "▢ 1/8 teaspoon white pepper powder",
+    "[rest of the dish]",
+    "▢ 2 1/2 tablespoons vegetable oil (divided)",
+    "▢ 1 pound green beans (450g, cut into ½-inch pieces)",
+    "▢ 1 teaspoon ginger (minced)",
+    "▢ 3 cloves garlic (minced)",
+    "▢ ¼ cup preserved olive vegetable",
+    "▢ 1 tablespoon Shaoxing wine",
+    "▢ ¼ teaspoon sugar",
+    "▢ 6-7 dried chili peppers (deseeded and chopped into coarse pieces, optional)",
+    "▢ ½ teaspoon sesame oil",
+    "▢ 1/4 teaspoon salt (or to taste)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

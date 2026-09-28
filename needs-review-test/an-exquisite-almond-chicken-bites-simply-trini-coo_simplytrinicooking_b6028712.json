@@ -1,0 +1,134 @@
+{
+  "recipe": {
+    "name": "Almond Chicken Bites",
+    "time": null,
+    "course": "mains",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cut chicken breasts into 3 x 1 inch strips and place in a bowl.",
+      "Season chicken with green seasoning and salt. Toss.",
+      "Combine rice cooking wine, 2 tbsp cornstarch, sugar, and soy sauce.",
+      "Place strips into bowl and toss.",
+      "Cover with a plastic wrap and leave to marinade for an hour.",
+      "In another bowl combine 4 tbsp cornstarch with the ground almonds.",
+      "Place egg in a bowl and beat lightly.",
+      "Dip the chicken strips in egg then in the almond mixture.",
+      "Set aside for 10 minutes.",
+      "Heat oil in a deep pot. Deep fry for 3 minutes, or until golden brown.",
+      "Remove from oil and drain on paper towels.",
+      "Serve on a bed of lettuce with sweet and sour sauce or plum sauce."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Breasts Boned and Skinned",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Cooking Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Seasoning",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp + 4 Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Almonds",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lettuce Leaves Shredded",
+        "unit": null,
+        "notes": "this will form the bed when serving the chicken",
+        "amount": "4-5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil for Deep Frying",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3cdcb7427a0455e16a76f3f7a6b8bb1af4512b06bb863a90f9966a078b8c14bb",
+    "lineage_hash": "f485c46796c8cad438d042d081c4471d8f4bb1bd63769ee8443319e48bc11d36"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.simplytrinicooking.com/almond-chicken-bites/",
+    "fetchedAt": "2026-09-26T00:28:52.411Z"
+  },
+  "rawSource": "https://www.simplytrinicooking.com/almond-chicken-bites/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

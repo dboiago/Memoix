@@ -1,0 +1,202 @@
+{
+  "recipe": {
+    "name": "Beef Rendang",
+    "time": "3 hr 45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "MY",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "512",
+      "carbohydrateContent": "14",
+      "fatContent": "38",
+      "proteinContent": "32"
+    },
+    "directions": [
+      "In a blender or food processor, add the powdered cloves, nutmeg, turmeric, shallot/onion, garlic, ginger, galangal, and chilies and blend until smooth. Heat a large heavy bottomed pot over medium heat and add the oil along with the mixture you just pureed. Cook for about 3 minutes, until fragrant.",
+      "Add the beef to the pot and cook for 3 minutes, stirring constantly. Then add the lemongrass, cinnamon sticks, star anise, coconut milk, beef broth, and salt, to taste. Bring to a boil. Once boiling, turn the heat to low and simmer for 90 minutes, stirring frequently to prevent burning.",
+      "Add the lime leaves, lime juice, brown sugar, and coconut flakes (if using) and stir. Simmer for another 2 hours, until the sauce is thick and dark, and the meat is very tender. Taste for seasoning and adjust seasoning with salt and sugar to taste. Remove the lemon grass, lime leaves, and whole spices, and serve!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Cloves",
+        "unit": null,
+        "notes": "smashed into a powder",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": "or 1 large onion",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "peeled",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "3″ Piece of Ginger",
+        "unit": null,
+        "notes": "peeled and roughly chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "3″ Piece of Galangal",
+        "unit": null,
+        "notes": "peeled and roughly chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilies",
+        "unit": null,
+        "notes": "stemmed",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Chuck",
+        "unit": "lb",
+        "notes": "alt: brisket, cut into 2\" pieces, boneless",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemongrass",
+        "unit": "stalk",
+        "notes": "trimmed and crushed with the back of your knife",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Sticks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsweetened Coconut Milk",
+        "unit": "cans",
+        "notes": "about 27 fl. ounces; 800 ml",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Broth",
+        "unit": "C",
+        "notes": "235 ml",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt (to Taste)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kaffir Lime Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Unsweetened Coconut Flakes",
+        "unit": "C",
+        "notes": "optional",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "90f62473ef0a7944b5189d766bc9db65b07753ebf75480de40701b5d3b0db86c",
+    "lineage_hash": "d6436a31f8ec4852e1ce79dc58418ce23020dfb29d8ddad30eff8834f6bb98bc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/beef-rendang/",
+    "fetchedAt": "2026-08-02T08:52:48.630Z"
+  },
+  "rawSource": "https://thewoksoflife.com/beef-rendang/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,199 @@
+{
+  "recipe": {
+    "name": "Channa Patties",
+    "time": "45 min",
+    "course": "veg'n",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Soak the channa for 15 mins. Drain.",
+      "Pressure cook the channa for 20 minutes. Then drain the water and set aside to cool.",
+      "Next, toast the sesame seeds in a pot.",
+      "Note: The sesame seed adds a nutty flavour to the channa pattie.",
+      "Toast until golden brown.",
+      "Blend the sesame seeds until fine then set aside.",
+      "Prepare the herbs and the seasoning for the patties.",
+      "Reserve 1/2 the chopped chadon beni and some parsley.",
+      "In a food processor, add the channa, sesame seed, onion, garlic, pimento pepper and the chopped herbs.",
+      "Blend the ingredients together.",
+      "Add the rest of the ingredients, including the eggs, and proceed",
+      "to make balls by scooping 1/2 cup of the channa mixture each time.",
+      "Note: No flour was used.",
+      "Place the balls on a tray with waxed paper.",
+      "You will get 10 channa balls for this recipe.",
+      "Flatten and form the patties in the palm of your hands.",
+      "The flattened channa is ready for frying.",
+      "Fry the channa patties over a low flame. Flip the patties over and fry until golden.",
+      "Note: Just use enough oil to cover the channa patties.",
+      "I used a low flame so I can have more control over the frying process.",
+      "Place the patties on napkins to remove the excess oil."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Channa Garbanzo Bean",
+        "unit": "lb",
+        "notes": "chickpea",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion Chopped",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Chopped",
+        "unit": "clove",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Grated",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chadon Beni Chopped",
+        "unit": "C",
+        "notes": "divided",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oregano",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leaves Big Leaf Thyme Chopped",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley Chopped",
+        "unit": "C",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Leaf Thyme",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Marjoram",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sage",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seed Toasted",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pimento Chopped",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cayenne Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs Beaten",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil for Frying",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "18eab5c80877b73110ad973aa5d40a880d9c0248af68ddbfe03783d729605a03",
+    "lineage_hash": "80f817bb4a481f270bfdab4ba4e966a093385bef84bab42024c7d1b873c9d991"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.simplytrinicooking.com/channa-patties/",
+    "fetchedAt": "2026-09-26T01:16:36.728Z"
+  },
+  "rawSource": "https://www.simplytrinicooking.com/channa-patties/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

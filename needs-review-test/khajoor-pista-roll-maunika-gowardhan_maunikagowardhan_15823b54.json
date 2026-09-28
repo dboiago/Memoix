@@ -1,0 +1,86 @@
+{
+  "recipe": {
+    "name": "Khajoor pista roll",
+    "time": "30 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pulse the soft dates to a coarse mix in a mixer. Don’t make a paste.",
+      "Heat the ghee in a pan and add the dates. Mix on a low heat for 2 minutes. Add the ground almonds, cashew and 25 gms pistachio. Add the cardamom powder and stir for 2 minutes",
+      "Flatten the mix over baking parchment and leave to cool for 30 minutes. Roll into a log, approximately 18cm in length, applying some pressure so that the mixture is compact and roll in the remaining pistachio to coat",
+      "Set and refrigerate for 2 hours. Slice into rounds and serve with chai."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Soft Dates",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Almonds",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cashew",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gms Gms Pistachio",
+        "unit": null,
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3e23ffe9c02ab8166f512947e86fc1a09d01108041b141aaf2e1c2f300cd2a7c",
+    "lineage_hash": "d5396622e04985309a6e3e39dbb422fb88fc32bdb706e2b741c8802683de68ae"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://maunikagowardhan.co.uk/cook-in-a-curry/khajoor-pista-roll/",
+    "fetchedAt": "2026-08-01T20:09:50.223Z"
+  },
+  "rawSource": "https://maunikagowardhan.co.uk/cook-in-a-curry/khajoor-pista-roll/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

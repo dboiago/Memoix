@@ -1,0 +1,153 @@
+{
+  "recipe": {
+    "name": "Trini Chicken Roulade",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Clean the chicken.",
+      "Place the chicken breast on a cutting board.",
+      "Cover with plastic wrap.",
+      "Pound the chicken breast flat.",
+      "Season the chicken. (Note: the chicken is seasoned with the Trini green seasoning).",
+      "Layer each chicken breast with a 1/4 cup of cheese and the spinach leaves (about 6 or 7 leaves each).",
+      "Fold and tightly roll. Secure the ends with toothpicks.",
+      "Cover with plastic wrap and refrigerate for about 1 hour.",
+      "Blend together the paprika, parsley, garlic, thyme, and oregano with the bread crumbs.",
+      "Combine the milk and the egg.",
+      "Dust the chicken with flour.",
+      "Dip into the milk and dredge in the bread crumbs.",
+      "Preheat the oven for 10 minutes at about 180 degrees Celsius (356 degrees F).",
+      "Place the chicken roulades on a greased baking tray and bake for about 20 minutes.",
+      "Allow to cool. Remove the toothpicks and cut into 1\" thick rolls."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Breast",
+        "unit": null,
+        "notes": "boneless, seasoned",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan Cheese",
+        "unit": "oz",
+        "notes": "grated",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Low Fat Milk",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Panko Bread Crumbs",
+        "unit": "C",
+        "notes": null,
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oregano",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "tsp",
+        "notes": "grated",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spinach Leaves",
+        "unit": null,
+        "notes": "amaranth",
+        "amount": "20-25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toothpicks",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f8b21c97a8324ae0db09a0e130e98f79422240cc177162fdc35f9bc8917e417e",
+    "lineage_hash": "0cd74cab1f6ea4e80778afc6bc3f536e3cad67bc1b440eaacdfb2c20c9570938"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.simplytrinicooking.com/trini-chicken-roulade/",
+    "fetchedAt": "2026-09-26T01:47:58.635Z"
+  },
+  "rawSource": "https://www.simplytrinicooking.com/trini-chicken-roulade/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

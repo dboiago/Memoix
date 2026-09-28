@@ -1,0 +1,67 @@
+{
+  "url": "https://itdoesnttastelikechicken.com/kfc-coleslaw-copycat/",
+  "slug": "kfc-coleslaw-copycat-sweet-creamy-vegan_itdoesnttastelikechicken_38c73483",
+  "title": "KFC Coleslaw Copycat (Sweet, Creamy & Vegan!)",
+  "byline": "Sam Turnbull @ It Doesn't Taste Like Chicken",
+  "fetchedAt": "2026-08-02T10:09:45.867Z",
+  "ldName": "KFC Coleslaw Copycat (Sweet, Creamy &amp; Vegan!)",
+  "ldTime": "PT75M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": null,
+  "ldYield": [
+    "6",
+    "6 - 8"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Salad, Side Dish",
+  "ldKeywords": "coleslaw, copycat",
+  "ldIngredientsRaw": [
+    "6 cups green cabbage (very finely chopped)",
+    "½ cup carrot (peeled and finely chopped (about 1 large carrot))",
+    "3 tablespoons white or yellow onion (very finely chopped)",
+    "½ cup vegan mayonnaise",
+    "3 tablespoons white sugar ((or maple syrup))",
+    "2 tablespoons apple cider vinegar",
+    "1 tablespoon lemon juice",
+    "1 teaspoon yellow or Dijon mustard",
+    "½ teaspoon salt",
+    "¼ teaspoon black pepper"
+  ],
+  "ldInstructionsRaw": [
+    "Prep the vegetables: Finely chop the cabbage, carrot, and onion until very small and uniform. This is key for that classic KFC-style texture.Tip: A food processor makes this quick and easy. Roughly chop the vegetables, then pulse using the S-blade until finely chopped (be careful not to over-process).",
+    "Make the dressing: In a medium bowl, whisk together the vegan mayonnaise, sugar, apple cider vinegar, lemon juice, mustard, salt, and pepper until smooth.",
+    "Combine: Add the cabbage, carrots, and onion to a large bowl. Pour the dressing over top and mix well until everything is evenly coated.",
+    "Chill (important!): Cover and refrigerate for at least 1–2 hours before serving to allow the flavors to meld. It gets even yummier after resting.",
+    "Serve: Stir well before serving and enjoy!"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1  serving (recipe makes 6 servings)",
+    "calories": "169 kcal",
+    "carbohydrateContent": "13 g",
+    "proteinContent": "1 g",
+    "fatContent": "12 g",
+    "saturatedFatContent": "1 g",
+    "sodiumContent": "330 mg",
+    "fiberContent": "2 g",
+    "sugarContent": "9 g",
+    "unsaturatedFatContent": "0.07 g"
+  },
+  "htmlIngredientLines": [
+    "[slaw]",
+    "▢ 6 cups green cabbage, very finely chopped",
+    "▢ ½ cup carrot, peeled and finely chopped (about 1 large carrot)",
+    "▢ 3 tablespoons white or yellow onion, very finely chopped",
+    "[dressing]",
+    "▢ ½ cup vegan mayonnaise",
+    "▢ 3 tablespoons white sugar, (or maple syrup)",
+    "▢ 2 tablespoons apple cider vinegar",
+    "▢ 1 tablespoon lemon juice",
+    "▢ 1 teaspoon yellow or Dijon mustard",
+    "▢ ½ teaspoon salt",
+    "▢ ¼ teaspoon black pepper"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Veg'n"
+}

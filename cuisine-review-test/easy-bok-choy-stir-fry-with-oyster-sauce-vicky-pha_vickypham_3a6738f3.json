@@ -1,0 +1,87 @@
+{
+  "recipe": {
+    "name": "Bok Choy Stir Fry with Oyster Sauce",
+    "time": "8 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cut the bok choy in half lengthwise. Halve it again if it&#8217;s too big. Submerge the bok choy in water to clean then rinse thoroughly. Peel the onion and cut it into medium wedges.",
+      "In a small bowl, whisk together the water, oyster sauce, and tapioca starch until smooth.",
+      "Fill a tall pan or wok with plenty of water (about 1-½ quarts) and bring it to a rolling boil. Add bok choy and blanch for 3 minutes, tossing for even cooking. Remove the bok choy from the water and set aside.",
+      "Drain the pan and wipe dry. Add oil and heat on medium-high. Add the onions and stir-fry them until lightly charred on the outside (about 3 minutes).",
+      "Give the sauce mixture a stir in case the tapioca starch has settled. Pour the sauce into the pan. It should thicken almost immediately. Add the blanched bok choy and toss to combine with the sauce. There&#8217;s no need to cook it any further. Serve it with rice or noodles for a complete meal."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bok Choy",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yellow or White Onion",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "room temperature or cold",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tapioca Starch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "53388c0ed8db406cbbc3e37d1ae4840723f331c93eb061d1f87c4a3e1ff82c76",
+    "lineage_hash": "5146b3e7c573d61cc46ea3400bceb9a2f8056062fc29d5c60548f7f45cf82511"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://vickypham.com/blog/bok-choy-oyster-sauce/",
+    "fetchedAt": "2026-08-02T05:05:24.854Z"
+  },
+  "rawSource": "https://vickypham.com/blog/bok-choy-oyster-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,61 @@
+{
+  "url": "https://spanishsabores.com/patatas-alioli-recipe/",
+  "slug": "patatas-alioli-recipe-patatas-alioli-recipe_spanishsabores_88e2abd0",
+  "title": "Patatas Alioli Recipe - Patatas Alioli Recipe",
+  "byline": "Lauren Aloise",
+  "fetchedAt": "2026-08-02T11:07:02.521Z",
+  "ldName": "Patatas Alioli Recipe",
+  "ldTime": "PT40M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT30M",
+  "ldYield": [
+    "4",
+    "4 servings"
+  ],
+  "ldCuisine": "Spanish",
+  "ldCategory": "Appetizer",
+  "ldKeywords": "garlic potatoes, Patatas Alioli",
+  "ldIngredientsRaw": [
+    "4  medium-sized potatoes (unpeeled)",
+    "3  garlic cloves (minced)",
+    "1/2 teaspoon salt",
+    "1  egg yolk",
+    "3/4 cup extra virgin olive oil",
+    "1 teaspoon lemon juice",
+    "1 tablespoon fresh parsley (chopped)"
+  ],
+  "ldInstructionsRaw": [
+    "Wash the potatoes, then place them in a saucepan and cover with cold water. Boil on high heat, then reduce to a medium-low and simmer for 15 minutes or until fork tender. Let them cool before peeling (about15 minutes).",
+    "While the potatoes are cooling, make the alioli. Mash the minced garlic into a paste with a mortar and pestle.",
+    "Place the garlic paste and the egg yolk into the container of an immersion blender. Pulse lightly to combine.",
+    "Gradually add the olive oil to the mixture, constantly blending to incorporate it as you pour. The mixture should slowly start to thicken as the oil emulsifies. Once all the oil is combined, add the lemon juice and blend.",
+    "Once the potatoes are cooled and peeled, slice them into 1-inch cubes. Toss them gently to mix them with the alioli.",
+    "Garnish with the chopped parsley and enjoy right away!"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "540.51 kcal",
+    "carbohydrateContent": "38.27 g",
+    "proteinContent": "5.2 g",
+    "fatContent": "41.91 g",
+    "saturatedFatContent": "6.08 g",
+    "cholesterolContent": "48.6 mg",
+    "sodiumContent": "307.39 mg",
+    "fiberContent": "4.77 g",
+    "sugarContent": "1.75 g",
+    "unsaturatedFatContent": "34.64 g"
+  },
+  "htmlIngredientLines": [
+    "▢ 4 medium-sized potatoes unpeeled",
+    "▢ 3 garlic cloves minced",
+    "▢ ½ teaspoon salt",
+    "▢ 1 egg yolk",
+    "▢ ¾ cup extra virgin olive oil",
+    "▢ 1 teaspoon lemon juice",
+    "▢ 1 tablespoon fresh parsley chopped"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "ES",
+  "siteCourseHint": "Mains"
+}

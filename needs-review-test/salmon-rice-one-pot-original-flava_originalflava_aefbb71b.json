@@ -1,0 +1,210 @@
+{
+  "recipe": {
+    "name": "Salmon & Rice One Pot",
+    "time": "1 hr 5 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "JM",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Marinate the Salmon: Season the salmon fillets with sea salt, black pepper, garlic powder, all-purpose seasoning, jerk seasoning, olive oil, and lemon juice. Let sit while you prep the vegetables.",
+      "Pan-Fry the Salmon: In a large, deep pan, heat 1 tbsp of olive oil over medium heat. Pan-fry the salmon for 5–7 minutes on each side until golden and crispy. Remove and set aside.",
+      "Sauté the Vegetables: In the same pan, add a little more oil if needed and sauté the onions, garlic, and bell peppers for a few minutes until soft and translucent.",
+      "Add Seasoning & Rice: Stir in the turmeric, season with salt and pepper to taste, then add the washed rice. Mix well and let the rice toast for 2–3 minutes with the vegetables.",
+      "Add Stock & Simmer: Pour in the vegetable stock and stir well. The liquid should sit about a fingertip above the rice level. Cover and simmer on low heat for 25 minutes.",
+      "Steam the Salmon: After 15 minutes of cooking, place the salmon fillets back on top of the rice. Cover and steam for the remaining 10 minutes, allowing the flavours to blend beautifully.",
+      "Make the Gravy (Optional): While the rice finishes, combine the remaining veg stock with jerk BBQ sauce, water, and all-purpose seasoning in a small saucepan. Bring to a gentle simmer for a few minutes until slightly thickened.",
+      "Garnish & Serve: Fluff the rice, garnish with fresh parsley, and drizzle with gravy if desired. Serve hot and enjoy this feel-good, one-pot Caribbean-inspired meal."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Salmon Fillets",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": "For the Salmon",
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For the Salmon",
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For the Salmon",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For the Salmon",
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Seasoning",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For the Salmon",
+        "isOptional": false
+      },
+      {
+        "name": "Jerk Seasoning",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For the Salmon",
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For the Salmon",
+        "isOptional": false
+      },
+      {
+        "name": "Juice of Lemon",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": "For the Salmon",
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": null,
+        "notes": "diced",
+        "amount": "1",
+        "section": "For the One Pot",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "4",
+        "section": "For the One Pot",
+        "isOptional": false
+      },
+      {
+        "name": "Green Bell Pepper",
+        "unit": null,
+        "notes": "diced",
+        "amount": "1",
+        "section": "For the One Pot",
+        "isOptional": false
+      },
+      {
+        "name": "Red Bell Pepper",
+        "unit": null,
+        "notes": "diced",
+        "amount": "1",
+        "section": "For the One Pot",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For the One Pot",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": "For the One Pot",
+        "isOptional": false
+      },
+      {
+        "name": "Long Grain Rice",
+        "unit": "g",
+        "notes": "washed",
+        "amount": "220",
+        "section": "For the One Pot",
+        "isOptional": false
+      },
+      {
+        "name": "Salt & Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For the One Pot",
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": null,
+        "notes": "fresh, for garnish",
+        "amount": "0",
+        "section": "For the One Pot",
+        "isOptional": false
+      },
+      {
+        "name": "Veg Stock",
+        "unit": null,
+        "notes": "remaining",
+        "amount": "0",
+        "section": "For the Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Jerk BBQ Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For the Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "125",
+        "section": "For the Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Seasoning",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For the Gravy",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9de139636232c7edc94f3ab0969d6124045ca56bc4af6ce808a52ecd09adc065",
+    "lineage_hash": "bec45361642d396faa3f26447d5995ce006a0429d0a2d540f00382c012a368e2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://originalflava.com/meals/salmon-rice-one-pot/",
+    "fetchedAt": "2026-09-25T22:03:11.631Z"
+  },
+  "rawSource": "https://originalflava.com/meals/salmon-rice-one-pot/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,42 @@
+{
+  "url": "https://dailycookingquest.com/banana-and-papaya-juice.html",
+  "slug": "banana-and-papaya-juice_dailycookingquest_51700a12",
+  "title": "Banana and Papaya Juice",
+  "byline": "",
+  "fetchedAt": "2026-08-02T11:52:03.846Z",
+  "ldName": "Banana and Papaya Juice",
+  "ldTime": "PT0H10M",
+  "ldPrepTime": "PT0H10M",
+  "ldCookTime": "PT0H0M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "Indonesian",
+  "ldCategory": "Drink, Vegetarian",
+  "ldKeywords": [
+    "Tropical juice from banana and papaya",
+    "Fruit"
+  ],
+  "ldIngredientsRaw": [
+    "1 banana (about 200 gram)",
+    "200 gram papaya",
+    "200 ml cold drinking water",
+    "juice of 1 lemon/lime",
+    "1 tablespoon honey"
+  ],
+  "ldInstructionsRaw": [
+    "Put everything in a blender and process until smooth.",
+    "Divide into serving glasses and serve immediately."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "1 banana (about 200 gram)",
+    "200 gram papaya",
+    "200 ml cold drinking water",
+    "juice of 1 lemon/lime",
+    "1 tablespoon honey"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": null,
+  "siteCourseHint": "Sides"
+}

@@ -1,0 +1,347 @@
+{
+  "recipe": {
+    "name": "Glazed Arctic Char with Slow Braised Cabbage, Green Pea Broken Rice and Berbere Oil",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "ET",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Blend all glaze ingredients in a food processor until smooth.",
+      "Season fish with salt and pepper.",
+      "Heat oil in a medium non-stick pan over medium heat.",
+      "Sear fish 2–3 minutes per side.",
+      "Transfer to a sheet tray and brush generously with miso glaze.",
+      "Combine all ingredients in a food processor.",
+      "Blend until smooth.",
+      "In a medium pot, heat oil over medium heat.",
+      "Add garlic and onion. Sweat for 2–3 minutes until translucent.",
+      "Stir in rice and toast for about 3 minutes, until fragrant.",
+      "Add coconut milk and vegetable stock. Bring to a boil.",
+      "Cover, reduce heat to low, and simmer for 20–30 minutes until cooked through.",
+      "Stir and let sit.",
+      "In a medium saucepan on low heat, combine pea hummus and coconut milk. Whisk for 2–3 minutes.",
+      "Add fresh peas and broken rice. Cook for another 2 minutes.",
+      "Stir in egg yolk, Parmesan, and olive oil. Fold until creamy and evenly combined.",
+      "Whisk all ingredients in a small bowl until fully combined."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Portions Arctic Char",
+        "unit": null,
+        "notes": "4 oz each, skin and bones removed",
+        "amount": "3",
+        "section": "Char Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Char Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "Char Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "Char Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Miso Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Miso Glaze Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Miso Glaze Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Miso Glaze Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Maple Syrup",
+        "unit": "Tbsp",
+        "notes": "alt: honey",
+        "amount": "1",
+        "section": "Miso Glaze Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juice and zest",
+        "amount": "1",
+        "section": "Miso Glaze Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Green Peas",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Pea Hummus Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Avocado",
+        "unit": null,
+        "notes": "ripe",
+        "amount": "1",
+        "section": "Pea Hummus Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "qt",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "Pea Hummus Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Mint",
+        "unit": "qt",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "Pea Hummus Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "raw",
+        "amount": "1",
+        "section": "Pea Hummus Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Pea Hummus Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juice and zest",
+        "amount": "1",
+        "section": "Pea Hummus Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "Pea Hummus Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "Pea Hummus Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Broken Rice",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "Broken Rice Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Broken Rice Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "1⁄3 Cup Garlic",
+        "unit": null,
+        "notes": "minced",
+        "amount": "0",
+        "section": "Broken Rice Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "1⁄3 Cup Onion",
+        "unit": null,
+        "notes": "minced",
+        "amount": "0",
+        "section": "Broken Rice Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "Broken Rice Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Stock",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "Broken Rice Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Cooked Broken Rice",
+        "unit": "oz",
+        "notes": null,
+        "amount": "4",
+        "section": "Finishing the Rice Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Pea Hummus",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": "Finishing the Rice Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Peas",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "1",
+        "section": "Finishing the Rice Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan Cheese",
+        "unit": "Tbsp",
+        "notes": "grated",
+        "amount": "1",
+        "section": "Finishing the Rice Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Finishing the Rice Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Finishing the Rice Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Finishing the Rice Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "Finishing the Rice Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "Finishing the Rice Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Berbere Oil Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Berbere Spice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Berbere Oil Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "Berbere Oil Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "Berbere Oil Ingredients",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b78fab95e5eee5d3879b8444bacd89540153cbd45fc533fba5aa830faa9110d7",
+    "lineage_hash": "a4c5df253168b6a9ada34db55ea917cdfd8fe96ef3572584f99590eb9f94e779"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://marcussamuelsson.com/recipe/glazed-arctic-char-with-slow-braised-cabbage-green-pea-broken-rice-and-berbere-oil",
+    "fetchedAt": "2026-09-25T18:45:57.884Z"
+  },
+  "rawSource": "https://marcussamuelsson.com/recipe/glazed-arctic-char-with-slow-braised-cabbage-green-pea-broken-rice-and-berbere-oil",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

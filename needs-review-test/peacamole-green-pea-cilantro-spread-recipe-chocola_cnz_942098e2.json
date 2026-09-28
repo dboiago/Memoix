@@ -1,0 +1,94 @@
+{
+  "recipe": {
+    "name": "Peacamole: Green Pea Cilantro Spread",
+    "time": "14 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Steam the peas for 14 minutes, or until tender, and let cool to just above room temperature.",
+      "If you're using fresh cilantro, pluck the leaves and set aside.",
+      "In the bowl of a food processor or blender, combine the peas, almond butter, cilantro (essential oil or fresh leaves), garlic if using, Tabasco sauce, a little salt and some pepper. Process until smooth. If the mixture is a bit too thick for the blade of the food processor to mix properly, add just a little bit of water, a teaspoon at a time, until soft enough to mix.",
+      "Taste and adjust the seasoning. Spread on pieces of multigrain crispbread and serve. The peacamole can be made a day ahead and kept in the fridge in an airtight container; it will keep for 2 to 3 days."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Grams Green Peas",
+        "unit": null,
+        "notes": "shelled, frozen or fresh but not canned",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro Essential Oil",
+        "unit": "drop",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almond Butter",
+        "unit": "Tbsp",
+        "notes": "whole, unblanched almonds",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced, optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tabasco Sauce",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "dd4953b8fa9131df618a923a47da228b631ddbb6baa7754f9b9d091acd243d9f",
+    "lineage_hash": "45b176c3247279c1f63e26b83473437d70eca06bae4ddd03fe9779fcfe494e87"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/dips-spreads/green-pea-cilantro-spread-recipe/",
+    "fetchedAt": "2026-09-26T01:25:24.993Z"
+  },
+  "rawSource": "https://cnz.to/recipes/dips-spreads/green-pea-cilantro-spread-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

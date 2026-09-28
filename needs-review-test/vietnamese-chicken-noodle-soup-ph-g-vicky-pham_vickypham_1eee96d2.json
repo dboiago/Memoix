@@ -1,0 +1,215 @@
+{
+  "recipe": {
+    "name": "Vietnamese Chicken Noodle Soup (Phở Gà)",
+    "time": "1 hr 25 min",
+    "course": "soups",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "VN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the ginger and shallots on a baking tray and roast in a toaster oven or air fryer at 400°F for about 15 minutes, or until lightly charred and fragrant. In a small dry frying pan, toast the pho spices over medium heat for 30 seconds to 1 minute, just until they release their aroma without smoking. Set aside.",
+      "In a large stock pot, add the chicken, roasted ginger, roasted onion, green onion, cilantro, and water. Add the toasted spices as well, either loose or wrapped in a spice ball or cheesecloth. Bring everything to a boil, then reduce the heat to a gentle simmer. Leave the pot uncovered and cook for about 1 hour.",
+      "Carefully remove the chicken and let it cool slightly before shredding the meat by hand or chopping it into smaller pieces. Set the chicken aside. Remove all solids from the stock then then season to taste with fish sauce, salt, or sugar.",
+      "Prepare the garnishes and any additional vegetables you want to use. Cook the rice noodles according to the package instructions.",
+      "Place rice noodles in each bowl and top with shredded chicken. Ladle in hot broth, then garnish with your choice of herbs, vegetables, lime wedges, and sauces. Serve immediately and enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Chicken",
+        "unit": null,
+        "notes": "about 4 lbs",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "qt",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "unpeeled",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Onions",
+        "unit": null,
+        "notes": "alt: 8 large shallots, peeled",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": "stalks",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bunch Fresh Cilantro",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "Tbsp",
+        "notes": "dried",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Cinnamon",
+        "unit": null,
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Rock Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Bouillon Powder",
+        "unit": "Tbsp",
+        "notes": "optional",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "MSG",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Packages 16-oz Fresh Rice Noodles",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thinly Sliced Yellow Onion",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thinly Sliced Green Onions",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thinly Sliced Cilantro",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fried Shallots",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Limes",
+        "unit": null,
+        "notes": "alt: lemons, cut into wedges",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chili Peppers",
+        "unit": null,
+        "notes": "alt: jalapenos (thinly sliced)",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cabbage",
+        "unit": null,
+        "notes": "shredded, Thai basil, bean sprouts (optional)",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6514cca0bda78bbfa30865f731170a549124a0689a0d29ff6809f0239293be53",
+    "lineage_hash": "d83ad24c2947646ff6f08b4f624293c552b11bbc2a80f06a34c1be8ded2f6928"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://vickypham.com/blog/vietnamese-chicken-noodle-soup-pho-ga/",
+    "fetchedAt": "2026-08-02T03:47:27.055Z"
+  },
+  "rawSource": "https://vickypham.com/blog/vietnamese-chicken-noodle-soup-pho-ga/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,104 @@
+{
+  "recipe": {
+    "name": "Kakiage Tempura",
+    "time": "25 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Dry-roast the Hōjicha gently in a pan for a couple of minutes, until the tea smells aromatic. Grind in a spice grinder with the salt until the mixture is finely ground, then set aside. This will make more than you need but will keep in an airtight container indefinitely",
+      "Pour the vegetable oil into a deep pan and heat to 160-170ºC",
+      "Mix the carrots, enoki mushrooms and shungiku greens in a bowl",
+      "In another bowl, beat 150g of tempura flour with the cold water using a whisk. Rather than whisking normally, use an up and down motion to press the flour into the water – the idea is to have a slightly lumpy batter",
+      "On a large tray, scatter the remaining 50g of tempura flour and put the vegetables on top. Mix them well with your hands to give the vegetables a thin coating of flour. Take the vegetables out of the flour, shake off any excess flour and place in the batter",
+      "Take a small handful of vegetables from the batter and carefully lower them into the oil. Only cook a few at a time – this helps to keep the tempura light and airy. Let the tempura fry for 1 minute on one side, then gently turn over to fry the other side. When golden brown all over, remove onto kitchen roll and sprinkle with a pinch of Hōjicha salt. Repeat with the rest of the vegetables. Serve immediately with extra salt"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Baby Carrot",
+        "unit": null,
+        "notes": "cut into matchsticks",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Enoki Mushrooms",
+        "unit": null,
+        "notes": "gently broken into clumps",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shungiku Greens",
+        "unit": "g",
+        "notes": "large leaves torn in half",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tempura Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hōjicha",
+        "unit": "g",
+        "notes": "roasted green tea",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "558fd005efc4016a684b2f89ba5697d438b24004906e6f0791969ed43a9c880f",
+    "lineage_hash": "108e1fa5e75ada07375ebf56d063da21b49837375684979219b0494d01be7f38"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/kakiage-tempura-hojicha-salt-recipe",
+    "fetchedAt": "2026-08-03T04:35:56.381Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/kakiage-tempura-hojicha-salt-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

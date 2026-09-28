@@ -1,0 +1,183 @@
+{
+  "recipe": {
+    "name": "Hünkar Beğendi",
+    "time": "1 hr 20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "TR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Put the butter and a tablespoon of the olive oil in a wide, heavy pan (one with a diameter of 28 cm/11 in works well) and warm over a medium-high heat. Stir in the lamb and brown to seal in their juices for 2–3 minutes, then remove the lamb with a slotted spoon and place in a dish. Add the remaining olive oil to the pan, stir in the onions and peppers and sauté them over a medium-high heat for 4 minutes; they will soften and shrink in size. Stir in the garlic, tomato purée and biber salçası and combine well for a minute. Return the lamb chunks to the pan, along with their juices and combine well. Stir in the chopped tomatoes and water (swirling a little of the water in the can to capture any remaining bits of tomato) and season with salt and black pepper. Bring to the boil, then cover the pan, lower the heat and simmer for 50–60 minutes until the sauce has thickened and the lamb pieces are tender. Turn off the heat and taste and adjust the seasoning if needed. Allow the stew to rest, covered, for 10 minutes.",
+      "While the lamb stew is simmering, make the sauce.",
+      "Cook the aubergines on a barbecue grill or over an open gas flame on a high heat, turning them every 3–4 minutes using tongs, until the outer skin is charred and blistered and the inner flesh soft. Depending on their size, this should take about 25 minutes. Alternatively, if you prefer not to have the smoky flavour, prick the aubergines in 4–5 places and bake in an oven preheated to 200°C fan/220°C (425°F) for 40 minutes, or until they feel very soft when pressed and the skins are wrinkled, turning them over halfway through cooking. When cool enough to handle, peel away the burnt skins and discard the stalks.",
+      "Place the aubergine flesh in a colander and gently squeeze to drain away any bitter juices. Chop coarsely, then put in a bowl with the lemon juice and mash with a fork. Make the béchamel sauce by melting the butter in a pan set over a medium heat. Add the flour and beat well to make a roux (foundation of a white sauce). Slowly add the warm milk, whisking continuously to get a smooth consistency, then cook for about 4 minutes, until the sauce has thickened. Add the mashed aubergine with a little salt and black pepper and simmer for a further 2 minutes. Add the cheese, stir for a minute, then remove from the heat.",
+      "Spread the beğendi sauce over plates and top with the lamb stew, then sprinkle with chopped parsley. Serve hot, perhaps with the regal İç Pilav, if you wish, as an accompaniment."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Leg of Lamb",
+        "unit": "g",
+        "notes": "cut into 3 x 3 cm (1¼ x 1¼ in) cubes",
+        "amount": "500",
+        "section": "For the lamb stew",
+        "isOptional": false
+      },
+      {
+        "name": "Salted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": "For the lamb stew",
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "For the lamb stew",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "large",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": "For the lamb stew",
+        "isOptional": false
+      },
+      {
+        "name": "Green (bell) Pepper",
+        "unit": null,
+        "notes": "alt: sivri biber, deseeded and finely chopped",
+        "amount": "1",
+        "section": "For the lamb stew",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": "large",
+        "notes": "crushed and finely chopped",
+        "amount": "2",
+        "section": "For the lamb stew",
+        "isOptional": false
+      },
+      {
+        "name": "Double Concentrated Tomato Purée",
+        "unit": "Tbsp",
+        "notes": "paste",
+        "amount": "1",
+        "section": "For the lamb stew",
+        "isOptional": false
+      },
+      {
+        "name": "Biber Salçası",
+        "unit": "Tbsp",
+        "notes": "red pepper paste",
+        "amount": "1",
+        "section": "For the lamb stew",
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "g",
+        "notes": "chopped, or 4 medium, ripe tomatoes, chopped",
+        "amount": "400",
+        "section": "For the lamb stew",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "85",
+        "section": "For the lamb stew",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": "and freshly ground black pepper",
+        "amount": "0",
+        "section": "For the lamb stew",
+        "isOptional": false
+      },
+      {
+        "name": "Small Handful Flat Leaf Parsley",
+        "unit": null,
+        "notes": "chopped, for garnish",
+        "amount": "0",
+        "section": "For the lamb stew",
+        "isOptional": false
+      },
+      {
+        "name": "Aubergines",
+        "unit": "medium",
+        "notes": "eggplants",
+        "amount": "3",
+        "section": "For the beğendi sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Lemon Juice",
+        "unit": "small",
+        "notes": null,
+        "amount": "½",
+        "section": "For the beğendi sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "55",
+        "section": "For the beğendi sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Plain (all-purpose) Flour",
+        "unit": "g",
+        "notes": "use gluten-free flour, if preferred",
+        "amount": "85",
+        "section": "For the beğendi sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": "warmed",
+        "amount": "585",
+        "section": "For the beğendi sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Taze Kaşar",
+        "unit": "g",
+        "notes": "alt: medium Cheddar cheese, grated",
+        "amount": "120",
+        "section": "For the beğendi sauce",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "178e0f759f777b62ec07958b16118c96659bd5746d3b0323e84f06ff28438b59",
+    "lineage_hash": "a9d0e706c1c8923c7daee6b4ca5e9746bed2c9035ce89362431c33faef3e9e21"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ozlemsturkishtable.com/2026/08/hunkar-begendi-sultans-lamb-stew-over-smoked-aubergine-and-bechamel-sauce/",
+    "fetchedAt": "2026-09-25T23:28:58.907Z"
+  },
+  "rawSource": "https://ozlemsturkishtable.com/2026/08/hunkar-begendi-sultans-lamb-stew-over-smoked-aubergine-and-bechamel-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

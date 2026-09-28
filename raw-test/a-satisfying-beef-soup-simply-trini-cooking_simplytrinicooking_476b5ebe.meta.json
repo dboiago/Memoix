@@ -1,0 +1,59 @@
+{
+  "url": "https://www.simplytrinicooking.com/beef-soup/",
+  "slug": "a-satisfying-beef-soup-simply-trini-cooking_simplytrinicooking_476b5ebe",
+  "title": "A Satisfying Beef Soup | Simply Trini Cooking",
+  "byline": "Author Felix",
+  "fetchedAt": "2026-09-25T22:44:36.889Z",
+  "ldName": "Beef Soup",
+  "ldTime": "PT120M",
+  "ldPrepTime": "PT80M",
+  "ldCookTime": "PT40M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "creole, Fusion",
+  "ldCategory": "Soups",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "1 lb beef",
+    "3 cups water",
+    "1  lime",
+    "1/2  onion (chopped finely)",
+    "2  pimento pepper (chopped finely)",
+    "2 cloves garlic (chopped finely)",
+    "1/2 - 1 tsp. salt",
+    "2 leaves big leaf thyme",
+    "1  sprig fine leaf thyme",
+    "8 leaves chadon beni",
+    "3  potatoes (peeled and diced)",
+    "1 /2 lb yam (peeled and diced)",
+    "1  large carrot (diced)",
+    "1/2 cup split peas (soaked overnight)"
+  ],
+  "ldInstructionsRaw": [
+    "Wash the beef in water with lime juice added. Cut into 1 inch cubes. Season with onion, garlic, pimento pepper, salt, big leaf thyme, fine leaf thyme and chadon beni. Mix and marinate for 1 hour.",
+    "Pressure cook the beef, carrot and split peas in about three cups of water for about 25 minutes or until the beef is cooked and the split peas \"bursts\". (If you like your carrots firm, add it later).",
+    "In a separate pot boil the yam and potatoes. (Note: Any type of provision could be used).",
+    "Swizzle the peas a bit with a dhal gutney. Add the yam and potatoes and simmer for another five minutes. Adjust salt to taste. Serve hot."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "1 lb beef",
+    "3 cups water",
+    "1 lime",
+    "1/2 onion chopped finely",
+    "2 pimento pepper chopped finely",
+    "2 cloves garlic chopped finely",
+    "1/2 – 1 tsp. salt",
+    "2 leaves big leaf thyme",
+    "1 sprig fine leaf thyme",
+    "8 leaves chadon beni",
+    "3 potatoes peeled and diced",
+    "1 /2 lb yam peeled and diced",
+    "1 large carrot diced",
+    "1/2 cup split peas soaked overnight"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "TT",
+  "siteCourseHint": null
+}

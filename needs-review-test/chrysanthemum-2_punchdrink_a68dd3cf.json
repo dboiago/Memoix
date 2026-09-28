@@ -1,0 +1,69 @@
+{
+  "recipe": {
+    "name": "Chrysanthemum",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": null,
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": "Liqueur",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Rinse a coupe with a small amount of absinthe and dump.",
+      "Combine the vermouth, Bénédictine, and lemon juice in a mixing glass, add ice, and stir until chilled.",
+      "Strain into the absinthe-rinsed coupe."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Absinthe",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Vermouth",
+        "unit": "oz",
+        "notes": "preferably Dolin dry",
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bénédictine",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6f96eeef22dd80301840803ed42ad404fb143b4c893c24e41c1464d4a02924b4",
+    "lineage_hash": "6a56502ea4dc12ee7d86dd70895d23dd55338697af3c680acd0246c4c73a822e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://punchdrink.com/recipes/chrysanthemum-2/",
+    "fetchedAt": "2026-08-03T05:58:07.156Z"
+  },
+  "rawSource": "https://punchdrink.com/recipes/chrysanthemum-2/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

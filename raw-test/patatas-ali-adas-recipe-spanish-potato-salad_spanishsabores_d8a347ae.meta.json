@@ -1,0 +1,65 @@
+{
+  "url": "https://spanishsabores.com/patatas-alinadas-recipe-spanish-potato-salad/",
+  "slug": "patatas-ali-adas-recipe-spanish-potato-salad_spanishsabores_d8a347ae",
+  "title": "Patatas Aliñadas Recipe (Spanish Potato Salad)",
+  "byline": "Lauren Aloise",
+  "fetchedAt": "2026-08-02T10:32:37.202Z",
+  "ldName": "Patatas Aliñadas Recipe (Spanish Potato Salad)",
+  "ldTime": "PT100M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT90M",
+  "ldYield": [
+    "4",
+    "4 servings"
+  ],
+  "ldCuisine": "Spanish",
+  "ldCategory": "Appetizer",
+  "ldKeywords": "Patatas Aliñadas, spanish potato salad",
+  "ldIngredientsRaw": [
+    "3 pounds medium new potatoes (use a waxy variety)",
+    "2  white onions (finely diced)",
+    "fresh parsley (finely chopped)",
+    "extra virgin olive oil (such as a spicy Andalusian picual)",
+    "1/4 cup sherry vinegar",
+    "sea salt (to taste)",
+    "2  hard boiled eggs (quartered or sliced)",
+    "2 cans high quality Spanish tuna (drained)"
+  ],
+  "ldInstructionsRaw": [
+    "Wash the potatoes, then put them into a large pot and cover with water. Bring to a boil over high heat, then add a tablespoon of sea salt.",
+    "Allow the potatoes to boil until they&#39;re fork tender, about 25 minutes. Take the pot off the heat and keep the potatoes in the hot water for another 30 minutes.",
+    "Remove the potatoes with a slotted spoon and place them in a strainer for another 20 minutes, or until they&#39;re cool enough to handle.",
+    "Remove the potato skins with your hands or with a knife, then cut into thick slices and place in a glass serving bowl.",
+    "Sprinkle the potatoes with the onion, parsley, and 1/2 tablespoon of sea salt.",
+    "Add the vinegar and the olive oil, then adjust the salt to taste.",
+    "Arrange the tuna and sliced hard boiled egg on top of the potatoes and enjoy!"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "402.04 kcal",
+    "carbohydrateContent": "64.96 g",
+    "proteinContent": "26.78 g",
+    "fatContent": "3.81 g",
+    "saturatedFatContent": "1.12 g",
+    "transFatContent": "0.003 g",
+    "cholesterolContent": "123.85 mg",
+    "sodiumContent": "240.96 mg",
+    "fiberContent": "8.42 g",
+    "sugarContent": "5.26 g",
+    "unsaturatedFatContent": "1.86 g"
+  },
+  "htmlIngredientLines": [
+    "▢ 3 pounds medium new potatoes use a waxy variety",
+    "▢ 2 white onions finely diced",
+    "▢ fresh parsley finely chopped",
+    "▢ extra virgin olive oil such as a spicy Andalusian picual",
+    "▢ ¼ cup sherry vinegar",
+    "▢ sea salt to taste",
+    "▢ 2 hard boiled eggs quartered or sliced",
+    "▢ 2 cans high quality Spanish tuna drained"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "ES",
+  "siteCourseHint": "Mains"
+}

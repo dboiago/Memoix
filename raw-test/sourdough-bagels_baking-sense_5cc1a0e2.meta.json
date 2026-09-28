@@ -1,0 +1,72 @@
+{
+  "url": "https://www.baking-sense.com/2019/05/16/homemade-sourdough-bagels/",
+  "slug": "sourdough-bagels_baking-sense_5cc1a0e2",
+  "title": "Sourdough Bagels",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-02T06:31:58.988Z",
+  "ldName": "Sourdough Bagel Recipe",
+  "ldTime": "PT790M",
+  "ldPrepTime": "PT45M",
+  "ldCookTime": "PT25M",
+  "ldYield": [
+    "10",
+    "10 bagels"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Breakfast",
+  "ldKeywords": "bagels, new york, sourdough",
+  "ldIngredientsRaw": [
+    "8 oz active sourdough starter (1 cup (100% hydration))",
+    "12 oz warm water (1 ½ cups)",
+    "22 ½ oz bread flour (4 ½ cups, divided, see note)",
+    "1 ½ oz barley malt syrup (2 tablespoons (or honey + molasses))",
+    "1 tablespoon table salt",
+    "2 oz granulated sugar (¼ cup (for boiling))",
+    "2 teaspoons baking soda (for boiling)",
+    "corn meal  (for pan prep)",
+    "1  egg white (whisked lightly)",
+    "Topping (sesame seeds, poppy seeds, caraway seeds or coarse salt)"
+  ],
+  "ldInstructionsRaw": [
+    "Combine 8 oz&#32;active sourdough starter, 12 oz&#32;warm water and 2 cups (10 oz) of the flour in a mixing bowl. Mix to form a thick batter. Cover the bowl and set aside for 30-60 minutes.",
+    "Add 1 ½ oz&#32;barley malt syrup and 1 tablespoon&#32;table salt. Switch to the dough hook. Add the remaining 2 ½ cups (12 ½ oz) flour and mix to combine. The dough should eventually cling to the hook and start to clear the sides of the bowl.",
+    "Knead 5 minutes on medium speed. If working by hand, stir in as much of the flour as you can, then turn the dough out onto a lightly floured surface and knead in the remaining flour. Knead 5 minutes. Form the dough into a smooth ball.",
+    "Put the dough into a lightly oiled bowl, turning once to coat the dough. Cover the bowl and set it aside at room temperature. After 30 minutes uncover the bowl, lift one side of the dough and fold it into the middle of the dough. Repeat with the other three sides of the dough then flip the dough over. You&#39;re basically turning the dough inside-out to redistribute the yeast. Cover the bowl and repeat the procedure every 60 minutes for a total fermentation time of about 3 hours. The dough should be lively, elastic and airy. If the dough is still sluggish give it another hour or two at room temperature.",
+    "Line a baking pan with parchment paper then generously sprinkle the paper with cornmeal (or flour). Turn the dough out onto a lightly floured surface without kneading out the air. Divide the dough into 10 even pieces. Use a cupped hand to roll each piece into a smooth, tight ball.",
+    "To form a bagel, poke your finger all the way through the center of a ball to make a hole. Use two fingers to gently open up the hole. Continue gently stretching to form the bagel or twirl the dough around your fingers to widen the center hole to 1 - 1½&quot; wide.",
+    "Place the bagel on the prepared sheet pan and continue to form the remaining bagels. The dough will probably spring back a bit so you can go back and re-stretch the holes once you&#x27;re done forming all the bagels. Cover the pan with plastic wrap. If the dough and the ambient temperature is on the cooler side, leave the shaped bagels at room temperature for 30 minutes then place the pan in the refrigerator overnight. If the dough and ambient temp is warmer and the dough is quite active, place the bagels into the refrigerator without leaving them out for 30 minutes.",
+    "In the morning take the bagels out of the refrigerator and bring them to room temperature.",
+    "Preheat the oven to 450 °F. In a large pot combine 1 gallon  of water with 2 oz&#32;granulated sugar and 2 teaspoons&#32;baking soda and bring it to a boil. Reduce the heat to keep the water at a rolling simmer. Set a cooling rack over a sheet pan or kitchen towel and place it next to the stove. Line two half-sheet pans with parchment paper or silicone baking mats and generously sprinkle with corn meal.",
+    "Once the oven is preheated, you&#39;re ready to boil. Gently lift a bagel off the sheet pan and lower it into the water, bottom side down. Depending on the size of your pot, you can boil 3-4 bagels at a time. Boil the bagels for 30 seconds then flip them. Boil the other side for 30 seconds. Repeat the process again for a total of 2 minutes boiling time. Remove the boiled bagels from the water and set them on the cooling rack to drain.",
+    "Place 5 of the boiled bagels on each sheet pan. You could fit them all on one pan but they may stick together as they bake.",
+    "Brush the bagels with egg white. Add the topping(s) of your choice. To make &quot;everything&quot; bagels combine a tablespoon of each of sesame seeds, poppy seeds &amp; salt with a 1/8 teaspoon garlic powder and onion powder. Bake until golden brown, about 20 minutes."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 bagel",
+    "calories": "284 kcal",
+    "carbohydrateContent": "59 g",
+    "proteinContent": "8 g",
+    "fatContent": "1 g",
+    "sodiumContent": "924 mg",
+    "sugarContent": "8 g",
+    "saturatedFatContent": "0.2 g",
+    "fiberContent": "2 g",
+    "unsaturatedFatContent": "0.6 g"
+  },
+  "htmlIngredientLines": [
+    "8 oz active sourdough starter (1 cup (100% hydration))",
+    "12 oz warm water (1 ½ cups)",
+    "22 ½ oz bread flour (4 ½ cups, divided, see note)",
+    "1 ½ oz barley malt syrup (2 tablespoons (or honey + molasses))",
+    "1 tablespoon table salt",
+    "2 oz granulated sugar (¼ cup (for boiling))",
+    "2 teaspoons baking soda (for boiling)",
+    "corn meal  (for pan prep)",
+    "1 egg white (whisked lightly)",
+    "Topping (sesame seeds, poppy seeds, caraway seeds or coarse salt)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

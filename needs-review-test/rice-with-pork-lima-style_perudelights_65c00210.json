@@ -1,0 +1,183 @@
+{
+  "recipe": {
+    "name": "Rice with Pork",
+    "time": "1 hr 5 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "PE",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat the oil in a saucepan over high heat. Add pork and stir-fry until golden. Transfer to a plate and reserve, covered.",
+      "In the same pan, cook onion, ají amarillo (if using), and garlic, stirring a few times. When the onion is very soft, add oregano, bell pepper, tomatoes, fava beans, chicken stock, salt, and pepper.",
+      "Put the pork back in the saucepan with the lid on, and turn the heat to low, cooking until the pork is tender. Taste for seasoning.",
+      "Add the cooked rice to the mixture, along with black olives, raisins, and pecans. Stir and let the flavors meld.",
+      "To serve, sprinkle with Parmesan cheese, hard-boiled eggs, and parsley."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pork Loin",
+        "unit": "lb",
+        "notes": "cut in bite size pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "C",
+        "notes": "diced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ají Amarillo Paste",
+        "unit": "Tbsp",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oregano",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Bell Pepper",
+        "unit": "C",
+        "notes": "diced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": null,
+        "notes": "peeled, seeded and chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fava Beans",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooked White Rice",
+        "unit": "C",
+        "notes": null,
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Olives",
+        "unit": null,
+        "notes": "seeded and sliced",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raisins",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pecans",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan Cheese",
+        "unit": "C",
+        "notes": "grated",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hard-boiled Eggs",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4202f36aa7ace4aee6fa842d88ef128313a12fff58851cb9414b9fb6f38629a8",
+    "lineage_hash": "fe7212c67c530de42e87b9cb510b5f13da4ce1c4afbd5815ea49d1723230c7b2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://perudelights.com/rice-with-pork-lima-style/",
+    "fetchedAt": "2026-09-25T21:12:04.347Z"
+  },
+  "rawSource": "https://perudelights.com/rice-with-pork-lima-style/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

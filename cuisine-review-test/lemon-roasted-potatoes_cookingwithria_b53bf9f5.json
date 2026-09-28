@@ -1,0 +1,100 @@
+{
+  "recipe": {
+    "name": "Lemon Roasted Potatoes",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "259",
+      "carbohydrateContent": "41",
+      "fatContent": "9",
+      "proteinContent": "5"
+    },
+    "directions": [
+      "Preheat Oven: Preheat your oven to 400°F (200°C).",
+      "Prep the Potatoes: Peel, rinse, and drain the potatoes. Cut each into long quarters.",
+      "Mix: In a large baking dish, combine potatoes, oregano, garlic, olive oil, stock, and lemon juice. Toss everything together to ensure the potatoes are evenly coated.",
+      "Roast: Spread the potatoes in a single layer. Roast uncovered for 50–60 minutes, turning occasionally, until the potatoes are golden brown and crispy on the edges.",
+      "Serve: Sprinkle with additional oregano or lemon juice if desired and serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Potatoes Peeled and Quartered Lengthwise",
+        "unit": "lb",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oregano",
+        "unit": "Tbsp",
+        "notes": "dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Minced",
+        "unit": "clove",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken",
+        "unit": "C",
+        "notes": "alt: vegetable stock",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Juice of 1–2 Lemons Adjust to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "alt: to taste",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "db3349fa4391525a69e7a8dd3eb2aecc81304956d61b89eb1786f05f75e08e5f",
+    "lineage_hash": "891fbd9ef40aa4a5778e264605618108188ba120f286a1c774624e644f5f2f57"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cookingwithria.com/2025/04/lemon-roasted-potatoes/",
+    "fetchedAt": "2026-09-25T21:43:45.464Z"
+  },
+  "rawSource": "https://cookingwithria.com/2025/04/lemon-roasted-potatoes/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

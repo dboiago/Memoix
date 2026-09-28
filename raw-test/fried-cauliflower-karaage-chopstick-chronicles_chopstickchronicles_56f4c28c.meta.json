@@ -1,0 +1,66 @@
+{
+  "url": "https://www.chopstickchronicles.com/fried-cauliflower-karaage/",
+  "slug": "fried-cauliflower-karaage-chopstick-chronicles_chopstickchronicles_56f4c28c",
+  "title": "Fried Cauliflower Karaage 唐揚げカリフラワー - Chopstick Chronicles",
+  "byline": "Author: Shihoko | Chopstick Chronicles",
+  "fetchedAt": "2026-08-02T00:59:49.984Z",
+  "ldName": "Fried Cauliflower Karaage 唐揚げカリフラワー",
+  "ldTime": "PT25M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "2",
+    "2 serve"
+  ],
+  "ldCuisine": "Japanese",
+  "ldCategory": "Appetiser, Side Dish",
+  "ldKeywords": "#cauliflower karaage, #fried cauliflower",
+  "ldIngredientsRaw": [
+    "2 cups Cauliflower florets  (* or 7oz/200g)",
+    "1 tbsp soy sauce  (*1)",
+    "1 tbsp sake (*2)",
+    "¼ tsp garlic powder (*3)",
+    "¼ tsp ginger powder (*4)",
+    "a  pinch salt",
+    "a pinch pepper",
+    "shiso leaves to garnish (optional) (*5)"
+  ],
+  "ldInstructionsRaw": [
+    "Wash and cut cauliflower to make the florets look like chunky chicken pieces.",
+    "Remove excess water by patting cauliflower florets with paper kitchen towels.",
+    "Place soy sauce, sake, garlic powder, ginger powder and salt and pepper into a ziplock bag.",
+    "Add the cut cauliflower florets into the ziplock bag. Zip the bag and toss the florets inside the bag so that the marinade covers florets evenly.",
+    "Marinate the florets for 15-20 minutes.",
+    "Place potato starch in a separate ziplock bag. Drop marinated cauliflower florets and toss them around to coat them with potato starch",
+    "Heat vegetable oil in a pan over high heat or set deep fryer to around 365°F(185°C) and deep fry cauliflower florets pieces in batches until golden brown.",
+    "Drain cooked cauliflower florets on a paper towel.",
+    "Garnish with shiso leaves. (garnish is optional)",
+    "Serve with small bowl of Japanese mayonnaise sprinkled with shichimi togarashi."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "43 kcal",
+    "carbohydrateContent": "6 g",
+    "proteinContent": "3 g",
+    "fatContent": "1 g",
+    "saturatedFatContent": "1 g",
+    "sodiumContent": "533 mg",
+    "fiberContent": "2 g",
+    "sugarContent": "2 g",
+    "unsaturatedFatContent": "2 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 2 cups Cauliflower florets  * or 7oz/200g",
+    "▢ 1 tbsp soy sauce  *1",
+    "▢ 1 tbsp sake *2",
+    "▢ ¼ tsp garlic powder *3",
+    "▢ ¼ tsp ginger powder *4",
+    "▢ a  pinch salt",
+    "▢ a pinch pepper",
+    "▢ shiso leaves to garnish (optional) *5"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "JP",
+  "siteCourseHint": null
+}

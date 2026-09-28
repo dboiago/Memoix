@@ -1,0 +1,39 @@
+{
+  "url": "https://www.bongeats.com/recipe/kumrar-jhal",
+  "slug": "kumro-r-jhaal-recipe-by-bong-eats_bongeats_7e559545",
+  "title": "Kumro'r Jhaal recipe by Bong Eats",
+  "byline": "",
+  "fetchedAt": "2026-08-01T21:10:53.541Z",
+  "ldName": "Kumro&#39;r Jhaal",
+  "ldTime": "PT30M",
+  "ldPrepTime": "PT20M",
+  "ldCookTime": "PT10M",
+  "ldYield": "4 servings",
+  "ldCuisine": "Indian",
+  "ldCategory": "vegetable",
+  "ldKeywords": "Bengali Pumpkin recipe, Kumror Jhal, Kumro recipe",
+  "ldIngredientsRaw": null,
+  "ldInstructionsRaw": null,
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": ""
+  },
+  "htmlIngredientLines": [
+    "500 g pumpkin (kumro)",
+    "200 g water",
+    "10 g salt",
+    "¼ tsp salt (for green chilli and nigella seed paste)",
+    "‍15 g mustard oil",
+    "‍2 pcs dried red chillies‍",
+    "1 pc bay leaf‍",
+    "½ tsp kaalo jeere (nigella seeds)‍",
+    "2 pcs green chillies‍",
+    "16 g pasted coconut",
+    "‍40 g milk‍",
+    "¼ tsp maida (flour)‍",
+    "12 g sugar‍"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IN",
+  "siteCourseHint": null
+}

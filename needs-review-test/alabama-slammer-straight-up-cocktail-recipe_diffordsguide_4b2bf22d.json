@@ -1,0 +1,78 @@
+{
+  "recipe": {
+    "name": "Alabama Slammer (straight-up)",
+    "time": "2 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": null,
+    "glass": "Martini",
+    "garnish": [
+      "Orange Zest Twist"
+    ],
+    "subcategory": "Vodka",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "192",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Select and pre-chill a MARTINI GLASS.",
+      "Prepare garnish of orange zest twist.",
+      "SHAKE all ingredients with ice.",
+      "FINE STRAIN into chilled glass.",
+      "EXPRESS orange zest twist over the cocktail and use as garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "unit": "ml",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Southern Liqueur",
+        "unit": "ml",
+        "notes": null,
+        "amount": "22.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grenadine Syrup",
+        "unit": "ml",
+        "notes": null,
+        "amount": "7.5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7c897414106eb240b98c5eb8dbbfbb7b38026f1788389de2deae4f9c856ee3c1",
+    "lineage_hash": "251345d14725a6490fbaadaa7d5136940ef701b1dbbcda6121075ba5549b0522"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/29/alabama-slammer-straight-up",
+    "fetchedAt": "2026-08-01T16:44:04.410Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/29/alabama-slammer-straight-up",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

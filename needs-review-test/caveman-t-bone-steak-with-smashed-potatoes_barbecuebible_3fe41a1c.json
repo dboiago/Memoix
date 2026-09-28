@@ -1,0 +1,91 @@
+{
+  "recipe": {
+    "name": "Caveman T-Bone Steak with Smashed Potatoes",
+    "time": "1 hr 5 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Light a charcoal or wood-burning grill and built a hot fire.",
+      "Season the steaks with salt, pepper, rosemary, oregano, and thyme. Set aside and let marinate while you prepare the potatoes.",
+      "Scrub the potatoes, leave on the skin. Place them in a cast iron pan and Drizzle olive oil. I like to cut an X on the top of each potato and place a slice of butter right on the spot.",
+      "Peel the garlic and crush with the side of a knife. Chop the onion in half and then into wedges. Wash the mushrooms. Mince the chives. Set these ingredients aside.",
+      "Place the pan with the potatoes over the fire and cook until browned and tender, 30 to 40 minutes, stirring often. Half way through, add the garlic, onion, mushrooms, chives, turmeric, paprika, and salt and pepper to taste. Add olive oil as needed to keep the vegetables from sticking.",
+      "Continue cooking the potatoes until soft and the onions and mushrooms are cooked. Smash the potatoes with a food smasher. Set the potatoes aside and keep warm.",
+      "Replenish the coals if necessary and again, let burn down to glowing embers. Fan off any loose ash.",
+      "Lay the steaks on the embers and cook to taste, 3 to 4 minutes per side for medium-rare. Move the steaks often with tongs so the grill evenly.",
+      "Lift the steaks with tongs and shake well to dislodge any cinders. Transfer to a wire rack over a sheet pan and rest for 2 minutes. Then serve with the potatoes on the side. Take off your Grill Kilt and you’re ready to dig in!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Porterhouse Steaks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Or Dried Rosemary",
+        "unit": null,
+        "notes": "chopped, fresh",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oregano",
+        "unit": null,
+        "notes": "dried",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Or Dried Thyme",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "315cc5bdf1c1879148605d565d1a36de1726db32d549186d5e9c1dc0a58b951c",
+    "lineage_hash": "427a5c5aaa6b56531dfae15fb5d17b23af86c2fd93f688526512ec8fc90cf31d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/caveman-t-bone-steak-with-smashed-potatoes/",
+    "fetchedAt": "2026-08-03T07:56:16.088Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/caveman-t-bone-steak-with-smashed-potatoes/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

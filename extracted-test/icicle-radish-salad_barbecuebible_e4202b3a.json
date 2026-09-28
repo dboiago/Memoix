@@ -1,0 +1,76 @@
+{
+  "recipe": {
+    "name": "Icicle Radish Salad",
+    "time": null,
+    "course": "salads",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Make the dressing: Place the mayonnaise and sour cream in a mixing bowl.   Whisk in the oil, vinegar, dill, and salt and pepper to taste—the dressing should be highly seasoned.",
+      "Coarsely grate the radish into the dressing and toss to mix. Refrigerate if not serving immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mayonnaise",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sour Cream",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Distilled White Vinegar",
+        "unit": "Tbsp",
+        "notes": "or to taste",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dill",
+        "unit": "C",
+        "notes": "chopped, fresh",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a1e0540a9d930046fbc6814bee59232d2c1c2da126bfb98c97a36c64ec3388ef",
+    "lineage_hash": "be066f413d824e479d6cb5fbc3ca5c5e98f814d75eff8c9b87daa440f4670fad"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/icicle-radish-salad/",
+    "fetchedAt": "2026-08-03T08:04:34.211Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/icicle-radish-salad/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

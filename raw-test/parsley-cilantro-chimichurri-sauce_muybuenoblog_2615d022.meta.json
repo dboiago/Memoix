@@ -1,0 +1,58 @@
+{
+  "url": "https://muybuenoblog.com/chimichuri-sauce/",
+  "slug": "parsley-cilantro-chimichurri-sauce_muybuenoblog_2615d022",
+  "title": "Parsley-Cilantro Chimichurri Sauce",
+  "byline": "Yvette Marquez-Sharpnack | Muy Bueno",
+  "fetchedAt": "2026-08-02T05:57:00.555Z",
+  "ldName": "Parsley-Cilantro Chimichurri Sauce",
+  "ldTime": "PT5M",
+  "ldPrepTime": null,
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "12",
+    "12 servings"
+  ],
+  "ldCuisine": "Argentinian",
+  "ldCategory": "Side Dish",
+  "ldKeywords": "Argentinian sauce, easy sauce for bbq, herb sauce",
+  "ldIngredientsRaw": [
+    "1 cup  Italian parsley (stems removed)",
+    "1 cup  fresh cilantro (stems removed)",
+    "1 cup olive oil",
+    "1/3 cup red wine vinegar",
+    "2  garlic cloves (peeled)",
+    "1 teaspoon dried crushed red pepper",
+    "1 teaspoon salt",
+    "½ teaspoon pepper"
+  ],
+  "ldInstructionsRaw": [
+    "Puree all ingredients in a blender or food processor.",
+    "Transfer sauce to an airtight container and refrigerate at least 2 hours or up to 1 day to allow the flavors to meld. Before serving, stir and season as needed."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "12 serving",
+    "calories": "164 kcal",
+    "sugarContent": "0.1 g",
+    "sodiumContent": "201 mg",
+    "fatContent": "18 g",
+    "saturatedFatContent": "2 g",
+    "carbohydrateContent": "1 g",
+    "fiberContent": "0.3 g",
+    "proteinContent": "0.2 g",
+    "unsaturatedFatContent": "15 g"
+  },
+  "htmlIngredientLines": [
+    "▢ 1 cup  Italian parsley, stems removed",
+    "▢ 1 cup  fresh cilantro, stems removed",
+    "▢ 1 cup olive oil",
+    "▢ 1/3 cup red wine vinegar",
+    "▢ 2 garlic cloves, peeled",
+    "▢ 1 teaspoon dried crushed red pepper",
+    "▢ 1 teaspoon salt",
+    "▢ ½ teaspoon pepper"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "MX",
+  "siteCourseHint": null
+}

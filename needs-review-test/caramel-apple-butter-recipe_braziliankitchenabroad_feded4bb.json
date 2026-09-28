@@ -1,0 +1,151 @@
+{
+  "recipe": {
+    "name": "Caramel Apple Butter",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "BR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "355",
+      "carbohydrateContent": "65",
+      "fatContent": "6",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Core and dice the apples. Place them in a large Dutch oven with the cinnamon stick, apple juice, and cachaça. Stir to coat the apples evenly.",
+      "Cover the pan and bring the mixture to a boil over high heat.",
+      "Once boiling, reduce the heat to a simmer and cook, covered, for 20-30 minutes, or until the apples are soft and tender.",
+      "Meanwhile, make the caramel. Add the water and sugar to a saucepan and bring it to a boil. The water will cook off, and the sugar will begin to cook and caramelize. After 15-20 minutes, when the mixture turns a light golden color, turn off the heat and quickly whisk in the butter, salt, and cream.",
+      "When the apples are soft, transfer them, along with the cooking liquid, to a blender and puree until smooth. Add the spices and blend again until fully combined.",
+      "Pour the caramel into the blender with the apple mixture and blend until everything is combined. Add the final tablespoon of cachaça and blend one last time.",
+      "Pour the apple butter into mason jars or storage containers and let it cool completely before sealing the containers.",
+      "Serve with cheese, bread, or use it to create drinks and cocktails!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Apples",
+        "unit": "C",
+        "notes": "diced, skin on, cores removed from about 3lbs/1.3kg of whole apples",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Cinnamon Stick",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Allspice",
+        "unit": null,
+        "notes": "alt: 1/8 of a teaspoon",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Cloves",
+        "unit": null,
+        "notes": "alt: 1/8 of a teaspoon",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "100% Apple Juice",
+        "unit": "C",
+        "notes": "unsweetened",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cachaça + 1 Tablespoon",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "unsalted",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kosher Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "877d6a9d4454be15f2e6fe847c2af0e5453641de13e758ccea34f3f24380d44a",
+    "lineage_hash": "d1e18f3e0ed3d5f9413b6a1bcf65dda342da00201f832da404034cd03df4df63"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://braziliankitchenabroad.com/caramel-apple-butter-recipe/",
+    "fetchedAt": "2026-09-26T01:20:56.155Z"
+  },
+  "rawSource": "https://braziliankitchenabroad.com/caramel-apple-butter-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

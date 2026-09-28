@@ -1,0 +1,64 @@
+{
+  "url": "https://www.chopstickchronicles.com/authentic-shibazuke-pickles/",
+  "slug": "authentic-shibazuke-pickles-chopstick-chronicles_chopstickchronicles_89cd02f4",
+  "title": "Authentic-Shibazuke-Pickles しば漬け - Chopstick Chronicles",
+  "byline": "Author: Shihoko | Chopstick Chronicles",
+  "fetchedAt": "2026-08-02T02:48:37.031Z",
+  "ldName": "Shibazuke Pickles しば漬け",
+  "ldTime": "PT10080M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": null,
+  "ldYield": [
+    "1",
+    "1 jar"
+  ],
+  "ldCuisine": "Japanese",
+  "ldCategory": "condiments",
+  "ldKeywords": "shibazuke",
+  "ldIngredientsRaw": [
+    "2  cucumbers",
+    "3  eggplants",
+    "3   myoga",
+    "1 piece  ginger",
+    "26 g salt  (*1)",
+    "35 g momishiso (*2 )"
+  ],
+  "ldInstructionsRaw": [
+    "Wash and dry cucumbers, eggplants, myoga and ginger.",
+    "Cut the cucumber and eggplants into bite-sized pieces making sure to keep the sizes uniform for even pickling.",
+    "Cut the ginger into matchstick shapes. Cut the myoga in half then slice it thinly.",
+    "Weigh all the vegetables to calculate the amount of salt required. *3",
+    "Place the prepared vegetables and salt into a clean and large ziplock bag and toss well.",
+    "Remove as much air as you can and zip the bag. Place 1.5 times of weight on it and leave it at room temperature for about 3-4 days.",
+    "After 3-4 days, drain and discard the pickling liquid and squeeze out the excess moisture out of the vegetables. Weigh the pickled veggies to calculate the amount of momishiso required. *4",
+    "Place the salted vegetables into another clean zip lock bag with momishiso.",
+    "Toss them around to spread the momishiso evenly.",
+    "Remove as much air as you can and seal the bag.",
+    "Place the weight on top of the bag again and refrigerate overnight.",
+    "Place shibazuke in a clean air tight container and store in the refrigerator. It will keep in the fridge for 2-3 weeks."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "421 kcal",
+    "carbohydrateContent": "95 g",
+    "proteinContent": "17 g",
+    "fatContent": "3 g",
+    "saturatedFatContent": "1 g",
+    "sodiumContent": "10117 mg",
+    "fiberContent": "46 g",
+    "sugarContent": "57 g",
+    "unsaturatedFatContent": "1.2 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 2 cucumbers",
+    "▢ 3 eggplants",
+    "▢ 3  myoga",
+    "▢ 1 piece  ginger",
+    "▢ 26 g salt  *1",
+    "▢ 35 g momishiso *2"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "JP",
+  "siteCourseHint": null
+}

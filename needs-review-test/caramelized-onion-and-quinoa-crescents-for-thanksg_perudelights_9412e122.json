@@ -1,0 +1,120 @@
+{
+  "recipe": {
+    "name": "Caramelized Onion and Quinoa Crescents",
+    "time": "34 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "PE",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Put the quinoa in a saucepan, cover with 1 ¼ cup water, put the lid on, and bring to a boil. Add salt and pepper to taste, lower the heat, and cook partially covered until you can see a white ring around each seed (about 16 minutes). Turn off the heat and cool. You can cook the quinoa up to a day in advance and keep it in the fridge.",
+      "To cook the onion, heat a skillet over medium heat, add butter or olive oil, then the onion, stirring often until the it turns a golden color. Add the balsamic vinegar, sugar, and salt, stirring all the time. When the onion looks caramelized, add the thyme. Turn off the heat and cool. Cook the onion up to a day in advance, and keep in a tightly sealed jar in the fridge.",
+      "When you want to make the crescents, heat the oven to 350°F. Open the can of Pilsbury dough, and place the dough on the kitchen counter.",
+      "Put a tablespoon of onion on the wide side of each triangle, then a tablespoon of quinoa. Roll the dough to make crescents and place in a baking tray lined with parchment.",
+      "Combine the egg with a tablespoon of water in a small bowl, to make the egg wash. Brush each crescent with this mixture and sprinkle with ¼ teaspoon of quinoa.",
+      "Bake as directed, and serve warm, right out of the oven."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Quinoa",
+        "unit": "C",
+        "notes": "or just one, of different colors",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": "and pepper",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "alt: olive oil",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "finely sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Balsamic Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "tsp",
+        "notes": "fresh",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pillsbury Crescents Original",
+        "unit": "cans",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "968a16409582fd08b3bb786636ca6e83806b2bdac65a556824025637b17817c8",
+    "lineage_hash": "3c6b90e16899d8deb143843a94c3b9cf92a817d2cda4de1825d6378721f5f1b4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://perudelights.com/caramelized-onion-and-quinoa-crescents-for-thanksgiving/",
+    "fetchedAt": "2026-09-25T23:25:01.966Z"
+  },
+  "rawSource": "https://perudelights.com/caramelized-onion-and-quinoa-crescents-for-thanksgiving/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

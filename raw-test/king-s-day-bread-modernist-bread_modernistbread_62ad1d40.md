@@ -1,0 +1,5 @@
+In many cultures, there’s a holiday tradition of baking bread with a small token hidden inside, such as a coin or a whole almond. It’s a nice surprise for whoever gets the slice with the token, which is sometimes said to bring a year of good luck.
+
+Though our own version may be showier than is accustomed, King’s Day Bread (or _Rosca de Reyes_ in Spanish) is always adorned with candied fruits. King’s Day, January 6, commemorates the arrival of the three Wise Men in Bethlehem with gifts for baby Jesus. The baker customarily hides a figurine of baby Jesus inside the dough. The bread has a particularly rich tradition in Mexico, where the person served the piece with the figurine is obliged, traditionally, to host a _tamal_ dinner on February 2 (the Day of the Virgin of Candelaria).
+
+Versions of the citron-tinged bread—also known as Three Kings Bread, Twelfth Night Cake, or Brioche des Rois—are eaten in many countries, including France, Spain, and Portugal. In addition to King’s Day, the bread is also prepared for Twelfth Night (a Christian holiday 12 days after Christmas) and in New Orleans during Mardi Gras.

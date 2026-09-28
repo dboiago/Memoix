@@ -1,0 +1,178 @@
+{
+  "recipe": {
+    "name": "Ayib and Sweet Potato Ravioli with Berbere Brown Butter",
+    "time": "1 hr 15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "ET",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 375°F.",
+      "Wrap the sweet potatoes individually in foil and roast in the oven until tender enough to pull apart with a fork, about 45 minutes.",
+      "While the potatoes are roasting, spread the pecans in an even layer on a small baking sheet. Toast in the oven until fragrant, 6 to 8 minutes. Transfer to a cooling rack to cool completely. Once cooled, finely chop the pecans and combine in a small bowl with the chives, mint, and lemon zest. Set aside.",
+      "Remove the potatoes from the oven and allow to cool slightly. When cool enough to handle, scoop the flesh into a mixing bowl and mash until smooth. Add the cornmeal, egg yolk, and ayib. Season with salt and pepper to taste.",
+      "Dust a baking sheet with additional cornmeal and lightly dust a work surface with the flour. Lay a lasagna sheet on the work surface. Using a pastry brush, lightly brush the pasta dough with egg wash. Scoop the sweet potato filling in 1-tablespoon amounts, spacing each about 1½ inches apart and creating two rows on the one sheet. Top with the remaining pasta sheet. Use your thumb to press and seal the area around each scoop of filling. Using a pastry cutter, cut the ravioli into 2½-inch squares and transfer to the cornmeal-dusted baking sheet.",
+      "Bring a large pot of water to a boil over high heat and season generously with salt.",
+      "Heat the butter in a large skillet over medium heat. Cook until it is nutty and brown. Remove from heat and stir in the berbere. Set aside as ravioli cook.",
+      "Add the ravioli to the boiling water and cook for 1½ to 2 minutes, until they float to the top. Use a slotted spoon to drain, then transfer the ravioli to the skillet. Gently toss to coat in the berbere butter and finish with the lemon juice. Divide the ravioli evenly among plates and garnish with the herb and pecan mixture. Serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sweet Potatoes",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pecans",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": "C",
+        "notes": "sliced fresh",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint",
+        "unit": "C",
+        "notes": "chopped fresh",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Zest",
+        "unit": "Tbsp",
+        "notes": "grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Cornmeal",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "More Cornmeal",
+        "unit": null,
+        "notes": "for dusting",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ricotta",
+        "unit": "C",
+        "notes": "alt: ayib, strained",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": "Kosher",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": null,
+        "notes": "freshly cracked",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "C",
+        "notes": "for dusting",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pasta Sheets",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": "plus 1 teaspoon water, lightly whisked",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "C",
+        "notes": "unsalted",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Berbere",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": "freshly squeezed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "eaf26794d4b0709e691189a3df68e95efecbc0189eb0494e7039c17ec434555e",
+    "lineage_hash": "9cb743a4470777463053a555f562b282c636491ac9248f89d1bf9b640526ea76"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://marcussamuelsson.com/recipe/ayib-and-sweet-potato-ravioli-with-berbere-brown-butter",
+    "fetchedAt": "2026-09-25T19:17:26.819Z"
+  },
+  "rawSource": "https://marcussamuelsson.com/recipe/ayib-and-sweet-potato-ravioli-with-berbere-brown-butter",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

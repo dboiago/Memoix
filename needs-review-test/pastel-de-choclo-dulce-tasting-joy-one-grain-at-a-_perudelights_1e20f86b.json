@@ -1,0 +1,104 @@
+{
+  "recipe": {
+    "name": "Pastel de choclo dulce",
+    "time": "1 hr 45 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "CL",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Have all the ingredients at room temperature. Line the bottom of a 9 inch round pan with parchment paper. Preheat the oven to 350F.",
+      "Whip butter and sugar until creamy. Add egg yolks one by one, then the cream cheese. Whip at high speed for 5 minutes.",
+      "Process the corn in the blender or food processor until very fine. Add to the butter mixture with the baking powder and flour.",
+      "Meanwhile, whip the egg whites until soft peaks form and fold them very gently.",
+      "Pour the batter in the pan and bake for 45 minutes or until the cake is lightly golden and firm.",
+      "Remove the cake from the oven and cool in a rack."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oz Fresh White Corn",
+        "unit": "oz",
+        "notes": "about 2 cups",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oz Cream Cheese",
+        "unit": "oz",
+        "notes": "about 1 package",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stick Stick Unsalted Butter",
+        "unit": null,
+        "notes": "about ½ cup",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cup Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Teaspoon Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tablespoon All-purpose Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4b5ce20aced5533a0176adfa66d7eb04cb64717894ba8c73e6115cd572602629",
+    "lineage_hash": "edccbd9b9f6c15b9c79f72a393ac40f6325219c43e64c217c858ccac6c7743c9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://perudelights.com/pastel-de-choclo-dulce-tasting-joy-one-grain-at-a-time/",
+    "fetchedAt": "2026-09-25T20:29:13.747Z"
+  },
+  "rawSource": "https://perudelights.com/pastel-de-choclo-dulce-tasting-joy-one-grain-at-a-time/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

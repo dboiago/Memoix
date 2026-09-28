@@ -1,0 +1,67 @@
+{
+  "url": "https://www.chinasichuanfood.com/hot-oyster-noodles/",
+  "slug": "hot-oyster-noodles_chinasichuanfood_212d40a6",
+  "title": "Hot Oyster Noodles",
+  "byline": "",
+  "fetchedAt": "2026-08-02T07:30:06.174Z",
+  "ldName": "Hot oyster noodles",
+  "ldTime": null,
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": [
+    "1"
+  ],
+  "ldCuisine": null,
+  "ldCategory": null,
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "1 serving noodles (, either fresh or dried ones worked.)",
+    "toasted sesame seeds (to taste)",
+    "toasted peanuts (to taste)",
+    "1 tbsp. oyster sauce",
+    "2  fresh peppers (, cut into small circles)",
+    "1/2 tbsp. light soy sauce",
+    "1 tsp. vinegar",
+    "1 tsp.  sugar",
+    "2 cloves garlic (, chopped)",
+    "1  scallion (, chopped)",
+    "1/2 tbsp. pepper flakes (, or to taste. )"
+  ],
+  "ldInstructionsRaw": [
+    "Heat a pot of water to a boiling, prepare to cook noodles.",
+    "Place oyster sauce in center, and then lay chopped garlic, chopped spring onion, pepper circle and pepper flakes around.",
+    "Heat 2 tablespoons of hot oil and drizzle the hot oil on top of the seasonings. Then add light soy sauce, black vinegar, sugar and toasted sesame seeds. Mix well and let the sauce combine for a moment.",
+    "Read the instruction on the package, learn the cooking time. And cook noodles half minute less. Then drain the extra water, mix with the sauce. In addition, add some toasted sesame seeds and peanuts.",
+    "Mix well and serve hot!"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "321 kcal",
+    "carbohydrateContent": "66 g",
+    "proteinContent": "12 g",
+    "fatContent": "2 g",
+    "saturatedFatContent": "1 g",
+    "sodiumContent": "952 mg",
+    "fiberContent": "9 g",
+    "sugarContent": "13 g",
+    "unsaturatedFatContent": "2 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "1 serving noodles , either fresh or dried ones worked.",
+    "toasted sesame seeds to taste",
+    "toasted peanuts to taste",
+    "[Sauce]",
+    "1 tbsp. oyster sauce",
+    "2 fresh peppers , cut into small circles",
+    "1/2 tbsp. light soy sauce",
+    "1 tsp. vinegar",
+    "1 tsp.  sugar",
+    "2 cloves garlic , chopped",
+    "1 scallion , chopped",
+    "1/2 tbsp. pepper flakes , or to taste."
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

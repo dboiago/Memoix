@@ -1,0 +1,105 @@
+{
+  "recipe": {
+    "name": "Smokey Gratin",
+    "time": "20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": null,
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cut the celeriac into large chunks, similar in size to the potatoes, and peel the potatoes.",
+      "Using a mandoline, slice the potatoes and celeriac into thin slices.",
+      "In a saucepan, combine the cream and milk with some thyme and nutmeg.",
+      "Introduce a burning piece of wood (or a similar smoking element) into the mixture to infuse a smoky flavour, then allow it to come to a gentle simmer over the heat.",
+      "In an ovenproof dish, layer the celeriac and potato slices, seasoning each layer with a bit of salt and pepper.",
+      "Pour the cream mixture over the layers, and finish with slices of Reblochon cheese on top.",
+      "Place the dish in the oven for about 20 minutes. Enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Large Chunks Celeriac",
+        "unit": null,
+        "notes": "similar in size to the potatoes",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": null,
+        "notes": "peeled",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Some Thyme",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Some Nutmeg",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Burning Piece of Wood",
+        "unit": null,
+        "notes": "or a similar smoking element",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Slices Reblochon Cheese",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b396b1b879af8cd1894691b4b7a451b65b60575ce43dee12cf36a8e2379d24eb",
+    "lineage_hash": "c4f15fe56d03b41905117f8996cd78a20c2591ee4fd82f52da931a9bb3436d27"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.stadlermade.com/oven-recipes/smokey-gratin/",
+    "fetchedAt": "2026-08-01T18:46:05.902Z"
+  },
+  "rawSource": "https://www.stadlermade.com/oven-recipes/smokey-gratin/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

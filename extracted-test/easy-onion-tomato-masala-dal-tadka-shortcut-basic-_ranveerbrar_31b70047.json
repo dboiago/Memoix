@@ -1,0 +1,162 @@
+{
+  "recipe": {
+    "name": "Onion Tomato Masala & Dal Tadka",
+    "time": "40-45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a kadai heat oil and add cumin seeds, chopped onions saute them until golden brown and cook completely.",
+      "Now add degi red chilli powder, turmeric powder, coriander powder, ginger-garlic paste and keep on sauteing until fragrant.",
+      "Then add the tomato puree, chopped tomato, salt and cook on medium heat until properly cooked.",
+      "Finish by adding vinegar then cook it for a minute and switch off the flames.",
+      "Cool it down and store in an airtight container in the fridge.",
+      "In a hot kadai add cooked dal, water, onion tomato gravy and mix it properly then boil it for 2 minutes.",
+      "Now add coriander leaves, stir it once and continue boiling for a minute.",
+      "Switch off the flames and dal is ready to serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾-1",
+        "section": "For Onion Tomato Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Onion Tomato Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "medium",
+        "notes": "chopped",
+        "amount": "4-5",
+        "section": "For Onion Tomato Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Onion Tomato Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Onion Tomato Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "3",
+        "section": "For Onion Tomato Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger-garlic Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Onion Tomato Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Pureed Tomatoes",
+        "unit": "medium",
+        "notes": null,
+        "amount": "3-4",
+        "section": "For Onion Tomato Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Onion Tomato Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": "medium",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Onion Tomato Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Onion Tomato Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Cooked Dal",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Onion Tomato Gravy",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Dal",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "aa4a58860a9bab4990a622527467d9a1cab6215d58acdcb00d91d6e2636612b2",
+    "lineage_hash": "2eb4480c13a90e70b2c5032a68fa7258edd021681e0d2f98c5185da2196e1e02"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/onion-tomato-masala-dal-tadka/",
+    "fetchedAt": "2026-08-01T21:21:50.394Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/onion-tomato-masala-dal-tadka/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

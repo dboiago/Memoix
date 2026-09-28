@@ -1,0 +1,54 @@
+{
+  "url": "https://thewoksoflife.com/campfire-curry-ramen/",
+  "slug": "campfire-curry-ramen_thewoksoflife_ccc6d944",
+  "title": "Campfire Curry Ramen",
+  "byline": "Sarah",
+  "fetchedAt": "2026-08-02T18:48:23.074Z",
+  "ldName": "Campfire Curry Ramen",
+  "ldTime": "PT10M",
+  "ldPrepTime": "PT2M",
+  "ldCookTime": "PT8M",
+  "ldYield": [
+    "1",
+    "1 serving"
+  ],
+  "ldCuisine": "Japanese",
+  "ldCategory": "Noodles and Pasta",
+  "ldKeywords": "curry ramen",
+  "ldIngredientsRaw": [
+    "1 tablespoon vegetable oil",
+    "1/4 cup onion ((thinly sliced))",
+    "1/4 cup beef jerky ((roughly chopped, optional))",
+    "2 teaspoons curry powder",
+    "2 1/2 cups water",
+    "1 packet beef-flavored instant ramen"
+  ],
+  "ldInstructionsRaw": [
+    "In a medium pot over medium high heat, add the vegetable oil, onion, and beef jerky (if using). Sauté until the onion is slightly softened, and add the curry powder. Cook for another 30 seconds, until fragrant.",
+    "Add the water and bring to a boil. Add the seasoning packet from the instant ramen package and then add the noodles. Simmer for 2-3 minutes, until the noodles are cooked but still al dente. Serve immediately!"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "541 kcal",
+    "carbohydrateContent": "61 g",
+    "proteinContent": "12 g",
+    "fatContent": "29 g",
+    "saturatedFatContent": "18 g",
+    "cholesterolContent": "2 mg",
+    "sodiumContent": "1870 mg",
+    "fiberContent": "4 g",
+    "sugarContent": "4 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 1 tablespoon vegetable oil",
+    "▢ 1/4 cup onion (thinly sliced)",
+    "▢ 1/4 cup beef jerky (roughly chopped, optional)",
+    "▢ 2 teaspoons curry powder",
+    "▢ 2 1/2 cups water",
+    "▢ 1 packet beef-flavored instant ramen"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

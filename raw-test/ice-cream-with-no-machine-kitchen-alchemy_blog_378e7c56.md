@@ -1,0 +1,15 @@
+![](https://blog.modernistpantry.com/wp-content/uploads/2020/09/shutterstock_797580976-1.jpg)
+
+[![Print Friendly, PDF & Email](https://cdn.printfriendly.com/buttons/printfriendly-pdf-button-nobg-md.png)](# "Printer Friendly, PDF & Email")
+
+### **The Struggle:**
+
+Ice cream continues to be quite the common topic. Ice cream will always fascinate me since it’s a mixture of so many methods. It’s a semi frozen emulsion and foam. This week we were asked a pretty interesting question. “Can an ice cream be made without an ice cream machine”? This is an interesting question because we have many ingredients that help with the texture of ice cream. So the question is, is there a way we can make an ice cream that doesn’t require an ice cream churn?
+
+_“Is there a modern way to make ice cream without a churn?”_ 
+
+### **No Mix, No Churn, Just Freeze?**
+
+So the answer is yes, there are many ways to make an ice cream without a traditional ice cream churn. But these methods still require some sort of mixing. Is there a way to make ice cream without the need for another step after mixing the ingredients. Simply mix and freeze? This is the question that came across my desk. So I took this as a challenge, these are the things that excite me. I did quite a bit of research and isn’t finding anything about a no freeze ice cream that didn’t look like a milk based granita. So I started thinking. Of all the ingredients we carry would this be possible? Unfortunately the answer is no. While you can get close to the right texture the process of churning the ice cream is really the defining factor. Adding ingredients like [xanthan gum](https://www.modernistpantry.com/xanthan-gum.html), [perfect ice cream](https://www.modernistpantry.com/perfect-ice-cream.html), and even [polysorbate 80](https://www.modernistpantry.com/polysorbate-80.html) can help emulsify, soften ice crystals, and prevent melting. But what they can’t do is mimic the agitation that a churn or even a hand mixer and a bowl of ice can. The mixing is such a vital part for the texture of ice cream or any frozen churned dessert. The constant movement is what helps keep those ice crystals short so that they can be softened by the other modern ingredients. Lastly, in my research there are other ways to shorten ice crystals through other means. Fast freezing can make for short ice crystals, so a stand mixer with ice cream base can be turned into ice cream in just a few seconds when using liquid nitrogen, or just a few minutes using dry ice. The faster an ice cream base freezes the less time it will have to for the ice crystals. Be mindful that liquid nitrogen and dry ice require protective gear to use properly. So the conclusion is yes you can make ice cream without a traditional churn, but you cannot just skip the mixing process all together. 
+
+Do you have a recipe you just can’t seem to figure out? Shoot us an email or drop us a line and we will do our best to guide you to the right option.

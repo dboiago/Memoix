@@ -1,0 +1,85 @@
+{
+  "recipe": {
+    "name": "Celery Root Remoulade (Celeri Remoulade)",
+    "time": null,
+    "course": "salads",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix together the mayonnaise, mustard, 1 teaspoon of salt, lemon juice, and a few grinds of black pepper.",
+      "Peel the celery root and grate it coarsely.",
+      "Mix the dressing with the celery root and taste, adding additional salt, pepper, mustard, and lemon juice, to taste."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mayonnaise",
+        "unit": "C",
+        "notes": "20g, homemade or store-bought",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "tsp",
+        "notes": "plus more, to taste",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly-squeezed Lemon Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly-ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Root",
+        "unit": "lb",
+        "notes": "1kg",
+        "amount": "2¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8e44c44f94d92f55e07696f5ae74645aa5ef5691616dd9f80e9a2e257eecd825",
+    "lineage_hash": "73d899d2ad5388c18e44349b5f5966fad56edfcf66736f5e80b5f57ff6ac9799"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/celery-root-remoulade-celeri-rem/",
+    "fetchedAt": "2026-08-02T18:57:57.233Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/celery-root-remoulade-celeri-rem/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

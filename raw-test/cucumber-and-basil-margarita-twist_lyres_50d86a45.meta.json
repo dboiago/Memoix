@@ -1,0 +1,45 @@
+{
+  "url": "https://lyres.com/en-uk/products/lyres-cucumber-and-basil-margarita-twist",
+  "slug": "cucumber-and-basil-margarita-twist_lyres_50d86a45",
+  "title": "Cucumber and Basil Margarita Twist",
+  "byline": "",
+  "fetchedAt": "2026-08-02T22:07:32.621Z",
+  "ldName": "Lyre's Cucumber & Basil Margarita Twist",
+  "ldTime": "PT3M",
+  "ldPrepTime": "PT3M",
+  "ldCookTime": "PT0M",
+  "ldYield": "1 serving",
+  "ldCuisine": "Modern",
+  "ldCategory": "Cocktail",
+  "ldKeywords": "non-alcoholic margarita, cucumber basil mocktail, alcohol-free cocktail, Lyre's Agave Blanco, tequila alternative, lime, basil, cucumber",
+  "ldIngredientsRaw": [
+    "60ml Lyre's Agave Blanco",
+    "25ml fresh lime juice",
+    "15ml sugar syrup",
+    "40g fresh cucumber (about 3-4 thick slices)",
+    "5-6 fresh basil leaves",
+    "Ice"
+  ],
+  "ldInstructionsRaw": [
+    "Gently muddle the cucumber and basil leaves in a cocktail shaker.",
+    "Add Lyre's Agave Blanco, fresh lime juice and sugar syrup.",
+    "Fill the shaker with ice and shake briefly to chill.",
+    "Fine strain into a rocks glass filled with fresh ice.",
+    "Garnish with a cucumber ribbon, basil sprig and a lime wheel. Optional: add a light salt rim."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 cocktail",
+    "calories": "95 calories"
+  },
+  "htmlIngredientLines": [
+    "60mL Lyre's Agave Blanco Spirit",
+    "25mL fresh lime juice",
+    "15mL simple syrup",
+    "40g fresh cucumber (3-4 thick slices)",
+    "5-6 fresh basil leaves"
+  ],
+  "htmlIngredientConfig": "generic-text-heading",
+  "siteRegionHint": null,
+  "siteCourseHint": "Drinks"
+}

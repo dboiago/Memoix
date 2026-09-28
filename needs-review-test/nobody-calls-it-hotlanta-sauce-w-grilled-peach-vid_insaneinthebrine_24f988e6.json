@@ -1,0 +1,57 @@
+{
+  "recipe": {
+    "name": "Nobody Calls it 'Hotlanta' Sauce (w/ Grilled Peach & Vidalia Onion)",
+    "time": "1 hr 30 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Orange Sweet Peppers",
+        "unit": null,
+        "notes": "250 g, after tops and seeds removed, rough chopped",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Habanero Peppers",
+        "unit": null,
+        "notes": "150 g, after tops/seeds removed, rough chopped",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Manzano Peppers",
+        "unit": "large",
+        "notes": "700 g, after tops/seeds removed, rough chopped",
+        "amount": "9",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "99517c79140c917162cb6b03cb72233d397e51012d500a2b3b00a8f0872a393e",
+    "lineage_hash": "64861b13931894cbbfdddc9448081cf5e67fa5e267a6ff5cc1dba14f9c7c346b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://insaneinthebrine.com/peach-onion-hotsauce/",
+    "fetchedAt": "2026-08-01T23:10:12.576Z"
+  },
+  "rawSource": "https://insaneinthebrine.com/peach-onion-hotsauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

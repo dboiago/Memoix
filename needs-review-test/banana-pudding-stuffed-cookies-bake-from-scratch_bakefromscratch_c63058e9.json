@@ -1,0 +1,196 @@
+{
+  "recipe": {
+    "name": "Banana Pudding-Stuffed Cookies",
+    "time": "1 hr 20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": null,
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Line baking sheets with parchment paper.",
+      "Using a 1½-tablespoon spring-loaded scoop, scoop 8 mounds of Banana Pastry Cream (about 27 grams each), and place on a prepared pan; freeze until slightly firm, about 20 minutes. Cover remaining pastry cream, and refrigerate until ready to use.",
+      "Preheat oven to 350°F (180°C).",
+      "In the bowl of a stand mixer fitted with the paddle attachment, beat butter and brown sugar at medium speed until light and fluffy, 3 to 4 minutes, stopping to scrape bottom and sides of bowl. Beat in egg and vanilla extract until well combined.",
+      "In a medium bowl, whisk together flour, cornstarch, salt, and baking powder. With mixer on low speed, gradually add flour mixture to butter mixture, beating until just combined and stopping to scrape bottom and sides of bowl.",
+      "Using a 1½-tablespoon spring-loaded scoop, scoop 8 portions of dough (about 33 grams each), and place on a prepared pan. Working very gently, lightly flatten each portion of dough. Place 1 frozen mound of Banana Pastry Cream onto 1 flattened dough piece; top with another flattened dough piece, and gently press edges of dough pieces together to seal. Gently pack dough into a 2- to 2¼-inch ball, and gently press dough to slightly flatten. Roll stuffed dough in ground wafers. Repeat with remaining dough pieces and frozen pastry cream, and place 2 inches apart on prepared pan.",
+      "Bake until edges are golden brown, 16 to 18 minutes. (See Note.) Let cool on pan for 5 minutes. Remove from pan, and let cool completely on wire racks.",
+      "Repeat procedure with remaining dough, remaining frozen Banana Pastry Cream, and remaining ground wafers.",
+      "In the bowl of a stand mixer fitted with the paddle attachment, beat remaining pastry cream (about 116 grams) at medium speed until creamy. With mixer on low speed, add cold cream in a slow, steady stream, beating until well combined and stopping to scrape sides of bowl; increase mixer speed to high, and beat until medium-stiff peaks form, 4 to 5 minutes.",
+      "Place pastry cream mixture in a pastry bag fitted with a ½-inch closed star piping tip (Ateco #856). Pipe onto cooled cookies as desired. Serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Banana Pastry Cream (recipe Follows)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "113 grams, softened",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Firmly Packed Light Brown Sugar",
+        "unit": "C",
+        "notes": "220 grams",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg (50 Grams)",
+        "unit": "large",
+        "notes": "room temperature",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": "188 grams",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": "5 grams",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kosher Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Vanilla Wafers",
+        "unit": "C",
+        "notes": "116 grams, finely",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cold Heavy Whipping Cream",
+        "unit": "C",
+        "notes": "180 grams",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "C",
+        "notes": "300 grams",
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ripe Banana",
+        "unit": "C",
+        "notes": "154 grams, about 1 large banana, chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": "50 grams",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": "16 grams",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kosher Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks (37 Grams)",
+        "unit": "large",
+        "notes": "room temperature",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": "14 grams, cubed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "780ba48a38d3acf16c371d20f4c3a8a4d00398c29f62356aaa64641e87c0d371",
+    "lineage_hash": "715e4a02e75920935edff27990d1b8d24e123221bf7dfcb17713df015f0d6c35"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://bakefromscratch.com/banana-pudding-stuffed-cookies/",
+    "fetchedAt": "2026-08-01T17:42:31.860Z"
+  },
+  "rawSource": "https://bakefromscratch.com/banana-pudding-stuffed-cookies/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

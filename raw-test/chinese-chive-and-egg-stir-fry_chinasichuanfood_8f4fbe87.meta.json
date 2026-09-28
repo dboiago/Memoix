@@ -1,0 +1,50 @@
+{
+  "url": "https://www.chinasichuanfood.com/chinese-chive-and-egg-stir-fry/",
+  "slug": "chinese-chive-and-egg-stir-fry_chinasichuanfood_8f4fbe87",
+  "title": "Chinese Chive and Egg Stir Fry",
+  "byline": "",
+  "fetchedAt": "2026-08-02T04:59:22.492Z",
+  "ldName": "Chinese Chive and Egg Stir Fry",
+  "ldTime": "PT10M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Side Dish",
+  "ldKeywords": "Chinese chive",
+  "ldIngredientsRaw": [
+    "2  eggs ( , well whisked )",
+    "1 small  brunch  Chinese chives",
+    "1 tsp. salt ( , divided )",
+    "2 tbsp. cooking oil ( , divided )",
+    "1 tbsp. light soy sauce ( , optional)"
+  ],
+  "ldInstructionsRaw": [
+    "Prepare Chinese chives, discard any dirty leaves on the tail and the tough parts in the head sections. Wash well and drain. Mix in around 1/2 tablespoon of cooking oil firstly.",
+    "Whisk egg well with a small pinch of salt. Set aside.",
+    "Heat your wok firstly and pour in oil, heat oil until smoky. Stir the egg liquid a few times and pour in the wok. Wait for 2-3 seconds and then use chop stickers to separate the egg into small pieces.&nbsp;&nbsp;",
+    "Add chives in, give a big stir fry until the chives are almost softened. Add salt and light soy sauce is using. Serve with steamed rice.&nbsp;"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "198 kcal",
+    "proteinContent": "6 g",
+    "fatContent": "18 g",
+    "saturatedFatContent": "2 g",
+    "cholesterolContent": "163 mg",
+    "sodiumContent": "1430 mg",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "2 eggs  , well whisked",
+    "1 small  brunch  Chinese chives",
+    "1 tsp. salt  , divided",
+    "2 tbsp. cooking oil  , divided",
+    "1 tbsp. light soy sauce  , optional"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

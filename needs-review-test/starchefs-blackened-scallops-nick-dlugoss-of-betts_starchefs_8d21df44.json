@@ -1,0 +1,170 @@
+{
+  "recipe": {
+    "name": "Blackened Scallops",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": null,
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat oven to 425°F. Place carrots on a sheet tray and roast 20 minutes. Set aside.",
+      "In a pan over medium heat, melt butter. Add heavy cream, salt, lemon zest, roasted carrots, and ¾ cup water. Bring mixture to a boil. Reduce heat and let simmer until carrots are tender.",
+      "Strain, reserving carrots and liquid separately. Transfer carrots to a Vitamix Commercial blender. Add a splash reserved cooking liquid and purée until smooth. Season with salt. Transfer to an airtight container and reserve.",
+      "In a pan over medium-high flame, heat oil. Add kale and sauté until slightly wilted.",
+      "Stir in goat cheese, heavy cream, and butter. Mix until combined and goat cheese has fully melted. Season with salt and pepper. Reduce heat and keep warm.",
+      "On a work surface, lightly coat scallops in blackening seasoning.",
+      "In a pan over medium-high flame, heat oil. Sear scallops 2 minutes on each side. Transfer to a work surface and let rest.",
+      "On a serving plate, smear 1 spoonful Carrot Purée. Top with scallops, desired amount Creamed Kale, and pistachios."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Carrots",
+        "unit": "lb",
+        "notes": "roughly chopped",
+        "amount": "1",
+        "section": "Carrot Purée",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Carrot Purée",
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Carrot Purée",
+        "isOptional": false
+      },
+      {
+        "name": "Kosher Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Carrot Purée",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Zest",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": "Carrot Purée",
+        "isOptional": false
+      },
+      {
+        "name": "Neutral Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Creamed Kale",
+        "isOptional": false
+      },
+      {
+        "name": "Baby Kale",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": "Creamed Kale",
+        "isOptional": false
+      },
+      {
+        "name": "Goat Cheese",
+        "unit": "oz",
+        "notes": null,
+        "amount": "3",
+        "section": "Creamed Kale",
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": "Creamed Kale",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Creamed Kale",
+        "isOptional": false
+      },
+      {
+        "name": "Kosher Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Creamed Kale",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Creamed Kale",
+        "isOptional": false
+      },
+      {
+        "name": "U8",
+        "unit": null,
+        "notes": "alt: U10 scallops",
+        "amount": "3",
+        "section": "To Assemble and Serve",
+        "isOptional": false
+      },
+      {
+        "name": "Blackening Seasoning",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "To Assemble and Serve",
+        "isOptional": false
+      },
+      {
+        "name": "Neutral Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "To Assemble and Serve",
+        "isOptional": false
+      },
+      {
+        "name": "Toasted and Chopped Pistachios",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "To Assemble and Serve",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7aacd573123bfe318d79afbae0d82479a0aa0c4e1627db4a427cd853ff6cfc3a",
+    "lineage_hash": "89fb7022c6bfaa83df90e441f558dcfff5f232fc2fd7d603c131253ccd0dcec4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.starchefs.com/recipes/blackened-scallops",
+    "fetchedAt": "2026-08-03T20:51:59.086Z"
+  },
+  "rawSource": "https://www.starchefs.com/recipes/blackened-scallops",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

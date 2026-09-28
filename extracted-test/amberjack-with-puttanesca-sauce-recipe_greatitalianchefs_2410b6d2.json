@@ -1,0 +1,168 @@
+{
+  "recipe": {
+    "name": "Amberjack with Puttanesca Sauce",
+    "time": "45 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, prepare the capers. Desalt the capers by soaking them in warm water for 2 hours",
+      "Drain and dry the capers with kitchen paper and place on a baking tray. Dry in a dehydrator or oven overnight at 60°C",
+      "When ready to cook, blitz the oregano with the oil and strain through a muslin cloth",
+      "To make the puttanesca sauce, heat a medium saucepan with the olive oil. Fry the red onion until tender, then add the garlic and cook for a further 2 minutes. Stir in the passata, followed by the basil, coriander and salt and pepper to taste. Cook for 3 more minutes and remove from the heat",
+      "Place the slices of amberjack on a plate. Season the raw prawns with salt and pepper and place in the centre with a little of the puttanesca sauce drizzled around",
+      "Add the capers in oil, dried capers, anchovies and olives and a sprinkling of salad leaves. Finish with a drizzle of oregano oil and serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "G Baby Capers",
+        "unit": "g",
+        "notes": "salted",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "G Extra Virgin Olive Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "G Dried Oregano",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "G Passata",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "G Basil",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amberjack Fillet",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Prawns",
+        "unit": null,
+        "notes": "peeled",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Capers",
+        "unit": null,
+        "notes": "in oil",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Olives",
+        "unit": null,
+        "notes": "cut into cubes",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Anchovies",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Salad Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e8d3a739376d5328554adc371ae2f71d09c2a2246c3aa7ac9a5813a9e9fde377",
+    "lineage_hash": "a497ebec5578f6808537859203e07e8545fe792676315eb05a141931d874264d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/amberjack-puttanesca-recipe",
+    "fetchedAt": "2026-08-02T08:53:18.337Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/amberjack-puttanesca-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

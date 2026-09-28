@@ -1,0 +1,42 @@
+{
+  "url": "https://www.lacucinaitaliana.com/recipe/appetizers/steak-tartare-with-dill-yogurt-sauce",
+  "slug": "steak-tartare-with-dill-yogurt-sauce_lacucinaitaliana_431ffb66",
+  "title": "Steak Tartare with Dill Yogurt Sauce",
+  "byline": "by  Editorial staff   June 12, 2020",
+  "fetchedAt": "2026-08-02T16:53:45.050Z",
+  "ldName": "Steak Tartare with Dill Yogurt Sauce",
+  "ldTime": "PT20M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": "4",
+  "ldCuisine": "Italian",
+  "ldCategory": "appetizers",
+  "ldKeywords": "Carne,Tartare",
+  "ldIngredientsRaw": [
+    "14OZ. beef",
+    "2/3C. Greek yogurt",
+    "Dill",
+    "Shallot",
+    "Lime",
+    "Fresh cilantro",
+    "Extravirgin olive oil",
+    "Salt",
+    "Pepper"
+  ],
+  "ldInstructionsRaw": null,
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "14 OZ. of beef",
+    "2/3 C. of Greek yogurt",
+    "Dill",
+    "Shallot",
+    "Lime",
+    "Fresh cilantro",
+    "Extravirgin olive oil",
+    "Salt",
+    "Pepper"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IT",
+  "siteCourseHint": null
+}

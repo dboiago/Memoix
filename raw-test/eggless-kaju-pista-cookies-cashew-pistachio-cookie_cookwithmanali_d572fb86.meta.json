@@ -1,0 +1,70 @@
+{
+  "url": "https://www.cookwithmanali.com/eggless-kaju-pista-cookies/",
+  "slug": "eggless-kaju-pista-cookies-cashew-pistachio-cookie_cookwithmanali_d572fb86",
+  "title": "Eggless Kaju Pista Cookies (Cashew Pistachio Cookies)",
+  "byline": "Manali Singh",
+  "fetchedAt": "2026-08-02T07:25:18.434Z",
+  "ldName": "Eggless Kaju Pista Cookies (Cashew Pistachio Cookies)",
+  "ldTime": "PT86M",
+  "ldPrepTime": "PT70M",
+  "ldCookTime": "PT16M",
+  "ldYield": [
+    "3",
+    "3 dozen cookies"
+  ],
+  "ldCuisine": "Indian",
+  "ldCategory": "Cookies",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "1.5 cups all purpose flour",
+    "2.5 tablespoons vanilla custard powder [i use the one we get at indian stores (any brand would do])",
+    "pinch of salt",
+    "½ cup butter (unsalted [1 stick])",
+    "½ cup powdered sugar",
+    "½ teaspoon cardamom powder",
+    "¼ teaspoon kewra essence",
+    "½ teaspoon vanilla extract",
+    "½ cup chopped nuts (cashews &amp; pistachios and some more to garnish on top)",
+    "1-2 tablespoons milk (as required)"
+  ],
+  "ldInstructionsRaw": [
+    "In a bowl sift together flour, custard powder and salt. Set aside.",
+    "Using your stand or hand mixer, beat the butter and powdered sugar till light and fluffy, around 2-3 minutes.",
+    "Add vanilla extract, kewra essence, cardamom powder and mix till well combined.",
+    "Now add the flour mix and chopped nuts.",
+    "Mix to form a dough. Add milk, 1 tablespoon at a time if the dough is not coming together.",
+    "Divide the dough into 2 equal halves. Shape each part into a log and then wrap with a cling. Refrigerate the logs for 1-2 hours.",
+    "Once the dough has chilled, slice the logs into cookies and place on a baking tray. Sprinkle some more chopped cashews and pistachios on top.",
+    "Bake the cookies at 350 F degrees for 16-17 minutes. The cookies will continue to crisp as they cool down."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "761 kcal",
+    "carbohydrateContent": "81 g",
+    "proteinContent": "11 g",
+    "fatContent": "45 g",
+    "saturatedFatContent": "21 g",
+    "transFatContent": "1 g",
+    "cholesterolContent": "114 mg",
+    "sodiumContent": "309 mg",
+    "fiberContent": "3 g",
+    "sugarContent": "21 g",
+    "unsaturatedFatContent": "21 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 1.5 cups all purpose flour",
+    "▢ 2.5 tablespoons vanilla custard powder [i use the one we get at indian stores, any brand would do]",
+    "▢ pinch of salt",
+    "▢ ½ cup butter, unsalted [1 stick]",
+    "▢ ½ cup powdered sugar",
+    "▢ ½ teaspoon cardamom powder",
+    "▢ ¼ teaspoon kewra essence",
+    "▢ ½ teaspoon vanilla extract",
+    "▢ ½ cup chopped nuts, cashews & pistachios and some more to garnish on top",
+    "▢ 1-2 tablespoons milk, as required"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "IN",
+  "siteCourseHint": null
+}

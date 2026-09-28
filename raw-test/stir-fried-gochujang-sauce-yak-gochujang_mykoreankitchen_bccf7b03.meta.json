@@ -1,0 +1,65 @@
+{
+  "url": "https://mykoreankitchen.com/gochujang-sauce/",
+  "slug": "stir-fried-gochujang-sauce-yak-gochujang_mykoreankitchen_bccf7b03",
+  "title": "Stir Fried Gochujang Sauce (Yak Gochujang)",
+  "byline": "Sue",
+  "fetchedAt": "2026-08-02T00:52:38.508Z",
+  "ldName": "Stir Fried Gochujang Sauce",
+  "ldTime": "PT20M",
+  "ldPrepTime": "PT7M",
+  "ldCookTime": "PT13M",
+  "ldYield": [
+    "15"
+  ],
+  "ldCuisine": "Korean",
+  "ldCategory": "Side dishes",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "200 g minced beef  (or pork (7 ounces))",
+    "1 tsp sesame oil",
+    "3/4 cup gochujang ((korean chili paste))",
+    "3 Tbsp water",
+    "1 to 3 tsp honey",
+    "1 Tbsp pine nuts (or your choice of nuts (optional))",
+    "1 tsp soy sauce",
+    "1 tsp rice wine",
+    "1 tsp minced garlic",
+    "1/2 tsp minced ginger",
+    "A few sprinkles ground black pepper"
+  ],
+  "ldInstructionsRaw": [
+    "Combine the meat with the marinade sauce and set it aside for about 5 minutes.",
+    "Pre heat a skillet over medium high heat. Add the sesame oil and spread it thinly quickly. Add the meat and stir it well so the meat doesn’t clump.",
+    "Once the meat is mostly cooked, add the gochujang and water. Stir them well for 2 to 3 mins. Reduce the heat to low and simmer it a further 8 mins. Add the honey and pine nuts then stir. Simmer it a further 2 mins. Remove from the heat. Cool it down and store it in an air tight container until needed. It can be refrigerated for up to one month."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "56 kcal",
+    "carbohydrateContent": "4 g",
+    "proteinContent": "2 g",
+    "fatContent": "3 g",
+    "saturatedFatContent": "1 g",
+    "cholesterolContent": "9 mg",
+    "sodiumContent": "34 mg",
+    "sugarContent": "1 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "[MAIN]",
+    "▢ 200 g minced beef  or pork (7 ounces)",
+    "▢ 1 tsp sesame oil",
+    "▢ 3/4 cup gochujang (korean chili paste)",
+    "▢ 3 Tbsp water",
+    "▢ 1 to 3 tsp honey",
+    "▢ 1 Tbsp pine nuts or your choice of nuts (optional)",
+    "[MEAT MARINADE (MIX THESE IN A BOWL)]",
+    "▢ 1 tsp soy sauce",
+    "▢ 1 tsp rice wine",
+    "▢ 1 tsp minced garlic",
+    "▢ 1/2 tsp minced ginger",
+    "▢ A few sprinkles ground black pepper"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "KR",
+  "siteCourseHint": null
+}

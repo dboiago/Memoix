@@ -1,0 +1,83 @@
+{
+  "recipe": {
+    "name": "Japanese Sweet Potato Cheese Mochi",
+    "time": "15 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "670",
+      "carbohydrateContent": "73",
+      "fatContent": "34",
+      "proteinContent": "21"
+    },
+    "directions": [
+      "Mash the sweet potato until mostly smooth. Add 2 tbsp potato starch and 3 tbsp milk. Adjust starch or milk as needed—the mixture should be easy to roll but not sticky or dry.",
+      "Divide the mixture into 6 portions. Flatten each portion in your hand, place about 10-15 g of cheese in the center, and fold the sweet potato around the cheese to seal.",
+      "Heat a non-stick pan over medium heat. Melt the butter, then add the mochi. Cook until golden brown on one side (about 3 minutes), then flip and cook until golden on the other side (about 2 minutes).",
+      "Serve with honey or maple syrup and a pinch of salt. Enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Japanese Sweet Potato",
+        "unit": "medium",
+        "notes": "net weight cooked without skin 280g, baked or cooked",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potato Starch",
+        "unit": "Tbsp",
+        "notes": "20-30 g",
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "Tbsp",
+        "notes": "45-60 ml",
+        "amount": "3-4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "2/3-1 Cup (70-90 G) Shredded Cheese (gouda, Mozzarella, Sharp White Cheddar or Cheddar Cheese)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2336b9ea1a6e137a25985888b340d42a69f73449650dae1d76cb4bf5180f780c",
+    "lineage_hash": "54da8af485628de4e4bbabc6beb45e61c9ea48703a3ec1afacf030454fbf6d77"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.okonomikitchen.com/sweet-potato-cheese-mochi/",
+    "fetchedAt": "2026-08-02T02:50:13.715Z"
+  },
+  "rawSource": "https://www.okonomikitchen.com/sweet-potato-cheese-mochi/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

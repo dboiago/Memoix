@@ -1,0 +1,50 @@
+{
+  "url": "https://www.okonomikitchen.com/sweet-potato-cheese-mochi/",
+  "slug": "japanese-sweet-potato-cheese-mochi-okonomi-kitchen_okonomikitchen_d7b1ed73",
+  "title": "Japanese Sweet Potato Cheese Mochi - Okonomi Kitchen",
+  "byline": "Lisa Kitahara",
+  "fetchedAt": "2026-08-02T02:50:13.715Z",
+  "ldName": "Sweet Potato Cheese Mochi",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "1",
+    "1 serving"
+  ],
+  "ldCuisine": "Japanese",
+  "ldCategory": "snacks",
+  "ldKeywords": "Japanese sweet potato mochi, sweet potato cheese mochi, chewy mochi, Japanese snack, easy mochi recipe, homemade mochi, sweet potato dessert, cheesy mochi bites, Japanese dessert",
+  "ldIngredientsRaw": [
+    "1 medium Japanese sweet potato, baked or cooked (net weight cooked without skin 280g)",
+    "2-3 tbsp (20-30 g) potato starch",
+    "3-4 tbsp (45-60 ml) milk",
+    "2/3-1 cup (70-90 g) shredded cheese (gouda, mozzarella, sharp white cheddar or cheddar cheese)",
+    "1 tbsp salted butter"
+  ],
+  "ldInstructionsRaw": [
+    "Mash the sweet potato until mostly smooth. Add 2 tbsp potato starch and 3 tbsp milk. Adjust starch or milk as needed—the mixture should be easy to roll but not sticky or dry.",
+    "Divide the mixture into 6 portions. Flatten each portion in your hand, place about 10-15 g of cheese in the center, and fold the sweet potato around the cheese to seal.",
+    "Heat a non-stick pan over medium heat. Melt the butter, then add the mochi. Cook until golden brown on one side (about 3 minutes), then flip and cook until golden on the other side (about 2 minutes).",
+    "Serve with honey or maple syrup and a pinch of salt. Enjoy!"
+  ],
+  "ldNutritionRaw": {
+    "servingSize": "1 serving",
+    "calories": "670 calories",
+    "sugarContent": "12 g",
+    "sodiumContent": "830 mg",
+    "fatContent": "34 g",
+    "saturatedFatContent": "19 g",
+    "unsaturatedFatContent": "15 g",
+    "transFatContent": "0.4 g",
+    "carbohydrateContent": "73 g",
+    "fiberContent": "6 g",
+    "proteinContent": "21 g",
+    "cholesterolContent": "70 mg",
+    "@type": "nutritionInformation"
+  },
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "JP",
+  "siteCourseHint": null
+}
