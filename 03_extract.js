@@ -466,6 +466,15 @@ const ANY_MEASUREMENT_PATTERN =
 // ever got a chance to read it.
 const ANY_DIRECTION_VERB_PATTERN =
   /\b(?:preheat|whisk|simmer|marinate|refrigerate|saut[ée]|mince|knead|dice|drain|rinse|fold\s+in|bake|roast|blend|pur[ée]e|transfer\s+to|stir(?:\s+(?:in|until))?|combine|pour|place\s+the|add\s+the|remove\s+from|mix(?:\s+(?:in|until|together))?)\b/i;
+// Hoisted so the pre-model check below and the post-extraction override
+// further down the file both read the exact same patterns -- previously
+// duplicated inline in the post-extraction block only, which is what let
+// this exact gap go unnoticed (see assessExtractionViability's course
+// check comment for the real recipe this caused).
+const BREAD_FLOUR_PATTERN = /\bflour\b/i;
+const BREAD_LEAVENING_PATTERN = /\byeast\b|\bstarter\b|\blevain\b/i;
+const SMOKING_WOOD_PATTERN = /\b(?:hickory|mesquite|applewood|cherrywood|pecan\s*wood|wood\s*chips?|wood\s*chunks?|smoking\s*wood)\b/i;
+const DRINKS_SPIRIT_PATTERN = /\b(?:vodka|gin|rum|tequila|mezcal|whisk(?:e)?y|bourbon|scotch|brandy|cognac)\b/i;
 function assessExtractionViability(meta, markdown) {
   const missing = [];
 
@@ -488,7 +497,23 @@ function assessExtractionViability(meta, markdown) {
   const ldCourse = resolveCourseFromLd(meta.ldCategory) || resolveCourseFromLd(meta.ldCuisine);
   const nameText = meta.ldName || meta.title || '';
   const nameHasCourseOverride = NAME_COURSE_OVERRIDES.some(({ pattern }) => pattern.test(nameText));
-  if (!ldCourse && !meta.siteCourseHint && !nameHasCourseOverride) {
+  // Ingredient-content signals, checked against the same RAW ingredient
+  // lines/markdown the ingredients-viability check above already scans --
+  // confirmed necessary on okonomikitchen's Anpan: ldCategory "Snack" no
+  // longer grounds course (2026-09-29 fix), its own name is just "Anpan"
+  // (no course word), so without this it was being skipped before the
+  // model ever ran, even though its own ldIngredientsRaw already literally
+  // contains "bread flour"/"dry yeast" -- the exact signal the post-
+  // extraction breads check looks for, just never given the chance to run.
+  const rawIngredientText = [
+    ...(meta.htmlIngredientLines || []),
+    ...(meta.ldIngredientsRaw || []),
+  ].join(' ').toLowerCase() || (markdown || '').toLowerCase();
+  const hasBreadSignal = BREAD_FLOUR_PATTERN.test(rawIngredientText) && BREAD_LEAVENING_PATTERN.test(rawIngredientText);
+  const hasSmokingSignal = SMOKING_WOOD_PATTERN.test(rawIngredientText);
+  const hasDrinksSignal = DRINKS_SPIRIT_PATTERN.test(rawIngredientText);
+  if (!ldCourse && !meta.siteCourseHint && !nameHasCourseOverride
+      && !hasBreadSignal && !hasSmokingSignal && !hasDrinksSignal) {
     missing.push('course');
   }
 
@@ -1758,6 +1783,16 @@ async function extractWithOllama(markdown, meta, skip = {}) {
       '"My Dad\'s Made 100,000 Times", "The Best Ever", "You Won\'t Believe How Easy"), while keeping any ' +
       'native-language name in parentheses. For example, "The Ong Choy With Fermented Bean Curd My Dad\'s ' +
       'Made 100,000 Times" should become "Ong Choy With Fermented Bean Curd". ' +
+      'If the title contains BOTH a foreign/native dish name AND a plain-English translation or description ' +
+      'of that same dish -- separated by any punctuation at all (a dash, colon, semicolon, quotation marks, ' +
+      'or parentheses), not just a dash or colon -- reformat as "Foreign Name (English Name)", picking ' +
+      'whichever single clearest English phrase names the dish and dropping a redundant native-script ' +
+      'duplicate of the same name if a third segment repeats it. For example, "Hünkar Beğendi; Sultan\'s ' +
+      'Lamb Stew Over Smoked Aubergine and Béchamel Sauce" should become "Hünkar Beğendi (Sultan\'s Lamb ' +
+      'Stew)", and "Yen Ta Fo \\"Pink Noodle Soup\\" เย็นตาโฟ" should become "Yen Ta Fo (Pink Noodle Soup)". ' +
+      'Never invent an English name that is not already present in the source -- if the title is only a ' +
+      'foreign/native name with no English translation anywhere in the page, leave it as-is untranslated ' +
+      'rather than guessing one. ' +
       'If the name contains an alternate or native-language name separated by a dash or colon ' +
       '(e.g. "Mala Dry Hot Pot - Mala Xiang Guo"), reformat it as "Primary Name (Alternate Name)" instead. ' +
       'But if a trailing segment after a dash or pipe is just the site\'s own branding rather than an ' +
@@ -2235,9 +2270,18 @@ async function main() {
       // already use (ldCourse beats everything, name/ingredients only fill
       // a genuine gap). NAME_COURSE_OVERRIDES is defined at module scope
       // (near resolveCuisineFromNameLiteral).
+      // Tests both the model's cleaned name AND the raw title/ldName --
+      // confirmed real gap (2026-09-29): the model correctly cleans a
+      // foreign dish's name down to its authentic form ("Hünkar Beğendi",
+      // "Yen Ta Fo"), dropping the English descriptor ("...Sultan's Lamb
+      // Stew...", "...Pink Noodle Soup") that only the RAW title carries --
+      // checking extracted.name alone silently missed both, leaving them on
+      // an ungrounded model guess despite a real deterministic signal
+      // existing right in the page's own title.
       if (!courseGrounded) {
+        const rawNameText = meta.ldName || meta.title || '';
         for (const { pattern, course } of NAME_COURSE_OVERRIDES) {
-          if (pattern.test(extracted.name)) {
+          if (pattern.test(extracted.name) || pattern.test(rawNameText)) {
             extracted.course = course;
             courseGrounded = true;
           }
@@ -2256,9 +2300,7 @@ async function main() {
       // treated as real grounding once it fires.
       if (!courseGrounded) {
         const ingredientText = extracted.ingredients.map(i => i.name || '').join(' ').toLowerCase();
-        const hasFlour = /\bflour\b/.test(ingredientText);
-        const hasLeavening = /\byeast\b|\bstarter\b|\blevain\b/.test(ingredientText);
-        if (hasFlour && hasLeavening) {
+        if (BREAD_FLOUR_PATTERN.test(ingredientText) && BREAD_LEAVENING_PATTERN.test(ingredientText)) {
           extracted.course = 'breads';
           courseGrounded = true;
         }
@@ -2271,7 +2313,7 @@ async function main() {
       // food, a false-positive risk the named smoking woods below don't share.
       if (!courseGrounded) {
         const ingredientText = extracted.ingredients.map(i => i.name || '').join(' ').toLowerCase();
-        if (/\b(?:hickory|mesquite|applewood|cherrywood|pecan\s*wood|wood\s*chips?|wood\s*chunks?|smoking\s*wood)\b/.test(ingredientText)) {
+        if (SMOKING_WOOD_PATTERN.test(ingredientText)) {
           extracted.course = 'smoking';
           courseGrounded = true;
         }
@@ -2287,7 +2329,7 @@ async function main() {
       // cake, whiskey BBQ sauce) has 8+ ingredients, not 2-6.
       if (!courseGrounded && extracted.ingredients.length > 0 && extracted.ingredients.length <= 6) {
         const ingredientText = extracted.ingredients.map(i => i.name || '').join(' ').toLowerCase();
-        if (/\b(?:vodka|gin|rum|tequila|mezcal|whisk(?:e)?y|bourbon|scotch|brandy|cognac)\b/.test(ingredientText)) {
+        if (DRINKS_SPIRIT_PATTERN.test(ingredientText)) {
           extracted.course = 'drinks';
           courseGrounded = true;
         }
