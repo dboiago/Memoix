@@ -1,0 +1,174 @@
+{
+  "recipe": {
+    "name": "Crab & Lobster Boil with Corn",
+    "time": "45 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "184",
+      "carbohydrateContent": "29",
+      "fatContent": "3",
+      "proteinContent": "16"
+    },
+    "directions": [
+      "Clean, rinse and season crab clusters and lobster tails with 4 tbs green seasoning and 4 tbs all purpose or Cajun seasoning. Mix well to combine and set aside.",
+      "To shuck corn, start by peeling down the outer husks and removing the silk from the kernels. Next, snap off the base of the cob along with the remaining husks. Finally, inspect and clean the corn, ensuring all silk is removed, and rinse under cold water.",
+      "In a large pot, add 8 cups of water along with the seasonings. Raise the heat to high and bring to a rolling boil.",
+      "Gently add the corn to the pot and bring to a boil again. Cook for 15 minutes or until done.",
+      "Allow the corn to sit for a min of 1 hr. to absorb the flavors.",
+      "Remove the corn from the pot and add the crab and lobster tails. Boil for 10-15 minutes or until fully cooked. Taste and add more seasoning, coconut milk or butter, according to your liking.",
+      "Serve in a platter with the boiled corn."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Crab Clusters Cleaned",
+        "unit": "lb",
+        "notes": null,
+        "amount": "2",
+        "section": "Seafood",
+        "isOptional": false
+      },
+      {
+        "name": "Lobster Tails Cleaned",
+        "unit": "lb",
+        "notes": null,
+        "amount": "2",
+        "section": "Seafood",
+        "isOptional": false
+      },
+      {
+        "name": "Tbs Green Seasoning",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": "Seafood",
+        "isOptional": false
+      },
+      {
+        "name": "Tbs All Purpose Seasoning",
+        "unit": null,
+        "notes": "alt: Cajun or other seafood seasoning, adjust salt if seasoning contains salt",
+        "amount": "4",
+        "section": "Seafood",
+        "isOptional": false
+      },
+      {
+        "name": "Ears of Corn About 1 1/4 Lbs",
+        "unit": null,
+        "notes": "cleaned and rinsed",
+        "amount": "6",
+        "section": "Seafood",
+        "isOptional": false
+      },
+      {
+        "name": "Salt Himalayan",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "5",
+        "section": "Seasonings",
+        "isOptional": false
+      },
+      {
+        "name": "Tbs Green Seasoning",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": "Seasonings",
+        "isOptional": false
+      },
+      {
+        "name": "Stick Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Seasonings",
+        "isOptional": false
+      },
+      {
+        "name": "Scallions Chopped",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Seasonings",
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Seasonings",
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "can",
+        "notes": "alt: cream",
+        "amount": "1",
+        "section": "Seasonings",
+        "isOptional": false
+      },
+      {
+        "name": "Leaves Culantro",
+        "unit": null,
+        "notes": "alt: cilantro",
+        "amount": "6",
+        "section": "Note: If you do not have green seasoning, substitute with",
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "6",
+        "section": "Note: If you do not have green seasoning, substitute with",
+        "isOptional": false
+      },
+      {
+        "name": "Tbs Minced Garlic",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Note: If you do not have green seasoning, substitute with",
+        "isOptional": false
+      },
+      {
+        "name": "Thyme Sprigs",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": "Note: If you do not have green seasoning, substitute with",
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Note: If you do not have green seasoning, substitute with",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5cb6bf5f3e52f70e09df3bd77510987c6db4d165db92f1bcaf46522317d4adae",
+    "lineage_hash": "be66368140fc38e139e4545903e8a218a13b7c6dbb2d78b090787879082d4dce"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cookingwithria.com/2024/06/crab-lobster-boil/",
+    "fetchedAt": "2026-09-25T19:52:18.638Z"
+  },
+  "rawSource": "https://cookingwithria.com/2024/06/crab-lobster-boil/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

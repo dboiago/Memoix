@@ -1,0 +1,132 @@
+{
+  "recipe": {
+    "name": "Cherry Crumb Pie",
+    "time": "2 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "602",
+      "carbohydrateContent": "105",
+      "fatContent": "20",
+      "proteinContent": "6"
+    },
+    "directions": [
+      "Roll the pie dough to line a 9&quot; deep dish pie pan. Refrigerate the shell while the filling is prepared.",
+      "Toss 3 lbs&#32;sour cherries (pitted) with 12 oz&#32;granulated sugar and allow to macerate for 30 minutes. After 30 minutes drain the cherries, reserving the juice. Transfer the cherries to a large bowl and set aside.",
+      "Whisk a ½ cup of the cherry juice with 2 oz&#32;corn starch until smooth.",
+      "Place the remaining juice and ¼ teaspoon&#32;table salt in a small saucepan. Bring the juice to a boil. Reduce the heat to medium low. Whisk the cornstarch mixture into the boiling juice in a steady stream. Cook the mixture, stirring constantly, until it returns to a boil and thickens to a pudding-like texture.",
+      "Remove the thickened juice from the heat and immediately pour it over the pitted cherries. Toss to combine. Pour the cherries into the prepared pie crust. Use a scissors to trim the dough, leaving about 1/2&quot; of dough beyond the edge of the pan. Fold the dough over and pinch the crust to form a fluted edge."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Recipe Perfect Pie Crust",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sour Cherries",
+        "unit": "lb",
+        "notes": "pitted, see note",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "1 ½ cups",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn Starch",
+        "unit": "oz",
+        "notes": "⅓ cup",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "oz",
+        "notes": "1 ½ cups, see note",
+        "amount": "7½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almond Flour",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Real Almond Extract",
+        "unit": "tsp",
+        "notes": "adjust to taste",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "softened to room temp",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "78967682399aca305a220ef2233877ed46ed8729511e7e8fa0295287b46f9cc3",
+    "lineage_hash": "1b00b9565c617db8aa6f785e09d8571b21b05b8efb4f50feb399cb58b6a1d9d6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2019/06/27/sour-cherry-crumb-pie/",
+    "fetchedAt": "2026-08-02T08:31:58.374Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2019/06/27/sour-cherry-crumb-pie/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

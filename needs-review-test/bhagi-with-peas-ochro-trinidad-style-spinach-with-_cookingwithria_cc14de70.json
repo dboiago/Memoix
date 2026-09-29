@@ -1,0 +1,126 @@
+{
+  "recipe": {
+    "name": "Bhagi with Peas & Ochro",
+    "time": "1 hr",
+    "course": "sides",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "181",
+      "carbohydrateContent": "16",
+      "fatContent": "11",
+      "proteinContent": "7"
+    },
+    "directions": [
+      "Place green pigeon peas in a small saucepan, cover with water, and boil for 15 minutes. Drain and set aside.",
+      "Heat oil in a large pot. Add cumin seeds and toast for 1 minute until fragrant.",
+      "Add onion and hot pepper, cooking until softened. Stir in garlic and sauté for 1 minute.",
+      "Mix in pigeon peas and cook for 5 minutes.",
+      "Add spinach, ochro, coconut cream, and 1 cup water. Season with salt. Stir to combine.",
+      "Cover and steam-cook for 45–90 minutes, stirring every 10 minutes to prevent sticking. If it dries out before the time is up, add a little more water.",
+      "Dish is done when spinach is light and fluffy, peas are tender, and ochro has blended with the flavors. Taste and add more salt if required,"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion Chopped",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic 2 Tbsp If You Prefer Less",
+        "unit": "Tbsp",
+        "notes": "minced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Pepper to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spinach Thawed",
+        "unit": "lb",
+        "notes": "or substitute finely chopped dasheen bush/taro leaves, frozen",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Or Frozen Green Pigeon Peas Precooked for 15 Mins",
+        "unit": "lb",
+        "notes": "fresh, drained, use up to 12 oz",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ochro Okra",
+        "unit": "lb",
+        "notes": "sliced, use up to 14 oz",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Block Coconut Cream",
+        "unit": null,
+        "notes": "alt: 1 can coconut milk",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water Plus More If Needed",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6c7a9f007b2620835cf1044f6add78a321d81b038fab86d1ba246b9e03ee428b",
+    "lineage_hash": "fa52047305c38051533f964f85b1a13a337cb6ff6e50e59ac1bfbb66b1e5b338"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cookingwithria.com/2025/09/bhagi-recipe-peas-ochro/",
+    "fetchedAt": "2026-09-25T22:09:01.144Z"
+  },
+  "rawSource": "https://cookingwithria.com/2025/09/bhagi-recipe-peas-ochro/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

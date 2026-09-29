@@ -1,0 +1,235 @@
+{
+  "recipe": {
+    "name": "Pork Egg Foo Young",
+    "time": "1 hr 10 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "521",
+      "carbohydrateContent": "19",
+      "fatContent": "37",
+      "proteinContent": "29"
+    },
+    "directions": [
+      "In a medium pot or saucepan, heat the oil over medium heat. Whisk in the flour to make a roux, and cook for 15-20 seconds. Add the garlic and onion, and cook for another 30 seconds. Stir in the turmeric and paprika, and then whisk in the chicken stock.",
+      "Bring the mixture to a simmer, and add the oyster sauce, soy sauce, dark soy sauce, sesame oil, and white pepper.",
+      "Combine the cornstarch and water until combined, and whisk two-thirds of the mixture into the gravy. Cook for 30 seconds. Add more of the slurry if needed, until the gravy is thick enough to coat a spoon. Add salt to taste.",
+      "Keep the gravy warm on the stove over low heat while you prepare the egg foo young.",
+      "In a wok or deep pot, add your frying oil (it should be at a depth of a few inches). Heat the oil to 350°F. The oil temp will lower when you drop the egg foo young in, and the optimal frying temperature is 325°F. Use a thermometer to check and maintain the temperature. Too high, and the patties will burn. Too low, and they’ll be greasy or fall apart.",
+      "Add the cubed pork to a mixing bowl along with the onions, bean sprouts, eggs, sesame oil, and cornstarch. Do not add any additional salt or seasonings to this mixture. (Salt dissolves the egg proteins, and you risk your egg foo young patties falling apart while frying.)",
+      "Just before you’re ready to fry, use a large soup ladle or hoak (a Chinese ladle that’s often used together with a Chinese spatula) to fold the mixture together until just combined. The eggs should look like they are slightly beaten (though you do want to prevent any clumps of egg yolk and white), and only just mixed with the rest of the ingredients. Over-mixing the eggs will cause the whole mixture to become too watery and not form a patty during frying. It’s also very important to mix everything just before frying – do not let the batter sit too long!",
+      "Using your ladle, work quickly to slowly drop two to three separate scoops of the mixture into the oil, starting on the edge of the wok. Each scoop should be about 3/4 cup of the mixture.",
+      "The correct technique is to tilt your ladle close to the oil, starting from the edge where the oil meets the wok (so the egg has less chance of spreading out). Pour the batter slowly, starting from the edge of the wok and then pouring away from you. The ladle should barely touch the oil. Prolonged contact between the ladle and the oil will cause the egg to cook while it’s in the ladle and stick, and you won’t have a smooth drop for the next patty. Take a break to quickly clean and dry the ladle if you have to.",
+      "Let each of the patties fry for about 40 seconds. Use your wok spatula to gently flip some hot oil on top of each uncooked patty to help them set more quickly. When each patty is solid and turning golden brown, flip them (in the same order that you dropped them into the oil so they all have roughly the same cooking time).",
+      "After another minute, your egg foo young patties should be done. Scoop each patty onto a mesh strainer (first in, first out), giving it a few taps and a gentle squeeze to remove excess oil. Place each patty on a wire rack over a sheet pan to drain. Repeat until all of your patties are cooked.",
+      "Transfer the pork egg foo young patties from the cooling rack to a serving plate along with steamed rice (ideally, these are served on individual plates, rather than on a big family-style platter). Pour the gravy over the top, add a sprinkling of scallions, and serve with additional gravy on the side."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Neutral Oil",
+        "unit": "Tbsp",
+        "notes": "such as vegetable, canola, peanut, or avocado oil",
+        "amount": "2",
+        "section": "gravy",
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "a small clove, minced",
+        "amount": "1",
+        "section": "gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Shallot",
+        "unit": "tsp",
+        "notes": "alt: red onion, minced",
+        "amount": "1",
+        "section": "gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Low Sodium Chicken Stock",
+        "unit": "C",
+        "notes": null,
+        "amount": "3",
+        "section": "gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "gravy",
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Salt (to Taste)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Neutral Oil",
+        "unit": "C",
+        "notes": "such as vegetable, canola, or peanut oil, for frying",
+        "amount": "4-6",
+        "section": "egg foo young",
+        "isOptional": false
+      },
+      {
+        "name": "Cooked Char Siu",
+        "unit": "oz",
+        "notes": "Chinese BBQ pork; diced",
+        "amount": "8",
+        "section": "egg foo young",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "diced; about 1 ½ cups, 6 ounces, or 165g",
+        "amount": "1",
+        "section": "egg foo young",
+        "isOptional": false
+      },
+      {
+        "name": "Mung Bean Sprouts",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "egg foo young",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "6",
+        "section": "egg foo young",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "egg foo young",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "egg foo young",
+        "isOptional": false
+      },
+      {
+        "name": "Scallion",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": "egg foo young",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "804330d67ef8d4fa2db94b921677f1fc0091a4b68124a6217f9f28133f79d870",
+    "lineage_hash": "ae8f748e9b9262ed43f35bf5fee8ae6e163681a60cd6ae7f4cc14db978d8da6a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/pork-egg-foo-young/",
+    "fetchedAt": "2026-08-02T16:38:28.642Z"
+  },
+  "rawSource": "https://thewoksoflife.com/pork-egg-foo-young/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

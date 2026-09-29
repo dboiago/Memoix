@@ -1,0 +1,135 @@
+{
+  "recipe": {
+    "name": "Celery Ravioli in Monkfish Stew",
+    "time": "1 hr 20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix the flour with 3 eggs to obtain a smooth dough. Knead it on a floured surface for about 10 minutes, then cover it with plastic wrap and let it rest in the fridge for 30 minutes.",
+      "Boil 2 celery stalks in lightly salted water until they are still a bit crunchy, then drain and puree them. Pass the cream through a sieve lined with a paper towel and let it sit and drain to eliminate any excess moisture. Mash the boiled potato, add the celery cream, the rest of the celery diced into tiny cubes, lemon zest to taste and a pinch of pepper. Refrigerate this filling for 20 minutes.",
+      "Cut the monkfish into 24-30 bite-sized pieces. Dice the carrots and 1/2 a pepper into small cubes and cook them in a pan with a little oil and a tablespoon of paprika for 10 minutes. Then pour in two cups of water and bring it to a boil. Add the monkfish pieces and cook for 3 minutes. Roll out the dough into thin sheets. Brush them with a beaten egg with a pinch of salt.",
+      "Place the filling on the pasta in 36 evenly spaced small dollops. Cover with other sheets of pasta and cut the ravioli around the filling with a toothed wheel; press the edges to seal the ravioli.",
+      "Drop the ravioli into salted boiling water and cook them for 2-3 minutes, until they float to the top. Place the monkfish stew in bowls, add the ravioli and serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Monkfish",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "C",
+        "notes": "plus extra",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nulloz. Celery",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potato",
+        "unit": "oz",
+        "notes": "boiled",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Purple Carrots",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Null Lemon",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Null Yellow Bell Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Null Milk",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Null Smoked Paprika",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Null Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Null Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f8dcaa7413a7ecc85b630b3c11e6c3606a4d3f88b460187ca6c9ac4d52cc1189",
+    "lineage_hash": "f858b6269fefaea7c60a684aea3cab0a8bd3e3a1053516e83825b25c8a5d9827"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/pasta/celery-ravioli-in-monkfish-stew",
+    "fetchedAt": "2026-08-02T13:33:31.142Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/pasta/celery-ravioli-in-monkfish-stew",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

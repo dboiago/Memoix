@@ -1,0 +1,64 @@
+{
+  "recipe": {
+    "name": "Seedlip Spiced Pumpkin Soda",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": null,
+    "glass": "Highball",
+    "garnish": [
+      "Lemon Twist"
+    ],
+    "subcategory": "Sparkling",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Fill highball glass with ice",
+      "Pour Seedlip Spice 94 and Shrub over the ice",
+      "Top with soda water",
+      "Gently stir and garnish"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Seedlip Spice 94",
+        "unit": "oz",
+        "notes": "60 ml",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger and Pumpkin Shrub",
+        "unit": "oz",
+        "notes": "30 ml",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soda Water",
+        "unit": null,
+        "notes": null,
+        "amount": "Top",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1dfdc1569ce9b0fb0a8d74a3f8cd979063c5d97449d404f4f063f1f17911884a",
+    "lineage_hash": "a049aaf15b41c4296ae9b576c877001dd6a3432718a3b58efcfaafd0e0900ac9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.seedlipdrinks.com/en-us/recipes/spiced-pumpkin-soda",
+    "fetchedAt": "2026-08-01T16:06:05.281Z"
+  },
+  "rawSource": "https://www.seedlipdrinks.com/en-us/recipes/spiced-pumpkin-soda",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

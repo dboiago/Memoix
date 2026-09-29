@@ -1,0 +1,312 @@
+{
+  "recipe": {
+    "name": "Chocolate Brandy",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": null,
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix together the T55 flour and cocoa powder.",
+      "Combine butter with the confectioners’ and raw sugar and the fleur de sel. Add the almond flour and half the cocoa powder mixture. Add the eggs, then the remaining cocoa powder mixture. Chill, then roll out to 0.07ʺ (2 mm). Cut out 2.7ʺ (7 cm) rounds and bake on a perforated silicone mat.",
+      "Heat the cream with the vanilla beans and infuse for 10 minutes.",
+      "Strain the infusion and return to the saucepan. Whisk together the yolks and sugar and temper into the cream. Cook to anglaise stage (185˚F/85˚C). Add the gelatin mass and pour over the mascarpone. Burr mix with the brandy and refrigerate overnight.",
+      "Right before using, whip the Chantilly. Use 35 g of the cream for each 2.3ʺ (6 cm) half-sphere.",
+      "Melt the chocolate, cocoa butter and grapeseed oil together. Add the walnut pieces. Use glaze at 93-95˚F (34-35˚C).",
+      "Combine the softened butter, sugar, invert sugar and fleur de sel.",
+      "With the chocolate at 113-122˚F (45-50˚C), add it to the butter mixture, mixing until well blended. Mix in the sifted flour, then the cream and the whole eggs. Mix in the walnuts.",
+      "Portion batter into 1.5ʺ (4 cm) demi-sphere molds and bake at 320˚F (160˚C) with fan until done.",
+      "Heat the milk, glucose and gelatin mass to 158˚F (70˚C). Pour over the chocolate and emulsify to make a ganache.",
+      "Add the cream and Burr-mix. Chill.",
+      "Pipe some walnut paste into 1.5ʺ (4 cm) round silicone molds and freeze.",
+      "Pipe the Brandy Chantilly into 2.4ʺ (6 cm) demi-sphere silicone molds. Insert the brownie, pushing it all the way to the bottom, then add the walnut paste insert. Smooth the top with a little more of the Chantilly, then freeze.",
+      "Unmold and glaze with the Chocolate Crunchy Glaze. Place a Chocolate Pâte Sucrée round on top. Pipe the Chocolate Cremeux on top and then create a cavity using a warm Parisian melon baller. Fill with some walnut paste. Garnish with a few walnut pieces and a few thin chocolate shards."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "T55 Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": "Chocolate Pâte Sucrée",
+        "isOptional": false
+      },
+      {
+        "name": "Cacao Barry Plein Arôme Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "45",
+        "section": "Chocolate Pâte Sucrée",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter 82%",
+        "unit": "g",
+        "notes": null,
+        "amount": "227",
+        "section": "Chocolate Pâte Sucrée",
+        "isOptional": false
+      },
+      {
+        "name": "Confectioners’ Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "56",
+        "section": "Chocolate Pâte Sucrée",
+        "isOptional": false
+      },
+      {
+        "name": "Raw Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "56",
+        "section": "Chocolate Pâte Sucrée",
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "4",
+        "section": "Chocolate Pâte Sucrée",
+        "isOptional": false
+      },
+      {
+        "name": "Almond Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "113",
+        "section": "Chocolate Pâte Sucrée",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Eggs",
+        "unit": "g",
+        "notes": null,
+        "amount": "95",
+        "section": "Chocolate Pâte Sucrée",
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream 35.1%",
+        "unit": "g",
+        "notes": null,
+        "amount": "207",
+        "section": "Brandy Chantilly",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Beans",
+        "unit": null,
+        "notes": "split and scraped",
+        "amount": "1.5",
+        "section": "Brandy Chantilly",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": "g",
+        "notes": null,
+        "amount": "39",
+        "section": "Brandy Chantilly",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "31",
+        "section": "Brandy Chantilly",
+        "isOptional": false
+      },
+      {
+        "name": "Gelatin Mass",
+        "unit": "g",
+        "notes": "1:6",
+        "amount": "19",
+        "section": "Brandy Chantilly",
+        "isOptional": false
+      },
+      {
+        "name": "Mascarpone Cheese",
+        "unit": "g",
+        "notes": null,
+        "amount": "192",
+        "section": "Brandy Chantilly",
+        "isOptional": false
+      },
+      {
+        "name": "Saint Rémy Brandy 60%",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": "Brandy Chantilly",
+        "isOptional": false
+      },
+      {
+        "name": "Cacao Barry Cuba 70% Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "401",
+        "section": "Dark Chocolate Crunchy Glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "8",
+        "section": "Dark Chocolate Crunchy Glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Grapeseed Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": "Dark Chocolate Crunchy Glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Walnut Pieces",
+        "unit": "g",
+        "notes": null,
+        "amount": "52",
+        "section": "Dark Chocolate Crunchy Glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter 82%",
+        "unit": "g",
+        "notes": "softened",
+        "amount": "136",
+        "section": "Walnut Brownie",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": "Walnut Brownie",
+        "isOptional": false
+      },
+      {
+        "name": "Invert Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": "Walnut Brownie",
+        "isOptional": false
+      },
+      {
+        "name": "Fleur De Sel",
+        "unit": "g",
+        "notes": null,
+        "amount": "1.5",
+        "section": "Walnut Brownie",
+        "isOptional": false
+      },
+      {
+        "name": "Cacao Barry Cuba 70% Chocolate",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "155",
+        "section": "Walnut Brownie",
+        "isOptional": false
+      },
+      {
+        "name": "T55 Flour",
+        "unit": "g",
+        "notes": "sifted",
+        "amount": "69",
+        "section": "Walnut Brownie",
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream 35.1%",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": "Walnut Brownie",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Eggs",
+        "unit": "g",
+        "notes": "room temperature",
+        "amount": "100",
+        "section": "Walnut Brownie",
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Walnuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "110",
+        "section": "Walnut Brownie",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "154",
+        "section": "Chocolate Cremeux",
+        "isOptional": false
+      },
+      {
+        "name": "Glucose",
+        "unit": "g",
+        "notes": null,
+        "amount": "16",
+        "section": "Chocolate Cremeux",
+        "isOptional": false
+      },
+      {
+        "name": "Gelatin Mass",
+        "unit": "g",
+        "notes": null,
+        "amount": "39",
+        "section": "Chocolate Cremeux",
+        "isOptional": false
+      },
+      {
+        "name": "Cacao Barry Cuba 70%",
+        "unit": "g",
+        "notes": null,
+        "amount": "283",
+        "section": "Chocolate Cremeux",
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream 35.1%",
+        "unit": "g",
+        "notes": null,
+        "amount": "308",
+        "section": "Chocolate Cremeux",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5e8e6ca65a8495c839031922ea56031571e74e4cb6330a674268025b6224190b",
+    "lineage_hash": "706f59c2d4bbcd5f71be11bd935ecbcde5f4f50c91f1ec2713ea34a0cff7235e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://pastryartsmag.com/recipes/chocolate-brandy-by-manuel-bouillet/",
+    "fetchedAt": "2026-08-02T01:33:38.308Z"
+  },
+  "rawSource": "https://pastryartsmag.com/recipes/chocolate-brandy-by-manuel-bouillet/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,179 @@
+{
+  "recipe": {
+    "name": "Vietnamese Steamed Pork Buns",
+    "time": "1 hr 20 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "VN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a medium bowl, hydrate dried wood ear mushroom with 2 cups hot water. Get started on the dough while waiting.",
+      "TL Bon Con Voi Corp brand banh bao flour mix is my go-to banh bao flour mix that never fails. If you are using other brands, follow their package instructions instead. Add flour into the mixing bowl of a stand mixer. Set aside 1 tablespoon of flour for dusting. Mix milk and sugar in a small bowl then add the mixture to the flour. Use a hook attachment and beat on the lowest setting until the dough comes mostly together. Add oil and continue beating until the dough pulls cleanly away from the sides of the bowl. Cover and set aside for 30 minutes. See the notes section below if the dough becomes too sticky.",
+      "Back to the wood ear mushroom. They should be soft by now. Drain, rinse well, squeeze out excess water, then mince finely. In a large bowl, mix together ground pork, sugar, black pepper, oyster sauce, and sesame oil. You may test the flavor of the marinated meat by quickly cooking a small piece in the microwave and adjust to taste if needed. Mix in wood ear mushroom, green onions, yellow onion, frozen peas/carrots, and Chinese sausage until combined.",
+      "Divide the ground pork mixture into 12 equal balls. Make an indentation in the middle of each filling ball. Insert a hard-boiled quail egg in the middle. Using the palm of your hands, work the pork filling around the egg to encase it.",
+      "Using a large steamer, fill the basin halfway with water. Add vinegar and bring it to a boil. The acidity of the vinegar will help to keep the baos white.",
+      "Steam the ground pork balls directly on the trays for 5 minutes. This will remove most of the moisture to prevent a soggy bao. Remove the pork filling balls from the steamer and set them aside.",
+      "Dough should be ready for wrapping by now. Divide the dough into 12 equal pieces. Dust your work surface and/or hands with the reserved flour to prevent sticking, particularly the bottom of the wrapper. If you don&#8217;t have enough reserved flour, use a bit of self-rising flour (recommended) or all-purpose flour. Roll out the dough into a flat circle, about 5&#8243; in diameter, using a small rolling pin. Place the pork filling ball in the middle and pull up the dough to wrap the filling ball. Make overlapping folds (pleats) at the top and pinch to seal. Place the assembled baos onto cupcake liners. Set them aside, covered.",
+      "Transfer assembled baos onto the steamer trays, leaving 1½&#8221; room in between for expansion. Steam for 10-12 minutes or until the top of the baos burst open. If you are doing two batches, make sure to wipe down the inside of the lid after the first batch to prevent water droplets from dripping onto the baos.",
+      "Enjoy them warm from the steamer. For leftovers, allow them to cool completely then individually wrap with plastic wrap and store them in the fridge for up to 3 days. You can also store them in the freezer for up to 8 months. When ready to serve, pop the frozen baos into the microwave or steamer to reheat."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Grams Dried Woodear Mushroom",
+        "unit": null,
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Pork",
+        "unit": "oz",
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Cane Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Onion",
+        "unit": "C",
+        "notes": "finely, diced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Peas and Carrots",
+        "unit": "C",
+        "notes": "frozen",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Sausage",
+        "unit": "oz",
+        "notes": "finely diced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hard-boiled Quail Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bag Bon Con Voi Banh Bao Premix",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Cane Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Vinegar",
+        "unit": "Tbsp",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cupcake Liners",
+        "unit": null,
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1f07b27571962e220cb519e15aca459086423ab09af5b86bce0f62f222b93e97",
+    "lineage_hash": "ef893a22d868603651b9db1864f2e14d4cf3665826e6ec8be15b1c3e9877bc94"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://vickypham.com/blog/vietnamese-steamed-pork-buns/",
+    "fetchedAt": "2026-08-02T04:32:26.847Z"
+  },
+  "rawSource": "https://vickypham.com/blog/vietnamese-steamed-pork-buns/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

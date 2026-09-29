@@ -1,0 +1,63 @@
+{
+  "recipe": {
+    "name": "Seedlip Grove Spritz",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": null,
+    "glass": "Wine",
+    "garnish": [
+      "Orange Slice"
+    ],
+    "subcategory": "Sparkling",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pour 2 oz. of Seedlip Grove 42 over ice in a wine glass",
+      "Top with your favourite premium mixer",
+      "Garnish with style"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Seedlip Grove 42",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tonic Water",
+        "unit": null,
+        "notes": "alt: club soda",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ice",
+        "unit": null,
+        "notes": "cubed",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "dccd717851cfb5311217b94ff48c7eb18b2fc20cda9cc3a49141662c96e51278",
+    "lineage_hash": "544988e6402649f96391551b17bf8e6328a4e3490494cf310aef0d06766b135f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.seedlipdrinks.com/en-aunz/recipes/seedlip-grove-spritz",
+    "fetchedAt": "2026-08-01T20:20:30.851Z"
+  },
+  "rawSource": "https://www.seedlipdrinks.com/en-aunz/recipes/seedlip-grove-spritz",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

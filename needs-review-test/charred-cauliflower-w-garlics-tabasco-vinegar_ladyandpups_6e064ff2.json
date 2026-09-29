@@ -1,0 +1,133 @@
+{
+  "recipe": {
+    "name": "Charred Cauliflower With Garlics, Tabasco Vinegar",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": null,
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Lightly smash the garlics to peel the skin, then brine in fish sauce for 20 min. Meanwhile, clean and cut the cauliflowers into small florets, trimming the tough fibres/skins off of the stems, then scatter evenly on a sheet-pan. Preheat the broil on high.",
+      "Remove the garlics from the fish sauce (reserve the fish sauce), then transfer into a small pot with dried chili and olive oil. Cook over low heat for 7~9 min, until the garlics are golden browned and soft. Remove the garlics and chili, set aside. Pour the garlic-oil over the caulifowers, along with reserved fish sauce, black pepper and white pepper, then toss to evenly coat every florets. Place the baking-sheet about 2\" under the broiler, and char until the first sides are deeply caramelised. Turn the cauliflowers over, then broil until the other sides are charred as well, and that the cauliflowers are soft. Re-season with sea salt if needed.",
+      "Transfer the cauliflowers, along with all the oil and juices into a large skillet. Add the reserved fried garlic, chili, white wine vinegar, tabasco sauce and chopped parsley. Cook over medium-high heat, tossing to combine, until everything is heated through. Sprinkle with chili flakes and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili",
+        "unit": "small",
+        "notes": "dried",
+        "amount": "4-6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "C",
+        "notes": "68 grams",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Head Cauliflower",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": "freshly ground",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": "ground",
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tabasco Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": "to season",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili Flakes",
+        "unit": null,
+        "notes": "to season",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "32c54ac9f0685366a25104c432080e38a391deffc406f9c5aaad15a615655962",
+    "lineage_hash": "5791b1166841aa672cc0aca0bed3146cc92f2bd3712a4c6eee9f5276a14062ec"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ladyandpups.com/2016/02/17/charred-cauliflower-w-garlics-tabasco-vinegar/",
+    "fetchedAt": "2026-08-02T05:45:23.644Z"
+  },
+  "rawSource": "https://ladyandpups.com/2016/02/17/charred-cauliflower-w-garlics-tabasco-vinegar/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}
