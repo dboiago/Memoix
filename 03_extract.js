@@ -153,7 +153,7 @@ const LD_COURSE_MAP = {
   'breakfast': 'brunch', 'brunch': 'brunch',
   'appetizer': 'apps', 'appetizers': 'apps', 'appetiser': 'apps', 'appetisers': 'apps',
   'starter': 'apps', 'starters': 'apps', 'snack': 'apps', 'snacks': 'apps',
-  'main': 'mains', 'mains': 'mains', 'main course': 'mains', 'main dish': 'mains', 'dinner': 'mains', 'entree': 'mains', 'entrees': 'mains',
+  'main': 'mains', 'mains': 'mains', 'main course': 'mains', 'main dish': 'mains', 'dinner': 'mains', 'lunch': 'mains', 'entree': 'mains', 'entrees': 'mains',
   'side': 'sides', 'sides': 'sides', 'side dish': 'sides',
   'salad': 'salads', 'salads': 'salads',
   'soup': 'soups', 'soups': 'soups',
@@ -370,7 +370,7 @@ const NAME_COURSE_OVERRIDES = [
   // ldCategory was "Noodles and Pasta", not "Soup" -- the same one-bowl-
   // meal ambiguity applies to ramen/pho/laksa, also excluded).
   { pattern: /\b(?:chowder|bisque|consomm[ée]|gazpacho|minestrone|tom\s*yum)\b/i, course: 'soups' },
-  { pattern: /\b(?:cheesecake|cupcakes?|macarons?|tiramisu|(?:creme|cr[eè]me)\s*br[uû]l[ée]e|pavlova|baklava|gelato|meringues?|gateau|petit\s*fours?|entremets?|mille-?feuille|[ée]clairs?|profiteroles?|dacquoise|genoise|brownies?|trifle|torte|bonbons?|ganache|sponge\s*cake|layer\s*cake|opera\s*cake|ice\s*cream|sorbet)\b/i, course: 'desserts' },
+  { pattern: /\b(?:cheesecake|cupcakes?|macarons?|tiramisu|(?:creme|cr[eè]me)\s*br[uû]l[ée]e|pavlova|baklava|gelato|meringues?|gateau|petit\s*fours?|entremets?|mille-?feuille|[ée]clairs?|profiteroles?|dacquoise|genoise|brownies?|trifle|torte|bonbons?|ganache|sponge\s*cake|layer\s*cake|opera\s*cake|ice\s*cream|sorbet|yule\s*logs?|b[uû]che\s*de\s*no[ëe]l)\b/i, course: 'desserts' },
   // "bread"/"buns"/"rolls"/"dough"/"loaf"/"loaves" excluded: bread pudding,
   // cinnamon buns, spring/egg rolls, cookie/pasta dough, and meatloaf are
   // all real dishes containing that word that are not bread.
