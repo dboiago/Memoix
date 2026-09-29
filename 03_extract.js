@@ -377,24 +377,33 @@ function resolveCuisineFromNameLiteral(text) {
 // salmon). "sponge cake"/"layer cake"/"opera came" are safe as full phrases
 // even though bare "cake" isn't.
 const NAME_COURSE_OVERRIDES = [
+  // This array has no specificity ordering -- it's plain last-match-wins,
+  // so when two patterns can legitimately co-occur in one real title, ARRAY
+  // ORDER decides the outcome. Confirmed real case: "Campfire Curry Ramen"
+  // contains both "curry" (mains, below) and "ramen" (soup, below) -- stew/
+  // curry is placed first specifically so the soup patterns run later and
+  // win that collision, matching this exact recipe's own directions
+  // ("bring to a boil... simmer") over the site's imprecise "Noodles and
+  // Pasta" tag. Biryani/paella/jambalaya added alongside curry/stew: always
+  // a standalone rice main, no known side/dessert/soup use anywhere.
+  { pattern: /\b(?:stews?|curr(?:y|ies)|biryani|paella|jambalaya)\b/i, course: 'mains' },
   { pattern: /\bsoups?\b/i, course: 'soup' },
   // ramen/pho moved OUT of the old exclusion below (2026-09-29): both are
   // unambiguously broth-based in every real preparation (confirmed on
-  // campfire-curry-ramen's own directions -- "bring to a boil... simmer" --
-  // despite the site's imprecise "Noodles and Pasta" tag; pho is a real,
-  // common, single-purpose dish name with no non-soup use). goulash/chili/
-  // laksa stay excluded: same one-bowl-meal ambiguity, unconfirmed either way.
+  // campfire-curry-ramen's own directions above); pho is a real, common,
+  // single-purpose dish name with no non-soup use. goulash/chili/laksa stay
+  // excluded: same one-bowl-meal ambiguity as stew/curry, unconfirmed
+  // either way -- "chili" specifically also confirmed unsafe as a bare
+  // word regardless (real corpus collision: "3-Chili Thai Basil Fried
+  // Rice" uses "chili" as a heat-level modifier, not the Tex-Mex stew dish).
   { pattern: /\b(?:chowder|bisque|consomm[ée]|gazpacho|minestrone|tom\s*yum|ramen|pho|ph[ơở])\b/i, course: 'soup' },
-  // Stew/curry are reliably mains regardless of what starch/vessel they're
-  // served over -- an interchangeable side, not the dish itself. Confirmed
-  // real gaps: chicken-curry (bong eats) and celery-ravioli-in-monkfish-stew
-  // had no other course signal despite being unambiguously mains-shaped.
-  { pattern: /\b(?:stews?|curr(?:y|ies))\b/i, course: 'mains' },
-  { pattern: /\b(?:cheesecake|cupcakes?|macarons?|tiramisu|(?:creme|cr[eè]me)\s*br[uû]l[ée]e|pavlova|baklava|gelato|meringues?|gateau|petit\s*fours?|entremets?|mille-?feuille|[ée]clairs?|profiteroles?|dacquoise|genoise|brownies?|trifle|torte|bonbons?|ganache|sponge\s*cake|layer\s*cake|opera\s*cake|ice\s*cream|sorbet|yule\s*logs?|b[uû]che\s*de\s*no[ëe]l)\b/i, course: 'desserts' },
+  // cookies/biscotti/shortbread/fudge added: no savory counterpart exists
+  // for any of the four, unlike cake/pie/tart/etc. above.
+  { pattern: /\b(?:cheesecake|cupcakes?|macarons?|tiramisu|(?:creme|cr[eè]me)\s*br[uû]l[ée]e|pavlova|baklava|gelato|meringues?|gateau|petit\s*fours?|entremets?|mille-?feuille|[ée]clairs?|profiteroles?|dacquoise|genoise|brownies?|trifle|torte|bonbons?|ganache|sponge\s*cake|layer\s*cake|opera\s*cake|ice\s*cream|sorbet|yule\s*logs?|b[uû]che\s*de\s*no[ëe]l|cookies?|biscotti|shortbread|fudge)\b/i, course: 'desserts' },
   // "bread"/"buns"/"rolls"/"dough"/"loaf"/"loaves" excluded: bread pudding,
   // cinnamon buns, spring/egg rolls, cookie/pasta dough, and meatloaf are
   // all real dishes containing that word that are not bread.
-  { pattern: /\b(?:focaccia|ciabatta|baguettes?|sourdough|naan|flatbreads?|bagels?|pretzels?|challah|croissants?|brioche)\b/i, course: 'breads' },
+  { pattern: /\b(?:focaccia|ciabatta|baguettes?|sourdough|naan|flatbreads?|bagels?|pretzels?|challah|croissants?|brioche|pumpernickel)\b/i, course: 'breads' },
   { pattern: /\bsalads?\b/i, course: 'salad' },
   // "wedges"/"rice dish"/"risotto" excluded: risotto especially is
   // routinely a main (vegetarian/seafood mains), not reliably a side.
@@ -409,6 +418,12 @@ const NAME_COURSE_OVERRIDES = [
   // "dumpling(s)"/"wonton"/"croquette(s)" excluded: routinely a full main
   // (potstickers, wonton soup, croquettes as a side), not reliably an app.
   { pattern: /\b(?:appetizers?|starters?|tapas|antipasto|bruschetta|crostini|canap[ée]s?|spring\s*rolls?|egg\s*rolls?|arancini|tartare|carpaccio|samosas?|empanadas?|ceviche)\b/i, course: 'apps' },
+  // No pre-existing drinks name override at all until now -- these three
+  // are always the cocktail/drink itself, never a savory or dessert use,
+  // and confirmed real corpus hits (Cucumber and Basil Margarita Twist,
+  // Seedlip Garden Mojito, Watermelon Sangria) with no collision risk
+  // against any other pattern in this array.
+  { pattern: /\b(?:margaritas?|mojitos?|sangrias?)\b/i, course: 'drinks' },
   { pattern: /\b(?:pickles?|pickled|ferment(?:ed)?|kimchi|sauerkraut|preserves?|canning|jams?|jell(?:y|ies)|marmalade)\b/i, course: 'pickles' },
   { pattern: /\b(?:rubs?|seasonings?|spice\s*mix|spice\s*blend)\b/i, course: 'rubs' },
   // "sous vide" excluded: mainstream technique now used on ordinary mains
@@ -2204,18 +2219,28 @@ async function main() {
         courseGrounded = true;
       }
 
-      // Deterministic name-literal override, same mechanism and trust tier
-      // as DIETARY_ADAPTATION_PATTERN below: a recipe's own name saying
-      // exactly what it is beats model inference or even the ldCourse
-      // signal above. NAME_COURSE_OVERRIDES is defined at module scope
-      // (near resolveCuisineFromNameLiteral) -- intentionally unconditional,
-      // so a genuinely ambiguous case like "soup dumplings" (conventionally
-      // apps/dim sum, not soup) will also be forced to "soup", accepted
-      // per the same reasoning that made this override worth adding.
-      for (const { pattern, course } of NAME_COURSE_OVERRIDES) {
-        if (pattern.test(extracted.name)) {
-          extracted.course = course;
-          courseGrounded = true;
+      // Deterministic name-literal override -- only fills a gap, does NOT
+      // outrank a real page-stated ldCourse (changed 2026-09-29, was
+      // previously unconditional). Confirmed real bug that direction
+      // caused: ottolenghi's "Yuzu dressed slaw..." has ldCategory
+      // "Salads" (an exact, high-confidence self-declared match -> salad),
+      // but its own name contains "slaw", which the (unrelated) sides
+      // override pattern also matches -- running unconditionally, that
+      // weaker generic keyword silently overwrote the page's own explicit
+      // "Salads" tag with 'sides'. As the override list has grown this
+      // session (stew/curry/biryani/desserts/drinks words), the odds of a
+      // generic trigger word colliding with a real, correctly-resolved
+      // ldCourse only goes up, not down -- gating this brings it in line
+      // with the same trust tier the ingredient-content checks below
+      // already use (ldCourse beats everything, name/ingredients only fill
+      // a genuine gap). NAME_COURSE_OVERRIDES is defined at module scope
+      // (near resolveCuisineFromNameLiteral).
+      if (!courseGrounded) {
+        for (const { pattern, course } of NAME_COURSE_OVERRIDES) {
+          if (pattern.test(extracted.name)) {
+            extracted.course = course;
+            courseGrounded = true;
+          }
         }
       }
 
