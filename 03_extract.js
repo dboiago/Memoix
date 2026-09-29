@@ -101,8 +101,14 @@ const INGREDIENT_LINE_TIMEOUT_MS = 300_000;
 // 'Smoking' as a course value -- its prior absence here was a pipeline-side
 // gap, not an intentional exclusion the way Pizza/Sandwich are.
 const VALID_COURSES = [
-  'apps', 'soups', 'mains', 'sides', 'salads', 'desserts', 'brunch',
-  'drinks', 'breads', 'sauces', 'rubs', 'pickles', "veg'n", 'modernist', 'smoking',
+  // 'soup'/'salad'/'vegn' match course.dart's real Course.defaults slugs
+  // exactly (confirmed 2026-09-29 against the app's actual model) -- there
+  // is no 'soups'/'salads'/"veg'n" slug at all, so those plural/apostrophe
+  // forms were silently unrecognized by any real slug-equality lookup
+  // despite happening to still display correctly through the app's own
+  // capitalize-first-letter fallback (displayNameFromSlug).
+  'apps', 'soup', 'mains', 'sides', 'salad', 'desserts', 'brunch',
+  'drinks', 'breads', 'sauces', 'rubs', 'pickles', 'vegn', 'modernist', 'smoking',
 ];
 
 // Base-spirit categories for drink recipes, confirmed against the app's
@@ -152,17 +158,24 @@ const LD_COURSE_MAP = {
   'dessert': 'desserts', 'desserts': 'desserts', 'sweets': 'desserts', 'sweet': 'desserts',
   'breakfast': 'brunch', 'brunch': 'brunch',
   'appetizer': 'apps', 'appetizers': 'apps', 'appetiser': 'apps', 'appetisers': 'apps',
-  'starter': 'apps', 'starters': 'apps', 'snack': 'apps', 'snacks': 'apps',
+  'starter': 'apps', 'starters': 'apps',
+  // Deliberately no 'snack'/'snacks' entry: confirmed real cases where it's
+  // the sole course-ish token span both directions (anpan sweet bean buns,
+  // Japanese mochi, fried banana fritters are all sweet, not savory apps;
+  // siu mai is savory) with no majority either way -- when 'snack' co-occurs
+  // with a real course word ("Dessert, Snack", "Appetizer, ... Snack") that
+  // word already wins via the priority-token pass regardless of this being
+  // absent, so this only removes the coin-flip guess on the sole-token cases.
   'main': 'mains', 'mains': 'mains', 'main course': 'mains', 'main dish': 'mains', 'dinner': 'mains', 'lunch': 'mains', 'entree': 'mains', 'entrees': 'mains',
   'side': 'sides', 'sides': 'sides', 'side dish': 'sides',
-  'salad': 'salads', 'salads': 'salads',
-  'soup': 'soups', 'soups': 'soups',
+  'salad': 'salad', 'salads': 'salad',
+  'soup': 'soup', 'soups': 'soup',
   'drink': 'drinks', 'drinks': 'drinks', 'beverage': 'drinks', 'cocktail': 'drinks', 'cocktails': 'drinks',
   'bread': 'breads', 'breads': 'breads',
   'sauce': 'sauces', 'sauces': 'sauces', 'condiment': 'sauces', 'condiments': 'sauces', 'dressing': 'sauces',
   'rub': 'rubs', 'rubs': 'rubs', 'seasoning': 'rubs',
   'pickle': 'pickles', 'pickles': 'pickles', 'preserves': 'pickles', 'ferment': 'pickles',
-  'vegan': "veg'n", 'vegetarian': "veg'n", "veg'n": "veg'n", 'plant-based': "veg'n",
+  'vegan': 'vegn', 'vegetarian': 'vegn', "veg'n": 'vegn', 'plant-based': 'vegn',
 };
 
 // "Smallest wins": 'mains' is the generic catch-all a dish defaults to when
@@ -364,18 +377,25 @@ function resolveCuisineFromNameLiteral(text) {
 // salmon). "sponge cake"/"layer cake"/"opera came" are safe as full phrases
 // even though bare "cake" isn't.
 const NAME_COURSE_OVERRIDES = [
-  { pattern: /\bsoups?\b/i, course: 'soups' },
-  // stew/goulash/chili excluded: conventionally classified as mains, not
-  // soups, on real recipe sites (confirmed: campfire-curry-ramen's own
-  // ldCategory was "Noodles and Pasta", not "Soup" -- the same one-bowl-
-  // meal ambiguity applies to ramen/pho/laksa, also excluded).
-  { pattern: /\b(?:chowder|bisque|consomm[ée]|gazpacho|minestrone|tom\s*yum)\b/i, course: 'soups' },
+  { pattern: /\bsoups?\b/i, course: 'soup' },
+  // ramen/pho moved OUT of the old exclusion below (2026-09-29): both are
+  // unambiguously broth-based in every real preparation (confirmed on
+  // campfire-curry-ramen's own directions -- "bring to a boil... simmer" --
+  // despite the site's imprecise "Noodles and Pasta" tag; pho is a real,
+  // common, single-purpose dish name with no non-soup use). goulash/chili/
+  // laksa stay excluded: same one-bowl-meal ambiguity, unconfirmed either way.
+  { pattern: /\b(?:chowder|bisque|consomm[ée]|gazpacho|minestrone|tom\s*yum|ramen|pho|ph[ơở])\b/i, course: 'soup' },
+  // Stew/curry are reliably mains regardless of what starch/vessel they're
+  // served over -- an interchangeable side, not the dish itself. Confirmed
+  // real gaps: chicken-curry (bong eats) and celery-ravioli-in-monkfish-stew
+  // had no other course signal despite being unambiguously mains-shaped.
+  { pattern: /\b(?:stews?|curr(?:y|ies))\b/i, course: 'mains' },
   { pattern: /\b(?:cheesecake|cupcakes?|macarons?|tiramisu|(?:creme|cr[eè]me)\s*br[uû]l[ée]e|pavlova|baklava|gelato|meringues?|gateau|petit\s*fours?|entremets?|mille-?feuille|[ée]clairs?|profiteroles?|dacquoise|genoise|brownies?|trifle|torte|bonbons?|ganache|sponge\s*cake|layer\s*cake|opera\s*cake|ice\s*cream|sorbet|yule\s*logs?|b[uû]che\s*de\s*no[ëe]l)\b/i, course: 'desserts' },
   // "bread"/"buns"/"rolls"/"dough"/"loaf"/"loaves" excluded: bread pudding,
   // cinnamon buns, spring/egg rolls, cookie/pasta dough, and meatloaf are
   // all real dishes containing that word that are not bread.
   { pattern: /\b(?:focaccia|ciabatta|baguettes?|sourdough|naan|flatbreads?|bagels?|pretzels?|challah|croissants?|brioche)\b/i, course: 'breads' },
-  { pattern: /\bsalads?\b/i, course: 'salads' },
+  { pattern: /\bsalads?\b/i, course: 'salad' },
   // "wedges"/"rice dish"/"risotto" excluded: risotto especially is
   // routinely a main (vegetarian/seafood mains), not reliably a side.
   { pattern: /\b(?:slaw|coleslaw|side\s*dish|mashed|roasted\s*vegetables|french\s*fries|gratin|pilaf)\b/i, course: 'sides' },
@@ -396,6 +416,12 @@ const NAME_COURSE_OVERRIDES = [
   // excluded: caviar is usually a real garnish, not spherified "caviar",
   // and "foam" alone is too weak/generic a word to trust unconditionally.
   { pattern: /\b(?:modernist|molecular|spherification|gelification|agar|xanthan|sodium\s*alginate|calcium\s*chloride|lecithin|maltodextrin|methylcellulose|gellan|transglutaminase|immersion\s*circulator)\b/i, course: 'modernist' },
+  // Unambiguous savory dish name, no dessert homonym (unlike "roulade" --
+  // real counter-example: chocolate roulade/yule log is a rolled sponge
+  // cake -- or bare "souffle", a coin flip between cheese/savory and
+  // chocolate/dessert). Confirmed real gap: meilleurduchef.com tags this
+  // ultra-specifically ("Rack of Lamb") with no generic course word.
+  { pattern: /\brack\s*of\s*lamb\b/i, course: 'mains' },
 ];
 
 // Conservative pre-model gate: skip the (slow, local) Ollama call entirely
@@ -2184,7 +2210,7 @@ async function main() {
       // signal above. NAME_COURSE_OVERRIDES is defined at module scope
       // (near resolveCuisineFromNameLiteral) -- intentionally unconditional,
       // so a genuinely ambiguous case like "soup dumplings" (conventionally
-      // apps/dim sum, not soup) will also be forced to "soups", accepted
+      // apps/dim sum, not soup) will also be forced to "soup", accepted
       // per the same reasoning that made this override worth adding.
       for (const { pattern, course } of NAME_COURSE_OVERRIDES) {
         if (pattern.test(extracted.name)) {
@@ -2263,7 +2289,7 @@ async function main() {
       // this against," matching cuisine's own precedent exactly. Confirmed
       // necessary on a real 130-recipe run: without this, course-unverified
       // fired on the large majority of recipes (most sites have no
-      // ldCategory at all, and the "soups" name override is narrow by
+      // ldCategory at all, and the "soup" name override is narrow by
       // design), flooding needs-review with volume the flag was never meant
       // to produce.
       if (extracted.course && extracted.course.trim() && !courseGrounded && !meta.siteCourseHint
@@ -2749,7 +2775,7 @@ async function main() {
       // against a real case (okonomikitchen's vegan cereal) that the word
       // can be missing from title/ldName too and only survive in the URL
       // slug itself ("diy-3-ingredient-healthy-vegan-cereal"). ALSO treats
-      // a site tagged siteCourseHint "veg'n" as an adaptation signal on its
+      // a site tagged siteCourseHint 'vegn' as an adaptation signal on its
       // own, regardless of what any single recipe's title says -- a
       // dedicated vegan blog's own posts don't always restate "vegan" in
       // every title since it's implied by the site itself, and this site
@@ -2759,7 +2785,7 @@ async function main() {
           DIETARY_ADAPTATION_PATTERN.test(
             [extracted.name, meta.title, meta.ldName, meta.url].filter(Boolean).join(' ')
           )
-          || (meta.siteCourseHint && meta.siteCourseHint.trim().toLowerCase() === "veg'n")
+          || (meta.siteCourseHint && meta.siteCourseHint.trim().toLowerCase() === 'vegn')
         );
 
       if (!extracted.cuisine && !looksLikeUnresolvedAdaptation) {
