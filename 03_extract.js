@@ -109,6 +109,21 @@ const VALID_COURSES = [
   // capitalize-first-letter fallback (displayNameFromSlug).
   'apps', 'soup', 'mains', 'sides', 'salad', 'desserts', 'brunch',
   'drinks', 'breads', 'sauces', 'rubs', 'pickles', 'vegn', 'modernist', 'smoking',
+  // 'snack' added 2026-09-29 -- NOT yet a real course.dart slug (operator
+  // decision: seed it accurately now, decide the app-side handling --
+  // block save, add the real course, or null+force a dropdown pick -- once
+  // the app catches up; the DB is still empty so this costs nothing today).
+  // Only ever set via a literal ldCategory/ldCuisine "Snack" tag below
+  // (resolveCourseFromLd) -- deliberately has NO name-literal override and
+  // NO ingredient-content heuristic, unlike breads/smoking/drinks. Earlier
+  // this session, mapping ldCategory "Snack" into the EXISTING 'apps'
+  // course was removed as a real coin-flip (sweet anpan/mochi vs. savory
+  // siu mai, no majority) -- that problem was specific to force-fitting a
+  // real signal into a course meaning something narrower (apps = savory-
+  // leaning). Giving it its own value removes the coin flip entirely: the
+  // page's own "Snack" tag is exactly as trustworthy as its own "Soup"/
+  // "Salads" tag (same trust tier throughout this file), sweet or savory.
+  'snack',
 ];
 
 // Base-spirit categories for drink recipes, confirmed against the app's
@@ -159,13 +174,10 @@ const LD_COURSE_MAP = {
   'breakfast': 'brunch', 'brunch': 'brunch',
   'appetizer': 'apps', 'appetizers': 'apps', 'appetiser': 'apps', 'appetisers': 'apps',
   'starter': 'apps', 'starters': 'apps',
-  // Deliberately no 'snack'/'snacks' entry: confirmed real cases where it's
-  // the sole course-ish token span both directions (anpan sweet bean buns,
-  // Japanese mochi, fried banana fritters are all sweet, not savory apps;
-  // siu mai is savory) with no majority either way -- when 'snack' co-occurs
-  // with a real course word ("Dessert, Snack", "Appetizer, ... Snack") that
-  // word already wins via the priority-token pass regardless of this being
-  // absent, so this only removes the coin-flip guess on the sole-token cases.
+  // 'snack' maps to its OWN course, not 'apps' -- see VALID_COURSES comment
+  // above for why this no longer needs the sweet/savory coin-flip caveat
+  // that blocked mapping it into 'apps' earlier this session.
+  'snack': 'snack', 'snacks': 'snack',
   'main': 'mains', 'mains': 'mains', 'main course': 'mains', 'main dish': 'mains', 'dinner': 'mains', 'lunch': 'mains', 'entree': 'mains', 'entrees': 'mains',
   'side': 'sides', 'sides': 'sides', 'side dish': 'sides',
   'salad': 'salad', 'salads': 'salad',
