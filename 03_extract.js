@@ -109,21 +109,15 @@ const VALID_COURSES = [
   // capitalize-first-letter fallback (displayNameFromSlug).
   'apps', 'soup', 'mains', 'sides', 'salad', 'desserts', 'brunch',
   'drinks', 'breads', 'sauces', 'rubs', 'pickles', 'vegn', 'modernist', 'smoking',
-  // 'snack' added 2026-09-29 -- NOT yet a real course.dart slug (operator
-  // decision: seed it accurately now, decide the app-side handling --
-  // block save, add the real course, or null+force a dropdown pick -- once
-  // the app catches up; the DB is still empty so this costs nothing today).
-  // Only ever set via a literal ldCategory/ldCuisine "Snack" tag below
+  // 'standalone' added 2026-09-29/30 -- the app's own chosen term for foods
+  // that are self-sufficient as a complete eating occasion without needing
+  // to be paired with another dish (onigiri, tamales, empanadas, arancini),
+  // NOT an occasion/timing concept ("snack" as in "eaten between meals").
+  // Only ever set from a literal ldCategory/ldCuisine "snack" tag below
   // (resolveCourseFromLd) -- deliberately has NO name-literal override and
-  // NO ingredient-content heuristic, unlike breads/smoking/drinks. Earlier
-  // this session, mapping ldCategory "Snack" into the EXISTING 'apps'
-  // course was removed as a real coin-flip (sweet anpan/mochi vs. savory
-  // siu mai, no majority) -- that problem was specific to force-fitting a
-  // real signal into a course meaning something narrower (apps = savory-
-  // leaning). Giving it its own value removes the coin flip entirely: the
-  // page's own "Snack" tag is exactly as trustworthy as its own "Soup"/
-  // "Salads" tag (same trust tier throughout this file), sweet or savory.
-  'snack',
+  // NO ingredient-content heuristic; this pass only reads an explicit
+  // source tag, never infers standalone-ness from name/ingredients.
+  'standalone',
 ];
 
 // Base-spirit categories for drink recipes, confirmed against the app's
@@ -174,10 +168,11 @@ const LD_COURSE_MAP = {
   'breakfast': 'brunch', 'brunch': 'brunch',
   'appetizer': 'apps', 'appetizers': 'apps', 'appetiser': 'apps', 'appetisers': 'apps',
   'starter': 'apps', 'starters': 'apps',
-  // 'snack' maps to its OWN course, not 'apps' -- see VALID_COURSES comment
-  // above for why this no longer needs the sweet/savory coin-flip caveat
-  // that blocked mapping it into 'apps' earlier this session.
-  'snack': 'snack', 'snacks': 'snack',
+  // 'snack' maps to 'standalone' (the app's chosen term) -- see
+  // VALID_COURSES comment for why this no longer needs the sweet/savory
+  // coin-flip caveat that blocked mapping it into 'apps' earlier this
+  // session.
+  'snack': 'standalone', 'snacks': 'standalone',
   'main': 'mains', 'mains': 'mains', 'main course': 'mains', 'main dish': 'mains', 'dinner': 'mains', 'lunch': 'mains', 'entree': 'mains', 'entrees': 'mains',
   'side': 'sides', 'sides': 'sides', 'side dish': 'sides',
   'salad': 'salad', 'salads': 'salad',
@@ -2886,7 +2881,23 @@ async function main() {
           || (meta.siteCourseHint && meta.siteCourseHint.trim().toLowerCase() === 'vegn')
         );
 
-      if (!extracted.cuisine && !looksLikeUnresolvedAdaptation) {
+      // ldCuisine "global" is an EXPLICIT page-stated signal meaning "not
+      // nationality-specific" -- letting the site-region fallback silently
+      // override it would misrepresent the page's own data exactly as much
+      // as ignoring a real demonym would (operator: "the site literally
+      // labeling something explicitly needs to be trusted or this is all
+      // for nothing"). Confirmed real case: braziliankitchenabroad.com's
+      // Creamy Mushroom Sauce for Steak has ldCuisine: "global" but was
+      // shipping "BR" purely from the site tag. Narrowly scoped to the
+      // literal word "global" only, not extended to "fusion"/
+      // "international"/etc. without their own confirmed case -- and
+      // deliberately does NOT touch the site-fallback path for recipes
+      // with no cuisine signal at all, since a Caribbean dish on a
+      // Jamaican site with no explicit tag is still correctly served by
+      // that fallback.
+      const ldCuisineExplicitlyNonSpecific = tokenizeLdField(meta.ldCuisine).includes('global');
+
+      if (!extracted.cuisine && !looksLikeUnresolvedAdaptation && !ldCuisineExplicitlyNonSpecific) {
         if (meta.siteRegionHint) {
           extracted.cuisine = meta.siteRegionHint;
           logForReview(slug, meta.url, 'cuisine-from-site-fallback', meta.siteRegionHint,
@@ -2897,6 +2908,12 @@ async function main() {
           'Name suggests a dietary adaptation of a traditionally-named dish, but no origin could be determined ' +
           'from the recipe content -- needs a human (or a targeted lookup) rather than a chef/site guess, since ' +
           'a real origin likely exists.');
+        flaggedForReview = true;
+      } else if (ldCuisineExplicitlyNonSpecific) {
+        logForReview(slug, meta.url, 'cuisine-explicitly-non-specific', meta.ldCuisine,
+          'Page\'s own ldCuisine explicitly states this isn\'t nationality-specific ("global") -- the site\'s ' +
+          'region tag would misrepresent that, so left unresolved for a human to decide rather than silently ' +
+          'falling back to it.');
         flaggedForReview = true;
       }
 

@@ -75,6 +75,22 @@ const GENERIC_UGC_PATTERNS = [
 // /collections/ usually signals elsewhere.
 const GENERIC_INDEX_PATTERNS = [/\/category\//i, /\/tag\//i, /\/curso-de-cocina\//i];
 
+// WordPress auto-generates a page like ".../real-post-slug/attachment/
+// image-slug/" for every image attached to a post -- these have no real
+// article content at all (confirmed real case: originalflava.com's "Green
+// Banana Potato Salad" attachment page's entire extracted content was
+// cookbook ads, a "Comments" placeholder, and the copyright footer --
+// Readability had no real article to find, so it fell back to sidebar
+// widgets). The real post almost always lives at the exact same URL minus
+// the "/attachment/.../" segment, confirmed against 6 real cases across
+// originalflava.com and cnz.to. Rewritten before any other processing so
+// dedup/isAllowedUrl/fetch/saved meta.url all consistently use the real
+// post URL, as if discovery had found it directly.
+function resolveAttachmentParentUrl(url) {
+  const match = url.match(/^(https?:\/\/[^/]+\/.+?)\/attachment\/.*$/i);
+  return match ? `${match[1]}/` : url;
+}
+
 function isAllowedUrl(url) {
   let hostname;
   try {
@@ -92,6 +108,7 @@ function isAllowedUrl(url) {
   if (NON_ENGLISH_DOMAINS.some(d => hostname.includes(d))) return false;
   if (NON_ENGLISH_URL_PATTERNS.some(p => p.test(url))) return false;
   if (GENERIC_UGC_PATTERNS.some(p => p.test(url))) return false;
+
 
   if (hostname.includes('chinasichuanfood.com') && url.includes('/collections/')) return true;
   if (GENERIC_INDEX_PATTERNS.some(p => p.test(url)) || /\/collections\//i.test(url)) return false;
@@ -348,8 +365,10 @@ async function main() {
 
   let processed = 0, skipped = 0, failed = 0;
 
-  for (const url of urls) {
+  for (const rawUrl of urls) {
     if (processed >= limit) break;
+
+    const url = resolveAttachmentParentUrl(rawUrl);
 
     if (alreadyFetched.has(url)) {
       skipped++;
