@@ -486,7 +486,12 @@ const ANY_DIRECTION_VERB_PATTERN =
 const BREAD_FLOUR_PATTERN = /\bflour\b/i;
 const BREAD_LEAVENING_PATTERN = /\byeast\b|\bstarter\b|\blevain\b/i;
 const SMOKING_WOOD_PATTERN = /\b(?:hickory|mesquite|applewood|cherrywood|pecan\s*wood|wood\s*chips?|wood\s*chunks?|smoking\s*wood)\b/i;
-const DRINKS_SPIRIT_PATTERN = /\b(?:vodka|gin|rum|tequila|mezcal|whisk(?:e)?y|bourbon|scotch|brandy|cognac)\b/i;
+// "scotch" excludes a following "bonnet" -- confirmed real collision:
+// Scotch bonnet is a chili pepper variety with zero relation to Scotch
+// whisky, and appeared as a genuine ingredient in two real recipes
+// (Jamaican pumpkin rice, a comment on a jollof rice post), both false-
+// positiving this pattern before the exclusion was added.
+const DRINKS_SPIRIT_PATTERN = /\b(?:vodka|gin|rum|tequila|mezcal|whisk(?:e)?y|bourbon|scotch(?!\s*bonnet)|brandy|cognac)\b/i;
 function assessExtractionViability(meta, markdown) {
   const missing = [];
 
@@ -510,20 +515,34 @@ function assessExtractionViability(meta, markdown) {
   const nameText = meta.ldName || meta.title || '';
   const nameHasCourseOverride = NAME_COURSE_OVERRIDES.some(({ pattern }) => pattern.test(nameText));
   // Ingredient-content signals, checked against the same RAW ingredient
-  // lines/markdown the ingredients-viability check above already scans --
-  // confirmed necessary on okonomikitchen's Anpan: ldCategory "Snack" no
-  // longer grounds course (2026-09-29 fix), its own name is just "Anpan"
-  // (no course word), so without this it was being skipped before the
-  // model ever ran, even though its own ldIngredientsRaw already literally
-  // contains "bread flour"/"dry yeast" -- the exact signal the post-
-  // extraction breads check looks for, just never given the chance to run.
-  const rawIngredientText = [
-    ...(meta.htmlIngredientLines || []),
-    ...(meta.ldIngredientsRaw || []),
-  ].join(' ').toLowerCase() || (markdown || '').toLowerCase();
+  // lines the ingredients-viability check above already scans -- confirmed
+  // necessary on okonomikitchen's Anpan: ldCategory "Snack" no longer
+  // grounds course (2026-09-29 fix), its own name is just "Anpan" (no
+  // course word), so without this it was being skipped before the model
+  // ever ran, even though its own ldIngredientsRaw already literally
+  // contains "bread flour"/"dry yeast".
+  // Gated through looksLikeRealIngredientLines (same quality check used
+  // everywhere else in this file) and deliberately NOT falling back to the
+  // whole raw markdown, unlike the ingredients/directions checks above --
+  // confirmed two real false-positive classes from skipping that gate on
+  // the first attempt: meilleurduchef's ldIngredientsRaw is sometimes a
+  // scraped nav-widget category list ("...Cake fillings... Yeast & baking
+  // powder..."), not real ingredients, and a markdown-wide scan for
+  // DRINKS_SPIRIT_PATTERN caught "scotch bonnet" in a reader COMMENT on an
+  // unrelated jollof rice post. Ingredient-count-gated the same way the
+  // post-extraction drinks check is, for the same reason (a vegan banana
+  // bread using 2 tbsp dark rum as one flavoring ingredient among 8+ others
+  // is not a cocktail) -- this pre-model version had no such gate at all
+  // before, unlike its post-extraction counterpart.
+  const realIngredientLines = [
+    ...((meta.htmlIngredientLines && looksLikeRealIngredientLines(meta.htmlIngredientLines)) ? meta.htmlIngredientLines : []),
+    ...((meta.ldIngredientsRaw && looksLikeRealIngredientLines(meta.ldIngredientsRaw)) ? meta.ldIngredientsRaw : []),
+  ];
+  const rawIngredientText = realIngredientLines.join(' ').toLowerCase();
   const hasBreadSignal = BREAD_FLOUR_PATTERN.test(rawIngredientText) && BREAD_LEAVENING_PATTERN.test(rawIngredientText);
   const hasSmokingSignal = SMOKING_WOOD_PATTERN.test(rawIngredientText);
-  const hasDrinksSignal = DRINKS_SPIRIT_PATTERN.test(rawIngredientText);
+  const hasDrinksSignal = realIngredientLines.length > 0 && realIngredientLines.length <= 6
+    && DRINKS_SPIRIT_PATTERN.test(rawIngredientText);
   if (!ldCourse && !meta.siteCourseHint && !nameHasCourseOverride
       && !hasBreadSignal && !hasSmokingSignal && !hasDrinksSignal) {
     missing.push('course');
