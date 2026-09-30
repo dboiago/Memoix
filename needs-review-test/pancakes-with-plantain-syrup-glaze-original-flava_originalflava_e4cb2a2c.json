@@ -1,0 +1,113 @@
+{
+  "recipe": {
+    "name": "Pancakes with plantain & syrup glaze",
+    "time": "15 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "JM",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pour all ingredients in a blender (Starting with milk) and mix",
+      "Make sure the mixture is thick and smooth and rest for 15 minutes",
+      "Pour 1 tsp of vegetable oil on a non stick frying pan and whip around with a tissue",
+      "On medium heat, once hot, pour pancake mix into the pan from the middle making a circle shape.",
+      "Cook for 1 minute on each side",
+      "Fry plantain in shallow vegetable oil until golden brown on each side",
+      "Decorate pancake with plantain and syrup"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Baking Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": "brown or white",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "beaten",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Butter",
+        "unit": null,
+        "notes": "melted",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Millilitres Milk",
+        "unit": null,
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Essence",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Plain Flour",
+        "unit": null,
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "alt: butter, for frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9390f2378bd1fb0d3ef7212fe914c571f42f876d1f830dca1d1ae2637b1e91c2",
+    "lineage_hash": "825fabdfc371abd3476082b95a1d8aa5fd0be00b1983730abd197821fd5552ec"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://originalflava.com/baking/pancakes-plantain-syrup-glaze/",
+    "fetchedAt": "2026-09-30T17:00:45.655Z"
+  },
+  "rawSource": "https://originalflava.com/baking/pancakes-plantain-syrup-glaze/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,191 @@
+{
+  "recipe": {
+    "name": "Jamaican Red Pea Soup",
+    "time": "1 hr 15 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "JM",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Soak Red peas in pot overnight (with 8-10 cups of Water above peas)",
+      "Wash and Boil over and Drain Chicken foot/back or Turkey Leg/ Pigs tail/ Ham hock or any type of meat separately 2/3 times",
+      "Add Meat into boiling pot with red peas and bring to a boil",
+      "Add stewing beef to pot and continue to cook until all meat is tender for aprox 1hour",
+      "Add salt/pepper",
+      "Chopped Onion, Fresh thyme, Pimento, spring onion, scotch bonnet",
+      "Mix",
+      "Add cock soup",
+      "Add coconut milk",
+      "Add, Chopped Sweet potato, Yam, Carrots",
+      "Add Dumplings (Mix 2 cups of self-raising flour, 1 cup water, 1tsp salt mix into a dough)",
+      "Cook/simmer for 15 mins.",
+      "Take out scotch bonnet (do not eat whole- very hot)"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Red Kidney Peas",
+        "unit": "cans",
+        "notes": "800g",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Foot/back/leg",
+        "unit": "lb",
+        "notes": "alt: turkey leg/neck or pig tail, Used for Flava",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stewing Beef",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": null,
+        "notes": "fresh, or 1 tsp dried thyme",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All Spice/pimento",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scotch Bonnet Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cock Soup",
+        "unit": "pkg",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "can",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Potato",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yam",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dumplings",
+        "unit": null,
+        "notes": "Mix 2 cups of self-raising flour, 1 cup water, 1 tsp salt mix into a dough",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4e5be3d6332e4c53472ffada437be794fccf172957303b2187104d41d541c4b8",
+    "lineage_hash": "68b9fb09806f96a54d1511cdd5a72c3ea704697d79d96cae7c0ca554b898273f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://originalflava.com/meals/jamaican-red-pea-soup/",
+    "fetchedAt": "2026-09-30T16:59:25.771Z"
+  },
+  "rawSource": "https://originalflava.com/meals/jamaican-red-pea-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

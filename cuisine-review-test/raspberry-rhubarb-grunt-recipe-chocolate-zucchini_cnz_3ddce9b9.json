@@ -1,0 +1,112 @@
+{
+  "recipe": {
+    "name": "Raspberry Rhubarb Grunt",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 200°C (400°F), and grease a medium baking dish (mine is 20 by 30 cm, or 8 by 12 inches).",
+      "Arrange the rhubarb at the bottom of the dish.",
+      "Cover with the raspberries, and sprinkle with the 100 grams (1/2 cup) sugar. Dot with the butter shavings.",
+      "In a medium bowl, sift together the flour, sugar and salt. Fold in the cream, and combine until the dough forms a sticky ball.",
+      "Drop by the spoonful over the filling, covering the surface evenly, otherwise people will fight for the spots that have the most.",
+      "Put into the oven to bake for 45 minutes, until the fruit is bubbling and the topping is lightly golden."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Grams Rhubarb",
+        "unit": null,
+        "notes": "about 1 kg or 2.2 lb untrimmed, about six large stalks, trimmed, sliced into half-inch chunks",
+        "amount": "800",
+        "section": "fruit filling",
+        "isOptional": false
+      },
+      {
+        "name": "Grams Raspberries",
+        "unit": null,
+        "notes": "fresh or frozen",
+        "amount": "200",
+        "section": "fruit filling",
+        "isOptional": false
+      },
+      {
+        "name": "Grams Sugar",
+        "unit": null,
+        "notes": "unrefined cane",
+        "amount": "100",
+        "section": "fruit filling",
+        "isOptional": false
+      },
+      {
+        "name": "Grams Butter",
+        "unit": null,
+        "notes": "cut into shavings",
+        "amount": "20",
+        "section": "fruit filling",
+        "isOptional": false
+      },
+      {
+        "name": "Grams Flour",
+        "unit": null,
+        "notes": "all-purpose",
+        "amount": "100",
+        "section": "topping",
+        "isOptional": false
+      },
+      {
+        "name": "Grams Whole Wheat Flour",
+        "unit": null,
+        "notes": null,
+        "amount": "50",
+        "section": "topping",
+        "isOptional": false
+      },
+      {
+        "name": "Grams Sugar",
+        "unit": null,
+        "notes": "unrefined cane",
+        "amount": "30",
+        "section": "topping",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "fine sea",
+        "amount": "½",
+        "section": "topping",
+        "isOptional": false
+      },
+      {
+        "name": "Crème Fraîche",
+        "unit": "ml",
+        "notes": "or whipping cream, beaten",
+        "amount": "240",
+        "section": "topping",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "acb5a8c485bb041ee50963920dcc200ffc3d490472b636746c38ea5275431434",
+    "lineage_hash": "d9fe5c207299c5eca0d2001b0105445ec19cb32bfc3f233be43c402614078c1f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/desserts/raspberry-rhubarb-grunt-recipe/",
+    "fetchedAt": "2026-09-30T19:01:02.937Z"
+  },
+  "rawSource": "https://cnz.to/recipes/desserts/raspberry-rhubarb-grunt-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

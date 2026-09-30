@@ -1,0 +1,209 @@
+{
+  "recipe": {
+    "name": "Curry Chicken with Coconut Rice",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "JM",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Firstly wash Chicken with lemon and water and season with, salt, pepper, paprika, 2 tbsp. curry powder and marinate over night.",
+      "Then pour 2tbsp. coconut oil/ cooking oil in frying pan on high heat, and cook onions, garlic cloves and scotch bonnet pepper and cook for 3 mins.",
+      "Then place 1 tbsp. of curry powder and burn cook it for 5 mins.",
+      "Then add 1tsp on ginger",
+      "Then pour in the marinated chicken into the frying pan mix and brown for 10 minutes.",
+      "Pour ½ cup of coconut milk in frying pan and stir well.",
+      "Then put in 1tsp. pimento seeds and fresh thyme and cook for 20 minutes.",
+      "Then put in ¼ cup of carrots, potatoes, and simmer for 10 minutes.",
+      "Firstly wash rice 3-4 time",
+      "Then place rice into a pot, and level water with washed rice.",
+      "Then pour ½ cup of coconut milk into the pot and mix gently. (Water should still be slightly above rice)",
+      "Add 1 tsp salt, 1 tsp of butter and stir.",
+      "Leave on medium heat for 15 minutes max.",
+      "Then use a folk to fold and mix the rice from the base of pot.",
+      "Then serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Breast",
+        "unit": "lb",
+        "notes": "Cut in medium chunks",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scotch Bonnet Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken/ All-purpose Seasoning",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Branches Thyme",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pimento Seeds/ All Spice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Oil/cooking Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basmati Rice",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "C",
+        "notes": "or ½ block coconut crème",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "water should be slightly above rice",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fb4f1164207d20dbba7d98ba237ccd85f8d19d367d08789320ecc3b1f507bc69",
+    "lineage_hash": "095ebac8d7b41e521486fc02badce1e89a7ead56e805bbf930aace8fa149fed5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://originalflava.com/meals/curry-chicken-coconut-rice/",
+    "fetchedAt": "2026-09-30T17:00:28.474Z"
+  },
+  "rawSource": "https://originalflava.com/meals/curry-chicken-coconut-rice/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

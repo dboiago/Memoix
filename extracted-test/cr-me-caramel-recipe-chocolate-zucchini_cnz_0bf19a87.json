@@ -1,0 +1,94 @@
+{
+  "recipe": {
+    "name": "Crème Caramel",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Have ready 6 ovenproof ramekins or cups, each about 160 ml (2/3 cup) in capacity.",
+      "First, make the caramel. Combine the 100 grams (1/2 cup) sugar and the water in a large saucepan. Turn the heat to medium and let the sugar melt without stirring, simply swirling the pan around from time to time so it caramelizes evenly.",
+      "As it boils, the caramel will turn golden, then golden brown, and when it darkens to a deep amber, remove from the heat and immediately pour into the prepared ramekins, swirling around to coat the bottoms evenly.",
+      "Place the ramekins on a deep rimmed baking sheet, or a baking dish large enough to accommodate them comfortably.",
+      "Preheat the oven to 150°C (300°F) and bring water to a boil in the kettle.",
+      "Make the custard. In a medium saucepan, combine the milk, sugar, and vanilla, and bring to just under a simmer over medium heat, stirring frequently to prevent scorching. Let cool slightly.",
+      "In a medium mixing bowl with a pouring spout, beat the eggs lightly. Set a fine-mesh sieve over the bowl, and pour in a quarter of the milk, then whisk to combine. Repeat with the remaining milk in three additions.",
+      "Pour the custard into the prepared ramekins.",
+      "Pour very hot water from the kettle into the rimmed baking sheet and around the ramekins to about half their height -- this will help conduct the heat evenly.",
+      "Insert into the oven, lower the heat to 120°C (250°F) and cook for 30 minutes, until the custards are set but still jiggly, and the blade of a knife inserted in the center comes out clean.",
+      "Turn off the oven and leave the ramekins in for another 30 minutes. Transfer to a rack to cool completely, then refrigerate for 3 hours or overnight before serving.",
+      "To serve, run a knife carefully around the custard to loosen, place a small serving plate over the ramekin, and flip to unmold, shaking a bit as needed."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Grams Sugar",
+        "unit": null,
+        "notes": "see note",
+        "amount": "100",
+        "section": "For the caramel",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For the caramel",
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": "I use fresh lait demi-écrémé -- 2% milk -- but you can also use whole milk or non-dairy milk; I wouldn't recommend skim",
+        "amount": "650",
+        "section": "For the custard",
+        "isOptional": false
+      },
+      {
+        "name": "Grams Sugar",
+        "unit": null,
+        "notes": "you can use the unrefined sugar of your choice, just keep in mind that a darker sugar will make the custard a bit brown",
+        "amount": "50",
+        "section": "For the custard",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla",
+        "unit": null,
+        "notes": "bean, split open and beans scraped, or 1 tablespoon homemade vanilla extract, or 1 teaspoon store-bought natural vanilla extract",
+        "amount": "1",
+        "section": "For the custard",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "large organic",
+        "amount": "4",
+        "section": "For the custard",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e3b3d81ab2486c037b186115cb956a0e9f84cb7ed08cb20a7ff0517b7b5c107f",
+    "lineage_hash": "962764dc4a121ca2b535b4c2fc82316a8179aef33540a74e1539e7b5543772fe"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/desserts/creme-caramel-recipe/",
+    "fetchedAt": "2026-09-30T19:01:38.629Z"
+  },
+  "rawSource": "https://cnz.to/recipes/desserts/creme-caramel-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

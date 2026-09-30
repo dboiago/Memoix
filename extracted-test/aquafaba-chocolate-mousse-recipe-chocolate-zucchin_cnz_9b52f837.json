@@ -1,0 +1,82 @@
+{
+  "recipe": {
+    "name": "Aquafaba Chocolate Mousse",
+    "time": "1 hr 2 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Have ready 6 serving glasses or cups, about 120 ml (1/2 cup) each.",
+      "Pour the aquafaba in a clean mixing bowl, or the bowl of a stand mixer, and set aside.",
+      "Place the chocolate in a double boiler and heat until just melted. Pour into another mixing bowl and allow to cool for a few minutes.",
+      "Using an electric whisk or the whisk attachment of a stand mixer, whisk the aquafaba, salt, and cream of tartar to soft peaks. This should take 2 to 3 minutes.",
+      "Gently stir a third of the whipped aquafaba into the melted chocolate, until fully incorporated.",
+      "Fold in the remaining aquafaba in two additions, using a spatula and lifting the mixture in a circular up-and-down motion to avoid deflating it, until fully incorporated.",
+      "Pour into the prepared cups, level the surface with the spatula, and sprinkle with cacao nibs.",
+      "Transfer to the fridge, and allow to set for at least 2 hours before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Grams Aquafaba",
+        "unit": null,
+        "notes": "preferably organic, BPA-free, no salt added, remember to breathe, the drained juices from a 400-gram (15-ounce) can of chickpeas",
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Dark Chocolate",
+        "unit": null,
+        "notes": "high-quality",
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "fine sea",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream of Tartar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cacao Nibs",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "38a6bd6716b5896b139f2ba2d8ce4f12aaa266219186bb51676379316472288d",
+    "lineage_hash": "9cff89cff8f3eb715a6ccf4fb4bc3704ae0503efd99ca9ab29a083671ee2afeb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/desserts/aquafaba-chocolate-mousse-recipe/",
+    "fetchedAt": "2026-09-30T19:32:41.807Z"
+  },
+  "rawSource": "https://cnz.to/recipes/desserts/aquafaba-chocolate-mousse-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

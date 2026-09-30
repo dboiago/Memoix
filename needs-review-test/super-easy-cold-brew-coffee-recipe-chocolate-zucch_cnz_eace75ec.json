@@ -1,0 +1,64 @@
+{
+  "recipe": {
+    "name": "Super Easy Cold-Brew Coffee",
+    "time": "12 hr",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": "Tumblers",
+    "garnish": [],
+    "subcategory": "Coffee",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "The night before, put the coffee grounds in a sterilized 1-liter (1-quart) glass container with a lid, such as this French-made one.",
+      "Add 720 ml (3 cups) cold water, preferably filtered, and stir to moisten the grounds.",
+      "Cover and leave at room temperature overnight, 12 to 15 hours.",
+      "Set a fine-mesh sieve over a mixing bowl with a pouring spout, and line the sieve with several layers of cheesecloth or a nut milk bag.",
+      "Pour in the coffee and solids, and allow to drain for 30 minutes. Rinse the glass container in the meantime if you want to use it to store the coffee concentrate.",
+      "To serve, combine the coffee concentrate with the same volume of water, and serve in tumblers with ice cubes. You can stir in the milk of your choice, and a sweetener if you must."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Grams Coffee Beans",
+        "unit": null,
+        "notes": "freshly and coarsely ground",
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": null,
+        "notes": "of your choice, for serving (optional)",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ice Cubes",
+        "unit": null,
+        "notes": "for serving",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c0f8d70c577bd3686b3a22bb9d3d11bc23b518fbe358f31b32479204f0a67ab2",
+    "lineage_hash": "7e291929ee9f87f1692f763dd9ca14df5497cab1f3ecc84ea59eb078f177d830"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/drinks/super-easy-cold-brew-coffee-recipe/",
+    "fetchedAt": "2026-09-30T19:57:20.780Z"
+  },
+  "rawSource": "https://cnz.to/recipes/drinks/super-easy-cold-brew-coffee-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}
