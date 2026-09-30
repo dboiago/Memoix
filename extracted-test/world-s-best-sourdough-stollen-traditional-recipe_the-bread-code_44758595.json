@@ -1,0 +1,201 @@
+{
+  "recipe": {
+    "name": "Sourdough Stollen",
+    "time": "1 day 60 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "DE",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "1400",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Make a stiff sourdough starter that will help to have a more yeasty flavour",
+      "Knead the dough with all ingredients except the rum mixture",
+      "After building dough strength we mix together all the ingredients and knead some more",
+      "Ferment until dough roughly increased by 50% in size",
+      "Divide the Stollen and shape them.",
+      "Let your Stollen rest and preheat your oven to 200°C (400°F). Spritz your Stollen with water and let it bake with a tray on top of it for around 30 minutes",
+      "After 30 minutes wrap your Stollen with some aluminum foil",
+      "Melt some butter and brush your Stollen every with butter",
+      "After 120 minutes cover your Stollen everywhere with powdered sugar",
+      "Wrap your Stollen in Alu foil and then in a closed plastic bag. Let it mature for at least 1 day. Store it \\ in a colder place in your house. It will stay good for a long time."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Grams Bread Flour",
+        "unit": null,
+        "notes": null,
+        "amount": "1000",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Powdered Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Raisins",
+        "unit": null,
+        "notes": null,
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Dark Rum",
+        "unit": null,
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Unsalted Melted Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Stiff Sourdough Starter",
+        "unit": null,
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Room Temperature Milk",
+        "unit": null,
+        "notes": null,
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Eggs Size M",
+        "unit": null,
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Candied Lemon Peel",
+        "unit": null,
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Candied Orange Peel",
+        "unit": null,
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Almonds",
+        "unit": null,
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Unsalted Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Cinnamon",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Vanilla Extract",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Cardamon",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Nutmeg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Lemon Zest",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "903b1ff29dfce719304ad8f28a722ecf892a63604c5ed410f99ad0fbfb9ff01c",
+    "lineage_hash": "03bc3229573e2c28d6f07d1aac1c793320833a4df146c483a9dbf9d42caca2f6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.the-bread-code.io/recipe/2021/12/17/sourdough-stollen.html",
+    "fetchedAt": "2026-08-01T16:12:43.642Z"
+  },
+  "rawSource": "https://www.the-bread-code.io/recipe/2021/12/17/sourdough-stollen.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

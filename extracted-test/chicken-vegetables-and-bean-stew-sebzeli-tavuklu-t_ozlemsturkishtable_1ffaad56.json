@@ -1,0 +1,150 @@
+{
+  "recipe": {
+    "name": "Chicken, vegetables and bean stew (Sebzeli tavuklu türlü)",
+    "time": "1 hr 20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "TR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pour 2 tbsp olive oil over a wide pan and stir in the chicken, tomato paste, pepper paste, cumin and pul biber. Season with salt and ground black pepper and combine the chicken pieces with the pastes and seasoning. Sauté over high heat for 5-6 minutes, stirring continuously, which helps seal the juices and lightly browns the chicken. Then place the chicken on a plate and leave the remaining marinade in the pan.",
+      "Pour in the remaining 2 tbsp olive oil into the pan and stir in the onions, courgette and peppers. Sauté over high heat for 8 minutes, combining with the lovely marinade left in the pan, stirring often. The vegetables will soften and shrink in size at the end of this period. Stir in the chard and 150ml of the water and cook further 3 minutes, stirring often.",
+      "Stir the chicken back into the pan, along with the chopped tomato and the remaining 200ml water, season and combine well. Cover, bring to the boil then turn the heat to low and simmer for 35 minutes.",
+      "Stir in the rinsed cooked beans, combine well. Cover and simmer for another 15 minutes. Serve warm with Cacik dip of yoghurt with cucumbers and with rice or bulgur pilaf aside."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Breast Fillets",
+        "unit": "g",
+        "notes": "cut into 6x4cm chunks",
+        "amount": "700",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "large",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Courgettes",
+        "unit": "medium",
+        "notes": "trimmed and sliced into 1cm width circles",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pointy",
+        "unit": null,
+        "notes": "alt: 2 red bell peppers, deseeded, cut into 2cm chunks",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chard",
+        "unit": "g",
+        "notes": "alt: kale, cut into 2cm slices",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Paste",
+        "unit": "Tbsp",
+        "notes": "double concentrated",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turkish Red Pepper Paste",
+        "unit": "Tbsp",
+        "notes": "optional, biber salcasi",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": "g",
+        "notes": "chopped, in can",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cannellini Beans",
+        "unit": "g",
+        "notes": "1 can of pre-cooked, drained and rinsed",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pul Biber",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": "and freshly ground black pepper to taste",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "cf582213cdd3d4d3e1f5f73069a6c8eb819380741d249f310cd7c30ee6a60e30",
+    "lineage_hash": "2d01dfb4ca9921973865602e0ce21469457c5185f3ae96c97fe363f622f3db73"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ozlemsturkishtable.com/2023/06/chicken-vegetables-and-bean-stew-sebzeli-tavuklu-turlu/",
+    "fetchedAt": "2026-09-25T23:13:54.144Z"
+  },
+  "rawSource": "https://ozlemsturkishtable.com/2023/06/chicken-vegetables-and-bean-stew-sebzeli-tavuklu-turlu/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

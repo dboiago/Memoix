@@ -1,0 +1,83 @@
+{
+  "recipe": {
+    "name": "Chinese Chive and Egg Stir Fry",
+    "time": "10 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "198",
+      "carbohydrateContent": null,
+      "fatContent": "18",
+      "proteinContent": "6"
+    },
+    "directions": [
+      "Prepare Chinese chives, discard any dirty leaves on the tail and the tough parts in the head sections. Wash well and drain. Mix in around 1/2 tablespoon of cooking oil firstly.",
+      "Whisk egg well with a small pinch of salt. Set aside.",
+      "Heat your wok firstly and pour in oil, heat oil until smoky. Stir the egg liquid a few times and pour in the wok. Wait for 2-3 seconds and then use chop stickers to separate the egg into small pieces.&nbsp;&nbsp;",
+      "Add chives in, give a big stir fry until the chives are almost softened. Add salt and light soy sauce is using. Serve with steamed rice.&nbsp;"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "well whisked",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brunch Chinese Chives",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "divided",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Oil",
+        "unit": "Tbsp",
+        "notes": "divided",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "91f4c89633e6d9b4f246ac857168b3bd18f581d59f7a22a23416b1cca736c6af",
+    "lineage_hash": "404ca6b0e924f07afcca01ec005540313fea576c0d0f348cc2810a61c8e821c5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/chinese-chive-and-egg-stir-fry/",
+    "fetchedAt": "2026-08-02T04:59:22.492Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/chinese-chive-and-egg-stir-fry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

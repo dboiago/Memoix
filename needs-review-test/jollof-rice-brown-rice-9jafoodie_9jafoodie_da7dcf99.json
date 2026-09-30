@@ -1,0 +1,138 @@
+{
+  "recipe": {
+    "name": "Jollof Rice (Brown Rice)",
+    "time": "1 hr 45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "NG",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Soak the rice in warm water for 45 minutes to 1 hour prior to use",
+      "Place a pot with a tight fitting lid on medium heat, add in the oil and heat up for 1-2 minutes, add in the chopped onions and fry until translucent",
+      "Add in the tomato paste; fry the onion and paste for 3 minutes. Add in bouillon cube, thyme, curry, chili powder and salt. Combine",
+      "Add in 3 cups of water and bay leaves. Cover and bring to a rolling boil",
+      "Wash the soaked rice until water runs clear. Add in the rice and reduce cooking heat to low-medium. Cover the pot with the foil and then the lid",
+      "Leave to cook for 40 minutes",
+      "Remove the pot from heat and stir. Remove and discard the bay leaves. Add fresh tomato (if using)",
+      "If the texture of rice isn’t to your liking at this point, simply cover the pot tightly for another 10-12 minutes, there is no need to return the pot back to the heat, the retained heat is enough to continue to cook the rice"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Coconut Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "C",
+        "notes": "thinly sliced",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Paste",
+        "unit": "ml",
+        "notes": "Can",
+        "amount": "156",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "1 Cube Chicken Bouillon",
+        "unit": "g",
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": "small",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Rice",
+        "unit": "C",
+        "notes": null,
+        "amount": "2.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": "large",
+        "notes": "fresh, sliced, optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bbcd9e4c620320f33309f0184457e67168450974751b0ba68822ff7e8bb5bbd2",
+    "lineage_hash": "4b2f61bc3a806835287915090f2f13e4ddcca3a3af8cee291550287fb603d76f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://9jafoodie.com/brown-rice-jollof/",
+    "fetchedAt": "2026-09-25T20:32:04.372Z"
+  },
+  "rawSource": "https://9jafoodie.com/brown-rice-jollof/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

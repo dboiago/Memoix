@@ -1,0 +1,74 @@
+{
+  "recipe": {
+    "name": "Rosa Negroni",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": null,
+    "glass": "Cocktail",
+    "garnish": [
+      "Fresh Raspberries"
+    ],
+    "subcategory": "Mocktail",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "17",
+      "carbohydrateContent": "4.1",
+      "fatContent": "0",
+      "proteinContent": "0"
+    },
+    "directions": [
+      "For a classic Rosa Negroni mix 45mL Italian Spritz, 15mL oz Dry London, 30mL Apéritif Rosso and 4 fresh raspberries in a glass with ice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "ML Italian Spritz",
+        "unit": "ml",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "ML Dry London",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "ML Aperitif Rosso",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raspberries",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2027201db5ba1cc9bb684e3538e53cb0ebd726fba9b7efcfae75df813a5b0e06",
+    "lineage_hash": "448f409498f4066e9f69d61ad19ec6cd95821fde8061ae85d2e1f0cad6e152e9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://lyres.com/en-uk/products/rosa-negroni-set-uk",
+    "fetchedAt": "2026-08-02T21:43:01.458Z"
+  },
+  "rawSource": "https://lyres.com/en-uk/products/rosa-negroni-set-uk",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

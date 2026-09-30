@@ -1,0 +1,121 @@
+{
+  "recipe": {
+    "name": "Vegan Zucchini Pocket Pie",
+    "time": "55 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "5",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Zucchini",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Small-sized Carrot",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wood Ear Mushrooms Also Known As Black Fungus",
+        "unit": "C",
+        "notes": "dried",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vermicelli 50g Optional",
+        "unit": "bunch",
+        "notes": "softened",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions Finely Chopped",
+        "unit": "stalks",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mushrooms Seasoning Plus More If Needed",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegan Oyster Sauce Plus More If Needed",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "A Few Dashes of White Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Taste and More for Salting",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallion Pancake Used Trader Joe’s Brand",
+        "unit": null,
+        "notes": "frozen",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "66fcde27d4b20bb35b37b0ddb67c1d230507684f785a4936704922113776ce6f",
+    "lineage_hash": "5aca43ed86c677e71cdc584dcfcfa326d2354b1a7314e7216ac062418fee73f8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://woonheng.com/vegan-zucchini-pocket-pie/",
+    "fetchedAt": "2026-08-01T22:04:22.900Z"
+  },
+  "rawSource": "https://woonheng.com/vegan-zucchini-pocket-pie/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

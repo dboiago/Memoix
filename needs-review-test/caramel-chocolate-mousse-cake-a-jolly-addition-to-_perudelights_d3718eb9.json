@@ -1,0 +1,217 @@
+{
+  "recipe": {
+    "name": "Caramel-chocolate mousse cake",
+    "time": "5 hr 20 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "PE",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat oven to 350ºF",
+      "In the mixer, whip eggs and sugar at high speed until they double in volume.",
+      "Add and fold the flour, salt, baking powder, cocoa and almonds. Spread in a baking sheet covered with silpat or parchment paper.",
+      "Bake for 8 – 10 minutes. Take out of the oven and cool in a rack.",
+      "In a saucepan, heat the butter over medium heat, until melted, and add the brown sugar.",
+      "Add banana slices, and cook until lightly golden.",
+      "Add the Rum, stir, turn off the heat, and cool.",
+      "In a heavy saucepan, heat the sugar without stirring, over medium-high heat, until melted and lightly golden. Add butter and 1 cup heavy cream. Be careful because it can boil over. Turn off the heat.",
+      "Add the chocolate and let rest for 10 minutes. Stir very gently until completely combined.",
+      "Add and fold the lightly whipped cream. Keep in the fridge.",
+      "Line the bottom and sides of a 9 inch round pan or ring with the biscuit.",
+      "Add the cooked bananas.",
+      "Add the mousse. Freeze for 3 -4 hours.",
+      "Unmold over a nice plate, and garnish with red fruits (strawberries, raspberries)",
+      "Wrap a festive red ribbon around the cake."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": "BISCUIT",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": "BISCUIT",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": "BISCUIT",
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "BISCUIT",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "BISCUIT",
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "BISCUIT",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Almonds",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "BISCUIT",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "FRUIT",
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "FRUIT",
+        "isOptional": false
+      },
+      {
+        "name": "Bananas",
+        "unit": null,
+        "notes": "peeled and sliced",
+        "amount": "2",
+        "section": "FRUIT",
+        "isOptional": false
+      },
+      {
+        "name": "Rum",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "FRUIT",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": "MOUSSE",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "MOUSSE",
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "MOUSSE",
+        "isOptional": false
+      },
+      {
+        "name": "Bittersweet Chocolate",
+        "unit": "oz",
+        "notes": "chopped",
+        "amount": "5",
+        "section": "MOUSSE",
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "C",
+        "notes": "the cream has to be very cold when you whip it. When it's ready it should look like thick yogurt, lightly whipped",
+        "amount": "3",
+        "section": "MOUSSE",
+        "isOptional": false
+      },
+      {
+        "name": "Strawberries",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "DECORATION",
+        "isOptional": false
+      },
+      {
+        "name": "Raspberries",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "DECORATION",
+        "isOptional": false
+      },
+      {
+        "name": "Blueberries",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "DECORATION",
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "DECORATION",
+        "isOptional": false
+      },
+      {
+        "name": "Red Ribbon",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "DECORATION",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "aef86aa14207e1341da8dc95f3048c93f17b0d7311b8380fe7e7be70f2514511",
+    "lineage_hash": "839515a4c11253fc06eed453ed22507c5bb14fbc2d6f1724bb36c29b3bf3af4b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://perudelights.com/caramel-chocolate-mousse-cake-a-jolly-addition-to-our-6-christmas-treats/",
+    "fetchedAt": "2026-09-25T20:28:26.883Z"
+  },
+  "rawSource": "https://perudelights.com/caramel-chocolate-mousse-cake-a-jolly-addition-to-our-6-christmas-treats/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}
