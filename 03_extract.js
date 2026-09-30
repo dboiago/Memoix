@@ -319,6 +319,86 @@ function resolveCourseFromLd(ldField) {
   return null;
 }
 
+// Site-specific URL path categorization -- the site's own recipe-section
+// choice is a real per-URL editorial signal, but URL-path conventions vary
+// completely site to site (and even within a site, see the exclusions
+// below), so this is a per-hostname lookup, never a generic cross-site
+// heuristic. Each entry confirmed against real corpus data, same discipline
+// as every other override in this file -- only added once a segment shows
+// a real, consistent, counter-example-free pattern.
+//
+// originalflava.com: category is the FIRST path segment
+// (".../sides/pumpkin-rice/"). Confirmed safe (zero counter-examples across
+// a ~1000-URL real fetch): 'sides' (mac-n-cheese, stuffing, rice dishes,
+// green banana potato salad), 'drinks' (11 consistent punches/smoothies/
+// cocktails), 'soups-and-stews' (mostly redundant with the name-literal
+// soup/stew override already catching these, kept as a harmless fallback
+// for the rare item missing both words in its own name). Explicitly
+// EXCLUDED, each with a confirmed real counter-example: 'meals' (this
+// site's largest, closest-to-a-catchall bucket -- confirmed containing a
+// rub/seasoning, a side mango-rum-stuffing duplicated from the SAME dish
+// filed under /sides/ with reordered words, rice-and-peas dishes that
+// should be sides, a soup, and a drink), 'snacks' (confirmed containing
+// salads, a soup, two breakfast dishes, the national dish as a full meal,
+// a dessert, a side, and apps -- spans nearly the whole course enum),
+// 'vegan'/'baking'/'bbq' (dietary tag / bread-vs-dessert ambiguity /
+// main-smoking-rub-sauce ambiguity), and lifestyle segments like
+// 'feel-good' (not a real category).
+//
+// cnz.to: category is the SECOND path segment, after a constant "recipes"
+// first segment (".../recipes/soups/broccoli-soup-recipe/"). Confirmed
+// safe: 'soups' (soup), 'salads' (salad), 'desserts', 'appetizers' (apps --
+// already a recognized LD_COURSE_MAP synonym), 'starters' (apps, same),
+// 'cookies-small-cakes' (desserts), 'cakes-tarts' (desserts),
+// 'dips-spreads' (sauces -- every real example is savory, unlike the bare
+// "dip" word already rejected elsewhere for a dessert-dip counter-example),
+// 'ice-cream-sorbets' and 'candy-mignardises' (desserts -- inherently
+// unambiguous category names), 'drinks'. Explicitly EXCLUDED:
+// 'vegetables-grains'/'fish-shellfish'/'eggs' (ingredient-based, spans
+// multiple real courses, same reasoning as the already-rejected ldCategory
+// protein-tag fallback), 'meat-charcuterie' (confirmed real counter-
+// examples: cheese-fondue and a chicken-udon SOUP filed here), 'pasta'
+// (same Italian-primo-course ambiguity risk already rejected for the
+// ravioli/gnocchi/lasagna name overrides), 'bread-brioche' (confirmed
+// counter-example: both real examples are a brunch French-toast prep and a
+// dessert bread pudding, not bread itself), 'sauces-condiments' (only 2
+// examples, already internally split between sauces and pickles),
+// 'sandwiches'/'basics'/'round-ups' (out of course scope or not a single
+// dish at all).
+const ORIGINALFLAVA_PATH_COURSE_MAP = {
+  'sides': 'sides',
+  'drinks': 'drinks',
+  'soups-and-stews': 'soup',
+};
+const CNZ_PATH_COURSE_MAP = {
+  'soups': 'soup',
+  'salads': 'salad',
+  'desserts': 'desserts',
+  'appetizers': 'apps',
+  'starters': 'apps',
+  'cookies-small-cakes': 'desserts',
+  'cakes-tarts': 'desserts',
+  'dips-spreads': 'sauces',
+  'ice-cream-sorbets': 'desserts',
+  'candy-mignardises': 'desserts',
+  'drinks': 'drinks',
+};
+function resolveCourseFromSitePath(url) {
+  if (!url) return null;
+  let parsed;
+  try { parsed = new URL(url); } catch { return null; }
+  const hostname = parsed.hostname.replace(/^www\./, '');
+  const segments = parsed.pathname.split('/').filter(Boolean);
+
+  if (hostname === 'originalflava.com') {
+    return ORIGINALFLAVA_PATH_COURSE_MAP[segments[0]] || null;
+  }
+  if (hostname === 'cnz.to') {
+    return segments[0] === 'recipes' ? (CNZ_PATH_COURSE_MAP[segments[1]] || null) : null;
+  }
+  return null;
+}
+
 // Returns a two-letter ISO code or null. Only ever called with meta.ldCuisine.
 function resolveCuisineFromLd(ldCuisine) {
   for (const token of tokenizeLdField(ldCuisine)) {
@@ -327,6 +407,7 @@ function resolveCuisineFromLd(ldCuisine) {
   }
   return null;
 }
+
 
 // Famous, well-documented cases of a dish reading as one nationality but not
 // actually being from there -- German chocolate cake (named after Sam
@@ -538,8 +619,9 @@ function assessExtractionViability(meta, markdown) {
   const hasSmokingSignal = SMOKING_WOOD_PATTERN.test(rawIngredientText);
   const hasDrinksSignal = realIngredientLines.length > 0 && realIngredientLines.length <= 6
     && DRINKS_SPIRIT_PATTERN.test(rawIngredientText);
+  const pathCourse = resolveCourseFromSitePath(meta.url);
   if (!ldCourse && !meta.siteCourseHint && !nameHasCourseOverride
-      && !hasBreadSignal && !hasSmokingSignal && !hasDrinksSignal) {
+      && !hasBreadSignal && !hasSmokingSignal && !hasDrinksSignal && !pathCourse) {
     missing.push('course');
   }
 
@@ -2311,6 +2393,20 @@ async function main() {
             extracted.course = course;
             courseGrounded = true;
           }
+        }
+      }
+
+      // Deterministic site-specific URL path override -- the site's own
+      // deliberate recipe-section categorization, a real per-URL editorial
+      // signal, checked before the ingredient-content guesses below since
+      // it's stronger than inferring from ingredient words. See
+      // resolveCourseFromSitePath's own comment for the confirmed real
+      // evidence behind each included/excluded path segment.
+      if (!courseGrounded) {
+        const pathCourse = resolveCourseFromSitePath(meta.url);
+        if (pathCourse) {
+          extracted.course = pathCourse;
+          courseGrounded = true;
         }
       }
 
