@@ -519,7 +519,11 @@ const NAME_COURSE_OVERRIDES = [
   // routinely a main (vegetarian/seafood mains), not reliably a side.
   // "gratin" removed (2026-09-30): real counter-example "Hazelnut and
   // Nectarine Gratin" is a dessert fruit gratin, not a savory side.
-  { pattern: /\b(?:slaw|coleslaw|side\s*dish|mashed|roasted\s*vegetables|french\s*fries|pilaf)\b/i, course: 'sides' },
+  // "french fries" broadened to bare "fries" (2026-09-30): a real skip
+  // ("Plantain Fries") found no signal under originalflava.com's excluded
+  // snacks segment -- confirmed every other real "___ fries" title seen
+  // so far (spiced-carrot-fries) is also a side, no counter-example found.
+  { pattern: /\b(?:slaw|coleslaw|side\s*dish|mashed|roasted\s*vegetables|fries|pilaf)\b/i, course: 'sides' },
   // "dressing"/"dip"/"guacamole"/"hummus"/"glaze" excluded: "dressing" also
   // means stuffing (a side, not a sauce) in US usage; dip/guacamole/hummus
   // are commonly served as apps, not poured-on sauces; glaze is equally
@@ -552,6 +556,11 @@ const NAME_COURSE_OVERRIDES = [
   // chocolate/dessert). Confirmed real gap: meilleurduchef.com tags this
   // ultra-specifically ("Rack of Lamb") with no generic course word.
   { pattern: /\brack\s*of\s*lamb\b/i, course: 'mains' },
+  // Same reasoning as rack of lamb: a real skip found in a 2026-09-30
+  // test batch (cnz.to's "Osso Buco") sat under the excluded
+  // meat-charcuterie path segment with no other course signal, despite
+  // osso buco being an unambiguous braised-shank main with no other use.
+  { pattern: /\bosso\s*buco\b/i, course: 'mains' },
 ];
 
 // Conservative pre-model gate: skip the (slow, local) Ollama call entirely
