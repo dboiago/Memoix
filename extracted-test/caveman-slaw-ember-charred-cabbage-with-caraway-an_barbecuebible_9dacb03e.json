@@ -1,0 +1,102 @@
+{
+  "recipe": {
+    "name": "Caveman Slaw (Ember-Charred Cabbage with Caraway and Mint)",
+    "time": "6 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Light a charcoal or wood-burning grill and let the coals burn down to glowing embers. Rake out the coals in an even layer and fan to remove any loose ash.",
+      "Meanwhile, make the dressing: Combine the vinegar and sugar in a large bowl and whisk until the sugar dissolves. Whisk in the oil, followed by the mustard and caraway seeds. Season to taste with salt and pepper.",
+      "Lay the cabbage quarters directly on the coals and roast until all sides are charred, turning with tongs, about 2 minutes per side, 6 minutes in all. Transfer the charred cabbage to a rimmed sheet pan and let cool.",
+      "Place the cabbage on a cutting board and use a chef’s knife to cut away and discard the tough core of the cabbage, then thinly slice the cabbage crosswise. Add the sliced cabbage to the dressing and toss to coat. Season with salt, sugar, and vinegar to taste. You can serve the slaw right away or rest it in the refrigerator for a couple hours to meld the flavors. Just before serving, stir in the mint."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Apple Cider Vinegar",
+        "unit": "Tbsp",
+        "notes": "plus more to taste",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "Tbsp",
+        "notes": "plus more to taste",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": "alt: hazelnut oil",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dösseldorf-style",
+        "unit": "Tbsp",
+        "notes": "alt: Dijon mustard",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caraway Seeds",
+        "unit": "tsp",
+        "notes": "1 teaspoon if you really like caraway",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt and Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Head Savoy Cabbage (about 2 Pounds)",
+        "unit": "large",
+        "notes": "quartered lengthwise through the core",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thinly Sliced Fresh Mint Leaves",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "26e86a5760d221605dfb2d7c27d7f93285a2839479203dde212e3622665510fe",
+    "lineage_hash": "e5b625beaa38154427e8e39a735ebf34a8e6cbb5c045a6c428fed258a951ee2f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/caveman-slaw-ember-charred-cabbage-with-caraway-and-mint/",
+    "fetchedAt": "2026-08-03T08:25:48.394Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/caveman-slaw-ember-charred-cabbage-with-caraway-and-mint/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

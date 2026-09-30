@@ -1,0 +1,319 @@
+{
+  "recipe": {
+    "name": "Blackened Salmon Tostada",
+    "time": null,
+    "course": "mains",
+    "rating": 0,
+    "serves": "5",
+    "source": "scraped",
+    "cuisine": null,
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In an airtight container, combine all ingredients. Set aside at room temperature.",
+      "To a Vitamix blender, add all ingredients; purée.",
+      "To a heavy saucepan over medium-low heat, add all ingredients and cook 30 minutes. Strain through a chinois.",
+      "Using an electric smoker or a smoking gun, smoke oysters on the half shell until slightly opaque and smoky. Transfer to a Vitamix blender with yolk, glucose, salt, MSG, and lecithin; purée. While blending, stream in oil. When emulsified, transfer to squeeze bottle and chill.",
+      "Season salmon with Blackening Spice. In a cast iron skillet over medium flame, heat oil. Sear salmon until outside is crisp but center is still raw; drain, cool, and cube salmon. In a bowl, combine salmon, celery, bell pepper, lemon, and 15 grams Chorizo Oil. On each tostada, spread a thin layer of Avocado Purée and top with salmon mixture and dots of Smoked Oyster Aïoli. Finish with microgreens."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Grams Black Peppercorns",
+        "unit": null,
+        "notes": "ground",
+        "amount": "100",
+        "section": "Blackening Spice",
+        "isOptional": false
+      },
+      {
+        "name": "Grams Toasted Cumin Seeds",
+        "unit": null,
+        "notes": "ground",
+        "amount": "200",
+        "section": "Blackening Spice",
+        "isOptional": false
+      },
+      {
+        "name": "Grams Toasted Celery Seeds",
+        "unit": null,
+        "notes": "ground",
+        "amount": "100",
+        "section": "Blackening Spice",
+        "isOptional": false
+      },
+      {
+        "name": "Grams Dry Oregano",
+        "unit": null,
+        "notes": "ground",
+        "amount": "100",
+        "section": "Blackening Spice",
+        "isOptional": false
+      },
+      {
+        "name": "Grams Paprika",
+        "unit": null,
+        "notes": null,
+        "amount": "300",
+        "section": "Blackening Spice",
+        "isOptional": false
+      },
+      {
+        "name": "Grams Garlic Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "200",
+        "section": "Blackening Spice",
+        "isOptional": false
+      },
+      {
+        "name": "Grams Cayenne",
+        "unit": null,
+        "notes": null,
+        "amount": "100",
+        "section": "Blackening Spice",
+        "isOptional": false
+      },
+      {
+        "name": "Grams Onion Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "100",
+        "section": "Blackening Spice",
+        "isOptional": false
+      },
+      {
+        "name": "Grams Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "200",
+        "section": "Blackening Spice",
+        "isOptional": false
+      },
+      {
+        "name": "Grams Avocado",
+        "unit": null,
+        "notes": "peeled and pitted",
+        "amount": "200",
+        "section": "Avocado Purée",
+        "isOptional": false
+      },
+      {
+        "name": "Grams Cilantro",
+        "unit": null,
+        "notes": "coarsely chopped",
+        "amount": "3",
+        "section": "Avocado Purée",
+        "isOptional": false
+      },
+      {
+        "name": "Grams Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "2½",
+        "section": "Avocado Purée",
+        "isOptional": false
+      },
+      {
+        "name": "Grams Serrano Pepper Juice",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": "Avocado Purée",
+        "isOptional": false
+      },
+      {
+        "name": "Grams Lime Juice",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": "Avocado Purée",
+        "isOptional": false
+      },
+      {
+        "name": "Grams Chorizo",
+        "unit": null,
+        "notes": null,
+        "amount": "200",
+        "section": "Chorizo Oil",
+        "isOptional": false
+      },
+      {
+        "name": "Grams Rendered Bacon Fat",
+        "unit": null,
+        "notes": null,
+        "amount": "700",
+        "section": "Chorizo Oil",
+        "isOptional": false
+      },
+      {
+        "name": "Grams Paprika",
+        "unit": null,
+        "notes": null,
+        "amount": "30",
+        "section": "Chorizo Oil",
+        "isOptional": false
+      },
+      {
+        "name": "Grams Onion Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "15",
+        "section": "Chorizo Oil",
+        "isOptional": false
+      },
+      {
+        "name": "Grams Garlic Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "15",
+        "section": "Chorizo Oil",
+        "isOptional": false
+      },
+      {
+        "name": "Grams Shucked Oyster with Liquor",
+        "unit": null,
+        "notes": null,
+        "amount": "150",
+        "section": "Smoked Oyster Aïoli",
+        "isOptional": false
+      },
+      {
+        "name": "Grams Yolk",
+        "unit": null,
+        "notes": null,
+        "amount": "85",
+        "section": "Smoked Oyster Aïoli",
+        "isOptional": false
+      },
+      {
+        "name": "Grams Glucose",
+        "unit": null,
+        "notes": null,
+        "amount": "25",
+        "section": "Smoked Oyster Aïoli",
+        "isOptional": false
+      },
+      {
+        "name": "Grams Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "7½",
+        "section": "Smoked Oyster Aïoli",
+        "isOptional": false
+      },
+      {
+        "name": "Grams MSG",
+        "unit": null,
+        "notes": null,
+        "amount": "1½",
+        "section": "Smoked Oyster Aïoli",
+        "isOptional": false
+      },
+      {
+        "name": "Gram Liquid Soy Lecithin",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Smoked Oyster Aïoli",
+        "isOptional": false
+      },
+      {
+        "name": "Grams Canola Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "525",
+        "section": "Smoked Oyster Aïoli",
+        "isOptional": false
+      },
+      {
+        "name": "Grams Verlasso Salmon Fillet",
+        "unit": null,
+        "notes": "skinned, 6x4x1-inch",
+        "amount": "100",
+        "section": "To Assemble and Serve",
+        "isOptional": false
+      },
+      {
+        "name": "Neutral Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "To Assemble and Serve",
+        "isOptional": false
+      },
+      {
+        "name": "Grams Pickled Celery Brunoise",
+        "unit": null,
+        "notes": null,
+        "amount": "15",
+        "section": "To Assemble and Serve",
+        "isOptional": false
+      },
+      {
+        "name": "Grams Red Bell Pepper Brunoise",
+        "unit": null,
+        "notes": null,
+        "amount": "20",
+        "section": "To Assemble and Serve",
+        "isOptional": false
+      },
+      {
+        "name": "Grams Lemon Juice",
+        "unit": null,
+        "notes": null,
+        "amount": "30",
+        "section": "To Assemble and Serve",
+        "isOptional": false
+      },
+      {
+        "name": "Blue Corn Tostadas",
+        "unit": "pcs",
+        "notes": "2-inch",
+        "amount": "5",
+        "section": "To Assemble and Serve",
+        "isOptional": false
+      },
+      {
+        "name": "Origins Micro Leek",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "0",
+        "section": "To Assemble and Serve",
+        "isOptional": false
+      },
+      {
+        "name": "Origins Petite Hearts on Fire",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "0",
+        "section": "To Assemble and Serve",
+        "isOptional": false
+      },
+      {
+        "name": "Origins Radish Flowers",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "0",
+        "section": "To Assemble and Serve",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e15c54dead2faf3bb61f24e5a3ed71d3cf00091103b4b070da71d39bfe97798e",
+    "lineage_hash": "e11a1f138cf049a214fff14cbe5dd530b33f0fadfc9c76942e8b6c033f61af71"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.starchefs.com/recipes/blackened-salmon-tostada",
+    "fetchedAt": "2026-08-04T01:59:54.395Z"
+  },
+  "rawSource": "https://www.starchefs.com/recipes/blackened-salmon-tostada",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

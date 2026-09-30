@@ -1,0 +1,179 @@
+{
+  "recipe": {
+    "name": "Lentil Peas Soup",
+    "time": "1 hr 15 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "AI",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pressure cook the peas in 3 cups of water for 15 minutes, or boil for 30 minutes until soft.",
+      "Chop the rest of the ingredients, and set aside. Finely chop the chive and thyme. Set aside also.",
+      "Have the green fig and cassava boiled, peeled, diced and set aside.",
+      "When the peas is soft, add the rest of water (6 cups) into the pot.",
+      "Add the onion, pumpkin, carrots, sweet pepper, eddoes and pimento pepper.",
+      "Add the unsalted butter.",
+      "Then the green seasoning and the tomato paste. Stir.",
+      "Add the rest of the ingredients (boiled banana and cassava) to the broth",
+      "Cook for no more than 30 minutes, or until the carrots can be cut easily with a spoon – however, not to soft."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Lentil Peas",
+        "unit": "C",
+        "notes": "dried",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water to Boil the Lentil Peas",
+        "unit": "C",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pumpkin Chopped",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lg. Sweet Pepper Chopped",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot Chopped",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eddoes Chopped",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lg Onion Diced",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pimento Pepper Chopped",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Pepper Chopped",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chadon Beni Leaves Finely Chopped",
+        "unit": null,
+        "notes": null,
+        "amount": "9",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Big Leaf Thyme Finely Chopped",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Seasoning",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Boiled Figs Bananas",
+        "unit": null,
+        "notes": "diced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Boiled Cassava Diced",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "11db98c4323f99c9033205ea966997ea40e05cadff31dbfb3b2857ee876d6c5a",
+    "lineage_hash": "b651d7f94c122ce37777353d5a985a029fb8eff66c1fccef699b7ebba35f6c7e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.simplytrinicooking.com/lentil-peas-soup/",
+    "fetchedAt": "2026-09-26T00:27:57.897Z"
+  },
+  "rawSource": "https://www.simplytrinicooking.com/lentil-peas-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

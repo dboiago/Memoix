@@ -1,0 +1,133 @@
+{
+  "recipe": {
+    "name": "Doodh Potol",
+    "time": "30 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "5",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "88",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Peel the potol entirely. Even though our other potol recipes call for removing peels in alternating strips, for this recipe, we want the potol fully peeled so that it soaks up the curry and becomes juicy. Once peeled, make shallow slits on both ends to allow juices to enter the potol.",
+      "Heat vegetable oil in a pan. Fry the potol on medium-high heat for about 8 minutes or until the potol turn golden. Remove from the oil and set aside.",
+      "Temper the same oil with cardamom, cloves, and cinnamon. Add cumin powder and turmeric, and fry these spices for about 15 seconds. Take care not to burn them.",
+      "Add the peeled potol back to the pan and fry them with the spices on medium heat for about 4 minutes.",
+      "Add hot milk to the pan, followed by salt and sugar. Bubble everything on medium heat for 6 minutes until the potol are tender.",
+      "When the potol have become soft and juicy, and the milk has reduced to a creamy sauce, add ghee. Turn off the heat and rest for 2 minutes before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Small",
+        "unit": "g",
+        "notes": "pointed gourd, kochi potol",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pcs Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pcs Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pc Cinnamon",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "78f2cede3712668d59f5473a7baf5b2536496837227297bfe2546d59caecafbc",
+    "lineage_hash": "e6bcff08753d2708806fbebe45e9c23f594fc03f6382980916163b0e07b84d88"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.bongeats.com/recipe/doodh-potol",
+    "fetchedAt": "2026-08-01T19:20:45.269Z"
+  },
+  "rawSource": "https://www.bongeats.com/recipe/doodh-potol",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

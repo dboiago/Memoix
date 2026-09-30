@@ -1,0 +1,88 @@
+{
+  "recipe": {
+    "name": "Dark Chocolate Sorbet",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pre-freeze the bowl of your ice cream maker as instructed by your friend the manufacturer.",
+      "In a medium saucepan, whisk together the water, cocoa powder, and sugar.",
+      "Set the pan over medium heat and bring to a boil, whisking continually.",
+      "Remove from heat and add the chopped chocolate. Let rest for 30 seconds as the chocolate begins to melt, add the vanilla and salt, then stir until the chocolate is completely melted.",
+      "Let cool on the counter, then refrigerate until chilled.",
+      "Whisk the mixture again just before freezing, and freeze using your ice cream maker."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "275",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": "unsweetened Dutch-process",
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate",
+        "unit": "g",
+        "notes": "bittersweet (70% cocoa solids), chopped as finely as your patience allows",
+        "amount": "85",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": "pure",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "32e0c5c69705fa51a77201af8aed5a970565202f375b21567fe41940d83f6818",
+    "lineage_hash": "dd188847b9d5a15725ca6d778cd206680048e48f1ad39f75d7c9b91ac2e92bbc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/ice-cream-sorbets/dark-chocolate-sorbet-recipe/",
+    "fetchedAt": "2026-09-26T01:53:34.318Z"
+  },
+  "rawSource": "https://cnz.to/recipes/ice-cream-sorbets/dark-chocolate-sorbet-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

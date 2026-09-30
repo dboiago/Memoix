@@ -1,0 +1,116 @@
+{
+  "recipe": {
+    "name": "Sour Cream Pound Cake",
+    "time": "1 hr 25 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "350",
+      "carbohydrateContent": "38",
+      "fatContent": "20",
+      "proteinContent": "5"
+    },
+    "directions": [
+      "Preheat the oven to 350 °F. Butter and flour a 9&quot;x5&quot; loaf pan or Bundt pan.",
+      "Combine 3&#32;large eggs, 4&#32;egg yolks, 1 teaspoon&#32;vanilla extract and half of the sour cream in a small bowl, whisk to combine and set aside.",
+      "Sift together 8 oz&#32;cake flour, ¼ teaspoon&#32;table salt, and 1 teaspoon&#32;baking powder in a mixing bowl. Add 10 oz&#32;granulated sugar to the flour and mix at low speed for 30 seconds. Add 8 oz&#32;unsalted butter to the flour and mix until combined. Add the remaining sour cream and increase the speed to medium high. Mix for a full 2-3 minutes. The batter will lighten in color and texture. If using a hand mixer add another minute to the mixing time.",
+      "Scrape the bowl and beater thoroughly. On low speed, add the egg mixture in 3 increments, scraping the bowl after each addition. Mix just until the eggs are incorporated.",
+      "Pour the batter into the prepared pan. Bake at 350°F until a toothpick inserted in the middle comes out clean (about 55 minutes)."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "room temp",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": "room temp",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sour Cream",
+        "unit": "oz",
+        "notes": "½ cup, divided",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cake Flour",
+        "unit": "oz",
+        "notes": "1 ¾ cups, see note",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "1 ¼ cups",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "room temp",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7b886e86e719faa297dfda12a9cf2f599f8c44dfcf6177661f5dfdf89f5f15d8",
+    "lineage_hash": "813d35b6e4f85065526c12b355db45f415bead21f0be8b6f0274fc1c4b0e652b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2017/03/01/sour-cream-pound-cake/",
+    "fetchedAt": "2026-08-01T17:58:58.892Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2017/03/01/sour-cream-pound-cake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

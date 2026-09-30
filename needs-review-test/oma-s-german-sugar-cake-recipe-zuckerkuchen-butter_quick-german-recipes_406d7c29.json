@@ -1,0 +1,109 @@
+{
+  "recipe": {
+    "name": "Zuckerkuchen (Butterkuchen)",
+    "time": "1 hr 55 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "20",
+    "source": "scraped",
+    "cuisine": "DE",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a large bowl, mix yeast, water, and 1 teaspoon sugar. Let stand for about 5 to 10 minutes. This should be foamy. (It will be if the yeast is not old.)",
+      "Mix in 1 cup milk, oil, egg, and ½ cup sugar. Beat in 2 cups flour and mix well. Let stand 10 minutes.",
+      "Add more flour until a soft dough results.",
+      "Remove from bowl and knead until smooth and elastic, adding flour ONLY if necessary if it is too sticky.",
+      "Put smooth dough into a greased bowl. Cover with a clean tea towel and put in a draft-free warm place for about 30–60 minutes, until doubled in size.",
+      "Grease a 15x10-inch jelly-roll pan. Roll out dough to fit pan and place in pan.",
+      "Make small hollows in the surface of the dough with your fingers.",
+      "Brush dough with ½ cup milk or cream. Cut butter into small pieces and place in hollows. Sprinkle ⅔ cup sugar and nuts over dough.",
+      "Cover and let stand in a warm draft-free place for about 30 minutes.",
+      "Preheat oven to 400°F (205°C). Bake for 20 to 25 minutes until golden brown.",
+      "Let cool slightly and cut into 20 pieces."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Active Dry Yeast",
+        "unit": "Tbsp",
+        "notes": "10 grams",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lukewarm Water",
+        "unit": "C",
+        "notes": "60 milliliters",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "tsp",
+        "notes": "4 grams",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lukewarm Milk",
+        "unit": "C",
+        "notes": "240 milliliters",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Neutral Oil",
+        "unit": "C",
+        "notes": "120 milliliters",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": "100 grams",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "About 4-4½ Cups (520 - 585 Grams) All-purpose Flour",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fa42e8c92d4e70818aa068bbd774f530660805c5724aca3a0098c634bdf2a15b",
+    "lineage_hash": "06f60da93c7dbf87eb61302cbf80099c9760dfcac2242b5d1083bfe84c34047e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.quick-german-recipes.com/butter-cake-recipe.html",
+    "fetchedAt": "2026-09-25T21:48:44.850Z"
+  },
+  "rawSource": "https://www.quick-german-recipes.com/butter-cake-recipe.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

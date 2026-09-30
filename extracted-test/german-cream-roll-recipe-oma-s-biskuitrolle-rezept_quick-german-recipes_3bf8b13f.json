@@ -1,0 +1,100 @@
+{
+  "recipe": {
+    "name": "German Cream Roll (Biskuitrolle)",
+    "time": "3 hr 45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "DE",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Line a rimmed 17x11-inch cookie sheet with parchment paper. Have a clean dishtowel ready for rolling up the cake.",
+      "Preheat oven to 400°F.",
+      "In a small bowl, mix together flour, cornstarch and baking powder, and set aside.",
+      "In a separate bowl, whip egg whites with 3 tablespoons water until stiff. Slowly whip in granulated sugar. Gently stir in egg yolks. Fold in the flour mixture.",
+      "Spread batter on parchment-lined cookie sheet.",
+      "Bake 8 to 10 minutes until wooden pick inserted in centre comes out clean.",
+      "Generously sprinkle powdered sugar on the clean dishtowel and invert the hot cake right on top of it. Peel off parchment paper. Dust the cake with some powdered sugar and immediately roll up the cake and towel together, starting from the narrow end. Set aside to cool.",
+      "Beat heavy cream, Whip It, and powdered sugar (to taste) until stiff.",
+      "Unroll cooled cake. Brush with jam if using. Spread with whipped cream. Cover with the strawberries. Roll up, using the towel to help lift the cake.",
+      "Cover and refrigerate for several hours. Sprinkle with additional powdered sugar just before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": "98 grams",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": "24 grams",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": "4 grams",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "separated",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cold Water",
+        "unit": "Tbsp",
+        "notes": "45 milliliters",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": "100 grams",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Powdered Sugar for Dusting on Towel & Cake",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2c98049fdc47c6a9ebd54dfcfca6c48ec3133044eda319be914748b6d21f8e70",
+    "lineage_hash": "ed56e9e588b960ae30bfbec30ac43d672992510c8adba12bd566790dc3d54738"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.quick-german-recipes.com/cream-roll-recipe.html",
+    "fetchedAt": "2026-09-25T19:34:58.283Z"
+  },
+  "rawSource": "https://www.quick-german-recipes.com/cream-roll-recipe.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

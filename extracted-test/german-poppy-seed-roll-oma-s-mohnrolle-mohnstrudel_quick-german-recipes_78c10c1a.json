@@ -1,0 +1,101 @@
+{
+  "recipe": {
+    "name": "German Poppy Seed Roll / Mohnrolle / Mohnstrudel",
+    "time": "2 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "DE",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Put all the yeast dough ingredients in the Bread Machine pan. Use the 'dough' setting and start. This usually takes about 1½ hours. Check after a few minutes that the dough isn't too sticky. If it is, add a bit more flour.",
+      "In the meantime, if you are using raisins, put them into a small bowl and sprinkle with rum.",
+      "Prepare your cookie sheet by greasing it with butter.",
+      "Make the poppy seed filling by mixing together the poppy seeds, sugar, butter, lemon juice, lemon zest, and flour in a small saucepan. Add milk and stir. Bring to simmer and simmer for about ½ hour until thickened, stirring occasionally. Let cool before using.",
+      "When the dough cycle is finished, remove the dough. Put a bit of flour on the counter and knead the dough slightly. Divide the dough in half. Roll out one half until it makes a rectangle about 10x10-inch. Do this by patting the dough, pulling it, and then using a rolling pin. Keep lifting the dough from the counter to make sure it doesn't stick. Try to use as little extra flour as possible.",
+      "Drain the raisins, and add them to the poppy seed filling.",
+      "Spread half the poppyseed filling over the surface of the dough, keeping about 1-inch from the edges. Roll up, jelly-roll style. Place on cookie sheet. Repeat with other half of the dough.",
+      "Cover rolls and let rise in a warm, draft-free place for about 30 minutes.",
+      "Preheat oven to 350°F.",
+      "Gently brush rolls with melted butter. Bake for about 30 - 35 minutes or until golden brown.",
+      "Let cool on cookie sheet. Brush with additional melted butter and sprinkle with powdered sugar, if desired. Serve slightly warm."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": "50 grams",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "C",
+        "notes": "293 grams, all-purpose",
+        "amount": "2¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "6 grams",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": "180 milliliters, lukewarm",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "30 grams, room temperature",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Active Dry Yeast",
+        "unit": "tsp",
+        "notes": "7 grams, 1 packet",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a1a4227fc8d2f8936c2f05703215ae6d405c97a4187619bd81b900fe02ecfa37",
+    "lineage_hash": "02496398e175951fdba3a4626a83b0203d0a54b24095fd823adad7b3a5689f49"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.quick-german-recipes.com/poppy-seed-roll.html",
+    "fetchedAt": "2026-09-25T19:50:15.921Z"
+  },
+  "rawSource": "https://www.quick-german-recipes.com/poppy-seed-roll.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}
