@@ -347,24 +347,43 @@ function resolveCourseFromLd(ldField) {
 //
 // cnz.to: category is the SECOND path segment, after a constant "recipes"
 // first segment (".../recipes/soups/broccoli-soup-recipe/"). Confirmed
-// safe: 'soups' (soup), 'salads' (salad), 'desserts', 'appetizers' (apps --
-// already a recognized LD_COURSE_MAP synonym), 'starters' (apps, same),
-// 'cookies-small-cakes' (desserts), 'cakes-tarts' (desserts),
-// 'dips-spreads' (sauces -- every real example is savory, unlike the bare
-// "dip" word already rejected elsewhere for a dessert-dip counter-example),
-// 'ice-cream-sorbets' and 'candy-mignardises' (desserts -- inherently
-// unambiguous category names), 'drinks'. Explicitly EXCLUDED:
-// 'vegetables-grains'/'fish-shellfish'/'eggs' (ingredient-based, spans
-// multiple real courses, same reasoning as the already-rejected ldCategory
-// protein-tag fallback), 'meat-charcuterie' (confirmed real counter-
-// examples: cheese-fondue and a chicken-udon SOUP filed here), 'pasta'
-// (same Italian-primo-course ambiguity risk already rejected for the
-// ravioli/gnocchi/lasagna name overrides), 'bread-brioche' (confirmed
-// counter-example: both real examples are a brunch French-toast prep and a
-// dessert bread pudding, not bread itself), 'sauces-condiments' (only 2
-// examples, already internally split between sauces and pickles),
-// 'sandwiches'/'basics'/'round-ups' (out of course scope or not a single
-// dish at all).
+// safe against a real ~850-URL fetch: 'soups' (soup), 'salads' (salad),
+// 'desserts', 'appetizers' (apps -- already a recognized LD_COURSE_MAP
+// synonym), 'starters' (apps, same), 'cookies-small-cakes' (desserts),
+// 'cakes-tarts' (desserts), 'ice-cream-sorbets' and 'candy-mignardises'
+// (desserts -- inherently unambiguous category names), 'drinks',
+// 'breakfast' (brunch -- every real example is granola/oatmeal). Explicitly
+// EXCLUDED: 'vegetables-grains'/'fish-shellfish'/'eggs' (ingredient-based,
+// spans multiple real courses, same reasoning as the already-rejected
+// ldCategory protein-tag fallback -- confirmed containing real mains like
+// cep-and-walnut-pizza and oven-baked-falafel and real salads like
+// cauliflower-salad-a-la-cafe-pinson), 'meat-charcuterie' (confirmed real
+// counter-examples: cheese-fondue and a chicken-udon SOUP filed here),
+// 'pasta' (same Italian-primo-course ambiguity risk already rejected for
+// the ravioli/gnocchi/lasagna name overrides -- confirmed containing both
+// real mains like spaghetti-with-crushed-sardine-and-tomato-sauce and
+// side/salad-style dishes like fregola-sarda-with-zucchini-and-pinenuts),
+// 'bread-brioche' (confirmed counter-example: both real examples are a
+// brunch French-toast prep and a dessert bread pudding, not bread itself),
+// 'sauces-condiments' (only 2 examples, already internally split between
+// sauces and pickles), 'sandwiches'/'basics'/'round-ups' (out of course
+// scope or not a single dish at all), 'jams-nut-butters' (mixed: jams are
+// already independently caught by the NAME_COURSE_OVERRIDES jam/jelly
+// pattern -> pickles, but the nut-butter items in the same folder --
+// cashew-butter, lightly-salted-crunchy-almond-butter -- are spreads, not
+// preserves, and would be wrongly forced to pickles if mapped), 'dairy-free'
+// (a dietary tag, not a course -- confirmed containing a plain pork main),
+// 'other-recipes' (not food at all -- confirmed containing a homemade
+// deodorant recipe).
+//
+// 'dips-spreads' explicitly EXCLUDED (changed from an earlier 'sauces'
+// mapping): most real examples ARE apps-style dips (hummus, shallot-
+// parsley, tomato-feta, white-bean-and-nut-butter), but the same folder
+// also contains real pour-on sauces by name (green-romesco-sauce, easy-
+// peanut-sauce) that a blanket 'apps' mapping would misfile -- and pesto-
+// named items in this same folder are already independently routed to
+// 'sauces' by the existing NAME_COURSE_OVERRIDES pesto pattern before
+// reaching this path check at all, so nothing is lost by excluding it here.
 const ORIGINALFLAVA_PATH_COURSE_MAP = {
   'sides': 'sides',
   'drinks': 'drinks',
@@ -378,10 +397,10 @@ const CNZ_PATH_COURSE_MAP = {
   'starters': 'apps',
   'cookies-small-cakes': 'desserts',
   'cakes-tarts': 'desserts',
-  'dips-spreads': 'sauces',
   'ice-cream-sorbets': 'desserts',
   'candy-mignardises': 'desserts',
   'drinks': 'drinks',
+  'breakfast': 'brunch',
 };
 function resolveCourseFromSitePath(url) {
   if (!url) return null;
@@ -486,8 +505,11 @@ const NAME_COURSE_OVERRIDES = [
   // Rice" uses "chili" as a heat-level modifier, not the Tex-Mex stew dish).
   { pattern: /\b(?:chowder|bisque|consomm[ée]|gazpacho|minestrone|tom\s*yum|ramen|pho|ph[ơở])\b/i, course: 'soup' },
   // cookies/biscotti/shortbread/fudge added: no savory counterpart exists
-  // for any of the four, unlike cake/pie/tart/etc. above.
-  { pattern: /\b(?:cheesecake|cupcakes?|macarons?|tiramisu|(?:creme|cr[eè]me)\s*br[uû]l[ée]e|pavlova|baklava|gelato|meringues?|gateau|petit\s*fours?|entremets?|mille-?feuille|[ée]clairs?|profiteroles?|dacquoise|genoise|brownies?|trifle|torte|bonbons?|ganache|sponge\s*cake|layer\s*cake|opera\s*cake|ice\s*cream|sorbet|yule\s*logs?|b[uû]che\s*de\s*no[ëe]l|cookies?|biscotti|shortbread|fudge)\b/i, course: 'desserts' },
+  // for any of the four, unlike cake/pie/tart/etc. above. "mille-feuille"
+  // removed (2026-09-30): real counter-example "Artichoke and Goat Cheese
+  // Mille-Feuille" is a savory stacked starter, same sweet/savory coin-flip
+  // already excluded for roulade/souffle.
+  { pattern: /\b(?:cheesecake|cupcakes?|macarons?|tiramisu|(?:creme|cr[eè]me)\s*br[uû]l[ée]e|pavlova|baklava|gelato|meringues?|gateau|petit\s*fours?|entremets?|[ée]clairs?|profiteroles?|dacquoise|genoise|brownies?|trifle|torte|bonbons?|ganache|sponge\s*cake|layer\s*cake|opera\s*cake|ice\s*cream|sorbet|yule\s*logs?|b[uû]che\s*de\s*no[ëe]l|cookies?|biscotti|shortbread|fudge)\b/i, course: 'desserts' },
   // "bread"/"buns"/"rolls"/"dough"/"loaf"/"loaves" excluded: bread pudding,
   // cinnamon buns, spring/egg rolls, cookie/pasta dough, and meatloaf are
   // all real dishes containing that word that are not bread.
@@ -495,14 +517,19 @@ const NAME_COURSE_OVERRIDES = [
   { pattern: /\bsalads?\b/i, course: 'salad' },
   // "wedges"/"rice dish"/"risotto" excluded: risotto especially is
   // routinely a main (vegetarian/seafood mains), not reliably a side.
-  { pattern: /\b(?:slaw|coleslaw|side\s*dish|mashed|roasted\s*vegetables|french\s*fries|gratin|pilaf)\b/i, course: 'sides' },
+  // "gratin" removed (2026-09-30): real counter-example "Hazelnut and
+  // Nectarine Gratin" is a dessert fruit gratin, not a savory side.
+  { pattern: /\b(?:slaw|coleslaw|side\s*dish|mashed|roasted\s*vegetables|french\s*fries|pilaf)\b/i, course: 'sides' },
   // "dressing"/"dip"/"guacamole"/"hummus"/"glaze" excluded: "dressing" also
   // means stuffing (a side, not a sauce) in US usage; dip/guacamole/hummus
   // are commonly served as apps, not poured-on sauces; glaze is equally
   // common as a dessert glaze (donut) as a savory one (ham).
   { pattern: /\b(?:gravy|aioli|mayonnaise|mayo|ketchup|mustard|vinaigrette|pesto|salsa|relish|chutney|coulis|marinade|reduction|chimichurri|gremolata)\b/i, course: 'sauces' },
   // "hash" excluded: used loosely outside a breakfast context.
-  { pattern: /\b(?:brunch|breakfast|pancakes?|waffles?|french\s*toast|eggs?\s*benedict|omelett?e|frittata|poached\s*eggs?|quiche)\b/i, course: 'brunch' },
+  // "scones?" added (2026-09-30): real cnz.to case "Aged Gouda and Dried
+  // Pear Scones" was landing in 'apps' via the site's own appetizers
+  // folder despite reading as a brunch/tea item, not a starter.
+  { pattern: /\b(?:brunch|breakfast|pancakes?|waffles?|french\s*toast|eggs?\s*benedict|omelett?e|frittata|poached\s*eggs?|quiche|scones?)\b/i, course: 'brunch' },
   // "dumpling(s)"/"wonton"/"croquette(s)" excluded: routinely a full main
   // (potstickers, wonton soup, croquettes as a side), not reliably an app.
   { pattern: /\b(?:appetizers?|starters?|tapas|antipasto|bruschetta|crostini|canap[ée]s?|spring\s*rolls?|egg\s*rolls?|arancini|tartare|carpaccio|samosas?|empanadas?|ceviche)\b/i, course: 'apps' },
