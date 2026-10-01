@@ -588,8 +588,23 @@ const ANY_MEASUREMENT_PATTERN =
 // purpose, but that null was wrongly reused here as "certainly no
 // directions exist," causing a real recipe to be skipped before the model
 // ever got a chance to read it.
+// Broadened (2026-10-01) after cnz.to's "Stuffed Eggplant Mini-Rolls" was
+// wrongly skipped: its real, complete, numbered directions ("Lightly oil
+// a large baking dish... Top with 1 teaspoon tapenade, sprinkle with a few
+// pine nuts, and roll up the slice...") used zero of the prior verbs.
+// Every added verb below was independently confirmed in a real recipe's
+// actual directions text in the same batch (cook/season/cover: brown stew
+// chicken; serve/taste/discard/strain/process/spread: chilled pea pod soup
+// and peacamole; heat/brown/turn/lower/dredge/arrange/reduce/melt: osso
+// buco; fry/cut: plantain fries; sprinkle/beat/cool/flip: creme caramel;
+// chill: saltfish fritters; boil/soak: jamaican red pea soup and rum cake;
+// caramelise: coconut curry vegan stew; grease: gateau sirop muffins and
+// rum cake; grind: cold-brew coffee). This pattern only ever widens the
+// pre-model gate's "still worth trying" side -- a false positive here just
+// means an ordinary model call on a non-recipe page, not a wrong result,
+// so there's no accuracy downside to being generous with real verbs.
 const ANY_DIRECTION_VERB_PATTERN =
-  /\b(?:preheat|whisk|simmer|marinate|refrigerate|saut[ée]|mince|knead|dice|drain|rinse|fold\s+in|bake|roast|blend|pur[ée]e|transfer\s+to|stir(?:\s+(?:in|until))?|combine|pour|place\s+the|add\s+the|remove\s+from|mix(?:\s+(?:in|until|together))?)\b/i;
+  /\b(?:preheat|whisk|simmer|marinate|refrigerate|saut[ée]|mince|knead|dice|drain|rinse|fold\s+in|bake|roast|blend|pur[ée]e|transfer\s+to|stir(?:\s+(?:in|until))?|combine|pour|place\s+the|add\s+the|remove\s+from|mix(?:\s+(?:in|until|together))?|cook(?:ed|ing)?|serv(?:e|ed|ing)|season(?:ed)?|heat(?:\s*up)?|brown(?:ed)?|fr(?:y|ied)|sprinkle|beat|cool(?:ed|ing)?|chill(?:ed|ing)?|taste|discard(?:ed)?|boil(?:ed|ing)?|soak(?:ed|ing)?|turn(?:ed)?|lower(?:ed)?|cover(?:ed)?|strain(?:ed)?|process(?:ed)?|spread|flip(?:ped)?|cut|melt(?:ed|ing)?|caramel(?:ize|ise)d?|dredge(?:d)?|arrange(?:d)?|reduce(?:d)?|grease(?:d)?|grind|set\s+aside|chop(?:ped)?)\b/i;
 // Hoisted so the pre-model check below and the post-extraction override
 // further down the file both read the exact same patterns -- previously
 // duplicated inline in the post-extraction block only, which is what let
