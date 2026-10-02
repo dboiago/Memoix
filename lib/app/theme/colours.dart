@@ -31,7 +31,7 @@ class MemoixColors {
   static const Color vegn = Color(0xFF80CBC4);        // Teal
   static const Color scratch = Color(0xFFB0BEC5);     // Blue-gray
   static const Color drinks = Color(0xFF81D4FA);      // Light blue
-  static const Color standalone = Color(0xFF9FA8DA)   // Indigo
+  static const Color standalone = Color(0xFF9FA8DA);   // Indigo
 
   // Cuisine style colours (for highlighting rows like in spreadsheet)
   static const Color korean = Color(0xFFFFE082);      // Light gold
