@@ -156,6 +156,8 @@ class MemoixColors {
         return salads;
       case 'brunch':
         return brunch;
+      case 'standalone':
+        return standalone;
       case 'sides':
         return sides;
       case 'desserts':

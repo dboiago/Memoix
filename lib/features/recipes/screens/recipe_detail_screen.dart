@@ -33,7 +33,7 @@ import '../widgets/ingredient_reference_sheet.dart';
 bool shouldShowCompareButton(Recipe recipe) {
   final allowed = {
     'apps', 'appetizers', 'soups', 'mains', "veg'n", 'vegn', 'sides', 'salads',
-    'desserts', 'brunch', 'breads', 'sauces', 'rubs', 'pickles',
+    'desserts', 'brunch', 'standalone', 'breads', 'sauces', 'rubs', 'pickles',
   };
   final blocked = {
     'drinks', 'pizza', 'pizzas', 'sandwiches', 'cheese', 'cellar',

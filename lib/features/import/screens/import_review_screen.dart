@@ -560,6 +560,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
       'mains',
       'desserts',
       'brunch',
+      'standalone',
       'smoking',
       'modernist',
     ];

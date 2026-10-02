@@ -175,7 +175,7 @@ class _RecipePickerModalState extends ConsumerState<RecipePickerModal> {
                 // Define course order matching main screen (sortOrder from course.dart)
                 const courseOrder = [
                   'Apps', 'Soups', 'Mains', 'Veg\'n', 'Sides', 'Salads', 
-                  'Desserts', 'Brunch', 'Drinks', 'Breads', 'Sauces', 'Rubs', 'Pickles',
+                  'Desserts', 'Brunch', 'Standalone', 'Drinks', 'Breads', 'Sauces', 'Rubs', 'Pickles',
                   'Modernist', 'Pizzas', 'Sandwiches', 'Smoking', 'Cheese', 'Cellar', 'Scratch',
                 ];
 
@@ -249,6 +249,7 @@ class _RecipePickerModalState extends ConsumerState<RecipePickerModal> {
       'salads': 'Salads',
       'desserts': 'Desserts',
       'brunch': 'Brunch',
+      'standalone': 'Standalone',
       'drinks': 'Drinks',
       'breads': 'Breads',
       'sauces': 'Sauces',

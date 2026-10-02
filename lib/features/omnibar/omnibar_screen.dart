@@ -101,7 +101,7 @@ class _OmniCandidate {
 
 const Set<String> _neverSuggestCourses = {'sauces', 'rubs', 'scratch', 'cellar', 'cheese'};
 
-const Set<String> _generalOnlyCourses = {'pickles', 'salad', 'sides', 'apps'};
+const Set<String> _generalOnlyCourses = {'pickles', 'salad', 'sides', 'apps', 'standalone'};
 
 const Set<String> _generalAndMealCourses = {'mains', 'soups', 'soup', 'brunch', 'vegn', 'sandwiches'};
 
@@ -118,7 +118,7 @@ const Map<MealContext, Set<String>> _mealContextCourses = {
   MealContext.drink: {'drinks'},
   MealContext.cheese: {'cheese'},
   MealContext.cellar: {'cellar'},
-  MealContext.snack: {'apps', 'sides', 'salads', 'pickles', 'sandwiches'},
+  MealContext.snack: {'apps', 'standalone', 'sides', 'salads', 'pickles', 'sandwiches'},
   MealContext.charcuterie: {'cheese', 'pickles'},
 };
 
@@ -386,6 +386,7 @@ String _courseDisplayName(String slug) {
     'sides': 'Sides',
     'salad': 'Salad',
     'brunch': 'Brunch',
+    'standalone': 'Standalone',
     'vegn': "Veg'n",
     'pickles': 'Pickles',
     'sandwiches': 'Sandwiches',

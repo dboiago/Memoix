@@ -424,6 +424,7 @@ class _DraftEditorScreenState extends ConsumerState<DraftEditorScreen> {
                 DropdownMenuItem(value: 'salad', child: Text('Salad')),
                 DropdownMenuItem(value: 'desserts', child: Text('Desserts')),
                 DropdownMenuItem(value: 'brunch', child: Text('Brunch')),
+                DropdownMenuItem(value: 'standalone', child: Text('Standalone')),
                 DropdownMenuItem(value: 'drinks', child: Text('Drinks')),
                 DropdownMenuItem(value: 'breads', child: Text('Breads')),
                 DropdownMenuItem(value: 'sauces', child: Text('Sauces')),

@@ -87,7 +87,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
   bool get shouldShowCompareButton {
     final allowed = {
       'apps', 'appetizers', 'soups', 'mains', "veg'n", 'vegn', 'sides', 'salads',
-      'desserts', 'brunch', 'breads', 'sauces', 'rubs', 'pickles',
+      'desserts', 'brunch', 'standalone', 'breads', 'sauces', 'rubs', 'pickles',
     };
     final blocked = {
       'drinks', 'pizza', 'pizzas', 'sandwiches', 'cheese', 'cellar',
@@ -332,7 +332,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
     // Ensure the result is a valid dropdown value
     const validSlugs = {
       'apps', 'soup', 'mains', 'vegn', 'sides', 'salad', 'desserts', 
-      'brunch', 'drinks', 'breads', 'sauces', 'rubs', 'pickles', 
+      'brunch', 'standalone', 'drinks', 'breads', 'sauces', 'rubs', 'pickles', 
       'modernist', 'pizzas', 'sandwiches', 'smoking', 'cheese', 'scratch',
     };
     
@@ -1035,6 +1035,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
                 DropdownMenuItem(value: 'salad', child: Text('Salad')),
                 DropdownMenuItem(value: 'desserts', child: Text('Desserts')),
                 DropdownMenuItem(value: 'brunch', child: Text('Brunch')),
+                DropdownMenuItem(value: 'standalone', child: Text('Standalone')),
                 DropdownMenuItem(value: 'drinks', child: Text('Drinks')),
                 DropdownMenuItem(value: 'breads', child: Text('Breads')),
                 DropdownMenuItem(value: 'sauces', child: Text('Sauces')),
