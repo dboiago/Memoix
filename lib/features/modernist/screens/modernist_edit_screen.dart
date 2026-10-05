@@ -12,6 +12,7 @@ import '../models/modernist_recipe.dart';
 import '../repository/modernist_repository.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
 import '../../recipes/models/course.dart';
+import '../../recipes/models/cuisine.dart';
 import '../../recipes/models/recipe.dart';
 import '../../recipes/repository/recipe_repository.dart';
 import '../../recipes/screens/recipe_edit_screen.dart';
@@ -1963,7 +1964,9 @@ class _ModernistEditScreenState extends ConsumerState<ModernistEditScreen> {
                         } else {
                           filteredRecipes = availableRecipes.where((r) =>
                             r.name.toLowerCase().contains(query.toLowerCase()) ||
-                            (r.cuisine?.toLowerCase().contains(query.toLowerCase()) ?? false),
+                            (r.cuisine?.toLowerCase().contains(query.toLowerCase()) ?? false) ||
+                            Cuisine.toAdjective(r.cuisine).toLowerCase().contains(query.toLowerCase()) ||
+                            (r.subcategory?.toLowerCase().contains(query.toLowerCase()) ?? false),
                           ).toList();
                         }
                       });

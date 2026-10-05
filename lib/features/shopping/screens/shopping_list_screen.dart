@@ -15,6 +15,7 @@ import '../../../core/providers.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
 import '../../recipes/repository/recipe_repository.dart';
 import '../../recipes/models/recipe.dart';
+import '../../recipes/models/cuisine.dart';
 import '../../mealplan/models/meal_plan.dart';
 
 class ShoppingListScreen extends ConsumerWidget {
@@ -1133,6 +1134,8 @@ class _RecipeSelectorScreenState extends ConsumerState<_RecipeSelectorScreen> {
                     : recipes.where((r) =>
                         r.name.toLowerCase().contains(_searchQuery) ||
                         (r.cuisine?.toLowerCase().contains(_searchQuery) ?? false) ||
+                        Cuisine.toAdjective(r.cuisine).toLowerCase().contains(_searchQuery) ||
+                        (r.subcategory?.toLowerCase().contains(_searchQuery) ?? false) ||
                         r.course.toLowerCase().contains(_searchQuery),
                       ).toList();
 

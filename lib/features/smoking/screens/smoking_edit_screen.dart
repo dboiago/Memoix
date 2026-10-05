@@ -13,6 +13,7 @@ import '../../../core/utils/suggestions.dart';
 import '../../modernist/models/modernist_recipe.dart';
 import '../../modernist/screens/modernist_edit_screen.dart';
 import '../../recipes/models/course.dart';
+import '../../recipes/models/cuisine.dart';
 import '../../recipes/models/recipe.dart';
 import '../../recipes/repository/recipe_repository.dart';
 import '../../recipes/screens/recipe_edit_screen.dart';
@@ -1998,7 +1999,9 @@ class _SmokingEditScreenState extends ConsumerState<SmokingEditScreen> {
                         } else {
                           filteredRecipes = availableRecipes.where((r) =>
                             r.name.toLowerCase().contains(query.toLowerCase()) ||
-                            (r.cuisine?.toLowerCase().contains(query.toLowerCase()) ?? false),
+                            (r.cuisine?.toLowerCase().contains(query.toLowerCase()) ?? false) ||
+                            Cuisine.toAdjective(r.cuisine).toLowerCase().contains(query.toLowerCase()) ||
+                            (r.subcategory?.toLowerCase().contains(query.toLowerCase()) ?? false),
                           ).toList();
                         }
                       });

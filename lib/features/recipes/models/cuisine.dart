@@ -459,7 +459,7 @@ class Cuisine {
       'teochew': 'Chinese',
       'hakka': 'Chinese',
       'dongbei': 'Chinese',
-      'manchurian': 'Chinese',
+      'manchurian': 'Indian',
       'xinjiang': 'Chinese',
       'uyghur': 'Chinese',
       'yunnan': 'Chinese',
@@ -533,7 +533,7 @@ class Cuisine {
       'burgundian': 'French',
       'lyonnaise': 'French',
       'lyon': 'French',
-      'basque': 'French',
+      'basque': 'Spanish',
       'parisian': 'French',
       'bordeaux': 'French',
       
@@ -552,7 +552,6 @@ class Cuisine {
       'southern': 'American',
       'new england': 'American',
       'cajun': 'American',
-      'creole': 'American',
       'tex-mex': 'American',
       'southwestern': 'American',
       'california': 'American',
@@ -582,7 +581,6 @@ class Cuisine {
       'puebla': 'Mexican',
       
       // Other regional terms
-      'levantine': 'Lebanese',
       'aegean': 'Greek',
       'bavarian': 'German',
       'austrian': 'Austrian',  // Keep as valid
@@ -669,6 +667,8 @@ class Cuisine {
     'nordic',
     'scandinavian',
     'european',
+    'levantine',
+    'creole',
   };
 
   /// Validate and normalize a cuisine string for import.

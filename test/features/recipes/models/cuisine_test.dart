@@ -140,6 +140,18 @@ void main() {
     });
   });
 
+  group('Cuisine.codeFor regions', () {
+    test('maps Basque to Spanish and Manchurian to Indian', () {
+      expect(Cuisine.codeFor('Basque'), 'ES');
+      expect(Cuisine.codeFor('Manchurian'), 'IN');
+    });
+
+    test('leaves multi-country regions without a cuisine', () {
+      expect(Cuisine.codeFor('Levantine'), isNull);
+      expect(Cuisine.codeFor('Creole'), isNull);
+    });
+  });
+
   group('Cuisine.regionFor', () {
     test('returns the capitalised term for sub-regions and multi-country styles in any case', () {
       const expected = {
@@ -148,6 +160,10 @@ void main() {
         'Cajun': 'Cajun',
         'Bavarian': 'Bavarian',
         'Latin': 'Latin',
+        'Basque': 'Basque',
+        'Manchurian': 'Manchurian',
+        'Levantine': 'Levantine',
+        'Creole': 'Creole',
       };
       expected.forEach((word, result) {
         for (final variant in [word.toLowerCase(), word.toUpperCase(), word]) {

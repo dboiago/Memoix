@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../core/database/app_database.dart' hide Recipe, Ingredient, Course;
+import '../../features/recipes/models/cuisine.dart';
 import '../../features/recipes/models/recipe.dart';
 import '../../features/recipes/repository/recipe_repository.dart';
 import '../../features/smoking/models/smoking_recipe.dart';
@@ -124,7 +125,9 @@ class _RecipePickerModalState extends ConsumerState<RecipePickerModal> {
                   
                   final matchesSearch = _searchQuery.isEmpty ||
                       recipe.name.toLowerCase().contains(_searchQuery) ||
-                      (recipe.cuisine?.toLowerCase().contains(_searchQuery) ?? false);
+                      (recipe.cuisine?.toLowerCase().contains(_searchQuery) ?? false) ||
+                      Cuisine.toAdjective(recipe.cuisine).toLowerCase().contains(_searchQuery) ||
+                      (recipe.subcategory?.toLowerCase().contains(_searchQuery) ?? false);
                   final matchesCustom = widget.recipeFilter?.call(recipe) ?? true;
                   if (matchesSearch && matchesCustom) {
                     allRecipes.add(recipe);

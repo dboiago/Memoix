@@ -528,7 +528,7 @@ class AppDatabase extends _$AppDatabase {
   }
 
   @override
-  int get schemaVersion => 13;
+  int get schemaVersion => 14;
 
   @override
   MigrationStrategy get migration => MigrationStrategy(
@@ -537,7 +537,7 @@ class AppDatabase extends _$AppDatabase {
       await customStatement('''
         CREATE VIRTUAL TABLE IF NOT EXISTS recipes_fts USING fts5(
           name, tags, cuisine, ingredient_names, ingredient_notes,
-          content='', tokenize='unicode61 remove_diacritics 0'
+          tokenize='unicode61 remove_diacritics 0'
         )
       ''');
       await customStatement('''
@@ -1058,6 +1058,18 @@ class AppDatabase extends _$AppDatabase {
             COALESCE(texture, '')
           FROM cheese_entries
         ''');
+      }
+      if (from < 14) {
+        await transaction(() async {
+          await customStatement('DROP TABLE IF EXISTS recipes_fts');
+          await customStatement('''
+            CREATE VIRTUAL TABLE recipes_fts USING fts5(
+              name, tags, cuisine, ingredient_names, ingredient_notes,
+              tokenize='unicode61 remove_diacritics 0'
+            )
+          ''');
+          await recipeDao.indexAllRecipesFts();
+        });
       }
     },
   );

@@ -2862,7 +2862,9 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
                         } else {
                           filteredRecipes = availableRecipes.where((r) =>
                             r.name.toLowerCase().contains(query.toLowerCase()) ||
-                            (r.cuisine?.toLowerCase().contains(query.toLowerCase()) ?? false),
+                            (r.cuisine?.toLowerCase().contains(query.toLowerCase()) ?? false) ||
+                            Cuisine.toAdjective(r.cuisine).toLowerCase().contains(query.toLowerCase()) ||
+                            (r.subcategory?.toLowerCase().contains(query.toLowerCase()) ?? false),
                           ).toList();
                         }
                       });

@@ -1,6 +1,7 @@
 import 'package:drift/drift.dart';
 
 import '../../../core/database/app_database.dart';
+import '../../../features/recipes/models/cuisine.dart';
 import '../../ingredient_aliases.dart';
 
 part 'recipe_dao.g.dart';
@@ -144,7 +145,7 @@ class RecipeDao extends DatabaseAccessor<AppDatabase>
     final idRows = await customSelect(
       'SELECT rowid FROM recipes_fts '
       'WHERE recipes_fts MATCH ? '
-      'ORDER BY bm25(recipes_fts, 10, 2, 1, 7, 4) '
+      'ORDER BY bm25(recipes_fts, 10, 2, 8, 7, 4) '
       'LIMIT ?',
       variables: [Variable.withString(matchQuery), Variable.withInt(limit)],
       readsFrom: {recipes},
@@ -193,7 +194,36 @@ class RecipeDao extends DatabaseAccessor<AppDatabase>
 
   // ── FTS5 maintenance ───────────────────────────────────────────────────────
 
-  /// Upserts the [recipes_fts] row for [recipeId].
+  /// Cuisine name (e.g. DE -> German) and region joined for the FTS cuisine column.
+  static String _cuisineFtsText(String? cuisine, String? subcategory) =>
+      [Cuisine.toAdjective(cuisine), subcategory ?? '']
+          .map((p) => p.trim())
+          .where((p) => p.isNotEmpty)
+          .join(' ');
+
+  Future<void> _insertRecipeFtsRow(Recipe recipe, List<Ingredient> ings) {
+    final ingNames = ings.map((i) => i.name).join(' ');
+    final ingNotes = ings
+        .map((i) => i.notes ?? '')
+        .where((n) => n.isNotEmpty)
+        .join(' ');
+
+    return customStatement(
+      'INSERT INTO recipes_fts'
+      '(rowid, name, tags, cuisine, ingredient_names, ingredient_notes) '
+      'VALUES (?, ?, ?, ?, ?, ?)',
+      [
+        recipe.id,
+        recipe.name,
+        recipe.tags,
+        _cuisineFtsText(recipe.cuisine, recipe.subcategory),
+        ingNames,
+        ingNotes,
+      ],
+    );
+  }
+
+  /// Replaces the [recipes_fts] row for [recipeId].
   ///
   /// Fetches the recipe row and all current ingredient rows from the DB so that
   /// this can be called immediately after ingredients are written, without the
@@ -208,47 +238,30 @@ class RecipeDao extends DatabaseAccessor<AppDatabase>
           ..where((i) => i.recipeId.equals(recipeId)))
         .get();
 
-    final ingNames = ings.map((i) => i.name).join(' ');
-    final ingNotes = ings
-        .map((i) => i.notes ?? '')
-        .where((n) => n.isNotEmpty)
-        .join(' ');
-
-    await customStatement(
-      'INSERT OR REPLACE INTO recipes_fts'
-      '(rowid, name, tags, cuisine, ingredient_names, ingredient_notes) '
-      'VALUES (?, ?, ?, ?, ?, ?)',
-      [
-        recipeId,
-        recipe.name,
-        recipe.tags,
-        recipe.cuisine ?? '',
-        ingNames,
-        ingNotes,
-      ],
-    );
+    await transaction(() async {
+      await deleteRecipeFts(recipeId);
+      await _insertRecipeFtsRow(recipe, ings);
+    });
   }
 
-  /// Removes the [recipes_fts] row for [id] using the correct contentless FTS5
-  /// deletion marker. Must be called before the recipe and its ingredients are
-  /// deleted so the original text is still available.
-  Future<void> deleteRecipeFts(int id) async {
-    final recipe =
-        await (select(recipes)..where((r) => r.id.equals(id))).getSingleOrNull();
-    if (recipe == null) return;
-    final ings =
-        await (select(ingredients)..where((i) => i.recipeId.equals(id))).get();
-    final ingNames = ings.map((i) => i.name).join(' ');
-    final ingNotes = ings
-        .map((i) => i.notes ?? '')
-        .where((n) => n.isNotEmpty)
-        .join(' ');
-    await customStatement(
-      'INSERT INTO recipes_fts(recipes_fts, rowid, name, tags, cuisine, ingredient_names, ingredient_notes) '
-      "VALUES ('delete', ?, ?, ?, ?, ?, ?)",
-      [id, recipe.name, recipe.tags, recipe.cuisine ?? '', ingNames, ingNotes],
-    );
+  /// Inserts a [recipes_fts] row for every recipe. The table must be empty.
+  Future<void> indexAllRecipesFts() async {
+    final allRecipes = await select(recipes).get();
+    final allIngredients = await select(ingredients).get();
+    final byRecipe = <int, List<Ingredient>>{};
+    for (final ing in allIngredients) {
+      (byRecipe[ing.recipeId] ??= []).add(ing);
+    }
+    for (final recipe in allRecipes) {
+      await _insertRecipeFtsRow(recipe, byRecipe[recipe.id] ?? const []);
+    }
   }
+
+  /// Removes the [recipes_fts] row for [id].
+  Future<void> deleteRecipeFts(int id) => customStatement(
+        'DELETE FROM recipes_fts WHERE rowid = ?',
+        [id],
+      );
 
   // ── Recipe write ───────────────────────────────────────────────────────────
 
