@@ -58,6 +58,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
   late TextEditingController _servesController;
   late TextEditingController _timeController;
   late TextEditingController _techniqueController;
+  late TextEditingController _regionController;
 
   // Track selections
   String _selectedCourse = 'Mains';
@@ -90,6 +91,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
     _servesController = TextEditingController(text: result.serves ?? '');
     _timeController = TextEditingController(text: result.time ?? '');
     _techniqueController = TextEditingController();
+    _regionController = TextEditingController(text: result.subcategory ?? '');
 
     // Normalize course to match Course.defaults names (proper capitalization)
     final rawCourse = result.course ?? 'Mains';
@@ -119,6 +121,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
     _servesController.dispose();
     _timeController.dispose();
     _techniqueController.dispose();
+    _regionController.dispose();
     _garnishFieldController?.dispose();
     super.dispose();
   }
@@ -206,6 +209,17 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
                 confidence: result.cuisineConfidence,),
             const SizedBox(height: 8),
             _buildCuisineSelector(theme, result),
+            if (!_hasSpecializedScreen && !_isDrinksCourse) ...[
+              const SizedBox(height: 12),
+              TextField(
+                controller: _regionController,
+                decoration: const InputDecoration(
+                  labelText: 'Region (optional)',
+                  hintText: 'e.g., Szechuan, Cantonese',
+                ),
+                textCapitalization: TextCapitalization.words,
+              ),
+            ],
             const SizedBox(height: 24),
           ],
 
@@ -1548,7 +1562,11 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
           : _nameController.text.trim(),
       course: Course.slugFromName(_selectedCourse),
       cuisine: _selectedCuisine,
-      subcategory: widget.importResult.subcategory,
+      subcategory: _isDrinksCourse
+          ? widget.importResult.subcategory
+          : (_regionController.text.trim().isEmpty
+              ? null
+              : _regionController.text.trim()),
       serves: _servesController.text.trim().isEmpty
           ? null
           : _servesController.text.trim(),
