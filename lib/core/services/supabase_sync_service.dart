@@ -471,6 +471,7 @@ abstract class SupabaseSyncService {
           );
           await db.recipeDao
               .saveRecipe(companion.copyWith(id: Value(existing.id)));
+          await db.recipeDao.upsertRecipeFts(existing.id);
         } else {
           // New recipe from remote: insert with clean personal fields.
           final companion = _remoteToRecipeCompanion(
@@ -480,7 +481,8 @@ abstract class SupabaseSyncService {
             cookCount: 0,
             lastCookedAt: null,
           );
-          await db.recipeDao.saveRecipe(companion);
+          final newId = await db.recipeDao.saveRecipe(companion);
+          await db.recipeDao.upsertRecipeFts(newId);
         }
 
         pulledUuids.add(remoteUuid);
@@ -653,6 +655,7 @@ abstract class SupabaseSyncService {
       await db.transaction(() async {
         await db.recipeDao.deleteIngredientsForRecipe(recipe.id);
         await db.recipeDao.saveIngredients(companions);
+        await db.recipeDao.upsertRecipeFts(recipe.id);
       });
       replacedCount++;
     }

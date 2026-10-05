@@ -66,6 +66,7 @@ class MemoixDatabase {
     final db = AppDatabase.instance;
     await db.transaction(() async {
       await db.delete(db.recipes).go();
+      await db.customStatement('DELETE FROM recipes_fts');
       await db.delete(db.ingredients).go();
       await db.delete(db.courses).go();
       await db.delete(db.pizzas).go();

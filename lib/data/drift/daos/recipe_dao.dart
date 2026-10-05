@@ -201,10 +201,17 @@ class RecipeDao extends DatabaseAccessor<AppDatabase>
           .where((p) => p.isNotEmpty)
           .join(' ');
 
-  Future<void> _insertRecipeFtsRow(Recipe recipe, List<Ingredient> ings) {
-    final ingNames = ings.map((i) => i.name).join(' ');
-    final ingNotes = ings
-        .map((i) => i.notes ?? '')
+  Future<void> _insertRecipeFtsRow({
+    required int id,
+    required String name,
+    required String? tags,
+    required String? cuisine,
+    required String? subcategory,
+    required Iterable<String> ingredientNames,
+    required Iterable<String?> ingredientNotes,
+  }) {
+    final ingNotes = ingredientNotes
+        .map((n) => n ?? '')
         .where((n) => n.isNotEmpty)
         .join(' ');
 
@@ -213,11 +220,11 @@ class RecipeDao extends DatabaseAccessor<AppDatabase>
       '(rowid, name, tags, cuisine, ingredient_names, ingredient_notes) '
       'VALUES (?, ?, ?, ?, ?, ?)',
       [
-        recipe.id,
-        recipe.name,
-        recipe.tags,
-        _cuisineFtsText(recipe.cuisine, recipe.subcategory),
-        ingNames,
+        id,
+        name,
+        tags ?? '',
+        _cuisineFtsText(cuisine, subcategory),
+        ingredientNames.join(' '),
         ingNotes,
       ],
     );
@@ -240,20 +247,47 @@ class RecipeDao extends DatabaseAccessor<AppDatabase>
 
     await transaction(() async {
       await deleteRecipeFts(recipeId);
-      await _insertRecipeFtsRow(recipe, ings);
+      await _insertRecipeFtsRow(
+        id: recipe.id,
+        name: recipe.name,
+        tags: recipe.tags,
+        cuisine: recipe.cuisine,
+        subcategory: recipe.subcategory,
+        ingredientNames: ings.map((i) => i.name),
+        ingredientNotes: ings.map((i) => i.notes),
+      );
     });
   }
 
   /// Inserts a [recipes_fts] row for every recipe. The table must be empty.
+  /// Raw SQL on purpose: runs inside migrations, where typed tables may not match.
   Future<void> indexAllRecipesFts() async {
-    final allRecipes = await select(recipes).get();
-    final allIngredients = await select(ingredients).get();
-    final byRecipe = <int, List<Ingredient>>{};
-    for (final ing in allIngredients) {
-      (byRecipe[ing.recipeId] ??= []).add(ing);
+    final recipeRows = await customSelect(
+      'SELECT id, name, tags, cuisine, subcategory FROM recipes',
+    ).get();
+    final ingredientRows = await customSelect(
+      'SELECT recipe_id, name, notes FROM ingredients',
+    ).get();
+
+    final namesByRecipe = <int, List<String>>{};
+    final notesByRecipe = <int, List<String?>>{};
+    for (final row in ingredientRows) {
+      final recipeId = row.read<int>('recipe_id');
+      (namesByRecipe[recipeId] ??= []).add(row.read<String?>('name') ?? '');
+      (notesByRecipe[recipeId] ??= []).add(row.read<String?>('notes'));
     }
-    for (final recipe in allRecipes) {
-      await _insertRecipeFtsRow(recipe, byRecipe[recipe.id] ?? const []);
+
+    for (final row in recipeRows) {
+      final id = row.read<int>('id');
+      await _insertRecipeFtsRow(
+        id: id,
+        name: row.read<String?>('name') ?? '',
+        tags: row.read<String?>('tags'),
+        cuisine: row.read<String?>('cuisine'),
+        subcategory: row.read<String?>('subcategory'),
+        ingredientNames: namesByRecipe[id] ?? const [],
+        ingredientNotes: notesByRecipe[id] ?? const [],
+      );
     }
   }
 

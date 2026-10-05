@@ -1324,6 +1324,7 @@ class RecipeRepository {
       if (existing.isNotEmpty) continue;
       await _db.recipeDao.saveIngredients(
           _toIngredientCompanions(dbRecipe.id, recipe.ingredients));
+      await _db.recipeDao.upsertRecipeFts(dbRecipe.id);
     }
   }
 
