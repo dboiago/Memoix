@@ -2,6 +2,7 @@ import 'dart:convert';
 import '../../../core/database/app_database.dart' hide Recipe, Ingredient, Course;
 import '../../modernist/models/modernist_recipe.dart';
 import '../../pizzas/models/pizza.dart';
+import '../../recipes/models/cuisine.dart';
 import '../../recipes/models/recipe.dart';
 import '../../smoking/models/smoking_recipe.dart';
 import '../../../core/utils/text_normalizer.dart';
@@ -147,7 +148,7 @@ class RecipeImportResult {
       uuid: uuid,
       name: name ?? 'Untitled Recipe',
       course: course ?? 'Mains',
-      cuisine: cuisine,
+      cuisine: Cuisine.codeFor(cuisine),
       subcategory: subcategory,
       serves: serves,
       time: time,

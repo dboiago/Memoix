@@ -30,6 +30,23 @@ void main() {
       }
     });
 
+    test('maps the nations of Britain to GB', () {
+      for (final raw in [
+        'English',
+        'England',
+        'Scottish',
+        'Scotland',
+        'Welsh',
+        'Wales',
+      ]) {
+        expect(Cuisine.codeFor(raw), 'GB', reason: raw);
+      }
+    });
+
+    test('maps Iranian to IR', () {
+      expect(Cuisine.codeFor('Iranian'), 'IR');
+    });
+
     test('returns null for non-country and empty input', () {
       for (final raw in <String?>[
         'Asian',

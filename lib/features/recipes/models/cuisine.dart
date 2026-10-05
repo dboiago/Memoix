@@ -601,6 +601,17 @@ class Cuisine {
       'austrian': 'Austrian',  // Keep as valid
       'viennese': 'Austrian',
       'swiss german': 'Swiss',
+      
+      // British nations
+      'english': 'British',
+      'england': 'British',
+      'scottish': 'British',
+      'scotland': 'British',
+      'welsh': 'British',
+      'wales': 'British',
+      
+      // Iranian
+      'iranian': 'Persian',
     };
     
     // Check if it's a known regional term first
