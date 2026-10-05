@@ -25,7 +25,7 @@ class Recipe {
   /// Course category (e.g., "Mains", "Soups", "Desserts")
   late String course;
 
-  /// Cuisine style (e.g., "Korean", "French", "Italian")
+  /// Two-letter uppercase cuisine code from `Cuisine.all`
   String? cuisine;
 
   /// Subcategory within cuisine (e.g., "French" under "European")

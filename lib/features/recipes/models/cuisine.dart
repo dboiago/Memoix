@@ -626,6 +626,11 @@ class Cuisine {
     return null;
   }
   
+  static String? codeFor(String? raw) {
+    final name = validateForImport(raw);
+    return name == null ? null : byName(name)?.code;
+  }
+
   /// Get a list of all valid cuisine names (for autocomplete/validation UI)
   static List<String> get allNames {
     return all.map((c) => c.name).toList()..sort();

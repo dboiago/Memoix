@@ -94,7 +94,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
     // Normalize course to match Course.defaults names (proper capitalization)
     final rawCourse = result.course ?? 'Mains';
     _selectedCourse = _normalizeCourse(rawCourse);
-    _selectedCuisine = result.cuisine;
+    _selectedCuisine = Cuisine.codeFor(result.cuisine);
 
     // Initialize drinks-specific fields
     _glass = result.glass;
