@@ -32,7 +32,7 @@ import '../widgets/ingredient_reference_sheet.dart';
 
 bool shouldShowCompareButton(Recipe recipe) {
   final allowed = {
-    'apps', 'appetizers', 'soups', 'mains', "veg'n", 'vegn', 'sides', 'salads',
+    'apps', 'appetizers', 'soup', 'soups', 'mains', "veg'n", 'vegn', 'sides', 'salad', 'salads',
     'desserts', 'brunch', 'standalone', 'breads', 'sauces', 'rubs', 'pickles',
   };
   final blocked = {
@@ -299,7 +299,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
             padding: EdgeInsets.zero,
           ),
         // Pickle method chip
-        if (recipe.course == 'pickles' &&
+        if (recipe.course.toLowerCase() == 'pickles' &&
             recipe.pickleMethod != null &&
             recipe.pickleMethod!.isNotEmpty)
           Chip(
@@ -704,7 +704,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
                     ),
                   ),
                 // Glass and Garnish (for Drinks) - side by side
-                if (recipe.course == 'drinks' && 
+                if (recipe.course.toLowerCase() == 'drinks' && 
                     ((recipe.glass != null && recipe.glass!.isNotEmpty) || recipe.garnish.isNotEmpty))
                   Padding(
                     padding: const EdgeInsets.fromLTRB(16, 16, 16, 0),

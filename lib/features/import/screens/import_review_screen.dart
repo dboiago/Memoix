@@ -1546,7 +1546,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
       name: _nameController.text.trim().isEmpty
           ? 'Untitled Recipe'
           : _nameController.text.trim(),
-      course: _selectedCourse,
+      course: Course.slugFromName(_selectedCourse),
       cuisine: _selectedCuisine,
       subcategory: widget.importResult.subcategory,
       serves: _servesController.text.trim().isEmpty
@@ -1934,7 +1934,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
         navigator.pushReplacement(
           MaterialPageRoute(
             builder: (_) => RecipeListScreen(
-              course: course,
+              course: Course.slugFromName(course),
               sourceFilter: RecipeSourceFilter.all,
               showAddButton: true,
             ),

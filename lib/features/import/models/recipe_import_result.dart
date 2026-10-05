@@ -6,6 +6,7 @@ import '../../recipes/models/recipe.dart';
 import '../../smoking/models/smoking_recipe.dart';
 import '../../../core/utils/text_normalizer.dart';
 import '../../../core/utils/unit_normalizer.dart';
+import '../services/parsers/external_format_parser.dart';
 
 /// Result of importing a recipe from URL or OCR
 /// Contains both parsed data and raw extracted data for user review
@@ -279,9 +280,11 @@ class RecipeImportResult {
       );
     }
 
+    final rawCourse = data['course'] as String?;
+
     return RecipeImportResult(
       name: data['name'] as String?,
-      course: data['course'] as String?,
+      course: rawCourse == null ? null : detectCourseFromCategories([rawCourse]),
       cuisine: data['cuisine'] as String?,
       subcategory: data['subcategory'] as String?,
       serves: data['serves'] as String?,

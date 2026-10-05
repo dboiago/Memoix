@@ -1,6 +1,7 @@
 import 'dart:typed_data';
 
 import '../../import/models/recipe_import_result.dart';
+import '../../recipes/models/course.dart';
 import 'ai_provider.dart';
 import 'memoix_client.dart';
 import 'openai_client.dart';
@@ -133,6 +134,23 @@ class AiRecipeImporter {
     );
   }
 
+  static const _modelExcludedCourses = {'scratch', 'cellar', 'cheese', 'sandwiches'};
+
+  static const _courseNotes = {
+    'vegn': 'meat and dairy substitutes and technique-based preparations such as seitan; '
+        'not for dishes that are simply vegetarian or vegan, which belong in their normal course',
+    'standalone': 'a self-sufficient item that is not part of a meal, such as onigiri; '
+        'not chips or junk food',
+  };
+
+  static String _courseChoices() => Course.defaults
+      .where((c) => !_modelExcludedCourses.contains(c.slug))
+      .map((c) {
+        final note = _courseNotes[c.slug];
+        return note == null ? c.name : '${c.name} ($note)';
+      })
+      .join(' | ');
+
   static String buildSystemPrompt() {
     return r'''
 You are extracting structured recipe data from OCR text or images.
@@ -165,7 +183,7 @@ renamed keys, no markdown fences:
 
 {
   "name": "<recipe title as a string>",
-  "course": "<one of: Mains | Desserts | Baking | Brunch | Sides | Salads | Soups | Drinks | Sandwiches | Smoking | Pizzas | Modernist | Cheese | Cellar | Snacks>",
+  "course": "<one of (return only the name, without any parenthetical): {{COURSES}}>",
   "cuisine": "<country or region, or null>",
   "serves": "<serving size as a string, e.g. \"4\" or \"Makes 12\", or null>",
   "time": "<total time as a string, e.g. \"1 hr 15 mins\", or null>",
@@ -203,6 +221,6 @@ Confidence scoring:
 - 0.0 = not found
 
 Do not include any text outside the JSON object.
-''';
+'''.replaceFirst('{{COURSES}}', _courseChoices());
   }
 }

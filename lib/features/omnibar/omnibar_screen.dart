@@ -110,7 +110,7 @@ const Set<String> _generalAndMealCourses = {'mains', 'soups', 'soup', 'brunch', 
 // completeness but are gated by their own functions, not _isCourseEligible().
 const Map<MealContext, Set<String>> _mealContextCourses = {
   MealContext.breakfast: {'brunch'},
-  MealContext.lunch: {'mains', 'soups', 'soup', 'sandwiches', 'salad', 'sides'},
+  MealContext.lunch: {'mains', 'soups', 'soup', 'sandwiches', 'salad', 'sides', 'standalone'},
   MealContext.dinner: {'mains', 'soups', 'soup', 'sandwiches', 'pizzas', 'smoking',
                        'modernist', 'vegn', 'sides', 'salad'},
   MealContext.dessert: {'desserts'},
@@ -118,7 +118,7 @@ const Map<MealContext, Set<String>> _mealContextCourses = {
   MealContext.drink: {'drinks'},
   MealContext.cheese: {'cheese'},
   MealContext.cellar: {'cellar'},
-  MealContext.snack: {'apps', 'standalone', 'sides', 'salads', 'pickles', 'sandwiches'},
+  MealContext.snack: {'apps', 'standalone', 'sides', 'salad', 'pickles', 'sandwiches'},
   MealContext.charcuterie: {'cheese', 'pickles'},
 };
 
@@ -684,11 +684,11 @@ class _OmniResultsViewState extends ConsumerState<_OmniResultsView> {
     void addRecipes() {
       for (final r in recipes) {
         if (!_isCourseEligible(r.course, intent)) continue;
-        if (r.course == 'modernist') {
+        if (r.course.toLowerCase() == 'modernist') {
           final isTechnique = r.modernistType == ModernistType.technique.name;
           if (!_isModernistEligible(intent, isTechnique: isTechnique)) continue;
         }
-        if (r.course == 'smoking') {
+        if (r.course.toLowerCase() == 'smoking') {
           final isPitNote = r.smokingType == SmokingType.pitNote.name;
           if (!_isSmokingEligible(intent, isPitNote: isPitNote)) continue;
         }

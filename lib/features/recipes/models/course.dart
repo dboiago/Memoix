@@ -226,6 +226,17 @@ class Course {
     return slug[0].toUpperCase() + slug.substring(1);
   }
 
+  /// Slug for a course slug or display name (e.g. "Veg'n" -> 'vegn'); unknown values are lowercased.
+  static String slugFromName(String value) {
+    final lower = value.trim().toLowerCase();
+    for (final course in defaults) {
+      if (course.slug == lower || course.name.toLowerCase() == lower) {
+        return course.slug;
+      }
+    }
+    return lower;
+  }
+
   Map<String, dynamic> toJson() {
     return {
       'slug': slug,

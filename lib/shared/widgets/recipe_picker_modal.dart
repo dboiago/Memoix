@@ -181,8 +181,8 @@ class _RecipePickerModalState extends ConsumerState<RecipePickerModal> {
 
                 // Sort courses by defined order
                 final sortedCourses = grouped.keys.toList()..sort((a, b) {
-                  final aIndex = courseOrder.indexOf(a);
-                  final bIndex = courseOrder.indexOf(b);
+                  final aIndex = courseOrder.indexOf(_getCoursDisplayName(a));
+                  final bIndex = courseOrder.indexOf(_getCoursDisplayName(b));
                   if (aIndex == -1 && bIndex == -1) return a.compareTo(b);
                   if (aIndex == -1) return 1;
                   if (bIndex == -1) return -1;

@@ -117,6 +117,7 @@ class RecipeBackupService {
           'imagePath': d.imagePath,
           'serves': d.serves,
           'time': d.time,
+          'course': d.course,
           'structuredIngredients': d.structuredIngredients,
           'structuredDirections': d.structuredDirections,
           'notes': d.notes,

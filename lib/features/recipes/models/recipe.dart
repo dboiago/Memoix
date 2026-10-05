@@ -208,6 +208,7 @@ class Recipe {
       'not meat': 'vegn',
       'not-meat': 'vegn',
       'vegetarian': 'vegn',
+      "veg'n": 'vegn',
       'drinks': 'drinks',
     };
     course = courseMapping[course] ?? course;

@@ -302,11 +302,11 @@ class HeuristicQueryClassifier implements OmniQueryClassifier {
   List<String> _extractPreferredCourses(String q) {
     final courses = <String>{};
     if (_matchesBoundary(q, 'light') || _matchesBoundary(q, 'fresh') || _matchesBoundary(q, 'simple')) {
-      courses.addAll(['soups', 'salad', 'sides']);
+      courses.addAll(['soup', 'salad', 'sides']);
     }
     if (_matchesBoundary(q, 'cozy') || _matchesBoundary(q, 'comfort') ||
         _matchesBoundary(q, 'warm') || _matchesBoundary(q, 'hearty') || _matchesBoundary(q, 'rainy')) {
-      courses.addAll(['mains', 'soups']);
+      courses.addAll(['mains', 'soup']);
     }
     if (_matchesBoundary(q, 'heavy') || _matchesBoundary(q, 'rich') || _matchesBoundary(q, 'indulgent')) {
       courses.addAll(['mains', 'desserts', 'smoking']);

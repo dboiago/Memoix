@@ -86,7 +86,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
   /// Check if current course allows comparison (explicit allow-list)
   bool get shouldShowCompareButton {
     final allowed = {
-      'apps', 'appetizers', 'soups', 'mains', "veg'n", 'vegn', 'sides', 'salads',
+      'apps', 'appetizers', 'soup', 'soups', 'mains', "veg'n", 'vegn', 'sides', 'salad', 'salads',
       'desserts', 'brunch', 'standalone', 'breads', 'sauces', 'rubs', 'pickles',
     };
     final blocked = {
