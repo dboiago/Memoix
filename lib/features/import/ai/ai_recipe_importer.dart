@@ -184,7 +184,7 @@ renamed keys, no markdown fences:
 {
   "name": "<recipe title as a string>",
   "course": "<one of (return only the name, without any parenthetical): {{COURSES}}>",
-  "cuisine": "<a single country, given as a country name or demonym, or null>",
+  "cuisine": "<the single national cuisine as an adjective, for example German, Thai or Korean, or null if none fits>",
   "serves": "<serving size as a string, e.g. \"4\" or \"Makes 12\", or null>",
   "time": "<total time as a string, e.g. \"1 hr 15 mins\", or null>",
   "ingredients": [

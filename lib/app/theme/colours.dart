@@ -274,7 +274,7 @@ class MemoixColors {
     const caribbeanCodes = ['BS', 'BB', 'CU', 'DO', 'GY', 'HT', 'JM', 'PR', 'TT'];
     const africanCodes = ['DZ', 'CM', 'EG', 'ET', 'GH', 'KE', 'MA', 'NG', 'SN', 'ZA', 'TZ', 'TN', 'UG'];
     const middleEastCodes = ['AF', 'BH', 'AE', 'IR', 'IQ', 'IL', 'JO', 'KW', 'LB', 'OM', 'PS', 'QA', 'SA', 'SY', 'TR', 'YE'];
-    const oceanianCodes = ['AU', 'FJ', 'HI', 'NZ', 'PG', 'WS', 'TO'];
+    const oceanianCodes = ['AU', 'FJ', 'NZ', 'PG', 'WS', 'TO'];
     
     if (asianCodes.contains(upper)) return continentAsian;
     if (europeanCodes.contains(upper)) return continentEuropean;

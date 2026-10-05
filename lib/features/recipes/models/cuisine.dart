@@ -152,7 +152,6 @@ class Cuisine {
     // Oceanian
     Cuisine(code: 'AU', name: 'Australian', continent: 'Oceanian', flag: '🇦🇺', colour: Color(0xFF00008B)),
     Cuisine(code: 'FJ', name: 'Fijian', continent: 'Oceanian', flag: '🇫🇯', colour: Color(0xFF68BFE5)),
-    Cuisine(code: 'HI', name: 'Hawaiian', continent: 'Oceanian', flag: '�🇸', colour: Color(0xFFE62020)),
     Cuisine(code: 'NZ', name: 'New Zealand', continent: 'Oceanian', flag: '🇳🇿', colour: Color(0xFF00247D)),
     Cuisine(code: 'PG', name: 'Papua New Guinean', continent: 'Oceanian', flag: '🇵🇬', colour: Color(0xFFCE1126)),
     Cuisine(code: 'WS', name: 'Samoan', continent: 'Oceanian', flag: '🇼🇸', colour: Color(0xFF002B7F)),
@@ -575,6 +574,8 @@ class Cuisine {
       'new orleans': 'American',
       'louisiana': 'American',
       'southern american': 'American',
+      'hawaii': 'American',
+      'hawaiian': 'American',
       
       // Thai regions
       'isaan': 'Thai',
@@ -614,9 +615,67 @@ class Cuisine {
       'iranian': 'Persian',
     };
     
+    // Country names and alternate forms to their cuisine demonym
+    const countryToCuisine = <String, String>{
+      'algeria': 'Algerian',
+      'cameroon': 'Cameroonian',
+      'senegal': 'Senegalese',
+      'tanzania': 'Tanzanian',
+      'uganda': 'Ugandan',
+      'costa rica': 'Costa Rican',
+      'el salvador': 'Salvadoran',
+      'guatemala': 'Guatemalan',
+      'honduras': 'Honduran',
+      'nicaragua': 'Nicaraguan',
+      'panama': 'Panamanian',
+      'bolivia': 'Bolivian',
+      'ecuador': 'Ecuadorian',
+      'paraguay': 'Paraguayan',
+      'uruguay': 'Uruguayan',
+      'bangladesh': 'Bangladeshi',
+      'myanmar': 'Burmese',
+      'burma': 'Burmese',
+      'cambodia': 'Cambodian',
+      'laos': 'Laotian',
+      'mongolia': 'Mongolian',
+      'bahamas': 'Bahamian',
+      'guyana': 'Guyanese',
+      'albania': 'Albanian',
+      'belarus': 'Belarusian',
+      'bosnia': 'Bosnian',
+      'bosnia and herzegovina': 'Bosnian',
+      'bulgaria': 'Bulgarian',
+      'cyprus': 'Cypriot',
+      'estonia': 'Estonian',
+      'latvia': 'Latvian',
+      'lithuania': 'Lithuanian',
+      'iceland': 'Icelandic',
+      'malta': 'Maltese',
+      'moldova': 'Moldovan',
+      'montenegro': 'Montenegrin',
+      'slovakia': 'Slovak',
+      'slovenia': 'Slovenian',
+      'bahrain': 'Bahraini',
+      'uae': 'Emirati',
+      'emirates': 'Emirati',
+      'united arab emirates': 'Emirati',
+      'kuwait': 'Kuwaiti',
+      'oman': 'Omani',
+      'qatar': 'Qatari',
+      'papua new guinea': 'Papua New Guinean',
+      'tonga': 'Tongan',
+      'argentinian': 'Argentine',
+      'czechia': 'Czech',
+      'holland': 'Dutch',
+    };
+    
     // Check if it's a known regional term first
     if (regionToParent.containsKey(lower)) {
       return regionToParent[lower];
+    }
+    
+    if (countryToCuisine.containsKey(lower)) {
+      return countryToCuisine[lower];
     }
     
     // Try to find a matching cuisine in our standard list

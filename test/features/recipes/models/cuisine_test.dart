@@ -47,6 +47,80 @@ void main() {
       expect(Cuisine.codeFor('Iranian'), 'IR');
     });
 
+    test('maps Hawaiian input to US and no longer resolves HI', () {
+      expect(Cuisine.codeFor('Hawaiian'), 'US');
+      expect(Cuisine.codeFor('Hawaii'), 'US');
+      expect(Cuisine.codeFor('HI'), isNull);
+    });
+
+    test('resolves country names and alternate forms to their cuisine code', () {
+      const expected = {
+        'Algeria': 'DZ',
+        'Cameroon': 'CM',
+        'Senegal': 'SN',
+        'Tanzania': 'TZ',
+        'Uganda': 'UG',
+        'Costa Rica': 'CR',
+        'El Salvador': 'SV',
+        'Guatemala': 'GT',
+        'Honduras': 'HN',
+        'Nicaragua': 'NI',
+        'Panama': 'PA',
+        'Bolivia': 'BO',
+        'Ecuador': 'EC',
+        'Paraguay': 'PY',
+        'Uruguay': 'UY',
+        'Bangladesh': 'BD',
+        'Myanmar': 'MM',
+        'Burma': 'MM',
+        'Cambodia': 'KH',
+        'Laos': 'LA',
+        'Mongolia': 'MN',
+        'Bahamas': 'BS',
+        'Guyana': 'GY',
+        'Albania': 'AL',
+        'Belarus': 'BY',
+        'Bosnia': 'BA',
+        'Bosnia and Herzegovina': 'BA',
+        'Bulgaria': 'BG',
+        'Cyprus': 'CY',
+        'Estonia': 'EE',
+        'Latvia': 'LV',
+        'Lithuania': 'LT',
+        'Iceland': 'IS',
+        'Malta': 'MT',
+        'Moldova': 'MD',
+        'Montenegro': 'ME',
+        'Slovakia': 'SK',
+        'Slovenia': 'SI',
+        'Bahrain': 'BH',
+        'UAE': 'AE',
+        'Emirates': 'AE',
+        'United Arab Emirates': 'AE',
+        'Kuwait': 'KW',
+        'Oman': 'OM',
+        'Qatar': 'QA',
+        'Papua New Guinea': 'PG',
+        'Tonga': 'TO',
+        'Argentinian': 'AR',
+        'Czechia': 'CZ',
+        'Holland': 'NL',
+      };
+      expected.forEach((raw, code) {
+        expect(Cuisine.codeFor(raw), code, reason: raw);
+      });
+    });
+
+    test('matches whole terms only, so added aliases do not match inside other words', () {
+      expect(Cuisine.codeFor('Romanian'), 'RO');
+      expect(Cuisine.codeFor('Romania'), 'RO');
+      expect(Cuisine.codeFor('Roman'), 'IT');
+      expect(Cuisine.codeFor('Georgian'), 'GE');
+      for (final raw in ['Mali', 'Guinea', 'Niger', 'Georgia']) {
+        expect(Cuisine.codeFor(raw), isNull, reason: raw);
+      }
+    });
+
     test('returns null for non-country and empty input', () {
       for (final raw in <String?>[
         'Asian',
