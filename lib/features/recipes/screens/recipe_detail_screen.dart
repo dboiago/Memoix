@@ -288,7 +288,10 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
         // Cuisine chip
         if (recipe.cuisine != null)
           Chip(
-            label: Text(Cuisine.toAdjective(recipe.cuisine)),
+            label: Text(Cuisine.displayWithRegion(
+              recipe.cuisine,
+              recipe.course.toLowerCase() == 'drinks' ? null : recipe.subcategory,
+            ),),
             backgroundColor: theme.colorScheme.surfaceContainerHighest,
             labelStyle: TextStyle(
               color: theme.colorScheme.onSurface,
@@ -522,7 +525,9 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
             decoration: BoxDecoration(color: cuisineColor, shape: BoxShape.circle),
           ),
         ),);
-        preItems.add(TextSpan(text: Cuisine.toAdjective(recipe.cuisine)));
+        preItems.add(TextSpan(
+          text: Cuisine.displayWithRegion(recipe.cuisine, recipe.subcategory),
+        ),);
       }
     }
 

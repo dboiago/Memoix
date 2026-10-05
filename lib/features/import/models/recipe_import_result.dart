@@ -282,12 +282,24 @@ class RecipeImportResult {
     }
 
     final rawCourse = data['course'] as String?;
+    final course =
+        rawCourse == null ? null : detectCourseFromCategories([rawCourse]);
+    String? textOf(Object? value) {
+      final text = value is String ? value.trim() : '';
+      return text.isEmpty ? null : text;
+    }
+
+    final rawCuisine = data['cuisine'] as String?;
+    var subcategory = textOf(data['subcategory']);
+    if (subcategory == null && course != 'drinks') {
+      subcategory = textOf(data['region']) ?? Cuisine.regionFor(rawCuisine);
+    }
 
     return RecipeImportResult(
       name: data['name'] as String?,
-      course: rawCourse == null ? null : detectCourseFromCategories([rawCourse]),
-      cuisine: data['cuisine'] as String?,
-      subcategory: data['subcategory'] as String?,
+      course: course,
+      cuisine: rawCuisine,
+      subcategory: subcategory,
       serves: data['serves'] as String?,
       time: data['time'] as String?,
       ingredients: ingredients,

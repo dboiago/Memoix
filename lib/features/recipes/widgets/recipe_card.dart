@@ -248,14 +248,8 @@ class _RecipeCardState extends ConsumerState<RecipeCard> {
       );
   }
 
-  String _displayCuisine(String raw, String? subcategory) {
-    // Use the comprehensive Cuisine.toAdjective() method
-    final adj = Cuisine.toAdjective(raw);
-    if (subcategory != null && subcategory.isNotEmpty) {
-      return '$adj ($subcategory)';
-    }
-    return adj;
-  }
+  String _displayCuisine(String raw, String? subcategory) =>
+      Cuisine.displayWithRegion(raw, subcategory);
 
   /// Check if this recipe is a drink/cocktail
   bool _isDrink() {

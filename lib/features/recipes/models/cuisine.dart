@@ -441,22 +441,8 @@ class Cuisine {
     return countryToAdjective[key] ?? raw;
   }
   
-  /// Validate and normalize a cuisine string for import.
-  /// 
-  /// This method:
-  /// 1. Maps regional/provincial terms to their parent national cuisine
-  ///    (e.g., "Sichuan" -> "Chinese", "Cantonese" -> "Chinese")
-  /// 2. Returns null if the input doesn't match any known cuisine
-  /// 3. Returns the standardized cuisine name if valid
-  /// 
-  /// Use this during import to ensure only valid cuisines are assigned.
-  static String? validateForImport(String? raw) {
-    if (raw == null || raw.isEmpty) return null;
-    
-    final lower = raw.toLowerCase().trim();
-    
-    // Map of regional/provincial terms to their parent national cuisine
-    const regionToParent = <String, String>{
+  /// Regional or provincial terms mapped to their parent national cuisine.
+  static const _regionToParent = <String, String>{
       // Chinese regions
       'sichuan': 'Chinese',
       'szechuan': 'Chinese',
@@ -604,19 +590,15 @@ class Cuisine {
       'swiss german': 'Swiss',
       
       // British nations
-      'english': 'British',
-      'england': 'British',
       'scottish': 'British',
       'scotland': 'British',
       'welsh': 'British',
       'wales': 'British',
       
-      // Iranian
-      'iranian': 'Persian',
     };
     
-    // Country names and alternate forms to their cuisine demonym
-    const countryToCuisine = <String, String>{
+  /// Country names and alternate forms mapped to their cuisine demonym.
+  static const _countryToCuisine = <String, String>{
       'algeria': 'Algerian',
       'cameroon': 'Cameroonian',
       'senegal': 'Senegalese',
@@ -667,15 +649,49 @@ class Cuisine {
       'argentinian': 'Argentine',
       'czechia': 'Czech',
       'holland': 'Dutch',
+      'english': 'British',
+      'england': 'British',
+      'iranian': 'Persian',
     };
-    
+
+  /// Multi-country style terms that are kept as a region and are not a cuisine.
+  static const _multiCountryTerms = <String>{
+    'latin',
+    'latin american',
+    'mediterranean',
+    'middle eastern',
+    'asian',
+    'southeast asian',
+    'east asian',
+    'south asian',
+    'african',
+    'caribbean',
+    'nordic',
+    'scandinavian',
+    'european',
+  };
+
+  /// Validate and normalize a cuisine string for import.
+  ///
+  /// This method:
+  /// 1. Maps regional/provincial terms to their parent national cuisine
+  ///    (e.g., "Sichuan" -> "Chinese", "Cantonese" -> "Chinese")
+  /// 2. Returns null if the input doesn't match any known cuisine
+  /// 3. Returns the standardized cuisine name if valid
+  ///
+  /// Use this during import to ensure only valid cuisines are assigned.
+  static String? validateForImport(String? raw) {
+    if (raw == null || raw.isEmpty) return null;
+
+    final lower = raw.toLowerCase().trim();
+
     // Check if it's a known regional term first
-    if (regionToParent.containsKey(lower)) {
-      return regionToParent[lower];
+    if (_regionToParent.containsKey(lower)) {
+      return _regionToParent[lower];
     }
-    
-    if (countryToCuisine.containsKey(lower)) {
-      return countryToCuisine[lower];
+
+    if (_countryToCuisine.containsKey(lower)) {
+      return _countryToCuisine[lower];
     }
     
     // Try to find a matching cuisine in our standard list
@@ -699,6 +715,28 @@ class Cuisine {
   static String? codeFor(String? raw) {
     final name = validateForImport(raw);
     return name == null ? null : byName(name)?.code;
+  }
+
+  /// The original term, capitalised, when it is a sub-region of a cuisine or a
+  /// multi-country style; otherwise null.
+  static String? regionFor(String? raw) {
+    if (raw == null) return null;
+    final lower = raw.trim().toLowerCase();
+    if (lower.isEmpty) return null;
+    final parent = _regionToParent[lower];
+    final isSubRegion = parent != null && parent.toLowerCase() != lower;
+    if (!isSubRegion && !_multiCountryTerms.contains(lower)) return null;
+    return lower.replaceAllMapped(
+      RegExp(r'(^|[\s-])(\S)'),
+      (m) => '${m[1]}${m[2]!.toUpperCase()}',
+    );
+  }
+
+  /// Cuisine adjective with the region in parentheses, e.g. "Chinese (Sichuan)".
+  static String displayWithRegion(String? cuisine, String? region) {
+    final adjective = toAdjective(cuisine);
+    if (region != null && region.isNotEmpty) return '$adjective ($region)';
+    return adjective;
   }
 
   /// Get a list of all valid cuisine names (for autocomplete/validation UI)

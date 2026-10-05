@@ -1683,12 +1683,16 @@ class UrlRecipeImporter {
     final course = _guessCourse(data, sourceUrl: sourceUrl);
     
     // Detect cuisine
+    final rawCuisine = _parseString(data['cuisine'] ?? data['recipeCuisine']);
     final cuisine = _parseCuisine(data['cuisine'] ?? data['recipeCuisine']);
+    final region =
+        course.toLowerCase() == 'drinks' ? null : Cuisine.regionFor(rawCuisine);
     
     return RecipeImportResult(
       name: name,
       course: course,
       cuisine: cuisine,
+      subcategory: region,
       serves: serves,
       time: time,
       ingredients: _filterParsedIngredients(ingredients),
@@ -3927,6 +3931,7 @@ class UrlRecipeImporter {
     final courseConfidence = _getCourseConfidence(data, sourceUrl);
     
     // Parse cuisine
+    final rawCuisine = _parseString(data['recipeCuisine']);
     final cuisine = _parseCuisine(data['recipeCuisine']);
     final cuisineConfidence = cuisine != null ? 0.8 : 0.3;
     
@@ -3951,6 +3956,9 @@ class UrlRecipeImporter {
       if (subcategory != null) {
         subcategory = Spirit.toDisplayName(subcategory);
       }
+    }
+    if (subcategory == null && course.toLowerCase() != 'drinks') {
+      subcategory = Cuisine.regionFor(rawCuisine);
     }
 
     // Create raw ingredient data

@@ -47,6 +47,12 @@ void main() {
       expect(Cuisine.codeFor('Iranian'), 'IR');
     });
 
+    test('keeps English, England and Iranian as cuisine synonyms', () {
+      expect(Cuisine.codeFor('English'), 'GB');
+      expect(Cuisine.codeFor('England'), 'GB');
+      expect(Cuisine.codeFor('Iranian'), 'IR');
+    });
+
     test('maps Hawaiian input to US and no longer resolves HI', () {
       expect(Cuisine.codeFor('Hawaiian'), 'US');
       expect(Cuisine.codeFor('Hawaii'), 'US');
@@ -130,6 +136,37 @@ void main() {
         null,
       ]) {
         expect(Cuisine.codeFor(raw), isNull, reason: '$raw');
+      }
+    });
+  });
+
+  group('Cuisine.regionFor', () {
+    test('returns the capitalised term for sub-regions and multi-country styles in any case', () {
+      const expected = {
+        'Sichuan': 'Sichuan',
+        'Szechuan': 'Szechuan',
+        'Cajun': 'Cajun',
+        'Bavarian': 'Bavarian',
+        'Latin': 'Latin',
+      };
+      expected.forEach((word, result) {
+        for (final variant in [word.toLowerCase(), word.toUpperCase(), word]) {
+          expect(Cuisine.regionFor(variant), result, reason: variant);
+        }
+      });
+    });
+
+    test('returns null for cuisines, synonyms, empty and null input', () {
+      for (final raw in <String?>[
+        'Chinese',
+        'Austrian',
+        'English',
+        'Iranian',
+        'England',
+        '',
+        null,
+      ]) {
+        expect(Cuisine.regionFor(raw), isNull, reason: '$raw');
       }
     });
   });
