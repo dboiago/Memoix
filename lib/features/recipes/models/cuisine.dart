@@ -739,6 +739,31 @@ class Cuisine {
     return adjective;
   }
 
+  /// Label and colour key for a cuisine and optional region; null when nothing should show.
+  static ({String label, String colourKey})? displayFor(
+    String? cuisine,
+    String? region,
+  ) {
+    final cuisineText = cuisine?.trim();
+    final regionText = region?.trim();
+    final hasCuisine = cuisineText != null && cuisineText.isNotEmpty;
+    final hasRegion = regionText != null && regionText.isNotEmpty;
+
+    if (hasCuisine) {
+      return (
+        label: displayWithRegion(cuisineText, hasRegion ? regionText : null),
+        colourKey: cuisineText,
+      );
+    }
+    if (!hasRegion) return null;
+
+    final code = codeFor(regionText);
+    if (code == null && !_multiCountryTerms.contains(regionText.toLowerCase())) {
+      return null;
+    }
+    return (label: regionText, colourKey: code ?? regionText);
+  }
+
   /// Get a list of all valid cuisine names (for autocomplete/validation UI)
   static List<String> get allNames {
     return all.map((c) => c.name).toList()..sort();

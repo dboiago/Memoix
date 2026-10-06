@@ -280,18 +280,20 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
     final screenWidth = MediaQuery.sizeOf(context).width;
     final isCompact = screenWidth < 600;
     final chipFontSize = isCompact ? 11.0 : 12.0;
+    final cuisineChipLabel = recipe.course.toLowerCase() == 'drinks'
+        ? ((recipe.cuisine?.trim().isNotEmpty ?? false)
+            ? Cuisine.displayWithRegion(recipe.cuisine, null)
+            : null)
+        : Cuisine.displayFor(recipe.cuisine, recipe.subcategory)?.label;
 
     return Wrap(
       spacing: 6,
       runSpacing: 4,
       children: [
         // Cuisine chip
-        if (recipe.cuisine != null)
+        if (cuisineChipLabel != null)
           Chip(
-            label: Text(Cuisine.displayWithRegion(
-              recipe.cuisine,
-              recipe.course.toLowerCase() == 'drinks' ? null : recipe.subcategory,
-            ),),
+            label: Text(cuisineChipLabel),
             backgroundColor: theme.colorScheme.surfaceContainerHighest,
             labelStyle: TextStyle(
               color: theme.colorScheme.onSurface,
@@ -514,8 +516,10 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
         preItems.add(TextSpan(text: Cuisine.toAdjective(recipe.cuisine)));
       }
     } else {
-      if (recipe.cuisine != null) {
-        final cuisineColor = MemoixColors.forContinentDot(recipe.cuisine);
+      final cuisineDisplay =
+          Cuisine.displayFor(recipe.cuisine, recipe.subcategory);
+      if (cuisineDisplay != null) {
+        final cuisineColor = MemoixColors.forContinentDot(cuisineDisplay.colourKey);
         preItems.add(WidgetSpan(
           alignment: PlaceholderAlignment.middle,
           child: Container(
@@ -525,9 +529,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
             decoration: BoxDecoration(color: cuisineColor, shape: BoxShape.circle),
           ),
         ),);
-        preItems.add(TextSpan(
-          text: Cuisine.displayWithRegion(recipe.cuisine, recipe.subcategory),
-        ),);
+        preItems.add(TextSpan(text: cuisineDisplay.label));
       }
     }
 

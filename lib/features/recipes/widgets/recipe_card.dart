@@ -35,6 +35,8 @@ class _RecipeCardState extends ConsumerState<RecipeCard> {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final cuisine = widget.recipe.cuisine;
+    final cuisineDisplay =
+        Cuisine.displayFor(cuisine, widget.recipe.subcategory);
 
     final bool isDark = theme.brightness == Brightness.dark;
     return MemoixCardShell(
@@ -116,7 +118,7 @@ class _RecipeCardState extends ConsumerState<RecipeCard> {
                             ],
                           ),
                         ],
-                      ] else if (cuisine != null && cuisine.isNotEmpty) ...[
+                      ] else if (cuisineDisplay != null) ...[
                         // Cuisine indicator for food recipes
                         Row(
                           mainAxisSize: MainAxisSize.min,
@@ -124,13 +126,13 @@ class _RecipeCardState extends ConsumerState<RecipeCard> {
                             Text(
                               '\u2022',
                               style: TextStyle(
-                                color: MemoixColors.forContinentDot(cuisine),
+                                color: MemoixColors.forContinentDot(cuisineDisplay.colourKey),
                                 fontSize: 16,
                               ),
                             ),
                             const SizedBox(width: 6),
                             Text(
-                              _displayCuisine(cuisine, widget.recipe.subcategory),
+                              cuisineDisplay.label,
                               style: theme.textTheme.bodySmall?.copyWith(
                                 color: theme.colorScheme.onSurfaceVariant,
                               ),
@@ -247,9 +249,6 @@ class _RecipeCardState extends ConsumerState<RecipeCard> {
         ),
       );
   }
-
-  String _displayCuisine(String raw, String? subcategory) =>
-      Cuisine.displayWithRegion(raw, subcategory);
 
   /// Check if this recipe is a drink/cocktail
   bool _isDrink() {

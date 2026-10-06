@@ -203,13 +203,13 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
             const SizedBox(height: 8),
             _buildModernistTechniqueSelector(theme),
             const SizedBox(height: 24),
-          ] else ...[
+          ] else if (!_hasSpecializedScreen) ...[
             // Regular recipes: show Cuisine
             _buildSectionTitle(theme, 'Cuisine', Icons.public,
                 confidence: result.cuisineConfidence,),
             const SizedBox(height: 8),
             _buildCuisineSelector(theme, result),
-            if (!_hasSpecializedScreen && !_isDrinksCourse) ...[
+            if (!_isDrinksCourse) ...[
               const SizedBox(height: 12),
               TextField(
                 controller: _regionController,

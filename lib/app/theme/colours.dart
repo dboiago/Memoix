@@ -291,7 +291,8 @@ class MemoixColors {
          'cambodian', 'laotian', 'mongolian', 'korea', 'japan', 'china',
          'india', 'thailand', 'vietnam', 'philippines', 'indonesia', 'malaysia',
          'singapore', 'taiwan', 'pakistan', 'nepal', 'sri lanka', 'bangladesh',
-         'myanmar', 'burma', 'cambodia', 'laos', 'mongolia', 'asian',].contains(lower)) {
+         'myanmar', 'burma', 'cambodia', 'laos', 'mongolia', 'asian',
+         'southeast asian', 'east asian', 'south asian',].contains(lower)) {
       return continentAsian;
     }
     
@@ -323,7 +324,7 @@ class MemoixColors {
          'peru', 'canada', 'chile', 'colombia', 'venezuela', 'bolivia',
          'costa rica', 'ecuador', 'el salvador', 'guatemala', 'honduras',
          'nicaragua', 'panama', 'paraguay', 'uruguay',
-         'north american', 'south american', 'latin american', 'southern',
+         'north american', 'south american', 'latin american', 'latin', 'southern',
          'cajun', 'tex-mex', 'creole',].contains(lower)) {
       return continentAmericas;
     }
@@ -353,7 +354,7 @@ class MemoixColors {
          'turkey', 'lebanon', 'israel', 'iran', 'persia', 'iraq', 'syria',
          'jordan', 'palestine', 'saudi arabia', 'yemen', 'afghanistan',
          'bahrain', 'uae', 'united arab emirates', 'kuwait', 'oman', 'qatar',
-         'middle east', 'middle eastern',].contains(lower)) {
+         'middle east', 'middle eastern', 'levantine',].contains(lower)) {
       return continentMiddleEast;
     }
     

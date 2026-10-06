@@ -186,4 +186,32 @@ void main() {
       }
     });
   });
+
+  group('Cuisine.displayFor', () {
+    test('uses the cuisine name when there is no region', () {
+      expect(Cuisine.displayFor('DE', null)?.label, 'German');
+    });
+
+    test('matches displayWithRegion when cuisine is set', () {
+      final result = Cuisine.displayFor('CN', 'Sichuan');
+      expect(result?.label, Cuisine.displayWithRegion('CN', 'Sichuan'));
+      expect(result?.colourKey, 'CN');
+    });
+
+    test('shows a known region on its own when cuisine is empty', () {
+      final sichuan = Cuisine.displayFor(null, 'Sichuan');
+      expect(sichuan?.label, 'Sichuan');
+      expect(Cuisine.codeFor(sichuan?.colourKey), 'CN');
+      expect(Cuisine.displayFor(null, 'Mediterranean')?.label, 'Mediterranean');
+      expect(Cuisine.displayFor(null, 'Latin')?.label, 'Latin');
+      expect(Cuisine.displayFor(null, 'Hawaiian')?.label, 'Hawaiian');
+    });
+
+    test('returns null for unknown or empty input', () {
+      expect(Cuisine.displayFor(null, 'Zorblax'), isNull);
+      expect(Cuisine.displayFor('', ''), isNull);
+      expect(Cuisine.displayFor('  ', '  '), isNull);
+      expect(Cuisine.displayFor(null, null), isNull);
+    });
+  });
 }
