@@ -1055,8 +1055,8 @@ class _RecipeSelectorScreenState extends ConsumerState<_RecipeSelectorScreen> {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    // Select only fields used by this picker (uuid, name, cuisine, course,
-    // ingredientCount) — avoids rebuilds from unrelated recipe field changes.
+    // Select only fields used by this picker (uuid, name, cuisine, subcategory,
+    // course, ingredientCount) — avoids rebuilds from unrelated recipe field changes.
     final recipesAsync = ref.watch(
       allRecipesProvider.select(
         (v) => v.whenData(
@@ -1065,6 +1065,7 @@ class _RecipeSelectorScreenState extends ConsumerState<_RecipeSelectorScreen> {
                 uuid: r.uuid,
                 name: r.name,
                 cuisine: r.cuisine,
+                subcategory: r.subcategory,
                 course: r.course,
                 ingredientCount: r.ingredients.length,
               ),)
