@@ -1,0 +1,131 @@
+{
+  "recipe": {
+    "name": "Buchteln (Rohrnudeln)",
+    "time": "1 hr 30 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "20",
+    "source": "scraped",
+    "cuisine": "AT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a large bowl, prepare a sponge with the flour, yeast and lukewarm milk.",
+      "Cover and leave in a warm place for an hour or two.",
+      "Once your sponge is nice and bubbly, add the additional ingredients and knead into a firm-enough dough although it will be a little bit sticky.",
+      "Place the dough back in the bowl, cover and leave to rise again until it has increased considerably, for about an hour or two, depending on the temperature in the room.",
+      "On a floured surface, flatten the dough to about 2 cm.",
+      "With a dough cutter, cut out pieces about 6 cm in diameter, fill with 1 tbsp jam, fold and close the edges tightly at the top.",
+      "Place side-by-side (not too snugly as they will expand!) in a well buttered baking tray with the folded edge facing down. I use a 32 cm x 20 cm enamel pan like this.",
+      "Bake in a preheated oven at 180 °C for about 25 minutes until golden yellow.",
+      "Separate them to serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Wholewheat Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": "For the sponge",
+        "isOptional": false
+      },
+      {
+        "name": "Instant Yeast",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "2",
+        "section": "For the sponge",
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "g",
+        "notes": "lukewarm",
+        "amount": "125",
+        "section": "For the sponge",
+        "isOptional": false
+      },
+      {
+        "name": "Plain White Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": "For the final dough",
+        "isOptional": false
+      },
+      {
+        "name": "Instant Yeast",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "3",
+        "section": "For the final dough",
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "g",
+        "notes": "lukewarm",
+        "amount": "225",
+        "section": "For the final dough",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For the final dough",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": "For the final dough",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zest, grated",
+        "amount": "½",
+        "section": "For the final dough",
+        "isOptional": false
+      },
+      {
+        "name": "Tbsp Jam",
+        "unit": "large",
+        "notes": "per bun, firm, not runny; strawberry, raspberry or any other red berry jam",
+        "amount": "1",
+        "section": "For the filling",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": "For the pan",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4c1478efbdcabfbab71fdb362f96eaa8e87a27fc9da16c3dd266211fa7fb0696",
+    "lineage_hash": "d4dd066da95d4f4ebf962375241a3808cbcf084a8f6c033f0e445f8b078df5a8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.thebreadshebakes.com/2015/08/recipe-for-austrian-buchteln-rohrnudeln/",
+    "fetchedAt": "2026-08-01T18:41:57.845Z"
+  },
+  "rawSource": "https://www.thebreadshebakes.com/2015/08/recipe-for-austrian-buchteln-rohrnudeln/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

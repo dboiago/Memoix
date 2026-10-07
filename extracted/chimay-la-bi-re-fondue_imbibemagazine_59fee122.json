@@ -1,0 +1,39 @@
+{
+  "recipe": {
+    "name": "Chimay à la Bière Fondue",
+    "time": "20 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Bring the ale to a boil over medium heat in a fondue pot or a heavy-bottomed 2-qt saucepan. Turn the heat to medium-low.",
+      "Combine the cheese and cornstarch in a medium bowl and toss to coat. Add the cheese to the ale a large handful at a time, stirring in a figure-eight pattern until the cheese is completely melted before each addition. Have patience; this could take a total of 20 minutes and it is important that the cheese melts slowly and completely.",
+      "When all of the cheese is melted and the fondue is thick, stir in the mustard, Worcestershire sauce, and paprika. Season with salt.",
+      "Serve piping hot, from the fondue pot placed over a low flame or the saucepan set on a trivet. (If you’re serving it from a saucepan, you’ll need to return it to a low flame to remelt the cheese once it begins to solidify. Do this stirring gently, again in a figure-eight pattern.) Offer your guests forks or metal skewers for dipping the pretzels, sausages, apples, or vegetables.",
+      "Serves 6-8.",
+      "Reprinted with permission from Beer Bites: Tasty Recipes and Perfect Pairings for Brew Lovers by Christian DeBenedetti and Andrea Slonecker. Published by Chronicle Books."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "eba720e7c7cc87e8a1489228b37c3758d3a41aa30fc0bb7372b1374992bb9fdc",
+    "lineage_hash": "1ab02e5fe9bcade5efc0fa2f3273c812b49c22f29bd6c2ed46cf7e0c2e867ac9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/chimay-la-biere-fondue/",
+    "fetchedAt": "2026-08-03T18:15:02.619Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/chimay-la-biere-fondue/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

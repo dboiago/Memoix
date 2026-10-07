@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Airmail Cocktail",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake the first 3 ingredients with ice, then double strain into a chilled coupe. Top with Champagne, then garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "9b04dce224865106640cbefcf2c2e7a74cbb762d88d856d6ba1f47033784f3b0",
+    "lineage_hash": "4402fab0c8762d086466432bdb4c2dba746ed664b8a09e824d9a6f31265a137f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/recipe-airmail/",
+    "fetchedAt": "2026-08-03T19:09:06.016Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/recipe-airmail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

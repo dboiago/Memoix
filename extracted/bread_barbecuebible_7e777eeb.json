@@ -1,0 +1,79 @@
+{
+  "recipe": {
+    "name": "Bread",
+    "time": null,
+    "course": "breads",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the flour, milk, baking powder, and salt in a mixing bowl and whisk or stir to mix.",
+      "Add the shortening, cutting it in with two knives or a pastry blender; the mixture should feel sandy.",
+      "Add the water and stir to obtain a soft, pliable dough.",
+      "Turn the dough onto a lightly floured work surface and knead for 5 minutes.",
+      "Wrap the dough in plastic wrap and let rest for 5 minutes. You’re ready to roll and grill it."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": "plus flour for rolling the dough",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Powdered Milk",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Water",
+        "unit": "C",
+        "notes": "or more as needed",
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ab6a7e6f8e0c62b631cd46cfba0b9b95d58a386a9e2506478dbbad8fb5378535",
+    "lineage_hash": "f9f3d58433d3ff79942b67b429379fba4c16f98f8ebb7557c160f7959e0fc0e9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/2013/02/18/bread/",
+    "fetchedAt": "2026-08-01T16:27:05.836Z"
+  },
+  "rawSource": "https://barbecuebible.com/2013/02/18/bread/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

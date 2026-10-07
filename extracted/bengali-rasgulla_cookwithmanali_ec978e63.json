@@ -1,0 +1,91 @@
+{
+  "recipe": {
+    "name": "Bengali Rasgulla",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "15",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "52",
+      "carbohydrateContent": "13",
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Heat milk in a heavy bottom pan.",
+      "Once the milk comes to a boil, switch off the flame and add 1/2 cup of water to bring down the temperature a bit.",
+      "Add lemon juice till the milk curdles.",
+      "Drain the curdled milk using a muslin cloth. You are now left with what is known as \"chena\" or \"paneer\".",
+      "Squeeze the muslin cloth to remove all the water from the chena.",
+      "Take the chena in a plate and add cornflour to it.",
+      "Mash the chena with your hands for 10 minutes to make it soft and smooth. This is an important step to make sure that the rasgullas are soft.",
+      "Make small balls from the chena after the mashing is done.",
+      "Meanwhile in a pan mix the sugar and water and let it boil at high temperature.",
+      "Put the rasgulla balls in the boiling sugar syrup.",
+      "Cook the rasgullas in sugar syrup for 18-20 minutes on high flame.",
+      "Refrigerate the rasgullas with the syrup and serve chilled."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Milk",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1f6d0034964a87fa2e2321b475a4d2d8af8b359cb43b77aab2f38b682e26cc48",
+    "lineage_hash": "69c51b1992542bdb85d6dc555d49fc6c9a8c88b69ed59c7aa97f8adc48ef8a52"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/bengali-rasgulla/",
+    "fetchedAt": "2026-08-01T19:06:56.786Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/bengali-rasgulla/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

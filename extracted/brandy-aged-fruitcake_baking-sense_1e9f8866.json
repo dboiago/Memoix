@@ -1,0 +1,231 @@
+{
+  "recipe": {
+    "name": "Brandy Aged Fruitcake",
+    "time": "30 days 1 hour 40 minutes",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "24",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "297",
+      "carbohydrateContent": "50",
+      "fatContent": "10",
+      "proteinContent": "4"
+    },
+    "directions": [
+      "Combine 1 ½ oz&#32;almonds, 3 oz&#32;walnuts, 12 oz&#32;dark raisins, 8 oz&#32;light raisins, 3 oz&#32;candied orange peel, 3 oz&#32;candied cherries, 6 oz&#32;zante currants, with the zest and juice  of 1&#32;lemon. Add 6 oz&#32;brandy and toss to coat the fruit and nuts with the liquor. Cover the bowl and let it sit overnight.",
+      "Preheat the oven to 350 °F. Line a 9&quot;x 3&quot; cake pan with a parchment round. (see note)",
+      "Sift together 7 ½ oz&#32;all purpose flour, 1 ½ teaspoon&#32;baking powder, 1 teaspoon&#32;cinnamon, ½ teaspoon&#32;nutmeg, ½ teaspoon&#32;ginger and ½ teaspoon&#32;table salt. Set aside.",
+      "In a large mixing bowl, cream 6 oz&#32;unsalted butter and 6 oz&#32;brown sugar until light and aerated. Scrape down the bowl and the beater. Add 4&#32;large eggs, two at a time. Mix until combined then scrape down the bowl and the beater.",
+      "With the mixer running on low speed, add the dry ingredients in 3 batches and mix until combined. Fold in the soaked fruit and all the liquid.",
+      "Pour the batter into the prepared cake pan and spread it out to an even layer. Bake until a toothpick poked in the center of the cake comes out clean, about 55 minutes. As soon as the pan is removed from the oven pour ¼ cup of brandy over the top of the cake.",
+      "Cool the cake to room temperature before removing from the pan. Wrap the cake in two layers of plastic wrap and set aside at room temperature.",
+      "Once a week for at least 4 weeks, unwrap the cake and generously brush on all sides with more brandy. The cake can be served as is or you can ice and decorate  the cake with marzipan and fondant."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Almonds",
+        "unit": "oz",
+        "notes": "½ cup coarsely ground",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Walnuts",
+        "unit": "oz",
+        "notes": "1 cup chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Raisins",
+        "unit": "oz",
+        "notes": "2 ¼ cups",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Raisins",
+        "unit": "oz",
+        "notes": "1 ⅓ cups",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Candied Orange Peel",
+        "unit": "oz",
+        "notes": "⅓ cup",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Candied Cherries",
+        "unit": "oz",
+        "notes": "⅓ cup",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Zante Currants",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "grated zest juice",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brandy (⅔ Cup (plus More for Aging, See Note))",
+        "unit": "oz",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "oz",
+        "notes": "1 ½ cups, see note",
+        "amount": "7½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "room temperature",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "oz",
+        "notes": "¾ cup",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "room temperature",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apricot Preserves",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Recipe Marzipan",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Recipe Rolled Fondant",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Recipe Royal Icing",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Marzipan Holly and Silver Dragees for Decoration",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0c7fcc7fc8d8b373d76f4ac444c5edfa95cdadfe787cd1eb55fd85d2329fe944",
+    "lineage_hash": "26d60e59c7828a173236f4c0d75bf0c29a43735a462bf4665c822d73290133fb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2017/10/03/brandy-aged-fruitcake/",
+    "fetchedAt": "2026-08-02T01:24:43.761Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2017/10/03/brandy-aged-fruitcake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

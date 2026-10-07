@@ -1,0 +1,85 @@
+{
+  "recipe": {
+    "name": "Arugula with Shallot Confit Vinaigrette and Toasted Almonds",
+    "time": "45 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the shallots in a small saucepan with the vinegar, 160 ml (2/3 cup) water and the sugar. Bring to a simmer and cook uncovered over medium heat about 20 minutes, until the liquids have evaporated and you're left with a syrupy shallot confit. Let cool. (This can be prepared the day before and kept covered in the refrigerator.)",
+      "In a salad bowl, toss together the greens and the oil so the leaves are evenly coated. Add in the shallot confit and the almonds, and toss gently to combine.",
+      "Serve immediately, or let the salad sit a little to soften the leaves slightly and develop the flavors."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Shallots",
+        "unit": "ml",
+        "notes": "finely minced, from about 6 tiny shallots",
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Balsamic Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Almonds",
+        "unit": null,
+        "notes": "toasted and roughly chopped",
+        "amount": "55",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Arugula",
+        "unit": null,
+        "notes": "a.k.a. rucola or rocket",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": "use part walnut or hazelnut oil if you have it",
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "519ceba5b910d4570ad04dc8198a22f43af49902cab74dfa3febb5859b7b3f96",
+    "lineage_hash": "8f7a924d3a5366af6ea2d4353ceabfb3309c2ba186ee783b531f9af1231b5da2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/salads/rucola-salad-shallot-vinaigrette-and-toasted-almonds-recipe/",
+    "fetchedAt": "2026-09-30T18:56:57.407Z"
+  },
+  "rawSource": "https://cnz.to/recipes/salads/rucola-salad-shallot-vinaigrette-and-toasted-almonds-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

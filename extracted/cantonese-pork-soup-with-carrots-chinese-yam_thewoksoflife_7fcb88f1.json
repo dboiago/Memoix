@@ -1,0 +1,115 @@
+{
+  "recipe": {
+    "name": "Cantonese Pork Soup with Carrots & Chinese Yam",
+    "time": "5 hr 30 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "266",
+      "carbohydrateContent": "21",
+      "fatContent": "4",
+      "proteinContent": "25"
+    },
+    "directions": [
+      "Rinse the shiitake mushrooms of any dust or dirt, and pre-soak for at least 2-3 hours in warm water. Do not discard the mushroom soaking water.",
+      "Place the pork in a thick-bottomed soup pot filled with enough water to just cover the pork. Bring to a boil, then immediately remove from the heat. Drain, rinse the pork under running water, and clean the stock pot. This step ensures a very clean broth.",
+      "Transfer the pork back to the clean pot. Add the soaked Shiitake mushrooms, carrots, red dates, goji berries, ginger, and 14 cups of water, along with the mushroom water. Cover and turn the heat to high. Bring to a boil, then reduce the heat to simmer. Simmer for two hours. During this time, the heat should be high enough to gently move the soup, but not so high that there are visible bubbles.",
+      "After 2 hours, add the chunks of Chinese yam. Bring to a boil using medium heat, then immediately reduce the heat, cover, and simmer for 1 more hour until Chinese yam is fork-tender. Serve the soup with salt at the table so everyone can add salt to taste. Don’t forget to shred the pork also, and serve it with some light soy sauce for dipping."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Shiitake Mushrooms",
+        "unit": null,
+        "notes": "large, dried",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Lean Pork Shoulder/butt",
+        "unit": null,
+        "notes": "1 large piece",
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Large Carrots",
+        "unit": null,
+        "notes": "cut into large chunks",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Dried Red Dates",
+        "unit": null,
+        "notes": "also known as dried jujubes, pitted and halved",
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Dried Goji Berries",
+        "unit": null,
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chunk Ginger",
+        "unit": "large",
+        "notes": "smashed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "3.3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Chinese Yams",
+        "unit": null,
+        "notes": "peeled and cut into large chunks",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt (to Taste)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6df8fd3e9c1298ca620548d7812bcd14148af66f40461a77f1ecc9209ae1548e",
+    "lineage_hash": "1a9722e85a1673a970d40d792663807171cc81c27b183c38e750d3ad5720092e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/cantonese-pork-soup-carrot-chinese-yam/",
+    "fetchedAt": "2026-08-02T14:02:14.195Z"
+  },
+  "rawSource": "https://thewoksoflife.com/cantonese-pork-soup-carrot-chinese-yam/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

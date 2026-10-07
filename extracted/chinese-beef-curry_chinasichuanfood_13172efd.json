@@ -1,0 +1,179 @@
+{
+  "recipe": {
+    "name": "Chinese Beef Curry",
+    "time": "50 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "400",
+      "carbohydrateContent": "14",
+      "fatContent": "20",
+      "proteinContent": "37"
+    },
+    "directions": [
+      "Heat the pot until really hot, spread cooking oil in and sauté the beef for 2-3 minutes until slightly browned.  Then add 1 cup warm water and cook the beef for 20 minutes, with lid covered.",
+      "In another pan, add another tablespoon of cooking oil and fry the sweet onion until slightly browned. Optional but recommended.&nbsp;",
+      "Place potato, carrot and fried onion, golden curry paste and coconut milk until all of the ingredients almost covered.  Cook for another 15 to 20 minutes until the vegetables are soft. Open the lid and heat until the sauce is well thickened.",
+      "Serve with steamed rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Slow Cook Beef Cuts",
+        "unit": "kg",
+        "notes": "cut into 3 cm cubes",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": "cut into small cubes",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potato",
+        "unit": "large",
+        "notes": "cut into small cubes",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Cooking Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Warm Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Beef Curry",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Slow Cook Beef Cuts",
+        "unit": "kg",
+        "notes": "cut into 3 cm small cubs",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": "large",
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Onion",
+        "unit": null,
+        "notes": "cut into small pieces",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Cooking Oil",
+        "unit": "Tbsp",
+        "notes": "divided",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Curry Paste",
+        "unit": "g",
+        "notes": "one box",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Warm Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water As Needed",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Steamed Rice for Serving",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c7b228c369bbadf8f4d3ee1243f1d513149f1c82967749cf7f306b8acfc76109",
+    "lineage_hash": "ae5562ebb03c68dc726928d27ccdc76638f6d4c083d19df8435f572758cbd4f2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/chinese-beef-curry/",
+    "fetchedAt": "2026-08-01T22:50:17.317Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/chinese-beef-curry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,69 @@
+{
+  "recipe": {
+    "name": "Amadeus Cocktail",
+    "time": "5 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": "Flute",
+    "garnish": [],
+    "subcategory": "Sparkling",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To infuse the sherry, add the powdered cep to the sherry and allow to infuse overnight - you can vary the quantity of porcini powder and infusing time to achieve a stronger or less potent result",
+      "The next day, strain the sherry to remove any excess powdered cep and return to a clean bottle",
+      "To assemble the cocktail, add 15ml of the infused sherry to a champagne flute. Add the bitters, top up with champagne and stir to combine. Serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sherry",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cep Mushrooms",
+        "unit": "g",
+        "notes": "dried, blitzed into a powder",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bitters",
+        "unit": "dashes",
+        "notes": "'Amadeus' - made of green tea, truffle and cep",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Champagne",
+        "unit": null,
+        "notes": "Jaques Picard",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d663bb386f7a7852c63420bf34d017b4988e07c101affee417b5b6b52c2f70ca",
+    "lineage_hash": "359e51466f005e575603e55537506060dcd53204150d861c208d4871f7e33565"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/amadeus-cocktail-recipe",
+    "fetchedAt": "2026-08-03T19:39:50.261Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/amadeus-cocktail-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,236 @@
+{
+  "recipe": {
+    "name": "Chicken Lollipop / Drums of Heaven",
+    "time": "2 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Separate the drumette and the flat. Pop the joint between drumette and the flat. Then cut between the joint to separate.",
+      "With the flat, hold the tip in your right hand, and flat in the left hand (reverse if you're left-handed). Use force to push out the two small bones. Discard the smaller bone.",
+      "You can now discard the wing tip. We needed it for gripping earlier.",
+      "Gather the meat to one side, turning the meat inside-out. This is the first lollipop—the smaller (but tastier) one.",
+      "Now, the drumette. We need to expose the joint at the end where we separated the drumette from the flat.",
+      "Cut the connective tissue around the base of the bone, then angle the blade and scrape towards you to form a clearing where you can hold the bone.",
+      "Hold the exposed joint with a cloth and scrape away to detach the meat from the bone and gather it at the other end. This will take some force.",
+      "Now, hold the loose meat with the cloth and pull to turn the meat inside out to form the second (bigger) lollipop.",
+      "Repeat these steps for all the wings. You will end up with double the number of lollipops as the wings you start with.",
+      "Mix the soy sauce, green chilli sauce, red chilli sauce, salt, MSG, pepper, ginger, garlic, and egg whites in a mixing bowl.",
+      "Add the chicken lollipops, massage them well, and leave them to marinate for as long as it takes to prep the ingredients for the sauce.",
+      "The cooking will take place quickly on high heat. So, all your ingredients should be prepped and at hand before the cooking starts.",
+      "To make the sauce mix, combine red chilli sauce, ketchup, and dark soy sauce in a bowl.",
+      "Heat the kadai until very hot. Add vegetable oil and let it start smoking.",
+      "Add the diced onions and cook for one minute.",
+      "Add the ginger and fry 30 seconds.",
+      "Add garlic and fry 30 seconds.",
+      "Add sugar and let it melt and caramelise—about 30 seconds.",
+      "Next add the salt, ground pepper, the sauce mix and the chicken stock.",
+      "Reduce for a few minutes until the sauce gets syrupy and sticky. Turn off the heat.",
+      "Heat oil in a kadai or wok until it is very hot (200ºC).",
+      "Just before frying, add the plain flour and cornstarch (cornflour) to the marinated chicken and mix to form a dry batter. Adding too much liquid in the batter or the lollipops won't stay crisp.",
+      "Add the lollipops to the hot oil, taking care not to overcrowd the pan. Fry in two batches if required. The oil temperature will drop to about 150ºC. The rest of the frying should take place at this temperature to make sure the chicken cooks all the way without getting too brown outside.",
+      "Drain on a basket lined with paper towels.",
+      "Re-heat the sauce if too cold, and turn off the heat. Now add the chicken lollipops to the pan and toss to coat it evenly.",
+      "Garnish with spring onions and serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Wings",
+        "unit": "g",
+        "notes": "6 whole wings",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "g",
+        "notes": "1 tsp",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilli Sauce",
+        "unit": "g",
+        "notes": "1 tsp",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli Sauce",
+        "unit": "g",
+        "notes": "1½  tbsp",
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "MSG",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "Tbsp",
+        "notes": "maida",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil for Deep-frying",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "g",
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli Sauce",
+        "unit": "g",
+        "notes": "3 tbsp",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ketchup",
+        "unit": "g",
+        "notes": "1 tsp",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "g",
+        "notes": "1 tsp",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pc Spring Onions",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a07e4d119d28312020831bb0efcc9ee2efe0dd93ee0a10aaf6648873b6313a76",
+    "lineage_hash": "fb8171362c31afd92e7562ebf47d586d599adf9274a16478358970bf588cb549"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.bongeats.com/recipe/chicken-lollipop",
+    "fetchedAt": "2026-08-01T18:23:33.137Z"
+  },
+  "rawSource": "https://www.bongeats.com/recipe/chicken-lollipop",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

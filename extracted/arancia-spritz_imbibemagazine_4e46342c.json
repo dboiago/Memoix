@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Arancia Spritz",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Wine",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the ingredients in a wine glass, except the Prosecco. Add ice and stir to chill. Top with Prosecco. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "5b4162146e836eb91d03d84b8a182d7f01638b5509703589dded6e70dc5b8ce4",
+    "lineage_hash": "5dd3a1fca567e0d1e8dacf7fd773b472156c5c1569ccd98ec4eb444e3213d641"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/arancia-spritz/",
+    "fetchedAt": "2026-08-03T18:19:28.775Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/arancia-spritz/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

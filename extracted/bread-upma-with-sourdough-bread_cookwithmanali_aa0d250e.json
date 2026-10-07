@@ -1,0 +1,157 @@
+{
+  "recipe": {
+    "name": "Bread Upma (with sourdough bread)",
+    "time": "20 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "265",
+      "carbohydrateContent": "35",
+      "fatContent": "11",
+      "proteinContent": "7"
+    },
+    "directions": [
+      "Toast 4 slices of sourdough bread lightly in a pan on medium heat. If using sourdough, you don&#39;t need to toast the bread much at all (see note 1). Then cut the bread into cubes and set aside.",
+      "Heat 1 tablespoon of oil in a kadai or pan on medium heat. Once the oil is hot, add ¼ teaspoon mustard seeds and let them pop. Then add ½ cup chopped onions, 1 chopped green chili and 5 to 6 curry leaves. Cook for 2 minutes until the onions are a little soft.",
+      "Then add chopped green pepper (½ of a medium size pepper) and cook 2 more minutes until the pepper is slightly soft. Add 1 chopped tomato, cover the kadai with a lid and cook for 2 minutes until the tomatoes are soft.",
+      "Then add ½ teaspoon of salt and ¼ teaspoon of turmeric powder and stir 30 seconds. Add around 4 tablespoons of water at this point and stir. Cook the masala for 1-2 minutes until it all comes together and masala looks &quot;pasty&quot;.",
+      "Add ½ teaspoon sugar and mix. Toss in the cubed sourdough bread and give a good stir so that all the bread cubes are coated with the masala.",
+      "Remove the kadai from heat and add 1 tablespoon roasted peanuts and 1 tablespoons chopped cilantro. You can squeeze in some fresh lemon juice or top with some sev before serving. Serve hot!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sourdough Bread Slices",
+        "unit": null,
+        "notes": "or use any bread of choice",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": "avocado oil",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Teaspoon",
+        "unit": null,
+        "notes": "mustard seeds",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chili",
+        "unit": null,
+        "notes": "chopped, adjust to taste",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "5-6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Pepper",
+        "unit": "medium",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": "medium",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "adjust to taste",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": "60 ml",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": "optional but recommended",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Peanuts",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "baffd6724c3929d848354fbc956806c1adf7da7b7f7ed1697cf3bc00ddb4d91a",
+    "lineage_hash": "f55d6218de12569e376f07cada0fcf1405c281bb91cdb53d2ff7a544decb556a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/bread-upma/",
+    "fetchedAt": "2026-08-02T08:17:19.757Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/bread-upma/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

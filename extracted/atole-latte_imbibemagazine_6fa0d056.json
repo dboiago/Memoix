@@ -1,0 +1,37 @@
+{
+  "recipe": {
+    "name": "Atole Latte",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "AtolePlace the ingredients in a blender. Blend on medium speed for 20-30 seconds until the sugar dissolves and the masa and canela are broken down. Be careful not to overblend, as excess blending can cause the dairy to overwhip.",
+      "Pour the mixture into a pot and cook over medium heat, constantly stirring and scraping the bottom to prevent burning. Cook until the mixture thickens to a smooth, glossy consistency, similar to wet paint (approximately 8-10 minutes).",
+      "Once thickened, strain the mixture through a fine-mesh sieve to eliminate any solids. Transfer to an airtight container and refrigerate for up to 3 days.\nAtole LatteMix the atole with a shot of espresso in your preferred cup. Whisk until smooth, then add steamed milk on top.",
+      "For an iced version, combine the atole with espresso, then shake with ice and milk.\nNoteFresh masa is highly recommended for the best flavor and texture. However, if it’s hard to find, you can substitute by mixing equal parts water and masa harina to create a similar consistency."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "be7ebabbfa75ef95a3370ef2e090e7ed341ea1ec8e7782e9f1ab9b626b122e68",
+    "lineage_hash": "0ffdd064911590497c461f92164af70936734f157aea6145d0aa7a29194f0c48"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/atole-latte/",
+    "fetchedAt": "2026-08-04T01:20:27.630Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/atole-latte/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

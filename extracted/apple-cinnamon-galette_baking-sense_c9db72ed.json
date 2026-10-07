@@ -1,0 +1,101 @@
+{
+  "recipe": {
+    "name": "Apple Cinnamon Galette",
+    "time": "40 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "165",
+      "carbohydrateContent": "31",
+      "fatContent": "4",
+      "proteinContent": "2"
+    },
+    "directions": [
+      "Preheat the oven to 400 °F.",
+      "If using a baking stone place it in the oven to preheat at least an hour before baking.",
+      "Roll the dough to a 16&quot; round, about ¼&quot; thick. Transfer the dough to a parchment lined sheet pan or wooden peel (see note). Sprinkle ¼ cup&#32;dry bread crumbs over the bottom, leaving a 2&quot; border around the edges.",
+      "Arrange 2 pounds&#32;apples (sliced) over the bread crumbs, again leaving a 2&quot; border. Combine the 2 oz&#32;granulated sugar and 1 teaspoon&#32;ground cinnamon then sprinkle over the apples. Fold the border of dough over the edges of the apples.",
+      "Brush the border with egg wash then sprinkle with sugar.",
+      "Bake directly on the baking stone or on the sheet pan until the apples are tender and the crust is well browned. Enjoy warm or room temperature."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Recipe Perfect Pie Crust",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Bread Crumbs",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apples",
+        "unit": "lb",
+        "notes": "peeled, cored, sliced ¼\" thick",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "for egg-wash",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar for Finish",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "71a5a93769bf0d9946a74c1ac4714dae7517dcc57059f0afeb9af74212561dda",
+    "lineage_hash": "316347e2073e1124239870ab932a1111c8b34779681fc2cee7b474265a0b84f4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2017/01/17/apple-cinnamon-galette/",
+    "fetchedAt": "2026-08-02T02:12:58.151Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2017/01/17/apple-cinnamon-galette/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

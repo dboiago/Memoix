@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Belafonte Spritz",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Wine",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all the ingredients in an ice-filled wine glass and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "5fd49f02e5d8c9f83583d62b127092e4ef0266faa6e9f537abc5e9c1514e5272",
+    "lineage_hash": "98711b0b6210600c9af62b79b67b9825d1c9e8cb2d729a7c47111639de53970b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/belafonte-spritz-recipe/",
+    "fetchedAt": "2026-08-03T23:51:46.244Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/belafonte-spritz-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

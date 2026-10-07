@@ -1,0 +1,123 @@
+{
+  "recipe": {
+    "name": "Banana Oat Pancakes",
+    "time": "25 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "153",
+      "carbohydrateContent": "23",
+      "fatContent": "5",
+      "proteinContent": "5"
+    },
+    "directions": [
+      "To a blender add the banana, oats, plant-based milk, peanut butter, baking powder, vanilla, cinnamon, and salt. Blend until smooth (it&#39;s ok if there are still little bits of oats).",
+      "Now add the all-purpose flour and mix in to make a thick batter. Set aside.",
+      "Heat a nonstick pan or griddle over medium-low heat and lightly brush with a bit of oil. Use a 1/3 cup measuring cup to scoop the batter onto the pan, gently spreading it into a round shape using the side of the measuring cup. Cook slowly until the edges of the pancake look dry and a few large bubbles appear. Flip the pancake with a spatula and continue cooking until golden on both sides. Repeat the process with the remaining batter. Note: You can make the pancakes bigger or smaller than the 1/3 cup measure if desired.",
+      "Serve warm with any toppings of choice such as vegan butter, maple syrup, berries, peanut butter or fruit.Note: I love making a big batch of these and storing them in the fridge for up to 5 - 7 days. When ready to eat, just pop one in the toaster to reheat! (See recipe notes for freezing instructions)."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bananas",
+        "unit": "medium",
+        "notes": "9.2 oz/ 260 g total when peeled",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oats",
+        "unit": "C",
+        "notes": "gluten-free if preferred, (old-fashioned, 1-minute oats, or instant)",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plant-based Milk",
+        "unit": "C",
+        "notes": "such as oat or soy",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Natural Peanut Butter",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": "or sub whole wheat pastry flour or a gluten-free all purpose flour blend",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil for Cooking",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c5aa42a38ed9778c18750760e93d44da97a693bbf31156552b0fa96060588deb",
+    "lineage_hash": "99bdc472c84326fde0239396639340209d27775ef6089db0053c24c4cc2f6ca0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/banana-oat-pancakes/",
+    "fetchedAt": "2026-08-02T07:38:50.649Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/banana-oat-pancakes/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

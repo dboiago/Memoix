@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Calvados Daiquiri",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Ice-filled",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake all of the ingredients with ice, strain into an ice-filled glass, then garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "42f7b68da56c083fce254fc009679e5451703a0f263ce17b542f717116154081",
+    "lineage_hash": "36f81555dfec1728fe57cce15d1e7baeca672e72b42647b023dc43facb9428b2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/calvados-daiquiri-from-bar-chinois/",
+    "fetchedAt": "2026-08-03T20:41:08.531Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/calvados-daiquiri-from-bar-chinois/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

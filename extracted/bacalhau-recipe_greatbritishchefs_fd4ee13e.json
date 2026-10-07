@@ -1,0 +1,233 @@
+{
+  "recipe": {
+    "name": "Bacalhau Bites",
+    "time": "1 hr 30 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "20",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the fish trimmings to a blender and blitz. Add the eggs, mix until just combined then add the Tabasco, sugar, salt, vinegar and cornflour. Mix again until smooth",
+      "Scrape out into a mixing bowl and clean the blender. Add the pepper, fennel and onion to the clean blender and blitz into a pulpy liquid. Chop the chillies, ginger and garlic, then add to the jug and blitz again. Transfer the mix to a bowl and set aside",
+      "Blanch 125g of the spinach by placing in a bowl and covering in boiling water for 30 seconds. Strain and set aside ice cold water to cool. Once completely cool, strain again and squeeze out as much liquid from the spinach as possible",
+      "Roughly chop the cooked spinach along with the remaining 125g of raw spinach and add to the mix, along with the flaked salt cod or smoked haddock",
+      "For the sweet chilli sauce, remove the seeds and stalks from each chilli and chop finely. Finely chop the garlic and ginger, then add all of the ingredients to a saucepan (apart from the diluted cornflour) and bring to the boil",
+      "Once boiling, whisk in the cornflour solution and boil for a further 1-2 minutes, then set aside to cool",
+      "Meanwhile, cook the bacalhau bites. Shape the mix into walnut-sized pieces and deep-fry in hot oil at 180°C for 2-3 minutes until golden. Set aside to drain and cool a little, then serve with the sweet chilli dip"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Salt Cod Fillet",
+        "unit": "g",
+        "notes": "soaked overnight then gently poached for 5 minutes",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Trimmings",
+        "unit": "g",
+        "notes": null,
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tabasco",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "18",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spinach",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chillies",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "fresh",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "170",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinches",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour",
+        "unit": "pinches",
+        "notes": "mixed with a little cold water to dilute",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1416b2da2f75edeee6f758cc47df782ecb8967435f5053fa4e466d3c85fefcd4",
+    "lineage_hash": "585dc302e5b40e75e07ee92b6ae8a9c9cad1917698f36c5873733f36d6bcd9f3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/bacalhau-recipe",
+    "fetchedAt": "2026-08-03T16:27:38.122Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/bacalhau-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

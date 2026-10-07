@@ -1,0 +1,86 @@
+{
+  "recipe": {
+    "name": "Cheng Teng (Longan and Snow Fungus Sweet Soup)",
+    "time": "2 hr 10 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cut off small pieces from the snow fungus with a scissor. Discard the yellow tough center.",
+      "Place the snow fungus, longan, lotus seeds, jujube fruits, and water in a soup pot. Bring to a boil. Reduce heat and simmer until the snow fungus is soft, about 1 1/2 hour to 2 hours.",
+      "Test for the level of sweetness and only add rock sugar/palm sugar if needed. Stir until the sugar is fully dissolved.",
+      "Turn off heat. Serve warm or chilled."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Snow Fungus",
+        "unit": null,
+        "notes": "dried, soaked overnight until soft and puffed up",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Dried Longan",
+        "unit": null,
+        "notes": "soaked overnight",
+        "amount": "80-100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jujube Fruits/red Dates",
+        "unit": null,
+        "notes": "dried, soaked overnight",
+        "amount": "8-12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Dried Lotus Seeds",
+        "unit": null,
+        "notes": "soaked overnight",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rock Sugar",
+        "unit": null,
+        "notes": "alt: palm sugar, to taste (optional)",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "101d5d3541dfee30ba9ae33012eb5cd8b7c9f10fbd2cd67223ca2d593531bb48",
+    "lineage_hash": "29aa32959f9faf891e31e204d4dce19323fae21d33147de580d09140fd83263f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/longan-and-snow-fungus-sweet-soup.html",
+    "fetchedAt": "2026-08-02T00:09:38.392Z"
+  },
+  "rawSource": "https://dailycookingquest.com/longan-and-snow-fungus-sweet-soup.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

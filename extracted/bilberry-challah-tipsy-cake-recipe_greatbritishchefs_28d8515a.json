@@ -1,0 +1,184 @@
+{
+  "recipe": {
+    "name": "Bilberry Challah Tipsy Cake",
+    "time": "2 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix together all the ingredients for the challah dough apart from the Demerara sugar, and then knead until smooth and elastic. Set aside in a greased bowl, and then cover and let proof until it doubles in size, about 2 hours",
+      "While the challah rises, make the crumble. Rub the butter into the flour until it looks sandy, then add the sugar and mix well. Set aside",
+      "Once risen, knock back the dough and divide into 20g pieces. Roll these pieces into balls and let rest for 10 minutes",
+      "Use a rolling pin to roll each ball into a circle about 5cm in diameter",
+      "Place a spoonful of bilberries into the middle of each circle. You will have some leftover for the next step",
+      "Gather the edges of the circle together, and re-shape into a ball",
+      "Brush each ball with melted butter, and then roll them in Demerara sugar",
+      "Sprinkle some of the remaining bilberries on the base of a 20cm cast iron pot, and then place one ball in the middle of the pot and five others around the edge",
+      "Pat some more melted butter onto the surface of the balls, and sprinkle over the crumble",
+      "Cover and leave to proof again for about 30 minutes",
+      "While the dough proofs again, make the cream. Lightly warm together the cream and sugars, whisking until the sugar has dissolved. Add in the vodka and vanilla, and stir to combine",
+      "Bake the challah for 30 minutes, then remove from the oven and use a knife to gently prise apart the dough balls",
+      "Pour in roughly 175g of the cream and then return to the oven for 5 more minutes. Remove, then pour in another 175g of cream and bake for 5 more minutes",
+      "Remove from the oven and let rest for 5–10 minutes. Serve with the remaining vodka cream"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Strong Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "softened, plus extra melted butter for brushing",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "g",
+        "notes": "warm",
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yeast",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Demerara Sugar",
+        "unit": null,
+        "notes": "to coat",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Demerara Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bilberries",
+        "unit": "g",
+        "notes": "fresh or frozen, defrosted and drained",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Demerara Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vodka",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Essence",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "70f778f4d30cec98ec746f6c7317c97b390c0430c2556a351a1ee9f9e0dd7a90",
+    "lineage_hash": "c76626740083ed1ca05ede616b4e4390787fcad47620e7d411d871f1867a346f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/bilberry-challah-tipsy-cake-recipe",
+    "fetchedAt": "2026-08-02T14:15:23.508Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/bilberry-challah-tipsy-cake-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

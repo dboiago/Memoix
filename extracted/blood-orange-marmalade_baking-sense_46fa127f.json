@@ -1,0 +1,76 @@
+{
+  "recipe": {
+    "name": "Blood Orange Marmalade",
+    "time": "1 hr 20 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "64",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "55",
+      "carbohydrateContent": "14",
+      "fatContent": "0.1",
+      "proteinContent": "0.2"
+    },
+    "directions": [
+      "Cut 2 lbs&#32;blood oranges and 1&#32;large lemon in half lengthwise and then cut into quarters, also lengthwise. Cut the quarters crosswise into very thin slices. Discard end pieces with thick pith. Collect any seeds and tie them into a cheesecloth bundle.",
+      "Place the fruit and the seed bundle into a large bowl and cover with 24 oz&#32;water. If the water does not completely cover the fruit add a little more. Place a small plate on top of the fruit to keep it submerged. Refrigerate over night.",
+      "Discard the seeds and put the fruit and water into a saucepan. Bring to a boil over medium-high heat. Lower the heat to medium low to maintain a simmer. Cook about 40 minutes, or until the rind of the fruit is very tender.",
+      "Add28 oz&#32;granulated sugar and bring back to a boil. Boil about 25-30 minutes until the temperature registers 220F on a candy thermometer.",
+      "If you don&#39;t have a candy thermometer use either the plate or spoon method to check the gel stage. Place a dollop of marmalade on a cold plate and wait for it to cool. Push it with the tip of your finger and if it &quot;wrinkles&quot; it is thick enough. If it&#39;s runny, continue cooking."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Blood Oranges",
+        "unit": "lb",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "oz",
+        "notes": "3 cups",
+        "amount": "24",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "3 ½ cups",
+        "amount": "28",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bf3944c42a7d839d3439821b934a9e3bc72e3ce3985051b9b235fd2dd4053a2c",
+    "lineage_hash": "43e25af9a2068ec97ee4238a5f4267a79388ada5576ff230e12ec4f30b5a7558"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2015/04/06/blood-orange-marmalade/",
+    "fetchedAt": "2026-08-02T05:50:55.022Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2015/04/06/blood-orange-marmalade/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

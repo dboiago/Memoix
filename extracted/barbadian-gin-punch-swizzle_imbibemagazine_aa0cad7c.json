@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Barbadian Gin Punch Swizzle",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Tall",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a tall glass filled with crushed ice, combine all ingredients and swizzle until the glass is frosted."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "51374c85b3b10fe67d71df88a006b57448cf4ebafe868ffc3059cf4759a132d6",
+    "lineage_hash": "789c8015f1607f777b63623674a78ab4225a6d3abd725f059a6cdc8833f70039"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/barbadian-gin-punch-swizzle-recipe/",
+    "fetchedAt": "2026-08-03T19:26:41.594Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/barbadian-gin-punch-swizzle-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

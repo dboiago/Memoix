@@ -1,0 +1,154 @@
+{
+  "recipe": {
+    "name": "Chicken and Black Garlic",
+    "time": "2 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the charred leek purée, cut the leeks in half lengthways and wash thoroughly. Use a very hot chargrill pan to blacken the leeks on both sides, then remove from the heat, trim down slightly and scatter evenly on the base of a saucepan",
+      "Add enough water to just cover (200-300ml), bring to a boil and simmer until the liquid has reduced and the pan is almost dry. Transfer to a high-speed blender and blitz with the squid ink, a dash of soy sauce and the miso paste",
+      "Once the purée is very smooth, press through a fine strainer, transfer to a squeezy bottle and set aside until required",
+      "Make a couple of incisions along the side of each chicken breast and stuff with the black garlic. Bake in the oven for 18 minutes, then remove and rest for 5 minutes",
+      "Meanwhile, cut the chestnut mushrooms in half and colour cut-side down in a hot pan with a dash of rapeseed oil. To finish, add a small knob of butter, toss to coat and season with salt",
+      "Trim the asparagus and peel up to the tip. Blanch in boiling salted water with the peas and broad beans for 1 1/2 minute. Strain, peel the broad beans, season all the greens and keep warm",
+      "To serve, pipe the charred leek purée in swirls on the base of each plate. Slice each breast in half and place on top of the purée",
+      "Scatter the asparagus, broad beans, peas and mushrooms onto each plate and garnish with pea shoots before serving. Finish with a drizzle of oil"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Breasts",
+        "unit": null,
+        "notes": "good quality, skin on",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Leeks",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Squid Ink",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Miso Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chestnut Mushrooms",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Knob of Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Asparagus Spears",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Broad Beans",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peas",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Pea Shoots",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4fb4fa584f35d10852bfa9dfd26bc0ede55e8a0826a3e86c753735ddba510a35",
+    "lineage_hash": "b81cb11718103ca2220a64efb3cf67a30f0ea8d4910ae4e57adb3638b273c3fd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chicken-black-garlic-recipe",
+    "fetchedAt": "2026-08-03T20:40:37.820Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chicken-black-garlic-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

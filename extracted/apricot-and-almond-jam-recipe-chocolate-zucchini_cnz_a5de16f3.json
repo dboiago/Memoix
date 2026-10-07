@@ -1,0 +1,61 @@
+{
+  "recipe": {
+    "name": "Apricot and Almond Jam",
+    "time": "1 hr 30 min",
+    "course": "pickles",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Rinse, scrub if necessary, and dry the apricots. Slice them in two, remove the stone, and cut the flesh in smallish pieces. Reserve the stones.",
+      "Weigh the amount of apricot flesh you get. Transfer the apricots to a large pan, and combine with the same weight of sugar as of fruit. If you used 1.2 kg of apricots, you should have about 1 kg of apricot flesh, but it's best to weigh it to make sure and adjust the amount of sugar.",
+      "Crack about 18 of the apricot stones open with a nutcracker (see important note), to get the almonds inside. Bring water to a boil in a small saucepan, remove from heat, and put in the almonds. Let rest for about thirty seconds (this process is called \"blanching\"), then transfer to a colander and rinse under cold water.",
+      "The papery skin of the almonds will then slip off easily. Reserve the peeled almonds and discard the rest.",
+      "Wash the glass jars and their lids carefully, then soak them in boiling water for 10 minutes, and set them out to dry upside down on a clean kitchen towel.",
+      "Put a saucer in the freezer. Put the pan over medium heat, until the apricots have started to melt and produce juice, stirring frequently with a wooden spoon. Turn the heat up, and bring the mixture to a boil. Cook for about 20 to 25 minutes, keeping it at a gentle boil and stirring occasionally.",
+      "Keep a close eye on it : at first the mixture will almost double in volume, producing a light orange, thick foam (hence the necessity of a large pan).",
+      "After a while it will reduce back down, and bubble quietly while taking on an amber, dark orange color. About 15 minutes into the cooking, add in the peeled almonds.",
+      "Keep stirring until it feels like the mixture is thickening slightly. Although it is subtle, you'll see the change when you lift the wooden spoon and look closely at the drops dripping from it : they'll get thicker and will drip down slightly slower. Remove the saucer from the freezer, put a drop of jam on it and tilt the saucer to see if the jam is set. If not, let it boil a bit more before testing again.",
+      "Skim the foam from the surface with a slotted spoon to have a clearer jam (reserve the foam, it's delicious, as a topping on yogurt for instance), but that's optional in my opinion.",
+      "Pour the jam in the prepared jars until they are full (watch out, jam will be extremely hot) using gloves and a funnel if you have one. Wipe carefully if there was any spillage and close the lids tightly. Let cool to room temperature upside-down on the counter, then store in a cool and dark place for a few months."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Kilogram Apricots",
+        "unit": null,
+        "notes": "ripe",
+        "amount": "1.2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kilogram Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a0db8a5e7bc30d9246842161936e396658d41c286cf31a6c247569bb50b7f9b9",
+    "lineage_hash": "9ee9ea575ca86a95af0ceb922ac526b2daa0ea2e4be10daa8cd3903c3371611a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/jams-nut-butters/apricot-and-almond-jam-recipe/",
+    "fetchedAt": "2026-09-30T18:59:41.103Z"
+  },
+  "rawSource": "https://cnz.to/recipes/jams-nut-butters/apricot-and-almond-jam-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

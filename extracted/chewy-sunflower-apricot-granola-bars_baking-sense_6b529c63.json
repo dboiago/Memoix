@@ -1,0 +1,156 @@
+{
+  "recipe": {
+    "name": "Chewy Sunflower & Apricot Granola Bars",
+    "time": "50 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "24",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "182",
+      "carbohydrateContent": "20",
+      "fatContent": "11",
+      "proteinContent": "4"
+    },
+    "directions": [
+      "Preheat the oven to 350 °F. Brush a 13&quot;x9&quot; baking pan with a thin coating of vegetable oil and line the pan with parchment paper. The parchment lining is optional but does make it easier to lift the bars out of the pan.",
+      "In a large bowl, combine 4 oz&#32;pecans, 1 oz&#32;sunflower seeds, 1 oz&#32;chia seeds, 2 oz&#32;flax seed meal, 1 teaspoon&#32;ground cinnamon, 1 teaspoon&#32;ground ginger, ½ teaspoon&#32;salt, 8 oz&#32;old-fashioned rolled oats, 6 oz&#32;dried apricots.",
+      "In a small saucepan, combine 1 ½ oz&#32;vegetable oil, 5 oz&#32;sunflower butter, 2 oz&#32;brown sugar and 3 oz&#32;honey. Cook over medium heat until the mixture melts and begins to boil. Pour the oil mixture over the oat mixture and stir to combine.",
+      "Whisk 2&#32;large egg whites until they are frothy then fold them into the granola. Toss the mixture and break up any clumps. Pour the granola into the prepared pan and firmly press into an even layer. Moisten your hands with a little water to prevent them from sticking as you press on the granola.",
+      "Bake until golden brown around the edges and set in the middle, about 20 minutes. Cool in the pan for 10 minutes, then use the parchment paper to lift the bars onto a cutting board (or flip the pan if you didn&#39;t use parchment). Cut into 24 portions and cool completely. The bars keep in an air tight container for up to a week."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pecans",
+        "unit": "oz",
+        "notes": "1 cup, coarsely chopped",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sunflower Seeds",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chia Seeds",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flax Seed Meal",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Ginger",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Old-fashioned Rolled Oats",
+        "unit": "oz",
+        "notes": "2 ½ cups",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apricots",
+        "unit": "oz",
+        "notes": "1 cup. chopped into ½\" pieces, dried",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sunflower Butter",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "oz",
+        "notes": "¼ cup, firmly packed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "oz",
+        "notes": "¼ cup, see note",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "15add27194a95089dfb696fb9d77545b76f959f0c53a77b8479d1eb81e30667f",
+    "lineage_hash": "bd1ae294c00e542bcfe2e9c3b9ba82c6bd77c76bb17fe71a15e0624a4016ef5f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2019/01/18/sunflower-pecan-apricot-granola-bars/",
+    "fetchedAt": "2026-08-01T21:10:11.114Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2019/01/18/sunflower-pecan-apricot-granola-bars/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

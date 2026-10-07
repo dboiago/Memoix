@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Americano Shandy",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Divide the Campari and vermouth between 2 glasses. Add ice and top up each glass with the beer, stirring gently to mix."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "20467fc9ec9d73cdaab18384121faf502d3b616392f8dede17d8af8721bc3978",
+    "lineage_hash": "58d527d36adf609dbda3c009a41dbd36c57c5bfeb45817469503301561c382f9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/americano-shandy-recipe/",
+    "fetchedAt": "2026-08-03T20:41:55.505Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/americano-shandy-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,160 @@
+{
+  "recipe": {
+    "name": "Ayam Masak Merah (Chicken in Tomato and Spices)",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "MY",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Rub chicken pieces with salt and turmeric, set aside for 10 minutes.",
+      "Heat oil in a frying pan on medium high, fry chicken until the skin is browned and fully cooked, about 10-15 minutes. Remove the chicken from the pan.",
+      "With the remaining oil on the pan, fry spice paste and lemongrass until fragrant, about 3-5 minutes.",
+      "Add onion slices and tomato wedges. Cook until slightly wilted.",
+      "Return chicken to the pan, season with tomato ketchup, salt, and sugar. Mix well, bring to a boil. Reduce heat to a simmer. Cover the pan and cook for 10 minutes so the chicken can absorb the sauce.",
+      "Turn off heat, adjust salt and sugar as needed. Transfer the chicken to serving plates and serve with steamed white rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken",
+        "unit": null,
+        "notes": "or use 8 chicken drumsticks, cut into 8 pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemongrass (indonesian: Sereh)",
+        "unit": null,
+        "notes": "bruised and knotted",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "cut into slices",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": null,
+        "notes": "cut into wedges",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Ketchup",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": "or to taste",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grind the Following Into Spice Paste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilies",
+        "unit": null,
+        "notes": "dried",
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "254cad1a4dda8dae6cd73e03610a09858a36d22d396cb02e8ab06cefe931703c",
+    "lineage_hash": "4bebcbdb7c81eaef8b66e2ff05d0201197165431bf5bc4657b14d47278a25fd3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/ayam-masak-merah-chicken-in-tomato-and-spices.html",
+    "fetchedAt": "2026-08-02T04:50:07.806Z"
+  },
+  "rawSource": "https://dailycookingquest.com/ayam-masak-merah-chicken-in-tomato-and-spices.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

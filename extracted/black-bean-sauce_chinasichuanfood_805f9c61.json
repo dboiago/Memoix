@@ -1,0 +1,123 @@
+{
+  "recipe": {
+    "name": "Black Bean Sauce",
+    "time": "40 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "100",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "581",
+      "carbohydrateContent": "26",
+      "fatContent": "30",
+      "proteinContent": "3.6"
+    },
+    "directions": [
+      "Rinse the fermented black beans, drain and finely chop 2/3 of the beans, leaving 1/3 of the beans as whole ones (you will love their decoration function).",
+      "Heat oil in a deep pot until warm. Add shallot, garlic and ginger in and fry until soften. Keep slow fire and watch the ingredients carefully. Do not burn the garlic, burnt garlic release bitter taste.",
+      "Add fermented black beans and fry for 2-3 minutes over slow fire. Pour light soy sauce, cooking wine and sugar. Simmer until the sauce is well thickened and there are floating oil on the surface. Add five spice powder and chili pepper flakes if you are using.",
+      "Cool off completely and transfer to an air-tight container. At least wait for 6 hours until flavors from different ingredients are well combined."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Fermented Black Beans",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "C",
+        "notes": "finely, chopped",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": "optionally you can upgrade it to 4 tbsp.",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Five Spice Powder",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili Pepper Flakes",
+        "unit": "Tbsp",
+        "notes": "optional for hot version",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1ce68b93a9c3efd061726e1c2d07175dfa4cd48c950af3cdaf07a4fc4b4ca878",
+    "lineage_hash": "c3c63e6443589e2015452285e014c2a5ab116ff2634d813f00d701c2624bea77"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/black-bean-sauce/",
+    "fetchedAt": "2026-08-02T04:16:59.301Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/black-bean-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,229 @@
+{
+  "recipe": {
+    "name": "Banana Cream Pie",
+    "time": "2 hr 20 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "612",
+      "carbohydrateContent": "63",
+      "fatContent": "39",
+      "proteinContent": "7"
+    },
+    "directions": [
+      "Bake the macadamias until they are caramelized and crunchy.",
+      "Sprinkle the chopped chocolate onto the hot crust and allow it to melt then spread the melted chocolate over the crust.",
+      "Make the vanilla pastry cream then fold the sliced bananas into the warm pastry cream.",
+      "Pour the banana cream into the chocolate lined shell.",
+      "Cover the pie and refrigerate until the custard is completely cooled.",
+      "Top with whipped cream and decorate with optional candied macadamias and chocolate curd or chips."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": "Candied Macadamia Nuts",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": "Candied Macadamia Nuts",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean",
+        "unit": null,
+        "notes": "cut in half",
+        "amount": "1",
+        "section": "Candied Macadamia Nuts",
+        "isOptional": false
+      },
+      {
+        "name": "Macadamia Nuts",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "4",
+        "section": "Candied Macadamia Nuts",
+        "isOptional": false
+      },
+      {
+        "name": "Graham Cracker Crumbs",
+        "unit": "oz",
+        "notes": "1 ½ cups",
+        "amount": "8",
+        "section": "Graham Cracker Macadamia Nut Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Macadamia Nuts",
+        "unit": "oz",
+        "notes": "see note",
+        "amount": "1",
+        "section": "Graham Cracker Macadamia Nut Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "2",
+        "section": "Graham Cracker Macadamia Nut Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "melted",
+        "amount": "3",
+        "section": "Graham Cracker Macadamia Nut Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Semi-sweet Chocolate",
+        "unit": "oz",
+        "notes": "chopped fine",
+        "amount": "4",
+        "section": "Graham Cracker Macadamia Nut Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "oz",
+        "notes": "1 ½ cups",
+        "amount": "12",
+        "section": "Banana Pastry Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Banana Pastry Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean",
+        "unit": null,
+        "notes": "split",
+        "amount": "½",
+        "section": "Banana Pastry Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Banana Pastry Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Banana Pastry Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "½ cup plus 2 tablespoons",
+        "amount": "5",
+        "section": "Banana Pastry Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Corn Starch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "Banana Pastry Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": "Banana Pastry Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Rum",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": "Banana Pastry Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Ripe Bananas",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": "Banana Pastry Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "oz",
+        "notes": "2 cups",
+        "amount": "16",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Confectioner’s Sugar",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "1",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Rum",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Curls",
+        "unit": null,
+        "notes": "alt: chocolate chips",
+        "amount": "0",
+        "section": "Assembly",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b8fb2ebc6492dad733cb8d5a8afb37a4062b91e6c001aabcfa40e1bcfcf35c1f",
+    "lineage_hash": "9bd1fdb52bbf5ac311c5eac5902c24689e04fd2262a071f6b31c0eb3e5c80428"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2015/06/02/banana-cream-pie-with-candied-macadamia-nuts/",
+    "fetchedAt": "2026-08-02T05:08:20.724Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2015/06/02/banana-cream-pie-with-candied-macadamia-nuts/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

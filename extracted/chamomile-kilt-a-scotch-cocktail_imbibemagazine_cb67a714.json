@@ -1,0 +1,35 @@
+{
+  "recipe": {
+    "name": "Chamomile Kilt",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Muddle the lemon in a shaker tin. Add the Scotch, chamomile syrup, and mint leaves, fill with ice, and shake until chilled. Double-strain into a glass filled with ice, garnish, and serve.",
+      "Chamomile Simple Syrup Combine the sugar and tea in a saucepan and bring to a simmer over medium-high heat. As soon as the sugar is dissolved, remove from the heat and allow to cool. Transfer to a nonreactive container and store airtight in the fridge for up to 2 weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "d982bece9fbe7fdff5d39289971d93ba0cc4b4cc6caeb5699e4d1c1e5cf19441",
+    "lineage_hash": "adf488d407f86b2d86d17fe3f71428602d1eb7a727f72f10efb6e0de0c426b54"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/chamomile-kilt-a-scotch-cocktail/",
+    "fetchedAt": "2026-08-03T21:25:13.513Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/chamomile-kilt-a-scotch-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

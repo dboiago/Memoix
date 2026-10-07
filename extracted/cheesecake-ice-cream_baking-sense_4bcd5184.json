@@ -1,0 +1,122 @@
+{
+  "recipe": {
+    "name": "Cheesecake Ice Cream",
+    "time": "8 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "222",
+      "carbohydrateContent": "17",
+      "fatContent": "16",
+      "proteinContent": "4"
+    },
+    "directions": [
+      "Whisk the yolks, sugar, and lemon zest.",
+      "Scald the milk and cream with the vanilla bean.",
+      "Whisk the hot milk into the yolks and whisk to combine.",
+      "Return the custard to the pan and cook until “nappe” (coats the back of the spatula).",
+      "Pour the hot custard over the cream cheese.",
+      "If you’re using vanilla extract instead of vanilla bean add it at this point.",
+      "Whisk the mixture until the cheese is melted into the custard.",
+      "Cover and refrigerate until the custard is very cold.",
+      "Run according to the directions for your ice cream maker.",
+      "Transfer the ice cream to a freezer container.",
+      "Place plastic wrap directly on the surface and freeze until solid."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Milk",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean",
+        "unit": null,
+        "notes": "see note",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "¾ cup",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Zest",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream Cheese",
+        "unit": "oz",
+        "notes": "room temperature",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7b152bd52c866c2ac3364636fb4e249b277edb91733014e73a2039439a142d17",
+    "lineage_hash": "cc33d0613cecb54836e88b20fa3211eac62a26b671f4808c823437406e85a0c5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2015/05/21/cheesecake-ice-cream-with-cherry-blueberry-compote/",
+    "fetchedAt": "2026-08-01T23:24:54.473Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2015/05/21/cheesecake-ice-cream-with-cherry-blueberry-compote/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

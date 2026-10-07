@@ -1,0 +1,124 @@
+{
+  "recipe": {
+    "name": "Baba Ganoush, Curry Leaf Oil & Pine Nuts",
+    "time": "3 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Trim the top off the garlic bulb to reveal the cloves inside. Season with a pinch of salt and a tablespoon of oil, wrap in tinfoil, then roast for 35 minutes until nicely softened and golden",
+      "Set aside to cool completely, then squeeze the head to release the roast cloves from the papery skins and discard the skins",
+      "Grill the aubergines on either a BBQ or an open gas flame. Pierce each aubergine several times with a sharp knife and set it over the flame. You want to grill the aubergines on each side until totally charred and soft. Once grilled, set over a colander in the sink for an hour",
+      "Once cool, peel and discard the skins. Return the aubergines to the colander and press down with a ladle to extract as much of the bitter liquid as possible",
+      "Blend aubergine with the lemon juice, tahini, miso, fresh garlic, roasted garlic and salt until completely smooth. Taste - you may want to add more lemon or salt, depending on the size of your aubergines",
+      "To make the curry leaf oil, blend 10g of curry leaves together with 300ml of oil and transfer to a small saucepan. Bring to a simmer for 5 minutes and then set aside",
+      "Once cool, strain and discard the solids. This will make more than you need but is a great thing to have in the fridge!",
+      "Toast the pine nuts by setting a small pan over a medium heat. Add the pine nuts until golden brown, tossing occasionally - about 5 minutes. Set aside to cool",
+      "In a small pan, heat the remaining 300ml vegetable oil to 180c. Fry the remaining curry leaves for a minute or two until slightly transparent and crisp. Transfer to a plate lined with a kitchen towel",
+      "Smooth the baba ganoush onto a plate, ensuring there's a well in the middle. Pour in the curry oil and garnish with the toasted pine nuts and curry leaves"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Garlic",
+        "unit": "head",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maldon Salt to Season",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Aubergines",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tahini",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Miso",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaf Sprig",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "ml",
+        "notes": "plus 1 tbsp for roasting the garlic",
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pine Nuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "386483e5e7856188e8439dab014928d192a3af73d0336aeb36ff5e8ea4b992ca",
+    "lineage_hash": "e71b2993bafdba219858907257c2aa481aa2f7a459f8ec4cdf8f2ae7df4b9314"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/baba-ganoush-curry-leaf-oil-pine-nuts-recipe",
+    "fetchedAt": "2026-08-02T17:48:43.186Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/baba-ganoush-curry-leaf-oil-pine-nuts-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

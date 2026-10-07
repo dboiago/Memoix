@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Carrot Daiquiri",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all the ingredients in a blender with crushed ice and blend until creamy. Pour into a glass and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "75d57583afa8235decef144d8ce22481a4563b52398c1c78262eef5560ff97e9",
+    "lineage_hash": "9c42fa237c6664dcd24b7b35449621664948e674f645f1eb05099f97d9ed31d5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/carrot-daiquiri/",
+    "fetchedAt": "2026-08-03T22:00:06.850Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/carrot-daiquiri/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

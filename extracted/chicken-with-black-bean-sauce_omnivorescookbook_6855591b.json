@@ -1,0 +1,179 @@
+{
+  "recipe": {
+    "name": "Chicken with Black Bean Sauce",
+    "time": "25 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "256",
+      "carbohydrateContent": "15.1",
+      "fatContent": "11.9",
+      "proteinContent": "21.4"
+    },
+    "directions": [
+      "Combine chicken breast, Shaoxing wine, cornstarch, and salt in a bowl. Mix well and set aside.",
+      "Combine all the ingredients for the sauce in a small bowl.",
+      "Heat 1 tablespoon of oil in a large skillet over medium-high heat until hot. Spread chicken in the skillet without overlapping. Let cook for 30 seconds without stirring. Use a pair of chopsticks (or tongs) to separate the chicken. Cook until the bottom side turns slightly golden. Flip and stir chicken to cook other sides, until the surface is cooked. Immediately transfer to a plate.",
+      "Add the remaining 1 tablespoon oil to the skillet and turn to medium heat. Add the onion, ginger, and garlic. Cook until the onion begins to turn soft, 30 seconds. Add the bell pepper and stir a few times. Add sauce. Give it a quick stir. Add the chicken back into the skillet. Stir and cook until the sauce thickens, 1 minute. Taste the chicken and adjust the seasoning by adding a pinch of salt, if needed. Immediately transfer everything to a plate. Serve hot as a main dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Breast (or Boneless Chicken Leg)",
+        "unit": "oz",
+        "notes": "boneless, diced to 2/3” (1.5 cm) cubes",
+        "amount": "10",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": "or dry sherry",
+        "amount": "1",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Black Bean Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": "or dry sherry",
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "tsp",
+        "notes": "Optional, see footnote 1",
+        "amount": "½",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "or vegetable oil",
+        "amount": "2",
+        "section": "Stir-fry",
+        "isOptional": false
+      },
+      {
+        "name": "White Onion",
+        "unit": null,
+        "notes": "or 1 big shallot, diced",
+        "amount": "¼",
+        "section": "Stir-fry",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": "Stir-fry",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "sliced",
+        "amount": "2",
+        "section": "Stir-fry",
+        "isOptional": false
+      },
+      {
+        "name": "Bell Pepper",
+        "unit": null,
+        "notes": "diced",
+        "amount": "1",
+        "section": "Stir-fry",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7814f23a2039d31d705b8b3f1d3b5e5e5974b835e702c1143182342421b834d7",
+    "lineage_hash": "30c28a425d0f24d9b8c653123c8082b11dc4a8481f550b1728194025cdc5e075"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/chicken-with-black-bean-sauce/",
+    "fetchedAt": "2026-08-02T04:32:19.822Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/chicken-with-black-bean-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

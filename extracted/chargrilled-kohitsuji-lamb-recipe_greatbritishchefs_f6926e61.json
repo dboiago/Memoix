@@ -1,0 +1,201 @@
+{
+  "recipe": {
+    "name": "Chargrilled Kohitsuji Lamb",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Marinate the lamb chops the day before serving. Pour the sake into a pan or dish and use a blowtorch to burn off the alcohol. Add the sugar, mirin and soy sauce and stir until completely dissolved. Allow to cool a little, then coat the lamb chops evenly in the marinade and leave in the fridge overnight",
+      "For the pickled shallots, combine the sugar and vinegar in a small pan and heat gently until dissolved and fully incorporated. Quarter the shallot and place in an airtight container, pouring over the sweet vinegar to cover. Seal and refrigerate, leaving to pickle overnight",
+      "To prepare the tare sauce combine the sake, mirin, soy sauce and sugar in a small pan and place over a low heat. Heat gently, allowing to reduce until thickened to a glaze-like sauce consistency",
+      "Preheat the oven to 180°C/gas mark 4 and preheat a griddle pan or barbecue to high",
+      "Remove the lamb racks from the marinade, pat dry and brown the racks over a high heat, starting with the fatty side. Once nicely golden, transfer to a tray and cook in the oven for 15 minutes, or until the internal temperature reads 64°C on a temperature probe. Remove and allow to rest",
+      "Meanwhile, add the oil to a large frying pan and place over a medium heat.  Fry the carrots, broccoli and asparagus until lightly charred, seasoning generously with salt and pepper",
+      "To serve, carve the racks\r\ninto chops and divide between plates. Drizzle over a little of the tare sauce and pile the vegetables to one side, arranging dots of wasabi and pieces of shallot (drained from the pickle) on the other. Garnish the cutlets with a pinch of sanshō and serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "4-bone Lamb Racks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sake",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mirin",
+        "unit": "ml",
+        "notes": null,
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Banana Shallot",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sake",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mirin",
+        "unit": "ml",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Carrots",
+        "unit": "g",
+        "notes": "halved lengthways",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tenderstem Broccoli",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Asparagus",
+        "unit": "g",
+        "notes": "halved lengthways",
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sanshō",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wasabi Paste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f80ee4084396467c17bab5c1e0b9150091294df3c52a560272ebb3e02a17c69a",
+    "lineage_hash": "5c7721ecc09c5978167d408bfeeaf3f7412d79f965c23f6b6a51723d422184c4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chargrilled-lamb-teriyaki-recipe",
+    "fetchedAt": "2026-08-03T12:49:55.341Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chargrilled-lamb-teriyaki-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

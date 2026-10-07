@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Carrot Margarita",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Collins",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake the first 3 ingredients together in a shaker tin with ice. Strain into a Collins glass over fresh ice. Top with carrot juice to taste. Stir to incorporate. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "4e70210b1fa78fa4178294f68d24f2e56ad79fad855f9205eca02aede76264a8",
+    "lineage_hash": "4faf8e69f2396264858331ef550cdc3d910a69c219718f67add75f6586a1e0f5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/carrot-margarita-pedro-rabbit/",
+    "fetchedAt": "2026-08-03T21:34:56.571Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/carrot-margarita-pedro-rabbit/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

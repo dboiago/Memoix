@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Banana Alexander",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the brandy, cream, and banana liqueur in a shaker, shake well with ice to chill. Double strain into a chilled glass. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "2fb45763abbcb4dd9a7ef377f1214f4c68e941eefc3714749f240e1790dfedeb",
+    "lineage_hash": "f61556b2e72aad6a83809464ec71be9d2fe61db86294c4eabe07403053b66d77"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/banana-alexander/",
+    "fetchedAt": "2026-08-03T21:29:54.746Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/banana-alexander/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

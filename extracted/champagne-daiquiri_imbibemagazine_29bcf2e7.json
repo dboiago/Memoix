@@ -1,0 +1,35 @@
+{
+  "recipe": {
+    "name": "Champagne Daiquiri",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Cocktail",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all the ingredients in shaker with ice. Shake until chilled and strain into a cocktail glass or coupe. Garnish.",
+      "Champagne syrup: Combine 1 cup of flat Champagne (any brand, a very dry Champagne is what Barlow usually uses) with 1 cup of granulated sugar. Heat and stir until sugar is completely dissolved. Store in the fridge when not in use."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "a9e4b84a6388ef03399bc7d5f47ee936884c9f67335f0e7e985bb6e011d7fcf0",
+    "lineage_hash": "3af36b852fb1363a405f1a358abcf80889441e0f391c9f9a9c230d54e8f240a4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/champagne-daiquiri/",
+    "fetchedAt": "2026-08-04T00:22:37.756Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/champagne-daiquiri/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

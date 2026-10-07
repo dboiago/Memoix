@@ -1,0 +1,37 @@
+{
+  "recipe": {
+    "name": "Apple Vanilla Chai Hot Toddy",
+    "time": "10 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a small saucepan, bring the cider and water to a boil over high heat. Add the tea bags, 1 cinnamon stick, the orange slice, and a small pinch each of cayenne and salt. Remove from the heat, cover, and let steep until very fragrant and darker in color, about 10 minutes.",
+      "Return the pan to medium heat and warm until steaming. Remove from the heat and add the bourbon, lemon juice, honey, and vanilla.",
+      "Divide the drink between two mugs. Garnish each one with an apple slice, cinnamon stick, and star anise and serve immediately.",
+      "Make it a mocktailOmit the bourbon; replace with additional apple cider."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "5722f827650373368eb19013a23bc5f11c4f303df9b160013301b863ba69b061",
+    "lineage_hash": "ccea8e088c456ed89b7842386eb6fb8f0e84a7ff8e5b3762aea0ac1f984c2d74"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/apple-vanilla-chai-hot-toddy/",
+    "fetchedAt": "2026-08-04T00:12:04.073Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/apple-vanilla-chai-hot-toddy/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

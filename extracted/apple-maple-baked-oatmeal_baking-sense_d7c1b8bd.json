@@ -1,0 +1,149 @@
+{
+  "recipe": {
+    "name": "Apple Maple Baked Oatmeal",
+    "time": "45 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "377",
+      "carbohydrateContent": "40",
+      "fatContent": "21",
+      "proteinContent": "9"
+    },
+    "directions": [
+      "Preheat the oven to 350 °F. Butter a 9&quot; square pan.",
+      "In a large bowl, combine 10 oz&#32;old-fashioned rolled oats, 2 teaspoons&#32;baking powder, 1 teaspoon&#32;ground cinnamon, ½ teaspoon&#32;table salt, and ¼ teaspoon&#32;nutmeg.",
+      "In a large measuring cup, whisk together 12 oz&#32;whole milk, 4 oz&#32;unsalted butter (melted), 4 oz&#32;real maple syrup2&#32;large eggs and 1 teaspoon&#32;vanilla extract.",
+      "Stir the liquid into the oat mixture until combined. Fold in 1&#32;large apple (chopped) and 2 oz&#32;walnuts (chopped). Pour the batter into the prepared pan and smooth to an even layer. Sprinkle with 2 tablespoons&#32;granulated sugar for topping.",
+      "Bake until the center springs back when lightly pressed or a toothpick inserted into the center comes out clean, 30-35 minutes. Optionally, you can turn on the broiler for a minute or two after the oatmeal is done baking. The broiler will caramelize the sugar for an extra crunchy topping.",
+      "Cool 10 minutes before slicing."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Old-fashioned Rolled Oats",
+        "unit": "oz",
+        "notes": "3 cups",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "oz",
+        "notes": "1 ½ cups",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "melted",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Real Maple Syrup",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple",
+        "unit": "large",
+        "notes": "peeled and diced to ¼\"",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Walnuts",
+        "unit": "oz",
+        "notes": "½ cup, chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar for Topping",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8c271d062fcb6c140eddf49527d728d94e0c8dd44abbd2996d4d4e7473b94c64",
+    "lineage_hash": "8f5b2730268a6ddf0162a7bbd6fd86c86d110dc3d4328970036891a3929c780b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2021/01/14/apple-maple-baked-oatmeal/",
+    "fetchedAt": "2026-08-02T04:20:28.120Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2021/01/14/apple-maple-baked-oatmeal/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

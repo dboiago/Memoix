@@ -1,0 +1,136 @@
+{
+  "recipe": {
+    "name": "Cheesy Potato Pie",
+    "time": "50 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, cook the cubed potatoes in salted boiling water until soft",
+      "Drain and let them cool slightly. Preheat the oven to 180°C/gas mark 4",
+      "In a food processor, blend the cooked potatoes, egg, cream, grated cheddar (reserving a few spoonfuls of cheese for later) and onion until smooth. Season with salt and pepper to taste",
+      "Spoon half of the mixture into a buttered baking dish or individual ramekins, add a layer of grated cheese and herbs, then pour the rest of the potato mixture on top. Place the cherry tomato halves and some more grated cheese on top to finish",
+      "Drizzle with olive oil, sprinkle with the Parmesan and bake in the oven for 20–30 minutes, until golden brown",
+      "Once ready, take out of the oven, sprinkle with some fresh herbs and crispy shallots and serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mashing Potatoes",
+        "unit": "large",
+        "notes": "approximately 500g, peeled and cut into cubes",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cheddar",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherry Tomatoes",
+        "unit": null,
+        "notes": "halved",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crispy Shallots",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Oregano",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Basil",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5bc85d6fda0a04339a745dea0a20dafb00476ed9b56102acad0c890b2855f479",
+    "lineage_hash": "aa8d5b44e558880ad97a1d8b46613c7eee4ac17713a265bce5fc3a2816cf39d7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cheese-potato-ramekins-recipe",
+    "fetchedAt": "2026-08-03T08:13:09.407Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cheese-potato-ramekins-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

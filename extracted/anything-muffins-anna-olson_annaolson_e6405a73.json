@@ -1,0 +1,151 @@
+{
+  "recipe": {
+    "name": "Anything Muffins",
+    "time": "35 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 400°F (200°C) and line a muffin tin with paper liners.",
+      "Whisk the yogurt, milk, maple syrup, oil, eggs and vanilla together in a large bowl. In a separate bowl, stir together the whole wheat and all-purpose flours with the baking powder, baking soda, cinnamon and zest (if using). Add the dry ingredients all at once to the liquids and stir with a wooden spoon or spatula just until blended (a few lumps are OK). Stir in your additions.",
+      "Scoop or spoon the batter into the muffin cups, filling them almost to the top. Sprinkle lightly with turbinado sugar if you wish.",
+      "Bake for about 25 minutes, until a tester inserted in the centre of a muffin comes out clean. Cool the muffins in the pan on a cooling rack for at least 20 minutes.",
+      "To serve, turn out the muffins onto a platter and enjoy warm or at room temperature. The muffins will keep in an airtight container at room temperature for up to 4 days, or can be frozen for up to 6 months."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plain Yogurt",
+        "unit": "C",
+        "notes": "full-fat, not Greek",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": "1% or 2%",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maple Syrup",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "large",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Wheat Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "pinch",
+        "notes": "or more to taste",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange or Lemon Zest",
+        "unit": null,
+        "notes": "finely, grated, optional",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fruit",
+        "unit": "C",
+        "notes": "nut and seed additions",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turbinado Sugar",
+        "unit": null,
+        "notes": "for sprinkling, optional",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "51e6e194ee5d5e77d2802cf6e4fe3b0201a705527c1f7b710858b7ab2df378aa",
+    "lineage_hash": "dac976ce468cc2bd4342ea4ca8a84878010c1e543f82706caac235df1c845d23"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/anything-muffins/",
+    "fetchedAt": "2026-08-01T17:23:56.242Z"
+  },
+  "rawSource": "https://annaolson.ca/project/anything-muffins/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,98 @@
+{
+  "recipe": {
+    "name": "Buckwheat Crepe",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "18",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a blender, or with a whisk, mix together all the ingredients until smooth. Cover and chill overnight.",
+      "To fry the crêpes, remove the batter from the refrigerator about an hour before frying. Stir it briskly; it should be the consistency of heavy cream. (If not, you can add a tablespoon of milk.)",
+      "Heat a 8- to 9-inch skillet on the stovetop. You can use a real crêpe pan that’s been seasoned, but I use a Tefal non-stick skillet which works great.",
+      "Drop a tiny piece of butter or neutral oil in the hot pan and wipe it around with a paper towel. (I only do this for the first crêpe.)",
+      "Lift the pan and pour 1/4 cup of the batter in the middle of the hot skillet, swirling the pan to distribute the batter quickly and evenly. The pan shouldn’t be too hot or too cold: the batter should start cooking within a few seconds, giving you just enough time to swirl it. It may take a couple of crêpes for you to get your rhythm.",
+      "After about a minute, run a non-stick spatula around the underside of the rim of the crêpe, then flip the crepe over. I grasp the crepe with my fingers, but you’re not me (…consider yourself lucky!) and I’m not you. So use the spatula if you wish.",
+      "Let the crêpe cook on the flip side for about 30 seconds, then slide it out onto a dinner plate. Repeat, cooking the crepes with the remaining batter, stirring the batter every so often as you go.",
+      "Crêpes should be served warm. To rewarm the crêpes for serving, fold the crepes and put them in a baking dish covered with foil. Heat them in a moderate oven until warmed through."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Milk",
+        "unit": "C",
+        "notes": "500ml",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "45g, salted or unsalted, melted",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Buckwheat Flour",
+        "unit": "C",
+        "notes": "70g",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": "105g, (In France I use type 65)",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a1686549dc4134fb5d6e82b406f53c0a718fd6ea327aa7656c11d2b5249501f9",
+    "lineage_hash": "18448171280e23cfefc38e4342cd231c6a18615f7edeadd7e42e8725adc304fb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/planet-of-the-c-1/",
+    "fetchedAt": "2026-08-02T19:58:14.682Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/planet-of-the-c-1/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

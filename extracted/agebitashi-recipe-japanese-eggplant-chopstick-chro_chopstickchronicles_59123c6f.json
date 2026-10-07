@@ -1,0 +1,114 @@
+{
+  "recipe": {
+    "name": "Agebitashi (Japanese Eggplant)",
+    "time": "8 hr 20 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "71",
+      "carbohydrateContent": "14",
+      "fatContent": "1",
+      "proteinContent": "4"
+    },
+    "directions": [
+      "Place one cup of the dashi stock, soy sauce, mirin, and sugar in a saucepan over medium-high heat, bring it to a boil and then turn the heat off and set aside.",
+      "Cut the tops off the eggplant then cut the eggplant in half lengthways.",
+      "Score the eggplant skin diagonally in 0.2 inch (5mm) intervals.",
+      "After scoring the skin cut the eggplant halves in half again lengthwise.",
+      "Soak the cut eggplant pieces in water for 10 min.",
+      "Heat enough oil to cover the pieces of eggplant in a deep frying pan.",
+      "Pat dry any moisture from the eggplant pieces with a paper kitchen towel.",
+      "Deep fry the eggplant pieces for 2-3 minutes.",
+      "Remove the eggplant pieces from the oil and put them onto paper kitchen towels layered on a wire rack.",
+      "Soak the eggplant pieces in the prepared sauce in a container for a minimum of 1 hour.",
+      "Garnish with grated ginger and chopped shiso leaf before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Eggplant",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dashi",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mirin",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger for Garnigh Optional",
+        "unit": "tsp",
+        "notes": "grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leaf Green Shiso Leaf Optional",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil for Deep Frying",
+        "unit": "C",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b2354dab5919b545685535568cd74d6cbfb5e7714b709b3fd9ad0d97420d6afe",
+    "lineage_hash": "07137f08b59db7c7d8f1e60a5137a0908cbe5c03ca719cd1786311a28371b677"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chopstickchronicles.com/agebitashi/",
+    "fetchedAt": "2026-08-02T01:01:31.366Z"
+  },
+  "rawSource": "https://www.chopstickchronicles.com/agebitashi/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

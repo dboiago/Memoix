@@ -1,0 +1,121 @@
+{
+  "recipe": {
+    "name": "Baked Oatmeal Breakfast Clafoutis",
+    "time": "1 hr 5 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Lightly oil a 20-by-20-cm (8-by-8-inch) baking dish.",
+      "In a large bowl, combine the oats, sugar, raisins, chopped nuts, cinnamon and salt.",
+      "Add the eggs, grated apple if using it grated (sliced is added later), milk, and vanilla, mixing well between each addition.",
+      "Pour into the prepared dish, and use a spoon to distribute the solids evenly. If using apple slices, arrange them on top.",
+      "If possible, refrigerate for a few hours or overnight for the oatmeal to plump up.",
+      "Preheat the oven to 180°C (360°F), and bake for 45 to 55 minutes, until the center is set and firm to the touch.",
+      "Let cool before serving, slightly warm, at room temperature, or cold."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Grams Oats",
+        "unit": null,
+        "notes": "use certified gluten-free oats to make this gluten-free, uncooked",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Raisins",
+        "unit": null,
+        "notes": "substitute other dried fruits, or dried cranberries",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Nuts",
+        "unit": null,
+        "notes": "optional; omit to make this nut-free, such as walnuts, almonds, sunflower seeds, hazelnuts..., roughly chopped",
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "fine sea",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple",
+        "unit": "medium",
+        "notes": "peeled and thinly sliced, or grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": "use non-dairy to make this dairy-free",
+        "amount": "800",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla",
+        "unit": "Tbsp",
+        "notes": "pure extract",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fa917f60c2107416418ab747ab7d5b8bc5e7fe479ee7768090bbd22fd14a7861",
+    "lineage_hash": "c90d62aa0533f19293bca5d1381967e568af4fa05004c557c4680465c58dd369"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/breakfast/baked-oatmeal-breakfast-clafoutis-recipe/",
+    "fetchedAt": "2026-09-30T18:48:39.819Z"
+  },
+  "rawSource": "https://cnz.to/recipes/breakfast/baked-oatmeal-breakfast-clafoutis-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,127 @@
+{
+  "recipe": {
+    "name": "Baked Banana and Chocolate Tart",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "First, make the pastry. Place the dry ingredients into a mixing bowl and stir together. Rub the butter into the mixture until it resembles fine breadcrumbs, then add one of the eggs and the egg yolks and bring together (you can also do this in a stand mixer). Wrap the dough in cling film and rest in the fridge for a few hours",
+      "Preheat an oven to 180°C/gas mark 4. Roll out the pastry until 1cm thick and use it to line the moulds, ensuring there are no holes (any leftover pastry can be wrapped and kept in the freezer for other dishes). Line with greaseproof paper and fill the moulds with baking beans. Bake for 15 minutes, then remove the beans and paper and return to the oven for another 10 minutes until the pastry turns golden brown – keep checking to ensure it doesn't burn. Remove from the oven (but leave the oven at 180°C/gas mark 4 for the bananas) and brush with the remaining beaten egg. Allow to cool",
+      "Bake the bananas in the oven for 10 minutes. Once cool, peel and place the flesh in a bowl with the rum and a squeeze of lime juice. Mash with a fork and mix thoroughly",
+      "Spoon the banana mix into the tart cases and grate over the dark chocolate",
+      "Whip the double cream to soft peaks. Add a quenelle to each tart and finish with some lime zest"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bananas",
+        "unit": null,
+        "notes": "or 4 if they are large",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "zested and juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Rum",
+        "unit": "ml",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "T45 Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "450",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "chilled and diced",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "07a3b019d66065c2ac2cf96a7c9ff5f36dab14b831ee709155f598b892b4e392",
+    "lineage_hash": "fe8ac00d20c8d999f9765e156d8bfd4a8eb3215f03af680a91d5c5293a03f09d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/baked-banana-chocolate-tart-recipe",
+    "fetchedAt": "2026-08-03T07:24:13.015Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/baked-banana-chocolate-tart-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

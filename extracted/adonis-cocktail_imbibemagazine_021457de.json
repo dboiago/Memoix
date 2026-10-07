@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Adonis Cocktail",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [
+      "Orange Peel"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Stir ingredients with ice in a mixing glass and strain into a chilled glass. Pinch an orange peel to express the citrus oils over the top of the drink. Discard the orange peel."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "4d3beec44d64b74d8bb51c184a5fde989f210740529e57a001b3326ddcfd851b",
+    "lineage_hash": "6425b7bc5172d0cbfa32c260d12ca10010015474070fbd620bffe0487d5844c0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/adonis-recipe/",
+    "fetchedAt": "2026-08-03T18:00:09.195Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/adonis-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

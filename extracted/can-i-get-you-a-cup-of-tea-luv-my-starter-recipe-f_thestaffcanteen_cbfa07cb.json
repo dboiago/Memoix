@@ -1,0 +1,424 @@
+{
+  "recipe": {
+    "name": "Can I get you a cup of tea, luv?",
+    "time": null,
+    "course": "apps",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pan of oil to heat up",
+      "Smoking chips in to heat up",
+      "Blitz duck & egg white",
+      "Nuts in the oven, set timer",
+      "Add consommé to medium pan with duck and egg white mix",
+      "Add duck to smoker",
+      "Blowtorch duck and put in freezer",
+      "Prepare celeriac, vac pack and put in steamer, set timer",
+      "Blitz nuts with oil and pass",
+      "Deep fry cracker",
+      "Make mayonnaise",
+      "Make dressing",
+      "Pass consommé",
+      "Prepare pear, vac pack",
+      "Slice celeriac",
+      "Set up for dressing",
+      "Slice duck",
+      "Fill teapots with accompaniments",
+      "Dress crackers",
+      "Make folds",
+      "Dress plate",
+      "Serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Duck Legs",
+        "unit": null,
+        "notes": null,
+        "amount": "14",
+        "section": "Duck Consomme",
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Duck Consomme",
+        "isOptional": false
+      },
+      {
+        "name": "White Onions",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Duck Consomme",
+        "isOptional": false
+      },
+      {
+        "name": "Celery",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Duck Consomme",
+        "isOptional": false
+      },
+      {
+        "name": "Celeriac",
+        "unit": null,
+        "notes": null,
+        "amount": "¼",
+        "section": "Duck Consomme",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "head",
+        "notes": null,
+        "amount": "1",
+        "section": "Duck Consomme",
+        "isOptional": false
+      },
+      {
+        "name": "Aged Madeira",
+        "unit": "ml",
+        "notes": null,
+        "amount": "750",
+        "section": "Duck Consomme",
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "750",
+        "section": "Duck Consomme",
+        "isOptional": false
+      },
+      {
+        "name": "Ltr Truefoods Golden Chicken Stock",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": "Duck Consomme",
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": "Duck Consomme",
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Duck Consomme",
+        "isOptional": false
+      },
+      {
+        "name": "Earl Grey Tea",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": "Duck Consomme",
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Duck Consomme",
+        "isOptional": false
+      },
+      {
+        "name": "Juniper Berries",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": "Duck Consomme",
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Duck Consomme",
+        "isOptional": false
+      },
+      {
+        "name": "Pink Peppercorns",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": "Duck Consomme",
+        "isOptional": false
+      },
+      {
+        "name": "Button Mushrooms",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": "Duck Consomme",
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": "g",
+        "notes": null,
+        "amount": "8",
+        "section": "Duck Cracker",
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom Pods",
+        "unit": null,
+        "notes": null,
+        "amount": "11",
+        "section": "Duck Cracker",
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": "Duck Cracker",
+        "isOptional": false
+      },
+      {
+        "name": "Golden Chicken Stock",
+        "unit": "g",
+        "notes": null,
+        "amount": "350",
+        "section": "Duck Cracker",
+        "isOptional": false
+      },
+      {
+        "name": "Blitz Duck Meat",
+        "unit": "g",
+        "notes": null,
+        "amount": "130",
+        "section": "Duck Cracker",
+        "isOptional": false
+      },
+      {
+        "name": "Tapioca Starch",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": "Duck Cracker",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "12",
+        "section": "Duck Cracker",
+        "isOptional": false
+      },
+      {
+        "name": "Pasteurised Egg White",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": "Duck Consomme",
+        "isOptional": false
+      },
+      {
+        "name": "Duck Breast Skinless",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Duck Consomme",
+        "isOptional": false
+      },
+      {
+        "name": "Pear Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": "Pear and white balsamic dressing",
+        "isOptional": false
+      },
+      {
+        "name": "White Balsamic",
+        "unit": "ml",
+        "notes": null,
+        "amount": "20",
+        "section": "Pear and white balsamic dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Gelespressa",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": "Pear and white balsamic dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Ascorbic Acid",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": "Pear and white balsamic dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Valle De Baux Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": "Pear and white balsamic dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Pink Peppercorns",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": "Pear and white balsamic dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Cured Duck Breasts",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Smoked duck",
+        "isOptional": false
+      },
+      {
+        "name": "Oak Smoking Chips",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": "Smoked duck",
+        "isOptional": false
+      },
+      {
+        "name": "Earl Grey Tea Leaves",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": "Smoked duck",
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": "Smoked duck",
+        "isOptional": false
+      },
+      {
+        "name": "Celeriac",
+        "unit": "large",
+        "notes": "with leaf",
+        "amount": "2",
+        "section": "Cooked Celeriac",
+        "isOptional": false
+      },
+      {
+        "name": "Grapeseed Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": "Cooked Celeriac",
+        "isOptional": false
+      },
+      {
+        "name": "Hazelnuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": "Hazelnut Mayonnaise",
+        "isOptional": false
+      },
+      {
+        "name": "Grapeseed Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": "Hazelnut Mayonnaise",
+        "isOptional": false
+      },
+      {
+        "name": "2tbl Spoons Dijon Mustard",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Hazelnut Mayonnaise",
+        "isOptional": false
+      },
+      {
+        "name": "A Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "½",
+        "section": "Hazelnut Mayonnaise",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": "Hazelnut Mayonnaise",
+        "isOptional": false
+      },
+      {
+        "name": "X Red Passe Crassane Pear",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Additional",
+        "isOptional": false
+      },
+      {
+        "name": "Nasturtium Leaves",
+        "unit": null,
+        "notes": "peeled pink peppercorns",
+        "amount": "0",
+        "section": "Additional",
+        "isOptional": false
+      },
+      {
+        "name": "Tea Accompaniments",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Additional",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2a3af4b4f24acc3e28c2d2ddd9b6cf41fb75686887863836aee3dc139c56cc30",
+    "lineage_hash": "c6f177be3c9f782cfd1b8a4faca5ccbd19fa5757fb7d46aed57a8a7ea08d95da"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.thestaffcanteen.com/chefs-recipes/1534237280-8338--Can-I-get-you-a-cup-of-tea--luv-----my-starter-recipe-for-Great-British-Menu-2018",
+    "fetchedAt": "2026-08-03T13:27:19.230Z"
+  },
+  "rawSource": "https://www.thestaffcanteen.com/chefs-recipes/1534237280-8338--Can-I-get-you-a-cup-of-tea--luv-----my-starter-recipe-for-Great-British-Menu-2018",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

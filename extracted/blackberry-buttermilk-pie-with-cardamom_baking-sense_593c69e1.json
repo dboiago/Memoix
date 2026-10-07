@@ -1,0 +1,136 @@
+{
+  "recipe": {
+    "name": "Blackberry Buttermilk Pie with Cardamom",
+    "time": "1 hr 15 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "295",
+      "carbohydrateContent": "43",
+      "fatContent": "12",
+      "proteinContent": "5"
+    },
+    "directions": [
+      "Roll the dough to line a 9&quot; pie plate and crimp the edges. Put the berries into the unbaked pie shell, refrigerate the pie shell while you prepare the filling. Preheat the oven to 350 °F °F. Place a sheet pan onto the bottom rack of the oven to preheat."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Recipe Perfect Pie Crust",
+        "unit": null,
+        "notes": "chilled",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pints Blackberries",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cardamom",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "oz",
+        "notes": "1/4 cup",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yolks",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "melted",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean",
+        "unit": null,
+        "notes": "or 1 tsp vanilla extract",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "oz",
+        "notes": "1 ½ cups",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0b4e56cf0f02f2b733ae75c0a23fd43760088ed61f955c8439ff52f48a72626b",
+    "lineage_hash": "857fc2155d1451574ae44f960cc1c3f5328aa3f8562e2fdf279fb3c6b95d1c63"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2016/03/12/blackberry-buttermilk-pie-cardamom/",
+    "fetchedAt": "2026-08-02T08:42:25.092Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2016/03/12/blackberry-buttermilk-pie-cardamom/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,182 @@
+{
+  "recipe": {
+    "name": "Cheesy Schezwan Paneer Sliders",
+    "time": "50 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "243",
+      "carbohydrateContent": "23",
+      "fatContent": "13",
+      "proteinContent": "8"
+    },
+    "directions": [
+      "Make the mayo mint chutney by mixing together the mayonnaise with mint chutney and then make the mayo schezwan sauce by mixing together the mayo with schezwan chutney. Set aside and start working on the filling.",
+      "Heat oil in a pan on medium heat and then add chopped onions, and chopped green and red bell peppers to it. Cook for 3 to 4 minutes until the veggies soften up. Then add the corn and cubed paneer and stir.",
+      "Add in the schezwan chutney and stir to combine. You can adjust the spice levels by adding more of the schezwan chutney.",
+      "Add in the cilantro, chaat masala and salt and cook for a minute. Taste test and adjust the salt and spice levels as needed at this point. Remove pan from heat.",
+      "Preheat oven to 375 F degrees. Take 12 rolls and place them on a baking sheet lined with parchment paper. I recommend preparing these sliders on the baking sheet so that they can be easily transferred to the oven (without creating a mess)! Slice the rolls lengthwise. Spread mayo mint chutney on one side (bottom part) and the mayo schezwan sauce on the other (top part).",
+      "Now, spread the prepared paneer mixture on one side (the bottom side where you applied the mayo mint chutney). Top with cheese slices. I used pepper jack cheese and used 5 slices to cover the surface. You can use more cheese slices and also use cheese of choice.",
+      "Cover the buns with the top part. Now take some melted butter (salted or unsalted), and brush the top with that. I also like to brush the sides a little. Cover the buns with foil so that they don&#39;t get too brown or hard in the oven. Transfer the baking sheet to the oven and bake at 375 F degrees for 20 to 25 minutes. Remove from the oven, remove the foil and then let it sit for 5 minutes and then dig right in!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mayonnaise",
+        "unit": "Tbsp",
+        "notes": "store-bought vegan mayonnaise",
+        "amount": "2",
+        "section": "Mayo Mint Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Mint Chutney",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Mayo Mint Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Mayo Schezwan Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Schezwan Chutney",
+        "unit": "Tbsp",
+        "notes": "Ching's schezwan chutney",
+        "amount": "1",
+        "section": "Mayo Schezwan Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": "avocado oil",
+        "amount": "½",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "C",
+        "notes": "chopped, I have used red onion",
+        "amount": "½",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Green Pepper",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "⅓",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Red Pepper",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "⅓",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Corn",
+        "unit": "C",
+        "notes": "frozen corn, which I boiled for 10 minutes before using in the recipe",
+        "amount": "½",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Grams Paneer",
+        "unit": null,
+        "notes": "cut into small cubes",
+        "amount": "200",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Schezwan Chutney",
+        "unit": "Tbsp",
+        "notes": "store-bought Ching's schezwan chutney, add 1 tablespoon extra for more heat",
+        "amount": "2",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Chaat Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "¼",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Dinner Rolls",
+        "unit": null,
+        "notes": "King's Hawaiian savory butter rolls",
+        "amount": "12",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Cheese Slices",
+        "unit": null,
+        "notes": "pepper jack cheese, you can use more cheese if you like",
+        "amount": "5",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": null,
+        "notes": "melted, to brush the top",
+        "amount": "0",
+        "section": "Filling",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fa4b56817a1317deac6f181e9b7daf8cd619983d22d6ddd0329ec593f3825fc8",
+    "lineage_hash": "2eb15f2ea0a681995df54470803860560118bb93ddaf6b594797cf3d47637969"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/schezwan-paneer-sliders/",
+    "fetchedAt": "2026-08-02T06:50:48.653Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/schezwan-paneer-sliders/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

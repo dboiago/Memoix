@@ -1,0 +1,97 @@
+{
+  "recipe": {
+    "name": "Badam Milk",
+    "time": "35 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "257",
+      "carbohydrateContent": "27",
+      "fatContent": "12",
+      "proteinContent": "10"
+    },
+    "directions": [
+      "Soak almond in hot water for 20 minutes. After 20 minutes, discard the water and then remove the skin from each almond. It will come off easily.",
+      "Transfer blanched almonds with ¼ cup milk to a blender. Blend to a smooth paste. Set it aside.",
+      "Now transfer the remaining milk to a pan and put in on medium-high heat.",
+      "As the milk warms up, take out 1 tablespoon of the warm milk from the pan into a small bowl and add crushed saffron strands to it. Set aside.",
+      "Once the milk in the pan comes to a boil, add the prepared almond paste to it. Stir to combine.",
+      "Lower the heat to low medium and let the milk simmer for 15 to 20 minutes. Stir often so that milk doesn’t get stuck to the bottom of the pan. The raw smell of almonds should disappear completely.",
+      "Add in the saffron milk that you had set aside.",
+      "Then add the sugar and stir until it’s dissolved.",
+      "Finally add in the crushed cardamom seeds. You may also add rose water (if using) at this point. Mix everything together and turn off the heat.",
+      "Serve badam milk hot or cold. I personally love it chilled."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Almonds",
+        "unit": null,
+        "notes": "40 grams",
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Generous Pinch Saffron",
+        "unit": null,
+        "notes": "dissolved in 1 tablespoon milk",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated White Sugar",
+        "unit": "Tbsp",
+        "notes": "50-75 grams, or to taste",
+        "amount": "4-6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Cardamom Pods",
+        "unit": null,
+        "notes": "seeds removed & crushed using a mortar and pestle",
+        "amount": "5-6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rose Water",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "74f1f2caba4f0244ea39cdfb58c974e4159a9daebe705a5ac52e053777db8c06",
+    "lineage_hash": "5ef40ff88d18d20a97f2ce06c12c66292f0152fd6e3cfa2ef3bcb51ce6d1fc3d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/badam-milk/",
+    "fetchedAt": "2026-08-01T21:42:11.753Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/badam-milk/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

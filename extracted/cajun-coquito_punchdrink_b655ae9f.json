@@ -1,0 +1,92 @@
+{
+  "recipe": {
+    "name": "Cajun Coquito",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Liqueur",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine ingredients in blender.",
+      "Add ice and blend until smooth."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Coquito Mix",
+        "unit": "oz",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Rum",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spiced Rum",
+        "unit": "oz",
+        "notes": "preferably Old New Orleans Spiced Rum",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Rum",
+        "unit": "oz",
+        "notes": "preferably Bacardi",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Licor 43",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Allspice Liqueur",
+        "unit": "oz",
+        "notes": "preferably Hamilton Pimento Dram",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cane Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1de2383c65df5982bf66d7c302c2c619fbc8bf0af3aa9367bad81e3d08c420b9",
+    "lineage_hash": "62aa9c1dd9e9d8835b6ff12bb3c9f60a9f6b80a39787ccd79ab4cc33cf660f9a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://punchdrink.com/recipes/cajun-coquito/",
+    "fetchedAt": "2026-08-03T04:01:40.495Z"
+  },
+  "rawSource": "https://punchdrink.com/recipes/cajun-coquito/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

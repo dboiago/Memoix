@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Blue Tulip",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to a shaker with ice. Shake vigorously. Dump the contents into the glass (or strain over crushed ice). Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "9fd88979032b7d9197930e4bd60804e4a914b17319b396eeccdba9c14ef17438",
+    "lineage_hash": "d986c4897883a25a6d0b5413e84c16e7498e32586e9580a992bc2189942e3c64"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/blue-tulip-a-tequila-cocktail/",
+    "fetchedAt": "2026-08-04T01:08:01.518Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/blue-tulip-a-tequila-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

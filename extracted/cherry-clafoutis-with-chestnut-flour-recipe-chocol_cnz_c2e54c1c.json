@@ -1,0 +1,110 @@
+{
+  "recipe": {
+    "name": "Cherry Clafoutis with Chestnut Flour",
+    "time": "1 hr 5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 175°C (350°F) and grease a 30-cm (12-inch) pie pan.",
+      "In a medium mixing bowl, beat together the egg yolks with the yogurt, sugar, and kirsch, if using. Add the almond and chestnut flours, and beat them in briefly, without overmixing.",
+      "In another, thoroughly grease-free bowl, beat the egg whites with the cream of tartar and salt until they form soft peaks (I do this by hand, but an electric whisk makes it easier). Fold into the first mixture and pour into the pan. Arrange the cherries on top, pushing them down gently into the batter.",
+      "Bake for 40 to 50 minutes, until set and golden. Transfer to a rack to cool and serve, lightly warm or at room temperature. The leftovers are delicious, straight from the fridge, for breakfast the next day."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "separated",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yogurt",
+        "unit": "ml",
+        "notes": "Greek-style or ricotta",
+        "amount": "240",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Sugar",
+        "unit": null,
+        "notes": "unrefined light blond",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kirsch",
+        "unit": "Tbsp",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Almond Flour",
+        "unit": null,
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Chestnut Flour",
+        "unit": null,
+        "notes": "substitute the flour of your choice, including all-purpose wheat flour",
+        "amount": "85",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream of Tartar",
+        "unit": "tsp",
+        "notes": "or 1 teaspoon lemon juice",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Cherries",
+        "unit": null,
+        "notes": "fresh or frozen, pitted or unpitted",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4f7ffe5c93f19109329d6c5ec8012e89148e11c14492377d82dcbea880139dae",
+    "lineage_hash": "2ca630bcab1dcfd735a28b15483c2536e632cc3369bdd4c236da1806931d95a7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/desserts/cherry-clafoutis-with-chestnut-flour-recipe/",
+    "fetchedAt": "2026-09-30T18:19:53.692Z"
+  },
+  "rawSource": "https://cnz.to/recipes/desserts/cherry-clafoutis-with-chestnut-flour-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

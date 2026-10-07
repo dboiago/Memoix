@@ -1,0 +1,96 @@
+{
+  "recipe": {
+    "name": "Bingka Singkong - Cassava Cake",
+    "time": "1 hr 15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "ID",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat oven to 180 Celcius (350 Fahrenheit). Grease a 8\"x8\" pan, I use coconut oil but you can use butter too. Set aside.",
+      "In a mixing bowl, lightly beat the eggs with a fork, then add coconut milk and vanilla essence. Mix well, set aside.",
+      "In a small pot, boil water and sugar until the sugar has completely dissolved. Turn off heat. Add butter into the pot, stir until the butter has melted. Transfer to a mixing bowl and let it cool slightly until you can touch it without burning your finger.",
+      "Once the sugar/water/butter mixture has cooled, add grated cassava, mix well. Add egg/coconut milk/vanilla mixture, mix well. Pour the batter into prepared pan.",
+      "Bake for about 1 hour, or until a cake tester comes out clean.",
+      "Let the cake cool completely before cutting into serving pieces."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Essence",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "250 ml",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Packet (2 Lb/900 Gram) Frozen Grated Cassava",
+        "unit": null,
+        "notes": "thawed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b23b1d0e06c2812af07266f9c5a0416d8a6e7c0578cffc9cab8a52d890ad9689",
+    "lineage_hash": "0002360333a79d07f9125357bfa60481b0b861e7e65df0e5fc06983a16fff7ef"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/bingka-singkong-cassava-cake.html",
+    "fetchedAt": "2026-08-02T04:43:17.671Z"
+  },
+  "rawSource": "https://dailycookingquest.com/bingka-singkong-cassava-cake.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

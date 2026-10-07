@@ -1,0 +1,79 @@
+{
+  "recipe": {
+    "name": "Baked Parmigiano Reggiano and Greek Yoghurt Chicken",
+    "time": "30-35 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 190°C.",
+      "Mix together 50g grated Parmigiano Reggiano with the Greek yoghurt, garlic and plenty of black pepper.",
+      "Lay the chicken breasts on a grill pan and top with a good layer of the yoghurt mixture.",
+      "Sprinkle over some more grated Parmigiano Reggiano.",
+      "Bake in the oven for 30-35 minutes or until cooked through and golden."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Parmigiano Reggiano",
+        "unit": "g",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Greek Yoghurt",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "crushed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Breasts",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "81f0b1310b6d01deac0ac596bb1b28b8e22067ba336e88ae1455abc0c29a627b",
+    "lineage_hash": "a0005cca629cad5cae9684e102ef28db5d6cafc01beb6b2a10d0b07dd24613a6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.thestaffcanteen.com/chefs-recipes/baked-parmigiano-reggiano-and-greek-yoghurt-chicken",
+    "fetchedAt": "2026-08-03T06:59:30.739Z"
+  },
+  "rawSource": "https://www.thestaffcanteen.com/chefs-recipes/baked-parmigiano-reggiano-and-greek-yoghurt-chicken",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

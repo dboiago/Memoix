@@ -1,0 +1,170 @@
+{
+  "recipe": {
+    "name": "Celeriac and Sage Velouté With Vegetable Macédoine and Parsley Oil",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the parsley oil, first pick some of the leaves for garnish and set aside in the fridge",
+      "Take the remaining parsley and blend with the olive oil until smooth. Add to a small pot then bring to a gentle simmer, before straining through a fine sieve and cheesecloth. Refrigerate until needed.&nbsp;",
+      "For the velouté, melt the butter in a large pot over medium heat. Once foaming, add in the chopped celeriac and onion. Cook for a couple of minutes before adding in the garlic cloves, green lentils and the sage. Add the cream and vegetable stock, then add the bay leaf and simmer for around 30 minutes until the vegetables are soft",
+      "For the vegetable macédoine, take the carrot and celeriac then finely dice to equal sizes, around 0.5cm. Combine with the peas and lentils&nbsp;",
+      "Transfer the velouté to a blender, and blitz until smooth, then season with salt and pepper to taste. Strain through a fine sieve, then transfer back to a pot until ready to serve",
+      "Cook the vegetable macédoine and lentil garnish in boiling salted water for around two minutes, then drain",
+      "For the garnish, finely slice the remaining carrot lengthwise using a mandolin, then cut at an angle to create kite-shaped pieces. Store in the fridge until ready to serve",
+      "To plate, place a 6 cm ring cutter in the base of a bowl and fill with the vegetable macédoine. Pat down well to ensure it stays in position, then remove the ring. Gently top with the fresh parsley leaves and carrot slices along with a scrunch of black pepper. Ladle the soup into small serving jugs, and drizzle in a generous amount of the parsley oil. Slowly pour the soup into the bowl, then serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Parsley",
+        "unit": "bunches",
+        "notes": "fresh",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celeriac",
+        "unit": null,
+        "notes": "peeled and roughly diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Onion",
+        "unit": null,
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tinned Green Lentils",
+        "unit": "g",
+        "notes": "rinsed",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sage",
+        "unit": "bunch",
+        "notes": "roughly chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "700",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": "peeled and diced to even 0.5cm pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celeriac",
+        "unit": "g",
+        "notes": "peeled and diced to even 0.5cm pieces",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tinned Green Lentils",
+        "unit": "g",
+        "notes": "rinsed",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peas",
+        "unit": "g",
+        "notes": "frozen",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": "finely sliced on a mandoline",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "de5312f9b5c2994bc6d9de989a528a2eeb982192cc3f772529ee51f66d13a11e",
+    "lineage_hash": "89e9fb9db45490ce937b35b1fe634cab5b554b624140b304871867bd455b379f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/celeriac-sage-veloute-vegetable-madedoine-parsley-oil",
+    "fetchedAt": "2026-08-02T12:50:09.271Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/celeriac-sage-veloute-vegetable-madedoine-parsley-oil",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

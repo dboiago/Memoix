@@ -1,0 +1,42 @@
+{
+  "recipe": {
+    "name": "Banksy Pimm's",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Collins",
+    "garnish": [
+      "Fresh Herbs",
+      "Cilantro",
+      "Rosemary",
+      "Mint",
+      "Lemon Balm",
+      "Chamomile"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all of the ingredients except the ginger beer in a shaker and shake with ice. Strain into an ice-filled glass, top with ginger beer, and garnish.",
+      "TipGarnish with whatever fresh herbs you have on hand; cilantro and rosemary will add a savory edge, while mint, lemon balm, and chamomile will bring out the natural sweetness of Pimm&#8217;s."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "dec9926de3cbbf705a998a3f46aaaa8175fddc758e36689183fca54d824f5bc5",
+    "lineage_hash": "bdad22429276e44603add3fc3f1de265619f3de81e49d02752dbcefc83aea52a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/banksy-pimms-a-low-proof-summer-cocktail/",
+    "fetchedAt": "2026-08-03T22:16:27.234Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/banksy-pimms-a-low-proof-summer-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

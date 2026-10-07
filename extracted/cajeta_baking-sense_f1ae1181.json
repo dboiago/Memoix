@@ -1,0 +1,77 @@
+{
+  "recipe": {
+    "name": "Cajeta",
+    "time": "2 hr 15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "48",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "31",
+      "carbohydrateContent": "6",
+      "fatContent": "1",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Combine 2 cups of the goat milk with the sugar, cinnamon stick and baking soda in a very large, heavy pot like a Dutch oven. Heat over medium high.",
+      "As soon as the mixture begins to boil it will foam up. Quickly stir with a wooden spoon to reduce the foam. Once the foaming subsides add the rest of the milk to the mixture. Continue to cook over medium keeping a close eye to watch for boil over.",
+      "Once the mixture is simmering evenly and the foam has subsided, reduce the heat to medium low. Stir occasionally. The cajeta will deepen in color and reduce in volume as it cooks. After about 1 ½ to 2 hours you&#39;ll need to stir more frequently as the mixture thickens.",
+      "You can check the thickness by dropping a spoonful of the cajeta on a chilled plate and placing it in the freezer to chill. Once it&#x27;s chilled run a finger through the cajeta to check the texture.",
+      "Towards the end of cooking the mixture will boil thickly. At this point stir very frequently to avoid burning the bottom.",
+      "Cook for about 2 hours or to the desired color and thickness. Pour the hot cajeta through a sieve to remove any broken bits of cinnamon. Cool to room temperature and store in the refrigerator until ready to use. The cajeta can be frozen for longer term storage."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Goat Milk (4 Cups (see Note))",
+        "unit": "oz",
+        "notes": null,
+        "amount": "32",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": null,
+        "notes": "“true” or Mexican cinnamon is preferred",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f0dd5b7efbf6a46db84f10fce60c630c301e1ce23879dc7f60f6d52fd1319cf8",
+    "lineage_hash": "9c21cf784eb95082a6e6f722b636b433ff76da94e1ea685fa0fbfc5b515e13fd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2016/01/20/cajeta-milk-caramel-sauce/",
+    "fetchedAt": "2026-08-01T15:49:43.005Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2016/01/20/cajeta-milk-caramel-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

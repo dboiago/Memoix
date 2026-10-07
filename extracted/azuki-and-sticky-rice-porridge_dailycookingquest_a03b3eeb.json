@@ -1,0 +1,86 @@
+{
+  "recipe": {
+    "name": "Azuki and Sticky Rice Porridge",
+    "time": "2 hr 40 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place azuki bean, black sticky rice, pandan leaves, and water in a pot. Bring to a boil, then reduce heat to a simmer, cover the pot and cook for 2 hours, or until the beans and rice are split open.",
+      "Remove the cover, then turn the heat to medium high. Cook for 10-15 minutes to release more starch from the rice to thicken the porridge.",
+      "Once the porridge is thick and the consistency is to your liking, add sugar and salt. Once the sugar has completely melted, turn off heat, remove pandan leaves.",
+      "The porridge can be served hot, at room temperature, or even chilled."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gram Azuki Bean",
+        "unit": null,
+        "notes": "soaked in water overnight, then drained",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Black Sticky (glutinous) Rice",
+        "unit": null,
+        "notes": "soaked in water overnight, then drained",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pandan Leaves",
+        "unit": null,
+        "notes": "knotted",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "2 liter",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Rock Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c621407cbf2077eadf7fb45cfd1a4457234e7a4a31926839404ef4fde9a08674",
+    "lineage_hash": "24b5e098c71f55db1a6a8cfa129ff09a008f1611e1914cfda1046a9211c17681"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/azuki-and-sticky-rice-porridge.html",
+    "fetchedAt": "2026-08-02T04:54:10.498Z"
+  },
+  "rawSource": "https://dailycookingquest.com/azuki-and-sticky-rice-porridge.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

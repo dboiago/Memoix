@@ -1,0 +1,269 @@
+{
+  "recipe": {
+    "name": "Chicken Supreme",
+    "time": "4 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the mousse, skin and remove any bone and sinew from 1 chicken breast. Place into a food processor with a pinch of salt and the egg white, blitz for long enough to form a smooth paste",
+      "Pass the pulp through a drum sieve into a bowl. Set the bowl over ice and gently beat in 250ml of double cream. Check the seasoning by frying off a little in a pan to taste. Add more salt if necessary followed by the chopped truffle",
+      "Prepare 8 squares of cling-film on a work surface. Place one eigth of the mixture on top of the cling film and roll tightly to form a sausage shape. Tie the ends of the cling film to seal and hold the shape. Repeat this process until you have 8 sausages",
+      "Bring a pot of water to 80˚C. Gently lower the sausages into the water and poach for 7-8 minutes. Leave to cool before transferring to the fridge to set",
+      "For the sauce, place the shallots, white wine and tarragon into a pan and reduce until almost dry",
+      "Add the chicken stock and reduce by half. Add the veal stock and reduce again until it reaches the consistency of a thin gravy. Pass through a fine strainer, season to taste with salt and set aside",
+      "Bake the potatoes in their skins for approximately 1 hour, or until tender in the centre",
+      "Prepare a pot of salted boiling water. Wash the leeks and cut them into a 2cm dice. Blanch the leeks in boiling water for 1 minute until tender but not too soft. Drain and refresh in ice cold water for 5 minutes. Strain again and set aside",
+      "When the potatoes are cooked, cut in half and scoop out the flesh and pass through a fine sieve. In a suitable pan, boil the cream and add the potato. Whisk the mixture until smooth, add the butter and lastly the leeks. Season and reserve",
+      "Thinly slice the courgette lengthways on a mandolin, brush each side with oil and grill one strip of courgette per portion",
+      "Prepare the butternut squash by peeling off the skin and cut 4 x 1cm thick circles from the top end Cut these circles in half and set aside. Peel the parsnips and turn the carrots or cut into batons",
+      "Add the parsnip and butternut squash to a pan of salted boiling water and cook for 6-8 minutes. Add the carrot and cook for a further 3 minutes. Strain and set aside",
+      "Preheat the oven to 180˚C/gas mark 4. Heat a small amount of vegetable oil in a frying pan over a medium-high heat. Pan-fry the chicken breast skin-side down until golden. Place onto a baking tray, season with salt and pepper and cook for approximately 20 minutes until golden, remove and allow to rest for 8 minutes",
+      "Meanwhile, prepare 3 bowls to coat the sausages. Remove the chicken mousse sausages from the fridge and discard the cling film. Roll the sausages in the flour, egg then breadcrumbs until evenly coated and set aside",
+      "Add enough vegetable oil to come 1/2cm up the side of a medium frying pan. Place over a medium heat and gently fry the chicken sausages until the breadcrumbs are golden. Remove and set aside on kitchen towel to drain",
+      "In a separate pan, melt a knob of butter. As soon as it begins to foam, add the butternut squash, carrots and parsnip and cook until lightly golden",
+      "Heat the other knob of butter in a separate pan and cook the spinach until just wilted. Season to taste with salt and set aside in the warm pan",
+      "On each plate, line each ring with the grilled courgette and then fill it with the hot potato and leek mixture and a little spinach on top. Carefully slice the chicken and arrange it neatly on a small bed of spinach followed by the pan-roasted vegetables",
+      "Cut the sausage in half at an angle and place next to the courgette. Reheat the sauce and gently pour over and around the plate to finish. Serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Breasts",
+        "unit": null,
+        "notes": "skin on",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Breast",
+        "unit": null,
+        "notes": "boneless and skinless",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handfuls of White Breadcrumbs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Truffle",
+        "unit": "g",
+        "notes": "optional, chopped",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tarragon",
+        "unit": "g",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": "g",
+        "notes": "peeled and sliced",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Veal Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Potatoes",
+        "unit": null,
+        "notes": "250g each",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leeks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Courgette",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butternut Squash",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsnips",
+        "unit": null,
+        "notes": "baby",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Knobs of Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Spinach Leaves",
+        "unit": "g",
+        "notes": "washed",
+        "amount": "750",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "31ab97e0f33f79ca2fbc0f52f368a506d4c1f2e63a8f56c61a97f5b7224d085c",
+    "lineage_hash": "ba436029352520fa4e6376eab7bd40c446fd240c6779f189a882749bb6a9ec20"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chicken-supreme-recipe",
+    "fetchedAt": "2026-08-03T15:56:35.931Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chicken-supreme-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

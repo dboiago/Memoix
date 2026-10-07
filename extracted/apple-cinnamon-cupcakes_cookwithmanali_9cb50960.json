@@ -1,0 +1,189 @@
+{
+  "recipe": {
+    "name": "Apple Cinnamon Cupcakes",
+    "time": "32 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "310",
+      "carbohydrateContent": "41",
+      "fatContent": "15",
+      "proteinContent": "2"
+    },
+    "directions": [
+      "In a bowl mix together flour, cinnamon powder, nutmeg powder, salt and baking powder. Set aside.",
+      "Using the paddle attachment of your stand mixer or using your hand mixer, cream together butter with both the sugars till smooth and creamy.",
+      "Add in the vanilla extract and eggs and beat till well combined.",
+      "Now add the flour mix in parts alternating with buttermilk. Add the flour in 3 parts and buttermilk in 2 parts, starting and ending with flour.",
+      "Mix till everything is combined but remember to not over-mix.",
+      "Fold in the finely chopped or grated apples.",
+      "Transfer batter to the prepared muffin tray. I fill each liner 2/3 rd full.",
+      "Bake the cupcakes at 350 F degrees for 17-20 minutes or till toothpick inserted in the center comes out clean. Mine were done in 17 minutes.",
+      "Transfer the cupcakes onto a wire rack to cool completely.",
+      "While the cupcakes cool down make the cinnamon buttercream frosting. Using the paddle attachment of your stand mixer or using your hand mixer, beat butter till smooth and creamy.",
+      "Start adding powdered sugar, 1/2 cup at a time, mixing well after each addition.",
+      "Add vanilla extract, cinnamon powder and heavy cream and mix to combine.",
+      "Beat everything together till frosting is completely smooth and creamy.",
+      "Pipe the cooled cupcakes with the prepared frosting and enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All Purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1¼",
+        "section": "Apple Cupcakes",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1¼",
+        "section": "Apple Cupcakes",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Apple Cupcakes",
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Apple Cupcakes",
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Apple Cupcakes",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": "at room temperature",
+        "amount": "6",
+        "section": "Apple Cupcakes",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated White Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Apple Cupcakes",
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Apple Cupcakes",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "at room temperature",
+        "amount": "2",
+        "section": "Apple Cupcakes",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Apple Cupcakes",
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Apple Cupcakes",
+        "isOptional": false
+      },
+      {
+        "name": "Very Finely Chopped Apple [from 1 Apple]",
+        "unit": "C",
+        "notes": null,
+        "amount": "1.5",
+        "section": "Apple Cupcakes",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "at room temperature [1 stick]",
+        "amount": "½",
+        "section": "Cinnamon Buttercream",
+        "isOptional": false
+      },
+      {
+        "name": "Powdered Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1.5-2",
+        "section": "Cinnamon Buttercream",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Cinnamon Buttercream",
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Cinnamon Buttercream",
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Cinnamon Buttercream",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f17450c9ba49f044a132c6ac799c5ac51ec1d74c790bc3c020783c6dd7d7b10e",
+    "lineage_hash": "63f0bc4cb39e8eaf7268f6270fb28fa6fff4d4164281227ed9c63a08173283d6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/apple-cinnamon-cupcakes/",
+    "fetchedAt": "2026-08-02T05:43:41.651Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/apple-cinnamon-cupcakes/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

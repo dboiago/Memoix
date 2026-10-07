@@ -1,0 +1,235 @@
+{
+  "recipe": {
+    "name": "Beef Pesto",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To prepare the marinade for the beef fillet, add the tamari, 120ml of cold water, the vinegar, chilli and garlic to a blender and blitz for 30 seconds until a fine purée forms",
+      "Add the fillet to a long dish or container that is only just large enough to hold the beef. Drizzle the marinade over the beef, cover with cling film and leave to marinate in the fridge for up to 4 days, turning every 12 hours so that the beef is evenly marinated",
+      "1 hour before you are ready to cook, remove the beef from the marinade, drain thoroughly and pat dry with a clean kitchen cloth. Slice into 8 even portions and set aside until required",
+      "For the pesto, add the herbs, garlic, olive oil and pine nuts to a blender or food processor and blitz until a coarse paste is achieved. Transfer to a bowl, stir in the Parmesan and mix in enough extra virgin olive oil to reach your desired consistency. You will need approximately 250g for the final dish - the pesto is best eaten fresh, but will last for up to 48 hours if covered and refrigerated",
+      "To prepare the rest of the vegetables, add the garlic, cider vinegar, grain mustard, salt, pepper and olive oil to a blender and blitz until smooth. Transfer the dressing to a large bowl and set aside",
+      "Bring a large pan of water to the boil and add a pinch of salt. Add the chard, stir well and cook for 30 seconds. After this time, add the courgette and cook the vegetables together for a further 1 minute",
+      "Drain in a colander, then add to the bowl with the dressing. Mix well so the vegetables are well coated, then mix in the beetroot. Set aside in a warm place for 5-10 minutes",
+      "Place a pan over a high heat and allow it to get very hot. Brush a little oil on the cut-sides of the fillet portions and fry for no more than 2 minutes on each side to achieve a rare finish",
+      "To serve, divide the salad onto warmed plates and place a piece of fillet on the top of each. Arrange the black olives around the beef and spoon over the pesto. Serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef Fillet",
+        "unit": "kg",
+        "notes": "mid fillet, trimmed",
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tamari",
+        "unit": "ml",
+        "notes": "or 500ml soy sauce",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cider Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli",
+        "unit": null,
+        "notes": "moderately hot",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "peeled",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basil Leaves",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley Leaves",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "peeled",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pine Nuts",
+        "unit": "g",
+        "notes": "lightly toasted",
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan",
+        "unit": "g",
+        "notes": "finely grated",
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cider Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "peeled",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grain Mustard",
+        "unit": "g",
+        "notes": null,
+        "amount": "65",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chard",
+        "unit": "g",
+        "notes": "thinly shredded, stems included, and washed well",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Courgettes",
+        "unit": null,
+        "notes": "julienned",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raw Beetroots",
+        "unit": null,
+        "notes": "medium, peeled and finely julienned",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Olives",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cracked Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "dcb6306abef523ac469ac33aee07d65b862af5bc137209f5f63bdaccb24a7bb6",
+    "lineage_hash": "78c968d11ef0670ba0a287ea78477a5301c0a8b59efc7f027959b115acbc173f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beef-pesto-recipe",
+    "fetchedAt": "2026-08-03T20:22:34.725Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beef-pesto-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

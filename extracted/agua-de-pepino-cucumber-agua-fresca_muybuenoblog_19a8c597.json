@@ -1,0 +1,83 @@
+{
+  "recipe": {
+    "name": "Agua de Pepino (Cucumber Agua Fresca)",
+    "time": "5 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "101",
+      "carbohydrateContent": "25.51",
+      "fatContent": "0.17",
+      "proteinContent": "0.65"
+    },
+    "directions": [
+      "In a blender add cucumbers and water and blend until smooth.",
+      "Strain the liquid into a pitcher and discard the pulp.",
+      "Add the lime juice and sugar. Mix well.",
+      "Serve chilled over ice, with slices of cucumber and/or lime, and fresh mint leaves."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cucumbers",
+        "unit": null,
+        "notes": "organic, peeled and chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "C",
+        "notes": "fresh",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": null,
+        "notes": "fresh, optional",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d9e1d7a8eeea252394dd9f3feab39555d77e6e6f5f6374bc197eda4879c002d6",
+    "lineage_hash": "d443daf618b6cec42e7f8930998a9f3789bd4ccbbf73f507080d1f5b722a88dd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/agua-fresca-de-pepino-cucumber-lime-cooler/",
+    "fetchedAt": "2026-08-02T06:34:12.112Z"
+  },
+  "rawSource": "https://muybuenoblog.com/agua-fresca-de-pepino-cucumber-lime-cooler/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

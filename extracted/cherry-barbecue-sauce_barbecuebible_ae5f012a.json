@@ -1,0 +1,100 @@
+{
+  "recipe": {
+    "name": "Cherry Barbecue Sauce",
+    "time": "10 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the ingredients in a heavy saucepan and gradually bring to a boil over medium heat. Reduce the heat slightly to obtain a gentle simmer. Simmer the sauce until reduced by a quarter—6 to 8 minutes.",
+      "Transfer the sauce to clean jars and let cool to room temperature, then refrigerate until serving. The sauce will keep for several months."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cherry Cola",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ketchup",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Worcestershire Sauce",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "A-1 Steak Sauce",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Liquid Smoke",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "cbca0c60807e8f2df1623f310a2a9d4cf608b304342587c357c699a407ab8bd2",
+    "lineage_hash": "50a54fd7e50399c766ea498099a77d4fb354736d9a9a460d30496823a8e9d221"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/cherry-barbecue-sauce/",
+    "fetchedAt": "2026-08-03T07:23:57.312Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/cherry-barbecue-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

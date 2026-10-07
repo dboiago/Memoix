@@ -1,0 +1,127 @@
+{
+  "recipe": {
+    "name": "Bok Choy and Pork Belly Stir Fry",
+    "time": null,
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "324",
+      "carbohydrateContent": "32",
+      "fatContent": "27",
+      "proteinContent": "25"
+    },
+    "directions": [
+      "Prepare Bok Choy: Wash and drain the Bok Choy. If you get a larger Bok Choy, cut it into sections.",
+      "Prepare Pork Belly: Remove the skin of the pork belly and then cut into small strips or slices.",
+      "In a hot wok, add some oil and then fry pork belly until slightly seared. In this process, the pork belly will release some lard which will enhance the flavor of bok choy greatly. We love to fry green leaf vegetables with animal fat.",
+      "Add garlic, scallion and ginger, and half of the light soy sauce. Fry for a while until the flavors are well combined.",
+      "Add the Bok Choy and continue to fry until the leaf becomes soft.",
+      "Add the remeaning light soy sauce and a very small pinch of salt.",
+      "Finally, add the red Thai pepper circles. I love to add Thai pepper in this step since it reduces the heat and keeps a touch of freshness from those papers.",
+      "Add sesame oil, mix well and serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bok Choy Separated",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Cooking Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pork Belly",
+        "unit": "g",
+        "notes": "cut into small pieces",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thumb Ginger",
+        "unit": null,
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallion",
+        "unit": null,
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Thai Pepper",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "divided",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pinch of Salt",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7b35c1a3e22071adb93b42e40fb02064a832dc6d4dc392a0e6bc9a12073a000d",
+    "lineage_hash": "10f76486849e377867b4f84e197b57f1611005f8006438d782e1ff0ea6871412"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/bok-choy-and-pork-belly-stir-fry/",
+    "fetchedAt": "2026-08-02T09:33:10.537Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/bok-choy-and-pork-belly-stir-fry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

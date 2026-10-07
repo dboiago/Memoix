@@ -1,0 +1,122 @@
+{
+  "recipe": {
+    "name": "Chinese Beef Salad",
+    "time": "10 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "157",
+      "carbohydrateContent": "1.1",
+      "fatContent": "10.8",
+      "proteinContent": "13.8"
+    },
+    "directions": [
+      "Combine the dressing ingredients in a small bowl, stir, and set aside.",
+      "Add to a bowl the beef shank, celery, green onion, chilis, and half of the cilantro and peanuts. Drizzle the dressing onto it and gently toss.",
+      "Plate the salad, drizzle with some extra chili oil if desired, and garnish with the remaining cilantro and peanuts."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Homemade Braised Beef Shank",
+        "unit": "C",
+        "notes": "or roast beef deli meat, thinly sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Celery",
+        "unit": "stalk",
+        "notes": "or 1/2 stalk regular celery, diced, thinly sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Birds Eye Chilis",
+        "unit": null,
+        "notes": "Optional, sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanuts",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Homemade Chili Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinkiang Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Broth From Homemade Braised Beef Shank",
+        "unit": "Tbsp",
+        "notes": "*Footnote 1, heated up in the microwave (Optional)",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "29077f03e2fce4c974f0f96faf5d60499f5aa396b9eb3b6423d47f14128b3131",
+    "lineage_hash": "25b65ac42e461d8a62868ff251dfafe10a14fd8154e29df7d70a542d26f067fe"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/chinese-beef-salad/",
+    "fetchedAt": "2026-08-01T17:03:46.502Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/chinese-beef-salad/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

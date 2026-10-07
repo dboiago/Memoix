@@ -1,0 +1,77 @@
+{
+  "recipe": {
+    "name": "Barbecued Oysters",
+    "time": "10 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "24",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Set up your grill for direct grilling and preheat to medium.",
+      "Meanwhile, shuck the oysters using a shucking knife, taking care not to spill the juices. Discard the top shell and arrange the oysters in the shellfish rack. Top each with 2 teaspoons barbecue sauce, grated cheese, a sprinkle of barbecue rub, and a splash of hot sauce (if using).",
+      "Place the rack with the oysters on the grill and lower the grill lid. Grill the oysters until just cooked and the cheese and sauce are melted and bubbling, 3 to 5 minutes."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oysters in the Shell",
+        "unit": null,
+        "notes": null,
+        "amount": "24",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Your Favorite Barbecue Sauce",
+        "unit": "C",
+        "notes": "I’m partial to Best of Barbecue Chipotle Molasses Barbecue Sauce",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper Jack Cheese",
+        "unit": "oz",
+        "notes": "coarsely grated",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Your Favorite Barbecue Rub",
+        "unit": "Tbsp",
+        "notes": "I’m partial to Best of Barbecue All-Purpose Rub",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "A Splash of Your Favorite Hot Sauce (optional)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "73ce1ea54439f8f8d76f969750ae4452af6f313675e1dfe2d2e52946a3bf370a",
+    "lineage_hash": "cf3cbc8d6f06d64562f6544100c2571e33a5ca1986f1ace2dff2fa7145ae8b5e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/barbecued-oysters/",
+    "fetchedAt": "2026-08-03T03:30:57.015Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/barbecued-oysters/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

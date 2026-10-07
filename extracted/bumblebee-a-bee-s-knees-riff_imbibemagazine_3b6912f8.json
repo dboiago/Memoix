@@ -1,0 +1,37 @@
+{
+  "recipe": {
+    "name": "Bumblebee",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [
+      "Matcha Dust"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to a shaker with ice and shake. Double strain and dry shake (without ice). Strain into a chilled coupe. Garnish with matcha dust.",
+      "Minted Honey SyrupMix 15 oz. of plain honey syrup (1 1/2:1 honey to water) with 10 oz. of hot water. Let the honey syrup cool down. In the meantime, submerge 30 grams of fresh mint leaves in ice water for 20 seconds. Blend the honey syrup with the mint leaves on high speed in a blender. Afterward, gently strain through cheese cloth immediately. Will keep for 4 days in the refrigerator."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "4765106c74c4eb37692ebcf602f0cb741b584e03b90a3b57cd7616b2562fd242",
+    "lineage_hash": "03e95dc21efe391c184c839483d5ef5525a7ad0c2f9f833af8637e67a1ffd35c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bumblebee-a-bees-knees-riff/",
+    "fetchedAt": "2026-08-04T01:04:08.162Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bumblebee-a-bees-knees-riff/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

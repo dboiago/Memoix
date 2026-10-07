@@ -1,0 +1,37 @@
+{
+  "recipe": {
+    "name": "Buttered-Pecan French Toast with Bourbon Maple Syrup",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the buttered pecans: Preheat the oven to 350 degrees F. Place the pecan pieces on a rimmed baking sheet and toast for 10 to 14 minutes, until fragrant and golden brown. Remove from the oven and reduce the oven temperature to 200 degrees F. In a medium sauté pan set over medium heat, melt the butter. Stir in the sugar and salt. add the pecans and cook, stirring, for 3 to 4 minutes, until the butter is lightly browned. Remove the pan from the heat.",
+      "For the French toast: In a medium bowl, whisk together the eggs and milk. In a small saucepan set over medium heat, warm the heavy cream for about 3 minutes, until just steaming, and remove from the heat. In a small bowl, combine the brown sugar, cinnamon and salt. add the sugar mixture to the cream and stir just until the sugar is dissolved. Add the cream mixture to the egg and milk mixture. Stir in the vanilla. Working with one slice of bread at a time, put a slice into the egg mixture and let it soak for about 15 seconds on each side. Place on a rimmed baking sheet to rest while all the bread is dipped and the pan is heated. In a medium nonstick skillet or griddle pan set over medium heat, melt the clarified butter. Place 2 or 3 bread slices into the pan and cook for about 2 minutes per side, until golden brown on each side. Add a bit more butter to the pan after you flip the bread, if needed. Transfer to a heatproof plate or rimmed baking sheet with a wire cooling rack set inside. Cover with a kitchen towel and keep warm in the oven while you cook the rest of the toast.",
+      "For the bourbon maple syrup: In a small saucepan set over low heat, gently stir together the maple syrup, bourbon and vanilla until just warmed and well combined. To serve, place 2 slices of french toast on each plate. Generously sprinkle with buttered pecans, drizzle with syrup and dust with confectioners’ sugar. Serves 4.",
+      "Reprinted with permission from Joy the Baker Over Easy. Copyright © 2017 by Joy the Baker, Inc. Published by Clarkson Potter/Publishers, an imprint of Penguin Random House LLC."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "fc0aa92d5e5e93d6a87892ffdbedd477703b634a28a161e664c70eff438ec273",
+    "lineage_hash": "c3e954462d940c5890e9bb18088f5505c2884d2e080fb845267822ad741aa9f5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/buttered-pecan-french-toast-with-bourbon-maple-syrup/",
+    "fetchedAt": "2026-08-03T23:50:01.157Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/buttered-pecan-french-toast-with-bourbon-maple-syrup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

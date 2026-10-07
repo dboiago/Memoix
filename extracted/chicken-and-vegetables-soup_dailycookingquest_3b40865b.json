@@ -1,0 +1,127 @@
+{
+  "recipe": {
+    "name": "Chicken and Vegetables Soup",
+    "time": "1 hr 45 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "ID",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat the oil in a soup pot and fry the onion until fragrant.",
+      "Add carrots and chicken and cook until chicken are no longer pink.",
+      "Add cabbage and tomatoes, mix well.",
+      "Add salt, sugar, and water and bring to a boil. Reduce heat and let simmer for 1 hour or until chicken is tender and fully cooked.",
+      "Add the scallion and celery leaves, stir and turn off the heat immediately. Serve warm in individual soup bowls."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cooking Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": null,
+        "notes": "peeled and cut into cubes",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Free Range Chicken (indonesian: Ayam Kampung)",
+        "unit": null,
+        "notes": "cut into 4-8 pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Cabbage",
+        "unit": null,
+        "notes": "cored and roughly chopped",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": null,
+        "notes": "quartered",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallion",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Leaves (indonesian: Daun Seledri)",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "02e39d3ca2f61ef4dcf118ef250427bac7e957764bdc51821bc95e7104c223cf",
+    "lineage_hash": "afc4887bdc5dc37b9aeb1b805ca736a32f03de050211619a3cc31ce8b7f24bd9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/chicken-and-vegetables-soup.html",
+    "fetchedAt": "2026-08-02T11:51:13.682Z"
+  },
+  "rawSource": "https://dailycookingquest.com/chicken-and-vegetables-soup.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

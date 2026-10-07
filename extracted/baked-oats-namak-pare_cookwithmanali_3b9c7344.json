@@ -1,0 +1,118 @@
+{
+  "recipe": {
+    "name": "Baked Oats Namak Pare",
+    "time": "20 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "252",
+      "carbohydrateContent": "36",
+      "fatContent": "10",
+      "proteinContent": "6"
+    },
+    "directions": [
+      "To a large bowl add oats (pulse them 2-3 times in a food processor to break them a little), atta, all purpose flour, sooji, baking powder and stir. Add salt and ajwain and mix everything together.",
+      "Start adding oil, around 3.5 tablespoons and rub the oil into the flour mix with your fingers.",
+      "Hold the dough in your hands and press between your palms. If it holds shape, then oil is enough, if it crumbles then add the remaining 1/2 tablespoon of oil and mix.",
+      "Now start adding water to bring your dough together. I use my stand mixer here but you can do this by hands too.",
+      "Add water little at a time and knead to a stiff dough. I used little more than 1/2 cup water here, probably 1/2 cup + 1 tablespoons. Cover the dough with a cling sheet and rest dough for 20 minutes.",
+      "Then start rolling the dough using a rolling pin,  roll somewhere between 1/6 to 1/8 inch thickness.Cut the dough vertically into strips and then diagonally to cut into diamonds, 3/4 inch inch wide. You can cut them in any shape you like.",
+      "Arrange them on a baking sheet lined with parchment paper and bake at 375 F degrees for 18-20 minutes or until crispy. Keep an eye after 15 minutes so that they don&#039;t burn. Let cool completely and then store these oats namak pare in an airtight container at room temperature."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rolled Oats",
+        "unit": "C",
+        "notes": "old fashioned, 116 grams",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Atta",
+        "unit": "C",
+        "notes": "130 grams, whole wheat flour",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "C",
+        "notes": "65 grams, maida",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sooji",
+        "unit": "Tbsp",
+        "notes": "28 grams, semolina",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ajwain",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1.25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": "avocado oil",
+        "amount": "3.5-4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": "to knead, little over 1/2 cup",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "eb08f627fe7598ce64f74cbc9f44415e4f50192bd41dc6cd0939d3c344c87a6c",
+    "lineage_hash": "54c99a6a1af8f1a2205fc4960ab2fe3ec3075c90e39206082157d10042702a3e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/baked-oats-namak-pare/",
+    "fetchedAt": "2026-08-02T08:16:06.498Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/baked-oats-namak-pare/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

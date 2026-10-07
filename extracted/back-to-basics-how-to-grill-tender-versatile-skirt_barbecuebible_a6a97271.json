@@ -1,0 +1,49 @@
+{
+  "recipe": {
+    "name": "Skirt Steak",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Dry the steak thoroughly with paper towels. If it is a whole steak (18 to 20 inches), you may need to cut it into sections before grilling. Cover and refrigerate until it’s time to cook.",
+      "If desired, soak the steak in your favorite marinade for 2 to 8 hours (covered and refrigerated).",
+      "If you opt not to marinate the meat, brush it with olive oil and season it well on both sides before grilling with coarse salt or your favorite rub. Let the meat rest for 15 to 30 minutes before grilling.",
+      "Heat your grill to high (about 500 degrees). Oil the grill grate well.",
+      "Grill the steak(s) for 2 to 4 minutes per side, depending on the meat’s thickness.",
+      "Transfer the meat to a cutting board and let rest for 5 minutes. If desired, top when hot with a few pats of butter or compound butter.",
+      "Using a sharp knife, slice the meat against the grain holding the knife at an angle to the cutting board. Top with any accumulated juices and serve with your desired sauces or condiments."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oz Skirt Steak",
+        "unit": "oz",
+        "notes": null,
+        "amount": "14-16",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "85da0dbcd6e52931c90ef196a2eb6e364fa124c91af18af9797c4f6c1e9a9f56",
+    "lineage_hash": "dc904198b8a64ce561818156af9b9b3ddb3a4c84b4a239b4ce91a9e648f552e2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/2024/02/13/how-to-grill-skirt-steak/",
+    "fetchedAt": "2026-08-02T20:51:47.635Z"
+  },
+  "rawSource": "https://barbecuebible.com/2024/02/13/how-to-grill-skirt-steak/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

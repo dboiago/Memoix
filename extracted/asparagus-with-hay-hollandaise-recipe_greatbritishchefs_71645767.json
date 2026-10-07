@@ -1,0 +1,147 @@
+{
+  "recipe": {
+    "name": "Asparagus with Hay Hollandaise",
+    "time": "45 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start by infusing the butter. Melt the butter then add the hay and leave to infuse for 24 hours",
+      "To make the hay powder, place the hay in a dehydrator or low oven and dry out at 70°C for 12 hours. Once completely dried, blitz to a powder",
+      "After 24 hours, melt the hay-infused butter in a pan then pass through a sieve into a jug – you'll need 450g to make the hollandaise",
+      "Make the hollandaise by adding the 450g infused butter to a vacuum bag with the white wine vinegar and egg yolks. Seal in a chamber sealer and cook in the water bath for 30 minutes",
+      "Tip the sauce into a bowl and blend until smooth and emulsified. Season to taste, pass through a fine sieve then pour into a siphon. Charge with two N2O cartridge and keep warm until needed",
+      "To cook the asparagus, make an emulsion by melting the butter with 250ml of water and simmering for 10 minutes with the kombu",
+      "Using a vegetable peeler, neatly shave the bottoms of the asparagus stems and cut each in half",
+      "Strain the emulsion into a clean pan and emulsify using a hand blender. Bring back to the simmer and blanch the asparagus in the emulsion for 2–3 minutes",
+      "To serve, add some of the hay hollandaise to each bowl and add 4 pieces of asparagus per person. Arrange thin slices of the charcuterie over the bottom halves of the asparagus, finely grate the aged Parmesan over the top and dust with hay powder to finish"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hay",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hay",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "g",
+        "notes": null,
+        "amount": "230",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Asparagus Spears",
+        "unit": null,
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kombu",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salami",
+        "unit": null,
+        "notes": "good quality",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chorizo",
+        "unit": null,
+        "notes": "good quality",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan",
+        "unit": "g",
+        "notes": "good quality, 5 years old",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c2c757139b0ff924963a61e040d09a3644843d104b88bb4908452fdb90cc131e",
+    "lineage_hash": "f077ac5edda3eae1055599d76d4e9963b1307266b5f4ba566049bc3e010ccfc4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/asparagus-hay-hollandaise-recipe",
+    "fetchedAt": "2026-08-03T11:05:31.396Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/asparagus-hay-hollandaise-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

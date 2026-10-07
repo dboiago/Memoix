@@ -1,0 +1,219 @@
+{
+  "recipe": {
+    "name": "Caramelised Banana Dessert",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "The day before serving the dish, make the ice cream. Combine all the ingredients in the jug of a Thermomix and blend on speed 6 at 80°C – when the mixture reaches 80°C, blend for 4 more minutes. If you don’t have a Thermomix, blend all of the ingredients in a regular blender until smooth, then pour into a saucepan and heat until the mixture reaches 80°C. Cook for a further 4 minutes at 80°C then remove from the heat and allow to cool. Refrigerate overnight",
+      "The next day, churn the mixture in an ice cream machine then store in the freezer",
+      "To make the crumble, cream together the butter and sugar, then add the ground almonds and flour, stirring to combine",
+      "Spread the mixture out on a baking tray in a thin layer and bake for 7 minutes until golden brown. Allow to cool, then break up into smaller crumb-sized pieces",
+      "For the toffee sauce, combine the cream, a pinch of salt and the ginger in a saucepan set over a medium heat and bring to the boil. Turn off the heat and allow to infuse for 5 minutes before straining",
+      "Combine the sugar and lemon juice in a pan and set over a low heat, allowing the sugar to dissolve completely. Raise the heat to medium, allowing the sugar to darken and caramelise (or until it reads 170°C on a sugar thermometer). Turn off the heat",
+      "With the heat off, carefully add the cream mixture into the caramel (the caramel will froth up and steam). Once the frothing subsides, whisk well to combine. Turn the heat back on to medium and add in the butter, whisking well",
+      "When ready to serve, slice the bananas into even pieces – you want 5 slices per portion. Add a knob of butter to a frying pan and allow to melt and bubble. Sprinkle over a good spoonful of sugar and add the bananas, cut-side down, to the pan. Cook until deeply caramelised, then turn over and gently caramelise on the over side. Once nicely golden, remove the pan from the heat",
+      "To serve, add a generous spoonful of the toffee sauce to the base of each bowl and sprinkle some crumble on top. Carefully arrange the banana pieces in a circle, then top with a scoop of the banana ice cream. Garnish with nasturtium leaves and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Banana Purée",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "78",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glucose Syrup",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Trimoline",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Procrema",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": "sliced",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bananas",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Knob of Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nasturtium Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "680e32eace599700ae95789169ef70dfa62f06166a39b5903dfe69c2e9e69cee",
+    "lineage_hash": "6976f7f52b8abf797656d3c776bf616bfad047af6f3f01637850eedc7d87a985"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/caramelised-banana-dessert-recipe",
+    "fetchedAt": "2026-08-03T07:53:10.522Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/caramelised-banana-dessert-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

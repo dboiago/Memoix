@@ -1,0 +1,125 @@
+{
+  "recipe": {
+    "name": "Brown Sugar & Mustard Glazed Tofu",
+    "time": "2 hr 15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "158",
+      "carbohydrateContent": "18",
+      "fatContent": "6",
+      "proteinContent": "8"
+    },
+    "directions": [
+      "Prepare the tofu by draining it, and then pressing it for 30 minutes to 1 hour. I love using my Tofuture tofu press, but you can also follow these instructions for a DIY tofu pressing method. Pressing the tofu squeezes excess water out so that the tofu can suck up more of the marinade and become more flavourful.",
+      "Once pressed, remove the tofu and pat dry. Use a knife to score a diamond pattern across the surface of the tofu cutting about 1/4 inch deep. Add the soy sauce and liquid smoke to a sealable bag or container, then add the tofu. Let the tofu marinate for a minimum of 1 hour or as long as overnight in the fridge, flipping the tofu every now and then to ensure both sides get marinated.",
+      "When ready to roast the tofu, preheat your oven to 375F (190C). Line a small baking dish with parchment paper.",
+      "Remove the tofu from the marinade and place on the prepared baking dish. Poke a whole clove into the center of each diamond. Bake for 50 - 60 minutes until the tofu is a dark golden brown.",
+      "While the tofu is baking make the glaze by adding the brown sugar, vegan butter, water, mustard, garlic, and cinnamon to a small pot. Put over medium-high heat, bring to a simmer while whisking often, and cook for about two minutes. Remove from heat and set aside.",
+      "Once the tofu has baked and is golden brown, remove from the oven, pour the prepared glaze on top, then return to the oven and bake for another 10 - 15 minutes until the glaze is bubbling. Remove from the oven and let cool 10 minutes. Remove the cloves using a fork or kitchen tweezers before serving. I also like to use a pastry brush to gently brush excess glaze off the top of the tofu so you can see the diamond pattern better for presentation. Enjoy hot or cold!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Block (350g) Extra-firm Tofu",
+        "unit": null,
+        "notes": "drained and pressed",
+        "amount": "1",
+        "section": "tofu",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "tofu",
+        "isOptional": false
+      },
+      {
+        "name": "Liquid Smoke",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "tofu",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Cloves (the Spice)",
+        "unit": null,
+        "notes": "*see notes",
+        "amount": "20-30",
+        "section": "tofu",
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Vegan Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced or pressed",
+        "amount": "4",
+        "section": "glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": "glaze",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "50028ebc52de5986a17958477e979fb2d5f54a324e1d403251777e2002d62c50",
+    "lineage_hash": "3ad9c08d94339d6b0398b15ed748c083912f4bf84f75b90d3b08af1fa25b81a9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/brown-sugar-mustard-glazed-tofu/",
+    "fetchedAt": "2026-08-02T00:02:37.683Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/brown-sugar-mustard-glazed-tofu/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

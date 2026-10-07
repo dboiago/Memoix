@@ -1,0 +1,81 @@
+{
+  "recipe": {
+    "name": "Borek",
+    "time": "1 hr 15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Strip the cavolo nero leaves from the stalks (the stalks can be saved for other dishes, and are particularly good finely chopped and added to fried rice), blanch them for 1 minute in boiling water, then drain",
+      "Dry the leaves thoroughly by pressing them between two clean tea towels and placing something heavy (like a wooden chopping board) on top for a few minutes",
+      "Chop the leaves finely and mix with the cheese and a small pinch of salt (if using feta, skip the salt)",
+      "Take a sheet of yufka, place on a clean work surface and brush with melted butter. Lay another on top. Then, on one side of the pastry, brush a little more melted butter and lay a fresh sheet of yufka on top, so that it overlaps slightly with the two sheets already there (the idea is to make one long strip of yufka). In the end you will have four pieces of double layered yufka, overlapping in a line",
+      "On the bottom edge of the yufka, begin to lay out your filling in a long snake, continuing right to the other end of the pastry",
+      "Then, carefully roll the pastry up and around the filling until you have one long snake of pastry filled with the cavolo nero and cheese. The snake can then be curled around and placed in a baking tray. Don’t worry if your tin isn’t the right size or shape",
+      "Brush the borek with the egg and cook for 25–30 minutes or until golden brown"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cavolo Nero",
+        "unit": "g",
+        "notes": "weight with stalks, which yielded 150g without stalks",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sheets of Yufka Pastry",
+        "unit": null,
+        "notes": "or filo pastry",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Feta",
+        "unit": "g",
+        "notes": "or another white Turkish cheese, or Sütdiyarı Picnic Börek Cheese if you can find it",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "and 1 egg yolk, beaten lightly with a fork",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8851e5fc605ab12fc8872ad086f3490bd5cdb6229ee0d2ed2e742091b204ea1a",
+    "lineage_hash": "e2bf6aa48f49554c79c907563beda896f25e9a8a2adbb256f89b5ff4371256ff"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/borek-recipe",
+    "fetchedAt": "2026-08-03T11:40:31.029Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/borek-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,119 @@
+{
+  "recipe": {
+    "name": "Baby Gem, Courgette, Walnut and Parmesan Salad",
+    "time": "25 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, place the walnuts on a baking tray and bake for 6 minutes, until nicely toasted. Place the walnuts in a bowl, season with salt and pepper, and add the lemon juice and the walnut oil to create a dressing. Set aside",
+      "Cut the onion in quarters, then cut into fine slices. Slice the courgettes into ribbons using a mandoline or vegetable peeler and place on a tray. Season with some of the walnut dressing",
+      "Wash the baby gems, then pull the leaves away from the cores. Place them in large bowl and season with some more of the dressing",
+      "To assemble the salad, place three of the largest lettuce leaves in the center of each plate in a triangular shape. Scatter one third of the sliced courgettes, onions and walnuts on the lettuce, then grate over a little fresh Parmesan",
+      "Repeat this process twice more to create three layers in total. Finish with the rest of the dressing and a little more grated Parmesan"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Walnuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Walnut Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Courgettes",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Courgettes",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Gem Lettuces",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0c521be8b47bddfdc02ba6a48f2a3319906d219137c89e157c857ae55d257fc3",
+    "lineage_hash": "1f142b3a07dc59ce85762f00e65026deb758f5dba6f0293c4e668f68fb9b9cbc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/baby-gem-courgette-walnut-parmesan-salad-recipe",
+    "fetchedAt": "2026-08-03T09:24:02.019Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/baby-gem-courgette-walnut-parmesan-salad-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

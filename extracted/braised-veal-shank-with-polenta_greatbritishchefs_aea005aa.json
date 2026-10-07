@@ -1,0 +1,244 @@
+{
+  "recipe": {
+    "name": "Braised Veal Shank with Polenta",
+    "time": "3 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, braise the veal shank. Very simply season the shank with salt, add to the pan and cover with cold water. Bring to the boil, then drain and discard the water and place the veal shank back into the pan with all the vegetables, lemon zest, the white wine and herbs. Add enough cold water to cover the shank well",
+      "Bring back to the boil then turn down to a very gentle simmer for 2 hours, or until the meat is just coming away from the bone. Now allow the shank to cool in the liquor. Remove the carrots, onions and celery as these will be served with the shank",
+      "To cook the polenta, bring the water to a simmer in a large pan and sprinkle in the polenta while whisking. Cook on a gentle heat, stirring frequently, for approximately 1 hour",
+      "When ready to serve, gently reheat the veal shank in the braising liquid. Meanwhile, preheat the oven to a low temperature (you will need to keep the shank warm while making the sauce)",
+      "When the shank is heated through, carefully drain from the sauce and place on a tray. Keep warm in the oven, adding the carrot, onion and celery pieces to warm through on a separate baking tray",
+      "Pass the braising liquid through a fine sieve into a clean pan and reduce by half over a medium-high heat. Set aside",
+      "When the polenta is ready, beat in the butter, Parmesan, seasoning and a good glug of olive oil",
+      "Remove the shank from the oven and use a pastry brush to coat with the truffle mustard. Finely chop the herbs used to finish the shank and season with salt and pepper. Carefully roll the shank in the herbs so it's nicely coated",
+      "Whisk the olive oil and Chardonnay vinegar into the sauce and season to taste",
+      "Serve the shank on a platter with the polenta, braising vegetables and sauce set to one side"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Veal Shank",
+        "unit": null,
+        "notes": "French-trimmed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": null,
+        "notes": "peeled and left whole",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery",
+        "unit": null,
+        "notes": "separated into stalks and peeled",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Bulb",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": null,
+        "notes": "large",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemons",
+        "unit": null,
+        "notes": "zest only",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "750",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": null,
+        "notes": "bunch",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Polenta",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": null,
+        "notes": "a good glug",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Truffle Mustard",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chervil",
+        "unit": "bunch",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tarragon",
+        "unit": "bunch",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": "bunch",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dill",
+        "unit": "bunch",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": "leaves picked",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chardonnay Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "ml",
+        "notes": "best quality",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fc30d52c6e64cba7aafee8dbae90ec1c1a3ad63a84629cc4a569de5134944a85",
+    "lineage_hash": "602573c79b80380e435dac154c7259c3501f3c288ce6d48d3881016f9ff1e168"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/braised-veal-shank-with-polenta-recipe",
+    "fetchedAt": "2026-08-03T08:08:32.514Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/braised-veal-shank-with-polenta-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

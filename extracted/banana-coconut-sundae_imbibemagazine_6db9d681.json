@@ -1,0 +1,38 @@
+{
+  "recipe": {
+    "name": "Banana Coconut Sundae",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Melt the butter in a 12-inch (30 cm) skillet over medium heat, then add the palm sugar and cook, stirring occasionally, until it melts and caramelizes into a deeper brown, caramel color.",
+      "Once the sugar has darkened to the desired color, immediately add the coconut milk; the sugar will seize up and bubble aggressively. When the bubbling subsides, add the salt and rum. Stir over medium heat until the sugar is completely dissolved and the sauce has thickened slightly.",
+      "Place the bananas in the pan in one layer. Cook just until heated through, about 30 seconds, flipping the pieces halfway through or basting the tops with the sauce.",
+      "Remove the pan from the heat and let cool for a few minutes, until warm but no longer hot. If you do decide to make this dessert in advance, heat it up just until it’s warm before serving.",
+      "To serve, place a few pieces of banana around some ice cream in a small bowl and drizzle the sauce over top. Sprinkle with chopped roasted peanuts."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "6747fb7a87baea6d96adf5f03d5ad07430f16b5199f0b8d241f7d19b22d22b2d",
+    "lineage_hash": "4baa4881b663d8f5881c7e582a9e74b6607e6773036f775de6023a7fbc2a8526"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/banana-coconut-sundae/",
+    "fetchedAt": "2026-08-03T22:05:23.748Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/banana-coconut-sundae/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

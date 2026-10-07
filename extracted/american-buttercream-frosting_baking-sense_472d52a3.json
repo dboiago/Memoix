@@ -1,0 +1,91 @@
+{
+  "recipe": {
+    "name": "American Buttercream Frosting",
+    "time": "20 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "174",
+      "carbohydrateContent": "40",
+      "fatContent": "17",
+      "proteinContent": "0.3"
+    },
+    "directions": [
+      "Place 12 oz&#32;unsalted butter in the bowl of a stand mixer or in a large mixing bowl, Use the paddle or beater to beat the butter on medium speed until it is softened and smooth.",
+      "With the mixer running on low, slowly add 20 oz&#32;confectioner's sugar and mix until completely combined. Run the mixer on medium speed for 2-3 minutes.",
+      "Scrape the sides of the bowl and the paddle. Switch to the whisk attachment. On low speed, whisk 2 tablespoon&#32;vanilla extract, 2 oz&#32;whole milk, 3 oz&#32;light corn syrup and ¼ tsp&#32;table salt.",
+      "Beat on medium until light and fluffy, about 3-4 minutes. Use right away. Can be stored at room temperature for 1-2 days or frozen for up to 3 months."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "room temperature",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Confectioner’s Sugar",
+        "unit": "oz",
+        "notes": "5 cups",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Corn Syrup",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "47c15e4633aae7a8aa70da7d3180f481b865860e700bed96e359c5a7c68c84d9",
+    "lineage_hash": "c34f3ae496cbac9b8203b8be94e6626d10b1bd9491965dfc5d2ef1d5298da66f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2020/03/12/american-buttercream/",
+    "fetchedAt": "2026-08-01T20:34:36.485Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2020/03/12/american-buttercream/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

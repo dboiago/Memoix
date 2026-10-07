@@ -1,0 +1,111 @@
+{
+  "recipe": {
+    "name": "Bok Choy and Crispy Potatoes",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start with a pot of water, bring it to a boil, then blanch the bok choy for 20 seconds. Transfer them out, cool down. Cut into small pieces and then sqeeze the water out.",
+      "Peel and cut the potatoes into 3cm cubes and then cook them in boiling water for 7 minutes until soft.",
+      "Add a little bit more oil and then place the potato cubes in. Fry until all of the potato cubes are crispy and golden brown.",
+      "Add garlic and scallion. Fry until aromatic.",
+      "Add the Bok Choy in. Season it with salt, pepper and light soy sauce. Mix well.  Optionally, you can sprinkle some chili flakes for a spicy and hot version."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bok Choy",
+        "unit": "heads",
+        "notes": null,
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": "medium",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Oil 3 for Pan| 4 for Wok",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3-4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "alt: to taste",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": "alt: to taste",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper Flakes (adjust for Spice)",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "53077b2fa465eb66dab445f00064d99fe3def799da7eb79aa6db89f73c58444e",
+    "lineage_hash": "a41c5d09960dc2ec8e5332a68ba421c601ff54bdf9bf083d1e21c015ff05cba0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/bok-choy-and-crispy-potatoes/",
+    "fetchedAt": "2026-08-02T09:45:12.370Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/bok-choy-and-crispy-potatoes/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

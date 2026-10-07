@@ -1,0 +1,108 @@
+{
+  "recipe": {
+    "name": "Black Rice Pudding with Coconut Milk",
+    "time": "50 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "324",
+      "carbohydrateContent": "36.7",
+      "fatContent": "20.8",
+      "proteinContent": "3.5"
+    },
+    "directions": [
+      "Rinse and drain the black rice. If you prefer a stickier texture, add water to cover the rice and soak for 1 hour at room temperature, or overnight in the fridge. Drain well.",
+      "Add the rice to a small saucepan with 2 cups of water. Cook over medium heat until it boils. Reduce to medium-low heat. Cover the pot. Cook covered for 35 minutes. Do not uncover the lid during cooking. Once done, turn off the heat and let the rice rest, covered, for 10 minutes.",
+      "Sprinkle the sugar and salt onto the rice while it is still hot. Fluff the rice and mix until the sugar has mixed in and dissolved. Taste the rice. You can add more sugar, if needed, and mix again. Set aside to cool.",
+      "Combine coconut milk, ice cubes and sugar in a food processor or blender. Mix until the ice is chopped into small pieces but not melted completely.",
+      "Add about 1/2 cup rice and 1/2 cup coconut milk into small serving bowls. Divide the mango evenly among the bowls. Serve immediately. (*Footnote 3)"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Black Rice",
+        "unit": "C",
+        "notes": "7 ounces / 200 g",
+        "amount": "1",
+        "section": "Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": "Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "cans",
+        "notes": "18 oz / 540 ml",
+        "amount": "2",
+        "section": "Dessert bowl",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": "or syrup",
+        "amount": "4",
+        "section": "Dessert bowl",
+        "isOptional": false
+      },
+      {
+        "name": "Ice Cubes",
+        "unit": null,
+        "notes": "about 1 1/2 cup",
+        "amount": "20",
+        "section": "Dessert bowl",
+        "isOptional": false
+      },
+      {
+        "name": "Mangos",
+        "unit": null,
+        "notes": "*Footnote 2, cubed",
+        "amount": "4",
+        "section": "Dessert bowl",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "61e8068a69f5a8eb5b22265c8a28bfeef6330d3f41eb6b9480add79ea9c38e87",
+    "lineage_hash": "4e6e1aac261af5b8e9faacc9d655b5255b34c52b35eb1d1d19f40351b3c0b40f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/black-rice-with-coconut-milk-and-fruits/",
+    "fetchedAt": "2026-08-02T01:48:04.496Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/black-rice-with-coconut-milk-and-fruits/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

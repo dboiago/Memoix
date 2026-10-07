@@ -1,0 +1,127 @@
+{
+  "recipe": {
+    "name": "Apple Cake",
+    "time": "1 hr 10 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Peel and chop the apples into small pieces (the smaller the easier the cake will be to cut)",
+      "In a large mixing bowl beat the sunflower oil and sugar together until smooth, and then add the beaten eggs and yoghurt",
+      "In a small bowl mix all of the remaining dry ingredients, add gradually to the wet mixture and finally fold in the apples",
+      "Pour the batter into a greased 8 inch cake tin and cook for 30-40 minutes or until you can stick a knife through the centre that comes out clean",
+      "Let the cake cool, cut into slices and enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Apple",
+        "unit": "g",
+        "notes": "peeled and cored",
+        "amount": "550",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sunflower Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yoghurt",
+        "unit": "ml",
+        "notes": "low fat",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": "white",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wheat Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bicarbonate of Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ae473767e4839adff9fa63b30af344d41de46fa2bef5b3cbd19dcdd58309bbe3",
+    "lineage_hash": "af8c7055d562716c963b056f4d5568e11463e7503cc2f858ebfa8389f22f0cbc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/apple-cake-recipe",
+    "fetchedAt": "2026-08-03T23:51:39.157Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/apple-cake-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

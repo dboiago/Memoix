@@ -1,0 +1,104 @@
+{
+  "recipe": {
+    "name": "Beetroot Salad with Pickled Rose",
+    "time": "40 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the salt, water, vinegar and olive oil in a jug and mix well. Put the badger flame beetroots in a pressure cooker and pour in half the mixture. Bring to high pressure, cook for 12 minutes, then remove from the heat and allow to release pressure naturally",
+      "Lift out the beetroots, pour away the liquid, then add the chioggia beetroots and the remaining vinegar mixture. Bring to high pressure, cook for 12 minutes, then remove from the heat and allow to release pressure naturally",
+      "Once both types of beetroots are cool enough to handle, rub the peels off (wear gloves unless you want bright pink hands)",
+      "Cut the badger beetroots into angular 3cm chunks and the chioggia beetroots into fine slices, ideally using a meat slicer or mandoline",
+      "To serve, stir a pinch of salt in the yoghurt, then spread it on the base of 4 serving plates. Dress the chunks of badger flame beetroot with salt, pepper, olive oil and a little of the liquor from the pickled rose petals, then arrange them on top of the yoghurt",
+      "Season the chioggia sheets with salt, pepper and the pickled rose liquor, then drape them over the dish to create a wavy blanket. Finish with 5-6 pickled rose petals per plate"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Badger Flame Beetroots",
+        "unit": null,
+        "notes": "scrubbed clean",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chioggia Beetroot",
+        "unit": null,
+        "notes": "scrubbed clean",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Cider Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": "plus extra to dress",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Greek Yoghurt",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pickled Rose Petals",
+        "unit": "g",
+        "notes": "plus some of their pickling liquor",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "cd66622bef431c512ae1dcd2d77985a222d0db248b433b28226dd1e5d805d620",
+    "lineage_hash": "8e050b4a421b3c32aad2a643217a7b77ee9d15de3b8cfcfd94234313cbfcc10d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beetroot-salad-pickled-rose-recipe",
+    "fetchedAt": "2026-08-01T22:58:59.791Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beetroot-salad-pickled-rose-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

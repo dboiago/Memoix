@@ -1,0 +1,86 @@
+{
+  "recipe": {
+    "name": "Cacio e Pepe 'En Vessie'",
+    "time": "40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Soak the dehydrated pig's bladder in cold water for about 10 days, changing the water daily",
+      "When the bladder is adequately hydrated, insert the other ingredients into it using a funnel, then firmly secure the bladder opening with kitchen twine",
+      "Cook the stuffed bladder in a large pan of boiling water, being sure to keep it submerged in the water and shaking it occasionally to mix the pasta inside. Cook for 30 minutes",
+      "Serve in front of guests by cutting open the bladder with a sharp knife and spooning the rigatoni onto plates"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dehydrated Pig's Bladder",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rigatoni Pasta",
+        "unit": "g",
+        "notes": "Riccardo recommends using Felicetti as it is strong and wont disintegrate during the 30 minutes of cooking",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pecorino",
+        "unit": "g",
+        "notes": "aged black rind variety, grated",
+        "amount": "135",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "g",
+        "notes": "freshly cracked",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": "Riccardo uses Guérande",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fe182702b94e916706c24da4ebba1fe9dc5424b3585652d4a738c82b272dd89c",
+    "lineage_hash": "75f2250afa7539a18363044bd02030dac60d7297fc9f0d5e928fe87c8e9326ea"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/cacio-e-pepe-en-vessie-recipe",
+    "fetchedAt": "2026-08-02T00:01:39.619Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/cacio-e-pepe-en-vessie-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

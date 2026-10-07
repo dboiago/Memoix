@@ -1,0 +1,118 @@
+{
+  "recipe": {
+    "name": "Bream Bruschetta With Shellfish Sauce",
+    "time": "50 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Wash the clams and mussels and place them in two separate pots with a little bit of oil, cover and let them open over medium heat. Shell them and filter their juice through a mesh strainer lined with cheesecloth.&nbsp;",
+      "Cut the tomatoes into 1/4\" slices, chop the bell pepper and thyme leaves. Sauté everything in a pan with 2 Tbsp. oil for 2-3 minutes over medium heat. Add the shellfish with a little of their cooking liquid. Let flavors meld for 1-2 minutes and season with chopped basil.",
+      "Fillet the bream and make three slices in the skin of the fillets. Heat a grill pan or skillet over medium heat, grease the filets with oil and grill them flesh-side down; turn after 4 minutes and cook skin-side down for another 3 minutes, then add salt.",
+      "Toast the slices of bread, place the fish fillets on top with 2-3 spoonfuls of shellfish sauce and serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Clams",
+        "unit": "oz",
+        "notes": "purged",
+        "amount": "18",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mussels",
+        "unit": "oz",
+        "notes": "cleaned",
+        "amount": "18",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bell Pepper",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole of Bream",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherry of Tomatoes",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rustic Bread",
+        "unit": "slices",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basil",
+        "unit": "bunch",
+        "notes": "chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra-virgin Olive Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "30b50ae936a0f5226d2d7184b8df586fe014908653528e3e3b4c21828ca9d0d4",
+    "lineage_hash": "adfbbe4cd55f3f56193daace6c448c54f06bc641073bf841707c8788b2dde0bc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/main-course/bream-bruschetta-with-shellfish-sauce",
+    "fetchedAt": "2026-08-03T00:53:24.491Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/main-course/bream-bruschetta-with-shellfish-sauce",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

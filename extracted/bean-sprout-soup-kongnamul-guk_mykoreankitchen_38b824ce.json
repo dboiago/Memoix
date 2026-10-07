@@ -1,0 +1,82 @@
+{
+  "recipe": {
+    "name": "Bean Sprout Soup (Kongnamul Guk)",
+    "time": "30 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "KR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "40",
+      "carbohydrateContent": "2",
+      "fatContent": null,
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Prepare the soybean sprouts. Discard any bad beans and rinse under running water (You can trim the root if you wish, but it is also one of the most nutritious parts of the bean sprouts. Besides, it can take a long time to trim too. So it’s up to you what you do here.)",
+      "Pour the soup stock (dashi) into a pot and boil over medium high heat. (You could use just plain water instead of using soup stock. However, it will lack depth of flavour and you will need to add a lot more seasoning (e.g. salt, soy sauce or salted shrimp) to make it taste right. Also, soup stock can be made on a different day to save your time. )",
+      "When the stock boils, add the soybean sprouts and boil for a further 3 to 4 minutes. (I cooked uncovered.) Add the garlic, salt, and green onion. Boil another 1 minute then remove from the heat."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Soybean Sprouts",
+        "unit": "g",
+        "notes": "4.2 ounces",
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Korean Soup Stock",
+        "unit": "C",
+        "notes": "dashi",
+        "amount": "4½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "tsp",
+        "notes": "or more to taste",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "992da214dc659268b0c4a2bc2df7d37d31d3f1439545236b3c0a3d5e20c65173",
+    "lineage_hash": "52e2806b19cbf2aba2dd89d3f0424ce72f8d0fdf8b27c19e697af0383853056a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://mykoreankitchen.com/bean-sprout-soup-kongnamul-guk/",
+    "fetchedAt": "2026-08-01T17:06:04.518Z"
+  },
+  "rawSource": "https://mykoreankitchen.com/bean-sprout-soup-kongnamul-guk/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

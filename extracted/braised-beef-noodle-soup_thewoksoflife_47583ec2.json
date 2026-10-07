@@ -1,0 +1,254 @@
+{
+  "recipe": {
+    "name": "Braised Beef Noodle Soup (红烧牛肉面)",
+    "time": "2 hr 30 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "519",
+      "carbohydrateContent": "31",
+      "fatContent": "26",
+      "proteinContent": "40"
+    },
+    "directions": [
+      "First place the aromatics in a piece of cheesecloth tied tightly with kitchen string or disposable/fillable tea filter bags. That’s the cinnamon, black cardamom, fennel seeds, star anise, cloves, tangerine peel, bay leaves, white peppercorns, licorice slices, sand ginger, and amomum white cardamon. Phew. It’ll be worth it. Trust me.",
+      "Next, rinse off the beef under cold running water. In a soup pot, add 16 cups of water, the ginger, and beef. Bring to a boil and cook for a few more minutes until you see some foam floating on the top of the water. Skim the foam off. You don’t want these impurities from the beef making your soup cloudy. Turn off the heat, fish out the pieces of beef, and strain the resulting broth through a fine-meshed strainer, into a heatproof bowl or other pot. Set aside, along with the ginger pieces.",
+      "In another large, thick-bottomed soup pot, heat the oil over medium heat. Add the rock sugar, the white parts of the scallion, and the garlic. Cook for a few minutes until the scallions are lightly seared. Add the beef, turn up the heat, and mix everything well.",
+      "Cook for about 5 minutes, and stir once or twice in between. Now add the Shaoxing wine, dark soy sauce, and light soy sauce, and stir everything together well so that the beef is coated in the soy sauce.",
+      "Now add the aromatics, plus the daikon, and the broth and ginger pieces that you boiled the beef in. Bring everything to a boil and immediately turn the heat down to medium. Simmer for 90 minutes. The broth should be steadily simmering where you can see water moving in the pot, but not at a rolling boil.",
+      "After 90 minutes, turn off the heat and let it stand (with the lid on) for another hour. Now your soup base is ready. Reheat, remove the aromatics, and add salt to taste before serving. Just remember, adding salt too early will dry out the beef.",
+      "Cook the noodles according to the package instructions, strain, and transfer to a large serving bowl. Blanch a handful of your leafy greens of choice in the noodle water, and add it to the noodles. Then, ladle in the beef and the soup. Top with the chopped green parts of the scallions you set aside earlier and some chopped cilantro (optional). And if you really can’t resist a bit of spice, add a spoonful of chili oil. Wink! Wink!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pieces Chinese (cassia) Cinnamon",
+        "unit": "small",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Cardamom Pods",
+        "unit": null,
+        "notes": "草果",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise Pods",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tangerine Peel",
+        "unit": null,
+        "notes": "dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole White Peppercorns",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Licorice Root (甘草片)",
+        "unit": "slices",
+        "notes": "甘草, gan-cao",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sand Ginger (山奈／沙姜)",
+        "unit": "pcs",
+        "notes": "山奈／沙姜, shan-nai / sha-jiang",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amomum White Cardamom (白寇)",
+        "unit": "pcs",
+        "notes": "白寇, bai-kou, dried",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Chuck",
+        "unit": "lb",
+        "notes": "cut into large chunks",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "slices",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Rock Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "with the white and green parts separated",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Head of Garlic",
+        "unit": null,
+        "notes": "cloves peeled but kept whole",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Daikon",
+        "unit": "lb",
+        "notes": "cut into ¼-inch thick slices, with each slice quartered",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt (to Taste)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Noodle of Your Choice",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leafy Greens of Your Choice (spinach, Romaine Lettuce, Choy Sum, and Bok Choy Are All Good)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "handful",
+        "notes": "optional, chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a795f77658f35e9f8357f89044fcb2dcd39020c12b2941b662346ca271a09634",
+    "lineage_hash": "e05af7d47b99af27b89c8371e6f4a73649f5ab6d7fdb48369cb6d7ef551012db"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/braised-beef-noodle-soup/",
+    "fetchedAt": "2026-08-02T14:37:20.704Z"
+  },
+  "rawSource": "https://thewoksoflife.com/braised-beef-noodle-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

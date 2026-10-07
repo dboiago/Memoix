@@ -1,0 +1,122 @@
+{
+  "recipe": {
+    "name": "Pastrami Rub",
+    "time": "15 min",
+    "course": "rubs",
+    "rating": 0,
+    "serves": "96",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "2",
+      "carbohydrateContent": "1",
+      "fatContent": null,
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Prep. Begin by crushing the seeds. If you wish, you can use only powdered coriander, ground black pepper, and ground mustard, but I like using some whole seeds. If you are using some whole seeds, pour them into a zipper bag and smash them with the bottom of a sauce pan so they are &quot;cracked&quot; but not completely powdered.",
+      "Mix. Blend together all the spices.",
+      "Use. Once prepared, either store the rub in a jar or other airtight container or use it to prepare Katz&#39;s Delicatessen quality pastrami as seen in this video."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Black Peppercorns",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "Tbsp",
+        "notes": "fresh, coarsely",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Coriander Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Paprika",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Yellow (white) Mustard Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f16837b3594b074d1427841cbf73ea7be2ac3cfd6d81beb91ff172069097d3ce",
+    "lineage_hash": "b1a950e11d78ebf522722269239d27008d7b00149d8f2c9a8a0962ad6d7067af"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://amazingribs.com/tested-recipes/spice-rubs-and-pastes/katzs-pastrami-rub/",
+    "fetchedAt": "2026-08-02T08:06:47.704Z"
+  },
+  "rawSource": "https://amazingribs.com/tested-recipes/spice-rubs-and-pastes/katzs-pastrami-rub/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

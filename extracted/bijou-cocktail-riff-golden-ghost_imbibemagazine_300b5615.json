@@ -1,0 +1,37 @@
+{
+  "recipe": {
+    "name": "Golden Ghost",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [
+      "Star Anise"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Stir all the ingredients together with ice in mixing glass. Strain into a chilled glass, then garnish.",
+      "Note: At the bar, Evans soaks 1 star anise in overproof vodka, then lights it aflame over the drink before garnishing."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "65f23a67365b6dfbee207ef1b3cd22220d671cae2ba4e5e4a6b714b816ab7619",
+    "lineage_hash": "13b8bbd2eaa0e8dee6fc12262653ec25af241ab32e0b61b05cbecf693f8dd860"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/golden-ghost-bijou-cocktail-riff/",
+    "fetchedAt": "2026-08-03T21:19:05.311Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/golden-ghost-bijou-cocktail-riff/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

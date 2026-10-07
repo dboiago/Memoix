@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Cherry Point Sour Cocktail",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake all ingredients except wine in a mixing tin with ice. Strain into glass over fresh ice. Gently pour the wine over the back of a barspoon to float over the drink and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "c429de6ac9ff86a361cfdacba4e807865cc62b22b7eaf1cd1250a179ed377bb5",
+    "lineage_hash": "25c0077790ba835158e6f38ec0258e5ca8e8ad80381308dfba127456f917affa"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cherry-point-sour-cocktail/",
+    "fetchedAt": "2026-08-03T19:54:38.170Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cherry-point-sour-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

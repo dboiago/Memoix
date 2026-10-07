@@ -1,0 +1,146 @@
+{
+  "recipe": {
+    "name": "Chilli Crisp with MSG and Garlic",
+    "time": "40 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by heating the vegetable oil to around 160°C in a large, heavy-bottomed pot",
+      "Add the garlic to the oil and fry until it just begins to turn lightly golden, then remove from the oil, and transfer to some paper towel to drain",
+      "Place the oil over a low heat and add in the star anise, cinnamon stick and bay leaf. &nbsp;Infuse the aromatics for around 10 minutes, or until they become fragrant and toasted",
+      "Meanwhile add the Sichuan chilli flakes, ground cayenne, smoked paprika, sesame seeds, MSG, sugar and salt to a large metal or other heat proof bowl",
+      "Remove the aromatics from the oil and discard them",
+      "Heat up the oil to 170°C, then pour it over the chilli flake mix. Be careful as the oil is very hot, and will bubble up as it hits the spices",
+      "Leave the chilli to sizzle for a minute or so, then carefully stir everything until combined. Leave to cool",
+      "Taste the cooled chilli oil and season with a touch of extra MSG or salt as desiredTransfer to a sterilised jar and store in the fridge. Spoon over anything you like"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vegetable Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallot",
+        "unit": null,
+        "notes": "sliced into half moons",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sichuan Chilli Flakes",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cayenne Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "MSG (monosodium Glutamate) Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cane Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7ac8b5bb10ef52badc9e8414a4fac9abc1b88b1a9bea40312fd20ef1a686e2c2",
+    "lineage_hash": "6498fc67b773bb8d82ccc94028be7e3dc051d7d1f79a6886d0e17c8287177b92"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chilli-crisp-msg-garlic-recipe",
+    "fetchedAt": "2026-08-02T09:24:06.928Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chilli-crisp-msg-garlic-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

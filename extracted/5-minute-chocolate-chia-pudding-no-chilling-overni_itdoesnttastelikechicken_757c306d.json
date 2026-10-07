@@ -1,0 +1,107 @@
+{
+  "recipe": {
+    "name": "5-Minute Chocolate Chia Pudding",
+    "time": "5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "209",
+      "carbohydrateContent": "28",
+      "fatContent": "9",
+      "proteinContent": "6"
+    },
+    "directions": [
+      "Mix the chia and water: In a small bowl, combine the chia seeds and hot water. Stir to mix, then let sit for 2 minutes. The mixture will be very watery at first but within about 30 seconds it will start to thicken up, and then it will get really thick.",
+      "Add the milk and flavorings: Stir in the plant-based milk, cocoa powder, maple syrup or agave, vanilla, and salt (if using). Whisk well to break up any clumps. (It’s okay if the cocoa doesn’t fully dissolve yet). Let it rest for another 2 - 3 minutes. Again, it will be very thin at first, but then it will thicken to a lovely pudding texture.Note: if doubling the recipe, it might take longer to set. You can optionally warm the plant-based milk before adding it, which will help it set quicker.",
+      "Final stir: After resting, stir again to fully incorporate the cocoa powder and break up any remaining clumps. The pudding should now be delicious, thick, and chocolatey.",
+      "Serve: Divide between two bowls, jars, or glasses. Add your favorite toppings and enjoy!Storage: Store in an airtight container in the fridge for up to 3 days, or freeze in a sealed container for up to 1 month. Thaw in the fridge overnight and stir well before eating. Add toppings just before serving to keep them fresh."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chia Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Water",
+        "unit": "C",
+        "notes": "not boiling",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plant-based Milk",
+        "unit": "C",
+        "notes": "such as oat or soy",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maple Syrup",
+        "unit": "Tbsp",
+        "notes": "alt: agave, or to taste",
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toppings of Choice",
+        "unit": null,
+        "notes": "(berries, chopped nuts, nut butter, chocolate chips-see notes)",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "10c3b34b401c1f6cdbe789bad2a232f9eb9b5f73e9e38df432770d471a8b5cba",
+    "lineage_hash": "5888de69246be5e6b724427e6dae14f13559896ac218e8021bde19b22b8cb555"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/chocolate-chia-pudding/",
+    "fetchedAt": "2026-08-02T07:56:33.253Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/chocolate-chia-pudding/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

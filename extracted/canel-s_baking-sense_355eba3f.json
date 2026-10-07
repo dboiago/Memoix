@@ -1,0 +1,137 @@
+{
+  "recipe": {
+    "name": "Canelés",
+    "time": "1 day 1 hour 40 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "212",
+      "carbohydrateContent": "28",
+      "fatContent": "9",
+      "proteinContent": "4"
+    },
+    "directions": [
+      "Heat 16 ounces&#32;whole milk with 1 ounce&#32;unsalted butter, 2 ounces&#32;dark rum, 1&#32;vanilla bean (split) and ⅛ teaspoon&#32;table salt until scalding. Turn off the heat and let the milk steep for 20 minutes. In a large bowl, whisk 2&#32;large eggs and 2&#32;large egg yolks with 8 ounces&#32;granulated sugar.",
+      "Remove the vanilla bean from the milk. Scrape the seeds from the pod and add them to the milk. Reheat the milk to scalding hot.",
+      "Slowly whisk ¼ of the hot milk into the egg mixture. Add 4 ounces&#32;all purpose flour and whisk until smooth. Whisk in the remaining milk. Return the vanilla pod to the bowl. Cover the bowl and refrigerate the batter for at least 24 hours or up to 3 days.",
+      "Preheat the oven to 500 °F. Remove the bowl of batter from the refrigerator. Arrange the canele molds on a baking tray and place the tray in the oven long enough to warm up the molds. They don&#39;t have to be super-hot, just warm.",
+      "Melt 2 ounces&#32;unsalted butter in a small saucepan. Continue cooking the butter over medium heat until a foam forms on top of the butter and the milk solids fall to the bottom. Use a small spoon to skim the foam off the top. Pour the butter from the pan, leaving the milk solids behind. While the butter is melting, put 1 ½ ounces&#32;bees wax in a microwave safe container. Microwave in 30 second increments until all the wax is melted. Combine the clarified butter with beeswax.",
+      "Set a cooling rack over a tray lined with paper towels. Take the tray of canele molds out of the oven.",
+      "Fill a warm canele mold with the melted butter/wax. Using a gloved hand or a pair of tongs, lift the filled canele mold and pour the butter/wax back into the original container. Immediately place the mold upside down on the rack to drain. Continue coating the rest of the molds with butter/wax. Rewarm the wax/butter if it is setting too quickly.",
+      "Stir the batter well to reincorporate all the ingredients and transfer the batter to a large measuring cup or pitcher with a pouring spout. Place the canele molds right side up on an unlined sheet pan. Fill each mold up to 1/4&quot; from the top with the batter.",
+      "Bake the caneles for 15 minutes. Reduce the heat to 375 °F and bake another 35 minutes. Lift a canele out of the pan to check if the sides are well browned. If not, give them a few more minutes.",
+      "Remove the caneles from the oven and immediately unmold them onto a cooling rack. Cool to room temperature. Best eaten the day they are baked."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Milk",
+        "unit": "oz",
+        "notes": "2 cups",
+        "amount": "16",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Rum",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "2",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean",
+        "unit": null,
+        "notes": "split",
+        "amount": "1",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "oz",
+        "notes": "¾ cup + 2 tablespoons, see note",
+        "amount": "4",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "2",
+        "section": "Pan Coating",
+        "isOptional": false
+      },
+      {
+        "name": "Bees Wax",
+        "unit": "oz",
+        "notes": "⅓ cup",
+        "amount": "1½",
+        "section": "Pan Coating",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4fc9f165eb9c82c29290dfb1daa28f93cb9e974f3bb43ce801ead0b3c7eb90f4",
+    "lineage_hash": "75cadd818380ba05652282a281991a0d608cb1c974e16705b7a04b9b85af7d9c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2019/11/08/caneles/",
+    "fetchedAt": "2026-08-02T06:24:35.152Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2019/11/08/caneles/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

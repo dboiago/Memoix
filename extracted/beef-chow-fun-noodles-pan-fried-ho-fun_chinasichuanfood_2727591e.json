@@ -1,0 +1,165 @@
+{
+  "recipe": {
+    "name": "Beef Chow Fun Noodles (Pan-Fried Ho Fun)",
+    "time": "20 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "1228",
+      "carbohydrateContent": "196",
+      "fatContent": "33",
+      "proteinContent": "29"
+    },
+    "directions": [
+      "Cut beef into thin slices, put into a bowl. And then add all of ingredients for marinade sauce. Stir until well combined and set aside for around 15 minutes.",
+      "Heat up cooking oil in wok. Add beef slices in to cook around half minute or just until the color of beef slices changes. Transfer the beef slices out and also pour the oil out. Clean your pan or wok.",
+      "Heat up around 1 and 1/2 tablespoons cooking oil, add rice noodle and onion shreds and straight after that stir in the stir fry sauce. Keep tossing your pan or wok until the noodles are well coated with the sauce.",
+      "Return beef slices and bean sprouts to fry for another half minutes. Keep tossing your pan.",
+      "Add Chinese chives or scallion to fry for another 30 seconds.",
+      "Serve hot!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef",
+        "unit": "lb",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wide Rice Noodle",
+        "unit": "lb",
+        "notes": "ho fen",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bunch of Chinese Chive",
+        "unit": "small",
+        "notes": "alt: scallion, cut into sections around 10cm long",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bunch of Bean Sprouts",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Middle Size White Onion",
+        "unit": null,
+        "notes": "shredded",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Cooking Wine",
+        "unit": "Tbsp",
+        "notes": "alt: water",
+        "amount": "1",
+        "section": "Marinade sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinade sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Marinade sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinade sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinade sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Starch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinade sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Stir fry sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Stir fry sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Stir fry sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Stir fry sauce",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2620aa9b83a444ff2a421c65325fc05953dfc927094624fda93e0814ac00e6f6",
+    "lineage_hash": "8a2b49268a99aecbbff4cc19fa8946df6688ae4854b62a2644305474c6941e24"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/beef-chow-fun/",
+    "fetchedAt": "2026-08-01T19:28:37.539Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/beef-chow-fun/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

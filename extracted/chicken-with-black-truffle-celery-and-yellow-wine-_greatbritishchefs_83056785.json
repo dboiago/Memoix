@@ -1,0 +1,431 @@
+{
+  "recipe": {
+    "name": "Chicken with Black Truffle, Celery and Yellow Wine",
+    "time": "2 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by brining the chicken. Heat a little of the water with the salt until dissolved, then pour in the rest of the water to quickly cool it. Once at room temperature or lower, remove the neck, wishbone and legs from the chicken, then submerge the crown in the brine and leave in the fridge for 12 hours. The legs can be used in a different recipe, but you can use the neck, wishbone and any trimmings for the sauce",
+      "While the chicken brines, make the verjus gel by mixing the two ingredients together. Leave to rest for 5 minutes then transfer to a squeezy bottle",
+      "If you have a convection oven, preheat to 76ºC and cook the chicken until it reaches a core temperature of 70ºC. If your oven doesn’t go that low, you can cook at 110ºC until the chicken reaches 70ºC (this will take around 90 minutes, depending on your oven). Chill the chicken as quickly as possible, cut off the wings and reserve both the wings and the crown in the fridge",
+      "To make the yellow wine sauce, place a large pan over a high heat and add the chopped chicken wings (and any trim from the chicken) with a dash of vegetable oil. Cook until golden then remove from the pan and add in half of the sliced mushrooms, the shallots, thyme and garlic to the pan and sweat down until caramelised, about 8 minutes. Then add the chopped wings back into the pan",
+      "Add the peppercorns and white wine and reduce to a syrup. Pour in 150ml of the yellow wine and reduce that to a syrup. Add the chicken stock and reduce that by two-thirds, then add the cream, bring back to the boil and add the remaining sliced mushrooms along with the wings from the cooked chicken. Turn down the heat to low and infuse for 20 minutes",
+      "Add the lemon juice and the remaining yellow wine, then taste and season with salt and pepper as required. Pass through a muslin cloth and reserve in the fridge",
+      "To make the purée, heat a heavy-bottomed pan, add a little oil and then the sliced mushrooms. Cook the mushrooms until the liquid evaporates and they are golden brown, then add the butter and allow to foam before adding the sliced shallots, thyme and garlic. Cook until golden brown then add in the madeira and reduce to a syrup. Pour in the truffle juice and reduce by half",
+      "Add the cream, milk and chopped truffle and cook for 8–10 minutes more. Pick out the thyme stalks then blitz into a smooth purée. Pass through a fine sieve, taste and season. Reserve in the fridge",
+      "To make the braised celery, pick and reserve the celery leaves for garnish. Slice the peeled celery on the angle into 12 batons. Place in a vacuum bag with the rest of the ingredients and steam or cook sous vide at 68ºC for 8 minutes",
+      "To make the cep and gruyere crisps, preheat the oven to 140ºC/gas mark 1. Place the grated cheese, salt and egg white into a food processor and blitz until smooth. Spread the cheese mix thinly and evenly onto a silpat mat and cook for 6 minutes until set but without colour. Stamp out the shapes you desire using a cutter, then place back onto a silpat mat and cover with a second silpat mat. Turn the oven up to 165ºC/gas mark 3 and place back in the oven for 8 minutes or until golden brown. Leave to cool then dust with cep powder. Reserve in an airtight container",
+      "To make a chicken mousse, dice the breast and blend with a good pinch of salt and the egg white until smooth. Pass through a fine sieve and place the mixture back into a bowl over another bowl of ice. Beat the chicken until shiny then slowly add the double cream whilst continuously beating to create a smooth, glossy mousse. Season with nutmeg, salt and pepper",
+      "Remove the breasts from the chilled chicken crown and discard the skin. Spread a 1cm layer of mousse over each chicken breast and cover that in very thin slices of truffle. To reheat, steam at 86ºC until a core temperature of 63ºC is achieved. While the chicken steams, gently reheat the purée and sauce",
+      "Slice the chicken breasts in half and plate up with the celery batons and spoonfuls of puree. Garnish with slices of raw celery, the reserved celery leaves, slices of truffle and garlic flowers. Finish with dots of verjus gel and serve the yellow wine sauce on the side"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken",
+        "unit": null,
+        "notes": "ideally a Cotswold white chicken",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Truffle",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Breast",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Nutmeg",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Wings",
+        "unit": "kg",
+        "notes": "chopped into smaller pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Button Mushrooms",
+        "unit": "g",
+        "notes": "sliced",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Banana Shallot",
+        "unit": "g",
+        "notes": "sliced",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Bulb",
+        "unit": null,
+        "notes": "sliced horizontally",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jura (yellow) Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ceps",
+        "unit": "g",
+        "notes": "frozen, finely sliced",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Button Mushrooms",
+        "unit": "g",
+        "notes": "sliced",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Madeira",
+        "unit": "ml",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Truffle Juice",
+        "unit": "ml",
+        "notes": "available online from suppliers such as Wiltshire Truffles",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallot",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Truffle",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery",
+        "unit": "g",
+        "notes": "peeled",
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Verjus",
+        "unit": "ml",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ultratex",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gruyère",
+        "unit": "g",
+        "notes": "finely grated",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cep Powder",
+        "unit": null,
+        "notes": "to dust",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Stick",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Truffle",
+        "unit": null,
+        "notes": "finely sliced and stamped into a mushroom shape",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Flowers",
+        "unit": null,
+        "notes": "petals picked",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c1337b2019984fc280ebfd11017237913c8dba8b10ea9c4d6f62dd2ab06058e9",
+    "lineage_hash": "ed9f0785691e5a90ed6fca5453f81ae444fa341477fc2e1aa71030f44e72fde6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chicken-truffle-celery-recipe",
+    "fetchedAt": "2026-08-02T19:34:54.202Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chicken-truffle-celery-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

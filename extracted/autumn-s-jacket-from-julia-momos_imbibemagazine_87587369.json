@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Autumn's Jacket",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [
+      "Rosemary"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a shaker tin, combine the shochu, creme de cassis, Cynar, Benedictine, simple syrup, and lemon juice with ice. Shake to chill, then strain into a rocks glass over ice. Float a burning match around the tip of the rosemary sprig, to warm and awaken the herb, but not burn it. This provides woodsy aromatics without the char. Garnish with the rosemary."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "3cab98cf8b1517fa29cb5306e1149b2a62353bf26fd0225514346425e6ba26d6",
+    "lineage_hash": "e5e5925a6faebe1c782f5ac144871c67b8c611cc110a042b9c6dff322d05cbcd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/autumns-jacket-from-julia-momose/",
+    "fetchedAt": "2026-08-04T00:14:15.284Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/autumns-jacket-from-julia-momose/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

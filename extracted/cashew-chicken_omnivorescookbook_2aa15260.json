@@ -1,0 +1,198 @@
+{
+  "recipe": {
+    "name": "Cashew Chicken (腰果鸡丁)",
+    "time": "25 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "335",
+      "carbohydrateContent": "16.2",
+      "fatContent": "18.7",
+      "proteinContent": "28.6"
+    },
+    "directions": [
+      "Combine chicken, Shaoxing wine, salt, and cornstarch in a medium-sized bowl. Mix well so the chicken is evenly coated with a thin slurry.",
+      "Mix all the sauce ingredients together in a small bowl.",
+      "Heat 1 tablespoon of oil in a large nonstick skillet over medium-high heat until hot. Spread the chicken with minimal overlapping. Let cook until the bottom side is light golden, 1 minute or so. Turn to the other side and cook until light golden. Stir a few times until all surfaces turn white. Transfer the chicken to a big plate.",
+      "Add the remaining 1 tablespoon oil, garlic, ginger, and green onion. Stir a few times to release the fragrance.",
+      "Add the pepper. Stir and cook until the pepper just turns tender, 1 to 2 minutes.",
+      "Stir the sauce again to dissolve the cornstarch completely. Pour into the pan. Quickly stir a few times until the sauce thickens. Return the chicken to the skillet and mix again.",
+      "Add the cashews, quickly give it a stir and immediately transfer everything to a plate. Serve hot as a main dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Breast",
+        "unit": "lb",
+        "notes": "or thigh, skinless, boneless, cut into 2/3-inch (1 cm) pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": "or dry sherry",
+        "amount": "1",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "or soy sauce",
+        "amount": "½",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Chinkiang Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": "or vegetable oil",
+        "amount": "2",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "sliced",
+        "amount": "4",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "finely, chopped",
+        "amount": "2",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Bell Pepper",
+        "unit": null,
+        "notes": "seeded and diced",
+        "amount": "1",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Unsalted Cashews",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Stir fry",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5b189494428c63c3193c829940780e847dfc24d05e864478afa4459539d88c83",
+    "lineage_hash": "bc03baea194e9fc7da1c9e06b8b50478f1d1b039c3e5b7463ebd5fc591aeab03"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/cashew-chicken/",
+    "fetchedAt": "2026-08-02T10:17:48.759Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/cashew-chicken/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

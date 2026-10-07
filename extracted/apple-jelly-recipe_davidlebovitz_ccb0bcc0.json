@@ -1,0 +1,81 @@
+{
+  "recipe": {
+    "name": "Apple Jelly",
+    "time": "1 hr 30 min",
+    "course": "pickles",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Rinse the apples and cut them coarsely into chunks, then put them and the cores and seeds, into a very large stockpot.",
+      "Add the water, cover, and bring to a boil. When bubbling, reduce the heat a bit, leave the lid askew, and cook for 20 to 30 minutes, until the apples are tender and cooked through.",
+      "Line a mesh colander with a piece of muslin cloth or a few folds of cheesecloth (or use a jelly bag and stand) and set it over a deep bowl, then ladle the apples and the liquid into the colanders. (I use two lined colanders since it was quite a bit of apples.)",
+      "Let stand or at least 3 hours (but you&#39;ll get more juice if you let the apples drain around ~8 hours), and during that time, no matter how tempting it looks, do not press down at any time on the apples to extract more juice or the jelly will get cloudy.",
+      "The next day, measure out the juice. You should have about 8 cups (2L) but may get a little more. Pour the juice into a large, non-reactive pot fitted with a candy thermometer, add the sugar and lemon juice, and bring to a boil. During cooking, as any white foam forms on the surface while the jelly is cooking, gently skim it off with a ladle. (See Note at the end of the recipe for some idea about repurposing the apples and the foam.)",
+      "Cook until the temperature reaches 220ºF (104ºC). At that point, turn off the heat and begin testing the jelly on a chilled plate in the freezer, using the method mentioned in the headnote. When it wrinkles and holds its shape, it’s done. If not, continue to cook and re-test it at intervals. This batch set at 230ºF (110ºC).",
+      "Remove from heat, stir in the liquor, and ladle into clean jars, then cap tightly."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Apples",
+        "unit": "lb",
+        "notes": "3.75kg",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "2.25L",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": "1,2kg",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Squeezed Lemon Juice",
+        "unit": "C",
+        "notes": "60ml",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Calvados",
+        "unit": "tsp",
+        "notes": "brandy, or Cognac",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0d302076d09ea10b3c91227dc49c8be95e19372759fcbcb6537237dd93c6aabb",
+    "lineage_hash": "6b34b37d81e4f36a1a5f7c28dad3fa8b5701dc0d184e79af3e392e04eeeb7ef9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/apple-jelly-jam-recipe/",
+    "fetchedAt": "2026-08-03T03:46:56.146Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/apple-jelly-jam-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

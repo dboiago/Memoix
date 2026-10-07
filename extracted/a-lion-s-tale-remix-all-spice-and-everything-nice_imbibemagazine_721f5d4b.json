@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Lion's Tail",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all ingredients into a shaker and shake for at least 15 seconds. Strain over fresh ice in a rocks glass. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "c56d6da573d5cdb616527cb4a79fff0e7b4a1d02e7cc97b90b3ae664500af337",
+    "lineage_hash": "458bb379fec24aae0a1beafda3a4bbdaabfb9d165f9bb21f5407c95f6320fd99"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/lions-tail-remix-all-spice-and-everything-nice/",
+    "fetchedAt": "2026-08-03T17:56:59.118Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/lions-tail-remix-all-spice-and-everything-nice/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

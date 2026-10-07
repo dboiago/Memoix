@@ -1,0 +1,158 @@
+{
+  "recipe": {
+    "name": "Banana Muffins",
+    "time": "30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 375°F (190°C). Line one 12-cup muffin tin with XL tulip paper liners or 2 pans with 18 regular liners.",
+      "For the crunchy streusel, stir the flour, sugar and cinnamon together in a small dish. Stir in the melted butter – the mixture may seem paste-like at first, but as it sits it will become crumbly.",
+      "Mash the bananas well in a large mixing bowl. Whisk in the melted butter, granulated sugar and brown sugar. Whisk in the eggs and the vanilla, followed by the buttermilk. Sift in the flour, baking powder, baking soda and salt and whisk just until smooth.",
+      "Scoop the batter into the muffin tins and crumble the streusel on top of each muffin. Bake for about 20 minutes for regular muffins and 30 minutes for the XL muffins. Cool the muffins for 10 minutes in the tin before removing to a rack to cool completely."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bananas",
+        "unit": null,
+        "notes": "large, very ripe",
+        "amount": "2",
+        "section": "Muffins",
+        "isOptional": false
+      },
+      {
+        "name": "Cup Unsalted Butter",
+        "unit": "C",
+        "notes": "still warm is OK, melted",
+        "amount": "½",
+        "section": "Muffins",
+        "isOptional": false
+      },
+      {
+        "name": "Cup Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Muffins",
+        "isOptional": false
+      },
+      {
+        "name": "Cup Packed Light Brown Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Muffins",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "large",
+        "amount": "2",
+        "section": "Muffins",
+        "isOptional": false
+      },
+      {
+        "name": "Tsp Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Muffins",
+        "isOptional": false
+      },
+      {
+        "name": "Cup Buttermilk",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Muffins",
+        "isOptional": false
+      },
+      {
+        "name": "Cups All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1⅔",
+        "section": "Muffins",
+        "isOptional": false
+      },
+      {
+        "name": "Tsp Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Muffins",
+        "isOptional": false
+      },
+      {
+        "name": "Tsp Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Muffins",
+        "isOptional": false
+      },
+      {
+        "name": "Tsp Fine Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Muffins",
+        "isOptional": false
+      },
+      {
+        "name": "Cup All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Crunchy Streusel",
+        "isOptional": false
+      },
+      {
+        "name": "Cup Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": "Crunchy Streusel",
+        "isOptional": false
+      },
+      {
+        "name": "Tsp Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Crunchy Streusel",
+        "isOptional": false
+      },
+      {
+        "name": "Cup Unsalted Butter",
+        "unit": "C",
+        "notes": "melted",
+        "amount": "¼",
+        "section": "Crunchy Streusel",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "35fbfc1b41120b7b7b519f957087e8a2a46303ae9bfd34e0a184ae0876937d93",
+    "lineage_hash": "dd3585fc30f2e14d985a05248ae3dbefa3b80f50e59ca8e6bca31e7b6a934a56"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/best-banana-muffins/",
+    "fetchedAt": "2026-08-01T17:45:45.904Z"
+  },
+  "rawSource": "https://annaolson.ca/project/best-banana-muffins/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

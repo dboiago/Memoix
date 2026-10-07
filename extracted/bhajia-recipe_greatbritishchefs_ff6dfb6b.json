@@ -1,0 +1,169 @@
+{
+  "recipe": {
+    "name": "Bhajia",
+    "time": "30 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the chaat topping, mix together all its ingredients",
+      "Slice the onions to the thickness you prefer and set aside",
+      "To make the batter, mix all the dry ingredients together, pour over the lemon juice and add the water slowly till you get a paste like consistency. If it is too runny it won’t ‘stick’ to the onions",
+      "Heat the oil in a large wide pan or wok over a high heat. You can test when it’s ready by adding in a little of the batter. It should fizzle and float to the top. When it’s ready turn it down to a medium heat",
+      "Pop the onions into the batter and make sure they are evenly coated",
+      "Drop a few tablespoonfuls into the hot oil and cook until browned. You might need to flip them over to make sure they cook evenly",
+      "Drain them on kitchen paper and then sprinkle over the ‘chaat’ topping"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Onions",
+        "unit": "large",
+        "notes": "red or white. Make sure they are strong",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chickpea Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": "small, seeded and finely crushed. Use less or more, according to taste.",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "tsp",
+        "notes": "crushed finely in a pestle and mortar",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": "crushed finely in a pestle and mortar",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juice only",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "Tbsp",
+        "notes": "fresh, chopped. Heaped tbsp",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Warm Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mango Powder",
+        "unit": "tsp",
+        "notes": "dried, also called amchur",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c9a7d184c5a2c92bcd107ba35a9ac86fc416192f2aa5bf5c9c5b651ab266f3af",
+    "lineage_hash": "22d201da2ea594908cee21083d04586293f9195d3620cd81edff5ad99be6e412"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/origins-onion-bhaji",
+    "fetchedAt": "2026-08-03T23:58:23.536Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/origins-onion-bhaji",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

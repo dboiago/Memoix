@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Aperitivo Sour",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all of the ingredients in a shaker without ice and shake vigorously. Add ice to  and shake again. Strain into a chilled coupe."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "01167b7777e53cbe6bc2b87df3fbb86aa080ff179514fb4cd055fb76153c1dc3",
+    "lineage_hash": "62b9c3feca532b921970f12d781b44c1da27a7d0982f3eb91871d56f7ea2ff7a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/aperitivo-sour-from-hudson-hill/",
+    "fetchedAt": "2026-08-03T20:29:24.517Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/aperitivo-sour-from-hudson-hill/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

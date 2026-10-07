@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Campfire Sling Cocktail",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Old Fashioned",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all ingredients in an Old Fashioned glass with a large piece of ice, stir and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "ae5689cb800968eff20b4984a7f5055f677707bf71af9f8b928215081fbdbaf1",
+    "lineage_hash": "dd239e59a383923c4062816a3fe2dac6779033408e812a4535b9ac4b4ead0cad"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/campfire-sling-cocktail/",
+    "fetchedAt": "2026-08-03T19:40:09.233Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/campfire-sling-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

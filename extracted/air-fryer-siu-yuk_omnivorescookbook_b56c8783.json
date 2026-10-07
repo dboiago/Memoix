@@ -1,0 +1,123 @@
+{
+  "recipe": {
+    "name": "Air Fryer Siu Yuk",
+    "time": "15 hr 10 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "558",
+      "carbohydrateContent": "1.5",
+      "fatContent": "56.4",
+      "proteinContent": "10.1"
+    },
+    "directions": [
+      "Using a paring knife, fork or other small sharp object, thoroughly prick the entirety of the skin. This step helps the fat render much better, resulting in crispier skin.",
+      "Add 4 cups of water to a small pot and bring to a boil. Add the vinegar. Keep the heat on medium so the water remains boiling.",
+      "Place the pork belly skin side up on a rack over a baking tray that’s deep enough to hold some water. Use a ladle to pour boiling water over the pork skin 10 times or so, to render the fat. Set aside to let cool.",
+      "Mix the 2 teaspoons sea salt, sugar, five spice, white pepper and garlic powder together in a small bowl.",
+      "Once the pork belly has cooled enough to handle, place it on a cutting board, skin side down.  Make shallow scores across the flesh so that the seasonings can better penetrate the meat.",
+      "Evenly spread the hoisin sauce across the pork flesh (avoid the skin). Then sprinkle the dry seasonings over the all sides of the pork meat until evenly covered (do not add the seasonings to the skin). You may not need all of the seasoning mix.",
+      "Put the pork belly on a plate, skin side up. Sprinkle 1 teaspoon of kosher salt evenly onto the skin. Place the pork in the fridge uncovered to air dry overnight. (*Footnote 3)",
+      "Preheat the air fryer to 250°F (120°C) for 10 minutes.",
+      "Place the pork belly in the middle of a piece of heavy duty aluminum foil, skin side up. Fold the sides in to enclose the pork meat, covering the four sides and forming an open box. Fold and pinch the corners to seal tightly, to make sure the foil stays in place while cooking. Place the pork onto the air fryer rack. Air fry for 30 minutes.",
+      "Turn the air fryer to 400°F (200°C) (Footnote 4). Rotate the pork once so it cooks more evenly. Cook for 30 to 40 minutes, until the skin is fully puffed and crispy. Stay very close the first few minutes. If the pork skin browns too fast and shows signs of burning after 2 to 3 minutes, lower the temperature to 375°F (190°C). Check again at the 15 minute mark, then every 5 minutes. If the skin starts to burn again, further lower the temperature to 350°F (176°C) to finish up the cooking. Once done, the skin should turn golden, with a lot of bubbles across the skin and should have little / no area that’s not puffed. (Footnote 5)",
+      "Remove the pork belly from the oven, and let it rest for 20 minutes before cutting.",
+      "Once the pork belly has cooled enough to handle, cut the pork belly into 1” (2 cm) squares. Place them on a plate, skin side up. Serve as an appetizer or over rice as a main dish with mustard, plum sauce, hoisin sauce or ginger scallion sauce."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pork Belly",
+        "unit": "lb",
+        "notes": "*Footnote 1",
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Five Spice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hoisin Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kosher Salt",
+        "unit": "tsp",
+        "notes": "*Footnote 2",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "053813a3c8200074eeafa04d928ded29a060c65f31f7d19ff3af69bc9e6796cb",
+    "lineage_hash": "7e5091c34a6ca9878200f2494e9a76f8df8b91537559d1aebde62fed0deee1f1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/air-fryer-siu-yuk/",
+    "fetchedAt": "2026-08-02T07:29:30.074Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/air-fryer-siu-yuk/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

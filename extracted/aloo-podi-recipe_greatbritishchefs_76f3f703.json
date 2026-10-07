@@ -1,0 +1,152 @@
+{
+  "recipe": {
+    "name": "Aloo Podi",
+    "time": "45 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Boil the new potatoes in a pan of salted boiling water for about 15-20 minutes or until perfectly cooked",
+      "As the potatoes are cooking, place a small pan over a medium heat and once hot, add the ingredients for the spice blend and dry roast for a few seconds until fragrant. Take of the heat and once cooled, blend in a spice grinder to a powder",
+      "Once cooked, drain the potatoes and when cool enough to handle, rubs the skins off with your hands or a paring knife (this is easiest to do when the potatoes are still warm)",
+      "Place a kadai or wok over a medium heat, add the oil and once heated add the mustard seeds. When they start to pop add the urad dal and fry until they turn golden",
+      "Add the curry leaves and asafoetida, followed by the cooked potatoes, turmeric, salt and pepper. Cook whilst continuously stirring until you have a nice golden colour on the potatoes",
+      "Add the spice blend and toss to combine then serve up hot with chopped coriander"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "New Potatoes",
+        "unit": "g",
+        "notes": "washed",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Urad Dal",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Asafoetida",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chana Dal",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chillies",
+        "unit": null,
+        "notes": "dried",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Coriander",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a28884580d0df777e1b16e9ed1c6a267aa4e086848d10d444324a63b30943a77",
+    "lineage_hash": "66e650f6dd37c84902945ff547bbd921ad408ef4dbd9fbe0662fb2ed9617112c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/aloo-podi-recipe",
+    "fetchedAt": "2026-08-02T22:55:33.272Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/aloo-podi-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

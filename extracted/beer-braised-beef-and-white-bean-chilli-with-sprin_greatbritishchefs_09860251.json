@@ -1,0 +1,219 @@
+{
+  "recipe": {
+    "name": "Beer-Braised Beef and White Bean Chilli with Spring Vegetables",
+    "time": "4 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Soak the beans in plenty of salted water overnight, or for at least 8 hours",
+      "Drain and rinse the beans. Place in a pot, cover with fresh salted water, and bring to a boil. Simmer for 1 hour 15 minutes or until tender, then drain",
+      "Heat the olive oil in a large pot and brown the beef shin on all sides – you might need to do this in batches. Add more oil as necessary. Once browned, remove from the pan and set aside",
+      "In the same pot, sauté the onion, garlic, carrot, celery and chilli until softened, about 10 minutes",
+      "Stir in the paprika, cumin and oregano then add the beef, beer, stock and beans, scraping up any browned bits from the bottom of the pan",
+      "Bring to a simmer then turn the heat down to low, cover and cook on a low heat for 2 hours 30 minutes until the beef is tender",
+      "Meanwhile, make the pickled onions. Warm together the vinegar, sugar and salt until the sugar and salt are dissolved. Pour the brine over the red onions and let sit for at least 20 minutes",
+      "Stir the asparagus and sugar snap peas into the chilli for the last 10 minutes of cooking. Season with salt and pepper",
+      "Spoon the chilli into bowls and top with pickled red onions, parsley, and a spoon of crème fraîche"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "White Beans",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Shin",
+        "unit": "g",
+        "notes": "cut into chunks or bone in",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Stick",
+        "unit": null,
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Paprika",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cumin",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oregano",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Beer",
+        "unit": "ml",
+        "notes": null,
+        "amount": "330",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Asparagus",
+        "unit": "g",
+        "notes": "cut into 3 cm pieces",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar Snap Peas",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Cider Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Fresh Parsley",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crème Fraîche",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fc51743dc5ad2ab6c8c54c94b4039d8b11936f1345b55862c064e54253f0e280",
+    "lineage_hash": "5f21c0d1c08db014ec84bb760f658febdedb305dd357416476d3790d29fcc961"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beer-braised-beef-white-bean-chilli-spring-vegetables-recipe",
+    "fetchedAt": "2026-08-02T04:53:25.268Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beer-braised-beef-white-bean-chilli-spring-vegetables-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

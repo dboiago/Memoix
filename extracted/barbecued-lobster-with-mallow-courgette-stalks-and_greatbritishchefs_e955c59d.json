@@ -1,0 +1,146 @@
+{
+  "recipe": {
+    "name": "Barbecued Lobster with Mallow, Courgette Stalks and Wild Cherries",
+    "time": "40 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat a barbecue until the coals turn white, ideally leaving one side of the barbecue with no coals so you have both a hot, direct cooking area and a cooler, indirect cooking area",
+      "To prepare the lobster tails, push down on the shell on both sides until it cracks. Use a palette knife to gently tease the meat away from the shell, then cut the shell with scissors until you’re able to remove the meat in one piece",
+      "Pour the fish stock into a small saucepan and place on the barbecue to warm through. Stir in the miso and cream, then simmer until reduced to a sauce consistency",
+      "While the sauce reduces, rub the courgette stalks with a tea towel to remove the spikes, then peel the tough fibres on the outside and discard. Cut the stalks in half lengthways, then place on the barbecue and grill for a few minutes on each side until charred",
+      "Once the courgette stalks have charred and softened, roughly chop and place in a bowl with the cherries. Briefly grill the mallow leaves and yarrow sprigs for a few seconds, then add the mallow leaves to the bowl and strip the yarrow leaves off the stalks (discard the stalks). Mix these together with a drizzle of rapeseed oil and a little water to create a simple dressing, then add the salmon roe. Place on the barbecue to gently warm through for a few minutes, then set aside",
+      "Season the lobster tails and drizzle with rapeseed oil. Place the mugwort on the grill to create a bed of leaves for the lobster to sit on – this will protect the lobster from the harsh heat of the barbecue and impart a smoky, slightly minty flavour. Place the lobster tails on top of the mugwort and cook gently, turning occasionally, for around 8 minutes. If the mugwort begins to burn, move it to a cooler part of the grill",
+      "Once the lobster is cooked through but still soft, remove the tails from the grill and discard the mugwort. Add another drizzle of oil to the lobster tails and return to the grill briefly to sear the outside, then set aside to rest",
+      "To serve, reheat the miso sauce if needed. Place a heap of the wild cherry garnish in the centre of each bowl, then top with a lobster tail. Pour the sauce around the lobster and finish with the mallow flowers"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Lobster Tails",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Miso",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Clotted Cream",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Courgette Stalks",
+        "unit": null,
+        "notes": "or 4 if large",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Wild Cherries",
+        "unit": null,
+        "notes": "pitted and halved",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yarrow",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mallow Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mallow Flowers",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mugwort",
+        "unit": "bunch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salmon Roe",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": null,
+        "notes": "for cooking (Ivan uses Duchess Farms rapeseed oil)",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3c5358d08e78db59a5d86b206d7de4d907687c769f44a9c179dc652644ef9adf",
+    "lineage_hash": "a1422b92a28ef3e5a4e748128342382cf2d6f5996a68bcca493c6a733645401f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/lobster-mugwort-courgette-recipe",
+    "fetchedAt": "2026-08-03T04:18:56.132Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/lobster-mugwort-courgette-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,103 @@
+{
+  "recipe": {
+    "name": "Apple and Date Crumble",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 200°C (400°F). Grease a baking dish with a little butter (unless it’s nonstick).",
+      "Put the dates in a bowl, and pour hot tea on them. Let stand for at least 20 minutes for them to plump up a bit.",
+      "Peel and core the apples, cut them in slices. Arrange the slices in the dish. Pour a few spoonfuls of the date-infused tea on the apples (the liquid helps them cook). Drain the dates, remove the seeds, dice the flesh, and arrange evenly on the apples.",
+      "In the food processor, whizz together the oatmeal, the sugar, the butter and the flour until it resembles coarse salt. Add a small splash of milk and pulse a few more times. Sprinkle the topping on top of the fruit. You can choose to use all of the topping for a very crumbly crumble, or you can use only a portion (I used about three quarters) and reserve the remaining topping in an airtight container in the fridge for a later use.",
+      "Put in the oven to bake for an hour, until the apples are tender and the topping is golden. Serve with crème anglaise or crème fraîche or a scoop of ice-cream."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Apples",
+        "unit": null,
+        "notes": "of assorted varieties",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dates",
+        "unit": null,
+        "notes": null,
+        "amount": "24",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Tea",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oatmeal",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted Butter",
+        "unit": "g",
+        "notes": "diced",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": "you can use half whole-wheat, half all-purpose for an interesting taste",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "A Splash Milk",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b6234575727fe6fb24c767f99da184117977f602e27ffdc2478884b3ad0b6ab7",
+    "lineage_hash": "0ee73d59ce48b2828a9d59393918d93d3ecdc49c20362d8ec2bb3ef8bc4b037a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/desserts/apple-and-date-crumble-recipe/",
+    "fetchedAt": "2026-09-30T18:37:02.930Z"
+  },
+  "rawSource": "https://cnz.to/recipes/desserts/apple-and-date-crumble-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

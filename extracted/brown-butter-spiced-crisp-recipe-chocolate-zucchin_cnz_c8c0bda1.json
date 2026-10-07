@@ -1,0 +1,106 @@
+{
+  "recipe": {
+    "name": "Brown Butter Spiced Crisp",
+    "time": "50 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a medium mixing bowl, combine all the dry ingredients, from flour to salt, and set aside.",
+      "Make the beurre noisette: put the butter in a medium saucepan (not too small, you want a reasonably large surface area), place over medium heat, and watch, swirling the pan every now and then to ensure an even heat distribution. First, the butter will melt. Then, bubbles will form at the surface as the butter simmers and its water content evaporates. The butter \"sings\" during that phase, emitting a pleasant chirping sound.",
+      "A few minutes later, the bubbles will get smaller, and the pitch of the chirping sound will get higher, then stop. At this point, the smell of the butter will change and become distinctly hazelnutty — you can't miss it, it's the best thing you've ever smelled, and the ambient scent of crêperies in Brittany — as its color becomes bronze and little flecks of butter solids caramelize and turn golden brown at the bottom of the pan.",
+      "Don't let it cook beyond this stage, or the butter solids will get too dark, eventually burning and turning black and bitter and carcinogenic, in which case you'll have to strain the brown butter through a fine sieve and sacrifice the flavorful caramelized bits.",
+      "Remove the pan from the heat and immediately pour the brown butter into the dry ingredients. (Likewise, don't leave the brown butter in the hot pan, or it will continue to cook; see consequences above. If you don't use it right away as we do here, transfer it to a cool bowl to stop the cooking.)",
+      "Using a fork, incorporate the butter just until the mixture turns crumbly; don't let it form a ball.",
+      "If not using immediately, spread on a rimmed cookie sheet and place it in the fridge for 1 hour before transferring to an airtight container (this is to avoid clumping), where it will keep for a few days.",
+      "If using immediately, sprinkle over fruit (a generous kilo or 2 1/2 pounds of apples, rhubarb, apricots, peaches, plums…) in a baking dish, and bake in an oven preheated to 190°C (375°F) for 35 to 50 minutes, depending on the type of fruit, until the topping is nicely browned and the fruit is cooked through, and bubbly, if it is a juicy kind of fruit."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Grams Flour",
+        "unit": null,
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Hazelnut Flour",
+        "unit": null,
+        "notes": "or ground hazelnuts, or ground walnuts, or almond meal",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Unrefined Cane Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pod Green Cardamom",
+        "unit": null,
+        "notes": "seeds finely crushed in a mortar",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": "freshly ground",
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fat Pinch Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Butter",
+        "unit": null,
+        "notes": "unsalted, diced",
+        "amount": "115",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "583ee70b3098059dfff00dce630ffca664771fa495cf22e7409d44245b7b6c02",
+    "lineage_hash": "2b005e33a90e17a40fd1eee29fcc7b85f6e2d29f747f4cc5c25efaafde467ad2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/desserts/brown-butter-spiced-crisp-recipe/",
+    "fetchedAt": "2026-09-30T18:27:31.483Z"
+  },
+  "rawSource": "https://cnz.to/recipes/desserts/brown-butter-spiced-crisp-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

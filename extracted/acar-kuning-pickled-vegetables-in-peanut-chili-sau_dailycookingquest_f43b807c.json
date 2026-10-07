@@ -1,0 +1,145 @@
+{
+  "recipe": {
+    "name": "Acar Kuning - Pickled Vegetables in Peanut Chili Sauce",
+    "time": "1 hr",
+    "course": "sides",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "ID",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cut carrot, corn, green bean, and cucumber into roughly the same bite size pieces.",
+      "Place cucumber in a bowl and sprinkle with 1 tablespoon each of sugar and salt. Set aside for 15 minutes, squeeze the liquid, set aside.",
+      "Heat oil in a wok on high heat and saute spice paste until fragrant and oil looks separated at the edges, about 5 minutes.",
+      "Add all the vegetables and toss to mix well.",
+      "Season with salt and sugar and mix well.",
+      "Add the vinegar and pour the water. Bring to a boil and cook for another 5 to 7 minutes.",
+      "Add ground peanut into the wok and stir. The peanut will absorb all the liquid and the end result should not be watery. Turn off heat and serve immediately or at room temperature."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gram Carrot",
+        "unit": null,
+        "notes": "peeled",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Young Small Corn",
+        "unit": null,
+        "notes": "Indonesian: jagung muda",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Green Bean",
+        "unit": null,
+        "notes": "Indonesian: buncis",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Cucumber",
+        "unit": null,
+        "notes": "Indonesian: peeled and seeded",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Peanut",
+        "unit": null,
+        "notes": "deep fried and ground",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spice Paste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilies",
+        "unit": null,
+        "notes": "Indonesian: cabe merah keriting",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Candlenuts",
+        "unit": null,
+        "notes": "Indonesian: kemiri",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "92bab67487b5662a3168e9c7cc6e000420a373cf8e0c8faab1262225f2d27ce7",
+    "lineage_hash": "eba16d061f01e24a6f05de2a873096b143e8d1d3abec80ad12c25fa57745cfec"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/acar-kuning-pickled-vegetables-in-peanut-chili-sauce.html",
+    "fetchedAt": "2026-08-02T10:32:35.208Z"
+  },
+  "rawSource": "https://dailycookingquest.com/acar-kuning-pickled-vegetables-in-peanut-chili-sauce.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

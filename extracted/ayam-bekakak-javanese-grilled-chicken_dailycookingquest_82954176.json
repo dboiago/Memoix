@@ -1,0 +1,200 @@
+{
+  "recipe": {
+    "name": "Ayam Bekakak (Javanese Grilled Chicken)",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "ID",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat oil in a wok/frying pan and sauté spice paste until fragrant, about 5 minutes.",
+      "Add chicken, chicken stock, and sweet soy sauce. Mix well. Bring to a boil, reduce heat and simmer uncovered until the sauce is reduced and almost gone, about 45 minutes to 1 hour.",
+      "Turn off heat and set the chicken aside.",
+      "Line a baking tray with aluminum foil and preheat oven broiler.",
+      "Place chicken on prepared tray and broil until the surface is slightly charred, about 3-5 minutes.",
+      "Serve the chicken with the chili relish and steamed white rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kilogram Chicken",
+        "unit": null,
+        "notes": "I use all drumsticks",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "Indonesian: kecap manis",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grind the Following Into Spice Paste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Shallot",
+        "unit": null,
+        "notes": "Indonesian: bawang merah",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Garlic",
+        "unit": null,
+        "notes": "Indonesian: bawang putih",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemongrass",
+        "unit": null,
+        "notes": "Indonesian: sereh, white part only",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kaffir Lime Leaves",
+        "unit": null,
+        "notes": "Indonesian: daun jeruk",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Coriander",
+        "unit": "tsp",
+        "notes": "Indonesian: bubuk ketumbar",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cumin",
+        "unit": "tsp",
+        "notes": "Indonesian: bubuk jinten",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Nutmeg",
+        "unit": "tsp",
+        "notes": "Indonesian: bubuk pala",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground White Pepper",
+        "unit": "tsp",
+        "notes": "Indonesian: bubuk merica",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili Relish (mix the Following Together)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bird Eye Chilies (indonesian: Cabe Rawit)",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": null,
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Shallot",
+        "unit": null,
+        "notes": "diced",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Limes",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "Indonesian: kecap manis",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3f1ec4716434009fee5afb4471358f0f834f2c85912fa0c9f952d8267d42845a",
+    "lineage_hash": "a62e45bb20563d081636d4dbec1f7e8e3b9d1220b4ba709af56bbd323c70eb55"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/ayam-bekakak-javanese-grilled-chicken.html",
+    "fetchedAt": "2026-08-02T05:54:25.274Z"
+  },
+  "rawSource": "https://dailycookingquest.com/ayam-bekakak-javanese-grilled-chicken.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,117 @@
+{
+  "recipe": {
+    "name": "Cantonese Steamed Fish",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place flounder fillet in a steamer proof plate and steam for 5 to 8 minutes until cooked.",
+      "Carefully drain the liquid off the steaming plate and transfer the cooked fish to a nice serving plate. Topped the fish with chopped cilantro and 1/4 to 1/3 of the scallions.",
+      "Heat oil in a frying pan and sauté the rest of the scallion and ginger until fragrant, about 1 minute. Pour the sauce mixture to the pan and bring to a rolling boil. Once the scallions look wilted, turn off heat and spoon the sauce over the steamed fish. Serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Flounder Fillet",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bunch Cilantro",
+        "unit": "small",
+        "notes": "roughly chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "julienned",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "julienned",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sauce (mix Together the Following)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "18b043b3566084ad75587209cea30b1bc944a9f4dc2e92df26026731475e1b6f",
+    "lineage_hash": "a919c0667024a84ec51fd264e573246264ea013fe1c72bb8be4204c4cccb74e0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/cantonese-steamed-fish.html",
+    "fetchedAt": "2026-08-02T07:50:46.313Z"
+  },
+  "rawSource": "https://dailycookingquest.com/cantonese-steamed-fish.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

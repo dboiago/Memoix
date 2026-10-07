@@ -1,0 +1,127 @@
+{
+  "recipe": {
+    "name": "Apple Bourbon Pot Pie",
+    "time": "1 hr 50 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "248",
+      "carbohydrateContent": "56",
+      "fatContent": "1",
+      "proteinContent": "2"
+    },
+    "directions": [
+      "Combine 3 pounds&#32;apples (diced) with 4 oz&#32;brown sugar, 4 oz&#32;apple cider, 2 oz&#32;Bourbon, ⅛ teaspoon&#32;salt and 1 teaspoon&#32;ground cinnamon. Split ½&#32;vanilla bean and scrape out the seeds. Add the seeds and bean pod to the apples. Set aside to macerate for at least 1 hour and as long as 3 hours. (See Note)",
+      "Drain the apples, saving the juice. Combine ¼ cup of the juice with 2 tablespoons&#32;cornstarch. Set aside",
+      "Put the apples and the rest of the juice in a large saucepan. Cook over medium-high until the juices begin to boil. Reduce the heat to medium-low and continue cooking until the apples are crisp-tender, stirring often. The apples should still hold their shape. The exact time will depend on the type of apple, estimate 10 minutes.",
+      "Add the corn starch mixture to the apples. Increase the heat to medium-high and return to a boil, stirring constantly. Cook until the juices are slightly thickened and become translucent. Transfer the apple filling to a container and cool to room temperature. Chill until ready to use. The filling can be made 2-3 days ahead.",
+      "Preheat the oven to 350 °F. Place six 1-cup ramekins or a large casserole dish onto a sheet pan. Divide the apple filling between the dishes (or pour into the casserole dish).",
+      "Roll the puff pastry to a 1/4&quot; thick. For individual pies use a biscuit cutter to cut six 4½&quot; circles. For a large pot pie use the entire sheet.",
+      "Brush the edges of the ramekins with egg wash. Place a dough round onto each dish and fold the edges over. (see note) Make a slit into the top of each small pie or a large &quot;x&quot; if making one larger pie. Brush the tops of the pies with egg wash and sprinkle with granulated sugar.",
+      "Bake until the pastry is puffed and lightly browned, about 20 minutes. Serve warm."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Apples",
+        "unit": "lb",
+        "notes": "peeled, cored, ½\" cubes",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Cider",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bourbon (¼ Cup (optional, See Note))",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Recipe Classic Puff Pastry",
+        "unit": null,
+        "notes": "or use 1 sheet of frozen dough",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "whisked for egg wash",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "27bf002c7719aa725e364856d9a74dc4bdcdbe30c3a33cdaaac5d81e333195d2",
+    "lineage_hash": "ffc8c11b3538339a4b8c0c1d8a1728ccf715c2a2bf8a56b061e67daffd1b4f91"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2018/09/19/apple-bourbon-pot-pie/",
+    "fetchedAt": "2026-08-02T02:10:04.370Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2018/09/19/apple-bourbon-pot-pie/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

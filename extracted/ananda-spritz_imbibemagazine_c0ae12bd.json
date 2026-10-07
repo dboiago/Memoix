@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Ananda Spritz",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Cocktail",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Muddle the pineapple in a shaker tin. Add the bourbon, amaro, pineapple, lemon juice, bitters and syrup. Add ice and shake to chill. Strain into a chilled cocktail glass and float with sparkling wine. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "55b9a50ac7a158e634947c5cf07ee4d1e66976577813edbb311d754ea3bcca6f",
+    "lineage_hash": "4a642338b6f042ca8bb5f5b1b99efa028f99b5f6ed02a73fbadd3448a6c5fc74"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/ananda-spritz/",
+    "fetchedAt": "2026-08-03T21:01:10.666Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/ananda-spritz/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

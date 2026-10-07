@@ -1,0 +1,110 @@
+{
+  "recipe": {
+    "name": "Butter Cookie with Black Sesame",
+    "time": "40 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "15",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "93",
+      "carbohydrateContent": "7",
+      "fatContent": "6",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Mix sugar and salt with butter in a deep bowl and then cream with an electric mixer until very light and fluffy. This step is really important cause it will influence the texture if the final mixture and the taste of the baked cookie.",
+      "Add egg yolk, vanilla extract and whipping cream and whip until all the ingredients are well combined.",
+      "Sift the low-gluten flower in, garnish toasted black sesame and use a rubber spatula to combine the mixture well. And then transfer the mixture in a pastry bag assembled with coupler and tip. You can choose to use any tip that can make gorgeous swirled roses.",
+      "Firstly, get the baking sheet lined and pre-heat the oven to 175 degree C.",
+      "Start to pipe the rose cookies: hold the pastry bag vertically and start in the center and uniformly rotate the pastry bag while pushing the mixture with uniform force. Space the cookie around 4cm apart.",
+      "Bake in middle rack for 15-20 minutes. Check in the ending minutes until they get a slightly brown color. Wait for several minutes and then transfer to wire rack to cool down.",
+      "Keep all the cookies within airtighter container."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "room temperature",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": "sifted",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Really Small Pinch of Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Low-gluten Flower",
+        "unit": "g",
+        "notes": "cake flour or self-raising flour",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Black Sesame Seeds",
+        "unit": "Tbsp",
+        "notes": "alt: more as needed",
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b6cc4e30f209e2cf6941ad7fcc4471cb81ae32f4d25219ead5b2d412658684be",
+    "lineage_hash": "158c39289dce9720a246e47d0045061a3e3b9188b0a30b5677cef3c72cbea058"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/chinese-style-butter-cookie-with-black-sesame/",
+    "fetchedAt": "2026-08-01T23:55:00.519Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/chinese-style-butter-cookie-with-black-sesame/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,103 @@
+{
+  "recipe": {
+    "name": "Andhra style gongra cauliflower",
+    "time": "12 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cut big chunks of califlower and bunch it hit water. Cool it down in ice bath.",
+      "Now blend the pickle into nice paste",
+      "Mix organic yoghurt, pickle and all rest of the ingredients together.",
+      "Marinate with califlower.",
+      "Leave it for at least 1hr and cook it"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Yoghurt",
+        "unit": "g",
+        "notes": "organic",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Andra Gongra Pickle",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Paste",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Paste",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kashmir Chilli Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pancha Puran",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "81b39c6bdc511b83f535acb48fab580457388d3d27866e03f6bbafb1221ec2d5",
+    "lineage_hash": "4d4fb9aa8f80cd560a1dbd57db4dc0b4ec3c2847cc45905260ab41b0d0caf938"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.thestaffcanteen.com/chefs-recipes/andhra-style-gongra-cauliflower-1686127494",
+    "fetchedAt": "2026-08-03T16:29:41.254Z"
+  },
+  "rawSource": "https://www.thestaffcanteen.com/chefs-recipes/andhra-style-gongra-cauliflower-1686127494",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

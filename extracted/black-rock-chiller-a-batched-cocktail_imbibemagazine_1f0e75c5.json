@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Black Rock Chiller",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all of the ingredients in a bottle or flask and shake to combine. Serve neat."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "f65fd261224990f8659c6e6ef90ab23b0f8dd199b9ba7b8c1571ca45ec8907e0",
+    "lineage_hash": "e051614e7c2765085181a15967c61267041c0d5a27d2c93012fcff1b70799b76"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/black-rock-chiller-a-batched-cocktail/",
+    "fetchedAt": "2026-08-03T19:48:24.852Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/black-rock-chiller-a-batched-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

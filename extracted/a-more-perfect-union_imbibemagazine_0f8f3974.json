@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "A More Perfect Union",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all ingredients in a mixing glass with ice. Stir until well chilled. Strain into a coupe. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "40411d235eadff3316f9f7c421d1fe67a7d3dc79cfa89fbd2b82041b3c64d95e",
+    "lineage_hash": "ee3627a349fc773c2eac4c75f8082ba44ed8bc55ac795d0fe726f15d047d1dbe"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/a-more-perfect-union-recipe/",
+    "fetchedAt": "2026-08-04T02:08:09.193Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/a-more-perfect-union-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,92 @@
+{
+  "recipe": {
+    "name": "Basil Vinaigrette",
+    "time": "1 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Put the olive oil, vinegar, water, shallot, mustard, and salt in a blender. Coarsely chop the basil leaves and immediately put them in the blender.",
+      "Cover the blender and mix on high-speed for 15 to 30 seconds until the vinaigrette is smooth. If the sauce is too thick for your liking, add a little more water or olive oil to thin it out."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Extra-virgin Olive Oil",
+        "unit": "C",
+        "notes": "125ml",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red or White Wine Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallot (25g) Peeled and Sliced",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kosher",
+        "unit": "tsp",
+        "notes": "alt: flaky sea salt",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Loosely Packed Fresh Basil Leaves",
+        "unit": "C",
+        "notes": "25g",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "55662785dda05a9371baa02ed0034c32b519476ab20d1501ac1aeda28b2ab341",
+    "lineage_hash": "d8789a454be346f089f77627d569b75501953f1aacb9804bb8fe0196cdab78a8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/basil-vinaigrette/",
+    "fetchedAt": "2026-08-02T21:37:43.894Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/basil-vinaigrette/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

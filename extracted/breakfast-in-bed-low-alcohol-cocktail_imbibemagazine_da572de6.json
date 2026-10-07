@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Breakfast in Bed Low-Alcohol Cocktail",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Double Rocks",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all the ingredients to a shaker with ice and shake well. Strain into a double rocks glass filled with crushed ice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "295f1cc85a76c8274e7bcae0f4f3cdf4d17ae816786cebbe1ae0f4998db7672f",
+    "lineage_hash": "37a1d6809664536ffadc27061541758aaca107b224b82d0d0b5c053df4a576fd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/breakfast-in-bed-low-alcohol-cocktail/",
+    "fetchedAt": "2026-08-03T20:20:41.166Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/breakfast-in-bed-low-alcohol-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

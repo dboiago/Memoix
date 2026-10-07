@@ -1,0 +1,188 @@
+{
+  "recipe": {
+    "name": "Bohri Dal Samosa",
+    "time": "2 hr",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "24",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Soak the dal in water for about 2 hours. Then boil it with 200 ml water, 6 g salt, and ¼ tsp turmeric, so that the dal cooks and the water dried up at the end. The dal should remain whole and not turn mushy.",
+      "Spread it out to cool completely.",
+      "Meanwhile, chop green onions, coriander leaves, mint and green chillies.",
+      "Add these to the cooled dal, along with cumin powder, coriander powder, gorom moshla powder, and the remaining 1 g salt.",
+      "Make a dough of atta, salt, and hot water. Dip your knuckles in water and continue kneading. Once done, divide into 8 portion, each weighing 40 g.",
+      "Roll the divided portions in between your palms, shaping them into neat rounds.",
+      "Flatten into 5 cm discs. Apply oil to each disc and dust with flour. Stack in pairs, with oiled and dusted sides facing each other.",
+      "Roll out each pair. Try to keep the two discs together. Make sure to roll the edges thin. The rolled flatbread should be of 26 cm diameter. It will shrink a little when cooked.",
+      "Heat a tawa. Cook evenly on medium–high heat. The first side will take around 45 seconds to cook. Once done, flip the other side and cook.",
+      "Once done, set aside. Now, carefully peel the two layers apart while still hot. The oil and flour applied between the layers will help them separate.",
+      "Keep the wrappers covered to prevent from drying. Repeat the process of cooking and separating the wrappers.",
+      "Following our measurement would give you 8 thin rotis ready to be turned into samosa wrappers.",
+      "Stack the wrappers and fold along the middle. Trim 1 cm from the two ends of the folded wrappers. Then, divide them in three equal parts, each being ~7 cm wide. Keep the strips covered.",
+      "To seal the samosas, make a slurry of atta and water.",
+      "The samosas should be triangular in shape. So, first, take one corner of the strip and fold it over, forming a cone. Apply slurry on one side of the triangle and on the edge of the strip. Now, fold over and you will have a pocket.",
+      "Fill the pocket with ~20 g of keema mixture. Pack it in. Apply glue to the shorter flap and fold it in. Now, wrap the bigger flap around the cone, sealing the last end with the slurry. Samosas made with the roti's side strips will have one less fold. For visual representation, watch the video.",
+      "Now, heat vegetable oil in a kadai. Gently lower the samosas in hot oil (180°C). Fry on medium-low heat until they turn golden-brown in colour. Set aside.",
+      "Serve with a dash of lime juice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Arahar Dal",
+        "unit": "g",
+        "notes": "soaked 2 hours",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gorom Moshla",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Atta",
+        "unit": "g",
+        "notes": null,
+        "amount": "160",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "120-130",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Atta",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil for Deep Frying",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "cdc82c6da4a7a73d0c359a5ef6bf545ab603bb0c20e4fd2e08338812ecc7b6b7",
+    "lineage_hash": "947206d4f2ecb79b8dced71545a5a2b50d744965ebdc7ee80b65a66303316565"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.bongeats.com/recipe/bohri-dal-samosa",
+    "fetchedAt": "2026-08-01T17:31:18.081Z"
+  },
+  "rawSource": "https://www.bongeats.com/recipe/bohri-dal-samosa",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

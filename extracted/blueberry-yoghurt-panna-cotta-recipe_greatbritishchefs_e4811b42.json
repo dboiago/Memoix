@@ -1,0 +1,115 @@
+{
+  "recipe": {
+    "name": "Blueberry Yoghurt Panna Cotta",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the blueberry tea in a cup then pour 100ml of boiling water over the top. Leave to brew for 3 minutes",
+      "Place the milk and sugar into a pan. Split the vanilla pod and scrape the seeds into the pan, then throw in the pod as well. Heat gently until the sugar is dissolved",
+      "Squeeze the gelatine leaves to remove excess water then add to the milk mixture, stirring until dissolved. Remove from the heat and allow to cool slightly",
+      "Strain the blueberry tea into the milk, stir and leave to cool for 10 minutes. This may split the mixture, but it will be fine once it is whisked into the yoghurt",
+      "Pour the yoghurt into a bowl and stir to loosen. Remove the vanilla pod from the milk, then pour the milk over the yoghurt. Gently whisk until combined",
+      "Divide the mixture between 6 teacups, then place in the fridge to set for at least 2 hours (or overnight)",
+      "For the fruit, place the sugar and thyme into a pan with 100ml of water. Bring to a simmer and cook for 3–5 minutes, then remove from the heat and allow to cool to room temperature. Discard the thyme sprig",
+      "Wash and dry the berries, then place into a bowl. Pour the thyme-infused syrup over the top, then cover and leave to macerate for 15 minutes",
+      "Remove the panna cottas from the fridge 10 minutes before serving. Spoon over the fruit with some of the juices and serve with a little shortbread on the side"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Blueberry Tea Leaves",
+        "unit": "tsp",
+        "notes": "or any flavoured or herbal tea",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaves",
+        "unit": null,
+        "notes": "soaked in cold water until soft",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Greek Yoghurt",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Raspberries",
+        "unit": null,
+        "notes": "redcurrants, blueberries or a mix",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "461e220893ae102bfbe708e34638321c4960dee6e369a3355fc2c1065787f28e",
+    "lineage_hash": "3825779c6dbcc0881bc95797f380db1c4b258a481bd282ebe959c6ec1e007923"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/blueberry-yoghurt-panna-cotta-recipe",
+    "fetchedAt": "2026-08-03T07:22:22.898Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/blueberry-yoghurt-panna-cotta-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

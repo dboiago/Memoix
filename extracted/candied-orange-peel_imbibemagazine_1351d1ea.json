@@ -1,0 +1,40 @@
+{
+  "recipe": {
+    "name": "Candied Orange Peel",
+    "time": "2 hr 5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cut the tops and bottoms off of 4 navel oranges with a sharp, non-serrated knife. Score the peel in quarters from top to bottom. Remove the peel and cut lengthwise into ¼-inch strips.",
+      "Add 2 cups of water and 2 cups of granulated sugar to each of 3 separate saucepans. Bring the first saucepan to a boil. While you’re waiting for the sugar-water mixture to boil, fill a large bowl with ice water.",
+      "Blanch the peels in the first boiling syrup for 5 minutes while bringing second syrup to a boil. With a slotted spoon, remove peels and shock them in an ice bath. Discard the syrup. Repeat this step with second boiling syrup, and bring third syrup to a boil as you blanch in the second syrup.",
+      "Blanch the orange peels in the third boiling syrup for 10 minutes, remove with a slotted spoon and gently roll in 1 cup of superfine sugar. Discard sugar.",
+      "Lay the sugar-rolled peels on a non-stick baking sheet or a sheet pan lined with a non-stick mat. Bake in an oven preheated to 175 degrees F for 2 hours. Remove from oven and let cool overnight.",
+      "Gently roll the dried, candied peels in the remaining cup of superfine sugar to coat. Layer over strips of wax paper in a decorative tin and store at room temperature for up to 2 weeks.",
+      "Tip: Use organic oranges if you can find them, since you’ll be eating the outside rind. Also, don’t crowd the sugar bowl when coating the peels—tossing about a half-dozen at a time will allow each one to get an even coat."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "eec66a5d70bf55b2bcd9b390621a13135cf9370f75514f73305aacd75227c145",
+    "lineage_hash": "ac14c3ea4b30db52cd90aee376713735178e5965aaae77e8d1af52773ef1c70b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/candied-orange-peel-recipe/",
+    "fetchedAt": "2026-08-03T18:21:27.886Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/candied-orange-peel-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

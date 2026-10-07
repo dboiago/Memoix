@@ -1,0 +1,85 @@
+{
+  "recipe": {
+    "name": "Baileys Pot de Creme",
+    "time": "4 hr 40 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "354",
+      "carbohydrateContent": "19",
+      "fatContent": "24",
+      "proteinContent": "5"
+    },
+    "directions": [
+      "Preheat the oven to 325 °F. Line a 13&quot;x 9&quot; baking pan or a roasting pan with a kitchen towel. Arrange 8 4-oz ramekins in the pan.",
+      "Heat 12 oz&#32;heavy cream and ¼ teaspoon&#32;table salt in a medium saucepan until scalding. (see note)",
+      "While the cream is scalding, combine 6&#32;large egg yolks and 2 oz&#32;granulated sugar in a medium bowl. Whisk the hot cream into the yolk mixture then strain the custard into a pitcher or other container with a pouring spout. Stir in the Baileys and divide the custard evenly among the ramekins.",
+      "Place the pan into the oven and carefully pour hot water to come halfway up sides of ramekins. It's easiest to pour from one of the corners. Bake until the custards are set around the edges but still wobbly in the center, 25–30 minutes.",
+      "Lift the ramekins out of the water and set on a cooling rack. Cool completely then refrigerate until cold, at least 4 hours.",
+      "To serve, top each dish with a dollop of lightly sweetened whipped cream and a few chocolate shavings, if desired."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Heavy Cream",
+        "unit": "oz",
+        "notes": "1 ½ cups",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": "large",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baileys Irish Cream",
+        "unit": "oz",
+        "notes": "1 ½ cups",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1e1f81e7f5226e52240174a753605a9befab1965bf902661837ee587c430199c",
+    "lineage_hash": "f9c868112193d2c6eb8d2aa809eccb886347e8f0bba96c8bbee11f4d375f5812"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2018/03/08/baileys-pot-de-creme/",
+    "fetchedAt": "2026-08-01T21:37:38.171Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2018/03/08/baileys-pot-de-creme/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

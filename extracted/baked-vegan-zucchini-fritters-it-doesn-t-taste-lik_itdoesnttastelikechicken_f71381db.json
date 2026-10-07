@@ -1,0 +1,108 @@
+{
+  "recipe": {
+    "name": "Baked Vegan Zucchini Fritters",
+    "time": "55 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "69",
+      "carbohydrateContent": "12",
+      "fatContent": "1",
+      "proteinContent": "4"
+    },
+    "directions": [
+      "Preheat your oven to 400F (200C). Lightly grease a baking sheet.",
+      "Line a large strainer with a clean dishcloth and fill with the grated zucchini.&nbsp;Sprinkle the salt over the zucchini then lightly toss the zucchini to coat. Let rest for 10 minutes.&nbsp;Gather all ends of the dishcloth so that the zucchini is trapped inside, now squeeze the zucchini, squishing out the water. Squeezed out as much water as possible.",
+      "In a small bowl mix together the flax and warm water. Set that aside.",
+      "In a large bowl mix together the squeezed zucchini, onion, flour,&nbsp;nutritional yeast, flax mixture, and garlic. Mix well.&nbsp;Scoop up enough for one fritter in your hands, and form a patty. The dough will be quite sticky. Spread them out on your baking sheet. If they are a little messy you can tidy them up by wetting your hands and patting them into shape.",
+      "Bake for 20-25 minutes, flipping them once midway through. They are ready when both sides are nicely browned and they are cooked through.&nbsp;Serve hot or cold with a dollop of vegan sour cream, or your favourite dipping sauce."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Zucchinis",
+        "unit": "C",
+        "notes": "grated",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Flax",
+        "unit": "Tbsp",
+        "notes": "alt: ground chia",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Warm Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Onion",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Wheat Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutritional Yeast",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f3788d132a6a939927f0eeff574f16dd3d70ec675dbfce827aff3af463db0504",
+    "lineage_hash": "cbe35394c27882eff6a7780db187e9437a0e1f128a354aaa093dd2075fe142cc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/baked-vegan-zucchini-fritters/",
+    "fetchedAt": "2026-08-01T20:59:55.594Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/baked-vegan-zucchini-fritters/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

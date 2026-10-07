@@ -1,0 +1,104 @@
+{
+  "recipe": {
+    "name": "Royal Hawaiian",
+    "time": "10 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "HI",
+    "glass": "Double Rocks",
+    "garnish": [
+      "Mint Bouquet"
+    ],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all ingredients in a shaker.",
+      "Add a handful of pebble ice and whip-shake.",
+      "Pour into a chilled double rocks glass, and top with more pebble ice.",
+      "Garnish with a mint bouquet and serve with a straw."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "London Dry Gin",
+        "unit": "oz",
+        "notes": "such as Bombay Dry",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pineapple Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orgeat",
+        "unit": "oz",
+        "notes": "see Editor’s Note",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Cane Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsweetened Almond Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Raw Almonds",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Blossom Water",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e7fb037ec896c1675408f2f7349bd6cef74096a91460bbc9e6570420c7345da0",
+    "lineage_hash": "79f65344b78690a8fa0851426d0b81bfbdb589100f275d3f6c5984babcbb1585"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://punchdrink.com/recipes/cane-tables-royal-hawaiian/",
+    "fetchedAt": "2026-08-03T07:19:08.467Z"
+  },
+  "rawSource": "https://punchdrink.com/recipes/cane-tables-royal-hawaiian/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

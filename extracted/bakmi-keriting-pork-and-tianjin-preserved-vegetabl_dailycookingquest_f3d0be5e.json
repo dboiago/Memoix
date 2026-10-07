@@ -1,0 +1,183 @@
+{
+  "recipe": {
+    "name": "Bakmi Keriting - Pork and Tianjin Preserved Vegetables Noodles",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat oil in frying pan and sauté garlic, shallots, and scallions until fragrant, about 2 minutes.",
+      "Add chilies and Tianjin preserved vegetables and stir for 30 seconds.",
+      "Add the ground pork, season with soy sauce, sweet soy sauce, sugar, ground white pepper, and sesame oil. Add the water, keep stirring until the pork is no longer pink and fully cooked. Turn off heat and transfer to a serving bowl, set aside.",
+      "Prepare a pot of boiling water and blanch the Chinese mustard green, set aside.",
+      "Blanch fresh egg noodles for 1 to 2 minutes. Transfer to individual serving bowls. Top each bowl of noodle with Chinese mustard green, pork and Tianjin preserved vegetable, a dash of ground white pepper and a couple drop of sesame oil."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic (indonesian: Bawang Putih)",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots (indonesian: Bawang Merah)",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions (indonesian: Daun Bawang)",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thai Chilies (indonesian: Cabe Rawit)",
+        "unit": null,
+        "notes": "seeded and thinly sliced",
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tianjin Preserved Vegetables",
+        "unit": "Tbsp",
+        "notes": "soaked in water",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Ground Pork",
+        "unit": null,
+        "notes": null,
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "Indonesian: kecap asin",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "Indonesian: kecap manis",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Accompaniments",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bundles Fresh Egg Noodles",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Chinese Mustard Green (indonesian: Caisim)",
+        "unit": null,
+        "notes": "chop into bite sizes",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground White Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c64569e922d5789f1104d17f9b22e62a67b63cd7c022be40666184d507728670",
+    "lineage_hash": "8b5dba0a1f15836982845bde1053ca3200b6bac332f9674e32b0ca2323f962d4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/bakmi-keriting-pork-and-tianjin-preserved-vegetables-noodles.html",
+    "fetchedAt": "2026-08-02T10:55:30.128Z"
+  },
+  "rawSource": "https://dailycookingquest.com/bakmi-keriting-pork-and-tianjin-preserved-vegetables-noodles.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,145 @@
+{
+  "recipe": {
+    "name": "Brioche Mushroom Stuffing",
+    "time": "1 hr 30 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Set up your grill for indirect grilling and preheat to medium (350°F).",
+      "Arrange the brioche chunks in a single layer in a large aluminum foil pan. Place the pan on the grill grate away from the heat and cover the grill. For even more smoke flavor, add wood chunks or handfuls of wood chips to the coals. Indirect-grill the brioche, stirring occasionally so the cubes brown evenly, until toasted and golden brown, about 15 minutes. Set the pan of brioche aside to cool.",
+      "Meanwhile, trim the ends off the mushroom stems; remove and discard the stems if using shiitakes. Wipe the mushrooms clean with a damp paper towel. Cut large mushrooms into 1/4-inch slices; leave small ones whole.",
+      "Melt 3 tablespoons of the butter in a 12-inch cast-iron skillet on the stove or grill side burner over medium-high heat. Add the scallions, celery, if using, and sage and cook, stirring often, until golden brown, 4 minutes. Add the mushrooms and pecans. Increase the heat to high and cook, stirring often, until the mushrooms brown and all their liquid evaporates, 5 minutes. Add the Cognac, if using, and boil until only 2 tablespoons of liquid remain, 2 minutes. Remove from the heat and let cool slightly.",
+      "Crack the eggs into a large bowl and whisk until smooth. Whisk in the cream. Stir in the mushroom mixture, then the brioche cubes. Grate in the nutmeg and stir in salt and pepper; the mixture should be highly seasoned. Spoon it back into the skillet and top with the remaining 3 tablespoons butter, cut into thin slices. (The pudding can be prepared several hours ahead to this stage; cover with plastic wrap or aluminum foil and refrigerate, if you have room. But the texture will be better if you cook it right away.)",
+      "If you shut down the grill after toasting the brioche, re it up again for indirect grilling and preheat to 350°F. Add the wood chunks or chips to the coals following the manufacturer’s instructions. Cover the grill and smoke-roast the pudding until puffed and browned on top and cooked through (a skewer inserted into the center should come out clean), about 45 minutes.",
+      "Serve it right from the skillet. Even more reason to give thanks for Thanksgiving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Loaf (1 Pound) Day-old Brioche",
+        "unit": null,
+        "notes": "8 to 10 cups, cut into 1-inch cubes",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Exotic Mushrooms",
+        "unit": "oz",
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": "3/4 stick",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": "bunch",
+        "notes": "trimmed, white and light green parts thinly sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rib Celery",
+        "unit": null,
+        "notes": "optional, trimmed and chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sage Leaves",
+        "unit": null,
+        "notes": "fresh, thinly slivered",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pecans",
+        "unit": "C",
+        "notes": "alt: peeled roasted chestnuts, coarsely, chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cognac",
+        "unit": "C",
+        "notes": "alt: bourbon, optional",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "preferably organic",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heavy (whipping) Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Grated Nutmeg",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Salt (sea or Kosher)",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "34cea5d9870525d9e9d2d4673b9e289f0c95e833222264c04a54fa58b1beed32",
+    "lineage_hash": "452f6f32d25958aa607cbd1ba208692b932f33cdd0bc5ed6d3cccf7592082410"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/brioche-mushroom-stuffing/",
+    "fetchedAt": "2026-08-03T09:46:41.188Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/brioche-mushroom-stuffing/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

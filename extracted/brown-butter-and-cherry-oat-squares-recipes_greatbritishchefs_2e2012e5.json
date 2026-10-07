@@ -1,0 +1,153 @@
+{
+  "recipe": {
+    "name": "Brown Butter and Cherry Oat Squares",
+    "time": "1 hr",
+    "course": "standalone",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Line a 20cm (8 inch) square tin with an overhanging&nbsp;layer of baking parchment. Heat the oven to&nbsp;180°C/160°C fan (350°F)",
+      "Finely grind the mahleb and set aside for a couple of minutes to help the bitter flavours dissipate.&nbsp;(If you are using ready-ground mahleb, increase&nbsp;the quantity by about half, as the flavour will&nbsp;be muted.)",
+      "Put the mahleb, flour, sugar and salt in a food processor. Add the cold butter cubes and blend until the mixture comes together into clumps of dough. Press these into the baking tin to form an even base. Bake for 15–20 minutes to a pale golden biscuit",
+      "Meanwhile, make the oat top. Put the butter and&nbsp;milk powder (if using) in a medium pan over a&nbsp;medium heat. Cook, stirring often, as first the&nbsp;butter melts then fizzles until the milk solids&nbsp;turn a delicious golden brown under the foamy top",
+      "Remove from the heat and stir in the sugars and&nbsp;salt. Leave to cool for 5 minutes or so before mixing&nbsp;in the remaining ingredients",
+      "Spread the oaty mixture over the cooked biscuit base and return to the oven for 15–20 minutes. The top should be firmly set and golden",
+      "Leave to cool completely in the pan for a few hours&nbsp;before cutting into squares"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mahleb Kernels",
+        "unit": "tsp",
+        "notes": "finely ground",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "115",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Muscovado Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rolled Oats",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sour Cherries",
+        "unit": "g",
+        "notes": "whole",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "25f98f6ca9aabebe978de859e98501e0398ac782cf5e99fba02aa7644130879f",
+    "lineage_hash": "271967e9368fa211347d7d0fd604e32b0023f45477b17df99b04dcd96c4626e8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/brown-butter-cherry-oat-squares-recipe",
+    "fetchedAt": "2026-08-02T11:48:10.346Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/brown-butter-cherry-oat-squares-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

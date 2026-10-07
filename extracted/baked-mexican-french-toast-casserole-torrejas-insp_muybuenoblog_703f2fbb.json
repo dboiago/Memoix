@@ -1,0 +1,165 @@
+{
+  "recipe": {
+    "name": "Baked Mexican French Toast Casserole",
+    "time": "1 hr 25 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "478",
+      "carbohydrateContent": "57.19",
+      "fatContent": "21.78",
+      "proteinContent": "13.85"
+    },
+    "directions": [
+      "Beat eggs in a bowl. Whisk in milk, buttermilk, vanilla extract, cinnamon, and salt.",
+      "Working in batches, dip sliced bread into the batter to coat. Overlap slices in a 9-by-13-inch ceramic or glass baking dish. Pour remaining batter over top. Refrigerate, covered, for at least 2 hours.",
+      "Preheat oven to 375 degrees.",
+      "Bake, covered with aluminum foil, for 25 minutes.",
+      "Uncover; bake until top is golden brown and crunchy, 20 to 25 minutes more.",
+      "Serve with syrup, raisins, pecans, and orange zest."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Day-old Challah",
+        "unit": "slices",
+        "notes": "about 3/4 inch thick, brioche, or French bread",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Piloncillo-Raisin Syrup",
+        "isOptional": false
+      },
+      {
+        "name": "Piloncillo",
+        "unit": "oz",
+        "notes": "or 1 cup brown sugar",
+        "amount": "6",
+        "section": "Piloncillo-Raisin Syrup",
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "1",
+        "section": "Piloncillo-Raisin Syrup",
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Sticks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Piloncillo-Raisin Syrup",
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": "Piloncillo-Raisin Syrup",
+        "isOptional": false
+      },
+      {
+        "name": "Golden Raisins",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": "Piloncillo-Raisin Syrup",
+        "isOptional": false
+      },
+      {
+        "name": "Pecan Halves",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Toppings",
+        "isOptional": false
+      },
+      {
+        "name": "Orange Zest",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Toppings",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6ae24dede6b76d53b0346e2fc2e2951c0c1582baf635334e7a391f763532b4b5",
+    "lineage_hash": "166124b3abe89c3e4ced57378cff77ef39e3e986dfb3c41867a1d57c167ae344"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/baked-mexican-french-toast/",
+    "fetchedAt": "2026-08-02T09:06:14.507Z"
+  },
+  "rawSource": "https://muybuenoblog.com/baked-mexican-french-toast/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

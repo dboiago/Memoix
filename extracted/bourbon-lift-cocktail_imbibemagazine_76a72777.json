@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Bourbon Lift Cocktail",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all ingredients, except the soda water, and shake with ice. Strain into a glass and stir the drink (paddle back and forth) while adding the soda to achieve a good froth. After it sits for 20 seconds or so add an ounce more soda water to lift the head above the glass. Serve with straw."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "a3b4c6894f31f32e39b3f39382b4bded51b54da4334dd22b47297ab62e44533b",
+    "lineage_hash": "6d61c0f0f8f275219f275b728fce7b58cf4d11584c0985e508fa75946e17acba"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bourbon-lift-cocktail/",
+    "fetchedAt": "2026-08-03T17:56:42.165Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bourbon-lift-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

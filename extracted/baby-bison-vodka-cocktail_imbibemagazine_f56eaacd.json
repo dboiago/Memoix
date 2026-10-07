@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Baby Bison Vodka Cocktail",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake ingredients together with ice. Strain into a chilled glass, then garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "c8e0a7ebb2f963a9eeb21022e71938ef02a91106c9621ee05297193a336e71fd",
+    "lineage_hash": "1391940030db9100bbb3425eb87855bd89daed3afc52fe6ebbf02275c68a82ea"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/baby-bison-vodka-cocktail/",
+    "fetchedAt": "2026-08-03T21:09:11.679Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/baby-bison-vodka-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

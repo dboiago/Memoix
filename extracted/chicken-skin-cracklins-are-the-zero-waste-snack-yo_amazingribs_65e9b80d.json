@@ -1,0 +1,54 @@
+{
+  "recipe": {
+    "name": "Chicken Skin Cracklins",
+    "time": "40 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Prep. Remove the skins from your chicken, turkey, or duck. Turkey skins are thin with little fat underneath, chickens have a bit more subcutaneous fat, and duck has a lot of fat. Cut the skins into squares or strips about 1&quot; (2.5 cm) long and 1/2&quot; (1.3 cm) wide.",
+      "Cook. Roasting method. Preheat your smoker or set up your grill for 2-zone indirect cooking and get the air temp in the indirect zone to about 325°F (163°C). Spread the skins onto a flat pan like a cookie sheet, sprinkle them with salt, not too much, and place them in the indirect heat until they are crispy. Turkey will take about 30 minutes, chicken 45 minutes, duck an hour or more. Your time will vary depending on the amount of fat on the bird. If you wish to add wood and flavor them with smoke, go for it. You can even do this in your indoor oven.",
+      "Frying pan method. Cover the bottom of a frying pan with about 1/4&quot; (6.3mm) of water and add the skins. Heat until it simmers gently but does not boil. Add the skins. It is important that you do not simmer too vigorously or they bill spatter all over the place and then burn. Wear a shirt you don&#39;t care about. Stand by the pan and stir the skins every three minutes or so until the water evaporates. Pour off the fat and save it. Continue cooking over low heat until the skins are golden and crispy. Scoop them out and place them on a double layer of paper towels to drain. While they&#39;re hot, sprinkle on some salt.",
+      "Serve. Try not to eat them all immediately, OK?"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Skin-on Chicken",
+        "unit": null,
+        "notes": "turkey, or duck",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Morton Coarse Kosher Salt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3bee64b7c571e91d5b9ce5a0044df675ba6534c0d55ac7268d6fcdfd8362b667",
+    "lineage_hash": "03120a7a6f5239e04f63df989725c7c0d02d2d64f7422d2180fbf5cb3f1b2878"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://amazingribs.com/tested-recipes/snacks-and-munchies-recipes/chicken-skin-cracklins/",
+    "fetchedAt": "2026-08-02T04:58:10.310Z"
+  },
+  "rawSource": "https://amazingribs.com/tested-recipes/snacks-and-munchies-recipes/chicken-skin-cracklins/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

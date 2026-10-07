@@ -1,0 +1,156 @@
+{
+  "recipe": {
+    "name": "Apple with Caviar Starter",
+    "time": "4 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the potato chips, boil the potatoes until completely soft then blend them with small splashes of the cooking water until you obtain a thick but liquid consistency",
+      "Spoon the potato mixture into rounds on a baking mat and dry in the oven for approximately 3 hours",
+      "Fry the potato chips until golden and crispy then drain on kitchen paper",
+      "For the apple spheres, peel, core and chop the apples and add to a pan with a little water. Cover the pan with cling film and cook until softened",
+      "Blend the apples and pour into 8 silicone semi-sphere moulds. Place in the freezer until set then press the two halves together to create a sphere. Return to the freezer to set",
+      "To make the jelly, combine all of the ingredients in a saucepan and bring to the boil. While still hot and unset, dip the frozen apple spheres into the jelly using a toothpick. Repeat 3 times until the ball is well-covered. Store in the fridge to set",
+      "For the crumble, caramelise the sugar in a small saucepan over a medium heat, then add the butter, almonds and salt. Leave to cool then blend into a crumb",
+      "Thinly slice the beetroot with a mandoline and cut out circles with a 2cm ring cutter",
+      "To make the almond granita, mix together all of the ingredients. Squirt the mixture into liquid nitrogen with a kitchen pipette",
+      "To serve, place the salted almond crumble between place and place the 'apple' on top. Garnish with the potato chips, beetroot, caviar and almond granita"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "New Potatoes",
+        "unit": "g",
+        "notes": "peeled and chopped",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granny Smith Apples",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Juice",
+        "unit": "L",
+        "notes": "from green apples",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ascorbic Acid",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine",
+        "unit": "g",
+        "notes": null,
+        "amount": "78",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almond Paste",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almond Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caviar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beetroot",
+        "unit": null,
+        "notes": "candied variety",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "170b7484a0befc21b844402f22630e6eb2b606861d8e8762ae25ebfc19689d94",
+    "lineage_hash": "8473d3ebc76addeb3fbbcb3ea9196669ac2ebe2592eb83d6da0e6034e74ca766"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/apple-caviar-almond-recipe",
+    "fetchedAt": "2026-08-02T07:26:23.454Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/apple-caviar-almond-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,136 @@
+{
+  "recipe": {
+    "name": "Chicken with Vinegar Sauce",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat a skillet over a medium-high heat and add the oil. Brown the chicken pieces, turning until golden all over. Once evenly coloured, add the butter and baste the chicken for a minute or so",
+      "Place the skillet in the oven for 20 minutes. Remove the chicken and drain off most of the butter",
+      "Over a low heat, sauté the shallots and garlic with a pinch of salt until they're soft and sweet – be careful not to colour them. Remove from the pan",
+      "Add the vinegar and cider to the pan to deglaze and reduce by half. Remove the pan from the heat and let it cool a little",
+      "Once the sauce is around 50°C (you can pop a finger in without it burning) add the 4 tbsp of double cream and whisk it in. Taste and add a little more sugar if you think it needs it",
+      "Add the chicken and shallots back to the pan before serving. Once all heated through, serve with a crusty baguette and plenty of butter"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Legs",
+        "unit": null,
+        "notes": "bone-in",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Thighs",
+        "unit": null,
+        "notes": "bone-in",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "minced",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": "minced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Distilled Malt Vinegar",
+        "unit": "ml",
+        "notes": "sweetened with 2 tsp sugar",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cider",
+        "unit": "ml",
+        "notes": "medium sweet",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f573d37743f76877a68ab17bbd05fa83ce20ae346eb826ad3cb445d528f2661f",
+    "lineage_hash": "a250c3419f6350fbc6c0563cbe00136ed6cdcbdad0bfcd11338ae7a21cc4da29"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chicken-with-vinegar-sauce-recipe",
+    "fetchedAt": "2026-08-03T11:23:13.712Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chicken-with-vinegar-sauce-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

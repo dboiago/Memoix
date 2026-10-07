@@ -1,0 +1,290 @@
+{
+  "recipe": {
+    "name": "Beef Cheek with Parsnip 'Risotto'",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by placing the beef cheeks into a container. Pour in the wine and add the herbs, spices, garlic and shallot. Leave to marinate overnight",
+      "The next day, preheat an oven to 180ºC/gas mark 4. Place a large ovenproof saucepan over a high heat and add a dash of oil. Remove the beef from the marinade and sear all over until deeply browned. Pour in the marinade and scrape the bottom of the pan with a wooden spoon to deglaze",
+      "Add the bovril, brown sugar and beef stock and cover the pan with foil (and a lid if it has one). Place in the oven and cook for 3–4 hours or until tender and falling apart",
+      "Once the beef is ready, remove the meat from the pan and set aside. Pass the sauce through a sieve into a clean pan. Reduce the liquid until really thick and glossy, then whisk in the cold butter and season with salt and pepper. Set aside",
+      "To make the parsnip 'risotto' finely dice the parsnips into tiny cubes, roughly the same size as grains of rice. Place a pan over a medium heat and add the butter and (if using) the Parmesan oil. Once the butter's melted, add the shallot and garlic and gently cook over a low heat for 5 minutes until soft without colour",
+      "Add the diced parsnip, thyme and rosemary and gently cook for another 10 minutes. Add a splash of sherry vinegar, then the vegetable stock and cream and reduce by half",
+      "By now the parsnips should be tender but still with a little bite. Fold in the cream cheese, grated Parmesan and chives. Taste and season with salt and pepper. You should have a risotto-like texture that is nice and creamy",
+      "Keep the risotto warm while you gently reheat the beef cheeks in the reduced sauce. To serve, spoon the risotto into bowls and top with the beef cheek and plenty of sauce. Finish with more grated Parmesan"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef Cheek",
+        "unit": "kg",
+        "notes": "around 6–8 pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "750",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallot",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bovril",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Demerara Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Stock",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "chilled and cubed",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsnips",
+        "unit": null,
+        "notes": "peeled and woody core removed",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "or beef fat",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallot",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": "leaves picked",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "sprig",
+        "notes": "leaves picked and finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream Cheese",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Aged Parmesan",
+        "unit": "g",
+        "notes": "finely grated",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan Oil (optional) – Dan Makes This by Steeping Parmesan Rinds in Neutral Oil for a Few Days",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Stock",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sherry Vinegar to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Aged Parmesan",
+        "unit": null,
+        "notes": "finely grated",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "abb1749b67076cca11f665056d1d87ded843e12dc9e7de8cb51a5fc83e7fac30",
+    "lineage_hash": "eaef86138aa5489e2ec7e76382ed80ca96f784c8c446f0a47573d613c91be5f2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beef-cheek-with-parsnip-risotto-recipe",
+    "fetchedAt": "2026-08-02T19:23:05.499Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beef-cheek-with-parsnip-risotto-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

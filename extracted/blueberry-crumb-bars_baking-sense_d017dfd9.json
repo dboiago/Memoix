@@ -1,0 +1,167 @@
+{
+  "recipe": {
+    "name": "Blueberry Crumb Bars",
+    "time": "55 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "24",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "272",
+      "carbohydrateContent": "39",
+      "fatContent": "12",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "Preheat the oven to 350°F. Generously butter a 13&quot; x 9&quot; pan. Line the pan with parchment paper and allow it to hand over the sides for easier removal of the bars.",
+      "Combine 15 oz&#32;all purpose flour, 5 oz&#32;Stone ground cornmeal, ½ teaspoon&#32;baking soda, ½ teaspoon&#32;table salt, ½ teaspoon&#32;cinnamon, 8 oz&#32;brown sugar, 4 oz&#32;granulated sugar, 1 teaspoon&#32;vanilla extract and finely grated zest from 1&#32;lemon in a large mixing bowl or in the bowl of a food processor. Mix to combine the ingredients or pulse a few times in the processor.",
+      "Toss in 12 oz&#32;unsalted butter and mix with your fingers until the butter bits are no larger than a pea and the dough clumps together when squeezed. If working in a food processor, run until the butter is fully combined and the dough begins to form clumps.",
+      "Reserve ⅓ of the dough for the topping. Sprinkle the remaining ⅔ of the dough into the pan and and lightly press into an even layer.",
+      "Bake 10-15 minutes until set and beginning to brown.",
+      "While the crust bakes, make the filling. In a large bowl, toss together 18 oz&#32;blueberries, 3 oz&#32;granulated sugar, 1 tablespoon&#32;cornstarch, juice of 1 lemon and salt.",
+      "Sprinkle the blueberries over the pre-baked crust and crumble the remaining dough over the berries.",
+      "Bake until golden brown and the berries are soft, about 25-30 minutes. Cool completely and cut into 24 bars."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All Purpose Flour",
+        "unit": "oz",
+        "notes": "3 cups, see note",
+        "amount": "15",
+        "section": "dough",
+        "isOptional": false
+      },
+      {
+        "name": "Stone Ground Cornmeal",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "5",
+        "section": "dough",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "dough",
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "dough",
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "dough",
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": "dough",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": "dough",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "dough",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zest finely grated",
+        "amount": "1",
+        "section": "dough",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "1 ½ cups",
+        "amount": "12",
+        "section": "dough",
+        "isOptional": false
+      },
+      {
+        "name": "Blueberries",
+        "unit": "oz",
+        "notes": "3 heaping cups",
+        "amount": "18",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "⅓ cup",
+        "amount": "3",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Juice of 1 Lemon",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Filling",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "cfb6f333fb546bf5ece7b1eb7bab6d53082c0449db2c29863489bb52db80df06",
+    "lineage_hash": "8b48d3a514b0aff552547c28e2075e37259ba99a0fdb538d9efc690f2acfd02c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2021/06/17/blueberry-crumb-bars/",
+    "fetchedAt": "2026-08-02T08:19:17.561Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2021/06/17/blueberry-crumb-bars/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

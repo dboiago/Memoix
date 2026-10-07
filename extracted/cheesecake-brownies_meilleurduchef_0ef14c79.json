@@ -1,0 +1,151 @@
+{
+  "recipe": {
+    "name": "Cheesecake Brownies",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Before starting this Cheesecake Brownies recipe, organise all the necessary ingredients for the cheesecake.",
+      "For the cheesecake:  Crack the egg in a mixing bowl.",
+      "Add the castor sugar...",
+      "... and blanch with a whisk.",
+      "Add the flour...",
+      "... and combine with the whisk.",
+      "Add the cream cheese...",
+      "... and whisk vigorously...",
+      "... until smooth and homogeneous. Set aside.",
+      "For the brownie:  Organise all the necessary ingredients.",
+      "In a saucepan, melt the butter and Caraïbe dark chocolate over low heat...",
+      "... while stirring often with a spatula.",
+      "In the meantime, place the whole eggs and soft brown sugar into a bowl...",
+      "... and beat vigorously with a whisk until pale and fluffy.",
+      "Add the flour and baking soda...",
+      "... and combine carefully with a whisk.",
+      "Add the melted chocolate and butter...",
+      "... and combine with a whisk until smooth and homogeneous.",
+      "Transfer 1/5 of the preparation in a piping bag.",
+      "Keep the rest of the brownie preparation in the mixing bowl.",
+      "Using an oil spray, grease a stainless steel square frame 18 x 18cm placed on a perforated baking sheet lined with a Silpat baking mat.",
+      "Pour the brownie preparation into the square mould. At this stage you can add dried fruits and bury them in the chocolate preparation. I didn't add any for this recipe.",
+      "Pour the cheesecake preparation on top.",
+      "Pipe drops of brownie preparation over the cheesecake layer.",
+      "Create a marble effect with the tip of a knife.",
+      "Pipe thin strings of brownie preparation over the cheesecake preparation.",
+      "This is what the result should look like.",
+      "Place in a fan-assisted oven preheated at 150°C (gas 2)...",
+      "... and bake for 30 minutes.",
+      "Remove from the oven when cooked.",
+      "The cheesecake brownies are ready!",
+      "Slide a knife blade between the frame and the cake...",
+      "... and remove the hot frame carefully. Leave to cool at room temperature.",
+      "When the cake has cooled down, trim the edges using a serrated cake knife.",
+      "Cut the brownie into regular squares...",
+      "... as shown in the photo.",
+      "Set aside at room temperature until ready to serve. You can make this recipe one day in advance and store it in the fridge. Leave at room temperature before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Philadelphia Cream Cheese",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Castor Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caraïbe Dark Chocolate 66%",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soft Brown Sugar",
+        "unit": "g",
+        "notes": "cassonade",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ec4a5609674a8989a32fe8e09969167162e7a77375ccd83a31cf751a10a6f564",
+    "lineage_hash": "8152e22eb0f9bbd6a82429e11840e0b82ed374bc3cb8e8a087a3733cbd8926fd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.meilleurduchef.com/en/recipe/cheesecake-brownies.html",
+    "fetchedAt": "2026-08-02T05:01:50.031Z"
+  },
+  "rawSource": "https://www.meilleurduchef.com/en/recipe/cheesecake-brownies.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

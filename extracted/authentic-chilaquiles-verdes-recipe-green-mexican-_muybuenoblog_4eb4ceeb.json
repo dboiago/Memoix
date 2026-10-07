@@ -1,0 +1,181 @@
+{
+  "recipe": {
+    "name": "Chilaquiles Verdes",
+    "time": "33 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "370",
+      "carbohydrateContent": "42.58",
+      "fatContent": "17.43",
+      "proteinContent": "13.75"
+    },
+    "directions": [
+      "On a baking sheet, broil tomatillos, onion, garlic, and serranos for 8 to 10 minutes. Transfer the roasted vegetables to a blender.",
+      "Add cumin, cilantro, chicken stock, flour, and salt, and purée until smooth.",
+      "Heat olive oil in a large skillet. Pour in blended sauce carefully to avoid too much splatter and bring it to a boil. Lower heat and simmer till thickened for about 6 to 8 minutes.",
+      "Cut corn tortillas into triangles. In a large skillet heat oil and fry corn tortilla pieces until crunchy. Lower heat to low.",
+      "Add 2 cups of sauce and mix only long enough to coat all the tortillas. Top with cheese while still over a low flame and cook just long enough for the cheese to melt.",
+      "Remove from heat and sprinkle with onions. Serve with eggs any style and top with crumbled queso fresco."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Tomatillos",
+        "unit": "lb",
+        "notes": "husked and rinsed",
+        "amount": "1",
+        "section": "Roasted Tomatillo Salsa",
+        "isOptional": false
+      },
+      {
+        "name": "White Onion",
+        "unit": null,
+        "notes": "quartered",
+        "amount": "1",
+        "section": "Roasted Tomatillo Salsa",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "unpeeled",
+        "amount": "4",
+        "section": "Roasted Tomatillo Salsa",
+        "isOptional": false
+      },
+      {
+        "name": "Serrano Chiles",
+        "unit": null,
+        "notes": "or 1 jalapeño for milder heat",
+        "amount": "2",
+        "section": "Roasted Tomatillo Salsa",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cumin",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "⅛",
+        "section": "Roasted Tomatillo Salsa",
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "½",
+        "section": "Roasted Tomatillo Salsa",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken",
+        "unit": "C",
+        "notes": "alt: vegetable stock, low sodium",
+        "amount": "1",
+        "section": "Roasted Tomatillo Salsa",
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "Tbsp",
+        "notes": "or masa harina for gluten-free",
+        "amount": "2",
+        "section": "Roasted Tomatillo Salsa",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": "Roasted Tomatillo Salsa",
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Roasted Tomatillo Salsa",
+        "isOptional": false
+      },
+      {
+        "name": "Corn Tortillas",
+        "unit": null,
+        "notes": "cut into triangles",
+        "amount": "8",
+        "section": "Chilaquiles",
+        "isOptional": false
+      },
+      {
+        "name": "Canola Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Chilaquiles",
+        "isOptional": false
+      },
+      {
+        "name": "Oaxaca Cheese",
+        "unit": "C",
+        "notes": "or queso quesadilla or Monterey Jack, shredded",
+        "amount": "¾",
+        "section": "Chilaquiles",
+        "isOptional": false
+      },
+      {
+        "name": "Queso Fresco",
+        "unit": "C",
+        "notes": "crumbled",
+        "amount": "½",
+        "section": "Chilaquiles",
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "small",
+        "notes": "finely diced or pickled",
+        "amount": "¼",
+        "section": "Chilaquiles",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "fried or cooked to preference",
+        "amount": "2-3",
+        "section": "Chilaquiles",
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": null,
+        "notes": "fresh, Mexican crema, and avocado slices for garnish",
+        "amount": "0",
+        "section": "Chilaquiles",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a62bbacff2f27c7ab8a3f803665c84116a174886ae9097dc91fb138b66a46760",
+    "lineage_hash": "cad28861baa5ab0896d66fa579b29782b94ac771cb3e5207728dfa7cb24f5c5c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/chilaquiles-roasted-tomatillo-salsa/",
+    "fetchedAt": "2026-08-02T10:58:23.542Z"
+  },
+  "rawSource": "https://muybuenoblog.com/chilaquiles-roasted-tomatillo-salsa/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

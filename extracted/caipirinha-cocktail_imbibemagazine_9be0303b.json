@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Caipirinha Cocktail",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupette",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a shaker, muddle fresh limes with sugar. Add cachaça and ice cubes and shake vigorously (or build it in the glass and stir to chill). Pour, unstrained, into a chilled glass."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "af10f71ee63dafd48837bc06a45bbbe6d32cc2a5097cfd51b2ee746b12a6f5dc",
+    "lineage_hash": "9692782fe9ce9f0c59b2e4bef950bffafc6aa010171aa63b6d49f3f7ca735f25"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/recipe-caipirinha/",
+    "fetchedAt": "2026-08-03T19:15:22.232Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/recipe-caipirinha/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

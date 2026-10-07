@@ -1,0 +1,193 @@
+{
+  "recipe": {
+    "name": "Blue Ribbon Apple Pie",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the flour, sugar and salt together. Add the oil and blend in using a pastry cutter, electric beaters or a mixer fitted with the paddle attachment, until the flour looks evenly crumbly in texture.",
+      "Add the butter and cut in until rough and crumbly but small pieces of butter are still visible. Stir the water and vinegar (or lemon juice, if using) together and add all at once to the flour mixture, mixing just until the dough comes together. Shape the dough into 2 disks, wrap and chill until firm, at least an hour.",
+      "Preheat the oven to 400°F (200 °C).",
+      "Toss the sliced apples with the lemon juice. Place half of the apples in a sauté pan or saucepan and heat over medium heating, until some of the juices cook out and the apples soften, about 10 minutes. Remove the apples from the pan using a slotted spoon and stir with the remaining uncooked apples to cool.",
+      "In a separate bowl, stir the granulated sugar, brown sugar, cinnamon, allspice and nutmeg to blend, then stir this into the apples and set aside.",
+      "Pull out the dough from the fridge 15-30 minutes before rolling. On a lightly floured surface, roll out the first disk of dough into a circle just less than 1⁄4-inch (6 mm) thick. Dust a 9-inch (23 cm) pie plate with flour and line the plate with the pastry. Sprinkle the bottom of the shell with the oats (this will help absorb any excess juices). Spoon the apple filling into the shell and dot with the butter. Roll out the remaining disk of dough to the same thickness and place over the apples.Trim any excess dough and pinch the edges of the crust together, created a fluted edge. Brush the pastry with the egg wash. Stir a little sugar and cinnamon together and sprinkle generously overtop. Use scissors to snip opening in the top crust to allow steam to escape.",
+      "Place the pie on a parchment-lined baking tray and bake for 10 minutes at 400°F (200 °C). Reduce the oven temperature to 375 °F (190 °C) and continue to bake for another 40 to 50 minutes, until the crust is golden brown and the filling is bubbling. Cool the pie for at least 2 hours before slicing to serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "And Sliced Mixed Apples",
+        "unit": "C",
+        "notes": "Mutsu, Granny Smith, Royal Gala, Honey Crisp, Cortland, peeled, about 5 medium apples",
+        "amount": "6",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": "fresh",
+        "amount": "1",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Packed Light Brown Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Allspice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Nutmeg",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Recipe Double Crust Fruit Pie Dough",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Rolled Oats",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Mixed with Water",
+        "unit": null,
+        "notes": "2 tbsp (30 ml) water",
+        "amount": "1",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar and Cinnamon",
+        "unit": null,
+        "notes": "for sprinkling",
+        "amount": "0",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "2½",
+        "section": "Double crust pie dough",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Double crust pie dough",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Double crust pie dough",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "Double crust pie dough",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "does not have to be ice cold, cut into pieces",
+        "amount": "1",
+        "section": "Double crust pie dough",
+        "isOptional": false
+      },
+      {
+        "name": "Cool Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Double crust pie dough",
+        "isOptional": false
+      },
+      {
+        "name": "White Vinegar",
+        "unit": "tsp",
+        "notes": "alt: lemon juice",
+        "amount": "2",
+        "section": "Double crust pie dough",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ec9f931760674faac2f16c669134e09232a1ffc3f2eb44f276d3d53b75816dd8",
+    "lineage_hash": "90c7445d38cb323b6b1907ac1bd8852f96e459a584f788dfc8452577fc39807c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/blue-ribbon-apple-pie/",
+    "fetchedAt": "2026-08-01T17:19:30.226Z"
+  },
+  "rawSource": "https://annaolson.ca/project/blue-ribbon-apple-pie/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

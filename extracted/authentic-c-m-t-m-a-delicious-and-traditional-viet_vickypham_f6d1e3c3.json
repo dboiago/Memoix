@@ -1,0 +1,118 @@
+{
+  "recipe": {
+    "name": "Cơm Tấm",
+    "time": "2 hr 20 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "VN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "(2 lbs) with fish sauce (3 tablespoons), oyster sauce (2 tablespoons), sugar (1 tablespoon), honey (1 tablespoon), ground black pepper (1/2 teaspoon), lemongrass (1/4 cup), garlic (1 tablespoon), whites of green onions (2 stalks), and oil (1 tablespoon) for at least 2 hours or overnight in the fridge for more flavorful results.",
+      "about 10 minutes per side at medium-high heat or 400°F for thick cuts (over 1 inch in thickness). Grill for 8 minutes per side for thinner cuts.",
+      "Add greens of green onions and remaining oil (1 tablespoon) in a microwave-safe bowl. Microwave on high for one minute. Set aside.",
+      "Brush with scallion oil for a beautiful finish and amazing aroma."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pork Chops",
+        "unit": "lb",
+        "notes": "about 6 chops, bone-in",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemongrass",
+        "unit": "C",
+        "notes": "minced",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "Tbsp",
+        "notes": "finely, minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "thinly sliced; whites/greens separated",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": "divided",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "db289ba799a11914249e310a4609e268bdb01a435cdd89cfbd76df9a409ddcec",
+    "lineage_hash": "e187c6f29eb6f3b29ca09d75d3c55fb45ae258ae185362a8b9d225793ab27b2a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://vickypham.com/blog/com-tam/",
+    "fetchedAt": "2026-08-02T02:17:17.035Z"
+  },
+  "rawSource": "https://vickypham.com/blog/com-tam/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

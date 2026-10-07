@@ -1,0 +1,195 @@
+{
+  "recipe": {
+    "name": "Banoffee Pie",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Before starting this Banoffee recipe, organise all the necessary ingredients.",
+      "For the biscuit crumble:  Place the McVitie's biscuits in a mixing bowl and crush them with a rolling pin until finely ground.",
+      "Add the crushed spéculoos biscuits to the bowl...",
+      "... the dark brown sugar...",
+      "... and the melted butter, warm.",
+      "Combine carefully with a rubber spatula until the biscuits are coated with butter.",
+      "Transfer the biscuit crumble in a vacherin ring Ø 20cm, placed on a Silichef® perforated baking sheet lined with greaseproof paper. Grease the ring with an oil spray.",
+      "Press down the crumble at the bottom of the ring to make it compact. I recommend using a dough scraper (or a cake board) to press on the crumble.",
+      "This is what the result should look like.",
+      "For the filling:  Place a generous knob of butter in a non-stick frying pan and slice the bananas over the pan.",
+      "Cook the bananas one minute maximum on each side. This step is essential, particularly if you're using green bananas. If the bananas are ripe, skip straight to step #13. I personally like to cook firm bananas instead of using ripe raw bananas.",
+      "Take the bananas away from the heat.",
+      "Arrange the banana slices around the stainless steel ring directly over the crumble, making them overlap. Make sure you arrange the bananas harmoniously, since they will be visible on the finished cake.",
+      "Fill the centre with the rest of the bananas. This part will not be visible so the way you arrange the bananas doesn't matter.",
+      "... as shown in the photo.",
+      "For the caramel:  Pour the condensed milk in a saucepan and cook over medium heat...",
+      "... and combine constantly with a whisk. After a few minutes, the condensed milk should turn a little darker.",
+      "Combine regularly to prevent the condensed milk from sticking to the bottom of the pan.",
+      "The condensed milk is slowly turning into a caramel.",
+      "The caramel should be pale and soft, as shown in the photo. Ideally, the caramel should reach a temperature between 95 and 100°C (maximum). Make sure the caramel doesn't become dark or too thick, otherwise the caramel will be too hard to slice once cooled down.",
+      "Pour the soft caramel over the bananas...",
+      "...and spread using a small cranked spatula, going right near the sides of the stainless steel ring without the caramel touching it.",
+      "The result should be as shown in the photo. Leave to cool at room temperature.",
+      "For the Chantilly cream:  Pour the whipping cream in the stand mixer bowl...",
+      "... then add the icing sugar and start beating.",
+      "A few minutes later, the Chantilly cream is ready.",
+      "Pour the whipped cream over the caramel at room temperature. Make sure the caramel has cooled down before you cover it with Chantilly cream, otherwise the cream will melt.",
+      "Even the surface of the whipped cream with a large metallic cranked spatula...",
+      "... until the surface is regular and uniform.",
+      "Sprinkle the surface of the cake with dark chocolate shavings...",
+      "... as shown in the photo. Refrigerate the banoffee for at least 2 hours.",
+      "Take the cake out of the fridge and slide the stainless steel upwards to release the cake (slide a knife blade between the cake and the ring if needed).",
+      "The banoffee is ready!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Speculoos Biscuits",
+        "unit": "g",
+        "notes": "crushed",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mcvitie's Biscuits",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Brown Sugar",
+        "unit": "g",
+        "notes": "vergeoise",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bananas",
+        "unit": null,
+        "notes": null,
+        "amount": "3-4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Knob of Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweetened Condensed Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soft Brown Sugar",
+        "unit": "g",
+        "notes": "cassonade",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amber Rum",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Liquid Whipping Cream",
+        "unit": "g",
+        "notes": "35% fat",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Powder Gelatine 200 Bloom",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": "for the gelatine",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Liquid Whipping Cream",
+        "unit": "g",
+        "notes": "35% fat",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate Shavings",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f6c3e4c119c9c00fd2175e70055b0dfe907b35ea77d9cee0d77b787ecffc4ae5",
+    "lineage_hash": "42222135186f5fd3e4ac7762093665ab37697c3afb7e685a4ebe04375e24cf32"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.meilleurduchef.com/en/recipe/banoffee-pie.html",
+    "fetchedAt": "2026-08-02T00:12:03.597Z"
+  },
+  "rawSource": "https://www.meilleurduchef.com/en/recipe/banoffee-pie.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

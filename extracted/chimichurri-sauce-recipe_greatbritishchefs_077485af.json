@@ -1,0 +1,116 @@
+{
+  "recipe": {
+    "name": "Chimichurri Sauce",
+    "time": "10 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the chimmichurri sauce, combine all of the ingredients (apart from the olive oil) in a bowl and mix thoroughly to combine",
+      "Vigorously stir in the olive oil to emulsify, then transfer to a jar or bowl to serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Parsley",
+        "unit": "g",
+        "notes": "fresh, finely chopped",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oregano",
+        "unit": "Tbsp",
+        "notes": "fresh, finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Smoked Paprika",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Pepper Sauce",
+        "unit": "Tbsp",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sherry Vinegar",
+        "unit": "ml",
+        "notes": "or red wine vinegar",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bd3e9008eefbb2572cb84e974060009e24d9f4130e727774deac5c9608a23dd0",
+    "lineage_hash": "8576a194ea79593aeedad47380ac55277ca165c59f1185272031270ba87571a7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chimichurri-sauce-recipe",
+    "fetchedAt": "2026-08-03T11:34:14.609Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chimichurri-sauce-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

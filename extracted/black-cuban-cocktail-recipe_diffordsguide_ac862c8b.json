@@ -1,0 +1,86 @@
+{
+  "recipe": {
+    "name": "Black Cuban",
+    "time": "4 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "CU",
+    "glass": "Coupe",
+    "garnish": [
+      "Mint Leaf"
+    ],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add next 4 ingredients, STIR with ice and fine strain into chilled glass",
+      "TOP with champagne."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mint Leaves",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cacao Spiced Rum",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Cordial",
+        "unit": "ml",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Bitters",
+        "unit": "dash",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grind Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brut Sparkling Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bd78d987fdec9e6881084cedfb4f402800ca78bcd7029279e15becc0a7ff26b9",
+    "lineage_hash": "e9e60354ebf55ecbe1f5b83b74831522ef57fbd32fe6c0941bd75b0d1149f036"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/4893/black-cuban",
+    "fetchedAt": "2026-08-03T14:41:40.947Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/4893/black-cuban",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

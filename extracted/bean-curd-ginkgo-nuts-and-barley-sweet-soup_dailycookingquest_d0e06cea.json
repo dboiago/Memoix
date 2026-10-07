@@ -1,0 +1,97 @@
+{
+  "recipe": {
+    "name": "Bean Curd, Ginkgo Nuts, and Barley Sweet Soup",
+    "time": "3 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Boil together water and pearl barley in a soup pot. Reduce the heat to a simmer, cover the pot, and cook for 1 hour.",
+      "Add ginkgo nuts, and continue simmering for another 30 minutes.",
+      "Add bean curd and pandan leaves, and continue simmering for 15 minutes, or just until the bean curd is wilted and soft.",
+      "Add rock sugar, stir until all the sugar has melted.",
+      "Stir the soup continuously while streaming the lightly beaten egg into the soup. The stirring will create egg drop soup effect.",
+      "Turn off the heat, and discard the pandan leaves.",
+      "The soup can be served hot, at room temperature, or even cold."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Pearl Barley/job's Tear Barley",
+        "unit": null,
+        "notes": "soaked in cold tap water for 1 hour",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Ginkgo Nuts",
+        "unit": null,
+        "notes": "halved and remove the bitter cores, blanched in hot water for 1 minute",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Bean Curd Sheet",
+        "unit": null,
+        "notes": "crushed into small pieces",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pandan Leaves",
+        "unit": null,
+        "notes": "knotted",
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Rock Sugar",
+        "unit": null,
+        "notes": "or to taste",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "lightly beaten",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1986cb1129c7d2ee0f59e2ed7401a09141596e07e8a7263854caf0d1216da443",
+    "lineage_hash": "978f0a071b4491d1ca43d4ee333d845d3bf291f41aa748ad3d48876d46055678"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/bean-curd-ginkgo-nuts-barley-sweet-soup.html",
+    "fetchedAt": "2026-08-01T22:49:08.427Z"
+  },
+  "rawSource": "https://dailycookingquest.com/bean-curd-ginkgo-nuts-barley-sweet-soup.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

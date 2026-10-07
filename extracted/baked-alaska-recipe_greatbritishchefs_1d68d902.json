@@ -1,0 +1,141 @@
+{
+  "recipe": {
+    "name": "Baked Alaska",
+    "time": "2 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the vanilla ice cream, heat the milk, cream, vanilla seeds, vanilla essence, salt and 75g of the sugar in a pan. Bring to a simmer and once simmering cover with cling film and leave for 30 minutes to infuse",
+      "Bring back to the boil. Whisk the egg yolks and the rest of the sugar together, then pour the hot cream onto the yolks whisking all the time",
+      "Transfer to a pan and cook out the custard until it easily coats the back of the spoon. Pass the mixture through a fine chinoise into a bowl, cover the bowl with cling film and chill in the fridge for 20 minutes. Churn in an ice cream maker and then freeze",
+      "To make the baked Alaska, start with the meringue. Boil the sugar, glucose and water to soft ball stage or 116°C, using a sugar thermometer to gauge the process",
+      "As the sugar is coming up to temperature, begin to whisk the egg whites in a large food mixer on a medium to high speed",
+      "As soon as the sugar reaches 116˚C, remove from the heat and pour slowly into the egg whites, making sure not to start with the sugar until the whites begin to expand",
+      "Once all the sugar mixture has been added, adjust the whisk down to a low speed and allow to continue until the egg whites cool. Place into a piping bag with a star-shaped nozzle",
+      "Cut the base off the panettone  to a 1.5cm thickness, this will be used for the bottom of the baked Alaska. Place the base piece of panettone at the bottom of an oven proof dish",
+      "Pre-heat the oven to 180˚C/gas mark 4. Place 3 big scoops of ice cream in to the middle of the panettone, each scoop touching each other to form a triangle",
+      "Pipe the meringue evenly around the ice cream being sure to fully cover the contents, including the base. Place into the oven for 5 minutes, remove to cool",
+      "Use a blowtorch to brown the tops of the meringue and serve your baked Alaska"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "1200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "280",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glucose",
+        "unit": "ml",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": "g",
+        "notes": null,
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Panettone",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": "split with seeds scraped out and reserved",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Essence",
+        "unit": "ml",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5e4826608264d73f00434851abcc2a24631a2f1502c3f1cf672319e524f38dc6",
+    "lineage_hash": "81fcae881364a3a027df6d066f41ab35523e328e2335318bbb6153509644cefb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/baked-alaska-recipe",
+    "fetchedAt": "2026-08-03T16:27:49.242Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/baked-alaska-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

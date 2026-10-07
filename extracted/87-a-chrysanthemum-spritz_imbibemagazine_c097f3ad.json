@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "#87: A Chrysanthemum Spritz",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients, except the sparkling wine, to an ice-filled glass and stir to combine. Top with chilled sparkling wine and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "fa010a47401f28d942df038d22bc5e8d50107fc4f7e331c3676d6a9c052f43a0",
+    "lineage_hash": "994acbfdbc05dcdde110dbef9b3044b22c66994af3f3772f90ee4cb4304b1fd6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/87-a-chrysanthemum-spritz/",
+    "fetchedAt": "2026-08-04T01:57:47.909Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/87-a-chrysanthemum-spritz/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

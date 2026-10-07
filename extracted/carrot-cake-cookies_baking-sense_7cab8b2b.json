@@ -1,0 +1,219 @@
+{
+  "recipe": {
+    "name": "Carrot Cake Cookies",
+    "time": "1 hr 8 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "20",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "276",
+      "carbohydrateContent": "39",
+      "fatContent": "13",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "Use the middle size holes on a box grater to finely shred the carrots.",
+      "Spread the shredded carrots onto a paper towel to absorb excess moisture.",
+      "Dump the carrots from the paper towel into a small bowl.",
+      "Toss 2 tablespoons of flour over the carrots. The flour will absorb moisture from the carrots.",
+      "In a mixing bowl or in the bowl of a stand mixer with the paddle attachment, cream the butter with both sugars.",
+      "Add the egg and grated carrots.",
+      "Add the dry ingredients (flour, salt, spices, oats).",
+      "Add the raisins and walnuts.",
+      "Scoop the dough into cookie balls. If you plan to eat the cookies without frosting, bake the cookie dough balls or pack them in freezer bags to work ahead.",
+      "If you plan to sandwich the cookies with frosting, flatten the balls to a disc before baking.",
+      "Leave 2″ between the cookies to allow for oven spread.",
+      "Bake until golden brown around the edges and set in the middle."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Carrots",
+        "unit": "oz",
+        "notes": "about 2 medium",
+        "amount": "6",
+        "section": "Cookie Dough",
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Cookie Dough",
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "oz",
+        "notes": "1 cups, see note",
+        "amount": "5",
+        "section": "Cookie Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": "Cookie Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Cookie Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Cookie Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Ginger",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Cookie Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cloves",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": "Cookie Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "room temperature",
+        "amount": "6",
+        "section": "Cookie Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "oz",
+        "notes": "½ cup, packed",
+        "amount": "4",
+        "section": "Cookie Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "6",
+        "section": "Cookie Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": "Cookie Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Cookie Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Old-fashioned Rolled Oats",
+        "unit": "oz",
+        "notes": "2 cups",
+        "amount": "6",
+        "section": "Cookie Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Raisins",
+        "unit": "oz",
+        "notes": "½ cup, optional",
+        "amount": "2½",
+        "section": "Cookie Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Walnuts",
+        "unit": "oz",
+        "notes": "½ cup, chopped",
+        "amount": "2",
+        "section": "Cookie Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "room temperature",
+        "amount": "2",
+        "section": "Cream Cheese Frosting (optional)",
+        "isOptional": false
+      },
+      {
+        "name": "Confectioner Sugar",
+        "unit": "oz",
+        "notes": "1 ½ cups",
+        "amount": "6",
+        "section": "Cream Cheese Frosting (optional)",
+        "isOptional": false
+      },
+      {
+        "name": "Cream Cheese",
+        "unit": "oz",
+        "notes": "room temperature",
+        "amount": "2",
+        "section": "Cream Cheese Frosting (optional)",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Cream Cheese Frosting (optional)",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Cream Cheese Frosting (optional)",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1f846db34da941b392177f44fe951addde1643ec4f2aab4f3019b4b2fcac8174",
+    "lineage_hash": "68bf1d59f1897b15e494b4b494e4f2414d91ff472542862b4be9ac9be555264d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2025/04/11/carrot-cake-cookies/",
+    "fetchedAt": "2026-08-01T23:19:40.771Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2025/04/11/carrot-cake-cookies/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

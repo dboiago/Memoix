@@ -1,0 +1,92 @@
+{
+  "recipe": {
+    "name": "Black Sesame Panna Cotta",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Have ready six ramekins, small bowls, or glasses, about 120 ml (1/2 cup) in capacity each.",
+      "Place the sheets of gelatin in a soup plate and fill with enough cold water to cover. Let rest for 5 to 10 minutes, flipping and poking them every once in a while for even soaking, until rehydrated and soft.",
+      "In a medium saucepan, combine the milk, sugar, and sesame paste. Heat gently without ever reaching a simmer (to about 50°C or 120°F), stirring (not beating) regularly with a whisk, until the sugar is melted and the sesame paste is evenly dispersed. Turn off the heat.",
+      "Press the sheets of gelatin in your hands to squeeze out the excess water. Add to the sesame milk and stir until dissolved.",
+      "Empty an ice cube tray into a large mixing bowl and add a little water to create a shallow ice bath. Nest a medium mixing bowl into the large one so it is in full contact with the ice bath. Add a bit more water as needed.",
+      "Pour the sesame milk into the medium mixing bowl, and stir in the cream.",
+      "Let the mixture cool in the ice bath, stirring every 5 minutes with a spatula until the consistency becomes that of a thin custard: if you run your finger across the flat of the spatula, it should leave a clear trace.",
+      "Pour into the prepared ramekins and let set in the fridge for at least 6 hours, or overnight.",
+      "To prepare the syrup, put the muscovado sugar in a small saucepan and add 100 ml (6 tablespoons) water. Heat gently to dissolve, then let cool completely.",
+      "Remove the panna cotta from the fridge 15 minutes before serving, and serve with the muscovado syrup if desired."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sheets Gelatin",
+        "unit": null,
+        "notes": "9 grams total; see note",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": "I used rice milk, the author recommends soy, dairy or non-dairy",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Roasted Black Sesame Paste",
+        "unit": null,
+        "notes": "look for it at natural foods stores or Japanese markets, kuro neri goma",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "ml",
+        "notes": "1/3 crème fraîche and 2/3 whipping cream",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Muscovado Sugar",
+        "unit": null,
+        "notes": "available at natural foods stores",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7c3c788cd445a29d637b1d0da4b289c0f2e40984c0f9b356dbb959f92eb23b05",
+    "lineage_hash": "6b5e099ee67c0740c0de233aabdbcc5794eec2e8fd0fa9e3344a586a78d09417"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/desserts/black-sesame-panna-cotta-recipe/",
+    "fetchedAt": "2026-09-30T18:57:39.428Z"
+  },
+  "rawSource": "https://cnz.to/recipes/desserts/black-sesame-panna-cotta-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

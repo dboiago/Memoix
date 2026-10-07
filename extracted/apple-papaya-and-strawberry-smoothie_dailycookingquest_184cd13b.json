@@ -1,0 +1,76 @@
+{
+  "recipe": {
+    "name": "Apple, Papaya, and Strawberry Smoothie",
+    "time": "10 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Put everything in a blender and process until smooth.",
+      "Divide into two serving glasses and serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Fuji Apple",
+        "unit": null,
+        "notes": "about 200 gram, peeled and cored",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Papaya",
+        "unit": null,
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strawberry Yoghurt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b1a3c9b90ee6e2ebe2da595f57bbab2f3b06517dd6d822130ea6557adec1ed6f",
+    "lineage_hash": "11d91e3b9c3e152df516ddaa3dcb3040397bbb86a8edfcf549f374b54ed636da"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/apple-papaya-and-strawberry-smoothie.html",
+    "fetchedAt": "2026-08-02T11:45:02.852Z"
+  },
+  "rawSource": "https://dailycookingquest.com/apple-papaya-and-strawberry-smoothie.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

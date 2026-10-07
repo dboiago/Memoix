@@ -1,0 +1,200 @@
+{
+  "recipe": {
+    "name": "Boston Cream Bundt Cake",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "15",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the custard filling place the milk, vanilla and roughly half the sugar into a saucepan and place over medium heat and bring to a simmer.",
+      "Meanwhile, place the remaining sugar and the cornstarch into a mixing bowl and whisk together until combined.",
+      "Just before the milk is at temperature add the egg yolks and whole egg to the sugar and cornflour mixture and whisk together until smooth.",
+      "When the milk is at temperature remove from the heat and slowly pour over the egg mixture, whisking as you do you.",
+      "Pour the custard back into the pan and place on the heat and whisk constantly until the custard is very thick and has bubbled.",
+      "Immediately scrape the custard into a bowl and stir in the butter and a pinch of salt, mixing until smooth.",
+      "Press a sheet of clingfilm onto the surface of the custard and refrigerate until needed.",
+      "Preheat the oven to 180ºC (160ºC Fan). Grease a 10-cup bundt pan, using either a cake release spray or brushing with softened butter and then dusting with flour. My preference is using a homemade ‘cake goop’ made from an equal volume measure of shortening, neutral oil and all purpose flour, mixed to a paste.",
+      "Place the sugar, eggs and vanilla into the bowl of a stand mixer, fitted with the whisk attachment. On medium/high speed whisk for about 7 minutes or until ribbon stage.",
+      "Turn the mixer to medium/low and slowly pour in the olive oil and then the milk.",
+      "Sieve in the flour, baking powder and salt and fold the flour until the batter is smooth and no signs of flour remain.",
+      "Pour the batter into the prepared pan and then give the pan a couple firm taps on the work surface to pop any large bubbles.",
+      "Bake in the preheated oven for about 35 minutes or until the cake springs back to a light touch.",
+      "Remove from the oven and set aside for 10 minutes before inverting the cake onto a wire rack to cool completely.",
+      "Once cooled use a serrated knife to cut the cake into two layers.",
+      "Remove the custard from the fridge and beat to loosen.",
+      "Place the bottom layer of the cake onto a cake stand or plate and spread the custard over the cut surface.",
+      "Top with the second cake layer and refrigerate while you make the glaze.",
+      "Place the chocolate into a jug and set aside for the moment.",
+      "Place the cream into a small milk pan and over medium heat bring to a simmer.",
+      "Pour into the jug with the chocolate and set aside for a couple minutes before stirring with a small sauce whisk to form a silky ganache.",
+      "Remove the cake from the fridge and then pour over the glaze, allowing it to drip down the sides of the cake."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": "Bundt Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "4",
+        "section": "Bundt Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Bundt Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "120",
+        "section": "Bundt Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "80",
+        "section": "Bundt Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": "Bundt Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1.5",
+        "section": "Bundt Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Bundt Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": "Custard Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Custard Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": "Custard Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": "Custard Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": "Custard Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": "Custard Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": "Custard Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "Custard Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "70",
+        "section": "Chocolate Glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": "Chocolate Glaze",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ebe414e408d4bb426d2b931fec20f28bd38073b8b5a6d79d74d8b5e180f33310",
+    "lineage_hash": "051d46f38e88704445cf1f0a3b6a922a3e19d40f853a4586f887f23198a83194"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.theboywhobakes.co.uk/recipes/2021/8/25/boston-cream-bundt-cake",
+    "fetchedAt": "2026-08-01T17:02:03.370Z"
+  },
+  "rawSource": "https://www.theboywhobakes.co.uk/recipes/2021/8/25/boston-cream-bundt-cake",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

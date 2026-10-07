@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Banana and Coconut Smoothie",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Melt the chocolate in a double boiler or the microwave, and toast the coconut in a dry frying pan just till golden brown. Dip the rims of two chilled glasses into the melted chocolate, then press into the coconut. Return glasses to fridge. In a blender, add the bananas, yogurt, milk and maple syrup and whir until frothy. A few drops of yellow food coloring can be added if desired, or extra maple syrup for a sweeter smoothie. Pour into prepared glasses."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "70b7c88ec42225a0c5a1faeff96f019f6b94900a57eed40385dafcd565eaedc2",
+    "lineage_hash": "d0190ccfb509b79dc8989a1fd7c5802bf6e388423487b88d7a2df2e572eedfbf"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/banana-and-coconut-smoothie/",
+    "fetchedAt": "2026-08-03T23:22:05.502Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/banana-and-coconut-smoothie/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

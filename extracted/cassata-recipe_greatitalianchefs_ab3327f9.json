@@ -1,0 +1,188 @@
+{
+  "recipe": {
+    "name": "Cassata",
+    "time": "2 hr 30 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Before beginning the cake, it is important to thoroughly strain the ricotta before using – just place the cheese in a colander for 1–2 hours before you prepare the cream",
+      "To make the ricotta cream, combine the ricotta with the sugar in a mixing bowl. Cover with cling film and place in the refrigerator for 1 hour – this step is important as the sugar needs to be completely dissolved",
+      "Preheat the oven to 180°C/gas mark 4. Grease a round cake tin and dust with flour",
+      "Whisk the eggs with the sugar, vanilla extract and salt for 10–15 minutes, until the batter forms a ribbon when you lift the whisk out of the bowl. At this point, fold in the flour in 2 or 3 additions",
+      "Pour the batter into the cake tin and bake in the oven for 30 minutes. Remove and leave to cool on a wire rack",
+      "to finish the ricotta cream, pass the sweetened ricotta through a sieve. Mix in the chocolate and liqueur with a spatula and set aside",
+      "To make the marzipan, place the water and the sugar in a small saucepan and bring to the boil for 5 minutes until you have a syrupy consistency. Allow to cool",
+      "Combine the icing sugar and almond flour in a bowl. Add enough syrup to obtain a soft dough and add a small drop of green food colouring, mixing well to incorporate. Wrap in cling film and set aside",
+      "Line the cassata tin with cling film. Roll out the marzipan to a 1/2cm thickness and cut into strips as wide as the edges of the pan. Cut the strips into 3cm wide pieces",
+      "Cut the sponge into 1cm thick slices and the cut the slices into pieces the same size as the marzipan",
+      "Use the sponge pieces and marzipan pieces to line the edges of the cassata tin",
+      "Cover the base of the tin with other sponge cake stripes and brush all the sponge cake – base and edges – with liqueur",
+      "Add the ricotta cream and level the surface",
+      "Cover the ricotta with the rest of the sponge strips. Brush with the liqueur, cover the cake with the overhanging cling film and leave to refrigerate for a minimum of 6 hours, preferably overnight",
+      "Turn the cassata out onto a serving plate and carefully remove the cling film",
+      "Prepare the icing by mixing icing sugar with some drops of lemon juice, adding water as necessary to obtain a fluid consistency",
+      "Spread the icing on top of the cake to create a smooth, even layer of icing",
+      "Cut the candied fruits and use to decorate the cassata in your desired design"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "medium, at room temperature",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Self-raising Flour",
+        "unit": "g",
+        "notes": "sifted",
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": "natural",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ricotta",
+        "unit": "g",
+        "notes": "sheep's milk",
+        "amount": "700",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amaretto",
+        "unit": "Tbsp",
+        "notes": "rum, or other preferred liqueur",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almonds",
+        "unit": "g",
+        "notes": "peeled and finely ground",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": "sifted",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Food Colouring",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Candied Fruits",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2324a011e2e10143ed4d590dd35805962e694af6f763fbae805c53e608b2235b",
+    "lineage_hash": "63823050de64c1f3993a84088c79e2e850850491e9e4c9f5cf8d7ff3b17da6f9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/cassata-recipe",
+    "fetchedAt": "2026-08-02T04:18:08.362Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/cassata-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

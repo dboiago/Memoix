@@ -1,0 +1,98 @@
+{
+  "recipe": {
+    "name": "Chikuwa (Tube Shaped Fish Cake)",
+    "time": "1 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "98",
+      "carbohydrateContent": "3",
+      "fatContent": "1",
+      "proteinContent": "17"
+    },
+    "directions": [
+      "Defrost the frozen fish fillets half way through, not completely defrosted (if you are using frozen fish fillets like I did).",
+      "Pat dry the fish fillets with a paper towel.",
+      "Cut the fish fillets into small pieces and place them in a food processor.",
+      "Add egg white, salt, sugar, and katakuriko starch. Blitz until you achieve a smooth and sticky paste.",
+      "Add sake gradually until you achieve a sticky and pliable fish paste.",
+      "Shape the chikuwa around the bamboo straw. Take some of the fish paste (about 1/5th) and spread it thinly into a rectangular shape on a sheet of parchment paper.",
+      "Place a bamboo straw over the edge of the spreaded fish paste and roll it all together.",
+      "Repeat the process for the rest of the fish paste.",
+      "Heat a bbq grill or gas stovetop over medium heat.",
+      "Place the chikuwa over the flame and cook for about 3-4 minutes on each side, or until golden brown and firm to the touch.",
+      "Remove the bamboo straw to serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "White Fish Fillets",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Katakuriko (potato Starch)",
+        "unit": "Tbsp",
+        "notes": "0.5oz/15g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "0.2oz/5g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": "0.5oz/15g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sake (0.5floz/15ml)",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6f72c343b6fc817d1948e74080f491daa03b08b049cf0bc3625d8ff000f295ed",
+    "lineage_hash": "de8f0379036fa5d6ae382b811f92729c3ab4db291c2497d39dabb29e38bb60b9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chopstickchronicles.com/homemade-chikuwa-tube-shaped-fish-cake/",
+    "fetchedAt": "2026-08-02T02:17:47.390Z"
+  },
+  "rawSource": "https://www.chopstickchronicles.com/homemade-chikuwa-tube-shaped-fish-cake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,198 @@
+{
+  "recipe": {
+    "name": "Cheese and Chive Scones",
+    "time": "1 hr 15 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, make the relish. Place all of the ingredients in a saucepan and cook over a low heat until the sugar has dissolved",
+      "Once the sugar has dissolved, turn the heat up to medium and simmer for 20–30 minutes, until you have a thick, jam-like relish and all of the liquid has evaporated. Allow to cool and serve with scones, cold cuts, cheese or with burgers and hot dogs",
+      "Preheat the oven to 200°C/gas mark 6. Grease and/or line a large baking tray",
+      "To make the scones, mix all of the dry ingredients together with the chives in a large mixing bowl and rub the margarine or butter into the mixture until it resembles fine breadcrumbs",
+      "Add most of the grated cheese, leaving some to scatter over the top of the scones, and mix well",
+      "Add the beaten egg to the milk and add to the dry mixture, leaving a little to glaze the top of the scones",
+      "Bring the mixture together with your hands until it forms a dough, place it onto a floured board and press it down with the back of your hands, being careful not to over handle it – it should be about 2cm thick",
+      "Cut out the scones with a 5cm scone cutter and place them on the prepared baking tray. Re-roll any dough that is left over, and continue to cut out the scones until it has all been used",
+      "Brush some of the egg and milk mixture over the top, sprinkle the reserved grated cheese over the scones and bake in the preheated oven for 12–15 minutes, until well-risen and golden brown",
+      "Meanwhile, make the herb and garlic cream cheese. Place the cream cheese in a large bowl and beat it with a spoon to soften",
+      "Add the chopped fresh (or dried) herbs and the garlic granules to the cream cheese and mix well, using a hand-held whisk if needed. Season to taste with salt and pepper and store in a covered container in the fridge until needed",
+      "Place the scones on a wire cooling tray and eat warm, with butter, herb cream cheese and a dollop of the quick tomato relish"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chives",
+        "unit": "Tbsp",
+        "notes": "fresh, finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Self-raising Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "450",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cracked Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "English Mustard Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "soft, or margarine",
+        "amount": "110",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mature Cheddar",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": "beaten",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "ml",
+        "notes": "or skimmed milk",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "peeled and very finely diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherry Tomatoes",
+        "unit": "g",
+        "notes": "small, quartered",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": "white",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Balsamic Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Full-fat Cream Cheese",
+        "unit": "g",
+        "notes": "soft, at room temperature",
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Herbs",
+        "unit": "Tbsp",
+        "notes": "or use 2 tsp dried herbs is fresh are not available, fresh, such as chives, parsley, basil and thyme, very finely died",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Granules",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ed307d91a23f682044810925850039016726cc2f5ba8ae7cd77f2fa9e8796257",
+    "lineage_hash": "c9bd1363c661101cc693a1f72515efc6501113c0ad2b05d5a5a9e3f012ac2ef5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cheese-and-chive-scones-recipe",
+    "fetchedAt": "2026-08-03T12:27:38.674Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cheese-and-chive-scones-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

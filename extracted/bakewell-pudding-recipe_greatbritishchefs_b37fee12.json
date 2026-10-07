@@ -1,0 +1,102 @@
+{
+  "recipe": {
+    "name": "Bakewell Pudding",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Roll the pastry out to an approximate thickness of 1/3cm and prick it all over with a fork to prevent it rising. Use the pastry to line a 20x3cm deep, preferably sloping-sided, tart tin (or an oven-proof skillet). Leave the pastry to rest for 1 hour in the fridge",
+      "While the pastry is chilling, mix the butter, egg and extra yolks with the sugar and almonds in a large mixing bowl. Stir over a pan of simmering water for 3–4 minutes until it reaches a honey-like consistency",
+      "Spoon the jam into the pastry base, then pour the filling over the jam. Scatter with flaked almonds and bake for 45 minutes, or until the top is golden and the filling just set. If it’s browning too much, turn the oven down halfway through",
+      "Serve with a generous scoop of vanilla ice cream, or cream if preferred"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Puff Pastry",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Almonds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raspberry Jam",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Flaked Almonds",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "deeec9f7761c39ba37ffbaedffbf3a2aed160152fa9c21751226db14a93c875a",
+    "lineage_hash": "e83355f08b3e9ccaf7269a704280576dcc1b188b6ff825cd2d1f39a1bfb97532"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/bakewell-pudding",
+    "fetchedAt": "2026-08-03T14:39:04.164Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/bakewell-pudding",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,177 @@
+{
+  "recipe": {
+    "name": "Banana Coffee Cake",
+    "time": "1 hr 45 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "331",
+      "carbohydrateContent": "39",
+      "fatContent": "18",
+      "proteinContent": "5"
+    },
+    "directions": [
+      "Combine the dry ingredients in a mixing bowl and mix to combine. Toss in the butter.",
+      "Mix to break up the butter then add half of the sour cream.",
+      "Mix on high speed to aerate the batter.",
+      "Add the banana mixture.",
+      "Spread half of the batter into a springform pan then sprinkle the streusel filling over the batter.",
+      "Dollop the rest of the batter over the filling and spread to an even layer.",
+      "Grab a large clump of the crumb topping and break it into smaller clumps over the batter.",
+      "Distribute the crumb topping evenly over the cake.",
+      "Start the cake on the bottom rack of a 400F oven for 10 minutes, then reduce the temperature to 350F.",
+      "Bake until a toothpick inserted into the center of the cake comes out clean. Cool for 10 minutes before releasing the sides of the pan."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Brown Sugar",
+        "unit": "oz",
+        "notes": "⅓ cup",
+        "amount": "2½",
+        "section": "Streusel & Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "⅓ cup",
+        "amount": "2½",
+        "section": "Streusel & Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Walnuts",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "4",
+        "section": "Streusel & Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Streusel & Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Cake Flour",
+        "unit": "oz",
+        "notes": "½ cup, see note",
+        "amount": "2¼",
+        "section": "Streusel & Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "room temperature",
+        "amount": "2",
+        "section": "Streusel & Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Very Ripe Bananas",
+        "unit": "oz",
+        "notes": "weight after peeling",
+        "amount": "8",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "room temp",
+        "amount": "2",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Sour Cream",
+        "unit": "oz",
+        "notes": "½ cup, divided",
+        "amount": "4",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Cake Flour",
+        "unit": "oz",
+        "notes": "2 cups",
+        "amount": "9",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "¾ cup",
+        "amount": "6",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "room temperature",
+        "amount": "6",
+        "section": "Batter",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "60dcf31b6ff174f281fbe9fccbfdaebfa6323c8871b974b8b3e10fc2ab2cbda0",
+    "lineage_hash": "74ae6da116a03232f2ea540e4dbbfe9466268f1aabf72f67587815d602218113"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2016/04/27/banana-coffee-cake-walnut-streusel/",
+    "fetchedAt": "2026-08-02T04:46:31.536Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2016/04/27/banana-coffee-cake-walnut-streusel/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

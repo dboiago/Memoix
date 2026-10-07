@@ -1,0 +1,114 @@
+{
+  "recipe": {
+    "name": "Zucchini Salad",
+    "time": "10 min",
+    "course": "salad",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "94",
+      "carbohydrateContent": "5",
+      "fatContent": "7",
+      "proteinContent": "2"
+    },
+    "directions": [
+      "Bring enough water to a boiling in a large pot and then blanch the strips for 2-3 minutes until well softened. Transfer out and place in a serving plate.",
+      "Mix all the seasonings and drizzle over the zucchini.",
+      "Heat up oil in a pan and fry garlic until aroma. Then pour the garlic oil over the salad, decorate with scallion and chopped red pepper circles and serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Zucchinis",
+        "unit": null,
+        "notes": "cut into strips",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6adff6c1d94deccd7e509de7d061bb31d476992482d4e3364348959cb63163cf",
+    "lineage_hash": "94615219b179a041e8df3dd5ef3c0a5df5a33c0435dad02546d8fa019ecb9637"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/5-minutes-zucchini-salad/",
+    "fetchedAt": "2026-08-02T02:57:20.594Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/5-minutes-zucchini-salad/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

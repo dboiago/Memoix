@@ -1,0 +1,95 @@
+{
+  "recipe": {
+    "name": "Cardiologist's Nightmare",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Make 2 lengthwise cuts in each hot dog to remove a slender V-shape strip from the center. The idea is to cut the hot dog almost in half lengthwise, but leave the halves attached at the bottom.",
+      "Insert cheese strips and pickle slices in the slit. Starting at one end and working on the diagonal, wrap a strip of bacon around each hot dog (the effect will look rather like a candy cane). Tie each hot dog crosswise in two places with butcher’s string, cutting off the ends of the string with scissors.",
+      "Set up the grill for direct grilling (or cooking directly over the fire) and preheat to medium high.",
+      "When ready to cook, place the hot dogs on the hot grill, parallel to the bars of the grate, so the bars support them. Grill until the bacon and hot dogs are nicely browned on the bottom and sides, 8 to 10 minutes (use tongs to tilt the hot dogs to brown the sides). During the last few minutes of grilling, baste the dogs with barbecue sauce. Note: The dripping bacon fat may cause flare-ups: Simply move the dogs to another section of the grill, away from the fire. While the hot dogs are cooking, toast the buns on the grill for about 1 minutes.",
+      "Transfer the hot dogs and buns to a platter. Snip off and discard the strings. Serve hot dogs on the buns with your choice of condiment(s)."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef Knockwurst",
+        "unit": null,
+        "notes": "alt: precooked bratwurst, you need a fat hot dog",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Cheese",
+        "unit": "oz",
+        "notes": "thinkly sliced, cut into 1/2-inch-wide strips",
+        "amount": "4-5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thin Dill Pickle Slices",
+        "unit": null,
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strips Bacon",
+        "unit": null,
+        "notes": "preferably pepper bacon",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Your Favorite Barbecue Sauce",
+        "unit": "C",
+        "notes": "I like a mustard-based sauce",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Dog Buns",
+        "unit": null,
+        "notes": "lightly brushed with melted butter",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard",
+        "unit": null,
+        "notes": "ketchup, relish, or your favorite condiments, for serving",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4153856966470bb6c4519fe9a4b4c92621cc9d30250d894b94a4c4f75f86623f",
+    "lineage_hash": "42e548335f9a5aae279729c984e7a913d25f579977ff2ff8f07135bcf12c8be8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/cardiologists-nightmare/",
+    "fetchedAt": "2026-08-03T02:38:28.224Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/cardiologists-nightmare/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

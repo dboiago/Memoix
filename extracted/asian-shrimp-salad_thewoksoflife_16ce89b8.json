@@ -1,0 +1,156 @@
+{
+  "recipe": {
+    "name": "Asian Shrimp Salad",
+    "time": "25 min",
+    "course": "salad",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "186",
+      "carbohydrateContent": "7",
+      "fatContent": "12",
+      "proteinContent": "12"
+    },
+    "directions": [
+      "In a large heatproof bowl, arrange the minced garlic, chopped scallion, and chopped chilies so they are adjacent to each other at the bottom of the bowl. You want them close together, but in one layer—not piled on top of each other—so you can evenly distribute hot sizzling oil over the top.",
+      "Heat the neutral oil until it is shimmering and almost smoking. Carefully drizzle it over the arranged aromatics in the heatproof bowl. It will bubble and sizzle. Stir to evenly distribute the heat and release the fragrance of the aromatics.",
+      "Next, add the sugar, rice vinegar, light soy sauce, oyster sauce, and sesame oil. Mix well.",
+      "Time to poach the shrimp. Bring a small pot of water to boil, and cook the shrimp for a minute or so (adjust cooking time as needed if using smaller or larger shrimp). They’re done once the shrimp has just turned completely pink. Transfer the shrimp to a bowl of ice water to stop the cooking process. Drain and shake off any excess water. You can also pat them dry with a clean kitchen towel. If desired, you can also dice the shrimp into smaller chunks.",
+      "Add the shrimp, cucumber, red onion, and cilantro to your sauce mixture. Mix well, salt to taste, and serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "2-4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thai Chilies",
+        "unit": null,
+        "notes": "finely chopped, to taste",
+        "amount": "1-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Neutral Oil",
+        "unit": "Tbsp",
+        "notes": "such as vegetable, canola, or avocado oil",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1-1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Vinegar",
+        "unit": "Tbsp",
+        "notes": "or lemon juice to taste",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "tsp",
+        "notes": "or vegetarian oyster sauce",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "And Deveined Shrimp",
+        "unit": "oz",
+        "notes": "21/25 size, peeled",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber",
+        "unit": "lb",
+        "notes": "cut into bite-size pieces",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "C",
+        "notes": "thinly sliced",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt (to Taste)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "786e7b70ac286b5ca194cc9905b1a3806fcb960ca477a11df988f3ddd5bcb350",
+    "lineage_hash": "6cc0252dd8f4d8d4a9eecab27cd93d25d0eef1ff542dcf569e774f28fe562261"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/asian-shrimp-salad/",
+    "fetchedAt": "2026-08-02T15:52:52.245Z"
+  },
+  "rawSource": "https://thewoksoflife.com/asian-shrimp-salad/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

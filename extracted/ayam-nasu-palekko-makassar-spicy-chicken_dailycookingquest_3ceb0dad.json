@@ -1,0 +1,150 @@
+{
+  "recipe": {
+    "name": "Ayam Nasu Palekko - Makassar Spicy Chicken",
+    "time": "20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "ID",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Massage chicken thigh with tamarind juice. Set aside for 10 minutes.",
+      "Heat oil in a frying pan over medium high heat. Sauté spice paste, lemongrass, and galangal until fragrant and the spices are cooked. About 3 minutes.",
+      "Add chicken with all the tamarind marinade to the pan, season with palm sugar, salt, and pepper. Stir, cook until chicken is fully cooked, and the sauce is reduced by half.",
+      "Turn off heat, add kaffir lime leaves and cilantro. Stir to mix evenly, then transfer to a serving platter and serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gram Chicken Thigh Meat",
+        "unit": null,
+        "notes": "cut into bite sizes",
+        "amount": "600-700",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tamarind Juice (from 1 Tablespoon Tamarind + 4 Tablespoon Water, Mixed Well and Strained)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemongrass",
+        "unit": null,
+        "notes": "bruised and knotted",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Galangal",
+        "unit": "inch",
+        "notes": "cut into thin slices and bruised",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Palm Sugar",
+        "unit": "Tbsp",
+        "notes": "or coconut sugar/brown sugar",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kaffir Lime Leaves",
+        "unit": null,
+        "notes": "shredded",
+        "amount": "3-4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro Leaves",
+        "unit": "C",
+        "notes": "roughly chopped",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spice Paste (grind Together the Following)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Shallot",
+        "unit": null,
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Bird Eye Chilies",
+        "unit": null,
+        "notes": "seeded",
+        "amount": "3-30",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "60e1430e7f58435e8a75f593f2095d27110a3fe4cd0b2409058c2970bbd0875e",
+    "lineage_hash": "7a0a9fb1930b266289428a84613823b0df86a4486af7dbb4a416e9079450fdc6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/ayam-nasu-palekko-makassar-spicy-chicken.html",
+    "fetchedAt": "2026-08-02T01:51:00.161Z"
+  },
+  "rawSource": "https://dailycookingquest.com/ayam-nasu-palekko-makassar-spicy-chicken.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

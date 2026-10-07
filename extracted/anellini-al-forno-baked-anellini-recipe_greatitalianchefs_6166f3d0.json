@@ -1,0 +1,135 @@
+{
+  "recipe": {
+    "name": "Anellini al Forno",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat 2 tablespoons of the olive oil in a pan. Add the fennel seeds and sliced garlic and cook very gently over a low heat – you want the garlic to just soften and flavour the oil without changing colour",
+      "At this stage, add the sausage meat and brown",
+      "In the meantime, add half the remaining oil to a frying pan and fry off the diced aubergine until golden. You will probably need to work in batches. Drain on kitchen paper to remove excess oil",
+      "Once the sausage meat has turned brown, add the white wine and reduce by half. Add the tinned tomatoes and aubergine, then season with salt and pepper and leave to simmer over a low-medium heat for 30 minutes, stirring occasionally",
+      "The pasta will soak up moisture as it bakes, so you want the ragu to be quite loose (add a splash of water if it has reduced too much). Fold the pasta into the sauce then transfer to a baking dish and top with breadcrumbs and grated pecorino. Bake for 15 minutes and serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Italian Pork Sausages",
+        "unit": null,
+        "notes": "slit open and skins removed",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Aubergine",
+        "unit": null,
+        "notes": "cut into 1cm dice",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tinned Chopped Tomatoes",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Anellini Pasta",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Breadcrumbs",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pecorino",
+        "unit": "g",
+        "notes": "finely grated",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "324704ee3c5dbf7007eec8ee12cedab48a7a170bffc68310ea61b367605b1088",
+    "lineage_hash": "4286e5be1f1946edecbae04e6f4bf5bfaea7d0da56c9ac9f6240cb7d01a14d3c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/anellini-al-forno-recipe",
+    "fetchedAt": "2026-08-01T15:47:52.452Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/anellini-al-forno-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

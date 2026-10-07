@@ -1,0 +1,35 @@
+{
+  "recipe": {
+    "name": "Turkish Coffee",
+    "time": "2 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the ground coffee to the cezve and the sugar, if desired. Add enough water to match the volume of the serving cup, around 70 grams. Stir 8-10 times, ensuring that all the coffee comes into contact with the water. Heat the pot directly over medium heat for 2–2 1/2 minutes. When the foam (köpük, akin to crema) begins to rise toward the rim, but before the coffee spills over, remove from the heat and pour into the serving cup, no filtering needed.",
+      "TipStart with water at room temperature to prevent the coffee from becoming too bitter, then stir the grounds with a wooden spoon to prevent the coffee from clumping and to avoid damaging the coffee pot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "bbbc121701e560c01a8efc5360099495287f1c8fef8611a6bf3bd5391ac288a1",
+    "lineage_hash": "ddd3ea5cff0379a21b85084fb8a57a576b8a7ef7bc69ad3e37586b7a679bcf44"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/anatomy-of-a-drink-turkish-coffee/",
+    "fetchedAt": "2026-08-03T21:20:46.449Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/anatomy-of-a-drink-turkish-coffee/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

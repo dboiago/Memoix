@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Breakfast Martini",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [
+      "Orange Peel"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all ingredients in a shaker and stir to dissolve the marmalade. Fill the shaker with ice, shake to chill and strain into a chilled glass. Squeeze the orange peel over the drink and then use as garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "fd47757fa4f507886e774b86197a8e303bf81544dad2b8de1cef48b2b271c421",
+    "lineage_hash": "ceca555526916dbdae748004fe45e2498ae9d8c2f62c5de10ac2680189b43472"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/breakfast-martini-recipe/",
+    "fetchedAt": "2026-08-03T22:10:32.380Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/breakfast-martini-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

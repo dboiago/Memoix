@@ -1,0 +1,194 @@
+{
+  "recipe": {
+    "name": "Black Pepper Beef Noodles",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "338",
+      "carbohydrateContent": "15",
+      "fatContent": "27",
+      "proteinContent": "11"
+    },
+    "directions": [
+      "Cut the beef steak into 1cm wide strips. Marinate with all the marinating seasonings for 15 minutes. Then mix in oil.!black pepper chow mein|chinasichuanfood.com",
+      "Add cooking oil in a large pan until the oil can evenly cover the bottom of the pan. spread the beef strips in. Let them stay for around 10 seconds and gently stir them several times until the beef strips change color. Transfer the beef out and leave around 1 tablespoon of the oil in.",
+      "Fry garlic and ginger until aromatic. Fry green peppers and red onion until slightly soft. Place the noodles in. Add a small pinch of salt and soy sauce. Return beef strips back. Mix well. Spread freshly ground black pepper."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef Steak of Any Cut",
+        "unit": "g",
+        "notes": "thinly sliced",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Beef marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Cooking Wine Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Beef marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Corn Starch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Beef marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Beef marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Tbsp. Fresh Grounded Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Servings Egg Noodles",
+        "unit": null,
+        "notes": "alt: spaghettini",
+        "amount": "2",
+        "section": "Other ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Other ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Thumb Ginger",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": "Other ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Green Peppers",
+        "unit": null,
+        "notes": "shredded",
+        "amount": "2",
+        "section": "Other ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Other ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": null,
+        "notes": "shredded",
+        "amount": "½",
+        "section": "Other ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil for Coating the Noodles",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Other ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Cooking Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "Other ingredients",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a1823ea0e4b9fa0a6011c7e17671d6e02a465d2d54a4abf9dfc7910c9a94343b",
+    "lineage_hash": "9a159788301717d96db281b8786216f0788b92d2bc8bdc4224ba59cf8c034fb6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/black-pepper-beef-noodles/",
+    "fetchedAt": "2026-08-02T04:58:03.558Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/black-pepper-beef-noodles/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

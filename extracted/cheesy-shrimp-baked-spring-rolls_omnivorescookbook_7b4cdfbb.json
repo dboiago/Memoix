@@ -1,0 +1,149 @@
+{
+  "recipe": {
+    "name": "Cheesy Shrimp Baked Spring Rolls",
+    "time": "55 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "18",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "148",
+      "carbohydrateContent": "20.7",
+      "fatContent": "4",
+      "proteinContent": "6.6"
+    },
+    "directions": [
+      "Chop the shrimps to 1-cm (1/2-inch) pieces. Transfer to a bowl. Add Shaoxing wine, soy sauce, ginger and white pepper powder. Mix well and let marinate for 15 minutes.",
+      "Preheat the oven to 200 degrees C (400 F).",
+      "Set up all the ingredients before assembling the spring roll. Drain the shrimp thoroughly and discard the marinade. This is very important, so the shrimp won’t be too wet to cause the wrapper to break apart during baking.",
+      "Wrap the spring rolls one by one. Spray or brush a thin layer of oil onto the top of the spring roll wrapper (footnote 2). Place 4 to 5 pieces of shrimp, about 1 tablespoon mozzarella cheese and 1 teaspoon green onion on the lower third of the wrappers (footnote 3). Fold the bottom to cover the filling. Then fold both side of the wrapper towards the center. Tuck and roll the filling upward to seal the wrapper until it forms the spring roll. Place each spring rolls onto the lined baking sheet, seam side down, with about 2 fingers apart in between.",
+      "Bake for 9 minutes, or until the bottom turns to a golden color. Flip the spring rolls and put them back in the oven. Bake for another 6 to 8 minutes, until the other side looks golden too.",
+      "To preheat any leftover spring rolls, bake at 180 degrees C (350 F) until warmed through, or for about 10 minutes or so. The rolls will remain crispy."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Shrimps",
+        "unit": "lb",
+        "notes": "230 grams, *footnote 1, peeled and deveined (about 16 to 20 medium size shrimps)",
+        "amount": "½",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": "or rice wine, or lemon juice",
+        "amount": "1",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "grated",
+        "amount": "1",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "4",
+        "section": "Spring rolls",
+        "isOptional": false
+      },
+      {
+        "name": "Mozzarella Cheese",
+        "unit": "C",
+        "notes": "shredded",
+        "amount": "1",
+        "section": "Spring rolls",
+        "isOptional": false
+      },
+      {
+        "name": "Spring Roll Wrappers",
+        "unit": "pkg",
+        "notes": null,
+        "amount": "1",
+        "section": "Spring rolls",
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "or vegetable oil for baking",
+        "amount": "4-5",
+        "section": "Spring rolls",
+        "isOptional": false
+      },
+      {
+        "name": "Ketchup",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Rice Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sriracha Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8d2b1f29e34b0e9e2f9e0d4149212c67ec165b7db071011e6a302796443a3dea",
+    "lineage_hash": "ab22e87649d7d4d3d1d9a8bd597eb472e255d566b7d5c83accc209ce029d6e9c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/shrimp-baked-spring-rolls/",
+    "fetchedAt": "2026-08-01T19:09:45.541Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/shrimp-baked-spring-rolls/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

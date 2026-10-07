@@ -1,0 +1,103 @@
+{
+  "recipe": {
+    "name": "Braised Baby Gem Lettuce with Blue Cheese",
+    "time": "25 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Drizzle a small amount of oil into a large nonstick frying pan and add the lardons. Cook until caramelised and starting to go crispy",
+      "Push the lardons to one side of the pan and add the baby gems, cut-side down. Brown on each side for a few minutes",
+      "Once browned, add the warm stock and peas and leave to simmer for 10 minutes over a low heat",
+      "After 10 minutes, stir in the fresh chopped mint and take off the heat",
+      "Transfer to a serving platter and crumble over the Saint Agur blue cheese to finish"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Pancetta",
+        "unit": "g",
+        "notes": "diced",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Gem Lettuces",
+        "unit": null,
+        "notes": "washed and quartered",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": "or fresh lamb stock",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peas",
+        "unit": "g",
+        "notes": "frozen",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint",
+        "unit": "sprig",
+        "notes": "leaves picked and chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zested",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Saint Agur Blue Cheese",
+        "unit": "g",
+        "notes": "crumbled",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6f3637536b01de76d9753ee229ba0ebf0478e21e53c7001d6f4d33ae41fbba1a",
+    "lineage_hash": "dd7e34a689d5b8fa5e4ebb39a315a5c7055aedee365b60748b6993d5a4bc10be"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/braised-baby-gem-with-blue-cheese-recipe",
+    "fetchedAt": "2026-08-03T04:16:53.386Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/braised-baby-gem-with-blue-cheese-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

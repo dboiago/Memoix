@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Chocolate-Strawberry Negroni",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to a mixing glass with ice. Stir to chill, then strain over a large ice cube into a glass. Garnish.",
+      "Strawberry-Infused CampariIn a glass jar, combine 1 cup of strawberries cut into small pieces and 750ml of Campari, close the jar and leave the mixture to macerate for 24 hours. Afterward, strain out the berries and re-bottle the mixture. It will keep for 30 days in the refrigerator.",
+      "Cacao-Infused VermouthIn an airtight container add 1000ml of Rosso Cinzano vermouth and 1 cup of cacao nibs. Let macerate for 24 hours, then strain and bottle. Will keep for a month in a cool, dark place."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "be40b86ec56fc9573354abce6652d41cdd80614b6a61eb3b0e274a03b4641684",
+    "lineage_hash": "928f75895a77ebf957c70471375967bd9ca144027129cab1c434b39878c93b22"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/amor-lujuria-chocolate-strawberry-negroni/",
+    "fetchedAt": "2026-08-04T01:10:45.812Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/amor-lujuria-chocolate-strawberry-negroni/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

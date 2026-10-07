@@ -1,0 +1,126 @@
+{
+  "recipe": {
+    "name": "Cheddar, Bacon & Zucchini Muffins",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 375°F (190°C) and line a 12-cup muffin tin with paper liners.",
+      "Whisk the zucchini, buttermilk, mayonnaise and egg together in a large bowl. In a separate bowl, sift the flour, sugar, baking powder and baking soda together. Add the dry ingredients all at once to the batter and stir to combine. Stir in the cheese, bacon and sundried tomatoes.",
+      "Scoop or spoon the batter into the muffin tin and bake for about 25 minutes, until the muffins have browned and the top of a muffin springs back when gently pressed. Cool the muffins in their tin on a cooling rack for at least 15 minutes.",
+      "Serve warm or at room temperature. The muffins will keep in an airtight container at room temperature for up to 3 days"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Zucchini",
+        "unit": "C",
+        "notes": "coarsely grated",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "large",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Old Cheddar Cheese",
+        "unit": "C",
+        "notes": "coarsely grated",
+        "amount": "1⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bacon",
+        "unit": null,
+        "notes": "strips cooked, roughly chopped",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sundried Tomatoes",
+        "unit": "C",
+        "notes": "finely chopped",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8e58b6d487267bcfde8d9da5ad6137f3d7b3c1c854d16e9c6fd96a7fe6bc9b5f",
+    "lineage_hash": "2107cb442b1e0b65da64025a963dbb5c1f002d96d851a19280c3861830c45049"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/cheddar-bacon-zucchini-muffins/",
+    "fetchedAt": "2026-08-01T18:22:48.508Z"
+  },
+  "rawSource": "https://annaolson.ca/project/cheddar-bacon-zucchini-muffins/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

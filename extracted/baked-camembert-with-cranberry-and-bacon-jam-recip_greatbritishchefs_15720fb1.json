@@ -1,0 +1,111 @@
+{
+  "recipe": {
+    "name": "Baked Camembert with Cranberry and Bacon Jam",
+    "time": "45 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by making the cranberry and bacon jam. Finely dice the bacon, then place a pan over a high heat with a smash dash of oil and add the bacon. Cook until any water evaporates off and the bacon becomes dark and crispy",
+      "Add the port and scrape with a wooden spoon to remove all the flavour from the bottom of the pan. Tip in the cranberries, sugar, orange zest and juice and simmer for 10 minutes. Once the cranberries have broken down to create a sauce, have a taste and add more sugar if it's too tart. Remove from the heat and leave to cool",
+      "Preheat an oven to 180ºC/gas mark 4. Remove the camembert from its case and discard the paper wrapping. Place it back in its container and onto an ovenproof tray",
+      "Use a small knife to slash a diagonal cross-hatch pattern in the top of the cheese. Poke the sage leaves into the slits and drizzle with a little olive oil. Bake in the oven for 10–15 minutes",
+      "Serve up hot with a big spoonful of the jam and a bowl of apple wedges for dipping"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Olive Oil",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rashers of Smoked Streaky Bacon",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Port",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cranberries",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": "zested and juiced",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Camembert",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sage Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granny Smith Apples",
+        "unit": null,
+        "notes": "sliced into wedges, core removed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fff8e4f68063c5474eb50b01c33b284eb00202eb1164334ab36009ed0a0c6646",
+    "lineage_hash": "6e792ae5149caff8904f37c3fee353143231d93d7134c97d9f8fa9e8ae918ac1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/baked-camembert-with-cranberry-bacon-jam-recipe",
+    "fetchedAt": "2026-08-02T20:41:23.211Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/baked-camembert-with-cranberry-bacon-jam-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

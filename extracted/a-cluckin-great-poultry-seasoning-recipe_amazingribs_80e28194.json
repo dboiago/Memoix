@@ -1,0 +1,91 @@
+{
+  "recipe": {
+    "name": "Poultry Seasoning",
+    "time": "20 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "If you can only get whole sage leaves, break them up into small bits or flakes in a mortar and pestle, spice grinder, food processor, or blender. Ditto for the rosemary. Mix everything together and store in a tightly sealed glass bottle."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "“rubbed” Sage",
+        "unit": "Tbsp",
+        "notes": "dried",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "Tbsp",
+        "notes": "dried, whole leaves",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "Tbsp",
+        "notes": "dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Marjoram",
+        "unit": "Tbsp",
+        "notes": "dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cloves",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a0975ec93b6bc812061236f5548cb6b90e5f6ec100b97f022d0802fb07466bc7",
+    "lineage_hash": "b409e3cd4e5b8b580dfab6ba9ea233bc68033d5e74d63d78b090920060151ce9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://amazingribs.com/tested-recipes/spice-rubs-and-pastes/poultry-seasoning-recipe/",
+    "fetchedAt": "2026-08-02T04:25:01.097Z"
+  },
+  "rawSource": "https://amazingribs.com/tested-recipes/spice-rubs-and-pastes/poultry-seasoning-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

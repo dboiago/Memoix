@@ -1,0 +1,191 @@
+{
+  "recipe": {
+    "name": "Arroz con Pollo (Mexican Chicken and Rice)",
+    "time": "48 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "598",
+      "carbohydrateContent": "44",
+      "fatContent": "31",
+      "proteinContent": "34"
+    },
+    "directions": [
+      "Pat chicken dry and season with salt, pepper, oregano, onion powder, garlic powder, and chili powder.",
+      "Heat oil in a large skillet over medium-high heat. Sear chicken until golden, about 5 minutes per side. Transfer to a plate.",
+      "In the same skillet, sauté onion, bell pepper, and garlic until softened, about 3 minutes.",
+      "Stir in rice and toast until lightly golden, about 3 minutes.",
+      "Add tomato sauce, chicken broth, and fire-roasted tomatoes, scraping up any browned bits. Bring to a boil.",
+      "Nestle chicken back into the skillet. Add jalapeño if using. Cover, reduce heat, and simmer until chicken is cooked through and rice is tender, 25–30 minutes.",
+      "Remove from heat, cover, and let rest 10 minutes. Stir in peas if using.",
+      "Adjust seasoning, garnish with cilantro, and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Thighs and Drumsticks",
+        "unit": "lb",
+        "notes": "about 6 pieces, bone-in, skin-on",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kosher Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oregano",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ancho",
+        "unit": "tsp",
+        "notes": "alt: cayenne chili powder",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "small",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bell Pepper",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "finely chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Long-grain Rice",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Broth",
+        "unit": "C",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fire-roasted Diced Tomatoes",
+        "unit": "oz",
+        "notes": null,
+        "amount": "14",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jalapeño",
+        "unit": null,
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peas",
+        "unit": "C",
+        "notes": "optional, canned or frozen",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": null,
+        "notes": "fresh, chopped, for serving",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d3e25a7479224d0e13d6f5f8832244960172a0ff47762c05010326b49f61f732",
+    "lineage_hash": "710d8fdfbd6e448b0b6228f8a878ad9ada839b66c1fcac44aa70a7a17f203c4e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/arroz-con-pollo/",
+    "fetchedAt": "2026-08-02T10:09:53.751Z"
+  },
+  "rawSource": "https://muybuenoblog.com/arroz-con-pollo/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

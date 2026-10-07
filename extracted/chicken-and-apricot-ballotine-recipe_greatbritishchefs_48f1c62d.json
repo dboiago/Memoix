@@ -1,0 +1,153 @@
+{
+  "recipe": {
+    "name": "Chicken and Apricot Ballotine",
+    "time": "2 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start by making the ballotines. Lay the chicken thigh fillets skin-side down and place 2 dried apricots in the middle of each. Roll the chicken around the apricots, creating a cylindrical shape, then wrap each one in a slice of Parma ham, ensuring the ham covers the seal of the chicken",
+      "Wrap each ballotine tightly in cling film, making them as neat and cylindrical as possible. Transfer to the fridge and leave for at least 1 hour to chill and set",
+      "Meanwhile, place the dried porcini in a heatproof bowl and pour over boiling water. Leave for 20 minutes to rehydrate, then drain and reserve both the liquor and the mushrooms",
+      "Place a sauté pan over a medium heat and add a drizzle of oil. Take the ballotines out of the fridge, unwrap and fry them until crisp – start by cooking the seam of the Parma ham, as this will help seal them, then roll them around until crisp all over. Once golden, remove from the pan and set aside",
+      "In the same pan, add the button onions cut-side down and cook until golden, then add the garlic and porcini mushrooms. Cook for 3 minutes, then add the white wine and scrape up any stuck bits with a spatula",
+      "Simmer the white wine until reduced by two-thirds, then add the ballotines back into the pan followed by the chicken stock, the reserved mushroom soaking liquor, any leftover apricots and the button mushrooms. Cover and cook for 20 minutes, then remove the lid and simmer for another 20 minutes",
+      "Once the chicken has cooked through, remove them from the sauce and set aside. If the sauce needs reducing further then cook for another 5 minutes, then add the chard leaves and stir in the crème fraiche. Return the chicken to the pan, check for seasoning, finish with the chopped tarragon and bring the pot straight to the table with the cooked rice"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Thighs",
+        "unit": null,
+        "notes": "boneless",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parma Ham",
+        "unit": "slices",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apricots",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Button Onions",
+        "unit": null,
+        "notes": "halved",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Button Mushrooms",
+        "unit": null,
+        "notes": "any larger ones halved",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Dried Porcini Mushrooms",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crème Fraiche",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tarragon",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Swiss Chard Leaves",
+        "unit": null,
+        "notes": "halved lengthways",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basmati Rice",
+        "unit": "g",
+        "notes": "or wild rice, cooked",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f469fe4ddf8f9783e18343195fc28f6a7e47841ca7ecfaf74cb720ad3531e001",
+    "lineage_hash": "156e5b9a1a29239c683a2e73cd8acdd5c1fde001fd7d81b0740d5e307431d9ae"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chicken-apricot-ballotine-recipe",
+    "fetchedAt": "2026-08-03T06:08:03.191Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chicken-apricot-ballotine-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

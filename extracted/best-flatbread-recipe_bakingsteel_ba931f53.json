@@ -1,0 +1,115 @@
+{
+  "recipe": {
+    "name": "Alsatian Flatbread with Pears & Gorgonzola",
+    "time": "1 hr 30 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place your Baking Steel in the oven and preheat your oven to 550ºF. Allow Steel to heat for 45 minutes.",
+      "About 20 to 30 minutes before baking, remove pizza dough from fridge and place on a lightly floured work surface. Place a sheet of parchment paper onto your pizza peel.",
+      "Melt butter in a skillet over medium heat. Add pears and sauté slowly until they are slightly soft and their edges begin to brown. Don't worry about making sure both sides of the pears are lightly browned — they just need to be slightly soft, and you don't want to break them during the sauté process.",
+      "Meanwhile, melt gorgonzola with cream over medium heat until mixture is smooth and creamy. Set aside.",
+      "Gently stretch your pizza round into a rectangle, roughly 11 inches by 6 inches. (Note: You can do this in the air using the backs of your hands to gently stretch out the dough; or you can do this on the surface of your board.) Place dough onto parchment paper-topped Steel. Spoon gorgonzola mixture into a thin layer over the top of the dough. (Note: This amount of cheese/cream will be enough for about 2 pizzas. Store remainder in fridge and re-melt as needed; or make another flatbread.) Arrange pears browned side facing up and edges slightly overlapping over the top of the cheese.",
+      "Shimmy your dough onto your Steel. Bake until your \"flatbread\" is blistered and bubbly, about 5 minutes. Transfer to a cutting board. Make one long cut through the middle of the flatbread lengthwise. Cut crosswise on the bias into thinnish, hors d'oeuvre-size slices. Serve immediately.",
+      "Whisk flour, salt, and yeast in a medium bowl. While stirring with a wooden spoon, gradually add 1.5 cups water; stir until well incorporated. Mix dough gently with your hands to bring it together and form into a rough ball. Transfer to a large clean bowl. Cover with plastic wrap and let dough rise at room temperature (about 72°) in a draft-free area until surface is covered with tiny bubbles and dough has more than doubled in size, about 18 hours (time will vary depending on the temperature in the room).",
+      "Transfer dough to a floured work surface. Gently shape into a rough rectangle. Divide into 3 equal portions. Working with 1 portion at a time, gather 4 corners to center to create 4 folds. Turn seam side down and mold gently into a ball. Dust dough with flour; set aside on work surface or a floured baking sheet. Repeat with remaining portions.",
+      "Let dough rest, covered with plastic wrap or a damp kitchen towel, until soft and pliable, about 1 hour. Wrap each dough ball separately in plastic wrap and chill"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Round Pizza Dough",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "increase if using more pears",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pear",
+        "unit": null,
+        "notes": "thinly sliced, no need to peel; 1 pear per flatbread",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gorgonzola",
+        "unit": "oz",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Flour",
+        "unit": null,
+        "notes": "preferably tipo 00, plus more for shaping dough",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Active Dry Yeast",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5d72c68c049790f36fbd5d6f1aba05411fe2afd20d09472aa0bfa1e908cbe0de",
+    "lineage_hash": "b4f17313e1a86839512555cf2007137e7a5c63cc63af2d49df4fb33aa7021b76"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://bakingsteel.com/blogs/recipes/best-flatbread-recipe",
+    "fetchedAt": "2026-08-01T20:31:40.913Z"
+  },
+  "rawSource": "https://bakingsteel.com/blogs/recipes/best-flatbread-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

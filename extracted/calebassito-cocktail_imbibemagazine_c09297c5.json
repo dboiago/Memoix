@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Calebassito Cocktail",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Tumbler",
+    "garnish": [
+      "Cardamom"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine first 6 ingredients in a mixing glass with ice and stir to combine. Strain into a tumbler over fresh ice. Top with ginger beer and sprinkle cardamom over the top of the drink."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "8cc87d2f16b75d774c2b7ba3c55b1e8053224eba8a7e2964da2943262a82678c",
+    "lineage_hash": "6ba9350bd838b517df6111d4769bf7cb073083e7f718edace1daf04a251ad01d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/calebassito-cocktail/",
+    "fetchedAt": "2026-08-03T18:12:54.208Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/calebassito-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,193 @@
+{
+  "recipe": {
+    "name": "Chicken and Lychee in Sweet and Sour Sauce",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Marinate chicken thigh with cornstarch, salt, and grated ginger for 15 minutes.",
+      "Meanwhile, mix all the sauce ingredients in a bowl and set aside. You can actually adjust the taste of the sauce at this stage with salt and sugar. :)",
+      "Heat oil over medium-high heat in a wok and sauté onion, garlic, and red chilies until the onion looks wilted and slightly translucent, about 3 to 4 minutes.",
+      "Add marinated chicken into the pan and stir until no longer pink, about 1 to 2 minutes.",
+      "Pour the sweet and sour sauce into the pan and bring to a boil. Mix well and adjust taste as needed.",
+      "Add the lychee and mix well. Thicken the sauce with cornstarch slurry.",
+      "Turn off heat, transfer to a serving plate and garnish the sliced scallions. Serve immediately with steamed white rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gram Skinless Boneless Chicken Thigh",
+        "unit": null,
+        "notes": "cut into bite-sizes",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilies (or 1 Red Bell Pepper)",
+        "unit": null,
+        "notes": "cut into 1 inch squares",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lychee in Syrup",
+        "unit": "can",
+        "notes": "565 gram / 20 oz, drained but reserve syrup for making the sauce",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch Slurry (1/2 Tablespoon Corn Starch + 1 Tablespoon Water)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "thinly sliced diagonally",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lychee Syrup Sweet and Sour Sauce",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Ketchup",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Syrup From the Can of Lychee",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Drinking Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plum Sauce",
+        "unit": "Tbsp",
+        "notes": "or substitute with apricot preserves/orange marmalade",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c9489077a8bb60710b0aedeaadc6b3acafa104b0e622d38cd1703d6c481fdecd",
+    "lineage_hash": "c565dd28a55fdc7fa22370c1e56af18bfef1496a5a1916e954ce90f03c37f6a5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/chicken-and-lychee-in-sweet-and-sour-sauce.html",
+    "fetchedAt": "2026-08-01T21:40:58.533Z"
+  },
+  "rawSource": "https://dailycookingquest.com/chicken-and-lychee-in-sweet-and-sour-sauce.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

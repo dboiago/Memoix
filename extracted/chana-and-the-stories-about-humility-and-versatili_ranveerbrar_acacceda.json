@@ -1,0 +1,183 @@
+{
+  "recipe": {
+    "name": "Beetroot Dhokla",
+    "time": "6 hr 30 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Make the batter of soaked rice and dal with warm water, add curd to it and allow to ferment for six hours.",
+      "To make the mixture; in a bowl add the rice and split black gram batter, boiled beetroot paste, finely chopped coriander and gram flour and mix. Leave for 30 minutes.",
+      "Grease another bowl with oil and pour the mixture in it. Place the bowl in the steamer to let the mixture steam.",
+      "In a pan add oil, sliced onions, ginger juliennes, finely chopped green chilli, sesame seeds, curry leaves, french beans, water, salt, sugar and vinegar and let it reduce for two minutes.",
+      "Remove the prepared dhoklas from the steamer and cut into long pieces. Place it on a plate and add some of the french bean mixture. Add some more dhoklas and keep the leftover french bean mixture."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Medium-grain Rice",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chana Dal",
+        "unit": "C",
+        "notes": "washed",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sour Yogurt",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Warm Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Boiled Beetroot Paste",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "tsp",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Flour",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "tsp",
+        "notes": "sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Juliennes",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilli",
+        "unit": "tsp",
+        "notes": "finely chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "4-5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "French Beans",
+        "unit": null,
+        "notes": null,
+        "amount": "9-10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "To Taste Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1f77b3b4ff947e485ce9ebca7fbceec807db44e4b06cb19c48b5d3487c14a701",
+    "lineage_hash": "fdfb1cb701b18747230dfaf9d184f4a2560728b6cf373775975a95cc42269766"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/chanaand-stories-about-humility-and/",
+    "fetchedAt": "2026-08-01T17:30:23.269Z"
+  },
+  "rawSource": "https://ranveerbrar.com/chanaand-stories-about-humility-and/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

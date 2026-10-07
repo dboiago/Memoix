@@ -1,0 +1,152 @@
+{
+  "recipe": {
+    "name": "Beer Duck",
+    "time": "1 hr 15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "253",
+      "carbohydrateContent": "8.1",
+      "fatContent": "5.6",
+      "proteinContent": "28.7"
+    },
+    "directions": [
+      "Use a pair of chicken shears or a large heavy knife (preferably a cleaver) to cut the duck leg into large bite-size pieces.",
+      "Heat oil in a wok (or a dutch oven, or a large deep skillet) over medium-high heat until hot. Swirl the wok so the oil covers the bottom. Add the duck pieces without overlapping, skin side down. Cook in batches if needed. Let cook without moving until the bottom turns golden brown. Flip to cook the other side until golden. Then turn to medium or medium-low heat. Flip the duck occasionally as you continue to cook for 5 to 6 minutes to render the excess fat. Once done, transfer the duck pieces to a plate and set aside.",
+      "(Optional) If there’s too much oil in your pan, you can carefully remove some using a ladle. Leave about 3 tablespoons of oil / rendered duck fat.",
+      "Add the green onion, ginger, garlic, chili pepper, cinnamon stick, and star anise. Cook and stir to release fragrance until the aromatics are lightly charred.",
+      "Pour in the beer and immediately use a wooden spatula to scrape the bottom, releasing any brown bits.",
+      "Add the light soy sauce, dark soy sauce and sugar. Cook over medium-high heat until the broth comes to a boil. Then cover the wok. Turn down the heat so the broth maintains a low boil. It’s important to use enough heat so the broth is not simmering, so the fat will emulsify into the broth, creating a thick sauce at the end. Cook until the duck turns tender (but not fall-off-the-bone tender), 30 to 40 minutes. If you used larger duck pieces (unhacked thighs and drumsticks, you might need to braise a bit longer).",
+      "Uncover the pan and turn to medium-high heat. Cook to reduce the broth, until it is thick enough to coat the back of a spoon, 10 to 15 minutes. You should watch closely during this step, and use a spatula to scoop the duck from the bottom, to prevent sticking and burning. You can taste the duck and the sauce during this process, and add a bit of salt if needed.",
+      "(Optional) Once the sauce has reduced, add the hot chili pepper, if using.",
+      "Mix everything well so the duck is evenly covered with the sauce. Transfer everything to a deep plate or bowl and serve as a main dish over steamed rice, or by itself."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Duck Legs",
+        "unit": null,
+        "notes": "2 lb total, or 1 whole duck",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "or vegetable oil",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "halved crosswise",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thumb Ginger",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "smashed",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Chili Pepper",
+        "unit": null,
+        "notes": "dried",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rock Sugar",
+        "unit": "Tbsp",
+        "notes": "or 1 teaspoon white sugar",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "or soy sauce",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce (or Soy Sauce)",
+        "unit": "tsp",
+        "notes": "*Footnote 1",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beer",
+        "unit": "cans",
+        "notes": "total 24 oz / 700 ml",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Chili Pepper for Garnish (optional)",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4719f19327584aa84e0afa253734dd7e49fc272e4598a33d512fbfe382844b04",
+    "lineage_hash": "0c8cbf266fe3855c77c93995bf0b5a1f0947e09b06f08fd0ca232a1216871ae8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/beer-duck/",
+    "fetchedAt": "2026-08-02T03:13:55.258Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/beer-duck/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

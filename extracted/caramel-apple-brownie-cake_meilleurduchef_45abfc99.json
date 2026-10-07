@@ -1,0 +1,333 @@
+{
+  "recipe": {
+    "name": "Caramel & Apple Brownie Cake",
+    "time": "2 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Before starting this Caramel & Apple Brownie Cake recipe, make sure you have organised the necessary ingredients for the crunchy hazelnut praline.",
+      "For the crunchy hazelnut praline:  Pour the egg whites in the stand mixer recipient.",
+      "Tip the water and castor sugar in a saucepan.",
+      "Cook the sugar until it gets to 121 or 125°C. For this step, the use of a digital thermometer is recommended.",
+      "Gradually add the cooked sugar to the beaten egg whites, pouring it against the inner side of the bowl...",
+      "... and beat until cooled down completely.",
+      "Sift the icing sugar...",
+      "... and add the ground hazelnuts and praline crumbs.",
+      "Pour the preparation in the cold meringue, mixing gently with a rubber spatula.",
+      "Pour the preparation on a perforated baking sheet, lined with a baking mat...",
+      "... and spread with a cranked spatula. In a fan-assisted oven, on the middle rack, bake at 160°C (gas 3) for about 40 minutes.",
+      "For the brownie base:  Organise all the necessary ingredients.",
+      "Crack the whole eggs in a mixing bowl.",
+      "Add the castor sugar...",
+      "... and whisk vigorously until foamy. Add the melted butter and whisk.",
+      "Add the blanched hazelnuts...",
+      "... and the Inaya chocolate couverture, melted and brought to 40°C.",
+      "The preparation for the brownie base is ready.",
+      "Pour into 2 tart rings (Ø 20cm), spread evenly and bake at 180°C (gas 4) for about 20 minutes.",
+      "For the Granny Smith apples:  Peel the apples...",
+      "... then core...",
+      "... and cut into quarters.",
+      "Heat the Mycryo cocoa butter in a hot non-stick frying pan.",
+      "Melt the cocoa butter...",
+      "... and arrange the apple quarters in the pan.",
+      "Add a drizzle of honey, and sauté the apples slightly.",
+      "Cover the pan with cling film to steam cook the apples for about 10 minutes.",
+      "Remove the cling film and let cool.",
+      "For the Cara Crakine crispy biscuit:  In 2 tart rings (diameter 16cm), place a generous tablespoon of Cara Crakine caramel filling...",
+      "... and spread into a thin layer, to a thickness of 1 mm.",
+      "In each ring, arrange 8 cold apple quarters.",
+      "Refrigerate for the Cara Crakine to set.",
+      "For the milk chocolate mousse:  Heat the milk to 40°C.",
+      "The use of a laser thermometer is essential for this operation.",
+      "Pour over the milk chocolate, which has been melted and brought to 40°C as well.",
+      "Combine well to make a ganache. When the preparation has a temperature of 35°C...",
+      "... add 1/3 of whipped cream to facilitate the incorporation.",
+      "Then little by little, add the preparation to the rest of the whipped cream...",
+      "... folding gently.",
+      "Cover the apples with the chocolate mousse and fill up top.",
+      "Even the surface with a cranked spatula and place in the freezer.",
+      "For the crunchy hazelnut praline:  Break the biscuit into medium-sized chunks.",
+      "Place the biscuit chunks in a bowl...",
+      "... and add a small amount of egg white.",
+      "Combine. The biscuit pieces should be coated with egg white.",
+      "Sprinkle some castor sugar and combine. Bake at 150°C (gas 1) for about 20 minutes.",
+      "For the caramel icing:  Hydrate the gelatine powder with 108 grams of water.",
+      "Heat the castor sugar to make a caramel.",
+      "Add the 375 g of water. Take extra precautions, as you might get burnt with splashes of boiling caramel!",
+      "Add the glucose syrup, melted in the microwave for a few seconds beforehand...",
+      "... the sweetened condensed milk...",
+      "... the white chocolate pistoles...",
+      "Set aside for 2 hours, or until the icing goes down to a temperature of 20-25°C.",
+      "Assembling the cake:  Remove the cold brownie bases...",
+      "... from the tart rings. Place each brownie on a cake board.",
+      "Remove the chocolate mousse discs from the tart rings...",
+      "... and transfer onto a cooling rack placed on top of a cooking tray.",
+      "Pour the icing in one stroke, starting in the centre then working towards the edges, making sure to coat the whole surface.",
+      "By coming into contact with the frozen disc, the icing will set immediately.",
+      "Even the surface with a cranked spatula while the icing is still liquid...",
+      "... and let the excess drip off.",
+      "Gently place the chocolate mousse disc in the centre of the brownie.",
+      "Arrange some crunchy hazelnut pieces all around the frozen disc.",
+      "They will stick to the caramel icing.",
+      "Decorate the surface of the cake with a few chocolate spirals...",
+      "... and sprinkle with a few gold flakes.",
+      "Reserve in the fridge until ready to serve. Enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Inaya™ Dark Chocolate Couverture",
+        "unit": "g",
+        "notes": "65% cocoa",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Eggs",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Castor Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hazelnuts",
+        "unit": "g",
+        "notes": "crushed",
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granny Smith Apples",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cara Crakine Caramel Filling",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mycryo Cocoa Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "15-20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "A Drizzle of Honey (between 5 and 10cl)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "85",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Alunga™ Milk Chocolate Couverture",
+        "unit": "g",
+        "notes": "41% cocoa",
+        "amount": "220",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipped Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glucose Syrup",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "375",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweetened Condensed Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Zéphyr White Chocolate Couverture",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Powder Gelatine",
+        "unit": "g",
+        "notes": "200 bloom",
+        "amount": "18",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "108",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Hazelnuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Praline Crumbs",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": "g",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Castor Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Spirals",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gold Flakes",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "73a49205c821379f30b80073655fa07251d3f8e725e599de4f487fb11e6a7d68",
+    "lineage_hash": "326e71b5627d48a949a1e9c7cc4d72e26875740a3a52db9b53ac01863df181ac"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.meilleurduchef.com/en/recipe/caramel-apple-brownie-cake.html",
+    "fetchedAt": "2026-08-02T15:33:03.183Z"
+  },
+  "rawSource": "https://www.meilleurduchef.com/en/recipe/caramel-apple-brownie-cake.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,152 @@
+{
+  "recipe": {
+    "name": "Apple Muffin",
+    "time": "30 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make this apple muffin recipe, start by preheating the oven to 190˚C/Gas mark 5 and place 12 muffin cases in a muffin tray",
+      "In a large bowl, sift together the flour, baking powder, salt, cinnamon, nutmeg, ginger and sugar",
+      "Peel, core and dice the apples. In a separate bowl, beat the egg and stir in the milk. Add the oil, melted butter and stir in the diced apple",
+      "Add the wet mixture into the dry and combine well. Stir through the golden sultanas",
+      "Spoon the mixture into the muffin cases and sprinkle the tops with brown sugar",
+      "Bake in the oven for 20 minutes until lightly brown. The apple muffins should spring back when pressed. Allow to cool slightly before eating"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Nutmeg",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Ginger",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sunflower Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granny Smith Apple",
+        "unit": "g",
+        "notes": "peeled and diced",
+        "amount": "170",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Sultanas",
+        "unit": "g",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a347dad19ffba47332509c852fe60c2634d1e43281f84b5b65b1012bf2ce76a4",
+    "lineage_hash": "bf6ad004d125ef5327ce6a6c34ff96de217ac547f0c7e33e1084693a40641345"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/apple-muffin-recipe",
+    "fetchedAt": "2026-08-03T15:36:19.576Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/apple-muffin-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

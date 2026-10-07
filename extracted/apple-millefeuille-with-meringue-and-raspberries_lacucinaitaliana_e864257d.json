@@ -1,0 +1,77 @@
+{
+  "recipe": {
+    "name": "Apple Millefeuille with Meringue and Raspberries",
+    "time": "30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Whisk the egg whites and, in the meantime, melt 1/2 cup of sugar in a small pot until it reaches 244°F. When the egg whites start to become frothy, pour in the sugar in a thin stream and continue to whisk until the mixture cools to room temperature (meringue).&nbsp;",
+      "Slice the apples, without peeling them, into very thin rounds (choose 16 of similar size) and then core them with a pastry cutter. Transfer the meringue to a pastry bag and draw a circle of meringue on each apple slice. Lay the slices on top of each other to create 4 stacks of 4; cook in a steam oven for 10 minutes at 212°F (millefeuille).",
+      "Sprinkle with chopped hazelnuts and serve with a sauce of crushed raspberries with sugar."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sugar",
+        "unit": "oz",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raspberries",
+        "unit": "oz",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apples",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hazelnuts",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "35322d210cdab8d596967231ac0479dac3b9a1e120f6f2a41c62b12d790cc163",
+    "lineage_hash": "6a3b11dc3f74b14354a6ec630040ede4ec9f1a837963d27db4ecc418029c16f5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/apple-millefeuille-with-meringue-and-raspberries",
+    "fetchedAt": "2026-08-02T19:11:27.775Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/apple-millefeuille-with-meringue-and-raspberries",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

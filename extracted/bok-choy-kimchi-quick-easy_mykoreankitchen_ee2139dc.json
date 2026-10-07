@@ -1,0 +1,189 @@
+{
+  "recipe": {
+    "name": "Bok Choy Kimchi",
+    "time": "2 hr",
+    "course": "sides",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "KR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "457",
+      "carbohydrateContent": "85",
+      "fatContent": "11",
+      "proteinContent": "22"
+    },
+    "directions": [
+      "Prepare the bok choy. Trim a thin slice off the root end of each bok choy, leaving enough to keep the leaves attached. Halve each bok choy lengthwise. Rinse thoroughly under cold running water, paying particular attention to the base, where dirt tends to collect between the leaves. Drain well in a colander.",
+      "Brine the bok choy. In a large bowl, dissolve the coarse salt in the water. Add the bok choy and soak in the brine.The brining time will vary depending on the size of the bok choy and the thickness of the stems. If the stems are thick and firm, brine for about 90 minutes so the salt penetrates evenly. If the stems are thinner, 60 minutes is usually sufficient. Turn the bok choy 2 to 3 times during brining for even brining.Once brined, rinse the bok choy lightly under running water once, then drain well.",
+      "Make the seasoning paste. Add the apple, garlic, ginger, salted shrimp, fish sauce, plum syrup, and half of the red sweet pointed pepper (if using) to a blender. Pulse until combined.Add the remaining red sweet pointed pepper (if using) and pulse once or twice more, leaving small pieces of pepper throughout the seasoning.",
+      "Make the flour paste. In a small microwave-safe bowl, combine the flour and water until smooth. Microwave for about 15 seconds, then stir. If it has thickened to the consistency of a thin porridge, it’s ready to use. If it is still runny, microwave in 5 to 10 second intervals, stirring after each, until thickened.",
+      "Mix the kimchi. Transfer the blended seasoning to a large bowl. Add the Korean chili flakes, sugar, and sesame seeds. If making the milder version, use 2 Tbsp Korean chili flakes and 3–4 Tbsp paprika powder instead. Add the flour paste and stir until well combined. Add the onion, carrot, green onion, and the remaining red sweet pointed pepper (if using), then mix until evenly combined.Add the bok choy and gently toss until each piece is evenly coated with the seasoning. The leaves are delicate, so avoid squeezing or handling them roughly.",
+      "Enjoy fresh or ferment. You can serve the kimchi straight after making it if you prefer a fresh, crisp flavor. For a more rounded flavor, transfer it to an airtight container and leave it at room temperature until fermentation begins (about 24 hours in my kitchen), then refrigerate. It will continue to develop a deeper, tangier flavor over the next few days while retaining much of its crisp texture. When ready to serve, cut the bok choy into bite-sized pieces with kitchen scissors or a knife, as the leaves remain attached at the base."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bok Choy",
+        "unit": "kg",
+        "notes": "2.2.lb",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Korean Coarse Salt",
+        "unit": "C",
+        "notes": "or rock salt",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lukewarm Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Apple (4.2 Oz)",
+        "unit": "g",
+        "notes": "roughly chopped",
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": "medium",
+        "notes": "or 2 Tbsp jarred minced garlic",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger (0.2 Oz)",
+        "unit": "g",
+        "notes": "or 1 tsp jarred minced ginger, fresh, peeled",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted Shrimp",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Korean Fish Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Korean Plum Syrup",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Sweet Pointed Pepper (3.9 Oz)",
+        "unit": "g",
+        "notes": "optional, thinly sliced, divided",
+        "amount": "110",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Korean Chili Flakes",
+        "unit": "Tbsp",
+        "notes": "gochugaru",
+        "amount": "5-6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Sesame Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion (3.5 Oz)",
+        "unit": "g",
+        "notes": "julienned",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot (2.6 Oz)",
+        "unit": "g",
+        "notes": "julienned",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion (1.4 Oz)",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "cdd926ef919f4ab48b3a29ba9488bf77bb215af029a1fb24a545770da4cdf442",
+    "lineage_hash": "8e50132191776732c19b1fc2e26ec04cb649710cdc3f1cb3de96791539bb5cf6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://mykoreankitchen.com/bok-choy-kimchi/",
+    "fetchedAt": "2026-08-02T03:33:34.683Z"
+  },
+  "rawSource": "https://mykoreankitchen.com/bok-choy-kimchi/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

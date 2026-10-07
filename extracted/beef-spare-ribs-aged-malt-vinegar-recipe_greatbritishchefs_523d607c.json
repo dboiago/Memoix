@@ -1,0 +1,183 @@
+{
+  "recipe": {
+    "name": "Beef Spare Ribs, Aged Malt Vinegar",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Toast the coriander seeds, star anise and cloves in a pan. Add the toasted spices and all the other aromatics to a large pan. Add the salt and water, and then bring to the boil to dissolve salt. Take off the heat and chill",
+      "Once the brine is cool, add the ribs and brine them in the fridge for 2.5 hours",
+      "Once brined, cut the rack of ribs into single ribs and pat dry with paper towels",
+      "Fill a large, deep pan with a few centimetres of oil, and heat up to 180°C",
+      "Toss the ribs in gluten free self raising flour and deep-fry for 5 minutes at 180°C. Serve drizzled with aged malt vinegar"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Coriander Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Juniper Berries",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Peel",
+        "unit": "g",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Peel",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "head",
+        "notes": "cloves separated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": "fresh, roughly chopped",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "kg",
+        "notes": null,
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rack of Beef Short Ribs",
+        "unit": null,
+        "notes": "about 6 ribs",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for deep-frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gluten-free Self-raising Flour",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Aged Malt Vinegar",
+        "unit": null,
+        "notes": "for serving",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3036f83fb9cbc897a2bf78ba5316985e991f31f284ca7707a63ae814bd31fdc8",
+    "lineage_hash": "4d19fb0c2ff482536d01d45169965195bde1dfe1f4d966988fdb4ce0bed12594"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beef-spare-ribs-malt-vinegar-recipe",
+    "fetchedAt": "2026-08-02T15:57:01.671Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beef-spare-ribs-malt-vinegar-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

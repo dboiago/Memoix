@@ -1,0 +1,133 @@
+{
+  "recipe": {
+    "name": "Air Fryer Masala Cashews",
+    "time": "15 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "516",
+      "carbohydrateContent": "41",
+      "fatContent": "33",
+      "proteinContent": "19"
+    },
+    "directions": [
+      "Take cashews in a large bowl and add 1 teaspoon oil and toss the cashews until they are all coated with the oil. Set aside.",
+      "To another bowl add- besan, rice flour, ginger-garlic paste, Kashmiri red chili powder, turmeric, chaat masala, black pepper and salt.Using a wire whisk, mix everything together until well combined.",
+      "Now transfer this mixture to the bowl with cashews and toss it all together.",
+      "Start adding water, little by little now and keep mixing with your hands. Do not add more water than needed, you only need enough water for the spices to coat the cashews. Start with 1 tablespoon and then add more as needed.I added around 2 tablespoons water here and all cashews got coated with the spices and besan mixture.",
+      "Pre-heat air fryer at 325 F degrees for 2 minutes. Then place the cashews in a single layer into the air fryer. If there&#039;s any cashew which isn&#039;t coated with the masala, you can just press some on top of that.",
+      "Air fry at 325 F degrees for 10 minutes, remember to give it a good shake at the half way mark. Remove the masala cashews from the air fryer and let them cool completely. They will crisp up as they cool. Store in an airtight container and enjoy with chai!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cashews",
+        "unit": "C",
+        "notes": "150 grams",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": "5 ml, I used avocado oil",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Besan",
+        "unit": "C",
+        "notes": "57 grams",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Flour",
+        "unit": "Tbsp",
+        "notes": "14 grams",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger-garlic Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kashmiri Red Chili Powder",
+        "unit": "tsp",
+        "notes": "not hot, replace 1/2 teaspoon with regular chili powder for spicy cashews",
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chaat Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": "around 2 tablespoons",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1e856220ffe0976df8df6b1c69ff9fa1873075e44e9ef3301a97e8632a7e4e68",
+    "lineage_hash": "394d30cd28080f8f0efaa75bee73f04b5af45ae659c89e66c0bc9762041ea1cb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/air-fryer-masala-cashews/",
+    "fetchedAt": "2026-08-02T01:26:49.986Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/air-fryer-masala-cashews/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

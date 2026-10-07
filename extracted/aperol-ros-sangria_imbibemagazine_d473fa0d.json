@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Aperol Rosé Sangria",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pour the rosé, Aperol, and syrup into the large pitcher. Add the berries and citrus slices and stir to combine. Refrigerate for at least 2 hours. Pour into wine glasses filled with ice. Top each glass with a splash of club soda. Garnish with extra fruit."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "9885eba4a8affe957f9be77da903443bbdefb026da18e7d6532db3b6f4bad149",
+    "lineage_hash": "5682b0e9a35deb7d6ed0074040c146d6dcb19ac9ccd89454340cefa385979eb6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/aperol-rose-sangria/",
+    "fetchedAt": "2026-08-04T02:03:24.592Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/aperol-rose-sangria/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

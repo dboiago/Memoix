@@ -1,0 +1,159 @@
+{
+  "recipe": {
+    "name": "Ayam Tuturaga - Chicken in Spicy Basil Coconut Sauce",
+    "time": "40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "ID",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat oil in a pot and sauté spice paste, lemongrass, pandan leaves, and kaffir lime leaves until fragrant.",
+      "Pour coconut milk, season with salt, and bring to a boil.",
+      "Add chicken pieces and cook until no longer pink. Reduce heat and simmer for 5-8 minutes until chicken pieces are cooked through.",
+      "Toss in the lemon basil leaves and cook until wilted.",
+      "Discard the lemongrass and pandan leaves, transfer to a serving bowl, and garnish with the reserved lemon basil leaves."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemongrass (indonesian: Sereh)",
+        "unit": null,
+        "notes": "bruised and knotted",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pandan Leaves (indonesian: Daun Pandan)",
+        "unit": null,
+        "notes": "knotted",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kaffir Lime Leaves",
+        "unit": null,
+        "notes": "Indonesian: daun jeruk",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "ml",
+        "notes": "Indonesian: santan",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Skinless Boneless Chicken Breast",
+        "unit": null,
+        "notes": "Indonesian: daging dada ayam",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Basil Leaves (indonesian: Daun Kemangi)",
+        "unit": "C",
+        "notes": "reserve 8-10 leaves as garnish",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grind the Following Into Spice Paste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bird Eye Chilies",
+        "unit": null,
+        "notes": "Indonesian: cabe rawit",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Cayenne Chilies",
+        "unit": null,
+        "notes": "Indonesian: cabe merah keriting",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": "Indonesian: bawang merah",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Candlenuts",
+        "unit": null,
+        "notes": "Indonesian: kemiri",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "Indoensian: jahe",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric",
+        "unit": "inch",
+        "notes": "Indonesian: kunyit",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "df994673d44eb4b534198b6ca451163054e68b7bccfa2e92069185c9df962b73",
+    "lineage_hash": "d34478fa45dfe5a72fb2503f6a910626a95081c37d151bf1af84a0abfc0d74f5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/ayam-tuturaga-chicken-in-spicy-basil-coconut-sauce.html",
+    "fetchedAt": "2026-08-02T07:30:35.093Z"
+  },
+  "rawSource": "https://dailycookingquest.com/ayam-tuturaga-chicken-in-spicy-basil-coconut-sauce.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

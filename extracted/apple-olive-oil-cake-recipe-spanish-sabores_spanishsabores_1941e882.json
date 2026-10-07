@@ -1,0 +1,167 @@
+{
+  "recipe": {
+    "name": "Apple Olive Oil Cake",
+    "time": "1 hr 5 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "ES",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "415",
+      "carbohydrateContent": "55.03",
+      "fatContent": "20.79",
+      "proteinContent": "4.81"
+    },
+    "directions": [
+      "Grease and flour a 9.5-inch (24 cm) cake pan. (image 1)",
+      "Mix together the two kinds of flour, salt, and baking powder. (image 2)",
+      "Beat the sugar, honey, and eggs with a blender for 2 minutes, or until well combined, then _whisk in the Greek yogurt_ on low speed. (image 3)",
+      "Add the olive oil, drizzling it in slowly while the mixing is running on low. (image 4)",
+      "Fold in the dry ingredients with a spatula, being careful not to overmix. (image 5)",
+      "Fold in the diced apple until blended. (image 6)",
+      "_Mix the crumble ingredients together_ to form a paste. Pour the batter into the prepared pan and top with the crumble. (image 7)",
+      "Bake the apple olive oil cake at 375°F (190°C) for 50 minutes, or until a toothpick comes out clean. _Cool for 20 minutes, slice, and enjoy!_ (image 8)"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cake Flour",
+        "unit": "C",
+        "notes": "alt: all-purpose flour",
+        "amount": "1½",
+        "section": "Apple Olive Oil Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Spelt Flour",
+        "unit": "C",
+        "notes": "alt: additional cake flour",
+        "amount": "¼",
+        "section": "Apple Olive Oil Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Apple Olive Oil Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Apple Olive Oil Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": "Apple Olive Oil Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Honey Optional",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Apple Olive Oil Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "3",
+        "section": "Apple Olive Oil Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Scant Cup Full-fat Unsweetened Greek Yogurt",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Apple Olive Oil Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Spanish Extra Virgin Olive Oil I Used a Fragrant Hojiblanca",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅔",
+        "section": "Apple Olive Oil Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Green Apple Finely Diced",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": "Apple Olive Oil Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Powdered Sugar to Top the Cake Unless Making the Crumb Below",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Apple Olive Oil Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Butter at Room Temperature",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Optional Crumb Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Optional Crumb Topping",
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Optional Crumb Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Optional Crumb Topping",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "19057a523b6c43d14c20b65c6293085bd19da7c77ed965471ceca25ca31bc3b4",
+    "lineage_hash": "8ffd1ac2fc7f243e423dfa52dc5c0b6490f5b3c8e08a47f2facf0d080cb70d8a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://spanishsabores.com/apple-olive-oil-cake-recipe/",
+    "fetchedAt": "2026-08-02T07:51:56.533Z"
+  },
+  "rawSource": "https://spanishsabores.com/apple-olive-oil-cake-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

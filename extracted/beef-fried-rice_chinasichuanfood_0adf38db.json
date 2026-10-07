@@ -1,0 +1,116 @@
+{
+  "recipe": {
+    "name": "Beef Fried Rice",
+    "time": "25 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "729",
+      "carbohydrateContent": "92",
+      "fatContent": "30",
+      "proteinContent": "20"
+    },
+    "directions": [
+      "In a small bowl, marinate beef with pinch of salt and pepper. Set aside for 10 minutes.",
+      "Pour oil in wok and add garlic slices. Fry over slow fire until aromatic. Transfer the garlic slices out.",
+      "Add minced beef in and fry for a while until aromatic.&nbsp;&nbsp;",
+      "Place rice in and mix well.",
+      "Place light soy sauce, fried garlic and chopped peppers in. Give a big stir fry to mix everything well. Add cumin powder and salt accordingly lastly.&nbsp;"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Leftover Rice",
+        "unit": "C",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Marinated with a Small Pinch of Salt and Pepper",
+        "unit": "C",
+        "notes": "minced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Pepper",
+        "unit": "C",
+        "notes": "fresh, diced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Pepper",
+        "unit": "C",
+        "notes": "diced, fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves Sliced",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce Optional",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "808678c3bf316a58bc2fe72cce76c04b1669a183eb122bd3beb1b5cd8f80c5f0",
+    "lineage_hash": "48bf19380709f8b220a07a90c3d6d730f99e29652c623736dde73a8cf8839987"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/beef-fried-rice/",
+    "fetchedAt": "2026-08-02T00:38:34.300Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/beef-fried-rice/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

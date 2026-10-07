@@ -1,0 +1,198 @@
+{
+  "recipe": {
+    "name": "Bak Kut Teh - Pork Ribs in Spices and Herbal Soup",
+    "time": "2 hours",
+    "course": "soup",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place pork ribs and water in a soup pot and bring to a boil. Keep removing the scum until the soup is clear.",
+      "Once the soup is clear, add angelica root, lovage rhizome, garlic, cinnamon, star anise, and cloves. Season with dark soy sauce, soy sauce, salt, and sugar. Once it boils again, reduce heat, cover the pot with a lid, and simmer for 1 hour, or until the pork is cooked and tender.",
+      "Add shiitake, tofu, and goji berries into the pot. Bring to a boil again, and cook for another 10 minutes. Adjust with salt and sugar as needed.",
+      "Turn off heat, and serve hot with the chili and garlic soy sauce accompanied with a bowl of steamed white rice and you tiao (Chinese crullers)."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gram Pork Ribs",
+        "unit": null,
+        "notes": null,
+        "amount": "800",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Angelica Root",
+        "unit": null,
+        "notes": "Chinese: dang gui",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Sichuan Lovage Rhizome",
+        "unit": null,
+        "notes": "Chinese: chuan xiong",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic (indonesian: Bawang Putih)",
+        "unit": "head",
+        "notes": "peeled and lightly bruised",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": null,
+        "notes": "Indonesian: kayu manis",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": "Indonesian: bunga lawang/pekak",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "(indonesian: Cengkeh)",
+        "unit": "clove",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "or regular soy sauce",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shiitake (indonesian: Jamur Shiitake)",
+        "unit": null,
+        "notes": "fresh, remove stems and cut into bite size pieces",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Deep Fried Tofu (indonesian: Tahu Goreng)",
+        "unit": null,
+        "notes": "blanched in hot water and cut into bite size pieces",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Goji Berries",
+        "unit": "Tbsp",
+        "notes": "Chinese: gou qi zi",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili and Garlic Soy Sauce (mix the Following Together)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Thai Chilies",
+        "unit": null,
+        "notes": "Indonesian: cabe rawit hijau",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Thai Chilies",
+        "unit": null,
+        "notes": "Indonesian: cabe rawit merah",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "Indonesian: bawang putih",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "or regular soy sauce",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4bb3622d7f47857f08a95bac8a94b1a4394bcb31ee827501f84ce2a3b4718f1e",
+    "lineage_hash": "56b772b3bd22f6b17a8609d0a41e1fb748009da46c06bf44473802dd21a5a9bb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/bak-kut-teh-pork-ribs-in-spices-and-herbal-soup.html",
+    "fetchedAt": "2026-08-02T09:08:15.983Z"
+  },
+  "rawSource": "https://dailycookingquest.com/bak-kut-teh-pork-ribs-in-spices-and-herbal-soup.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

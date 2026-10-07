@@ -1,0 +1,191 @@
+{
+  "recipe": {
+    "name": "Chicken Stuffed Hatch Chiles",
+    "time": "53 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "397",
+      "carbohydrateContent": "16",
+      "fatContent": "28",
+      "proteinContent": "22"
+    },
+    "directions": [
+      "Fire up a comal on the stovetop. Rinse the chiles and pierce each with a knife. Place them on the comal and let them roast evenly. You will have to keep an eye on them, making sure to turn them over until all sides are roasted. When done, the skins should be evenly blistered and mostly black.",
+      "Place roasted chiles into a plastic bag and close the bag. Cover the plastic bag with a kitchen towel. The steam will help the blackened skin to separate. When cool, rub off the blackened skin, careful to keep the stem intact on the chiles.",
+      "Using a small sharp knife, carefully slit chiles open along 1 side. Remove seeds, leaving stems attached. Set aside to fill later.",
+      "Preheat oven to 400 degrees F.",
+      "In a medium saucepan heat oil over medium-high. Add corn; cook and stir 2 minutes. Add chili powder; cook and stir 1 minute.",
+      "Add broth. Bring to boiling; reduce heat. Simmer, uncovered, 3 minutes. Remove from heat; cool 10 minutes. Stir in chicken, cheese, egg, salt, and black pepper.",
+      "Spoon ¼ cup of the filling onto each chile pepper.",
+      "In a small saucepan melt butter over medium. Add garlic and cook for 2 minutes, stirring occasionally.",
+      "Add flour, stirring until smooth. Add half-and-half. Cook and stir until thickened and bubbly. Cook and stir 1 minute more. Stir in cilantro. Season to taste with salt and pepper.",
+      "Coat a rectangular baking dish with cooking spray.",
+      "Pour Cilantro Cream Sauce in the prepared baking dish. Arrange peppers, filling sides up, in sauce.",
+      "Bake, uncovered, about 20 minutes or until filling is heated through.",
+      "Learn how to roast chile peppers.",
+      "This dish is made with cooked chicken, try Oven Baked Chicken Breasts, Easy Poached Chicken, or use store-bought rotisserie chicken for a shortcut.",
+      "This dish is best served with a side of Cilantro Lime Rice and Frijoles.",
+      "Chicken can easily be substituted with shrimp for a Lent friendly alternative."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Hatch Chile Peppers",
+        "unit": null,
+        "notes": "or sub Anaheim or Poblano",
+        "amount": "12",
+        "section": "Chicken Stuffed Hatch Chiles",
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Chicken Stuffed Hatch Chiles",
+        "isOptional": false
+      },
+      {
+        "name": "Or Frozen Corn Kernels",
+        "unit": "C",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": "Chicken Stuffed Hatch Chiles",
+        "isOptional": false
+      },
+      {
+        "name": "Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Chicken Stuffed Hatch Chiles",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Broth",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Chicken Stuffed Hatch Chiles",
+        "isOptional": false
+      },
+      {
+        "name": "Cooked Chicken",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "1½",
+        "section": "Chicken Stuffed Hatch Chiles",
+        "isOptional": false
+      },
+      {
+        "name": "Queso Oaxaca",
+        "unit": "C",
+        "notes": "shredded",
+        "amount": "2",
+        "section": "Chicken Stuffed Hatch Chiles",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "lightly beaten",
+        "amount": "1",
+        "section": "Chicken Stuffed Hatch Chiles",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Chicken Stuffed Hatch Chiles",
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Chicken Stuffed Hatch Chiles",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Cilantro Cream Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "Tbsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": "Cilantro Cream Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Cilantro Cream Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Half-and-half",
+        "unit": "C",
+        "notes": null,
+        "amount": "1¼",
+        "section": "Cilantro Cream Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "C",
+        "notes": "chopped, fresh",
+        "amount": "½",
+        "section": "Cilantro Cream Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Cilantro Cream Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Cilantro Cream Sauce",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "aee3be5b87c2c7950b44fb35b31e876762a21525d6a64d73184f18ea9824817a",
+    "lineage_hash": "3e5b70a3fed37a29643fde62d0acea17f75614f45949289596426bc6e6df109b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/chicken-stuffed-hatch-chiles/",
+    "fetchedAt": "2026-08-02T10:24:41.982Z"
+  },
+  "rawSource": "https://muybuenoblog.com/chicken-stuffed-hatch-chiles/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

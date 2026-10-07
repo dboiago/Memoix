@@ -1,0 +1,148 @@
+{
+  "recipe": {
+    "name": "Almond Cake with Blueberry Coulis",
+    "time": "1 hr 45 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 175°C (350°F) and line a 23-cm (9-inch) round cake pan with parchment paper.",
+      "Using a mixer or a food processor, cream together the butter and sugar until fluffy.",
+      "If the almond paste is fresh and feels flexible, cut it in small dice. If the package has been open for a while and the past has hardened, grate it using the large holes of a grater.",
+      "Add the almond paste to the butter-sugar mixture and beat well to incorporate fully. Add the egg yolks and beat again to incorporate. Add the yogurt and almond extract, and beat again until blended.",
+      "In a medium mixing-bowl, sift together the flour, baking soda and salt. Fold the flour mixture into the batter, mixing just until blended.",
+      "Pour the batter into the prepared pan, level the surface, and insert in the oven. After 30 minutes, place a piece of parchment paper over the cake to prevent it from coloring too much, and bake for another 15 minutes. Turn the oven off and leave the cake in for a final 15 minutes.",
+      "Transfer to a rack to cool for 15 to 20 minutes. Lift the cake carefully out of the pan and allow to cool completely.",
+      "Dust with confectioner's sugar and serve with blueberry coulis (recipe below) if desired.",
+      "In a medium saucepan, combine the blueberries, water and syrup. Bring to a simmer, cook for 2 minutes, then remove from the heat and let cool.",
+      "Put on an apron (really, allow me to insist) and use a blender or an immersion blender to purée the mixture. Add a little more water to thin it out if necessary. Taste and decide if it needs a little sweetening, depending on what you'll serve it with."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Grams Butter",
+        "unit": null,
+        "notes": "unsalted, softened",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Sugar",
+        "unit": null,
+        "notes": "unrefined blond cane sugar",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Almond Paste",
+        "unit": null,
+        "notes": "buy the Perl'amande brand at the organic store",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Yogurt",
+        "unit": null,
+        "notes": "plain, regular or Greek-style",
+        "amount": "240",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almond Extract",
+        "unit": "tsp",
+        "notes": "measure with care; this is strong stuff that can ruin your cake if you overdo it",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Flour",
+        "unit": null,
+        "notes": "all-purpose",
+        "amount": "260",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Confectioner's Sugar",
+        "unit": null,
+        "notes": "for dusting",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Blueberries",
+        "unit": null,
+        "notes": "thawed if frozen",
+        "amount": "240",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Agave Syrup",
+        "unit": null,
+        "notes": "or maple syrup",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1f8b58da1108291d9804d4fb53302174eb5db950d8801e2e230a550ec1b1dab2",
+    "lineage_hash": "bd6bca95722785934129f277fea6e3d50e771cb18b789dc56946f4df90aa06b5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/cakes-tarts/almond-cake-with-blueberry-coulis-recipe/",
+    "fetchedAt": "2026-09-30T18:57:58.343Z"
+  },
+  "rawSource": "https://cnz.to/recipes/cakes-tarts/almond-cake-with-blueberry-coulis-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

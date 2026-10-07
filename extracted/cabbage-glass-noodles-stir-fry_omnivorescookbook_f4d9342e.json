@@ -1,0 +1,117 @@
+{
+  "recipe": {
+    "name": "Cabbage Glass Noodles Stir Fry",
+    "time": "15 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "126",
+      "carbohydrateContent": "17.2",
+      "fatContent": "5.4",
+      "proteinContent": "3.5"
+    },
+    "directions": [
+      "Bring a small pot of water to a boil. Add the dry glass noodles and cook according to instructions until al-dente. Rinse with tap water to stop cooking and drain. Cut into 3” (8 cm) strands.",
+      "Mix the sauce ingredients in a small bowl.",
+      "Heat a large skillet or a wok over medium-high heat until hot. Add oil and swirl to coat the bottom.",
+      "Add the dried pepper and garlic and stir a few times to release fragrance.",
+      "Add the cabbage and a pinch of salt. Stir and cook for 2 to 3 minutes, to coat evenly with oil, until the cabbage just starts to turn tender.",
+      "Add the glass noodles and pour in the sauce. Stir and cook until the sauce is absorbed and the cabbage turns tender. Turn to medium-low heat and carefully taste the cabbage. Sprinkle with a bit more salt to adjust seasoning, if needed. Transfer to a plate and serve hot as a side dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mung Bean Vermicelli",
+        "unit": "bunch",
+        "notes": "yields 1 cup after soaking",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cabbage",
+        "unit": "head",
+        "notes": "12 oz, yields about 4 cups after cutting, sliced into 1/2” (1 cm) pieces",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "or vegetable oil",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili Peppers",
+        "unit": null,
+        "notes": "keep them whole for a less spicy dish, dried, cut into 3 to 4 pieces",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "03f8e2a1a8878d1f22c21680c755130b16269db55e1433e6b1788b37ac49d1fe",
+    "lineage_hash": "8e5234727d7b19dbb85cba26d59471cbc79b6766a4d898aad9ce3a8203b79b20"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/cabbage-glass-noodles-stir-fry/",
+    "fetchedAt": "2026-08-02T10:15:50.317Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/cabbage-glass-noodles-stir-fry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

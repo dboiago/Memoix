@@ -1,0 +1,102 @@
+{
+  "recipe": {
+    "name": "Apricot and Melon Crumble with Pinenuts",
+    "time": "1 hr 40 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 180°C (360°F). Grease a baking dish with a little butter (unless it’s nonstick). If you can afford the time and effort, toast the pinenuts in a dry skillet until fragrant and golden. It’s fine if you want to skip this step, because they will toast in the oven anyway.",
+      "Rinse the apricots and pat them dry. Quarter them and discard the pits. Cut the melon in half, discard the seeds and stringy flesh from the center of each half, and scoop out the flesh. Combine the apricot and melon pieces in the baking dish.",
+      "In a medium mixing bowl combine the rolled oats, sugar, butter, flour, pinenuts, and salt, and rub the mixture with the tips of your (preferably clean) fingers until well blended.",
+      "Sprinkle the topping evenly over the fruit, and put into the oven to bake for 40 minutes, until the fruit mixture is bubbly and the topping is golden. Let it set on the counter for half an hour to an hour. It can be served warm or cold, with crème anglaise, crème fraîche or a scoop of ice-cream, but it is just as fabulous on its own."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Melon",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Apricots",
+        "unit": null,
+        "notes": null,
+        "amount": "800",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Rolled Oats",
+        "unit": null,
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Brown Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Butter",
+        "unit": null,
+        "notes": "for a vegan version, substitute 80 grams or 1/3 cup vegetable oil, cold unsalted, diced finely",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Flour",
+        "unit": null,
+        "notes": "you can use half whole-wheat, half all-purpose for an interesting taste",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Pine Nuts",
+        "unit": null,
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "fine sea",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "467c363ad9561a0e6f7a51aee3d82744b3b2bb4c9f75489cb853994b0a4c002c",
+    "lineage_hash": "6c1335f1a9a2b2c0618c7f06f1fe67c8f79b028f1252ba8f9c0af47c65c4e5aa"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/desserts/apricot-and-melon-crumble-with-pinenuts-recipe/",
+    "fetchedAt": "2026-09-30T18:34:51.207Z"
+  },
+  "rawSource": "https://cnz.to/recipes/desserts/apricot-and-melon-crumble-with-pinenuts-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

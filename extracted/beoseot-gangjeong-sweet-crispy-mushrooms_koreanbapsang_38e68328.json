@@ -1,0 +1,114 @@
+{
+  "recipe": {
+    "name": "Beoseot Gangjeong (Sweet Crispy Mushrooms)",
+    "time": "10 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "KR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Soak the dried mushrooms until they are plump and tender. This will take over 2 hours depending on the size of the mushrooms.",
+      "Squeeze out the water from the soaked mushrooms, and then cut the mushrooms into quarters (or halves if small). Cut the peppers into small pieces.",
+      "Add the potato (or corn) starch to the mushrooms, and massage them well to coat evenly.",
+      "In a pan, add all the sauce ingredients, and stir well. Bring it to a boil. When it starts to bubble, reduce the heat to medium low, and simmer until it thickens slightly, about 4 minutes.",
+      "Add oil to a heavy bottom pan, about 1/2 inch high. When the oil is sufficiently hot (about 320°F), drop the mushroom pieces in one at a time. Cook until light golden brown, 1 to 2 minutes.",
+      "Remove and set them on a wire rack or a paper towel-lined plate.",
+      "Reheat the oil to 320°F. Deep fry again until golden brown, about a minute.",
+      "Heat the sauce over medium heat. Add the mushrooms and peppers, and stir well until the mushroom pieces are evenly coated."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Shiitake Mushrooms See Note",
+        "unit": "oz",
+        "notes": "dried",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bell Pepper Red",
+        "unit": null,
+        "notes": "orange or yellow or a combination",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potato Starch",
+        "unit": "C",
+        "notes": "alt: cornstarch",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil for Deep Frying",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gochujang",
+        "unit": "Tbsp",
+        "notes": "Korean red chili pepper paste",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vinegar",
+        "unit": "Tbsp",
+        "notes": "rice wine vinegar or any other clear vinegar",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Syrup (jocheong, 조청)",
+        "unit": "Tbsp",
+        "notes": "corn syrup, or oligodang (올리고당)  or 1 to 1.5  tablespoons honey",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Wine",
+        "unit": "Tbsp",
+        "notes": "or mirin",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b4e14adfe3d427c9f044f5662d13f431555122dea897e1dff884cec3ce4aae41",
+    "lineage_hash": "9696070595641c0562994fc3992d58a4084c03c91260876db416baa423de3ac2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.koreanbapsang.com/beoseot-gangjeong-crispy-mushrooms/",
+    "fetchedAt": "2026-08-01T23:27:02.485Z"
+  },
+  "rawSource": "https://www.koreanbapsang.com/beoseot-gangjeong-crispy-mushrooms/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

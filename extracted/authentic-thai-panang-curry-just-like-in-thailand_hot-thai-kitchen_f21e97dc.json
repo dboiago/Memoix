@@ -1,0 +1,258 @@
+{
+  "recipe": {
+    "name": "Thai Panang Curry",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "TH",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Reduce some of the coconut milk in a wok or large skillet until very thick.",
+      "Add the curry paste and stir to mix.",
+      "Keep stirring until coconut oil starts to separate and sizzle around the curry paste.",
+      "Add the palm sugar and torm makrut lime leaves and stir until the sugar is dissolved.",
+      "Add the meat and toss to coat in the paste (image shows beef, but it would be the same if using pork or chicken).",
+      "Add the remaining coconut milk and stir until the meat is cooked through, then turn off the heat.",
+      "Taste and adjust seasoning with more fish sauce if needed, then stir in the red pepper.",
+      "Plate and top with julienned makrut lime leaves for garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Panang Curry Paste",
+        "unit": "Tbsp",
+        "notes": "60 ml, see note 1, store bought use one of the recipes below",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pork Tenderloin",
+        "unit": "oz",
+        "notes": "alt: collar but, 300 g, see note 2, thinly sliced against the grain",
+        "amount": "10.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "tsp",
+        "notes": "7.5 ml",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Neutral Oil",
+        "unit": "tsp",
+        "notes": "10 ml",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "C",
+        "notes": "300 ml, plus a little extra for garnish if you wish",
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Makrut Lime Leaves",
+        "unit": null,
+        "notes": "7 roughly torn into chucks, 3 finely julienned for garnish",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Palm Sugar",
+        "unit": "Tbsp",
+        "notes": "18 g, finely chopped, packed",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Bell Pepper",
+        "unit": null,
+        "notes": "julienned for garnish, optional",
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jasmine Rice for Serving",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mild Chilies",
+        "unit": "g",
+        "notes": "dried, such as guajillo or puya peppers.",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Peppercorns",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemongrass",
+        "unit": "Tbsp",
+        "notes": "chopped, from bottom half only",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Galangal",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Makrut Lime Zest",
+        "unit": "tsp",
+        "notes": "aka kaffir lime",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro Roots",
+        "unit": null,
+        "notes": "alt: 6 cilantro stems, chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fermented Shrimp Paste",
+        "unit": "tsp",
+        "notes": "gapi",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Peanuts",
+        "unit": "Tbsp",
+        "notes": "if allergic, sub another type of nuts or seeds",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Curry Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Peanuts",
+        "unit": "Tbsp",
+        "notes": "if allergic, sub another type of nuts or seeds",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fermented Shrimp Paste",
+        "unit": "tsp",
+        "notes": "optional, only if the red curry paste doesn’t already have it",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8eaa2440620fcc25f4a9f392e53944a4905343b8f61a6514af6c3d2f3b7811f4",
+    "lineage_hash": "ecb3163680d73e6fb701a22b262875f73b1f0de1917234b2e7b28496aa0524cf"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://hot-thai-kitchen.com/panang-curry/",
+    "fetchedAt": "2026-08-01T23:31:25.199Z"
+  },
+  "rawSource": "https://hot-thai-kitchen.com/panang-curry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

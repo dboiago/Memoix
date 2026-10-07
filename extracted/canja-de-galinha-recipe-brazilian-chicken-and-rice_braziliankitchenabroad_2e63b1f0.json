@@ -1,0 +1,132 @@
+{
+  "recipe": {
+    "name": "Canja de Galinha (Brazilian Chicken and Rice Soup)",
+    "time": "45 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "BR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Season the chicken breasts with some salt and pepper, and set aside.",
+      "Heat up the olive oil using the 'saute' function of your instant pot.",
+      "When the oil is hot, saute the Brazilian Sofrito until fragrant, about 2 mins.",
+      "Add the chicken, and brown both sides - about a minute per side.",
+      "Add the tomatoes, the thyme and stock. Close the pan, and set the instant pot to 25 mins on manual, and let it cook.",
+      "After 25 mins, safely release the pressure, turn off and open the pan when you are able.",
+      "Remove the tomato skins, and the thyme sprig and discard.",
+      "Using a wooden spoon, \"smash\" the coked chicken to shred it.",
+      "After the chicken is shredded, turn the pot back on using the 'saute' function and add the rice, and the veggies, and top with 6 cups of water.",
+      "Let it cook open (still on saute function) until the veggies and the rice are fully cooked - about 10 mins."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "About 2 Boneless Skinless Chicken Breasts You Can Also Use Thighs",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil Plus More for Drizzling",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbsps of Brazilian Sofrito",
+        "unit": null,
+        "notes": "alt: 1/2 an onion, diced plus 2 garlic cloves, minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Roma Tomatoes",
+        "unit": null,
+        "notes": "halved and seeded or a tablespoon of tomato paste",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": "fresh",
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "C",
+        "notes": "alt: water + 2tsp of chicken bouillon",
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots Peeled and Cut Into Rounds",
+        "unit": "large",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Stalk Diced",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes Peeled and Diced",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Uncooked White Rice",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "28551c859cf0bad4cabb92a1f8a61abec8847cee4c97ce1f6f7ae394bc221603",
+    "lineage_hash": "d6ddc8bd39cb3ebd1779c21af7dad633abb640ec1aa74b3db2ed3f8da7080553"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://braziliankitchenabroad.com/brazilian-chicken-and-rice-soup/",
+    "fetchedAt": "2026-09-25T19:22:56.389Z"
+  },
+  "rawSource": "https://braziliankitchenabroad.com/brazilian-chicken-and-rice-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,126 @@
+{
+  "recipe": {
+    "name": "Cheddar Cheese Scones",
+    "time": "45 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "18",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "296",
+      "carbohydrateContent": "35",
+      "fatContent": "14",
+      "proteinContent": "8"
+    },
+    "directions": [
+      "Preheat the oven to 375 °F. Line two ½ sheet pans with parchment paper or silicone baking mats.",
+      "In a bowl or measuring cup, whisk together 2&#32;large eggs and 14 oz&#32;buttermilk and set aside. In a larger mixing bowl, whisk together 25 oz&#32;unbleached all purpose flour, 2 tablespoons&#32;baking powder, ½ teaspoon&#32;salt and 2 oz&#32;granulated sugar. Toss in 6 oz&#32;unsalted butter chunks. Use your fingers to work in the butter until the bits are the size of a pea. Toss in 8 oz&#32;Cheddar Cheese cubes and 1 bunch&#32;scallions, chopped.",
+      "Add the buttermilk mixture all at once and mix until just barely combined. Some loose flour may remain at the bottom of the bowl. DON&#39;T OVER MIX.",
+      "Dump the dough onto a floured surface and finish kneading by hand until all the loose flour is absorbed.",
+      "Use your hands to pat the dough on a floured surface until it is ¾&quot;-1&quot; thick. Use a 2 ½-3&quot; biscuit cutter to cut scones. Re-roll the scraps and continue cutting until all the dough is used.",
+      "Line the scones onto the prepared baking sheet, leaving 1&quot; space between. Brush the tops of the scones with buttermilk and sprinkle lightly with flakey sea salt.",
+      "Bake until the scones are golden brown and sound hollow when the bottom is tapped. Turn the trays halfway through baking for even browning. Total baking time 15-20 minutes."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "oz",
+        "notes": "1 ¾ cups",
+        "amount": "14",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unbleached All Purpose Flour",
+        "unit": "oz",
+        "notes": "5 cups, see note",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "cold, cut into 1″ chunks",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cheddar Cheese",
+        "unit": "oz",
+        "notes": "cut into ¼\" cubes",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": "bunch",
+        "notes": "chopped to ¼\" pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flakey Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c8eb38d45dc0b47bfde2ab612a2427f7372ff72a0d5002251057f30ab0e902b0",
+    "lineage_hash": "7614be4ae5d1bf2dee1988d49573ae823231d14ea7238cf2422c9a840c10bf72"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2019/03/12/cheese-scones/",
+    "fetchedAt": "2026-08-02T07:02:39.819Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2019/03/12/cheese-scones/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,111 @@
+{
+  "recipe": {
+    "name": "Salmorejo",
+    "time": "25 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "ES",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "369",
+      "carbohydrateContent": "25.45",
+      "fatContent": "28.59",
+      "proteinContent": "4.96"
+    },
+    "directions": [
+      "Bring a large pot of salted water to a boil, then cut a small cross on the bottom of each tomato. Place the tomatoes in the boiling water for 30-60 seconds, then remove them immediately and place in a bowl of ice water to cool briefly. The tomato skins should slide off easily.",
+      "Cut out the cores of the tomatoes and add the tomatoes to a blender. Blend on high speed for about 30 seconds, or until smooth.",
+      "Pull out the soft center of the baguette and tear it into small pieces.  You should have 2-3 cups of bread pieces.",
+      "Add 2 cups of bread pieces to the blended tomatoes, then let the mixture stand for 5 minutes. (For a thicker texture, add all of the bread pieces.)",
+      "Add the vinegar, salt, and garlic and blend until the soup is very smooth.",
+      "Turn the blender to medium speed, then remove the small lid on the top and slowly trickle in the oil.  If your blender doesn&#39;t have this small hole, simply stop the blender and add the oil gradually.",
+      "Add 1 hard-boiled egg and blend until incorporated. Adjust the levels of salt, vinegar, garlic, and bread to taste.",
+      "Chill the salmorejo until you&#39;re ready to serve it.  Serve the soup cold in small bowls, then garnish with diced hard-boiled egg and sliced ham. Enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plum Tomatoes Preferably Vine-ripened",
+        "unit": "medium",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Medium-sized Stale Baguette",
+        "unit": null,
+        "notes": "alt: other stale bread",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Good-quality Extra Virgin Olive Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Splash Sherry Vinegar",
+        "unit": null,
+        "notes": "Vinagre de Jerez",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hard Boiled Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Serrano Ham",
+        "unit": null,
+        "notes": "alt: other cured ham, diced, such as prosciutto",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c4656ba248f48b284a1ed9100a2ff17b2115038113344c04de42926737cc641f",
+    "lineage_hash": "1256577bbf24799397bcb4a58274d2728218e2eb1a720c2fd8f1fc55ba9c43de"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://spanishsabores.com/antonias-salmorejo-recipe/",
+    "fetchedAt": "2026-08-02T07:42:31.479Z"
+  },
+  "rawSource": "https://spanishsabores.com/antonias-salmorejo-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

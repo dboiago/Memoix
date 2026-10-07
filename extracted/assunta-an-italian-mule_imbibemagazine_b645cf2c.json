@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Assunta: An Italian Mule",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Highball",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the ingredients, except the ginger beer, to a shaker with ice and shake vigorously. Pour into a highball filled with crushed ice and top with ginger beer, then garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "4ca09c80efd4fad090593ec1063a9ca1a5b06cc7c02b9440fa6a78f6c50c6bb8",
+    "lineage_hash": "defa2986d0a0dbb7d034a5aed9460f09ae5f17674d63d100ed90035fd74cea42"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/assunta-an-italian-mule/",
+    "fetchedAt": "2026-08-03T23:45:33.733Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/assunta-an-italian-mule/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

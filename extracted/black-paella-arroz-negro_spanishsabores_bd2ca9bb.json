@@ -1,0 +1,167 @@
+{
+  "recipe": {
+    "name": "Black Paella (Arroz Negro)",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "ES",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "367",
+      "carbohydrateContent": "53.85",
+      "fatContent": "6.99",
+      "proteinContent": "14.85"
+    },
+    "directions": [
+      "Place a paella (or wide frying pan) over medium heat and add the olive oil. When the oil is hot, add the squid rings and sauté for 30 seconds, then set the squid aside.",
+      "Add the onion and bell pepper to the pan, adding more olive oil if needed, and sauté for 4-5 minutes, or until the onion is soft and translucent.",
+      "Add the garlic, paprika, cumin, and saffron and sauté for another minute, or until aromatic. Stir in the tomato paste and cook for another 2 minutes.",
+      "Stir in the rice, then add the wine and simmer for 5 minutes, or until the wine has almost completely evaporated.",
+      "Add the stock and squid ink to the pan and stir to combine. Season with salt.",
+      "Bring to a boil, then immediately reduce to a gentle simmer for 15 minutes, or until the stock has reduced and the rice is almost cooked. Don&#39;t stir, though! Leaving it alone will help the crispy layer of rice (socarrat) to develop on the bottom of the pan.",
+      "Add the prawns on top of the rice and cook for 4-6 minutes, or until the prawns are pink and opaque. Add the sautéed squid rings on top of the paella.",
+      "Take off of the heat and leave the paella to stand for about 10 minutes. Serve it hot right out of the pan, and garnish with lemon wedges. Enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Olive Oil Plus More If Needed",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Squid Cleaned and Sliced Into ¼-inch Rings",
+        "unit": "oz",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Onion Finely Diced",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Bell Pepper Diced",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Minced",
+        "unit": "clove",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cumin",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Saffron Threads",
+        "unit": "pinches",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bomba Rice",
+        "unit": "C",
+        "notes": "alt: arborio",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry White Wine",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Seafood",
+        "unit": "C",
+        "notes": "alt: vegetable stock",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Squid Ink",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Prawns with Shells on",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Cut Into Wedges",
+        "unit": null,
+        "notes": "for serving",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "092cebc117621c554d2cb157dbc62a39bcea46652492f136d90bdd9e810f477a",
+    "lineage_hash": "39f4fd88627da4a35fe013253a80926006bb3147683ec7da45c0a1c045bd2402"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://spanishsabores.com/black-paella-recipe/",
+    "fetchedAt": "2026-08-02T07:03:37.135Z"
+  },
+  "rawSource": "https://spanishsabores.com/black-paella-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

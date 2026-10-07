@@ -1,0 +1,152 @@
+{
+  "recipe": {
+    "name": "Aloo Paratha",
+    "time": "45 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "171",
+      "carbohydrateContent": "31",
+      "fatContent": "3",
+      "proteinContent": "5"
+    },
+    "directions": [
+      "In a bowl mix together atta (whole wheat flour), salt and oil.",
+      "Knead to form a smooth and soft dough. The dough should be soft, if it isn't add little more water. I added around 3/4 cup + 1-2 tablespoons water here.",
+      "To make the filling, boil the potatoes first until they are completely done.",
+      "Mix until everything is well combined. Taste test and adjust seasoning to taste. The stuffing for the paratha is now ready.",
+      "Take the dough and divided it into 8 to 10 equal parts (depending on how big you want your parathas to be). My dough weighed around 60 grams each.",
+      "Now, bring all the edges together to the center and then pinch to seal the edges.",
+      "Now using your rolling pin, roll the dough to a circle of around 7 to 8 inches diameter. Use dry atta as needed while rolling. Dip the dough ball in dry atta as and when it becomes difficult to roll and then roll again. The trick here is to apply equal pressure while rolling. If you do that, your paratha will turn round automatically.",
+      "Transfer the rolled paratha onto the hot tawa. Make sure your tawa is hot before you add the paratha on it.",
+      "Now apply oil on the other side as well. Press with a spatula and cook the paratha until both sides have golden brown spots on them. Make sure to press the edges so that they get cooked as well. Repeat with the remaining dough balls and cook all the parathas similarly."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Atta",
+        "unit": "C",
+        "notes": "260 grams, whole wheat flour",
+        "amount": "2",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "also known as carom seeds",
+        "amount": "½",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": "to knead the dough, around 3/4 cup (180 ml) + 1-2 tablespoons (15-30 ml)",
+        "amount": "0",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": "medium",
+        "notes": "around 400-450 grams",
+        "amount": "3-4",
+        "section": "Stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chili",
+        "unit": null,
+        "notes": "finely chopped, or more to taste",
+        "amount": "1",
+        "section": "Stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Amchur",
+        "unit": "tsp",
+        "notes": "also known as dry mango powder",
+        "amount": "¾",
+        "section": "Stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Ajwain",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Kashmiri Red Chili Powder",
+        "unit": "tsp",
+        "notes": "replace with regular chili powder if you prefer spicy",
+        "amount": "¼",
+        "section": "Stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or adjust to taste",
+        "amount": "½",
+        "section": "Stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": "Stuffing",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "43f2e17171747cc92513593a453300b167b195d4418389fb7f8d9a1a8b66437e",
+    "lineage_hash": "8dc1ed30851501f1dea754356571f450f9badd32e800ba7776493392e3f1e2cc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/aloo-paratha/",
+    "fetchedAt": "2026-08-02T08:05:28.325Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/aloo-paratha/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

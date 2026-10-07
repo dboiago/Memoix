@@ -1,0 +1,241 @@
+{
+  "recipe": {
+    "name": "Barbecue Stuffed Pork Loin with Cherry Jus",
+    "time": "2 hr 45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start by making the stuffing. Melt the butter in a large frying pan. Add the onion and gently sauté on a medium-low heat until translucent, about 3-4 minutes",
+      "Add the remaining stuffing ingredients and continue to cook on low until all the ingredients are well incorporated, around 10-12 minutes in total. Remove from the heat and set aside to cool",
+      "Butterfly the pork loin open and gently beat with a mallet until flattened. Season with the sea salt. Spread the stuffing mixture evenly over the loin. Close up the loin and tie with butcher's string. To ensure the loin holds together, wrap tightly in cling film and refrigerate for 2 hours or ideally overnight",
+      "Set up your kettle BBQ for indirect cooking with the coals banked to one side. Preheat to 120°C. Add soaked wood chips or wood chunks if you’d like at this stage. Place your pork loin on the indirect side of your BBQ (without any coals underneath), brush with the olive oil and cook until the internal temperature of the pork reads 65°C, around 1.5hrs – 2hrs",
+      "While the pork is cooking, add all the cherry jus ingredients except the butter to a pan and simmer until reduced and jammy, around 15 minutes",
+      "Transfer the sauce to a blender or use an immersion blender to blend the sauce until smooth, then pass through a sieve. Finish by adding back to the pan over a low heat, then whisking in the cold butter cubes in small batches",
+      "To serve, cut thin slices of pork and serve with a few tablespoons of cherry sauce"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pork Loin",
+        "unit": "kg",
+        "notes": "fat scored",
+        "amount": "2.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "small",
+        "notes": "finely diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sausage Meat",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Panko Breadcrumbs",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apricots",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flat-leaf Parsley",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granny Smith Apple",
+        "unit": null,
+        "notes": "peeled, cored and diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Clementine",
+        "unit": null,
+        "notes": "zest and juice",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "Tbsp",
+        "notes": "fresh, leaves finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme Leaves",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherries",
+        "unit": "g",
+        "notes": "stones removed",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cranberries",
+        "unit": "g",
+        "notes": "fresh, optional",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Clementine",
+        "unit": null,
+        "notes": "juice and zest",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Balsamic Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Nutmeg",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "27757270a95218d0d995f1fe5299f0f47e1dd856959d87e3092f6f391fdb06ba",
+    "lineage_hash": "290831a297443614c75e692d913b25993e4f5fc81023d615f8bab2cd8b4eef72"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/barbecue-stuffed-pork-loin-cherry-jus-recipe",
+    "fetchedAt": "2026-08-02T07:39:23.797Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/barbecue-stuffed-pork-loin-cherry-jus-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

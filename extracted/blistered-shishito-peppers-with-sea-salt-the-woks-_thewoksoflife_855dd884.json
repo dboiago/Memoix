@@ -1,0 +1,84 @@
+{
+  "recipe": {
+    "name": "Blistered Shishito Peppers with Sea Salt",
+    "time": "15 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "73",
+      "carbohydrateContent": "3",
+      "fatContent": "7",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Put the garlic and oil in a mortar and pestle, and crush the garlic. You don’t want to create a paste––you are just infusing the oil in this step.",
+      "Heat a saute pan or wok over medium-high heat, and spread the garlic-infused oil evenly in the pan. Do not put the crushed garlic in the pan, or it will burn.",
+      "Add the Shishito peppers to the pan in one layer, so all of the peppers are touching the pan. Sear for 20 to 30 seconds, or until the peppers get golden brown. Turn the peppers over to brown the other side. Continue this process of tossing and turning until all of the peppers are golden brown and the peppers are blistered and begin to wilt.",
+      "I like the Shishito peppers to be slightly more charred; if you want to do this, turn up the heat for the last 30 seconds to really blister the peppers. This entire frying and blistering process should take about 6 to 8 minutes.",
+      "Once the peppers are cooked, sprinkle a large pinch of coarse sea salt over the peppers. Give them a good toss, and transfer them to a plate. Drizzle 2 teaspoons of balsamic vinegar over the peppers, and garnish with another small pinch of sea salt."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Olive Oil",
+        "unit": "Tbsp",
+        "notes": "alt: vegetable oil",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shishito Peppers",
+        "unit": "oz",
+        "notes": "115g, washed and pat dry",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Balsamic Vinegar",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Sea Salt (to Taste)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "95f71fdfce6c5cc4e64f98ff2c33784c55e0d88261896f9e124f807c06b6ee87",
+    "lineage_hash": "9a8b0779c6c16a6c9571d677d83bb028205573b811ef28eedd965d7d84a6df62"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/blistered-shishito-peppers/",
+    "fetchedAt": "2026-08-01T20:38:12.515Z"
+  },
+  "rawSource": "https://thewoksoflife.com/blistered-shishito-peppers/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

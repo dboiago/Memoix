@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "1965 Milk Punch",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all the ingredients in a mixing tin without ice and stir vigorously to make sure the vanilla is fully dispersed in the mix (you can also use an immersion blender). Pour into chilled cups, then grate fresh nutmeg over the top."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "81b28ffe70d2a4be3252e1de35eef5b90d5ee2f72be644f87651fdffd7cd4a43",
+    "lineage_hash": "a698d11158a2eb53366ecd1e45990f08ad10e71da32c8b5a5c973fa181116198"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/matties-1965-milk-punch/",
+    "fetchedAt": "2026-08-03T19:40:55.897Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/matties-1965-milk-punch/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

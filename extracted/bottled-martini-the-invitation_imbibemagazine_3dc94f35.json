@@ -1,0 +1,37 @@
+{
+  "recipe": {
+    "name": "Bottled Martini",
+    "time": "4 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Nick and Nora",
+    "garnish": [
+      "3 Dashes Bitters"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "At least 2 and up to 4 hours before serving, make the batch. Use a small funnel to pour gin, vodka, blanc vermouth, dry vermouth, absinthe, and water into a 1-liter swing-top bottle. Seal, turn gently end over end to mix, and chill in freezer. (If you’d prefer to batch further in advance, refrigerate filled bottle, then place in freezer an hour or two before serving.)",
+      "To serve, turn bottle gently to mix, then pour cocktail into chilled Nick and Nora glasses. Add 3 dashes bitters to each drink and serve immediately. Return bottle to freezer if not serving all of the cocktails right away."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "845ae6841b2cadca5143ed65a1e1e9094383d811c95d8dce5c86a687aac674dd",
+    "lineage_hash": "c4a0238ec00504f6cfb70059fbed4047867f70217cb15b211266842c4d6a143c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/the-invitation-bottled-martini/",
+    "fetchedAt": "2026-08-03T23:34:24.650Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/the-invitation-bottled-martini/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

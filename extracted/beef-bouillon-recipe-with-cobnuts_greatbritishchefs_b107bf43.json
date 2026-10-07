@@ -1,0 +1,209 @@
+{
+  "recipe": {
+    "name": "Beef Bouillon Recipe with Cobnuts",
+    "time": "1 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the beef sauce, add the sliced onion to a pan with a little olive oil and allow to caramelize on a low heat. Add the beef bouillon and allow to simmer for 30 minutes. Pass through a sieve and reserve",
+      "For the beef cream, add the onion and butter to a pan and  sweat until soft. Add the beef bouillon and the cream, then allow to simmer for 30 minutes. Strain through a sieve and season to taste",
+      "For the cheese gel, mix the milk with the agar in a small pan and bring to the boil. Add the grated cheese and blend with a hand blender until homogenous. Pour into a shallow dish and allow to set. Once set, break the gel into pieces and blend again to obtain a smooth mixture. Transfer to a piping bag",
+      "Mix all of the ingredients for the tuile together in a bowl to form a batter. Spread the batter onto a silicone mat and bake in the oven for 10–12 minutes.  Allow to cool a little and cut into small triangles",
+      "Place the shallot halves in a vacuum bag with a tablespoon of vegetable bouillon and a dash of olive oil, seal then cook the shallots in the microwave in three 30 second bursts",
+      "Remove from the bag and pat the shallots dry. Lightly grill or griddle until slightly charred, then season with sea salt and coarsely ground pepper",
+      "When ready to serve, gently warm through the beef sauce and froth up the beef cream. To plate, pipe dots of the cheese gel on to a warmed plate and place pieces of the shallot and the tuile around. Spoon over a little of the warmed beef sauce and some of the frothy beef cream"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Onion",
+        "unit": "g",
+        "notes": "peeled and sliced",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Bouillon",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "g",
+        "notes": "peeled and sliced",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Bouillon",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gruyère",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Agar Agar",
+        "unit": "g",
+        "notes": null,
+        "amount": "4.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cobnuts",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": "peeled and halved",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Bouillon",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2a5efb860e3e9c771ec03de8937fae397adc14000da0d025f64ce0d6253c44d3",
+    "lineage_hash": "0d32e1689fe5d463262b09854c815b583216b0c496df89d6d79eb2dc34b08285"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beef-bouillon-onion-recipe",
+    "fetchedAt": "2026-08-03T14:46:28.992Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beef-bouillon-onion-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

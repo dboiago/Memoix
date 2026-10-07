@@ -1,0 +1,93 @@
+{
+  "recipe": {
+    "name": "Avocado & Citrus Salad",
+    "time": "10 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Scoop the flesh of the avocados into a bowl and crush with a fork, making sure you keep hold of the skins",
+      "Season with the lemon juice and salt and pepper, then stir in the spring onions, olive oil and orange segments",
+      "Scoop the mixture back into the skins and serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Avocados",
+        "unit": null,
+        "notes": "halved and de-stoned",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oranges",
+        "unit": null,
+        "notes": "cut into segments",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e109b62f48c9da4d878e6e38717399d5333cdf2eff523e4c623d330808ff75aa",
+    "lineage_hash": "9dea85800705113ddd55667e192dc531fb7aeac491f46a8185f71d93362e7c09"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/avocado-and-citrus-salad-recipe",
+    "fetchedAt": "2026-08-03T20:06:33.688Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/avocado-and-citrus-salad-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

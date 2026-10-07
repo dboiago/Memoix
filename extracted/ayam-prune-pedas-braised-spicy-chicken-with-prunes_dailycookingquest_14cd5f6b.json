@@ -1,0 +1,203 @@
+{
+  "recipe": {
+    "name": "Ayam Prune Pedas (Braised Spicy Chicken with Prunes)",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "MY",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Marinate chicken with salt and turmeric for 15 minutes.",
+      "Heat 2 tablespoons of oil in a wok over medium heat. Fry chicken for 8 minutes, or until the skin is golden brown. Set the chicken aside to drain over a strainer or wire rack.",
+      "Puree shallot, garlic, ginger, and red chilies into a smooth paste.",
+      "Heat 2 tablespoons of oil in a wok over medium heat. Fry chili paste, star anise, cloves, cardamom pods, and cinnamon stick for 3 minutes, or until fragrant.",
+      "Add curry powder and fry for another 2 minutes.",
+      "Add water, oyster sauce, dark soy sauce, salt, and palm sugar to the wok.",
+      "Once the sauce boils, return the fried chicken to the wok and mix well. Reduce the heat to a simmer. Cook with the lid on for 20 minutes or until the chicken is fully cooked and has absorbed the sauce.",
+      "Add more salt and sugar as needed, then add chopped prunes to the wok and cook for 3 minutes.",
+      "Turn off the heat, transfer the dish to a serving plate, and serve immediately with steamed white rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken",
+        "unit": null,
+        "notes": "I use drumsticks, cut into 8 pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": "divided",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom Pods",
+        "unit": null,
+        "notes": "bruised",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": "inch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Palm Sugar",
+        "unit": "Tbsp",
+        "notes": "or to taste",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Prunes",
+        "unit": "C",
+        "notes": "about 10 prunes, chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grind the Following Into Spice Paste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Shallot",
+        "unit": null,
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilies",
+        "unit": null,
+        "notes": "dried, soften in hot water",
+        "amount": "10-15",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a34112c0722fb95e7d3fe7a6e88d15b818cfc48cc8924d1a275cb620a20a9f0f",
+    "lineage_hash": "df321102ac4effa79a1495259329f44a8c7dc05872abd557d65dd8aa884cd749"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/ayam-prune-pedas-braised-spicy-chicken-with-prunes.html",
+    "fetchedAt": "2026-08-01T18:04:39.002Z"
+  },
+  "rawSource": "https://dailycookingquest.com/ayam-prune-pedas-braised-spicy-chicken-with-prunes.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

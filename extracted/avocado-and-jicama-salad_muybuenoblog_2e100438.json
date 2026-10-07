@@ -1,0 +1,131 @@
+{
+  "recipe": {
+    "name": "Avocado and Jicama Salad",
+    "time": "7 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "380",
+      "carbohydrateContent": "27",
+      "fatContent": "30",
+      "proteinContent": "7"
+    },
+    "directions": [
+      "Place avocados in a large bowl. Add jicama and radishes.",
+      "In a small bowl, whisk together sour cream, orange juice, lemon juice, sugar, olive oil, and lemon pepper. Season with salt.",
+      "Pour the dressing over the top and toss to coat.",
+      "Garnish with pumpkin seeds and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Avocados",
+        "unit": null,
+        "notes": "pitted, peeled, and chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thinly Sliced Jicama",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thinly Sliced Radishes",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sour Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lawry’s Lemon Pepper",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Pumpkin Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9f107ed1cf7d9a3a8c8f33ffb1ce2580c2e6f0be4e61d30d97c9945bbef19315",
+    "lineage_hash": "9ea9c1b32b55a79b5aaa7b02d070688016201ae322e2d680c34adf914ed59444"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/avocado-jicama-salad/",
+    "fetchedAt": "2026-08-02T06:45:14.763Z"
+  },
+  "rawSource": "https://muybuenoblog.com/avocado-jicama-salad/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

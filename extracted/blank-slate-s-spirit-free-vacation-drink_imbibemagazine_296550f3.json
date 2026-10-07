@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Spirit-Free Vacation Drink",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Ice-filled",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients except the soda water to a shaker with ice. Shake and strain into an ice-filled glass. Top with soda water. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "c717d9b768cb2be63300fad0390a39d3ab03ccc5bf93169bab8d33683436aa59",
+    "lineage_hash": "6c476d1c63f67b786e5c920e70014de8e05bf65124e9a1f69a7076a39b3ff59b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/blank-slates-spirit-free-vacation-drink/",
+    "fetchedAt": "2026-08-03T21:36:52.371Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/blank-slates-spirit-free-vacation-drink/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

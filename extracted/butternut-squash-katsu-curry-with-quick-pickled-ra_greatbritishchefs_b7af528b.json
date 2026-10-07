@@ -1,0 +1,315 @@
+{
+  "recipe": {
+    "name": "Butternut Squash Katsu Curry with Quick-Pickled Radish",
+    "time": "2 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start by making the curry powder. Toast the spices in a dry pan until fragrant, then grind into a powder in a spice blender&nbsp;",
+      "Mix together the radish slices with vinegar, sugar and salt then set aside",
+      "For the curry sauce, heat the oil in a saucepan, then add the onion, garlic and ginger and sweat down over a medium-low heat for about 15 minutes",
+      "Add in the carrots, flour, tomato purée and cook out for another 2 minutes",
+      "Add in the curry powder, stock, soy sauce, mirin and honey, then leave to simmer for 20 minutes before blending until smooth and glossy",
+      "Meanwhile, make the butternut squash katsu. Dip each of the squash slices into flour, egg then panko, and shallow fry until golden on both sides and cooked through. Drain on kitchen paper and season with flaky salt",
+      "First drain the soaked rice well. Add the rice to a pot with the water. Bring to a boil then turn the heat down to medium-low, cover with a tea towel and lid, and cook for around 13 minutes",
+      "Remove the rice from the heat and leave to steam for another 10 minutes, then fluff up with a fork or rice paddle",
+      "To serve, spoon the rice into bowls, then top with the katsu squash steaks and ladle over the curry sauce. Garnish with the pickled radish, spring onion and fresh coriander"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Coriander Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chillies",
+        "unit": null,
+        "notes": "dried",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom Pods",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Radishes",
+        "unit": "g",
+        "notes": "thinly sliced",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Neutral Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Knob of Ginger",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": null,
+        "notes": "diced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Purée",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "750",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mirin",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butternut Squash",
+        "unit": null,
+        "notes": "peeled and sliced into 2 cm thick steaks",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshlay Farms Golden Yolker® Eggs",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Panko Breadcrumbs",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Neutral Oil",
+        "unit": null,
+        "notes": "for shallow frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sushi Rice",
+        "unit": "g",
+        "notes": "rinsed and then soaked for 20 minutes",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Fresh Coriander Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "63d500734cffc5f80fb8e4e5a54c7d920089196e502226c4133924258ba9ef6e",
+    "lineage_hash": "4a992fb68a39b49c64b388ab7eeadd971444a4e3e33d5c1fb0d38b37cda68bdd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/butternut-squash-katsu-curry-quick-pickled-radish-recipe",
+    "fetchedAt": "2026-08-02T01:36:12.022Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/butternut-squash-katsu-curry-quick-pickled-radish-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

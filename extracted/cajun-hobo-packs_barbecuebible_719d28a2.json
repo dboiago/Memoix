@@ -1,0 +1,112 @@
+{
+  "recipe": {
+    "name": "Cajun Hobo Packs",
+    "time": "25 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Lay a sheet of foil on your work surface, narrow end towards you. Smear a little butter on the bottom half. Mound with a quarter of the sliced onions, peppers, okra, zucchini, cherry tomatoes, and andouille. Season generously with Cajun seasoning and top with sprigs of thyme. Smear the top half of the foil with more butter. Fold the top half over the bottom half and pleat/fold over each edge 3 times to make a hermetic seal.",
+      "For a charcoal grill: Set up your grill for ember-grilling (cave-manning). When the coals glow red, rake them out in an even layer.",
+      "For a campfire: Build a campfire and let a portion of it burn down to embers.",
+      "On a gas grill: Set up your grill for direct grilling and heat to high.",
+      "Lay the hobo packs on the coals (or on the grate of your gas grill). Grill until the foil is blackened and the vegetables are tender, 3 to 5 minutes per side, or as needed. (To test for doneness, insert a bamboo skewer through the top foil—when you can pierce the okra and onions easily, the veggies are done.) Take care not to burn yourself on the escaping steam.",
+      "Serve the hobo packs on large plates. Use a fork to carefully open the pack. Open it away from you: the escaping steam is hot!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": "at room temperature, or extra virgin olive oil",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "peeled and cut crosswise into ¼-inch slices",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Bell Pepper",
+        "unit": null,
+        "notes": "cored, seeded, and cut crosswise into 1/4 inch strips",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Poblano Pepper",
+        "unit": null,
+        "notes": "cored, seeded, and cut crosswise into 1/4 inch strips",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Okra",
+        "unit": "lb",
+        "notes": "trimmed, but left whole",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Zucchini",
+        "unit": null,
+        "notes": "cut crosswise into 1/4-inch slices",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pint Cherry Tomatoes",
+        "unit": null,
+        "notes": "halved",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Your Favorite Cajun Seasoning",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": "alt: other herbs, fresh",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "eab10ac1b0a733fd776e940370c207efc0b14c6abf45bcf56ab1615b50bf964c",
+    "lineage_hash": "d3aaa7ad37ffba60887c1b0bee3ba49dcf5ea11a31d43f59011d79549dfa8a9a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/cajun-hobo-packs/",
+    "fetchedAt": "2026-08-03T07:43:34.279Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/cajun-hobo-packs/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

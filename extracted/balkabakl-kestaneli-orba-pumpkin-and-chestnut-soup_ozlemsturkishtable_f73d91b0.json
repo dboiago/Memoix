@@ -1,0 +1,127 @@
+{
+  "recipe": {
+    "name": "Balkabaklı Kestaneli Çorba (Pumpkin and Chestnut Soup)",
+    "time": "45 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "TR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat the oil in a large, heavy saucepan over a medium heat, add the onions and sauté for 10 minutes until softened. Stir in the pumpkin pieces and sauté for another 2 minutes. Add the chestnuts, pour in the vegetable stock and water, then season with salt and pepper, and combine well. Bring to the boil, then simmer for 12–15 minutes until the pumpkin is cooked.",
+      "Purée the soup in a blender and pour back into the pan, add the milk and bring back to the boil, then simmer for 5 minutes. Seasoning is important – check and add more salt and pepper to your taste.",
+      "For the sautéed chestnuts, heat the oil in a small sauté pan over a medium heat, add the chestnuts and sauté for 3 minutes. Season with salt and pepper.",
+      "Serve the soup warm with the sautéed chestnuts and chopped parsley sprinkled over.",
+      "Serving suggestion: Serve with Mısır Ekmeği (page 50 in SEBZE cookery book) to complement this delicious soup."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": "alt: sunflower oil",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "medium",
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pumpkin",
+        "unit": "g",
+        "notes": "deseeded and peeled, sliced into 1 cm (½ in) chunks",
+        "amount": "825",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chestnuts",
+        "unit": "g",
+        "notes": "peeled, cooked, quartered",
+        "amount": "255",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "510",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "510",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Full-fat Milk",
+        "unit": "ml",
+        "notes": "or a plant-based alternative",
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt and Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "handful",
+        "notes": "fresh, chopped, to serve",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chestnuts",
+        "unit": "g",
+        "notes": "peeled, cooked, diced into small bites",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": "alt: sunflower oil",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "76d1c65de57f928fbf628f7b096e8c7ee19449a179d79a05b22876885afc8dcd",
+    "lineage_hash": "7a015e642f7dfb7c6f3e5aee37a95bb4c4240a6fc27d7acf401c8dbeb0f9cbab"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ozlemsturkishtable.com/2024/10/balkabakli-kestaneli-corba-pumpkin-and-chestnut-soup/",
+    "fetchedAt": "2026-09-25T23:18:35.141Z"
+  },
+  "rawSource": "https://ozlemsturkishtable.com/2024/10/balkabakli-kestaneli-corba-pumpkin-and-chestnut-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

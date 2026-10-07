@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Broken Corazon Club",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Collins",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the rhum, pineapple, lime, maraschino and grenadine in a shaker with ice. Shake until chilled. Strain into a Collins glass with fresh ice. Float the Fernet on top and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "4a11fba86af6f20a816a96499da05dced977b90e681e27ba2bf8dbdb0e704f31",
+    "lineage_hash": "643ba425abba247eda0f5b59ca5643e55dbb39290f5c0509349c72263b57cca2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/broken-corazon-club/",
+    "fetchedAt": "2026-08-03T19:18:34.170Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/broken-corazon-club/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

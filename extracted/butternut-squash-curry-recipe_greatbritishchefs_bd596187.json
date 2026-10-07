@@ -1,0 +1,153 @@
+{
+  "recipe": {
+    "name": "Butternut Squash Curry",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Boil or steam the butternut squash until it’s only half cooked – it should have some resistance when pushing a knife through to test it",
+      "Bash the cardamom pods and pull the seeds out from the green husks. It might seem fiddly but the flavour is worth it",
+      "Purée the peppers, tomatoes, chilli, garlic, ginger and tomato paste in a blender with the salt and water",
+      "Pour the purée into a wide pan with the cardamom seeds (or ground cardamom or cinnamon) and oil and bring to the boil, stirring frequently. It will ‘plop’ a bit so keep stirring it slowly. Cook for 1 minute",
+      "Once it’s warmed up, stir in the butternut. Put a lid on the pan and simmer until the butternut is just about cooked",
+      "Gently stir in the mushrooms and cook for 2 minutes",
+      "Lastly, stir in the spinach until it wilts, then mix in the yoghurt and take off the heat"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butternut Squash",
+        "unit": "kg",
+        "notes": "peeled, deseeded and cut into large chunks",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Cardamom Pods",
+        "unit": null,
+        "notes": "or 1⁄8 tsp ground cardamom or ground cinnamon",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Peppers",
+        "unit": null,
+        "notes": "quartered and deseeded",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": null,
+        "notes": "quartered",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli",
+        "unit": null,
+        "notes": "more or less to taste",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "peeled",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Knob of Ginger",
+        "unit": null,
+        "notes": "thumb-sized, peeled and sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Portobello Mushrooms",
+        "unit": null,
+        "notes": "quartered",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spinach",
+        "unit": "g",
+        "notes": "washed and stalks removed",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Yoghurt",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c55ef686d8aa772fc03ea68e838a14131bb5cea35128b9a767bcc7ade360fd72",
+    "lineage_hash": "2c4fa06266f84eb01694bfd2653896c94cddcdb124f1008fe11f500a0ff47751"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/butternut-squash-curry-recipe",
+    "fetchedAt": "2026-08-03T09:48:56.875Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/butternut-squash-curry-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

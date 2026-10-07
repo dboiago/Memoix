@@ -1,0 +1,236 @@
+{
+  "recipe": {
+    "name": "Balsamic-Glazed Hogget",
+    "time": "2 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, season the hogget all over. Place a large flameproof roasting tray over a high heat and, once hot, add a good glug of olive oil. Add the hogget to the tray  and sear all over until a rich, deep golden brown colour – this should take around 5 minutes on each side. Remove from the tray and set aside on a plate, reducing the heat of the hob slightly",
+      "Add the onions and garlic to the roasting tray, stirring frequently for around 10 minutes, until they start to turn a nice golden colour. Add the thyme, bay leaves, balsamic vinegar, Worcestershire sauce, soy sauce and honey. Stir well and allow to bubble and reduce for 5–10 minutes",
+      "Add the chicken stock to the tray and bring to the boil. Once boiling, place the shoulder back into the tray and use a large spoon to drizzle the mixture over the top of the meat. Roast uncovered in the oven for approximately 1 hour 30 minutes, basting frequently with the glaze and onions",
+      "Meanwhile, add the freekeh to a bowl with 1l of water and set aside to soak for 20 minutes",
+      "After this time, skim off any small pieces or scum that have risen to the surface of the water. Drain the freekeh, rinsing in fresh cold water. Bring 1l water or vegetable stock to the boil in a large pan, add the freekeh, carrot, onion and bay leaves and cook at a simmer for 15–20 minutes, until tender. If using wholegrain freekeh, use more water and cook for longer, around 35–45 minutes",
+      "To make the dressing, place the mustard and lemon juice in a bowl, mixing to combine. Slowly whisk in the olive oil to emulsify until you achieve a nice thick consistency. Season well and set aside",
+      "When the hogget is ready, remove from the oven and allow to rest in a warm place for at least 10–15 minutes",
+      "Separate the radicchio into individual leaves and place in a bowl. Preheat a griddle pan until smoking hot. Lightly coat the radicchio leaves with olive oil and salt and char the leaves in the pan for a minute or so. Add the balsamic onions and cook for another minute until the leaves start to wilt",
+      "Place the warm freekeh in a bowl and add the chargrilled radicchio leaves and balsamic onions. Stir in the mustard dressing and season to taste with salt and pepper",
+      "Spread the freekeh out on a large serving platter and place the rested hogget on top. Either strain the roasting dish juices through a sieve and serve in a separate jug, or spoon over the hogget as is. Sprinkle over some chopped parsley and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Hogget Shoulder",
+        "unit": null,
+        "notes": "bone-in, weighing approximately 1.5kg, excess fat and membrane removed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "large",
+        "notes": "cut into wedges",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "bunch",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Worcestershire Sauce",
+        "unit": "ml",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Balsamic Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freekeh",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": "small",
+        "notes": "cut in half lengthways",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "small",
+        "notes": "cut in half",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": "or vegetable stock",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Radicchio",
+        "unit": null,
+        "notes": "small, cut into large pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Borettane Onions Preserved in Balsamic Vinegar",
+        "unit": "g",
+        "notes": "quartered",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "834f86d4e949dc0e575f4e1d7e5b9af5e0cdd9d81787379d8d286430b31a4841",
+    "lineage_hash": "605c341a0179290cc8b26e1e4810482617f75d27466a4472698ff823aa96b1e4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/balsamic-glazed-hogget-shoulder-recipe",
+    "fetchedAt": "2026-08-03T08:17:38.773Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/balsamic-glazed-hogget-shoulder-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

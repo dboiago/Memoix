@@ -1,0 +1,101 @@
+{
+  "recipe": {
+    "name": "Boquerones en Vinagre",
+    "time": "6 hr 20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "ES",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "535",
+      "carbohydrateContent": "1.1",
+      "fatContent": "43.34",
+      "proteinContent": "30.98"
+    },
+    "directions": [
+      "Clean the anchovies by removing the heads, innards, and spines, then cut them into fillets.",
+      "Rinse the anchovy fillets in cold water and pat them dry with paper towels. Lay them flat in a glass baking dish and freeze for 3 hours to kill any anisakis in the fish.",
+      "Remove the anchovies from the freezer and add the vinegar and water until the anchovies are submerged. Cover tightly with plastic wrap and marinate in the refrigerator for 2-3 hours, or until they&#39;re white. Don&#39;t leave them too long, as they&#39;ll become tough.",
+      "Drain the vinegar and water, then sprinkle the anchovies with the minced garlic and chopped parsley. Pour in the olive oil; the anchovies should be covered.",
+      "If possible, let the anchovies marinate in the garlic and olive oil overnight, but you can enjoy right away if you wish!",
+      "Serve the boquerones en vinagre on their own, or with a bit of delicious bread."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Anchovies",
+        "unit": "lb",
+        "notes": "fresh",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Minced",
+        "unit": "clove",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley Chopped",
+        "unit": "sprigs",
+        "notes": "fresh",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "C",
+        "notes": "240 ml",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "727213acba8cee895a2b19ff99b32874b6b87479192453b16900b8c70a47f230",
+    "lineage_hash": "7ac4bd790a058246481a2d078d7d5a2e1c9727fe54b2f896ddfecd88a098c17c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://spanishsabores.com/the-most-malagueno-of-tapas-recipe-boquerones-en-vinagre/",
+    "fetchedAt": "2026-08-02T10:06:52.085Z"
+  },
+  "rawSource": "https://spanishsabores.com/the-most-malagueno-of-tapas-recipe-boquerones-en-vinagre/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

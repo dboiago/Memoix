@@ -1,0 +1,55 @@
+{
+  "recipe": {
+    "name": "Bacon Bourbon",
+    "time": "1 hr 15 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the bacon in a cold medium-size skillet over medium-high heat on the stove (or on a grill set up for direct grilling and preheated to medium-high, 400°F). Cook the bacon, stirring often with a wooden spoon, until the bacon has browned and the fat has rendered, 5 minutes.",
+      "Remove the pan from the heat and let the bacon cool slightly, then pour the fat through a fine-mesh strainer into a large metal bowl. Save the bacon pieces for another use, like sprinkling on a salad or topping Deviled Smoked Eggs.",
+      "Pour the bourbon into the warm bacon fat and whisk to mix; reserve the bottle and cap. Let the bourbon infuse at room temperature for 2 hours, then cover and place in the freezer overnight.",
+      "Remove the bourbon from the freezer. The bacon fat will have risen and congealed on the surface. Skim it off; you can use it for cooking and basting.",
+      "Line a funnel with a paper coffee filter. Place the funnel in the neck of the bourbon bottle and strain the bourbon back into the bottle. Recap before storing. It will keep at room temperature for several weeks (not that it will last that long)."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Smoky Bacon",
+        "unit": "oz",
+        "notes": "cut crosswise into ¼-inch slivers",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bottle (750 Milliliters) Bourbon",
+        "unit": null,
+        "notes": "alt: whiskey, use your favorite",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c4dd0ef6eccd6ef05ff014768f33dbe727b678478cdd0a4b7cd214d189119d48",
+    "lineage_hash": "a6c4a8c3bd70afaad25f9f55ca6b6940d31a8598c1d9569a052b8f90c808660f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/bacon-bourbon/",
+    "fetchedAt": "2026-08-03T06:04:50.321Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/bacon-bourbon/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

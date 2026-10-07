@@ -1,0 +1,174 @@
+{
+  "recipe": {
+    "name": "Chicken & Asparagus Stir-fry",
+    "time": "25 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "212",
+      "carbohydrateContent": "7",
+      "fatContent": "11",
+      "proteinContent": "21"
+    },
+    "directions": [
+      "In a medium bowl, combine the sliced chicken, water, cornstarch, oil, and oyster sauce. Mix until the liquid has been absorbed by the chicken. Set aside to marinate for 15-30 minutes.",
+      "Meanwhile, combine the water (or chicken stock), cornstarch, white pepper, sugar, light soy sauce, oyster sauce, and sesame oil.",
+      "Heat your wok over high heat until it just starts to smoke, and add 1 tablespoon of oil to coat. Spread the chicken evenly in one layer, and allow it to sear undisturbed for 30 seconds. Stir-fry for another 30 seconds, or until about 75% cooked. Remove from the wok and set aside.",
+      "Add another tablespoon of oil to the wok, along with the minced garlic. Cook for 15 seconds, and add the asparagus. Stir-fry for 1 minute. Add the Shaoxing wine and stir-fry for another 30 seconds.",
+      "Meanwhile, mix your sauce mixture to ensure the cornstarch is fully incorporated. Add it to the wok, and bring to a simmer.",
+      "Add the chicken back to the wok, and stir-fry for another 30 seconds. The sauce should be thick enough to coat a spoon, and the asparagus should be crisp-tender.",
+      "Taste for seasoning and add additional salt to taste if needed. Serve over rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Breast",
+        "unit": "oz",
+        "notes": "thinly sliced",
+        "amount": "12",
+        "section": "chicken & marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "chicken & marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "chicken & marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": "any neutral oil, such as vegetable or canola oil",
+        "amount": "1",
+        "section": "chicken & marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "chicken & marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "or low sodium chicken stock",
+        "amount": "½",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Ground White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": "any neutral oil, such as vegetable or canola oil",
+        "amount": "2",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "1",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Asparagus",
+        "unit": "lb",
+        "notes": "end trimmed and sliced on a sharp angle into 2-inch pieces",
+        "amount": "1",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "rest of the dish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d0d946427eacbbf2f5c8b92f63b1c3e1069631c8da36929bc61616a0cc7bc188",
+    "lineage_hash": "55ca132642c6e026b2f345973ba0f1b3f0eedf14bc5d8d2946f65ccd6de088ee"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/chicken-asparagus-stir-fry/",
+    "fetchedAt": "2026-08-02T17:43:54.415Z"
+  },
+  "rawSource": "https://thewoksoflife.com/chicken-asparagus-stir-fry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

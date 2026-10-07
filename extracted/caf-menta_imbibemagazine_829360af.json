@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Cafê Menta",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Collins",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all of the ingredients in a Collins glass. Fill halfway with ice and stir or swizzle. Top with crushed ice to fill, then garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "78c59f750838a92eb076c7434862323742d626e7a3b23d078be6bc4d6ad6dd0d",
+    "lineage_hash": "4baf3c30b31ecbb18c6e8ea0b8076e45513a619570a4f6a674463b6004e0e34b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cafe-menta/",
+    "fetchedAt": "2026-08-03T22:30:43.397Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cafe-menta/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

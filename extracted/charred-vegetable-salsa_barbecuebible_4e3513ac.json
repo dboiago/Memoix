@@ -1,0 +1,118 @@
+{
+  "recipe": {
+    "name": "Charred Vegetable Salsa",
+    "time": "1 hr 30 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Set up the grill for direct grilling and preheat to high. If using a gas grill, place all of the wood chips or chunks, if desired, in the smoker box or in a smoker pouch and run the grill on high until you see smoke. If using a charcoal grill, preheat it to high, then toss all of the wood chips or chunks, if desired, on the coals.",
+      "When ready to cook, brush the grill grate. Place the tomatoes, onion, jalapeños, and garlic on the hot grate and grill until darkly browned on all sides. This will take 2 to 3 minutes per side (8 to 12 minutes in all) for the tomatoes, 3 to 4 minutes per side (9 to 12 minutes in all) for the onion quarters, 3 to 4 minutes per side (6 to 8 minutes in all) for the jalapeños, and 2 to 4 minutes per side (4 to 8 minutes in all) for the garlic.",
+      "Transfer the grilled vegetables to a cutting board and let cool. Remove the toothpick from the garlic and cut the root ends off the onion quarters. Scrape any really burnt skin off the vegetables but leave most of it on; the dark spots will add color and character. For a milder salsa, seed the jalapeños. Cut the vegetables into 1-inch pieces.",
+      "Place the vegetables in a food processor and add the cilantro, cumin, and oregano. Pulse once or twice to mix. Add the wine and lime juice and pulse just until you have a coarse salsa (you can also puree the ingredients in a blender, but I like the sort of chunky salsa you get in a food processor). Taste for seasoning, adding more lime juice as necessary, and season with salt and black pepper to taste; the salsa should be highly seasoned. You can make the salsa several hours ahead."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plum Tomatoes",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Medium-size Onion",
+        "unit": null,
+        "notes": "leave the skin and root end on, cut lengthwise into quarters",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jalapeño Peppers",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "leave the skins on, skewered on a wooden toothpick or small bamboo skewer",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "C",
+        "notes": "chopped, fresh",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cumin",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oregano",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Red Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "Tbsp",
+        "notes": "fresh",
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Salt (kosher or Sea) and Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d51fd8dbdc814d6ad383ec0efac3546f6c4c42da35e9c830fa5ebb89acaae31a",
+    "lineage_hash": "ecb2951cc7a90e8ba8b18631f6dcfbf1ef43f8c0463847dc7d203bc6010d0627"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/charred-vegetable-salsa/",
+    "fetchedAt": "2026-08-03T03:45:59.844Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/charred-vegetable-salsa/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

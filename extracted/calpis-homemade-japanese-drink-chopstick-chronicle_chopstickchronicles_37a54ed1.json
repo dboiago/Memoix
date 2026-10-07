@@ -1,0 +1,76 @@
+{
+  "recipe": {
+    "name": "Calpis Homemade Japanese Drink",
+    "time": "10 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "112",
+      "carbohydrateContent": "25",
+      "fatContent": "1",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "In a saucepan, heat the milk, the yoghurt, and the sugar and stir until the sugar has dissolved.",
+      "Place it over low heat until it is warm (just small bubbles form) but not boiling. Stir occasionally to prevent the milk from scorching.",
+      "Add the lemon juice, and stir well to mix the ingredients. Remove from heat and allow the mixture to cool a bit.",
+      "Place a strainer over a sterilised glass bottle and pour the Calpis mixture through the strainer to remove any lumps or solids.",
+      "To make Calpis drink, pour 1/4 cup of the calpis yoghurt mixture into a glass. Add 3/4 cup of mineral water and mix well. Serve it chilled over ice!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Natural Greek Style Yoghurt",
+        "unit": "g",
+        "notes": "alt: 1 cup",
+        "amount": "240",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": "alt: ⅓ cup",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": "alt: ½ cup",
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbs Lemon Juice",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "24ba8a2a5dec534711b5f437644afc18425685ddd1606d3ed3c13d72fb31eb8c",
+    "lineage_hash": "30ab4f00230b3991134d420932831f517761a5bdcee3e88f622ae37888ff41cb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chopstickchronicles.com/calpis/",
+    "fetchedAt": "2026-08-01T20:45:15.151Z"
+  },
+  "rawSource": "https://www.chopstickchronicles.com/calpis/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

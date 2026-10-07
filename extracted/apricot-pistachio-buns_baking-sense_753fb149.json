@@ -1,0 +1,206 @@
+{
+  "recipe": {
+    "name": "Apricot & Pistachio Buns",
+    "time": "4 hr 15 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "456",
+      "carbohydrateContent": "77",
+      "fatContent": "15",
+      "proteinContent": "9"
+    },
+    "directions": [
+      "In a large mixer bowl or the bowl of a stand mixer, combine8 oz&#32;whole milk, 2 oz&#32;granulated sugar, 2 oz&#32;unsalted butter, 1&#32;large egg and 2 ¼ teaspoons&#32;dry yeast.",
+      "Add 2 cups of the flour, 1 teaspoon&#32;table salt, 1 teaspoon&#32;ground cinnamon, ½ teaspoon&#32;ground cardamom, ½ teaspoon&#32;ground ginger. Mix with the paddle on medium speed to form a thick batter. Change to the dough hook. With mixer on low add remaining flour, 1/2 cup at a time. If mixing by hand mix as much flour as you can with a spoon or spatula then knead in the remaining flour.",
+      "Knead for 5 minutes. The dough should clear the sides of the bowl and gather on the hook.",
+      "Dump the dough onto a lightly floured surface. Knead into a smooth ball. Place the dough in a lightly oiled bowl, turn once to grease the surface. Cover with plastic wrap and leave at room temp to rise until doubled in size (about 1½ hours).",
+      "Pour boiling water over 7 oz&#32;dried apricots, soak for ½ hour, drain and chop into small bits.",
+      "Process 5 oz&#32;pistachios with 2 tablespoons&#32;granulated sugar, ½ teaspoon&#32;ground cinnamon and ½ teaspoon&#32;ground cardamom in a food processor or blender until coarsely ground. Set aside ¼ cup for topping the buns.",
+      "Brush 12 jumbo muffin cups with melted butter.",
+      "Turn the dough onto a floured surface. Roll to a 16&quot;x20&quot;rectangle, brush the surface of the dough with melted butter, Sprinkle the upper ½ of the rectangle with pistachio filling, Fold the lower half of the dough over the upper ½ (see photos).",
+      "Brush the dough with melted butter then sprinkle with chopped apricots. Starting from the end closest to you, tightly roll the dough into a log, pinch the seam to seal.",
+      "With a serrated knife cut the log into 12 buns. Place a bun in each cup of the buttered muffin tin. Brush the tops of the buns with melted butter. If baking the same day allow the buns to rise for about an hour until doubled in volume.",
+      "If baking the next day, cover the buns with plastic wrap and refrigerate overnight. Otherwise continue with the next step.",
+      "In the morning remove the buns from the refrigerator and allow to rise at room temperature until doubled in volume (about 1 - 1½ hours). Preheat the oven to 375 °F.",
+      "Bake until golden brown. About 15 minutes. Remove the buns from the pans and place on a cooling rack to glaze.",
+      "While the buns are baking, combine 8 oz&#32;confectioner sugar and ½ cup&#32;Apricot Preserves (warmed) in a small bowl. Add about 2 tablespoons of water to achieve a texture like pancake batter.",
+      "While the buns are still warm drizzle with the glaze and sprinkle with reserved pistachios"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Milk",
+        "unit": "oz",
+        "notes": "1 cup scalded and cooled to 100 °F",
+        "amount": "8",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "2",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "melted",
+        "amount": "2",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Yeast",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2¼",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Unbleached All Purpose Flour",
+        "unit": "oz",
+        "notes": "3 ½ cups, see note",
+        "amount": "17½",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cardamom",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Ginger",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Apricots",
+        "unit": "oz",
+        "notes": "1 cup, dried",
+        "amount": "7",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Pistachios",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "5",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cardamom",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "melted",
+        "amount": "2",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Apricot Preserves",
+        "unit": "C",
+        "notes": "heated for 30 seconds in the microwave",
+        "amount": "½",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Confectioner Sugar",
+        "unit": "oz",
+        "notes": "2 cups",
+        "amount": "8",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Warm Water",
+        "unit": "Tbsp",
+        "notes": "approximately",
+        "amount": "2",
+        "section": "Assembly",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2cc04f3fdd1d080d5de904ab17b253a20c3570a15bdf394aa1c58892d6c7feac",
+    "lineage_hash": "bc7b07e15c566398a22d3bd9612af381aab7984d55b080effa8220dea60a5b5a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2016/06/14/apricot-pistachio-buns/",
+    "fetchedAt": "2026-08-01T18:26:56.942Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2016/06/14/apricot-pistachio-buns/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

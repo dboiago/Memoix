@@ -1,0 +1,74 @@
+{
+  "recipe": {
+    "name": "Brown Butter with Pink Grapefruit and Tarragon",
+    "time": "20 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place a pan over a medium heat and add the butter. Cook until completely melted, nutty brown and caramelised",
+      "Remove from the heat and leave to cool to room temperature, stirring occasionally to distribute the caramelised solids",
+      "While the butter is cooling, segment the grapefruit. Using a small serrated knife, slice the peel and pith away from the flesh, then carefully slice the segments out of their skins",
+      "Place the segments into the cooling butter along with a pinch of flaky sea salt. Leave for 5 minutes with the occasional gentle stir – the pearls within each grapefruit segment will begin to separate",
+      "Add the chopped tarragon once the butter is completely cold (if it's warm it will discolour)",
+      "Chill the butter until it it becomes solid and mould into a log shape",
+      "Wipe a work surface with a damp cloth and place a smooth sheet of clingfilm on top of it. Wipe the clingfilm with the cloth to smooth out any creases, then place another sheet of clingfilm on top and wipe again. Put the log of butter in the centre of the cling film, then tightly wrap it up with a knot at each end",
+      "Store the compound butter in the freezer. When ready to use, remove from the freezer for 10 minutes or so, slice off the amount of butter you require, then return to the freezer"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pink Grapefruit",
+        "unit": "g",
+        "notes": "approx. 1/4 of a grapefruit",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tarragon",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "27085ef585e84480cc9ab95f6f0692674fae30c2209dca5428c240cf0cc1e30c",
+    "lineage_hash": "b56065ebe1a98a32a179398a9e8214ac4b2a3f7a94f5ae183f9b50f7700bab12"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/brown-butter-pink-grapefruit-tarragon-butter-recipe",
+    "fetchedAt": "2026-08-03T08:56:48.107Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/brown-butter-pink-grapefruit-tarragon-butter-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

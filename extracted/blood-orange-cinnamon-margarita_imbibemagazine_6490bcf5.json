@@ -1,0 +1,35 @@
+{
+  "recipe": {
+    "name": "Blood Orange–Cinnamon Margarita",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Old Fashioned",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all the ingredients to a shaker. Add ice and shake to chill. Strain over fresh ice into an Old Fashioned glass. Garnish.",
+      "Tip: As an alternative to making cinnamon syrup, and for a bit more dramatic presentation, substitute plain simple syrup (1:1) for the cinnamon syrup and rim the glass with a salt of equal parts kosher salt and freshly grated cinnamon and a half part of granulated white sugar."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "c9547d99ea618a0ad59ba05c355f2517ed421242ef0a3e451b668b8bc2605031",
+    "lineage_hash": "0952b483bb1e60e868beaefa5c261d73d5d3336e84e57f5355cc523b8d441ace"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/blood-orange-cinnamon-margarita/",
+    "fetchedAt": "2026-08-03T20:20:03.224Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/blood-orange-cinnamon-margarita/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

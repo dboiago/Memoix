@@ -1,0 +1,69 @@
+{
+  "recipe": {
+    "name": "Breakfast Strawberry Sundae",
+    "time": "10 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Remove the tops from the strawberries and place in a bowl with the icing sugar",
+      "Use a fork to lightly crush the strawberries",
+      "Place some granola in the bottom of each glass, followed by some strawberry yoghurt. Top with the crushed fresh strawberries and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Strawberries",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granola",
+        "unit": "g",
+        "notes": null,
+        "amount": "160",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Low Fat Strawberry Yoghurt",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "914aef0e4c0dfe605f5618677d198460bf8cf347c59c78fb96690f4d5d972907",
+    "lineage_hash": "a3e94727bf48f848327ba11b15eeba375fe70586b0bad83328c91652ecb0743e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/breakfast-strawberry-sundae-recipe",
+    "fetchedAt": "2026-08-03T17:04:34.890Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/breakfast-strawberry-sundae-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

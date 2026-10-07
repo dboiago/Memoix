@@ -1,0 +1,92 @@
+{
+  "recipe": {
+    "name": "Caribbean Pepper Sauce (Peppah Sauce)",
+    "time": "5 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Chop pepper and carrot into chunks large enough for the blender.",
+      "Add all the ingredients to the blender and pulse until smooth. Add more salt if required."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Red Hot Peppers Habanero",
+        "unit": "lb",
+        "notes": "scotch bonnet, cherry pepper, wiri wiri pepper",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot Small",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbs Yellow Mustard",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leaves Culantro Bandhania",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vinegar",
+        "unit": "C",
+        "notes": "alt: enough to cover",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "alt: to taste",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8fab4c92f979b094764ca97b7e0f5c4d6783ceffd614d22622fbda85ef545bcc",
+    "lineage_hash": "ddbc9f89c962f05db30c9209ea2f158275225ea5ea19d4e75de7e65e67eddcb4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cookingwithria.com/2021/07/caribbean-pepper-sauce-peppah-sauce/",
+    "fetchedAt": "2026-09-25T22:38:09.070Z"
+  },
+  "rawSource": "https://cookingwithria.com/2021/07/caribbean-pepper-sauce-peppah-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

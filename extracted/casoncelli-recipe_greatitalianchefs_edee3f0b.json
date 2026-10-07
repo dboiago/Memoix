@@ -1,0 +1,170 @@
+{
+  "recipe": {
+    "name": "Casoncelli",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start by making the pasta dough. On a work surface, make a well with the flour and crack the eggs inside it. Beat the eggs with the fork, incorporating the flour a little at the time, until you see some lumps of dough coming together",
+      "Carry on with your hands, kneading the dough until you have a smooth, elastic ball. Flatten it into a disc, wrap it in cling film and leave it to rest for half an hour in the fridge",
+      "Meanwhile, make the filling. Brown the sausage or salami meat with the butter over a medium heat, then add the roast beef and and cook for a few minutes, stirring often, so the flavours can mingle together. Transfer to a bowl, then add the breadcrumbs, egg, grated Grana Padano, crushed amaretti and the squeezed and chopped raisins. Season with salt and pepper and stir to combine",
+      "Divide the pasta dough into three pieces and roll them using a pasta machine – I normally stop at to the second-to-last setting. Using a round 7–8cm ravioli cutter, cut out as many circles of pasta as you can get",
+      "Place a teaspoon of the filling at the centre of each circle, then gently fold it over to form a half moon. Press the edges together using a fork",
+      "Bring a large pot of salted water to a rolling boil. Meanwhile, in a frying pan set over a medium heat, melt the butter for the sauce. Add the pancetta and sage and fry for a few minutes, until crispy",
+      "Cook the casoncelli in boiling water for a few minutes until they float to the top. Drain with a slotted spoon and transfer to the frying pan with the butter and pancetta sauce. Sauté for 30 seconds, until evenly dressed",
+      "Serve immediately with a dusting of grated Grana Padano"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "medium",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sausage Meat",
+        "unit": "g",
+        "notes": "or minced salami",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leftover Roast Beef",
+        "unit": "g",
+        "notes": "minced",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Breadcrumbs",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "medium",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grana Padano",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amaretti Biscuits",
+        "unit": "g",
+        "notes": "(about 3), crushed",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raisins",
+        "unit": "g",
+        "notes": "soaked",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pancetta",
+        "unit": "g",
+        "notes": "cubed or cut into thin strips",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sage Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grana Padano",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d0b31d87c0be84f9dc0fa5adc09efa871375e6945f3d44d72f0d76f8f2cc673f",
+    "lineage_hash": "9ee5cb7ef5b17bb50257a170764ed8befbf9d0715003ee2d4644dd9092a33b38"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/casoncelli-recipe",
+    "fetchedAt": "2026-08-01T19:50:20.672Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/casoncelli-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

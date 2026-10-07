@@ -1,0 +1,203 @@
+{
+  "recipe": {
+    "name": "Black Pudding and Spiced Tomato Chutney Flatbread",
+    "time": "50 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a mixing bowl, combine the flour, salt and baking powder. Stir in the yoghurt and olive oil, then gradually add 2 tablespoons of warm water until it forms a soft but not sticky dough",
+      "Knead the dough on a floured surface for 5 minutes. Cover with a clean cloth and let it rest for 20 minutes",
+      "Next, make the tomato chutney. Heat the olive oil in a saucepan over medium heat. Add cumin seeds and toast until fragrant",
+      "Stir in the red onion and garlic, cooking until softened",
+      "Add cherry tomatoes, smoked paprika, chilli flakes, vinegar and sugar. Simmer for 15–20 minutes until thickened and jammy. Season to taste and then transfer to a bowl to cool",
+      "Divide the dough into two balls, roll out into thin circles and cook in a dry frying pan over medium heat for 2 minutes per side until lightly charred and puffed",
+      "Heat olive oil in a frying pan over medium heat. Fry the black pudding slices for 2–3 minutes per side until crispy",
+      "Spread a generous layer of spiced tomato chutney over each flatbread. Neatly arrange the black pudding slices on top",
+      "Scatter with crumbled feta, cherry tomatoes, fresh coriander and pickled chilies. Drizzle with olive oil. Serve warm and enjoy"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Strong Bread Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Yoghurt",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "tsp",
+        "notes": "plus extra for cooking",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "small",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherry Tomatoes",
+        "unit": "g",
+        "notes": "halved",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Flakes",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Cider Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": null,
+        "notes": "for cooking",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pudding",
+        "unit": "g",
+        "notes": "sliced into rounds",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Feta",
+        "unit": "g",
+        "notes": "crumbled",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Cherry Tomatoes",
+        "unit": null,
+        "notes": "sliced into quarters",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "Tbsp",
+        "notes": "fresh",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pickled Chillies",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "489b8f72c42f07688177231bd21704053307e38c8dbaa25bf1ae9b5b01d9f9c8",
+    "lineage_hash": "1f464db5815bbcbbb5eea09d8791aad57ab20a17e870e265cc94d459fb1015a2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/black-pudding-spiced-tomato-chutney-flatbread-recipe",
+    "fetchedAt": "2026-08-02T05:52:24.221Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/black-pudding-spiced-tomato-chutney-flatbread-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

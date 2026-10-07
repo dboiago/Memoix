@@ -1,0 +1,138 @@
+{
+  "recipe": {
+    "name": "Aubergine and Chorizo Burika",
+    "time": "1 hr",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, make the filling. Heat the olive oil in a pan and season the aubergine. Add the aubergine to the pan, tossing in the hot oil until it is all absorbed. Fry gently for 15–20 minutes, turning every so often, until the aubergine is soft and the oil has released back into the pan",
+      "Scoop out with a slotted spoon onto kitchen paper. Add the onion to the pan, fry gently for 10 minutes until softened then add the garlic and cumin. Fry for 30 seconds more, then transfer to a bowl and mix in the aubergine",
+      "Add the chorizo to the pan and fry until golden and starting to crisp. Drain and mix with the rest of the ingredients in the bowl. Add the parsley and plenty of seasoning and allow to cool",
+      "Preheat the oil to approximately 175°C in a large non-stick sauté pan",
+      "Place 2 sheets of brik pastry in a dish or bowl. Spoon a quarter of the filling into the centre, making a well in the middle. Crack the egg into the well",
+      "Carefully fold one side of the pastry over the other and lift gently using the corners. Place in the hot oil, pressing around the edges of the filling with a spatula to stop it escaping. Spoon some of the hot oil over the top",
+      "Once it has been cooking for 30 seconds to a minute and the underside is golden, flip it over carefully and cook on the other side",
+      "Drain on kitchen paper and repeat to make 3 more. Serve in soft white rolls or pittas"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Aubergine",
+        "unit": null,
+        "notes": "cubed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "large",
+        "notes": "finely sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chorizo",
+        "unit": "g",
+        "notes": "finely diced",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Parsley",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sheets of Brik Pastry",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "072cdb0a04ec2ba608ca6a148549df7e5d0f7116c31da4fa1294e92b5c688f5e",
+    "lineage_hash": "36e132ef99ffe4a27659700e067e2f69d741c717aedc5e857277b6580cc7905e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/aubergine-chorizo-burika-recipe",
+    "fetchedAt": "2026-08-03T10:45:32.517Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/aubergine-chorizo-burika-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

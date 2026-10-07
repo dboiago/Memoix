@@ -1,0 +1,136 @@
+{
+  "recipe": {
+    "name": "Buncis Tumis Tauco (Stir Fry Green Beans with Salted Soy Beans)",
+    "time": "30 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "ID",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat cooking oil in a wok or frying pan on high heat. Stir fry shallots and garlic until fragrant, about 2 minutes.",
+      "Add tauco and sugar and cook for another 30 seconds to 1 minute.",
+      "Add tomato, chilies, lemongrass, and bay leaves and cook for another 1 minute.",
+      "Add green beans, mix well so that green beans are fully coated with the rest of the ingredients.",
+      "Pour water and soy sauce and boil for 1 to 2 minutes.",
+      "Turn off heat and serve immediately with steamed white rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cooking Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "thinly sliced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted Soy Beans",
+        "unit": "tsp",
+        "notes": "Indonesian: tauco",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": null,
+        "notes": "cored and quartered",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilies",
+        "unit": null,
+        "notes": "sliced diagonally",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemongrass",
+        "unit": null,
+        "notes": "remove outer layer and cut into 2 inch lengths",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": "Indonesian: daun salam",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Green Beans",
+        "unit": null,
+        "notes": "remove ends and sliced diagonally",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "dfd739f06a83259d0989e264359f9e772a2a4d8da79b3b8a4014f245c4f22797",
+    "lineage_hash": "83c7e61bcb64f8bd65ce7d30c36ff7657ee6380a23cb34f380447153ddf25ff0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/buncis-tumis-tauco-stir-fry-green-beans-with-salted-soy-beans.html",
+    "fetchedAt": "2026-08-02T11:30:42.348Z"
+  },
+  "rawSource": "https://dailycookingquest.com/buncis-tumis-tauco-stir-fry-green-beans-with-salted-soy-beans.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,37 @@
+{
+  "recipe": {
+    "name": "Blueberry Cocktail",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all of the ingredients in a mixing glass over ice. Stir, then strain over ice. Garnish.",
+      "Fermented Blueberry SyrupIn an airtight jar, combine 1 cup of blueberries and 2 Tbsp salt. Allow to sit for 2-3 days. Pour into a blender and blend with 1 1/2 cups of 1:1 simple syrup. Add salt to taste. Strain into a separate container.",
+      "Salted Blueberry Simple Syrup (Alternative to Fermented Syrup Method)Blend 1 cup of chilled blueberries with 1 cup of cold 1:1 simple syrup. Strain. Add salt to taste.",
+      "*Either option gives you plenty of leftover syrup and will keep for two weeks in a refrigerator. Pro-tip: Mix with soda water for a refreshing no-alcohol drink."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "f19a606b23a2bda47346d2e8f3b5bacee2f48b379e2e3751383ffe8ae21584ac",
+    "lineage_hash": "ee9ad9efe68c9d95fba37692b539bed2e851a58a931f9f8bcaffea35c8f46ca0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/all-rights-reserved-blueberry-cocktail/",
+    "fetchedAt": "2026-08-03T22:24:35.587Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/all-rights-reserved-blueberry-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

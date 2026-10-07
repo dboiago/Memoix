@@ -1,0 +1,96 @@
+{
+  "recipe": {
+    "name": "Blackthorn (English)",
+    "time": "3 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": "Coupe",
+    "garnish": [
+      "Orange Zest Twist",
+      "Luxardo Maraschino Cherry"
+    ],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "157",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Select and pre-chill a COUPE GLASS.",
+      "Prepare garnish of orange zest twist and Luxardo Maraschino Cherry.",
+      "STIR all ingredients with ice.",
+      "FINE STRAIN into chilled glass.",
+      "EXPRESS orange zest twist over cocktail and discard.",
+      "Garnish with skewered maraschino cherry."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gin",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sloe Gin Liqueur",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosso/sweet Vermouth",
+        "unit": "ml",
+        "notes": null,
+        "amount": "7.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Vermouth",
+        "unit": "ml",
+        "notes": null,
+        "amount": "7.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Bitters",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Aromatic Bitters",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9ccc41b5a2190e216bbcaf8a8a95b225f42de2764630fa169628e437df02b5d0",
+    "lineage_hash": "9824846b524806bb3ceaf91de59ec3353abd7c05d72d6a1c88f5f4e2b1f0ad00"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/239/blackthorn-english",
+    "fetchedAt": "2026-08-01T23:23:18.647Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/239/blackthorn-english",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

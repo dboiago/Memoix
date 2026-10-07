@@ -1,0 +1,163 @@
+{
+  "recipe": {
+    "name": "Bulgogi Spring Rolls With Sweet Ssamjang Sauce",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "KR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "220",
+      "carbohydrateContent": "23",
+      "fatContent": "8",
+      "proteinContent": "14"
+    },
+    "directions": [
+      "On medium-high heat, cook the marinated Bulgogi meat in a skillet.",
+      "Place all the prepared ingredients on the table/kitchen bench and get ready for rolling.",
+      "Put some warm water in a large bowl and soak a rice paper sheet in it until it softens (5 to 10 secs). Be careful not to tear the rice paper by over softening. Transfer the rice paper onto a board and place the lettuce leaves (2 per roll), perilla leaf (1 per roll), Bulgogi, cucumber and carrot on top. Bring the bottom edge of the rice paper tightly over the filling and roll once. Close in both sides of the rice paper then continue to roll from bottom to top until the top of the rice paper is reached. Repeat with the remaining rice paper sheets and fillings.",
+      "(You may slice the rolls into half to present it nicely.) Serve the rolls with the sweet ssamjang sauce."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bulgogi (1.3 Pounds)",
+        "unit": "g",
+        "notes": "marinated Korean BBQ beef",
+        "amount": "600",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Rice Paper Sheets",
+        "unit": null,
+        "notes": "21 cm / 8.3 inches",
+        "amount": "14",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Leaves Perilla",
+        "unit": null,
+        "notes": "if you can’t find it, it can be omitted, stem removed",
+        "amount": "14",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Leaves Lettuce",
+        "unit": null,
+        "notes": "(buttercup lettuce or baby cos lettuce or Korean lettuce etc), stem removed",
+        "amount": "28",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "English Cucumber Seeds Removed & Julienned",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Carrot Julienned",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Warm Water",
+        "unit": null,
+        "notes": "to soften the rice paper",
+        "amount": "0",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Bell Peppers Julienned (optional)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Korean Soybean Paste",
+        "unit": "Tbsp",
+        "notes": "doenjang",
+        "amount": "1",
+        "section": "DIPPING SAUCE ; SWEET SSAMJANG SAUCE (MIX THESE WELL IN A BOWL)",
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "DIPPING SAUCE ; SWEET SSAMJANG SAUCE (MIX THESE WELL IN A BOWL)",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": "per your consistency preference",
+        "amount": "1-2",
+        "section": "DIPPING SAUCE ; SWEET SSAMJANG SAUCE (MIX THESE WELL IN A BOWL)",
+        "isOptional": false
+      },
+      {
+        "name": "Korean Chilli Paste",
+        "unit": "tsp",
+        "notes": "gochujang",
+        "amount": "1",
+        "section": "DIPPING SAUCE ; SWEET SSAMJANG SAUCE (MIX THESE WELL IN A BOWL)",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": "DIPPING SAUCE ; SWEET SSAMJANG SAUCE (MIX THESE WELL IN A BOWL)",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "DIPPING SAUCE ; SWEET SSAMJANG SAUCE (MIX THESE WELL IN A BOWL)",
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "DIPPING SAUCE ; SWEET SSAMJANG SAUCE (MIX THESE WELL IN A BOWL)",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0e62ac8fdc28c37efd6bb481f814a32c601958eb1d38e109bdfbfb9bd0a0a210",
+    "lineage_hash": "3c3fbf9f1a67c2cf55bcef049cb89c05d3da4276c7fc42d77944a93b20e466ad"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://mykoreankitchen.com/bulgogi-spring-rolls/",
+    "fetchedAt": "2026-08-01T19:21:44.199Z"
+  },
+  "rawSource": "https://mykoreankitchen.com/bulgogi-spring-rolls/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

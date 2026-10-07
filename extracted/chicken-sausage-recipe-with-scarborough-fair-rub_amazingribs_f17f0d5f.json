@@ -1,0 +1,117 @@
+{
+  "recipe": {
+    "name": "Chicken Sausage Recipe with Scarborough Fair Rub",
+    "time": "1 hr 30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "15",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "286",
+      "carbohydrateContent": "5",
+      "fatContent": "15",
+      "proteinContent": "31"
+    },
+    "directions": [
+      "Bone up. Before making sausage, please familiarize yourself with best practices as described in our article on The Science Of Sausage Making.",
+      "Prep the meat. Slice the chicken into cubes removing gristle and sinew. Chop the bacon into 1/2&quot; (12.7 mm) lengths. Mix them together and place them on a plate or pan in the freezer, along with the grinder parts that will contact the meat. Leave everything there for about 20 minutes until the meat is firm but do not let it freeze. This makes grinding easier.",
+      "Make the sausage. Grind the firmed up meat with a 1/4&quot; (6.4 mm) die. Finely chop the sundried tomatoes, basil, and garlic, and grate the zest from the lemons. Mix those with the ground meat, pepper, and salt.",
+      "Test it. Pinch off a small piece of the sausage and cook it in a frying pan, let it cool and taste to see if the seasoning is to your taste.",
+      "Shape it. Form the sausage into patties, meatballs, skinless tubes, or encase it in hog casings, or if you want smaller links, lamb casings as described in The Science Of Sausage Making.",
+      "Cook. You can then grill or smoke it, or store it in the fridge for about 5 days or in the freezer for about a month."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Meat",
+        "unit": "lb",
+        "notes": "boneless",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bacon",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sun Dried Tomatoes",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Packed Basil Leaves",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Simon & Garfunkel Rub",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemons",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Medium Grind Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Morton Coarse Kosher Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "100cae04c075e9e80abc97e2730488e7e3687e3a66f1e85bdf3d9b3061ac1c1c",
+    "lineage_hash": "ebcbd573a7d6ee4c3f7fe1123a3f7d134b709ae123195196622275a94bd7a23a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://amazingribs.com/tested-recipes/sausage-recipes/chicken-sausage/",
+    "fetchedAt": "2026-08-02T10:49:15.749Z"
+  },
+  "rawSource": "https://amazingribs.com/tested-recipes/sausage-recipes/chicken-sausage/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

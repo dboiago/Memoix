@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Big & Spicy",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the rye, Jamaican rum, aperitivo, and passion fruit liqueur to a mixing glass with the jalapeño slices and let infuse for 20 minutes. Strain out the jalapeño and add the infused liquid to a shaker with the juices, oleo saccharum, and a small handful of crushed ice. Whip shake and pour into the glass. Top with crushed ice. Garnish.\nMango and Gochujang Oleo SaccharumAdd 1 cup of mango chunks to a sealable container. Top the fruit with 1 cup of refined sugar and 1 oz. of gochujang. Do not mix. Let it sit. Immersion blend after it sits at room temperature for 24 to 36 hours until fully incorporated. Strain through chinois. Will keep for 14 days in the refrigerator."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "f88ef19ca9e2338abf8b7a48e9e4d0c966264651623dc8d1dc4e10e8463c34a2",
+    "lineage_hash": "424b93c19a7ec66b103c847e1b29b2f051c98d9ceba71ad9b2ba25613d694604"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/big-spicy-from-friends-of-friends-bar/",
+    "fetchedAt": "2026-08-04T01:37:58.923Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/big-spicy-from-friends-of-friends-bar/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

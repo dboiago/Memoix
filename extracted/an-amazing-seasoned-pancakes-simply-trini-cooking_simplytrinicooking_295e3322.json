@@ -1,0 +1,150 @@
+{
+  "recipe": {
+    "name": "Seasoned Pancakes",
+    "time": "15 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Chop the herbs finely and grate the onion. Blend the seasoning with the egg. Beat the mixture well.",
+      "First add 1/2 cup of water or milk to the mixture. Add the flour and mix well. Add the remaining amount of water (or milk) to the mixture, mix well. If the batter is not loose enough you may add a little more water (or milk).",
+      "Pour about 2 tbsp. of oil or melt about 1 tbsp. of butter in a frying pan over low heat. Pour about 1/4 cup of the mixture into the oil and allow to cook until slightly golden.",
+      "Flip and fry on the other side. Then remove and drain on a napkin"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour Sifted",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leaves Chadon Beni",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leaves Big Leaf Thyme",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chive",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Leaf Thyme",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "tsp",
+        "notes": "grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "alt: milk",
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar Optional",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "alt: butter for frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d433b297ef3e7c0f888e93580b7edfef605d26ef6a3afb9b7286b5833c647662",
+    "lineage_hash": "f3debca22fb20e94d74bca38bdc1a0209963d8a60d3179285cc7275eead25682"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.simplytrinicooking.com/seasoned-pancakes/",
+    "fetchedAt": "2026-09-25T23:46:37.399Z"
+  },
+  "rawSource": "https://www.simplytrinicooking.com/seasoned-pancakes/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

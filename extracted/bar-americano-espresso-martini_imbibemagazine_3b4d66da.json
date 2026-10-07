@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Bar Americano Espresso Martini",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to a shaker with ice and shake vigorously for 10 to 15 seconds. Strain into a chilled glass. Garnish.\nDiluted Cold-Brew ConcentrateMix cold-brew concentrate (or equivalent) with water at a 60:40 ratio.\nSalted Demerara SyrupAdd 2 1/2 cups of cold water, 4 cups of demerara sugar, and 2 3/4 Tbsp. of Maldon sea salt to a pot. Stir at medium/high temperature until mixed and reach 140F. Remove from the heat, let cool, store in the fridge. Will keep in a sealed container in the refrigerator for 30 days."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "a7ea774f2f05254c7cfe1500b87445fdbf448e05942c1ff4c93ad27b11b9a3e4",
+    "lineage_hash": "aaef73dc895b5834263a97e9fa418ed42ff47dcf7825da2ce24a139124fcded1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bar-americano-espresso-martini/",
+    "fetchedAt": "2026-08-04T00:16:25.495Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bar-americano-espresso-martini/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

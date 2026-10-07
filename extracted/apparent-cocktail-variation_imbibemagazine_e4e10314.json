@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Apparent Cocktail Variation",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Stir all of the ingredients with ice to chill, then strain into a chilled glass and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "90733e3058bb44f0f185b9c1b5b067cf92f67c0964a2649680469864553fc724",
+    "lineage_hash": "10401b2eed1196e4b8b421208e2cb108fdf7144820e71e2c08d45dbff8cfdec1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/apparent-cocktail-variation/",
+    "fetchedAt": "2026-08-03T19:52:49.266Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/apparent-cocktail-variation/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

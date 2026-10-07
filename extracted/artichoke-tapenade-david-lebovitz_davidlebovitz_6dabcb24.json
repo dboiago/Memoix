@@ -1,0 +1,101 @@
+{
+  "recipe": {
+    "name": "Artichoke Tapenade",
+    "time": null,
+    "course": "apps",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In the bowl of a food processor, pulse the garlic, olives, capers, artichoke hearts, lemon juice, and olive oil, and until almost smooth, but still chunky.",
+      "Taste, and add salt, chile powder, and additional lemon juice, if desired.",
+      "Serve with toasted slices of baguette or crackers."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "peeled and minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Olives",
+        "unit": "C",
+        "notes": "4 oz, 120g, pitted",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Capers",
+        "unit": "Tbsp",
+        "notes": "10g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Canned Artichokes",
+        "unit": null,
+        "notes": "14 ounces, or 250g, drained well and quartered",
+        "amount": "8-10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Squeezed Lemon Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra-virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": "90ml",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chile Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "87fd70d4ca3bfa2d72c569e270b374503f2f7f42b78b6bcc7883011b367354bf",
+    "lineage_hash": "0f85acf05cc398196c8d6df8a8c8eac767a82411d87161a3ffa214a77c905d0f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/artichoke-tapenade/",
+    "fetchedAt": "2026-08-02T18:23:59.430Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/artichoke-tapenade/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

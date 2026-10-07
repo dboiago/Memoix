@@ -1,0 +1,201 @@
+{
+  "recipe": {
+    "name": "Caramelised Butternut Squash Tostada",
+    "time": "1 hr 20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Toss the butternut squash with hot honey, then add the oil, thyme, bouillon, garlic, cinnamon, and smoked paprika",
+      "Spread on a parchment-lined sheet pan and roast until golden brown and caramelised – about 25 mins – tossing occasionally",
+      "Deep-fry the sage and kale leaves. Remove from oil and season with salt",
+      "In a medium bowl, toss together the sage, kale and pepitas then break up to a crumble texture. Add enough salsa macha to coat",
+      "Blend all the whipped feta ingredients until smooth and whipped. Refrigerate until needed",
+      "To assemble the tostadas, spread the whipped feta on the toasted pita. Top each with butternut squash",
+      "Sprinkle the sage crumble on top. Garnish with brunoised apples"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butternut Squash",
+        "unit": "kg",
+        "notes": "cut into 1 in cubes",
+        "amount": "1.3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Honey",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "48",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Bouillon Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Paprika",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "as needed",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sage Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kale",
+        "unit": "g",
+        "notes": "roughly chopped",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepitas",
+        "unit": "g",
+        "notes": "roasted and chopped",
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salsa Macha",
+        "unit": null,
+        "notes": null,
+        "amount": "as needed",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "for deep-frying, as needed",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Feta",
+        "unit": "g",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zested",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cracked Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "as needed",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ancient Grain Pittas",
+        "unit": null,
+        "notes": "toasted until crisp",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Apple",
+        "unit": "g",
+        "notes": "brunoise",
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9d292c14a25fefc56c2cea1faeeae0d44c14decedada483c5ca14e420f77a296",
+    "lineage_hash": "571afabbbcaa377dbac0ef4913e03f1ad27c929707d3b4d4b6a644e1557d1825"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/caramelised-butternut-squash-tostada-recipe",
+    "fetchedAt": "2026-08-02T11:21:19.062Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/caramelised-butternut-squash-tostada-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

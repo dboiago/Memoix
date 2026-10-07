@@ -1,0 +1,460 @@
+{
+  "recipe": {
+    "name": "Anjou Pigeon, Calamansi & Rhubarb",
+    "time": "6 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Roast the sesame seeds for 20 minutes and the hazelnuts for 30 minutes on separate trays until they are both fragrant and toasted",
+      "Blend in the Thermomix at speed 6 for 4 minutes, and then at speed 10 for 2 minutes, until they form a very smooth butter. Alternatively, blend in a high powered blender until completely smooth",
+      "Heat a generous amount of oil in a large wide pan. Add the mushrooms and cook over a medium-high heat until browned, then turn down the heat and cook low and slow until they turn golden. They should be very dry and crispy",
+      "Add the shallots, Swiss chard, thyme, kampot peppercorns and garlic and continue to cook slowly",
+      "Once the mushrooms and shallots have cooked down and are golden with little liquid left add the chicken stock, popcorn, black garlic and nut butter",
+      "Cook for 30 minutes until dark and reduced",
+      "Add the celery juice and cook for 10 minutes",
+      "Blend in a high powdered blender in batches until smooth",
+      "Pass the blended liquid through a chinois and season to taste with caster sugar and verjus",
+      "For the hibiscus tea, bring the hibiscus and water to a boil then remove from the heat",
+      "Let infuse for 30 minutes, then strain",
+      "Bring the hibiscus tea to a boil with the sugar. Cook until it reaches 106°C, then remove from the heat",
+      "Toast and coarsely blend the Sichuan pepper",
+      "Blend the rhubarb with the apple juice, citrus juices, pepper and 100g hibiscus syrup",
+      "Weigh the liquid to see how much you get. Weigh out agar in the ratio of 500g liquid to 15g agar",
+      "Boil half of the liquid with the agar for 2 minutes to activate the agar",
+      "Pour this into a container and then refrigerate until fully set, about 45 minutes",
+      "Blend the remaining liquid with the agar jelly in a very high powdered blender until smooth, then set aside until ready to serve",
+      "For the pigeon sauce, preheat the oven to 170°C fan",
+      "Roast all the chicken wings and half the bones in the oven for 30 minutes",
+      "Remove the roasted wings and bones from the tray and set them aside. Deglaze the tray with water and reserve the water",
+      "Caramelise the other half of the pigeon bones in a large, wide pan for 20 minutes with some oil",
+      "Add the vegetables, aromatics and clementine to the bones and and cook until the shallots are deeply golden, about 15–20 minutes, adding more oil as needed",
+      "Add the thyme and both peppercorns and cook until toasted and aromatic, about 10 minutes",
+      "Deglaze the pan with the wine and sherry vinegar",
+      "Add the stocks, fond-infused water and enough water to cover the bones",
+      "Bring to a simmer, then cook over a low heat for 6 hours",
+      "Pass the sauce through a chinois and reduce by half",
+      "Use a pair of scissors to cut the birds in half down the spine and also down the back side – the leg should still be attached",
+      "Sear the pigeon over live fire – in the restaurant they use a robata grill – skin-side down until the flesh reaches 52°C. Flip to cook the bone side for 10 seconds every now and again as the pigeon cooks, about three times",
+      "Season the morels with oil and salt, and then cook over the grill until browned, about 15 minutes, turning regularly",
+      "Mix together sliced shallots, bitter leaves and sliced rhubarb, then season with lemon juice",
+      "Place a spoonful of the chanterelle sauce on the plate, add a quenelle of calamansi purée, then finish with the salad",
+      "Place the barbecued morel on top and a slice of blood orange to finish. Finish with pigeon sauce"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sesame Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hazelnuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chanterelles",
+        "unit": "g",
+        "notes": "thinly sliced",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Trompette Mushrooms",
+        "unit": "g",
+        "notes": "thinly sliced",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maitake Mushrooms",
+        "unit": "g",
+        "notes": "thinly sliced",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": "g",
+        "notes": "thinly sliced",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Swiss Chard",
+        "unit": "g",
+        "notes": "thinly sliced",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kampot Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Chicken Stock",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Popcorn",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Verjus",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for cooking",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hibiscus Flowers",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Sichuan Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rhubarb",
+        "unit": "g",
+        "notes": "as pink as you can find",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Juice",
+        "unit": "g",
+        "notes": "Flourish",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tiger Lemon Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Calamansi",
+        "unit": null,
+        "notes": "zest and juice",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Agar Agar Powder",
+        "unit": null,
+        "notes": "weigh according to quantity of reduction",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "115",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Wings",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pigeon Bones",
+        "unit": "g",
+        "notes": "or cooked carcasses",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": "peeled and halved",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": "peeled and roughly chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Winter Tomato",
+        "unit": "g",
+        "notes": "halved",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Clementine",
+        "unit": null,
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Malabar Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Madeira",
+        "unit": "g",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "g",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sherry Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Reduced Beef Stock",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Chicken Stock",
+        "unit": "kg",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pigeons",
+        "unit": null,
+        "notes": "leg attached",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Banana Shallot",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Mixed Bitter Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stick of Rhubarb",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Morels",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blood Oranges",
+        "unit": null,
+        "notes": "sliced into chunks",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "491867cfad8522f3b1a6ed6c2d6c6b5ed68eda3ecae903ae5ffa64dfdd417668",
+    "lineage_hash": "e2ed90f6cddc693d4f06c5b7ef1509a5349982e7d3ec15be2793564e5e3f1edb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/anjous-pigeon-calamansi-rhubarb-recipe",
+    "fetchedAt": "2026-08-02T04:16:43.546Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/anjous-pigeon-calamansi-rhubarb-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

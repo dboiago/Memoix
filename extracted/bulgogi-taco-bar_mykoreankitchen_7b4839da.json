@@ -1,0 +1,152 @@
+{
+  "recipe": {
+    "name": "Bulgogi Taco Bar",
+    "time": "25 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "KR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "241",
+      "carbohydrateContent": "37",
+      "fatContent": "8",
+      "proteinContent": "4"
+    },
+    "directions": [
+      "Place all prepared ingredients on a dining table and start assembling!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Tortillas",
+        "unit": "large",
+        "notes": "I used a microwave., warm them up just before serving.",
+        "amount": "8-10",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Bulgogi (1.3 Pounds)",
+        "unit": "g",
+        "notes": "stir fried",
+        "amount": "600",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Leaves Korean Lettuce",
+        "unit": null,
+        "notes": "alt: baby cos lettuce, thinly sliced",
+        "amount": "10",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Leaves Korean Perilla",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "10",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Lebanese Cucumber",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "1",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Korean Spicy Cucumber Salad",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Korean White Radish Pickles",
+        "unit": null,
+        "notes": "alt: pink radish pickles",
+        "amount": "0",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Gochujang",
+        "unit": "Tbsp",
+        "notes": "Korean chili paste",
+        "amount": "2",
+        "section": "KOREAN TACO SAUCE (MIX THESE IN A BOWL)",
+        "isOptional": false
+      },
+      {
+        "name": "White Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "KOREAN TACO SAUCE (MIX THESE IN A BOWL)",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "KOREAN TACO SAUCE (MIX THESE IN A BOWL)",
+        "isOptional": false
+      },
+      {
+        "name": "Rice Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "KOREAN TACO SAUCE (MIX THESE IN A BOWL)",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "¼",
+        "section": "KOREAN TACO SAUCE (MIX THESE IN A BOWL)",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "KOREAN TACO SAUCE (MIX THESE IN A BOWL)",
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "KOREAN TACO SAUCE (MIX THESE IN A BOWL)",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "463360b37e6fb3d2142ffca3a8b2f2f4e2be03d490713aaf885141caa6273e33",
+    "lineage_hash": "7756e6c9f9abc2d9773fc02817e0fa38b010b4e8529f4ec8594c6658d880d117"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://mykoreankitchen.com/bulgogi-taco-bar/",
+    "fetchedAt": "2026-08-01T23:15:58.850Z"
+  },
+  "rawSource": "https://mykoreankitchen.com/bulgogi-taco-bar/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,171 @@
+{
+  "recipe": {
+    "name": "Chinese Beef Stew with Dried Bean Curd Sticks",
+    "time": "2 hr 45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "395",
+      "carbohydrateContent": "15",
+      "fatContent": "21",
+      "proteinContent": "35"
+    },
+    "directions": [
+      "Arrange a rack in the lower third of the oven, and preheat it to 325°F/160°C. Add the bean curd sticks to a large bowl of water, and allow them to soak. By the time the stew is done in the oven, they should be rehydrated.",
+      "Add the oil to a large Dutch oven over medium-high heat. Add half the beef, and sear until browned on all sides. Remove to a plate, and repeat with the remaining beef.",
+      "Add all the beef back to the pot, along with the water, Shaoxing wine, sugar, light soy sauce, dark soy sauce, oyster sauce, ginger, bay leaves, star anise, and five spice powder. Bring to a boil. Cover and braise in the oven for 2 hours.",
+      "Cut the bean curd sticks into 2-3 inch (5-7cm) lengths. Remove the stew from the oven, uncover, and add the bean curd. Cover and simmer on the stove over medium heat for 15 minutes. Stir in the cornstarch slurry, and simmer for another 2 minutes, uncovered, until the sauce thickens. Stir in the scallions, and add salt to taste. Serve over steamed rice!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bean Curd Sticks",
+        "unit": null,
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Neutral Oil",
+        "unit": "Tbsp",
+        "notes": "such as vegetable, canola, or avocado oil",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Well-marbled Beef Chuck",
+        "unit": "lb",
+        "notes": "cut into 1- to 2-inch/3-5cm pieces",
+        "amount": "3-3½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "slices",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": "pc",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Five Spice Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": "mixed into a slurry with 2 tablespoons water",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "cut on a diagonal into 1-inch/2.5cm pieces",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt (to Taste)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a0d6bbae07f2a32469d1f050ce53d79f406c075521c035d52fd5bbed41ae630c",
+    "lineage_hash": "2f2f0af1061fe5911dabee86c610a4f76c8095ff3e87719e41aa19f4ecec967c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/chinese-beef-stew-bean-curd-sticks/",
+    "fetchedAt": "2026-08-02T19:12:08.922Z"
+  },
+  "rawSource": "https://thewoksoflife.com/chinese-beef-stew-bean-curd-sticks/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

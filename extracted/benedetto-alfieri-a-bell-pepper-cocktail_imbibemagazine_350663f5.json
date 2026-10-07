@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Benedetto Alfieri: A Bell Pepper Cocktail",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all of the ingredients in a shaker with ice and shake well. Double strain into a chilled coupe.",
+      "Red Bell Pepper JuiceWash and dry the peppers and remove the stem and seeds. Chop the pepper, then run the pieces through a juicer, or blend well and finely strain the juice. Use immediately or refrigerate for up to 36 hours.",
+      "Shallot SyrupPeel and slice 50 grams of shallots (about 1/4 cup) and combine with 175 grams of water (about 6 oz.) in a saucepan, and bring to a boil. Boil for 2 minutes, then reduce to a simmer for 13 minutes more. Fine strain the liquid, then combine with an equal measure (by weight) of granulated sugar and stir until dissolved. Store refrigerated for up to 3 weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "7cc83cb6974731d2840d6dfe91422aa3e51c0cf28ba680ad7345cab1d54d775f",
+    "lineage_hash": "25efb1e76ae968fbb17e554fcd698dacd723917752bf652572d75ee4b8232f0c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/benedetto-alfieri-bell-pepper-cocktail/",
+    "fetchedAt": "2026-08-03T22:28:29.135Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/benedetto-alfieri-bell-pepper-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

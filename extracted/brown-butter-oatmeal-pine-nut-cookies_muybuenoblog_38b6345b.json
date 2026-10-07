@@ -1,0 +1,146 @@
+{
+  "recipe": {
+    "name": "Brown Butter Oatmeal Pine Nut Cookies",
+    "time": "25 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "38",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "103",
+      "carbohydrateContent": "17",
+      "fatContent": "3",
+      "proteinContent": "2"
+    },
+    "directions": [
+      "Place pine nuts in a dry (don’t add oil) frying pan large enough to hold them in a single layer.",
+      "Turn heat to medium-low and cook until fragrant and golden brown, keeping them moving (stir frequently or constantly).",
+      "When they’re golden brown, immediately transfer them to a plate to stop the cooking and prevent burning.",
+      "Melt and brown butter then bring back to room temperature.",
+      "In a large bowl, whisk the flour, baking soda, baking powder, cinnamon, and salt and set aside.",
+      "In a large bowl, cream butter and sugars until light and fluffy.",
+      "Add eggs and vanilla; beat well.",
+      "Slowly add dry ingredients to creamed mixture and beat.",
+      "With a spoon, fold in oatmeal and the toasted pine nuts.",
+      "Use a 2-tablespoon cookie scoop to scoop the cookie dough out into balls, placing them 2 inches apart on parchment lined baking sheet.",
+      "Bake at 350°F about 11 to 13 minutes or until browned. Remove to wire racks to cool."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sticks (1 Cup) Unsalted Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Piñon",
+        "unit": "oz",
+        "notes": "pine nuts",
+        "amount": "4.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Old Fashioned Oats",
+        "unit": "C",
+        "notes": null,
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7799ee3ff902f1df0a7fd9c70b04b19eabde61dbf3883f39bbba89583d39c5bd",
+    "lineage_hash": "8798a169451befe26e88ea17315752a5ab8b24cc504b10b6b50896dc2d14e99d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/oatmeal-pine-nut-cookies/",
+    "fetchedAt": "2026-08-02T07:07:32.689Z"
+  },
+  "rawSource": "https://muybuenoblog.com/oatmeal-pine-nut-cookies/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

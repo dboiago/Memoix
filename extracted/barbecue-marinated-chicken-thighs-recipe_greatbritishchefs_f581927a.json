@@ -1,0 +1,143 @@
+{
+  "recipe": {
+    "name": "Barbecue Marinated Chicken Thighs",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a food processor blitz together the onion, garlic and chilli with olive oil. Take this paste and add to a bowl, mix in all the other ingredients for the sauce. Taste for seasoning",
+      "Remove the skins from the chicken thighs and place in the prepared marinade, ensuring they are well coated. Add to a baking tray, with any excess marinade, cover with foil and place in the oven",
+      "Leave to cook for approximately 30 minutes; during this time get the barbecue ready. You can also add some rosemary, bay leaves or any herbs to the barbecue to add some extra flavour to the meat",
+      "Remove the chicken from the oven and place the individual marinated thighs on the barbecue, using tongs to turn them over. Allow to cook (I found that getting a heatproof bowl and covering the chicken for a little bit helps to smoke it and makes it even jucier)",
+      "Check the chicken is cooked thoroughly and enjoy with a fresh salad"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Thighs",
+        "unit": null,
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": null,
+        "notes": "bay leaves or any other herbs (optional)",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "peeled and quartered",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "peeled and quartered",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chillies",
+        "unit": null,
+        "notes": "fresh, stalks removed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soft Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Balsamic Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Ketchup",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Worcestershire Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "English Mustard",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b0eb48142f536bbb725c80bb7422bfbb6dad1674c97426546623ae74af744f1e",
+    "lineage_hash": "ffdebf09e5e30ac9ed141b781880cc6c4eaf8fd1e4380a4d375454bb6b9fda6a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/barbecue-marinated-chicken-thigh-recipe",
+    "fetchedAt": "2026-08-03T23:50:54.535Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/barbecue-marinated-chicken-thigh-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

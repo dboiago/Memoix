@@ -1,0 +1,200 @@
+{
+  "recipe": {
+    "name": "Bitterballen",
+    "time": "1 hr 30 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "40",
+    "source": "scraped",
+    "cuisine": "ID",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Prepare bitterballen dough: Melt butter in a frying pan over medium heat. Sauté onion until translucent. Add mushroom and cook until wilts. Then add ground beef and cook until no longer pink.",
+      "Add all-purpose flour, and stir until the mixture clumps together. Slowly pour the milk, and keep stirring until the sauce is thick and smooth.",
+      "Add mashed potato, nutmeg, salt, ground pepper, sugar, cheddar, and celery leaves. Mix well, and cook until the sauce is dry with no standing liquid. Turn off the heat and set aside.",
+      "Shape bitterballen: Take a tablespoonful of the potato and beef mixture, and shape it into a round ball. Coat it with loaf crumbs, then egg, and finally coat with bread crumbs again. You should be able to make roughly 40 meatballs. (Note 2)",
+      "Fry bitterballen: Heat a pot of oil for deep-frying. Fry meatballs in hot oil until golden brown and crispy. Drain meatballs on a wire rack.",
+      "Serve bitterballen immediately with mayo and chili sauce."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "Indonesian: mentega",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Onion (indonesian: Bawang Bombay)",
+        "unit": null,
+        "notes": "minced",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram White Button Mushroom (indonesian: Jamur Kancing Putih)",
+        "unit": null,
+        "notes": "minced",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Ground Beef",
+        "unit": null,
+        "notes": "Indonesian: daging sapi cincang",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram All-purpose Flour",
+        "unit": null,
+        "notes": "Indonesian: tepung terigu",
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": "Indonesian: susu",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Potato (indonesian: Kentang)",
+        "unit": null,
+        "notes": "peeled, boiled, and mashed",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Nutmeg",
+        "unit": "tsp",
+        "notes": "Indonesian: bubuk pala",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "Indonesian: garam",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground White Pepper",
+        "unit": "tsp",
+        "notes": "Indonesian: bubuk merica",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": "Indonesian: gula",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Cheddar (indonesian: Keju Cheddar)",
+        "unit": null,
+        "notes": "grated",
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Celery (indonesian: Daun Seledri)",
+        "unit": "stalks",
+        "notes": "Note 1, thinly sliced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Enough Oil for Deep Frying",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coating",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Panko Bread Crumbs",
+        "unit": "C",
+        "notes": "Indonesian: tepung panir",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "lightly beaten",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sauce (mix Together the Following)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bottled Chili Sauce of Your Choice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6a6d213326f3f0efec94e804be092593c424279456236f1603c7fdf8b9cb51aa",
+    "lineage_hash": "4f57d13e4d4f9fd3707fd31cf53694519f770301c87b40a0c6068ca2847ab956"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/bitterballen-dutch-meat-balls.html",
+    "fetchedAt": "2026-08-01T19:43:19.774Z"
+  },
+  "rawSource": "https://dailycookingquest.com/bitterballen-dutch-meat-balls.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

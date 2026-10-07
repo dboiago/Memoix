@@ -1,0 +1,90 @@
+{
+  "recipe": {
+    "name": "Agave-Sweetened Chocolate Ice Cream",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a small saucepan, warm the agave syrup with the unsweetened chocolate over the lowest heat possible, stirring constantly, until the chocolate is melted. Remove from heat and transfer mixtures to a large bowl. Set aside.",
+      "In a medium saucepan, add 1½ cups (375 ml) of the half-and-half and whisk in the cocoa powder. Cook over moderate heat until the mixture begins to bubble, then simmer for 30 seconds, whisking frequently, making sure to break up any clumps of cocoa powder.",
+      "Remove from heat and scrape the mixture into the bowl with the chocolate-agave mixture. Stir them together, then set a mesh strainer over the top.",
+      "Add the remaining half-and-half to the saucepan with a pinch of salt, turn on the heat, and when warm, slowly pour the warm half-and-half into the yolks whisking constantly, then pour the warmed yolks back into the saucepan.",
+      "Cook, stirring constantly over moderate heat, until the mixture becomes steamy and thickens. If using an instant-read thermometer, it should read about 170F degrees. (76C).",
+      "Pour the mixture through the strainer into the chocolate mixture.",
+      "Stir, then let cool a few minutes until tepid. Once it’s cooled down, whiz the mixture in a blender for ten seconds until it’s smooth and velvety. (Never blend very hot liquids in a blender since it creates a hot vortex that can cause the liquid to blast out of the top.)",
+      "Chill thoroughly in the refrigerator, then freeze in your ice cream maker according to the manufacturer’s instructions."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Agave Nectar",
+        "unit": "Tbsp",
+        "notes": "155ml",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsweetened Chocolate",
+        "unit": "oz",
+        "notes": "55g, very finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsweetened Cocoa Powder",
+        "unit": "C",
+        "notes": "35g, Valrhona",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Half-and-half*",
+        "unit": "C",
+        "notes": "750ml, divided",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": "large",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e7c54fea955301359f5cf8698694a22b959beef6bc050e38310ee7831fdb01c8",
+    "lineage_hash": "0cd4c943a13e5e28e9e3c0e1ce7a9058d55d7cb296d3e16637647d5b7808cb65"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/sugarfree-choco/",
+    "fetchedAt": "2026-08-02T19:45:23.559Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/sugarfree-choco/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

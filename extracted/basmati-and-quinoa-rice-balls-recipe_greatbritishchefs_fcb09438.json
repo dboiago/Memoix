@@ -1,0 +1,176 @@
+{
+  "recipe": {
+    "name": "Basmati and Quinoa Rice Balls",
+    "time": "1 hr",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the ketchup, place the apples, sugar, ajwain seeds and vinegar in a saucepan and set over a medium heat. Bring to the boil and cook the apples until they are very soft",
+      "Drain the apples, reserving the liquid in the pan. Place the apple mixture into a blender and blitz until smooth. Add the lemon juice and enough of the reserved cooking liquid to reach a thick ketchup-like consistency. Store any extra ketchup in an airtight container in the fridge for a week or so",
+      "To make the rice balls, melt the coconut oil in a saucepan. Add the onion, garlic and ginger and cook for 4 minutes, then add the spices",
+      "Continue to cook until the onion softens completely. Add the rice and quinoa, mixing well, then add the stock. Bring to the boil, stir, and reduce the heat. Cover with a lid and cook gently until the rice is tender and the liquid has evaporated. Remove from the heat, spread out on a tray and place in the fridge to cool for at least 1 hour",
+      "Preheat a deep-fryer or deep pan full of oil to 180°C",
+      "Shape the rice mixture into 30g balls and push a piece of mozzarella into the middle of each one, making sure it is completely covered in rice. Dust the balls in polenta and deep-fry until golden and crisp"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Granny Smith Apple",
+        "unit": "g",
+        "notes": "peeled, cored and finely sliced",
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cider Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ajwain Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Onion",
+        "unit": null,
+        "notes": "medium, finely diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": "minced",
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baharat Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Fenugreek",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Smoked Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basmati Rice and Smoked Quinoa Mix",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mozzarella Cheese",
+        "unit": "g",
+        "notes": "firm, diced into 1cm cubes",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Polenta",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for deep-frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fdd722ed6f6f7becb083114f93e315d3da2f08285e8c79904d83a184cbee12c0",
+    "lineage_hash": "46e99894d58cb4e337905730103fde2b586872eb2b8e773ae0dfa20b4a12e39e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/spiced-rice-quinoa-balls-recipe",
+    "fetchedAt": "2026-08-03T08:26:23.853Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/spiced-rice-quinoa-balls-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

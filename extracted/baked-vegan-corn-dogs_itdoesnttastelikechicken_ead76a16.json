@@ -1,0 +1,140 @@
+{
+  "recipe": {
+    "name": "Baked Vegan Corn Dogs",
+    "time": "40 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "337",
+      "carbohydrateContent": "46",
+      "fatContent": "11",
+      "proteinContent": "11"
+    },
+    "directions": [
+      "OVEN: Preheat oven to 400F (200C). Line a baking sheet with parchment paper. If you are using wooden skewers soak them in water for 10 - 20 minutes so they don&#39;t burn.AIR FRYER: Preheat your air fryer to 370F (190C).",
+      "In a large bowl whisk together the flour, cornmeal, baking powder, salt, mustard powder, and garlic powder. Add the softened vegan butter, plant-based milk, and maple syrup and mix together until it forms a soft dough.",
+      "Place the corn dog dough between two large sheets of parchment paper and roll out the dough until it's about 1/4\" thick. The dough&nbsp;is sticky so using parchment paper will make it easy to roll out and peel up. Use a knife or pizza cutter to divide the dough into 6 sections that are each large enough to cover a veggie dog.&nbsp;",
+      "Skewer the veggie dogs then wrap them in the dough. Pinch the back seam of the dough together along the veggie dog and at the top. Cut off any excess dough. Once sealed you can lightly roll the corn dog on the parchment paper to smooth it out for the best look.",
+      "OVEN: Bake 15 to 20 minutes until the bottoms are nicely browned. Serve with ketchup or mustard.AIR FRYER: Place the corndogs in a single layer in the air fryer, working in batches if needed and fry 12 to 16 minutes until the bottoms are lightly browned. Serve with ketchup or mustard."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornmeal",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegan Butter",
+        "unit": "Tbsp",
+        "notes": "but not melted, softened",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plant-based Milk",
+        "unit": "C",
+        "notes": "such as soy or almond",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maple Syrup",
+        "unit": "Tbsp",
+        "notes": "alt: agave",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegan Veggie Dogs",
+        "unit": null,
+        "notes": "I used Yves",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wooden Sticks",
+        "unit": null,
+        "notes": "alt: skewers",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard and Ketchup for Dipping",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4ccb541f6d56fc000950500aa5137cf988ddcce4b22ee9b794d89ef26bb60aa2",
+    "lineage_hash": "096a573e0c82dc0f4c1ab4354e1cc4c8ffaf03d42a0748244a9b99b3235a3317"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/baked-vegan-corn-dogs/",
+    "fetchedAt": "2026-08-01T21:56:33.162Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/baked-vegan-corn-dogs/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

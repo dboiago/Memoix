@@ -1,0 +1,38 @@
+{
+  "recipe": {
+    "name": "Apapacho",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Cocktail",
+    "garnish": [
+      "Nutmeg",
+      "Pinole (with Nutmeg)"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pour the first 4 ingredients into the glass and gently stir. Add the whipping cream to a shaker with an ice cube and shake very hard. Strain over the cocktail, then grate the nutmeg over the top.",
+      "Note: The bar mixes a bit of pinole with nutmeg (4:1) for the garnish, but nutmeg alone works fine if you don&#8217;t have pinole."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "360a1afb74f5d5c4ab19e91de23f20d4d5f36adcb4dbc8fc84a9ab2ea53efbde",
+    "lineage_hash": "f811e1490332ed5c0bf4d2f07a239ecac55bbe5d18b25f274184e2efee6285cc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/apapacho-irish-coffee/",
+    "fetchedAt": "2026-08-03T23:02:40.710Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/apapacho-irish-coffee/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

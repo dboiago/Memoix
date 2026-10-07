@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Autumn Aperitif: Lucano #2",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Glass",
+    "garnish": [
+      "Chinotto Soda"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the amaro, syrup, gin and lime juice together in a shaker with ice and shake until chilled. Strain into a glass over crushed ice. Top with Chinotto soda and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "7f646e943c3ac02ab0e1cb34467c6c459685ef95c724003f4b18a1e5f62d80e9",
+    "lineage_hash": "93ccff543463e3c7a30a575242e39c5d98f5688b03f8b57b74a1407dec64100c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/autumn-aperitif-lucano-2/",
+    "fetchedAt": "2026-08-03T18:09:25.145Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/autumn-aperitif-lucano-2/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

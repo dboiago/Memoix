@@ -1,0 +1,138 @@
+{
+  "recipe": {
+    "name": "A Simple Soup",
+    "time": "1 hr 30 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Melt the butter over a low to medium flame.",
+      "Sauté the onion and garlic.",
+      "Add the chadon beni (culantro) and chive. Now add the tomatoes and let it cook in its own juices for about a minute…",
+      "Add about 2 cups of water and a pinch of salt to taste.",
+      "Then strain. The stock is now ready.",
+      "Return the chicken stock to the pot on a medium flame. Add the potatoes, carrots and corn.",
+      "When the potatoes are just about cooked add the ramen noodles and the rest of the chive.",
+      "Stir until ramen is cooked. Season to taste ( salt, pepper etc.) Serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "small",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "crushed and chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leaves Chadon Beni",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chive",
+        "unit": "sprig",
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": "large",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potato",
+        "unit": null,
+        "notes": "peeled and chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": "peeled and chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tin Corn",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ramen Noodles",
+        "unit": "pkg",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1705c85777752026ffbb706e9bd49b357f8cdb5df30661be39eefcd3318ec7f1",
+    "lineage_hash": "1569ea1d3a9ea3e82aefa6ce86b8bf5e0c58ff174c19f6d96514c7641acb94f6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.simplytrinicooking.com/simple-soup/",
+    "fetchedAt": "2026-09-26T00:20:49.194Z"
+  },
+  "rawSource": "https://www.simplytrinicooking.com/simple-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

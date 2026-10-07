@@ -1,0 +1,137 @@
+{
+  "recipe": {
+    "name": "Thai BBQ Pork Meatballs/Patties (Moo Ping Style)",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "TH",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pound the garlic, white pepper and cilantro roots/stems into a fine paste.",
+      "Add palm sugar and pound to dissolve, then add the oyster sauce, soy sauce, black soy sauce, coconut milk and stir to mix.",
+      "Pour the seasoning into the ground pork, add the cornstarch and knead with your hand until well combined. If this is your first time, I highly recommend tasting it for saltiness by cooking off a small amount of the mixture and microwave it for 15-20 seconds, just to cook it off. Add more soy sauce if it needs more salt.",
+      "Form pork into patties or meatballs. If you&#39;re pan frying, make them into patties no thicker than 1 cm thick (0.4 inch) or it would take too long to pan fry. The patties can be thicker if you&#39;re air-frying.If making meatballs, I recommend making them 1-inch in diameter, and then air-frying or baking them.",
+      "If air-frying: Air fry meatballs or patties at 400°F (200°C) until fully cooked and browned slightly, 8-10 minutes for meatballs, 5-7 minutes for patties, depending on the thickness. Internal temp should reach at least 160°F.",
+      "If pan-frying: Pan-fry them in a large skillet over medium heat, with enough oil to generously coat the bottom, for about 2 minutes per side, until well browned and cooked through. Internal temp should reach at least 160°F. Tip: If using a stainless steel pan, to prevent sticking, preheat the pan until sprinkled water beads up into little balls that run around, then add the oil.",
+      "Serve with sticky rice or jasmine rice, and enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White or Black Peppercorns",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro Roots",
+        "unit": null,
+        "notes": "chopped, or sub 6 cilantro stems",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Palm Sugar",
+        "unit": "Tbsp",
+        "notes": "finely, chopped",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Soy Sauce",
+        "unit": "tsp",
+        "notes": "see note",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lean Ground Pork",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": "or all-purpose flour",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Neutral Oil",
+        "unit": null,
+        "notes": "for pan-frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sticky Rice",
+        "unit": null,
+        "notes": "or jasmine rice, for serving (optional)",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "481860a4380a2237e88f72cd48a2185c6cbd50d9839dd5935ca2b8adff4e558a",
+    "lineage_hash": "6d5969d6c3d6967e3e50b1b0ae637fd8a362fb6f749ea3e513ca334c35a55df8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://hot-thai-kitchen.com/moo-ping-patties/",
+    "fetchedAt": "2026-08-02T04:12:05.919Z"
+  },
+  "rawSource": "https://hot-thai-kitchen.com/moo-ping-patties/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

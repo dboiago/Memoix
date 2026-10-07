@@ -1,0 +1,150 @@
+{
+  "recipe": {
+    "name": "Ancona-Style Sea Bream",
+    "time": "2 hr 40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Clean and mince shallots. Strip leaves from thyme sprig and crumble 1 bay leaf. Mix shallots, thyme, bay leaf, 1 cup wine, 3 Tbsp. oil, a pinch of salt, a grind of pepper and a grating of nutmeg for the marinade.",
+      "Clean the sea bream and cover with the marinade. Let marinate for 2 hours. Remove from marinade and fill with a little of the marinade. Cook on a hot grill for 15 minutes per side.&nbsp;",
+      "Hard boil the eggs, then separate yolks from whites.",
+      "Soak bread in 3 Tbsp. vinegar. Remove and press out any excess vinegar. Rinse salt from the anchovies under running water. In a blender, mix the bread, egg yolks, anchovies, peeled garlic clove and 1/2 cup oil until smooth. Serve sauce with sea bream.&nbsp;"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sea Bream",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Bread",
+        "unit": "slice",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt-packed Anchovies",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grating Nutmeg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra-virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grind Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7dae9c0ab91b9fc896695f9338eb50a6ed4397a9c1226ae1bd05543de3c70632",
+    "lineage_hash": "0f6d08ef22352585fe21c761d9ab22f986e04bc64d239ff676650815ad546587"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/main-course/ancona-style-sea-bream",
+    "fetchedAt": "2026-08-02T19:55:10.627Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/main-course/ancona-style-sea-bream",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,178 @@
+{
+  "recipe": {
+    "name": "Ayam Bakar Semur (Broiled Chicken in Nutmeg and Sweet Soy Sauce)",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "ID",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Braise the chicken: Heat oil in a wok over medium heat and sauté spice paste, Indonesian bay leaves, cinnamon, cloves, cumin, nutmeg, and white pepper until fragrant, about 5 minutes.",
+      "Add chicken pieces and fry until no longer pink. Then, add tomatoes and stir until they start to wilt.",
+      "Stir in salt, Indonesian sweet soy sauce, and salt. Once it boils, reduce the heat to a simmer and cook until the chicken is cook and tender, about 30 minutes.",
+      "Basting sauce: Line a baking sheet with aluminum foil, remove the chicken from the wok and arrange them on the prepared baking sheet.",
+      "Turn the heat to medium-high and continue cooking the sauce until it thickens into a basting sauce consistency. It should look like a barbeque sauce. Turn off the heat, and strain to get a smooth sauce.",
+      "Broil the chicken: Preheat the oven broiler.",
+      "Brush the chicken with basting sauce and broil until they are slightly charred. It should take about 4-5 minutes per side.",
+      "Serve: Serve the chicken immediately with steamed white rice and any remaining basting sauce."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Indonesian Bay Leaves",
+        "unit": null,
+        "notes": "Indonesian: daun salam",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Cloves",
+        "unit": null,
+        "notes": "Indonesian: cengkeh",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": null,
+        "notes": "Indonesian: kayu manis",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin",
+        "unit": "tsp",
+        "notes": "Indonesian: jintan",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg",
+        "unit": "tsp",
+        "notes": "Indonesian: pala",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Pepper",
+        "unit": "tsp",
+        "notes": "Indonesian: merica",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Drumsticks And/or Thighs",
+        "unit": "pcs",
+        "notes": null,
+        "amount": "10-12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato (60 Gram / 2 Oz)",
+        "unit": null,
+        "notes": "cut into wedges",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "Indonesian: kecap manis",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grind the Following Into Spice Paste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Shallot",
+        "unit": null,
+        "notes": "Indonesian: bawang merah",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "Indonesian: bawang putih",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "Indonesian: jahe",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Candlenuts",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e2f329b6c76ba77b3870c6a1c081aa70c3dc34ea3a86e6914be53fddd47ce345",
+    "lineage_hash": "55148ba8cdcc3f56f0658cf537f6087b60ec6b7c2e533d42706e5a69425c274a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/ayam-bakar-semur-broiled-chicken-in-nutmeg-and-sweet-soy-sauce.html",
+    "fetchedAt": "2026-08-01T19:35:18.715Z"
+  },
+  "rawSource": "https://dailycookingquest.com/ayam-bakar-semur-broiled-chicken-in-nutmeg-and-sweet-soy-sauce.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

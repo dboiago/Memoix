@@ -1,0 +1,93 @@
+{
+  "recipe": {
+    "name": "Asian Crack Sauce",
+    "time": "5 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "VN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a small bowl, combine fish sauce (1-1/2 tablespoons), brown sugar (2 tablespoons, loosely packed), and lime juice (1 tablespoon, half large lime).",
+      "Finely mince shallot (1 tablespoon), garlic (1 teaspoon), cilantro (4 sprigs), and Thai chili peppers (optional). Add them to the fish sauce mixture.",
+      "Stir to combine and you are ready to serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Fish Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "Tbsp",
+        "notes": "loosely packed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "Tbsp",
+        "notes": "about half a large lime",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallot",
+        "unit": "small",
+        "notes": "about 1 tablespoon finely minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": "large",
+        "notes": "about 1 teaspoon finely minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Or 2 Red Thai Chili Peppers",
+        "unit": null,
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bbdc40c2de578b647589b93c189fbd2f178ed913404e663c682e02bf8e87bf7b",
+    "lineage_hash": "47c9533fee538e029d33f37da366e00c884b8926f8975cc96edea1a9bd738751"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://vickypham.com/blog/steak-thai-dipping-sauce/",
+    "fetchedAt": "2026-08-02T02:06:38.878Z"
+  },
+  "rawSource": "https://vickypham.com/blog/steak-thai-dipping-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

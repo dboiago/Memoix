@@ -1,0 +1,120 @@
+{
+  "recipe": {
+    "name": "Braised Beef Cheek",
+    "time": "3 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 200°C/gas mark 6",
+      "Gently roll the pieces of meat in the seasoned flour. Heat the vegetable oil in a large, heavy, heat-proof casserole dish until very hot and brown the meat quickly and evenly. Add the diced carrots and onions, cover and sweat gently for 10 minutes",
+      "Holding the lid over the casserole, pour away all of the cooking fat. Deglaze the dish with the red wine and bring to the boil. Add the garlic and bouquet garni and season",
+      "Replace the lid and cook in the oven for about 2 1⁄2 hours, until the meat is very tender. Stir regularly during cooking, adding a little water if there is too much evaporation",
+      "Remove the casserole dish from the oven. Lift out the pieces of meat with a slotted spoon and place in another pan, then pass the sauce through a fine sieve over the meat. Discard the vegetables and the bouquet garni",
+      "Serve with creamy mashed potatoes"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef Cheek",
+        "unit": "g",
+        "notes": "cut into 12 large pieces",
+        "amount": "700",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Seasoned Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "g",
+        "notes": "roughly diced",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "g",
+        "notes": "roughly diced",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "L",
+        "notes": null,
+        "amount": "1.1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bouquet Garni",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a49a764963b535fc39f06bdf7e58291e145ed849fed803dde68413ff5be38e5c",
+    "lineage_hash": "dc745f710ac1d45190580103a25dc70d8e74ab383b41eccb756bb339d6e5aa37"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/braised-beef-cheek-recipe",
+    "fetchedAt": "2026-08-03T18:48:03.305Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/braised-beef-cheek-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

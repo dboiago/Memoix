@@ -1,0 +1,155 @@
+{
+  "recipe": {
+    "name": "Chili Crisp Noodles (Cold Noodles with Lao Gan Ma Sauce)",
+    "time": "30 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "352",
+      "carbohydrateContent": "38",
+      "fatContent": "13",
+      "proteinContent": "23"
+    },
+    "directions": [
+      "Bring a large pot of water to a boil. Cook noodles according to package directions. Once done, transfer the noodles to a colander to drain, then rinse with cold tap water to stop cooking. Drain and set aside.",
+      "Bring the same pot of water back to a boil and add chicken tenderloins. Keep the water at a very low simmer that barely bubbles. Cook the chicken for 5 to 7 minutes, until just cooked through. Transfer to a plate to cool. Then shred the chicken using two forks.",
+      "Mix the chili crisp, soy sauce, Chinkiang vinegar, sesame paste, sesame oil, sugar, ginger, and Sichuan peppercorn together in a medium bowl.",
+      "In a large bowl, combine the cooked noodles (Footnote 2), red onion, chicken, cucumber and most of the noodle sauce, reserving 1 to 2 tablespoons. Toss to coat well. Transfer to each individual serving bowl, top with peanuts and cilantro, if using. (Footnote 3) Taste the noodles and mix in the remaining sauce if needed. Serve at room temperature with the remaining sauce."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Wheat Noodles (such As Udon Noodles) (or 8 Oz Fresh Wheat Noodles)",
+        "unit": "oz",
+        "notes": "*Footnote 1, dried",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Tenderloins",
+        "unit": "lb",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lao Gan Ma Chili Crisp",
+        "unit": "C",
+        "notes": "or other chili crisp you prefer",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinkiang Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Sesame Paste",
+        "unit": "Tbsp",
+        "notes": "or tahini",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": "or sugar",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Ginger",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Sichuan Peppercorn",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Persian Cucumber",
+        "unit": null,
+        "notes": "julienned",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted Dry-roasted Peanuts",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9db971aa4608bcba9a38f62a28914de972e0a38fd037ba8a0fbedab181b42e7c",
+    "lineage_hash": "f261243f0a249417e7b4393403e20d561172dcbccbbc5130e52530983279f599"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/chili-crisp-noodles-with-lao-gan-ma-sauce/",
+    "fetchedAt": "2026-08-02T11:15:07.026Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/chili-crisp-noodles-with-lao-gan-ma-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

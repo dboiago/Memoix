@@ -1,0 +1,129 @@
+{
+  "recipe": {
+    "name": "Authentic Vietnamese Sweet Leaf Soup (Canh Rau Ngót)",
+    "time": "45 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "VN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Strip the leaves from the stems by running your pinched fingers down the stems. Wash the leaves while gently scrunching them to help them soften faster during cooking. Drain and set aside. Peel and finely dice the garlic and shallots. Set aside as well.",
+      "Heat a little oil in a soup pot over medium heat. Add the minced garlic or shallots and sauté until fragrant (about 20 seconds).",
+      "Add the small pieces of pork ribs or your protein of choice like ground pork. Toss pork ribs (or ground meat) with the toasted aromatics and cook until lightly browned on the outside.",
+      "Pour in the water and bring it to a gentle boil. Let it cook until the ribs are tender (about 30 minutes depending on size). You can test them by piercing the meat with a fork or chopstick. If it pierces easily, it&#8217;s done. If using a quicker-cooking protein like ground meat, this boiling step will only take only 10 minutes.",
+      "Season the stock to make it into a delicious broth. Add fish sauce, salt, sugar, bouillon powder, and ground black pepper, a little at a time to taste.",
+      "Add the sweet leaf to the boiling broth. Let it cook for about 8 minutes, or until the leaves reach your preferred texture. Scrunch them into the boiling liquid a handful at a time (optional but that&#8217;s how it&#8217;s done traditionally)",
+      "Ladle the hot soup into a large bowl. Crack more black pepper for a aromatic finish and serve alongside steamed jasmine rice. Optionally, pair the soup with your favorite braised dish for a more complete, comforting Vietnamese home-cooked rice meal."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sweet Leaf / Rau Ngot",
+        "unit": "oz",
+        "notes": "1 bundle",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pork Ribs Cut Into Small Segments",
+        "unit": "oz",
+        "notes": "or choice of meat",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallot Minced",
+        "unit": "small",
+        "notes": "can sub with whites of green onions",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken",
+        "unit": "tsp",
+        "notes": "alt: pork bouillon powder, or 1 teaspoon MSG",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Ground Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "qt",
+        "notes": "4 cups",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Neutral Oil",
+        "unit": "Tbsp",
+        "notes": "vegetable or canola",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "920a97c6950b6d16a9af88a126d649d89ca13047be278b8d030f56aae59b424d",
+    "lineage_hash": "8d4e3669e938b18e1c0f8fcfe360b2018556e674e248e102649f7cd23c5e665c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://vickypham.com/blog/authentic-vietnamese-sweet-leaf-soup-canh-rau-ngot/",
+    "fetchedAt": "2026-08-02T05:57:08.180Z"
+  },
+  "rawSource": "https://vickypham.com/blog/authentic-vietnamese-sweet-leaf-soup-canh-rau-ngot/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

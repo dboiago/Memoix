@@ -1,0 +1,128 @@
+{
+  "recipe": {
+    "name": "Barbecued Bream",
+    "time": "20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix together the lemongrass, fennel and dill in a bowl with a drizzle of olive oil",
+      "Cut out 4 large squares of tin foil, each piece should be roughly 4 times the size of each fish. Cut the banana leaf into 4 and a piece on top of each foil square",
+      "Place a fish into the centre of each leaf, then stuff the cavity of each fish with a star anise and some of the lemongrass and fennel mix. Top each fish with 3 lemon slices and season with salt",
+      "Tightly wrap each fish first in the banana leaf, then in the foil until fully enclosed and sealed as a thin package",
+      "Place the parcels on a medium hot barbecue and cook for 12 minutes, turning over after 6 minutes. At the same time, char the lemon halves and fennel bulb halves on the barbecue. Add the samphire to a pan of boiling water to quickly blanch, then dress with a little olive oil and the chilli slices",
+      "When the fish is cooked through (to check, press down gently on one of the parcels, it should give way easily) unwrap and discard the foil. Carefully remove the head and bones and flake the flesh onto plates (or you could leave them whole in the banana leaves if preferred). Serve with a charred lemon half, some of the fennel and samphire and a drizzle of olive oil"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sea Bream",
+        "unit": null,
+        "notes": "ask your fishmonger to do this, each weighing 500g, scaled, cleaned and gutted",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sticks of Lemongrass",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel",
+        "unit": null,
+        "notes": "2 finely sliced, 1 halved lengthways",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dill",
+        "unit": "bunch",
+        "notes": "roughly chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Samphire",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemons",
+        "unit": null,
+        "notes": "1 finely sliced and 2 cut in half",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Banana Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "aa37ec9ddcd4014b7024d55c7e79af40820adb6780b202005f1f246eb9722260",
+    "lineage_hash": "292b7a9b89da42cec620dc59f7945e1528e450ad2bd79659f536d9e41b76f1b3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/barbecued-bream-fennel-lemongrass",
+    "fetchedAt": "2026-08-03T15:24:16.556Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/barbecued-bream-fennel-lemongrass",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

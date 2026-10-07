@@ -1,0 +1,37 @@
+{
+  "recipe": {
+    "name": "Café de la Mañana",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Cup",
+    "garnish": [
+      "Freshly Grated Nutmeg"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the tequila and Kahlua to a glass and top with fresh, hot coffee. Fold the whipped cream onto top of drink. Dust with freshly grated nutmeg.",
+      "Agave Nectar Whipped Cream: Mix 1 cup heavy cream, 2 Tbsp. agave nectar, and 1 tsp. vanilla extract together in a bowl until firm."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "8d2c630da489ddb0941c01278d3cd4fe6b3822b988f8c4bdb4c4cb233539393c",
+    "lineage_hash": "7a8f544485768172c72457961b3ac6fa577a31b0c7ea7b0d66ce97a2bf9b4cd2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/recipe-cafe-de-la-manana/",
+    "fetchedAt": "2026-08-03T20:05:09.705Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/recipe-cafe-de-la-manana/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

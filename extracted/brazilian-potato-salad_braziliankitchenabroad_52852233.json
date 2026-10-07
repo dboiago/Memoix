@@ -1,0 +1,134 @@
+{
+  "recipe": {
+    "name": "Brazilian Potato Salad",
+    "time": "45 min",
+    "course": "salad",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "BR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "203",
+      "carbohydrateContent": "25",
+      "fatContent": "11",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "Place the diced potatoes and carrots in a medium to large pan, then add enough cold water to cover. Season generously with salt, and place over medium heat and bring to gentle a boil.",
+      "Cook until the potatoes and carrots are tender all the way through when gently pierced with a fork.",
+      "When they are cooked, remove the pan from the heat and drain the hot water.",
+      "Place the cooked carrots and potatoes in a strainer, and run some cold water to stop the cooking process and avoid the potatoes to overcook with the residual heat.",
+      "When the carrots and potatoes are cool to touch, stop the water and let them sit for a few minutes in the strainer to drain.",
+      "Add the cooled potatoes and carrots to a large bowl, season with salt and pepper, and mix in the vinegar, mayonnaise, the chopped parsley, and any other optional add-ons you like.",
+      "Cover and refrigerate a few hours before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Yellow Potatoes Peeled and Diced",
+        "unit": "lb",
+        "notes": null,
+        "amount": "2",
+        "section": "Classic Brazilian Potato Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Large Carrots Peeled and Diced",
+        "unit": "C",
+        "notes": null,
+        "amount": "3",
+        "section": "Classic Brazilian Potato Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "C",
+        "notes": "alt: more if you like it creamier",
+        "amount": "½",
+        "section": "Classic Brazilian Potato Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Apple Cider Vinegar",
+        "unit": "tsp",
+        "notes": "alt: more to taste",
+        "amount": "½",
+        "section": "Classic Brazilian Potato Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "¼",
+        "section": "Classic Brazilian Potato Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Classic Brazilian Potato Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Yellow or Dijon Mustard",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Optional Add-ons and Variations",
+        "isOptional": false
+      },
+      {
+        "name": "Green Olives",
+        "unit": "C",
+        "notes": "sliced",
+        "amount": "½",
+        "section": "Optional Add-ons and Variations",
+        "isOptional": false
+      },
+      {
+        "name": "Boiled Eggs",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2-3",
+        "section": "Optional Add-ons and Variations",
+        "isOptional": false
+      },
+      {
+        "name": "Corn",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Optional Add-ons and Variations",
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": "C",
+        "notes": "alt: green onions",
+        "amount": "¼",
+        "section": "Optional Add-ons and Variations",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0b0b21c65954cb8e67c4ba7773e63c2f2bf67a7cc5aad63cd6319668ded82bed",
+    "lineage_hash": "349b13750a9f5dfe2a9524294c44c32796c3e3a170be166ad9836d0d59488206"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://braziliankitchenabroad.com/mayo-potato-salad/",
+    "fetchedAt": "2026-09-25T19:10:44.863Z"
+  },
+  "rawSource": "https://braziliankitchenabroad.com/mayo-potato-salad/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Billy Sunday's Amaro Daiquiri",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all of the ingredients in a shaker with ice, then shake to chill. Strain into a coupe and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "9e5bccd64232f2c4e97202ee184e411481002bf3e5221503cb864c1d490a86a9",
+    "lineage_hash": "d725d5311f5cf711af200c217344c5d462b5bcd394862009f98b6de3ba5edaba"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/billy-sundays-amaro-daiquiri/",
+    "fetchedAt": "2026-08-03T18:56:02.001Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/billy-sundays-amaro-daiquiri/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

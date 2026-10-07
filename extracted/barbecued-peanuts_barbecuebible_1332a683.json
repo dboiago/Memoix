@@ -1,0 +1,78 @@
+{
+  "recipe": {
+    "name": "Barbecued Peanuts",
+    "time": "1 hr 30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the peanuts, butter, hot sauce, and rub in a mixing bowl and toss to mix. Season with salt and pepper to taste. Let the nuts marinate for 30 minutes to 1 hour, stirring them several times so that they marinate evenly.",
+      "Spread out the peanuts over the bottom of the aluminum foil pan(s). Ideally the nuts will be in a single layer, but it’s not the end of the world if they’re not.",
+      "Set up the grill for indirect grilling and preheat to medium. If using a gas grill, place all of the wood chips or chunks in the smoker box or in a smoker pouch and run the grill on high until you see smoke, then reduce the heat to medium. If using a charcoal grill, preheat it to medium, then toss all of the wood chips or chunks on the coals.",
+      "When ready to cook, place the pan(s) with the peanuts in the center of the hot grate, away from the heat, and cover the grill. Cook the peanuts until toasted and golden brown, 20 to 30 minutes, turning them from time to time with a spatula so they roast evenly. Let the grilled nuts cool to room temperature (if you can wait that long), then transfer them to a bowl for serving. In the unlikely case you have any peanuts left over, once cool they can be stored in an airtight container at room temperature for 2 to 3 days."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Shelled But Uncooked Peanuts",
+        "unit": "C",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted Butter",
+        "unit": "C",
+        "notes": "melted",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tabasco Sauce",
+        "unit": "C",
+        "notes": "alt: your favorite hot sauce",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Your Favorite Barbecue Rub",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Salt (kosher or Sea) and Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7667e65106ff69374ecb12bc66d524825e95bb6ca49ca19e371705bdbefacf42",
+    "lineage_hash": "40e46baff5eebe2579cce775e6486960cd43e5f6b642ff0721b4d8a23c54c126"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/barbecued-peanuts/",
+    "fetchedAt": "2026-08-03T09:40:25.714Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/barbecued-peanuts/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

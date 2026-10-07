@@ -1,0 +1,138 @@
+{
+  "recipe": {
+    "name": "Bakso Goreng Ayam",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "ID",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Grind chicken thighs in a food processor. Transfer ground chicken into a mixing bowl.",
+      "Season chicken with garlic, salt, sugar, ground pepper, chicken bouillon powder, and sesame oil. Mix well.",
+      "Slowly pour in ice cold water to the meat mixture while stirring until all the water is fully incorporated into the meat mixture (there shouldn't be any standing water).",
+      "Add in egg, mix well, then add tapioca starch and baking powder to the meat mixture. Mix until fully incorporated.",
+      "Chill the meat mixture in the fridge for 1 hour.",
+      "Heat enough oil for deep frying in a pot/wok over medium heat.",
+      "Once the oil is hot, drop tablespoonful of chicken meat mixture into the hot oil. Cook until golden brown, about 4 minutes. Repeat until all chicken meat mixture is used up. (Note 1)",
+      "Serve hot with chili sauce and/or tomato ketchup."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Thighs",
+        "unit": null,
+        "notes": "about 600 gram, skin intact, boneless",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "grated",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Pepper",
+        "unit": "tsp",
+        "notes": "white is preferred",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Bouillon Powder",
+        "unit": "tsp",
+        "notes": "or salt",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ice Cold Water",
+        "unit": "ml",
+        "notes": "1 cup",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Tapioca Starch",
+        "unit": null,
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Enough Oil for Deep Frying",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4808e50ae57fe3951e332bcf3b242370f780f4eda24d47c4632b32f9f7debd73",
+    "lineage_hash": "2b91233e24ad0d23d64494cf890a51e6ec417f1f507cfcbd613ffd57cf42bdbe"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/bakso-goreng-ayam-fried-chicken-meatballs.html",
+    "fetchedAt": "2026-08-02T03:43:06.121Z"
+  },
+  "rawSource": "https://dailycookingquest.com/bakso-goreng-ayam-fried-chicken-meatballs.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,209 @@
+{
+  "recipe": {
+    "name": "Apple Filled Donuts",
+    "time": "13 hr 20 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "416",
+      "carbohydrateContent": "78",
+      "fatContent": "84",
+      "proteinContent": "6"
+    },
+    "directions": [
+      "Toss the apple cubes with sugar to macerate.",
+      "Cook the apples with the sugar and cornstarch to make the filling. This can be done a day ahead.",
+      "Allow the apples to cool before filling the donuts.",
+      "Roll the dough to 1/4\" thick and cut 4\" circles.",
+      "Allow the donuts to rise at room temperature if you want to fry the same day.",
+      "Refrigerate them over night if you want to fry the next day.",
+      "Maintain the oil temperature at 350°F while you fry the donuts.",
+      "If you fry them too hot they won’t rise as much and if you fry them too cool they’ll absorb too much oil.",
+      "Use a skewer to poke a hole in one end of the donut. Move the skewer around to make a pocket for the apple filling.",
+      "Pipe the apple filling into the warm donuts."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Apples",
+        "unit": "lb",
+        "notes": "peeled, cored and cut into 1/4″ cubes",
+        "amount": "1½",
+        "section": "Apple Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "2",
+        "section": "Apple Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Apple Cider",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": "Apple Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": "Apple Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Apple Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Apple Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Apple Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Apple Cider",
+        "unit": "oz",
+        "notes": "4 cups",
+        "amount": "32",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "cold",
+        "amount": "2",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Warm Water",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Instant Yeast",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2¼",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Unbleached All-purpose Flour",
+        "unit": "oz",
+        "notes": "3 ¾ cups, see note",
+        "amount": "18¾",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": "room temp",
+        "amount": "1",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "qt",
+        "notes": "for frying",
+        "amount": "1",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": "Coating Sugar",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Coating Sugar",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cardamom",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Coating Sugar",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d9906127a5d370002623f78efe28cdd756b681a14317b3918d4ba8a302877e73",
+    "lineage_hash": "c4fd9e7f3ec4b0d448760ed58cc2fd3f8112bec758242cfb2f90ee4ad0445353"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2019/10/25/apple-filled-donuts/",
+    "fetchedAt": "2026-08-01T18:56:07.734Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2019/10/25/apple-filled-donuts/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

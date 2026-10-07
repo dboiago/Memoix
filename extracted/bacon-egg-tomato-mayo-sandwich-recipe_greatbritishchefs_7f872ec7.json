@@ -1,0 +1,159 @@
+{
+  "recipe": {
+    "name": "Bacon, Egg, Tomato & Mayo Sandwich",
+    "time": "20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin making the sandwich, prepare the cheddar and garlic mayonnaise by placing the egg yolks into a food processor with the cheese, mustard, vinegar and garlic. Blend for 1 minute and then slowly pour in the oil whilst the processor is running",
+      "When all the oil is incorporated stop the blender and add a little salt to taste. Set aside",
+      "For the sandwich, cook the bacon slices in a frying pan until crisp. Toast the slices of bread, with 4 slices toasted with shredded or sliced cheddar on top. Season the hard boiled eggs with salt to taste. Stir the chives into the cheddar and garlic mayonnaise",
+      "To assemble the sandwich, spread 4 slices of toast with a layer of mayonnaise. Top with half the egg, tomato, bacon and herbs. Spread both sides of 4 more slices of toast with mayonnaise and place on top. Cover with remaining egg, tomato, bacon, herbs, and finish with the slices of cheese on toast",
+      "Secure sandwiches with picks and cut into triangles to serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Free-range Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cheddar",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "English Mustard",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sunflower Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornish Sea Salt to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Streaky Bacon",
+        "unit": "slices",
+        "notes": null,
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bread",
+        "unit": "slices",
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cheddar",
+        "unit": "g",
+        "notes": "shredded or sliced",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "hard boiled and thinly sliced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Season",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Herb Leaves",
+        "unit": null,
+        "notes": "such as flat-leaf parsley, basil and coriander",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bcf91a039c48bd8afeb6d320d09d844ee1192175e92bb99e260eb6708bf130c1",
+    "lineage_hash": "24e2c7b1ae533c55b5407759e7776993112cdfea2b9ea3d0d57e42ce27a435a6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/club-sandwich-recipe-bacon-cheddar-garlic-mayo",
+    "fetchedAt": "2026-08-03T16:29:10.431Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/club-sandwich-recipe-bacon-cheddar-garlic-mayo",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

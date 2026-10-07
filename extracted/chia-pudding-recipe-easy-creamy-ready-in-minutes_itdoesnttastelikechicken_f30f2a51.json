@@ -1,0 +1,99 @@
+{
+  "recipe": {
+    "name": "Chia Pudding",
+    "time": "5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "173",
+      "carbohydrateContent": "19",
+      "fatContent": "9",
+      "proteinContent": "6"
+    },
+    "directions": [
+      "Activate the chia seeds: In a bowl, combine the chia seeds and hot water. Stir very well and let sit for 2 minutes to thicken. The mixture will start thin, then quickly become thick as the seeds absorb the liquid.",
+      "Add milk and flavor: Stir in the plant-based milk, maple syrup, vanilla (if using), and salt. Stir very well, making sure to break up any clumps. Stir again after 1 minute to ensure a smooth texture.",
+      "Let thicken: Let sit for another 2–3 minutes, then stir again until smooth and creamy.",
+      "Serve: Divide into bowls or jars and add toppings as desired."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chia Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Water",
+        "unit": "C",
+        "notes": "not boiling",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plant-based Milk",
+        "unit": "C",
+        "notes": "such as oat, almond, or soy",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maple Syrup",
+        "unit": "Tbsp",
+        "notes": "or to taste",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": "optional, for flavor balance",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fruit",
+        "unit": null,
+        "notes": "fresh, berries, nuts, seeds, granola, coconut flakes, chocolate chips, or nut butter",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b74ceac5f96e4e5978a4d45bf028ed0d49c1601036c4a447f6dcd50f7b0a0644",
+    "lineage_hash": "f7dd1d108b9c28ab537703d1888363250821e513ec4be13419f0e61b9a1c8727"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/5-minute-chia-pudding-no-chilling-overnight/",
+    "fetchedAt": "2026-08-02T08:12:55.673Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/5-minute-chia-pudding-no-chilling-overnight/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

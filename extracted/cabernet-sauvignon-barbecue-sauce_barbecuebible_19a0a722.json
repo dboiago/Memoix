@@ -1,0 +1,126 @@
+{
+  "recipe": {
+    "name": "Cabernet Sauvignon Barbecue Sauce",
+    "time": "1 hr 30 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Melt the butter in a heavy nonreactive saucepan over medium heat. Add the bacon and cook until it begins to render its fat. Add the shallots and garlic and shiitakes and cook until just beginning to brown, 3 to 4 minutes, stirring with a wooden spoon.",
+      "Add all but 2 tablespoons of the wine and bring to a boil over high heat. Let the mixture boil until reduced to about 1/3 cup, about 8 to 12 minutes.",
+      "Reduce the heat to medium and stir in the ketchup, brown sugar, honey, and liquid smoke. Season with salt and pepper to taste. Let the sauce simmer gently until thick and richly flavored, 6 to 10 minutes. Taste for seasoning, adding more brown sugar, salt, and/or pepper as necessary. You can serve the sauce warm or at room temperature.",
+      "It will keep in the refrigerator, covered, for several weeks. Bring to room temperature (or warm) before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Salted Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bacon",
+        "unit": "slices",
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shiitakes",
+        "unit": null,
+        "notes": "stemmed and minced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": "large",
+        "notes": "for 3/4 cup, minced",
+        "amount": "3-5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cabernet Sauvignon",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Sauce",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "Tbsp",
+        "notes": "or more to taste",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Liquid Smoke",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Salt (kosher or Sea) and Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3efc9d898b4b6abd905161eb9e7798a910d9d24fe3fbc8dc5dd4f3aeb0a771ec",
+    "lineage_hash": "88f54c7d9b083e38a26ee9e74b906cead455a3746e9538bec15274c40da0a066"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/cabernet-sauvignon-barbecue-sauce/",
+    "fetchedAt": "2026-08-03T04:55:58.516Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/cabernet-sauvignon-barbecue-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

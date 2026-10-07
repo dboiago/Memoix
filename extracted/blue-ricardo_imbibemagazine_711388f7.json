@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Blue Ricardo",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the first 5 ingredients and shake with crushed ice. Strain into an ice-filled glass, top with blue curaçao, stir and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "1caa8860dab8ddfa8b76931ae56668053cb37a50ded529c4c5e48cf644255665",
+    "lineage_hash": "c87cf1ef6680cce1ef4c8c29a064a5728b21f406fabab8db0cb415bf661bad7f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/blue-ricardo/",
+    "fetchedAt": "2026-08-03T22:08:11.558Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/blue-ricardo/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

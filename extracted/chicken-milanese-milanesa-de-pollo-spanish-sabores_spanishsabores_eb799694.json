@@ -1,0 +1,109 @@
+{
+  "recipe": {
+    "name": "Chicken Milanese (Milanesa de Pollo)",
+    "time": "20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "ES",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "224",
+      "carbohydrateContent": "20.79",
+      "fatContent": "7.74",
+      "proteinContent": "16.96"
+    },
+    "directions": [
+      "Slice each of the breasts crosswise into two thin fillets. Place in a zip-top bag and pound with a meat tenderizer or rolling pin until it&#39;s about 1/4-inch thick.",
+      "Beat the egg in one medium bowl, and combine the breadcrumbs, garlic powder, pepper, and salt in another bowl.",
+      "Dip each chicken fillet in the egg, then in the breadcrumb mix, and then place on a plate ready to fry.",
+      "Place a large skillet over medium heat and add the vegetable oil. When the oil is shimmering, fry the chicken fillets until golden, about 5 minutes on each side. Avoid crowding the pan.",
+      "Drain the fried chicken on a paper-towel lined plate.",
+      "Serve hot, with lemon wedges on the side, and enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Breasts",
+        "unit": null,
+        "notes": "boneless",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Breadcrumbs",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "C",
+        "notes": "alt: canola oil",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Wedges for Serving",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6787bb1c5dac6eea837dd4cddf0a1cb9f35d642dcdf282766df16859e750a3eb",
+    "lineage_hash": "2fd4f79ba72115b9c0db720a1f3246535080104b42ff7babc0ecefd8bc14b697"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://spanishsabores.com/chicken-milanesa-recipe/",
+    "fetchedAt": "2026-08-02T10:07:52.562Z"
+  },
+  "rawSource": "https://spanishsabores.com/chicken-milanesa-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

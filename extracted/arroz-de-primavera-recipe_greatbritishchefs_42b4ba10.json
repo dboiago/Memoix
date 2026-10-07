@@ -1,0 +1,302 @@
+{
+  "recipe": {
+    "name": "Arroz de Primavera",
+    "time": "2 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Drizzle the whole head of garlic with a little oil and season with salt, wrap in tin foil and roast in the oven for 1 hour",
+      "Make the vegetable stock by dicing the mushrooms, celeriac, leeks and asparagus into similarly sized pieces",
+      "Heat the olive oil in a large saucepan over a low heat and add the halved heads of garlic. Just before the garlic colours, add the vegetables and cook over a medium heat for a couple of minutes",
+      "Add the tomato paste and cook for a minute or two before adding enough cold water to cover. Add the bouquet garni and simmer for 25 minutes. Take off the heat and add the dried porcini. Leave to infuse for at least an hour before straining and setting aside. This will keep for a couple of days in the fridge",
+      "To make the allioli, squeeze the roasted garlic cloves from their skins straight into a blender. Add the raw garlic cloves and egg yolks, blend to a paste for a minute or two, then slowly drizzle in the oil until it emulsifies. Add the salt and parsley to season, then refrigerate until needed",
+      "To make the arroz, heat the olive oil in a large frying pan and add the crushed garlic and finely diced shallots and leek with a pinch of salt. Cook over a very slow heat until the shallots are caramelised",
+      "Add the pepper paste and cook for a little longer, then add 400g of the diced mushrooms, the bay leaf and lemon thyme sprig. Continue to cook over a low heat until the mushrooms have released their moisture and you end up with a thick, jam-like consistency - this can take up to an hour",
+      "Trim the asparagus and blanch for ten seconds in boiling salted water, before cooling in ice cold water and drying with a paper towel. Repeat this process with the broad beans and peas (if they are fresh, not frozen)",
+      "To cook the rice, bring the stock to a boil. Heat a cast iron or other heavy based pan and add a splash of oil. Sear the asparagus for a minute or so until golden and set aside. Add a splash more oil, then add the remaining 200g mushrooms and fry until golden",
+      "Add the thick mushroom mixture to the same pan you seared the mushrooms and asparagus in. Set over a medium heat, add the rice and cook for a minute or two, stirring throughout",
+      "Add the dry sherry and simmer until the alcohol has cooked off. Increase the heat and pour over the hot stock. Bring the pot to a rolling boil and cook, without stirring, for 10 minutes. Then add the sautéed asparagus and mushrooms, along with the peas and broad beans",
+      "Place the pan in the oven for another 7 minutes. The rice should be roasted and caramelised. Leave to rest for a couple of minutes before garnishing with chopped chives and a generous spoonful of the allioli"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Garlic",
+        "unit": "head",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": null,
+        "notes": "to roast the garlic",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Season",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pomace Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Chopped Parsley",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Button Mushrooms",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celeriac",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leek",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Asparagus",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "heads",
+        "notes": "cut in half widthways",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Porcini Mushrooms",
+        "unit": null,
+        "notes": "dried",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bouquet Garni",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mushrooms",
+        "unit": "g",
+        "notes": null,
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": "g",
+        "notes": "finely diced",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leeks",
+        "unit": null,
+        "notes": "finely diced",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ñora Pepper Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Thyme",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Asparagus Spears",
+        "unit": null,
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peas",
+        "unit": "g",
+        "notes": "use frozen if unavailable, fresh",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Broad Beans",
+        "unit": "g",
+        "notes": "fresh, podded",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bomba Rice",
+        "unit": "g",
+        "notes": null,
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "650",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt to Season",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Sherry",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9b5a9d26eb27651a0f2eee450b950ec852e8087b83dfc98d9eaffacdf667a9d4",
+    "lineage_hash": "ec42cc14fbe6ba0858a4ede312ffe4779fdca2e0cb84b8ee744d3ad53456d830"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/arroz-de-primavera-recipe",
+    "fetchedAt": "2026-08-02T18:29:42.191Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/arroz-de-primavera-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

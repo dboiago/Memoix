@@ -1,0 +1,125 @@
+{
+  "recipe": {
+    "name": "Apple Tart",
+    "time": "1 hr 15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the frangipane, beat the butter and sugar together in a bowl until pale and fluffy",
+      "Mix in the ground almonds, then crack in the egg a little at a time, beating well between each addition - if the mixture begins to split, just add a little flour",
+      "Fold in the lemon zest and the rest of the flour until combined and store in the fridge until required",
+      "For the slice, peel and core the apple, cut in half then slice thinly into crescent shapes",
+      "Roll the puff pastry into a rectangle shape, approximately 10cm wide by 30cm long, to a thickness of 1/2cm",
+      "Roll the trimmings to the same thickness, but 30cm long by 2cm wide. Brush the edges of the bases with the yolk and glue down the strips to border the entire base of the tarts",
+      "Spoon the frangipane down the centre of the base. Fan the apples very closely together down the centre on top of the frangipane. Excess frangipane can be used to make more tarts or stored for 3-4 days",
+      "Brush the pastry walls with egg yolk and leave to rest in the fridge for at least an hour",
+      "Once rested, preheat the oven to 180°C/gas mark 4 and then bake the tart for 25 minutes or until golden",
+      "Remove from the oven and melt the apricot jam on the hob. Drizzle and brush the melted jam over the slice and leave to cool slightly",
+      "Serve each slice of tart with some clotted cream or vanilla ice cream as preferred"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Granny Smith Apple",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Puff Pastry",
+        "unit": "g",
+        "notes": null,
+        "amount": "320",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apricot Jam",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "room temperature",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon for Zest",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ded8dad77c067692f63544ef54fbd458d2af9e9edc8ec2253f9dc9bb443b57fa",
+    "lineage_hash": "998fd0a3aa6543ced85109d1faabd69897e08d1f059ea606f11fea4829b5fd4c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/apple-tart-recipe",
+    "fetchedAt": "2026-08-03T18:54:58.637Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/apple-tart-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

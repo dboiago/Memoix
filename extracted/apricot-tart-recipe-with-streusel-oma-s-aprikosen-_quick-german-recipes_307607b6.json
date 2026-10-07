@@ -1,0 +1,99 @@
+{
+  "recipe": {
+    "name": "Apricot Tart with Streusel (Aprikosen-Streusel-Tarte)",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "DE",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To peel apricots, blanch in boiling water for 20 seconds and then plunge into ice water. The skins should peel off easily. Cut in half with a sharp knife and remove pits.",
+      "Preheat oven to 375°F (190°C). Grease a 9-inch tart pan (with or without a removable bottom) and dust with flour.",
+      "To make the streusel, put butter, sugar, vanilla, salt, and flour into a large bowl or food processor and mix until crumbly.",
+      "Put half the crumb mixture into the tart tin and evenly press down over the bottom and sides of the pan to make the crust.",
+      "Sprinkle with ground almonds, if using.",
+      "Place apricot halves cut side down on top of the crust.",
+      "Sprinkle remaining streusel evenly over fruit.",
+      "Bake for 30 to 40 minutes until golden brown. Let tart cool on a wire rack once out of the oven.",
+      "Serve warm or cold with a dollop of whipped cream or a scoop of vanilla ice cream."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Apricots",
+        "unit": "lb",
+        "notes": "alt: 1½ to 2 cans well-drained fruit, 454 grams, fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "C + 2 Tbsp",
+        "notes": "142 grams, room temperature",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": "75 grams",
+        "amount": "⅜",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": "5 milliliters",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": "228 grams",
+        "amount": "1¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Almonds",
+        "unit": "Tbsp",
+        "notes": "16 grams, optional",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bf4a916df72158847a9451c438ae84aa45afe4061948cdf62ef880ce0cbdaf30",
+    "lineage_hash": "bc8ebe21f1026da9c021a34182a072b419b1fe1da6544974e3462966caf2ea57"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.quick-german-recipes.com/apricot-tart-recipe.html",
+    "fetchedAt": "2026-09-25T21:39:44.827Z"
+  },
+  "rawSource": "https://www.quick-german-recipes.com/apricot-tart-recipe.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

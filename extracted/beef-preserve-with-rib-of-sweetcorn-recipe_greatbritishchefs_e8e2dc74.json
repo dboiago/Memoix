@@ -1,0 +1,201 @@
+{
+  "recipe": {
+    "name": "Beef Preserve with 'Rib' of Sweetcorn",
+    "time": "1 hr 20 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add a splash of the vegetable oil to a frying pan and brown the beef. Transfer to a bowl and wipe the pan clean, then add all the remaining oil, the browned beef and the rest of the ingredients",
+      "Cook over a medium heat until all the moisture has evaporated (about 45 minutes). You need to remove all the moisture from the mixture otherwise it could spoil. Once this has happened, remove from the heat and allow to cool, then transfer to an airtight sterilised container for up to a month. You will have much more than you need for this recipe, but it is a fantastic condiment to serve alongside all manner of Chinese dishes",
+      "Mix all the ingredients for the spice mix together and place in an airtight container",
+      "For the sweetcorn, bring a pan of water to the boil. Add the sweetcorn ears and cook for 20 minutes, then drain and allow to cool",
+      "Using a sharp knife, dissect the sweetcorn down the middle, then trim the edges and ‘bone’ it out so that it resembles a rib (see the image for a guide on what it should look like)",
+      "Melt the butter in a hot pan with the oil and add 1 tablespoon of the spice mix (the rest can be used to flavour other dishes). Fry for a minute until fragrant, then add the sweetcorn ribs and toss to coat. Taste for seasoning, then remove from the heat",
+      "To serve, place a spoonful of the beef preserve on a plate. Add the sweetcorn rib alongside, then top with slices of spring onion and dried mullet roe, either shaved or grated"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vegetable Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "700",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Picanha",
+        "unit": "g",
+        "notes": "ideally Wagyu, cut into 5mm dice",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Paste",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chillies",
+        "unit": "g",
+        "notes": "blitzed into a paste",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Bean Paste",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Bouillon",
+        "unit": "g",
+        "notes": "ideally Chinese chicken bouillon powder",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweetcorn",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "softened, for frying",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Flakes",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sichuan Peppercorns",
+        "unit": "Tbsp",
+        "notes": "toasted and ground",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Ginger",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bottarga",
+        "unit": null,
+        "notes": "ideally Taiwanese mullet bottarga, shaved or grated",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9ccc8226064a5ba0357a333fc4079ba0b21883a52f7e2216dd50257c9db3a4ad",
+    "lineage_hash": "2f28af99c55c529524a22bbd40b4930e5d0370cdfba17d3c63cfa4bb61a3f1df"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chinese-beef-preserve-sweetcorn-recipe",
+    "fetchedAt": "2026-08-03T06:55:18.870Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chinese-beef-preserve-sweetcorn-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

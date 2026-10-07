@@ -1,0 +1,116 @@
+{
+  "recipe": {
+    "name": "Chicken and Sausage Skewers With Beans and Apricots",
+    "time": "40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cut the chicken breast and the sausage into large cubes and cut the peppers into squares. Thread the cubed chicken and sausage onto 4 wooden skewers, alternating them with the squares of yellow and red peppers.",
+      "Heat a drizzle of oil and 2 unpeeled garlic cloves in a large pan. Add then skewers and cook for 5 minutes on each side, adding the wine halfway through cooking. Remove the skewers and garlic cloves from the pan. Add the beans and chopped apricots to the pan and cook over low heat for 10 minutes, adding a bit of water as needed. Lightly salt the skewers and serve them with the beans and apricots."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Breast",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Sausage",
+        "unit": "oz",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Borlotti (cranberry Beans)",
+        "unit": "oz",
+        "notes": "cooked",
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry White Wine",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apricots",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Bell Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Bell Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra-virgin Olive Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "unpeeled",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "89d590f5cda056e5ad7f6d93d4f3de0ac0e40757a346c713f49ec526b2d239b3",
+    "lineage_hash": "52f9ee5b2ca8aede06f40fc39bad4e9d8bdcc40f892a1e85809360c3d07d9463"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/main-course/chicken-and-sausage-skewers-with-beans-and-apricots",
+    "fetchedAt": "2026-08-02T22:50:14.387Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/main-course/chicken-and-sausage-skewers-with-beans-and-apricots",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

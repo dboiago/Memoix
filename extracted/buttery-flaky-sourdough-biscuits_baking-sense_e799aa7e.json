@@ -1,0 +1,119 @@
+{
+  "recipe": {
+    "name": "Buttery & Flaky Sourdough Biscuits",
+    "time": "32 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "323",
+      "carbohydrateContent": "38",
+      "fatContent": "17",
+      "proteinContent": "6"
+    },
+    "directions": [
+      "Preheat the oven to 400 °F.  Line a half sheet pan with parchment paper.",
+      "Combine 10 oz&#32;all purpose flour, 8 oz&#32;cake flour, 4 teaspoons&#32;baking powder, 1 teaspoon&#32;baking soda, 1 tablespoon&#32;granulated sugar, and 1 teaspoon&#32;table salt in a mixing bowl. Whisk the dry ingredients to combine.",
+      "Mix 8 oz&#32;unsalted butter into the flour with your fingers until it&#39;s broken down into bits slightly larger than a pea.",
+      "Combine 8 oz&#32;sourdough discard and 8 oz&#32;buttermilk in a small bowl. Add the buttermilk mixture to the flour all at once. Mix until about 2/3 of the dry ingredients are absorbed.",
+      "Turn the dough onto a lightly floured surface and gently knead together just to incorporate the remaining dry flour (this should only take about 6-8 kneads).",
+      "Gently pat dough to a 1/2&quot; thick rectangle, brush off excess flour and fold the dough in 1/2. Pat gently to stick the dough together and and fold again. Pat to 3/4 &quot; thick disc and cut with a 2.5&quot;-3&quot; biscuit cutter. Gather the scraps together, pat to 3/4&quot; thick and continue cutting until all the dough is used up.",
+      "Set the biscuits onto the prepared baking sheet and brush the tops with buttermilk. Bake the biscuits until well rise and golden brown, about 10-12 minutes.",
+      "If the bottoms of the biscuits are browning too fast set another sheet pan under the biscuits after 5 minutes of baking."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All Purpose Flour",
+        "unit": "oz",
+        "notes": "2 cups, see note",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cake Flour",
+        "unit": "oz",
+        "notes": "2 cups",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "cold and cut into 16 pieces",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sourdough Discard",
+        "unit": "oz",
+        "notes": "1 cup, room temperature",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "oz",
+        "notes": "1 cup, room temperature",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8a76150afc47edd3272673e3082a1abc85b46ca8508932e3e9fe706965d8746c",
+    "lineage_hash": "647f5ebff654d83b5bb30ee2b8f2211f615360d8f12821186745d0b0f546fa92"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2019/09/12/sourdough-biscuits/",
+    "fetchedAt": "2026-08-02T02:35:18.302Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2019/09/12/sourdough-biscuits/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

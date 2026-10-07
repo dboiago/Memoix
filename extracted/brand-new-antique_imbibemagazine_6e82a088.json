@@ -1,0 +1,35 @@
+{
+  "recipe": {
+    "name": "Brand New Antique",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the first 3 ingredients in a shaker with ice and shake vigorously to chill. Pour the Champagne into the shaker (do not shake again), then gently double strain the cocktail into a chilled coupe. Garnish.",
+      "Green tea–infused honey syrup: Pour 8 oz. of hot water (about 180 degrees F) over 6 grams of gunpowder green tea and steep for 15 minutes. Fine strain the tea directly into 8 oz. of honey and stir until uniformly combines. Store in the refrigerator for up to 2 weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "96d722f293a4ad3978a480488f9c098301398088624da805c49680525fe6ec31",
+    "lineage_hash": "dc1c2914384971ecc39bd2037ae7442273121bc7a54dc17c5c7e9f260bb58511"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/brand-new-antique-french-75/",
+    "fetchedAt": "2026-08-03T19:16:20.563Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/brand-new-antique-french-75/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

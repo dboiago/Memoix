@@ -1,0 +1,207 @@
+{
+  "recipe": {
+    "name": "Caramel Mousse and Fudge",
+    "time": "6 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the mousse, boil 200ml of the cream. Make a dark caramel with the glucose and 80g of the sugar and add the boiled cream",
+      "Whisk thoroughly until the mixture is smooth, leave to cool to 105°C, and then add the butter",
+      "Soak the gelatine in cold water for 5 minutes to soften, then add to the caramel mix. Pass the mousse through a sieve and leave to cool a little",
+      "Make a pâte à bombe by boiling the remaining 65g of sugar and the water together until it reaches the soft ball stage, which is when a drop of syrup dropped in water forms a very soft ball (112-116ºC). Separate the eggs and whisk the egg yolks in a food mixer until fluffy, then add the sugar syrup and whisk this in the food mixer",
+      "Add the egg yolk mixture to the caramel mix. Whip the remaining 250ml of cream and gently stir in. Fill a piping bag with the mixture and chill until needed",
+      "To make the butterscotch sauce, simmer the double cream. In a separate pan, melt the sugar until it resembles a dry, dark caramel",
+      "Whisk the warm cream into the caramel, then whisk in the butter. Remove from the heat and allow to cool",
+      "To make the fudge, melt the sugar, glucose, butter, double cream, single cream and icing sugar together until it reaches 121ºC. Add the seeds of the vanilla pod and a pinch of salt",
+      "Tip onto a lightly oiled 5mm deep tray and leave to cool. When set, cut into 5mm squares",
+      "To make the caramel sheets, cook the glucose and caster sugar together until a dark caramel colour and then pour in between 2 sheets of silicone paper",
+      "Roll with a rolling pin until very thin - approximately 1-2 mm thick - and allow to set. Once set, break into little pieces approximately 1cm each",
+      "Place the caramel sheets into an airtight plastic box with food grade silica gel, between sheets of baking parchment. Alternatively you can use a layer of uncooked rice if you can't get hold of the silica gel",
+      "Serve on spoons by piping the mousse into the front. Add a couple of squares of fudge and then pour on some of the butterscotch sauce. Place a caramel piece on top"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whipping Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "450",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glucose",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "145",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glucose",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Single Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "130",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glucose",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "83168ffb6e17e8a8deefa5acb6c1705f330090be896d47a222a3988560b1a63b",
+    "lineage_hash": "9d291e0fd1aa08cf42115fba0c24834dda9f6c70dce46d56b655f5d0ccaa8d70"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/caramel-mousse-and-fudge-recipe",
+    "fetchedAt": "2026-08-03T15:59:51.086Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/caramel-mousse-and-fudge-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

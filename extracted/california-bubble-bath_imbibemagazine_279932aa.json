@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "California Bubble Bath",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Collins",
+    "garnish": [
+      "Lavender Sprig"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the bourbon, lavender syrup, and lemon juice in an ice-filled cocktail shaker and shake well. Strain into an ice-filled Collins glass. Float with Cynar and garnish with the lavender sprig. Tip: To float the Cynar on top of the drink, hold a barspoon upside down close to the surface of the drink. Carefully pour the liqueur over the back of a bar spoon so it gently flows on top of the drink and doesn’t penetrate the surface and fall to the bottom."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "24f5f5399c6588811b123a32221e1e0a1348798cd05780acaccfcc3041e94e33",
+    "lineage_hash": "2a0f9e0da13fea7545aef79b373f44e4f0ac006c544b778ad93fe897acaf7552"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/california-bubble-bath-recipe/",
+    "fetchedAt": "2026-08-04T01:37:31.222Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/california-bubble-bath-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

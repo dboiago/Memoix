@@ -1,0 +1,187 @@
+{
+  "recipe": {
+    "name": "Chilled Chocolate Fondant",
+    "time": "2 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start the chocolate fondant by combining the chocolate, butter and cocoa powder and melting in a bain marie",
+      "Use a food mixer with a whisk attachment to mix together the eggs and yolks until white and fluffy. While the eggs are mixing, combine the sugar and water in a small pan and bring to 116˚C",
+      "Once the sugar mixture reaches the desired temperature, pour very slowly into the eggs whilst the mixer is still running. Leave the mixer on a medium speed while the egg mixture cools",
+      "Gently fold the egg mixture into the chocolate and then add the cream. Place in moulds or ramekins and allow to set in the fridge",
+      "For the praline, melt together the chocolate, butter and praline in a bain marie. Allow to cool but not set",
+      "Mix in the feuilletine and remove from the bowl onto a large sheet of greaseproof paper. Place a sheet of equal size over the top and roll to ½ cm thick. Allow to set and cut into your desired shape",
+      "To make the salted caramel sauce, combine the sugar and water in a small pan over a medium-high heat. Allow to boil until the liquid turns a golden brown colour",
+      "Whisk in the cream followed by the butter to finish. If the sauce appears to be too thick, add a touch more cream to reach the desired consistency",
+      "Remove the chocolate fondant from the moulds and place in the centre of the plate. Dust the top of the fondant with cocoa powder and serve with whole roasted hazelnuts. Decorate the fondant with the praline garnish and finish with the caramel sauce over and around the chocolate fondant"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": "whipped to soft peaks",
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Clarified Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Feuilletine",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Praline",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder for Dusting",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Roasted Hazelnuts",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ac563acc5e0692a6990d64016af431c10f76590f04a6b82c70fffdac2e06bf56",
+    "lineage_hash": "4283b6f6c5d3948545c6c6d32840efad5bd52a92cd3064113f29eaa4cdcb75ac"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-fondant-recipe-caramel-sauce",
+    "fetchedAt": "2026-08-03T18:40:57.425Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-fondant-recipe-caramel-sauce",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

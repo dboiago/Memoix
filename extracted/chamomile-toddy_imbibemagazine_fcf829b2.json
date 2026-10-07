@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Chamomile Toddy",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Brew a pot of chamomile tea and set aside. Pour the honey into the glass. Add the rye, tea, spices and citrus and stir until the honey dissolves."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "2140d4a40ae9519d11be1437edeeeaa580fdb8d156c7790d2489530c7ca5841d",
+    "lineage_hash": "39ffb265c02921e505a32eea7bea325ad58c2ebcef6eeaa314886c0e925dd554"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/chamomile-toddy/",
+    "fetchedAt": "2026-08-03T18:31:37.889Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/chamomile-toddy/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

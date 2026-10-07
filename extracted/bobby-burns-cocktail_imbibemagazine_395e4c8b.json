@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Bobby Burns Cocktail",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Glass",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Stir ingredients in a mixing glass with ice; strain into a glass."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "9f13015add6253812e61cc56c7b43c7a226e2a265f8d9189a7d140680c43f43c",
+    "lineage_hash": "e96ac280a3f86804ed7c10bc7fc746bfec8b6af4613aae3e57a36eb32227090f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bobby-burns-cocktail/",
+    "fetchedAt": "2026-08-03T23:48:57.876Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bobby-burns-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

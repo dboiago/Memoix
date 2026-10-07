@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Cassis Bramble",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a glass, combine the cassis, gin, lemon and simple syrup. Stir to combine. Top with crushed ice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "4bde44695bcf75cc782e0e5e183601461170c0adce28b61a35b0c4567850cb10",
+    "lineage_hash": "ad55d37338aaa268e67ea7c9750d7b44f8cae21c5e186b0d51e5621a996db3d1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cassis-bramble/",
+    "fetchedAt": "2026-08-03T22:25:17.299Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cassis-bramble/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,173 @@
+{
+  "recipe": {
+    "name": "Bok Choy and Mushroom Stir Fry",
+    "time": "23 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "151",
+      "carbohydrateContent": "12.8",
+      "fatContent": "9.5",
+      "proteinContent": "5.4"
+    },
+    "directions": [
+      "Mix the sauce ingredients in a small bowl and set aside.",
+      "Add the slurry ingredients in a small bowl and stir to mix well.",
+      "Heat 1/4 cup water in a large skillet over medium high heat until hot. When the water starts to boil, add the baby bok choy and sprinkle with a pinch of salt. Cover the pan and let steam for 30 seconds. Uncover the pan and stir the bok choy. Cover again and cook for another 30 seconds, until the baby bok choy has softened. Transfer the bok choy into a big platter.",
+      "Wipe the pan clean with paper towels and add 2 tablespoons of the oil, turn to high heat. Add the mushrooms. Let sear for 1 minute without touching. Then flip the mushrooms, cook and stir occasionally, for 2 to 3 minutes, until the mushrooms are browned and there’s no juice left in the pan.",
+      "Move the mushrooms to one side of the pan. Pour the remaining 1/2 tablespoon oil on the other side and add the chili peppers, garlic, ginger and green onion. Stir a few times until the chili pepper turns dark red. Then stir everything together.",
+      "Add back the bok choy and pour in the sauce. Stir and cook for 30 seconds. Stir the slurry mixture again until the cornstarch is fully dissolved. Swirl into the pan. Cook and stir until the sauce thickens, then transfer everything to a big plate. Serve hot as a side or over steamed rice as a main dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetarian Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": "or regular oyster sauce",
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Slurry",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Slurry",
+        "isOptional": false
+      },
+      {
+        "name": "Baby Bok Choy",
+        "unit": "lb",
+        "notes": "cut to large bite-size pieces",
+        "amount": "1",
+        "section": "Stir-Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "Stir-Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2½",
+        "section": "Stir-Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Brown Mushrooms",
+        "unit": "lb",
+        "notes": "or quartered if the size is too big, halved",
+        "amount": "1",
+        "section": "Stir-Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Chili Peppers",
+        "unit": null,
+        "notes": "dried",
+        "amount": "4",
+        "section": "Stir-Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "minced",
+        "amount": "2",
+        "section": "Stir-Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Thumb Ginger",
+        "unit": null,
+        "notes": "minced",
+        "amount": "1",
+        "section": "Stir-Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "2",
+        "section": "Stir-Fry",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "350a08e91be0cd74e8c48513c4625eb915e1b94b58a0d6a44955e1c79b10ad4e",
+    "lineage_hash": "cb8d6807bfd0023c6851b5582b44afdaf9481d83c2c37e879d1aadd28360e82d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/bok-choy-and-mushroom-stir-fry/",
+    "fetchedAt": "2026-08-02T08:00:06.162Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/bok-choy-and-mushroom-stir-fry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,206 @@
+{
+  "recipe": {
+    "name": "Barbecued Tomahawk Steak",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat your barbecue to 300ºC, and set up for direct cooking by installing the cast iron grate above a direct flame with no heat deflectors",
+      "Take the steak out of the fridge and leave to come up to room temperature",
+      "Start by making your miso butter. Mix the butter and miso together and season with a pinch of salt",
+      "Season the steak once your barbecue is up to temperature. Rub it with the olive oil, then season well all over with the sea salt and cracked black pepper",
+      "Sear the steak on the barbecue. Start by searing the fat side, then give each side a good two minutes on the cast iron grate to develop a nice sear and good bar marks. Once you've seared each side, brush with some of the miso butter",
+      "Continue to do this until the steak is nicely caramelised all over, then test to see how well cooked it is on the inside – the best way is to use a temperature probe and insert into the very centre of the steak",
+      "At this point you'll probably need another 5–10 minutes of cooking. Transfer the steak from the cast iron over to the normal stainless steel grate on the other side, baste with more miso butter and close the lid. Keep checking on the steak until the internal temperature is just below what you're aiming for – 50ºC is rare, 55ºC is medium rare and 60ºC is medium",
+      "When you're happy with your steak, remove from the barbecue and baste with the rest of the miso butter. Rest the steak under a sheet of tin foil for 15 minutes whilst you prepare the rest of the dish",
+      "Mix the salted butter, chopped parsley and garlic to make a garlic butter, and spread over your ciabatta slices. Toast the garlic bread on the cast iron grate for a few minutes until both sides are crispy and golden",
+      "Put the cherry tomatoes on the cast iron grate at this point too, until they just start to burst and blister a little",
+      "Meanwhile, make your salsa verde. Combine the tarragon, parsley, shallot, garlic, anchovies and capers in a food processor and pulse the mixture down so everything is roughly chopped. Add the olive oil and blitz again, then season to taste with lemon juice and salt – the finished version should have a silky texture and enough acidity to cut through the richness of the meat",
+      "Now it's time to bring the dish together. Place the garlic bread on a large serving board or platter and sit the steak on top. Drizzle with the salsa verde, remains of the miso butter and blistered cherry tomatoes"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Tomahawk Steak",
+        "unit": null,
+        "notes": "approximately 1.2kg",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cracked Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "softened",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Miso Paste",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ciabatta Loaf",
+        "unit": null,
+        "notes": "sliced lengthways and into pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted Butter",
+        "unit": "g",
+        "notes": "softened",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "g",
+        "notes": "crushed",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Tarragon Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flat-leaf Parsley",
+        "unit": "bunch",
+        "notes": "roughly chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallot",
+        "unit": null,
+        "notes": "finely diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Anchovies",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Capers",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherry Tomatoes on the Vine",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b9aa7fb8483b5b7793ceba40b94f92d8aabda2712f2cc08346cb25ca30981c88",
+    "lineage_hash": "c72dfd82e61871cf9a5da8f55cd4cf3a44ddbaef388126f3223ed79889de4d48"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/barbecued-tomahawk-steak-recipe",
+    "fetchedAt": "2026-08-03T06:42:48.601Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/barbecued-tomahawk-steak-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

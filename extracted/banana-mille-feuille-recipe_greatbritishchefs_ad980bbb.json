@@ -1,0 +1,183 @@
+{
+  "recipe": {
+    "name": "Banana Mille Feuille",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the banana tuille, place the bananas in a blender with a squeeze of lemon juice and blitz until smooth. Spread onto a piece of baking paper and place in a dehydrator overnight until crisp",
+      "For the praline ice cream, place the milk and cream in a saucepan and slowly bring to the boil. In a large bowl, whisk the egg yolks until they form a sabayon consistency",
+      "Pour the milk and cream mix onto the egg sabayon, add the praline and mix well. Pass the mix through a fine sieve and cool down as quickly as possible",
+      "Once the ice cream base is cold, pour into an ice cream machine and churn until set. Once ready, remove and place in a sealed container in the freezer",
+      "Roll out the puff pastry with a rolling pin using the icing sugar instead of flour until the pastry is around 3–4mm thick. Place onto a suitably-sized tray lined with a sheet of parchment paper, sprinkle with some more icing sugar then place another sheet of parchment paper on top, followed by another tray",
+      "Place in the oven for 10 minutes or so until the pastry is cooked, then take out of the oven, remove the top tray and parchment paper and leave to cool. Once the pastry is cool, use a sharp serrated knife to cut into rectangles measuring 2.5cm x 10cm",
+      "For the vanilla cream, place the cream in a bowl. Cut the vanilla pod in half lengthways and using a small knife, scrape out the seeds. Add these to the cream. Continue to whisk the cream until it forms soft peaks, then place in a piping bag and reserve in the fridge until later",
+      "Peel the bananas and place flat into a vacuum bag with the vanilla seeds. Seal in a chamber sealer, cook for 10 minutes then leave to cool",
+      "To caramelise the bananas, cut in half lengthways. Slice each half thinly but make sure that the banana stays in its normal form",
+      "Gently fan the banana a little then sprinkle with the caster sugar. Using a blowtorch, gently caramelise the sugar, adding more sugar until you get a really lovely caramelised banana",
+      "To serve, make a few drags and swirls of the melted chocolate across four plates and then place a pipe some vanilla cream in one corner. Add a rectangle of puff pastry on top of that, then pipe some more cream on top",
+      "Using a palette knife, scoop up the glazed banana and sit on top of the cream and puff pastry. Sprinkle around some hazelnuts. Remove the ice cream from the freezer and add a quenelle and on top of the hazelnuts",
+      "Drizzle the plate with maple syrup and pieces of toffee popcorn and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bananas",
+        "unit": null,
+        "notes": "overripe",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Praline Paste",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Puff Pastry",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bananas",
+        "unit": null,
+        "notes": "ripe",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pods",
+        "unit": null,
+        "notes": "seeds scraped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bitter Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hazelnuts",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maple Syrup",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Popcorn",
+        "unit": null,
+        "notes": "toffee-coated",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "83fe41e7c6a904339350bc0657762b63427e5d9e8d0042e42fba1ea52bc2f33b",
+    "lineage_hash": "b647eef8a17563d657f7982ac2471c6ab85b4c6be074a0e58fbc751f7b420d33"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/banana-mille-feuille-recipe",
+    "fetchedAt": "2026-08-03T14:00:50.296Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/banana-mille-feuille-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

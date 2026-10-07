@@ -1,0 +1,115 @@
+{
+  "recipe": {
+    "name": "Chicken Bulgogi (Korean BBQ Chicken)",
+    "time": "4 hr 20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "KR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "294",
+      "carbohydrateContent": "8",
+      "fatContent": "20",
+      "proteinContent": "20"
+    },
+    "directions": [
+      "Cut the chicken into bite size pieces. (If grilling, prepare it according to your grill type and your preference.)",
+      "Combine all the marinade ingredients in a bowl and mix them well. Pour it over the meat. Cover and marinate it for at least 4 hours or overnight in the fridge to deepen the flavor. You can certainly marinate it for a lot shorter time, but the chicken will be less flavorful.",
+      "Cook the chicken over a well heated skillet. (If grilling, cook the chicken following your grill manual.) Do not add the leftover marinade. (I use a slotted spoon to minimize the marinade transfer.)  Sizzle both sides of chicken over medium high heat then reduce the heat to medium until the chicken is fully cooked.In the mean time, boil over the leftover marinade in a separate sauce pan for 2-3 mins over medium high heat, stirring occasionally. Sieve through any excess fat and undesirable pieces from the sauce. Set the sauce aside.",
+      "Serve. Glaze the sauce over the chicken."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Thigh (1 Pound)",
+        "unit": "g",
+        "notes": "I used boneless skinless thigh, but you can use other chicken cuts of your choice.",
+        "amount": "450",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "regular",
+        "amount": "3",
+        "section": "CHICKEN BULGOGI MARINADE",
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1.5",
+        "section": "CHICKEN BULGOGI MARINADE",
+        "isOptional": false
+      },
+      {
+        "name": "Rice Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "CHICKEN BULGOGI MARINADE",
+        "isOptional": false
+      },
+      {
+        "name": "Sprite",
+        "unit": "C",
+        "notes": "alternatively , 7 Up or other carbonated lemon-lime soda could be used.",
+        "amount": "¼",
+        "section": "CHICKEN BULGOGI MARINADE",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "Tbsp",
+        "notes": "minced",
+        "amount": "½",
+        "section": "CHICKEN BULGOGI MARINADE",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": "CHICKEN BULGOGI MARINADE",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "CHICKEN BULGOGI MARINADE",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "CHICKEN BULGOGI MARINADE",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1f79e757ef68f05c83dfe35c18be2c54081aaa122b62f06a8073753430daa2b3",
+    "lineage_hash": "2f0d3c8f7f209541996c187382973b32a17c4176288ee918dc80ae11486472bf"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://mykoreankitchen.com/chicken-bulgogi-korean-bbq-chicken/",
+    "fetchedAt": "2026-08-01T21:58:52.155Z"
+  },
+  "rawSource": "https://mykoreankitchen.com/chicken-bulgogi-korean-bbq-chicken/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

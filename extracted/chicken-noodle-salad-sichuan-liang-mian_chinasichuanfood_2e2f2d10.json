@@ -1,0 +1,214 @@
+{
+  "recipe": {
+    "name": "Chicken Noodle Salad (Sichuan Liang Mian)",
+    "time": "30 min",
+    "course": "salad",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "883",
+      "carbohydrateContent": "90",
+      "fatContent": "52",
+      "proteinContent": "17"
+    },
+    "directions": [
+      "Pre-soak the dried soy beans until they are double in size. Transfer out and drain with kitchen towel.",
+      "Peel the tough part of cucumber and then slice into shreds.",
+      "Add 1 tablespoon cooking oil in wok and add soaked soy beans to fry until you hear the “Pa Pa” sound. Transfer the soy beans out and set aside to cool down.",
+      "In a large pot, put chicken meat, 2 slices of ginger, whole Sichuan peppercorn s and 1 spring onion in. Bring the content to a boiling and then keep cooking for 5 minutes. Cover the lid and set aside for another 10 minutes until the chicken meat is totally cooked. Soak in cold water and shred with hand.",
+      "Place Sichuan peppercorn powder, chili pepper powder, 1 star anise, 2 slices of ginger in a small bowl. Heat up around 3 tablespoons of vegetable oil in pan with 2 slices of ginger and 1 star anise until there are waves on the surface and the oil is really hot. Discard the ginger slices and star anise. Pour the hot oil slowly into the bowl with the spicy powders.",
+      "Cook noodles in boiling water for around 4 minutes. Transfer out. Spread them and cool them down with an electric fan or cold water.",
+      "Add rapeseed oil in the noodles and mix well. Transfer to a mixing bowl, add chili oil, soy sauce, salt, vinegar, sugar, garlic,shredded chicken meat, chopped spring onion and shredded cucumber. Mix well and then top with chopped spring onion and fried soy beans."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Thin Noodles",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "tsp",
+        "notes": "alt: sesame oil",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cup of Soaked Soy Beans",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil for Frying the Soy Beans",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "English Cucumber",
+        "unit": null,
+        "notes": "shredded",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onion for Garnish",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chunk of Boneless Chicken Breast",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": "Cooking the chicken breast",
+        "isOptional": false
+      },
+      {
+        "name": "Around 10 Whole Sichuan Peppercorn Seeds",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Cooking the chicken breast",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Cooking the chicken breast",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "slices",
+        "notes": null,
+        "amount": "2",
+        "section": "Cooking the chicken breast",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Cooking the chicken breast",
+        "isOptional": false
+      },
+      {
+        "name": "Sichuan Pepper Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Chili oil",
+        "isOptional": false
+      },
+      {
+        "name": "Red Chili Pepper Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Chili oil",
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Chili oil",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "slices",
+        "notes": null,
+        "amount": "4",
+        "section": "Chili oil",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "Chili oil",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "smashed",
+        "amount": "3",
+        "section": "Other seasonings",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Other seasonings",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Other seasonings",
+        "isOptional": false
+      },
+      {
+        "name": "Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Other seasonings",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Other seasonings",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "32b79eb32cd417c6ccfec7dc300d592efaa464d8dafb8d939a5f33577a3c031d",
+    "lineage_hash": "4e8f2941660df9400fbc9726cc2ab86320e0a8f50e190837613f4eebe599f687"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/chicken-noodle-salad-sichuan-style/",
+    "fetchedAt": "2026-08-01T20:31:20.337Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/chicken-noodle-salad-sichuan-style/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

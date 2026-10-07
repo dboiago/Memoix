@@ -1,0 +1,38 @@
+{
+  "recipe": {
+    "name": "Algonquin Cocktail",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Cocktail",
+    "garnish": [
+      "Lemon Twist"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all ingredients in a mixing glass with cracked ice, stir until well chilled and diluted. Strain into a chilled cocktail glass, garnish with a lemon twist.",
+      "Pineapple Gomme Syrup\n1 medium pineapple, peeled, cored, and roughly diced into 1 inch cubes\n3 1/2 cups white sugar\n2 cups hot water\n1 1/2 oz. overproof rum (Clyde Common uses Hamilton 151)",
+      "Combine pineapple cubes, water and sugar in a blender and turn on high to emulsify. Strain through a fine mesh strainer. Add rum to make the syrup shelf stable. Bottle and store in the fridge for up to a month."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "0a639e5560d6c44de8f559452b5345cf40cc36f9a651e6c8ee80b9281cb403f4",
+    "lineage_hash": "aaa2219561367db684ef3f5c7cc7b0469d0c582a93ae3926b3c33218cc28e6d7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/algonquin-cocktail-recipe/",
+    "fetchedAt": "2026-08-03T23:35:53.068Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/algonquin-cocktail-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

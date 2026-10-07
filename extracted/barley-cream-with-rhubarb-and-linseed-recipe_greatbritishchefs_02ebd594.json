@@ -1,0 +1,147 @@
+{
+  "recipe": {
+    "name": "Barley Cream with Rhubarb and Linseed",
+    "time": "2 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Every element of this dish can (or needs to be) started a day in advance, so plan accordingly. If you make everything a day in advance, the only thing left to do on the day of serving is assembling the desserts",
+      "Combine the linseeds and water in a bowl, then cover and leave in the fridge overnight",
+      "To cook the rhubarb, place the rhubarb in a single layer in the base of a pan (or 2 pans). Add the sugar and water, then bring to a simmer cook gently for 6-8 minutes until the rhubarb is just beginning to soften. Cover the pan and leave the rhubarb to cool, then transfer both the rhubarb and the cooking liquid into a container. Place in the fridge overnight – this intensifies the colour",
+      "For the barley cream, preheat an oven to 140°C/gas mark 1. Scatter the barley onto a baking tray, then bake for 40 minutes",
+      "When the barley is nearly done, heat the cream, buttermilk and sugar in a pan until it reaches 80°C. Tip the toasted barley into the cream, then turn off the heat and set aside to infuse for 30 minutes. Turn the oven down to 100°C",
+      "While the cream infuses, make the meringue. Place the egg whites and sugar into the bowl of a stand mixer with a whisk attachment, or into a mixing bowl and use an electric whisk. Whisk the egg whites and sugar until the sugar dissolves and the mixture becomes stiff. Line a baking tray with baking paper, then spread the meringue mixture thinly across it (no thicker than 1cm). Place in the oven for 2 hours, then turn the oven off and leave the meringue to cool in the oven overnight",
+      "To finish the barley cream, soak the gelatine leaves in cold water for 5-10 minutes until soft. Meanwhile, strain the barley cream into a clean bowl, then pour 200ml of the cream into a pan. Gently heat until steaming, then squeeze the gelatine to drain and whisk it into the hot cream until dissolved. Remove from the heat, whisk in the remaining strained cream and divide between serving bowls. Cover and place in the fridge to set overnight",
+      "The next day, preheat an oven to 75°C (ensuring you’ve removed the meringue!). Spread the soaked linseed mixture into a thin single layer on a tray lined with baking paper. Bake for 12 minutes, then remove and leave to cool completely",
+      "When ready to serve, remove the bowls of set cream from the fridge. Arrange 4 or 5 pieces of rhubarb on top of the cream, then top with broken shards of meringue and linseed cracker. Garnish with wood sorrel leaves, then pour a little of the reserved rhubarb cooking liquor in to finish (which can be done at the table)"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rhubarb",
+        "unit": "g",
+        "notes": "ideally forced rhubarb, cut into small 2cm batons",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pearl Barley",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "650",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Linseed",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": "g",
+        "notes": "from approx. 3-4 eggs",
+        "amount": "115",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wood Sorrel",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fb705867f685d50128ed052d0ac637050b541b75fb031c43f0c835140e2b1080",
+    "lineage_hash": "c0a9dc3ff155b522750267144818534a3351d2d8a54e32c10ce204a9cec25a9e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/barley-cream-rhubarb-recipe",
+    "fetchedAt": "2026-08-03T02:38:48.650Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/barley-cream-rhubarb-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

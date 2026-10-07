@@ -1,0 +1,137 @@
+{
+  "recipe": {
+    "name": "Cat’s Tongue Cookies with Mango Ice Cream",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat the milk; as soon as it begins to boil, add in the egg yolks beaten together with the sugar. Cook while stirring until the cream has thickened enough that it coats a spoon once lifted out of the mixture.&nbsp;",
+      "Turn off the heat, add in the cream, and let it cool.",
+      "Blend 12 ounces of the mango; add the juice and zest of half a lime. Grate the ginger onto a paper towel; wring out the ginger, letting the juice drip into the blended mango.&nbsp;",
+      "Combine the mango mixture with the cream and pour it into an ice cream maker: the ice cream will be ready in 45-60 minutes.",
+      "Cat’s tongue cookies: mix the egg whites with the powdered sugar, the flour, the cocoa powder, and the melted butter until you obtain a thick batter. Spoon the batter onto a baking tray lined with parchment paper and spread it out with a spatula into thin strips that measure about 8 x 2 inches. Bake the cookies at 350°F for 5-6 minutes.",
+      "Take the cookies out of the oven and remove them from the tray; while they are still hot and pliable, mold them around smooth cups or the center of a bundt pan. Prepare a few at a time, depending on the number of cups or pans you have available. Let them cool; they will become crispy.",
+      "Serve the ice cream with the cat’s tongue cookies, the remaining mango cut into cubes, and mint or lemon balm leaves to taste."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mango",
+        "unit": "oz",
+        "notes": null,
+        "amount": "14",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Powdered Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stick of Butter",
+        "unit": null,
+        "notes": "melted",
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "736e3027a3649b2976f0ae3ea85d8a34be2ee0983a32d31d482a49ec9c07138d",
+    "lineage_hash": "0f2061ddc95833fdc5c28faa601fedeb6be5e3fd57569cb8acb0c16be52f9974"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/cats-tongue-cookies-with-mango-ice-cream",
+    "fetchedAt": "2026-08-03T04:15:51.582Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/cats-tongue-cookies-with-mango-ice-cream",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

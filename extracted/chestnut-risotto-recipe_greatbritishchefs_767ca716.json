@@ -1,0 +1,134 @@
+{
+  "recipe": {
+    "name": "Chestnut Risotto",
+    "time": "30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Soften the onion, celery, pancetta and rosemary in the olive oil over a low heat for 2-3 minutes. Add the risotto rice and cook for 5 minutes.",
+      "Bring the stock to a simmer in a separate pan. Add to the rice pan, ladle by ladle waiting for each to be absorberd before adding the next. Stir continuously for 15 minutes or until the rice is al dente and most of the liquid has been absorbed",
+      "When all the stock has been added, add the chestnuts with the brandy and stir through",
+      "Cook for a further 2 minutes to cook off the brandy. Beat in the butter, Parmesan and some black pepper. Serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Red Onion",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Stick",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pancetta",
+        "unit": "g",
+        "notes": "cubed",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "sprig",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Arborio Risotto Rice",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "800",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chestnuts",
+        "unit": "g",
+        "notes": "cooked, peeled and finely chopped",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brandy",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": null,
+        "notes": "freshly ground",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1b8aee8b6c48f2cdcc4c18cafb359594555ca8fe8f9dfcc4ea6b49e533ea76a8",
+    "lineage_hash": "96ee2700a5bba8ba8ae8ed0d32940e0a32d49872e8fe11f333537f4b47695e3c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chestnut-risotto-recipe",
+    "fetchedAt": "2026-08-03T17:50:50.579Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chestnut-risotto-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Bourbon Street",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Highball",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a shaker, muddle the strawberries with the honey syrup. Add the remaining ingredients, except the club soda, and shake with ice. Strain into an ice-filled highball glass, top with soda and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "b344c33ad14faddc91dbb42c37ef18bb7a470fdf21def2d225ecd79a6331a314",
+    "lineage_hash": "a9aa02a854c0ac5ad8f00c10eacc3faed91ef6cfdee59da9ff9c4ee9c9c7fb65"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bourbon-street-recipe/",
+    "fetchedAt": "2026-08-03T22:00:43.954Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bourbon-street-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

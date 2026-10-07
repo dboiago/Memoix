@@ -1,0 +1,118 @@
+{
+  "recipe": {
+    "name": "Buri Teriyaki",
+    "time": "25 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "350",
+      "carbohydrateContent": "24",
+      "fatContent": "10",
+      "proteinContent": "35"
+    },
+    "directions": [
+      "Prepare the yellow tail fillet. Sprinkle salt and leave them for about 15 minutes.",
+      "After 15 minutes, wipe the excess liquid off the fish with paper towels.",
+      "Heat the butter in a frying pan over medium heat.",
+      "Fry both side of the fish until brown.",
+      "Turn the heat up and pour the teriyaki sauce over the fish.",
+      "Cook till the sauce has reduced and become thick and shiny.",
+      "Turn the heat off and serve it with shiso leaf and radish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Yellow Tail Fish Fillet",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Teriyaki Sacue",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shiso Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amzu Radish to Garnish",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bunch of Radish",
+        "unit": "bunch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ff1f3c53cf7ec0fc47f0a1609d00abc0bacfe92e2318ce449f860599a11ff9ba",
+    "lineage_hash": "739a4185626527c2efd5b2d7f9f128b04751ef288bc2fb283eb959fa83f2a0d8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chopstickchronicles.com/buri-teriyaki/",
+    "fetchedAt": "2026-08-01T17:39:48.824Z"
+  },
+  "rawSource": "https://www.chopstickchronicles.com/buri-teriyaki/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

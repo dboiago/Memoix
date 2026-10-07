@@ -1,0 +1,143 @@
+{
+  "recipe": {
+    "name": "Marranitos (Piggy Pan Dulce)",
+    "time": "1 hr 35 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "18",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "277",
+      "carbohydrateContent": "57",
+      "fatContent": "4",
+      "proteinContent": "4"
+    },
+    "directions": [
+      "Beat piloncillo and butter together in a large bowl until combined (they won't really cream together, just beat as best as you can). Add the egg, milk, and vanilla bean paste and beat again until smooth. Add baking soda, cinnamon, ginger, molasses, and honey. Beat until well combined.",
+      "Beat in 3 cups of the flour. Gradually add remaining flour, switching from mixer to a wooden spoon once the dough starts to become too stiff (so that you don&#39;t burn out your mixer). The dough will seem a bit crumbly, but once you&#39;ve stirred in as much of the flour as you can, use your hands to quickly knead in the rest of the flour. You&#39;re looking for a dough that you&#39;re able to roll out.",
+      "Lay a sheet of plastic wrap on the counter and turn the dough out onto it. Pull the dough together into a large disc and wrap in plastic. Refrigerate for at least 1 hour.",
+      "Preheat the oven to 350° F and line a couple of sheet trays with parchment paper or a Silpat.",
+      "Cut dough in half and wrap one halfback in plastic wrap, set aside (or refrigerate for now). Roll another half of dough out on a lightly floured surface to about ¼&quot; thickness. Use a large pig-shaped cookie cutter (dip in a bit of flour) to cut out pig-shaped cookies. Place on the prepared baking sheet. Re-roll dough and repeat. Repeat with another half of dough when ready.",
+      "Brush a thin coat of the beaten egg over the dough before you put it into the oven.",
+      "Slide into a preheated oven and bake in the middle rack for 10 to 15 minutes or until cookies just start to turn golden around the edges and are just cooked through.",
+      "Remove from the oven and place on a cooling rack. For storage, cover them with a clean, lightweight dishcloth to keep them soft."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Packed Grated Piloncillo",
+        "unit": "C",
+        "notes": "or dark brown sugar",
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "alt: shortening, at room temperature",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": "at room temperature",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean Paste",
+        "unit": "tsp",
+        "notes": "alt: Mexican vanilla extract",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Ginger",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Molasses",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": "see notes below, depending on altitude",
+        "amount": "5-6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": "beaten",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "253c6349e4cf008b5eba3db8933671ded87e9d88572ad48748d74844fd356836",
+    "lineage_hash": "d70ebf24122b7ecdf2cf225c2a402736afded796d7ac81a744c9769ff4b97bb9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/mexican-marranitos-gingerbread-pigs/",
+    "fetchedAt": "2026-08-02T04:07:58.189Z"
+  },
+  "rawSource": "https://muybuenoblog.com/mexican-marranitos-gingerbread-pigs/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

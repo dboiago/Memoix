@@ -1,0 +1,108 @@
+{
+  "recipe": {
+    "name": "Barbecue Bourbon Bloody Mary",
+    "time": "5 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients (except the celery and bacon) to a cocktail shaker and shake to combine",
+      "Pour into a high ball tumbler to serve. Wrap the cooked bacon around the celery stick (you may need to secure it with a toothpick) and use to garnish"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bourbon Whiskey",
+        "unit": "ml",
+        "notes": "preferably Wild Turkey",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vodka",
+        "unit": "ml",
+        "notes": "preferably Ketel",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Barbecue Sauce",
+        "unit": "ml",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tabasco",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Stick",
+        "unit": null,
+        "notes": "to garnish",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grilled Bacon",
+        "unit": "slice",
+        "notes": "to garnish",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2bc64d931b8f664235ead3063c86c4d1dd6169847e557ce328fdb17ff0a56263",
+    "lineage_hash": "5190ad996e97008bfda28f98e05979cf4f3b331dff9bafd4c13b8d66396a88a9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/barbecue-bourbon-bloody-mary-recipe",
+    "fetchedAt": "2026-08-03T14:58:33.022Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/barbecue-bourbon-bloody-mary-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

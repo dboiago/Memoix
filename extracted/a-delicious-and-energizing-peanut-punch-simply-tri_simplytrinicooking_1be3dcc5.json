@@ -1,0 +1,84 @@
+{
+  "recipe": {
+    "name": "Peanut Punch",
+    "time": "10 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Mocktail",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pour the milk into a blender. Add the peanut butter and sugar (if you're using the glucose add it with the sugar). Blend until smooth.",
+      "Add cinnamon and granola. Blend well. Stir before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granola Optional",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glucose Optional",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "022230735e4c49e8a86f962a5a2a397d400f9d1178480a1b2eed87abfb158a7d",
+    "lineage_hash": "913ac707d492bc5d5fee3cd1e7ee460814cabf142147ca69982256b96f7dc535"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.simplytrinicooking.com/peanut-punch/",
+    "fetchedAt": "2026-09-26T00:17:41.863Z"
+  },
+  "rawSource": "https://www.simplytrinicooking.com/peanut-punch/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,51 @@
+{
+  "recipe": {
+    "name": "Sir Porkalot’s Crown Rack of Ribs",
+    "time": "3.5 hours",
+    "course": "mains",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Obtain a rack of loin back ribs (aka baby backs); the recipe can be multiplied as desired.",
+      "Using a sharp knife, score the ribs through the back (top to bottom) between each bone. Don’t slice all the way through; you are just making a hinge.",
+      "Form the rack into a circle with the rib tips facing up (the end you can see the bone on) and the meat facing inwards (bone side out). Use toothpicks or bamboo skewers to hold the meat in place until the next step.",
+      "Season well, (again, I used [Naturiffic Q-Salt](https://amzn.to/4ptU3uH)) and then tie with butcher’s string to help it hold its shape while cooking.",
+      "Once tied, you can stuff, if desired, with your dressing of choice. I placed a sheet of foil under the opening of the crown to help hold the dressing in place. Once it was on the smoker, I simply slid the sheet of foil out from under the meat. The grate on the smoker then held the stuffing in place.",
+      "Fire up your smoker to 250 degrees using red oak and cherry wood and the crown of ribs was placed in the smoker. (Again, remove the foil so the flavorful smoke isn’t impeded.)",
+      "Smoke the crown rack of ribs until it reaches an internal temperature of 185 degrees.",
+      "Once the meat hit an internal temperature of 185 degrees, I took it off the smoker to rest for 20 minutes.",
+      "Slice the bones apart and enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rack of Loin Back Ribs",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "770fe8bc4b8335e87c23008b1b86ab58367ab35f7f92871b001537b531098bbe",
+    "lineage_hash": "64366f6583b6bfeeb558b1cfad82ac7fef4b30dda36fc395fab390523f3caaa8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/2020/12/18/crown-rack-of-ribs/",
+    "fetchedAt": "2026-08-02T21:19:48.067Z"
+  },
+  "rawSource": "https://barbecuebible.com/2020/12/18/crown-rack-of-ribs/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,132 @@
+{
+  "recipe": {
+    "name": "Air fryer Lamb Skewers",
+    "time": "55 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "162",
+      "carbohydrateContent": "1.4",
+      "fatContent": "5.9",
+      "proteinContent": "24.4"
+    },
+    "directions": [
+      "Combine oil, soy sauce, cornstarch, cumin powder, chili powder, and salt in a small bowl. Mix well.",
+      "Trim fat from the lamb meat if necessary. Cut the lean part into 1.5-cm (1&quot;) cubes. Cut fat into thin pieces half the size of the lean pieces.",
+      "Add the lamb and onion into a big bowl. Pour the marinade over the lamb. Mix well so the lamb is covered evenly with the marinade. Let marinate for 30 minutes at room temperature or overnight in the fridge.",
+      "Thread lamb cubes closely onto skewers, alternating between lean meat and fat pieces.",
+      "When ready to cook, preheat the air fryer to 400°F (200°C). Place skewers into the preheated air fryer and air fryer and cook for 8 to 10 minutes, until charred on the outside and tender on the inside. Halfway through, turn the lamb skewers and sprinkle a generous amount of cumin powder and chili powder on both sides. Serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Lamb Leg (or Stew Meat, or Medallions)",
+        "unit": "lb",
+        "notes": "450 g, *See footnote 1",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "6\" (15 Cm) Bamboo Skewers",
+        "unit": null,
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "or vegetable oil",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "or soy sauce",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine (or Dry Sherry)",
+        "unit": "Tbsp",
+        "notes": "Optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Powder",
+        "unit": "tsp",
+        "notes": "and extra for cooking",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili Flakes",
+        "unit": "tsp",
+        "notes": "and extra for cooking",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Sichuan Peppercorn",
+        "unit": "tsp",
+        "notes": "or ground black pepper",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3af82cb9e6f1db97e9cf3e855267b832002f18cc40418b2a152cde530896a461",
+    "lineage_hash": "d7c875e7d2d714befbd3d9420c675886ab15fe93993be26c149d60f6586d4c9d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/air-fryer-lamb-skewers/",
+    "fetchedAt": "2026-08-02T03:09:33.991Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/air-fryer-lamb-skewers/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

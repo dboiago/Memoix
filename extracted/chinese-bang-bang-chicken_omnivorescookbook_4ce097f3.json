@@ -1,0 +1,135 @@
+{
+  "recipe": {
+    "name": "Chinese Bang Bang Chicken",
+    "time": "30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "372",
+      "carbohydrateContent": "6.6",
+      "fatContent": "19.4",
+      "proteinContent": "41.5"
+    },
+    "directions": [
+      "Chop 2 green onions into 2” (5 cm) sticks. Slice the remaining 2 green onions into thin slices.",
+      "Prepare a steamer by adding 2” (5 cm) water into the pot. Cover and heat over medium-high heat until boiling.",
+      "Use a plate that can fit into your steamer rack. Spread the green onion sticks onto the plate to make a bed. Place the chicken breast on top. Sprinkle salt evenly over the chicken.",
+      "When steam comes out of the steamer, place the steamer rack with the chicken on top, and cover the steamer. Cook for 20 minutes. Test the chicken by using a thermometer inserted into the thickest part. It should read 165 degrees F (73 C). Or insert a knife into the thickest part, and the juice should run clear. If the chicken is still pink inside, steam for another 5 to 10 minutes. Once done, transfer the chicken to a plate to cool.",
+      "While cooking the chicken, combine the rest of the ingredients in a large bowl. Whisk to mix well.",
+      "Once the chicken is cooled, transfer it onto a cutting board. Use a meat pounder or a rolling pin to pound the chicken (optional), then shred into thin slices using two forks.",
+      "Place the chicken into a large bowl or deep plate. Drizzle the sauce on top and mix well. Garnish with thinly sliced green onion. If you want to create the authentic look, like at a Sichuan restaurant, drizzle more chili oil (about 1/3 to 1/2 cup) onto the chicken.",
+      "Serve as a cold appetizer or a main dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Breasts",
+        "unit": "lb",
+        "notes": "700 g, or chicken thighs, boneless, skinless",
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "separated",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "or soy sauce",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Sesame Paste",
+        "unit": "Tbsp",
+        "notes": "or unsweetened natural peanut butter",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Homemade Chili Oil (or More)",
+        "unit": "Tbsp",
+        "notes": "*Footnote 1",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinkiang Vinegar",
+        "unit": "Tbsp",
+        "notes": "or 2 tablespoons rice vinegar",
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "grated",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "grated",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Sichuan Peppercorns",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "365b7a4b0392989c1804f3dd26aebcadf70730e892882d399a35b1fe813625d2",
+    "lineage_hash": "f06ba5b6a2034ac310d0c48300580f98816ff9af40384f5c2ec80081eeb0b1d7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/bang-bang-chicken/",
+    "fetchedAt": "2026-08-01T19:41:35.406Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/bang-bang-chicken/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

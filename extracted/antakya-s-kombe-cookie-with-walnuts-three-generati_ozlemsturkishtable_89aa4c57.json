@@ -1,0 +1,125 @@
+{
+  "recipe": {
+    "name": "Antakya’s Kombe Cookie with Walnuts",
+    "time": "1 hr 5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "TR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 180 C/ 350 F",
+      "Combine the flour and the melted butter in a large bowl and mix well.",
+      "Dissolve the sugar in the warm milk and add to the flour mixture.",
+      "Pour in the vanilla extract, egg whites and the cinnamon or kombe baharat, combine well.",
+      "Knead the mixture well for 2-3 minutes, until the dough is soft and smooth.",
+      "Take a small walnut size of the dough and press the dough gently into the mold to take its shape.",
+      "Stuff this dough with about 1 ½ tsp. of the filling mixture.",
+      "Take another small piece of dough, about half of the size of the first one. Flatten and press this dough gently over the filling, to form a cap and close the dough. Press gently and seal the ends of the dough.",
+      "Remove the kombe cookie from the wooden mold by tapping the end of the mold with your fingers firmly and make sure to catch the falling cookie, shaped with the mold’s intricate design. Place the cookie on a baking tray and repeat this with the rest of the dough.",
+      "Bake the cookies for about 20 or 25 minutes, until they get a nice light brown color. They are traditionally lighter in color.",
+      "Once cool, serve the Kombe cookies with tea, cay or coffee. Kombe cookies can be stored in an airtight container for at least 3-4 days."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gr Plain",
+        "unit": null,
+        "notes": "all-purpose flour",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gr Unsalted Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gr Granulated White Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "110",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "ml",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "ml",
+        "notes": "alt: Kombe baharat",
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fl. Oz Warm Whole Milk",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gr Crushed Walnuts",
+        "unit": null,
+        "notes": null,
+        "amount": "85",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "ml",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d3743902d723a1abb853ab3fd3ba71b8e6106856f7c1c09bb89aa19c6afd20a6",
+    "lineage_hash": "32105dc56de31d3b17d4f829f6de17aea176e6e501d77e1d583fb7bb5fe83076"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ozlemsturkishtable.com/2014/06/antakyas-kombe-cookie-with-walnuts-three-generations-baking-together/",
+    "fetchedAt": "2026-09-25T22:04:56.210Z"
+  },
+  "rawSource": "https://ozlemsturkishtable.com/2014/06/antakyas-kombe-cookie-with-walnuts-three-generations-baking-together/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

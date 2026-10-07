@@ -1,0 +1,325 @@
+{
+  "recipe": {
+    "name": "Chicken and Mushroom Pie",
+    "time": "2 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by browning the chicken legs on all sides in a large pan,  transferring to a casserole dish once evenly caramelised. Brown off the bacon in the same large pan and add this to the casserole dish with the chicken, returning the large pan to the heat",
+      "Add a dash of oil and a little butter to the pan and caramelise the onions, carrots, leeks, celery and garlic. In a separate pan caramelise the button mushrooms",
+      "Meanwhile, cut the tomatoes in half and place them flat side down on a tray with a little water. Place in oven at 180°C and roast until soft and caramelised",
+      "Once all the vegetables are caramelised, transfer them into the casserole dish with the chicken and bacon. Deglaze the pan with madeira and the white wine and reduce by half, then add the chicken and veal stock and reduce again. Once the liquid has reduced by half add it to the dish with the chicken, bacon and vegetables. Cover the dish with tin foil and place in oven at 140°C for 2 hours or until tender",
+      "Remove from the oven and leave to cool slightly, then pass the contents of the casserole through a fine sieve. Reserve the strained stock and meat, then throw away the vegetables. Pick all meat from chicken - making sure you leave the pieces fairly large -  and cut the bacon into bite size pieces",
+      "Pour the strained stock into a pan and reduce until it forms a sauce-like consistency. Add the herbs, seasoning, double cream and lemon juice to the pan and pass it through the  fine sieve again",
+      "For the ham hock, place the ham in a pan of cold water and bring to the boil. Once the water reaches boiling point remove the ham and rinse under cold water for 5 minutes, discarding the water from the pan. Return the rinsed ham hock to the pan along with the vegetables and herbs, cover with cold water and simmer for 2 hours until the hock is tender. Remove the ham from the pan and pick all the meat into bite size pieces. Set aside until required",
+      "Meanwhile, prepare the mushrooms and melted onions. Melt the butter slowly over a low heat, then thinly slice the onions and add to the pan to sweat until tender. Quarter the mushrooms, then add them to the pan and fry off until golden brown in the butter. Drain off any excess butter from the pan and set to one side until ready to assemble the pies",
+      "For the pastry top combine the suet, flour and salt in a mixing bowl and gradually add cold water until combined to form a pastry",
+      "To assemble the pies, season the chicken, ham hock and mushroom fillings and combine them in individual pie dishes. Divide the pastry into 100g balls and roll them out into 15cm circles. Cover the pie dishes with the pastry circles and crimp around each dish, trimming off any excess pastry with a knife. Make a small cross in the centre of each pie with the tip of a knife and leave the pies to rest in the fridge",
+      "Remove the pies from the fridge and brush over an egg wash. Bake them in the oven for 12 minutes or until golden brown. Serve immediately with steamed greens"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Leg",
+        "unit": "kg",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pancetta",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "g",
+        "notes": "sliced",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leek",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Button Mushrooms",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Madeira",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Veal Stock",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peppercorns",
+        "unit": "g",
+        "notes": "pink and white",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Knob of Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ham Hock",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leek",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Button Mushrooms",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Suet",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Self-raising Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": "for binding",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "to glaze",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5ed57897cc4a77c2c43c535afea7de2db153a3a6be815790fa3432e5544f4414",
+    "lineage_hash": "2852ae72d9a3ec8c335e51cf486b852a996872a238743bac415bfbe180d8cc70"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chicken-mushroom-pie-recipe",
+    "fetchedAt": "2026-08-03T15:09:33.205Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chicken-mushroom-pie-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

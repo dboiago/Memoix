@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Birds of Paradise",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Pebble",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Muddle strawberry, cucumber, and syrup together in the shaker. Add rest of ingredients and ice to the shaker. Shake and double strain over pebble ice in a glass. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "1de07e75705c6ecfadd4353c1d266bfd1e1d10eea54cd3c5017bf29cfbe286da",
+    "lineage_hash": "a9229a39b8f3666894f0893ee38595fd3e601fb8d0551217ab4574c5010dc48b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/birds-of-paradise/",
+    "fetchedAt": "2026-08-03T20:26:45.000Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/birds-of-paradise/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

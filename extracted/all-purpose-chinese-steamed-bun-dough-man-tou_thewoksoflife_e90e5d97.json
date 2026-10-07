@@ -1,0 +1,81 @@
+{
+  "recipe": {
+    "name": "All-Purpose Chinese Steamed Bun Dough (Man Tou)",
+    "time": "2 hr 50 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "194",
+      "carbohydrateContent": "40",
+      "fatContent": "1",
+      "proteinContent": "6"
+    },
+    "directions": [
+      "Mix all the dry ingredients together in a large bowl. Add the water, and knead until it forms a smooth dough. Cover the dough with a cloth and let it rise for about 2 hours. Roll the dough ball into a log (the size depends on how large or small you want your man tou), and cut it into however many equal pieces you'd like.",
+      "Arrange them in a steamer lined with cheese cloth, about 2 inches apart. Cover the steamer and let the buns rise for another 15 minutes. Turn on the heat to medium high and steam the buns for 20 minutes. Serve! To re-heat, just steam them again for about 5 minutes. Don't be tempted to use the microwave, because they'll dry out!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All Purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Instant Yeast",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lukewarm Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "da591b6a34889b77c13db17c66b030f30152085480d6ea92a6fc036cfaf0b73f",
+    "lineage_hash": "9d6caa663f1fa573cbe38ee6ce14a57057b566c42ac08d23cc11519e3cce3b63"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/purpose-chinese-bun-dough-man-tou/",
+    "fetchedAt": "2026-08-02T04:20:09.369Z"
+  },
+  "rawSource": "https://thewoksoflife.com/purpose-chinese-bun-dough-man-tou/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

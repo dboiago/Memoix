@@ -1,0 +1,148 @@
+{
+  "recipe": {
+    "name": "Baked Feta Pasta",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "504",
+      "carbohydrateContent": "41",
+      "fatContent": "32",
+      "proteinContent": "13"
+    },
+    "directions": [
+      "Pre-heat oven to 400 F degrees. To a baking dish (mine is 3 qt 12.5&quot; x 8.25&quot;), add cherry or grape tomatoes, followed by sliced red pepper, onion and garlic.",
+      "Add 1/4 cup olive oil. Then add all the seasonings- Italian seasoning, dried oregano, red chili flakes, salt and black pepper.",
+      "Mix it all together and then create some space in the center of the baking dish and place a block of feta cheese. Drizzle the block of feta with the remaining 1/4 cup olive oil.Bake at 400 F degrees for 35 minutes. Meanwhile boil the pasta according to instructions on the package and set aside.",
+      "Take the baking dish out of the oven. The tomatoes would have burst by now releasing all the beautiful flavor and the cheese will be super melt-y.Take a spatula and mash the cheese and mix everything together. Mash the garlic cloves.",
+      "Add in the boiled pasta and mix until it&#039;s all well combined. Stir in 1/3 cup of chopped fresh basil and mix. Top with more fresh basil and serve the baked feta pasta warm!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pints Cherry",
+        "unit": null,
+        "notes": "alt: grape tomatoes, 610 grams approx",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Pepper",
+        "unit": "large",
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "medium",
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": "large",
+        "notes": "sliced",
+        "amount": "4-5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Italian Seasoning",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oregano",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chili Flakes",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "C",
+        "notes": "4 oz, you can 1/3 cup if you want to use less",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Block Feta Cheese",
+        "unit": "oz",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pasta",
+        "unit": "oz",
+        "notes": "of choice, I used elbow macaroni pasta",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basil",
+        "unit": "C",
+        "notes": "fresh, chopped + more to serve",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8fa53fcffe5f8045aa5507f029727a266e989d16bdc2c6da93a51602d84acf91",
+    "lineage_hash": "4cf54638fedc834ef1cd7bc0b3e2f36a31de185c76a960a373798fa1501f4b07"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/baked-feta-pasta/",
+    "fetchedAt": "2026-08-02T08:46:28.268Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/baked-feta-pasta/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

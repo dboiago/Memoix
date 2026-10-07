@@ -1,0 +1,136 @@
+{
+  "recipe": {
+    "name": "Bingka Ubi Jalar (Sweet Potato Cake)",
+    "time": "2 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "ID",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Peel and cut sweet potato into wedges. Steam until fork tender and easily mashable.",
+      "Meanwhile, grease and line/flour an 8”x2” or a 9”x2” round cake pan and set aside. Also, preheat oven to 170 Celsius (340 Fahrenheit).",
+      "Place the steamed sweet potato wedges in a blender, along with eggs, sugar, coconut milk, melted butter, vanilla extract, salt, and cinnamon powder. Blend until smooth.",
+      "Transfer the sweet potato mixture into a mixing bowl. Add the flour and mix with a spatula until well combined. Pour into the prepared pan.",
+      "Bake in the oven for about 50 minutes to 1 hour. If using an 8” pan, it is more likely that the cake will need the whole hour.",
+      "Remove from oven and let it rest for 15 minutes in the pan before taking it out. Cool the cake completely on a wire rack. Cut into 8 portions."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gram Sweet Potato",
+        "unit": null,
+        "notes": null,
+        "amount": "375",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Melted Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram All Purpose Flour",
+        "unit": null,
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tools",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blender",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "8\"x2\" Round Cake Pan",
+        "unit": null,
+        "notes": "alt: a 9\"x2\" round cake pan",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d52726e5330f32d5aec1672c990691a3a9bcb3e1b7b1d06c9ad9819959a5f312",
+    "lineage_hash": "ab173ab4d1d087f21e9016084c979b3634886d37fa203144ba552834db4bf5f1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/bingka-ubi-jalar-sweet-potato-cake.html",
+    "fetchedAt": "2026-08-01T21:37:05.739Z"
+  },
+  "rawSource": "https://dailycookingquest.com/bingka-ubi-jalar-sweet-potato-cake.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

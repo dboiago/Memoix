@@ -1,0 +1,121 @@
+{
+  "recipe": {
+    "name": "Chinese BBQ Sauce (叉烧酱)",
+    "time": "15 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "66",
+      "carbohydrateContent": "14.3",
+      "fatContent": "0.3",
+      "proteinContent": "0.6"
+    },
+    "directions": [
+      "Mix everything together in a small saucepan. Cook over medium heat and stir constantly to dissolve the sugar. Simmer until the sauce has thickened just enough to coat the back of a spoon, 10 minutes or so. Remove it from the stove and let cool for 10 minutes. Then transfer to a container or heat-proof mason jar. The sauce will thicken further once cooled. It’s ready to use now, or you can store it sealed in the fridge for up to 4 days.",
+      "The sauce is perfect with pork, chicken, beef, and seafood. You can serve it alongside cooked food. Or use it as a glaze to finish up grilled or baked meat. For example, you can use it to make Instant Pot Pork Ribs."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Brown Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hoisin Sauce",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Molasses",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": "or dry sherry",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "grated",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "grated",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Five Spice Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "19c9195e37c1cc76390ad82c8d7d0c84b273cdbb7cdd87ef0305d450e22ee079",
+    "lineage_hash": "958b7b709b7263ff87637ba4e1cf4c4b7412eb70180404d1190ac5bf05e55ef5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/chinese-bbq-sauce/",
+    "fetchedAt": "2026-08-01T16:23:22.601Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/chinese-bbq-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

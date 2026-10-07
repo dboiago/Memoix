@@ -1,0 +1,110 @@
+{
+  "recipe": {
+    "name": "Aloo Methi",
+    "time": "30 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "223",
+      "carbohydrateContent": "29",
+      "fatContent": "9",
+      "proteinContent": "6"
+    },
+    "directions": [
+      "Heat 2 tablespoons of oil in a pan on medium heat. If using mustard oil, heat it well until its really hot and then lower the heat before adding the cumin seeds.&nbsp;",
+      "Add cumin seeds, let them sizzle for few seconds and then add the garlic. Saute for few seconds until the garlic starts to change color.",
+      "Then add the chopped potato and green chili. Stir. You may also add chopped onion at this point.",
+      "Fry the potatoes in oil for 5 to 6 minutes until slightly golden brown. Toss them once or twice in between.",
+      "Add the chopped methi leaves, turmeric and salt and stir.&nbsp;",
+      "Cook for 6 to 7 minutes (keep stirring in between) until the leaves are cooked, the moisture dries out and the potatoes are done. I have not added any water here but you may sprinkle some water and cover the pan with a lid to cook the potatoes faster.",
+      "Serve aloo methi with roti or any bread of choice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": "use oil of choice, I used mustard oil",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": "large",
+        "notes": "sliced",
+        "amount": "3-4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": "medium",
+        "notes": "chopped, around 400 grams",
+        "amount": "3-4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chili",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Packed Methi (fenugreek) Leaves",
+        "unit": "C",
+        "notes": "75 grams, chopped, may double this quantity of methi for stronger methi flavor",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bee27de0c969e53053b4034129c3e688e5d148ebf52da6326211e4c30af5e750",
+    "lineage_hash": "5987cfafa631169c3575f0d5e26f8eac70856cfcbd15d6be84931f570f127b43"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/aloo-methi/",
+    "fetchedAt": "2026-08-01T21:22:40.758Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/aloo-methi/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

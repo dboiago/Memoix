@@ -1,0 +1,280 @@
+{
+  "recipe": {
+    "name": "Caramelised White Chocolate Mousse",
+    "time": "2 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by preparing the apple purée - this will be used to make the sorbet. Peel and core the apples and store in a bowl with a dash of lemon juice and enough water to cover",
+      "Strain, roughly chop and add to a pan with a little sugar. Heat on the stove until soft and falling apart. Taste for sweetness and add more sugar if necessary. Add a little malic acid to increase the acidity to taste",
+      "Blend in a food processor and pass through a fine sieve. Add a layer of cling film to cover the surface of the purée, allow to cool and measure out 500g for the sorbet. Reserve the remaining purée in a squeezy bottle",
+      "For the sorbet, add the reserved purée to a saucepan with the water, caster sugar and malic acid.  Once hot, remove from the heat and add the gelatine leaf. Cool the mix, store in Pacojet containers and churn before serving. Alternatively, churn the cooled mix in an ice cream maker",
+      "For the muscovado pulled tuiles, heat the isomalt until it reaches 150°C, then add the muscovado sugar to dissolve and bring back to 150°C. Pour onto a non-stick mat in a warm part of the kitchen and leave to cool until pliable. Using a pair of rubber gloves, knead the soft sugar until smooth and shiny",
+      "Once cool enough, begin to pull strands of the mix and cut with scissors. Place the strands on a cold worktop to cool, then add to a box containing silica gel below to absorb any moisture",
+      "For the white chocolate mousse, melt the white chocolate in a pan over a low-medium heat and cook until golden brown, stirring so that it does not catch. Deglaze with the cream, remove from the heat and mix in the gelatine until completely dissolved",
+      "Whisk the egg yolks with the caster sugar until pale and fluffy, then fold through the chocolate mixture, a third at a time. Semi-whip the double cream to soft peaks and fold through the chocolate egg yolk mix. Leave in a container in the fridge to set",
+      "For the apple dice, peel and finely dice the apple into a 2mm pieces, transfer to a vac pac bag and add enough freshly squeezed apple juice to just cover. Compress in a vacuum sealer and store in the fridge until required",
+      "To prepare the cinnamon crumble, add all of the ingredients to a bowl and mix to combine with your hands. Break the mix apart roughly onto a non-stick mat and bake in the oven until starting to colour. Leave to cool, then break apart into pieces",
+      "For the muscovado fluid gel, add the sugar, apple juice and water to a pan and bring to the boil. Whisk in the agar agar, reduce to a simmer and stir to dissolve for 4-5 minutes. Pour into a tub and place in the fridge",
+      "Once set (this won’t take too long), add to a food processor and blitz until smooth, adding a little water if necessary. Pass through a fine sieve and store in a squeezy bottle",
+      "To serve, pipe 2 lines of apple purée onto each plate and arrange the apple dice along the centre between the lines. Place 2 spoonfuls of the mousse on the apple, leaving a big space in between",
+      "Add some pieces of the cinnamon crumble and dots of the muscovado gel. Finish with a scoop of sorbet between the mousse and the muscovado tuile"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "White Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "110",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaf",
+        "unit": null,
+        "notes": "bloomed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "38",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Apple",
+        "unit": null,
+        "notes": "crispy",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Juice",
+        "unit": null,
+        "notes": "freshly squeezed",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Apples",
+        "unit": null,
+        "notes": "floury",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Malic Acid to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Malic Acid",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaf",
+        "unit": null,
+        "notes": "bloomed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Muscovado Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Isomalt Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Demerara Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "diced",
+        "amount": "65",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "2.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Muscovado Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Agar Agar",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a1e060c96314940f978d1c264ad3938e7841c9ec7f4b948019a0c562f3046c1b",
+    "lineage_hash": "2795f98f58c6cbf657411a4db10b6934c7156228d4203a2cc95fc35d413f7f6c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/caramelised-white-chocolate-mousse-recipe",
+    "fetchedAt": "2026-08-03T16:33:59.816Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/caramelised-white-chocolate-mousse-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

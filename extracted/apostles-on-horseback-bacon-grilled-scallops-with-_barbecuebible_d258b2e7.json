@@ -1,0 +1,73 @@
+{
+  "recipe": {
+    "name": "Apostles On Horseback (Bacon-Grilled Scallops With Honey Lime Glaze)",
+    "time": "6 to 10 minutes",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Make the marinade: Place the wine, lime juice, honey, and salt in a large, non-reactive bowl and whisk until the salt crystals are dissolved.",
+      "If you’re reading this in New Zealand (or Europe), you can buy and grill your scallops with the roe (the coral colored stuff) intact. In North America you’d buy a trimmed scallop. All you need to do is remove and discard the small crescent-shaped muscle on the side of each scallop. Note: this is optional (I call it circumcising the scallop), but it will make the scallop more tender. Stir the scallops into the marinade and marinate for 1 to 2 hours, covered, in the refrigerator.",
+      "Drain the scallops well, discarding the marinade.",
+      "Wrap each scallop in a strip of bacon, securing it with a toothpick.",
+      "Set up your grill for direct grilling and preheat to medium. Brush and oil the grill grate. If using wood chips, toss them in the coals or place in the smoker box or in a smoke pouch for your gas grill.",
+      "Grill the scallops until the bacon is browned and crisp and the scallops are just cooked through, 2 to 3 minutes per side, a minute or two on the edges to crisp the bacon. Total cooking time will be 6 to 10 minutes in all.",
+      "Transfer the scallops to a platter or plates or simply serve them hot off the grill."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Crisp Dry Wine",
+        "unit": "C",
+        "notes": "like a New Zealand sauvignon blanc",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "C",
+        "notes": "fresh",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "13720e0d7515fc613446701cdf0c5fd9cc3751c96d4a556b40db6141618abea6",
+    "lineage_hash": "548feadc3df726921412daab8ffacbf19fe051e14723d6bcdf1cee2be6c80444"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/bacon-grilled-scallops-honey-lime-glaze/",
+    "fetchedAt": "2026-08-03T05:11:16.194Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/bacon-grilled-scallops-honey-lime-glaze/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

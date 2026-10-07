@@ -1,0 +1,94 @@
+{
+  "recipe": {
+    "name": "Biscotti",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat the oven to 150°C/Gas mark 2. Beat the eggs with the sugar until pale and doubled in size. Stir in the nuts, orange zest, flour and baking powder until the mixture forms a dough",
+      "Tip out onto a lightly floured work surface and roll out two flattened logs 4cm wide, 2cm high. Place on a baking sheet, bake for 12-15 minutes or until pale golden and firm",
+      "Once cooked, slice into 1cm thick pieces on the diagonal, lay flat on a baking sheet and bake again for 10 minutes or until crisp",
+      "Allow to cool slightly and serve. Any leftover biscuits can be stored in an airtight container"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": "zested",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Whole Nuts",
+        "unit": "g",
+        "notes": "roughly chopped",
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour for Dusting",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "541d7841967999dab2c099530e67cb75b254a0cd2521d51413d00838d9a3d6e8",
+    "lineage_hash": "396e0dc6e1a32ee12dd6d86ad4aad2dca59e3d3a32d2ca7a4b7445cc4586ea47"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/biscotti-recipe",
+    "fetchedAt": "2026-08-03T17:43:18.217Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/biscotti-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

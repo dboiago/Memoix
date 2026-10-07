@@ -1,0 +1,93 @@
+{
+  "recipe": {
+    "name": "Carrot, Cumin and Kidney Bean Burger",
+    "time": "40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Drain and rinse the kidney beans in cold water to wash away the ‘tinned’ taste. Put in a saucepan and cover with cold water. Bring to the boil, then simmer for ten minutes to soften. In a separate pan, add the finely chopped onion, grated carrot, cumin and coriander. Drizzle a little oil over and cook gently on a low heat to soften",
+      "When the kidney beans have heated through and softened, drain and add to the carrots and onions. Mash together with a masher or a fork until you have a smooth-ish purée (like a mashed potato consistency). Stir in a heaped teaspoon of flour",
+      "Heat a little oil in a frying pan on a medium heat. With floured hands, shape some of the mixture into a ball, about the size of a golf ball. Place in the oil and flatten gently with a fork to make the burger shape. Cook for a few minutes on one side, before turning over gently. They need to be handled with care while cooking as they can be quite fragile!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Carrot",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Coriander",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tinned Red Kidney Beans",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "967b968ea9b403c08b4bbd4288c06a408e2063c79645e2917b073101e708f762",
+    "lineage_hash": "1549df8cccb3a99f0c61f1b8f874f306510a8c1b090b64d6c43534d86b197266"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/budget-carrot-cumin-kidney-bean-burger-recipe",
+    "fetchedAt": "2026-08-03T23:50:23.566Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/budget-carrot-cumin-kidney-bean-burger-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

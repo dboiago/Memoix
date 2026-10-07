@@ -1,0 +1,96 @@
+{
+  "recipe": {
+    "name": "3 Ingredient Yogurt Soufflé Cake",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "257",
+      "carbohydrateContent": "26",
+      "fatContent": "12",
+      "proteinContent": "11"
+    },
+    "directions": [
+      "Strain the yogurt using a yogurt strainer or cheesecloth until about 100 grams in weight (less is okay, anything more and the cake might be too wet). A yogurt strainer will take about 1 hour and a cheesecloth may take several hours.",
+      "Preheat your oven to 400°F (200°C). Grease and line an 5 or 6 inch round cake pan with parchment paper. If using a pan with a removable bottom, wrap the outside of the pan tightly with aluminum foil to prevent water from leaking in during the water bath.",
+      "Separate the egg whites from the yolks. Place the yolks in one bowl and the whites in another. Make sure the bowl for the egg whites is clean and dry.",
+      "In the bowl with the egg yolks, whisk in the yogurt until smooth and fully combined.",
+      "Using an electric mixer, add the sugar and beat the egg whites on high speed until stiff peaks form.",
+      "Gently fold a a scoop of the whipped egg whites into the yogurt mixture to lighten it. Repeat two more times. Add the yolk batter to the remaining whipped egg whites and whisk it in using scooping motions. Switch to a spatula and mix, scraping the bottom of the bowl to ensure everything is well mixed.",
+      "Place the prepared cake pan into a larger baking dish. Pour hot water into the larger dish until it reaches about halfway up the sides of the cake pan.",
+      "Carefully transfer the water bath and cake into the oven. Bake the cake at 400°F for 10 minutes, then open the oven door briefly, reduce the heat to 320°F, and bake for another 40-50 minutes for 12 cm or 50-60 minutes for 15 cm.",
+      "Let the cake cool in the water bath for about 10 minutes. Then remove the cake pan from the water bath, let it cool completely, and carefully remove the cake. Dust with powdered sugar or top with fresh fruit before serving, if desired."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Balkan",
+        "unit": "C",
+        "notes": "alt: Greek yogurt, 250 g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "112 g",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": "50 g",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Balkan",
+        "unit": "C",
+        "notes": "alt: Greek yogurt, 375 g",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "168 g",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": null,
+        "notes": "75 g",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a02b17458d88c0abe7be598b96b0e02e76e6b05451c10ac87381c3211271ac69",
+    "lineage_hash": "5cb98acceccb9e5393a4a113125419eb5fed696f8a0e8a0a62bee1ed53c3e4fe"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.okonomikitchen.com/3-ingredient-yogurt-souffle-cake/",
+    "fetchedAt": "2026-09-26T00:23:20.000Z"
+  },
+  "rawSource": "https://www.okonomikitchen.com/3-ingredient-yogurt-souffle-cake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

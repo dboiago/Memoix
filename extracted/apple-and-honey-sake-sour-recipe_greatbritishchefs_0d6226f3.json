@@ -1,0 +1,125 @@
+{
+  "recipe": {
+    "name": "Apple and Honey Sake Sour",
+    "time": "20 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": "Cocktail",
+    "garnish": [
+      "Lemon Twist",
+      "Apple Slice"
+    ],
+    "subcategory": "Sparkling",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "A day ahead of serving, prepare the dried apple slices. Preheat the oven to the lowest heat setting – around 60°C",
+      "Brush the apple slices with lemon juice. This will help stop them browning",
+      "Dehydrate the apple slices on a wire rack in the oven for 3 hours, or until dry but still flexible",
+      "Leave the apple slices overnight at room temperature to finish drying, then store in an airtight container until needed&nbsp;",
+      "The next day, make the honey syrup by mixing together the honey and warm water",
+      "Combine the sake, apple juice, lemon juice, honey syrup and egg whites in a cocktail shaker",
+      "Add a generous handful of ice cubes to the shaker, then secure the lid and shake well for around 30 seconds to emulsify the egg whites and chill the mix&nbsp;",
+      "Strain the cocktail into three chilled glasses filled with ice cubes, garnish each one with a lemon twist and apple slice, then serve&nbsp;"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Russet Apples",
+        "unit": null,
+        "notes": "finely sliced on a mandolin",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "ml",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Warm Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sake",
+        "unit": "ml",
+        "notes": null,
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshlay Farms Golden Yolker® Egg Whites",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Ice Cubes",
+        "unit": null,
+        "notes": "plus more as needed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Zest",
+        "unit": null,
+        "notes": "twisted",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a8e98aca6b9e9bd8ca4ec217310c1af219d51911ff025d96d0799ddb246c7cef",
+    "lineage_hash": "858c5b15647b2e187f2f378b89a3b0dbb6bd0cd1b1b6fcf986775a6c95253b47"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/apple-honey-sake-sour-recipe",
+    "fetchedAt": "2026-08-02T11:29:22.758Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/apple-honey-sake-sour-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

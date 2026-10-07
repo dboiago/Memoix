@@ -1,0 +1,99 @@
+{
+  "recipe": {
+    "name": "Berry Oat Smoothie",
+    "time": "10 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "312",
+      "carbohydrateContent": "52",
+      "fatContent": "8",
+      "proteinContent": "9"
+    },
+    "directions": [
+      "Pulse oats in a food processor.",
+      "Transfer the pulse oats along with all other ingredients to a blender.",
+      "Blend till everything is well combined and smooth.",
+      "Pour the Berry Oat Smoothie into glasses and enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Berries",
+        "unit": "C",
+        "notes": "frozen, a mix of strawberries, raspberries and blueberries",
+        "amount": "1.25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rolled Oats",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Banana",
+        "unit": null,
+        "notes": "frozen",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maple Syrup",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fc2756d17ba347219e085098850252de72baf16f2d313ea72b6462a689f84273",
+    "lineage_hash": "e80f0a9b1e4d435c98d51cc65504a404f6fec3d7cdc48e36dbd767632d66bdd0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/berry-oat-smoothie/",
+    "fetchedAt": "2026-08-01T16:51:41.615Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/berry-oat-smoothie/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

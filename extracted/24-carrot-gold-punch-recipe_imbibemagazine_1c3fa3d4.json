@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "24 Carrot Gold Punch",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all the liquid ingredients in a punch bowl with one giant ice cube or several large cubes. Serve in glasses with ice. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "0c14836f12af8917ffb3acc252b3d21cd8569f0e4a14d27acb83c1bff445d99e",
+    "lineage_hash": "a62848f162e6343991d26ec3e490a6ae23f540a165c3939b06f201f8d8e3c121"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/24-carrot-gold-punch-recipe/",
+    "fetchedAt": "2026-08-03T23:08:49.631Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/24-carrot-gold-punch-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,35 @@
+{
+  "recipe": {
+    "name": "Broad Street Irish Coffee",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Collins",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake the whisky, coffee, syrup and bitters together in a shaker with 1 cube of ice. Strain into a Collins glass over fresh ice. Top with the whipped cream.",
+      "Bénédictine Whipped CreamPlace 4 oz. of heavy cream, 1 oz. of Bénédictine, and 1/2 oz. of simple syrup in a mixing tin and whip by hand until light and fluffy. Alternatively, place all 3 ingredients in a blender and lightly pulse until the cream becomes fluffy."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "2f9f556aadcb585e865a19abacdf1a4c03a18a36291a7966efb05567ddae242d",
+    "lineage_hash": "222124f8916aca498eeb558da164c71d0376b09902e6a4da03552a48aee016ca"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/broad-street-irish-coffee/",
+    "fetchedAt": "2026-08-04T01:50:01.921Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/broad-street-irish-coffee/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

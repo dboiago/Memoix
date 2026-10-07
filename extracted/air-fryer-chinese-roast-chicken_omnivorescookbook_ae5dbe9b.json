@@ -1,0 +1,98 @@
+{
+  "recipe": {
+    "name": "Air Fryer Chinese Roast Chicken",
+    "time": "3 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "237",
+      "carbohydrateContent": "2.1",
+      "fatContent": "14.4",
+      "proteinContent": "23.4"
+    },
+    "directions": [
+      "Place the chicken onto a big plate. Rub the Shaoxing wine inside of the cavity. Rub the inside evenly with 2 teaspoons of the salt, and sprinkle evenly with the black pepper. Stuff the garlic, scallion and ginger into the cavity. Sprinkle the other 1 teaspoon of salt evenly over the skin. Tuck the wing tips under the back. Tie the chicken legs with kitchen twine. Place the chicken in the fridge, uncovered, and let it marinate for at least 2 hours, or up to overnight.",
+      "When you’re ready to cook, place the chicken on the kitchen counter for 30 minutes in the summer, or 1 hour in winter. (*Footnote 2)",
+      "Place the chicken, breast side down, on the air fryer tray. Air fry at 400°F (200°C) for 20 to 30 minutes, until golden brown. Flip the chicken and air fry for another 15 to 30 minutes, until a thermometer reads 165°F when inserted into the thickest part. Check on the chicken from time to time. If some parts of the chicken char too quickly, cover them with aluminum foil to prevent burning. Once done cooking, transfer the chicken onto a cutting board and let cool for 10 minutes, or until cooled enough to handle. Carve and serve hot as a main dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Chicken",
+        "unit": "small",
+        "notes": "3 to 4 lbs, *Footnote 1",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "head",
+        "notes": "outer skins removed and cut across the cloves",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallion",
+        "unit": null,
+        "notes": "halved crosswise",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thumb Ginger",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a1f4b2f0f00ea28dc87827e9b45e1c8875f3906cc849aa9393ad1fb318411b73",
+    "lineage_hash": "10bffc2f5fadc4bcad12a88b01a88f0c3bdd6f61afc0d45c713c64856ee777ab"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/air-fryer-chinese-roast-chicken/",
+    "fetchedAt": "2026-08-02T07:40:12.525Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/air-fryer-chinese-roast-chicken/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

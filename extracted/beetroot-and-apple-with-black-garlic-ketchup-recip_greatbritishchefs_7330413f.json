@@ -1,0 +1,151 @@
+{
+  "recipe": {
+    "name": "Beetroot and Apple with Black Garlic Ketchup",
+    "time": "35 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Wash the baby beetroots and trim away any stalks. Place in a pan of salted boiling water and cook until soft in the middle (around 15 minutes). Drain the beetroots, place in a bowl, cover with cling film and leave for 10 minutes – this will help steam the skins off. Carefully peel the beetroots and halve them, then set aside",
+      "Place the black garlic cloves in a pan with the water and bring to a simmer. Cook until the garlic is soft (about 10 minutes). Drain, then transfer the cloves to a blender and add the soy sauce, sugar and vinegar. Blend until smooth, adding a little water if needed, then slowly drizzle in the oil with the motor running until you have a nice emulsified ketchup. Transfer to a squeezy bottle or piping bag",
+      "Make the soy dressing by whisking all the ingredients together",
+      "Peel the apples and dice into 1cm cubes. Place the cubes in a bowl of water with the lemon squeezed into it to prevent them browning",
+      "To serve, place the beetroots in bowls, add the diced apple and dress with the soy dressing. Dot the black ketchup on and around the beetroots and finish the dish with torn Thai basil or shiso leaves"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Baby Beetroots",
+        "unit": null,
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granny Smith Apples",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Garlic Cloves",
+        "unit": "g",
+        "notes": "peeled",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "ml",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cabernet Sauvignon Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thai Basil",
+        "unit": "bunch",
+        "notes": "or shiso leaves, torn into small pieces",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "189e3057597c824c4e78c9dfb42a2d0d4a5d4ac8f954eb0682aa5a738830b98f",
+    "lineage_hash": "841925b8517b8ccbd2b5ae14b8642401acf0c136147127496c18dde79ae54ebe"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beetroot-black-garlic-ketchup-recipe",
+    "fetchedAt": "2026-08-03T04:14:44.197Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beetroot-black-garlic-ketchup-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

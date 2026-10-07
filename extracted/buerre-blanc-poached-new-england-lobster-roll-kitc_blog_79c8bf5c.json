@@ -1,0 +1,123 @@
+{
+  "recipe": {
+    "name": "Buerre Blanc Poached New England Lobster Roll",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Reserve 4 claws from the lobster and chop the remaining into ½ pieces.",
+      "In a small heavy bottom pan add the oil and warm on medium heat.",
+      "Add the shallot and sweat for 5 minutes. Add the white wine and simmer for 5 minutes or until dissolved.",
+      "Add the heavy cream and polysorbate 80 and simmer for 5 minutes.",
+      "Meanwhile, cut the butter into small pieces.",
+      "Whisking constantly add small pieces of butter one at a time until melted. Continue until all the butter is emulsified.",
+      "Season with the lemon juice and salt.",
+      "Add the lobster and allow it to poach for 5 minutes. After 5 minutes, using a slotted spoon, remove the lobster meat.",
+      "In a New England Style toasted hot dog bun, spread scallion dressing in the bottom of the bun. Place the chopped lobster meat, and garnish the top with toasted garlic and fresh chopped scallions."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cooked Lobster Meat",
+        "unit": "g",
+        "notes": null,
+        "amount": "672",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "11.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallot",
+        "unit": null,
+        "notes": "Minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "g",
+        "notes": null,
+        "amount": "110",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "115",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Polysorbate 80",
+        "unit": "drops",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "454",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "g",
+        "notes": "approximately ½ lemon",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "4.7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Recipe Scallion Dressing",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1742f277188982086ab756b50e88aacf482fde0ad44fbac7ad8219001cd421bf",
+    "lineage_hash": "d6073527e58d5fc3ab43289aee4c7f761b629b47f9bff9936422f090c1ef16ed"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://blog.modernistpantry.com/recipes/buerre-blanc-poached-new-england-lobster-roll-with-scallion-dressing/",
+    "fetchedAt": "2026-09-25T21:44:06.513Z"
+  },
+  "rawSource": "https://blog.modernistpantry.com/recipes/buerre-blanc-poached-new-england-lobster-roll-with-scallion-dressing/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

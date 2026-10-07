@@ -1,0 +1,65 @@
+{
+  "recipe": {
+    "name": "Avocado Smoothie",
+    "time": "5 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "293",
+      "carbohydrateContent": "37.1",
+      "fatContent": "14.3",
+      "proteinContent": "8.7"
+    },
+    "directions": [
+      "Combine avocado, banana and milk in a blender. Blend until smooth.",
+      "Serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Avocado",
+        "unit": null,
+        "notes": "cubed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Banana",
+        "unit": null,
+        "notes": "frozen, chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": "or plant-milk",
+        "amount": "1⅔",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e02541aaa64f52f8b000a37b19cacad26f830d7d7fba764df8db7a9385a3ced8",
+    "lineage_hash": "47b8aa6c7fa4ba0cecfb26664777c3f564c4c9c5faaf9989294ab9938863da0d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/the-best-three-ingredient-avocado-smoothie/",
+    "fetchedAt": "2026-08-02T04:30:53.198Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/the-best-three-ingredient-avocado-smoothie/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Brandy Crusta",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [
+      "Lemon Twist"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cut a lemon in half. Pare the full peel off half and squeeze the juice from the lemon. Prepare a glass by moistening the rim with lemon and dipping it in sugar, then carefully curling the lemon peel around the inside of the glass. Combine all of the ingredients in a shaker with ice, shake and strain into glass and add 1 small cube of ice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "1ee785dfc172701154dc424444ae58e4ecf302364181a43aef89447e64132c11",
+    "lineage_hash": "17d3f9c18a08363d1bbc2636e9414a33a99876dfd5ae4f820322b3c838e723af"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/recipe-brandy-crusta/",
+    "fetchedAt": "2026-08-03T18:02:05.588Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/recipe-brandy-crusta/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

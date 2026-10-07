@@ -1,0 +1,217 @@
+{
+  "recipe": {
+    "name": "Apple Crisp & Bourbon Cream Trifle",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 350°F.",
+      "Toss the apples fruit with ¼ cup of the brown sugar and the vanilla and spread it into an 8-cup baking dish.",
+      "Stir the oats, the remaining ½ cup of brown sugar, flour and the cinnamon. Pour in the melted butter and stir until evenly combined. Sprinkle this over the fruit and bake for 35 to 40 minutes, until the fruit is bubbling at the edges and the crisp is evenly browned.",
+      "Bring the cream and milk up to a simmer in a sauce pot. In a separate bowl, whisk the egg yolks, brown sugar, cornstarch and vanilla. Slowly pour in the hot cream while whisking and pour the entire mixture back into the pot. Whisk the custard over medium heat until it has thickened and just begins to bubble, about 3 minutes. Pour the cooked custard through a strainer and stir in the butter. Place a piece of plastic wrap directly over the surface of the pastry cream and chill completely. Once chilled, stir in the Bourbon.",
+      "Whip the cream until they hold a soft peak. Fold 1 cup of the whipped cream into the pastry cream. Stir in the sugar, vanilla and 2 tbsp of Bourbon into the remaining whipped cream.",
+      "To assemble, spoon out half of the chilled apple crisp into a 12 cup trifle bowl and sprinkle with Bourbon.",
+      "Top the crisp with half of the pastry cream and sprinkle with half of the pecans. Top this with the remaining apple crisp, sprinkle with Bourbon and top with the remaining pastry cream and pecans. Spread the whipped cream overtop and dust lightly with cinnamon. Chill until ready to serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Apples",
+        "unit": "C",
+        "notes": "peeled and diced",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rolled Oats",
+        "unit": "C",
+        "notes": null,
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "melted",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Half-and-half Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Pastry cream:",
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Pastry cream:",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": "Pastry cream:",
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Pastry cream:",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2½",
+        "section": "Pastry cream:",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Pastry cream:",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Pastry cream:",
+        "isOptional": false
+      },
+      {
+        "name": "Bourbon",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "Pastry cream:",
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": "Whipped cream & assembly:",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Whipped cream & assembly:",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Whipped cream & assembly:",
+        "isOptional": false
+      },
+      {
+        "name": "Bourbon",
+        "unit": "Tbsp",
+        "notes": "plus extra for sprinkling",
+        "amount": "2",
+        "section": "Whipped cream & assembly:",
+        "isOptional": false
+      },
+      {
+        "name": "Recipe Apple Crisp",
+        "unit": null,
+        "notes": "baked and chilled",
+        "amount": "1",
+        "section": "Whipped cream & assembly:",
+        "isOptional": false
+      },
+      {
+        "name": "Pecan Halves",
+        "unit": "C",
+        "notes": "lightly toasted",
+        "amount": "1½",
+        "section": "Whipped cream & assembly:",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "700bc9adf0e0b2744e0742aabbfb356838f82a543ab24ece8a12c8ffaf04316c",
+    "lineage_hash": "214b85c7c4fc1d916da371f14ed93674f8aec52a5ae0a2b1efff554995f658c3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/apple-crisp-bourbon-cream-trifle/",
+    "fetchedAt": "2026-08-01T17:28:27.915Z"
+  },
+  "rawSource": "https://annaolson.ca/project/apple-crisp-bourbon-cream-trifle/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

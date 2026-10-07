@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "California Cooler Cocktail",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake the first four ingredients with ice, then strain into a chilled glass. Top with the sparkling wine, then garnish.\nSauvignon Blanc–Thyme SyrupIn a small pot, bring 1 bottle (750 ml.) of Sauvignon Blanc to a boil, then reduce the heat to low and add 1⁄2 of a bunch of fresh thyme and 2 bay leaves. Allow to steep for 5 minutes, then strain to remove the solids. Add 2 1⁄2 cups of granulated sugar to the liquid and bring back to a simmer, stirring until the sugar has completely dissolved. Let cool, then bottle for use; keeps refrigerated for up to 2 weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "e5287e67ae0fb11fc39e307f59123bbb3c2db95bf4d0f193b938c3e293825452",
+    "lineage_hash": "9bb9afa9bd411628df71c45b7809bc94e21d64012f3fbbbd779d7db2f63085d9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/california-cooler-cocktail/",
+    "fetchedAt": "2026-08-04T01:59:14.146Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/california-cooler-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

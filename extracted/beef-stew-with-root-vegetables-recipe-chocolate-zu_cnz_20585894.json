@@ -1,0 +1,130 @@
+{
+  "recipe": {
+    "name": "Beef Stew with Root Vegetables",
+    "time": "3 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat the olive oil in a large pot or [cocotte](https://cnz.to/archives/2005/08/introducing_la_cocotte.php) over medium-high heat.",
+      "Add in the onions, garlic and a tablespoon of water, and cook for a few minutes until translucent.",
+      "Add in the meat and cook for a few more minutes, browning the pieces on all sides.",
+      "Remove the meat and set aside on a plate.",
+      "Add in the carrots, parsnips and potatoes, season with salt, pepper and cumin, and cook for 5 minutes, stirring regularly.",
+      "Return the meat to the pot, sprinkle with salt and pepper, and pour in the red wine and 480 ml (2 cups) boiling water. Bring to a simmer, cover and lower the heat.",
+      "Keep at a low simmer for 3 hours, stirring from time to time and adding in a little more water if the cooking juices seem to evaporate too much. You want to end up with a silky sauce, not too thick but not too watery either.",
+      "Serve immediately, with a final sprinkle of salt on the meat. Alternatively you can let the stew cool, refrigerate, and reheat it to serve the next day; the flavors will improve overnight."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "medium",
+        "notes": "peeled and sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "peeled and minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Beef Chuck",
+        "unit": null,
+        "notes": "cut in 1 1/2 inch pieces; for those cooking in France, I used a cut called jumeau -- paleron or macreuse would work well too",
+        "amount": "800",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Carrots",
+        "unit": null,
+        "notes": "peeled and sliced",
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Parsnips",
+        "unit": null,
+        "notes": "alt: root parsley, persil tubéreux in French, peeled and sliced;",
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Fingerling",
+        "unit": null,
+        "notes": "alt: new potatoes, it is unnecessary to peel them, scrubbed and sliced",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": "fine sea",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": "freshly ground",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "240",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ed0fc8f6f9d906ca14d51e8901bbfca7d73ff7dae25b13317d01645cb0622b1d",
+    "lineage_hash": "d7e19bb575f63728efc652d4519b5f3c057500c0486d33385e23ba735c1e2698"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/meat-charcuterie/beef-stew-with-root-vegetables-recipe/",
+    "fetchedAt": "2026-09-30T19:06:53.863Z"
+  },
+  "rawSource": "https://cnz.to/recipes/meat-charcuterie/beef-stew-with-root-vegetables-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

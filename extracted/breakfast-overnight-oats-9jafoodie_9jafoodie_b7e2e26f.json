@@ -1,0 +1,74 @@
+{
+  "recipe": {
+    "name": "Breakfast Overnight Oats",
+    "time": "1 hr 30 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "NG",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "280",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Put all ingredients with 10 cups of water in a large bowl.",
+      "Stir until all ingredients are thoroughly mixed.",
+      "Store in jars for use throughout the week."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "– Oats",
+        "unit": "C",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "– Chia Seeds",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mangoes & Bananas",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "– Plain Yogurt",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2c592ba6ad3de88e28b428d8324a8becc6cc3b2a65f3845f91b79c6c726da757",
+    "lineage_hash": "13728f7488778bc11083af90528a74f2bbf474eb1c8a1a1d7e9a905c5feeb7fa"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://9jafoodie.com/breakfast-overnight-oats/",
+    "fetchedAt": "2026-09-25T22:26:05.123Z"
+  },
+  "rawSource": "https://9jafoodie.com/breakfast-overnight-oats/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

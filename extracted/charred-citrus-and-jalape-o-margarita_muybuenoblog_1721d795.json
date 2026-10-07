@@ -1,0 +1,117 @@
+{
+  "recipe": {
+    "name": "Charred Citrus and Jalapeño Margarita",
+    "time": "8 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Tequila",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "289",
+      "carbohydrateContent": "28",
+      "fatContent": "1",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "On a baking sheet lined with aluminum foil, arrange slices of limes and clementines and sprinkle them with sugar and broil them just until sugar crystalizes and the slices are charred.",
+      "On a grill pan, char the lime halves until lightly charred.",
+      "In a shallow dish, combine salt and sugar. Moisten two cocktail glasses with a lime and rim the glasses with the salt-sugar mixture. Fill glasses with ice and set aside.",
+      "Muddle charred lime and jalapeño in a cocktail shaker.",
+      "Add tequila, orange liqueur, lime juice, and clementine juice and fill with ice. Shake cocktail shaker until frosted.",
+      "Strain drink into prepared glasses and garnish with broiled lime and clementine slices, if using."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Slices of Limes and Clementines",
+        "unit": null,
+        "notes": "optional garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "halved",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Salt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jalapeno",
+        "unit": null,
+        "notes": "seeded",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Reposado Tequila",
+        "unit": "oz",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Liqueur",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Clementine",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7e299a459184f5791eb86dcc632c35704162526e683ff3f50519875254db9cd4",
+    "lineage_hash": "2aee4ba0b51ad871ad0713474a4eebda7b2a7653b6febe651adcdb06097e0ba8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/charred-citrus-and-jalapeno-margarita/",
+    "fetchedAt": "2026-08-01T19:21:36.737Z"
+  },
+  "rawSource": "https://muybuenoblog.com/charred-citrus-and-jalapeno-margarita/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

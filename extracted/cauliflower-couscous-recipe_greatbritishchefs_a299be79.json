@@ -1,0 +1,158 @@
+{
+  "recipe": {
+    "name": "Cauliflower Couscous",
+    "time": "30 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Make a cup of tea with the jasmine teabag and add the sultanas. Leave to soak for a couple of hours ideally, or at least while you prepare the other ingredients",
+      "Blend the cauliflower in a food processor until the texture resembles couscous. Transfer to a mixing bowl and season lightly with salt",
+      "Toast the nuts and seeds in a hot dry pan – or in an oven preheated to 180ºC – until golden, season lightly with salt, then add to the cauliflower along with the herbs, olive oil, lemon zest and juice, pomegranate, grapes, garlic and drained sultanas",
+      "Keep at room temperature until serving, as it's far more enjoyable to eat than when it’s straight out of the refrigerator. Serve the couscous in a bowl with labneh on the side, topped with a generous scattering of dukkah"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Jasmine Teabag",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sultanas",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cauliflower",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Nuts and Seeds",
+        "unit": "Tbsp",
+        "notes": "such as pine nuts, pistachios and poppy seeds",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dill",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "Tbsp",
+        "notes": "chopped, or chopped lovage",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": "Tbsp",
+        "notes": "fresh, chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zested and juiced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pomegranate",
+        "unit": null,
+        "notes": "deseeded",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Grapes",
+        "unit": "g",
+        "notes": "halved",
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "minced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Labneh",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dukkah",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8b9c1c46ae0a7fa498b58d716a2c1c20fcbfbf3fca7a76c8d148479c9ec02160",
+    "lineage_hash": "d7d6037a43cb9260ea9075f1045d35b6b7cde438f05be5580140abe59e16973c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cauliflower-couscous-side-recipe",
+    "fetchedAt": "2026-08-02T21:22:51.603Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cauliflower-couscous-side-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

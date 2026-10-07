@@ -1,0 +1,37 @@
+{
+  "recipe": {
+    "name": "Albino Old Fashioned",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Old Fashioned",
+    "garnish": [
+      "Brandied Cherries",
+      "White Grapefruit Wedge"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Muddle 2 brandied cherries with a wedge of white grapefruit in a heavy-bottomed Old Fashioned glass. Remove the grapefruit wedge for easier drinking. In the glass, add whiskey, simple syrup, Angostura bitters and a large chunk of ice and stir to chill. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "2e5fd0ac182a4bc0dc6219d45f82982d54230b72cf958fe22227a36fe9a1259b",
+    "lineage_hash": "dd802f1103b2ded04f2d12daa2aa704959f218758199031596f5d53538980a95"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/albino-old-fashioned-recipe/",
+    "fetchedAt": "2026-08-03T20:15:20.339Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/albino-old-fashioned-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

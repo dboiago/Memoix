@@ -1,0 +1,82 @@
+{
+  "recipe": {
+    "name": "Broccoli Stir Fry with Garlic",
+    "time": "10 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "100",
+      "carbohydrateContent": "13",
+      "fatContent": "4",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "Add 3 cups of water I pot or wok with 1 teaspoon of salt and several drops of oil. Bring the water to a boiling and then add broccoli and carrot slices to cook for around 2 minutes. Transfer out and drain.",
+      "Heat up other cooking oil in wok; add chopped garlic in to stir fry until aroma.",
+      "Add broccoli and carrot slices; add salt,mix well and serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Middle Size Broccoli Crown Only",
+        "unit": null,
+        "notes": "cut into small pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Section of Carrots",
+        "unit": "small",
+        "notes": "cut into thin slices",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves Finely Chopped",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b5c74a8d341332cebffabd9525bab25264585d79c51ca9849c6aaa3487c2efc0",
+    "lineage_hash": "f25d5a15afa6f20285e3703c7bcb82b200721b11a9b03f5ff94d4c613f088ddc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/broccoli-stir-fry-with-garlic/",
+    "fetchedAt": "2026-08-01T18:32:00.541Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/broccoli-stir-fry-with-garlic/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,153 @@
+{
+  "recipe": {
+    "name": "British Mackerel Salad",
+    "time": "1 hr 5 min",
+    "course": "salad",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Gut the mackerel, fillet and remove the pin bones, score the skin and cut into 2 pieces, so in total you now have 4 pieces of mackerel. Season the fish and set aside, mix the s/r flour and soda water to create a batter. Pass the fish through some plain flour and then into the batter, place the fish into a fryer 180 degrees and cook until golden, remove from the fryer and place on blue paper to remove excess oil.",
+      "Wash and trim the beetroot, place the beetroot, 1 tbsp of olive oil and rock salt in tin foil and wrap into a parcel, place in an oven at 180 degrees and roast for 15 - 20 mins until tender. Remove from the oven and allow to cool enough for you to handle, peel the beetroot, slice in half and then toss in a hot pan with some olive oil to get a glossy colour on it.",
+      "Place in a pan of boiling water for 6 mins, remove and plunge into ice cool water and then refresh the egg under cold running water. Peel the egg and set aside.",
+      "Wash and pick leafs, removing all stalks.",
+      "Slice wafer thin on a mandolin.",
+      "Grate the horseradish, mix in with the yogurt and cream to infuse. Pass off the yogurt so you have a smooth liquid. Season with salt. Place in cream whipper and charge with 1 gas canister.",
+      "To serve place some yogurt in the bottom of 200ml kilner jar, add beetroot, slice the egg in 2 and place 1 half in the jar, add some radish and then some olive oil dressed watercress and endive. Close the lid and place on the side of a slate, drag some yogurt across the slate and place pieces of radish and egg along the yogurt. Finish with 2 pieces of mackerel overlapping and a few watercress leaves."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mackerel",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt & Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soda Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": "S/R",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Beetroot",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rock Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Free Range Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Watercress & Endive",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Radish",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Horseradish Root",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Natural Yogurt",
+        "unit": "ml",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "54676fd81d4b78e22e5640ee02d2d6b922a7c350e47ede2ff74adbfc2b4f4eac",
+    "lineage_hash": "028493f50c167576464aaf4323d1be2f10c7d2e3ba47e95547fe710b43e975ac"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.thestaffcanteen.com/chefs-recipes/british-mackerel-salad",
+    "fetchedAt": "2026-08-02T16:30:34.723Z"
+  },
+  "rawSource": "https://www.thestaffcanteen.com/chefs-recipes/british-mackerel-salad",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

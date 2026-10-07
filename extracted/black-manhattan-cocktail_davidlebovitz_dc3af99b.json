@@ -1,0 +1,70 @@
+{
+  "recipe": {
+    "name": "Black Manhattan Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": "Cocktail",
+    "garnish": [
+      "Maraschino Cherry"
+    ],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Put the bourbon, amaro, and bitters in a cocktail mixing glass or small pitcher. Add ice and stir briskly until well-chilled, at least 20 seconds.",
+      "Strain into a chilled cocktail glass and add a maraschino cherry."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bourbon",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amaro",
+        "unit": "oz",
+        "notes": "see headnote",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maraschino Cherry",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "926f2f8016f385b22d4229ae1674c65059ab31ad705efe3caf08cccf77195484",
+    "lineage_hash": "9ab7df8ab04b1d204ed010c2d08a61f3fad10ef173de34866ea1476a84b7dfbc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/black-manhattan-cocktail-recipe/",
+    "fetchedAt": "2026-08-03T02:46:38.072Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/black-manhattan-cocktail-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

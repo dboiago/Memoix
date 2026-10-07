@@ -1,0 +1,128 @@
+{
+  "recipe": {
+    "name": "Beetroot, Walnut and Thyme Salad",
+    "time": "40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 180°C/gas mark 4. Line a large baking tray with some parchment paper",
+      "In a mixing bowl, toss the beetroot and shallot with the thyme, olive oil and seasoning; mix well to coat evenly. Spread onto the baking tray and roast for 35 minutes",
+      "Simultaneously, toast the walnuts for 6 minutes on a separate baking tray",
+      "For the dressing, weigh the dressing ingredients together in a small mixing bowl. Crush the raspberries with fork and mix well",
+      "Allow the beetroot and shallot to cool before dressing and serving; this salad can be served warm or at room temperature. Spoon the roasted vegetables onto your serving dish, spoon over the dressing, and crumble over the walnuts",
+      "Assemble the salad in two layers to ensure an even distribution of ingredients and flavours"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beetroot",
+        "unit": "g",
+        "notes": "approx. 6–8 medium beetroot, peeled and diced",
+        "amount": "700",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": "g",
+        "notes": "approx. 3 banana shallots or 6 round shallots, peeled and sliced",
+        "amount": "160",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Walnut Halves",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme Leaves",
+        "unit": "g",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raspberries",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sherry Vinegar",
+        "unit": "g",
+        "notes": "or a combination of sherry and balsamic",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "13dd935e6b1d2caf097c1e2881a2830a7f4ad61405f9a6fe0b205d14a8539f3b",
+    "lineage_hash": "5c73b3400b8f983e1ec6a59e48416711219768f095838e0f955ba1c784a3c123"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beetroot-thyme-walnut-salad-recipe",
+    "fetchedAt": "2026-08-03T09:22:20.507Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beetroot-thyme-walnut-salad-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

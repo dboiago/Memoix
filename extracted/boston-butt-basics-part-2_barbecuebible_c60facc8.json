@@ -1,0 +1,39 @@
+{
+  "recipe": {
+    "name": "Boston Butt Basics, Part 2",
+    "time": "1 hr per pound",
+    "course": "smoking",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Keep the shoulder refrigerated until you’re ready to cook it. Some pitmasters advocate letting the meat come to room temperature first, but I disagree. Lukewarm raw meat is an invitation to disaster.",
+      "If the pork shoulder comes with skin, I like to cut it off, season the meat, and then retie the skin to the pork shoulder with butcher’s twine. Loosening the skin in this manner helps it crisp better than leaving it attached to the meat. Still not crisp enough for you? Try direct grilling the meat side of the skin the last few minutes of cooking.",
+      "For extra flavor and moistness, you can brine the pork shoulder for a day or two before smoking or grilling. For a fruit flavor and to encourage browning, replace part of the water in a standard brine recipe (2 cups kosher salt dissolved in 1 gallon of water) with apple juice, and add a little molasses, maple syrup, or brown sugar. Pat the shoulder dry before roasting or grilling.",
+      "Another way to add flavor and moistness is to inject the shoulder with apple juice, melted butter, and/or your favorite injection sauce. Use a kitchen injector to inject thin injector sauces. Use our wide-mouth injector and spike to inject thick flavoring mixtures, like a Jamaican jerk spice paste.",
+      "Generously rub the outside of the pork butt or picnic with your favorite rub, working it into the interstices between muscles. Note: If you have previously brined the pork, use a low-sodium or salt-free rub to avoid oversalting the meat. At this point, you can wrap the meat with plastic wrap and refrigerate overnight before grilling, which will partially cure the meat. Or grill or smoke it right away, in which case the rub will act like a seasoned salt.",
+      "If the bone has been removed, tie the pork shoulder at intervals with butcher’s twine to help it maintain a compact cylindrical shape and to prevent exposed surfaces from drying out."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "d6b3ca74b59d78425c70eed5137f8327698843217244738fdae61b3f90228e82",
+    "lineage_hash": "4bc08827c21c2b8b30eb0f0442ca92466b8ace1ad647093b35bae8d06761bf23"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/2013/11/27/boston-butt-basics-part-2/",
+    "fetchedAt": "2026-08-02T11:29:35.797Z"
+  },
+  "rawSource": "https://barbecuebible.com/2013/11/27/boston-butt-basics-part-2/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

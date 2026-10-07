@@ -1,0 +1,352 @@
+{
+  "recipe": {
+    "name": "Black Forest Yule Log",
+    "time": "3 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Before starting this Black Forest Yule Log recipe, organise the necessary ingredients for the chocolate biscuit.",
+      "For the chocolate biscuit:  Place the whole eggs and egg yolks in the stand mixer recipient. Add the castor sugar.",
+      "Place the recipient over a bain-marie and whisk the preparation until the temperature reaches 40/45°C.",
+      "Place the recipient in the mixer and beat until cooled down completely.",
+      "The preparation should double in volume and become pale. When the preparation is at room temperature, stop the mixer and set aside.",
+      "In a separate bowl, beat the egg whites with 40 grams of sugar. Beat until you get a smooth meringue.",
+      "Add the meringue to the fluffy preparation. Combine gently.\nAdd the flour and cocoa powder, sifted together beforehand. Combine gently with a rubber spatula.",
+      "Pour the preparation into a Flexipan Entremets baking mat 33.5 x 33.5cm and spread the surface...",
+      "... to create an even layer.",
+      "Bake in a fan-assisted oven, preheated at 180°C (gas 4)...",
+      "... for 12 to 15 minutes. When cooked, remove from the oven and leave to cool. Don't release the biscuit from the mould before the preparation cools down.",
+      "For the vanilla Chantilly cream:  Organise all the necessary ingredients.",
+      "Soak the gelatine sheets in a big bowl filled with cold water.",
+      "Scrape the seeds out of the vanilla pod and place them in the stand mixer recipient, along with 300 grams of whipping cream.",
+      "Add the castor sugar.",
+      "Whisk until you obtain a firm Chantilly cream.",
+      "Heat the whipping cream.",
+      "Squeeze the gelatine sheets to strain...",
+      "... and add to the hot cream.",
+      "Mix until the gelatine is completely dissolved.",
+      "Add the cream to the whipped cream.",
+      "Combine well with a whisk.",
+      "Place the Chantilly in a piping bag. The use of a nozzle is not necessary.",
+      "Place the wood relief mat inside the Silikomart silicone yule mould, with the printed side facing up.\nFill the bottom of the mould with Chantilly cream.",
+      "Cover the whole surface of the mat with Chantilly cream.",
+      "Spread the cream over the printed mat with a small cranked spatula to get rid of air bubbles.",
+      "Use a spoon to shape the Chantilly cream into a round cavity.",
+      "Cover with cling film and store in the freezer.",
+      "For the chocolate mousse:  Heat the milk and pour it over the chocolate pistoles.",
+      "Combine well with a whisk. If the chocolate is not totally melted, melt for a few seconds in the microwave.",
+      "Beat the whipping cream until you obtain a whipped cream. The whipping cream should contain 35% fat.",
+      "Add 1/3 of the whipped cream to the melted chocolate.",
+      "Combine vigorously with a whisk.",
+      "Add the rest of the whipped cream...",
+      "... and fold gently with a rubber spatula. Transfer the preparation into a piping bag.",
+      "Assembling the log:  Carefully release the chocolate biscuit from the silicone mat onto a sheet of greaseproof paper. Make sure the biscuit has cooled down before this operation. Cut a strip to a length of 25 cm and a width of 4 cm.",
+      "Remove the log from the freezer and fill the cavity with chocolate mousse to a thickness of 2 cm.",
+      "Place the biscuit strip over the mousse and bury it gently.",
+      "Combine the sugar syrup, water and kirsch, then steep the biscuit with a pastry brush.",
+      "Cover with another layer of chocolate mousse and a bury a few brandied cherries (pitted).",
+      "Cut a second strip to a length of 25 cm and a width of 7 cm. Arrange it over the chocolate mousse. Brush the surface of the biscuit with syrup.",
+      "Pipe a thin layer of chocolate mousse...",
+      "... over the biscuit.",
+      "Even the surface with a spatula. Combine the praline paste, melted milk chocolate, crispy flakes and oil.\nSpread this crunchy praline preparation over the chocolate mousse...",
+      "... using two tablespoons for an easier operation.",
+      "Cut a last strip of biscuit to a width of 8 cm...",
+      "... and a length of 25 cm.",
+      "Place the biscuit strip over the crunchy praline preparation, with the cooked side facing up.",
+      "Press on the biscuit to make it stick.",
+      "Brush the surface of the biscuit with syrup.",
+      "Cover the mould with cling film and reserve in the freezer, at least overnight. Up to this stage, this recipe can be prepared in advance and stored in the freezer. Take the log out of the freezer on Christmas Eve and let it defrost in the fridge.",
+      "For the finish:  Take the log out of the freezer. Remove the cling film.",
+      "Release the log from the mould onto a yule log cake board.",
+      "Gently remove the silicone relief mat. \nIMPORTANT: Make sure the log is frozen when you detach the silicone mat. I recommend doing this operation straight after you take the log out of the freezer. Let defrost in the fridge between 4 and 6 hours.",
+      "You can decorate the log with any elements of your choice. If you want to reproduce the decorations shown in the photo, you will need to make small chocolate Christmas trees. You make these decorations ahead and store them in a cool place (not in the fridge though).",
+      "Make two decorated yule log tips then coat them with velvet pearl spray.",
+      "When the log has defrosted completely, take it out of the fridge and arrange a couple of Christmas trees on the surface (sprinkle with Codineige decorating sugar beforehand).",
+      "Arrange two small brandied cherries (with the stem still on) on the surface of the log.",
+      "Using small tongs, bury a few silver pearls in the Chantilly cream.",
+      "Apply gold colouring powder with a brush over the dark chocolate spirals.",
+      "Place the decorate yule log tips at both ends of the log...",
+      "... and finish with the 3D chocolate bowl with holly leaf pattern. Reserve in the fridge until ready to serve. Enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Eggs",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "160",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Castor Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar Syrup 30° Baumé",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "8cl Kirsch",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipped Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Castor Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Sheets",
+        "unit": null,
+        "notes": "3g",
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Inaya™dark Chocolate Couverture",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "55",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipped Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Small Brandied Cherries",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almond and Hazelnut Praline Paste",
+        "unit": "g",
+        "notes": null,
+        "amount": "55",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Alunga Milk Chocolate Couverture",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pailleté Feuilletine Flakes",
+        "unit": "g",
+        "notes": null,
+        "amount": "65",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flavourless Oil",
+        "unit": "g",
+        "notes": "grape seed oil",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Decorated Yule Log Tips",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Christmas Trees",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate Spirals",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Brandied Cherries",
+        "unit": null,
+        "notes": "with stem",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "A Few Silver Pearls",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gold Flakes",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate Pearl Velvet Spray",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Codineige Decorating Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "3d Decorated Chocolate Balls with a Holly Leaf Pattern",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fe591b4cecc7aa80bbc5812e6d1152871f652955b88322444febb0fa75596000",
+    "lineage_hash": "8ed66e71bb2e92635870bcd7615846a66b2dd29c0d62946d8d99d1c9ce6f11a9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.meilleurduchef.com/en/recipe/christmas-yule-log-black-forest.html",
+    "fetchedAt": "2026-08-02T02:37:00.240Z"
+  },
+  "rawSource": "https://www.meilleurduchef.com/en/recipe/christmas-yule-log-black-forest.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

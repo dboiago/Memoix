@@ -1,0 +1,125 @@
+{
+  "recipe": {
+    "name": "Brazilian Moscow Mule",
+    "time": "1 hr 30 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "BR",
+    "glass": "Mug",
+    "garnish": [],
+    "subcategory": "Vodka",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Fill a chilled copper mug with ice cubes.",
+      "Add vodka, lime juice, simple syrup and bitters, then stir to combine.",
+      "Top up with ginger foam."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": null,
+        "amount": "⅘",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Simple Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "⅘",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Foam",
+        "unit": null,
+        "notes": "see Editor’s Note",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rich Simple Syrup",
+        "unit": "oz",
+        "notes": "2:1, sugar to water, (200 milliliters)",
+        "amount": "6.7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "250 milliliters",
+        "amount": "8.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Juice",
+        "unit": "oz",
+        "notes": "100 milliliters",
+        "amount": "3.4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": "oz",
+        "notes": "125 milliliters",
+        "amount": "4.2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Citrus Soda",
+        "unit": "oz",
+        "notes": "(225 milliliters), such as Schweppes Citrus",
+        "amount": "7.6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Xanthan Gum",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "99eb163d3a50d1e8eba6bc71cce0e1e69897771b187c131f368f5e4c7fe3a7be",
+    "lineage_hash": "5e3208c6fe49ba47b23af083eebeb003f2c8c58c3aeefb31d2adc0487cf02e28"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://punchdrink.com/recipes/brazilian-moscow-mule/",
+    "fetchedAt": "2026-08-03T04:53:52.563Z"
+  },
+  "rawSource": "https://punchdrink.com/recipes/brazilian-moscow-mule/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

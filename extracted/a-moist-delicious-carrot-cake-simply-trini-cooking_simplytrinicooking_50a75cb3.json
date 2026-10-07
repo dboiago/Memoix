@@ -1,0 +1,133 @@
+{
+  "recipe": {
+    "name": "Carrot Cake",
+    "time": "1 hr 5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Sift together the flour, baking powder and baking soda. Add the cinnamon, nutmeg and sugar. Add the oil and beat well.",
+      "Beat well until the batter is light. Add one egg at a time, beat well until the batter is light and fluffy.",
+      "Blend in the grated carrots. Then the nuts. Bake at 375 F in one or 2 tins for 30 to 35 minutes or until done."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All Purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pineapple",
+        "unit": "oz",
+        "notes": "crushed",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": "C",
+        "notes": "grated",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Choppped Nuts Walnuts",
+        "unit": "C",
+        "notes": "peanuts, and/ or almonds",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Rind",
+        "unit": "tsp",
+        "notes": "grated",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a9c64d0b441f0ea72f54bedc59ca6366b58c36ecc3c21d6e5d7e58e2d08059a3",
+    "lineage_hash": "37607da316bdb38d31c3ee8c7c02b8dbdebd8005a36774a04d3d2fb28ea44230"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.simplytrinicooking.com/carrot-cake/",
+    "fetchedAt": "2026-09-26T00:23:56.714Z"
+  },
+  "rawSource": "https://www.simplytrinicooking.com/carrot-cake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

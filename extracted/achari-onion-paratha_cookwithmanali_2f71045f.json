@@ -1,0 +1,138 @@
+{
+  "recipe": {
+    "name": "Achari Onion Paratha",
+    "time": "40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "5",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "176",
+      "carbohydrateContent": "29",
+      "fatContent": "5",
+      "proteinContent": "5"
+    },
+    "directions": [
+      "To a large bowl add atta, salt, ajwain, roasted and crushed coriander seeds, chopped green chili and finely chopped red onion.",
+      "Add 1.5 tablespoons vegetable oil, chopped cilantro, achar masala and mix till everything is well combined.",
+      "Start adding water, little by little till the dough starts coming together.",
+      "Knead to a smooth and soft dough. Place the dough in a container, apply some oil on top, cover and let the dough rest for 15-20 minutes.",
+      "Once the dough has rested, pinch a lemon size ball from it.",
+      "Using you rolling pin, roll the dough into a circle of around 8 inches.",
+      "Meanwhile heat a tawa/skillet on medium-high heat.",
+      "Once the tawa is hot enough, place the rolled paratha on top of it. Let it cook from one side for few seconds.",
+      "Flip over and now apply oil generously on the cooked side.",
+      "Flip again and apply oil on the other side of the paratha as well. Press paratha with a spatula or till it's has brown spots and is well cooked from both sides.",
+      "Enjoy the achari onion paratha with butter, yogurt and chai!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Atta",
+        "unit": "C",
+        "notes": "also known as durum wheat flour",
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ajwain",
+        "unit": "tsp",
+        "notes": "also known as carom seeds",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "tsp",
+        "notes": "roasted and crushed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chili",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "medium",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": "as required to knead the dough",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pickle Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "More Oil",
+        "unit": null,
+        "notes": "to roast the paratha",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3af47425dfa51b25717c1dc59d768f163d31b8d569833c55eb2c41936ae79538",
+    "lineage_hash": "62d85326c91f6f7a8c0f85ba6e7c5ec59e9a83317e5ec220c705288a044783ed"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/achari-onion-paratha/",
+    "fetchedAt": "2026-08-01T16:22:22.498Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/achari-onion-paratha/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

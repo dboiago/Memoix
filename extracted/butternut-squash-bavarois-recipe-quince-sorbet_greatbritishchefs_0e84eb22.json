@@ -1,0 +1,169 @@
+{
+  "recipe": {
+    "name": "Butternut Squash Bavarois",
+    "time": "2 hr 10 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the bavarois, preheat the oven to 180°C/Gas mark 4. Put the squash into a greased roasting tin, cover with foil and bake until soft (about 40-50 minutes)",
+      "Boil the double cream and milk, add the roasted squash and blend until smooth. Pour the mix onto the eggs and sugar and return to the pan. Heat slowly until the temperature reaches 84˚C",
+      "Soak the gelatine in cold water till soft, then drain it and add to the custard-like mix in the pan. Mix well, then pour into moulds and set in the fridge",
+      "For the quince purée, peel the quince and cut around the core. Dice and place in a pan with the white wine, water and sugar. Boil then simmer until soft and slightly pink in colour. Strain off the quince but keep the liquor. Blend until smooth, using a little of the poaching liquor to loosen",
+      "For the quince sorbet, take half of the purée and mix with an equal quantity of sugar stock (50% water, 50% Sugar) and churn in an ice cream machine",
+      "To make the poached blackberries, bring 185ml of water and 75g of caster sugar to the boil, and add the berries. Cling film the pan and leave to go cold",
+      "To serve the dish, blitz half the pistachio nuts into a powder. Spoon a little quince purée across each plate, de-mould the bavarois placing carefully in the centre and add a small pile of the blitzed pistachio nuts alongside. Add a quenelle of sorbet on top of the blitzed pistachios and finish with the poached blackberries. Garnish with the remaining whole pistachios and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butternut Squash",
+        "unit": "g",
+        "notes": "quartered and deseeded",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "185",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "185",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bronze Gelatine Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Quince",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "185",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "185",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blackberries",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "185",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pistachio Nuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a8428e4cf3800f3a5245979fbb4e00ee4be0fb7777a4d35e61c2a51f74966fb0",
+    "lineage_hash": "7169a4a49669e294bb377e2d6d065bad8a1b076006f84b1e1890f52a8f747d53"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/bavarois-recipe-butternut-squash-quince-sorbet",
+    "fetchedAt": "2026-08-03T16:15:24.316Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/bavarois-recipe-butternut-squash-quince-sorbet",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

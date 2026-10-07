@@ -1,0 +1,203 @@
+{
+  "recipe": {
+    "name": "British Game Pie with Gremolata",
+    "time": "1 hr 45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat a few glugs of vegetable oil in a large pan or casserole dish and fry the meat in batches until golden brown (it is important not to crowd the pan). Set aside, then repeat until all the meat is browned, adding more oil as necessary",
+      "Add a little more oil to the pan and cook the onions, celery and carrot with the bacon for 5 minutes. Add the flour and cook out for another 4–5 minutes, stirring all the time",
+      "Add the stock, wine, marmalade, bay leaves, thyme and season well with salt and pepper. Return the game meat to the pan and bring to the boil, then allow to simmer for 1 hour, or until the game is tender. Mix in the mushrooms and set aside",
+      "Meanwhile, preheat the oven to 190°C/gas mark 5",
+      "Grease a 20cm/8inch pie dish well with butter.  Divide pastry into two-thirds (for the base) and one-third (for the lid). Roll out the larger piece of pastry so that it is large enough to line the dish",
+      "Press the pastry into the dish and cover with baking parchment. Fill with baking beans or dried rice, then bake for 20 minutes or until golden. Remove from the oven and allow to cool a little before removing the baking parchment and beans. Fill with the pie filling, being careful not to overfill the dish",
+      "Roll out the remaining third of the pastry to make a lid. Brush the edge of the pastry with the beaten egg and lay on top of the filling, pressing the edges together to seal",
+      "Brush the lid all over with the beaten egg, you could add decorative pastry shapes from the scraps, if liked. Bake in the oven for 35 minutes or until golden brown",
+      "Just before serving, mix all of the ingredients together for the gremolata, then sprinkle over the pie to serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Shortcrust Pastry Block",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Game",
+        "unit": "kg",
+        "notes": "most good butchers will sell packs of ready-diced mixed game, chopped",
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Streaky Bacon",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stick of Celery",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "large",
+        "notes": "peeled and chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Marmalade",
+        "unit": "Tbsp",
+        "notes": "smooth",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mushrooms",
+        "unit": "g",
+        "notes": "such as chestnut, chanterelle, button, mixed",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": null,
+        "notes": "for greasing",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "peeled and crushed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": "grated zest",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "bunch",
+        "notes": "leaves picked and finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "35c1279540eb1114e82159ea3e08860f59b5e8cbaff5f0c43dcf34cf2740de51",
+    "lineage_hash": "abcc1056b6b784cd515962a214c1a7213726f9050d4f3213969c7e9932649fb8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/british-game-pie-recipe",
+    "fetchedAt": "2026-08-03T14:11:43.640Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/british-game-pie-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

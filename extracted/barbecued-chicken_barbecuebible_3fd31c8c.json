@@ -1,0 +1,63 @@
+{
+  "recipe": {
+    "name": "Barbecued Chicken",
+    "time": "1 hr 15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Set up the grill for indirect grilling and preheat to medium (350 degrees).",
+      "Under cold running water, rinse the chicken inside and out and blot dry with paper towels. Season the neck and main cavities of the chicken with about 1 tablespoon barbecue rub. Truss the bird and brush the outside with melted butter or oil. Season the outside of the bird on all sides with the barbecue rub.",
+      "Brush and oil the grill grate. Place the chicken, breast side up, in the center of the grill grate over the drip pan. Toss the wood chips on the coals. Close the grill lid.",
+      "Indirect grill the chicken until the skin is browned and crisp and the meat is cooked through, 1 to 1-1/4 hours. Use an instant-read meat thermometer to check for doneness—the internal temperature in the thigh should be 165 degrees. If the skin browns too much before the meat is cooked through, _loosely_ tent the breast with foil.",
+      "Transfer the chicken to a cutting board and let it rest for 5 minutes, then carve and serve with your favorite barbecue sauce."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Chicken (preferably Organic -- 3.5 to 4 Pounds)",
+        "unit": null,
+        "notes": "giblets removed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "alt: vegetable oil, melted",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Your Favorite Barbecue Sauce for Serving",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3-4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3066c7e67a1dddd4dfd308d25a94f154de664da3a377332cced7ef894dfab790",
+    "lineage_hash": "4c79441d3861f842f490519214222098d50f38121072f7eb906712a9134a1ca0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/barbecued-chicken/",
+    "fetchedAt": "2026-08-03T05:25:36.078Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/barbecued-chicken/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

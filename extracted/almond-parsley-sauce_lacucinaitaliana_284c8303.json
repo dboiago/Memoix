@@ -1,0 +1,99 @@
+{
+  "recipe": {
+    "name": "Almond Parsley Sauce",
+    "time": null,
+    "course": "apps",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Blend the parsley with the other ingredients until you obtain a nice, bright green sauce."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Extravirgin Olive Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almonds",
+        "unit": "oz",
+        "notes": "blanched",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "oz",
+        "notes": "leaves only",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Small Pickles",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tsp. Mustard",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hardboiled Egg White",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3ca3d5a28b8846b4d59ce790f3be25dea50ad3bd4a7ab6bb68ccf5ee9001cb6a",
+    "lineage_hash": "83c1457ef5d2ea75047582392c6dceb2f4869030e9ae33c6948f40cf5ab20039"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/appetizers/almond-parsley-sauce",
+    "fetchedAt": "2026-08-03T08:25:46.611Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/appetizers/almond-parsley-sauce",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

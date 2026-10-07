@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Bellissimo Aperitivo",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [
+      "Lemon Peel"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all of the ingredients in a mixing glass and fill with ice. Stir to chill, strain into a chilled glass, twist a lemon peel over the drink and use as garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "42de313823ac6d5ed544a46593e2f99e6842bd265c6c515c55e60f0b0110b600",
+    "lineage_hash": "85e6d036656e3b30e734e9cefb13b8dfabeb7fb15ee4c601667539ad3dc4ea9d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bellissimo-aperitivo/",
+    "fetchedAt": "2026-08-03T20:38:59.073Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bellissimo-aperitivo/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

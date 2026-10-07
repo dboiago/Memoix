@@ -1,0 +1,105 @@
+{
+  "recipe": {
+    "name": "Fondant au Chocolat de Tante Amélie",
+    "time": "1 hr 5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Grease the sides of a 22- or 25-cm (9- or 10-inch) round cake pan with a pat of the butter and line the bottom with a circle of parchment paper.",
+      "Set a rimmed baking sheet (lèche-frite in French) in the middle of the oven, or a roasting pan large enough to accommodate the cake pan. Preheat the oven to 180°C (350°F).",
+      "Combine the sugar with 165 mL (2/3 cup) fresh water in a medium saucepan and bring to a simmer over medium heat, stirring to dissolve the sugar.",
+      "Add the chocolate and stir until melted.",
+      "Add the butter, and keep stirring until that’s melted too.",
+      "Remove from heat and let cool for five minutes.",
+      "In the meantime, bring water to a boil in the kettle.",
+      "Add the eggs into the chocolate mixture and whisk until incorporated.",
+      "Add the flour and whisk it in.",
+      "Pour the batter into the greased cake pan, set the pan on the rimmed baking sheet in the oven, and pour hot water into the rimmed baking sheet until it reaches a depth of about 1 cm or 1/3 inch.",
+      "Bake for 30 to 35 minutes, until the top is set at the center.",
+      "Transfer to a rack for a few minutes, turn out onto a serving plate, and let cool completely.",
+      "Combine the jam and a tablespoon water in a small saucepan and set over gentle heat, stirring with a spoon until melted.",
+      "Add the toasted almonds, stir gently to combine, and spread with a spoon over the top of the cake.",
+      "Let set in a cool spot for an hour."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Grams Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "165",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Dark Chocolate",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "165",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Butter",
+        "unit": null,
+        "notes": "diced",
+        "amount": "165",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "lightly beaten",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Flour",
+        "unit": null,
+        "notes": "sifted",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heaping Tablespoons Apricot Jam",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Sliced Almonds",
+        "unit": null,
+        "notes": "toasted",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ce0074c45985f7ec91614251ff7416a68f000210b220a160d2f254540b8d1304",
+    "lineage_hash": "0e44bf94cceed69ed53bf9695bb7d7379f572b3b52d3320edd755e6da7cd63d1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/cakes-tarts/aunt-amelies-smooth-chocolate-cake-recipe/",
+    "fetchedAt": "2026-09-30T18:29:52.087Z"
+  },
+  "rawSource": "https://cnz.to/recipes/cakes-tarts/aunt-amelies-smooth-chocolate-cake-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,180 @@
+{
+  "recipe": {
+    "name": "Aubergine Roll",
+    "time": "1 hr 15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Wash and cook the quinoa as per packet instructions, using water or stock. Drain and set aside",
+      "Mix 3 1/2 tablespoons of olive oil, toasted cumin and salt in a bowl",
+      "Trim the aubergines and slice lengthways into 4mm thick slices. Brush the slices generously with the oil marinade",
+      "Place a griddle pan or large frying pan over a medium heat and add 1 tablespoon of olive oil. Once hot, fry the aubergine slices for approximately 2-3 minutes on each side until soft and coloured",
+      "Once all the aubergine slices are cooked, set aside on kitchen towel to drain",
+      "For the paneer and quinoa filling, place a non-stick pan over a medium heat and add vegetable oil. Once hot, add the onion and sauté until a light golden brown colour",
+      "Add the ginger-garlic paste, turmeric, salt and chilli powder and sauté for a further 2 minutes",
+      "Add the cooked quinoa and cook for a further 5-7 minutes, then add the grated paneer and remove from the heat. Finish with garam masala powder and chopped coriander",
+      "Lay out the aubergine slices on a chopping board. Spread a generous layer of the filling on top of each and sprinkle over the vegetables. Roll up each slice to enclose the filling",
+      "Stack the aubergine rolls onto plates and serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Aubergines",
+        "unit": "medium",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": "toasted",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Quinoa",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "small",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger-garlic Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Paneer",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "bunch",
+        "notes": "chopped",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Beetroot",
+        "unit": null,
+        "notes": "coarsely grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": null,
+        "notes": "coarsely grated",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Pepper",
+        "unit": null,
+        "notes": "cut small",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7eee539119fc5c4c05661b62766c2e700fcb2ba798403d96600fe9fe95be718b",
+    "lineage_hash": "8399dc3e9239420c69ec778a5ef97558231baf501d1b9b34d2dd160712e5d781"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/aubergine-roll-recipe",
+    "fetchedAt": "2026-08-03T21:33:50.025Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/aubergine-roll-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

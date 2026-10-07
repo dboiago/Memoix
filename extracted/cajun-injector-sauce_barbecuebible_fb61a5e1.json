@@ -1,0 +1,84 @@
+{
+  "recipe": {
+    "name": "Cajun Injector Sauce",
+    "time": null,
+    "course": "sauces",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all the ingredients (including the Ragin’ Cajun Rub but not the salt), in a nonreactive saucepan and warm over medium heat just until the butter melts and the salt crystals dissolve. Correct the seasoning, adding salt if needed.",
+      "Cool to warm room temperature (the butter should remain liquid), then put it in the injector and fire away."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Chicken Broth",
+        "unit": "C",
+        "notes": "preferably homemade",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted Butter",
+        "unit": "Tbsp",
+        "notes": "1/2 stick",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "Tbsp",
+        "notes": "alt: dry vermouth",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ragin' Cajun Rub",
+        "unit": "Tbsp",
+        "notes": "alt: a good commercial brand, see step 1",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Salt (kosher or Sea)",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0d22294d4bb333ea02af6027bf410aa956bb80bf14faf734fc4ad6b85f92c17d",
+    "lineage_hash": "398cbc2c5919b4465f61048fd57d43df1457ca9cf686689a10d800a499a553bf"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/cajun-injector-sauce/",
+    "fetchedAt": "2026-08-03T02:50:15.351Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/cajun-injector-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

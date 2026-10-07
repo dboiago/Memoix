@@ -1,0 +1,158 @@
+{
+  "recipe": {
+    "name": "Albóndigas de Choco (Andalusian Cuttlefish Meatballs)",
+    "time": "1 hr 30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "30",
+    "source": "scraped",
+    "cuisine": "ES",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "34",
+      "carbohydrateContent": "2.63",
+      "fatContent": "0.58",
+      "proteinContent": "3.45"
+    },
+    "directions": [
+      "Thoroughly clean, rinse, and drain the cuttlefish, and then roughly chop into large chunks.",
+      "Place the cuttlefish in a food processor along with the onion, garlic, parsley, eggs, and breadcrumbs. Season with a pinch of salt and pepper, and process to a smooth mixture. A couple of lumps here and there is okay.",
+      "Chill the meatball mixture for at least 30 minutes. Flour your hands lightly, and roll the mixture into around 30 meatballs (just over a tablespoon in each). They might seem a little loose, but that&#39;s fine! Dredge them in flour and set aside.",
+      "Put a large skillet over medium-high heat, and liberally coat in olive oil (about an inch in depth). When the oil is hot, fry the meatballs 5 or 6 at a time. Fry until golden brown, 3-4 minutes each side. Place on a paper towel to drain and set aside.",
+      "To make the sauce, use the same skillet and oil used to fry the meatballs. Heat the oil, then add the diced onion and sauté until transparent. Add the garlic and smoked paprika, and sauté for another 1-2 minutes or until aromatic.",
+      "Add the white wine and bay leaf and bring to the boil. Let simmer for 5 minutes or until the wine is reduced, and add the stock. Simmer until the sauce reaches a sauce-like consistency. Remove the bay leaf and season to taste with salt and pepper.",
+      "Serve the meatballs in earthenware bowls and top with the sauce, as well as some fresh parsley leaves. Enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cuttlefish",
+        "unit": "lb",
+        "notes": "alt: squid",
+        "amount": "1",
+        "section": "Meatballs",
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Onion Roughly Chopped",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": "Meatballs",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves Roughly Chopped",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Meatballs",
+        "isOptional": false
+      },
+      {
+        "name": "Flat Parsley",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Meatballs",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Meatballs",
+        "isOptional": false
+      },
+      {
+        "name": "Breadcrumbs",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": "Meatballs",
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Meatballs",
+        "isOptional": false
+      },
+      {
+        "name": "Pepper to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Meatballs",
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Onion Finely Diced",
+        "unit": "medium",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves Finely Sliced",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅔",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Fish",
+        "unit": "C",
+        "notes": "alt: vegetable stock",
+        "amount": "1⅓",
+        "section": "Sauce",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c8ca02d70ceb519c34d9bac73ef00b703103c86420c25fbe36497f9df44a93fe",
+    "lineage_hash": "7b692ce737d82a1f8637d42e95f95a53efc70b0775a513e17a473c4b5e1f77f0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://spanishsabores.com/albondigas-de-choco-recipe/",
+    "fetchedAt": "2026-08-02T11:21:49.505Z"
+  },
+  "rawSource": "https://spanishsabores.com/albondigas-de-choco-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

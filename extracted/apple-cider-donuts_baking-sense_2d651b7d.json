@@ -1,0 +1,151 @@
+{
+  "recipe": {
+    "name": "Apple Cider Donuts",
+    "time": "13 hr 20 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "394",
+      "carbohydrateContent": "61",
+      "fatContent": "84",
+      "proteinContent": "6"
+    },
+    "directions": [
+      "Reduce the apple cider to 1 cup, melt the butter in the warm cider.",
+      "Combine the water, yeast and some of the flour to make a sponge.",
+      "The sponge will give the yeast and gluten a head-start before the other ingredients are added to the dough.",
+      "Roll the dough to 1/4″-1/2″ thick.",
+      "Cut the donuts with a 4″ biscuit cutter. Cut the center hole with a smaller cutter.",
+      "You can re-roll the center cuts or fry them as “donut holes”.",
+      "Allow the donuts to rise at room temperature to make them in one day, or refrigerate overnight to make them for breakfast.",
+      "Fry the donuts a couple at a time, immediately coat them with the cinnamon/cardamom sugar."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Apple Cider",
+        "unit": "oz",
+        "notes": "4 cups",
+        "amount": "32",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "cold",
+        "amount": "2",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Warm Water",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Instant Yeast",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2¼",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Unbleached All-purpose Flour",
+        "unit": "oz",
+        "notes": "3 ¾ cups, see note",
+        "amount": "18¾",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": "room temp",
+        "amount": "1",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Oil",
+        "unit": "qt",
+        "notes": null,
+        "amount": "1",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Coating Sugar",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Coating Sugar",
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Coating Sugar",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d3faa5fd61a7fd8f6d3bb4d9e68db010a38526bb6b3f9eeca295677b0eb57a79",
+    "lineage_hash": "573fb40ef5e9febc6e0348e5b56097781459084632e06b54509a7ce3ea0c8afb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2019/10/24/yeasted-apple-cider-donuts/",
+    "fetchedAt": "2026-08-02T04:23:11.568Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2019/10/24/yeasted-apple-cider-donuts/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

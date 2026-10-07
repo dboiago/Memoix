@@ -1,0 +1,163 @@
+{
+  "recipe": {
+    "name": "Chana Saag",
+    "time": "35 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "302",
+      "carbohydrateContent": "38",
+      "fatContent": "12",
+      "proteinContent": "13"
+    },
+    "directions": [
+      "Place the spinach blend in a pan and add little water to it. Boil for few minutes till the spinach starts to wilt.",
+      "Immediately remove the spinach from pan and place under cold water and then chop finely.",
+      "Heat oil in a pan. Once the oil is hot, add cumin seeds and let them crackle.",
+      "Then add grated garlic and saute for few seconds till the garlic starts to turn brown.",
+      "Add chopped onions now and also 1/2 teaspoon of salt. Saute for 1-2 minutes or till onions turn translucent.",
+      "Add chopped tomatoes and mix. Cook for 2 minutes.",
+      "Add curry powder, red chili powder, garam masala powder, cumin powder and salt and mix.",
+      "Cook for 2-3 minutes or till oil starts oozing from the sides of the masala.",
+      "Add the chickpeas and cook for a minute.",
+      "Now add the chopped spinach blend and cook for another minute or so.",
+      "Add the coconut milk and let it simmer for 3-4 minutes.",
+      "Sprinkle garam masala on top and serve chana saag hot with rice, naan or any bread of your choice. You may also squeeze in some fresh lemon juice before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Can Chickpeas",
+        "unit": "oz",
+        "notes": "alt: use 1.25 cups cooked chickpeas",
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Spinach Blend",
+        "unit": null,
+        "notes": "mix of spinach, mustard greens and pak choi",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Big Garlic Cloves",
+        "unit": null,
+        "notes": "grated",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": null,
+        "notes": "medium, finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "large",
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cayenne/red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala Powder + More to Sprinkle",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "7-8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Juice of 1/2 Lemon",
+        "unit": null,
+        "notes": "optional",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "073b7bfa71405ef46657bd82886284ea4578a5a35ca27e7e10c62cf5cab7360b",
+    "lineage_hash": "d5055ab2e8a51de1037a33f0c6d2c28224b703fcee88d13950b9ffd34fc2f094"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/chana-saag/",
+    "fetchedAt": "2026-08-01T17:04:59.892Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/chana-saag/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

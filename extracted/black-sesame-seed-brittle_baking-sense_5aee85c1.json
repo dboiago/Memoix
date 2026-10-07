@@ -1,0 +1,108 @@
+{
+  "recipe": {
+    "name": "Black Sesame Seed Brittle",
+    "time": "1 hr 5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "24",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "127",
+      "carbohydrateContent": "25",
+      "fatContent": "3",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Line a baking sheet with a silicone baking mat or parchment paper. You can also butter the pan if you don&#x27;t have a baking mat or parchment.",
+      "Combine 4 oz&#32;water, 16 oz&#32;granulated sugar, ¼ teaspoon&#32;cream of tartar and 5 ½ oz&#32;light corn syrup in a heavy saucepan. Stir the mixture until it begins to boil. Once the mixture starts boiling do not stir. Cook the sugar until it becomes a golden caramel color. If using a candy  or probe thermometer set the temperature to 350 °F.",
+      "Remove the pan from the heat and immediately stir in 1 oz&#32;unsalted butter, ¾ cup&#32;black sesame seeds, 1 teaspoon&#32;baking soda and ⅛ teaspoon&#32;table salt. Pour the mixture onto the prepared pan and spread it to an even layer. Set the brittle aside to cool completely and harden, about 30 minutes.",
+      "Peel the sheet of brittle off the pan and set it back down. Use a heavy meat tenderizer or other heavy tool to crack the sheet into shards.",
+      "Store in a covered container at room temperature."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Water",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "2 cups",
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream of Tartar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Corn Syrup",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "5½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Sesame Seeds",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "21aed7e6f09fef1f32ef26edd3f389651efd9bc4bd4dd18716b19caa9435eeb7",
+    "lineage_hash": "ae605870e4913d077d14b77cecb719a0a43d3d3ee80407ddd33b6be359718ec4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2018/06/13/sesame-seed-brittle/",
+    "fetchedAt": "2026-08-01T21:12:09.737Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2018/06/13/sesame-seed-brittle/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

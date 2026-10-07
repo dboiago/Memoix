@@ -1,0 +1,257 @@
+{
+  "recipe": {
+    "name": "Boiled Egg & Soldiers",
+    "time": "4 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the saffron bread, put the saffron strands and tepid water together in a bowl and leave to infuse for 10 minutes",
+      "Combine the bread flour, fermented dough, yeast, butter and bread improver in the bowl of an electric mixer and stir in the saffron liquid",
+      "Mix for 5-6 minutes, using the dough hook, then add the salt and mix for 1 more minute, until a smooth dough is formed",
+      "Transfer to a floured bowl, cover with cling film and leave in a warm, dry place for 20 minutes",
+      "Tip the dough onto a floured work surface, knock back and place in a loaf tin. Leave to prove again in a warm, dry place until the dough has tripled in size, about an hour",
+      "Preheat the oven to 240°C/Gas mark 9, or its highest setting",
+      "Shape the risen dough into a round loaf and bake on a tray in the oven for 20-25 minutes, or until golden brown on top",
+      "Remove the bread from the oven and cool on a wire rack. Cut four 75g slices from the loaf ready to make the saffron breadcrumbs and reserve the remaining loaf for wrapping the asparagus",
+      "To prepare the duck, mix together the sea salt, sugar, orange zest and five spice in a bowl, then rub the mixture all over the duck breasts. Leave to marinate for 2 hours in the fridge",
+      "To make the saffron breadcrumbs, tear the sliced bread into small pieces",
+      "Heat the oil in a non-stick frying pan, then fry the bread pieces for 2-3 minutes, tossing frequently, until golden brown and crisp",
+      "Sprinkle over the caster sugar, then season to taste with salt and freshly ground black pepper. Transfer the fried bread to a tray and allow to cool",
+      "Once the fried bread has cooled, pulse it to rough crumbs in a food processor. Measure out 250g to coat the duck eggs, and reserve the rest for serving",
+      "To cook the duck eggs, bring a large pan of water to the boil and get ready a large bowl of ice-cold water",
+      "Boil the eggs for 3-4 minutes (for soft-boiled) then drain and plunge into the iced water for 1-2 minutes. Peel the eggs and drain them on kitchen paper",
+      "Put the flour and saffron breadcrumbs in separate dishes and beat the hen’s egg and milk together in a bowl",
+      "Dredge each duck egg in flour, then dip into the beaten egg and roll in the saffron breadcrumbs. Place on a tray and chill until needed",
+      "Wash the marinade off the duck breasts and pat dry with kitchen paper",
+      "Head outside to smoke the duck. Put your oak chippings in a large pan or wok and rest a wire rack or trellis on top. Carefully light the chippings with a blowtorch, then allow the fire to burn out",
+      "When the chippings are just smouldering, lay the duck breasts on the rack and cover the pan with a large wet tea towel",
+      "Leave to smoke for 10-12 minutes, or until the duck is cooked through. Remove the duck, leave it to cool, then wrap in cling film and chill until needed",
+      "To cook the asparagus, snap off the woody ends and peel the stalks",
+      "Blanch the spears for 1-2 minutes (depending on thickness) in a pan of boiling salted water, then drain and refresh in iced water. Drain again then trim the spears so that they are all the same length",
+      "Slice the smoked duck breast, on the grain, so you have 12 thin slices, and slice 12 thin pieces from the remaining saffron loaf",
+      "Preheat the grill to high. Wrap each asparagus spear in a slice of smoked duck, then wrap again in a slice of saffron bread",
+      "Place on a grill-pan and dot with butter. Grill for 1-2 minutes on each side, or until golden brown and crisp all over",
+      "To deep-fry the duck eggs, heat some vegetable oil in a deep-fat fryer to 160C",
+      "Working in two batches, fry the breaded duck eggs for 2-3 minutes, or until the crust is golden brown and crisp. Drain on kitchen paper",
+      "Pile the last of the saffron breadcrumbs on four serving plates",
+      "Slice the base off each fried duck egg and stand it on the breadcrumbs, then slice off the top to reveal the runny egg yolks",
+      "Lay the asparagus bundles alongside and serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Saffron Strands",
+        "unit": "pinches",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "280",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Bread Flour",
+        "unit": "g",
+        "notes": "plus extra for dusting",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fermented Bread Dough",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yeast",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soft Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bread Improver",
+        "unit": "tsp",
+        "notes": "organic",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Duck Breasts",
+        "unit": null,
+        "notes": "each weighing 225g",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": "zested",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Five-spice Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": null,
+        "notes": "freshly ground",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Free-range Duck Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Asparagus Spears",
+        "unit": null,
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1d199500794e5291acefc774b476216ba3e3d270688daaf93540209727d4abe6",
+    "lineage_hash": "97d5210d62f51b20900122e048d417ab3c9d8fc2e2b6c8521707d9bd2125f738"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/boiled-egg-and-soldiers-recipe",
+    "fetchedAt": "2026-08-03T16:08:01.332Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/boiled-egg-and-soldiers-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

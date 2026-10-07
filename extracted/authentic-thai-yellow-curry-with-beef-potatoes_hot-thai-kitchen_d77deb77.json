@@ -1,0 +1,234 @@
+{
+  "recipe": {
+    "name": "Authentic Thai Yellow Curry with Beef & Potatoes",
+    "time": "40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "TH",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Slice the steak crosswise into ⅛-inch thick slices and add to a small pot. Add enough water to completely submerge the beef, then add the salt and 1 Tbsp of the curry paste. Bring to a simmer over high heat. Once simmering, reduce heat to medium low to maintain a simmer and cook for 20-25 mins or until fork tender; timing will vary if using different cuts of meat. Skim off any scum that floats to the top.",
+      "Meanwhile, make the curry sauce. In a heavy medium pot add ¾ cup (180 ml) coconut milk and bring to a boil.",
+      "Add the remaining curry paste and stir to mix well. Turn heat to medium low and stir constantly until very thick and the coconut oil separates from the paste; about 5-8 minutes (the oil may not separate depending on the coconut milk you’re using; this is okay.)",
+      "Add the remaining coconut milk, sugar, about half of the tamarind paste and about half of the fish sauce; stir to mix and bring to a boil.",
+      "Add the potatoes and onions and simmer for 5 minutes, uncovered, then remove from heat while you wait for the beef to be done; the potatoes should not be fully cooked yet at this point.",
+      "Once the beef is tender, use a slotted spoon to transfer only the beef into the curry. Then add only as much of the beef cooking liquid needed to keep everything barely submerged. (The remaining beef cooking liquid is super tasty, and you can save it to make a soup such as a beef noodle soup!)",
+      "Turn the heat back on and simmer the curry, uncovered, for another 5-7 minutes or until the potatoes are fully cooked; timing may vary depending on the size. Taste the sauce and adjust seasoning with more fish sauce, tamarind or sugar as needed.",
+      "Stir in the tomatoes then turn off the heat and allow the tomatoes to soften in the residual heat for a minute or so. Serve with jasmine rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chuck Top Blade Steaks",
+        "unit": "lb",
+        "notes": "see note 1",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Curry Paste",
+        "unit": "Tbsp",
+        "notes": "store bought or half batch of homemade paste, recipe below",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Waxy Potatoes",
+        "unit": "oz",
+        "notes": "1-inch chunks",
+        "amount": "10.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "cut lengthwise into slivers",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Palm Sugar",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tamarind Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherry Tomatoes",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jasmine Rice",
+        "unit": null,
+        "notes": "for serving",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mild Chilies",
+        "unit": "oz",
+        "notes": "dried, cut into ½-inch chunks, see note 2",
+        "amount": "0.7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "Tbsp",
+        "notes": "toasted",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": "toasted",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Peppercorns",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemongrass",
+        "unit": "stalk",
+        "notes": "bottom half only, finely sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "finely, chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Galangal",
+        "unit": "Tbsp",
+        "notes": "finely, chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric",
+        "unit": "Tbsp",
+        "notes": "chopped, or ½ teaspoon turmeric powder",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "finely chopped",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cup Finely Chopped Shallots",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fermented Shrimp Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d2d239a30228bc4e522d948fd55bb8b374bce0c4e41c5d4661d68e7bb283b2ec",
+    "lineage_hash": "63f7df65abe239bbfe30de4fa9d8d683ea3eb21954a6d540ca8cf8e6b8d0c7cf"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://hot-thai-kitchen.com/yellow-curry-beef/",
+    "fetchedAt": "2026-08-01T22:10:26.573Z"
+  },
+  "rawSource": "https://hot-thai-kitchen.com/yellow-curry-beef/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

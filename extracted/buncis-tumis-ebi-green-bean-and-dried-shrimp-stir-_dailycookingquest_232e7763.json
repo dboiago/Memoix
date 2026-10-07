@@ -1,0 +1,85 @@
+{
+  "recipe": {
+    "name": "Buncis Tumis Ebi - Green Bean and Dried Shrimp Stir Fry",
+    "time": "20 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "ID",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat oil in a frying pan on high and sauté galangal until fragrant, about 1 minute.",
+      "Add dried shrimps and stir for 30 seconds.",
+      "Add green bean, season with salt, and mix well. Pour water and cook for 3 minutes, or until the green bean turns a darker shade of green, tender, but still crunchy. Remove from heat and serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Galangal (indonesian: Lengkuas)",
+        "unit": "inch",
+        "notes": "peeled and cut into thin slices",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shrimps (indonesian: Ebi)",
+        "unit": "Tbsp",
+        "notes": "dried, washed under running water and drained",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Green Bean (indonesian: Buncis)",
+        "unit": null,
+        "notes": "remove ends and cut into 2 inch lengths",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d681313d4f923f5cf734b4e97aef74d351ef645f41a207b8f3d242a3f462c071",
+    "lineage_hash": "66a3aad504932e1ba8fdafa3a211e290b8a9a1652b85a8bffc9ceaf4af0c2bbe"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/buncis-tumis-ebi-green-bean-and-dried-shrimp-stir-fry.html",
+    "fetchedAt": "2026-08-02T10:46:25.273Z"
+  },
+  "rawSource": "https://dailycookingquest.com/buncis-tumis-ebi-green-bean-and-dried-shrimp-stir-fry.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

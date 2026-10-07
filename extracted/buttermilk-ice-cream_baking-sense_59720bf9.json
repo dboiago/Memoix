@@ -1,0 +1,92 @@
+{
+  "recipe": {
+    "name": "Buttermilk Ice Cream",
+    "time": "8 hr 20 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "225",
+      "carbohydrateContent": "17",
+      "fatContent": "17",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "Combine 12 oz&#32;buttermilk and 16 oz&#32;heavy cream in a saucepan. Scrape the seeds out of the vanilla bean and add them and the pod to the cream. Heat over medium high just until scalding hot. Do not allow the cream mixture to come to a full boil or the buttermilk may curdle.",
+      "While the milk mixture is heating, whisk together 5&#32;large egg yolks, 6 oz&#32;granulated sugar, and ⅛ teaspoon&#32;table salt.",
+      "Whisk the scalding hot milk into the yolks. Return the mixture to the pan and reduce the heat to medium low. Cook the custard, stirring constantly, until it coats the back of a spoon or spatula.",
+      "Strain the mixture into a bowl, cover with plastic wrap and refrigerate until very cold, at least 5-6 hours.",
+      "Run the custard in your ice-cream machine according to the manufacturer&#39;s directions. Pack into a container. Place plastic wrap directly on the surface of the ice cream and cover the container with a lid. Freeze 8 hours or overnight."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Buttermilk",
+        "unit": "oz",
+        "notes": "1 ½ cups",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "oz",
+        "notes": "2 cups",
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean",
+        "unit": null,
+        "notes": "split",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": "large",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "¾ cup",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5d502eff59aebd8d80c189425f2e31fd31a3f93523a1972a2dae84377743e6a1",
+    "lineage_hash": "498b3e313341470e0d06180411b291c99c941915c6abcce7bd6ae62e208ed1f5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2015/10/23/buttermilk-ice-cream/",
+    "fetchedAt": "2026-08-01T19:53:42.762Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2015/10/23/buttermilk-ice-cream/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

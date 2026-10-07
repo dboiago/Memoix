@@ -1,0 +1,184 @@
+{
+  "recipe": {
+    "name": "Braised Mushrooms with Spelt, Tofu and Pumpkin Seed Pesto",
+    "time": "40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, cook the spelt according to the packet instructions. Set aside and keep warm or gently reheat just before serving",
+      "To make the tofu dressing, place all the ingredients into a small blender and blitz until smooth. Season to taste and set aside",
+      "To cook the mushrooms, heat the olive oil in a large frying pan. When hot, add the mushrooms, skin-side down, seasoning well with salt and pepper. Brown well then turn over. In a separate bowl, whisk together the miso paste and tamari with 4 tablespoons of water until smooth. Add this to the pan and gently simmer the mushrooms until they are cooked through (around 5–8 minutes)",
+      "While the mushrooms are cooking, make the pesto. Place all ingredients into a food processor with 2 tablespoons of water and pulse until combined but still a little chunky. Season to taste and set aside",
+      "To cook the baby gem, heat a small frying pan over a high heat. Add the olive oil and, when hot, place the gem halves in the pan, cut-side down. Leave to cook for a few minutes until nice and golden brown on the flat side",
+      "To serve, place a large spoonful of the tofu dressing in the bottom of each bowl. Divide the spelt between each bowl then add the mushrooms, along with any remaining pan juices. Finish with the pesto and baby gem halves. Garnish with parsley and parsley cress, if desired"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Flat Mushrooms",
+        "unit": "large",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Miso",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tamari",
+        "unit": "Tbsp",
+        "notes": "or soy sauce",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spelt",
+        "unit": "g",
+        "notes": "use whole spelt if possible but pearled is fine",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Firm Tofu",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tamari",
+        "unit": "Tbsp",
+        "notes": "or soy sauce",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tahini",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Knob of Ginger",
+        "unit": null,
+        "notes": "8cm in length, peeled and grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pumpkin Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flat-leaf Parsley",
+        "unit": "g",
+        "notes": "plus extra for garnish",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Gem Lettuce",
+        "unit": null,
+        "notes": "halved",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley Cress",
+        "unit": null,
+        "notes": "(optional)",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2a831da64c7b628b520dd3aefb2d1c9f0feb727da1129606a701cbb16e4f2bcc",
+    "lineage_hash": "4b87fb2e9fda39e37e6db70250e030d5a3d935904c7b4a29f267586074191b7d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/braised-mushrooms-tofu-dressing-recipe",
+    "fetchedAt": "2026-08-03T08:04:08.557Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/braised-mushrooms-tofu-dressing-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

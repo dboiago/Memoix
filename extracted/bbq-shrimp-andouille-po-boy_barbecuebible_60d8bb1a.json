@@ -1,0 +1,106 @@
+{
+  "recipe": {
+    "name": "BBQ Shrimp & Andouille Po Boy",
+    "time": "1 hr 10 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Prep. Prepare the barbecue sauce and warm it.",
+      "Thinly slice the lettuce and the onions, and chop the tomato.",
+      "Cut the bread into 6 or 12 inch (15 or 30 cm) sections. Slice it lengthwise. Be careful to not ruin the crust as you either press in the bread or pluck some out to make canoes that will hold in the ample fillings.",
+      "Fire up. Prepare the grill for low heat cooking.",
+      "Cook. Grill the cut side of the bread over low heat until it starts to brown. Leave the lid open and watch that bread as if it was your last meal. A tiny bit of char is OK but don’t let it burn, and it will burn if you turn your back, and if you walk away it will go up in flames.",
+      "Increase the heat of the grill to about 325°F (163°C) in the direct zone, about medium. Put the andouille on the grill over direct heat and roll it around until it browns and hits 160°F (71°C) interior temp. Most of the time we overcook sausage on the grill, so use a thermometer for a change. Don’t overcook if you want juicy sausage! Set aside and let it cool a bit, then slice it on an angle into ¼ inch (6.3 mm) coins.",
+      "Remember the shrimp must be peeled and deveined. Brush the shrimp with vegetable oil or melted butter to prevent sticking. If they are small, use a grill topper. Grill about three to four minutes on each side, depending on the thickness of the shrimp. When one side turns pink and gets some grill marks, flip them. As soon as the interior of the shrimp is pearly and opaque throughout, and you may need to slice one to check, get them off the grill. Do not overcook.",
+      "Serve. Toss the shrimp in the warm sauce to coat. Add the sliced andouille into the bath. Spoon plenty of shrimp, sausage slices, and some sauce onto the bread. Top with lettuce, tomato, and sliced onion. Have lots of napkins on hand."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Batches New Orleans Barbecue Sauce",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wedge of Iceberg Lettuce",
+        "unit": null,
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Meaty Tomato",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Feet of Soft Crust French Bread Loaf",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Andouille Sausage",
+        "unit": "inches",
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Good Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Large Shrimp",
+        "unit": "lb",
+        "notes": "peeled and deveined",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f6816c6aba11fa6a8b4c01a8b2e0b4e05edd05852718e3a2e1d7db41d8f5cc70",
+    "lineage_hash": "36708dd5b21be6d5bf9b65ad7e59119f0fa3ac3448c450cbcd8495ebe56c6db1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/bbq-shrimp-andouille-po-boy/",
+    "fetchedAt": "2026-08-03T09:55:16.185Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/bbq-shrimp-andouille-po-boy/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

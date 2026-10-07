@@ -1,0 +1,160 @@
+{
+  "recipe": {
+    "name": "Apricot Breakfast Crumble",
+    "time": "40 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Halve and stone the apricots and arrange cut-side up in a medium-sized baking dish. Scatter over two thirds of the blueberries, then drizzle over the honey and sprinkle over the orange blossom water (if using)",
+      "In a bowl, mix together the oats, chia seeds, cinnamon, ginger and salt",
+      "In a small jug, whisk together the oil, maple syrup, vanilla and water. Add this to the oat mixture and stir well to combine",
+      "Tip the oat mixture on top of the apricots and blueberries and gently spread it over the fruit – it doesn’t need to be entirely covered, just gently resting on top",
+      "Bake for 30–40 minutes, until the topping is golden and the fruit is bubbling and juicy. Remove from the oven and scatter with the pistachios and the remaining blueberries",
+      "Leave to cool for a few minutes before serving with a dollop of Greek yoghurt"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Apricots",
+        "unit": null,
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blueberries",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Blossom Water",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jumbo Oats",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chia Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Ginger",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": "or rapeseed oil",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maple Syrup",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": "or powder",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pistachio Nuts",
+        "unit": "Tbsp",
+        "notes": "roughly chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Greek Yoghurt",
+        "unit": null,
+        "notes": "to serve",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6f2cb8dac4f116b3707da193998aa120296b06754674e0f59aa4b8b5f29bd110",
+    "lineage_hash": "86faf53f6d7950f91b06f4b2ff078c38624826f51ab5b6063e7e63b64ce284eb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/apricot-breakfast-crumble-recipe",
+    "fetchedAt": "2026-08-03T11:59:55.138Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/apricot-breakfast-crumble-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,105 @@
+{
+  "recipe": {
+    "name": "Cakwe",
+    "time": "45 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "7",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix all ingredients together (start with 3 tablespoon of water) in a mixing bowl, knead into a soft and smooth dough, adding more water only if necessary.",
+      "Shape the dough into a roughly rectangular shape, cover it with a saran plastic wrap, and let it rest inside the fridge for 4 hours (overnight is best).",
+      "Return the dough to room temperature. Flour your work surface, then turn the dough out onto the floured surface. Roll into a rectangle of 1/8\" thickness (~ 1/2 cm) by 6\" (~ 15cm) wide and 12\" (~30cm) long , then cut into 14 strips.",
+      "One portion of the cruller consists of 2 strips stack on top of one another, so we will end up with 7 portions.",
+      "To glue together 2 stacks of dough into 1 cruller, use one chopstick (or the dull part of a butter knife), press the two pieces right through the center along its length.",
+      "Heat enough oil for deep frying in a wok/frying pan over medium heat. Once the oil is hot (200 Celsius/400 Fahrenheit), gently hold the two ends of each stack of crullers and pull it slightly to fit the length of your wok/frying pan. fry the crullers until golden brown, about 30 seconds. Drain over a wire rack to remove excess oil.",
+      "Serve as is with soy milk, or cut into pieces and serve with congee."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gram Bread Flour",
+        "unit": null,
+        "notes": "or all purpose flour",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": "~ 55 gram",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "Tbsp",
+        "notes": "~ 25 gram",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3-5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c57b1430c147e412eccf74e68b53cb6778d9501ee80d1b673d24833019137256",
+    "lineage_hash": "48d3d167659e21cbbae758cd32455157f7c43a86b3145344b2ab4c9d150099b7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/cakwe-chinese-crullers.html",
+    "fetchedAt": "2026-08-01T22:50:56.294Z"
+  },
+  "rawSource": "https://dailycookingquest.com/cakwe-chinese-crullers.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

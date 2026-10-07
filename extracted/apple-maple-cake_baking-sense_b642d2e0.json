@@ -1,0 +1,202 @@
+{
+  "recipe": {
+    "name": "Apple Upside Down Layer Cake with Maple Buttercream",
+    "time": "2 hr 35 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "405",
+      "carbohydrateContent": "53",
+      "fatContent": "20",
+      "proteinContent": "4"
+    },
+    "directions": [
+      "Bring the brown sugar, butter, rum, cinnamon and vanilla to a boil.",
+      "Divide the caramel between three cake pans.",
+      "Divide the sliced apples between the pans.",
+      "Divide the cake batter between the three pans.",
+      "Bake until the cake springs back when pressed in the middle.",
+      "Turn the cakes out while they’re still warm. Transfer any apples that stick to the pan back to the cake and spread the apples to an even layer. Chill the layers until firm.",
+      "Whisk the maple syrup into the buttercream.",
+      "Trim the crust from the top of each cake layer.",
+      "Flip the first two layers apple side up and spread buttercream over the apples.",
+      "Flip the last layer apple side down and crumb coat the cake.",
+      "Ice the cake with a final layer of buttercream."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": "Caramel Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Rum",
+        "unit": "oz",
+        "notes": "1 ½ tablespoons",
+        "amount": "¾",
+        "section": "Caramel Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "oz",
+        "notes": "¾ cup",
+        "amount": "6",
+        "section": "Caramel Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean",
+        "unit": null,
+        "notes": "or ½ teaspoon vanilla extract",
+        "amount": "¼",
+        "section": "Caramel Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Caramel Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Apples",
+        "unit": "oz",
+        "notes": null,
+        "amount": "24",
+        "section": "Caramel Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": "room temperature",
+        "amount": "6",
+        "section": "Cinnamon Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Sour Cream",
+        "unit": "oz",
+        "notes": "1 cup, room temp, divided in 1/2",
+        "amount": "8",
+        "section": "Cinnamon Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Cinnamon Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Cake Flour",
+        "unit": "oz",
+        "notes": "2 cups, see note",
+        "amount": "9",
+        "section": "Cinnamon Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "1 ½ cups, divided",
+        "amount": "12",
+        "section": "Cinnamon Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": "Cinnamon Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": "Cinnamon Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Cinnamon Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "4",
+        "section": "Cinnamon Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "room temperature",
+        "amount": "9",
+        "section": "Cinnamon Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": null,
+        "notes": "room temperature",
+        "amount": "3",
+        "section": "Cinnamon Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Recipe Italian Meringue Buttercream",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Maple Buttercream",
+        "isOptional": false
+      },
+      {
+        "name": "Real Maple Syrup",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "2",
+        "section": "Maple Buttercream",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "62da410f0300da7f238db1fc4f5aaf72ebf103702d51ef5d310e986ff16d97a2",
+    "lineage_hash": "ae12d9e678a71d4ef6b58896ba0dc01eaa9899fbeb8ebef8017991d3eb9e537a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2017/10/12/apple-upside-down-layer-cake/",
+    "fetchedAt": "2026-08-02T02:00:39.696Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2017/10/12/apple-upside-down-layer-cake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

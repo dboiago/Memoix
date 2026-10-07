@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "Beet Tonic",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Mocktail",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Juice all ingredients and drink immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Med Size Carrots",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beetroot",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Baby Spinach",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "78f15ce9155988e63ebbf904e740b7af1e0e4b76b91f9a9afd820add51ece9bf",
+    "lineage_hash": "0e36d684279159561151f55bdc51350d925ec260507433416a55519aa0f5f8fb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.simplytrinicooking.com/beet-tonic/",
+    "fetchedAt": "2026-09-25T23:49:08.040Z"
+  },
+  "rawSource": "https://www.simplytrinicooking.com/beet-tonic/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

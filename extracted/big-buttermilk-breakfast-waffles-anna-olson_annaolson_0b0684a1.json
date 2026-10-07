@@ -1,0 +1,101 @@
+{
+  "recipe": {
+    "name": "Big Buttermilk Breakfast Waffles",
+    "time": "45 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the waffles, stir the flour, sugar, baking powder and salt together. In a separate bowl, whisk the buttermilk, oil and egg yolks together. Add this to the dry mixture and stir gently until blended (but, like pancake batter, a few lumps are OK).",
+      "In another bowl, whisk the 2 egg whites (by hand or with electric beaters) until they hold a soft peak when the whisk or beaters are lifted. Fold these gently into the batter. Stir in the chocolate chips, if using.",
+      "Preheat your waffle iron according to instructions. Lightly grease the iron (if requested in the instructions) and ladle batter to fill the iron once closed (the first waffle is your test as to how much batter to use). Cook the waffle until lightly browned at crisp, and remove. Repeat with the remaining batter."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "1 ½ Cups All-purpose Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "Tbsp",
+        "notes": "25 g",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "Tbsp",
+        "notes": "9 g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Salt",
+        "unit": "tsp",
+        "notes": "2.5 g",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "1 ¼ Cups Buttermilk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "310",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "C",
+        "notes": "125 mL",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "separated",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Chips",
+        "unit": "C",
+        "notes": "175 g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ccfb0c43d79bce948e4b043ab790aa0dd3551908494b72b6fab8d536395d57ad",
+    "lineage_hash": "023992115c36d9018e3c7de593c0b8dd834fc308592f628d268346595ac26e51"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/big-buttermilk-breakfast-waffles/",
+    "fetchedAt": "2026-08-01T17:50:09.982Z"
+  },
+  "rawSource": "https://annaolson.ca/project/big-buttermilk-breakfast-waffles/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

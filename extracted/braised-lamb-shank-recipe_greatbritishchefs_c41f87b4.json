@@ -1,0 +1,134 @@
+{
+  "recipe": {
+    "name": "Braised Lamb Shank",
+    "time": "2 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Warm the oil in a heavy pan or casserole dish then add the shanks and brown on all sides. Season with salt and pepper",
+      "Add the onion, carrots, celery and garlic and cook for 2-3 minutes then add the tomato, butter beans and chorizo",
+      "Simmer  for 5 minutes then add the wine and the same volume of water. Place a lid on the pot then turn down the heat to a slow simmer – or transfer to an oven at 150°C/gas mark 2 for 2 hours. Check every 30 minutes and add a little more liquid if needed",
+      "Serve with mashed or new potatoes and plenty of chopped parsley"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Lamb Shanks",
+        "unit": null,
+        "notes": "from the shoulder",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stick of Celery",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tinned Chopped Tomatoes",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tinned Butter Beans",
+        "unit": "g",
+        "notes": "drained",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Chorizo",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2062d7c05d2c67ae75fb4d8a2500cafa19ffc1e07b63308f00b3173db753f244",
+    "lineage_hash": "008f01c1c97dcc94941a5c43556f1298393f7505dcf4820bf412066acd7248f0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/shoulder-shanks-welsh-lamb-chorizo-recipe",
+    "fetchedAt": "2026-08-03T15:52:23.208Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/shoulder-shanks-welsh-lamb-chorizo-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

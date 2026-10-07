@@ -1,0 +1,109 @@
+{
+  "recipe": {
+    "name": "Amaretti Custard",
+    "time": "1 hr 20 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a food processor, blend the bread and amaretti cookies into crumbs. In a bowl, beat the eggs and egg yolks with 1/2 cup of sugar, the cocoa powder, the bread and cookie crumbs, and the seeds from half a vanilla bean pod; then add in the milk.",
+      "In a small saucepan, melt the rest of the sugar together with the juice of half a lemon until it begins to caramelize. Pour this caramel into 12 flan molds, then fill them with the cacao mixture; place them in a baking pan with high edges on top of a sheet of parchment paper.",
+      "Fill the baking pan with hot water so that the molds are immersed about 2/3 of the way; bake at 300°F for about 45 minutes. Take them out of the oven and remove them from the bain-marie; let them cool completely before removing them from the molds. Serve with dollops of whipped cream, if desired."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stale Bread",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amaretti Cookies",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsweetened Cocoa Powder",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean Pod",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ef44d08ef1aa2383f28f050fc2dfd00ecb0053beea85f3c1b8f21653b9186f13",
+    "lineage_hash": "705e1bd913624bc4b9d51739f67b65a6468fecc20befb2c1a226cafad08ec10e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/amaretti-custard",
+    "fetchedAt": "2026-08-02T01:53:21.153Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/amaretti-custard",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

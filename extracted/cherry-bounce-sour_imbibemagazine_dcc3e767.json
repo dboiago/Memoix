@@ -1,0 +1,39 @@
+{
+  "recipe": {
+    "name": "Cherry Bounce Sour",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Collins",
+    "garnish": [
+      "Spritz of Angostura Bitters",
+      "Fresh Grated Cinnamon",
+      "Bourbon Cherry"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine ingredients in a shaker and shake vigorously without ice to start emulsion. Add ice and shake again to chill and thoroughly emulsify. Strain over ice cubes in a Collins glass and garnish with a spritz of Angostura bitters, fresh grated cinnamon and a bourbon cherry.",
+      "*Cherry Bounce note: Our recipe calls for rye whiskey, but Huerta prefers using bourbon."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "799d9b0f3d67bd19695e5cc8ae19d3736e86b1072c346cd2777a6dc3e05df0a1",
+    "lineage_hash": "ef2394430f0cca8650ad382a2d84490c93cd4e05663efb0ecc7ac75d1cc377f8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cherry-bounce-sour/",
+    "fetchedAt": "2026-08-03T22:11:03.881Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cherry-bounce-sour/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

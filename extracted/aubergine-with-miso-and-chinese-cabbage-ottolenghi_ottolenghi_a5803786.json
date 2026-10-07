@@ -1,0 +1,151 @@
+{
+  "recipe": {
+    "name": "Aubergine with miso and chinese cabbage",
+    "time": "1 hr 5 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Remove the aubergine stalks, then cut each in two widthways. Cut the fattest half in two lengthways, and cut each half into three wedges; repeat with the thin half, but cut each half into two wedges. Put the wedges skin side down on an oven tray, brush with half the vegetable oil, place under a medium grill and cook for 30 minutes, until soft.",
+      "Meanwhile, prepare the miso. Put the sugar and saké in a saucepan and warm up gently to dissolve the sugar. Add the miso, mirin, mustard and lemon, and over low heat whisk to a smooth paste. Remove one tablespoon from the mix, add tamari to the rest and stir.",
+      "When the aubergine is almost ready, brush liberally with the miso/tamari paste and return to the grill for five minutes, or until the paste begins to bubble.",
+      "Meanwhile, in a wok heat up the remaining vegetable oil and the sesame oil. Throw in the cabbage and stir-fry on a high flame for 30 seconds, just to soften. Stir in the enoki, the reserved miso paste and two tablespoons of sesame seeds, and remove from the heat at once.",
+      "Pile the cabbage inside a shallow bowl and top with aubergine. Sprinkle the aubergine with the remaining sesame seeds and garnish with coriander leaves."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Aubergines",
+        "unit": "medium",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Saké",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Medium Red Miso",
+        "unit": "g",
+        "notes": null,
+        "amount": "130",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mirin",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smooth and Hot Mustard",
+        "unit": "tsp",
+        "notes": "neri karashi, if you can get it",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": "or yuzu juice",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tamari",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Cabbage",
+        "unit": null,
+        "notes": "core removed and leaves shredded coarsely",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Enoki Mushrooms",
+        "unit": "g",
+        "notes": "base cut off",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful Picked Coriander Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3eceda66b146775f1d7eafba0b50c2b6f8f369042d3222581237e01040ef3403",
+    "lineage_hash": "f91c94b712424bca4e3a153f25a47b74a9bc7077134b980f064cfd2d48d7c93e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ottolenghi.co.uk/pages/recipes/aubergine-miso-chinese-cabbage",
+    "fetchedAt": "2026-08-02T06:35:20.122Z"
+  },
+  "rawSource": "https://ottolenghi.co.uk/pages/recipes/aubergine-miso-chinese-cabbage",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

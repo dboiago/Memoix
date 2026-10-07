@@ -1,0 +1,119 @@
+{
+  "recipe": {
+    "name": "Butterscotch Bars",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "20",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 350ºF (180ºC.) Line the inside of an 8-inch (20cm) square baking pan with foil so it overhangs up and over the edges, which&#39;ll make the bars easier to lift out after baking. Butter the foil with melted butter or spray with non-stick spray.",
+      "In the bowl of a stand mixer, or by hand in a medium bowl, beat together the two sugars and butter at medium speed until smooth, about 2 minutes. Add the egg, egg white and vanilla, and beat on medium speed, stopping the mixer to scrape down the sides, until well incorporated.",
+      "In a small, separate bowl, whisk together the flour, salt and baking powder. With the mixer on low speed, mix in the dry ingredients until well mixed in. You may need to give it a few stirs with a spatula until it&#39;s smooth.",
+      "Spread the batter into the prepared pan. Strew the butterscotch chips evenly over the top. Bake the butterscotch bars until the top is moderately golden brown and feels just set in the center when you touch it, about 22-25 minutes.",
+      "Let cool on a wire rack. When cool, lift the bars out of the pan, remove the foil, and cut into rectangles."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": "100g",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Packed Light",
+        "unit": "C",
+        "notes": "alt: dark brown sugar, 90g",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": "55g, 2 ounces, at room temperature",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": "at room temperature",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "C",
+        "notes": "175g",
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butterscotch Chips",
+        "unit": "C",
+        "notes": "140g",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6594470f7eb993adb0dcc50a61b987de9e89550e7faae802d581f1b605ac371d",
+    "lineage_hash": "bb21d10e86511fbc8726c667b241d314826370befd808d90ef4583d844816de5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/easy-butterscotch-bars-bar-recipe-chips-lowfat/",
+    "fetchedAt": "2026-08-02T17:32:11.445Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/easy-butterscotch-bars-bar-recipe-chips-lowfat/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Irish Whiskey Cocktail",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all of the ingredients with ice and stir very briefly, only for 5 seconds or so. Strain into the glass and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "2c3249eaae9afeeb19188c34c89308d62c27296944fb93b5130726253d4fde88",
+    "lineage_hash": "53837480f4987a9857135718f362c4654de9d07305a10eb41e7f42cbafb056de"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cafe-ireland-irish-whiskey-cocktail/",
+    "fetchedAt": "2026-08-03T22:47:41.476Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cafe-ireland-irish-whiskey-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

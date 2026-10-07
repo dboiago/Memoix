@@ -1,0 +1,37 @@
+{
+  "recipe": {
+    "name": "Bitter Roots",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [
+      "Fresh Artichoke Leaf",
+      "Optional"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all ingredients, except beer, and stir with ice. Strain into an ice-filled glass. Top with beer, stir and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "0bc0d1f71d27d85ab4962d23dca960c8e93f582b054c5bad03bac66aa80a7e7f",
+    "lineage_hash": "3fb49c44ec7a30751d6ce6cb7062faa1e1c6b3e3cfd356152ad3e21ac147700e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bitter-roots-recipe/",
+    "fetchedAt": "2026-08-03T20:05:36.482Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bitter-roots-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,60 @@
+{
+  "recipe": {
+    "name": "Grilled Chicken Sandwich with Spicy Sauce",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Remove any tenders on the underside of the chicken breast halves. Place the chicken between two pieces of plastic wrap and pound with a meat tenderizer to a thickness of 1/2 inch. Cut each piece of chicken breast in half for four equal pieces. Transfer the chicken to a sturdy resealable plastic bag.",
+      "Make the brine: Combine the buttermilk, hot sauce, salt, MSG, if using, and garlic powder; whisk to dissolve the salt crystals. Pour the brine over the chicken, seal the bag, and place in a bowl to contain any leaks. Refrigerate for at least 2 hours or up to 8 hours.",
+      "In the meantime, make the rub: Combine the salt, MSG, if using, paprika, black pepper, white pepper, garlic powder, onion powder, and cayenne in a small bowl and mix with your fingers. Set aside.",
+      "Make the Spicy Sauce (optional): In a small mixing bowl, combine the mayonnaise, hot sauce, pickle juice, paprika, salt, garlic powder, and onion powder. Taste, adding more hot sauce if desired. The sauce should be highly seasoned.",
+      "Set up your grill for direct grilling and preheat to medium-high. Brush the grill grate clean and oil it well.",
+      "Remove the chicken from the brine and pat dry with paper towels. (Discard the brine.) Brush with olive oil, then dust the chicken breasts on both sides with the rub. (You may not need all the rub.)",
+      "Arrange the chicken breasts on the grill grate at an angle to the bars. If using a charcoal grill, toss the wood chips on the coals. If using a gas grill, place the wood chips in your grill’s smoker box or enclose the chips in a smoker pouch and place over one of the burners.",
+      "Grill the chicken breasts (grill lid down to contain the smoke) until they are cooked through, 3 to 4 minutes per side depending on the heat of your fire. The internal temperature should be 165 degrees when the probe of an instant-read thermometer is inserted through the side.",
+      "In the meantime, butter the cut sides of the brioche buns. Grill the buns until they are lightly toasted, 1 to 2 minutes. (Watch carefully.)",
+      "Assemble the sandwiches: Spread a dollop of the Spicy Sauce (or plain mayonnaise) on the cut sides of the bun. Place a lettuce leaf on the bottom of each bun, followed by a tomato slice, if using, and a chicken breast half. Add pickles, then replace the top half of the bun. Serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Breast Halves",
+        "unit": null,
+        "notes": "boneless, skinless, each 7 to 8 ounces",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ad6eef5a0fab588d5bbf6b7f50aecaa87079116743c15fafd9a1e3ffcb4ccc1f",
+    "lineage_hash": "596d60238d5a08ca701d8d2e492e3e51f543a56feef1b90126928e4dfe35152f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/popeyes-grilled-chicken-sandwich/",
+    "fetchedAt": "2026-08-03T06:16:25.014Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/popeyes-grilled-chicken-sandwich/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

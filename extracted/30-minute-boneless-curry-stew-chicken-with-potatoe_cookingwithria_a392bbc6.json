@@ -1,0 +1,166 @@
+{
+  "recipe": {
+    "name": "30-Minute Boneless Curry Stew Chicken with Potatoes",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "379",
+      "carbohydrateContent": "16",
+      "fatContent": "14",
+      "proteinContent": "45"
+    },
+    "directions": [
+      "Prepare the Chicken: Cut the chicken into 2-inch pieces. Fill a bowl with water and add the juice of a lime, lemon, or 1/4 cup vinegar. Soak for a few minutes, rub to clean, then rinse thoroughly under running water.",
+      "Marinate: Season the chicken with salt, green seasoning, onion, carrot, bell pepper, hot pepper, scallions, parsley, black pepper, thyme, and curry powder. Mix well and let marinate for at least 30 minutes (or overnight for deeper flavor).",
+      "Caramelize the Sugar: Heat oil in a heavy-bottomed pot over medium heat. Add brown sugar and allow it to bubble, froth, expand, and darken.",
+      "Cook the Chicken: Add the seasoned chicken, raise the heat to high, and stir well to coat evenly. Let cook for several minutes until the color is sealed.",
+      "Add Potatoes: Stir in the sliced potatoes, mixing well to combine all ingredients.",
+      "Simmer: Cover, reduce heat to low, and let simmer for 20-30 minutes, stirring every 5 minutes to prevent sticking. Add more salt if needed and water if a thinner sauce is desired. Cook until the liquid thickens into a rich sauce.",
+      "Serve: Enjoy with steamed jasmine or white rice, paratha, or sada roti."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Thighs Cut Into Bite-sized Chunks",
+        "unit": "lb",
+        "notes": "boneless",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Himalayan Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Seasoning",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion Chopped",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Carrot Finely Diced",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Bell Pepper Finely Diced",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Pepper to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions Chopped",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley Optional",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme Leaves",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potato Large",
+        "unit": null,
+        "notes": "peeled and thinly sliced or cubed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b38cc62275ac94e6aa86679371bc5135c480389f3c584f68f0e83c9a98b5f40e",
+    "lineage_hash": "51ebb42c63b421eafdb8de1c9678e62d3a96d0d584ab062210b4f0b1d6642790"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cookingwithria.com/2025/04/30-minute-boneless-curry-stew-chicken-with-potatoes/",
+    "fetchedAt": "2026-09-25T22:07:03.748Z"
+  },
+  "rawSource": "https://cookingwithria.com/2025/04/30-minute-boneless-curry-stew-chicken-with-potatoes/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

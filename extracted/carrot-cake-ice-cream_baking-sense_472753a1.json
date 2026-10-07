@@ -1,0 +1,195 @@
+{
+  "recipe": {
+    "name": "Carrot Cake Ice Cream",
+    "time": "30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "342",
+      "carbohydrateContent": "35",
+      "fatContent": "21",
+      "proteinContent": "5"
+    },
+    "directions": [
+      "Pour the warm custard over the cream cheese.",
+      "Add the vanilla and lemon.",
+      "Stir until the cream cheese is melted then chill.",
+      "Melt the butter and add the shredded carrots.",
+      "Saute until the carrots are soft.",
+      "Add the brown sugar.",
+      "Add the currants and walnuts to the carrots.",
+      "Add the sterilized flour.",
+      "Stir to form a batter then chill until firm enough to scoop.",
+      "Gather the cream cheese ice cream, carrot cake dough and a freezer container.",
+      "Spread 1/4 of the ice cream into the container. Scoop carrot batter balls over the ice cream.",
+      "Continue to layer the cream cheese ice cream with balls of carrot cake batter. Free until firm."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Milk",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": "Cream Cheese Ice Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": "Cream Cheese Ice Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "¾ cup",
+        "amount": "6",
+        "section": "Cream Cheese Ice Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Zest",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Cream Cheese Ice Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": "Cream Cheese Ice Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Cream Cheese",
+        "unit": "oz",
+        "notes": "1 ½ cups",
+        "amount": "12",
+        "section": "Cream Cheese Ice Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Cream Cheese Ice Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Cream Cheese Ice Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Cream Cheese Ice Cream",
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour (1/2 Cup (see Note))",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2½",
+        "section": "Carrot Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Carrot Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Carrot Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": "Carrot Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": "Carrot Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "oz",
+        "notes": "3 medium, shredded",
+        "amount": "6",
+        "section": "Carrot Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": "Carrot Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Currants",
+        "unit": "oz",
+        "notes": "2 tablespoons",
+        "amount": "1",
+        "section": "Carrot Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Walnuts",
+        "unit": "oz",
+        "notes": "¼ cup, chopped",
+        "amount": "1",
+        "section": "Carrot Cake Batter",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "38c8c1974514b2358d355418a0a7187170353bc2925a11e4a971059df5bce8b6",
+    "lineage_hash": "05fa4208f31a080d17ec193cfb7e7860e55144f7270b923aa83abda3165155c6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2022/07/07/carrot-cake-ice-cream/",
+    "fetchedAt": "2026-08-01T23:23:11.949Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2022/07/07/carrot-cake-ice-cream/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

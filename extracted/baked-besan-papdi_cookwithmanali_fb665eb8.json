@@ -1,0 +1,128 @@
+{
+  "recipe": {
+    "name": "Baked Besan Papdi",
+    "time": "22 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "25",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "29",
+      "carbohydrateContent": "3",
+      "fatContent": "1",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Pre-heat oven to 400 F degrees. Line a large baking sheet with parchment paper and set aside.",
+      "To a large bowl add besan, ajwain, cumin seeds, turmeric powder, hing, red chili powder and salt. Also add the baking powder.",
+      "Add the oil and mix with your hands. Rub flour between your palms to incorporate the oil well into the flour. Mix until it resembles crumbs.",
+      "Start adding water, little by little to bring the dough together. Mix until it all comes together and forms a dough.",
+      "Place the dough between two sheets of parchment paper. Using a roller, roll the dough between the two sheets.",
+      "Roll the dough into 1/8 inch thick. Then cut into squares (or any shape you like). I used a cookie cutter and cut squares of 1.5 x 1.5 inch.",
+      "Transfer the papdi/crackers onto a baking sheet lined with parchment paper. You can even pierce them with fork so that they don&#x27;t rise during baking.",
+      "Bake at 400 F degrees for 12 to 13 minutes until golden brown and crisp. I would suggest keeping an eye on them from 10 minutes mark, they can burn pretty quickly.",
+      "Let them cool down to room temperature and then store in an airtight container for 2 to 3 weeks.Serve besan papdi as a snack with chai!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Besan",
+        "unit": "C",
+        "notes": "120 grams, gram flour",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ajwain",
+        "unit": "tsp",
+        "notes": "carom seeds",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hing",
+        "unit": "tsp",
+        "notes": "asafoetida, optional",
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": "30 ml, I used avocado oil",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": "30 ml",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "63a5d3a3c065ceb2b293c383e248df0dd91d0805f7c6906487e3d7485eab0b41",
+    "lineage_hash": "b64b9433d1a7e49d07e849198f10dbc43791ec3dc72231857f8e9173e6bc0687"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/baked-besan-papdi/",
+    "fetchedAt": "2026-08-01T22:43:03.791Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/baked-besan-papdi/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

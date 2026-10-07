@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Bad Santa Cocktail",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Use a vegetable peeler or paring knife to remove the zest from the 2 oranges and the lemon, and juice the oranges, reserving the juice (save the zested lemon for another use). Crack or lightly crush the dried spices using a mortar and pestle or a heavy wooden spoon (do not grind). Toast the dry spices in a large pot over medium- high heat, until aromatic. Let the pot cool slightly, then add the wine, the zest and juice from the oranges, the lemon zest, the sugar and bay leaves. Bring the mixture to a low simmer over medium heat, stirring to combine. Let simmer for 30 minutes, taking care not to let the mixture boil. Remove from heat and let rest for 1 hour. Strain off the solids, then add the port, Grand Marnier and raisins. The mixture may be refrigerated until ready to serve; to serve, reheat in a slow cooker or in a saucepan over medium-low heat until warm."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "eb836b82a86369d5d4bbbdfce0bd22b85b6a4c31cea96d3199724d1432c6fe4c",
+    "lineage_hash": "c63f8c82fba3393f94fbacc475508b19c1d466ed31fcbe679bb36b95512bf5e6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bad-santa-cocktail-from-miracle/",
+    "fetchedAt": "2026-08-03T18:33:51.363Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bad-santa-cocktail-from-miracle/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

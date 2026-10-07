@@ -1,0 +1,338 @@
+{
+  "recipe": {
+    "name": "Calcutta Chicken Rezala",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "371",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Wash the chicken very well. Set it to boil with salt, water and spices listed here.",
+      "After about 15 minutes, fetch the chicken out, and strain the stock. Set aside.",
+      "Sift coriander powder.",
+      "Separately, lightly toast mace and white peppercorns. Grind them to a fine powder.",
+      "Separately, lightly toast poppy seeds, cashew, and khopra (peeled). Grind to a powder.",
+      "Grind ginger and garlic with water. Strain over a fine tea-strainer to extract the juice.",
+      "Grind white onion to a smooth paste.",
+      "Heat vegetable oil and ghee in a pan on low heat.",
+      "Fry red chillies for a minute and set aside. Fry makhana unil crisp and set aside.",
+      "Temper the oil with mace, peppercorn and cardamom.",
+      "Add onion paste and fry on low heat for 10 mins.",
+      "Add the ginger-garlic juice and continue frying for 5 mins.",
+      "Add sifted coriander, and the mace-peppercorn powder, and continue frying for 3 mins.",
+      "Then add the poppy, cashew and khopra mixture and fry another 3 mins.",
+      "Make a slurry of cornflour and add it to the yoghurt. Beat thoroughly until lump free. Add it to pan, and whisk constantly so that the yoghurt doesn't split.",
+      "Once the yogurt has cooked down, and you see oil float to the top, add the par-boiled chicken, stock, salt and sugar. Boil on medium heat for 30 mins.",
+      "To finish, grind green chillies with a tbsp of milk. Strain it back into the rest of the milk. Also mix in kewra water and meetha attar.",
+      "Once the chicken is tender and gravy has thickened, turn off the heat. Add the milk, chillies and aromatics mixture.",
+      "Add the fried red chillies and makhana we had set aside earlier. Garnish with rose petals."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken",
+        "unit": "kg",
+        "notes": "see note above on type and cut",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": "sliced",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "14",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "g",
+        "notes": "sifted",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mace",
+        "unit": "g",
+        "notes": "lightly toasted",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Peppercorns",
+        "unit": "g",
+        "notes": "lightly toasted",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Poppy Seeds",
+        "unit": "g",
+        "notes": "lightly toasted",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cashewnuts",
+        "unit": "g",
+        "notes": "lightly toasted",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Khopra",
+        "unit": "g",
+        "notes": "dried coconut, peeled and lightly toasted",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Onion",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chillies",
+        "unit": null,
+        "notes": "dried",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Makhana",
+        "unit": null,
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mace",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yoghurt",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Warm Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kewra Water",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "A Drop Meetha Attar",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rose Petals for Garnish",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "cabc9239d51ee4f3e6d451ecb166331fb0f142f24535e3bb9c79a60a190b56cb",
+    "lineage_hash": "e83d4437bfa99e02bdb0c230405c8ad3381d107de14ed910bc0c8e444b17cf7b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.bongeats.com/recipe/chicken-rezala",
+    "fetchedAt": "2026-08-01T18:27:48.587Z"
+  },
+  "rawSource": "https://www.bongeats.com/recipe/chicken-rezala",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

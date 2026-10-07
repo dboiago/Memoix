@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Bitter Giuseppe Cocktail",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Stir all the ingredients together in a mixing glass with ice until chilled. Strain into a rocks glass over a single large ice cube and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "31fc14194702d220eda96b1f3a428b8ad8749fa818a41579119313cd5d48a90b",
+    "lineage_hash": "bf8712a5cb9ebf503e64a5ffed3bbf38423cbd049eea86f7490066ea3300e6da"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bitter-giuseppe-cocktail/",
+    "fetchedAt": "2026-08-04T01:33:15.735Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bitter-giuseppe-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

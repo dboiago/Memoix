@@ -1,0 +1,150 @@
+{
+  "recipe": {
+    "name": "Apricot Cake",
+    "time": "1 hr 15 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "270",
+      "carbohydrateContent": "29",
+      "fatContent": "16",
+      "proteinContent": "5"
+    },
+    "directions": [
+      "Preheat the oven to 350 °F. Butter and flour a 9&quot; springform pan. You can also line the bottom of the pan with parchment paper. (see note)",
+      "Whisk together 3&#32;large eggs, 1 teaspoon&#32;vanilla extract, 1 teaspoon&#32;almond extract and 1 oz of the buttermilk in a small bowl, set aside.",
+      "Combine 5 ½ oz&#32;cake flour, 2 oz&#32;almond flour, ½ teaspoon&#32;baking soda, ⅛ teaspoon&#32;table salt, 6 oz&#32;granulated sugar in a mixing bowl. Mix on low speed for 30 seconds to distribute the ingredients.",
+      "With the mixer running on low, toss in 6 oz&#32;unsalted butter a tablespoon at a time. Add the remaining buttermilk and increase the speed to medium and mix 2   minutes to aerate the batter. With the mixer on low speed, slowly add the egg mixture in two batches. Scrape the bowl and mixer after each addition.",
+      "Pour the batter into the prepared pan and spread to level. Place 16 oz&#32;fresh apricots, cut side down, in concentric circles over the batter. Sprinkle sliced almonds over the cake. Optionally, you can also sprinkle a little sugar with the almonds.",
+      "Bake on the bottom rack of the oven until the center of the cake springs back when pressed, about 45 minutes. Cool 10 minutes in the pan before releasing the sides.",
+      "Serve slightly warm or room temperature. A sprinkle of powdered sugar makes a nice finish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "room temperature",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almond Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "oz",
+        "notes": "⅓ cup",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cake Flour",
+        "unit": "oz",
+        "notes": "1 ¼ cups, see note",
+        "amount": "5½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almond Flour",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "¾ cup",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "room temperature",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apricots",
+        "unit": "oz",
+        "notes": "halved and pitted, fresh",
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almonds",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar for Sprinkling the Top (optional)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3d2a720203b7c8ff4a59de9b5b95667d1b384eb3c51e73a43cf033a4867c042b",
+    "lineage_hash": "3cbb429f7f64da5f885c3347f810bc458129fb5624c68b22198541276e95772e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2024/06/12/apricot-cake/",
+    "fetchedAt": "2026-08-01T23:28:17.002Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2024/06/12/apricot-cake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

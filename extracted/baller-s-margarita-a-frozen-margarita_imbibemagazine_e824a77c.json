@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Baller's Margarita",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Hurricane",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Rim a hurricane glass with salt and set aside. Add the Champagne, tequila, Licor 43, and lime sherbet to a blender and blend with the ice. Pour into the prepared glass and garnish.\nLime Sherbet Muddle together 3 cups granulated sugar, 1⁄2 cup grated lime zest, and 1 1⁄2 tablespoons grated orange zest in a bowl. Add 2 1⁄3 cups lime juice, 2 cups water, 1⁄4 cup orange juice, 3 or 4 drops of orange flower water, and 2⁄3 cup heavy cream and stir to combine. Let the ingredients steep together in the refrigerator for about 1 hour, allowing the citrus oils to properly infuse into the sugar. Strain through a cheesecloth and transfer to an airtight container. The sherbet is ready to use after freezing for 3 to 5 hours. It will keep in an airtight container in the freezer for up to 1 month.\nNOTECastro says store-bought lime sorbet or sherbet can be substituted, but he highly recommends trying the homemade version. “It’s like comparing Chips Ahoy! to homemade chocolate chip cookies.”"
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "2daec905b6955c215999ba01a866e7db7aeaf62c943a8caa8e8d4b53b0d2191d",
+    "lineage_hash": "5bec4f0f1c9cabc0c2034242388c83c5a883a3aa80da7303f5e5bbf689a9fc06"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/ballers-frozen-margarita/",
+    "fetchedAt": "2026-08-04T00:38:40.074Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/ballers-frozen-margarita/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

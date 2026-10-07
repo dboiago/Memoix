@@ -1,0 +1,177 @@
+{
+  "recipe": {
+    "name": "Bear Claw Pastries",
+    "time": "3 hr 15 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "421",
+      "carbohydrateContent": "15",
+      "fatContent": "8",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "Mix the filling and refrigerate until you’re ready to assemble the pastries.",
+      "The filling can be refrigerated for up to 3 days or frozen for a month.",
+      "Roll the Danish dough on a lightly floured surface.",
+      "Roll the dough to a 15″x16″ rectangle.",
+      "Cut the dough in to twelve 5″x4″ rectangles.",
+      "Brush the rectangles with egg wash. Pipe a line of filling along the shorter side of the rectangle, leaving a 1/2″ border on either side.",
+      "Fold the top side of the dough over the filling.",
+      "Place it along the bottom side of the filling.",
+      "Fold the bottom side of the dough towards the middle to cover the seam.",
+      "Press along the seam to encase the filling.",
+      "Pinch the ends to enclose the filling.",
+      "Line the pastries on the prepared baking sheets, seam side down.",
+      "Cut 1/2″ slits in the unfilled dough to make the “claws”.",
+      "Bend the pastries back to form an arc and open up the claws.",
+      "Cover the tray and set it aside to proof at room temperature or refrigerate overnight.",
+      "Brush the pastries with egg wash and sprinkle with sliced almonds.",
+      "Bake until golden brown and well-puffed.",
+      "Drizzle the icing over the slightly warm pastries."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Almond Paste",
+        "unit": "oz",
+        "notes": null,
+        "amount": "3",
+        "section": "Almond Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "2",
+        "section": "Almond Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "room temperature",
+        "amount": "1",
+        "section": "Almond Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Almond Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": "Almond Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": "Almond Filling",
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Almond Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Recipe Danish Dough",
+        "unit": null,
+        "notes": "see note",
+        "amount": "1",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Or",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Recipe Sourdough Danish",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "for egg wash",
+        "amount": "1",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Almonds",
+        "unit": "oz",
+        "notes": "1 cup, sliced",
+        "amount": "3",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Almond Extract",
+        "unit": "drops",
+        "notes": "optional",
+        "amount": "1-2",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Confectioner Sugar",
+        "unit": "oz",
+        "notes": "1/2 cup",
+        "amount": "2",
+        "section": "Assembly",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e2762f5fbbd76e4f56bdf1d1e0cc449832787e44fbe3d7efedc11c8a392dd43a",
+    "lineage_hash": "86ce07dc463714a4f0ef525baf092bde136514b956252bd29f171b0dde35d953"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2024/01/19/bear-claw-pastries/",
+    "fetchedAt": "2026-08-01T18:14:01.695Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2024/01/19/bear-claw-pastries/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

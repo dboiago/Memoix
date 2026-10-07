@@ -1,0 +1,162 @@
+{
+  "recipe": {
+    "name": "Bream With Galangal Broth & Pak Choi",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the broth, fill a medium sized saucepan with the water and set aside on the stove",
+      "Remove the first layer off the lemon grass and slice finely on a diagonal. Peel the ginger and galangal and cut both in half lengthways. Proceed to slice finely on a diagonal, put aside with the lemon grass",
+      "Crush the lime leaves in the palm of your hands and combine with all of the other aromatics in the saucepan",
+      "Bring to the boil and turn off, leaving to infuse for 1 hour. Strain and lightly season with salt. Set aside for reheating",
+      "While the broth is infusing, prepare the pak choi by washing the pak choi and cutting into quarters, lengthways",
+      "Place the oils in a hot wok and add the pak choi, toss gently for 1 minute, until the green of the pak choi has wilted",
+      "For the bream, place a pan on a medium heat and add some olive oil. Place the fish in the pan skin side down and cook for 2 minutes or until the skin is golden. Be sure to gently press the fish down with a spatula to ensure even cooking. Turn the fish over and the heat off, season with the lemon juice and salt",
+      "To serve, bring the broth to the boil again and pour into large teapot or four smaller ones. Place the pak choi in the bottom of each plate. Place the fish on top. Dress the top of the fish with the slices of spring onion and the mushrooms. Finish by pouring the broth over the dish"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Galangal",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "1000",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemongrass Stalks",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Makrut Lime Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Bream",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pak Choi",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Clump of Enoki Mushroom",
+        "unit": "g",
+        "notes": "stems trimmed",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3e6e25bf694332b647a808e734609a62eef99f2620e89e2970a997d7c1bb1f7b",
+    "lineage_hash": "ea07e5388be54d5a26090e8ca26cf0715c65d83681c5bc7eaca39ce1c8cccc25"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/bream-recipe-galangal-broth-pak-choi",
+    "fetchedAt": "2026-08-03T17:24:10.035Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/bream-recipe-galangal-broth-pak-choi",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

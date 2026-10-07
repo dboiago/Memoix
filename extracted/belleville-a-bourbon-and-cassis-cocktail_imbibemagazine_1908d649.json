@@ -1,0 +1,37 @@
+{
+  "recipe": {
+    "name": "Belleville",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Large Ice Cube",
+    "garnish": [
+      "Lemon Peel"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all of the ingredients in a mixing glass with ice and expressed lemon peel. Stir to chill, then strain over a large ice cube in the glass. Garnish with a lemon peel.",
+      "Note&#8220;This cocktail calls for a very under-utilized technique called the &#8216;Royal Stir&#8217; where we incorporate a lemon peel in the mixing glass to gently add brightness and texture during the stir—but not getting in the way of the aromatics of the final cocktail via an expression. We encourage home bartenders to experiment with this approach if they want to highlight the high quality of the spirits that are being used rather than the citrus garnish.&#8221;—Allison Lovelace"
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "1f78b83dd2e457d1f93896c21d730a97099bcd47393193d9ed15bdf830baafd4",
+    "lineage_hash": "3a3f62c6489c48a1fa887dfe8dc9064a0c5ad6f8f36d24a4b9e93b6f21adc8c3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/belleville-bourbon-and-cassis-cocktail/",
+    "fetchedAt": "2026-08-04T01:45:11.348Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/belleville-bourbon-and-cassis-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

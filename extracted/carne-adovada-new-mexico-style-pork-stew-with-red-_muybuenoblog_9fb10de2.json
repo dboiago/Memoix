@@ -1,0 +1,156 @@
+{
+  "recipe": {
+    "name": "Carne Adovada (New Mexico-Style Pork Stew With Red Chiles)",
+    "time": "3 hr 40 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "255",
+      "carbohydrateContent": "15",
+      "fatContent": "12",
+      "proteinContent": "20"
+    },
+    "directions": [
+      "In a medium saucepan, bring the dried chiles and water to a boil over high heat. Cover, reduce the heat to low, and simmer for about 5 minutes, until the chiles have softened. Remove from the heat and cool to room temperature. Drain.",
+      "Blend the softened chiles, garlic, onion, vinegar, salt, cumin, pepper, oregano, and cinnamon in a blender until smooth.",
+      "In a large bowl or baking dish, mix together the pork and chile purée until the meat is coated. Cover with plastic wrap and refrigerate for at least 3 hours and up to overnight.",
+      "In a large skillet, heat the oil over high heat. Add the carne adobada and cook for 10 to 15 minutes, until the meat is cooked through. Cover, reduce the heat to low, and simmer, stirring occasionally, for 12 to 15 minutes, until most of the juices from the meat and adobo sauce have evaporated and the meat has started to brown.",
+      "Serve with beans and rice, or use as a filling for tacos."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ancho Chiles",
+        "unit": null,
+        "notes": "dried, stemmed and seeded",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Guajillo Chiles",
+        "unit": null,
+        "notes": "dried, stemmed and seeded",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pasilla Chiles",
+        "unit": null,
+        "notes": "dried, stemmed and seeded",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Vinegar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cumin",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oregano",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pork Shoulder Roast",
+        "unit": "lb",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b6fb5b998e2eee5f032a19761afc4f597c0aeffc612503c01339e72a3bc9870f",
+    "lineage_hash": "57e2fb31223f06b5b55b698244678ff6dd644d2245bb850cf35753edbd570af1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/carne-adobada/",
+    "fetchedAt": "2026-08-02T01:05:40.193Z"
+  },
+  "rawSource": "https://muybuenoblog.com/carne-adobada/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

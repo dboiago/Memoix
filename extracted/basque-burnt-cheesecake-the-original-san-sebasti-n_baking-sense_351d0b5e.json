@@ -1,0 +1,83 @@
+{
+  "recipe": {
+    "name": "Basque Burnt Cheesecake",
+    "time": "4 hr 40 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "ES",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "370",
+      "carbohydrateContent": "28",
+      "fatContent": "27",
+      "proteinContent": "6"
+    },
+    "directions": [
+      "Preheat the oven to 500 °F. Line a 10&quot; spring form pan with 2 sheets of parchment paper, leaving a 2&quot; border of  paper extending from the top of the pan. The paper will not lie flat against the pan, this is ok.",
+      "Place 32 oz&#32;cream cheese and 14 oz&#32;granulated sugar in the bowl of a food processor. Pulse a few times to combine the ingredients. Add 7&#32;large eggs, 1 teaspoon&#32;table salt and 8 oz&#32;heavy cream. Process the batter for 3 minutes to completely emulsify the batter. If you don&#39;t have a food processor the batter can be mixed in the same order of ingredients a stand or hand mixer. Just be sure to mix the batter until very smooth and glossy.",
+      "Pour the batter into the prepared pan and immediately place it in the oven. Bake until the top of cheesecake is very dark brown and the sides of the cake are risen-up and set, about 25 minutes. The center of the cake will still be quite soft and will jiggle like a liquid if you shake the pan.",
+      "Remove the cake from the oven and cool to room temperature on a cooling rack. Refrigerate the cake until completely chilled, at least 4 hours.  The cake will be soft and fluffy around the edges and custardy in the center. The center will be set just enough to slice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cream Cheese",
+        "unit": "oz",
+        "notes": null,
+        "amount": "32",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "1 ¾ cups",
+        "amount": "14",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e695e2fcde9ddf8d2e3db598d3525d9e1d9e7f8494f14de5fa2209c7ca97747e",
+    "lineage_hash": "d9a1a9f125e8a71fbdb6a99ce6edb22e018385e31b3987c62c62bbd7ba0c995b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2019/10/10/san-sebastian-cheesecake/",
+    "fetchedAt": "2026-08-02T08:05:03.607Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2019/10/10/san-sebastian-cheesecake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

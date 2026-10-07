@@ -1,0 +1,104 @@
+{
+  "recipe": {
+    "name": "Angel Food Cake",
+    "time": "1 hr 10 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "166",
+      "carbohydrateContent": "36",
+      "fatContent": "0.3",
+      "proteinContent": "5"
+    },
+    "directions": [
+      "Preheat the oven to 350 °F. Have an angel food pan, or tube pan, ungreased, ready for the batter.",
+      "Into a medium bowl sift 4 ½ oz&#32;cake flour, half the sugar and ¼ teaspoon&#32;salt. Whisk the ingredients together to distribute the salt and sugar evenly. Set aside.",
+      "In a large mixer bowl or in the bowl of a stand mixer, whisk 12&#32;large egg whites on medium speed until frothy. Add 1 teaspoon&#32;cream of tartar and continue whipping until soft peaks form. With the mixer running, gradually add the remaining sugar. Increase the speed to medium-high and continue whipping until stiff peaks are formed. The total whipping time will be about 8-10 minutes.",
+      "Add 2 teaspoons&#32;vanilla extract and 2 oz&#32;water and whip back to full peak.",
+      "Sift 1/3 of the flour mixture over the meringue and use a spatula to fold in the flour until it&#39;s almost incorporated. Sift and fold in the remaining flour mixture in two batches. Fold just until all the flour is incorporated.",
+      "Scoop the batter into the tube pan and spread to even layer. Bake until the cake is lightly browned and springs back when pressed or a toothpick inserted in the center comes out clean, about 35-40 minutes.",
+      "Remove the pan from the oven and immediately invert the pan over a cooling rack. Leave the pan inverted until the cake is completely cool.",
+      "Run a small spatula or paring knife around the sides of the cake to loosen and release the cake from the pan.",
+      "The cake will keep, well-wrapped, at room temperature for several days."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cake Flour",
+        "unit": "oz",
+        "notes": "1 cup, see note",
+        "amount": "4½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "oz",
+        "notes": "1 ½ cups, divided",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": "large",
+        "notes": "14 oz",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream of Tartar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "52a84ef8e0da3339d8155a9c02dada4c5382ca8e83246edfeb50d6f58cb096dd",
+    "lineage_hash": "52dccfb3d05d2b2b184aa67ea74a44d5e07a1ffeb923c0955c106960f1e0d0bd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2018/08/10/angel-food-cake/",
+    "fetchedAt": "2026-08-01T21:41:28.385Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2018/08/10/angel-food-cake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

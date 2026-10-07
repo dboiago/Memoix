@@ -1,0 +1,70 @@
+{
+  "recipe": {
+    "name": "American Breakfast Cocktail",
+    "time": "4 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Old-fashioned",
+    "garnish": [
+      "Grapefruit Zest Twist"
+    ],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "213",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Select and pre-chill an OLD-FASHIONED GLASS.",
+      "Prepare garnish of grapefruit zest twist.",
+      "SHAKE all ingredients with ice.",
+      "STRAIN into ice-filled glass.",
+      "EXPRESS grapefruit zest twist over cocktail and use as garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bourbon Whiskey",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pink Grapefruit Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maple Syrup",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "69136c03f883d9c61d4e05c57e83f66f41dd5710528af2be0de201e1c8d4715c",
+    "lineage_hash": "b16c966b655b295a94d6d08dad3744325308e637ff992d673fb2e8f9d7c8e4ea"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/2245/american-breakfast",
+    "fetchedAt": "2026-08-03T04:28:46.945Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/2245/american-breakfast",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

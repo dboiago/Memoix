@@ -1,0 +1,122 @@
+{
+  "recipe": {
+    "name": "Blood Orange Mousse, Blood Orange Sorbet",
+    "time": "50 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the blood orange sorbet, bring the water and sugar to the boil in a saucepan. Once the sugar has dissolved, simmer for 5 minutes to make a stock syrup",
+      "Remove from the heat and allow to cool, then add the orange juice and the lemon juice. Chill the mixture, then churn in an ice cream machine or place in the freezer, stirring the sorbet by hand every half-hour for the first two hours to prevent crystallisation. Store in the freezer",
+      "For the blood orange mousse, pour the blood orange juice into a saucepan. Bring to the boil and reduce by half.  You will need about 220ml of juice at the end",
+      "Soak the gelatine in cold water to soften. Once softened remove the gelatine from the water and squeeze any moisture out. Add this to the reduced hot orange juice, stir to dissolve and leave to cool",
+      "Whisk the 3 whole eggs and 2 egg yolks in a warmed bowl at high speed until the volume has doubled. Add the sugar a little at a time, whisking well. Add the egg mixture to the cooled orange juice and gelatine and combine",
+      "Whisk the double cream into soft peaks and fold into the orange mixture. Pour this mixture into the ramekins and place in the fridge for an hour to firm up",
+      "Remove the sorbet from the freezer about 20 minutes before serving to allow it to soften",
+      "To plate serve the mousse with the blood orange sorbet alongside"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Blood Oranges",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sheets of Gelatine",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "275",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blood Oranges",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bbccd5f079cb25a0eb5576a5ac9a2bd208e04369c016d5aa3fe17c38da29706f",
+    "lineage_hash": "933bdc823e15b35d97a687f34f336ab9634eaa6902f6d81e8b4acc660fce753c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/blood-orange-recipe-mousse-sorbet",
+    "fetchedAt": "2026-08-03T17:45:06.363Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/blood-orange-recipe-mousse-sorbet",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

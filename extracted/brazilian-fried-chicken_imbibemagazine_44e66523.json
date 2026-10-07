@@ -1,0 +1,39 @@
+{
+  "recipe": {
+    "name": "Brazilian Fried Chicken",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the marinade, place the whole garlic cloves in the bowl of a food processor fitted with the metal blade and pulse until minced. Add the lemon juice, onion, parsley, wine, olive oil, salt and pepper and process until finely chopped. Transfer the marinade to a large mixing bowl, add the chicken pieces and toss to combine. Cover and refrigerate overnight.",
+      "In a small bowl, whisk together the flour, oregano and baking powder. Remove the chicken from the refrigerator and leave it in the marinade. Add the flour mixture and stir to coat the chicken evenly. Discard any marinade remaining in the bowl.",
+      "In a large heavy skillet, heat 1/2 in. of vegetable oil over medium heat to 365 degrees F. Set a wire rack over a rimmed baking sheet.",
+      "Working in batches, carefully place 6-8 pieces of chicken in the oil. Fry, turning often, for 8 minutes, or until brown and juices run clear. Maintain a frying temperature of 340 degrees F to 350 degrees F. Drain the chicken on a wire rack. Repeat with the remaining pieces.",
+      "After all the meat is fried, turn off the heat. Line a plate with a paper towel. Place the sliced garlic in a metal strainer and slowly lower into the hot oil to fry for 15-20 seconds or until lightly browned. Quickly remove the strainer from the oil and drain the garlic on the prepared plate.",
+      "Serve the chicken sprinkled with garlic and additional chopped parsley."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "e1b62009d06ec7673c4de657b09aeefba5aac40fd3ea5421c1b66d2ff6069d40",
+    "lineage_hash": "716610a9cb658d37258c0b3deb381976faa6b2e1008b9779b4603f5e6b8014dc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/brazilian-fried-chicken-2/",
+    "fetchedAt": "2026-08-04T01:40:28.658Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/brazilian-fried-chicken-2/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

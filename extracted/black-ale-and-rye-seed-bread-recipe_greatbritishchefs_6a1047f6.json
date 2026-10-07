@@ -1,0 +1,163 @@
+{
+  "recipe": {
+    "name": "Black Ale and Rye Seed Bread",
+    "time": "45 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by making the starter for the bread. Mix together the apple juice, 50ml of ale, 80g rye flour and raisins. Leave at room temperature in a sterilised jar with the lid on",
+      "On day 2, refresh the starter by adding 60g of rye flour and 75ml of ale into the same jar. Mix well and leave at room temperature",
+      "On day 3, refresh by adding 75ml of ale. Mix well and pass the mixture through a large sieve to remove the raisins. Add 60g of rye flour, mix well and return to the jar. Leave at room temperature",
+      "On day 4, again add 75ml of ale and 60g of rye flour, mix well and leave at room temperature",
+      "By day 5, the fermentation should have begun and the mixture should be bubbling slightly",
+      "To make the bread dough, begin by spraying a 30x8x8cm bread tin with baking spray",
+      "Mix together the ale, yeast and 185g of the starter. In a separate bowl, mix all the dry ingredients together, then add the remaining ingredients (including the starter mixture) and combine well, until a smooth batter is formed",
+      "Spread the mixture into the tin and wrap the tin in cling film. Leave in a warm place to prove for about 2 hours, or until it doubles in size",
+      "Dust the surface of the loaf with rye flour, place in the oven and bake for 10 minutes, then reduce the heat to 180°C/gas mark 4 and bake for another 25 minutes. Remove from the tin and allow to cool for 10 minutes before cutting"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Apple Juice",
+        "unit": "g",
+        "notes": "fresh Braeburn juice if possible",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ale",
+        "unit": "ml",
+        "notes": "Scott uses Skye Black Ale, plus 225ml for feeding the starter",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rye Flour",
+        "unit": "g",
+        "notes": "plus 180g to feed",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raisins",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ale",
+        "unit": "g",
+        "notes": "Scott uses Skye Black Ale",
+        "amount": "160",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yeast",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wholemeal Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "65",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rye Flour",
+        "unit": "g",
+        "notes": "plus extra for dusting",
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "g",
+        "notes": "Scott uses Isle of Skye sea salt",
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Bread Flour",
+        "unit": "g",
+        "notes": "unbleached",
+        "amount": "185",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Treacle",
+        "unit": "g",
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pumpkin Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Linseed",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sunflower Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Spray",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "449357a6117c8744ec12e2f2f38dd74d0a35550c21a0010b7a756038149a7ee4",
+    "lineage_hash": "67b4293d3626febf87b4db2bd2b4091468a61cd4f4588d56040e7801455f8c6a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/black-ale-rye-seed-bread-recipe",
+    "fetchedAt": "2026-08-03T10:59:31.854Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/black-ale-rye-seed-bread-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

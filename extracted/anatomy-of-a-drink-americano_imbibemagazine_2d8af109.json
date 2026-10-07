@@ -1,0 +1,35 @@
+{
+  "recipe": {
+    "name": "Americano",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the Campari and vermouth to a glass filled with ice. Slowly top with the club soda, then gently stir one full revolution to combine. Garnish.",
+      "TipFor the sweet vermouth, Bar Pisellino uses a blend of equal parts Dolin Rouge and Punt e Mes. Feel free to use your preferred vermouth or experiment with your own mixture to taste."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "c81ca01577f0d88ace91e0d311a3630ce8daac8665fb85ea9c6f041226517028",
+    "lineage_hash": "e7b23b034f19b0abe47834f6735a2ac84d11423c12593b707b88e72982f81061"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/anatomy-of-a-drink-americano/",
+    "fetchedAt": "2026-08-04T00:55:44.635Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/anatomy-of-a-drink-americano/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

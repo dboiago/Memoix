@@ -1,0 +1,112 @@
+{
+  "recipe": {
+    "name": "Chili Garlic Noodles",
+    "time": "25 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "TH",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "549",
+      "carbohydrateContent": "63",
+      "fatContent": "28",
+      "proteinContent": "13"
+    },
+    "directions": [
+      "Bring a large pot of water to a boil over high heat and add enough salt so that the water tastes like a well-seasoned soup.",
+      "While you wait for the water to boil, remove the seeds and pith from some or all of the dried chilies depending on how much heat you want (or maybe don’t remove them at all if you want it spicy!) If your spice tolerance isn’t high, remove all the seeds and pith, as and you can always add more later if you want it spicier.",
+      "Grind the chilies in a coffee grinder or mortar and pestle until mostly fine; a few bigger flakes remaining is no problem. Measure out 2 teaspoons of the ground chilies, and reserve the rest just in case you want to add more later.",
+      "Once the water is boiling, add the linguine and stir to prevent the noodles from sticking until the water comes back to a full boil again. Let it cook for 1 minute LESS than the time stated on the package.",
+      "Meanwhile, heat a wok on the stove over medium heat and add the oil, garlic, and anchovies. Gently saute the garlic for 3-4 minutes until it starts to turn golden. There should be plenty of oil for the garlic to fry in, so don&#39;t be afraid to add a little extra.",
+      "Once the garlic is golden, and the anchovies start to pop, add the 2 teaspoons of ground chilies, and cook for another minute until it&#39;s aromatic and smells slightly smoky. Immediately turn off the heat to prevent the chilies from burning, then add the oyster sauce and the butter and stir until the butter is melted. If the noodles are not done at this point, just keep the heat off while you wait for them.",
+      "Once the noodles are done, bring the pot close to the wok and use tongs to grab the noodles from the pot and into the wok without shaking off excess water; the excess water will help finish cooking the noodles and bind the sauce. Turn the heat back to medium and toss the noodles until they are well coated and all excess water has been absorbed. If you have any extra olive oil from the anchovies, you can add it at this point.",
+      "Turn off the heat, and throw in the Thai basil and mix briefly just until wilted. Taste and adjust the seasoning as needed, and you can add extra chili flakes for more heat if desired.",
+      "Garnish with a few extra fresh Thai basil leaves and serve on its own or as a side; it works great with pan fried fish or chicken!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Linguine",
+        "unit": "oz",
+        "notes": null,
+        "amount": "5.3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Neutral Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fillets Anchovies",
+        "unit": null,
+        "notes": "see note 1, minced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilies",
+        "unit": "oz",
+        "notes": "dried, see note 2",
+        "amount": "⅕",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leaves Thai Basil",
+        "unit": null,
+        "notes": "optional, see note 3",
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f7cdf8ca47cf101df654082d0076d625cba0aab471ee36be8fa88e6d5cb28456",
+    "lineage_hash": "abf29187b9fa58c297ec1a174f7711483778359059f1dc826e07aeae47390fee"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://hot-thai-kitchen.com/chili-garlic-noodles/",
+    "fetchedAt": "2026-08-01T21:33:25.134Z"
+  },
+  "rawSource": "https://hot-thai-kitchen.com/chili-garlic-noodles/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

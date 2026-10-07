@@ -1,0 +1,125 @@
+{
+  "recipe": {
+    "name": "Corn Bread",
+    "time": "25 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Sift flour, baking powder, and salt. Mix in the spices, sugar and cornmeal. Cut softened butter into pieces, and mix well.",
+      "Beat the eggs and add the milk and vanilla. Add the liquid to the dry ingredients and mix well. Beat until fluffy.",
+      "Pour in a greased dish and bake for about 20 minutes or until slightly brown."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornmeal Enriched",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Evaporated Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter Unsalted",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar Granulated",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg Grated",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a9c3e45586f0ac1d9e3944e42a6211552250a1eb239518181d3e38f918c780de",
+    "lineage_hash": "e86e8cd3fb4f43bfe8da178f1f7948d20c74e7c87b3e0592325494cf3f494210"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.simplytrinicooking.com/corn-bread/",
+    "fetchedAt": "2026-09-25T23:14:01.610Z"
+  },
+  "rawSource": "https://www.simplytrinicooking.com/corn-bread/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

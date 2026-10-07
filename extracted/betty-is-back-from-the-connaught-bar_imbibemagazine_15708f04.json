@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Betty Is Back",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Flute",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all of the ingredients, except the Champagne, in a mixing glass filled with ice and stir until well chilled. Strain into a flute and gently pour in the Champagne. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "8f538ec11a29a5bdd232c1b8b504b30ac0c8af79a77e4c75b5d7261600a92bc7",
+    "lineage_hash": "44a7a894413853d6e652fe2788a4dcbf4af69762770be504b009acaf240e430c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/the-connaught-bar-betty-is-back/",
+    "fetchedAt": "2026-08-03T23:06:22.408Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/the-connaught-bar-betty-is-back/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

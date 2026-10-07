@@ -1,0 +1,300 @@
+{
+  "recipe": {
+    "name": "Cheese, Potato and Quinoa Cakes",
+    "time": "1 hr 15 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Bring 2 pans of salted water to the boil. Meanwhile, rinse the quinoa under cold water and peel the potatoes, cutting them into even sizes if needed. Cook the potatoes in 1 pan and the quinoa in the other for around 15 minutes, until the potatoes are just cooked through and the quinoa is tender. Drain both and leave to cool",
+      "Coarsely grate the potato and place in a large mixing bowl. Add the quinoa, chilli, ginger, ground coriander and cumin, salt, coriander leaves and cornflour, then mix well until combined",
+      "Divide the mixture into 8 equal portions, then flatten each portion into a disc. Add around 10g of the smoked cheese into the centre of each disc, then use your hands to bring the mixture up and around the cheese and roll it into a smooth ball. Place on a plate or tray and into the fridge to chill for at least 20 minutes",
+      "While the potato cakes chill, prepare the other elements. Combine all the ingredients for the yoghurt and season to taste with salt. Transfer to a piping bag if you have one, then reserve in the fridge",
+      "For the lentils, add a generous glug of oil to a frying pan over a medium heat and add the soaked lentils. Fry for 5-10 minutes until golden and crisp, then drain on kitchen paper. Whilst still hot, toss the fried lentils with the pepper, amchur, chaat masala and a pinch of salt and set aside",
+      "Make the dressing for the salad by placing the olive oil, lemon juice, honey, ginger, pepper and a pinch of salt in a food processor or blender. Blitz until completely smooth, then set aside",
+      "When ready to cook the potato cakes, bring a deep-fat fryer or deep pan of oil to 180°C",
+      "Deep-fry the potato cakes for 3-5 minutes, until dark brown all over",
+      "Meanwhile, toss the tomatoes and baby salad leaves in a generous amount of the dressing",
+      "To serve, pipe or spoon 2 mounds of yoghurt onto each plate, then top each mound with a fried potato cake. Spoon some of the dressed salad alongside, garnishing with diced beetroot, sliced radish and a scattering of the fried lentils. Finish with a drizzle of mint and tamarind chutney on top of the cakes"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Maris Piper Potatoes",
+        "unit": "g",
+        "notes": null,
+        "amount": "240",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Quinoa",
+        "unit": "g",
+        "notes": null,
+        "amount": "240",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Coriander",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cumin",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour",
+        "unit": "Tbsp",
+        "notes": "heaped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Cheddar",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "for deep-frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yoghurt",
+        "unit": "g",
+        "notes": "extra-thick or hung",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "bunch",
+        "notes": "finely chopped",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherry Tomatoes",
+        "unit": "g",
+        "notes": "quartered",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Baby Salad Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooked Beetroot",
+        "unit": null,
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Radishes",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Runny Honey",
+        "unit": "ml",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Split Yellow Moong Lentils",
+        "unit": "g",
+        "notes": "soaked for 2 hours in cold water then drained",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amchur Powder",
+        "unit": "tsp",
+        "notes": "also known as dried mango powder",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chaat Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tamarind Chutney",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6f3b8da4497c8ff1f4f03bccb2065147110a5e499c644904ee8b03d637703c7d",
+    "lineage_hash": "25aded22f55fa03ab181a51cbe94d943bc96a85027d598441466bca75721624b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cheesy-potato-and-quinoa-cakes-recipe",
+    "fetchedAt": "2026-08-02T22:04:19.592Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cheesy-potato-and-quinoa-cakes-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

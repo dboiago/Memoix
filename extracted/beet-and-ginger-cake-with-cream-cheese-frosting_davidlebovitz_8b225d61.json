@@ -1,0 +1,178 @@
+{
+  "recipe": {
+    "name": "Beet and Ginger Cake with Cream Cheese Frosting",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "9",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Butter an 8-inch (20cm) square or round pan. Line the bottom with parchment paper. In a small bowl, pour boiling water over the candied ginger and let it sit for 15 minutes. Drain the ginger and squeeze out as much of the excess water as possible.",
+      "Preheat the oven to 350ºF (180ºC).",
+      "In a large bowl, whisk together the flour, sugar, baking powder, baking soda, and salt. Add the grated beets, orange zest, walnuts and candied ginger to the bowl, but do not stir in.",
+      "Whisk together the eggs, sour cream, oil, and Fruit Fresh or vitamin C is a small bowl. Pour the mixture over the dry ingredients in the large bowl and use a spatula to mix the ingredients together, stirring just until thoroughly combined",
+      "Scrape the batter into the prepared cake pan, even the top, and bake until a toothpick inserted into the center comes out clean, about 40 minutes. (Note: The original recipe in the book, which called for the cake to be baked in a round 8-inch/20cm pan, said to bake the cake for 50 to 55 minutes. So it may take longer in another pan, but you should begin checking it at the 30 minutes, or so, mark.)",
+      "Remove the cake from the oven and let cool for 30 minutes on a wire rack, then remove the cake from the pan, peel off the parchment paper, and let cool completely.",
+      "To frost the cake, beat the cream cheese in the bowl of a stand mixer fitted with the paddle attachment (or by hand in a large bowl, using a wooden spoon or spatula), until smooth. Beat in the powdered sugar until it&#39;s completely incorporated. Add the heavy cream and vanilla (or lemon zest) and beat for about 1 minute on high speed, until thickened. The frosting may seen rather soft, as mine was, but spread beautifully.",
+      "Spread the frosting over the top of the cake."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Candied Ginger",
+        "unit": "C",
+        "notes": "100g, finely, chopped",
+        "amount": "½",
+        "section": "beet and ginger cake",
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "C",
+        "notes": "200g",
+        "amount": "1⅔",
+        "section": "beet and ginger cake",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": "150g",
+        "amount": "¾",
+        "section": "beet and ginger cake",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": "preferably aluminum-free",
+        "amount": "2",
+        "section": "beet and ginger cake",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "beet and ginger cake",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "beet and ginger cake",
+        "isOptional": false
+      },
+      {
+        "name": "Raw Beets",
+        "unit": "C",
+        "notes": "9 oz/260g, peeled, grated, fresh",
+        "amount": "1⅔",
+        "section": "beet and ginger cake",
+        "isOptional": false
+      },
+      {
+        "name": "Zest of One Orange",
+        "unit": null,
+        "notes": "finely, grated",
+        "amount": "0",
+        "section": "beet and ginger cake",
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Walnuts",
+        "unit": "C",
+        "notes": "75g, chopped",
+        "amount": "⅔",
+        "section": "beet and ginger cake",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "at room temperature",
+        "amount": "2",
+        "section": "beet and ginger cake",
+        "isOptional": false
+      },
+      {
+        "name": "Sour Cream",
+        "unit": "C",
+        "notes": "60g",
+        "amount": "¼",
+        "section": "beet and ginger cake",
+        "isOptional": false
+      },
+      {
+        "name": "Sunflower",
+        "unit": "C",
+        "notes": "alt: canola oil, 125ml",
+        "amount": "½",
+        "section": "beet and ginger cake",
+        "isOptional": false
+      },
+      {
+        "name": "Fruit Fresh",
+        "unit": "tsp",
+        "notes": "optional, or 1 (1500mg) vitamin C tablet, crushed to a fine powder",
+        "amount": "¾",
+        "section": "beet and ginger cake",
+        "isOptional": false
+      },
+      {
+        "name": "Cream Cheese",
+        "unit": "oz",
+        "notes": "160g, at room temperature",
+        "amount": "5½",
+        "section": "cream cheese frosting",
+        "isOptional": false
+      },
+      {
+        "name": "Powdered Sugar",
+        "unit": "C",
+        "notes": "60g, sifted if lumpy",
+        "amount": "½",
+        "section": "cream cheese frosting",
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "C",
+        "notes": "80ml",
+        "amount": "⅓",
+        "section": "cream cheese frosting",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": "or the finely grated zest of one lemon",
+        "amount": "½",
+        "section": "cream cheese frosting",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9651f000d90ed5dafe5c041dc9a06a3301499226bf3b4e8cd70c57d4c9038578",
+    "lineage_hash": "a5a6af570f9fba4555ce733d31099d19a00ff5a335e1b064d17ff9c92ef38374"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/beet-and-ginger-cake-with-cream-cheese-frosting-recipe/",
+    "fetchedAt": "2026-08-02T22:38:56.013Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/beet-and-ginger-cake-with-cream-cheese-frosting-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

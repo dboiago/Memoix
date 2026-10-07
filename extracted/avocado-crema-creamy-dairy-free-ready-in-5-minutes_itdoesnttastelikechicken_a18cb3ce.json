@@ -1,0 +1,90 @@
+{
+  "recipe": {
+    "name": "Avocado Crema",
+    "time": "5 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "96",
+      "carbohydrateContent": "8",
+      "fatContent": "8",
+      "proteinContent": "2"
+    },
+    "directions": [
+      "Blend: Add the avocado, yogurt, lime juice, garlic, and salt to a high-speed blender or small food processor and blend until completely smooth.",
+      "Thin: Add water 1 tablespoon at a time until you reach your desired drizzleable consistency.",
+      "Taste and finish: Taste and adjust salt and lime as needed."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ripe Avocado",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegan Yogurt",
+        "unit": "C",
+        "notes": "such as soy, almond, or coconut",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "about 2 tablespoons, juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Clove Garlic",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": "to thin as needed",
+        "amount": "2-4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8e2a1af0ca0920a23a11891f4fd5b5e6c9a1a52193308acc8d85d9bf64c9b6d7",
+    "lineage_hash": "3b23cd145092c15e0a9e9db8a0b29d472f7f72c9116f3b502ecccd6a701d8cc2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/avocado-crema/",
+    "fetchedAt": "2026-08-02T08:32:45.376Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/avocado-crema/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

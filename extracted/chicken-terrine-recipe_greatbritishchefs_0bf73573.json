@@ -1,0 +1,230 @@
+{
+  "recipe": {
+    "name": "Chicken Terrine",
+    "time": "1 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Season the chicken legs heavily with the salt and place in a tight fitting bowl with the herbs and garlic. Cover loosely with cling film and place a heavy weight on top. Leave for 24 hours",
+      "Remove and wash the legs well in running water. In a pan, bring the chicken stock up to 80°C and add the legs, so they are covered. Cook gently, maintaining the temperature, for 2-3 hours until tender and the meat is coming off the bone. Remove from the heat and allow to rest in the liquid for 1 hour",
+      "Remove the chicken from the liquid, strain into a clean pot and reduce to intensify the flavour - make sure it's not too salty. Pick all of the meat from the bones and set aside",
+      "Place the new potatoes into a pan, cover with cold water and bring to a gentle simmer. Cook until tender, drain off the water and allow to cool slightly. Peel with a paring knife while still warm dice into 1cm cubes",
+      "Medium dice the black pudding and sauté in a hot pan until crispy all over. Mix with the chicken leg meat and the new potatoes. Season well and add a few spoons of the chicken stock to glaze and coat the ingredients",
+      "Line a terrine mould (or any similar sized mould) with a double layer of cling film. Fill the mould with the mixture, cover the surface with cling film and place some weights on top to press the mixture down. Leave in the fridge to set (preferably overnight)",
+      "Place the diced vegetables in a large colander over a bowl and sprinkle with the salt. Mix well, then cover with a tea towel and leave in a cool place for 24 hours. Then, rinse the vegetables in water and drain thoroughly. Set aside",
+      "Blend the cornflour, turmeric, mustard powder, mustard seeds, cumin and coriander into a smooth paste with a little of the vinegar",
+      "Pour the remaining vinegar into a saucepan with the sugar and bring to the boil. Pour a little of the hot vinegar over the blended spice paste, stir well and return to the pan. Bring gently to the boil and boil for 3-4 minutes so that the spices release their flavours into the sauce",
+      "Remove the pan from the heat and carefully fold the well-drained vegetables into the hot, spicy sauce. Spoon the piccalilli into warm, sterilised jars and seal immediately. Keep for as long as possible before using",
+      "Once ready to serve, reserve a few cauliflower florets and then blend the rest of the piccalilli into a thick sauce",
+      "To serve, cut the terrine into generous slices and place onto plates. Season the slices with a little freshly ground pepper and some coarse sea salt. Arrange the piccalilli sauce to one side of the terrine and garnish with the reserved cauliflower florets and some toasted hazelnuts. Serve with toasted bread"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Legs",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "1000",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "New Potatoes",
+        "unit": null,
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pudding",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cauliflower",
+        "unit": "g",
+        "notes": "diced",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Radishes",
+        "unit": "g",
+        "notes": "diced",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Beans",
+        "unit": "g",
+        "notes": "diced",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber",
+        "unit": "g",
+        "notes": "diced",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Pepper",
+        "unit": "g",
+        "notes": "diced",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Turmeric",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "English Mustard Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": "crushed",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "tsp",
+        "notes": "crushed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hazelnuts",
+        "unit": "g",
+        "notes": "toasted",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6f3c5dffef0ab7b2720d77f1022661d7801ee19b031d784ae707ff1fbbbc4ee5",
+    "lineage_hash": "e8d00cfc08f32ffe5ba5932a9c1b4fe19d64eebc38884d565b98c153305d1b74"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chicken-terrine-recipe",
+    "fetchedAt": "2026-08-03T19:14:57.486Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chicken-terrine-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

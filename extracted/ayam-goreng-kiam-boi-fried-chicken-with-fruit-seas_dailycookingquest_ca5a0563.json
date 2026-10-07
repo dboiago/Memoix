@@ -1,0 +1,77 @@
+{
+  "recipe": {
+    "name": "Ayam Goreng Kiam Boi (Fried Chicken with Fruit Seasoning)",
+    "time": "4 hr 16 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine fried chicken powder, fruit salt seasoning, and water in a mixing bowl. Add chicken pieces to the batter to fully coat and let marinate for 4 hours in the fridge.",
+      "Heat enough oil in a wok for deep frying. Fry chicken pieces until golden brown and crispy and fully cooked, about 8 minutes per batch.",
+      "Drain chicken on paper towel and serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken (about 800 Gram)",
+        "unit": null,
+        "notes": "cut into 8 pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Fried Chicken Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fruit Seasoning",
+        "unit": "Tbsp",
+        "notes": "Indonesian: garam buah",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil for Deep Frying",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8336d4b7d604490e02f7584071b1fd91fba7b31d35e9b97ec86b4db4f7ce03fd",
+    "lineage_hash": "882911eae6ceea3bd752ccfca60c08808416d551ceb71c8dc8ce17ba16708929"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/ayam-goreng-kiam-boi-fried-chicken-with-fruit-seasoning.html",
+    "fetchedAt": "2026-08-02T11:47:45.903Z"
+  },
+  "rawSource": "https://dailycookingquest.com/ayam-goreng-kiam-boi-fried-chicken-with-fruit-seasoning.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

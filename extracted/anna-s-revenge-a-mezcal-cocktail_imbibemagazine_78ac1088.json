@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Anna's Revenge",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to a shaker with ice. Shake and then strain into the glass. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "43f8e8de1b5aa9c62f743b2dc2c1b0583dded3ff46437ea23ff2eda4165158c0",
+    "lineage_hash": "d3ad138e51dc54bffc88440b15f500fd8675b822f7edd13a9fea90a6c96a0d42"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/annas-revenge-a-mezcal-cocktail/",
+    "fetchedAt": "2026-08-04T01:08:20.886Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/annas-revenge-a-mezcal-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

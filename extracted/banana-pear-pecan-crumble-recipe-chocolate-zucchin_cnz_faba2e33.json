@@ -1,0 +1,100 @@
+{
+  "recipe": {
+    "name": "Banana Pear Pecan Crumble",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Toast the pecans in a dry skillet until slightly browned and fragrant. Let cool and chop, not too finely.",
+      "In a food processor, mix together the butter, sugar, flours and bran flakes until well combined.",
+      "Transfer the crumble mixture into a mixing bowl, and work with a fork or your fingers to add in the chopped pecans.",
+      "Preheat the oven to 180°C (360°F).",
+      "Peel, quarter and slice the pears; peel and slice the bananas.",
+      "Combine the fruit in a 12-inch baking dish.",
+      "Sprinkle the crumble mixture evenly over the fruit, and bake for 50 minutes to an hour.",
+      "If the top seems to be browning too quickly, cover the dish with foil and return into the oven.",
+      "Let rest for a few minutes on the counter, and ladle into bowls.",
+      "You can bake the crumble earlier in the day and reheat for 15 to 20 minutes before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pear",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Banana",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": "preferably unrefined",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": "half all-purpose, half whole-wheat",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole-wheat Bran Flakes",
+        "unit": "g",
+        "notes": "substitute any other kind of whole-wheat cereal flakes",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted Butter",
+        "unit": "g",
+        "notes": "if you use unsalted, add a pinch of salt",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pecans",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4df868a22c47af75d957fe3479445923fe8a733cf5fc866a1a446af4495de175",
+    "lineage_hash": "0719e97fc95687bf511deeb37810b32c1c1782ca705cf667fa0da9f07542c3ba"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/desserts/banana-pear-pecan-crumble-recipe/",
+    "fetchedAt": "2026-09-30T18:34:06.227Z"
+  },
+  "rawSource": "https://cnz.to/recipes/desserts/banana-pear-pecan-crumble-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

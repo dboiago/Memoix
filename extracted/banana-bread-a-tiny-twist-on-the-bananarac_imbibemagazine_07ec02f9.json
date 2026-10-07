@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Banana Bread",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Tiny Rocks or Martini",
+    "garnish": [
+      "Lemon Twist"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Rinse the mixing glass with a dash of Becherovka and pour out the excess (or drink it). Fill the mixing glass with ice, add the scotch, whiskey, banana liqueur, cinnamon–Earl Grey syrup, and bitters, and stir to chill and dilute. Strain the cocktail into a chilled tiny rocks or martini glass and garnish with the lemon twist. In a mug or measuring cup, steep the tea bag in the boiled water for 10 to 20 minutes. Meanwhile, put the sugar and cinnamon sticks in a heatproof bowl.\nCinnamon-Earl Grey SyrupRemove the Earl Grey teabag and reboil the tea. Pour the tea over a cup of granulated sugar and 2 cinnamon sticks and stir the syrup to help the sugar completely dissolve. Cover and let the cinnamon infuse the syrup for 2 to 4 hours (the longer the better). Strain the syrup into a bottle and store, tightly sealed, in the refrigerator for up to 1 month. (Makes about 1 1/2 cups)\nNoteYou could also use absinthe to rinse the glass, but the Becherovka’s notes of baking spices will really amplify the cinnamon in the syrup, so it’s worth seeking out."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "07fdf1ccb7ad4917e4548d1beac590e1909a1ff9683304ca7487d6405d29478f",
+    "lineage_hash": "87907ba16c78b41760820cd39e187be36080ddad3c1203e6f4c4b02b88ad4879"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/banana-bread-a-tiny-bananarac/",
+    "fetchedAt": "2026-08-04T00:27:35.317Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/banana-bread-a-tiny-bananarac/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

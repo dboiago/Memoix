@@ -1,0 +1,138 @@
+{
+  "recipe": {
+    "name": "Braised Tofu with Chinese Mushroom",
+    "time": "18 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "417",
+      "carbohydrateContent": "14",
+      "fatContent": "36",
+      "proteinContent": "11"
+    },
+    "directions": [
+      "Firstly cut tofu into triangle or square (around 1.5cm thick) and then fry until both sides become golden brown. And then transfer out.",
+      "Heat oil and fry garlic, scallion and ginger pieces over slow fire until aroma.",
+      "And then fry mushroom slices for 2-3 minutes, return fried tofu, add all the seasonings and simmer for 4-5 minutes. Add fresh sweet basil leaves in the last minute."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Box of Regular Firm Tofu",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shiitake Mushroom",
+        "unit": null,
+        "notes": "dried, re-hydrated",
+        "amount": "3-5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thumb Ginger",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "cut into 1 inch pieces",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rock Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bff7b5791c3b10d99b9a092e54d4b89e713f3ecb7363602ecac70306e6604a00",
+    "lineage_hash": "735f4dda65328080779d93f04b9b2e813411f383166534110c1b432896fb98e4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/braised-tofu-with-chinese-mushroom/",
+    "fetchedAt": "2026-08-02T02:01:11.070Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/braised-tofu-with-chinese-mushroom/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

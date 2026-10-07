@@ -1,0 +1,164 @@
+{
+  "recipe": {
+    "name": "Caruru",
+    "time": "1 hr",
+    "course": "sides",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "BR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Remove the top stems of the okra, and discard. Then, cut the okra into small dice pieces and set aside.",
+      "Add the salted shrimp to a cup of a blender, and add two cups of water to it. Blend until smooth.",
+      "Strain the shrimp blend into a clean measuring cup and set aside.",
+      "Rinse the blender to remove all remaining particles of shrimp. Then, add 1 whole onion, the cilantro leaves, the scallions, the garlic, the nuts, the ginger, and the coconut milk and blend until smooth.",
+      "To this blend, add the strained shrimp juice, blend to combine and set aside.",
+      "In a medium heavy bottom, or cast iron pot over high heat, heat the palm oil and add the diced onions. Saute until soft.",
+      "Add in the okra and the lime juice and saute stirring frequently until all the sticky slime gets cooked off - this will take about 15 minutes and you&#39;ll know you&#39;re done when you no longer see slime dripping from the okra. You&#39;ll also notice a buildup on the bottom of the pan - that&#39;s basically the slime sticking there - make sure that buildup stays a brown color and doesn&#39;t burn to a black color. Lower the heat if you need.",
+      "After the slime gets cooked off, add in the smoked paprika and stir.",
+      "Add in the mixture from the blender into the pan and stir to combine and cook on medium heat scraping the bottom of the pan. The slime stuck to the pan will not impart a slimy texture to the dish at this point. Continue to cook and stir for about 30 minutes until all the liquid has been absorbed and the mixture resembles a chunky puree.",
+      "Taste and correct the salt accordingly - depending on the dry salted shrimp you use, you may not need any additional salt at all."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Okra",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "medium",
+        "notes": "1 peeled and quartered, the other diced – we need about 1/2 cup of diced onions",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Peeled",
+        "unit": "clove",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "bunch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scalions",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Palm Oil Azeite De Dendê",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted Dried Shrimp",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Cashew Nuts Heaping Cup",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Peanuts Heaping Cup",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "oz",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice Freshly Squeezed",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9fac5e2090a36221ee401087526e5129a7cc1748312418ec62711aa3f00ab55e",
+    "lineage_hash": "fffbd34f434ab297cbbaa68d4c4f4a66f199bc9c360812fd7f8602bf09490067"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://braziliankitchenabroad.com/caruru-recipe/",
+    "fetchedAt": "2026-09-25T20:45:04.719Z"
+  },
+  "rawSource": "https://braziliankitchenabroad.com/caruru-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

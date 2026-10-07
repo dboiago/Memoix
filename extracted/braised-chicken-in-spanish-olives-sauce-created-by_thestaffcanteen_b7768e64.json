@@ -1,0 +1,128 @@
+{
+  "recipe": {
+    "name": "Braised Chicken in Spanish Olives Sauce",
+    "time": "1 hr",
+    "course": "sauces",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "ES",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place a wide pan over a high heat and brown the seasoned chicken thighs with a bit of olive oil. Skin side down first as they will release a bit of fat which will help golden the chicken and for all the remaining ingredients to caramelize properly.",
+      "Once both sides of all the thighs are dark golden set them aside and start frying the thinly slice garlic and onion.",
+      "When golden add the flour and stir constantly for 1 minute so the flour toasts evenly and doesn’t give a doughy flavour to the end dish.",
+      "Bring the chicken back into the pan, add the rosemary and pour the glass of white wine. Stir to dissolve the flour properly and reduce the wine by half: to burn the alcohol and to give enough of the acidity that this dish needs.",
+      "At this point we should add the black pepper, the glass of water and the olives and braise it for around 20 minutes, till the chicken has tenderized and all the ingredients have come together in a juicy and rich sauce.",
+      "Taste the seasoning and buen provecho!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Spanish Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Free Range Chicken Thighs",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "head",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spanish Onion",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shot of Brandy",
+        "unit": null,
+        "notes": "or dry white wine if you prefer",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green and Purple Spanish Olives",
+        "unit": "g",
+        "notes": "pitted",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "sprigs",
+        "notes": "fresh",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glass of Water",
+        "unit": null,
+        "notes": "or chicken stock if you have",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "00f0a55f7aa8ce5355e2de5bb6df109c6dbe7d2533d1f6820414563c7ba9ac4c",
+    "lineage_hash": "96b8c0e9dad9d6749e9a628c880f1b67b00c8bc0817fde7339d25015dff6943b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.thestaffcanteen.com/chefs-recipes/braised-chicken-in-spanish-olives-sauce-created-by-omar-allibhoy-1598523631",
+    "fetchedAt": "2026-08-03T15:43:32.073Z"
+  },
+  "rawSource": "https://www.thestaffcanteen.com/chefs-recipes/braised-chicken-in-spanish-olives-sauce-created-by-omar-allibhoy-1598523631",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

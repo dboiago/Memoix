@@ -1,0 +1,224 @@
+{
+  "recipe": {
+    "name": "Beef and Pork Chili",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat the oil in a Dutch oven over high heat. Add the diced tenderloin and cook until browned on all sides, 4 to 6 minutes, stirring often. Work in several batches as needed so you don’t overcrowd the pan. Transfer the browned tenderloin to a large platter.",
+      "Working in 2 or 3 batches, add the ground beef and pork and brown over high heat, about 4 minutes per batch. Transfer the ground meat to the platter and pour off all but about 2 tablespoons of fat from the Dutch oven.",
+      "Add the onion, poblano, jalapeños, and garlic, reduce the heat to medium-high, and cook until lightly browned, about 4 minutes. Stir in the chile powder, cumin, black pepper, oregano, and cinnamon. Cook until fragrant, about 2 minutes.",
+      "Stir in the stock, beer, and tomato sauce. Let the chili simmer gently over medium heat until the tenderloin cubes are very tender and the chili is richly flavored, 30 to 40 minutes, stirring from time to time. (Reduce the heat as needed to maintain a gentle simmer.)",
+      "Stir in the pinto and kidney beans, brown sugar, Tabasco sauce, and chocolate. Let the chili simmer gently until thick and even more richly flavored, 5 minutes. Taste for seasoning, adding salt to taste and more brown sugar, chile powder, cumin, and/or Tabasco sauce as necessary; the chili should be highly seasoned.",
+      "You can serve the chili now or let the flavors develop for a few hours or even days in the refrigerator (let cool to room temperature, cover the Dutch oven, and refrigerate. Reheat over medium heat). Serve the fixings alongside."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Tenderloin Tips",
+        "unit": "lb",
+        "notes": "cut into 1/4- to 1/2-inch dice",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lean Ground Beef",
+        "unit": "lb",
+        "notes": "alt: bison",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Pork",
+        "unit": "lb",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "large",
+        "notes": "peeled and finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Poblano Pepper",
+        "unit": null,
+        "notes": "seeded and finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jalapeño Peppers",
+        "unit": null,
+        "notes": "fresh, seeded and finely chopped",
+        "amount": "1-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "peeled and minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pure Chile Powder",
+        "unit": "C",
+        "notes": "or more to taste",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cumin",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oregano",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef",
+        "unit": "qt",
+        "notes": "alt: chicken stock, preferably homemade",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bottle (12 Ounces) Beer",
+        "unit": null,
+        "notes": "light or dark",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Sauce",
+        "unit": "can",
+        "notes": "8 ounces, preferably organic",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pinto Beans",
+        "unit": "cans",
+        "notes": "about 15 ounces each, preferably organic and low sodium, rinsed and drained in a colander",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kidney Beans",
+        "unit": "cans",
+        "notes": "about 15 ounces each, preferably organic and low sodium, rinsed and drained in a colander",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Brown Sugar",
+        "unit": "Tbsp",
+        "notes": "packed, or more to taste",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tabasco Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bittersweet Chocolate",
+        "unit": "oz",
+        "notes": "if you’re feeling flush, such as Baker’s (the budget choice) or Scharffen Berger",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Salt (kosher or Sea)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fixings—see Tips Below",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b60629a7dc9e114fffb377495da5f598212d7aa446e9cf831c21c5f1b25d70f4",
+    "lineage_hash": "53526854639f6219d0e39c983c75f47239b085b61aca4c146b2fbaa1b14234fd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/beef-pork-chili/",
+    "fetchedAt": "2026-08-03T06:23:04.923Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/beef-pork-chili/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

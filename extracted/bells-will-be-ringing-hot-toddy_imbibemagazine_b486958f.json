@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Bells Will Be Ringing Hot Toddy",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Warm a serving cup by rinsing with hot water. Add ingredients to the glass and stir to combine. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "1e21759baed0e20f6c98f6884fafb2ea3b8eed363bcae3bb1a419eff4a63c9df",
+    "lineage_hash": "9ee330a291bd5ee18fa1201f028c8ee8a03730c3c23ac80988393f249e5d212d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bells-will-be-ringing-cocktail/",
+    "fetchedAt": "2026-08-03T18:28:49.835Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bells-will-be-ringing-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

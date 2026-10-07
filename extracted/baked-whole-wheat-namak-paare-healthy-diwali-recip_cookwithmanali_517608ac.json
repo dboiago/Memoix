@@ -1,0 +1,95 @@
+{
+  "recipe": {
+    "name": "Baked Whole Wheat Namak Paare",
+    "time": "22 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "126",
+      "carbohydrateContent": "22",
+      "fatContent": "2",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "Preheat the oven to 375 F.",
+      "In a bowl, toss together the whole wheat flour, all purpose flour, salt and carom seeds.",
+      "Add oil and mix it with the flour thoroughly.",
+      "Now slowly add water and knead till it forms a smooth dough.",
+      "Let the dough rest for 15 minutes.",
+      "Roll into a round or square of desired thickness.",
+      "Slice the namak paare into desired shapes.",
+      "Arrange onto a baking sheet and bake at 375 F for 12-15 minutes till golden brown in color."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Wheat Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or adjust to taste",
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carom Seeds",
+        "unit": "tsp",
+        "notes": "also known as ajwain seeds",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": "use oil of choice",
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cold Water",
+        "unit": "C",
+        "notes": "to knead the dough",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "09e136307a5b6e29e7edd0d8167cb8d0b8c8e0bab32e582dc454eccd978db4c9",
+    "lineage_hash": "072f4f257f08b927ca75daecd6692b0e9f8cedb4d074c1434d4f5d3b096182b1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/baked-whole-wheat-namak-paare-healthy-diwali-recipe/",
+    "fetchedAt": "2026-08-01T21:30:35.260Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/baked-whole-wheat-namak-paare-healthy-diwali-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

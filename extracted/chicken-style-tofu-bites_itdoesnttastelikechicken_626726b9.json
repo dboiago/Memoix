@@ -1,0 +1,139 @@
+{
+  "recipe": {
+    "name": "Chicken-Style Tofu Bites",
+    "time": "35 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "202",
+      "carbohydrateContent": "11",
+      "fatContent": "12",
+      "proteinContent": "16"
+    },
+    "directions": [
+      "Oven method: Preheat your oven to 400℉ (200℃). Line a large baking sheet with parchment paper.Air fryer method: Preheat your air fryer to 375℉ (190℃).",
+      "Use your fingers to tear it into chunks about 1&quot; in size. Some chunks will be bigger and others will be smaller and that&#39;s perfect! Tearing the tofu will make for the best chicken-like texture and also helps grip the sauce better. Add the tofu to a medium bowl and drizzle over the vegetable broth and olive oil and toss to coat. Now sprinkle over the onion powder, garlic powder, Italian seasoning, poultry seasoning, salt, and pepper and toss to coat again. Now sprinkle over the flour, cornstarch, and nutritional yeast and toss to coat a final time. The tofu will be covered in a thick pasty batter, it&#39;s ok if the mixture doesn&#39;t cling to the tofu evenly.",
+      "Oven method: Spread the tofu evenly over the prepared baking sheet. Bake for 17 - 25 minutes, stirring halfway through, until golden brown. Air fryer method: Add your tofu to your air fryer basket and cook for 15 - 20 minutes, shaking halfway through, until golden brown.",
+      "Use the tofu bites as desired. Dip them in your favorite sauce as a snack, use them to top pasta or salads, add to a sandwich, or use them however you like!Enjoy this tofu recipe hot. Store leftovers in an air-tight container in the fridge for 3 -5 days. They are also delicious enjoyed cold!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Block (350 G/ 12.3oz) Extra-firm Tofu",
+        "unit": null,
+        "notes": "no need to press it, drained",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Broth",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": "sub for more vegetable broth if oil-free",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Italian Seasoning",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Poultry Seasoning",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "Tbsp",
+        "notes": "or gluten-free all-purpose flour blend if preferred",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutritional Yeast",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ba2c962073ff82aedcaa86594f39fd345faf56123f13c5b17461489545e9a59d",
+    "lineage_hash": "54e2275ea5d54e0230189880ce1207ce631fe9b0b3cbba38e9855a6d501043bc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/chicken-style-tofu-bites/",
+    "fetchedAt": "2026-08-02T06:31:32.826Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/chicken-style-tofu-bites/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

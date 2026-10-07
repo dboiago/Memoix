@@ -1,0 +1,49 @@
+{
+  "recipe": {
+    "name": "Cherry-Smoked Duck Breasts with Fresh Cherry Salsa",
+    "time": "1 hr 30 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Trim any tendons off the duck breasts with a sharp knife. Score the skin on each breast in a diamond pattern about 1/4 inch deep, taking care not to nick the flesh.",
+      "Make the rub: Combine the salt, sugar, five-spice powder, and pepper in a small bowl and stir to mix. Generously sprinkle the rub on both sides of each duck breast. Drizzle with sesame oil, turning to coat both sides.",
+      "Set up your smoker according to the manufacturer’s instructions, preferably using cherry wood. Preheat to 150 degrees. (If your smoker will go lower, that’s fine, too.)",
+      "Arrange the duck breasts, skin side up, on the smoker rack(s) and smoke for 1 hour, or until the internal temperature of the breasts is 100 degrees when read on an instant-read meat thermometer.",
+      "In the meantime, set up your grill for direct grilling and preheat to medium-high (400 to 450 degrees). Be sure to leave about 1/3 of the grill fire-free for a safety zone. (The fat in duck skin makes it prone to flare-ups.) Brush and oil the grill grate.",
+      "Arrange the duck breasts on the grill grate skin side down. Sear until the skin is nicely browned and has begun to render its fat. (If flare-ups occur, move the meat to the safety zone). Cook, turning as needed with tongs, until the internal temperature of the breast is 130 to 135 degrees for medium-rare. (Higher if you prefer your duck cooked medium or medium-well.)",
+      "Transfer to a cutting board and let rest for 3 minutes. Thinly slice the duck breast on a diagonal and fan out on plates. Serve with the Fresh Cherry Salsa."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Duck Breasts",
+        "unit": null,
+        "notes": "boneless, each 7 to 8 ounces",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "22a3e5815d21fea3680c0bccd4de7e0b5701563dd2dc4727b28ce023886f126a",
+    "lineage_hash": "68cf785521835d5fe02e7dbfb685a6fab3c3a17bd1a8ad06910c177e1d44e855"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/cherry-smoked-duck-breasts-fresh-cherry-salsa/",
+    "fetchedAt": "2026-08-03T06:59:20.114Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/cherry-smoked-duck-breasts-fresh-cherry-salsa/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

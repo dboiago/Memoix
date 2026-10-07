@@ -1,0 +1,38 @@
+{
+  "recipe": {
+    "name": "Alcohol-Free Drink: Mangonada",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Glass",
+    "garnish": [
+      "Orange Slices",
+      "Generous Dash of Tajin"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all of the ingredients, except the Jarritos, in a shaker full of ice, then shake until well-chilled. Strain into a glass filled with crushed ice. Top with the soda. Garnish with the orange slices and generous dash of Tajin over the top.",
+      "Chile-Agave Syrup: In a medium saucepan, add 1 cup of water, 2 dried ancho chiles, and 2 chipotle peppers. Let steep for 20 minutes at a simmer. Remove chiles, add 2 cups of agave syrup, and let cool."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "5a27d46973d2b64544b95d5f11a2f6f4e33d47f55adc30f99101c5f7f73d5a2a",
+    "lineage_hash": "a290a08b431764c1236fdd3ab558a63386f7e303773b050e67993c791bb3f1a2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/alcohol-free-drink-mangonada/",
+    "fetchedAt": "2026-08-03T19:36:34.799Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/alcohol-free-drink-mangonada/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

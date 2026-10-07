@@ -1,0 +1,163 @@
+{
+  "recipe": {
+    "name": "Blackened Chicken with Caramel and Clementine Dressing",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Put the chicken thighs, turmeric, chilli flakes, fish sauce, oil and 1 teaspoon of salt into a large bowl and mix well to combine. Leave to marinate for an hour, or cover and refrigerate for longer (up to overnight). If the latter, remove the chicken thighs from the fridge about 45 minutes before cooking",
+      "Place a large cast-iron sauté pan on a medium-high heat and ventilate your kitchen well. Once hot, add half the chicken thighs, skin side down. Weigh down the thighs with a large saucepan around the same size, so they are well pressed into the pan. Cook for 6–8 minutes, or until the skin is charred and blackened",
+      "Remove the top pan and set the chicken thighs aside, then repeat with the remaining thighs. The second batch might blacken faster, so check them at the 5-minute mark. Remove all the chicken, setting it aside, and let the pan cool for 5–10 minutes",
+      "If needed, drain off all but 1½ tablespoons of the fat collected in the pan and return to a medium-high heat",
+      "Add the spring onions, using a pair of tongs to coat them in the fat, then put back the chicken thighs, skin side up, and any of their juices, nestling them into the spring onions, along with 90ml of water. Cook for 8 minutes, or until the chicken is tender and cooked through. Transfer the chicken to a cutting board and leave to rest for 5 minutes before slicing each thigh into 2cm-wide strips",
+      "While the chicken is cooking, make the caramel and clementine dressing. Heat a medium saucepan on a medium-high heat. Once hot, turn the heat down to medium and sprinkle in the sugar to coat the base – it should immediately start to melt and colour around the sides. Swirl the pan, without stirring, so that all the sugar melts and turns deeply golden, about 90 seconds to 2 minutes",
+      "Add the ginger and chillies, and stir continuously for 45 seconds, just to take off the spicy edge. Quickly add the vinegar, lime juice and fish sauce, stirring to combine. Cook for 30 seconds, then remove from the heat. Leave to cool for 10 minutes",
+      "Use a small serrated knife to slice the clementines into 1cm thick rounds, then pull at them gently to halve them (don’t worry if they break apart further). Stir these into the cooled sauce",
+      "To serve, transfer the spring onions to a large platter and top with the chicken and any pan juices, using a spatula to keep each thigh together. Pour the dressing all over, then sprinkle with the coriander. Lastly, squeeze over the lime halves"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Thighs",
+        "unit": null,
+        "notes": "boneless, skin on, roughly 850g",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Flakes",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": null,
+        "notes": "about 180g, trimmed, washed well and dried",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "85",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": "fresh, peeled and julienned",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chillies",
+        "unit": null,
+        "notes": "about 20g, deseeded, halved widthways and julienned",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Wine Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Limes",
+        "unit": null,
+        "notes": "1 halved, to serve, and the rest juiced to get 3 tbsp",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Clementines",
+        "unit": null,
+        "notes": "peeled, about 140g after peeling, 200g before peeling",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "g",
+        "notes": "fresh, roughly chopped, to serve",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "04d3217448d524633d5e632826906580107259280227c325441596c20cb4c79f",
+    "lineage_hash": "552546148b74033a22ea7c0e8e73c36caffe3c964201c135a106484e74f68416"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/blackened-chicken-caramel-clementine-dressing-recipe",
+    "fetchedAt": "2026-08-02T17:35:29.016Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/blackened-chicken-caramel-clementine-dressing-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

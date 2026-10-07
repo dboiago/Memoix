@@ -1,0 +1,110 @@
+{
+  "recipe": {
+    "name": "Blueberry Crumble",
+    "time": "40 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pick through the blueberries, removing any stems, leaves, or bruised berries. Mrs. Raichlen would rinse and drain them—I don’t bother. Place the berries in a large nonreactive mixing bowl. Add 1/4 cup of the flour and the granulated sugar, lemon zest, and lemon juice and gently toss to mix. Lightly spray the aluminum foil pan with cooking spray. Spoon the blueberry mixture into the aluminum foil pan.",
+      "Place the biscotti crumbs, brown sugar, and the remaining 1/2 cup of flour in a food processor fitted with the metal blade and process until a coarse powder forms. Add the butter and salt, then pulse until the mixture is coarse and crumbly. Spoon the topping over the blueberry filling.",
+      "Set up the grill for indirect grilling and preheat to medium-high. If using a gas grill, place all of the wood chips or chunks in the smoker box or in a smoker pouch and run the grill on high until you see smoke, then reduce the heat to medium-high. If using a charcoal grill, preheat it to medium-high, then toss all of the wood chips or chunks on the coals.",
+      "When ready to cook, place the pan with the blueberries in the center of the hot grate, away from the heat, and cover the grill. Cook the crumble until the filling is bubbling and the topping is browned, about 40 minutes. Serve the crumble hot or warm, ideally with vanilla ice cream."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pints Blueberries",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Zest",
+        "unit": "tsp",
+        "notes": "grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Squeezed Lemon Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Biscotti",
+        "unit": "C",
+        "notes": "alt: sugar cookie crumbs, coarsely, crumbled",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Firmly Packed Brown Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cold Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": "cut into 1-inch pieces",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b1ffe4d38b8fcfbf285d01a3225062e5c8ffd416864a32e3da3eb205a0eebcd8",
+    "lineage_hash": "17df9d716528a263a8c1166c4ff65924a6317959499c1a5c703767df5fa89068"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/blueberry-crumble/",
+    "fetchedAt": "2026-08-02T22:48:30.531Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/blueberry-crumble/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

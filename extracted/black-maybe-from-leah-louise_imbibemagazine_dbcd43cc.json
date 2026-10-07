@@ -1,0 +1,35 @@
+{
+  "recipe": {
+    "name": "Black Maybe",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all of the ingredients in shaker with ice and vigorously shake. Strain into a glass over fresh ice and garnish.",
+      "Smurnt Brown SugarIn a pot cook the brown sugar only on low heat until fully melted. Increase the heat to high and cook the sugar until it starts to smoke and turn dark brown (almost black). Take the pot off of the heat and add water. Put the mixture back on medium heat until all the burnt sugar is dissolved. Let the syrup come down to room temperature and then pour it into a blender. Add the mint and ginger and blend on high for 1 minute. Strain the syrup through a fine-mesh strainer and refrigerate. Lasts up to 3 weeks in the refrigerator."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "a9d00c4e42bebc68df6f5fc1e9671105435099f0595ef41f114e00867551f1c3",
+    "lineage_hash": "50f6c80391e1579c15acd1be56ae841fe61ca51dc167f6c7af508a45270381bf"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/black-maybe-from-leah-louise/",
+    "fetchedAt": "2026-08-03T21:10:51.295Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/black-maybe-from-leah-louise/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

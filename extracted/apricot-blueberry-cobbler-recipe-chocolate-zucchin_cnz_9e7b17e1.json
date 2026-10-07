@@ -1,0 +1,144 @@
+{
+  "recipe": {
+    "name": "Apricot Blueberry Cobbler",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pit and quarter the apricots. Put the slices in a shallow baking dish (ceramic or glass) and sprinkle with the sugar and tapioca. Toss gently to combine, arrange in an even layer, cover, and let stand for 1 hour.",
+      "Preheat the oven to 180°C (360°F).",
+      "Prepare the dough. In a medium mixing bowl, combine the flour, almond flour, sugar, baking powder, baking soda, and salt. Add the orange blossom water, yogurt, and diced butter. Combine roughly with a fork, then use a pastry blender or the tips of your fingers to rub the wet ingredients into the dry ones. The dough will be soft; don't overwork it. (This can also be done in a food processor or mixer, but I find it's quicker to do it by hand.)",
+      "Add the blueberries on top of the apricots. Take tablespoonfuls of the dough and drop them on top of the fruit, covering the surface in a uniform fashion, but leaving a little space in between for the fruit to peer at the sky. Sprinkle the top with sugar.",
+      "Insert the dish in the middle of the oven and bake for 25 to 30 minutes, until the topping is golden brown and the fruit is bubbly.",
+      "Serve while still a little warm -- but not piping hot -- with crème fraîche or whipped cream. You can make the cobbler a few hours ahead and reheat it gently before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Kilo Apricots",
+        "unit": null,
+        "notes": "ripe",
+        "amount": "1",
+        "section": "fruit",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": "unrefined blond cane sugar",
+        "amount": "4",
+        "section": "fruit",
+        "isOptional": false
+      },
+      {
+        "name": "Pearl Tapioca",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "fruit",
+        "isOptional": false
+      },
+      {
+        "name": "Grams Blueberries",
+        "unit": null,
+        "notes": "fresh or frozen; no need to thaw if frozen",
+        "amount": "200",
+        "section": "fruit",
+        "isOptional": false
+      },
+      {
+        "name": "Grams Flour",
+        "unit": null,
+        "notes": null,
+        "amount": "150",
+        "section": "dough",
+        "isOptional": false
+      },
+      {
+        "name": "Grams Almond Flour",
+        "unit": null,
+        "notes": "a.k.a. ground almonds or almond meal; if unavailable, use whole almonds and blitz them to a fine powder with the sugar in a food processor",
+        "amount": "50",
+        "section": "dough",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": "plus more for sprinkling; unrefined blond cane sugar",
+        "amount": "2",
+        "section": "dough",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "dough",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "dough",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "dough",
+        "isOptional": false
+      },
+      {
+        "name": "Orange Blossom Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "dough",
+        "isOptional": false
+      },
+      {
+        "name": "Grams Yogurt",
+        "unit": null,
+        "notes": "plain",
+        "amount": "125",
+        "section": "dough",
+        "isOptional": false
+      },
+      {
+        "name": "Grams Butter",
+        "unit": null,
+        "notes": "cold unsalted, diced",
+        "amount": "70",
+        "section": "dough",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a468f7cf4fb0d3fb5fca0f594e0433931627c729796e74ac2e06d2d54df3307e",
+    "lineage_hash": "d3e0a5b58760575edb4dc86c05b70d68d2cb94c0e2435bc5419904a8bb5d149b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/desserts/apricot-blueberry-cobbler-recipe/",
+    "fetchedAt": "2026-09-30T18:59:44.474Z"
+  },
+  "rawSource": "https://cnz.to/recipes/desserts/apricot-blueberry-cobbler-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

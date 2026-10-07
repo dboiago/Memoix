@@ -1,0 +1,156 @@
+{
+  "recipe": {
+    "name": "Chicken Liver Parfait and Cherry Jammy Dodger",
+    "time": "2 hr 45 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "20",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by making the sablé. Beat together the butter and sugar in a bowl until pale and creamy. Mix in the egg yolks until fully incorporated, then mix in the flour until a dough forms. Roll the dough out between two pieces of parchment paper to around 1cm thick, then chill for 2 hours until firm",
+      "Meanwhile, make the chicken liver parfait. Sweat the shallots, garlic and thyme gently in the butter for around 30 minutes, until they are very soft and sticky",
+      "Add the brandy and reduce until syrupy, then cool and transfer to the fridge to chill completetly",
+      "Once the mixture is chilled, preheat an oven to 85ºC/gas mark 1/2. Transfer the mixture to a blender along with the raw chicken livers, eggs and room temperature unsalted butter and blend until completely smooth. Pour the mixture through a fine sieve or chinois into an ovenproof dish",
+      "Set up a bain-marie in the oven (a large roasting tin half-filled with boiling water). Lower the dish of parfait into the boiling water and cook in the oven until the parfait has set like a custard (around 30–35 minutes)",
+      "Remove the cooked parfait from the oven and allow to cool to room temperature, then blend and strain through a fine sieve once more to ensure you have a totally smooth mixture. Transfer the parfait into a piping bag and reserve in the fridge until ready to plate",
+      "Turn the oven up to 180ºC/gas mark 4",
+      "To make the cherry gel, add the puree and agar agar to a saucepan and bring to the boil, then chill the mixture in the fridge. Blend the cherry gel until smooth, then pass through a fine sieve. Reserve in a squeezy bottle until ready to plate",
+      "By this point, the sablé biscuit dough should have been sufficiently chilled. Remove it from the fridge and bake in the oven for 10-12 minutes until light brown. While the dough is still hot, cut out 40 rings with a 6cm cutter, then cut out a hole in the centre with a 2cm cutter",
+      "Allow the biscuits to cool a little and you’re ready to plate. Take one biscuit for your base and neatly pipe the parfait onto it. Lay another biscuit on top, then pipe the cherry gel inside the centre and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "280",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "65",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "minced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brandy",
+        "unit": "ml",
+        "notes": null,
+        "amount": "65",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Livers",
+        "unit": "g",
+        "notes": "cleaned and trimmed",
+        "amount": "750",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "room temperature",
+        "amount": "185",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherry Purée",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Agar Agar",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6a6439ad7079b765cbfcfb265bd60558e92841ccf351099437ead2f21eb600d4",
+    "lineage_hash": "9641a638c9b9727f574863624fa63b77a27fca5051636067aed28c3639b722cb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chicken-liver-parfait-cherry-recipe",
+    "fetchedAt": "2026-08-03T05:47:28.873Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chicken-liver-parfait-cherry-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

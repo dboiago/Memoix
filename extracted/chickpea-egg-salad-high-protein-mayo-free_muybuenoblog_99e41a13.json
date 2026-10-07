@@ -1,0 +1,196 @@
+{
+  "recipe": {
+    "name": "Chickpea Egg Salad",
+    "time": "6 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "95",
+      "carbohydrateContent": "4",
+      "fatContent": "8",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "In a mason jar, combine the dressing ingredients, cover, shake, and set aside.",
+      "In a large mixing bowl, add all the salad ingredients except the eggs and pepitas.",
+      "Pour dressing over salad and combine. Add the sliced eggs and pepitas, and gently toss. Taste and adjust with salt or Tajin if needed.",
+      "Cover and refrigerate until ready to serve. The longer this salad marinates the better the flavor.",
+      "Salad will keep well for 2 to 3 days in the fridge in a tightly-closed container."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Spicy Brown Mustard",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "zest and juice",
+        "amount": "1",
+        "section": "Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": "zest and juice",
+        "amount": "1",
+        "section": "Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": "Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Hot Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "minced",
+        "amount": "1",
+        "section": "Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Tajin",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Red Pepper",
+        "unit": "tsp",
+        "notes": "dried, crushed",
+        "amount": "1",
+        "section": "Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Cans Chickpeas",
+        "unit": null,
+        "notes": "16-ounce, rinsed and drained",
+        "amount": "2",
+        "section": "Egg Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Celery",
+        "unit": "stalks",
+        "notes": "chopped",
+        "amount": "2",
+        "section": "Egg Salad",
+        "isOptional": false
+      },
+      {
+        "name": "English Cucumber",
+        "unit": "large",
+        "notes": "diced",
+        "amount": "1",
+        "section": "Egg Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Red Onions",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "¼",
+        "section": "Egg Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Thinly Sliced",
+        "unit": "C",
+        "notes": "alt: shredded red cabbage",
+        "amount": "½",
+        "section": "Egg Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Serrano Pepper",
+        "unit": null,
+        "notes": "diced",
+        "amount": "1",
+        "section": "Egg Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro Leaves",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "½",
+        "section": "Egg Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": "C",
+        "notes": "chopped, fresh",
+        "amount": "½",
+        "section": "Egg Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "hard boiled, peeled, and sliced",
+        "amount": "5",
+        "section": "Egg Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Pepitas for Garnish",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Egg Salad",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1d66fcf9b64e4f2fbf4cdc38c219c25aef49930003d08da4e2b7c1108142d571",
+    "lineage_hash": "08727e62cfed2c02e919fdb0027b9aee4c17b84542c73fdcd5f454fda8e04c4e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/garbanzo-egg-salad/",
+    "fetchedAt": "2026-08-02T09:02:50.715Z"
+  },
+  "rawSource": "https://muybuenoblog.com/garbanzo-egg-salad/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

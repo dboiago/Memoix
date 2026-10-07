@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Age of Discovery",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Stir all of the ingredients together with ice in a rocks glass. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "5f5350517977ad2f73f1af10710818ec2ce70f1b6af3042403f26bcb592d7e23",
+    "lineage_hash": "f4615d55152d30cafe4ccabe7ba84b8862d4319a63d46a3333a1fea86b98a65c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/the-pastry-war-age-of-discovery/",
+    "fetchedAt": "2026-08-03T18:11:19.023Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/the-pastry-war-age-of-discovery/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

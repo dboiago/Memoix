@@ -1,0 +1,242 @@
+{
+  "recipe": {
+    "name": "Charred Baby Gem Chicken Schnitzel Caesar Wrap",
+    "time": "4 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a large bowl, mix flour, salt, and baking powder. Add the mashed avocado and olive oil. Stir in warm water gradually to form a soft dough",
+      "Knead for 5-6 minutes until smooth, adding a couple more tablespoons of water if needed. Cover and rest for 20 minutes",
+      "Flatten each chicken piece between baking paper to about 5 mm thick with a mallet or rolling pin. Season with salt and pepper",
+      "Prepare three bowls with flour, beaten egg, and a mix of breadcrumbs and Parmesan",
+      "Coat each piece of chicken in flour, then egg, then the breadcrumb mixture. Chill until ready to fry",
+      "Heat up a few centimetres of oil in a large, heavy-bottomed pan",
+      "Shallow-fry the schnitzels in the hot oil for 3–4 minutes per side, until golden and crisp. Drain on a paper towel",
+      "In a bowl or small blender, combine the egg yolk, mustard, lemon juice, anchovy and garlic",
+      "Slowly drizzle in the neutral oil while the blender is running to emulsify it in. Stir in Parmesan and season to taste",
+      "Next, heat a dry griddle pan. Rub the cut sides of the baby gem lettuce with a touch of olive oil. Char for 30-60 seconds, cut-side down, until lightly scorched but still crisp",
+      "Divide the rested dough into four balls. Roll each out to 20 cm rounds",
+      "Cook the flatbreads on a hot dry pan for 1–2 minutes per side until browned in spots and pliable. Wrap in a clean towel to keep warm",
+      "Lay each avocado flatbread on a board. Spread the Caesar dressing generously down the centre. Top with schnitzel, charred baby gem, and a grating of Parmesan",
+      "Fold in the left and right sides over the filling. With thumbs under the bottom edge, pull it over the filling tightly. Roll forward firmly to form a sealed, burrito-style wrap",
+      "Cut a square of greaseproof paper slightly larger than the tortilla. Place the wrap seam-side down in the centre. Fold in the sides of the paper, then roll it up snugly like a Christmas cracker",
+      "Do the same with a sheet of foil over the paper, folding in the edges and rolling firmly to seal. This keeps it warm, portable, and beautifully neat – perfect for picnics"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Avocados",
+        "unit": null,
+        "notes": "about 240g, mashed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Warm Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Breasts",
+        "unit": "large",
+        "notes": "skinless, (500 g total), butterflied and halved",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshlay Farms Golden Yolker® Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Breadcrumbs",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan",
+        "unit": "g",
+        "notes": "finely grated",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "for shallow frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshlay Farms Golden Yolker® Egg Yolk",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Anchovy Fillet",
+        "unit": null,
+        "notes": "or ½ tsp anchovy paste",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Neutral Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Gem Lettuce",
+        "unit": "heads",
+        "notes": "halved lengthways",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": "for charring",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan",
+        "unit": null,
+        "notes": "extra for garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "75b394f19300ac76b14a1795d0666641fc95b85c159d38a6296617b4ec676d7e",
+    "lineage_hash": "ea1968060d9f7023af801237112acca99186a283000d518bb5f79c80eec5387d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/charred-baby-gem-chicken-schnitzel-caesar-wrap-recipe",
+    "fetchedAt": "2026-08-02T02:42:41.689Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/charred-baby-gem-chicken-schnitzel-caesar-wrap-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

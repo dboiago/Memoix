@@ -1,0 +1,152 @@
+{
+  "recipe": {
+    "name": "Apple Oatmeal Cookies",
+    "time": "1 hr 8 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "48",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "114",
+      "carbohydrateContent": "17",
+      "fatContent": "4",
+      "proteinContent": "2"
+    },
+    "directions": [
+      "Cook 16 oz&#32;apple cider over medium-low heat until it&#39;s reduced to 1/2 cup. Divide the reduced cider in half and set it aside to cool."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Apple Cider",
+        "unit": "oz",
+        "notes": "2 cups",
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "oz",
+        "notes": "1 ½ cups, see note",
+        "amount": "7½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Ginger",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "room temperature but still firm",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "oz",
+        "notes": "½ cup, packed",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Old-fashioned Rolled Oats",
+        "unit": "oz",
+        "notes": "3 cups",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple",
+        "unit": "large",
+        "notes": "peeled and cut into 1/4″ cubes",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Confectioner Sugar",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8ab5fbedfaba01587b2d40c5cdf3033337e03afd8f8795d60c0f556802e6b575",
+    "lineage_hash": "974ec2694bcd79addcea6a6b3ec18fcf2f239d1c06b45a0c887ed73e7776abab"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2019/10/17/apple-oatmeal-cookies/",
+    "fetchedAt": "2026-08-02T02:27:57.729Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2019/10/17/apple-oatmeal-cookies/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

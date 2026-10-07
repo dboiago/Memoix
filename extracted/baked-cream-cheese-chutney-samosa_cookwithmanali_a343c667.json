@@ -1,0 +1,156 @@
+{
+  "recipe": {
+    "name": "Baked Cream Cheese & Chutney Samosa",
+    "time": "1 hr 30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "150",
+      "carbohydrateContent": "14",
+      "fatContent": "9",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "To make the dough, to a large bowl add flour, salt and ajwain (carom seeds). Mix using a whisk. Then add 4 tablespoons of oil to the flour.",
+      "Using your fingers rub the oil with the flour until the oil is well incorporated in all of the flour. Do this step for for 1-2 minutes since this is important. Once done, the mixture resembles crumbs.",
+      "You know the dough has enough oil and is well incorporated when you press some dough between your palm and it holds up shape without breaking.",
+      "Now, start adding water little by little and start bringing the dough together.Bring the dough together, you just need to bring the dough together here. There&#039;s no need to knead it and it won&#039;t be a smooth dough either (that is fine). I added around 7 tablespoons of water here.Now cover this dough with a damp cloth and rest for 30 to 40 minutes. I usually soak a paper towel in water and then squeeze out all the water and then cover my dough with that.",
+      "Meanwhile work on the filling. Take room temperature softened cream cheese in a bowl and whisk it using a wire whisk or you can use your mixer as well. Then add 4 tablespoons of cilantro chutney to it and mix well.",
+      "Add salt, pepper, chopped green onions, jalapeño, golden raisins, cashews and mix it all together. The filling is now done.",
+      "Now, divide the dough into 8 equal parts, around 50 grams each. Meanwhile line a large baking sheet with aluminum foil and pre-heat oven to 375 F degrees.",
+      "Take one portion of the dough and roll it to a round, meanwhile keep the remaining dough balls covered.Roll the dough ball into a circle of around 6 inch diameter and then cut it into two parts. Meanwhile mix some flour with water to form a thick paste like consistency, this will act as a glue to seal the samosa.",
+      "Take one cut portion and apply water-flour paste on the straight edge/side.",
+      "Now bring the two ends of the straight edge together and pinch them to form a cone. See picture for reference.",
+      "Fill with around 2 teaspoons of the prepared cream cheese filling. Do not overfill.",
+      "Now apply the water-flour glue around the circumference of the cone as you have to seal it and then pinch to seal.The samosa is now done, make all samosa regularly. You will get 16 samosas out of this since we divided the dough into 8 equal parts and made 2 samosas from each. Remember to keep the prepared samosa covered all time while you make all others. You don&#039;t want these to dry out.",
+      "Once all samosas are done, spray the aluminum sheet with oil spray and then arrange all prepared samosa on it. Again spray the samosas with oil spray or brush them with oil if you don&#039;t have a spray.Bake at 375 F degrees for 45 to 50 minutes until golden in color. Serve these Cream Cheese & Chutney Samosa hot with cilantro chutney, sweet tamarind chutney or some hot sauce like sriracha."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All Purpose Flour",
+        "unit": "C",
+        "notes": "260 grams",
+        "amount": "2",
+        "section": "Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Ajwain",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": "Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": "60 ml",
+        "amount": "4",
+        "section": "Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": "105 ml, or as needed to bind the dough",
+        "amount": "7",
+        "section": "Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Cream Cheese",
+        "unit": "oz",
+        "notes": "softened at room temperature",
+        "amount": "8",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro Chutney",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "+ ⅛ tsp",
+        "notes": "adjust to taste",
+        "amount": "¼",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": "adjust to taste",
+        "amount": "¼",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": "C",
+        "notes": "finely chopped",
+        "amount": "½",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Jalapeño",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Golden Raisins",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Broken Cashews",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1.5",
+        "section": "Filling",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "83f2559788ddf77c17c205a1d82987020512fe67943056b51ab1dfbd1199dcbd",
+    "lineage_hash": "38ed10156496bd889c21a301a8a60bf4c733e63d3165957fc167e08646b33180"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/baked-cream-cheese-chutney-samosa/",
+    "fetchedAt": "2026-08-02T04:12:41.980Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/baked-cream-cheese-chutney-samosa/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

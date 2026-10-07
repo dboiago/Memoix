@@ -1,0 +1,139 @@
+{
+  "recipe": {
+    "name": "Chinese Boiled Shrimp",
+    "time": "15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "165",
+      "carbohydrateContent": "6",
+      "fatContent": "2",
+      "proteinContent": "32"
+    },
+    "directions": [
+      "How to devein shrimp with shells and heads. Firstly use a kitchen shear to trim off the legs and the sharp part at the top of the head to avoid hurt.opening the carapace of the head. Then wash carefully under running water. Washing is extremely important for Chinese poached shrimp, as the head parts spoil the flavor.",
+      "In a large pot of water, add scallion, ginger, salt and Sichuan peppercorn (my personal favorite but optional). Bring the water to a boiling.",
+      "Keep high fire and place the shrimp in. After adding the shrimp, the temperature drops immediately to the poaching range.  Wait for around 1 minute or until the water begins to boil again.  Transfer out as soon as possible.",
+      "Mix all the ingredients for dipping sauce together and make sure the sugar is well dissolved.  Serve with dipping sauce."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Shrimp",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1.5",
+        "section": "Dipping Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Thin Ginger Shreds",
+        "unit": null,
+        "notes": null,
+        "amount": "10",
+        "section": "Dipping Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Thin Scallion Shreds",
+        "unit": null,
+        "notes": null,
+        "amount": "10",
+        "section": "Dipping Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "½",
+        "section": "Dipping Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Dipping Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Clean Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1.5",
+        "section": "Dipping Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Boiling water",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Boiling water",
+        "isOptional": false
+      },
+      {
+        "name": "Sichuan Peppercorn",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Boiling water",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Boiling water",
+        "isOptional": false
+      },
+      {
+        "name": "Chunks of Ginger",
+        "unit": null,
+        "notes": "smashed",
+        "amount": "2",
+        "section": "Boiling water",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3d87337037feb8450e74905c0f8e49dae4b81a5e7bc7bd0609f3e898dde06f08",
+    "lineage_hash": "ace355cd6c50af646539b75367ae1d721702112e7ebff62401fef70af06cab17"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/boiled-shrimp/",
+    "fetchedAt": "2026-08-01T17:48:46.979Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/boiled-shrimp/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

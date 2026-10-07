@@ -1,0 +1,164 @@
+{
+  "recipe": {
+    "name": "Braised Mushrooms",
+    "time": "45 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "135",
+      "carbohydrateContent": "10",
+      "fatContent": "9",
+      "proteinContent": "6"
+    },
+    "directions": [
+      "Heat a wok or skillet over medium heat. Add the neutral oil, and swirl the pan around to coat it in oil. Add the ginger, and fry for 30 seconds. Then add the chopped garlic and shallots.",
+      "Once the garlic and shallots are fragrant and slightly softened (about 30 seconds), add the mushrooms and toss until lightly coated. Add the Shaoxing wine. Cook for 2 to 3 minutes, stirring occasionally until the mushrooms start to brown slightly.",
+      "Stir in the chicken stock, oyster sauce, soy sauce, dark soy sauce, sesame oil, sugar, and white pepper. Bring to a simmer. Cover, and cook for about 5 minutes. Uncover and continue to cook, stirring occasionally for another 10 minutes. The sauce should begin to reduce and coat the mushrooms.",
+      "Once the sauce begins to coat the mushrooms, add the cornstarch slurry to thicken the sauce to your liking. There should be very little sauce at this stage with most of the sauce coating the mushrooms. Turn up the heat to reduce the excess liquid if desired.",
+      "Toss in the chopped scallions, reserving some green portions for the final garnish. Plate and serve, garnished with some of the reserved scallion greens."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Neutral Oil",
+        "unit": "Tbsp",
+        "notes": "such as vegetable, canola, or avocado oil",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "tsp",
+        "notes": "chopped",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": "Tbsp",
+        "notes": "or red onion, chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Button",
+        "unit": "oz",
+        "notes": "alt: cremini mushrooms, cut in half or quarters",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Low Sodium Vegetable Stock",
+        "unit": "C",
+        "notes": "or mushroom stock or chicken stock",
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetarian Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": "or regular oyster sauce",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "tsp",
+        "notes": "or mushroom-flavored dark soy sauce",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": "mixed into a slurry with 2 teaspoons water",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallion",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "68a506dc8f3697c65cc403d05c0be3afd3d7cc28f12ab9b1f603a9118003c752",
+    "lineage_hash": "2c4271b5864ac9a410d9f2a1ba7787cd7c32a6f0199d4598d6a087fa694d1714"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/braised-mushrooms/",
+    "fetchedAt": "2026-08-02T16:11:20.499Z"
+  },
+  "rawSource": "https://thewoksoflife.com/braised-mushrooms/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

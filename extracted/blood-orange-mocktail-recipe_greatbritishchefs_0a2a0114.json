@@ -1,0 +1,169 @@
+{
+  "recipe": {
+    "name": "Blood Orange Mocktail",
+    "time": "2 hr 30 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": "Coupette",
+    "garnish": [],
+    "subcategory": "Mocktail",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Juice and zest the blood oranges, straining the any solids from the juice",
+      "Mix together 300ml of blood orange juice with the sugar, citric acid and malic acid",
+      "Stir until all the solids have dissolved and store in the fridge",
+      "For the sous vide infusion, coarsely crush the pink peppercorns and coriander seeds in a mortar",
+      "Pour 400ml of water into the vacuum pack bag along with the crushed pink peppercorns and coriander seeds, Sichuan peppercorns, sugar and blood orange zest",
+      "Fully vacuum seal and cook in a water bath for 1 hour at 90°C",
+      "Strain all the solids and store in the fridge",
+      "For the quick infusion, coarsely crush the pink peppercorns and coriander seeds in a mortar",
+      "Add the Sichuan peppercorns, crushed coriander seeds and crushed pink peppercorns into the ISI Cream Syphon with 300ml water",
+      "Charge with one N2O charge and shake for 1 minute, then let it rest for one minute, and add a second N20 Charge and shake for another minute",
+      "After that, let it rest for one minute and rapidly depressurise the syphon",
+      "Strain all the solids and store in the fridge",
+      "Mix 150ml of the pink peppercorn sous vide infusion with 100ml of pink peppercorn quick infusion",
+      "Give it a stir and store in the fridge",
+      "In a shaker mix together 75ml of pink peppercorn mixer, 30ml of blood orange cordial and 5 drops of Ms. Betters Bitters Miraculous Foamer. Shake with ice and strain into a chilled coupette glass &nbsp;"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Blood Oranges",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cane Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Citric Acid",
+        "unit": "g",
+        "notes": null,
+        "amount": "9",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Malic Acid",
+        "unit": "g",
+        "notes": null,
+        "amount": "4.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ms Better’s Bitters",
+        "unit": "drops",
+        "notes": "Miraculous Foamer",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pink Peppercorns",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sichuan Peppercorns",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cane Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blood Orange Zest",
+        "unit": "g",
+        "notes": "from the oranges above",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pink Peppercorns",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sichuan Peppercorns",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "35249d3689c39a877add9e90e647d614671ad5e214b17c909bb1caad38ee4ce8",
+    "lineage_hash": "716894da3445ceb8f3ff76b126e8e1d8057628c83d3a3a498a974b905a00f693"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/blood-orange-mocktail-recipe",
+    "fetchedAt": "2026-08-02T09:47:11.782Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/blood-orange-mocktail-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

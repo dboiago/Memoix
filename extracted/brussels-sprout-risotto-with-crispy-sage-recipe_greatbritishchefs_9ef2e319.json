@@ -1,0 +1,138 @@
+{
+  "recipe": {
+    "name": "Brussels Sprout Risotto with Crispy Sage",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Take 400g of the sprouts and chop in half. Place 100g of the butter and melt in a large frying pan. Once the butter is foaming, add the halved sprouts and the sage leaves and turn down to a medium-low heat. Leave them to slowly cook in the foaming butter as you prepare the risotto, stirring occasionally",
+      "Finely slice the remaining raw sprouts and set aside",
+      "Heat the vegetable oil in a large pan and add the onion and garlic with a pinch of salt. Sweat until soft and translucent (about 5 minutes)",
+      "Add the rice and stir for a few minutes until starting to toast. At this stage add the white wine and cook (still stirring) until it has all been absorbed by the rice",
+      "Add ladles of warm stock one by one, each time letting the rice absorb the stock before adding the next. Stir regularly to release the starch from the rice, which is what gives you a creamy risotto",
+      "Don't worry if the sprouts start to look quite dark in colour as they cook – they should be gnarled and crisp on the outside and buttery and soft on the inside",
+      "Keep tasting the rice to check if it is cooked – you may not need all of the stock. When you are happy with the rice, fold in the shredded raw sprouts and beat in the remaining 40g of butter with the Parmesan. Carefully fold in the buttery sprouts and crispy sage along with any remaining toasty brown butter, then cover with a lid and take off the heat",
+      "Leave the risotto to rest for 5 minutes before dishing up"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sprouts",
+        "unit": "g",
+        "notes": "any discoloured outer leaves discarded",
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sage",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "large",
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carnaroli Risotto Rice",
+        "unit": "g",
+        "notes": "or arborio rice",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stock",
+        "unit": "ml",
+        "notes": "chicken or vegetable depending on preference, warmed in a pan",
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan",
+        "unit": "g",
+        "notes": "or a vegetarian alternative, finely grated",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "edd852bcffd42f64ab6bf484da83039b5f85d853033d9b5e83344fa26a66de41",
+    "lineage_hash": "606d536f828c2ae97faeb7713e21390842f307fbb7731340cddb4393dc9a9d13"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/sprout-sage-risotto-recipe",
+    "fetchedAt": "2026-08-03T04:44:12.376Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/sprout-sage-risotto-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

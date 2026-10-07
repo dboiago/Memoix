@@ -1,0 +1,118 @@
+{
+  "recipe": {
+    "name": "Buckwheat and Gingerbread Salad",
+    "time": "2 hr",
+    "course": "salad",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cook the buckwheat in salted water according to package instructions. Make sure you cook it al dente, as overcooking will make it mushy. Let cool for 10 minutes.",
+      "In a medium salad bowl, whisk together the tomato jam, olive oil, and balsamic vinegar. Add in the buckwheat, carrots, cucumber, tomatoes, ginger, and gingerbread. Toss gently to combine.",
+      "Cover and allow to rest in the refrigerator for at least 2 hours, and up to a day.",
+      "Serve cool, or slightly warm."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Grams Buckwheat",
+        "unit": null,
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Jam",
+        "unit": "Tbsp",
+        "notes": "or other tart preserve",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Balsamic Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "small",
+        "notes": "diced finely",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber",
+        "unit": null,
+        "notes": "diced finely",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "small",
+        "notes": "diced finely",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thumb-sized Knob Ginger",
+        "unit": null,
+        "notes": "peeled and chopped finely",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Gingerbread",
+        "unit": null,
+        "notes": "in France, get pain d'épices",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handfuls Arugula",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "393ade0c71ba5d3398858eb258b3b4457be1ddee2f214df024791988c26d3d51",
+    "lineage_hash": "1d7a16d889f2c99d6f3457923b417d8cbd97d5dc9dc402232d5525ef3c0442a9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/salads/buckwheat-and-gingerbread-salad-recipe/",
+    "fetchedAt": "2026-09-30T19:18:30.365Z"
+  },
+  "rawSource": "https://cnz.to/recipes/salads/buckwheat-and-gingerbread-salad-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

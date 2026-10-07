@@ -1,0 +1,38 @@
+{
+  "recipe": {
+    "name": "Blitzer",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupette",
+    "garnish": [
+      "Mint Sprig"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the mint to the shaker followed by the light rum and lightly muddle. Add the coconut orgeat and lime juice with ice and shake to chill. Strain into the glass and top with pebble ice. Garnish and float the Smith & Cross on the mint sprig.",
+      "Coconut OrgeatAdd 2 oz. of coconut flakes and 1/2 oz. of shredded coconut along with 2 oz. of sugar to a pot with 1 1/2 cup of water. Bring to a boil, then cool and let rest overnight for 12-16 hours. Strain through cheesecloth or a fine-mesh strainer. For every 1/4 cup of liquid add 2 1/2 oz. of granulated sugar (1.40:1 sugar to liquid). Put the pot on heat to bring it up to a boil then immediately reduce to a medium simmer. Let this simmer for 20 minutes to fully dissolve sugar. Then allow the mixture to cool.",
+      "Once cool, add 1 oz. of brandy or cognac, 1 barspoon of orange flower water, 1/2 barspoon of rose water, and 1/4 oz. of coconut extract."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "3fbba39223878f05cedee5542d4696e9ec8ad32259da02f8ff6a46f2c5cb5f57",
+    "lineage_hash": "4ab236a61642e80a20ebfc857325d22f79bf788e8d9d3e81cc0662420cc86772"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/blitzer-mojito-recipe/",
+    "fetchedAt": "2026-08-04T00:54:00.474Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/blitzer-mojito-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,125 @@
+{
+  "recipe": {
+    "name": "Caponata",
+    "time": "1 hr 10 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Carefully wash all of the vegetables. Cut the eggplant into cubes, place them in a colander, season them with salt, and let the liquid release for an hour. Separately chop the celery, onion, zucchini, bell pepper, and cauliflower into small pieces. Pit the olives and chop them. Chop the capers and place them in a saucepan along with the onion, celery, olives, and 1/4 cup of oil.",
+      "Sauté them for a few minutes over high heat, then add in the cauliflower, the bell pepper, and the zucchini; season with salt and continue cooking for 5 minutes. Add in the drained eggplant; after 2 minutes, add the vinegar.",
+      "Let the liquid evaporate (this will take 10-12 minutes), then pour everything into a colander and let it cool. Place the caponata in jars, cover with oil, and sterilize for 25-30 minutes."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Eggplant",
+        "unit": "oz",
+        "notes": null,
+        "amount": "14",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Bell Pepper",
+        "unit": "lb",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cauliflower Florets",
+        "unit": "lb",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Zucchini",
+        "unit": "lb",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olives",
+        "unit": "lb",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Capers",
+        "unit": "oz",
+        "notes": "rinsed",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extravirgin Olive Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "13df0d0085d42884f62a3be1d5c5bd9cee38eb5e17ff60edc0af0a9f2256a885",
+    "lineage_hash": "95eba6ff1bdefb752af84271a278b33495c3331651884f32caebfb4ed4bf0471"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/sides-and-vegetables/caponata",
+    "fetchedAt": "2026-08-03T02:09:17.420Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/sides-and-vegetables/caponata",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

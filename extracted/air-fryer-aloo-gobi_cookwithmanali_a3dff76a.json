@@ -1,0 +1,158 @@
+{
+  "recipe": {
+    "name": "Air Fryer Aloo Gobi",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "172",
+      "carbohydrateContent": "31",
+      "fatContent": "4",
+      "proteinContent": "6"
+    },
+    "directions": [
+      "To a large bow, add diced potatoes and cut cauliflower florets. How small or big you cut the veggies will determine the time it takes to cook in the air fryer. I like to cut potatoes into around 3/4 inch pieces and cauliflower into medium size cauliflower florets. Also add sliced onions to the bowl. I like to slice the onions a little thick for this recipe.",
+      "Add oil, you can add 1 to 1.5 tablespoons of oil here.",
+      "Then add all the spices- turmeric, Kashmiri red chili powder, amchur, coriander powder and salt. Using your hands, mix everything together until all the vegetables are well coated with the spices. Pre-heat air fryer at 380 F degrees for 2 to 3 minutes.",
+      "Spray the air fryer basket/plate with little oil spray if you want and then add the vegetables in a single layer. Set the timer to 12 minutes at 380 F degrees. We might need to add few extra minutes or reduce them (every air fryer is different).",
+      "At the 6 minute mark, pull out the air fryer basket and add chopped ginger and garlic. Using a spatula combine the ginger and garlic with everything else.",
+      "Close the basket and continue to air fry for additional 6 minutes until the potatoes and cauliflower are cooked through. I actually cooked for a total of 15 minutes (9 minutes more after adding the ginger-garlic). But every air fryer is different so adjust the timing accordingly. At this point your aloo gobi is ready to serve however if you want to take it a notch up, do this extra step.",
+      "Combine 1 tablespoon tomato paste with 2 tablespoons of water in a pan on medium heat. Just heat it up a little. Add the cooked aloo gobi into the pan with the tomato paste and water. Toss to combine everything together. Once everything is combined and heated through, turn off the heat. Add cilantro and sprinkle garam masala. Serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Potatoes",
+        "unit": "medium",
+        "notes": "around 300-350 grams, diced into 1 inch pieces, I used yukon gold potatoes",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cauliflower",
+        "unit": "medium",
+        "notes": "600 grams (measures after removing stalk), cut into medium size florets",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "medium",
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": "15-22 ml",
+        "amount": "1-1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kashmiri Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amchur",
+        "unit": "tsp",
+        "notes": "dry mango powder",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": "large",
+        "notes": "chopped",
+        "amount": "3-4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Paste",
+        "unit": "Tbsp",
+        "notes": "mixed with 2 tablespoons water",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": null,
+        "notes": "to garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala",
+        "unit": null,
+        "notes": "to sprinkle",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "af2d7837a6a74ee5680c98b96694ea640cb90e27e387c45ce5834d0220624aab",
+    "lineage_hash": "2b543936a3ef1b84817627b47f808265a14a0e486f702ee761d932aafd80410f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/air-fryer-aloo-gobi/",
+    "fetchedAt": "2026-08-02T02:05:47.303Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/air-fryer-aloo-gobi/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

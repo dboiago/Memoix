@@ -1,0 +1,71 @@
+{
+  "recipe": {
+    "name": "American Trilogy Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Old Fashioned",
+    "garnish": [
+      "Orange Peel"
+    ],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all ingredients in a mixing glass and stir.",
+      "Pour into an Old Fashioned glass over 3 medium-sized ice cubes.",
+      "Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Applejack",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rye Whiskey",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maple Simple Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4dd689646e25f771cafd395e1ecdf89da3cc93d84b5cce206f7c75d54035beb7",
+    "lineage_hash": "e2056faf3bfe5346305fd57cb3060ad4aabc58689671e7b2e98bd54de2954a1d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/25-days-of-holiday-drinks-day-5-american-trilogy/",
+    "fetchedAt": "2026-08-03T11:10:31.266Z"
+  },
+  "rawSource": "https://imbibemagazine.com/25-days-of-holiday-drinks-day-5-american-trilogy/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

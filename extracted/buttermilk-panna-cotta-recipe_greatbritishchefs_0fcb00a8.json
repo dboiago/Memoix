@@ -1,0 +1,161 @@
+{
+  "recipe": {
+    "name": "Buttermilk Panna Cotta",
+    "time": "2 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the lychee granita, heat 100g of the sparkling water with the sugar to dissolve. Add the purée, followed by the remaining sparkling water",
+      "Pass into a shallow tray and freeze. Once frozen, scrape with a fork and reserve in the freezer",
+      "To make the panna cotta, bring the sugar, vanilla, rosemary and half of the cream to the boil. Add the gelatine, stir to dissolve and pass into a container set over a bowl of ice to chill",
+      "Add the buttermilk, lemon juice and the remaining cream, pour into dariole moulds and transfer to the fridge for at least 2 hours to set",
+      "For the iced tea, bring the sugar and water to the boil, add the raspberries and transfer to a heatproof bowl. Add the lemon juice, cover with cling film and heat over a bain marie of simmering water for around 1 hour, until all the juice has come out of the raspberries",
+      "Transfer to a muslin bag set over a jug to catch the liquid that drips through. Once cool, add the rose essence and reserve in the fridge",
+      "To plate, loosen the panna cotta by gently running the moulds under warm water. Carefully tip onto the plates, place a rose petal on top and spoon some granita around the sides. Serve the tea on the side in a teapot filled with rose petals"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Buttermilk",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": "seeds scraped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "g",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaves",
+        "unit": null,
+        "notes": "soaked",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": null,
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lychee Purée",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sparkling Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raspberries",
+        "unit": "kg",
+        "notes": "frozen",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rose Essence",
+        "unit": "g",
+        "notes": "to every 400ml raspberry stock produced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a52d369e2c908783a7584e6e73bfec4d3c896d5602cd5924c94a2ab078696926",
+    "lineage_hash": "3cffb4da61376583661d8a76bba544d98ed03e6eb25439190236fa89251d4b0a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/buttermilk-panna-cotta-lychee-raspberry-and-rose",
+    "fetchedAt": "2026-08-03T14:33:13.877Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/buttermilk-panna-cotta-lychee-raspberry-and-rose",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

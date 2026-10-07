@@ -1,0 +1,103 @@
+{
+  "recipe": {
+    "name": "Aubergine Salad",
+    "time": "1 hr 10 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Top and tail the aubergines and quarter them lengthways. Cut each quarter into 1cm-thick slices cover with cold water in a bowl and leave to soak. After 15 minutes, drain and pat dry with kitchen paper",
+      "Combine the soy sauce, mirin, rice wine vinegar and sugar then add the garlic and spring onions and set aside",
+      "In a large pan, warm enough sunflower oil to cover the aubergine. When the oil has reached 170˚C, add the aubergine and cook until soft in the middle",
+      "Remove the aubergine from the oil with a slotted spoon and drain off any excess oil. (You might have to cook this in two batches to ensure consistent cooking of the aubergine slices)",
+      "While it’s still warm, add the aubergine to the dressing and mix together. Leave to rest for a few minutes before serving"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Aubergines",
+        "unit": "medium",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mirin",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sunflower Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3626f74493c25a02b691eaaa8efa0ecbe5b3e057e17d05382d71537c235e1fed",
+    "lineage_hash": "61d7874b44f7f7f863ac550724a6c6d885b778f19215fc10678cccbae14792e4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/aubergine-salad-recipe",
+    "fetchedAt": "2026-08-03T17:34:15.812Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/aubergine-salad-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

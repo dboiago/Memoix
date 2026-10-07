@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Canadian Whisky Cocktail: Hell's Kitchen",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Ice-filled",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all of the ingredients except club soda in a shaker and shake with ice to chill. Strain into an ice-filled glass, top with club soda and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "84874bfdf438d6e91fe058b3fba3081286bc068c31218954b747261553f290ee",
+    "lineage_hash": "d5c1d1f36deddd66d26886bed897d0d6e8fdfe5153588a94a7f3c20366b7797b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/canadian-whisky-cocktail-hells-kitchen/",
+    "fetchedAt": "2026-08-03T18:08:14.719Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/canadian-whisky-cocktail-hells-kitchen/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Bonded Bourbon Cocktail",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Stir all the ingredients with ice to chill, and strain into a glass holding a single large ice cube. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "6b68265a9f83e8530c7490122d7206e9c60607a8a2c3b8c7842c2f2c06134af5",
+    "lineage_hash": "069dc5e14fa762dddb44cf25703ced35b21db7ea67411c88b79350bc0b8b0935"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bonded-bourbon-victim-of-circumstance/",
+    "fetchedAt": "2026-08-03T21:49:48.410Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bonded-bourbon-victim-of-circumstance/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

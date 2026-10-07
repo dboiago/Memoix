@@ -1,0 +1,74 @@
+{
+  "recipe": {
+    "name": "Candied Peanuts",
+    "time": "15 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "1259",
+      "carbohydrateContent": "126",
+      "fatContent": "74",
+      "proteinContent": "39"
+    },
+    "directions": [
+      "Pre-heat oven to 150 degree C. Spread peanuts evenly on baking sheet and roast for 15 to 20 minutes. Mix the peanuts evenly once or twice to make sure they are evenly cooked.&nbsp;&nbsp;",
+      "Heat the sugar along with water and a small pinch of salt in a pan. Heat over medium to low fire. Stir from time to time until the thin syrup form large white bubbles . Slow down fire, stir in the peanuts and make the peanuts well coated with syrup.&nbsp;",
+      "Transfer out gently and cool until completely cooled down. Transfer to air-tight container. Keep in shadow place up to 1 week."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Peanuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "g",
+        "notes": "or more as needed",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Clean Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pinch of Salt",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "79e2adeff534e4b1cd9b06cec84a873778c74828cba0b98f2e7697202e071776",
+    "lineage_hash": "8bee9d66bbeb253988a23e1bcf07351f03932362677d610e6ec758fcaa42e4bb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/syrup-coated-peanut/",
+    "fetchedAt": "2026-08-01T20:21:00.081Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/syrup-coated-peanut/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

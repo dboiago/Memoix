@@ -1,0 +1,37 @@
+{
+  "recipe": {
+    "name": "Caribbean Blue",
+    "time": "15 sec",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [
+      "Pineapple Slice with Dried Blue Coconut Flakes"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a shaker, combine the drink ingredients. Fill with ice and shake vigorously for 15 seconds. Pour the contents of the shaker (including the ice) into a glass. To garnish, press the pineapple slice into the dried blue coconut flakes and perch it on the rim of the glass.",
+      "Co-CuraçaoIn a small bowl, combine the blue curaçao and coconut. Stir and let sit for 30 minutes. Strain the liquid through a fine-mesh strainer into an airtight container, reserving the coconut flakes. Spread out the soaked coconut flakes on a sheet pan and let dry for about 5 hours. Store the infused blue curaçao and the coconut flakes in separate airtight containers in a cool, dry place for up to 3 weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "6a7d382f266a3d9fcf9646226a24cc056f4d2f5dc45654082164fe8f0ccfd6dd",
+    "lineage_hash": "6f521ac2de518fd56350f8ca61964318ce9af3a0d471a4748dda3c396888fe9f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/caribbean-blue-from-john-debary/",
+    "fetchedAt": "2026-08-03T22:08:20.327Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/caribbean-blue-from-john-debary/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

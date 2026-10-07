@@ -1,0 +1,118 @@
+{
+  "recipe": {
+    "name": "Chocolate Waffle Cone",
+    "time": "2 hr 10 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "20",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "98",
+      "carbohydrateContent": "16",
+      "fatContent": "3",
+      "proteinContent": "2"
+    },
+    "directions": [
+      "In a large bowl, whisk together 4 oz&#32;brown sugar, 4 oz&#32;granulated sugar, ⅛ teaspoon&#32;table salt, 2&#32;large eggs, 4 oz&#32;whole milk, 2 oz&#32;unsalted butter and 1 tablespoon&#32;vanilla extract.",
+      "Whisk in 3 ¾ oz&#32;all purpose flour and 1 oz&#32;cocoa powder until combined. The batter will look like pancake batter.",
+      "Set aside the batter for 30 minutes or refrigerate overnight. Return the batter to room temperature before making the cookies.",
+      "If you have a pizelle cookie/waffle cone iron, preheat that. If you don&#39;t have a cookie iron, line 2 baking sheets with parchment paper or a silicone baking. mat and preheat the oven to 350 °F.",
+      "Use about 2 tablespoons of batter for each cone or adjust the amount of batter according to the instructions for your cookie iron. Scoop the batter into the center of the cookie iron and immediately spread to cover the surface. Close and bake until set. Remove the cookie from the iron and set it on a work surface. Pour another cookie and while that bakes, wrap the first cookie into a cone shape. Continue working with two cookies at a time. While one is baking, form the other into a cone. As the cones cool continue tweaking the shape until they are set.",
+      "If baking the cones in the oven, work with 2 cookies at a time on each baking sheet. For each cookie, spread two tablespoons batter to a 5&quot;-6&quot; circle. Bake one sheet of cookies until set, about 10 minutes. While the first set of cookies is baking, spread the cookies onto the other sheet. Remove the first sheet from the oven and put in the second sheet. While the second sheet is baking, form the cones from the first sheet. Continue working with the sets of cookies until all the batter is used up. (see note)",
+      "Cool completely. Store at room temperature in a tightly covered container."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Brown Sugar",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "¼ cup, melted",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "oz",
+        "notes": "¾ cup, see note",
+        "amount": "3¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a21113cbb30925013c286426d93798120e595058768018dd54062364624f5868",
+    "lineage_hash": "097e2343063ba1d02accf8901fb612f614fdc033f5d869497bc646a3b28cb98d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2019/06/13/a-chocolate-waffle-cone-recipe-or-make-bowls/",
+    "fetchedAt": "2026-08-02T03:17:33.847Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2019/06/13/a-chocolate-waffle-cone-recipe-or-make-bowls/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

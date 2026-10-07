@@ -1,0 +1,101 @@
+{
+  "recipe": {
+    "name": "Camping-style Japanese lentil curry",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Bring a heavy bottomed saucepan of water to the boil, add the eggs, and cook for 6 minutes. Immediately drain and place in cold water. When cool enough to handle, peel the eggs and set aside.",
+      "Add the coconut milk, 600ml water, and 1 teaspoon salt to the same pan and bring to a boil. Lower the heat to a simmer, then crumble in the curry block, mixing until it has dissolved. Add the leek, potato, and the jar of lentils and all of its liquid. Simmer, partially covered with a lid, mixing often, for about 30 minutes until the curry is thick and glossy and the vegetables are cooked.",
+      "To serve, spoon the curry into bowls. Place an egg on top and cut it open so that the yolk oozes out. Sprinkle with crispy shallots, if using, and enjoy."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tin Coconut Milk",
+        "unit": null,
+        "notes": "400ml",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Japanese Curry Block",
+        "unit": "pkg",
+        "notes": "approx 100g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leek",
+        "unit": "large",
+        "notes": "200g, green tops discarded, cut into 3 cm rounds",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potato",
+        "unit": "large",
+        "notes": "300g, peeled, quartered, cut into 3 cm pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jar Cooked Lentils (700g)",
+        "unit": "large",
+        "notes": "don’t drain",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Optional Sprinkle of Crispy Shallots",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7644e237829f67bc188b896142f39e6e192fbb40b46cd13a3824974bceb85e85",
+    "lineage_hash": "dc82a2648bda4dc77fcad8c17f03fe7e97364a21299b55ebed57347928f2e599"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ottolenghi.co.uk/pages/recipes/camping-style-japanese-lentil-curry",
+    "fetchedAt": "2026-08-02T07:58:49.406Z"
+  },
+  "rawSource": "https://ottolenghi.co.uk/pages/recipes/camping-style-japanese-lentil-curry",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

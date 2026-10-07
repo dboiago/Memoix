@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Alaska Cocktail",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [
+      "Lemon Twist"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all of the ingredients in an ice-filled mixing glass and stir until chilled. Strain into a chilled coupe, and if using, express a lemon twist over the drink, then use as a garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "c72fb544fb4e5cc876a770998d827cd3c22475c2fa6be9b39b1df082b8f1124f",
+    "lineage_hash": "e92f6c40b8e1c71d9a2c5d23a9ae4696f085f3d29a60ffb9180bccdba4c78022"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/classic-alaska-cocktail/",
+    "fetchedAt": "2026-08-03T19:44:29.417Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/classic-alaska-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

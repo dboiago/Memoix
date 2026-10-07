@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Butter Sweet Symphony (Rum Old Fashioned)",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Old Fashioned",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to a mixing glass with ice. Stir to chill and strain into the glass over large cube.\nBrown Butter Fat Wash RumBrown 7 oz. of unsalted butter until golden and nutty. Keep stirring over medium heat. You should see brown specks building on the bottom eventually after 5-7 minutes. Result should be a brown butter.",
+      "Pour the hot butter into the rum blend (24 oz. aged rum and 2 oz. of overproof rum) and stir or shake gently to emulsify.",
+      "Steep 4 hours at room temperature. Stir or shake it once mid-infusion (2 hours in) to keep the fat distributed evenly. Freeze 12-16 hours until fat cap solidifies. Break cap and strain twice— once through a fine mesh, once through a coffee filter. That double strain is what prevents oiliness."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "bd2e0b17d47f7574c73b41abb0b8c268aa5b2a0252eda4975bd1252bed73bd32",
+    "lineage_hash": "2eebddba6402a1c0355f8a6883db5f7e8511e500e95e2550be8bb2e90801d343"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/butter-sweet-symphony-rum-old-fashioned/",
+    "fetchedAt": "2026-08-04T01:34:33.160Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/butter-sweet-symphony-rum-old-fashioned/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

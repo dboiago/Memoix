@@ -1,0 +1,80 @@
+{
+  "recipe": {
+    "name": "Apricot Jam",
+    "time": null,
+    "course": "brunch",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cut the apricots in half and extract the pits. If you wish, crack a few open and put a kernel in each jam jar you plan to fill.",
+      "Place the apricots in a stockpot or Dutch oven, and add the water. Cover the pot and cook, stirring frequently, until the apricots are tender and cooked through.",
+      "Put a small plate in the freezer.",
+      "Add the sugar to the apricots and cook, uncovered, skimming off any foam that rises to the surface. As the mixture thickens and reduces, stir frequently to make sure the jam isn’t burning on the bottom.",
+      "When the jam looks thick and is looks slightly-jelled, turn off the heat and put a small amount of jam on the chilled plate. Put back in the freezer for a few minutes, then do the nudge test: If the jam mounds and wrinkles (as shown in the photo), it’s done. If not, continue to cook, then re-test the jam until it reaches that consistency. (You can use a candy thermometer if you wish. The finished jam will be about 220ºF, 104ºC.)",
+      "Once done, stir in the lemon juice and kirsch, if using, and ladle the jam into clean jars. Cover tightly and let cool to room temperature. Once cool, refrigerate until ready to use."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Apricots",
+        "unit": "lb",
+        "notes": "1kg, fresh",
+        "amount": "2¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "60ml",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": "600g",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Squeezed Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kirsch",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8322e3adee8c48e305e147d160f9981d004a132eafe24efec14ec9ecc00cba34",
+    "lineage_hash": "75d66369bcf7380acddd8c6b760956a48ee69d246c373360a0c5eca896bcfa39"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/apricot-jam/",
+    "fetchedAt": "2026-08-02T22:19:03.130Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/apricot-jam/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

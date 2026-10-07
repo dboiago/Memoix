@@ -1,0 +1,164 @@
+{
+  "recipe": {
+    "name": "Air Fryer Garlic Ribs (蒜香排骨)",
+    "time": "24 hr 55 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "473",
+      "carbohydrateContent": "13.4",
+      "fatContent": "28.6",
+      "proteinContent": "38.5"
+    },
+    "directions": [
+      "Add the pork ribs into a big bowl or a large ziplock bag. Combine the marinade ingredients in a small bowl. Mix well and pour over the ribs. Mix using a spatula (or massage the bag if using) until the ribs are evenly coated. Cover with plastic wrap and marinate for 2 to 3 hours at room temperature, or overnight in the fridge (highly recommended). (*Footnote 2)",
+      "When you’re ready to cook, drain the ribs and remove the excess marinade. Transfer to a large bowl if you used a ziplock bag. Combine the cornstarch and white pepper in a small bowl and stir to mix well. Then add it to the bowl of ribs, 1 tablespoon at a time. Mix to evenly coat the ribs, until all the ribs are covered. Add a bit more cornstarch if needed. Transfer the ribs into the air fryer basket without overlapping, meat side up. Spray with a generous amount of oil on top so there’s no visible dry cornstarch.",
+      "Cook in the air fryer at 350°F (176°C) for 10 minutes, until the top of the ribs turns golden brown. Remove the air fryer basket, flip the ribs, then cook for another 8 to 10 minutes, until the ribs turn golden brown throughout. Test a rib by cutting up a piece to make sure it’s cooked through. If not, you can cook them for another 5 to 10 minutes. (*Footnote 4)",
+      "While the ribs are cooking, heat 1 tablespoon of oil in a small skillet over medium heat until hot. Add the garlic. Stir and cook until you see the edge of garlic turn pale golden. Turn to low heat. Cook and stir fry the garlic until most of them turn golden, 5 minutes or so. (*Footnote 5) Immediately transfer everything to a small bowl to cool.",
+      "Once the ribs are done, transfer them to a big platter, then cover the ribs with the fried garlic. Garnish with green onions if using. Serve hot as a main dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rack (1.5 Lb / 680 G) Well-marbled Pork Ribs",
+        "unit": null,
+        "notes": "*Footnote 1, cut into single ribs",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": "or dry sherry",
+        "amount": "1",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "grated",
+        "amount": "1",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "Garlic crust",
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Garlic crust",
+        "isOptional": false
+      },
+      {
+        "name": "Oil Spray",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Garlic crust",
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "or vegetable oil",
+        "amount": "1",
+        "section": "Garlic crust",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "head",
+        "notes": "*Footnote 3, coarsely minced",
+        "amount": "1",
+        "section": "Garlic crust",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "optional, for garnish, sliced",
+        "amount": "2",
+        "section": "Garlic crust",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "61ea663a291d5205f8e817a789a70825f291b90c3bc8f09ec88f64ea096053c6",
+    "lineage_hash": "e8ec3a5012cb97dc8e9413e4e571ec93a9e079ae367f924e67be07c1474e5813"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/air-fryer-garlic-ribs/",
+    "fetchedAt": "2026-08-01T19:15:39.806Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/air-fryer-garlic-ribs/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

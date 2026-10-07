@@ -1,0 +1,92 @@
+{
+  "recipe": {
+    "name": "5-Minutes Cake",
+    "time": "2 hr 50 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pour the two flours onto your work surface. Cut the butter into small pieces. Knead the butter, sugar, egg, a pinch of salt and a shot glass of rum into the flours. Knead together for 5 minutes. Line a baking pan (9 1/2 inches in diameter) with parchment paper, or butter it generously.",
+      "Put the mixture into the pan, pat it down and smooth the surface, then use the tines of a fork to make a checkerboard pattern on the top. Bake the cake at 350°F for about 30 minutes, then remove it from the oven and let it cool for 2 hours before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Farina 00",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Farina Di Mandorle",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Burro Ammorbidito",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Zucchero",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Uovo",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shot Glass Rum",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sale",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bd96f9946d5d5cdeb008f2ed74548c4d28910693718921cb31c099f1f3209794",
+    "lineage_hash": "02a4768baac71a4db2294c4504d92225027bc8f5fb4baf493ac4c95d4cf1940e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/5-minute-cake",
+    "fetchedAt": "2026-08-02T17:58:08.903Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/5-minute-cake",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

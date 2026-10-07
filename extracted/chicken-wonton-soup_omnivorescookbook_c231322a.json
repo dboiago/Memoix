@@ -1,0 +1,175 @@
+{
+  "recipe": {
+    "name": "Chicken Wonton Soup",
+    "time": "1 hr 20 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "288",
+      "carbohydrateContent": "41.1",
+      "fatContent": "9.6",
+      "proteinContent": "9.1"
+    },
+    "directions": [
+      "Add all the filling ingredients and 2 tablespoons water into a high-powered blender or a food processor (I used my vitamix). Blend and gradually turn up to high until it forms a smooth and sticky paste, about 30 seconds. Transfer into a big bowl.",
+      "Prepare a large tray or a plate, and a small bowl of water. Work on the wontons one at a time. Place about half a teaspoon of filling (or 1 teaspoon of filling for bigger wontons) on the lower third of the wrapper. Fold the bottom side over the filling, then roll the filling all the way across to the other side of the wrapper. Brush a thin layer of water on one end of the wonton wrapper using your finger. Bend both ends and press together to lock the filling inside the wrapper. Place on a big plate, a finger&#039;s width apart.",
+      "When you finish 10 to 15 wontons, cover them with a damp, clean cheesecloth or a few layers of damp paper towel to prevent them from drying out.",
+      "If you are not going to cook and serve the wontons immediately, you can keep them covered at room temperature for 2 to 3 hours. Or you can freeze them for up to a month by sealing the tray of wontons with plastic wrap. When the wontons are completely frozen, you can transfer them to an airtight ziplock bag to free up freezer space.",
+      "Add chicken stock, light soy sauce, and ginger into a medium-sized pot. Bring to a boil. Let boil for 10 minutes.",
+      "Add the baby bok choy and cook until cooked through, 1 to 2 minutes. If you are using spinach, it only takes a few seconds to cook. Stop the heat. Stir in the green onions and sesame oil. Mix well. Add the soup and veggies into each serving bowl.",
+      "Start to cook the wontons right before serving. Bring another large pot of water to a boil. Add wontons, about 20 at a time. Stir gently and constantly with a spatula to prevent them from sticking to the bottom. Cook until the wontons are floating on top. Then cook for another 30 seconds to 1 minute, until the wonton wrappers look transparent and the filling is cooked through. Transfer a few wontons into each serving bowl with the chicken soup.",
+      "Serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Wonton Wrappers",
+        "unit": null,
+        "notes": "14 oz/400 g package, thawed",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Chicken",
+        "unit": "lb",
+        "notes": "450 g",
+        "amount": "1",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": "or rice wine",
+        "amount": "1",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "or soy sauce",
+        "amount": "1",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "slices",
+        "notes": "fresh, each the size of a dollar coin",
+        "amount": "4",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "coarsely chopped",
+        "amount": "4",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "C",
+        "notes": "or homemade stock",
+        "amount": "10",
+        "section": "Soup",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "or soy sauce",
+        "amount": "4",
+        "section": "Soup",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "slices",
+        "notes": null,
+        "amount": "2",
+        "section": "Soup",
+        "isOptional": false
+      },
+      {
+        "name": "Baby Bok Choy",
+        "unit": "stalks",
+        "notes": "Optional, quartered (or 4 cups baby spinach)",
+        "amount": "4",
+        "section": "Soup",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Soup",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "3",
+        "section": "Soup",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f68a9ea1ad6956f487da44a8325290102cffdc194371d392034b0a4a2884f2df",
+    "lineage_hash": "86c1d0eacc736d83f949fd327977338022e25ac9e429b0c220e49008116b3bd4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/chicken-wonton-soup/",
+    "fetchedAt": "2026-08-02T00:08:08.716Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/chicken-wonton-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

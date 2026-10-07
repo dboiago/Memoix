@@ -1,0 +1,70 @@
+{
+  "recipe": {
+    "name": "Banana Pops",
+    "time": "10 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Peel the bananas and cut each one in half to get 4 chunks. Pierce a skewer into the bottom of each piece",
+      "Add the chocolate to a glass bowl. Heat in the microwave until melted, approximately 1-2 minutes, stirring after a minute to make sure it all melts",
+      "Place the vanilla yoghurt into a bowl, then dip each banana into the yoghurt to cover one side",
+      "Using a spoon, drizzle the melted chocolate over the other halves. Sprinkle hundreds and thousands over the top and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bananas",
+        "unit": null,
+        "notes": "ripe",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "broken up",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Low Fat Vanilla Yoghurt",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hundreds and Thousands",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ab4cb3a30bd4e9b70fb5ec77893bfca3a61be0ca08db7dec4c7bd4c98b1e0ede",
+    "lineage_hash": "0011c3190f98771fde913c489d32064932bd1cf893eb6c301249f9ba90eb6108"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/banana-pops-recipe",
+    "fetchedAt": "2026-08-03T19:36:27.066Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/banana-pops-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

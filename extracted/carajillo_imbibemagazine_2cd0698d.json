@@ -1,0 +1,51 @@
+{
+  "recipe": {
+    "name": "Carajillo",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Brew 3 oz. of espresso per drink and cool to room temperature or chill in\nthe fridge to prevent excess dilution. In a shaker filled with ice, add chilled espresso and Licor 43. Shake well until creamy and frothy, then strain into the glass filled with fresh ice, and garnish.\nTIPThe Carajillo is as much a coffee drink as it is a cocktail—brewing the espresso fresh, and using a high-quality coffee, will have a big impact on the final flavor."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Licor 43",
+        "unit": "oz",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Espresso",
+        "unit": "oz",
+        "notes": "fresh, cooled to room temperature or chilled",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "637974b7d9a083ba1222663a0b09b5edbae7e4958dc1897cdbc15df40feab1cd",
+    "lineage_hash": "396bef1082d0cbca30dbabe4631cec749585bc32ff2148e28d4c4966a593d498"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/carajillo/",
+    "fetchedAt": "2026-08-04T00:59:12.845Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/carajillo/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

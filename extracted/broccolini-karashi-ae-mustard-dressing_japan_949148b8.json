@@ -1,0 +1,72 @@
+{
+  "recipe": {
+    "name": "Broccolini Karashi-ae (Mustard Dressing)",
+    "time": "15 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix the Dressing ingredients in a large bowl. Ensure that mustard is completely dissolved with no lumps.",
+      "Boil sufficient water in a large pot with a pinch of salt. Add broccolini to the pot and boil for 2-3 minutes until stems are tender.",
+      "Drain and run under cold water to quickly cool them down.",
+      "Cut the broccolini into 5cm (2\"). Squeeze as much water out of the broccolini as possible and put them in the bowl with the dressing.",
+      "Mix well ensuring that all the broccolini pieces are coated with the mustard dressing.",
+      "Serve in a large bowl/plates as salad or individual small bowls if serving as appetiser."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "(0.4lb) Broccolini (note 1)",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dashi Stock",
+        "unit": "Tbsp",
+        "notes": "Note 2",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Karashi Mustard",
+        "unit": "tsp",
+        "notes": "Note 3",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2f0369ed73c0affa57f2b5f94a161d3e08fbad038a1e2b2cc1e02622ffaa6171",
+    "lineage_hash": "61f17c7a94ec9d716ad1f5a2cd601a5e2e36ad4ef391b26e70dd02fc75625ae5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://japan.recipetineats.com/broccolini-karashiae-mustard-dressing/",
+    "fetchedAt": "2026-08-01T18:35:00.357Z"
+  },
+  "rawSource": "https://japan.recipetineats.com/broccolini-karashiae-mustard-dressing/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

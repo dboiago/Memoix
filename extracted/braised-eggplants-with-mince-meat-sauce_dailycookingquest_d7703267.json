@@ -1,0 +1,216 @@
+{
+  "recipe": {
+    "name": "Braised Eggplants with Mince Meat Sauce",
+    "time": "45 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Marinade beef. Mix together minced beef with light soy sauce, Shaoxing, sesame oil, ground white pepper, and corn starch. Set aside for 15 minutes.",
+      "Fry aromatics. Heat oil in a wok on high heat, sauté garlic, chilies, and ginger until fragrant, about 3 minutes.",
+      "Fry beef. Add the minced beef, stir and break up the clumps, keep cooking until no longer pink, about 3 minutes.",
+      "Braising sauce. Add chili bean sauce, hoisin sauce, oyster sauce, dark soy sauce, Shaoxing, sugar, and water. Bring to a boil.",
+      "Cook eggplants. Add the eggplants, mix well, reduce heat, cover, and simmer until the eggplants have become wilted, tender, and have absorbed most of the sauce. Stir every so often.",
+      "Garnish and serve. Turn off heat, add the scallions, mix well, transfer to a serving bowl and serve with steamed white rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Cayenne Chilies (or Bird Eye Chilies for a Spicier Dish)",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "thinly sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kilogram Chinese Eggplants",
+        "unit": null,
+        "notes": "cut into quarters lengthwise, then cut into 2 inch sections",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef and Marinade",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Minced Beef",
+        "unit": null,
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn Starch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Braising Sauce",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili Bean Sauce",
+        "unit": "Tbsp",
+        "notes": "dou ban jiang",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hoisin Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garnish",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "55f00c4529ab536f9c87121b449a404a1fa088cb010355214efb403555d62623",
+    "lineage_hash": "5f1a590871a063ffe6a33d4054711368503b606d49814a940b995b1583cf98f0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/braised-eggplants-with-mince-meat-sauce.html",
+    "fetchedAt": "2026-08-02T06:39:03.441Z"
+  },
+  "rawSource": "https://dailycookingquest.com/braised-eggplants-with-mince-meat-sauce.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

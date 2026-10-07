@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Carciofi Shandy",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Shaker",
+    "garnish": [
+      "Apple Slices"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the Cynar, apple cider, syrup, and lemon juice in a shaker with ice. Shake until chilled, then strain into a glass. Top with ginger beer and garnish with a few slices of apple."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "1dec02a3cd6e25ef0baba3b94e8968249d12f6a0cbd908fdbb630b8328ece9b9",
+    "lineage_hash": "efee4ad29b1cf35a715aa90f4d54a7ed71ebafc94e68d3f7489ef9cd36016a0a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/carciofi-shandy/",
+    "fetchedAt": "2026-08-04T01:09:01.422Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/carciofi-shandy/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

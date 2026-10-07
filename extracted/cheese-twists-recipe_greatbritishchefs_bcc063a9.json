@@ -1,0 +1,126 @@
+{
+  "recipe": {
+    "name": "Cheese Twists",
+    "time": "30 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Roll the pastry into a rectangle, about the thickness of a £1 coin. Sprinkle over half the cheese and half the paprika. Fold the pastry in three, by bringing the furthest end towards you and then folding the nearest end over the top – just like folding a business letter",
+      "Turn the pastry so the seam is running up the right hand side, like an unopened book, and roll it out again into a rectangle. Repeat with the remaining cheese and paprika. Roll out for a final time and use a pizza wheel to cut ½ inch thick lengths of pastry",
+      "Cut these in half, so you have roughly 5cm long pieces. Twist them, egg wash and sprinkle with cayenne and salt and pepper",
+      "Place them on a baking sheet lined with parchment and bake for 8-10 minutes, or until the cheese straws are golden and puffed up. Eat hot or cold"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sheet Puff Pastry",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cheese",
+        "unit": "g",
+        "notes": "mature Cheddar or leftover cheese from a dinner party cheese board",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": "Tbsp",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Poppy Seeds",
+        "unit": "Tbsp",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Paprika",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cayenne Pepper",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cep Powder",
+        "unit": "tsp",
+        "notes": "optional, for a truffly note",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "Tbsp",
+        "notes": "optional, for warming heat",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ham",
+        "unit": "g",
+        "notes": "optional, finely chopped",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Herbs",
+        "unit": "Tbsp",
+        "notes": "fresh, optional, finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Marmite",
+        "unit": "Tbsp",
+        "notes": "optional, for moreish results",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2df3066b74eb473cde1deb6e1782dfb6eba9e7cdc64e3fcc2a1c953b648da0b9",
+    "lineage_hash": "19606cb42aa695a59e09285e76e32f70cf509e5e846a2addd162f62471c43890"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cheese-twists-recipe",
+    "fetchedAt": "2026-08-03T12:15:48.439Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cheese-twists-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Boukman Daiquiri",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Cocktail",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all ingredients with ice and shake. Strain into a chilled cocktail glass and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "198d47889a7d91f26cc2c7fc0ab0495788ed840b9649f395efc35679b7f09d78",
+    "lineage_hash": "d9cce0e3bc8ea4ffb5a3c714895a9800f7f850733a98132a102bbc7f44461928"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/boukman-daiquiri-recipe/",
+    "fetchedAt": "2026-08-04T01:55:03.206Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/boukman-daiquiri-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

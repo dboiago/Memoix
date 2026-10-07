@@ -1,0 +1,153 @@
+{
+  "recipe": {
+    "name": "Ayam Bakar Sunda (Sundanese Grilled Chicken)",
+    "time": "2 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "ID",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place 10 drumsticks (set aside the other 10 for second batch), spice paste, water, lemongrass, bay leaves, salt, ground white pepper, sugar, and turmeric powder in a skillet/wok. Bring to a boil, then reduce heat to lowest setting, cover the skillet/wok with a lid, and simmer for 1 hour.",
+      "Remove the 10 cooked drumsticks from the skillet/wok and place in a colander/strainer.",
+      "Add the 10 uncooked drumsticks into the skillet/wok. Return to a boil, then reduce heat to lowest setting, cover the skillet/wok with a lid, and simmer for 1 hour.",
+      "Again, remove the 10 cooked drumsticks from the skillet/wok and place in a colander/strainer.",
+      "Preheat broiler. Line a baking tray with aluminum foil.",
+      "Brush each drumstick with coconut oil/any oil/melted butter, place in the prepared tray.",
+      "Broil until the chicken surface is charred, brushing more oil/butter as needed. Serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Drumsticks",
+        "unit": null,
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "750 ml",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemongrass (indonesian: Sereh)",
+        "unit": null,
+        "notes": "bruised and knotted",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Indonesian Bay Leaves",
+        "unit": null,
+        "notes": "Indonesian: daun salam",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": "Indonesian: bubuk kunyit",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spice Paste (grind the Following)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Shallot",
+        "unit": null,
+        "notes": "Indonesian: bawang merah",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "Indonesian: bawang putih",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Candlenuts",
+        "unit": null,
+        "notes": "Indonesian: kemiri",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "Indonesian: jahe",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Galangal",
+        "unit": "inch",
+        "notes": "Indonesian: lengkuas",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b4c3af3fe6e493e954831268a799504766bdfa16d33d5a652677932b4c0a1b20",
+    "lineage_hash": "8cceb2f85944276a267fb0de7f299bc794b072a60b1b858347eef7d2f65ff6a9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/ayam-bakar-sunda-sundanese-grilled-chicken.html",
+    "fetchedAt": "2026-08-02T03:51:18.211Z"
+  },
+  "rawSource": "https://dailycookingquest.com/ayam-bakar-sunda-sundanese-grilled-chicken.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

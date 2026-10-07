@@ -1,0 +1,156 @@
+{
+  "recipe": {
+    "name": "Cherry, Lemon & Almond Scones",
+    "time": "35 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 210°C/gas mark 7. Line a baking sheet with non-stick baking parchment",
+      "Sift the flour and baking powder into a large mixing bowl. Stir in the salt, caster sugar and mixed spice",
+      "Rub the butter into the flour with your fingertips until it resembles fine breadcrumbs. Stir in the cherries and lemon zest",
+      "In a small jug, whisk together the egg, milk and almond extract",
+      "Make a well in the centre of the flour mixture and pour in almost all of the milk mixture, reserving 2 tsp for later. Mix with your hands until the dough just about comes together – don’t overmix",
+      "Place the dough on a floured work surface and flatten into a disc around 2.5cm in thickness",
+      "Use a scone cutter to cut circles out of the dough. Place on the prepared baking sheet, spacing them at least 5cm apart. Repeat using any offcuts until any remaining dough is used up",
+      "Brush the remaining egg and milk mixture over the tops of the scones. Sprinkle with the flaked almonds",
+      "Bake for 10–15 minutes until risen and light golden brown. Leave to cool on a wire rack",
+      "For the glaze, mix the icing sugar with enough lemon juice to form a fairly stiff icing. Use a teaspoon to drizzle this, in a cross shape, over each scone. Enjoy the scones spread with butter, or jam and cream"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": "or spelt flour",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Spice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "cold, cut into cubes",
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glacé Cherries",
+        "unit": "g",
+        "notes": "halved",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zested",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almond Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaked Almonds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": null,
+        "notes": "1–2 tsp",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4bc684c5fe6c6c4bf78797ea0d2f4c6ac2c325f18825be54dedbde001572f932",
+    "lineage_hash": "f7f77679f0a887e519b51b9e7e9e400a3f313a6bb48acf3826ea6a1ea7e63ecb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cherry-scone-recipe",
+    "fetchedAt": "2026-08-03T13:14:56.721Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cherry-scone-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

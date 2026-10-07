@@ -1,0 +1,131 @@
+{
+  "recipe": {
+    "name": "Blueberry & Lemon Macarons",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 180°C/gas mark 4. Sift the icing sugar and ground almonds together",
+      "In a separate bowl whisk the egg whites to a soft peak. Gradually add the caster sugar and beat to stiff peaks to make a meringue",
+      "Gently fold the whipped meringue into the almonds and icing sugar",
+      "Place the mixture in a piping bag and pipe 24 x 10cm circles onto baking parchment. Leave for 15 minutes at room temperature until the circles form a crust",
+      "Place on a baking tray and bake in the oven for 10 minutes. Once the macarons are done, remove and allow to cool",
+      "Soak the gelatine leaf in cold water for 5 minutes to soften. Heat the blueberry purée in a saucepan and add the caster sugar, lemon zest and rehydrated gelatine",
+      "Allow the mixture to cool, then semi-whip the cream and fold into the blueberry mixture",
+      "Turn 12 macarons upside down and pipe the blueberry filling onto the bottom, then cover with other halves",
+      "To serve, garnish each macaron with some more blueberry puree, two halves of blueberry and some lemon zest"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "110",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "55",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blueberry Purée",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zested",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blueberries",
+        "unit": null,
+        "notes": "halved",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Zest",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "afd026576fbc988f7304db859d175539ab2d90345bf29b814bf9a5dfb8d6f2ae",
+    "lineage_hash": "508088e4c24e0143650995379fbce594776cf98a33b934d0befb29a12eb2ddc5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/blueberry-lemon-macarons-recipe",
+    "fetchedAt": "2026-08-03T16:26:42.221Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/blueberry-lemon-macarons-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

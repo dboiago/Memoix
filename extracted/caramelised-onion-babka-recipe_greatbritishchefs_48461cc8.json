@@ -1,0 +1,120 @@
+{
+  "recipe": {
+    "name": "Caramelised Onion Babka",
+    "time": "1 hr 30 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start by preparing the dough. Mix the flour, sugar, salt and yeast in a bowl. Add in the warm water and olive oil, then knead until smooth. Cover and let rise for 1 hour",
+      "Sauté the onions in the olive oil with the balsamic vinegar and brown sugar until deeply caramelised, about 30–40 minutes. Set aside",
+      "Roll the dough into a 30 x 30 cm square, spread the caramelised onions across the dough, then sprinkle with the thyme leaves",
+      "Roll the dough up into a long, skinny log, slice down the middle into two skinner logs, then twist the two lengths together. Tuck the ends underneath",
+      "Place the loaf in a greased and lined loaf tin, then cover and let rise for another 30 minutes",
+      "Bake for 25–30 minutes until golden. Let cool before slicing"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cane Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Quick Yeast",
+        "unit": "g",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Warm Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "large",
+        "notes": "thinly sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Balsamic Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": "tough stems discarded and chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f8680b525bb4992c7fcf057c755497019002cb77c9f76eb020b8c14363b9b964",
+    "lineage_hash": "f70c0496eaaa9bb70ef9470bfb2050447469a889a470146eca1823bdfc247163"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/caramelised-onion-babka-recipe",
+    "fetchedAt": "2026-08-02T07:28:40.843Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/caramelised-onion-babka-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

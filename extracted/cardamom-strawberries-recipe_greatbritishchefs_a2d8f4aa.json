@@ -1,0 +1,77 @@
+{
+  "recipe": {
+    "name": "Cardamom Strawberries",
+    "time": "30 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the strawberries to a heatproof bowl and set aside",
+      "Add the orange juice, cardamom seeds, sugar and honey to a pan, bring to the boil then pour the mixture over the strawberries. Set aside for 5 minutes to cool and infuse",
+      "Once infused, remove from the pan and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Punnet of Strawberries",
+        "unit": null,
+        "notes": "hulled and halved",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ba00e1006ede4394600b186f5f45cac08d372d578bf87e18877a186a0779428c",
+    "lineage_hash": "8c9837f25e11365b91a547f4fb16a7a31f275b4b78ff4ed70c4c8b8bb930b9c3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cardamom-strawberries-recipe",
+    "fetchedAt": "2026-08-02T22:17:43.167Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cardamom-strawberries-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

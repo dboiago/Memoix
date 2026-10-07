@@ -1,0 +1,154 @@
+{
+  "recipe": {
+    "name": "Agnolini in Brodo",
+    "time": "4 hr 15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start with the filling. Place the pancetta, pork and beef in a high-edged casserole and cover with cold water. Place over a low heat and bring to the boil",
+      "Next, add the crumbled sausage and chicken livers. Cover and cook over a very low heat for 3–4 hours, until all the meats are very tender. Add more water if needed",
+      "Mince the meats using a meat mincer or pulse in a food processor. Add the eggs, breadcrumbs and grated cheese and season with salt and pepper. If the mixture appears too dry, add a few spoonfuls of the leftover meat juices. Mix until well combined, then cover in cling film and allow to rest",
+      "To make the pasta dough, make a well with the flour on a work surface and crack the eggs inside it. Beat the eggs with a fork, incorporating the flour a little at the time, until you see some lumps of dough coming together",
+      "Carry on with your hands, kneading the dough until you have a smooth, elastic ball. Flatten it into a disc, wrap it in cling film and leave it to rest for half an hour",
+      "Divide the pasta dough into three pieces and roll them using a pasta machine – I normally stop at to the second-to-last setting. Spread the sheets of pasta over a floured work surface",
+      "Place as many teaspoons of the filling along the lower half of your sheet as you can fit, with a 1cm gap between them. Gently fold the sheet over to cover and cut out your square agnolini with a pasta wheel – you can also make these round with a small cutter or in the shape of a tortellino. Press the edges together to seal them",
+      "Bring the chicken stock to a rolling boil. Cook the agnolini in the stock until they float to the top. Serve the agnolini right away with a ladleful of broth and a generous dusting of grated Grana Padano"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pancetta",
+        "unit": "g",
+        "notes": "minced",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pork Loin",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Braising Beef",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Italian Pork Sausages",
+        "unit": "g",
+        "notes": "crumbled",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Livers",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Breadcrumbs",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grana Padano",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "as needed",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "as needed",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "medium",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "L",
+        "notes": "fresh, heated",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grana Padano",
+        "unit": null,
+        "notes": "grated, to serve",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ab00ed1d6ccdfad4b567acfccc4e0fcccbb44720e5e45130705cda4d2987a84f",
+    "lineage_hash": "a0dc6d0314bf5303647b3a3c19953c37fd7217051d5b502835631d4d13d55c1c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/agnolini-in-brodo-recipe",
+    "fetchedAt": "2026-08-01T19:52:17.817Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/agnolini-in-brodo-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

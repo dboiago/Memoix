@@ -1,0 +1,172 @@
+{
+  "recipe": {
+    "name": "Apple Fritters",
+    "time": "3 hr 5 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "372",
+      "carbohydrateContent": "74",
+      "fatContent": "6",
+      "proteinContent": "7"
+    },
+    "directions": [
+      "Toss the diced apples with the brown sugar and salt, allow to macerate while your are making and rising the dough (at least 60 minutes).",
+      "In a bowl, whisk together the flour, baking soda, salt and cinnamon. Set it aside.",
+      "In a large mixing bowl or the bowl of a stand mixer, combine the buttermilk, melted butter, eggs, sugar and yeast. Mix with the paddle or beater until combined (or mix by hand). Add some of dry ingredients until it forms a thick batter. Switch to the dough hook. Add the remaining dry ingredients.",
+      "Knead the dough on the mixer for 5 minutes. If working by hand add as much of the flour as you can with a wooden spoon then knead in the remaining flour by hand. The dough will be slightly sticky.",
+      "Turn the dough out onto a well floured surface and knead until the dough is smooth and supple. Use a little more flour as needed. Form the dough into a ball and place it into a lightly oiled bowl, turning once to coat the dough. Cover with plastic wrap and set aside until doubled in volume (about 1 ½ hours)."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Apples",
+        "unit": "lb",
+        "notes": "3 medium, peeled, cored and diced to ¼\"",
+        "amount": "1½",
+        "section": "Apples",
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": "Apples",
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Apples",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Apples",
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "oz",
+        "notes": "3 1/2 cups, see note",
+        "amount": "17½",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "oz",
+        "notes": "1 cup, room temperature",
+        "amount": "8",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "oz",
+        "notes": "melted",
+        "amount": "2",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "room temperature",
+        "amount": "2",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Yeast",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2¼",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Confectioner Sugar",
+        "unit": "oz",
+        "notes": "3 cups",
+        "amount": "12",
+        "section": "Apple Glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Juice From the Apples",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Apple Glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Apple Glaze",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0224108310f72228c5e92d10a8b7a750801441d30974279bfeaa9d9161d7bd63",
+    "lineage_hash": "fb358501b47d87bf46429f6ab8429247a9e1bc159b6cab254cf740b31e44260d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2022/10/06/apple-fritter-donuts/",
+    "fetchedAt": "2026-08-02T04:19:10.867Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2022/10/06/apple-fritter-donuts/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

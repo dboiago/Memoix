@@ -1,0 +1,153 @@
+{
+  "recipe": {
+    "name": "Chicken Pasta",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place a pot of salted water over a medium-high heat and bring to the boil",
+      "Place a large pan over a medium heat and add a dash of olive oil. Add the chicken strips and fry until nicely browned on one side. Season the chicken with salt and pepper as it cooks",
+      "Turn over the chicken and add the onions. Fry until the onions and chicken pieces are golden brown all over",
+      "Add the garlic and vegetable stock to the pan, using a wooden spoon to scrape the base of the pan and incorporate the contents into the sauce. Bring up to a gentle simmer and cook until the stock reduces to the consistency of a sauce",
+      "Now, drop the pasta into a pan of boiling salted water and cook for about 8 minutes, leaving a nice bite to the pasta",
+      "Add the red pesto, sweet chilli and crème fraiche to the sauce and leave to gently simmer",
+      "Strain the pasta, add to the sauce and mix well. Season with salt and pepper to taste and add a dash of lemon juice. Divide into 4 bowls, garnish with some chopped basil and diced tomato and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Free Range Chicken Breasts",
+        "unit": null,
+        "notes": "skinned and cut into 2cm strips",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strozzapreti Pasta",
+        "unit": "g",
+        "notes": "or any fresh pasta of your choice",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "large",
+        "notes": "finely sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Purée",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Chilli Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Pesto",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crème Fraîche",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basil",
+        "unit": "bunch",
+        "notes": "ripped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": null,
+        "notes": "finely diced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": null,
+        "notes": "freshly ground",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b95e13f18f310fe2d003dcd9ac66bc971ec0635f34842f73c5056448c70a126e",
+    "lineage_hash": "70b3ae1801380cf6d28b1be7735084decd6058d2a9965a2259658d20859b8688"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/fresh-chilli-chicken-pasta-recipe",
+    "fetchedAt": "2026-08-03T18:51:18.467Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/fresh-chilli-chicken-pasta-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,354 @@
+{
+  "recipe": {
+    "name": "Cherry and Pistachio Dessert",
+    "time": "2 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by making the yoghurt sorbet. Bring all of the ingredients (except the yoghurt) to the boil then allow to cool. Using a hand blender, blend in the yoghurt and transfer to Pacojet containers and into the freezer",
+      "To poach the cherries, place all of the ingredients in a pan and bring to the boil. Add the cherries and cook until tender for 5-10 minutes. Leave to cool and store in the cooking liquor. Drain 12 cherries and transfer to a dehydrator for 3 hours until dried",
+      "Make the doughnut mix by mixing together 100g of the flour, the milk and yeast in a bowl. Tightly cover with cling film and prove in a warm place until doubled in size",
+      "When doubled in size, return to the mixer and add the rest of the flour, sugar and salt. Mixing on a medium speed, add the egg. Once combined, add the butter and mix for a further 18 minutes",
+      "Allow to rest for 2 hours. Just before serving, deep-fry small balls of the batter at 180°C until golden brown. Drain and roll in caster sugar",
+      "Make the pistachio paste by boiling the water and pistachios until they are soft. Transfer to blender and blitz into a paste",
+      "For the pistachio cake, preheat the oven to 150°C/gas mark 2",
+      "Whisk the eggs and sugar until light and fluffy. Melt the butter, then mix with the almonds and 180g of pistachio paste",
+      "Gently fold in half of the egg mixture, followed by the other half. Spread on to a shallow baking tray and bake for 30 minutes",
+      "For the marzipan, blitz everything except the egg whites in a food processor until you have a fine powder. Whisk the egg whites, fold into the almond powder then roll the mixture between two pieces of parchment paper until 0.3mm thick",
+      "Cut out rounds of the marzipan with a 5cm diameter cutter and blowtorch the top until slightly blackened",
+      "For the pistachio powder, place the maltodextrin into a bowl and slowly drizzle in the pistachio oil, whisking until  a powder is created",
+      "To make the cherry gel, place both ingredients in a saucepan, bring to the boil for 1 minute and set in a tray in the fridge. When completely set, blitz in a blender until smooth and pass through a fine sieve. Store in a squeezy bottle until required",
+      "Make the cherry tagliatelle by bringing both of the ingredients to the boil for 1 minute. Pour on to a warm metal tray to a thickness of 2mm, moving the tray around so that you get even coverage. Allow to set in the fridge then cut into 5mm strips",
+      "To make the crystallised pistachios, bring the water and sugar to 113°C then stir in the nuts. Keep stirring until the sugar crystallises then tip onto a tray to cool",
+      "To plate, brush the pistachio paste across the plate. Cut the pistachio cake into small pieces and add 6 pieces to each plate. Add the dried and poached cherries, place one doughnut on each plate then lay the cherry tagliatelle and crystallised pistachios around the plate. Pipe dots of the cherry gel and natural yoghurt on the plate. Finish with a piece of marzipan, a sprinkle of freeze-dried yoghurt and a quenelle of sorbet"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "335",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "170",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glucose Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sorbet Stabiliser",
+        "unit": "g",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yoghurt",
+        "unit": "g",
+        "notes": null,
+        "amount": "375",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherries",
+        "unit": "g",
+        "notes": "pitted",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kirsch",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dessert Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Citric Acid",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": "warmed to 37°C",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yeast",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pistachio Nuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "105",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Pistachio Nuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maltodextrin",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pistachio Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherry Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Agar Agar",
+        "unit": "g",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherry Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "240",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Agar Agar",
+        "unit": "g",
+        "notes": null,
+        "amount": "2.4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pistachio Nuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Natural Yoghurt",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freeze-dried Yoghurt",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "470df4c4e23713b0ba46d87d7459b936a0a9da2e18ee8bd10f79dc9df7b5b0b2",
+    "lineage_hash": "4d26f80766367881729cbe3f0c1eb69bfb59ee676c1289f106baf65ae582f189"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cherries-pistachio-cake-doughnut-recipe",
+    "fetchedAt": "2026-08-03T15:20:12.875Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cherries-pistachio-cake-doughnut-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,82 @@
+{
+  "recipe": {
+    "name": "BBQ U Mint Julep Ribs",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Make the rub: Place the iced tea mix, sugar, mint, paprika, salt, and pepper in a bowl.",
+      "Make the glaze: Combine the mint jelly, lemon juice, butter, bourbon, and sugar in a small saucepan. Bring to a boil over medium heat, whisking often, and cook until the mint jelly is dissolved and the mixture is syrupy, 5 minutes. Set the glaze aside.",
+      "Prepare the ribs: Remove the thin, papery membrane from the back of each rack of ribs: Turn a rack meat side down. Insert a sharp implement, such as the tip of a meat thermometer, under the membrane (the best place to start is right next to the first rib bone). Using a dishcloth or pliers to gain a secure grip, pull off the membrane. Repeat with the other rack.",
+      "Place the ribs on a baking sheet. Sprinkle the ribs on both sides with rub, rubbing it into the meat. Cover the ribs and store in the refrigerator while you set up your grill.",
+      "Set up the grill for indirect grilling and preheat to medium. Brush and oil the grill grate.",
+      "Arrange the ribs, bone side down, in the center of the grate over the drip pan away from the heat. If working on a charcoal grill and using wood chips, toss half on each mound of coals. Cover the grill and cook for 1 hour.",
+      "Brush the ribs on both sides with the mint glaze. Recover the grill and continue cooking until the ribs are well-browned and cooked through, yet tender enough to pull apart with your fingers, 15 to 30 minutes more, or 1-1/4 to 1-1/2 hours in all. Brush the ribs once or twice more with glaze, and if using a charcoal grill, replenish the coals as needed. When the ribs are cooked, the meat will have shrunk back from the ends of the bones by about 1/4 inch.",
+      "Transfer the ribs to a large platter or cutting board, and cut the racks in half, widthwise, or into individual ribs. Serve at once with the Bourbon Barbecue Sauce on the side."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Iced Tea Mix",
+        "unit": "tsp",
+        "notes": "made with sugar, not artificial sweetener",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint",
+        "unit": "tsp",
+        "notes": "peppermint or spearmint, dried",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Salt",
+        "unit": "tsp",
+        "notes": "kosher or sea",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2d692356af7ce6f376265e0036f6248560a1cb3fd45a2c5ec830c33448f393e7",
+    "lineage_hash": "331b8f1f738cea3b5a467d01596b8e7eea22de1008e46f415315de92bfcdcb2a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/bbq-u-mint-julep-ribs/",
+    "fetchedAt": "2026-08-03T09:17:18.186Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/bbq-u-mint-julep-ribs/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

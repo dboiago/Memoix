@@ -1,0 +1,88 @@
+{
+  "recipe": {
+    "name": "Blackberry Mousse",
+    "time": "1 hr 15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Blitz the blackberries in the food processor and pass through a sieve. Discard the seeds and reserve the purée",
+      "Whisk the egg yolks and sugar until pale and fluffy. Place the cream in a saucepan over a gentle heat. Once the cream scalds, pour it into the egg mixture, whisk and return to the pan",
+      "Stir continuously over a low heat until the custard thickens slightly. Decant into a jug and stir in the blackberry purée. Cover with cling film and leave to cool completely",
+      "Soak the gelatine in cold water for 10 minutes. Squeeze out the excess water and whisk in a tablespoon of boiling water to melt it, before whisking it into the blackberry custard",
+      "In a separate and spotlessly clean bowl, whisk the egg whites with the salt until soft peaks form and fold into the custard with a large metal spoon until completely incorporated",
+      "Pour into glasses and pop in the fridge to set overnight. Decorate with a few blackberries and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Blackberries",
+        "unit": "g",
+        "notes": "fresh, plus a few extra to garnish",
+        "amount": "450",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "separated",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e8fb850f87c4c613225aaf8e9abc2799d1f69e854e01392bcb041753b039bd45",
+    "lineage_hash": "2b72eafb553f06a5929c5fa5d5b3ddb9527bf005577c81c610593fd8616e3cb0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/blackberry-mousse-recipe",
+    "fetchedAt": "2026-08-03T10:59:47.539Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/blackberry-mousse-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

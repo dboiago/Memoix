@@ -1,0 +1,190 @@
+{
+  "recipe": {
+    "name": "Ayam Woku Manado (Manado Spicy Basil Chicken)",
+    "time": "50 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "ID",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat oil in a pot and sauté spice paste, kaffir lime leaves, pandan leaves, and lemongrass until fragrant. About 4 to 5 minutes.",
+      "Add chicken and cook until no longer pink.",
+      "Add salt, sugar, and water. Bring to a boil, and continue cooking until the chicken are fully cooked. Adjust salt and sugar as needed.",
+      "Add tomato, sliced scallions, and lemon basil leaves. Stir and cook until lemon basil leaves are wilted. Turn off heat, transfer to a serving bowl, and garnish with the reserved leaves."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kaffir Lime Leaves",
+        "unit": null,
+        "notes": "Indonesian: daun jeruk",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pandan Leaves (indonesian: Daun Pandan)",
+        "unit": null,
+        "notes": "knotted",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemongrass (indonesian: Sereh)",
+        "unit": null,
+        "notes": "bruised and knotted",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken (about 1 Kilogram)",
+        "unit": null,
+        "notes": "cut into 12 pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "750",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": null,
+        "notes": "cut into small pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions (indonesian: Daun Bawang)",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Basil Leaves (indonesian: Daun Kemangi)",
+        "unit": "C",
+        "notes": "reserve 8 to 10 leaves as garnish",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grind the Following Into Spice Paste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": "Indonesian: bawang merah",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Anaheim Chilies",
+        "unit": null,
+        "notes": "Indonesian: cabe merah besar",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Cayenne Chilies",
+        "unit": null,
+        "notes": "Indonesian: cabe merah keriting",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Bird Eye Chilies",
+        "unit": null,
+        "notes": "Indonesian: cabe rawit merah",
+        "amount": "2-5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Candlenuts",
+        "unit": null,
+        "notes": "Indonesian: kemiri",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric",
+        "unit": "inch",
+        "notes": "Indonesian: kunyit",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "Indonesian: jahe",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bf3da4a211fda635cc5c4b77ad4a9264edcbc289fd17ae9336992d2e8550a5ea",
+    "lineage_hash": "bf201958f7409bd4c69b76cbf3dcd4dda2ae025842a5e1930449fcf9ad2b90a5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/ayam-woku-manado-manado-spicy-basil-chicken.html",
+    "fetchedAt": "2026-08-02T07:41:17.409Z"
+  },
+  "rawSource": "https://dailycookingquest.com/ayam-woku-manado-manado-spicy-basil-chicken.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

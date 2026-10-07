@@ -1,0 +1,71 @@
+{
+  "recipe": {
+    "name": "Aioli (Garlic Mayonnaise)",
+    "time": null,
+    "course": "sauces",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Crush the garlic cloves with the salt in a mortar or deep bowl until you have a smooth paste. Take out some of it as it may be too much; you can add it back later.",
+      "Add the egg yolk. Anchor the bowl down by tying a dishtowel around it tightly, if necessary.",
+      "Using a fork or whisk, add the oil to the egg and garlic mixture starting very slowly, drop by drop. I like to use a spout in an olive oil bottle to regulate the flow but you can also drip the oil in from a spoon. As the mayonnaise thickens continue to add the oil in a very thin stream. Continue until all the oil has been incorporated.",
+      "If it gets too thick you can dilute it slightly with a tablespoon of warm water – don’t add more oil, it will just get thicker. Taste, and add more of the garlic, if desired.",
+      "This recipe can easily be doubled, and you can make the aïoli in a food processor but the texture and taste is not as fine as hand-made."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "preferably fresh",
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "large",
+        "notes": "at room temperature",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra-virgin Olive Oil",
+        "unit": "C",
+        "notes": "250ml, see headnote",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "deef8feaf59d22f1ad3b64a0e7e222f19588d0dce3e8f164e733fe468d13af57",
+    "lineage_hash": "2f7e0ce70533112960c5adfe179de6928983b2ab53387001f819490ba68a3318"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/aioli-garlic-mayonnaise-recipe/",
+    "fetchedAt": "2026-08-03T03:52:53.539Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/aioli-garlic-mayonnaise-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

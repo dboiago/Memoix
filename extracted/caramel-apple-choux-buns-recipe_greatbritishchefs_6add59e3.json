@@ -1,0 +1,141 @@
+{
+  "recipe": {
+    "name": "Caramel apple choux buns",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Make the choux pastry by melting the butter and water in a pan and bringing to the boil",
+      "Remove from the heat and beat in the flour, until the dough is smooth and leaves the sides of the pan allow to cool slightly before beating in the eggs",
+      "Allow to cool fully before piping onto a greased and lined baking sheet",
+      "Bake in the oven for approximately 20 minutes until golden brown, then turn the oven down to 100°C and slit the sides of each bun to allow steam to escape and return to the oven for 10 minutes",
+      "Remove from oven and allow to cool fully on a wire rack",
+      "Peel and chop the apples and add them to a bowl of water with the juice of half a lemon to prevent them from discolouring, whilst preparing the rest of the apples",
+      "Drain the apples and add them to a saucepan with the sugar and cinnamon, cover and cook over a medium heat until softened but still keeping their shape. Drain apples and reserve a little of the cooking liquid",
+      "For the caramel sauce, add the sugar to a large frying pan or wide saucepan. Without stirring, heat over a medium heat until the sugar has dissolved and turned golden brown – shake the pan if necessary. Then remove from heat and whisk in the butter and then the cream",
+      "Whisk the cream with 2 tbsp caramel sauce, until soft peaks form",
+      "Slice the choux buns in half and scoop some of the cooked apple inside and then top with a spoonful of caramel cream. Mix a little of the apple cooking liquid with 2-3 tbsp of caramel sauce",
+      "Arrange the buns onto a serving plate and spoon the sauce over the top"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apples",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b98c2682eb002902a21adf2ba42f1e8a8ae7c5ac0d326f89deae8cabc6075327",
+    "lineage_hash": "56d438b5bf26e24986b61ec7db0acb2b0fe626dcab1297d2f73aaa5023902f2a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/caramel-apple-choux-buns-recipe",
+    "fetchedAt": "2026-08-03T23:09:14.274Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/caramel-apple-choux-buns-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

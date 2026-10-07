@@ -1,0 +1,37 @@
+{
+  "recipe": {
+    "name": "Apposta Negroni Riff",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Collins",
+    "garnish": [
+      "Orange Peel Expressed",
+      "Thyme"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all ingredients except the soda in a chilled mixing glass. Stir for 12 seconds. Strain into a chilled Collins glass filled with 4 ice cubes. Garnish with orange peel expressed and placed in drink. Add thyme and 2 narrow straws."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "c3a16442a070e06187b565f71647ee23eb4b311b7fc201a813c8423615772a2d",
+    "lineage_hash": "6efd8b7d3fc11d7c6128ab3ee2b11e14db44270fa887173339cd8d9f6e606e32"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/apposta/",
+    "fetchedAt": "2026-08-03T17:52:46.173Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/apposta/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

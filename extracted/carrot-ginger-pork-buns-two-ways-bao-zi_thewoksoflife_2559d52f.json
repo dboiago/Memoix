@@ -1,0 +1,219 @@
+{
+  "recipe": {
+    "name": "Carrot Ginger Pork Buns",
+    "time": "2 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "15",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "245",
+      "carbohydrateContent": "28",
+      "fatContent": "12",
+      "proteinContent": "7"
+    },
+    "directions": [
+      "For this step, you need: 5 grams instant dry yeast, 1 teaspoon sugar, 1 ½ cups lukewarm water, and 4 cups all-purpose flour, plus extra for rolling.",
+      "Combine the following and mix for a few minutes, until the meat mixture resembles a fine paste, then set aside: 1 cup ground pork, 1 teaspoon sesame oil, 1 tablespoon light soy sauce, 3 tablespoons oil, ¼ teaspoon ground white pepper, ¼ teaspoon salt.",
+      "Then heat a couple tablespoons of oil in a pan over medium heat and cook the grated carrots (4 cups) for a few minutes until they turn color (they shouldn’t be mushy. Cook until they’re just not raw anymore). Let cool completely.",
+      "Combine the pork mixture, the cooked carrots, and the following ingredients: 1 cup chopped scallion, 2 teaspoons grated ginger, 1 teaspoon salt, 1 teaspoon sesame oil, and 1 teaspoon shaoxing wine. Mix for a couple minutes, until the entire mixture resembles a paste.",
+      "After the dough has finished proofing, turn it out on a clean surface dusted with flour. Knead for 2 minutes to get ride of any air pockets. Roll the dough into a long tube and rip off chunks of dough to make individual dough balls. They should be about the size of a golf ball for larger buns, and about half that size for smaller buns.",
+      "Take each dough ball, and with a rolling pin, roll from the edge towards the center, without actually rolling the center of the dough. The goal is to flatten the dough into a round circle with a thinner edge and thicker center. The difference in thickness should be about 1:2. Add some filling to the center of each disk (about 1 ½ tablespoons for the larger buns and 2 teaspoons for the smaller ones).",
+      "You can start with a smaller amount of filling until you get the hang of the folding. The buns are folded with one hand holding the skin and filling, and the other hand pleating the edges of the dough disk like an accordion. As you fold, the goal is to make it all the way around the circle, until you’ve sealed it at the top. You’ll be making about 10-15 folds. Lay the buns on a floured surface while you finish assembling them. Once assembled, let the buns proof under a clean kitchen towel for another 15 minutes before cooking or freezing.",
+      "To freeze, lay the buns on a baking sheet lined with parchment paper and put the baking sheet in the freezer. Once the buns are frozen, transfer them to a Ziploc bag, press out as much air as you can from the bag, and freeze for up to two months (to be honest, they’ll even last longer than that). To cook, just follow the directions below as if you were cooking them fresh. The cooking times will just be a little longer!",
+      "I used a double-leveled bamboo steamer. You can use whatever steaming apparatus you normally use, but remember: 1) Boiling water should not directly touch the buns during steaming 2) Avoid sticking by brushing oil on the surface the bun sits on or by laying down some kind of natural nonstick surface. In our case, we used corn husks. Thin napa cabbage leaves will work too. If using a bamboo steamer, brush the sides of the steamer with oil, as the buns expand and might stick to the sides. 3) The surface that the buns sit on should not be solid, like a plate. This will trap moisture and make the buns soggy. There should be some aeration going on. 4) Make sure the lid is tight so you don’t lose any steam.",
+      "Start with cold water, and put your buns on the steamer. Turn on the heat to medium. Set the timer for 12-15 minutes for smaller buns and 15-20 minutes for the larger ones. To see if the buns are cooked, press the buns lightly with your finger. If the surface of the dough bounces right back, then they’re done. Keep a close eye on them. Over steaming will cause the buns to collapse, so cooking time is important.",
+      "Turn off the heat, keep the lid on, and let the buns “rest” for about 2 minutes before taking them out and eating.",
+      "Pre-heat a flat-bottomed cast-iron or other seasoned pan over medium heat. Add a couple tablespoons oil and swirl around the pan to coat it evenly. Add the buns to the pan, and let them cook for a few minutes until the bottoms turn golden brown. Once golden, add about 1/4 cup water to the pan and immediately cover with a lid. Turn the heat down to medium low and let the buns steam for 7-10 minutes until all the water is evaporated. Uncover the lid, and toss the buns with scallion and sesame seeds. Done!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Grams Instant Dry Yeast",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": "dough",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "dough",
+        "isOptional": false
+      },
+      {
+        "name": "Lukewarm Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": "dough",
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": "plus extra for rolling",
+        "amount": "4",
+        "section": "dough",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Pork",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "filling (the pork)",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "filling (the pork)",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "filling (the pork)",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "filling (the pork)",
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "filling (the pork)",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "filling (the pork)",
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "large",
+        "notes": "finely grated",
+        "amount": "3",
+        "section": "rest of the filling",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "rest of the filling",
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": "C",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": "rest of the filling",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "grated",
+        "amount": "2",
+        "section": "rest of the filling",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "rest of the filling",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "rest of the filling",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "rest of the filling",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "If pan-frying the buns, you’ll also need",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "If pan-frying the buns, you’ll also need",
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Finely Chopped Scallion",
+        "unit": "small",
+        "notes": "optional",
+        "amount": "1",
+        "section": "If pan-frying the buns, you’ll also need",
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Seeds",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "2",
+        "section": "If pan-frying the buns, you’ll also need",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "555a12678f1d1eecfe5f5904a293a1d54d7cb8721fa3424fde01bbcbed40fc26",
+    "lineage_hash": "3119b5cab6f170bef3273ccac687507bd9ceda7f8636049f925df9abd00194f3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/carrot-ginger-pork-buns/",
+    "fetchedAt": "2026-08-02T18:19:05.509Z"
+  },
+  "rawSource": "https://thewoksoflife.com/carrot-ginger-pork-buns/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,70 @@
+{
+  "recipe": {
+    "name": "Black Sesame Soup (黑芝麻糊)",
+    "time": "20 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Toast black sesame seeds: Place black sesame seeds in a frying pan over medium heat. Stir with a wooden spoon as needed and increase the stirring frequency near the end. You will know that the sesame seeds are ready when they start to pop. Immediately transfer the seeds to a cool plate/bowl. Properly toasted black sesame seeds have a fresh nutty fragrance, and they shatter easily when you press with your fingers.",
+      "Grind black sesame seeds: Wait until the sesame seeds are at least warm to touch. Transfer them into a food processor and pulverize into a fine powder.",
+      "Toast glutinous rice flour: Place glutinous rice flour in a frying pan over medium heat. Stir with a wooden spoon as needed and increase the stirring frequency near the end. Toast until the flour is lightly toasted with a light brown color.",
+      "Cook the soup: Boil the 6 cups of water in a pot. Stir in black sesame seeds powder, toasted glutinous rice flour, and rock sugar. Reduce the heat to a simmer. Use a whisk to stir until all the sugar melts and the soup is thick and smooth. For an even smoother soup, you can use an immersion blender or a regular blender to further puree the soup."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gram Black Sesame Seeds",
+        "unit": null,
+        "notes": "toasted",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Glutinous Rice Flour",
+        "unit": null,
+        "notes": "toasted",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Rock Sugar",
+        "unit": null,
+        "notes": "Note 1, or to taste",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6c6681e5dcdc6f603d5dd3f0f813ba1af336b6c04cdf09f43102ecb658604fc1",
+    "lineage_hash": "d6ed4d7b41e61ad36c230b5f20ab8814adeb6b156b5cc9f97c9d7c6047088c05"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/black-sesame-soup.html",
+    "fetchedAt": "2026-08-01T21:03:56.730Z"
+  },
+  "rawSource": "https://dailycookingquest.com/black-sesame-soup.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

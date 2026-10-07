@@ -1,0 +1,196 @@
+{
+  "recipe": {
+    "name": "Barbecued Beef Short Ribs",
+    "time": "3 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start by brining the ribs. Place the salt, anise and cloves in a large pan with 2l of water and bring to the boil. Once the salt has dissolved, take off heat and allow to cool",
+      "Once cooled, place the ribs in a container and pour the brine over them. Cover and place in the fridge for an hour",
+      "Remove the ribs from the brine and quickly rinse under cold water. Dry thoroughly with kitchen roll",
+      "Place all the stock ingredients in a large pan and bring to the boil. Simmer for 30 minutes",
+      "Add the ribs, return to the boil and simmer for 2–3 hours until tender. After this time, allow to cool in the cooking liquid",
+      "Once cooled, keep the ribs in the stock for 24 hours, pressed down with a board covered in weights to keep the ribs intact",
+      "Remove from the stock and place on a rack to dry for about an hour",
+      "Bring the marinade to the boil and reduce to a thick, coating consistency – this is your glaze",
+      "Set up the EGG for direct cooking with the Cast Iron Searing Grid. The target temperature is 200°C. Add the ribs and grill for 5–10 minutes, brushing regularly with the glaze and turning frequently",
+      "They should be shiny and lightly charred. Sprinkle with the chopped roasted peanuts, chilli and spring onion to finish"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef Short Rib",
+        "unit": "kg",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Chicken Stock",
+        "unit": "L",
+        "notes": null,
+        "amount": "2.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Demerara Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Bean Paste",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Sherry",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chillies",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Sticks",
+        "unit": null,
+        "notes": "6cm in length",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mandarin Peel",
+        "unit": "slices",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanuts",
+        "unit": "g",
+        "notes": "skin off, toasted and roughly chopped",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "92d3ad534e71ca79dd7aee74de99b6665918552f0b3636b3e6d53b9c8c1e7005",
+    "lineage_hash": "40d93e4ae754dd8845a163d1aa01d9638813cd07f26e3316081e2f72a72e81cc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/barbecued-beef-short-ribs-recipe",
+    "fetchedAt": "2026-08-03T11:10:15.023Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/barbecued-beef-short-ribs-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

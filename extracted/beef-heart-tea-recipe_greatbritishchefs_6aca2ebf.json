@@ -1,0 +1,260 @@
+{
+  "recipe": {
+    "name": "Beef Heart Tea",
+    "time": "4 hr 30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start by making the beef stock for your gravy. Lightly roast the bones, beef shank and oxtail in the oven for about 30 minutes. Add the onion to a dry pan, cut-side down, over a high heat and leave until very dark brown, almost burnt",
+      "Place the spices in a small muslin bag and add to a large pan with the remaining ingredients (including the roasted meat and bones). Bring to a gentle simmer. Skim of any scum that rises to the surface and cook for 3 hours, skimming every 30 minutes or so. The trick here is to simmer at a bare roll and skim any impurities regularly for a nice clean stock",
+      "Without moving the pan, turn off the heat and gently ladle the broth out of the pan through a very fine sieve, taking care not to disturb the base too much",
+      "Clean the beef heart and cut it into 4 equal pieces. Mince or finely chop half the pieces of heart and reserve",
+      "Place the spices in a small muslin bag. Melt the dripping in a casserole and cook the carrot, onion and garlic until softened. Add the Madeira and simmer until reduced by half, then add the beef broth, the spice bag and the bouquet garni and bring to a simmer. Add the unchopped pieces of beef heart",
+      "Cover with a lid and place in the oven for 4 hours, or until the meat is falling apart. Remove from the oven and drain off all the liquid into another pan, reserving the cooked pieces of beef heart",
+      "Skim the broth well. Whisk the egg whites until foamy and mix with the raw minced heart, then add to the pan of broth. Place the casserole on the stove over a low heat and simmer without stirring for 20 minutes. A “cake” will form on the top of the broth: this is called a raft",
+      "Remove from the heat and gently strain through double muslin cloth, a ladle at a time, taking care not to disturb the raft",
+      "Cut the cooked beef heart into 5mm dice and place in 8 teacups. Season the beef heart tea to taste and pour it into clean teapots",
+      "Serve the teacups at the table, for people to add their own beef heart tea as a starter. Alternatively the tea could be chilled to a jelly and served in the Victorian manner as an aspic – a much neglected preparation"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef Heart",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Dripping",
+        "unit": "g",
+        "notes": "or lard or vegetable oil",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Madeira",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Stock",
+        "unit": "L",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": null,
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bouquet Garni",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": null,
+        "notes": "free range",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Bones",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Shank",
+        "unit": null,
+        "notes": "small",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oxtail",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "peeled and halved",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": "large",
+        "notes": "halved lengthways",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shiitake Mushroom",
+        "unit": null,
+        "notes": "dried, large",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Porcini Mushroom",
+        "unit": null,
+        "notes": "10g, dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Bulb",
+        "unit": null,
+        "notes": "cloves unpeeled",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bouquet Garni",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": null,
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Madeira",
+        "unit": "ml",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "ml",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6bb56f5d0e818937689435334071a823d2cdb134ff9d4a58aa24fcd762916e72",
+    "lineage_hash": "371bde7e55c08c8622843fb48760043391668bbce73e6cac2b560f539ea30b88"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beef-heart-tea-recipe",
+    "fetchedAt": "2026-08-03T11:21:00.200Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beef-heart-tea-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

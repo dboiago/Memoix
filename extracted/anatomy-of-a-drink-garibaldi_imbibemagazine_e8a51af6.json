@@ -1,0 +1,52 @@
+{
+  "recipe": {
+    "name": "Garibaldi",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place 2 ice cubes in the glass and add the Campari. Juice the orange, add a little of the juice to the glass, and stir to combine. Add another ice cube and the remainder of the orange juice.",
+      "Tip: If you don&#8217;t have an electric juicer, you can still create fluffy OJ by aerating the fresh juice in a blender without ice or by frothing with a handheld milk frother."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Campari",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "oz",
+        "notes": "fresh, approximately",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "434f8a4494d4439cc10ca3b54af835c8f28a4f3c0b60d2562f9dff65681ac2c6",
+    "lineage_hash": "720afb43ac9057e38cb97051cc224a5ff97296dd8dffe4d818ce4d704dfd948c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/garibaldi-recipe/",
+    "fetchedAt": "2026-08-03T20:43:10.291Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/garibaldi-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

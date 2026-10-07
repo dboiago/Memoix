@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Bitter Pop: A Low-Proof Holiday Highball",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Highball",
+    "garnish": [
+      "Orange Slice"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the first 2 ingredients to a glass and top with ginger ale (to create an aromatic foam, pour the ginger ale from a few inches above the glass). Add ice, and garnish. (Optional: Using a kitchen torch, carefully sear the orange slice before using as garnish.)"
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "7053146400fd92b73ffa4b8e58fd3327e3b15cf41ae1bfcbba4ab6de0ec0bba1",
+    "lineage_hash": "0a98a4e5eed134ba21c5718356b7b58503d197497792e72e2e02ada6ee0fee8d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bitter-pop-a-low-proof-holiday-highball/",
+    "fetchedAt": "2026-08-03T21:27:47.169Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bitter-pop-a-low-proof-holiday-highball/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

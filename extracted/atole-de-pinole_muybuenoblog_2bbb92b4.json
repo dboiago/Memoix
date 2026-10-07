@@ -1,0 +1,92 @@
+{
+  "recipe": {
+    "name": "Atole de Pinole",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "218",
+      "carbohydrateContent": "34",
+      "fatContent": "6",
+      "proteinContent": "7"
+    },
+    "directions": [
+      "In a saucepan, combine the water and cinnamon stick. Let it steep for 30 minutes over low heat to infuse the flavor.",
+      "Remove and discard the cinnamon stick. Turn off the heat and stir in the mesquite flour (or pinole). Stir until completely dissolved. Set aside.",
+      "Add the milk, vanilla extract, and piloncillo (or brown sugar) to the pan. Heat over medium until the milk starts to boil.",
+      "Lower the heat to medium-low and simmer for about 10 minutes, stirring often to prevent sticking or burning. Watch closely to prevent it from overflowing.",
+      "Turn off the heat and serve warm. The atole will thicken as it sits, and consistency may vary depending on the type of milk used."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pinole",
+        "unit": "C",
+        "notes": "or mesquite flour as a substitute",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": "almond milk works well",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Piloncillo",
+        "unit": "C",
+        "notes": "or brown sugar",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3b1bba91b13dd542238462e79abe1622a6f6c5a8054e15d575ba5f36a29a90d9",
+    "lineage_hash": "8891fa19405805d47edb5baa2724646d0dfcb39ab99e98858f635982758efb82"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/atole-de-pinole/",
+    "fetchedAt": "2026-08-02T07:16:08.640Z"
+  },
+  "rawSource": "https://muybuenoblog.com/atole-de-pinole/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

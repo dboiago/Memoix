@@ -1,0 +1,192 @@
+{
+  "recipe": {
+    "name": "Barbecued Celeriac Burger",
+    "time": "1 hr 15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Peel the celeriac and rub with olive oil and wholegrain mustard. Wrap in tin foil then place directly onto the hot coals. Cook for 45–60 minutes, turning every 15 minutes to get a nice even cook. The celeriac should be cooked through but still hold its shape",
+      "While the celeriac is cooking, place all the barbecue sauce ingredients in a pan and gently heat for about 5–10 minutes, until it has thickened slightly",
+      "Unwrap the celeriac and scrape off any burnt bits. Slice into 4 nice thick burgers",
+      "Increase the heat of the barbecue to 220°C and set it up for direct cooking",
+      "Glaze the burgers with the barbecue sauce and grill on each side until crispy with bar marks. Brush with more barbecue glaze each time you flip",
+      "Serve immediately in a bread bun with your favourite burger condiments and fillings"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Celeriac",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wholegrain Mustard",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ketchup",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cider Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Marmite",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Granules",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Paprika",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tabasco",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cracked Black Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bread Buns",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gem Lettuce",
+        "unit": null,
+        "notes": "leaves washed",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gherkins",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ketchup",
+        "unit": null,
+        "notes": "vegan mayonnaise, mustard or any other burger condiments you like",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d0830c7e1b905b18c29824cae5c00549b588cd7e385a790234128d370370d183",
+    "lineage_hash": "eb4c727d0ae3424f23126ca6d2d652773ffa1e9b40f84c23c8337d938a646483"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/barbecue-celeriac-burger-recipe",
+    "fetchedAt": "2026-08-03T07:39:41.120Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/barbecue-celeriac-burger-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,175 @@
+{
+  "recipe": {
+    "name": "Air Fryer Gujiya",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "25",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "141",
+      "carbohydrateContent": "19",
+      "fatContent": "6",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "To a large bowl, add flour and pinch of salt.",
+      "Then add melted ghee to the flour. Mix the ghee into the flour by rubbing it between your palms. Do this quite a few times until flour feels like crumbs, this ensures that the ghee is well incorporated into the flour.",
+      "If you press some flour between your palms, it should hold it's shape. This means that the ghee was enough and has been well incorporated.",
+      "Now, start adding water little by little and knead to form a dough. The amount of water can vary depending on the type of flour, but you would need around 1/2 cup water.",
+      "Mix to form a relatively tight dough. Cover the dough with a damp cloth and let it rest for 20 to 30 minutes. I wet a paper towel, squeeze all the water from it and then use that to cover the dough.",
+      "While the dough is resting, work on the filling. To make the filling, heat 1 tablespoon ghee in a pan on medium heat. Add chopped raisins and chopped nuts (cashews and almonds).",
+      "To the same pan now add desiccated coconut powder. Sauté for 1 minute until it turns brown (be careful it can burn quickly) and then remove in the same bowl as nuts.",
+      "Now, add mawa/khoya into the same pan. Cook the mawa for around 4 minutes, stirring continuously until it's roasted and turns light golden in color. Remove in another bowl and let it cool down.",
+      "Once it has cooled down, add the fried nuts and coconut into it. Then add powdered sugar and cardamom powder. Mix until the sugar combines well with the mawa and nuts. The filling is now ready.",
+      "After the dough has rested, give it a quick knead, it will be much softer now. Divide the dough into small balls, around 20 to 25 grams each. Meanwhile mix 2 tablespoons flour with 3 tablespoons water. This paste will be used to seal the gujiya.",
+      "Now, take 1 ball and roll into a circle of roughly 5 to 6 inches diameter using a rolling pin. Keep the remaining dough balls covered with a damp cloth/paper towel at all times else they will dry out.",
+      "Place the rolled dough on top of the gujiya mold (you can apply little oil on the mold) apply the prepared flour-water paste around the circumference. Add 1 to 1 &1/2 tablespoons filling. Close the mold to seal the gujiya. You can also shape gujiyas with hands.",
+      "Press the mold tightly to seal the gujiyas and remove excess dough from the sides. Open the mold and carefully remove gujiya from it. Make all gujiyas similarly. Use the removed excess dough to make more gujiyas. Remember to keep all prepared guiyas covered with a damp cloth as you fill and shape more else they will dry out.",
+      "Pre-heat your air fryer according to manufacturer instructions. Place the gujiyas into the air fryer in a single layer (I used a parchment paper which is especially made for air fryer) and lightly brush them with oil. I could get around 8 gujiyas done in one batch.",
+      "Air fry at 360 F degrees for 14 to 16 minutes, filling them at the halfway mark or until they are golden brown in color. Make all gujiyas similarly in batches. These are ready now, but if you want you can dip them in sugar syrup.",
+      "This is optional step. To a wide kadai, add 3/4 cup sugar and 3/4 cup water on medium heat.",
+      "Dip the gujiyas in batches into the hot syrup. Dip one side for 30 to 40 seconds.",
+      "Soaking the gujiyas in sugar syrup is optional however I do like doing it when I air fry them. When I deep fry, I often skip this step.",
+      "You may need more mawa if you like a lot of filling in your gujiyas. Contrary to deep frying where it’s recommended not to overfill, you can do that when you air fry.",
+      "Keep the dough balls and the prepared gujiyas covered at all times as you shape and fill them else they will dry out.",
+      "To make these nut-free, you can skip the nuts. I would probably add more mawa in that case.",
+      "You can make the filling in advance if you don’t want to do all the work on one day.",
+      "It helps to use parchment paper in the air fryer so that the gujiyas don’t stick. I use one with holes which is especially designed for air fryer and you can find it on amazon.",
+      "Don’t add the sugar to the mawa while it’s still warm, let it cool down else the filling will become very watery."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Flour",
+        "unit": "C",
+        "notes": "260 grams",
+        "amount": "2",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "C",
+        "notes": "melted, 60 ml",
+        "amount": "¼",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": "to knead the dough, around 1/2 cup",
+        "amount": "0",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Golden Raisins",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Nuts",
+        "unit": "Tbsp",
+        "notes": "chopped, I used mix of cashews and almonds",
+        "amount": "4",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Desiccated Coconut Powder",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Grams Mawa",
+        "unit": null,
+        "notes": "dried milk solids, also known as khoya",
+        "amount": "200-225",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Powdered Sugar",
+        "unit": "C",
+        "notes": "or to taste",
+        "amount": "½",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": "sugar syrup",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": "sugar syrup",
+        "isOptional": false
+      },
+      {
+        "name": "Saffron Strands",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "sugar syrup",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bb19f113330aad9cee2362d55b683ba2479ab138af44b75d8378e36cb5b609b7",
+    "lineage_hash": "f23c034f3013e153fe071030c8b8c1fc9badc083b88f584ae26f34940312a88d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/air-fryer-gujiya/",
+    "fetchedAt": "2026-08-02T02:44:23.630Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/air-fryer-gujiya/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

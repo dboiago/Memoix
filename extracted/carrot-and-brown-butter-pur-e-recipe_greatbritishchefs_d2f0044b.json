@@ -1,0 +1,61 @@
+{
+  "recipe": {
+    "name": "Carrot and Brown Butter Purée",
+    "time": "15 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Peel and roughly chop the carrots. Cook in salted boiling water until soft, for approximately 10 minutes",
+      "Meanwhile, cook the butter in a pan until it turns a nutty brown colour. Pass the through a fine sieve and set aside in a jug",
+      "Transfer the carrots to blender and blitz into a smooth purée. Remove the plug from the blender and slowly stream in the brown butter until combined"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Carrots",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c9b8515f6562d768b84785490622613633b75f5ecfbedd4231e738eab94a24fa",
+    "lineage_hash": "5e8526ab019464628ed253c49c693aeb0961e37511d6f3b0f684a290379c79b9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/carrot-brown-butter-puree-recipe",
+    "fetchedAt": "2026-08-03T08:38:02.425Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/carrot-brown-butter-puree-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

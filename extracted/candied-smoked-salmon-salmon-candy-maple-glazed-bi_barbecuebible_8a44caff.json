@@ -1,0 +1,89 @@
+{
+  "recipe": {
+    "name": "Candied Smoked Salmon (Salmon Candy)",
+    "time": "11–12 hours",
+    "course": "apps",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Rinse the salmon under cold running water and blot dry with paper towels. Run your fingers over the flesh side of the fillet, feeling for the sharp ends of pin bones. Pull out any you find with kitchen tweezers.",
+      "Using a sharp knife, slice the salmon widthwise into strips 1 inch wide and 4 to 5 inches long. Transfer the fish to a large heavy-duty resealable plastic bag and place the bag in an aluminum foil pan or baking dish to contain any leaks.",
+      "Combine the brown sugar, salt, and ½ cup of the maple syrup in a bowl. Add the water and stir until the sugar and salt dissolve. Pour this over the salmon and seal the bag. Cure in the refrigerator for 8 hours, turning the bag over several times to redistribute the brine.",
+      "Drain the salmon in a colander, discarding the brine, and rinse the salmon well under cold running water. Blot dry with paper towels. Arrange the salmon flesh side up on an oiled wire rack over a rimmed baking sheet and let air-dry in the refrigerator until tacky, 2 hours.",
+      "Set up your smoker following the manufacturer’s instructions and preheat to 225° to 250°F. Add the wood as directed by the manufacturer.",
+      "Place the salmon on its rack in the smoker and smoke until the outside is bronzed with smoke and the salmon feels firm, 30 to 60 minutes. Start brushing the salmon with the remaining ¼ cup of maple syrup after 15 minutes, and brush several times until it’s cooked (about 140°F on an instant-read thermometer). Transfer the salmon candy on its rack to a rimmed baking sheet to cool and brush one final time with maple syrup before serving. Serve at room temperature or cold.",
+      "In the unlikely event you have leftovers, store the salmon candy in a resealable plastic bag in the refrigerator; it will keep for at least 3 days."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Salmon Fillet",
+        "unit": "pc",
+        "notes": "1½ pounds, preferably a center cut, fresh, skinless",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Brown Sugar",
+        "unit": "C",
+        "notes": "alt: maple sugar",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Salt",
+        "unit": "C",
+        "notes": "sea or kosher",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pure Maple Syrup",
+        "unit": "C",
+        "notes": "preferably dark amber or Grade B",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "qt",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "for oiling the rack",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "10d10d0568c77143983f8f0900ae4880e540710f1bfe5bea4260135519ebbe2c",
+    "lineage_hash": "07a47ff6652340007563e6c57eeaa2358bc4fda56fc67ab2443b18a0a7221040"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/salmon-candy-2/",
+    "fetchedAt": "2026-08-03T10:09:54.931Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/salmon-candy-2/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

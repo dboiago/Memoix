@@ -1,0 +1,84 @@
+{
+  "recipe": {
+    "name": "Avocado Choka (Zaboca Choka)",
+    "time": "10 min",
+    "course": "salad",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "85",
+      "carbohydrateContent": "5",
+      "fatContent": "7",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Slice the avocado into quarters around the seed. Remove the seed and peel off the skin.",
+      "Place the avocado in a bowl.",
+      "Add onion, garlic, hot pepper, and salt.",
+      "Mash until smooth and creamy, with no chunks remaining.",
+      "Serve immediately with sada roti, toast, or fried bake."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Avocado Large",
+        "unit": null,
+        "notes": "or 2 smaller Hass avocados",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion Finely Diced",
+        "unit": null,
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Minced",
+        "unit": "clove",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Pepper Finely Chopped",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d9e4d3842d7d2aa9ea05c0996f508b4b90f856cc92300b3a092d63d22e4a0ffb",
+    "lineage_hash": "6f8d0ff23e2fa23be8e8c913f68545c59cc7482707fdb99ca9059c35b9a58e2f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cookingwithria.com/2025/12/avocado-choka/",
+    "fetchedAt": "2026-09-25T22:59:18.775Z"
+  },
+  "rawSource": "https://cookingwithria.com/2025/12/avocado-choka/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

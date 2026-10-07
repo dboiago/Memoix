@@ -1,0 +1,133 @@
+{
+  "recipe": {
+    "name": "Cheesy Baked Eggs",
+    "time": "45 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Spread the marmite across all slices of bread",
+      "Sandwich the slices together - with the marmite layers on the inside - to make 4 sandwiches",
+      "Lightly butter the outside of the sandwiches then remove the crusts and cut into 2cm wide fingers. Set aside in the fridge until required",
+      "Heat the butter in a pan. Once bubbling, add the flour and stir for 3 minutes",
+      "Gradually add the milk, stirring continuously until the sauce thickens",
+      "Add the nutmeg and leave to simmer for 5 minutes",
+      "Stir in the grated cheddar cheese - reserving a handful for later - and season with a pinch of salt and pepper",
+      "Spoon in enough cheese sauce to cover the bottom of each ramekin, then break in the egg. Top with a couple more spoonfuls of sauce followed by a sprinkling of grated cheese",
+      "Cook in an oven set to 180°C/gas mark 4 for 20 minutes, or until golden brown and bubbling. Carefully remove and leave to cool for 5 minutes",
+      "Place a non-stick frying pan over a medium heat. Add the marmite soldiers to the pan and cook until golden brown on both sides, approximately 2 minutes per side",
+      "Place the cheesy egg ramekins onto saucers, arrange the marmite soldiers alongside. Serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Brown Bread",
+        "unit": "slices",
+        "notes": "thin",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "softened",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Marmite",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Skimmed Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Half Fat Medium Cheese",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "110",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "medium",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f2957d781e88c31cafc8a132c14711b60f52e2200622c441d1ac1f08fb5cee29",
+    "lineage_hash": "9284ee6ba22cddd715180430a7d58350013b06dadc0a5b9e5c19a1a380b5f133"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cheesy-baked-eggs-recipe-marmite-soldiers",
+    "fetchedAt": "2026-08-03T20:54:41.035Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cheesy-baked-eggs-recipe-marmite-soldiers",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

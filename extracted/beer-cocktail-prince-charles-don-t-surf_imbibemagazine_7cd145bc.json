@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Prince Charles Don't Surf",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Highball",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all ingredients except beer, and shake with ice. Strain into an ice-filled glass, top with beer and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "47dea7dc5c5758aa668bf770500e85ee3463a718075f51e9ae8dfb6b4db56ea0",
+    "lineage_hash": "f8d00f352fc5eabd1c715c0121b7c7fdcd3a0e19f0c5a8e448704c0eed6c3fcf"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/beer-cocktail-prince-charles-dont-surf/",
+    "fetchedAt": "2026-08-03T23:11:13.932Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/beer-cocktail-prince-charles-dont-surf/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

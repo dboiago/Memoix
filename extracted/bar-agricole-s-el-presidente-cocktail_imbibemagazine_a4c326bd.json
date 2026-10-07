@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "El Presidente Cocktail",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Stir ingredients with ice to chill, strain into a chilled glass and Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "8b96fb709a0ff0e2e94a8eaa7eeb0cd35dd7d9e92e414d2fdbd30b34f456816e",
+    "lineage_hash": "d7ac0f46e3dc417268934c21a848919fcfba4dd77d04aaaa1cc505ad0a847471"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/el-presidente-cocktail/",
+    "fetchedAt": "2026-08-03T17:59:52.197Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/el-presidente-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

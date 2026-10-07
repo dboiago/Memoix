@@ -1,0 +1,92 @@
+{
+  "recipe": {
+    "name": "Buttery Garlic Mashed Potatoes",
+    "time": "35 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "260",
+      "carbohydrateContent": "28",
+      "fatContent": "15",
+      "proteinContent": "4"
+    },
+    "directions": [
+      "Cook. We want to begin by de-fanging the garlic of its sulfury pungence and convert it to sweetness by cooking it. Chef Lucas recommends you peel the garlic cloves, remove the woody root, and cut them in half. Bring a non-reactive saucepan with a quart (946.4 ml) of water to a boil and add a pinch of salt and the garlic. Boil the garlic for about 15 minutes. You need lots of water to remove all the pungence of the garlic. While the garlic boils, cut the butter into 1/2 inch (12.7 mm) chunks.",
+      "While the garlic is cooking, get another pot of water boiling. Don&#039;t use the garlic water for the potatoes! Make sure you have enough water to submerge the potatoes about an inch below the surface. Add two pinches of salt. Wash the potatoes and cut them into thumb-sized chunks. Try to get the chunks about the same size so they all finish cooking about the same time. When the water is boiling, add the potatoes and boil them until a fork pierces them with only a little resistance, about 15 minutes, depending on how large the chunks are. Don&#039;t overcook the potatoes so that the exterior is mushy and they fall apart when you pierce them. Chef Lucas warns that &quot;overcooked potatoes tend to soak up water and can become runny.&quot;",
+      "Drain the garlic, drop it into the serving bowl, and add the chunks of butter, three pinches of salt, black pepper, and herbs. Mash everything into a paste with a fork.",
+      "Drain the potatoes thoroughly and keep them in the hot pot to dry them out a bit more. I like mine with some chunks, more smashed than mashed, so I just dump them into the bowl and use an old-fashioned wire masher. If you like yours smooth, use a potato ricer (it looks like a giant garlic press). Squeeze them through the holes into the bowl and mix with a large spoon. Don&#039;t use a mixer or you run the risk of making glue.",
+      "Serve. Before serving, taste and add more salt and pepper if you wish.Optional. Here&#039;s where you can add cheese, meat, or cream. I recommend you do the recipe as is the first time, and then riff on it the second time if you wish.Holding mashed potatoes. Getting all the parts of a meal ready at once is the trickiest part of cooking, so if the rest of the meal isn&#039;t ready when the spuds are, you can keep them warm in a slow cooker or heat them in the microwave for 2 to 3 minutes just before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Russet Burbank",
+        "unit": "lb",
+        "notes": "alt: Yukon Gold potatoes, after peeling",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Medium",
+        "unit": "clove",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "lb",
+        "notes": "alt: margarine cut into ½ inch chunks",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Morton Coarse Kosher Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper Fresher Is Better",
+        "unit": "tsp",
+        "notes": "fresh, finely",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Herbs Your Favorites",
+        "unit": "Tbsp",
+        "notes": "chopped, fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "dcbb6776867225a2eedd71b1aea99e2a2dd064a99442e9de0dffb3230e515b14",
+    "lineage_hash": "ef7f3770b4e282aee80ca14e42428889bb31b45c7efdac2aea3e86ed7badc4e7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://amazingribs.com/tested-recipes/potato-recipes/garlic-mashed-potatoes-recipe/",
+    "fetchedAt": "2026-08-02T07:03:16.139Z"
+  },
+  "rawSource": "https://amazingribs.com/tested-recipes/potato-recipes/garlic-mashed-potatoes-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

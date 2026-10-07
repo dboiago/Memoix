@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Caffe Shakerato Con Cioccolato",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Fill a shaker halfway with cracked ice. Pour espresso, simple syrup and vanilla over ice. Shake vigorously for 30 seconds and strain into a chilled glass that has been lined with a spiral of chocolate syrup. Garnish. Makes one serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "c2c11a007f238cacd751741d3ae8fefed1a48908dac1ca6ad2b00f1382ff3ead",
+    "lineage_hash": "74a91e395affd7f52c087f52baf6de9003545aa92dd4a2e06a73625686095cc7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/caffe-shakerato-con-cioccolato/",
+    "fetchedAt": "2026-08-04T00:39:55.610Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/caffe-shakerato-con-cioccolato/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

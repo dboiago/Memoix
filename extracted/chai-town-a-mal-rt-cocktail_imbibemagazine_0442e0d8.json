@@ -1,0 +1,37 @@
+{
+  "recipe": {
+    "name": "Chai Town: A Malört Cocktail",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Glass",
+    "garnish": [
+      "Orange Peel"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to a mixing glass with ice. Stir and strain over a large ice cube in a glass. Express orange peel across the top and discard. Garnish.",
+      "Golden Raisin and Chai Spice-Infused Bourbon Peel the ginger with a spoon and then chop into small pieces; chop the golden raisins; smash the spices into bits. Combine spice blend with bourbon in a sealable jar to infuse for 24 hours. Strain and store for up to 3 months."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "491172bf09207de8295cddd25033408640885109d8fd90f90d5ccc24cbecacda",
+    "lineage_hash": "b9c1401729b80f567e9bbcf8c62ce499dbab442d3e402f439e8494e4bec24f42"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/chai-town-malort-cocktail/",
+    "fetchedAt": "2026-08-03T21:38:53.002Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/chai-town-malort-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

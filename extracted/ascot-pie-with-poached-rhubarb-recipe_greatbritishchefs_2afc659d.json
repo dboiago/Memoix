@@ -1,0 +1,404 @@
+{
+  "recipe": {
+    "name": "Ascot Pie with Poached Rhubarb",
+    "time": "4 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the hot water pastry, combine the flour, salt and pepper in a food mixer with the paddle attached on speed 3. Add in the diced butter and mix until combined and a crumb texture is formed. Then add the eggs, egg yolks and water, mixing again until a smooth dough is formed. Cover the dough in cling film and rest in the fridge overnight",
+      "Marinate the meat the day before too. Carve off and clean the breasts from the chickens and guinea fowls, reserving the rest of the carcass and all wings, legs, trimmings, etc. Remove all the skin and sinew from the breasts then cut into strips around 1.5cm square. Weigh the breasts and foie gras and work out how much marinade you'll need – the quantities listed are for a kilogram of meat, so adjust according to what you have. Mix all the marinade ingredients together, then cover the breasts and foie gras with them. Leave to marinate for a minimum of 12 hours",
+      "The next day, roll each strip of breast meat in a piece of finely sliced lardo and set aside in the fridge",
+      "Place a frying pan over a high heat with a dash of oil. Add the foie gras to the pan. Turn until golden on all sides, then remove and leave to cool. Once cool, slice into batons the same shape and size as the breast meat",
+      "Cut a large baton out of the truffle, again aiming for 1.5cm square. Reserve the trimmings for later",
+      "Roll the pastry out until it is 5mm thick, then use it to line a 24cm oval non-stick game pie mould (or similar). There isn't actually a pastry lid for this pie (a truffle jelly is used instead), so don't worry about saving any pastry to make a lid later",
+      "Layer up the pastry case with the batons of chicken, guinea fowl and foie gras, with the truffle baton in the centre. Once full, cover the exposed meat in a layer of lardo, then cover with tin foil and place in the fridge for 2 hours",
+      "Meanwhile, take the reserved carcasses of the chicken and guinea fowl and remove the legs (these will be used later). Chop the remaining carcasses into smaller pieces along with the chicken wings. Place a large stock pot over a high heat with a splash of oil and add the bones and wings. Slowly caramelise until a deep golden brown; this will take at least 10 minutes. Then add the onions, carrots, garlic and thyme and caramelise for a further 10 minutes",
+      "Deglaze the pan with the madeira and reduce to a syrup, then add the chicken stock and simmer for 90 minutes, continuously skimming to remove the impurities. After this time, pass through a muslin cloth and chill",
+      "While the stock simmers and cools, preheat the oven 170ºC/gas mark 3. Add the terrine and cook until a core temperature of 68ºC is achieved (approximately 90 minutes). Rest at room temperature for 20 minutes before returning to the fridge to chill",
+      "To make the raft which will clarify the stock and add more flavour, finely mince the leg meat and mushrooms with a good pinch of salt. Mix in the cold egg whites and place into a heavy bottomed pan. Pour over the cold stock and place the pan over a medium heat. Stirring constantly so it doesn’t catch on the bottom, continue to cook until the raft rises to the surface. Once the raft has risen to the top cook for a further 20 minutes before passing the liquid once more through a muslin cloth. Take 1 litre of your clarified consommé and add the bloomed gelatine. Stir until dissolved then leave to cool to room temperature",
+      "Once the cooked terrine has chilled, remove the tin foil and top layer of lardo fat. Thinly slice the remaining truffle and stamp out 24 small circles for garnish. Set the circles aside and place the rest of the truffle over the top of the terrine. Heat the consommé jelly to 22ºC (if needed) then slowly pour it over the truffles, creating a smooth and even covering – this will form the pie 'lid'. Place the terrine into the fridge to set",
+      "To make the verjus gel, mix the two ingredients together, leave to rest for 5 minutes then transfer to a squeezy bottle",
+      "To make the poached rhubarb, place the sugar and water into a pan and cook to a very light coloured caramel. Add the spices and the raspberries and allow the juice to bleed and cook out for a few minutes, then add the water and boil for 5 minutes. Pass through a fine sieve",
+      "Peel the rhubarb, reserving the skin for the purée. Slice off 36 2cm batons of rhubarb on the angle, then juice the rest. Place the batons in a vacuum bag with some of the raspberry liquor and cook sous-vide at 65ºC for 12 minutes. Alternatively place in a pan with the raspberry liquor, bring to the boil then immediately take off the heat and leave to cool in the poaching liquid",
+      "To make the rhubarb pureé, mix the skin, sugar and fructose, place in a vacuum bag, seal and leave at room temperature for 1 hour. Then add the rhubarb juice, seal again and cook at 68ºC for 1 hour. If you don’t have sous vide equipment, marinate in a bowl and cook in a pan using a thermometer",
+      "Pass the mixture through a fine sieve, then bring to the boil and whisk in the agar agar for 1 minute. Pass again into a shallow tray and place in the fridge to set. Once set, blend into a gel and transfer to a squeezy bottle",
+      "Slice the pie into 12 and lay each piece on a plate with 3 pieces of rhubarb beside it. Pipe tiny dots of purée along the rhubarb and top with thyme leaves. Pipe dots of the verjus gel in between the rhubarb and cover with discs of truffle"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "00 Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "750",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "diced",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground White Pepper",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chickens",
+        "unit": null,
+        "notes": "ideally Cotswold white chickens",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Guinea Fowl",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Duck Foie Gras",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Truffle",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lardo",
+        "unit": "kg",
+        "notes": "you may need more or less, depending on the amount of meat going into the pie, finely sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pink Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground White Pepper",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brandy",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Port",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Madeira",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme Leaves",
+        "unit": "g",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Wings",
+        "unit": "kg",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Chicken Stock",
+        "unit": "L",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Madeira",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Button Mushrooms",
+        "unit": "g",
+        "notes": "sliced",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "heads",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bronze Gelatine Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Verjus",
+        "unit": "ml",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ultratex",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rhubarb",
+        "unit": "kg",
+        "notes": "enough to provide 295g peeled skin, 430g juice, and batons for poaching",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fructose Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Agar Agar",
+        "unit": "g",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom Pods",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": "fresh, chopped",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raspberries",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3ba7eb52f7a7d40c63fcd2c660018ce70e6a224c759c9a7049211c0f3fe5134a",
+    "lineage_hash": "71a1016891330dbd6ef53ccfa0e7806d22af51b50f2cf3fda3e10f8651ad978a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/ascot-pie-rhubarb-recipe",
+    "fetchedAt": "2026-08-02T19:34:18.141Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/ascot-pie-rhubarb-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

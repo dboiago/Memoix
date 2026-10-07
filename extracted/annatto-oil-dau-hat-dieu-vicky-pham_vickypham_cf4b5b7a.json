@@ -1,0 +1,54 @@
+{
+  "recipe": {
+    "name": "Annatto Oil (Dau Hat Dieu)",
+    "time": "5 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "VN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "in a small pan. Heat on medium high for 3-5 minutes.",
+      "to help annatto seeds release more color.",
+      "once they turn a deep red/brown using a slotted spoon or pour directly through a sieve. Discard the seeds.",
+      "annatto seeds in a air-tight container. Annatto oil will keep for up to 3 months at room temperature."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vegetable Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Annatto Seeds",
+        "unit": "C",
+        "notes": "dried",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "62704f1b321f34da4de944ba856d4a057c62f7c8857bceaead3e5145e99ec12b",
+    "lineage_hash": "cccf1242dfa233dd4f0af1797f9981190fea61eec1ee2e6e3264411749f3c269"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://vickypham.com/blog/annatto-seed-oil-dau-hat-dieu/",
+    "fetchedAt": "2026-08-01T17:45:27.615Z"
+  },
+  "rawSource": "https://vickypham.com/blog/annatto-seed-oil-dau-hat-dieu/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

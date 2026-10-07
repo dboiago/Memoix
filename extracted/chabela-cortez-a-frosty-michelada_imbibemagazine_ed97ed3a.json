@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Frosty Michelada",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Salt the rim of a glass and set aside. Stir or shake all ingredients except the beer with ice. Pour, ice included, into glass and top with beer. Garnish. Serve with the bottle containing any remaining beer to the side of the glass so that it can be added as desired.",
+      "To make fresh tomato juice, puree fresh, ripe tomatoes, preferably heirloom, and strain through a sieve. “In the summer, we pick heirlooms, and they are so juicy, you can just muddle them or push them through a mill,” says Kuehner.",
+      "NoteChamoy is a tangy, salty, and slightly sweet sauce made from pickled fruit. It’s available in many Latin grocery stores. If you can’t find it, Kuehner says it can be omitted, but adds that it’s worth hunting down: “It always gets interesting reactions.”"
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "2b07e1d80532af37186892ddcdfad1979aa397e18e2590304d6e1dc5f00964bc",
+    "lineage_hash": "5446eaf68622e956b682e5b543ab1d2bb09167be24d703eceb46d02f3c778ab3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/chabela-cortez-recipe/",
+    "fetchedAt": "2026-08-03T23:43:11.665Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/chabela-cortez-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

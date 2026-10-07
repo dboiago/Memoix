@@ -1,0 +1,192 @@
+{
+  "recipe": {
+    "name": "Cherry Macaron",
+    "time": "2 hr 15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "30",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin the macarons, make the ground almond base. Add all of the ingredients to the bowl of a food mixer and whisk until incorporated. Set aside until required",
+      "To make the Italian meringue base, add the egg whites to a clean bowl and whisk on a low speed. Meanwhile, add the water and 280g of caster sugar to a pan and place over a medium-high heat. Cook until the syrup reaches ‘soft ball’ stage, or 118°C",
+      "Once the temperature reaches 105°C, increase the speed of the mixer and add the extra 20g of caster sugar in order to stabilise the meringue. When the sugar reaches 118°C, reduce the speed of the mixer and gently pour the sugar down the side of the bowl into the whisking egg whites",
+      "Turn up the speed and mix for 1 more minute, before stopping the machine and adding the food colouring. Turn on the machine once more, mixing on a medium speed until the meringue has cooled to blood temperature and is a thick, fluffy consistency",
+      "When ready, mix 1/3 of the Italian meringue base into the reserved ground almond base, stirring to combine. Repeat this process twice more until all of the mix is incorporated, smooth and shiny",
+      "Add the macaron mix to a piping bag fitted with a 1cm nozzle, and pipe 4.5cm bulbs of the meringue directly onto either a non-stick baking mat, or baking tray lined with silicone paper",
+      "Set the macarons to one side for 30 minutes until they form a dry skin on top of the rounds.",
+      "Bake the macarons for 17-18 minutes, until you can just peel them off the tray. Remove from the oven, allow to cool then match each macaron half according to size",
+      "To make the cherry blossom ganache, add the chocolate and trimoline to a blender. Meanwhile, place the cherry purée in a pan and bring to the boil",
+      "Once boiling, pour the purée into the blender over the chocolate and allow to stand for 30 seconds. Turn the blender on to a moderate speed, blitz until smooth then gradually blend in the softened butter",
+      "Add the orange blossom water, mix well for 1 minute then transfer the ganache to a piping bag. Allow to set before piping",
+      "For the red stencil colouring, melt the white chocolate on a low wattage in a microwave. Combine both the raspberry and regular cocoa butter in a bowl, melt in a microwave and combine the cocoa butter with the white chocolate. Pass through a fine strainer and load into a spray gun",
+      "For the brown stencil colouring, melt the milk chocolate on a low wattage in a microwave. Combine with the cocoa butter in a bowl until combined and smooth. Pass through a fine strainer and load into a spray gun",
+      "To finish the macarons, pipe some of the ganache into the centre of the bottom macaron halves, then top with the other half. Finish by airbrushing a cherry blossom tree on top, using a stencil and chocolate spray gun"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ground Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": "g",
+        "notes": null,
+        "amount": "110",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": "g",
+        "notes": null,
+        "amount": "110",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": "plus 20g extra to stabilise the meringue",
+        "amount": "280",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "55",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Food Colouring",
+        "unit": "g",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherry Purée",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "70%, broken into pieces",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk Chocolate",
+        "unit": "g",
+        "notes": "41%, broken into pieces",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Trimoline",
+        "unit": "g",
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "softened",
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Blossom Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Chocolate",
+        "unit": "g",
+        "notes": "preferably Cacao Barry Blanc Satin",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Butter",
+        "unit": "g",
+        "notes": "raspberry",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk Chocolate",
+        "unit": "g",
+        "notes": "preferably Cocao Barry",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7936f3d0ea48e869204f6e9bdf341160c1da4d5d4ee697071aa66e226c32e6cc",
+    "lineage_hash": "ad700dafdef2e0976114eec1fd189e98c8cb3634dad1c90720ab308429d926a6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cherry-macaron-recipe",
+    "fetchedAt": "2026-08-03T21:17:46.290Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cherry-macaron-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

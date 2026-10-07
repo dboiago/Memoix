@@ -1,0 +1,135 @@
+{
+  "recipe": {
+    "name": "Cannellini, Roasted Cherry Tomato and Herb-roasted Olive Piadina",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the olives, cherry tomatoes, garlic cloves, a dash of olive oil, lemon slices and rosemary to a baking dish with some black pepper and toss to combine",
+      "Transfer to the oven and roast for 20 minutes, giving the dish a shake around halfway through",
+      "Mash the cannellini beans with a fork, then squeeze 2 garlic cloves from their skins and mash them into the beans. Add a squeeze of lemon juice, the chilli flakes, a dash of olive oil and some salt and pepper. Mix well",
+      "Heat a frying pan over a medium heat and add the piadina to the dry pan. Cook for 1 minute, then flip and cook for a minute more. Repeat with the second piadinaLay the piadina flat on a plate and spread with some of the cannellini bean spread, then top with some cherry tomato and olives and a drizzle of the pan roasting juices",
+      "Lay the piadina flat on a plate and spread with some of the cannellini bean spread, then top with some cherry tomato and olives and a drizzle of the pan roasting juices"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Olives",
+        "unit": "g",
+        "notes": "a mixture of green and black, if possible, pitted",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherry Tomatoes on the Vine",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooked Cannelini Bean",
+        "unit": "g",
+        "notes": "from a can",
+        "amount": "246",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pul Biber Chilli Flakes",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper to Season",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Season",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crosta & Mollica Wholeblend",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "440b2eb28875b9b1c7d343613566c9d004a034000e7b84f77eceabe9ce62e8a8",
+    "lineage_hash": "843d1783ee425a84a5c7394272b2ce933ee2b21603ce4cda9094b641d67caddb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cannellini-roasted-cherry-tomato-herb-roasted-olive-piadina-recipe",
+    "fetchedAt": "2026-08-02T18:01:17.801Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cannellini-roasted-cherry-tomato-herb-roasted-olive-piadina-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

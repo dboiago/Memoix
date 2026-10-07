@@ -1,0 +1,106 @@
+{
+  "recipe": {
+    "name": "BLTTA Tortas",
+    "time": "15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "474",
+      "carbohydrateContent": "44",
+      "fatContent": "29",
+      "proteinContent": "13"
+    },
+    "directions": [
+      "Cut bolillos in half lengthwise.",
+      "In a small bowl, combine the avocado and mayonnaise and mix well. Season with salt.",
+      "To assemble tortas, spread avocado mayonnaise on torta. Add bacon, lettuce, tomato, and turkey."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bolillos",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Avocado",
+        "unit": null,
+        "notes": "peeled, pitted and coarsely mashed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kosher Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Applegate Natural Oven Roasted Turkey Breast",
+        "unit": "slices",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooked Applegate Organics Sunday Bacon Brand",
+        "unit": "slices",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lettuce",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b2bc7732cce0ee357efdfbc54f9d2b61ab058973f5f8885c17608fbe33466d3c",
+    "lineage_hash": "e12c08000d39c6327286f40e351f89c535695d7d4663be2adda29aafb9136dbf"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/bltta-tortas/",
+    "fetchedAt": "2026-08-01T20:17:49.549Z"
+  },
+  "rawSource": "https://muybuenoblog.com/bltta-tortas/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

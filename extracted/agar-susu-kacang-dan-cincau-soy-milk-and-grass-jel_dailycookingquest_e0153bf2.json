@@ -1,0 +1,62 @@
+{
+  "recipe": {
+    "name": "Agar Susu Kacang dan Cincau - Soy Milk and Grass Jelly Pudding",
+    "time": "15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "ID",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix soy milk and agar-agar and jelly powder in a pot. Cook until just steaming (no need to wait for a boil to prevent burnt milk) while stirring all the time.",
+      "Strain into a mold (I use a 20cm x 20cm x 5cm pan), then quickly scatter the grass jelly into the still liquid agar.",
+      "Let it cool until set. Once it sets, transfer to a fridge to chill for at least 2 hours.",
+      "To unmold, run a knife along the pan's edges, cover the pan with a cutting board/serving plate, flip, remove the pan, then cut the agar into slices."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Soy Milk",
+        "unit": "L",
+        "notes": "Indonesian: susu kacang",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Packet of (10 Gram) of Plain Agar-agar and Jelly Powder",
+        "unit": null,
+        "notes": "I use the one from Swallow Globe Brand",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Grass Jelly (indonesian: Cincau)",
+        "unit": null,
+        "notes": "cut into 1 cm cubes",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "82b530157c7988a6f9ba72f1096331b4517d02b5a3649fc2d093f4b60f3a29f8",
+    "lineage_hash": "f25fe5d9400b903a6a05704f5b2c35b8e30248d8c8b321e35c8f2e5a087984af"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/agar-susu-kacang-dan-cincau-soy-milk-and-grass-jelly-pudding.html",
+    "fetchedAt": "2026-08-02T10:04:42.024Z"
+  },
+  "rawSource": "https://dailycookingquest.com/agar-susu-kacang-dan-cincau-soy-milk-and-grass-jelly-pudding.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

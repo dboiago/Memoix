@@ -1,0 +1,133 @@
+{
+  "recipe": {
+    "name": "Beet, Carrot, and Ginger Salad",
+    "time": "30 min",
+    "course": "salad",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place carrot ribbons, beet ribbons, sliced shallots, and raisins in a mixing bowl.",
+      "Sprinkle with salt and pepper. Add olive oil, grated ginger, lime juice, honey, and mustard. Toss and adjust the taste as needed.",
+      "Toss in the chopped lemon basil and serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gram Carrot (indonesian: Wortel)",
+        "unit": null,
+        "notes": "I use a peeler, peeled and slice into thin ribbons",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Beet (indonesian: Bit)",
+        "unit": null,
+        "notes": "I use a peeler, peeled and slice into thin ribbons",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots (indonesian: Bawang Merah)",
+        "unit": null,
+        "notes": "peeled and thinly sliced",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raisin",
+        "unit": "Tbsp",
+        "notes": "Indonesian: kismis",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt (indonesian: Garam)",
+        "unit": null,
+        "notes": "about 1 teaspoon (or to taste)",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper (indonesian: Merica)",
+        "unit": null,
+        "notes": "about 1/2 teaspoon (or to taste)",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": "Indonesian: minyak zaitun",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "Indonesian: jahe, grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "Tbsp",
+        "notes": "Indonesian: jeruk nipis",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "tsp",
+        "notes": "Indonesian: madu",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Basil",
+        "unit": "C",
+        "notes": "Indonesian: daun kemangi, chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "893bb3a448e8bf83e3c2e9e39e34b30214c04e6f74de26130d5d0f460f9a677d",
+    "lineage_hash": "7fb82912a3efdb4d8ef75d57b5100c459f7da6faa74bc906d0911e5ddbe9757c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/beet-carrot-and-ginger-salad.html",
+    "fetchedAt": "2026-08-02T10:29:34.669Z"
+  },
+  "rawSource": "https://dailycookingquest.com/beet-carrot-and-ginger-salad.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

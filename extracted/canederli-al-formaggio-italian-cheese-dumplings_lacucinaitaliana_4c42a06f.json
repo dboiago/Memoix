@@ -1,0 +1,117 @@
+{
+  "recipe": {
+    "name": "Canederli al Formaggio",
+    "time": "40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cut the bread into small pieces and transfer to a bowl with salt and pepper. Dice the cheese into small cubes. (We recommend edamer, tilsit, gorgonzola or grey cheese.)",
+      "Finely chop ½ onion and sauté in a pan with 1 teaspoon butter and 1 teaspoon oil. Mix ¼ liter milk with 4 eggs, the sautéed onion, bread, cheese and chopped parsley. Then mix in 3 tablespoons flour for consistency.",
+      "Shape the dumplings into small meatball shapes. Cook in boiling salted water for 10 minutes. Drain and dress with browned butter and grated parmesan cheese. Buon appetito!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bread",
+        "unit": "oz",
+        "notes": "stale",
+        "amount": "9",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cheese",
+        "unit": "oz",
+        "notes": null,
+        "amount": "11",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "L",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra-virgin Olive Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmigiano Cheese",
+        "unit": null,
+        "notes": "grated",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "33a6017e597b412cee635b917199c55fc5959bb4fb22d1f371c22e6a51299143",
+    "lineage_hash": "61e6dfc6a7956cc9e8d25f75f843a95e64161ce4fe31bc344692a79f1a893cbc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/main-course/canederli-al-formaggio-italian-cheese-dumplings",
+    "fetchedAt": "2026-08-03T08:59:49.826Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/main-course/canederli-al-formaggio-italian-cheese-dumplings",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

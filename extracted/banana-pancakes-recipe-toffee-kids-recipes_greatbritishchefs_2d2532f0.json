@@ -1,0 +1,133 @@
+{
+  "recipe": {
+    "name": "Banana Pancakes",
+    "time": "30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the caster sugar and flour into a bowl, make a well in the centre",
+      "Crack the eggs into the well and start to mix the ingredients together using a whisk or wooden spoon. Add the milk slowly and beat until smooth",
+      "Heat the oil in a small frying pan so that it coats the whole surface. Pour a small ladle of pancake batter into the pan. Tilt the pan to coat the whole surface and cook for 2-3 minutes",
+      "Flip the pancake over and cook for a further minute",
+      "Slide the pancake onto a plate and repeat the process until all the batter is used up",
+      "Place the pancakes onto a board and spread cream cheese over the centre of each. Arrange a few slices of banana on top",
+      "Fold each pancake in half and then in half again to form a triangle shape. Set aside while you make the sauce",
+      "For the toffee sauce, add the sugar to a heavy-based saucepan and heat until the sugar melts and turns a golden brown colour",
+      "Then, whisk in the cream, butter and vanilla essence",
+      "Slowly bring to the boil, whilst stirring with a wooden spoon. Remove from the heat",
+      "Pour a little of the sauce over the pancakes and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sunflower Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Low Fat Cream Cheese",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Banana",
+        "unit": "g",
+        "notes": "sliced",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Single Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Essence",
+        "unit": "drops",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d33172138b05c0c87004d12ed5e64a6a488af9b8e851b38bad47a124f3e4e101",
+    "lineage_hash": "a97f797632c9ad32c1540350619cf65d680abf64305d001629526cd0d9ac82e1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/banana-and-toffee-pancake-recipe",
+    "fetchedAt": "2026-08-03T19:26:48.434Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/banana-and-toffee-pancake-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

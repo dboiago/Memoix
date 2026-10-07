@@ -1,0 +1,146 @@
+{
+  "recipe": {
+    "name": "Bacon & Pepper Jack Pull Apart Bread",
+    "time": "3 hr 25 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "240",
+      "carbohydrateContent": "19",
+      "fatContent": "14",
+      "proteinContent": "10"
+    },
+    "directions": [
+      "Combine 4 oz&#32;warm water and 3 oz&#32;sour cream in a mixing bowl. Add 2 ¼ teaspoons&#32;dry yeast, ¾ oz&#32;honey, 1&#32;large egg and 1 teaspoon&#32;table salt. Mix on low speed to combine.",
+      "Add 2 ½ oz&#32;cornmeal and 1 cup of flour and mix to form a thick batter. Switch to the dough hook if using a stand mixer. Add the remaining flour. Knead on medium-low speed until the dough is elastic, but still soft, about 5 minutes. The dough will cling to the hook and clear the sides of the bowl. If mixing by hand add flour until you can no longer stir with a spoon then turn the dough onto a floured surface and continue kneading.",
+      "Transfer the dough to an oiled bowl, turn 1x to coat the dough. Cover the bowl and allow the dough to rise until doubled in volume, about 1 - 1½ hour.",
+      "Meanwhile, generously grease an 9&quot;x 5&quot; loaf pan with some of the reserved bacon fat. Line the pan with a strip of parchment paper then brush the paper with more bacon fat. Save the remaining bacon fat.",
+      "In a large bowl toss together 12 oz&#32;pepper jack cheese, 2&#32;large garlic cloves  (minced), 8 oz&#32;bacon (crumbled) and 1 tablespoon&#32;toasted cumin seeds.",
+      "Turn the dough out onto a lightly floured surface. Roll to a 20” x 16&quot; square. If the dough starts pulling back let it rest for 5 minutes then continue rolling. Brush the entire surface of the dough with bacon fat. Mark five 4&quot; segments across the long side of the dough. Use a pizza cutter to cut one 4&quot; strip from the end of the dough. Cut that strip in half so you have two 4&quot; x 8&quot; strips of dough. Lay one strip of dough into the bottom of the prepared pan.",
+      "Sprinkle the cheese filling evenly over the remaining dough. Use your hands to press the filling so it sticks to the dough. Use a pizza cutter or sharp knife to cut the dough along the 4&quot; marks. You should now have one 4&quot; x 8&quot; strip and four 4&quot;x 16&quot; strips. Cut each 16&quot; strip in half so you now have nine 4&quot; x 8&quot; strips. Cut each of those in half so you have a total of 18 4&quot; x 4&quot; squares.",
+      "Layer 2 or 3 of the squares on top of each other. Set those squares, standing up, into the pan. Make sure the first square has plain dough facing the side of the pan. Continue stacking the squares and setting them into the pan. Make sure to set the last square with plain dough facing the side of the pan.",
+      "Tuck any filling that spilled out onto the work surface between the squares of dough. Cover the pan and let the dough rise for 1 hour. Meanwhile, preheat the oven to 375 °F.",
+      "Bake until the loaf is well puffed and golden brown, and the temperature in the middle of the loaf is 200 °F, about 40 minutes.",
+      "Use the parchment to lift the bread from the pan. Serve warm."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Warm Water",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Sour Cream",
+        "unit": "oz",
+        "notes": "⅓ cup, room temperature",
+        "amount": "3",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Yeast",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2¼",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "oz",
+        "notes": "1 tablespoon",
+        "amount": "¾",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": "room temperature",
+        "amount": "1",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Cornmeal",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "2½",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "oz",
+        "notes": "2 cups, see note",
+        "amount": "10",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Pepper Jack Cheese",
+        "unit": "oz",
+        "notes": "shredded",
+        "amount": "12",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": "large",
+        "notes": "finely minced",
+        "amount": "2",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Bacon (cooked Crisp & Crumbled (reserve Fat))",
+        "unit": "oz",
+        "notes": null,
+        "amount": "8",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Cumin Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Filling",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9194d63fdfe03fd74547bbe745fdb7ccc1204e99e00ae99a74813221aa2d3509",
+    "lineage_hash": "23b399a452e2826ac8f47ba0ad26323d79a302f54027ece2831b86d563745d7a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2020/01/29/bacon-pepper-jack-pull-apart-bread/",
+    "fetchedAt": "2026-08-02T00:49:32.957Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2020/01/29/bacon-pepper-jack-pull-apart-bread/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

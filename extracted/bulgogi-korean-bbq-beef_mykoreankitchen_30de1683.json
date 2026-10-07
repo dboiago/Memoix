@@ -1,0 +1,163 @@
+{
+  "recipe": {
+    "name": "Bulgogi (Korean BBQ Beef)",
+    "time": "4 hr 20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "KR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "436",
+      "carbohydrateContent": "18",
+      "fatContent": "17",
+      "proteinContent": "47"
+    },
+    "directions": [
+      "Blend the marinade ingredients in a mixer or food processor until smooth. Set aside.",
+      "Place the thinly sliced meat in a mixing bowl and pour the marinade over it. Mix them well together while gently massaging the meat with your hands. (Wearing a food prep glove is very handy here!)Add the sesame oil and mix it into the meat. (I prefer adding the sesame oil separately as opposed to mixing it in the marinade sauce. I read somewhere that the oil can prevent the other sauce getting absorbed effectively into the meat.)Cover the bowl with cling wrap (or move the marinated meat into a glass container with a lid) and marinate the meat for at least 4 hours in the fridge. (If you have more time, you can also marinate it overnight to deepen the flavour even more).",
+      "Preheat a skillet / bbq grill on medium high heat until well heated. Add the cooking oil and spread it well. Add the meat (and optional vegetables) and cook it on medium high to high heat for 3 to 5 mins (until the meat and vegetables cook to your desired doneness). Toss in the sesame seeds and stir them quickly.",
+      "Serve the bulgogi with steamed rice and other Korean side dishes. You can also use some lettuce leaves and perilla leaves to wrap the bulgogi. Don&#39;t forget to pair it with some Korean ssamjang (Korean bbq dipping sauce) and some kimchi (spicy kimchi or white kimchi) too!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rib Eye (1.76 Pounds)",
+        "unit": "g",
+        "notes": "alt: top sirloin (or any tender prime beef cut), thinly sliced, 2mm to 3mm (1/8 inch) thickness",
+        "amount": "800",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Onion (130 G / 4.6 Ounces)",
+        "unit": null,
+        "notes": "optional, peeled & thinly sliced",
+        "amount": "1",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion (55 G / 2 Ounces)",
+        "unit": "stalks",
+        "notes": "optional, thinly sliced",
+        "amount": "2",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Carrot (55 G / 2 Ounces)",
+        "unit": null,
+        "notes": "optional, peeled & thinly sliced",
+        "amount": "½",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Oil",
+        "unit": "Tbsp",
+        "notes": "I used rice bran oil",
+        "amount": "1",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "I use regular Kikkoman soy sauce",
+        "amount": "6",
+        "section": "BULGOGI MARINADE",
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "BULGOGI MARINADE",
+        "isOptional": false
+      },
+      {
+        "name": "Rice Wine",
+        "unit": "Tbsp",
+        "notes": "mirin",
+        "amount": "2",
+        "section": "BULGOGI MARINADE",
+        "isOptional": false
+      },
+      {
+        "name": "Red Apple",
+        "unit": null,
+        "notes": "alt: asian pear, 155 g / 5.5 ounces",
+        "amount": "1",
+        "section": "BULGOGI MARINADE",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "80 g / 2.8 ounces",
+        "amount": "½",
+        "section": "BULGOGI MARINADE",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "Tbsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": "BULGOGI MARINADE",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": "BULGOGI MARINADE",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": "BULGOGI MARINADE",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3f01cba58f3f22f5e9c0d1b00989bc0f4360961a686e8858baf2197f26c41fa3",
+    "lineage_hash": "f399cc8010d8fa33cf6558330d70aad8695f9ac35630f9210504191bc3ddc5ba"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://mykoreankitchen.com/bulgogi-korean-bbq-beef/",
+    "fetchedAt": "2026-08-02T02:02:00.137Z"
+  },
+  "rawSource": "https://mykoreankitchen.com/bulgogi-korean-bbq-beef/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

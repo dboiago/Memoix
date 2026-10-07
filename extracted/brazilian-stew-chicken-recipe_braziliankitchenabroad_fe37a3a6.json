@@ -1,0 +1,180 @@
+{
+  "recipe": {
+    "name": "Brazilian Stew Chicken",
+    "time": "1 hr 45 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "BR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "245",
+      "carbohydrateContent": "19",
+      "fatContent": "11",
+      "proteinContent": "17"
+    },
+    "directions": [
+      "Season the chicken with salt and pepper, and set aside for about 10 minutes",
+      "In a 5.5 quart Dutch oven, or heavy bottom pan, heat the olive oil on medium to high heat.",
+      "Add half of the chicken legs to brown on both sides, when they&#39;re light golden brown, remove them from the pan, and set aside on a plate. Repeat this process with the other half of the chicken legs.",
+      "Drizzle some more olive oil in the pan, then reduce the heat to medium. Add in the diced onions, the white part of the scallions, and saute until soft.",
+      "Next add in the Brazilian sofrito or the garlic, and saute until fragrant.",
+      "Add in the paprika and the ground mustard powder, then stir to combine. Let it cook for about a minute, then add in the vinegar to deglaze the pan.",
+      "Let the vinegar reduce in half, then add the chicken back to the pan. Stir to coat and cook until the acid evaporates.",
+      "Sprinkle in the flour, and stir to combine.",
+      "Add in the potatoes, the chicken stock, the bay leaf and the thyme - give everything a stir and make sure everything is submerged in liquid.",
+      "Bring everything to a quick boil, then reduce to low heat, cover and simmer until the potatoes are cooked - about 20 minutes.",
+      "Uncover the pan and add in half of the green onions. Stir and continue to simmer until the liquid thickens, another 40 minutes to an hour.",
+      "Add in the rest of the green onions and the butter. Stir to combine. Turn off the heat, taste and adjust salt and pepper if needed.",
+      "Serve with rice or crusty bread!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bone in",
+        "unit": "lb",
+        "notes": "skinless, chicken thighs and legs",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "C",
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Part of Scallions",
+        "unit": "C",
+        "notes": "minced from about a whole bunch",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "The Green Part of Scallions",
+        "unit": "C",
+        "notes": "sliced from about a whole bunch",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brazilian Sofrito",
+        "unit": "Tbsp",
+        "notes": "alt: 3 cloves of garlic, minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Mustard Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Cider Vinegar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gold Potatoes",
+        "unit": "lb",
+        "notes": "halved",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "qt",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": "fresh",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "847aa852cb8c6504c89ac90c9cb643ac5488ba63fefb1c0cb5dbe7a5f337fff9",
+    "lineage_hash": "06f6069e6801f1727e21b592a5127b67462d891300ab686e0deae1d17f1ca8fc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://braziliankitchenabroad.com/brazilian-stew-chicken-recipe/",
+    "fetchedAt": "2026-09-25T20:19:33.306Z"
+  },
+  "rawSource": "https://braziliankitchenabroad.com/brazilian-stew-chicken-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

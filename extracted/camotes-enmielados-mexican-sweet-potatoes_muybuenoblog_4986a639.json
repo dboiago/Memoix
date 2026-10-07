@@ -1,0 +1,99 @@
+{
+  "recipe": {
+    "name": "Camotes Enmielados (Mexican Sweet Potatoes)",
+    "time": "55 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "132",
+      "carbohydrateContent": "32",
+      "fatContent": "1",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "In 3-quart saucepan, place water, piloncillo, cinnamon sticks, anise stars, and whole cloves. Heat to boiling, stirring with a wooden spoon until piloncillo dissolves.",
+      "After 5 minutes, add sweet potatoes. Reduce heat; cover and simmer 30 to 45 minutes.",
+      "Remove and discard cinnamon sticks, anise stars, and cloves. Reserve syrup.",
+      "Serve sweet potatoes topped with reserved warm sweet syrup. Garnish with milk."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Piloncillo",
+        "unit": "oz",
+        "notes": "unrefined sugar or 1 cup packed brown sugar",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Sticks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Anise Stars",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Potatoes",
+        "unit": "large",
+        "notes": "peeled, cut into 1-inch slices",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": null,
+        "notes": "alt: sweetened condensed milk, for serving",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "042248f2471ad8124f47cce8086f28f4f8128a72bc0269bf6d2a33d26e8ded41",
+    "lineage_hash": "0be7a8d26aee455d524bcad502a4478c6c6a743a3154f2daa4d374eaa7060ff4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/camotes-enmielado-candied-sweet-potatoes/",
+    "fetchedAt": "2026-08-02T10:01:40.150Z"
+  },
+  "rawSource": "https://muybuenoblog.com/camotes-enmielado-candied-sweet-potatoes/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,128 @@
+{
+  "recipe": {
+    "name": "Butter Tteok (Butter Rice Cake)",
+    "time": "1 hr 5 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "KR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "219",
+      "carbohydrateContent": "28",
+      "fatContent": "11",
+      "proteinContent": "2"
+    },
+    "directions": [
+      "Preheat the oven - Preheat the oven to 170°C (340°F) if using a fan-forced oven, or 190°C (375°F) if using a conventional oven.",
+      "Warm the butter and milk - Add the butter and milk to a small saucepan. Warm over low heat, stirring occasionally, until the butter has melted and the mixture is well combined. Remove from the heat and let it cool until just warm to the touch.",
+      "Mix the dry ingredients - In a bowl, whisk together the glutinous rice flour, tapioca flour, sugar, and salt.",
+      "Mix the wet ingredients - In a large measuring cup or bowl, whisk together the warm milk mixture, sweetened condensed milk, egg, and vanilla extract until smooth.",
+      "Make the batter - Pour the wet mixture into the dry ingredients and whisk until smooth. The batter should be pourable and slightly thick, but not watery.",
+      "Prepare the pan - Generously grease each mini loaf cavity with the softened butter, making sure to coat the bottom and sides.",
+      "Fill the pan - Divide the batter evenly among the prepared cavities, filling each about three-quarters full. Tap the pan gently on the counter a few times to release any large air bubbles.",
+      "Bake - Bake for 35 minutes, or until the tops are golden brown and the edges are lightly crisp.",
+      "Cool - Let the cakes cool in the pan for 2 to 3 minutes, then carefully transfer them to a wire rack to cool for 15 to 20 minutes. They will continue to firm up as they cool and develop their signature chewy, buttery texture."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Salted Butter",
+        "unit": "g",
+        "notes": "4.2 oz",
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": "6.8 fl oz",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glutinous Rice Flour (7 Oz)",
+        "unit": "g",
+        "notes": "about 1 1/2 cups + 2 Tbsp",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tapioca Flour (1.8 Oz)",
+        "unit": "g",
+        "notes": "about 5 Tbsp",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar (3.4 Oz)",
+        "unit": "g",
+        "notes": "about 6.5 Tbsp",
+        "amount": "95",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweetened Condensed Milk (1.4 Oz)",
+        "unit": "g",
+        "notes": "2 Tbsp",
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted Butter (0.7 Oz)",
+        "unit": "g",
+        "notes": "softened",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "09603aeb87a978e26b03aca358732d60b5bc7709ec2f89b406bc15dec74d86d1",
+    "lineage_hash": "4a20ac06233b9025af24c0834616be145ce2212b31eb02655e44b699c7f85abf"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://mykoreankitchen.com/butter-tteok/",
+    "fetchedAt": "2026-08-02T03:32:06.958Z"
+  },
+  "rawSource": "https://mykoreankitchen.com/butter-tteok/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

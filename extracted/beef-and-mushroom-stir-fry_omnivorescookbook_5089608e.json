@@ -1,0 +1,182 @@
+{
+  "recipe": {
+    "name": "Beef and Mushroom Stir Fry (口蘑炒牛肉)",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "296",
+      "carbohydrateContent": "9",
+      "fatContent": "17.1",
+      "proteinContent": "27.3"
+    },
+    "directions": [
+      "Divide the flank steak evenly along the grain into two big pieces. Then slice each piece against the grain into 1/8” (3-mm) thick pieces. Transfer into a medium bowl and add the rest of the marinating ingredients. Mix well and let marinate while preparing the other ingredients.",
+      "Combine all the sauce ingredients in a medium-sized bowl. Stir to mix well.",
+      "Heat 1 tablespoon of oil in a large skillet over medium-high heat until hot. Spread the beef in the skillet in a single layer. Sear until the bottom turns golden without moving it, 1 minute or so. Stir and flip to cook the other side, until it turns golden, another minute or so. Transfer the cooked beef pieces to a big plate and set aside.",
+      "Pour in the remaining 1 tablespoon oil and add the butter, garlic and the scallion whites. Stir a few times to release fragrance.",
+      "Add the mushrooms. Cook and stir until the mushrooms are cooked through and the liquid has evaporated.",
+      "Stir the sauce again to thoroughly dissolve the cornstarch and pour it into the pan. Stir a few times until the sauce thickens.",
+      "Add the beef back into the skillet. Stir to coat everything well with the sauce. Add the scallion greens for garnish. Transfer everything to a big plate. Serve hot over steamed rice as a main dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Flank Steak",
+        "unit": "oz",
+        "notes": null,
+        "amount": "12",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "tsp",
+        "notes": "or dry sherry",
+        "amount": "2",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "tsp",
+        "notes": "or soy sauce",
+        "amount": "2",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Mushrooms",
+        "unit": "lb",
+        "notes": "sliced",
+        "amount": "1",
+        "section": "Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "3",
+        "section": "Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "sliced, white and green parts separated",
+        "amount": "2",
+        "section": "Stir Fry",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c75025060e70e1c5821b5caedef257388d9e7e0dde81b088af413a0962d68978",
+    "lineage_hash": "86c763c8a4550f959cbd26fca4e45d9b5d054b18ce423160c16507b4a3b831b7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/beef-and-mushroom-stir-fry/",
+    "fetchedAt": "2026-08-02T09:29:22.015Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/beef-and-mushroom-stir-fry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

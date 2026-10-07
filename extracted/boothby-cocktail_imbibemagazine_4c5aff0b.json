@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Boothby Cocktail",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [
+      "Skewered Cherry"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In an ice-filled mixing glass, combine the first four ingredients and stir to chill. Strain into a chilled coupe and top with sparkling wine. Garnish with the skewered cherry."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "50a481c6bfa3aa47234a05493cae15ce7e3ba39138eb66482a759ed595008b8b",
+    "lineage_hash": "7ea6c08a7a2f01ac8298612d750dc4fa29441bb4c62a61685b5d3d08baa6027e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/boothby-cocktail/",
+    "fetchedAt": "2026-08-04T01:18:59.450Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/boothby-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,136 @@
+{
+  "recipe": {
+    "name": "Beer-Marinated Lamb Steaks Grilled over Herbs and Spices",
+    "time": "4 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Arrange the lamb in a nonreactive baking dish just large enough to hold it in a single layer.",
+      "Place the mustard, onion, garlic, and rosemary in a mixing bowl and whisk to mix. Gradually whisk in the beer, lemon juice, and 2 tablespoons of the olive oil. Pour the marinade over the lamb, turning it a couple of times to coat. Let the lamb marinate in the refrigerator, covered, for at least 4 hours or as long as overnight; the longer it marinates, the richer the flavor will be.",
+      "Remove the lamb from the marinade and dry with paper towels. Place the marinade in a large heavy saucepan and bring it to a boil over high heat. Let the marinade boil until only 1/4 cup of liquid remains, 5 to 8 minutes. Add the veal stock and cream and let boil until the mustard and beer sauce is reduced by half, 5 to 8 minutes. Season the sauce with salt and pepper to taste; it should be highly seasoned. Strain the sauce into a bowl for serving and set it aside.",
+      "Set up the grill for direct grilling and preheat it to high.",
+      "When ready to cook, brush and oil the grill grate. Brush the lamb steaks with the remaining 1 tablespoon of olive oil and season them generously with salt and pepper. Toss the Fire Spices on the grill and immediately arrange the steaks on the hot grate. Grill the lamb until cooked to taste, 3 to 4 minutes per side for medium-rare, giving each steak a quarter turn after 1-1/2 minutes to create a handsome crosshatch of grill marks. Use the poke test to check for doneness.",
+      "Transfer the grilled lamb to a platter or plates and serve it at once with the mustard-beer sauce on the side for spooning on top."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Lamb Steaks",
+        "unit": "lb",
+        "notes": "1/2 to 3/4 inch thick, or 2 pounds rib lamb chops",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole-grain Mustard",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "C",
+        "notes": "finely, chopped",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "Tbsp",
+        "notes": "chopped, fresh",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wheat Beer",
+        "unit": "C",
+        "notes": "see Note",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": "fresh",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra-virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Veal",
+        "unit": "C",
+        "notes": "alt: beef stock, preferably homemade",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heavy (whipping) Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Salt (kosher or Sea) and Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fire Spices (recipe Follows)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fbb8d7b55cd93a6434dcdd152aef6c3ff5f296e3a88ef8b93ba5d79b5f14af3f",
+    "lineage_hash": "b81d070ce908d910916d8cad8b7345246ad8d44d79ed5a078fc4fa95bbf5f376"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/beer-marinated-lamb-steaks-grilled-over-herbs-and-spices/",
+    "fetchedAt": "2026-08-03T09:49:15.555Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/beer-marinated-lamb-steaks-grilled-over-herbs-and-spices/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,84 @@
+{
+  "recipe": {
+    "name": "Almond Tofu (Almond Pudding)",
+    "time": "10 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "102",
+      "carbohydrateContent": "21.7",
+      "fatContent": "1.7",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "(1) Bring 1 cup almond milk to a boil. Turn off heat and add the gelatin. Stir until dissolved completely.",
+      "(2) Add 4 tablespoons sugar and the almond extract. Stir until dissolved.",
+      "(3) Add the remaining 1 cup almond milk and stir to mix well. Pour the mixture through a fine sieve into a 8”x8” (20x20cm) baking pan. Place in the fridge until set, 1 hour or so.",
+      "(4) Meanwhile, prepare the strawberries. Quarter the strawberries and mix them with the remaining 1 tablespoon sugar. Cover with plastic wrap and transfer to the fridge to macerate.",
+      "(5) When ready to serve, run a knife around the edge of the pudding to loosen it, then cut it into 1/2-inch (1 cm) squares. Use a rubber spatula to release the pudding and transfer it into serving bowls. Add the strawberries along with the macerating liquid. Enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsweetened Original Almond Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatin Sheet",
+        "unit": "oz",
+        "notes": "alt: powder, 14 g, or 0.1-oz/3-g agar strips for vegetarian diet",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": "divided",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almond Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strawberries",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c208d2b3c42db97a5c5b7c256368f28db101b403bd5ab5ad06668750dd850717",
+    "lineage_hash": "81121c4453bbf313863460b83fc21b6fd91638dc9f6b009556d3b6036b44ab90"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/almond-tofu/",
+    "fetchedAt": "2026-08-02T00:04:35.839Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/almond-tofu/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

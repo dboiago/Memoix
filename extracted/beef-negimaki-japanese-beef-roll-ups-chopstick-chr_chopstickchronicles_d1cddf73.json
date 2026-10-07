@@ -1,0 +1,137 @@
+{
+  "recipe": {
+    "name": "Beef Negimaki (Japanese Beef Roll Ups)",
+    "time": "25 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "145",
+      "carbohydrateContent": "5",
+      "fatContent": "10",
+      "proteinContent": "8"
+    },
+    "directions": [
+      "Cut the blanched scallions into 5cm (2 inch) wide strips. Cut carrots into sticks and cut green beans in half then parboil them and set aside.",
+      "Lay the thinly slice beef on a chopping board and place prepared scallions and vegetables on the beef then tightly roll it up. The beef strip should be about 20cm (8 inch) long. If the meat is shorter than that, overwrap beef slices slightly to make it 20cm (8 inch) long.",
+      "You can secure by using a toothpick to tie the end of the meat (optional)",
+      "Repeat this same process until all the beef is used (I made about 8 negimaki out of 300 g beef)",
+      "Cover the roll ups with flour.",
+      "Heat a little sesame oil in a frying pan over medium heat and place the beef roll ups in the pan.",
+      "Cook one side for about 2- 3 minutes or until browned with a lid on.",
+      "Turn the beef roll ups over and cook the other side for a further 2-3 minutes.",
+      "Combine all the sauce ingredients and pour over the beef roll ups in the frying pan to sizzle.",
+      "Serve with green salad and rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Thinly Sliced Beef",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blanched Scallions",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots Parboiled",
+        "unit": null,
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Beans Parboiled",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbs Plain Flour",
+        "unit": null,
+        "notes": "alt: potato starch, Katakuriko",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Mashed",
+        "unit": "clove",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbs Sesame Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbs Sake",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbs Soy Sauce",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbs Oyster Sause",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbs Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "07a0a440d563f2dff13361552acafda4f88a9250dac187648d3c527a68d54de6",
+    "lineage_hash": "de4c1376fd4788afa4dc5c059ce969510a7f8177b1bea0d26d09c59a9bc8c517"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chopstickchronicles.com/beef-negimaki/",
+    "fetchedAt": "2026-08-01T19:06:46.899Z"
+  },
+  "rawSource": "https://www.chopstickchronicles.com/beef-negimaki/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

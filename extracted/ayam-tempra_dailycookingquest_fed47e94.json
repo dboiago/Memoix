@@ -1,0 +1,135 @@
+{
+  "recipe": {
+    "name": "Ayam Tempra",
+    "time": "40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "MY",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat oil in a wok/deep skillet over medium heat. Sauté onion, garlic, and ginger until fragrant, about 3 minutes.",
+      "Add in chicken pieces and fry until no longer pink, about 5 minutes.",
+      "Add in dark soy sauce, light soy sauce, sugar, pepper, and water. Bring to a boil.",
+      "Reduce heat to a simmer, cover wok/skillet with a lid, and cook until chicken is tender, and the sauce is very thick and coats the chicken, about 20 minutes.",
+      "Add chili slices and calamansi juice. Stir. Turn off heat and serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "peeled and crushed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "thinly sliced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Drumsticks",
+        "unit": null,
+        "notes": "~ 1/2 chicken, cut into pieces",
+        "amount": "5-6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "or regular soy sauce",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilies",
+        "unit": null,
+        "notes": "seeded and sliced",
+        "amount": "3-5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Calamansi Juice (from ~ 3 Calamansi)",
+        "unit": "Tbsp",
+        "notes": "*",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "612422da94724f3d5af3045d11541576b8d7f9fd9478bed94e68ae4f3b42ed63",
+    "lineage_hash": "89ee9ea2d94556851e8d55036fba2ac3a591d375f846ad52c8d48297a6ebe322"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/ayam-tempra.html",
+    "fetchedAt": "2026-08-02T01:07:11.972Z"
+  },
+  "rawSource": "https://dailycookingquest.com/ayam-tempra.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

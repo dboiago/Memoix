@@ -1,0 +1,408 @@
+{
+  "recipe": {
+    "name": "Braised Beef with Artichoke and Pumpkin",
+    "time": "2 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the feather blade in a deep dish that will fit in your refrigerator. Pour the red wine over the beef and add the vegetables, herbs, peppercorns and star anise. Cover tightly and leave to marinade for 24 hours",
+      "The next day, remove the beef from marinade and separate the vegetables from the wine. Truss (or tie with twine) the beef into a tight, long cylinder that is even in thickness – approximately 6–8cm wide",
+      "Place a heavy-based casserole dish over a medium-high heat and add enough vegetable oil to coat the base of the pan. Once the oil is very hot, season the beef with salt and add to the pan to brown evenly. Remove the beef, set aside and add the vegetables and herbs to the pan. Roast until golden brown and season generously with salt",
+      "Pour over the reserved red wine and reduce on a steady boil until the pan is almost dry, skimming off any impurities from the surface. Add the stock, bring to the boil and return the beef to the pan. Cover with a tight lid or foil, place in the oven and cook for 3–4 hours, or until the meat is tender and almost falling apart",
+      "Meanwhile, prepare the artichokes. Add the artichokes to a saucepan along with the shallots, garlic, herbs, oil, vinegar and seasoning. Bring to the boil and simmer with a cartouche for 3–4 minutes, until the artichokes are nearly soft in the middle. Remove the pan from the heat and leave the artichokes to cool in the cooking liquor",
+      "Peel the baby onions and cook in salted water with a sprig of thyme until soft. Drain and leave to cool, then cut the onions in half and then fry the cut side in a hot pan with a dash of vegetable oil until golden brown and caramelised. Set to one side",
+      "For the braised cavolo nero, melt the butter in pan over a medium heat and add the shallots, garlic and thyme. Cook until soft, then add the chilli powder and cook for 1 minute. Shred the cavolo nero leaves and add to the pan, then leave to cook with the lid on until tender",
+      "Once tender, season the cavolo nero with a pinch of salt and add the white wine, reducing until almost dry. Add the stock and cook slowly until the stock has reduced and been absorbed by the cabbage. Adjust the seasoning and set to one side, keeping warm until ready to serve",
+      "For the pumpkin, remove the skin and cut in half. Thinly slice one of the halves and set the pieces to one side, then dice the remaining piece of pumpkin into 1cm cubes. Cook the cubes gently in salted boiling water for 2–4 minutes until tender but still holding their shape, then set to one side and keep warm until ready to serve",
+      "Melt 100g of the butter in a pan, add the pumpkin slices and sage and cook with a lid on until the pumpkin is soft and all the liquid has evaporated. Season with salt and pepper and cook for 4–5 minutes until dry, then remove the sage and transfer the cooked slices to a food processor",
+      "Blend the pumpkin until smooth, gradually adding the rest of the butter to form a purée. Pass the purée through a fine sieve to create a silky texture and transfer to a piping bag, keeping warm until ready to serve",
+      "Remove the beef from the oven and allow to cool slightly. Pass the liquid through a fine sieve and reduce down at a rolling boil to reach a thin syrup sauce consistency. Slice the feather blade into even portions and return it to the pan with the reduced sauce",
+      "Slice the cooked artichokes in half and roast in a pan with a little butter, garlic and thyme until warmed through and golden. In a separate pan, sauté the girolles in the butter for 2–3 minutes until tender, seasoning to taste",
+      "To serve, spoon a circle of the braised cavolo nero on the plate and top with a slice of braised feather blade. Pipe a generous serving of the pumpkin purée around the beef, then arrange the artichokes, baby onions, girolles and diced pumpkin to one side, garnishing with a few sprigs of sage. Pipe extra dots of the pumpkin purée around the vegetables and spoon more of the beef sauce over the meat. Serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Feather Blade of Beef",
+        "unit": "kg",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "750",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": null,
+        "notes": "cut into large dice",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Sticks",
+        "unit": null,
+        "notes": "cut into large dice",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": null,
+        "notes": "cut into large dice",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bulb of Garlic",
+        "unit": null,
+        "notes": "peeled and bruised",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Peppercorns",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Chicken Stock",
+        "unit": "L",
+        "notes": "brown veal stock or beef stock",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Artichokes",
+        "unit": null,
+        "notes": "peeled and chokes removed",
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "sliced, plus extra to finish",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": "plus extra to finish",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Peppercorns",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Onions",
+        "unit": "g",
+        "notes": "peeled",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pumpkin",
+        "unit": "large",
+        "notes": "such as Japanese, Iron Bark or Golden Nugget",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sage",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cavolo Nero",
+        "unit": null,
+        "notes": "washed and stalks removed",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme Leaves",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Chicken Stock",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Girolles",
+        "unit": "g",
+        "notes": "small and cleaned",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Knob of Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sage Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "dc33d3ea853f97a1e8d0eb2c0cb5d37e9a1a0b0db7604a8be9b78c4e04fb1d4d",
+    "lineage_hash": "9d00fc6f20242a5bf471d6b7fbaf2d4787d6d3612fd96b2f55cd134977da48a1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/braised-feather-blade-pumpkin-recipe",
+    "fetchedAt": "2026-08-03T14:22:42.836Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/braised-feather-blade-pumpkin-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

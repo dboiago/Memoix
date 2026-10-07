@@ -1,0 +1,215 @@
+{
+  "recipe": {
+    "name": "Cheeseburger With Caramelised Onions",
+    "time": "1 hr 15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix together the ingredients for the burgers. Fry a little of the mixture to check the seasoning; adjust if necessary. Shape into four patties and refrigerate",
+      "For the caramelised onions, melt the butter in a medium-sized frying pan, add the sliced onions, thyme and salt, and cook for around 20-25 minutes until golden and sticky",
+      "Heat 1 tablespoon of vegetable oil in a large frying pan and brown the burgers until cooked through, about 6-7 minutes each side. Remove them from the heat and place a slice of cheese on top of each one to melt gently",
+      "Brush the inside of the ciabatta with the oil and grill or toast lightly. Spread one half with hummus, then lay the beef patties on the other",
+      "Add the caramelised onions and rocket and sandwich together. Cut into sections and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef Mince",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "peeled and diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Free-range Egg",
+        "unit": null,
+        "notes": "lightly beaten",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Breadcrumbs",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flat-leaf Parsley",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tarragon",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Purée",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Ketchup",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": "freshly ground",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": null,
+        "notes": "peeled and sliced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "Tbsp",
+        "notes": "just the leaves",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Emmental",
+        "unit": "slices",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ciabatta Loaves",
+        "unit": null,
+        "notes": "halved horizontally",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hummus",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handfuls of Rocket",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "284b78bb91f816d271d8f4e6e78c397927af2b8b3ee033c14abceda52b67edbb",
+    "lineage_hash": "675a608aa79364724cc7f87cd2debe37c9322fa50e14c82184c7e5b5af04e701"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cheeseburger-recipe-caramelised-onions",
+    "fetchedAt": "2026-08-03T21:05:58.373Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cheeseburger-recipe-caramelised-onions",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

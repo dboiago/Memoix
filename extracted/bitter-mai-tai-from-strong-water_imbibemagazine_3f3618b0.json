@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Bitter Mai Tai",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to a blender with ice cubes and &#8220;flash blend,&#8221; meaning blend it on high speed for no more than 5 seconds. Pour into the glass and top with pebble ice. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "60b6bdc07938082dbc9076474d5b7521ec29dc024b640d21b9bfa31a660b1029",
+    "lineage_hash": "2a95296b19aaafcfd5153bbe634c0949953825a6d62a78aa887e65a3d5d9ed10"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bitter-mai-tai/",
+    "fetchedAt": "2026-08-04T01:06:56.553Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bitter-mai-tai/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,85 @@
+{
+  "recipe": {
+    "name": "Banga Soup",
+    "time": "15 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "NG",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat the palm nut sauce in a sauce pan until you see the palm oil rising to the surface. Add some stock (this will depend on how thick you like your soup. Make sure you don’t exceed 500ml).",
+      "Add the onions, fish, scotch bonnet and dried prawns and Knorr cubes. Cook for about 5 minutes and then add spice leaves.",
+      "Cook for a further 2 minutes and your Banga soup is ready. Serve with Pounded Yam or Eba."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Assorted Meat",
+        "unit": "kg",
+        "notes": "beef, goat or chicken, cooked",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cat Fish",
+        "unit": "C",
+        "notes": "dried",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "King Prawns",
+        "unit": "C",
+        "notes": "dried",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion Bulb",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scotch Bonnet",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Banga Spice Leaves",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b876e6de4b06fc923c7457a7264e2fce5103ca97b36f3729e274fb750e979de0",
+    "lineage_hash": "0ae5e8e6cb84ed7bf94649c0716514d9aa2c9a822a2456d7c8a2cb31b05c6f21"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://9jafoodie.com/banga-soup-2/",
+    "fetchedAt": "2026-09-25T19:34:18.528Z"
+  },
+  "rawSource": "https://9jafoodie.com/banga-soup-2/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,140 @@
+{
+  "recipe": {
+    "name": "Asparagus Recipe Truffle, Duck Egg & Hollandaise",
+    "time": "1 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the asparagus, cut off the base of each stem and, using a peeler, peel from the base all the way down and round. Trim the asparagus so that all the stems are the same size and leave to one side",
+      "For the hollandaise sauce, place the egg yolks into a metal bowl along with the vinegar and place this over a pan of simmering water. Whisk the eggs until they have formed a sabayon, then slowly add the butter, whisking all the time",
+      "Remove from the heat and check the seasoning. Finish by adding a good handful of chopped chives. Reserve somewhere warm until required",
+      "For the Parmesan crisp, grate a thin layer of Parmesan onto a sheet of parchment paper just big enough to fit into a microwave. Place in the microwave and cook for 45 seconds on medium",
+      "Remove the crisp from the paper, wrap gently around a rolling pin, then grill until very light golden brown and then leave to go crisp. These will keep for a couple of days",
+      "To plate, place a large saucepan onto the heat and three-quarters fill with water. Bring to the boil and add the white wine vinegar. Stir the boiling water around so it causes a vortex then crack the duck eggs one at a time into the water and cook for around 6 minutes",
+      "Drop the asparagus into a separate pan of boiling salted water",
+      "Place a little pile of the wilted spinach in the centre of each serving dish, remove the asparagus from the water and drain well, then arrange around the spinach",
+      "Remove the duck eggs from the water and sit in the centre of the spinach. Gently spoon over a good portion of the hollandaise",
+      "Garnish with the truffle and Parmesan crisp and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Asparagus",
+        "unit": "bunches",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Free-range Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Chives",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Duck Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handfuls of Baby Spinach",
+        "unit": null,
+        "notes": "wilted",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Truffle",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2a9e85c7c9efff6a933639e03e20cdee785dd7a0fac9d21e6d09b4de0316b26e",
+    "lineage_hash": "25e82b6769969d84fa56d3cbfa08ac45638184b2ab9401caa19ec9784a478569"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/asparagus-recipe-truffle-duck-egg-hollandaise",
+    "fetchedAt": "2026-08-03T23:26:40.008Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/asparagus-recipe-truffle-duck-egg-hollandaise",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

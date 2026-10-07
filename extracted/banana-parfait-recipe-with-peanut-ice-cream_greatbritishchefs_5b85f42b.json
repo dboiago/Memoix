@@ -1,0 +1,211 @@
+{
+  "recipe": {
+    "name": "Banana Parfait With Peanut Ice Cream",
+    "time": "2 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the parfait, put the bananas into the freezer until frozen, then peel and purée in a blender. Cut 8 pieces of acetate to fit inside the pipe moulds ensuring they have an overlap",
+      "Melt the chocolate in a heatproof bowl over a pan of barely simmering water, then spread the acetate bands with melted milk chocolate and then carefully place in the moulds with the spread side facing inwards. Allow to set in a cool place",
+      "Whisk the 280ml of double cream until it forms soft peaks and leave aside for a moment. Soak the gelatine in cold water",
+      "Whisk the one whole egg and three egg yolks, glucose and caster sugar together over a bain-marie until thick, add the puréed banana and soaked gelatine and then continue whisking off the heat until cold. Fold in the whipped cream as well as the caramel pieces, then carefully spoon into moulds lined with milk chocolate. Freeze until firm",
+      "For the ice cream, bring the milk and cream to the boil and then remove from heat, adding the toasted peanuts. Allow to infuse for 1 hour before straining the mixture through a fine sieve",
+      "Reheat the infused milk and cream until scalding but not burnt. Meanwhile, whisk two egg yolks and sugar until thick. Add the scalding milk and cream to the egg and sugar mix whilst still whisking, return to a clean pan on a low heat and cook to a temperature of 84˚C. When 84˚C, strain immediately and cool, before churning in an ice cream machine",
+      "To make the tuile, whisk the egg whites and sugar to soft peaks then fold through the flour and melted butter",
+      "Spread to a thickness of 0.2mm on a silpat mat 2cm wide and 8cm long. Bake for 6-8 minutes or until golden brown. Whilst still warm quickly fold each tuile around a rolling pin to create a circle then leave to cool",
+      "To serve, de-mould the parfaits, carefully removing the acetate. Mix the diced banana with the grated lime zest and divide between the plates. Serve with the kalamansi purée pulled across the plate and a quenelle of the peanut ice cream inside a tuile"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bananas",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "280",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bronze Gelatine Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glucose",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caramel",
+        "unit": "g",
+        "notes": "broken into small pieces",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Peanuts",
+        "unit": "g",
+        "notes": "crushed",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "65",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Calamansi Purée",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "melted",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Banana",
+        "unit": null,
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "zest only",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fa0c2fa135f7a872955a7e881d90935bf939a8779d779e0423127d2405880eed",
+    "lineage_hash": "3ba0035a5bca230b823ad8c32932d8cd1349e3a7872505ee1b96fa4da55f962f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/banana-caramel-parfait-recipe-peanut-ice-cream",
+    "fetchedAt": "2026-08-03T18:26:48.567Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/banana-caramel-parfait-recipe-peanut-ice-cream",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

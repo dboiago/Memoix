@@ -1,0 +1,125 @@
+{
+  "recipe": {
+    "name": "Bakewell Tart",
+    "time": "1 hr 5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "292",
+      "carbohydrateContent": "28",
+      "fatContent": "19",
+      "proteinContent": "5"
+    },
+    "directions": [
+      "Preheat the oven to 350 °F.",
+      "Roll the short dough to fit a 9&quot; or 10&quot; fluted tart pan with a removable bottom. Prick the dough all over with a fork and refrigerate until firm.",
+      "Bake the tart shell until it&#39;s lightly golden brown, about 10 minutes. Set the crust aside to cool to room temperature while you make the filling. Keep the oven on.",
+      "In a mixing bowl, cream 4 oz&#32;unsalted butter with 6 oz&#32;granulated sugar until light and aerated. Scrape the bowl. Add 2&#32;large eggs and mix to combine. Add 6 oz&#32;almond flour, ½ teaspoon&#32;almond extract, ½ teaspoon&#32;vanilla and ¼ teaspoon&#32;salt. Mix until well-combined.",
+      "Spread 4 oz&#32;raspberry preserves into the bottom of the tart crust. Dollop the  almond filling over the preserves then gently spread to an even layer. Try not to mix the jam into the filling. Sprinkle 1 oz&#32;sliced almonds evenly over the filling. Bake until the filling is set, about 25 minutes.",
+      "Cool the tart completely before removing the ring. Finish the tart with a light sprinkle of powdered sugar or a drizzle of glaze (see note)."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Recipe Tart Dough",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "room temperature",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "¾ cup",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "room temperature",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almond Flour",
+        "unit": "oz",
+        "notes": "1 ½ cups",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almond Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raspberry Preserves",
+        "unit": "oz",
+        "notes": "⅓ cup",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almonds",
+        "unit": "oz",
+        "notes": "¼ cup, sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "556706d59b0ae6a912f078340d21f0147e443040b50b2bcfb4478a02c2ec90f6",
+    "lineage_hash": "93f0d9badaf6264d4c72917a1e9dcd778a1dd902add18507d3a28c5b6755a14e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2020/05/06/bakewell-tart/",
+    "fetchedAt": "2026-08-01T22:08:48.494Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2020/05/06/bakewell-tart/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

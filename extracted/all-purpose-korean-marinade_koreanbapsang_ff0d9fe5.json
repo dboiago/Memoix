@@ -1,0 +1,152 @@
+{
+  "recipe": {
+    "name": "All-purpose Korean Marinade",
+    "time": "1 hr",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "40",
+    "source": "scraped",
+    "cuisine": "KR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all the ingredients (except the dashima, rice wine, and lemon) to a large pot with 6 cups of water. Bring it to a boil over high heat, uncovered, and then reduce the heat to achieve a medium boil (between medium high and medium on my stove). Boil for 30 minutes.",
+      "Add the dashima and continue to boil for 10 more minutes.",
+      "Remove all the solids with a strainer.",
+      "Add the rice wine and lemon slices, and let it cool. Store in a jar(s) in the fridge.",
+      "For 2 pounds of beef short ribs or bulgogi meat, use 1 cup of the marinade and add 1 tablespoon of sesame oil. You can also add 1 tablespoon of minced garlic, grated 1/4 Korean pear and a handful of scallion and onion slices if you like. For galbi, you need to marinate for at least 6 to 8 hours or overnight for best results. Marinate bulgogi for 30 minutes to an hour, up to overnight.",
+      "For 2 pounds of pork, use 1/2 cup of the marinade, 1 tablespoon of sesame oil, 2 tablespoons of gochugaru (red chili pepper flakes), and 3 tablespoons of gochujang (red chili pepper paste). If using more gochujang, use less marinade. You can add 1 or 2 teaspoons of grated ginger, 1 tablespoon minced garlic, and a handful of scallion and onion slices."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "C",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn Syrup (or Korean Oligodang)",
+        "unit": "C",
+        "notes": "alt: use 2/3 cup honey or 1 more cup sugar",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "large",
+        "notes": "roughly cut into small pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple",
+        "unit": "large",
+        "notes": "roughly cut into small pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "cut into shorter pieces",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plump Garlic Cloves",
+        "unit": null,
+        "notes": "use a side of the knife, roughly cracked oped",
+        "amount": "12-14",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Long Ginger (about 1 Inch Diameter)",
+        "unit": "inch",
+        "notes": "thinly sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Or 4 Dried Shiitake Mushrooms",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peppercorns",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Square Dashima 다시마",
+        "unit": "inch",
+        "notes": "dried kelp",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Wine (or Mirin) Dry White Wine Is Also Good",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c1c8c4cd70b11170a32571daef461cb0131691f5c5a40e116bea9079e3a4262a",
+    "lineage_hash": "80c91f26f5d02275e31c6c1c43f8007a7e4e83d3859e2298ece0d563991a40e1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.koreanbapsang.com/all-purpose-korean-marinade/",
+    "fetchedAt": "2026-08-01T18:12:39.680Z"
+  },
+  "rawSource": "https://www.koreanbapsang.com/all-purpose-korean-marinade/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

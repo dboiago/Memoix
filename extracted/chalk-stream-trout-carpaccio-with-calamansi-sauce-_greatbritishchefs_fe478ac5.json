@@ -1,0 +1,141 @@
+{
+  "recipe": {
+    "name": "Chalk Stream Trout Carpaccio with Calamansi Sauce",
+    "time": "1 hr 30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Bring all the calamansi sauce ingredients to a boil, whisking them together as you do",
+      "Remove from the hob and then chill in the fridge for at least an hour, or just keep in the fridge until needed",
+      "Blanch the lovage in boiling water, then immediately refresh it in cold water. Squeeze out any excess water",
+      "Blitz the lovage leaves with the vegetable oil until the mixture is bright green and slightly warm",
+      "Pass the oil through muslin cloth and keep refrigerated until needed",
+      "Place the slices of smoked trout between two pieces of parchment paper",
+      "Using a rolling pin, delicately flatten the smoked trout until it's 2mm thick",
+      "Place a 10 cm bowl or plate over the trout. Use a sharp knife to cut around the plate, giving you a large round of trout",
+      "Transfer the trout to the freezer in an airtight container and freeze until solid",
+      "Place the frozen trout onto a plate 20 minutes before you’re ready to serve",
+      "Garnish the trout with the lovage oil, vegetables and, finally, the calamansi sauce"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cold Smoked Chalk Stream Trout",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Calamansi Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mirin",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kombu",
+        "unit": null,
+        "notes": "about 5 cm square",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lovage Leaves",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Radishes",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Cucumbers",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shimeji Mushrooms",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e59b04870c916ef87998a7e2204e620223edd9d7d3c8a1015d76d5a65bd0b66c",
+    "lineage_hash": "4a7f98b3d284643a056beb4c27023bdec4f7320493c47d960d3e813d324532fb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chalk-stream-trout-carpaccio-calamansi-sauce-recipe",
+    "fetchedAt": "2026-08-02T08:11:09.200Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chalk-stream-trout-carpaccio-calamansi-sauce-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Bee's Breakfast",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Glass",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all of the ingredients in a shaker tin and muddle. Add ice and shake to chill, then strain into a glass filled with crushed ice and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "73e174dd29273ad867c08a1966c309eb97ba1cb8236c1f172d5e5ca373d51be2",
+    "lineage_hash": "f6e9bb5a1399c488c7d2be66bd3b9bb33635b47dd418c23bb0d4f00444cdb7ae"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bees-breakfast/",
+    "fetchedAt": "2026-08-03T21:59:35.245Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bees-breakfast/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

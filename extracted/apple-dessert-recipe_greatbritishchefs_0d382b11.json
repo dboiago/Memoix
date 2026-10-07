@@ -1,0 +1,304 @@
+{
+  "recipe": {
+    "name": "Apple Dessert",
+    "time": "2 hr 25 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the dehydrated apple, use a mandoline to finely slice the apple across the core. Removing the pips, toss the slices in lemon juice to prevent browning then lay onto a lined tray. Add to a dehydrator set to 60°C for approximately 6-8 hours until crisp",
+      "For the parfait, place the sugar in a pan and heat to soft ball stage (115°C). In a food mixer with a whisk attachment, whisk the egg yolks until fluffy and pale in colour. Slowly add the sugar syrup to the yolks in a thin stream and continue to whisk until cool - this will take approximately 10 minutes",
+      "Whip the double cream in a separate bowl and gently fold in the apple purée until incorporated. Fold this into the egg mixture, then pour into moulds and freeze",
+      "For the sorbet, add the water, glucose and sugar to a pan and bring to the boil to dissolve the sugar and make a syrup. Remove from the heat and leave to cool, then set aside in the fridge to chill",
+      "Blend the frozen apples in a blender with the syrup, pass through a sieve and season with lemon juice. Churn and freeze until required",
+      "To prepare the gingerbread, melt the butter and dark brown sugar together in a saucepan. Blitz the porridge oats in a food processor or with a hand blender until fine. Mix together all of the dry ingredients, then add the wet ingredients to the dry before stirring in the grated ginger",
+      "Pour the mix into a lined and greased cake tin and bake for 25 minutes, or until golden brown. To test that the cake is cooked, insert a skewer into the centre, let it rest for 3 seconds and then remove, checking for residual batter. Meanwhile, mix together the brown sugar and ground ginger for the topping and sprinkle over the top of the cake as soon as it comes out of the oven",
+      "For the compote, add the water and some sugar to a pan and bring to the boil. Dice the apples and add to the syrup. Cook until it reaches the consistency of a soft compote - if the mixture is a little wet, drain some of the liquid off through some muslin - then remove from the heat",
+      "For the compressed apple, bring the sugar, water and wine to the boil in a pan. Remove from the heat, leave to cool to room temperature before transferring to the fridge to chill",
+      "Add the apple balls to the liquid and pour the liquid and apple pieces into vac pac bags. Cook in the water bath at 85°C for 30 minutes",
+      "For the tarte Tatin, peel and slice the apple horizontally into 2cm slices and remove the seeds. Add the water and sugar to a pan and place over a medium heat. Cook until a golden brown caramel forms, then remove from the heat and add the butter, stirring to combine",
+      "Coat the apples in the caramel and cook briefly to ensure a golden colour has been achieved. Carefully lift out the caramelised apple and set aside on a piece of baking paper to cool",
+      "Roll out the puff pastry to no more than 5mm thick and cut out rounds slightly larger than the apple slices. Cover the caramelised apples with puff pastry and cook in the oven for 10-15 minutes, or until the pastry is golden. Remove from the oven and serve onto plates immediately",
+      "Roll the apple parfait in brown sugar, arrange onto the plates and add a quenelle of apple compote on top. Add a bite-sized piece of gingerbread to each plate using a small spoon of compressed apple sauce to hold the apple ball in place. Finish with a quenelle of the red apple sorbet and garnish with a slice of dehydrated apple. Serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Apple Purée",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bramley Apple",
+        "unit": "kg",
+        "notes": "peeled, quartered and cored",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar to Taste",
+        "unit": null,
+        "notes": "depending on the sweetness of the apples",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granny Smith Apples",
+        "unit": null,
+        "notes": "peeled and balled",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Apple",
+        "unit": "g",
+        "notes": "core removed, cut into small pieces and frozen",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glucose",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Porridge Oats",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Self-raising Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Ginger",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Spice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Knobs of Stem Ginger",
+        "unit": null,
+        "notes": "grated",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "g",
+        "notes": "to sprinkle",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Ginger",
+        "unit": "g",
+        "notes": "to sprinkle",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apples",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sheet of Puff Pastry",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "525dd3900d2e5aa608cf02ea93453c836822222039b491bb5c775ad0fb2fad6d",
+    "lineage_hash": "b581844bab7cdf02ae7ca0a7420163f1df8db597a0665f84d9e17ef4aadac447"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/apple-dessert-recipe",
+    "fetchedAt": "2026-08-03T18:54:13.743Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/apple-dessert-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,138 @@
+{
+  "recipe": {
+    "name": "Carrot Ribbon Salad",
+    "time": "15 min",
+    "course": "salad",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "135",
+      "carbohydrateContent": "11",
+      "fatContent": "9",
+      "proteinContent": "5"
+    },
+    "directions": [
+      "Prepare the salad: Use a vegetable peeler to shave the carrots into long, thin ribbons. Add them to a large bowl along with the red onion, cilantro, peanuts, sesame seeds, and any optional ingredients you&#39;re using.",
+      "Make the dressing: In a small bowl or jar, whisk together the soy sauce, rice vinegar, sesame oil, maple syrup, ginger, garlic, and red pepper flakes.",
+      "Toss and serve: Pour the dressing over the salad and toss well to coat. Let it sit for 5–10 minutes to allow the flavors to meld and the carrots to soften slightly. Toss again before serving and finish with an extra sprinkle of peanuts and sesame seeds."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Carrots",
+        "unit": "large",
+        "notes": "use a vegetable peeler, peeled into ribbons",
+        "amount": "4",
+        "section": "salad",
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "small",
+        "notes": "very thinly sliced",
+        "amount": "¼",
+        "section": "salad",
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "C",
+        "notes": "fresh, roughly chopped",
+        "amount": "½",
+        "section": "salad",
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Salted Peanuts",
+        "unit": "C",
+        "notes": "roughly chopped, plus more for topping",
+        "amount": "¼",
+        "section": "salad",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "salad",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "gluten-free if preferred",
+        "amount": "2",
+        "section": "dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Rice Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Maple Syrup",
+        "unit": "tsp",
+        "notes": "alt: agave",
+        "amount": "1",
+        "section": "dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "fresh, minced or grated, optional but recommended",
+        "amount": "1",
+        "section": "dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "grated or minced",
+        "amount": "1",
+        "section": "dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Red Pepper Flakes",
+        "unit": "pinch",
+        "notes": "crushed, optional, for heat",
+        "amount": "1",
+        "section": "dressing",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d24d62b23205162e4e782d557ad2560cab4f9ad14d7f2a771178a35bf7f96551",
+    "lineage_hash": "4bd563b621ec18feffadb9187f72a0b3e5bff6fc2481e8aa0e80adef45879b4f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/carrot-ribbon-salad/",
+    "fetchedAt": "2026-08-02T09:33:28.873Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/carrot-ribbon-salad/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

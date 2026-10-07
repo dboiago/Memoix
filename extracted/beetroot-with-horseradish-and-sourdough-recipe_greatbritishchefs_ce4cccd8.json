@@ -1,0 +1,279 @@
+{
+  "recipe": {
+    "name": "Beetroot with Horseradish and Sourdough",
+    "time": "1 hr 30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by making the beetroot mousse the day before, as it needs freezing overnight. Place a large pan over a medium heat and add the oil. Once warm, add the fennel seeds and fry for 1 minute, then add the cooked beetroot and cook for 5 minutes",
+      "Add the beetroot juice and white wine vinegar. Bring the pan to a gentle simmer, cover with a tight-fitting lid and leave to cook for 5 minutes",
+      "After this time, blend the soup until smooth and pass through a fine sieve. Season with salt and pepper to taste. While the soup is still hot add the soaked gelatine leaves and whisk until dissolved, then leave to cool to room temperature",
+      "Once at room temperature, whisk in the egg white powder and place in the fridge to set for 4 hours",
+      "Meanwhile, make the beetroot ketchup. Place all the ingredients in a large pan and bring to the boil. Once boiling, reduce to a simmer and leave to reduce until all of the liquid has evaporated. Transfer to a blender and blitz into a smooth purée. Pass through a fine sieve and transfer to a squeezy bottle. This will keep in the fridge for up to 10 days",
+      "To make the horseradish yoghurt, simply mix the ingredients together, taste and season. Transfer to a squeezy bottle and keep in the fridge",
+      "To make the sourdough crisps, preheat an oven to 190ºC/gas mark 5. Use a serrated knife to cut a few slices of sourdough as thinly as you can manage (this should be easier when the bread is frozen). Place them on a baking tray, brush with a little olive oil and sprinkle with rock salt. Cook in the oven until golden brown and crisp – this will take around 8 minutes, but check halfway through as ovens vary. Keep in an airtight container until needed",
+      "To create the beetroot discs, peel the beetroot and finely slice it into discs, ideally using a mandoline (you're looking for a 1mm thickness). Stack the slices on top of one another then use a round cutter to stamp out perfect circles. Transfer these to a glass jar or container",
+      "Pour the vinegar, sugar and water into a small pan and bring to the boil. Once boiling, pour the pickling liquid over the beetroot discs, then seal. Leave to cool and pickle overnight",
+      "After the beetroot mixture has been chilled for 4 hours, transfer to the blender again and blend until smooth and aerated. It should be light and fluffy like a mousse. To shape the mousse, lay out a square of cling film roughly 15cmx15cm. Weigh a 45g spoonful of the mixture and fold in the 4 corners to create a ball. Twist the top tight and tie with a small piece of twine or string. Place on a tray and freeze overnight",
+      "The next day, make the gel. Place all the ingredients in a pan and bring to the boil, whisking constantly. Once it reaches the boil, pour through a fine sieve to remove any lumps. Return to the pan and keep on a low heat, using a temperature probe or thermometer to monitor the temperature of the gel and alter the temperature of the pan to ensure it stays between 50ºC and 60ºC",
+      "Once the temperature is steady, remove the mousses from the freezer and unwrap from the clingfilm. Push a cocktail stick about halfway into each mousse so it is secure, then dip each mousse into the gel 4 times, leaving the gel to set for 15 seconds in between each dip. Once all 4 dips have been completed, place the mousse on a tray and leave in the fridge for 2 hours to defrost",
+      "Once ready, remove the mousses from the fridge and carefully push 3 small beetroot stalks with little leaves into the mousse so they look like mini beetroots. Place the beetroot on one side of the plate and 3 of the pickled beetroot discs on the other. Decorate on and around the discs using the beetroot ketchup, horseradish cream and sourdough crisps. Finish by garnishing with freshly picked dill leaves"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooked Beetroot",
+        "unit": "g",
+        "notes": "diced",
+        "amount": "375",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beetroot Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "375",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bronze Gelatine Leaves",
+        "unit": null,
+        "notes": "soaked in cold water",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "7.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beetroot Leaves",
+        "unit": null,
+        "notes": "small ones, attached to stalks",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beetroot Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vege-gel",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Agar Agar",
+        "unit": "g",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooked Beetroot",
+        "unit": "g",
+        "notes": "roughly chopped",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beetroot Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Port",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Greek Yoghurt",
+        "unit": "g",
+        "notes": "thick",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Horseradish Sauce",
+        "unit": "g",
+        "notes": "smooth",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sourdough Loaf",
+        "unit": null,
+        "notes": "frozen",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rock Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beetroot",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sprigs of Dill",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3a1c7327a0e5238d76c78b77a613493a38854f66188d9a8b531f10ddea517c50",
+    "lineage_hash": "65ce2e6f5db4f8c25e6bdc6e396e74be39daf6efda6de153265356ce0a1a561f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beetroot-horseradish-sourdough-recipe",
+    "fetchedAt": "2026-08-02T20:04:37.792Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beetroot-horseradish-sourdough-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

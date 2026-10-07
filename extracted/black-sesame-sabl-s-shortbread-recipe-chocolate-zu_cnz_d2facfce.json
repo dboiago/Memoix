@@ -1,0 +1,89 @@
+{
+  "recipe": {
+    "name": "Black Sesame Sablés (Shortbread)",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a mixing bowl or in the bowl of a stand mixer, beat together the sesame paste and butter. Add the sugar and salt and mix well.",
+      "Stir in the flour until completely absorbed, without overworking the dough.",
+      "Gather the dough into a ball without kneading. Divide it into 4 pieces and roll each into a log, about 3 cm (1 1/4\") in diameter. Wrap in parchment paper and refrigerate for at least 1 hour. (You can freeze one or several of the logs; let stand at room temperature for 1 hour before using.)",
+      "Preheat the oven to 150°C (300°F) and line a baking sheet with a silicone baking mat or parchment paper.",
+      "Using a sharp knife, cut each roll into round slices about 1 cm (1/3\") thick. Arrange the slices on the baking sheet, giving them a little room to expand.",
+      "Bake for 30 minutes, until set but not browned. Let stand for 5 minutes on the baking sheet before transferring to a wire rack to cool completely.",
+      "The cookies will keep for a week in an airtight container at room temperature."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Grams Black Sesame Butter/paste",
+        "unit": null,
+        "notes": "look for it in natural food stores and Japanese markets; substitute any other natural nut butter",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "fine sea",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Flour",
+        "unit": null,
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Rice Flour",
+        "unit": null,
+        "notes": "see note",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "deef2a984e410d58d5bd99e57fe6e1db5e318ad2b10e556c27516270a5066abd",
+    "lineage_hash": "8a191074f35148b2a08ddd671c3d002efa4591f3e8039c2f068d1a6ae5fbb9b2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/cookies-small-cakes/black-sesame-sables-shortbread-recipe/",
+    "fetchedAt": "2026-09-30T19:58:07.003Z"
+  },
+  "rawSource": "https://cnz.to/recipes/cookies-small-cakes/black-sesame-sables-shortbread-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

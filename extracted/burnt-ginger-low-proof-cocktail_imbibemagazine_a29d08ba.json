@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Burnt Ginger Low-Proof Cocktail",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "With a lighter or blowtorch on a cast-iron plate, carefully burn cherry wood until it&#8217;s smoking heavily. Quickly flip a chilled glass onto the smoking wood. While the glass fills with smoke, in a shaker, combine all the ingredients and fill with ice. Shake hard and double-strain into the smoking glass over ice. Garnish.\nGinger MeadBurn 1/3 cup of chopped fresh ginger using an open flame, until it&#8217;s charred with a nice color around the ginger. Once burnt, add to 2/3 cup of mead, letting it steep for over 12 hours. Afterward strain out the ginger. Will keep in the refrigerator for 7 days.\nBurnt Ginger SyrupBurn the ginger using an open flame, until it is to the point of charcoal. Once burnt, steep overnight in 1:1 simple syrup. Strain out the ginger, then bottle and refrigerate for up to 2 weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "2f9d254d56609942180481291eed87ada188a11a4f72d89fb1255de16452b706",
+    "lineage_hash": "7f968fc016c23aa554dd4498cfd2a41e14318e6d71081c96fe0d6a6ebe8dc88c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/burnt-ginger-low-proof-cocktail/",
+    "fetchedAt": "2026-08-04T00:14:28.094Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/burnt-ginger-low-proof-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

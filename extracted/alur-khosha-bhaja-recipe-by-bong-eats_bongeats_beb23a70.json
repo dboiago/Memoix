@@ -1,0 +1,134 @@
+{
+  "recipe": {
+    "name": "Alur Khosha Bhaja",
+    "time": "25 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Peel the potato skin, keeping them slightly thicker than you normally would. Divide into 2-cm long pieces. Wash in plenty of water to remove excess starch; this will result in crisp fries. Strain to dry completely.",
+      "Transfer the peels to a mixing bowl. Add salt, sugar, turmeric powder, red chilli powder, posto, kaalo jeere, chopped green chilli, mustard oil, rice flour, maida, and chopped green chillies.",
+      "Coat the potato skin with the spices and set aside for 15 minutes. The salt and the sugar will draw out the moisture from the peels and allow the coating to adhere to them.",
+      "Heat vegetable oil in a kadai. Deep fry the peels on medium heat (oil temperature should be ~180°C) until crisp and golden."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Potato Peels",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli Powder",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Posto",
+        "unit": "tsp",
+        "notes": "poppy seeds",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kaalo Jeere",
+        "unit": "tsp",
+        "notes": "nigella seeds",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pc Green Chilli",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maida",
+        "unit": "g",
+        "notes": "plain flour",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil for Deep-frying",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "55078cf1fed33273f3d4fbcef85859d0ed13cf6f2bb76e070090698f50653eac",
+    "lineage_hash": "4ead4207b1d5c69e843f6566bc01c6ec0ecc09872c4c2282a3efaca87e406201"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.bongeats.com/recipe/alur-khosha-bhaja",
+    "fetchedAt": "2026-08-01T16:42:23.726Z"
+  },
+  "rawSource": "https://www.bongeats.com/recipe/alur-khosha-bhaja",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

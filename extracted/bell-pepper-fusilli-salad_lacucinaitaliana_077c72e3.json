@@ -1,0 +1,119 @@
+{
+  "recipe": {
+    "name": "Bell Pepper Fusilli Salad",
+    "time": "40 min",
+    "course": "salad",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cut a section of the yellow bell pepper. Clean and remove the seeds and inner membranes, and dice into cubes. Place the diced pepper in a mixing bowl large enough to hold the pasta. Crumble in the tuna using a fork, add a pinch of salt, and set aside.",
+      "Cook the fusilli in boiling salted water and drain once al dente.&nbsp;",
+      "Peel the eggs and cut them carefully into wedges.",
+      "For the dressing: In a small bowl, mix 2 Tbsp. mustard with the strained juice of half a lemon, the olive oil, a few splashes of Worcestershire sauce, and a pinch of salt and paprika.",
+      "Pour the fusilli into the large mixing bowl, adding a drizzle of olive oil so the pasta does not stick, and stir. Once cold, top the pasta with the dressing, garnish with the eggs, and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Fusilli Pasta",
+        "unit": "oz",
+        "notes": null,
+        "amount": "9",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil-packed Tuna",
+        "unit": "oz",
+        "notes": "drained",
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Bell Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hardboiled Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra-virgin Olive Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "strained juice",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "A Few Splashes Worcestershire Sauce",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Paprika",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "52f6ff1f595294d1fd3d78c08d68f15e9c4d56bb39968b3e5c1a0b77e7c8170b",
+    "lineage_hash": "e4dab29adc357e459ef727f6b17edd6c234256db8d1f81d5250e2ffb00a33133"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/pasta/bell-pepper-fusilli",
+    "fetchedAt": "2026-08-03T04:07:06.102Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/pasta/bell-pepper-fusilli",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

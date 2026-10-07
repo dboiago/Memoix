@@ -1,0 +1,89 @@
+{
+  "recipe": {
+    "name": "Blueberry Financiers",
+    "time": "25 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "24",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Grease a 24 cup mini muffin tin and chill in the fridge until required",
+      "Add the butter to a small pan and heat gently until it starts to turn a golden brown colour. As soon as it does, remove from the heat and set aside",
+      "Mix together all of the dry ingredients (except the blueberries) in a mixing bowl and gently stir in the egg whites",
+      "Gradually stir in the warm butter until a smooth batter forms. Cover with cling film and refrigerate for 2 hours",
+      "Spoon the batter into the chilled tins, filling each tin until it is 3/4 full. Drop a few blueberries into each tin",
+      "Bake the financiers in the oven for 8-10 minutes until firm to the touch and golden, then leave to cool in the muffin tin for a few minutes. Once cool, allow to cool completely on wire racks before serving",
+      "Remove from the oven and leave to cool in the pan for a few minutes. Remove from the pan and transfer to a wire rack to cool"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Blueberries",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "plus extra for greasing",
+        "amount": "220",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "85",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": "g",
+        "notes": "room temperature",
+        "amount": "208",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "beead4e200c759f5684500e81b02b919466fb092276aca63b8c6f6ea24c0f962",
+    "lineage_hash": "e743cd3b8118e8407e88cbe29a63fbdaa8fbf2ce8e77945c8677d8b8aa15081e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/blueberry-financiers-recipe",
+    "fetchedAt": "2026-08-03T18:44:36.873Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/blueberry-financiers-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

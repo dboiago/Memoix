@@ -1,0 +1,114 @@
+{
+  "recipe": {
+    "name": "Brioche and Butter Pudding",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, grease a large baking dish with the butter",
+      "Pour the milk into a large pan and heat until almost simmering - keep stirring to ensure the milk does not burn. Add the white chocolate, orange zest and vanilla. Continue to gently heat and stir",
+      "Meanwhile, whisk together the caster sugar and eggs in a large bowl until combined. Once the milk has started to simmer, pour 1/3 of the milk into the sugar and eggs and mix well",
+      "Pour the milk, egg and sugar mixture into the pan with the hot milk. Continue to cook on a low heat, stirring continuously until a thin custard forms. Remove from the heat and continue to stir for 2 minutes",
+      "Arrange a layer of sliced brioche along the bottom of the greased baking dish, scatter over a handful of raisins. Repeat the process to make more layers and use up the remaining brioche and raisins",
+      "Carefully pour the custard onto the brioche so it soaks through and covers the bread. Leave to soak for 15 minutes",
+      "Place the brioche and butter pudding in the oven and cook for 40 minutes until the surface is golden brown and the custard is just cooked and has started to set",
+      "Remove the dish from the oven and divide into bowls"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Brioche Loaf",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Chocolate",
+        "unit": "g",
+        "notes": "broken into pieces",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": "zested",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "dash",
+        "notes": "or essence",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raisins",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "for greasing",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "705f920b450ae578c2c3a3030edde7fb7ba8073ef7c36b4067c349219b4aa103",
+    "lineage_hash": "54e90021518c5b5e8a5e946d6c8b252d37ce6f4690b4fa887240d1952c78c5f7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/brioche-and-butter-pudding",
+    "fetchedAt": "2026-08-03T16:57:36.675Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/brioche-and-butter-pudding",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

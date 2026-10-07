@@ -1,0 +1,174 @@
+{
+  "recipe": {
+    "name": "Cauliflower Curry",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the coconut oil to a large wok or lidded frying pan and allow to melt over a medium heat. Add the onions and garlic and fry until softened and lightly browned",
+      "Add the ginger, spices, ground almonds and desiccated coconut and continue to fry for 1–2 minutes, stirring continuously",
+      "Stir in the vegetable stock and yoghurt and simmer for 2 minutes before adding the cauliflower florets. Cover the pan with a lid and simmer for 15–20 minutes, or until the cauliflower is soft but still retains its shape",
+      "Season to taste with salt and pepper, then scatter over the flaked almonds and freshly chopped herbs to serve, with steamed rice and warmed naan breads on the side"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cauliflower",
+        "unit": null,
+        "notes": "about 500g, trimmed and cut into florets",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": null,
+        "notes": "peeled and diced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "peeled and minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cumin",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Almonds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Desiccated Coconut",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Natural Yoghurt",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaked Almonds",
+        "unit": "Tbsp",
+        "notes": "toasted",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": null,
+        "notes": "chopped, or parsley, to garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "afde01e134712489f78a6a50460f8ad79afb49e3bde13374e6561801ff7f4167",
+    "lineage_hash": "86bc8744f462ecd9db9f4cd50510b221b488e21037565b6185b42c94a55254a8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/pasanda-cauliflower-curry-recipe",
+    "fetchedAt": "2026-08-03T13:27:12.299Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/pasanda-cauliflower-curry-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

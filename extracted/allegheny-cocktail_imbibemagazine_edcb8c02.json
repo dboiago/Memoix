@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Allegheny Cocktail",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake all of the ingredients with ice, then strain into a chilled glass, and garnish.\nBlackberry SyrupBlend 1 cup of fresh blackberries with 1 cup of water. Strain through a coffee filter–lined strainer, or several layers of cheesecloth. Blend liquid with 2 cups of sugar until fully dissolved, and bottle for use within 1 week."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "ba08c4765ab904a76e8c74a07dd83f4dc87868faece90e352729d92f6174550c",
+    "lineage_hash": "5601278e52b29d7913c0e651c8f596859522f310b05e563bb179372623e7a225"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/allegheny-cocktail/",
+    "fetchedAt": "2026-08-04T00:53:01.315Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/allegheny-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

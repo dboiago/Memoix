@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Boulevardier Cocktail",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Stir all of the ingredients well with ice in a mixing glass, then strain into a chilled coupe or over ice into a rocks glass. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "f58005f8cf029ab555f23a87c445bf30ce24a5c3d65ba3976e6c9ff29070b1e0",
+    "lineage_hash": "f948f0eafd574075d0361335a8308faad56bbb09a1f3254b8c1dfb287172ce29"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/the-boulevardier-cocktail-recipe/",
+    "fetchedAt": "2026-08-04T02:03:08.154Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/the-boulevardier-cocktail-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

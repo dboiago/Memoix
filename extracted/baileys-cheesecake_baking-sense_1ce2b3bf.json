@@ -1,0 +1,144 @@
+{
+  "recipe": {
+    "name": "Baileys Cheesecake",
+    "time": "8 hr 15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "466",
+      "carbohydrateContent": "44",
+      "fatContent": "28",
+      "proteinContent": "6"
+    },
+    "directions": [
+      "Preheat the oven to 350°F. Line the bottom of a 9\"x3\" round cake pan with a parchment round. If you're using a springform pan, wrap the outside of the pan with aluminum foil.",
+      "Combine 6 oz graham cracker crumbs and 2 oz granulated sugar in a large bowl. Add 3 oz unsalted butter (melted) and toss to combine. Press the crumbs into the bottom of the prepared pan. Bake until fragrant and lightly browned, about 10 minutes. Set aside to cool. Reduce oven to 325°F.",
+      "In a mixer bowl, combine 24 oz cream cheese and 12 oz granulated sugar and mix until well combined with no lumps of cream cheese. Scrape the bowl and mixer attachment to make sure there are no lumps of cream cheese.",
+      "With the mixer running on low, slowly add 8 oz Baileys Irish Cream Liqueur and 2 tsp vanilla extract. Scrape the bowl and paddle attachment half way through adding the liquor to make sure there are no lumps. With the mixer running on low add 5 large eggs. Scrape the bowl and paddle attachment to make sure there are no lumps. Pour batter into the pan.",
+      "Set the pan into a slightly larger pan. Pour warm water between the cheesecake pan and the larger pan until it comes halfway up the side of the cake pan. Bake until the cheesecake is mostly set, about 1 hour and 15 minutes. The center of the cheesecake will still jiggle a bit. Set on a rack to cool. Carefully run a small paring knife or spatula around the top edge of the cake to separate it from the pan.",
+      "Refrigerate several hours or overnight until completely firm.",
+      "To remove the cheesecake from the pan, dip the bottom of the pan in a bowl of very hot water. Run a knife or spatula around the sides of the cake and flip it out onto a flat plate or cake board then flip right side up onto the serving platter. Refrigerate the cake while you prepare the glaze.",
+      "Place 4 oz semi sweet chocolate in a mixing bowl. Heat 2 oz heavy cream and ½ oz unsalted butter until scalding hot. Pour the hot cream over the chocolate and let it sit for 2-3 minutes without stirring. Stir until the chocolate is melted. If lumps of chocolate remain microwave briefly and continue stirring until smooth. Stir in 2 oz Baileys Irish Cream Liqueur. Cool until the ganache is tepid.",
+      "Remove the cheesecake from the refrigerator. Ice the top of the cake with the ganache. Refrigerate until the ganache is set."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Graham Cracker Crumbs",
+        "unit": "oz",
+        "notes": "1 ½ cups",
+        "amount": "6",
+        "section": "Graham Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "2",
+        "section": "Graham Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "melted",
+        "amount": "3",
+        "section": "Graham Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Cream Cheese",
+        "unit": "oz",
+        "notes": "room temperature",
+        "amount": "24",
+        "section": "Cheesecake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "1 ½ cups",
+        "amount": "12",
+        "section": "Cheesecake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Baileys Irish Cream Liqueur",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": "Cheesecake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Cheesecake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "whisked, room temperature",
+        "amount": "5",
+        "section": "Cheesecake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Semi Sweet Chocolate",
+        "unit": "oz",
+        "notes": "chopped fine",
+        "amount": "4",
+        "section": "Glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "2",
+        "section": "Glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "1 tablespoon",
+        "amount": "½",
+        "section": "Glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Baileys Irish Cream Liqueur",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "2",
+        "section": "Glaze",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "246ac81315dd4fc84245e64aa348752e9f860f191c3cb6990211b19a91a15241",
+    "lineage_hash": "54adf78a101dee5e4da24daf47541a7408706affd72f84943a8340fdbf3dc185"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2022/03/13/baileys-cheesecake/",
+    "fetchedAt": "2026-08-02T08:13:19.818Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2022/03/13/baileys-cheesecake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

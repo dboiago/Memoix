@@ -1,0 +1,76 @@
+{
+  "recipe": {
+    "name": "Cherry Sorbet",
+    "time": "8 hr 20 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "147",
+      "carbohydrateContent": "35",
+      "fatContent": "0.2",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Stem and pit 24 oz&#32;Bing Cherries. Put the cherries into a food processor with 4 oz&#32;red wine, 6 oz&#32;granulated sugar and ⅛ teaspoon&#32;table salt. Puree the mixture until smooth.",
+      "Strain the puree through a fine sieve. You should have about 4 cups of puree.",
+      "Refrigerate until the mix is very cold, at least 3-4 hours or overnight.",
+      "Run in your ice cream machine according to the manufacturer&#39;s directions. (See Note)",
+      "Pack into a plastic container, cover the surface with plastic wrap, cover and freeze overnight"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bing Cherries",
+        "unit": "oz",
+        "notes": null,
+        "amount": "24",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "oz",
+        "notes": "½ cup, see note",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "¾ cup",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9093cddd6c825d61a5576eabb7a9f5f330cb7274b7cbd1615c3cf52957ba8393",
+    "lineage_hash": "37b380c099bd40f6135b569139f79b94d344108bcb4f8167b1ace0bca7083252"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2025/08/14/cherry-sorbet/",
+    "fetchedAt": "2026-08-02T00:01:17.981Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2025/08/14/cherry-sorbet/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

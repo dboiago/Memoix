@@ -1,0 +1,114 @@
+{
+  "recipe": {
+    "name": "Air Fryer Picanha",
+    "time": "40 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "BR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "378",
+      "carbohydrateContent": "0.4",
+      "fatContent": "18",
+      "proteinContent": "51"
+    },
+    "directions": [
+      "Take the 3 pounds of whole picanha, fat cap on, out of the fridge at least 1 hour before cooking so it isn&#39;t fridge-cold.",
+      "Preheat the air fryer to 200°C (400°F).",
+      "Make the herb butter: in a small bowl, mix the ¼ cup of unsalted butter, softened with 2 cloves of garlic, minced, 1 tablespoon of fresh chives, minced, and 1 tablespoon of fresh cilantro or parsley, minced. Season with salt and freshly ground black pepper to taste. Set aside.",
+      "Rub a thin layer of oil (1 tablespoon of a neutral oil) over the whole picanha, top and bottom, including the fat cap. Press 2 tablespoons of sal grosso (Brazilian coarse grilling salt), to taste, into the surface (press, don&#39;t rub, so the crystals grip).",
+      "Place the picanha in the basket fat side up and air fry for 10 minutes.",
+      "Flip fat side down and air fry another 10 minutes.",
+      "Transfer to a cutting board and cut into roughly 3 pieces. Salt the freshly cut sides to taste.",
+      "Arrange the pieces in the basket and air fry for 5 minutes.",
+      "Flip the pieces, work the herb butter into the meat, and air fry a final 5 minutes, or until they reach your preferred doneness. Pull the smaller tip piece earlier, since it cooks faster.",
+      "Remove each piece about 5°C (10°F) before your target temperature (see chart). Rest on a cutting board for 5 to 10 minutes, where carryover heat finishes the cook.",
+      "Slice against the grain and serve!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Picanha",
+        "unit": "lb",
+        "notes": "fat cap on also known as top sirloin cap, coulotte or rump cap",
+        "amount": "3",
+        "section": "Picanha",
+        "isOptional": false
+      },
+      {
+        "name": "A Neutral Oil Something with a High Smoke Point Like Avocado",
+        "unit": "Tbsp",
+        "notes": "canola, or sunflower",
+        "amount": "1",
+        "section": "Picanha",
+        "isOptional": false
+      },
+      {
+        "name": "Sal Grosso (brazilian Coarse Grilling Salt)",
+        "unit": "Tbsp",
+        "notes": "to taste or any other coarse grilling salt",
+        "amount": "2",
+        "section": "Picanha",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "softened",
+        "amount": "¼",
+        "section": "Herb Butter",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "2",
+        "section": "Herb Butter",
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": "Tbsp",
+        "notes": "fresh, minced",
+        "amount": "1",
+        "section": "Herb Butter",
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "Tbsp",
+        "notes": "alt: parsley, fresh, minced",
+        "amount": "1",
+        "section": "Herb Butter",
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Herb Butter",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b7fe5b24a4bac2d6fe984916aa834e675ff486824477def3142b0a1a97836a40",
+    "lineage_hash": "14e9887ed1877df2bca105dde632ee8ea50507a9cdd1926488571cd4ec6ae958"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://braziliankitchenabroad.com/air-fryer-picanha-recipe/",
+    "fetchedAt": "2026-09-26T02:31:01.793Z"
+  },
+  "rawSource": "https://braziliankitchenabroad.com/air-fryer-picanha-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

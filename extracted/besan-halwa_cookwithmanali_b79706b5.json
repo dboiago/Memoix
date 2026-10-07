@@ -1,0 +1,102 @@
+{
+  "recipe": {
+    "name": "Besan Halwa",
+    "time": "30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "477",
+      "carbohydrateContent": "38",
+      "fatContent": "34",
+      "proteinContent": "7"
+    },
+    "directions": [
+      "Heat ghee in a pan on medium heat. Once the ghee melts, lower the heat to low and add besan.Mix the besan with the ghee using a spatula. Now start stirring and cooking the besan.",
+      "Meanwhile in a pan heat up milk and water. There&#039;s no boiling needed here, just warm up the mixture and keep it ready.",
+      "Keep stirring besan on low heat, it will start to change color.After around 17 minutes of cooking on low heat,  it becomes golden brown in color (see picture). At this point, your kitchen will also be filled with a wonderful nutty aroma of the besan. That&#039;s the stage of adding the liquids.",
+      "Add the heated up milk and water mixture to the roasted besan. The mixture will bubble so be careful. Stir the liquids with the besan until it all becomes smooth.",
+      "Then add the sugar, mix well and increase the heat to medium and continue to cook for 2 more minutes until halwa starts leaving sides of the pan.",
+      "Add chopped nuts, cardamom powder and mix. Turn off the heat.",
+      "Serve besan halwa warm. You may garnish with more nuts before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ghee",
+        "unit": "C",
+        "notes": "100 grams, in semi-solid state",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Besan",
+        "unit": "C",
+        "notes": "55 grams, gram flour",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": "6 oz, I used whole milk",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "4 oz",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated White Sugar",
+        "unit": "C",
+        "notes": "75 grams, adjust to taste",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nuts",
+        "unit": "Tbsp",
+        "notes": "chopped, I used mix of cashews & almonds",
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "201d62118b55eef35cc3e7b1ca4fd06946ce746177da6e0d4f93a9d91e0ad4ca",
+    "lineage_hash": "718c41dabe048f2ad13234daa96af761ef8ff495d6007cbea3413a6186b02dc8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/besan-halwa/",
+    "fetchedAt": "2026-08-02T00:25:32.461Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/besan-halwa/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

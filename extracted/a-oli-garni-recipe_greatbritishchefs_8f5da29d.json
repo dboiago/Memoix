@@ -1,0 +1,325 @@
+{
+  "recipe": {
+    "name": "Aïoli Garni",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "The day before, coat the cod with the salt and lemon zest and leave to sit in the fridge overnight",
+      "The next day, prepare the artichokes. Top and tail each one, leaving about 5cm of the stalk attached. Pluck off the outer leaves until the pale central leaves are revealed, then trim away any excess dark parts from the stalk and base. Cut the trimmed artichokes into quarters, then place in a bowl of water with the lemon juice squeezed in to prevent discolouration",
+      "Add a glug of olive oil to a saucepan and finely slice the shallot into half-moons. Add to the pan and cook over a medium heat for 3 minutes, until softened. Add the garlic, thyme and sage, cook for another minute, then pour in the wine and cider vinegar. Drain the artichokes and arrange in the pan, adding a little water until they are submerged. Place a round of baking paper on top of the artichokes to keep them submerged and simmer over a medium heat for 15 minutes, or until soft. Drain and set aside at room temperature until needed",
+      "Place the potatoes in a saucepan, cover with cold water and add a pinch of salt. Bring to a simmer and cook for 15 minutes, or until tender. Drain and set aside at room temperature until needed",
+      "In a separate pan of salted water, add the peeled carrots and bring to a simmer. Cook for 10 minutes or until tender. Drain and set aside at room temperature until needed",
+      "Soft-boil the eggs in boiling water for 6½ minutes, then place them under cold running water to halt the cooking process. Once cool enough to handle, peel and set aside",
+      "To make the aioli, place the roughly chopped garlic cloves in a large pestle and mortar along with a big pinch of salt (you could also use a food processor to make the aioli if you don’t have a large enough pestle and mortar, but the traditional way is best). Once the garlic cloves are crushed into a rough paste, add the egg yolks one at a time, mixing them into the garlic thoroughly. Slowly start drizzling in the olive oil, mixing constantly as you go – the mixture should begin to thicken and emulsify. Bravely persist with the olive oil until it’s all used up – if the aioli begins to clump or split, add in the merest dash of water to thin it, then continue. Once all the olive oil has been added, taste for seasoning then set aside",
+      "To finish cooking the cod, place a large saucepan over a medium heat and roughly chop the onion, carrots and celery. Place these in the pot along with the garlic cloves, bay, thyme, peppercorns, vinegar and wine, then top up with a litre or 2 of water to create a court bouillon",
+      "While you wait for the bouillon to simmer, take the cod out of the fridge and wash off the cure. Pay dry, then cut the cod into 4 pieces",
+      "Once the bouillon is at a gentle simmer, drop in the cod pieces and gently cook for 4 minutes. Gently light them out with a slotted spoon and set to one side – the flesh will be quite flaky",
+      "To serve, get your largest platter or serving plate and place the bowl of aioli in the centre. Arrange the cooked and raw vegetables around it and cut the eggs in half and drape them with the anchovies. Place the warm cod on the plate and, once you’re happy with how everything looks, drizzle everything with a final glug of extra virgin olive oil and scatter over some salt"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cod",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zested",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Sticks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "bashed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "ml",
+        "notes": "or cider vinegar",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "large, peeled and roughly chopped",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Globe Artichokes",
+        "unit": null,
+        "notes": "Charlie uses violetta spiky or tema artichokes",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallot",
+        "unit": null,
+        "notes": "or small onion",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "peeled and bashed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sage",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cider Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": null,
+        "notes": "for cooking",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pink Fir Potatoes",
+        "unit": null,
+        "notes": "scrubbed clean",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": null,
+        "notes": "peeled",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Anchovy Fillets",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Radishes",
+        "unit": null,
+        "notes": "halved",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Heart",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Watercress",
+        "unit": "bunch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "cut into wedges",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": null,
+        "notes": "for drizzling",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b1fc3f2ddd840d911c9034e2a624907e63b9d72d94bf6d3b80b43969264423d4",
+    "lineage_hash": "5b3d37a905d818b6e8c0735f9c32822a09c020d806a9ced9a8e8986abeb4062b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/aioli-garni-recipe",
+    "fetchedAt": "2026-08-03T02:55:14.344Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/aioli-garni-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

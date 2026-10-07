@@ -1,0 +1,77 @@
+{
+  "recipe": {
+    "name": "Blackberry Sorbet",
+    "time": "8 hr 50 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "53",
+      "carbohydrateContent": "13",
+      "fatContent": "0.2",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "If using frozen berries, they should be defrosted. Puree 16 oz&#32;blackberries with 4 oz&#32;water.",
+      "Strain the puree through a fine sieve to remove the seeds. You should have about 2 ¼ cups of puree.",
+      "Add 4 oz&#32;granulated sugar and ⅛ teaspoon&#32;table salt and stir until the sugar is melted. Taste the puree and add up to another ¼ cup of sugar if needed.",
+      "Refrigerate until the mix is very cold, at least 3-4 hours or overnight.",
+      "Run in your ice cream machine according to the manufacturer&#x27;s directions. (See Note)",
+      "Pack into a plastic container, cover the surface with plastic wrap, cover and freeze overnight"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Blackberries",
+        "unit": "oz",
+        "notes": "3 cups",
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a82869afba4ab1ba95c04a57ddf877c66e81f9a80f25f29c7555ab9b9e300559",
+    "lineage_hash": "e09944f14d8ca3eadbbb3ea3a985668e1bf55d41259b52d1d31300cbcfd7df0d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2020/07/14/homemade-blackberry-sorbet/",
+    "fetchedAt": "2026-08-01T19:25:57.254Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2020/07/14/homemade-blackberry-sorbet/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

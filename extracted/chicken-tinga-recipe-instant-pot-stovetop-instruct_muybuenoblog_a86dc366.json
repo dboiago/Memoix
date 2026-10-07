@@ -1,0 +1,191 @@
+{
+  "recipe": {
+    "name": "Chicken Tinga",
+    "time": "49 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "548",
+      "carbohydrateContent": "30",
+      "fatContent": "37",
+      "proteinContent": "29"
+    },
+    "directions": [
+      "In a large stockpot, over medium to high heat, add water, chicken, 2 teaspoons salt, 1 clove garlic, and quartered onion. Cover and simmer for about 30 minutes. Reserve.",
+      "Remove the chicken and allow it to cool. After the chicken cools off shred it. Reserve.",
+      "In a blender add the boiled onion and garlic clove, quartered tomato, chipotle peppers including adobo sauce, 2 teaspoons salt, and enough chicken broth to fill the blender half way. Puree until smooth.",
+      "Heat the oil in a large and deep pan over medium heat.",
+      "Once it is hot but not smoking, stir in the chopped onion and cook until soft and translucent, about 2 minutes.",
+      "Add chopped tomatoes and chopped garlic and cook for an additional 2 minutes.",
+      "Add the cooked shredded chicken, the chipotle sauce from the blender and more chicken broth if it is too dry. Bring to a boil, reduce heat and simmer for 10 minutes.",
+      "Add salt to taste."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Skinless/boneless Chicken Breast",
+        "unit": "lb",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "divided",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Onion",
+        "unit": "medium",
+        "notes": "quartered",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vine Ripened Tomato",
+        "unit": "large",
+        "notes": "quartered",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Can Chipotle Peppers in Adobo Sauce",
+        "unit": null,
+        "notes": "7-ounce",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Canola Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Onion",
+        "unit": "large",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vine Ripened Tomatoes",
+        "unit": "large",
+        "notes": "chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flat Tostada Shells",
+        "unit": null,
+        "notes": "packaged or corn tortillas",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Iceberg Lettuce",
+        "unit": null,
+        "notes": "finely shredded",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Avocados",
+        "unit": null,
+        "notes": "pitted, peeled, and sliced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crema Mexicana",
+        "unit": "C",
+        "notes": "alt: sour cream",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Queso Fresco",
+        "unit": "C",
+        "notes": "alt: Cotija, crumbled",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salsa of Your Choice",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Radishes",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5da46c4bf171ad3e7d4c98cc7fd79417e498d83c3870ae5a39aa53b4a98ff302",
+    "lineage_hash": "cbb06568ce0dee634ba3e02d72337a868a2e601a6b22f474e26f4158d68c4c68"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/chicken-tinga/",
+    "fetchedAt": "2026-08-02T03:51:22.266Z"
+  },
+  "rawSource": "https://muybuenoblog.com/chicken-tinga/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

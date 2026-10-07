@@ -1,0 +1,64 @@
+{
+  "recipe": {
+    "name": "Cherry Jam",
+    "time": "1 hr",
+    "course": "pickles",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by putting a plate in the freezer. This will help you test when the jam is ready later on",
+      "Halve the cherries, remove the stones and place in a heavy-based pan with the sugar and lemon juice",
+      "Cook down over a low heat, stirring regularly until the cherries have released enough liquid to prevent the sugar from caramelising. Simmer for 20–25 minutes",
+      "To test if the jam is the correct consistency, remove the plate from the freezer and spoon a little jam onto the plate. Place in the fridge to set for a couple of minutes. If the jam forms a skin and sets then it is ready to jar. If not, return to the heat and continue cooking, repeating the test every 5 minutes",
+      "Leave to sit for 15 minutes to cool slightly and allow the cherries to settle",
+      "Spoon the jam into the sterilised jar, seal, and label with the date. The jam will keep in a cool dark place for 1 year, once opened keep in the fridge"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cherries",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jam Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a717a383c1ff2b1247cb5fafd89a2d01a36ed573680e176df8991eae11e57cf1",
+    "lineage_hash": "07d573f0955b6de4bdf90da6f012844d159658de7a89eb9a48d4b0bd15728531"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cherry-jam-recipe",
+    "fetchedAt": "2026-08-03T10:03:21.573Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cherry-jam-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

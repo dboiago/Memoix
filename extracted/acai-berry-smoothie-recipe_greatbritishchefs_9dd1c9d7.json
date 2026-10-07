@@ -1,0 +1,67 @@
+{
+  "recipe": {
+    "name": "Acai Berry Smoothie",
+    "time": "5 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place all of the ingredients in a blender and blitz until smooth. Pour into 2 glasses, pop in the straws and serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Apple",
+        "unit": null,
+        "notes": "peeled and cored",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Acai Berry Purée",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": "peeled",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almond Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e7afc5b7233a6e9f649a3b7567f39453b24d275b0ede10ae304399b29272c1c6",
+    "lineage_hash": "42c0f000d112abee355a6829402362cac77f73847e78e3ed36aa6e25b6e080ac"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/acai-berry-smoothie-recipe",
+    "fetchedAt": "2026-08-03T12:54:31.528Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/acai-berry-smoothie-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

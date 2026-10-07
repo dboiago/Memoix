@@ -1,0 +1,68 @@
+{
+  "recipe": {
+    "name": "Blood Orange Sorbet",
+    "time": "25 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the sugar and water in a pan and bring to the boil. Keep cooking until all of the sugar has dissolved, then leave to simmer for a further 5 minutes",
+      "Set aside to cool, then mix in the blood orange and lemon juices. Set aside in the fridge until chilled, then churn in an ice cream maker. Freeze until ready to serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Blood Oranges",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "275",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "889dd4b3aa54fe43edf5ab01ced6895edc7a1993cd139bb08b1f27ff55f27a0a",
+    "lineage_hash": "a5e5624b198d45bf45d0138619cc06a028f1e03e683596445e21473ced2a4105"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/blood-orange-sorbet-recipe",
+    "fetchedAt": "2026-08-03T17:49:37.214Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/blood-orange-sorbet-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

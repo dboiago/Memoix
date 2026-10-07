@@ -1,0 +1,269 @@
+{
+  "recipe": {
+    "name": "Braised and Set Lamb Shoulder with Pearl Barley",
+    "time": "4 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, brown the lamb all over by searing it in a splash of oil in a large stock pot. Remove, then do the same with the onion, carrot, celery, thyme and rosemary. When they begin to soften, add the garlic and a squeeze of tomato purée and cook for a minute or two. Add the wine and reduce right down",
+      "Pour in the stock and bring to the boil. Return the lamb to the pan and make sure it's submerged in the cooking liquor, adding a little water if necessary. Bring the heat up so that everything gently simmers, cover with foil or a lid and cook for 2 1/2 to 3 hours. Leave to cool then remove the lamb, reserving the cooking liquor",
+      "Pull the meat apart with your fingers, removing the bone and any gristle and fat so that you just have nice slivers of meat",
+      "Lay a triple layer of cling film on the worktop and spoon the lamb along one end to form a log. Roll up the lamb tightly, twisting the ends, and chill overnight. Strain the reserved liquor and leave in a bowl in the fridge overnight. All the fat from the lamb will rise to the top and solidify, which will make it easy to remove, leaving behind the clear stock",
+      "The next day, make your celeriac purée. Add the celeriac to a pan and cover with water. Bring to the boil and cook the celeriac over a medium-low heat for 10 minutes, or until it softens. Drain and tip into a blender, adding the cream, and blitz until smooth. Season to taste and set aside to reheat when ready",
+      "About 45 minutes before plating up, take the lamb out of the fridge to come up to room temperature",
+      "For the pearl barley, gently fry the onion in a pan until soft then add the pearl barley. Pour in the lamb stock, bring to the boil and gently simmer until all the lamb stock has been absorbed. Stir in the parsley and lemon juice right at the end of cooking",
+      "For the gravy, place the onion in a pan with a splash of oil and put on a hob to soften. After 5 minutes, add the thyme and stir through, then pour in the port and reduce by half. Pass through a sieve into a clean pan to remove the thyme and onion, then add the lamb and veal stock, place back on the heat and keep reducing until it thickens enough to coat the back of a spoon. Right at the end, add a knob of butter for bit of sheen",
+      "Parboil the carrots and parsnips in some boiling water for 5 minutes, drain then spread in a roasting tin. Season with oil and salt and roast in the oven for 20 minutes",
+      "Unwrap the lamb log and cut into even portions using a sharp knife. Place a frying pan on the hob with a splash of oil and fry off the portions so the outside becomes crispy all over. Heat through in the oven for another 10 minutes with the root vegetables",
+      "To plate up, spoon some celeriac purée into the centre of each plate, add some pearl barley to the side and place the lamb on top. Add the roasted carrots and parsnips and drizzle over a generous helping of port gravy. Finish by scattering a pinch of mint over the meat"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Lamb Shoulder",
+        "unit": null,
+        "notes": "bone-in, approx. 1.2 kg in weight",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Sticks",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bulb of Garlic",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Purée",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "375",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lamb Stock",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celeriac",
+        "unit": "large",
+        "notes": "peeled and diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pearl Barley",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lamb Stock",
+        "unit": "ml",
+        "notes": "there should be enough leftover from braising the lamb, but keep some extra stock handy just in case",
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "bunch",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Knob of Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": null,
+        "notes": "chopped into batons",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsnips",
+        "unit": null,
+        "notes": "halved",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ruby Port",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lamb Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Veal Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1177cc4cb8494aa5aee0e9d84dd26d7727e70fa7df845087b6b7be24358b0ca6",
+    "lineage_hash": "5e0705729e8367fe017df85a95b451ee2a56c003a96830ea3e915e1a05d422b4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/lamb-pearl-barley-port-gravy-recipe",
+    "fetchedAt": "2026-08-03T22:50:02.068Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/lamb-pearl-barley-port-gravy-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

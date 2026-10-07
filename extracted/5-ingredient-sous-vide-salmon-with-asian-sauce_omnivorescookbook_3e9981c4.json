@@ -1,0 +1,110 @@
+{
+  "recipe": {
+    "name": "5-Ingredient Sous-Vide Salmon with Asian Sauce",
+    "time": "50 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "196",
+      "carbohydrateContent": "3.8",
+      "fatContent": "8.5",
+      "proteinContent": "26.7"
+    },
+    "directions": [
+      "Place salmon fillets on a large plate, skin-side-down.",
+      "Heat a water bath using your sous-vide precision cooker, 115°F (46°C) for medium rare, 120°F (49°C for medium), 130°F (54°C) for well-done.",
+      "Mix the sauce ingredients in a small bowl. Use a spoon to evenly brush the sauce onto the salmon fillets. Carefully transfer two pieces of salmon into each sous-vide bag. If you accidentally smear sauce on the interior top 3-inch portion of the bag (the end near the opening), use a paper towel to wipe it, so it does not interfere with sealing. Use the FM2000 sealing system to vacuum and seal the bags.",
+      "Cook at 120°F (49°C) for 45 mins if your salmon is 1 inch thick or less, or 1 hour if your salmon is more than 1 inch thick.",
+      "Once done, carefully remove the salmon from the bag, keeping the sauce on top.",
+      "To serve immediately, place the salmon skin-side-down on serving plates and serve as a main.",
+      "To serve with crispy skin, heat oil over medium-high heat in a nonstick pan or cast iron pan until hot. Carefully add the salmon, skin side down. Use your spatula to gently press the salmon so the skin will sear evenly. Cook until the skin turns crispy and browned, 1 minute or so. Immediately transfer to serving plates, skin side up. Serve hot as a main."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Salmon Fillet",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "finely, grated",
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "Tbsp",
+        "notes": "finely, grated",
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sous-vide Precision Cooker",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Special equipment",
+        "isOptional": false
+      },
+      {
+        "name": "Foodsaver® Sous-vide Vacuum Seal Bags",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Special equipment",
+        "isOptional": false
+      },
+      {
+        "name": "Foodsaver® Fm2000 Vacuum Sealing System",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Special equipment",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "374fb9e001382d6a0f1d05b69fae3ea7bad50aedc3d824e6a0551379772e094e",
+    "lineage_hash": "a53b5d4985db9428883b388def4b29ef4672c340cb51355ce15748fbc79fc8cd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/sous-vide-salmon-asian-sauce/",
+    "fetchedAt": "2026-08-01T23:34:50.670Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/sous-vide-salmon-asian-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

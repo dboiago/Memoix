@@ -1,0 +1,71 @@
+{
+  "recipe": {
+    "name": "By The Hair of My... - David Lebovitz",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Rinse and sterilize jars with boiling water.",
+      "Dissolve 3/4 cups (150g) of sugar in 3-4 tablespoons hot water in a 1-quart (1 liter) preserving jar with a well-fitting lid.",
+      "Pour two scant cups of decent, but not outrageously expensive brandy or Cognac the plums.",
+      "Secure the lid and tilt the jar to mix everything together.",
+      "Store the jar in a cool place for a few weeks, then refrigerate."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Lb Plums",
+        "unit": "lb",
+        "notes": "small, roughly the size of a French bureaucrats petit boule",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cups Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tablespoons Hot Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3-4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scant Cups Cups Brandy",
+        "unit": null,
+        "notes": "alt: Cognac, decent, but not outrageously expensive",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "71e8c0eef52ebe42e1387ce0b6aa72b1bee2a64d9960907dfc585ed638d0b466",
+    "lineage_hash": "d9bc8f98270d339c7d76999ac5aa7ffc6b873087057fd3ab55b7aaa94cab6c0c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/by-the-hair-of/",
+    "fetchedAt": "2026-08-01T20:40:37.545Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/by-the-hair-of/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

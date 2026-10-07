@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Beer Cocktail: Jealous Moon",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Snifter",
+    "garnish": [
+      "Beer"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all the ingredients except the beer in a shaker and shake with ice to chill. Strain into a snifter filled with large ice cubes. Top with beer; garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "0c43ca4ccc0f4c3b7fd6535fe586df9d49b5f1b33f55c6e7905395bc93e61f48",
+    "lineage_hash": "25aa669fb3aa6849eec891636034b052558e2882383e236e6321952f69c74c7b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/beer-cocktail-jealous-moon/",
+    "fetchedAt": "2026-08-03T20:09:43.544Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/beer-cocktail-jealous-moon/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

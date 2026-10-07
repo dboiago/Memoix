@@ -1,0 +1,216 @@
+{
+  "recipe": {
+    "name": "Chicken Tortilla Soup",
+    "time": "1 hr 30 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Prep. Chop the onions, bell pepper, and jalapeno (remove the seeds for less heat), and mince the garlic.",
+      "Cook. Cook the chicken breasts by simmering in the chicken broth in a medium pot until tender enough to shred, about 15 minutes. Remove and let cool. Reserve the chicken broth.",
+      "Sauté the onion, bell pepper, jalapeno and garlic in oil over medium heat in a large enameled cast iron or other stock pot until softened, about 5 minutes. Season the vegetables lightly with salt and pepper. Drain and rinse the beans, then add to the pot along with the corn and both cans of tomatoes with their juices. Season again lightly with salt and pepper. Let simmer.",
+      "Meanwhile, take two forks and shred the chicken until it’s completely pulled apart. Add to the pot along with the reserved chicken broth. If the soup needs more liquid, add hot water to the soup until the desired consistency is reached. Season with cumin, chili powder and cayenne. Stir well and bring to a gentle boil. Reduce the heat to low and simmer for at least 30 minutes or up to 1 hour.",
+      "Make garnish. Preheat oven to 400ºF. Paint the tortillas with olive oil on both sides and cut into 1/2 inch (13 mm) strips. Arrange the strips on a cookie sheet and bake until crisp, 10 to 15 minutes. Sprinkle with salt and set aside.",
+      "Serve. Ladle the soup into bowls and garnish with small amounts of cheese, cilantro, sour cream and sliced avocado. Other options include chopped red onion, scallions, salsa or pico de gallo. Serve hot with the slices or crushed pieces of crispy tortilla strips on top. Another option would be to serve with plain warmed whole tortillas, either corn or flour."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Breasts",
+        "unit": "oz",
+        "notes": "2-3 medium",
+        "amount": "12",
+        "section": "Soup",
+        "isOptional": false
+      },
+      {
+        "name": "Low Sodium Chicken Broth",
+        "unit": "C",
+        "notes": null,
+        "amount": "4",
+        "section": "Soup",
+        "isOptional": false
+      },
+      {
+        "name": "Morton Coarse Kosher Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Soup",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Soup",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Soup",
+        "isOptional": false
+      },
+      {
+        "name": "Red Bell Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Soup",
+        "isOptional": false
+      },
+      {
+        "name": "Jalapeno Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Soup",
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": "plus some for chicken",
+        "amount": "3",
+        "section": "Soup",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "3",
+        "section": "Soup",
+        "isOptional": false
+      },
+      {
+        "name": "Can Black Beans",
+        "unit": null,
+        "notes": "15 ounce",
+        "amount": "½",
+        "section": "Soup",
+        "isOptional": false
+      },
+      {
+        "name": "Package Frozen Sweet Corn",
+        "unit": null,
+        "notes": "14 ounce",
+        "amount": "½",
+        "section": "Soup",
+        "isOptional": false
+      },
+      {
+        "name": "Can Rotel Tomatoes with Green Chilies",
+        "unit": null,
+        "notes": "10 ounce",
+        "amount": "1",
+        "section": "Soup",
+        "isOptional": false
+      },
+      {
+        "name": "Can Fire Roasted Tomato Sauce",
+        "unit": null,
+        "notes": "10 ounce",
+        "amount": "1",
+        "section": "Soup",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cumin",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Soup",
+        "isOptional": false
+      },
+      {
+        "name": "Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Soup",
+        "isOptional": false
+      },
+      {
+        "name": "Cayenne Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Soup",
+        "isOptional": false
+      },
+      {
+        "name": "Corn Tortillas",
+        "unit": null,
+        "notes": "or flour",
+        "amount": "2",
+        "section": "Garnishes",
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Garnishes",
+        "isOptional": false
+      },
+      {
+        "name": "Monterey Jack Cheese",
+        "unit": "oz",
+        "notes": "grated",
+        "amount": "2",
+        "section": "Garnishes",
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "Tbsp",
+        "notes": "chopped, fresh",
+        "amount": "2",
+        "section": "Garnishes",
+        "isOptional": false
+      },
+      {
+        "name": "Sour Cream",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Garnishes",
+        "isOptional": false
+      },
+      {
+        "name": "Avocado",
+        "unit": "slices",
+        "notes": "fresh",
+        "amount": "2",
+        "section": "Garnishes",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "78e49915336eeeb7a03167ce563a2c558ed69539e0fca2f622ce164bd3e46b13",
+    "lineage_hash": "7ed2f31d5c8ee3bf9c5d8fb8d49a25b65cb61fb2851a0efb4250f7783ce7b74a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://amazingribs.com/tested-recipes/chicken-recipes/chicken-tortilla-soup/",
+    "fetchedAt": "2026-08-02T11:07:41.387Z"
+  },
+  "rawSource": "https://amazingribs.com/tested-recipes/chicken-recipes/chicken-tortilla-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

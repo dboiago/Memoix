@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Cantaloupe and Campari Popsicles",
+    "time": "4 to 5 hours",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cut the cantaloupe into large chunks and purée in  a food processor. You should have about 2 1/4 cups  (18 fl. oz.) of purée.",
+      "Transfer the puréed cantaloupe to a bowl or measuring pitcher with a pouring spout. Add the simple syrup until the cantaloupe tastes quite sweet. Now dribble in the Campari until you can detect its flavor. Campari is less alcoholic than most spirits, so this mixture can handle more of it, but it has such a strong presence that you want to be careful not to overdo it",
+      "Pour the mixture into ice pop molds, leaving a little bit of room at the top for the mixture to expand. Insert sticks and freeze until solid, 4 to 5 hours. Unmold and transfer to plastic bags for storage or serve at once."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "4a2022b84a89c155969246c69ae3c3f9111aad5e373e738571b6868c51f9dbc8",
+    "lineage_hash": "df2fe18da6d28e8bf373ec3df719db2d975cbe023dd51f96d4cec0f524042629"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cantaloupe-and-campari-popsicle-recipe/",
+    "fetchedAt": "2026-08-03T23:47:00.716Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cantaloupe-and-campari-popsicle-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

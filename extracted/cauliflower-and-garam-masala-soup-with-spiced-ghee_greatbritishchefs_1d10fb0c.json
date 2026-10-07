@@ -1,0 +1,152 @@
+{
+  "recipe": {
+    "name": "Cauliflower and Garam Masala Soup with Spiced Ghee",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 200ºC fan",
+      "Toss the cauliflower florets with a dash of oil, garam masala and some salt and roast for 15 minutes",
+      "Add a dash of oil to a saucepan and cook the onions and celery, stirring regularly until softened and beginning to colour",
+      "Add the garlic and turmeric and cook for 1 minute, stirring, then add the stock and roasted cauliflower",
+      "Simmer until the cauliflower is very tender, then blend with a stick blender until very smooth",
+      "Season to taste with salt and pepper"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cauliflower",
+        "unit": null,
+        "notes": "broken into florets",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stick of Celery",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "750",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Neutral Oil",
+        "unit": null,
+        "notes": "for cooking",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Single Cream",
+        "unit": null,
+        "notes": "enough to swirl in each bowl",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Flakes",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Curry Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c250161d0050975f2a3dea050a742a40b0995ee01384e6822bf688dd2a6f0020",
+    "lineage_hash": "778f60ac0792fac4a640e5e064334cea817cee7c78286af541e8dd5eeb1d4f3f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cauliflower-garam-masala-soup-spiced-ghee-recipe",
+    "fetchedAt": "2026-08-02T14:01:04.723Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cauliflower-garam-masala-soup-spiced-ghee-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,160 @@
+{
+  "recipe": {
+    "name": "Bajra Spaghetti In Spinach Sauce",
+    "time": "1 hr 10 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Take Bajra and whole wheat flour in a bowl, knead into a semi soft dough, cover and rest 10 min.",
+      "Take chakli maker and attach the sev plate. Grease the maker and put the prepared dough in it.",
+      "Make spaghetti pasta with the help of chakli maker then coat with wheat flour so that they don’t stick with each other.",
+      "Now boil sufficient water and add salt. Add pasta and stir gently, boil for 10 mins.",
+      "Strain and drizzle oil on the spaghetti. Set aside.",
+      "Boil 2 cups of water in a pot. Make criss-cross sections on lower side of the tomato and add in the boiling water along with garlic cloves.",
+      "Cook for 2-4 mins then drain the water. Peel the tomatoes and let them cool completely.",
+      "Blend the tomato and garlic together to a puree. Keep aside.",
+      "Heat the butter in a pan, add onions saute on medium flame for few minutes.",
+      "Add tomato and garlic puree, cook further for more 2 mins.",
+      "Add the spinach puree mix well and cook on medium flame while stirring occasionally, till it reduces and thickens.",
+      "Add red chilli flakes and salt to taste, stirring occasionally.",
+      "Add prepared noodles in the sauce and mix well and cook on medium flame for 2 to 3 minutes.",
+      "Add oregano and grated cheese. Serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bajra Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Spaghetti",
+        "isOptional": false
+      },
+      {
+        "name": "Wheat Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Spaghetti",
+        "isOptional": false
+      },
+      {
+        "name": "Warm Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Spaghetti",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Spaghetti",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Spaghetti",
+        "isOptional": false
+      },
+      {
+        "name": "Spinach (palak)",
+        "unit": "C",
+        "notes": "puree",
+        "amount": "2",
+        "section": "For The Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "small",
+        "notes": null,
+        "amount": "2",
+        "section": "For The Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For The Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "4-5",
+        "section": "For The Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "large",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": "For The Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Processed Cheese",
+        "unit": "C",
+        "notes": "grated",
+        "amount": "¼",
+        "section": "For The Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For The Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Oregano",
+        "unit": "tsp",
+        "notes": "Dried",
+        "amount": "1",
+        "section": "For The Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli Flakes",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For The Sauce",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b5e4c6d8c85430a6845862de066cdec3508e5d3d654569df14e1dae7412fd198",
+    "lineage_hash": "af6686908f2837bf3a474ec600fb1df5bbcbf9067a2aaa7e96d6e7556580fc77"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/user-recipes/bajra-spaghetti-in-spinach-sauce-by-sonakshi-srivastava/",
+    "fetchedAt": "2026-08-02T21:16:43.279Z"
+  },
+  "rawSource": "https://ranveerbrar.com/user-recipes/bajra-spaghetti-in-spinach-sauce-by-sonakshi-srivastava/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

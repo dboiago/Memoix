@@ -1,0 +1,127 @@
+{
+  "recipe": {
+    "name": "Cheese and Herb Mini Quiche",
+    "time": "1 hr",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Melt the butter in a frying pan and cook the onion until soft but not coloured. Set aside and leave to cool",
+      "Beat the eggs lightly, then mix in the cheese, cream, herbs and onion (once cooled). Season with pepper and just a little salt (the cheese is salty already)",
+      "On a lightly floured surface, roll out the pastry to roughly the thickness of a 2 pence piece. Using a cutter (or other circular object) roughly 5 inches in diameter, cut out 10 circles of pastry (you may have a slightly different amount depending on the thickness of your pastry)",
+      "Oil a muffin or tart tin. Carefully place the pastry into the tin, taking care not to break it (just patch up with more pastry if you do). Don’t worry if the edges overhang, as this adds to the ‘Mad Hatter’s’ charm of the finished quiches. Brush the edges with egg and divide the filling between the cases, taking care not to over-fill",
+      "Bake for 15-20 minutes, or until the pastry is golden brown. Allow to cool slightly before serving"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Onion",
+        "unit": "small",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Single Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "plus one extra, beaten",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cheshire Cheese",
+        "unit": "g",
+        "notes": "crumbled",
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chervil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shortcrust Pastry",
+        "unit": "g",
+        "notes": "1 pack",
+        "amount": "320",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": null,
+        "notes": "for dusting",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for greasing",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "cc5cf8caa3e3e5b079aee77fa99ff9e9aa9187c0d4a39f5cc4258dd8cee39a42",
+    "lineage_hash": "d4f1194a8dce26a63189deb13ef0832188f5e75fcaf0536822ca6d97629da40c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cheshire-cheese-herb-quiche-recipe",
+    "fetchedAt": "2026-08-03T15:21:10.216Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cheshire-cheese-herb-quiche-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

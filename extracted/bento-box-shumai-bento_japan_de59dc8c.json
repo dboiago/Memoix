@@ -1,0 +1,95 @@
+{
+  "recipe": {
+    "name": "Shumai Bento",
+    "time": "15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Fill about half of the bento box with the rice, allowing for 1cm / ⅜” margin at the top (see the first photo in this post).",
+      "Place Shumai pieces next to the rice, filling most of the remaining space of the bento box.",
+      "Put Pickled Red Cabbage in the okazu cup and place it next to the shumai.",
+      "Cover half of the rice with Iri Tamago and the rest with Peas.",
+      "Place the flower-shaped carrots over the line between the egg and the peas."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cooked Rice",
+        "unit": "C",
+        "notes": "note 1",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shumai",
+        "unit": "pcs",
+        "notes": "note 2",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Portion Iri Tamago From Sanshoku Bento Recipe",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Portion Peas From Sanshoku Bento Recipe",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Round Slices of Carrot Cut Into Flower Shape (3mm (⅛\") Thickness, Note 3)",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet and Sour Pickled Red Cabbage",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Okazu Cup",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "11a4ae6ddeebdc18b0b306562663f2487cc890db52010c396d85953196d12f05",
+    "lineage_hash": "49ea0525cedf39dc000bbba9ee68e2cd9efbae7ab422e975b0f8f42fc2c82426"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://japan.recipetineats.com/bento-box-shumai-bento/",
+    "fetchedAt": "2026-08-01T20:11:43.429Z"
+  },
+  "rawSource": "https://japan.recipetineats.com/bento-box-shumai-bento/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

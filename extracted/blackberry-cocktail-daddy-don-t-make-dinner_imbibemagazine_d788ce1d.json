@@ -1,0 +1,35 @@
+{
+  "recipe": {
+    "name": "Blackberry Cocktail",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Collins",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Muddle 3 blackberries in a shaker. Add the vodka, lemon and honey syrup with a small amount of ice. Shake hard. Strain into an ice-filled Collins glass. Add sparkling water, then garnish.",
+      "Honey Syrup: Combine 1 cup honey and ⅓ cup water in a saucepan over medium heat and stir until the sugar dissolves. Remove from heat, let cool to room temperature and transfer to a glass jar. Cover and refrigerate for up to 2 weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "f945b347c10af431b204baaf6aec9e251adb2766c51a6b80c84ad2cf52ced37f",
+    "lineage_hash": "f6707fcb58a2fb42235bede794a7f5f553b03ec164be9ac07a66b38e4f68d581"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/blackberry-cocktail-daddy-dont-make-dinner/",
+    "fetchedAt": "2026-08-03T19:26:12.742Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/blackberry-cocktail-daddy-dont-make-dinner/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

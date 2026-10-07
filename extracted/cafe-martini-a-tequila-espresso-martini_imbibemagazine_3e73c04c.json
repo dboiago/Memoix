@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Cafe Martini: A Tequila Espresso Martini",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all the ingredients to a shaker with ice. Shake and strain into the glass. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "ed133d28f1747459b931ece290728fe530be02a7729a7933cc0b0f4585fba016",
+    "lineage_hash": "3e905a485e0033a5e9566291604c1739da83f0e02ca5144639330cefa3d606c5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cafe-martini-a-tequila-espresso-martini/",
+    "fetchedAt": "2026-08-03T22:43:41.764Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cafe-martini-a-tequila-espresso-martini/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,170 @@
+{
+  "recipe": {
+    "name": "Cauliflower Polonaise",
+    "time": "50 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the soup, peel and chop the onion and garlic, plus the fennel and celery.  Melt the butter in a heavy-based saucepan over a medium heat. Add in the vegetables and start cooking them with the lid on for 5 minutes or so while you prepare your cauliflower",
+      "Chop the cauliflower into small florets, cut up the stalks and add to the pan of vegetables. Sweat everything together for a further 15 minutes (uncovered) until the mixture just starts to soften. Add in enough water to just cover the vegetables and cook for another 20 minutes, or until all the vegetables are cooked through",
+      "Meanwhile, for the polonaise, bring a pan of water to the boil and cook the eggs for ten minutes.  Once cooked, rinse under cold water to halt the cooking process",
+      "Once the soup mixture has been simmering for 20 minutes, add in the cream and almonds then season well. Transfer the mixture to a blender and blitz the soup to a silky consistency. Set aside",
+      "Over a medium heat, melt 100g of the butter (or oil) in a frying pan and add in the almonds, tossing and stirring until they are golden brown and evenly toasted.  Allow them to cool and dry on a piece of kitchen roll",
+      "Repeat the process with the breadcrumbs and the other 100g of butter (or oil)",
+      "Peel and roughly chop the eggs and mix with the almonds, breadcrumbs, parsley, plenty of pepper and a pinch of salt",
+      "To serve, gently reheat the soup (if needed) then pour into warm bowls. Top with the polonaise and a good drizzle of olive oil"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stick of Celery",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "or 100ml olive oil",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cauliflower",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blanched Almonds",
+        "unit": "g",
+        "notes": "lightly toasted",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt Flakes",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "or olive oil",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blanched Almonds",
+        "unit": "g",
+        "notes": "roughly chopped",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Breadcrumbs",
+        "unit": "g",
+        "notes": "from roughly 3 slices of bread",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Flat-leaf Parsley",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": null,
+        "notes": "to serve",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6ca7a6e78caa4f4799e1934afa745be4dff3c0b4cb6733e41e1b3f29478f5552",
+    "lineage_hash": "b9630d8dec2e1663c3b21a3f62f38110b5a27405e1cd7a4c614dafc0e9a677e9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cauliflower-polonaise-recipe",
+    "fetchedAt": "2026-08-03T03:29:17.377Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cauliflower-polonaise-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

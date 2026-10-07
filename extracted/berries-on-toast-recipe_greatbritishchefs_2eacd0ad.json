@@ -1,0 +1,117 @@
+{
+  "recipe": {
+    "name": "Berries on Toast",
+    "time": "20 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Whisk the cream, eggs, egg yolks, sugar and cinnamon together in a bowl. Remove the crusts from the bread then dip the slices into the cream mixture",
+      "Heat the butter in a frying pan and when bubbling, fry the bread until golden on each side. Drain on kitchen paper and sprinkle over the icing sugar",
+      "Stir together the wimberries and jam and spoon over the toast. Serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bread",
+        "unit": "slices",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "for frying",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "Tbsp",
+        "notes": "for dusting",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wimberries",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blueberry Jam",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "05bbab3234491b77c7444ecc440ea49774c861e90ed771994e4b9537424dc580",
+    "lineage_hash": "b24d06a0f601e3abbdabf63fad3007255e6aa31db552f260a80062e3016bfd6c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/berries-on-toast-recipe",
+    "fetchedAt": "2026-08-03T14:56:36.170Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/berries-on-toast-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

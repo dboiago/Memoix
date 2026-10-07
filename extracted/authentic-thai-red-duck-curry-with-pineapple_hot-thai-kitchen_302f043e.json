@@ -1,0 +1,122 @@
+{
+  "recipe": {
+    "name": "Thai Red Duck Curry with Pineapple",
+    "time": "40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "TH",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Debone the duck and cut the meat and skin into bite-sized pieces. If you want to make it pretty, slice one breast nicely and set is aside along with 1 piece of drumstick.",
+      "Put the duck bones into a stockpot, cover with cold water, and bring to a simmer. Simmer for 30 minutes, or up to an hour if you have time. Once the stock is done, you can discard the bones.",
+      "While the stock is simmering, bring roughly 3/4 cup (185 ml) coconut milk to a boil in a medium pot set over medium-high heat, then add the curry paste and shrimp paste (if using) and stir to mix well. Turn the heat down to medium and stir frequently until the mixture is very thick and the coconut oil separates from the paste, about 5 minutes (the oil may not separate depending on the coconut milk you’re using; this is okay, move on once the paste is very thick).",
+      "Add the remaining coconut milk, the palm sugar and half of the fish sauce. If the duck stock isn&#39;t done, turn the heat off for now while you wait. When the duck stock is done, add 1 ½ cups (375 ml) of the stock to the curry broth and bring to a boil. The rest of the stock can be used in other soups (see above post for ideas).",
+      "When the curry boils, add the duck meat (except for the nicely sliced breast and the drumstick) and pineapple, then simmer gently for 3–4 minutes so they absorb the curry.",
+      "While the curry simmers, pierce the grape tomatoes with the tip of a paring knife (if the tomatoes don’t split naturally, this incision releases the built-up pressure so they won’t explode in your mouth when you eat them!).",
+      "Taste and adjust the seasoning with the remaining fish sauce. Remove from the heat, then stir in the pierced grape tomatoes and Thai basil, letting the residual heat gently cook the tomatoes so they do not turn mushy.",
+      "Ladle the curry into a wide bowl, then top it with the reserved sliced duck breast and a drumstick. Brush or spoon some of the curry sauce over the duck breast to make it look part of the curry, and serve with jasmine rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chinese Barbecued Duck",
+        "unit": null,
+        "notes": "see note, uncut",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Curry Paste",
+        "unit": "Tbsp",
+        "notes": "store-bought or homemade",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fermented Shrimp Paste",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Palm Sugar",
+        "unit": "Tbsp",
+        "notes": "finely, chopped, packed",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pineapple",
+        "unit": "C",
+        "notes": "fresh, small, bite-sixed pieces",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grape Tomatoes",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thai Basil Leaves",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jasmine Rice",
+        "unit": null,
+        "notes": "for serving",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b2920e2027d91945aac350fa65406a8c034583096b5ba05f86ca3e9918a49611",
+    "lineage_hash": "07c7d6e0b3878ce2d64c4d97a2743e619be12c619c729a83b0286605216e54da"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://hot-thai-kitchen.com/red-duck-curry/",
+    "fetchedAt": "2026-08-02T01:24:31.527Z"
+  },
+  "rawSource": "https://hot-thai-kitchen.com/red-duck-curry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

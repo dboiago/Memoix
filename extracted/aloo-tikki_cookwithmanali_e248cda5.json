@@ -1,0 +1,265 @@
+{
+  "recipe": {
+    "name": "Aloo Tikki",
+    "time": "40 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "7",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "127",
+      "carbohydrateContent": "4",
+      "fatContent": "9",
+      "proteinContent": "4"
+    },
+    "directions": [
+      "Boil the potatoes, peel and let them cool. You can boil them on stove-top or using your pressure cooker. If using an Instant Pot pressure cook the potatoes on high pressure (placed on trivet with 1 cup water in the pot) for 10 minutes with natural pressure release.If cooking on stove top pressure cooker, cook for 8-9 whistles on high heat. You can simply also cook them in a pot full of water. Boil until tender.",
+      "Once the potatoes are cooled, mash them using a potato masher.",
+      "Meanwhile, add flattened rice flakes(poha) to a bowl and then add little water to it. Leave for 5 minutes.",
+      "After 5 minutes are up, add chopped green chili, ginger, corn starch and the flattened rice flake which we had soaked in little water to the potatoes.&nbsp;Mix everything until well combined.",
+      "Divide the potato mixture into equal parts. I made big tikkis and got around 7 of them from this mixture. Set them aside while you make the stuffing.",
+      "For the stuffing, heat 2 teaspoons of oil in a pan on medium heat. Once the oil is hot, add the fennel seeds and cumin seeds.",
+      "Let them sizzle for few seconds and then add the chopped ginger. Saute for few seconds.",
+      "Then add the crumbled paneer and mix.",
+      "Then add&nbsp;all the dry spices - red chili powder, amchur powder, garam masala, chaat masala and black salt. Also add the salt at mix.",
+      "Cook for one minute and then add chopped cilantro, raisins, cashews. Give a final mix and set aside.",
+      "Now take one of the potato balls that you had prepared earlier. Flatten it with your palm and then press it slightly in the center to make space for the filling.",
+      "Take the paneer filling (around 1-2 tablespoon, remember to not over-fill) and place it inside the potato disc.",
+      "Seal the edges and flatten to again to form the aloo tikkis. The stuffing should be completely sealed inside. Repeat with the remaining potato balls.",
+      "Heat oil on medium heat in a kadai/wok. I didn't have a thermometer so I just set it to medium. If you have one, the temperature should be around 275 F degrees.&nbsp;Once the oil is hot, carefully drop the prepared aloo tikki in it.",
+      "Fry the tikki for 3 to 4 minutes until it forms a crust but doesn't get any color. Take the tikki out of the oil and let it cool down. Fry all tikkis in the same way.",
+      "Once the tikkis have cooled down, heat the oil again, this time on high (around 350 F degrees). Fry for 2 to 3 minutes or until the tikki becomes nice golden brown and crisp from the outside.",
+      "Carefully take out the crisp tikki out of the hot oil and drain on a paper towel. Fry all the tikkis for the second time in the same way",
+      "Enjoy aloo tikki with tomato ketchup or top with yogurt, chutney, spices and enjoy. You may also garnish them with cilantro and pomegranate seeds!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Potatoes",
+        "unit": "medium",
+        "notes": "around 500 gms",
+        "amount": "3",
+        "section": "tikki",
+        "isOptional": false
+      },
+      {
+        "name": "Flattened Rice",
+        "unit": "C",
+        "notes": "also known as poha, soaked in 2-3 tablespoons of water",
+        "amount": "¾",
+        "section": "tikki",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "finely, chopped",
+        "amount": "1",
+        "section": "tikki",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chili",
+        "unit": null,
+        "notes": "finely chopped, adjust to taste",
+        "amount": "1-2",
+        "section": "tikki",
+        "isOptional": false
+      },
+      {
+        "name": "Corn Starch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1.5",
+        "section": "tikki",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "finely, chopped",
+        "amount": "1.5",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Paneer",
+        "unit": "C",
+        "notes": "crumbled",
+        "amount": "1",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Red Chili Powder",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "¼",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Amchur Powder",
+        "unit": "tsp",
+        "notes": "also known as dry mango powder",
+        "amount": "¼",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Chaat Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Kala Namak",
+        "unit": "tsp",
+        "notes": "also known as black salt",
+        "amount": "¼",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": "to taste, around 1/2 teaspoon",
+        "amount": "0",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Golden Raisins",
+        "unit": "tsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Broken Cashews",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Yogurt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "To serve",
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro Chutney",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "To serve",
+        "isOptional": false
+      },
+      {
+        "name": "Tamarind Sweet Chutney",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "To serve",
+        "isOptional": false
+      },
+      {
+        "name": "Chaat Masala",
+        "unit": null,
+        "notes": "to sprinkle",
+        "amount": "0",
+        "section": "To serve",
+        "isOptional": false
+      },
+      {
+        "name": "Red Chili Powder",
+        "unit": null,
+        "notes": "to sprinkle",
+        "amount": "0",
+        "section": "To serve",
+        "isOptional": false
+      },
+      {
+        "name": "Pomegranate Seeds",
+        "unit": null,
+        "notes": "to garnish",
+        "amount": "0",
+        "section": "To serve",
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": null,
+        "notes": "chopped, to garnish",
+        "amount": "0",
+        "section": "To serve",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fb41fa2902cd1e07b86292334a8560e337f4d0ea54471d5dbeecbe4338301db9",
+    "lineage_hash": "e1cc42f1253290e792fbd59af6e6fcd41f2faf27f1a6a96231f22daf2ab7a2e4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/aloo-tikki/",
+    "fetchedAt": "2026-08-02T00:35:16.056Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/aloo-tikki/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

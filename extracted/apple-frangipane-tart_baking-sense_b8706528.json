@@ -1,0 +1,141 @@
+{
+  "recipe": {
+    "name": "Apple Frangipane Tart",
+    "time": "2 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "255",
+      "carbohydrateContent": "35",
+      "fatContent": "13",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "Roll 1 recipe&#32;Tart dough to fit a 12&quot; fluted tart pan. Prick the dough all over with a fork and refrigerate until firm.",
+      "While the tart shell chills, preheat the oven to 350 °F. Bake the tart shell until it&#39;s light brown around the edges and pale in the center, about 10-15 minutes. Set the crust aside to cool while you make the filling. Keep the oven on.",
+      "In a mixing bowl, cream 8 ounces&#32;granulated sugar and 4 ounces&#32;unsalted butter together until light and aerated. Scrape the bowl and the beater. Add ¼ teaspoon&#32;table salt and 2&#32;eggs and mix to combine. Add 4 ounces&#32;almond flour, 1 teaspoon&#32;almond extract, 1 teaspoon&#32;vanilla extract and 1 tablespoon of the rum.",
+      "Spread the frangipane evenly into the tart crust. Peel, core and slice 3&#32;apples to ¼&quot; thick. Arrange the apple slices in a pretty petal pattern, starting with the outside edge and working your way towards the middle. Bake until the apples are tender and the filling is set, about 45 minutes.",
+      "Turn on the broiler and run the tart under the broiler for a minute or two to brown the top of the tart. Warm 6 ounces&#32;apricot preserves in the microwave for 30 seconds, stir in the remaining 1 tablespoon of rum. Brush the warm preserves over the warm tart. Cool to room temperature.",
+      "Best served at room temperature."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Recipe Tart Dough",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "room temperature",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "room temperature",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almond Flour",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almond Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Rum",
+        "unit": "Tbsp",
+        "notes": "divided",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apples",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apricot Preserves",
+        "unit": "oz",
+        "notes": "1/2 cup",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4976565128669241c3694d386de75cef77c0503615936d9183d3181b7dc7b841",
+    "lineage_hash": "f96ebb40abbf87947ebf05a4fb13d1322dc1aabb4dc3c42a994cd594b7a978d1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2017/10/31/apple-frangipan-tart/",
+    "fetchedAt": "2026-08-01T18:58:12.447Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2017/10/31/apple-frangipan-tart/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

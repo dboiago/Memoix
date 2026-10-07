@@ -1,0 +1,151 @@
+{
+  "recipe": {
+    "name": "Burger Buns",
+    "time": "3 hr 30 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Before starting this Burger Bun recipe, make sure you have organised all the necessary ingredients.",
+      "Place the flour and salt in the mixer recipient.",
+      "Add the castor sugar...",
+      "... and combine all 3 ingredients with a spatula.",
+      "Combine the water and milk.",
+      "Add the crumbled yeast...",
+      "... and combine well with a spoon. If you can't find fresh yeast, replace with 10 to 12 grams of dry yeast.",
+      "Cover with a lid and set aside for 10 minutes at room temperature.",
+      "Place the bowl in the stand mixer fitted with the dough hook.",
+      "Add the water, milk and yeast mixture...",
+      "... followed immediately by the egg, beaten beforehand.",
+      "When the egg is completely incorporated, add the soft butter.",
+      "Knead for a good 5 minutes at high speed...",
+      "... until the dough comes away from the sides of the bowl.",
+      "Drizzle flour over the surface of the pastry, which is a little sticky...",
+      "Transfer into a mixing bowl.",
+      "Cover with cling film.",
+      "Leave to rise at room temperature for 2 hours..",
+      "Remove the cling film carefully, detaching the dough with your fingers as you go.",
+      "Scrape the dough from the sides of the bowl.",
+      "Gather the dough into a bowl and weigh. Divide the dough into 8 equal portions.",
+      "Shape the each portion into a round ball with your hand...",
+      "... and arrange them on a Silpat baking mat, allowing enough space between them.",
+      "Leave to prove for one hour at room temperature. Use a timer!",
+      "This is the result after one hour.",
+      "Glaze the surface of the buns with eggwash, using a brush. Make sure the buns don't collapse.",
+      "Sprinkle caramelized sesame seeds over the buns (or any other seeds).",
+      "Bake in a fan-assisted oven preheated at 200°C (gas 6)...",
+      "... between 10 and 12 minutes. Remove from the oven and leave to cool. These delicious burger buns are super soft and fluffy."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": "T55",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baker's Yeast",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "25-30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Castor Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "20cl Water",
+        "unit": null,
+        "notes": "warm",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "g",
+        "notes": "warm",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": "60g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "softened",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds (or Other Seeds)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b1cb5242de3daeef61eca4e7b4cc358bd6cb04bce9babf0c1e4b24130f4b59fe",
+    "lineage_hash": "13613361432225eadfc7f5d4584cdf7f9758a08bfb4b0075bb47bfa2e40981cd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.meilleurduchef.com/en/recipe/burger-bun.html",
+    "fetchedAt": "2026-08-02T12:53:12.686Z"
+  },
+  "rawSource": "https://www.meilleurduchef.com/en/recipe/burger-bun.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

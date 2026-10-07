@@ -1,0 +1,137 @@
+{
+  "recipe": {
+    "name": "Aulis Fig Leaf Parfait",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin the day before by pouring the cream into a saucepan and stir in the dried fig leaves. Gently bring to the boil, then take off the heat and leave to cool. Cover and place in the fridge to infuse overnight",
+      "The next day, place the yolks in a stand mixer with a whisk attachment and whisk until light and fluffy. Heat the water and sugar in a pan until the mixture reaches 121ºC, then slowly drizzle it into the egg yolks (with the motor still running) and continue whisking until completely cooled",
+      "Once cool, strain the infused cream through a fine sieve into the egg mixture, stir to combine, then pour into moulds and freeze. At Aulis Charlie uses bespoke moulds which bear the restaurant's name, but you can use any small silicone moulds you like",
+      "To prepare the gooseberry and elderflower juice, place the gooseberries in a sous vide bag with the sugar and cook in a water bath at 90ºC for 1 hour. Alternatively, cook the berries and sugar in a pan over a low heat at a bare simmer for the same amount of time, stirring regularly",
+      "After this time, strain the juice into a bowl, then add a dash of elderflower cordial to sweeten it slightly (taste it to ensure you're happy with the sweetness, adding more if it's still too tart)",
+      "To make the compote, peel, core and dice the apple and pears into small 5-8mm cubes. Mix together in a bowl and season with a pinch of salt and a dash of moscatel vinegar",
+      "To plate, place a neat pile of the compote in the bottom of a bowl and top with the parfait. Pour a little of the juice around the edge and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fig Leaves",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "4½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gooseberries",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Elderflower Cordial",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granny Smith Apple",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Williams Pears",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Moscatel Vinegar",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "79a42329bd8c0d32af4fc7cc60d7ff5c6694e6f2aa8eb972c095eef0ca552582",
+    "lineage_hash": "2b87bd39468ada032bfce8bbdbc4071e8658b63228faa239ed562bb102d3b1d4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/fig-leaf-parfait-recipe",
+    "fetchedAt": "2026-08-02T19:55:07.647Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/fig-leaf-parfait-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,133 @@
+{
+  "recipe": {
+    "name": "Chaat Dipping Oil",
+    "time": "10 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Warm the mustard oil in a small pan over medium heat. Add the cumin, coriander and fennel seeds, and toast until fragrant, about 2-3 minutes. Remove from heat and let cool slightly",
+      "In a bowl, combine the red onion, green chilli, peanuts, tamarind paste, coriander, chaat masala and lime juice",
+      "Once the oil is cooler, stir it into the peanut mixture. Season with salt and adjust the tanginess with more lime or tamarind, if needed&nbsp;"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mustard Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "small",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilli",
+        "unit": "small",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Peanuts",
+        "unit": "g",
+        "notes": "coarsely ground",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tamarind Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "Tbsp",
+        "notes": "fresh, chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chaat Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unwaxed Lime",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d8b851bcd6e4e8f2ef796a39b72441404f1f6e5506c1b13b4d270c55a6d057ec",
+    "lineage_hash": "c6947ca6017d04368b34b6d049b622d5e8b38313b816ad0f6e6cba877353aa8d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chaat-dipping-oil-recipe",
+    "fetchedAt": "2026-08-02T07:51:14.583Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chaat-dipping-oil-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

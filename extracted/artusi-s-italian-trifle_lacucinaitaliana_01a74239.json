@@ -1,0 +1,117 @@
+{
+  "recipe": {
+    "name": "Artusi’s Italian Trifle",
+    "time": "2 hr 50 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat the milk in a saucepan with the vanilla bean pod cut in half. In a bowl, mix the egg yolks, sugar, and cornstarch; pour the hot milk on top a bit at a time, mix well, then bring everything back over the heat, stirring continuously until you obtain a custard. Transfer it into a bowl, seal with plastic wrap, and let it cool.",
+      "Butter a fluted jello mold (ours is 8 inches in diameter with 12 grooves) and distribute the peach preserves on the bottom. Prepare 2 deep plates: pour the Alchermes in one and the Rosolio in the other. Count out the same number of ladyfingers as there are grooves in your jello mold (12 in our case), then soak them briefly, one by one, on both sides: 6 in the Alchermes and 6 in the Rosolio; arrange them standing up, alternating by liqueur type, inside the grooves.",
+      "Add a light layer of custard on top of the peach preserves, then dip 2 ladyfingers in the Rosolio and lay them on top, trimming them so they fit in the mold; continue alternating a layer of custard with a layer of ladyfingers, dipping them alternately in the liqueurs for each layer. Finish with a layer of ladyfingers. Place the trifle in the refrigerator for at least 2 hours before removing it from the mold: it needs to be very cold. Ideally, it should chill overnight."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Alchermes Liqueur",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosolio Liqueur",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peach Preserves",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "C",
+        "notes": "alt: flour",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crispy Ladyfingers",
+        "unit": null,
+        "notes": null,
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean Pod",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e9aab0cf2af99cff2e0aec1c7db1fb79ce9b85e2893ae860db193038be018a65",
+    "lineage_hash": "d64609115fa9ea28645a78ff72086fcc9a9156d0f3955d79dbf58f3972c043d9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/artusis-italian-trifle",
+    "fetchedAt": "2026-08-02T22:12:00.918Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/artusis-italian-trifle",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

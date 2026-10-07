@@ -1,0 +1,234 @@
+{
+  "recipe": {
+    "name": "Beef Short Rib Curry Udon",
+    "time": "2 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "The day before you plan to serve the dish, make the pickle. Mix the daikon and ginger with the salt, then close-cover the pickle with clingfilm and lie a weight on top to press the mixture down. Leave in the fridge overnight for 12 hours",
+      "At the same time, begin preparing the dashi. Submerge the kombu in the litre of water overnight to infuse",
+      "The next day, take the daikon and ginger mixture out of the fridge and squeeze out any excess water. Bring the soy sauce, sake, vinegar and sugar to the boil in a saucepan, then add the daikon and ginger. Bring to the boil again, then drain, reserving both the liquid and the daikon and ginger mixture. Reduce the liquid by half, then add back to the daikon and ginger mixture along with the dried chilli. Store in the fridge until needed",
+      "Add the bonito flakes to the kombu-infused water and bring to the boil, then remove from the heat. Wait for the bonito flakes to sink, then pass the dashi through a sieve and return the liquid to the pan. Add the soy sauce, mirin and salt and bring to the boil, then remove from the heat and set aside",
+      "To make the udon, start by mixing the water and salt until the salt has completely dissolved into the water",
+      "Pour the flour into a large bowl. Using your index and middle fingers to imitate a pair of chopsticks, mix the flour with your fingers whilst pouring in a quarter of the water in a thin, steady stream. Continue to add the water whilst mixing the flour – the flour should have a damp sandy feel, rather than being lumpy. If you have any large lumps, try to loosen them with your fingers, then continue to add the water. Once all the water has been added, bring the dough together and fold the edges into the centre to make a rough ball",
+      "Place the ball of dough in a large ziplock or sandwich bag. Place the bag on the floor and squash the dough out with your foot until it is big enough for both your feet. Keep stepping on the dough, changing angle from time to time, for 5 minutes",
+      "Take the dough out of the plastic bag and roll it lengthways into a cylinder. Put it back in the bag and rest for 30 minutes",
+      "Whilst the dough is resting, start braising the beef. Place the short rib pieces in a large pot with enough water to cover. Bring to the boil, then remove from the heat and drain. Discard the water. Cover again with fresh cold water (about 3 litres) and bring to the boil again, this time along with the leek tops and ginger. Reduce the heat to a simmer and leave cook until the water has reduced by half",
+      "While the beef braises, come back to your udon. Repeat steps 7 and 8 two more times",
+      "Press the udon dough out again with your feet into a flat oval shape, then take it out of the plastic bag and place it onto a clean work surface. The dough should be very supple now – fold the edges of the dough into the centre and continue to do this until you have a smooth ball with a small fold in the centre. Place the ball back in the bag",
+      "Press the dough out with your feet again until it is around 1cm thick. Lightly dust your work surface with flour and roll the dough out in each direction until it is 2-3mm thick",
+      "Scatter more flour on top of the dough, then fold the top third down and the bottom third up, to create three layers of dough. Cut the dough into 3mm-thick noodles, then pick up the noodles from the middle and shake to separate them",
+      "Bring a big pot of water to the boil (as big as you have), then boil the udon for 10-15 minutes. Make sure you have a jug of cold water next to the pot as the water can boil over very quickly! Once the noodles are cooked, drain in a colander and rinse in cold water to halt the cooking process",
+      "When the beef is cooked through and feels tender to the touch, pass the remaining stock through a sieve and combine with the dashi. Set the beef aside. Bring the dashi and stock mixture to the boil, then remove from the heat and whisk in the Japanese curry mix",
+      "To serve, place a beef short rib in each bowl, then pour the curry soup over the top, followed by a helping of noodles, some spring onions and a little fukujinzuke pickle on the side"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Daikon Radish",
+        "unit": "g",
+        "notes": "peeled and sliced into 2mm-thick discs, then quartered into triangles",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": "roughly chopped",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "g",
+        "notes": null,
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sake",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli",
+        "unit": null,
+        "notes": "dried, finely sliced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Short Ribs",
+        "unit": null,
+        "notes": "on the bone, each weighing around 400g",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Leek Tops",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": "sliced",
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Japanese Curry Mix",
+        "unit": "g",
+        "notes": "Shuko uses S&B Golden Curry Mix",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": "bunch",
+        "notes": "chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kombu",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bonito Flakes",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mirin",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strong Plain Flour",
+        "unit": "g",
+        "notes": "plus extra for dusting",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fa5d021174078c3b7961c16ca104fbf8ec3a7366644aa010bbc44d55a41789e2",
+    "lineage_hash": "2d017d1e69c714486833a0ee9c3ac3c62b6b1472d74a037f8eb0e0a7e6859443"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beef-short-rib-curry-udon-recipe",
+    "fetchedAt": "2026-08-03T04:33:55.248Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beef-short-rib-curry-udon-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,146 @@
+{
+  "recipe": {
+    "name": "Mango Sunshine Cake",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Beat the sugar and egg yolks together until very light in colour. Note: Every now and then you would have to use a spatula to lift the sugar form the sides and bottom as you beat. Of course you have to stop the mixer first.",
+      "Sift the flour and set aside.",
+      "Mix the almond essence and coconut essence with the lemon juice.",
+      "Mix egg whites, cream of tartar and salt together. Beat until very stiff.",
+      "Add the flour a little at a time while you beat the egg yolks.",
+      "Alternate the flour with the lemon juice until all is used up. Fold in the egg whites.",
+      "Pour the batter into a greased pan or tube pan. Bake in a moderate oven for 60 minutes or until a skewer inserted in the center comes out clean. Leave to cool.",
+      "Place all ingredients in a blender or food processor and puree until smooth."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Eggs Whites",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream of Tartar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almond Essence",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Essence",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mango Sauce",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "And Chopped Mango",
+        "unit": "large",
+        "notes": "peeled, pitted, We used Julie Mango",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9b2f1b7ae6cd9260d8e4df6f01dde9ef3d7ee683f7dddcae2f49d873a39606bd",
+    "lineage_hash": "d8b9ac372c93fad0bb8a6c40206a49c90450c60e4b2570240ea9ce96f4d2ca30"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.simplytrinicooking.com/mango-sunshine-cake/",
+    "fetchedAt": "2026-09-25T21:29:23.567Z"
+  },
+  "rawSource": "https://www.simplytrinicooking.com/mango-sunshine-cake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

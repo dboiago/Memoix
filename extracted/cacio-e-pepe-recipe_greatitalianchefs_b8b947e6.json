@@ -1,0 +1,64 @@
+{
+  "recipe": {
+    "name": "Cacio e Pepe",
+    "time": "20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cook the spaghetti in a pan of heavily salted boiling water for 8–10 minutes or as per packet instructions",
+      "Meanwhile, toast the peppercorns in a hot dry frying pan, then transfer to a mortar and pestle and gently crush",
+      "When the pasta is cooked al dente, take a cup of the pasta’s cooking water and set aside. Drain the pasta and leave to steam-dry for 30 seconds",
+      "In the frying pan over a medium-low heat add the pasta along with a few tablespoons of the pasta water. Toss to coat the spaghetti evenly then remove from the heat and stir in the grated Pecorino and black pepper&nbsp;",
+      "Stir the sauce until the cheese starts to melt and emulsify with the pasta water. Keep adding more water if needed, but make sure it’s nice and hot",
+      "Toss the pasta to coat in the sauce and serve immediately with a little more pepper and grated Pecorino – if it starts to cool, the cheese will solidify"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Peppercorns",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pecorino Romano",
+        "unit": "g",
+        "notes": "at room temperature, finely grated",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spaghetti",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "54ebc76cd09c26475699bec0466413e38730dfe4a36d19c26040c469cf814835",
+    "lineage_hash": "992ecb821bb15e3c40452365766d7f27df68a9ae434fe274ac41657ad45c2e4f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/cacio-e-pepe-recipe",
+    "fetchedAt": "2026-08-01T20:57:09.626Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/cacio-e-pepe-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

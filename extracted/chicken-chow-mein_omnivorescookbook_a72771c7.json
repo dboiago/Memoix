@@ -1,0 +1,198 @@
+{
+  "recipe": {
+    "name": "Chicken Chow Mein",
+    "time": "25 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "254",
+      "carbohydrateContent": "29.1",
+      "fatContent": "10.2",
+      "proteinContent": "13.3"
+    },
+    "directions": [
+      "Add the chicken along with the marinating ingredients into a medium-sized bowl. Mix well with your hands so the chicken is evenly coated.",
+      "Combine all the sauce ingredients in a small bowl and stir to mix well.",
+      "Boil the noodles according to the package instructions until al dente. Rinse with tap water, drain, and set aside. Cook the noodles 1 minute less than the package recommends. If you use fresh chow mein noodles, you will only need to briefly dip the noodles in boiling water, 1 minute or so. Once done, drain the noodles thoroughly and set aside.",
+      "Heat 1 tablespoon of oil in a large nonstick skillet over medium-high heat until hot. Spread the chicken in the pan with minimal overlap. Cook until the bottom turns slightly golden, 30 to 45 seconds. Flip to cook the other side until the chicken just turns white, 30 to 45 seconds. Transfer the chicken to a plate.",
+      "Pour in the remaining 1 tablespoons of oil and the ginger, and garlic. Stir a few times to release the fragrance.",
+      "Add the carrot and cabbage. Cook and stir until the veggies just start to turn soft, 1 minute or so. Add the noodles. Toss a few times with a pair of tongs. Add the cooked chicken. Pour the sauce over the ingredients. Toss with a pair of tongs to mix everything together.",
+      "Add the pepper and the green onion. Toss well until the sauce is absorbed. Transfer everything to serving plates and serve hot as a main dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Breast",
+        "unit": "oz",
+        "notes": "alt: thighs, boneless, thinly sliced",
+        "amount": "6",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": "or dry sherry",
+        "amount": "1",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Broth",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": "or dry sherry",
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "*Footnote 1",
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": "or ground black pepper",
+        "amount": "¼",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "or vegetable oil",
+        "amount": "2",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Cabbage",
+        "unit": "C",
+        "notes": "*Footnote 2, shredded",
+        "amount": "4",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Chow Mein Noodles",
+        "unit": "oz",
+        "notes": "fresh, or 6 oz (170 g) dried chow mein noodles",
+        "amount": "10",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "small",
+        "notes": "*Footnote 2, julienned (yields 1 cup)",
+        "amount": "2",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Anaheim Pepper",
+        "unit": null,
+        "notes": "alt: other hot pepper of your choice, Optional, sliced",
+        "amount": "1",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "cut into 2” (5 cm) pieces, white part halved lengthwise",
+        "amount": "4",
+        "section": "Stir fry",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3985a666f066cbc485ed25fc8b0b71f335e28d9728e1d42ada78927f3ab543a8",
+    "lineage_hash": "491c7abea4568d18f4ab08c1e3cfcbed58a5c778b56816b87b4ad1397ad78103"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/chicken-chow-mein/",
+    "fetchedAt": "2026-08-02T10:47:39.730Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/chicken-chow-mein/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

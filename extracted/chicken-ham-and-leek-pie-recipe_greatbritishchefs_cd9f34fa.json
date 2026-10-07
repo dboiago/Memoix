@@ -1,0 +1,387 @@
+{
+  "recipe": {
+    "name": "Chicken, Ham and Leek Pie",
+    "time": "3 hr 45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin the night before by making an infusion which will be used in the sauce. Place the port, wine, shallots, garlic, peppercorns and bay leaves into a bowl and place in the fridge, covered overnight",
+      "To brine the chicken, bring 1l of water to the boil and add the salt, whisking until all the salt has dissolved. Remove the pan from the heat and add the garlic, rosemary, sage, black peppercorns and coriander seeds. Allow to stand until the brine has cooled completely. Strain the brine, discarding the aromatics and pour into a large bowl. Add the chicken thighs, cover and place in the fridge for 5 hours",
+      "To prepare the ham hock, place the joint in a large pan and cover with water. Bring to the boil, then drain and refill the pan with enough fresh water to cover the ham. Add the garlic, onion, carrot, leek, celery, bay leaf, thyme and peppercorns to the pan and bring to a simmer over a low-medium heat for 3 hours, covered",
+      "Remove the pan from the heat and allow the ham hock to cool in the stock. Strain and reserve the stock through a double layer of muslin, discarding the vegetables, herbs and spices. Reserve 250g of the stock for use in this recipe and keep the remainder aside for another use. Shred the ham hock, place in a container, cover and set aside in the fridge until needed",
+      "Once brined, remove the chicken thighs, discarding the brine, and rinse under cold running water for 5 minutes. Pat dry with kitchen paper. In the meantime, preheat the oven to 85°C",
+      "Place the chicken pieces in an ovenproof pan and pour over the chicken stock. Bring to a simmer over medium heat on the stove top, cover and place in the oven for 90 minutes. Remove from the oven and allow the chicken to cool in the stock before removing and dicing",
+      "To cook the leeks, heat the grapeseed oil in a pan and add the chicken skins reserved from trimming the chicken thighs earlier. Cook over moderate heat until the fat renders, which should take about 10 minutes. Remove and discard the skins and add the leeks, cooking until completely softened. Remove from the heat and allow the leeks to cool in the pan",
+      "Next, make the pie sauce. Remove the infusion from the fridge and place in a pan over moderate heat. Reduce the mixture by half. Add the reduced chicken stock and reduce by half, then add the double cream and reduce again by half. Pass the mixture though a fine sieve, discarding the aromatics. Add the chervil and allow to stand for 20 minutes",
+      "Pass the mixture through a fine mesh sieve. Set aside 500g of this sauce and stir through the wholegrain mustard",
+      "Make a beurre noisette by melting the butter in a pan over low heat. Once completely melted, increase the heat to medium and cook the butter until browned and nutty. Remove from the heat and once cooled to room temperature, pass through a double layer of muslin. Add the garlic and herbs and leave to infuse for 1 hour, then pass through another double layer of muslin. Set aside in the fridge until needed",
+      "To finish the filling, melt 70g of the beurre noisette in a pan and whisk in the flour, cooking for 10–15 minutes, stirring continuously. Pour in the reserved 250g of ham hock stock and continue to whisk until the sauce has thickened. Add the double cream and continue to whisk, removing the pan from the heat after 9–10 minutes. Set aside",
+      "Finely chop the tarragon, chervil and parsley and combine with the shredded ham, diced chicken, leeks and 90g of the pie sauce. Mix until well combined. Taste and season with white pepper",
+      "Roll out the puff pastry 4mm thick and cut out 6 circles 85mm in diameter, and a second batch of 6, 120mm in diameter",
+      "Place the smaller pastry discs on a greased and floured baking tray and spoon approx. 150g of filling into the centre. Brush the edges of the pastry with egg wash and cover the filling with the larger discs, pressing the edges with a fork to seal the pies closed",
+      "Rest for 30 minutes in the fridge while you preheat the oven to 210°C/gas mark 7",
+      "Brush the tops with egg wash and bake in the oven for 14–15 minutes until golden brown",
+      "Serve the pies with the remaining pie sauce"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "White Port",
+        "unit": "ml",
+        "notes": null,
+        "amount": "375",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "375",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": "peeled and finely diced",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "peeled",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "L",
+        "notes": "fresh, reduced to 750ml",
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Chervil",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wholegrain Mustard",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Thighs",
+        "unit": null,
+        "notes": "boned, skins removed and reserved for the leeks",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sage Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": "fresh",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ham Hock",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": "peeled and sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leek",
+        "unit": null,
+        "notes": "(white part only) sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Stick",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grapeseed Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Skin",
+        "unit": null,
+        "notes": "(reserved from the thighs)",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leek",
+        "unit": "g",
+        "notes": "(white part only) sliced",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "softened",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "peeled and crushed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tarragon Leaves",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chervil Leaves",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flat-leaf Parsley",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sheets of All Butter Puff Pastry",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "lightly beaten",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0ff9176b6301fe6b7bade85ea808304b04d35debc1ed01986ddae49aa3f911d7",
+    "lineage_hash": "0439ed9cde75174fcd67e431c1f925da3ca1be4b9c5dce0ba42bf3ad395b260f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/hinds-head-chicken-pie-recipe",
+    "fetchedAt": "2026-08-03T09:46:56.948Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/hinds-head-chicken-pie-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

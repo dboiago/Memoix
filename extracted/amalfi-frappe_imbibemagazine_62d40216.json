@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Amalfi Frappe",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [
+      "Lemon Twist"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the ingredients in a glass, then add shaved ice and stir briefly to incorporate. Top with more shaved ice and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "483b65b641d9b55b51b4204d05066eafb57a00ae6e5bb2986fc03c7102e6e6de",
+    "lineage_hash": "b8acc3510e63d882cf4cf62c947404a7e2a32a690eab90a0ddb287eb10ce9a38"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/amalfi-frappe/",
+    "fetchedAt": "2026-08-03T22:52:31.386Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/amalfi-frappe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

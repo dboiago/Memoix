@@ -1,0 +1,81 @@
+{
+  "recipe": {
+    "name": "Roasted Green Pepper Dip (Nam Prik Noom)",
+    "time": "30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "TH",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the broiler in your oven to high and place the rack on the very top shelf. If you want to make a mild dip, cut your chilies in half lengthwise and remove all of the seeds and the white pith before broiling.",
+      "Line a baking sheet with foil and place the chilies on it; if you have cut your chilies, put the cut side down. Broil the chilies until charred on the top side, about 5-6 mins. Then, if using whole chilies, flip them and broil until charred on the other side, 4-5 mins. Once your chilies have some charred spots on the skin and the flesh is fully soft, they are done. Timing will depends on your specific broiler so keep an eye on them and check them early and often!",
+      "Remove the chilies and place them into a bowl to cool. Place the garlic cloves and shallots on the same baking sheet but keep them separated. Broil for about 5 minutes or until the garlic is charred. Remove from the broiler, flip the garlic cloves over and broil the other side for another 3 minutes or until charred. Again, timing will vary depending on your specific broiler, so keep an eye on them!",
+      "Remove the garlic from the pan and check if the shallots are soft and translucent as you want them to be cooked through. If not, put them back under the broiler for a few more minutes.",
+      "Peel the garlic and add the cloves to a mortar & pestle. Add the shallots to the mortar too.",
+      "With gloved hands, peel the chilies and remove the seeds and pith to reduce the heat, if needed. Place the chili pulp into the mortar and pestle.",
+      "Pound the chilies, garlic and shallots until there are no more big chunks and you have a nice dip consistency. Add the fish sauce, 2 teaspoons at first, then taste and add more as needed. Serve with your accompaniments of choice. Enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Large Green Chilies",
+        "unit": "oz",
+        "notes": "see note",
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": "oz",
+        "notes": "unpeeled",
+        "amount": "1.8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": "oz",
+        "notes": "cut into ½-inch chunks",
+        "amount": "4.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "tsp",
+        "notes": "or sub soy sauce or salt",
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "For Serving: Rice Crackers",
+        "unit": null,
+        "notes": "sticky rice, crispy pork rind, dipping veggies",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "92f2fc2a771ca0a4a50f0dc64a310816ab1866f58661d36d9c89a4a5509d5a78",
+    "lineage_hash": "ef44385ba711a9678e165f925269ffed3d80a1d71f9de5e807e7bd6686ad6fbd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://hot-thai-kitchen.com/bonus-nam-prik-noom/",
+    "fetchedAt": "2026-08-02T04:05:20.442Z"
+  },
+  "rawSource": "https://hot-thai-kitchen.com/bonus-nam-prik-noom/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

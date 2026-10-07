@@ -1,0 +1,91 @@
+{
+  "recipe": {
+    "name": "Chinese 4-Ingredient Fried Cabbage",
+    "time": "10 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "53",
+      "carbohydrateContent": "5.3",
+      "fatContent": "3.5",
+      "proteinContent": "1.2"
+    },
+    "directions": [
+      "Heat a wok or large skillet over medium high heat until hot. Add oil and peppercorns. Stir until the peppercorns become fragrant and turn dark brown. Turn the heat right down and scoop the peppercorns out with a spatula and put aside for later. (*footnote 1).",
+      "Turn the heat back to medium high and add the chili peppers and cabbage. Immediately stir with spatula for 30 seconds. You should hear a vibrant sizzle. Add the salt. Keep stirring until the the edges are lightly charred and the leaves turn soft, 2 to 3 minutes.",
+      "Turn to medium low heat, drizzle soy sauce over the cabbage and stir a few times to mix everything well.",
+      "Serve warm."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "or vegetable oil",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sichuan Peppercorns",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili Peppers",
+        "unit": null,
+        "notes": "dried",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Head Cabbage",
+        "unit": "small",
+        "notes": "chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "tsp",
+        "notes": "or tamari for gluten free",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "384994047aa1da6d993d7005b578576012139b61d2661c5a7fff0a8d8f04656d",
+    "lineage_hash": "8a8e445d4d1634e305fd3f8d320fa7a39ff4c0a893804e9357c388d9d94916d9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/fried-cabbage/",
+    "fetchedAt": "2026-08-01T16:03:04.358Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/fried-cabbage/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

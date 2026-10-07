@@ -1,0 +1,35 @@
+{
+  "recipe": {
+    "name": "Carrot Cocktail",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the vodka, carrot juice, lime juice and ginger liqueur in a mixing glass with ice. Stir until chilled. Rinse a rocks glass with absinthe, then discard remaining spirit. Place one large ice cube in the glass, then strain contents of mixing glass into the glass. Garnish.",
+      "Turmeric-Cinnamon VodkaCombine 10 oz. of vodka with 1 cinnamon stick and 1 Tbsp. of ground turmeric in a jar or bottle. Let sit for 3 days in a cool environment. Strain the ingredients out of the jar before using."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "274d50740824b72951db932fc151a558fc4270caef2faf17657f9959e6958686",
+    "lineage_hash": "6e4ec71a94859e8954a0df270040631f386c1c5f66102905f72fe014a27bead5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/carrot-cocktail-we-own-that-door/",
+    "fetchedAt": "2026-08-03T20:19:03.800Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/carrot-cocktail-we-own-that-door/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

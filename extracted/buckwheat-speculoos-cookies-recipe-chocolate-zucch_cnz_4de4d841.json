@@ -1,0 +1,104 @@
+{
+  "recipe": {
+    "name": "Buckwheat Speculoos Cookies",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In the bowl of a mixer or working by hand, cream together the sugar and butter. Add the egg, and mix again.",
+      "Add in the flours, spices, and salt (if you're using an open mixer such as a KitchenAid, fold them in with a spatula first so they don't go flying everywhere), and mix just until the dough comes together, without overmixing. If you find the dough is too dry to come together, add a little milk or water, tablespoon by tablespoon, until it does.",
+      "Turn the dough out on the counter and divide it in two. Roll each half of the dough into a log, then pat it on opposing sides so the section becomes rectangular. Each log should be about 20 cm (4 inches) in length, 5 cm (2 inches) in width, and 2.5 cm (1 inch) in height.",
+      "Wrap separately in plastic and refrigerate for at least 2 hours, or overnight.",
+      "Preheat the oven to 180°C (360°F) and line a baking sheet with parchment paper or a silicone baking mat.",
+      "Slice the prepared logs into 3-mm (1/10-inch) slices, and transfer to the prepared baking sheet; they won't expand much in the baking.",
+      "Bake for 10 to 12 minutes, until the speculoos start to brown around the edges.",
+      "Transfer to a rack to cool completely.",
+      "Sprinkle a little flour into each mold, and shake lightly to encourage the flour to enter every crevice of the pattern. Flip the mold over a bowl (so you can reuse the flour) and tap the back of the mold to remove excess flour.",
+      "Take a piece of the dough and press it into the mold, keeping the shape of the pattern in mind to make sure you pack the dough well into every part. Don't worry about it being pretty at this point; it won't be.",
+      "Run a thin knife blade flat along the surface of the mold -- sharp edge toward the dough and away from you -- to slice off the excess dough. If your molds are not very deep, you may need to keep your hand gently pressed over the dough to prevent it from following along as the blade works its way through. If your molds have pointy details (such as the beak and wing tips of my stork), it works best if the knife pushes \"into them\" (i.e. from top of stork head toward tip of beak), rather than against them.",
+      "Invert the mold onto the prepared baking sheet, and tap it firmly against the sheet to dislodge the dough; if you've floured the molds properly, the dough will pop right out. If not, tap again, or nudge it out with the tip of the knife. If it still doesn't unmold, remove the dough and start over.",
+      "Once you've filled the baking sheet, insert it into the oven and bake for 10 to 12 minutes, until the speculoos start to brown around the edges.",
+      "Transfer to a rack to cool completely."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Grams Unrefined Sugar",
+        "unit": null,
+        "notes": "with flavor, ideally beet sugar (French vergeoise or Belgian cassonade); I used 50 grams (1/4 cup) muscovado sugar and 200 grams (1 cup) of my standard blond unrefined sugar",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Unsalted Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams All-purpose Flour",
+        "unit": null,
+        "notes": "8 3/4 ounces, about 2 scant cups; see note",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Buckwheat Flour",
+        "unit": null,
+        "notes": "8 3/4 ounces, about 2 scant cups; see note",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Speculoos Spice Mix",
+        "unit": "tsp",
+        "notes": "mine contains cinnamon , aniseed, star anise, ginger, mace, coriander, and allspice -- or pumpkin pie spice mix",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e66ff3da36d8dc381ccbd6340e0b253c5548d435660c1a72360b50b7909d3610",
+    "lineage_hash": "ea158d2ec9a3e27078c6e1bc3b88f112bf4af55a2cb7c004d9bba71cfa496eb4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/cookies-small-cakes/buckwheat-speculoos-cookies-recipe/",
+    "fetchedAt": "2026-09-30T18:56:19.975Z"
+  },
+  "rawSource": "https://cnz.to/recipes/cookies-small-cakes/buckwheat-speculoos-cookies-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

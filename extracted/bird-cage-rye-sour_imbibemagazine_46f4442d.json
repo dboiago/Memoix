@@ -1,0 +1,35 @@
+{
+  "recipe": {
+    "name": "Bird Cage Rye Sour",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupette",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to a shaker. Add ice and shake. Double strain.",
+      "5 Spice SyrupCombine all of the ingredients in a medium saucepan, stirring occasionally until all the sugar is dissolved. Simmer for a short time. After the liquid is cool enough, transfer to a jar, place in the refrigerator, and let the spices infuse in the syrup for 24 hours. Afterward, fine strain out the spices, then refrigerate until ready to use. Will keep refrigerated for up to a month."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "afa75d4e620d45c1e9b84656ea80d9c7213977a03fb416f87980a2d68daaadf1",
+    "lineage_hash": "1be6a1279f6339031db0745ed9009ae2ac6b66b3ecfa74f4f6ba6c8e2db66b8e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bird-cage-rye-sour/",
+    "fetchedAt": "2026-08-03T20:32:14.634Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bird-cage-rye-sour/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

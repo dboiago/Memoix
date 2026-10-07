@@ -1,0 +1,176 @@
+{
+  "recipe": {
+    "name": "Beetroot and Beet Tops Pearl Barley Pilaf",
+    "time": "1 hr 15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Dry-fry the spices in a skillet or sauté pan until fragrant. Add half the butter and the onion, garlic and chillies for 5–10 minutes, or until soft, but not coloured",
+      "In the meantime, put the pearl barley in a sieve and give it a good rinse under running water. Add the barley to the pan, along with the stock and grated beetroot",
+      "Season generously, give it all a good stir, then bring it up to the boil",
+      "Once boiling, put the lid on, reduce the heat and leave to simmer gently for about 50–55 minutes. The pearl barley should be soft, but still retain a little bite. You may need to give it another stir halfway through cooking. Try to hold your nerve and not add any extra liquid, you don’t want to end up with soup",
+      "Stir through the beetroot stalks and leaves and add the remaining butter. Put the lid back on and leave to stand, off the heat, for another 5–10 minutes",
+      "Taste for seasoning, then lightly fork through the herbs. Scatter over the almonds (if using) before serving"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom Pods",
+        "unit": null,
+        "notes": "bashed",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Coriander",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cumin",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "large",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bird's Eye Chilli",
+        "unit": null,
+        "notes": "use two if you prefer a spicier finish, seeds left in, finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pearl Barley",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": "or vegetable stock",
+        "amount": "700",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raw Beetroots",
+        "unit": null,
+        "notes": "no need to peel, well-scrubbed and coarsely grated",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beetroot Leaves",
+        "unit": null,
+        "notes": "stalks finely chopped and leaves roughly chopped",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "bunch",
+        "notes": "mint or dill (use a small bunch), roughly chopped. If using coriander, the stalks can also be finely chopped and used",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Flaked Almonds",
+        "unit": null,
+        "notes": "toasted",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c50aa022a0f9c9ef365fd1640b1d2e3e2926cefff34d670267b631ff5782b468",
+    "lineage_hash": "15a55d11473aa625f3eee4c13e230097f43054253e1f80b4bbccb3747b13034b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beetroot-pearl-barley-pilaf-recipe",
+    "fetchedAt": "2026-08-03T08:10:30.645Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beetroot-pearl-barley-pilaf-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

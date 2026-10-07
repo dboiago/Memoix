@@ -1,0 +1,184 @@
+{
+  "recipe": {
+    "name": "Butternut Squash Velouté",
+    "time": "1 hr 15 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the velouté, place a heavy-based pan over a medium heat and add the butter. Once foaming, add the onion and sweat until soft but not coloured. Add the garlic and cook out for an additional 3–4 minutes",
+      "Peel and roughly dice the squash. Add to the pan and stir to coat in the onion, garlic and butter for 5 minutes. Add the stock, cook until the squash is soft and tender then add the cream. Bring to a simmer then remove from the heat",
+      "Strain the contents of a pan through a colander (reserving the liquid) and place the solids in a blender. Blitz until very smooth, adding some of the reserved stock until you're happy with the texture. Season to taste, pass through a fine strainer and set aside to cool",
+      "For the pumpkin seed paste, combine all of the ingredients together in a blender and blitz until smooth. Season to taste and set aside",
+      "For the pickled butternut squash, bring the vinegar, water and sugar to the boil in a pan, then reduce the heat but keep hot. Use a peeler to take thin strips off the butternut squash and place into the hot pickling liquor. Remove from the heat and leave to cool",
+      "Reheat the velouté and use a stick blender to froth slightly. Pour into warm serving bowls, wrap a strip of pickled squash around your finger to form a ring and place into the soup. Finish with a swipe of the pumpkin seed paste, a drizzle of the oil, the toasted seeds and the micro herbs. Serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butternut Squash",
+        "unit": "kg",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Stock",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pumpkin Seeds",
+        "unit": "g",
+        "notes": "toasted",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pumpkin Seed Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butternut Squash",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ice Wine Vinegar",
+        "unit": "ml",
+        "notes": "Simon uses Minus 8 vinegar",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pumpkin Seeds",
+        "unit": "Tbsp",
+        "notes": "toasted",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Micro Herbs",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pumpkin Seed Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ab5f9d9a58ba50b5453122d732e390bdb5c70b47372532ae0095de0b666a6742",
+    "lineage_hash": "dbb3120d6e7d8d941c46ab07c7451b7e5edeae790d98e939628adb4a49ffb425"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/butternut-squash-veloute-recipe",
+    "fetchedAt": "2026-08-03T19:04:19.837Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/butternut-squash-veloute-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

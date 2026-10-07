@@ -1,0 +1,96 @@
+{
+  "recipe": {
+    "name": "Cereal Bars",
+    "time": "40 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 180°C/gas mark 4. Line a 24cm square baking tin with greaseproof paper and set aside",
+      "Place a pan over a medium heat. Add the rapeseed oil and the honey, stir until the honey is hot",
+      "Remove from the heat and add the oats, dried fruit, nuts and seeds, stirring well to ensure the ingredients are mixed",
+      "Once mixed, make sure it's sticky enough to hold together by pressing in your hands, if not add a little more honey. Scoop the mixture into the lined baking tin, pressing down firmly",
+      "Bake in the oven for 20-25 minutes, or until the edges turn a golden brown colour",
+      "While still warm, score into 12 individual bars. Leave the cereal bars in the tin to cool completely, then serve or store in an airtight container for up to 3 days"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Porridge Oats",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Clear Runny Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apricots",
+        "unit": "g",
+        "notes": "dried, roughly chopped",
+        "amount": "110",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pumpkin Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pecan Nuts",
+        "unit": "g",
+        "notes": "roughly chopped",
+        "amount": "110",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaked Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8775383eff74aff3fefe863ab3339898e22e27bb985ac92312c33f270e98918e",
+    "lineage_hash": "25ac7e79002771eac1fc74f5b12b19c8de088612076f3435fe1a0cacadbe9a7c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cereal-bars-recipe",
+    "fetchedAt": "2026-08-03T18:59:49.728Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cereal-bars-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

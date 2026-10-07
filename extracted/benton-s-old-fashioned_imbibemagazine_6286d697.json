@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Benton's Old Fashioned",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to a mixing glass with ice and stir to chill. Strain into a chilled rocks glass. Garnish.\nBenton&#8217;s Bacon Fat-Washed BourbonWarm 1 1/2 oz. of bacon fat in a small saucepan over low heat, stirring continually until the fat melts. Pour the molten fat and 750ml of bourbon into a large nonreactive container and stir. Cover and let stand at room temperature for 4 hours, then freeze the mixture for 2 hours. Remove solid fat with a spoon, then strain the bourbon through a cheesecloth and bottle. Can be stored at room temperature and lasts forever."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "71d359921cfafbe1563286e65e3fb5540021ae96217ee8804b8b018ea67a6c6b",
+    "lineage_hash": "22f1b0780eeaf63fd76360f3e180b602ddfa138169de137003e8eb5ee3c9b3bb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bentons-old-fashioned/",
+    "fetchedAt": "2026-08-04T01:57:24.751Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bentons-old-fashioned/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

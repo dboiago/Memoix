@@ -1,0 +1,82 @@
+{
+  "recipe": {
+    "name": "Cantonese Broccoli with Oyster Sauce",
+    "time": "15 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "40",
+      "carbohydrateContent": "8.1",
+      "fatContent": "0.3",
+      "proteinContent": "3.1"
+    },
+    "directions": [
+      "Bring a large pot of water to a boil. Add a pinch of salt and a spoonful of vegetable oil to the water, so the broccoli will retain its nice color through cooking. Add broccoli. Cook until soft. Strain and place on a plate. (*see footnote 1)",
+      "While boiling the water, combine 1/4 cup water, the oyster sauce, the soy sauce and the sugar into a small skillet. Cook over medium heat until almost boiling. Turn to low heat. Cook until the sauce reaches desired thickness.",
+      "Drizzle the sauce onto the broccoli right before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vegetable Oil and a Pinch of Salt",
+        "unit": "Tbsp",
+        "notes": "Optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Broccoli",
+        "unit": null,
+        "notes": "cut into bite sized pieces",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": "or vegetarian oyster sauce",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1370f30f79a84b1b17e1ed208f1cea8de77448e367193dcef6016efc72720215",
+    "lineage_hash": "8c3c0fb32399846d3f92839524e280de8026609ff46c5bcbaa64a6680ae6c027"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/broccoli-with-oyster-sauce/",
+    "fetchedAt": "2026-08-02T00:59:05.975Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/broccoli-with-oyster-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,120 @@
+{
+  "recipe": {
+    "name": "Baked Red Mullet",
+    "time": "35 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, make the anchovy bread sauce. Blitz the bread into breadcrumbs and add to a bowl with the anchovy extract and lemon peel. Keep in a cool, dry place",
+      "For the anchovy cream, mix the cream with the anchovy extract and milk. Blitz with a hand blender to emulsify",
+      "Cut four 30x15cm piece of greaseproof paper sheets and add the ingredients for the red mullet in this order: first a lemon leaf,\r\nfollowed by some extra virgin olive oil, then a fillet of red mullet, skin-side down",
+      "Sprinkle over some salt and a little more oil, then add the other fillet skin-side up and add another splash of oil. Repeat for the other red mullet and seal the paper into pouches",
+      "Place the pouches under a hot grill, cooking for 1 minute on each side",
+      "Serve the papillote with a glass of the anchovy bread sauce and a glass of the anchovy cream"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Red Mullet",
+        "unit": null,
+        "notes": "each weighing approximately 250g, filleted and pin-boned",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil to Season",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stale Bread",
+        "unit": "g",
+        "notes": "toasted",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Anchovy Extract",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zest only",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Anchovy Extract",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "92720b1bfd2f6275968a12f826e4bbd50d55f8f4b70282f2a6825912116e3add",
+    "lineage_hash": "16fd8d514f6b46f527ecf421db5482e98f9f2fd6aec865631d08db529911a80c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/baked-red-mullet-recipe",
+    "fetchedAt": "2026-08-02T08:10:00.984Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/baked-red-mullet-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

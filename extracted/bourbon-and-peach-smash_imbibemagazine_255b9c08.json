@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Bourbon and Peach Smash",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Old Fashioned",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add ingredients in an Old Fashioned glass and muddle. Add the bourbon and Punt e Mes. Pack with large chunks of ice, top with ginger ale and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "1d7e16a04f87cb2216c07e636a3b3053b9147f34cf6a809e162bcb2a3fb49bc4",
+    "lineage_hash": "421bb18d4ea1bf0c7c7cad7a26dbb93968dd733177bce648267a200ee714a98a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/recipe-bourbon-peach-smash/",
+    "fetchedAt": "2026-08-03T23:13:30.491Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/recipe-bourbon-peach-smash/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

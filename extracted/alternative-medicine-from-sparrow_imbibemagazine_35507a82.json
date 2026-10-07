@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Alternative Medicine from Sparrow",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Old Fashioned",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all the ingredients in a shaker with ice and shake to chill. Strain into a double Old Fashioned glass over one large ice cube and garnish.",
+      "Black Pepper-Turmeric Apple Brandy: Peel 40 grams of turmeric root, then thinly slice. Lightly crack 5 grams of black peppercorn. Combine the turmeric, black peppercorn, and 1 bottle of bonded apple brandy (Sparrow uses Laird&#8217;s) in a non-reactive container. Cover and refrigerate overnight. Strain through cheesecloth.",
+      "Ginger Syrup: Combine 1 part ginger juice to 1½ parts sugar in a blender until the sugar dissolves. Store in the refrigerator for up to 2 weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "5f0799e5f81ba9f88951b087750d835423fadba5737287a0bbaf5f8ef287ff4e",
+    "lineage_hash": "2694691e18e56668da0f5628ef9e9068f4cbd6e876f975cb947b4d66fd910312"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/alternative-medicine-sparrow/",
+    "fetchedAt": "2026-08-03T19:50:47.470Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/alternative-medicine-sparrow/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

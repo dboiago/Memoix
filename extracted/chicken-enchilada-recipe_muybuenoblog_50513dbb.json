@@ -1,0 +1,150 @@
+{
+  "recipe": {
+    "name": "Chicken Enchilada",
+    "time": "40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "1003",
+      "carbohydrateContent": "47",
+      "fatContent": "78",
+      "proteinContent": "31"
+    },
+    "directions": [
+      "Remove stems, seeds, and veins from chile pods. Rinse well.",
+      "In a large pot, cover chiles with water and bring to a boil. Reduce heat, cover, and simmer for 20 minutes. Drain and let cool.",
+      "Blend half the chiles with 3 cups water, 3 tbsp flour, 2 garlic cloves, and ½ tbsp salt until smooth. Repeat with remaining ingredients.",
+      "Strain sauce through a fine sieve to remove bits of skin.",
+      "Heat olive oil in a saucepan. Add sauce and simmer for 10 minutes, stirring often. Set aside.",
+      "For step-by-step photos and tips, visit my full Authentic Red Chile Sauce Recipe.",
+      "In a separate skillet, heat canola oil and lightly fry tortillas until soft and pliable. Drain on a paper towel-lined plate.",
+      "Preheat oven to 350°F. Pour 1 cup of red chile sauce into the bottom of a 9×13-inch baking dish. Fill each tortilla with chicken, cheese, and onions. Roll up and place seam-side down in the dish.",
+      "Top rolled tortillas with more chile sauce and shredded cheese. Cover with foil (sprayed with cooking spray to prevent sticking). Bake for 20 minutes, or until bubbly and golden. Garnish with cilantro.",
+      "Time-saving tip: If you’re short on time, use store-bought enchilada sauce and rotisserie chicken to cut prep time down to just 10 minutes — dinner on the table in 30!",
+      "Make Ahead: Red chile sauce can be made up to 1 week in advance and stored in the fridge, or frozen for up to 6 months.",
+      "Tortilla Tip: Lightly frying the tortillas helps prevent cracking and keeps them from getting soggy when baked. You can also warm them on a griddle or microwave wrapped in a damp towel.",
+      "Cheese Tip: Oaxaca, Monterey Jack, or asadero cheese melt beautifully. Pre-shredded “Mexican cheese blend” works, too.",
+      "Meal Prep Friendly: Assemble enchiladas up to a day in advance. Store covered in the fridge and bake before serving.",
+      "Freezer Instructions: Let baked enchiladas cool completely, then freeze in a freezer-safe container. Bake from frozen, covered, at 350°F until heated through."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "New Mexico",
+        "unit": "oz",
+        "notes": "alt: California red chile pods, dried",
+        "amount": "8",
+        "section": "Homemade Red Chile Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "divided",
+        "amount": "6",
+        "section": "Homemade Red Chile Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "Tbsp",
+        "notes": "or gluten-free alternative",
+        "amount": "6",
+        "section": "Homemade Red Chile Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": "Homemade Red Chile Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Homemade Red Chile Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": "for cooking the sauce",
+        "amount": "1",
+        "section": "Enchiladas",
+        "isOptional": false
+      },
+      {
+        "name": "Cooked Shredded Chicken",
+        "unit": "C",
+        "notes": "alt: turkey",
+        "amount": "1½",
+        "section": "Enchiladas",
+        "isOptional": false
+      },
+      {
+        "name": "Canola Oil",
+        "unit": "C",
+        "notes": "for frying tortillas",
+        "amount": "1",
+        "section": "Enchiladas",
+        "isOptional": false
+      },
+      {
+        "name": "Corn Tortillas",
+        "unit": null,
+        "notes": null,
+        "amount": "12-18",
+        "section": "Enchiladas",
+        "isOptional": false
+      },
+      {
+        "name": "Cheese",
+        "unit": "C",
+        "notes": "Oaxaca, asadero, Monterey Jack, or muenster, shredded",
+        "amount": "2",
+        "section": "Enchiladas",
+        "isOptional": false
+      },
+      {
+        "name": "White Onion",
+        "unit": null,
+        "notes": "finely diced",
+        "amount": "½",
+        "section": "Enchiladas",
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": null,
+        "notes": "chopped, for garnish",
+        "amount": "0",
+        "section": "Enchiladas",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bc8b8b1a0d4ec42a743cbba27328337ab16278fa747ec8349cc3d2ac3f235658",
+    "lineage_hash": "c9e42940ed20c98f8246943f75097f1c45bdd160f924314c405f5d3d41ff602c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/easy-chicken-enchiladas/",
+    "fetchedAt": "2026-08-02T08:59:30.875Z"
+  },
+  "rawSource": "https://muybuenoblog.com/easy-chicken-enchiladas/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,145 @@
+{
+  "recipe": {
+    "name": "Black Pepper Glazed Short Rib Bao",
+    "time": "3 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by poaching the short ribs. Place the ribs in a large saucepan and add all the ingredients for the poaching liquid. Bring the mixture to a boil, then lower to a gentle simmer. Cook for 3 hours, until the meat is starting to come away from the bone",
+      "While the ribs are cooking, make the bao dough and allow to prove. When your proved bao dough has doubled in size, roll it out completely flat to about 4mm thickness. Cut the dough into 8–10 circles and roll each piece again to form an elongated oval shape",
+      "Lightly brush the top half of each oval with a dab of vegetable oil, then place an oiled chopstick across the centre of each piece of dough. Using the chopstick as a hinge, fold one side of the dough over the top of the other, to form a sandwich shape. Remove the chopstick, cover the bao with a damp cloth, and set aside to rise for 15–20 minutes",
+      "Once the ribs have been adequately poached, take them out of the poaching liquid and carefully remove the bones, trying to leave the meat intact. Cut each piece of meat in half",
+      "To cook the bao, fill a wok a third of the way with boiling water. Line a bamboo steam basket with either a School of Wok silicone steam mat, dim sum steamer paper or simply greaseproof paper pierced with holes to let the steam\r\nthrough. If using greaseproof paper, brush with a little vegetable oil. Place the bao in the basket and the basket in the wok. Cover with a lid and steam on high for 10–12 minutes, making sure to leave the lid closed",
+      "In a separate wok, mix together the black pepper sauce, soy and sugar and bring to the boil. Place the pieces of meat in the sauce and baste with the glaze until sticky",
+      "When the bao have finished steaming, remove from the basket and place on a plate. Place a piece of short rib into each bao, and serve with some pickles or salad on the side"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef Short Ribs",
+        "unit": null,
+        "notes": "seperated",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Batch of Proved Bao Dough",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper Sauce",
+        "unit": "Tbsp",
+        "notes": "available in Chinese supermarkets",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "648c6f6f39ee8ed10acb7436b720b1a38f709ceb6e623030e6a9807ac794c550",
+    "lineage_hash": "3832efdf23e7ba9aa06a68073ef217b3bd2a6c7d68b19af414fe794e8529fcb5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/short-rib-bao-recipe",
+    "fetchedAt": "2026-08-03T08:59:27.603Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/short-rib-bao-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

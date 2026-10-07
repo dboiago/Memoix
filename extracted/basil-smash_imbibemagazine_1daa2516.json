@@ -1,0 +1,37 @@
+{
+  "recipe": {
+    "name": "Basil Smash",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [
+      "Basil Leaf"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a large shaker tin, muddle the basil, lemon and cordial. Add the remaining spirits and shake with ice. Strain into a rocks glass and add fresh ice cubes. Smack a basil leaf to release its flavorful oils, then place it on the drink as a garnish.",
+      "Grapefruit CordialFirst wash, then peel a medium grapefruit, reserving the peel. Juice the grapefruit. Whatever volume of juice you get from your grapefruit, add the same amount of white granulated sugar. One medium grapefruit typically yields 1 cup of juice. Stir or shake to dissolve the sugar into the juice. Add the grapefruit peels to your juice/sugar mixture and gently press with a muddler or the back of a wooden spoon to release the oils, cover, refrigerate and let sit 24 hours. Strain off your peels, cover, refrigerate and use within 1 week."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "96a82c3c62868c63d701f97f4218b6bfc8fe0edad6a33ce11baad4100794a6ea",
+    "lineage_hash": "98ad1632bb2f264fd88190ddbc9d711bb4dc6993de2c4d76fed27a61b9a4a6c4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/basil-smash-recipe/",
+    "fetchedAt": "2026-08-04T00:01:46.219Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/basil-smash-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

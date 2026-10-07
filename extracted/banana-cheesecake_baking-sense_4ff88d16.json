@@ -1,0 +1,178 @@
+{
+  "recipe": {
+    "name": "Banana Cheesecake",
+    "time": "5 hr 20 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "373",
+      "carbohydrateContent": "41",
+      "fatContent": "22",
+      "proteinContent": "4"
+    },
+    "directions": [
+      "Toss the melted butter with the graham cracker crumbs.",
+      "Press the crumbs into the prepared pan and bake until golden and fragrant.",
+      "Mix the cream cheese and sugar until smooth.",
+      "Add the sour cream.",
+      "Add the mashed bananas and eggs.",
+      "Pour the cheesecake batter over the baked crust.",
+      "Set the pan into a larger pan and pour water to come half way up the pan.",
+      "Bake the cake, cool to room temperature, then refrigerate until very cold.",
+      "Combine the ingredients for the rum glaze.",
+      "Slice the bananas and toss with the rum glaze.",
+      "Bake the bananas for 10 minutes. Arrange the bananas on the cake just before serving or serve then as a sauce."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Graham Cracker Crumbs",
+        "unit": "oz",
+        "notes": "1 ½ cups",
+        "amount": "6",
+        "section": "Graham Cracker Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "2",
+        "section": "Graham Cracker Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Graham Cracker Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "oz",
+        "notes": "melted",
+        "amount": "3",
+        "section": "Graham Cracker Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Cream Cheese",
+        "unit": "oz",
+        "notes": "softened",
+        "amount": "16",
+        "section": "Cheesecake",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "¾ cup",
+        "amount": "6",
+        "section": "Cheesecake",
+        "isOptional": false
+      },
+      {
+        "name": "Sour Cream",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": "Cheesecake",
+        "isOptional": false
+      },
+      {
+        "name": "Very Ripe Bananas",
+        "unit": "oz",
+        "notes": "about 2 medium, smashed with a fork",
+        "amount": "8",
+        "section": "Cheesecake",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Cheesecake",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean",
+        "unit": null,
+        "notes": "or 1/2 tsp vanilla extract",
+        "amount": "½",
+        "section": "Cheesecake",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "whisked together",
+        "amount": "3",
+        "section": "Cheesecake",
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": "Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Rum",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": "Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "2",
+        "section": "Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Bananas",
+        "unit": "medium",
+        "notes": "sliced",
+        "amount": "4",
+        "section": "Topping",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "68896a59dc1fc0cae4801aebaa4017f1a1310413fa6da680f729b4162111ff27",
+    "lineage_hash": "939d437220680892c91d64ef4de69ec4d83e942213a9ffad52e0924b705079f8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2016/02/18/banana-cheesecake-rum-roasted-bananas/",
+    "fetchedAt": "2026-08-02T08:16:50.413Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2016/02/18/banana-cheesecake-rum-roasted-bananas/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,292 @@
+{
+  "recipe": {
+    "name": "Assiette Of Apple",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the sponge, whisk the egg yolks and sugar until light and fluffy. Sieve the flour and fold in",
+      "Melt the butter and fold into the mix and pour onto a baking sheet lined with silicone paper. Spread about 5mm thick evenly across. Bake in the oven at 170ºC/Gas mark 3 for 8 minutes until golden brown",
+      "Remove from the oven and sprinkle some caster sugar on top. Turn out onto a cooling rack, remove the silicone paper and leave to cool",
+      "For the Bramley apple mousse, heat the apple purée and add the butter. Whisk in the egg yolks and allow the gelatine leaves to dissolve in the mixture",
+      "Leave to cool and then fold in the whipped cream",
+      "For the meringue, boil the water and sugar until it reaches 118c on a sugar thermometer. Start whisking the egg whites on a stand mixer, when the sugar reaches 121c slowly pour the sugar onto the eggs. Leave to whisk until cold.",
+      "Fold the meringue into the Bramley apple mousse. Line the bottom of a mould with the sponge and put the mousse mix on top. Put in the fridge to set",
+      "For the apple sorbet, heat 515ml of apple juice in a pan and add the sugar and glucose. Then leave to go cold. Combine the Bramley and Worcester apple juices, leave to settle and then skim away any impurities",
+      "Mix the apple juices together, and churn in an ice cream maker immediately. Put into a freezer until ready to use",
+      "For the tarte tatin, mix the butter and sugar and place into the bottom of a deep sided pan. The butter mix should be about 6mm thick",
+      "Add the apples, standing them on their ends as tightly as possible. Place the puff pastry over the top of the apples. It should be about 4mm thick and cut slightly bigger than the pan so that the pastry can be pushed down the inside edges. As the tatin cooks this will caramalise the pastry",
+      "Make a few small incisions in the top of the pastry to let the steam escape. Put the pan onto the stove on a low heat and cook slowly until the apples begin to caramelise, you will see the sugar change colour on the sides of the pan.",
+      "Place the pan in the oven and cook at 165ºC/Gas mark 2 until the pastry is golden brown and apples are nicely caramalised. When ready, turn out onto a wire rack",
+      "For the apple jelly, soak the gelatine leaves in water until soft. Remove them from the water and warm in a pan with a little of the apple juice. Slowly add the rest of the juice, stir, pass through a fine sieve and refrigerate until needed",
+      "For the caramel syrup,  bring the buttermilk, sugars, and butter to a boil over medium heat in a large saucepan",
+      "Remove from heat and whisk in the baking soda and vanilla essence. It will bubble up a lot, but as it cools, the bubbles will disperse",
+      "To plate, pour a little of the caramel syrup over the plate. Dice the apple jelly into small squares and arrange neatly on the plate. Remove the apple mousse from the mould and cut into the desired size and shape and add to the plate",
+      "Cut the warm tatin to the desired size and place on the plate. Make a quenelle of the sorbet, and add to the plate. Serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "320",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "310",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar for Dusting",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bramley Apple Purée",
+        "unit": "g",
+        "notes": null,
+        "amount": "700",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": "lightly whipped",
+        "amount": "320",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bramley Apple Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Worcester Apple Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "515",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glucose",
+        "unit": "ml",
+        "notes": null,
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cox's Apples",
+        "unit": null,
+        "notes": "peeled, cut into quarters and core removed",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "110",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "110",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Puff Pastry",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Juice",
+        "unit": "ml",
+        "notes": "skimmed",
+        "amount": "285",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soft Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Essence",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d1fffccb3acb35961f70a05ea591e7cca28337f576782f4374d974b11c5e3270",
+    "lineage_hash": "d33a1fc4911aaeffec843ce3ad4f21a735bc329866989eae735a5c988083e761"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/assiette-of-apple",
+    "fetchedAt": "2026-08-03T16:21:13.435Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/assiette-of-apple",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

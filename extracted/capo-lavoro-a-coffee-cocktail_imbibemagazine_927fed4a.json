@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Capo Lavoro, A Coffee Cocktail",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Collins",
+    "garnish": [
+      "Crushed Ice"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the cold-brew concentrate and Cappelletti in a glass. Fill halfway with crushed ice and stir to chill. Add club soda and top with more crushed ice. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "2fec6913c7c9693aa5a580b2b82b13c02e9175ce2f584829d0176be6e9d89972",
+    "lineage_hash": "4d83cdbd59484cadfedf3c844bc767e0a68128f9655012ea0fa4be3daad8207d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/capo-lavoro-coffee-cocktail/",
+    "fetchedAt": "2026-08-03T17:55:31.744Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/capo-lavoro-coffee-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

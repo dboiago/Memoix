@@ -1,0 +1,135 @@
+{
+  "recipe": {
+    "name": "Bulgur Wheat Pilaf with Sautéed Mushrooms, Peas and Tomatoes",
+    "time": "40 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "TR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat 2 tablespoons olive oil in a heavy pan. Stir in garlic and chopped mushrooms, and season with salt generously (mushrooms and garlic go very well and the salt helps the water to come out of mushrooms). Sauté for 2-3 minutes until mushrooms soften and start to loosen up. Add the dried oregano and a squeeze of lemon and mix well. Turn the heat off, leaving it a side.",
+      "On a separate pot, drizzle a little olive oil and add the bulgur and chopped tomatoes, tossing thoroughly over low heat. Add the hot water, season with salt and ground pepper. Stir to combine thoroughly. Bring to boil for 1-2 minutes, then reduce the heat, cover and simmer for about 8 minutes.",
+      "At this time stir in the frozen peas to bulgur mixture and stir to combine. Then cover and simmer for a further 3-4 minutes, until all the liquid has been absorbed.",
+      "Turn off the heat and add the sautéed mushrooms into the mixture and combine well. Cover the pan with a paper towel and press the lid on top. Leave to steam for a further 10 minutes.",
+      "Serve the bulgur pilaf with some grated parmesan over the top. You can serve some steamed vegetables by the side if you would like too."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gloves Garlic",
+        "unit": null,
+        "notes": "crushed and finely chopped",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Portobello Mushrooms",
+        "unit": "large",
+        "notes": "cleaned and coarsely chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "medium",
+        "notes": "coarsely chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gr Frozen Peas",
+        "unit": null,
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gr Bulgur Wheat",
+        "unit": null,
+        "notes": "rinsed and drained",
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gr Hot Water",
+        "unit": null,
+        "notes": null,
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": "and an extra drizzle for the bulgur",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Squeeze Lemon",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oregano",
+        "unit": "ml",
+        "notes": "dried, 1 teaspoon",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan",
+        "unit": null,
+        "notes": "grated (or any hard cheese you prefer) to serve",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5824c56c995352265888165f2f094d1a09ec78c919fcbe59cf098b11de13654d",
+    "lineage_hash": "33229b29c8659229be26711e4e7d177f0a7844b17902a2b1eb4a01ce3aa235fd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ozlemsturkishtable.com/2011/07/bulgur-wheat-pilaf-with-sauteed-mushrooms-peas-and-tomatoes-mantarli-bezelyeli-bulgur-pilavi/",
+    "fetchedAt": "2026-09-25T19:11:45.032Z"
+  },
+  "rawSource": "https://ozlemsturkishtable.com/2011/07/bulgur-wheat-pilaf-with-sauteed-mushrooms-peas-and-tomatoes-mantarli-bezelyeli-bulgur-pilavi/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

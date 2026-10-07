@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Ale Punch",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all ingredients in a punch bowl and slip in a large block of ice. Grate nutmeg over the surface of the punch and ladle into punch glasses. Serves 6-8.\nCapillaireCombine 2 cups of sugar and 1 cup of water in a pot over medium heat and stir until dissolved. Remove from heat, stir in 1/2 tsp. of orange flower water and bottle. Store refrigerated. Makes about 2 cups (480mL)."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "6a59c45f7bfe42ff423ff3fb8436e6d36a2348fb3e18a68850a0f7972046d0ec",
+    "lineage_hash": "dbcad91bd3b88ed43614ea3818d9ea716716e3d725673f1a34964ee847b898a3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/ale-punch/",
+    "fetchedAt": "2026-08-04T00:26:41.940Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/ale-punch/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

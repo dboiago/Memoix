@@ -1,0 +1,131 @@
+{
+  "recipe": {
+    "name": "Braised Celery and Chickpeas",
+    "time": "1 hr 45 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by cooking the chickpeas. Drain them from their soaking water and place into a large saucepan. Cover with fresh, cold water to 2 inches above the chickpeas. Pull off 5 cloves of garlic from the bulb and set aside for later. Cut the remainder of the bulb through its waist and add to the chickpeas, along with the sage, one tough outer celery stalk and the potato",
+      "Cook at a simmer for 1 1/2 hours or until soft. If the water level dips below the chickpeas, top the pan up with more water",
+      "Once the chickpeas are tender, remove the sage and celery and discard. Remove the garlic bulb halves and squeeze out the garlic. Mash the potato on top of this and add back to the chickpeas. Season generously with salt, pepper and half of the olive oil, then set aside until ready to serve",
+      "Cut the first centimetre off the top of the celery and remove the toughest outer sticks (these can be reserved for making stock). Wash the rest of the celery thoroughly",
+      "Remove the leaves and separate into two piles: the tougher, darker green leaves and the paler, softer ones. Chop both quite finely",
+      "Slice the top two-thirds of the celery stalks straight across into 1cm pieces. Cut the bottom third (the root end) into 0.5cm slices. Finely chop the 5 reserved garlic cloves",
+      "Heat the remaining 100ml of olive oil in a large saucepan. Once hot, add the garlic and darker celery leaves. Once they are fizzing, add the sliced celery and cook on a high heat, stirring to prevent the celery from browning, for 3–4 minutes. Add the fennel seeds and chilli and season to taste",
+      "Drain the chickpeas, making sure to reserve the cooking liquor. Add the chickpeas and 100ml of the liquor (make sure to save the rest as is it makes a great stock for stews and soups) to the celery and simmer for 5–10 minutes, until the celery softens. There should be a thick coating of cooking liquor left. If it seems too runny, boil off until the sauce is thick and glossy",
+      "Add the lemon juice and zest along with the chopped pale celery leaves. Season to taste and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chickpeas",
+        "unit": "g",
+        "notes": "soaked in cold water overnight",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Bulb",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sage",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potato",
+        "unit": null,
+        "notes": "peeled and halved",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery",
+        "unit": "head",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Flakes",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "tsp",
+        "notes": "pounded",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced and zested",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b8c0fabf8fad5b69f2f0337deebf3e79eecef8289bb77a40059b38bd5be2e813",
+    "lineage_hash": "2d9d6bb877c97baebdafd844e15bffa79ed7afaa7b34a0f7a0e7418b6daed3f1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/celery-and-chickpeas-recipe",
+    "fetchedAt": "2026-08-03T08:27:03.949Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/celery-and-chickpeas-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

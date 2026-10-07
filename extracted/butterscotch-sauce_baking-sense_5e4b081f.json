@@ -1,0 +1,91 @@
+{
+  "recipe": {
+    "name": "Butterscotch Sauce",
+    "time": "30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "24",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "69",
+      "carbohydrateContent": "9",
+      "fatContent": "4",
+      "proteinContent": "0.2"
+    },
+    "directions": [
+      "Melt 2 oz&#32;unsalted butter over medium low heat (see note). Add 8 oz&#32;dark brown sugar and stir until the sugar looks like wet sand. Cook on medium low, stirring occasionally, for about 5 minutes. The mixture will begin to liquify.",
+      "Whisk in 4 oz&#32;heavy cream, then whisk in the 2 oz&#32;butterscotch schnapps. BE CAREFUL, the mixture will bubble up and steam when the liquids are added. Keep your face away from the pot.",
+      "Cook over medium low heat for for about 10 minutes, whisking occasionally, until the butterscotch becomes viscous, very smooth and silky. Remove the pot from the heat and whisk in 2 teaspoons&#32;real vanilla extract and 1/2 teaspoon&#32;kosher salt.",
+      "Pour into a heat proof container to cool. I like to use canning jars to store the butterscotch sauce."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Brown Sugar",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "oz",
+        "notes": "1/2 cup",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butterscotch Schnapps (1/4 Cup (see Note))",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Real Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kosher Salt (not Table Salt (see Note))",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b17a89b604c89d5be7d19225c5b232143b4e54c73c0d9c6b611cfc60fc320b12",
+    "lineage_hash": "e4f292ea76d8bef195f4081fe42b0a4017ccb7d654c009fbe60ba43b12fafd5b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2017/04/27/butterscotch-sauce/",
+    "fetchedAt": "2026-08-01T21:43:25.445Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2017/04/27/butterscotch-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

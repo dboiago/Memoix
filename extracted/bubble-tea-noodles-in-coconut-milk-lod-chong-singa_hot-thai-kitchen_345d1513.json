@@ -1,0 +1,159 @@
+{
+  "recipe": {
+    "name": "Bubble Tea Noodles in Coconut Milk (Lod Chong Singapore/Cendol)",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "TH",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "270",
+      "carbohydrateContent": "50",
+      "fatContent": "8",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Make the syrup by simmering a pandan leaf with coconut water for 5 mins.",
+      "Add the sugar and stir until dissolved; cool.",
+      "Make the coconut milk broth by mixing coconut milk and coconut water.",
+      "Add the pandan leaf and salt and simmer for 5 mins.",
+      "Combine the 2 starches. Add food colouring to hot water and and drizzle it over the starches little by little.",
+      "In between drizzles, toss with a spoon to mix.",
+      "Keep adding hot water and tossing until almost all the water is used up and the dough starts to clump up.",
+      "Stop adding water once dough seems evenly moistened and most of the starch has clumped up, with little dry flour left.",
+      "Squeeze the dough together into a ball",
+      "Transfer to a tapioca-starch-dusted surface and knead until smooth. If it feels too dry, sprinkle a little water over it; if it feels too wet, add a little tapioca starch.",
+      "Roll into a 2mm thick sheet and cut into 2-3-inch wide strips.",
+      "Cut each strip into 3-4mm wide noodles. Toss the noodles immediately with some tapioca starch to separate them and prevent them from sticking together.",
+      "Drop the noodles into a large pot of boiling water and after all the noodles have floated to the surface, cook for about 1 minute.",
+      "Scoop the water into a big bowl of cold water. The noodles should be translucent if they are done.",
+      "In a serving glass add some noodles, jackfruit pieces, some syrup to taste, and the coconut milk. Stir to mix, and if you have time, let it sit for about 15 minutes and the noodles will absorb some sugar and it'll taste better.",
+      "Add lots of ice, wait for the ice to melt a little and completely chill the drink before enjoying with a spoon or a large bubble tea straw!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pine Brand Tapioca Starch Plus Extra for Dusting",
+        "unit": "oz",
+        "notes": "about 1 cup",
+        "amount": "4.2",
+        "section": "Lod Chong Noodles",
+        "isOptional": false
+      },
+      {
+        "name": "Pine Brand Mung Bean Starch",
+        "unit": "oz",
+        "notes": "about 3 Tbsp",
+        "amount": "0.9",
+        "section": "Lod Chong Noodles",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅔",
+        "section": "Lod Chong Noodles",
+        "isOptional": false
+      },
+      {
+        "name": "Green Food Colouring",
+        "unit": "drops",
+        "notes": null,
+        "amount": "5",
+        "section": "Lod Chong Noodles",
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Water",
+        "unit": "C",
+        "notes": "alt: water",
+        "amount": "1¼",
+        "section": "Pandan Syrup",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": "see note",
+        "amount": "¾",
+        "section": "Pandan Syrup",
+        "isOptional": false
+      },
+      {
+        "name": "Pandan Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Pandan Syrup",
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Coconut Milk",
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Coconut Milk",
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": "Coconut Milk",
+        "isOptional": false
+      },
+      {
+        "name": "Pandan Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Coconut Milk",
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Jackfruit",
+        "unit": "pcs",
+        "notes": "see note, fresh or canned, julienned against the grain",
+        "amount": "5",
+        "section": "serving",
+        "isOptional": false
+      },
+      {
+        "name": "Lots of Ice",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "serving",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b7d5c6ba650d2dc10b3a9e473851eb4cdf187299a61113f3df9179f742e3e9c9",
+    "lineage_hash": "d964e7eeb6a63fbb8d6ff2c5d6cef9257bac9e718346b6ffcf5fb7ca872fe65e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://hot-thai-kitchen.com/lod-chong-singapore/",
+    "fetchedAt": "2026-08-02T01:55:52.045Z"
+  },
+  "rawSource": "https://hot-thai-kitchen.com/lod-chong-singapore/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

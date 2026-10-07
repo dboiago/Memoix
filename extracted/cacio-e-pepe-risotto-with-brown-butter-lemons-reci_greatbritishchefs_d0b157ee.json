@@ -1,0 +1,148 @@
+{
+  "recipe": {
+    "name": "Cacio e Pepe Risotto with Brown-Butter Lemons",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Using a very sharp knife or mandoline, slice the lemon into really thin discs – removing the pips",
+      "Heat 50g of the butter in a saucepan and cook over a medium heat for 5–6 minutes until it just starts to turn toasted brown",
+      "Add the lemon slivers and cook for 3–4 minutes, turning regularly, until they are tender. Set aside",
+      "In a separate large saucepan, melt the remaining 35g of butter with the olive oil, then add the onion. Cook for 7–8 minutes over a medium heat until it turns translucent",
+      "Next, add the celery and garlic, cooking for another 3 minutes, adding a splash more oil if needed",
+      "Next, add the crushed black pepper, mix well and then add the rice. Cook for 2–3 minutes, coating the rice with the oil and toasting just slightly – being careful it doesn’t burn",
+      "Pour over the white wine and add Dijon mustard, cooking for 2 minutes until it has fully dissolved",
+      "Very slowly add 1 ladleful of hot stock to the rice at a time – stirring constantly – and only add another ladleful of stock when the previous one has been absorbed fully. Be patient, and don’t be tempted to add it all at once – you want to keep adding stock and stirring for 18–20 minutes over a medium heat until the rice grains are tender and the risotto is creamy",
+      "Remove from the heat and mix through the grated Pecorino – stirring until it’s melted",
+      "Serve generous dollops of risotto topped with the lemon slivers, brown butter, a grating of fresh nutmeg and extra Pecorino shavings. It shouldn’t need any salt but feel free to add more black pepper to garnish"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unwaxed Lemon",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "85",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "large",
+        "notes": "finely diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Sticks",
+        "unit": "large",
+        "notes": "finely diced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "crushed to a paste",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "Tbsp",
+        "notes": "coarsely crushed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Arborio Risotto Rice",
+        "unit": "g",
+        "notes": "or carnaroli rice",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Chicken Stock",
+        "unit": "ml",
+        "notes": "or vegetable stock",
+        "amount": "800",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pecorino Romano",
+        "unit": "g",
+        "notes": "grated, plus extra shavings to serve",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Grated Nutmeg",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b7f14f11b1e075931d0d09834168fab3a06098952b9b2454cb1ec5c614e4ff98",
+    "lineage_hash": "92bc84f29141ff78f8c84764b7f030d4293c19e3773a0f2b6e744622c2b18336"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cacio-e-pepe-risotto-brown-butter-lemons-recipe",
+    "fetchedAt": "2026-08-02T03:07:14.995Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cacio-e-pepe-risotto-brown-butter-lemons-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

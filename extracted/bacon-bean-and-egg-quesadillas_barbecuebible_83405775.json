@@ -1,0 +1,120 @@
+{
+  "recipe": {
+    "name": "Bacon, Bean, and Egg Quesadillas",
+    "time": "1 hr 5 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Set up your grill for direct grilling and build a medium-hot (400 degrees) fire.",
+      "Brush two of the tortillas with half the melted butter and place them buttered side down on the sheet pan. Spread each with the baked beans, making a shallow depression in the center. Sprinkle 2/3 of the cheese on top in a doughnut shape (more generously around the periphery, leaving a 3-inch space in the center for the egg. Crack the eggs in the center of each quesadilla. Sprinkle the bacon slivers on top, followed by the chile, scallion, and cilantro. Sprinkle the remaining cheese on top.",
+      "Brush one side of the third and fourth tortilla with the remaining butter and place them butter side up atop the quesadillas. (If using a quesadilla basket, build the quesadilla in there.)",
+      "Brush and oil the grill grate. Pulling carefully from one end, gently slide the quesadillas onto the grill grate. Grill until the bottom is browned and the cheese at the edge starts to melt, 2 minutes. Keep the grill lid lowered to hold in the heat.",
+      "Slide a large spatula (or the pizza peel or sheet of metal) under the quesadillas and flip them over. If you’re nervous about turning it, place a second sheet of metal on top to sandwich it, turn that over, then slide the quesadillas back onto the grill. Continue grilling until the bottom is browned and the cheese is melted, another 2 minutes. If the tortilla starts to burn, slide it to the unlit part of the grill with a spatula. Leave it there until the cheese is melted and the egg is just set—you’ll need 4 to 5 minutes grilling in all.",
+      "Transfer the quesadilla to a plate. If you’ve done it right, the tortilla will be crisp, the cheese melted and gooey, the egg white just set, and the egg yolk still runny. Serve with Ember Roasted Salsa, or not. It doesn’t get better than this."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Flour Tortillas",
+        "unit": null,
+        "notes": "each 8 inches in diameter",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "melted, bacon fat, or extra virgin olive oil",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Baked Beans",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cheddar",
+        "unit": "C",
+        "notes": "about 4 ounces, coarsely, grated, Jack or other cheese",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strips Bacon",
+        "unit": null,
+        "notes": "grilled and thinly slivered crosswise",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jalapeno Chile",
+        "unit": null,
+        "notes": "thinly sliced crosswise",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallion",
+        "unit": null,
+        "notes": "trimmed, white and green parts thinly sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "C",
+        "notes": "chopped, fresh",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ember-roasted Salsa",
+        "unit": null,
+        "notes": "for serving (see recipe)",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "50a027f92245715e12986030c482c5929e9d86cdce393c4f29cf7ac23e6f9cef",
+    "lineage_hash": "bb4c8c17e569e06bcb9715ca159823e8f17e36fed8d18352ef816d6929a54805"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/bacon-bean-egg-quesadillas/",
+    "fetchedAt": "2026-08-03T06:17:42.727Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/bacon-bean-egg-quesadillas/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

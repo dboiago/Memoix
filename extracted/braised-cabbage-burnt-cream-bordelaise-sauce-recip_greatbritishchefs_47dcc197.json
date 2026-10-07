@@ -1,0 +1,223 @@
+{
+  "recipe": {
+    "name": "Braised Cabbage, Burnt Cream, Bordelaise Sauce",
+    "time": "3 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start by making the sauce. Preheat an oven to 180ºC/gas mark 4. Roast the chopped beef bones in the oven until golden brown (about half an hour) then place in a large stock pot and cover with the chicken stocks. Simmer the stock for 2 hours then pass through a fine sieve and chill in the fridge",
+      "Once the stock is cold, scrape off any fat that has set on the top",
+      "In a separate pan, fry the diced beef trim until caramelised all over, then add the sliced shallots, garlic and thyme. Sweat for 2 minutes then add the white wine and reduce until dry",
+      "Add the chilled stock and simmer until you are left with around 400ml of beautiful, glossy, intense beef sauce. Strain and discard the solids, then finish the sauce with the beef fat, bone marrow, shallots, chives and fermented wild garlic stalks (if using). Set aside to reheat before serving",
+      "Remove the tough outer leaves from the cabbage and reserve for later if making the cabbage crisps. Cut the cabbage in half through the root. Season the cut side and sear with a dash of oil in a cast-iron pot or Dutch oven until slightly charred",
+      "Add the garlic and thyme to the pot. When the garlic has turned golden brown, add the butter and continue to cook until the butter has toasted and smells nutty",
+      "Preheat the oven to 160ºC/gas mark 3. Pour the stock over the cabbage and cover the pot with a tight-fitting lid. Cook in the oven for 20-25 minutes until the cabbage is very tender",
+      "Rest the cabbage until cool enough to handle, then roll each half tightly in clingfilm to form a cylinder shape. Reserve in the fridge for later",
+      "If you want to make the cabbage crisps, preheat the oven to 150°C/gas mark 2. Blanch the reserved outer leaves in boiling salted water until thoroughly cooked, then refresh in ice water",
+      "Remove the main stalk from the centre of each leaf, then lay the cabbage leaves flat on a piece of baking paper on a heavy metal tray. Brush the cabbage leaves with melted butter and season with a little salt. Lay another piece of baking paper on top and cover with another heavy metal tray. Bake until the cabbage leaves are coloured and crispy – this should take about 25 minutes",
+      "To make the burnt cream, pour the double cream into a pan and reduce it – whisking constantly – until the cream thickens and begins to caramelise. Take it off the heat when it has thickened and turned a dark beige colour",
+      "Take the cabbage cylinders out of the fridge and cut into thick discs, about 6cm in diameter and 4cm tall, keeping the cling film on so the cabbage retains its shape. Fry in a little oil on the cut side until golden and warmed through, then remove the cling film and place the cabbage on the plate",
+      "Place a quenelle of the burnt cream on top of the cabbage along with the cabbage crisps (if using), then finish with the reheated Bordelaise sauce"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dry-aged Beef Bones",
+        "unit": "kg",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry-aged Beef Trim",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Chicken Stock",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Chicken Stock",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Bulb",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": "large",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Banana Shallots",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Fat",
+        "unit": "g",
+        "notes": "cut into 1cm dice",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bone Marrow",
+        "unit": "g",
+        "notes": "diced",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": "g",
+        "notes": "finely diced",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wild Garlic Stalks",
+        "unit": "g",
+        "notes": "optional, fermented with 2% salt at room temperature for 4 days",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Savoy Cabbage",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": "large",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5a62d121eadd17d38b62db79b06f6fded84222a09e999a7631ec73b22bb9479d",
+    "lineage_hash": "3e6695668db3d6c1d4119acb3ce73686cc2e2a24d440d2f66d4b3ed2a07a0e3c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/braised-cabbage-bordelaise-sauce-recipe",
+    "fetchedAt": "2026-08-03T04:52:16.450Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/braised-cabbage-bordelaise-sauce-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

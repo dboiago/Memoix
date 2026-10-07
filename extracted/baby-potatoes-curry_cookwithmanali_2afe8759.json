@@ -1,0 +1,202 @@
+{
+  "recipe": {
+    "name": "Baby Potatoes Curry",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "166",
+      "carbohydrateContent": "31",
+      "fatContent": "3",
+      "proteinContent": "4"
+    },
+    "directions": [
+      "Boil the small potatoes in a pressure cooker or in a pan/microwave.",
+      "Prick the potatoes with fork all over.",
+      "Add all the ingredients listed under \"to marinate\" to the potatoes.",
+      "Mix and keep in the refrigerator for at least 2 hours.",
+      "Heat oil in a pan, once hot add cardamom and cloves. Saute for a minute and add the chopped onions.",
+      "Fry the onions till they are translucent and raw smell goes away.",
+      "Once the onions are done add the fresh tomatoes paste and tomato puree. Cook for 7-8 minutes till raw smell goes away.",
+      "Add the chopped mint leaves, paprika powder and give a good mix. Also add the salt.",
+      "Now add water and let it come to a boil. Then add the marinated potatoes, mix and cover the curry and let it simmer for 10 minutes on medium-low flame.",
+      "Finally add the pav bhaji masala and switch off the flame.",
+      "Garnish with coriander leaves and serve hot with rice or any Indian bread."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Baby Potatoes",
+        "unit": null,
+        "notes": null,
+        "amount": "7",
+        "section": "To Marinate",
+        "isOptional": false
+      },
+      {
+        "name": "Yogurt",
+        "unit": "Tbsp",
+        "notes": "preferably use hung curd",
+        "amount": "4",
+        "section": "To Marinate",
+        "isOptional": false
+      },
+      {
+        "name": "Kasuri Methi",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "To Marinate",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger-garlic Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "To Marinate",
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "To Marinate",
+        "isOptional": false
+      },
+      {
+        "name": "Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "To Marinate",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "To Marinate",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": "Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": "Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "medium",
+        "amount": "1",
+        "section": "Curry",
+        "isOptional": false
+      },
+      {
+        "name": "To Matoes",
+        "unit": null,
+        "notes": "pureed to fine paste",
+        "amount": "2",
+        "section": "Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Puree",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "8-10",
+        "section": "Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Paprika Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Pav Bhaji Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1.5",
+        "section": "Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "Curry",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7ed75ba0ee78deac9618c7288200e3a74bc84ce0d65c1579adfe068b49e9f11a",
+    "lineage_hash": "68fbaf5783517020d2c22a27ef14d5b4b3615395c4fa48797ff1807dff1cdb77"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/baby-potatoes-curry/",
+    "fetchedAt": "2026-08-01T19:04:57.310Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/baby-potatoes-curry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,128 @@
+{
+  "recipe": {
+    "name": "Chestnut Pecan Biscotti",
+    "time": "1 hr 40 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "24",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the flours, ground almonds, sugar, and salt in a medium mixing-bowl or a mixer.",
+      "Add the praline paste and almond butter, and mix until combined.",
+      "Add the eggs one by one, and mix until combined; the dough will be tacky.",
+      "Fold in the pecans (by hand, if you were using a mixer), cover, and chill for an hour; the dough will be easier to handle.",
+      "Preheat the oven to 180°C (350°F) and line a baking sheet with parchment paper.",
+      "Divide the dough in two, and shape each half into a flattened log, about 30 by 5 cm (12 by 2″), on the prepared baking sheet. (The dough will still be a bit sticky, you can use the piece of plastic wrap to help you shape it.)",
+      "Bake for 30 minutes, until browned and lightly crusty.",
+      "Remove from the oven (leave the heat on) and let cool for 5 minutes.",
+      "Transfer to a cutting board and use a sharp knife to cut the logs in diagonal slices, about 1.5 cm (2/3″) in thickness.",
+      "Return the slices to the baking sheet, one cut side up, and bake for another 10 minutes, until golden brown.",
+      "Transfer to a rack to cool completely.",
+      "Have ready a sheet of parchment paper or feuille guitare (a special sheet of plastic chocolate makers use to ensure a shiny finish).",
+      "Melt the chocolate in a double-boiler (or in a heatproof bowl set over a pan of simmering water).",
+      "Dip one cut side of each croquant into the chocolate, transfer to the prepared sheet, and leave out in a cool, dry spot until the chocolate has hardened. (This produces a thin coating of chocolate; for thicker results, repeat the melting, dipping, and drying steps.)"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Grams Chestnut Flour",
+        "unit": null,
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams All-purpose Flour",
+        "unit": null,
+        "notes": "* If you want to make these wheat-free, you can use chestnut flour only, as in the original recipe; I would personally substitute another, milder non-wheat flour, such as rice flour.",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Ground Almonds",
+        "unit": null,
+        "notes": "** Almond meal, a.k.a. ground almonds or powdered almonds, can be found at natural foods stores. If you can’t find it, substitute 2/3 cup plus 2 tablespoons whole blanched almonds. Combine them with the sugar in a food processor and process in short pulses until finely ground.",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Unrefined Cane Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Praline Paste",
+        "unit": null,
+        "notes": "* Praline paste (pâte de praliné or praliné au sucre cuit in French) is made by toasting, caramelizing, and grinding a mix of almonds and hazelnuts; it is what chocolatiers use in their praline-filled chocolates. You can make your own (although I’ve never tried it myself) or buy it ready-made from a baker’s supply store: I’ve purchased mine at the Salon du Chocolat, but I know G. Detou sells it, too. If you can’t find it, just up the amount of almond butter by 2 teaspoons and the amount of sugar by 1 teaspoon.",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Almond Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Pecan Halves",
+        "unit": null,
+        "notes": "toasted and chopped",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Bittersweet Chocolate",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "653e3749e7ef31d29955d74055f45fdf7bc68ec973ebe0492bae865dc9592de5",
+    "lineage_hash": "d3be4fe0ef32ef437721cf2658b8123f0ab512cc5c355f3a3d62afd6758bd4da"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/cookies-small-cakes/chestnut-pecan-biscotti-recipe/",
+    "fetchedAt": "2026-09-30T18:30:00.705Z"
+  },
+  "rawSource": "https://cnz.to/recipes/cookies-small-cakes/chestnut-pecan-biscotti-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

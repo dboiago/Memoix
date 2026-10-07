@@ -1,0 +1,94 @@
+{
+  "recipe": {
+    "name": "Burren Balsamics Italian Sausage Ragu",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat a suitably sized saucepan and brown the sausage meat stirring well to break up.",
+      "Add the onion and continue to cook for 2 or 3 minutes to soften the onion.",
+      "Add the vinegar and cook well to reduce and intensify the flavour.",
+      "Add the tomatoes"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Grams Italian Sausage Meat",
+        "unit": null,
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Tin Chopped Tomatoes",
+        "unit": null,
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams White Onions",
+        "unit": null,
+        "notes": "peeled and finely chopped",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Button Mushrooms",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mls Water",
+        "unit": null,
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mls Burren Balsamics Blackberry and Thyme",
+        "unit": null,
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0dffee803585629db7022ec80f91ebfc68bd22e03721d7f95f998cb557133c8e",
+    "lineage_hash": "c907a8f2f690930a5aafa73c6ce0b131928bffc569f7d10d16898bb50be52ae2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.thestaffcanteen.com/chefs-recipes/burren-balsamics-italian-sausage-ragu-1582210209",
+    "fetchedAt": "2026-08-03T15:16:26.590Z"
+  },
+  "rawSource": "https://www.thestaffcanteen.com/chefs-recipes/burren-balsamics-italian-sausage-ragu-1582210209",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,87 @@
+{
+  "recipe": {
+    "name": "Bean Curd and Shiitake Pork Ribs Soup",
+    "time": "3 hr",
+    "course": "soup",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Soak dried bean curd sticks, dried shiitake mushrooms, and dried jujube/Chinese red dates in separate bowls overnight. Tear bean curd sticks into 1 inch sections. Strain the shiitake soaking water and add enough water to make for 2 liter. Cut each shiitake into 4 wedges.",
+      "Place pork ribs and the 2 liter water in a soup pot and let it boil for 15 minutes. Ladle off the scum to get a clear soup.",
+      "Add bean curd, shiitake, jujube/red dates, and salt and bring to another boil.",
+      "Reduce heat and simmer for 1 1/2 to 2 hours, or until all the ingredients are tender and fully cooked.",
+      "Turn off heat and serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bean Curd Sticks",
+        "unit": null,
+        "notes": "dried",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shiitake Mushrooms",
+        "unit": null,
+        "notes": "dried",
+        "amount": "4-8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jujube/chinese Red Dates",
+        "unit": null,
+        "notes": "Chinese: hong zao, dried",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Pork Ribs",
+        "unit": null,
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f9bfad5d31ff0f704a8f1afa76dc04afc95ceb100b3e28b71013f938aa8bafd5",
+    "lineage_hash": "074f0e50abffb8df340d682e4fc8bef8daf4475d312c6ba5b2e43130f5d2e1af"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/bean-curd-and-shiitake-pork-ribs-soup.html",
+    "fetchedAt": "2026-08-01T23:46:37.864Z"
+  },
+  "rawSource": "https://dailycookingquest.com/bean-curd-and-shiitake-pork-ribs-soup.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

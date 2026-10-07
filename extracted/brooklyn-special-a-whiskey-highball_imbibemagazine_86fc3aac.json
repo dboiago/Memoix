@@ -1,0 +1,37 @@
+{
+  "recipe": {
+    "name": "Brooklyn Special: A Whiskey Highball",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Collins",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients, except the soda water, to a chilled Collins glass, then fill with ice. Top with soda water. Give a stir, then garnish.",
+      "Coffee-Infused Whiskey BlendAdd 5 oz. of bourbon, 5 oz. of rye, and 2 oz. of whole coffee beans (preferably South American) to a sealable container and allow it to sit for 24 hours. Strain out the coffee beans. Will keep indefinitely.",
+      "Fermented Cherry SyrupAdd 100g of pitted cherries (roughly chopped), 2 1/2g of honey or agave syrup, 3g of kosher salt to a jar. Seal tightly and allow it to sit for 2 days. Weigh the cherry mixture and combine an equal weight of sugar and half the weight in water. Add the mixture to a saucepan and heat until it starts to simmer. Remove from the heat and allow it to cool, then strain into a sealable container. Will keep for 2 weeks in the refrigerator.",
+      "Saline SolutionCombine 100g of water with 20g of salt and mix until all the salt is dissolved."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "83448635ab7b167ff658d868d956842c9e1d40df2595a0b958cf4144b2e00b9f",
+    "lineage_hash": "305c654b165a6835a7d63c9412d9435b47b343a5c7b9743a6daab2dc3f007b5a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/brooklyn-special-whiskey-highball/",
+    "fetchedAt": "2026-08-03T23:12:25.864Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/brooklyn-special-whiskey-highball/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

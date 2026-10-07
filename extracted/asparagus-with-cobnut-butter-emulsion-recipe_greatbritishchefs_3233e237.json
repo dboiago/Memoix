@@ -1,0 +1,116 @@
+{
+  "recipe": {
+    "name": "Asparagus with Cobnut Butter Emulsion",
+    "time": "1 hr",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Blanch the asparagus in salted, boiling water and refresh",
+      "Roast the cobnuts for 12 minutes, stirring every 5 minutes until they are golden brown",
+      "Blend the cobnuts in a blender while hot until they form a paste. Add the white miso and blend together, then pass through a chinois",
+      "Bring a pan of water up to 90°C – this is the water you will use for a bain Marie",
+      "For the butter emulsion, whisk together the eggs, egg yolks, vinegar and salt. Pour in the butter and emulsify together with a hand blender",
+      "Add 50g cobnut miso into the egg mix",
+      "Put the bowl over the pan of 90°C water and gently bring the emulsion to 78°C. Season to taste and keep warm to one side or pour into an isi gun with 2 charges",
+      "Melt the 50g butter and then gently heat through the asparagus with the butter until warm",
+      "Put the asparagus on towels to drain the butter, then season with salt",
+      "Serve immediately with a spoon of the cobnut miso emulsion and finish with grated toasted cobnuts over the emulsion and asparagus"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Asparagus",
+        "unit": "bunch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cobnuts",
+        "unit": "g",
+        "notes": "hazelnuts are fine if you can’t get a hold of cobnuts, plus 5 deeply roasted cobnuts for grating",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Miso",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted Butter",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0b796ceafcfda190b0577c660eb0ce076fa5636216132af89b69fed65f74ac5e",
+    "lineage_hash": "ad634e510378b5320513cfce27846cabd51083aaee627057fabeeedaeeeeb016"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/asparagus-cobnut-butter-emulsion-recipe",
+    "fetchedAt": "2026-08-02T12:21:35.167Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/asparagus-cobnut-butter-emulsion-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

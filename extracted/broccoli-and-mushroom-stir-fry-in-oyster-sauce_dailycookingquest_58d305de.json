@@ -1,0 +1,110 @@
+{
+  "recipe": {
+    "name": "Broccoli and Mushroom Stir Fry in Oyster Sauce",
+    "time": "30 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Separate the broccoli florets from the stalk. Peel the outer layer of the stalk and chop the inner part into small bite-size pieces.",
+      "Bring a pot of water to a boil and salt generously. Blanch the broccoli florets and chopped stalks in the boiling water until tender. About 3 to 4 minutes. Drain and set aside in a serving plate. You can arrange the broccoli florets in a circle and the stalks at the center of the circle.",
+      "Heat 2 tablespoons of oil in a frying pan/wok on a medium-high heat, sauté minced garlic until fragrant, about 2 minutes. Add the oyster mushrooms and stir for another minute.",
+      "Add the oyster sauce, water, sugar, and ground white pepper into the pan/wok. Mix well and bring to a boil. Once the sauce bubbles, turn off the heat and pour the entire thing into the plate with the broccoli. Garnish with scallions/green onions (optional) and serve immediately with steamed white rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Broccoli",
+        "unit": null,
+        "notes": "about 300 gram",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Oyster Mushrooms (indonesian: Jamur Tiram)",
+        "unit": null,
+        "notes": "tear into small bite size pieces",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": "Indonesian: saus tiram",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground White Pepper",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thinly Sliced Scallions/green Onions for Garnish (optional)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d0fbca946510e7e8861a6385d44e26560cb7e3b32c53246ff75795e8dc8701e2",
+    "lineage_hash": "0a51b0eabf8f2ee5be0a87decef8c95b014d88ea6257212ea372c317a877eb76"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/broccoli-and-mushroom-stir-fry-in-oyster-sauce.html",
+    "fetchedAt": "2026-08-02T09:45:36.364Z"
+  },
+  "rawSource": "https://dailycookingquest.com/broccoli-and-mushroom-stir-fry-in-oyster-sauce.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

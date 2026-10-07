@@ -1,0 +1,149 @@
+{
+  "recipe": {
+    "name": "Baked Mackerel",
+    "time": "50 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Lay a sheet of pastry onto a lightly floured work surface. Brush lightly with butter and press another sheet of pastry on top. Repeat with the remaining 2 sheets so you have 1 sheet made up of 4 layers",
+      "Cut out 4 little fish shapes, brush with egg white and sprinkle over a little salt and pepper, or some sesame seeds if preferred. Bake for 10-12 minutes until crispy and golden",
+      "Skin and de-stone the avocado. Dice the flesh into 5mm cubes. Peel the cucumber and dice into 5mm cubes",
+      "Drop the tomatoes into boiling water for a few seconds. Remove and plunge into iced water. Peel the skins from the tomatoes, remove the seeds and dice the flesh into 5mm squares",
+      "Mix together the tomato, cucumber and avocado in a bowl. Drizzle over the oil and add a squeeze of lemon juice. Store in the fridge until ready to serve",
+      "To fillet the mackerel, remove the head and tail, then hold the fish in place and run the knife along the bone from head to tail",
+      "With a stroking motion and starting at the spine, remove the fillet by cutting towards the belly. Repeat until you have 4 separate fillets",
+      "Remove the skin from the mackerel fillets along with any bones",
+      "Cut out 8 sheets of baking paper, slightly bigger than the fillets. Rub the sheets with oil on one side. Lay the fillets on the oiled paper, then lay the remaining sheets on top, oil-side down",
+      "Still covered, lay the fish onto a baking tray and bake in the oven for 10-12 minutes, or until cooked through. Remove from the oven and squeeze a little lemon juice over the fillets",
+      "To serve, divide the salsa onto plates and top each mound with a fillet of mackerel. Lay the fishy crisps on top of the fish and serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Mackerel",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon for Juice",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Filo Pastry Sheets",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Avocado",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon for Juice",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "edc0e8f9a621ca7d5d6bcf4d359403800ce9d9b8052fe77fc50b9f62443e4b22",
+    "lineage_hash": "1cfa4db04bfea9d505cb185d1a2e603dc970dc1fdf20f44eb7ce957f29cb2b1d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/baked-mackerel-recipe",
+    "fetchedAt": "2026-08-03T18:32:44.024Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/baked-mackerel-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Cachaça Cocktail: Cabral Fix",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Muddle the cucumber, lime, and agave. Add the remaining ingredients, whip shake (a brief shake just to integrate the ingredients), then pour into the glass. Top with crushed ice, then garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "2c01801522e06cecdd15ff7fc26edf72c0b939606b05b4b57d67aa20b0efce5f",
+    "lineage_hash": "30d1379e2655f3139481b9647d7a87758b12ad178cdb2725647311dd34a3abd9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cachaca-cocktail-cabral-fix/",
+    "fetchedAt": "2026-08-03T18:08:34.840Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cachaca-cocktail-cabral-fix/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

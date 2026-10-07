@@ -1,0 +1,46 @@
+{
+  "recipe": {
+    "name": "Buster's Tri-Tip",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the tri-tip in a baking dish. Make the rub. Place the salt, pepper, garlic powder, MSG, and hot pepper in a small bowl and mix with your fingers. Sprinkle the meat with rub on all sides, rubbing the spices into the meat. Cover the tri-tip and marinate in the refrigerator for at least 8 hours or as long 24.",
+      "Set up your grill for direct grilling and preheat it to medium-low. Ideally, you’ll be grilling over a wood (oak) fire. If working on charcoal, at very least toss some oak chips. For a gas grill place the wood chips in the smoker box.",
+      "Grill the tri-tip until crusty and brown on the outside and cooked to taste inside, 15 to 20 minute per side for medium-rare.",
+      "Transfer the tri-tip to a cutting board and let rest for 3 minutes. Thinly slice across the grain and serve at once with grilled garlic bread on the side."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef Tri-tip",
+        "unit": null,
+        "notes": "2 to 2-1/2 pounds",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "520265ecb0f770f2ed682b8b191046d1c55f62700c953aeec51a38d1af8a2e6e",
+    "lineage_hash": "00c67984bce24b9e5b430873d76564838a3e515eda8976ba5fe1701688cf186a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/busters-tri-tip/",
+    "fetchedAt": "2026-08-03T02:45:12.557Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/busters-tri-tip/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

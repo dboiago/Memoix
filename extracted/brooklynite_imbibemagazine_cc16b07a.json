@@ -1,0 +1,35 @@
+{
+  "recipe": {
+    "name": "Brooklynite",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all ingredients and shake with ice to chill. Fine-strain into a chilled glass and garnish.",
+      "*If using fresh honey, stir contents to dilute the honey before adding ice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "b63ce4c86e00cf469a57639c208fc30c70049efed55b496285b2d918ed3ac5c6",
+    "lineage_hash": "db6d6d07a35f4a71aae3ea94021d904d417cb6277f234a47ff79aa9b78878551"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/brooklynite-recipe/",
+    "fetchedAt": "2026-08-03T20:09:12.624Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/brooklynite-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

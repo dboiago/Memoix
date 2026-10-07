@@ -1,0 +1,128 @@
+{
+  "recipe": {
+    "name": "Belacan Sauce",
+    "time": "1 hr 10 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "32",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "67",
+      "carbohydrateContent": "3",
+      "fatContent": "5",
+      "proteinContent": "4"
+    },
+    "directions": [
+      "Soak the de-seeded dried chili peppers in 1 cup of warm water for 15-20 minutes.",
+      "While the dried peppers are soaking, de-stem and de-seed the Holland peppers, removing the membranes as well. You can leave the seeds in if you like your sauce very spicy. Cut each pepper into 3 pieces. If using, chop the Thai chilies.",
+      "Take half of your shallots and finely chop them. With the other half, thinly slice them. (You can also chop them, but I think slices add another textural dimension to the final sauce.",
+      "Drain the dried chili peppers, and set aside the soaking water. To the bowl of a food processor or blender, add the dried peppers, Holland peppers, Thai chilies (if using), half of the shallots (i.e. your chopped shallots, setting aside the slices for later), and garlic. Pulse until the mixture is smooth, or if you prefer, a coarse paste. Use a rubber spatula to scrape down the sides of the bowl to ensure the mixture is evenly processed.",
+      "Heat a frying pan or wok over medium heat. Add the oil and chopped dried shrimp. Fry over medium to medium low heat for 3-5 minutes.",
+      "Put the belacan in a mortar and pestle to break it up (you can also put it in a small bowl and break it up with a fork). Add it to the pan. Cook for 3-4 minutes, until the belacan is melted into the sauce.",
+      "Add the sliced shallots, and cook for 3-4 minutes, until translucent.",
+      "Next, add the chili, garlic and shallot paste. Stir to combine, and add ½ cup of the reserved pepper soaking water. Cook for 5 minutes, stirring occasionally. Stir in the fish sauce and brown sugar. Continue to cook for another 15 minutes.",
+      "Let the mixture cool, and transfer to a clean jar or other airtight container. Refrigerate for up to 4 weeks, or freeze (it should last up to 1 year frozen)."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sichuan Chili Peppers",
+        "unit": null,
+        "notes": "16 dried peppers = 10g; deseeded, dried",
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Holland Chilies",
+        "unit": null,
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thai Chili Peppers",
+        "unit": null,
+        "notes": "chopped, optional for added heat",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": "C",
+        "notes": "about 6 large, divided, sliced",
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "8 cloves = approx. 40g",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Canola Oil",
+        "unit": "C",
+        "notes": "or peanut oil",
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shrimp",
+        "unit": "C",
+        "notes": "chopped, dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Belacan Shrimp Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "Tbsp",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0b186df76752a30fb00c11ffaaf138bba896a53ca0c5e862a310acb954b89f56",
+    "lineage_hash": "92ad86b06a6ff6378822aa398c3ca0f2fa0276d6bcda1720d5851c99d94b72e9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/belacan-sauce/",
+    "fetchedAt": "2026-08-02T05:19:00.164Z"
+  },
+  "rawSource": "https://thewoksoflife.com/belacan-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,132 @@
+{
+  "recipe": {
+    "name": "Almond Rosemary Lemon Crusted Tofu",
+    "time": "38 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "163",
+      "carbohydrateContent": "13",
+      "fatContent": "10",
+      "proteinContent": "4"
+    },
+    "directions": [
+      "OVEN: Preheat your oven 400F (200C). Line a baking sheet with parchment paper.AIR FRYER: Preheat your air fryer to 370F (190C).",
+      "To make the almond rosemary crust, add the almonds and rosemary to&nbsp;a food processor grind until the almonds are finely chopped but some larger chunks remain. Add the breadcrumbs, lemon zest, salt, garlic powder, and black pepper and pulse to combine. Alternatively, you can finely chop the almonds and rosemary with a knife, and then just mix everything together in a bowl.",
+      "Take 3 medium bowls. In the first bowl add the all-purpose flour. In the second bowl pour in the coconut milk. In the third bowl, pour in the almond rosemary mixture.",
+      "Now take a tofu slice and dredge the tofu in the flour. Shake off excess and then dip the floured tofu into the coconut milk. Finally, dip the coconut milk covered tofu into the almond rosemary mixture to coat. Place the coated tofu on the parchment paper and repeat with remaining slices until they are all coated.",
+      "OVEN: Place the coated tofu on the parchment paper and repeat with the remaining slices until they are all coated. Bake 18 - 23 minutes until the crust is lightly golden and crispy. Serve hot with a wedge of lemon for squeezing.AIR FRYER: place the coated tofu in a single layer in the bottom of the air fryer (you make need to work in batches). Fry 14 - 20 minutes until the crust is lightly golden and crispy. Serve hot with a wedge of lemon for squeezing."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Block (350g) Extra-firm",
+        "unit": null,
+        "notes": "alt: firm tofu, drained, pressed*, and cut into 8 slices",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raw Almonds",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "Tbsp",
+        "notes": "about 2 sprigs with stems removed, fresh",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bread Crumbs",
+        "unit": "C",
+        "notes": "gluten-free if preferred",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Zest",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": "gluten-free if preferred",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Full-fat Coconut Milk",
+        "unit": "C",
+        "notes": "or other plant-based milk if preferred",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Wedges for Serving",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "595bc2f8c2b3871ebee67e573b9d0ff24c6787a840787d13b9f1647545e6d184",
+    "lineage_hash": "115682d7388a11b333b1f8707e627c6d613324824b56f7ce14afeab541c71148"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/almond-rosemary-lemon-crusted-tofu/",
+    "fetchedAt": "2026-08-02T00:09:31.856Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/almond-rosemary-lemon-crusted-tofu/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

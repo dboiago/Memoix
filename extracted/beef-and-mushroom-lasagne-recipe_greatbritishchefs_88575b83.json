@@ -1,0 +1,180 @@
+{
+  "recipe": {
+    "name": "Beef and Mushroom Lasagne",
+    "time": "2 hr 15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a large saucepan, cook the mince and bacon pieces until the mince is browned. Remove from the pan and set aside",
+      "Heat 2 tbsp of oil in the pan and cook the onions until soft but not coloured. Add back the meat, then splash in the wine and cook for 10 minutes or so, stirring occasionally. Add the tomatoes, bay leaf and some salt and pepper",
+      "Put a lid on the pan and allow to cook, stirring every now and then, for around 1 hour. After this time, remove the lid and allow to cook for another half an hour or so, until the ragu has thickened",
+      "Pour boiling water onto the dried porcini and allow to rehydrate for 20 minutes. Heat 2 tbsp of oil in a frying pan and cook the girolles, closed cup mushrooms and chestnut mushrooms until soft. Add the sage, cook a few minutes more then set aside",
+      "Drain the porcini, reserving the water. Add the water to the ragu sauce, chop the porcini and add them to the other mushrooms",
+      "To make the béchamel, melt the butter and and add the flour to it. Cook, stirring all the time, until the flour mixture is a golden sandy colour",
+      "In a separate saucepan, heat the milk until almost boiling. Add it, a ladleful at a time, into the flour and butter mixture, whisking until smooth with each addition. Do this until all the milk is added, then bring the sauce to the boil and cook for around 5 minutes or so, until the sauce has thickened. Season with salt and pepper, then add the mushrooms and set aside",
+      "To assemble the lasagne, add a layer of ragu, then add a layer of pasta sheets. Spread over a very scant layer of mushroom béchamel, then another layer of pasta sheets, then another of ragu",
+      "Add another very scant layer of béchamel, then pasta sheets, then continue repeating these steps until you get to the top. On the final layer of pasta sheets, add the remaining béchamel so that you have a nice thick layer. Grate the Parmesan cheese on top and bake for 30-40 minutes until golden and bubbling",
+      "Serve with a green salad dressed with a sharp vinaigrette"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Lasagne Pasta",
+        "unit": null,
+        "notes": "packet",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Mince",
+        "unit": "g",
+        "notes": null,
+        "amount": "700",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bacon Rashers",
+        "unit": null,
+        "notes": "diced",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tins of Chopped Tomatoes",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chestnut Mushrooms",
+        "unit": "g",
+        "notes": "sliced",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Button Mushrooms",
+        "unit": "g",
+        "notes": "sliced",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Girolles",
+        "unit": "g",
+        "notes": "sliced",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Porcini Mushroom",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sage Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "da4a83a68c3be1c7d81b1c735f5a8f2ca23f9b8fb004e68b777c546029421c9b",
+    "lineage_hash": "f1a43b846ee298bbf93f2ae14b6db7c52da171a932b87e84105b266fe64f5079"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beef-mushroom-lasagne-recipe",
+    "fetchedAt": "2026-08-03T14:48:14.516Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beef-mushroom-lasagne-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

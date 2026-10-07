@@ -1,0 +1,37 @@
+{
+  "recipe": {
+    "name": "Bala de Canon Cantaloupe Cocktail",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [
+      "Chia-seed and Cantaloupe"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake ingredients with ice and strain into a rocks glass filled with fresh ice. Garnish.",
+      "Cantaloupe PuréeSkin a ripe cantaloupe and cut the fruit into chunks, reserving the seeds and pulp. Purée in a blender (with the seeds, which add flavorful complexity) until smooth; press through a fine strainer to remove solids. Refrigerate and use within 2 days."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "7459d8a0c4b2b547d340f1db855a65d5a9ebaa460fa865791e40427b8522c1dd",
+    "lineage_hash": "ae008dc570258a9868c190e1d9280f31735be43eb7cdc269d8cc3b04d80249e9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bala-de-canon-cocktail/",
+    "fetchedAt": "2026-08-03T22:20:21.886Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bala-de-canon-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

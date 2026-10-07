@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Amaretto Sour",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all of the ingredients in a shaker and “dry” shake without ice for 5 seconds. Add ice and shake again for 15 seconds. Strain into a chilled glass filled with ice and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "1f74c6b7a386887d541073ce80e2481c7cea1d1042ca1d838372749442b469ed",
+    "lineage_hash": "7b4c1a6e05a424183a2819e3181d2985a0195e7dfce6fb888c3fca88cd93b52c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/recipe-amaretto-sour/",
+    "fetchedAt": "2026-08-03T23:14:25.752Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/recipe-amaretto-sour/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

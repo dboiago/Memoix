@@ -1,0 +1,149 @@
+{
+  "recipe": {
+    "name": "Chinese Beef Dumplings with Celery",
+    "time": "1 hr 5 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "40",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "68",
+      "carbohydrateContent": "6",
+      "fatContent": "3",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "Soak Sichuan peppercorn with boiling hot chicken stock and set aside for 10 minutes. Strain and remove the Sichuan peppercorns.",
+      "Add the ground beef in a large bowl and mix the chicken stock with beef by three batches. Each time after adding the stock, use a chopstick to stir it in one direction until all the liquid is absorbed. Continue stirring for couple of minutes after mixing all of the chicken stock until the beef becomes quite sticky and fluffy.",
+      "Add ginger, scallion white, light soy sauce, salt, sugar, white pepper and sesame oil. Combine well. Set aside until making your dumpling wrappers.",
+      "Before assembling your wonton, mix chopped celery in. Scoop around 1 tablespoon of filling in the center and assemble the dumplings with your favorite method. Repeat to finish all of the dumplings.",
+      "Over medium heat, heat around 1 tablespoon of oil in a nonstick pan. Place the dumplings in one by one. Fry until one side of the dumpling become slightly brown. Swirl around 1/4 cup of water in and cover the lid immediately. So the water vapor can cook the dumplings completely. After around 1 to 2 minutes, lift the lid and continue fry until crispy again.",
+      "Bring a large pot of water to boil in a pot. Place the dumplings in. Stir gently to prevent the dumplings stick to the bottom. Cover the lid and wait for the second boiling. Slightly pour a small amount of water can help to speed up the boiling process. Continue cooking until the dumplings are swollen and slightly transplant. Transfer out and serve directly with dips (usually vinegar +ginger shreds)."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dumpling Wrappers",
+        "unit": null,
+        "notes": null,
+        "amount": "40-50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Beef",
+        "unit": "C",
+        "notes": "15% fat at least",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "C",
+        "notes": "boiling hot",
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sichuan Peppercorn",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Cooking Oil",
+        "unit": "Tbsp",
+        "notes": "optional",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "grated",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leek Scallion White",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ac15fa41ca93ca6810d4863df4a4d7985d6f636c6b24ecc50990243d255d33d2",
+    "lineage_hash": "a6e340745fddfdeab87f40c9281734f36de51f317f058e895bc2c489b94e9c8e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/chinese-beef-dumplings-with-celery/",
+    "fetchedAt": "2026-08-02T04:00:22.787Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/chinese-beef-dumplings-with-celery/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

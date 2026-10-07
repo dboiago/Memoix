@@ -1,0 +1,211 @@
+{
+  "recipe": {
+    "name": "Baked Beef Flautas with Birria",
+    "time": "8 hr 45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "20",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "461",
+      "carbohydrateContent": "12",
+      "fatContent": "27",
+      "proteinContent": "45"
+    },
+    "directions": [
+      "In a slow cooker add water, beef chunks (cut into 4-inch cubes), onion, garlic, salt, black peppercorns, bay leaves, oregano, marjoram, mint, and thyme (if using).",
+      "Cook on low for 8 to 10 hours.",
+      "Remove the beef and shred the meat and discard fat pieces. Season to taste. Place shredded meat back in the slow cooker with beef broth liquid.",
+      "Remove stems, seeds, and veins from the chile pods. Place in a colander and rinse well with cool water.",
+      "Add chiles, garlic, onion, and water to a large pot. Bring water to a boil. Lower the heat, cover, and simmer for about 20 minutes. After 10 minutes turn the chiles over with tongs to make sure the chiles soften evenly. Allow time to cool down before blending. Do not discard water.",
+      "Once cooled, place the chiles, garlic, onion, and liquid in blender with salt. Blend until smooth. If necessary, season with more salt.",
+      "Strain red chile sauce through a fine sieve into the slow cooker and stir. This broth is the \"consommé\". Discard skins and seeds.",
+      "Preheat oven to 400 degrees F. Line a baking sheet with parchment paper for easy cleanup.",
+      "Spray or brush tortillas with avocado oil.",
+      "Sprinkle cheese first then add shredded beef.",
+      "Roll up tightly and secure each flauta with a toothpick.",
+      "Bake until golden brown and crispy, 15-18 minutes.",
+      "Cut in half and serve flautas with small bowls of warm consommé (beef broth red chile sauce mixture) for dipping.",
+      "Control your oil. Feel free to either brush or spray your tortillas with avocado oil. Brushing typically adds a bit more oil to the mix for a more indulgent bite, whereas cooking sprays keep it a little lighter.",
+      "Don’t overstuff. It’s tempting to stuff as much finger-licking-delicious goodness into each flauta, but you’ll only be doing yourself a disservice. If you overstuff, all the cheesy, meaty goodies burst out and become nearly impossible to eat without a fork.",
+      "Prep ahead. I recommend preparing the birria ahead of time, and assembling and baking flautas on the day of serving. Tortillas have a tendency to get soggy quickly, and assembling flautas ahead of time might not work. Once flautas are baked, you can freeze any leftovers. To reheat, bake until heated all the way through.",
+      "Air Fryer Flautas – Since air fryers blow the hot air around, they typically cook much faster than regular ovens. I’d recommend preheating the air fryer to 375F, then frying for about 5 to 8 minutes. Start checking at the 5 minute mark, shake, and continue to air fry to your preferred level of doneness. Here is my favorite Air Fryer if you are in the market for one.",
+      "Birria Egg Rolls – Birria egg rolls are all the rage!! If you want to make birria egg rolls, wrap Birria with spring roll wrappers and fry!",
+      "Have fun with your fillings! Want to make baked flautas with other fillings? Try Black Bean & Bacon Flautas, Pork Tinga Flautas, or Brisket Flautas.",
+      "Toppings – Just like tacos, flautas taste even better served with a variety of toppings and salsas and sauces. Try simple crema Mexicana or a spicy creamy avocado sauce!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Chuck Roast",
+        "unit": "lb",
+        "notes": "alt: beef shank, boneless",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oregano",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Marjoram",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Springs Thyme",
+        "unit": null,
+        "notes": "optional",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Guajillo Chiles",
+        "unit": null,
+        "notes": "alt: California or New Mexico",
+        "amount": "8",
+        "section": "Red Chile Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Ancho Chiles",
+        "unit": null,
+        "notes": "optional",
+        "amount": "2",
+        "section": "Red Chile Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": "Red Chile Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": null,
+        "amount": "¼",
+        "section": "Red Chile Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "5",
+        "section": "Red Chile Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Red Chile Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Wheat & Corn Flour Tortillas",
+        "unit": null,
+        "notes": null,
+        "amount": "10",
+        "section": "Flautas",
+        "isOptional": false
+      },
+      {
+        "name": "Oaxaca",
+        "unit": null,
+        "notes": "Chihuahua, or monterey jack cheese, shredded",
+        "amount": "0",
+        "section": "Flautas",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2fb4dfab3b34e6a93468a415e68b1d31d82b9290959e616d76382f564b30490e",
+    "lineage_hash": "2cacab61a60cc3917f9cff4ab50ee3a7c7010fd770788ce29bcd4a78927c4a99"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/baked-flautas-with-birria/",
+    "fetchedAt": "2026-08-02T01:44:59.044Z"
+  },
+  "rawSource": "https://muybuenoblog.com/baked-flautas-with-birria/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

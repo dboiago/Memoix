@@ -1,0 +1,202 @@
+{
+  "recipe": {
+    "name": "Cedar Planked Salmon",
+    "time": "25 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Soak the cedar plank in cold water for at least 1 hour before cooking. Preheat a grill or barbecue",
+      "Season each salmon fillet with salt and white pepper, then lightly brush with olive oil. Drain the soaked plank and place over the hot grill, allowing it to heat up for a few minutes until it starts to smoke and crackle",
+      "Place the salmon fillets on top of the plank and cook until medium-rare – this should take about 10–15 minutes, but check regularly as it cooks",
+      "Meanwhile, prepare the port jus. Place the stock and port in a small pan over a medium heat. Allow to cook down at a gentle simmer until reduced by three-quarters (about 10–15 minutes), then stir through the butter until combined then keep warm",
+      "In a separate pan, gently warm the hazelnut oil over a medium heat. Add the endive, shallot and thyme, then cook down for a few minutes until lightly wilted. Deglaze the pan with the white balsamic and set aside",
+      "Add the butter to a frying pan and allow to melt over a gentle heat. Add the apple slices and sauté until golden brown. Sprinkle over the sugar and allow to lightly caramelise before removing the pan from the heat",
+      "To serve, drizzle some of the port jus over each serving plate, then add a mound of the sautéed endive. Top with the cooked salmon fillets and caramelised apple slices",
+      "Mix together the olives, chervil, hazelnut halves and hazelnut oil. Scatter over the salmon with the julienne endive to garnish"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Salmon Fillets",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Endive",
+        "unit": null,
+        "notes": "sliced into 1cm rounds",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": "Tbsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme Leaves",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hazelnut Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Balsamic Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple",
+        "unit": null,
+        "notes": "peeled, cored and sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Olives",
+        "unit": null,
+        "notes": "mixed varieties, pitted and halved",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chervil",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Hazelnuts",
+        "unit": "Tbsp",
+        "notes": "halved",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hazelnut Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Endive",
+        "unit": null,
+        "notes": "cut into julienne",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Port",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2770e6303bc94e9c82c4000923c0d62cf907211ed5e98a81d80ee2f8e9dbf43c",
+    "lineage_hash": "117c97bd7c14a5e28309f8cbb978c78a9d44d8fc52050d3c906243bcc05f66f7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cedar-planked-salmon-recipe",
+    "fetchedAt": "2026-08-03T12:48:46.543Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cedar-planked-salmon-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,37 @@
+{
+  "recipe": {
+    "name": "Apple Brandy Cocktail",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [
+      "Lemon Twist"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake all of the ingredients together in a shaker with ice, then double strain into a chilled coupe with a sugared rim. Express lemon peel and twist to use as a garnish.",
+      "Saline Solution: Weigh 10 grams of salt (you can use table salt). Pour the salt into a graduated cylinder or volumetric flask containing about 180 ml. of water. Swirl the flask gently until the salt dissolves. Add enough water to bring the final volume up to 200 ml. Don&#8217;t simply measure 200 grams of water and add the salt, because adding salt changes the final volume of solution and affects the final percentage."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "d56296b9075a7aff040fdd4664382ad7f7fe0958e527799ccf91a445ad6fb3ab",
+    "lineage_hash": "671d45195d31477ffa9d7a1d12f42f58af486d613f712220851350b477ae4e3f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/apple-brandy-cocktail-without-borders/",
+    "fetchedAt": "2026-08-03T19:50:19.428Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/apple-brandy-cocktail-without-borders/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

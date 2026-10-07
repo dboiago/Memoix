@@ -1,0 +1,35 @@
+{
+  "recipe": {
+    "name": "Blue Hawaii",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Hurricane",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all the ingredients in a shaker with ice and shake to chill, then strain into a hurricane glass filled with crushed ice. Garnish.",
+      "House SourIn a saucepan over medium heat, combine 1 cup of water and 1 cup of granulated sugar, stirring until the sugar dissolves. Remove the syrup from the heat and allow it to cool to room temperature, then add 1 cup of fresh lemon juice and 1/2 cup of fresh lime juice and mix well. Keep the remainder refrigerated for up to 1 week."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "a9a1d43b2262c68bf183a44e4357e6f1376c5b0608f2b3a946164076b54ca2ae",
+    "lineage_hash": "9714d3a8fc033735da1377879e69fcdd60e7c782f47caedc71c53feff3451248"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/blue-hawaii/",
+    "fetchedAt": "2026-08-03T22:07:17.247Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/blue-hawaii/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

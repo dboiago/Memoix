@@ -1,0 +1,97 @@
+{
+  "recipe": {
+    "name": "Home-Cured Ham",
+    "time": "10 to 12 hours",
+    "course": "smoking",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the salt, sugar, pickling spice, curing salt, and 3 quarts of hot water in a large nonreactive pot and stir in additional flavorings, if using. Boil until the salts and sugar are completely dissolved. Cool, then strain.",
+      "Inject 2 cups of the brine deep into the pork shoulder at 1 1/2 intervals along the bone; continue until all the brine is used.",
+      "Submerge the ham in the remaining brine in a humbo heavy-duty resealable plastic bag. Place in another large container to contain any leaks. Cure for 8 days, turning daily.",
+      "Halfway through the curing time, measure out 2 more cups of brine and strain. Reinject the ham with it.",
+      "Drain the ham well, then smoke: Heat your grill or smoker to 225 to 250 degrees. Add the wood chips or chunks to the coals. Hot-smoke the ham until cooked through. (The internal temperature should reach about 160 degrees F on an instant-read thermometer), 10 to 12 hours.",
+      "Insert the probe deep into the meat, but not touching the bone. (Optional: If you have the equipment, you can cold smoke the ham for several hours at temperatures not exceeding 100 degrees.)",
+      "Glaze and reheat as desired: You can serve the ham hot off the grill or smoker, or let it cool to room temperature, then refrigerate until you’re ready to serve. (It will keep, covered and refrigerated, for at least a week.)"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Salt",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pickling Spice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curing Salt",
+        "unit": "Tbsp",
+        "notes": "Prague Powder #1",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Quart Hot Water",
+        "unit": "qt",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cup Brine",
+        "unit": "C",
+        "notes": "injected into pork shoulder at 1 1/2 intervals along the bone",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cup Brine",
+        "unit": "C",
+        "notes": "reinjected halfway through curing time",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "339904f51103bb8cde1392884e6ac41843a1558e23c0949f58fa68d29c778909",
+    "lineage_hash": "2d750d4d7ee705f811453d2857b752eb92c5d66c702a3b16611edc4bc6670b76"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/2024/03/20/back-to-basics-crafting-your-own-home-cured-ham/",
+    "fetchedAt": "2026-08-02T20:52:52.610Z"
+  },
+  "rawSource": "https://barbecuebible.com/2024/03/20/back-to-basics-crafting-your-own-home-cured-ham/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

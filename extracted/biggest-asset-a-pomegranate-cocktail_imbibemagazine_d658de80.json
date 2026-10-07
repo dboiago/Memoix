@@ -1,0 +1,37 @@
+{
+  "recipe": {
+    "name": "Biggest Asset: A Pomegranate Cocktail",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [
+      "Cucumber Ribbon",
+      "Mint Sprig"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Insert a cucumber ribbon in the glass followed by crushed ice. Add 1/2 a cucumber (cut up in 6 small pieces) and 6 mint sprigs to the shaker and lightly muddle. Add all of the ingredients to the shaker with ice. Shake and double strain over the crushed ice in the glass. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "8c1f24810b6b5ac5b0cac7239694678a6d58b845d9b48d270b0a7faee8e6dbd4",
+    "lineage_hash": "7e95166090af6aea1d0e125af52ffcb373467a9960a0323e9ca399b01d6d1380"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/biggest-asset-pomegranate-cocktail/",
+    "fetchedAt": "2026-08-04T01:23:36.319Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/biggest-asset-pomegranate-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

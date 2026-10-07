@@ -1,0 +1,167 @@
+{
+  "recipe": {
+    "name": "Cantonese Ground Beef Rice and Eggs",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "359",
+      "carbohydrateContent": "14.8",
+      "fatContent": "15.8",
+      "proteinContent": "38.6"
+    },
+    "directions": [
+      "Mix the sauce ingredients together in a small bowl.",
+      "Heat the oil in a large nonstick pan (or carbon steel paover medium heat until hot. Add the ground beef and spread it with your spatula. Let it cook without touching until the bottom is browned. Break up the beef into smaller bits.",
+      "Add the onions and ginger. Cook and stir occasionally, until onion turns tender and the edges are lightly browned, 5 minutes or so.",
+      "Pour in the sauce. Stir to mix well. Cover and simmer for 10 minutes. Your pan should still have some sauce left, just enough to cover the beef. If not, you can gradually stir in more broth.",
+      "Meanwhile, whisk the cornstarch with 1/4 cup of water in a small bowl.",
+      "Once the beef is cooked, add the frozen peas. Stir the cornstarch slurry again to dissolve the powder completely, and pour half of the slurry into the pot. Stir to mix well. The broth should thicken and will able to coat the back of a spoon. If the broth is still very thin, keep adding more cornstarch slurry to the broth and stir constantly, until it thickens.",
+      "Crack 5 eggs onto the beef. Cover immediately and let it steam until the egg whites are cooked and the yolks are still runny, 2 to 3 minutes. Or you can cook the eggs to the degree you prefer. Make sure the sauce doesn’t come to a full boil, which will reduce the cornstarch&#x27;s ability to thicken the sauce. Move the pan off the heat for a few seconds if the pan gets too hot.",
+      "Once done, uncover the pan and remove it from the stove. Use a spatula or ladle to transfer the beef with an egg and some sauce onto a bowl of rice. Serve hot as a main dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ground Beef",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "C",
+        "notes": "or beef stock, or veggie stock",
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": "or dry sherry",
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "or soy sauce",
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "tsp",
+        "notes": "or soy sauce",
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "or vegetable oil",
+        "amount": "1",
+        "section": "Cooking",
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Onion",
+        "unit": null,
+        "notes": "minced",
+        "amount": "1",
+        "section": "Cooking",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "2",
+        "section": "Cooking",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Cooking",
+        "isOptional": false
+      },
+      {
+        "name": "Green Peas",
+        "unit": "C",
+        "notes": "frozen",
+        "amount": "1",
+        "section": "Cooking",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "1",
+        "section": "Cooking",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "5",
+        "section": "Cooking",
+        "isOptional": false
+      },
+      {
+        "name": "Steamed Rice",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "Serving",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "00b4902a5f1ea759cef54e98afe2e151e0ada383a038a0032164956bfc9206eb",
+    "lineage_hash": "d4d284f88bddd38a6ae63824405eaa3ced0d50b5d5d18ccd3cc495415c5d6cdb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/cantonese-ground-beef-rice-eggs/",
+    "fetchedAt": "2026-08-02T04:12:02.313Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/cantonese-ground-beef-rice-eggs/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

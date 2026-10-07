@@ -1,0 +1,133 @@
+{
+  "recipe": {
+    "name": "Braised Eggs with Leeks and Za'ater",
+    "time": "30 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Put the butter and 1 tablespoon of oil into a large sauté pan, for which you have a lid, and place on a medium high heat. Once the butter starts to foam, add the leeks, ½ teaspoon of salt and plenty of pepper. Fry for 3 minutes, stirring frequently, until the leeks are soft. Add the cumin, lemon and vegetable stock and boil rapidly for 4–5 minutes, until most of the stock has evaporated. Fold in the spinach and cook for a minute, until wilted, then reduce the heat to medium",
+      "Use a large spoon to make 6 indentations in the mixture and break one egg into each space. Sprinkle the eggs with a pinch of salt, dot the feta around the eggs, then cover the pan. Simmer for 4–5 minutes, until the egg whites are cooked but the yolks are still runny",
+      "Mix the za’atar with the remaining tablespoon of oil and brush over the eggs. Serve at once, straight from the pan"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leeks",
+        "unit": "large",
+        "notes": "530g, (or 4 smaller), trimmed and cut into ½cm slices",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": "toasted and lightly crushed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Preserved Lemons",
+        "unit": "small",
+        "notes": "30g, pips discarded, skin and flesh finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Spinach Leaves",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Feta",
+        "unit": "g",
+        "notes": "broken into 2cm pieces",
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Za'atar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "85cb84985be112f86868f85c73393585aa68c2de4a9f78f7ad633725a84c7f82",
+    "lineage_hash": "b1a854bdee778faad7d1de2c12b5ec0a9bd9715cbcde42c97a75973e016b2cf4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/braised-eggs-leeks-zaatar-recipe",
+    "fetchedAt": "2026-08-03T09:21:46.334Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/braised-eggs-leeks-zaatar-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

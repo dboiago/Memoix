@@ -1,0 +1,141 @@
+{
+  "recipe": {
+    "name": "A Trio Of Meat Brine Recipes For Injecting Maximum Flavor",
+    "time": "10 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Prep. Mix all the ingredients in a bottle and shake vigorously before injecting. Pour into a narrow container so you can suck fluid in through the needle. In a wide bowl it is hard to get the holes below the water line and you then need to unscrew the top, pour it into the syringes, spill it everywhere, screw on the top, inject, and repeat. I bought a V-shaped flower vase for the job.",
+      "Inject. Insert the needle and go all the way to the center. Press the plunger slowly and ease the needle out. Insert the needle about every 1.5&quot; (38.1 mm) apart and leave behind about 1 ounce (30 mL) per pound (453.6 grams). A little liquid will follow the needle out of the hole, but if it comes spurting out, use less pressure. We want to avoid pockets of liquid.",
+      "Cook. You can cook right away, but if you let the meat rest for an hour or more, even overnight, the injection will disperse more evenly through the meat. Then dry the surface with a paper towel and apply your rub and cook."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Morton Coarse Kosher Salt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Pork Brine Injection",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Pork Brine Injection",
+        "isOptional": false
+      },
+      {
+        "name": "Worcestershire",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Pork Brine Injection",
+        "isOptional": false
+      },
+      {
+        "name": "Rice Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Pork Brine Injection",
+        "isOptional": false
+      },
+      {
+        "name": "Apple Juice",
+        "unit": "C",
+        "notes": "alt: low sodium pork, chicken, or beef stock",
+        "amount": "1",
+        "section": "Pork Brine Injection",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "3",
+        "section": "Pork Brine Injection",
+        "isOptional": false
+      },
+      {
+        "name": "Morton Coarse Kosher Salt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Red Meat Brine Injection",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Red Meat Brine Injection",
+        "isOptional": false
+      },
+      {
+        "name": "Worcestershire",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Red Meat Brine Injection",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "alt: low sodium beef stock, or a mix of both",
+        "amount": "4",
+        "section": "Red Meat Brine Injection",
+        "isOptional": false
+      },
+      {
+        "name": "Morton Coarse Kosher Salt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Poultry Brine Injection",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Poultry Brine Injection",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "alt: low sodium chicken stock, or a mix of both",
+        "amount": "4",
+        "section": "Poultry Brine Injection",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "06f12f56e3a510433939ed8a2a5e79a557afc6e87f3b1ca342da958cda3bfbfb",
+    "lineage_hash": "039b6ea6a8036d66e31b8025a72dbca07b8d2895d25060808e538ecbfea85402"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://amazingribs.com/tested-recipes/salting-brining-curing-and-injecting/injecting-brine-gets-flavor-deep/",
+    "fetchedAt": "2026-08-02T09:57:11.592Z"
+  },
+  "rawSource": "https://amazingribs.com/tested-recipes/salting-brining-curing-and-injecting/injecting-brine-gets-flavor-deep/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,181 @@
+{
+  "recipe": {
+    "name": "Canarian Ropa Vieja",
+    "time": "2 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "ES",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "635",
+      "carbohydrateContent": "34.38",
+      "fatContent": "36.04",
+      "proteinContent": "37.64"
+    },
+    "directions": [
+      "Cover the chicken and beef with water and bring to a boil, then simmer until cooked through. Let the meat cool, then shred it.",
+      "Add a splash of olive oil to a large frying pan and set over medium heat. Add the shredded meat and garbanzos and cook until crispy. Set aside.",
+      "In the same oil, adding more if necessary, sauté the chopped onion, pepper, tomato, and garlic and cook until softened and sauce-like.",
+      "Add the chicken broth, white wine, smoked paprika, cloves, salt, pepper, and bay leaf and bring to a simmer.",
+      "Add the diced potatoes, cover, and simmer for 15 minutes. (It&#39;s traditional to fry the potatoes separately, but this is a bit more healthy.)",
+      "Uncover after 15 minutes and continue simmering until the potatoes are cooked through. Enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Drumsticks",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil As Needed",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Can Chickpeas",
+        "unit": "large",
+        "notes": "garbanzo beans",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Links Chorizo Optional",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Pepper Chopped",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion Chopped",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes Peeled and Chopped",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Chopped",
+        "unit": "clove",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Spanish Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": "lb",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6568e7ff45663f75090f1c3517c216892db36f016ad710e82c70dd3718ef1bf7",
+    "lineage_hash": "fa6f00fe918c3434d247cb3cb6083b89d4807ac4fcd138cf78478b2df559e3d6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://spanishsabores.com/canarian-ropa-vieja-recipe/",
+    "fetchedAt": "2026-08-02T10:08:52.009Z"
+  },
+  "rawSource": "https://spanishsabores.com/canarian-ropa-vieja-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,66 @@
+{
+  "recipe": {
+    "name": "Amazake Lemonade (Japanese Lemonade)",
+    "time": "3 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "174",
+      "carbohydrateContent": "36",
+      "fatContent": null,
+      "proteinContent": "2"
+    },
+    "directions": [
+      "Follow the instructions for making amazake (by clicking the link).",
+      "Pour Amazake in a cup or glass.",
+      "Add lemon juice and honey and stir."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Amazake",
+        "unit": "ml",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbs Lemon Juice",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey Optional",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8c0f00af9bde8547cf2be3c0859bd4b4fd4a59b8a271049693e3244116cb7b37",
+    "lineage_hash": "2a3e54dd70184ec869a38009ddf3e14f5d8a387d920408a9f41c915c2e83c887"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chopstickchronicles.com/amazake-2/",
+    "fetchedAt": "2026-08-02T02:01:01.706Z"
+  },
+  "rawSource": "https://www.chopstickchronicles.com/amazake-2/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

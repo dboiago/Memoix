@@ -1,0 +1,145 @@
+{
+  "recipe": {
+    "name": "Charcuterie Flatbread with Medjool Dates, Prosciutto & Parmesan",
+    "time": "25 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Measure the flour, salt, sugar (if using) and yeast into a large mixing bowl. Add the water, honey (if using in place of sugar), yoghurt and 1 Tbsp olive oil and stir with a wooden spoon until too difficult to do so. Turn the dough out onto a worktable and knead for about 5 minutes, until elastic. Return to the bowl and cover bowl, letting the dough rise on the counter for 40 minutes.",
+      "To bake the flatbread, preheat the oven to 400℉ (200℃). Divide the dough into 2 pieces and shape each into a ball. Use a rolling pin on a lightly floured work surface to roll each piece of dough into a flat circle or oblong shape just under ½-inch (12 mm) thick. Place these onto a parchment-lined baking tray and dock with a fork. Bake for 12-14 minutes until golden brown. If they happen to puff up like a pita bread, pierce each with a skewer to allow it to deflate, and brush with olive oil.",
+      "To pan-fry the flatbread, preheat a heavy-bottomed skillet over medium high heat. Drop in a flatbread (do not grease the pan) and cook for about 3 minutes on each side, until the bread blisters and the blisters brown. Repeat with the second flatbread and then brush each with olive oil.",
+      "NOTE: You can divide the dough into 3 or 4 pieces to better fit into your skillet, if needed",
+      "Preheat the oven to 400℉ (200℃). Place the two flatbreads onto a parchment-lined baking tray.",
+      "Arrange the prosciutto slices on top followed by the Parmesan shavings and the roasted red pepper strips. Sprinkle the Medjool dates overtop. Bake the flatbreads for 5 minutes, to warm it through and soften the toppings.",
+      "Transfer the warm flatbreads to platter or cutting board and top with the parsley and a drizzle of honey or balsamic glaze. Slice or even tear the flatbread to serve it."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": "300 g",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "tsp",
+        "notes": "alt: honey",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Instant Dry Yeast",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lukewarm Water",
+        "unit": "C",
+        "notes": "160 mL",
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thick Plain Yoghurt",
+        "unit": "Tbsp",
+        "notes": "90 mL",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": "plus extra for brushing",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pre-baked Flatbreads",
+        "unit": null,
+        "notes": "store bought, or Anna’s recipe",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Prosciutto",
+        "unit": "slices",
+        "notes": null,
+        "amount": "8-12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "1 ½ Oz Parmesan Shavings",
+        "unit": "g",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Julienned Roasted Pepper Strips",
+        "unit": "C",
+        "notes": "125 mL",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Medjool Dates",
+        "unit": null,
+        "notes": "pitted, roughly chopped",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Italian Parsley Leaves",
+        "unit": "Tbsp",
+        "notes": "30 mL",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7de2661955914046b5db62a48a3b839cd0930fe2d6300ca8dc43da38cc4d3e09",
+    "lineage_hash": "9afe234910dd9bbd30da4bec16c5b482c14716b03f5e663060ab6a4575a10578"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/cahrcuterie-flatbread-with-medjool-dates-prosciutto-parmesan/",
+    "fetchedAt": "2026-08-01T16:37:15.464Z"
+  },
+  "rawSource": "https://annaolson.ca/project/cahrcuterie-flatbread-with-medjool-dates-prosciutto-parmesan/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

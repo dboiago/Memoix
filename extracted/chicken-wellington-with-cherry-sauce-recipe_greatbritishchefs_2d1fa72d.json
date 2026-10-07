@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Chicken Wellington with Cherry Sauce",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Line 2 x baking trays with non-stick baking paper. Wrap 2 pieces of Parma ham around each chicken breast that has been seasoned with salt and pepper",
+      "Cut each 500g block of pastry into 4 pieces and roll each piece out; place the ham wrapped chicken in the pastry squares and seal as shown in the photos. Brush the beaten egg over each parcel to glaze, then bake in pre-heated oven for 30 minutes",
+      "Meanwhile, put the cherry preserves into a saucepan and gently heat until it is hot. When the chicken wellingtons are cooked, take them out of the oven, slice them (as shown in the photos) and place them on warm plates. Spoon some of the cherry sauce over each one and serve with seasonal vegetables and/or salad"
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "182c8dd39250cea3068db60affb0a42b2f959afe32a0aca724a1541744ed05e6",
+    "lineage_hash": "5bd1065612b29326832dba5d47ee49b54a75da1a137903a1eb44f292b172d6d9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chicken-wellington-with-cherry-sauce-recipe",
+    "fetchedAt": "2026-08-03T18:42:09.594Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chicken-wellington-with-cherry-sauce-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Adonis Spritz",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Wine",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the first 3 ingredients in a wine glass and add ice. Top with sparkling wine."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "3edfc01f9b667180b3e33f9a408a2b6c7366ae68d74c2fa0c11343dcb33510e9",
+    "lineage_hash": "f7e4fedf3f727e369966c78b30c292a01542562049cc988a24c50ca1ace92341"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/adonis-spritz/",
+    "fetchedAt": "2026-08-03T21:22:03.108Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/adonis-spritz/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

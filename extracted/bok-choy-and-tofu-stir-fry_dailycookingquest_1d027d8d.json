@@ -1,0 +1,126 @@
+{
+  "recipe": {
+    "name": "Bok Choy and Tofu Stir Fry",
+    "time": "30 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat oil in a frying pan/wok, sauté garlic and ginger until fragrant, about 2 minutes.",
+      "Add deep fried tofu and bok choy stems, cook for 2 minutes.",
+      "Add bok choy leaves, water, soy sauce, salt, and sugar. Stir and cook until the leaves look wilted, about 2 minutes.",
+      "Add sesame oil, mix well, and thicken sauce with corn starch liquid. Transfer to a serving plate and serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic (indonesian: Bawang Putih)",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger (indonesian: Jahe)",
+        "unit": "inch",
+        "notes": "peeled and cut into match sticks",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Deep Fried Tofu (indonesian: Tahu Goreng)",
+        "unit": null,
+        "notes": "blanced in hot water to remove excess oil, thinly sliced",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Bok Choy",
+        "unit": null,
+        "notes": "separate stems from leaves, washed and drained",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn Starch Liquid (1/2 Tablespoon Corn Starch + 1 Tablespoon Water)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6dc58529f1635e4808ca10e8ca24fd021cb1521ccf190c960af6ee6e55ae9dfe",
+    "lineage_hash": "dfdae4ade823940050ba08a841f8bfaa0fb45e75292d5eb716d1d8183e7d0f1f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/bok-choy-and-tofu-stir-fry.html",
+    "fetchedAt": "2026-08-02T09:33:32.819Z"
+  },
+  "rawSource": "https://dailycookingquest.com/bok-choy-and-tofu-stir-fry.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

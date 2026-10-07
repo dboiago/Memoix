@@ -1,0 +1,38 @@
+{
+  "recipe": {
+    "name": "Barber of Seville",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Julep Cup",
+    "garnish": [
+      "Paper Umbrella",
+      "Fluffy Mound of Orange Zest",
+      "Candied Marcona Almond"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Fill a julep cup with crushed ice and add the ingredients. Stir to combine, then add more crushed ice to fill. Open an umbrella and add it to the glass; use a fine grater to create a fluffy mound of orange zest on top of the drink, then use a microplane grater to shave a candied marcona almond over the top of the umbrella and orange zest. Serve with 2 short (biodegradable) straws."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "8dd3d307100ca926a53ae08a77e8ea39bb2f483d2c5fead68d621f76e52b8687",
+    "lineage_hash": "3d1719973104c559c4f6be559c3590b587aa387c9291bc3a43e44700b6fd7bcc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/maison-premiere-barber-of-seville/",
+    "fetchedAt": "2026-08-03T19:35:01.690Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/maison-premiere-barber-of-seville/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Blackberry Vinegar",
+    "time": "10 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Weigh the blackberries, then add to a large container with an equal quantity of vinegar. Allow the mixture to steep 7–10 days, covered, at room temperature or refrigerated. Strain the mixture, reserving the liquid",
+      "Add the liquid to a saucepan with 450g of sugar per 700ml of liquid. Bring to the boil, then cook at a boil for 8-10 minutes",
+      "Transfer to sterilized bottles and enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "44121df632708444fb60df05955da34d31ef2e7a5c7a10ff420471fb31a07276",
+    "lineage_hash": "856e309ff8c84ae598a60f68fcf9a5259d755c2dc206e0e8310d0668a309cf36"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/blackberry-vinegar-recipe",
+    "fetchedAt": "2026-08-03T23:01:02.999Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/blackberry-vinegar-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

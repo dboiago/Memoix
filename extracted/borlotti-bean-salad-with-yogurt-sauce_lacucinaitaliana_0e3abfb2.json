@@ -1,0 +1,182 @@
+{
+  "recipe": {
+    "name": "Borlotti Bean Salad with Yogurt Sauce",
+    "time": "2 hr",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pour yogurt into a strainer lined with a cloth and let it stand for 2 hours so that it loses most of its liquid part. Chop the chives. Season the yogurt with the chopped chives and a tablespoon of olive oil; stir and lightly salt.",
+      "For the bean salad: cook the beans in boiling water with a bay leaf, a sprig of sage and a sprig of rosemary for 1 hour and 20 minutes. Peel the potatoes, dice them into small cubes and cook them in boiling water for 4 minutes. Peel the cucumber, slice it in half and then into small pieces. Wash the celery stalks, remove the outer fibers with a potato peeler and cut into chunks.",
+      "Chop a bunch of wild fennel. Place the borlotti beans, potatoes, cucumber, celery and olives in a bowl; season with 2 tablespoons of oil and 2 of vinegar, the chopped wild fennel, salt and pepper. Cut the radishes into very thin slices and place them in ice water to make them crunchy, then pat them dry with paper towels.",
+      "Trim the spring onion and slice it into rounds. Prepare a bed of arugula in a serving dish, place the bean salad on top and finish with the onions and radishes. Serve with the yogurt sauce."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsweetened Plain Yogurt",
+        "unit": "C",
+        "notes": null,
+        "amount": "1⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shelled Borlotti Beans",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": "oz",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Arugula",
+        "unit": "oz",
+        "notes": null,
+        "amount": "4½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "oz",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Taggiasca Olives",
+        "unit": "C",
+        "notes": "pitted",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Radishes",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Stalks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sage",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wild Fennel",
+        "unit": "bunch",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extravirgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "83984536c337eef2020ab091cd491bc8ca7c7660b2d39e67d98c19c40d3c664d",
+    "lineage_hash": "08f955432552a6bc9a5ec839a5927671bb7ab10f68d3124f599dc81f4cdc3be6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/sides-and-vegetables/borlotti-bean-salad-with-yogurt-sauce",
+    "fetchedAt": "2026-08-03T04:26:16.616Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/sides-and-vegetables/borlotti-bean-salad-with-yogurt-sauce",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

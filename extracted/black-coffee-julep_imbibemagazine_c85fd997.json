@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Black Coffee Julep",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Glass",
+    "garnish": [
+      "Mint Sprig"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Muddle mint and honey in a shaker. Add espresso and swirl together until the honey dissolves. Add ice. Shake until chilled. Strain into a glass over crushed ice and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "14101d43b1fd7d5ce03e78c24e441ff61f5bd5aa37e44da9985e123ebe9aa443",
+    "lineage_hash": "537b1edd2e84a7f51d3cebb13a079c7a63f90db2658aad3a97809c09e0c95bea"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/black-tap-coffee-black-julep-recipe/",
+    "fetchedAt": "2026-08-03T20:30:48.501Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/black-tap-coffee-black-julep-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

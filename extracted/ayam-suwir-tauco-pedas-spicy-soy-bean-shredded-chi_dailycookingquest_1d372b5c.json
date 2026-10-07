@@ -1,0 +1,160 @@
+{
+  "recipe": {
+    "name": "Ayam Suwir Tauco Pedas (Spicy Soy Bean Shredded Chicken)",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "ID",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place chicken breast in a pot, then pour enough water to cover by one inch. Boil over medium high heat, then lower the heat to simmer for 10 minutes.",
+      "Remove chicken from the pot, and shred into small pieces with two forks. You can use your hands to to tear the meat, but please wait until the chicken is cool enough to handle.",
+      "Heat oil in a frying pan over medium high heat. Sauté shallot, garlic, Indonesian bay leaves, and galangal until the shallot looks wilted.",
+      "Add all the chilies and cook for 30 seconds, then add salted soy beans, shredded chicken, salt, ground pepper, and sugar. Mix well.",
+      "Add Indonesian sweet soy sauce and water, and mix well. Cook until all the sauce is almost dry.",
+      "Turn off the heat, and serve immediately with steamed white rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pair of Skinless Boneless Chicken Breast",
+        "unit": null,
+        "notes": "~ 1 lb./450 gram",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Shallot (indonesian: Bawang Merah)",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic (indonesian: Bawang Putih)",
+        "unit": "clove",
+        "notes": "thinly sliced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Indonesian Bay Leaves",
+        "unit": null,
+        "notes": "Indonesian: daun salam",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Galangal (indonesian: Lengkuas)",
+        "unit": "inch",
+        "notes": "bruised",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jalapeno (indonesian: Cabe Hijau Besar)",
+        "unit": null,
+        "notes": "seeded and thinly sliced",
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thai Red Bird Eye Chiles (indonesian: Cabe Rawit Merah)",
+        "unit": null,
+        "notes": "seeded and thinly sliced",
+        "amount": "3-5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilies (indonesian: Cabe Merah Kering)",
+        "unit": null,
+        "notes": "dried, seeded",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted Soy Beans",
+        "unit": "Tbsp",
+        "notes": "Indonesian: tauco",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Indonesian Sweet Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "Indonesian: kecap manis",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "or chicken stock",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4f562c4cd545c1ea0e4af35ece3362f3cfd6e966e4ee69c8c7ee0d4ccc56f0c3",
+    "lineage_hash": "679b830c6ef0be15a56e22dc3a14c08a8ad5bcbed25870e6d81e7456e7a6bb62"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/ayam-suwir-tauco-pedas-spicy-soy-bean-shredded-chicken.html",
+    "fetchedAt": "2026-08-02T03:00:49.921Z"
+  },
+  "rawSource": "https://dailycookingquest.com/ayam-suwir-tauco-pedas-spicy-soy-bean-shredded-chicken.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

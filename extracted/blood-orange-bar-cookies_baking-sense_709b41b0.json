@@ -1,0 +1,122 @@
+{
+  "recipe": {
+    "name": "Blood Orange Bar Cookies",
+    "time": "1 hr 10 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "24",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "182",
+      "carbohydrateContent": "24",
+      "fatContent": "9",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "Butter the pan and then line with parchment in both directions. You could also use non-stick aluminum foil.",
+      "The crust mix will look dry but should hold together when you squeeze it into a ball in your hand.",
+      "Use anything with a flat base to press the shortbread tightly and evenly into the pan. Make sure to get the corners."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All Purpose Flour",
+        "unit": "oz",
+        "notes": "2 cups, see note",
+        "amount": "10",
+        "section": "Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": "Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "room temp",
+        "amount": "8",
+        "section": "Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Blood Oranges",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "filling",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "edac1c9790f6cc912fb6a80379a247c48144e232f7a9815513298391efb59cd2",
+    "lineage_hash": "f51edbbd98f6647a855fa0f38556e231cd7dfe061289611cb0feafd6f9ff5ee0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2015/03/19/blood-orange-bars/",
+    "fetchedAt": "2026-08-02T05:52:11.339Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2015/03/19/blood-orange-bars/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

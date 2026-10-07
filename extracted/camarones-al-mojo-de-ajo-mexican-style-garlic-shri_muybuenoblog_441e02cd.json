@@ -1,0 +1,110 @@
+{
+  "recipe": {
+    "name": "Camarones al Mojo de Ajo (Mexican-Style Garlic Shrimp)",
+    "time": "28 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "229",
+      "carbohydrateContent": "3",
+      "fatContent": "13",
+      "proteinContent": "24"
+    },
+    "directions": [
+      "In a small bowl combine paprika and salt.",
+      "Season the shrimp with spice mixture.",
+      "Add the Land O Lakes® Butter with Olive Oil & Sea Salt to a frying pan over medium heat until it begins to melt.",
+      "Add the onion and garlic and sauté for about 5 minutes.",
+      "Add the shrimp and cook for 6 to 8 minutes or until they are completely cooked through.",
+      "Add the lime juice and parsley.",
+      "Enjoy with white rice, angel hair pasta, or tortillas."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Smoked Paprika",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Large Shrimp",
+        "unit": "lb",
+        "notes": "defrosted, peeled, and deveined",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Land O Lakes® Butter with Olive Oil & Sea Salt",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "small",
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "C",
+        "notes": "flat-leaf or Italian, chopped, fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "810d46f23fb283b885753e087f9235198e8900052bc941f17916d2ce219ed6e9",
+    "lineage_hash": "7ddfc1ea616632e2ee57f4fa37924cb163ee6f1af964a8104b001db6ff91c055"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/camarones-al-mojo-de-ajo/",
+    "fetchedAt": "2026-08-02T07:04:54.638Z"
+  },
+  "rawSource": "https://muybuenoblog.com/camarones-al-mojo-de-ajo/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

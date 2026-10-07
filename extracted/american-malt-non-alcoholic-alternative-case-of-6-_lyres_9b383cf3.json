@@ -1,0 +1,107 @@
+{
+  "recipe": {
+    "name": "American Malt",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "3",
+      "carbohydrateContent": "0.7",
+      "fatContent": "0",
+      "proteinContent": "0"
+    },
+    "directions": [
+      "Serve over ice with cola for a smooth, classic pour",
+      "Shake into a non-alcoholic Whiskey Sour with citrus and sugar",
+      "Stir into a Boulevardier with Lyre’s Apéritif Rosso and Italian Orange",
+      "Mix a Manhattan-style serve with Apéritif Rosso, bitters and orange peel"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "ML Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "ML Glucose Syrup",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "ML Caramel Syrup E150d",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "ML Natural Flavours",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "ML Acidity Regulator",
+        "unit": "ml",
+        "notes": "Phosphoric Acid",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "ML Stabiliser",
+        "unit": "ml",
+        "notes": "Cellulose Gum",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "ML Preservative",
+        "unit": "ml",
+        "notes": "Potassium Sorbate, Potassium Benzoate",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "ML Sweetener Steviol Glycosides",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1adf6cd6341c0f25150391d8a146ce4fee9442ac047f6f8d6006867b763f1c58",
+    "lineage_hash": "0b9575666685e66b4cb2a26f1fcf071899157ae032e3d4e283f108adcb1b3d8b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://lyres.com/en-uk/products/american-malt-case-uk",
+    "fetchedAt": "2026-08-02T21:38:04.871Z"
+  },
+  "rawSource": "https://lyres.com/en-uk/products/american-malt-case-uk",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

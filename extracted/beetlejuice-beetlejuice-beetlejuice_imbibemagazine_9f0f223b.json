@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Beetlejuice! Beetlejuice! Beetlejuice!",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Highball",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all the ingredients in a highball over ice, stir, then garnish.",
+      "Strawberry Syrup1 cup granulated sugar\n1 cup strawberries (tops removed and cut in half)\n1 cup water",
+      "Heat all the ingredients in saucepan until the sugar is dissolved. Allow to cool, then strain into a bottle and refrigerate."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "1995578e7c916d8dabfcd06659a073bfd5801d8e565a80be515c2d4ac9f3c931",
+    "lineage_hash": "89f76b05016a777671c547393af5992e6594b2d69bd3eef59a237eee6d5455d6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/beetlejuice-beetlejuice-beetlejuice/",
+    "fetchedAt": "2026-08-03T22:36:04.021Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/beetlejuice-beetlejuice-beetlejuice/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

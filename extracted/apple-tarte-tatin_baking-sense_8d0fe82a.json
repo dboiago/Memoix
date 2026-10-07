@@ -1,0 +1,102 @@
+{
+  "recipe": {
+    "name": "Apple Tarte Tatin",
+    "time": "1 hr 45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "217",
+      "carbohydrateContent": "33",
+      "fatContent": "10",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Preheat the oven to 375 °F. Roll 1/2&#32;recipe Perfect Pie Crust to a 12&quot; round and refrigerate it while you prepare the filling.",
+      "Melt 4 oz&#32;unsalted butter over high heat in an oven-safe 10&quot; or 12” skillet (I like to use cast iron). Reduce the heat to medium and sprinkle 6 oz&#32;granulated sugar over the melted butter. Add 1 teaspoon&#32;lemon juice, ¼ teaspoon&#32;table salt and 1 tablespoon&#32;rum. Swirl the pan to mix the ingredients.",
+      "Once the sugar has melted, arrange apple pieces in concentric circles in the pan. Fit as many as you can in a single layer. You won&#39;t fit all the apples in the pan initially. Cook over medium heat for 10-15 minutes, until the bottoms are golden brown. As the apples shrink, tuck more pieces into the pan. If spots of the pan are caramelizing faster gently shimmy and swirl the pan to mix the caramel. Use the tip of a paring knife to flip the apples and brown the other side. Cook until all the apples are browned and crisp-tender, another 10-15 minutes.",
+      "Remove the pan from the heat. Lay the pie crust over the apples. Fold the edges of the dough and use the tip of a knife to tuck the edge of the dough between the apples and the pan.",
+      "Bake until the crust is golden brown, about 15-20 minutes. Remove the pan from the oven and cool 5 minutes to allow the caramel to settle.",
+      "Run a knife or spatula around the edges of the tart to make sure it&#39;s not sticking. Place a serving platter over the pan and, using oven mitts to protect your hands, flip the tart onto the platter and remove the skillet. Use the tip of the knife to transfer any apples that stick to the pan back onto the tart",
+      "Serve warm."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Recipe Perfect Pie Crust",
+        "unit": null,
+        "notes": "see  note",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "see note",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "¾ cup",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": "see note",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rum",
+        "unit": "Tbsp",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apples",
+        "unit": "lb",
+        "notes": "peel, cored and cut into quarters",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9a3b3098af1f904259d484a9de7b710619dbe60aeaf835eb8ba1e8b6f96692d0",
+    "lineage_hash": "2e5f40ff4d469391f5672d54584722b1014329d85ad68e94964ad759a92e710c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2023/11/20/apple-tarte-tatin/",
+    "fetchedAt": "2026-08-02T01:48:22.519Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2023/11/20/apple-tarte-tatin/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

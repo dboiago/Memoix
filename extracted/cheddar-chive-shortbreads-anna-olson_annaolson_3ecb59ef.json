@@ -1,0 +1,111 @@
+{
+  "recipe": {
+    "name": "Cheddar & Chive Shortbreads",
+    "time": "1 hr 15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "48",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the flour, sugar, pepper in the bowl of a food processor with the butter and pulse until the mixture is rough and crumbly and no bits of butter are visible. Add the Cheddar and pulse until evenly combined. Add the egg yolks and pulse again until the dough shapes itself into a ball.",
+      "Turn the dough out onto a work surface and knead in the chives by hand (if you add them in the food processor, the dough will turn green). Shape the dough into 2 logs about 1 1/2 inches (3.75 cm) across, wrap in plastic and chill until firm, at least 1 hour.",
+      "Preheat the oven to 350°F (180°C) and line 2 baking trays with parchment paper. Place the sesame seeds on a large flat plate.",
+      "Unwrap the dough, brush the logs with the egg white and then roll in the sesame seeds to coat fully. Slice coins about 1/4 inch (6 mm) thick and arrange them on the trays, about 1/2 inch (12 mm) apart.",
+      "Bake for 18 to 20 minutes, until lightly browned on the bottom. Let cool completely on the trays. If gifting, stack the cookies and pack them snugly in a box or tin, or wrap in a cellophane bag tied with a ribbon"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "1 ½ Cups All-purpose Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "Tbsp",
+        "notes": "12 g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "115 g, cold, cut into pieces",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Old Cheddar Cheese",
+        "unit": "oz",
+        "notes": "about 2 cups/500 mL, 180 g, coarsely grated",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": "Tbsp",
+        "notes": "fresh, chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": "C",
+        "notes": "60 g",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": null,
+        "notes": "lightly whisked, for brushing",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "cdaa285d9e669a9ecce10def25dc5aa1cda51f6d9077e17ba50a704afdaf37dc",
+    "lineage_hash": "75a9446e1facd8eea3a8a93e51e707b391931f4fbf65a1b2c1fad85526824315"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/cheddar-chive-shortbreads/",
+    "fetchedAt": "2026-08-02T00:28:14.402Z"
+  },
+  "rawSource": "https://annaolson.ca/project/cheddar-chive-shortbreads/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

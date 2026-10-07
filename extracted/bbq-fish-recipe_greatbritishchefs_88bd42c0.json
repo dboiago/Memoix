@@ -1,0 +1,136 @@
+{
+  "recipe": {
+    "name": "BBQ Fish",
+    "time": "40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Light the charcoal barbecue 45 minutes before you plan to cook",
+      "Clean the fish thoroughly and pat exterior dry with a kitchen towel. Squeeze lemon juice in the stomach area and stuff the fish with fresh herbs. You can use a skewer to seal the herbs in",
+      "Mix the sea salt and olive oil and rub over the exterior of the fish. Place the fish in the BBQ fish basket",
+      "Grill for 10 - 12 minutes (5-6 minutes each side), or until a skewer inserted in the thickest part goes all the way through",
+      "While the fish is cooking, make the dip. Add the shallots, garlic and chillies to a pestle and mortar and grind and pound until you get a paste",
+      "Squeeze the lime or calamansi juice into a bowl, add the brown sugar and mix until the sugar is dissolved. Combine the lime and sugar to the chilli mix until well combined. Alternatively, place all of the ingredients to a blender and blitz to form a smooth paste. Season with salt to taste and serve with the fish"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Sea Bass",
+        "unit": null,
+        "notes": "or other firm-fleshed whole fish, cleaned",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dill",
+        "unit": "bunch",
+        "notes": "or a mix, parsley, thyme or oregano",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": "diced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bulb of Garlic",
+        "unit": null,
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bird's Eye Chillies",
+        "unit": null,
+        "notes": "diced",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chillies",
+        "unit": null,
+        "notes": "diced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Limes",
+        "unit": null,
+        "notes": "or calamansi",
+        "amount": "4½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "676c4714b23935cc2791f45a042f0600ffb06d7ad027619311924ea3a55f5f6f",
+    "lineage_hash": "4f157546f6362588d4dd78577c22899050a4c298dabeccb6481b180546ad01be"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/grilled-pomfret-fish-chilli-lime-sauce-recipe",
+    "fetchedAt": "2026-08-03T23:48:51.381Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/grilled-pomfret-fish-chilli-lime-sauce-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

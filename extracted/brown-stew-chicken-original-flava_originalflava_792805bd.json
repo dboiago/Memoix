@@ -1,0 +1,161 @@
+{
+  "recipe": {
+    "name": "Brown stew chicken",
+    "time": "1 hr 5 mins",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "JM",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Wash Chicken with lemon and water. Remove all skin and cut into small pieces.",
+      "Place chicken in a mixing bowl, add salt, pepper, Garlic, pimento paprika, 1tsp.  browning,  onions, bell peppers, scotch bonnet pepper and marinate in the fridge overnight.",
+      "Take off all seasonings off chicken, then add vegetable oil to the frying pan/pot on medium heat and add chicken to the pot and cook until brown on each side (5 mins)",
+      "Once browning is complete remove chicken from the pot, along with half of the remaining oil in the pot/pan.",
+      "Add the seasoning you used to scrape off the chicken and add to pan, along with the remaining onions and some bell peppers, fresh thyme scotch bonnet pepper and cook for 3 minutes.",
+      "Add 1 tsp browning, 1 cup of water Cornflour, Ketchup and stir into a gravy.",
+      "Then add the chicken to the pan along with remaining bell peppers and 1 tsp. browning.  1 cup of water and Stir well and simmer for 40 minutes until meat is tender."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken",
+        "unit": "lb",
+        "notes": "Thighs, Skinless",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Browning/ Soya Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic & Pimento",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Bell Pepper",
+        "unit": "medium",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green/yellow Bell Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scotch Bonnet Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour/ Corn-starch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ketchup/ Chopped Tomato",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "429e9ec278c5e3f08e77ea37f1a65680b1760ac21504dc1c88eee3c6cfaf53ec",
+    "lineage_hash": "bfd5f8fa7fb66bfd67b6e01378990ae27bda014770e6a1c9efe38273276498dd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://originalflava.com/meals/brown-stew-chicken/",
+    "fetchedAt": "2026-09-30T17:31:11.891Z"
+  },
+  "rawSource": "https://originalflava.com/meals/brown-stew-chicken/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

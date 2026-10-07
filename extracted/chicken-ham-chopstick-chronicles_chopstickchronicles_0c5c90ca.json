@@ -1,0 +1,72 @@
+{
+  "recipe": {
+    "name": "Chicken Ham (Torihamu)",
+    "time": "2 hr 10 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "281",
+      "carbohydrateContent": "6",
+      "fatContent": "6",
+      "proteinContent": "48"
+    },
+    "directions": [
+      "Place a chicken breast on a clean chopping board.",
+      "Slice the long side of the chicken from the centre to left leaving a little bit so you can open it up.",
+      "Turn the chicken breast 180° and repeat the step 2.",
+      "Season the chicken breast with salt and sugar on each side and rub it in.",
+      "Place some cling wrap on a work surface and roll then wrap the chicken breast tightly. At the same time, shape it into a round ham.",
+      "Put it in a ziplock bag. Place the ziplock bag into a bowl of water to seal it so there is no air pockets.",
+      "Pour 1 liter of boiling hot water into a rice cooker and add 300 ml of cold water to make the temperature of the water around 176 °F (80°C).",
+      "Place the the ziplock bag with the rolled chicken into the rice cooker and put lid on.",
+      "Press the \"keep warm\" function of the rice cooker and leave it for 2 hours."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Breast",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "776dfc029c7d1dd8738ae68c5fb0d23df455f8f4f1a61af1dcc4dde26d520977",
+    "lineage_hash": "b791a80a5cc867f67e2ab76a32ae9c6a42251c1c1109f66d0540dc71d0af7fe4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chopstickchronicles.com/chicken-ham/",
+    "fetchedAt": "2026-08-02T02:29:46.538Z"
+  },
+  "rawSource": "https://www.chopstickchronicles.com/chicken-ham/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

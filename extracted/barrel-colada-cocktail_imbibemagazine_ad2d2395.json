@@ -1,0 +1,38 @@
+{
+  "recipe": {
+    "name": "Barrel Colada Cocktail",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Collins",
+    "garnish": [
+      "Mint Bouquet",
+      "Dehydrated Banana"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all ingredients in a shaker tin and shake to chill. Strain over crushed ice. Garnish with a mint bouquet and dehydrated banana.",
+      "Banana Coconut Syrup: Toast 2 cups of unsweetened coconut flakes until fragrant, then add 1½ cups of coconut milk and 1 cup of white sugar. Stir until dissolved and strain out the solids. Add 1 oz. of Giffard banana liqueur and shake to combine."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "2cd00eaffc940a3e9c894131e6a178626a5daff17d330f4c098d71f4a01b012c",
+    "lineage_hash": "e2c2c414588f8f89740a891d2e67b218a2e395b8029eb6c3cb993355f2c58bbe"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/barrel-colada/",
+    "fetchedAt": "2026-08-03T19:25:08.923Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/barrel-colada/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

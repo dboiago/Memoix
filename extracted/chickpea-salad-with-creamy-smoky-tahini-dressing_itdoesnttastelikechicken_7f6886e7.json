@@ -1,0 +1,170 @@
+{
+  "recipe": {
+    "name": "Chickpea Salad with Creamy Smoky Tahini Dressing",
+    "time": "15 min",
+    "course": "salad",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "283",
+      "carbohydrateContent": "30",
+      "fatContent": "15",
+      "proteinContent": "11"
+    },
+    "directions": [
+      "Make the dressing: In a small bowl or jar, whisk together the tahini, olive oil, lime juice, smoked paprika, Dijon, maple syrup, salt, garlic powder, and black pepper. Add water 1 tablespoon at a time, whisking until the dressing is creamy and pourable.",
+      "Assemble the salad: In a large mixing bowl, combine the chickpeas, cucumber, tomatoes, red onion, and dill. Pour about half of the dressing over the salad and toss to coat. Taste and add more dressing as desired, you may not need it all. Sprinkle the pepitas on top just before serving.",
+      "Storage: Store leftovers in an airtight container in the fridge for up to 4 days. If prepping ahead, keep the pepitas separate and add just before serving so they stay crunchy. The flavor gets even better as it sits!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Tahini",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "smoky tahini dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": "sub water for oil-free",
+        "amount": "2",
+        "section": "smoky tahini dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "Tbsp",
+        "notes": "or lemon juice",
+        "amount": "2",
+        "section": "smoky tahini dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "smoky tahini dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "smoky tahini dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Maple Syrup",
+        "unit": "tsp",
+        "notes": "alt: agave",
+        "amount": "1",
+        "section": "smoky tahini dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "¾",
+        "section": "smoky tahini dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "smoky tahini dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "smoky tahini dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": "as needed",
+        "amount": "1-2",
+        "section": "smoky tahini dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Chickpeas",
+        "unit": "cans",
+        "notes": "14oz each, 3 cups, drained and rinsed",
+        "amount": "2",
+        "section": "salad",
+        "isOptional": false
+      },
+      {
+        "name": "English Cucumber",
+        "unit": null,
+        "notes": "1 cup, diced",
+        "amount": "½",
+        "section": "salad",
+        "isOptional": false
+      },
+      {
+        "name": "Grape",
+        "unit": "C",
+        "notes": "alt: cherry tomatoes, halved",
+        "amount": "1",
+        "section": "salad",
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "small",
+        "notes": "finely chopped",
+        "amount": "½",
+        "section": "salad",
+        "isOptional": false
+      },
+      {
+        "name": "Dill",
+        "unit": "C",
+        "notes": "or sub parsley or cilantro, fresh, finely chopped",
+        "amount": "¼",
+        "section": "salad",
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Salted Pepitas",
+        "unit": "C",
+        "notes": "or sub pistachios, sunflower seeds, or slivered almonds",
+        "amount": "¼",
+        "section": "salad",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d173bc0a4595f0d4a525d936c57e087e64303abdbc510065e43d4012f01badce",
+    "lineage_hash": "870095a51cf62f86cc0b1082f7e72dab4264cff973c45df8722fe2f1148e8304"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/chickpea-salad-with-creamy-smoky-tahini-dressing/",
+    "fetchedAt": "2026-08-02T07:57:40.913Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/chickpea-salad-with-creamy-smoky-tahini-dressing/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

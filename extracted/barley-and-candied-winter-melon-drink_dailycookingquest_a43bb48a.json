@@ -1,0 +1,77 @@
+{
+  "recipe": {
+    "name": "Barley and Candied Winter Melon Drink",
+    "time": "1 hr 40 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place all ingredients in a pot and bring to a boil. Reduce heat and simmer for 1 1/2 hour until barley is soft.",
+      "Taste if it is sweet enough, usually it is, but you can add more sugar if you prefer a sweeter drink.",
+      "Turn off heat. Can be served hot, at room temperature, or chilled."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gram Barley (indonesian: Jali)",
+        "unit": null,
+        "notes": "washed and drained a couple of times",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Candied Winter Melon",
+        "unit": null,
+        "notes": "Indonesian: baligo/beligo/kundur",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pandan Leaves",
+        "unit": null,
+        "notes": "washed and knotted",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar (optional)",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3b7f99c099f883e6ee61c3227fd29188789ca8c99b92366f0046b2198b731466",
+    "lineage_hash": "07dc8a4f41e14be98669f60ed19c31a5d26284b8d90c1190b611928d7e9c9170"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/barley-and-candied-winter-melon-drink.html",
+    "fetchedAt": "2026-08-02T11:22:39.604Z"
+  },
+  "rawSource": "https://dailycookingquest.com/barley-and-candied-winter-melon-drink.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

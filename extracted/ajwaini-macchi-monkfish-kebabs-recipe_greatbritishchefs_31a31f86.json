@@ -1,0 +1,307 @@
+{
+  "recipe": {
+    "name": "Ajwaini Macchi",
+    "time": "15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Prepare the monkfish by dividing the fish evenly into 8 portions, each approximately 50g in weight. Wash the fish well and pat dry with kitchen paper",
+      "Mix together the ingredients for the first marinade in a bowl. Add the monkfish portions and mix well until thoroughly coated in the marinade. Arrange on a plate or tray and leave to marinate in the fridge for 30 minutes",
+      "Meanwhile, prepare the second marinade in a separate bowl. Whisk the turmeric and chilli powder into the oil, then mix in the remaining ingredients",
+      "Transfer the monkfish from the first marinade to the second, again turning the fish pieces until fully coated in the mixture. Return to the fridge and marinate for another 2 hours",
+      "Meanwhile, make the mint chutney. Place all the ingredients in a blender and blitz to form a smooth, bright green purée. Check the seasoning, then reserve in the fridge until ready to serve",
+      "When ready to cook, preheat a grill or barbecue to high. Remove the monkfish from the marinade and thread on to metal skewers, or wooden skewers (first soaked in cold water) if preferred",
+      "Drizzle the kebabs with a little oil and grill for 3 minutes. Turn over and cook for another few minutes until slightly charred and the fish has cooked through",
+      "Mix together the salad ingredients in a small bowl and squeeze over a little fresh lemon juice. Season the salad with a little salt and cut the remaining lemon into wedges to serve",
+      "To serve, divide the salad between plates and spoon or pipe dollops of the mint chutney down the centre. Remove the monkfish pieces from the skewers and place on top of the chutney, sprinkling over a pinch of chaat masala and a squeeze of fresh lime juice. Garnish with a few sprigs of dill and serve with the lemon wedges on the side"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Monkfish",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger and Garlic Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilli",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kashmiri Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger and Garlic Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yoghurt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ajwain",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dill",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Spinach Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Piece Ginger",
+        "unit": "inch",
+        "notes": "peeled and roughly chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Greek Yoghurt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": "finely shredded",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Radish",
+        "unit": null,
+        "notes": "finely shredded",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Amaranth",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chaat Masala",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fronds of Fresh Dill",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "49b05286839f50274a512e48dc17b1c74143d17d9890368911d790402590d68c",
+    "lineage_hash": "f95e809408386ece26ecdff045bb0ea0b36b79644a4ccbfa39a9ac99afa406ef"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/monkfish-kebab-recipe",
+    "fetchedAt": "2026-08-03T13:20:04.947Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/monkfish-kebab-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

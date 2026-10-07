@@ -1,0 +1,88 @@
+{
+  "recipe": {
+    "name": "Caramelized White Chocolate Ice Cream",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix the warm caramelized white chocolate in a large bowl with the heavy cream, and set a mesh strainer over the top.",
+      "In a medium-sized saucepan, heat the milk, sugar, and salt.",
+      "Whisk together the egg yolks in a small bowl and gradually whisk in half of the warm milk, then scrape the warmed yolks back into the saucepan.",
+      "Cook over moderate heat, stirring constantly with a heatproof utensil, until the mixture thickens and coats the utensil.",
+      "Immediately pour the custard through the strainer into the white chocolate mixture and stir until smooth. Put the bowl in an ice bath, and stir until cool.",
+      "Chill thoroughly in the refrigerator, then freeze in your ice cream maker according to the manufacturer’s instructions."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Caramelized White Chocolate",
+        "unit": "oz",
+        "notes": "240g",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "C",
+        "notes": "250ml",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "C",
+        "notes": "500ml",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": "100g",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": "large",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e9bab8bc6c914dd816c4163f3bda4aa33ebe6b4bca1f4d311daa634e2e776a45",
+    "lineage_hash": "670ac9de4f8e2ec4d2167fe77ea06f3dc09ea352fbbba4bee36da378c8026d11"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/caramelized-white-chocolate-ice/",
+    "fetchedAt": "2026-08-02T19:40:44.773Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/caramelized-white-chocolate-ice/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

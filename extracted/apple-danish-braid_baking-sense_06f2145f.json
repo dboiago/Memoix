@@ -1,0 +1,161 @@
+{
+  "recipe": {
+    "name": "Apple Danish Braid",
+    "time": "3 hr 20 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "188",
+      "carbohydrateContent": "33",
+      "fatContent": "8",
+      "proteinContent": "2"
+    },
+    "directions": [
+      "Macerate the apples with sugar, spices and apple cider.",
+      "Cook the apples until tender.",
+      "Add corn starch and cook until the juice is thickened.",
+      "Roll the pastry dough to a 10″ x 14″ rectangle.",
+      "Spread the apple filling to a 3″ wide strip. Cut angled strips on either side of the filling.",
+      "Remove the top and bottom strips to create a \"tab\" of dough at either end.",
+      "Braid the strips.",
+      "Brush the risen Danish braid with egg wash and bake until golden brown.",
+      "Brush the hot Danish pastry with apple jelly.",
+      "Cool for 20 minutes then drizzle with glaze."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Apples",
+        "unit": "lb",
+        "notes": "peeled, cored and cut into 1/2″ cubes",
+        "amount": "1½",
+        "section": "Apple Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "2",
+        "section": "Apple Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Apple Cider",
+        "unit": "oz",
+        "notes": "½ cup, or apple juice",
+        "amount": "4",
+        "section": "Apple Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": "Apple Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Apple Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Apple Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Apple Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Recipe Danish Dough",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Or",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Recipe Sourdough Danish",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Egg for Egg Wash",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Apple Jelly",
+        "unit": "C",
+        "notes": "or apricot preserves",
+        "amount": "¼",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Confectioner’s Sugar",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "2",
+        "section": "Assembly",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b6d128990a419a3772b53074ab918cf3b99b537f8c5850f4f4385a0628938696",
+    "lineage_hash": "80f30090681ed1eb50ccd772b28071edaa7efde8692aa5844b55c899c0abbbe5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2020/10/08/apple-danish-braid/",
+    "fetchedAt": "2026-08-01T18:54:05.411Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2020/10/08/apple-danish-braid/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

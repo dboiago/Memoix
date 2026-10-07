@@ -1,0 +1,347 @@
+{
+  "recipe": {
+    "name": "Beef Ragù Yorkie",
+    "time": "4 hr 6 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Finely slice the shallots and rinse under cold water for 2 minutes, carefully breaking them into rings. Place into a lidded container",
+      "Bring the remaining ingredients to a boil with 80g water, stirring to dissolve the sugar and salt, then allow to cool to around 60°C",
+      "Cut a piece of parchment paper to the shape of the top of the container you’ve put the pickles into and place it directly on top of the liquid (to keep the shallots submerged). Leave for at least 6 hours and then use as required",
+      "Whisk together the milk, eggs and salt. Place the flour in a suitable bowl and whisk in the milk mixture. Rest the mixture in the fridge for at least 2 hours, to allow the flour to hydrate properly",
+      "Meanwhile, for the breadcrumbs, heat the beef fat in a frying pan over a medium heat for a minute or two",
+      "Add in the thyme and swirl the pan gently to fry the thyme and infuse it into the fat",
+      "Pull out the thyme with tongs and then add in the breadcrumbs and fry until golden brown, stirring constantly, so they’re evenly toasted",
+      "Drain the breadcrumbs with a sieve and then on a paper towel. Set aside until needed",
+      "For the ragù, first line an oven tray with parchment paper. Add the beef mince to the tray, breaking it up as much as possible&nbsp;",
+      "Put the beef into the oven and cook, taking it out every 10 minutes to break up and toss the mince, until the mince is crispy and a deep golden brown. This will take about 40 minutes",
+      "Repeat the same process with the beef shin",
+      "Meanwhile, in a large, heavy-bottomed saucepan, melt the beef fat (or whichever fat you are using) then add the onions, salt and bouquet garni",
+      "Cook over medium heat until the onions are just golden, then add the cornflour and cook for a further 5 minutes, stirring often",
+      "When the meats are cooked add them to the pan of onions along with the remaining ingredients. Cook over a low heat until the ragù is reduced and the crispy mince and shin is tender, about 2-3 hours. You may need to season this a little more with salt and marmite as required. Set aside until needed",
+      "Next, make the brown sauce. Sweat the shallots in the oil with the salt and MSG",
+      "Add in all other ingredients and cook gently for around 15–20 minutes, until the dates have fully hydrated and the liquid reduced by half",
+      "Preheat the oven to 210°C with your 6-hole Yorkshire pudding tin inside",
+      "When the oven is hot, carefully remove the tin and place on an oven tray. Evenly divide the beef dripping between each hole. Place back into the oven, still on the tray, for 5–10 minutes until hot",
+      "When ready, divide the pudding mixture between each hole, pouring very carefully as the oil is extremely hot",
+      "Put the tray and tin back into the oven for 9–10 minutes until fully risen and a nice golden brown",
+      "Remove from the oven and use kitchen tongs to gently upturn the puddings to drain the oil",
+      "Place them onto a rack that is on an oven tray and place back into the oven for a further 5 minutes. These can be now set aside until needed",
+      "When ready to serve, warm the Yorkshires in the oven for a few minutes while you warm the ragù in a pan",
+      "Stuff the Yorkshire with the ragu, topping off with the beef fat crumb, pickled shallots and chopped parsley",
+      "Spoon a base of the brown sauce onto the plate, then top with the stuffed Yorkshire and garnish with more beef fat crumb"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Banana Shallot",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kashmiri Chilli Flakes",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "85",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Dripping",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rendered Beef Fat",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Panko Breadcrumbs",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Mince",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Shin",
+        "unit": "g",
+        "notes": "diced",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Fat",
+        "unit": "g",
+        "notes": "or beef dripping or butter",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Onion",
+        "unit": "g",
+        "notes": "finely sliced",
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bouquet Garni",
+        "unit": null,
+        "notes": "thyme, rosemary and bay leaf",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Stock",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Marmite",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": "large",
+        "notes": "finely sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "MSG (monosodium Glutamate) Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dates",
+        "unit": "g",
+        "notes": "pitted",
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tamarind Paste",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Russet Apples",
+        "unit": null,
+        "notes": "peeled and diced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cider Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Prune Juice",
+        "unit": "ml",
+        "notes": "apple juice or water are also fine",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d9460e7dc551527cf48ac0dc597223984f96e72d659bb3e34d729da96f0ee96e",
+    "lineage_hash": "08e5e49de7a3d4431ab3d45f0f8b3df17a048fd67c9ccb6128090c85db97f2b7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beef-ragu-yorkie-recipe",
+    "fetchedAt": "2026-08-02T06:55:26.708Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beef-ragu-yorkie-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

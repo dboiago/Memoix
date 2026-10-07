@@ -1,0 +1,188 @@
+{
+  "recipe": {
+    "name": "Brill with Mussels and Jersey Royals",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by making the parsley oil, as this needs at least a few hours to strain (it’s a good idea to make it the day before). Blanch the parsley in boiling salted water for 15 seconds, then drain and refresh in iced water for 5 minutes. Squeeze the parsley dry in a tea towel until all the moisture is removed, then blitz with the oil in a food processor for 5 minutes. Place a fine sieve over a bowl, line it with muslin cloth (you could also use a j-cloth) and pour the mixture into it. Leave to strain in the fridge",
+      "The next day, prepare the mussels. Rinse them under running water, scrubbing the shells, then debeard if necessary. Discard any that don’t stay closed when tapped",
+      "Place a lidded large saucepan over a high heat and wait until it gets hot. Add the mussels, sliced shallot and garlic, fish stock and white wine, then quickly cover and leave to cook for 2-3 minutes until all the mussels have opened. As soon as they are cooked, transfer the contents of the pan to a clean bowl set over iced water to cool quickly",
+      "Once cooled, remove the mussel meat from the shells and place into a clean bowl. Strain the remaining mussel mixture through a fine sieve over the mussel meat to collect the liquor, then cover and place in the fridge until needed",
+      "Rinse the Jersey Royals in lukewarm water, scrubbing with a scourer until completely clean. Place the potatoes in a pan and cover with water, then place over a medium heat and add a generous pinch of salt. Bring to a simmer and cook for 10-15 minutes until just tender, then remove from the heat and allow to cool naturally in the water",
+      "Half-fill the bottom of a large steamer pan and place over a medium heat to bring to the boil. Place a separate saucepan over a medium heat and add the cultured butter. Allow to melt",
+      "Add the shallot and garlic to the butter with a pinch of salt and cook for 2 minutes until soft but not coloured. Add the mussel cooking liquor (keeping the mussels in the bowl) and reduce until thickened, then season to taste and keep warm",
+      "Season the brill fillets with the seaweed salt and place in the steamer. Steam for 4 minutes, then arrange the monks beard on top of the fish and steam for a further 2 minutes",
+      "While the brill and monks beard steams, add the mussels, Jersey Royals and parsley to the sauce and place over a gentle heat to warm through the garnish",
+      "To serve, divide the warm sauce between 4 warm bowls, ensuring there are an equal amount of Jersey Royals and mussels in each one. Drizzle the strained parsley oil into the sauce, then place the brill fillets in the centre. Finish with the monks beard, preserved lemon matchsticks and top with a few more mussels"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Brill Fillets",
+        "unit": null,
+        "notes": "Mark uses Cornish brill, weighing approx. 140g each",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mussels",
+        "unit": "g",
+        "notes": "Mark uses St Austell Bay mussels",
+        "amount": "750",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallot",
+        "unit": "small",
+        "notes": "finely sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Seaweed Salt",
+        "unit": "tsp",
+        "notes": "heaped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flat-leaf Parsley",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jersey Royal Potatoes",
+        "unit": null,
+        "notes": "known as 'mids', small",
+        "amount": "24",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Monk's Beard",
+        "unit": "g",
+        "notes": "also known as agretti or barba di frate, root removed, washed and dried",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cultured Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallot",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flat-leaf Parsley",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Preserved Lemons",
+        "unit": null,
+        "notes": "peel only, sliced into thin matchsticks",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "12c7981096b2881b81e6da436c0ebf984fe52ce8eea5538834a0da33defd01be",
+    "lineage_hash": "4951d6094d24fe8f3770e6c0014a4abd277dada787d5c5934bd3efeb5288a001"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/brill-mussels-jersey-royals-recipe",
+    "fetchedAt": "2026-08-03T02:58:49.151Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/brill-mussels-jersey-royals-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

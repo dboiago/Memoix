@@ -1,0 +1,136 @@
+{
+  "recipe": {
+    "name": "Caprese Pie",
+    "time": "2 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine 1/2 cup plus 1 Tbsp. butter with the cane sugar, a pinch of salt and 3 egg yolks, then add the flour. This will form a soft dough. Let rest in a bowl covered with plastic wrap for 30 minutes.&nbsp;",
+      "In the meantime, line a baking dish with removable bottom (9 1/2\" in diameter by 1\" tall) with parchment paper.",
+      "&nbsp;Add 2 1/2 Tbsp. chocolate chips to the dough and roll it out. Place in the parchment-lined baking dish. Poke holes in the dough with tines of a fork. &nbsp;",
+      "Melt the dark chocolate in a saucepan over low heat. Beat 2 egg yolks with a pinch of salt and the powdered sugar. Add a scant 1/2 cup soft butter, the almond flour and the melted chocolate. In a separate bowl, beat the egg whites to firm peaks. Gently fold them into the chocolate mixture. Add 3 Tbsp. chocolate chips and 3 Tbsp. rum.",
+      "Pour the chocolate mixture into the pie shell and bake at 340°F for around 40 minutes. Remove the pie from the oven and let cool.",
+      "Clean and pare the pears, partially peeling them. Cut them into small chunks and caramelize them in a pan with 2 Tbsp. cane sugar. Put the pie on a serving platter. Top it with the pears and dust with almond flour."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Type 2",
+        "unit": "C",
+        "notes": "alt: all-purpose flour",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almond Flour",
+        "unit": "C",
+        "notes": "plus extra",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cane Sugar",
+        "unit": "C",
+        "notes": "plus extra",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "oz",
+        "notes": null,
+        "amount": "3½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Powdered Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Chips",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pears",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Large Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rum",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "da901ad78def905a384c81f288d61603c90cf9983b219acb32c5a40c7beaa3bb",
+    "lineage_hash": "38420aae8a51cbe54810e784de0a4b8bbe63e2290f52c18a9bd8c2aa51f46d5f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/caprese-pie",
+    "fetchedAt": "2026-08-02T18:55:50.080Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/caprese-pie",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

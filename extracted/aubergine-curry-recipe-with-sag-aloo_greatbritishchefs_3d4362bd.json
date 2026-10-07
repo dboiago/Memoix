@@ -1,0 +1,200 @@
+{
+  "recipe": {
+    "name": "Aubergine Curry with Sag Aloo",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "First start by making the paste for the curry. Add the garlic, ginger, chilli, lemongrass, lime and coriander to a pestle and mortar and crush into a paste",
+      "Add the aubergine cubes to a hot pan with some oil and cook for 5 minutes. Remove the aubergine from the pan, add a little more oil to the pan and put in the onions and cook for 3 minutes until browned",
+      "Put the aubergine back in the pan with the onions and add the curry paste and cook for 2 minutes. Add the coconut milk and simmer for 10 minutes until reduced slightly",
+      "Meanwhile, for the sag aloo, parboil the potato cubes in a pan of boiling water for 5 minutes and then drain",
+      "Heat some oil in a pan and cook the onion, garlic and ginger for 2 minutes and then add the potatoes, garam masala, tumeric and coriander and cook for a further 3 minutes",
+      "Add the spinach and cook for a further minute, then serve with the aubergine curry, garnished with fresh slices of chilli and coriander leaves, if liked"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "peeled",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "pc",
+        "notes": "fresh, thumb-sized",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli",
+        "unit": null,
+        "notes": "bashed and roughly chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemongrass Stick",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "Tbsp",
+        "notes": "fresh, roughly chopped",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Aubergines",
+        "unit": null,
+        "notes": "cubed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": null,
+        "notes": "cut into cubes",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "pc",
+        "notes": "fresh, finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "Tbsp",
+        "notes": "fresh, finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spinach",
+        "unit": "bunch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f9141617b5759a5717feb5eebf7c327d3c032f3a76eb38136481b8454093e539",
+    "lineage_hash": "dde56de3e8c2135e3133cee683bfa25da26cf89b9ad3162c11b642bdc06ecaee"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/aubergine-curry-with-sag-aloo-recipe",
+    "fetchedAt": "2026-08-03T14:24:39.082Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/aubergine-curry-with-sag-aloo-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

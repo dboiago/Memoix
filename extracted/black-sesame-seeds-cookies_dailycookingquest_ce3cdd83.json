@@ -1,0 +1,106 @@
+{
+  "recipe": {
+    "name": "Black Sesame Seeds Cookies",
+    "time": "30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "48",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix all-purpose flour, sugar, salt, ground almond, and ground black sesame seeds.",
+      "Add chilled butter cubes, use a pastry blender (or 2 butter knives) and mix until the dough is crumbly.",
+      "Add whole black sesame seeds and egg yolk, mix and form into dough.",
+      "Cut into two portions, shape each portion into a log (or a block) of 6 inch long. Wrap each log/block with saran plastic, and chill in the fridge for 1-2 hours.",
+      "Preheat oven to 180 Celsius (350 Fahrenheit). Line two baking sheets with parchment paper.",
+      "Cut each log of cookie dough into 24 pieces (each piece is 1/4 inch thick). If you bake the whole recipe at once, you get 48 cookies in total. Arrange on the prepared baking sheet.",
+      "Bake in the preheated oven for 15 minutes, or until the edges are brown..",
+      "Cool the cookies in the baking sheet for 10 minutes. Gently remove the cookies and cool on wire rack. Once the cookies are completely cool, store in airtight containers."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gram (~ 1 1/3 Cup) All-purpose Flour",
+        "unit": null,
+        "notes": null,
+        "amount": "160",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram (~ 2/3 Cup) Powdered Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Ground Almond",
+        "unit": null,
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Toasted Black Sesame Seeds",
+        "unit": null,
+        "notes": "ground",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stick (113 Gram/4 Oz.) Unsalted Butter",
+        "unit": null,
+        "notes": "cubed and chilled",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Toasted Black Sesame Seeds",
+        "unit": null,
+        "notes": "intact",
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a2ec2aabc460e8b32e02794db0d20a51b3e0f2a06fead31136c221685c9d1954",
+    "lineage_hash": "9da384e437bc2568c8315adad6711eb097362cf084c490744ab0588138334cca"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/black-sesame-seeds-cookies.html",
+    "fetchedAt": "2026-08-02T00:42:28.971Z"
+  },
+  "rawSource": "https://dailycookingquest.com/black-sesame-seeds-cookies.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

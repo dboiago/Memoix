@@ -1,0 +1,104 @@
+{
+  "recipe": {
+    "name": "Bison Burgers",
+    "time": "1 hr 5 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Brown the bacon in a saucepan over medium heat, 3 minutes. Add the cranberries, shallots, walnuts, and lemon zest and cook until shallots begin to brown, 2 minutes more. Add the port, increase the heat to high, and boil until only 1/2 cup of liquid remains, 5 minutes. Let the mixture cool to room temperature.",
+      "Place the bison in a mixing bowl. Stir in half the bacon-cranberry-pecan mixture and salt and pepper to taste: you’ll need about 1-1/2 teaspoons of the former and 1/2 teaspoon of the latter. Save the remaining cranberry mixture for serving.",
+      "Wet your hands with water and form the meat mixture into 4 patties, each 3/4-inch thick. Arrange on a plate lined with plastic wrap until you’re ready to cook them. The burgers can be made several hours ahead to this stage.",
+      "Set up your grill for direct grilling and preheat to high. Brush and oil your grill grate. Arrange the burgers on the grate and grill until browned on the outside and cooked to taste, 4 minutes per side for medium, turning with a spatula.",
+      "Meanwhile, grill, toast, or pan-fry the buns, if desired.",
+      "Serve the burgers on the buns lined with lettuce and the remaining cranberry mixture spooned on top."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Strips Bacon (2 Ounces)",
+        "unit": null,
+        "notes": "cut crosswise into 1/4-inch slivers",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cranberries",
+        "unit": "C",
+        "notes": "dried",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": "C",
+        "notes": "2 to 3 whole shallots, finely, chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pecans",
+        "unit": "C",
+        "notes": "coarsely, chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": "tsp",
+        "notes": "alt: orange zest, optional, grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Port",
+        "unit": "C",
+        "notes": "alt: red wine",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Bison",
+        "unit": "lb",
+        "notes": "venison or other game",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt and Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8c61627c7140c7ca411a09c4f3a4ba395eb64ec864818cc2f6ca2a710a7af73f",
+    "lineage_hash": "23f981d3a7b82f267c85a255c05086987c789b1143a7255d0a76bc7b77b797a5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/bison-burgers/",
+    "fetchedAt": "2026-08-03T02:38:03.819Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/bison-burgers/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

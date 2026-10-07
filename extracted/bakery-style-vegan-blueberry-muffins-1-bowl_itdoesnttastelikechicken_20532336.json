@@ -1,0 +1,149 @@
+{
+  "recipe": {
+    "name": "Bakery-Style Vegan Blueberry Muffins",
+    "time": "35 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "203",
+      "carbohydrateContent": "33",
+      "fatContent": "7",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "Prep: Preheat your oven to 400°F (200°C). Line 12 wells of a muffin pan with parchment liners or lightly grease the pan.",
+      "Mix the batter: In a large bowl, whisk together the flour, sugar, baking powder, baking soda, and salt. Pour in the plant-based milk, oil, lemon juice (or vinegar), vanilla, and almond extract and gently stir to combine. Don&#39;t overmix, lumps are totally cool. Overmixing can result in the muffins not rising properly.",
+      "Add blueberries: Fold in the blueberries (and any flour they were tossed with).",
+      "Top: Divide the batter evenly among the prepared muffin cups. Top each muffin with a few extra blueberries. In a small bowl, mix together the coarse sugar and cinnamon, then sprinkle evenly over each muffin.",
+      "Bake: Bake for 20–25 minutes, or until lightly golden and a toothpick inserted in the center comes out clean.",
+      "Cool & store: Let cool for at least 10 minutes before removing from the pan. Store at room temperature for 3–4 days, or freeze in an airtight container for longer storage."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "Muffins",
+        "isOptional": false
+      },
+      {
+        "name": "White Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": "Muffins",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2½",
+        "section": "Muffins",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Muffins",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Muffins",
+        "isOptional": false
+      },
+      {
+        "name": "Plant-based Milk",
+        "unit": "C",
+        "notes": "such as oat or soy",
+        "amount": "1",
+        "section": "Muffins",
+        "isOptional": false
+      },
+      {
+        "name": "Light Oil",
+        "unit": "C",
+        "notes": "such as canola or vegetable",
+        "amount": "⅓",
+        "section": "Muffins",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": "alt: apple cider vinegar, for rise, you won't taste it",
+        "amount": "2",
+        "section": "Muffins",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Muffins",
+        "isOptional": false
+      },
+      {
+        "name": "Almond Extract",
+        "unit": "tsp",
+        "notes": "optional but yum",
+        "amount": "½",
+        "section": "Muffins",
+        "isOptional": false
+      },
+      {
+        "name": "Or Frozen Blueberries",
+        "unit": "C",
+        "notes": "if frozen, don't thaw and toss with 1 tablespoon flour before adding, fresh, plus extra for topping",
+        "amount": "1",
+        "section": "Muffins",
+        "isOptional": false
+      },
+      {
+        "name": "Coarse",
+        "unit": "Tbsp",
+        "notes": "alt: sparkling sugar",
+        "amount": "2",
+        "section": "Crunchy Sugar Topping (or choose from Notes)",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Crunchy Sugar Topping (or choose from Notes)",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ceab37ec990b07a70ceebd8afc979ac1ed710c19ade7625fa936ee2afb3d40e1",
+    "lineage_hash": "2933f83778ce5301a62aa8c2e4626cbc1958a0462de23d1d95b169d02ab87655"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/vegan-blueberry-muffins/",
+    "fetchedAt": "2026-08-02T07:02:14.201Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/vegan-blueberry-muffins/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

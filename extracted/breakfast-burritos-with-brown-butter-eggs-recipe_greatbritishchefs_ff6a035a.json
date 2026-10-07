@@ -1,0 +1,139 @@
+{
+  "recipe": {
+    "name": "Breakfast Burritos With Brown Butter Eggs",
+    "time": "50 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the crispy hash brown crumb, preheat the oven to 220°C",
+      "In a large bowl, toss the grated potato with the oil, dried mixed herbs and a pinch of salt and pepper. Spread the mixture out evenly onto a baking sheet lined with baking paper, pressing it down into a thin, compact layer",
+      "Bake for 20 minutes until golden and starting to crisp, then remove from the oven and break it up into shards using a spatula. Return to the oven for a further 15 minutes, turning occasionally, until dark golden and crispy all over",
+      "Meanwhile, for the sausage filling, mix all the ingredients together with a pinch of salt and black pepper. Heat a frying pan over a medium heat, add the sausagemeat, breaking it up with a spatula, and cook it for 8-10 minutes until browned and crispy. Remove and set aside",
+      "For the scrambled eggs, whisk the eggs well in a bowl. Brown the butter in a saucepan on a medium heat, taking it deeply golden brown and smelling nutty. Remove the pan from the heat briefly to cool the pan and reduce the heat to low",
+      "Add in the eggs and cook very gently, until soft and not fully cooked through, stirring occasionally to create soft flakes. Remove from the heat and season with salt and pepper",
+      "Meanwhile, warm the tortillas in a dry pan",
+      "To assemble the burritos, arrange the crispy hash browns onto the tortillas, followed by the sausage meat. Add the golden scrambled eggs down the centre and sprinkle over some finely chopped parsley and chives. Fold in the sides of the tortillas and roll tightly into a burrito. Place seam-side down in a hot, dry pan and toast for about 2 minutes each side until golden and crisp",
+      "To serve, slice down the middle of the burritos to reveal the crispy, golden filling"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Freshlay Farms Golden Yolker® Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour Tortillas",
+        "unit": null,
+        "notes": "large",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": null,
+        "notes": "finely, chopped, to finish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": null,
+        "notes": "finely, chopped, to finish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": "medium",
+        "notes": "peeled, grated and squeezed of excess moisture using a clean cloth",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Dried Herbs",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Unflavoured Sausagemeat",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Flakes",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "grated",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f869486dc61f2555dd437767b2ef6237825fff96eecf8f3f0f5d491809fd46b1",
+    "lineage_hash": "629e8408eb603102bc054ae4d9d9039ddb4008e406afc395751091c6dcb51ac9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/breakfast-burritos-brown-butter-eggs-recipe",
+    "fetchedAt": "2026-08-01T18:18:48.375Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/breakfast-burritos-brown-butter-eggs-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,270 @@
+{
+  "recipe": {
+    "name": "Beef Steak With Mushrooms & Beef Tea",
+    "time": "55 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Trim all the fat from the rib eye (there is a layer of meat round the centre of the rib eye. Remove this and use this piece for the braised beef)",
+      "Roll the centre meat in cling film until tight, then cut into steaks",
+      "Place the piece of beef for braising into a vacuum bag with the thyme and sliced garlic",
+      "Seal and cook in a water bath at 83°C for 4 hours",
+      "When ready, take the meat out of the bag, scrape off the garlic and thyme, then cut the beef in half lengthways. Roll in cling film and put in the fridge",
+      "Season the steaks in a hot pan with a little oil and seal on both sides",
+      "Cut the braised beef into 3cm pieces and add to the steaks in the pan along with the butter. When the steaks are cooked to your liking, take out of the pan and rest in a warm place",
+      "For the mushroom purée, preheat the oven to 150°C/Gas mark 2",
+      "Place all the ingredients for the mushrooms into a pan, then cover with tin foil and put in the oven for 1 hour",
+      "Liquidise and pass through a fine sieve, then reheat with a little milk",
+      "For the potatoes, preheat the oven to 200°C/Gas mark 6",
+      "Bake the potatoes for about an hour or until soft",
+      "Grill the bacon, and cut up into small pieces",
+      "Scoop the flesh from the potatoes and mix with the bacon and chopped spring onion. Then put into 5cm diameter by 2cm thick rings and cool",
+      "When ready to serve, pan fry the potato rings in a little butter and oil until golden on both sides",
+      "To make the beef tea, mix all the ingredients together in a pan, bring to the boil then turn the gas down to a simmer. Cook for 1 ½ hours",
+      "Pass through a muslin cloth and discard the remnants",
+      "Blanch some baby carrots, then peel the skins off and add 100g butter to 100ml of water and warm. Cut some little gem lettuce",
+      "To serve, place some of the mushroom purée on the plate",
+      "Then put the braised beef on the purée. Slice the steak and put on the Macaire potatoes. Place the carrots and little gem on the plate and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rib-eye Steak",
+        "unit": "kg",
+        "notes": "in one piece",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "peeled and sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme Leaves",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flat Mushrooms",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ceps",
+        "unit": "g",
+        "notes": "dried, soaked in 100ml water",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": "large",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Knob of Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grilled Bacon",
+        "unit": "g",
+        "notes": "finely diced",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "1000",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ceps",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme Leaves",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Baby Carrots",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Little Gem Lettuce",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "11699c465bffcf8c88d7de82ff6086193dac089cf43f067fbf5ab212eefffaa5",
+    "lineage_hash": "41daf396015703c37a92bb6a01e3ce3f1a99034ffa6ba507cd39f0d57e720db1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beef-steak-recipe-mushroom-puree-beef-tea",
+    "fetchedAt": "2026-08-03T19:27:47.224Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beef-steak-recipe-mushroom-puree-beef-tea",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,138 @@
+{
+  "recipe": {
+    "name": "Almond and 'Nduja Bottoni",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, soak the almonds in cold water for 24 hours",
+      "To make the pasta dough, mix all the ingredients in a stand mixer using a dough hook. Wrap the dough in cling film (or vacuum seal if you have sous vide equipment) and rest in the fridge for 30 minutes",
+      "Blitz the soaked almonds in a high-power blender until smooth, or use a Pacojet to process if you have one. Whip the 'nduja, pass through a sieve and mix with the almond mixture in a bowl. Transfer the mixture to a piping bag",
+      "Roll out the pasta dough to make two 2mm thick sheets. Pipe blobs of the 'nduja onto the first pasta sheet, then carefully cover with the second sheet. Using a little water to seal, gently but firmly press down around each mound of filling to ensure a good seal. Cut out the ravioli using a very small pastry cutter or ravioli stamp. Store the bottoni under a slightly damp cloth in the fridge to prevent them from drying out",
+      "For the broth, salt the potato peelings then roast in the oven for 30 minutes. Transfer to a pressure cooker with 4l of water and a splash of white wine and cook for 40 minutes",
+      "Safely release the pressure and strain the broth through a fine sieve. Taste and adjust the seasoning with salt",
+      "When ready to serve, cook the pasta in salted boiling water for 1 minute",
+      "Divide the bottoni between bowls and pour in the broth. Garnish with fennel fronds and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Almonds",
+        "unit": "g",
+        "notes": "peeled",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "'nduja",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "00 Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "700",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Durum Wheat Flour",
+        "unit": "g",
+        "notes": "Caterina uses Senatore Cappelli",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "g",
+        "notes": null,
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potato Peelings",
+        "unit": "kg",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Fronds",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0bd013305fd1c9f728d7242778ba5884c60ed3890ecb62c95858ee172d79e38a",
+    "lineage_hash": "8c34af23a9437bb53bae9dcad91b549a66d3f2f8a9ca1272a33a235db1e4d55d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/almond-and-njuda-bottoni-recipe",
+    "fetchedAt": "2026-08-01T23:23:31.400Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/almond-and-njuda-bottoni-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

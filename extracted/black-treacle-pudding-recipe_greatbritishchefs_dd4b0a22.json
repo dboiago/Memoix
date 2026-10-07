@@ -1,0 +1,170 @@
+{
+  "recipe": {
+    "name": "Black Treacle Pudding",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, reduce the chocolate porter - this will later be used for the custard. Add the beer to a pan, bring to the boil and reduce by half. Set aside until needed",
+      "To make the sponge, sieve the plain flour, cocoa powder, baking powder and bicarbonate of soda together into a mixing bowl. Add the eggs to a separate bowl, then whisk in the beer, oil, treacle, and finally the sugar. Whisk together then whisk the wet ingredients into the dry ingredients until smooth",
+      "Thoroughly grease 8 individual dariole moulds and place a circle of parchment paper in the base of each one - this will make removing the sponges from the moulds easier later",
+      "Fill each mould halfway with the sponge mix and bake for 15 minutes, until cooked through. Remove from the oven and allow to cool slightly in the moulds",
+      "Once cool, slice in half lengthways with a sharp knife and brush a little beer over the puddings to keep them moist",
+      "To make the custard, add the reserved reduced porter and double cream to a pan and bring to the boil. Meanwhile, whisk together the sugar and egg yolks in a heatproof bowl until pale and smooth",
+      "Gradually pour the boiling cream and beer mixture to the eggs, whisking continuously until smooth. Return the custard to the pan and heat, stirring occasionally with a spatula, until the mixture reaches 80°C. If you don't have a thermometer, drag your finger across the back of the spatula, it is ready if the custard will be thick enough to stay in place. Do not overheat, or the custard will scramble",
+      "Pass through a fine sieve and spoon some of the custard onto each plate. Arrange the sponge halves over the custard, add four Griottine cherries to each plate, topping each one with micro cress. Serve with a little more custard on the side"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": "heaped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bicarbonate of Soda",
+        "unit": "tsp",
+        "notes": "heaped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Porter",
+        "unit": "ml",
+        "notes": "plus extra to brush on the puddings after cooking",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Treacle",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter for Greasing",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Porter",
+        "unit": "ml",
+        "notes": null,
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": "at room temperature",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Griottine Cherries",
+        "unit": null,
+        "notes": null,
+        "amount": "32",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Micro Cress",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a108ded1d8c381bb66ccea07643d03f1b3b03139bcbd112f788d6d5d2747a4c2",
+    "lineage_hash": "91c22b0dfe7dc66779848795804016ed44dd2eb01126e9ced1c1844712d1efdd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/black-treacle-pudding-recipe",
+    "fetchedAt": "2026-08-03T15:58:54.636Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/black-treacle-pudding-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

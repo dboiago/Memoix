@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Beach Cruiser",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients, except the IPA, to a shaker along with a handful of pebble ice. Whip shake. Pour into the glass over pebble ice and add IPA. Top with more pebble ice. Garnish.\nPassion Fruit SyrupWhisk together 1 part passion fruit purée with 1 part rich simple syrup until well-combined. Bottle and refrigerate for use within 2 weeks.\nGinger SyrupBlend together 1 cup of fresh ginger juice with 1 cup of granulated sugar until dissolved. Bottle and refrigerate for use within 2 weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "91c2664d4cabff2665f8b7f5d8efc8fa07dda0609c2be5ad1d86d60fedd11b84",
+    "lineage_hash": "5b75f65cd7bca5c459a6a78481fe22733131b1b911bf817bd5428600a93c6f64"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bespoke-wilmington-beach-cruiser-beer-cocktail/",
+    "fetchedAt": "2026-08-04T01:37:15.992Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bespoke-wilmington-beach-cruiser-beer-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

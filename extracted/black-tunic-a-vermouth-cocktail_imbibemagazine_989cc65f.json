@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Black Tunic",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Glass",
+    "garnish": [
+      "Lemon Twist"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all of the ingredients in a glass and fill with ice, then stir briefly to combine. (Alternately, gently heat the ingredients in a small pan and serve warm in a coffee mug.) While using a lit match or lighter, squeeze a lemon twist so the oils spray into the flame and across the drink’s surface, then use the twist as garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "e85787417d6c16e95e34c73c04619f7d015f313f758b1f0a1530ccdf77ade5a6",
+    "lineage_hash": "f892a3f20ab237d9b64f751185f02b30dd09f227434feeb1387a14a2403c9bd6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/black-tunic-a-vermouth-cocktail/",
+    "fetchedAt": "2026-08-03T23:06:07.531Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/black-tunic-a-vermouth-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

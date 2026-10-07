@@ -1,0 +1,252 @@
+{
+  "recipe": {
+    "name": "Asparagus with Hogweed and Mead",
+    "time": "1 hr 30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Make the pine oil the day before you plan to serve the dish. Bring a pan of water to the boil and add the parsley. Cook for 6 minutes, then drain and refresh in iced water. Squeeze out as much excess moisture as you can and set aside",
+      "Place the pine needles and oil in a blender and blitz for 8 minutes until completely combined. Add the parsley and blitz for a further 2 minutes. Place the mixture into a muslin cloth set over a bowl and leave to strain overnight",
+      "On the day you plan to serve the dish, prepare the asparagus purée. Melt the butter in a large saucepan, then add the 250g of asparagus and trimmings. Season, cover and cook quickly until tender. Transfer the contents of the pan to a blender with the baby spinach and blitz until smooth, adding a little water if needed. Pass through a fine sieve and set aside until ready to plate",
+      "Pick the leaves from the hogweed and reserve the smaller leaves. Lightly peel the hogweed stems if they are slightly stringy (they will be very similar to celery). Cut into 5cm sticks and set aside",
+      "Soak the fiddlehead ferns in cold water, then rub off the fluff that forms on them between your finger and thumbs and set aside",
+      "For the mead sauce, bring the mead and honey to the boil in a pan. Remove from the heat and whisk in the butter to emulsify. Add a little salt and lemon juice, then add the lethicin and blitz with a hand blender until frothy. Set aside",
+      "For the crispy hogweed leaves, heat the butter in a frying pan until foaming. Add the hogweed leaves, lightly season and cook until they caramelise and go crisp, adding more butter as they cook to prevent them drying and burning (they will absorb a lot of butter). Drain on kitchen paper and set aside",
+      "Around 20 minutes before you plan to serve, preheat an oven to 180°C/gas mark 4. Place a bed of pine needles in a large ovenproof frying pan and lay the trimmed asparagus in a single layer on top. Coat with the rapeseed oil and season, then cover with foil and cook for 6 minutes until tender",
+      "Bring the butter, water and salt for the hogweed and fiddleheads to the boil and emulsify with a hand blender. Bring the mixture back to the boil and cook the hogweed shoots for 3 minutes, then add the fiddleheads and cook for a further 2 minutes or until tender",
+      "Warm the asparagus purée, stirring in a few drops of pine oil before spreading a circle of it on the middle of each plate. Place the asparagus spears, warm hogweed shoots and fiddleheads on top. Garnish with the pennywort and hedge bedstraw tips, then reheat and re-froth the mead sauce and spoon it over the asparagus. Finish with the crisp hogweed leaves and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Flat-leaf Parsley",
+        "unit": "g",
+        "notes": "washed and picked",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pine Needles",
+        "unit": "g",
+        "notes": "ideally maritime pine needles",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Rapeseed Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Asparagus Spears",
+        "unit": null,
+        "notes": "reserve the trimmings for the purée, trimmed",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pine Needles",
+        "unit": "g",
+        "notes": "ideally maritime pine needles",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Asparagus",
+        "unit": "g",
+        "notes": "including the trimmings from the spears, chopped",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Spinach",
+        "unit": "g",
+        "notes": "washed",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hogweed Shoots",
+        "unit": null,
+        "notes": "young",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fiddlehead Ferns",
+        "unit": null,
+        "notes": "young",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hogweed Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mead",
+        "unit": "g",
+        "notes": "Chris uses Tintern mead",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "g",
+        "notes": "Chris uses a locally made honey",
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "85",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lecithin",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pennywort",
+        "unit": null,
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hedge Bedstraw Tips",
+        "unit": null,
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "09ee581fff223ae907dc5b81b21208f6963ce2c2bd607f2cc56228ab335d8bf5",
+    "lineage_hash": "ccf4153a694634aac99bca3bb0c6b0b418d50fc0001cb14a4ecb8077c3ce89f3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/asparagus-hogweed-mead-recipe",
+    "fetchedAt": "2026-08-03T07:05:41.197Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/asparagus-hogweed-mead-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

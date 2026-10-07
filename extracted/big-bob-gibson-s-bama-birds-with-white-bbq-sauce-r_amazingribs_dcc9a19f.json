@@ -1,0 +1,128 @@
+{
+  "recipe": {
+    "name": "Big Bob Gibson's Bama Birds With White BBQ Sauce",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Prep. Whisk together all the sauce ingredients in a large bowl and refrigerate in a jar for at least 2 hours, if possible, to allow the flavors to meld.",
+      "At Big Bob Gibson&#39;s, Chris Lilly butterflies his chickens, which makes sense in a high production environment, but I prefer to quarter them so I can make sure no part is overcooked since breasts and thighs cook at a different rate. I recommend you cut the bird into quarters: Two drumstick and thigh combos, two breasts, and remove the wings from the breasts. Sprinkle liberally with salt and pepper on both sides",
+      "Fire up. Crank up your smoker or prepare the grill for 2-zone indirect cooking. Shoot for 325°F (162.8°C) in the indirect side.",
+      "Cook. Place the chicken skin side up on the indirect side of the grill. Put a handful of wood chips, chunks, or pellets on the heat source. Use a foil packet with wood on a gas grill and on a charcoal grill put the wood right on the coals (no need to soak the wood). Just a handful of wood. Don&#039;t overdo it. Nothing will ruin chicken faster than too much smoke.",
+      "Check the temp of each piece independently because they will cook at different rates. Place your probe in the thickest part of each chunk but don&#39;t touch the bones. The wings will finish much faster than the other parts so put them on late and be prepared to remove them early. When all parts hit about 155°F (68.3°C), flip the bird and put the skin face down on the hot side. When they reach 165°F (73.9°C), paint them generously on all sides with the sauce (at Big Bob&#39;s they dunk the birds in a vat of sauce).",
+      "Serve. Plate the chicken and serve immediately with additional white BBQ sauce."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mayonnaise",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": "White BBQ Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Apple Cider Vinegar",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": "White BBQ Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "White BBQ Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Apple Juice",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "White BBQ Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Powdered Garlic",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "White BBQ Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Horseradish From a Jar",
+        "unit": "Tbsp",
+        "notes": "either in vinegar or creamy",
+        "amount": "1",
+        "section": "White BBQ Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "Tbsp",
+        "notes": "coarsely",
+        "amount": "1",
+        "section": "White BBQ Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "White BBQ Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Morton Coarse Kosher Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "White BBQ Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cayenne Pepper",
+        "unit": "tsp",
+        "notes": "finely",
+        "amount": "¼",
+        "section": "White BBQ Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Chickens",
+        "unit": null,
+        "notes": "approximately 4 pounds/1.8 kg each.",
+        "amount": "2",
+        "section": "Chickens",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5fa974939b602bc3e82d4614ab32f802a53b3bc08ecd47268a5989e1537a8af5",
+    "lineage_hash": "90f7915c651b9fbfea96529d367309ac6a4733d00639c63b95d6081d71ba97d9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://amazingribs.com/tested-recipes/chicken-recipes/bob-gibsons-white-bbq-sauce-recipe/",
+    "fetchedAt": "2026-08-02T08:40:40.802Z"
+  },
+  "rawSource": "https://amazingribs.com/tested-recipes/chicken-recipes/bob-gibsons-white-bbq-sauce-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,200 @@
+{
+  "recipe": {
+    "name": "Chicken Lentil Curry",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the curry we first need to make the curry paste, add all of the ingredients into a small food processor and pulse until a paste is formed (make sure to add the whole coriander, stalks and all, these add lots of flavour). You can also make this by very finely chopping the garlic, ginger and coriander and mixing together with the remaining paste ingredients.",
+      "To a large saucepan add a little bit of oil and over a medium/low heat cook the onions for 5-10 minutes or until translucent.",
+      "Add the curry paste and cook for a few minutes to take the raw edge off the spices.",
+      "Add the lentils and stir to coat in the paste.",
+      "Add the stock and the tinned tomatoes, increasing the heat slightly to bring the mixture to a boil, then reduce to a simmer and cook for 5 minutes before adding the chicken and cooking for 5-10 minutes or until the lentils and chicken are cooked through.",
+      "Add the spinach and coconut milk stirring to combine."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "2",
+        "section": "Curry Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Piece Garlic",
+        "unit": "inch",
+        "notes": null,
+        "amount": "1",
+        "section": "Curry Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Paprika",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Curry Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Curry Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Curry Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cumin",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Curry Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Coriander",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Curry Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Curry Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Curry Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Puree",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Curry Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Curry Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "handful",
+        "notes": null,
+        "amount": "1",
+        "section": "Curry Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": null,
+        "notes": "diced",
+        "amount": "2",
+        "section": "Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Red Lentils",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": "Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": "Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Tinned Tomatoes",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": "Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Spinach",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": "Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Breasts",
+        "unit": null,
+        "notes": "diced",
+        "amount": "4",
+        "section": "Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Light Coconut Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": "Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Fat Free Natural Yoghurt",
+        "unit": null,
+        "notes": "optional",
+        "amount": "0",
+        "section": "Curry",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6123e152083ad1dae7e1486a6022078ee5f0d32c3dfc99e5972ccd15435ee93a",
+    "lineage_hash": "1690a5b108581bfd4782261058a46c9d90995080c267a6199b524f41a7af8c79"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.theboywhobakes.co.uk/recipes/2018/2/9/chicken-lentil-curry",
+    "fetchedAt": "2026-08-01T20:40:41.385Z"
+  },
+  "rawSource": "https://www.theboywhobakes.co.uk/recipes/2018/2/9/chicken-lentil-curry",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

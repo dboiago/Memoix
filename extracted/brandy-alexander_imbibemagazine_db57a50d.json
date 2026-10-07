@@ -1,0 +1,35 @@
+{
+  "recipe": {
+    "name": "Brandy Alexander",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake all the ingredients with ice until well-chilled and frothy. Strain into a chilled glass and garnish.",
+      "Tip: To make it a milkshake, Bryant’s combines 2 oz. of brandy and 2 oz. of crème de cacao with 2 scoops of ice cream, then blends until smooth. Garnish with whipped cream, nutmeg, and a cherry."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "3b4a8f5114a19492387cd42af74584e20824f0be583aa63f790836f1b3cb0db2",
+    "lineage_hash": "5f4f46245ea2e3b9934dfb5db2e1e08e9423ff3fdbd9bf06690c4707b1ea8184"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/brandy-alexander/",
+    "fetchedAt": "2026-08-03T23:07:17.176Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/brandy-alexander/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

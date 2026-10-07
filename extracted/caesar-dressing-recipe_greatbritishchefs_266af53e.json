@@ -1,0 +1,133 @@
+{
+  "recipe": {
+    "name": "Caesar Dressing",
+    "time": "5 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the mustard, salt, pepper, vinegar, garlic, anchovies and egg yolk in a food processor and blend to a smooth paste",
+      "Slowly pour in the oil, with the blade still running on a low speed, until the sauce starts to thicken and emulsify",
+      "Next, add the lemon juice, Parmesan, Worcestershire sauce and Tabasco. If the mixture is too thick, add a little water. If your dressing splits you can add lemon juice to help bring it back together again"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "English Mustard",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "tsp",
+        "notes": "finely chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Anchovy Fillets",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Worcestershire Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tabasco",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5d81b180b58dc12d20c3dc7615d08b5f3e6b6de73645eacf6d51f129e3e8c804",
+    "lineage_hash": "e67f1060f12ee92215ee43e2e10521003471353c80554064a36152c935cd3643"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/caesar-dressing-recipe",
+    "fetchedAt": "2026-08-03T10:31:10.221Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/caesar-dressing-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

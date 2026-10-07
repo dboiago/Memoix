@@ -1,0 +1,112 @@
+{
+  "recipe": {
+    "name": "Aged Gouda and Dried Pear Scones",
+    "time": "25 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "9",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 180°C (350°F) and line a baking sheet with parchment paper.",
+      "In a medium mixing bowl, combine the flour, baking powder, piment d’Espelette, and salt. Add the butter and rub it into the dry ingredients with the tips of your fingers or a wire pastry blender, until the mixture forms coarse crumbs. Add the cheese and pears, and blend with a fork.",
+      "Add the cream and mix it in gently with the fork until the dough comes together — add a tad more cream or ice-cold water if the dough is too dry. Turn the dough out on a lightly floured work surface, gather into a ball, and roll out into a 2-cm-thick (3/4-inch) circle.",
+      "Cut out circles of dough using a 6-cm (2 1/2-inch) cookie cutter or juice glass and transfer onto the prepared baking sheet, leaving about an inch of space between each. Gather the rest of the dough into a ball and repeat the rolling and cutting steps until you’ve used up all the dough.",
+      "Use a pastry brush or the back of a teaspoon to brush the top of the rounds with the egg yolk mixture. Bake for 20 to 25 minutes, until puffy and golden, rotating the baking sheet halfway through the baking. Let cool on a rack for a few minutes and serve.",
+      "The scones will keep for a few days at room temperature, wrapped tightly in foil. Reheat for five minutes in a warm oven before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Grams All-purpose Flour",
+        "unit": null,
+        "notes": null,
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fat Pinch of Ground Piment D’espelette",
+        "unit": null,
+        "notes": "substitute any moderately hot ground chili pepper",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fleur De Sel",
+        "unit": "tsp",
+        "notes": "substitute kosher salt",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Unsalted Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Gouda",
+        "unit": null,
+        "notes": "coarsely grated 36-month-old, substitute another type of aged firm cheese, such as comté, parmesan, or cheddar",
+        "amount": "85",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Dried Pears",
+        "unit": null,
+        "notes": "diced",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light (15%) Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": "beaten with a tablespoon fresh water",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bffcd43a8f41109ce89b8f51862d63606c7d7e8ce1f6049a0a5b70e26381f4c3",
+    "lineage_hash": "00d4b3fa01b3f39d1e075bd804c6dac675c773bd64217a81475c84de7e89c7db"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/appetizers/aged-gouda-and-dried-pear-scones-recipe/",
+    "fetchedAt": "2026-09-30T18:30:12.552Z"
+  },
+  "rawSource": "https://cnz.to/recipes/appetizers/aged-gouda-and-dried-pear-scones-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,114 @@
+{
+  "recipe": {
+    "name": "Brazilian Chicken Seasoning (Tempero Em Pó Para Frango)",
+    "time": "5 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "BR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "17",
+      "carbohydrateContent": "4",
+      "fatContent": "1",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Add all the ingredients to a spice grinder and grind to a powder.",
+      "Place the seasoning in a jar and cover with a lid.",
+      "Store in a dry place for months, and use as needed."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Onion Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": "Tbsp",
+        "notes": "dried",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "Tbsp",
+        "notes": "dried",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Paprika",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Achiote Pepper (colorau) Optional",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cayenne Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Large Bay Leaf (about 2 Inches Long)",
+        "unit": null,
+        "notes": "alt: 2 small (1 inch) ones",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8789dc3c319671709687c30963388e22c6d984c05e7b009290fcd4b2f1adba42",
+    "lineage_hash": "18fa2129dd61c5f244d4caf9838c90b306064f73193a9ac7a6c51d9470b9e01c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://braziliankitchenabroad.com/brazilian-chicken-seasoning-tempero-em-po-para-frango/",
+    "fetchedAt": "2026-09-25T20:18:06.803Z"
+  },
+  "rawSource": "https://braziliankitchenabroad.com/brazilian-chicken-seasoning-tempero-em-po-para-frango/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

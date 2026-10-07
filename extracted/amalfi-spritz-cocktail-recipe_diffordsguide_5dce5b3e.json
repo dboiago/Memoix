@@ -1,0 +1,84 @@
+{
+  "recipe": {
+    "name": "Amalfi Spritz Cocktail",
+    "time": "4 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Sparkling",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "100",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Select and pre-chill a WINE GLASS.",
+      "Prepare garnish of 2 lemon slice wheels.",
+      "POUR ingredients into chilled glass.",
+      "FILL glass with ice.",
+      "Garnish with lemon slices."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Limoncello Liqueur",
+        "unit": "ml",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Bitter Liqueur",
+        "unit": "ml",
+        "notes": null,
+        "amount": "7.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "7.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Bitters",
+        "unit": "dash",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Prosecco",
+        "unit": "ml",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "46cc51a9cd291cbd0301c474bc889a0290bca950a30292309e5733b63bdcf203",
+    "lineage_hash": "b047ce23133e8f2c498da537936bc9c8ff03ee1ddf12465c64ed3375989515b5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/36755/amalfi-spritz",
+    "fetchedAt": "2026-08-03T22:32:25.006Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/36755/amalfi-spritz",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

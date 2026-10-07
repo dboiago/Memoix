@@ -1,0 +1,163 @@
+{
+  "recipe": {
+    "name": "Braised Cuttlefish with Butter Beans",
+    "time": "2 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by preparing the cuttlefish. Slice it up into bite-sized pieces; the shape isn’t important. Give them a really good clean under cold water then drain in a colander",
+      "Place the cherry tomatoes into a large baking dish with a drizzle of olive oil and a pinch of salt, then cook in the oven until slightly browned and caramelised. This should take about 20-25 minutes",
+      "Meanwhile, place a large pan over a medium heat and add the olive oil. Once the oil is warm, add the onion and fennel with a few pinches of salt. Gently cook until slightly softened without any colour then add the garlic and cook for a further minute",
+      "Add the anchovies, chilli flakes, fennel seeds and stir",
+      "Add the tomato paste and cook for 10 minutes over a low heat – this will give some body to the dish. Add the white wine and cook for a further 10 minutes",
+      "At this point the cherry tomatoes should be cooked. Add them to the pan along with all the roasting juices, breaking them up slightly as you do so. Cook for 5 minutes until they break down into a sauce, then add the cuttlefish along with a litre of water and simmer gently for 1 hour",
+      "The cuttlefish should be really tender by this point; if it feels a little bit chewy, cook for another 10–20 minutes or so until nice and soft",
+      "Drain the tinned butter beans and add them to the braise. The beans are already cooked, so you just need to warm them through. Season with salt, pepper and a little lemon juice and zest",
+      "Ladle into bowls and finish with a drizzle of good olive oil"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Cuttlefish",
+        "unit": null,
+        "notes": "your fishmonger will do this for you, cleaned",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherry Tomatoes",
+        "unit": "kg",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": "plus extra for drizzling",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": null,
+        "notes": "very finely sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bulb of Fennel",
+        "unit": null,
+        "notes": "very finely sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Anchovy Fillets",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Flakes",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Purée",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tinned Butter Beans",
+        "unit": "g",
+        "notes": "2 tins",
+        "amount": "800",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zested and juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f2c3fca81304f8731ee783de0510c470e8f1734dcc0398c1d04f2a150ea34ed1",
+    "lineage_hash": "489f76bb69aa65840cac85762c11b7727bf4ea870444de92ed99183df0e1b3db"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/braised-cuttlefish-with-butter-beans-recipe",
+    "fetchedAt": "2026-08-02T21:15:54.256Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/braised-cuttlefish-with-butter-beans-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

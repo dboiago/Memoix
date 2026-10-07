@@ -1,0 +1,137 @@
+{
+  "recipe": {
+    "name": "Avocado and Grated Egg on Toast with Everything Bagel Seasoning",
+    "time": "30 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the eggs into a pot large enough to hold them in a single layer and cover with cold water by 1 inch",
+      "Bring to the boil, then turn off the heat and cover the pot. Set aside for 10 minutes",
+      "Transfer the eggs to a bowl of iced water and chill for 5 minutes",
+      "Combine all the ingredients for the everything bagel seasoning",
+      "Slice the avocado and place half on top of each piece of toast, topping with a small squeeze of lemon juice",
+      "Grate the hard boiled eggs on top using a microplane grater&nbsp;",
+      "Top with everything bagel seasoning, olive oil and chilli flakes to taste&nbsp;"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Freshlay Farms Golden Yolker® Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sourdough Bread",
+        "unit": "slices",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Avocado",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Juice of Half a Lemon",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Flakes",
+        "unit": null,
+        "notes": "to garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": null,
+        "notes": "to garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nigella Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion Flakes",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Poppy Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4b84eb256f2f83626190e016c7a66195c74c314068f16561475843922ced86e0",
+    "lineage_hash": "23f4698239a7689a1eaa960988fd6aa9aab720d36b08e1a069d812b205c198b5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/avocado-grated-egg-toast-everything-bagel-seasoning-recipe",
+    "fetchedAt": "2026-08-02T06:14:53.683Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/avocado-grated-egg-toast-everything-bagel-seasoning-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

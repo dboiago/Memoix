@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Blood Orange Mule",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Highball",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pour all of the ingredients in the glass, add fresh ice, stir, and top with ginger beer. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "37be216efb76fa1669651c21a16daf954100e2d53b0edb1b8bfb82fd7a18750c",
+    "lineage_hash": "0d5b5b98d401a5e810e1ae30b259272332057e6f9d04118512b78ddcc5d912d6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/blood-orange-mule/",
+    "fetchedAt": "2026-08-03T21:25:59.415Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/blood-orange-mule/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

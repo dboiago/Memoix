@@ -1,0 +1,78 @@
+{
+  "recipe": {
+    "name": "Apricot Fool",
+    "time": "40 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the prepared apricots in an oven-proof dish and sprinkle the sugar over the top with a little water, about 4 tablespoons. Bake/roast for 15-20 minutes, or until the fruit is soft and has just started to collapse but still retains its shape. Allow to cool",
+      "Crumble 2 amaretti biscuits into the bottom of each serving bowl, and then make the fool. Stir the apricot jam through the crème fraîche so it is marbled - do not over mix",
+      "Spoon the apricot and crème fraîche fool mixture over the amaretti biscuit crumb base and then top with the cooked apricots, layering them if necessary",
+      "Just before serving the desserts, crumble the remaining amaretti biscuits over the top of the apricots and serve straight away with a glass of dessert wine and a bowl of extra crème fraîche or cream"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Apricots",
+        "unit": null,
+        "notes": "large, stoned and halved",
+        "amount": "24",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crème Fraîche",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apricot Jam",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amaretti Biscuits",
+        "unit": null,
+        "notes": null,
+        "amount": "24",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c2034cccd4b95de2ce5b9db86294706eb6b84a188dfea5fba526ae576572df68",
+    "lineage_hash": "5e7bd63a1bfe840ad8475bcd2c4d8bc9866c76bed97e08af0190b9a2b564f43a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/amaretti-apricot-layered-fool-recipe",
+    "fetchedAt": "2026-08-03T23:49:37.834Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/amaretti-apricot-layered-fool-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Cherry Circle Room Old Fashioned",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Old Fashioned",
+    "garnish": [
+      "Orange Coin"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine ingredients in a mixing glass with ice and sir to chill. Strain into an Old Fashioned glass over a large chunk of ice. Express the oils of an orange coin over the top of the drink, and discard."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "3c211300f362f241c8a2366a3c4d9912f96475e4a3a305fcfc6d80c7a6339637",
+    "lineage_hash": "2a17670af7d4d34c7832610099f6e0497d6619456bf8ded63b867ec276e67e98"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cherry-circle-room-old-fashioned/",
+    "fetchedAt": "2026-08-03T19:56:21.560Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cherry-circle-room-old-fashioned/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

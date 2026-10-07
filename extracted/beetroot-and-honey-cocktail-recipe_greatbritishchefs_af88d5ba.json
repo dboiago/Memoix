@@ -1,0 +1,139 @@
+{
+  "recipe": {
+    "name": "Beetroot and Honey Cocktail",
+    "time": "5 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": "Boston",
+    "garnish": [
+      "Beetroot Powder",
+      "Red Amaranth"
+    ],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by infusing the rum. Place the rum and beetroot into a container and leave, covered, at room temperature for 6 hours to infuse. Strain and reserve in the bottle",
+      "To make the honey syrup simply combine the honey and water, mixing well. Reserve in a bottle",
+      "Fill a cocktail glass with ice to chill",
+      "To make the cocktail, carefully measure all the ingredients into the tin of a Boston shaker. Add a large scoop of ice",
+      "Shake hard for 15 seconds, then strain into the empty half of the shaker. Throw away the ice and shake again without ice for 15-20 seconds. Throw the ice out of the glass and strain the cocktail though a tea strainer into the glass",
+      "To garnish, dust the top of the cocktail with beetroot powder, then place the red amaranth in the centre of the drink"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rum",
+        "unit": "ml",
+        "notes": "Adam uses Havana Club 3 Year Old",
+        "amount": "750",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beetroot",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "ml",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rum",
+        "unit": "ml",
+        "notes": "see above, infused with beetroot",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rum",
+        "unit": "ml",
+        "notes": "Adam uses Havana 7 Year Old",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cassis",
+        "unit": "ml",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey Syrup",
+        "unit": "ml",
+        "notes": "see above",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beetroot Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Amaranth",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a1e867637e9bbbe5f321251eac4cf8519bb6d2604052ccca6fc62168104fd8d5",
+    "lineage_hash": "8a1395ecec4df3ba605143d7b1324cab51732e9491fc3438e57d30b51860cbd6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beetroot-cocktail-recipe",
+    "fetchedAt": "2026-08-03T08:22:41.450Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beetroot-cocktail-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

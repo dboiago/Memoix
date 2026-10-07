@@ -1,0 +1,40 @@
+{
+  "recipe": {
+    "name": "Aunt Lucille’s 7-Up Pound Cake",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 325 degrees Fahrenheit.",
+      "Spray a 10-inch Bundt or tube pan with nonstick cooking spray. [NOTE: Don’t skip this step unless you like digging your cake out of the pan! I swear by Baker’s Joy Non-Stick Baking Spray with Flour and recommend a smoother Bundt pan for less chance of sticking.]",
+      "In the bowl of a stand mixer or with a hand mixer, cream together the butter and granulated sugar for 5 to 7 minutes, until light and fluffy. Add the eggs, one at a time, scraping down the sides of the bowl after each addition. Add the lemon zest, lemon extract, and vanilla extract and mix until combined. Add the flour one-third at a time and mix on low speed, alternating with ¼-cup portions of the lemon-lime soda, mixing well after each addition.",
+      "Pour the batter into the prepared pan and bake for 1 hour to 1 hour 15 minutes, until a toothpick inserted in the center comes out clean. Let cool for 30 minutes, then invert onto a wire rack and lift the pan off of the cake. Let the cake cool on the rack.",
+      "While the cake cools, make the 7-Up glaze (see recipe below).",
+      "Using a 6-inch wooden skewer or toothpick, poke holes in the top of the cooled cake. Slowly spoon the glaze over the cake, letting it run into the holes and over the surface. Set the cake aside for 10 minutes before serving to let the glaze absorb into the cake and give it a lightly lacquered finish.",
+      "7-Up Glaze: In a small bowl, stir together 1 cup of confectioners’ sugar, 2 tablespoons of fresh lemon juice, 2 tablespoons of 7-Up, and 1 teaspoon of grated lime zest until smooth."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "a22bb6d615acd7612ceff80cc61ae6ac2092f7355cd2de9e94a811ea6ed48ea6",
+    "lineage_hash": "8c5ec44c24647bf725ca4be08c3030491d39da94476b8ae80868cf291f9577db"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/aunt-lucilles-7-up-pound-cake/",
+    "fetchedAt": "2026-08-03T19:04:12.415Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/aunt-lucilles-7-up-pound-cake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

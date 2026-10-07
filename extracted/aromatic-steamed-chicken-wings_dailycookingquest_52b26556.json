@@ -1,0 +1,134 @@
+{
+  "recipe": {
+    "name": "Aromatic Steamed Chicken Wings",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "ID",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Prepare a steamer.",
+      "Place chicken wings in a steamed proof bowl. Top the chicken with garlic, lemon grass, ginger, chili, scallion, coriander leaf, soy sauce, fish sauce, salt, ground pepper, and water. Wrap the bowl with aluminum foil.",
+      "Steamed the chicken for 30 minutes or until the chicken is cooked.",
+      "Carefully remove the aluminum foil and served immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Wings",
+        "unit": null,
+        "notes": "cut each wing to two parts",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Grass",
+        "unit": null,
+        "notes": "remove the outer layers and finely chopped the white parts",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "fresh, peeled and cut into match sticks",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilies",
+        "unit": null,
+        "notes": "seeded and cut into match sticks",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallion",
+        "unit": "stalk",
+        "notes": "cut into match sticks",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaf",
+        "unit": "stalk",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "76c0013b963c0f5157ecd3e729fe58ff4b14e5ea919662a23c1876cd38b1d87a",
+    "lineage_hash": "d19f2fc6a4bb8fa41510ae12dda179cbbdc146575a0ab877eb8cb3d0be10412a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/aromatic-steamed-chicken-wings.html",
+    "fetchedAt": "2026-08-02T11:42:17.906Z"
+  },
+  "rawSource": "https://dailycookingquest.com/aromatic-steamed-chicken-wings.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

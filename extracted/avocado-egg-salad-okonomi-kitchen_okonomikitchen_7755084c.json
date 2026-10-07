@@ -1,0 +1,204 @@
+{
+  "recipe": {
+    "name": "Avocado Egg Salad",
+    "time": "10 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "550",
+      "carbohydrateContent": "14",
+      "fatContent": "50",
+      "proteinContent": "15"
+    },
+    "directions": [
+      "Place the eggs in a small saucepan and add enough water to come about 1 cm above the eggs. Bring to a boil over medium-high heat. Once boiling, reduce the heat to low, cover, and cook for 4 minutes. Turn off the heat and let the eggs sit for 5 minutes. Transfer the eggs to an ice bath and let cool completely before peeling. Quarter the eggs (or chop them to desired size).",
+      "In a bowl, combine the mayonnaise, soy sauce, and any optional seasonings you&#8217;d like to use. Adjust the amount of mayo depending on how ripe your avocado is. The more ripe and creamy, the less mayo you&#8217;ll need. Adjust taste with salt and pepper to your liking.",
+      "Cut the avocado into roughly 2 cm cubes and toss gently with the lemon juice to prevent browning.",
+      "Add the avocado and eggs to the bowl and gently toss until evenly coated.",
+      "Serve immediately or chill for 15-30 minutes before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Shiro Dashi",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Optional Seasonings",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Sesame Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Optional Seasonings",
+        "isOptional": false
+      },
+      {
+        "name": "Furikake",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Optional Seasonings",
+        "isOptional": false
+      },
+      {
+        "name": "Yuzu Kosho",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Optional Seasonings",
+        "isOptional": false
+      },
+      {
+        "name": "Wasabi",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Optional Seasonings",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Optional Seasonings",
+        "isOptional": false
+      },
+      {
+        "name": "Sriracha",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Optional Seasonings",
+        "isOptional": false
+      },
+      {
+        "name": "Aonori",
+        "unit": "tsp",
+        "notes": "green lacar",
+        "amount": "1",
+        "section": "Optional Seasonings",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Mustard",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Optional Seasonings",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": "small",
+        "notes": "minced",
+        "amount": "1",
+        "section": "Optional Seasonings",
+        "isOptional": false
+      },
+      {
+        "name": "Persian Cucumber",
+        "unit": null,
+        "notes": "diced",
+        "amount": "1",
+        "section": "Optional Add-In Ideas",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": "small",
+        "notes": "diced",
+        "amount": "1",
+        "section": "Optional Add-In Ideas",
+        "isOptional": false
+      },
+      {
+        "name": "Thinly Sliced Onion",
+        "unit": null,
+        "notes": null,
+        "amount": "¼",
+        "section": "Optional Add-In Ideas",
+        "isOptional": false
+      },
+      {
+        "name": "Corn",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Optional Add-In Ideas",
+        "isOptional": false
+      },
+      {
+        "name": "Cooked Salmon",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Optional Add-In Ideas",
+        "isOptional": false
+      },
+      {
+        "name": "Tuna",
+        "unit": "can",
+        "notes": null,
+        "amount": "½",
+        "section": "Optional Add-In Ideas",
+        "isOptional": false
+      },
+      {
+        "name": "Cooked Shrimp",
+        "unit": "pcs",
+        "notes": null,
+        "amount": "6",
+        "section": "Optional Add-In Ideas",
+        "isOptional": false
+      },
+      {
+        "name": "Ham",
+        "unit": "slices",
+        "notes": "40 g",
+        "amount": "2",
+        "section": "Optional Add-In Ideas",
+        "isOptional": false
+      },
+      {
+        "name": "Bacon",
+        "unit": "slices",
+        "notes": "cooked",
+        "amount": "2",
+        "section": "Optional Add-In Ideas",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken",
+        "unit": "C",
+        "notes": "60 g, shredded",
+        "amount": "½",
+        "section": "Optional Add-In Ideas",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9cfac8a41012f4b22c07616823d7169e0655fd2f408565e140a38ca407ec4f02",
+    "lineage_hash": "509e3cb152c0292c2bb9b77bc600a3985d1864a13f1f5ff429b063ea05f54a1f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.okonomikitchen.com/avocado-egg-salad/",
+    "fetchedAt": "2026-09-26T01:42:24.625Z"
+  },
+  "rawSource": "https://www.okonomikitchen.com/avocado-egg-salad/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,132 @@
+{
+  "recipe": {
+    "name": "Bream Carpaccio with Tomato Confit Sauce Vierge",
+    "time": "20 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all the ingredients for the sauce with some salt and pepper and mix well",
+      "Slice the fish very thinly and arrange on a serving platter. Top with the sauce and serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sea Bream",
+        "unit": null,
+        "notes": "very fresh, filleted and skinned",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Capers",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Confit Cherry Tomatoes",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "grated to a paste",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Basil Leaves",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Flat-leaf Parsley",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "tsp",
+        "notes": "lightly crushed",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "ml",
+        "notes": "plus extra to loosen, if needed",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "small",
+        "notes": "very finely sliced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zested and juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "29a4d6356df7b5d8b7a534dddbde6c263682b3c9c119aea7cd7ffd827bfb57de",
+    "lineage_hash": "167c75724bbab9cb5eb4f7781dd1fd2ce926bf2630f3571429ff568b1b591eb2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/carpaccio-tomato-confit-sauce-vierge-recipe",
+    "fetchedAt": "2026-08-02T15:24:45.832Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/carpaccio-tomato-confit-sauce-vierge-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

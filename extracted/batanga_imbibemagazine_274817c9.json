@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Batanga",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Highball",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Moisten the rim of a glass with the cut side of a lime wedge and dip the rim in coarse salt, shaking to remove the excess. Fill the glass with ice, and add the pinch of salt, tequila, and juice of 1/2 a lime. (If your limes are small, use the juice of a whole lime.) Top with chilled cola and briefly stir with the knife used to cut the lime."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "dd8a0564522ca5c7f7b99446c15eac36201ea0d2b2fbfca397fc67f674ce34e9",
+    "lineage_hash": "814b92aba7e2f013cee23b708e8cb10a1a9be04672dc18b039dd12f44cdcd510"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/batanga/",
+    "fetchedAt": "2026-08-04T01:48:29.646Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/batanga/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Bar Clacson's Espresso Martini",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all the ingredients in a shaker with ice. Shake with a large ice cube to briefly to chill. Strain into a chilled coupe glass and garnish.\nEspresso SyrupCombine equal parts fresh espresso and white sugar by weight. Stir until the sugar is dissolved. Allow to cool before use and store in the refrigerator for up to 2 weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "a06e9613358bfe5c5b3d26a3c99d2f361efea2c963f54edf69bac2d313b87186",
+    "lineage_hash": "a10859f05e7847891dfa43738d96f3bb16b6f198f8e7c13c1fadebe16cfbb39f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bar-clacsons-espresso-martini/",
+    "fetchedAt": "2026-08-04T02:02:03.250Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bar-clacsons-espresso-martini/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

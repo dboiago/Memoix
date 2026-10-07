@@ -1,0 +1,59 @@
+{
+  "recipe": {
+    "name": "Cajun Martini",
+    "time": "3 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Martini",
+    "garnish": [
+      "Chilli Pepper Slice"
+    ],
+    "subcategory": "Vodka",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "191",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Strain, discarding vermouth to leave only a coating on the ice",
+      "Pour pepper vodka into mixing glass, stir with coated ice and strain into chilled glass."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chili Pepper Vodka",
+        "unit": "ml",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Vermouth",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8a57ae46799169cfc4809b232e092258e093bdce30dc79f64fc2ed2e90a061cc",
+    "lineage_hash": "9845506018f95581a9a1d8198786e815a3dc48dce889865c74d5f8dc4b0e18f9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/358/cajun-martini",
+    "fetchedAt": "2026-08-02T02:36:49.317Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/358/cajun-martini",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

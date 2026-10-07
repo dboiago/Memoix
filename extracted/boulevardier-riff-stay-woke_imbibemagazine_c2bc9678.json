@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Boulevardier Riff: Stay Woke",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all the ingredients in a mixing glass with ice and stir to chill. Strain into a coupe and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "af39e5fa0c74f6060d23e00fbc49eabd951f8d430a7af21b515becd7564383fa",
+    "lineage_hash": "f34555a5b000b9cc4211405df93de5eb33405f16286daa55a754fe81e4762f36"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/boulevardier-riff-stay-woke/",
+    "fetchedAt": "2026-08-03T17:30:46.204Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/boulevardier-riff-stay-woke/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

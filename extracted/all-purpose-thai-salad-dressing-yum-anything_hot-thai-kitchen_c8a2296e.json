@@ -1,0 +1,206 @@
+{
+  "recipe": {
+    "name": "All-Purpose Thai Salad Dressing",
+    "time": "5 min",
+    "course": "salad",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "TH",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pound garlic, chilies, and cilantro stems into a paste. (If you don't have a mortar and pestle, alternative methods are in the recipe card.)",
+      "Add the palm sugar and pound until it is dissolved into a paste.",
+      "Add the fish sauce and lime juice; stir to mix.",
+      "It's now ready to use!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Red Thai Chilies",
+        "unit": null,
+        "notes": "see note, seeds removed if desired",
+        "amount": "3",
+        "section": "Basic Yum Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "1",
+        "section": "Basic Yum Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Stems Cilantro",
+        "unit": null,
+        "notes": "optional, chopped",
+        "amount": "5",
+        "section": "Basic Yum Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Palm Sugar",
+        "unit": "Tbsp",
+        "notes": "finely chopped, packed",
+        "amount": "1½",
+        "section": "Basic Yum Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Basic Yum Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "Tbsp",
+        "notes": "fresh",
+        "amount": "3",
+        "section": "Basic Yum Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Red Thai Chilies",
+        "unit": null,
+        "notes": "see note1, seeds removed if desired",
+        "amount": "3",
+        "section": "Variation 1 and 2 - Chili Paste and/or Coconut Milk Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "1",
+        "section": "Variation 1 and 2 - Chili Paste and/or Coconut Milk Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Stems Cilantro",
+        "unit": null,
+        "notes": "optional, chopped",
+        "amount": "5",
+        "section": "Variation 1 and 2 - Chili Paste and/or Coconut Milk Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Palm Sugar",
+        "unit": "Tbsp",
+        "notes": "finely chopped, packed",
+        "amount": "½",
+        "section": "Variation 1 and 2 - Chili Paste and/or Coconut Milk Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Thai Chili Paste",
+        "unit": "Tbsp",
+        "notes": "see note 2",
+        "amount": "1½",
+        "section": "Variation 1 and 2 - Chili Paste and/or Coconut Milk Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Variation 1 and 2 - Chili Paste and/or Coconut Milk Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "Tbsp",
+        "notes": "fresh",
+        "amount": "3",
+        "section": "Variation 1 and 2 - Chili Paste and/or Coconut Milk Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "Tbsp",
+        "notes": "optional, see note 3",
+        "amount": "1-2",
+        "section": "Variation 1 and 2 - Chili Paste and/or Coconut Milk Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Red Thai Chilies",
+        "unit": null,
+        "notes": "see note, seeds removed if desired",
+        "amount": "3",
+        "section": "Variation 3 - Umami Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "1",
+        "section": "Variation 3 - Umami Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Stems Cilantro",
+        "unit": null,
+        "notes": "optional, chopped",
+        "amount": "5",
+        "section": "Variation 3 - Umami Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Palm Sugar",
+        "unit": "Tbsp",
+        "notes": "finely chopped, packed",
+        "amount": "1½",
+        "section": "Variation 3 - Umami Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Variation 3 - Umami Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Pla Ra (fermented Unfiltered Fish Sauce)",
+        "unit": "Tbsp",
+        "notes": "fermented shrimp paste, or sub 1 teaspoon gapi",
+        "amount": "1",
+        "section": "Variation 3 - Umami Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "Tbsp",
+        "notes": "fresh",
+        "amount": "3",
+        "section": "Variation 3 - Umami Dressing",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0ce704f1d1a2ff544a0609d7000007b2a9687f241cde7053c32f38128be8a33a",
+    "lineage_hash": "a4513ea7b3fc5f14e7862bc47037c9e20e888b9f3c07a3771f9e865c25ed8f70"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://hot-thai-kitchen.com/thai-yum-dressing/",
+    "fetchedAt": "2026-08-02T00:46:00.727Z"
+  },
+  "rawSource": "https://hot-thai-kitchen.com/thai-yum-dressing/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

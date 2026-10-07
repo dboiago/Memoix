@@ -1,0 +1,210 @@
+{
+  "recipe": {
+    "name": "Carrot and Cauliflower Loaf",
+    "time": "1 hr 40 min",
+    "course": "vegn",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 350 degrees F or 180 degrees C.",
+      "Boil the vegetables. Drain.",
+      "Finely chop or mash the carrots and cauliflower. Grate the cheese as well. Mix together.",
+      "Add the whipping cream and beaten eggs.",
+      "Mix thoroughly then puree the mixture together until you get a smooth paste.",
+      "Note: You will need a food processor or a hand blender to help you puree the vegetables.",
+      "Transfer the mixture to a 9 inch greased baking dish or loaf pan.",
+      "Bake for about 40 minutes in a 350 degree F oven.",
+      "Leave to cool before cutting. Serve with the apple curry sauce.",
+      "Note: the following method is for a thick sauce. Follow the extra instructions for a thin sauce.",
+      "Heat the butter in a sauce pan.",
+      "Add the onion and curry powder and continue to cook 2 minutes over low heat. Add flour and stir.",
+      "Note: If you’re doing the thick sauce you would add the grated apple at this step.",
+      "Stir in the liquids, one at a time and continue to simmer until sauce thickens.",
+      "Note: Add the apple juice to this step for the thin sauce.",
+      "Stir in chadon beni, salt and pepper to taste. Serve warm with the carrot and cauliflower loaf."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Loaf",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooked Cauliflower Florets",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooked Carrots",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cheese",
+        "unit": "C",
+        "notes": "grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Curry Sauce",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pared Cored and Grated Apple",
+        "unit": "small",
+        "notes": "For the thin sauce use 1/4 cup apple juice",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion Finely Grated",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leaves Chadon Beni Minced",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "alt: chicken broth",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ba819f151a872248f3da75a7b371227551bc339eb71266c54504c90de42249ae",
+    "lineage_hash": "e14ffca15a8cd7935dfc3e340b7341601f3dd76d07643db6dbaf007fd7f2c6c4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.simplytrinicooking.com/carrot-and-cauliflower-loaf/",
+    "fetchedAt": "2026-09-26T01:20:50.227Z"
+  },
+  "rawSource": "https://www.simplytrinicooking.com/carrot-and-cauliflower-loaf/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

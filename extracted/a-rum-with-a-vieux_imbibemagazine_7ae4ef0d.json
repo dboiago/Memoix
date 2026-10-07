@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "A Rum With a Vieux",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Cocktail",
+    "garnish": [
+      "Lemon Twist"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Rinse the inside of a chilled cocktail glass with the absinthe, discarding the excess. In a mixing glass, stir the remaining liquid ingredients with ice to chill, then strain into the prepared glass. Twist a lemon peel over the drink to express the oils, then discard."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "d4e4f5a95239f7ef5f33a6bef862b393db84c3fc0a0d28788773b1b1ab79a66b",
+    "lineage_hash": "415a7f7947b2ef72498923134ef081be8cda63a497ef82ab8f5e19f004fd48db"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/a-rum-with-a-vieux/",
+    "fetchedAt": "2026-08-03T18:00:59.192Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/a-rum-with-a-vieux/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

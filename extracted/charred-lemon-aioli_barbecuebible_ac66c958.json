@@ -1,0 +1,85 @@
+{
+  "recipe": {
+    "name": "Charred Lemon Aioli",
+    "time": "45 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the grilled garlic and salt in the bottom of a mixing bowl and mash to a paste with the back of a wooden spoon.",
+      "Whisk in the mayonnaise, lemon zest, lemon juice, and pepper.",
+      "If not serving right away, cover and refrigerate until using. The aioli will keep for at least 3 days."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cloves Garlic",
+        "unit": "large",
+        "notes": "grilled on a toothpick or skewer, if desired",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Salt",
+        "unit": "tsp",
+        "notes": "sea or kosher",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "C",
+        "notes": "preferably Hellmann’s or Best Foods",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Zest",
+        "unit": "tsp",
+        "notes": "finely, grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grilled Lemon Juice",
+        "unit": "Tbsp",
+        "notes": "or to taste",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cracked Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f51509ec6d416b4c2b287ab1905fff0cb831d67ea3a2cef77cb31223a2e4d817",
+    "lineage_hash": "9c6e0b113485c89426c6010b824247a0b517917676478da83033eca56e330e41"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/charred-lemon-aioli/",
+    "fetchedAt": "2026-08-03T05:36:15.050Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/charred-lemon-aioli/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

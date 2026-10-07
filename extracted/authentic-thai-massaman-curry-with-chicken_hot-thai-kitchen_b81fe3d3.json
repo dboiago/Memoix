@@ -1,0 +1,190 @@
+{
+  "recipe": {
+    "name": "Authentic Thai Massaman Curry with Chicken",
+    "time": "1 hr 20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "TH",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a small skillet, add the cumin seeds and toast over medium high heat, stirring constantly, until they are aromatic and darken slightly. Remove from the pan and set aside.",
+      "To the same skillet, add the coriander seeds, cloves and cardamom pods and toast over medium high heat, stirring constantly, until the coriander seeds darken slightly and are aromatic. Remove from the pan.",
+      "Transfer all the toasted spices into a mortar and pestle or coffee/spice grinder along with the cinnamon and nutmeg. Grind into a fine powder.",
+      "If using a mortar and pestle, add the red curry paste and shrimp paste and pound to mix. If using a coffee grinder, transfer into a small mixing bowl, then add the red curry paste and shrimp paste and stir to mix. The curry paste can be frozen if not using right away."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Thighs",
+        "unit": "lb",
+        "notes": "1 kg, bone-in, skin-on",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "C",
+        "notes": "500 ml, divided",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Quick Massaman Curry Paste (recipe Below)",
+        "unit": "Tbsp",
+        "notes": "alt: store bought, 75 to 90 ml",
+        "amount": "5-6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Palm Sugar",
+        "unit": "Tbsp",
+        "notes": "alt: light brown sugar, 36 g, finely, chopped, packed",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tamarind Paste",
+        "unit": "Tbsp",
+        "notes": "30 to 45 ml, store-bought or homemade",
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "Tbsp",
+        "notes": "30 to 45 ml",
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": "optional",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Waxy",
+        "unit": "oz",
+        "notes": "alt: all-purpose potatoes, 300 g, such as Yukon Gold, cut in 1-inch (2.5 cm ) chunks",
+        "amount": "10.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yellow or White Onion",
+        "unit": "large",
+        "notes": "cut in ½-inch (1.2 cm) strips",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Roasted Peanuts",
+        "unit": "C",
+        "notes": "35 g",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jasmine Rice",
+        "unit": null,
+        "notes": "for serving",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pc Whole Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pods Green",
+        "unit": null,
+        "notes": "alt: white cardamom",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "tsp",
+        "notes": "5 ml",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": "5 ml",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": "5 ml",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Nutmeg",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Curry Paste",
+        "unit": "Tbsp",
+        "notes": "60-75 ml, see note 1, store bought",
+        "amount": "4-5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fermented Shrimp Paste",
+        "unit": "tsp",
+        "notes": "5-10 ml, optional but recommended, see note 2",
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "69626f6b43f3925dc3df33205e4b3b4149e19cd6bca455da8e0a2d8c6c551468",
+    "lineage_hash": "1199cd43f3661351eeea686ca9174da15a965c491282d7e60e7127bdaac96b25"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://hot-thai-kitchen.com/massaman-curry/",
+    "fetchedAt": "2026-08-02T03:50:09.606Z"
+  },
+  "rawSource": "https://hot-thai-kitchen.com/massaman-curry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

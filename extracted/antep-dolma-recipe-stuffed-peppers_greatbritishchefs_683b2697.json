@@ -1,0 +1,301 @@
+{
+  "recipe": {
+    "name": "Antep Dolma (stuffed peppers)",
+    "time": "2 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix together all the ingredients for the filling apart from the chopped fresh tomatoes, chopped onion and soaked dried peppers in a large bowl",
+      "Add ¾ of the chopped onions to the bottom of a medium casserole dish. Top this with the chopped fresh tomatoes and season with a pinch of salt",
+      "Add the remaining ¼ of the chopped onion to the filling mixture, and stir to combine",
+      "Stuff the dried peppers with the filling. Make sure that they are only about halfway full - the grains will expand as they cook",
+      "Place the stuffed peppers on top of the chopped onions and tomatoes",
+      "Whisk together the water, tomato paste, pepper paste and a pinch of salt. Pour this over the peppers, tomatoes and onions. Drizzle over a splash of olive oil",
+      "Bake in the oven uncovered for 1 hour",
+      "While the peppers are cooking, make the chimichurri. Combine all the ingredients for the chimichurri except for the roasted chickpeas",
+      "Crush the chickpeas into large pieces using the back of a heavy knife or a pestle and mortar",
+      "Once the antep dolma are finished cooking, stir the roasted chickpeas into the chimichurri",
+      "Serve the peppers topped with some of the leblebi chimichurri"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bulgur Wheat",
+        "unit": "g",
+        "notes": "fine type",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freekeh",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Paste",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Flakes",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sumac",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cumin",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sumac Molasses",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint",
+        "unit": "g",
+        "notes": "fresh, finely chopped",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maldon Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "AçI Biber Salçası/turkish Hot Pepper Paste",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "large",
+        "notes": "chopped",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kurutulmus Biber",
+        "unit": null,
+        "notes": "a type of Turkish dried pepper used for stuffing",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Paste",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "AçI Biber Salçası/turkish Hot Pepper Paste",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "g",
+        "notes": "fresh, finely chopped",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bunch of Dill",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Balsamic Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maldon Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chillies",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Roasted Chickpeas",
+        "unit": null,
+        "notes": "or leblebi as they are called in Turkish",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9c321d3b4f37c2a961f580bcbc35f5193aea78be0e116aa6770452b367387fe1",
+    "lineage_hash": "de33bb33f18d5e5eee44e24ff1c2f84cb46875006668c24b1d5b8f1c0f9b68fa"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/antep-dolma-recipe",
+    "fetchedAt": "2026-08-02T17:09:25.584Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/antep-dolma-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

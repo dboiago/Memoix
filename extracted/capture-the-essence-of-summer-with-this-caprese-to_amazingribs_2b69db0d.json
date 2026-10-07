@@ -1,0 +1,103 @@
+{
+  "recipe": {
+    "name": "Caprese Tomato Salad",
+    "time": "10 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Tomatoes. The sequence of ingredients is important. First, slice the tomatoes thick, at least ¼ inch (6.4 mm). If you wish, toss them on a hot griddle or in a hot pan for a minute or two on each side to bring up the sweetness. Then lay them down on the plate. Now sprinkle on the salt so it can start pulling out tomato juice. Not too much because the parm is salty.",
+      "Cheeses. If you use mozzarella, alternate thin disks of cheese with the tomato slices and spread them out, alternating, like a blackjack dealer. The parm goes on next.",
+      "Onions. Slice the onions thin, on a mandoline if you have one. If you wish, sear them quickly on a griddle or in a pan, and scatter them on.",
+      "Herbs. Then the oregano and small basil leaves. If you are using large leaves, stack them, roll them into a green cigarette, and chop them crosswise into a chiffonade of thin ribbons before sprinkling them on.",
+      "Oil & vinegar. Don&#39;t mix the oil and vinegar. Drizzle them on separately so the colors show. Go easy, you can always add more, and I set them on the table so people can do just that if they wish. If time permits, let the salad sit for about 5 minutes so the salt can coax out some of the juices and they can mingle with the oil and vinegar."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Large",
+        "unit": null,
+        "notes": "fresh, vine ripe, globe-shaped tomatoes",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Sea Salt",
+        "unit": "pinches",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chips of Aged Parmigiano-reggiano Cheese",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leaves Fresh Basil",
+        "unit": "small",
+        "notes": "or 5 large leaves",
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oregano",
+        "unit": "tsp",
+        "notes": "fresh, chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Balsamic Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Size Sweet Onion",
+        "unit": "medium",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ef4ea234d158123dd81b6c87263585ff316ce7a87445c7c8b595bf359074edae",
+    "lineage_hash": "4f0e8614f44a29461954b0cfbf7fdfc1e4d367a67f477ffa01286a14cbea2056"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://amazingribs.com/tested-recipes/vegetable-slaw-salad-and-dressing-recipes/caprese-tomato-salad-recipe/",
+    "fetchedAt": "2026-08-02T07:59:41.487Z"
+  },
+  "rawSource": "https://amazingribs.com/tested-recipes/vegetable-slaw-salad-and-dressing-recipes/caprese-tomato-salad-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

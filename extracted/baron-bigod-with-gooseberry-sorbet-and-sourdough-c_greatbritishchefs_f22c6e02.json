@@ -1,0 +1,120 @@
+{
+  "recipe": {
+    "name": "Baron Bigod with Gooseberry Sorbet and Sourdough Crisp",
+    "time": "30 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the sourdough loaf into a freezer - overnight if possible",
+      "Make the sorbet by heating the sugar, water and gooseberries in a pan until the gooseberries are soft",
+      "Once the gooseberries are soft, add to a blender and blitz until smooth, then pass through a fine sieve before mixing in the pro sorbet. Transfer to an ice cream machine and churn until frozen",
+      "Once the sourdough is frozen, remove from the freezer and allow to soften for 2-3 minutes before slicing thinly on a slicing machine (or carefully by hand) into slices that are about 2mm thick",
+      "Lay the sourdough slices on greaseproof paper on a baking sheet and drizzle with pomace oil and salt before placing another sheet on top. Cook at 180°C between the two baking sheets for 6-12 minutes, until golden all over",
+      "Slice the cheese into 6 equal pieces. Serve with the gooseberry sorbet, some fresh sliced gooseberries and the sourdough crisps on top. Garnish with the celery leaves"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Baron Bigod",
+        "unit": "g",
+        "notes": "bring to room temp before serving",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sourdough Loaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Pomace Oil",
+        "unit": null,
+        "notes": "for drizzling",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maldon Salt to Season",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "135",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gooseberries",
+        "unit": "g",
+        "notes": null,
+        "amount": "375",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pro Sorbet 100",
+        "unit": "g",
+        "notes": null,
+        "amount": "55",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gooseberries",
+        "unit": null,
+        "notes": "cut in half",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e24b77efb647b86cd21c95bf368b59e54330c10b6c7d25f803ae91597ecb7798",
+    "lineage_hash": "86fa54dd237c9b49610ec92b43ca12b9925f4b8c37b24d070061f6dee69314d1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/baron-bigod-gooseberry-sorbet-sourdough-crisp-recipe",
+    "fetchedAt": "2026-08-02T18:15:40.606Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/baron-bigod-gooseberry-sorbet-sourdough-crisp-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

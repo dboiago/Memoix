@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Call Me Old Fashioned",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Old Fashioned",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to mixing glass, stir with ice, then strain into an ice-filled double Old Fashioned glass. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "fd74c4002a57f7b4a2fa63bdbd16783b74b796e704d0b9b8665e5e1f7e75e378",
+    "lineage_hash": "85ef7d80adaf233cfdd29f69b563bda54fbadc5a2c3b01af6695dce011004191"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/call-me-brandy-old-fashioned/",
+    "fetchedAt": "2026-08-03T19:53:22.613Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/call-me-brandy-old-fashioned/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

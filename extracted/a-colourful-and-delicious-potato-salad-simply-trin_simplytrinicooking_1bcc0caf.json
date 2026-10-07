@@ -1,0 +1,123 @@
+{
+  "recipe": {
+    "name": "Potato Salad",
+    "time": "45 min",
+    "course": "vegn",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pour all the ingredients into a deep dish. Mix the ingredients with the mustard and mayonnaise until the mixture is moist."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Boiled Potato Cubed",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Boiled Carrot Cubed",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Pepper Diced",
+        "unit": "medium",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pimento Pepper Diced",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hard Boil Egg Diced",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Relish",
+        "unit": "tsp",
+        "notes": "alt: try olives instead",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Stalk Diced",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise Low Calorie",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper to Taste White",
+        "unit": null,
+        "notes": "alt: black pepper, or pepper sauce",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e6879de68ac7d490b4342561742889a7027b162fb8ccaf7f45eb23c6312b744f",
+    "lineage_hash": "24709fa7ffe3708c5f15f50e11e3207b6986e1112c92fa72c5ba14460cc7e5ea"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.simplytrinicooking.com/potato-salad/",
+    "fetchedAt": "2026-09-25T22:03:46.758Z"
+  },
+  "rawSource": "https://www.simplytrinicooking.com/potato-salad/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

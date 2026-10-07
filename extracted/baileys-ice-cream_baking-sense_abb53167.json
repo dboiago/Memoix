@@ -1,0 +1,94 @@
+{
+  "recipe": {
+    "name": "Baileys Ice Cream",
+    "time": "6 hr 20 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "317",
+      "carbohydrateContent": "30",
+      "fatContent": "18",
+      "proteinContent": "5"
+    },
+    "directions": [
+      "Heat 12 oz&#32;whole milk and 8 oz&#32;heavy cream in a small saucepan until scalding hot.",
+      "While the milk heats up, whisk together 6&#32;egg yolks, 6 oz&#32;granulated sugar and ⅛ teaspoon&#32;salt in a small bowl.",
+      "Once the milk is scalding hot, pour it into the bowl with the yolks and whisk to combine",
+      "Return the entire mixture to the saucepan and heat over medium low heat, stirring constantly. Cook the custard until it thickens enough to coat the back of a spatula or wooden spoon. Do not allow it to come to a boil.",
+      "Remove from the heat and strain into a bowl. Stir 6 oz&#32;Baileys Irish Cream into the custard. Cover the bowl and chill until very cold. At least 4-5 hours or over night (see note).",
+      "Freeze according to the directions for your ice cream machine.",
+      "When the ice cream is ready, scoop it into a container and smooth to an even layer. Lay a piece of plastic wrap directly on the surface of the ice cream, cover tightly and freeze until firm."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Milk",
+        "unit": "oz",
+        "notes": "1 ½ cups",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "¾ cup",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baileys Irish Cream",
+        "unit": "oz",
+        "notes": "¾ cup",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9d11c32f4b64526a08a6650c905e5c6fa6328a74943b49f35a385b8d119cdd43",
+    "lineage_hash": "642adaa57867fd1d574d1be1297301020ce683b7511cd4bc45eceef6bd5bb8f0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2024/07/31/baileys-ice-cream/",
+    "fetchedAt": "2026-08-01T21:35:39.875Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2024/07/31/baileys-ice-cream/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

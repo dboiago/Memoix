@@ -1,0 +1,60 @@
+{
+  "recipe": {
+    "name": "Thai Omelette (Kai Jiew)",
+    "time": "5 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "TH",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Beat the eggs and fish sauce well with a fork.",
+      "Method 2: Not as pretty, But Quicker and Less Oil"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "tsp",
+        "notes": "or sub soy sauce if vegetarian",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Neutral Oil",
+        "unit": null,
+        "notes": "as needed depending on the method you choose",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c88e4b14f3c164166c05c570adbd1111fe00b019d24ff2d70860bc39e08bce34",
+    "lineage_hash": "94be4d9ecdfe512ace5fdc3326db92cd7c5b6c9f7d10c7abeb348f2ab008375c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://hot-thai-kitchen.com/thai-omelette/",
+    "fetchedAt": "2026-08-01T18:09:22.780Z"
+  },
+  "rawSource": "https://hot-thai-kitchen.com/thai-omelette/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

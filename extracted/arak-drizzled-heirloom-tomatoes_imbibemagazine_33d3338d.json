@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Arak-Drizzled Heirloom Tomatoes",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cut the tomatoes into thick slices and arrange them on a plate. To make the toum, crush the garlic in a mortar and pestle until it forms a paste-like consistency, then set it in a small bowl with a pinch of salt and add the lemon juice. Add the sunflower oil to the bowl in a slow stream and whisk until emulsified. Season the tomatoes with salt and sumac, then sprinkle them with some arak. Drizzle the toum over the tomatoes and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "aa304173fb0c05483b04c2a63ceec97c303c335465df11fee5ef8206c546051a",
+    "lineage_hash": "e3ebc1f7362d44ba8cce79a044cbda55c406c1b76835ccfa44ea8d49bfa525c0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/arak-drizzled-heirloom-tomatoes/",
+    "fetchedAt": "2026-08-03T19:30:55.669Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/arak-drizzled-heirloom-tomatoes/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

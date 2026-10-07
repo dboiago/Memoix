@@ -1,0 +1,153 @@
+{
+  "recipe": {
+    "name": "Chicken Stir Fry with Kale and Mushrooms",
+    "time": "10 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "KR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the sauce ingredients, and stir well to dissolve the sugar.",
+      "Cut the chicken into bite size pieces.",
+      "Marinate the chicken with 3 tablespoons of the sauce while preparing the vegetables.",
+      "Tear the kale off the stems into small pieces. Discard thick stems. Rinse thoroughly and drain well.",
+      "Give the mushrooms a quick rinse, and cut into quarters (or halves if small).",
+      "Heat a large skillet over high heat with a tablespoon of cooking oil until very hot. Add the chicken pieces to the pan in one layer. Do not touch for a minute or two until the chicken is nicely seared. Flip them over and sear the other side. The chicken does not need to be cooked through at this point.",
+      "Add the kale, mushrooms, and optional red pepper. Drizzle the remaining sauce over the vegetables, and sprinkle with crushed red pepper if using. Continue to stir-fry until the kale and mushrooms are softened, about 3 minutes. Serve hot on top of rice or with a separate bowl of rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Thighs",
+        "unit": "lb",
+        "notes": "or breast, skinless, boneless",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kale",
+        "unit": "oz",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mushrooms",
+        "unit": "oz",
+        "notes": "white, crimini, or shiitaki, fresh",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chili Pepper",
+        "unit": null,
+        "notes": "alt: 1/4 red bell pepper - optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Pepper - Optional",
+        "unit": "tsp",
+        "notes": "crushed",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds - Optional",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Oil for Stir-frying",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce See Notes",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Wine (or Mirin)",
+        "unit": "Tbsp",
+        "notes": "alt: 1 tablespoon lemon juice",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar (or Brown Sugar) Adjust to Taste",
+        "unit": "Tbsp",
+        "notes": "alt: use your favorite sugar substitute",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "Tbsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d9b8b711c4ac3e0abdd00cfdd20a752cdff5b6611120949be4e49f5259b7c56a",
+    "lineage_hash": "4f1d292be757cf0aafa81429aee7780729fe81f83b837cb9c7f01ba22004e9d2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.koreanbapsang.com/dak-kale-bokkeum-stir-fried-chicken-and/",
+    "fetchedAt": "2026-08-01T22:07:27.450Z"
+  },
+  "rawSource": "https://www.koreanbapsang.com/dak-kale-bokkeum-stir-fried-chicken-and/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

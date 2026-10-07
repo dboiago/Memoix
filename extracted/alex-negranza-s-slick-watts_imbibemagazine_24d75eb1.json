@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Slick Watts",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Ice-filled",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Stir all of the ingredients with ice to chill, strain into an ice-filled glass, then garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "d8312d04cb5b3a549bda7c152ab324ea6bef7f28d475fd3ef9fea8b5dc2e04d7",
+    "lineage_hash": "b3a6a446373dd5378957952aaef71979a460d1589f5ac4913a5661e924b6859f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/slick-watts/",
+    "fetchedAt": "2026-08-04T00:47:39.171Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/slick-watts/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,128 @@
+{
+  "recipe": {
+    "name": "Broccoli and Pasta Salad",
+    "time": null,
+    "course": "salad",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Boil pasta according to directions on packet. Drain and set aside.",
+      "Next, heat olive oil or butter.",
+      "Add the garlic and the rest of the vegetables. Saute for five minutes.",
+      "Add tomato paste and oregano. Mix well.",
+      "Add milk, pasta and cheese.",
+      "Mix well. Adjust salt to taste. Serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pasta Shell",
+        "unit": "C",
+        "notes": "alt: elbow",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "Tbsp",
+        "notes": "grated",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn Kernels",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "To Mato Chopped",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cheese",
+        "unit": "C",
+        "notes": "grated",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Broccoli Chopped",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "alt: olive oil",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oregano",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fb23b933eb46e17300ad4b213db84d5529998a0f9516832d7598c589312c222c",
+    "lineage_hash": "ac01f822914e8b519c400b829f3dc1b0fc1e92a4869f32e1042cd3254af1102c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.simplytrinicooking.com/broccoli-and-pasta-salad/",
+    "fetchedAt": "2026-09-26T00:39:06.504Z"
+  },
+  "rawSource": "https://www.simplytrinicooking.com/broccoli-and-pasta-salad/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

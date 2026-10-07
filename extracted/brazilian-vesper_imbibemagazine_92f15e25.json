@@ -1,0 +1,70 @@
+{
+  "recipe": {
+    "name": "Brazilian Vesper",
+    "time": "45 sec",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "BR",
+    "glass": "Cocktail",
+    "garnish": [
+      "Lemon Twist"
+    ],
+    "subcategory": "Vodka",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all the ingredients to a mixing glass with ice and stir until well chilled and diluted.",
+      "Strain into a chilled cocktail glass and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cachaça",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vodka",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lillet Blanc",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Barspoon Passionfruit Syrup",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "47b6d2a466d69d7812e05fcd800a6bc18eabd3b46f90df971e44260c97433447",
+    "lineage_hash": "8a46ae6092487ee81457252b23d488dee3f77e0cc0f7c3f69042697a345a0517"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/brazilian-vesper/",
+    "fetchedAt": "2026-08-03T17:19:39.624Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/brazilian-vesper/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

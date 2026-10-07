@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Bourbon Cocktail",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [
+      "Orange Twist"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all the ingredients in an ice-filled mixing glass and stir to chill. Add more ice if needed, then twist an orange peel over the drink and use as garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "6e771f62a96646dfed2cb87c5bf0afb789fe256016fddcbf26e77b27efe1e37b",
+    "lineage_hash": "8fa511017c9305f9a0aa6cb9c45127568861b65729dca9f53bbcd8133b95bc4d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bourbon-cocktail-smoother-than-a-horse-on-skates/",
+    "fetchedAt": "2026-08-03T17:57:51.037Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bourbon-cocktail-smoother-than-a-horse-on-skates/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

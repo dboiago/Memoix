@@ -1,0 +1,37 @@
+{
+  "recipe": {
+    "name": "Asobi Seksu From Christian Suzuki-Orellana",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all of the ingredients in a glass half-filled with crushed ice, and use a barspoon to swizzle the mixture until frosty. Add more ice to fill the glass, then garnish.",
+      "Edamame Milk\nIn a blender, combine 1 cup of shelled edamame (at room temperature, if purchased frozen) and 1 cup water, blend until smooth, and strain. Keeps refrigerated for up to 2 days.",
+      "Ginger Syrup\nIn a saucepan, combine 3⁄4 cup of fresh ginger juice with 1⁄2 cup of granulated sugar, then bring to a boil, stirring to dissolve sugar. Keeps refrigerated for up to 2 weeks.",
+      "Candied Edamame\nToast whole pods of edamame in a dry pan over medium heat, then let cool. Whisk 1 fresh egg white until lightly foamy, then coat the edamame pods in the egg white, then in granulated sugar, shaking to remove excess. Let dry for 24 hours before use."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "54bf0b000797b7cd41fda03163d391b2b71751cf0c0f1e8a02e6298428901db9",
+    "lineage_hash": "4af2bcab07db39c0186680fc9b3041192fe542396ae55c117add78bd89d64387"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/asobi-seksu-from-christian-suzuki-orellana/",
+    "fetchedAt": "2026-08-03T21:27:16.282Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/asobi-seksu-from-christian-suzuki-orellana/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

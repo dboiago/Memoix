@@ -1,0 +1,251 @@
+{
+  "recipe": {
+    "name": "Aubergine Moju",
+    "time": "1 hr 10 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all the ingredients for the spice mix in a spice grinder, and blend until smooth. Loosen with a drop of water if needed",
+      "Next, make the pickle. Heat up the vinegar, sugar, salt and water, stirring continually so the sugar dissolves. When bubbles appear and the mixture is simmering, remove from the heat",
+      "Drop in the pandan and garlic, then set aside to cool. Once cold, add the Bombay onion and chilli and stir through. This is best served cold, so refrigerate until needed",
+      "To roast the aubergines, preheat the oven to 240°C/fan 220°C/gas mark 9. In a large bowl, using your fingers, mix the aubergine slices with ½ teaspoon salt and 2 tablespoons of neutral oil",
+      "Lay out the slices on a baking tray so they are flat next to each other, and bake for 30–45 minutes, or until golden brown and cooked through. Remove and set aside to cool",
+      "Fry off the onion in 2 tablespoons of oil until almost browned at the corners, then add the spice paste and mix thoroughly. Next stir through the remaining salt and the dry spices. Be careful not to burn them and cook for 2 minutes",
+      "In a separate pan, heat 2 tablespoons of oil till hot and then fry off the sliced banana pepper until the edges are slightly charred",
+      "In a large mixing bowl combine the banana pepper, sugar and cider vinegar and stir through then add the cooked onion spice mix. Once the aubergines are cooked, add them to the bowl, stirring gently through. Taste and adjust salt if you think it needs it",
+      "Serve warm or at room temperature on a large platter, drizzling a few generous spoons of the pickle on top"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Piece Ginger",
+        "unit": "inch",
+        "notes": "peeled",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": "large",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Mustard Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Cardamom Pods",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Clove",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pandan Leaves",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemongrass Stalk",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Cider Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cane Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pandan Leaves",
+        "unit": null,
+        "notes": "1 large strip",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "cut into eighths",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bombay Onion",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bird's Eye Chillies",
+        "unit": null,
+        "notes": "cut into thick rounds",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Aubergines",
+        "unit": "medium",
+        "notes": "sliced into 2cm-thick wedges",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "large",
+        "notes": "approx. 300g, sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sri Lankan Curry Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kashmiri Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Banana Peppers",
+        "unit": null,
+        "notes": "approx. 250g, sliced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cane Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Cider Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ffeff356c02093f7e0414f2deb30ec739b1787278eebb6b4c828c2b4e7f7e80c",
+    "lineage_hash": "eba319fefeebb0b5ba348ee9d71df15f298cda3d809abf6712b6f0bedec9c8ff"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/aubergine-moju-recipe",
+    "fetchedAt": "2026-08-02T14:05:37.918Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/aubergine-moju-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,180 @@
+{
+  "recipe": {
+    "name": "Baked Korean Chicken Wings",
+    "time": "5 hr 15 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "KR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "377",
+      "carbohydrateContent": "11",
+      "fatContent": "23",
+      "proteinContent": "27"
+    },
+    "directions": [
+      "Rinse the chicken in cold water, drain well, and put it into a bowl. Add the milk, salt, black pepper, and rosemary leaves, and mix them well. Cover the bowl with cling wrap and leave it in the fridge for about 20 minutes. Drain the milk for about 5 minutes. (Leave any rosemary residue on the chicken as it is; it will add a nice aroma once baked.)",
+      "Put the chicken in a large zipper lock bag (27cm x 33 cm / 10.6 inch x 13 inch) and add the sauce, reserving 1/3 cup worth of sauce for later use. Seal the bag and vigorously shake the bag and massage the chicken so that the sauce smears well into the chicken. Marinate it for at least 4 hrs in the fridge.",
+      "Preheat the oven at 220 degree Celsius (428 degree Fahrenheit) for 20 minutes. Take the chicken out from the fridge. Lay down some baking paper on top of the baking tray and line up the chicken. Make sure they are not stacked up on top of each other.",
+      "Put the tray into the oven and bake for 15 minutes. Take the tray out and turn the chicken over and put it back in the oven. Bake for 10 more minutes. While waiting, prepare clean baking paper lined on another baking tray. This step is only required if the chicken wings are saturated with much liquid (their own juice). Transfer the chicken wings to a new tray. Coat the chicken wings with the remainder of the sauce (from step 2) using a basting brush. Switch the oven to broil (grill in Australia) and cook for 2 minutes or until the skin is charred. Flip the wings and coat with the sauce, broil for 2 minutes or until the skin is charred.",
+      "Garnish with some sesame seeds and/or green onion (optional). Serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Wings (2.2 Pounds)",
+        "unit": "kg",
+        "notes": "drumettes & wingettes – these are also known as “chicken nibbles” at an Australian supermarket",
+        "amount": "1",
+        "section": "Main",
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": "250ml",
+        "amount": "1",
+        "section": "Main",
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Main",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Main",
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary Leaves",
+        "unit": "Tbsp",
+        "notes": "dried",
+        "amount": "½",
+        "section": "Main",
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Seeds (optional)",
+        "unit": null,
+        "notes": "to garnish",
+        "amount": "0",
+        "section": "Main",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions (optional)",
+        "unit": null,
+        "notes": "thinly sliced, to garnish",
+        "amount": "0",
+        "section": "Main",
+        "isOptional": false
+      },
+      {
+        "name": "Korean Chili Flakes",
+        "unit": "Tbsp",
+        "notes": "gochugaru",
+        "amount": "1.5",
+        "section": "Marinating sauce (mix these together in a bowl)",
+        "isOptional": false
+      },
+      {
+        "name": "Korean Chili Paste",
+        "unit": "Tbsp",
+        "notes": "gochujang",
+        "amount": "3",
+        "section": "Marinating sauce (mix these together in a bowl)",
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Marinating sauce (mix these together in a bowl)",
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Marinating sauce (mix these together in a bowl)",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Marinating sauce (mix these together in a bowl)",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinating sauce (mix these together in a bowl)",
+        "isOptional": false
+      },
+      {
+        "name": "Tonkatsu Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinating sauce (mix these together in a bowl)",
+        "isOptional": false
+      },
+      {
+        "name": "Rice Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinating sauce (mix these together in a bowl)",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": "Marinating sauce (mix these together in a bowl)",
+        "isOptional": false
+      },
+      {
+        "name": "Bird's Eye Chili",
+        "unit": null,
+        "notes": "seeded and minced",
+        "amount": "1-2",
+        "section": "Marinating sauce (mix these together in a bowl)",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "98b6fa2b278e1c2d6ffe86bf536012fe4e615ee6043fa7340d3cfe379255e2f7",
+    "lineage_hash": "92537d92b0290ab3944c936369ea4c498d7eb5fe72976b0cc2a6a97d1a1bda61"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://mykoreankitchen.com/oven-baked-korean-style-chicken-wings/",
+    "fetchedAt": "2026-08-01T23:17:40.317Z"
+  },
+  "rawSource": "https://mykoreankitchen.com/oven-baked-korean-style-chicken-wings/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

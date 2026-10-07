@@ -1,0 +1,129 @@
+{
+  "recipe": {
+    "name": "Beetroot Pickled Eggs",
+    "time": "15 min",
+    "course": "pickles",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Bring a pan of water to the boil and carefully add the eggs. Boil for 6 minutes then plunge into ice water. This will give a slightly runny yolk – if you'd prefer hard boiled, boil for 10 minutes",
+      "Peel and dice the beetroot and place in a pan",
+      "Add the remaining ingredients to the pan and bring to a simmer whilst stirring to dissolve the sugar and salt. Remove from the heat and allow to cool",
+      "When the eggs have finished cooking, place in iced water to cool quickly. Once cool, peel the eggs",
+      "When the pickling liquor has cooled, carefully transfer the peeled eggs to the sterilised jar then pour the liquor over",
+      "Place a circle of greaseproof paper on top of the liquid to ensure the eggs are fully submerged in the liquid",
+      "The eggs will be slightly pickled after 12 hours, but after about 3 days they will be at their prime. They will keep for months if fully submerged in the brine"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Free-range Eggs",
+        "unit": "medium",
+        "notes": null,
+        "amount": "9",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raw Beetroot",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Liquorice Tea",
+        "unit": null,
+        "notes": "1 teabag",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Juniper Berries",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pink Peppercorns",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9f1d567e9abe80d87b6cb3310b585501908e6ba2df996d667ae31413be9dff22",
+    "lineage_hash": "39a376999f54ffd3d81b214a5f3c9ff9558c3bddff2c97183780e31229cac362"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beetroot-pickled-eggs-recipe",
+    "fetchedAt": "2026-08-03T11:01:04.257Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beetroot-pickled-eggs-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

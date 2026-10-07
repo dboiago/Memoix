@@ -1,0 +1,118 @@
+{
+  "recipe": {
+    "name": "Almond Madeleines",
+    "time": "38 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "24",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "108",
+      "carbohydrateContent": "9",
+      "fatContent": "8",
+      "proteinContent": "2"
+    },
+    "directions": [
+      "Melt 6 oz&#32;unsalted butter in a small saucepan. Continue heating the butter until it foams, bubbles and the milk solids fall to the bottom of the pan. Allow the milk solids to brown. Pour the browned butter into a small dish, leaving the browned milk solids in the pan.",
+      "Reserve a tablespoon of the browned butter to grease the Madeleine pan. Set aside the remaining butter to cool but not solidify.",
+      "Whisk together 2 ½ oz&#32;all purpose flour, 2 oz&#32;almond flour, ⅛ teaspoon&#32;table salt and set aside.",
+      "Whisk 3&#32;large eggs, 1&#32;large yolk, 5 oz&#32;granulated sugar, ¼ teaspoon&#32;vanilla extract and ½ teaspoon&#32;almond extract until the eggs are pale, aerated and leave a &quot;ribbon&quot; when the whisk is drawn through the mix. Fold in the flour with a balloon whisk. Fold in the browned butter. Set the batter aside to rest for 1 hour",
+      "While the batter is resting, preheat oven to 400 °F. and brush a madeleine pan with reserved butter then coat with flour.",
+      "Place a heaping tablespoon of batter into each cookie mold.",
+      "Bake 8-10 minutes until golden brown and the center springs back when pressed. Best eaten slightly warm or within a couple of hours of baking."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "oz",
+        "notes": "½ cup, see note",
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almond Flour",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yolk",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "½ cup plus 2 tablespoons",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almond Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e6d39aa2f99d5219f098fc251e31e1db173e21f2acef5b32257e53bbe8efedb9",
+    "lineage_hash": "94f051787673567ef03dbdec51adc0190b388e69d2d46e37475bea082be45874"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2017/02/09/brown-butter-almond-madeleines/",
+    "fetchedAt": "2026-08-01T18:22:41.246Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2017/02/09/brown-butter-almond-madeleines/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

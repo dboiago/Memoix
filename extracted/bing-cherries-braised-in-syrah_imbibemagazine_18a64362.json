@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Bing Cherries Braised in Syrah",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Split the vanilla bean in half lengthwise with a paring knife, and then use the knife to scrape the seeds from the pod. In a medium bowl, mix the sugar with the vanilla seeds and pod and the star anise pods. Using your fingers, rub the aromatics into the sugar to combine.",
+      "Pour the Syrah into a straight-sided stainless-steel or enamel-coated saucepan. Add the sugar mixture and cook over medium heat until reduced by one-third, stirring occasionally and scraping the bottom so the sugar does not burn.",
+      "Using a fork or heat-resistant tongs, remove the vanilla pod and star anise. Add the sour-cherry jam; whisk together to emulsify the mixture of wine, sugar and cherry jam. Gently place the cherries into the wine reduction and toss lightly to coat. Cook over medium heat for two to three minutes, or until the cherries just start to break down but are still firm. Remove from heat and let the cherries sit in their juices for five to 10 minutes, absorbing all the flavor. Warm over low heat before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "8f378dc408efb3d199ce303f63c847bb38d36b1b39210f44656f4af25462e977",
+    "lineage_hash": "5bb04c2bd0b17eb3d5cf1db323ce6b5fa80874fa789a59ae40041c30215fa137"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bing-cherries-braised-in-syrah/",
+    "fetchedAt": "2026-08-03T22:33:48.190Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bing-cherries-braised-in-syrah/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

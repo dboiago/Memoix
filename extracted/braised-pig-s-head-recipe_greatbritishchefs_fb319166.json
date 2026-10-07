@@ -1,0 +1,256 @@
+{
+  "recipe": {
+    "name": "Braised Pig's Head",
+    "time": "5 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix the water and salt together to form a brine and pour over the pig's head. Leave refrigerated for 24 hours. Remove the head from the brine and rinse thoroughly under cold water",
+      "Place the pig's head into a large pan with the red wine, stock cube, carrots, leek, celery and onion. Cover with cold water and bring to a simmer. Cook gently for 3-6 hours until tender",
+      "Remove the head from the liquid and cut off the snout. Cut in half and reserve. Peel the skin and fat away from the head. Remove the back jaw bone muscle and reserve",
+      "Peel away the white cheek meat and lay down on cling film. Remove the long jaw muscle and shred into a bowl. Combine and mix with the pistachios and half the shallots",
+      "Season and place the mix on the white meat and roll tightly in the cling film to form a sausage shape",
+      "Pick all remaining meat from the head and place into a bowl. Add the tarragon, mustard and remaining shallots. Mix well and season to taste. Shape into 20g balls/fritters and refrigerate to set",
+      "Prepare the flour, eggs and breadcrumbs for coating. Roll the balls in first the flour, then the egg, and finally the breadcrumbs, evenly",
+      "Heat a deep-fat fryer to 180˚C and preheat the oven to 170˚C/gas mark 3. Remove the ears. Scrape the skin away from the cartilage, keeping as much intact as possible",
+      "Heat the red wine sauce in a pan. Place the snout and jaw muscle in the sauce and warm through gently. Place the white cheek meat, wrapped in cling film, into a pan of hot water to warm through.",
+      "Meanwhile, prepare the remoulade. Lightly salt the pumpkin and leave for 10 minutes to soften. Squeeze out any excess liquid and mix with the mayonnaise, tarragon and the oil",
+      "Slice the black pudding into ½ cm thick slices. Fry the black pudding on both sides in a hot pan with a little oil until crispy. Drain of some absorbent kitchen towel and keep in a warm place",
+      "Lastly, deep-fry the balls for 3 minutes until golden in colour and crisp. Drain on absorbent kitchen towel and season with salt",
+      "For the pumpkin seeds, heat the oil in a pan over a medium heat. Carefully add the pumpkin seeds and fry until crispy. Drain thoroughly and season with salt",
+      "To plate, place the hot black pudding in the centre, followed by a quenelle of pumpkin remoulade. Place the hot pig's snout, cheek and fritter alongside followed by the crispy pig's ear and a drizzle of the red wine sauce. Scatter the pumpkin seeds around the plate to finish"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pig's Head",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": "plus extra for seasoning",
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "750",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Stock Cube",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": null,
+        "notes": "large dice",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery",
+        "unit": null,
+        "notes": "large dice",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leek",
+        "unit": null,
+        "notes": "large dice",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "large",
+        "notes": "large dice",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pistachio Nuts",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Banana Shallots",
+        "unit": null,
+        "notes": "finely diced and mixed with lemon juice",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tarragon",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grain Mustard",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine Beef Jus",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Breadcrumbs",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pumpkin",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tarragon",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pumpkin Seed Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pudding",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pumpkin Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1dcb59bb478247ac79fa894424ba7f0cf580b5b9ecfe88e3229f100c5136a581",
+    "lineage_hash": "d2b26ecc4ed2e5c8be5bd9b77e5890540f92e33dd857bbebc9679b724a060a87"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/pigs-head-recipe",
+    "fetchedAt": "2026-08-03T19:41:34.901Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/pigs-head-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

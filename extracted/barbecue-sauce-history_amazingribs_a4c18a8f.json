@@ -1,0 +1,196 @@
+{
+  "recipe": {
+    "name": "Barbecue Sauce History",
+    "time": null,
+    "course": "smoking",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Melt half a pound of butter; stir into it a large tablespoon of mustard, half a teaspoon of red pepper, one of black, salt to taste; add vinegar until the sauce has a strong acid taste. The quantity of vinegar will depend upon the strength of it. As soon as the meat becomes hot, begin to baste, and continue basting frequently until it is done; pour over the meat any sauce that remains.",
+      "Cook gently then add 1/2 cup green peppers, 1/2 cup celery, 1/2 cup carrots, 2 1/2 cups tomatoes, 1/2 cup tomato paste, 1 teaspoon salt, 1 bay leaf. Simmer 1 hour, stirring often or until as thick as cream. Use plain or strain."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pound Butter",
+        "unit": "lb",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cup Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Teaspoon Dry Mustard",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Teaspoon Tabasco Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cayenne",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tablespoon Tomato Catsup",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tablespoon Lemon Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tablespoon Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Teaspoon Onion Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tablespoon Tomato Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cup Oil",
+        "unit": "C",
+        "notes": "crisco, or butter",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cup Chopped Onions",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cup Green Peppers",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cup Celery",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cup Carrots",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cup Tomatoes",
+        "unit": "C",
+        "notes": null,
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cup Tomato Paste",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Teaspoon Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7ba06f67bbb3f57b50da219abd597635f6f6be9a0552747fd20e4b8926cdb1d9",
+    "lineage_hash": "8786350e5d48797ee92cf73f830830dd754c335f4891740f94c7b676ee05e9ab"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://amazingribs.com/barbecue-history-and-culture/barbecue-sauce-history/",
+    "fetchedAt": "2026-08-01T23:17:00.659Z"
+  },
+  "rawSource": "https://amazingribs.com/barbecue-history-and-culture/barbecue-sauce-history/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,76 @@
+{
+  "recipe": {
+    "name": "Carrot, Tomato, and Starfruit Juice",
+    "time": "10 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "ID",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Mocktail",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Put everything in a blender and process until smooth.",
+      "Strain into serving glasses and serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gram Carrot",
+        "unit": null,
+        "notes": "peeled",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": null,
+        "notes": "about 200 gram",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Starfruit (about 150 Gram)",
+        "unit": null,
+        "notes": "peeled",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": "optional",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cold Drinking Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3e2988ff43c9409be8caf3b41a24f3b0c74da1c6bf9f5c0fdef2dad2d7ac9d94",
+    "lineage_hash": "850ec0cfa73826ce27e32b5cb5034e03511141a42b3b0a412ac882ee24795304"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/carrot-tomato-and-starfruit-juice.html",
+    "fetchedAt": "2026-08-02T11:27:11.667Z"
+  },
+  "rawSource": "https://dailycookingquest.com/carrot-tomato-and-starfruit-juice.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

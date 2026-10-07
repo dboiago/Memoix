@@ -1,0 +1,209 @@
+{
+  "recipe": {
+    "name": "Ayam Goreng Rica-Rica - Tomato & Chili Fried Chicken",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "ID",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix together chicken with bruised garlic, lime juice, and salt. Then let rest for 15 minutes.",
+      "Whisk together all purpose flour, tapioca starch, and salt. Toss the chicken into flour mixture to fully coat. There shouldn't be any standing liquid at all at this point.",
+      "Heat enough oil in a wok/pot for deep frying. Once the oil is hot enough (it should looks shimmering and runnier), add the coated chicken pieces, in batches if needed, and fry until golden brown. Set aside over a wire rack while we prepare the sauce.",
+      "Heat oil over medium high heat in a wok or large frying pan. Sauté shallot, garlic, lemongrass (if using), and chilies until fragrant. About 3 minutes.",
+      "Add tomato cubes, season with salt and sugar. Stir until tomato starts to wilt.",
+      "Return fried chicken strips along with scallion and kaffir lime leaves (if using) to wok/frying pan. Gently toss until coated evenly.",
+      "Turn off heat, transfer to a serving plate, and serve immediately with steamed white rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Fried Chicken",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Boneless Skinless Chicken Thigh",
+        "unit": null,
+        "notes": "cut into strips",
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "bruised",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram All Purpose Flour",
+        "unit": null,
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tapioca Starch",
+        "unit": "Tbsp",
+        "notes": "or corn starch",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground White Pepper",
+        "unit": "tsp",
+        "notes": "or ground black pepper",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Enough Oil for Deep Frying",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rica-rica Sauce",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Shallot",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemongrass",
+        "unit": null,
+        "notes": "optional, bruised and knotted",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thai Red Bird Eye Chilies",
+        "unit": null,
+        "notes": "*, seeded and sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": null,
+        "notes": "cubed",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallion",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kaffir Lime Leaves",
+        "unit": null,
+        "notes": "optional",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "52f1ad2ae2ac6448a217a344cc01b982298f082de0c23d5c4c0fe1d19d24b920",
+    "lineage_hash": "af320a4ad113a233ded4a0ac1423a1f39e59a9872f3ef99d39a49822109210e2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/ayam-goreng-rica-rica-tomato-chili-fried-chicken.html",
+    "fetchedAt": "2026-08-02T02:15:28.393Z"
+  },
+  "rawSource": "https://dailycookingquest.com/ayam-goreng-rica-rica-tomato-chili-fried-chicken.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

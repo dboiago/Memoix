@@ -1,0 +1,137 @@
+{
+  "recipe": {
+    "name": "Baileys Apple Pie Custard Slices",
+    "time": "2 hr 5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the diced apple, butter and sugar into a small roasting tray and bake, at 200ºC (180ºC Fan), for about 15-20 minutes or until there is no liquid remaining and the apples are golden. Remove and set aside to cool.",
+      "Roll out the puff pastry on a lightly floured worksurface, rolling into a rectangle a little bigger than 18x9inches. Trim the pastry to size and cut out two 9 inch squares. Place each square onto its own parchment lined baking tray and dock with a fork. Top each piece of pastry with a second sheet of parchment and another baking tray, preferably one that nests neatly with the first. This prevents the puff pastry from rising too much, creating nice neat layers. If you don’t have spare baking trays you can also weigh down the parchment and pastry with metal cutlery.",
+      "Bake in the oven for 20 minutes before removing the top baking tray and parchment paper, exposing the pastry, and placing back into the oven for another 5-10 minutes or until golden brown. Make sure you bake the pastry to a nice rich golden brown, it helps the pastry stay crisp when sandwiching the custard but it also gives the pastry flavour. Once cool use a serrated knife to trim to 8 inches.",
+      "Line a 8-inch square baking pan with a single piece of foil and place one of the pastry pieces into the bottom.",
+      "Place the milk into a saucepan and bring to a simmer. Meanwhile place the sugar, custard powder and cinnamon into a large bowl and whisk to combine. Add the egg and yolk and whisk until smooth. Once the milk is at temperature pour the milk over the egg mixture while continuing to whisk. Scrape the custard back into the pan and cook, over medium heat, whisking constantly, until thick and starting to bubble. Cook for a minute or two more to ensure the starch of the custard powder is fully cooked. Remove the pan from the heat and add the butter, Baileys Apple Pie and caramelised apple pieces and whisk to combine. Scrape the custard into the tin and spread into an even layer and top with the second piece of puff pastry, pressing gently onto the custard to secure it in place.",
+      "Refrigerate the custard slices for at least four hours before serving.",
+      "To serve use the foil to carefully lift the slices from the tin. Peel away the foil from the sides and transfer the slices to a chopping board. Use a serrated knife to mark and cut the slices into into 10 pieces. Dust with icing sugar and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Granny Smith Apples",
+        "unit": null,
+        "notes": "peeled, cored and diced",
+        "amount": "2",
+        "section": "Caramelised Apples",
+        "isOptional": false
+      },
+      {
+        "name": "G Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": "Caramelised Apples",
+        "isOptional": false
+      },
+      {
+        "name": "G Light Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": "Caramelised Apples",
+        "isOptional": false
+      },
+      {
+        "name": "G Puff Pastry",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": "Custard Slices",
+        "isOptional": false
+      },
+      {
+        "name": "ML Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": "Custard Slices",
+        "isOptional": false
+      },
+      {
+        "name": "G Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": "Custard Slices",
+        "isOptional": false
+      },
+      {
+        "name": "G Custard Powder",
+        "unit": "g",
+        "notes": "or cornflour",
+        "amount": "35",
+        "section": "Custard Slices",
+        "isOptional": false
+      },
+      {
+        "name": "Tsp Cinnamon",
+        "unit": "tsp",
+        "notes": "depending how strong you prefer the flavour",
+        "amount": "1-2",
+        "section": "Custard Slices",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": "Custard Slices",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": "Custard Slices",
+        "isOptional": false
+      },
+      {
+        "name": "G Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "35",
+        "section": "Custard Slices",
+        "isOptional": false
+      },
+      {
+        "name": "ML Baileys Apple Pie Limited Edition",
+        "unit": "ml",
+        "notes": "0.9 units",
+        "amount": "50",
+        "section": "Custard Slices",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d02a533d6d9517d27addc190d22ac948e84149e93e904b4af530dfd472cec574",
+    "lineage_hash": "f1a4480118e2511ae005a010a5d21e8bab3008ef00e6daa44a44a28ded3d6538"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.theboywhobakes.co.uk/recipes/2021/9/23/baileys-apple-pie-custard-slices",
+    "fetchedAt": "2026-08-01T16:57:40.361Z"
+  },
+  "rawSource": "https://www.theboywhobakes.co.uk/recipes/2021/9/23/baileys-apple-pie-custard-slices",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

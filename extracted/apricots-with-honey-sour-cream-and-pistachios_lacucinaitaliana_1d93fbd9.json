@@ -1,0 +1,79 @@
+{
+  "recipe": {
+    "name": "Apricots with Honey, Sour Cream and Pistachios",
+    "time": "15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make our recipe for apricots with honey, sour cream, and pistachios, start by washing the apricots. Divide them in half and remove the pit. &nbsp;&nbsp;",
+      "Sprinkle a pan with honey over high heat. Once the honey starts to simmer (after a few seconds), transfer the apricots to the pan, pit side facing down. Sauté for a couple of minutes until lightly caramelized.",
+      "In the meantime, chop the pistachios and mince the verbena.",
+      "Serve the apricots with the sour cream, pistachios and verbena.",
+      "Extra Tip: You can replace the sour cream with mozzarella or yogurt ice cream. For a richer flavor, use infused honey."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Apricots",
+        "unit": null,
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sour Cream",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pistachios",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Verbena",
+        "unit": null,
+        "notes": "alt: lemongrass",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1e58a8e414daafd3911e3e6769112f1b338f3d8a12496d9bc38057c418f0609c",
+    "lineage_hash": "4a30a3e0305de9dc68e9c8a1fe328482ee90890c95fe652d18d16466354ebfed"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/apricots-honey-sour-cream-and-pistachios",
+    "fetchedAt": "2026-08-03T09:06:13.201Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/apricots-honey-sour-cream-and-pistachios",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

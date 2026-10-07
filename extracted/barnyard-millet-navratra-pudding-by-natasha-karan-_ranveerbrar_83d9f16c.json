@@ -1,0 +1,117 @@
+{
+  "recipe": {
+    "name": "Barnyard Millet Navratra Pudding",
+    "time": "1 hr 30 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a thick bottom saucepan, pour full cream milk. Bring it to boil on a low to medium heat.",
+      "Then add samak ke chawal and stir very well. Cook the mixture on a low flame till the samak chawal gets cooked for about 10 to 12 minutes.",
+      "Keep stirring the mixture at intervals so that the milk or the samak chawal do not get scorched from the base.",
+      "Add jaggery, apple, and cinnamon powder and cook it again for 2 to 3 minutes on low flame, stirring constantly.",
+      "Meanwhile take half cup of milk in a pan and heat it over medium heat. Add makhanas and cook it for 2 to 3 minutes on medium flame.",
+      "Once this mixture comes to room temperature, blend it coarsely.",
+      "Now, add this makhana mixture into the samak rice pudding mixture and again cook it for another 1 to 2 minutes, stirring constantly or till the mixture thickens slightly. Turn off the flame.",
+      "Cool the mixture to room temperature.",
+      "Pour the mixture into separate ramekins and garnish with chopped walnuts, almonds and pistachios.",
+      "Cover the ramekins with cling film. Refrigerate for 2 to 3 hours.",
+      "Serve chilled."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Full Cream Milk",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jaggery",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Barnyard Millet/sama Ke Chawal",
+        "unit": "C",
+        "notes": "soaked overnight",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apples",
+        "unit": "C",
+        "notes": "skin peeled, chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Makhanas",
+        "unit": null,
+        "notes": null,
+        "amount": "15-20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Walnuts",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almonds",
+        "unit": "Tbsp",
+        "notes": "soaked and peeled, chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pistachios",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "65dc029771fd40d60f70cbeabb2515e980f8e3fdd72312aa64fff9bd95cd61fe",
+    "lineage_hash": "e5ca0be3529b2eea824c9e36e5c703705d30ef01238d7fd3c6613a344f45653c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/user-recipes/barnyard-millet-navratra-pudding-by-natasha-karan-nanda/",
+    "fetchedAt": "2026-08-02T21:16:11.602Z"
+  },
+  "rawSource": "https://ranveerbrar.com/user-recipes/barnyard-millet-navratra-pudding-by-natasha-karan-nanda/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

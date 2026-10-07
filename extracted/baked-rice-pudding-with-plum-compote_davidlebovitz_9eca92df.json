@@ -1,0 +1,119 @@
+{
+  "recipe": {
+    "name": "Baked Rice Pudding with Plum Compote",
+    "time": "1 hr 45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 325ºF (160ºC).",
+      "In a 2-quart baking dish, or larger, with high sides, mix the rice, sugar, salt, and vanilla bean & seeds. Pour in the milk. Mix it with the other ingredients, then strew the bits of butter over the top.",
+      "Place the dish of rice in the oven, stirring the rice every 10 to 15 minutes, being sure the scrape the bottom of the baking dish to avoid any grains of rice sticking there. Don&#39;t worry if the top starts to brown; simply stir that in*.",
+      "While the rice pudding is baking, make the compote by slicing the plums in half and removing the pits. Lay them cut side down in a baking dish large enough to hold them in a single layer. Pour the wine over the plums, sprinkle them with sugar, and tuck the vanilla bean between some of the plums, so it&#39;s mostly submerged in liquid. Cover the pan with aluminum foil and bake until the plums are soft and cooked through, about 15 to 20 minutes, depending on the plums.",
+      "Bake the rice for 1 hour and 45 minutes, stirring as directed. Remove from the oven and let cool for at least 10 to 15 minutes, to thicken, stirring occasionally. The rice will seem very liquidly, but will thicken up as it stands. (See note, below.)"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Round Rice",
+        "unit": "C",
+        "notes": "105g, such as short-grain rice",
+        "amount": "½",
+        "section": "rice pudding",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": "100g",
+        "amount": "½",
+        "section": "rice pudding",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "rice pudding",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean",
+        "unit": null,
+        "notes": "split lengthwise with seeds scraped out",
+        "amount": "1",
+        "section": "rice pudding",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "C",
+        "notes": "1l",
+        "amount": "4",
+        "section": "rice pudding",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "30g, salted or unsalted, cubed",
+        "amount": "2",
+        "section": "rice pudding",
+        "isOptional": false
+      },
+      {
+        "name": "Prune Plums",
+        "unit": "lb",
+        "notes": "700g",
+        "amount": "1½",
+        "section": "plum compote",
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "C",
+        "notes": "80ml, see headnote",
+        "amount": "⅓",
+        "section": "plum compote",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "plum compote",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean",
+        "unit": null,
+        "notes": "split lengthwise with seeds scraped out",
+        "amount": "½",
+        "section": "plum compote",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fc0ea3a0542b9f5d7e5a17214184981f2880f41dcafd9f02d337cfd48331effa",
+    "lineage_hash": "90390da110c386f2eff1d66b80798587729d587a2fac9e6a67e471ea27d6defb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/recipe-baked-rice-pudding-riz-au-lait-plum-compote/",
+    "fetchedAt": "2026-08-02T20:33:59.370Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/recipe-baked-rice-pudding-riz-au-lait-plum-compote/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

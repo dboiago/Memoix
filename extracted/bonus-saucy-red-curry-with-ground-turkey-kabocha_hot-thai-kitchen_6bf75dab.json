@@ -1,0 +1,125 @@
+{
+  "recipe": {
+    "name": "Saucy Red Curry with Ground Turkey & Kabocha",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "TH",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "236",
+      "carbohydrateContent": "17",
+      "fatContent": "11",
+      "proteinContent": "21"
+    },
+    "directions": [
+      "In a wok, add the coconut milk and bring to a full boil over high heat. Add the curry paste and the shrimp paste, if using, and stir to mix with the coconut milk. Reduce the heat to medium and continue stirring until the mixture is thick, and coconut oil may start to separate from the paste. If the oil doesn’t separate but the mixture is thick, you can move on.",
+      "Add the palm sugar and stir to mix, then add the ground turkey and mix well with the curry paste and break up any lumps.",
+      "Once the turkey is well mixed, add the kabocha squash pieces and stir to mix. Add just enough of the water so it looks like a very thick stew, but the squash should not be submerged completely.",
+      "Cover and let the squash steam for 5-7 minutes, stirring twice in between, until the squash can be pierced through easily with a fork.",
+      "Once the squash is cooked, turn off the heat and taste and add more fish sauce as needed. The amount you need will depend on the brand of curry paste you use, how much you used, and whether you added shrimp paste, so it is critical that you taste before adding any more fish sauce. You may need as little as 1 teaspoon or as much as 1 tablespoon.",
+      "Stir in half of the julienned makrut lime leaves, plate, and top with the remaining lime leaves. Serve with jasmine rice and enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Coconut Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Curry Paste",
+        "unit": "Tbsp",
+        "notes": "see note 1",
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fermented Shrimp Paste",
+        "unit": "tsp",
+        "notes": "see note 2, optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Palm Sugar",
+        "unit": "Tbsp",
+        "notes": "finely chopped, or sub brown sugar",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Turkey",
+        "unit": "lb",
+        "notes": "or sub ground chicken or ground pork",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kabocha Squash",
+        "unit": "oz",
+        "notes": "see note 3, cut in ¼-inch thick pieces",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "approximately",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Makrut Lime Leaves",
+        "unit": null,
+        "notes": "see note 4, finely julienned",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jasmine Rice",
+        "unit": null,
+        "notes": "for serving",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c75a5ef3e804c12faf4119cf24665b03fba83744207b78cb41c1df70f601773a",
+    "lineage_hash": "0ca1dd6febb885a0ebee36558d6cf8d4b47e805e101d21193a96c9f80e7c1632"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://hot-thai-kitchen.com/ground-turkey-kabocha-curry/",
+    "fetchedAt": "2026-08-02T04:01:02.733Z"
+  },
+  "rawSource": "https://hot-thai-kitchen.com/ground-turkey-kabocha-curry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

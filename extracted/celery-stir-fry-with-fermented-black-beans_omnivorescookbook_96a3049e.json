@@ -1,0 +1,122 @@
+{
+  "recipe": {
+    "name": "Celery Stir Fry with Fermented Black Beans",
+    "time": "20 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "73",
+      "carbohydrateContent": "5.8",
+      "fatContent": "5.3",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Mix the water, oyster sauce, sugar, and cornstarch together in a small bowl. Set aside.",
+      "Heat oil in a large pan over high heat until it shimmers. Add the garlic, ginger, dried chili pepper, and fermented black beans. Stir and cook until fragrant, 30 seconds or so.",
+      "Add the celery. Stir and cook until it starts to turn tender, 3 to 4 minutes. If the pan starts to get too dry, pour in a small amount of water or Shaoxing wine to deglaze. Stir the sauce again to dissolve the cornstarch completely, and pour it into the pan. Stir and cook until the sauce thickens and coats the ingredients, 1 minute or so. Transfer everything to a plate. Serve hot as a side dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "or vegetable oil",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "coarsely chopped",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili Peppers",
+        "unit": null,
+        "notes": "dried",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fermented Black Beans",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery",
+        "unit": "lb",
+        "notes": "sliced on the bias into 1/2” (1 cm) pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c7c96243e6d3ceb4ea2ca00889d9fb5d343e13d5b58499c478fb0a6ca4a7b1ac",
+    "lineage_hash": "5bc9e20b1571e17c90cf6ea4a224d2325a17509c74e5eee51cc216d51bf2d3e3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/celery-stir-fry-with-fermented-black-beans/",
+    "fetchedAt": "2026-08-02T06:55:05.367Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/celery-stir-fry-with-fermented-black-beans/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,84 @@
+{
+  "recipe": {
+    "name": "Bacon Wrapped Dates (Dátiles Rellenos)",
+    "time": "20 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "ES",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "137",
+      "carbohydrateContent": "18.35",
+      "fatContent": "6.39",
+      "proteinContent": "3.35"
+    },
+    "directions": [
+      "Preheat the oven to 350°F (175°C).",
+      "Slice the dates lengthwise and carefully remove the pit. Replace it with a small amount of goat cheese, and the almond if using. Press the edges of the dates together to seal.",
+      "Cut the strips of bacon in half, and wrap each date in one piece of bacon. Poke a  toothpick through the date to secure the bacon.",
+      "Place on a rimmed baking dish, leaving space between each date. Bake for 15-20 minutes, turning halfway through, until the bacon is brown and crispy.",
+      "Leave them to cool for a few minutes, then serve and enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Strips Thinly Sliced Bacon",
+        "unit": null,
+        "notes": "alt: serrano ham or prosciutto",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dates",
+        "unit": "large",
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Goat Cheese",
+        "unit": "oz",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toothpicks Soaked in Water to Minimize Charring",
+        "unit": null,
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Marcona Almonds Optional",
+        "unit": null,
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f7b704928eafa5f91f27b8424e827a54904a8b4e30e56f3d448fcc5ee9c1cdae",
+    "lineage_hash": "7b9b8860232af3e1cfb824b6a58ce992899e7385fbc07a7d2de1ab124166ebd7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://spanishsabores.com/bacon-wrapped-dates-recipe/",
+    "fetchedAt": "2026-08-02T09:03:54.492Z"
+  },
+  "rawSource": "https://spanishsabores.com/bacon-wrapped-dates-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

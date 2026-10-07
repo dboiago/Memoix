@@ -1,0 +1,35 @@
+{
+  "recipe": {
+    "name": "Caprese Martini",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to a mixing glass with ice and stir to chill. Strain into a chilled glass. Garnish.\nOlive Oil, Tomato, and Basil-Infused VodkaCombine the vodka, tomato, and basil in a large jar. Freeze for 24 hours. Strain vodka through a fine-mesh strainer and return to the jar. Add the olive oil, shake well, and freeze for 12 hours. After 12 hours, the oil will freeze in one hard layer on the top, remove oil layer before using and store in fridge.",
+      "Note: The bar recommends using the infused vodka within 3 to 5 days &#8220;to get the best-tasting product.&#8221;"
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "793a5696e493a40cb73736245fc4539c425890c309584690496d30b175fa6820",
+    "lineage_hash": "3beccc39a605470a1527d47d5c4fd9ccbf8ae6f64139f4ada8e144b6e5497815"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/caprese-martini/",
+    "fetchedAt": "2026-08-04T00:45:40.798Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/caprese-martini/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

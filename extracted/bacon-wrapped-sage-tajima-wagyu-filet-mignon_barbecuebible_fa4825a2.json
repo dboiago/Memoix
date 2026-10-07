@@ -1,0 +1,95 @@
+{
+  "recipe": {
+    "name": "Bacon-Wrapped Sage Tajima Wagyu Filet Mignon",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat your gas grill. Turn on the burners on one side of the grill to create a cool zone. Add wood chips to the smoker box to create wood smoke.",
+      "While the grill is heating up, prepare the steaks: Season each steak with kosher salt and freshly cracked black pepper on all sides.",
+      "Place a piece of butcher’s string on a cutting board. Lay a slice of bacon on the string, slightly overlapping. Place 4 sage leaves evenly over the bacon, end to end.",
+      "Lay a seasoned steak on its side over the bacon and sage. Carefully roll the bacon and sage around the steak. Tie the bacon-wrapped steak with the butcher’s string to secure the bacon and sage in place. Repeat with the remaining steak.",
+      "Once the grill reaches a temperature of 250 degrees Fahrenheit (120 degrees Celsius) and smoke is wafting out of the smoker box, it’s time to cook. Place the bacon-wrapped steaks on the grate in the cool zone.",
+      "Insert a digital thermometer into one of the steaks to monitor the internal temperature. Use the reverse-searing method: Allow the steak to cook indirectly until it reaches an internal temperature of 110 degrees Fahrenheit (43 degrees Celsius), ensuring the bacon starts to crisp up.",
+      "When the steak reaches the desired temperature, carefully remove it from the grill and let it rest on a wire rack over a sheet pan.",
+      "Turn on the other burners of the grill to increase the temperature to high for direct grilling. While the steak rests, you can grill asparagus to pair with the steak.",
+      "Return the rested steak to the grill and cook for about 60 seconds, then give it a quarter turn for grill marks. Flip the steak and repeat the process.",
+      "To finish cooking the steak and ensure the bacon is crispy, turn the steak on its side and rotate it every 20 seconds.",
+      "When the internal temperature of the steak reaches 135 degrees Fahrenheit (57 degrees Celsius), remove it from the grill and place it back on the wire rack over the sheet pan to rest.",
+      "Slice the Tajima American Wagyu Filet Mignon steak and serve. The bacon-wrapped sage and the marbling in the filet will make it tender and flavorful.",
+      "To enhance the experience, serve the steak with creamy mushroom risotto and grilled asparagus topped with freshly squeezed grilled lemon juice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Tajima American Wagyu Filet Mignon Steaks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kosher Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Cracked Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bacon",
+        "unit": "slices",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sage Leaves",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Asparagus Spears",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "449c764a9f6f46fca957ab8ce558efed8e7f88dc016d4b190ee42c2a3cc0525d",
+    "lineage_hash": "8b60ab816e7e133e5cedaff9acafcff6afe668daed4fc89bc9f0b0c2fb156dfe"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/bacon-wrapped-sage-tajima-wagyu-filet-mignon/",
+    "fetchedAt": "2026-08-03T09:08:15.677Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/bacon-wrapped-sage-tajima-wagyu-filet-mignon/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

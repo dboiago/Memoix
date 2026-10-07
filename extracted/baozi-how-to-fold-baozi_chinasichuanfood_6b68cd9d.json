@@ -1,0 +1,40 @@
+{
+  "recipe": {
+    "name": "Baozi",
+    "time": null,
+    "course": "mains",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Prepare the wrapper and the filling.",
+      "Place the wrapper in your left hand.",
+      "Place 1 ~2 tablespoon of the filling in the center of your wrapper (depending on the size of the wrapper).",
+      "Fix the starting point with the thumb of right hand and begin to fold the edge counterclockwise.",
+      "Move the thumb slowly in the process.",
+      "Repeat the steps to seal the baozi completely.",
+      "Then we have the cute baozi folded."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "c04beca3ecc1140a38d6b5d133d2e6ff17ade8be96818ccbe23284a67821476f",
+    "lineage_hash": "4466e2ffe5846b14308eeefba3fccc534c9272041bc8d1c5f9315084a8da5423"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/baozi-how-to-fold-baozi/",
+    "fetchedAt": "2026-08-01T17:59:49.447Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/baozi-how-to-fold-baozi/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

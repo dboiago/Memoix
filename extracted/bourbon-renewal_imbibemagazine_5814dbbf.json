@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Bourbon Renewal",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Old Fashioned",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine ingredients with ice in a shaker and shake to chill. Strain into and ice-filled glass."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "05dad88968dbafd097f99ff15a1366b8bccd83327eb81900afcf25ad3f5454ea",
+    "lineage_hash": "ded0b3b751f58410080d540c1d2c3a89ca12b59f1608f1f06c8a3648c38d4c19"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bourbon-renewal/",
+    "fetchedAt": "2026-08-03T19:35:33.237Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bourbon-renewal/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

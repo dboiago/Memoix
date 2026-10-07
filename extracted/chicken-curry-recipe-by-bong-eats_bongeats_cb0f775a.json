@@ -1,0 +1,266 @@
+{
+  "recipe": {
+    "name": "Chicken Curry",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a mixing bowl large enough to hold all the chicken, combine the components of the marinade: that is, sliced onions, chopped garlic, ginger paste, chopped green chillies, yoghurt, turmeric powder (10 g), red chilli powder, _garam masala_ powder, salt (10 g), lime juice, and raw mustard oil. Don’t throw the lime peel away.",
+      "Give these a good mix and then add the chicken to the bowl.",
+      "Coat the chicken pieces in the marinade, making sure to get into all the nooks and crannies of the chicken. If you are also cooking the chicken liver, don’t toss it in the marinade along with the other pieces of the chicken, as it might disintegrate. Instead, add the liver after all the chicken pieces are well coated, and smear the liver with the marinade then.",
+      "Stick the used lime peel in between the chicken pieces.",
+      "Cover the bowl and rest the marinated chicken in the refrigerator for at least 2 hours. For best results, leave it to marinate overnight.",
+      "Peel and divide the potatoes into 4-cm halves or quarters. Put these in a microwave-safe bowl, add 2 tablespoons of water, cover the bowl with a cling film, and microwave for about 3 to 4 minutes. Alternatively, you can also parboil the potatoes in water on the stove.",
+      "Cut the onions in thin slices. Thinly sliced onions (as opposed to roughly chopped or diced onions) give the curry the perfect texture.",
+      "Heat 30 g mustard oil in a _kadai_. Once the oil has started to smoke lightly and changed colour to a pale yellow, temper it with dried red chillies, bay leaves, cardamom, cinnamon, cloves, and peppercorns.",
+      "Add in the onions, along with the sugar, and fry them for about 8 to 10 minutes, till the onions are brown in colour. (We add the sugar at this stage to help the onions caramelize quickly.)",
+      "Once the onions have caramelized, add 8 g turmeric powder and 18 g salt, along with 75 g of water.",
+      "Fry the spices on medium heat till the water dries up. This should take about 5 minutes.",
+      "Tip the marinated chicken into the _kadai_ (don’t forget to remove the lime peel from the bowl!), and mix it with the onions in the pan. Cook the chicken on medium heat for about 15 minutes, stirring occasionally. This will ensure that the smell of raw spices from the marinade is gone.",
+      "Add in the parboiled potatoes and slit green chillies, and stir them in.",
+      "Add 400 g of hot water to the pan. This will form the curry.",
+      "Cover the pan and let the curry bubble for about 15 to 20 minutes, or till the chicken and potatoes are tender.",
+      "Garnish with chopped coriander leaves."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Onions",
+        "unit": "g",
+        "notes": "sliced",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pcs Green Chillies",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Paste",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yoghurt",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken",
+        "unit": "kg",
+        "notes": "cut and cleaned",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": "g",
+        "notes": "halved or quartered; 6 pcs",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "g",
+        "notes": "thinly sliced",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pcs Dried Red Chillies",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pcs Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pcs Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pcs Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pc Cinnamon",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pcs Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "18",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "g",
+        "notes": "optional; finely chopped",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pcs Green Chillies",
+        "unit": null,
+        "notes": "slit",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "44c1583714d75102b9ce9f92459ac34cfd70e213a87eac350e6739f5d674ba50",
+    "lineage_hash": "dc3df14bce4062c75d6701528e410b1252d9f4ad7af41065934be11537b3249a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.bongeats.com/recipe/chicken-curry",
+    "fetchedAt": "2026-08-01T18:19:18.366Z"
+  },
+  "rawSource": "https://www.bongeats.com/recipe/chicken-curry",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,35 @@
+{
+  "recipe": {
+    "name": "Chartreuse Daiquiri",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to a shaker, add ice, then shake until chilled. Strain into a glass and garnish.",
+      "Sage Syrup: Combine 8 oz. of water and 8 oz. of white sugar in a small saucepan over medium-high heat, stirring occasionally until the sugar is dissolved. Add 4 oz. of fresh sage leaves to the syrup and allow them to steep, keeping the burner on medium until the water begins to change color and the leaves start to wilt. Stir, then turn the heat to low and allow the syrup to cool. Strain, bottle, and store for use in the refrigerator for up to 1 week."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "cb592ac33be11a913f922a10762e6c58d2b0eb15abeef860fd1e19905a61a8d7",
+    "lineage_hash": "0ed9a581921abfca0c61bcfc49257b503e9c090ee1b4e886e955d7c808b65def"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/chartreuse-daiquiri/",
+    "fetchedAt": "2026-08-03T18:10:15.315Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/chartreuse-daiquiri/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

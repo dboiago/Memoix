@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Boozy Sandwich",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat a non-stick pan over medium heat. Butter one side of each slice of bread and toast until golden brown. Then flip the bread and toast lightly on the unbuttered side.",
+      "While the bread is toasting, combine the bourbon and nut butter in a small bowl and whisk vigorously. The bourbon is completely incorporated when the nut butter lightens a bit in color. Up to 3 oz. of bourbon can be used to make the sandwich &#8220;a double.&#8221; But add more than that and the bourbon overpowers the nut butter.",
+      "Remove the bread from the pan. On the unbuttered side of one slice, spread the jam; and on the other, spread the whisked nut butter. Leave room around the edges to prevent excess spread from squeezing out when the two sides are put together. Cut and serve. Garnish with berries and even some confectioners’ sugar if you’d like."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "c9244d1ba4fdc4b3d249a5cbcec7d95ee06e421cbdaf981200b25f6570f713ec",
+    "lineage_hash": "fca07722fdaeaf6666735acf6faf1b56a29de0d27e720659caa2ad0a4b6f10de"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/boozy-sandwich-mohawk-bend/",
+    "fetchedAt": "2026-08-04T00:39:31.788Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/boozy-sandwich-mohawk-bend/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

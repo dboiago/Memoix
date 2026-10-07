@@ -1,0 +1,154 @@
+{
+  "recipe": {
+    "name": "Blood Orange Pound Cake",
+    "time": "1 hr 5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat the oven to 180C (fan 160C) and lightly grease a large loaf tin, lining with a strip of parchment paper.",
+      "Put the sugar, butter and orange zest into a stand mixer fitted with the paddle and beat for about 5 minutes until light and fluffy.",
+      "Add the eggs, a little a time, waiting until fully combined before adding more.",
+      "Fold in the flour, salt and the baking powder and mix until smooth.",
+      "Pour in the cream and gently mix to combine.",
+      "Spoon into the loaf tin and bake for 55-60 minutes or until a skewer inserted into the middle comes out clean.",
+      "While the cake bakes, put the orange juice and sugar into a small pan and bring to a gentle simmer, cooking until the sugar has dissolved.",
+      "Remove from the heat.",
+      "Allow the cake to cool in the tin for 10 minutes before transferring to a wire rack set over a piece of baking paper.",
+      "Using a skewer, poke holes all over the top, sides and base of the cake.",
+      "Brush the syrup all over the cake, coating the entire surface.",
+      "Allow to cool.",
+      "To make the glaze, slowly mix in icing sugar to the orange juice, adding just enough to make a glaze that is thick and pourable.",
+      "Add a small pinch of salt and mix to combine, this helps temper the sweetness a little.",
+      "Pour the glaze all over the cake, allowing to drip down the sides of the cake.",
+      "Allow the glaze to set for 20-30 minutes before topping with segments of blood orange and flaked almonds."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": "Blood Orange Pound Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Blood Oranges",
+        "unit": null,
+        "notes": "prefereably Moro variety",
+        "amount": "3",
+        "section": "Blood Orange Pound Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "room temperature",
+        "amount": "150",
+        "section": "Blood Orange Pound Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "3",
+        "section": "Blood Orange Pound Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": "Blood Orange Pound Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Blood Orange Pound Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Blood Orange Pound Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": "Blood Orange Pound Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Blood Orange Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": "Blood Orange Syrup",
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": "Blood Orange Syrup",
+        "isOptional": false
+      },
+      {
+        "name": "Blood Oranges",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "To Decorate",
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "To Decorate",
+        "isOptional": false
+      },
+      {
+        "name": "Flaked Almonds",
+        "unit": "handful",
+        "notes": "lightly toasted",
+        "amount": "1",
+        "section": "To Decorate",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1e0e638321f901bef2d64c8a8d23d579c671421e779bf870950c6600d1fc9646",
+    "lineage_hash": "cf9d54178c2f997068bd1c9023359b8d950e70650673ccd631ab700c9010ef08"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.theboywhobakes.co.uk/recipes/2018/2/14/g8yqbtzqmu98loeagamek3l9bkrp4b",
+    "fetchedAt": "2026-08-01T20:38:42.065Z"
+  },
+  "rawSource": "https://www.theboywhobakes.co.uk/recipes/2018/2/14/g8yqbtzqmu98loeagamek3l9bkrp4b",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

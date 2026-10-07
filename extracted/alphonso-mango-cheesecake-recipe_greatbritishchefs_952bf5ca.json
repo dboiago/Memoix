@@ -1,0 +1,95 @@
+{
+  "recipe": {
+    "name": "Alphonso Mango Cheesecake",
+    "time": "30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix the crushed digestive biscuits and melted butter together in a bowl and press it out evenly on the base of an 18cm loose-bottomed cake tin. Place in the fridge whilst you make the filling",
+      "Place the cream cheese, double cream and caster sugar in a bowl and whisk to soft peaks. Fold in the mango purée until evenly combined",
+      "Remove the gelatine from the water and squeeze to get rid of the excess water. Place in a pan over a very low heat and melt – this will not take more than a minute. Once melted, add some of the cheese cake mix into the pan to cool down the gelatine, then fold in with the rest of the mixture",
+      "Pour the mixture onto the biscuit base, smooth over to create a neat and even top and place in the fridge to set for a minimum of 2–3 hours",
+      "Once set, carefully decorate with the sliced mangoes in an overlapping pattern and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Digestive Biscuits",
+        "unit": "g",
+        "notes": "crushed",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream Cheese",
+        "unit": "g",
+        "notes": null,
+        "amount": "450",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaves",
+        "unit": null,
+        "notes": "soaked in cold water",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mango Purée",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "aafbbf3a02c44bd6f52aeccaf551ea2828e2ac47b4a0cf845581595814f13e88",
+    "lineage_hash": "7b664a452bff0479be37d1a9457a1a966e4b77bfa65a6f15410f4e462475e16d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/alphonso-mango-cheesecake-recipe",
+    "fetchedAt": "2026-08-02T20:55:06.904Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/alphonso-mango-cheesecake-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

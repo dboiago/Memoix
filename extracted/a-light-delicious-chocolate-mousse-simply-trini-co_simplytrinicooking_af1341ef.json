@@ -1,0 +1,93 @@
+{
+  "recipe": {
+    "name": "Chocolate Mousse",
+    "time": "2 hr 15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place tofu, stevia, and vanilla in a food processor or blender. Process until well blended.",
+      "Add remaining ingredients and process until mixture is fully blended.",
+      "Pour into small dessert cups or espresso cups. Chill for at leat 2 hours. Garnish with fresh mint leaves just before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Silken Tofu",
+        "unit": "oz",
+        "notes": "drained",
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Substitute Sugar",
+        "unit": "C",
+        "notes": "such as Stevia",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Agave Syrup",
+        "unit": "Tbsp",
+        "notes": "alt: honey",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Milk",
+        "unit": "C",
+        "notes": "alt: almond milk or coconut milk",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsweetened Cocoa Powder",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carob Powdermint Leaves",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "75df3445fbd3a8b6b8583563595e80d94af384e22d08c74b600eb1505f7ab251",
+    "lineage_hash": "0de114d400df59b4552335e33e0b4932179a5efd4b357e12b4b0bd55137698b6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.simplytrinicooking.com/a-light-delicious-chocolate-mousse/",
+    "fetchedAt": "2026-09-25T19:56:47.812Z"
+  },
+  "rawSource": "https://www.simplytrinicooking.com/a-light-delicious-chocolate-mousse/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

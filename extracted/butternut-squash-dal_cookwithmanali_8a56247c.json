@@ -1,0 +1,201 @@
+{
+  "recipe": {
+    "name": "Butternut Squash Dal",
+    "time": "45 min",
+    "course": "vegn",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "230",
+      "carbohydrateContent": "38",
+      "fatContent": "4",
+      "proteinContent": "11"
+    },
+    "directions": [
+      "Soak the chana and toor dal for 20-30 minutes. Drain water and set aside.",
+      "To a pressure cook add the soaked dal with water, turmeric powder, salt, chopped ginger and butternut squash.",
+      "Pressure cook till dal is nicely cooked and squash is completely softened. I cooked on high heat for 4 whistles and then set the heat to low and cook for additional 5-6 minutes. Let the pressure come off on it's own and then set the dal aside.",
+      "In a pan or work, heat oil on medium heat. Once the oil is hot, add cumin seeds and mustard seeds and let them crackle.",
+      "Once the seds pop, add chopped onion, green chili and curry leaves. Saute for 2 minutes or till onion becomes slightly translucent.",
+      "Add chopped garlic and saute for a minute or two.",
+      "Now add chopped tomatoes and mix. Also add salt.",
+      "Cook the tomatoes for 5 minutes or till they soften up.",
+      "Now transfer the cooked dal to pan , add water and mix everything. Adjust salt at this point. Lower the heat and let the dal simmer for 5 minutes.",
+      "Add cilantro and lemon juice (if using) and serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Toor Dal",
+        "unit": "C",
+        "notes": "soaked for 30 minutes, also known as split pigeon peas lentil",
+        "amount": "½",
+        "section": "To pressure cook",
+        "isOptional": false
+      },
+      {
+        "name": "Chana Dal",
+        "unit": "C",
+        "notes": "soaked for 30 minutes, also known as split garbanzo beans",
+        "amount": "¼",
+        "section": "To pressure cook",
+        "isOptional": false
+      },
+      {
+        "name": "& ½ Cups Water",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "To pressure cook",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "To pressure cook",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "To pressure cook",
+        "isOptional": false
+      },
+      {
+        "name": "& ¼ Teaspoons Finely Chopped Ginger",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "To pressure cook",
+        "isOptional": false
+      },
+      {
+        "name": "& ½ Cups Butternut Squash Cubes",
+        "unit": null,
+        "notes": "from one small squash of around 800 grams",
+        "amount": "2",
+        "section": "To pressure cook",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Tempering/tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Tempering/tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Tempering/tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chili",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": "Tempering/tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "3",
+        "section": "Tempering/tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "5-6",
+        "section": "Tempering/tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "medium",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "Tempering/tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "medium",
+        "notes": "chopped",
+        "amount": "2",
+        "section": "Tempering/tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": "Tempering/tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": "optional",
+        "amount": "1",
+        "section": "Tempering/tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1-2",
+        "section": "Tempering/tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "Tempering/tadka",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e08529b90809357bc95d936343e1bed108df2791b979bf8d162b356f3bd75d6d",
+    "lineage_hash": "d300d9c6e7e918501e5da3f1e6c0816a12ce4d4bfc42ec6107bcdfde9bb95870"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/butternut-squash-dal/",
+    "fetchedAt": "2026-08-02T07:04:17.116Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/butternut-squash-dal/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Bee's Knees Cocktail",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all ingredients in a shaker with ice. Shake, strain into a chilled glass and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "6655300ff037116861b3ea87f84175219633a66925015b104e73300043f6853b",
+    "lineage_hash": "12a2269d01d45536b8d761faccf30bc1aeaa8fd4b2c4c33dd630bb3a18c6e2b7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bee-s-knees-2/",
+    "fetchedAt": "2026-08-03T20:40:03.151Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bee-s-knees-2/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

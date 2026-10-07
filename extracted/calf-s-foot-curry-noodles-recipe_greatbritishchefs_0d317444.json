@@ -1,0 +1,113 @@
+{
+  "recipe": {
+    "name": "Calf’s Foot Curry Noodles",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a pressure cooker or deep pot add the calf’s foot, oil and red curry paste",
+      "Cook, turning often until it smells cooked and the ingredients are coated in a rich red oil",
+      "Add the curry powder and cook carefully until it loses its raw edge",
+      "Add the shrimp paste and then the palm sugar. Raise the heat and caramelise the sugar slightly. Add water to just cover, and cook over a low heat for 1 hour 30 minutes. Alternatively, pressure cook for around 30 mins or until it turns into a silky stew",
+      "Reduce the sauce until it’s thick, then add the fish sauce",
+      "Spoon sparingly over plates of freshly cooked egg noodles, adding a squeeze of lime and some coriander",
+      "Eat with chopsticks; the rich oily sauce will coat the noodles and every slurp"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Calves' Feet",
+        "unit": null,
+        "notes": "sliced lengthways and cut into three sections",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thai Red Curry Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Madras Curry Powder",
+        "unit": "tsp",
+        "notes": "good quality",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shrimp Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Palm Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thin Egg Noodles",
+        "unit": "g",
+        "notes": "cooked briefly, leaving a bit of bounce in them",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": null,
+        "notes": "fresh, and lime wedges, to serve",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c302ce2e50deb1f22125624ab730191f110165cde78c254c228bb9f6bc11df0c",
+    "lineage_hash": "fd5d1ae2e927f39c9b3a865377e5ba9aefb0f1808c4a830aed0581373aab6b10"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/calfs-foot-curry-noodles-recipe",
+    "fetchedAt": "2026-08-02T10:30:02.016Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/calfs-foot-curry-noodles-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

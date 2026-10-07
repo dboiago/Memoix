@@ -1,0 +1,154 @@
+{
+  "recipe": {
+    "name": "Blueberry Cornbread Cobbler",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "370",
+      "carbohydrateContent": "77",
+      "fatContent": "7",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "Preheat the oven to 375°F.",
+      "Set a 9&quot; cast iron skillet over low heat on the stove. Melt the 1 oz&#32;unsalted butter in the pan. Swirl the pan to coat the bottom and sides with butter. Or use a casserole dish brushed with melted butter.",
+      "Combine 32 oz&#32;blueberries with 3 oz&#32;granulated sugar, 1/4 teaspoon&#32;table salt, lemon juice and finely grated zest. Pour the berries into the skillet."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "2 tablespoons",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blueberries",
+        "unit": "oz",
+        "notes": "6 cups",
+        "amount": "32",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "1/3 cup",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Each Lemon",
+        "unit": null,
+        "notes": "juice and grated zest",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stone Ground Cornmeal",
+        "unit": "oz",
+        "notes": "2/3 cup",
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "oz",
+        "notes": "1/2 cup, see note",
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cup Granulated Sugar",
+        "unit": "oz",
+        "notes": "1/3 cup",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "C",
+        "notes": "1/2 cup",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "1/4 cup, melted",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "73c5db0ed473e795ffb80f5ac6f55d50eba63b928a829114a2f08e1971038de6",
+    "lineage_hash": "ef54ecb7cdf1114f7ad6359c82e5bb5a404fa5f68b1ef5d79b9f19aa0bea4a7a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2017/06/08/blueberry-cornbread-cobbler/",
+    "fetchedAt": "2026-08-02T08:24:59.755Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2017/06/08/blueberry-cornbread-cobbler/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

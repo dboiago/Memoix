@@ -1,0 +1,95 @@
+{
+  "recipe": {
+    "name": "Black Sesame Sweet Rice Balls (Tang Yuan)",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "236",
+      "carbohydrateContent": "20.5",
+      "fatContent": "16.6",
+      "proteinContent": "2.7"
+    },
+    "directions": [
+      "Blend the sesame seeds with brown sugar until finely ground. Note, if you blend the sesame seeds for too long, it will start to release oil and become sticky. If you notice the sesame seeds starting to stick to the edge of your food processor, you should stop.",
+      "Mix in the butter and blend again.",
+      "Transfer the filling onto a plate. Refrigerate for 30 minutes or freeze for 15 minutes to solidify the butter.",
+      "Once the filling is firm enough to handle, make it into small balls for the filling.",
+      "The filling should be easy to roll out with your hands and not collapse. If it turns too soft, transfer it to the fridge to chill.",
+      "Once you have made all the filling, store it in the fridge or freezer to chill again.",
+      "Mix water into the sweet rice flour",
+      "Stir until a dough mass forms",
+      "Transfer the dough onto a lightly floured surface and use your hands to gather it into a dough ball",
+      "Take a small piece of dough and roll it into a ball with your hands",
+      "Gently press the center",
+      "Add the sesame filling",
+      "Slowly smooth the dough over the filing",
+      "Seal the filling where the dough pieces meet",
+      "Then roll the dough again to shape a ball",
+      "Boil the portion of sweet rice balls you plan to serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Toasted Black Sesame Seeds",
+        "unit": "g",
+        "notes": "1/2 cup",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "g",
+        "notes": "1/4 cup, or regular sugar",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "6 tablespoons, softened",
+        "amount": "85",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glutinous Rice Flour",
+        "unit": "g",
+        "notes": "1 1/2 cup, and extra for dusting",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Warm Water",
+        "unit": "ml",
+        "notes": "2/3 cup + 1 tablespoon, 100°F / 40°C",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5f22ed3035d70b1b5c09c63f05898351f7f925d76e237f3ca933e955badacc95",
+    "lineage_hash": "6318016236e42d5a012d6962a7bdf89d87163b5023eec8f60abc5a778d69b23c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/black-seseam-sweet-rice-balls/",
+    "fetchedAt": "2026-08-02T01:10:35.729Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/black-seseam-sweet-rice-balls/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

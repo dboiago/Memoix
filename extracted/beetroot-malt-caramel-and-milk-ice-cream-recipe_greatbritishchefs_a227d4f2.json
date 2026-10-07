@@ -1,0 +1,242 @@
+{
+  "recipe": {
+    "name": "Beetroot, Malt Caramel and Milk Ice Cream",
+    "time": "3 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start by preparing the beetroots. Vacuum seal the purple beetroot with the yoghurt whey and cook in a steamer for 45 minutes. Allow to cool then open the bag, peel and cut into small wedges. Reserve until ready to plate",
+      "Meanwhile, combine the sugar and water in a pan and bring to the boil gently, so the sugar dissolves. Once the syrup is bubbling, allow to cool to room temperature. Slice the golden beetroot as thin as possible – about ½ a millimetre thick – on a meat slicer or mandoline. Dip the golden beetroot slices into the sugar syrup and place in dehydrator set to 60ºC for about 1 hour – the beetroot should come out dry but still malleable and candied. Alternatively you can do this in an oven, preheated to 60ºC",
+      "For the sherbet, combine the beetroot powder, citric acid, sugar, bicarbonate of soda and cornflour and blend into a fine, bright purple powder. Reserve until ready to plate",
+      "For the malt caramel, toast the malted barley in a saucepan until aromatic, then add all other ingredients. Bring to scalding point, then remove from the heat and allow to steep until cool. Once the liquid has cooled, strain the malt out of the liquid and pour the liquid back into a pan. Simmer gently for 30 minutes until the caramel is thick and golden – make sure to stir regularly so the caramel doesn’t catch and burn",
+      "For the ice cream, reduce the milk to 300ml, then add the cream and milk powder. Mix the egg yolks and sugar in a heatproof bowl until well combined, then pour the milk over the egg and sugar mix and whisk thoroughly to combine. Return the mixture to the pan and cook over a gentle heat, stirring constantly until the custard has thickened enough to coat the back of a wooden spoon. You want to heat the custard to around 80ºC",
+      "Once thickened, cool the ice cream base in the fridge, then churn in an ice-cream machine according to the manufacturer’s instructions. After that, you can keep it in the freezer until ready to serve",
+      "Preheat an oven to 160ºC/gas mark 3 ½. To make the feuilletine, whip the butter and sugar in a stand mixer (or with an electric whisk) until the mixture has doubled in size, then beat in the egg whites gradually. When the mixture is smooth and fully incorporated, fold through the malted flour and spread thinly on a silicone mat. Bake in the oven for 8 minutes, or until the feuilletine is golden brown. Reserve until ready to plate",
+      "To plate, spoon a bit of the malt caramel into the bottom of each bowl, arrange beetroot wedges and candied golden beetroot around the caramel, then place a scoop of the ice cream on top. Cover with shards of the malt feuilletine,and finish with the beetroot sherbet"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beetroot",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Beetroot",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yoghurt Whey",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Citric Acid",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bicarbonate of Soda",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beetroot Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bicarbonate of Soda",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Medium-roast Malted Barley",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": "g",
+        "notes": null,
+        "amount": "110",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Malt Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "faae0bf4c1e514e9891bd363a6451ac8da6ec1c7529fa5574f4b8686d2a77fc1",
+    "lineage_hash": "a92f63551f4ea8e2ddf4da24fa28977a1673983131107ff6702b6093c98e4392"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beetroot-malt-milk-ice-cream-recipe",
+    "fetchedAt": "2026-08-03T05:25:12.360Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beetroot-malt-milk-ice-cream-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

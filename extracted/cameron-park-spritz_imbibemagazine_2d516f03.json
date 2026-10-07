@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Cameron Park Spritz",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the Aperol, elderflower liqueur, and mezcal to an ice-filled glass. Add a splash of sparkling water, then top with 2-3 oz. of sparkling wine. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "61caaaecd977e2dc8ac4eab55f9eae1a2d0f8f2556926b3b8e2c89435db9ee00",
+    "lineage_hash": "5fb7d4fd9eea25c87daf04f2cc7bb193128cda49c2721b83e6d0eac726fc6065"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cameron-park-spritz/",
+    "fetchedAt": "2026-08-03T23:44:00.959Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cameron-park-spritz/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,185 @@
+{
+  "recipe": {
+    "name": "Artichoke, Pancetta and Spinach Gratin Topped With a Walnut Crunch",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 200°C and lightly grease a medium sized skillet or baking dish",
+      "For the béchamel sauce, make a roux by melting the butter in a pan over a medium-low heat. Add in the flour and use a spatula to combine with the butter to make a paste. Cook until it becomes a light golden colour, then add in the milk while whisking constantly. Keep whisking and let the mix simmer until it thickens enough to coat the back of a spoon, then add in the mustard, grated Gruyère and ground nutmeg",
+      "Add some vegetable oil to a large pan on a medium heat, then add the diced pancetta and cook until crisp. Add in the chopped artichoke hearts then once golden, deglaze with the apple cider vinegar. Let this reduce, then add in the spinach and cook until softened. Turn the heat down to low, then add in the garlic and cook until fragrant",
+      "Once all the liquid has evaporated from the pan, pour the béchamel sauce over the pancetta mix and stir to combine. Season to taste with salt and pepper",
+      "Line the base of the skillet or baking dish with the cooked rice, then top with the artichoke mix",
+      "In a separate bowl, mix together the chopped walnuts, breadcrumbs, grated parmesan, cheddar, and roughly chopped sage. Stir to combine and season lightly with salt and pepper",
+      "Generously sprinkle the walnut mix over the top of the skillet, then bake in the oven for 25 minutes until the top is golden brown"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": null,
+        "notes": "for greasing",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooked Rice",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": "room temperature",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Nutmeg",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gruyere",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pancetta",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Artichoke Hearts",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Cider Vinegar",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spinach",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "minced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Walnuts",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Breadcrumbs",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mature Cheddar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sage",
+        "unit": "bunch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d21b5290d6cb99f836b588b565a6366548677296a8398e80752f58b66bcbf5b2",
+    "lineage_hash": "451a1c5241ecab6f645297d29f06d2b34305af060fb159bc81f16b04ef7637f8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/artichoke-pancetta-spinach-gratin-walnut-crunch-recipe",
+    "fetchedAt": "2026-08-02T13:17:53.629Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/artichoke-pancetta-spinach-gratin-walnut-crunch-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

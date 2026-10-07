@@ -1,0 +1,84 @@
+{
+  "recipe": {
+    "name": "Agave Heaven",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Cocktail",
+    "garnish": [],
+    "subcategory": "Tequila",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Chill a cocktail glass in the freezer or with ice.",
+      "Combine the mescal, tequila, lime juice, Strega, and agave syrup in a bar shaker with 1 cup ice cubes. Shake hard and strain into a chilled cocktail glass. Add a dash or two of celery bitters and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mescal",
+        "unit": "oz",
+        "notes": "preferably Sombra",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Tequila",
+        "unit": "oz",
+        "notes": "preferably Two Fingers",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Squeezed Lime Juice",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strega",
+        "unit": "oz",
+        "notes": "1 tablespoon",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Agave Syrup",
+        "unit": "oz",
+        "notes": "1 tablespoon",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Bitters",
+        "unit": null,
+        "notes": "alt: bitters of choice",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d450c4a5e95ea86312792c5be839bd4118c0e729b7895ec559537d7f43ca27a0",
+    "lineage_hash": "f0fc266c6e4c42a442f0afb740c72b0c9f4f454bc035984cf6b28b9066c5c205"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/agave-heaven/",
+    "fetchedAt": "2026-08-03T02:36:23.142Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/agave-heaven/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

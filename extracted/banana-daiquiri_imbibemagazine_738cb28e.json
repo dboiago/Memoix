@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Banana Daiquiri",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all the ingredients to a shaker and fill with ice. Shake and strain into a chilled glass. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "2b5351f7f07268ef6aa8746d95661a5fc22ea1f484d3babd3cf466dcfcc0a807",
+    "lineage_hash": "5150d048510dd88e9c9cdb2046b6d3e5170189bc1a9a0a8ddeec65654def45e4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/banana-daiquiri/",
+    "fetchedAt": "2026-08-03T23:45:19.605Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/banana-daiquiri/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

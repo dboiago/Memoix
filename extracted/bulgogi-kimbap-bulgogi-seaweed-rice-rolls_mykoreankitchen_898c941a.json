@@ -1,0 +1,149 @@
+{
+  "recipe": {
+    "name": "Bulgogi Kimbap",
+    "time": "40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "7",
+    "source": "scraped",
+    "cuisine": "KR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "455",
+      "carbohydrateContent": "91",
+      "fatContent": "3",
+      "proteinContent": "14"
+    },
+    "directions": [
+      "In a large bowl, mix the steamed rice with the rice seasoning and roasted sesame seeds.",
+      "Place one seaweed sheet on a bamboo (sushi) mat and thinly spread the rice on the seaweed sheet. (I covered about 90% of the sheet)",
+      "Place the prepared ingredients on top of the rice (in the lower centre of the rice) in the order of perilla leaves, Bulgogi, yellow radish pickles, seasoned burdock root, cucumber and carrots.",
+      "Once all the ingredients are set, lift the bottom end of the sushi mat to cover the ingredients. Once you cover them, roll up the seaweed to the top. (Paste some water or put some rice pieces at the edge of the seaweed sheet, if it doesn’t stick) Roll the sushi roll with the bamboo mat once more to give a firm shape. Repeat this process with the remaining ingredients.",
+      "Once you finish rolling them, paste the sesame oil onto the rolls to give extra nutty savoury flavour and shiny look.",
+      "Cut the Kimbap into bite size pieces and serve them on a plate. Or you can enjoy them sushi burrito style. Refer to the note below."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Seaweed Sheets",
+        "unit": null,
+        "notes": "dried",
+        "amount": "7",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Steamed Short Grain Rice",
+        "unit": "C",
+        "notes": "cooled down, *see note above",
+        "amount": "5½",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Perilla Leaves",
+        "unit": "g",
+        "notes": "stems removed",
+        "amount": "14",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Bulgogi (korean Marinated Beef) (1 Pound)",
+        "unit": "g",
+        "notes": "cooked",
+        "amount": "500",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Strips Yellow Radish Pickle *see Note Above",
+        "unit": null,
+        "notes": null,
+        "amount": "7",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Strips Seasoned Burdock Root *see Note Above",
+        "unit": null,
+        "notes": null,
+        "amount": "14",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "English",
+        "unit": null,
+        "notes": "alt: Lebanese cucumber (270 g / 10 ounces), seeds removed and julienned",
+        "amount": "1",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Carrot (220 G / 8 Ounces)",
+        "unit": "medium",
+        "notes": "I used a mandoline slicer, julienned",
+        "amount": "1",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1-2",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Rice Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "RICE SEASONING (MIX THESE IN A SMALL BOWL AND MICROWAVE IT FOR ABOUT 30 SECONDS TO DISSOLVE THE SUGAR. ALTERNATIVELY YOU COULD USE 3 TBSP OF PRE-MADE SUSHI SEASONING SAUCE)",
+        "isOptional": false
+      },
+      {
+        "name": "White Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "RICE SEASONING (MIX THESE IN A SMALL BOWL AND MICROWAVE IT FOR ABOUT 30 SECONDS TO DISSOLVE THE SUGAR. ALTERNATIVELY YOU COULD USE 3 TBSP OF PRE-MADE SUSHI SEASONING SAUCE)",
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "RICE SEASONING (MIX THESE IN A SMALL BOWL AND MICROWAVE IT FOR ABOUT 30 SECONDS TO DISSOLVE THE SUGAR. ALTERNATIVELY YOU COULD USE 3 TBSP OF PRE-MADE SUSHI SEASONING SAUCE)",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "61d6131a4ff3f3ba61428cda1c4531b941546364538f8151da636ad838839e41",
+    "lineage_hash": "826e4dcc766500f76b7106a5a66a57d23119396e6eb880f58bcc783e11453afc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://mykoreankitchen.com/bulgogi-kimbap/",
+    "fetchedAt": "2026-08-01T17:34:30.105Z"
+  },
+  "rawSource": "https://mykoreankitchen.com/bulgogi-kimbap/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

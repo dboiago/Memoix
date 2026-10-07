@@ -1,0 +1,95 @@
+{
+  "recipe": {
+    "name": "Bayou Bite Louisiana BBQ Sauce",
+    "time": "1 hr",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Prep. Prepare the red peppers if you don&#39;t have them in the freezer. Blacken the skins so they peel easily. When they come off the grill toss them in a bowl and cover it with a plate. This allows them to steam and further loosens the skin. With a serrated knife, scrape off the skin. Don&#39;t worry if some remains.",
+      "Cook. Turn the heat on the grill down to medium. Peel the garlic cloves and wrap them in foil. Put them on the grill for about 15 minutes or until they are tender.",
+      "Prep again. Put the pepper and garlic in a blender and puree. You should get about 1/2 cup (118.3mL) of liquid per serving. If you have more or less pepper juice, adjust the rest of the ingredients accordingly.",
+      "Add the remaining ingredients and liquefy. Taste and adjust the flavors to your preferences. Add more Tabasco if you want it hotter or more syrup if you want it sweeter. Bottle it in a clean jar and refrigerate. It will lose some of its freshness after a month or so.",
+      "Serve.  Use the sauce to spice up countless dishes."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Grill Roasted",
+        "unit": "large",
+        "notes": "alt: smoked red bell peppers",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chipotle Tabasco Sauce",
+        "unit": "Tbsp",
+        "notes": "alt: your favorite hot sauce",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Steen's 100% Pure Cane Syrup",
+        "unit": "Tbsp",
+        "notes": "alt: molasses",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Distilled Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ketchup",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Morton Coarse Kosher Salt",
+        "unit": "pinches",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "47003bc9e4cf6ad889d65130870709425a07c4ac4bab08e922b5474bb7711da4",
+    "lineage_hash": "c784195cd3cfabe49ffde90587c59f2b09948714dbead10c993f64c3f48edb3f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://amazingribs.com/tested-recipes/other-fun-sauce-recipes/bayou-bite-louisiana-bbq-dipping-sauce-recipe/",
+    "fetchedAt": "2026-08-02T05:30:45.383Z"
+  },
+  "rawSource": "https://amazingribs.com/tested-recipes/other-fun-sauce-recipes/bayou-bite-louisiana-bbq-dipping-sauce-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

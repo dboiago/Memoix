@@ -1,0 +1,145 @@
+{
+  "recipe": {
+    "name": "Black Sesame Buns",
+    "time": "2 hr 35 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "610",
+      "carbohydrateContent": "86",
+      "fatContent": "24",
+      "proteinContent": "16"
+    },
+    "directions": [
+      "Re-knead each portion for 1 to 2 minutes depending on your skill until the surface of the portion becomes smooth and shiny.",
+      "Press down and then roll out slightly to a larger wrapper, then turn the wrapper over (so the smooth surface on the outside) and roll like dumpling wrappers to get a thick bottom."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Toasted Black Sesame Seeds",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Peanuts",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Lard",
+        "unit": "C",
+        "notes": "alt: butter, melted",
+        "amount": "⅓",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": "chilled cold water in summer, warm water in winter and room temperature water in other days.",
+        "amount": "155",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Instant Yeast",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Cooking Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Flour for Dusting",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Dough",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b4cd3901d0653f794be8b67ab658401b01646a8d222faaaa9caf61a06ada8ee8",
+    "lineage_hash": "e721528160ecc5250926247e139b4aebb5cd46f8456e787995f8cac0ef90d72c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/black-sesame-buns/",
+    "fetchedAt": "2026-08-02T06:27:30.361Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/black-sesame-buns/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

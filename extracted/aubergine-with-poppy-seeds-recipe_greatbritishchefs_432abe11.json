@@ -1,0 +1,164 @@
+{
+  "recipe": {
+    "name": "Aubergine with Poppy Seeds",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the aubergine cubes on a plate and sprinkle with the chilli powder and ground turmeric and 1⁄2 teaspoon of the salt. Rub well to ensure all the pieces are covered and set aside for 20 minutes. (Adding salt serves 2 functions: it adds umami and reduces moisture, which in turn reduces the amount of oil the aubergine will absorb when frying. Avoid keeping the marinated aubergine in a bowl as the moisture draining out from the top layer will seep into the pieces below it.)",
+      "Grind the soaked poppy seeds and chopped chillies to a paste in a pestle and mortar. Set aside",
+      "Squeeze the aubergine pieces gently to remove excess water and discard any liquid that has collected on the plate",
+      "Heat the oil in a deep, heavy-based pan that has a lid over a medium heat until shimmering. Fry the aubergine cubes, sealing each piece until tinged with brown. Use a slotted spoon to remove the aubergine pieces and spread on kitchen paper",
+      "Ideally, you should have 11/2–2 tablespoons of oil left in the pan – add more if not",
+      "Reheat to medium-high, add the dried red chillies and bay leaf followed by the cumin and nigella seeds. Stir fry for 30 seconds, add the minced garlic and stir fry for a few seconds, then add the chopped tomatoes",
+      "Use the liquid from the tomatoes to deglaze the pan and release any garlic pieces that may have got stuck to the bottom. Add the poppy seed paste along with the sugar and the remaining 1⁄2 teaspoon of salt",
+      "Add the water and continue to cook uncovered over a medium-low heat for 3–4 minutes until the liquid has reduced somewhat. Return the aubergines to the pan and coat with the spice paste",
+      "Bring to the boil, then cover and reduce to a simmer for 5–7 minutes. Do not stir the aubergine at this stage except to release any spice paste from getting stuck to the bottom – you do not want to mash the aubergine",
+      "Remove the lid and increase the heat to medium-high until the oil comes to the edges of the pan. Taste for seasoning and adjust"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Aubergine",
+        "unit": "g",
+        "notes": "unpeeled, cut into 4-cm (11/2-in) cubes. If using baby aubergines, remove the stalk and cut them in half",
+        "amount": "750",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Poppy Seeds",
+        "unit": "Tbsp",
+        "notes": "soaked in water for 30 minutes, then drained",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": "or as needed",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chillies",
+        "unit": null,
+        "notes": "dried",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nigella Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "minced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "240",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0c6c8f4f95df2326fa0b1bd61bcc6077e6ff24e26a5aced008b27c1fce1c230f",
+    "lineage_hash": "70681b37e788941d47cad50a2d66f88835aeca04059885fb94971bda611a71f6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/aubergine-poppy-seeds-recipe",
+    "fetchedAt": "2026-08-02T04:41:07.192Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/aubergine-poppy-seeds-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

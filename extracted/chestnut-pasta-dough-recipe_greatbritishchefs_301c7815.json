@@ -1,0 +1,78 @@
+{
+  "recipe": {
+    "name": "Chestnut Pasta Dough",
+    "time": "20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the flours on a large clean table and form a well in the middle of the flour pile",
+      "Break the eggs into the well, add a pinch of salt and mix together with your hands. Knead for about 3 minutes, until you get a soft, pliable dough. Cover the dough with a cloth and leave to rest for half an hour",
+      "Roll out the pasta dough as thinly as possible (using a rolling pin or a pasta maker) then cut into whatever shape you’d like. I like thin ribbons, squares, or rounds for ravioli. If you’re not using a pasta maker, a pizza slicer is a handy tool for this",
+      "If you’re not going to cook the pasta straight away, dust the pasta with semolina or flour and drape it over a rack to dry. Alternatively, cook the pasta immediately in a pan of boiling, salted water until al dente (4-5 minutes)"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chestnut Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Wheat Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "00 Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f14ab6a3ad153ee7a109713715cedb3b44a0c7709fb1c55d464fe884798835a8",
+    "lineage_hash": "ada8a79743d8184ba2c4f66a1fd4203a57ec6e92799e7d4e05d112ea330f9727"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chestnut-pasta-recipe",
+    "fetchedAt": "2026-08-03T23:12:18.090Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chestnut-pasta-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

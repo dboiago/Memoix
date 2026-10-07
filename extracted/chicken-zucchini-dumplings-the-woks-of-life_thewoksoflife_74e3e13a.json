@@ -1,0 +1,124 @@
+{
+  "recipe": {
+    "name": "Chicken Zucchini Dumplings",
+    "time": "1 hr 45 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "343",
+      "carbohydrateContent": "45",
+      "fatContent": "11",
+      "proteinContent": "15"
+    },
+    "directions": [
+      "Take the shredded zucchini, put it in a clean kitchen towel, and squeeze out as much water as you can. Add it to a large mixing bowl and set aside.",
+      "In a wok over medium low heat, add 2 tablespoons vegetable oil and the minced ginger. Allow the ginger to fry in the oil until fragrant, 2 minutes. Add to the bowl of zucchini.",
+      "To the bowl, add 3 tablespoons vegetable oil, the ground chicken, white pepper, sugar, sesame oil, soy sauce, and Shaoxing wine. Mix well, stirring vigorously in one direction for about 5 minutes, until it resembles a paste.",
+      "Wrap the dumplings and place on a parchment lined baking sheet, so that the dumplings are not touching each other. You can fry them right away, or cover the dumplings with plastic wrap and freeze them on the tray. Once frozen solid, you can transfer them to freezer bags and store for up to 3 months.",
+      "To fry the dumplings, add a couple tablespoons of oil to a cast iron skillet or nonstick pan over medium high heat. Add the dumplings to the pan. Once the bottoms of the dumplings are golden brown, fill the pan with a little less than a centimeter of water, and cover immediately. Turn the heat down to medium low, and allow the dumplings to steam. Once the water has evaporated, remove the cover and let the dumplings continue to fry until the bottoms are crisp. Serve with black vinegar, chili oil, and/or our dumpling dipping sauce."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Zucchini",
+        "unit": "lb",
+        "notes": "1 pound/450g = about 2 medium or 3 small; seeds removed and shredded",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": "or other neutral oil; divided",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Chicken",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": "or dry cooking sherry",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Packages Dumpling Wrappers",
+        "unit": null,
+        "notes": "or make your own",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "401cb371af68739b2cc6d7e07582439d6dba1f0ff35f5b52e40536a141535681",
+    "lineage_hash": "063c654d5e1ed211f6ccc5a8af48d865149e8af3b162b0f8c10ae6879fadb93f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/chicken-zucchini-dumplings/",
+    "fetchedAt": "2026-08-02T17:37:37.235Z"
+  },
+  "rawSource": "https://thewoksoflife.com/chicken-zucchini-dumplings/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

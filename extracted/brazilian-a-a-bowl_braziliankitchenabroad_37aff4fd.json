@@ -1,0 +1,82 @@
+{
+  "recipe": {
+    "name": "Brazilian Açaí Bowl",
+    "time": "5 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "BR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "483",
+      "carbohydrateContent": "92",
+      "fatContent": "11",
+      "proteinContent": "8"
+    },
+    "directions": [
+      "In a cup, combine the sugar with the water, and mix until sugar is dissolved",
+      "Add the 2 frozen packets of&nbsp;açaí to a blender, then add the water/sugar mixture",
+      "Blend well, about a minute, then scoop the&nbsp;açaí into a bowl"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Packets of Frozen Açaí Berry + Guaraná Puree I Use Sambazon Original Blend",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Banana",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "French Vanilla Granola",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fdd3194ac03910646c46b9a3e4e039b40a6269661ad7270b5a665c8090f558b2",
+    "lineage_hash": "82778adc4a9a03c07e7fb3152551fd0042e5fffbbf92a1702183143f7afdc7af"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://braziliankitchenabroad.com/acai-bowl/",
+    "fetchedAt": "2026-09-25T19:40:25.462Z"
+  },
+  "rawSource": "https://braziliankitchenabroad.com/acai-bowl/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

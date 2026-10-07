@@ -1,0 +1,105 @@
+{
+  "recipe": {
+    "name": "Bingka Labu (Indonesian kabocha pumpkin and coconut milk cake)",
+    "time": "2 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "ID",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Steam kabocha pumpkin flesh until soft enough to mash. Remove from steamer and mash into puree with a fork. You can puree kabocha pumpkin with a food processor or a blender too if you wish.",
+      "Preheat oven to 180 Celsius (350 Fahrenheit). Line an 8-inch round cake pan with parchment paper and grease with coconut oil. (*)",
+      "In a mixing bowl, mix together kabocha pumpkin puree, all-purpose flour, sugar, coconut milk, eggs, coconut oil, and salt. I use an electric mixer, but you can simply use a hand whisk too.",
+      "Pour the batter into the prepared cake pan, garnish with black and white sesame seeds if you wish.",
+      "Bake in the preheated oven for 60-75 minutes, or until the top crust is firm and golden brown. Note that the inner portion of the cake will stay quite soft (custardy) while the cake is hot, so your cake tester should not come out clean.",
+      "Remove the cake from the oven, and let the cake cool completely until room temperature. As the cake cools, the inner portion should firm up on its own.",
+      "Once the cake is completely cool, you can remove it from the cake pan, and cut into serving slices."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gram (1 Lb) Kabocha Pumpkin Flesh",
+        "unit": null,
+        "notes": "cut into cubes",
+        "amount": "450",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram (1 1/3 Cup) All-purpose Flour",
+        "unit": null,
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram (3/4 Cup) Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "ml",
+        "notes": "half can",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram (1.75 Oz) Coconut Oil",
+        "unit": null,
+        "notes": "plus extra to grease the cake pan",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black and White Sesame Seeds",
+        "unit": null,
+        "notes": "for garnish (optional)",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b80ce924c2135b7c00f544cac060ccf2a7bdbb7ccc65c221a3e9d5f750f2789a",
+    "lineage_hash": "2c536e26abdfd8c19c94384f43d443e82440f05c07f56697cba5314abd12bc0e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/bingka-labu-kabocha-pumpkin-coconut-milk-cake.html",
+    "fetchedAt": "2026-08-01T23:48:26.796Z"
+  },
+  "rawSource": "https://dailycookingquest.com/bingka-labu-kabocha-pumpkin-coconut-milk-cake.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

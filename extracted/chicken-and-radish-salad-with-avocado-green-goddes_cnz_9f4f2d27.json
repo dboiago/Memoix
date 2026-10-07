@@ -1,0 +1,127 @@
+{
+  "recipe": {
+    "name": "Chicken and Radish Salad with Avocado Green Goddess Dressing",
+    "time": "45 min",
+    "course": "salad",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start preparing the dressing. Chop the shallot finely and place it in a salad bowl. Add the vinegar, lemon juice, and a pinch of salt, combine and set aside to macerate while you prepare the rest of the ingredients. (As Alice Waters explains, this helps take the edge off both the shallot and the vinegar.)",
+      "Cut the chicken meat in bite-size cubes. Trim the radishes and cut them in thickish slices if they're ball-shaped, or split them in two if they're elongated. Chop the herbs roughly. Set aside.",
+      "Rinse the anchovies briefly to remove the excess salt. Pat dry, chop finely, and add to the shallot.",
+      "Add the flesh of the avocado and mash roughly with a fork. Add the yogurt and Tabasco sauce, stir in the herbs, and grind on some pepper.",
+      "Add the chicken and radishes, and fold them in gently. Taste, adjust the seasoning, and serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Breast Meat",
+        "unit": null,
+        "notes": "leftover from a roast chicken",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Radishes",
+        "unit": "bunch",
+        "notes": "multicolored if available",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallot",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tablespoon White Wine Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tablespoon Lemon Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful Fresh Herbs",
+        "unit": null,
+        "notes": "tarragon, parsley, chervil, cilantro, dill, chives, mint, basil..., mixed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fillets Anchovies",
+        "unit": null,
+        "notes": "oil or salt-packed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ripe Avocado",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rounded Tablespoon Tablespoon Plain Yogurt",
+        "unit": null,
+        "notes": "or fromage blanc, or sour cream, or crème fraîche",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tabasco Sauce",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": "sea, freshly ground black pepper",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "15d8067a62d2218ad6302208923e87f90c95642330ee024c2ac85117b52ccf80",
+    "lineage_hash": "6b127c9868fd829bc53995cb969fe30cc1a049f96339f0cda59f61809a7ac2b3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/sauces-condiments/chicken-and-radish-salad-with-avocado-green-goddess-dressing-recipe/",
+    "fetchedAt": "2026-09-30T18:05:23.558Z"
+  },
+  "rawSource": "https://cnz.to/recipes/sauces-condiments/chicken-and-radish-salad-with-avocado-green-goddess-dressing-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

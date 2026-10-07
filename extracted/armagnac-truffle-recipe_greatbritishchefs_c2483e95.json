@@ -1,0 +1,78 @@
+{
+  "recipe": {
+    "name": "Armagnac Truffle",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "50",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Break the chocolate into small pieces and melt in a bowl over a pan of simmering water",
+      "Pour the cream into a different pan and bring gently to the boil. Whisk the cream into the chocolate until evenly mixed, then whisk in the Armagnac and the butter",
+      "Place the mixture in the fridge to firm up for about 1 hour",
+      "Roll the mixture into balls (each weighing approximately 10g) and dust in cocoa powder. Store the petit fours in the fridge until ready to serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Armagnac",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "softened",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d5a1c1a49b850eb313e3c9e03f83ab8af5bf048fff2f53893578bd30b91ca2ce",
+    "lineage_hash": "eaf0d827cb69565d0aba205e4b3b8bf73ed4af680fce8b7fe99b749673340c01"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/armagnac-truffle-recipe",
+    "fetchedAt": "2026-08-03T16:23:06.004Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/armagnac-truffle-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

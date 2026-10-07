@@ -1,0 +1,182 @@
+{
+  "recipe": {
+    "name": "Bacon Fried Noodles",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "595",
+      "carbohydrateContent": "26",
+      "fatContent": "57",
+      "proteinContent": "18"
+    },
+    "directions": [
+      "Cook in batches, spread bacon slices in a cold 12” skillet without overlapping (Footnote 1). Cook over medium heat until the bacon sizzles, and turn to medium low heat. Cook, flip occasionally, until the bacon turns crispy, 8 minutes or so. Transfer bacon onto a paper towel lined plate. Let cool before cutting into bite sized pieces using a pair of scissors. (Footnote 2)",
+      "Bring a pot of water to a boil. If using Hong Kong pan fried noodles, cook for 1 minute. For other types, cook the noodles according to the instructions, until al dente. Rinse with tap water to stop cooking. Drain and set aside.",
+      "Mix all the sauce ingredients in a small bowl.",
+      "Heat 1 tablespoon of oil in a wok (or large skillet) over medium high heat until smoking. Add the cabbage, carrot and onion, sprinkle with a generous amount of kosher salt. Cook and stir until wilted, 2 to 3 minutes. Transfer to a big plate.",
+      "Add 1 tablespoon of oil and scallion white. Cook and stir until lightly charred, 30 to 40 seconds. Add the garlic and stir to release fragrance.",
+      "Spread the noodles and pour in the remaining 1 tablespoon of oil (or reserved bacon fat, if using). Toss the noodles to coat with the oil, then pour in the sauce. Toss the noodles to coat with the sauce, until evenly coated but there’s still some sauce left. Add back the cooked vegetables, toss until the sauce has been absorbed. Then add back the cooked bacon. Toss another minute.",
+      "Add the scallion greens. Toss until wilted. Turn off the heat and add the toasted sesame oil. Toss again to mix well."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bacon Slices",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hong Kong Pan Fried Noodles",
+        "unit": "oz",
+        "notes": "or other chow mein noodles",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Broth",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": "or ground black pepper",
+        "amount": "¼",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "or vegetable oil",
+        "amount": "3",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Cabbage",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "¼",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": "julienned",
+        "amount": "1",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "White Onion",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "½",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Kosher Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "cut into 2” (5 cm) pieces, white part halved lengthwise",
+        "amount": "2",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "2",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Stir fry",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7e3f9bc3d679153cda945c0497f73190f7394f5af454189d3e73f21664aa4d8f",
+    "lineage_hash": "343be3dcc9e85634001ea9bb8a7d444b74645f0e8b4a43586eb125347066521c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/bacon-pan-fried-noodles/",
+    "fetchedAt": "2026-08-02T11:11:06.494Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/bacon-pan-fried-noodles/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

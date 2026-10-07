@@ -1,0 +1,176 @@
+{
+  "recipe": {
+    "name": "Almond Blossom",
+    "time": "3 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the almond base, mix together the slivered almonds, milk and single cream and bring to the boil, then blend on maximum speed in a Thermomix for 5 minutes",
+      "Pass the mixture through a chinois and then through a Superbag, pressing hard. Discard the dregs and set aside the almond base",
+      "For the white garlic base, first blanch the garlic 3 times. Add the garlic to cold water, bring the water to the boil, and then remove the garlic and repeat two more times. Then, transfer the garlic to an ice bath. Next, blend 530g of the almond base with the blanched garlic, vinegar, sherry and salt in a food processor",
+      "Pour the extra virgin olive oil and bitter almond essence into the food processor in a steady stream while it's running to emulsify it. Strain through a chinois without pressing on it",
+      "Blend together 400g of the white garlic base with the ProCrema, dextrose and glycerine. Set aside to mature for at least 3 hours",
+      "Blend the mixture again, and then let the mixture rest in the fridge so that any excess air rises to the surface",
+      "Fill 6-7cm moulds with the white garlic ice cream mixture. Place in the blast chiller for 30 minutes, or until semi-frozen",
+      "Scoop out a hole at the centre of the flower, being careful not to pierce through to the other side",
+      "Freeze for another 30 minutes in the blast chiller, then very carefully remove the flower from the mould. Transfer to the freezer in a container",
+      "Once ready to serve, chop the prawn meat and season with some extra virgin olive oil, salt and pepepr",
+      "Remove the white garlic flower from the freezer. Leave on a plate to temper for 10 minutes",
+      "In the centre of another plate, place 20g of prawn tartare in a small, tall ball (the size of the flower hollow). Leave it to come to temperature",
+      "Place the white garlic flower on the plate covering the tartare. Leave it to temper for at least another 10 minutes",
+      "Finish each plate with 20g of white garlic base, and a few drops of extra virgin olive oil"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Flaked Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Single Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": "g",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sherry Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "18",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Sherry",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almond Essence",
+        "unit": "g",
+        "notes": "ideally bitter almond essence",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Procrema",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dextrose",
+        "unit": "g",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glycerine",
+        "unit": "g",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Prawns",
+        "unit": "g",
+        "notes": "freshly caught, peeled and heads removed",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7b09ba7f11154690d855b07faf0ec62d5cc09d9c6819cdbfc56559443e5f42cb",
+    "lineage_hash": "d93d73f592006dbe888e61344c7081a854f8c2515cea4edad6cc765eaed3943d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/almond-blossom-recipe",
+    "fetchedAt": "2026-08-02T16:49:45.465Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/almond-blossom-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

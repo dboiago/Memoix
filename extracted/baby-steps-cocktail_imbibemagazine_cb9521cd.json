@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Baby Steps Cocktail",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [
+      "Lemon Peel"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all ingredients in a mixing glass and stir with ice to chill. Strain into a chilled glass and garnish with a lemon peel."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "f7c478c2cd4ff65434debfd29e0a817c9ab80eac03bbd2024a255af79c730c98",
+    "lineage_hash": "77d96857e89e291f77fccfbe2f391efc29beaa0ed85dadf89d15bee20b015e6c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/baby-steps-cocktail-recipe/",
+    "fetchedAt": "2026-08-04T01:44:58.348Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/baby-steps-cocktail-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

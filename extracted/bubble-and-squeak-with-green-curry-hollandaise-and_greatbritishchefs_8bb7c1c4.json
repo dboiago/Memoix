@@ -1,0 +1,221 @@
+{
+  "recipe": {
+    "name": "Bubble and Squeak with Green Curry Hollandaise and Coconut Chips",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start by preparing the mashed potato. Bring a large pot of salted water to a boil and add in the potato. Cook for around 15–20 minutes, or until the potatoes are tender",
+      "Once fork tender, pass the potatoes through a ricer into a large bowl. Mix with the butter and milk until smooth, then season to taste with salt and pepper. Set aside to cool while you prepare the bubble and squeak base",
+      "Heat a non-stick pan over a medium-high heat. Add in the duck fat and the streaky bacon. Once the bacon is crispy, turn the heat down slightly and add in the red onion and garlic",
+      "Cook until the onion has softened, about 10–15 minutes, then mix in the cooked cabbage and Brussels sprouts until warmed through&nbsp;",
+      "Mix in the mashed potato, then push it down so that the base of the pan is evenly covered with the mash mix",
+      "Cook over a medium heat until the base of the bubble and squeak is lightly browned and crisp",
+      "Flip and cook again on the other side. Once well browned on both sides, remove from the pan and set aside",
+      "Whisk together the egg yolks, mustard, Thai green curry paste and lemon zest. Pour in the coconut oil in a continuous stream as you are whisking, slowly at first, then speeding up as the Hollandaise thickens",
+      "Add in lemon juice, salt and pepper to taste",
+      "In a separate pan, heat some vegetable oil and fry the eggs",
+      "To serve, plate a slice of the bubble and squeak, top with a fried egg, green curry Hollandaise, coconut chips, chives, fresh coriander and more lemon zest"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Nanna Tate Potatoes",
+        "unit": "g",
+        "notes": "peeled and cut into 1 inch cubes",
+        "amount": "700",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Duck Fat",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Streaky Bacon",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooked Cabbage",
+        "unit": "g",
+        "notes": "shredded",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooked Brussels Sprouts",
+        "unit": "g",
+        "notes": "shredded",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thai Green Curry Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Zest",
+        "unit": "tsp",
+        "notes": "plus lemon juice to taste",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Oil",
+        "unit": "ml",
+        "notes": "melted",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Coconut Chips",
+        "unit": null,
+        "notes": "toasted",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Fresh Chives",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Fresh Coriander",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Zest of 1 Lemon",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "for cooking",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "183a2ea81747305ddc33dc3f479cc4470664a1212a02772b90533debb9a2625f",
+    "lineage_hash": "8854b7a499761157d855858006db8578d437e2d6aae2e3ecb1169a5e5e5a30d4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/bubble-squeak-green-curry-hollandaise-recipe",
+    "fetchedAt": "2026-08-02T02:00:51.176Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/bubble-squeak-green-curry-hollandaise-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

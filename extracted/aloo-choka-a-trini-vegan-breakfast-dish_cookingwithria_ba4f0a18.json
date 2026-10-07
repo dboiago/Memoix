@@ -1,0 +1,91 @@
+{
+  "recipe": {
+    "name": "Aloo Choka",
+    "time": "1 hr",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "183",
+      "carbohydrateContent": "28",
+      "fatContent": "7",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "Begin by peeling the potatoes and cutting each one into 8 equal pieces. Place the potato pieces in a colander and rinse them thoroughly under running water. Allow them to drain.",
+      "Take a medium-sized pot and fill it with water. Stir in 1 tablespoon of salt. Add the drained potato pieces to the pot and bring the water to a boil over high heat. Cook the potatoes until they become tender, approximately 20 minutes. Once done, drain the cooked potatoes and transfer them to a mixing bowl.",
+      "Using a potato ricer or masher, mash the potatoes until the mixture is smooth, ensuring there are no remaining chunks. Season the mashed potatoes with onion, minced garlic, hot pepper, culantro, and salt to taste.",
+      "In a small frying pan, heat some oil. Add one sliced clove of garlic (along with onion and hot pepper if desired) and cook until the edges turn brown. Pour this garlic-infused oil into the mashed and seasoned potatoes, and thoroughly mix everything together to combine the flavors."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Potatoes Peeled",
+        "unit": "lb",
+        "notes": "cubed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion Thinly Sliced",
+        "unit": null,
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Minced",
+        "unit": "clove",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leaves Culantro Finely Chopped",
+        "unit": null,
+        "notes": "alt: minced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Pepper to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbs Extra Virgin Olive Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "82f361ef64c343db8923433164527d3eb0ef21dd672d12cf826c023f570c3aec",
+    "lineage_hash": "12c34e5747a7829625ded524f0084043e351aa47e8a5f910962df23b4118b374"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cookingwithria.com/2024/06/aloo-choka-a-trini-vegan-breakfast-dish/",
+    "fetchedAt": "2026-09-25T19:50:05.970Z"
+  },
+  "rawSource": "https://cookingwithria.com/2024/06/aloo-choka-a-trini-vegan-breakfast-dish/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

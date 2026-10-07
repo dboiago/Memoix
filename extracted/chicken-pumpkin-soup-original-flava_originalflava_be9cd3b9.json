@@ -1,0 +1,191 @@
+{
+  "recipe": {
+    "name": "Chicken Pumpkin soup",
+    "time": "1 hr 30 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "JM",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add water to a large pot and bring to a boil.",
+      "Cut skinless chicken into 2 pieces, and dash the chicken into the pot along with the pumpkin. Then add salt, pepper, pimento and mix together and boil for 20 minutes on medium heat.",
+      "Add onions, spring onions, sweet potatoes or white potatoes, yam, carrots, cho cho, and bring to boil for 15 minutes.",
+      "Then add Dumplings and spinners along with 1 whole scotch bonnet pepper and cook for further 15 minutes.",
+      "Then add your Pumpkin and cock soup mix and stir well and simmer for 5-10 minutes"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Lb Skinless Chicken",
+        "unit": "lb",
+        "notes": "legs & thighs",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "medium",
+        "notes": "Chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cho Cho",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "1 Packet Packet Pumpkin",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "1 Packet Packet Cock Soup Mix",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tsp Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "G Sweet Potato",
+        "unit": "g",
+        "notes": "alt: White potato",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "G Pumpkin",
+        "unit": "g",
+        "notes": "Diced",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "G Yam",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tsp Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pimento Seeds",
+        "unit": null,
+        "notes": null,
+        "amount": "6-8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tsp Garlic & Ginger",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cups Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "6-8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "G Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cup Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tsp Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7789b0a7313d0b346653ac9045fc0cb0d7d60fffcc0e4b4fa5c8bdf437622c02",
+    "lineage_hash": "5054b1afdca147bfdbbee8a57f0a4cbaaf49c363da5f81eb6887ebaea3307f78"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://originalflava.com/meals/chicken-pumpkin-soup/",
+    "fetchedAt": "2026-09-30T17:31:28.205Z"
+  },
+  "rawSource": "https://originalflava.com/meals/chicken-pumpkin-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

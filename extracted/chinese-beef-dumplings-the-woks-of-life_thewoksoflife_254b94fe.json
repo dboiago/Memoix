@@ -1,0 +1,183 @@
+{
+  "recipe": {
+    "name": "Chinese Beef Dumplings",
+    "time": "3 hr 45 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "15",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "368",
+      "carbohydrateContent": "43",
+      "fatContent": "14",
+      "proteinContent": "17"
+    },
+    "directions": [
+      "Put the flour in a large mixing bowl or in the bowl of a stand mixer. Gradually add the water to the flour and knead into a smooth dough (either by hand or with the dough hook attachment on low speed). This process should take about 5 minutes. If using a stand mixer, you may need to stop the mixer and bring the dough together with your hands. Knead by hand into a ball, and cover the dough in the bowl with an overturned plate. Allow to rest for 1 hour.",
+      "Add the Sichuan peppercorns to a bowl along with the hot water, and allow to stand for 15 minutes. Strain the Sichuan peppercorn water into a measuring cup or bowl, and cool completely.",
+      "Now, to the filling. Chop the meat according to our article on how to hand-chop your own ground meat, until the beef resembles sausage meat in texture. This may take up to 30 minutes, so be patient! If using ground beef, skip this step.",
+      "Add the meat to a large mixing bowl or the bowl of a stand mixer, along with the oyster sauce, light soy sauce, dark soy sauce, Shaoxing wine, sugar, white pepper, five spice powder, and minced ginger. Stir vigorously with a pair of chopsticks for 5 minutes, or on low speed for 2 minutes.",
+      "Gradually add the cooled Sichuan peppercorn water to the filling in several batches, making sure the meat absorbs all the liquid before adding the next batch. Mix well, until the meat resembles a paste, about 3-5 minutes. Finally, add the neutral oil, sesame oil, and salt. Mix, and then stir in the scallions.",
+      "Divide the rested dough into quarters, and work with one quarter at a time, leaving the remaining dough pieces covered so they don’t dry out. Cut the dough into small pieces (about the size of half a marshmallow); more precisely, the piece of dough for each wrapper should weigh about 15g. Roll the dough out into a 3.5 inch (9cm) circle. Add about 1 tablespoon of filling to the center, and squeeze the dumpling closed or pleat according to our instructions on how to fold dumplings. Just make sure that the wrapper isn’t too thin in any spots, or it might break during cooking.",
+      "At this point, it’s a good idea to taste a few dumplings. Boil them for 5 minutes, and taste for seasoning. Adjust seasoning according to your own tastes (add more wine, sesame oil, etc. to taste). Once you’re happy with the filling, assemble the remaining dumplings until you’ve used all the filling/dough. Place the dumplings on a parchment-lined sheet pan, spacing them apart so they aren’t touching each other.",
+      "Bring a large pot of water to a boil. Boil the dumplings for 5 minutes, and remove them with a strainer to a plate. Serve with our dumpling dipping sauce or a combination of black vinegar and minced raw garlic!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "6⅓",
+        "section": "dumpling dough",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "dumpling dough",
+        "isOptional": false
+      },
+      {
+        "name": "Sichuan Peppercorns",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Hot Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Well-marbled Boneless Beef Chuck",
+        "unit": "lb",
+        "notes": "or 80% lean ground beef",
+        "amount": "2",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Five Spice Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "finely minced",
+        "amount": "1",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Neutral Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Scallion",
+        "unit": "C",
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": "filling",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a519b08e5e72769c92692e57c97a912635c359510bcd33e235cf9f874e6a5ad4",
+    "lineage_hash": "cecdfc35d745f8b8dd3c528fd1ff8f9f0d6c037c5735f60a667eec0b705e2cb4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/chinese-beef-dumplings/",
+    "fetchedAt": "2026-08-02T12:18:47.642Z"
+  },
+  "rawSource": "https://thewoksoflife.com/chinese-beef-dumplings/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

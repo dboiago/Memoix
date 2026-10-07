@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Baby Zombie Cocktail",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Mug",
+    "garnish": [
+      "Crushed Ice"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all the ingredients in a shaker filled with ice. Shake to chill and strain into the mug. Fill with crushed ice. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "3f616c24068fecb00e9678c96d1c92b34c7ba313eca122226797998fcedd1df7",
+    "lineage_hash": "d741c0b739431eabf34c82b4903880c5fb4e36c60df34a14d47a4055e2a9ea9a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/baby-zombie-cocktail/",
+    "fetchedAt": "2026-08-04T02:06:04.462Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/baby-zombie-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,124 @@
+{
+  "recipe": {
+    "name": "Cantonese Fried Dough (Ham Chim Peng)",
+    "time": "1 hr",
+    "course": "breads",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "266",
+      "carbohydrateContent": "43",
+      "fatContent": "9",
+      "proteinContent": "5"
+    },
+    "directions": [
+      "First mix together the flour, baking powder, and baking soda in a mixing bowl. Next, add the dark brown sugar, regular sugar, mashed fermented bean curd, and five-spice powder. Slowly stir in the water to form a wet dough. Make sure everything is well-combined. Cover and let the dough rest for 15 minutes.",
+      "While the dough is resting, take a medium pot and fill it with about 1 inch of oil for frying. Set aside. Once the dough is rested, dust a clean surface with a good amount of flour, and scrape the dough onto the floured surface. The dough will be very wet, so flour both hands before handling the dough. Divide it into 12 equal pieces.",
+      "Take each dough ball, and dip it into sesame seeds to coat--more or less depending on your preference. You can also coat both sides if you like. Flatten the dough to a 5-inch circle with a small hole in the middle and set aside on a well-floured surface. They can look quite rough at this point; don't feel the need to make them look perfect! Repeat until all 12 dough balls have been shaped.",
+      "Now, heat the oil to 325 degrees. Keep the heat between 325 to 350 degrees for the duration of the frying process. Fry the dough in batches, frying each side until golden brown, flipping one to two times to brown both sides. It should take 1 to 2 minutes each.",
+      "Drain on plate lined with paper towels or a wire rack and serve alone or with porridge. You can also store extras in the fridge and rejuvenate them with a quick turn through the oven or toaster oven."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": "plus extra for dusting",
+        "amount": "3¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Brown Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Regular Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cubes Fermented Red Bean Curd",
+        "unit": null,
+        "notes": "mashed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Five-spice Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Neutral Oil (for Frying)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "90922b4cab3b544e1cb4add49cb533763e8e9f8eae0c65931b110679ed03f9ab",
+    "lineage_hash": "0b9baaacf419abd5f707c25a61a5bfb5dc123af4429ce9f3c446f3aabe8785c4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/ham-chim-peng-fried-dough/",
+    "fetchedAt": "2026-08-02T12:10:03.444Z"
+  },
+  "rawSource": "https://thewoksoflife.com/ham-chim-peng-fried-dough/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

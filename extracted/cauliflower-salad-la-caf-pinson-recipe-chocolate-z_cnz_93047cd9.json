@@ -1,0 +1,94 @@
+{
+  "recipe": {
+    "name": "Cauliflower Salad à la Café Pinson",
+    "time": "25 min",
+    "course": "salad",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Steam the cauliflower florets for 10 minutes, until just tender: you don't want them crunchy, but not mushy either. Let cool to room temperature.",
+      "Grind the flax seeds coarsely: you don't want them reduced to a powder, but you want to break the outer lining so they're digestible.",
+      "Prepare the vegan sesame mayonnaise: in a salad bowl, whisk together the tahini, salt, lemon juice, cumin, and 1 tablespoon water. Pour in the olive oil in a slow stream, whisking all the while, to get a creamy, emulsified \"mayonnaise\".",
+      "Fold the cauliflower into the dressing. Serve immediately, with a sprinkle of flax seeds, or refrigerate until ready to serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cauliflower",
+        "unit": "g",
+        "notes": "alt: romanesco florets, about 8 cups, from one large or two small heads, separated into bite-size florets",
+        "amount": "680",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flax Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tahini",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin",
+        "unit": "tsp",
+        "notes": "ground",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f711d00eae8815d8598ffaad185cbc7a5d1372e2f74e69f0d7cd6506ed89a85a",
+    "lineage_hash": "53fa67081c06c565c2e5720326060ee9ee7849549e8b0b1a097f9dc44f1e68dc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/vegetables-grains/cauliflower-salad-a-la-cafe-pinson-recipe/",
+    "fetchedAt": "2026-09-30T18:53:28.881Z"
+  },
+  "rawSource": "https://cnz.to/recipes/vegetables-grains/cauliflower-salad-a-la-cafe-pinson-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

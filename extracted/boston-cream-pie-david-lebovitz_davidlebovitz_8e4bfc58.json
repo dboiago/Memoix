@@ -1,0 +1,190 @@
+{
+  "recipe": {
+    "name": "Boston Cream Pie",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the milk to a medium saucepan and use a paring knife to scrape the seeds from the half vanilla bean into the milk. Add the vanilla pod to the milk and warm over medium-high heat with a pinch of salt. Turn off heat.",
+      "In a separate medium bowl, whisk the egg yolks and sugar until smooth, then whisk in the flour. Gradually pour about 1 cup (250ml) of the warmed milk into the yolks while whisking constantly, then scrape the warmed egg mixture back into the saucepan.",
+      "Turn the heat back on to medium-high heat and cook the custard, stirring the mixture with a whisk constantly (don't vigorously whip it, which will make it harder to see what's happening, and tire you out - just stir it) for 1 minute, then reduce the heat to the next-to-lowest temperature and continue to cook, stirring constantly with a whisk for 8 minutes. The mixture will continue to bubble gently as you cook it, but will not break due to the flour. Place a mesh strainer over a medium bowl and keep it nearby.",
+      "When the custard is thick, scrape the mixture into the strainer and press it through with a flexible spatula. Stir in the cold butter and vanilla extract (if using extract instead of the vanilla bean), until smooth. (Even if using vanilla bean, I often add around 1/4 - 1/2 teaspoon of vanilla extract to round out the vanilla flavor, so you can use both bean and extract.)",
+      "Butter a piece of parchment paper and place it butter-side-down on top of the cream. Chill thoroughly, for several hours or overnight. (The vanilla bean can be rinsed thoroughly and dried, and used for something else.)",
+      "Preheat the oven to 325ºF (160ºC.) Adjust the oven rack to the center of the oven. Lightly butter the bottom and sides of two 9-inch (23cm) cake pans and line the bottoms with rounds of parchment paper.",
+      "Whisk the flour, baking powder, and salt together in a medium bowl. In a small saucepan, warm the milk and the butter until the butter is melted. Remove from heat, add the 1 1/2 teaspoons of vanilla extract, and set aside. Cover to keep warm.",
+      "In a stand mixer fitted with the whip attachment (or with a hand mixer, or by hand in a bowl with a whisk...and a lot of moxie) whip the eggs and sugar at high speed until light and fluffy, 3 to 5 minutes. With the mixer on low speed, gradually dribble in the warm milk and butter until combined, then the flour mixture.",
+      "Remove the bowl from the stand mixer and give it a few stirs by hand with a flexible spatula to make sure everything is incorporated, then quickly divide the batter into the two prepared cake pans. Smooth the tops and bake until the top of the cakes are golden brown and the center springs back when you touch it and the cake feels done, about 20 to 22 minutes. Don't overbake. Let the cakes cool completely.",
+      "Run a knife around the cakes to remove them from the cake pans and peel off the parchment paper. Put one round of cake on a serving plate. Remove the custard filling from the refrigerator, which likely has stiffened up, so give it a few good stirs with a whisk or spatula to loosen it up and remove any lumps. Spread it over the top of the cake on the plate. Top with the second round of cake. Chill the two-layer cake while you prepare the glaze.",
+      "To make the glaze, gently warm the cream, corn syrup and chocolate is a small saucepan, stirring until smooth. Remove from heat and let stand about 5 minutes, stirring occasionally, until the glaze is thick yet spreadable. Pour it over the center of the cake and use a spatula or butter knife to coax it toward the edges, letting it drip down the side.",
+      "Refrigerate the cake until firm enough to slice, which will take at least 2-3 hours. If you try to slice it before the filling is well-chilled it'll be messy to slice so patience pays off."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Milk",
+        "unit": "C",
+        "notes": "500ml",
+        "amount": "2",
+        "section": "Custard filling",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean",
+        "unit": null,
+        "notes": "(split vertically) or 2 teaspoons vanilla extract",
+        "amount": "½",
+        "section": "Custard filling",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "Custard filling",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": "large",
+        "notes": null,
+        "amount": "6",
+        "section": "Custard filling",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": "100g",
+        "amount": "½",
+        "section": "Custard filling",
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "C",
+        "notes": "35g",
+        "amount": "¼",
+        "section": "Custard filling",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": "55g, cold and cubed",
+        "amount": "4",
+        "section": "Custard filling",
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "C",
+        "notes": "210g",
+        "amount": "1½",
+        "section": "Sponge Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": "preferably aluminum-free",
+        "amount": "1½",
+        "section": "Sponge Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": "Sponge Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "C",
+        "notes": "180ml",
+        "amount": "¾",
+        "section": "Sponge Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": "85g, cubed",
+        "amount": "6",
+        "section": "Sponge Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "Sponge Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "at room temperature",
+        "amount": "3",
+        "section": "Sponge Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": "300g",
+        "amount": "1½",
+        "section": "Sponge Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "C",
+        "notes": "125ml",
+        "amount": "½",
+        "section": "Chocolate glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Light Corn Syrup",
+        "unit": "Tbsp",
+        "notes": "30ml, see headnote",
+        "amount": "2",
+        "section": "Chocolate glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Bittersweet",
+        "unit": "oz",
+        "notes": "alt: semisweet chocolate, 115g, chopped",
+        "amount": "4",
+        "section": "Chocolate glaze",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f4b11d8ecf68e063cfaad7251a68409241f73bbb272e4997824d1f9087232768",
+    "lineage_hash": "aacd5287291ef13a4898de78330d68f41982915a33e0fdd9db4e2f1684676ee1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/boston-cream-pie-recipe-cake/",
+    "fetchedAt": "2026-08-02T17:28:50.298Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/boston-cream-pie-recipe-cake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

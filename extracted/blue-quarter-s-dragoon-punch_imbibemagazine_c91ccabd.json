@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Blue Quarter's Dragoon Punch",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Collins",
+    "garnish": [
+      "Lemon Twist"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To serve hot, combine all the ingredients except the tea in a mixing glass and stir without ice. Add freshly brewed hot tea and stir again to incorporate. Pour the contents of the mixing glass into tea cup, express the lemon twist over the cup and discard. To serve cold, combine the ingredients (except the tea) in a mixing glass and stir without ice. Add freshly brewed hot tea and stir again to incorporate. Let the mixture chill in the refrigerator. When it&#8217;s cold enough to serve, pour it into a Collins glass over fresh ice, express a lemon twist over the glass and discard."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "f2a724c62829696b7e90d4c2d74f898fff4c23d0751f7af8d5a7bb6ee2eaec5b",
+    "lineage_hash": "c40ac47cda7c35ce522ef695b5bc2f286d8fac9de59f0c0f6fe1f9d1efcd2305"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/dragoon-punch-blue-quarter/",
+    "fetchedAt": "2026-08-04T00:22:25.483Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/dragoon-punch-blue-quarter/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

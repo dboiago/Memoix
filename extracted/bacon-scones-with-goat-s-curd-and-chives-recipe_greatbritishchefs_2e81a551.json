@@ -1,0 +1,152 @@
+{
+  "recipe": {
+    "name": "Bacon Scones with Goat's Curd and Chives",
+    "time": "30 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Blitz the chives and the oil together in a blender until smooth, then leave to drain through a muslin cloth set over a bowl whilst you prepare the rest of the recipe",
+      "Gently cook the bacon in the butter until soft and cooked through, then set aside for later",
+      "To make the scones, rub the butter into the flour, mustard and paprika until the mixture resembles fine breadcrumbs",
+      "Add the grated cheddar, salt and cooked bacon butter mix and lightly combine with your fingertips, then add the milk and fold together until well combined",
+      "On a lightly floured work surface, turn the mixture out and knead lightly. Roll into a rectangle 3cm thick, then cut into as many rounds as possible with a 5cm ring cutter. Place onto a baking tray lined with baking paper. Brush the tops of the scones with milk, then bake for 12-14 minutes until the scones have risen well and are golden brown in colour. Allow the scones to cool on a wire rack",
+      "To serve, cut each scone in half, spoon a generous serving of goat’s curd on top and make a shallow well in the centre. Drizzle some chive oil into the well, then finish with finely cut chives and a small pinch of cayenne pepper"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Streaky Bacon",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Self-raising Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "450",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "110",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cheddar",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "g",
+        "notes": "plus extra for brushing",
+        "amount": "230",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Goat's Curd",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": "bunch",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cayenne Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "280f6de5fb2b489a96675777d74ae8685b81b40f3d2556904c48b49cd144f922",
+    "lineage_hash": "27a59ae5ec87d806537c3173fce7a1db5b8b6d5ae72da0a3b347244d14619ef9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/bacon-goats-curd-chive-scones-recipe",
+    "fetchedAt": "2026-08-03T04:47:28.080Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/bacon-goats-curd-chive-scones-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,134 @@
+{
+  "recipe": {
+    "name": "Bakwan Jagung (Corn Fritter)",
+    "time": "1 hr",
+    "course": "sides",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "ID",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place a small ramekin inside a large mixing bowl. Stand each ear of corn on the small ramekin, and use a sharp knife to scrape off the kernels. The kernels will fall into the mixing bowl without making a mess. Throw away the cobs.",
+      "Add minced shallot, minced garlic, thinly sliced scallion, thinly sliced celery, and eggs into the mixing bowl. Add also all-purpose flour, rice flour, salt, ground white pepper, and ice-cold water. Mix gently with a spatula into a thick batter.",
+      "Heat two inches of oil in a pot to 170 Celcius (340 Fahrenheit) for deep frying.",
+      "Drop ladleful of batter into the hot oil and fry until golden brown, about 2-3 minutes each side. Drain the fritters on a wire rack over a baking sheet. Repeat until all batter is used up. Serve hot with tomato ketchup and chili sauce."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ears Fresh Corn",
+        "unit": null,
+        "notes": "~ 2 1/4 cup of corn kernels",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Shallots (~ 10 Indonesian Sized, or ~ 3 Us Sized)",
+        "unit": null,
+        "notes": "minced",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Celery",
+        "unit": "stalks",
+        "notes": "Note 1, thinly sliced, about 1/4 cup",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallion",
+        "unit": "stalks",
+        "notes": "thinly sliced, about 1/4 cup",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram All-purpose Flour",
+        "unit": null,
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Rice Flour",
+        "unit": null,
+        "notes": "alt: tapioca starch",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ice-cold Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Enough Oil for Deep Frying (note 2)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "932c6701b25a79fa77631aa2d40133a2a111f24f0ae325a779afb47ca5e9f883",
+    "lineage_hash": "5a4955b89301fc3f7da7dac2752a7fa0aa5fc99e8caf0375e76e11553802dc36"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/bakwan-jagung.html",
+    "fetchedAt": "2026-08-01T21:19:29.456Z"
+  },
+  "rawSource": "https://dailycookingquest.com/bakwan-jagung.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

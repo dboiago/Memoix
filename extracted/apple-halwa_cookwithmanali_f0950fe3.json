@@ -1,0 +1,98 @@
+{
+  "recipe": {
+    "name": "Apple Halwa",
+    "time": "15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Wash the apples and peel them.",
+      "Cut into slices and run them into a food processor till the apples are well grind. Few pieces are ok.",
+      "In a pan heat ghee on medium heat. Once hot, add the apples.",
+      "Cook the apples till all the water is evaporated, this took me around 7-8 minutes.",
+      "Now add sugar and mix. Also add cinnamon powder, nutmeg and cardamom powder.",
+      "As the sugar melts, the halwa will again become liquidy.",
+      "Cook for 5 minutes stirring continuously till all water evaporates.",
+      "Garnish with sliced almonds and serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Apples",
+        "unit": null,
+        "notes": "large [around 1.5 cups grated apples]",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": "clarified butter",
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C + 2 Tbsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Powder",
+        "unit": "+ ⅛ tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almonds",
+        "unit": null,
+        "notes": "sliced, to garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3fd9350d58c9bd522e2965dff86af682049f81976dc8141025b1cf5d8ad18a4e",
+    "lineage_hash": "b20403a9bbac2cea490c9a9bb0c069127cb9fd436e5b8ba98cab914042e3dbaf"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/apple-halwa/",
+    "fetchedAt": "2026-08-01T18:40:33.997Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/apple-halwa/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,127 @@
+{
+  "recipe": {
+    "name": "Blueberry Coffee Cake",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat your oven to 180°C (360°F). Grease a 22-cm (9-inch) cake pan, preferably nonstick with a removable bottom.",
+      "Sift together the flour, baking powder, baking soda, and salt. Set aside.",
+      "In a food processor, mix together the butter and white sugar until fluffy. Add the eggs, one at a time, mixing well between each addition. Add the yogurt and vanilla, and mix again. Add the flour mixture, and mix again until just combined.",
+      "Pour half of the cake batter in the cake pan. Pour half the blueberries over the surface. Cover with the rest of the batter, top with the remaining blueberries, and sprinkle evenly with the brown sugar.",
+      "Bake for 1 hour, until the top is golden brown and a knife inserted in the center comes out clean. Transfer to a rack, let stand in the pan for 10 minutes, then unclasp the sides of the pan and let cool completely before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Grams Flour",
+        "unit": null,
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Good Pinch Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Butter",
+        "unit": null,
+        "notes": "diced, at room temperature",
+        "amount": "115",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams White Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Yogurt",
+        "unit": "ml",
+        "notes": "or fromage blanc or sour cream",
+        "amount": "240",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Blueberries",
+        "unit": null,
+        "notes": "no need to thaw, fresh or frozen",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Brown Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bf7ac3d69967b17f0a45aef61009f9bb671ab9b132c0f20b6b4c6f97a960c08a",
+    "lineage_hash": "8ead8e18e12a561452a2c1dbe116b5a2dfc28f74593498136c787a42da4888ec"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/cakes-tarts/blueberry-coffee-cake-recipe/",
+    "fetchedAt": "2026-09-30T18:04:00.799Z"
+  },
+  "rawSource": "https://cnz.to/recipes/cakes-tarts/blueberry-coffee-cake-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

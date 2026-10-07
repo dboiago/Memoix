@@ -1,0 +1,37 @@
+{
+  "recipe": {
+    "name": "A1A Tequila Cocktail",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Nick & Nora",
+    "garnish": [
+      "Salted Rim"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Prepare a Nick & Nora glass by salting half the rim. In a shaker, combine all the ingredients with ice and shake to chill. Double strain into the prepared glass and garnish.",
+      "Jalapeño-Infused Tequila: Scrape out the seeds and pith from 4 fresh jalapeño peppers and add to one bottle of blanco tequila. Take one of the hollowed-out jalapeños and cut in half, then add half to the infusion. Discard the other 3½ hollowed-out jalapeños. Checking every few minutes, let the infusion stand for at least 20 minutes and taste before straining."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "d277e704197efd95f45a830ec5f9f22c36a62e67d914dc6b15b6b4d40be7446c",
+    "lineage_hash": "973dcdf6ba86d3216fb29c861c2ebf11241d4794223fc67cc80faaf24efce014"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/a1a-tequila-cocktail/",
+    "fetchedAt": "2026-08-03T19:00:25.275Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/a1a-tequila-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,77 @@
+{
+  "recipe": {
+    "name": "Charm City S'mores",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Build your campfire or set up your grill for direct grilling and heat to high.",
+      "Skewer the marshmallows on cinnamon sticks, wooden sticks, or long metal skewers (2 marshmallows per stick). Roast them over the fire until sizzling, soft, and darkly browned all over, turning to ensure even cooking. This will take 3 to 5 minutes.",
+      "Place a piece of chocolate on the bottom (the flat side) of a cookie. Place a hot marshmallow on top. Add a candied orange slice and place a second cookie (flat side down) on top to make a sandwich. Wait for a few seconds for the hot marshmallow to melt the chocolate, then eat the s’more like a sandwich. Nostalgia never tasted so good!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Marshmallows",
+        "unit": null,
+        "notes": "preferably artisanal",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Long Cinnamon Sticks (optional)",
+        "unit": null,
+        "notes": "wooden sticks, or skewers",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thin Two-inch Squares of Superior Dark Chocolate",
+        "unit": null,
+        "notes": "such as Scharffenberger or Valrhona",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Candied Orange Slices",
+        "unit": null,
+        "notes": "available on amazon.com",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Top Cookies",
+        "unit": null,
+        "notes": "preferably from the Baltimore bakery Berger’s",
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5883e9d46c809aef7d82a534ffc865df9d35bf690ab334e36048a775b762a855",
+    "lineage_hash": "f9ee5fbe52a00b7a5a2e97d1188d8b32fbdcba79fc9b6221d622516119208431"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/charm-city-smores/",
+    "fetchedAt": "2026-08-03T08:24:07.998Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/charm-city-smores/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

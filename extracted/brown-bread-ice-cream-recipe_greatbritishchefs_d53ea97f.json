@@ -1,0 +1,132 @@
+{
+  "recipe": {
+    "name": "Brown Bread Ice Cream",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the blackcurrant curd, gently heat the blackcurrants and lemon juice in a saucepan, stirring every now and then, for 5 minutes, or until the fruit breaks down",
+      "Rub through a sieve/fine-mesh strainer into a heatproof bowl to make a smooth purée. Discard the sieve contents. Add the butter and sugar to the purée and place the bowl over a pan of barely simmering water (without allowing it to touch the water). Whisk until the sugar and butter have melted, then leave to cool for 5 minutes",
+      "Return the bowl to the top of the pan and whisk in the eggs for up to 15 minutes until the curd is thick and creamy. Pour into a large jar, cool completely then store in a cool, dark place. Use within 4 weeks. It will keep for up to a week in the fridge after opening",
+      "To make the ice cream, gently heat the milk and vanilla in a heavy-based saucepan until it begins to bubble at the edges",
+      "Whisk together the egg yolks and 65g of the sugar in a large bowl. Whisk the milk into the egg mixture, then pour it back into the saucepan and stir over a gentle heat until thick enough to coat the back of a spoon. Pour into a cold jug and place a sheet of cling film over the top to prevent a skin from forming. Leave to cool, then chill",
+      "Preheat the oven to 180°C/gas mark 4 and line a roasting pan with baking parchment",
+      "Melt the butter in a wide pan and stir in the bread. Add the remaining sugar, then tip the bread into the prepared roasting pan and bake for 10 minutes, or until caramelised and fairly dark. Leave to cool completely",
+      "Churn the custard in an ice cream machine until almost firm, then add the breadcrumbs and churn until fully blended. Or freeze the custard in a plastic box for about 4 hours, vigorously whisking every 20–30 minutes and stirring in the breadcrumbs halfway through",
+      "Spoon one third of the ice cream into a plastic box and top with a layer of blackcurrant curd",
+      "Repeat until you have 3 layers of ice cream and 2 layers of curd. Use a butter knife to ripple the ice cream with the blackcurrant curd. Freeze for 3–4 hours, or until solid. Leave the ice cream to stand for 10 minutes to soften before serving"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Blackcurrants",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": "or a mixture, or single cream",
+        "amount": "750",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pods",
+        "unit": null,
+        "notes": "split lengthways",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Muscovado Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "215",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Bread",
+        "unit": "g",
+        "notes": "stale, broken roughly into crumbs",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "293f4c3e0f6a602f097826bc9b6e22a40bdb617e49053e59f1ec20f896ec765b",
+    "lineage_hash": "1c99601189f70c7d26f67ca835580bc662a7ebd861bf7b8dc2f35a264958c839"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/brown-bread-ice-cream-recipe",
+    "fetchedAt": "2026-08-03T11:09:21.529Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/brown-bread-ice-cream-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

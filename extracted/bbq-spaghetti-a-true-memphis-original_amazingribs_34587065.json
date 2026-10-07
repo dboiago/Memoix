@@ -1,0 +1,79 @@
+{
+  "recipe": {
+    "name": "BBQ Spaghetti",
+    "time": null,
+    "course": "sides",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Prep. Add the barbecue sauce, pasta sauce, and pulled pork to a large pot, then stir to combine.",
+      "Cook. Simmer over medium low while you cook the spaghetti. (For an extra smoky kick, let it simmer in a metal pan in your smoker or barbecue pit at 225°F for 15 minutes.)",
+      "Boil. Bring 4 to 6 quarts of water to a boil in a large pot and prepare spaghetti according to the instructions on the package. Once cooked, drain the spaghetti and return it to the pot.",
+      "Add the sauce to the spaghetti and heat the mixture over medium-low, stirring frequently until the noodles, sauce and meat are combined and heated through, approximately 4-5 minutes.",
+      "Serve. Plate the BBQ spaghetti for your family members and dust each serving with Memphis-style dry rub."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Package Uncooked Spaghetti",
+        "unit": null,
+        "notes": "16 oz.",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kc Style Barbecue Sauce",
+        "unit": "oz",
+        "notes": "make your own BBQ sauce with this recipe",
+        "amount": "9",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Traditional Pasta (tomato) Sauce",
+        "unit": "oz",
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pulled Pork",
+        "unit": "lb",
+        "notes": "a perfect way to use up extra meat from The Easiest Authentic BBQ Pulled Pork Recipe Ever",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Meathead's Memphis Dust (or Try Meathead's Amazing Smoked Pork Seasoning)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "40e3af05553cc0b372725d8974a91f16387547db1e42daf29d16972ac631f75a",
+    "lineage_hash": "9254c1b40e2b41c5a8c0898b55879a3b46b9ebb92cbbc58fd2794d8642a86fb0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://amazingribs.com/memphis-style-bbq-spaghetti/",
+    "fetchedAt": "2026-08-02T10:39:45.349Z"
+  },
+  "rawSource": "https://amazingribs.com/memphis-style-bbq-spaghetti/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

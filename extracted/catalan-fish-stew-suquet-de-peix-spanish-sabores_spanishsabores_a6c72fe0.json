@@ -1,0 +1,165 @@
+{
+  "recipe": {
+    "name": "Catalan Fish Stew (Suquet de Peix)",
+    "time": "55 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "ES",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "213",
+      "carbohydrateContent": "25.44",
+      "fatContent": "3.09",
+      "proteinContent": "16.93"
+    },
+    "directions": [
+      "Heat the the olive oil in a Dutch oven over medium heat. Add the garlic, tomatoes and tomato paste, and sauté for about 10 minutes, until the sauce is reduced.",
+      "Add the potatoes, wine and stock. Make sure the potatoes are covered with liquid; add more stock if necessary. Season with the salt, saffron, and sugar, then cover and simmer on low heat on for 20 minutes.",
+      "To prepare the picada, coat a small skillet in olive oil and heat over medium high until the oil is hot but not smoking. Add the raw almonds and garlic, and brown on all sides. Remove and dry on paper towels.",
+      "Once the garlic and almonds are cool, pulse them into a crumbly paste in your food processor (or crush in a mortar and pestle). Add a bit of the stew&#39;s liquid if necessary to blend.",
+      "Add the picada and fish chunks to the stew and cook uncovered for about 4 minutes. Add the shrimp and cook until they&#39;re pink.",
+      "Serve hot garnished with the chopped fresh parsley and enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Stew",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Minced",
+        "unit": "clove",
+        "notes": null,
+        "amount": "6",
+        "section": "Stew",
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes Peeled and Diced",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Stew",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Stew",
+        "isOptional": false
+      },
+      {
+        "name": "Waxy Potatoes Cut Into ⅓ Inch Slices",
+        "unit": "lb",
+        "notes": "peeling is optional",
+        "amount": "1",
+        "section": "Stew",
+        "isOptional": false
+      },
+      {
+        "name": "Dry White Wine",
+        "unit": "C",
+        "notes": "alt: sherry such as fino or manzanilla",
+        "amount": "½",
+        "section": "Stew",
+        "isOptional": false
+      },
+      {
+        "name": "Fish Stock",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": "Stew",
+        "isOptional": false
+      },
+      {
+        "name": "Saffron Threads",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "Stew",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Stew",
+        "isOptional": false
+      },
+      {
+        "name": "Firm White Fish Fillets Such As Hake",
+        "unit": "lb",
+        "notes": "cod, or halibut, cut into chunks",
+        "amount": "½",
+        "section": "Stew",
+        "isOptional": false
+      },
+      {
+        "name": "Or Large Raw Shrimp Whole Is Preferable But Peeled Also Work",
+        "unit": "medium",
+        "notes": null,
+        "amount": "8",
+        "section": "Stew",
+        "isOptional": false
+      },
+      {
+        "name": "Flatleaf Parsley for Garnish",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "Stew",
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Picada",
+        "isOptional": false
+      },
+      {
+        "name": "Raw Almonds",
+        "unit": null,
+        "notes": null,
+        "amount": "10",
+        "section": "Picada",
+        "isOptional": false
+      },
+      {
+        "name": "Cloves Garlic Peeled",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": "Picada",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7dee2bd0ed14b1e9c44247127a904876282b408f24c8901a9b5762387dfc0072",
+    "lineage_hash": "070ab7af93d47de4be0ffd19dd8a0e4b8d673d05e3ef8b714b1ea9f3d3c5dc68"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://spanishsabores.com/catalan-fish-stew-suquet-de-peix-recipe/",
+    "fetchedAt": "2026-08-02T11:01:13.107Z"
+  },
+  "rawSource": "https://spanishsabores.com/catalan-fish-stew-suquet-de-peix-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

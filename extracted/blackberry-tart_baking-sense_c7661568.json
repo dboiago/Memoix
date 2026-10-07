@@ -1,0 +1,126 @@
+{
+  "recipe": {
+    "name": "Blackberry Tart",
+    "time": "1 hr 50 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "249",
+      "carbohydrateContent": "26",
+      "fatContent": "15",
+      "proteinContent": "4"
+    },
+    "directions": [
+      "Preheat the oven to 350 °F. Roll 1 recipe&#32;Short dough to fit a 10&quot; or 12&quot; tart pan with a removeable bottom. Line the pan and poke at least 7-8x over the dough with a fork. Bake the crust until golden brown, about 10-12 minutes. Set the crust aside.",
+      "Chop 8 oz&#32;white chocolate and place it in a heat proof bowl.",
+      "In a medium size pan, scald 8 oz&#32;whole milk, 8 oz&#32;heavy cream and 3 oz&#32;granulated sugar over medium high heat. Scrape the seeds from ½&#32;vanilla bean and add them along with the pod to the pot.",
+      "While the milk heats up, whisk together 2&#32;large eggs, 2&#32;large yolks with ¾ oz&#32;corn starch until smooth.",
+      "Whisk the scalding hot milk into the eggs, then return the mix to the heat. Cook the mixture over low heat, stirring constantly, until the mixture just begins to boil and thickens. Remove from the heat. Immediately strain the custard over the chopped chocolate and let it sit for 2-3 minutes. Gently stir until it comes together and all the bits of white chocolate are melted.",
+      "While the filling is still warm, pour it into the baked tart shell and smooth to an even layer. Arrange 24-32 oz&#32;Fresh Blackberries, standing up, in concentric circles on the filling.",
+      "Chill the tart at least 2-3 hours until the filling is set."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Recipe Short Dough",
+        "unit": null,
+        "notes": "Chilled",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Chocolate",
+        "unit": "oz",
+        "notes": null,
+        "amount": "8",
+        "section": "White Chocolate Crémeux",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": "White Chocolate Crémeux",
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": "White Chocolate Crémeux",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "⅓ cup",
+        "amount": "3",
+        "section": "White Chocolate Crémeux",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean",
+        "unit": null,
+        "notes": "or 1 teaspoon vanilla extract",
+        "amount": "½",
+        "section": "White Chocolate Crémeux",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": "White Chocolate Crémeux",
+        "isOptional": false
+      },
+      {
+        "name": "Yolks",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": "White Chocolate Crémeux",
+        "isOptional": false
+      },
+      {
+        "name": "Corn Starch",
+        "unit": "oz",
+        "notes": "2 tablespoons",
+        "amount": "¾",
+        "section": "White Chocolate Crémeux",
+        "isOptional": false
+      },
+      {
+        "name": "Blackberries",
+        "unit": "oz",
+        "notes": "see note, fresh",
+        "amount": "24-32",
+        "section": "Assembly",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8abf8a4d7b5ef787e13db067fb1cbbce6f5b9f05ae4c08637059da8b41ea4347",
+    "lineage_hash": "e78ac07d1925d099ef4a01464dcc9b33c1a716d42ecfe1309cfec3fdb7154d92"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2023/06/22/blackberry-tart/",
+    "fetchedAt": "2026-08-01T19:16:00.589Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2023/06/22/blackberry-tart/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

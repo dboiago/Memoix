@@ -1,0 +1,202 @@
+{
+  "recipe": {
+    "name": "Apple and Blackberry Compote with Sorbet",
+    "time": "1 hr 15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, make the sorbet. Add the sugar, glucose and water to a saucepan and heat gently until the sugar has dissolved",
+      "Whisk in the blackberry purée, liquorice paste and lemon juice until combined. Allow to cool completely before churning in an ice cream maker",
+      "For the chestnut and hazelnut crumble, cream the butter and sugars together in a mixing bowl. Fold in the hazelnuts, oats, coconut and chestnuts",
+      "Bake the crumble until golden, allow to cool and then pulse in a food processor until slightly broken down",
+      "To make the compote, peel, quarter and chop the apples, removing the cores. Add to a pan with the vanilla pod, lemon juice and sugar and simmer gently until just starting to break down",
+      "Add the blackberries and simmer for a further 5 minutes",
+      "To prepare the apple garnish, cut the core of the apple out using a corer and slice into thin slices horizontally using a mandoline. If not using immediately, store in water with a squeeze of lemon juice to prevent browning",
+      "To serve, divide the warm compote between plates and top with the crumble. Garnish with whole blackberries, a piece of fresh apple and a scoop of the sorbet. Serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Hazelnuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "85",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oats",
+        "unit": "g",
+        "notes": "gluten-free, a mixture of jumbo and rolles",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Desiccated Coconut",
+        "unit": "g",
+        "notes": null,
+        "amount": "38",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chestnuts",
+        "unit": "g",
+        "notes": "cooked",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bramley Apples",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": "split",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juice only",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blackberries",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blackberry Purée",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glucose",
+        "unit": "g",
+        "notes": null,
+        "amount": "38",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Liquorice Paste",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juice only",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granny Smith Apple",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blackberries",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "096f95ebc528b2d7c329f5da0ca8116b5dfe356aeeacf480926b9e9312835832",
+    "lineage_hash": "2c9ec0d59f0c1992df191cd727ab266103c0984512d4b99e0ea9f36e59df5a23"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/apple-blackberry-crumble-recipe",
+    "fetchedAt": "2026-08-03T11:41:24.212Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/apple-blackberry-crumble-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

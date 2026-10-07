@@ -1,0 +1,116 @@
+{
+  "recipe": {
+    "name": "Braided Zucchini Yeast Bread",
+    "time": "2 hr 55 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "115",
+      "carbohydrateContent": "22",
+      "fatContent": "1",
+      "proteinContent": "4"
+    },
+    "directions": [
+      "Puree 8 oz&#32;zucchini in a food processor until it looks like apple sauce.",
+      "Combine zucchini puree, 4 oz&#32;warm water, 2 ¼ teaspoons&#32;dry yeast, 1 teaspoon&#32;salt, ¼ teaspoon&#32;black pepper and 1&#32;large egg in a mixer bowl. Mix on low speed to combine. Add 2 cups of flour and mix 2 minutes to form a thick batter. Switch to the dough hook. Add the remaining flour a little at a time, until the dough gathers onto the hook and clears the sides of the bowl. Knead for 5 minutes. If working by hand, add as much flour as you can with a wooden spoon the turn the dough out onto a floured surface to finish kneading in the remaining flour.",
+      "Turn the dough out onto a floured surface and knead into a smooth ball. Place the dough in an oiled bowl, turning once to coat. Cover the bowl and set aside to rise until doubled, about 1 hour. At this point you can refrigerate the dough for up to 2 days or proceed with shaping and baking the same day.",
+      "Turn the dough out onto a floured surface, knead a few times and divide into 3 equal pieces. Roll each piece of dough into a 14&quot; long rope. Braid the three ropes, pinching each end to seal together and set the loaf onto a parchment lined baking sheet. Cover with plastic wrap which has been oiled to prevent sticking. Set aside in a warm place for about 1 hour until the dough has almost doubled in volume and springs back slowly when poked.",
+      "Meanwhile, preheat the oven to 375 °F. Brush the loaf with egg wash, Sprinkle with grated Parmesan cheese or garnish of your choice. Bake about 30-35 minutes until golden brown and the interior temp is about 200 °F."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Zucchini",
+        "unit": "oz",
+        "notes": "about 1 large",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Warm Water",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Yeast",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": "room temperature",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bread Flour",
+        "unit": "oz",
+        "notes": "3 ½ cups, see note",
+        "amount": "17½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg for Egg Wash",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan Cheese for Garnish",
+        "unit": "Tbsp",
+        "notes": "shredded",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1f27db14d979e472f8de7482599a515f6b6d7462b59f2cf554ee1c4c083a3dbe",
+    "lineage_hash": "c79de152f68448d686d6bfddf78bdae9aa5a0702d17e79b3cbfa0724379be983"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2017/07/11/zucchini-yeast-bread/",
+    "fetchedAt": "2026-08-02T00:56:04.320Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2017/07/11/zucchini-yeast-bread/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

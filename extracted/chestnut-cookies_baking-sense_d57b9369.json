@@ -1,0 +1,133 @@
+{
+  "recipe": {
+    "name": "Chestnut Cookies",
+    "time": "58 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "28",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "90",
+      "carbohydrateContent": "9",
+      "fatContent": "5",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Cream 6 oz&#32;unsalted butter with 3 oz&#32;granulated sugar until light and fluffy. Add 2&#32;egg yolks and ½ teaspoon&#32;vanilla extract.",
+      "Add 3 ½ oz&#32;cake flour 2 ½ oz&#32;chestnut flour, ½ teaspoon&#32;ground cinnamon, ⅛ teaspoon&#32;grated nutmeg and ¼ teaspoon&#32;table salt. Mix just until the flour is incorporated. Dump the dough out onto a lightly flour work surface and knead into a ball. Wrap the dough and refrigerate for at least 60 minutes or up to 2 days. The dough can be frozen for a month.",
+      "Preheat the oven to 350 °F. Line a baking sheet with parchment paper or a silicone baking mat.",
+      "Remove the dough from the refrigerator and use your hands to roll the dough into a 1” thick dowel.",
+      "Slice the dowel into 1” long segments and roll each piece into a ball. Place the balls onto the prepared baking sheet leaving ½” between cookies. Use your thumb to make a deep indent in the middle of each cookie. Lightly brush the cookies with egg white. Spoon a ½ teaspoon of chestnut paste into the indentations.",
+      "Bake until the cookies are just beginning to brown around the edges, about 8 minutes. Cool on the pan for 5 minutes then transfer to a rack to cool completely."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "room temperature",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "¼ cup plus 2 tablespoons",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cake Flour",
+        "unit": "oz",
+        "notes": "¾ cup, see note",
+        "amount": "3½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chestnut Flour",
+        "unit": "oz",
+        "notes": "¾ cup",
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg",
+        "unit": "tsp",
+        "notes": "grated",
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": null,
+        "notes": "whisked",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chestnut Spread",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "afac67ab4c98390e9cac6e65b87bc13620db0cd5b187de7b1505e7dc581f69bd",
+    "lineage_hash": "8c14c6f253506ca91b840f37f66857bfa194a338488eb6050a1f8977b103059a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2024/11/21/chestnut-cookies/",
+    "fetchedAt": "2026-08-02T02:17:26.746Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2024/11/21/chestnut-cookies/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

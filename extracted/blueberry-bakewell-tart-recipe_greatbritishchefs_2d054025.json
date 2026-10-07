@@ -1,0 +1,163 @@
+{
+  "recipe": {
+    "name": "Blueberry Bakewell Tart",
+    "time": "1 hr 15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Grease 8–10 tart tins, depending on their size. Mine are about 3.5 inches in diameter",
+      "To make the pastry, place the cold butter, icing sugar and flour in a food processor and blitz. I use the pulse setting to avoid overworking the flour and making the pastry too tough",
+      "Add the beaten egg, cold water and lemon juice and pulse again until you get a ball of dough. Lightly roll the dough into a sausage shape, cover with cling film and pop in the fridge for at least 30 minutes",
+      "Cut the dough into 8–10 pieces, one piece for each tart tin. Roll each piece to a 5mm thickness, so it's wide enough to cover your tart tins. Line each tin and then prick holes in the base. Pop all the tins into the freezer for 15 minutes",
+      "Preheat the oven to 180°C/gas mark 4. Meanwhile, make the frangipane",
+      "Whisk the soft butter and sugar together until light and fluffy. Add half the beaten egg, half the ground almonds and half the flour. Add the rest and whisk a final time",
+      "Take the tart tins out of the freezer, line them with some foil and baking beans and bake for 15 minutes. Remove the beans and bake again for 5 minutes to dry out the bases. This is important as it gives you a nice crisp base",
+      "Spoon some crushed blueberries into each pastry case and top with about 2 tsp of the frangipane mixture. Level the frangipane out so all of the blueberries are evenly covered, then bake the tarts for 30 minutes. They should be nice and golden brown on top",
+      "While they are cooling, make the icing by mixing together the icing sugar and water. I like a thick consistency so all the tart is covered like a solid layer. The tarts must be completely cool before you spread over the icing. Pop some blueberries on to decorate and there you have it. A lovely blueberry Bakewell tart"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "cold",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": "beaten",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Iced Water",
+        "unit": null,
+        "notes": "1–2 tbsp",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "soft",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": "beaten",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blueberries",
+        "unit": "g",
+        "notes": "lightly crushed",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "tsp",
+        "notes": "approximately",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blueberries",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d37cbfc7ceb5a7f3d934685ac10c53bc93255fa8bac1ea3e27a00bc4a9cb6c01",
+    "lineage_hash": "522db7a4027aa77f31cc434648ff51174d3f5e7d848822b26bf442aba60c9335"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/blueberry-bakewell-tart-recipe",
+    "fetchedAt": "2026-08-03T12:08:56.636Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/blueberry-bakewell-tart-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

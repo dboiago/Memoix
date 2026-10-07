@@ -1,0 +1,136 @@
+{
+  "recipe": {
+    "name": "Black Pudding Recipe, Cheese Hash Browns & Pear",
+    "time": "1 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Leave the potatoes in their skins and cook in boiling water for 10 minutes so that they are still firm.  Drain and peel.  Grate the potatoes into a bowl and mix with half the herbs",
+      "Add a pinch of sea salt to the egg white, beat with a whisk and mix with the grated potato and herb mixture; season with sea salt and freshly milled pepper",
+      "Pat out a quarter of the mix in a circle larger than the slice of black pudding.  Place black pudding and 25g of cheese in the middle, fold over the potatoes and pat into a circle. Repeat 4 times.  Deep fry at 160C degrees until golden brown",
+      "Scoop the Conference pear into balls. Put one dessertspoon of vegetable oil into a hot frying pan with one teaspoon of sieved icing sugar. When the sugar turns golden brown, add the Conference pear balls and toss quickly",
+      "Melt 25g of butter in a pan and add the remaining herbs to make a buttery sauce.",
+      "Serve the hash browns with a few caramelized balls of pear, the herby butter sauce.  Serve with  large sprigs of flat leaf parsley"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Maris Piper Potatoes",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pudding",
+        "unit": "slices",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lancashire Cheese",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": "tsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "tsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Conference Pear",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flat-leaf Parsley",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e3ab442ef59dbf2e4609afd90a94a2f2e78e51079ff885e6c0aec2b810363c6c",
+    "lineage_hash": "951dec6f48def24ad44cc7fc4aba1be8a98312752f174687be17c0a127920aa3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/black-pudding-recipe-cheese-hash-browns-pear",
+    "fetchedAt": "2026-08-03T20:36:53.263Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/black-pudding-recipe-cheese-hash-browns-pear",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

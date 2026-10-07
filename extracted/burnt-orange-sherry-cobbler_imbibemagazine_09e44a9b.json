@@ -1,0 +1,38 @@
+{
+  "recipe": {
+    "name": "Burnt Orange Sherry Cobbler",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Goblet",
+    "garnish": [
+      "Grilled Orange Slice",
+      "Edible Flowers"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients, plus a slice of the grilled orange hull, to a large goblet filled with crushed ice. Swizzle the mixture briefly, then top with more ice and garnish with another grilled orange slice and edible flowers.",
+      "Burnt Orange JuiceHalve an orange and place the cut-side down on a grill over low heat, grilling until the sugars have begun to caramelize and grill marks appear. Juice the orange and save the hulls."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "671ad9a05705c08482734bf559d54f73423ccab8804d690dd220ab1e7eb2b28b",
+    "lineage_hash": "cf84c4805490323e508cbb8182b00e48aba9fa2e91d5235d8ba4ac9f7a0d2fb0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/burnt-orange-sherry-cobbler/",
+    "fetchedAt": "2026-08-03T22:29:50.374Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/burnt-orange-sherry-cobbler/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

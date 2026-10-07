@@ -1,0 +1,103 @@
+{
+  "recipe": {
+    "name": "Bento Box – Yakitori Bento",
+    "time": "10 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "While the Shimeji Gohan is still hot or warm, place it in one section of the bento box and let it cool.",
+      "Put Gomoku-mame in a okazu cup and place in the corner of the rice compartment.",
+      "Place the turnip next to the Gomoku-mame. If you don’t have a partition between the rice and the turnip, place the turnip in an okazu cup so that the rice does not get vinegary.",
+      "Place tomatoes and broccoli florets in one side of the other bento box.",
+      "Place yakitori skewers next to the vegetables."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Shimeji Gohan",
+        "unit": "C",
+        "notes": "note 1",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Skewers Yakitori (note 2)",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pickled Chrysanthemum Turnip",
+        "unit": null,
+        "notes": "note 3",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gomoku-mame",
+        "unit": "Tbsp",
+        "notes": "Simmered Soybeans with Vegetables",
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Broccoli Florets",
+        "unit": null,
+        "notes": "blanched",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mini Tomatoes",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bento Box of Your Choice",
+        "unit": null,
+        "notes": "I used a double decker bento box",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Okazu Cup",
+        "unit": null,
+        "notes": "note 4",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b2d9b699abafa3f7c1d98f9217249024fc9e4cd82893f015887bc286c0fc3126",
+    "lineage_hash": "110b0366e424621c2d953e8e54f03215cae3bf2378973665aea1738ae1397f41"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://japan.recipetineats.com/bento-box-yakitori-bento/",
+    "fetchedAt": "2026-08-01T18:59:47.668Z"
+  },
+  "rawSource": "https://japan.recipetineats.com/bento-box-yakitori-bento/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

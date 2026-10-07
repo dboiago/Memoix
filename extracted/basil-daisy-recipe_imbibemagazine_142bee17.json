@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Basil Daisy",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Highball",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to a shaker with ice and hard shake until chilled. Double strain over crushed ice in a highball glass, then garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "c74233f7ff00c8af6d2c9c11e082e7ee8537e57902230d3556c66778cdb1ae4b",
+    "lineage_hash": "fd3ddb444d3f9e463787ad7e479b0f7419ad0d59558735cef7d824e314c3b2e2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/basil-daisy-recipe/",
+    "fetchedAt": "2026-08-03T22:10:54.690Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/basil-daisy-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

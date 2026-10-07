@@ -1,0 +1,85 @@
+{
+  "recipe": {
+    "name": "Banana Yogurt and Coconut Ice Cream",
+    "time": "35 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Wrap the bananas in plastic and place in the freezer. Unwrap frozen bananas and place in a food processor with the ingredients.",
+      "You may now place the ingredients in an ice cream maker.",
+      "Keep chill in the refrigerator before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bananas",
+        "unit": null,
+        "notes": "peeled",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yogurt",
+        "unit": "C",
+        "notes": "favourite",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soaked Raisins",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9c3411bf6926da86bd991cb23c190e0d4201c8383f0db447ffba01110716f5af",
+    "lineage_hash": "adf2098fde4d86f179185c25cc5052e92cc2b6ace689cdb2feed0723309cd37f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.simplytrinicooking.com/an-easy-banana-yogurt-and-coconut-ice-cream/",
+    "fetchedAt": "2026-09-25T19:46:35.471Z"
+  },
+  "rawSource": "https://www.simplytrinicooking.com/an-easy-banana-yogurt-and-coconut-ice-cream/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

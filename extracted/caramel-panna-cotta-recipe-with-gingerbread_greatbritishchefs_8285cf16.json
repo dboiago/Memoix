@@ -1,0 +1,164 @@
+{
+  "recipe": {
+    "name": "Caramel Panna Cotta With Gingerbread",
+    "time": "2 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the gingerbread, sieve the plain flour, dark brown sugar, mixed spice, bicarbonate of soda and ground ginger together in a bowl. In a heavy-based saucepan, melt the butter, treacle and syrup",
+      "Allow the warm, melted ingredients to cool, then slowly whisk in the egg and milk. Add the sieved dry ingredients to the saucepan, mix well to combine then pour contents of saucepan into a tin lined with baking parchment",
+      "Bake the gingerbread for approximately one hour, until a skewer inserted into the centre comes out clean. Once baked and cooled, but still a little warm, wrap in cling film and leave to age for two days - this is desirable as it helps to develop the flavours, though is not essential",
+      "For the panna cotta, combine the milk, cream, and scraped vanilla seeds in a heavy based pan",
+      "Bring to the boil, then slowly simmer until reduced by one third. Meanwhile, soak the gelatine leaves in cold water for at least four minutes. Squeeze out the soaked gelatine leaves and add to the simmering liquid, stirring to dissolve",
+      "Add the caster sugar to a separate heavy based pan with one tablespoon of water. Cook until it reaches a dark caramel colour",
+      "Pour the caramel into the reduced cream mix, whisking continuously - take care as the caramel may spit",
+      "Once the caramel and cream mixture has combined, pass through a sieve to remove any sugar lumps. Pour into dariole moulds and leave to set in the fridge for 4 hours",
+      "To plate, dip the dariole moulds into boiling water for 5 seconds to help loosen the panna cottas. Invert the puddings onto a dessert plate and slowly remove the moulds",
+      "Slice the gingerbread and serve on the side"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bronze Gelatine Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Spice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bicarbonate of Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Ginger",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Treacle",
+        "unit": "g",
+        "notes": null,
+        "amount": "170",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Syrup",
+        "unit": "g",
+        "notes": null,
+        "amount": "85",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "dfa2d4e8e38377443ae88f5c0f676f3d4a2e02666657094977b9a59591e45f8d",
+    "lineage_hash": "165d0bec67945ad5d0533a1cb26f28a997f3459b4f6765e9cd7ba00e75bf04d0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/caramel-panna-cotta-recipe-gingerbread",
+    "fetchedAt": "2026-08-03T19:35:09.000Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/caramel-panna-cotta-recipe-gingerbread",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

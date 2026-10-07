@@ -1,0 +1,73 @@
+{
+  "recipe": {
+    "name": "Barbecue Spiced-Rubbed and Sauced Chicken",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Set up your grill for direct grilling and heat to high. Brush or scrape the grill grate clean and oil it well. Add wood chunks or chips to the fire (or smoker box if using a gas grill).",
+      "Season the chicken pieces on all sides with the rub. (Optional: Lightly oil the chicken pieces to help the rub adhere to the chicken.)",
+      "Place all the veggies in a mixing bowl and drizzle with olive oil, then season with the barbecue rub.",
+      "Slide the chicken pieces and veggies onto the metal skewers. Place the chicken and veggies on separate skewers as they have different cooking times.",
+      "Grill the veggies 2 to 3 minutes a side for a total of 5 to 6 minutes. Grill the chicken on each side for 2 to 3 minutes. Baste the chicken with barbecue sauce and grill for an additional 1 to 2 minutes per side.",
+      "Remove the grilled veggies and chicken skewers from the grill. Use a grill glove to hold the skewer when removing the chicken and the veggies since the metal skewers will be hot. Optional: Sprinkle the chicken kebabs with additional barbecue rub, if desired.",
+      "Serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Breasts",
+        "unit": null,
+        "notes": "each cut into 1 1/2-inch pieces",
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Barbecue Rub",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Barbecue Sauce",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil for the Grill Grate",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5acf3f373730e033b821c9d72166aa5cb937846c14d7d2bb250fb3673d32c6a2",
+    "lineage_hash": "32ef61fc326f9abc3258de7aaf20199c13c19b79d1cff903ba7ab3987ed3bd7e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/barbecue-spiced-rubbed-and-sauced-chicken/",
+    "fetchedAt": "2026-08-03T08:05:14.623Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/barbecue-spiced-rubbed-and-sauced-chicken/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

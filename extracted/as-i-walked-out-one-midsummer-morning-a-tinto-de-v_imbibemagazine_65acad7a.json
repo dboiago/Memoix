@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Tinto de Verano Riff",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Highball",
+    "garnish": [
+      "Lemon Twist"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the first 5 ingredients to a shaker and shake with ice for 5 seconds. Double strain into an ice-filled glass filled and top with tonic. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "257fad6673348d060579f303b5a7ae60b4072f39137f21f21311fef612ae76e9",
+    "lineage_hash": "c8b7a498a678e666f1dd508a71eb445fd2a8157d3cbc35d705d10ff201fbec97"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/tinto-de-verano-riff-as-i-walked-out-one-midsummer-morning/",
+    "fetchedAt": "2026-08-03T19:37:50.749Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/tinto-de-verano-riff-as-i-walked-out-one-midsummer-morning/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

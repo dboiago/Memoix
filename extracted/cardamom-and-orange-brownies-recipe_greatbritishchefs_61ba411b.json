@@ -1,0 +1,147 @@
+{
+  "recipe": {
+    "name": "Cardamom and Orange Brownies",
+    "time": "1 hr 15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 180°C/gas mark 4. Grease and line a 20cm square baking tin with baking parchment, leaving an overhang of paper to help you lift the brownie slab out",
+      "Add the chocolate pieces and butter cubes to a large bowl, and place over a pan of barely simmering water, making sure the base of the bowl doesn't touch the water. Allow to slowly melt together",
+      "Meanwhile, crack the cardamom pods and take out the black seeds. Crush these in a pestle and mortar to create a fine powder. When the chocolate and butter have melted, add in the cardamom powder, orange zest and juice, and stir to combine",
+      "Take the pan off the heat, leaving the bowl on top to stay warm and to allow the flavours to infuse",
+      "In a separate bowl, add the eggs and sugar and whisk with an electric whisk until the mixture becomes light and fluffy. Sift in the flour and cocoa, then gently fold through until incorporated. Slowly pour in the melted chocolate mixture and fold gently through, trying not to beat any air out",
+      "Pour the brownie mixture into the prepared tin and give it a gentle shake to evenly distribute the mixture. Bake in the preheated oven for 20–25 minutes, or until the top is firm to the touch (don't worry if the centre still has a slight wobble, this will create a gooey brownie). Leave to cool in the tin",
+      "For the candied orange, halve each orange, then thinly slice each half into moon-like segments. Add the water and sugar to a small pan and bring to the boil. Add the orange segments and boil for another 10 minutes, turning the segments every now and again",
+      "Reduce the heat to a low simmer, and leave to gently bubble away for 30 minutes; the syrup will reduce and the orange will be cooked through and completely glazed. When done, lift out the orange segments and leave to cool on a wire rack, reserving the syrup",
+      "Before serving, allow the ice cream to soften at room temperature for about 12 minutes, then arrange five segments of candied orange on each plate in a fan. Dust the brownie slab with icing sugar, then cut into rectangles. Place a brownie on each plate, and add a quenelle of ice cream, before finishing with a drizzle of the reserved orange syrup"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "broken into pieces",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "cubed, plus extra for greasing",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": "zested and juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom Pods",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oranges",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ice Cream",
+        "unit": null,
+        "notes": "1 tub of Häagen-Dazs coffee flavour",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": null,
+        "notes": "for dusting",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2d82d5e8e9cbe3a791acb32950110baf389727b26f2f83ecc733612fc84fb952",
+    "lineage_hash": "c2ce03bcbf6c1ec125e1732eceb9b4779c743efc61d24b1f20fe58179049a6f8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cardamom-orange-brownies-recipe",
+    "fetchedAt": "2026-08-03T14:17:03.143Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cardamom-orange-brownies-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

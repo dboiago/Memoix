@@ -1,0 +1,35 @@
+{
+  "recipe": {
+    "name": "Brazilian Sausage & Pork Lentil Stew",
+    "time": null,
+    "course": "mains",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "BR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Season the tenderloin chunks with salt and pepper, and set aside.",
+      "Heat a dutch oven or heavy bottomed pan, on stove top over medium heat. Add 1 Tbsp of the olive oil, heat it up, about 30 seconds. Add the sausage and cook until browned."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "70df6feef88fed7d78247834f18f89045f262780f56cc2cba010cd407b28a9c3",
+    "lineage_hash": "7ac7004f74a7b43496e9e33be584694b4dd9abf4af6e545e48848bc93cd22958"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://braziliankitchenabroad.com/web-stories/brazilian-sausage-pork-lentil-stew-recipe-hearty-new-year-tradition/",
+    "fetchedAt": "2026-09-25T23:20:23.366Z"
+  },
+  "rawSource": "https://braziliankitchenabroad.com/web-stories/brazilian-sausage-pork-lentil-stew-recipe-hearty-new-year-tradition/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

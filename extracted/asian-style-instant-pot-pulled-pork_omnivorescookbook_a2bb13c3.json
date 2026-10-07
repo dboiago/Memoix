@@ -1,0 +1,174 @@
+{
+  "recipe": {
+    "name": "Asian-Style Instant Pot Pulled Pork",
+    "time": "1 hr 15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "422",
+      "carbohydrateContent": "3.3",
+      "fatContent": "30.8",
+      "proteinContent": "31.3"
+    },
+    "directions": [
+      "Thoroughly pat dry the pork with paper towels. Sprinkle salt and pepper on both sides.",
+      "Add oil into the Instant Pot. Swirl to coat the bottom. Turn on the Saute function of the Instant Pot and wait until it shows as hot. Add the pork. Cook until all sides are golden brown, about 10 minutes. You might need to cook the pork in two batches. Add more oil, if needed. Transfer the browned pork to a big plate. Immediately add the water. Use a spatula to scrape off any brown bits stuck to the bottom of the Instant Pot. Turn off Saute function.",
+      "Add the remaining Instant Pot ingredients. Stir to mix well.",
+      "Transfer the cooked pork back into the Instant Pot. Cover the pot and seal the pressure valve. Use Manual mode on high pressure for 1 hour. Use natural or fast pressure release when done.",
+      "Remove the pork from the pot and transfer to a big plate.",
+      "Turn on the Saute function again to bring the sauce to a boil. Whisk the cornstarch and water together in a small bowl. Slowly add half of the mixture into the pot. Stir to mix well to thicken the sauce. If the sauce is still thin, slowly add the cornstarch slurry while stirring, until the sauce reaches the desired thickness. Turn off the Saute function immediately and transfer the sauce to a big bowl.",
+      "To serve, shred the pork using two forks. Serve hot with the sauce, on top of steamed rice, or stuff into dinner rolls to make a sandwich with homemade Chinese coleslaw."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pork Shoulder",
+        "unit": null,
+        "notes": "3.5 to 4 lbs, 1.6 kg to 1.8 kg, cut into 3 to 4 pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Instant Pot",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "C",
+        "notes": "or soy sauce",
+        "amount": "½",
+        "section": "Instant Pot",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce (or Soy Sauce0",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Instant Pot",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "C",
+        "notes": "or dry sherry",
+        "amount": "¼",
+        "section": "Instant Pot",
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Instant Pot",
+        "isOptional": false
+      },
+      {
+        "name": "Thumb Ginger",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": "Instant Pot",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "smashed",
+        "amount": "6",
+        "section": "Instant Pot",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Instant Pot",
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Paprika Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Instant Pot",
+        "isOptional": false
+      },
+      {
+        "name": "Five Spice Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Instant Pot",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": "Instant Pot",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Slurry",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Slurry",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2734a8d5fc26c6a601953183348012b3dfe046ec1081ad63a41980ab1389e404",
+    "lineage_hash": "cde91661d1cf361e1fcc13434a3f8e12d1da481a3bcad42ccf625304eddad8ba"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/asian-instant-pot-pulled-pork/",
+    "fetchedAt": "2026-08-01T23:31:19.664Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/asian-instant-pot-pulled-pork/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

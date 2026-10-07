@@ -1,0 +1,78 @@
+{
+  "recipe": {
+    "name": "Baked Chicken Thigh with Kecap Manis",
+    "time": "40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "ID",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat oven to 360 Fahrenheit (180 Celcius) and line a baking tray with aluminum foil.",
+      "In a mixing bowl, mix together chicken thigh, kecap manis, tomato ketchup, sesame oil, and sesame seeds. Transfer these to the prepared tray.",
+      "Bake in the oven until fully cooked, about 30 minutes.",
+      "Let the cooked chicken rest for 5 minutes before cutting into small strips. Serve with steamed white rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gram Chicken Thigh Fillets",
+        "unit": null,
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kecap Manis",
+        "unit": "Tbsp",
+        "notes": "Indonesian sweet soy sauce",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Ketchup",
+        "unit": "Tbsp",
+        "notes": "Indonesian: saus tomat",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9ab7e70cd5ca4a438948aeafaadb924750b2034c5f1a3ecc877ff0c70b5d074b",
+    "lineage_hash": "303c44043e7e4e0bf1f761a91e6f85ae77a0f5994301368c23d7188b1ce75e03"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/baked-chicken-thigh-with-kecap-manis.html",
+    "fetchedAt": "2026-08-02T06:00:44.351Z"
+  },
+  "rawSource": "https://dailycookingquest.com/baked-chicken-thigh-with-kecap-manis.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,97 @@
+{
+  "recipe": {
+    "name": "Cacao Tuile",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix pectin with a quarter of the sugar and set aside",
+      "Add the rest of the sugar, water, glucose, cocoa powder and butter to a pan and slowly bring up to the boil",
+      "Whisk in the pectin and sugar mix, bring back to the boil and remove from the heat",
+      "Add the chocolate, and, once melted, use a hand blender to blend it in",
+      "Allow the mixture to cool, then spread it thinly on a silpat mat. Cook at 160°C for 12 minutes",
+      "Once the tuile is ready, remove it from the oven and put the silpat pat (with the tuile still on it) face down onto a cool work surface. You should be able to peel away the mat from the tuile",
+      "Once cool, break the tuile into shards and use to garnish your desserts. We added a few shards to a Pots & Co Salted Caramel & Chocolate Ganache"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pectin",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cane Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "203",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "105",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glucose",
+        "unit": "g",
+        "notes": null,
+        "amount": "68",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "70% Palenque Luker Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "44e150919a1b0f2a1fbe07c05e0b8df9bd52aaccf752d5c2e1caa9eb7ee16755",
+    "lineage_hash": "ff6504f94c560aae3e632353a3060049de2bc3f8b4e802793eafcb3fec6c75d5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cacao-tuile-garnish-recipe",
+    "fetchedAt": "2026-08-02T15:48:23.751Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cacao-tuile-garnish-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

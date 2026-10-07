@@ -1,0 +1,69 @@
+{
+  "recipe": {
+    "name": "Bacon Maple Grilled Onion Rings",
+    "time": "40 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Slice each onion into 1/2-inch-thick rings. Pop the centers out of the largest rings, leaving the outermost wall 2 layers thick. (Reserve the remaining onion for another use.)",
+      "Brush the outside of the rings with maple syrup and generously season with the rub. Spiral bacon slices around each onion ring, overlapping the bacon slightly. (You’ll need about 2 pieces per ring.) Secure with a toothpick.",
+      "Set up the grill for indirect grilling and preheat to medium. Grill the rings until the bacon is crisp and nicely browned, about 40 minutes."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sweet Onions",
+        "unit": "large",
+        "notes": "such as Vidalia, peeled",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pure Maple Syrup",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Project Smoke Carolina Pit Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thin-cut Bacon",
+        "unit": "lb",
+        "notes": "16 slices, each cut in half lengthwise",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "22d4cc34ba4c451d7ee116bb05dd11ed1cc7298aa1669aabda722733760de510",
+    "lineage_hash": "31945a18c5f3f1cf53544e00333c9580a2a2b364dfa13d0fd60eba883a652489"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/bacon-wrapped-onion-rings/",
+    "fetchedAt": "2026-08-03T05:20:53.802Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/bacon-wrapped-onion-rings/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

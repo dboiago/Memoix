@@ -1,0 +1,129 @@
+{
+  "recipe": {
+    "name": "Bulgur Wheat Salad with Red Onion and Vegetables (Kisir)",
+    "time": "25 min",
+    "course": "salad",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "TR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix the bulgur wheat, salt, ground black pepper, red pepper flakes, tomato paste, and onion and knead thoroughly.",
+      "Pour the hot water over this mixture and stir, then leave to stand for about 15 minutes. It should absorb all the water by the end of this period. The bulgur should be of a dry consistency.",
+      "Add the lemon juice with the extra virgin olive oil and knead well again.",
+      "Stir in tomatoes, spring/green onion and the parsley and combine thoroughly.",
+      "Please check the seasoning and add more salt or spices to your taste.",
+      "Serve as a salad in a bowl garnished with lettuce leaves. Alternatively, take spoonfuls of the mixture and with wet hands roll into balls the size of walnuts.",
+      "Refrigerate until required."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gr Bulgur Wheat",
+        "unit": null,
+        "notes": null,
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fl Oz Hot Water",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Paste",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Paprika Flakes",
+        "unit": "ml",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring/ Green Onions",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful Flat Leaf Parsley",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2282512c6cc35bc3034323880d88bba85195298050f30f8d804f6433bb98538b",
+    "lineage_hash": "f4daade84f3cdb6cc53b777968d93c02682869bdde7f67b28b073f218cd60511"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ozlemsturkishtable.com/2011/02/bulgur-wheat-salad-with-red-onion-and-vegetables-kirmizi-soganli-kisir/",
+    "fetchedAt": "2026-09-25T19:37:41.869Z"
+  },
+  "rawSource": "https://ozlemsturkishtable.com/2011/02/bulgur-wheat-salad-with-red-onion-and-vegetables-kirmizi-soganli-kisir/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

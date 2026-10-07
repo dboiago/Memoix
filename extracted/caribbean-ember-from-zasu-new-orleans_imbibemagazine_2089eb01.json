@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Caribbean Ember",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the ingredients, except the ginger beer, with ice in a shaker. Shake and strain over fresh ice in a glass. Top with ginger beer. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "b3485a899b3407f0707ccfb7ebca378531b067269796daa16596d9e5717c6056",
+    "lineage_hash": "6686156a3568d1c202977cf7e5b734a65ea2716b4d3171c1c7c12abc09b96968"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/caribbean-ember-from-zasu-new-orleans/",
+    "fetchedAt": "2026-08-04T00:47:00.597Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/caribbean-ember-from-zasu-new-orleans/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

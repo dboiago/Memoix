@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Black Rose Espresso Martini",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Martini",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake all of the ingredients with ice, then strain into a chilled glass. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "9772a5283ca47463f926f31dbcab86f59bae098c8ce65ac356f2ece80fe9534b",
+    "lineage_hash": "a3824ac9c0c0910ea1a61458b864f3ea7cafa0d92125627ee7682dfc8c52affb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/black-rose-espresso-martini/",
+    "fetchedAt": "2026-08-04T02:02:14.974Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/black-rose-espresso-martini/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

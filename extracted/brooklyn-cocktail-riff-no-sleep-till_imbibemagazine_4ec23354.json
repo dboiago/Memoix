@@ -1,0 +1,35 @@
+{
+  "recipe": {
+    "name": "Brooklyn Cocktail Riff: No Sleep Till",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Stir all of the ingredients with ice to chill, then strain into a glass.",
+      "Coriander-Infused Dry VermouthAdd 15 grams of crushed coriander seed to one 750 ml. bottle of dry vermouth into a sealed freezer bag and submerge in a very hot water bath for 15 minutes (or sous vide at 145 degrees F). Strain and rebottle for use."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "27545843373badb18131715a136a2086d239df05e30bb685c2576b317eeade1d",
+    "lineage_hash": "d72ffc5f5e18498bb74d0335e9899a8fbe499741e665f7fa67770b47c3df5b06"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/no-sleep-till-brooklyn-cocktail-riff/",
+    "fetchedAt": "2026-08-04T02:01:21.544Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/no-sleep-till-brooklyn-cocktail-riff/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,40 @@
+{
+  "recipe": {
+    "name": "Amaretti Cookies With Pandan and Pistachios",
+    "time": "25 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "18",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Line two baking sheets with parchment paper. Adjust two racks to the upper- and lower-middle positions of the oven. Preheat the oven to 325°F.",
+      "Make the CookiesWhisk the almond flour and granulated sugar together in a medium bowl. Set aside.",
+      "Using a stand mixer fitted with the whisk attachment, beat the egg whites and cream of tartar on high speed until frothy. Add the pandan and almond extracts and whip on high speed until stiff peaks form, 2 to 3 minutes.",
+      "Transfer the almond flour mixture to the bowl of the stand mixer, along with the miso and chopped pistachios. Mix on low speed until a thick and cohesive dough forms. Scrape down the sides and bottom of the bowl as needed.",
+      "Scoop about 2 tablespoons of the dough and roll into a ball. Toss in the granulated sugar, then repeat with the confectioners’ sugar to coat thoroughly. Repeat to make 18 balls, spacing them at least 2 inches apart on the prepared baking sheets. Press each dough ball with the bottom of a sugar-coated glass or measuring cup until the cookie edges begin to crack, about 1/2 inch in thickness. Alternatively, skip the flattening step and keep the balls of dough rounded. Press a whole almond into the enter of each dough ball.",
+      "Bake all the cookies, switching the sheets between top and bottom racks and rotating front to back once halfway through, until lightly browned around the edges and cracked, about 25 minutes.",
+      "Let the cookies set and cool on the baking sheet for a few minutes, then transfer to a wire rack to cool completely. Dust the tops with a little more confectioners’ sugar, then some matcha."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "d9fbb52b29f1cb1023a693b737445ec668c82f2cc7ebfb8847c85a7aa5785d79",
+    "lineage_hash": "c448cde2d66b50a66fedc8d1af96d0dc2f978109293b6b1cd22151dcaef5dd7d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/amaretti-cookies-with-pandan-and-pistachios/",
+    "fetchedAt": "2026-08-04T01:19:53.713Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/amaretti-cookies-with-pandan-and-pistachios/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

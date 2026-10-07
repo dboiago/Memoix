@@ -1,0 +1,35 @@
+{
+  "recipe": {
+    "name": "Blood Orange Cocktail",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake the ingredients without ice until foamy, then add ice to the shaker and shake again to chill. Strain into a chilled coupe.",
+      "Blood-Orange Cordial: Use a vegetable peeler, Microplane grater or sharp paring knife to remove the zest from 6 blood oranges. Juice the oranges and measure the amount of juice; combine the juice with an equal amount of sugar (by volume) and the reserved zest, and whisk until sugar is dissolved. Let the mixture rest in the refrigerator overnight, then strain to remove solids. Keeps refrigerated for up to 1 week."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "ff4eb05e1a32168ca738b65e5251f3e61243194c4db171bb0b6f4cf7b2e27be5",
+    "lineage_hash": "47c9c8e33f6f2b3f5e7e97f63f81d3cc31143e5489e4c8dedd8a4ce01e8ca9b0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/falconry-demonstration/",
+    "fetchedAt": "2026-08-03T19:18:20.475Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/falconry-demonstration/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

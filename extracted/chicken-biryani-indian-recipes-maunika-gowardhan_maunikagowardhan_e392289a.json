@@ -1,0 +1,159 @@
+{
+  "recipe": {
+    "name": "Chicken Biryani",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Marinate the chicken in greek yoghurt, turmeric, chilli powder and salt. Set aside and marinate for 20 minutes or overnight.",
+      "Heat the oil in a heavy bottom saucepan over medium heat. Add the green cardamom and cumin seeds fry for a few seconds. Add the sliced onion and fry for 10-12 minutes over a medium flame. Add the chopped tomatoes and fry stirring well for 3 minutes. Mash with the back of the spoon as they soften. Add the tomato puree and continue to fry for a further minute. Add the slit chillies along with the ginger and garlic paste. Fry for a minute",
+      "Add the coriander powder, stir well and turn the heat low. Now add the marinated chicken mixing well. Now turn the heat back to medium and continue cooking the chicken for 3-4 minutes to seal the chicken pieces. Season to taste. Lower the heat and simmer with the lid on for 5 minutes. Stir the chicken half way through cooking making sure it doesn’t stick to the bottom of the pan. Add 50 mls water if it is too thick.",
+      "Take the pan off the heat and put half the rice over the chicken followed by half the saffron milk, pinch of garam masala, 1 tbsp mint and 1 tbsp coriander. Layer the remaining rice and add the rest of the garnish ingredients.",
+      "Put the lid back on and put the saucepan back on a very low flame for 5 minutes. Turn the heat off and leave the biryani to rest for 10 minutes. Serve warm with a choice of raita and onion salad."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken",
+        "unit": "kg",
+        "notes": "marinated in greek yoghurt, turmeric, chilli powder and salt",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Cardamom",
+        "unit": "pcs",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "large",
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Puree",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Slit Chillies",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger and Garlic Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice",
+        "unit": "C",
+        "notes": "cooked, leftover",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Saffron Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fc35441138d6837071332a0ddc278b048adce76c00a5eed583453e26ac273818",
+    "lineage_hash": "78ff3e61f013a2de84a07864cfcbd5e6b6c7c3699aa8fe85aedba2d7637858d7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://maunikagowardhan.co.uk/cook-in-a-curry/easy-chicken-biryani/",
+    "fetchedAt": "2026-08-01T16:14:30.455Z"
+  },
+  "rawSource": "https://maunikagowardhan.co.uk/cook-in-a-curry/easy-chicken-biryani/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

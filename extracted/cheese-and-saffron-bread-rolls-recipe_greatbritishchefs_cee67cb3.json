@@ -1,0 +1,96 @@
+{
+  "recipe": {
+    "name": "Cheese and Saffron Bread Rolls",
+    "time": "25 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In the bowl of a mixer fitted with a dough hook or blade, add in the flour, yeast, butter and saffron. Pour in the water and start the mixer",
+      "Once a dough forms, continue mixing for about 6 minutes at high speed. At the point, add in the salt and let it mix for a further 2 minutes",
+      "Lightly dust a large bowl with flour and transfer the dough to here. Cover the bowl with a damp tea towel and place in a warm place to prove for 30 minutes",
+      "Knock the dough back (punch out the air) and remove from the bowl. Split into 10 pieces and roll each piece into a ball shape",
+      "Lightly grease a baking tray with a little butter and place the balls on the tray, spaced out to allow for growth. Cover with the damp tea towel and let prove again for another 30 minutes, or until the rolls have doubled in size",
+      "Sprinkle the proven rolls with a little grated cheese and place in the oven to bake for 15 minutes, or until golden and hollow-sounding when tapped. Place on a wire rack and allow to cool"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cheddar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Bread Flour",
+        "unit": "g",
+        "notes": "plus extra for dusting",
+        "amount": "375",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yeast",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Saffron Strands",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "plus extra for greasing",
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "220",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f274d08e359e05aa493a8b05d9b4ba273d41ab36564ae9ea21fae2ac802ac535",
+    "lineage_hash": "01dedf2476ff40bead5af474f8aa7daa5b4cc42e017b170355af96cbd959c715"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cheese-saffron-bread-rolls-recipe",
+    "fetchedAt": "2026-08-03T15:06:46.768Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cheese-saffron-bread-rolls-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

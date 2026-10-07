@@ -1,0 +1,150 @@
+{
+  "recipe": {
+    "name": "Char Siu Chicken Skewers",
+    "time": "2 hr 20 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "304",
+      "carbohydrateContent": "14",
+      "fatContent": "16",
+      "proteinContent": "21"
+    },
+    "directions": [
+      "Drain the chicken meat and then cut into small chunks around 4 cm.",
+      "Cut half of the onion, green pepper and carrot into small pieces to match with the chicken and then chop the left half red onion.",
+      "In a large bowl, mix one egg white, char siu sauce, light soy sauce, salt and sugar with chicken meat. Then mix with chopped red onion. Put in refrigerator to marinate for around 1 to 2 hours (longer time is highly recommended for a stronger and more combined taste)",
+      "Soak the wood skewers firstly and the place the marinated chicken meat (meat only,discard the chopped red onion and left marinating sauce)with carrots, green peppers and onion slices.",
+      "Preheat the grill to medium or high heat. Brushing some oil to coat the grill, grill for around 12 minutes. Turn over from time to time.",
+      "In a small bowl, mix light soy sauce, char siu sauce and honey and brush the sauce evenly on the skewers at the very end of grilling process.",
+      "Garnish with roasted sesame seed prior to serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Meat",
+        "unit": "g",
+        "notes": "boneless, chicken breast or thigh without bone will be ok",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Size Red Onion",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Round Green Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Char Siu Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds for Garnish",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Char Sui Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "dff20e1185d4874574b2de54c07a79b5fe3c10245cf6ad578046f5928b006035",
+    "lineage_hash": "88501a937b9a614f9e95fe08f01fa873cd2be049d18fe2c88328c37fac312683"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/char-siu-chicken-skewers/",
+    "fetchedAt": "2026-08-01T20:25:03.513Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/char-siu-chicken-skewers/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

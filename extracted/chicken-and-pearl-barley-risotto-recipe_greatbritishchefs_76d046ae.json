@@ -1,0 +1,112 @@
+{
+  "recipe": {
+    "name": "Chicken and Pearl Barley Risotto",
+    "time": "1 hr 10 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place a large pan over a medium heat. Add 50g of the butter with the leek and gently sweat without colouring",
+      "Once soft, add the pearl barley and white wine, then allow to reduce by three-quarters",
+      "Add enough chicken stock to cover the barley. Once that has reduced, add another ladle of stock and continue cooking in this way until the stock is used up (as you would a risotto)",
+      "As you add the final ladleful of stock, place the chicken breast on top of the barley, season with a sprinkle of salt and put a lid on the pan until the chicken is cooked – 10–15 minutes depending on the size of the chicken breast. Stir halfway through to ensure the barley doesn't stick to the pan",
+      "Remove the chicken from the pan and stir in the Parmesan and remaining butter. Turn the heat off, place the lid back on and let the risotto sit for 5 minutes. In the meantime, slice the chicken breast and chop the herbs",
+      "Taste the risotto and check for seasoning. Fold through the herbs, then portion between 2 bowls and lay the chicken on top"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Breast",
+        "unit": "large",
+        "notes": "skinless, or 2 small chicken breasts",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "cubed",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leek",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pearl Barley",
+        "unit": "g",
+        "notes": "soaked overnight in cold water",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock Pot",
+        "unit": null,
+        "notes": "diluted with 500ml boiling water",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flat-leaf Parsley",
+        "unit": "bunch",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chervil",
+        "unit": "bunch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b42fe2a69877274cf0df29e61cbbfb94c2abe032979c1e4c14ecbbd942b50df5",
+    "lineage_hash": "7a6ab0f4b651320810c2e664c3f3affab2f3b03f6f62e108489f59a100ce3b81"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chicken-and-barley-risotto-recipe",
+    "fetchedAt": "2026-08-03T08:19:02.123Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chicken-and-barley-risotto-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

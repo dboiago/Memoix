@@ -1,0 +1,307 @@
+{
+  "recipe": {
+    "name": "Benares Mixed Seafood",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, make the kadhai gravy. Pound the dried red chillies and coriander seeds together in a pestle and mortar (or spice grinder) until finely ground, then set aside",
+      "Heat the oil in a wok or frying pan, add the garlic and sauté over a low heat until it turns a light brown colour. Add the ground spices, ginger and green chillies and sauté until the mixture starts sticking to the bottom of the pan",
+      "Add the tomatoes and continue sautéing for about 20 minutes until the oil in the sauce rises to the surface and separates. Add the fenugreek and salt to taste, remove from the heat and sprinkle with the garam masala. The gravy you don't use will keep for up to 3 days in a covered container in the fridge",
+      "To make the masala spring onions, heat the oil in a saucepan, add the green chilli and ginger and sauté over a medium heat for 1 minute. Add the spring onions and sauté for 2–3 minutes until they have softened. Stir in 125ml of the kadhai gravy and simmer for 3–4 minutes until hot and combined. Adjust the seasoning if necessary",
+      "Place the razor clams in a steamer and steam for 30–60 seconds or until the shells have opened. Blast chill the clams and once cool, remove the meat from the shells, pulling away and discarding the darker 'foot' from the body (you should be left with a smooth, white cylinder). Set aside",
+      "When you're ready to cook the seafood, heat the oil in a large frying pan over a high heat and add the mussels, prawns and scallops. Fry for 1 minute, stirring the seafood around gently",
+      "Add the squid and chopped ginger and chilli mixture. Sauté for 3 minutes, turning the seafood over regularly or until the prawns are pink and curled and the squid is opaque (remember, if any mussels don't open they must be discarded)",
+      "Add the razor clams for the final 30 seconds to reheat. Add the butter, garlic, chilli flakes, coriander seeds, fenugreek leaves, masala spring onions and the samphire and baste the seafood with the juices. Squeeze in the lemon juice and add salt to taste. Stir in the chopped coriander",
+      "Distribute the seafood and spring onions between plates and garnish with oyster leaves and coriander cress"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Razor Clams",
+        "unit": null,
+        "notes": "scrubbed and rinsed",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mussels",
+        "unit": "large",
+        "notes": "scrubbed, debearded and rinsed",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallops",
+        "unit": "large",
+        "notes": "hand-dived, corals removed and patted dry",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "King Prawns",
+        "unit": "large",
+        "notes": "heads removed, peeled and de-veined",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Squid",
+        "unit": null,
+        "notes": "tentacles, heads and internal quill removed and the bodies scored",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": "finely chopped with 2 green chillies to make a paste",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Flakes",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fenugreek Leaves",
+        "unit": "tsp",
+        "notes": "dried and crumbled",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sunflower Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chillies",
+        "unit": null,
+        "notes": "dried",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Knob of Ginger",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fenugreek Leaves",
+        "unit": "Tbsp",
+        "notes": "crumbled",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sunflower Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilli",
+        "unit": "small",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sunflower Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Samphire",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Cress",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e13b9c476abd7acaa0314ee2e3b0c34604c0d79101dbc4f186f39dcb3c7f07ab",
+    "lineage_hash": "38df1294958466bbcd21ea812b60856f99c1447f168550b0724a8b4c46765015"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/benares-mixed-seafood-recipe",
+    "fetchedAt": "2026-08-03T11:30:54.522Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/benares-mixed-seafood-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,161 @@
+{
+  "recipe": {
+    "name": "Asparagus and Prawns with Egg Yolk and Vinegar Dressing (Kimizu)",
+    "time": "20 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "65",
+      "carbohydrateContent": "7.2",
+      "fatContent": "1.8",
+      "proteinContent": "3.3"
+    },
+    "directions": [
+      "Steam prawns in a small amount of water and sake, then peel the shells off.",
+      "Trim hard part of the asparagus stems at lower end and blanch them.",
+      "Cut the asparagus into 3-4cm/1⅛-19⁄16″ long pieces. Halve prawns.",
+      "Mix the _Kimizu_ ingredients in a heat-safe glass bowl or a metal bowl.",
+      "Place the bowl in a pot of simmering water and mix the sauce until it thickens.",
+      "Put the sauce in ice water to quickly cool it down.",
+      "Place asparagus pieces and prawns on a serving plate. Pour the sauce over.",
+      "Remove the hard part of the asparagus stems at lower end.",
+      "Boil water in a saucepan, add a pinch of salt and par boil asparagus for 30 seconds to 1 minute. Drain.",
+      "Cut the asparagus stems into 3-4cm/1⅛-1 9⁄16” long pieces.",
+      "Remove the head of the prawns and de-vein (note 5).",
+      "Put prawns, sake and water into a pot and steam the prawns for 3-4 minutes over medium heat with a lid on. Let them cool and peel the shell.",
+      "Halve each prawn perpendicular to the spine (note 1).",
+      "Put the egg yolk in a heat proof glass bowl (preferred) or a metal bowl and mix well with a spatula.",
+      "Add sugar to the bowl and quickly mix well. Then add salt and mirin to the bowl. Mix well ensuring that the mixture is smooth with no lumps (note 6).",
+      "Add vinegar and mix well.",
+      "Put water in a shallow pot or a saucepan that can fit the bowl inside and bring it to a boil. The depth of the water should be about 5cm/2” deep (note 7).",
+      "Reduce the heat to the lowest so that the water does not even simmer, then place the bowl inside the pot/pan (note 8).",
+      "Mix the _kimizu_ mixture gently with the spatula for 4-5 minutes. As the yolk is heated up, the mixture starts getting thicker.",
+      "When the yolk becomes creamy but still runny, transfer the bowl from the water bath to a bowl with ice water and continue to mix. The sauce will thicken to the consistency of slightly runny mayonnaise.",
+      "Put the asparagus and the prawns on a serving bowl, clustering each ingredient together.",
+      "Pour the _kimizu_ over the asparagus and prawns. It will look nice if you cover part of these ingredients with _kimizu_ (see the photo).",
+      "Appetiser (‘_sakizuke_‘, 先付け): Asparagus and Prawns with Egg Yolk and Vinegar Dressing (_Kimizu_) – today’s recipe.",
+      "Soup (‘_suimono_‘, 吸い物): Japanese Clear Soup with Whiting (Kisu no Osuimono) or other clear soup.",
+      "Sashimi (‘_mukouzuke_‘, 向付): Sashimi (Sliced Raw Fish). The combination of raw fish can vary.",
+      "Grilled dish (‘_yakimono_‘, 焼き物): Nobu’s Miso Marinated Black Cod Recipe or other grilled fish/meat.",
+      "Simmered dish (‘_nimono_‘, 煮物): Kanazawa-style Simmered Chicken and Tofu (Jibuni). Any other simmered dish is good.",
+      "Deep-fried dish (‘_agemono_‘, 揚げ物): Tempura or other deep-fried dish of your choice.",
+      "Steamed dish (‘_mushimono_‘, 蒸し物): Chawanmushi (Savoury Egg Custard) or Fish Chawanmushi (Savoury Egg Custard).",
+      "Vinegared dish (‘_sunomono_‘, 酢の物): Crab and Cucumber Salad with Sweet Vinegar Dressing (Amazu) or other vinegared dish.",
+      "Rice (‘_gohan_‘, ご飯): Gomoku Gohan (Japanese Mixed Rice) or other Takikomi Gohan or plain rice.",
+      "Miso Soup (‘_tomewan_‘, 止め椀): Dried Tofu Skin miso Soup or miso soup with the ingredients of your choice.",
+      "Pickles (‘_kōnomono_‘, 香の物): Konbu Cha Pickled Vegetables or other pickled dish.",
+      "Dessert (‘_mizugashi_‘, 水菓子): Coffee Jelly (Jello) or Sweet Red Bean Paste (Anko) or ice cream. Fresh fruits are great too."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Asparagus",
+        "unit": "stalks",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raw Prawns",
+        "unit": null,
+        "notes": "medium size, note 1",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Sake",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": "note 2",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Wine Vinegar",
+        "unit": "Tbsp",
+        "notes": "note 3",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mirin",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dashi Stock",
+        "unit": "Tbsp",
+        "notes": "note 4",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8951e33a75bf18a75084f458de10c8507b5988a19ecb3a90dc98c842db144674",
+    "lineage_hash": "5bb45d430d3e592219c53881c4ffb94921dc2bf68fa4ed7ebc7ecd725b89bb5e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://japan.recipetineats.com/asparagus-and-prawns-with-egg-yolk-and-vinegar-dressing-kimizu/",
+    "fetchedAt": "2026-08-02T04:16:15.229Z"
+  },
+  "rawSource": "https://japan.recipetineats.com/asparagus-and-prawns-with-egg-yolk-and-vinegar-dressing-kimizu/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Apple Cocktail",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine ingredients in a shaker tin with ice and shake to chill. Strain into a coupe and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "b1f4e77611e210fca2bac72a9449f764693ce123ff2673e383fbd5ce533eff85",
+    "lineage_hash": "af00f11c55da0bdbb404d237c5318e4ef08dd5b26a040d0f2ad0bfacb95cee78"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/weekends-prize-apple-cocktail/",
+    "fetchedAt": "2026-08-03T21:12:32.786Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/weekends-prize-apple-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

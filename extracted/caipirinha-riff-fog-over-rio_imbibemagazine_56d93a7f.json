@@ -1,0 +1,35 @@
+{
+  "recipe": {
+    "name": "Caipirinha Riff: Fog Over Rio",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Muddle the lemon quarters and syrup in a shaker tin. Add the cachaça and shake lightly. Strain over a large ice cube. Garnish.",
+      "Earl Grey-Lavender SyrupMake a 2:1 ratio of loose-leaf Earl Grey tea and dried lavender. Steeped with 1 vanilla bean in hot water for 10 minutes. Strain the liquid, then add equal parts of cane sugar and allow to cool. Bottle and keep in refrigerator for up to 2 weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "a89a8a26e510d34488154e85ce774f3e19a7f8d6942c07cdd6e984bd4b01edaa",
+    "lineage_hash": "6ef64ca86662199ee5d94a5d23e90e409bdcdd58082ef636c4c9974a8fc32fc2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/fog-over-rio/",
+    "fetchedAt": "2026-08-03T21:09:39.157Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/fog-over-rio/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

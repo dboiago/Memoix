@@ -1,0 +1,86 @@
+{
+  "recipe": {
+    "name": "Barbecued Onions",
+    "time": "2 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Peel the onions. Using a sharp paring knife and starting at the top (opposite the stem end), cut an inverted cone-shaped cavity, about 2 inches across and 1 inch deep. (The core will come out in a cone-shaped plug.) Finely chop the pieces you remove from each onion.",
+      "Melt 1 tablespoon butter in a skillet. Add the bacon, chopped onion, and chopped jalapenos and cook over medium heat until lightly browned, 4 minutes. Drain the mixture in a strainer over a bowl. Use the bacon fat to brush the outsides of the onions. Place a spoonful of this mixture in the cavity of each onion. Spoon in some barbecue sauce and place a pat of butter (cut from the remaining butter) on top. The recipe can be prepared several hours ahead to this stage.",
+      "Set up your smoker following the manufacturer’s instructions and preheat to 250 degrees. Add the wood as specified by the manufacturer.",
+      "Smoke the onions until browned on the outside and tender, 2 to 3 hours. (Foil the onions the last 1-1/2 hours.) Place the grated cheese on top the last 30 minutes. To test for doneness, pinch the sides of the onion—they should be squeezably soft. Transfer the onions to a platter or plates and dig in!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sweet Onions",
+        "unit": "large",
+        "notes": "each 12 to 14 ounces",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strips Bacon (preferably Artisanal)",
+        "unit": null,
+        "notes": "cut crosswise into 1/4-inch slivers",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jalapeño Chiles",
+        "unit": null,
+        "notes": "for spicier onions, leave the seeds in, seeded and diced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Your Favorite Barbecue Sauce",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cheddar",
+        "unit": "C",
+        "notes": "alt: pepper Jack cheese, optional, grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "529b6e759d2f925db87e2477052ec65e00295dbb2f73da18690761a6d05ce0ea",
+    "lineage_hash": "730e9246c28ee7829ed354295aba4e5fa58f0ae460792307b837e23b2ebaff79"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/barbecued-onions-2/",
+    "fetchedAt": "2026-08-03T07:07:14.281Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/barbecued-onions-2/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

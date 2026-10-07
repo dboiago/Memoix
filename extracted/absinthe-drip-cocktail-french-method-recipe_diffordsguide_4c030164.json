@@ -1,0 +1,64 @@
+{
+  "recipe": {
+    "name": "Absinthe Drip Cocktail (French Method)",
+    "time": "4 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": "Absinthe Glass or Old-fashioned",
+    "garnish": [],
+    "subcategory": "Liqueur",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Select and pre-chill an ABSINTHE GLASS OR OLD-FASHIONED GLASS.",
+      "POUR absinthe into glass.",
+      "PLACE cube of sugar on a slotted absinthe spoon resting across the top of the glass.",
+      "Using an absinthe fountain (or a bottle of chilled mineral water with a small hole in the cap), DRIP iced water over the sugar so it dissolves and drips into the glass.",
+      "Traditionally the same amount of water is added as absinthe, but full-strength absinthe requires more dilution - Keep dripping until absinthe louches (turns milky white).",
+      "Add ice, stir and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Absinthe",
+        "unit": "ml",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilled Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cube Sugar Cube",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4804f87e1773c5b50ef21db4a1f0f484e64ed27b3a866d92a046b14b3550020d",
+    "lineage_hash": "b71f9d0443234c9538a508c991fc09638cd635176714a712e130ee3aef590609"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/507/absinthe-drip-cocktail-french-method",
+    "fetchedAt": "2026-08-02T05:53:32.609Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/507/absinthe-drip-cocktail-french-method",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

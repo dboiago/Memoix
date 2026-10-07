@@ -1,0 +1,205 @@
+{
+  "recipe": {
+    "name": "Cauliflower Cheese Tempura",
+    "time": "1 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the pickle, cut the leaves and white core of the cauliflower into 4cm pieces",
+      "Bring all the ingredients for the pickling liquid to the boil, whisking until the sugar is dissolved, then remove from the heat and pour over the cauliflower core and leaves. Set aside until needed",
+      "Whisk together all the ingredients for the dry mix",
+      "In a separate bowl, whisk together all the ingredients for the tempura batter until smooth",
+      "To make the Gruyère cheese sauce, first melt the butter in a pan. Add the flour and cook for 1–2 minutes, but don’t let it brown",
+      "Gradually whisk in the miso and then the milk, whisking as you go to avoid any lumps&nbsp;",
+      "Bring the sauce up to the boil and then add the cheese and cook for 2–3 more minutes",
+      "Once ready to fry, heat up enough vegetable oil for deep-frying to 160°C",
+      "Roll the cauliflower florets into the dry mix, then dip them into the tempura mix",
+      "Once the oil is hot, add the battered cauliflower and cook for 2–3 minutes, or until the cauliflower is cooked and the batter is crispy",
+      "Spoon dollops of the cheese sauce onto your serving plate and top each with a crispy cauliflower floret. Add a touch more cheese sauce on top and finish each with a pickled cauliflower leaf"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cauliflower",
+        "unit": null,
+        "notes": "cut into florets, leaves and white core reserved for pickling",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "for deep-frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cane Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "110",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sparkling Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "750",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Miso",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "220",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gruyère",
+        "unit": "g",
+        "notes": null,
+        "amount": "160",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9888741253b85ee6a077b436f1eac7db678dc20a75305d22c224009e38b945c9",
+    "lineage_hash": "5851f9a1439cbe9bb5775e4dedc7ab47e4dc73755d310ccb4cb41928b4db7ca6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cauliflower-cheese-tempura-recipe",
+    "fetchedAt": "2026-08-02T12:29:10.573Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cauliflower-cheese-tempura-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

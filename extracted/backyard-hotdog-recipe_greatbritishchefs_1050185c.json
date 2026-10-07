@@ -1,0 +1,212 @@
+{
+  "recipe": {
+    "name": "Backyard Hotdog",
+    "time": "2 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix all the ingredients for the barbecue sauce in a pan, except the butter and soy sauce (these two will be added close to end of the cooking time)&nbsp;&nbsp;",
+      "Bring the liquid to a gentle simmer and cook for 1 hour until the sauce is thick and has a dark golden colour. Make sure to whisk constantly whilst simmering to make sure it doesn’t stick to the bottom of the pan",
+      "When thick and golden, add the soy sauce and the butter and simmer again for 5 minutes",
+      "Then, let the sauce cool down (keep refrigerated for up to 5 days)",
+      "Grate the cabbage and carrots and keep refrigerated",
+      "Make the coleslaw dressing by mixing all the rest of the ingredients listed. Mix well with a whisk until you get a smooth sauce (not grainy, if it does look grainy keep on mixing)",
+      "Just before serving, dress the vegetables with the sauce",
+      "Cook your hot dogs in a sauté pan with a bit of vegetable oil until heated through",
+      "Mince bacon when raw, and then fry until crispy",
+      "Put some barbecue sauce in a roll, then the hotdog, then more barbecue sauce. Add your coleslaw and sprinkle the crispy bacon"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "French's Classic Mustard",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Cider Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cayenne Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "cold",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Cabbage",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cane Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Dog Sausages",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rashers of Streaky Bacon",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Dog Buns",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2d70804d314221dfdfe244e95c4f2e63b8c605932d5f786210b32a18d9312aa0",
+    "lineage_hash": "496ebb38b073113aac7c16143e81f0d6af35b3be02412f969048e06c896d1219"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/backyard-hotdog-recipe",
+    "fetchedAt": "2026-08-02T09:42:46.190Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/backyard-hotdog-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

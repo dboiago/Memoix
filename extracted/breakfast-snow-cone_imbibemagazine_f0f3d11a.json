@@ -1,0 +1,35 @@
+{
+  "recipe": {
+    "name": "Breakfast Snow Cone",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the syrup and espresso. Place the shaved ice in small cups or dishes, tamping down to fill halfway, then drizzle the spiced coffee syrup on the ice to saturate. Top with more shaved ice, to overfill the cups, then drizzle with more syrup and top with sweetened condensed milk. Serves 6.",
+      "Spiced Syrup: In a medium pot, combine 1 cup of water, 3–4 cinnamon sticks, 6 cloves, 1/4 tsp. of allspice, 1/8 tsp. of nutmeg, 1/2 cup of granulated sugar and 1/2 cup of dark brown sugar. Bring to a boil, then reduce the heat, cover and simmer for 30 minutes. Strain out the solids and let the syrup cool to room temperature."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "219ca82c937f1d4dbe7a82e3105b70a4fdd9034de826dcd04620cce1454e3aa3",
+    "lineage_hash": "1a615979d340765ca14ed7c002df44c4241e34876fb87c0198c8e4fb861510e8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/breakfast-snow-cone/",
+    "fetchedAt": "2026-08-03T22:10:23.758Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/breakfast-snow-cone/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

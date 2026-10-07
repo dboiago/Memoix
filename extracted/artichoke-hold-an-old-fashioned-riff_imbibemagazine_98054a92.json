@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Artichoke Hold",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Old Fashioned",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Stir all the ingredients together with ice in a mixing glass. Strain into an Old Fashioned glass over fresh ice. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "54c9a39014203504f99442052086c73aa700d4ac85e6a84031f5b735940f6a2e",
+    "lineage_hash": "1109aa1a03b86ee06d1da932f0b2f78f04e4ec12a78b861c925e5d64306525ba"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/artichoke-hold-old-fashioned-riff/",
+    "fetchedAt": "2026-08-03T17:57:16.434Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/artichoke-hold-old-fashioned-riff/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

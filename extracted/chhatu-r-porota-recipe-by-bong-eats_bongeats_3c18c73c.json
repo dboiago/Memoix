@@ -1,0 +1,180 @@
+{
+  "recipe": {
+    "name": "Chhatu’r Porota",
+    "time": "1 hr",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Take atta, maida, salt, sugar and vegetable oil in a large mixing bowl. Rub the oil into the flour.",
+      "Add warm water and knead for five minutes until the dough is soft, malleable and smooth.",
+      "Cover and rest for 30 minutes.",
+      "To a mixing bowl, add chhatu (sattu), chopped onions, finely chopped ginger, finely chopped green chillies, chopped coriander leaves, salt, sugar, jowan, and liquid from aachaar (pickles), and mix everything well. The salt will draw moisture from the fresh ingredients.",
+      "Now add water, a little at a time, and mic. The exact amount of water will depend on how much moisture was released from your onions, coriander, etc. We ended up using 5 tbsp water in all (about 50 g) for our batch. The mixture should resemble a tight dough.",
+      "Divide the filling into 4 even portions.",
+      "Divide the dough into four equal portions.",
+      "Flatten the the dough to a disk using your palms, and place a portion of the chhatu filling in the center. Pull the dough together from all sides to completely encase the filling. Pinch to seal.",
+      "Now dust the stuffed dough with flour and roll the porota, using even, gentle strokes, to about 18 cm diameter.",
+      "Heat an iron skillet or tawa and add a tablespoon of oil. Shallow-fry the porota until cooked and evenly coloured."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Atta",
+        "unit": "g",
+        "notes": "Indian whole wheat flour",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maida",
+        "unit": "g",
+        "notes": "all-purpose flour",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Warm Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chhatu",
+        "unit": "g",
+        "notes": "sattu/roasted gram flour",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "g",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pcs Green Chillies",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "g",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jowan",
+        "unit": "tsp",
+        "notes": "carom seeds",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Achaar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil for Frying",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3ab9a28c3869750bab297ab2aa11ee5e23d4a9ab03a81345e8e944f4e13e96db",
+    "lineage_hash": "c0585dc7e642db526b7920e80a2b1a59f78518b82baccd5731245c20a4a3e40c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.bongeats.com/recipe/chhatur-porota",
+    "fetchedAt": "2026-08-01T18:12:44.685Z"
+  },
+  "rawSource": "https://www.bongeats.com/recipe/chhatur-porota",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

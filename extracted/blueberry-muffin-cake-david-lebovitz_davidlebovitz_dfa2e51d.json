@@ -1,0 +1,176 @@
+{
+  "recipe": {
+    "name": "Blueberry Muffin Cake",
+    "time": "1 hr 30 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 375ºF (190ºC).",
+      "Butter an 8-inch (20cm) cake pan. Cut a circle of parchment paper about 16-inches (40cm) round. Smear it with softened butter, then line in the inside of the cake pan with it, buttered side up, so it covers the bottoms and up the sides of the pan, which you&#039;ll use later to help you lift out the cake. Press the paper up against the sides to flatten and smooth away any wrinkles.",
+      "To make the cake, in the bowl of a stand mixer fitted with the paddle attachment, stir together the flour, sugar, almond flour, cornmeal, baking powder, and salt. Add the butter and mix on medium speed until the butter is in small pieces, about the size of peas. Add the eggs, milk, vanilla, lemon zest, and mix just until the batter is smooth but avoid overmixing and overbeating it. (The batter can also be made in a food processor by mixing all the above ingredients together until smooth.)",
+      "Scrape the batter into the prepared pan. Cover the top with blueberries and use a butter knife to swirl the batter and blueberries together very slightly, just enough to distribute the blueberries and embed them a bit in the batter. Bake until the top is golden brown, about 45 minutes.",
+      "While the cake is baking, make the topping by mixing the chopped nuts, cinnamon, sugar, and salt in a small bowl. Sprinkle the topping over the cake, place the pieces of butter in various places over the top of the cake, and continuing baking the cake until the cake feels just set in the center. A toothpick inserted into the center should come out clean, about 15 to 20 minutes. (The original recipe said 25 minutes but I found it baked faster so the time will vary.)",
+      "Let the muffin cake cool completely in the pan, then remove it to serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": "130g",
+        "amount": "1",
+        "section": "cake",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": "200g",
+        "amount": "1",
+        "section": "cake",
+        "isOptional": false
+      },
+      {
+        "name": "Almond Flour",
+        "unit": "C",
+        "notes": "60g",
+        "amount": "½",
+        "section": "cake",
+        "isOptional": false
+      },
+      {
+        "name": "Cornmeal",
+        "unit": "C",
+        "notes": "40g, or all-purpose, or whole-wheat",
+        "amount": "¼",
+        "section": "cake",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "cake",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "cake",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": "5 ounces, 140g, cubed, at room temperature",
+        "amount": "10",
+        "section": "cake",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "at room temperature",
+        "amount": "2",
+        "section": "cake",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "C",
+        "notes": "125ml, at room temperature",
+        "amount": "½",
+        "section": "cake",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "cake",
+        "isOptional": false
+      },
+      {
+        "name": "Zest of One Lemon",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "cake",
+        "isOptional": false
+      },
+      {
+        "name": "Blueberries",
+        "unit": "C",
+        "notes": "330g, see headnote if using frozen, fresh",
+        "amount": "2",
+        "section": "cake",
+        "isOptional": false
+      },
+      {
+        "name": "Walnuts",
+        "unit": "C",
+        "notes": "alt: pecans, 60g, untoasted, chopped",
+        "amount": "½",
+        "section": "topping",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "topping",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "topping",
+        "isOptional": false
+      },
+      {
+        "name": "Kosher",
+        "unit": "pinch",
+        "notes": "alt: sea salt",
+        "amount": "1",
+        "section": "topping",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": "1 ounce, 30g, cut into 8 pieces",
+        "amount": "2",
+        "section": "topping",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "78d6ae7c344a4323628095c1310ff1b7e9c70fcefc87692b74f1f8475b42a963",
+    "lineage_hash": "c89a12897cbd861c04378118f6e53649f6a4f76b40f3f157dc9ab72642138789"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/blueberry-muffin-cake-recipe/",
+    "fetchedAt": "2026-08-02T17:23:37.234Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/blueberry-muffin-cake-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

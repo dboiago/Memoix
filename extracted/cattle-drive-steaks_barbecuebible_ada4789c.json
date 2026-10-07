@@ -1,0 +1,69 @@
+{
+  "recipe": {
+    "name": "Cattle Drive Steaks",
+    "time": "8 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the coffee and oil in a bowl. Brush each steak on both sides with this mixture and season generously with the rub.",
+      "Set up the grill for direct grilling and brush and oil the grill grate.",
+      "Grill the steaks over high heat, turning once, until nicely seared and medium-rare, about 4 minutes per side. Let rest for 3 minutes before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cold Brewed Coffee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "T-bone",
+        "unit": null,
+        "notes": "alt: porterhouse steaks, each at least 1 inch thick",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Project Smoke Santa Fe Rub",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5f8560c1365e6f14d2fb429a5cec4accb1b00823ef86f9adfa0e579bffcfe9ee",
+    "lineage_hash": "c475677897e1a0af507d80caac4612de2126ded85e26b08bc4c26f29c9829304"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/cattle-drive-steaks/",
+    "fetchedAt": "2026-08-03T06:08:08.088Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/cattle-drive-steaks/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

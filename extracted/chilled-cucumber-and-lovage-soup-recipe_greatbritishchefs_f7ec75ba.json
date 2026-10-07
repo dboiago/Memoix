@@ -1,0 +1,37 @@
+{
+  "recipe": {
+    "name": "Chilled Cucumber and Lovage Soup",
+    "time": "5 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cut the cucumbers in half lengthways and scrape out the seeds with a teaspoon. Discard the seeds. Roughly chop into chunks and place in a blender",
+      "Add the rest of the ingredients (except the eggs, if using) to the blender and season with salt and pepper. Start initially with 12 lovage leaves",
+      "Blend until completely smooth – the soup should have a pleasing, pale green colour. Taste. Is there a good balance of acidity and mellowness from the yoghurt? Add more lemon if it seems too creamy-tasting. Can you taste the lovage enough? It should be defined but not overpowering. Add the lovage leaves cautiously, a little at a time so as not to overpower the delicate cucumber flavour",
+      "Once you’re happy you’ve achieved a balanced flavour, place the soup in the fridge for at least 2 hours so that it is well-chilled before serving. Sprinkle with chopped hard-boiled egg to garnish, if desired"
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "5906d6be64aaa821620eeba3712d164eb8d49d26e7328f40b802c1f2b121ddbc",
+    "lineage_hash": "2150981b97f5e1672a29dd07e814d88fbca50549b6d0e8e6ad16ec254a186cd5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cucumber-lovage-soup-recipe",
+    "fetchedAt": "2026-08-03T07:32:39.855Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cucumber-lovage-soup-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

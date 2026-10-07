@@ -1,0 +1,142 @@
+{
+  "recipe": {
+    "name": "Baingan Bharta",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "220",
+      "carbohydrateContent": "29",
+      "fatContent": "11",
+      "proteinContent": "5"
+    },
+    "directions": [
+      "Rinse 1 medium eggplant (around 550 grams) and pat dry with a kitchen towel. Brush it with a little oil all over. Then make a few slits all over the eggplant with a knife or fork. In 3 of those slits, insert 3 large garlic cloves. Put the eggplant directly on heat/flame and roast on medium high flame, turning often (using a pair of tongs) for around 10-12minutes until completely roasted. Make sure to roast it from all the sides. I cover the sides of my burner with aluminum foil to catch the juices that drip off as the eggplant is roasting, this make the cleanup easy.",
+      "Once roasted (to check if it is done, insert a knife inside the eggplant- it should go inside the flesh easily) the skin of the eggplant will be charred and it will be soft. Use a pair of tongs to remove the eggplant from heat and wrap in a aluminum foil or wet paper towel to cool.Let cool for 10 minutes, take out the roasted garlic and chop them. Then peel the eggplant skin. Transfer the roasted eggplant along with the roasted garlic to a bowl and mash using a fork or potato masher. Set it aside.",
+      "Heat 2 tablespoons mustard oil in a pan on medium heat. Once the oil is hot, add 4 large garlic cloves (chopped, different from the ones used while roasting the eggplant), 1-inch ginger (chopped)and 1 green chili (chopped). Sauté until they start changing color, around 2 minutes.",
+      "Then add 1 medium red onion (120 grams), chopped and cook for 2 to 3 minutes until softened. Don&#39;t brown them. Add 2 medium tomatoes (280 grams), chopped and mix. Cook the tomatoes for around 5 minutes until they are very soft and you notice oil oozing out of the masala.",
+      "Add the mashed roasted eggplant into the pan along with the chopped roasted garlic and mix well using a spatula. Add ½ teaspoon Kashmiri red chili powder and mix. You use can regular powder if you prefer it more spicy.",
+      "Also add 1 teaspoon coriander powder and ¾ teaspoon salt (or to taste) and mix to combine. Cook the bharta for another10 minutes on low-medium heat, stirring often. This is important for the flavors to deepen.",
+      "Stir in the chopped cilantro and mix. You can sprinkle some garam masala if you like. Remove pan from heat. Serve baingan bharta immediately with hot rotis!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Eggplant",
+        "unit": "medium",
+        "notes": "around  550 grams",
+        "amount": "1",
+        "section": "roasting the eggplant",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": "large",
+        "notes": null,
+        "amount": "3",
+        "section": "roasting the eggplant",
+        "isOptional": false
+      },
+      {
+        "name": "& ½ Tablespoon Oil",
+        "unit": null,
+        "notes": "mustard oil, you can use oil of choice",
+        "amount": "1",
+        "section": "baingan bharta",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": "large",
+        "notes": "chopped",
+        "amount": "4",
+        "section": "baingan bharta",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "baingan bharta",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chili",
+        "unit": null,
+        "notes": "chopped, add more to taste",
+        "amount": "1",
+        "section": "baingan bharta",
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "medium",
+        "notes": "120 grams , chopped",
+        "amount": "1",
+        "section": "baingan bharta",
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "medium",
+        "notes": "280 grams , chopped",
+        "amount": "2",
+        "section": "baingan bharta",
+        "isOptional": false
+      },
+      {
+        "name": "Red Chili Powder",
+        "unit": "tsp",
+        "notes": "or to taste, I used Kashmiri red chili powder",
+        "amount": "½",
+        "section": "baingan bharta",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "baingan bharta",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "¾",
+        "section": "baingan bharta",
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": "baingan bharta",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "932f85f6892ae87ee47a82b24453b6684282896cf2397dff4e2118e331355e0b",
+    "lineage_hash": "65fd57f9b7761edbb08ffe9a87bd8073d7e69208ca5237d04a817ea31029acef"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/baingan-bharta/",
+    "fetchedAt": "2026-08-02T09:08:56.622Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/baingan-bharta/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

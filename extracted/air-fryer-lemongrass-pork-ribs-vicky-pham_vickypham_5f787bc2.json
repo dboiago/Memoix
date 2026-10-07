@@ -1,0 +1,109 @@
+{
+  "recipe": {
+    "name": "Air Fryer Lemongrass Pork Ribs",
+    "time": "25 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "5",
+    "source": "scraped",
+    "cuisine": "VN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a small bowl, combine fish sauce, oyster sauce, sugar, honey, black pepper, lemongrass, garlic, and oil. Mix well. If you feel there’s too much sugar, start with a little bit and gradually add to taste if needed.",
+      "Give the ribs a quick rinse in the sink to remove any slimy residue and drain dry. If you purchased pork ribs as a string of pork riblets, use a knife and cut in between the bones to separate them into individual ribs. Place the pork ribs in a mixing bowl and pour the marinade over the ribs, ensuring they are well-coated. You can air fry right away.",
+      "Arrange the marinated ribs in a single layer in the air fryer basket. All 2 lbs of pork ribs fit snugly in my air fryer. Air fry at 350°F for 12 minutes, flip, and continue cooking for another 12 minutes for a total of 24 minutes or until nicely caramelized to your liking. Enjoy the pork ribs on their own as a tasty appetizer or with steamed rice and vegetables for a complete meal."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pork Ribs",
+        "unit": "lb",
+        "notes": "medium size",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemongrass",
+        "unit": "C",
+        "notes": "minced",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "Tbsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Neutral Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "89d82f406b7052762f7f6d3a43a59c901c074d4c1c8b1b42350d0f3230cffc4b",
+    "lineage_hash": "449ee50a647f488d2d224f0efa53f9282d5a91eb6fc94217d7f9c3209a366174"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://vickypham.com/blog/airfryer-lemongrass-pork-ribs-fish-sauce/",
+    "fetchedAt": "2026-08-01T21:11:57.647Z"
+  },
+  "rawSource": "https://vickypham.com/blog/airfryer-lemongrass-pork-ribs-fish-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

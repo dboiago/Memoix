@@ -1,0 +1,70 @@
+{
+  "recipe": {
+    "name": "Peruvian Riddle",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "PE",
+    "glass": "Cocktail",
+    "garnish": [
+      "Lemon Twist"
+    ],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all ingredients in a shaker, shake well, strain into a chilled glass and garnish.",
+      "To infuse the pisco, steep one cup of dried chamomile flowers into one 750 ml bottle of pisco for four days. Double strain into a clean glass bottle."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chamomile-infused Pisco",
+        "unit": "oz",
+        "notes": "Heugel uses Barsol Quebranta",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dolin Blanc Vermouth",
+        "unit": "oz",
+        "notes": "Martini & Rossi Bianco will work too",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ice Cubes",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2412d2c700d231031dcb47e5e5a3fff30a4b4dbf1c402c094ef36021edd75f31",
+    "lineage_hash": "6c06982e5f62b60789bc05591730ff285be89edd1f429fe7f2f4dd997222a0e7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/augusts-where-to-drink-now-anvil-bar-refuge/",
+    "fetchedAt": "2026-08-02T21:12:24.231Z"
+  },
+  "rawSource": "https://imbibemagazine.com/augusts-where-to-drink-now-anvil-bar-refuge/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

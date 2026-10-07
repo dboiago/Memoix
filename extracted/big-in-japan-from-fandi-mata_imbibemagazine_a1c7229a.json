@@ -1,0 +1,35 @@
+{
+  "recipe": {
+    "name": "Big in Japan",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to a shaker and dry shake for about 10 seconds. Add ice and shake vigorously for 8 to 10 seconds. Strain into a coupe and garnish.",
+      "Raspberry ElixirPut all of the ingredients into a blender and blend to make a purée. Add the sage leaves and let the mixture sit overnight to soak up the flavors. Fine strain into a sealable container. Will keep in the refrigerator for about 6 days."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "f1b97aa59d65f8477abd0db4e6f0c178ec93aa706ce7c0f7fedce6e3b4e49ec3",
+    "lineage_hash": "c651af6bfee7ca06dca2a6c6469c7d1d0655f2c358b4178297bcf610a7e9e066"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/big-in-japan-fandi-mata/",
+    "fetchedAt": "2026-08-03T22:02:35.337Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/big-in-japan-fandi-mata/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

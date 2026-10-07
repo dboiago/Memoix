@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Angie: A Passion Fruit Gin Sour",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to a shaker with ice. Shake to chill, then strain into the glass. Garnish.\nPassion Fruit SyrupCombine 1 cup of passion fruit purée (such as Perfect Puree) and 1 cup of superfine sugar in a pot and boil. Allow to cool, then strain. Will keep in the refrigerator for 2 weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "a0f219e20d1228e284dae975eed52b3d90db9aff8842d3116282324f0472b1fa",
+    "lineage_hash": "e07c1bcac621da59d545927b071c076350c26b73ab3fcd02cce54482f6bb2226"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/angie-a-passion-fruit-gin-sour/",
+    "fetchedAt": "2026-08-04T00:38:06.867Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/angie-a-passion-fruit-gin-sour/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

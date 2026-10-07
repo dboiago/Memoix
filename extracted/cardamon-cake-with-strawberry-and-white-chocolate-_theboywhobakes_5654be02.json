@@ -1,0 +1,205 @@
+{
+  "recipe": {
+    "name": "Cardamon Cake with Strawberry and White Chocolate",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Make sure all of the ingredients are at room temperature, everything combines better this way, no split or curdled cake batter!",
+      "Preheat the oven to 180C (160C fan) and lightly grease three 8 inch round cake tins, lining the bases with parchment.",
+      "Mix together the flour, cornflour, baking powder, cardamon and salt and set aside for the moment.",
+      "Place the butter, sugar and vanilla into a large bowl and using an electric mixer beat together until light and fluffy, about 5 minutes.",
+      "Whilst continuing to mix slowly add in the egg white a little at a time beating for about 30 seconds between additions.",
+      "Once all the egg has been added mix in the flour mixture in three additions, alternating with the milk.",
+      "Divide the batter equally between the prepared tins and bake in the preheated oven for about 25-30 minutes or until a skewer inserted into the middle of the cake comes out clean.",
+      "Allow the cakes to cool in the tins for 10 minutes before turning out onto wire racks to cool completely.",
+      "To make the buttercream first start with the strawberry puree. Place all of the ingredients into a small saucepan and cook over medium heat until the fruit starts to release its juice.",
+      "Mash slightly with a fork and continue cooking until the mixture is very juicy and the liquid has reduced slightly, this should take no more than a few minutes.",
+      "Remove the pan from the heat and use a stick blender to puree. Set aside to cool fully before using.",
+      "For the buttercream place the egg whites and sugar into a heatproof bowl and set over a pan of simmering water.",
+      "Gently whisk until the mixture is warm to the touch and the sugar has dissolved. To test it is ready dip your forefinger and thumb into the bowl and rub together. If you can feel sugar grains, heat for a little longer.",
+      "Remove the bowl from the heat and whisk using an electric mixer for about 5-10 minutes or until the meringue is a room temperature.",
+      "Whilst continuing to whisk, add the butter a little piece at a time. By the time all of the butter has been incorporated you should have a silky buttercream texture.",
+      "Pour in the cooled chocolate and strawberry mixtures and mix to combine.",
+      "To assemble the cake place the first layer onto a cardboard cake round or a serving plate and top with half of the jam, spreading almost to the outside edge.",
+      "Top with a layer of the buttercream and spread to the outside edge. Repeat with the second cake and finish by placing the last layer of cake on top, spreading the remaining buttercream over the top and sides of the cake.",
+      "To decorate scatter as many sprinkles across the cake as your inner child desires."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "325",
+        "section": "Cardamom Cake Layers",
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": "Cardamom Cake Layers",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "4½",
+        "section": "Cardamom Cake Layers",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cardamon",
+        "unit": "tsp",
+        "notes": "depending on how strong you want the flavour",
+        "amount": "2-3",
+        "section": "Cardamom Cake Layers",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Cardamom Cake Layers",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "room temperature",
+        "amount": "225",
+        "section": "Cardamom Cake Layers",
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": "Cardamom Cake Layers",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Cardamom Cake Layers",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": "large",
+        "notes": "lightly beaten",
+        "amount": "5",
+        "section": "Cardamom Cake Layers",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": "Cardamom Cake Layers",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": "large",
+        "notes": "roughly 120g",
+        "amount": "3",
+        "section": "Strawberry White Chocolate Swiss Meringue Buttercream",
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "240",
+        "section": "Strawberry White Chocolate Swiss Meringue Buttercream",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "diced and at room temperature",
+        "amount": "360",
+        "section": "Strawberry White Chocolate Swiss Meringue Buttercream",
+        "isOptional": false
+      },
+      {
+        "name": "Strawberry Puree",
+        "unit": "g",
+        "notes": "see below",
+        "amount": "165",
+        "section": "Strawberry White Chocolate Swiss Meringue Buttercream",
+        "isOptional": false
+      },
+      {
+        "name": "White Chocolate",
+        "unit": "g",
+        "notes": "melted and cooled",
+        "amount": "150",
+        "section": "Strawberry White Chocolate Swiss Meringue Buttercream",
+        "isOptional": false
+      },
+      {
+        "name": "Strawberry Jam",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": "Strawberry White Chocolate Swiss Meringue Buttercream",
+        "isOptional": false
+      },
+      {
+        "name": "Strawberry",
+        "unit": "g",
+        "notes": "diced",
+        "amount": "125",
+        "section": "Strawberry Puree",
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": "Strawberry Puree",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Strawberry Puree",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c64efb741e1226dca16f514e1bb49b00cd37248df93f9d19fd58a1b2723f325e",
+    "lineage_hash": "86cc1ca4080396bedad8508c48ad16177b4450ac21aea10db64b3dce9b8d667b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.theboywhobakes.co.uk/recipes/2017/5/26/cardamon-cake-with-strawberry-and-white-chocolate-a-not-so-funfetti-cake",
+    "fetchedAt": "2026-08-01T21:14:13.821Z"
+  },
+  "rawSource": "https://www.theboywhobakes.co.uk/recipes/2017/5/26/cardamon-cake-with-strawberry-and-white-chocolate-a-not-so-funfetti-cake",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,161 @@
+{
+  "recipe": {
+    "name": "Air Fried Salmon with Thai Tamarind Sauce",
+    "time": "15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "TH",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Oil the salmon filets, then lightly season with salt (go light on the salt cuz the sauce will be flavourful). Air-fry them at 375°F (190°C) for about 6 minutes, or until the salmon is about medium doneness (less time if you&#39;re dealing with thinner, tail-end filets). If you don&#39;t have an air fryer, you can bake or pan sear the salmon. Let the salmon rest while you make the sauce.",
+      "Cut the cilantro sprigs in half, separating the leafy portion from the part with just the stems. Chop the stems and add to a mortar and pestle, saving the leafy part for garnish later. To the mortar, add the garlic, shallots and Thai chilies. Pound into a rough paste. Alternatively, process everything into a rough paste in a small food processor.",
+      "In a wok or a medium skillet, heat 2 tablespoon vegetable oil over medium  heat, add the herb paste and saute until aromatic and slightly browned.",
+      "Add the chicken stock, palm sugar, tamarind paste, and fish sauce. Turn the heat up to medium high and cook, stirring constantly, until the sugar is dissolved. Let sauce reduce until it is thick enough to coat the shrimp, about 2 minutes.",
+      "Add the salmon into the sauce along with any collected juices and spoon the sauce over the salmon. If you like the salmon at  medium doneness, remove from heat right away. If you prefer it more done, cook for about one minute in the sauce.",
+      "Sprinkle in the red chilies if using, then turn off the heat.",
+      "Plate the salmon and top generously with fried shallots (if using), and garnish with roughly chopped cilantro leaves. Serve with jasmine rice. Enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Salmon Filets",
+        "unit": "lb",
+        "notes": "cut into 3 portions",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Neutral Oil",
+        "unit": "tsp",
+        "notes": "for greasing the salmon",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro Sprigs",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": "small",
+        "notes": "roughly chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thai Chilies",
+        "unit": null,
+        "notes": "to taste, or use dried red chili flakes",
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Neutral Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "C",
+        "notes": "alt: water",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Palm Sugar",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tamarind Paste",
+        "unit": "Tbsp",
+        "notes": "store bought or homemade",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Peppers",
+        "unit": "C",
+        "notes": "any kind, sliced or julienned, optional for colour",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fried Shallots",
+        "unit": "Tbsp",
+        "notes": "store bought or homemade, optional",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jasmine Rice",
+        "unit": null,
+        "notes": "for serving",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5151c70e2c5fed4b16fa59ef1440169fc4ccda3987e075005e6800e143fef7d3",
+    "lineage_hash": "e4746caec50999db5a19ba605edce404c3fca0cd244fd4509e5c6d2b246038d3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://hot-thai-kitchen.com/tamarind-salmon/",
+    "fetchedAt": "2026-08-02T01:27:47.339Z"
+  },
+  "rawSource": "https://hot-thai-kitchen.com/tamarind-salmon/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

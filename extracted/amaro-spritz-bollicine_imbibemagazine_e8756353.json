@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Amaro Spritz: Bollicine",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Wine",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine both kinds of amari and bitters in a mixing glass with ice. Stir to chill, then strain into a wine glass over fresh ice. Top with sparkling wine"
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "d8cfc627ba70d3825ef1e5307ca56ad17309a4295693854f152d11558ea01b65",
+    "lineage_hash": "75058084c251177ba05db102b0528223dee8f7b17353c5982d1d2d78f2d7d87d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bollicine/",
+    "fetchedAt": "2026-08-03T18:18:03.461Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bollicine/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

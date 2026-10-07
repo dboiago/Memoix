@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Brazilian Cachaça Batida",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all the ingredients and blend until smooth. Pour into a chilled glass and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "401889f61769b1b02e61f3182fa4ab3f68e151e6585d5751388418a21ff61403",
+    "lineage_hash": "8787b88035ca47df63d0ee50d0dffc37315f0192c1fc662a3eea9b6a3ceac3b7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cachaca-batida/",
+    "fetchedAt": "2026-08-03T19:32:57.529Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cachaca-batida/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

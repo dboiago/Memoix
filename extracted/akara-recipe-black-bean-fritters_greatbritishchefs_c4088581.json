@@ -1,0 +1,112 @@
+{
+  "recipe": {
+    "name": "Akara (Black Bean Fritters)",
+    "time": "30 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, drain the can of beans and rinse thoroughly. Add the beans to the blender and blend until smooth, adding a little water to loosen the mixture as necessary",
+      "Tip the beans into a large bowl, add the remaining ingredients and mix together well",
+      "Gently whisk the mixture with a fork, allowing air to circulate through the mixture – this create a fluffy rather than a stodgy mixture – while gradually adding just enough water until the mixture gently drops off a spoon",
+      "Heat a deep-fryer to 180°C–190°C or until a cube of bread browns in 30 seconds",
+      "Lower separate tablespoons of the mixture into the hot oil, a few at a time, and fry until golden. The balls should gently turn over by themselves in the hot oil, but if not, move them around so that they fry evenly – it should take just a few minutes until they are nicely browned. If the balls sink to the bottom of the fryer, the oil isn't hot enough, and if they brown immediately without having time to cook through to the centre, the oil is too hot",
+      "Remove from the oil, drain on kitchen paper and leave to cool slightly before serving warm, or leave to cool completely and chill before serving. The great thing about akara is that you can eat them as a tasty warm snack, serve chilled with a dip or as a side with a stew"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Black-eyed Beans",
+        "unit": "g",
+        "notes": "organic",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": null,
+        "notes": "finely diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "lightly beaten",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Okra",
+        "unit": "g",
+        "notes": "trimmed and finely sliced, or used diced peppers",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scotch Bonnet Chilli",
+        "unit": null,
+        "notes": "deseeded and finely chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cayenne Pepper",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli",
+        "unit": "small",
+        "notes": "finely diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for deep frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "98b9d17dff6be1a4caa5e73507a96e59b38a9af88035d2ad03cd8c06819d5e41",
+    "lineage_hash": "2729637a40dc85df62d299d6f9d6c9d09aee3fa5e09e65f6a1d43835e497eb43"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/akara",
+    "fetchedAt": "2026-08-03T11:17:25.770Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/akara",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

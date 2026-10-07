@@ -1,0 +1,439 @@
+{
+  "recipe": {
+    "name": "Butternut Squash and Gorgonzola",
+    "time": "2 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the amaretto glaze, melt the butter over a low heat until foaming and cook until it is a nut brown colour. Boil the Amaretto to remove the alcohol, whisk in the brown butter, reserve",
+      "For the pasta, place the flour and salt in a food processor, slowly add the eggs and 10ml of the saffron water, finally add the olive oil. When the mixture resembles breadcrumbs tip onto a work surface and knead until you have an elastic dough, about 10 minutes. Clingfilm tightly and leave to rest in the fridge for at least one hour",
+      "Next make the puree. Brown the butter and strain into a clean pan, add the squash, salt and milk. Cook until the squash is completely soft. Blitz in a blender until smooth and pass through a fine sieve",
+      "Once the pasta has rested, bring to room temperature and roll on a pasta machine through each of the settings until you get to the lowest one. Cut the pasta into 10cm squares.",
+      "To make the ravioli place 15g of puree in the centre of a square, place another square on top and carefully seal the edges ensuring there are no air bubbles as this will cause the ravioli to burst. Cut each one out with an 8cm pastry cutter",
+      "Blanch the raviolis in boiling water for 2 minutes and refresh in ice water. Reheat for a further two minutes in gently simmering water just before serving",
+      "For the broth, in a heavy based pan sweat the squash trim in the butter until the edges start to break down. Season with salt and cayenne. Add the water and bring to the boil. Simmer for 20 minutes. Add the seeds, squash peel and butter. Bring back to the boil and simmer for a further 10 minutes. Strain through a fine sieve and blitz to emulsify the mixture. Chill until needed",
+      "For the Thai shallots, blanch the shallots in boiling water for 2 minutes, drain. Combine the rest of the ingredients in a separate pan and bring to the boil. Put the blanched shallots into the second pan and simmer for 2 minutes until tender, but retaining a little crunch. Chill in the cooking liquor in the fridge. Trim the bases to enable them to stand on the plate. Reduce the cooking liquid to a glaze consistency and glaze the shallots",
+      "For the dice, heat the oven to 180°C/gas mark 4. In a flat heavy based oven proof frying pan, heat the butter allowing it to lightly foam. Add the dice and colour all sides until golden. Season with salt, pepper and herbs. Cook in the oven for approximately 5 minutes, until tender. Deglaze with the sherry vinegar and remove from the pan",
+      "To make the nibbed almonds, heat the oven to 165°C/Gas mark 3\r\nAnd mix all ingredients together. Place on greaseproof paper on a heavy based tray. Roast for 8 minutes. Allow to cool",
+      "To make the whipped Gorgonzola crème fraiche, place the crème fraiche, Gorgonzola, salt and cayenne pepper in a mixing bowl. Whip with a mixer until stiff peaks are formed. Keep chilled and cover with cling film until required",
+      "Cook the spinach in boiling water for one minute, drain and pat dry",
+      "To plate, divide the spinach between the 6 plates placing in the centre. Place 3 butternut pieces and 3 Thai shallot around the spinach and place 1 ravioli on top. Warm the amaretto glaze and spoon on top of the ravioli. Finish with one Gorgonzola quenelle, a few wood sorrel leaves and a sprinkle of almonds. The butternut broth should be served on the side"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amaretto",
+        "unit": "ml",
+        "notes": "preferably Disaronno",
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pasta Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": "boiled with a pinch of saffron and strained",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butternut Squash",
+        "unit": "g",
+        "notes": "diced into 3cm squares, all peelings and trimmings reserved",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sherry Vinegar",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "160",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butternut Squash",
+        "unit": "g",
+        "notes": "cut into rough dice",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Full-fat Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "190",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cayenne Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crème Fraîche",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gorgonzola Dolce Latte",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cayenne Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thai Shallots",
+        "unit": null,
+        "notes": null,
+        "amount": "18",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nibbed Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amaretto",
+        "unit": "ml",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spinach",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Wood Sorrel",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2c46875aa4d6a71e1971dbfb9ccd4d4a676b31a2b3d893668d4a75e683662ac7",
+    "lineage_hash": "3437fa1cd0a192dd4a378fc8cce6827a844a740db63e70a7f254f87f4e7470f9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/butternut-squash-gorgonzola-recipe",
+    "fetchedAt": "2026-08-03T19:10:28.473Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/butternut-squash-gorgonzola-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

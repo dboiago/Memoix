@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Avocado Daiquiri",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Cocktail",
+    "garnish": [
+      "Pomegranate Hearts"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Blend ingredients well. Pour into a glass. For garnish, spoon the pomegranate concentrate (the purée, not the juice; it’s available online and at some gourmet markets or health food stores) into a plastic squeeze bottle or a pastry tube and draw a zigzag pattern across the top. Drag two straws through the middle to make a series of pomegranate hearts. Serve with a straw."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "b3fde3aea6f5fcfbda351bbc41275451afd2df70775941d34adab2e701cf8e1c",
+    "lineage_hash": "3e447aa8da0cd895bdbb79357d87431d706373be93ed6c959a10d415290b3a56"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/avocado-daiquiri/",
+    "fetchedAt": "2026-08-04T00:55:58.851Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/avocado-daiquiri/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

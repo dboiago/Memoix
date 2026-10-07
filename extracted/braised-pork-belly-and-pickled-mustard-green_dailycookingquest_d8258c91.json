@@ -1,0 +1,120 @@
+{
+  "recipe": {
+    "name": "Braised Pork Belly and Pickled Mustard Green",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Bring a pot of water to boil and blanch the pork belly for 2 minutes. Drained and cut into 1 cm slices. Set aside.",
+      "Wash the pickled mustard green under cold running water to remove the pickling juice. Drain and cut into small pieces. Heat a frying pan and dry frying the pickled mustard green until dry and wilted. Set aside.",
+      "Heat oil in a wok and sauté shallot and ginger until fragrant, about 2 minutes.",
+      "Add the pork belly and stir for about 3 minutes, until some oil from the pork belly is released and the wok looks oilier.",
+      "Add the chilies, tomatoes and stir for 1 minute. Pour the water and bring to a boil.",
+      "Return the pickled mustard green into the wok and bring to another boil. Reduce heat and simmer for 10 minutes. Season with sugar and salt. Turn off heat and serve with a bowl of white rice or plain porridge."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gram Pork Belly",
+        "unit": null,
+        "notes": "Indonesian: daging sam can",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Pickled Mustard Green",
+        "unit": null,
+        "notes": "Indonesian: kiam chai / sayur asin",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallot",
+        "unit": null,
+        "notes": "peeled and cut into quarters",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled and bruised",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilies",
+        "unit": null,
+        "notes": "cut into thin slices diagonally",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": null,
+        "notes": "cored and cut into small pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "52fbb53b3f75255e078d9d20c9d0da70ec25d5eb6f19cf65d78b95e7f3f475f7",
+    "lineage_hash": "b9b7fa111e3ffa0a830363d94e733fb016a626b31590d66ed7d98ec44d0978d7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/braised-pork-belly-and-pickled-mustard-green.html",
+    "fetchedAt": "2026-08-02T10:44:23.802Z"
+  },
+  "rawSource": "https://dailycookingquest.com/braised-pork-belly-and-pickled-mustard-green.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

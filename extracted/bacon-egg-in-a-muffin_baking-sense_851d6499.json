@@ -1,0 +1,146 @@
+{
+  "recipe": {
+    "name": "Bacon & Egg (in a) Muffin",
+    "time": "50 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "876",
+      "carbohydrateContent": "93",
+      "fatContent": "43",
+      "proteinContent": "29"
+    },
+    "directions": [
+      "Bring 1 inch of water to a boil in a small pot. Gently place the 6 cold eggs into the pot, cover. Reduce the heat to medium and steam the eggs for exactly 5 minutes. Remove the pot from the stove and immediately fill the pot with cold water to stop the cooking. Let the eggs cool in the water for 5 minutes then place in the refrigerator to cool completely.",
+      "When you&#x27;re ready to make the muffin batter, put the eggs into the freezer while making the batter (up to 1/2 hr). Cook the bacon slices until crisp, chop into small bacon bits. Grease a 6-cup jumbo muffin tin with butter or bacon fat, then flour.",
+      "Preheat the oven to 375 °F."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "cold",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "oz",
+        "notes": "2 ½ cups, see note",
+        "amount": "12½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Corn Meal",
+        "unit": "oz",
+        "notes": "1 ½ cups",
+        "amount": "7½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bacon",
+        "unit": "oz",
+        "notes": "cooked crisp",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "oz",
+        "notes": "2 ¼ cups",
+        "amount": "18",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maple Syrup",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "oz",
+        "notes": "or bacon fat, melted",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2c9c75ea210b7c8946f40282fcbc5721a4128fc25d465383f0b4ceb5f8ab7e0c",
+    "lineage_hash": "31b11e90a4d218a66a31e3cb5d7ad52103e0720eb6d87a79ae058ab5be59daa1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2016/05/06/bacon-egg-in-a-muffin/",
+    "fetchedAt": "2026-08-01T19:06:08.285Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2016/05/06/bacon-egg-in-a-muffin/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

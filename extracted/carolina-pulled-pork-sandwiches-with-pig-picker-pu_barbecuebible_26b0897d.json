@@ -1,0 +1,56 @@
+{
+  "recipe": {
+    "name": "Carolina Pulled Pork Sandwiches with Pig Picker Pucker Sauce",
+    "time": "3 hr 15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Prepare the pork: Place the pork shoulder in a roasting pan and generously season it on all sides with the rub, massaging the spices onto the meat. You can cook the pork right away, but you’ll get even more flavor if you let it cure in the refrigerator for a couple of hours or overnight.",
+      "_Roasting Method:_ Preheat the oven to 325°F. Place the pork, fat side up, in the roasting pan in the oven. Roast until sizzling, crisp, and darkly browned on the outside and the internal temperature registers 190° to 195°F on an instant-read thermometer inserted into the thickest part of the meat, about 3 hours. From time to time, spoon any pan juices over the top of the pork shoulder.",
+      "Meanwhile, make the Pig Picker Pucker Sauce: Combine the vinegar, brown sugar, hot sauce, salt, hot red pepper flakes, black pepper, and 1/2 cup of water in a mixing bowl and stir until the salt and sugar dissolve. Taste for seasoning, adding more sugar and/or hot sauce as necessary. If you roasted the pork in the oven, add a few drops of liquid smoke to the sauce. The sauce will mellow when mixed with the pork.",
+      "Transfer the pork to a cutting board, loosely tent it with aluminum foil, and let it rest for 15 minutes. Then, wearing insulated food gloves, pull off the skin and crust. (If the skin is leathery, crisp it directly over the fire.) Finely chop these to add to the pulled pork at the end. Using your gloved fingers or 2 large forks, pull the pork into large chunks, discarding any bones or lumps of fat or gristle. Tear the pork into meaty shreds. Alternatively, you can coarsely or finely chop the pork with a meat cleaver. You can also cut it into slices across the grain with a knife.",
+      "Transfer the meat (and skin, if using) to a large mixing bowl or to the roasting pan once you have discarded the excess fat. Stir in Pig Picker Pucker Sauce to taste (start with 3/4 cup and add more 1/4 cup at a time); the pork should be tart and spicy. Transfer any remaining sauce to a bowl for serving.",
+      "Split the sesame buns and lightly brush the insides with the melted butter. Lightly toast the buns on the grill, under the broiler, or in a skillet over medium-high heat. Pile shredded pork onto the buns and top it with sliced pickles. Add the slaw. Serve additional Pig Picker Pucker Sauce on the side."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pork Shoulder",
+        "unit": null,
+        "notes": "aka Boston butt; 5 to 6 pounds, bone-in",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carolina Pit Powder",
+        "unit": "C",
+        "notes": "alt: your favorite barbecue rub",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6b62bb5cf04e4159e1b9dac8212fe26aca6574ff6dbbb57d87963a680dfc1d81",
+    "lineage_hash": "acc36d9993b0e4478cdfc9093645f135bdcd757c83a61a37531f6d79d547bcc5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/carolina-pulled-pork-sandwiches/",
+    "fetchedAt": "2026-08-03T09:49:49.207Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/carolina-pulled-pork-sandwiches/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

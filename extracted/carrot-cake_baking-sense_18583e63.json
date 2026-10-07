@@ -1,0 +1,194 @@
+{
+  "recipe": {
+    "name": "Carrot Cake",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "417",
+      "carbohydrateContent": "53",
+      "fatContent": "22",
+      "proteinContent": "5"
+    },
+    "directions": [
+      "Plump currents in hot water before adding them to the batter.",
+      "Finely grind the walnuts.",
+      "Grind the carrots in a food processor until they are almost a chunky puree.",
+      "Emulsify the oil, brown sugar granulated sugar and eggs for a smooth batter.",
+      "Add the currants, walnuts and carrots to the egg mixture.",
+      "Add the dry ingredients to the batter then divide the batter between two or three 8″ pans.",
+      "The batter can also be baked into cupcakes.",
+      "Bake the cake until the center springs back when lightly pressed.",
+      "Cool completely before frosting.",
+      "Fill the layers with half a batch of Cream Cheese frosting.",
+      "Ice the cake with the remaining frosting."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Currants",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "5",
+        "section": "Carrot Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": "Carrot Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Walnuts",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "4",
+        "section": "Carrot Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "oz",
+        "notes": "2 cups, see note",
+        "amount": "10",
+        "section": "Carrot Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Carrot Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Carrot Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Carrot Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Carrot Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Carrot Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Carrot Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "oz",
+        "notes": "1 ¼ cups",
+        "amount": "9",
+        "section": "Carrot Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": "Carrot Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": "Carrot Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "4",
+        "section": "Carrot Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Carrot Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Carrot Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Recipe Cream Cheese Frosting",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Walnuts for Decorating",
+        "unit": "oz",
+        "notes": "optional",
+        "amount": "4",
+        "section": "Assembly",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b1e46e5bfb2fa37379167b9265959b0323fbd3f292983473872315951429bffe",
+    "lineage_hash": "f4251f173a16ea675dad2cd0e692b6049505d7a6d8ad8398cd9083609eec4425"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2017/04/20/better-carrot-cake/",
+    "fetchedAt": "2026-08-02T04:42:14.282Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2017/04/20/better-carrot-cake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,53 @@
+{
+  "recipe": {
+    "name": "Chappaquiddick Smoked Oysters",
+    "time": "15 min to 20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Set up your smoker following the manufacturer’s instructions and preheat to 225° to 250°F. Add the wood as specified by the manufacturer.",
+      "While the smoker is heating, carefully shuck the oysters, discarding the top shells. Pass the knife under each oyster to release it from the bottom shell. Leave the oysters in the shells. Arrange the oysters on a shellfish grilling rack or a wire rack, taking care not to spill the juices. Place a piece of butter on each oyster.",
+      "Place the rack with the oysters in the smoker. Smoke until the butter is melted and the oysters are warm but not fully cooked, 15 to 20 minutes, or as needed. Serve with grilled bread."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oysters in the Shell",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "24",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": "½ stick, each about ½ teaspoon, cut into 24 equal pieces",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c398c71eff7fd9e42428efffff37497cf4831071a4d1c1aa1bf8fe9b653f2a73",
+    "lineage_hash": "933f3ea6a32731b2acb6c720b3c73821883a3e574971e087c560f4a72ea09f6f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/chappaquiddick-smoked-oysters/",
+    "fetchedAt": "2026-08-03T06:24:08.402Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/chappaquiddick-smoked-oysters/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

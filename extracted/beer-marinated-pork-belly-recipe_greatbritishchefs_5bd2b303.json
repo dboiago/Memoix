@@ -1,0 +1,104 @@
+{
+  "recipe": {
+    "name": "Beer Marinated Pork Belly",
+    "time": "3 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To start the dish, mix all of the marinade ingredients together. Place the pork belly in a suitably-sized deep container, fat-side down, and cover with the marinade. Leave in the fridge to marinate for 8-10 hours",
+      "The next day, preheat the oven to 130°C/gas mark 1",
+      "Remove the belly from the marinade and place in the oven for 2 1/2-3 hours until soft and tender. Once cooked, remove from the oven, allow to cool and refrigerate until firm",
+      "Once cold, cut into 1cm wide slices. Either grill on a hot barbecue or a hot griddle pan until lightly crispy on both sides",
+      "Meanwhile, blanch the asparagus until tender then drain",
+      "Divide the asparagus onto plates along with the dandelion leaves. Add the slices of pork belly and drizzle with some rapeseed oil. Serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pork Belly",
+        "unit": null,
+        "notes": "2-3kg in weight, free-range, boneless",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Meantime Pilsner",
+        "unit": "L",
+        "notes": null,
+        "amount": "1.32",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "g",
+        "notes": "cracked",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bulb of Garlic",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Asparagus Spears",
+        "unit": null,
+        "notes": "English, stems peeled and sliced",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dandelion Leaves",
+        "unit": null,
+        "notes": "or wild rocket",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "727a2ecd9fcc0253b2a5f94845c54a9520b15c6a9a7eb7c173180da5b3d3082c",
+    "lineage_hash": "ef62080a3307e4a67012cc85b72cf90930bab24a590baaefc6020630973d6b40"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beer-marinated-pork-belly-recipe",
+    "fetchedAt": "2026-08-03T16:17:17.170Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beer-marinated-pork-belly-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

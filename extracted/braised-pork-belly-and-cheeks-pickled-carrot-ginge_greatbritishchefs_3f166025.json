@@ -1,0 +1,227 @@
+{
+  "recipe": {
+    "name": "Braised Pork Belly and Cheeks, Pickled Carrot, Ginger and Coriander",
+    "time": "2 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by making the brine for the belly two days in advance. Bring the water and salt to the boil in a large pan, then allow to cool and refrigerate to below 4°C. Place the pork belly in the brine and leave for 12 hours",
+      "The next day, preheat a water bath to 75°C",
+      "Rinse the belly and pat dry with kitchen cloth. Cut the belly in half, seal in two separate vacuum bags and cook in the water bath for 8 hours. Remove and allow to cool for 30 minutes. With the pork still in the bag, press it between two flat trays with a heavy weight on top. Refrigerate like this for 24 hours. Portion into 2cm wide and 7cm long pieces",
+      "The day before you plan to serve the dish, prepare the pork cheeks. Thinly slice the celery, shallot, mushrooms and carrot. Place into a pan with a little oil and colour until golden brown. Remove from the pan, drain of any oil or liquid and then combine with the chicken stock and herbs in a separate pan. Simmer for 20 minutes, then pass through a fine sieve into a pressure cooker",
+      "In a pan, colour the pork cheeks in a little oil until nice and golden brown on all sides, then place in the pressure cooker with the stock. Put the lid on, bring to a high heat and as soon as pressure has been reached, turn down to a medium heat and cook for 45 minutes. Allow the cheeks to cool in the cooking liquor, then remove and place on a tray to set for 12 hours. Portion the cheeks into 10 (depending on the size, you may get two pieces out of a cheek)",
+      "On the day you plan to serve the dish, prepare the carrot purée. Peel half the carrots and finely slice. Wash the remaining carrots and juice them using a juicer, passing the juice through a fine sieve. Mix the sliced carrots and the juice together in a large vacuum pack bag and seal. Cook at 100°C in a steam oven for 30 minutes. When cooked, empty the juice from the bag into a large pan and reduce down to a syrup. Place the carrots and syrup into a blender and blend until smooth, then pass through a fine sieve. Season with salt and lemon juice",
+      "For the carrot ribbons, peel, top and tail the carrot. Thinly slice on a mandoline lengthways. Trim the slices so you get perfect long rectangles and transfer to a vacuum bag. Bring the water, vinegar and sugar to the boil and pour into the bag over the carrot ribbons. Seal and cook at 100°C in a steam oven for 1 minute, then place the bag over ice to chill rapidly",
+      "Fill a centrifuge canister with the yoghurt and place in the centrifuge, with another canister filled with 150ml of water on the other side to balance. Spin them for 20 minutes at 2°C to separate the yoghurt and whey. Carefully scoop the yoghurt out of the canister, discarding the whey, and store in a squeezy bottle in the fridge until needed",
+      "To serve, place a pan over a medium heat. Place the pork belly skin-side down into the pan and colour until golden brown and crisp. Gently reheat the carrot purée and the pork cheeks. Roll the carrot ribbons into tubes and fill with yoghurt. Arrange all the elements neatly on the plate. Dress the plate with a few cubes of crystallised ginger and a few sprigs of coriander cress"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pork Belly",
+        "unit": null,
+        "notes": "ribs removed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stick of Celery",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Button Mushrooms",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Chicken Stock",
+        "unit": "L",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tarragon",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pork Cheeks",
+        "unit": null,
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": null,
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Natural Yoghurt",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Knobs of Crystallised Stem Ginger",
+        "unit": null,
+        "notes": "diced into 2mm cubes",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Cress",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e36eaf3fb5a287c3eb65d14f395f1cb9600b00b35b4b67a4a393be689cbe253f",
+    "lineage_hash": "eafeb1d7171420c8d23080d627dd07e1bc4b2e1b473a3d08cb9cc3a1508c7aa6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/pork-belly-and-cheeks-pickled-carrot-recipe",
+    "fetchedAt": "2026-08-03T08:47:08.925Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/pork-belly-and-cheeks-pickled-carrot-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

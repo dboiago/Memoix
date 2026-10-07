@@ -1,0 +1,125 @@
+{
+  "recipe": {
+    "name": "Bacon Pineapple Guacamole al Pastor",
+    "time": "35 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "278",
+      "carbohydrateContent": "10.16",
+      "fatContent": "25.82",
+      "proteinContent": "4.91"
+    },
+    "directions": [
+      "Preheat oven to 425 degrees F.",
+      "Arrange bacon slices on a foil-lined baking sheet and brush chipotle sauce on both sides. Place the baking sheet in the oven and bake for 15 to 20 minutes. Remove from the oven, let cool, and chop.",
+      "Lightly brush both sides of pineapple rings with vegetable oil and grill them, turning once, until lightly charred, about 3 minutes per side. Let cool and chop.",
+      "Cut the avocado in half. Twist to pull apart and remove the pit. Scoop out the flesh. Place on a cutting board and roughly chop and place in a large bowl.",
+      "Add the orange juice and mash the avocado with a fork leaving some chunks.",
+      "Add pineapple, bacon, jalapeño (optional), onion, cilantro, salt, and give everything a gentle stir, but don’t overdo it."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Strips Bacon",
+        "unit": null,
+        "notes": null,
+        "amount": "6-8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chipotle Sauce",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rings Pineapple",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ripe Avocados",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "Tbsp",
+        "notes": "fresh",
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jalapeño Pepper",
+        "unit": null,
+        "notes": "optional, minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "C",
+        "notes": "minced",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4b4d1880537768c6792af87df6f9a07400ab13b0a4a8420fe32f5f8ddc9dac0a",
+    "lineage_hash": "fdf0ad88d929b6a7d6c5d00f49ae7555b9fd7f85b4373796147ace535262c7cc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/guacamole-al-pastor/",
+    "fetchedAt": "2026-08-02T00:39:14.874Z"
+  },
+  "rawSource": "https://muybuenoblog.com/guacamole-al-pastor/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

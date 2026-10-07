@@ -1,0 +1,206 @@
+{
+  "recipe": {
+    "name": "Blueberry Custard Tart",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the pastry, cream the butter and caster sugar together until the mixture starts to go pale. Combine the egg yolks and the water and beat gradually into the butter mixture",
+      "Mix the flours and the salt and sift onto the butter mix. Use a rubber spatula to fold the flour in; you are aiming for dough that is homogenous but has been worked as little as possible. Turn the dough onto a floured surface and bring together into a cylinder. Wrap in cling film and chill for at least 30 minutes",
+      "To make the blueberry compote, combine all of the ingredients in a small pan and bring to simmer, stirring constantly. Cook gently until the berries have collapsed, then reduce the liquid by about half. Allow a little compote to cool and test for set; you are looking for a lightly set gel",
+      "Add more lemon juice if required, then pass through a fine sieve and chill. Blend with a hand blender to give a smooth texture",
+      "Roll the pastry out to a 2–3mm thickness and use to line the tart tins. Line with cling film and baking beans and blind bake for approximately 10 minutes until the pastry starts to dry out. Remove the baking beans and return to the oven until light golden brown",
+      "Brush with a coat of egg yolk and  return for the oven for 1 minute to set the yolk then remove and leave to cool",
+      "To make the lemon custard, combine the milk and cream in a heavy-based pan, then add the cinnamon and lemon zest, grating the zest directly over the pan to catch all the lemon oil. Bring to a simmer, remove from the heat, then cover and allow to infuse for 30 minutes",
+      "Whisk the egg yolks with the sugar until thick and pale. Reheat the cream mixture and gradually whisk into the yolks. Return to the pan and cook out, stirring constantly in a figure of eight motion until the custard starts to thicken and has reached 79°C",
+      "Remove from the heat. Squeeze excess water from the gelatine and add to the custard, stirring to dissolve. Pass the custard through a fine sieve into a plastic container and press cling film directly onto the surface. Chill until needed",
+      "To assemble the tarts, remove the custard from the fridge, beat well and transfer to a piping bag with a 1cm plain nozzle.  Spread a dessert spoon of blueberry compote into the tart shells, chill for 10 minutes and then pipe in the custard to fill",
+      "Smooth out the custard and place the tarts in the fridge for 30 minutes. Top with a layer of blueberries and glaze with the compote",
+      "Allow to come to room temperature before serving. To finish, dust half the tart lightly with icing sugar and grate some lemon zest over the other half"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Blueberries",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced and zested",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "170",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": "large",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": "cold",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour",
+        "unit": "g",
+        "notes": null,
+        "amount": "110",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": "soft",
+        "amount": "335",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Semi-skimmed Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "110",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "320",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": null,
+        "notes": "one 3cm long stick",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": "large",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine",
+        "unit": "g",
+        "notes": "soaked in cold water",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blueberries",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": null,
+        "notes": "for dusting",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d0a8ffd24b7cf8c71c381bb443f7f62ad155a11caed5ba3f8b947f36aa4897b5",
+    "lineage_hash": "74f52c377ca12ed732beb0e1b4c4162330ccf17c17f124edc1ae051b9009fb3a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/blueberry-custard-tarts-recipe",
+    "fetchedAt": "2026-08-03T12:08:43.688Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/blueberry-custard-tarts-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

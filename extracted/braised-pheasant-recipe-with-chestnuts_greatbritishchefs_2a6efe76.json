@@ -1,0 +1,177 @@
+{
+  "recipe": {
+    "name": "Braised Pheasant with Chestnuts",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add 1 tablespoon of olive oil to a frying pan over a medium heat. Once hot, fry the shallots and bacon for 5 minutes, or until golden. Add the chestnuts, cook for a few more minutes, then transfer the shallots, bacon and chestnuts to a heavy, lidded casserole pan using a slotted spoon. Sprinkle the juniper berries over the shallot and bacon mixture",
+      "Add the butter and remaining olive oil to the frying pan  and season the pheasants inside and out. Once the butter is foaming, place the pheasants into the pan and brown on all sides. Tuck 2 sprigs of thyme and a bay leaf inside each pheasant and add to the casserole",
+      "Deglaze the frying pan with the white wine and add the sloe gin. Pour the liquid over the pheasants",
+      "Place the casserole pan over a medium heat and heat until simmering. Cover with a lid, lower the heat and continue to simmer for 40 minutes, until the pheasants are cooked through",
+      "When almost ready, fry the remaining bacon and chestnuts in a little butter, until golden",
+      "Remove the pheasants from the casserole and skim off any excess fat from the cooking juices, using a spoon. Increase the heat and allow the sauce to reduce and slightly thicken",
+      "Garnish with the bacon and chestnuts, and a little parsley. Serve with mashed potato or celeriac and seasonal greens on the side"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Hen Pheasants",
+        "unit": null,
+        "notes": "approx. 850g each",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Streaky Bacon",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Small Shallots",
+        "unit": "g",
+        "notes": "peeled and trimmed, but left whole",
+        "amount": "230",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooked Chestnuts",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Juniper Berries",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": "fresh",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sloe Gin",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": null,
+        "notes": "fresh, finely chopped",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bacon Rashers",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooked Chestnuts",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Knob of Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0cb54d058116b33c5ab3f6062151dfe35be670a7ce1a6dff466a4c7412f3bdde",
+    "lineage_hash": "b256425d452745a3ec1deebcf87e646eae355365a5cef161e216dd07f68a2970"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/braised-pheasant-recipe-chestnuts",
+    "fetchedAt": "2026-08-03T08:58:48.229Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/braised-pheasant-recipe-chestnuts",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

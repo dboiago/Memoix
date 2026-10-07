@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Slippery When Wet",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the strawberries, lemon juice and honey in a shaker and muddle until well broken up. Add the gin and yogurt and fill the shaker with ice. Shake until chilled, about 15 seconds. Double-strain into a rocks glass filled with crushed ice. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "09abbf4e84ca23fe62b905716ed57fe4886e3a416e78d8e128bfc4dc8700276e",
+    "lineage_hash": "3b247fa5acbd9153fbb34d4a00e69d2f33b3b78aea4673af06723cae4988ba8f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/brunch-cocktail-slippery-when-wet/",
+    "fetchedAt": "2026-08-03T23:56:45.593Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/brunch-cocktail-slippery-when-wet/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

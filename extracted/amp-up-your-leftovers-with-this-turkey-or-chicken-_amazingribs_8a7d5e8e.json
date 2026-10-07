@@ -1,0 +1,156 @@
+{
+  "recipe": {
+    "name": "Turkey Or Chicken Pot Pie",
+    "time": "1 hr 25 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Meat. Start by cooking the meat. Grill or smoke it. You can even use beef or pork.",
+      "Crust. To create the pie crust for the top, follow our foolproof all purpose pie dough recipe here. Make enough for top and bottom crusts for four pot pies. Put it in the refrigerator and chill it for at least an hour.",
+      "Chop. Next, remove the ends and skin from the onion and coarsely chop. Coarsely chop the mushrooms. This should yield approximately ⅓ cup (26 g) of chopped mushrooms. Pull or chop the leftover turkey into bite sized pieces. Peel and core the apples and chop into marble sized pieces. Put the apples in a bowl of cold water so they don&#39;t brown.",
+      "The filling. To make the filling, begin by melting the butter over medium heat in a saucepan. Add the mushrooms and onions, and cook until the onions are soft and translucent, about 5 minutes. Add the frozen vegetables and cook until they are soft, about 10 minutes. Add the meat, herb mix, and stock or water, and cook until warm. Turn to the lowest setting. Don&#39;t add the apples yet. Taste the filling, and add more salt, pepper, or herbs as you feel are needed.",
+      "Preheat the oven to 350°F (176.7°C).",
+      "Sauce. Melt the butter in a small sauce pan over a medium heat. Add the flour a little at a time and whisk it in thoroughly so there are no lumps. Keep whisking until the mixture, called a roux, turns amber, but not brown. A roux adds flavor and complexity, and thickens the sauce. Turn the heat to high and immediately begin adding the stock in a steady stream, whisking all the while so the roux dissolves. Whisk another minute or 3 until the sauce gets a bit thick, perhaps the thickness of latex wall paint.",
+      "Mix. Pour the sauce in with the filling and add the apples. Stir.",
+      "Fill. Take the dough and cut it into eight parts. Make four parts slightly larger since it take more crust to cover the bottom and sides. Spread about 3 tablespoons of flour on a work surface, rub some on your rolling pin, and roll each quarter into a ⅛ inch (3.2 mm) thick disk, rolling from the center outward. Place the four larger disks in each bowl and press them in and up the sides. Make the tops and set the aside.Divide the filling among the four oven-proof bowls with a ladle. Place the top crust on top and if it hangs over the edge, that&#39;s ok. You can either let it simply hang over the edge, or roll it back until it is resting on the edge and make it look nice by crimping it or mushing it down with the tines of a fork. If you want to get fancy you can paint the dough with a thin layer of milk or egg white to help it brown and get shiny. Poke about 3 holes in the top crust with a paring knife to let the steam escape.",
+      "Bake. Put the pies on a sheet pan to catch any overflow and place it on an upper rack where the top crust can benefit from the heat reflected off the top of the oven and darken. Bake for about 40 minutes or until the crust is golden. The actual cooking time will vary depending on how deep your bowls are.",
+      "Serve. Remove from the oven and allow it to cool for about 10 minutes before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "The Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": "The Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Button Mushrooms",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "The Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Leftover Cooked Turkey",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": "The Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Frozen Vegetables",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "The Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Stock",
+        "unit": "C",
+        "notes": "alt: water",
+        "amount": "¼",
+        "section": "The Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Simon & Garfunkel Rub",
+        "unit": "tsp",
+        "notes": "alt: another poultry seasoning",
+        "amount": "½",
+        "section": "The Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Crisp Apples",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "The Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Morton Coarse Kosher Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "The Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": null,
+        "notes": "finely",
+        "amount": "0",
+        "section": "The Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": "The Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "The Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Turkey",
+        "unit": "C",
+        "notes": "alt: chicken stock",
+        "amount": "2",
+        "section": "The Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Single Crust Pie Dough",
+        "unit": null,
+        "notes": "store bought or homemade",
+        "amount": "1",
+        "section": "The Crust",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c63ab645f26a7be47e90341589d91c872c9c91f50b0f93b88e778aeb126d7c16",
+    "lineage_hash": "235ec8768b24db8d631283262cbb0de8fa06780ef2bf4ffddd2bb852033aa879"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://amazingribs.com/tested-recipes/turkey-recipes/smoked-turkey-pot-pie-recipe/",
+    "fetchedAt": "2026-08-01T17:31:33.044Z"
+  },
+  "rawSource": "https://amazingribs.com/tested-recipes/turkey-recipes/smoked-turkey-pot-pie-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

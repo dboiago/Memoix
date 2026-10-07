@@ -1,0 +1,201 @@
+{
+  "recipe": {
+    "name": "Jianbing",
+    "time": "45 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "TO MAKE THE BATTER: At least 30 min before using, whisk together all-purpose flour, buckwheat flour (or rye flour), cornstarch and water together until lump-free (DO NOT worry about overworking the batter). Set aside.",
+      "TO MAKE THE FILLING: Evenly mix ground lamb (or beef, or pork) with cornstarch, salt and ground cumin. Add 1/2 tbsp of oil into a skillet over high heat, then cook the ground meat until evenly browned. Transfer to a large bowl, and let cool for 15 min. Mix with finely diced scallion, cilantro (or mint, which I prefer), ground black and white pepper. Set aside.",
+      "TO MAKE THE BROAD BEAN CHILI SAUCE: Mix sichuan douban paste, honey, smooth peanut butter and grated garlic together until smooth. Add 2 ~3 tbsp of water until the sauce loosens up into the consistency of mayonnaise. Set aside.",
+      "TO MAKE THE JIAN BING: Choose a non-stick crepe-pan as large as possible (mine is around 12″/30 cm). Rub the surface of the pan with an oiled paper-bowel, not too much, just so it has a light sheen (too much oil will deter the batter from grabbing onto the pan). Pour enough batter into the pan to coat the entire surface with a thin layer, swirling the pan while the batter spreads outward to the very edge. Then set the pan over medium-high heat. The batter will set fairly quickly, in under a min.",
+      "Crack 1 large egg directly onto the crepe (NOTE: if your pan is much smaller, you may only need 1/2 egg for each crepe, in which case, beat the egg in a separate bowl then pour 1/2 onto the crepe). Use a wooden spatula to gently mix the egg and spread it across the entire crepe. Let the crepe cook until slightly browned on the bottom, which will take approx 4 min.",
+      "Once the first side is slightly browned, TURN OFF THE HEAT, then flip the crepe over (the residual heat is more than enough). Brush the sauce generously across the whole surface (this is where all the seasoning is from so don't be shy), then add a thin layer of the meat-filling around the center, and a large handful of lightly salted potato chips. Use two spatulas to fold 1/3 of the crepe over from both sides, flattening it by pushing it down with your spatulas. Then turn it 90 degrees, and fold the 2 ends over again. Serve immediately.",
+      "Start the next crepe with a cold pan again. Simply rinse the pan with a bit of running water then dry with a clean kitchen towel."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-purpose Flour",
+        "unit": "+ ⅛ C",
+        "notes": "90 grams",
+        "amount": "½",
+        "section": "BATTER",
+        "isOptional": false
+      },
+      {
+        "name": "Buckwheat Flour",
+        "unit": "C",
+        "notes": "35 grams",
+        "amount": "¼",
+        "section": "BATTER",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "BATTER",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "223 grams",
+        "amount": "1",
+        "section": "BATTER",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Lamb",
+        "unit": "oz",
+        "notes": "150 grams",
+        "amount": "5.3",
+        "section": "MEAT FILLING",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "MEAT FILLING",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "MEAT FILLING",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cumin",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": "MEAT FILLING",
+        "isOptional": false
+      },
+      {
+        "name": "Scallion",
+        "unit": "C",
+        "notes": "32 grams",
+        "amount": "½",
+        "section": "MEAT FILLING",
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "C",
+        "notes": "22 grams",
+        "amount": "⅓",
+        "section": "MEAT FILLING",
+        "isOptional": false
+      },
+      {
+        "name": "Mint",
+        "unit": null,
+        "notes": "I prefer mint",
+        "amount": "0",
+        "section": "MEAT FILLING",
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "MEAT FILLING",
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "MEAT FILLING",
+        "isOptional": false
+      },
+      {
+        "name": "Sichuan Douban Paste",
+        "unit": "C",
+        "notes": "78 grams",
+        "amount": "¼",
+        "section": "BROAD BEAN CHILI SAUCE",
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": "40 grams",
+        "amount": "2",
+        "section": "BROAD BEAN CHILI SAUCE",
+        "isOptional": false
+      },
+      {
+        "name": "Smooth Peanut Butter",
+        "unit": "Tbsp",
+        "notes": "30 grams",
+        "amount": "1½",
+        "section": "BROAD BEAN CHILI SAUCE",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": null,
+        "notes": "grated",
+        "amount": "2",
+        "section": "BROAD BEAN CHILI SAUCE",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "BROAD BEAN CHILI SAUCE",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "3-4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful Potato Chips",
+        "unit": "large",
+        "notes": "lightly salted",
+        "amount": "3-4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e973ebafed76c7fb409a6d792085779f67e06ac33290df9f71e606e7d298b0c1",
+    "lineage_hash": "eb3bbaed70975647c934655ed9667fbdf8f985dcad63c3a40b951f448e4e0723"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ladyandpups.com/2015/04/24/beijing-drunk-food-jian-bing/",
+    "fetchedAt": "2026-08-02T04:09:08.055Z"
+  },
+  "rawSource": "https://ladyandpups.com/2015/04/24/beijing-drunk-food-jian-bing/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

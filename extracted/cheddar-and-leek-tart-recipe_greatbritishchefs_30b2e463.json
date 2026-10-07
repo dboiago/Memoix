@@ -1,0 +1,71 @@
+{
+  "recipe": {
+    "name": "Cheddar and Leek Tart",
+    "time": "45 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, cook the leeks in the butter until soft, but not coloured. Season and set aside to cool, preheat the oven to 165°C/gas mark 4",
+      "Whisk together the eggs, cream, parsley, salt and pepper. Stir in the cooled leeks and grated cheese, reserving enough to sprinkle over the top of each of the tarts before baking",
+      "Roll the pastry out until it is the thickness of a £1 coin. Line each tart tin with the pastry and prick the base of each pastry case with a fork",
+      "Divide the mixture between the tart cases and top each tart with a little cheese and grind over a little extra black pepper. Pop the tarts on a baking tray and bake for 20-25 minutes, or until the pastry is crisp and the tarts are golden",
+      "Leave to cool slightly before taking the tarts out of the tins and serving. These tarts are delicious warm, but are also wonderful cold"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cheddar",
+        "unit": "g",
+        "notes": "extra mature",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leeks",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scant Scattering Flat Leaf Parsley",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sheet Puff Pastry",
+        "unit": null,
+        "notes": "shop bought or gluten-free alternative",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a0d1a214793707451a0ab2d15edb85c01bc3eff0bda81b6de13ff282f61b31a3",
+    "lineage_hash": "2f48b76bb7afff1c3041c4c461ea16d3d1b6149c5b27d9dd01a79fcc92230f80"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cheddar-leek-tart-recipe",
+    "fetchedAt": "2026-08-03T23:11:20.667Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cheddar-leek-tart-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

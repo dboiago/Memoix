@@ -1,0 +1,151 @@
+{
+  "recipe": {
+    "name": "Braised Whole Beef Shin with Gremolata",
+    "time": "25 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, season the beef shin with salt and pepper. Heat some olive oil in a cast iron casserole dish and once hot, sear the beef until brown all over. Remove from the pan and set aside",
+      "Roughly chop the vegetables and add to the pan with the anchovies and thyme, stirring briefly",
+      "Place the beef on top of the vegetables and cover with the wine, stock and orange juice. Bring to the boil, cover with a lid and place in the oven for 2.5 hours",
+      "To make the gremolata, pick the parsley leaves from stalks, finely chop and place in a mixing bowl. Using a microplane or fine grater, grate in the orange zest and garlic cloves. Finely chop the black olives, add to the bowl and mix well. Season with a little salt and pepper",
+      "To serve, carve the shin and divide between plates. Spoon over some cooking juices and sprinkle with the gremolata to finish"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef Shin",
+        "unit": "kg",
+        "notes": "bone-in",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Anchovy Fillets",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bottle of Red Wine",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": "zested",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flat-leaf Parsley",
+        "unit": "bunch",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Black Olives",
+        "unit": null,
+        "notes": "Niçoise or Kalamata, pitted",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0f0f09d89dd93ef9b17e56e235cd80337a6df31c209f18f159e79235ecbed435",
+    "lineage_hash": "880684b66f3f461efe943dbde316164ba61e7862e5fd7546492f1ae4d6378967"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/braised-beef-shin-recipe-with-gremolata",
+    "fetchedAt": "2026-08-03T11:28:26.783Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/braised-beef-shin-recipe-with-gremolata",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

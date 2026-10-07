@@ -1,0 +1,210 @@
+{
+  "recipe": {
+    "name": "Bibimbap (Korean Mixed Rice with Meat and Assorted Vegetables)",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "KR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "570",
+      "carbohydrateContent": "71",
+      "fatContent": "23",
+      "proteinContent": "24"
+    },
+    "directions": [
+      "Prepare and cook ingredients as below. - For meat, mix the beef mince with the meat sauce listed above. Marinate the meat for about 30 mins while you are working on other ingredients to enhance the flavour. Add some cooking oil into a wok and cook the meat on medium high to high heat. It takes about 3 to 5 mins to thoroughly cook it.- Mix the bibimbap sauce ingredients in a bowl.- Cook spinach and bean sprouts per linked recipe.- Rinse, peel and julienne the carrots. Add some cooking oil and 1/4 tsp of fine sea salt in a wok and cook the carrots on medium high to high heat for 2 to 3 mins.- Clean/rinse the shiitake mushrooms and thinly slice them. Add some cooking oil and 1/4 tsp of fine sea salt in a wok and cook the mushrooms on medium high to high heat until they are all cooked. (It takes 2 to 3 mins.)- Make fried eggs. (While sunny side up is common, you can make them per your preference.)",
+      "Put the rice into a bowl and add the meat, assorted vegetables, seasoned seaweed, bibimbap sauce, and the egg on top of the rice. Serve.",
+      "To eat,  mix the ingredients in the bowl, and enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef Mince (3.5 Ounces)",
+        "unit": "g",
+        "notes": "or other cuts",
+        "amount": "100",
+        "section": "Meat and meat sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Meat and meat sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Meat and meat sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Meat and meat sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "¼",
+        "section": "Meat and meat sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Spinach",
+        "unit": "g",
+        "notes": "0.6 pounds",
+        "amount": "250",
+        "section": "Vegetables and other",
+        "isOptional": false
+      },
+      {
+        "name": "Bean Sprouts (0.8 Pounds)",
+        "unit": "g",
+        "notes": "You don’t have to use them up if you think it’s too much but I love having lots of vegetables on my bibimbap!",
+        "amount": "350",
+        "section": "Vegetables and other",
+        "isOptional": false
+      },
+      {
+        "name": "Shiitake Mushroom",
+        "unit": "g",
+        "notes": "3.5 ounces",
+        "amount": "100",
+        "section": "Vegetables and other",
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "g",
+        "notes": "4.2 ounces, 1 small",
+        "amount": "120",
+        "section": "Vegetables and other",
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "tsp",
+        "notes": "1/4 tsp each will be used when cooking shiitake mushroom and carrots",
+        "amount": "½",
+        "section": "Vegetables and other",
+        "isOptional": false
+      },
+      {
+        "name": "Steamed Rice",
+        "unit": "C",
+        "notes": "3 to 4 serving portions",
+        "amount": "3",
+        "section": "Vegetables and other",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "3 or 4 depending on the serving portion",
+        "amount": "3",
+        "section": "Vegetables and other",
+        "isOptional": false
+      },
+      {
+        "name": "Some Cooking Oil (to Cook the Meat, Mushroom, Carrots and Eggs – I Used Rice Bran Oil)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Vegetables and other",
+        "isOptional": false
+      },
+      {
+        "name": "Some Toasted Seasoned Seaweed Shredded (long Thin Cut)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Vegetables and other",
+        "isOptional": false
+      },
+      {
+        "name": "Gochujang",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Bibimbap sauce - The below sauce might be only enough for 3 servings if you like eating it spicy.",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Bibimbap sauce - The below sauce might be only enough for 3 servings if you like eating it spicy.",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar - I Used Raw Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Bibimbap sauce - The below sauce might be only enough for 3 servings if you like eating it spicy.",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Bibimbap sauce - The below sauce might be only enough for 3 servings if you like eating it spicy.",
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Bibimbap sauce - The below sauce might be only enough for 3 servings if you like eating it spicy.",
+        "isOptional": false
+      },
+      {
+        "name": "Vinegar - I Used Apple Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Bibimbap sauce - The below sauce might be only enough for 3 servings if you like eating it spicy.",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": "Bibimbap sauce - The below sauce might be only enough for 3 servings if you like eating it spicy.",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9047f438f027b9c71e0b0531db6940b084adc60a3ba53380dc0ca4df68108ffc",
+    "lineage_hash": "ea8517f28d0e88be58ed773597fe7a1d5e89d3c0ad7b354551f51760c8e4a80e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://mykoreankitchen.com/bibimbap-korean-mixed-rice-with-meat-and-assorted-vegetables/",
+    "fetchedAt": "2026-08-02T01:51:11.412Z"
+  },
+  "rawSource": "https://mykoreankitchen.com/bibimbap-korean-mixed-rice-with-meat-and-assorted-vegetables/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

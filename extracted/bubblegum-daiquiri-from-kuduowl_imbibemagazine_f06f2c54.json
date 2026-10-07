@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Bubblegum Daiquiri",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to a shaker with ice. Shake to chill and strain into a chilled glass.\nBubblegum-Infused RumAdd 3 1/2 oz. of Hubba Bubba Original Bubble Gum to 10 oz. of light rum in a food-safe vessel and let it infuse for 24 hours. Double strain the mixture and bottle. Does not expire."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "ddb3ae41e53d9cfb4eb81668e7d6dd33f0f42cc7df0841c7f3c3c49fa97e7388",
+    "lineage_hash": "df2222d7e5a44d84a4dfb7a2ec092f9fa563432a5ef09a71bee568b686a4a533"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bubblegum-daiquiri-from-kuduowl/",
+    "fetchedAt": "2026-08-04T00:29:16.270Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bubblegum-daiquiri-from-kuduowl/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

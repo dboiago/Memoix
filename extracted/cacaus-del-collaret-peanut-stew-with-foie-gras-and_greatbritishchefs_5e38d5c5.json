@@ -1,0 +1,413 @@
+{
+  "recipe": {
+    "name": "Cacaus del Collaret Peanut Stew with Foie Gras and Smoked Eel",
+    "time": "6 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Carefully shell the peanuts. Make sure to select only the ones that aren’t damaged",
+      "Mix the salt and water together. Put everything in the OCOO. Cover the surface with a baking paper disc",
+      "Cook in the OCOO for 7 hours on the black egg programme. Without opening the OCOO, leave everything to stand for at least another 3 hours",
+      "Remove and strain the mixture through a coarse strainer, taking care not to break the peanuts apart. Save the cooking water for the stock later on",
+      "Wash the peanuts in a 2% brine solution (20g salt per litre of water)",
+      "Vacuum-pack the peanuts in more brine, about 100g peanuts per bag",
+      "Next, cut off the head and tail off the eels and bleed them in salted ice water. Reserve the head and tail for stock",
+      "Remove the bones from the eels without separating the two eel loins. Reserve the bones for stock",
+      "Cure the loins for 40 minutes with a mixture that is 2 parts salt to 1 part sugar",
+      "Rinse and dry the cured eel, and then cold smoke them",
+      "Vac pack the smoked eel with a little smoked sunflower oil",
+      "Cook the eel for 4 hours in a sous vide at 64°C",
+      "Cool the cooked, smoked eel quickly in icy water",
+      "Once cold, remove the meat and keep the skins clean",
+      "Remove the skin from the smoked eel and then re-cover the cleaned loin with cooked eel skin",
+      "Making sure that the skin is completely covering it, vacuum pack the eel fillet",
+      "Cook the eel at 65°C in a sous vide for 15 minutes. Cool it down in ice water",
+      "Cut the cooled eel into 1x1cm cubes. Set aside in the fridge",
+      "Before serving, heat up to 120°C in the oven on a covered plate",
+      "Roast the onions, red bell peppers and carrots until coloured in the oven in several large trays",
+      "Fry the bacon in olive oil until golden brown",
+      "Add the garlic and the cayenne pepper then the roasted vegetables and brown further",
+      "Add the pimentón, chopped tomatoes, tomato sauce, chicken, the veal shank with the deglazing liquid, 12 litres of peanut stock, 40 litres of water, ham bones, blanched veal tendons, tripa de bacalau, 2 kg eel heads, bones and skin leftover from the smoked eel and 4kg unsmoked eel meat, bones and heads",
+      "Bring to the boil, and then add the Japanese eel sauce (kabayaki). Cook over a medium-low heat for 4-5 hours. During the last 20 minutes, add the fresh rosemary",
+      "Leave to rest and then strain everything out. Adjust seasoning to taste",
+      "To serve, blend the sauce gently with the 2.6g xanthan gum and 1 g of liquid red colouring per litre, then bring it to the boil. Let stand to remove any air",
+      "Keep a few ladles of the broth warm in two pots. Use one pot to warm the peanuts, and use the other as sauce",
+      "For the foie gras, boil the water and the cream with the agar and blend in a blender with the xanthan gum. Once it has cooled to around 70°C, emulsify in the foie gras",
+      "Pour onto a plate and leave to set for at least 2 hours in the freezer",
+      "Place a slice of oblate on top and paint with gold dust. Cut into 1x1cm cubes",
+      "Before serving, heat the cubes on a covered plate at 100°C in the oven",
+      "For the hot garlic oil, mix everything in a pan and heat gradually until it begins to brown",
+      "Remove from the heat and leave it to infuse. Strain, then and pour into bottles",
+      "To serve, arrange 2 cubes of smoked eel and 2 cubes of foie gras royale on the bottom of each hot plate",
+      "Add 20g of the Cacau beans that have been heated in the stock along with 35g broth. Place Brussels sprout leaves and rosemary flowers on each eel cube, then finish with 6 drops of the hot garlic oil"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Peanuts",
+        "unit": "g",
+        "notes": "raw, ideally cacau del collaret peanuts",
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eel",
+        "unit": null,
+        "notes": "ideally large, fresh silver eels",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cane Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Onions",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Bell Peppers",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": null,
+        "notes": "toasted in the oven, in several Gastronorms",
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bacon",
+        "unit": "kg",
+        "notes": "diced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "peeled and crushed",
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cayenne Peppers",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Agridulce Pimentón De LA Vera",
+        "unit": "g",
+        "notes": "bittersweet Spanish paprika",
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Sauce",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken",
+        "unit": "kg",
+        "notes": "chopped up into pieces",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Veal Shank",
+        "unit": "kg",
+        "notes": "deglazed and roasted in the oven, then diced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Water",
+        "unit": "L",
+        "notes": "leftover from the peanut stew",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Beans",
+        "unit": "kg",
+        "notes": "roughly 4 jars of beans",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jamón Bones",
+        "unit": "kg",
+        "notes": "blanched",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Veal Tendons",
+        "unit": "kg",
+        "notes": "blanched",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tripa De Bacalao (cod Sounds or Swim Bladder)",
+        "unit": "g",
+        "notes": "desalted and chopped",
+        "amount": "800",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Eel",
+        "unit": "kg",
+        "notes": "leftover from the smoked eel cube e.g. heads, bones and skin",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eel",
+        "unit": "kg",
+        "notes": "leftovers from making eel skin e.g heads, bones and meat",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kabayaki Sauce",
+        "unit": "kg",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "240",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Xanthan Gum",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Food Colouring",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Single Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Agar Agar",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Xanthan Gum",
+        "unit": "g",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Foie Gras",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sheet of Oblate",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gold Dust",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": "g",
+        "notes": "peeled and sliced",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chipotle Chillies",
+        "unit": "g",
+        "notes": "dried, seeds removed and sliced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Brussels Sprout Leaves",
+        "unit": null,
+        "notes": "blanched",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary Flowers",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "94ead604ea84f17b2acf1b18cba2c4652fba7c3b2761a6b5f0fc3aa3d681cd0c",
+    "lineage_hash": "6dd18ca2093d8e6c6db57bc1caa64b15c43faad519dd54b3a8d080e0e6966f2e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/peanut-stew-foie-gras-smoked-eel-recipe",
+    "fetchedAt": "2026-08-02T16:52:01.896Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/peanut-stew-foie-gras-smoked-eel-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

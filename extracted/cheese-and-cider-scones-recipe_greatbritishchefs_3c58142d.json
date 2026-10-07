@@ -1,0 +1,180 @@
+{
+  "recipe": {
+    "name": "Cheese and Cider Scones",
+    "time": "1 hr 20 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "20",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 180°C and put a large bowl in the freezer",
+      "For the rarebit sauce, melt the butter in a pan on a low heat. Add the flour and stir through. Cook out to a blonde roux, stirring constantly",
+      "Slowly whisk in the cider, then the milk and bring to a gentle boil",
+      "Remove the pan from the heat and add in the remaining ingredients, then whisk until smooth.&nbsp;Store in piping bags until needed",
+      "Next, make the scones. Blitz together the flour, butter, cheese, baking powder, yeast and salt to a sandy texture in a food processor. Do this in batches if needed to avoid the mix warming up too much",
+      "Add the buttermilk and milk and mix just until it comes together into a dough. Avoid overworking the dough: you want the mixture to look rough; if it starts to become smooth then you’ve overworked it",
+      "Turn the dough out onto a lightly floured bench and roll out with a floured rolling pin until it’s 1 inch thick",
+      "Punch out scones with a 5.5 cm round cutter (or whichever shape you prefer)",
+      "Brush the tops with egg wash and then bake for 15 minutes, turning the tray half way through cooking. Remove from the oven and leave the oven on",
+      "Cut the scones in half and pipe or spoon over some of the rarebit sauce. Bake for a couple minutes, just until the sauce has some colour. Remove from the oven and serve with chopped chives"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cider",
+        "unit": "ml",
+        "notes": null,
+        "amount": "440",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Aged Red Leicester",
+        "unit": "g",
+        "notes": "or other good quality hard cheese, grated",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "English Mustard",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinches",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": null,
+        "notes": "fresh, to garnish, copped",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "frozen then grated",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caerphilly Cheese",
+        "unit": "g",
+        "notes": "grated then frozen",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutritional Yeast",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "g",
+        "notes": "crème fraiche or yoghurt will also work well",
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "beaten, for egg wash",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "37f44708c5c0b00fd8ae67ced704e54254ac7721f7c8547c88d6ec9024093f12",
+    "lineage_hash": "1f9c095ed3d0d9416ddf422e5da91878d553ab711085eb8b7eaff1c9a6db7b98"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cheese-cider-scones-recipe",
+    "fetchedAt": "2026-08-02T06:50:34.891Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cheese-cider-scones-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

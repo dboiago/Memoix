@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Aperitif Punch: A Field Near Arles",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Ice-filled",
+    "garnish": [
+      "Garnish"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a press pot, layer the grapefruit and cucumber slices with the herbs in an alternating fashion. Add all liquid ingredients except club soda, and place the plunger on top. Let steep 4-5 minutes; press plunger, and serve in ice-filled glasses, topping each serving with an equal amount of chilled soda water, to taste. Garnish.\nPre-Infused Navy-Strength GinCombine 1 750 ml. bottle of Navy-strength gin (Bolton uses Hayman’s Royal Dock) with the zest of two lemons, the zest of one grapefruit, 1/2 of a sliced cucumber, 3 rosemary sprigs, 5 thyme sprigs and 2 Tbsp. dried lavender. Let infuse for 5 hours, then strain through a fine-mesh strainer and bottle for use. Keep refrigerated; use within 2 weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "2b2b620760dac3c794b5e87ca440ec65d5e1255f5f2f99fed5524a9ded593cbd",
+    "lineage_hash": "bdb70e8dec72fc1b1b709bae827330b3e3efd8864bd496372f9e6e5b1a1a5f02"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/aperitif-punch-a-field-near-arles/",
+    "fetchedAt": "2026-08-04T00:10:38.634Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/aperitif-punch-a-field-near-arles/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

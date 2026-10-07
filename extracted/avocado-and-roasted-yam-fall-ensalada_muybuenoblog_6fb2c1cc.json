@@ -1,0 +1,133 @@
+{
+  "recipe": {
+    "name": "Avocado and Roasted Yam Fall Ensalada",
+    "time": "22 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "1435",
+      "carbohydrateContent": "205",
+      "fatContent": "69",
+      "proteinContent": "22"
+    },
+    "directions": [
+      "In a dry skillet toast the pepitas for about 5 minutes or until they start to pop. Set aside to cool off and reserve.",
+      "Over high heat, heat skillet, add 1 tablespoon olive oil and roast the corn for about 5 minutes. Set aside to cool.",
+      "Using the same pan add 1 tablespoon olive oil allow to heat well. Add yams and roast, turning as needed to roast evenly. Set aside.",
+      "Chop onions, cilantro, and serrano chile.",
+      "Dice apple and avocado.",
+      "In a large mixing bowl combine all ingredients with lime juice. Toss gently. Add salt and pepper to taste."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pepitas",
+        "unit": "C",
+        "notes": "hulled pumpkin seeds, toasted",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn",
+        "unit": "C",
+        "notes": "canned (drained) or 1 ear of corn, shucked and cut from the cob",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": "divided",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yam",
+        "unit": "large",
+        "notes": "peeled and diced into 1/2-inch cubes",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "C",
+        "notes": "finely chopped",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Serrano Chile",
+        "unit": null,
+        "notes": "stemmed, and finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red or Green Apple",
+        "unit": null,
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Avocado From Mexico",
+        "unit": null,
+        "notes": "save the avocado skins to use as serve ware, ripe, halved, pitted and diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "aa27b0279dd2a917deb44143b9447a1b50e69f7438ee7aba7e2bf087c2f753e7",
+    "lineage_hash": "f671609807a22ac63392926835c5d81bb1cddcab60e0c4f36b09c880e1e37dc8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/avocado-and-roasted-yam-fall-ensalada/",
+    "fetchedAt": "2026-08-02T06:47:43.128Z"
+  },
+  "rawSource": "https://muybuenoblog.com/avocado-and-roasted-yam-fall-ensalada/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

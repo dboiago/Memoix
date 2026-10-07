@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Ancho Chile Cocktail: Nonna's Biscotto",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake all of the ingredients without ice until foamy, then add ice and shake hard for 20 seconds. Double strain into a chilled coupe, and garnish.\nBurnt Sugar SyrupConstantly stir 1 cup of granulated white sugar in a saucepan over medium-high heat until it begins to melt. (Take care—the sugar will get very hot.) When the sugar turns dark brown and just starts to smoke, remove from the heat and immediately add 3⁄4 cup of hot water (careful, it will splatter), then stir constantly until the water is fully incorporated. Return to medium-high heat and continue stirring until the syrup thickens and dime-size bubbles appear, about 3 minutes. Let cool, then bottle and keep refrigerated for up to 3 weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "bbc60f56610cc6f29bdd10c4ac83fac9020bdbdc33646fa8ae74e0c1c7e57edc",
+    "lineage_hash": "9353b31fad4e40e14c6d81f9aa85d2752cc28d1eb527326b695f237b1c3811ef"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/ancho-chile-cocktail-nonnas-biscotto/",
+    "fetchedAt": "2026-08-04T00:15:01.956Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/ancho-chile-cocktail-nonnas-biscotto/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

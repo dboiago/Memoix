@@ -1,0 +1,102 @@
+{
+  "recipe": {
+    "name": "Aam Panna",
+    "time": "25 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "136",
+      "carbohydrateContent": "34",
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Peel the raw mangoes and then cut them into small pieces.",
+      "Transfer the cut pieces to a pan and add 1 cup water to it. Cook on medium heat till the mangoes pieces are soft, around 10 minutes.",
+      "Remove pan from heat and transfer the softened mango (along with the water in which it was cooked) to a blender. Let it cool down a little.",
+      "Add 3 cups cold water, mint leaves and sugar. Blend to a smooth paste.",
+      "Strain the liquid into another bowl, add cumin powder, black salt and black pepper. Mix till everything is well combined.",
+      "Transfer aam panna to a glass bottle and keep refrigerated.",
+      "To serve, fill 2/3rd to 3/4th of a glass with aam panna mixture, fill remaining with cold water and serve chilled with fresh mint leaves."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Grams Raw Green Mangoes",
+        "unit": null,
+        "notes": "around 6 small",
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "divided",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated White Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": "or as needed",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "25-30",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "55a3b63bc7a1d9423b702a4e918096465358b36782b68522da9d2e067835b17d",
+    "lineage_hash": "eb3866c809c8a0dbedbb510b559142e9388dd08930b5256ce6805e5b1ea48686"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/aam-panna/",
+    "fetchedAt": "2026-08-01T17:00:33.105Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/aam-panna/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

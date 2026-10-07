@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Bon Soirée: A Spicy Margarita",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Tajin",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Rim a chilled glass with tajin. Combine the ingredients in a shaker with ice. Shake to chill, then strain into the prepared glass."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "535f2923a049e6b2b282e81f67d7725d363634a398818ccc4be404386ceeecf6",
+    "lineage_hash": "cf2748cb48b9baf16e282648f4be6f85491d7dd74fda6a509524594f03584b29"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bon-soiree-spicy-margarita/",
+    "fetchedAt": "2026-08-04T00:31:17.517Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bon-soiree-spicy-margarita/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

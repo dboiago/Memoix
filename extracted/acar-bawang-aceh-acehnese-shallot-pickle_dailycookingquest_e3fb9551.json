@@ -1,0 +1,86 @@
+{
+  "recipe": {
+    "name": "Acar Bawang Aceh (Acehnese Shallot Pickle)",
+    "time": "30 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "ID",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Peel the skin of shallots. Wash with cold drinking water to remove grit and dirt. Drain, then thickly slice and set aside.",
+      "Remove the stalks from the chilies. Wash with cold drinking water and drain. Set aside.",
+      "Mix together hot drinking water with sugar, vinegar, and salt. Stir until sugar has completely dissolved. This is the pickling solution. Let the solution cool slightly.",
+      "Add shallot and chili to the pickling solution and stir to mix well. Set aside until it reaches room temperature. Transfer to a clean jar and chill in the fridge for at least 2 hours, overnight is best. Consumed within 2 weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gram Shallots",
+        "unit": null,
+        "notes": "Indonesian: bawang merah",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Green Thai Chilies",
+        "unit": null,
+        "notes": "Indonesian: cabe rawit hijau",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Drinking Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Vinegar",
+        "unit": "tsp",
+        "notes": "Indonesian: cuka putih",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9510c8e24a73825f50b03fe8de2c7a9e208ab1b9c66a595b672078f672e0db7c",
+    "lineage_hash": "c0ed98edb8446c9c48176757c0cc441faf5b3c00775c82ec9c322e8b189d74d7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/acar-bawang-aceh-acehnese-shallot-pickle.html",
+    "fetchedAt": "2026-08-02T09:12:36.985Z"
+  },
+  "rawSource": "https://dailycookingquest.com/acar-bawang-aceh-acehnese-shallot-pickle.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

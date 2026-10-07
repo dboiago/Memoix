@@ -1,0 +1,104 @@
+{
+  "recipe": {
+    "name": "Bacon-Apple Crisp",
+    "time": "1 hr 15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Set up your grill for smoke-roasting/indirect grilling and preheat to 400 degrees.",
+      "Make the filling: Fry the bacon in the skillet over medium heat until crisp and golden brown, 4 minutes, stirring with a slotted spoon. Transfer the bacon to a large mixing bowl. Pour the bacon fat into a jar and reserve for a later use. Don’t wipe out or wash the skillet.",
+      "Peel and core the apples and cut into 1-inch pieces. Place in the mixing bowl with the bacon. Stir in the sugar, cornstarch, lemon zest, cinnamon, and salt. Stir in the whiskey. Taste the mixture for sweetness, adding sugar as needed. Spoon the filling into the skillet.",
+      "Make the topping: Place the crushed cookies, flour, white and brown sugar, salt, and butter in a food processor. Grind to a coarse powder, running the processor in short bursts. (The butter should remain in pea-size pieces.) Don’t over-process: the mixture should remain loose and crumbly. Sprinkle the mixture over the apples.",
+      "Place the crisp in the grill or smoker away from direct heat. Toss soaked apple wood chips on the coals. Close the lid. Smoke-roast the crisp until the topping is browned and bubbling, the apples are soft (they should be easy to pierce with a skewer), and the filling is thick, 45 minutes to 1 hour.",
+      "Serve the crisp warm directly from the skillet. Top with vanilla ice cream."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Strips Smoky Bacon",
+        "unit": null,
+        "notes": "cut crosswise into 1/4-inch slivers",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crisp Sweet Apples",
+        "unit": "lb",
+        "notes": "such as Honey Crisps or Galas",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "C",
+        "notes": "or to taste—light or dark, it doesn’t matter",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": "alt: all-purpose white flour",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Zest",
+        "unit": "tsp",
+        "notes": "finely, grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rye Whiskey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "166f8617dfdfde801de2030e132fb59320a6ee51a6c71f8a6a20afc8ba02c69a",
+    "lineage_hash": "b38741a1a02b528e2f8df70cb87a757c978a36caa72860832a5944624f65226c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/bacon-apple-crisp/",
+    "fetchedAt": "2026-08-03T04:35:40.269Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/bacon-apple-crisp/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Bien-Aimée",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Flute",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Muddle the raspberries with crème de cacao in a shaker tin. Add the Cognac, lemon juice, and absinthe. Fill a chilled flute 2/3 full with chilled sparkling rosé. Quickly shake the cocktail with ice, then double strain over the bubbles. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "b46ff5329147545149deb1660f570b450187f587871c64f2cdb0680a1932a8e4",
+    "lineage_hash": "590e52f683ea38633dd1c4fa09a3715ec7871619123bd2880e53b47caa0da39f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bien-aimee-by-sharon-yeung/",
+    "fetchedAt": "2026-08-03T22:20:40.174Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bien-aimee-by-sharon-yeung/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

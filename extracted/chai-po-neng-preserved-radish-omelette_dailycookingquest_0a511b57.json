@@ -1,0 +1,96 @@
+{
+  "recipe": {
+    "name": "Chai Po Neng (Preserved Radish Omelette)",
+    "time": "20 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Wash and rinse preserved radish under cold running water until water runs clear. Pat dry with kitchen towel and set aside.",
+      "Heat a 10\" cast iron pan (or a non-stick pan) over medium heat.",
+      "Add 2 tablespoon oil and sauté garlic until fragrant, about 30 seconds.",
+      "Add preserved radish, stir fry for 2 minutes. Then spread into an even layer.",
+      "Whisk together eggs, stock/water, and scallions. Pour into the pan over the radish. Cook until the egg is fully set.",
+      "Remove omelette from pan and cut into 4-8 pieces. Serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gram Sweet Preserved Radish",
+        "unit": null,
+        "notes": "*",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Salted Preserved Radish",
+        "unit": null,
+        "notes": "*",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "lightly beaten",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Stock/water",
+        "unit": "C",
+        "notes": "or chicken stock for non-vegetarian version",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallion",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "71392e6507bb5bcced92ba59deb4c27ba9a6e731ac75bf5b0ef988e40b534dae",
+    "lineage_hash": "98ade285d27b998f56d1454274251ef140e0579f2959f32d4c08bf40d0eecc5b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/chai-po-neng-preserved-radish-omelette.html",
+    "fetchedAt": "2026-08-02T00:00:50.228Z"
+  },
+  "rawSource": "https://dailycookingquest.com/chai-po-neng-preserved-radish-omelette.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

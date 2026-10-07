@@ -1,0 +1,224 @@
+{
+  "recipe": {
+    "name": "Blackberry and Chocolate Tart",
+    "time": "2 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the milk and cream in a saucepan with the cinnamon stick. Warm gently over a low heat for 15 minutes. (Taste this now and steep the cinnamon longer if needed)",
+      "Place the egg yolks in a bowl and whisk with the sugar until pale.\r\nContinue to whisk, gradually pouring the milk and cream mixture through a sieve into the egg mixture until smooth and combined",
+      "Place the custard in a heavy-based saucepan and add in the chocolate. Taste and add more chocolate if desired. Over a low heat, stir constantly for 5–10 minutes or until\r\nthickened and coating the back of a spoon. Transfer to a clean bowl and place in the fridge to cool",
+      "When cool, churn in an ice cream maker, place in a clean container and store in the freezer",
+      "To make the pastry, sift together the flour, cocoa, salt and icing sugar. Rub in the cold butter (using your fingers or a food processor) until the mixture resembles fine breadcrumbs",
+      "Mix the egg yolk with the water and add to the mixture to make a dough. Add more water at this point, if you need to. Press the pastry into a ball, wrap in cling film and chill for 1\r\nhour",
+      "Roll out the pastry to fill your tin (you will have some spare). Prick the pastry base with a fork and then put it back in the fridge to rest for 2 hours",
+      "Line the case with foil and fill with baking beans. Blind-bake them for 15 minutes. Remove the foil and baking beans and bake them for 5 more minutes. Remove from the oven but leave the case in the tins to cool completely",
+      "In a saucepan, combine the blackberries and lemon juice and cook until they are broken down completely. Strain the blackberries and keep the juice",
+      "In a bowl, cream together the butter and sugar until fluffy. Then whisk the eggs into the butter and sugar until combined",
+      "Now, add the egg mixture to a heavy-based saucepan with your strained blackberry juice. With the heat on low, stir the mixture until it thickens and reads 77°C on a thermometer",
+      "When the mixture is thick, fill the case about 1/2 to 2/3 full. Place cling film over the curd and place in the fridge overnight",
+      "For the ganache, place the chocolate in a heatproof bowl. Place the cream, salt and sugar in a saucepan and heat on low. When hot, take the cream off the heat and pour over the chocolate. Leave it for a few minutes and then stir to combine. Pour the ganache over the tart and place in the fridge to set for 2 hours",
+      "Remove from the fridge, take the tart out of the tin and slice as desired. Serve with chocolate cinnamon ice cream"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "285",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "142",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "85",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "Willie's Cacao Chulucanas Gold 70%, broken up into small pieces",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": "Willie's Cacao Peruvian Chulucanas",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "diced and chilled",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": "cold",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blackberries",
+        "unit": "g",
+        "notes": "fresh or frozen",
+        "amount": "275",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": "freshly squeezed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "cubed",
+        "amount": "55",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate Drops",
+        "unit": "g",
+        "notes": "Willie's Cacao Los Llanos 70%",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3bd7a0686fda7c6c7e072c87df074eb03c4089b4214bf5e5e1641416635d5fa3",
+    "lineage_hash": "c58baaf28e556eb8ea479abb7c8189dddd83092b9d75b7d24e32498a771f7cdf"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-blackberry-tart-recipe",
+    "fetchedAt": "2026-08-03T09:59:34.919Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-blackberry-tart-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

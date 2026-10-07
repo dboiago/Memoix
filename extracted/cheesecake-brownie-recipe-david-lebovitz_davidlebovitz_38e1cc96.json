@@ -1,0 +1,146 @@
+{
+  "recipe": {
+    "name": "Cheesecake Brownie",
+    "time": "1 hr 5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Line a 9-inch (23cm) or 8-inch (20cm) square pan with foil, making sure it goes up all four sides. Use two sheets if necessary. Mist with non-stick spray or grease lightly.",
+      "Preheat oven to 350 degrees (180C).",
+      "In a medium saucepan, to make the brownie batter, melt the butter and chocolate over low heat, stirring until smooth. Remove from heat and beat in the 2/3 cup (130g) sugar, then the eggs.",
+      "Mix in the flour, cocoa powder and salt, then the vanilla and chocolate chips. Spread evenly in the prepared pan.",
+      "In a separate bowl for the cheesecake topping, beat together the cream cheese, the yolk, 5 tablespoons (75g) of sugar, and vanilla until smooth.",
+      "Distribute the cream cheese mixture in eight dollops across the top of the brownie mixture, then take a dull knife or spatula and swirl the cream cheese mixture with the chocolate batter. Rap the pan on a countertop a few times to let the batter and swirl settle together.",
+      "Bake until the batter in the center of the pan feels just set, 35 to 40 minutes.",
+      "Let cool, then lift the brownies out holding the foil and peel it away. Cut the brownies into squares."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": "85g, cut into pieces",
+        "amount": "6",
+        "section": "brownies",
+        "isOptional": false
+      },
+      {
+        "name": "Bittersweet",
+        "unit": "oz",
+        "notes": "alt: semisweet chocolate, 115g, chopped",
+        "amount": "4",
+        "section": "brownies",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": "130g",
+        "amount": "⅔",
+        "section": "brownies",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "at room temperature",
+        "amount": "2",
+        "section": "brownies",
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "C",
+        "notes": "70g",
+        "amount": "½",
+        "section": "brownies",
+        "isOptional": false
+      },
+      {
+        "name": "Unsweetened Cocoa Powder",
+        "unit": "Tbsp",
+        "notes": "natural or Dutch process",
+        "amount": "1",
+        "section": "brownies",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": "brownies",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "brownies",
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Chips",
+        "unit": "C",
+        "notes": "80g",
+        "amount": "½",
+        "section": "brownies",
+        "isOptional": false
+      },
+      {
+        "name": "Cream Cheese",
+        "unit": "oz",
+        "notes": "225g, at room temperature",
+        "amount": "8",
+        "section": "cheesecake topping",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": "cheesecake topping",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": "75g",
+        "amount": "5",
+        "section": "cheesecake topping",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": "cheesecake topping",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "dc71629ab2e63bd1daf82d9e7485d134e8ca4a31a40aae8ed9785e5cad4e5939",
+    "lineage_hash": "07750a26ebbda9719ef25baf5cded645cc6236452e99944d8fe6a25609321744"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/cheesecake-brownies/",
+    "fetchedAt": "2026-08-03T03:28:45.193Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/cheesecake-brownies/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

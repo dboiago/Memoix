@@ -1,0 +1,35 @@
+{
+  "recipe": {
+    "name": "Aquavit Cocktail",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the first 4 ingredients in a shaker. Add ice and shake well. Strain into a chilled coupe, top with prosecco, and garnish.",
+      "Reprinted from Cocktails for the Holidays: Festive Drinks to Celebrate the Season by the Editors of Imbibe Magazine."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "2e855f38202ba28337f13a0bc75a109ddff5a7fd103362fd93c1dff40d7c13a0",
+    "lineage_hash": "e34a856a85dafd11d82a28a74eebaad3e2a1ed2a6d53a4f24443419319cf7b99"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/aquavit-cocktail-st-knuts-day/",
+    "fetchedAt": "2026-08-03T18:31:23.567Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/aquavit-cocktail-st-knuts-day/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

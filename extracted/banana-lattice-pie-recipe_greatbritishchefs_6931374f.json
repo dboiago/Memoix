@@ -1,0 +1,98 @@
+{
+  "recipe": {
+    "name": "Banana lattice pie",
+    "time": "1 hr 45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Firstly roll out your pre-prepared, room temperature shortcrust pastry to larger than the size of your tin, using a rolling pin pick up the pastry and place over the tin",
+      "Using your fingers or an extra piece of dough gently tease the pastry into the tin and into the side grooves. Using the rolling pin, roll it over the finished tin to get rid of excess pastry. Keep that extra pastry in some clingfilm in the fridge till you do your lattice",
+      "Place a piece of parchment paper or clingfilm onto the pastry and fill with baking beads or rice. Blind bake for 20 minutes then remove the beads and paper and bake until the pastry is a light golden brown. This should take another 10 minutes",
+      "In a medium sized non stick saucepan, place the unsalted butter in till it melts on a medium heat. Add in the chopped bananas, vanilla seeds, dark brown sugar and mixed spice to the pan",
+      "Let this mixture cook for about 5 minutes, use a potato masher or wooden spoon to break up the bananas as they cook on the hob. You want a rustic pureed mixture",
+      "Once the mixture is cooked set aside for a few minutes. Then the blind baked shortcrust pastry tin,  pour in the pureed banana mixture, smooth out with the back of a spoon to make sure the mix is even and up to the edges of the pastry",
+      "Time to make your lattice, take the remaining pastry from the fridge (make sure it comes to room temp so it's more pliable) then using a ruler and knife cut into long strips",
+      "Criss cross these strips over each other on the pie, without stretching too much, use your thumb to seal each strip against the edge of the tin and press off extra dough. Brush the lattice with egg wash and place back into the oven at the same temperature for about 30-40 minutes till golden. Serve warm or cold"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Shortcrust Pastry",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bananas",
+        "unit": null,
+        "notes": "large, over-ripe, chopped",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": "seeds extracted",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Spice",
+        "unit": "tsp",
+        "notes": "ground",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "beaten for egg wash",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e9d9fed073b3a9ee2c335f7cf9982673c97dac74b848bbb582ef7fe0ef9f4a74",
+    "lineage_hash": "72162cbe9b0b7b8336fe20fe17f3cf4b482e9d9a329abc3da26633e1386f7c25"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/banana-lattice-pie-recipe",
+    "fetchedAt": "2026-08-03T22:51:54.324Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/banana-lattice-pie-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

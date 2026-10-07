@@ -1,0 +1,37 @@
+{
+  "recipe": {
+    "name": "Absinthe Frappe",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Collins",
+    "garnish": [
+      "Fresh Mint",
+      "Lime or Lemon Wedge"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Gently muddle the mint and lemon wedge with the simple syrup in the bottom of a shaker. Add the absinthe and ice; shake vigorously. Strain into a Collins, highball or frappé glass. Pack with crushed ice and top with a splash of soda water. Use a barspoon to gently incorporate the bubbles. Garnish with fresh mint and a lime or lemon wedge."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "531784e3910d3b8307138e6ecfdd300a13e3e50bf9fac0e0da0befab3e6430b4",
+    "lineage_hash": "072956be328ac7f815b85980fbf6b3c7f122d20512af2554407f225998790215"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/absinthe-frappe-recipe/",
+    "fetchedAt": "2026-08-03T21:00:28.928Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/absinthe-frappe-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

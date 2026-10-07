@@ -1,0 +1,177 @@
+{
+  "recipe": {
+    "name": "Cantonese Braised Beef",
+    "time": "2 hr 45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Blanch beef in a pot of boiling water for 8-10 minutes. Rinse under running cold water, drain, and set aside.",
+      "Heat oil in a wok and sauté garlic and ginger until fragrant, about 2-3 minutes.",
+      "Add chu hou paste, hoisin sauce, and oyster sauce. Mix well, and cook for 1 minute.",
+      "Return the beef to the wok, add star anise, orange peel, bay leaf, and Shaoxing. Cook until beef is slightly browned, about 3 minutes.",
+      "Add water and bring to a boil. Lower heat, cover the wok, and simmer until the beef is tender, about 2 hours.",
+      "Add daikon, light soy sauce, dark soy sauce, and rock sugar. Return to a boil, then lower the heat again, cover the wok, and simmer until the daikon is tender and has absorbed most of the liquid.",
+      "Turn off heat, transfer to a serving plate, and garnish with sliced scallions. Serve with steamed white rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Kilogram Beef Brisket",
+        "unit": null,
+        "notes": "cut into 1 inch cubes",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "sliced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chu Hou Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hoisin Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Peel",
+        "unit": null,
+        "notes": "dried, broken into several pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Daikon",
+        "unit": null,
+        "notes": "peeled and cut into triangular wedges",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rock Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallion",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ccf905d54659f09b6ce84a6b4bb707fa57a12c6b91d0c39e10cae9fd89d3f70b",
+    "lineage_hash": "9192195b4fb54da60960dc49f1044c4a30a3f9d75c5f0eaf3daf2352a3ef95e9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/cantonese-braised-beef.html",
+    "fetchedAt": "2026-08-02T06:56:08.189Z"
+  },
+  "rawSource": "https://dailycookingquest.com/cantonese-braised-beef.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

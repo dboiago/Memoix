@@ -1,0 +1,113 @@
+{
+  "recipe": {
+    "name": "Chiffon Cake",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "14",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 170°C (340°F) and have ready 14 sturdy unwaxed 120-ml (1-cup) paper cups, ungreased.",
+      "Sift the flour and baking powder together 3 times, or combine the flour and baking powder in a freezer bag, zip it shut with lots of air inside so it will form a balloon of sorts, and shake the bag vigorously to make the flour fluffy. Set aside.",
+      "In a large bowl, combine the egg yolks, salt, vanilla extract, and 75 grams (6 tablespoons) of the sugar (reserve the rest for later). Whisk for several minutes, until the mixture turns pale yellow and thick ribbons fall from the whisk. Stir in the water and the oil, and whisk well between each addition. Fold in the flour mixture and whisk until well blended, but don't overmix.",
+      "In another large and spotlessly clean bowl, combine the egg whites and 60 grams (5 tablespoons) of the sugar (reserve the remaining tablespoon for topping), and beat with a clean whisk until stiff. You may use an electric whisk or a stand mixer with the whisk attachment; make sure neither the bowl nor the whisk have any trace of fat, or the eggs will not rise and life will seem rather pointless.",
+      "Fold a third of the beaten egg whites into the batter and mix gently until blended. Fold in the rest of the egg whites, gently lifting the batter up and over the egg whites with a rubber spatula until just blended.",
+      "Pour the batter into the prepared cups to about 3/5 of their capacity, and sprinkle the surface with the remaining tablespoon sugar. Bake until set and golden brown, about 30 minutes. Invert the cups onto a cooling rack so the cakes won't collapse, and let cool completely. To unmold, run the blade of a knife around the inside of the cup to loosen, and shake gently until the cake falls out.",
+      "Serve the cakes on their own, in the cup, or with a fruit salad, a drizzle of berry coulis, or a scoop of ice cream."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Grams Soft Flour",
+        "unit": null,
+        "notes": "pastry flour, or cake flour, or type 45 flour",
+        "amount": "130",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": "medium",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": "pure",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "ml",
+        "notes": "olive oil",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": "medium",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3d35279201818f5ab201d412cfbbdc01b58c4b9cbac62763f8175c018c57c449",
+    "lineage_hash": "e0fd0e80169b44a04aa32d5ed61a9f03dfcb6409fd0479990283f1555b4c51bb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/cakes-tarts/chiffon-cake-recipe/",
+    "fetchedAt": "2026-09-30T18:58:24.465Z"
+  },
+  "rawSource": "https://cnz.to/recipes/cakes-tarts/chiffon-cake-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

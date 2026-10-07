@@ -1,0 +1,406 @@
+{
+  "recipe": {
+    "name": "Beef Fillet Recipe, Watercress Purée & Red Wine",
+    "time": "2 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the watercress and nasturtium purée, place a suitably sized pan on the stove and allow to get hot. Pick the watercress from the stalks, place in a bowl and add the nasturtiums",
+      "Add the diced butter and water to the watercress, then pour into the hot pan. Add a pinch of salt and cook for around 2 minutes. When the watercress is cooked, add the ice",
+      "Drain, place in a blender and blitz until smooth. Check the seasoning before pouring the purée into an ice cream maker. Freeze, churn once, re-freeze then churn again",
+      "Trim the beef fillet so that it is the same thickness all along. Cut it in half lengthways, wrap in clingfilm and allow to set in the fridge, then portion evenly",
+      "Place the fillet portions into vacpac bags with the chicken stock, then seal and cook in a water bath at 62˚C until the core temperature reaches 52˚C. This should take about 20 minutes depending on the thickness of the beef",
+      "Remove from the bags and allow to rest. Heat some butter in a pan until foaming, then seal the beef all over. When nicely coloured, allow to rest before slicing each piece into 4",
+      "For the bone marrow, push the bone marrow out of the bone, then place into a container with some seasoned water. Cover and leave in the water for 20 minutes",
+      "Remove from the water and slice into ½ cm slices. Add the 2% salt and smoke powder to some water. Warm the smoked water to 70˚C. Place the sliced bone marrow into the water and cook. Remove, drain and season with fleur de sel",
+      "To make the red wine jus, pour the wine into a pan and reduce until it is 185ml. Place a pan onto the stove and allow to get hot, then add the butter and shallots and cook until they start to caramelise",
+      "When they turn a light golden brown, add the 125g of button mushrooms and continue to cook until they go crispy. Drain in a colander",
+      "In a clean pan, add the chicken stocks, cream and reduced red wine. Place onto the stove and bring to the boil and add the mushroom mixture. Cook for twenty minutes, then pass through a fine seive and place into a clean pan",
+      "Bring to the boil, add the remaining 35g of mushrooms and reduce a little further until the right consistency. Remove from the heat, add the tarragon, black pepper and sugar. Taste and adjust if necessary",
+      "For the roasted ceps, place a pan on the stove and when hot, add the butter. When it is foaming, add the ceps and allow to colour. Then turn, and colour on the reverse, season and add squeeze of lemon juice. Drain",
+      "For the roasted onions, place the grapeseed oil in a suitable sized pan and place on the stove. Add the onions and allow to colour, then add the butter a little at a time",
+      "When the colour has been achieved, turn over and continue to cook on the other side. Season, remove from the pan and drain",
+      "To make the quinoa, toast the quinoa in a frying pan until golden brown. Transfer to a chinois and rinse under cold water. Pour the water into a suitably sized pan, add the salt, place onto the stove and bring to the boil",
+      "Add the quinoa to the pan, bring back to the boil then reduce the heat to a simmer. Continue to cook until it becomes tender and the water has been absorbed – this should take about 15 minutes. Once cooked, cover with clingfilm and allow to cool",
+      "When you are ready to serve, reheat the quinoa in a pan. Chop the truffle finely, add the truffle oil and stir into the quinoa",
+      "To serve, create an oval with the watercress purée, and scatter the toasted quinoa over it. Lay the sliced beef fillet to the right then arrange the remaining garnish over and around the dish",
+      "Finish with sliced truffle and 5 micro nastertium leaves per plate"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef Fillet",
+        "unit": null,
+        "notes": "weighing 2kg, hung for 28 days and sinew removed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": "seasoned",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Watercress",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nasturtium Leaves",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "diced",
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ice",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "525",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Button Mushrooms",
+        "unit": "g",
+        "notes": "finely sliced",
+        "amount": "160",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "87",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "160",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "ml",
+        "notes": "whipped",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tarragon",
+        "unit": "bunch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bone Marrow",
+        "unit": "pcs",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "2% Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "15% Smoke Powder",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fleur De Sel",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cep Mushrooms",
+        "unit": null,
+        "notes": "sliced into 20 pieces",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "squeezed",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grelot Onions",
+        "unit": null,
+        "notes": "outer leaves removed and cut in two lengthways",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grapeseed Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Quinoa",
+        "unit": "g",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "110",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Truffles",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Truffle Oil",
+        "unit": "drop",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Micro Nasturtium Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Truffle",
+        "unit": null,
+        "notes": "sliced thinly",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "db6efe2b4c26c82b444b905671b8c8a9382555cbbe02c25e8746a4e2541ff817",
+    "lineage_hash": "dad797469d67244a040e764cabcba661d5ff533afe1f9eb58cbb4f43a46d9ac6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beef-fillet-recipe-watercress-nasturtium-puree",
+    "fetchedAt": "2026-08-03T16:14:37.886Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beef-fillet-recipe-watercress-nasturtium-puree",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

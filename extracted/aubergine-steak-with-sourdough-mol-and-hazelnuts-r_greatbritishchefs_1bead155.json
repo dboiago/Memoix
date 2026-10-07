@@ -1,0 +1,301 @@
+{
+  "recipe": {
+    "name": "Aubergine 'Steak' with Sourdough Molé and Hazelnuts",
+    "time": "5 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Use a sharp knife to slice the curved edges off the aubergines, lengthways (removing up to 2cm at the thickest part), to create a flat surface, like a steak. Do the same to the other aubergines",
+      "Light a barbecue for indirect cooking over medium heat",
+      "Once the flames have died down, heat a cast iron skillet and toast the sourdough pieces until golden all over, tossing regularly. Set aside",
+      "Add a splash of olive oil to the hot skillet. Season an aubergine slice with salt, then place it in the skillet and start to cook it slowly. Depending on the heat of your grill, the aubergine slices will take around 3 minutes to caramelise on each side",
+      "Remove the aubergine slice from the skillet and rest on the opposite side of the grill to the coals (or, even better, place it on a shelf or rack above your barbecue, where it can absorb the smoke). Repeat the previous frying step with the remaining aubergine slices before placing them to the side of the coals too",
+      "Heat the olive oil in the skillet over a low heat and fry the garlic cloves until golden, then drain through a sieve (reserving the oil) and set aside",
+      "Reheat the oil and fry the nuts until beginning to colour, then drain the oil through a sieve (again reserving the oil) and set the nuts aside",
+      "Repeat the frying and draining process with the seeds",
+      "Toast the ancho and pasilla chillies over the hot coals until fragrant, then chop roughly",
+      "Heat up the reserved oil in the skillet and fry the chopped chillies for 1 minute, then transfer out",
+      "Finally, add the tomato paste to the oil and cook out, stirring, for a minute or two. Take the tomato paste and oil mixture off the heat",
+      "Transfer the fried chillies, tomato paste and oil mixture, sourdough, garlic, nuts, seeds, cinnamon, ground cumin and smoked paprika to a stockpot, then fill with enough water to just cover everything",
+      "Cook gently over a low heat for 4 hours, stirring occasionally and making sure the water level stays the same throughout the cooking time",
+      "Blitz everything to a smooth sauce, then pass through a sieve to remove any lumps",
+      "Season the mole with salt, honey and orange zest to taste",
+      "To make the sunflower seed gomasio, toast the sunflower, pumpkin and sesame seeds in a dry pan until starting to colour",
+      "Transfer to a Thermomix with the salt and pul biber and blitz on speed 4 for 10 seconds",
+      "To make the dukkah, toast the sesame, coriander, cumin and fennel seeds in a dry pan until fragrant, then transfer to a blender with the salt, peppercorns and half of the hazelnuts and blend on high speed blend for 10 seconds. Stir through the reserved nuts",
+      "To assemble the dish, divide the aubergine steaks between 4 plates, drizzle with the molé (at least 2 tablespoons, but as much as you want), then sprinkle with the hazelnut dukkah and sunflower seed gomasio"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Aubergines",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sourdough",
+        "unit": "kg",
+        "notes": "roughly chopped into 2 inch pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Bulbs",
+        "unit": null,
+        "notes": "cloves peeled",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Walnuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hazelnuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sunflower Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ancho Chillies",
+        "unit": null,
+        "notes": "dried, halved and de-seeded",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pasilla Chillies",
+        "unit": null,
+        "notes": "dried, halved and de-seeded",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Paste",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cumin",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Paprika",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "g",
+        "notes": "plus a little extra for frying",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Zest to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sunflower Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pumpkin Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maldon Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pul Biber Chilli Flakes",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maldon Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Hazelnuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "160",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b3c7aa2e7645fd34b029a7002ab3ee18966b671d1f2f77cf1e7b2d32dccf31b5",
+    "lineage_hash": "a35ac8671a2f09cde5d603704d04559846627c36052caa3eecc016bd06a1404c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/aubergine-steak-sourdough-mole-hazelnuts-recipe",
+    "fetchedAt": "2026-08-02T18:19:24.863Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/aubergine-steak-sourdough-mole-hazelnuts-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

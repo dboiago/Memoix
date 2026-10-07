@@ -1,0 +1,122 @@
+{
+  "recipe": {
+    "name": "Chè Trôi Nước (Vietnamese Glutinous Rice Balls in Ginger Syrup)",
+    "time": "55 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "28",
+    "source": "scraped",
+    "cuisine": "VN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a large mixing bowl, combine glutinous rice flour and hot water. Mix and knead until you get a smooth dough. Do not add more water. Keep mixing, and it will eventually come together. Using a pair of chopsticks or a whisk to get it going has proven to be very helpful. Once it starts to clump together more, use your hands to mix. Cover and rest for 30 minutes.",
+      "Once the dough has rest, divide the dough mixture into 28 balls, about 1 inch in diameter.",
+      "Rinse the peeled mung beans until the water runs clear. In a medium pan, add the rinsed mung beans and enough water to cover them by 1 inch. Cook over medium heat until it boils, then reduce the heat and continue cooking until the beans are softened but still maintain their shape (about 15 minutes). Monitor the pot carefully and reduce the heat as needed to prevent it from boiling over. Drain the beans and return them to the stove with the heat off to evaporate any residual moisture. Add salt and sugar. Then use a large spoon to smash and mix them into a rough paste. It doesn&#8217;t need to be smooth.",
+      "Roll the filling into small balls, about ½ inch in diameter (about 28 pieces).  If you find that the mixture is too soft to handle, chill it in the fridge.",
+      "Flatten the mochi wrapper ball into a thick disc. Place a mung bean filling ball in the center. Fold the dough over to close, gently encasing the filling by rolling it back and forth in your palm into a smooth ball. Be careful not to let the mung bean filling spill out of the wrapper, as cooking it will cause the filling to leak and the ball to fall apart. Use any leftover dough to form small pearls without filling. Once you&#8217;re done, cover and set aside to prevent drying.",
+      "In a large pot, boil water with the palm sugar until sugar dissolves. Use a spoon to peel the ginger and cut into matchstick-sized strips. Gently drop the dough balls into the syrup. Simmer gently on medium-low heat until they float (about 20 minutes).",
+      "Make the coconut milk sauce. The dessert is delicious even without the coconut milk sauce; however, if you prefer more flavor, I highly recommend to prepare it.",
+      "Scoop a few cooked rice balls with syrup into a bowl. Drizzle with the coconut sauce. Top with roasted sesame seeds. Enjoy it warm or room temperature."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bag Glutinous Rice Flour",
+        "unit": "oz",
+        "notes": "sweet rice powder/mochiko",
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Split Mung Beans (dried and Peeled)",
+        "unit": "C",
+        "notes": "165g",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled and thinly sliced into strips, about 1/2 cup, fresh",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Palm Sugar",
+        "unit": "oz",
+        "notes": "alt: 2 cups brown sugar",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk Sauce (optional)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Sesame Seeds",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3642b817f74f26b377b6cf4e240fde1d7d4da17e7f5d56991b64b197b79b1a15",
+    "lineage_hash": "093987082b8457399b5d0c575851d738f0f5bffb774541bfac0dc48a13f3236c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://vickypham.com/blog/vietnamese-glutinous-rice-balls-ginger-syrup/",
+    "fetchedAt": "2026-08-01T23:17:45.267Z"
+  },
+  "rawSource": "https://vickypham.com/blog/vietnamese-glutinous-rice-balls-ginger-syrup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

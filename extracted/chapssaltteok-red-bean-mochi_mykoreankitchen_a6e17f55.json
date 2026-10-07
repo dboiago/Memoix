@@ -1,0 +1,91 @@
+{
+  "recipe": {
+    "name": "Chapssaltteok (Red Bean Mochi)",
+    "time": "24 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "KR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "201",
+      "carbohydrateContent": "46",
+      "fatContent": null,
+      "proteinContent": "2"
+    },
+    "directions": [
+      "- Combine the sweet rice flour, sugar and salt in a microwave safe mixing bowl. Whisk it well. Add the water and mix them well.- Cover the bowl with cling wrap leaving a little gap for steam to escape. Put the bowl into a microwave and heat it up for about 1 min (based on 1250W).- Take the bowl out and stir the mixture around with a wooden spoon or spatula.- Return the bowl, covered again, into the microwave and heat it up for a further 1 mins. (The cooking time can vary depending on your microwave. If the desired consistency is not yet achieved, cook it for a little bit longer.)- Remove the bowl from the microwave.",
+      "With a wooden spoon/spatula, mix and massage around the rice cake mixture until it cools down enough to touch (about 5 mins).",
+      "Lightly scatter the corn starch on the board. (This is for anti-sticking purpose.) Carefully remove the mochi mixture from the bowl and place it on the board. Knead it to one long dough while scattering the corn starch over it. Then, using a scraper, divide the dough into 6 pieces.",
+      "Gently flatten and open up the dough on your palm (large enough to fit a ball of red bean paste) then place the red bean paste ball in the middle. Seal the rice cake by gathering the corners of the dough. Roll the mochi around on the corn starch and place it in a disposable baking cup facing the gathered point down. Repeat this step with the remaining ingredients."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sweet Rice Flour / Mochiko / Glutinous Rice Flour",
+        "unit": "C",
+        "notes": "100g / 3.5 ounces",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Castor Sugar",
+        "unit": "C",
+        "notes": "60g / 2.1 ounces",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "120g / 4.2 ounces",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Red Bean Paste (180g / 6.3 Ounces)",
+        "unit": "C",
+        "notes": "shaped into 6 balls",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn Starch",
+        "unit": "Tbsp",
+        "notes": "alt: potato starch, 25g / 0.9 ounces",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "eaf1cbee1cc685b2da1560f48984cbe877c9d45deebf3af491c246d4709ee1e2",
+    "lineage_hash": "75a22359869d14cc1d1a354810d29bf25a099ebb78c231471f133affe1cf0653"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://mykoreankitchen.com/chapssaltteok-red-bean-mochi/",
+    "fetchedAt": "2026-08-02T02:56:37.890Z"
+  },
+  "rawSource": "https://mykoreankitchen.com/chapssaltteok-red-bean-mochi/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

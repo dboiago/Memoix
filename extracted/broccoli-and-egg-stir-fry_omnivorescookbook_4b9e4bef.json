@@ -1,0 +1,166 @@
+{
+  "recipe": {
+    "name": "Broccoli and Egg Stir Fry",
+    "time": "25 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "162",
+      "carbohydrateContent": "8.8",
+      "fatContent": "11.8",
+      "proteinContent": null
+    },
+    "directions": [
+      "(Optional) Soak dried wood ear mushrooms in warm water for 20 minutes, until tender. Drain, pat dry, and cut into bite-size pieces.",
+      "Mix all the sauce ingredients together in a small bowl.",
+      "Add 2” (5 cm) water to a wok or large skillet and bring to a boil. Add the broccoli. Blanch for 1 minute 30 seconds (*Footnote 2). Drain the broccoli thoroughly. Wipe the wok dry.",
+      "Heat 1 tablespoon of the oil into the same wok or skillet over medium-high heat until it shimmers. Add the eggs. Scramble the eggs and cut them into smaller pieces, until just cooked through. Transfer to a plate.",
+      "Add the remaining 1 tablespoon of oil and scallion whites. Stir a few times to release fragrance. Add the carrot and wood ear mushrooms. Stir and cook for 2 minutes. Add back the broccoli and stir to mix well.",
+      "Mix the sauce again to dissolve the cornstarch completely, then pour it into the wok. Stir and mix until the sauce thickens. Add back the cooked eggs. Stir again to mix everything well. Taste the dish and adjust seasoning with more salt if needed.",
+      "Turn off the heat. Pour in the sesame oil and stir in the scallion greens. Transfer to a serving plate and serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Wood Ear Mushrooms (optional)",
+        "unit": "Tbsp",
+        "notes": "*Footnote 1, dried",
+        "amount": "2",
+        "section": "Soaking",
+        "isOptional": false
+      },
+      {
+        "name": "Sauce",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Soaking",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Soaking",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Soaking",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Soaking",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Soaking",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Soaking",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Soaking",
+        "isOptional": false
+      },
+      {
+        "name": "Head (about 1 Lb) Broccoli",
+        "unit": "large",
+        "notes": "cut into bite-size florets",
+        "amount": "1",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "beaten with a pinch of salt",
+        "amount": "3",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "sliced, white and green parts separated",
+        "amount": "2",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": "small",
+        "notes": "sliced",
+        "amount": "1",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": "to taste (Optional)",
+        "amount": "0",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Stir fry",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bfc93452bd737cc9c0a418be31c633064bc6dfba8b6aa613366c67f8594cb7f4",
+    "lineage_hash": "9c8844197f7c8e07c61b4cca89e247f8aea2e53d8df37343d0e93bfafa6d1ec6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/broccoli-and-egg-stir-fry/",
+    "fetchedAt": "2026-08-02T10:03:44.516Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/broccoli-and-egg-stir-fry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

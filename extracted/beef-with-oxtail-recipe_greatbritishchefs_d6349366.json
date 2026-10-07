@@ -1,0 +1,360 @@
+{
+  "recipe": {
+    "name": "Beef with Oxtail",
+    "time": "3 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the oxtail, cut the oxtail into sections and tie butchers twine around the meat - this will help it hold its shape and ensure a more consistent finish",
+      "Coat the base of a large pan with vegetable oil and place on a medium-high heat. Seal the oxtail until dark golden on all sides. Remove from the pan and set aside",
+      "Pour in a little more oil and add in the carrot, leek, onion, garlic, and thyme. Lightly brown the vegetables and then pour in the red wine. Cook until reduced by half",
+      "Return the chicken stock and oxtail to the pan. Bring to the boil, cover and reduce to a very gentle simmer. Cook for 3 hours or until the meat starts to fall off the bone",
+      "Remove from the heat and allow to cool. While still warm, remove the middle tail bone/cartilage. This can be done by pressing the centre bone until it slides through and is released from the surrounding meat. Try to keep the meat as intact as possible. Reserve some of the cooking liquor to use in step 19",
+      "Fill the hole with your chosen ingredient(s). Simon recommends using chicken mousse, mushrooms and bacon, which is then reheated before serving, or, the bone can be left in and served whole, if you prefer",
+      "For the Madeira sauce, preheat the oven to 160˚C/gas mark 3. Add the shallots, garlic and thyme to a deep roasting tray and roast until golden, approximately 20-30 minutes",
+      "Add the mushrooms and continue to roast until all the moisture has been released and evaporated from the tray, but not burnt",
+      "Pour in the vinegar and scrape with a wooden spoon to deglaze and release all the browned ingredients from the base of the tray",
+      "Pour into a saucepan, add the Madeira and reduce by half. Add the stock and veal glace and reduce to achieve a syrup-like consistency. Strain and set aside",
+      "For the shallot purée, add the shallots, garlic and chicken stock to a pan and simmer until tender. Add the double cream and thyme, reduce until thick. Blend until smooth, pass through a fine strainer, season and set aside until required",
+      "For the onion relish, heat the oil in a saucepan. Add the onions and cook over a moderate heat until browned and soft. Add the sugar and vinegar",
+      "Turn the heat down and continue cooking until the liquid has evaporated and the onion relish has become a rich dark red/brown colour. Season to taste",
+      "For the garnish, peel away the outer layers of the leeks and wash thoroughly. Slice in half lengthways but leave the root intact. Peel and half the baby onions through to the root",
+      "Add a small amount of vegetable oil to a pan and place over a medium heat. Place the leek and onion, skin-side down, and cook until lightly browned. Add a dash of chicken stock and knob of butter. Cook down until the vegetables are tender, but still hold their shape. Season to taste before serving",
+      "Cut the morels in half lengthways. Add a large knob of butter into a pan over a medium heat, once foaming, add the mushrooms and cook for 2-3 minutes. Season to taste and add to the Madeira sauce",
+      "For the crispy shallots, leave the shallot rings in milk for 1 hour - this will help the rings cook and colour evenly once fried. Drain and then lightly coat in flour before deep frying at 170˚C. Drain on absorbent kitchen towel, season and keep warm",
+      "Preheat the oven to 200˚C/gas mark 6. Coat the base of a large pan with vegetable oil and place on a high heat. Season the beef fillets and cook in a hot pan until golden on both sides. Reduce the heat and add a large knob of butter to finish in the pan",
+      "For a rare steak, you do not need to cook the steak further in the oven. For a medium-rare steak, place in the preheated oven for 1 minute (increase this number by 2 minute increments for medium, medium-well and well-done finishes). Remove the steaks from the oven and set aside to rest for 4 minutes",
+      "Pour a little of the cooking liquor over the oxtail and reheat in the oven for 10-15 minutes. Reheat the purée in a separate pan",
+      "Spoon some of the purée across each plate and arrange the hot oxtail in the centre. Slice each portion of beef in half and place either side of the oxtail",
+      "Place 2 pieces of leek and 4 onion halves around the plate. Add a quenelle of hot onion relish on top of the oxtail and sauce. Place the morels over the beef and serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef Fillets",
+        "unit": null,
+        "notes": "each weighing 150g",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sunflower Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Knob of Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oxtail",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": "large dice",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "large dice",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leek",
+        "unit": null,
+        "notes": "large dice",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": "fresh",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "750",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": null,
+        "notes": "to cover",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Leeks",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Onions",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Morel Mushroom",
+        "unit": "g",
+        "notes": "dried can be used but should be soaked for 3 hours before cooking",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": "sliced into rings",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Button Mushrooms",
+        "unit": "g",
+        "notes": "thinly sliced",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Bulb",
+        "unit": null,
+        "notes": "cut in half",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sherry Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Madeira",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Veal Glace",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": "halved",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onions",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sherry Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "de546e335c77d23e9ebf7c4aca70f6d06d1ba25502031a47b5ff3df0a300088e",
+    "lineage_hash": "0bcf0c657b0e32f6ba3305d9a09bddf4d907758274bd8b6afa1e56b940e5745e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beef-with-oxtail-recipe",
+    "fetchedAt": "2026-08-03T18:41:25.892Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beef-with-oxtail-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,453 @@
+{
+  "recipe": {
+    "name": "Beef Fillet with Artichokes",
+    "time": "6 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the chopped oxtail and vegetables in a large bowl or dish and add the thyme and star anise. Pour over the red wine and leave to marinate for 24 hours",
+      "After this time remove and drain the oxtail from the marinade, reserving the liquor for later. Place a large, heavy-bottomed pan over a medium heat and, once hot, seal the oxtail on all sides",
+      "Drain any excess fat from the pan, then return the oxtail to the heat and deglaze with the vinegar. Stir in the tomato purée and allow to cook out for 1 minute",
+      "Pour the reserved marinade over the meat and cook for 15–20 minutes, or until the liquid has reduced by three-quarters. Add the beef stock, bring the liquid to the boil then skim off any excess fat from the surface. Cover with a lid and transfer to the oven to cook for 4 hours",
+      "While the oxtail is braising, prepare the artichokes. Mix together all the ingredients for the globe artichokes, place in a vacuum bag and seal. Cook in the water bath for 45 minutes",
+      "Meanwhile, mix together the baby artichoke ingredients and seal in a separate vacuum bag. Add the baby artichokes to the water bath with the globe artichokes and cook for 35 minutes",
+      "Repeat for the crosnes, sealing in a vacuum bag with the other ingredients and adding to the water bath for 30 minutes. Once cooked, chill all 3 bags in iced water to cool",
+      "Meanwhile, infuse the milk for the truffle gel. Place the truffle oil and milk in a pan over a medium heat and bring to the boil, stirring to combine. Remove from the heat, cover the pan with cling film and leave to infuse for 30 minutes",
+      "To make the Jerusalem artichoke purée, add the butter to a large, heavy-bottomed pan over a medium heat and cook until it begins to foam. Add the sliced Jerusalem artichokes and a pinch of salt, then cover the pan and allow to cook for 10 minutes until soft, stirring occasionally to prevent sticking",
+      "Once soft, add the vegetable stock and bring back up to the boil. Allow to simmer and reduce by half, then stir in the double cream. Bring the mixture back up to the boil briefly, then remove from the heat and transfer to a blender",
+      "Blend the mixture to form a smooth purée, then season to taste with extra salt and a squeeze of lemon juice if required. Transfer to a piping bag and keep warm until ready to serve",
+      "Once the truffle and milk mixture has infused, return the pan to the heat and bring the liquid to the boil. Whisk in the agar agar and simmer for 2 minutes, whisking continuously. Pour into a deep tray and allow to set in the fridge until just before serving",
+      "Remove the braised oxtail from the heat and allow the meat to cool completely in the cooking liquor. Once cool, remove the meat from the bones, being careful to remove any excess fat. Set the meat aside",
+      "Return the cooking liquor to the heat and simmer for 30 minutes until reduced by half. Strain the liquor through a sieve lined with a muslin cloth and reserve until ready to serve",
+      "Once set, remove the truffle gel from the fridge and break up into pieces. Blitz in a blender to create a smooth gel and season to taste with salt and lemon juice. Transfer to a piping bag and set aside until ready to serve",
+      "Place a large ovenproof frying pan over a high heat and seal the beef fillets on all sides. Transfer to the oven and roast 8 minutes, then set aside to rest for 10 minutes",
+      "Meanwhile, add the oxtail meat to a pan with just enough of the reserved sauce to cover and place over a medium heat. Cook for 5–10 minutes until the meat is heated through and the sauce reduces to a sticky coating. Season with lemon juice to taste and keep warm",
+      "Add a dash of oil to a frying pan and allow to heat up. Remove the cooked artichokes from the vacuum bags and drain from their cooking liquid, then sauté in the oil over a medium heat for a few minutes until golden brown",
+      "To serve, pipe dots of the truffle gel on to serving plates along with larger dots of the artichoke purée. Scatter the mixed artichokes and sticky oxtail pieces across and grate over a little fresh truffle. Place a piece of beef fillet on each plate and serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Centre Cut Beef Fillets",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oxtail",
+        "unit": null,
+        "notes": "cut into 6–8 pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": null,
+        "notes": "chopped into 2cm pieces",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leek",
+        "unit": null,
+        "notes": "chopped into 2cm pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Sticks",
+        "unit": null,
+        "notes": "chopped into 2cm pieces",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bottle of Red Wine",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cabernet Sauvignon Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Purée",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Stock",
+        "unit": "L",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Globe Artichokes",
+        "unit": null,
+        "notes": "peeled",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pomace Oil",
+        "unit": "g",
+        "notes": "1",
+        "amount": "110",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chardonnay Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rock Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Globe Artichokes",
+        "unit": null,
+        "notes": "peeled",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pomace Oil",
+        "unit": "g",
+        "notes": "1",
+        "amount": "110",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chardonnay Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rock Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crosnes",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pomace Oil",
+        "unit": "g",
+        "notes": "1",
+        "amount": "110",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chardonnay Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rock Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Truffle Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Agar Agar",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jerusalem Artichoke",
+        "unit": "g",
+        "notes": "peeled and sliced",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Stock",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rock Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Truffle",
+        "unit": null,
+        "notes": "to garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8ef464d3d804eddd38ad9cb4818e813e5b859ba7ee18c164da634fa9b4e3b463",
+    "lineage_hash": "395a464f454511fe0257b0bc941f324fad71d06711d3a72be1f5d62be0e845e0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beef-fillet-recipe-braised-oxtail",
+    "fetchedAt": "2026-08-03T13:04:57.289Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beef-fillet-recipe-braised-oxtail",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

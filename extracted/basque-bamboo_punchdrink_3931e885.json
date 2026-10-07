@@ -1,0 +1,70 @@
+{
+  "recipe": {
+    "name": "Basque Bamboo",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": "Cider",
+    "garnish": [
+      "Orange Wheel"
+    ],
+    "subcategory": "Sparkling",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to a cider glass filled with ice. Gently stir to combine.",
+      "Garnish with an orange wheel."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Blanco Vermouth",
+        "unit": "oz",
+        "notes": "preferably Tximista Vermouth Blanco",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fino-style Sherry",
+        "unit": "oz",
+        "notes": "preferably Gómez Nevado Pálido Sierra Morena Seco",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basque Cider",
+        "unit": "oz",
+        "notes": "preferably Isastegi or Órdago Iberiko",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Regans’ Orange Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ebbeffb0b5278c4486e6c61f83aa260570f6e9786dc6c9432f80d8d17ca8254c",
+    "lineage_hash": "e0ecaf4a60cbdf5976f483ef84a2fc7afa212e38125f6c5b5f1ddbf8eb2f17c7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://punchdrink.com/recipes/basque-bamboo/",
+    "fetchedAt": "2026-08-03T04:02:04.900Z"
+  },
+  "rawSource": "https://punchdrink.com/recipes/basque-bamboo/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

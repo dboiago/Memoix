@@ -1,0 +1,40 @@
+{
+  "recipe": {
+    "name": "5 O'Clock Cheddar Ale Soup",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the vegetable stockCut the carrots, onion, and celery into large pieces. In a medium stockpot, add the vegetables, parsley, thyme, bay leaf, peppercorns, and water. Bring the stock to a boil over medium-high heat, then lower the heat to medium-low and simmer gently, partially covered, for 1 hour.",
+      "Strain the simmered stock through a fine-mesh sieve, discard the solids, and reserve 4 cups (910 g) for the soup. Any extra stock can be refrigerated or frozen for later use; if you come up a little short, add water to make up the difference.",
+      "To make the soupIn a large stockpot over medium heat, melt the butter, then add the celery, onion, carrot, garlic, and a generous sprinkle of salt and sauté until the vegetables are tender and the onions are translucent, 10 to 15 minutes. Take care not to brown them. Add the ale, lower the heat to medium-low, and simmer for 5 minutes.",
+      "In a medium stockpot, bring the vegetable stock to a simmer. If it cooks down below 4 cups (910 g), add more water.",
+      "Add the flour to the vegetable mixture, stir, and cook over medium heat until the mixture thickens and starts to stick to the pot. Gradually pour in the milk, stirring as you do, and bring the soup to a simmer. Add the hot vegetable stock to the soup.",
+      "Remove the soup pot from the heat and purée with an immersion blender. Return the pot to low to medium heat and slowly add the cheddar, stirring constantly to avoid scorching. Turn off the heat and stir in the Marash pepper, white pepper, and vinegar.",
+      "Season with additional salt if needed and serve. Store in an airtight container in the refrigerator for up to 5 days."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "7b31506c52fe434c231ba733e93cab316755e1d81f369882ecb21c2938536adb",
+    "lineage_hash": "1b88f0a76fe322f521965d78ced8ea5cb0cb8f7d0d06b6f839af81050176be3c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/5-oclock-cheddar-ale-soup/",
+    "fetchedAt": "2026-08-03T22:33:32.726Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/5-oclock-cheddar-ale-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,128 @@
+{
+  "recipe": {
+    "name": "Butter-Stuffed Kangaroo Burger",
+    "time": "10 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Prep. Finely chop the rosemary and mince the garlic. For the aioli, combine the mayonnaise, rosemary, garlic, and mustard in a small bowl and blend well. Refrigerate until ready to use.",
+      "Fire up. Prepare a grill for 2-zone cooking. On a charcoal grill, place a chimney full of lit charcoal briquets on one side of the grill&#39;s charcoal grate in order to create direct and indirect cooking zones. You want one side scorching hot and the other side at about 225°F (107.2°C). On a gas grill, adjust the temperature knobs so that one half of the grill is as hot as possible and the other half is approximately 225°F (107.2°C).",
+      "For the burgers, form the ground kangaroo into 8 thin patties. Lay one tablespoon of butter in the center of four patties then top each with another patty. Crimp the edges to completely seal the butter within the burger. Season the burgers on both sides with Kosher salt and ground black pepper.",
+      "Cook. Place the burgers on the hot side of the grill and cook for approximately until they reach an internal temperature of 160°F (71.1°C), 4 to 5 minutes. If the coals flare up or the meat begins to char during the cooking process, move the burgers to the cooler side of the grill. During the last 2 minutes of cooking, add a slice of cheese to the top of each burger.",
+      "When the burgers are done, spread the rosemary aioli on the cut sides of each top and bottom bun. Set the burgers on the bottom buns, followed by the arugula and the top bun.",
+      "Serve. Burgers are best served immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mayonnaise",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Rosemary Aioli",
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "Tbsp",
+        "notes": "fresh",
+        "amount": "1",
+        "section": "Rosemary Aioli",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": "Rosemary Aioli",
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Rosemary Aioli",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Kangaroo Meat",
+        "unit": "lb",
+        "notes": "I used Durham Ranch ground kangaroo",
+        "amount": "1½",
+        "section": "Burgers",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": "cut in 1 tablespoon pieces",
+        "amount": "4",
+        "section": "Burgers",
+        "isOptional": false
+      },
+      {
+        "name": "Morton Coarse Kosher Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "Burgers",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "tsp",
+        "notes": "finely",
+        "amount": "½",
+        "section": "Burgers",
+        "isOptional": false
+      },
+      {
+        "name": "Havarti Cheese",
+        "unit": "slices",
+        "notes": null,
+        "amount": "4",
+        "section": "Burgers",
+        "isOptional": false
+      },
+      {
+        "name": "Baby Arugula",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Burgers",
+        "isOptional": false
+      },
+      {
+        "name": "Brioche Buns",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "4",
+        "section": "Burgers",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b283e822eb3a9450920bc58b826c94baf9248d46ec7c48f12a038d579f281bba",
+    "lineage_hash": "cda67e711abd9839819e5c0be0d550298449d6265ce633323764dc80f8125a3a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://amazingribs.com/tested-recipes/hamburger-sloppy-joe-salisbury-steak-recipes/butter-stuffed-kangaroo-burger-recipe/",
+    "fetchedAt": "2026-08-02T11:44:46.315Z"
+  },
+  "rawSource": "https://amazingribs.com/tested-recipes/hamburger-sloppy-joe-salisbury-steak-recipes/butter-stuffed-kangaroo-burger-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

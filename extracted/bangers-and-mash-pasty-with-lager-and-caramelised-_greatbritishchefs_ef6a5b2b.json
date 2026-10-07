@@ -1,0 +1,211 @@
+{
+  "recipe": {
+    "name": "Bangers and Mash Pasty with Lager and Caramelised Onion Gravy",
+    "time": "3 hr",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start by making the pasty dough. Add the flour and salt to a large mixing bowl, then rub in the unsalted butter and lard until the flour becomes a ‘sandy’ consistency",
+      "Add in 180ml cold water and bring the mix together, then knead for around 8 minutes until the dough becomes elastic",
+      "Cover the dough with cling film in a clean bowl, then leave to rest in the fridge for 3 hours",
+      "While the dough is chilling, prepare the bangers and mash filling. Cook the potatoes in salted water for around 15 minutes, or until fork tender&nbsp;",
+      "Pass the potatoes through a potato ricer then, while still hot, add in the milk and butter. Use a rubber spatula to beat together the butter, milk and potatoes until the mixture is completely smooth",
+      "Add in the chives and cheddar cheese then season with salt and pepper to taste",
+      "Meanwhile, fry off the sausages over a medium-high heat in the oil until seared and cooked through. Chop them up into chunks and set aside",
+      "Next take the pasty dough out of the fridge, then roll it out and cut into four circles, each 25 cm wide",
+      "Take a few spoons of the mash and add it to the centre of the pasty dough. Top with some sausages, a little extra mash, then lightly brush the edges with water and fold the pasty in half",
+      "Crimp the edges together, using your thumb as a guide, pinch and fold the pastry edge over itself to seal all of the filling into the pasty",
+      "Once you have crimped the edge, fold the end corner underneath to fully seal in the filling",
+      "Place each pasty on a baking tray lined with parchment paper, and brush with egg wash. Bake in the oven for around 50 minutes, until golden brown&nbsp;",
+      "While the pasties are cooking, prepare the caramelised onion and lager gravy. Melt the butter in a pot and, once foaming, add in the sliced onions and cook down with the sugar until jammy and caramelised, about 30 minutes",
+      "Once the onions are caramelised, add in the flour and stir through before turning up the heat and adding in the lager",
+      "Let the lager reduce by around half then add in the beef stock and aromatics&nbsp;",
+      "Bring to a simmer and leave to bubble for around 30 minutes, or until thick enough to coat the back of a spoon",
+      "Once the gravy has thickened, remove the aromatics then serve hot alongside the freshly baked pasties"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Strong Bread Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "chilled and diced",
+        "amount": "130",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lard",
+        "unit": "g",
+        "notes": "or butter if unavailable",
+        "amount": "130",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshlay Farms Golden Yolker® Egg",
+        "unit": null,
+        "notes": "beaten for egg wash",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": "g",
+        "notes": "peeled and diced",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Fresh Chives",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cheddar",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumberland Sausages",
+        "unit": "large",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onions",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lager Beer",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "700",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Fresh Rosemary",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "938d6891ec0dcaf136af244eb4319ee241f0ba4b993944f2ea25aee60c3cf6f4",
+    "lineage_hash": "b2e67b237e084a5ea2e22b64e8f6fc02201bbf5411ad092b469e69f83313d0cb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/bangers-mash-pasty-lager-caramelised-onion-gravy-recipe",
+    "fetchedAt": "2026-08-02T06:46:56.553Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/bangers-mash-pasty-lager-caramelised-onion-gravy-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

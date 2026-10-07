@@ -1,0 +1,142 @@
+{
+  "recipe": {
+    "name": "Ayam Tinoransak (Manado Spicy Braised Chicken)",
+    "time": "1 hr 15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "ID",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat oil in a pot and sauté spice paste, turmeric powder, lemongrass, and kaffir lime leaves until fragrant, about 3 minutes.",
+      "Add chicken pieces, stir, and cook until no longer pink.",
+      "Pour the water into the pot, season with salt and sugar, and bring to a boil. Reduce heat and simmer for 25 minutes until chicken is tender and fully cooked, and the sauce has somewhat reduced. Adjust salt and sugar as needed.",
+      "Turn off the heat and serve immediately with steamed white rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemongrass",
+        "unit": null,
+        "notes": "bruised and cut into 2 inch lengths",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kaffir Lime Leaves",
+        "unit": null,
+        "notes": "remove the ribs",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Drumsticks",
+        "unit": null,
+        "notes": "or a whole chicken cut into 8 pieces",
+        "amount": "8-10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "750 ml",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "Tbsp",
+        "notes": "or to taste",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Palm Sugar",
+        "unit": "Tbsp",
+        "notes": "or to taste",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spice Paste (grind the Following)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Shallots",
+        "unit": null,
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Serrano/jalapeno Chilies",
+        "unit": null,
+        "notes": null,
+        "amount": "4-8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Bird-eye Chilies",
+        "unit": null,
+        "notes": null,
+        "amount": "3-6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "29997e8e15883688c64f2348685ba7487d2f771865282c6bce422863a1cb7c57",
+    "lineage_hash": "99ae09bf0a488bd9b74333db7d717371b861bca21eb0feec92b1e7425ba5945f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/ayam-tinoransak-manado-spicy-braised-chicken.html",
+    "fetchedAt": "2026-08-01T17:38:31.399Z"
+  },
+  "rawSource": "https://dailycookingquest.com/ayam-tinoransak-manado-spicy-braised-chicken.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

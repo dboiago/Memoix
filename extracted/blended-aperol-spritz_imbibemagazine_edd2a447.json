@@ -1,0 +1,35 @@
+{
+  "recipe": {
+    "name": "Blended Aperol Spritz",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pour in a blender and add 12 oz. of ice. Makes one 16 oz. serving.",
+      "Orange-infused Aperol: Add the grated zest of 4 large oranges to ½ liter of Aperol. Put in blender and process until very fine and emulsified. Let sit for 24 hours and strain."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "891e677ffb3b050c4ef6d2674a8e22dc3f2260b7c846cdfc703d0bcc6e0fd1fc",
+    "lineage_hash": "87b3c2a1c314da6114ce328cb46c458fab52c9d9478a85403ec32cd5d16ea80b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/blended-aperol-spritz/",
+    "fetchedAt": "2026-08-03T19:32:42.701Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/blended-aperol-spritz/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

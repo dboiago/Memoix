@@ -1,0 +1,108 @@
+{
+  "recipe": {
+    "name": "Badam Halwa Jars",
+    "time": "40 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "369",
+      "carbohydrateContent": "14",
+      "fatContent": "26",
+      "proteinContent": "7"
+    },
+    "directions": [
+      "Before you start, you have to make sure the badam halwa is already cooked and ready. Refer to the badam halwa recipe on the blog.",
+      "To a pan on medium heat, add mawa and start sautéing it. It will become liquid-y at first. Cook for around 4 to 5 minutes, stirring often.",
+      "Then add sugar and reduce heat to low. It will melt again once you add sugar. Cook for around 2 minutes after adding sugar.Add 1/2 teaspoon cardamom powder and 1/3 cup chopped nuts (I used a food processor to finely chop the nuts).  Stir for a minute and remove pan from heat.",
+      "To make the last part of the jar, to the steel bowl of your stand mixer fitted with wire whisk attachment (or use your hand mixer), beat the heavy cream with powdered sugar and rose water until it forms peaks. Don&#39;t over-beat else cream will separate.",
+      "To make the jars (I have used 4 oz jars here), first place the halwa at the bottom. I used a piping bag and tip to make a swirl shape. Then top with the mawa and nuts mixture.Finally pipe the whipped cream on top. Garnish with nuts and edible gold leaves and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Badam Halwa",
+        "unit": "C",
+        "notes": "homemade",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Mawa",
+        "unit": null,
+        "notes": "dried solids, khoya",
+        "amount": "175-200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nuts",
+        "unit": "C",
+        "notes": "chopped, a mix of almonds, cashews & pistachios",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rose Water",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Powdered Sugar",
+        "unit": "Tbsp",
+        "notes": "icing sugar/confectioners sugar",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ebb2645941ddc0df3753875930eea787c744651fd638f22531fd539d6c536cef",
+    "lineage_hash": "8e2599259358c595acce32397597298e9e62b3e8700d975c439709d8e9fc8cbb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/badam-halwa-jars/",
+    "fetchedAt": "2026-08-02T02:23:48.485Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/badam-halwa-jars/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

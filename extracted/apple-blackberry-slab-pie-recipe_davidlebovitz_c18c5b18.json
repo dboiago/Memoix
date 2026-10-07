@@ -1,0 +1,155 @@
+{
+  "recipe": {
+    "name": "Apple Blackberry Slab Pie",
+    "time": "1 hr 45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the filling and assemble the pie"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Flour",
+        "unit": "C",
+        "notes": "560g",
+        "amount": "4",
+        "section": "dough",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "dough",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "dough",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": "preferably aluminum-free",
+        "amount": "1",
+        "section": "dough",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "12 ounces, 340g, cubed and chilled",
+        "amount": "1½",
+        "section": "dough",
+        "isOptional": false
+      },
+      {
+        "name": "Ice Water",
+        "unit": "C",
+        "notes": "160ml, plus more if necessary",
+        "amount": "⅔",
+        "section": "dough",
+        "isOptional": false
+      },
+      {
+        "name": "Or Cubed Apples",
+        "unit": "C",
+        "notes": "3 pounds, 1,3kg, peeled, sliced",
+        "amount": "12",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Blackberries",
+        "unit": "C",
+        "notes": "8-12 ounces, 225-340g",
+        "amount": "2-3",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": "170g",
+        "amount": "⅔",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Squeezed Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "4",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Calvados",
+        "unit": "Tbsp",
+        "notes": "Cognac, or brandy, or 2 teaspoons vanilla extract",
+        "amount": "2",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "finishing the pie",
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "finishing the pie",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Natural Sugar (see Headnote)",
+        "unit": "Tbsp",
+        "notes": "or granulated sugar",
+        "amount": "3-4",
+        "section": "finishing the pie",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "268c7af14c140b364d9049e62dcafff8e926369f585e1d4ba9de20661023abe7",
+    "lineage_hash": "29f7d14474e88e6261ee0cb8999c6671e02be03105319ce879d9544054ead3d7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/apple-blackberry-slab-pie-recipe/",
+    "fetchedAt": "2026-08-02T19:17:36.680Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/apple-blackberry-slab-pie-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,197 @@
+{
+  "recipe": {
+    "name": "Black Pepper Beef Puffs",
+    "time": "1 hr 45 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "25",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Boil the eggs for 9 minutes, then remove the egg yolks. Save the cooked egg whites for another use",
+      "Place the wheat starch in a bowl and, stirring constantly, slowly add the boiling water in a thin stream until the mixture is just about to come together into a dough. Take great care here, as adding the water too quickly will result in an overly firm dough, but adding it too slowly will make it undercooked and powdery",
+      "Check the weight of the dough and add one-third of that weight of cooked egg yolks",
+      "Knead the egg yolks into the dough until you have a smooth dough",
+      "Check the weight of the dough again and add one-third of that weight of butter, kneading in until well combined",
+      "Lastly, knead the baking powder in until evenly incorporated",
+      "Wrap the dough in cling film and chill in the refrigerator for 1 hour to firm up before using",
+      "Melt the butter for the black pepper sauce in a small sauce pan. Add the curry leaves and cook until fragrant and toasted",
+      "Add the remaining ingredients except for the potato starch slurry, bitters and beef, then mix to combine",
+      "Pour in the potato starch slurry and cook until it thickens",
+      "Cook the rib-eye in a pan with a dash of oil, then set aside to cool, leaving any juices behind in the pan",
+      "Mix in enough of the chilled black pepper sauce to bind the dried beef together&nbsp;",
+      "Add the bitters and set aside in the fridge",
+      "Divide the pastry into 25 pieces and roll each one into a sphere",
+      "Gently press each piece out into a flat circle about ½ cm thick",
+      "Place 15g of filling into each piece of dough and close the dough up around the filling",
+      "Heat the oil for deep-frying in a deep-fat fryer to 180°C",
+      "Add the puffs and cook until golden brown, about 5 minutes",
+      "Garnish with purple sweet potato powder or salt"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wheat Starch Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Boiling Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "room temperature, diced",
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "for deep-frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Purple Sweet Potato Powder",
+        "unit": null,
+        "notes": "to garnish, or just use salt",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "182",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Worcestershire Sauce",
+        "unit": "g",
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maggi Seasoning Sauce",
+        "unit": "g",
+        "notes": null,
+        "amount": "18",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "18",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potato Starch",
+        "unit": "Tbsp",
+        "notes": "mixed with 3 tablespoons cold water",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rib-eye Steak",
+        "unit": "g",
+        "notes": "cut into 3 mm dice",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Seasn Dark Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "for cooking",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3344045777671869751ef0a23487ba99e371afad509fd04df01f7e3f520a6cad",
+    "lineage_hash": "6e5f3c8d1cc0f41e5bd6fd78b7ee1dc307fc4df4820fdd55d12d603d56729d75"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/black-pepper-beef-puffs-recipe",
+    "fetchedAt": "2026-08-02T07:35:50.420Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/black-pepper-beef-puffs-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

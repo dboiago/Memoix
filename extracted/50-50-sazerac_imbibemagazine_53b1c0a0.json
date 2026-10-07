@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "50/50 Sazerac",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add first five ingredients to a mixing glass with ice and stir. Spray absinthe on the glass or do an absinthe rinse. Strain the stirred mixture into the glass, express a lemon peel over the rim, and discard the peel."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "b41251117785ee6a8fedac2d70769e2153f7cd3f878d9a50dd73306d53a662fa",
+    "lineage_hash": "7f4e4dc6a6842ee8b9854a3ed4617f4479b9950188b7f9c89409d99ea01d1d8b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/50-50-sazerac/",
+    "fetchedAt": "2026-08-03T21:20:31.252Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/50-50-sazerac/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,105 @@
+{
+  "recipe": {
+    "name": "Bite-Size Pecan Pies",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "24",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Prep. Coarsely chop the pecans.",
+      "Mix cream cheese, butter, and flour until the flour powder disappears. Do not over mix.",
+      "Make 1&quot; (25 mm) balls and drop them into the wells of the mini muffin pans. There is no need to grease or flour the pan. Press them into a hollow cup. The bottoms and sides should be about 1/8&quot; (3.2 mm) thick. Sprinkle a layer of chopped pecans in the bottom of the cups.",
+      "Whisk together the egg, brown sugar, vanilla, and melted butter and pour into the cups, filling them only about 2/3 of the way. The filling will expand.",
+      "Fire up. Preheat the oven to 350°F.",
+      "Cook. Bake for about 30 minutes or until the pastry is golden. Cool for at least 15 minutes by sitting the muffin pans on wire grates so air can circulate under them. You can use the grates from your grill. Run a sharp knife around the cups to loosen them and pop them out.",
+      "Serve. For Christmas, sprinkle with powdered sugar so they look like they&#039;re covered with snow. Plate and serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Full Fat Cream Cheese",
+        "unit": "oz",
+        "notes": null,
+        "amount": "3",
+        "section": "Ingredients For The Shells",
+        "isOptional": false
+      },
+      {
+        "name": "Salted Butter",
+        "unit": "Tbsp",
+        "notes": "1 stick, room temperature",
+        "amount": "8",
+        "section": "Ingredients For The Shells",
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Ingredients For The Shells",
+        "isOptional": false
+      },
+      {
+        "name": "Pecans",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": "Ingredients For The Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Ingredients For The Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Brown Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": "Ingredients For The Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Ingredients For The Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Salted Melted Butter",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Ingredients For The Filling",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ea0a263ad05cb94c5bbb846712112b5228aff2e2fcddc4da05934a6d6d40e240",
+    "lineage_hash": "9fca7b8623e0c190c42f6eb95481071f4085730c6de353a95a07e74768273aca"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://amazingribs.com/tested-recipes/dessert-recipes/pecan-tassies/",
+    "fetchedAt": "2026-08-02T01:30:18.949Z"
+  },
+  "rawSource": "https://amazingribs.com/tested-recipes/dessert-recipes/pecan-tassies/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

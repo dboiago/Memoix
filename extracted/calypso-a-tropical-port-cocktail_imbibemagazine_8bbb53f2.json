@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Calypso: A Tropical Port Cocktail",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to a shaker, add ice, then shake vigorously. Double-strain into a rocks glass with a large cube, then garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "4a53627ab59c8c917053ec03acd6f286ec1cbcf0c1e65ef6636ebd2f7a1e866c",
+    "lineage_hash": "148b88ddfacf47551fa94c10ad6d4d9b9fdde0a1075dc35d9a8494ab4c0de8ca"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/calypso-tropical-port-cocktail/",
+    "fetchedAt": "2026-08-03T19:21:17.074Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/calypso-tropical-port-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

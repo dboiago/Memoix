@@ -1,0 +1,79 @@
+{
+  "recipe": {
+    "name": "Cassia Ice Cream",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Gently warm the milk and cream in a pan, then add the cassia and set aside to infuse for 2 hours",
+      "Once infused, bring the milk, cream and cassia to the boil. Meanwhile, whisk the eggs and sugar together until thick and pale, then pour the cream and cassia mix into the eggs, whisking to combine",
+      "Pour everything back into the pan and stir over a low heat until thickened",
+      "Pass through a sieve into a mixing bowl and set over iced water. Stir so that the mixture cools quickly and taste the mix. If needed, return the cassia bark for a while longer to achieve a deeper flavour",
+      "Once the mixture is chilled and the flavour is to your liking, churn in an ice cream maker. Store in the freezer until required"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cassia",
+        "unit": "g",
+        "notes": "crushed",
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "65",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1c042518d36417b839e9626baf6916d3aa001ec117bd14c73166833b3bc5f80d",
+    "lineage_hash": "da09105cb2ee1c571953ee7108653bfa7c90371ea283b1a4ae242167e3e7349b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cassia-ice-cream-recipe",
+    "fetchedAt": "2026-08-03T16:01:59.676Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cassia-ice-cream-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

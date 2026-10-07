@@ -1,0 +1,108 @@
+{
+  "recipe": {
+    "name": "Mexican Capirotada (Mexican Bread Pudding)",
+    "time": "3 hr 26 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "473",
+      "carbohydrateContent": "69",
+      "fatContent": "16",
+      "proteinContent": "13"
+    },
+    "directions": [
+      "Preheat oven to 350 degrees F.",
+      "Cut rolls in ½ inch slices and butter both sides, layer on a baking sheet and bake for 3 minutes on each side, until lightly toasted and dry. Remove and cool.",
+      "Combine water, piloncillo, cinnamon sticks, and cloves in a large saucepan. Bring to a boil; reduce heat, creating a syrup. Simmer syrup uncovered for 20 minutes. Remove from heat and let steep, covered for 2 hours. Pour through a strainer and discard cinnamon sticks and cloves. Set syrup aside.",
+      "Spray 8 x 10 ½” baking dish with non-stick spray, layer ingredients in the following order: a third of the toasted bread, third of the raisins, third of the cheese, and 1 1/2 cups syrup evenly over cheese. Wait 15 minutes and layer another third of the bread, raisins, cheese, and 1 1/2 cups syrup evenly over cheese. Let soak for another 15 minutes, and again top with the remaining bread, raisins, cheese, and syrup evenly over bread. Before baking let set for another 15 minutes.",
+      "Cover the dish with aluminum foil that has been sprayed with nonstick spray and bake 40 minutes, uncover and bake until cheese is golden brown about 10 to 15 minutes more. Serve warm."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bolillo Rolls",
+        "unit": null,
+        "notes": "alt: French rolls",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "4½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Piloncillo",
+        "unit": "oz",
+        "notes": "alt: 1 ½ cups packed dark brown sugar",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Sticks",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cheese",
+        "unit": "C",
+        "notes": "shredded, Longhorn Cheddar, Colby, or cheese of your choice",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raisins",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "alt: spray butter",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d9c97faa60a0826ac35f919da23bde12215f8e96f7ff1f75f1c2b4d12bdb4583",
+    "lineage_hash": "771f56192fc571d27d7f1bb8d020d09ace8c728fa97fb08009768011bde6504f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/capirotada-mexican-bread-pudding/",
+    "fetchedAt": "2026-08-02T11:29:01.780Z"
+  },
+  "rawSource": "https://muybuenoblog.com/capirotada-mexican-bread-pudding/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

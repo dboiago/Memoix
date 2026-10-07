@@ -1,0 +1,171 @@
+{
+  "recipe": {
+    "name": "Cashew Chicken",
+    "time": "40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "238",
+      "carbohydrateContent": "8",
+      "fatContent": "15",
+      "proteinContent": "17"
+    },
+    "directions": [
+      "Marinating chicken cubes with ground black pepper, cornstarch, water (or Chinese cooking wine), light soy sauce, salt and sesame oil. Set aside for 30 minutes.&nbsp;Mix stir fry sauce in a small bowl.",
+      "Spread cashew nut in a non-stick pan and toast over slow fire until crispy.",
+      "Place oil in wok and place the chicken cubes in. Spread them evenly on the cooking pot with chopstick and gently fry. Watch the chicken cubes carefully and transfer them out as long as they turn pale.",
+      "Leave around 1 tablespoon of oil in and fry garlic and green pepper until aromatic.&nbsp; Return the chicken and add stir fry sauce. When the sauce is almost all attached to the chicken cubes, turn off heat and spread cashew nut in. Mix quickly and serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Breast Cut Into Small Cubes",
+        "unit": null,
+        "notes": "boneless",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": "alt: Chinese cooking wine",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pinch of Salt",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Cooking Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves Sliced",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Pepper Cut Into Small Pieces",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Cashew",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "03047d1b505ce33b157733aca91f7efdc02eeb23c13fc6c88908a4a0078e4f88",
+    "lineage_hash": "4873b9303ab91330328473c09ef05dddd6c1fd94de09fafd4b42688b48561d3f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/cashew-chicken/",
+    "fetchedAt": "2026-08-02T05:33:23.906Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/cashew-chicken/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

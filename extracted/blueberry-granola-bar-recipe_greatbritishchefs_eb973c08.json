@@ -1,0 +1,104 @@
+{
+  "recipe": {
+    "name": "Blueberry Granola Bar",
+    "time": "45 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 160°C/gas mark 3. Grease a 20cm square baking tin and line with greaseproof paper",
+      "Place the butter, syrup and sugar in a wok and bring to a gentle simmer. You could use a pan but I find a wok works well for mixing the dry ingredients in – like a mixing bowl",
+      "Add the remaining dry ingredients and mix well",
+      "Transfer the mixture into the prepared baking tin and bake for 30 minutes",
+      "Score the mixture into your desired portions as soon as it comes out of the oven and then leave it to cool in the tin. Take it out of the tin and let it cool completely before you cut the bars up",
+      "They’ll keep in an airtight tin for about a week. Remember the blueberries are fresh so the fridge would be the best place to store them"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Syrup",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rolled Oats",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granola",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Seeds",
+        "unit": "g",
+        "notes": "linseeds and pumpkin seeds. Sunflower seeds also work well",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Desiccated Coconut",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blueberries",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "78fc674e035782c85b6181966349c6a885018c46716720c9b4873bdcabe9b74d",
+    "lineage_hash": "241b36383a5a1159e49d65272d3496c9a3ccc8516b4dd36651d7c7bb672441cc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/blueberry-granola-bar-recipe",
+    "fetchedAt": "2026-08-03T12:08:29.811Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/blueberry-granola-bar-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

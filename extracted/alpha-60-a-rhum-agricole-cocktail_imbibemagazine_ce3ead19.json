@@ -1,0 +1,35 @@
+{
+  "recipe": {
+    "name": "Alpha 60",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to a shaker with ice. Shake to chill and strain into a coupe.",
+      "Sugar Snap Pea and White Pepper SyrupBlanche the snap peas and parsley for 30 seconds and chill them in an ice bath (best done separately). Add all of the ingredients, except the sugar, to a blender in proportionate amounts. Run on low for 20 seconds, then switch to high for 20 seconds. Fine strain twice through a large fine-mesh strainer, leaving the solids from the first filtering in to catch smaller particles of pepper. Add the sugar, then agitate until dissolved. Will keep in the refrigerator for 3 to 4 days. Store in freezer for extended periods."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "ab443f1cb83aa18947581f18a6f42d78a7b45d088cba4e87f7aed72a5f101318",
+    "lineage_hash": "cc9acfd812360aa6eb2aca0aa10043aa13938a4620f36bce3539a5309850cbec"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/alpha-60-rhum-agricole-cocktail/",
+    "fetchedAt": "2026-08-03T22:15:34.856Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/alpha-60-rhum-agricole-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

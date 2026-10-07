@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Amaro Margarita",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Rim the edge of a glass with salt, fill with ice, and set aside. Add all of the ingredients to a shaker with ice and shake vigorously. Strain into the prepared glass, then add the garnish.\nRich Cinnamon SyrupSlice 6 cinnamon sticks thinly lengthwise to expose more surface area for more flavor. Add 9 oz. of demerara sugar to 6 oz. of boiling water, stir, and allow the sugar to dissolve completely. Add the cinnamon and allow to steep overnight. Strain out the cinnamon sticks. Will keep for about a month in the refrigerator."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "5616cc85567b28500ceb65961a93377fe156cbf11aac367e6cb88ac75d659c8f",
+    "lineage_hash": "b0ed2ea0a38bf38ad8256422258938865dbeee6dbad21daf6e82079d176140d1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/amaro-margarita/",
+    "fetchedAt": "2026-08-04T01:55:51.729Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/amaro-margarita/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

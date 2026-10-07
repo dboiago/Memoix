@@ -1,0 +1,84 @@
+{
+  "recipe": {
+    "name": "Beer Yorkshire Puddings",
+    "time": "40 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place all the ingredients (apart from the beef dripping) in a mixing bowl and whisk together to create a smooth batter. Place in the fridge for at least 20 minutes to chill. Meanwhile, preheat an oven to 220°C",
+      "Grease a Yorkshire pudding tray generously with beef dripping, then place it in the oven to heat up. Once the dripping is smoking hot, quarter-fill each pudding hole with some batter. Immediately return to the oven and cook for 18 minutes. Serve with your Sunday roast, Christmas dinner or simply enjoy as a snack!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "unit": "medium",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pint of Sharps Doom Bar Beer",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Dripping",
+        "unit": null,
+        "notes": "for greasing",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c2d73745069517e941ae8c0fe9ed72a551fab41e7efb3311ca9e44ef22d471af",
+    "lineage_hash": "dbfd8d027d2529bf57d6175b1ef466e01649f73badd22c06515d3be9d269abb9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beer-yorkshire-puddings-recipe",
+    "fetchedAt": "2026-08-02T20:24:33.986Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beer-yorkshire-puddings-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Toast and Marmalade",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake all the ingredients well, pour the contents into a double rocks glass. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "078c8f0a752ea4a93c564fdf38a5ababea7e9dcf77c428d57b2e222003048b1f",
+    "lineage_hash": "d2450ddbc2540c313b9b7921c3d8d7e85e667a1e3bba308834c4ffd3e5f2062c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/breakfast-cocktail-toast-and-marmalade/",
+    "fetchedAt": "2026-08-04T01:52:25.201Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/breakfast-cocktail-toast-and-marmalade/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

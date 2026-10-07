@@ -1,0 +1,112 @@
+{
+  "recipe": {
+    "name": "Babi dan Tahu Kecap (Pork and Tofu in Soy Sauce)",
+    "time": "2 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Blanch pork (optional): Boil a pot of water and blanch pork to remove scum. Drain and set aside.",
+      "Blanch fried tofu (optional): Blanch tofu in another pot of boiling water to remove oil. Drain and set aside.",
+      "Cook pork: Boil 4 cups water, pork, garlic, and white peppercorns. Reduce heat to a simmer and cook for 30 minutes.",
+      "Cook tofu: Add tofu, light/regular soy sauce, sweet soy sauce, dark soy sauce, and sugar. Cover the pot, reduce the heat, and simmer for 30 minutes or until the pork is tender.",
+      "Add egg: Add hard-boiled eggs and simmer for another 15 minutes. Adjust the seasoning (salt and sugar) as needed.",
+      "Serve: Turn off heat, served immediately with steamed white rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gram Pork (use Pork Belly, Pork Shoulder, or Pork Loin Closest to the Shoulder)",
+        "unit": null,
+        "notes": "cut into bite-size pieces",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Block (450 Gram/1 Lb) Firm/extra-firm Tofu",
+        "unit": null,
+        "notes": "cut into 8 pieces and pan-fried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hard-boiled Eggs",
+        "unit": null,
+        "notes": "peeled",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "head",
+        "notes": "peeled and lightly bruised",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Peppercorns",
+        "unit": "Tbsp",
+        "notes": "cracked",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light/regular Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Indonesian Sweet Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "Indonesian: kecap manis",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "28ce5701b934eea92c7b4cc706a5ec1a79e15317b3dd8217c62f80b6aa776b4e",
+    "lineage_hash": "76adf3602700e0dd22ea7835eb2028e259270e1e75c3e3c9f708a36c51caa2a5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/babi-dan-tahu-kecap-pork-belly-and-tofu-stewed-in-soy-sauce.html",
+    "fetchedAt": "2026-08-01T20:17:37.852Z"
+  },
+  "rawSource": "https://dailycookingquest.com/babi-dan-tahu-kecap-pork-belly-and-tofu-stewed-in-soy-sauce.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

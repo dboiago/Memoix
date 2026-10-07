@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Caramel Apple Butter Matcha Latte",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a mug, whisk the matcha powder with the hot water until smooth. Stir in the syrup and add the steamed milk. Garnish.\nCaramel Apple Butter SyrupAdd the butters to a saucepan over medium heat. Once melted follow with caramel sauce and vanilla extract. Stir to combine and add the rest of the ingredients. Stir until clump-free. Will keep in the refrigerator for 2 weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "1c6f2d73891df2e44032d413fdcd5304f19afb8bd02572b1d00b2e369b575e76",
+    "lineage_hash": "692e9cd892595c7d6d6246e31d187a48c4f13b5a46d29b2e6f5b792f5ebeeba1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/caramel-apple-butter-matcha-latte/",
+    "fetchedAt": "2026-08-04T01:34:59.175Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/caramel-apple-butter-matcha-latte/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

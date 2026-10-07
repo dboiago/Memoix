@@ -1,0 +1,119 @@
+{
+  "recipe": {
+    "name": "Bola Tape Keju - Cassava Cheese Balls",
+    "time": "40 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "ID",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix cassava and cheddar cheese together until combine. Divide into 25 to 30 1 inch diameter balls.",
+      "Prepare the frying batter by mixing together all purpose flour, rice flour, sugar, baking powder, salt, and cold water.",
+      "Heat enough oil in a pot for deep frying.",
+      "Coat the cassava cheese balls with the batter and fry until golden brown, about 1-2 minutes. Remove with a slotted spoon and place on paper towel to absorb excess oil.",
+      "Pour some melted chocolate on top of each fried cassava cheese ball and serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gram Fermented Cassava (indonesian: Tape)",
+        "unit": null,
+        "notes": "mashed",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Cheddar Cheese",
+        "unit": null,
+        "notes": "grated",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram All Purpose Flour",
+        "unit": null,
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Rice Flour",
+        "unit": null,
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cold Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Enough Oil for Deep Frying",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Dark Chocolate",
+        "unit": null,
+        "notes": "melted",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4ba9f6bdce258e8352016097c3b5d0e6ef2ea125efec1a8a64abc7c1f76ef11b",
+    "lineage_hash": "d91ce01d23bafba3fbe5091e91a74ccb7fff75c86280bdc7bceea390a943ac8a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/bola-tape-keju-cassava-cheese-balls.html",
+    "fetchedAt": "2026-08-02T11:24:35.033Z"
+  },
+  "rawSource": "https://dailycookingquest.com/bola-tape-keju-cassava-cheese-balls.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

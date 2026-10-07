@@ -1,0 +1,135 @@
+{
+  "recipe": {
+    "name": "Braised Venison Shank",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a hot pan, sear the venison shanks in an ovenproof casserole dish until dark brown all over. Remove and set aside",
+      "In the same pan, add the carrots, celery and onion and cook for 10 minutes until beginning to colour",
+      "Place the shanks back into the dish and cover with the stock. Cover with a lid and place in the oven for 2 hours, or until the meat is falling off the bone. After this time, remove the shanks from the liquid and keep them warm. Reduce the cooking liquid over a medium-high heat until you have a nice slightly viscous, glossy sauce",
+      "Just before the shanks are fully cooked, heat some butter in a pan and fry the corn, squash, beans and bacon until beginning to colour",
+      "Serve the shanks with some of the cooking liquid poured over the top and the beans, corn, bacon and squash on the side"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Venison Shanks",
+        "unit": null,
+        "notes": "bone-in, each weighing approx. 400g",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Game Stock",
+        "unit": "L",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweetcorn",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Squash",
+        "unit": "g",
+        "notes": "finely diced",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Beans",
+        "unit": "g",
+        "notes": "cut into quarters",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wild Boar Bacon Lardons",
+        "unit": "g",
+        "notes": "or use pancetta if you can't get hold of it",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Knob of Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "90faf66d060512dc883bca7096dbd1d017300d72e3bc68a20a4755a6ee85da8d",
+    "lineage_hash": "33c87c2730901ac1ed0918a0aaeb60b164f3802c24a0e23d69392d1541bed2bc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/braised-venison-shank-recipe",
+    "fetchedAt": "2026-08-03T10:23:32.549Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/braised-venison-shank-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

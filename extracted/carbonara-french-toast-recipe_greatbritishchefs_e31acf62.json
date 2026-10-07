@@ -1,0 +1,88 @@
+{
+  "recipe": {
+    "name": "Carbonara French Toast",
+    "time": "10 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Whisk together 2 of the eggs with the milk and grated Parmesan. Season with pepper (it shouldn’t need salt, as Parmesan and pancetta are salty)",
+      "Fry the pancetta in a large pan until the fat renders and the pieces are crisp. Remove the pancetta but leave the fat in the pan for frying the toast",
+      "Dip the bread slices into the milk mixture, allowing them to soak for 10-15 seconds",
+      "Fry the bread in the pancetta fat over medium heat until golden and crisp on both sides. Add a splash of olive oil if needed",
+      "Meanwhile, fry the remaining eggs in a separate pan in olive oil",
+      "Serve the French toast topped with the fried egg and scatter over the crispy pancetta. Finish with a generous shower of Parmesan and pepper"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Freshlay Farms Golden Yolker® Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan",
+        "unit": "g",
+        "notes": "finely grated, plus extra to serve",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pancetta Lardons",
+        "unit": "g",
+        "notes": "or guanciale if you can find it",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sourdough Bread",
+        "unit": "slices",
+        "notes": "brioche works nicely too",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": null,
+        "notes": "to fry",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0b91768e4d83776489d44e6d0e7a62cb0c4238f7034e3fecef53b1ad603cb6ad",
+    "lineage_hash": "c8218a562a9480bcaa4d94bf23e06f074eeb7f69e8989eb5aef815403640e9c0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/carbonara-french-toast-recipe",
+    "fetchedAt": "2026-08-01T20:57:04.736Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/carbonara-french-toast-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

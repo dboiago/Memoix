@@ -1,0 +1,98 @@
+{
+  "recipe": {
+    "name": "Carrot Rice",
+    "time": "20 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "BR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a medium sauce pan, heat up the oil.",
+      "Add the diced onion and cook until transparent, about 2 minutes.",
+      "Add the garlic and cook until fragrant - about a minute.",
+      "Add the rice, the grated carrots, and the salt and stir for about a minute.",
+      "Add 1 3/4 cup of water to the pan and bring to a gentle boil.",
+      "Reduce to a simmer, cover and let it simmer until all water has been absorbed (try not to peak – we don’t want to lose steam that’s precious for the next step!)",
+      "Turn off the heat and let the rice pot sit covered for another 10 mins – steam.",
+      "Open the pot, then &quot;air&quot; the rice for a minute or two. Then, sprinkle in the parsley (if using), fluff with a fork, and serve!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "diced about half a cup diced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brazilian Sofrito",
+        "unit": "tsp",
+        "notes": "alt: 2 cloves of garlic, minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Grated Carrots",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Uncooked Long Grain White Rice Unwashed",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kosher Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "Tbsp",
+        "notes": "fresh, minced optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "19837477b4ed72d1bf92bb67c0fe1c14cf618c3054b5f695e4f246914cf8959a",
+    "lineage_hash": "af9aa97ef959a0a0da15b16ad58ae19eaed6d85b7b5e1350571f39438ebe0897"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://braziliankitchenabroad.com/carrot-rice/",
+    "fetchedAt": "2026-09-25T19:55:41.115Z"
+  },
+  "rawSource": "https://braziliankitchenabroad.com/carrot-rice/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

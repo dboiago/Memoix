@@ -1,0 +1,242 @@
+{
+  "recipe": {
+    "name": "Bakso Sapi Saus Padang",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "ID",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix all meatball ingredients together. Shape into meatballs, each about 1 tablespoon worth.",
+      "Boil a pot of water in a pot (about 70% full). Once it boils, drop meatballs into boiling water. The meatballs are cooked once they float to the surface. If your pot is small, you may want to cook the meatballs in batches.",
+      "Scoop out the cooked meatballs with a slotted spoon and set them aside.",
+      "Heat oil in a skillet/frying pan over medium high heat. Sauté onion, all the chilies, garlic, and ginger until the onion looks translucent.",
+      "Add beef stock, oyster sauce, tomato ketchup, chili sauce, salt, ground pepper, and sugar. Mix well and bring to a boil.",
+      "Give a quick taste test, and add salt/sugar/pepper as needed. Then thicken the sauce by adding the corn starch slurry, continue stirring until the sauce is thick, about 2 minutes.",
+      "Return the cooked meatballs into the skillet/frying pan. Gently toss to coat meatballs with sauce.",
+      "Transfer to a serving plate, garnish with thinly sliced scallions, and serve immediately with steamed white rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bakso Sapi (beef Meatballs)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram (1 Lb.) Ground Beef",
+        "unit": null,
+        "notes": null,
+        "amount": "450",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Tapioca Starch",
+        "unit": null,
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Ice Cubes",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Saus Padang (spicy Tomato Sauce)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Onion",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thai Red Bird Eye Chilies (indonesian: Cabe Rawit Merah)",
+        "unit": null,
+        "notes": "seeded and thinly sliced",
+        "amount": "3-5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Fresno Chilies (indonesian: Cabe Merah Besar)",
+        "unit": null,
+        "notes": "seeded and thinly sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilies (indonesian: Cabe Merah Kering)",
+        "unit": null,
+        "notes": "dried, seeded",
+        "amount": "3-5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "bruised",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Stock (or Water)",
+        "unit": "ml",
+        "notes": "*",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Ketchup",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili Sauce",
+        "unit": "Tbsp",
+        "notes": "**",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn Starch Slurry (2 Teaspoon Corn Starch + 4 Teaspoon Water, Mix Well)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "for garnish, optional, thinly sliced",
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1cea218487b20253274a313cb81107c3e87504971deaeafe1d46ab5967a89252",
+    "lineage_hash": "a40a768965f5a21428aa7e0c00055651919acbc814995dc5395ec2570dd11c0c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/bakso-sapi-saus-padang-indonesian-spicy-meatballs.html",
+    "fetchedAt": "2026-08-02T02:59:19.645Z"
+  },
+  "rawSource": "https://dailycookingquest.com/bakso-sapi-saus-padang-indonesian-spicy-meatballs.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

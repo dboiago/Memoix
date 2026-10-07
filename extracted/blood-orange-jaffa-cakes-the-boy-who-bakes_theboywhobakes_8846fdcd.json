@@ -1,0 +1,112 @@
+{
+  "recipe": {
+    "name": "Blood Orange Jaffa Cakes",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "24",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the jelly place the blood orange juice and the sugar into a saucepan and bring to a simmer, dissolving the sugar.",
+      "Meanwhile, place the gelatine into a bowl of cold water, setting aside until softened.",
+      "Once the sugar has dissolved remove the gelatine from the water, squeezing off any excess water and add to the juice mixture, stirring together until full dissolved.",
+      "Line a 9-inch round cake pan with clingfilm and pour in the jelly mixture, chilling in the fridge for a few hours until set.",
+      "Preheat the oven to 180C (160C Fan) and lightly grease two 12-hole muffin pans.",
+      "To make the sponge bases place the eggs and sugar into a large bowl and using an electric mixer whisk together for about 5 minutes until pale and thickened.",
+      "In two additions sieve over the flour and gently fold together.",
+      "Pour in the butter and fold together until fully combined.",
+      "Divide the batter between the prepared pans, about 1 tbsp of batter per base and bake in the preheated oven for 7-10 minutes or until lightly browned.",
+      "Allow to cool for a couple of minutes before carefully teasing the cakes out of the pans (they tend to stick a little bit but with a little teasing they pop right out).",
+      "Remove the jelly from the fridge and using a 4cm cut out 24 disc of jelly and place on the middle of each sponge base.",
+      "For the topping place the chocolate into a microwave safe bowl and in 30 second bursts heat until about 3/4 of the chocolate is melted, remove from the microwave and stir until fully melted (this is a quick simple way of tempering chocolate, great when using small amounts).",
+      "To decorate the cakes use a teaspoon to spread chocolate over the top of the jelly, gently teasing it to the edges of the cakes.",
+      "To give the classic Jaffa Cake look use a fork and gently press the tines onto the chocolate and lift up, do this after coating each cake as the chocolate needs to be fluid to achieve this look."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": "Sponge Base",
+        "isOptional": false
+      },
+      {
+        "name": "Golden Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": "Sponge Base",
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": "Sponge Base",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "melted and slightly cooled",
+        "amount": "30",
+        "section": "Sponge Base",
+        "isOptional": false
+      },
+      {
+        "name": "Blood Orange Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "160",
+        "section": "Blood Orange Jelly",
+        "isOptional": false
+      },
+      {
+        "name": "Golden Caster Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Blood Orange Jelly",
+        "isOptional": false
+      },
+      {
+        "name": "Sheets Gelatine",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Blood Orange Jelly",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": "Blood Orange Jelly",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7bc5626876cb4616c1ffca989bb74dc28ff827036f4e4add307831bc0a3dc5c9",
+    "lineage_hash": "4c88ceeab52b549a4b019a90e2c2a685dddafb0b6e1bd5c65358c5311ca41001"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.theboywhobakes.co.uk/recipes/2015/1/28/blood-orange-jaffa-cakes",
+    "fetchedAt": "2026-08-01T22:01:14.961Z"
+  },
+  "rawSource": "https://www.theboywhobakes.co.uk/recipes/2015/1/28/blood-orange-jaffa-cakes",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

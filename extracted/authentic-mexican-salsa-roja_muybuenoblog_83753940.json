@@ -1,0 +1,106 @@
+{
+  "recipe": {
+    "name": "Authentic Mexican Salsa Roja",
+    "time": "15 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "97",
+      "carbohydrateContent": "8",
+      "fatContent": "7",
+      "proteinContent": "2"
+    },
+    "directions": [
+      "Heat a comal on the stovetop or the oven broiler. Place chile peppers, tomatoes, onion, and garlic on a comal or on a foil-lined baking sheet and broil for about 8 minutes, turning once, or until tomatoes are blistered and blackened in spots and softened. No need to peel tomatoes or chiles. Let cool.",
+      "Add roasted ingredients into a blender with salt and cilantro. Pulse until smooth.",
+      "In a skillet, warm olive oil. When the oil is hot, pour blended salsa and flash fry for about 2 minutes. You might want to be ready with a splatter screen during this step. Serve in bowl and add salt to taste."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Jalapeno",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Serrano",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Roma Tomatoes",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Onion",
+        "unit": null,
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "handful",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ba3aa073686521dcada0421b5524892c9848746b91f181800ec849e1bf439a74",
+    "lineage_hash": "132d9b635dd07ff739d80112bf5293a6db9bdceded6a37935e766f0f76458296"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/authentic-mexican-salsa-roja/",
+    "fetchedAt": "2026-08-02T02:44:59.343Z"
+  },
+  "rawSource": "https://muybuenoblog.com/authentic-mexican-salsa-roja/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

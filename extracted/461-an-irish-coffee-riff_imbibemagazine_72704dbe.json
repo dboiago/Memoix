@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Irish Coffee Riff",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [
+      "Coffee-cocoa-dusted Cherry"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake all of the ingredients with ice, then double strain into a chilled glass, and garnish.\nGuinness SyrupCombine 8 oz. of Guinness stout with 8 oz. of demerara sugar in a saucepan. Heat over medium, stirring, until sugar has dissolved, then cool and bottle for use within 1 week.\nCoffee-Cocoa-Dusted CherryUse a clean cloth or paper towel to dry a maraschino cherry, then roll it in a dish of fine-ground coffee and cocoa powder. Place on a skewer and rest on the edge of the glass as garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "272b6df9781645b06b3aa305ba3d7031dcc3c50afe5d9c84b6f18e5aae3e5113",
+    "lineage_hash": "df83a4eccd642ddc9929dee0139cefa35e4f09c46c84aa2932805149b20b3e80"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/461-slainte-irish-coffee-riff/",
+    "fetchedAt": "2026-08-04T00:35:17.289Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/461-slainte-irish-coffee-riff/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

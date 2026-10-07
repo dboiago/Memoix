@@ -1,0 +1,147 @@
+{
+  "recipe": {
+    "name": "Cheesecake and Brioche Canapé",
+    "time": "2 hr",
+    "course": "breads",
+    "rating": 0,
+    "serves": "20",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, make the cheesecake. Whisk together the cream cheese, cow's curd, milk and double cream and set aside",
+      "Whisk the eggs and sugar together until combined, allow to settle then skim off any bubbles on the surface",
+      "Blend both sets of ingredients together and pass through a fine sieve to remove any lumps. Pour the cheesecake into a 5cm deep tray and cook for 45 minutes. Check after 20 minutes",
+      "Once cold, beat back the cheesecake until smooth and place in a piping bag with a nozzle",
+      "Slice the over-ripe strawberries into a bowl, cover with cling film and place over a bain marie. Heat until all of the juice has been extracted from the strawberries, then pass the juice through a chinois lined with muslin cloth",
+      "Bloom the gelatine by soaking it in cold water until soft. Pour 125g of the strawberry liquid into a small pot and mix in the gelatine until it has completely dissolved. Allow to set in the fridge and reserve the remaining juice",
+      "Wash the wild strawberries carefully. Dip half of them, one-by-one, into the strawberry juice and drain off the excess liquid. Dip into the Mannitol powder to form a crisp outer shell. Set the remaining strawberries aside on paper towels",
+      "Cut the brioche into 3cm cubes. Using a Parisian scoop, remove a dip from the cube, dust with icing sugar and lightly toast on all sides until golden brown under the grill",
+      "Pipe some cheesecake into the dips and decorate with a couple of fresh strawberries, a couple of the Mannitol-coated strawberries and a scoop of strawberry jelly. Finish with a couple of small sweet cicely leaves"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cream Cheese",
+        "unit": "g",
+        "notes": "preferably Philadelphia",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cow's Curd",
+        "unit": "g",
+        "notes": "preferably Cornish",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Full-fat Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strawberries",
+        "unit": "g",
+        "notes": "over-ripe",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sheet of Gold Gelatine",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wild Strawberries",
+        "unit": null,
+        "notes": "2 punnets",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mannitol Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brioche Loaf",
+        "unit": null,
+        "notes": "good-quality, crusts removed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Cicely",
+        "unit": null,
+        "notes": "leaves only",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9594d31fb6863d79ffcfce83268d0c86e959c881f20b39f374d1caf9feddeb95",
+    "lineage_hash": "d02818c6232184590c46186010f538dfad67e67b7246af43da6aa7844bfb88fe"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cheesecake-and-brioche-canape-recipe",
+    "fetchedAt": "2026-08-03T12:10:30.311Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cheesecake-and-brioche-canape-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

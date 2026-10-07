@@ -1,0 +1,116 @@
+{
+  "recipe": {
+    "name": "Vegan French Toast",
+    "time": "20 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "149",
+      "carbohydrateContent": "26",
+      "fatContent": "2",
+      "proteinContent": "5"
+    },
+    "directions": [
+      "Make the batter: In a shallow bowl, whisk together the plant-based milk, cornstarch, flour, maple syrup, vanilla, cinnamon (if using), and salt until completely smooth and no lumps remain.",
+      "Preheat the pan: Heat a non-stick pan over medium heat. Add 1 tablespoon vegan butter or oil and let it get hot before adding the bread. A properly preheated pan prevents sticking.",
+      "Dip the bread: Quickly dip each slice into the batter, coating both sides. Do not soak! Just a quick dip is key to avoid soggy French toast.",
+      "Cook: Place the coated bread in the hot skillet and cook for 2 to 3 minutes per side, until golden brown and lightly crisp. Work in batches if needed, adding more vegan butter or oil to the pan as needed.",
+      "Serve: Enjoy warm with maple syrup, fresh fruit, powdered sugar, vegan butter, or your favorite toppings."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plant-based Milk",
+        "unit": "C",
+        "notes": "soy or oat work especially well",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maple Syrup",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegan Butter",
+        "unit": null,
+        "notes": "alt: neutral oil, for frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sturdy Bread",
+        "unit": "slices",
+        "notes": "thick slices of slightly stale bread are best",
+        "amount": "4-6",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1b9b2b39146f9d77af337e7fa83ab9ca068c2acd452fad355fb6efa3b7128dba",
+    "lineage_hash": "0cafe4e4cdb934d962e2dcfedd727d973ba9e880070a2a6ce5d51ed5e986e641"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/vegan-french-toast/",
+    "fetchedAt": "2026-08-02T06:17:58.338Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/vegan-french-toast/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

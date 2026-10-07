@@ -1,0 +1,154 @@
+{
+  "recipe": {
+    "name": "Boil and Fry Black Eye Peas",
+    "time": "1 hr",
+    "course": "salad",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "168",
+      "carbohydrateContent": "15",
+      "fatContent": "11",
+      "proteinContent": "4"
+    },
+    "directions": [
+      "Pick over beans. Soak beans overnight or a few hours. Place drained black eye peas,  6 cups of clean water (meaning not the water you soaked it in) and salt in a pot over high heat. Bring to a boil, lower heat and cook until tender but still firm. Drain and set aside. While beans are boiling, chop onion, mince or grate garlic, chop peppers and herbs.",
+      "Heat oil in a dutch oven or heavy bottomed pot, over medium heat. Add onion, Cook 1 minute or until translucent. Add garlic and cook another minute. Add peppers and herbs including thyme leaves and cook for 3-5 minutes until tender.",
+      "Add black eye peas, salt, freshly ground black pepper and cook about 5 minutes, stirring constantly, to prevent sticking. Add cumin, stir and remove from the heat. Test for salt and add more if desired."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Blackeyed Peas Dried",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "To boil",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "6",
+        "section": "To boil",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "To boil",
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "To Cook",
+        "isOptional": false
+      },
+      {
+        "name": "Onion Medieum",
+        "unit": null,
+        "notes": "I only use sweet onion, chopped",
+        "amount": "1",
+        "section": "To Cook",
+        "isOptional": false
+      },
+      {
+        "name": "Red Bell Pepper Large",
+        "unit": null,
+        "notes": "optional",
+        "amount": "½",
+        "section": "To Cook",
+        "isOptional": false
+      },
+      {
+        "name": "Orange Bell Pepper",
+        "unit": null,
+        "notes": "alt: yellow, optional",
+        "amount": "½",
+        "section": "To Cook",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Minced",
+        "unit": "Tbsp",
+        "notes": "if you love garlic like me, use two tablespoon",
+        "amount": "1",
+        "section": "To Cook",
+        "isOptional": false
+      },
+      {
+        "name": "Herbs Scallion",
+        "unit": "C",
+        "notes": "chopped, fresh, cilantro or culantro/shado beni",
+        "amount": "¼",
+        "section": "To Cook",
+        "isOptional": false
+      },
+      {
+        "name": "Thyme Leaves",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "To Cook",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Roasted Cumin Geera",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "½",
+        "section": "To Cook",
+        "isOptional": false
+      },
+      {
+        "name": "Hot Pepper (scotch Bonnet, Habanero)",
+        "unit": null,
+        "notes": "to taste, optional",
+        "amount": "0",
+        "section": "To Cook",
+        "isOptional": false
+      },
+      {
+        "name": "Pimento Peppers Chopped",
+        "unit": null,
+        "notes": "optional",
+        "amount": "2",
+        "section": "To Cook",
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Freshly Ground Pepper to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "To Cook",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9298b5202e9f9fb2c5cef43dbb2341187ee9de2ed0898a61d1c098f5928925ce",
+    "lineage_hash": "ff740a7ad0036f33ab4c86213591261d846fa712209c1483976dfc6232864e3c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cookingwithria.com/2015/02/boil-and-fry-black-eyed-peas/",
+    "fetchedAt": "2026-09-25T21:04:39.078Z"
+  },
+  "rawSource": "https://cookingwithria.com/2015/02/boil-and-fry-black-eyed-peas/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

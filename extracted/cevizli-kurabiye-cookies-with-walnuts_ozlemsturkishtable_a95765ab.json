@@ -1,0 +1,80 @@
+{
+  "recipe": {
+    "name": "Cevizli Kurabiye",
+    "time": "30 min - 45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "TR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat oven to 150 C/300 F/ Gas Mark 2",
+      "Combine all the ingredients in a large mixing bowl. With using your hands, mix them well.",
+      "Take large egg sized portions and roll into balls with your hands and then slightly flatten into oval shapes.",
+      "Place them on the greased baking tray.",
+      "Bake in the oven for about 15 minutes, and check if they start turning golden / light brown color. If not bake for another 5 minutes.",
+      "Once cooked, cool the cookies and when they are slightly warm, coat them with icing sugar."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gr Self Raising Flour",
+        "unit": null,
+        "notes": "whole meal or plain",
+        "amount": "460",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gr Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "230",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gr Unsalted Butter",
+        "unit": null,
+        "notes": "melted",
+        "amount": "230",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gr Walnut",
+        "unit": null,
+        "notes": "or pecan pieces",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "pinch of salt",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1e446ae3098034816021c9ec2f300c67e572a98c7d1c49ef4c06cff3800edf0f",
+    "lineage_hash": "2e9729454a489289f588291007f46171b6a3d200e26c595635bd6ddffa30a1fc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ozlemsturkishtable.com/2010/09/cevizli-kurabiye-cookies-with-walnuts/",
+    "fetchedAt": "2026-09-25T20:03:10.212Z"
+  },
+  "rawSource": "https://ozlemsturkishtable.com/2010/09/cevizli-kurabiye-cookies-with-walnuts/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

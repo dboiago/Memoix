@@ -1,0 +1,37 @@
+{
+  "recipe": {
+    "name": "Bitter About My Hot Friend",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [
+      "Habanero Tincture"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all ingredients to a mixing tin with ice. Shake and double strain over fresh ice into a chilled  glass. Garnish.",
+      "Habanero TinctureWith latex gloves on, de-stem and chop 4 habaneros. Add the chopped chiles to 1 bottle of vodka and allow to macerate for 2 weeks. Strain in a bottle."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "690b4bc52d27646b3d3f89eafe17344a4f5289173c862ac7369728eb6b94748b",
+    "lineage_hash": "0c58cc77e00364f1b6eecebd1305eed54713bd3fb2f63c2718cefbfc04ed16c5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bitter-about-my-hot-friend-recipe/",
+    "fetchedAt": "2026-08-04T00:07:00.990Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bitter-about-my-hot-friend-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

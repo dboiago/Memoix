@@ -1,0 +1,186 @@
+{
+  "recipe": {
+    "name": "Baked Hake with Summer Vegetables",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Make the dill oil the day before you plan to serve the dish. Blanch the dill in salted boiling water for 5 seconds then refresh in ice water",
+      "Squeeze out any excess water from the dill and transfer to the Vitamix container with the oil. Blitz for 15–20 seconds until the dill has broken down (do not over-blend or the flavour will be compromised). Pass through a fine sieve then strain through a coffee filter or muslin cloth overnight in the fridge. The oil will keep up to 5 days, but keep in a dark place to maintain the vibrant colour",
+      "When ready to cook the final dish, use a mandoline or peeler to shave the carrots and courgettes into thin ribbons. Place in a bowl, lightly season with salt and mix gently. Set aside",
+      "Blanch the podded broad beans for 2 minutes in heavily salted boiling water, adding the podded peas for the final 30 seconds of cooking. Strain and refresh in iced water before removing the outer skins from the beans (and peas, for a very refined finish)",
+      "Place the sliced shallots and lemongrass in a baking tin and place the hake fillets on top. Add the wine and bake in the oven for 5–8 minutes",
+      "Remove the fish from the oven and keep covered in a warm place. Pass the liquid from the tin through a sieve into a clean pan, place over a medium heat and reduce slightly. Whisk in the cold cubes of butter to emulsify, and season with salt and lemon juice to taste",
+      "Drop the carrot, courgette, peas and beans into the sauce to heat through for 30 seconds, then gently stir through the chopped herbs",
+      "Divide the vegetables between bowls and top with the fish. Finish with drops of the dill oil, a little lemon zest and some pea shoots to finish"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Hake Fillets",
+        "unit": null,
+        "notes": "each weighing approximately 160g",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stick of Lemongrass (1)",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": "g",
+        "notes": "finely sliced",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "diced and cold",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juice to season the sauce, zest to garnish",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dill",
+        "unit": "g",
+        "notes": "picked",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grapeseed Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Carrots",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Courgettes",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peas",
+        "unit": "g",
+        "notes": "1kg if buying peas in pods, fresh, podded weight",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Broad Beans",
+        "unit": "g",
+        "notes": "1kg if buying beans in pods, podded weight",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Parsley",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Chervil",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Dill",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pea Shoots",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8e15c748129453f6e7cf21395075ebbf785502f4096aada8fa5a352e570fea7d",
+    "lineage_hash": "fd98aa2a70a2d91665371922f290e3fa1b0aa6dbc14849d96b15e467488a7cdd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/baked-hake-recipe-summer-vegetables",
+    "fetchedAt": "2026-08-03T11:12:56.088Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/baked-hake-recipe-summer-vegetables",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

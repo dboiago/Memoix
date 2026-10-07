@@ -1,0 +1,118 @@
+{
+  "recipe": {
+    "name": "Black Forest Pavlova",
+    "time": "1 hr 40 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 150°C/Gas Mark 2 and line a large baking sheet with baking parchment",
+      "Whisk the egg whites and salt together until stiff, then gradually add the sugar, whisking well between each addition. You should have a thick, glossy meringue. Whisk in the cocoa and vinegar and fold the chopped chocolate in with a large metal spoon",
+      "Dollop the meringue into a round on the lined baking sheet, making it slightly higher on the outer edges. Pop it in the oven to bake for 1 hour to 1 hour, 15 minutes, or until the meringue is crisp on the outside but marshmallowy on the inside. Turn the oven off and leave the meringue to cool completely inside, with the oven door shut. It’s easiest to make it in the evening and leave it to cool overnight",
+      "Once you are ready to serve, Whip the cream until stiff but not dry and add the kirsch and whisk in again. Pile the cream on top of the meringue and spread it out a little. Scatter over the stoned cherries and top with the grated chocolate"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Egg Whites",
+        "unit": "large",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "you can simply blitz it in the food processor if you’re feeling lazy, grated",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": "or whipping cream",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kirsch",
+        "unit": "Tbsp",
+        "notes": "optional",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherries",
+        "unit": "g",
+        "notes": "you can macerate them in more kirsch with a tablespoon of sugar if you like, stoned",
+        "amount": "450",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ccc24ae2a95efd44bca26f55a1935b05afd4eafc82bd4e7caa1c73e37d69d4c6",
+    "lineage_hash": "522bb1e76dad32356dd72cf99d7e4dca7be3954d160cf8eca289c25718af4ecb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/black-forest-pavlova-recipe",
+    "fetchedAt": "2026-08-03T15:18:49.331Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/black-forest-pavlova-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

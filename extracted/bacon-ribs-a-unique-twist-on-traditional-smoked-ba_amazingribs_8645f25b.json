@@ -1,0 +1,111 @@
+{
+  "recipe": {
+    "name": "Bacon Ribs",
+    "time": "4605 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "583",
+      "carbohydrateContent": "25",
+      "fatContent": "38",
+      "proteinContent": "36"
+    },
+    "directions": [
+      "Prep. Remove the membrane from the slab of ribs (read more on removing the membrane here).",
+      "MIx together the water, Prague powder, brown sugar, salt, and pepper. Add the rack of ribs to a gallon zipper bag then add the curing mixture. Close the bag, squeezing out as much air as possible so the rack of ribs is fully immersed in the curing mixture. Put the bag in a pan to catch leaks and place in the fridge at 34 to 38°F (1.1 to 3.3°C). Allow the ribs to cure for three days, gently massaging the bag, and flip it once a day so the liquid and spices are well distributed.",
+      "After three days, remove the rack of ribs from the bag, and throw the liquid away. Quick rinse the ribs to wash off any thick deposits of salt on the surface.",
+      "Fire up. Prepare a smoker for indirect cooking. Alternatively, you can set up a charcoal grill for 2-zone cooking by placing a chimney full of lit charcoal briquets on one side of the grill&#39;s charcoal grate in order to create direct and indirect cooking zones. Adjust the smoker or grill vents to bring the temperature to about 225°F (107.2°C), and add three to four chunks of your favorite smoking wood to the charcoal for flavor. On a gas grill, adjust the temperature knobs so that one half of the grill is off and the other half is heated enough to maintain a temperature of approximately 225°F (107.2°C) on the indirect side.",
+      "Once the smoker or grill is ready, brush both sides of ribs with a light coating of mayonnaise and lightly season with the Meathead&#39;s Memphis Dust dry rub. Because of the salt in the curing mixture, there is no need to add more salt to the rub.",
+      "Cook. Place the slab of ribs meat side up on the main cooking grate as far away from the heat source as possible. Cover the smoker or grill. Allow the ribs to cook for 4 1/2 hours, then test the ribs for doneness. If you prefer to use the Texas Crutch (wrapping your ribs in foil or butcher paper to make them more tender), do so after the bones have begun to pull away from the bone, after approximately 4 hours.",
+      "To tell if the ribs are done, we prefer to use the &quot;bend test.&quot; Use tongs to pick up one end of the slab of ribs, then bend them slightly. If they are ready, the slab will bow until the meat starts to crack on the surface. If they are still tough, allow them to cook for another 30 minutes before testing again. Cook longer if needed. Sometimes you get a tough slab!",
+      "Serve. Once they arey tender, remove the ribs from the smoker or grill, then slice and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Warm Distilled Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": "Cure",
+        "isOptional": false
+      },
+      {
+        "name": "Prague Powder #1 (3.08 Grams)",
+        "unit": "tsp",
+        "notes": "3/5 teaspoon is not a typo; go by the weight!",
+        "amount": "⅗",
+        "section": "Cure",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Brown Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "6",
+        "section": "Cure",
+        "isOptional": false
+      },
+      {
+        "name": "Morton’s Kosher Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "4½",
+        "section": "Cure",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "3",
+        "section": "Cure",
+        "isOptional": false
+      },
+      {
+        "name": "Slab Baby Back Ribs",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Ribs",
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Ribs",
+        "isOptional": false
+      },
+      {
+        "name": "Meathead's Memphis Dust Dry Rub",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Ribs",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9192aa602a23e734bfd50a36a8e35ce566f6f8cb343de73440ff926a3c3cd23e",
+    "lineage_hash": "e174ced9af581e80b2aa697064bfc97cd8a8dd5d881d602cebd9917b096477c6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://amazingribs.com/bacon-ribs/",
+    "fetchedAt": "2026-08-02T04:19:42.952Z"
+  },
+  "rawSource": "https://amazingribs.com/bacon-ribs/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

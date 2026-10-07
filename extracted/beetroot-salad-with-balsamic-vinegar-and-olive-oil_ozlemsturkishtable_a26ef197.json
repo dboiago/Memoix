@@ -1,0 +1,89 @@
+{
+  "recipe": {
+    "name": "Beetroot Salad with Balsamic Vinegar and Olive Oil Dressing",
+    "time": "45 min",
+    "course": "salad",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "TR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Wash the beetroots and cut off the tops.",
+      "Peel the skin (or you can peel it once cooked) and cut into chunks.",
+      "Boil them in plenty of water for about 35 minutes (depending on its size, it could be a little longer). It is cooked when you pierce it easily with a skewer.",
+      "To make the dressing, combine the extra virgin olive oil, balsamic vinegar and lemon juice in a small bowl.",
+      "Season with salt and ground black pepper and mix well.",
+      "Mix the rocket (or salad leaves of your choice) with the cooked beetroot in a serving dish.",
+      "Pour the dressing over the top and mix well."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gr Beetroot",
+        "unit": null,
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gr Rocket",
+        "unit": null,
+        "notes": "or salad leaves washed and pat dried",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Balsamic Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Squeeze Lemon Juice",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": "and ground black pepper to taste",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "021f67c2d8e64e33410b4a0f9b4ef98c2fe6b09a45262d5b59a2bb24c7f9b1fd",
+    "lineage_hash": "9d9ab28cf26dca657757f608801a4953973fb456b144e2be46f764b038e180bc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ozlemsturkishtable.com/2011/09/beetroot-salad-with-balsamic-vinegar-and-olive-oil-dressing/",
+    "fetchedAt": "2026-09-25T18:57:51.727Z"
+  },
+  "rawSource": "https://ozlemsturkishtable.com/2011/09/beetroot-salad-with-balsamic-vinegar-and-olive-oil-dressing/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

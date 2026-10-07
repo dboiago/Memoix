@@ -1,0 +1,143 @@
+{
+  "recipe": {
+    "name": "Bread & Butter Pickles",
+    "time": "2 hr 10 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "64",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "28",
+      "carbohydrateContent": "6",
+      "fatContent": "0.1",
+      "proteinContent": "0.2"
+    },
+    "directions": [
+      "Toss 1 ½ pounds&#32;pickling cucumbers, 12 oz&#32;onions, 12 oz&#32;bell pepper and 3 tablespoons&#32;table salt in a large bowl. Cover the vegetables with ice cubes and set aside for 1½ - 2 hours.",
+      "Sterilize 5 pint-size canning jars, 5 2-piece lids and a canning funnel by boiling them in water for 10 minutes or by using the &quot;sterilize&quot; setting on your dishwasher. Set the hot jars on a towel on your work surface while you prepare the pickles",
+      "Drain the vegetables, rinse with cold water and drain again.",
+      "In a large pot, combine 16 oz&#32;cider vinegar, 4 oz&#32;brown sugar, 8 oz&#32;granulated sugar½ teaspoon&#32;turmeric, 1 tablespoon&#32;mustard seeds, ½ teaspoon&#32;ground ginger, ½ teaspoon&#32;peppercorns and ½ teaspoon&#32;dill seeds and bring the mixture to a boil. Add the vegetables to the saucepan and bring it back to a boil.",
+      "Place the canning funnel into one of the jars. Transfer the cucumber mix into the jar. Continue packing the the vegetable into the jars. Divide the pickle juice between the jars, leaving ½&quot; head space in each jar.",
+      "Poke a chopstick or skewer into each jar to remove any air bubbles. Wipe the rim of each jar clean with a wet paper towel. Top with 2 piece lids, don&#x27;t over-tighten the screw top.",
+      "Process in hot water bath for 10 minutes. Lift the jars out of the water bath and set on a towel on your work surface to cool.",
+      "You&#39;ll hear the lids pop as the seal is formed. Press on the center of each lid to make sure it&#39;s sealed. If a jar has not sealed refrigerate those pickles and use first. Sealed jars can be stored in the pantry for up to one year."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pickling Cucumbers",
+        "unit": "lb",
+        "notes": "sliced ¼\" thick",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "oz",
+        "notes": "sliced thin",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bell Pepper",
+        "unit": "oz",
+        "notes": "sliced thin",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cider Vinegar",
+        "unit": "oz",
+        "notes": "2 cups",
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Ginger",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peppercorns",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dill Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8a59737c3b9910b187a657c6577f49c8df771cc5d9181a9444e577c03a6e9eb0",
+    "lineage_hash": "5eeba2caf6fdaaebfb8f467f4c79b6bca69be2a2586dc8d1664af977cce8186d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2016/08/03/bread-butter-pickles/",
+    "fetchedAt": "2026-08-01T20:46:38.312Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2016/08/03/bread-butter-pickles/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

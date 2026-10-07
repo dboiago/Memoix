@@ -1,0 +1,149 @@
+{
+  "recipe": {
+    "name": "Bourbon-Pecan Cake",
+    "time": "2 hr 55 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "3734",
+      "carbohydrateContent": "458",
+      "fatContent": "174",
+      "proteinContent": "38"
+    },
+    "directions": [
+      "Combine cherries, raisins, and bourbon in a large mixing bowl. Cover tightly and let stand in the refrigerator overnight.",
+      "Drain fruits and reserve bourbon. Place butter in the large bowl of an electric mixer and beat on medium speed until light and fluffy. Add sugars gradually, beating on medium speed until well blended. Add egg yolks, beating until well blended.",
+      "Combine ½ cup of the flour with pecans. Sift the remaining flour with the baking powder, salt, and nutmeg. Add 2 cups of the flour mixture to the creamed mixture and mix thoroughly. Add the reserved bourbon and the remainder of the flour mixture alternatively, ending with flour. Beat well after each addition.",
+      "Beat egg whites until stiff but not dry; fold gently into cake batter. Add drained fruits and floured pecans to the cake batter; blend thoroughly.",
+      "Grease loaf pans; line with wax paper. Grease and lightly flour wax paper. Pour cake batter into pan within 1 inch of the top. Place in a 275 degrees F. oven; bake loaf cakes for 2 to 2 ½ hours, or until a toothpick in the center of cakes come out clean.",
+      "Cool cakes in pans on cake rack for about 2 to 3 hours. Remove cakes from pans; peel off wax paper. Wrap cakes in cheesecloth saturated with bourbon; then wrap in aluminum foil or plastic wrap and store in a tightly covered container in the refrigerator for several weeks. Cut into thin slices to serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Red Candied Cherries",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Green Candied Cherries",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Seedless Raisins",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bourbon",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "C",
+        "notes": "alt: margarine, softened",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Brown Sugar",
+        "unit": "C",
+        "notes": "firmly packed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "separated",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": "sifted",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pecan Halves",
+        "unit": "C",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Nutmeg",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "de1cd397b5acb3e07c6f26895d1a0407113b281690c839c6f5323be8f59e1e67",
+    "lineage_hash": "5fae7ceb58ad46e7fe8f23736d820742f1e3e1ba83e39c45fb6a3a0d16de7eae"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/bourbon-pecan-cake/",
+    "fetchedAt": "2026-08-01T18:43:25.925Z"
+  },
+  "rawSource": "https://muybuenoblog.com/bourbon-pecan-cake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

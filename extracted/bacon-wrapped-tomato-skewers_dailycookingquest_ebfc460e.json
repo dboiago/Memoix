@@ -1,0 +1,64 @@
+{
+  "recipe": {
+    "name": "Bacon-Wrapped Tomato Skewers",
+    "time": "30 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cut each slice of bacon into three equal-length pieces. You should end up with 24 smaller pieces from the original eight slices of bacon.",
+      "Wrap each cherry tomato with a piece of bacon. You should end up with 24 bacon-wrapped cherry tomatoes.",
+      "Thread 3 bacon-wrapped cherry tomatoes into each bamboo skewer.",
+      "Heat the grill pan over medium heat. Once the pan is hot, brush the grills with a little bit of oil.",
+      "If you are using a 10.5-inch Lodge grill pan, you can grill four skewers at a time. It should take about 3-4 minutes per side to cook the bacon until golden brown and slightly crispy.",
+      "Serve the grilled bacon-wrapped tomato skewers immediately. Remember to open a bottle of cold beer."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bacon Slices",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherry Tomatoes",
+        "unit": null,
+        "notes": null,
+        "amount": "24",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bamboo Skewers",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "12c1483c5338da01640170354439b3d54b59027103fc6f9e49f76fa70a02c562",
+    "lineage_hash": "4a0472ea76614dee21e4a227353f93af29157d70a0f9b8a4e1b9d3eee9ce0e84"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/bacon-wrapped-tomato-skewers.html",
+    "fetchedAt": "2026-08-01T19:33:20.259Z"
+  },
+  "rawSource": "https://dailycookingquest.com/bacon-wrapped-tomato-skewers.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

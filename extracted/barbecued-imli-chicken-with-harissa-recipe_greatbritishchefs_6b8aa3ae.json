@@ -1,0 +1,330 @@
+{
+  "recipe": {
+    "name": "Barbecued Imli Chicken With Harissa",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Put the poussin in a large bowl and add the ginger and garlic paste, garam masala, chilli powder, lemon juice and a pinch of salt. Mix well until evenly coated, then cover and keep in the fridge for 4 hours",
+      "For the harissa, drain the chillies and add to a blender with the garlic, vinegar, cloves, cumin and coriander. Blitz to a paste, season with salt, then transfer to a small saucepan. Cook gently for 15-20 minutes, stirring regularly, then leave to cool before stirring in the soya yoghurt. Transfer to a squeezy bottle",
+      "For the glaze, place all the ingredients in a bowl with a pinch of salt and mix well. Set aside",
+      "For the papaya salad, heat a dash of oil in a small saucepan. Add the garlic and cook for 1 minute, then stir in the turmeric and cook for 1 more minute. Add the papaya, vinegar, sugar and a pinch of salt and cook for around 5 minutes, until the papaya has softened but retains its crunch. Season with black pepper and set aside to cool",
+      "For the peanut thecha, heat a dash of oil to a saucepan over a medium heat. Add the whole chillies and peeled garlic cloves and sauté for 3-4 minutes, until the chillies are blistered and the garlic is slightly softened. Add the cumin, stir for 30 seconds, then leave the mixture to cool",
+      "Once cool, place in a spice grinder or food processor with the peanuts, kashmiri chilli powder and a pinch of salt. Blitz to a semi-coarse texture, then gently heat the mixture in a dry pan to dry it out slightly. Set aside",
+      "Set up a barbecue for direct grilling. Once the coals are glowing white, grill the marinated poussin breasts for 1 minute on each side. Start liberally brushing the glaze over the poussin and cook for another 2-3 minutes (the cooking time may differ if you’re using larger cuts of chicken)",
+      "Serve the chicken with dots of the harissa and the papaya salad alongside. Garnish with a sprinkling of peanut thecha and the pea shoots, pickled chillies and edible flowers (if using)"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Poussin Breasts",
+        "unit": null,
+        "notes": "ideally on the bone",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger and Garlic Paste",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kashmiri Chilli Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pea Shoots",
+        "unit": null,
+        "notes": "to serve (optional)",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pickled Red Chillies",
+        "unit": null,
+        "notes": "finely sliced, to serve (optional)",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Edible Flowers",
+        "unit": null,
+        "notes": "to serve (optional)",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chillies",
+        "unit": "g",
+        "notes": "dried, soaked in cold water overnight",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Malt Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "g",
+        "notes": "toasted and ground",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Coriander",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soya Yoghurt",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tamarind Pulp",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jaggery",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Balsamic Glaze",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kashmiri Chilli Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": "finely grated",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "for cooking",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "g",
+        "notes": "finely sliced",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Turmeric",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Papaya",
+        "unit": "g",
+        "notes": "(unripe), julienned",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blanched Peanuts",
+        "unit": "g",
+        "notes": "toasted",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kashmiri Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c9e5e1d4e7c9518d5158b8aab0615246b8a9e9853551d98396984a356f3508b7",
+    "lineage_hash": "8495d207c50e306d7c106b489a600893dad86b31c8e26b9ee375fa2be8464180"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/barbecued-imli-chicken-harissa-recipe",
+    "fetchedAt": "2026-08-01T17:00:09.527Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/barbecued-imli-chicken-harissa-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

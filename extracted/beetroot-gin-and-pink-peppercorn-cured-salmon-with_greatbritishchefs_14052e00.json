@@ -1,0 +1,146 @@
+{
+  "recipe": {
+    "name": "Beetroot, Gin and Pink Peppercorn Cured Salmon with Poached Eggs",
+    "time": "45 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix the beetroot, salt, sugar, crushed pink peppercorns, lemon zest, gin and dill to form a thick curing paste",
+      "Lay a large sheet of cling film on a tray. Spread half the cure on top, then place the salmon skin-side down and cover with the remaining cure, ensuring it is completely covered",
+      "Wrap tightly, weigh down with another tray with a few tins or weighty things on top and refrigerate for 48 hours, turning after 24 hours for even curing",
+      "After curing, rinse lightly under cold water and pat completely dry. Slice thinly",
+      "Bring a pan of water to a gentle simmer and add a splash of vinegar",
+      "Crack each egg into a ramekin and gently slide into the water. Poach for 3 minutes until the whites are set but the yolks remain runny. Remove with a slotted spoon",
+      "Place slices of cured salmon over toasted muffin halves",
+      "Top with a poached egg and finish with crushed pink peppercorns, dill sprigs and lemon zest"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Salmon Fillet",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooked Beetroot",
+        "unit": null,
+        "notes": "peeled and grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pink Peppercorns",
+        "unit": "Tbsp",
+        "notes": "crushed",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zested",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Gin",
+        "unit": "ml",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dill",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "English Muffins",
+        "unit": null,
+        "notes": "halved and toasted",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshlay Farms Golden Yolker® Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pink Peppercorns",
+        "unit": "Tbsp",
+        "notes": "crushed",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sprigs of Dill",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Zest",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "86628493c5001a7bbef873e821eff98601e501b94746edbc5c09874a5e1ae11f",
+    "lineage_hash": "ebe001d8e168186d84de63f6e8e7e806fca8702e7ddabb580aabdedf6a050669"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beetroot-gin-cured-salmon-poached-egg-recipe",
+    "fetchedAt": "2026-08-02T00:01:33.938Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beetroot-gin-cured-salmon-poached-egg-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

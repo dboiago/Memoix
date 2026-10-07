@@ -1,0 +1,138 @@
+{
+  "recipe": {
+    "name": "Baked Methi Mathri",
+    "time": "45 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "40",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "37",
+      "carbohydrateContent": "4",
+      "fatContent": "2",
+      "proteinContent": null
+    },
+    "directions": [
+      "To a large bowl add atta (whole wheat flour) and besan (gram flour).  Now add to it all the seasonings - kasuri methi, red chili powder, turmeric, ajwain (carom seeds), sesame seeds, salt and baking powder.",
+      "Mix to combine it all together. Add oil (or ghee) and mix it well with the flour using your hands (rub the flour between your palms to incorporate the oil).",
+      "The oil should be well incorporated into the flour. The mixture will turn crumbly.",
+      "Now, start adding water little by little to knead the dough.",
+      "Once the dough comes together, knead it for 5 minutes. I used my stand mixer to knead it. Cover and rest the dough for 15 to 20 minutes. Meanwhile pre-heat the oven to 375 F degrees.",
+      "After the dough has rested, divide it into 2 parts. Take one part of the dough and roll it, around 1/4 inch thick.",
+      "Now you can either use cookie cutter or pizza cutter to shape the mathri. I simply cut some into squares (1.75 inch x 1.75 inch) using my pizza cutter and also some circles (2 inches diameter) using my cookie cutter.",
+      "Using a fork poke the mathris so that they don't rise much while baking. Repeat with the remaining dough.&nbsp;",
+      "Place the squares/rounds on a baking sheet lined with parchment paper or silicone mat. Leave a little space between each mathri.",
+      "Bake at 375 F degrees for 20-22 minutes, flipping them once half-way. I usually bake around 23-24 minutes since I like quite crispy mathris. If you don&#x27;t like super crispy, bake around 20 minutes.",
+      "Let cool and then store baked methi mathri in an airtight container."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Atta (whole Wheat Flour)",
+        "unit": "C",
+        "notes": "195 grams",
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Besan (gram Flour)",
+        "unit": "C",
+        "notes": "52 grams",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kasuri Methi (dried Fenugreek Leaves)",
+        "unit": "Tbsp",
+        "notes": "slightly crushed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chili Powder",
+        "unit": "tsp",
+        "notes": "or adjust to taste",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ajwain",
+        "unit": "tsp",
+        "notes": "carom seeds",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "C",
+        "notes": "alt: ghee, 80 ml, or use oil of choice",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": "to knead the dough, little more than 1/2 cup",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2431a276bd6316d032e68e261121571b06fdd85da5f9b5229c5e93bbc5d6ccf1",
+    "lineage_hash": "52dcc35eb4c165848be5bbfbee4115d141cbeeffa900789d061231943080e467"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/baked-methi-mathri/",
+    "fetchedAt": "2026-08-01T22:33:51.042Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/baked-methi-mathri/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

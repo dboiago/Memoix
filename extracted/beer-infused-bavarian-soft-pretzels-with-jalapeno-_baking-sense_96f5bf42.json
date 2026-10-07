@@ -1,0 +1,171 @@
+{
+  "recipe": {
+    "name": "Beer Infused Bavarian Soft Pretzels with Jalapeno Cheddar Dip",
+    "time": "3 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "DE",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "245",
+      "carbohydrateContent": "35",
+      "fatContent": "7",
+      "proteinContent": "9"
+    },
+    "directions": [
+      "In a large mixing bowl or in the bowl of a stand mixer, combine4 oz&#32;warm water, 8 oz&#32;beer, 1 ½ teaspoon&#32;table salt, 1 tablespoon&#32;granulated sugar, 2 ¼ teaspoons&#32;dry yeast and 2 cups of the flour. Mix with the paddle on low speed until it forms a thick batter.",
+      "If using a stand mixer, switch to the dough hook. Add the remaining flour and mix until the dough gathers on the hook and clears the sides of the bowl. If mixing by hand add the flour using a wooden spoon and/or a plastic bowl scraper. Knead the dough for 5 minutes until it is smooth and elastic.",
+      "Dump the dough onto a floured surface and knead to form a smooth ball. Place the dough in an oiled bowl, turning once to coat the dough, cover with plastic wrap and set aside to double in volume, about 1 - 1½ hours.",
+      "Combine the 2 quarts of water 2 ½ oz&#32;baking soda in a large pot. Bring the water to a boil while shaping the pretzels. Preheat the oven to 475 °F. Line 2 baking sheets with parchment paper and coat the parchment paper with vegetable oil",
+      "Turn the dough out onto a floured surface and divide into 12 equal pieces",
+      "Shape each piece into a rope. Using flat hands, roll the dough back and forth moving your hands in opposite directions from the middle of the rope towards either end. If the dough gets sticky dip your hands in flour and continue. The dough should stick to the surface just a little so that the friction will allow you to pull the dough into a long rope. The longer and thinner the rope the more open the pretzel shape will be. Try to get the rope to about 20&quot;-24&quot;",
+      "To form a pretzel lift the dough rope on either end and allow the middle to sit on the surface, forming a &quot;U&quot; shape. Twist the ends of the rope together 2x and fold the twist over and rest on the center of the &quot;U&quot;. Lift the pretzel by the two top loops and place on the oiled parchment paper.",
+      "Once the baking soda water is boiling drop a few pretzels into the water for 30 seconds. (Don&#39;t overcrowd the pan).",
+      "Set the boiled pretzels onto a cooling rack and allow them the drain while you boil the remaining pretzels.",
+      "Transfer the pretzels to the baking sheets (lined with oiled parchment). Brush each pretzel with egg white and sprinkle with coarse salt, and seeds of your choice.",
+      "Bake until puffed and golden brown, about 15 minutes, turning the sheets halfway through baking so they brown evenly.",
+      "Enjoy them warm with Jalapeno Cheddar Dip, mustard, or your favorite pretzel dip."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Warm Water",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": "Pretzels",
+        "isOptional": false
+      },
+      {
+        "name": "Beer",
+        "unit": "oz",
+        "notes": "1 cup, room temperature",
+        "amount": "8",
+        "section": "Pretzels",
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "Pretzels",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Pretzels",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Yeast",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2¼",
+        "section": "Pretzels",
+        "isOptional": false
+      },
+      {
+        "name": "Unbleached All-purpose Flour",
+        "unit": "oz",
+        "notes": "3 ½ cups, see note",
+        "amount": "17½",
+        "section": "Pretzels",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda (⅓ Cup (for Boiling))",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2½",
+        "section": "Pretzels",
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": null,
+        "notes": "lightly whisked",
+        "amount": "1",
+        "section": "Pretzels",
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Seeds for Garnish",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Pretzels",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Jalapeno Cheddar Dip",
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Jalapeno Cheddar Dip",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": "Jalapeno Cheddar Dip",
+        "isOptional": false
+      },
+      {
+        "name": "Brown Mustard",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Jalapeno Cheddar Dip",
+        "isOptional": false
+      },
+      {
+        "name": "Sharp Cheddar Cheese",
+        "unit": "oz",
+        "notes": null,
+        "amount": "6",
+        "section": "Jalapeno Cheddar Dip",
+        "isOptional": false
+      },
+      {
+        "name": "Jalapeno",
+        "unit": null,
+        "notes": "stem and seeds removed, minced, fresh",
+        "amount": "1",
+        "section": "Jalapeno Cheddar Dip",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f09e2280b5e207e63e499f80616f2560bd305966580416c4f098b33c8b64bc73",
+    "lineage_hash": "d6e50fce4a88956cfb8d4b8430c25a548c163b453dd978d10df824fd2608fda1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2016/05/17/beer-infused-bavarian-soft-pretzels/",
+    "fetchedAt": "2026-08-02T01:01:06.045Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2016/05/17/beer-infused-bavarian-soft-pretzels/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

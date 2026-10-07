@@ -1,0 +1,209 @@
+{
+  "recipe": {
+    "name": "Bourbon Mint Julep Strawberry Shortcake with Mascarpone Topping",
+    "time": "1 hr 5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "589",
+      "carbohydrateContent": "65",
+      "fatContent": "33",
+      "proteinContent": "8"
+    },
+    "directions": [
+      "Preheat oven to 325 degrees F.",
+      "Grease and flour a 9 x 13-inch baking pan.",
+      "Whisk together flour, sugar, salt, baking powder, and baking soda in a large bowl. In a separate smaller bowl, combine buttermilk, butter, vanilla extract, eggs, and beat at low speed.",
+      "Add wet ingredients to flour mixture. Beat at low speed for 1 minute, then increase to medium speed until combined – don’t over beat the batter. Pour into prepared pan and smooth evenly around pan. Bake for 35 to 40 minutes. Use a toothpick to test for doneness.",
+      "In a saucepan over medium heat, combine powder sugar, butter, and water. Stir until melted. Do not boil. Remove from heat, continuing to stir for 2 minutes. Then stir in bourbon.",
+      "When cake is done and still warm from the oven, use a skewer to poke holes around the top of the cake. Pour bourbon butter sauce evenly over top of the cake. Let cake cool to room temperature.",
+      "Combine mascarpone cheese, sugar, and whipping cream. Beat until smooth.",
+      "Combine strawberries and sugar and refrigerate.",
+      "Slice cake in the pan or use 3 to 4-inch circles for round servings. In a serving dish add a dollop of mascarpone topping, place cake, top with strawberries and more mascarpone topping. Garnish with a fresh mint leaf.",
+      "If you cannot find mascarpone, use full-fat softened cream cheese instead."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cake Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "3",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "White Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Powder Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Bourbon Butter Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": "Bourbon Butter Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "Bourbon Butter Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Mint",
+        "unit": "Tbsp",
+        "notes": "fresh, finely chopped",
+        "amount": "1",
+        "section": "Bourbon Butter Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": "tsp",
+        "notes": "alt: lemon zest",
+        "amount": "1",
+        "section": "Bourbon Butter Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Bourbon Whiskey",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Bourbon Butter Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Mascarpone Cheese",
+        "unit": "oz",
+        "notes": null,
+        "amount": "8",
+        "section": "Mascarpone Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Mascarpone Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "Mascarpone Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Strawberries",
+        "unit": "oz",
+        "notes": "sliced",
+        "amount": "32",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": "Filling",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "391745db8b4aa645db6fd604f3b66685c95f4f4796fdc0f853e14c5c716e286f",
+    "lineage_hash": "2c03ddfe401482f90ef214f9c2a22caf8b117af1988dbbc502eaf17b1ae0bd1a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/bourbon-mint-julep-strawberry-shortcake-with-mascarpone-topping-video/",
+    "fetchedAt": "2026-08-02T07:35:25.774Z"
+  },
+  "rawSource": "https://muybuenoblog.com/bourbon-mint-julep-strawberry-shortcake-with-mascarpone-topping-video/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

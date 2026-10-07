@@ -1,0 +1,157 @@
+{
+  "recipe": {
+    "name": "Beetroot Tikki",
+    "time": "1 hr 15 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "122",
+      "carbohydrateContent": "14",
+      "fatContent": "5",
+      "proteinContent": "2"
+    },
+    "directions": [
+      "Pre-heat oven to 425 F degrees. Rinse the beets and pat dry them (2 large beets or 2 medium & 1 small). Wrap them in aluminum foil and place on a baking sheet. Roast the beets at 425 F degrees for 30 to 45 minutes. The time taken to roast the beets will depend on their size. When done, you should be able to insert a knife easily throughout the beetroot. The small ones take around 30 minutes while the bigger one around 45 minutes. Once done, remove from aluminum foil and let them cool. Then peel the skin using a peeler.Also boil a large potato meanwhile either using a stove-top pressure cooker or Instant pot. Once boiled, peel the skin and mash it.",
+      "Now, using a grater, grate the beets (I use the thicker side of the grater). Add it a large bowl along with the boiled mashed potato.",
+      "Using a food processor, pulse 1 cup of old fashioned rolled oats a few times. You don&#39;t want it to turn into a powder so just pulse few times, until it breaks down a little. We want some texture here. Transfer it to the bowl along with grated beets and potato.Add chopped green chili, chopped ginger, cilantro and green onion. Add the spices- coriander powder, cumin powder, garam masala and amchur. Also add the salt.",
+      "Mix everything together, add in the panko bread crumbs. Mix again until everything is combined. The dough is now done.",
+      "Take a lemon size portion from the dough and roll between your palms to make a round. Then flatten it to make a tikki. Make all tikkis similarly. I was able to get 11 tikkis out of this mixture, each weighing around 75 grams.",
+      "Heat 3 to 4 tablespoons of oil in a pan (I used my cast iron skillet) on medium heat. Once the oil is hot, place the tikkis into the pan. Cook for 3 to 4 minutes on one side until browned, then flip and cook the other side for 3 to 4 minutes until browned. Serve hot!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beets",
+        "unit": "large",
+        "notes": "around 450 grams",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potato",
+        "unit": "large",
+        "notes": "365 grams, I used russet potato",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Old Fashioned Rolled Oats",
+        "unit": "C",
+        "notes": "100 grams",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "1` Green Chili",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "chopped",
+        "amount": "1.5-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amchur",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Panko Bread Crumbs",
+        "unit": "C",
+        "notes": "or use regular bread crumbs",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "1.25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": "to cook the tikki, I used avocado oil",
+        "amount": "3-4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f8f335ac5f02a6c26c7cb550a9270d9627986211c0b736a5f05a0338bc0e5416",
+    "lineage_hash": "1960f734696e0232ef31e368a6081f169a9683f40e74ad07bc1a3423d959b9be"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/beetroot-tikki/",
+    "fetchedAt": "2026-08-02T08:03:08.688Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/beetroot-tikki/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,143 @@
+{
+  "recipe": {
+    "name": "Chicken Pot Stickers",
+    "time": "40 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "60",
+    "source": "scraped",
+    "cuisine": "VN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a large bowl, mix together ground chicken, chopped bok choy,carrot, garlic, shallot, sesame oil, fish sauce, oyster sauce, and chicken bouillon powder. Taste test by heating a tablespoon in the microwave or pan fry on the stove-top. Adjust to taste, if needed.",
+      "Place two teaspoons of the filling into the center of a wrapper. Wet the edges with the beaten egg, fold in half to form a semi-circle, and press to seal. For an extra touch, pleat the edges.",
+      "Pan Fry: Heat a little oil in a non-stick pan with a lid on medium-high. Cook the pot stickers in batches to avoid overcrowding, until the bottoms are golden. Add about 2 tablespoons of water, cover, and steam for 5 minutes. Uncover and continue cooking until all the excess moisture has all evaporated and the bottoms return to crispy (about one minute).",
+      "Bring water to a boil in a large pot. Add pot stickers one by one to avoid sticking, and boil for 5 minutes. Use a slotted spoon to remove them.",
+      "Enjoy them as is or with your favorite dipping sauce and broth."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Lb Ground Chicken",
+        "unit": "oz",
+        "notes": "see notes",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bok Choy",
+        "unit": "oz",
+        "notes": "see notes, chopped",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": "oz",
+        "notes": "1 medium carrot, grated",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallot",
+        "unit": "oz",
+        "notes": "1 small shallot, finely minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": "large",
+        "notes": "finely minced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Bouillon Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pot Sticker Wrappers",
+        "unit": "oz",
+        "notes": "1 package",
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Savory and Tangy Soy Dipping Sauce",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Pork Bone Broth (see Notes)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f4a3d6a3f45f5420fefd5eb523a5ebc36a1b865b8496865d49a29289655c5f94",
+    "lineage_hash": "216ba372104b8bcbfdbe16a17f2dba90bb5ca3b4fd9babc9e9583362620760d1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://vickypham.com/blog/chicken-pot-stickers/",
+    "fetchedAt": "2026-08-02T00:37:50.950Z"
+  },
+  "rawSource": "https://vickypham.com/blog/chicken-pot-stickers/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,35 @@
+{
+  "recipe": {
+    "name": "Strawberry Fernet Cocktail",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to an ice-filled shaker and shake until chilled. Double strain into a coupe and garnish.",
+      "Strawberry-Infused FernetCombine 3/4 cup of frozen strawberries with 750ml Fernet Branca and let infuse for 24 hours at room temperature. Strain the strawberries with chinois. Apply gentle pressure to press some additional liquid out of the berries. Add 1/4 cup of white granulated sugar to the infused Fernet and stir until the sugar is fully dissolved. Do not cook. The infused Fernet will keep in a refrigerator for several weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "723e8d33f5231221d4960ff773a3acfe524949bd8a325460aff31173f1ac33ff",
+    "lineage_hash": "379f50da635d3718149d6b89315f7b999d730c56e0727bbe8b510c291500981b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/chains-to-the-mast-a-strawberry-fernet-cocktail/",
+    "fetchedAt": "2026-08-03T21:23:03.985Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/chains-to-the-mast-a-strawberry-fernet-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

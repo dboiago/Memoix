@@ -1,0 +1,101 @@
+{
+  "recipe": {
+    "name": "Breakfast Tortas with Potatoes and Chorizo",
+    "time": "32 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "803",
+      "carbohydrateContent": "70.09",
+      "fatContent": "48.18",
+      "proteinContent": "24.82"
+    },
+    "directions": [
+      "Bring about 4 cups water to a boil in a deep pot with salt. Carefully add potatoes to boiling water. Boil over medium-high heat for about 15 minutes. Check at 10 minutes. If they are tender but not firm then remove from the heat. You do not want to overcook the potatoes. Using a colander, strain the potatoes but do not rinse.",
+      "Fry the chorizo in a large nonstick skillet until browned. Add the cooked potatoes to the cooked chorizo and gently combine. Do not stir too much or the potatoes will get mushy.",
+      "Heat a griddle or large skillet over medium. Slice rolls in half lengthwise and spread butter over cut sides. Toast rolls until golden brown.",
+      "Divide potato filling between bottom halves of rolls; top with cheese and avocado slices.",
+      "Place on griddle to warm torta and melt cheese.",
+      "Close sandwiches and cut in half."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Russet Potatoes",
+        "unit": null,
+        "notes": "washed, peeled, and cut into 1⁄4-inch cubes",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kosher Salt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mexican Chorizo",
+        "unit": "oz",
+        "notes": "casings removed",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bolillos",
+        "unit": null,
+        "notes": "alt: large sub rolls",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Deli Cheese Slices of Choice",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Avocados",
+        "unit": null,
+        "notes": "pitted, peeled, and sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c70f129465b686d1afbb12988263d812113b0b334fcc7ccead57e96708999d92",
+    "lineage_hash": "6ecbb025fb389a0232dbc3bfff2d43dc6dca5d0a3bb8a146e8009c76c8b42852"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/tortas-potatoes-chorizo/",
+    "fetchedAt": "2026-08-02T00:37:38.543Z"
+  },
+  "rawSource": "https://muybuenoblog.com/tortas-potatoes-chorizo/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

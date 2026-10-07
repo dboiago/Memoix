@@ -1,0 +1,143 @@
+{
+  "recipe": {
+    "name": "Banana Pancakes with Passion Fruit Butterscotch Sauce",
+    "time": "45 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the butterscotch sauce, place the sugar and butter into a medium saucepan and cook over medium heat until the butter has melted and the two ingredients have combined into a caramel like sauce. Once bubbling cook for a couple minutes more before adding the salt and cream and cooking for a further 2-3 minutes until slightly thickened. Take of the heat and stir in the passion fruit pulp. Set aside to cool slightly before using. If you like, you can also add sliced banana to the sauce when adding the cream.",
+      "To make the pancake batter place the Doves Farm Wholemeal Khorasan Flour, salt and baking powder into a large bowl and whisk together to combine.",
+      "In a separate bowl mash the bananas with a fork until only small lumps remain. Add the eggs, sugar and butter and mix together until smooth. Add the milk and mix until combined. Pour the wet ingredients into the dry ingredients and mix together briefly just until smooth and combined.",
+      "To cook place a non-stick pan over a low/medium heat. Using piece of kitchen roll lightly coat the pan with a little oil. Add a spoonful of dough to the pan and spread into a thin disc. Cook until bubbles that hold their shape when they pop form around the edges of the pancake, flip and cook for about 30 seconds more. After the first pancake you shouldn't need to grease the pan again.",
+      "Serve warm with a large spoonful of the caramel"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Doves Farm Organic Stoneground Kamut® Khorasan Wholemeal Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": "Banana Pancakes",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Banana Pancakes",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Banana Pancakes",
+        "isOptional": false
+      },
+      {
+        "name": "Bananas",
+        "unit": "g",
+        "notes": "weighed without the peel",
+        "amount": "125",
+        "section": "Banana Pancakes",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": "Banana Pancakes",
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": "Banana Pancakes",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "melted and cooled",
+        "amount": "25",
+        "section": "Banana Pancakes",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": "Banana Pancakes",
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "165",
+        "section": "Passion Fruit Butterscotch Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "165",
+        "section": "Passion Fruit Butterscotch Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "Passion Fruit Butterscotch Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "75",
+        "section": "Passion Fruit Butterscotch Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Passion Fruit Pulp",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": "Passion Fruit Butterscotch Sauce",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "85a8e28fbaae9d72df0a233459c3eb6f29cceed0ab17cca8db098ea3a577f177",
+    "lineage_hash": "5db263a1738c8fde9590e6e99a248e27b9fd7256bca23bb2faa056f376b18429"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.theboywhobakes.co.uk/recipes/2020/2/21/banana-pancakes-with-passion-fruit-butterscotch-sauce",
+    "fetchedAt": "2026-08-01T18:24:56.820Z"
+  },
+  "rawSource": "https://www.theboywhobakes.co.uk/recipes/2020/2/21/banana-pancakes-with-passion-fruit-butterscotch-sauce",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

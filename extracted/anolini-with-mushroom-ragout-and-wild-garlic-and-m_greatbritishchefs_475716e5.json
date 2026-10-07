@@ -1,0 +1,334 @@
+{
+  "recipe": {
+    "name": "Anolini with Mushroom Ragout and Wild Garlic and Mushroom Sauce",
+    "time": "3 hr 45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "First, slowly braise the dried shiitake for the mushroom ragout in lightly salted water for 6 hours. Once cooked, finely dice the mushrooms",
+      "Make the mushroom stock. Add the chestnut mushrooms, salt and water to a large, deep oven tray and cover with cling film. Cook for 2 hours 30 minutes. Once cooked, strain the stock through a sieve and infuse with the dried shiitake and thyme for 15 minutes, then strain again and set aside to cool",
+      "While the stock cooks, make the pasta dough and the farce. First, mix the flour, salt and semolina together in the bowl of a stand mixer with the dough hook attachment fitted. Beat together the eggs and egg yolk, then add to the bowl. Mix everything together until it forms a dough, and transfer to a work surface. Knead for a few minutes until it forms a smooth ball. Wrap the dough tightly in cling film and chill in the fridge for at least 2 hours",
+      "Add the goat's curd and olive oil to the mixing bowl of a stand mixer fitted with the paddle attachment. Mix together to combine, then add in the truffle and some salt and pepper to taste and mix again. Taste and adjust the seasoning if necessary, then transfer to a piping bag",
+      "For the mushroom ragout, add the onion, 100g braised shiitakes and king oyster mushrooms to a large pot with a dash of oil. Cook for 20 minutes, then add the rest of the ingredients. Cook over medium heat until almost all the liquid has evaporated. Taste and adjust the seasoning if necessary and set aside",
+      "For the wild garlic and mushroom sauce, first blanch the spinach, parsley and wild garlic and then refresh them in the ice water. Once cool, squeeze out all the water from the greens and transfer to a blender",
+      "Blitz the greens with the mushroom stock and crème fraîche, tasting and adding salt if needed. Strain through a fine sieve and set aside",
+      "To shape the pasta, first cut the dough into two pieces. Flatten each piece of pasta dough slightly, and then roll it out into a rectangle the same width as your pasta machine",
+      "Start feeding one piece of dough through the machine, starting on the thickest setting. Fold the pasta in half and feed it through the thickest setting again several times until it becomes smoother. Repeat with the next setting down, gradually rolling out the dough until it’s very thin. Repeat with the remaining dough",
+      "Lightly dust the work bench with flour, and lay one sheet of dough onto the bench. Cut a 2 cm opening in your farce piping bag, and pipe 3 cm wide circles of farce onto the pasta, leaving roughly 2 cm on either side of each circle",
+      "Using a spray bottle, gently mist the pasta and the farce with water, then lay the second sheet of pasta over the top. Use an anolini cutter to press down over the centre of each piece of farce, sealing and cutting it in the process. Transfer to a floured tray until needed, and repeat with the remaining circles, then transfer to a floured tray until needed",
+      "To serve, warm the ragout and place in the base of your bowl. Cook the anolini in a pot of boiling salted water for about 2 minutes. Drain, and then add to the bowl with the ragout. Garnish the bowl with the sorrel, nasturtiums, sliced truffle and sliced mushrooms. Warm the wild garlic and mushroom sauce, and pour into the bowl"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Shiitake Mushrooms",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "g",
+        "notes": "finely diced",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "King Oyster Mushroom",
+        "unit": "g",
+        "notes": "finely diced",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for cooking",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sherry",
+        "unit": "ml",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "g",
+        "notes": "leaves picked",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sherry Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kelp Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mushroom Stock",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Treacle",
+        "unit": "g",
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chestnut Mushrooms",
+        "unit": "g",
+        "notes": "thinly sliced",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shiitake Mushrooms",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "00 Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "230",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Semolina",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "medium",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "g",
+        "notes": null,
+        "amount": "85",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Goat's Curd",
+        "unit": "g",
+        "notes": "fresh, hung in muslin to drain slightly, or goat's cheese",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Truffle",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spinach",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wild Garlic",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Iced Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mushroom Stock",
+        "unit": "g",
+        "notes": null,
+        "amount": "375",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crème Fraîche",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Truffle",
+        "unit": "g",
+        "notes": "thinly sliced on a mandolin",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Button Mushrooms",
+        "unit": null,
+        "notes": "thinly sliced on a mandolin",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butterfly Sorrel Cress",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nasturtium Leaves",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fb6b7a50bfcfd31463ccb3fca4ab50bfbad0a6985d6e64f66df326dbcbe45eeb",
+    "lineage_hash": "be437c2dae5cbbb372e8130886a32ecbf9d1c3cf6b96732ecee407b07a7a8bf0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/anolini-mushroom-ragout-wild-garlic-mushroom-sauce-recipe",
+    "fetchedAt": "2026-08-02T15:26:47.252Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/anolini-mushroom-ragout-wild-garlic-mushroom-sauce-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

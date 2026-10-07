@@ -1,0 +1,78 @@
+{
+  "recipe": {
+    "name": "Barbecued Onions",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Using a sharp paring knife and working opposite the stem end, cut a cone-shaped cavity in each onion by angling your knife toward the center and cutting in a circle. Finely chop the onion you’ve removed. Set each onion on a foil ring with the cavity facing up.",
+      "Melt 1 tablespoon of the butter in a skillet over medium heat. Add the bacon and chopped onion and cook over medium heat until lightly browned, 3 to 5 minutes. Drain the bacon in a strainer over a bowl. Place a spoonful of the bacon mixture in the cavity of each onion. Cut the remaining 4 tablespoons of butter into 8 equal pieces. Spoon 1 tablespoon of the barbecue sauce into each onion and place a piece of butter on top. Sprinkle with pepper.",
+      "Set up the grill for indirect grilling and preheat to medium. If using a gas grill, place all of the wood chips or chunks into the smoker box or a smoker pouch and run the grill on high until you see smoke. Then reduce heat to medium. If using a charcoal grill, place a large drip pan in the center and preheat the grill to medium, then toss all of the wood chips or chunks on the coals.",
+      "When ready to cook, place the onions on their rings in the center of the hot grate, over the drip pan, and away from the heat, and cover the grill. Cook the onions until they are golden brown and tender, 40 to 60 minutes. To test for doneness, pinch the side of an onion; it should be squeezably soft. If the filling starts to brown too much before the onions are fully cooked, cover the onions loosely with aluminum foil. Transfer the grilled onions to a platter or plates and serve at once."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vidalia",
+        "unit": null,
+        "notes": "alt: other sweet onions, peeled",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Good-quality Bacon",
+        "unit": "slices",
+        "notes": "cut crosswise into 1/4-inch slices",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Your Favorite Brand of Sweet Red Barbecue Sauce",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "87a3702aad31746d24caf243e91355d1293dc96ee0bdfef36dcf5b9f98108bc3",
+    "lineage_hash": "5d427547681b47b6d34e2a478ce5bc891467a48ae67428accc5b7fcfd65372d4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/barbecued-onions/",
+    "fetchedAt": "2026-08-03T02:47:18.740Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/barbecued-onions/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

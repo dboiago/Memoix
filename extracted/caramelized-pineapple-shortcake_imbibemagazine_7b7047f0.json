@@ -1,0 +1,39 @@
+{
+  "recipe": {
+    "name": "Caramelized Pineapple Shortcake",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the biscuits, combine the flour, baking powder, sugar, and salt in a food processor and pulse to mix. Cut the frozen butter into chunks and add to flour mixture, then pulse until the butter is reduced to pea-size lumps. Transfer to a stand mixer fitted with a dough hook, and slowly add the chilled half &#038; half while mixing at medium-low speed until combined.",
+      "Place the dough on a lightly floured surface and gently knead just until the dough comes together, about 30 seconds. Use a rolling pin to roll the dough to 1 1/4-inch thickness. Cut the biscuits into rounds with a 3 1/2-inch cutter.",
+      "Preheat oven to 400 degrees F. Add the egg yolk to the cream and whisk to combine, then brush the top of each biscuit with the yolk-cream mixture. Place the biscuits on a buttered baking sheet and bake until golden and the internal temperature is 205 degrees (about 12 minutes). Remove from oven and let cool.",
+      "To make the pineapple confit, place the sugar in a large, dry pot over medium-low heat and stir constantly with a wooden spoon until the sugar melts and turns a pale golden brown.",
+      "Add the butter, salt and rum, and stir to combine. Add the pineapple chunks and simmer until cooked through, about 10 to 15 minutes. Transfer to a shallow container and let cool. (This can be covered and stored in the refrigerator for about 1 week.)",
+      "To assemble the shortcake, split a biscuit in half and butter each side. Top the bottom half of the biscuit with 3 tablespoons of pineapple confit. Add a scoop of vanilla or pecan praline ice cream and a dollop of whipped cream, and top with the other half of the biscuit. Serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "c00850da62703d79428c827e0f695fa51ec7840bd53aecbd4a9dd1877c6f9b49",
+    "lineage_hash": "be73cb77bd8ab80af4bda1164734e8341a2ce48142045bafb143387474a2326a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/caramelized-pineapple-shortcake/",
+    "fetchedAt": "2026-08-03T20:33:56.930Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/caramelized-pineapple-shortcake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

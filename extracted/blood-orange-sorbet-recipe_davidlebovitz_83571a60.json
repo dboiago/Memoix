@@ -1,0 +1,54 @@
+{
+  "recipe": {
+    "name": "Blood Orange Sorbet",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a small nonreactive saucepan mix 1 cup (250ml) juice with sugar.",
+      "Stir over low heat until the sugar is dissolved.",
+      "Scrape the dissolved sugar and orange juice into the remaining 2 cups of blood orange juice.",
+      "Chill thoroughly, then freeze in your ice cream maker according to the manufacturer&#39;s directions."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Freshly Squeezed Blood Orange Juice",
+        "unit": "C",
+        "notes": "700ml, or regular orange juice",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": "150g",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "47cadd003231e23c308aea1ffca3bf7a5ff5b2bf5dd1e5e3614e4b2ed2b668cd",
+    "lineage_hash": "4ac28158b26de91ce9ce1178c054ab04701ca27544e1e015fcf2aaf42948b004"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/blood-orange-so/",
+    "fetchedAt": "2026-08-02T19:43:41.302Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/blood-orange-so/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

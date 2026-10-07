@@ -1,0 +1,106 @@
+{
+  "recipe": {
+    "name": "Black Sesame Tofu (Kuro Goma Dofu)",
+    "time": "6 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "129",
+      "carbohydrateContent": "13.4",
+      "fatContent": "8.3",
+      "proteinContent": "2.8"
+    },
+    "directions": [
+      "Mix the ingredients in a small sauce pan with a whisk until smooth.",
+      "Place over medium heat and continue to whisk until it begins to thicken.",
+      "Drop the temperature to medium low to low. Switch to a spatula and continue to mix back and forth, smushing down any lumps.  As it heats up continue to stir for about 5 minutes or until it looks kinda like gooey pudding. Remove from heat, transfer to dampened moulds and cover."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kombu Dashi",
+        "unit": "tsp",
+        "notes": "3g",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Sesame Paste",
+        "unit": "Tbsp",
+        "notes": "30g",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potato Starch",
+        "unit": "Tbsp",
+        "notes": "25g",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raw Cane Sugar",
+        "unit": "Tbsp",
+        "notes": "26g",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Miso Paste",
+        "unit": "Tbsp",
+        "notes": "34g",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mirin",
+        "unit": "Tbsp",
+        "notes": "15g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sake",
+        "unit": "Tbsp",
+        "notes": "14g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "48068848e7a8382d670350b554f53982039d23d635e4ee54297f2c2c77d71702",
+    "lineage_hash": "b6305357eb4c13239f1fee5e1fffd72f7094d96e28d1cf6e232d40ea83f12a59"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.okonomikitchen.com/black-sesame-tofu-kuro-goma-dofu/",
+    "fetchedAt": "2026-09-25T22:06:00.429Z"
+  },
+  "rawSource": "https://www.okonomikitchen.com/black-sesame-tofu-kuro-goma-dofu/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,38 @@
+{
+  "recipe": {
+    "name": "Ca Phe 9: A Vietnamese Coffee Martini",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Martini",
+    "garnish": [
+      "Cocoa Powder",
+      "Lemon Peel",
+      "Coffee Candy"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to a shaker with a large ice cube and shake hard. Strain into a chilled glass. Dust the drink with cocoa powder, then express a lemon peel over the top and discard. Clip a piece of coffee candy to the rim.\nNoteJaruthiphayakhantha uses coffee blends of Robusta and Arabica beans from Vietnam&#8217;s Buôn Ma Thuột Province."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "937125b31ab7a1416478ec3c528aa902ac5e2c262cf297de37d0903d5fbf8679",
+    "lineage_hash": "fc1085b2b4f19ae62ecd433c79d2eafc1ad990c4d314cfd83d33f8696a061348"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/ca-phe-9-vietnamese-coffee-martini/",
+    "fetchedAt": "2026-08-04T01:01:37.706Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/ca-phe-9-vietnamese-coffee-martini/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

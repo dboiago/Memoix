@@ -1,0 +1,114 @@
+{
+  "recipe": {
+    "name": "Almond Croissant Cookies",
+    "time": "45 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a mixing bowl, mix together both the sugars and the melted butter until well combined",
+      "Add the egg yolk and almond extract, then combine",
+      "Gradually add the flour and ground almonds until a dough forms",
+      "Using a cookie scoop, portion the dough into 6 even-sized balls, or divide into 6 pieces, each weighing 85–95g",
+      "Next, cover a plate with the flaked almonds. Roll the dough balls, one by one, in the almonds until they are completely covered, then shape into pucks and refrigerate for 25 minutes (this prevents your cookies from spreading excessively in the oven)",
+      "In the final 10 minutes of the chilling time, preheat your oven to 170°C fan and line a baking sheet with baking paper",
+      "Transfer the dough pucks to the prepared baking sheet, leaving space between each one. Bake for 12–15 minutes until the edges are lightly golden",
+      "Remove from the oven and allow the cookies to cool on the baking sheet for a few minutes, then transfer to a wire rack to cool completely. When cool, dust them with icing sugar"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Light Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "135",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almond Extract",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaked Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": null,
+        "notes": "to decorate",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "df3497b828c6888932a62b4e02055689c581a4ae2234bc6d47114dd188e5d4f0",
+    "lineage_hash": "6b0d36c7113d63bf81a050c0d9be581dd8e9853a165ecd0f7b90d47695007efa"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/almond-croissant-cookies-recipe",
+    "fetchedAt": "2026-08-02T04:18:03.614Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/almond-croissant-cookies-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

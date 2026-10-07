@@ -1,0 +1,124 @@
+{
+  "recipe": {
+    "name": "Bunker Blaster Barbecue Sauce",
+    "time": "10 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the ketchup, molasses, vinegar, liquid smoke, onion, brown sugar, salt, chile powder, onion and garlic powders, and cayenne in a heavy nonreactive saucepan and whisk to mix. Gradually bring the sauce to a boil over medium heat, whisking as needed.",
+      "Reduce the heat slightly and let the sauce simmer gently until thick and richly flavored, about 10 minutes. The sauce can be refrigerated for several months in a clean jar; let it return to room temperature before using."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ketchup",
+        "unit": "C",
+        "notes": null,
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Molasses",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Liquid Smoke",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "Tbsp",
+        "notes": "minced, fresh",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Salt",
+        "unit": "tsp",
+        "notes": "kosher or sea",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chile Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cayenne Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "80508dcfbd9fa99ed48e9a40dbd3b05b469764a8c526822ea14bab8a67d8a56f",
+    "lineage_hash": "7709a14c5a2e1e4a43507d89f04d807520ca88c6fe165750f57634d6e041aaa1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/bunker-blaster-barbecue-sauce/",
+    "fetchedAt": "2026-08-03T02:35:58.079Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/bunker-blaster-barbecue-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

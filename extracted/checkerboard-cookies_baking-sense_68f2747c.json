@@ -1,0 +1,95 @@
+{
+  "recipe": {
+    "name": "Checkerboard Cookies",
+    "time": "1 hr 12 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "32",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "145",
+      "carbohydrateContent": "16",
+      "fatContent": "9",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Cream the butter with the sugar until creamy and well combined, but not fluffy. Add the salt, vanilla and the flour. Mix just until combined. Turn the dough out onto a lightly floured surface and finish kneading until the dough comes together.",
+      "Split the dough in half and knead the cocoa powder into one half to make the chocolate dough. Pat each piece of dough into a rectangle shape. Wrap both pieces of dough and refrigerate at least 30 minutes until firm.",
+      "Roll each piece of dough to 6” wide x 12” long rectangle. Lightly brush the chocolate dough with water. Place the vanilla dough on top of the chocolate dough and line up the edges. Trim each of the longs sides of the dough, saving the scraps. Cut the rectangle into three equal 2” x 12&quot;  slices, lengthwise. Stack the 3 rectangles on top of each other, lightly brushing the dough with water to stick the layers together. You should now have a 2” wide by 12” long rectangle with 6 alternating layers of chocolate and vanilla. Once again, trim the two long sides so they are straight, saving the scraps.",
+      "Slice the dough, lengthwise, into four ½”-wide slices. Lay one slice on its side with a vanilla stripe on the left side. Brush it lightly with water. Lay the next slice on top of the first, flipping the slice so a chocolate stripe is on the left side, lined up with the vanilla strip on the first slice. Line the next slice, vanilla strip to the left and lay the final strip on so that the chocolate stripe is to the left.",
+      "Knead the dough scraps that you reserved and roll into an 8” x 12” rectangle. Lightly brush the dough with water and place the log along one edge of the rectangle. Roll the log so that it is now wrapped in the dough. Wrap the log in plastic wrap and chill until firm. At this point you can freeze the log for up to a month.",
+      "Preheat the oven to 325°F. Line two baking sheets with parchment paper or a silicone baking mat.",
+      "Trim the uneven ends off the log. Use a sharp knife to cut 3/8” thick slices. Lay the cookies on the prepared baking sheet, ½” apart. Bake until the edges are beginning to brown and the dough is set, about 14 minutes.",
+      "Transfer to a baking rack to cool completely. The cookies will keep in an air-tight container for up to a week."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "1 1/2 cups, room temperature",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "oz",
+        "notes": "2 1/2 cups, see note",
+        "amount": "12½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dutch Process Cocoa Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "387087b6a91160bae7a8237a5936680b7fb0cafec0661af8b5844a068c947f20",
+    "lineage_hash": "b290b523b2c3248c6467eaf8eca4775e93f9bb79c7e5956b1baf73641746fe3d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2021/12/09/checkerboard-cookies/",
+    "fetchedAt": "2026-08-02T03:11:19.029Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2021/12/09/checkerboard-cookies/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

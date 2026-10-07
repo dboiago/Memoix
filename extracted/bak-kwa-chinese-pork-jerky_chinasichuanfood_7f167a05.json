@@ -1,0 +1,102 @@
+{
+  "recipe": {
+    "name": "Bak Kwa (Chinese Pork Jerky)",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "298",
+      "carbohydrateContent": "8",
+      "fatContent": "21",
+      "proteinContent": "18"
+    },
+    "directions": [
+      "Prepare the pork| Cut the pork into large pieces and then place in a food blender. Add all of the marinating ingredients. Pause and blend for 20 seconds until the pork is finely minced and becomes sticky. If the pork is not sticky enough, stir the content in one directly for a while and it will become quite sticky. Cover with lid and set in fridge for at least 4 hours or overnight.",
+      "Pre-heat oven to 170 degree C.",
+      "Shaping Then place one silver paper around the ovenware and then lay the minced pork on. Cover with plastic wrap (to avoid sticky) and then roll the minced pork into a thin meat piece. (Tips about how to make the pork sheet large and thin: roll with plastic wrapper covered so the pork won’t attach to the rolling pin. Remove the extra pork on the edges and then place in the center of the sheet, repeat the process of rolling to make it as even as possibly.)",
+      "Baking  Place in the middle rack of the oven and heat for 15 minutes. Then there will be water and oil mixture in the bottom of the pan. Take it out and pour the liquid.",
+      "Brush honey on surface. Heat for another 10 minutes.",
+      "Transfer out and turn over the pork piece. This should be quite easy at this stage because the pork jerk is almost done and hardened. Brush honey on the other side and garnish some toasted sesame seeds if using. Continue heating for another 5 to 8 minutes until the pork jerk is well colored.",
+      "Cool down slightly and cut into small pieces. This pork jerky can be kept in air-tight container and fridge for 3 days."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pork with 5% to 10% Fat",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Five Spice Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4d2b8b270d3ad7961a9628c62a58157bc38686e07036a1a6e7846c6b9e4417be",
+    "lineage_hash": "7c2fc12203e89ee1bc1f62f5a05aad819a785c8c4f871d095f1a80619fe7c1d6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/bak-kwa-chinese-pork-jerky/",
+    "fetchedAt": "2026-08-01T20:10:49.074Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/bak-kwa-chinese-pork-jerky/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

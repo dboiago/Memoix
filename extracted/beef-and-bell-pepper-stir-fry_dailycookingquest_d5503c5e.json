@@ -1,0 +1,167 @@
+{
+  "recipe": {
+    "name": "Beef and Bell Pepper Stir Fry",
+    "time": "45 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "ID",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix together beef and the spice paste in a mixing bowl. Cover the bowl with a saran wrap and leave to marinate for 8 hours (or overnight).",
+      "Heat 1 tablespoon of oil in a wok/frying pan. Sauté onion, red bell pepper, yellow bell pepper, and chilies until onion is slightly translucent, about 3-4 minutes. Transfer to a plate.",
+      "Reheat the wok/frying pan, and stir fry the beef mixture until no longer pink.",
+      "Return the onion and bell pepper to the wok/frying pan, and mix well.",
+      "Turn off heat, transfer to a serving plate. Serve with steamed white rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gram Beef",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Bell Pepper",
+        "unit": null,
+        "notes": "seeded and chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Bell Pepper",
+        "unit": null,
+        "notes": "seeded and chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Bird Eye Chilies",
+        "unit": null,
+        "notes": "Indonesian: cabe rawit hijau",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grind the Following Into Spice Paste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": "Indonesian: bawang merah",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "Indonesian: bawang putih",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "Tbsp",
+        "notes": "Indonesian: bubuk ketumbar",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": "Indonesian: bubuk kunyit",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Powder",
+        "unit": "tsp",
+        "notes": "Indonesian: bubuk jinten",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "Indonesian: kecap manis",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "Indonesian: kecap asin",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8b85265309d94f30965b7a0a27dfdabe6baf0de8a0a099002d61c6614a3f470e",
+    "lineage_hash": "6cbaf56eace90a1275fce30d6fd65de7dd25fd9d59c192962f6cf7f5d9e257ad"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/beef-and-bell-pepper-stir-fry.html",
+    "fetchedAt": "2026-08-02T07:16:04.018Z"
+  },
+  "rawSource": "https://dailycookingquest.com/beef-and-bell-pepper-stir-fry.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

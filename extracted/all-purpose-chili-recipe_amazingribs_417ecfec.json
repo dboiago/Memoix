@@ -1,0 +1,184 @@
+{
+  "recipe": {
+    "name": "All Purpose Chili Recipe",
+    "time": "1 hr 30 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Prep. Chop the onion and bell pepper. Mince the garlic.",
+      "In a small bowl assemble the dry ingredients: American chili powder, cumin, oregano, cinnamon, mustard, ginger, salt, and pepper. In another bowl mix the wet ingredients: Water, Worcestershire, tomato paste, vinegar, and hot sauce.",
+      "Cook. Crumble the meat into a medium hot pan that is not non-stick. Stir it around and break it up with a wooden spoon until it is tan all over, about 15 minutes. Keep it simmering until all the water evaporates and the meat begins to fry. You&#039;ll hear it sizzle and it will start turning dark brown. Push the meat to one side of the pan. Add the onions and peppers to the bare metal side of the pan and fry them for about 5 minutes until the onions are limp. Add the garlic and fry it for 1 minute. Mix everything together.",
+      "Push everything to one side and add the olive oil on top of the bare metal and then pour the spices on the oil to allow their oil-soluble flavors to bloom in the oil for about 1 minute. Mix the spices in with everything else.",
+      "Add the wet ingredients and mix. Let everything simmer on medium low with the lid off for up to an hour. If it dries out, add more water. Cook it down to the whatever thickness you like. I like mine on the crumbly side, not the drippy side as they do in Detroit and Cinci.",
+      "Serve. Serve the chili in a bowl with any variety of toppings including diced onion, grated cheddar cheese, jalapeno slices, and sour cream. Or use on hot dogs, burgers, baked potatoes, and so much more."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Lean Ground Sirloin",
+        "unit": "lb",
+        "notes": "alt: lamb or mixed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Bell Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "American Chili Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cumin",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oregano",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Morton Coarse Kosher Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "tsp",
+        "notes": "finely",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Worcestershire Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Paste",
+        "unit": "oz",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Inexpensive Balsamic Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tabasco Chipotle Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "875b06a09592ee3f7efaa97819dfd41b4fe3243fc4285a71d8a2e5abeb4c0cad",
+    "lineage_hash": "cbda7083963726bed9fda2f55f4e861769abfd8c7d62aeab9808453c53ccc7a3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://amazingribs.com/tested-recipes/beef-and-bison-recipes/all-purpose-chili-sauce-recipe/",
+    "fetchedAt": "2026-08-02T06:14:04.311Z"
+  },
+  "rawSource": "https://amazingribs.com/tested-recipes/beef-and-bison-recipes/all-purpose-chili-sauce-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

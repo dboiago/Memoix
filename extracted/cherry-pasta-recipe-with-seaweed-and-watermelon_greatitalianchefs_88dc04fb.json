@@ -1,0 +1,208 @@
+{
+  "recipe": {
+    "name": "Cherry Pasta with Seaweed and Watermelon",
+    "time": "2 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the marinated cherries, heat the sugar and water together in a pan over a low heat. When the sugar has completely dissolved, pour in the alcohol and bring to the boil",
+      "Pour the hot liquid over the cherries then leave to cool to room temperature. Place in an airtight container in the fridge and leave to infuse overnight",
+      "Meanwhile, make a pickling syrup for the watermelon skin. Place the vinegar, sugar, spices and orange zest in a pan and bring to the boil over a medium heat. Remove from the heat and leave to cool",
+      "Add the slices of watermelon skin to a separate pan and cover with cold water. Place over a medium heat and bring to the boil",
+      "Simmer the skin for 10 minutes, then drain and transfer to the pan of cooled pickling syrup. Cover and leave to pickle overnight",
+      "On the day of serving, make the pasta dough. Add the flour to a large bowl and make a well in the centre. Add the whole egg and yolks and start to mix into the flour",
+      "Bring the dough together with your hands, transfer to a clean work surface and knead briefly. Add the cherry purée and knead again to create a smooth, evenly coloured dough. Wrap tightly in cling film and rest in the fridge for 1 hour",
+      "While the pasta is resting, make the hibiscus sauce. Add the water to a small pan and bring to the boil over a medium heat. Remove from the heat and add the hibiscus flowers",
+      "Leave to infuse for 10 minutes, then pass the liquid through a fine sieve into a clean pan. Decant 2 tablespoons of the liquid into a small bowl and stir in the kuzu to dissolve",
+      "Place the pan of hibiscus water back over a medium heat and bring to the boil. Add the dissolved kuzu gradually until fully combined, then keep warm until ready to serve",
+      "Pass the rested pasta dough through a pasta machine, gradually decreasing the thickness setting each time until the pasta reaches a 2mm thickness. Use a blade attachment (or cut by hand) to cut the pasta into strips of tagliolini (slightly thinner than tagliatelle)",
+      "Bring a large pan of water to the boil and blanch the pasta for 2 minutes then drain. Drain the pickled watermelon skin and mix through the cooked pasta along with the seaweed",
+      "Drain the marinated cherries and chop into small pieces. Divide these between serving bowls and twirl a nest of the pasta on top",
+      "Drizzle over with hibiscus water and garnish with a few edible flower petals to serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherry Purée",
+        "unit": "g",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherries",
+        "unit": "g",
+        "notes": "stones removed",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Neutral Alcohol",
+        "unit": "ml",
+        "notes": "95%",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Watermelon",
+        "unit": "g",
+        "notes": "skin and rind only, sliced into strips",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Clove",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Juniper Berry",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Zest",
+        "unit": "slice",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hibiscus Flowers",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kuzu",
+        "unit": "g",
+        "notes": null,
+        "amount": "2.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Seaweed",
+        "unit": "g",
+        "notes": "washed well",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Edible Flowers",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4435ebd00f72c1234298197d15c2d07c9b9b439048677bee9aee90d66075dacc",
+    "lineage_hash": "c3ff6bac9b962894f201219b19cfbfb1745685856e381ee52ddc93a524c79927"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/cherry-tagliolini-recipe",
+    "fetchedAt": "2026-08-02T05:05:51.137Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/cherry-tagliolini-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,251 @@
+{
+  "recipe": {
+    "name": "Chicken and Tomato Pulao",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix the chicken with the remaining marinade ingredients set aside to marinade in the fridge for at least an hour",
+      "Wash the basmati rice three times and then soak in plenty of cold water for at least an hour",
+      "Heat ghee or oil in a pan and fry the whole spices. Add the ground fennel, onions and ginger garlic paste and cook until the onions are dark brown",
+      "Add the green chilli and chopped tomatoes and cook for 10 minutes on a medium flame, stirring occasionally",
+      "Add the chicken thigh, mint and half the coriander leaves and cook for a further 15 minutes",
+      "Bring the water, coconut milk and salt to a rolling boil in a separate pan then add to the chicken mixture",
+      "Drain the rice completely in a colander and add to the chicken mixture",
+      "Cook on a medium flame, stirring gently, and taking care not to break the grains of rice. When the liquid comes back to the boil, turn the heat down and cover with parchment paper and a lid. Cook for 10 minutes on a low flame or until the rice is cooked and fluffy in texture",
+      "Take off the heat and rest for a further 15 minutes. Garnish with the rest of the coriander and serve with a raita or seasoned yoghurt"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Basmati Rice",
+        "unit": "g",
+        "notes": "aged",
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": "or sunflower oil",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cassia",
+        "unit": "in",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Cardamom Pods",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blade of Mace",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Fennel Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bombay Onion",
+        "unit": null,
+        "notes": "large",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Garlic Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bird's Eye Chillies",
+        "unit": null,
+        "notes": "green, slit in half lengthways",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tin of Chopped Tomatoes",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint",
+        "unit": "bunch",
+        "notes": "fresh, picked and chopped",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "bunch",
+        "notes": "fresh, picked and chopped",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raita",
+        "unit": null,
+        "notes": "or seasoned yoghurt, for serving",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Thighs",
+        "unit": "g",
+        "notes": "boneless, skinless, cut in half",
+        "amount": "375",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Garlic Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kashmiri Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fa36c28abbd105db4900b190b98213bec390476b37e64c3d7bb4d1dfb6e313bc",
+    "lineage_hash": "45bfbb5f616dc5b1d8a896018644bf77b70fc03edf818b9dcefcdd10ceb8e7ca"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chicken-tomato-pulao-recipe",
+    "fetchedAt": "2026-08-02T13:03:49.673Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chicken-tomato-pulao-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

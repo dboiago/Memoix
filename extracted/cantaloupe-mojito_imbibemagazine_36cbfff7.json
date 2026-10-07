@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Cantaloupe Mojito",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Collins",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Fill a Collins glass with ice and chilled club soda. In a shaker, combine the rest of the ingredients. Add ice and shake hard, then double strain into the prepared glass. Garnish.\nCantaloupe RumChop 500 grams of fresh, seeded cantaloupe and add to a blender with 250 ml of Demerara rum and 250 ml of white rum. Blend on high for about 2 minutes, then strain through a coffee filter–lined chinois. The rum will keep refrigerated for up to 1 month."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "efcc824bca47af1050351f4ad42e351111ca5d82fbcc5dfe80e03d791d639cd2",
+    "lineage_hash": "da0f3deecf331cb5cfedbf62fcddb3099787274ffaa0073d2e6ba1ab9cae9088"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cantaloupe-mojito/",
+    "fetchedAt": "2026-08-04T00:56:51.457Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cantaloupe-mojito/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

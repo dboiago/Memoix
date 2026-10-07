@@ -1,0 +1,84 @@
+{
+  "recipe": {
+    "name": "Baked Tofu Bites",
+    "time": "40 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "176",
+      "carbohydrateContent": "6",
+      "fatContent": "10",
+      "proteinContent": "15"
+    },
+    "directions": [
+      "Oven: Preheat your oven to 375°F (190°C). Line 2 large baking sheets with parchment paper.Air-Fryer: Preheat your air fryer to 350°F (180°C).",
+      "Mix the coating: In a large bowl, combine the nutritional yeast, olive oil, soy sauce, and garlic powder.",
+      "Prepare the tofu: Use your fingers to break the tofu into bite-sized chunks and add them to the bowl. (No need to press the tofu first.) Toss well to evenly coat each piece. The mixture will just barely coat the tofu, that’s exactly right. Don’t be tempted to thin it out. It’s not a marinade, but a light coating that clings to the tofu and helps it crisp up perfectly in the oven.",
+      "Cook the tofu (choose ONE method):Oven: Spread the tofu evenly over the baking sheets and bake for about 30 minutes, stirring halfway through, until lightly golden.Air-Fryer: Add the tofu to the air fryer basket and cook for about 20 minutes, shaking halfway through, until lightly golden.",
+      "Serve or store: Enjoy hot, or let cool and store in an airtight container in the fridge for up to 5 days, or freeze for longer storage."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Nutritional Yeast",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "gluten-free if preferred",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blocks (12 Oz/ 350 G Each) Extra-firm Tofu",
+        "unit": null,
+        "notes": "drained",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8eea0ba11ad7cd2c993b992f75a2e23cbd3dcf33e9806e92809c05d7772f7be1",
+    "lineage_hash": "4b5687a04b2618b6158801c3548fd93032e5ffa62d960f15db720ae3109ccc15"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/baked-tofu-bites/",
+    "fetchedAt": "2026-08-02T06:47:32.184Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/baked-tofu-bites/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

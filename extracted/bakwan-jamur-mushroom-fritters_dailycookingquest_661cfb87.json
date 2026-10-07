@@ -1,0 +1,134 @@
+{
+  "recipe": {
+    "name": "Bakwan Jamur (Mushroom Fritters)",
+    "time": "25 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "ID",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a mixing bowl, combine all-purpose flour, rice flour, eggs, coriander, salt, sugar, white pepper, and water into a thick paste.",
+      "Add thinly sliced mushrooms, minced garlic, thinly sliced scallions, and diced bell pepper to the batter. Stir with a spatula until well mixed",
+      "Heat 3 tablespoon oil in a skillet/frying pan on medium heat. Drop ladleful of mushroom batter into the frying pan, cook until both sides are golden brown, about 2 to 3 minutes per side. Repeat until the batter is used up.",
+      "Serve hot with raw bird-eye chilies, chili sauce, or as is."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gram (5.3 Oz) All-purpose Flour",
+        "unit": null,
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram (1.7 Oz) Rice Flour",
+        "unit": null,
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Coriander",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground White/black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": "3/4 cup + 1.5 tablespoon",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram (8 Oz) White Button Mushrooms",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bell Pepper",
+        "unit": "C",
+        "notes": "diced, or red/green chilies",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4eef33ef17b79680c5d56346b0b81032e0fdd8a3d6bff51fb90787949f781375",
+    "lineage_hash": "c4fd4e1e469c76a4da9eea6c20c9173d4045362b3900a80d7d276124ac033cc8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/bakwan-jamur-mushroom-fritters.html",
+    "fetchedAt": "2026-08-01T19:23:29.441Z"
+  },
+  "rawSource": "https://dailycookingquest.com/bakwan-jamur-mushroom-fritters.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

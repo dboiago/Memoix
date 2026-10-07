@@ -1,0 +1,216 @@
+{
+  "recipe": {
+    "name": "Chicken Pan Fried Noodles",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "489",
+      "carbohydrateContent": "42.6",
+      "fatContent": "24.4",
+      "proteinContent": "26"
+    },
+    "directions": [
+      "Combine the chicken and the marinade ingredients in a medium-sized bowl. Toss with your hands to coat the chicken evenly. Let marinate for 15 minutes while preparing other ingredients.",
+      "Combine the sauce ingredients in a medium-sized bowl and stir to mix thoroughly.",
+      "Prepare the noodles according to package directions (*Footnote 1). Drain and set aside in a colander.",
+      "Heat a 12” skillet with 2 tablespoons of peanut oil over medium-high heat until hot (Footnote 2). Spread the noodles into a patty shape (Footnote 3). Cook without flipping until the bottoms turn golden. Turn the noodles to fry the other side until golden. Drizzle in a bit more oil to help with the frying, if needed. Once done, transfer the noodles to a big serving plate.",
+      "Pour 1 tablespoon of oil into the same pan. Add the chicken and spread it out in a single layer using a pair of tongs or chopsticks. Let cook undisturbed for 1 minute or so, or until the bottom turns golden brown. Flip to cook the other side until browned. Stir a few times until the chicken is cooked, transfer to a big plate or small serving plates, and set aside.",
+      "Add the remaining 1 tablespoon of oil to the pan. Add the scallion whites, ginger, and garlic. Stir and cook for 30 seconds to release the fragrance.",
+      "Add the cabbage and carrot. Cook and stir for 2 minutes, until the veggies start to soften.",
+      "Stir the sauce thoroughly to dissolve the cornstarch completely and pour it into the pan. Stir and cook to bring the sauce to a boil, and cook until it starts to thicken.",
+      "Add the cooked chicken, quail eggs, and scallion greens into the pan. Stir to mix everything well. Once the sauce reaches the desired consistency, turn off the heat. Drizzle with sesame oil and mix again. Pour everything over the fried noodles. Serve immediately as a main dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Breast",
+        "unit": "oz",
+        "notes": "or thigh, sliced thinly against the grain",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hong Kong Pan Fried Noodles (or Fresh Yakisoba Noodles, or Other Type of Thin Noodles)",
+        "unit": "oz",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": "or dry sherry",
+        "amount": "1",
+        "section": "Meat & Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Meat & Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Meat & Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": "or dry sherry",
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Bouillon Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "divided",
+        "amount": "4",
+        "section": "Stir-Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Small Cabbage",
+        "unit": "head",
+        "notes": "yields 4 cups loosely packed, julienned",
+        "amount": "½",
+        "section": "Stir-Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": "yield 1/2 cup, sliced into strips",
+        "amount": "½",
+        "section": "Stir-Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "sliced into 2” (5 cm) long pieces",
+        "amount": "5",
+        "section": "Stir-Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "2",
+        "section": "Stir-Fry",
+        "isOptional": false
+      },
+      {
+        "name": "” Ginger",
+        "unit": null,
+        "notes": "minced",
+        "amount": "1",
+        "section": "Stir-Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Canned Quail Eggs",
+        "unit": null,
+        "notes": "Optional",
+        "amount": "8",
+        "section": "Stir-Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Stir-Fry",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3502b908d4eb71ac86479d9900bfd0439c53c2e34544d84568ac0b8a8a368129",
+    "lineage_hash": "cfd62bfb11ca87f2cebbf5d78d73013e74f89af8ff998e6d4a4ee4391ba052b5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/chicken-pan-fried-noodles/",
+    "fetchedAt": "2026-08-02T07:03:42.823Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/chicken-pan-fried-noodles/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

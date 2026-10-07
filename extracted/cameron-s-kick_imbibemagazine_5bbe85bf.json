@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Cameron's Kick",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake all of the ingredients with ice to chill, strain into a chilled glass, then garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "4d352ad8b5687389b2c3f04bea8918674d632ffb643a38a82b36b2b2171bd872",
+    "lineage_hash": "c75110476aaf63b00ae2eb5aa767e850dd78dcc4382a48618fe974425bc89709"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/camerons-kick-cocktail/",
+    "fetchedAt": "2026-08-03T19:03:40.707Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/camerons-kick-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

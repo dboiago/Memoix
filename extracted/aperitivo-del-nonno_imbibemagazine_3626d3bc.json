@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Aperitivo Del Nonno",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Glass",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all the ingredients in a glass and add ice. Stir to combine. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "0c4ea8478a480d6cef2800f3158de111220b8cad4ae1574b1ca279dd8ba64922",
+    "lineage_hash": "e0a73b29c1c6d1d6da13cb9d3712964c2a5b9e8edb15e6ea9815ae2fd28bbd32"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/aperitivo-del-nonno/",
+    "fetchedAt": "2026-08-03T21:46:43.251Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/aperitivo-del-nonno/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

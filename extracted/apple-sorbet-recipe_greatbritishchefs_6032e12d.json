@@ -1,0 +1,61 @@
+{
+  "recipe": {
+    "name": "Apple Sorbet",
+    "time": "15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Peel and core the apples, then chop the flesh. Place in a suitable container and freeze until the apples are hard and frozen",
+      "Place the chopped frozen apples in a blender with the sugar syrup and lemon juice. Blitz until smooth, then pass through a fine sieve",
+      "Churn the mix in an ice cream maker, then keep frozen until ready to serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Granny Smith Apples",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar Syrup",
+        "unit": "ml",
+        "notes": null,
+        "amount": "570",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemons",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0f6fce98212d6fcb886be5e567703963f7a893db2fac7cb9ef12a997b8659985",
+    "lineage_hash": "363225d5fb77167a6d8ba922c8689721893819b474dadd44977fac870b62ce79"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/apple-sorbet-recipe",
+    "fetchedAt": "2026-08-03T17:41:31.929Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/apple-sorbet-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

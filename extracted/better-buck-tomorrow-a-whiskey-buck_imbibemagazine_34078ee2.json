@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Better Buck Tomorrow",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Ice Cube-filled",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake the first 5 ingredients with ice and strain into an ice cube-filled glass, then top with sparkling water and garnish.",
+      "Ginger Syrup Combine 4 oz. of fresh ginger juice with 3 oz. of rich simple syrup (2:1). Keeps refrigerated for up to 2 weeks.",
+      "Rooibos Tea Syrup Boil 2 cups of water and remove from heat. Add 2 oz. of dried rooibos tea and let steep for 4 1/2 minutes, then strain. Weigh the liquid and add an equal amount of granulated sugar, stirring until the sugar is fully dissolved. Keeps refrigerated for up to 2 weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "e8abb8fb79bbef1a26a167e17e04b59538ce90c8a972183557bb4ab63476aa60",
+    "lineage_hash": "47044f54f4d367f3b61f81cdcb092ea0ae5f00ba19e4227830597a90f35a3a1d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/better-buck-tomorrow-whiskey-buck/",
+    "fetchedAt": "2026-08-03T20:31:51.060Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/better-buck-tomorrow-whiskey-buck/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

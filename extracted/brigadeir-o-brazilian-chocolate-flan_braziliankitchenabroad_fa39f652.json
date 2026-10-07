@@ -1,0 +1,105 @@
+{
+  "recipe": {
+    "name": "Brigadeirão (Brazilian Chocolate Flan)",
+    "time": "7 hr 45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "BR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "573",
+      "carbohydrateContent": "56",
+      "fatContent": "35",
+      "proteinContent": "11"
+    },
+    "directions": [
+      "Preheat oven to 175°C (350°F) for a fan-assisted convection oven, or 200°C (400°F) for a conventional oven.",
+      "Butter the bundt pan using a paper towel, then sprinkle with sugar and shake to coat all sides. Place the prepared bundt pan inside a large roasting pan. Set aside.",
+      "Cut up the chocolate into smaller pieces and add them to a medium-sized microwave-safe bowl. Add a splash of the heavy cream (about 2 tablespoons) and microwave in 30-second increments, stirring until it&#39;s all melted and smooth.",
+      "Add the condensed milk, the remaining cream, and melted chocolate to the base of a blender and blend until fully smooth. Scrape the sides of the blender as needed to fully incorporate all the ingredients.",
+      "Add the eggs all at once and pulse just until incorporated (about three 10-second pulses or until everything is incorporated).",
+      "Pour the custard into the prepared bundt pan. If using a convection oven, add hot tap water to the larger pan until halfway up the sides of the bundt pan. If using a conventional oven, use boiling water instead. Cover the bundt pan with foil, poke 4 holes in the foil, and bake at the preheated-temperature for 15 minutes, then reduce to 150°C (300°F) for convection or 175°C (325°F) for conventional, and bake for a further 1 hour and 15 minutes. The flan will still jiggle a little at the center when done. It will firm up as it cools.**",
+      "Let the cooked flan rest in the hot water bath on the counter for another 1 hour. The residual heat will continue to cook the flan as it rests there.",
+      "After that hour, loosen the flan from the sides of the pan by running a paring knife around the inside and the outside rims. Then place plastic wrap over the flan and refrigerate in the pan for at least 6 hours, preferably overnight.",
+      "To cleanly unmold the flan, place the bundt pan into a hot water bath for about 30 seconds. You&#39;re looking for that hardened fat on the edges of the flan to turn transparent, which means it&#39;s melting and releasing the flan from the pan. Give the pan a gentle shake or wiggle. You&#39;ll feel the flan start to move. Place your serving plate over the pan and flip it with confidence. It should release easily.",
+      "Wipe off excess syrup with a paper towel if desired, then top generously with chocolate sprinkles. Slice, serve and enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams of Semi-sweet Chocolate Bar (50-56% Cacao) *see Notes",
+        "unit": null,
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milliliters of Heavy Cream Milk Cream That Has Between 36-40% Fat",
+        "unit": null,
+        "notes": null,
+        "amount": "470",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams of Sweetened Condensed Milk",
+        "unit": null,
+        "notes": null,
+        "amount": "740",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs Medium to Large",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Good Quality Chocolate Sprinkles",
+        "unit": null,
+        "notes": "for topping about two cups",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9cbe82824c0a6451e6fe0120387433f097e29a75cf55e20a7a0f7befb80e2cc8",
+    "lineage_hash": "49dd926efcd0537fd8bcfce67fa504a797c11eb5d9716d139245ec03222636bf"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://braziliankitchenabroad.com/brigadeirao-brazilian-chocolate-flan/",
+    "fetchedAt": "2026-09-26T02:30:11.487Z"
+  },
+  "rawSource": "https://braziliankitchenabroad.com/brigadeirao-brazilian-chocolate-flan/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

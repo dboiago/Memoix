@@ -1,0 +1,191 @@
+{
+  "recipe": {
+    "name": "Beef and Mustard Greens",
+    "time": "45 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cut beef against the grain, add salt, sugar, light soy sauce, ,white pepper, water, and cornstarch. Mix well until well combined. Then add vegetable cooking oil, remixing again. Set aside.",
+      "Prepare your serving pot, grease it with oil, and then spread the mustard greens in.",
+      "Heat the wok first, then reduce the heat. Add doubanjiang and chili sauce, and fry for 2-3 minutes over the lowest heat, stirring occasionally, until the oil turns red. Add garlic, dried chili pepper and Sichuan peppercorn.",
+      "Add the beef in. Quickly fry for around 30 seconds until the beef is almost cooked.",
+      "Then transfer all the content to the serving pot, add salt, light soy sauce, and sugar, and mix well. Cover the lid and heat for another 3 minutes. Enjoy! You need to stir it once or twice in the process."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef Shredded",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Greens",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Doubanjiang",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili Sauce Optional",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili Peppers",
+        "unit": null,
+        "notes": "dried",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sichuan Peppercorns",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper Flakes",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "39bb7cf4626ad0a889fb73d5e13c43d4341ca777d1edfa22cf4ea880c891883e",
+    "lineage_hash": "092648c40018a42c764b9028bbde8c0c33700ecce7e65bad1712139f44ccc3ce"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/beef-and-mustad-greens-one-pot/",
+    "fetchedAt": "2026-08-02T10:10:27.509Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/beef-and-mustad-greens-one-pot/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

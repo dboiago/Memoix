@@ -1,0 +1,70 @@
+{
+  "recipe": {
+    "name": "Chambord and Lemonade Ice Lollies",
+    "time": "15 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cut the peach into thin slices and halve the raspberries. Divide between 6 ice lolly moulds",
+      "Mix the Chambord with the lemonade in a jug and pour into the moulds before adding the lolly sticks",
+      "Place in the freezer for at least 6 hours, or preferably overnight, to allow the lollies to freeze solid",
+      "When completely frozen, gently warm the moulds to loosen and release the lollies (either rub gently between your hands or run under warm water). Enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Peach",
+        "unit": null,
+        "notes": "halved and stone removed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raspberries",
+        "unit": null,
+        "notes": "washed",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chambord",
+        "unit": "ml",
+        "notes": "or other raspberry liqueur",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemonade",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "deeb288f46a3929a773504548aea696cebb27b112dc7775c8227c8b2bc14ce54",
+    "lineage_hash": "5fc6f3e0413c9f8cc00948b98fa1b2d13500a2d2f30bcc31dfa6062b8c14577b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chambord-lemonade-ice-lollies-recipe",
+    "fetchedAt": "2026-08-03T12:19:48.685Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chambord-lemonade-ice-lollies-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,114 @@
+{
+  "recipe": {
+    "name": "Baked Apples With Rhubarb",
+    "time": "40 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Score each apple horizontally to slightly pierce the skin - this allows the flesh to expand while cooking",
+      "Core the apples by pushing an apple corer down through the apple until it pierces the bottom, discard the core. Repeat for all apples",
+      "Mix the rhubarb, brown sugar and cinnamon together in a bowl. Stand the apples up side by side in a baking dish",
+      "Use your fingers to push the rhubarb mixture into each apple, dividing the mix evenly",
+      "Add a blob of butter to the top of each and sprinkle over the Demerara sugar",
+      "Bake in the oven for 20-25 minutes or until the apples are cooked through - you can check this by piercing the apples with a skewer",
+      "Meanwhile, split the vanilla pod in half with a small knife. Scrape out the seeds and add to a bowl with the yoghurt and honey, whisk to combine",
+      "Remove the apples from the oven and allow to cool slightly. Serve on plates with the yoghurt. Drizzle over the juices from the baking tray"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Apples",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rhubarb",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Muscovado Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Demerara Sugar",
+        "unit": "Tbsp",
+        "notes": "to sprinkle",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Greek Yoghurt",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "ml",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6f815d34bfbb5b9f20bcd72643032b482a67af92bdc70f403876f13ca499ffa0",
+    "lineage_hash": "757b9af9e94e2f2e42e5c2ffc23e9e6f90277d805e22d0b02c10e4b8b28341b7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/baked-apples-with-rhubarb-recipe",
+    "fetchedAt": "2026-08-03T18:45:02.757Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/baked-apples-with-rhubarb-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

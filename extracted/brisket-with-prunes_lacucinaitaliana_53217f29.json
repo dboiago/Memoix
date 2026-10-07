@@ -1,0 +1,155 @@
+{
+  "recipe": {
+    "name": "Brisket with Prunes",
+    "time": "4 hr 20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the brisket in a large baking dish and sprinkle with salt and pepper. Chop the carrot, onion, and celery into large chunks and place in the dish. Add the veal bones and season with 3 tablespoons of olive oil, 1 sprig of rosemary, 1 teaspoon of juniper berries, 1/2 teaspoon of cloves, and 3 sprigs of thyme. Bake at 325°F for about 4 hours in a convection oven. After 30 minutes, add the wine; after an additional 30 minutes, add the vegetable broth. Remove from the oven. Filter the cooking liquid, add the prunes, and simmer until the liquid has reduced by half (sauce). Serve the brisket with the sauce and prunes."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Veal Bones",
+        "unit": "lb",
+        "notes": null,
+        "amount": "4½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Brisket",
+        "unit": "lb",
+        "notes": "with bone",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Broth",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Prunes",
+        "unit": "lb",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Stalks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Onion",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Juniper Berries",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extravirgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "585013cd28bd1fd45d5b5c02bebf3b14dcca54e8945a2a133e3dd7af9ee28466",
+    "lineage_hash": "39fc30252fb6ef32a231a4393d22d27705583d9c9a8ca8929ba9aa6cbba2b786"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/main-course/brisket-with-prunes",
+    "fetchedAt": "2026-08-02T02:32:43.373Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/main-course/brisket-with-prunes",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

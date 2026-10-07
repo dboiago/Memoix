@@ -1,0 +1,161 @@
+{
+  "recipe": {
+    "name": "Chicken & chicory with Belgian blonde ale",
+    "time": "1 hr 45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "BE",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Dust the chicken pieces in the seasoned flour and brown thoroughly in a thick-bottomed frying pan over a medium heat with a good glug of olive oil.",
+      "Meanwhile prepare the vegetables: peel the baby onions, leaving a little stalk on to keep them whole; peel and thickly slice the carrot.",
+      "When the chicken is browned add half the butter, the onions, carrot, garlic and bay leaf and cook for a further 3 minutes.",
+      "Add the beer and allow this to reduce by half, scraping the sediment from the bottom of the pan. Place a lid or cover the pan tightly with foil and cook very gently for 15 minutes.",
+      "Sprinkle the chicory halves with caster sugar, heat the remaining butter in a frying pan and over a medium heat fry them, cut side down, for 2-3 minutes until they are a light golden colour. Flip over and cook on the reverse for a minute, then add the chicken stock and simmer for 5 minutes.",
+      "Preheat the oven to 140°C/275°F/gas mark 1. Transfer the chicken to a casserole dish, add the chicory, cream and buttery stock juices and cook for a further 30 minutes until the chicken is very tender.",
+      "Add the chopped parsley, check the seasoning and serve in a warmed dish with crusty bread to mop up the sauce, and a few chilled Belgian beers."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Kg Free-range Chicken",
+        "unit": "kg",
+        "notes": "jointed",
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "Tbsp",
+        "notes": "seasoned with sea salt and freshly ground black pepper",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Onions",
+        "unit": null,
+        "notes": "peel, leaving a little stalk on to keep them whole",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": "large",
+        "notes": "thickly sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "G Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "peeled and finely sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "ML Belgian Blonde Ale",
+        "unit": "ml",
+        "notes": null,
+        "amount": "330",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Chicory Heads",
+        "unit": null,
+        "notes": "halved lengthways",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "ML Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "ML Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt and Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e35b9d61f0a0f40156afeabe7cef6c64ca60e3d82a49313e57a399364489ea9d",
+    "lineage_hash": "10e665799e5958d1bd84ba2cb8580878d6314956598bb6e8c15d9dba14a5eef3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.thestaffcanteen.com/chefs-recipes/Chicken---chicory-with-Belgian-blonde-ale---Back-in-the-Saddle",
+    "fetchedAt": "2026-08-03T12:02:53.569Z"
+  },
+  "rawSource": "https://www.thestaffcanteen.com/chefs-recipes/Chicken---chicory-with-Belgian-blonde-ale---Back-in-the-Saddle",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,145 @@
+{
+  "recipe": {
+    "name": "Kabocha Squash Stir Fry with Shrimp Paste",
+    "time": "28 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "TH",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix the pork with the fish sauce and set aside.",
+      "Cut the kabocha squash in half, slightly off to the side so you&#39;re not cutting through the stem. Scoop out the seeds, then cut the half into 1-inch wide wedges. Then slice each wedge into 1/4-inch thick pieces.",
+      "In a small bowl, combine shrimp paste with water and stir to dissolve the paste. Add the palm sugar and stir to mix. Have roughly a cup of water handy by the stove before you start cooking.",
+      "Heat a wok over high heat until hot, then add the oil. Once the oil is hot, add the pork and stir just until the pork is 90% cooked. Remove from heat and take the pork out of the pan, leaving all of the liquid behind.",
+      "Return the pan to the stove over high heat, then add the garlic, shallots and chilies (if using.) Stir until the garlic has turned golden, then add the kabocha, the sauce mixture, and add just enough water so the squash is about half-submerged. Stir to mix, then cover and reduce the heat to about medium and cook for 4-5 minutes, until the squash is cooked through, stirring it once halfway through. To check squash doneness, poke it with a fork and it should go through easily. When the squash is done, there should be a little bit of liquid left in the pan; if it’s completely dry, you can add a splash of water and stir to mix.",
+      "Taste the sauce and add more fish sauce as needed. The amount of fish sauce needed will depend on how much shrimp paste you used and how salty the shrimp paste is.",
+      "Once properly seasoned, add the pork back in and toss to mix. Remove from heat, add the Thai basil and toss just to mix. Serve with jasmine rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Thinly Sliced Pork Butt",
+        "unit": "oz",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "tsp",
+        "notes": "for marinating pork",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kabocha Squash",
+        "unit": "oz",
+        "notes": "see cutting instructions below",
+        "amount": "14",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fermented Shrimp Paste (gapi)",
+        "unit": "tsp",
+        "notes": "see note 1",
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Palm Sugar",
+        "unit": "tsp",
+        "notes": "finely chopped, or brown sugar",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Neutral Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "chopped",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Head Shallot",
+        "unit": "small",
+        "notes": "chopped, optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thai Chilies",
+        "unit": null,
+        "notes": "to taste, chopped",
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thai Basil",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jasmine Rice",
+        "unit": null,
+        "notes": "for serving",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5097710c54e1cf14e0d54d7bc1e7a211863b28b350f36471a7da11ec5e6cb482",
+    "lineage_hash": "6b1e06d3cf0258819cc1965968bd6621f194f4240c8da4b5804e718b1c85e6c9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://hot-thai-kitchen.com/kabocha-shrimp-paste/",
+    "fetchedAt": "2026-08-02T02:00:28.046Z"
+  },
+  "rawSource": "https://hot-thai-kitchen.com/kabocha-shrimp-paste/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

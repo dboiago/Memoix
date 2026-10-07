@@ -1,0 +1,84 @@
+{
+  "recipe": {
+    "name": "Celtuce Stir Fry with Eggs (莴笋炒鸡蛋)",
+    "time": "15 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "147",
+      "carbohydrateContent": "5.4",
+      "fatContent": "11.5",
+      "proteinContent": "6.7"
+    },
+    "directions": [
+      "Add 1/2 tablespoon oil in a large nonstick pan and heat over medium-high heat. When the pan is hot, add the beaten eggs and a pinch of salt. Cook until the bottom is set, then scramble the eggs with a spatula until the eggs are broken into smaller pieces and just cooked through. Transfer the eggs to a plate.",
+      "Add the remaining 1/2 tablespoon of oil and the garlic. Stir a few times to release the fragrance.",
+      "Add the celtuce. Cook and stir until the celtuce just starts to soften, 2 minutes or so.",
+      "Add back the cooked eggs and sprinkle evenly with 1/4 teaspoon salt. Stir to mix everything well. Turn to medium-low heat and taste the celtuce. Adjust the seasoning by adding more salt, if needed. Once done, immediately transfer everything to a serving plate.",
+      "Serve hot as a side dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celtuce Stem",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0fb79ff738e0938f8cb60f9bb8fbd827305854166037089fe3f81c3beabf675d",
+    "lineage_hash": "f8248b7ce55510b06ea05d97b4c151b8b0f16313b5dfd482f7f0606f2945758d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/celtuce-stir-fry-with-eggs/",
+    "fetchedAt": "2026-08-01T22:25:22.290Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/celtuce-stir-fry-with-eggs/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

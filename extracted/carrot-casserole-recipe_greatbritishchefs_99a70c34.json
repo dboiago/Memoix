@@ -1,0 +1,112 @@
+{
+  "recipe": {
+    "name": "Carrot Casserole",
+    "time": "45 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place a pan over a medium heat and add the grated carrot and salt. Cook until the liquid given off from the carrot evaporates",
+      "Add the stock and reduce until dry. Remove the pan from the heat and set aside",
+      "Place a separate pan over a low-medium heat and add oil. Once the oil is hot, sweat the onions until soft but not coloured",
+      "Add the chopped onion to the carrot mixture along with the cheese, coriander and egg. Mix well to combine and season with pepper",
+      "Place the mixture in a small deep baking dish lined with parchment paper. Smooth over and place in the oven for 15 minutes",
+      "Remove from the oven and allow to cool for 5 minutes. Serve warm"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Carrots",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cheddar",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7524a409086f32795de6a052da4665b8b50b91b61898760d553d49af0c2baf89",
+    "lineage_hash": "3c92090dae1761e8f64918fbc657680ffbc48ed0f4fb348dc36cdba11a9b382e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/carrot-casserole-recipe",
+    "fetchedAt": "2026-08-03T19:19:25.883Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/carrot-casserole-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

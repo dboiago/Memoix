@@ -1,0 +1,35 @@
+{
+  "recipe": {
+    "name": "Caipirinha Marshmallows",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Marshmallow BaseIn the bowl of a stand mixer with the whisk attachment (or in a large bowl), combine the gelatin, lime juice, cachaça, and food coloring. Whisk by hand to combine, then let sit until the gelatin powder is fully hydrated, about 5 minutes.\nMarshmallow SyrupIn a medium saucepan, combine the granulated sugar, corn syrup, salt, and 3/4 cup water. Cook over medium heat until the mixture reaches 235 degrees F on a candy thermometer. With the mixer on medium speed, slowly stream the syrup into the marshmallow base. When all the syrup is fully incorporated, increase the mixer speed to high and whip until the mixture is glossy and thick and has cooled to room temperature, 5 to 8 minutes.\nAssemble the MarshmallowsLine a 9 by 13-inch baking dish with parchment paper and grease with cooking spray. Pour in the marshmallow mixture and spread it evenly with an oiled miniature offset spatula or small spoon. Dust with powdered sugar and let stand, uncovered, overnight. The next day, the marshmallows should be firm to the touch.",
+      "Place a cutting board over the baking dish and flip the block of marshmallows out onto the cutting board. With an oiled knife, cut it into twenty 2 1/2 by 2 1/2-inch marshmallows. Work slowly, applying oil to the knife each time you cut. Pour the powdered sugar into a medium bowl and roll each cut marshmallow in the sugar to coat. Let sit, uncovered, for 4 hours before placing them in an airtight container. They will keep at room temperature for up to 1 week."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "20efc36760b2fcdc0cf45125a111596d0a19c69fc4ab1ce7ab8b053a55e14929",
+    "lineage_hash": "0d65663a7811d304fff872d477e567306aeca5f95d27dbf7585a7c282dbb9576"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/caipirinha-marshmallows/",
+    "fetchedAt": "2026-08-03T23:54:53.257Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/caipirinha-marshmallows/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

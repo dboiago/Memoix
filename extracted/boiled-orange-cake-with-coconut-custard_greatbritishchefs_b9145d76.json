@@ -1,0 +1,162 @@
+{
+  "recipe": {
+    "name": "Boiled Orange Cake With Coconut Custard",
+    "time": "1 hr 45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, line the base and sides of a 24cm spring-form cake tin with ungreased baking paper. Place the oranges in a pan and pour in water until they begin to float. Bring to the boil, reduce to a gentle boil then place a lid on the pan and cook for 20 minutes",
+      "Remove the oranges from the pan, cut into quarters and remove any pips. Allow to cool for 10 minutes, then add to a food processor and blitz to a smooth paste",
+      "Weigh out 650g of the paste, discarding the rest, and return to the food processor",
+      "Add all of the remaining ingredients (apart from the ginger) and blitz until smooth and incorporated. Stir through the ginger and pour into the cake tin. Bake for 40-50 minutes, until the cake is cooked through – you can test this with a skewer, which should come out clean when inserted into the centre of the cake",
+      "Meanwhile, make the pandan and coconut custard. Add the coconut cream, vanilla pod and half of the palm sugar to a pan and cook gently over a low-medium heat until simmering",
+      "Add the yolks, pandan and remaining palm sugar to a bowl and whisk until foamy. Pour the warm coconut cream into the bowl, whisk to combine and transfer back to the pan",
+      "Slowly cook the custard, stirring continuously until it coats the back of a spoon. Pass through a sieve and keep warm until ready to serve",
+      "Slice the cake into 8-10 pieces and serve with the custard, diced mango and toasted almonds"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oranges",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Desiccated Coconut",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": "gluten free",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stem Ginger",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": "scraped and roughly chopped",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Palm Sugar",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": "large",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pandan Essence",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mangoes",
+        "unit": null,
+        "notes": "diced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almonds",
+        "unit": "g",
+        "notes": "sliced, toasted",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "77f9e9dc741a1fb698ee1a27d6d1ad6c1a7f05ae10aacc05c1549d5e58804d2e",
+    "lineage_hash": "00bf5200f1f35d24f49091a329339d283c14c6fa0012c92de4402c21ca3247f5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/boiled-orange-cake-recipe",
+    "fetchedAt": "2026-08-03T16:09:38.002Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/boiled-orange-cake-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

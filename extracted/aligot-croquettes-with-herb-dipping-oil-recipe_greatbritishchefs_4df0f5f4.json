@@ -1,0 +1,217 @@
+{
+  "recipe": {
+    "name": "Aligot Croquettes with Herb Dipping Oil",
+    "time": "50 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by preparing the aligot. Place the diced potatoes into a pot of cold, salted water and bring up to a boil. Cook until the potatoes are fork tender – this should take around 15 minutes",
+      "Drain the potatoes and return them to the pot, then mash them until smooth",
+      "Over a low heat, gradually add the butter to the potatoes whilst stirring",
+      "Warm the milk in a separate pan and gradually add it into the potato mix, stirring until fully incorporated",
+      "Stir in the grated mozzarella and Gruyère cheese. Keep stirring until the mix is smooth, elastic and stretchy. Season to taste with salt and pepper",
+      "Spread the aligot out on a baking tray then cover and leave to cook. Place in the fridge for around an hour to firm up",
+      "Meanwhile, prepare the dipping oil. Place the oil into a bowl, then mix in the chopped herbs, garlic, peanuts and lemon juice",
+      "Season with salt and pepper then set aside until ready to serve",
+      "Once the aligot has firmed up, prepare the croquettes. Set up your breading section with one bowl of flour, one bowl of beaten eggs and another bowl of panko bread crumbs mixed with the parsley and thyme",
+      "Take a tablespoon of the aligot and, with lightly oiled hands, roll it into small cylinders. Repeat with the remaining aligot",
+      "Dredge each croquette in flour, then dip into the eggs and coat in the breadcrumb mixture",
+      "Repeat the dredging process to make sure each croquette is fully coated, then chill in the fridge on a baking tray lined with parchment paper for 10 minutes",
+      "Meanwhile, heat up enough oil to deep-fry the croquettes to 180°C. Make sure to use a high-sided pot",
+      "Fry the croquettes in batches until golden brown and cooked through",
+      "Serve the croquettes on a serving plate with the dipping oil on the side, seasoned with salt and pepper and topped with the grated Gruyère"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Waxy Potatoes",
+        "unit": "g",
+        "notes": "such as Yukon Gold, peeled and diced",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "diced",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mozzarella Cheese",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gruyere",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "Tbsp",
+        "notes": "fresh, chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basil",
+        "unit": "Tbsp",
+        "notes": "fresh, chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Peanuts",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshlay Farms Golden Yolker® Eggs",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Panko Breadcrumbs",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "L",
+        "notes": "for deep-frying",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gruyère",
+        "unit": "g",
+        "notes": "grated, to garnish",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "30335ec3e6d5299bebe88dfe6f550c8a6858be75ef60d8daf7aff12b71ca6b8c",
+    "lineage_hash": "fc1ef9b197ed0ea77ff911880a02f9ba1514c3c9cccb5a664b06724438faa2fe"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/aligot-croquettes-herb-dipping-oil-recipe",
+    "fetchedAt": "2026-08-02T08:04:05.439Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/aligot-croquettes-herb-dipping-oil-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

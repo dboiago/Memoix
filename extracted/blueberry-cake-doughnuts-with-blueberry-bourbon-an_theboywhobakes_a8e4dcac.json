@@ -1,0 +1,203 @@
+{
+  "recipe": {
+    "name": "Blueberry Cake Doughnuts with Blueberry Bourbon and Basil Glaze",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To a large bowl add the flour, baking powder, bicarbonate of soda, salt, sugar and lemon zest and whisk to combine.",
+      "In a small jug whisk together the buttermilk, egg yolks, butter and vanilla.",
+      "Pour the buttermilk mixture into the flour mixture and, using a spatula, stir together to form a thick cake batter.",
+      "Add the blueberries and briefly stir into the batter until evenly distributed.",
+      "Line a baking tray with parchment paper and flour liberally.",
+      "Tip out the cake batter and sprinkle liberally with flour.",
+      "Using your hands or a rolling pin, press the dough into a 1.5cm thick layer.",
+      "Transfer the tray to the fridge for about 2 hours to form up slightly.",
+      "To make the glaze add the blueberries and lemon juice to a small saucepan and cook over medium heat until the blueberries are breaking down and the liquid is bubbling, cooking for a few minutes more to reduce the amount of liquid a little.",
+      "Scrape the blueberry mixture into a jug and add the basil, bourbon, salt, vanilla and about half of the sugar.",
+      "Use a stick blender to puree until smooth, then add more sugar until you have a thick but pourable glaze.",
+      "You can adjust the thickness by adding a touch more lemon juice if too thick and more icing sugar if it is too thin.",
+      "Cover while you fry the doughnuts.",
+      "Fill a large saucepan about 1/2 full with vegetable oil and over medium heat bring to about 160-170C.",
+      "Once at temperature, turn the heat to low.",
+      "You’ll want to have a thermometer handy so you can regularly check the temperature of the oil so you can adjust the heat as needed to keep it within the 160-170C range.",
+      "Remove the doughnut mixture from the fridge and using a 3 inch round cookie cutter, cut out as many doughnuts as you can.",
+      "Using a 1 inch round cookie cutter, remove a hole from the middle of each doughnut.",
+      "You can fry the middles as doughnut holes and the scraps can be pressed back together, re-rolled and cut out as before to get a couple more doughnuts.",
+      "Carefully lift the doughnuts into the oil and fry, 2 or 3 at a time, for about 2 minutes flipping halfway through cooking to ensure even browning.",
+      "When the doughnuts are golden brown use a slotted spoon to remove them from the oil.",
+      "The doughnuts should feel light, if they feel heavier than you expect they are likely undercooked and need a little longer in the oil.",
+      "Transfer the doughnuts to a wire rack set atop a baking tray.",
+      "Once all your doughnuts are fried pour over the glaze, covering as much as you can.",
+      "Leave the glaze to set for 15-20 minutes and then enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "275",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bicarbonate of Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Zest of 1 Lemon Lemon Zest",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": "large",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "melted and cooled",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wild Blueberries",
+        "unit": "g",
+        "notes": "frozen",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blueberries",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basil Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "3-5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bourbon",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200-225",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "71cc9cc75791933343a25b9a4174d0fbe5df5cbae4a46b5f7615425fb4efa44b",
+    "lineage_hash": "16102d1c9e31db2d07ccd360a5a5be88c1e91c707c8fb89411a79d8fb7573335"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.theboywhobakes.co.uk/recipes/2022/5/9/blueberry-cake-doughnuts-with-blueberry-bourbon-and-basil-glaze",
+    "fetchedAt": "2026-08-01T16:30:32.868Z"
+  },
+  "rawSource": "https://www.theboywhobakes.co.uk/recipes/2022/5/9/blueberry-cake-doughnuts-with-blueberry-bourbon-and-basil-glaze",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

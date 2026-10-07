@@ -1,0 +1,159 @@
+{
+  "recipe": {
+    "name": "Black Treacle-Cured Salmon",
+    "time": "50 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To prepare the marinade, combine the salt, sugar, pepper, orange juice, lemon juice, caraway and treacle in a large container. Remove the skin from the salmon, then thoroughly coat the flesh in the marinade and set aside in the fridge for 24 hours, turning over after 12 hours",
+      "To prepare the beetroot, remove the tops and tails and place into a saucepan of cold water. Bring to a gentle boil and cook until tender - this will take approximately 20-40 minutes. Strain and allow to cool slightly, then peel and dice into 1cm cubes. Set aside until required",
+      "To prepare the garnish, simply mix the sour cream with the cumin, adding a little more to taste if necessary, and refrigerate until required",
+      "Run the salmon under cold water to wash off the marinade. Pat dry with kitchen towel then brush with a little more black treacle. Using a very sharp knife, slice thinly across the grain, starting at the top of the fillet until you have 4-5 slices per portion",
+      "Spoon some sour cream onto the corner of each plate and arrange slices of the salmon on top. Arrange the beetroot and caviar around each plate and finish with a sprinkling of the chives and cress"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Side of Salmon",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mignonette Pepper",
+        "unit": "g",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "285",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juice and zest",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caraway Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Treacle",
+        "unit": "Tbsp",
+        "notes": "plus extra for garnish",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beetroots",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sour Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cumin",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salmon Caviar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Avruga Caviar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Micro Cress",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": "bunch",
+        "notes": "finely chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ff6eebd29baedbee454d4bdc456022578efb75dfa4b7dde62335524cc4834051",
+    "lineage_hash": "c443e7e7e7f408467614d11e984b5e5c089ef7158efab021879841e9d7e0b498"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/black-treacle-cured-salmon-recipe",
+    "fetchedAt": "2026-08-03T18:41:55.397Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/black-treacle-cured-salmon-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

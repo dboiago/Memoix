@@ -1,0 +1,122 @@
+{
+  "recipe": {
+    "name": "Chicken Hearts and Smoked Westcombe Cheddar Aligot",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the potatoes to cold, salted water. Bring to the boil and cook until completely soft, about 20 minutes, then allow to steam dry",
+      "While the potatoes steam dry, heat the butter, milk and cheddar in a separate pan, stirring until melted",
+      "Pass the potatoes through a ricer and then beat in the cheese and milk mix, stirring vigorously, to produce a silky smooth aligot",
+      "Return to a low heat and stir occasionally for about 20-25 minutes",
+      "To cook the chicken hearts, place a frying pan on a high heat. Add rapeseed oil and sear the chicken hearts until golden and cooked through, about 3–5 minutes. Be sure that the chicken hearts are cooked throughout, but don’t overcook them, as they will resemble rubber bullets!",
+      "Deglaze the pan with the vinegar, before adding the stock and butter",
+      "Turn up the heat and reduce the stock to form a velvety sauce. Season according to taste, and add more vinegar if needed",
+      "To plate, serve the aligot topped with the hearts and sauce, before finishing with fresh chervil sprigs"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Waxy Potatoes",
+        "unit": "g",
+        "notes": "peeled and halved",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Westcombe Cheddar",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Heart",
+        "unit": "g",
+        "notes": "membrane and tops removed",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Riesling Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chervil",
+        "unit": "bunch",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "91c45c5cc4ee29c260e22f6425881fea60d16f4dbe0655f3589bb215d2e29896",
+    "lineage_hash": "92c75f5fae2c53a4df774ba6893b8960bec6a1c5c0c0995cdd8623c402e04828"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chicken-hearts-smoked-westcombe-cheddar-aligot-recipe",
+    "fetchedAt": "2026-08-02T05:07:09.953Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chicken-hearts-smoked-westcombe-cheddar-aligot-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

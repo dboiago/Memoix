@@ -1,0 +1,119 @@
+{
+  "recipe": {
+    "name": "Rotisserie Chicken",
+    "time": "2 hr 15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Make herb rub by combining 1/3 cup each of finely chopped rosemary, thyme, sage, and the zest of four lemons.",
+      "Dry chickens off and remove any bits from the cavity. Season inside with kosher salt and sixteen mesh black pepper (mixed equal parts in a shaker).",
+      "Quarter lemons and place two lemons and 3-4 whole garlic cloves inside the cavity of each chicken.",
+      "Brush chickens with olive oil to help seasoning stick. Apply kosher salt and black pepper to the outside using the shaker, then generously apply herb rub.",
+      "Let chickens sit in refrigerator to air dry for a few hours.",
+      "Set up Weber Performer and Kettle grill for indirect grilling. Ignite two chimney starters with equal amounts of lump charcoal.",
+      "For first chicken, run spit through cavity (top to tail). For second chicken, run spit through side.",
+      "Pour lite charcoal into charcoal baskets in each grill. Attach rotisserie rings, motors, and covers. Once grills reach 400 degrees, place chickens in grills and add wood chunk to each basket to create wood smoke.",
+      "Insert wireless thermometers in each chicken to track temperatures.",
+      "After 30 minutes, spray chickens with lemon juice and white wine mixture. Continue spraying every 20 minutes.",
+      "Due to wind, replenish charcoal after 30 minutes. Add charcoal each time you spray chickens to maintain temperature.",
+      "Cook first chicken for 1 hour and 30 minutes, second chicken for 2 hours and 15 minutes.",
+      "Allow chickens to rest before eating."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rosemary",
+        "unit": "C",
+        "notes": "finely chopped",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "C",
+        "notes": "finely chopped",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sage",
+        "unit": "C",
+        "notes": "finely chopped",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Zest",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mesh Black Pepper Kosher Salt",
+        "unit": null,
+        "notes": "mixed equal parts in a shaker",
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemons",
+        "unit": null,
+        "notes": "quartered",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "3-4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": null,
+        "notes": "brushed on chicken",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Herb Rub",
+        "unit": "C",
+        "notes": "prepared for each chicken",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bc2b1052dc059ea8278e77b31131d3cbb8ba870943d05eb645b4a6b06a5481d5",
+    "lineage_hash": "15df500d81115ad3f7d735b76c72b261f55166a19576f04f46830594b2c74464"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/2022/01/21/battle-of-the-rotisserie-chicken/",
+    "fetchedAt": "2026-08-02T16:52:40.330Z"
+  },
+  "rawSource": "https://barbecuebible.com/2022/01/21/battle-of-the-rotisserie-chicken/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

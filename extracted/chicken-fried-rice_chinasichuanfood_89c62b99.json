@@ -1,0 +1,140 @@
+{
+  "recipe": {
+    "name": "Chicken Fried Rice",
+    "time": "15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "591",
+      "carbohydrateContent": "85",
+      "fatContent": "18",
+      "proteinContent": "18"
+    },
+    "directions": [
+      "Cut the chicken meat into cubes around 2cm and marinade with the sauce for at least 10 minutes.",
+      "Heat up cooking oil in pan. Put chicken cubs in to stir fry until the surface becomes slightly white.",
+      "Add cucumber and carrot in and continue to stir fry for 2 minutes or until soft.",
+      "Put leftover rice in. Add sale, light soy sauce and black pepper powder in and mix evenly.",
+      "Garnish some chopped spring onion and serve hot!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bowls of Leftover Rice",
+        "unit": "small",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Chests",
+        "unit": "lb",
+        "notes": "boneless, or 2 chicken thighs",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber Chopped",
+        "unit": "small",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "A Middle Size Carrot Chopped",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onion for Garnish",
+        "unit": "tsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn Starch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Wine",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bc6fe4ad711b11cb08446b970124892040d3874f19bc380cf952b6456d5d40e5",
+    "lineage_hash": "0e93dc03adaa453abb3fa798291e257bfbc2bcea14fd5b17bf67d1a8faf4a63d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/chicken-fried-rice/",
+    "fetchedAt": "2026-08-01T18:17:04.374Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/chicken-fried-rice/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

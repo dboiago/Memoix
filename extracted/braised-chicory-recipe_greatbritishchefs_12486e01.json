@@ -1,0 +1,178 @@
+{
+  "recipe": {
+    "name": "Braised Chicory",
+    "time": "45 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To start the dish, cut the chicory in half, heat a wide oven-proof pan with the olive oil and add the chicory cut-side down. Brown slightly, add the ale and orange juice and turn the heat to high",
+      "Bring to the boil, place a lid on the pan and cook in the oven for 3 minutes. Remove the chicory and reduce the liquor over a high heat until a syrup consistency is achieved. Remove from the heat and return the chicory to the pan",
+      "To make the pickled peaches, first make the pickling liquor. Add the vinegar and sugar to a pan and place over a low-medium heat. Simmer very gently for 10 minutes",
+      "Remove the stones and cut the peaches into wedges. Place in a shallow container, pour over the boiling pickling syrup, then allow to cool",
+      "For the peach vinaigrette, whisk the hazelnut oil, olive oil and peach juice together with a pinch of salt and add Chardonnay vinegar to taste, aiming for a good level of sharpness. Just before serving, add the chopped sweet cicely",
+      "If needed, warm the chicory through in the oven for 3 minutes",
+      "Wash the red chicory and cut off the base. Cut each leaf in half down the centre of the stem",
+      "To serve, lay the warm braised chicory across the plate and arrange the peaches around it. Tear the ham into pieces and lay over the plate. Add two pieces of red chicory, sprinkle over a few toasted poppy seeds and a spoonful of the vinaigrette. Finally, grate the Gruyère cheese over the top and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicory",
+        "unit": null,
+        "notes": "large",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Meantime IPA",
+        "unit": "ml",
+        "notes": "decanted",
+        "amount": "165",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peaches",
+        "unit": null,
+        "notes": "ripe",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Distilled Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "170",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peach Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hazelnut Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chardonnay Vinegar",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Cicely",
+        "unit": "bunch",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chicory",
+        "unit": null,
+        "notes": "small",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ham",
+        "unit": "slices",
+        "notes": "preferably Monmouthshire",
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gruyère",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Poppy Seeds",
+        "unit": "tsp",
+        "notes": "toasted",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b11f338b2d5e4e956be0b1d8729d7ce92d145e1c727864cf72a9f4fce42ed0b3",
+    "lineage_hash": "db336982a91194729502536adb94fc68e52df3b78e9a154e98bf2085dc76ca18"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/braised-chicory-recipe",
+    "fetchedAt": "2026-08-03T19:49:16.122Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/braised-chicory-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

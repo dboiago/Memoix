@@ -1,0 +1,101 @@
+{
+  "recipe": {
+    "name": "Bean Curd and Chicken Soup",
+    "time": "1 hr 15 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "(Optional) Soaked bean curd sticks in hot water until soft to remove excess oil, cut into small bite size pieces. You can safely skip this part and just add dried bean curd sticks along with everything else in the next step.",
+      "In a soup pot, add soaked bean curd sticks, chicken, carrot, tomato, cuttlefish, salt, sugar, and water. Bring to a boil, reduce heat, and simmer for 30 to 45 minutes until everything is fully cooked. Adjust salt and sugar as needed.",
+      "Turn off heat and serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gram Dried Bean Curd Sticks",
+        "unit": null,
+        "notes": "Indonesian: kembang tahu",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Range Chicken (indonesian: Ayam Kampung)",
+        "unit": null,
+        "notes": "cut into 8 pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot (about 100 Gram)",
+        "unit": null,
+        "notes": "peeled and cut into bite size pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": null,
+        "notes": "cut into quarters",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Salted Dried Cuttlefish (indonesian: Sotong Kering Asin)",
+        "unit": null,
+        "notes": "*",
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0ffa2ff28029be7454e7b1719700a8f6247fd2f3648378c0edc58bfe5676a8d2",
+    "lineage_hash": "063a27799b5021209ac17fd7f293901227b14a463dfd39c673f9a237a26ded3a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/bean-curd-and-chicken-soup.html",
+    "fetchedAt": "2026-08-02T09:44:28.573Z"
+  },
+  "rawSource": "https://dailycookingquest.com/bean-curd-and-chicken-soup.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

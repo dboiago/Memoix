@@ -1,0 +1,118 @@
+{
+  "recipe": {
+    "name": "Brown Butter Sprouts with Fermented Cranberry Hot Sauce",
+    "time": "30 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the cranberries into a sterilised jar. Dissolve the salt in the water, then pour over the fruit until submerged. If the berries keep bobbing up, weigh the cranberries down with pickling weights. Seal the jar and leave to ferment at room temperature for 3 days, ‘burping’ the jar (opening the lid to release the built-up gases) daily. They’re ready when slightly fizzy and softened",
+      "After three days, drain the fermented cranberries. Add them to a blender with the garlic, chilli, honey and vinegar. Blend to a smooth sauce, adjusting with more salt to taste. Set aside",
+      "For the sprouts, heat a wide pan over medium-high heat. Add the butter and cook until nutty and brown (about 8 minutes). Add the sprouts cut-side down and cook for 6-8 minutes until deeply caramelised. Season with salt",
+      "Pile the brown butter sprouts onto a platter. Spoon over the fermented cranberry hot sauce and chopped parsley. Serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brussels Sprouts",
+        "unit": "g",
+        "notes": "trimmed and halved",
+        "amount": "800",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Flat Leaf Parsley",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cranberries",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Cider Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ea9cc83497aec9ce65ae768a82d88ab2143c68b9d7241cc06f6cdc190cc523f1",
+    "lineage_hash": "d1c384e95c6b357bc5182d452a243765a181829345f3712ce964a0e98424e97f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/brown-butter-sprouts-fermented-cranberry-hot-sauce-recipe",
+    "fetchedAt": "2026-08-01T23:45:37.582Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/brown-butter-sprouts-fermented-cranberry-hot-sauce-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

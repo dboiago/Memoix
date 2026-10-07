@@ -1,0 +1,65 @@
+{
+  "recipe": {
+    "name": "Blueberry Jam",
+    "time": "40 min",
+    "course": "pickles",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by putting a plate in the freezer. This will help you test when the jam is ready later on",
+      "Place the blueberries in a heavy-based pan and gently crush with a potato masher, just enough to release some of the juices",
+      "Add the sugar and lemon juice to the pan and leave to simmer on a low heat. Stir to prevent sticking",
+      "Cook down for 25 minutes and skim off any scum that has settled on the surface",
+      "To test if the jam is the correct consistency, remove the plate form the freezer and spoon a little jam onto the plate. Place in the fridge to set for a couple of minutes. If the jam forms a skin and sets then it is ready to jar. If not, return to the heat and continue cooking, repeating the test every 5 minutes",
+      "Leave to sit for 15 minutes to cool slightly – this allows the berries to settle evenly instead of floating to the top when you transfer to the jars",
+      "Spoon the jam into the sterilised jar, seal, and label with the date. The jam will keep in a cool dark place for 1 year, once opened keep in the fridge"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Blueberries",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "36f3e8f71449855d9ff5bb711fff8e805eb9c0c8a9126ef2da09a2f80d6c35a7",
+    "lineage_hash": "8d18714060eb0071738667c70c0b8f4c1c4d4f8a86968a5e0c6d587fd957c7a8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/blueberry-jam-recipe",
+    "fetchedAt": "2026-08-03T10:03:38.699Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/blueberry-jam-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

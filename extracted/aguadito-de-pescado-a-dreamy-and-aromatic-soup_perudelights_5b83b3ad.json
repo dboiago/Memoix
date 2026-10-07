@@ -1,0 +1,149 @@
+{
+  "recipe": {
+    "name": "Aguadito De Pescado",
+    "time": "1 hr 25 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "PE",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a heavy saucepan heat the vegetable oil over medium-high heat. Add onion and garlic, and cook, stirring, for 10 minutes. Do not let them color. Add aji amarillo paste and tomato, and cook 10 minutes longer.",
+      "Incorporate the fish stock, coriander paste, bring to a boil and cook for a few minutes. Add potatoes, rice, corn, red peppers, and green peas. Season with salt and pepper. Lower the heat and cook partially covered until the potatoes and rice are tender.",
+      "Finally add the fish, cook for 3 – 4 minutes or until the fish is cooked through. Turn off the heat and serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "C",
+        "notes": "diced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "diced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Aji Amarillo Paste",
+        "unit": "C",
+        "notes": "yellow chili pepper",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": null,
+        "notes": "peeled, seeded, and chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves Paste",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Fish Stock",
+        "unit": "qt",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Potatoes",
+        "unit": null,
+        "notes": "peeled and cut in thick slices",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice",
+        "unit": "C",
+        "notes": "uncooked",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn",
+        "unit": null,
+        "notes": "cut in thick slices",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Bell Pepper",
+        "unit": null,
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Peas",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Fillet",
+        "unit": "lb",
+        "notes": "cut in 1 inch cubes",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "666fd9aeb7fdb0d6d2536f95fa2e30b4ea2c1cd731f84d4d14ecd3041f820993",
+    "lineage_hash": "9bc0af8ee4b8c4ba9a58b912985aee7117a8cb33a5a2228921a70d65851cddca"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://perudelights.com/aguadito-de-pescado-a-dreamy-and-aromatic-soup/",
+    "fetchedAt": "2026-09-25T22:03:17.788Z"
+  },
+  "rawSource": "https://perudelights.com/aguadito-de-pescado-a-dreamy-and-aromatic-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

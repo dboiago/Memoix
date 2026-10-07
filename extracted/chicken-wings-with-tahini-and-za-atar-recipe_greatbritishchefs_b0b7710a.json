@@ -1,0 +1,184 @@
+{
+  "recipe": {
+    "name": "Chicken Wings with Tahini and Za'atar",
+    "time": "55 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the red pepper paste, sunflower oil, lemon juice, garlic and pul biber to make the marinade. Place the wings in a non-reactive dish and add the marinade, mixing well to make sure they’re well coated. Cover and refrigerate overnight, or for at least 3 hours",
+      "To make the za’atar, first toast the sesame seeds in a dry frying pan over a medium heat until golden, keeping a careful eye on them to make sure they don’t burn, and stirring regularly. Allow them to cool, then mix with all the other ingredients. Store in an airtight container away from bright light. The za’atar will stay fresh for a few weeks",
+      "To make the tahini sauce, mix the crushed garlic in a bowl with the tahini. Slowly whisk in the lemon juice and loosen with a splash of cold water and some salt. Finally, whisk in the olive oil. It should be nice and sharp, and well-seasoned",
+      "Prepare a barbecue for indirect cooking over medium heat, with the coals arranged in the centre of the barbecue and space around the edge. To cook the wings indoors, preheat the oven to 200°C/gas mark 6. Bake the wings in the oven on a roasting tray for about 45 minutes, or until crispy and cooked through",
+      "Once the barbecue is ready, arrange the marinated wings in a circle around the coals, but not directly over them. Cook the wings for about 30 minutes, turning them every so often, until cooked through and caramelised. You can move the wings further into the centre of the barbecue as the coals burn down",
+      "Serve the wings drizzled with the tahini sauce and sprinkled with the za’atar"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Turkish Hot Pepper Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sunflower Oil",
+        "unit": "ml",
+        "notes": "or veg or groundnut oil",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juice only",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "crushed or finely grated",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pul Biber Chilli Flakes",
+        "unit": "Tbsp",
+        "notes": "heaped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Wings",
+        "unit": null,
+        "notes": "separated into drums and flats, if you like",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sumac",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Flakes",
+        "unit": "Tbsp",
+        "notes": "dried",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "Tbsp",
+        "notes": "dried",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oregano",
+        "unit": "Tbsp",
+        "notes": "dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ras El Hanout",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rose Petals",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "crushed or finely grated",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tahini",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemons for Juice",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a5257581fa9fd300093665dc0fa2d6b6a174762bedcc79f68273e290a204becf",
+    "lineage_hash": "ccdbd19b8ae5f15d7d35a0dcc82ab310964a2aeaec3fe34e20b670a03fa73d71"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chicken-wings-tahini-zaatar-recipe",
+    "fetchedAt": "2026-08-02T18:32:44.680Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chicken-wings-tahini-zaatar-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

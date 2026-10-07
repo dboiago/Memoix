@@ -1,0 +1,161 @@
+{
+  "recipe": {
+    "name": "Apple Tarte Tatin",
+    "time": "2 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the ice cream, warm the cream and milk in a saucepan, then add the cassia and leave to infuse for 2 hours prior to using",
+      "Bring the milk, cream and cassia to scalding point, whisk the egg yolks and sugar until pale and thick and then pour on the milk whilst whisking",
+      "Return to the pan and stir on a low heat until the mix has thickened",
+      "Strain into a bowl set over ice and stir to cool quickly. Taste the mix and if necessary return the infused cassia bark to the bowl to infuse further",
+      "Once completely, chilled churn in an ice cream machine. Transfer to a container and freeze",
+      "To make the sauce, make a caramel with the sugar by melting it in a pan and then heating it until it turns a dark golden colour, being careful not to burn the sugar",
+      "Carefully add the apple juice to the pan watching out for the caramel spitting",
+      "Bring to the boil and once the caramel has all re-melted, add the butter and cream. Keep the sauce on a high heat whisking constantly. Remove once the sauce has thickened slightly",
+      "To make the Tatin, line the bottom of a flared, heavy based sauté pan with the 100g of butter",
+      "Top with the 100g of caster sugar as well as the cassia",
+      "Arrange the apples on top of the sugar. Place the pan on a low heat and cook until the sugar and butter have turned into a rich golden caramel, cool completely",
+      "Roll out the puff pastry to 4mm thick and cut out a circle slightly bigger than the pan. Carefully place over the apples and tuck in the pastry all-round the edges",
+      "Bake until the pastry has started to colour, then turn the oven down to 190˚C/Gas mark 5 to finish cooking",
+      "The Tatin should take between 25-35 minutes. Remove from the oven and allow to cool slightly",
+      "To plate, turn out the Tatin and then serve with the sauce and ice cream separately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cassia Sticks",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apples",
+        "unit": null,
+        "notes": "peeled and cut into 3",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Puff Pastry",
+        "unit": "g",
+        "notes": null,
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cassia",
+        "unit": "g",
+        "notes": "crushed",
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "65",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3e5758903519cf56a29f280cf62ef7971ef246fe4fb74f83925060b0ae34f744",
+    "lineage_hash": "84e17c0ddbf99663083d548563923886f6e559133c0412f09fc6f38bafbaf22c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/apple-tarte-tatin-recipe",
+    "fetchedAt": "2026-08-03T16:15:58.317Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/apple-tarte-tatin-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,215 @@
+{
+  "recipe": {
+    "name": "Beetroot-Cured Cotswold Trout Carpaccio",
+    "time": "2 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by fermenting the radishes, which will need at least a week. Place the radishes in a 3-litre Kilner jar (or 2 smaller jars) with the cardamom pods, star anise and coriander seeds. Stir the salt into the water and pour into the jar until full. Seal, then store for at least a week in a dark, dry place (remember to ‘burp’ the jar by opening the lid every few days to allow built-up gas to escape). Transfer to the fridge to halt the fermentation process once you’re happy with the flavour",
+      "The trout will also require preparing 2 days in advance, plus an extra 8 hours if you are smoking the fish. It will happily sit in the freezer until ready to serve, so you can prepare it even further in advance if desired",
+      "Combine the salt, sugar, dill and black pepper and divide the mixture in half. Add the grated beetroot into one half of the curing mix",
+      "Check the trout for pin bones and remove any you find. Trim away any excess fat, then score the skin 3 times",
+      "Spread the half of the curing mixture that doesn’t contain beetroot across a tray large enough to hold the trout. Place the trout on top, flesh-side up, then cover it with the beetroot curing mix. Make sure the entire fish is covered, patting the curing mixture all over, then transfer to the fridge and leave uncovered for 24 hours",
+      "The next day, wash all the cure off the trout, dry the fish with a tea towel and then return to the fridge for a further 24 hours to dry out",
+      "If you don’t have the equipment needed to cold-smoke fish, then skip this step (it will still be delicious simply cured). However, if you do, place the trout in the chamber and cold-smoke with oak chips for 8 hours. Wrap in greaseproof paper then leave in the fridge overnight to allow the flavours to mellow",
+      "Carefully remove the skin from the trout with a long sharp knife, removing as much of the brown fat as you can, then cut the fish in half lengthways. Place the 2 halves together, one on top of each other, with the skinned side facing inwards so the beetroot-stained flesh faces outwards. Roll the fish in cling film as tightly as you can to create a neat, compact cylinder, then tie the ends and place in the freezer for 24 hours to set solid. Remember, this can all be done in advance, as the trout is best sliced when still frozen (or semi-frozen)",
+      "On the day you plan to serve the dish, preheat an oven to 180°C/gas mark 4 for the beetroot",
+      "Wash the beetroot well, then dry, season with salt and drizzle with rapeseed oil. Wrap in foil then bake for around 90 minutes, until cooked throughout. Leave to cool",
+      "Peel the cooked beetroot, then finely dice the flesh. Dress with the Cabernet Sauvignon vinegar and rapeseed oil, then season with salt and pepper to taste",
+      "You now have all the elements ready to assemble the dish. Remove the trout from the freezer and finely slice with a meat slicer or a very sharp knife (if using a knife, it’s best to allow the fish to thaw for 10-15 minutes beforehand). Lay slices of the fish in a circle on each plate",
+      "Take 1 fermented radish per plate and slice into rounds, then arrange these on top of the fish. Spoon or pipe dots of sour cream around the plate, then scatter over the diced dressed beetroot. Finish with the chopped chives, chopped shallot and sorrel leaves and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rainbow Trout Fillet",
+        "unit": null,
+        "notes": "or 1 side of trout, weighing approx. 1.2-1.5kg",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Muscovado Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dill",
+        "unit": "bunch",
+        "notes": "chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooked Beetroot",
+        "unit": "g",
+        "notes": "coarsely grated",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Radishes",
+        "unit": "bunches",
+        "notes": "trimmed of leaves and washed",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom Pods",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beetroots",
+        "unit": "large",
+        "notes": "ideally ruby beetroots",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cabernet Sauvignon Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "g",
+        "notes": "plus extra for drizzling",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": "bunch",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sour Cream",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Vein Sorrel Leaves",
+        "unit": null,
+        "notes": "or other micro herbs and leaves, to garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "645373e8f85c9906f7bd55215d469eb259982a34d15a5331ccde24b8b28f85e2",
+    "lineage_hash": "19df4ab076950e8afaf26a0725055868c11fadb69551af65ad19d3f3e22b663d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beetroot-trout-carpaccio-recipe",
+    "fetchedAt": "2026-08-03T04:30:55.718Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beetroot-trout-carpaccio-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

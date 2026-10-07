@@ -1,0 +1,202 @@
+{
+  "recipe": {
+    "name": "Aloo Kulcha",
+    "time": "2 hr 30 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "259",
+      "carbohydrateContent": "48",
+      "fatContent": "4",
+      "proteinContent": "7"
+    },
+    "directions": [
+      "In a bowl whisk together flour, sugar, salt, baking powder and baking soda.",
+      "Make a well in the center and add milk, oil and yogurt to it.",
+      "Start adding water little by little, the dough will start coming together.",
+      "Keep adding water and bringing the dough together with your hands. You will need approximately 3/4 to 1 cup water to knead this.",
+      "If the dough is sticking, apply some oil on your hands and knead to form a totally smooth dough.",
+      "Wet a clean kitchen cloth and squeeze out all the water from the cloth. Cover the dough with this damp cloth and let it rest for 2 hours at a warm place. You can let it sit for 4-6 hours if you have time. I put the bowl inside by oven with the oven light on.",
+      "While the the dough is resting, prepare the filling. Boil the potatoes, mash them and set aside. To a small pan, add coriander and cumin seeds. Dry roast till you start getting a nice aroma, this will take approximately 2 minutes.",
+      "Remove from heat and grind the roasted seeds to a fine powder.",
+      "Take the mashed potatoes and to it add the roasted coriander and cumin powder that we just prepared. Also add chopped cilantro, amchur (dry mango powder), green chili, garam masala powder and salt. Mix till everything is well combined, the filling for the aloo kulcha is now ready. Taste the filling at this point and adjust to taste. [Tip: if you want you can add onion and ginger to the filling as well]",
+      "After the dough has rested, it would have risen a bit [sorry forgot to take picture of the risen dough!]. Punch to release the air and divide the dough into 8-10 balls of equal size. Cover the dough balls with a damp cloth and let them rest for 15-20 minutes.",
+      "Take one of the dough balls and roll it in form of a circle using a rolling pin.",
+      "Place around 2 tablespoons of the potato filling in the center. Do not overfill.",
+      "Bring all the edges of the rolled dough together to seal it.",
+      "Press with your fingers to flatten the dough ball.",
+      "Roll the dough again to a circle. I just used my hand here to flatten the dough but you can of course use a rolling pin. Do not roll it super thin. Wet your fingers and apply some water on one side of the kulcha.",
+      "Place the kulcha on a heated tawa on medium heat (skillet), with the water side facing down. This way the side with water applied to it will stick to the tawa and won’t fall off when we flip the tawa.",
+      "Cook the kulcha for 2 minutes or till you start seeing some bubbles on top. At this point, flip the tawa upside down as shown in the picture. The kulcha won’t come off since it’s stuck to the tawa. Cook till this side gets golden brown in color.",
+      "Now carefully remove the kulcha from the tawa and put it over direct heat for few seconds. This step is optional.",
+      "Remove from heat, apply ghee or butter on top and serve aloo kulcha immediately with some [chole](https://www.cookwithmanali.com/punjabi-chole-chickpeas-curry/) or [rajma](https://www.cookwithmanali.com/rajma-masala/) on the side!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All Purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Wheat Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Yogurt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1.5",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": "to knead the dough [around ¾ cup]",
+        "amount": "0",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": null,
+        "notes": "medium",
+        "amount": "3-4",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2-3",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Amchur Powder",
+        "unit": "tsp",
+        "notes": "dry mango powder",
+        "amount": "⅓",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chili",
+        "unit": null,
+        "notes": "finely chopped [or to taste]",
+        "amount": "2",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1.5",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "Filling",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8aacbcf6fa319da72e6db346ee554ebcf5c3995fc998637065e788e588892853",
+    "lineage_hash": "71d6e434ff889d0b63ddfd0cd88a06461bcc2d5092d11b8f19184478a689eb5c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/aloo-kulcha/",
+    "fetchedAt": "2026-08-01T17:39:58.188Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/aloo-kulcha/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

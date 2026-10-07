@@ -1,0 +1,186 @@
+{
+  "recipe": {
+    "name": "Aloo paratha",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "385",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Add _atta_, salt, sugar, and oil to a mixing bowl. Mix to distribute the oil evenly among the other ingredients.",
+      "Add the water. Use hot water for soft _porotas_.",
+      "Knead the dough for about 5 minutes. It may seem tacky at the outset, but keep going. The dough should be soft and pliable so that it can hold a generous amount of filling.",
+      "Once the kneading is done, cover and rest the dough for about 30 minutes.",
+      "Meanwhile, halve or quarter your potatoes (depending on their size) and steam them till they are tender. This should take about 20 minutes. Steaming ensures that the potatoes do not overcook or absorb any excess moisture from sitting in a pot of boiling water. The drier the filling, the easier it is to stuff the _porota_ without any leakage.",
+      "Peel the potatoes and mash them while they are still hot to allow all the steam to escape. This will further ensure that the filling remains dry.",
+      "Finely chop the onions, ginger, garlic, and green chillies. Tear or roughly chop the curry or coriander leaves, whichever you are using.",
+      "Heat 7 g vegetable oil in a skillet. Add the onions and fry them for about 4 to 5 minutes till they turn brown.",
+      "Add the ginger and green chillies, and fry for another minute or so before adding the garlic and curry leaves/_kasuri methi_/coriander leaves. Do not cook the garlic too much; turn off the heat 30 seconds after adding it to the pan.",
+      "Transfer this mixture from the pan on to the mashed potatoes. Also add the salt, _chaat masala_, _bhaja masala_, and _jowan_.",
+      "Give everything a good mix until the filling is uniform.",
+      "Divide the filling into four equal parts (each should weigh about 75 g). Give the dough a quick knead and divide it into four equal portions too (about 70 g each). Form each portion of the filling and dough into a neat ball and keep at the ready.",
+      "Using your hands, flatten a ball of dough until it has stretched to a diameter of 8 cm. Place a ball of the filling in the centre.",
+      "Bring the sides of the dough towards one another. The idea is to completely enclose the filling with the dough. Pinch the gathered sides to seal the package.",
+      "Coat the dough with some flour and place it on the workstation in front of you. Press down gently to flatten the dough and distribute the filling evenly within it.",
+      "Using a rolling pin, start rolling in two short, gentle strokes. Rotate 90 degrees between each set of strokes. Keep doing this until the _porota_ is about 18 cm in diameter. Be sure to roll at the edges and not at the centre. This will ensure that the _porota_ is of a uniform thickness throughout.",
+      "In a skillet set on medium heat, add 1 tbsp of oil. Once hot, lay the _porota_ flat on it. Wait for a minute and apply 1 tsp of oil to the top. Flip the _porota_.",
+      "Keep flipping every minute until the _porota_ is an even, golden colour on both sides.",
+      "Remove from the skillet and serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Atta",
+        "unit": "g",
+        "notes": "whole-wheat flour",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": "g",
+        "notes": "boiled and peeled",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": "minced",
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "g",
+        "notes": "minced",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kasuri Methi/curry Leaves/coriander Leaves",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chaat Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bhaja Moshla",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jowan",
+        "unit": "tsp",
+        "notes": "carom seeds",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil for Cooking/frying",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6ce89b406c5ea93a735e19cfd25430c42a02c73e1dd910abf0d14117db578564",
+    "lineage_hash": "3e550eb67000735bc32520cd6ba18dc80c29802a9fcb16c79a6bf4b068f08594"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.bongeats.com/recipe/aloo-paratha",
+    "fetchedAt": "2026-08-01T16:33:32.502Z"
+  },
+  "rawSource": "https://www.bongeats.com/recipe/aloo-paratha",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

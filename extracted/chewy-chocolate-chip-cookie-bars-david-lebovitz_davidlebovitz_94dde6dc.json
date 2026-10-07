@@ -1,0 +1,145 @@
+{
+  "recipe": {
+    "name": "Chewy Chocolate Chip Cookie Bars",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat oven to 350Fº (180ºC).",
+      "Lightly butter a 9 x 13-inch (23 x 33cm) rectangular pan and dust the inside with flour, tapping out any excess.",
+      "In a small bowl, mix the flour, baking soda, cinnamon and salt.",
+      "In the bowl of a stand mixer fitted with the paddle attachment, or by hand, beat the butter and sugar on high-speed until light and fluffy, about 3 minutes. Beat in the egg, vanilla, and milk until smooth. At this point, the mixture may look curdled and you can take a hand whisk to it and give it a few energetic stirs to get it to come back together. (It may still look a bit separated after, but not to worry.)",
+      "Stir in the flour mixture, then stir in the cranberries or sour cherries, coconut, oats, and chocolate chips just until combined. The batter will be thick, like cookie dough.",
+      "Spread the batter in the baking pan and use your hands to pat it down so it’s even – dampening your hands with a little bit of water will help keep the dough from sticking to your hands.",
+      "Bake the bars until they feel like they are almost cooked in the middle, but not fully done, about 20 to 25 minutes. (See note, below.) If they get dark on top before the time is up, drape a sheet of aluminum foil over the top. Let cool completely in the pan. When cool, cut into 3-inch (8cm) bars or squares"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Flour",
+        "unit": "C",
+        "notes": "160g",
+        "amount": "1⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": "4 ounces, 115g, at room temperature",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Packed Dark Brown Sugar",
+        "unit": "C",
+        "notes": "200g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": "at room temperature",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole",
+        "unit": "Tbsp",
+        "notes": "alt: lowfat milk",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cranberries",
+        "unit": "C",
+        "notes": "alt: sour cherries, 90g, dried",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsweetened Coconut",
+        "unit": "C",
+        "notes": "90g, shredded",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rolled Oats",
+        "unit": "C",
+        "notes": "60g",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk Chocolate Chips",
+        "unit": "C",
+        "notes": "alt: coarsely chopped milk chocolate, 255g, preferably with minimum 30% cocoa solids",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9fc56dd3e8d4eeca5158dc095e74c0ce147f30f55990cbab63ac73e7f19638a3",
+    "lineage_hash": "b7742c74b2506f49a0c5f8eee734bd5947101f1e3be476e8a389410917df7ac0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/chewy-chocolate-chip-cookie-bars-recipe/",
+    "fetchedAt": "2026-08-02T22:25:59.305Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/chewy-chocolate-chip-cookie-bars-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

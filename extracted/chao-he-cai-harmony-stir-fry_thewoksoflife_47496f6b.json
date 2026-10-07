@@ -1,0 +1,207 @@
+{
+  "recipe": {
+    "name": "Chao He Cai (Harmony Stir-fry)",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "297",
+      "carbohydrateContent": "28",
+      "fatContent": "18",
+      "proteinContent": "7"
+    },
+    "directions": [
+      "Cook the sweet potato noodles according to the package instructions. I cooked my noodles in boiling water for 7 minutes. Lift the noodles out of the water (you will need this water again if using soybean sprouts), and transfer them to a medium bowl. Add the dark soy sauce, sesame oil, and water. Mix and set aside.",
+      "If you are using soybean sprouts like I did, bring the cooked noodle water back up to a boil, and blanch the soybean sprouts for 1 minute. Drain and set aside. (Skip this step if you are using mung bean sprouts, as they cook much faster.)",
+      "In a bowl, beat the eggs along with the Shaoxing wine and salt.",
+      "Preheat your wok over medium-high heat until it starts to smoke lightly. Add 2 tablespoons (half) of the oil to coat the bottom of the wok, and reduce the heat to medium low. Add the eggs and cook until they’re lightly scrambled but still a little runny. Remove the eggs from the wok and set aside.",
+      "Add the remaining oil to the wok over medium heat, and cook the ginger and carrot for about 1 minute. Then add half of the minced garlic along with the bean sprouts. Turn up the heat to medium-high and stir to mix everything well.",
+      "Reduce the heat to low while you add the oyster sauce, light soy sauce, sugar, black vinegar, and Sichuan peppercorn powder (or white pepper). Increase the heat to high and stir-fry until the ingredients are evenly mixed in.",
+      "Add the chives, cooked noodles, and cooked eggs, and stir-fry until the ingredients are evenly incorporated. At this point, if the contents of the wok look dry, add a couple tablespoons of water to loosen the noodles and to prevent them from sticking.",
+      "Add the rest of the minced garlic and salt to taste. Stir-fry until the chives are wilted. The dish should have a nice saucy sheen, without any standing sauce. Serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sweet Potato Noodles",
+        "unit": "oz",
+        "notes": "dried",
+        "amount": "3",
+        "section": "noodles",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "noodles",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "noodles",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "noodles",
+        "isOptional": false
+      },
+      {
+        "name": "Bean Sprouts",
+        "unit": "oz",
+        "notes": "mung bean or soybean sprouts",
+        "amount": "6",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "3",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": "any neutral oil",
+        "amount": "4",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "C",
+        "notes": "julienned",
+        "amount": "1",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced; divided",
+        "amount": "4",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Black Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Sichuan Peppercorn Powder",
+        "unit": "tsp",
+        "notes": "or white pepper",
+        "amount": "¼",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Chives",
+        "unit": "oz",
+        "notes": "cut into 2-inch/5cm pieces",
+        "amount": "4",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": "optional; if needed",
+        "amount": "2",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Salt (to Taste)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "rest of the dish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3112b4094d92185693b7ae668ceaca203ed1d805d0d646e21cba9da46cef27d3",
+    "lineage_hash": "0b413b1b3b7769cbc53100e69450e5712287f8fbd31c0249ba4f3b25beeba992"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/chao-he-cai-harmony-stir-fry/",
+    "fetchedAt": "2026-08-02T09:58:39.449Z"
+  },
+  "rawSource": "https://thewoksoflife.com/chao-he-cai-harmony-stir-fry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

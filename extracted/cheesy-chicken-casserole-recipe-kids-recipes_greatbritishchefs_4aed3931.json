@@ -1,0 +1,164 @@
+{
+  "recipe": {
+    "name": "Cheesy Chicken Casserole",
+    "time": "1 hr 15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Bring a pot of lightly salted water to the boil. Drop in the pasta and boil for 8-9 minutes until just cooked. Strain and set aside",
+      "Place a large pan over a medium-high heat and add 20ml of oil. Once hot, fry the chicken until golden and cooked through, approximately 4-6 minutes. Set aside in a large bowl to cool",
+      "In the same pan, fry the mushrooms in the remaining 20ml of oil, until they have released all moisture. Season with salt and pepper and add to the bowl with the chicken",
+      "Break down the broccoli into small florets and steam or boil until tender for 2-3 minutes",
+      "Add the broccoli to a bowl with the chicken and mushrooms",
+      "Stir in the dry herbs, stock, milk, crème fraîche, salt and pepper",
+      "Add the pasta and mix well. Pour into a casserole dish and set aside while you make the cheesy crumb",
+      "Spread the breadcrumbs out on an oven tray. Bake in the oven for 8-10 minutes until lightly golden and crispy",
+      "Remove from the oven, allow to cool and then mix in the grated Parmesan",
+      "Sprinkle the breadcrumbs on top of the chicken casserole and cook in the oven for 20 minutes until piping hot. Divide onto plates and serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Breasts",
+        "unit": null,
+        "notes": "skinless, large, diced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fusilli Pasta",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Button Mushrooms",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Broccoli",
+        "unit": "head",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "pinch",
+        "notes": "dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Marjoram",
+        "unit": "pinch",
+        "notes": "dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oregano",
+        "unit": "pinch",
+        "notes": "dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Half Fat Crème Fraîche",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Breadcrumbs",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinches",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "pinches",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a29e4acdf072fd6832c86058d048ae05c782748efc8d18dd287bf225a3d43749",
+    "lineage_hash": "5e70d56a98d7f0fdd90f3d97462468b1e85707e8ce87643f5f0e8033b8136841"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chicken-casserole-recipe",
+    "fetchedAt": "2026-08-03T18:35:20.048Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chicken-casserole-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,82 @@
+{
+  "recipe": {
+    "name": "Baby Back Ribs with Guava Barbecue Sauce",
+    "time": "3 to 4 hours",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Make the rub: Place the sugar, salt, pepper, mustard, and five spice powder in a bowl and mix with your fingers, breaking up any lumps in the sugar or mustard powder. Set aside.",
+      "Place the rice wine in a mister or spray bottle and set aside.",
+      "Place the ribs on a baking sheet. Remove the membranes. Sprinkle the ribs on both sides with rub, rubbing it into the meat. Cover the ribs and store in the refrigerator while you set up your grill.",
+      "Set up the grill for indirect grilling and heat to medium-low. Brush and oil the grill grate.",
+      "Arrange the ribs, bone side down, in the center of the grate over the drip pan away from the heat. If working on a charcoal grill and using wood chips, toss half on each mound of coals. Cover the grill and cook for 1 hour.",
+      "Spray the ribs with rice wine. Recover the grill and continue cooking until the ribs until well browned and cooked through, yet tender enough to pull apart with your fingers, to 3 hours more, 3 to 4 hours in all. Spray the ribs once or twice more and if using a charcoal grill, replenish the coals as needed. When ribs are cooked, the meat will have shrunk back from the ends of the bones by about 1/2-inch.",
+      "The last few minutes, brush the ribs on both sides with some of the guava barbecue sauce and move them directly over the fire. Grill until the ribs are browned and bubbling, 2 minutes per side.",
+      "Transfer the ribs to a large platter or cutting board, and cut the racks in half, widthwise (or into individual ribs). Serve at once with the remaining guava sauce on the side."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Salt",
+        "unit": "Tbsp",
+        "notes": "kosher or sea",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Dry Mustard",
+        "unit": "Tbsp",
+        "notes": "or substitute Colman’s",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Five-spice Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "89e057ec8a70a29d103ad94b2b37da87381ef5ef9ac47fcc968c01d9b81c7bce",
+    "lineage_hash": "8bdf62763cacc0aa6113cf2115d121efbc3450c2f98b34e9fb3bc75016676ed5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/baby-back-ribs-with-guava-barbecue-sauce/",
+    "fetchedAt": "2026-08-03T05:56:27.082Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/baby-back-ribs-with-guava-barbecue-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

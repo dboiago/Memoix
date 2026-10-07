@@ -1,0 +1,192 @@
+{
+  "recipe": {
+    "name": "Chamomile Ice Cream with Lemon Meringue",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by making the chamomile ice cream. Pour the cream into a pan and, over a low heat, gently bring it up to 80°C. When it reaches this temperature, stir in the honey until melted through",
+      "Remove the pan from the heat and add the chamomile. Leave to infuse for 5 minutes, then strain the flavoured cream through a sieve into a clean pan. Meanwhile, soak the gelatine leaf in cold water to soften",
+      "Meanwhile, whisk the egg yolks and sugar together in a large bowl until pale and frothy, then pour about a third of the infused cream over the yolks, whisking continuously. Once combined, pour the egg and cream mixture back into the pan with the remaining cream and place back over a gentle heat",
+      "Bring up to 85°C and stir in the soaked gelatine, squeezing out any excess water first, until fully dissolved. Pour the mixture out into a deep baking tray and place in the freezer. Leave to freeze for at least 3–4 hours until set",
+      "Meanwhile, make the crumble. Preheat the oven to 170°C/gas mark 3½",
+      "Add all the ingredients to a large mixing bowl and bring together gently to form a sandy crumble, taking care not to overwork the mixture. Spread the crumbs out across a large baking tray and bake for 10 minutes, or until just crisp and lightly golden",
+      "Set the crumble aside to cool completely then store in an airtight container until ready to serve",
+      "Once the ice cream has set, scoop out of the tray, cut into chunks and place in a food processor. Blend until completely smooth, then transfer to a suitable container and return to the freezer. The ice cream could be served now as a soft set, or frozen for longer to firm up (remove from the freezer 10 minutes before serving to soften)",
+      "Make the meringue just before serving. Place the 250g of sugar and the lemon juice in a small pan and bring up to 121°C over a gentle heat. Mix the remaining teaspoon of sugar with the lemon zest and set aside",
+      "As the syrup comes up to temperature, place the egg whites in a spotlessly clean bowl and whisk (either with an electric whisk or in a stand mixer) until just foaming",
+      "Once the syrup reaches the required temperature pour it slowly into the bowl of egg whites, dribbling it around the outside of the bowl while whisking continuously. Once all the syrup been added, continue to whisk until the meringue is glossy and stiff and the bowl feels cool to the touch",
+      "At this point, quickly stir through the lemon zest and sugar mixture and transfer the meringue to a piping bag fitted with a large plain nozzle",
+      "Pipe the meringue mixture in a swirl to create a round disc on each serving plate. Lightly scorch the surface of each disc with a blowtorch until golden brown",
+      "Mix together the matcha, ground ginger and a little grating of lemon zest in a small bowl. Scatter the reserved almond crumble over the meringue, followed by some of the matcha mixture. Finish with a quenelle of the chamomile ice cream and serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chamomile",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "00 Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "softened",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "190",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": "plus 1 tsp extra",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zest finely grated, plus extra to serve",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Matcha",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Ginger",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5c9bd40700d82d8003148f14ce493f3fa3ba98b694d403611b0c6cf85dbcbe06",
+    "lineage_hash": "1bb548cda051ac95cdea76f830875ab0c36dd9c4011ebf3d361c74099c54f829"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/chamomile-ice-cream-recipe-lemon-meringue",
+    "fetchedAt": "2026-08-02T02:51:25.538Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/chamomile-ice-cream-recipe-lemon-meringue",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

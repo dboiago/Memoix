@@ -1,0 +1,123 @@
+{
+  "recipe": {
+    "name": "Cherry Gazpacho",
+    "time": "4 hr 25 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "ES",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "290",
+      "carbohydrateContent": "19.08",
+      "fatContent": "23.21",
+      "proteinContent": "4.65"
+    },
+    "directions": [
+      "Scald the tomatoes to remove the skin. Cut a small cross at the bottom of each tomato and place in boiling water for 30 seconds, and then place in a large bowl of ice water. The skin should peel off easily.",
+      "In a large mixing bowl, place the peeled tomatoes, cherries, green pepper, cucumber, onion, and garlic. Add the sherry vinegar and olive oil, as well as a generous pinch of salt, and toss together. Leave to stand at room temperature for at least an hour.",
+      "Using a blender, puree the mixture until smooth an even. Depending on the size of your blender, this might need to be done in batches. Cover and refrigerate for at least three hours, or leave in the fridge overnight.",
+      "Serve chilled, garnished with the basil leaves and chopped pistachios, as well as a drizzle of extra virgin olive oil."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Kilo Ripe Plum Tomatoes",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Sweet Cherries Pitted",
+        "unit": null,
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Pepper Stemmed and Chopped",
+        "unit": "small",
+        "notes": "seeds removed.",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber Peeled and Chopped",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion Roughly Chopped",
+        "unit": "small",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove Finely Sliced",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sherry Vinegar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basil Leaves",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pistachios Chopped",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "46ab0923a3f242653114142dcc3861b54d25043d86a2ce7a72d352e1eb5596c2",
+    "lineage_hash": "04c2eef7f7769f28207704daba44afdd05a48090337012d947a399fa4ae7ef4f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://spanishsabores.com/cherry-gazpacho-recipe/",
+    "fetchedAt": "2026-08-02T06:24:18.621Z"
+  },
+  "rawSource": "https://spanishsabores.com/cherry-gazpacho-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,157 @@
+{
+  "recipe": {
+    "name": "Burrata with Pickled Plums and Scorched Chillies",
+    "time": "30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat an oven to 200°C/180°C fan/gas mark 6",
+      "Put the Cabernet Sauvignon vinegar and sugar into a pan and warm through, stirring, until the sugar has completely dissolved",
+      "Cut the plums in half and cut each half into 4 slices. Place the sliced plums into the vinegar and, if possible, transfer to a sous vide bag and vacuum-seal at maximum compression. If not, just set aside in the liquor for 2 hours to pickle",
+      "Carefully peel the onions and cut each onion into 8 wedges. Place them all into a bowl, toss them gently in 1 tablespoon of olive oil, season with salt and pepper and place them onto a baking tray",
+      "Roast the onions hard until they have caught some good colour and character – a good 15-20 minutes. Drizzle with a little more oil if they start to look dry. Once well coloured, remove from the oven and set aside to cool",
+      "Cut 8 of the chillies in half and scoop out the seeds. Brush them with olive oil, season with salt and pepper and place into the same oven as the onions and cook until slightly scorched on the edges and just tender (around 10 minutes). Remove from the oven and set aside, then turn the oven down to 180°C/160°C fan/gas mark 4",
+      "Spread the pine nuts onto a small baking tray and roast for 5 to 10 minutes, stirring occasionally, until golden brown. Keep an eye on them – they burn easily",
+      "Place the rocket into a blender with the Parmesan and pine nuts. Add the olive oil and briefly blend to a loose and coarse pesto-style consistency",
+      "Finely chop the remaining chilli and add to the pesto. Transfer to a small bowl, check the seasoning and set aside",
+      "Dress the remaining rocket leaves with half of the new season’s olive oil, a teaspoon of the plum pickling liquor and a small pinch of salt",
+      "Cut the burrata in half, season with rock salt and pepper and set two halves onto the centre of each plate. Surround with the roasted red onion and drizzle with the rocket pesto. Garnish with the scorched chillies and the remaining rocket leaves and finish with a drizzle of the remaining olive oil and a grating of orange zest"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plums",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cabernet Sauvignon Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onions",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chillies",
+        "unit": null,
+        "notes": "mild and large",
+        "amount": "9",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rocket",
+        "unit": "g",
+        "notes": "trimmed of any excess stalk, plus around 20 extra leaves to garnish",
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan",
+        "unit": "Tbsp",
+        "notes": "finely grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pine Nuts",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": "plus extra for roasting",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Burrata",
+        "unit": null,
+        "notes": "weighing 100g each, at room temperature",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": "ideally new season's olive oil",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": "zested",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rock Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d44790d40478b52b9042f9c1d727daeab80e6d238e5978dcd4070343f5406ba7",
+    "lineage_hash": "e9fb62aeecf339b188e26cfaf4c1156d2c87fda3fd7a954a79cb3a4757f4e632"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/burrata-pickled-plum-chilli-recipe",
+    "fetchedAt": "2026-08-03T03:35:42.003Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/burrata-pickled-plum-chilli-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

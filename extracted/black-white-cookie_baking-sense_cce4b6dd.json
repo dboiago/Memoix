@@ -1,0 +1,174 @@
+{
+  "recipe": {
+    "name": "Black & White Cookie",
+    "time": "50 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "326",
+      "carbohydrateContent": "59",
+      "fatContent": "10",
+      "proteinContent": "2"
+    },
+    "directions": [
+      "Add the wet ingredients.",
+      "Add the flour mixture. Scrape the sides of the bowl and the paddle to make sure there are no lumps of butter.",
+      "The dough will be quite soft.",
+      "Portion out 12 cookies.",
+      "Use your hand to flatten the dough.",
+      "The unbaked cookies will look like small hockey pucks.",
+      "Bake the cookies until golden brown around the edges.",
+      "Cool on a wire rack before icing.",
+      "Mix the water, vanilla and corn syrup into the powdered sugar.",
+      "Stir until smooth.",
+      "The icing should be thin enough to settle smoothly.",
+      "Combine half the vanilla icing with cocoa to make the chocolate icing.",
+      "Line up all the ingredients and get ready to ice the cookies.",
+      "Then ice the other half with the chocolate frosting.",
+      "Allow the frosting to set before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All Purpose Flour",
+        "unit": "oz",
+        "notes": "1 ½ cups, see note",
+        "amount": "7½",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "¾ cup",
+        "amount": "6",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "room temperature",
+        "amount": "3",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Shortening",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "oz",
+        "notes": "3 tablespoons",
+        "amount": "1½",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Confectioner Sugar",
+        "unit": "oz",
+        "notes": "1 ½ cups",
+        "amount": "12",
+        "section": "Icing",
+        "isOptional": false
+      },
+      {
+        "name": "Light Corn Syrup",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Icing",
+        "isOptional": false
+      },
+      {
+        "name": "Hot Water",
+        "unit": "oz",
+        "notes": "divided",
+        "amount": "2½",
+        "section": "Icing",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Icing",
+        "isOptional": false
+      },
+      {
+        "name": "Dutch Process Cocoa Powder",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "1",
+        "section": "Icing",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4c6f3056bb6df71436b4ddba4fc84736f6e63872d3a3ef7de29e50525efdcf28",
+    "lineage_hash": "78755d27c29fea8e226c65ddb13da375b7b3c7320fd1e7ea096850eaa6396bc9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2022/09/30/black-white-cookies/",
+    "fetchedAt": "2026-08-02T02:18:54.372Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2022/09/30/black-white-cookies/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

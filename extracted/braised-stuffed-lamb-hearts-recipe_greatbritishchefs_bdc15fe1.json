@@ -1,0 +1,178 @@
+{
+  "recipe": {
+    "name": "Braised Stuffed Lamb Hearts",
+    "time": "2 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place a frying pan on a medium heat, add a splash of olive oil and add the onion and garlic. Gently stir for about 10 minutes until soft, then remove from the heat and leave to cool completely. Once cool, place in a bowl with the sausage meat, herbs and breadcrumbs and mix together well. Season with salt and pepper and mix again. Stuff the mix into the cavities of the lamb hearts and set asdide",
+      "Depending on the size of the hearts, wrap each one in 2–3 rashers of bacon and secure with some butcher's string",
+      "To prepare the braise, place a small casserole or oven-proof saucepan on the hob over a medium heat. Add the chopped onion, carrot and celery and stir until the vegetables begin to soften and caramelise. Wipe clean the frying pan used for frying the onions with some kitchen paper and place on the hob over a medium heat",
+      "Add the hearts to the frying pan and carefully brown all over. Once they are evenly coloured, place them in the casserole dish on top of the vegetables, along with the bouquet garni. Deglaze the frying pan with a splash of red wine and pour over the hearts, along with the rest of the red wine. Bring to boil, cover with a lid and the place the casserole into the oven. Leave to braise for 2 hours",
+      "Meanwhile, place a clean saucepan on the hob over a high heat, add the balsamic vinegar and reduce until syrupy. Remove from the heat and leave to one side",
+      "When the hearts are tender, remove from the casserole and keep warm. Pass the braising liquor through a sieve into the saucepan with the Balsamic reduction, pressing the vegetables down with a ladle or spoon to extract maximum flavour",
+      "There might be some excess oil floating on top – try to skim as much of that away as possible using a spoon or by dabbing with kitchen paper. Place the saucepan back over a high heat and reduce by half, stirring often, until the sauce coats the back of a wooden spoon",
+      "To serve, slice the hearts evenly and place them on your chosen bed of vegetables. Drizzle the sauce over the top and add some gremolata if desired"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Lamb Hearts",
+        "unit": null,
+        "notes": "trimmed of excess fat, tubes and gristle removed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "small",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sausage Meat",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Thyme",
+        "unit": "sprigs",
+        "notes": "leaves picked and chopped",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "bunch",
+        "notes": "small, leaves only, finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Breadcrumbs",
+        "unit": "g",
+        "notes": "stale",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rashers of Smoked Streaky Bacon",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "ml",
+        "notes": "spicy Shiraz is good",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Stick",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bouquet Garni",
+        "unit": null,
+        "notes": "thyme, parsley and bay",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Balsamic Vinegar",
+        "unit": "Tbsp",
+        "notes": "to finish the sauce, good quality",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "025d11eb9d94ed6c3db6a7304593c2377466ccb80c96db099ad42ce907345cf2",
+    "lineage_hash": "f00943e096e3d4b4935e169a8e16af4736f68c582d72b9683ecefb0781474c0f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/bacon-stuffed-braised-lamb-heart-recipe",
+    "fetchedAt": "2026-08-03T23:33:47.149Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/bacon-stuffed-braised-lamb-heart-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

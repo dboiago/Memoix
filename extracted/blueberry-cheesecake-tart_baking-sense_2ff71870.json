@@ -1,0 +1,183 @@
+{
+  "recipe": {
+    "name": "Blueberry Cheesecake Tart",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "429",
+      "carbohydrateContent": "52",
+      "fatContent": "26",
+      "proteinContent": "5"
+    },
+    "directions": [
+      "Start with a cornmeal crust! This cornmeal crust is a variation of my  basic short dough recipe.",
+      "If you don’t have cornmeal available or don’t like cornmeal you can use the basic short dough in it’s place.",
+      "Cornmeal dough is very tender. It’s easiest to work with the dough while it’s cold.",
+      "Make sure the cream cheese and butter for the filling are both at room temperature before mixing so you don’t get lumps of cream cheese in the batter.",
+      "The filling can be poured into the blind-baked crust while it’s still warm and then returned to the oven to bake.",
+      "Both the dough and the batter for the filling can be made ahead.",
+      "For the topping you can just pile on the blueberries for a casual look or you can arrange them in pretty circles to make it fancier.",
+      "Use melted apricot preserves as a glaze for the fruit. The jam tastes great and keeps the berries in place when you cut the tart."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": null,
+        "amount": "5",
+        "section": "Cornmeal Tart Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": null,
+        "amount": "3",
+        "section": "Cornmeal Tart Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": "Cornmeal Tart Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Cornmeal Tart Crust",
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "oz",
+        "notes": "¾ cup",
+        "amount": "3¾",
+        "section": "Cornmeal Tart Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Stone Ground Cornmeal",
+        "unit": "oz",
+        "notes": "¾ cup",
+        "amount": "3¾",
+        "section": "Cornmeal Tart Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Cornmeal Tart Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "½ cup, room temperature",
+        "amount": "4",
+        "section": "Cheesecake Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "¾ cup",
+        "amount": "6",
+        "section": "Cheesecake Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Cheesecake Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Zest",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Cheesecake Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Cheesecake Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Cheesecake Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Cream Cheese",
+        "unit": "oz",
+        "notes": "room temperature",
+        "amount": "8",
+        "section": "Cheesecake Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": "Cheesecake Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Blueberries",
+        "unit": "oz",
+        "notes": "1 pint",
+        "amount": "10",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Apricot Preserves",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "10",
+        "section": "Assembly",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "660cae5aaa90735b83aa37c79559babf6d169a0f65f1c6573d701040e8ca4a3b",
+    "lineage_hash": "0eafe2f98b3f8a2116a289f1351835416a582795f92e1442f7c866d5171d07da"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2015/07/30/blueberry-cheesecake-tart/",
+    "fetchedAt": "2026-08-02T08:26:07.521Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2015/07/30/blueberry-cheesecake-tart/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Carrot Tequila Sour",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all the ingredients to a shaker with ice. Shake and double strain into the glass. Garnish.\nSour Carrot JuiceAdd 3/4 oz. of fresh carrot juice and 1/2 oz. of fresh lime juice to a shaker and shake until combined.\nRoasted Carrot PuréeChop 1 medium carrot and toss with 1/2 teaspoon of paprika, then bake or airfry until roasted and soft. Add the roasted carrot to a blender or food processor with a splash of mead (or a dessert wine like moscato or Sauternes) and a generous pinch of sugar. Blend to combine."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "ab2cc9f69349811593be6cc2ae5278fdec1002977c57a8cdd014996d9b9ff4e0",
+    "lineage_hash": "1d0a60d540fcbd469137b0725c21b16b877a34291f47f7787f90617f22471f72"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/carrot-tequila-sour/",
+    "fetchedAt": "2026-08-04T00:57:10.969Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/carrot-tequila-sour/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

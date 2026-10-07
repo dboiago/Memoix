@@ -1,0 +1,119 @@
+{
+  "recipe": {
+    "name": "Battenberg Cake",
+    "time": "1 hr 20 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 180°C/gas mark 4. Line a 20cm square tin with baking paper",
+      "Cream together the butter, sugar and vanilla essence until pale and fluffy",
+      "Add the eggs a little at a time until fully incorporated",
+      "Gently fold through the flour and ground almonds, then split the mixture between 2 bowls",
+      "Add the enough red food colouring to one half of the mix to create a gentle pink colour",
+      "Pour both mixtures into the baking tin – the pink mix on one side and the plain on the other – and bake for 20–25 minutes until a metal skewer inserted into the middle of the cake comes out clean",
+      "Leave to cool completely on a wire rack before cutting into 4 long fingers, roughly 3cm high and 4cm wide. Pay close attention to making sure all of the pieces are exactly the same size by lining them up next to each other – use a sharp serrated knife to help you do this",
+      "Gently warm the apricot jam, stirring until smooth, then use a small palette knife to smear onto the edges of the cake slices",
+      "Build the slices of cake like a chequerboard, pushing down to stick them together",
+      "Roll the marzipan out on a work surface to a thickness of 3-4mm and place the cake in the middle",
+      "Trim the marzipan so that there is just enough around the cake to cover it with a small overlap, then fold it up over the sides of the cake and press down to seal up the central 'seam'",
+      "Fold the edges of the marzipan over, trimming away any excess",
+      "Leave to set up in the fridge for an hour or so before slicing and serving"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Free-range Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Self-raising Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Essence",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Food Colouring",
+        "unit": "tsp",
+        "notes": "paste",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apricot Jam",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Marzipan",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2ba04fae35efa1dfb7a13b42465d0fa86271a9a217625cd4827a3b61b1d50a69",
+    "lineage_hash": "65c124e59b45a0db6193826a1d8ca8aa4842a9f4cd6ba3353c59e501c732d6ce"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/battenberg-cake-recipe",
+    "fetchedAt": "2026-08-03T12:22:16.565Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/battenberg-cake-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

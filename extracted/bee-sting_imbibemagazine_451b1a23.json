@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Bee Sting",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Gently muddle the fresh jalapeño wheel, add remaining ingredients and shake with ice. Strain into a chilled glass and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "b96604c91a29c68fc8e18e2e6125276cc85ec9c5dd57a026d32496cc31af14e3",
+    "lineage_hash": "a6db5a45994ebe454d9db4b0b1eecb6aa1d2d700531a4a196f5a2a0341d5b7cd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bee-sting-recipe/",
+    "fetchedAt": "2026-08-04T00:50:10.397Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bee-sting-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

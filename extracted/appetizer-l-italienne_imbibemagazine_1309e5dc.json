@@ -1,0 +1,38 @@
+{
+  "recipe": {
+    "name": "Appetizer à l'Italienne",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [
+      "Lemon Twist",
+      "Orange Twist"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Stir all of the ingredients with ice, then strain into a chilled glass. Express the twists over the finished cocktail, and use as a garnish.",
+      "Tip Schmidt didn’t specify a garnish for the drink in his 1892 book, but Yarm says a lemon twist “would smooth out the fernet’s aggression, and an orange twist to sweeten things would be nice, too."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "0161217b65fcd8d674687735a5a8ffacef2203e7ba428feee10bcb5688695b88",
+    "lineage_hash": "8ea1dc2a0b470017112618ff1dbddaf756c2b302cf48447e6be484703afa846a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/anatomy-of-a-drink-appetizer-a-litalienne/",
+    "fetchedAt": "2026-08-03T23:08:17.294Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/anatomy-of-a-drink-appetizer-a-litalienne/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

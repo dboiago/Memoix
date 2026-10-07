@@ -1,0 +1,138 @@
+{
+  "recipe": {
+    "name": "Butternut Squash and Marmite Focaccia with Sage and Parmesan Crunch",
+    "time": "2 hr 45 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the sourdough starter and 350g lukewarm water in a large bowl, stirring until dissolved",
+      "Add flour, salt and Marmite. Mix until a shaggy dough forms",
+      "Knead for 8–10 minutes until the dough becomes smooth and elastic, adding the olive oil as you knead",
+      "Cover the dough with a damp cloth or plastic wrap and let it rise at room temp for 8–10 hours, or until doubled in size&nbsp;",
+      "Toss the butternut squash with olive oil, smoked paprika, salt and pepper",
+      "Spread the squash on a baking tray and roast for 15–20 minutes until slightly tender but not fully cooked. Set aside to cool",
+      "For the crunchy topping, heat the olive oil in a small pan over medium heat. Add the sage leaves and fry until crisp, about 1–2 minutes. Remove the leaves from the oil and drain them on paper towels",
+      "Mix the crispy sage leaves with grated Parmesan",
+      "Generously oil a 9 × 13-inch (23 × 33 cm) baking pan. Stretch the risen dough to fit the pan evenly",
+      "Cover and let the dough rise for another 1 hour until puffy",
+      "Lay the roasted butternut squash cubes over the dough",
+      "Sprinkle the sage and Parmesan crunch on top",
+      "Use your fingers to press dimples into the dough, pushing the toppings slightly into the dough",
+      "Bake the focaccia for 30–35 minutes, or until the edges are golden and the top is slightly crisp",
+      "Let the focaccia cool in the pan for 10 minutes before transferring it to a wire rack",
+      "Slice into pieces and serve warm or at room temperature"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ripe Sourdough Starter",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strong Bread Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Marmite",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butternut Squash",
+        "unit": "g",
+        "notes": "peeled and cubed",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sage Leaves",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "548285e3b261585a0b09b50796b04edd625c82bcb33a87031d25f1a2474809d5",
+    "lineage_hash": "f1d3aa10976e57972ab771c10c58eee736b2e274f5b0a72bfbd978a8906cc667"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/butternut-squash-marmite-focaccia-recipe",
+    "fetchedAt": "2026-08-02T06:21:01.536Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/butternut-squash-marmite-focaccia-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

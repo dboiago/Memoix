@@ -1,0 +1,140 @@
+{
+  "recipe": {
+    "name": "Air Fryer Chinese Chicken Wings",
+    "time": "24 hr 29 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "260",
+      "carbohydrateContent": "10.3",
+      "fatContent": "8.5",
+      "proteinContent": "33.6"
+    },
+    "directions": [
+      "Add the chicken wings, peanut oil, Shaoxing wine, soy sauce, ground ginger, sugar, salt, garlic powder, and white pepper powder into a large bowl or a large ziplock bag. Mix everything well and massage the chicken (or the bag if using) until the seasonings are evenly coated. Marinate in the fridge overnight (highly recommended), or for a minimum of 2 hours at room temperature.",
+      "Right before cooking, preheat the air fryer to 350°F (176°C).",
+      "Drain the chicken thoroughly and discard the marinating liquid. Pat the chicken dry with paper towels. Add the cornstarch and all-purpose flour to a small bowl and stir to mix. Add to the bowl with chicken. Mix to coat the chicken well. It should form a dry-ish coating on the chicken with some dry flour on the surface.",
+      "Place the chicken wings in the air fryer basket in a single layer, skin side down (*Footnote 1). (Cook in batches if they don't fit.) Spray with oil so there’s no dry flour left.",
+      "Air fry the chicken wings for 12 to 15 minutes (Footnote 2), or until the chicken turns golden crispy. Flip once in between."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Wings",
+        "unit": "lb",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "or vegetable oil",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": "or dry sherry",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "or soy sauce",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Ginger",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil Spray",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c4e5f4d0ecad25521d170e52e34f598ee84c0ca48877a1b2affcaf3cfc5a759b",
+    "lineage_hash": "346f13fbe0a348ea209106fd21810d6ddb31dbe5f02e42d25de2d6aea28518e6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/air-fryer-chinese-chicken-wings/",
+    "fetchedAt": "2026-08-02T05:05:18.922Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/air-fryer-chinese-chicken-wings/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

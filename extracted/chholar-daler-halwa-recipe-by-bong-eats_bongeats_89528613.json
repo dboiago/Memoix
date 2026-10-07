@@ -1,0 +1,140 @@
+{
+  "recipe": {
+    "name": "Chholar Daler Halwa",
+    "time": "2 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "15",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "337",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Wash and soak the chholar dal in water for 2 hours until swollen. Strain the water.",
+      "Add the strained dal to a saucepan with 350 g water. Boil until the dal is cooked and the water has all been absorbed.",
+      "Once cool, grind to a fine powder.",
+      "To extract coconut milk, grate about 700 g of coconut and grind it to. paste with 700 g water. Bundle it in a cotton cloth and squeeze to extract all the milk. We need 1 litre of coconut milk.",
+      "Chop cashew and raisins to bite-sized pieces.",
+      "Heat the kadai. Add 60 g ghee.",
+      "Add the ground dal and roast it on low heat, stirring continuously, for 30–40 mins, until brown and nutty. Set aside.",
+      "Add another 85 g ghee to the pan. Temper it with cardamom and bay leaf.",
+      "Add the coconut milk, sugar, salt, and chopped raisins and cashewnuts.",
+      "Once the coconut milk comes to a boil, add the roasted dal.",
+      "Cook for another 30 mins until the ghee releases and the mixture comes off the sides of the pan.",
+      "Grease a shallow tray with ghee and transfer the mixture to it. Spread evenly.",
+      "While it is still hot, cut in diamond-shaped borfi. Decorate with chopped pistachios. Serve at room temperature, by itself, or with chal'er rooti."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chholar Dal",
+        "unit": "g",
+        "notes": "split Bengal gram, soaked 2 hours",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "g",
+        "notes": null,
+        "amount": "145",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "L",
+        "notes": "thick, first-press",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cashewnuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raisins",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pistachios",
+        "unit": "g",
+        "notes": "for decoration",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7844f7226602ffb261c24d6b80f57ec6f2a2a71e2f306ec2d5d345d9bb634b89",
+    "lineage_hash": "53813e58831ebe84252b8c24de8176168081fa8d707c6c874da4bfc341217629"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.bongeats.com/recipe/chholar-daler-halwa",
+    "fetchedAt": "2026-08-01T18:14:50.665Z"
+  },
+  "rawSource": "https://www.bongeats.com/recipe/chholar-daler-halwa",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

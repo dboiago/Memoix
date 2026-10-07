@@ -1,0 +1,330 @@
+{
+  "recipe": {
+    "name": "Assiette of Strawberries",
+    "time": "2 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, prepare the balsamic vinegar ice cream. Add the milk to a pan and bring to the boil. Meanwhile, whisk the eggs, sugar and Trimoline together in a bowl. Gradually whisk the milk into the egg mix, then pour back into the pan and cook to 85°C, stirring continuously. Pass the mix through a fine sieve",
+      "Add the cream and vinegar and leave in the fridge overnight, to allow the flavours to develop. Churn in an ice cream maker, then store in the freezer",
+      "To make the strawberry powder for the meringue, thinly slice the strawberries and place in a dehydrator until completely dry. Grind into a powder and keep in an airtight container until required",
+      "To make the meringue base, whisk the egg whites and caster sugar until stiff peaks form, then slowly add the remaining sifted cornflour and icing sugar until well combined",
+      "Spread the mixture onto a non-stick baking mat to create a 2mm thick layer, then dust with the strawberry powder. Cook in the oven for 90 minutes until crisp, then leave to cool before snapping into rough pieces",
+      "To make the strawberry jelly, add all of the ingredients - except the gelatine - to a large metal bowl and cover tightly with cling film. Place over a pan of simmering water for 1 1/2 hours, topping up the pan as necessary. Pass the contents of the bowl through a fine strainer lined with muslin into a measuring jug to extract the clear juice. Mix in the sheets of softened gelatine leaves, using the ratio of 8 sheets:1 litre of juice. Set in a flat tray in the fridge",
+      "To make the strawberry purée for the marshmallows, cook the strawberries and sugar together over a medium heat until the sugar dissolves and the strawberries soften. Blend thoroughly to make a smooth purée and pass through a fine strainer. Set aside and allow to cool",
+      "To make the marshmallows, add the sugar, water and glucose to the pan and bring to the boil. Continue to boil until the mixture reaches 130°C",
+      "In a mixer with a whisk attachment, beat the egg whites until soft peaks form and pour the hot sugar mixture into the eggs in a very slow, steady stream. Continue to whisk until the mix has tripled in volume and cooled to a lukewarm temperature",
+      "Sift the cornflour into a bowl with the sugar and dust a tray evenly with the mix. Add the gelatine and 180g of the strawberry purée to the marshmallow mix, stir though until combined and pour into the tray. Dust the top with some more cornflour and sugar and freeze for 24 hours. Cut and keep in the freezer",
+      "To make the strawberry macaroons, whisk the egg whites. Once soft peaks form, add the caster sugar in 3 additions. Continue to whisk until stiff peaks form and add the food colouring. Combine the almonds and icing sugar in a separate bowl, then fold into the meringue",
+      "Using a 1cm plain nozzle, pipe 2.5cm circles of the macaroon mix onto non-stick paper and leave to sit at room temperature for 30 minutes to form a thin skin. Then, transfer to the oven and bake for 15 minutes until crisp. Remove, allow to cool and store in an airtight container",
+      "To make the strawberry conserve, bring the blended strawberries to the boil and add the sugar and pectin. Continue to boil for 5 minutes, then stir in the lemon juice. Pour into a tray and leave to cool in the fridge",
+      "Use half of the conserve for filling the macaroons and blitz the remainder. Store in a squeezy bottle",
+      "Remove the marshmallow pieces from the freezer 15 minutes before serving",
+      "To assemble the dish, sandwich the conserve between the macaroon halves and place 2 on each plate. Garnish with a selection of the meringue, marshmallow and jelly, finishing with halved fresh strawberries and a generous scoop of the ice cream"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Balsamic Vinegar",
+        "unit": "g",
+        "notes": "8 years old",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "480",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Trimoline",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strawberries",
+        "unit": null,
+        "notes": "firm",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": "g",
+        "notes": null,
+        "amount": "32",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "22",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour",
+        "unit": "g",
+        "notes": null,
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strawberries",
+        "unit": "g",
+        "notes": "very ripe",
+        "amount": "1000",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zest and juice",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stock Syrup",
+        "unit": "ml",
+        "notes": "50/50",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaves",
+        "unit": null,
+        "notes": "softened",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strawberries",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "625",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "190",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glucose",
+        "unit": "g",
+        "notes": null,
+        "amount": "85",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": "g",
+        "notes": null,
+        "amount": "107",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaves",
+        "unit": "g",
+        "notes": "softened",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Food Colouring",
+        "unit": null,
+        "notes": "powder",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": "sieved",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Almonds",
+        "unit": "g",
+        "notes": "sieved",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strawberries",
+        "unit": "g",
+        "notes": "blended to a smooth purée",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pectin",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strawberries",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e34603501a30db20659026125388a27bd6e097b71b7a8398f297646ff82da79a",
+    "lineage_hash": "8256ee75f9fae9e74507385d2247207c303ac976395ab0369d94f2037c424b1d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/assiette-strawberries-recipe",
+    "fetchedAt": "2026-08-03T16:20:17.604Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/assiette-strawberries-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

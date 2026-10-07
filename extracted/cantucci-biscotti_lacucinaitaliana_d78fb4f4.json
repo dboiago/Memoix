@@ -1,0 +1,93 @@
+{
+  "recipe": {
+    "name": "Cantucci Biscotti",
+    "time": "40 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Beat butter and sugar in a large bowl to blend. Add in eggs 1 at a time and a pinch of salt. Slowly add the flour and the baking powder until blended. Stir in almonds and vanilla seeds. Let rest for around half an hour.",
+      "Line a baking sheet with parchment paper; using floured hands or a pastry bag with a wide mouth, form the dough into 2 - 14\" long and 2 1/2\" wide logs, spacing 1\"-2\" apart. Cool in the refrigerator for 30 minutes.&nbsp;",
+      "Bake for 12-15 minutes until golden. Remove from the oven and let cool. Lower the oven temperature to 300 °F. &nbsp;Cut biscotti on the diagonal into 1/2\" slices. Stand slices upright on baking sheet and bake for around 10 minutes until the sides are golden.&nbsp;"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Large Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅞",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Almonds",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "room temperature",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2d61a9aef3982b975470cd1cdf3823833b597bce503bbf49d1a3125ee2e2aeec",
+    "lineage_hash": "90fd075766c33c71368651213f9d5264fbe985aa32cf6cd73bde1dbf1887b1cc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/cantucci-biscotti",
+    "fetchedAt": "2026-08-01T20:10:34.263Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/cantucci-biscotti",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,119 @@
+{
+  "recipe": {
+    "name": "Caramel Corn",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat oil with 3 kernels in a large, heavy-duty saucepan over moderate heat until they pop. Add the remaining kernels, turn off heat and cover, and let sit 30 seconds. Turn the heat back on and cook with the lid slightly agar (to let steam escape), shaking pan frequently, until kernels stop popping, about 3 minutes. Remove from heat and transfer the popcorn into a very large bowl. You'll get 8 to 10 cups of popcorn. Add the peanuts.",
+      "Spray a baking sheet with non-stick spray or oil it lightly. Preheat the oven to 200ºF (93ºC).",
+      "Wipe the saucepan clean and melt the butter in it. Add the brown sugar, corn syrup, and molasses and bring to a boil. Boil for 5 minutes, stirring once or twice, only as necessary to incorporate the ingredients. Avoid overstirring.",
+      "Remove from heat, and using a wooden spoon or a heatproof spatula, stir in the salt, vanilla and baking soda, then pour over the popcorn and stir to coat the popcorn evenly. (Be careful because the outside of the bowl can get hot.) Spread the coated popcorn and peanuts on the baking sheet and bake for 1 hour, stirring every 15 minutes.",
+      "Let cool completely, then break into bits."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Popcorn Kernels",
+        "unit": "C",
+        "notes": "65g",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted Peanuts",
+        "unit": "C",
+        "notes": "140g, or use any toasted nuts, such as almonds, pecans, or cashews.",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stick (1/2 Cup, 115g) Unsalted Butter",
+        "unit": null,
+        "notes": "cubed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Packed Light Brown Sugar",
+        "unit": "C",
+        "notes": "225g",
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light",
+        "unit": "C",
+        "notes": "100g, corn syrup",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Molasses",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "30e69491329da1cebe46e9ead31c0fb4a61809ca64608e85021067cde0e04ae0",
+    "lineage_hash": "23c7828fb9e93dfafbb880dec9e059b5aaf041804c74535072ae284c9a18d813"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/caramel-corn-sm-1/",
+    "fetchedAt": "2026-08-02T20:47:27.442Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/caramel-corn-sm-1/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

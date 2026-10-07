@@ -1,0 +1,82 @@
+{
+  "recipe": {
+    "name": "Beetroot Sauerkraut",
+    "time": "20 min",
+    "course": "pickles",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Grate the beetroot and thinly slice the white cabbage using a mandoline or sharp knife",
+      "Add the caraway, fennel and salt and, with clean hands, scrunch down and knead the veg thoroughly for a few minutes until a good amount of water is released",
+      "Pack into a Kilner jar leaving about 2cm at the top to allow for the mixture to puff up and fizz",
+      "Push the veg down hard so that it is totally submerged in its own juices. You may want to insert a weight to hold it down although this is not always practical when making small quantities",
+      "Close the jar or cover with clean muslin. Lacto-fermentation is anerobic so oxygen is not necessary and exposure may discolour the veg. Leave at room temperature for 3 days at an absolute minimum, or for up to three weeks. The longer you leave your pickle, the more sour and distinctive its flavour will become",
+      "Check and taste your ferment regularly, as Ana says, ‘it’s alive, so you’ve got to look after it’. You will need to open the jar to release CO2 in the first two-to-three days and keep checking that the veg is fully submerged in the brine. Don’t be alarmed if yeasts form on the surface of your pickle, you can scrape these off and all will still be well",
+      "If you find the kraut is drying out too much, add a half-teaspoon salt to 100ml water and use this to top up until the kraut is fully submerged",
+      "When ready, remove any discoloured veg from the top of the pickle and keep in the fridge where it will remain happy for several months, if you don’t gobble it up first"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beetroot",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Cabbage",
+        "unit": "g",
+        "notes": "finely sliced",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caraway Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "tsp",
+        "notes": "such as Maldon or Halen Môn",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "81aa14898412f6a37e803c33990b3538a1311163283ea567d1f64c6208b0bb7c",
+    "lineage_hash": "1ab514b763a2e83896250089620553b030f95068396ab57e44991cf061183fcd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beetroot-sauerkraut-recipe",
+    "fetchedAt": "2026-08-03T12:32:07.709Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beetroot-sauerkraut-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

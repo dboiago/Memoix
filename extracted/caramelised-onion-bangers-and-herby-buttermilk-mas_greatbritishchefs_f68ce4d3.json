@@ -1,0 +1,225 @@
+{
+  "recipe": {
+    "name": "Caramelised Onion Bangers and Herby Buttermilk Mash",
+    "time": "2 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by making the herby buttermilk mash. Boil the potatoes in plenty of salted water until tender – this should take about 15 minutes but it depends on the size of the potatoes. Once the potatoes are fork tender, drain, return to the pot and leave to steam for a couple of minutes",
+      "Pass the potatoes through a ricer. Stir through the remaining mash ingredients, then season to taste with salt and pepper",
+      "Next, make the chive oil. Blanch the chives in salted water for a minute, then remove from the water and chill in an ice bath",
+      "Remove the chives from the water, then pat them dry with a clean tea towel",
+      "Add the chives and the oil to a blender and blitz until smooth. Let the oil mix sit in the blender for around 30 minutes to fully infuse the flavour, then strain the oil through a chinois or fine mesh sieve",
+      "For the burnt butter crumbs, brown the butter in a saucepan then over a medium heat. Once the milk solids turn golden brown smell fragrant and nutty, add in the panko",
+      "Mix the panko through the butter, and fry until toasted, then season with salt and pepper to taste",
+      "Fry the Lincolnshire sausages in the vegetable oil in a large frying pan. Once they are cooked through, remove them from the pan and set aside",
+      "If you have a lot of fat, then remove any excess, then add in the sliced red onions. Cook the onions until they begin to soften, or about 10 minutes, then stir in the brown sugar",
+      "Cook down the onions for around 15 more minutes over a low heat, or as long as it takes for them to caramelise nicely",
+      "Stir in the flour, then add in the red wine and simmer until reduced by half",
+      "Add in the beef stock little by little, stirring well after each addition, then add in the chopped rosemary and season with salt and pepper",
+      "Bring to a simmer and cook until thickened and reduced by around a quarter",
+      "Take the gravy off of the heat and whisk through the cold diced butter. This is called ‘mounting with butter’ (monté au beurre) and thickens the gravy and gives it a nice glossy shine",
+      "To serve, spoon a generous portion of the mash onto the plate along with three sausages, a spoonful of caramelised onion gravy, a sprinkle of the burnt butter panko and a drizzle of chive oil. Finish with a sprinkle of parsley and cracked black pepper before serving"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Nanna Tate Potatoes",
+        "unit": "g",
+        "notes": "peeled and diced into 1 inch chunks",
+        "amount": "700",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crème Fraîche",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Chives",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Fresh Parsley",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Iced Water",
+        "unit": null,
+        "notes": null,
+        "amount": "as needed",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Panko Breadcrumbs",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lincolnshire Sausages",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onions",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Stock",
+        "unit": "ml",
+        "notes": "plus more if needed",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "sprigs",
+        "notes": "needles finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "diced",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Fresh Parsley",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6482adfb9bcbd9d253e05b760491d66af93b6ae69118f6e31500fcf4310a70d6",
+    "lineage_hash": "6df0d58b198ff8aa90a3854a254b98eaa930c454eb6b343e32c97d22a01ed45c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/caramelised-onion-bangers-herby-buttermilk-mash-recipe",
+    "fetchedAt": "2026-08-02T02:13:09.427Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/caramelised-onion-bangers-herby-buttermilk-mash-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

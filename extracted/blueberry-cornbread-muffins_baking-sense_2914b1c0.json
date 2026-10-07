@@ -1,0 +1,124 @@
+{
+  "recipe": {
+    "name": "Blueberry Cornbread Muffins",
+    "time": "30 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "273",
+      "carbohydrateContent": "42",
+      "fatContent": "10",
+      "proteinContent": "5"
+    },
+    "directions": [
+      "Preheat the oven to 375 °F. Butter and flour a 12-cup muffin tin or line with paper liners.",
+      "In a large bowl combine 5 oz&#32;Stone ground cornmeal, 7 ½ oz&#32;all purpose flour, 1 tablespoon&#32;baking powder, ½ teaspoon&#32;salt and 4 oz&#32;granulated sugar. Whisk the dry ingredients to combine. In a separate bowl whisk together 6 oz&#32;whole milk, 2 ½ oz&#32;Honey, 2&#32;large eggs and 3 ½ oz&#32;vegetable oil.",
+      "Make a well in the center of the dry ingredients and pour in the wet ingredients. Stir until the flour is barely incorporated, then fold in 12 oz&#32;blueberries. Scoop the batter into the prepared muffin tins using a 1/3 cup measure or large ice cream scoop.",
+      "Bake until the center of a muffin springs back when lightly pressed or a toothpick inserted into the center of a muffin comes out with a few moist crumbs, about 10-12 minutes.",
+      "Cool 5 minutes before taking the muffins out of the pan."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Stone Ground Cornmeal",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "oz",
+        "notes": "1 ½ cups, see note",
+        "amount": "7½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "oz",
+        "notes": "¾ cup",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "3½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blueberries",
+        "unit": "oz",
+        "notes": "2 heaping cups",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e3462aab35e2352060fd6c9b476d8d0b7291362cdc91993f42f8a955ebc88c7b",
+    "lineage_hash": "2f56374069c19bfd26546f753a0749537adfb60a313a1e17e25591a3ba93fbce"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2020/08/13/blueberry-cornbread-muffins/",
+    "fetchedAt": "2026-08-02T08:21:30.423Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2020/08/13/blueberry-cornbread-muffins/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

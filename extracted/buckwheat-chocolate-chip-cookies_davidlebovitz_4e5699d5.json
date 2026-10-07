@@ -1,0 +1,159 @@
+{
+  "recipe": {
+    "name": "Buckwheat Chocolate Chip Cookies",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "20",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a large bowl, mix together the brown sugar, granulated sugar, and melted butter. Add the egg, egg yolk, and vanilla.",
+      "In a separate bowl, whisk together the all-purpose flour, buckwheat flour, baking powder, baking soda, and kosher or sea salt. Stir the dry ingredients into the butter-sugar mixture.",
+      "Mix in the chopped chocolate (including any small bits of chocolate left on the cutting board), toasted buckwheat groats or cocoa nibs, if using, and nuts. Cover the bowl and chill overnight.",
+      "Preheat the oven to 350ºF (180ºC). Line two baking sheets with parchment paper or silicone baking mats. Use a spring-loaded cookie/ice cream scoop, or your hands, to form 1 1/2-inch (4cm) balls of dough and place them evenly spaced (about 2 1/2-inchs/6cm) apart on the baking sheet. Slightly flatten the tops and sprinkle lightly with flaky sea salt.",
+      "Bake the cookies until they just feel almost, but not quite, set in the center, and still soft, about 12 minutes, rotating the baking sheets in the oven midway through baking. Remove the cookies from the oven and tap the top of each cookie lightly with a spatula, just once, to compact them slightly. Let cool."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Packed Light Brown Sugar",
+        "unit": "C",
+        "notes": "90g",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": "65g",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted",
+        "unit": "Tbsp",
+        "notes": "alt: unsalted butter, 4 ounces, 115g, melted and cooled to room temperature",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": "at room temperature",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": "140g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole-grain Buckwheat Flour",
+        "unit": "C",
+        "notes": "35g, see headnote",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Teaspsoon Baking Powder",
+        "unit": null,
+        "notes": "preferably aluminum-free",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kosher",
+        "unit": "tsp",
+        "notes": "alt: sea salt",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Semisweet",
+        "unit": "C",
+        "notes": "alt: bittersweet chocolate, 230g, coarsely, chopped",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Buckwheat Groats",
+        "unit": "Tbsp",
+        "notes": "alt: cocoa nibs, optional",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Walnuts",
+        "unit": "C",
+        "notes": "75g, almonds, or pecans, toasted and coarsely chopped",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt",
+        "unit": null,
+        "notes": "such as fleur de sel or Maldon",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "04fd1d51ed673563cda09c884b7fa7e46fd93ab7f1ebce96a22c11a812179796",
+    "lineage_hash": "32e8f7a80bcae46d01e980884c151b936310ffbd37b50455bf863c728c0a23e9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/buckwheat-chocolate-chip-cookies-cookie-recipe-lappart-david-lebovitz/",
+    "fetchedAt": "2026-08-02T22:23:15.139Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/buckwheat-chocolate-chip-cookies-cookie-recipe-lappart-david-lebovitz/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

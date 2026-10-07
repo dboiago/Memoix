@@ -1,0 +1,70 @@
+{
+  "recipe": {
+    "name": "British Polo Gin & Tonic (Perfect Polo Serve)",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": "Highball",
+    "garnish": [
+      "4 Halves of Sliced Strawberries",
+      "1 Head of Leafy Basil"
+    ],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine ingredients and serve over ice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Part Great Taste Award-winning British Polo Gin",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parts Premium Tonic",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Halves of Sliced Strawberries",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leafy Basil",
+        "unit": "head",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ac8bba40ed8b9cbbc2498375e05428b35d64dd7e2d951e2276f96b615bda1608",
+    "lineage_hash": "afb3200a6401fa5c84de0567a37fb4d415fe7b2a71dd219d62f84e6ce2979247"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.thestaffcanteen.com/chefs-recipes/British-Polo-Gin---Tonic---Perfect-Polo-Serve",
+    "fetchedAt": "2026-08-03T14:15:38.051Z"
+  },
+  "rawSource": "https://www.thestaffcanteen.com/chefs-recipes/British-Polo-Gin---Tonic---Perfect-Polo-Serve",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

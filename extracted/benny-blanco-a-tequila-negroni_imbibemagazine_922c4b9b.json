@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Benny Blanco: A Tequila Negroni",
+    "time": "15 sec",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [
+      "Orange Twist"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all of the ingredients in a mixing glass with ice. Stir until chilled, about 15 seconds. Strain into a chilled rocks glass over a large ice cube. Garnish. To make a horse’s neck twist, you’ll need a channel knife. Grip the orange firmly with one hand and, with your other hand, press the knife into the rind at the top of the fruit. Slowly and carefully work your way down and around the fruit’s surface. Keep 1⁄4 inch of space between the peels."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "cbbf82a3244c094ec85a40c77d82398bff0a8f71c800d533448ab8beffb38474",
+    "lineage_hash": "e3ed4b5033c763848a36d0fa960aec7a7fba02357e40765f8e362417323ba6fa"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/benny-blanco-a-tequila-negroni/",
+    "fetchedAt": "2026-08-03T19:43:05.616Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/benny-blanco-a-tequila-negroni/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

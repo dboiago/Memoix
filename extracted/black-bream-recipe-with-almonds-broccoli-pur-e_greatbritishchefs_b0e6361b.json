@@ -1,0 +1,269 @@
+{
+  "recipe": {
+    "name": "Black Bream Recipe With Almonds & Broccoli Purée",
+    "time": "1 hr 10 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the broccoli purée, wash and chop down finely from the tips of the florets until you reach the stalks",
+      "In a large, flat casserole pan, bring the chicken stock, salt, pepper, cream and butter to a simmer",
+      "Add the broccoli and cover. Cook for 5-8 minutes so that the broccoli is just soft but still a vibrant green colour. Add the parsley for 30 seconds to wilt, then remove from the heat",
+      "Strain and reserve the stock. Transfer the broccoli to a blender and pour in half of the stock. Blitz continuously until very smooth and consistent in colour. You may need to add a little more stock to achieve the right consistency. Remove from the blender and store in the fridge immediately",
+      "For the brown shrimp sauce, start by making a beurre noisette. Heat the butter in a pan until it turns a nut-brown colour, then remove from the heat and set aside",
+      "Place a separate pan over a low-medium heat and add a dash of olive oil. Add the shallots and sweat until tender, then add the seasoning, the golden raisins, garlic, thyme, bay leaf, capers, vinegar and lemon juice",
+      "Bring up to a simmer and cook until the raisins are soft. Then, add the beurre noisette to the pan along with the shrimps. Keep on a low heat until ready to serve",
+      "Meanwhile, add the purple sprouting broccoli to a pan of boiling, salted water and blanch until just cooked, approximately 1 minute - take care not to overcook. Once tender, refresh in some iced water",
+      "To cook the bream, add the olive oil to a large frying pan over a medium heat. Once hot, add the butter and when it begins to foam, add the bream, skin-side down, and cook for 6-8 minutes. Then, flip the bream fillets over, season, and cook for 1 minute on the flesh side",
+      "Before serving, reheat the broccoli purée in a pan over a low heat",
+      "To serve, quenelle the purée onto plates. Squeeze a little lemon juice over the fish and place on top of the purée. Spoon some of the brown shrimp sauce over and around the dish. Arrange the broccoli spears on top and scatter a few toasted almonds and parsley around the plate. Serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Black Bream Fillets",
+        "unit": null,
+        "notes": "each weighing 130g",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Broccoli",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley Leaves",
+        "unit": "g",
+        "notes": "lightly chopped",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": null,
+        "notes": "freshly ground, four turns",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Shrimp",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Banana Shallot",
+        "unit": "g",
+        "notes": "finely diced",
+        "amount": "280",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": "small",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bulb of Garlic",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "pinch",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Raisins",
+        "unit": "g",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Capers",
+        "unit": "g",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "130",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "pinch",
+        "notes": "freshly ground",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Purple Sprouting Broccoli",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Almonds",
+        "unit": "g",
+        "notes": "toasted",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "pinch",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5de3c43e86b76b604a4d31d7814545b4cfbba0c04d0824338adf55dbcf7630a5",
+    "lineage_hash": "6d09071e54b0a75818d3a4a6b0abe09aaedeb46a6db7a5ac44401f2e92d0ba67"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/black-bream-recipe",
+    "fetchedAt": "2026-08-03T16:17:28.688Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/black-bream-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

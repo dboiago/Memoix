@@ -1,0 +1,84 @@
+{
+  "recipe": {
+    "name": "Bajigur - Coffee and Coconut Milk with Toddy Palm Fruit",
+    "time": "15 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "ID",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Coffee",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place coconut milk, coffee, palm sugar, and pandan leaves in a pot. Bring to a boil on to medium heat, stir frequently to prevent the coconut milk from curdling. Once it boils and the palm sugar has all dissolved, turn off heat.",
+      "Discard the pandan leaves, and strain into 4 serving glasses. Add some slices of toddy palm fruit to each glass. Topped with ice cubes if you prefer cold bajigur."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Coconut Milk",
+        "unit": "L",
+        "notes": "Indonesian: santan",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Coffee",
+        "unit": "tsp",
+        "notes": "Indonesian: bubuk kopi",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Palm Sugar",
+        "unit": null,
+        "notes": "Indonesian: gula Jawa",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pandan Leaves (indonesian: Daun Pandan)",
+        "unit": null,
+        "notes": "knotted",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Toddy Palm Fruit (indonesian: Kolang Kaling)",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "14d4bb89351c7562ed6b027eb88dacc906838481b78d6a327e272aa6f3d3b5ad",
+    "lineage_hash": "148481773175073c9d34d547e9fbdf4efed61610a6075dada316e65536ea4874"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/bajigur-coffee-and-coconut-milk-with-toddy-palm-fruit.html",
+    "fetchedAt": "2026-08-02T08:09:23.365Z"
+  },
+  "rawSource": "https://dailycookingquest.com/bajigur-coffee-and-coconut-milk-with-toddy-palm-fruit.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

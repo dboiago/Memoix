@@ -1,0 +1,115 @@
+{
+  "recipe": {
+    "name": "Braised Chinese Vegan Chicken",
+    "time": "40 min",
+    "course": "vegn",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "399",
+      "carbohydrateContent": "9",
+      "fatContent": "27",
+      "proteinContent": "32"
+    },
+    "directions": [
+      "Place a wok over high heat until it starts to smoke slightly. Add 3 tablespoons of oil to coat the wok. Add the sliced vegan chicken, and arrange it in a single layer. If you have a smaller wok, you can do this step in two batches, adding more oil if needed (this is also a good time to use your non-stick pan if you have one, which will require less oil). Turn the heat down to medium. Lightly brown both sides of the vegan chicken. Remove from the wok and set aside.",
+      "Add 1 tablespoon of oil to the wok along with the sugar, using low heat to slowly melt the sugar until it completely dissolves. Next, add in the ginger and white parts of the scallion and cook for a minute. Add in Shaoxing wine, light soy sauce, dark soy sauce, and the water. Bring the mixture to a boil, cover the lid, and simmer over low heat for 5-8 minutes. You don’t want too much of the liquid to cook off, so check it every so often.",
+      "Now add the pan-fried vegan chicken slices to the sauce. Gently mix together, cover, and simmer for 5 minutes. Uncover, add the green parts of the scallions, stir gently, and serve.",
+      "This dish is tasty when hot, at room temperature, or cold right out of the refrigerator! I made this recipe a couple of times to test it, and I almost ate a whole plate by myself. I hope you fall in love with it too!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": "plus 1 tablespoon, divided",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegan Chicken",
+        "unit": "g",
+        "notes": "sliced 1/4-inch thick",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rock Sugar",
+        "unit": "g",
+        "notes": "or 1 tablespoon granulated sugar",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "slices",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "chopped with the white and green parts separated",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "42c3b89a537d8aeba85453fc3a39e1f831330fa473d1e6d21901652b5b665d9d",
+    "lineage_hash": "67abda70dfb938db587d51f18bd9535836927f5d904e5cedfa01b12e068bc16e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/vegan-chicken-braised-chinese/",
+    "fetchedAt": "2026-08-01T19:59:16.386Z"
+  },
+  "rawSource": "https://thewoksoflife.com/vegan-chicken-braised-chinese/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

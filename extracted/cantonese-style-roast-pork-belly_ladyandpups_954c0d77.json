@@ -1,0 +1,104 @@
+{
+  "recipe": {
+    "name": "Cantonese-Style Roast Pork Belly",
+    "time": "4 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pulse salt, granulated sugar, lemon peels, bay leaves, black and white peppercorn in a spice-grinder or blender until coarsely ground.",
+      "Place the pork-belly in a baking-sheet then rub the salt-mixture evenly on all sides of the pork belly.",
+      "Let sit in the fridge for 2 hours. In the last 30 min, preheat the oven on 300ºF/150ºC.",
+      "Rinse off all the salt-mixture from the pork-belly and the baking-sheet, then place the belly back into the sheet skin-side down (to keep the skin layer relatively flat).",
+      "Cover tightly with foil then roast in the preheated oven for 2 to 2:15 hours. The meat should be tender that a small knife can be easily inserted, but not falling apart.",
+      "Remove the sheet from the oven and let cool for 30 min, then chill in the fridge for 1 hour (skin-side down still) until firm (for easy trimming). Everything up till now can be prepared the day ahead.",
+      "30 minutes before serving, carefully remove the pork-belly from the baking-sheet. Take a look at the cut-side and get familiar with the anatomy of the belly. The skin is a very obviously translucent and darker layer apart from the white, opaque fat-layer underneath.",
+      "Grab a big handful of wooden or metal skewers, evenly and thoroughly, make tiny punctures through the skin down the the top layer of fat. Instead of random jabbing, move systematically from left to right/top to bottom. The skin should be soft and easy to puncture without too much pressure. The more thoroughly and densely the skin is perforated, the more crispy and delicate the cracklings will be.",
+      "Trim off irregular edges so you have a 90º? brick all around. It’s not just because we’re anal, but this helps the belly brown more evenly and beautifully.",
+      "Heat a non-stick skillet over medium-high heat, then place the belly skin-side down in the center of the skillet. Cover with a piece of foil just big enough to leave steam-holes around the edges (this prevents splattering as well as warming the belly as it cooks). Once you hear sizzling sounds, turn the heat down to LOW.",
+      "If your pork-belly does not have a flat and leveled skin-surface, you can apply weight (I used a small cast-iron skillet) where it needs it for the first 10 min. We want the entire layer of skin to be thoroughly blistered without burning, which is a process that will take no less than 20 min, up to 30 min depending on the thickness of the skin.",
+      "You can check by uncovering the foil and look if the entire thickness of the skin-layer is blistered through (if not, you’ll see a translucent layer attached to the crackling).",
+      "The meat should be warmed through after the skin is properly blistered, so there’s no need to flip.",
+      "Place the belly skin-down down, then with a shark knife, cut through the meat part by zig-zaging the knife, then once you get to the skin, simply press the knife down with swift and firm pressure. Cut the belly into small cubes and serve with yellow mustard, or on rice drizzled with sweet soy sauce."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Slab Pork-belly",
+        "unit": null,
+        "notes": "can be a square or rectangle, skin-on, approx 8\" × 8\"",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Peel",
+        "unit": "slices",
+        "notes": "approx 1/2 lemon",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": "dried",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorn",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Peppercorn",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "613a79f82270fada604045ab531e7197240c5f9782b22c50852fd18955532796",
+    "lineage_hash": "45cff65accd10dc465e9e7826789349a7309f9c04ca3574d686d9ed2c8b6e495"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ladyandpups.com/2014/08/17/cantonese-style-roast-pork-belly/",
+    "fetchedAt": "2026-08-02T03:34:40.025Z"
+  },
+  "rawSource": "https://ladyandpups.com/2014/08/17/cantonese-style-roast-pork-belly/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

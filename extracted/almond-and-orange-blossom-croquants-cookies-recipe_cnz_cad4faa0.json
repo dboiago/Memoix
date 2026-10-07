@@ -1,0 +1,98 @@
+{
+  "recipe": {
+    "name": "Almond and Orange Blossom Croquants Cookies",
+    "time": "1 hr 5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 175°C (350°F) and line a baking sheet with a silicone baking mat or parchment paper.",
+      "In a large mixing bowl, combine the flours, sugar, almonds, and salt. Add in the eggs and orange blossom water, and stir in with a fork or dough whisk.",
+      "Add in enough cold water for the mixture to come together into a sticky, but not too loose, dough; I added 60 ml (1/4 cup), but the amount will depend on the particular flours you used.",
+      "Pour the dough onto the prepared baking sheet to form 2 separate \"loaves,\" roughly rectangular in shape, about 12 by 18 cm (5 by 7 inches) and 2 cm (3/4 inch) in thickness. Sprinkle with a good pinch of salt each.",
+      "Insert into the oven and bake for 30 to 40 minutes, keeping an eye on the progress, until the loaves are set and golden brown.",
+      "Let cool for 5 minutes, then transfer one loaf to a cutting board, and use a serrated bread knife to cut it into thin slices, about 8 mm or 1/3 inch, wearing an oven mitt on the hand that holds it still. It's important to slice the loaf while it's still hot; it will be too hard to slice once cool. Repeat with the other loaf.",
+      "If you find that the slices aren't quite baked through in the center, place them back, flat side up, on the baking sheet and return to the oven for another 5 to 10 minutes, until baked through.",
+      "Let cool completely before serving or wrapping up."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Grams All-purpose Flour",
+        "unit": null,
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Light Whole Wheat Flour",
+        "unit": null,
+        "notes": "in France, use farine semi-complète or T110",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Unrefined Blond Cane Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Whole Almonds",
+        "unit": null,
+        "notes": "unblanched",
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "organic",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Blossom Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2053847cae39f6f391d14abf19fb7cd35ade4ac01ae5925fe34e1be5902695c7",
+    "lineage_hash": "c9b83d00098e754ef9704ea0841d648aba40a77bc93edc41b7b32a0f719049dd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/cookies-small-cakes/almond-and-orange-blossom-croquants-cookies-recipe/",
+    "fetchedAt": "2026-09-30T18:45:35.367Z"
+  },
+  "rawSource": "https://cnz.to/recipes/cookies-small-cakes/almond-and-orange-blossom-croquants-cookies-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

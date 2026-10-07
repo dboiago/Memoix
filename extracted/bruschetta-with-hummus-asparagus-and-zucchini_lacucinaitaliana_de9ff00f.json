@@ -1,0 +1,141 @@
+{
+  "recipe": {
+    "name": "Bruschetta with Hummus, Asparagus and Zucchini",
+    "time": "30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make this particular bruschetta recipe – a term we use in Italian to refer to a hearty, large portion of traditional bruschetta – first start with the hummus: Blend the chickpeas (setting a few aside for decoration later) with the tahini, 1/2 clove of peeled garlic, the juice of 1/2 lemon, 2 tablespoons oil, ½ cup water and a pinch of salt. Blend until creamy and smooth.",
+      "Then clean the asparagus and cut them into ribbons using a potato peeler. Transfer to a bowl with ice water. Clean the chicory and cut them into strips, which you will add to the cold water with the asparagus. Separate the flowers from the zucchini and cut into strips. Drain the asparagus and the chicory. Add the zucchini and a drizzle of olive oil to the drained veggies in the bowl.",
+      "Lightly toast the bread slice in a pan. Finally, to assemble the bruschettona, spread the hummus and veggies on the surface of the toasted bread. Complete with zucchini flowers, some chopped lemon peel, slices of lemon (without the peel), a sprinkling of paprika and sesame seeds."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chickpeas",
+        "unit": "oz",
+        "notes": "boiled and drained",
+        "amount": "9",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tahini",
+        "unit": "oz",
+        "notes": "sesame cream",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole-wheat Bread",
+        "unit": "slices",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Asparagus",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Zucchini with the Flowers",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicory",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "peeled",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juice of",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Paprika",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "21b2e8f91c70c8581975ac28df442ce42abaa9e76686c94a3c4efb7b5fb91055",
+    "lineage_hash": "3ca39cde5eb6fbabe6b17119690db8284dc2c20cd418d4e4f73386e6e843b320"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/appetizers/bruschetta-hummus-asparagus-and-zucchini",
+    "fetchedAt": "2026-08-03T08:28:06.170Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/appetizers/bruschetta-hummus-asparagus-and-zucchini",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

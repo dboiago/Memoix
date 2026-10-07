@@ -1,0 +1,131 @@
+{
+  "recipe": {
+    "name": "Chile Verde con Carne y Papas",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "368",
+      "carbohydrateContent": "25",
+      "fatContent": "11",
+      "proteinContent": "41"
+    },
+    "directions": [
+      "In a blender, combine green chiles, jalapeño, 1/4 teaspoon salt, 2 chopped garlic cloves (or a pinch of garlic powder), tomatoes, and tomato sauce. Pulse until chunky. Set aside.",
+      "In a large skillet, heat oil. Add beef, potatoes, and 1 teaspoon salt. Cover and cook for 10 minutes.",
+      "Add 3 minced garlic cloves and cook 2 more minutes. Stir in flour and cook 2 minutes more.",
+      "Pour in the chile-tomato blend and water. Bring to a boil. Simmer uncovered for 5–10 minutes until potatoes are tender and sauce has thickened."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Canola Oil",
+        "unit": "Tbsp",
+        "notes": "alt: shortening",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stew Beef",
+        "unit": "lb",
+        "notes": "diced",
+        "amount": "2¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Russet Potatoes",
+        "unit": "medium",
+        "notes": "diced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "divided, plus more to taste",
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "3 minced, 2 chopped or use a pinch of garlic powder, divided",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Green Chile Peppers",
+        "unit": null,
+        "notes": "(Anaheim or Hatch), peeled and stems removed",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Jalapeño Pepper",
+        "unit": null,
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Canned Whole Tomatoes",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Sauce",
+        "unit": "Tbsp",
+        "notes": "optional",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e7b20e86224a0336734db7523f5f2a6fb12cbe091575f6c686c0766ea97bfeb6",
+    "lineage_hash": "3929200a3dda1b8f3356d7ebae41d1fc914ae104f68273c31ebf6f4e0d22245d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/chile-verde-con-carne-y-papas/",
+    "fetchedAt": "2026-08-02T09:37:56.691Z"
+  },
+  "rawSource": "https://muybuenoblog.com/chile-verde-con-carne-y-papas/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

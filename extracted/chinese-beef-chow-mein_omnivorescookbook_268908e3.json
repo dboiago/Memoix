@@ -1,0 +1,199 @@
+{
+  "recipe": {
+    "name": "Chinese Beef Chow Mein",
+    "time": "25 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "385",
+      "carbohydrateContent": "34.3",
+      "fatContent": "10.9",
+      "proteinContent": "35.9"
+    },
+    "directions": [
+      "Boil noodles according to package instructions until al dente. Rinse with tap water, drain, and set aside.",
+      "Combine all the “Marinade” ingredients in a medium-sized bowl. Mix well and let marinate for 10 minutes.",
+      "Whisk all the sauce ingredients together in a bowl. Chop aromatics and vegetables.",
+      "Heat 2 tablespoons of oil in a large nonstick skillet over medium-high heat until hot. Spread the beef in the pan. Cook for 30 to 45 seconds without touching, until the bottom browns. Flip to cook the other side for 30 to 45 seconds, stirring occasionally, until the beef is lightly charred but the inside is slightly pink. Transfer to a plate.",
+      "Add the remaining 2 tablespoons of oil. Add the ginger and garlic. Stir a few times to release the fragrance.",
+      "Add the carrot. Stir and cook for 1 to 2 minutes, until starting to soften.",
+      "Add the bell pepper and green onion. Stir and cook for 1 minute.",
+      "Add the noodles and toss a few times with a pair of tongs. Add back the cooked beef and bean sprouts into the pan. Pour the sauce over the ingredients. Toss to mix everything together well. The noodles are done when the sauce is absorbed, 1 minute or so. Transfer everything to serving plates and serve hot as main."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chow Mein Noodles",
+        "unit": "oz",
+        "notes": "280 g, or 8 oz / 225 g fresh Hong Kong pan fry noodles, or 6 oz / 170 g dried chow mein noodles, fresh",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flank Steak",
+        "unit": "oz",
+        "notes": "225 g, cut into 1/4” (5-mm) slices",
+        "amount": "8",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Broth",
+        "unit": "C",
+        "notes": "or water",
+        "amount": "¼",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": "or dry sherry",
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "tsp",
+        "notes": "coarsely",
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "or vegetable oil",
+        "amount": "4",
+        "section": "Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": "Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "2",
+        "section": "Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": "small",
+        "notes": "julienned",
+        "amount": "1",
+        "section": "Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Bell Pepper (and / or Red Pepper, I Used a Mix of Both)",
+        "unit": null,
+        "notes": "cut into 1/4” (5-mm) wide strips",
+        "amount": "1",
+        "section": "Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "cut to 2” (5 cm) long pieces",
+        "amount": "2",
+        "section": "Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Heaping Cup Bean Sprouts",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Stir Fry",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3be7c9bf2f5f6a558befc13889a20ca8aa5604fe47f08bb999a5c0dc450c2d58",
+    "lineage_hash": "e14b3f2a13e03b546a3881cac8d2eb32781a4181eab49487f0051542b831d7f5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/beef-chow-mein/",
+    "fetchedAt": "2026-08-02T02:53:40.868Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/beef-chow-mein/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

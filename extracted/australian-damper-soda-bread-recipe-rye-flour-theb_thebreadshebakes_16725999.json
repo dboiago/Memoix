@@ -1,0 +1,137 @@
+{
+  "recipe": {
+    "name": "Australian Damper Soda Bread (Rye Flour)",
+    "time": "1 hr",
+    "course": "breads",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "AU",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a large bowl mix the flour, bicarbonate of soda and salt with a balloon whisk.",
+      "Add the butter using your fingertips to rub the little cubs into the flour until the mixture resembles fine breadcrumbs.",
+      "Slowly add the milk and mix to form a soft, non-sticky dough.",
+      "Add the onion, garlic and celeriac mix and cheddar and carefully knead until evenly distributed.",
+      "Knead until smooth (this can be done in the bowl or on a clean, lightly floured work surface) – just one or two minutes should be enough.",
+      "Shape into a round loaf.",
+      "Brush with milk.",
+      "Lightly flour the handle of a wooden spoon and make deep indents into the dough top (press the handle almost to the bottom of the dough) to mark 8 wedges on top.",
+      "Preheat the oven to 200°C.",
+      "Shape into a round loaf.",
+      "Brush with milk.",
+      "Lightly flour the handle of a wooden spoon and make deep indents into the dough top (press the handle almost to the bottom of the dough) to mark 8 wedges on top.",
+      "Grease and dust a round cake tin.",
+      "Bake for 30 – 40 minutes until golden.",
+      "The bottom should sound hollow when tapped.",
+      "Grease and dust a fire-proof cast-iron pan.",
+      "Add the loaf and cover.",
+      "Alternatively, place in at least five layers of tin foil. Make sure you get all the air out between dough and foil.",
+      "Place in the hot coals of your campfire and cover with hot ashes and coals. The fire should have burnt down to just coals, no big flames.",
+      "Bake for about 25 minutes.",
+      "Divide into six equal pieces and roll into a 20cm long snake shapes.",
+      "Wrap the dough snakes around dry, clean sticks (bamboo canes and hazel rods work well) in a spiral. Make sure the dough is safely attached to your stick and leave enough room on one end of the stick to hold on to and not burn your hands.",
+      "Hold over the embers of the campfire, turning frequently, until evenly cooked, golden brown and crisp, for about 10 minutes."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Light Rye Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bicarbonate of Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "g",
+        "notes": "you can also use 100ml milk mixed with 100g yoghurt or 190g milk mixed with 2 tbsp of lemon juice",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive",
+        "unit": "Tbsp",
+        "notes": "alt: rapeseed oil",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": null,
+        "notes": "extra flour for dusting",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "small",
+        "notes": "grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celeriac",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mature Cheddar",
+        "unit": "g",
+        "notes": "cut into 5mm cubes or grated",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "04febc99de8c8be49ac27a0761ae71c8d2aabb41444718a89f3e15ed0712a109",
+    "lineage_hash": "4d7574497e488a10392d7f2df7665158fc92519c0f96e4f25cdd66724dd5330f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.thebreadshebakes.com/2014/01/australian-damper-soda-bread-recipe/",
+    "fetchedAt": "2026-08-01T17:48:08.759Z"
+  },
+  "rawSource": "https://www.thebreadshebakes.com/2014/01/australian-damper-soda-bread-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,163 @@
+{
+  "recipe": {
+    "name": "Baileys Brownies",
+    "time": "2 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "32",
+    "source": "scraped",
+    "cuisine": "IE",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "277",
+      "carbohydrateContent": "27",
+      "fatContent": "16",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "Melt the butter and chocolate then stir in the white and brown sugar.",
+      "Stir in the Baileys.",
+      "Stir in the eggs.",
+      "Stir in the flour.",
+      "Beat the cream cheese and sugar.",
+      "Add the Baileys.",
+      "Mix until well combined.",
+      "Add the eggs and mix to combine.",
+      "Spread 2/3 of the brownie batter in the prepared pan.",
+      "Spread the cheesecake batter over the brownie batter.",
+      "Add the remaining brownie batter and swirl it into the cheesecake batter.",
+      "Bake until a toothpick inserted into the center comes out with a few moist crumbs."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All Purpose Flour",
+        "unit": "oz",
+        "notes": "1 cup, see note",
+        "amount": "5",
+        "section": "Brownie Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Brownie Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Semi-sweet Chocolate",
+        "unit": "oz",
+        "notes": "chopped",
+        "amount": "10",
+        "section": "Brownie Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": null,
+        "amount": "8",
+        "section": "Brownie Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Baileys",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": "Brownie Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Brownie Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "¾ cup",
+        "amount": "6",
+        "section": "Brownie Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "oz",
+        "notes": "¾ cup",
+        "amount": "6",
+        "section": "Brownie Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "4",
+        "section": "Brownie Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Cream Cheese",
+        "unit": "oz",
+        "notes": "room temperature",
+        "amount": "16",
+        "section": "Cheesecake swirl",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "¾ cup",
+        "amount": "6",
+        "section": "Cheesecake swirl",
+        "isOptional": false
+      },
+      {
+        "name": "Baileys Irish Cream",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": "Cheesecake swirl",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Cheesecake swirl",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": "Cheesecake swirl",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8bfb9ec0e0dc487bfc339042e5c2989b2829f21ac1dc4247d791ee055b1539a3",
+    "lineage_hash": "ded69f44c55e0e0c517b37b19c15b9f07aa9a00e5a78abf5d1d0076b25e31b11"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2025/03/14/baileys-irish-cream-brownies/",
+    "fetchedAt": "2026-08-02T02:49:42.149Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2025/03/14/baileys-irish-cream-brownies/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

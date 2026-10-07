@@ -1,0 +1,163 @@
+{
+  "recipe": {
+    "name": "Celeriac Croquette",
+    "time": "1 hr 45 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pour the milk into a saucepan with the onion, bay leaf and nutmeg and bring to a boil, then remove from the heat and leave to infuse for 20 minutes",
+      "Meanwhile, bring a pot of salted water to the boil and add the potato and celeriac. Boil for 15 minutes or until tender, then drain and allow to steam dry for a few minutes. Pass through a potato ricer or a sieve and reserve",
+      "Add the butter to a saucepan over a medium heat – when it's foaming, add 20g of the flour and cook out for a minute to make a roux. Strain in the infused milk a little at a time, whisking constantly to create a smooth sauce",
+      "Once all the milk is mixed into the roux, simmer the sauce gently for ten minutes, stirring regularly until it has thickened. Remove from the heat then stir in the grated cheese, mashed potato and mashed celeriac and mix together thoroughly. Check for seasoning, add some extra salt and pepper if necessary and chill in the fridge for 20 minutes until the mix is firm",
+      "Use a couple of teaspoons to shape the mixture into walnut-sized croquettes, and keep them on a floured tray – you should get about 25 croquettes out of the mixture. Flour your hands and roll the croquettes into balls, then pop them back in the fridge for 5 minutes to firm up",
+      "Set up three bowls – one with the remaining 200g of flour and ground walnuts, one with beaten eggs and one with breadcrumbs. Season the flour with salt and pepper. Take the croquettes out of the fridge, and one by one, coat in flour, then egg and then breadcrumbs",
+      "Once all the croquettes are covered in breadcrumbs, go back and add a second layer of breadcrumbs by coating in egg and breadcrumbs again. It's important to double-breadcrumb the croquettes, otherwise they might burst when you deep-fry them",
+      "Carefully bring a pan of vegetable oil or a deep-fat fryer up to 180ºC. Deep-fry the croquettes in batches in the oil until golden brown all over. Once cooked, lift them out with a slotted spoon and place onto a tray lined with kitchen towel to drain. Sprinkle with a little sea salt",
+      "Serve the croquettes on a dollop of damson ketchup, apple sauce or another condiment of your choice"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Maris Piper Potatoes",
+        "unit": "g",
+        "notes": "peeled and chopped into large dice",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celeriac",
+        "unit": "g",
+        "notes": "peeled and chopped into large dice",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": "plus extra for dusting",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg",
+        "unit": "pinch",
+        "notes": "grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetarian Parmesan-style Cheese",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshlay Farms Golden Yolker® Eggs",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Panko Breadcrumbs",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Walnuts",
+        "unit": "g",
+        "notes": "toasted and ground",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "for deep-frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "cb03b367dccd5651ea6dffdde9f5cfa1aacf2ebf4000713e036df2be66cf57f6",
+    "lineage_hash": "019efcdb5b7b48a7e44d1140d172f2327860a53d128bb2200df1309bab63acad"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/celeriac-croquette-damson-ketchup-recipe",
+    "fetchedAt": "2026-08-03T06:08:42.626Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/celeriac-croquette-damson-ketchup-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

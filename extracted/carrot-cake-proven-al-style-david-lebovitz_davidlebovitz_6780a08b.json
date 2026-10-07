@@ -1,0 +1,96 @@
+{
+  "recipe": {
+    "name": "Carrot Cake, Provençal-Style",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 325F (160C). Butter two shallow 10-inch (23cm) cake pans and line each with a circle of parchment paper. Then lightly butter the top of each circle of paper.",
+      "Beat the butter, sugar and salt until smooth.",
+      "Meanwhile, pulverize the nuts and flour in a food processor or blender until relatively fine, but not powdery. If you don’t have a machine, simply chop the nuts by hand and toss them with the flour.",
+      "Beat in the eggs one at a time. Afterwards, stir in the ground nut mixture and the carrots, mixing just until smooth.",
+      "Divide the batter into the pans, smooth it evenly, and bake for 40 minutes, until a toothpick inserted into the center comes out clean.",
+      "Cool, then release the cake from the pans and cut in wedges to serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "115g, salted or unsalted, at room temperature",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": "250g",
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "at room temperature",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Almonds",
+        "unit": "C",
+        "notes": "225g",
+        "amount": "1¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "C",
+        "notes": "90g",
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cup",
+        "unit": null,
+        "notes": "packed, (40g)  finely grated carrot",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "13988bf75f286d2269d0a46370a73a0cb0ac1c66cdac1ecaea9602b44e4fed47",
+    "lineage_hash": "6fa0da577ae17d5734073b9090722cd52b56e4cf386bfef8ea7b11743c54770c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/carrot-cake-fre/",
+    "fetchedAt": "2026-08-02T22:50:28.542Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/carrot-cake-fre/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

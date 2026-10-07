@@ -1,0 +1,40 @@
+{
+  "recipe": {
+    "name": "Black Forest Crumpets",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "First make sure to thaw the frozen fruits. Preheat the oven to 425°F (220°C).",
+      "For the crumpets, melt the butter in a small saucepan over medium heat, then remove from the heat and stir in the sugar. Transfer to a medium bowl with the crumpets and mix to coat them completely. Place the crumpets on a parchment-lined baking sheet and bake for 15 minutes, or until crisp, golden-brown, and caramelized.",
+      "Put the thawed fruits into a bowl with the sugar, kirsch, tangerine zest, and vanilla. Roughly crush the fruits with a potato masher or whisk, then mix well.",
+      "Put the chocolate into a heatproof bowl and set over a pan of gently simmering water until melted, then let cool so it doesn’t melt the cream.",
+      "Top each crumpet with a quarter of the fruit mix, followed by a large spoonful of whipped cream. Sprinkle the cream with some sugar. Spoon on the chocolate, top with a cherry (and some gold dust if you’re feeling extra), and serve.",
+      "Make ahead:Prepare the Black Forest fruits up to 2 days ahead and keep refrigerated.",
+      "Note:I like to dust these with cocoa powder to offset the sweetness."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "0d67e961a80ae165048293a9d4af01c738080563ae54ea3d2975f6b08e2f76fc",
+    "lineage_hash": "929622a7a1aca4fdcfe53f4128940380d2d3cebf215666cc76cea97a463ef97d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/black-forest-crumpets/",
+    "fetchedAt": "2026-08-03T21:48:00.887Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/black-forest-crumpets/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

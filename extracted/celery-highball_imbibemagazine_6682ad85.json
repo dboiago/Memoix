@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Celery Highball",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Celery Syrup: Combine 2 cups of sugar with 1 cup of water in a saucepan of medium heat and stir until the sugar dissolves. Stir in 2 Tbsp. of celery seeds that have been pulverized by a morter & pestle, or spice grinder. Add additional celery seed to taste. Remove from the heat and let cool."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "5d2e92b3decde559d08e84cd55a467346440218e87bad86963db70dfbc395429",
+    "lineage_hash": "ab5cf585ef146cda3a2ff1eb892af7eb8995e4c9c6a12ca558b42076fb0a3bce"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/celery-highball/",
+    "fetchedAt": "2026-08-03T19:00:11.173Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/celery-highball/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

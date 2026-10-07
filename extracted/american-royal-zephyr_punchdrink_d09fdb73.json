@@ -1,0 +1,87 @@
+{
+  "recipe": {
+    "name": "American Royal Zephyr",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [
+      "Maraschino Cherry"
+    ],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a mixing glass, combine all ingredients except champagne and stir.",
+      "Strain into a coupe glass.",
+      "Top with champagne and garnish with a cherry."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bourbon",
+        "unit": "oz",
+        "notes": "preferably Old Grand-Dad Bonded",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lillet Rosé",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Angostura Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peychaud's Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Champagne",
+        "unit": "oz",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "06bd54111bc0ae0643d156e499b3cf93c29bef0651090e9fc2ed3e1d37d5df72",
+    "lineage_hash": "a2e504f3338d46b6453fe9b588d9efe62ec4705e10b02da21994244190ff72af"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://punchdrink.com/recipes/american-royal-zephyr/",
+    "fetchedAt": "2026-08-02T22:32:56.589Z"
+  },
+  "rawSource": "https://punchdrink.com/recipes/american-royal-zephyr/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

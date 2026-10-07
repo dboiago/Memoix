@@ -1,0 +1,246 @@
+{
+  "recipe": {
+    "name": "Aubergine And Pomegranate Mutabal, Aubergine Skin Tuile",
+    "time": "1 hr 45 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pickle the red onion at least 24 hours before you want to make the dish. Toss the onions with the salt in a heatproof bowl then add the ginger and lemongrass",
+      "Bring the vinegar, water and sugar to the boil in a small saucepan, then pour over the onions and aromats. Allow it to cool, then place in the fridge to pickle for at least 24 hours",
+      "For the confit garlic, combine all the ingredients in a saucepan and cook on a very low heat for 45-60 minutes, until the garlic is soft, tender and spreadable. Cool and store in the oil in the fridge. This will make more than you need",
+      "To make the mutabal, light a charcoal barbecue. Prick the aubergines, rub them with a little rapeseed oil and blacken them on the grill until completely burnt on the outside and soft in the middle, all the way from their stalk ends to their bases, turning regularly",
+      "If you don’t have a barbecue, you can cook the aubergines directly over a gas flame, on a griddle pan or in a 220°C oven. Charcoal grills will always give the best flavour, however!",
+      "Leave to rest in a tray so you can collect their resting juices. Once cool enough to handle, peel them, reserving the peel and liquid that will have collected in the tray (this will be used to make the aubergine skin tuile)",
+      "Weigh out 400g of the aubergine flesh (you will have leftovers) and place in a blender (or Thermomix) with the remaining ingredients. Blend until completely smooth and emulsified, then taste and adjust the seasoning – it should be a nice balance between smoky, sharp and nutty, but not overly acidic. Chill lightly before serving for the best texture",
+      "For the aubergine tuile, weigh out 150g of the burnt aubergine skins and 120ml of the reserved aubergine water (top up with fresh water, if needed). Place in a blender with 10 confit garlic cloves, the tapioca starch and a pinch of salt and blend until completely smooth",
+      "Place the mixture in a pan, bring to the boil and cook for 10-15 minutes at 100°C, stirring constantly until thick, elastic and glossy (or you can cook in a Thermomix on speed 4 as described)",
+      "Spread the mixture very thinly onto non-stick baking mats or baking sheets lined with baking paper (you may need to work in batches). Dehydrate in the oven or in a dehydrator at 70°C for about 2 hours, until fully dry, flipping if needed. Break apart into shards and store at room temperature until needed (this will make more than you need but the tuiles last as very long time stored in an airtight container)",
+      "When you’re ready to serve the dish, heat a pan a third full of vegetable oil or a deep-fat fryer to 180°C. Deep-fry the tuiles until crisp and puffed up. Season immediately with salt and sumac (the fried tuiles will last up to 3 days)",
+      "To serve, spoon the mutabal onto plates, creating a well in the centre of each with the back of a spoon. Arrange some pickled onions, pomegranate seeds and some shards of aubergine tuile on top. Drizzle over some pomegranate molasses and garnish with some micro mint"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Red Onions",
+        "unit": null,
+        "notes": "large, finely sliced 2mm thick",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": "fresh, sliced",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemongrass",
+        "unit": null,
+        "notes": "small stick, lightly crushed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": "small",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Aubergines",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": null,
+        "notes": "for oiling",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "g",
+        "notes": "(about 2-3 cloves), finely grated",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tahini",
+        "unit": "g",
+        "notes": null,
+        "amount": "55",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pomegranate Molasses",
+        "unit": "g",
+        "notes": "plus extra to serve",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Salt",
+        "unit": "g",
+        "notes": "plus extra to taste",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pomegranate Seeds",
+        "unit": null,
+        "notes": "fresh, to serve",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": null,
+        "notes": "ideally micro, to serve",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tapioca Starch",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "for deep-fat frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sumac",
+        "unit": null,
+        "notes": "to season",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "add9896faa14f669c2f6057ab11b5b7b6961d222068157e0dab6a38e8b41ef3e",
+    "lineage_hash": "ecd7aa4f654cdec07c6451592453f212d8ea9000938d4a480b5806d546120166"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/aubergine-pomegranate-mutabal-aubergine-skin-tuile-recipe",
+    "fetchedAt": "2026-08-01T18:54:33.164Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/aubergine-pomegranate-mutabal-aubergine-skin-tuile-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,41 @@
+{
+  "recipe": {
+    "name": "Chicken Liver Paté",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the pâté, preheat the oven to 350°F.",
+      "In a small saucepan over medium-high heat, combine the port, shallot, rosemary, sage, marjoram, peppercorns, juniper berries, and orange zest. Bring to a simmer, then turn the heat to low and simmer gently until the liquid has reduced to about 2 tablespoons. Strain through a fine-mesh strainer or chinois into a small bowl and set aside.",
+      "In a blender, combine the chicken livers, duck fat, kosher salt, Instacure #1, whole eggs, egg yolk, and port reduction. Blend on high speed to a smooth purée, then add the cream and blend once more quickly just to combine. Do not over mix to avoid whipping in too much air. Strain the mixture through an extra-fine-mesh strainer or chinois into a standard (9-by-5-inch) loaf pan. Tightly cover with oven-safe plastic wrap and then a layer of aluminum foil, then set aside.",
+      "Create a bain-marie (water bath) by bringing a kettle of water to a boil. Set the covered loaf pan in the center of any larger oven-safe vessel, like a 9-by-13-inch baking dish or roasting pan. Pour the boiling water into the larger pan until it reaches halfway up the sides of the loaf pan.",
+      "Lower the oven temperature to 275°F and place the entire bain-marie assembly in the oven. Bake until the pâté is just set and a knife inserted into the center comes out clean, 60 to 80 minutes. Let the pâté cool completely at room temperature for 1 hour, then refrigerate until well chilled, at least 2 hours or up to 24 hours.",
+      "Once the pâté is chilled, scrape off the top browned layer with a spoon and discard. Scoop out the pâté and, using a rubber spatula or scraper, press the entire batch through a tamis or extra-fine-mesh strainer into an airtight container. Pound the container firmly on the countertop a few times to remove any air bubbles. (Alternatively, if you have a vacuum sealer, spoon the mixture into a bag and vacuum seal to remove the air.) Use immediately, or refrigerate for up to 3 days.",
+      "Spread the pâté evenly around the sides of a shallow bowl, leaving a well in the center. Pour the vinegar into the well and garnish with the lemon chiffonade and herbs. Serve with the toasted bread and pass the smoked salt at the table for sprinkling.",
+      "Reprinted with permission from Bestia: Italian Recipes Created in the Heart of L.A., copyright © 2018 by Ori Menashe, Genevieve Gergis, Lesley Suter. Published by Ten Speed Press, an imprint of Penguin Random House LLC."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "8f3173efd97856f54ebf9ed4a2d1906197683f2228cf54bcc31b3da1e0e60f73",
+    "lineage_hash": "8bb4765a202426c114d070e3f7866344c7cd20f15f19f106f5cb53213c105e11"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bestias-chicken-liver-pate-recipe/",
+    "fetchedAt": "2026-08-03T18:13:50.031Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bestias-chicken-liver-pate-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

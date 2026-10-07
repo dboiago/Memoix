@@ -1,0 +1,84 @@
+{
+  "recipe": {
+    "name": "Blue Hawaiian Cocktail",
+    "time": "2 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "HI",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Liqueur",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "231",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Select and pre-chill a HURRICANE GLASS.",
+      "Prepare garnish of pineapple wedge and Luxardo Maraschino Cherry.",
+      "BLEND ingredients with 6oz scoop of crushed ice.",
+      "Pour into glass.",
+      "Serve with straws."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Light White Rum",
+        "unit": "ml",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blue Curaçao Liqueur",
+        "unit": "ml",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream of Coconut",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pineapple Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "7.5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9d9b59b708cc95871ef5f86e4989720b93a1276ccd6fd5fcc22a1317b09df507",
+    "lineage_hash": "c7ab3edea1766bd4959439e94d847a46609085ee254fb874265acb30e4005f85"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/260/blue-hawaiian",
+    "fetchedAt": "2026-08-01T23:59:38.211Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/260/blue-hawaiian",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

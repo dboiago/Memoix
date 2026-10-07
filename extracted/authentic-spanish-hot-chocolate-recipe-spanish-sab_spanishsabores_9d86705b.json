@@ -1,0 +1,87 @@
+{
+  "recipe": {
+    "name": "Spanish Hot Chocolate",
+    "time": "15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "ES",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "675",
+      "carbohydrateContent": "55.31",
+      "fatContent": "44.17",
+      "proteinContent": "14.69"
+    },
+    "directions": [
+      "Coarsely chop the chocolate into half-squares.",
+      "Pour the milk into a medium saucepan and add the cornstarch. Whisk until the cornstarch is dissolved.",
+      "If you want a sweeter hot chocolate, add the sugar. I find that 2 teaspoons is enough to make it pleasantly sweet, but adjust to your liking. Whisk until dissolved.",
+      "Put the saucepan over medium heat until the milk starts to boil, stirring frequently. Remove it from the heat.",
+      "Add the chocolate to the saucepan and stir until completely melted. If the milk cools too soon, return it to the heat. Be careful not to keep over the heat too long, as the mixture will thin.",
+      "If you want to add a kick of spice to your hot chocolate, add the cayenne pepper and whisk to combine.",
+      "Taste for sweetness and spice and adjust if necessary.",
+      "Pour or ladle into cups straight away and serve immediately, ideally with churros."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "oz",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Sugar Optional",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cayenne Pepper Optional",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6cca53f6e0b1f1ac55b815fb1446b1abd43e8d28ecb2a53aea1501432556f521",
+    "lineage_hash": "8e1eca8e7a2d703e7ef78877695ee473f8448aeaa8b1f5e5458416c5cc01acf8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://spanishsabores.com/authentic-spanish-hot-chocolate-recipe/",
+    "fetchedAt": "2026-08-02T09:02:47.944Z"
+  },
+  "rawSource": "https://spanishsabores.com/authentic-spanish-hot-chocolate-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

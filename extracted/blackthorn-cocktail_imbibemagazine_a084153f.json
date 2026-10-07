@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Blackthorn Cocktail",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Stir all of the ingredients with ice, then strain into a glass filled with fresh ice, and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "93cd06f3f28fa746c219c79c499d79e87597bdc34fbcd22e1e81665b112e3d56",
+    "lineage_hash": "99d918973c9354c07c89c5e83d38e49f8d5b49e98814de3677c65a1a6ce05e09"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/blackthorn-cocktail/",
+    "fetchedAt": "2026-08-03T21:54:47.746Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/blackthorn-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

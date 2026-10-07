@@ -1,0 +1,113 @@
+{
+  "recipe": {
+    "name": "Canistrelli",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "25",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 350ºF (180ºC). Adjust the oven rack to the upper to mid-third of the oven. Line a baking sheet with parchment paper or a silicone baking mat. Prepare two sheets of parchment paper that are approximately 10 - 12-inches (25cm) squares or rectangles for rolling the dough. (To save resources, you can instead use the parchment sheets you&#039;ve used to rolling the dough to line the baking sheet later.)",
+      "In a medium bowl, whisk together the flour, sugar, baking powder, salt, and almonds and anise seeds, if using.",
+      "Make a well in the center of the dry ingredients with a spatula then add the olive oil, pastis, and white wine or water. Stir the mixture until it starts clumping together, then use your hands to gently knead the dough so it&#039;s cohesive, but won&#039;t be completely smooth if you used the almonds. The dough will be rather soft.",
+      "To roll the dough, sprinkle 3/4 tablespoon of sugar on one sheet of the parchment paper roughly in a 6-inch (15cm) circle. Place the dough on top of the sugar. Lay the second sheet of parchment over the dough and pat it down into a flat square shape with your hand. Lift the parchment paper, sprinkle the remaining 3/4 tablespoon over the top of the dough, replace the parchment, and roll the dough until it&#039;s about 1/4-inch thick, which is will be about an 8-inch (20cm) square.",
+      "To cut the cookies, trim the edges with a chef&#039;s knife or metal pastry scraper to make a neater square.  Use the knife or scraper to cut the cookies into 25 squares.",
+      "Because the dough is rather soft, to place the cookies on the baking sheet, slide the blade of a chef&#039;s knife or pastry scraper under one of the rows of the squares of dough and transfer them onto the baking sheet. Don&#039;t worry if they look a little funky after you move them; they&#039;re rustic cookies and part of their charm is they can be a bit misshapen. You can reroll any scraps between the parchment to make a few more cookies if you&#039;d like.",
+      "Bake for 20 minutes, rotating the baking sheet midway during baking. Some of the cookies at the edges may get darker faster than the others. Feel free to move the cookies around on the baking sheet when you rotate the pan. If the cookies are not quite done after 20 minutes, turn the oven off but leave the cookies in the oven with the door closed until the cookies are light golden brown across the top, about 5 additional minutes."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Flour",
+        "unit": "C",
+        "notes": "200g",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": "100g",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": "preferably aluminum-free",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Anise Seeds",
+        "unit": "tsp",
+        "notes": "these are optional but I like them a lot in these cookies, lightly crushed",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra-virgin",
+        "unit": "C",
+        "notes": "80ml, olive oil",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pastis",
+        "unit": "C",
+        "notes": "80ml, see headnote",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry White Wine",
+        "unit": "Tbsp",
+        "notes": "30ml, or water",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lightly Toasted Almonds",
+        "unit": "C",
+        "notes": "40g, optional, see headnote, coarsely chopped",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ebad7c6a91d001222ede2c0742339ae712fbc2c67c8ec3f268b28f2ddd409e13",
+    "lineage_hash": "855e345b7ea19f7f1a442d3f2c6675becb6769b1745d8856fa7071a10492d8d4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/canistrelli-anise-cookies-french-corsica-corsican/",
+    "fetchedAt": "2026-08-02T17:25:24.495Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/canistrelli-anise-cookies-french-corsica-corsican/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,117 @@
+{
+  "recipe": {
+    "name": "Chapssal Donuts (Korean Glutinous Rice Ball Doughnuts)",
+    "time": "55 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "25",
+    "source": "scraped",
+    "cuisine": "KR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "114",
+      "carbohydrateContent": "24",
+      "fatContent": null,
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Mix the stuffing ingredients in a small bowl. (If you want smooth silkier texture, blend or mash the red bean paste. You could also add more sugar if the mixture isn't sweet enough for you.)",
+      "Sieve the sweet rice flour and self-raising flour into a large bowl. Add salt, melted butter and hot water. Mix all the ingredients well and knead it to make one large dough.",
+      "Take the dough out onto a cutting board and divide it into smaller pieces to make mini round balls. (The size can be up to you but remember that larger doughnuts take longer to cook. Also make sure it is large enough to hold the stuffing inside.) While working through, cover the mini balls with glad wrap to stop them drying out.",
+      "Open up the dough by pressing the rolled balls with your thumbs. Add the stuffing mixture and close the dough. I added ¼ tsp worth stuffing on each ball. You could add more or less, just make sure you can close the dough without getting messy - (note that the photo below has much more stuffing than necessary, so that you can see what it looks like). Repeat this until you use up the prepared ingredients.",
+      "Deep fry the donut in a deep sauce pan (on medium high heat) until the dough is golden brown. You will have to continuously roll the donut while cooking so it doesn't stick to the base of the pan, and to shape it better. Place the cooked doughnuts onto a piece of oil absorbing paper and cool down for 10 to 15 mins. Repeat this with the remaining ingredients. Be sure to watch out for oil splash.",
+      "Sprinkle the sugar onto the donuts or roll them on a plate of sugar. Alternatively, put the sugar into a plastic bag and added the donuts. Then while holding the top of the bag, shake the bag."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sweet Rice Flour",
+        "unit": "g",
+        "notes": "1.1 pounds",
+        "amount": "500",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Self-raising Flour",
+        "unit": "g",
+        "notes": "2.8 ounces",
+        "amount": "80",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "0.7 ounces, melted",
+        "amount": "20",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Hot Water",
+        "unit": "C",
+        "notes": "16 ounces",
+        "amount": "2",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Sweetened Red Bean Paste",
+        "unit": "g",
+        "notes": "0.4 pounds",
+        "amount": "180",
+        "section": "Stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Some Vegetable Oil for Deep-frying",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Others",
+        "isOptional": false
+      },
+      {
+        "name": "Castor Sugar",
+        "unit": "g",
+        "notes": "1 ounce",
+        "amount": "30",
+        "section": "Others",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "dd22ce09ceb41bafa5ee9eee029209a07e962b699547899344cc998f21176dee",
+    "lineage_hash": "1ff9938d582fe2b5487393a2ba044538a44ec9bfc98476afbd6235de59016715"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://mykoreankitchen.com/chapsal-donuts-korean-glutinous-rice-ball-doughnuts/",
+    "fetchedAt": "2026-08-01T18:45:34.139Z"
+  },
+  "rawSource": "https://mykoreankitchen.com/chapsal-donuts-korean-glutinous-rice-ball-doughnuts/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

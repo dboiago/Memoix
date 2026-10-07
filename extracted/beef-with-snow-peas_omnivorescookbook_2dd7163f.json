@@ -1,0 +1,180 @@
+{
+  "recipe": {
+    "name": "Beef with Snow Peas",
+    "time": "25 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "305",
+      "carbohydrateContent": "9.5",
+      "fatContent": "14.1",
+      "proteinContent": "33.4"
+    },
+    "directions": [
+      "Combine the steak, oyster sauce, Shaoxing wine, oil, and cornstarch in a medium-sized bowl. Mix with your hands to coat the beef evenly. Marinate for 15 minutes while preparing the other ingredients.",
+      "Combine all the sauce ingredients except the sesame oil in a small bowl. Stir to dissolve the sugar and cornstarch. Add the sesame oil and set aside.",
+      "Heat oil in a large skillet over medium-high heat until hot. Spread the marinated steak into a single layer, cooking in batches to avoid overcrowding if necessary. Sear on one side for 1 minute or until the bottom is lightly charred. Flip and sear for another 30 seconds to 1 minute, until the other side is cooked but the inside is still slightly pink. Transfer the steak to a plate, leaving any excess oil in the pan.",
+      "If the pan looks dry, add another tablespoon of oil to the pan. Add the snow peas and onions. Cook and stir for about 1 minute. Add the ginger and garlic. Continue to cook for another 30 seconds.",
+      "Stir the sauce again to redissolve the cornstarch completely and pour it into the pan. Add the beef back to the pan. Stir until the sauce thickens. Immediately transfer everything to a large plate and serve hot as a main dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Flank Steak",
+        "unit": "lb",
+        "notes": "or skirt steak, thinly sliced against the grain",
+        "amount": "1",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "tsp",
+        "notes": "or dry sherry",
+        "amount": "2",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "tsp",
+        "notes": "or vegetable oil",
+        "amount": "1",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "tsp",
+        "notes": "or regular soy sauce",
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "or vegetable oil",
+        "amount": "1-2",
+        "section": "Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Snow Peas",
+        "unit": "C",
+        "notes": "6 oz, trimmed & strings removed",
+        "amount": "2",
+        "section": "Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "sliced into thick strips",
+        "amount": "½",
+        "section": "Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "” Ginger",
+        "unit": null,
+        "notes": "minced",
+        "amount": "½",
+        "section": "Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "1",
+        "section": "Stir Fry",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "84e3700120b99569f12c51b39df36fb5ea6fd8d3cf04565eca03fa11ee422464",
+    "lineage_hash": "0cacdd068c896307e84d035213858cb74591a5cf80b829f97753eb29466776e6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/beef-with-snow-peas/",
+    "fetchedAt": "2026-08-02T01:30:51.908Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/beef-with-snow-peas/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

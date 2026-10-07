@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Baltra Cocktail: Malus",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Stemless Wine",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the Scotch, pisco, syrup, lemon juice, and jam in a shaker with ice. Shake until chilled. Strain into a stemless wine glass over fresh ice and top with prosecco. Garnish.",
+      "Apple-Infused PiscoTo infuse a full bottle of pisco, peel 5 apples. Set flesh aside and combine skins with pisco. Let the bottle of pisco sit for 2 days and strain solids from the liquid.",
+      "Spiced SyrupCut the remaining apple flesh (no cores) into slices. Cut 2 pears (skin-on) into slices. Combine both in a saucepan with 2 cinnamon sticks, 3 star anise bulbs, 1 liter of water and 5 cups of water. Bring to a boil and cook until apples and pears are soft. Remove from heat and let rest until cool. Strain solids out of liquid and store syrup in the fridge."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "687c6aea4496ef4b706f273ec99d8f3cda922e36a71988f2a4c7b07d0ea7b3c1",
+    "lineage_hash": "fc7b5cdaa581964b7b0edbe83002eb25235de92f41b0a34569620ac52dd49c92"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/baltra-cocktail-malus/",
+    "fetchedAt": "2026-08-03T23:32:42.292Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/baltra-cocktail-malus/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

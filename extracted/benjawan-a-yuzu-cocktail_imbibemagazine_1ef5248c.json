@@ -1,0 +1,37 @@
+{
+  "recipe": {
+    "name": "Benjawan: A Yuzu Cocktail",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [
+      "Inverted Lime Shell",
+      "Dried Thai Pepper"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Rim your glass, then set aside. Add the mezcal, Ancho Reyes, lime juice, yuzu, and agave syrup to a shaker with ice and shake. Strain the cocktail into the glass over an ice cube. Place an inverted lime shell on top and add the dried Thai pepper. Pour the sambuca into the inverted lime shell and carefully light it on fire with a long match and serve. Blow out the flame before taking a sip."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "c65dcb62959a1b775240c792c7335e281bb349b389add5094e1794759b538462",
+    "lineage_hash": "f8d8d0848772e061614774433c56100af48dcd4c88322394d77e0b7da21add8c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/benjawan-a-yuzu-cocktail/",
+    "fetchedAt": "2026-08-03T21:19:47.959Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/benjawan-a-yuzu-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,37 @@
+{
+  "recipe": {
+    "name": "Almonds in Alameda",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [
+      "Dehydrated Lemon Wheel",
+      "Peychaud’s Bitters"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to an ice-filled cocktail shaker, then shake and double strain into a rocks glass over a large ice cube. Garnish with a dehydrated lemon wheel and Peychaud&#8217;s bitters."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "0dc6277fcb1eaeac9e826774a07e4e63dfa0b38a63a1266c497d03cc5e313b3f",
+    "lineage_hash": "3013a5733c37d27df4ce68ebb35819201a2e7e417a902116e44739a2b01f3e2f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/almonds-in-alameda-from-tribune-oakland/",
+    "fetchedAt": "2026-08-03T22:09:34.290Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/almonds-in-alameda-from-tribune-oakland/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,255 @@
+{
+  "recipe": {
+    "name": "Achari Paneer",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "5",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "306",
+      "carbohydrateContent": "8",
+      "fatContent": "26",
+      "proteinContent": "11"
+    },
+    "directions": [
+      "To a small pan on medium heart, add 2 teaspoons fennel seeds, 1 teaspoon cumin seeds, ½ teaspoon mustard seeds, and 2 dried Kashmiri red chilies. Dry roast them, stirring constantly with a spatula for around 3 to 4 minutes. Make sure they do not burn. Transfer the toasted spices to a spice blender and blend to a fine powder. Set this aside as we will use this later in the recipe.",
+      "Put a large pan on medium heat, and once hot, add 2 teaspoons mustard oil to it. Let the oil heat up until it smokes (this is applicable only when using mustard oil, if using any other oil, just heat up the oil). Once the mustard oil smokes up, reduce the heat and then add ¼ teaspoon turmeric and ¼ teaspoon Kashmiri red chili powder and stir. Then add the cubed onions (¼th of a large onion), green and red bell pepper cubes (½ of a large green and red pepper each) and cook for 1 to 2 minutes.",
+      "Then add 340 grams cubes of paneer and stir. Cook for 2 more minutes. On the whole the paneer and vegetables need to be cook for 3 to 4 minutes only. Remove the sautéed paneer and vegetables onto a plate.",
+      "To the same pan on medium heat in which you had sautéed the paneer, now add 2 tablespoons of mustard oil. Again, heat it up until it smokes and then lower the heat and wait few seconds else the spices might burn straightaway. Then, add ½ cumin seeds and ¼ teaspoon kalonji. Let the seeds sizzle.",
+      "Then add the chopped onions ( from remaining ¾th of the large onion) and 1 to 2 sliced green chilies. Cook the onions for 2 to 3 minutes until soft and translucent. Then, add 1 tablespoon ginger-garlic paste and continue to cook for 1 more minute.",
+      "Add puree of 2 medium tomatoes and 1 tablespoon tomato paste and cook for 5 to 6 minutes until the tomatoes are soft. Then add ½ cup of plain yogurt (whisked and at room temperature) and stir it continuously for 1 minute.",
+      "The spices go in next- 2 & ¼ teaspoon of the prepared achari spice mix that we prepared earlier along with ¼ teaspoon turmeric, ½ teaspoon Kashmiri red chili powder (or regular chili powder for extra heat) and 1 teaspoon coriander powder. Also, add salt to taste (around ¾-1 teaspoon).",
+      "Cook the spices for 1 minute. Then add ⅓ cup water and stir. You can add a little more water if you prefer more gravy. Cook 30 seconds and then stir in the sautéed paneer and vegetables. Cook the paneer and the onions and peppers for 2 to 3 minutes. Add ¼ teaspoon garam masala and 1 tablespoon chopped cilantro to finish. You may also add 1 to 2 tablespoons of cream if you prefer. Serve hot with tandoori roti or naan."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Fennel Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "achari masala",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "achari masala",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "achari masala",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Kashmiri Red Chilies",
+        "unit": null,
+        "notes": "dried",
+        "amount": "2",
+        "section": "achari masala",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": "mustard oil",
+        "amount": "2",
+        "section": "sautéing the paneer & vegetables",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "sautéing the paneer & vegetables",
+        "isOptional": false
+      },
+      {
+        "name": "Kashmiri Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "sautéing the paneer & vegetables",
+        "isOptional": false
+      },
+      {
+        "name": "A Large Green Bell Pepper",
+        "unit": null,
+        "notes": "cut into cubes",
+        "amount": "½",
+        "section": "sautéing the paneer & vegetables",
+        "isOptional": false
+      },
+      {
+        "name": "A Large Red Bell Pepper",
+        "unit": null,
+        "notes": "cut into cubes",
+        "amount": "½",
+        "section": "sautéing the paneer & vegetables",
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "large",
+        "notes": "divided, ¼th of it cut into cubes and rest finely chopped",
+        "amount": "1",
+        "section": "sautéing the paneer & vegetables",
+        "isOptional": false
+      },
+      {
+        "name": "Grams Paneer",
+        "unit": null,
+        "notes": "cut into cubes",
+        "amount": "340",
+        "section": "sautéing the paneer & vegetables",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "masala",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "masala",
+        "isOptional": false
+      },
+      {
+        "name": "Kalonji",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "masala",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Garlic Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "masala",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilies",
+        "unit": null,
+        "notes": "sliced, adjust to taste",
+        "amount": "1-2",
+        "section": "masala",
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "medium",
+        "notes": "pureed",
+        "amount": "2",
+        "section": "masala",
+        "isOptional": false
+      },
+      {
+        "name": "Tablepoon Tomato Paste",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "masala",
+        "isOptional": false
+      },
+      {
+        "name": "Yogurt",
+        "unit": "C",
+        "notes": "plain whole milk yogurt, make sure to whisk it and it should be at room temperature",
+        "amount": "½",
+        "section": "masala",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "masala",
+        "isOptional": false
+      },
+      {
+        "name": "Kashmiri Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "masala",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "masala",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "masala",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": "masala",
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "masala",
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "Tbsp",
+        "notes": "chopped, to garnish",
+        "amount": "1",
+        "section": "masala",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "10ae9b3937585d924262ae497dc004361a149d5be351801b19c0c62bd4cd748f",
+    "lineage_hash": "77c1546083ce8370e9a9b8cb60ccc722c0d4e1f5c44fc20219ca1a272985064a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/achari-paneer/",
+    "fetchedAt": "2026-08-02T09:29:53.606Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/achari-paneer/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

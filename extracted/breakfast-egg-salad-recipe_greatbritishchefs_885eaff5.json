@@ -1,0 +1,186 @@
+{
+  "recipe": {
+    "name": "Breakfast Egg Salad",
+    "time": "45 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the eggs in a saucepan and cover with cold water. Bring to a boil, then reduce heat and simmer for 9 minutes. Drain and transfer to ice water",
+      "Once cool, peel and mash the eggs. Mix with the remaining egg salad ingredients",
+      "Next, prepare the roasted tomato and chipotle sauce. Preheat the oven to 180°C (160°C fan)",
+      "Place the tomatoes on a baking tray, drizzle with olive oil, and season with salt and smoked paprika. Roast for 15 minutes until soft",
+      "Meanwhile, mix together all the watercress salad ingredients",
+      "Next, cook the bacon until crispy in a dry frying pan over medium heat. Drain on paper towels",
+      "Blend the roasted tomatoes with chipotle paste to make a smooth sauce",
+      "To assemble the sandwich, spread the chipotle sauce on either side of the bread. Spread a layer of egg salad on the bottom half, then top with the watercress salad and crispy bacon. Place the top half of the bread on and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Freshlay Farms Golden Yolker® Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Dill",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "medium",
+        "notes": "halved",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chipotle Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Watercress",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "small",
+        "notes": "finely chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rashers of Smoked Streaky Bacon",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Medium-cut Bread",
+        "unit": "slices",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9fcf8d8d354e57c1913343b0bf38b64947f3404ed04a0c1b9d4b21cd26eb75c0",
+    "lineage_hash": "a4d27826cbf7b653f87ba9f0ed07135fd4b27c0c12879cb64d94c804ca1d0503"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/breakfast-egg-salad-recipe",
+    "fetchedAt": "2026-08-02T05:00:27.736Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/breakfast-egg-salad-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,163 @@
+{
+  "recipe": {
+    "name": "Caldo de Pollo (Mexican Chicken Soup)",
+    "time": "48 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "318",
+      "carbohydrateContent": "33",
+      "fatContent": "9",
+      "proteinContent": "27"
+    },
+    "directions": [
+      "In a large pot, put the water, chicken, salt, and garlic. Boil for 15 minutes, skimming any foam that rises to the top.",
+      "While the chicken is boiling, in a separate pan, heat the oil over medium heat, add rice and cook, stirring occasionally, until browned, about 2 to 3 minutes, being careful not to let it burn. Add onion and continue cooking until onion is translucent, about 2 minutes. Add tomato and cook for an additional 3 minutes. Add mixture to chicken pot.",
+      "Add carrots, celery, and potatoes to soup and let come to a boil; reduce heat. Let simmer until vegetables cook through, about 20 to 30 minutes. Add tomato sauce, cilantro, and safflower petals during the last 5 minutes.",
+      "Ladle soup, including a piece of chicken for each serving, into bowls and serve with lime wedges, warm corn tortillas, and salsa casera."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Drumsticks",
+        "unit": null,
+        "notes": "alt: thighs, skinless",
+        "amount": "4-6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "chopped",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Long-grain Rice",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Roma Tomatoes",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Stalks",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yukon Gold Potatoes",
+        "unit": null,
+        "notes": "quartered",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Sauce",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Safflower Petals",
+        "unit": "tsp",
+        "notes": "azafran",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Wedges",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9e99826b898e8057735522c65e657ef79a008b3774f18dabff12b2e3ddeaddf6",
+    "lineage_hash": "34958ea824ff1a0a8b03f0492a63c48d3a13ae528cfa235d3b31dbc2fa3e2f40"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/caldo-de-pollo-homemade-chicken-soup/",
+    "fetchedAt": "2026-08-02T11:11:02.877Z"
+  },
+  "rawSource": "https://muybuenoblog.com/caldo-de-pollo-homemade-chicken-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

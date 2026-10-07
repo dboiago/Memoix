@@ -1,0 +1,136 @@
+{
+  "recipe": {
+    "name": "Mexican Buñuelos",
+    "time": "30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "20",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "171",
+      "carbohydrateContent": "25",
+      "fatContent": "7",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "In a mixing bowl combine flour, baking powder, salt, and cinnamon.",
+      "In a saucepan heat milk, butter, and vanilla and bring to a boil. Set aside to cool.",
+      "In a separate bowl, mix the eggs, then add the beaten eggs to the room temperature milk mixture and whisk quickly.",
+      "Add the liquid mixture to dry ingredients and mix well.",
+      "Knead dough on lightly floured surface 2 to 3 minutes until smooth.",
+      "After you knead the dough, divide into 20 dough balls. With a rolling pin, roll out thin tortillas.",
+      "Lay out all the thin tortilla flats on a tablecloth and let them dry. Turn them over once to ensure drying on both sides. This helps remove most of the moisture before frying.",
+      "Heat one-inch of oil in a skillet wide enough for the tortillas to fry flat. Deep-fry tortillas until golden brown, turning once. Remove from pan; stand vertically in a bowl lined with paper towels and drain excess oil.",
+      "While warm, sprinkle fried tortillas on both sides with sugar-cinnamon mixture."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Canola",
+        "unit": null,
+        "notes": "alt: vegetable oil for frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3cd2f127f44d8b6a40006182cec1037f3338bbea6a475295a32aa79598c478b1",
+    "lineage_hash": "badf4ef69ccf0b90e0b4bd9acaaa1bfba777c2a40d01f0ce64ea573877ff4ab0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/bunuelos-mexican-fritters/",
+    "fetchedAt": "2026-08-02T03:45:54.261Z"
+  },
+  "rawSource": "https://muybuenoblog.com/bunuelos-mexican-fritters/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

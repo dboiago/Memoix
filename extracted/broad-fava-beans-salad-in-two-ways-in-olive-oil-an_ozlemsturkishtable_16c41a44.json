@@ -1,0 +1,150 @@
+{
+  "recipe": {
+    "name": "Broad (Fava) Beans Salad in Two Ways",
+    "time": "20 min",
+    "course": "salad",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "TR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "If using tender broad beans in water, empty the contents in a colander. Put the broad beans in a pan with fresh water and simmer gently for about 3 minutes, stirring occasionally. Drain the water and set the broad beans aside.",
+      "If using fresh broad beans, they should be podded, unless they are very young and tender. Put the beans in a pan, cover with boiling water, return to the boil and cook for about 10 – 15 minutes. Then drain, empty into cold water, slit each pod along its seam and run your thumb along the furry inside to push the beans out.",
+      "In a serving bowl, combine the broad beans with the rest of the ingredients except the balsamic vinegar and mix well. Make sure to season well with salt and pepper and drizzle the balsamic vinegar over.",
+      "Serve with some crusty or pita bread; green and black kalamata olives go well with this salad.",
+      "If using tender broad beans in water, empty the contents in a colander. Put the broad beans in a pan with fresh water and simmer gently for about 3 minutes, stirring occasionally. Drain the water and set the broad beans aside.",
+      "If using fresh broad beans, they should be podded, unless they are very young and tender. Put the beans in a pan, cover with boiling water, return to the boil and cook for about 10 – 15 minutes. Then drain, empty into cold water, slit each pod along its seam and run your thumb along the furry inside to push the beans out.",
+      "In a bowl, combine the broad beans with dill, red pepper flakes, lemon juice and olive oil. Season well with salt and freshly ground black pepper, mix well. Divide the salad into two individual serving plates.",
+      "In a small bowl, beat the yoghurt with garlic and seasoning. Spoon this into two serving plates and spread over the broad beans mixture.",
+      "Fill a small pan with water, add the vinegar (this will help sealing the egg whites) and bring to a boil. Stir the water to create a whirlpool and crack in the first egg.",
+      "As the egg spins and the white sets around the yolk, stir the water ready for the next one. Poach each egg for 2-3 minutes so that the yolk remains soft.",
+      "Lift the eggs out of the water with a slotted spoon and place them over the garlic yoghurt spread.",
+      "Sprinkle red pepper flakes over and a few sprigs of dill. Serve immediately with some nice bread to mop up the salad’s delicious juices."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gr Broad Beans",
+        "unit": null,
+        "notes": "in water or fresh",
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onion",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Bell Pepper",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dill",
+        "unit": "ml",
+        "notes": "coarsely chopped",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Balsamic Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": null,
+        "notes": "freshly ground, to taste",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Free Range Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "crushed and finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Natural Yoghurt",
+        "unit": "ml",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3c4d7e4328b70b5d77f577f6de04be48c0b23a02e2a6b3e275ec06ca9428b68b",
+    "lineage_hash": "72d6ab5b1e99c08c2f197f29487aaea524eac44992ed946769feb90cd5430feb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ozlemsturkishtable.com/2011/04/broad-fava-beans-in-two-ways/",
+    "fetchedAt": "2026-09-25T19:21:38.361Z"
+  },
+  "rawSource": "https://ozlemsturkishtable.com/2011/04/broad-fava-beans-in-two-ways/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

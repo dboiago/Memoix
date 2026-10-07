@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Beefsteak Martini",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [
+      "Shiso Leaf"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Stir all of the ingredients with ice until chilled, and strain into a chilled glass. Garnish by spritzing the cocktail several times with an atomizer filled with shiso-infused gin (or simply rub a torn shiso leaf around the glass’s rim).\nShiso-Infused GinIn a quart jar, combine 1 bottle of gin with 25 grams of fresh shiso leaves. Cover the jar and let infuse at room temperature overnight, then strain and bottle for use. The infusion will last indefinitely, but the shiso character will fade over time."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "6ed2434213bb4c90d5c70d00f86ecdc4f43278fc2918102dfe8bf164ffab85a2",
+    "lineage_hash": "a8a88dcf8cab6b2c40e176310ff9c59e0c55deff0108918e6b131b57320c3040"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/beefsteak-martini/",
+    "fetchedAt": "2026-08-04T02:08:15.893Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/beefsteak-martini/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

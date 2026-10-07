@@ -1,0 +1,121 @@
+{
+  "recipe": {
+    "name": "Braised Daikon with Salted Pork & Glass Noodles",
+    "time": "40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "416",
+      "carbohydrateContent": "27",
+      "fatContent": "31",
+      "proteinContent": "9"
+    },
+    "directions": [
+      "Heat the oil in a wok over medium heat. Cook the garlic, the white parts of the scallion, and the salted pork belly for a couple of minutes until the pork fat turns transparent. Now add the daikon, and stir to combine. Add the stock, cover, and simmer for 15 minutes over medium heat until the daikon is cooked through.",
+      "Meanwhile, rinse the glass noodles and soak in cold water for five minutes. After five minutes, drain and set aside. After the 15 minutes of simmering have elapsed, add the sesame oil, white pepper, and salt to taste. Mix everything well. Add the glass noodles on top of the daikon, cover, and simmer for another three minutes. Uncover and add in the green parts of the scallions. Give everything a quick stir to combine and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "the white and green parts separated",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted Pork Belly",
+        "unit": "oz",
+        "notes": "140g, sliced",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Daikon Radish",
+        "unit": "lb",
+        "notes": "cut into small pieces",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "C",
+        "notes": null,
+        "amount": "3½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Mung Bean Vermicelli",
+        "unit": null,
+        "notes": "2 small bundles",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt (to Taste)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "cb7a98faa67ff810d497ee8dc3cfae321a6eac5a9d607583de486d83071b7342",
+    "lineage_hash": "9c8bb8b8e66bf2cfbba36888ea3b8f96718a0f640e7860ca9fdc4f856093e0a3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/braised-daikon-pork-glass-noodles/",
+    "fetchedAt": "2026-08-01T22:51:04.471Z"
+  },
+  "rawSource": "https://thewoksoflife.com/braised-daikon-pork-glass-noodles/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

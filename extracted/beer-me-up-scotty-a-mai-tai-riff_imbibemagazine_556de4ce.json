@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Beer Me Up Scotty: A Mai Tai Riff",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients, except the cream ale, to a shaker, shake, and strain into an ice-filled rocks glass. Top with the cream ale and give it a light stir to combine. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "b9db78dccdc987b8fae4bf1410bffc2121891aca85e23d034d573a65df5020ad",
+    "lineage_hash": "fcfdbdf65356a29a7e912a37c9a6032245e89a4e7c8b8eef8f02931e25ec84d1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/beer-me-up-scotty-mai-tai-recipe/",
+    "fetchedAt": "2026-08-03T21:28:01.856Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/beer-me-up-scotty-mai-tai-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,140 @@
+{
+  "recipe": {
+    "name": "Caramelised White Chocolate Cheesecake Tarts",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 120C.",
+      "Roughly chop the chocolate and place onto a rimmed baking tray and place into the oven for about an hour, to an hour and a half, stirring every ten minutes until the colour has gone from cream to a rich caramel colour.",
+      "Preheat the oven to 150C.",
+      "Add the cream, ginger, cinnamon and cardamon to a small saucepan and set over medium heat and bring to a boil. Turn off the heat and set aside to infuse.",
+      "Take the two leftover egg yolks and beat together and use a pastry brunch to coat the inside of the tart shells with the egg. Place these tart shells into a hot oven for a few minutes until the egg has set.",
+      "Whisk the cream cheese until smooth then add the sour cream, egg, egg whites, sugar and vanilla until the cheesecake mixture is smooth.",
+      "Scrape the cheesecake filling into a jug and divide evenly amongst the prepared tart shells, filling about two thirds full. Bake for about 12-14 minutes or until the cheesecake is set around the edges but still has a little wobble in the middle.",
+      "Remove from the oven and allow to cool to room temperature before transferring to the fridge for 30 minutes.",
+      "Place the cream back over the heat and bring to a simmer. Place the chocolate into a bowl with sieve set over the bowl. Pour the cream through the sieve to remove the spices then set aside for a couple minutes before stirring together to form a smooth silky ganache.",
+      "Pour the ganache onto the tarts and when the ganache starts to set, sprinkle with a little flaked sea salt."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Four Inch Tart Shells",
+        "unit": null,
+        "notes": "fully baked (use 2x recipe [here](http://www.theboywhobakes.co.uk/recipes/2015/8/6/blueberry-and-blackberry-tarts-with-lemon-verbena?rq=sweet%20pastry))",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream Cheese",
+        "unit": "g",
+        "notes": null,
+        "amount": "225",
+        "section": "Cheesecake Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Sour Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": "Cheesecake Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": "Cheesecake Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": "Cheesecake Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "85",
+        "section": "Cheesecake Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Cheesecake Filling",
+        "isOptional": false
+      },
+      {
+        "name": "White Chocolate",
+        "unit": "g",
+        "notes": "30-35% cocoa butter content",
+        "amount": "150",
+        "section": "Caramelised White Chocolate Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": "Caramelised White Chocolate Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Piece",
+        "unit": "inch",
+        "notes": "sliced ginger",
+        "amount": "1",
+        "section": "Caramelised White Chocolate Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Broken in Half Cinnamon Stick",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Caramelised White Chocolate Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Lightly Crushed Cardamon Pod",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Caramelised White Chocolate Topping",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "18a357b09045ac8e946b8ab1758966ea61262734d3afe8e903e8d3c2c7355e24",
+    "lineage_hash": "20793170f25bfb4e66328077ce2e1628ba4dcf24e43ae8ee9f5dbfeafcd6fbe8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.theboywhobakes.co.uk/recipes/2018/5/10/caramelised-white-chocolate-cheesecake-tarts-recipe",
+    "fetchedAt": "2026-08-01T20:22:13.537Z"
+  },
+  "rawSource": "https://www.theboywhobakes.co.uk/recipes/2018/5/10/caramelised-white-chocolate-cheesecake-tarts-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

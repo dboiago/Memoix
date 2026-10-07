@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Amaro Kalimotxo",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Collins",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the wine, Ramazotti and bitters to a Collins glass and stir to combine. Fill with ice and top with cola. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "98ccc66f3fcbe7358eaf868c4fcee6655719dae9aabdab287f8c6bdc2b2eecb4",
+    "lineage_hash": "c30c764018ea6e826e2afb03a7783d557cf3b67e37c92be9d77fd1047f3f5f07"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/amaro-kalimotxo/",
+    "fetchedAt": "2026-08-03T22:55:09.455Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/amaro-kalimotxo/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

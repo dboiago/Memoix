@@ -1,0 +1,300 @@
+{
+  "recipe": {
+    "name": "Burnt Butter Focaccia with Pork Belly, Teriyaki and Sesame Crumble",
+    "time": "4 hr 40 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start a day ahead by preparing the sourdough focaccia dough. Brown the butter in a small pan - initially it will foam up, then the milk solids will begin to turn brown and smell nutty. Keep swirling and stirring the butter so the milk solids don’t stick to the bottom. After a couple of minutes, once the butter is brown and nutty, transfer it to a bowl and leave to cool. You want it to be still liquid but lukewarm",
+      "Add the starter, salt, 350g lukewarm water and brown butter to a bowl and mix until combined, then add in the flour. Stir with your hands or a dough whisk until a shaggy dough comes together. Cover with a kitchen towel and leave to rest in a warm place for 30 minutes",
+      "Next, stretch and fold your dough. To do the first set of folds for the focaccia, reach into the bowl and pull the edge of the dough up and fold the stretched piece into the middle. Take another bit of dough, stretch it up and then drape it over the middle. Repeat this all the way around the dough, turning the bowl as you go, until you have 8–10 folds",
+      "Cover the dough with a kitchen towel and leave it to rest overnight for the bulk fermentation&nbsp;",
+      "The next day drizzle 2 tablespoons of olive oil into a 9 × 13-inch (23 × 33 cm) baking tin or similar then scoop the dough into the centre of the tray. Fold the dough into a rough rectangle, then flip it over before rubbing with oil and leaving to rest for 4 hours, uncovered, until almost doubled in size again&nbsp;",
+      "Preheat the oven to 140°C while you begin preparing the pork belly",
+      "Mix together the brown sugar, paprika, cayenne pepper, garlic powder and salt",
+      "Mix the barbecue sauce with the cubes of pork, coating each side, before seasoning with the spiced sugar",
+      "Place the meat onto a baking-paper lined tray and roast in the oven for 2 hours",
+      "Next, remove the pork belly from the oven. Mix the pork belly with the glaze ingredients: barbecue sauce, brown sugar and honey. Dot over the butter. Cover with foil and return to the oven for another 30 minutes",
+      "Then, remove the foil and turn the heat up to 200°C. Cook for another 10 minutes until the meat is crispy and the glaze has thickened",
+      "Next, prepare the sesame-nori crumble. Toast the cashews in a large pan for around 8–10 minutes, then transfer them to a bowl",
+      "Toast each of the seed varieties for the crumble, one by one, making sure not to burn any of them to avoid any bitterness&nbsp;",
+      "Blend all the toasted nuts and seeds, as well as the remaining crumble ingredients, in a food processor until you have a coarse but even consistency&nbsp;",
+      "Rub your hands with olive oil. Use your fingertips to dimple and stretch out the dough until it fits the pan. Top with the pork belly and a drizzle of the glaze from the tray the pork belly was cooked on. Sprinkle over the sesame-nori crumble. Dimple them into the dough",
+      "Sprinkle the dough with sea salt then bake for 30 minutes until golden brown&nbsp;",
+      "Simmer all the ingredients for the teriyaki drizzle for around 4 minutes. Once the sauce thickens, remove it from the heat and leave it to cool&nbsp;",
+      "Once the focaccia comes out of the oven, drizzle over the teriyaki glaze then leave it to cool for around 15 minutes before slicing and serving with an extra drizzle of teriyaki&nbsp;"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ripe Sourdough Starter",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strong Bread Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Paprika",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cayenne Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Barbecue Sauce",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pork Belly",
+        "unit": "g",
+        "notes": "sliced into cubes",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Barbecue Sauce",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cashews",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pumpkin Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaxseeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Flakes",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sheets of Untoasted Nori Seaweed",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "ml",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "fresh, grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "tsp",
+        "notes": "grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mirin",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour",
+        "unit": "tsp",
+        "notes": "mixed with 50ml water",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e73917781581cf258dc16292f492677c917e4c1d173f5354fd0383356fe32ca8",
+    "lineage_hash": "3926280a0e557548872f2f1450af5d30f104df7f6cfe92c52fbddeedbe0b5dc1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/burnt-butter-focaccia-pork-belly-teriyaki-sesame-recipe",
+    "fetchedAt": "2026-08-02T06:17:21.866Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/burnt-butter-focaccia-pork-belly-teriyaki-sesame-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

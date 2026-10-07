@@ -1,0 +1,119 @@
+{
+  "recipe": {
+    "name": "Apple Pistachio Tart",
+    "time": "1 hr 15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 200°C (360°F).",
+      "In a medium mixing-bowl, combine the sugar, butter and pistachio paste with a fork.",
+      "Add in the flour, and keep mixing with the fork.",
+      "When the dough becomes a coarse sand, add in a dash of milk, and knead the dough with your hands until it starts to come together.",
+      "Pour this mixture evenly into a 25-cm (10-inch) tart pan (nonstick or buttered), and press the dough down to pack it and cover the surface the pan, forming a little rim all around.",
+      "Prick all over with a fork, and put into the oven to bake for 12 to 15 minutes, until slightly golden.",
+      "Wash, peel and cut the apples in thin slices.",
+      "Arrange those slices as evenly as you can over the crust.",
+      "Put into the oven to bake for about 30 minutes, until the apple slices have softened and browned.",
+      "Take the pan out of the oven (leave it on) and drop the crème fraîche in spoonfuls on top.",
+      "Sprinkle on the cassonade (or brown sugar) and the pistachios.",
+      "Return into the oven for another 15 minutes.",
+      "Remove from the oven and transfer to a rack to cool completely."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "170",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unrefined Cane Sugar",
+        "unit": "g",
+        "notes": "substitute regular sugar",
+        "amount": "85",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted Butter",
+        "unit": "g",
+        "notes": "at room temperature",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pistachio Paste",
+        "unit": "g",
+        "notes": null,
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apples",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crème Fraîche",
+        "unit": "C",
+        "notes": "substitute sour cream",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pistachios",
+        "unit": "C",
+        "notes": "chopped, unsalted",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cassonade Brune",
+        "unit": "Tbsp",
+        "notes": "substitute brown sugar",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f56ac36bb553ec9519d89f50f1b9131e049e045bc5bf9bfc55ae1471926f726e",
+    "lineage_hash": "1c4e2aa8f14d0f0f210e90fc9881ac276ff21b50ed513f2862210f792288fa3d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/cakes-tarts/apple-pistachio-tart-recipe/",
+    "fetchedAt": "2026-09-30T18:33:52.975Z"
+  },
+  "rawSource": "https://cnz.to/recipes/cakes-tarts/apple-pistachio-tart-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

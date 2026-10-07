@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Campfire Story",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Large Ice Cube",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to a mixing glass with ice and stir. Strain over a large ice cube into the glass. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "792851dcbb17256775ac0e785bf879eb93e870af6f8db74816b216db948ca306",
+    "lineage_hash": "efaa598dd9522e9871a22bf5d633553f4eef32728fc0c4d0fd98820e23c471e6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/campfire-story-from-root-flower/",
+    "fetchedAt": "2026-08-03T22:42:44.210Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/campfire-story-from-root-flower/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

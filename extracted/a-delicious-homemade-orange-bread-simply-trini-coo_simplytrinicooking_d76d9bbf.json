@@ -1,0 +1,111 @@
+{
+  "recipe": {
+    "name": "Orange Bread",
+    "time": "2 hr",
+    "course": "breads",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Blend the juice, water, sugar, egg, butter, and orange rind.",
+      "Combine the 4 cups of flour and yeast. Then sift the flour at yeast twice.",
+      "Add 2 cups of the flour into the liquid mixture and beat well. Then knead in the next 2 cups of flour. (Note: As much as 1 cup of flour would have to be added to help make a smooth dough. That makes 5 cups in total).",
+      "Divide the dough into two and place into 2 (9\" or 23 cm) greased baking pans or dishes.Allow to rest until it doubles in size (about 1 hour)",
+      "Brush with melted butter. Bake for about 40 minutes at 350 degrees F or until golden and firm. Then remove from oven and cool before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All Purpose Flour Divided",
+        "unit": "C",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yeast",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice From Concentrate",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Warm Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk Beaten",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "melted",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Rind",
+        "unit": "tsp",
+        "notes": "grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2192fe6c8cf824f55844e0c0d4e67faf64ee17612a9c77e6703da33389337149",
+    "lineage_hash": "5338b3b2bc32eaa16b35da569cb87b8aa1cbbb0257c9684c16a77b6d4eeaf10c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.simplytrinicooking.com/orange-bread/",
+    "fetchedAt": "2026-09-25T22:52:50.599Z"
+  },
+  "rawSource": "https://www.simplytrinicooking.com/orange-bread/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

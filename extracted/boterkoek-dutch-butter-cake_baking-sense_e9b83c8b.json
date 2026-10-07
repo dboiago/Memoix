@@ -1,0 +1,86 @@
+{
+  "recipe": {
+    "name": "Boterkoek",
+    "time": "35 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "NL",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "225",
+      "carbohydrateContent": "28",
+      "fatContent": "12",
+      "proteinContent": "2"
+    },
+    "directions": [
+      "Preheat the oven to 400 °F. Line the bottom of a 9&quot; tart pan or spring form pan with a parchment paper round.",
+      "In a large mixing bowl or the bowl of a stand mixer, combine 10 oz&#32;all purpose flour, 8 oz&#32;superfine sugar and ¼ teaspoon&#32;table salt. Toss in 8 oz&#32;unsalted butter and use your fingers or the mixer paddle to work the butter into the flour until there are no large lumps of butter.",
+      "Remove 1 tablespoon of the whisked egg and set it aside. Add the rest of the egg to the dough and mix just until it comes together.",
+      "Press the dough into the prepared pan. Smooth until the top is level and flat.",
+      "Brush the reserved egg onto the top of the dough. Use a fork to create a lattice pattern on top of the dough.",
+      "Bake until the edges and top of the cake are golden brown, about 20-25 minutes.",
+      "Cool completely in the pan. Cut into 16 wedges to serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All Purpose Flour",
+        "unit": "oz",
+        "notes": "2 cups, see note",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Superfine Sugar (1 Cup (see Note))",
+        "unit": "oz",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "room temperature",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "whisked",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4b0592dd15bc88b764bebb65060ba577b509f56ab152988b9eaa7108da9781c9",
+    "lineage_hash": "cecfba18b8a9a095e0bc108f11686ed90fb52e967abc234c2c7a00dc53b45160"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2020/03/26/boterkoek-dutch-butter-cake/",
+    "fetchedAt": "2026-08-02T07:24:54.155Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2020/03/26/boterkoek-dutch-butter-cake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

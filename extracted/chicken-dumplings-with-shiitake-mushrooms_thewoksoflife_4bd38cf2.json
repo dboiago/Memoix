@@ -1,0 +1,133 @@
+{
+  "recipe": {
+    "name": "Chicken Dumplings with Shiitake Mushrooms",
+    "time": "3 hr 30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "333",
+      "carbohydrateContent": "44",
+      "fatContent": "10",
+      "proteinContent": "17"
+    },
+    "directions": [
+      "Put the flour in a large mixing bowl. Gradually add the water to the flour and knead into a dough. This process should take about 10 minutes. Cover with a damp cloth and let the dough rest for an hour.",
+      "In a large pan, heat 2 tablespoons oil over medium heat. Add the onion and cook until translucent. Then add the chopped fresh and reconstituted mushrooms. Cook for 8-10 minutes, and transfer to a bowl, along with the ground chicken, sesame oil, soy sauce, sugar, Shaoxing wine, and 3 tablespoons oil.",
+      "Use a pair of chopsticks to stir the filling together in one direction for about 5 minutes, until the mixture resembles a paste. Divide the dough into 48 equal pieces. Roll out each piece into a rough circle about 3 1/2 inches in diameter, and add about 2 tablespoons of filling. Pleat the dumplings and ensure they are tightly sealed. Continue until all the dumplings are assembled.",
+      "At this point, you can place the dumplings on a parchment-lined tray (spaced apart, so they aren't touching each other), and freeze solid. Then you can transfer to zip-top bags and store in the freezer.",
+      "To cook the dumplings, whether fresh or frozen, add a tablespoon of oil to a non-stick or cast iron skillet over medium high heat. Add the dumplings to the pan, and allow to fry. When the bottoms of the dumplings are lightly golden brown, add enough water to come about 1/4 inch up the pan, and cover. When the water has steamed off, uncover, and allow the dumplings to continue frying until golden brown. Serve with chili oil or our favorite dipping sauce!",
+      "If you'd rather not fry the dumplings, you can also toss them into boiling water, stir gently so they don't stick to the bottom of the pot, and cook until they float to the surface."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "3⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": "plus 3 tablespoons/45ml",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "small",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shiitake Mushrooms",
+        "unit": "oz",
+        "notes": "chopped",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shiitake Mushrooms",
+        "unit": null,
+        "notes": "soaked to reconstitute and chopped, dried",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Chicken",
+        "unit": "lb",
+        "notes": "preferably dark meat",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": "or dry cooking sherry",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "50cecfdf14b1b64e80e823d969993a1af8561d85b60d5d0ab202d25910b71485",
+    "lineage_hash": "b869d3efc5089018df3295aa75f41e53f2befbac1ae4832792b01ac0a69832db"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/chicken-dumplings-shiitake-mushrooms/",
+    "fetchedAt": "2026-08-02T15:26:28.424Z"
+  },
+  "rawSource": "https://thewoksoflife.com/chicken-dumplings-shiitake-mushrooms/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

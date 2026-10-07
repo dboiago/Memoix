@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Boozy Arnold Palmer",
+    "time": "20 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Collins",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake all of the ingredients together in a shaker with ice, then strain over crushed ice. Garnish.\nHibiscus Syrup: Add 12½ grams of dried hibiscus leaves to 2 cups of 1:1 simple syrup. Heat on medium-high for 20 minutes. Remove from heat and cool in ice bath. Strain, and store in fridge."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "9a4b8f9f6ac91a21ad19fedac79f4def54e3d68c70bcad06de86487582ff59d6",
+    "lineage_hash": "159e47f2d2a037c8f34cb5dd7c6c5a2e732ad91f0b9a06562e714c24e4e63256"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/boozy-arnold-palmer/",
+    "fetchedAt": "2026-08-04T01:53:18.169Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/boozy-arnold-palmer/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

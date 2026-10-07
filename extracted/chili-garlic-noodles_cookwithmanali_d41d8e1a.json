@@ -1,0 +1,174 @@
+{
+  "recipe": {
+    "name": "Chili Garlic Noodles",
+    "time": "35 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "509",
+      "carbohydrateContent": "88",
+      "fatContent": "10",
+      "proteinContent": "17"
+    },
+    "directions": [
+      "Chop everything before you start. Since we are going to cook on high heat, it&#039;s important to have everything ready to go.Boil noodles according to instructions on the package. I was supposed to boil mine for 3 to 4 minutes only. Once boiled, drain the noodles using a colander and then toss the noodles with 1/2 tablespoon oil so that they don&#039;t stick. Set aside.",
+      "Heat 2 tablespoons oil in a pan on medium-high heat. Once the oil is hot, add the grated garlic and saute for 30 seconds or so on high heat until it starts changing color.",
+      "Then add the sliced onion and jalapeño (or use green chilies) and toss to combine. Cook for around 1-2 minutes stirring often.",
+      "Then add the sliced red pepper and carrots. Mix to combine and cook for 2 more minutes on high heat.",
+      "Lower the heat and push veggies to the side. Then add the soy sauce, hot sauce (like sambal oelek), rice vinegar, sugar (optional), black pepper and salt. Mix well.",
+      "Stir in the boiled noodles and toss to combine the noodles with the sauce and the veggies. Use a fork and a spoon or a pair of tongs to mix everything together. Cook for another minute or so.",
+      "Add toasted sesame oil and mix. Turn off heat and garnish with green onions. Serve warm with chilli paneer or gobi manchurian."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Grams Noodles",
+        "unit": null,
+        "notes": "I use thin noodles",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": "30 ml, I used avocado oil",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "Tbsp",
+        "notes": "grated",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "large",
+        "notes": "sliced thin",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jalapeño",
+        "unit": null,
+        "notes": "chopped or use 2 green chilies",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Pepper",
+        "unit": "medium",
+        "notes": "sliced thin",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Pepper",
+        "unit": "medium",
+        "notes": "sliced thin",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "medium",
+        "notes": "sliced thin",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "60 ml",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Sauce",
+        "unit": "Tbsp",
+        "notes": "15 ml, I used sambal oelek",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Vinegar",
+        "unit": "Tbsp",
+        "notes": "22 ml",
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Oil",
+        "unit": "tsp",
+        "notes": "5 ml",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "chopped, to garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2d67755d6c8cb9529d916d17ec5e5f9f276a18f420794d5f895b42484ea3c026",
+    "lineage_hash": "90376d18933dc3020af384098bba5116d6ff03e6d45c1f6248e44f456e6d45b9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/chili-garlic-noodles/",
+    "fetchedAt": "2026-08-01T23:44:13.779Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/chili-garlic-noodles/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

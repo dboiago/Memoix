@@ -1,0 +1,139 @@
+{
+  "recipe": {
+    "name": "Aji de Gallina Empanadas",
+    "time": "1 hr 45 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "15",
+    "source": "scraped",
+    "cuisine": "PE",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In the food processor: Put flour, egg, sugar, salt, food coloring, water, and shortening in a food processor, and work pulsing on and off five or six times, until the dough comes together.",
+      "Transfer the dough to a lightly floured surface, and knead a little with your hands. At this moment wrap the dough in plastic film, or a Ziploc bag, and put in the fridge for 1 hour, or up to 7 days.",
+      "To make by hand: Place the flour in a large bowl, make a well in the center and add water, egg, sugar, salt, and yellow food coloring. With a fork, combine the ingredients in the center of the flour.",
+      "Add shortening, and working with your fingertips, mix everything with the flour, until it forms a dough that no longer sticks to your fingers.",
+      "Scrape onto a floured surface, knead lightly and divide in 15 portions, rolling each one into a ball. Cover with a kitchen towel.",
+      "Take one dough ball, cover completely with flour, roll with a rolling pin, forming an oval shape, not too thin.",
+      "Put ¼ cup of the cooled filling in the center of the dough. Fold in half to enclose the filling, press the edge and seal with the tines of a fork. Put on baking pans.",
+      "Preheat the oven to 350F. In a small bowl, mix 1 egg with 1 tablespoon water. Using a pastry brush, brush the empanadas with the egg wash.",
+      "Bake for 20-25 minutes. Put in wire racks to cool, and sprinkle with powdered sugar."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Aji De Gallina",
+        "unit": null,
+        "notes": "use leftovers, cooled",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "2¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Food Coloring",
+        "unit": "drops",
+        "notes": "optional",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shortening",
+        "unit": "oz",
+        "notes": "cold and cut in small dices",
+        "amount": "9",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": null,
+        "notes": "to roll the dough",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Powdered Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9c805b02d14a6577d8c9ab8a84e119d21e2ab4601c4045f817d8e3eeee8efad2",
+    "lineage_hash": "bb740680104a88ca6572ab13c97dbd5e163cffc9d4557a1722485afe710e8025"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://perudelights.com/aji-gallina-empanadas/",
+    "fetchedAt": "2026-09-25T21:26:50.838Z"
+  },
+  "rawSource": "https://perudelights.com/aji-gallina-empanadas/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

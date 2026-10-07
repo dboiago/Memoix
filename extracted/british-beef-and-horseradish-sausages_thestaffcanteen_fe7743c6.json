@@ -1,0 +1,90 @@
+{
+  "recipe": {
+    "name": "British Beef and Horseradish Sausages",
+    "time": "1 hr 10 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Toss the sausages in the MAGGI Beef Liquid Concentrated Fonds and roast in a hot oven at 180 until cooked (about 25 minutes).",
+      "Remove the sausages and keep warm.",
+      "Add the flour to the pan and cook for 1 minute then add the beer.",
+      "Bring to a simmer and leave to thicken.",
+      "If needed add some more MAGGI Beef Liquid Concentrated Fonds for flavour, as one of the key benefits of it is that you can add it any time during the cooking process.",
+      "Mix the MAGGI Mashed Potato Flakes and boiling water, then add the chopped parsley.",
+      "Serve the sausages on the mash then pour over the gravy.",
+      "Vary the sausages and mash or offer a choice of different varieties"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef and Horseradish Sausages",
+        "unit": null,
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maggi Beef Liquid Concentrated Fonds",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "British Beer",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maggi Mashed Potato Flakes",
+        "unit": "g",
+        "notes": "mixed with 1Ltr boiling water",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bunch Fresh Parsley",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "51febb57703b34cbd62056b13da2cda5edd316b183b9ffc055be901804aed624",
+    "lineage_hash": "749aef0645c9721f45021d71730673fdf7aac4858ed8dd19e0fa291c7236c6bd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.thestaffcanteen.com/chefs-recipes/british-beef-and-horseradish-sausages",
+    "fetchedAt": "2026-08-01T17:35:08.550Z"
+  },
+  "rawSource": "https://www.thestaffcanteen.com/chefs-recipes/british-beef-and-horseradish-sausages",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,113 @@
+{
+  "recipe": {
+    "name": "Brioche Bun",
+    "time": "1 hr 15 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the flour, sugar, cinnamon, nutmeg and salt in a large mixing bowl - you can double the sugar for a sweeter result",
+      "Make a well in the middle and mix in the eggs with your hands for 5 minutes",
+      "Add the yeast and continue to mix for another 5 minutes to form a smooth dough",
+      "Switch to a wooden spoon and gradually add the cubes of butter, keep mixing until all of the butter is incorporated and the dough is shiny and elastic",
+      "Rub a little oil into each mould of a muffin tray, or line each with a square of parchment paper. Place 40g of dough into each mould and leave in a warm place for 25 minutes to prove and double in size",
+      "Bake in the oven for 8 minutes, until golden brown and puffy, returning to the oven for an extra 3-4 minutes if not ready",
+      "Serve warm with butter and jam, or with ham and cheese"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Nutmeg",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yeast",
+        "unit": "g",
+        "notes": "fresh, or 12g dried yeast",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "diced",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sunflower Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5e136fefe64205f58dc6a881bfacd6a58a3b92e9841f5e36b05447c694421b98",
+    "lineage_hash": "f57d60804d7fe9577dbe3a16740d9c71b96a51620aaba80e7357734f3224b57e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/mini-brioche-recipe",
+    "fetchedAt": "2026-08-03T14:58:56.779Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/mini-brioche-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

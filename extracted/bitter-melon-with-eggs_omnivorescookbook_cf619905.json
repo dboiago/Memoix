@@ -1,0 +1,84 @@
+{
+  "recipe": {
+    "name": "Bitter Melon with Eggs",
+    "time": "15 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "94",
+      "carbohydrateContent": "4.4",
+      "fatContent": "6.7",
+      "proteinContent": "4.9"
+    },
+    "directions": [
+      "Bring a large pot of water to a boil. Add the bitter melon. Blanch for 30 seconds. Drain immediately and rinse the bitter melon with cold tap water to stop cooking. Drain thoroughly again and pat dry with paper towels. (*Footnote 1)",
+      "Heat 1/2 tablespoon oil in a medium-sized skillet and heat over medium-high heat until hot. Add the beaten egg. Lightly scramble and cook until just cooked through. Transfer to a plate.",
+      "Add the remaining 1/2 tablespoon oil and the green onion. Stir a few times to release the fragrance.",
+      "Add the bitter melon and sprinkle with the salt (*Footnote 2). Stir fry for 2 to 3 minutes, or until starting to soften. Taste the bitter melon. If it’s still very tough, add a splash of water and cover the pan for 1 minute to steam it.",
+      "Add back the cooked eggs. Cook and stir to mix well. Transfer everything to a plate and serve as a side."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bitter Melons",
+        "unit": null,
+        "notes": "total 1 lb, seeds removed and sliced to 1/4” (5 mm) thick pieces",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "beaten with a pinch of salt",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt (or to Taste)",
+        "unit": "tsp",
+        "notes": "*Footnote 2",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "or vegetable oil",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5ef2b476511ab3469499b59230e2717aab3a2081f584fa375afbe661f0efb70e",
+    "lineage_hash": "fa330f8a43646c0b23e9675f23a12daade4b01c32f7be37e1175d1fd5bab7a4d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/bitter-melon-with-eggs/",
+    "fetchedAt": "2026-08-02T11:06:07.520Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/bitter-melon-with-eggs/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

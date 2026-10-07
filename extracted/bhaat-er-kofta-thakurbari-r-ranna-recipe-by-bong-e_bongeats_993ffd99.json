@@ -1,0 +1,177 @@
+{
+  "recipe": {
+    "name": "Bhaat’er Kofta",
+    "time": "1 hr",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Soak saffron in the milk and let it steep until the color enriches. Grind nutmeg, cardamom, cinnamon, and clove to a fine powder. In a little ghee, fry the raisins until they go puffy.",
+      "Now transfer the cooked gobindobhog rice to a mixing bowl. Add a chopped green chilli, salt, powdered spices, grated khoya kheer, and saffron-steeped milk.",
+      "Mix together thoroughly, mashing the rice as you go for a creamy texture. Once the rice looks well mixed, add the fried raisins and fold them in.",
+      "Divide the mixture in 30 g portions. Apply oil to your hands and roll each portion into a round kofta.",
+      "Make a paste of ginger and the remaining green chilli. Add it to the yoghurt and beat until you have a smooth mix. This should be thin (like beaten eggs!), so add water to the yoghurt mixture to adjust consistency. Also lay out the flour and semolina two separate flat dishes.",
+      "Bread each kofta by first dusting it in flour, then dipping it in the yoghurt, and finally coating it with semolina.",
+      "To deep-fry the koftas, heat oil in a kadai. You can also fry these in ghee. We usually flavour our oil with a tablespoon of ghee. Once hot, drop the koftas into the oil and fry on medium-high heat for about 3 minutes until they are lightly coloured. Serve piping hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cooked Gobindobhog Rice",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pcs Green Chillies",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pc Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pc Cinnamon",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pc Clove",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raisins",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "g",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Khoya Kheer/mawa",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pinch Saffron",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yoghurt",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maida (flour) for Breading",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sooji (semolina) for Breading",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil + Ghee for Frying",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fbaeb0981efa31b097ed8aa5b592a49c311a2f37e5205b25bd47be9f40269d57",
+    "lineage_hash": "9eabff7c412face6c5ac21d90bdff5bc3654061e156f215ecd8b8ef729b61c64"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.bongeats.com/recipe/bhaater-kofta-thakurbarir-ranna",
+    "fetchedAt": "2026-08-01T17:15:53.928Z"
+  },
+  "rawSource": "https://www.bongeats.com/recipe/bhaater-kofta-thakurbarir-ranna",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

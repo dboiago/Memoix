@@ -1,0 +1,37 @@
+{
+  "recipe": {
+    "name": "Cheater Tin Julep",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Metal Cup",
+    "garnish": [
+      "Mint Sprig"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all ingredients except ice in a shaker, dry shake and strain into a metal cup or cheater tin filled with crushed ice. Garnish by taking a mint sprig by its stem, slapping it against the back of your hand and placing it in the drink.",
+      "Spearmint Simple SyrupCombine 1 cup of sugar, 3 cups of water and 1 cup of packed spearmint leaves in a saucepan set over medium heat. Bring the syrup to a boil, stirring to dissolve the sugar, and submerge the mint. Remove from heat, let cool to room temperature and strain into a clean glass jar. Refrigerate for up to 4 weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "70209450115bb45b5aabc0effb975397460d53d0c7aab22be159d74301e8185c",
+    "lineage_hash": "633a69d8a6b5fa031d782c1950f1c1b7ee7c229ceb972f32c4a150dbd6609b25"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cheater-tin-julep-recipe/",
+    "fetchedAt": "2026-08-03T22:04:41.877Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cheater-tin-julep-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

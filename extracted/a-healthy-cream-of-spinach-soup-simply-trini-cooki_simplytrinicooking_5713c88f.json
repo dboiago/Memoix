@@ -1,0 +1,159 @@
+{
+  "recipe": {
+    "name": "Cream of Spinach Soup",
+    "time": "30 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Chop big leaf thyme, fine leaf thyme, chadon beni, pimento, garlic etc. Set aside. Make your own chicken stock or use store bought stock.",
+      "Melt the butter over a medium flame. Saute garlic and onions until translucent. Then add the potatoes and mix for about 2 minutes.",
+      "Pour about 2 cups water. Add salt to taste and let boil until potatoes are cooked.",
+      "Blanch the chopped Spinach and set aside.",
+      "Pour out potatoes etc into a medium sized bowl and add the milk. When cooked, crush the potatoes using a hand mixer or a blender. Add the chopped Spinach afterward and the rest of seasonings. Adjust salt to taste. Serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Spinach Chopped Finely",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Evaporated Milk Carnation",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potato",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion Chopped",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Big Leaf Thyme Chopped",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Leaf Thyme Chopped",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Chopped",
+        "unit": "clove",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pimento Peppers Chopped",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Seasoning",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leaves Chadon Beni Chopped",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "063704d583da954607e476625dd039b2614158b9817f45c144f1a0fbe7ae53fc",
+    "lineage_hash": "e133f81ee35efc5bfde21ff128bc5eb2c37ccef3c30b8bbcecababce0a26fe28"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.simplytrinicooking.com/cream-of-spinach-soup/",
+    "fetchedAt": "2026-09-25T21:28:43.121Z"
+  },
+  "rawSource": "https://www.simplytrinicooking.com/cream-of-spinach-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,38 @@
+{
+  "recipe": {
+    "name": "Bamboo Cocktail",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [
+      "Citrus Peel Twist",
+      "Green Olive on a Cocktail Pick"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Stir all of the ingredients with ice until well-chilled. Strain into a chilled glass. Twist the citrus peel over the drink and place in the glass. Thread a green olive (if using) on a cocktail pick, and balance on the rim of the glass.",
+      "NoteA French dry vermouth, fino sherry, and Angostura bitters work well here."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "e5536d6bc34fa3cb318e0a1ff88be5dfa5cc2d6f2a8a04c6470b82289b204cb1",
+    "lineage_hash": "cc4441c435da530db6d0afea146251432ef73fcfb466959940446c90501dfc3b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bamboo-cocktail/",
+    "fetchedAt": "2026-08-03T22:32:57.827Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bamboo-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

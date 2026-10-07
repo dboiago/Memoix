@@ -1,0 +1,84 @@
+{
+  "recipe": {
+    "name": "Chicken and Red Bean Soup",
+    "time": "2 hr 30 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place all ingredients in a soup pot and bring to a boil. Reduce heat and simmer for 1 to 2 hours or until chicken is tender and fully cooked and the bean is soft to your likeness. Adjust salt as needed.",
+      "Remove from heat and serve warm."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Free Range Chicken (indonesian: Ayam Kampung)",
+        "unit": null,
+        "notes": "cut into 4-8 pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Dried Red Beans",
+        "unit": null,
+        "notes": "washed and drained",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Size Carrots",
+        "unit": "medium",
+        "notes": "peeled and cut into bite size pieces",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Size Tomatoes",
+        "unit": "medium",
+        "notes": "cut a cone around the core and remove it, cored",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "918f70e8bae1ae0a1dec518c136d764c91384cc238f71ab9c8309d41129e3532",
+    "lineage_hash": "bd3afa4eeed7e76cdde50e56b1e216c86f754f0b36d50deb605954c23784d7c4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/chicken-and-red-bean-soup.html",
+    "fetchedAt": "2026-08-02T11:10:01.429Z"
+  },
+  "rawSource": "https://dailycookingquest.com/chicken-and-red-bean-soup.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

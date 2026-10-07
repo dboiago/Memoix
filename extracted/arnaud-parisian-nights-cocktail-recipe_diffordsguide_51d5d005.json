@@ -1,0 +1,70 @@
+{
+  "recipe": {
+    "name": "Arnaud (Parisian Nights)",
+    "time": "3 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": "Coupe",
+    "garnish": [
+      "Blackberry"
+    ],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "187",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Select and pre-chill a COUPE GLASS.",
+      "Prepare garnish of blackberry.",
+      "STIR all ingredients with ice.",
+      "FINE STRAIN into chilled glass.",
+      "Garnish with blackberry."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gin",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Vermouth",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crème De Cassis",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ac0bba8209aee4857ce0abc5aa3877369c5d2c10353d3b582d98257bd0f31d86",
+    "lineage_hash": "1fd2cd0bc5a61c51bd84a4bc2aa8c713075bf24c957c768fd93e24c620c26597"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/107/arnaud-parisian-nights",
+    "fetchedAt": "2026-08-01T19:18:13.584Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/107/arnaud-parisian-nights",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

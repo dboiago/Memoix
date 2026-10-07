@@ -1,0 +1,47 @@
+{
+  "recipe": {
+    "name": "Buffa-que Wings with Smoked Blue Cheese Dip",
+    "time": "1 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cut the wings in half (into flats and drumettes), discarding the wingtips. Place in a bowl and sprinkle with the baking powder, salt, pepper, pimentón, and cayenne. Toss until wings are well coated. Drizzle with olive oil and mix well.",
+      "Meanwhile, set up your grill for indirect grilling and heat to medium-high (400 degrees). Brush or scrape the grill grate clean and oil it well. Just before grilling, add the wood chips or chunks to the coals or place in your gas grill’s smoker box.",
+      "Arrange the wings on the grate in a single layer, skin side up, leaving 1/2 inch in between each wing. Indirect grill the wings until sizzling, browned, and cooked through, 30 minutes, or as needed. (To check for doneness, make a slit in the thickest part of one of the drumettes—there should be no red at the bone.)",
+      "Meanwhile, make the sauce. Melt the butter in a skillet over medium-high heat. When sizzling, add the jalapeños and garlic and cilantro (if using). Fry these ingredients until just beginning to brown, 2 minutes. Stir in the sriracha and bring to a boil.",
+      "Transfer the wings to a platter. Pour the sriracha mixture over them, stirring to mix. Dust with the remaining cilantro (if using) and dig in!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Chicken Wings",
+        "unit": null,
+        "notes": "about 3-1/2 pounds",
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "701200a7cdb548ffade6da0b777f1f9ffe398507977eac81d8009b767123f8c1",
+    "lineage_hash": "441b5562aba3ace885febc0fbf9a8cc102564dca5e508518bbd135ad5a7a4296"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/buffa-que-wings-with-smoked-blue-cheese-dip/",
+    "fetchedAt": "2026-08-03T09:47:15.421Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/buffa-que-wings-with-smoked-blue-cheese-dip/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

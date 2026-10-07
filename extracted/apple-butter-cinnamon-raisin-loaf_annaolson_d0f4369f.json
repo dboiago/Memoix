@@ -1,0 +1,126 @@
+{
+  "recipe": {
+    "name": "Apple Butter Cinnamon Raisin Loaf",
+    "time": "1 hr 5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 325°F and grease a 9-x-5-inch loaf pan.",
+      "In a large bowl, whisk the apple butter, apple or orange juice and eggs. Stir in the grated apple.",
+      "In a separate bowl, stir the flour, baking powder, cinnamon, allspice, baking soda and salt. Add this to the apple butter mixture and stir just until evenly blended. Stir in the raisins and scrape the batter into the prepared pan, spreading to level.",
+      "Bake the loaf for 45 to 50 minutes until a tester inserted in the center of the loaf comes out clean. Cool the loaf in the pan for 20 minutes, then turn it out to cool completely before slicing."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Apple Butter",
+        "unit": "C",
+        "notes": "pure apple butter, which is made only of apples, slowly cooked down to concentrate their taste and sweetness",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple",
+        "unit": "C",
+        "notes": "alt: orange juice",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple",
+        "unit": "medium",
+        "notes": "peeled and coarsely grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Wheat Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Allspice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raisins",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "78c8e55f4a660182fa8195399ee35936ff68b0a21a510bc543b364fc5d072d7d",
+    "lineage_hash": "11548c1394da030b580bd97db2d21d753cbc94cd9b3296174256fa5991f444b1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/apple-butter-cinnamon-raisin-loaf/",
+    "fetchedAt": "2026-08-01T16:57:38.129Z"
+  },
+  "rawSource": "https://annaolson.ca/project/apple-butter-cinnamon-raisin-loaf/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

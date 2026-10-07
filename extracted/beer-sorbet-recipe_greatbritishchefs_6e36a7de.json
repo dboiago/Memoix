@@ -1,0 +1,122 @@
+{
+  "recipe": {
+    "name": "Beer Sorbet",
+    "time": "2 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "First make the syrup - this will form part of the sorbet and jelly, and be used to marinate the raspberries. Place the raspberry beer, sugar and glucose in a pan and bring to the boil. Set aside to cool completely",
+      "Now make the sorbet. Measure 660ml of the raspberry syrup and mix with the 660ml raspberry beer and crushed raspberries",
+      "Churn in an ice cream machine then place in freezer until required",
+      "Measure out 70ml of the raspberry syrup and set aside - this will be used to make the jelly. Marinate the raspberries in the remaining syrup for a couple of hours",
+      "Place the reserved 70ml of raspberry syrup in a pan and heat gently. Add the soaked gelatine, stirring until the gelatine has dissolved completely",
+      "Add the raspberry beer and cool in a bowl set over ice as quickly as possible - this will set the gas bubbles into the jelly and it will be slightly fizzy. The jelly must be eaten within a few hours of making it if you want to keep the fizz, as it dies after a couple of hours",
+      "To assemble the dish, place the marinated raspberries in the bottom of a bowl with a little of the syrup. Place a little of the jelly in the bowl on top of the raspberries then place a nice big quenelle of the beer sorbet on top of that",
+      "Garnish with fresh mint When at the table, pour a little bit of ice cold raspberry beer over the sorbet"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Raspberry Wheat Beer",
+        "unit": "ml",
+        "notes": null,
+        "amount": "660",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "390",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glucose",
+        "unit": "g",
+        "notes": null,
+        "amount": "235",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raspberry Wheat Beer",
+        "unit": "ml",
+        "notes": null,
+        "amount": "660",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raspberries",
+        "unit": "g",
+        "notes": "crushed",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raspberry Wheat Beer",
+        "unit": "ml",
+        "notes": null,
+        "amount": "330",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaves",
+        "unit": null,
+        "notes": "soaked",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raspberries",
+        "unit": "g",
+        "notes": null,
+        "amount": "480",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": null,
+        "notes": "for garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raspberry Wheat Beer",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a8d0d4c78c530a3e8756842c881ef590f51c5be693bafde8a683c17414bcfe0e",
+    "lineage_hash": "64cd2cc140b1846271aead4bc5a425a68d98ccee1a5f2646b901d59e01b8d9e2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beer-sorbet-recipe",
+    "fetchedAt": "2026-08-03T22:11:19.184Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beer-sorbet-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

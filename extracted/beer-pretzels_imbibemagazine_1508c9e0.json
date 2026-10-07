@@ -1,0 +1,43 @@
+{
+  "recipe": {
+    "name": "Beer Pretzels",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the yeast, salt and sugar in a small bowl or liquid measuring cup. Add the warm water and let sit for 5 minutes or until foamy.",
+      "In a large bowl, whisk together the flour and cayenne pepper. Cut the softened butter into the flour until the mixture resembles course crumbs.",
+      "Add the beer to the yeast mixture (it will foam!) and stir briefly to combine. Add the liquid to the flour and mix until the dough comes together.",
+      "Turn onto a lightly floured surface and knead for 5 minutes, or until no longer sticky. Cover with plastic wrap (just leave it right on the counter) and let rise for 30 minutes.",
+      "Line a baking sheet with parchment and lightly oil the paper. Set aside. Divide the dough into 32 pieces, keeping the unrolled pieces covered with plastic while you work.",
+      "Roll one ball into a 12-inch long rope. Form a U shape and twist the ends together twice. Fold the twisted part backward onto the center of U shape to form a circle. Gently press the ends of the rope onto the dough to seal.",
+      "Transfer to the prepared baking sheet, and repeat with the remaining dough.",
+      "Let rise for 20 minutes. While you wait, preheat the oven to 475 degrees F. and fill your largest pot with at least 5 inches of water. Bring the water to a boil.",
+      "When the pretzels have risen and the water is boiling, add the baking soda and gently transfer as many pretzels that will fit comfortably to the bath. Cook for a minute on each side and return to the baking sheet. Sprinkle with salt and bake for 12-15 minutes or until golden brown.",
+      "Serve warm with mustard."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "8319fc65c905a6f36a9de800ab2a42b0ee52f34ba992328e64d794c6f2f82208",
+    "lineage_hash": "37fb48c3d6369636a2a2ed60054aafd22111ff05338c334dd35655d531e72d41"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/pretz-ales-recipe/",
+    "fetchedAt": "2026-08-04T00:32:17.909Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/pretz-ales-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

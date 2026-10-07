@@ -1,0 +1,123 @@
+{
+  "recipe": {
+    "name": "Bacon Flatbread",
+    "time": "45 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, place the rashers of bacon under a medium grill and cook for 2-3 until very lightly browned but still moist. Remove from the grill, drain on absorbent kitchen paper and cut into 2cm chunks",
+      "To caramelise the onions, melt the butter in a heavy-based saucepan. Once foaming, add the onions and stir for the first 2 minutes. Add a generous pinch of salt, cover and turn down the heat as low as possible",
+      "Remove the lid, increase the heat and continue cooking until the onions start to catch on the base of the pan and begin to caramelise. Stir every so often until all the onions are a deep golden brown colour. Remove from the heat and allow to cool",
+      "For the bread, combine all the ingredients together apart from the salt. Add to a mixer with a dough hook for 6 minutes or knead by hand for 15-20 minutes to form a smooth elastic dough",
+      "Add the salt and knead for a further 2 minutes to combine",
+      "Remove the dough, shape roughly into a round ball and place in a bowl. Cover with cling film and leave to prove for 1 hour",
+      "Once the dough has doubled in size, roll the dough out (this will be the knock back stage), cover with cling film and leave to prove for a second time for an additional hour",
+      "Spread the onions evenly on to the dough, sprinkle the bacon, cheese, rosemary sprigs and sea salt over the dough and dust with flour. Pour 1 cup of water in a roasting tray and place in the oven.  This will make steam for when the bread is baking",
+      "Place the bread in the oven and cook for 15 minutes. Remove from the oven and spray or brush well with water. Return to the oven for a further 3 minutes, then spray again and return for a final 3 minutes, until the bread has risen and cooked through"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "T55 Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yeast",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cheddar",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bacon Rashers",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "Tbsp",
+        "notes": "plus extra for onions",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornish Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1fe492d5b8e48612e1505b65611d4ccddf3c0e617212039e8a17209009ccda80",
+    "lineage_hash": "1a08174ee28751d99d4619fca5ef95ec9e75d2d03f3d27e45ee8b91a819b6b7a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/bacon-flatbread-recipe",
+    "fetchedAt": "2026-08-03T16:25:21.753Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/bacon-flatbread-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

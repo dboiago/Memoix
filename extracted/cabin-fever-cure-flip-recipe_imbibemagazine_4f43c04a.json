@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Cabin Fever Cure Flip",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all the ingredients in a shaker and shake, without ice, until the cream and egg are emulsified. Add ice and shake again to chill. Strain into a rocks glass over fresh ice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "cb951bd28c818a7ec4bf010fafee012b7c10a510dbee7dd03f836cd4b2d02581",
+    "lineage_hash": "b37366c466109834765c0d3b474d64a85f90544c218b8abc404c571751edde16"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cabin-fever-cure-flip-recipe/",
+    "fetchedAt": "2026-08-03T22:54:09.651Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cabin-fever-cure-flip-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

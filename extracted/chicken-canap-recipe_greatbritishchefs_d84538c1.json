@@ -1,0 +1,153 @@
+{
+  "recipe": {
+    "name": "Chicken Canapé",
+    "time": "30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the coating for the chicken, toast the onion powder, garlic powder, cayenne pepper, celery seeds and pepper in a dry pan and freshly grind together",
+      "Add the salt and flour to the mix and stir thoroughly. You will have more than you need for 4 people, but this mix will keep well in an airtight container ready for next time",
+      "Cut the chicken into 4 equal pieces, removing any large pieces of sinew or fat",
+      "Toss the chicken in the seasoned flour, then carefully coat in the buttermilk",
+      "Place the chicken back into the flour mixture for a second coating. The chicken must be fully coated, but it should be uneven as this will produce a crispier end result",
+      "Mix the mustards and mayonnaise together in a bowl and add a little seasoning. Store in the fridge until ready to serve",
+      "In a deep-fat fryer, cook the chicken at 170°C until golden brown and cooked through. Serve with the mayonnaise"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Thigh",
+        "unit": null,
+        "notes": "de-boned",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cayenne Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wholegrain Mustard",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "English Mustard",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7d4da8507088248d3f6ef7742dfe6ea2bed488fa53c3c36b82a39f01ad33dd0e",
+    "lineage_hash": "ab125c4b71308be639705db007d5d6d3c4a89aebfe1d51b48feb526616d572c9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chicken-canape-recipe",
+    "fetchedAt": "2026-08-03T21:20:38.013Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chicken-canape-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

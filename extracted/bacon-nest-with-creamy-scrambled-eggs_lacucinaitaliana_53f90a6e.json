@@ -1,0 +1,77 @@
+{
+  "recipe": {
+    "name": "Bacon Nest with Creamy Scrambled Eggs",
+    "time": "15 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Fry the bacon in a pan for 3 minutes. Place the slices on paper towels. Arrange them four by four in 4 cookie cutters (3-inch diameter), creating 4 nests.",
+      "Cook the eggs in a pan with a pinch of salt and 2 tablespoons of sour cream, mixing with a fork until they've set but are still creamy.",
+      "Place the scrambled eggs in the bacon nests; remove the rings and serve, garnishing with chopped chives."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bacon",
+        "unit": "slices",
+        "notes": null,
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sour Cream",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3d17c18be4ec8f454655ab4e10b5054ac9b418073f4973c5c72166f46bce1db2",
+    "lineage_hash": "87503412ca3375fdfc47ef05a9ad799bd277423b106363507b5f377bda8e9cd6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/appetizers/bacon-nest-with-creamy-scrambled-eggs",
+    "fetchedAt": "2026-08-02T13:09:57.577Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/appetizers/bacon-nest-with-creamy-scrambled-eggs",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

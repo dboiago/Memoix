@@ -1,0 +1,80 @@
+{
+  "recipe": {
+    "name": "Spanish Flan",
+    "time": "1 hr 25 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "ES",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "289",
+      "carbohydrateContent": "54.27",
+      "fatContent": "5.43",
+      "proteinContent": "6.25"
+    },
+    "directions": [
+      "Preheat the oven to 300°F (150°C), and place six 6-ounce ramekins in a 9x13-inch pan with sides.  Fill a kettle with water and keep it on the boil.",
+      "Melt 1 cup (200g) of the sugar over medium-low heat until it is turns a golden caramel color, about 10 minutes. Avoid stirring the mixture, and watch it closely to prevent burning.",
+      "Once the caramel is a good color, immediately remove it from the heat and quickly pour it into the ramekins. If it starts to harden, put it back on the heat until it softens.",
+      "In a large mixing bowl, beat the eggs and remaining 1/2 cup (100g) of sugar until creamy. Add the milk and vanilla and stir until well combined.",
+      "Divide the custard evenly among the six ramekins, pouring on top of the caramel.  Cover each one with foil and place in the 9x13-inch pan.",
+      "Fill the pan with boiling water halfway up the sides of the ramekins.",
+      "Bake at 300°F (150°C) for 40-60 minutes, or until it jiggles when you lightly shake the ramekin. The flan is cooked when it has an internal temperature of 175°F (79°C) in the center.",
+      "Take the ramekins out of the water-filled baking dish and set aside to cool to room temperature. Then place in the fridge covered with foil and chill for at least 6 hours (preferably overnight).",
+      "To serve, take a butter knife and run it around the inside of the ramekin.  Place a plate on top of the ramekin and invert it, then remove the ramekin to reveal the flan. Serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": "300g",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "C",
+        "notes": "473 ml",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": "10 ml",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2d75fb930e89d1dcefced21788677dad0378cf33704fef8992979b3ddbadda52",
+    "lineage_hash": "6125b191d1a087f483b44b98541246170f3399ff831b12bfba35ff02fcbe52ae"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://spanishsabores.com/spanish-flan-recipe/",
+    "fetchedAt": "2026-08-02T08:10:39.085Z"
+  },
+  "rawSource": "https://spanishsabores.com/spanish-flan-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

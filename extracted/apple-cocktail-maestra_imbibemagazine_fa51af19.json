@@ -1,0 +1,35 @@
+{
+  "recipe": {
+    "name": "Apple Cocktail",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the first 5 ingredients in a shaker, then dry shake (without ice). Add ice, then shake again to chill. Double strain into a glass, top with soda, then garnish.",
+      "Apple syrup: Cut 1 granny smith apple into chunks, then juice. Combine the juice with equal parts of granulated sugar by weight. Blend briefly to emulsify."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "e1f3aee3d51ef8bbc1ce75fb1ef2b0c08e903e1a58d53c6ba9b35c5cb3b3a1c3",
+    "lineage_hash": "deeebd027ff3a4b8aac884e552ac4f7e0a8022eea3c0e867b7b90659ede4f492"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/apple-cocktail-maestra/",
+    "fetchedAt": "2026-08-03T19:50:33.133Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/apple-cocktail-maestra/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

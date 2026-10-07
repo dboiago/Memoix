@@ -1,0 +1,147 @@
+{
+  "recipe": {
+    "name": "Avocado and Chocolate Agar-Agar",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "ID",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Avocado puree: Use a food processor/blender to process avocado into an avocado puree.",
+      "Avocado agar-agar: Boil together milk and agar-agar powder in a small pot over medium heat, then add sugar and boil until sugar is completely dissolved.",
+      "Remove the pot from heat. Wait until the steam subsides. Add avocado puree and whisk until smooth. Pour into a loaf pan (I use a 9\"x5\" loaf pan). Use a spatula to smooth the mixture and chill in the fridge while we prepare the chocolate layer.",
+      "Chocolate agar-agar: Boil together milk, agar-agar powder, and vanilla extract in a small pot over medium heat, then add sugar and boil until sugar is completely dissolved.",
+      "Remove the pot from heat. Add chocolate chips, espresso powder, and cocoa powder (if using). Wait 5 minutes to let the chocolate chips melt, then whisk until smooth.",
+      "Remove the loaf pan from the fridge. The avocado agar-agar layer should have started to set.",
+      "Use a fork to lightly scratch the surface of the avocado layer, then very gently pour the chocolate agar-agar liquid over the avocado layer. Chill in the fridge until set, about 1 hour.",
+      "Serving: Gently run a thin blade around the loaf pan to loosen the agar-agar, then cover the pan with a plate and flip. The agar-agar should drop on the plate. Cut into slices to serve.",
+      "Storing: Store any leftover agar-agar in an air-tight container in the fridge for up to 1 week."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Avocado Agar-agar",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram (1/2 Lb) Ripe Avocado Flesh",
+        "unit": null,
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": "2 cup, Note 1",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram (2 1/4 Teaspoon) Agar-agar Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram (1/2 Cup) Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Agar-agar",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": "1 2/3 cup",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram (1 1/8 Teaspoon) Agar-agar Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "3½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram (1/4 Cup) Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Bittersweet Chocolate Chips",
+        "unit": null,
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Espresso Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "Tbsp",
+        "notes": "optional",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "18d8795cc5351fdffb16356a9a8ebc7efbef09ba97bf1d4e53e283bdcd683e9f",
+    "lineage_hash": "7c9f33b74d93c9b3c8c9274cd671b159b102ca61553f0a4e5e9b64a4e2286e0c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/avocado-chocolate-agar-agar.html",
+    "fetchedAt": "2026-08-01T21:17:29.580Z"
+  },
+  "rawSource": "https://dailycookingquest.com/avocado-chocolate-agar-agar.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

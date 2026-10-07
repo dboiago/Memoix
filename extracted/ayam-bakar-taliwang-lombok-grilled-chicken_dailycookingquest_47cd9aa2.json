@@ -1,0 +1,144 @@
+{
+  "recipe": {
+    "name": "Ayam Bakar Taliwang (Lombok Grilled Chicken)",
+    "time": "1 hr 15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "ID",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix together chicken and lime juice, set aside for 30 minutes in the fridge.",
+      "Heat oil in a wok/large frying pan on medium-high. Sauté spice paste until fragrant, about 5 minutes. Add chicken, palm sugar and salt, mix well. Cook until chicken is no longer pink.",
+      "Add coconut milk and water, mix well. Bring to a boil, then lower the heat to a simmer, cook until the sauce has reduced and the chicken is fully cooked and tender, about 45 minutes.",
+      "Set the cooked chicken aside. (If you want to store some of the chicken, store them at this stage)",
+      "Preheat boiler, and line a baking tray with aluminum foil.",
+      "Transfer the chicken to the prepared tray, broil until slightly charred, about 5-8 minutes. Serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Kilogram Bone-in Chicken Parts",
+        "unit": null,
+        "notes": "I use all drumstick",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Juice of 1 Lime",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Palm Sugar (indonesian: Gula Jawa)",
+        "unit": "Tbsp",
+        "notes": "*",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "ml",
+        "notes": "from 1 can of coconut milk",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spice Paste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Cayenne Chilies",
+        "unit": null,
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Shallot",
+        "unit": null,
+        "notes": "Indonesian: bawang merah",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Candlenuts (indonesian: Kemiri)",
+        "unit": null,
+        "notes": "**",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Shrimp Paste (indonesian: Terasi Bakar)",
+        "unit": "Tbsp",
+        "notes": "*",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9c9cfe1571ca4adf6262b4ea480353567025f52f05c3e8157098623b983bc494",
+    "lineage_hash": "f66a8bddb57e21f53c50059571f157f6f5cd6832eaa947e843602f1c1d58dbd2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/ayam-bakar-taliwang-lombok-grilled-chicken.html",
+    "fetchedAt": "2026-08-02T05:53:08.803Z"
+  },
+  "rawSource": "https://dailycookingquest.com/ayam-bakar-taliwang-lombok-grilled-chicken.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,125 @@
+{
+  "recipe": {
+    "name": "Cherry Barbecue Sauce",
+    "time": "15 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the cherry soda, cherries, cherry preserves, lemon zest and juice, butter, sugar, cinnamon, and 3 tablespoons of wine in a heavy saucepan and gradually bring to a boil over medium heat. Reduce the heat and gently simmer the sauce to cook the cherries and concentrate the flavors, 5 minutes.",
+      "Place the remaining 1 tablespoon wine and cornstarch in a small bowl and stir to form a slurry (thick paste). Whisk this paste into the sauce. Bring the sauce to a boil: it will thicken.",
+      "Correct the seasoning, adding salt, pepper, sugar, or lemon juice to taste: the sauce should be highly seasoned."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Black Cherry Soda",
+        "unit": "oz",
+        "notes": "3/4 cup",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ripe Cherries",
+        "unit": "C",
+        "notes": "or 1 17-ounce can Bing cherries, drained, pitted, fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherry Preserves",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Zest",
+        "unit": "tsp",
+        "notes": "finely, grated",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Red Wine",
+        "unit": "C",
+        "notes": "divided use",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7999688179605a976030d197142cdf4688a0c696e71c1db8be711fee94ec494e",
+    "lineage_hash": "5c1520f03116743ac37d16e92e7dfc2c0e5726a20f5eabe80e55e1d6da762b1d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/cherry-barbecue-sauce-2/",
+    "fetchedAt": "2026-08-03T03:43:35.616Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/cherry-barbecue-sauce-2/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

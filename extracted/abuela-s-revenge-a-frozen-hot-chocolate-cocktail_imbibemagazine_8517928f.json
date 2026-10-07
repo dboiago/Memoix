@@ -1,0 +1,38 @@
+{
+  "recipe": {
+    "name": "Abuela's Revenge: A Frozen Hot Chocolate Cocktail",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Collins",
+    "garnish": [
+      "Grated Cinnamon",
+      "Dehydrated Orange Slice"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Prepare the Abuelita hot chocolate according to the directions on the package, then chill completely. Shake all of the ingredients with ice, then strain into a Collins glass filled with crushed ice. Top with sweet cold foam and garnish with grated cinnamon and a dehydrated orange slice.",
+      "Sweet Cold FoamCombine 1/4 cup of 2 percent milk, 1/4 tsp. of vanilla extract, and 1 Tbsp. of powdered sugar in a mixing glass. Froth with a handheld milk frother for about 30-45 seconds, until it reaches the desired fluffy texture. (Prepared sweet cream cold foam can also often be found in the grocery store near the whipping cream.)"
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "c9a5eddd759a132afe33d20d2513764954080e5e64d6bc5fa1c862b1c78b844c",
+    "lineage_hash": "04bb22836fe878cfedda814777323e528d326621442a3f9bd470f7a0205adb21"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/abuelas-revenge-frozen-hot-chocolate-cocktail/",
+    "fetchedAt": "2026-08-04T00:25:48.808Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/abuelas-revenge-frozen-hot-chocolate-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

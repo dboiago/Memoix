@@ -1,0 +1,158 @@
+{
+  "recipe": {
+    "name": "Banana Leaf Bream",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat the rapeseed oil and fry the onion until light golden brown",
+      "Combine the remaining ingredients in a blender, apart from the fish, banana leaf and coconut oil, and blend to a thick paste",
+      "Coat the fish in this paste and wrap well in the banana leaf",
+      "Cook the fish on a pan with the coconut oil for about 6 minutes on each side (or 2 minutes on each side if using fillets), over a medium heat"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rapeseed Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "tsp",
+        "notes": "lightly toasted",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Mango",
+        "unit": "g",
+        "notes": "peeled and grated",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "in",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemongrass Stalk",
+        "unit": null,
+        "notes": "remove the drier, huskier layers and use only the first 2-3 inches of the white bit at the bottom",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Grated Coconut",
+        "unit": "Tbsp",
+        "notes": "or 2 tbsp desiccated coconut soaked for 30 mins",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kashmiri Chilli Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Bream",
+        "unit": null,
+        "notes": "or use 2 fillets, scaled and gutted",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Banana Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a1d79cfee3fb99d921b7fcecbe4a3c4b67486f2d0b5c2d2f67c85e8e5e4cffc3",
+    "lineage_hash": "e46a1681f5ccb43522c3b47c7c41c252f4dda0eaf1e8073ed8fddd5b29eb8e62"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/banana-leaf-bream-recipe",
+    "fetchedAt": "2026-08-02T18:27:21.509Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/banana-leaf-bream-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

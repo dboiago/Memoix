@@ -1,0 +1,242 @@
+{
+  "recipe": {
+    "name": "Chilli Paneer",
+    "time": "40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "357",
+      "carbohydrateContent": "22",
+      "fatContent": "25",
+      "proteinContent": "11"
+    },
+    "directions": [
+      "Cut paneer into cubes. To a large bowl, add 3 tablespoons cornstarch, 3 tablespoons flour along with salt, pepper.",
+      "Add water to make a free flowing batter, it should neither be thick nor thin. I added little less than 1/2 cup water here. Meanwhile heat oil in a wok/kadai on medium heat to deep fry the paneer.",
+      "Dip each paneer cube into the batter. And then add them into the hot oil.",
+      "Fry until the paneer pieces get golden brown and crispy from both sides. Drain the fried paneer on paper towel.",
+      "Meanwhile, in a measuring jar or bowl, add soy sauce (I use regular and dark soy sauce, 1 tablespoon each), rice vinegar, green chili sauce, tomato ketchup and sugar. Mix until all is well combined and set aside.Also mix 1 tablespoon cornstarch with 3 tablespoons water until cornstarch dissolves completely and set aside.",
+      "Heat sesame oil and avocado oil in wok on high heat. Once oil is hot, add the ginger, garlic, celery and green chili. Saute for 1 minute.",
+      "Then add the quartered onion and peppers. Cook for 2 minutes. Veggies should remain crunchy and you should cook on high heat.",
+      "Add in the prepared sauce and mix and lower heat to medium.",
+      "Then add in the prepared cornstarch slurry. Mix well, sauce will begin to thicken. Add additional 3 to 4 tablespoons water.",
+      "Stir in the fried paneer cubes. Toss to combine the paneer with the sauce.Turn off heat and garnish with green onions.",
+      "Serve Chilli Paneer with noodles or rice!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Grams Paneer",
+        "unit": null,
+        "notes": "cut into cubes",
+        "amount": "250",
+        "section": "frying the paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "frying the paneer",
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "frying the paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "frying the paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": "ground",
+        "amount": "¼",
+        "section": "frying the paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": "to make a free flowing batter, little less than 1/2 cup",
+        "amount": "0",
+        "section": "frying the paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for frying, I used canola oil",
+        "amount": "0",
+        "section": "frying the paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "30 ml, I used 1 tablespoon regular soy sauce and 1 tablespoon dark soy sauce",
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Rice Vinegar",
+        "unit": "Tbsp",
+        "notes": "15 ml",
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chili Sauce",
+        "unit": "tsp",
+        "notes": "15 ml",
+        "amount": "3",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Ketchup",
+        "unit": "Tbsp",
+        "notes": "30 ml",
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "Cornstarch slurry",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Cornstarch slurry",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": "22 ml",
+        "amount": "1.5",
+        "section": "Stir-Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Avocado Oil",
+        "unit": "Tbsp",
+        "notes": "15 ml",
+        "amount": "1",
+        "section": "Stir-Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "Stir-Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "Stir-Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Celery",
+        "unit": "stalk",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": "Stir-Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chili",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": "Stir-Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "medium",
+        "notes": "quartered and petals separated",
+        "amount": "1",
+        "section": "Stir-Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Green Pepper",
+        "unit": null,
+        "notes": "cut into squares",
+        "amount": "1",
+        "section": "Stir-Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3-4",
+        "section": "Stir-Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "chopped, for garnishing",
+        "amount": "0",
+        "section": "Stir-Fry",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "548fe1929d46fa6609c3fd238cd95045f4344902a449b0d4eb78e37a31f79a7a",
+    "lineage_hash": "a7ddb7a31ec16d6b339257b7bbe59068b3b73c2b99f7d0959fbc23a48897b95f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/chilli-paneer/",
+    "fetchedAt": "2026-08-02T00:58:19.269Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/chilli-paneer/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

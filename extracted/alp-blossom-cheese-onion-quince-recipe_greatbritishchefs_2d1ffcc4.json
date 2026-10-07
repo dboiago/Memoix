@@ -1,0 +1,206 @@
+{
+  "recipe": {
+    "name": "Alp blossom Cheese, Onion, Quince",
+    "time": "2 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the onion tuile, melt the butter in a pan over a medium heat. Add the onion and cook down until very soft but not coloured, about 15–20 minutes",
+      "Combine the onion purée with the tapioca flour and salt",
+      "Preheat the oven to 150°C (don’t use fan)",
+      "Divide this mixture between 12 moulds which are 5 x 2cm and bake for 30 mins until golden brown in colour. Set aside",
+      "Add all the ingredients for the alp blossom custard to a pan, and cook out, whisking frequently, until it reaches 85°C",
+      "Pass the mixture through a fine mesh sieve and pour into 12 ring moulds which are 5 x 1.5 cm",
+      "Let cool and then freeze to allow them to pop out of the moulds easier",
+      "Combine all the ingredients for the pickled sea buckthorn gel and cook out in pan over a medium heat until it comes to the boil for 2 mins",
+      "Leave to set in a tray until firm and then blend until it forms a smooth gel",
+      "Divide the quince paste between several paco containers. Paco twice until it forms a smooth gel. Alternatively, blend in a regular blender, thinning with apple juice as needed",
+      "10 minutes before serving, take the custards out the freezer to come up to room temperature",
+      "To plate, place the onion tuile on the plate, topped by the cheese custard. Place quince purée in the hole in the middle, and then top the custard with another onion tuile. Dot pickled sea buckthorn gel in small dots on the tuille. Finally, finish the dish with edible flowers"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "g",
+        "notes": "finely diced",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tapioca Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "38",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "2.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Alp Blossom Cheese",
+        "unit": "g",
+        "notes": "rind removed and grated",
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cane Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "2.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine",
+        "unit": "g",
+        "notes": "bloomed in cold water",
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "62",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "62",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Buckthorn Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Agar Agar",
+        "unit": "g",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Membrillo Quince Paste",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Juice",
+        "unit": null,
+        "notes": "optional",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Edible Flowers",
+        "unit": null,
+        "notes": "a mix of dried calendula, rose, cornflowers and lavender, to mimic the flowers on the cheese",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3f5abac6664cd963205ea2282f569b5bfb1e5dbe4aaabb6a75e1644b1c9251a0",
+    "lineage_hash": "38385044e7fab1b2846e095399eb6288a51bf90542e8ab676e552bc7955672f0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/alp-blossom-cheese-onion-quince-recipe",
+    "fetchedAt": "2026-08-02T13:08:57.378Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/alp-blossom-cheese-onion-quince-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

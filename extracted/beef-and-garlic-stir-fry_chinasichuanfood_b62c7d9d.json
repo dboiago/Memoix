@@ -1,0 +1,138 @@
+{
+  "recipe": {
+    "name": "Beef and Garlic Stir Fry",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "324",
+      "carbohydrateContent": "6",
+      "fatContent": "24",
+      "proteinContent": "21"
+    },
+    "directions": [
+      "Add the steak to a hot pan, the cook for 3 minutes. Turn as you regular way. Transfer out and cut the steak into cubes around 1.5 cm squares.",
+      "In another wok, add oil and then fry the garlic cloves until slightly browned on surface.",
+      "Place beef cubes and red onion in.  Fry for another 1 minutes. Pour the sauce, add chopped green onion and mix well. Serve hot!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Garlic",
+        "unit": null,
+        "notes": "peeled",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Steak",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": null,
+        "notes": "cut into pieces",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "alt: scallion, cut into sections",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pinch of Salt",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Cooking Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn Starch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "tsp",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b7b0e9932e8807763e4af064f656071dc026b5587d8c6e52deb2e501fd8fa149",
+    "lineage_hash": "d8512ecd095dacc6bcc5a53acd96a611e5f401e1fc4fe37b3f5652b9b95b98a6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/beef-and-garlic-stir-fry/",
+    "fetchedAt": "2026-08-02T07:09:34.919Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/beef-and-garlic-stir-fry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

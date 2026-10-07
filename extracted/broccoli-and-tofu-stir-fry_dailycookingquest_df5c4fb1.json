@@ -1,0 +1,135 @@
+{
+  "recipe": {
+    "name": "Broccoli and Tofu Stir-Fry",
+    "time": "15 min",
+    "course": "vegn",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat a wok over medium-high heat. Once the wok feels hot, add oil and swirl to coat the pan.",
+      "Add minced garlic and sauté for 30 seconds, or until the color turns golden brown.",
+      "Add broccoli florets and cook for 1 minute, stirring often. Add tofu cubes and the sauce, mix well and bring to a boil.",
+      "Once the sauce boils, add the cornstarch slurry and cook for another 2 minutes or until the sauce is thick.",
+      "Turn off the heat, transfer the dish to a serving plate, and serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram (1 Lb) Broccoli Florets",
+        "unit": null,
+        "notes": "washed and drained",
+        "amount": "450",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Block (450 Gram / 1 Lb) Firm Tofu",
+        "unit": null,
+        "notes": "cut into cubes",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch Slurry (mix 1 Tablespoon Cornstarch + 2 Tablespoon Water)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sauce (mix the Following)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stock",
+        "unit": "C",
+        "notes": "Note 1",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "Note 2",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "14456819ad3899ce0e328fe33d7e0a8a3068976278fbe5ce32abf22379f0e4c6",
+    "lineage_hash": "c0e050806f0b8acba1b355ea0ded0bf6815326539e933bee4278839b7cba3ca7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/broccoli-and-tofu-stir-fry.html",
+    "fetchedAt": "2026-08-01T17:47:18.148Z"
+  },
+  "rawSource": "https://dailycookingquest.com/broccoli-and-tofu-stir-fry.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

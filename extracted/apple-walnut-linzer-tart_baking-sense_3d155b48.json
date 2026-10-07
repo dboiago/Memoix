@@ -1,0 +1,169 @@
+{
+  "recipe": {
+    "name": "Apple Walnut Linzer Tart",
+    "time": "2 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "517",
+      "carbohydrateContent": "69",
+      "fatContent": "26",
+      "proteinContent": "6"
+    },
+    "directions": [
+      "Grind the walnuts with a little flour.",
+      "After adding the sugar, spices, butter and flour the mixture looks like wet sand.",
+      "Add the yolks and process until the dough forms a big clump.",
+      "Add the cornstarch to the apples and cook until the juices thicken.",
+      "Roll the dough between two sheets of parchment, or press the crumbs into the tart pan.",
+      "Use the parchment to transfer the dough into the pan.",
+      "Spread the cooled filling into the crust.",
+      "Use a pizza cutter or sharp knife to cut strips of dough. Use a small spatula to life the strips onto the tart.",
+      "It’s ok if the strips crack as you place them on the tart. They’ll glue together as they bake.",
+      "Allow the tart to cool completely before removing the sides of the pan."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Apples",
+        "unit": "lb",
+        "notes": "peeled, cored, ½\" cubes",
+        "amount": "3",
+        "section": "Apple Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": "Apple Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Real Maple Syrup",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "2",
+        "section": "Apple Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": "Apple Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Apple Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Apple Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Walnuts",
+        "unit": "oz",
+        "notes": "1 ½ cups",
+        "amount": "6",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "oz",
+        "notes": "2 cups, see note",
+        "amount": "10",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "cut into 1\" chunks, chilled",
+        "amount": "8",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Dough",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5b7ec9ed25909f9cde4d6e452bd2406f2644492400f2ed7c5288acaf80d8b68a",
+    "lineage_hash": "629af878fe0bac91e498508550cffcad9ad93dc96d3e77beff57b20ffbd4ae76"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2018/09/21/apple-walnut-linzer-tart/",
+    "fetchedAt": "2026-08-02T02:05:18.962Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2018/09/21/apple-walnut-linzer-tart/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

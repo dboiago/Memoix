@@ -1,0 +1,68 @@
+{
+  "recipe": {
+    "name": "3 Ingredient Vegan Nutella",
+    "time": "15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "143",
+      "carbohydrateContent": "8",
+      "fatContent": "13",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "Preheat your oven to 350F (180C). Spread the hazelnuts in a single layer on a baking sheet, and roast for 7 - 10 minutes until the hazelnuts are lightly golden.",
+      "When the hazelnuts are cool enough to handle, pour the nuts into the center of a clean kitchen towel. Gather the corners of the tea towel and while one hand holds the tea towel closed, use your other hand to press and rub the hazelnuts against each other inside the tea towel. Continue rubbing and rolling the hazelnuts until most of the hazelnut skins are rubbed off. It&#39;s ok if some nuts still have skin, you just want to rub off most of it as the skin is bitter. The skins will fall to the bottom of the tea towel making it easy to collect the skinned hazelnuts.",
+      "Gather the hazelnuts and add them to your food processor. Discard the skins. Process the hazelnuts. The hazelnuts will first turn into a powder, then they will begin to turn into a paste, but keep blending until the hazelnuts release oil and it turns into a shiny liquid- this is hazelnut butter! This will take at least 3 - 5 minutes of blending.",
+      "Melt the chocolate chips in the microwave in 20-second increments, stopping to stir, and being careful to not burn the chocolate. Alternatively, you can melt the chocolate in a double boiler.",
+      "Add the melted chocolate chips, and salt to the hazelnut butter. Blend more until completely smooth consistency. Pour into a sealable jar or container. It will be very liquidy but will thicken into spreadable vegan Nutella after cooling overnight. It will be shelf-stable for 2 - 3 months, or you can store it in your fridge or freezer. If you find it gets too firm, just pop it in the microwave for a few seconds to soften."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Hazelnuts",
+        "unit": "C",
+        "notes": "9oz",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegan Chocolate Chips",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "97b400625a45585548fc12ed8e6fa9dc66d2e1d5645942083602e9ad7d1e5591",
+    "lineage_hash": "2d9d9e54c0760de6a50606cebfb0be1ece8923d77ce2d38ec1d0582af9bdcfad"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/3-ingredient-vegan-nutella/",
+    "fetchedAt": "2026-08-02T07:24:31.927Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/3-ingredient-vegan-nutella/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,196 @@
+{
+  "recipe": {
+    "name": "Chicken Pakora",
+    "time": "40 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "416",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Marinate the chicken with all the ingredients _except_ egg, cornstarch and rice flour. From here, you can proceed to the next stage immediately, or keep the chicken in the fridge until you are ready to fry!",
+      "Just before frying, mix in an egg, and the cornstarch and rice flour (they equal 50 g in weight and are in the ratio 3:1). If your mixture is too runny, you may have to increase the flours a little in the given proportion.",
+      "Drop each piece of chicken with a little mixture attached into 150°C oil. Fry on medium-low heat for about 6 minutes. Don't raise the heat or the chicken won't cook through. Drain over paper towels.",
+      "You can eat these immediately, but if you want the pakoras extra-crisp, refry them in 180°C oil on high heat.",
+      "Serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Thigh",
+        "unit": "g",
+        "notes": "6-cm pieces, boneless",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "MSG",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kashmiri Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gorom Moshla",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kasuri Methi Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yoghurt",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "g",
+        "notes": null,
+        "amount": "38",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil for Deep-frying",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "47a249fb4741468f7f64d6a144b101abe33c3eb006267e668c626d11e061de4a",
+    "lineage_hash": "1d49b58e99b631cd0cb7e46bff87e8a4d23bfee34cc2103b459b459d1a1014f1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.bongeats.com/recipe/chicken-pakora",
+    "fetchedAt": "2026-08-01T18:25:39.018Z"
+  },
+  "rawSource": "https://www.bongeats.com/recipe/chicken-pakora",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

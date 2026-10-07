@@ -1,0 +1,116 @@
+{
+  "recipe": {
+    "name": "Bittersweet Figs",
+    "time": "20 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "5",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make bittersweet figs, first cook 8-10 figs in a pot with 4 peeled and halved shallots, 3/4 cup white wine, 3/4 cup water, 3/4 cup white wine vinegar, 1 tsp salt and 2 tsp sugar, 2 bay leaves, one clove, and chili flakes to taste.",
+      "Cover and cook over the lowest heat setting; 1 minute after it reaches the boil, pierce the figs and cook a further 5 minutes; turn off the heat and leave to cool in the cooking liquid. Remove the figs."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Firm Figs",
+        "unit": null,
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "oz",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Clove",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili Pepper",
+        "unit": null,
+        "notes": "dried",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "39cd12b3f09c2d215cbca8c41c4d1e954c8f4948aed40fd5412e3cf66e2a2651",
+    "lineage_hash": "2389b9abcaff360b753c538bde27e28e2491f6080b0261f1df180ec76a06dfec"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/appetizers/bittersweet-figs",
+    "fetchedAt": "2026-08-03T02:09:38.963Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/appetizers/bittersweet-figs",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,135 @@
+{
+  "recipe": {
+    "name": "Air Fryer Chinese Eggplant",
+    "time": "17 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "100",
+      "carbohydrateContent": "8.9",
+      "fatContent": "7",
+      "proteinContent": "1.5"
+    },
+    "directions": [
+      "If using regular (non-Asian) eggplant, place eggplant pieces in a large bowl and add water to cover. Add 1 teaspoon salt, mix well. Place a pot lid on top to keep the eggplant under the water for 15 minutes. Drain and pat dry.",
+      "Preheat the air fryer to 400°F (200°C) for 5 minutes.",
+      "Add the eggplant into a big bowl with peanut oil. Sprinkle with salt and pepper. Toss to mix well.",
+      "Combine the vinegar, soy sauce and sugar in a small bowl and stir to mix well.",
+      "Line the air fryer tray with parchment paper for easy cleaning (optional). Spread the eggplant onto the air fryer basket without overlapping. Cook in batches if needed.",
+      "Air fry at 400F (200°C) for 5 to 6 minutes, or until the eggplant just starts to turn tender and char on the edges.",
+      "Take out the air fryer tray and place all the cooked eggplant onto the tray. Pour the sauce mixture over it. Add the garlic, green onion and chili pepper (if using). Toss to mix well.",
+      "Return the tray to air fry again for another 2 minutes, until the eggplant turns soft. Garnish with chili pepper, if using. Serve hot as a side dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chinese Eggplant (or Regular Eggplant)",
+        "unit": "lb",
+        "notes": "cut into irregular bite-size pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "or vegetable oil",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinkiang Vinegar",
+        "unit": "Tbsp",
+        "notes": "or rice vinegar",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thai Chili Pepper",
+        "unit": null,
+        "notes": "Optional, sliced, for garnish",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Seeds",
+        "unit": null,
+        "notes": "for garnish (Optional)",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "837fe4937c57871e92fc0c2592afac189164f41a6bce7400785883735c0e310c",
+    "lineage_hash": "5d766acdbe3e814523ad1dc63c942292c3b2b1a40558b03c8927ba8772af4825"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/air-fryer-eggplant/",
+    "fetchedAt": "2026-08-02T05:29:57.399Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/air-fryer-eggplant/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

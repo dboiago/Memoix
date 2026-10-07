@@ -1,0 +1,138 @@
+{
+  "recipe": {
+    "name": "Cherries Jubilee",
+    "time": "50 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the yoghurt and vanilla panna cotta, combine the cream, sugar and vanilla pods in a saucepan",
+      "Bring the mixture slowly to the boil and stir in the soaked gelatine. Allow to cool for 10 minutes and stir in the yoghurt",
+      "Pass the mixture through a fine sieve and then pour into 4 individual cups or ramekins. Place in the fridge and leave to set overnight",
+      "For the cherries jubilee, bring the sugar, puréed cherries and lemon zest to the boil, then turn to down to a simmer and cook for 5 minutes",
+      "Add the whole cherries and simmer gently until tender, then remove the cherries with a slotted spoon",
+      "Allow the liquid to reduce until slightly thickened. Dissolve the cornflour in a little water and add to the mixture. Bring back to the boil",
+      "Once boiling, remove from the heat. Divide the whole cherries between plates and pour over the sauce",
+      "To flame the cherries, in a separate pan heat the cherry brandy. Light with a match or lighter until it flames and pour over the cherries. Serve with the turned out vanilla and yoghurt panna cottas and some ginger biscuits for an extra touch"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cherries",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strips of Lemon Peel",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherries in Light Syrup",
+        "unit": "g",
+        "notes": "puréed",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour",
+        "unit": "Tbsp",
+        "notes": "dissolved in a tbsp of water",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherry Brandy",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Natural Yoghurt",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pods",
+        "unit": null,
+        "notes": "split and seeds discarded",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "65",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaves",
+        "unit": null,
+        "notes": "soaked in cold water",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Biscuits",
+        "unit": null,
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d5f4f4afdffe6bcb3f3b233c07516753121665647c910b46e947b52fd21fd9c6",
+    "lineage_hash": "816857ea80a4d553325088987dbed0fc3d9d191dfb818d54b3b8cff9becb468c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cherries-jubilee-recipe",
+    "fetchedAt": "2026-08-03T18:58:04.501Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cherries-jubilee-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,117 @@
+{
+  "recipe": {
+    "name": "Century Egg Congee with Chicken (皮蛋瘦肉粥)",
+    "time": "20 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the rice, stock, chicken, Shaoxing wine, and ginger in your Instant Pot. Set it to cook at high pressure for 15 minutes. If using a pressure cooker, cook over medium heat until pressure is added, then cook at low heat for 15 minutes. Once done, release the pressure naturally for at least 10 minutes before releasing it quickly. Note, do not use fast release right after cooking, because the congee is starchy and might cause the valve to clog.",
+      "Once the pressure is released, uncover the pot, remove the chicken and place it onto a plate. Shred it with two forks.",
+      "Add the century eggs, green onion, sesame oil (if using), and the shredded chicken to the pot. Stir to mix well. Taste the congee and add salt if needed."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Uncooked Short Grain White Rice",
+        "unit": "C",
+        "notes": "120 ml, or medium grain",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Broth",
+        "unit": "C",
+        "notes": "*Footnote 1",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Thighs",
+        "unit": null,
+        "notes": "about 10 oz. / 300 g, frozen cuts work, too, if using Instant Pot",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": "or dry sherry",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "finely minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Century Eggs",
+        "unit": null,
+        "notes": "diced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fried Wonton Wrapper",
+        "unit": null,
+        "notes": "for topping (*Footnote 2) (Optional)",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d69f37d28c3e7f636c33540fca860c24313bd675f581ae77b1114580cc270d81",
+    "lineage_hash": "f78a5171e0cdd12d9fc32cb155c5be698dc5c6fdc346a9af09673f23a261a298"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/century-egg-congee/",
+    "fetchedAt": "2026-08-02T03:17:15.197Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/century-egg-congee/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

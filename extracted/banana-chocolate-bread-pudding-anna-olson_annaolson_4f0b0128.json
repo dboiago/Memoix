@@ -1,0 +1,87 @@
+{
+  "recipe": {
+    "name": "Banana Chocolate Bread Pudding",
+    "time": "1 hr 5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 375 °F (190 °C). Grease a 9-inch (23 cm) springform pan, wrap the bottom in foil and place the pan in a roasting pan.",
+      "Cut the banana bread into 1-inch (2.5 cm) cubes and spread them out on an ungreased baking tray. Toast the banana bread until the outsides of the cubes have dried, about 10 minutes. Leave on the tray to cool.",
+      "Place the chopped chocolate in a bowl. Heat the milk to just below a simmer and pour it over the chopped chocolate in a bowl. Whisk the mixture until the chocolate has melted.",
+      "In a separate bowl, whisk the eggs, sugar and vanilla. While whisking, add the chocolate milk to the eggs and whisk until evenly blended. Add the banana bread pieces and stir to coat. Let the mixture sit for 10 minutes, stirring occasionally (the banana bread cubes will begin to break up – that is expected). Reduce the oven temperature to 350 °F (175 °C).",
+      "Pour the mixture into the prepared pan and pour boiling water into the roasting pan so that it comes halfway up the side of the springform pan. Bake the pudding for 60 to 70 minutes, until a tester inserted in the centre of the pudding comes out clean. Let the cake cool for 15 minutes, then remove it from the water bath before cooling it to room temperature. Chill the pudding in the pan until set, about 5 hours. The bread pudding is best served chilled, and sliced into wedges, just like a cake. The pudding will keep, refrigerated, up to 3 days."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Loaf Banana Chocolate Chip Bread",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Semisweet Chocolate",
+        "unit": "oz",
+        "notes": "chopped",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "228b863534d4893bfe9a205aa9f043219952053d8bc4cf58b559cdc9420a7bcb",
+    "lineage_hash": "0e73d72e3c0911fbdcc0b49ddfb142dab1fb2db79129ec7ca2ee998e31d331f3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/banana-chocolate-bread-pudding/",
+    "fetchedAt": "2026-08-01T17:04:11.486Z"
+  },
+  "rawSource": "https://annaolson.ca/project/banana-chocolate-bread-pudding/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

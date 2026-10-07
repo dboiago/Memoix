@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Bourbon Cocktail: Fallen Patriot",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all the ingredients in a shaker with ice and shake until chilled. Strain into a chilled coupe and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "09c9308086ca7fc67bdea806811c0a2a4d1c13f40611a9a7c61b98307309bec9",
+    "lineage_hash": "3268387d3fde10a5bbd418f3bc71c240bbfa9badee2785bef51b287dbcf13eac"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bourbon-cocktail-fallen-patriot/",
+    "fetchedAt": "2026-08-04T00:24:22.998Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bourbon-cocktail-fallen-patriot/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

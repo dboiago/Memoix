@@ -1,0 +1,79 @@
+{
+  "recipe": {
+    "name": "Broiled Spicy Miso Mayo Salmon",
+    "time": "15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Line a baking sheet with aluminum foil. Preheat oven broiler (high) for at least 3 minutes. Set the oven rack to second from top, mine comes in 5 levels.",
+      "Place salmon fillets on the baking sheet, skin side down, and sprinkle with salt and pepper.",
+      "Mix together mayonnaise, white miso paste, and Thai sweet chili sauce. Brush the salmon fillets liberally with the sauce mixture.",
+      "Broil until the salmon is fully cooked. This should take about 8-10 minutes, depending on the thickness of the fillet.",
+      "Serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gram (~ 1 Lb) Salmon Fillet",
+        "unit": null,
+        "notes": "s",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Miso Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thai Sweet Chili Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "164c460b57333f4b3af95b3b3d316787201dfea56e3fede32d52a874924e08f6",
+    "lineage_hash": "e91b4787abd04db463c3c04d431084bd67cea76ac5e36c89533753aadec17574"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/broiled-spicy-miso-mayo-salmon.html",
+    "fetchedAt": "2026-08-02T02:49:13.644Z"
+  },
+  "rawSource": "https://dailycookingquest.com/broiled-spicy-miso-mayo-salmon.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

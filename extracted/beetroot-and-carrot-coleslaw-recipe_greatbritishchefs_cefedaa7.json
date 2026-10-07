@@ -1,0 +1,134 @@
+{
+  "recipe": {
+    "name": "Beetroot and Carrot Coleslaw",
+    "time": "15 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the raisins, vinegar and garlic in a bowl and leave to sit for about an hour",
+      "Peel the carrots and beetroot and grate them with a box grater or a julienne slicer (a julienne slicer looks prettier)",
+      "Combine the raisins, vinegar and garlic with the carrots and beetroot, then toss with the olive oil, lemon juice, most of the parsley and mint, salt and pepper",
+      "Serve the coleslaw scattered with pine nuts and sprinkled with the extra herbs"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Carrots",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beetroot",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": "small",
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raisins",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Parsley",
+        "unit": null,
+        "notes": "small",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Mint",
+        "unit": null,
+        "notes": "small",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pine Nuts",
+        "unit": "Tbsp",
+        "notes": "lightly toasted",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "63ddc1a86dcfb6e7155de27f78ded49fa4c39c88b7424297e92eba5b3fc84a40",
+    "lineage_hash": "3eac846ad4a80048764e9ddd5899ccf83c927d1a6e8c20aa4106802cc3add0d3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beetroot-carrot-slaw-recipe",
+    "fetchedAt": "2026-08-03T23:10:52.001Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beetroot-carrot-slaw-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

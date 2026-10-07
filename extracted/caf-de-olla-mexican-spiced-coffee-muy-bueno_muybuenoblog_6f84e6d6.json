@@ -1,0 +1,90 @@
+{
+  "recipe": {
+    "name": "Café de Olla (Mexican Spiced Coffee)",
+    "time": "11 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "105",
+      "carbohydrateContent": "25",
+      "fatContent": "1",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "In a medium saucepan bring the water to a boil. Carefully add piloncillo, cinnamon sticks, cloves, and anise star.",
+      "Stir with a wooden spoon until the piloncillo dissolves, about 5 minutes. Add the ground coffee and stir, turn off heat, cover, and let steep for an additional 5 minutes.",
+      "Strain the coffee through cheesecloth and enjoy."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Piloncillo",
+        "unit": "oz",
+        "notes": "or substitute packed brown sugar",
+        "amount": "6-8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Sticks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Anise Star",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Dark Roasted Coffee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e51776e18074973cfb17c67b5ccfd75273fd3b8a96c3a0ae963e23b8601788ad",
+    "lineage_hash": "5d31d49d916e37eec77a08edf3ac54ccb21c04f26a62fb532bdcd6a2e0be2fa9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/cafe-de-olla-video-le-creuset-giveaway/",
+    "fetchedAt": "2026-08-02T03:47:16.538Z"
+  },
+  "rawSource": "https://muybuenoblog.com/cafe-de-olla-video-le-creuset-giveaway/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

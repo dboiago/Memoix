@@ -1,0 +1,158 @@
+{
+  "recipe": {
+    "name": "Anna’s Favourite Cereal Snack Mix",
+    "time": "1 hr 40 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 300°F (150°C) and line a large baking tray with parchment paper.",
+      "Melt the butter in a small saucepan over medium-low heat and whisk in the celery salt, chili powder, garlic powder, onion powder, mustard powder, cinnamon, hot sauce powder (or hot sauce) if using, and Worcestershire.",
+      "Combine the cereals, pretzels, peanuts and almonds in a large mixing bowl and pour the spiced butter overtop. Toss well (using your hands is quickest and most effective) and then spread this mixture on the baking tray.",
+      "Bake for about 40 minutes, stirring occasionally, until the cereal browns a little. Let the mix cool on the tray on a wire rack. Scoop into an airtight container. If gifting, pack the mix into a cookie tin or a tall mason jar, along with a label and ribbon."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "115 g",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Hot Sauce Powder",
+        "unit": "Tbsp",
+        "notes": "alt: hot sauce, 15 mL",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Worcestershire Sauce",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "4-5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shreddies",
+        "unit": "C",
+        "notes": "100 g",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cheerios",
+        "unit": "C",
+        "notes": "50 g",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crispix",
+        "unit": "C",
+        "notes": "alt: other rice cereal, 50 g",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pretzel Twists",
+        "unit": "C",
+        "notes": "alt: squares, 100 g",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Almonds",
+        "unit": "C",
+        "notes": "160 g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Peanuts",
+        "unit": "C",
+        "notes": "150 g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ae2600bad002de36e45b9d92f7e1aa43d4f436430795e60528cae0be4c911749",
+    "lineage_hash": "7182ca7fdc9582af2303c5caf3af228c0d2fee45b7ec4f0c83f06530ab72b2fc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/annas-favourite-cereal-snack-mix/",
+    "fetchedAt": "2026-08-01T23:23:15.827Z"
+  },
+  "rawSource": "https://annaolson.ca/project/annas-favourite-cereal-snack-mix/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

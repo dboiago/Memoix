@@ -1,0 +1,38 @@
+{
+  "recipe": {
+    "name": "Autumn Old Fashioned",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Old Fashioned",
+    "garnish": [
+      "Orange Twist"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to a mixing glass with ice and stir to chill. Strain into a glass over one large ice cube. Garnish.",
+      "Pumpkin Seed-Washed ScotchAdd 1/2 Tbsp. of toasted pumpkin seed butter and 3/4 oz. toasted pumpkin seed oil to a saucepan on low heat and stir continuously until butter is melted. Add the mixture to 750ml of scotch whisky with 1 cinnamon stick in a sealable container, shake vigorously, and then place in the freezer. Remove solids and fine strain through a coffee filter. Will keep for up to a couple of months in the refrigerator.",
+      "Note&#8220;Refrigerating it can help prevent the fats from going rancid and preserve the flavor of the whiskey,&#8221; says Hedges. &#8220;If any changes in color, smell, or taste are detected, it&#8217;s best to err on the side of caution and get rid of it.”"
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "e869dcf9bd09961201712ca01cb2f23c7efb82a6841bf5cb99fb8993dfc4c8c7",
+    "lineage_hash": "8b5552abc71e793414687457de699cf9d1ae92121bee8fd814b629c8751d12b2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/autumn-old-fashioned/",
+    "fetchedAt": "2026-08-04T00:15:54.155Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/autumn-old-fashioned/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

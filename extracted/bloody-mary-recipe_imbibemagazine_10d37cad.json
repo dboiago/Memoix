@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Bloody Mary",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake ingredients with ice, strain into ice-filled glass and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "5bcd62b8a50b4e16b048081da4d97b3f0f3755e8edbabbb456bb97f80b7523ab",
+    "lineage_hash": "4065fe0e6bb83967ff98a48433718e0092fa2e1904f033db4a2ee75f6d28c712"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bloody-mary/",
+    "fetchedAt": "2026-08-03T20:23:22.427Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bloody-mary/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

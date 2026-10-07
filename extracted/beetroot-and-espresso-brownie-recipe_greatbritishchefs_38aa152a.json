@@ -1,0 +1,214 @@
+{
+  "recipe": {
+    "name": "Beetroot and Espresso Brownie",
+    "time": "2 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "First, make the ice cream. Gently melt the single cream and chocolate together in a pan. Once molten, stir in the condensed milk and remove from the heat",
+      "Mix the kirsch into the chocolate and cream. Fold in the whipped cream, then transfer to a container.\r\nAllow to freeze overnight",
+      "For the meringue, whisk the egg whites in a large grease-free bowl until very stiff and dry. Whisk in\r\nhalf of the sugar, then gently fold in the remaining sugar along with the vanilla extract",
+      "Place the grated beetroot in a piece of muslin and squeeze the beetroot juice into the bowl. Using a large spoon, carefully and gently fold the juice into the meringue",
+      "Transfer the mixture to a large piping bag fitted with a 1cm star nozzle and pipe small mounds onto a \r\nlined baking sheet. Bake in the oven for approximately 1 hour until the meringues are crisp on the outside, but not browned – prop the oven door open slightly if they start to discolour. Turn off the oven and leave the meringues to cool overnight",
+      "Preheat the oven to 180°C/gas mark 4. Line a 20cm x 20cm x 4cm shallow brownie tin with\r\nparchment paper",
+      "To make the brownies, melt the chocolate, butter and coffee granules very gently in a large, heavy-based saucepan over a low heat. Remove from the heat and stir in the chopped beetroot, caster sugar and beaten eggs. Combine thoroughly before adding cocoa powder, plain flour and a pinch of salt to the mixture. Stir well",
+      "Pour into the prepared tin and bake for 30 minutes until just cooked – brownies are easy to over-bake. The top should be dried to a paler brow, but the middle should still be dark and dense and gooey and only just firm. Allow to cool completely in the tin before slicing, as it will continue to cook until cooled",
+      "To make the sauce, heat the sugar and water in a medium, clean, saucepan over a medium heat, for 2–3 minutes. The sugar will melt and small bubbles will start appearing. Don’t be tempted to stir, this can encourage the caramel to crystalise – just swill the pan round using the handle",
+      "Once the sugar has started boiling, after about 5 minutes, it should be light brown in colour. Continue \r\nboiling until it has become medium brown in colour. Remove the saucepan from the heat and pour the cream into the mixture. It will hiss and spit and seem to solidify but be patient and return to the heat for 2–3 minutes. Stir through the salt and transfer to a glass jar or bowl and let cool to room temperature or pop in the fridge for 20 minutes",
+      "Remove the ice cream from the freezer 10 minutes before serving to allow the ice cream to soften",
+      "To serve, sandwich together two meringues with a dollop of caramel sauce. Place a square of brownie onto each plate, top with a scoop of ice cream and drizzle over some caramel sauce. Garnish with the meringues and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Raw Beetroot",
+        "unit": "g",
+        "notes": "peeled and grated",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "70% Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Instant Coffee Granules",
+        "unit": "tsp",
+        "notes": "heaped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beetroot",
+        "unit": "large",
+        "notes": "peeled and grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "450",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "tsp",
+        "notes": "heaped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Single Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Condensed Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kirsch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": "lightly whipped",
+        "amount": "190",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fc35143c6d6cb1c416671fa71a1b53ef5b8fa5692150476d770f59b36bb9c11c",
+    "lineage_hash": "34ccd486041181d18b945955df8487fc40400cdc56374a2168dc97a7ce1ba12f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beetroot-and-espresso-brownie",
+    "fetchedAt": "2026-08-03T14:40:14.655Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beetroot-and-espresso-brownie",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

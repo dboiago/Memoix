@@ -1,0 +1,212 @@
+{
+  "recipe": {
+    "name": "All-Purpose Chinese Meat Sauce (家常肉酱)",
+    "time": "1 hr 5 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "283",
+      "carbohydrateContent": "11",
+      "fatContent": "23",
+      "proteinContent": "11"
+    },
+    "directions": [
+      "In a clean, dry wok over medium-low heat, add the neutral oil, star anise, cinnamon stick, bay leaves, Sichuan peppercorns, and black cardamom pods. Allow the oil to heat up, and cook the aromatics until fragrant, about 10 minutes. Take care not to burn the spices—adjust the heat level as needed. Turn off the heat, and let the oil cool off and continue to infuse in the wok while you prepare the rest of the ingredients for the sauce.",
+      "Once you have all the ingredients chopped and prepared, use a strainer to remove the toasted spices from the oil in the wok, and discard. Turn the heat back on to high. To the flavored oil, add the ginger, garlic, shallots, white parts of the scallions, and the chilies. Cook for a minute or so, until the garlic and ginger turn lightly golden, stirring often to prevent burning.",
+      "Next, add the ground meat. Break apart any large chunks and cook until the meat turns lightly crisp around the edges. Then add the fermented black beans and mushrooms. Cook, stirring often, until all the liquid has cooked out of the mushrooms and they’re slightly caramelized.",
+      "Reduce the heat to medium, and add the hoisin sauce, light soy sauce, oyster sauce, Shaoxing wine, dark soy sauce, and sesame oil. Stir and cook for 10 minutes to let the flavors meld.",
+      "Add the green parts of the scallions, and cook for another 2 minutes. Turn off the heat, stir in the toasted sesame seeds, and the sauce is ready to use."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Neutral Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": "To infuse oil",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": "To infuse oil",
+        "isOptional": false
+      },
+      {
+        "name": "Cassia Cinnamon Stick",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "To infuse oil",
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": "To infuse oil",
+        "isOptional": false
+      },
+      {
+        "name": "Sichuan Peppercorns",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "To infuse oil",
+        "isOptional": false
+      },
+      {
+        "name": "Black Cardamom Pods",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "To infuse oil",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "C",
+        "notes": "minced, fresh",
+        "amount": "¼",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "C",
+        "notes": "coarsely chopped",
+        "amount": "¼",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Shallot",
+        "unit": "C",
+        "notes": "finely chopped",
+        "amount": "½",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "finely chopped, white and green parts separated",
+        "amount": "5",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Thai Chilies",
+        "unit": "Tbsp",
+        "notes": "chopped, to taste, fresh",
+        "amount": "1-3",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Meat",
+        "unit": "oz",
+        "notes": "pork, beef or chicken",
+        "amount": "12",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Fermented Black Beans",
+        "unit": "C",
+        "notes": "rinsed and drained",
+        "amount": "¾",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "King Trumpet",
+        "unit": "oz",
+        "notes": "finely chopped, fresh, oyster, or shiitake mushrooms",
+        "amount": "12",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Hoisin Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "rest of the dish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "98e10a66b273eb122279f73889badc7c978bbafd6b4a81627ee9076e78b9169e",
+    "lineage_hash": "26cd1091924993b7cc2d8dcfae925bde30b3039608533e3e79e3e5fa8c4e7aad"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/chinese-meat-sauce/",
+    "fetchedAt": "2026-08-02T15:17:36.081Z"
+  },
+  "rawSource": "https://thewoksoflife.com/chinese-meat-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,173 @@
+{
+  "recipe": {
+    "name": "Beef Carpaccio",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Grate the zest from one lemon and juice it. With an immersion blender, blend the egg with the egg yolk, 1 Tbsp. mustard, 1 Tbsp. lemon juice, 1 Tbsp. vinegar, and salt and pepper while slowly pouring in the oil. Continue blending to obtain a mayonnaise.",
+      "Chop the pickles and chives very finely and add to the mayonnaise along with 1 Tbsp. Greek yogurt.",
+      "Clean the spring onion and chili pepper and cut both into very thin slices. Wash the cucumber. With a mandolin, cut into paper thin slices. Place the beef slices on plates and garnish with mayonnaise, a few slices of spring onion and chili pepper, cucumber slices, 1-2 Tbsp. dehydrated capers, lemon zest and horseradish. Season with salt and pepper to taste. Serve as desired with crackers."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef",
+        "unit": "lb",
+        "notes": "sliced very thinly",
+        "amount": "1¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pickles",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onion",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber",
+        "unit": null,
+        "notes": "Wash the cucumber. With a mandolin, cut into paper thin slices.",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili Pepper",
+        "unit": null,
+        "notes": "Clean the spring onion and chili pepper and cut both into very thin slices.",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "Grate the zest from one lemon and juice it.",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Greek Yogurt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": null,
+        "notes": "Chop the pickles and chives very finely",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Horseradish",
+        "unit": "Tbsp",
+        "notes": "fresh, grated",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dehydrated Capers",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "31f77989854ea62151fb45f9c16d95149577c4d9718c46522ac9f3de197a17db",
+    "lineage_hash": "7108d79a23182f97fc1dfb78796377994cf31fbeb7ed9195ddfed61146efb2aa"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/main-course/beef-carpaccio",
+    "fetchedAt": "2026-08-03T04:27:36.471Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/main-course/beef-carpaccio",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

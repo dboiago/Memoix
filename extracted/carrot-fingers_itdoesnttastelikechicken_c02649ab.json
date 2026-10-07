@@ -1,0 +1,115 @@
+{
+  "recipe": {
+    "name": "Carrot Fingers",
+    "time": "45 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "232",
+      "carbohydrateContent": "49",
+      "fatContent": "2",
+      "proteinContent": "5"
+    },
+    "directions": [
+      "OVEN: Preheat your oven to 375F (190C). Line a baking sheet with parchment paper.AIR FRYER: Preheat your air fryer to 350F (180C).",
+      "Grab three medium bowls. Bowl 1: add the flour. Bowl 2: mix together the water, chia, and maple syrup. Bowl 3: add the corn flakes, garlic powder, onion powder, and salt to a food processor. Pulse several times until broken down, but there is still some texture. Pour the corn flake mixture into the last bowl.",
+      "Peel the carrots and cut them into finger sized pieces so that all of the carrot sticks are roughly the same size. Take a handful of carrot sticks at a time and drop them in the flour and toss to coat. Next drop them in the chia mixture and toss to coat. Finally, toss them in the corn flake mixture. Lay them on the parchment paper lined baking sheet so that they aren't touching. Repeat with all of the carrots until you have used up all of your ingredients.",
+      "OVEN: Bake 25 - 30 minutes, until golden brown and crusty, and the carrots are cooked. You can test doneness by piercing a carrot with a knife to see if it&#39;s tender all the way through. Serve the carrot fingers with whatever sauce you desire.AIR FRYER: Air fry 20 - 24 minutes, stopping to gently turn the carrot fries halfway through, until golden brown and crusty, and the carrots are cooked. You can test doneness by piercing a carrot with a knife to see if it&#39;s tender all the way through.Serve the carrot fingers with whatever sauce you desire such as ketchup, Vegan Blue Cheese Dip, Cashew Caesar Dressing."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Carrots",
+        "unit": "medium",
+        "notes": "peeled and cut into fingers *see instructions",
+        "amount": "4-6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": "or all-purpose gluten-free flour blend",
+        "amount": "½",
+        "section": "Bowl 1",
+        "isOptional": false
+      },
+      {
+        "name": "Warm Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": "Bowl 2",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Chia",
+        "unit": "Tbsp",
+        "notes": "alt: ground flax",
+        "amount": "2",
+        "section": "Bowl 2",
+        "isOptional": false
+      },
+      {
+        "name": "Maple Syrup",
+        "unit": "Tbsp",
+        "notes": "alt: agave",
+        "amount": "1",
+        "section": "Bowl 2",
+        "isOptional": false
+      },
+      {
+        "name": "Corn Flakes Cereal",
+        "unit": "C",
+        "notes": null,
+        "amount": "4",
+        "section": "Bowl 3",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Bowl 3",
+        "isOptional": false
+      },
+      {
+        "name": "Onion Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Bowl 3",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Bowl 3",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8cef6c41061131d48297a823af1e18cec9e7611fe5e2ecde385e4f568b96909e",
+    "lineage_hash": "f040a9d74e7eecdf57942b54e167d15defd888cd29d9bca259039ada07ce6035"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/carrot-fingers/",
+    "fetchedAt": "2026-08-02T00:07:52.742Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/carrot-fingers/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

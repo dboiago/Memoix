@@ -1,0 +1,253 @@
+{
+  "recipe": {
+    "name": "Japchae",
+    "time": "55 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "KR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "300",
+      "carbohydrateContent": "45",
+      "fatContent": "10",
+      "proteinContent": "7"
+    },
+    "directions": [
+      "Place the beef strips into a medium bowl. Add the &quot;beef marinade&quot; and gently mix the sauce into the meat. Cover the bowl with food wrap and set it aside while you&#x27;re working on other ingredients.",
+      "Get the rest of the ingredients ready as shown below.- Prepare the vegetables as instructed in the “main ingredients” section.- Put the sliced mushroom into a medium bowl and add 1 Tbsp of “noodles & mushroom marinade” mixture. Mix them well. Set it aside until you cook it (in about 20 mins).- Blanch the spinach in rolling boiling water (5 to 10 seconds). Drain the water and quickly cool it down by running it under cold tap water. Squeeze the spinach to remove any excess water and put it into a mixing bowl. Add the &quot;spinach seasoning&quot; and mix them gently and evenly. Put it into a large mixing bowl where we will be adding the rest of prepared ingredients in later.- Boil some water in a large pot. Once the water starts to boil (6 to 8 mins later), add the noodles and boil them for 6 to 7 mins. Drain the water. Rinse in cold water to cool down and let the water drain for 1 to 2 mins.Cut the noodles with a pair of kitchen scissors a couple of times. (Between 15 to 20 cm / 6 to 8 inches length is good). Move the noodles into a mixing bowl and pour in the rest of the &quot;noodles & mushroom marinade&quot; mixture. Mix them well. Set it aside until you cook it (in about 10 mins).",
+      "Start cooking the prepared ingredients per below. Follow the order if you can. We are cooking lighter color to darker color (to minimize the color transfer and avoid washing up in between) and will be using only one non-stick pan/skillet.Once each step is completed, move them into the large mixing bowl (except for the first two – egg white and egg yolk), where we will be mixing all ingredients in before serving.- Beat the egg white with a fork. Add some cooking oil (1 tsp) on a well heated pan and spread it well. Pour the egg white mixture and cook both sides on low heat (1-2 mins). Transfer it onto a clean cutting board and set aside.- Beat the egg yolk with a fork. (If necessary, add more cooking oil onto the pan and spread it well.) Pour the egg yolk mixture and cook both sides on low heat (1-2 mins). Transfer it onto a clean cutting board and set aside.- Add more oil if necessary. Cook the onion with a pinch of salt over low to medium heat until it softens (1-2 mins). Transfer it to the large mixing bowl.- Add more oil if necessary. Cook the carrots with a pinch of salt over medium heat until it softens (1-2 mins). Transfer it to the large mixing bowl.- Add more oil if necessary. Cook the red capsicum with a pinch of salt over low to medium heat until it softens (1-2 mins). Transfer it to the large mixing bowl.- Add more oil if necessary. Pour in the marinated mushroom (incl. the residue sauce from the bowl) and stir fry until it is cooked (1-2 mins) over low to medium heat. Transfer it to the large mixing bowl.- Add more oil if necessary. Pour in the marinated meat and stir fry until it is cooked (2-3 mins) over medium heat. Transfer it to the large mixing bowl.- Add more oil if necessary. Stir fry the marinated noodles until the noodles are well coated with the sauce (2-3 mins) over low to medium heat. Transfer it to the large mixing bowl.",
+      "Thinly slice the egg white and egg yolk like match sticks. Add them into the large mixing bowl as used above.",
+      "Add the final &quot;finishing touch&quot; ingredients—sesame oil and sesame seeds—to the large mixing bowl. Gently toss everything together using your hands to evenly coat the noodles and vegetables with the fragrant oil and seeds. Be careful, as the noodles might still be hot. If needed, start by mixing with a salad server and switch to your hands once everything has cooled slightly.",
+      "Serve with a bowl of Korean rice and a variety of classic Korean side dishes for a truly authentic meal!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Korean Sweet Potato Starch Noodles",
+        "unit": "g",
+        "notes": "8.8 ounces, dangmyeon",
+        "amount": "250",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Rib Eye Fillet (3.5 Ounces)",
+        "unit": "g",
+        "notes": "cut into strips",
+        "amount": "100",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Carrot (120g / 4.2 Ounces)",
+        "unit": null,
+        "notes": "rinsed, peeled & julienned",
+        "amount": "1",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Baby Spinach (3.9 Ounces)",
+        "unit": "g",
+        "notes": "rinsed",
+        "amount": "110",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Red Capsicum (bell Pepper, 50g)",
+        "unit": null,
+        "notes": "rinsed & julienned",
+        "amount": "¼",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Onion (105g)",
+        "unit": null,
+        "notes": "peeled, rinsed, & thinly sliced",
+        "amount": "½",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Shiitake Mushroom",
+        "unit": "g",
+        "notes": "fresh, cleaned, stems removed & thinly sliced",
+        "amount": "100",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "SPINACH SEASONING",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "½",
+        "section": "SPINACH SEASONING",
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "SPINACH SEASONING",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "BEEF MARINADE",
+        "isOptional": false
+      },
+      {
+        "name": "Rice Wine",
+        "unit": "tsp",
+        "notes": "mirin",
+        "amount": "1",
+        "section": "BEEF MARINADE",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "½",
+        "section": "BEEF MARINADE",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "BEEF MARINADE",
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "BEEF MARINADE",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": "NOODLES & MUSHROOM MARINADE – MIX THESE IN A SMALL BOWL",
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "NOODLES & MUSHROOM MARINADE – MIX THESE IN A SMALL BOWL",
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "NOODLES & MUSHROOM MARINADE – MIX THESE IN A SMALL BOWL",
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "NOODLES & MUSHROOM MARINADE – MIX THESE IN A SMALL BOWL",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": "NOODLES & MUSHROOM MARINADE – MIX THESE IN A SMALL BOWL",
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "FINISHING TOUCH",
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "FINISHING TOUCH",
+        "isOptional": false
+      },
+      {
+        "name": "Egg (extra Large, Optional) Rinsed",
+        "unit": null,
+        "notes": "egg white and yolk separated",
+        "amount": "1",
+        "section": "FINISHING TOUCH",
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Oil (i Used Rice Bran Oil)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "OTHER",
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "OTHER",
+        "isOptional": false
+      },
+      {
+        "name": "Water to Boil the Spinach and the Noodles",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "OTHER",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b920d6d9a8aa12261dacd54d618579bcc1cd8f59fffadb0492fedc7ac7686100",
+    "lineage_hash": "68f4e7acd5abbca0bb951aa6cd905c3f291a4f32665f286e2dd20eafd59c83ae"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://mykoreankitchen.com/korean-glass-noodle-stir-fry-japchae/",
+    "fetchedAt": "2026-08-02T02:00:26.181Z"
+  },
+  "rawSource": "https://mykoreankitchen.com/korean-glass-noodle-stir-fry-japchae/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,180 @@
+{
+  "recipe": {
+    "name": "Baked Empanadas with Mexican Picadillo and Cheese",
+    "time": "1 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "14",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "448",
+      "carbohydrateContent": "28",
+      "fatContent": "28",
+      "proteinContent": "19"
+    },
+    "directions": [
+      "In a large skillet, heat olive oil over medium heat. Add onion and cook for about 2 minutes, until translucent.",
+      "Add ground beef and brown. Using a potato masher, mash meat so you have small pieces of meat with no big chunks. Drain off excess grease.",
+      "Add garlic salt, pepper, tomatoes, and potato and cook over low heat for about 15 minutes, until potatoes are done. Salt to taste.",
+      "Using a stand mixer with the dough hook attachment, place the butter in the bowl and turn the mixer on medium-low speed and cream.",
+      "Add the egg and combine.",
+      "Combine flour and salt in a bowl and add to mixer and combine.",
+      "Add the beer, as needed, to ensure the dough is soft and smooth.",
+      "Crack an egg into a bowl and beat it thoroughly with a fork.",
+      "Add 2 tablespoons of water. Stir until combined.",
+      "Preheat the oven to 350 degrees F.",
+      "Divide empanada dough into 14 pieces. Roll out the dough balls into small round circles. Place a small dollop of filling on one half of each of the dough circles.",
+      "Place a slice of cheese over the filling.",
+      "Wet the bottom edge of the circles with egg wash to help seal the two halves. Fold over the dough to cover filling and seal off the edges with a fork pressing down along the edges or using a pastry cutter.",
+      "Repeat with remaining dough and filling.",
+      "Brush each empanada with egg wash.",
+      "Puncture the top of each empanada with a fork to allow steam to escape while baking.",
+      "Place the empanadas on baking sheet and bake for 20 minutes on lower rack in the oven. If after 15 minutes you notice the bottoms of the empanadas starting to brown, move the cookie sheet to the top rack.",
+      "Bake for an additional 5 minutes.",
+      "Set oven to broil and bake on top rack for 1 to 2 minutes, until golden brown.",
+      "Enjoy the empanadas warm or at room temperature.",
+      "Refrigerate baked empanadas for one week. Reheat in a toaster oven or bake at 350 degrees for 8 minutes."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Picadillo",
+        "isOptional": false
+      },
+      {
+        "name": "White Onion",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "½",
+        "section": "Picadillo",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Beef",
+        "unit": "lb",
+        "notes": null,
+        "amount": "2",
+        "section": "Picadillo",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Salt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Picadillo",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Picadillo",
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "4",
+        "section": "Picadillo",
+        "isOptional": false
+      },
+      {
+        "name": "Russet Potato",
+        "unit": "large",
+        "notes": "alt: 2 small Yukon gold potatoes, peeled and finely chopped",
+        "amount": "1",
+        "section": "Picadillo",
+        "isOptional": false
+      },
+      {
+        "name": "Monterey Jack Cheese",
+        "unit": "oz",
+        "notes": "sliced",
+        "amount": "6",
+        "section": "Picadillo",
+        "isOptional": false
+      },
+      {
+        "name": "Salted Butter",
+        "unit": "C",
+        "notes": "softened",
+        "amount": "¾",
+        "section": "Beer-infused empanada dough",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Beer-infused empanada dough",
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "3⅓",
+        "section": "Beer-infused empanada dough",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Beer-infused empanada dough",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Beer",
+        "unit": "C",
+        "notes": "room temperature",
+        "amount": "½",
+        "section": "Beer-infused empanada dough",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Egg Wash",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Egg Wash",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8889991bc2861d86fd80ed3ca49809de9109360b2acf1f41724642f057ab90a9",
+    "lineage_hash": "659adf5572fca5ab6ce87f648ef5c22ac7bc697d1cffcd0629cb2f9d6c83405d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/picadillo-empanadas/",
+    "fetchedAt": "2026-08-02T00:40:54.311Z"
+  },
+  "rawSource": "https://muybuenoblog.com/picadillo-empanadas/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

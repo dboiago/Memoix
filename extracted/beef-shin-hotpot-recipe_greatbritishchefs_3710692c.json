@@ -1,0 +1,254 @@
+{
+  "recipe": {
+    "name": "Beef Shin Hotpot",
+    "time": "4 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, place a casserole dish or stockpot on the hob over a medium heat and add half of the rapeseed oil. Once the oil has warmed up, add the finely chopped onion, peppers and garlic and stir to coat. Bring the heat down",
+      "Cook slowly for about 15–20 minutes until everything is soft and sweet, then remove from the heat and scrape into a bowl. Give the casserole a quick wipe with some kitchen towel to ensure no bits are left to catch",
+      "Next, place the beef shin chunks in a bowl with the flour, salt and pepper and mix together, so that the meat gets a light and even coating. Return the casserole to the hob over a medium-high heat, add the remaining oil then brown the shin in batches, lifting them onto a plate once done",
+      "The bottom of your casserole will probably be crusted with meaty bits and pieces, so deglaze with a good splash of water, using a metal spoon to scrape and lift everything up. Pour the thickened liquid over the beef",
+      "Add the chorizo slices into the casserole, stirring as they begin to sizzle and release some of their own oil. After a couple of minutes, place the beef back into the pot, along with the softened vegetables, and mix together",
+      "Add the paprika and cumin and stir to coat, then after another 2 minutes add the tomatoes, beef stock, black treacle and ancho chilli. Taste for seasoning",
+      "Bring up to a simmer then cover with a lid, leaving it slightly ajar so that steam can escape and that the sauce can slowly thicken",
+      "After an hour, empty the tin of chickpeas into the hotpot and cook for another 2 hours, or until the beef is very tender. Throughout cooking, return every now and then to stir",
+      "To cook the squash, preheat the oven to 200°C/gas mark 6",
+      "Place the squash wedges on a baking tray and drizzle with the oil, mixing together to ensure they are evenly coated. Season with some salt and pepper and place into the oven for 40-45 minutes, turning them over halfway through",
+      "To serve, divide the rice between plates then add a generous helping of the beef shin hotpot. Arrange some of the roast squash wedges on the side and top the meat with some sour cream, a scattering of pumpkin seeds and some chopped coriander",
+      "This recipe caters for 2 helpings, for 4 people. So leave the remaining stew to cool then place into freezer bags to freeze for another day"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rapeseed Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "large",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Pepper",
+        "unit": null,
+        "notes": "seeded and finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Pepper",
+        "unit": null,
+        "notes": "seeded and finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Shin",
+        "unit": "kg",
+        "notes": "boned, trimmed and cut into small cubes",
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Chorizo",
+        "unit": "g",
+        "notes": "cut into slices",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Smoked Paprika",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cumin",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Treacle",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Purée",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ancho Chilli",
+        "unit": null,
+        "notes": "dried, soaked in hot water",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tinned Chopped Tomatoes",
+        "unit": "g",
+        "notes": "1 tin",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chickpeas",
+        "unit": "g",
+        "notes": "1 tin",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Squash",
+        "unit": "large",
+        "notes": "butternut or festival, seeded and cut into thin wedges with skin left on",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sour Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pumpkin Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "bunch",
+        "notes": "small, roughly chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice",
+        "unit": null,
+        "notes": "Danny used a mixture of basmati and wild rice",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "057bc96c620920be85f6b3248822522c5cef4887af81d3d3d52e074e508c44b7",
+    "lineage_hash": "45448d2f33814cb401a57a5df80977a3d23616a9ffa85c28629f3e083ef615ef"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beef-shin-hotpot-recipe",
+    "fetchedAt": "2026-08-03T11:40:04.271Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beef-shin-hotpot-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

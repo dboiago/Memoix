@@ -1,0 +1,84 @@
+{
+  "recipe": {
+    "name": "Brazilian Margarita",
+    "time": "5 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "BR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "MUDDLE lime and sugar in base of shaker",
+      "Add other ingredients, SHAKE with ice and fine strain into glass filled with cracked (with an &lt;a href=&quot;/bar-equipment-and-barware/250/ice-tapper&quot;&gt;ice tapper&lt;/a&gt; – not crushed."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "1&frasl;2 Fresh Lime (fresh)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Barspoon Powdered Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cachaça",
+        "unit": "ml",
+        "notes": "unaged",
+        "amount": "22.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blanco Tequila",
+        "unit": "ml",
+        "notes": null,
+        "amount": "22.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Triple Sec",
+        "unit": "ml",
+        "notes": null,
+        "amount": "22.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Margarita Bitters",
+        "unit": "drop",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "accfb0a8187c0d4d4d641f039de68a0e2d7669e3facd23bb0f3006f87de4582c",
+    "lineage_hash": "bd8a676c80300db6281eec5765cf576c9bd5c53de7cf13bef5f7e4edb3def917"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/17177/brazilian-margarita",
+    "fetchedAt": "2026-08-03T18:28:07.853Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/17177/brazilian-margarita",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

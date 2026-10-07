@@ -1,0 +1,163 @@
+{
+  "recipe": {
+    "name": "Asian Instant Pot Chicken Noodle Soup",
+    "time": "20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "456",
+      "carbohydrateContent": "29.3",
+      "fatContent": "13.9",
+      "proteinContent": "51.1"
+    },
+    "directions": [
+      "Add all the Instant Pot ingredients and the white part of the green onions into your Instant Pot (or pressure cooker) and seal the lid. For Instant pot, use manual mode on high pressure for 10 minutes for thawed and fresh chicken, or 20 minutes for frozen chicken. Once done, use natural release or wait 10 minutes to use fast release. For pressure cooker, cook over medium heat until pressure is added. Turn to medium low heat and cook at high pressure for 20 minutes.",
+      "Once done, transfer the chicken to a plate. Shred with two forks.",
+      "Meanwhile, turn on the saute function of the Instant Pot. For pressure cooker, heat it uncovered over medium heat. When it starts to boil, add the wheat noodles and boil them according to the package instructions. 2 minutes before the noodles are ready, add the green vegetables and the eggs, if using. Cook until the vegetables are just cooked through and the egg white is cooked through but the inside is still runny (*Footnote 2). Taste the soup and adjust seasoning by adding more soy sauce or salt. Add the green part of the green onion and drizzle with sesame oil. Give it a final stir.",
+      "Transfer everything into serving bowls and serve hot with a few drops of homemade chili oil or Sriracha sauce, if needed."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Wheat Noodles",
+        "unit": "oz",
+        "notes": "alt: rice noodles for gluten-free, 170 g, *Footnote 1",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Greens of Your Choice Collard Greens",
+        "unit": "C",
+        "notes": "chopped, baby bok choy, or spinach",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs for Topping",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Homemade Chili Oil (or Sriracha Sauce for Serving)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Thigh",
+        "unit": "lb",
+        "notes": "alt: breast, 680 g, both thawed and frozen chicken will work, boneless, skinless",
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions Chopped and Seperated",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Minced",
+        "unit": "clove",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Slices Ginger",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Broth",
+        "unit": "C",
+        "notes": "homemade or store-bought",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": "or dry sherry",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "or soy sauce",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "67a4dc3505be0adfc4f033e67b2f3b8bb02f9fb7d60baafa41243cba29bce57f",
+    "lineage_hash": "434a2bfa6a84e50f6598b51b7c67ebc1dc70c8c2e7e0adcd7c194bf052183a84"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/instant-pot-chicken-noodle-soup/",
+    "fetchedAt": "2026-08-01T23:40:02.693Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/instant-pot-chicken-noodle-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

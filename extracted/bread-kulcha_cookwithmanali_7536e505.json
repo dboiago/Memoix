@@ -1,0 +1,120 @@
+{
+  "recipe": {
+    "name": "Bread Kulcha",
+    "time": "1 hr 40 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "175",
+      "carbohydrateContent": "27",
+      "fatContent": "5",
+      "proteinContent": "5"
+    },
+    "directions": [
+      "To a bowl (I used the steel bowl of my stand mixer) add warm milk (110-115 F degrees, not cold and not too hot), to that add active dry yeast and sugar. Give a quick stir and let it stand for 5 to 10 minutes to proof.After 10 minutes, the mixture will be all bubble and frothy on top indicating that the yeast is active (if you don&#39;t see any such activity, throw the mixture and start over).",
+      "To that mixture now, add flour, salt, 3 teaspoons oil and 2 tablespoons chopped cilantro. Turn your mixer on medium speed and mix using the paddle attachment.",
+      "Slowly start adding water to bring it all together in a dough. Once you have the dough, change to the dough hook and knead the dough for 7 to 8 minutes on medium speed. You can also knead using your hands for 10 minutes.",
+      "Once you have a nice smooth dough, grease it with little oil and place it in a warm place. I used the yogurt button on my instant pot but you can also place it inside an oven with lights on (but oven off) or just leave on the counter if you live in a warm place. If using the Instant Pot, grease the steel bowl with little oil before placing the dough and cover the pot with a clean kitchen towel (don&#39;t use the IP lid).",
+      "If using the yogurt button, set the time for 1 hour. If using the oven or your counter, it might take 1.5 hours for the dough to more than double in size. Once the dough has more than doubled in size, punch the dough to release the air.",
+      "Now, divide the dough into 8 equal parts (around 56 grams each). Now take one dough ball, roll it between your palms to make a smooth round. Then using a rolling pin, roll it into a circle, around 5 inch diameter. Similarly smoothen and then roll all dough balls.",
+      "Place them on a baking sheet lined with parchment paper and place in a warm place again for second rise for around 30 minutes. After 30 minutes, you would see the kulchas would have puffed up a little at few places.",
+      "Heat a skillet on medium heat. Once the pan is hot, carefully lift and place the kulcha on the pan. We are going to half cook the kulcha at this point. So cook on one side for 1 minute, then flip and cook the other side for another minute until it has some light brown spots. Half cook all the kulchas similarly.",
+      "Now, take another pan (or use the same pan) on medium heat and add some butter to it (say 1/2-1 teaspoon butter for each kulcha), once the butter melts, add some chopped cilantro. Add the half cooked kulcha, and press with the spatula to get it browned. Flip and repeat with the other side until browned from both sides. Cook all the kulchas similarly and serve with matar chaat."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": "4 oz, I used whole milk",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Active Dry Yeast",
+        "unit": "tsp",
+        "notes": "8 grams",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated White Sugar",
+        "unit": "Tbsp",
+        "notes": "13 grams",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "C",
+        "notes": "260 grams",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": "15 ml, I used avocado oil",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "Tbsp",
+        "notes": "chopped, + more for serving",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "2 oz, may need extra 1-2 tablespoons",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "amul salted butter, to serve",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "dbb6cd2226e31f854e6b679159564621e5b2545a80e09755115eb4a65dceab89",
+    "lineage_hash": "2d0b62e22c7bfd17d7dd68ebe9637f2a8b11c74b326b23ae8964e0061aba0d3e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/bread-kulcha/",
+    "fetchedAt": "2026-08-02T07:58:27.273Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/bread-kulcha/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

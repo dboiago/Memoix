@@ -1,0 +1,217 @@
+{
+  "recipe": {
+    "name": "Caramelised apple and cinnamon hot cross buns with ginger glaze",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by making the caramelised apples. Melt the butter in a pan over a medium heat. Add in the apples once the butter is foaming, then add the brown sugar and cinnamon. Stir regularly until the sugar syrup begins to thicken. Remove from the heat after a couple of minutes and set aside&nbsp;",
+      "To make the hot cross bun dough, gently warm the milk in a small saucepan until just before it boils, then add in the butter. Once the butter has melted, remove from the heat",
+      "Whisk together the yeast and warm water then set aside",
+      "In a separate bowl, sieve together the flour, xanthan gum (if using) and sugar. Add in the salt and ground spices",
+      "Make a well in the middle of the flour mixture. Add in the egg, followed by the milk mixture and then the yeast mixture. Mix the flour into the liquid with your hands of a wooden spoon until a shaggy, sticky dough forms",
+      "Fold in the caramelised apples and knead gently on a lightly floured surface until fairly smooth",
+      "Transfer the dough to a bowl and cover tightly with cling film. Leave to prove for an hour",
+      "Once doubled in size, knock back the dough and gently knead for a minute, before diving into 12 small balls",
+      "Place the buns onto a baking tray lined with parchment paper, then cover with cling film and leave to rise for another hour",
+      "Towards the end of rising time, preheat the oven to 180°C fan",
+      "For the ginger-infused syrup, simmer the water, sugar and ginger together for 10 minutes, until the sugar has dissolved and the syrup is fragrant, then set aside",
+      "Mix together the flour and water until you reach a pipeable consistency. Transfer the mix to a small piping bag&nbsp;",
+      "Once the buns have risen, pipe a line along each row of the buns, then repeat in the other direction to create crosses",
+      "Bake for 20 minutes on the middle rack of the oven, until the buns are golden brown",
+      "Once the buns are ready, combine the apricot jam and the ginger-infused syrup until the jam has loosened and is a smooth consistency. Brush the glaze over the buns, then serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apples",
+        "unit": null,
+        "notes": "peeled and diced to 1 cm pieces",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fast-action Dried Yeast",
+        "unit": "g",
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Warm Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spelt Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "450",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Xanthan Gum",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Spice",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshlay Farms Golden Yolker® Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spelt Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": "fresh, sliced into strips",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apricot Jam",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a6bb122f10db6e4cef1bd7ff519b1a967740992e9e8cf72f2de848d1f805092e",
+    "lineage_hash": "98a0a208809c8a2d98aab220aaa2b686cf6430d74724a3c0da953c0f2d14d014"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/caramelised-apple-cinnamon-hot-cross-buns-ginger-glaze-recipe",
+    "fetchedAt": "2026-08-02T12:01:28.700Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/caramelised-apple-cinnamon-hot-cross-buns-ginger-glaze-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

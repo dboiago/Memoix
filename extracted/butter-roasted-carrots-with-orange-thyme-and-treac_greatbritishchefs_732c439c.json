@@ -1,0 +1,192 @@
+{
+  "recipe": {
+    "name": "Butter-Roasted Carrots with Orange, Thyme and Treacle Glaze",
+    "time": "45 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the carrots on a roasting tray, drizzle with olive oil, season with salt and pepper, and toss to coat. Dot the butter evenly over the tray",
+      "Roast for 25–30 minutes, turning once, until the carrots are tender and beginning to caramelise at the edges",
+      "While the carrots roast, combine the orange juice and zest, treacle, thyme leaves and brown sugar in a small saucepan. Simmer gently over medium heat for 5–6 minutes until glossy and slightly reduced",
+      "Mix together all of the gremolata ingredients and season with salt to taste, then add to a food processor then blitz until mostly smooth",
+      "Pour the glaze over the roasted carrots and toss well to coat. Return to the oven for 5 minutes until sticky and shiny",
+      "Arrange the glazed carrots on a serving platter. Spoon over a little of the carrot-top gremolata, leaving some to serve alongside. Garnish with extra thyme sprigs, a few parsley leaves, orange segments and a final dusting of orange zest for brightness"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Heritage Carrots",
+        "unit": "g",
+        "notes": "trimmed and washed with tops reserved",
+        "amount": "800",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": "juice and zested",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Treacle",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme Leaves",
+        "unit": "Tbsp",
+        "notes": "fresh",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Carrot Tops",
+        "unit": null,
+        "notes": "washed and finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zested and juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "bunch",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Hazelnuts",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oranges",
+        "unit": null,
+        "notes": "zested and sliced into wedges",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Fresh Parsley",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pink Peppercorns",
+        "unit": "pinch",
+        "notes": "crushed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme Sprigs",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "510dd6742cbb486220b8e1abb0af67662d432dc0ca282accef58264cab4bc9e2",
+    "lineage_hash": "276a462356c87c7f92f30450e84a0ebdcc084c2eca3e3b23051918785e01e88c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/butter-roasted-carrots-orange-thyme-treacle-glaze-recipe",
+    "fetchedAt": "2026-08-02T00:28:23.390Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/butter-roasted-carrots-orange-thyme-treacle-glaze-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,155 @@
+{
+  "recipe": {
+    "name": "Blueberry Yeast Bread",
+    "time": "4 hr 30 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Blend the thawed blueberries and soy milk until smooth. Mixture should be at room temperature.",
+      "Bread machine: Add the ingredients to a bread machine and run one bread cycle.",
+      "Stand mix: Add all the ingredients to a stand mix with hook attachment and knead for 5-6 minutes, or until a smooth dough forms.Place dough in a lightly greased container or bowl, cover and rest for 1 hour or until double in size.",
+      "Hands: Knead for about 8-12 minutes, depending on how much you can knead during that time or until a smooth dough forms. Place dough in a lightly greased container or bowl, cover and rest for 1 hour or until double in size.",
+      "During this time, thoroughly grease a 7 x 3.25 inch loaf pan. If using a larger loaf pan (8.5 x 4.5 or 9 x 5), double the ingredients.",
+      "Transfer dough to a floured surface and degas the dough with your hands. Divide the dough into two and form it into a ball. Cover and rest for 10-15 minutes to relax the gluten.",
+      "Flatten the dough again with your hands and shape the dough. You can make one sandwich loaf or two small loafs. Use a rolling pin and roll out the dough. Fold one side inward, and then the other side on top. Use the heel of your hands or rolling pin to press down and remove any air bubbles. Roll the dough from the top down like a cinnamon roll and then pinch the end seam. Place seam side down into prepared loaf pan. Cover with greased cling wrap or a bowl and let it rise until almost double in size. The time will depend on the temperature of your kitchen. To check, make an indent in the dough. It should spring back up slowly. If it springs back quickly, proof longer. If it stayed dented, it is over-proofed.",
+      "Once almost ready, pre-heat oven to 400 F (200 C). Bake for 5 minutes and then reduce temperature to 350 F (180 C) and bake for another 25-30 minutes, or until hallow when you tap it. If it browns too quickly, tent it with foil.",
+      "Immediately remove from loaf pan and cool on a wire rack. Once completely cooled, slice and serve!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Blueberries",
+        "unit": "g",
+        "notes": "frozen, thawed",
+        "amount": "64",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsweetened Soy Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "75-80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bread Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "190",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "18",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Instant Dry Yeast",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "2.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "14",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blueberries",
+        "unit": "g",
+        "notes": "frozen, thawed",
+        "amount": "110",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30-35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bread Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "12.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Instant Dry Yeast",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "2.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "11ef3a8ed46e61fd140a584602d51399cd661bbc6496957c39c6687a0f74c13f",
+    "lineage_hash": "2fb5d346a7f2f58ea92fabd98366f2a398f49bc8583e1c61053bd835d300766c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.okonomikitchen.com/blueberry-yeast-bread/",
+    "fetchedAt": "2026-09-25T23:50:11.800Z"
+  },
+  "rawSource": "https://www.okonomikitchen.com/blueberry-yeast-bread/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

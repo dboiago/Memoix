@@ -1,0 +1,67 @@
+{
+  "recipe": {
+    "name": "Cheesy Pumpkin Truffles with Hazelnut Crumble",
+    "time": "1 hr 30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "20",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Peel the pumpkin, removing the green part with a pointed knife to reveal the flesh.|Chop the flesh into roughly equal-sized pieces so that they cook evenly.|Line a baking sheet with parchment paper, arrange the pumpkin pieces in a single layer, and roast for 35 minutes at 350°F. Remove from the oven and let cool.|Press the pumpkin flesh through a sieve using a spatula to obtain approximately 1 lb of purée.|Scrub the rind of the goat's cheese to remove the outer layer.|Cut the log into thick slices.|Transfer the cheese slices to a kitchen mixer, along with the pumpkin purée and the chopped dried fruits, then mix using the electric mixer attachment.|Work the dough until completely smooth. Meanwhile, scatter the chopped hazelnuts on a baking sheet.|Transfer the dough to a bowl and use a dough cutter to divide into strips. This is easier if you immerse the dough cutter in boiling water between strokes.|Roll the dough strips in the hazelnuts until fully covered, then serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pumpkin",
+        "unit": "lb",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Goat's Cheese Log",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hazelnuts",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mostarda Di Frutti Misti",
+        "unit": "oz",
+        "notes": "candied mixed fruits",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f7e4ea76bb7391b501155dc464a0bd823c2cd5d204618b97f61a3002c805b851",
+    "lineage_hash": "848fdd36def789a3be7e2e781223178ea30d201f0f1843e0e5d34cc11f2270c2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/appetizers/cheesy-pumpkin-truffles-with-hazelnut-crumble",
+    "fetchedAt": "2026-08-02T13:21:08.816Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/appetizers/cheesy-pumpkin-truffles-with-hazelnut-crumble",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

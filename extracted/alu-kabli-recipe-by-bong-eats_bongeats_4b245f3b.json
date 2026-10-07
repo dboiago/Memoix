@@ -1,0 +1,157 @@
+{
+  "recipe": {
+    "name": "Alu Kabli",
+    "time": "30 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all the ingredients to a mixing bowl[](https://www.bongeats.com/recipe/bhaja-masala).",
+      "Toss everything together very well so that the tamarind pulp coats everything.",
+      "Serve with jhuri bhaja as garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Boiled Potatoes",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Boiled Motor",
+        "unit": "g",
+        "notes": "whole yellow peas",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sprouted Chhola",
+        "unit": "g",
+        "notes": "bengal gram",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber",
+        "unit": "g",
+        "notes": "diced",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": "g",
+        "notes": "diced",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tamarind",
+        "unit": "g",
+        "notes": "soaked in 40g water",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bhaja Moshla",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Flakes",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beetnoon",
+        "unit": "g",
+        "notes": "black salt",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jhuri Bhaja",
+        "unit": "g",
+        "notes": "sev",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5c83f4cce32b818feb2dc4d1dbf248dd53c55eec2e9132fa6b63ec6ada781a8e",
+    "lineage_hash": "f66b818f70903bff2867cd8da2bfdcab1ed5fb220b9cb5cf5800030d6de55eda"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.bongeats.com/recipe/aloo-kabli",
+    "fetchedAt": "2026-08-01T16:31:19.492Z"
+  },
+  "rawSource": "https://www.bongeats.com/recipe/aloo-kabli",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

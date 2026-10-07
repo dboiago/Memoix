@@ -1,0 +1,207 @@
+{
+  "recipe": {
+    "name": "Chicken Mei Fun",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "366",
+      "carbohydrateContent": "41.6",
+      "fatContent": "15.1",
+      "proteinContent": "16.3"
+    },
+    "directions": [
+      "Combine the chicken and the marinade in a medium-sized bowl. Mix well and set aside.",
+      "Cook or soak vermicelli noodles in boiling water according to package instructions until al dente. I like to cook the noodles 1 minute less than the package indicates. Once done, drain and set aside. Use a pair of scissors to cut the vermicelli into short strands so it’s easier to stir fry with.",
+      "Mix all the sauce ingredients in a small bowl and set aside.",
+      "Add 1 tablespoon of oil into a big skillet and heat over medium-high heat until hot. Add the chicken and spread out so the pieces are not overlapping. Sear until the bottom is lightly browned, 2 minutes or so. Flip to cook the other side until the chicken is just cooked through. Transfer to a plate.",
+      "Pour in 1/2 tablespoon of oil and add the beaten eggs into the same pan. Lightly scramble the eggs until just cooked. Transfer to the plate with the chicken.",
+      "Add the remaining 1 1/2 tablespoons of oil and the garlic, ginger and onion into the same pan. Stir and cook for 1 minute.",
+      "Add the carrot and cabbage. Cook and stir for 1 minute, until the carrot just starts to turn soft.",
+      "Add the noodles, cooked chicken, green onion and sauce mixture. Toss with a pair of tongs until the sauce is mixed evenly. Add back the eggs and toss again. Transfer everything to serving plates and serve hot as a main."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Thin Rice Vermicelli Noodles",
+        "unit": "oz",
+        "notes": "140 g, yield 1 lb / 450 g after soaking, dried",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Breast",
+        "unit": "oz",
+        "notes": "or thigh, boneless, skinless, thinly sliced",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "beaten with a pinch of salt",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "or vegetable",
+        "amount": "3",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Thumb Ginger",
+        "unit": null,
+        "notes": "minced",
+        "amount": "1",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "2",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "White Onion",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "½",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": "medium",
+        "notes": "julienned",
+        "amount": "1",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Cabbage",
+        "unit": "C",
+        "notes": "shredded",
+        "amount": "2",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion",
+        "unit": null,
+        "notes": "sliced to 2” pieces",
+        "amount": "3",
+        "section": "Stir fry",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "85b535602d17f468a15f1d1d71dcabea0b2fc2dd76e4ace8f45cc2eea7afe4cf",
+    "lineage_hash": "91373bd934b204db25cd4aa3880df4d6c21ab69bf858566900849b21b14f50a5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/chicken-mei-fun/",
+    "fetchedAt": "2026-08-02T01:54:15.492Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/chicken-mei-fun/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

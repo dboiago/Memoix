@@ -1,0 +1,103 @@
+{
+  "recipe": {
+    "name": "Big Poppa's Rib Snacks",
+    "time": "2 hr 10 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "694",
+      "carbohydrateContent": "29",
+      "fatContent": "53",
+      "proteinContent": "26"
+    },
+    "directions": [
+      "Preheat your smoker to 275°F.",
+      "Season the pork riblets all over with the Big Poppa’s Sweet Money Seasoning and the Big Poppy&#39;s Sweet Money Hot Seasoning, ensuring an even coating on all sides.",
+      "Place the seasoned riblets in the preheated smoker and smoke them until they are about 80% cooked (they should have an internal temperature of about 170ºF), about 1 to 1 1/2 hours.",
+      "Remove the partially cooked ribs from the smoker to a cutting board. Carefully cut them between the bones into rib nuggets. Place the nuggets in a foil pan.",
+      "Scatter the butter pieces over the ribs, scatter on the brown sugar, and then drizzle on the honey and Granny’s BBQ Sauce evenly over the top. Finish with a dusting of Big Poppa’s Sweet Money Seasoning for an extra burst of flavor.",
+      "Gently mix all the ingredients together in the foil pan to ensure the nuggets are evenly coated. Cover tightly with foil.",
+      "Place the covered pan back in the smoker and cook until the nuggets are nice and tender (the internal temperature should be about 208°F), about 1 hour. (You could do this final cooking in a regular oven if you like, since the meat won&#39;t pick up any more smoke in the covered pan.)",
+      "Once the nuggets are fully cooked and tender, remove them from the smoker. Transfer the nuggets to a platter, building them into a mound and brushing with additional Granny’s BBQ Sauce and a dusting of Big Poppa’s Sweet Money Hot Seasoning."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pork Short Ribs",
+        "unit": "lb",
+        "notes": "cut crosswise into 1 1/2-inch-wide riblets membrane removed",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Big Poppa’s Sweet Money Seasoning Plus Some for Finishing",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Big Poppa’s Sweet Money Hot Seasoning Plus Some for Finishing",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter Cut in Small Pieces",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granny’s BBQ Sauce Plus Some for Finishing",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b392d63b25971398fc60eb82c385155b286e9b8ed232f5f6c61f14557a3cfda6",
+    "lineage_hash": "a150db78a4a4c5e960a6ae973e80721424e6f917de817572e063cc60adf303ef"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://amazingribs.com/big-poppas-rib-snacks-recipe/",
+    "fetchedAt": "2026-08-01T19:11:04.106Z"
+  },
+  "rawSource": "https://amazingribs.com/big-poppas-rib-snacks-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

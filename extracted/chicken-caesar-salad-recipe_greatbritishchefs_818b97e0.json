@@ -1,0 +1,285 @@
+{
+  "recipe": {
+    "name": "Chicken Caesar Salad",
+    "time": "2 hr 30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To prepare the chicken, butterfly the chicken so you have 2 pieces. Place between 2 pieces of cling film and pound the chicken breast to about 4-5mm thick",
+      "Lightly whisk all of the marinade ingredients in a bowl until combined, mix in the chicken until well coated. Leave overnight (or for 12 hours) in the fridge",
+      "For the Caesar dressing, blend the mustard, salt, pepper, vinegar, garlic, anchovies and egg yolk, then slowly pour in the oil, with the blade still running, until the sauce starts to thicken and emulsify",
+      "Next, add the lemon juice, Parmesan, Worcestershire sauce and Tabasco. If the mixture is too thick, add a little water. If your dressing splits you can add lemon juice to help bring it back together again",
+      "For the ficelle bread, mix the water with the yeast and flour mix with a dough hook on a medium speed for 8 minutes then beat well for 4 minutes on a high speed until the dough pulls away from the edge of the bowl",
+      "Add the salt to the dough after 15 minutes and knead for 2-3 minutes, then leave to prove for 1 hour. Knock back, then separate the mix into 120g portions. Roll out each portion into long baguettes. Place onto a floured tray and leave to prove for 30-40 minutes at room temperature",
+      "Dust the baguettes with flour and bake at 210°C/gas mark 6 1/2 for 10-12 minutes with 2 steam injections until nicely coloured, then cool on a wire rack. If you do not have the tools for the steam, simply add a tray of boiling water to the base of the oven just before cooking",
+      "When ready to start the salad, cut the ficelle bread diagonally across into slices and toss in olive oil. Season with salt and pepper and toast in a hot oven at 180°C/gas mark 3 until golden in colour",
+      "Place the washed and trimmed baby gem leaves into a bowl and add a little dressing to bind them together, along with half of the Parmesan and croutons",
+      "Heat a charcoal grill or barbecue until roasting hot and grill the chicken on each side for 2-3 minutes. Slice the breast up into strips allowing approximately 5-6 pieces per portion",
+      "Divide the salad into bowls. Top with the chicken and cover with the remaining Parmesan and toasted bread, along with the anchovy fillets"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Anchovy Fillets",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "English Mustard",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "tsp",
+        "notes": "finely chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Worcestershire Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tabasco",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "T55 Flour",
+        "unit": "g",
+        "notes": "plus extra for dusting",
+        "amount": "375",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yeast",
+        "unit": "g",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "9",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "210",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": "for toasting the bread",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Breasts",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "tsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "tsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "tsp",
+        "notes": "finely chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zested and juiced",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinches",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gem Lettuces",
+        "unit": null,
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan Shavings",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Anchovy Fillets",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a9f20bb38baa4705311e9f4aa9133e4f5cebb6fbb85078d5945ad7140a243aac",
+    "lineage_hash": "195d33848fdc1bf9550721e283f0139f77aa58a7e5cff3793b24b9af745c0f05"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chicken-caesar-salad-recipe",
+    "fetchedAt": "2026-08-03T16:04:44.501Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chicken-caesar-salad-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

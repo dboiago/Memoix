@@ -1,0 +1,76 @@
+{
+  "recipe": {
+    "name": "Caipirinha Sorbet",
+    "time": "8 hr 25 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "BR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "216",
+      "carbohydrateContent": "49",
+      "fatContent": "0.2",
+      "proteinContent": "0.1"
+    },
+    "directions": [
+      "Combine 10 oz&#32;granulated sugar and 8 oz&#32;water in a small saucepan and stir over medium heat until the sugar is dissolved.",
+      "Zest and juice the limes. Add all the zest, 6 oz&#32;lime juice and 2 ½ oz&#32;cachaça to the syrup and allow it to cool to room temperature",
+      "Refrigerate until the mix is very cold, at least 3-4 hours or overnight",
+      "Run in your ice cream machine according to the manufacturer&#39;s directions. (See Note)",
+      "Pack into a plastic container, cover the surface with plastic wrap, cover and freeze overnight"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "1 ¼ cups",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "¾ cup, about 6-8 limes",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cachaça",
+        "unit": "oz",
+        "notes": "5 tablespoons",
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d7bf683ed662ac3a3d39e209562e7702ff6440f090e14ae042e4a2a723ac257f",
+    "lineage_hash": "3eaac4fc6c35019c86d37f7eb4db67fa1dca66cabcb3dfacc185308546e388d4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2016/07/27/caipirinha-sorbet/",
+    "fetchedAt": "2026-08-01T19:35:51.590Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2016/07/27/caipirinha-sorbet/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

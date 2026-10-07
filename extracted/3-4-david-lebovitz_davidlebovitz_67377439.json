@@ -1,0 +1,51 @@
+{
+  "recipe": {
+    "name": "Strawberry Dessert with Leftover Wine",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pile some juicy berries into a glass and pour the leftover wine on top of them for dessert."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Some Strawberries",
+        "unit": null,
+        "notes": "juicy",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bottle Bottle Leftover Wine",
+        "unit": null,
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "26976a42ae97cd4eecbb16697fa8bd101e07c83d7275c275c096b6e11d0500b1",
+    "lineage_hash": "db1015f0b1f7ff60e2ea6907abecf8e0e0a2232bcd28aaebf5cc71d981f43b4a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/34-french-wine/",
+    "fetchedAt": "2026-08-02T09:26:08.426Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/34-french-wine/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Bold Botanist Gin Sour",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupette",
+    "garnish": [
+      "Mint"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all the ingredients in a shaker and dry shake (no ice). Add ice and shake vigorously. Strain into a chilled glass. Drop the bitters onto the surface and use a toothpick to create a star shape. Garnish with mint."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "84f29d1791bbbf8ce177dd0681964f519dd092fbda41bc01ad8180e00a11a45f",
+    "lineage_hash": "faa5008f49aca84e73e6ce10a3e70c5da77629c917330dd48989d305e69c60ba"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bold-botanist-gin-sour/",
+    "fetchedAt": "2026-08-03T21:36:08.036Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bold-botanist-gin-sour/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

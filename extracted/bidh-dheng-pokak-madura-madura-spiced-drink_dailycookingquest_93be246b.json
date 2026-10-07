@@ -1,0 +1,108 @@
+{
+  "recipe": {
+    "name": "Bidh-Dheng Pokak Madura (Madura Spiced Drink)",
+    "time": "30 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "5",
+    "source": "scraped",
+    "cuisine": "ID",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place all ingredients in a pot and bring to a boil. Reduce heat and simmer for 5 minutes. Turn off heat, and let steep for another 10 minutes.",
+      "Strain into serving glasses, serve hot or warm."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Ginger (indonesian: Jahe)",
+        "unit": null,
+        "notes": "peeled and bruised",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemongrass (indonesian: Sereh)",
+        "unit": null,
+        "notes": "bruised and knotted",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pandan Leaves (indonesian: Daun Pandan)",
+        "unit": null,
+        "notes": "knotted",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": "inch",
+        "notes": "Indonesian: kayu manis",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "(indonesian: Cengkeh)",
+        "unit": "clove",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": "Indonesian: pekak/bunga lawang",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Black Peppercorn",
+        "unit": "tsp",
+        "notes": "Indonesian: biji lada hitam",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Sugar",
+        "unit": null,
+        "notes": "or to taste",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "53add1700576d3b00cecf67a0f9292b615f3afa51107a972a02b892b7abd2f43",
+    "lineage_hash": "6f98d53b7ecf1e229f97316b58a4db1ca7d1dc701297e5793be1775661e9e201"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/bidh-dheng-pokak-madura-madura-spiced-drink.html",
+    "fetchedAt": "2026-08-02T07:37:45.185Z"
+  },
+  "rawSource": "https://dailycookingquest.com/bidh-dheng-pokak-madura-madura-spiced-drink.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

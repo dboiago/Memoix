@@ -1,0 +1,100 @@
+{
+  "recipe": {
+    "name": "Bok Choy Soup",
+    "time": "20 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "55",
+      "carbohydrateContent": "5.9",
+      "fatContent": "3.4",
+      "proteinContent": "1.1"
+    },
+    "directions": [
+      "Trim off the tough ends of the baby bok choy. Separate the larger outer leaves, then halve the cores lengthwise. Soak the bok choy in a large bowl of cold water for 5 minutes. Gently rub the stems to remove any dirt trapped between the leaves. Rinse well and drain.",
+      "Heat the sesame oil in a medium pot over medium-low heat. Add the zha cai, ginger, and the white parts of the green onion. Cook, stirring occasionally, until fragrant and the ginger just begins to brown, 3 to 5 minutes.",
+      "Pour in the chicken stock and bring to a boil. Reduce the heat to a simmer and cook for 3 minutes to infuse the broth.",
+      "Add the bok choy and return the soup to a gentle simmer. Cook until the bok choy is tender but still crisp, 2 to 3 minutes.",
+      "Add the green parts of the green onion. Taste the soup and adjust the seasoning with more chicken bouillon or mushroom powder if needed. If you&#39;d like a brighter, tangier flavor, stir in a splash of the zha cai pickling liquid. Drizzle with a little more sesame oil, if desired. Serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Baby Bok Choy",
+        "unit": "heads",
+        "notes": "300 g",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Zha Cai (chinese Pickled Mustard Plant Stem)",
+        "unit": "C",
+        "notes": "*Footnote 1",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "” (5 Cm) Ginger",
+        "unit": null,
+        "notes": "julienned",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Soup",
+        "unit": "C",
+        "notes": "or vegetable broth",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Bouillon (or Mushroom Powder)",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6e86ef610d18cd6fa9e2b5810b404c85176f7cb66e3a4a922646956448a9dfbe",
+    "lineage_hash": "a9506cf69d5fb80e8977c583f8b5a2b9f71be09ac0461a77af004225df2b67e2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/bok-choy-soup/",
+    "fetchedAt": "2026-08-01T22:14:09.117Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/bok-choy-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

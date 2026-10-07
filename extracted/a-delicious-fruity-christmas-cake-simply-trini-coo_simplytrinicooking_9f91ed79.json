@@ -1,0 +1,175 @@
+{
+  "recipe": {
+    "name": "Fruity Christmas Cake",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "266",
+      "carbohydrateContent": "43",
+      "fatContent": "9",
+      "proteinContent": "4"
+    },
+    "directions": [
+      "Preheat oven to 300 degrees F.",
+      "Mix together the fruits and nuts in a deep bowl. Set aside.",
+      "In another bowl, sift the flour; then add the salt, baking powder, and spices. Mix well.",
+      "Remove 1 cup of the flour mixture and add to the fruit mixture. Mix the flour with fruits. Set aside.",
+      "Cream the sugar and butter. Add one egg at a time, and continue creaming.",
+      "Blend in the molasses and essence. Blend in the flour, then the fruits (mix with the spatula).",
+      "Grease the cake pan. Pour cake mixture into the cake pan and bake for 1 hour.",
+      "Brush the wine or rum on the cake immediately as it is taken out of the oven. Cool before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Raisins",
+        "unit": "lb",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maraschino Cherries Halved",
+        "unit": "lb",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Preserved Pineapple",
+        "unit": "lb",
+        "notes": "alt: candied pineapple",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Fruit",
+        "unit": "lb",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almond Chopped",
+        "unit": "lb",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "(2 Cups All-purpose Flour",
+        "unit": "lb",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Molasses",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almond",
+        "unit": "tsp",
+        "notes": "alt: vanilla essence",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rum",
+        "unit": "C",
+        "notes": "alt: red wine",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b0f57eef1353ced1a477da8389f1363a831f73e18ef468483e61d147abc22518",
+    "lineage_hash": "a1d0e20b7a43488453b2c0c984d2b947706455c6f3fbf4db4f28134699cc8738"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.simplytrinicooking.com/christmas-cake/",
+    "fetchedAt": "2026-09-25T20:21:40.150Z"
+  },
+  "rawSource": "https://www.simplytrinicooking.com/christmas-cake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

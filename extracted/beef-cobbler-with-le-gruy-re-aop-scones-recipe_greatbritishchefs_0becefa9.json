@@ -1,0 +1,230 @@
+{
+  "recipe": {
+    "name": "Beef Cobbler with Le Gruyère AOP Scones",
+    "time": "2 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Sweat the onion, garlic, celery, carrot and pancetta with a splash of olive oil in a large saucepan or casserole dish. Season with salt and cook until starting to soften (about 7 minutes)",
+      "Use a slotted spoon to remove the vegetables from the pan and set aside",
+      "Dust the beef in the flour and season well with salt and pepper, then colour in the pan with a generous splash of oil. You may need to work in batches if the pan gets overcrowded",
+      "Once the beef is nicely coloured, add the vegetables and pancetta back into the pan along with the mushrooms, bay leaves, thyme and red wine. Cook until the wine has reduced by half",
+      "Add the beef stock and leave to simmer uncovered for 1 hour",
+      "Meanwhile, make the scones. Place the flour, baking powder, salt and butter in a food processor and blend to a sandy consistency",
+      "Add three-quarters of the cheese and the herbs and pulse until just mixed. Add the milk bit by bit and continue to pulse the blender until you start to get a dough that clumps together. You may not need to use all the milk, so keep an eye on the mixture as you add it",
+      "Turn the dough out onto a lightly floured surface and bring together into a ball. Place in a bowl, cover and rest the dough for 20 minutes",
+      "After resting, tip the dough out onto a lightly floured surface and roll out to about 3.5cm thick. Use a 7cm round cutter to cut out the scones",
+      "When the stew is ready the meat should be tender. If the pan is very deep, transfer the stew to a shallow ovenproof dish and top with the scones. Otherwise, simply place them on top of the stew",
+      "Brush the scones with the beaten egg and sprinkle with the leftover cheese",
+      "Place in the oven for 30–40 minutes or until the scones are a nice golden colour. You may want to place a tray underneath the pan as the stew could bubble up and spill out a little"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Braising Beef",
+        "unit": "g",
+        "notes": "such as shin or chuck, diced",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Pancetta",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Sticks",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": null,
+        "notes": "peeled and roughly chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Button Mushrooms",
+        "unit": "g",
+        "notes": "halved",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": "fresh",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Self-raising Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "450",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gruyère",
+        "unit": "g",
+        "notes": "ideally Le Gruyère AOP Reserve",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": "you may not need it all",
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshlay Farms Golden Yolker® Egg",
+        "unit": null,
+        "notes": "beaten for egg wash",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soft Herbs",
+        "unit": "Tbsp",
+        "notes": "such as chives, parsley and tarragon",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9581e26d30dc2eeef760e4299d7570357b5bc99134d675f21e01d34a1497c7ef",
+    "lineage_hash": "1b409fd341e4ef343f82017864aca226e8986dc38a7f52d99004cd51d47c12a2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beef-cobbler-recipe",
+    "fetchedAt": "2026-08-03T06:02:30.940Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beef-cobbler-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

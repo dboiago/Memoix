@@ -1,0 +1,186 @@
+{
+  "recipe": {
+    "name": "Blueberry Cobbler",
+    "time": "1 hr 5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 375ºF (190ºC).",
+      "To make the blueberry filling, mix the blueberries in a 10-inch (23cm) skillet or baking dish with the granulated and brown sugars, cornstarch, lemon zest and juice, and gin. Place the pan on a foil or parchment-lined baking sheet (to catch any spills), and bake until the berries start bubbling, stirring once midway during baking, about 30 to 35 minutes.",
+      "In a measuring cup, mix the milk with the vinegar and let stand until curdled, about 10 minutes.",
+      "To make the biscuits, whisk together the flour, sugar, baking powder, baking soda, and salt in a medium bowl. Add the butter and use a pastry blender, or your hands, to break the butter into pieces the size of corn kernels. Give the milk a brisk stir with a fork to bring it back together, then add it to the dry ingredients.",
+      "Stir the mixture gently with your hands or a spatula until it comes together, but avoid kneading it; overworking the batter will make the biscuits tough. It should be somewhat shaggy, not smooth. If the mixture seems too dry, add another tablespoon of milk.",
+      "Drop the biscuit batter over the warm cooked blueberries in six dollops, evenly spaced apart. If you want smaller biscuits, you can drop it in eight dollops.",
+      "In a small bowl, make the egg wash by stirring together the egg yolk and teaspoon of milk together with a fork. Dab the egg wash over the biscuits with a brush. Sprinkle the 2 teaspoons of turbinado sugar over the biscuits.",
+      "Bake the biscuit-topped cobbler until the tops of the biscuits are golden brown and the biscuits are cooked through, about 20 to 25 minutes."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Blueberries",
+        "unit": "C",
+        "notes": "960g, fresh or frozen",
+        "amount": "6",
+        "section": "blueberry filling",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": "50g",
+        "amount": "¼",
+        "section": "blueberry filling",
+        "isOptional": false
+      },
+      {
+        "name": "Dark",
+        "unit": "Tbsp",
+        "notes": "alt: light brown sugar",
+        "amount": "2",
+        "section": "blueberry filling",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "blueberry filling",
+        "isOptional": false
+      },
+      {
+        "name": "Zest of One Lemon",
+        "unit": null,
+        "notes": "preferably unsprayed",
+        "amount": "0",
+        "section": "blueberry filling",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": "fresh",
+        "amount": "2",
+        "section": "blueberry filling",
+        "isOptional": false
+      },
+      {
+        "name": "Gin",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "blueberry filling",
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": "160ml, whole or lowfat",
+        "amount": "⅔",
+        "section": "biscuits",
+        "isOptional": false
+      },
+      {
+        "name": "White or Cider Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "biscuits",
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "C",
+        "notes": "210g",
+        "amount": "1½",
+        "section": "biscuits",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "biscuits",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": "preferably aluminum-free",
+        "amount": "1",
+        "section": "biscuits",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "biscuits",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "biscuits",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": "2 ounces, 60g, chilled and cubed",
+        "amount": "4",
+        "section": "biscuits",
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "egg wash",
+        "isOptional": false
+      },
+      {
+        "name": "Or Large Egg Yolk",
+        "unit": "medium",
+        "notes": null,
+        "amount": "1",
+        "section": "egg wash",
+        "isOptional": false
+      },
+      {
+        "name": "Turbinado (or Granulated) Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "egg wash",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "10b60e979fad6df60024b02329bec94341d97d5b15993402b40a00abe5948c1b",
+    "lineage_hash": "599e688e7b159a526fc55627d9ed12c0bed4283ec04c59add9c6323b6e6a336d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/blueberry-cobbler-recipe/",
+    "fetchedAt": "2026-08-03T02:39:54.878Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/blueberry-cobbler-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

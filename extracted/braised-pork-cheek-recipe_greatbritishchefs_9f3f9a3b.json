@@ -1,0 +1,179 @@
+{
+  "recipe": {
+    "name": "Braised Pork Cheek",
+    "time": "1 hr 20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, place a large pan over a medium heat. Once hot, add the oil, season the cheeks and add to the pan. Cook all over until golden brown, then remove and set aside",
+      "Reduce the heat and add the onion, cooking until soft and translucent. Add the spices, garlic bulb, soy sauce and stock to the pan and bring to the boil. Pour everything into a pressure cooker with the browned pork cheeks",
+      "Seal the pressure cooker and cook over a medium-high heat for 45 minutes. After this time, remove from the heat and allow to depressurise for 15–20 minutes",
+      "Remove the lid from the pressure and check that the cheeks are nice and tender – they should still hold their shape but easily fall apart once cut",
+      "Transfer the cooking liquid to a clean pan and reduce until you are left with 800ml of liquid. Pass through a fine sieve into a clean pan to remove the spices",
+      "Place the liquid over a medium heat and bring to a simmer. Combine the butter and flour in a small bowl to form a smooth paste, then whisk the paste into the hot stock, a small piece at a time, until the sauce is nice and thick",
+      "Taste for seasoning, add the honey and a pinch of salt if needed",
+      "Heat the sesame oil in a sauté pan over a high heat. Separate the pak choi stems and add to the pan, frying briefly until wilted but still keeping some crunch",
+      "Transfer the pak choi to a serving platter and place the cheeks in the middle. Serve immediately with a garnish of toasted sesame seeds"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pork Cheeks",
+        "unit": null,
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sichuan Peppercorns",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bulb of Garlic",
+        "unit": null,
+        "notes": "halved",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "L",
+        "notes": null,
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "soft",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Clear Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pak Choi",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": null,
+        "notes": "toasted",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c8268ecd3ea652bbc0c724217b4f7471d577c67a2b55b43793538f88aa19f477",
+    "lineage_hash": "62eb40b4de7994f3b0d393ca72261aed07c6e232cbfc14f41c5f87ac8fff2632"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/braised-pork-cheek-recipe",
+    "fetchedAt": "2026-08-03T11:29:34.079Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/braised-pork-cheek-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

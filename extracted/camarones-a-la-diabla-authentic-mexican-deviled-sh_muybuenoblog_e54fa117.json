@@ -1,0 +1,103 @@
+{
+  "recipe": {
+    "name": "Camarones a la Diabla (Authentic Mexican Deviled Shrimp)",
+    "time": "35 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "171",
+      "carbohydrateContent": "4",
+      "fatContent": "6",
+      "proteinContent": "24"
+    },
+    "directions": [
+      "Peel and devein shrimp.",
+      "Sprinkle the shrimp evenly with salt and set aside.",
+      "Add both kinds of chiles to a pot and add enough water so they are just covered. Bring water to a boil. Lower the heat and cover. Simmer for about 20 minutes or until softened.",
+      "Drain cooked pods and discard water.",
+      "Puree softened chiles with ½ cup fresh water, garlic, and tomato, in a blender until smooth and set aside.",
+      "Heat a large, deep skillet over medium-high heat and add olive oil to the pan.",
+      "Add shrimp to the pan, and cook for 1 minute per side. Once the shrimp turns pink, it is cooked so be careful not to overcook.",
+      "Add the chile sauce slowly. Bring to a boil and then simmer on low for 4 to 5 minutes."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Raw Large",
+        "unit": "lb",
+        "notes": "alt: jumbo shrimp, peeled, deveined and tail-on",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kosher Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Guajillo",
+        "unit": null,
+        "notes": "California, or New Mexico, red chile pods, rinsed, stems, seeds, and veins removed",
+        "amount": "6-8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chiles De Arbol Peppers",
+        "unit": null,
+        "notes": "optional for added spice",
+        "amount": "1-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Roma Tomatoes",
+        "unit": null,
+        "notes": "quartered",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "744dd16e65790699c82a90f24d52ddb7b0471d4e71038028dfc424b2cd6f10db",
+    "lineage_hash": "1326427fd9d51b464a13d9da62597beda9b8665cf6cdf405e81fbc9c42d045b6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/camarones-a-la-diabla/",
+    "fetchedAt": "2026-08-02T06:29:15.085Z"
+  },
+  "rawSource": "https://muybuenoblog.com/camarones-a-la-diabla/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

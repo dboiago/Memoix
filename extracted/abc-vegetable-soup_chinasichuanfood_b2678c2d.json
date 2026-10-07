@@ -1,0 +1,151 @@
+{
+  "recipe": {
+    "name": "ABC Vegetable Soup",
+    "time": "35 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add a cross cut on the surface of the tomatoes. Heat enough water in a deep pot until boiling. Place them in and cook for 1 to 2 minutes.",
+      "Peel off the skin and cut into very small cubes.",
+      "Heat oil in a pot, add ginger and tomatoes in. Fry over slow fire for 3-5 minutes until the tomato cubes becomes very soft and form a puree texture.",
+      "Add water in, bring to a boiling and simmer for 10 minutes over slowest fire. Place all the other vegetable in. Cook for another 10 minutes until all the vegetable are soft. In the mean time, slice mushrooms and wet the mushroom slices and coat them with a thin layer of starch.",
+      "Place mushroom slices in if you are using. Cook for another 2-3 minutes.&nbsp; Add salt, light soy sauce if you are using and ground pepper. Drizzle sesame oil in and serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "To Matoes Skin Removed and Cut Into Small Cubes",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "slices",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Middle Size Potato Peeled and Cut Into Small Pieces",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot Peeled and Cut Into Small Pieces",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celeries Cut Into Small Pieces",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion Cut Into Small Pieces",
+        "unit": null,
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shiitake Mushroom Remove the Hard Ends and Sliced",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch Optional",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Cooking Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce Optional",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c6904be695bf49e58d5fbceea341433a0af2da10938c0b523fae5c0cef1eab76",
+    "lineage_hash": "10d029dfff320a14b5cc81442e6f450d0fa529b37dc15eb2fe4ab0a6fbfb076d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/abc-vegetable-soup/",
+    "fetchedAt": "2026-08-02T05:11:33.096Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/abc-vegetable-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

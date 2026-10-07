@@ -1,0 +1,151 @@
+{
+  "recipe": {
+    "name": "Carrot and Walnut Cake",
+    "time": "1 hr 5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a large bowl, cream the butter and light brown sugar together. Gradually add the eggs to the mix while stirring. Add the zest and juice of the orange",
+      "In a separate bowl, mix the almond meal, nibbed almonds, walnuts and ginger.  Sift in the self raising flour, baking powder, cinnamon and grated nutmeg",
+      "Add the mix from step 2 into the bowl from step 1and mix to combine. Add the grated carrot and sea salt",
+      "Line the cake tin or loaf tin with baking paper. Pour in the cake mix and bake for 40 minutes at 170°C/gas mark 3",
+      "Remove the tin from the oven and allow to cool on a wire rack. Slice the cake up and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Carrots",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": "zested and juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almond Meal",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nibbed Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Walnuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Self-raising Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "170",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg",
+        "unit": "pinch",
+        "notes": "grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "498950eb5c25451494db7589ba86ab5156f8ad16e9c9b24a23cc6229b9b288f7",
+    "lineage_hash": "897ad62c4c3518723ab78f5ae89ce01fa96155c94149c5eb2cb3086262f12f93"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/carrot-walnut-cake-recipe",
+    "fetchedAt": "2026-08-03T16:01:11.120Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/carrot-walnut-cake-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

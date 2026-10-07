@@ -1,0 +1,73 @@
+{
+  "recipe": {
+    "name": "Coffee with Tea",
+    "time": "7 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "4",
+      "carbohydrateContent": "0.6",
+      "fatContent": null,
+      "proteinContent": "0.1"
+    },
+    "directions": [
+      "Set the water in a kettle to boil. Pour the hot water into a teacup. Dip the tea bag into the water (about 8 times).",
+      "Then add 1 teaspoon of instant coffee. Stir until the coffee dissolves. Add sugar for taste. Serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Instant Coffee",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tea Bag Original Recipe Used Red Rose Tea Bag",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "34aafe4447daf8c94f79b3c014d538b53768ba3cd8a95d477ff59a85f2433171",
+    "lineage_hash": "1a93ca52f607678c487c0d1d31be7290a6a4a0669b6e78aee492ff8953d3c7ff"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.simplytrinicooking.com/coffee-with-tea/",
+    "fetchedAt": "2026-09-25T23:36:47.558Z"
+  },
+  "rawSource": "https://www.simplytrinicooking.com/coffee-with-tea/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,314 @@
+{
+  "recipe": {
+    "name": "Beetroot Tart With Blue Cheese Beignets",
+    "time": "4 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the pickled red beetroot, cut the stalks from the beetroot and cut into 3cm long pieces. Put the sticks in a pan with oil, vinegar, honey, salt and water and cook until tender",
+      "Place the whole beetroot in a pan and cover with salted water and cook until tender for approximately 1 hour. When ready, peel the beetroot by hand; the skin will remove easily. Chop into wedges",
+      "Add the beetroot to the dressing and stalks while still warm. Cool and put in the fridge overnight",
+      "For the pickled golden beetroot, mix the vinegar, oil, mustard, salt and water to make a dressing",
+      "Boil the golden beetroot in salted water for approximately 1 hour, or until tender. Peel the skin, cut the beetroot into wedges and add to the dressing. Cool and put in the fridge overnight",
+      "Cut the Binham blue cheese into 12 1cm cubes (keep the trimmings for the mousse) and roll in 25g of flour, then 1 egg and 30g of breadcrumbs. Roll again in the egg and breadcrumbs. Place in the fridge until needed",
+      "For the blue cheese mousse, bring the milk to the boil and pour onto the yolks. Whisk and put back in the pan, and cook on the stove until thickens at 83ºC",
+      "Pour into a bowl and add the gelatine which has been soaked in cold water. Add the Binham blue trimmings. Allow to cool and pass into a 3cm deep container and place in the fridge to set",
+      "For the puff pastry, roll out the pastry so it is ½ cm thick and prick with a fork. Bake in an oven at 150ºC/Gas mark 2 for 20 minutes between 2 baking sheets",
+      "Take out of the oven and cut into 6 oblong shapes, 4cm wide and 15cm long",
+      "For the beetroot jelly, put the beetroot, water and vinegar in a pan and bring to the boil. Simmer for 30 minutes and strain though a fine sieve",
+      "Add the gelatine that had been soaked in cold water, season with salt and put into a container and refrigerate",
+      "For the pickled red onion bring the vinegar, wine, water, sugar, peppercorns, salt and oil to the boil. Pour over the onion. Cool and put in the fridge over night",
+      "To serve, place the pastry in the centre of the plate. Spoon the mousse into a piping bag with a medium nozzle. Pipe the mousse along the pastry. Place alternate wedges of golden and red beetroots on top of the mousse",
+      "Add a few onion rings and some beetroot leaves and stalks. Finally top with some beetroot jelly",
+      "Deep fry the Binham blue beignets for a couple of seconds until golden and place at either end of the tart"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Red Beetroot",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pedro Ximinez Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Beetroot",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cider Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grain Mustard",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Binham Blue Cheese",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Breadcrumbs",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Puff Pastry",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raw Beetroot",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9a8012cd3d2a2a2150b710d522513103c2160d05ecbe2a2ab04a1669c34de84a",
+    "lineage_hash": "a7913664f18bcd6ccb2bf14df8d008fe2536cb52a3df0e332970bdec1829941a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beetroot-tart-recipe-blue-cheese-beignets",
+    "fetchedAt": "2026-08-03T20:44:16.130Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beetroot-tart-recipe-blue-cheese-beignets",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

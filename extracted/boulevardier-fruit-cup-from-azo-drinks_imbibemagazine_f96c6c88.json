@@ -1,0 +1,35 @@
+{
+  "recipe": {
+    "name": "Boulevardier Fruit Cup",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients, except the tonic water, to a glass with ice. Top with tonic water. Garnish.",
+      "Cucumber SyrupAdd the water and cucumber to a saucepan and let it boil for 3 to 5 minutes over medium heat. Add the sugar and stir until it dissolves. Strain and allow to cool. Will keep in the refrigerator for 1 week."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "123e5500bfa1fb3901cbff059f1f90467d6a7ee8766e079cbf988a13cc242297",
+    "lineage_hash": "9b8787e2c323c0fc517446ba16cc98057480bc98f4190f2d8ccf586656cba613"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/boulevardier-fruit-cup-azo-drinks/",
+    "fetchedAt": "2026-08-03T22:31:06.032Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/boulevardier-fruit-cup-azo-drinks/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

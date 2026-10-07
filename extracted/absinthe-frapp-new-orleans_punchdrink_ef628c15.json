@@ -1,0 +1,72 @@
+{
+  "recipe": {
+    "name": "Absinthe Frappé New Orleans",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Frappe",
+    "garnish": [
+      "Mint Floret",
+      "Powdered Sugar"
+    ],
+    "subcategory": "Liqueur",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all ingredients in a mixing tin and shake with ice.",
+      "Strain into a frappe glass over crushed ice.",
+      "Garnish with mint floret and powdered sugar."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Absinthe",
+        "unit": "oz",
+        "notes": "preferably Vieux Pontarlier",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crème De Menthe",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweetened Condensed Milk Syrup",
+        "unit": "oz",
+        "notes": "1:1 water to condensed milk, stirred together",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f562bea23c2f10bdb74c85072850b2f56594c60c0b35908f8531264300b67bfd",
+    "lineage_hash": "7dc2f72a42cc3895af22bd0c0f02eaacba2ddd5866872e4951f80471489fa130"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://punchdrink.com/recipes/absinthe-frappe-new-orleans/",
+    "fetchedAt": "2026-08-02T22:53:01.053Z"
+  },
+  "rawSource": "https://punchdrink.com/recipes/absinthe-frappe-new-orleans/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,167 @@
+{
+  "recipe": {
+    "name": "Beef and Broccoli Stir Fry (Thit Bo Xao Bong Cai Xanh)",
+    "time": "15 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "5",
+    "source": "scraped",
+    "cuisine": "VN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Slice beef against the grain into ¼&#8221; thickness. Transfer to a large bowl and season with soy sauce, oyster sauce, sugar, sesame oil, and ground black/white pepper. Set aside.",
+      "In a small bowl, combine chicken stock/water, soy sauce, sugar, cooking wine and corn starch. Mix with a fork until corn starch is completely dissolved. Set aside.",
+      "In a large wok or skillet with a lid, add water, broccoli and carrots. Heat on medium-high and cover with a lid to allow the vegetables to &#8220;steam&#8221; with the small amount of water until fork tender (about 4 minutes). Remove vegetables and set aside.",
+      "Wipe any remaining moisture in the wok. Add vegetable oil and heat on medium high. Add garlic and marinated beef. Pan fry until beef is cooked all the way through (about 4 minutes).",
+      "Add stir-fry sauce and simmer on low until thicken. Add steamed broccoli and carrots. Toss until combined. Serve with steamed rice for a complete meal."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef Sirloin",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Cane Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black",
+        "unit": "tsp",
+        "notes": "alt: white pepper",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "C",
+        "notes": "alt: water",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Cane Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Cooking Wine",
+        "unit": "Tbsp",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn Starch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Broccoli Florets",
+        "unit": "lb",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": "small",
+        "notes": "optional for color; peel and slice thinly at a diagonal",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "mince finely",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1145333caa12968429b032f76e950d2489bb582f9f0ce901ee16e9a2ac7705f4",
+    "lineage_hash": "aa6e73cf3b7f62b9139ae7e1a652137e7ebbe766047e97c179097e9a2cf50e82"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://vickypham.com/blog/beef-broccoli-stir-fry-thit-bo-bong-cai-xanh/",
+    "fetchedAt": "2026-08-01T20:50:26.776Z"
+  },
+  "rawSource": "https://vickypham.com/blog/beef-broccoli-stir-fry-thit-bo-bong-cai-xanh/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

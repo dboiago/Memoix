@@ -1,0 +1,128 @@
+{
+  "recipe": {
+    "name": "Chez Panisse Gingersnaps",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "70",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cream butter until soft. Add sugar, and beat until light and fluffy.",
+      "Add vanilla and eggs, and beat again.",
+      "Add molasses and beat until well incorporated.",
+      "Sift together the dry ingredients and add into the mixture.",
+      "Mix until it all just comes together.",
+      "Line a 9\" x 5\" (22 x 12 cm) loaf pan with plastic wrap, so that some hangs over the sides.",
+      "Press the dough into the bottom of the pan, pack it tightly, and try to make the top as level as possible.",
+      "Cover the dough with the plastic overhangs.",
+      "Freeze until very firm, preferably overnight.",
+      "Preheat the oven to 180°C (360°F) and line a cookie sheet with parchment paper.",
+      "Remove dough from the pan and unwrap from one side.",
+      "Slice the \"brick\" into very thin slices, no more than 1/10\" (2mm).",
+      "Place the slices on the cookie sheet (give them a little room, they will expand) and bake for 12 to 15 minutes, until the edges turn brown to dark brown (depending on how cooked and crispy you like them).",
+      "Transfer to a rack to cool completely."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Salted Butter",
+        "unit": "oz",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": "+ 2 Tbsp",
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract/paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "small",
+        "notes": "or 1 1/2 large eggs",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Molasses",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Ginger",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "953827d8ee2112cbff2bd73848379c58952057f2b826adf979138e355b659a02",
+    "lineage_hash": "88ed3bac8d00a84cc6a704c8acd3bbf122519885bb5c0db659bbb0cd8469dd7f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/cookies-small-cakes/chez-panisse-gingersnaps-recipe/",
+    "fetchedAt": "2026-09-30T18:33:31.258Z"
+  },
+  "rawSource": "https://cnz.to/recipes/cookies-small-cakes/chez-panisse-gingersnaps-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

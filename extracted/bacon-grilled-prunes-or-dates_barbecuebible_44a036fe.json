@@ -1,0 +1,61 @@
+{
+  "recipe": {
+    "name": "Bacon-Grilled Prunes or Dates",
+    "time": "4 to 6 minutes",
+    "course": "apps",
+    "rating": 0,
+    "serves": "24",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Set up your grill for direct grilling and preheat to high.",
+      "Stuff each prune with a piece of cheese. Wrap in bacon and secure with a knotted skewer.",
+      "Place the grill shield on the grate towards the front (the long side should be parallel to the front of the grill) and arrange the prunes on the grill so the exposed part of the skewers are over the shield (this keeps them from burning). Grill just long enough to brown the bacon, turning with tongs, 4 to 6 minutes in all."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Prunes",
+        "unit": "large",
+        "notes": "pitted",
+        "amount": "24",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gouda",
+        "unit": "oz",
+        "notes": "alt: Gruyère cheese, cut into almond-size pieces",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strips Thin-sliced Bacon",
+        "unit": null,
+        "notes": "each cut into thirds",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "34e6930bee9f907f8b8dfcf47905c9b92977582708e7e4134da940c2bb9a1ee1",
+    "lineage_hash": "208803c2d610707b1af4bae48f4753308614683754e5489f4be90b04fafc9251"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/bacon-grilled-prunes-dates/",
+    "fetchedAt": "2026-08-03T03:30:10.096Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/bacon-grilled-prunes-dates/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

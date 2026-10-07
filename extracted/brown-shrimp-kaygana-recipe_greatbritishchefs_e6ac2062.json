@@ -1,0 +1,189 @@
+{
+  "recipe": {
+    "name": "Brown Shrimp Kaygana",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat your oven to 170ºC fan, or 190ªC conventional",
+      "To make the çemen crumbs, melt the butter with the çemen. Whisk well and incorporate with the breadcrumbs ensuring an even coating of butter and çemen – they should all turn orange in colour",
+      "Lay the crumbs onto a baking tray lined with baking parchment. Bake in the oven for approximately 15 minutes, stirring halfway through. Allow to cool",
+      "To make the batter, place the flour into a mixing bowl. In a separate bowl, whisk the eggs and milk together. Add the egg mix to the flour a little at a time whilst whisking to form a smooth batter. Alternatively, you could use a hand blender",
+      "To make the hollandaise, cut the preserved lemon into 4 quarters. Remove the flesh and squeeze out the juice into a heatproof bowl. Dice the skins as finely as you can and place to one side",
+      "Melt the butter in a pan and set aside",
+      "Add the egg and egg yolks to the preserved lemon juice, and place the bowl over a pan of simmering water. Whisk constantly until your whisk leaves a lasting trail in the mix. Take off the heat immediately and keep whisking until the eggs cool slightly",
+      "Sit the bowl onto a folded cloth on your kitchen surface so you can whisk with one hand continuously. Slowly pour in the melted butter with the other hand. Once all the butter is in, add the lemon juice and diced preserved lemon. Add a little fine salt to taste",
+      "In a small blini pan about 10cm in diameter, heat up 1/2 a tablespoon of sunflower oil on a medium heat. Scatter a quarter of the brown shrimps around the bottom of the pan, then pour a quarter of the Kaygana batter around the pan over the top of the shrimps. Mix the two together and season with salt and pepper. Cook as if you were cooking a pancake – wait for the batter to set and turn golden underneath, then flip and cook for another 20 seconds, until both sides are golden",
+      "Remove the Kaygana onto a tray and repeat the process 3 more times, then warm them all in the oven for 2-3 minutes",
+      "Place one Kaygana in the centre of each plate, drizzle over some of the hollandaise. Cook off the remaining 50g of brown shrimp in a pan, and scatter on top of the Kaygana along with some chives, çemen crumbs and grated cheese"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plain Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Preserved Lemon",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Çemen",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Panko Breadcrumbs",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Shrimp",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sunflower Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": "bunch",
+        "notes": "tops thinly sliced",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sheep's-milk Cheese",
+        "unit": "g",
+        "notes": "like pecorino, finely grated",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "17c41bf98d149c5a58e96d10fef147a788be4ee592c8261158a25882e0b4a8d0",
+    "lineage_hash": "016952962b56e8f495669bd8d0ef1689ed534c1c4ee4d8884a92dd4c775e87e9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/brown-shrimp-kaygana-recipe",
+    "fetchedAt": "2026-08-03T06:39:23.283Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/brown-shrimp-kaygana-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

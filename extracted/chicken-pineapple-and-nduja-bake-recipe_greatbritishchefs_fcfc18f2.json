@@ -1,0 +1,172 @@
+{
+  "recipe": {
+    "name": "Chicken, Pineapple and ‘Nduja Bake",
+    "time": "1 hr 40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Put all the ingredients for the paste into a large bowl and mix together. Add the chicken, garlic and three-quarters of the sliced onion and mix well so everything is coated evenly",
+      "Tip the onions and garlic into a 28cm ovenproof cast-iron skillet or similar-sized baking dish and spread out. Place the chicken thighs on top, skin side up and spaced apart",
+      "Cut the pineapple into 4 rounds, then cut each round into quarters, removing the hard core (you should have about 300g)",
+      "Add the pineapple to the bowl with the remnants of the paste, mix to coat with whatever's left there, then arrange the pineapple around the chicken",
+      "Pour the tangerine juice around the chicken (don’t get the skin wet), then bake for 20 minutes",
+      "Remove from the oven and pour the stock or water into the pan around the chicken (again, don’t get the skin wet)",
+      "Return to the oven for another 20–25 minutes, or until the chicken is cooked through and the skin is browned and crispy",
+      "If you have a blowtorch, use it to char the pineapple a little",
+      "Toss the coriander and the remaining sliced onions together with a tiny bit of oil and salt and arrange on top",
+      "Serve from the pan, with the lime wedges alongside"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "'nduja",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Purée",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chipotle Flakes",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper to Season",
+        "unit": null,
+        "notes": "(about 20 twists of the mill)",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Thighs",
+        "unit": null,
+        "notes": "skin on, bone-in",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "peeled and  crushed with the side of a knife",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "halved and very thinly sliced on a mandoline",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pineapple",
+        "unit": null,
+        "notes": "peeled, large, and extra-ripe",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tangerine Juice",
+        "unit": "g",
+        "notes": "from about 4 tangerines",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Bone Broth",
+        "unit": "g",
+        "notes": "or stock or water",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "cut into wedges",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "10f5d7af0b6e9c382cb83cf9f77db1df17b1793c39e8e866480c85145ef7722d",
+    "lineage_hash": "343532bfebc3fbb958200bad3b50544dfa5ef65c84e5ca21393fd1afb42ae3fc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chicken-pineapple-nduja-bake-recipe",
+    "fetchedAt": "2026-08-02T17:59:41.401Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chicken-pineapple-nduja-bake-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

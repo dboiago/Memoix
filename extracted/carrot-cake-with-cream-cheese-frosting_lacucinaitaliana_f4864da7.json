@@ -1,0 +1,133 @@
+{
+  "recipe": {
+    "name": "Carrot Cake with Cream Cheese Frosting",
+    "time": "2 hr 15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Chop the almonds. Shred the carrots. Beat the eggs with the brown sugar until fluffy, then gradually add in the oil. Then alternate between adding in the almond flour mixed with the yeast, the grated carrots, shredded coconut, and chopped almonds until all ingredients are used up. Butter a springform pan, pour in the batter, and bake at 325°F for 1 hour and 15 minutes.",
+      "&nbsp;Remove the cake from the oven and let cool. For the frosting: Mix the cream cheese with the powdered sugar and 1 tablespoon of lemon juice. Refrigerate the frosting, covered, while the cake cools.",
+      "Spread the frosting on the cake and serve, garnished as desired with edible flowers."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Almond Flour",
+        "unit": "C",
+        "notes": "gluten free",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "lb",
+        "notes": "scrubbed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream Cheese",
+        "unit": "oz",
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1.25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "0.57",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut",
+        "unit": "C",
+        "notes": "glutenfree, shredded",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almonds",
+        "unit": "C",
+        "notes": "blanched",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Powdered Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "Tbsp",
+        "notes": "gluten free",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "67cadffb2950b439acda490e747da6d11a6c23c56cfe94f548c2ae19c39b61af",
+    "lineage_hash": "98b7a00c73d1c824be286aed5eeb5de697e67b5736f008b1180c51c5678c20c6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/carrot-cake-with-cream-cheese-frosting",
+    "fetchedAt": "2026-08-03T06:34:16.060Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/carrot-cake-with-cream-cheese-frosting",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

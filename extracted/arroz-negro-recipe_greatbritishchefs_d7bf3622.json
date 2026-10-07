@@ -1,0 +1,332 @@
+{
+  "recipe": {
+    "name": "Arroz Negro",
+    "time": "2 hr 20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "First prepare the bisque. Heat the olive oil in a large pan over a medium heat. Caramelise the prawns for a few minutes, then add the tomato purée",
+      "Cook for a few minutes, then add the alcohol and cook until it evaporates",
+      "Add the vegetables and cook them for 10 minutes, or until very soft, over a low heat",
+      "Add the 4 litres of water and the bay leaf, then simmer for 20 minutes",
+      "Remove from the heat and set aside to infuse for 30 minutes, then pass the bisque through a sieve",
+      "While the bisque infuses, make the alioli. Preheat the oven to 180°C",
+      "Slice across the head of garlic just a little from the top to expose the inside of the garlic cloves",
+      "Drizzle the head of garlic with olive oil and season it with salt and pepper",
+      "Cook the garlic for 20–25 minutes until the cloves are nice and soft. Set aside to cool",
+      "Squeeze the cooled roasted garlic cloves out of their skins",
+      "Blend the roasted garlic to a paste with the raw garlic. Add the egg and yolks and blend again to combine",
+      "Whisk together the Arbequina and pomace olive oils together",
+      "Very slowly drizzle the oils into the blender whilst it’s running, to emulsify them into mayonnaise",
+      "Season the alioli with the lemon juice and salt and pepper to taste",
+      "Heat a pan over a medium heat and add a dash of olive oil. Cook the shallot for 5 minutes, making sure it doesn’t take on any colour",
+      "Add the rice and cook, stirring constantly, until it changes from opaque white to more translucent and then back to white again",
+      "Add the white wine and reduce until the alcohol has cooked off",
+      "Add a bit of bisque and stir, then keep stirring and adding bisque until the rice starts to soften. You should need about 2 litres of bisque. Remove from the heat while the rice is still slightly undercooked",
+      "For the fondo, heat up a pan over a high heat, then add a dash of olive oil",
+      "Add the cuttlefish and cook until it loses all of its water, stirring if necessary",
+      "Add the spring onion and cook for 5 minutes with the cuttlefish. Season with salt and pepper then finish with some parsley",
+      "To finish, heat up a tablespoon of oil in the pan, then add the rice and cook until it's warmed through",
+      "Add all the fondo to the rice, along with the squid ink and a few ladles of bisque",
+      "Cook the rice, stirring regularly, until it is tender and cooked through, adding more bisque as necessary",
+      "Drizzle in some arbequina olive oil and season to taste with salt and pepper",
+      "Serve garnished with the alioli, parsley and a sliver of dried chilli"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Prawns",
+        "unit": "kg",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Purée",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sherry",
+        "unit": "ml",
+        "notes": "ideally La Gitana Manzanilla sherry",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brandy",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": "peeled and roughly chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "large",
+        "notes": "peeled and roughly chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leek",
+        "unit": "large",
+        "notes": "roughly chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Stick",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bulb of Fennel",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "head",
+        "notes": "plus 1/3 garlic clove",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": null,
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Pomace Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "160",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Arbequina Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "160",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": null,
+        "notes": "for cooking",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Calasparra Paella Rice",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": null,
+        "notes": "for cooking",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cuttlefish",
+        "unit": "g",
+        "notes": "cut into small pieces",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": "bunches",
+        "notes": "washed and julienned",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Squid Ink",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Arbequina Olive Oil",
+        "unit": null,
+        "notes": "to finish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli",
+        "unit": null,
+        "notes": "dried, finely sliced",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6bfd3ae4ec0c00affbc6ca96ff1e3c8cb4b27aeb2657e7880ec8f98d2c92a460",
+    "lineage_hash": "09b6ab51fd389c041db912b8b27eaf8f6b90250e6a06bf8ffc0f193093cdd629"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/arroz-negro-recipe",
+    "fetchedAt": "2026-08-02T09:16:19.734Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/arroz-negro-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

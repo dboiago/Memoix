@@ -1,0 +1,38 @@
+{
+  "recipe": {
+    "name": "Apple Cider Caramels",
+    "time": "2 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Boil the apple cider in a 3-to-4-quart saucepan over high heat until it is reduced to a dark, thick syrup, between 1/3 and 1/2 cup in volume, stirring occasionally.",
+      "Line the bottom and sides of an 8-inch straight-sided square metal baking pan with 2 long sheets of criss-crossed parchment. Set it aside. Stir the cinnamon and flaky salt together in a small dish.",
+      "Once the apple cider has reduced, remove from heat and stir in the butter, sugars and heavy cream. Return the pot to medium-high heat with a candy thermometer attached to the side, and let it boil until the thermometer reads 252 degrees F, about 5 minutes.",
+      "(If you don’t have a candy thermometer: Have a bowl of very cold water ready and cook the caramel until a tiny spoonful dropped into the water becomes firm, chewy, and able to be plied into a ball.)",
+      "Immediately remove caramel from heat, add cinnamon and salt mixture, and give the caramel several stirs to distribute it evenly. Pour caramel into the prepared pan. Let it sit until cool and firm—about two hours. Once caramel is firm, transfer to a cutting board with the help of the parchment paper.  Use a well-oiled knife (oil between each cut) to cut the  caramels into 1-inch by 1-inch squares. Wrap each one in a 4-inch square of waxed paper, twisting the sides to close. Caramels will be on the soft side at room temperature, and chewy/firm in the fridge."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "7538ff5d12b07ff9cabf668e1dde12a55e62d5d7fe180b8665ee1cb931f8d173",
+    "lineage_hash": "b9b4fbae98363b82976795f836bb41901c10c987a29489a205e1011372c1645e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/apple-cider-caramels-recipe/",
+    "fetchedAt": "2026-08-04T00:02:30.895Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/apple-cider-caramels-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

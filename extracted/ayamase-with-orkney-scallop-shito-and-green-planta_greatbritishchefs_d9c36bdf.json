@@ -1,0 +1,302 @@
+{
+  "recipe": {
+    "name": "Ayamase with Orkney Scallop, Shito and Green Plantain Chips",
+    "time": "2 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shuck the live scallops and remove the skirt and roe attached. Put the scallop roe in ice water then pat it dry. Smoke the roe over wood chips",
+      "Once smoked, place the roe on an oven tray and dehydrate at 60°C for 12 hours. Once dehydrated, blend to a powder",
+      "To make the shito XO, heat the oil to 180°C in a wide saucepan and fry the prawns and mackerel until golden brown. Strain and reserve the oil for later",
+      "Blend the cooked fish in a food processor for 1 minute until it forms fine crumbs",
+      "Use 50ml of the reserved oil to sweat the onions in saucepan until soft but not coloured. Add the Scotch bonnet, ginger and garlic pastes. Add the tomato paste and slowly cook out for 10–15 minutes until roasted and dark in colour",
+      "Add the blended fish, soy and fish sauce and mix well then remove from the heat",
+      "Cover with the remaining reserved oil and leave to cool down overnight in fridge",
+      "For the ayamase stew, sweat the onions with the oil in a wide saucepan until softened",
+      "Add the green peppers and continue to cook until they have softened. Add the garlic, salt, sugar, chilli, pepper and stock and continue cooking for 15 mins on low heat",
+      "Blend everything together on high speed until smooth",
+      "Blanch the spinach for 1 minute and then shock it in iced water",
+      "Squeeze out excess water from the spinach and blend with the other ingredients until smooth, and then pass through a fine sieve",
+      "For the green plantain chips, peel the plantains and cut them into thin strips using knife or a mandolin",
+      "Heat oil in a saucepan to 170°C and fry the plantain strips for 2 minutes or until golden and crispy",
+      "Blend the scallop roe with spices in a spice grinder until it forms a powder",
+      "Dust over the crispy plantain chips and sprinkle with sea salt",
+      "Heat a non-stick pan with a splash of oil, and sear the scallops on service side for 1 minute on high heat until they form a golden brown crust",
+      "Remove the pan from the heat, add some butter and lemon juice and then flip the scallop and baste on the other side",
+      "Season with sea salt to finish and allow to rest before serving",
+      "To serve, spoon some ayamase stew onto a plate. Strain the shito from the oil and place a heaped spoonful on top of the scallop. Top the shito with the green plaintain crisps. Finish with crispy plantain on top of the scallop as well"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Grapeseed Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tiger Prawns",
+        "unit": "g",
+        "notes": "peeled, de-veined",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Mackerel Fillet",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "g",
+        "notes": "finely diced",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scotch Bonnet Paste",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Paste",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Paste",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Paste",
+        "unit": "g",
+        "notes": null,
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "ml",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "ml",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grapeseed Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Onions",
+        "unit": "g",
+        "notes": "finely sliced",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Pepper",
+        "unit": "g",
+        "notes": "deseeded, finely sliced",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Paste",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scotch Bonnet Chillies",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Spinach",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Plantains",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Paprika",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Piri Piri Chilli",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallop Roe",
+        "unit": "g",
+        "notes": "dried, or dried smoked scallop roe",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for deep-frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Xl Live Hand-dived Scallops",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grapeseed Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "33fedf8ebd4f8874b4703cea7b580eb9f77f67abb9b2bb9a2c032470db027961",
+    "lineage_hash": "15b72f9a3f7158d111de6fb195f7e497fba906879a66e164dad1ab568059abdb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/ayamase-orkney-scallop-shito-green-plantain-chips-recipe",
+    "fetchedAt": "2026-08-02T14:25:25.388Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/ayamase-orkney-scallop-shito-green-plantain-chips-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

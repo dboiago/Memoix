@@ -1,0 +1,103 @@
+{
+  "recipe": {
+    "name": "Afia Efere (White Soup)",
+    "time": "1 hr 5 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "NG",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the uyayk and uda pod on an oven tray – toast at 525f for 5 minutes or until just smoky",
+      "In a large pot – combine goat meat, chicken, pepper, blended crayfish, salt, maggi, uyayak, uda and smoked fish. Add enough water to just cover the ingredients. Stir to combine. Set on high heat and bring to a rolling boil. reduce heat to medium-low and leave to simmer for 25 – 30 minutes",
+      "If using yam powder – combine with enough water to form a smooth paste",
+      "Add in yam or pounded yam into the broth. Stir well until paste is loose and thorough combined with the broth. Simmer uncovered for another 4 – 5 minutes",
+      "Remove and discard Uyayk and uda pods to serve. Enjoy with pounded yam"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Uyayak Pod",
+        "unit": "inch",
+        "notes": "Aidan Fruit",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Uda Pods",
+        "unit": null,
+        "notes": "seeds removed and discarded",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Goat Meat",
+        "unit": "g",
+        "notes": "precooked, smoked fish and or chicken",
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cubes Maggi",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crayfish Powder",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scotch Bonnet Pepper (hot Pepper – Ata Rodo)",
+        "unit": null,
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pounded Yam Paste",
+        "unit": "C",
+        "notes": "substitute 1/2 cup yam powder",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b23bd9e03e583c2aa205b0aa22ab2ccfc7ed932c7ea08f0c6cb970fe10699209",
+    "lineage_hash": "b305bedc8e9d45fbecbe53dae96ad4aa89f2ea4602a16d2de9f649213be25599"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://9jafoodie.com/afia-efere-white-soup/",
+    "fetchedAt": "2026-09-25T20:24:47.946Z"
+  },
+  "rawSource": "https://9jafoodie.com/afia-efere-white-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

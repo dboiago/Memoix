@@ -1,0 +1,125 @@
+{
+  "recipe": {
+    "name": "Braised Pork with Sweet Potatoes and Mushrooms in Soy Sauce",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat oil in a wok/frying pan on medium high, sauté pork until no longer pink.",
+      "Add yam/sweet potato, shimeji, and the rest of the ingredients. Bring to a boil, then reduce heat to a simmer and cook until the sauce has reduced, the pork is cooked, and the yam is easily pierced with a fork.",
+      "Turn off heat, transfer to a serving plate, and garnish with thinly sliced scallions. Served hot with steamed white rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Thinly Sliced Pork",
+        "unit": null,
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Yam/sweet Potato",
+        "unit": null,
+        "notes": "peeled and cut into bite size wedges",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shimeji Mushrooms",
+        "unit": "pkg",
+        "notes": "tear into pieces",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dashi Stock",
+        "unit": "C",
+        "notes": "or 2 cups water + 1 1/2 tablespoon instant dashi granules",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sake",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mirin",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garnish",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "48712553792b69421d038af4ffaab681d4b5a7d691deaf67d12376019d13a2fb",
+    "lineage_hash": "64f18e67e6078fd52df8a2b5bdd6b5325e1aeafbc4e0f80ab138ba8e693bb68f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/braised-pork-with-sweet-potatoes-and-mushrooms-in-soy-sauce.html",
+    "fetchedAt": "2026-08-02T05:10:41.708Z"
+  },
+  "rawSource": "https://dailycookingquest.com/braised-pork-with-sweet-potatoes-and-mushrooms-in-soy-sauce.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

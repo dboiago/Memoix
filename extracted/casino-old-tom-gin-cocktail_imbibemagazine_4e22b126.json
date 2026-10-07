@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Casino Old Tom Gin Cocktail",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine ingredients in an ice-filled rocks glass, stir to combine and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "66462f716b92eb4420e1238b99de7c6af1fa2bef11018cc47597e812b2226557",
+    "lineage_hash": "29143d37fbaf3c918db722073eb0df6808800f1bf59d5477e18c38c1656da3b7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/casino-old-tom-gin-cocktail/",
+    "fetchedAt": "2026-08-03T19:18:05.866Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/casino-old-tom-gin-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

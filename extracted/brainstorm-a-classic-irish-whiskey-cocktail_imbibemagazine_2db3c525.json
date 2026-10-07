@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Brainstorm",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [
+      "Orange Twist"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Stir all of the ingredients with ice, then strain into a chilled glass. Twist an orange peel over the cocktail and use as garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "32cdbcd9e9060bca9eaa47a18190368a36612e0114621bbc63f5a5171ef2af4a",
+    "lineage_hash": "c1537bbaed731e4f214a282224356fa217dadfa76f0532201425cbdd05e3ae64"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/brainstorm-irish-whiskey-cocktail/",
+    "fetchedAt": "2026-08-04T00:35:03.951Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/brainstorm-irish-whiskey-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

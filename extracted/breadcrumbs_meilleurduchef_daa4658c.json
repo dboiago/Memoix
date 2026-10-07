@@ -1,0 +1,41 @@
+{
+  "recipe": {
+    "name": "Breadcrumbs (Tomato persillades provençales)",
+    "time": "15 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cut the breadloaf into cubes...",
+      "... of 2/3 cm.",
+      "Place these cubes into the bowl of the chopper",
+      "Turn on and run...",
+      "...until you obtain a fine...",
+      "...uniform powder.",
+      "Pour the breadcrumbs into a bowl.",
+      "Store for use."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "0dc24ddba145deea87d655e343de3ce800691397aab364b9ca11f8286cb572b4",
+    "lineage_hash": "68b4d1d7ac6cd6a9fba3eec20f051c0b83f6828f6530bf9b7573a0c76eb97b36"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.meilleurduchef.com/en/recipe/breadcrumbs.html",
+    "fetchedAt": "2026-08-02T11:55:01.171Z"
+  },
+  "rawSource": "https://www.meilleurduchef.com/en/recipe/breadcrumbs.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

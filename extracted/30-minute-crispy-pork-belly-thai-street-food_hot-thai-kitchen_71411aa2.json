@@ -1,0 +1,107 @@
+{
+  "recipe": {
+    "name": "Crispy Pork Belly",
+    "time": "30 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "TH",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pat the pork belly dry as much as possible with a paper towel, then remove the skin with a sharp knife, leaving as much of the fat on it as possible (unless you want to remove some of the fat).",
+      "Cut the pork into 1-inch wide strips, and then cut each strip into pieces about ¾-inch thick. (The pork will shrink after frying so the final pieces will be smaller).",
+      "Place the pork into a large mixing bowl and add the fish sauce, sugar, and white pepper. Use your hand to massage the pork and mix all the seasonings. Keep massaging for a minute or so until you no longer feel the grains of sugar, and there is no more fish sauce pooling at the bottom of the bowl.",
+      "In a small bowl, combine the all-purpose flour and the cornstarch and mix well. Sprinkle the flour mixture over the pork and mix well, making sure none of the pieces are sticking together. You want a light and even coating on all the pieces. Let it sit for 5 mins or so while you heat up the oil.",
+      "Add at least 1 inch of frying oil to a wok or a medium pot and heat it to 350°F (175°C) for the first fry.",
+      "First Fry: Add half of the pork, placing it in the hot oil one piece at a time to ensure they are not sticking together. Fry for 2 minutes (time this). Maintain the heat of the oil between 300-350°F during the frying; on my electric stove I keep it on medium high, but it will vary from stove to stove.",
+      "Remove the pork promptly and place on a plate to cool until it’s no more than lukewarm before frying them a second time. Repeat with the second batch, being sure to bring the oil temp back up to 350°F before frying.",
+      "Second Fry: Once the pork is cool, bring the oil temp up to 385°F(196°C) over high heat. Add the pork all at once and fry for 70-90 seconds, or until the exterior is a deep golden brown. You can fry them for a maximum of 2 minutes; beyond this the pork will become too dry. Remove and place on a paper towel-lined plate to drain. Be sure to bring the temp back up to 385°F before frying the second batch.",
+      "Allow the pork to cool for a few minutes before digging in as the fatty part of the pork is VERY hot out of the fryer!!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pork Belly",
+        "unit": "lb",
+        "notes": "skinless , see note 1",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "Tbsp",
+        "notes": "see note 2",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Frying Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "as needed",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nam Jim Jeaw",
+        "unit": null,
+        "notes": "optional dipping sauce",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "26f570a577dece24c95146cc6f261d0e514dd4b779d2477220ff911589e4d53f",
+    "lineage_hash": "540f68c9f9be8bd7f98524787aca05161c9bc14813dbf758a6c338f07b1ff011"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://hot-thai-kitchen.com/30-min-crispy-pork-belly/",
+    "fetchedAt": "2026-08-02T04:17:41.080Z"
+  },
+  "rawSource": "https://hot-thai-kitchen.com/30-min-crispy-pork-belly/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

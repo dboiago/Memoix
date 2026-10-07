@@ -1,0 +1,155 @@
+{
+  "recipe": {
+    "name": "Bone Marrow Butter Leftover Sourdough Croutons",
+    "time": "30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the marrow bones on a roasting tray and roast 15–20 minutes, or until the marrow inside becomes soft and begins to pull away from the bone",
+      "Remove from the oven and let cool slightly",
+      "Use a small spoon or a knife to carefully scoop out the soft marrow from the bones. Discard the bones and set the marrow aside",
+      "In a bowl, mix together the extracted bone marrow and unsalted butter until smooth and well-combined",
+      "Stir in minced garlic, fresh thyme and a pinch of salt and black pepper",
+      "Toss the bread with the bone marrow butter mixture until evenly coated",
+      "Spread the bread in a single layer on a baking sheet",
+      "Bake for 10–15 minutes, or until the croutons are golden and crispy, tossing halfway through to ensure even browning",
+      "Meanwhile, prepare the celeriac soup. Heat the olive oil in a large pot over a medium heat",
+      "Add the chopped onion and garlic, and cook for about 10 minutes or until the onion has softened",
+      "Add the diced celeriac and Jerusalem artichokes, and cook for another 5 minutes, stirring occasionally",
+      "Pour in the vegetable stock, bring the mixture to a boil, then reduce the heat to a simmer",
+      "Cook for 30 minutes, or until the vegetables are tender and easily pierced with a fork",
+      "Use a stick blender to blend the soup until smooth and creamy. Alternatively, blend in batches using a jug blender, making sure that steam can escape the blender safely",
+      "Stir in the cream (if using) and season with salt and black pepper to taste",
+      "Ladle the soup into bowls and top with a generous handful of crispy bone marrow butter croutons",
+      "Garnish with fresh parsley and a drizzle of olive oil, if desired"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Marrow Bones",
+        "unit": "large",
+        "notes": "sliced lengthwise",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": "softened",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme Leaves",
+        "unit": "Tbsp",
+        "notes": "fresh, or 1 tsp dried thyme",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leftover Sourdough Bread",
+        "unit": "g",
+        "notes": "cut into cubes",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": "plus more to garnish",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "large",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celeriac",
+        "unit": "g",
+        "notes": "peeled and diced",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jerusalem Artichoke",
+        "unit": "g",
+        "notes": "peeled and diced",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "750",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": "optional",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": null,
+        "notes": "fresh, to garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "58232aefe9c8d8e5807c2edf616070c7c8c988073d9838b19e7d26c72b4d94d9",
+    "lineage_hash": "4c19ae397c270c1600bc6f2f24049b7bce445d1ff88c9815a41a4fb829f43c6a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/bone-marrow-sourdough-croutons-recipe",
+    "fetchedAt": "2026-08-02T06:10:04.056Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/bone-marrow-sourdough-croutons-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

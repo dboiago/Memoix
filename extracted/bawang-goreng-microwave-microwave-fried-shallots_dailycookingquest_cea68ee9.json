@@ -1,0 +1,57 @@
+{
+  "recipe": {
+    "name": "Bawang Goreng (Microwave Fried Shallots)",
+    "time": "15 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "ID",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Prepare shallots and oil: Peel and thinly sliced shallots. Place shallots in a microwave-safe bowl and top with enough oil to cover the shallots (~ 1/2 cup).",
+      "Fry shallots: Cook/fry in the microwave for 2 minutes, then take it out and stir it, making sure to scoop any shallot strands that stick on the bowl.",
+      "Cook/fry again in the microwave for 30 seconds, repeating this step several times, until the shallots are golden brown. I usually need a total of 2 minutes, or four times 30 seconds each.",
+      "Strain: Strain to separate fried shallots from the oil.",
+      "Store oil: Store oil in a clean glass jar in the fridge. This infused shallot oil is very fragrant, and you can use it for cooking. My favorite is to use this oil for fried rice.",
+      "Cool fried shallots:Transfer the fried shallots to a plate lined with a paper towel to soak up oil. After 2 minutes, or once you notice the paper towel is wet with oil, transfer one more time to another plate lined with a clean paper towel. Sprinkle with salt and let it cool completely.",
+      "Store fried shallots: Store fried shallots in a clean glass jar at room temperature. It should stay fresh and crispy for up to 1 month."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gram (3.5 Oz) Shallots",
+        "unit": null,
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fa9632625adbcca0144fc043e0ddced5c88a1da4adbc6802378c23fe5975f25b",
+    "lineage_hash": "8d3ad19cd3df82590e2180eff1a4f6be4a12f6cab9afb04f7415f75a7a8149eb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/bawang-goreng-microwave-fried-shallot.html",
+    "fetchedAt": "2026-08-01T18:45:19.616Z"
+  },
+  "rawSource": "https://dailycookingquest.com/bawang-goreng-microwave-fried-shallot.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

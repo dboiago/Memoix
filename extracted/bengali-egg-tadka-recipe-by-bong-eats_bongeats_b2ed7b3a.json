@@ -1,0 +1,257 @@
+{
+  "recipe": {
+    "name": "Bengali Egg Tadka",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Soak tadka'r daal (green moong beans) and chhola'r daal (split Bengal gram) overnight. The next morning, drain them over a colander.",
+      "Make a spice mix combining cumin powder, coriander powder, turmeric powder, kashmiri red chilli powder, and gorom moshla.",
+      "Finely chop ginger, green chillies, onions, and coriander leaves. Roughly chop garlic. Cut tomatoes into small cubes.",
+      "Heat mustard oil in a kadai and add ghee. Add onions and fry until golden. This should take around 4 minutes. Now, add ginger, garlic, and green chillies consecutively. Fry each for 30 seconds.",
+      "Add the spice mix and sauté on medium heat for another 4 minutes or so. In case the pan dries out, add a splash of water and continue frying.",
+      "Lastly, add the cubed tomatoes and salt. Sauté the mixture until oil separates.",
+      "Add the soaked and drained tadka'r and chhola'r daal to the pan. Sauté them with the spices on medium heat for 2 minutes. Then, pour 300 ml hot water.",
+      "Transfer everything to a pressure cooker.",
+      "Add mutton fat. Put the lid on and pressure-cook for 10 minutes.",
+      "When you are ready to eat, heat a wok or pan on high flame. Once screaming hot, add vegetable oil. Add the onions, green chillies, garlic, and tomatoes. Toss everything on high heat.",
+      "\\[If you feel comfortable doing it, tilt the pan towards the flame so that the ingredients 'catch fire' momentarily. This will give the tadka a smoky flavour. However, be very careful while doing this.\\]",
+      "Ladle in a couple of portions of the boiled tadka and give everything a stir. Top with a generous amount of butter and let it melt.",
+      "Garnish with chopped coriander leaves and crushed kasuri methi. Give everything one last mix and your plain tadka is ready!",
+      "Beat two eggs with a pinch of salt. Add these to the tadka, allowing the eggs to set a bit before scrambling them.",
+      "Stir gently and be careful not to cook too long, or the eggs will become dry and rubbery."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Tadka'r Daal",
+        "unit": "g",
+        "notes": "green moong beans",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chhola'r Daal",
+        "unit": "g",
+        "notes": "split Bengal gram",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kashmiri Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gorom Moshla",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mutton Fat",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": "g",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "g",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "g",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kasuri Methi",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "for egg tadka",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "dd158ae25d35ef07bb0becb8191ad91a641e459b01ed3bc3ee75210672dbaf92",
+    "lineage_hash": "3260b5c5ccf0faab3e12034e467e6724d3007ec876291663744b5dfdd2871a5c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.bongeats.com/recipe/tadka",
+    "fetchedAt": "2026-08-02T00:56:42.064Z"
+  },
+  "rawSource": "https://www.bongeats.com/recipe/tadka",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

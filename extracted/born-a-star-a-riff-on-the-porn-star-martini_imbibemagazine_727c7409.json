@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Born a Star Martini",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the first 4 ingredients to a shaker. Shake hard with ice. Double strain into a chilled coupe. Top with sparkling wine. Garnish.",
+      "Vanilla Syrup Split the vanilla beans in half and scrape the insides. Steep the spent vanilla and beans in hot water for 10+ minutes to taste. Strain out the vanilla. Whisk infused water together with sugar until fully incorporated. Store in a clean glass container under refrigeration for up to 3 weeks.",
+      "Passion Fruit-Mamey (or Mango) Syrup In a high-speed blender blend together the passion fruit, mamey, and sugar until fully incorporated. Pass through a chinois. Store in a clean glass container under refrigeration for up to 3 weeks. If mamey is unavailable, mango can be substituted."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "03d45dab2eb54860d187015fba156ac9e98052bd4f9498c8ff0d6723f3b949dc",
+    "lineage_hash": "29ce8ee8bfe76c2109c2c0c78670213ee445a1e2c9fbdeb398bcab2de16ba5a0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/born-a-star-a-riff-on-the-porn-star-martini/",
+    "fetchedAt": "2026-08-03T21:47:45.379Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/born-a-star-a-riff-on-the-porn-star-martini/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,35 @@
+{
+  "recipe": {
+    "name": "Calvados & Tonic",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the ingredients in an ice-filled glass and stir to combine. Garnish.",
+      "Note: A quality tonic water may be substituted for the tonic syrup and soda."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "378b5d5b2c2b87801ca0aefe7b69f65f2e28e54c9a7affe3528b256b0fe6f711",
+    "lineage_hash": "016a69f4d84d3d74b5841aa7169275d823df7301cfb176d759d9c49a64b24032"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/calvados-tonic/",
+    "fetchedAt": "2026-08-03T23:43:31.258Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/calvados-tonic/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

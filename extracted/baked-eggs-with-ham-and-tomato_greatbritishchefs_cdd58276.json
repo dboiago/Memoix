@@ -1,0 +1,112 @@
+{
+  "recipe": {
+    "name": "Baked Eggs with Ham and Tomato",
+    "time": "25 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl, lightly crush the cherry tomatoes. Place in the bottom of each ramekin",
+      "Place a pan over a medium heat and add a knob of butter. Add the spinach and cook for about 1 minute until wilted down. Spoon the wilted spinach into the ramekins",
+      "Tear the ham into strips and place on top of the spinach",
+      "Crack 1 egg into each of the ramekins and season with a pinch of salt and pepper. Sprinkle grated cheese over the top",
+      "Cook in an oven set to 160°C/gas mark 3 for 10-15 minutes, or until the egg whites have set",
+      "Serve immediately with toasted brown bread cut into soldiers"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherry Tomatoes",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Knob of Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spinach",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ham",
+        "unit": "slices",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cheddar",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Bread",
+        "unit": "slices",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c9d93f6d6a60ded1d4d3dea8c9274a25279c6d80ae64acc889b5c2426f066b7c",
+    "lineage_hash": "5bbeb1da99f66d9270ebdf0fa1ba9c658ce4bc78f22405b7f97cb375d01bad67"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/baked-eggs-recipe-ham-tomatoes",
+    "fetchedAt": "2026-08-03T18:09:34.429Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/baked-eggs-recipe-ham-tomatoes",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

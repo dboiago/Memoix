@@ -1,0 +1,91 @@
+{
+  "recipe": {
+    "name": "Artisan Bread Without a Dutch Oven",
+    "time": "24 hr",
+    "course": "breads",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Whisk dry ingredients together. Slowly add water and mix. Knead on countertop for 2-3 minutes. Cover and proof at room temperature for 10-12 hours.",
+      "Turn dough onto floured surface, fold into a ball, and let rest 30 minutes.",
+      "Fold dough again into a tight ball. Place seam-side up in floured banneton basket. Cover and refrigerate 10-12 hours.",
+      "Place Baking Steel on middle rack with lava rocks in pie pan on bottom. Preheat oven to 500°F for one hour. Remove dough from fridge.",
+      "Turn dough onto parchment paper and score the top with a lame or sharp knife.",
+      "Pour 1-1.5 cups cold water onto hot lava rocks. Slide bread onto Baking Steel and close oven immediately.",
+      "Bake 20 minutes at 500°F with steam. Remove lava rocks and reduce temperature to 425°F.",
+      "Bake 15-20 more minutes until deep golden brown and hollow-sounding when tapped.",
+      "Cool on wire rack at least 30 minutes before slicing."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-purpose Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bread Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spelt Flour — Adds Earthiness and a Rustic Texture. Skip It If You Can't Find It",
+        "unit": "g",
+        "notes": "but it's worth seeking out.",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water — Room Temperature",
+        "unit": "g",
+        "notes": "alt: slightly above. Use filtered if your tap water is heavily chlorinated — chlorine can slow down your yeast.",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Active Dry Yeast — That's About Half a Teaspoon. Less Yeast = Longer Ferment = More Flavor",
+        "unit": "g",
+        "notes": null,
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6817952abe1ab48a9b5d33f994e7c4a0b1f48e5ebe8c8b7a32f1070c03b059e2",
+    "lineage_hash": "06202a0658d0029e0fb2057fa659a76c61ddb92d84449ead07a9d10183327b05"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://bakingsteel.com/blogs/recipes/artisan-bread-at-home",
+    "fetchedAt": "2026-08-01T21:56:19.578Z"
+  },
+  "rawSource": "https://bakingsteel.com/blogs/recipes/artisan-bread-at-home",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

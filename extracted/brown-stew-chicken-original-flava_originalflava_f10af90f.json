@@ -1,0 +1,144 @@
+{
+  "recipe": {
+    "name": "Brown stew chicken",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "JM",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place your chicken in a mixing bowl then season with salt, pepper, pimento, all purpose, paprika, browning, mix together and marinate overnight.",
+      "Add vegetable oil to your frying pan on a medium heat, then add sugar and caramelise for a few minutes.",
+      "Add chicken pieces and start to brown on each side.",
+      "add onions, garlic, thyme, scotch bonnet, add water then stir well.",
+      "cook down for 30 minutes on a medium heat, stirring occasionally then simmer until ready.",
+      "remember to take out scotch bonnet."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Thighs",
+        "unit": "kg",
+        "notes": "skinless",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pimento",
+        "unit": "tsp",
+        "notes": "ground",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Seasoning",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Browning",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "diced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful Thyme",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scotch Bonnet Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1057f96fb44fb38bc39f083e41a80aee74bd1af8d10c62acc12abe0f1380c3c4",
+    "lineage_hash": "38bfdfad83312e821c3257f23dfe0e3203ac4edb6492d27e24ac83a456d62881"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://originalflava.com/meals/brown-stew-chicken-2/",
+    "fetchedAt": "2026-09-30T17:37:22.733Z"
+  },
+  "rawSource": "https://originalflava.com/meals/brown-stew-chicken-2/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

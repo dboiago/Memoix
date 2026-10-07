@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Cardamom Daiquiri",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake all of the ingredients with ice and strain into a glass filled with crushed ice, then garnish.",
+      "Vanilla Syrup: Cut up 1 vanilla pod and add to a small saucepan along with 1 lb. of white sugar and 2 cups of water. Bring the mixture to a simmer for several minutes, stirring to dissolve the sugar, then transfer to a bowl or container and let cool, uncovered. Once the syrup has cooled, cover the bowl or container and let stand for 24 hours. Strain the syrup, and keep refrigerated for up to 2 weeks.",
+      "Cardamom Tincture: Using a spice grinder, coarsely grind 1⁄2 ounce of whole green cardamom pods (take care not to grind the spice too fine). Add the ground spice to a quart-size jar along with 2 cups of vodka (preferably 100 proof). Let steep for 48 hours, then strain before use."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "744a7d2541a6fc8770c0e24e89c8f7e69cf9b51cf5f0c3640163bceb80da90e5",
+    "lineage_hash": "ccdabbdddb384be2161762fd0af56e46ac57254ee7ac091fc6b45a560b0096b0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cardamom-daiquiri/",
+    "fetchedAt": "2026-08-03T19:28:40.682Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cardamom-daiquiri/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

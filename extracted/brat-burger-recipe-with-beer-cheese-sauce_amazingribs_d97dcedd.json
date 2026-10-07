@@ -1,0 +1,159 @@
+{
+  "recipe": {
+    "name": "Brat Burger With Beer Cheese Sauce",
+    "time": "40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Prep. Remove the stem and core from the red bell peppers. Cut into small strips.",
+      "Thinly slice the onion.",
+      "Use a small paring knife to cut through the bratwurst casings. Remove the meat from the casings and divide the meat into four equal portions. Form the meat into patties that are approximately 1/4 inch (6.4 mm) wider than the buns to allow for shrinkage during the cooking process.",
+      "Fire up. Prepare a grill for indirect cooking by placing a chimney full of pre-heated charcoal briquets on one side of the grill’s charcoal grate in order to create direct and indirect cooking zones. Adjust the grill vents to bring the temperature to about 400°F (204.4°C) on the indirect side. On a gas grill, adjust the temperature knobs so that one half of the grill is off and the other half is heated enough to maintain a temperature of approximately 400°F (204.4°C) on the indirect side.",
+      "Add a vegetable grilling basket to the hot side of the grill and allow it to preheat for approximately 5 minutes.",
+      "Cook. Place the sliced red bell pepper and onion in the vegetable grilling basket and allow them to cook while turning frequently until they are just beginning to soften and are lightly browned, approximately 5 minutes. Remove the peppers and onions from the grill and set aside.",
+      "To prepare the beer cheese sauce, combine the butter and flour in a small saucepan and whisk over medium heat to create a smooth paste (a.k.a. a roux). Remove the saucepan from the heat and slowly add the milk while constantly stirring. Once the roux is fully incorporated into the milk, return the saucepan to the heat and add the beer.",
+      "Allow the mixture to simmer, stirring periodically, until it begins to thicken, approximately 2 to 3 minutes. As the liquid simmers, toss the cheddar cheese with the cornstarch until the cheese is fully coated. Add the cheese to the liquid mixture, constantly stirring until the cheese has completely melted and the sauce is smooth, about 2 minutes. Add the mustard and Worcestershire sauce, stir, and season to taste with salt and pepper. Cover the saucepan and reduce the heat to low to keep the sauce warm while you grill the brat patties.",
+      "Place the bratwurst patties on the indirect side of the grill, positioning the vent directly above the burgers in order to force the smoke over and around the meat. Cook the patties for about 5 minutes.",
+      "Push the tip of a rapid-read thermometer such as the Thermapen into the side of both burgers. When the temperature reaches 105°F (40.6°C), flip the burgers and cook for approximately 5 more minutes until they reach 140°F (60°C). Because they are not over direct heat, you do not need to flip them often.",
+      "Move the brat patties to the direct heat side of the grill to brown them. Leave the lid up so the heat is concentrated on one side of each burger. If the fire flares up, move the burger to another spot. Flip the meat every minute to form a nice crust on both sides.",
+      "Remove the brat patties from the grill once they reach an internal temperature of 160°F (71.1°C).",
+      "Serve. Assemble the burgers by placing a brat patty on each bottom bun. Add grilled bell pepper and onion slices to each patty. Spoon the cheese sauce over the peppers and onions then add the top bun. Serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Red Bell Peppers",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Brat Burger",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Brat Burger",
+        "isOptional": false
+      },
+      {
+        "name": "Package Uncooked Bratwurst",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Brat Burger",
+        "isOptional": false
+      },
+      {
+        "name": "Hamburger Buns",
+        "unit": null,
+        "notes": "preferably pretzel buns if available",
+        "amount": "4",
+        "section": "Brat Burger",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Beer Cheese Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Beer Cheese Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Beer Cheese Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Beer",
+        "unit": "C",
+        "notes": "preferably lager",
+        "amount": "1",
+        "section": "Beer Cheese Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sharp Cheddar Cheese",
+        "unit": "C",
+        "notes": "shredded, preferably Wisconsin",
+        "amount": "3",
+        "section": "Beer Cheese Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "Beer Cheese Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Beer Cheese Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Worcestershire Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Beer Cheese Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Morton Coarse Kosher Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Beer Cheese Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Beer Cheese Sauce",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "daa503b8c9fe0a09d8d5c409bb83709f0a351633df6f241ada80197c1631c1cd",
+    "lineage_hash": "316cc186ef0b2826f8799708d1cca9a930e3505dad6dea98610d2e45ea30e047"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://amazingribs.com/tested-recipes/hamburger-sloppy-joe-salisbury-steak-recipes/brat-burgers-beer-cheese-sauce/",
+    "fetchedAt": "2026-08-02T11:15:39.738Z"
+  },
+  "rawSource": "https://amazingribs.com/tested-recipes/hamburger-sloppy-joe-salisbury-steak-recipes/brat-burgers-beer-cheese-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

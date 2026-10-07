@@ -1,0 +1,149 @@
+{
+  "recipe": {
+    "name": "Agnolotti del Plin",
+    "time": "2 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start with the filling. Dust the beef with flour and shake off any excess. In a large saucepan set over a medium heat, brown the meat in the oil on all sides. Add the onion and pour in the wine",
+      "Allow the liquid to evaporate, then cover the meat with water (or stock if preferred), reduce the heat to low and cook for 1 hour or until very tender, adding more liquid if needed. At the end, taste and season before removing from the heat",
+      "Meanwhile, bring a pot of salted water to the boil and add the cabbage. Blanch for a few minutes, then drain and allow to cool",
+      "Lift the meat out of the liquid (being sure to reserve it if you want to use it as a sauce) and very finely chop with the cabbage using a knife or meat mincer. Add the grated cheese and season with salt and pepper, if needed. Mix until well combined, then cover in cling film and allow to rest while you make the pasta dough",
+      "Next, make the pasta dough. Make a well with the flour on a work surface. Crack the eggs into the centre of the well and whisk with a fork, incorporating the flour a little at the time, until you see some lumps of dough coming together",
+      "Carry on with your hands, kneading the dough until you have a smooth, elastic ball. Flatten it into a disc, wrap it in cling film and leave it to rest for half an hour",
+      "Divide the pasta dough into 3 pieces and roll them using a pasta machine, starting with the wider setting and moving on progressively to the very last. Spread the sheets of pasta over a floured work surface and trim into long rectangles",
+      "Place as many teaspoons of the filling along the lower half of your sheet as you can fit, while also allowing about ½cm between them. Gently fold the sheet over to cover the filling and cut out the pasta into small rectangles with a pasta wheel. Press the edges of each parcel together to seal them, then pinch them lightly to give them their classic 'pinched' shape",
+      "Bring a large pan of salted water to a rolling boil. Meanwhile, in a frying pan set over a medium heat, melt the butter for the sauce. Alternatively, you can filter the leftover meat gravy through a fine-mesh sieve and use that as a sauce",
+      "Cook the plin in the boiling water until they float to the top of the water – about 2 minutes. Drain and transfer them to the frying pan with the butter sauce (if using – skip this step if you're using the leftover braising liquid). Sauté them for 30 seconds, until evenly coated in butter",
+      "Serve right away with a dusting of grated Grana Padano"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Braising Beef",
+        "unit": "g",
+        "notes": "diced",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Red Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cabbage",
+        "unit": null,
+        "notes": "(small), roughly chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grana Padano",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "as needed",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "as needed",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "optional",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grana Padano",
+        "unit": null,
+        "notes": "grated",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0cbc32c8928e4143fb0a244e7df9f4879bf5748c36d16ce90fb73fee80325753",
+    "lineage_hash": "e3b69d2f2aa99c5f0278683bea08f859593e4b7c693a499dc7e81ccefffb5cf8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/agnolotti-del-plin-recipe",
+    "fetchedAt": "2026-08-01T19:16:29.092Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/agnolotti-del-plin-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

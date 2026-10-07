@@ -1,0 +1,100 @@
+{
+  "recipe": {
+    "name": "Baked Sichuan Chicken Wings",
+    "time": "45 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "223",
+      "carbohydrateContent": "1.5",
+      "fatContent": "8.5",
+      "proteinContent": "33"
+    },
+    "directions": [
+      "Combine the spice mix ingredients in a small bowl and stir to mix well.",
+      "Pat dry chicken wings with a few layers of kitchen paper towel to remove any moisture on the surface. Place the chicken wings into a big bowl and pour the spice mix over them. Rub the spice mix into the wings thoroughly using your hands. Marinate for 15 minutes at room temperature, or up to overnight, covered with plastic wrap in the fridge.",
+      "Preheat the oven to 450°F (230°C). Line a tray with foil and a wire rack. (*Footnote 1)",
+      "Arrange the wings on the wire rack with at least a finger’s width in between, to properly let the steam off so the chicken will get crispy. Bake for 20 to 25 minutes, flipping once after 10 minutes. Cook until browned and crisp on the surface, and the juices run clear if using a paring knife to slice the thickest part of the drumstick.",
+      "Let cool slightly and serve hot as an appetizer."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Wings",
+        "unit": "lb",
+        "notes": "900 g",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Sichuan Peppercorns",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili Flakes",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "926c7dad2c811ec7d1b4e838d55d6676325d14614b7c9dfcd14e31faa2e39540",
+    "lineage_hash": "6434a54fd1ae84277f742db9e619e1862d5457810bb5a9f6d073722deae7957c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/szechuan-style-baked-chicken-wings-with-mushroom/",
+    "fetchedAt": "2026-08-01T18:53:42.824Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/szechuan-style-baked-chicken-wings-with-mushroom/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

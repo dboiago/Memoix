@@ -1,0 +1,72 @@
+{
+  "recipe": {
+    "name": "Blackened Redfish",
+    "time": "1 hr 5 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Run your fingers over the fish fillet, feeling for pin bones. Remove any you find with kitchen tweezers or needle nose pliers.",
+      "Heat the cast iron skillet smoking hot on a hot grill. (Place the pan on the grate and preheat with the grill covered.)",
+      "Melt the butter in the other skillet. Dip the fish fillets in the butter, turning to coat both sides.",
+      "Spread the blackening spice out in an even layer on a plate.",
+      "Dip each piece of buttered fish in the blackening spice, turning it to coat both sides, which should be thickly crusted with spice. Immediately place the spice-crusted fish in the hot cast iron skillet. Cook until very darkly browned on the bottom, 3 to 4 minutes. Turn the fish and cook until the second side is darkly browned and the fish is cooked through, 5 to 8 minutes in all. Yes, you’ll generate a lot of eye-stinging smoke. You’re supposed to.",
+      "Transfer the blackened fish to a platter or plates. Add the remaining 2 tablespoons butter to the pan where you melted the original. Cook over high heat until sizzling and melted, 2 minutes. Pour this butter over the fish and serve with lemon wedges for squeezing."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Redfish Fillets",
+        "unit": "lb",
+        "notes": "alt: other mild white fish fillet",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": "1/2 stick, plus 2 tablespoons for serving",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blackening Spice",
+        "unit": "C",
+        "notes": "make your own—or use a good commercial brand",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Wedges for Serving (optional)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "46abbc67a4442b76c8869f4a5244623b8f690b14be887c24678e0ec1233b070b",
+    "lineage_hash": "b68905e0686b712fbff583b5d8e15e0749957b816d499e54879526e2053182b8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/blackened-redfish/",
+    "fetchedAt": "2026-08-03T03:47:57.201Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/blackened-redfish/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

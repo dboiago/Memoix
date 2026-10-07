@@ -1,0 +1,172 @@
+{
+  "recipe": {
+    "name": "Beef with Snow Pea Stir Fry",
+    "time": "25 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "300",
+      "carbohydrateContent": "10",
+      "fatContent": "27",
+      "proteinContent": "12"
+    },
+    "directions": [
+      "Cut beef into thin slices and then marinating with marinating ingredients and cornstarch, except sesame oil. Set aside for at least 15 minutes.&nbsp;Mix in sesame oil just before frying.",
+      "Mix stir-frying sauce in a small bowl.",
+      "Heat the pan firstly and then add oil. When the oil becomes slightly hot, spread beef slices in. Let them stay for a while and do a quick fry until they turn pale.",
+      "Transfer the beef out and leave only 1 tablespoon of cooking oil in pan. Slow down the fire, place garlic and snow peas in. Fry for half minutes until just cooked.",
+      "Add beef slices back and stir in the stir fry sauce. Quickly fry until well mixed."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Beef and marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Beef and marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Beef Steak",
+        "unit": "g",
+        "notes": "alt: tenderloin thinly sliced",
+        "amount": "150",
+        "section": "Beef and marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Cooking Wine Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Beef and marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Corn Starch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Beef and marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Beef and marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Beef and marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Cooking Oil",
+        "unit": "C",
+        "notes": "with around 2 tbsp. removed",
+        "amount": "¼",
+        "section": "Others",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves Chopped",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Others",
+        "isOptional": false
+      },
+      {
+        "name": "Snow Peas",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "150",
+        "section": "Others",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "Others",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Stir fry sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Stir fry sauce",
+        "isOptional": false
+      },
+      {
+        "name": "1/4. Tsp. Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Stir fry sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Stir fry sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Stir fry sauce",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9f18fdfb0e43a3ab3c36fd51c52665be0f7a7797e454c42c85b55d30a9cdb59d",
+    "lineage_hash": "db8ff97ecaa52e6618cd0782fb3f7d320968b1dc861d768de14b689d5e4f6377"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/beef-with-snow-pea-stir-fry/",
+    "fetchedAt": "2026-08-02T05:19:53.456Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/beef-with-snow-pea-stir-fry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

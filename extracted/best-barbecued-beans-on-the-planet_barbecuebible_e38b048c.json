@@ -1,0 +1,150 @@
+{
+  "recipe": {
+    "name": "Barbecued Beans",
+    "time": "1 hr 15 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "If using bacon instead of brisket, place it in a large skillet over medium heat and fry until crisp and golden brown, about 5 minutes. Pour off all the bacon fat, saving a few tablespoons for the beans, if desired.",
+      "Empty the cans of black and kidney beans into a colander and drain. Rinse the beans under cold running water and drain again. Place all the beans in a large nonreactive mixing bowl and add the onion, bell and poblano peppers, garlic, and jalapeños and stir to mix. Add the barbecue sauce, brown sugar, mustard, liquid smoke, if using, and brisket or fried bacon and stir to mix. Taste for seasoning, adding more brown sugar and/or mustard as necessary, and salt and black pepper to taste; the beans should be very flavorful. Transfer the bean mixture to the aluminum foil pan or pans. (If you used bacon, you can drizzle a few tablespoons bacon fat over the beans for extra flavor.)",
+      "Set up the grill for indirect grilling and preheat to medium-low. If using a gas grill, place all of the wood chips or chunks in the smoker box or in a smoker pouch and run the grill on high until you see smoke, then reduce the heat to medium-low. If using a charcoal grill, preheat it to medium-low, then toss all of the wood chips or chunks on the coals.",
+      "When ready to cook, place the pan of beans in the center of the hot grate, away from the heat, and cover the grill. Cook the beans until they are thick and richly flavored, about 1 hour. If the beans start to dry out, cover them loosely with aluminum foil. Remove the beans from the grill and let them rest for 15 minutes, then serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Smoked Brisket",
+        "unit": "lb",
+        "notes": "alt: bacon, cut into 1/4-inch slivers",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Beans",
+        "unit": "can",
+        "notes": "15 ounces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Red Kidney Beans",
+        "unit": "can",
+        "notes": "15 ounces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baked Beans",
+        "unit": "cans",
+        "notes": "alt: pork and beans, each 15 ounces",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Onion",
+        "unit": "large",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Bell Pepper",
+        "unit": null,
+        "notes": "cored, seeded, and finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Poblano Pepper",
+        "unit": null,
+        "notes": "alt: green bell pepper, seeded and finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jalapeño Peppers",
+        "unit": null,
+        "notes": "for hotter beans, leave the seeds in, seeded and diced",
+        "amount": "3-6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Red Barbecue Sauce",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Firmly Packed Light Brown Sugar",
+        "unit": "C",
+        "notes": "or more to taste",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "C",
+        "notes": "or more to taste",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Liquid Smoke",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Salt (kosher or Sea) and Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ae1d55efb0643033749ebdb35b5383f47a11429ba138d9b3788dbfef53f963fe",
+    "lineage_hash": "5948dc85149049a2da95dd067f6f438849a9dda1214e03643ea9a92c625f8df9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/best-barbecued-beans-planet/",
+    "fetchedAt": "2026-08-03T10:00:11.256Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/best-barbecued-beans-planet/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

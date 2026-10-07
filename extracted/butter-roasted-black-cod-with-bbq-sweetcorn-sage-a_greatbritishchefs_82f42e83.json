@@ -1,0 +1,181 @@
+{
+  "recipe": {
+    "name": "Butter Roasted Black Cod with BBQ Sweetcorn, Sage and Bacon",
+    "time": "2 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "If slicing the pancetta yourself, first freeze the pancetta until solid for about 4–6 hours, then slice on a meat slicer into 2 mm thick slices, lying between two sheets of baking paper as you go. You will need 12 slices",
+      "Bring the water and salt for the brine to a simmer, then set aside to cool down to room temperature",
+      "Add the cod to the cooled brine, and brine for 2 hours in the fridge. Make sure the fillets are completely submerged",
+      "While the cod is brining, simmer the frozen sweetcorn with the cream, salt and butter for 30 minutes. Keep the heat down low and cook until the sweetcorn is tender",
+      "Once the corn is cooked, blitz to a purée and pass through a fine sieve and set aside",
+      "To make the sage oil, first heat the oil to 120°C",
+      "Blitz the picked sage leaves with the hot oil for 2–3 minutes, taking care not to hurt yourself and making sure that the steam has somewhere to go",
+      "Pass the sage oil through a fine sieve, and then transfer to a bowl and chill over ice",
+      "Preheat the oven to 160°C and prepare a barbecue or grill",
+      "Bake the slices of pancetta between two flat trays for 10–12 minutes, or until golden and crispy. Leave aside to cool",
+      "Heat the oil for the sage leaf garnish to 170°C",
+      "Deep-fry the sage leaves until crispy, then drain on kitchen towel and set aside",
+      "Brush the corn on the cob with some butter, and barbecue until charred and smokey. Remove from the barbecue and slice the kernels off the cob",
+      "Preheat the oven to 180°C. Remove the cod from the brine and wash under cold water. Pat dry",
+      "Heat a large, non-stick pan over a medium heat. Add a dash of oil and then place the dried cod fillets in the pan, skin-side down. Cook the cod until the skin is crisp, and the fillets are cooked through",
+      "Remove the fillets from the pan and place on an oven tray lined with baking paper. Place a knob of butter on each fillet",
+      "Roast in the oven for 3–4 more minutes, and then rest for a few minutes",
+      "Warm the sliced corn kernels in a pan with some more butter and a pinch of flaky sea salt",
+      "Plate up the cod with the sweetcorn purée, barbecue sweetcorn, topping with the crispy sage and pancetta. Drizzle with the sage oil"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pancetta",
+        "unit": "g",
+        "notes": "skin removed, or 12 slices of pancetta, 2 mm thick",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "28",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Cod Fillets",
+        "unit": null,
+        "notes": "120g each, square, skin on, descaled and pin-boned",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": null,
+        "notes": "for roasting the fish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweetcorn",
+        "unit": "g",
+        "notes": "frozen",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "plus extra for sautéeing",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pomace Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sage Leaves",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "for deep-frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sage Leaves",
+        "unit": null,
+        "notes": "small",
+        "amount": "18",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn on the Cob",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": null,
+        "notes": "for basting",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "72cdca79342409114a3fdf8b468e9e6089666c70d1d31267c5e3e65b7ec7c9f4",
+    "lineage_hash": "4e99f5bbf22f2a000dbdf0c768c790a315a15bb1962326aa71d50b01925c737b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/butter-roasted-black-cod-bbq-sweetcorn-sage-bacon-recipe",
+    "fetchedAt": "2026-08-02T14:33:04.048Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/butter-roasted-black-cod-bbq-sweetcorn-sage-bacon-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

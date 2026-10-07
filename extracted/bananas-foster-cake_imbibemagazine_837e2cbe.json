@@ -1,0 +1,41 @@
+{
+  "recipe": {
+    "name": "Bananas Foster Cake",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the Yellow Cake, adjust the oven rack to the middle position and heat to 350 degrees F. Grease three 8-inch- round cake pans, line with parchment paper, then grease the paper. Whisk the flour, baking powder, baking soda, salt and 1½ cups of sugar together in a bowl. In a second bowl, whisk together the buttermilk, melted butter, egg yolks, oil and vanilla.",
+      "Using a stand mixer fitted with a whisk attachment, whip the egg whites and cream of tartar on medium-low speed until foamy, about 1 minute. Increase the speed to medium-high and whip the whites into soft billowy mounds, about 1 minute. Gradually add the remaining ¼ cup of sugar to the whites and whip until glossy and stiff peaks form, 2 to 3 minutes; transfer to a third bowl. Add the flour mixture to the now-empty mixer bowl and mix on low speed, gradually adding the buttermilk mixture and mixing until almost incorporated (a few streaks of dry flour will remain), about 15 seconds. Scrape down the bowl, then mix on medium-low speed until smooth and fully incorporated, 10 to 15 seconds.",
+      "Using a rubber spatula, stir one-third of the whites into the batter, gently folding in the remaining whites until no streaks remain. Divide the batter evenly between the prepared pans and smooth the tops with the rubber spatula, gently tapping the pans on a counter to settle the batter. Bake until a toothpick inserted in the center comes out clean, 20 to 22 minutes, switching and rotating the pans halfway through baking. Let the cakes cool in the pans on a wire rack for 10 minutes. Remove the cakes from the pans, discarding the parchment, and let them cool completely on a rack, about 2 hours.",
+      "Caramel and Banana Filling\n½ cup dark rum\n½ cup packed (3½ oz.) dark brown sugar\nPinch of kosher salt\n2 Tbsp. unsalted butter, chilled\n4 ripe bananas\n⅛ tsp. ground cinnamon",
+      "To make the filling, cook the rum, sugar and salt in a 10-inch skillet over medium-low heat, stirring frequently, about 7 to 10 minutes, then remove the caramel from the heat. Whisk 3 tablespoons of the caramel with butter in a small bowl until combined; set aside and let cool. Peel 2 bananas and cut them into ¼-inch slices, adding the sliced bananas and cinnamon to the remaining warm caramel in the skillet, stirring gently to combine, then set aside and let cool.",
+      "Frosting\n20 Tbsp. (2½ sticks) unsalted butter, cut into 20 pieces and softened\n⅛ tsp. salt\n2½ cups (10 oz.) confectioners’ sugar\n¼ cup dark rum\n1 tsp. vanilla extract",
+      "For the frosting, use a stand mixer fitted with a paddle to beat the butter and salt on medium- low speed until smooth, about 10 seconds. Slowly add the sugar and continue to mix until smooth, about 2 minutes. Add the rum and vanilla; mix until incorporated, about 1 minute. Increase the speed to medium-high and beat the frosting until light and fluffy, about 5 minutes.",
+      "To serve: Place 1 cake round on a platter and spread half the banana filling over the top. Repeat with another cake layer and remaining filling. Top with the remaining cake layer and spread frosting evenly over the top and sides of the cake. Just before serving, peel the remaining 2 bananas, cut into ¼-inch slices, and shingle around the top edge of the cake. Pour the reserved caramel-butter mixture over the bananas, allowing the excess to drip down the sides of the cake."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "ea946b36f73cf454873c78870129530fa985c93adebd62b9e213fe141e335bb1",
+    "lineage_hash": "a72af55a4e69d62dfb13f97354d69fc517eec43542551ee7596e996dd11887b0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bananas-foster-cake/",
+    "fetchedAt": "2026-08-03T19:55:22.373Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bananas-foster-cake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,167 @@
+{
+  "recipe": {
+    "name": "Broccoli Soup With Salt Cod & Scallops",
+    "time": "2 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start by making the salt cod. Sprinkle half the salt onto a tray large enough to fit the cod fillet, lay the cod on top and sprinkle the remaining salt onto the top of the fish",
+      "Wrap the tray in cling film and press for 24 hours in the fridge with another lightly weighted tray",
+      "Next start on the broccoli soup. Bring a pan of salted water to the boil. Place chicken stock in another small pan and bring to a gentle simmer",
+      "Once the salted water has reached the boil, add the broccoli and cook until tender and starting to break down. Strain and place in a liquidizer. Gradually add the warm chicken stock",
+      "When the soup has a velvety texture, add the crème fraîche whilst still blending. Pass through a fine sieve and cool in the fridge",
+      "Now turn to the salt cod mousse. Soak the gelatin leaf in cold water to soften. Gently sweat the garlic and onions in a knob of butter until translucent",
+      "Remove the salt cod from under its weights and dice. Add the diced salt cod to the shallots and cook uncovered for 5 minutes, stirring occasionally",
+      "Add half the cream and cook gently until reduced by half. Once reduced place in a food processor and blend until smooth",
+      "Melt the gelatin leaf in a little double cream until it is in liquid form then add it to the blended salt cod. Remove the mixture from the blender and chill in the fridge",
+      "Whip the remaining cream to soft peaks and gently fold into the cod mixture. Cover and refrigerate until set",
+      "Cut the scallops in half horizontally, then season and place cut-side down in a hot frying pan with a knob of butter and sear until golden brown",
+      "When almost cooked through flip over and cook for 10 seconds on other side, remove from the pan and rest on a clean cloth",
+      "Gently place a neat spoonful of salt cod mousse into each bowl and arrange two scallop halves next to it. Pour in the chilled broccoli soup and garnish with broccoli shoots"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Handful of Broccoli Shoots",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hand-dived Scallops",
+        "unit": null,
+        "notes": "shucked and cleaned",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Knob of Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cod Fillet",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "finely diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Broccoli",
+        "unit": "heads",
+        "notes": "cut into small florets",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crème Fraîche",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a77f6bbb26234f60eaa7d8eac087f799227bde21fd0e4d1172e5dfde7940099d",
+    "lineage_hash": "e2d8ef8faf79ab628f035a685d3888de9563bed652928c38dd63db5d4c771c9e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chilled-broccoli-soup-salt-cod-recipe-scallops",
+    "fetchedAt": "2026-08-03T21:45:23.473Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chilled-broccoli-soup-salt-cod-recipe-scallops",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

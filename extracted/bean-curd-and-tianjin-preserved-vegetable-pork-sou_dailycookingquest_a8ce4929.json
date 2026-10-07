@@ -1,0 +1,93 @@
+{
+  "recipe": {
+    "name": "Bean Curd and Tianjin Preserved Vegetable Pork Soup",
+    "time": "1 hr",
+    "course": "soup",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Boil water and pork in a soup pot. Ladle off scum to get a clear soup.",
+      "Add carrot, tomato, and salt. Simmer for 30 minutes or until the pork is tender and fully cooked.",
+      "Add the soaked bean curd and Tianjin preserved vegetables. Bring to another boil. Adjust salt as needed. Turn off heat and serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Pork",
+        "unit": null,
+        "notes": "cut into bite sizes",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot (about 300 Gram)",
+        "unit": null,
+        "notes": "peeled and chopped into bite sized",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": null,
+        "notes": "cored and quartered",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Dried Bean Curd",
+        "unit": null,
+        "notes": "soaked in cold water and cut into 2 inch pieces",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tianjin Preserved Vegetable",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e421dc052d5504a3de9fce193dcd7c177913fd13b1e2658cf109dea5d6f4d4bd",
+    "lineage_hash": "3595a41316ff039fdb319f6cae74765ae7398610219f558b1b5902ed011da77f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/bean-curd-and-tianjin-preserved-vegetable-pork-soup.html",
+    "fetchedAt": "2026-08-02T11:05:59.898Z"
+  },
+  "rawSource": "https://dailycookingquest.com/bean-curd-and-tianjin-preserved-vegetable-pork-soup.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

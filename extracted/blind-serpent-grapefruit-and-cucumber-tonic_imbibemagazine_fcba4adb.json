@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Blind Serpent: Grapefruit and Cucumber Tonic",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Collins",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients except the tonic to an ice-filled shaker. Shake and double strain into a Collins glass filled with crushed ice. Garnish.",
+      "Grapefruit CordialAdd the grapefruit zest, sugar, and green cardamom pods to a Ziploc bag and press out the air. Refrigerate overnight. Add the juice and salt to the bag and agitate it until the sugar is completely dissolved before straining. The cordial will last for 10 days in the refrigerator.",
+      "For a CocktailDecrease the lime juice to 1/2 oz., the grapefruit cordial to 1 oz., and the tonic to 1 oz. Add 1 1/2 oz. of gin. Build and garnish as above."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "41c9c08d942fa134248734ea0282c64d4a1e88b4b5cac7749e6207fd8657c75d",
+    "lineage_hash": "eba771bbc47fe0eab2fff70d626334447c75aede2c4530ddd8573ee8ebcb9301"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/blind-serpent-grapefruit-cucumber-tonic/",
+    "fetchedAt": "2026-08-03T21:45:54.297Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/blind-serpent-grapefruit-cucumber-tonic/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

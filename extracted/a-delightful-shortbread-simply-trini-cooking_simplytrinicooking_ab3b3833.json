@@ -1,0 +1,68 @@
+{
+  "recipe": {
+    "name": "Shortbread",
+    "time": "1 hr 10 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "22",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "* If you don't have pastry flour, here is a simple substitution: Measure 2 1/4 cups all-purpose flour, then remove 4 tbsp. and 1 tsp of flour. Replace this flour you removed with 4 tbsp. and 1 tsp. of cornstarch. Then, sift the flour twice. You can now proceed to the recipe.",
+      "Sift the flour and cornstarch mixture. Set aside. Cream the butter and sugar until light. Pour the cream into the flour mixture. Mix to form a soft dough. Roll out the dough and cut into desired shapes with a cookie cutter. Bake in a preheated oven at 225 degrees F for about 45 minutes."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pastry Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "2¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Confectioner’s Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0683f7d5182a951379b0003fd02fd36af9689a35f4d2682ac790fe0d59f1e369",
+    "lineage_hash": "d7b429adcc485ef60e09ba5c2bcfb42839cdd8de6a246d72525240a666118c81"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.simplytrinicooking.com/shortbread/",
+    "fetchedAt": "2026-09-25T22:45:53.806Z"
+  },
+  "rawSource": "https://www.simplytrinicooking.com/shortbread/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,73 @@
+{
+  "recipe": {
+    "name": "Apple Spice Baby Backs with Cider-Rum Barbecue Sauce",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Set up the grill for indirect grilling, place a large aluminum foil drip pan in the center of the grill under the grate, and preheat the grill to medium.",
+      "Place a rack of ribs meat side down on a baking sheet. Remove the thin, papery membrane from the back of the rack by inserting a slender implement, such as a tip of an instant-read meat thermometer, under it; the best place to start os on one of the middle bones. Using a dishcloth, paper towel, or pliers to gain a secure grip, peel off the membrane. Repeat with the remaining rack.",
+      "Season the ribs with the barbecue rub (about 1-1/2 tablespoons perside), rubbing the spices onto the meat with your fingertips.",
+      "When ready to cook, brush and oil the grill grate. Place the ribs, bone side down, in the center of the grate over the drip pan and away from the heat. (If your grill has limited space, stand the racks of ribs upright in a rib rack.) Toss the wood chips on the coals. Cover the grill and cook the ribs for about 45 minutes.",
+      "Spray the ribs with some of the apple cider. This keeps them moist and adds an extra layer of flavor. Cover the grill again and continue cooking the ribs until they are darkly browned, cooked through, and tender enough to pull apart with your fingers, 45 minutes to 1 hour longer, 1-1/4 to 1-1/2 hours in all, spraying the ribs with cider once or twice more. When the ribs are cooked, the meat will have shrunk back from the ends of the bones by 1/4 to 1/2 inch. If you are using a charcoal grill, replenish the coals after 1 hour or as needed.",
+      "Just before serving, brush the ribs on both sides with about 1/2 cup of the Cider-Rum Barbecue Sauce or the barbecue sauce of your choice. Move the ribs directly over the fire. Grill the ribs until the barbecue sauce is browned and bubbling, 2 to 3 minutes per side.",
+      "Transfer the ribs to a large platter or cutting board. Let the ribs rest for a few minutes, then cut the racks in half or into individual ribs. Serve the ribs at once with the remaining barbecue sauce on the side."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Racks Baby Back Pork Ribs",
+        "unit": null,
+        "notes": "4 to 5 pounds total",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet and Spicy Barbecue Rub (see Step 3)",
+        "unit": "C",
+        "notes": "alt: your favorite rub",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Cider in a Spray Bottle",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cider-rum Barbecue Sauce (see Step 6)",
+        "unit": null,
+        "notes": "alt: your favorite sauce",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0f627acafe84113611df230d0687548c6d3d886605d32de05093078493022b83",
+    "lineage_hash": "5841af4606eb13ee963eb36a4d50a45d1b7933f2e78534f650ade0b76bb6125c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/apple-spice-baby-back-cider-rum-barbecue-sauce/",
+    "fetchedAt": "2026-08-03T03:29:22.277Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/apple-spice-baby-back-cider-rum-barbecue-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

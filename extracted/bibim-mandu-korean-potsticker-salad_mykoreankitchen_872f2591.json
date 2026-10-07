@@ -1,0 +1,155 @@
+{
+  "recipe": {
+    "name": "Bibim Mandu (Korean Potsticker Salad)",
+    "time": "15 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "KR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "137",
+      "carbohydrateContent": "18",
+      "fatContent": "6",
+      "proteinContent": "2"
+    },
+    "directions": [
+      "Wash and clean all the vegetables, and prepare them according to the instructions in the ingredients list. Once they&#39;re ready, set them aside.",
+      "Make the dressing by combining all the ingredients in a bowl and mixing them well.",
+      "Heat the pan over medium heat and add some oil, spreading it evenly. Place the dumplings in the pan and cook for about 5 minutes until they&#39;re thoroughly cooked and golden brown. Here&#39;s a tip for quick and even cooking: start by browning one side for about 1 minute. Then, add 1/4 cup of water, cover, and lower the heat. Once the water evaporates, remove the lid, add a bit more oil, and increase the heat to medium. Cook until all sides are golden and crisp. Set them aside to cool slightly—I find they taste better in the salad when a bit cooled down.",
+      "In a large mixing bowl, toss together your vegetables, dumplings, and dressing until everything is well combined. Remember, it&#39;s best to do this step just before you&#39;re ready to eat. That way, your vegetables and dumplings stay nice and crunchy.Alternatively, you can mix only the vegetables in the dressing, then serve them in the center of the plate, with pan-fried dumplings arranged around the edge. This method allows you to enjoy even crispier dumplings. For a tidier presentation, serve the dressed vegetables in a shallow bowl to prevent the dressing from spilling over."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dumplings",
+        "unit": "pcs",
+        "notes": "180 to 500g /  6 to 17 ounces, frozen",
+        "amount": "14",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Lettuce Leaves (40 G / 1.4 Ounces)",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "4",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Cabbage (1.2 Ounces)",
+        "unit": "g",
+        "notes": "thinly sliced",
+        "amount": "35",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Lebanese Cucumber (65 G / 2.3 Ounces)",
+        "unit": null,
+        "notes": "julienned",
+        "amount": "½",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Carrot (25 G / 0.9 Ounces)",
+        "unit": null,
+        "notes": "peeled, julienned",
+        "amount": "¼",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Some Cooking Oil",
+        "unit": null,
+        "notes": "rice bran oil",
+        "amount": "0",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Korean Chili Paste",
+        "unit": "Tbsp",
+        "notes": "gochujang",
+        "amount": "1.5",
+        "section": "SPICY, TANGY AND SWEET DRESSING",
+        "isOptional": false
+      },
+      {
+        "name": "Rice Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "SPICY, TANGY AND SWEET DRESSING",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "the kikkoman brand.",
+        "amount": "1",
+        "section": "SPICY, TANGY AND SWEET DRESSING",
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "SPICY, TANGY AND SWEET DRESSING",
+        "isOptional": false
+      },
+      {
+        "name": "Raw Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "SPICY, TANGY AND SWEET DRESSING",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "SPICY, TANGY AND SWEET DRESSING",
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "SPICY, TANGY AND SWEET DRESSING",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c1b7dd839edb743b864e69388d0a58f8981a317fd78deaa6eecee90b035aae4c",
+    "lineage_hash": "57795bb20d34b617579b556e05c3b40a4fe5c3fa81830a1ebe99dce8eb9ef22e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://mykoreankitchen.com/bibim-mandu-korean-potsticker-salad/",
+    "fetchedAt": "2026-08-02T02:36:30.985Z"
+  },
+  "rawSource": "https://mykoreankitchen.com/bibim-mandu-korean-potsticker-salad/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

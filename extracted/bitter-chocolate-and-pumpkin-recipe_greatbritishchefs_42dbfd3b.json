@@ -1,0 +1,315 @@
+{
+  "recipe": {
+    "name": "Bitter Chocolate And Pumpkin",
+    "time": "2 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "The day before you want to serve, make the pumpkin ice cream base. To make a pumpkin caramel, make a dry caramel by placing the sugar in a small saucepan and heat until darkly golden. Carefully add the pumpkin and water and cook until soft, stirring occasionally",
+      "Blend the pumpkin caramel until smooth then pass through a sieve into a clean saucepan. Season with the salt and vinegar, then weigh out 400g for the ice cream and transfer the rest to a piping bag and keep in the fridge until needed",
+      "To make the custard for the ice cream, whisk together the sugar and yolks in a large heatproof bowl",
+      "Place the milk and stabiliser in a saucepan with the 400g of pumpkin caramel and bring to the boil, then gradually pour the milk over the sugar and yolks, whisking constantly. Mix to combine, then return to a clean pan and cook until it reaches 83°C, stirring constantly, then pour into a container to cool",
+      "Use a handheld blender to blend the custard to remove any lumps, then pass through a sieve and freeze in Pacojet containers for 24 hours at -20°C (or chill overnight before churning in an ice cream machine)",
+      "The next day, make the chocolate mousse. First, make a chocolate ganache. Place the chocolate in a heatproof bowl. In a small saucepan, bring the cream to the boil, then pour over the chocolate. Leave for 30 seconds then mix to combine",
+      "Next, make a meringue. In a stand mixer, whip the egg whites to soft peaks. In a saucepan, heat 120g of the sugar, the liquid glucose and 30ml of the water to 121°C, then pour the sugar into the egg whites in a steady, thin stream with the whisk running until the meringue forms and has cooled down",
+      "To make a pâte à bombe, place the remaining 150g of the sugar and 100ml of the water in a pan and cook until it reaches 121°C while you whip the egg yolks in a stand mixer until pale. While continuing to whip, carefully pour in the sugar syrup over the yolks and whip until cool and the mixture is forming ribbons",
+      "Fold the pâte à bombe into the chocolate mix with a rubber spatula until combined, then fold in the meringue. Pour into a container and allow to set in the fridge for a minimum of 4 hours (you could do this the day before and set overnight)",
+      "To make the chocolate tuile, heat the fondant sugar and liquid glucose in a saucepan until it reaches 160°C. Add the chocolate and mix until smooth, then pour onto a nonstick mat&nbsp;or a baking sheet lined with baking paper and allow to cool completely",
+      "Preheat the oven to 180°C. Break the cooled mixture into small pieces and blend into a fine powder. Dust it evenly onto a nonstick mat or a baking sheet lined with baking paper and bake until melted. Allow to cool, then break into usable pieces and set aside at room temperature until needed",
+      "To make the pumpkin seed praline, first make a no-colour caramel by placing the sugar in a small saucepan and heating to 165°C. Carefully pour the caramel onto a nonstick mat or a baking sheet lined with baking paper and allow to cool",
+      "Once cool, place in a blender and blend with the pumpkin seeds, oil and water into a smooth paste, then add the salt. Set aside until needed",
+      "For the pumpkin maple chutney, mix all the ingredients together in a saucepan and cook until the pumpkin is cooked through and the liquid has reduced and is tacky. Set aside until needed",
+      "For the crispy pumpkin seeds, heat a pan of oil or a deep-fat fryer to 180°C. Add the seeds, water and sugar to a separate pan, bring to the boil then reduce until syrupy and sticky. Drain off the liquid, deep-fry until crispy, then drain on kitchen paper. Set aside until needed",
+      "To serve, Pacotize the ice cream if needed, or just remove it from the freezer for a few minutes to soften. Use a warm spoon to add rochers of the chocolate mousse to the centre of each plate, then do the same with the ice cream",
+      "Top the chocolate mousse with a sprinkle of cocoa nibs. Add a smaller spoonful of the pumpkin chutney, then garnish with the seeds, praline, dots of pumpkin caramel and the chocolate tuiles and finish with lemon sorrel or basil"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pumpkin",
+        "unit": "g",
+        "notes": "peeled and diced",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cider Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "450",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ice Cream Stabiliser",
+        "unit": "g",
+        "notes": "Simon uses Stab 2000 Ice Cream Stabilizer",
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "54% Dark Chocolate",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": "g",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "270",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Liquid Glucose",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "130",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fondant Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Liquid Glucose",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "54% Dark Chocolate",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pumpkin Seeds",
+        "unit": "g",
+        "notes": "toasted",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pumpkin",
+        "unit": "g",
+        "notes": "peeled and finely diced",
+        "amount": "750",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maple Syrup",
+        "unit": "g",
+        "notes": null,
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Balsamic Vinegar",
+        "unit": "g",
+        "notes": "Simon uses Willy’s",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "for deep-frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pumpkin Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Nibs",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Sorrel",
+        "unit": null,
+        "notes": "alt: a sweet flavoured herb, such as basil",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1f889db52c2b6e260e660b6f11aa2024b43e912df796c8914064b698ca6db75f",
+    "lineage_hash": "12e26c52b0a0e7788e366a3af6feec8a04e89b3a7e44b27e62d66210154dac9c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/bitter-chocolate-pumpkin-recipe",
+    "fetchedAt": "2026-08-01T20:51:01.660Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/bitter-chocolate-pumpkin-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

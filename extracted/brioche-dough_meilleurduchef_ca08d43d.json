@@ -1,0 +1,114 @@
+{
+  "recipe": {
+    "name": "Brioche Dough",
+    "time": "6 hr 30 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Before starting this Brioche Dough recipe, make sure you have organised all the necessary ingredients.",
+      "In a ramekin, dissolve the yeast in warm milk.",
+      "In the stand mixer recipient, place the flour. Add the salt and castor sugar.",
+      "Using the dough hook, combine the ingredients.",
+      "When the yeast is completely dissolved in the milk...",
+      "... and it to the flour mixture. The sugar and salt should not come into direct contact with the yeast, as it would lose its rising properties.",
+      "Add the whole eggs (at room temperature)...",
+      "...then knead gently...",
+      "...until all the flour is incorporated.",
+      "Increase the speed, then knead for approximately 10 minutes to give the dough the appropriate texture.",
+      "Add the softened butter (salted and unsalted) cut into cubes...",
+      "... and knead until the dough comes away from the sides of the bowl. At this stage, the dough should have a temperature of about 22-23°C.",
+      "Cover with a clean tea towel and leave to prove at room temperature, until the dough has doubled in volume.",
+      "Knock back with your hand.",
+      "Cover the surface of the dough with cling film and refrigerate overnight.",
+      "The next day:  Even though it was stored in the fridge overnight, the dough should have risen again. Remove from the fridge and knock back again. The brioche dough is now ready for shaping. Let prove again, then bake... and enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baker's Yeast",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "18",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Eggs",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "at room temperature",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted Butter",
+        "unit": "g",
+        "notes": "at room temperature",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "eec9e0fdeb9a5f48926fed8d7acddff66412fbc4da9506ef5095b5b344371642",
+    "lineage_hash": "6beb813bffbcabb275ddddaae29153c993481ab46542df6ff268a2371bc8b81b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.meilleurduchef.com/en/recipe/brioche-dough.html",
+    "fetchedAt": "2026-08-02T13:10:41.897Z"
+  },
+  "rawSource": "https://www.meilleurduchef.com/en/recipe/brioche-dough.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

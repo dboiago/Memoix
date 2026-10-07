@@ -1,0 +1,147 @@
+{
+  "recipe": {
+    "name": "Cheesy Omelette Arnold Bennett",
+    "time": "45 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Bring the milk, thyme, peppercorns and garlic to a simmer in a wide pan. Add the smoked haddock and cook for a few minutes - just until it begins to flake apart",
+      "Gently remove the fish and set aside, then strain the milk into a jug and reserve",
+      "Melt the butter in a saucepan and, when foaming, add the plain flour. Cook, stirring until it smells toasty - a couple of minutes. Slowly whisk in the warm milk to make a smooth sauce. Add the Dijon mustard and taste for seasoning&nbsp;",
+      "Gently add half of the smoked haddock flakes, reserving the rest for garnish&nbsp;",
+      "Lightly beat the eggs in a bowl, and heat up your grill to its highest setting",
+      "Warm a non-stick pan over medium, add a generous amount of butter, then add the eggs",
+      "Stir, then then cook until set on the bottom but still loose on the top",
+      "Gently move the omelette to a plate, then transfer to a grill-proof serving dish. Sprinkle with half the cheeses, then gently top with the sauce and the remaining cheeses",
+      "Place under a hot grill until bubbling, then garnish with the chives"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "bashed with the side of a knife",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Undyed Smoked Haddock Fillet",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshlay Farms Golden Yolker® Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cheddar",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gruyère",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": null,
+        "notes": "for cooking",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": null,
+        "notes": "finely, chopped, for garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "676fe0a7799b2b2dd67b7c9e8c3f2895839cf468aa2dd465f5be46fd94e229cc",
+    "lineage_hash": "3ab7cadadaab95af010eec66f3c582226cfc57f68025f1bbe3d90e9c7194b570"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cheesy-omelette-arnold-bennett-recipe",
+    "fetchedAt": "2026-08-02T00:44:48.382Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cheesy-omelette-arnold-bennett-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

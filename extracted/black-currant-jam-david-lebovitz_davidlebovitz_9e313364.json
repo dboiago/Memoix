@@ -1,0 +1,70 @@
+{
+  "recipe": {
+    "name": "Black Currant Jam",
+    "time": "45 min",
+    "course": "pickles",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a nonreactive pot, bring the black currants and the water to a boil. Reduce the heat and cook for 10 minutes, until the black currants are softened.",
+      "Add the sugar and the lemon juice and cook over medium heat, stirring frequently, until the jam reaches the jelling point.",
+      "– If using a thermometer, it should read about 220ºF (104ºC). Or if you want to do the freezer test, put a small plate in the freezer. When the jam looks thickened, turn off the heat and put a teaspoon of the jam on the plate and stick it back in the freezer for about 5 minutes. When you take it out, it’s done if you nudge your finger into it and it holds its shape. If not, continue cooking it, and retesting the jam, until it’s the right consistency.",
+      "When ready, scrape into clean jars, cover, and turn the jars over until cool."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Black Currants",
+        "unit": "C",
+        "notes": "250g, fresh, stemmed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "180ml",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": "250g",
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2e277d6e8d8bae140945e16b2036d840f0bb1c8a397f4e71ea597c6ce86fc01f",
+    "lineage_hash": "994bfcbb195270699294d17249303d3515620886ab29e8e3985cc3f0f1e5200e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/black-currant-jam-recipe/",
+    "fetchedAt": "2026-08-02T19:27:11.114Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/black-currant-jam-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

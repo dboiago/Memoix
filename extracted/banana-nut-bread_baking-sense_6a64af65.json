@@ -1,0 +1,157 @@
+{
+  "recipe": {
+    "name": "Banana Nut Bread",
+    "time": "1 hr 40 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "221",
+      "carbohydrateContent": "31",
+      "fatContent": "9",
+      "proteinContent": "4"
+    },
+    "directions": [
+      "Butter a 9&quot;x 5” loaf pan and line with parchment paper in one direction to form a sling (see process photos).",
+      "Mash 3&#32;medium bananas with a fork, leaving them a little chunky. Add 8 oz&#32;buttermilk, 2 oz&#32;vegetable oil, 2&#32;large eggs and 1 teaspoon&#32;vanilla extract to the bananas. Mix to combine and set aside.",
+      "In a large bowl combine 10 oz&#32;all-purpose flour, 6 oz&#32;granulated sugar, 1 teaspoon&#32;baking powder, ½ teaspoon&#32;baking soda, ½ teaspoon&#32;salt, ½ teaspoon&#32;ground cinnamon and ⅛ teaspoon&#32;nutmeg. Whisk the dry ingredients to combine and make a well in the center. Add the banana mixture and stir until about 2/3 of the flour is incorporated. Fold in 4 oz&#32;chopped walnuts and mix until everything is combined.",
+      "Pour the batter into the prepared pan and spread to level. Refrigerate the pan for 30-60 minutes to give the flour time to absorb more moisture. Meanwhile, preheat the oven to 350 °F.",
+      "Remove the pan from the refrigerator and top the loaf with granulated sugar & banana slices, if desired. Bake until golden brown and a toothpick inserted in the middle comes out with moist crumbs, about 1 hour and 5 minutes.",
+      "Cool for 10 minutes in the pan, then turn out onto a cooling rack to finish cooling."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bananas",
+        "unit": "medium",
+        "notes": "very ripe, 12 oz peeled",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "oz",
+        "notes": "2 cups, see note",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "¾ cup",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Walnuts",
+        "unit": "oz",
+        "notes": "1 cup, chopped",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar & Banana Slices (for Topping, Optional)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4178c414d04ddd4d733e5b844795cdf7402e0801720fa0e6c9aba3da848db08e",
+    "lineage_hash": "420d5d9e132ef891ce05a18c96166a050be4b61db1ba5e59af667d1cab5f1998"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2025/04/03/banana-nut-bread/",
+    "fetchedAt": "2026-08-02T04:25:48.325Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2025/04/03/banana-nut-bread/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

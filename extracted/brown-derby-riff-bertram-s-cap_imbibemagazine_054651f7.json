@@ -1,0 +1,35 @@
+{
+  "recipe": {
+    "name": "Brown Derby Riff: Bertram's Cap",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake the first 3 ingredients with ice to chill. Prepare a chilled glass by rinsing it with the salt solution, then discarding the excess. Strain the cocktail into the glass. Garnish.",
+      "Sea-salt solutionCombine 1 Tbsp. of sea salt with 4 Tbsp. of water, then stir until dissolved."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "57c858b2d6846659a25ebe30b7de840da1bd5fa8a7d788e64444fc8355266b91",
+    "lineage_hash": "ef8fa9ee629e8faef8a8a32a2db3c92c35171c48e918e7f55127341fe05dee39"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/brown-derby-riff-bertrams-cap/",
+    "fetchedAt": "2026-08-04T01:34:45.738Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/brown-derby-riff-bertrams-cap/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

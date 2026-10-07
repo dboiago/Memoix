@@ -1,0 +1,105 @@
+{
+  "recipe": {
+    "name": "Apricot Kernel Ice Cream",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat the milk in a medium-size saucepan with the sugar and salt.",
+      "While that’s heating, pour the cream into a metal bowl and set that bowl into a larger bowl with some ice, creating an ice bath. Set a mesh strainer over the top of the empty bowl.",
+      "Whisk the yolks in a small bowl and gradually pour some of the warm milk mixture over the yolks, whisking constantly. Scrape the warmed yolks back into the saucepan and cook the custard using a heatproof utensil, stirring constantly (scraping the bottom as you stir) until the mixture thickens. If using an instant-read thermometer, it should read 160-170F (71-77C).",
+      "Pour the custard through the strainer into the heavy cream set over the ice bath, then stir frequently until the mixture is cooled down. Refrigerate at least 8 hours or until thoroughly chilled.",
+      "If adding the dried sour cherries, in a small saucepan, warm the cherries in the eau-de-vie, cover, and let them stand overnight.",
+      "Whisk the oil into the ice cream custard then freeze the mixture in your ice cream maker according to the manufacturer’s instructions.",
+      "Drain any liquid off from the cherries (which is a tasty little reward for your efforts) and when you remove the ice cream from the machine, fold in the cherries."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Milk",
+        "unit": "C",
+        "notes": "250ml",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": "130g",
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Big Pinch of Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "C",
+        "notes": "500ml",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": "large",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plum",
+        "unit": "Tbsp",
+        "notes": "alt: apricot kernel oil, 90g",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sour Cherries",
+        "unit": "C",
+        "notes": "30g, optional, dried, chopped",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eau-de-vie",
+        "unit": "Tbsp",
+        "notes": "optional, or another liqueur",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "164b9f4a7254e3c144b465acb47e163756b8ab4ab3e305fb1d60a481e432ca5c",
+    "lineage_hash": "4f89c22d788c0fbd6b20b79e16ec1f7b43f3c345d4a30b571933058a0c4b67b6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/thats-snateur-l/",
+    "fetchedAt": "2026-08-03T03:57:45.996Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/thats-snateur-l/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

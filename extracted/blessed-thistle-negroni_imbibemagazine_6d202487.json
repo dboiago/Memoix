@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Blessed Thistle Negroni",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all ingredients in a mixing glass with ice and stir to chill. Strain into a rocks glass over a large cube. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "30a5e3153485396aa92de5fad3a9e84e93e78b9eec9a54ce6d184f597825bf5a",
+    "lineage_hash": "5d446d9229d8eed5f50121b391e99ae1db1ce2d0339c004420dee69622497795"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/blessed-thistle-negroni/",
+    "fetchedAt": "2026-08-03T17:53:23.578Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/blessed-thistle-negroni/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

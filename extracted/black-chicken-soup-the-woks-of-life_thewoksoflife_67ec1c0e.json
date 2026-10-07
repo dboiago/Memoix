@@ -1,0 +1,114 @@
+{
+  "recipe": {
+    "name": "Black Chicken Soup",
+    "time": "2 hr 35 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "139",
+      "carbohydrateContent": "0.1",
+      "fatContent": "10",
+      "proteinContent": "12"
+    },
+    "directions": [
+      "Add the dried ingredients, ginger, and water to a thick-bottomed soup pot or Dutch oven. Lower the chicken into the pot, feet side down.",
+      "Bring to a boil over high heat. Once boiling, immediately reduce the heat to medium-low, cover, and simmer for 2 hours. Adjust the heat as necessary so the soup is simmering slowly. This slow cooking will give you a clear, consommé-like broth, and will prevent you from cooking off too much liquid.",
+      "Skim any fat off the surface of the soup, and ladle the broth into bowls. Season the soup with salt to taste, right before enjoying."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chinese Yam",
+        "unit": "g",
+        "notes": "淮山 – huáishān, dried",
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Codonopsis Pilosula",
+        "unit": "g",
+        "notes": "党参 – dǎngshēn, dried",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Goji Berries",
+        "unit": "g",
+        "notes": "枸杞 – gǒuqǐ, dried",
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Astragalus Propinquus",
+        "unit": "g",
+        "notes": "黄芪 – huángqí, dried",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Polygonatum Odoratum",
+        "unit": "g",
+        "notes": "玉竹 – yù zhú, dried",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Slices Ginger",
+        "unit": "large",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "13",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Black Silkie Chicken",
+        "unit": "lb",
+        "notes": null,
+        "amount": "2.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt (to Taste)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5392761316eb513a78f5461cfe45a21d5a8406d6729b3306614f79cfd2cefaf4",
+    "lineage_hash": "7d7f7b3e15af2485169611a4a63dc620417b1f8c8610929c92e9bc4339863812"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/black-chicken-soup/",
+    "fetchedAt": "2026-08-02T13:55:25.679Z"
+  },
+  "rawSource": "https://thewoksoflife.com/black-chicken-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

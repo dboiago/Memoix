@@ -1,0 +1,197 @@
+{
+  "recipe": {
+    "name": "Beef Ho Fun Noodle Soup",
+    "time": "1 hr",
+    "course": "soup",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "962",
+      "carbohydrateContent": "145",
+      "fatContent": "22",
+      "proteinContent": "39"
+    },
+    "directions": [
+      "Soak the spices with clean water for around 10 minutes. And then wrap with gauze. Seal with a rope or gauze strip. This will prevent the spices mixing with the soup.",
+      "Bring a large pot of water to boil and cook the beef brisket for 2-3 minutes. Transfer the beef brisket out and rinse under running water to clean. Drain.",
+      "Heat up 2 tablespoons of cooking oil, fry garlic, ginger and ginger for 1-2 minutes over slow fire or until aroma. Place beef brisket in and fry for 3-4 minutes until fragrant. Add light soy sauce and continue frying for 1 or 2 minutes. Pour enough water to pot.",
+      "Place the spice gauze bag in and simmer for 2-3 minutes or transfer to high pressure cooker and cook for 30 minutes. Add salt before assembling. (Note 2)",
+      "Bring water to boil and rinse ho fun noodles for 30- 40 seconds. Rinse lettuce leaves too. Transfer noodle and lettuce leaves to serving bowl.",
+      "Top ho fun noodle soup bowl with beef brisket, chopped green onion and chopped coriander and scoop beef soup to cover the noodles. Serve hot!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ho Fun Noodle",
+        "unit": "g",
+        "notes": "fresh, if you are using dried ones, pre-soak 300g until soft",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Brisket",
+        "unit": "lb",
+        "notes": "cut into middle size chunks",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "whites and green part chopped separately",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thumb Ginger",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Clean Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "3-4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": null,
+        "notes": "chopped for topping",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leafy Vegetable",
+        "unit": "head",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anises",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leave",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bark Cinnamon",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sichuan Peppercorn",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2d692fe4d0ba225e67f7a5ae36488a4480e8fb2564e3cb94f22ebd0b1a4086ea",
+    "lineage_hash": "56f785cbc80c057a13d3cf241674f98f786cce782db86f7bb576305bb8824707"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/beef-ho-fun-noodle-soup/",
+    "fetchedAt": "2026-08-02T00:46:47.112Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/beef-ho-fun-noodle-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

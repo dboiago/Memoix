@@ -1,0 +1,83 @@
+{
+  "recipe": {
+    "name": "Apple Tartlets",
+    "time": "30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Thaw the puff pastry and mince the walnuts while the pastry is thawing. Peel the whole apple and, using an apple corer, remove the core and cut it into 12 round slices with a hole in the center. When the pastry has thawed, roll it out to 1 1/2 inches thick and cut out 12 disks the size of the apple slices. Place the disks on a baking tray lined with parchment paper, brush with egg, spread with chestnut jam, cover them with the apple slices and, in the hole in the middle, place the minced walnuts and another dab of jam. Sprinkle the tartlets with powdered sugar, then bake them at 375°F for about 15 minutes. Remove from the oven promptly, let them cool, then garnish them with a drizzle of jam from a cake decorating tube, then add another dusting of powdered sugar."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Thawed Puff Pastry",
+        "unit": "oz",
+        "notes": null,
+        "amount": "18",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shelled Walnuts",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jar of Chestnut Jam",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Powdered Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg for the Wash",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d0f6c2751bcfbf158d108ebdd48959acd3105a36ac42ccb621bde3b96c940995",
+    "lineage_hash": "c3e0114e2c1d9653754c1e8d9f02bb9489ae7a67d799c0e55e8f1b6d19837f83"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/apple-tartlets",
+    "fetchedAt": "2026-08-03T05:24:56.016Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/apple-tartlets",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

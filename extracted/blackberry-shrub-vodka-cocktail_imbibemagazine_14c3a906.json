@@ -1,0 +1,35 @@
+{
+  "recipe": {
+    "name": "Blackberry Shrub Vodka Cocktail",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Collins",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Fill a Collins glass with ice. Add the blackberry shrub and vodka. Top with ginger beer and garnish.",
+      "Blackberry Shrub In an airtight container, combine the blackberries and sugar. Allow to macerate in the refrigerator for 2 to 7 days, stirring daily to break up the fruit. After reaching the desired level of maceration, strain out the solids and discard them. Stir until all sugar granules dissolve. Add vinegars to complete the shrub. Will keep in the refrigerator for 3 to 4 weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "9fb049571ce6da5c6e7969d305559036235a5685222a878eb85e16060d4edc8d",
+    "lineage_hash": "26d808aac2a10c23dc5d18796aca9563745e1059a990a7322ad8dbbf9332622a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/blackberry-shrub-vodka-cocktail/",
+    "fetchedAt": "2026-08-03T21:41:24.396Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/blackberry-shrub-vodka-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

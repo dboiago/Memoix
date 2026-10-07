@@ -1,0 +1,223 @@
+{
+  "recipe": {
+    "name": "Caldo de Pescado y Camaron (Mexican Fish and Shrimp Soup)",
+    "time": "55 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "242",
+      "carbohydrateContent": "6",
+      "fatContent": "15",
+      "proteinContent": "21"
+    },
+    "directions": [
+      "In a large stockpot heat 4 tablespoons of olive oil over medium heat and sauté onion and cook until translucent, about 2 minutes.",
+      "Add jalapeño, carrots, and celery, and cook for 3 minutes, Add 1 chopped tomato and cook for an additional minute. Turn off heat, place sautéed ingredients in a bowl and set aside.",
+      "To a blender add chipotle chiles, garlic, pepper, bouillon, tomatoes, and onion; and puree until smooth.",
+      "Strain blended mixture until smooth and discard any tomato skins and chile peels.",
+      "In the same stockpot heat additional 4 tablespoons of olive oil over medium heat and add strained mixture to stockpot and bring to a boil for 20 minutes.",
+      "Meanwhile, in a separate pot bring water to a boil.",
+      "Add boiled water, sautéed vegetables, fish, shrimp, bay leaves, and fish stock to the stock pot and bring to a boil, reduce heat and simmer for 10 to 15 minutes until fish is tender. Add cilantro during the last 5 minutes.",
+      "Add salt to taste."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": "divided",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Onion",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jalapeño",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots Stalk",
+        "unit": null,
+        "notes": "peeled and sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Roma Tomato",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chipotle Peppers in Adobo Sauce",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Bouillon",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Roma Tomatoes",
+        "unit": null,
+        "notes": "quartered",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Onion",
+        "unit": null,
+        "notes": "quartered",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Fish with Skin on Such As Catfish",
+        "unit": "lb",
+        "notes": "halibut, or cod, filleted, and cut in large 3-inch chunks",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shelled Large Shrimp",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Stock Cube",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro Leaves",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt As Needed",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Wedges",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Saltine Crackers",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Valentina Hot Sauce",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8be15e053d57eb6b5db320044355de1067d6916806f60ac03b05c2cf9dffa197",
+    "lineage_hash": "d84877ad429ce247135d8be092aab4fbb453b90682bba346d1f41d9a59c15685"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/caldo-de-pescado/",
+    "fetchedAt": "2026-08-02T02:01:52.461Z"
+  },
+  "rawSource": "https://muybuenoblog.com/caldo-de-pescado/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

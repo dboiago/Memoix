@@ -1,0 +1,117 @@
+{
+  "recipe": {
+    "name": "Romesco Sauce",
+    "time": "50 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "ES",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "252",
+      "carbohydrateContent": "5.77",
+      "fatContent": "25.3",
+      "proteinContent": "2.01"
+    },
+    "directions": [
+      "Hydrate the ñoras the day prior by soaking them in water, then remove the stem and seeds. Alternatively, boil the peppers for 15 minutes; it isn&#39;t quite the same, but it works!",
+      "Dry the bread out a few hours in advance if possible, then toast until golden brown. Let cool, remove the crusts, and cut into smaller cubes.",
+      "Cut a few small slits in the plum tomatoes and drizzle them with olive oil. Roast them and the garlic at 400°F (200°C) for about 35 minutes.",
+      "Roast the nuts on a baking sheet until golden, about 5 minutes, moving them around every couple of minutes. Watch them closely!",
+      "Let everything cool down, then blend all the ingredients together in a blender until uniform, but not puréed. Add more vinegar, salt, and cayenne to taste.",
+      "Enjoy the sauce with roasted vegetables, or on a sandwich."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ñora Peppers",
+        "unit": null,
+        "notes": "alt: any small, dried, sweet, and small smokey dried peppers",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hearty White Bread",
+        "unit": "slices",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ripe Plum Tomatoes",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "head",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raw Blanched Hazelnuts",
+        "unit": null,
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raw Blanched Almonds Preferably Marcona Almonds",
+        "unit": null,
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sherry",
+        "unit": "Tbsp",
+        "notes": "alt: red wine vinegar",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cayenne Pepper to Taste (optional)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2c9e30a4da7cffa57060be3d0372a6b24c6c2438f91e0184d93d81f16c2bb0b7",
+    "lineage_hash": "6b388b616e0a3fd4f7578190041d0e794e913bd4eca4cc1bc03326536d01c937"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://spanishsabores.com/authentic-easy-romesco-sauce-recipe-salsa-romesco/",
+    "fetchedAt": "2026-08-02T10:25:36.475Z"
+  },
+  "rawSource": "https://spanishsabores.com/authentic-easy-romesco-sauce-recipe-salsa-romesco/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

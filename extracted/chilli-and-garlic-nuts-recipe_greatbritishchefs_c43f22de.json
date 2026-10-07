@@ -1,0 +1,94 @@
+{
+  "recipe": {
+    "name": "Chilli and Garlic Nuts",
+    "time": "20 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat a heavy-based pan with the vegetable oil over a low heat. Add the garlic cloves – still in their skins – and the rosemary sprig and gently cook for 8 minutes, stirring occasionally",
+      "Add the peanuts and chilli flakes and cook for 2 minutes, stirring constantly so the nuts don’t burn",
+      "Add the cashew nuts and salt then cook for a further 8 minutes, or until the nuts are golden brown",
+      "Pick out and discard the rosemary and serve immediately, or leave to cool and reserve in a jar for later – but they are best served warm with a glass of Sharp’s Doom Bar"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Peanuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cashew Nuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "sprig",
+        "notes": "large",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Flakes",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "unpeeled",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornish Sea Salt",
+        "unit": "pinches",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "09b06f384a93af15b0f16c6d1b3bc98bbbefb0b7d1d4f56baa655a1e66f94e1e",
+    "lineage_hash": "b4ecde0ebf9f1e21804a7fb3528931bdd1c1a1c199c0e7ae6e06505e9d15c8a6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chilli-garlic-nuts-recipe",
+    "fetchedAt": "2026-08-02T20:25:32.819Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chilli-garlic-nuts-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

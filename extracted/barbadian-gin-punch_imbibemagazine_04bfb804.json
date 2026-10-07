@@ -1,0 +1,95 @@
+{
+  "recipe": {
+    "name": "Barbadian Gin Punch",
+    "time": "45 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "BB",
+    "glass": "Punch",
+    "garnish": [],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Fill a quart-sized metal or plastic container with water and freeze overnight.",
+      "Strain the lime juice to remove pulp.",
+      "In a three-quart bowl, combine the punch ingredients and stir.",
+      "Keep refrigerated until ready to serve, then remove the ice block from the freezer, running hot water over the bottom to release it from its container, and place it in the bowl.",
+      "Ladle the punch into small cups."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bottle Genever",
+        "unit": null,
+        "notes": "750-ml.",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Water",
+        "unit": "C",
+        "notes": "fresh or unsweetened",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "C",
+        "notes": "the juice of approximately 6 limes",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Demerara Syrup",
+        "unit": "C",
+        "notes": "2:1 sugar to water, rich",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cold Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "2¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Angostura Bitters",
+        "unit": "dashes",
+        "notes": "optional",
+        "amount": "24",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Quart-sized Block Ice",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "317e58e9c4f0e40d7193ec6b4667a82a0a1fa06423ae156eaade46fc1a1bcbb3",
+    "lineage_hash": "15f6b357814031076001a8a5370e219b15f97c700dd867de44a4738a6459a718"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/barbadian-gin-punch-recipe/",
+    "fetchedAt": "2026-08-03T15:01:43.490Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/barbadian-gin-punch-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

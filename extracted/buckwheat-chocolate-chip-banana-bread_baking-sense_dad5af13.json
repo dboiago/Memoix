@@ -1,0 +1,173 @@
+{
+  "recipe": {
+    "name": "Buckwheat Chocolate Chip Banana Bread",
+    "time": "1 hr 20 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "236",
+      "carbohydrateContent": "37",
+      "fatContent": "8",
+      "proteinContent": "4"
+    },
+    "directions": [
+      "Preheat the oven to 350 °F. Butter and flour (or butter and line with parchment) a 9&quot;x 5&quot; inch loaf pan.",
+      "Mash 3&#32;very ripe medium bananas with a fork, leaving them a little chunky. Add 3 oz&#32;full-fat plain Greek yogurt, 2 oz&#32;vegetable oil, 1 oz&#32;unsalted butter, 2&#32;large eggs, 1 teaspoon&#32;vanilla extract, and ½ teaspoon&#32;lemon extract to the bananas. Mix to combine and set aside.",
+      "Toss 6 oz&#32;mini chocolate chips with 2 teaspoons of water to moisten. Sprinkle a teaspoon of all purpose flour over the chips and toss, set aside.",
+      "Combine 9 oz&#32;all-purpose flour, 1 ¼ oz&#32;buckwheat flour, 6 oz&#32;granulated sugar, 1 teaspoon&#32;baking powder, ½ teaspoon&#32;baking soda, ½ teaspoon&#32;salt, ½ teaspoon&#32;ground cinnamon and ¼ teaspoon&#32;nutmeg in a large bowl. Whisk the dry ingredients to combine. Add the banana mixture and stir until about 2/3 of the flour is incorporated. Fold in the chocolate chips and mix until all the flour is incorporated.",
+      "Pour the batter into the prepared pan. Sprinkle additional chocolate chips on top if you'd like.",
+      "Bake until golden brown and a toothpick inserted in the middle comes out clean, about 50-60 minutes. Cool for 10 minutes in the pan, then turn out onto a cooling rack to finish cooling."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Very Ripe Medium Bananas",
+        "unit": null,
+        "notes": "peeled",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Full-fat Plain Greek Yogurt",
+        "unit": "oz",
+        "notes": "⅓ cup",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "melted",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mini Chocolate Chips",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "oz",
+        "notes": "1 ¾ cups, see note",
+        "amount": "9",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Buckwheat Flour",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "¾ cup",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f1a0987c10aecc39a3158594d7db63bf094a20c0df1d3b5548883f2749f28f2a",
+    "lineage_hash": "3a1785c1464c5aff5ddcc01890c7a1ec369f0cbbdeb2ca272720c6031175bc9b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2017/08/29/buckwheat-chocolate-chip-banana-bread/",
+    "fetchedAt": "2026-08-01T19:02:10.330Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2017/08/29/buckwheat-chocolate-chip-banana-bread/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

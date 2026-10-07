@@ -1,0 +1,172 @@
+{
+  "recipe": {
+    "name": "Apple Cinnamon Swirl Bread",
+    "time": "3 hr 15 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "32",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "167",
+      "carbohydrateContent": "38",
+      "fatContent": "3",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "Scald 8 oz&#32;whole milk. Add 4 oz&#32;unsalted butter to the hot milk to melt then allow it to cool to about 110 °F . In the bowl of a stand mixer with the paddle attachment or a large mixing bowl with a wooden spoon, combine the cooled milk, 2 ¼ teaspoons&#32;dry yeast, 4 oz&#32;granulated sugar, 1 teaspoon&#32;salt,1 teaspoon&#32;ground cinnamon, 2&#32;large eggs and 3 cups (15 oz) of the flour. Mix until it forms a thick batter.",
+      "If working on a stand mixer, switch to the dough hook. With the mixer running, add the remaining flour. The dough should gather on the hook and partially clear the sides of the bowl. Sprinkle a little more flour if necessary. If working by hand mix as much flour as you can with the spoon, then finish kneading in the rest of the flour by hand. Knead the dough for 5 minutes.",
+      "Turn the dough out onto a floured surface and knead to a smooth ball. The dough should be soft and slightly sticky.",
+      "Place the dough into a lightly oiled bowl, turning once to coat the dough. Cover the bowl and set it aside to let it rise in a warm spot until doubled in size, about 1 ½ hours.",
+      "Toss 1 ½ pounds&#32;apples (cubed) with 6 oz&#32;granulated sugar and set aside to macerate for at least 1 hour (do this while the dough rises)."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Milk",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter (room Temperature (plus Pan Prep))",
+        "unit": "oz",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Yeast",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "room temperature",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "oz",
+        "notes": "4 ½ cups, see note",
+        "amount": "22½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apples",
+        "unit": "lb",
+        "notes": "peeled, cored, cut into ¼\" cubes",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "¾ cup",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "whisked, for egg wash",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Confectioner’s Sugar",
+        "unit": "oz",
+        "notes": "1 ½ cup",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Reserved Apple Juice",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9f27504df476ec1e4764fd441945d31503ae08b5f5896a4e421a68b0f91fd9b1",
+    "lineage_hash": "9bd8eb64228f50656da40e99fdf1cd906e9e7a8f372ea77da5676376d6a47ccf"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2018/10/04/apple-cinnamon-swirl-bread/",
+    "fetchedAt": "2026-08-02T04:04:14.255Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2018/10/04/apple-cinnamon-swirl-bread/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

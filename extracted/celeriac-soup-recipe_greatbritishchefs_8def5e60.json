@@ -1,0 +1,119 @@
+{
+  "recipe": {
+    "name": "Celeriac Soup",
+    "time": "1 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat the oil in a heavy based saucepan and add the onions, allowing to sweat (but not brown) for 3-4 minutes",
+      "Add the celeriac chunks and water and leave to gently simmer for 40 minutes",
+      "After 40 minutes, or when the celeriac has softened, blitz the soup in a liquidiser or food blender until smooth, with no lumps. Season to taste with sugar and salt",
+      "Return to a clean pan and bring to the boil. Add the blue cheese pieces, salt and the double cream.  Stir gently and check seasoning",
+      "Add the finely grated garlic and white wine and bring back to the boil. Distribute into bowls and serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Celeriac",
+        "unit": "g",
+        "notes": "trimmed and cut into small chunks",
+        "amount": "800",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sunflower Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "1000",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blue Cheese",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "finely grated",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "g",
+        "notes": "finely sliced",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d465f522f2ec4964fd11d272c5b18977245de420cf913462d8ff89c65f08a338",
+    "lineage_hash": "fc51b7984d280cf0bad4b6e88d25a86542a1aa58c21f8b3b67156dbba620e370"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/celeriac-soup-recipe",
+    "fetchedAt": "2026-08-03T16:00:36.462Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/celeriac-soup-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

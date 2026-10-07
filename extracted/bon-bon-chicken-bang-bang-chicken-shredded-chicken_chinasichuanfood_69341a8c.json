@@ -1,0 +1,159 @@
+{
+  "recipe": {
+    "name": "Bon Bon Chicken (Bang Bang Chicken-shredded chicken salad)",
+    "time": "25 min",
+    "course": "salad",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "513",
+      "carbohydrateContent": "15",
+      "fatContent": "27",
+      "proteinContent": "50"
+    },
+    "directions": [
+      "Prepare a large pot. Add cold water, ginger slices and the boneless chicken breast in. Bring all the content to a boiling for around 3~5 minutes and immediately lower down the fire to simmer for around 5 minutes. Use a chop sticker to test; stop the heating process until you can easy insert the chop sticker in.",
+      "Leave the pot covered around 10 minutes.",
+      "Cut shallots and the white part of spring onion into shreds. And then finely chop the green parts of spring onion.",
+      "Put all the seasoning and condiments in a large bowl to make the mala sauce.",
+      "Pour the cold water in a large pot and move the chicken meat from the heating pot to this one. Soak around 5~10 minutes or until the meat is totally cooled down. Then move out and drain.",
+      "Put the chicken meat in a plastic bag and beat with rolling pin from one side to another. Repeat the process for 2~3 times and then shred the chicken by hands.",
+      "Then mix with chicken shreds with sauce in the large bowl. And finally add cucumber and scallions in and mix evenly.",
+      "Top with chopped spring onions and its eating time."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Breast",
+        "unit": "lb",
+        "notes": "boneless",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "slices",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Section Shallot",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cold Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sichuan Peppercorn Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7c58eda0f3542be20ba27011ca060c10d725ac33c1ecda6bf2caad64ccf1f8ed",
+    "lineage_hash": "2a2fdbdb90de8c8e2e522a99e8b4bf44488ff23d8fc51f7dff9030e23c99ae49"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/bon-bon-chicken-bang-bang-chicken/",
+    "fetchedAt": "2026-08-01T19:26:43.336Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/bon-bon-chicken-bang-bang-chicken/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

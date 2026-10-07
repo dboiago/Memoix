@@ -1,0 +1,159 @@
+{
+  "recipe": {
+    "name": "Cheat’s Yağlama; Layered flatbreads with meat sauce and garlic yoghurt",
+    "time": "45 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "TR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the garlic with yoghurt, season to taste, set aside to bring to room temperature.",
+      "Place the minced meat on a wide pan, and saute for 8 minutes over medium to high heat, stirring and breaking into small parts, until browned. Pour the olive oil and stir in the butter to the pan and add the onions, saute for a further 7 minutes; the onions will soften.",
+      "Add the peppers and saute for another 3 minutes. Stir in the tomato and pepper paste, give everything a good mix. Add the chopped tomatoes, combine well. Pour the water, season with salt, pepper, pul biber, combine and bring to boil. Simmer for 10 minutes over low to medium heat. Add parsley, mix and keep the heat on lowest setting.",
+      "Fold a tortilla wrap in half and fold again, then dip the edges into the juicy meat sauce. Place this tortilla wrap flat on a large serving plate or a dish, ideally with 5cm height, so the sauce dribbling at the sides can stay in. Generously spread about 4 tbsps of the meat sauce over, leaving about 1cm around the edges filling free. Working fast, continue this way, wetting the edges of each tortilla and spreading the meat mixture over and layering on top of each other. Spread the remaining sauce over the final tortilla and scatter reserved parsley over. Turn the heat off the sauce.",
+      "Cut the yağlama stack in the quarters and serve immediately, with garlic yoghurt. We place a ½ tbsp of garlic yoghurt over each yağlama wedge, then roll and enjoy – you will need paper napkins! Afiyet olsun."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Flour Tortilla Wraps",
+        "unit": null,
+        "notes": "24cm in diameter",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "(ground) Lamb",
+        "unit": "g",
+        "notes": "alt: beef, minced, 15 % fat",
+        "amount": "750",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "large",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Concentrated Tomato Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turkish Pepper Paste",
+        "unit": "Tbsp",
+        "notes": "optional, replace with tomato paste if you wish",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pul Biber",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "g",
+        "notes": "finely, chopped, 14 oz",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sivri Biber",
+        "unit": "g",
+        "notes": "alt: padron peppers, deseeded and finely chopped",
+        "amount": "85",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": "15fl oz",
+        "amount": "425",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": "and freshly ground black pepper",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Small Bunch Parsley",
+        "unit": null,
+        "notes": "finely chopped (reserve 1 tbsp for decoration)",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "finely chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yoghurt",
+        "unit": "g",
+        "notes": "full fat if you can",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6704f754844212828fab9c6d06594b34f3e9eef2385492cdca0c4c2dfd99693b",
+    "lineage_hash": "1f1ee1bd6642cef4d4ad17ea9d74621be2df1d4d4b3e9909523f648bbe2e88bb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ozlemsturkishtable.com/2026/04/yaglama-layered-flatbreads-with-meat-sauce-and-garlic-yoghurt/",
+    "fetchedAt": "2026-09-25T23:26:16.197Z"
+  },
+  "rawSource": "https://ozlemsturkishtable.com/2026/04/yaglama-layered-flatbreads-with-meat-sauce-and-garlic-yoghurt/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,106 @@
+{
+  "recipe": {
+    "name": "Amedei Chocolate Tart",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the pastry base, take the butter at room temperature and mix with the sugar. Add the flour and rub the ingredients together until crumb-like",
+      "Create a well in centre of the mix and crack the eggs into it. Slowly work the eggs into the mixture until it forms a smooth dough. Wrap in clingfilm and leave to rest in fridge for 24 hours",
+      "Once rested, roll out on a cold surface to a thickness of 4mm and line a 20cm diameter tart case with it. Leave to chill in a fridge for a further 2 hours",
+      "Heat the oven to 170°C/Gas mark 3. Add the baking beans to the tart and blind bake the case in the oven for 20 minutes",
+      "Remove the baking beans and cook for another 15 minutes with the surface exposed until pastry is crisp",
+      "Now make the tart filling. Heat up the milk and cream in a pan and pour over the chocolate. Mix until the chocolate has melted",
+      "Gently work the eggs into the chocolate mix until it is completely smooth",
+      "Pour the tart mix into the tart case and bake in an oven for 45 minutes at 90°C/lowest Gas mark your oven will go to. Allow to rest and serve at room temperature"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "70% Amedei “chuao” Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9f067ed31183844e96544bb1b06815417b76449d9bd10fc7c57bd6fffe733b4e",
+    "lineage_hash": "6efef91a66e77bb1d365ccab90c8888fb09f2a88280e575e37d76793e5a46e1b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/amedei-chocolate-tart-recipe",
+    "fetchedAt": "2026-08-03T16:28:45.021Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/amedei-chocolate-tart-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

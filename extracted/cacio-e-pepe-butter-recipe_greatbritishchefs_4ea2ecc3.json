@@ -1,0 +1,71 @@
+{
+  "recipe": {
+    "name": "Cacio e Pepe Butter",
+    "time": "10 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Coarsely grind the peppercorns using a pestle and mortar",
+      "Stir the pepper along with the salt and grated Pecorino into the softened butter until evenly combined",
+      "Wipe a work surface with a damp cloth and place a smooth sheet of clingfilm on top of it. Wipe the clingfilm with the cloth to smooth out any creases, then place another sheet of clingfilm on top and wipe again",
+      "Spoon the butter out onto the centre of the cling film and form into a neat log. Tightly wrap it up and secure with a knot at each end",
+      "Store the compound butter in the freezer. When ready to use, remove from the freezer for 10 minutes or so, slice off the amount of butter you require, then return the log to the freezer for another time"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "softened",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pecorino",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fe897de2bd10595bc9934dc98eedf16648607d9da482f46c8f6e5583d31522f1",
+    "lineage_hash": "450650731488e1dd39e3ec06722a53aa90667a94012ecf682474a7d70f0790d9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cacio-e-pepe-butter-recipe",
+    "fetchedAt": "2026-08-03T08:58:07.583Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cacio-e-pepe-butter-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

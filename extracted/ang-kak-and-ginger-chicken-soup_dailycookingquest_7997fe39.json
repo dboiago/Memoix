@@ -1,0 +1,84 @@
+{
+  "recipe": {
+    "name": "Ang Kak and Ginger Chicken Soup",
+    "time": "1 hr 30 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place all ingredients in a soup pot and bring to a boil over a medium heat.",
+      "Reduce the heat to medium-low and simmer for 1 hour. Divide into four soup bowls and serve warm."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Free Range Chicken (indonesian: Ayam Kampung)",
+        "unit": null,
+        "notes": "cut into 4 pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ang Kak",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inches",
+        "notes": "peeled and bruised",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "13d61b974948aa5c05563ae51581a419af4d4e2ed61ec64869007cc199e40f10",
+    "lineage_hash": "71c8af5af4478b1e488a5d3047b0e7d9fc834bc667ccdffbd06c9d0c986bdc10"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/ang-kak-and-ginger-chicken-soup.html",
+    "fetchedAt": "2026-08-02T12:01:08.202Z"
+  },
+  "rawSource": "https://dailycookingquest.com/ang-kak-and-ginger-chicken-soup.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

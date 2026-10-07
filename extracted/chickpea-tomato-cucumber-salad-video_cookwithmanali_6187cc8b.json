@@ -1,0 +1,140 @@
+{
+  "recipe": {
+    "name": "Chickpea Tomato Cucumber Salad",
+    "time": "15 min",
+    "course": "salad",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "418",
+      "carbohydrateContent": "43",
+      "fatContent": "24",
+      "proteinContent": "11"
+    },
+    "directions": [
+      "To a large bowl, add chickpeas, tomato, cucumber, celery and pomegranate arils. Set aside.",
+      "To a mason jar (or any other bowl) add olive oil, red wine vinegar, maple syrup, minced garlic, chopped basil leaves, salt and pepper. Shake the jar to combine the dressing or use a whisk if using a bowl.",
+      "Pour dressing over the salad, toss to combine.",
+      "Keep in refrigerator for 2 hours for the flavors to blend in.",
+      "Serve chilled and enjoy."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cooked Chickpeas",
+        "unit": "C",
+        "notes": null,
+        "amount": "1.25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": "C",
+        "notes": "diced",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber",
+        "unit": "C",
+        "notes": "diced",
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery",
+        "unit": "C",
+        "notes": "diced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pomegranate Arils",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maple Syrup",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": "large",
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basil Leaves",
+        "unit": null,
+        "notes": "finely chopped, I used small basil leaves",
+        "amount": "10-15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "14b2bf81ad8d8b3c449703671c606468f535800218d0f23935aa0aafe3f2e155",
+    "lineage_hash": "7f2feaf46770d34f94722a75a1bfd64c9dcaf71833b340c9b20ad63d440f1148"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/chickpea-tomato-cucumber-salad/",
+    "fetchedAt": "2026-08-01T19:54:26.429Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/chickpea-tomato-cucumber-salad/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

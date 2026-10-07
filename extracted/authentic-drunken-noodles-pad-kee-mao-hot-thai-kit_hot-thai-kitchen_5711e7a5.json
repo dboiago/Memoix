@@ -1,0 +1,178 @@
+{
+  "recipe": {
+    "name": "Drunken Noodles (Pad Kee Mao)",
+    "time": "40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "TH",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "439",
+      "carbohydrateContent": "72",
+      "fatContent": "2",
+      "proteinContent": "30"
+    },
+    "directions": [
+      "*I highly recommend cooking 1 portion at a time for best results, so divide up your prep before you start cooking.",
+      "Mix the sauce ingredients together in a small bowl and stir to combine.",
+      "Separate the rice noodles from each other (see video for technique). If they are cold, hard and stuck together, you need to heat them up until soft or they will break when you try to separate them. Carefully divide the noodles into 3-4 smaller bundles and spread them out onto a large plate. Microwave at 70% power, stopping every minute to move the noodles around for more even heating. Once they are soft, pull the noodles apart and divide them into portions.",
+      "Add Thai chilies into a mortar and pestle and pound until fine. Add garlic and spur chilies and pound into a rough paste.",
+      "Before you cook, organize your prep: 1) separate the ingredients into batches; 2) combine all non-leafy vegetables, grachai and young peppercorns together; 3) put the basil and leafy greens together; 4) put a tablespoon measure into the sauce and a teaspoon into your sugar crock.; 5) have a bowl ready to put your cooked protein into.",
+      "In a well-seasoned or non-stick wok, heat about 2 Tbsp of vegetable oil over high heat. Once very hot, add your protein to the pan and spread it out into a single layer. Sear on one side until browned or halfway cooked, then flip or toss and cook the other side until done. Remove from the pan and set aside.",
+      "Put the pan back on the stove with the heat still off, add the chili/garlic paste and a little more oil if needed. Turn heat on to medium and stir just until the small pieces of garlic start to turn golden brown.",
+      "Add your bowl of non-leafy vegetables, turn the heat on high and stir for about 30 seconds.",
+      "Add the noodles, drizzle the sauce (2 Tbsp per serving) and sprinkle the sugar (1¼ tsp per portion; you can eyeball the ¼ tsp) and toss until all the noodles are evenly coated and the sauce has been absorbed. If you want a darker colour, you can add a dash of black or dark soy sauce at this time, a little at a time.",
+      "Once the noodles are well coated, add the protein back in and toss to mix. Then let the noodles sit in the pan without stirring for 15-20 seconds or until the noodles are charred in some spots. Flip the noodles and repeat 1-2 more times.",
+      "Add the basil and any leafy greens and turn off the heat. Toss for just a few seconds until they wilt. Plate and repeat with your other batches. Enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Wide Rice Noodles",
+        "unit": "lb",
+        "notes": "see note 1, fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "4-5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thai Chilies",
+        "unit": null,
+        "notes": "or to taste",
+        "amount": "1-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spur Chili",
+        "unit": null,
+        "notes": "or ⅛  red bell pepper, chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Protein of Your Choice",
+        "unit": "oz",
+        "notes": "see note 2",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "oz",
+        "notes": "cut in thin sticks",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Broccoli",
+        "unit": "oz",
+        "notes": "see note 3",
+        "amount": "2.8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Julienned Grachai",
+        "unit": "Tbsp",
+        "notes": "optional",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stems Young Peppercorns",
+        "unit": null,
+        "notes": "optional, cut in small chunks",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black or Dark Soy Sauce",
+        "unit": "dash",
+        "notes": "optional, see note 4",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Holy Basil Leaves",
+        "unit": "C",
+        "notes": "see note 5",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Mountain Sauce",
+        "unit": "Tbsp",
+        "notes": "or substitute more soy sauce",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "94e783f70045bf32ecebb98e34b3ec5f9bf8dd5169072e427cd58728845328ca",
+    "lineage_hash": "2166faf67e8184f5e2036a397c764f95801781a474d3d285c0561e4e98dc53cc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://hot-thai-kitchen.com/pad-kee-mao-2/",
+    "fetchedAt": "2026-08-01T23:19:27.682Z"
+  },
+  "rawSource": "https://hot-thai-kitchen.com/pad-kee-mao-2/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,126 @@
+{
+  "recipe": {
+    "name": "Chicken Broccoli Stir Fry",
+    "time": "15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "457",
+      "carbohydrateContent": "6",
+      "fatContent": "35",
+      "proteinContent": "26"
+    },
+    "directions": [
+      "Cut the meat off the bone of the chicken thighs; And further cut into small pieces.",
+      "Mix the chicken with marinade sauce evenly in a small bowl and set aside for 10 minutes.",
+      "Cut the broccoli crowns into small pieces you like.",
+      "Bring some water to a boiling in wok and then rinse the crowns pieces around 2 minutes. Move the broccoli out and drain.",
+      "Heat up the cooking oil in wok. Add sliced ginger and garlic until you can smell the aroma. And then discard both the ginger and garlic slices. Leave the oil in wok.",
+      "Add chicken pieces in to stir-fry until the color changes. And then add chopped chili peppers, boiled broccoli and around 2 teaspoons of light soy sauce. Mix thoroughly.",
+      "Serve hot!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Thighs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Head of Broccoli",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Section Sliced",
+        "unit": "inch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Sliced",
+        "unit": "clove",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chili Pepper",
+        "unit": "small",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Starch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Wine",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "241888af996ff6bcfa0ef82a245820a00718ff09b97d62fbe105449481d8b4cb",
+    "lineage_hash": "e620ae38d2d2bed7a6eb0354feb000808baca7fc6f2c9af0d96f6f702e23dad7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/chicken-broccoli-stir-fry/",
+    "fetchedAt": "2026-08-01T17:57:37.581Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/chicken-broccoli-stir-fry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

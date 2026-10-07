@@ -1,0 +1,141 @@
+{
+  "recipe": {
+    "name": "Century Eggs with Green Peppers",
+    "time": "30 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "159",
+      "carbohydrateContent": "6",
+      "fatContent": "12",
+      "proteinContent": "6"
+    },
+    "directions": [
+      "Deseed and slice peppers into 1½ to 2-inch thick slices. Prepare the century eggs by peeling them and giving them a quick rinse. Cut the eggs in half, then cut each half into 3 to 4 wedges.",
+      "In a small bowl, add the chicken stock, light soy sauce, dark soy sauce, sugar, white pepper, and sesame oil. Set aside.",
+      "Heat a wok until it starts to smoke lightly, and add two tablespoons of oil around the perimeter. Add the peppers, and sear on both sides, turning occasionally. After the peppers are blistered on both sides, turn the heat down to medium so they don’t burn. Continue to cook the peppers (3 to 5 minutes) until they are tender and wilted. Remove them to a plate.",
+      "Add the remaining tablespoon of oil, along with the minced ginger, and cook until fragrant – about 20 seconds. Add the garlic, and cook over medium heat until fragrant (watch for burning!)",
+      "Next, add the peppers back to the wok with the Shaoxing wine. Stir well, then add the seasoned broth you prepared earlier. Stir, bring to a simmer, then add the eggs.",
+      "Give everything a stir. When the mixture is simmering, cover and cook for 1 minute. Uncover, and increase the heat to high to reduce the liquid while stirring gently and occasionally, taking care not to break up the century egg wedges. Once the sauce has reduced, plate and serve immediately with steamed rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Green Bell Peppers",
+        "unit": null,
+        "notes": "can also add jalapeño peppers if you like it spicy",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Century Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Low Sodium Chicken Stock",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Neutral Oil",
+        "unit": "Tbsp",
+        "notes": "such as vegetable, canola, or avocado oil; divided",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "minced, fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "sliced",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0f989c92ad52acc1a1298bfebe706945cb264f94fc20579f1782e21707787eb1",
+    "lineage_hash": "55c9f8af550e31c6b7d99754da9fae60db783aebd0992098666b3883743e320b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/century-eggs-green-peppers/",
+    "fetchedAt": "2026-08-02T19:14:47.723Z"
+  },
+  "rawSource": "https://thewoksoflife.com/century-eggs-green-peppers/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

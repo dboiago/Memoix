@@ -1,0 +1,187 @@
+{
+  "recipe": {
+    "name": "Almond Filled Stollen",
+    "time": "3 hr 15 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "24",
+    "source": "scraped",
+    "cuisine": "DE",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "282",
+      "carbohydrateContent": "40",
+      "fatContent": "14",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "In a small saucepan, combine 6 oz&#32;raisins and 4 oz&#32;candied orange peel with 2 oz&#32;rum. Cook over medium heat, stirring constantly, for 2-3 minutes until most of the rum is absorbed. Transfer the fruit to a small bowl and set aside to cool.",
+      "Combine 4 oz&#32;whole milk, 2 ¼ teaspoons&#32;dry yeast and 1 cup (5 oz) of the flour in the bowl of a stand mixer or in a mixing bowl. Mix the ingredients to form a thick batter. Cover the bowl and set aside for 30 minutes.",
+      "With the mixer running on low, add 2 oz&#32;granulated sugar and 1 teaspoon&#32;table salt. Add 6 oz&#32;unsalted butter a tablespoon at a time. Mix to incorporate completely. Add 1&#32;large egg, 1 teaspoon&#32;vanilla extract¼ teaspoon&#32;almond extract and 1/2 cup of flour.",
+      "Switch to the dough hook and with the mixer running on low add the remaining flour. Knead for 5 minutes. The dough should gather on the hook and clear the sides of the bowl. If working by hand, add as much of the flour as you can mix by hand then turn the dough out onto a floured surface to finish kneading in the flour.",
+      "Knead the raisin mixture into the dough. Use plenty of flour for kneading if the dough becomes sticky after the raisins are added.",
+      "Place the dough into an oiled bowl, turning once to coat the dough. Cover the bowl and set aside to rise for 1½ hours. (see note)",
+      "While the dough rises, cream together 6 oz&#32;almond paste and 2 oz&#32;unsalted butter until it forms a smooth paste. Set aside at room temperature. Line a half sheet pan with parchment paper.",
+      "Turn the dough out onto a lightly floured surface and divide in half without kneading. Gently press one piece of dough into an 9&quot; x 7&quot; oval. Spread half the almond paste over the oval, leaving a 1&quot; border around the edges. Fold the dough over the filling from the long side, leaving a 1&quot; border along the front edge. You should end up with a 9&quot; x 4&quot; oval with a 1&quot; border on the front edge.",
+      "Repeat with the remaining dough and filling. Set the loaves on the parchment lined pan. Cover and set aside to rise for 1 hour. Preheat the oven to 325 °F.",
+      "Bake the loaves until golden brown and the center registers 190°F, about 45 minutes.",
+      "Remove the loaves from the oven and cool 10 minutes. Generously brush the loaves on all sides 4 oz&#32;unsalted butter (melted), then completely coat the loaves with 8 oz&#32;superfine sugar. Set aside to cool completely.",
+      "Wrap the loaves tightly in a double layer of plastic wrap and store at room temperature to develop the flavor. The stollen can be eaten right away but I find it&#39;s best after 2-3 days and up to a week. When ready to serve, unwrap the loaf, scrape away the superfine sugar coating then generously sprinkle on all sides with confectioners sugar. For longer term storage place the wrapped loaves in the freezer."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Raisins",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "6",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Candied Orange Peel",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Rum",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "2",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "oz",
+        "notes": "½ cup, scalded then cooled to 110 °F.",
+        "amount": "4",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Yeast",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2¼",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Bread Flour",
+        "unit": "oz",
+        "notes": "2 ½ cups, see note",
+        "amount": "12½",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "2",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "room temperature",
+        "amount": "6",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": "room temperature",
+        "amount": "1",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Almond Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Almond Paste",
+        "unit": "oz",
+        "notes": null,
+        "amount": "6",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "room temperature",
+        "amount": "2",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "melted",
+        "amount": "4",
+        "section": "Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Superfine Sugar (1 Cup (see Note))",
+        "unit": "oz",
+        "notes": null,
+        "amount": "8",
+        "section": "Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Confectioner’s Sugar",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "4",
+        "section": "Topping",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "63d41067a16e2a1867c63c9c81d6ca59c95f4e5c5f55154d3f956f939f28090a",
+    "lineage_hash": "1e373010ad0dced35a3a31333ed3a912626063a6bee0891b66f0e221609ceb29"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2018/11/13/almond-filled-stollen/",
+    "fetchedAt": "2026-08-02T01:21:28.387Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2018/11/13/almond-filled-stollen/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

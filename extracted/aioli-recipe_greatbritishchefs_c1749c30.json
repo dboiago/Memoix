@@ -1,0 +1,77 @@
+{
+  "recipe": {
+    "name": "Aioli",
+    "time": "10 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Soak the bread in water. Zest and juice the lemon",
+      "Squeeze the water from the bread and place into a food processor with the garlic, a pinch of salt and the lemon zest and juice",
+      "Blend while gradually adding the oil. Adjust the seasoning to taste. Set aside the aioli in the fridge before serving"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Stale Bread",
+        "unit": "slices",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6b1f4374924ecfe6ca0157098c6705ec3dc10d94b5782012650344a0d9885786",
+    "lineage_hash": "7b5622dd6358dd78ba78a380ef77ee92234ed22590adfbbab7568d37420e2cc1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/aioli-recipe",
+    "fetchedAt": "2026-08-03T20:35:32.465Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/aioli-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

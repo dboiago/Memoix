@@ -1,0 +1,93 @@
+{
+  "recipe": {
+    "name": "Bacon, Ham and Cheese Chicken Thighs",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the chicken thighs on a cutting board and open them through the cut made to remove the bone. Spread the meat with mustard (1 tablespoon per thigh). Top each with an equal amount of cheese and ham and 2 pickle slices. Close the thighs to envelop the stuffing. Season the chicken with salt and pepper. Wrap each thigh with a strip of bacon, then another strip running perpendicular to the first. Tie the bacon in place with butcher’s string.",
+      "Set up your smoker following the manufacturer’s instructions and preheat to 300°F. (You’ll smoke at a higher than normal temperature to crisp the bacon.) Add the wood as specified by the manufacturer.",
+      "Place the chicken thighs skin side up on the smoker rack. Smoke the chicken thighs until the outsides and bacon are browned, the cheese is melted, and the temperature in the center reaches 165° to 170°F on an instant-read thermometer, 1 to 1 1/2 hours. Snip the string and remove before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Thighs",
+        "unit": "large",
+        "notes": "6 ounces each, boneless; 8 ounces each, bone-in, skin-on, boneless",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gruyère Cheese (preferably Cave-aged)",
+        "unit": "oz",
+        "notes": "coarsely grated or cut into matchstick slivers",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Ham",
+        "unit": "oz",
+        "notes": "sliced, cut into matchstick slivers",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dill Pickle Slices",
+        "unit": null,
+        "notes": null,
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Salt (sea or Kosher) and Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thin-sliced Artisanal Bacon",
+        "unit": "slices",
+        "notes": "1 pound",
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "66c553c61cfd512bb07a54132e7ae43802e46a8f8834a7866e541edc0de0f2ed",
+    "lineage_hash": "b288688e761fda6ee93e18572adc7bcf2b57f061373ef496811bc45fc2ecb7e0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/bacon-ham-and-cheese-chicken-thighs/",
+    "fetchedAt": "2026-08-03T06:13:06.983Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/bacon-ham-and-cheese-chicken-thighs/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

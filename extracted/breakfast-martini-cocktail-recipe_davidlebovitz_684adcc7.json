@@ -1,0 +1,79 @@
+{
+  "recipe": {
+    "name": "Breakfast Martini",
+    "time": null,
+    "course": "brunch",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": "Coupe",
+    "garnish": [
+      "Orange Twist"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Muddle the marmalade with the lemon juice in a cocktail shaker until the orange bits in the marmalade are liquefied.",
+      "Add the gin and Grand Marnier to the shaker. Fill with ice and shake until well chilled.",
+      "Open the shaker and strain the drink through a mesh sieve into a chilled coupe or martini glass. Hold the orange twist over the top of the drink and twist it to release the oil over the surface of the cocktail. Drop the orange twist into the glass, and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Orange Marmalade",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Squeezed Lemon Juice",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "London Dry Gin",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grand Marnier",
+        "unit": "oz",
+        "notes": "alt: Cointreau",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Twist",
+        "unit": null,
+        "notes": "for garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "83a0ce3a5e2a8f8c859433258f8e7a0b34f1d007f0d1d3afd7d0bfb0e45ba417",
+    "lineage_hash": "03e58428aecf76b7f52381e2879f8044ebc1e6c025065f622ca86bd030854ac7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/breakfast-martini-recipe-cocktail/",
+    "fetchedAt": "2026-08-02T20:21:24.839Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/breakfast-martini-recipe-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

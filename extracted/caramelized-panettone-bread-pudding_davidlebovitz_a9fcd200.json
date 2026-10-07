@@ -1,0 +1,104 @@
+{
+  "recipe": {
+    "name": "Caramelized Panettone Bread Pudding",
+    "time": "1 hr 10 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 350ºF (180ºC). Spread the cubed panettone on a baking sheet and toast in the oven until lightly browned, turning them over once or twice during baking, so they toast relatively evenly. They&#39;ll take about 20 minutes or so.",
+      "While the panettone is toasting, warm the butter in a sturdy 9-inch (22cm) square cake pan over low heat on the stovetop with the the brown sugar, stirring until the butter is melted and the sugar is moistened. Use a spatula to coax it so it covers the bottom of the cake pan, with no bare spots. Remove from heat and set aside.",
+      "Arrange the toasted panettone cubes evenly in the cake pan.",
+      "Whisk the eggs together in a medium bowl with the vanilla extract, salt, and granulated sugar. Gradually whisk in the milk until well-combined. Pour the custard over the panettone cubes and press down gently to make sure all the bread cubes are soaking in the custard.",
+      "Put the cake pan in a larger pan, such as a roasting pan, and fill the larger pan with hot water so it reaches halfway up the outsides of the cake pan. Bake the bread pudding until it feels barely set in the center, but don&#39;t overcook it, about 50 minutes. Remove from the oven, and wearing oven mitts, carefully lift the bread pudding out of the water bath and set it on a cooling rack.",
+      "If serving it warm, let the bread pudding cool for at least 30 minutes. Run a knife around the edges to loosen the bread pudding from the pan and set a large serving platter or rimmed baking sheet upside down over the bread pudding. Grasping both the cake pan and serving platter, simultaneously turn both over, being careful to avoid getting any of the warm brown sugar sauce on you. Remove the cake pan, and cut into squares for serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Panettone",
+        "unit": "lb",
+        "notes": "560g, about 9 cups, cubed",
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Packed Light",
+        "unit": "C",
+        "notes": "alt: dark brown sugar, 170g",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "at room temperature",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": "100g, see headnote",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": "alt: half-and-half, 710ml",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": "45g, cubed",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d7dd5f0cd449e44d1af7bcc9371e1430f93ae1fdd4f13847d4401367ba4d744c",
+    "lineage_hash": "d8c6278297217202c3e2f9bff35055e8c71e6d655cd04425c5c0a31e3b3b2201"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/caramelized-panettone-bread-pudding-recipe/",
+    "fetchedAt": "2026-08-03T03:32:18.924Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/caramelized-panettone-bread-pudding-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

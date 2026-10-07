@@ -1,0 +1,190 @@
+{
+  "recipe": {
+    "name": "Chicken Lo Mein",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "361",
+      "carbohydrateContent": "43",
+      "fatContent": "12.6",
+      "proteinContent": "21"
+    },
+    "directions": [
+      "If using dried noodles, boil the noodles according to package instructions minus 1 minute, until al dente. If using fresh lo mein noodles, boil for 1 minute total, until al dente. Rinse with tap water, drain, and set aside.",
+      "Combine the chicken and all the marinade ingredients in a medium-sized bowl. Mix well and let marinate for 10 minutes.",
+      "Whisk all the sauce ingredients together in a medium-sized bowl.",
+      "Heat 1 tablespoon of oil in a large nonstick skillet over medium-high heat until hot. Spread the chicken in the pan. Cook for 30 to 45 seconds without touching, until the bottom turns slightly golden. Flip to cook the other side for 30 to 45 seconds, stirring occasionally, until the chicken is just cooked through. Transfer the chicken to a plate.",
+      "Pour in the remaining 1 tablespoon of oil and the ginger, garlic and green onion white part. Add carrot and napa cabbage. Cook and stir until the veggies just start to turn soft, 1 minute or so. (*Footnote 3)",
+      "Add the noodles and pour in the sauce. Toss a few times to mix everything.",
+      "Add the pepper and green onion green part. Toss to mix everything together well, until the sauce is absorbed, 1 to 2 minutes. Return the cooked chicken to the pan and toss again to mix well. Transfer everything to serving plates and serve hot as a main dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Lo Mein Noodles",
+        "unit": "oz",
+        "notes": "or 6 oz / 170 g dried lo mein noodles, fresh",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Thigh",
+        "unit": "oz",
+        "notes": "or breast, boneless, skinless, cut into 1/4-inch (5-mm) slices",
+        "amount": "8",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Broth",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": "or dry sherry",
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce (or Soy Sauce)",
+        "unit": "tsp",
+        "notes": "*Footnote 1",
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "or vegetable oil",
+        "amount": "2",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "2",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Napa Cabbage",
+        "unit": "C",
+        "notes": "*Footnote 2, chopped",
+        "amount": "4",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": "yield about 1 cup once cut, julienned",
+        "amount": "1",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "cut into 2” (5 cm) long pieces, white and green divided",
+        "amount": "4",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Bell Pepper",
+        "unit": null,
+        "notes": "or sweet pepper, cut to thin strips",
+        "amount": "1",
+        "section": "Stir fry",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "666660cc356f3d0311f9523bfcd2376ecf0c712b057b4f4ac2dde87ef3ed953e",
+    "lineage_hash": "c4898341a07438087aa11de112e0e0c5bf33b46294d9629b76dcacc3ab9b1e43"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/chicken-lo-mein/",
+    "fetchedAt": "2026-08-02T10:20:47.276Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/chicken-lo-mein/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

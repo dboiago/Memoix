@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Call it a Night: A Manhattan Riff",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [
+      "Absinthe"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Stir the first 4 ingredients with ice until chilled. Rinse a chilled coupe with absinthe, discarding the excess, then strain the cocktail into the prepared glass and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "e5dda7c48cb8c3b6f87ad5c3ae1a1511514e9aa18ed27ded1fcf39ca422edd7e",
+    "lineage_hash": "3bae7282fbbb27732b221b32d3550f850e3123c199d225c78e8bc1088580bb4c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/call-it-a-night-manhattan-riff/",
+    "fetchedAt": "2026-08-03T19:42:00.517Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/call-it-a-night-manhattan-riff/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

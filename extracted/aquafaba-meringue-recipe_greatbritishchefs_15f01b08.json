@@ -1,0 +1,65 @@
+{
+  "recipe": {
+    "name": "Aquafaba Meringue",
+    "time": "2 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 130°C/gas mark 1/2. Line 2 large baking sheets with silicone mats or baking parchment",
+      "Whisk the aquafaba in a stand mixer fitted with the whisk attachment at high speed for at least 15–20 minutes until stiff\r\nwhite peaks have formed",
+      "Mix the vanilla seeds into the sugar. With the mixer running, add the sugar a few tablespoons at a time, whisking well after\r\neach addition until the sugar granules have dissolved before adding the next batch",
+      "When all the sugar is incorporated and the meringue mixture is thick and glossy, it’s ready",
+      "Spoon full, but not heaped, large serving spoons of the meringue mixture onto the lined baking sheets, spaced apart. Alternatively, spoon the mixture into a large meringue piping bag fitted with a large piping nozzle and pipe the meringues for a neater finish",
+      "Bake for 1¾–2 hours until the meringues are fairly firm on top and on the base, but check by removing one from the oven and leaving to cool for a few minutes",
+      "When ready, remove from the oven and leave to cool completely on the mats or paper. If you don’t have anything else to put in the oven, you can leave them in the switched-off oven to cool"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Tin of Chickpeas",
+        "unit": "g",
+        "notes": "should yield 100ml aquafaba",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Seeds",
+        "unit": "pinch",
+        "notes": "scraped from a pod",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "110",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7b5c54bfdb0b85badf28ffcca0172fe285affd2ac00c9802057b859f870bc88d",
+    "lineage_hash": "ab284e09fcc8be4cd6102a8520a82edc65a1ae0b78983231e0f9766da79a9340"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/aquafaba-meringues-recipe",
+    "fetchedAt": "2026-08-03T10:10:27.845Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/aquafaba-meringues-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

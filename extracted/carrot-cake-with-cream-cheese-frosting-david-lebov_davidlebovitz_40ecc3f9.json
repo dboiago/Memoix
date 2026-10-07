@@ -1,0 +1,175 @@
+{
+  "recipe": {
+    "name": "Carrot Cake with Cream Cheese Frosting",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 350°F (180°C). Butter and flour two 8- or 9-inch (20-23cm) cake pans and line the bottoms with parchment paper.",
+      "To make the cake, sift together the flour, sugar, spices, baking soda, and salt in a medium bowl. Set aside. With a handheld mixer or a stand mixer fitted with the paddle, beat the eggs on high speed until they are pale and frothy, about 3 minutes. (They will not increase dramatically in volume.) With the mixer on medium-high speed, drizzle in the oil and melted butter, then the vanilla. (If you don&#39;t have an electric mixer, you can beat the eggs with a whisk vigorously in a large bowl, and do the same when you add the browned butter and oil.)",
+      "With the mixer on low speed, gradually mix in the dry ingredients until just combined, but don&#39;t overmix. The paddle will accomplish this easily but if you are using a handheld mixer (or a bowl and a spatula) I prefer to do it by hand with a spatula.",
+      "Fold in the carrots and raisins, then divide the batter between the two pans and smooth the tops. Bake until the tops are golden brown and the surface springs back when gently touched, 30-35 minutes. Cool the cakes completely.",
+      "To make the frosting, beat the cream cheese and butter at high speed together until completely smooth and lump free. Reduce the speed of the mixer, then gradually add the powdered sugar and increase the speed to medium, or medium-high, and mix until light and silky. Add the vanilla and lemon zest. Use the frosting to ice the cake, spreading 1 1/4 cups (220g) on top of one layer, and using the rest to frost the outside and top of the cake."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "at room temperature",
+        "amount": "4",
+        "section": "cake layers",
+        "isOptional": false
+      },
+      {
+        "name": "Neutral-tasting Vegetable Oil",
+        "unit": "C",
+        "notes": "60ml",
+        "amount": "¼",
+        "section": "cake layers",
+        "isOptional": false
+      },
+      {
+        "name": "Liquid",
+        "unit": "C",
+        "notes": "180ml, brown butter, or 3/4 cup additional vegetable oil",
+        "amount": "¾",
+        "section": "cake layers",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "cake layers",
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": "280g",
+        "amount": "2",
+        "section": "cake layers",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": "400g",
+        "amount": "2",
+        "section": "cake layers",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "cake layers",
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "cake layers",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Nutmeg and Cloves",
+        "unit": "tsp",
+        "notes": "each",
+        "amount": "¼",
+        "section": "cake layers",
+        "isOptional": false
+      },
+      {
+        "name": "Kosher",
+        "unit": "tsp",
+        "notes": "alt: sea salt",
+        "amount": "1",
+        "section": "cake layers",
+        "isOptional": false
+      },
+      {
+        "name": "Loosely Packed Grated Carrots",
+        "unit": "C",
+        "notes": "1-pound, 450g",
+        "amount": "4",
+        "section": "cake layers",
+        "isOptional": false
+      },
+      {
+        "name": "Raisins",
+        "unit": "C",
+        "notes": "60g",
+        "amount": "½",
+        "section": "cake layers",
+        "isOptional": false
+      },
+      {
+        "name": "Cream Cheese",
+        "unit": "lb",
+        "notes": "450g, at room temperature",
+        "amount": "1",
+        "section": "frosting",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "115g, at room temperature",
+        "amount": "4",
+        "section": "frosting",
+        "isOptional": false
+      },
+      {
+        "name": "Powdered Sugar",
+        "unit": "C",
+        "notes": "240g, sifted",
+        "amount": "2",
+        "section": "frosting",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "frosting",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Zest",
+        "unit": "tsp",
+        "notes": "finely, grated",
+        "amount": "1",
+        "section": "frosting",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6faffee865ca7ced69d73884fa76fbd556a37e3aaba1091c5bde669b1c956085",
+    "lineage_hash": "0089d14a92510e0a9ef8638e1ca82212eaf73651a8b6cdd6065d792a72e1f902"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/carrot-cake-recipe-cream-cheese-frosting/",
+    "fetchedAt": "2026-08-02T21:59:10.139Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/carrot-cake-recipe-cream-cheese-frosting/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

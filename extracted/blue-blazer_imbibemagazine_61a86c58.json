@@ -1,0 +1,37 @@
+{
+  "recipe": {
+    "name": "Blue Blazer",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Toddies",
+    "garnish": [
+      "Lemon Twist"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat 2 glass toddy mugs, or other nonceramic heatproof mugs, with boiling water, then discard before proceeding. Add the whisky, sugar, and 3 oz. boiling water to one of the mugs, then carefully light the liquid within. Pass the flaming liquid between the mugs at least four or five times. Divide the liquid evenly between the mugs and, if necessary, extinguish the liquid using the bottom of the opposite mug. Garnish each with a lemon twist.",
+      "NOTEIt is important to clear the prep area of anything flammable before proceeding, and, as an added precaution, have a damp towel and perhaps a fire extinguisher at hand. Use flameproof mugs with ample handles."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "01fb51c850d5d069e530cdffd566c72e035b6511f419cd7af5fcd751f99d7f38",
+    "lineage_hash": "1df2ed5589cff9a18a4fe4418a3ccde9f7ab8705fba43c526cdea9908a5c65c9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/blue-blazer/",
+    "fetchedAt": "2026-08-04T01:27:15.748Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/blue-blazer/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

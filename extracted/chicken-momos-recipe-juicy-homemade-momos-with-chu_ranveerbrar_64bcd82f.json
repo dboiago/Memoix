@@ -1,0 +1,294 @@
+{
+  "recipe": {
+    "name": "Chicken Momos",
+    "time": "25-35 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl, add warm water, semolina and give it a good mix.",
+      "Add salt to taste, start continuously mixing to form a semisoft dough.",
+      "Add oil, knead well and keep it aside for a while.",
+      "In a pan, add oil, once it’s hot, add tomatoes and cook until tomatoes get charred texture.",
+      "Transfer it into the bowl and keep it aside.",
+      "In the same pan, add oil, once it’s hot, add garlic, green chillies and cook for 2-3 minutes on high flames until garlic turns golden brown in colour.",
+      "Add roasted peanuts, tender coriander stems, salt to taste and toss it for a minute.",
+      "Transfer it into the same bowl and give it a good mix.",
+      "Transfer the mixture into a mixer grinder jar and grind it into the smooth fine paste.",
+      "Pour it into the bowl and add salt to the taste, sugar and give it a good mix.",
+      "Transfer it into the serving bowl and garnish it with coriander sprig.",
+      "In a pan, add green chillies, ginger, tender coriander stems, white sesame seeds and cook for 2-3 minutes.",
+      "Transfer it into the bowl, add chicken mince, salt to taste and give it a good mix",
+      "In a bowl, add green chillies, dark soy sauce, vinegar, salt to taste, oil, chilli oil and give it a good mix.",
+      "Keep it aside for further use.",
+      "Take prepared dough, divided into small lemon size balls, flatten with the rolling pin and add a spoonful of prepared stuffing.",
+      "Close the edges, shape them by making pleats on one side and sticking on the other side. Make it a crescent or any desired shape.",
+      "Place the momos into the greased steaming plate, place the plate into the steamer, cover it with the lid and let it cook for 12-15 minutes or until it’s cooked.",
+      "Once it’s cooked properly then transfer it into the serving platter or dish.",
+      "Serve hot with prepared chilli dip and roasted tomato chutney."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Warm Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150-175",
+        "section": "For Semolina Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Gms Semolina",
+        "unit": null,
+        "notes": null,
+        "amount": "500",
+        "section": "For Semolina Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Semolina Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Semolina Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Roasted Tomato Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "large",
+        "notes": "cut into halves",
+        "amount": "5",
+        "section": "For Roasted Tomato Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Roasted Tomato Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "No. Garlic Cloves",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "5-6",
+        "section": "For Roasted Tomato Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chillies",
+        "unit": null,
+        "notes": "slit",
+        "amount": "3-4",
+        "section": "For Roasted Tomato Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Peanuts",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Roasted Tomato Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Tender Coriander Stems",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Roasted Tomato Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Roasted Tomato Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Roasted Tomato Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Roasted Tomato Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chillies",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "3-4",
+        "section": "For Chicken Stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled & finely chopped",
+        "amount": "1",
+        "section": "For Chicken Stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Tender Coriander Stems",
+        "unit": "tsp",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": "For Chicken Stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "White Sesame Seeds",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "½",
+        "section": "For Chicken Stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Gms Chicken Mince",
+        "unit": null,
+        "notes": null,
+        "amount": "200",
+        "section": "For Chicken Stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Chicken Stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chillies",
+        "unit": null,
+        "notes": "less spicy & finely chopped",
+        "amount": "1-2",
+        "section": "For Chilli Dip",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chilli Dip",
+        "isOptional": false
+      },
+      {
+        "name": "Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chilli Dip",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Chilli Dip",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chilli Dip",
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Chilli Dip",
+        "isOptional": false
+      },
+      {
+        "name": "Refined Flour",
+        "unit": "Tbsp",
+        "notes": "for rolling momo sheets",
+        "amount": "2-3",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": "for greasing",
+        "amount": "1-2",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "61a635dc46121eca960d718710fb3f6f9406d63ae19d2328e7cbafa2b6ba0ae1",
+    "lineage_hash": "20f26b0e3f85f0b97e8f055cb2aacec2b76d531f73ddb3e867715b6413055b96"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/high-protein-momos-%e0%a4%ac%e0%a4%bf%e0%a4%a8%e0%a4%be-%e0%a4%ae%e0%a5%88%e0%a4%a6%e0%a4%be-%e0%a4%95%e0%a5%87-healthy-chicken-momos-easy-momo-recipe-chef-ranveer-brar/",
+    "fetchedAt": "2026-08-02T21:14:38.913Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/high-protein-momos-%e0%a4%ac%e0%a4%bf%e0%a4%a8%e0%a4%be-%e0%a4%ae%e0%a5%88%e0%a4%a6%e0%a4%be-%e0%a4%95%e0%a5%87-healthy-chicken-momos-easy-momo-recipe-chef-ranveer-brar/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

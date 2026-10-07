@@ -1,0 +1,54 @@
+{
+  "recipe": {
+    "name": "Boston Butts",
+    "time": "12 hours",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Inject each butt with a cup of secret marinade, massage it in, and allow to rest in a cooler for at least one hour.",
+      "Take the butts out of the chill chest, strip off their cryovac bags, and trim off excess fat.",
+      "Butterfly the hunk of pig in an unusual fashion that leaves one muscle, the 'money muscle', standing upright.",
+      "Add the rub, a variety of spices traditional to Southern barbecue."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butts Pork Butt",
+        "unit": null,
+        "notes": "about eight pounds each",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Secret Marinade",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "042ed8fedf103a4dc0640db73d330acf9bd780be549de5784d785eeb22b045bc",
+    "lineage_hash": "1a68650561047c5db24f120bf42fa8e50a22b2f49c851f1828a13a98d9ef315a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://amazingribs.com/bbq-and-grilling-competitions/behind-scenes-real-iron-chef-part-1/",
+    "fetchedAt": "2026-08-02T10:09:32.357Z"
+  },
+  "rawSource": "https://amazingribs.com/bbq-and-grilling-competitions/behind-scenes-real-iron-chef-part-1/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

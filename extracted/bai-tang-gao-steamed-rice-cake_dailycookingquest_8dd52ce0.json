@@ -1,0 +1,83 @@
+{
+  "recipe": {
+    "name": "Bai Tang Gao (Steamed Rice Cake)",
+    "time": "30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a large mixing bowl, mix 250 gram rice flour with 150 ml water. It won't be smooth at this point, so don't worry.",
+      "In a small saucepot, boil together 150 gram sugar with 370 ml water. Once all the sugar has dissolved and the water is boiling, pour this into the mixing bowl. Whisk until the rice flour mixture is smooth. Set aside to cool.",
+      "Meanwhile, preheat your oven to 75 Celsius (170 Fahrenheit).",
+      "Once the rice flour mixture reaches 38 Celsius (100 Fahrenheit), add the instant yeast, and whisk well to combine. Cover the mixing bowl with saran wrap.",
+      "Hopefully, your oven has reached 75 Celsius (170 Fahrenheit) at this time. Turn off the oven, and place the covered mixing bowl in the warm oven and let the batter proof until the volume is roughly doubled, and you notice many small bubbles on the batter surface. This should take about 40 minutes.",
+      "Prepare a steamer with about 1 inch of boiling water over medium-high heat. Heat an 8\"x2\" round cake pan until hot to touch. Brush the heated pan with oil, give the rice flour batter a final stir, then pour the batter into the pan.",
+      "Steam for 15 minutes. Turn off heat, and let the cake sit in the hot steamer for another 10 minutes.",
+      "Remove the cake from the steamer, and let it cool slightly in the pan over a wire rack for about 15 minutes.",
+      "Once it is cool enough to handle, gently run a knife along the edges to loosen the cake from pan. Cover the pan with a plate, and flip the cake on to the plate. Then, flip again onto a wire rack to cool completely. Cut into 8 wedges, and serve at room temperature with some hot tea."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gram (8.8 Oz) Rice Flour",
+        "unit": null,
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": "10 tablespoon",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram (3/4 Cup) Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": "1.5 cup + 1 tablespoon",
+        "amount": "370",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram (~ 1 Teaspoon) Instant Yeast",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2cee6c1cfda5fd17f2d493342b6e0f80faa7b9f65efdca5544653a06da52b211",
+    "lineage_hash": "6b22e93968288308546d04fc2f1705622f1b597f3b028816ccc07e6182b40956"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/bai-tang-gao-steamed-rice-cake.html",
+    "fetchedAt": "2026-08-01T23:34:39.264Z"
+  },
+  "rawSource": "https://dailycookingquest.com/bai-tang-gao-steamed-rice-cake.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

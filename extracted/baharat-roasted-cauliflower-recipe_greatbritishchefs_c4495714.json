@@ -1,0 +1,195 @@
+{
+  "recipe": {
+    "name": "Baharat-Roasted Cauliflower",
+    "time": "1 hr 30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Bring a large pan of salted water to the boil, and add the baby cauliflower. Boil for 2 minutes before draining",
+      "Place the cauliflower in a small roasting tin, dry them off with a bit of kitchen roll, then dust each one generously with the baharat and sea salt. Dot with the butter and place in the oven to roast for 35 minutes",
+      "For the smoked cauliflower, take 2 sheets of foil and place the wood chips in the middle. Fold up into a flat parcel, then slash a few holes in the top of the foil. Place into a wok or saucepan with a tight-fitting lid. Rub the cauliflower with the olive oil and sea salt, and place in a steamer basket over the foil packet",
+      "Place a layer of foil over the pan, followed by the lid, then place the pan on the heat (in a well-ventilated kitchen, or ideally outside). Heat until the foil becomes taut with the volume of smoke underneath (this will take about 10 minutes) then lower the heat and cook for a further 10 minutes",
+      "Turn off the heat and leave for 10 minutes before taking the pan outside to remove the lid, or you’ll fill your kitchen with smoke",
+      "For the cauliflower couscous, place the cauliflower and coriander in a food processor and pulse on 2 second bursts for 15-20 seconds, until blitzed to rubble. Tip into a small bowl then stir through the pomegranate seeds and olive oil, adjusting the sea salt, freshly ground black pepper and lemon juice to taste",
+      "For the tahini dressing, mix all of the ingredients in a bowl and season to taste with sea salt",
+      "To finish the smoked cauliflower, heat a griddle pan until smoking, then briefly char the smoked cauliflower slices for a minute on each side until you have nice char marks",
+      "Divide the roast cauliflower, smoked cauliflower and cauliflower couscous between four plates, along with the tahini dressing, and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Baby Cauliflower",
+        "unit": null,
+        "notes": "approx. 60g per floret, or 4 large cauliflower florets",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baharat Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cauliflower Florets",
+        "unit": "g",
+        "notes": "cut into 1/2cm slices",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wood Chips",
+        "unit": null,
+        "notes": "2 small handfuls",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cauliflower Florets",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pomegranate",
+        "unit": null,
+        "notes": "seeds only",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juice only",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tahini",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yoghurt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juice only",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "695f270af3233ca5d09972af46e45eb2da3c18777b5dc0d2986a85e9b326a102",
+    "lineage_hash": "0deca60a82860b5d6a652dbad5e52910e7498e0008c7707d421fb379a9b50516"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/baharat-roasted-cauliflower-recipe",
+    "fetchedAt": "2026-08-03T14:44:55.484Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/baharat-roasted-cauliflower-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

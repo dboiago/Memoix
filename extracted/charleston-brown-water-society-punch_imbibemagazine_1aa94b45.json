@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Charleston Brown Water Society Punch",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [
+      "Orange Slices"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all the ingredients except the soda water. Chill. Pour into a punch bowl with a large block of ice, and add soda water just before serving, with orange slices for garnish. Each serving is 4 oz."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "acad7f99112236e223099ad8669830ea1c5ac94b38fb436b69801c07eb1d4897",
+    "lineage_hash": "d9625eb98dffae8c2ae36885034d8051d9d9c9790d6ff4b16b21b42153d5b473"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/charleston-brown-water-society-punch/",
+    "fetchedAt": "2026-08-03T21:42:24.946Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/charleston-brown-water-society-punch/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

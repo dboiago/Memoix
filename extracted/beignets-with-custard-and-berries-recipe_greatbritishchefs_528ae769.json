@@ -1,0 +1,196 @@
+{
+  "recipe": {
+    "name": "Beignets with Custard and Berries",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the beignet ingredients (excluding the icing sugar and vegetable oil) in a food processor and blend together into a smooth batter. Pour out into a bowl, cover and place in the fridge for 1 hour",
+      "Meanwhile, make the custard. Bring the milk and cream gently to the boil in a saucepan",
+      "In a separate bowl, whisk the egg yolks, sugar, flour and cornflour together until combined",
+      "Slowly pour a little bit of the milk and cream into the yolks and whisk to combine. Gradually add the rest of the milk to the bowl, whisking constantly, then pour the whole mixture back into the pan. Place over a low heat and slowly cook for 10–15 minutes whilst constantly stirring, until you have a smooth, thick custard",
+      "Pour the custard into a bowl and place a layer of cling film or parchment paper directly on top to prevent a skin from forming. Leave to cool",
+      "To prepare the berries, place them in a pan with the sugar and place over a low heat. Cook until the berries are just starting to break down and you are left with a chunky compote",
+      "Once the beignet batter has rested, heat a deep pan or deep-fat fryer filled with vegetable oil to 160ºC",
+      "Dip a dessert spoon into the oil to get it hot. Use this spoon to take a spoonful of the beignet batter and carefully place into the hot oil. The hot spoon helps the mixture fall off the spoon easier. The size of the beignets is not too important but remember they will double in size – if they are too big there is a danger of them not being cooked through. Work in batches but don’t overcrowd the pan",
+      "Once the beignets are golden brown, remove from the fryer with a slotted spoon and drain on some kitchen paper. Transfer them to your serving plate and dust with plenty of icing sugar",
+      "Served the custard in a bowl on the side and spoon the berries all over the top of the custard"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "540",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bicarbonate of Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": null,
+        "notes": "for dusting",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "enough for deep-frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "280",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "280",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raspberries",
+        "unit": "g",
+        "notes": "frozen or fresh",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strawberries",
+        "unit": "g",
+        "notes": "frozen or fresh",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "59aeac99926f53a9fb7529602ee4a0abc2ac085287e7490796d8c981bbf4c4ea",
+    "lineage_hash": "6002ee20311eae19c267ec53c6538b63e348497ea0cd34a9e0ba0f261d786785"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beignets-with-custard-recipe",
+    "fetchedAt": "2026-08-02T21:11:46.357Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beignets-with-custard-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

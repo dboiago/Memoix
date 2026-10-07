@@ -1,0 +1,119 @@
+{
+  "recipe": {
+    "name": "Bakwan Jagung Panggang (Baked Corn Fritters)",
+    "time": "40 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "ID",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat oven to 365 Fahrenheit (185 Celsius). Lightly grease and flour a standard 12 cup muffin pan.",
+      "Puree 1/2 cup of fresh corn kernels, shallot, garlic, and kaffir lime leaves in a food processor.",
+      "In a mixing bowl, mix together pureed corn, remaining fresh corn kernels, coconut milk, egg, all-purpose flour, coriander powder, turmeric powder, and salt.",
+      "Divide corn mixture equally into muffin pan. Bake in the preheated oven for 20-25 minutes, or until firm and fully cooked.",
+      "Remove the pan from oven, and place on a wire rack. After 15 minutes, gently remove the muffin from pan. Serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ears Fresh Corn",
+        "unit": null,
+        "notes": "kernels only",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Shallot",
+        "unit": null,
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kaffir Lime Leaves",
+        "unit": null,
+        "notes": "cut away the ribs",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "96f025dd6119c2565ddcdb0f180836926779f8eefbeff9d85931f9a33206e6f3",
+    "lineage_hash": "14734525967657347e59f1fbeecd77b2155202a65db0d08cc2bb0f992f902531"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/bakwan-jagung-panggang.html",
+    "fetchedAt": "2026-08-02T01:38:46.163Z"
+  },
+  "rawSource": "https://dailycookingquest.com/bakwan-jagung-panggang.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,62 @@
+{
+  "recipe": {
+    "name": "Cedar Planked Bluefish",
+    "time": "25 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Run your fingers over the bluefish fillets, feeling for bones. Pull out any you find with a needlenose pliers or tweezers. Generously brush the skin side of the fish with olive oil. Generously season both sides with salt and pepper. Place the bluefish, skin side down, on the plank.",
+      "Prepare the glaze. Place the mayonnaise, mustard, dill, and lemon zest in a mixing bowl and whisk to mix.",
+      "Set up your grill for indirect grilling and preheat to medium-high (400 degrees F).",
+      "Spread the glaze mixture evenly over the top and sides of the fish. Place the plank on the grill away from the heat. Cover the grill and indirect grill the fish until cooked, 15 to 20 minutes. To test for doneness, use an instant read meat thermometer inserted through the side: the temperature should be about 135 degrees. Or insert a metal skewer in the side of the fish–it should come out piping hot to the touch. And the glaze will turn a deep golden brown. Transfer the plank and fish to a platter and serve it right off the plank."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bluefish Fillets",
+        "unit": "lb",
+        "notes": "fresh",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d59b89a39555cf0ce72194099a31ff00ec274189329fbd34619ce3988a87aa22",
+    "lineage_hash": "cfa55492341fe3c5b8c86e709b83566dea0c0825818468bce52b28ebee849358"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/cedar-planked-bluefish/",
+    "fetchedAt": "2026-08-03T02:38:52.731Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/cedar-planked-bluefish/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

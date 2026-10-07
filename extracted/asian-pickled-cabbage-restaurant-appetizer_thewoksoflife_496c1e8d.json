@@ -1,0 +1,107 @@
+{
+  "recipe": {
+    "name": "Asian Pickled Cabbage",
+    "time": "1 day 2 hr 10 min",
+    "course": "pickles",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "98",
+      "carbohydrateContent": "24",
+      "fatContent": "1",
+      "proteinContent": "2"
+    },
+    "directions": [
+      "In a large mixing bowl, hand-rip the cabbage into large pieces (about 3” x 3” pieces)––they will shrink after pickling. Add in the cut carrots and ¼ cup salt. Use your hands to thoroughly and evenly distribute the salt with the vegetables. Top the vegetables with a heavy object (I used a baking dish with a large, heavy mortar and pestle on top, but you could use foil-wrapped bricks or any other heavy objects), and marinate for an hour in the refrigerator. This process removes excess liquid and makes the vegetables crunchy, but don’t marinate for too long or the cabbage will be too salty.",
+      "Next, add the water and sugar (here is where you would add the optional bay leaves and Sichuan peppercorns I mentioned) in a small pot. Bring to boil, and turn off the heat. Stir in the vinegar and ½ teaspoon salt. Let the liquid cool completely. It’s a good time to taste the liquid with a clean spoon to make sure you like the levels of sweet and sour, and adjust accordingly. Please use a clean spoon every time you dip into the brine.",
+      "Once the cabbage and carrots are marinated, wash them 2 to 3 times to get rid of the salt. Drain and squeeze out any extra liquid by hand or with a clean dish towel before putting the cabbage and carrots in a clean glass or ceramic container.",
+      "Mix in the smashed (or chopped) garlic and whole (or chopped) fresh chili peppers. Pour the cooled vinegar/sugar brine over the vegetables and ensure the vegetables are completely submerged. Cover and store in the refrigerator for 24 hours before serving chilled or at room temperature. If you have any leftovers, leave them stored in the pickling liquid and use clean utensil each time."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cabbage",
+        "unit": "lb",
+        "notes": "900g, hand-pulled into large pieces",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": null,
+        "notes": "about 6 ounces/170g, cut into bite-sized pieces",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "C",
+        "notes": "plus ½ teaspoon, divided",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Vinegar",
+        "unit": "C",
+        "notes": "5% acidity",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "smashed",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili Peppers",
+        "unit": null,
+        "notes": "optional, fresh",
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "325edbf3395bfb4de0e704a75b48e2d74d3f530d1891f84ba90077920e261c3c",
+    "lineage_hash": "49e9706ad5223809d7be552b0f1030202880f53a3253e7a475702912bd7780bb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/asian-pickled-cabbage/",
+    "fetchedAt": "2026-08-02T13:46:24.983Z"
+  },
+  "rawSource": "https://thewoksoflife.com/asian-pickled-cabbage/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

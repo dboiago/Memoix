@@ -1,0 +1,196 @@
+{
+  "recipe": {
+    "name": "Almond Frangipane Tart with Caramelised Apples",
+    "time": "1 hr 45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "The night before serving, prepare the pastry and jam. Place the butter, flour, sugar and salt in a food processor and blitz to form a fine crumb. Add the water and egg yolks and blitz again to bring the mixture together into a ball",
+      "Tip the pastry out onto a board or clean, floured surface and knead lightly. Bring the pastry together into a ball and wrap in clingfilm, placing in the fridge to rest overnight",
+      "For the jam, pound the medlars through a conical sieve into a large bowl and add the chopped prunes. Stir through the Armagnac and mix until well combined, then pour the jam into a large sterilised jar. Seal and set aside until required",
+      "The next day, prepare the frangipane filling. Using a food processor or grinder, grind the almonds to a coarse crumb. In a separate bowl, cream together the butter and sugar and add the eggs one at a time. Beat in the almonds, stir well to combine and set aside in the fridge to rest",
+      "Remove the pastry from the fridge and roll out into a large, even layer. Carefully line the tart case with the pastry, leaving a little overlap around the edges",
+      "Spread a generous layer of jam across the pastry and pour over the frangipane until 4/5ths full. Place in the oven and bake for 1 hour",
+      "Meanwhile, prepare the caramelised apples. Peel and slice each apple into 6 even pieces and set aside.",
+      "Place a medium pan over a moderate heat and add the sugar. Heat to form a caramel, carefully adding the lemon juice and apples to the pan. Cook until the apples are soft and golden, and the caramel is thick and glossy. Set aside and leave to cool until ready to serve",
+      "After 1 hour, reduce the heat of the oven to 130°C/gas mark 1 and continue to cook the tart for a further 15 minutes. Once cooked through, remove from the oven and leave to cool a little, trimming any excess pastry from the edges",
+      "Once cool, scatter flaked almonds across the tart. Using a sharp knife, slice the tart into even pieces and divide between plates. Top with a generous spoonful of Jersey cream and arrange pieces of apple to one side. Drizzle over any remaining caramel, dust lightly with icing sugar and serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": "plus extra for dusting",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "cold",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Medlars",
+        "unit": null,
+        "notes": null,
+        "amount": "36",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Agen Prunes",
+        "unit": null,
+        "notes": "stones removed and coarsely chopped",
+        "amount": "18",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Armagnac",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Marcona Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apples",
+        "unit": null,
+        "notes": "Jonagold, Discovery or Cox's apples",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemons",
+        "unit": null,
+        "notes": "juice only",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jersey Cream",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": null,
+        "notes": "for dusting",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaked Almonds",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "10f1a342521bbbd4fce2b5d57b9cf79bb726bd841dba769887aff1502ef163f5",
+    "lineage_hash": "cd5a60d1fab2c065f97637e9abecd757b80c86830d99f728298b6ec9ab35c5e9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/almond-frangipane-tart-recipe",
+    "fetchedAt": "2026-08-03T12:47:37.904Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/almond-frangipane-tart-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

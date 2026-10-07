@@ -1,0 +1,117 @@
+{
+  "recipe": {
+    "name": "Boiling Crab Copycat Shrimp Boil",
+    "time": "10 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "VN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Bring a medium pot of water to a boil over high heat. Add the shrimp (2 lbs, head-on, shell-on) and cook for 3–4 minutes, or until the shells turn bright orange and the shrimp are pink and opaque. If using smaller shrimp, reduce cooking time to 2-3 minutes instead. Drain well and transfer to a large mixing bowl.",
+      "In a small saucepan, add butter (1 stick / 8 tablespoons), freshly minced garlic (3 tablespoons), red curry paste (2 tablespoons), lemon pepper (2 teaspoons), paprika or cayenne (1 teaspoon), Cajun seasoning (1 teaspoon), Old Bay seasoning (1 teaspoon), granulated sugar (1 tablespoon), and water (1/2 cup). Mix well and bring the mixture to a boil (this takes about 5 minutes) then lower heat to a low simmer for 2 minutes to meld the flavors.",
+      "Add the sauce to the cooked shrimp in the mixing bowl and toss to coat. Transfer to a serving dish, pouring all the sauce over the top and enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Large Shrimp with Head",
+        "unit": "lb",
+        "notes": "size 21/25, tail and unpeeled",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Minced Garlic",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stick Unsalted Butter",
+        "unit": null,
+        "notes": "8 tablespoons",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Curry Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Pepper Seasoning",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Paprika (non Spicy)",
+        "unit": "tsp",
+        "notes": "alt: cayenne, spicy",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cajun Seasoning",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Old Bay Seasoning",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7aa61f6fe6a631adce819a7d64ef1330add395cfe1230b0ce5ea9ede6fc7ee6d",
+    "lineage_hash": "dd1c584617d3a9e1438e6bbd65cca06ab14ad37882aa851e189c2d93ed556b92"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://vickypham.com/blog/copycat-recipe-boiling-crab-shrimp/",
+    "fetchedAt": "2026-08-02T01:51:16.265Z"
+  },
+  "rawSource": "https://vickypham.com/blog/copycat-recipe-boiling-crab-shrimp/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

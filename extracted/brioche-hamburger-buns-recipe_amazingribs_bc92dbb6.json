@@ -1,0 +1,127 @@
+{
+  "recipe": {
+    "name": "Brioche Hamburger Buns",
+    "time": "1 hr 30 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Prep. Take the cold butter and cut it into slices about tablespoon each and let them warm to room temperature. Crack 2 of the 3 eggs and put them in the bowl of the mixer. Add the milk and mix them together on low speed with the whisk attachment. Then switch to the dough hook and add the flour one heaping tablespoon at a time. This will take about 4 to 5 minutes.",
+      "Once all the liquids are absorbed by the flour turn the mixer up to speed 4 (medium) and let it mix the dough for 3 or 4 minutes. Turn the mixer off and take a break. Let the dough rest for 30 minutes. Bakers call this step the autolyse step, and it is crucial for hydration of the flour and formation of gluten which is an elastic protein.",
+      "While the dough is resting, put the yeast into a cup and add about 1 ounce of room temperature water. This lets the yeast activate, called blooming.",
+      "Add the sugar, salt, and yeast to the mixer and mix for 1 minute on low. Now add the butter one pat at a time. Mix on slow speeds until the butter gets absorbed into the dough. This will take about 3 to 5 minutes.",
+      "Once your butter is absorbed into the dough turn the mixer up to speed 4 (medium) and let it knead your dough for 15 minutes. Your dough will look more like a thick batter than a bulky bread dough when you are done mixing.",
+      "Proof. Spray a light coat of oil on your work surface, pull the stretchy and sticky dough out of the bowl with a dough scraper, fold it in half, stretch, fold it in half again, and one more time. If it sticks to the surface, use your scraper to get it off. Put it in a large bowl for fermenting (called proofing), and cover with plastic wrap. Proof the dough at room temperature for 1 hour. Then put the bowl in the refrigerator overnight or for about 12 hours. The extended fermentation in the refrigerator makes a huge difference in flavor. A really great hamburger bun takes the same amount of time as a great pork butt or brisket, mostly waiting.",
+      "Prep the ring molds. When you are ready to bake, prepare a sheet pan by lining it with parchment paper or a silpat. This material is non-stick. Put 4 1/2&quot; (11.4 cm) tart rings on the sheet pan and spray the inside of them with spray oil. If you don&#39;t have tart rings, you can make ring molds with aluminum foil. You&#39;ll need extra wide foil, 18&quot; (45.7 cm) wide. Just tear off 6 sheets about 1&#39; (30.4 cm) long. Turn it so the 18&quot; (45.7 cm) edge is facing you and fold it into a strip about 1&quot; (2.5 cm) high. Now bend it into a ring that is 4.5&quot; (11.4 cm) in diameter and staple it.",
+      "Shape the dough. Take the dough out of the refrigerator. It will be cold and firm. Spray your work surface with oil. Weigh it and cut it into 6 equal portions. With the palm of your hand, press each portion of dough into a small square. Fold each corner into the center of the square. Pinch the seams together and you will have a sort of ball. Place each ball on your work surface seam side down. Roll it around with your open hand to make a nice ball, smooth and taught on all sides.",
+      "Place each ball into a ring mold and spray with oil so it doesn't stick to your hands. Press the dough balls down to make them fill the ring. If your dough won't stretch that far, cover your sheet pan with plastic wrap and let the dough relax for 12 minutes. Remove the plastic wrap and press down on the dough again. It will fill the tart ring. Let your dough proof again for about an hour.",
+      "Fire up. This is a good time to pre-heat your cooker to 400°F (204.4°C) or 375°F (190.6°C) for an indoor convection oven. If you are cooking it outdoors you must bake in the indirect zone.",
+      "Just before it&#039;s time to put the dough into the oven crack the extra egg, separate the yolk, add 1 teaspoon of water to the yolk, and stir it with a fork. Paint the tops with the egg yolk and if you wish top it with sesame seeds, poppy seeds, dried onion flakes, coarse salt, or fresh herbs.",
+      "Bake. Place the sheet pan in the oven and let it bake. In an indoor oven or a kamado it will take 22 to 25 minutes, 18 minutes in a convection oven. Halfway through, rotate the sheet pan 180 degrees to make sure they all cook and brown evenly. Pull the buns when the internal temperature is 195 to 200°F (90.6 to 93.3°C). In the picture here we baked them on a Weber Kettle with a Slow &#39;N Sear insert to help corral the coals and add moisture to the atmosphere.",
+      "Serve. Remove them from the sheet pan and place them on a cooling rack until they come to room temperature before slicing and serving as part of your favorite burger recipe."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bread Flour",
+        "unit": "C",
+        "notes": "sifted = 100%",
+        "amount": "3⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk = 60%",
+        "unit": "C",
+        "notes": null,
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs = 20%",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter = 30%",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "11",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": "heaping = 3%",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Morton Coarse Kosher Salt = 1.6%",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Packet Instant Dry Yeast = 1.4%",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spray Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg for a Glaze on Top",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": null,
+        "notes": "poppy seeds, dried onion flakes, coarse salt, or fresh herbs for a topping",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6c74a91206757b455c37da6215a20f93d1b7016b342fe8049613140fee5062a5",
+    "lineage_hash": "67adef79e564f0ed3dfaf0dd71a0ce1235f6e4b0b5dc398f1688b9ef3b0b8d20"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://amazingribs.com/tested-recipes/bread-recipes/brioche-hamburger-buns-recipe/",
+    "fetchedAt": "2026-08-02T03:13:19.489Z"
+  },
+  "rawSource": "https://amazingribs.com/tested-recipes/bread-recipes/brioche-hamburger-buns-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

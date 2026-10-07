@@ -1,0 +1,181 @@
+{
+  "recipe": {
+    "name": "Beef and Celery Stir Fry",
+    "time": "25 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "266",
+      "carbohydrateContent": "8.4",
+      "fatContent": "13.7",
+      "proteinContent": "26.2"
+    },
+    "directions": [
+      "Slice the beef against the grain into 1/4” (1/2 cm) thick slices. Transfer to a small bowl. Add Shaoxing wine, dark soy sauce, salt and ginger. Gently mix well by hand until all the slices are coated. Add the sesame oil and cornstarch. Mix again to combine evenly. Marinate for 15 minutes while preparing the other ingredients.",
+      "Combine all the ingredients for the sauce in a medium-sized bowl. Mix well.",
+      "Heat a large skillet or wok over high heat until hot (add the oil before heating the pan if using a nonstick pan). Add the oil and swirl to coat the bottom. Spread the steak in a single layer. Allow to cook without touching for 30 seconds, or until the bottom side is browned. Flip to cook the other side for a few seconds. Stir and cook until the surface is lightly charred and the inside is still a bit pink. Transfer to a plate.",
+      "The pan should still have some oil left. If not, add 2 teaspoons of oil. Add the garlic. Stir a few times to release the flavor and fragrance.",
+      "Add the onion and celery to the pan. Stir and cook for 2 to 3 minutes, or until the veggies just start to turn tender.",
+      "Add the beef back to the pan. Stir the sauce again to dissolve the cornstarch completely and pour it into the skillet. Add the celery leaves if using. Cook and stir until the sauce thickens. Transfer everything to a plate immediately. Serve hot as a main dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Flank Steak",
+        "unit": "oz",
+        "notes": "300 g, *Footnote 1, skirt steak, or other cut",
+        "amount": "10",
+        "section": "Meat and Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Meat and Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce (or Soy Sauce)",
+        "unit": "tsp",
+        "notes": "*Footnote 2",
+        "amount": "1",
+        "section": "Meat and Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Meat and Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "grated",
+        "amount": "1",
+        "section": "Meat and Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Meat and Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Meat and Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Broth",
+        "unit": "Tbsp",
+        "notes": "or beef broth",
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": "or dry sherry",
+        "amount": "½",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "or soy sauce",
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "White Onion",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "¼",
+        "section": "Stir-fry",
+        "isOptional": false
+      },
+      {
+        "name": "Stems Celery",
+        "unit": null,
+        "notes": "you can include leaves, cut to 1/2” (1 cm) pieces",
+        "amount": "4",
+        "section": "Stir-fry",
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "or vegetable oil",
+        "amount": "1",
+        "section": "Stir-fry",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "sliced",
+        "amount": "2",
+        "section": "Stir-fry",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2d976010738ff4e0d2890141c891771a7f4a66fc72323fbc1ab41b083133b78d",
+    "lineage_hash": "89a7bb677896867a72bc9d8d030476a6fa4b66412d89cc847674a95f2fa3b516"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/beef-and-celery-stir-fry/",
+    "fetchedAt": "2026-08-02T02:27:37.256Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/beef-and-celery-stir-fry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

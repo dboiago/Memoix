@@ -1,0 +1,323 @@
+{
+  "recipe": {
+    "name": "Butternut Squash Laksa",
+    "time": "1 hr 45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by making the laksa paste. Lightly toast and finely grind the spices",
+      "Place the ground spices in the Vitamix with the remaining ingredients, select Variable 1 and then gradually increase to Variable 8, using the tamper to push the ingredients down into the blade. Let it run for 1 minute then turn the machine off. Scrape the laksa paste out into a container and weigh out 125g for this recipe. You can freeze the remaining laksa paste by spreading it between sheets of greaseproof paper",
+      "Peel and chop the butternut squash. Roast for 20 minutes or so until cooked through and beginning to caramelise",
+      "To make the laksa, heat the coconut oil in a large pan over a moderately high heat and add the laksa paste, spices, onion, chilli and garlic. Fry until soft, fragrant and beginning to caramelise",
+      "Add the lemongrass, lime leaves, ginger, turmeric and coriander stalks and continue to fry for a further 5 minutes",
+      "Now add the tamarind, palm sugar and fish sauce. Cook until the palm sugar has dissolved then add the coconut milk. Cover with vegetable stock or water, gently simmer for 15 minutes then take off the heat and allow to cool. Remove the whole star anise and cinnamon stick and discard",
+      "Once cool enough to handle, blend in the Vitamix on Variable 8 until smooth. Add the lime juice and check the seasoning, adding more lime juice or fish sauce to taste",
+      "Bring a large pan of lightly salted water to the boil, add the noodles and bring back to a rapid simmer. Cook for about 5 minutes until al dente, but keep an eye on them as the pan can easily boil over. Refresh under cold water",
+      "To serve, divide the noodles between 6 bowls. Pour over piping hot laksa and then scatter on top the roast butternut squash, smoked tofu, herbs, chilli, spring onions and a wedge of lime on the side. Serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Coriander Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": "peeled and chopped",
+        "amount": "65",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Galangal",
+        "unit": "g",
+        "notes": "peeled and chopped",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemongrass Stalks",
+        "unit": null,
+        "notes": "tough outer layer removed and finely sliced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Leaves",
+        "unit": null,
+        "notes": "tough stem removed and chopped",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "bunch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli",
+        "unit": null,
+        "notes": "split lengthways",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemongrass Stalks",
+        "unit": null,
+        "notes": "trimmed, bashed and finely sliced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Lime Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": "peeled and chopped",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric",
+        "unit": "g",
+        "notes": "peeled and chopped",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "bunch",
+        "notes": "stalks chopped and leaves reserved",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tamarind Paste",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Palm Sugar",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "ml",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Limes",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butternut Squash",
+        "unit": "g",
+        "notes": "peeled and cubed",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soba Noodles",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Tofu",
+        "unit": "g",
+        "notes": "(or one packet), diced to 1cm cubes",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": "bunch",
+        "notes": "green parts finely sliced, white parts shredded and crisped up in iced water",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint",
+        "unit": "bunch",
+        "notes": "leaves picked",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9d93c54e45bc860eca86850109735bbbff5c406310552cee522ba0f898f06239",
+    "lineage_hash": "98d49edf46543fb0e380e69cc0556139bceb44f3364e2a343a59acc12b7b2cf5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/butternut-squash-laksa-recipe",
+    "fetchedAt": "2026-08-03T10:49:33.599Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/butternut-squash-laksa-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

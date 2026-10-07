@@ -1,0 +1,127 @@
+{
+  "recipe": {
+    "name": "Canh Khoai Mỡ (Vietnamese Purple Yam Soup)",
+    "time": "20 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "VN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat oil (2 tablespoons) in a pot over medium heat. Add garlic (1 tablespoon, minced) and shallot (2 tablespoons, minced). Pan fry until lightly toasted (about 30 seconds).",
+      "(10 oz) and cook until just pink. Add water (4 cups) and bring the pot to a low simmer.",
+      "(16 oz) and cook 15–20 minutes to get the flavors to meld together. Stir occasionally, making sure to scrape the bottom of the pot, as the grated yam will settle and can burn.",
+      "Add chicken bouillon powder or mushroom seasoning powder (2 teaspoons), fish sauce (1 teaspoon), salt (1 teaspoon), and ground black pepper (1/2 teaspoon). Taste and adjust, if needed.",
+      "Transfer the soup to a serving bowl and garnish with a handful (1/4 cup) of roughly chopped rice paddy herbs, cilantro, green onions, or a combination of all three. Finish with a crack of fresh black pepper for aroma and enjoy on its own or with steamed white rice for a complete meal."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Package Grated Frozen Purple Yam",
+        "unit": null,
+        "notes": "16 oz/1 lb",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shrimp",
+        "unit": "oz",
+        "notes": "peeled, deveined, finely minced",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "Tbsp",
+        "notes": "about 3 cloves, minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallot",
+        "unit": "Tbsp",
+        "notes": "finely, minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Bouillon Powder",
+        "unit": "tsp",
+        "notes": "alt: mushroom seasoning powder",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper and a Bit More for Garnish",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Roughly Chopped Rice Paddy Herbs",
+        "unit": "C",
+        "notes": "for garnish, green onions, and/or cilantro",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "016068637a73fdcc475323ac47a68a4a065cfd283a10b3c6a7336d978e22a952",
+    "lineage_hash": "e14a56d1a1898002198fe4fa013ffefabe5f9e652cf5a34ea465181bd6a33841"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://vickypham.com/blog/canh-khoai-mo-vietnamese-purple-yam-soup/",
+    "fetchedAt": "2026-08-02T04:43:31.682Z"
+  },
+  "rawSource": "https://vickypham.com/blog/canh-khoai-mo-vietnamese-purple-yam-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,353 @@
+{
+  "recipe": {
+    "name": "Amba-Spiced Mackerel Skewers, Green Tarator, Fennel And Tomato Salad",
+    "time": "2 hr 10 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start the green shatta 3 days before you want to serve. In a sterilised container, toss the chillies with the salt, then cover and refrigerate for 3 days",
+      "After 3 days, the chillies will have slightly softened and their heat will have tempered. Place the salted chillies in a blender with the vinegar and lemon juice and blend to a coarse paste. Transfer the shatta to a container and cover the surface with olive oil. Cover and store in the fridge – this will make more than you need",
+      "For the fennel salad, preheat the oven to 140°C. Place the cherry tomatoes in a roasting tray and drizzle with a little confit garlic oil or olive oil, a pinch of sugar and salt and the thyme. Roast until they have softened, dehydrated slightly and have intensified in flavour. Set aside – these are served at room temperature",
+      "To make the spring onion top oil, weigh the spring onion tops and place in a small food processor or blender with a pinch of salt and half their weight in rapeseed oil. Blend until smooth, then strain to retain the green oil – Ayesha uses coffee filters for this but you can use a muslin cloth if preferred. Set aside in a squeezy bottle in the fridge until needed",
+      "To make the crispy buckwheat, cook the buckwheat in a pan of boiling water for 5 minutes until swollen, then drain and separate the groats with a fork. Leave to cool",
+      "Heat a pan a third full of vegetable oil or a deep-fat fryer to 180°C and deep-fry the cooled buckwheat until crunchy and crisp, then remove to drain on kitchen paper",
+      "Transfer the fried buckwheat to a pestle and mortar and break them up slightly. Stir through the nutritional yeast then set aside",
+      "Mix all the marinade ingredients together with a pinch of salt",
+      "Rub the marinade all over the mackerel pieces, then thread onto skewers, folding the fish back on itself and alternating with the olives and spring onion. Set aside in the fridge until needed",
+      "For the green tarator, place the herbs, lemon juice, water and half a tablespoon of the green shatta in a blender and blend until smooth. Transfer to a bowl and mix through the tahini until you have a spoonable consistency that will hold its shape and not run off the plate. Adjust with lemon and salt",
+      "For the fennel salad, make a dressing by whisking together the olive oil, lemon juice, half the sumac and a pinch of salt. Set aside",
+      "Massage the fennel with the lime juice and remaining sumac to soften slightly. Set aside",
+      "When you want to cook, light a barbecue or preheat a grill pan. Cook the mackerel for about 4 minutes on each side to achieve good colour but keep the fish juicy. Finish with lemon juice and salt",
+      "Mix together the roasted tomatoes and shaved fennel with the picked herbs",
+      "To serve, spread the tarator onto serving plates and arrange the salad around the edge. Place the skewers on top, along with the drained spring onions. Drizzle over a little spring onion top oil and finish with a dusting of Aleppo pepper and the crispy buckwheat"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Green Chillies",
+        "unit": "g",
+        "notes": "washed and finely sliced",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cider Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "ml",
+        "notes": "about 1 tsp",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": null,
+        "notes": "to cover",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherry Tomatoes",
+        "unit": null,
+        "notes": "halved",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Confit Garlic Oil",
+        "unit": null,
+        "notes": "or olive oil, for roasting",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sumac",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Bulb",
+        "unit": null,
+        "notes": "small, shaved on a mandolin or very finely sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dill",
+        "unit": "bunch",
+        "notes": "fronds picked",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "bunch",
+        "notes": "leaves picked",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": "bunch",
+        "notes": "green tops trimmed, washed and dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": null,
+        "notes": "for blending",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Buckwheat",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "for deep-fat frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutritional Yeast",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Greek Yoghurt",
+        "unit": "g",
+        "notes": "or labneh if you have it",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amba Spice Mix",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Purée",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zested",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mackerel Fillets",
+        "unit": null,
+        "notes": "pin-boned, halved lengthways",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Olives",
+        "unit": null,
+        "notes": "ideally gordal, pitted",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": null,
+        "notes": "cut into 2-3cm pieces",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": null,
+        "notes": "to finish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": null,
+        "notes": "green tops thinly sliced lengthways and soaked in iced water, then drained, to finish",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Aleppo Chilli Flakes",
+        "unit": null,
+        "notes": "to finish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dill",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "ml",
+        "notes": "plus extra as needed",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tahini",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "42a808114fa59e654421e5a9f7c9d7dab81da383469ae1ae0b5f3862e3170659",
+    "lineage_hash": "3bcd11a4edac421aa37a0cd44589f5462577fca3b8ec2bc5cf7666d8d9bdca7e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/amba-spiced-mackerel-recipe",
+    "fetchedAt": "2026-08-01T18:52:32.046Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/amba-spiced-mackerel-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

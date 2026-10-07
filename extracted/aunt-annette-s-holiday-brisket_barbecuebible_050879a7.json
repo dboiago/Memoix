@@ -1,0 +1,146 @@
+{
+  "recipe": {
+    "name": "Aunt Annette’s Holiday Brisket",
+    "time": "3 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat Big Green Egg to 350 degrees. Add 2-3 wood chucks to generate wood smoke.",
+      "Using a sharp knife, trim the brisket, leaving 1/4 inch thick. Be careful no to over trim. Generously season the brisket on all sides with salt and pepper",
+      "Heat the oil in a Dutch oven or roasting pan over medium-high heat. All the brisket and cook, turning once until browned on both sides, 4 to 6 minutes a side. Transfer the meat to a platter and pour out and discard all but 3 tablespoons of the fat from the pot.",
+      "All the onion, chopped carrot, celery, and 3 tablespoons of the parsley to the pot and cook over medium-high heat until softened and lightly browned, 5 minutes.",
+      "Return the brisket to the pot and spoon half the vegetables in the pot on top. Add the wine, bay leaves, and enough stock to barely covers the brisket. Place the pan in the Big Green Egg and smoke-braise for 1-1/2 hours.",
+      "Remove the pot from the BGE and transfer the brisket to a welled cutting board; set the pot aside. Using a sharp knife or electric knife, thinly slice the brisket across the grain. Stir the half of the carrot chucks and the apricots, prunes, and raisins into the juice in the pot. Using a spatula neatly lay the sliced brisket on top. Pour in any juices from the cutting board and arrange the remaining carrot chucks and dried fruits on top. Season with salt and pepper. Add additional stock as needed to just over the meat and fruit.",
+      "Place the pot back in the Big Green Egg and smoke-braise for an additional 1 ½ hours, or as needed.",
+      "Transfer the brisket slices to a platter. Using a slotted spoon, transfer the fruits and vegetables to the platter and arrange them around the meat. Pour the pan juices into a gravy boat with fat separator. Spoon some of the gravy over the meat and fruit, serving the rest on the side. Sprinkle the remaining 1 tablespoon of parsley over the meat."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Brisket Flat",
+        "unit": null,
+        "notes": "3-4 pounds",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Seas Salt and Freshly Cracked Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Canola Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "large",
+        "notes": "peeled and finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": null,
+        "notes": "trimmed and peeled (1 diced and 3 cut crosswise into 3-inch pieces",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ribs of Celery",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Peeled and Finely Chopped",
+        "unit": "clove",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flat-leaf Parsley",
+        "unit": "C",
+        "notes": "chopped, fresh",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Kosher Wine Concord Grade Wine (such As Manischewitz)",
+        "unit": "C",
+        "notes": "alt: 1 -1/2 cups of dry red wine plus 1/4 cup of brown sugar",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": "dried",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apricots",
+        "unit": "C",
+        "notes": "dried",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Prunes",
+        "unit": "C",
+        "notes": "pitted",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Raisins",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "79122fe4bd91cd0c4163168fccd1e2addcee790a4cd1957790d15170ffe9bd07",
+    "lineage_hash": "e02d2a147fa5ebe8ba0a3eb5fcf28cff906173d9738f1d218d567af8719446cb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/aunt-annettes-holiday-brisket/",
+    "fetchedAt": "2026-08-03T08:42:29.470Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/aunt-annettes-holiday-brisket/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

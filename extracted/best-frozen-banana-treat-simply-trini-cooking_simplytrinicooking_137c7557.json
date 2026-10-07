@@ -1,0 +1,78 @@
+{
+  "recipe": {
+    "name": "Frozen Banana Treat",
+    "time": "5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Peel the bananas and cut each in two.",
+      "Mix the cereal, cinnamon and nutmeg. Note: The grape nut cereal does not crush well in an electric chopper. It is best to place it in a clean bag, hold the end tightly and use a rolling pin to crush it. You can also leave the cereal as it for a more chunkier texture.",
+      "Insert an ice cream stick or skewer deeply into the cut end of the banana. Dip the banana in the milk, then roll in the cereal crumbs and spices. Note: To get the cereal to stick press firmly into the banana.",
+      "Wrap in plastic and freeze. Serve cold. Note: I used this grape nut cereal for my frozen bananas. It is not as sweet as most cereals, and a bit expensive in Trinidad. A good substitute is the Sunshine Granola cereal for this recipe."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ripe Bananas Peeled",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Skimmed Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grape Nut Cereal Crushed to Crumbs",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Nutmeg",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1bf6b219c7f1a580cb6a38782a087e014eaa76846eaa0936c79c39a98cf56496",
+    "lineage_hash": "e472ba30821f98275a82c9f16006b73afb247d8e82446794b7b07e845e96c552"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.simplytrinicooking.com/frozen-banana/",
+    "fetchedAt": "2026-09-25T21:25:08.011Z"
+  },
+  "rawSource": "https://www.simplytrinicooking.com/frozen-banana/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

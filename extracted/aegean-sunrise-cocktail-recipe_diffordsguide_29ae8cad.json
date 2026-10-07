@@ -1,0 +1,96 @@
+{
+  "recipe": {
+    "name": "Aegean Sunrise",
+    "time": "4 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GR",
+    "glass": "Collins",
+    "garnish": [
+      "Skewered Orange Slice Wheel",
+      "Luxardo Maraschino Cherry (sail)"
+    ],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "187",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Select and pre-chill a COLLINS GLASS.",
+      "Prepare garnish of skewered orange slice wheel and Luxardo Maraschino Cherry (sail).",
+      "SHAKE first 5 ingredients with ice.",
+      "STRAIN into ice-filled glass.",
+      "Slowly POUR grenadine (which will sink to the bottom of the cocktail).",
+      "Garnish with skewered orange slice wheel and maraschino cherry (sail)."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Greek Spirit",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Liqueur",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pineapple Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grenadine Syrup",
+        "unit": "ml",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ebd9d693dd1b3a30e2e552af33f78f32f9201fa8e1781d89643b38930677ebc7",
+    "lineage_hash": "ae39b76039d11a5278eb4a08252135e926dbc80dcc41d7419615a7a9136e4042"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/37360/aegean-sunrise",
+    "fetchedAt": "2026-08-03T22:45:36.137Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/37360/aegean-sunrise",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

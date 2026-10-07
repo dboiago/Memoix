@@ -1,0 +1,37 @@
+{
+  "recipe": {
+    "name": "Cardamom + Banana Vieux Carre",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [
+      "Lemon Peel"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix all the ingredients together in a mixing glass with ice. Strain into a rocks glass over a single large ice cube. Twist a lemon peel over the top of the drink to release the citrus oils, then use as a garnish.",
+      "Cardamom Syrup: Combine 16 oz. of water with 16 oz. of sugar and 1 Tbsp. of powdered green cardamom in a saucepan. Bring to a boil and reduce to a simmer. Let simmer for 10 minutes before removing from heat. Strain and let cool. Store in the refrigerator for 2 weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "53645e4936028291f5dfcff52af2fee879aa7d2eab8a6c24e738f30ca2370bc1",
+    "lineage_hash": "595beec071a44f40c0a2f1173df2219fd57ee0bbd352634ae32cc86c47524679"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cardamom-banana-vieux-carre/",
+    "fetchedAt": "2026-08-03T18:13:05.185Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cardamom-banana-vieux-carre/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

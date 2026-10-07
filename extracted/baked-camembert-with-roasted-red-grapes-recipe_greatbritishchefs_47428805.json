@@ -1,0 +1,129 @@
+{
+  "recipe": {
+    "name": "Baked Camembert with Roasted Red Grapes",
+    "time": "1 hr 38 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by making the crackers. Preheat an oven to 180ºC/gas mark 4",
+      "Place the flour, half of the pink peppercorns and salt in a bowl, then add the oil and water and stir together until it forms a dough. Tip out onto a floured work surface, knead briefly until smooth, then cover and leave to rest for 10 minutes",
+      "Whilst the dough is resting, roast the grapes. Place a small bunch on a roasting tray and drizzle with a little oil. Place in the oven and roast for 10 minutes or until the skins have split and the grapes are oozing juices",
+      "Prepare the camembert by opening the box and removing the paper wrapping. Place the cheese back in the box and sit it on an ovenproof tray in case it spills over. Use a small knife to cut diagonal slashes in the top of the cheese. Nestle some rosemary in the slashes and sprinkle over a handful of walnuts. Drizzle with a little oil",
+      "Roll out the dough on a sheet of baking paper to about 2-3mm thick. Use a knife to score the dough into triangle shapes – you don't need to separate them as this will happen automatically in the oven. Transfer to a flat baking tray and brush with oil. Sprinkle over some flaky sea salt and the remaining pink peppercorns and bake for 5–8 minutes",
+      "Once the crackers and grapes come out of the oven, put the camembert in and bake for 10–15 minutes",
+      "Serve with the roast grapes on top of the cheese and the crackers on the side"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": "plus extra for dusting",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pink Peppercorns",
+        "unit": "tsp",
+        "notes": "crushed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "tsp",
+        "notes": "plus a little extra for brushing",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Camembert",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "sprigs",
+        "notes": "cut into 3cm pieces",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Walnuts",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Grapes",
+        "unit": "bunch",
+        "notes": "small",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "for drizzling",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7e00bcec0506edbd4b5a3d5332b8d6354b7404efc1cf1d55dceb35da8070a93f",
+    "lineage_hash": "7baa08538aedb4c88760a5b230bbfd0b8cd3e82072d364f64520e40955f40427"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/baked-camembert-with-grapes-recipe",
+    "fetchedAt": "2026-08-02T20:41:53.487Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/baked-camembert-with-grapes-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

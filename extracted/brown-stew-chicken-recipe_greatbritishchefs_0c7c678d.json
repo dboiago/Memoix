@@ -1,0 +1,199 @@
+{
+  "recipe": {
+    "name": "Brown Stew Chicken",
+    "time": "2 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Reduce the vegetable stock in a saucepan to around 100ml, which will take about 30 minutes over a medium-high heat",
+      "At the same time, heat the sugar in a non-stick pan over a medium-high heat until it starts to liquefy (4–6 minutes). Watch it to make sure it doesn’t catch and burn",
+      "Reduce the heat to medium-low, stirring regularly, and once the sugar has fully melted (10–15 minutes), stir continuously until it turns a luxurious dark brown and smells of intense caramel",
+      "Add the 100ml reduced stock bit by bit, stirring furiously as you go. The sugar might clump up if the stock is too cool, but keep it on the heat and keep stirring and the lumps will dissolve",
+      "Once all the stock has been incorporated, transfer to a sterilised jar. It will keep for 6 months",
+      "Cut the chicken into small pieces: separate the drumsticks and thighs and cut both in half using a cleaver. Divide each breast, on the bone, into 3-4 pieces. Separate the wings into the drum and flat",
+      "Remove the skin from every piece apart from the wings and freeze it, along with the wing tips and backbone, for stock",
+      "Mix the chicken pieces in a bowl with the salt, pepper, onion, garlic, ginger, thyme, pimento, all-purpose seasoning, spring onions and 1 tbsp savoury browning. Leave to marinate for at least 4 hours in the fridge, ideally overnight",
+      "Put the oil in a Dutch pot or heavy-based pan. Scrape as much of the marinade off the chicken pieces back into the bowl as you can (reserve this) and brown the chicken on all sides, in batches if needed, so as not to overcrowd the pan",
+      "Remove the chicken to a plate and scrape the marinade into the same pan. Cook for 10 minutes over a medium-high heat until the onion starts to colour, then add the red pepper. Mix well and return the chicken to the pan with the measured water and all the remaining ingredients. Include the Scotch bonnet whole for flavour, or finely chop 1/4-1/2 of it for heat",
+      "Bring to the boil, then reduce the heat to a simmer",
+      "Cook for 25 minutes until the sauce is thick, dark and glossy and the chicken is cooked through. Pick out the thyme sprigs, if you want, and the whole Scotch bonnet, if using",
+      "Serve with Rice & Peas."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vegetable Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soft Light Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken",
+        "unit": "kg",
+        "notes": "whole",
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "large",
+        "notes": "finely sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "cm",
+        "notes": "finely grated",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Pimento",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Seasoning",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Pepper",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Ketchup",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scotch Bonnet Chilli",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "44f1a7158ca7617df3b3783fe974b1a7acf3e0d2bd012480663454beb75d5649",
+    "lineage_hash": "85bb322d3da81aeba13fad2dc1cb5bf8386040a2b9a48f045611fe5715baf72a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/brown-stew-chicken-recipe",
+    "fetchedAt": "2026-08-02T17:09:56.751Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/brown-stew-chicken-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

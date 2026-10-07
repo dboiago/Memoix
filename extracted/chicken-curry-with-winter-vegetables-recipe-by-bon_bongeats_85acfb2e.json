@@ -1,0 +1,227 @@
+{
+  "recipe": {
+    "name": "Chicken Curry with Winter Vegetables",
+    "time": "50 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "5",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Peel and halve onions. Peel garlic; we will be using whole cloves. Slice ginger. Halve the turnips. Cut carrots into mid-sized chunks. Wash the new potatoes thoroughly to remove dirt. Cut both potatoes and green tomatoes in half. Thoroughly wash the coriander root and chop it off. We will be using it for flavour.",
+      "In a large mixing bowl, add the chicken, along with turnips, tomatoes, carrots, potatoes, garlic cloves, sliced ginger, whole green chillies, and onions. Now, add salt, turmeric, and sugar. Mix everything well.",
+      "Heat mustard oil in a pressure cooker. Temper it with cardamom, cinnamon, cloves, peppercorns, and bay leaves.",
+      "Once the spices turn aromatic, add the marinated chicken and vegetables, along with half a cup of water.",
+      "Pressure-cook until the chicken is tender.",
+      "Once the cooker releases the pressure and you are able to open the lid, adjust the amount of liquid by adding more water. We added another half a cup.",
+      "Turn the heat back on and allow it to simmer.",
+      "Add the halved beans, green peas, and butter. Mix everything well. Continue to simmer on low heat until peas and beans are cooked, and you have the desired consistency for the curry.",
+      "Finish with freshly chopped coriander leaves."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken",
+        "unit": "kg",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "g",
+        "notes": "halved and peeled",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "g",
+        "notes": "whole cloves",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": "sliced",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turnips",
+        "unit": "g",
+        "notes": "halved",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "g",
+        "notes": "large chunks",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "New Potatoes",
+        "unit": "g",
+        "notes": "washed and halved",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Tomatoes",
+        "unit": "g",
+        "notes": "halved",
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "32",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pcs Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pc Cinnamon",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pcs Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pcs Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pcs Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peas",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beans",
+        "unit": "g",
+        "notes": "halved",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "dcd0ee847fe0aaa615c7fc29b324e5cb4c9e6776d7744100cb61dfb6852cfe7a",
+    "lineage_hash": "85b7a3d1f971b295e0d0e663b4c9b0e90bcd496309d3aa5837be074245f24b8f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.bongeats.com/recipe/pressure-cooker-chicken",
+    "fetchedAt": "2026-08-01T23:52:56.851Z"
+  },
+  "rawSource": "https://www.bongeats.com/recipe/pressure-cooker-chicken",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

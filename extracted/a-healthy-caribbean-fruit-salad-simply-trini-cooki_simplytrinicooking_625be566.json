@@ -1,0 +1,97 @@
+{
+  "recipe": {
+    "name": "Fruit Salad",
+    "time": "36 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Peel the orange and remove the seeds. Wash the grapes. Place in a deep glass bowl or your favourite fruit salad bowl.",
+      "Separate the pineapple slices from the light syrup.",
+      "Set aside the light syrup. Cut the pineapple slices in half or to your liking.",
+      "Wash and cut the apple in thin slices. Peel and dice the pawpaw into 2 inch pieces.",
+      "Peel and dice the banana. Add to the fruit bowl.",
+      "Pour the light syrup from the pineapple over all the ingredients, and toss slightly. Note: If you use fresh pineapple, you will have to make your own light syrup. This is easy, just boil together 3/4 cups of white sugar and 2 cups of water until a the thin syrup is formed. Cool the syrup before using.",
+      "Chill before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Banana",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mango",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ripe Pawpaw Papaya",
+        "unit": "pc",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tin Pineapple in Light Syrup",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grapes",
+        "unit": "lb",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d7d3d85c233cd1e9b84ec39f0e1eec8bb169cb1a8858ceafaf8e5bc698345dd7",
+    "lineage_hash": "3233c28de63b47ad2c2550621542594efc948822bb26b8f2962bff06130e93db"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.simplytrinicooking.com/fruit-salad/",
+    "fetchedAt": "2026-09-26T01:11:49.942Z"
+  },
+  "rawSource": "https://www.simplytrinicooking.com/fruit-salad/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

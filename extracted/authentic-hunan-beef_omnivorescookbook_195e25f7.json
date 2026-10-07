@@ -1,0 +1,197 @@
+{
+  "recipe": {
+    "name": "Hunan Beef",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "413",
+      "carbohydrateContent": "4.9",
+      "fatContent": "21",
+      "proteinContent": "48.4"
+    },
+    "directions": [
+      "Split the flank steak along the grain into two long pieces, then slice each piece against the grain into 1/8” (3 mm) thin pieces. Transfer to a medium bowl. Add the light soy sauce, baking soda and white pepper. Mix thoroughly with your hands to evenly coat the beef. Add the cornstarch and mix again. If the cornstarch does not distribute evenly, add 1 to 2 teaspoons of water and mix again. Set aside to marinate for 15 minutes while preparing the other ingredients.",
+      "Mix the sauce in a medium bowl and set aside.",
+      "Heat the oil in a large skillet over medium heat until hot. Spread the beef into the pan without overlapping. You might want to cook in batches if your pan is not big enough. Sear without moving until the bottom turns golden brown, 1 minute or so. Flip the beef to cook the other side, until lightly seared and the inside is still slightly pink. Transfer the beef to a big plate and set aside.",
+      "Add the remaining oil, garlic, ginger, dried chili pepper and ground Sichuan peppercorn. Cook and stir until the garlic turns slightly golden, 1 minute or so.",
+      "Add the pepper. Stir and cook for 1 minute. Then add back the cooked beef.",
+      "Stir the sauce again to dissolve the cornstarch completely. Pour into the skillet and stir immediately. Cook until the sauce is evenly coated. Turn off the heat and transfer everything to a large plate. Serve over steamed rice as a main dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Flank Steak",
+        "unit": "lb",
+        "notes": "450 g",
+        "amount": "1",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Broth",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Bouillon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "or vegetable oil",
+        "amount": "2",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "sliced",
+        "amount": "6",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Thumb Ginger",
+        "unit": null,
+        "notes": "julienned",
+        "amount": "1",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Chili Pepper",
+        "unit": null,
+        "notes": "dried, cut into small pieces",
+        "amount": "4",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Sichuan Peppercorn",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Hot Chili Peppers",
+        "unit": null,
+        "notes": "*Footnote, sliced into circles",
+        "amount": "2-4",
+        "section": "Stir fry",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d71f265cc07b3780fcb44833261cdae049fc2ef67edd8fe4fc6f72c8519a4afb",
+    "lineage_hash": "1e1d05ad1f404ba507b70c99bf7280c9065479668f2a13ceab794b158e47a0fb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/hunan-beef/",
+    "fetchedAt": "2026-08-02T03:06:45.984Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/hunan-beef/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

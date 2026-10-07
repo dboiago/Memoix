@@ -1,0 +1,80 @@
+{
+  "recipe": {
+    "name": "Butternut Squash Casserole (Oma's Butternutkürbis-Auflauf)",
+    "time": "40 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "DE",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat oven to 400°F.",
+      "In a 9x12-inch baking dish, put butternut squash cubes on the bottom. Cover with whole cherry tomatoes. Cover that with red onion wedges.",
+      "Drizzle all over with olive oil.",
+      "Bake, uncovered, for about 30 minutes or until the squash is cooked.",
+      "Remove from oven. Sprinkle with crumbled blue cheese. Return to oven until cheese is melted, about 2 to 3 minutes.",
+      "Season with salt and pepper, as needed."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butternut Squash",
+        "unit": "lb",
+        "notes": "907 grams, cubed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherry Tomatoes",
+        "unit": "C",
+        "notes": "380 grams, whole",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": null,
+        "notes": "in wedges",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blue Cheese",
+        "unit": "lb",
+        "notes": "crumbled",
+        "amount": "⅓-½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": null,
+        "notes": "salt, freshly ground black pepper",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d453bb527a455cd0a5328de3fb1453fe0ccfe617c44ff741c88a0e79ffd433d9",
+    "lineage_hash": "cb6baf91632d4094fcfc5fcf8f198a054e7731a3d32e59fea133af3e25e9b6a6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.quick-german-recipes.com/baked-squash-with-tomatoes.html",
+    "fetchedAt": "2026-09-25T20:17:56.800Z"
+  },
+  "rawSource": "https://www.quick-german-recipes.com/baked-squash-with-tomatoes.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

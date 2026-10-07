@@ -1,0 +1,242 @@
+{
+  "recipe": {
+    "name": "Braised Pork Belly, Chilli Pickled Pineapple and Tenderstem Broccoli",
+    "time": "1 hr 45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the pork, preheat the oven to 150°C",
+      "Heat the sugar in a heavy-bottomed medium-sized pan until it melts and turns golden. Take care as it will be very hot",
+      "Gradually add the water – stand back as it will spit a lot – and stir it until all the caramel is melted into the water. Add the stock and oyster sauce and stir to combine",
+      "Add the vegetables and pork belly to a large casserole dish. Pour the stock into the pan, then cover tightly with a layer of parchment paper and tin foil",
+      "Cook the pork belly for 3 hours, then remove from the oven. Let cool in the dish for 1 hour",
+      "Transfer the pork to a parchment-lined dish, reserving the vegetables and sauce. Top the pork with another tray, then weigh down the top tray with tins or other heavy weights. Transfer to the fridge to chill and press overnight",
+      "Strain the cooking liquor into a clean pan. Bring to a rolling boil, and reduce over a high heat. Taste every now and again to make sure it doesn’t get too strong, and remove from the heat once reduced to your liking",
+      "Chill in the fridge overnight with the pork",
+      "For the chilli-pickled pineapple, bring the vinegar, sugar, water and spices to the boil. Stir to dissolve the sugar, then simmer for 5 minutes to infuse and reduce slightly",
+      "Pass through a sieve, add the chopped chilli and store until needed",
+      "For the tenderstem broccoli dressing, grate the ginger and garlic into a bowl using a microplane. Add the rest of the broccoli ingredients, apart from the broccoli itself, along with 2 tbsp reduced cooking liquor from the pork",
+      "Whisk together and store in the fridge until needed",
+      "To serve, cut pork into four servings. Remove the skin, then sear the pork on all sides with a dash of oil",
+      "Bring the remaining cooking liquor to a simmer, then remove from the heat and add the seared pork. Set aside to keep the pork warm while you make the broccoli",
+      "Add a splash of oil to a hot pan and cook the broccoli until it starts to colour. Remove from the heat and dress with oyster sauce dressing to taste",
+      "On a warm plate, place the pork off centre and the broccoli next to it. Finish with some cooking liquor and pickled pineapple&nbsp;"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": null,
+        "notes": "peeled and chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sticks of Celery",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": "peeled and chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pork Belly",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pineapple",
+        "unit": null,
+        "notes": "peeled, cored and finely diced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Cider Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peppercorns",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli",
+        "unit": null,
+        "notes": "seeds removed and finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "cm",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Wine Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Neutral Oil",
+        "unit": "Tbsp",
+        "notes": "plus extra for cooking",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tenderstem Broccoli",
+        "unit": "g",
+        "notes": "trimmed",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "199f333d713ce3978ef95664f570c3ba245b497388d90d170fa22a8e7a5be46f",
+    "lineage_hash": "276885f2c41e72b3d62f06aeb01bdebf31e9947f5d7acfe8d2e752218ab5aaec"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/braised-pork-belly-chilli-pickled-pineapple-recipe",
+    "fetchedAt": "2026-08-02T01:44:01.403Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/braised-pork-belly-chilli-pickled-pineapple-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

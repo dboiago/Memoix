@@ -1,0 +1,244 @@
+{
+  "recipe": {
+    "name": "Bilberry and Apple Dessert",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the apple sorbet, blitz all of the ingredients together in a blender until smooth and transfer to a Pacojet container. Place in the freezer to freeze solid and blitz in the Pacojet just before serving",
+      "Mix together the bilberries and sugar. Vacuum seal and steam in the oven for 30 minutes - if your oven doesn’t have a steamer setting a regular steamer will work just as well",
+      "Cut open the bag and tip the contents into a sieve set over a measuring jug",
+      "Boil 200ml of the juice with the agar agar for 1 minute, pour onto a tray at a thickness of 0.3mm and leave to set in the fridge. Cut out with a 8cm diameter ring and transfer onto baking parchment to store",
+      "To make the meringues, whisk the egg whites and caster sugar to soft peaks then gradually add the icing sugar. Mix for a further 10 minutes until very stiff then transfer to a piping bag",
+      "Line a flat tray with parchment paper and pipe the meringue into domes approximately 6cm in diameter. Bake in the oven for 45 minutes - 1 hour until crispy then leave to cool. Turn the oven up to 170°C/gas mark 4",
+      "Once cool, turn the meringues upside down and very carefully scoop out the middle so you are left with a basket. Reserve",
+      "To make the salted granola,  bake the dry ingredients together for 10 minutes then mix in the rest of the ingredients and bake for a further 10 minutes until golden brown. Leave to cool then chop into small pieces and reserve",
+      "To make the apple gel, juice the apples and weigh the  juice. For every 100ml of juice use 1.1g of agar agar, mix together and bring to the boil. Pour into a tray to set and transfer to the fridge. When completely set, blitz in a blender until smooth and pass through a fine sieve",
+      "To serve, place a circle of jelly on the bottom of each plate. Scatter over the crumble, bilberries and freeze-dried yoghurt and pipe around dots of the gel. Place a meringue basket on top and fill with more crumble and gel. Add a scoop of apple sorbet and garnish with the apple marigold"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Apple",
+        "unit": "g",
+        "notes": "skins only",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glucose",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sorbet Stabiliser",
+        "unit": "g",
+        "notes": null,
+        "amount": "9",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bilberries",
+        "unit": "kg",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Agar Agar",
+        "unit": "g",
+        "notes": null,
+        "amount": "2.4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": "g",
+        "notes": null,
+        "amount": "190",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "190",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oats",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pumpkin Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Macadamia Nuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pine Nuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maple Syrup",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granny Smith Apples",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Agar Agar",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freeze-dried Yoghurt",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bilberries",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bilberries",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Marigold",
+        "unit": null,
+        "notes": "for garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "76e96f665c9a44e6ae1fcc9d0d667e543416f546b8c87c00129c2385e4bfb044",
+    "lineage_hash": "6c4822af72a574cc799662cf765506ff264fa59ff6b1ee293ffd49068aca0afd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/bilberry-meringue-granny-smith-sorbet-recipe",
+    "fetchedAt": "2026-08-03T15:19:48.947Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/bilberry-meringue-granny-smith-sorbet-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

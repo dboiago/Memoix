@@ -1,0 +1,168 @@
+{
+  "recipe": {
+    "name": "Ayam Sambal Goreng Sereh (Chicken in Spicy Lemongrass Sauce)",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "ID",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Marinate chicken: Start with rubbing the chicken pieces with salt and turmeric. Set aside for 15 minutes.",
+      "Prepare spice paste: Grind garlic, shallot, galangal, red chilies, and the white part of lemongrass in a food processor or with a mortar and a pestle into a smooth paste.",
+      "Fry chicken: Heat about three tablespoons of oil in a wok over medium-high and fry the chicken until the skin is crispy and golden brown. It is okay for the chicken to be not 100% cooked. Set aside.",
+      "Sauté spice paste and lemongrass: In the same wok, fry the spice paste, turmeric, and the green part of lemongrass until fragrant. About 5 minutes.",
+      "Add chicken and the rest of the ingredients: Return fried chicken into the wok, along with coconut milk, tamarind liquid, salt, and coconut palm sugar. Mix well and bring to a boil. Reduce the heat to a simmer and cook until the sauce is very thick and the chicken is tender and cooked.",
+      "Serve: Turn off heat, and serve either with steamed white rice, or nasi uduk (fragrant coconut rice)."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken",
+        "unit": "pcs",
+        "notes": "I use thighs and drumsticks, bone-in",
+        "amount": "8-10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemongrass (indonesian: Sereh)",
+        "unit": null,
+        "notes": "green part only",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": "Indonesian: bubuk kunyit",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "can",
+        "notes": "400 ml",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tamarind Liquid (from 1/2 Tablespoon Tamarind + 4 Tablespoon Water)",
+        "unit": null,
+        "notes": "mix well and strained",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Palm Sugar",
+        "unit": "Tbsp",
+        "notes": "or to taste",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grind the Following Into Spice Paste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Cayenne Chilies",
+        "unit": null,
+        "notes": "Indonesian: cabe merah keriting",
+        "amount": "10-20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Shallot",
+        "unit": null,
+        "notes": "Indonesian: bawang merah",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "Indonesian: bawang putih",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemongrass (indonesian: Sereh)",
+        "unit": null,
+        "notes": "white part only",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Galangal",
+        "unit": "inch",
+        "notes": "Indonesian: lengkuas",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fa76c09e896f22d5fe2bb134e23c68fd41c47e676cb2c18dfed8c378f1120288",
+    "lineage_hash": "6e44bbab972d6ab5e043602b649ce129ec890896dd69b9f7209e4cc7dc4db559"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/ayam-sambal-goreng-sereh-chicken-in-spicy-lemongrass-sauce.html",
+    "fetchedAt": "2026-08-01T19:55:06.748Z"
+  },
+  "rawSource": "https://dailycookingquest.com/ayam-sambal-goreng-sereh-chicken-in-spicy-lemongrass-sauce.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

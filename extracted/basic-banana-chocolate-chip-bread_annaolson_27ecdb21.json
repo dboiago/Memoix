@@ -1,0 +1,125 @@
+{
+  "recipe": {
+    "name": "BASIC BANANA CHOCOLATE CHIP BREAD",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 350 °F (175 °C)  and grease a 9-x-5-inch (23 x 13 cm) loaf pan.",
+      "Beat the butter and brown sugar together until smooth.  Stir in the banana, and then stir in the egg and vanilla.  In a separate bowl, stir the all-purpose flour, whole wheat flour, baking soda, cinnamon and salt to combine.  Add this to the butter mixture and stir until evenly blended.  Add the chocolate chips then scrape the batter into the prepared pan, spread evenly.",
+      "Bake the loaf for about an hour, until a tester inserted in the centre of the cake comes out clean.  Cool the cake for 30 minutes in the pan, then turn out to cool completely. The loaf will keep , well wrapped and unrefrigerated, for up to 3 days."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "at room temperature",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "C",
+        "notes": "packed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mashed Ripe Banana",
+        "unit": "C",
+        "notes": "3 to 4 bananas",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "at room temperature",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Wheat Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Chips",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3bb0b024e18720c43f5024cec5b2b03421cfbcdef4faf6ec9607416981597058",
+    "lineage_hash": "1ea54b78b89d70eb7d5a20a110b5518648c080ca248b7ed88172b6f13bf89eb0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/basic-banana-chocolate-chip-bread/",
+    "fetchedAt": "2026-08-01T23:21:30.378Z"
+  },
+  "rawSource": "https://annaolson.ca/project/basic-banana-chocolate-chip-bread/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

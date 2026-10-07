@@ -1,0 +1,35 @@
+{
+  "recipe": {
+    "name": "Bella Donna",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Rinse a glass with Ancho Reyes Verde, discarding the excess, then fill with ice. Shake all of the remaining ingredients with ice, then double strain into the prepared glass and add the garnish.",
+      "Bell Pepper-Infused AperolCombine 340 grams of freshly cut orange bell pepper with 1 liter of Aperol. Infuse for 6 hours, then strain and bottle. Use within 1 month."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "ac8e5258a777ee8b39f39652465132b0a638edd6926baa5ccc5f034ad4819d62",
+    "lineage_hash": "07732899d075ca686a63460f42488b33a0d948492c0972f9a1492b81ebf6d4ad"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bella-donna-from-the-courtesy/",
+    "fetchedAt": "2026-08-03T22:28:38.443Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bella-donna-from-the-courtesy/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

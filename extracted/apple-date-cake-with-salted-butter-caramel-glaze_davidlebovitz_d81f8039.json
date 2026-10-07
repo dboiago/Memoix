@@ -1,0 +1,210 @@
+{
+  "recipe": {
+    "name": "Apple Date Cake with Salted Butter Caramel Glaze",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "1. Butter a 9-inch (23cm) loaf pan and line the bottom with parchment paper. Preheat the oven to 350ºF (180ºC).",
+      "2. To make the cake, toss the date pieces in a small bowl with the rum or whiskey and set aside.",
+      "3. In a medium bowl, whisk together the flour, baking soda, cinnamon, ginger, allspice or cloves, and salt.",
+      "4. In the bowl of a stand mixer fitted with the paddle attachment, or by hand in a large bowl with a study spatula, cream the butter with the granulated and brown sugar at medium high speed until smooth. Beat in the egg.",
+      "5. By hand, stir in half of the dry ingredients, add the applesauce and vanilla, and stir in the remaining dry ingredients so they are partially mixed in. Fold in the dates (and any liquid in the bowl, if there is any) and mix just until the dry ingredients are incorporated and the dates are evenly dispersed. Do not overmix or the cake will be tough.",
+      "6. Scrape the batter into the prepared loaf pan and smooth the top. Bake until a toothpick inserted into the center comes out clean, about 1 hour. Remove from oven and let cool completely before glazing.",
+      "7. To make the glaze, heat the sugar and water in a medium-sized saucepan (about 4qts/4l) with a few drops of lemon juice. Cook until the sugar turns deep amber brown and starts to smoke, tilting the pan gently as the sugar cooks. (Check the post on making the perfect caramel.)",
+      "8. Remove from heat and stir in the butter until melted, then stir in the heavy cream, salt and vanilla until smooth. Let cool until it's just above room temperature, still slightly warm, so it reaches a spreadable consistency. Remove the cake from the pan and spoon the glaze over the cake. If desired, sprinkle a few grains of flaky salt over the top of the cake."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dates",
+        "unit": "C",
+        "notes": "220g, pitted and diced",
+        "amount": "1½",
+        "section": "Apple Date Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Rum",
+        "unit": "Tbsp",
+        "notes": "alt: whiskey",
+        "amount": "3",
+        "section": "Apple Date Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "C",
+        "notes": "230g",
+        "amount": "1¾",
+        "section": "Apple Date Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Apple Date Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Apple Date Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Ginger",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": "Apple Date Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Allspice",
+        "unit": "tsp",
+        "notes": "alt: cloves",
+        "amount": "¼",
+        "section": "Apple Date Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": "Apple Date Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": "4 ounces, 115g, at room temperature",
+        "amount": "8",
+        "section": "Apple Date Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": "150g",
+        "amount": "¾",
+        "section": "Apple Date Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Packed Light Brown Sugar",
+        "unit": "C",
+        "notes": "60g",
+        "amount": "⅓",
+        "section": "Apple Date Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": "at room temperature",
+        "amount": "1",
+        "section": "Apple Date Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Unsweetened Applesauce",
+        "unit": "C",
+        "notes": "240g",
+        "amount": "1",
+        "section": "Apple Date Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Apple Date Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": "100g",
+        "amount": "½",
+        "section": "Salted Butter Caramel Glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "60ml",
+        "amount": "¼",
+        "section": "Salted Butter Caramel Glaze",
+        "isOptional": false
+      },
+      {
+        "name": "A Few Drops Fresh Lemon Juice",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Salted Butter Caramel Glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Salted Butter",
+        "unit": "Tbsp",
+        "notes": "at room temperature, cubed",
+        "amount": "3",
+        "section": "Salted Butter Caramel Glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "Salted Butter Caramel Glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt",
+        "unit": "tsp",
+        "notes": "alt: kosher salt",
+        "amount": "¼",
+        "section": "Salted Butter Caramel Glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Salted Butter Caramel Glaze",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "63b2ac008acf92d115493426691112cb0e65411a7e41ba0c86305a7a7b2614ea",
+    "lineage_hash": "b079181699fd55af40620baf5a82aec22fb4fd3c75753b1273229611ed6df501"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/apple-date-cake-salted-caramel-glaze-recipe/",
+    "fetchedAt": "2026-08-02T20:49:47.956Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/apple-date-cake-salted-caramel-glaze-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

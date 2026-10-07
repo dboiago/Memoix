@@ -1,0 +1,126 @@
+{
+  "recipe": {
+    "name": "Anchovy Pie",
+    "time": "1 hr 45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the flour in a bowl with the softened butter and a pinch of salt and knead it with your hands. Add 1/4 cup water and continue kneading to obtain a smooth and elastic shortcrust dough. Cover with plastic wrap and place in the refrigerator for at least 2 hours to help it become more elastic and easier to roll out.",
+      "Clean the anchovies: remove the heads, slice them open like a book and remove the guts and scales, including the tail.&nbsp;",
+      "Mix the egg yolks, cream, milk and mustard for a sauce.",
+      "Clean and coarsely chop the radicchio. Spoon the ricotta into the pan in large dollops, then add the radicchio, anchovies and spinach and sprinkle with the sauce. Bake in a convection oven for 45 minutes. Remove from the oven and serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All Purpose Flour",
+        "unit": null,
+        "notes": null,
+        "amount": "1¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stick of Butter",
+        "unit": null,
+        "notes": "softened",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Firm Ricotta Cheese",
+        "unit": "oz",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Radicchio",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Spinach",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Anchovies",
+        "unit": null,
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "917b6e15364782f25235c1cdff7237713bb3452dfb4ca7a121ce9a28a6a1e694",
+    "lineage_hash": "734d67064ceb0c43a48746b1e39b92200bc0abcee4187d59259c180bd4730b88"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/main-course/anchovy-pie",
+    "fetchedAt": "2026-08-02T13:36:35.660Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/main-course/anchovy-pie",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

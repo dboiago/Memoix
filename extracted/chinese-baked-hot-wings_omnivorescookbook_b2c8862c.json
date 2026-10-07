@@ -1,0 +1,196 @@
+{
+  "recipe": {
+    "name": "Chinese Baked Hot Wings",
+    "time": "2 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "478",
+      "carbohydrateContent": "10.2",
+      "fatContent": "17.6",
+      "proteinContent": "65.8"
+    },
+    "directions": [
+      "Mix the marinade in a big bowl. Toss the wings with the marinade. Marinate overnight in the fridge or at room temperature for at least one hour.",
+      "Mix the dry rub. Pat dry the marinated chicken wings before tossing the marinated wings with the dry rub. It is very important to dry out the wings, so they yield a crispy texture after baking.",
+      "Bake at 250°F for 30 minutes. This process slowly cooks the inside of the chicken so it remains juicy. The fat is rendered off from the skin. Then bake at 450°F for another 15 minutes, to crisp up the skin.",
+      "Cook the dipping sauce during baking the chicken. Saute the doubanjiang and ginger until fragrant, then cook with vinegar and Shaoxing wine. Once done, add honey and blend the sauce with an immersion blender until smooth.",
+      "Once the wings are baked, they will be crispy on the outside and extra juicy inside. The dipping sauce is on the salty side, due to the doubanjiang. I highly recommend brushing a thin layer of the sauce onto the wings instead of dipping the wings in the sauce."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Wings",
+        "unit": "lb",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil Spray",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Doubanjiang",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": "or dry sherry",
+        "amount": "1",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Dry Rub",
+        "isOptional": false
+      },
+      {
+        "name": "Chili Flakes",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Dry Rub",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Dry Rub",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Dry Rub",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Dry Rub",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Hot Sauce (*Footnote 1)",
+        "isOptional": false
+      },
+      {
+        "name": "Doubanjiang",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Hot Sauce (*Footnote 1)",
+        "isOptional": false
+      },
+      {
+        "name": "\" Ginger",
+        "unit": null,
+        "notes": "grated",
+        "amount": "1",
+        "section": "Hot Sauce (*Footnote 1)",
+        "isOptional": false
+      },
+      {
+        "name": "Rice Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "4",
+        "section": "Hot Sauce (*Footnote 1)",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "tsp",
+        "notes": "or dry sherry",
+        "amount": "2",
+        "section": "Hot Sauce (*Footnote 1)",
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "Hot Sauce (*Footnote 1)",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": "Hot Sauce (*Footnote 1)",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d3d3e99a23a8c8e2aeb5a600ea34167c95cb22bd509a70a0983e7999919f9040",
+    "lineage_hash": "c90f4a694f3675b1be874237c8df1ffe147d1e2a75d830367b29dcaed92d56e0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/chinese-baked-hot-wings/",
+    "fetchedAt": "2026-08-02T07:55:36.881Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/chinese-baked-hot-wings/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

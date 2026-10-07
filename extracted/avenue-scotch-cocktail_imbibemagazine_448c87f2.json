@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Avenue Scotch Cocktail",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all of the ingredients into a shaker with ice, then shake vigorously. Double strain into a coupe, then garnish.",
+      "Passion fruit syrup: Combine 3 parts simple syrup (1:1) with 1 part passion fruit purée. Store in the refrigerator for up to 2 weeks.",
+      "Ginger Syrup: Combine 1 part fresh ginger (by volume) with 1 part cold simple syrup (1:1). Blend on high for 1 minute, then strain. Store in the refrigerator for up to 2 weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "8191b7fa2ffa5cb5ed4a38fd1abfde400184b3d5c6134951ebca8a5d9f3cf9c9",
+    "lineage_hash": "560ab2a35e431e262d7faa8b921517aa2029058d9b9826cc39ff2529d5c43c28"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/avenue-scotch-cocktail/",
+    "fetchedAt": "2026-08-03T18:18:38.031Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/avenue-scotch-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

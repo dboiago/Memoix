@@ -1,0 +1,138 @@
+{
+  "recipe": {
+    "name": "Apricot and Thyme Sourdough Bread",
+    "time": "24 hr 50 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "(9:00 p.m.)In a small bowl or jar, mix the Levain ingredients. Cover the jar and keep it at a warm temperature for 12 hours.",
+      "(8:30 a.m)In a mixing bowl, add the flour and water 1 and mix until no dry bits remain. Cover the bowl and let rest for 30-minutes.",
+      "(9:00 a.m.)Add the about half the water 2, salt, and levain to the top of the dough that was just in autolyse. With wet hands, mix thoroughly. Next, knead the dough for a few minutes until elastic and slightly smooth. Add the thyme, lemon zest, and, if it feels like the dough can handle it, the remaining water 2. Mix by pinching and folding until the ingredients are thoroughly incorporated and the dough is cohesive. Transfer the dough back to the bowl or to a container for bulk fermentation and cover.",
+      "(9:30 a.m. to 12:30 p.m.)This dough will need 2 sets of stretches and folds during bulk fermentation where the first set starts after 30 minutes into bulk fermentation and the subsequent sets are at 30-minute intervals. During the first set of stretches and folds, add the apricots you perform each stretch and fold. After the second set of stretches and folds, let the dough rest, covered, for the remainder of bulk fermentation.",
+      "(12:30 p.m.)Use water and a wet hand or lightly flour your work surface (whichever you prefer) and scrape out your dough. Using your bench knife, divide the dough in half. Lightly shape each half into a round shape. Let the dough rest for 35 minutes, uncovered.",
+      "(1:05 p.m.)Lightly flour the top of your preshaped rounds and using floured hands, shape the dough into an oval (batard) or round (boule) shape, then place the dough in proofing baskets, seam side up.",
+      "(1:15 p.m. to 9:00 a.m. the next day)Cover proofing baskets with reusable plastic and seal. Then, place both baskets into the refrigerator and proof overnight.",
+      "(The next day, 9:00 a.m.)Preheat your oven with a baking surface or combo cooker/Dutch oven inside to 450°F (230°C). When the oven is preheated, remove your dough from the fridge, score it, and transfer it to the preheated baking surface or combo cooker. Bake for 20 minutes with steam. After this time, vent the steam in the oven or remove the lid (you can keep it in the oven or remove it) and continue to bake for 30 minutes longer. When done, the internal temperature should be around 204°F (95°C). Let the loaves cool for 2 hours on a wire rack before slicing."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "White Flour",
+        "unit": "g",
+        "notes": "about 11.5% protein",
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Wheat Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ripe Sourdough Starter",
+        "unit": "g",
+        "notes": "100% hydration",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Flour",
+        "unit": "g",
+        "notes": "about 11.5% protein",
+        "amount": "409",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Wheat Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "409",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apricots",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "g",
+        "notes": "fresh, minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Zest",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water 1",
+        "unit": "g",
+        "notes": null,
+        "amount": "548",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water 2",
+        "unit": "g",
+        "notes": null,
+        "amount": "63",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "99aed72c89259a35fc5f40871bdaf329e0b921ace691f0fb14b384a97a94c5b8",
+    "lineage_hash": "390326ff5cf9461a32dacf5e2205e289be06ddb2da2e4f6a85bba9b8eef8ba89"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.theperfectloaf.com/apricot-and-thyme-sourdough-bread/",
+    "fetchedAt": "2026-08-01T19:24:13.849Z"
+  },
+  "rawSource": "https://www.theperfectloaf.com/apricot-and-thyme-sourdough-bread/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

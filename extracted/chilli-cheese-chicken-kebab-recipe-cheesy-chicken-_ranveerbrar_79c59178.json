@@ -1,0 +1,212 @@
+{
+  "recipe": {
+    "name": "Chilli Cheese Chicken Kebab",
+    "time": "30-35 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Â In a bowl, add green chillies, boiled potato, fresh coriander leaves, ginger, chicken mince, garam masala powder, cheese blend and give it a good mix.",
+      "Divide the mixture into the medium size lemon balls and stuff with the cheese blend.",
+      "Â Apply on the tray and transfer the kebabs into the tray.",
+      "Â Keep it aside for further use.",
+      "Â In a pan, add oil, once it's hot, add prepared kebabs and cook on both sides for a while or until it's cooked.",
+      "Â Add garlic, chilli flakes, grated cheese, fresh cream and cook for 2-3 minutes.",
+      "Â Add grated cheese, chilli flakes, green chilli and give it a quick boil.",
+      "Â Finish it with fresh coriander leaves and transfer it into the serving platter or dish.",
+      "Â Garnish it with coriander sprig.",
+      "Â Serve hot with rumali roti."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "No. Green Chillies",
+        "unit": null,
+        "notes": "less spicy & chopped",
+        "amount": "2-3",
+        "section": "For Kebab Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Potato",
+        "unit": "large",
+        "notes": "boiled & mashed",
+        "amount": "1",
+        "section": "For Kebab Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "fresh, chopped",
+        "amount": "2-3",
+        "section": "For Kebab Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled & grated",
+        "amount": "1½",
+        "section": "For Kebab Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Kebab Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Gms Chicken Mince",
+        "unit": null,
+        "notes": null,
+        "amount": "600",
+        "section": "For Kebab Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Kebab Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Cheese Blend",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Kebab Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for greasing",
+        "amount": "0",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Cheese Blend",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1-2",
+        "section": "For Chilli Cheese Kebab",
+        "isOptional": false
+      },
+      {
+        "name": "Kebabs",
+        "unit": null,
+        "notes": "prepared",
+        "amount": "0",
+        "section": "For Chilli Cheese Kebab",
+        "isOptional": false
+      },
+      {
+        "name": "No. Garlic Cloves",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2-3",
+        "section": "For Chilli Cheese Kebab",
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Flakes",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Chilli Cheese Kebab",
+        "isOptional": false
+      },
+      {
+        "name": "Processed Cheese",
+        "unit": "C",
+        "notes": "grated",
+        "amount": "½",
+        "section": "For Chilli Cheese Kebab",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Fresh Cream",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Chilli Cheese Kebab",
+        "isOptional": false
+      },
+      {
+        "name": "Processed Cheese",
+        "unit": "Tbsp",
+        "notes": "grated",
+        "amount": "2-3",
+        "section": "For Chilli Cheese Kebab",
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Flakes",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chilli Cheese Kebab",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chilli",
+        "unit": null,
+        "notes": "less spicy & chopped",
+        "amount": "1",
+        "section": "For Chilli Cheese Kebab",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "tsp",
+        "notes": "fresh, chopped",
+        "amount": "1-2",
+        "section": "For Chilli Cheese Kebab",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ad7f14aebd9bb57227f050ba4fa7b0908fe7e9c703b3e9e9378b7f6a2dda4cf4",
+    "lineage_hash": "dd276225c5bd9ffd91dd1547179bb675a7b6d343e452d4ed1e20276e2585b6fd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/%e0%a4%ae%e0%a5%81%e0%a4%b0%e0%a5%8d%e0%a4%97%e0%a4%bc-%e0%a4%ae%e0%a4%b2%e0%a4%be%e0%a4%88-%e0%a4%95%e0%a4%ac%e0%a4%be%e0%a4%ac-creamy-chili-cheese-kebab-%e0%a4%ae%e0%a4%b2%e0%a4%be%e0%a4%88/",
+    "fetchedAt": "2026-08-02T21:13:37.383Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/%e0%a4%ae%e0%a5%81%e0%a4%b0%e0%a5%8d%e0%a4%97%e0%a4%bc-%e0%a4%ae%e0%a4%b2%e0%a4%be%e0%a4%88-%e0%a4%95%e0%a4%ac%e0%a4%be%e0%a4%ac-creamy-chili-cheese-kebab-%e0%a4%ae%e0%a4%b2%e0%a4%be%e0%a4%88/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,166 @@
+{
+  "recipe": {
+    "name": "Barbecued Lamb Wrap",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, bash all the ingredients for the marinade in a pestle and mortar or blitz in a blender. Transfer to a bowl and stir in the lamb, ensuring each piece is covered in the marinade. Set aside to marinate for 1 hour. Thread the lamb onto skewers and set aside",
+      "Once the grill is hot, pierce the aubergines a few times with a fork and place on the grill, turning every now and then until shrivelled and black all over. This should take about 20 minutes. Set aside to cool a little, scoop out the flesh and season with salt",
+      "To cook the lamb, place the skewers on the grill for a couple of minutes each side, until just cooked through",
+      "To assemble the wraps, smear each flatbread with a little aubergine, then top with herbs, lamb, feta, and chilli. Serve with a dollop of natural yoghurt if desired"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Flakes",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pomegranate Molasses",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "tsp",
+        "notes": "or red",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leg of Lamb",
+        "unit": "g",
+        "notes": "(boneless), diced",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flatbreads",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Mint",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Parsley",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Coriander",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Feta",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chillies",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Aubergines",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Natural Yoghurt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "663e646647fd805fc305d0c6a3c9e7be229ace92ba924dee0c90ad914ec40e5e",
+    "lineage_hash": "6b9f3b079129f338cd0db830fb816d5d432b599bcb8b42e9beb15d87aa48f969"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/barbecued-lamb-wrap-recipe",
+    "fetchedAt": "2026-08-03T12:53:34.857Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/barbecued-lamb-wrap-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

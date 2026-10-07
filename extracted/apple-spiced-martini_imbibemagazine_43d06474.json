@@ -1,0 +1,37 @@
+{
+  "recipe": {
+    "name": "Apple Spiced Martini",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Martini",
+    "garnish": [
+      "Apple Ribbon"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Rim a glass with the sugar and set aside. Combine all of the ingredients in a shaker and shake with ice to chill. Strain into the prepared glass and garnish with the apple ribbon.",
+      "Apple-Spiced Simple SyrupCombine 1 tsp. of ground cinnamon, 1 tsp. of ground ginger, 1 tsp. of ground allspice, 1 tsp. of ground nutmeg, 1 cup of granulated sugar, 1 slice of a red apple, 1/4-inch thick, and 1/2 cup water in a small saucepan, bring to a boil and stir to combine. Remove from heat and let cool to room temperature. Double strain into an airtight container and keep refrigerated for up to two weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "460b6b9b012de21806f100b5813f076d639c511420e3f3d656945ff6d1ac7a3c",
+    "lineage_hash": "f8015395e10e293b1a602302c09045dcde3f07012d360088081f9d215e789c47"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/apple-spiced-martini-recipe/",
+    "fetchedAt": "2026-08-03T21:31:37.711Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/apple-spiced-martini-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,103 @@
+{
+  "recipe": {
+    "name": "Caramelized Onion Cheese Braid",
+    "time": "1 hr 5 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Melt the butter in a large sauté pan over medium heat and add the onions. Cook for 5 minutes, stirring often, then reduce the heat to medium-low and continue cooking, stirring often, until the onions begin to turn golden brown, about 25 minutes.",
+      "Deglaze the pan with balsamic vinegar, stirring to remove any residue stuck to the pan, and cook for another 5 minutes. Remove the pan from the heat and season to taste with salt and pepper. Allow the onions to cool to room temperature before using, or make them ahead, chill and use right from the fridge.",
+      "Have ready a baking tray lined with parchment paper. Turn the chilled dough out onto a lightly floured surface and roll it into a 12 × 18-inch (30 × 45 cm) rectangle about ½ inch (1.2 cm) thick. Place the dough on the baking tray. Spread the caramelized onions along the length of the dough in a central band about 3 inches (7.5 cm) across. Leave 1 inch (2.5 cm) of dough exposed at each end. Top the onions with the grated cheese . Use a paring knife or pastry wheel to score the exposed dough at a 45-degree angle every ¾ inch (1.8 cm).",
+      "To create the braid, first fold the inch of dough at one short end over the onion and cheese. Pick up the two dough strips nearest that end. Fold the strip in your left hand over the cheese and onion filling, then fold the right one over the filling. Repeat with the remaining strips, alternating left then right and gently pulling the dough so it fully covers the filling as you work your way down the loaf. This folding creates the look of a braid. Just before you reach the end, fold the end piece of the dough over the filling and then fold the last few strips over the filling and this end piece. Tuck the last two strips under the braided loaf. Cover the bread with a tea towel and let sit on the counter for an hour to rise.",
+      "Preheat the oven to 350°F (180°C). Uncover the braid, brush it with the whisked egg and sprinkle with sesame seeds. Bake for about 45 minutes, until the braid is a rich golden brown. Let the braid cool for 10 minutes on the tray on a cooling rack before transferring it directly to the rack to cool for at least another 20 minutes before slicing."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Onions",
+        "unit": "C",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Balsamic Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": "and ground black pepper",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Recipe Rich Dough",
+        "unit": null,
+        "notes": "chilled overnight",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Old Cheddar",
+        "unit": "C",
+        "notes": "alt: Swiss cheese, coarsely grated",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "whisked, for brushing",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5c62946449f1131798b5c2cada63718a509ed2fa5e1a9b9e5d2bf83c7e20f6a6",
+    "lineage_hash": "1c2905ab88e3ac089ee8ed7363f2c3ecef9474c7e69fc7596e3424cba3589ee2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/caramelized-onion-cheese-braid/",
+    "fetchedAt": "2026-08-01T18:12:01.124Z"
+  },
+  "rawSource": "https://annaolson.ca/project/caramelized-onion-cheese-braid/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

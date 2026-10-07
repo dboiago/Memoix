@@ -1,0 +1,68 @@
+{
+  "recipe": {
+    "name": "Burnt Sugar Cream Sauce",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the sugar and water in a heavy saucepan, but do not stir. Cover the pan and place over high heat for 3 minutes. Uncover the pan and continue cooking the sugar until dark brown and very fragrant. Swirl the pan so the sugar browns evenly, but don’t stir. Take care not to get any molten sugar on your hands.",
+      "Remove the pan from the heat and add the cream. The mixture will bubble up like Mount Vesuvius—it’s supposed to. Return the pan to the heat and whisk until the cream is completely dissolved. Whisk in the vanilla. Let the sauce cool to room temperature, then pour it over the cheesecake or serve on the side."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heavy (whipping) Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c99e8456492694733aee4a8d274a55003a127917b99aeed575096c2b4b2da43b",
+    "lineage_hash": "afc73f9b42bf88890cac0c1ce0a51071854a15637d56fbaa855c11e4282b32d7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/burnt-sugar-cream-sauce/",
+    "fetchedAt": "2026-08-03T09:53:33.906Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/burnt-sugar-cream-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

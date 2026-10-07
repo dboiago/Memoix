@@ -1,0 +1,136 @@
+{
+  "recipe": {
+    "name": "Bitter Melon Egg Frittata",
+    "time": "35 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Massage bitter melon slices with the 1 teaspoon salt, set aside for 15 minutes. Rinse under cold running water, and drain thoroughly. Set aside.",
+      "Whisk together egg, dashi/stock, fish sauce, sugar, and ground pepper. Set aside.",
+      "In a frying pan, heat oil over medium high heat. Sauté garlic until fragrant, then add fried fish cake slices and stir for 1 minute.",
+      "Add bitter melon, sauté for 7-8 minutes.",
+      "Spread the items in the frying pan into one even layer, gently pour the egg mixture into the pan. Turn the heat to medium low, cover the pan, and cook for 6-7 minutes, or until the egg is fully set.",
+      "Turn the heat off. Cut the frittata into 4-8 pieces, garnish with scallion and nanami togarashi. Serve immediately with steamed white rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gram Bitter Melon",
+        "unit": null,
+        "notes": "halved, seeded, cut into 1/2-inch slices",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "lightly beaten",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dashi/chicken Stock",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fried Fish Cake",
+        "unit": "slice",
+        "notes": "*, cut into small pieces (1/4\"x1\")",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nanami Togarashi",
+        "unit": null,
+        "notes": "to sprinkle (optional)",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "81f7531be9bd6f7339503358832cdce928202bc9969126d9e0aca0f5ad442667",
+    "lineage_hash": "bf4c3b6f692ab02b177af5cdcf9a39e295a5b5bb438c67f72678d8533b335f6e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/bitter-melon-egg-frittata.html",
+    "fetchedAt": "2026-08-02T00:55:38.821Z"
+  },
+  "rawSource": "https://dailycookingquest.com/bitter-melon-egg-frittata.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

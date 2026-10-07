@@ -1,0 +1,131 @@
+{
+  "recipe": {
+    "name": "Chinese Spicy Potato Salad",
+    "time": "15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "274",
+      "carbohydrateContent": "24",
+      "fatContent": "18",
+      "proteinContent": "7"
+    },
+    "directions": [
+      "Thinly slice the potatoes and then soak in clean water for couple of minutes to remove the extra starch.",
+      "Bring water to a boil and then cook the potato slices for 2-3 minutes. Transfer out and soak in cold water. Drain and set aside.",
+      "Prepare another small pan, add 1 tablespoon of cooking oil and fry garlic and scallions until aromatic. Place light soy sauce, cumin powder, chili oil, salt, sugar, vinegar, sesame oil and sesame seeds in. Mix well",
+      "Mix the sauce with the potato slices with a small bunch of coriander. Serve directly."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Potatoes",
+        "unit": "small",
+        "notes": "tiny sliced",
+        "amount": "3-4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Chili Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": null,
+        "notes": null,
+        "amount": "4-5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b32ae0af16c9f59c61da80276d68e51c3cb8b54fcdb5cd2fab78ab33fddf1121",
+    "lineage_hash": "5652393d9151ca9b56253d48dcb0b150501df6b9329843103f7314daa02d40b3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/chinese-spicy-potato-salad/",
+    "fetchedAt": "2026-08-02T04:05:59.410Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/chinese-spicy-potato-salad/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

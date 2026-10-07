@@ -1,0 +1,104 @@
+{
+  "recipe": {
+    "name": "Air fryer Brown stew chicken",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "JM",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Prepare the chicken",
+      "Season",
+      "Brown the chicken",
+      "Cook the vegetables",
+      "Make the sauce",
+      "Finish the dish"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken",
+        "unit": "kg",
+        "notes": "chopped into 3",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Seasoning",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Browning",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b3c82daeee402b4482ba6a4cee6ce9fd71415cdab73b298caa3c7778f02d89dc",
+    "lineage_hash": "8cc53fa71b2237035240603a16a6cea4e7189a42441f7f1dfc4c56a283bc4d3f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://originalflava.com/meals/air-fryer-brown-stew-chicken/",
+    "fetchedAt": "2026-09-30T17:15:47.831Z"
+  },
+  "rawSource": "https://originalflava.com/meals/air-fryer-brown-stew-chicken/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

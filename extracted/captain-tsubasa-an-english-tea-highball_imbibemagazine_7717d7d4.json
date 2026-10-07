@@ -1,0 +1,35 @@
+{
+  "recipe": {
+    "name": "Captain Tsubasa: An English Tea Highball",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Highball",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Fill a glass with ice cubes and add a splash of chilled soda. Add the tea syrup and whisky, then fill with more soda. Dash the bitters on top of the drink, then garnish.",
+      "English Tea SyrupCombine equal parts strong-steeped English Breakfast tea and granulated sugar, and stir until the sugar dissolves. Keeps refrigerated for up to 1 month."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "a3909c766adeba62d987b77e006a728ba58d563e30f3cd15779a909041a96d38",
+    "lineage_hash": "8a564a5b1ad1e67acf8fe0c877abbd6cf218b623aabb03f5e01c6d63032696c2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/captain-tsubasa-english-tea-highball/",
+    "fetchedAt": "2026-08-03T22:12:20.581Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/captain-tsubasa-english-tea-highball/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

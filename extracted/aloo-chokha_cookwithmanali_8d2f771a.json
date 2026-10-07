@@ -1,0 +1,98 @@
+{
+  "recipe": {
+    "name": "Aloo Chokha",
+    "time": "29 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "123",
+      "carbohydrateContent": "25",
+      "fatContent": "2",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "Wash 500 gram potatoes and then cut them in half, add them to a pot and then fill the pot with water. Boil on a stove-top on medium-high heat until potatoes are soft and complete cooked. This takes around 20 minutes on stove-top. You can also do this step in a pressure cooker or using a microwave.",
+      "Drain the water and let the potatoes cool slightly and then remove the potato skin. Transfer them to a large bowl and mash them using a potato masher.",
+      "Now, to the bowl add 1 small red onion (chopped), ½ teaspoon salt, 1-2 green chilies, 1 & ¼ teaspoon mustard oil, 1 & ½ teaspoon achar masala, and 2-3 tablespoons cilantro (chopped). Mix and mash everything together using a fork or potato masher. Aloo chokha is ready! Taste test and adjust salt/spice levels as needed."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Grams Potatoes",
+        "unit": null,
+        "notes": "yukon gold potatoes",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "small",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilies",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "& ¼ Teaspoon Mustard Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "& ½ Teaspoon Achar Masala",
+        "unit": null,
+        "notes": "pickle, use the achar masala from your favorite achar",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "44fd01b188e0ca79289400e01b036b5fbff60121ec3122807f1f31e27d586029",
+    "lineage_hash": "232ef25d45808d8d436c60c8e7fc08b53821dac39c98609b65e6153bcaf65508"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/aloo-chokha/",
+    "fetchedAt": "2026-08-02T09:13:18.893Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/aloo-chokha/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,171 @@
+{
+  "recipe": {
+    "name": "Candied Bacon and Chocolate Tartlet",
+    "time": "40 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "First make your sweet pastry (or pâte sucrée) by blending the butter, icing sugar, plain flour and egg in a food processor and mix until everything comes together into a ball of dough. Wrap in clingfilm and leave to rest in the fridge for an hour",
+      "Preheat your oven to 160°C/gas mark 3 and butter four individual 10cm tart tins",
+      "Next make your candied bacon by frying the streaky pieces in a pan until they are cooked through and slightly crispy. Place in a bowl and stir through the golden syrup. To refine further, place in a blender or food processor and pulse very briefly to make smaller nuggets",
+      "To make the chocolate filling, put the cream and sugar into a saucepan and bring to the boil. Remove from the heat, add the chocolate and mix until melted. Stir in roughly two-thirds of the bacon nuggets (keeping some back for presentation)",
+      "Pour the chocolate and bacon sauce into the cooked pastry cases, then leave to set at room temperature for an hour or so (this will keep the chocolate filling shiny)",
+      "To make the pork scratching snap, place the sugar in a saucepan and gently heat until it melts and forms a caramel. Jiggle the saucepan slightly to help it on its way and do keep an eye on it, as in my experience it can burn very quickly",
+      "Add the butter and the chopped pork scratchings and mix together. Then pour onto a sheet of greaseproof paper, spreading thinly with a pallet knife. Leave to cool and set, then cut or smash with the back of a knife to create shards",
+      "Finally, make the caramel sauce by heating the butter and sugar together in a saucepan, take off the heat and then mix through the cream",
+      "To serve, drizzle the caramel sauce over your plate of choice, place the chocolate tart on top, add a quenelle of crème fraiche and a shard of the pork scratching snap and then dot a small spoonful of the remaining candied bacon onto the crème fraiche. Enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "chilled and cubed",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate Pellets",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Streaky Bacon",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Syrup",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pork Scratchings",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crème Fraîche",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "02c7570c84d97980eaf8a5ca160d813dd33955ad19d02bffda7375cdbaedd5b1",
+    "lineage_hash": "68bc84c6ea89ba0864c230cfe0a7e858dd04e5ffb3a3b32568aa423fe88c14f6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/candied-bacon-chocolate-tartlet-recipe",
+    "fetchedAt": "2026-08-03T22:47:04.672Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/candied-bacon-chocolate-tartlet-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

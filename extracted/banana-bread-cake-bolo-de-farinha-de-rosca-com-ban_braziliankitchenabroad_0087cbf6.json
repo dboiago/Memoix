@@ -1,0 +1,235 @@
+{
+  "recipe": {
+    "name": "Banana Bread Cake (Bolo de Farinha de Rosca com Banana)",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "BR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "482",
+      "carbohydrateContent": "73",
+      "fatContent": "18",
+      "proteinContent": "9"
+    },
+    "directions": [
+      "In a small bowl, whisk the milk, the vanilla and the egg together to combine.",
+      "Then, mix in the sugar and the cinnamon, and whisk until homogenous.",
+      "Finally, add in the breadcrumbs to soak in the mixture, and set aside.",
+      "Reserve the banana slices for the final assembly, and move on to make the cake.",
+      "Preheat oven to 350F/180C.",
+      "Grease a 10 inch pie plate, or cake pan with butter, or cooking spray – set aside.",
+      "In a medium bowl, add in the breadcrumbs, the cinnamon, the baking powder and the pinch of salt – whisk to combine and set aside.",
+      "Next, add the bananas, the milk, the sugar, and the oil to a blender, and pulse to combine. Then, add in the eggs and the vanilla, and pulse a few more times.",
+      "Pour the liquid mixture over the bowl with the breadcrumbs mixture and gently fold using a silicone spatula until fully incorporated. Don't forget to scrape the sides of the bowl, too.",
+      "Pour the batter into the greased pan, then using a slotted spoon to drain excess liquid, scoop the crumb topping and place it on top of the batter.",
+      "Arrange the banana slices on top, and sprinkle with a little cinnamon and sugar.",
+      "Bake until a cake tester/toothpick inserted to the middle comes out lightly crumbly"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Crumb Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Crumb Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Crumb Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Crumb Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Crumb Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Breadcrumbs",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Crumb Topping",
+        "isOptional": false
+      },
+      {
+        "name": "A Large Banana",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "½",
+        "section": "Crumb Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Ripe Bananas About 3-4 Bananas",
+        "unit": "C",
+        "notes": null,
+        "amount": "1.5",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Fine Breadcrumbs/farinha De Rosca",
+        "unit": "C",
+        "notes": null,
+        "amount": "2.5",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Caramel Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Caramel Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Caramel Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Caramel Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Caramel Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Caramel Sauce",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "22ac70c16c2eb7af0d5b2376619622146297b98c7bdf844ac41b63426c683103",
+    "lineage_hash": "89bc63fa8bfb3e8e21be33cf9bb176f3f4374f65cff6421b686169a18ffcf3d5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://braziliankitchenabroad.com/banana-bread-cake-bolo-de-farinha-de-rosca-com-banana/",
+    "fetchedAt": "2026-09-25T20:14:31.530Z"
+  },
+  "rawSource": "https://braziliankitchenabroad.com/banana-bread-cake-bolo-de-farinha-de-rosca-com-banana/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

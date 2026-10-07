@@ -1,0 +1,113 @@
+{
+  "recipe": {
+    "name": "Coconut Ice Cream",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the custard to 2 cups water and stir over low heat.",
+      "Continue stirring until the custard thickens.",
+      "Make the coconut milk. Here we’re using the blender method. It would take 2 cups of water to blend the coconut.",
+      "In a large bowl mix the custard, coconut milk, evaporated milk, condensed milk, cornstarch, sugar and mixed essence.",
+      "Strain the mixture while pouring it into the can. Set the dasher inside. Fill 3/4 of the can with the mixture.",
+      "Place the can inside the pail and assemble the crank.",
+      "Add ice and salt and turn the crank until it gets stiff to turn."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Coconut",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tins Evaporated Milk",
+        "unit": null,
+        "notes": "410g x 2",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tins Condensed Milk",
+        "unit": null,
+        "notes": "390g x 4",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "1 Pk Custard",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "divided",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Essence",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "2 Pks Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ba8bb085a43aa9cd1ed6075cdb520e59ba6b9d3b05f3b9a67979c18b21b9c8c5",
+    "lineage_hash": "e2c5b3969d57fe4cbe9a46f59500e0ff6be2ef31d1058fb225c24a22747ff2ae"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.simplytrinicooking.com/coconut-ice-cream/",
+    "fetchedAt": "2026-09-26T01:45:36.271Z"
+  },
+  "rawSource": "https://www.simplytrinicooking.com/coconut-ice-cream/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,92 @@
+{
+  "recipe": {
+    "name": "Bourbon Butterscotch Sauce",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a large pot, heat the butter, brown sugar, corn syrup, heavy cream, salt, vanilla and ½ cup bourbon, stirring until smooth. Continue to cook the sauce over medium-low heat, stirring frequently with a heatproof spatula, until the brown sugar has melted. Continue cooking for about 15 minutes, watching it carefully and stirring occasionally, until the sauce has thickened and reduced. It’s done when the sauce is thick enough to coat a spatula when you lift it.",
+      "Remove from heat and when it’s cooled down enough to taste, add additional bourbon, and more salt if necessary, to taste."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "225g, cubed",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Brown Sugar",
+        "unit": "lb",
+        "notes": "2¼ packed cups, 450g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Corn Syrup",
+        "unit": "C",
+        "notes": "60ml, or rice, malt, or golden syrup",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "C",
+        "notes": "250ml",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea",
+        "unit": "tsp",
+        "notes": "alt: kosher salt",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bourbon",
+        "unit": "C",
+        "notes": "125ml, plus additional for finishing the sauce",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1193f150d082c627f9eed576ae58c08660b738b14de306de3b54df617fbdc2ed",
+    "lineage_hash": "d49f546ccae2a9f5c70e4b13ebd2a9531f4808bf716a2e0f5c30db13692086dd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/bourbon-butterscotch-sauce-recipe/",
+    "fetchedAt": "2026-08-03T03:05:25.899Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/bourbon-butterscotch-sauce-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

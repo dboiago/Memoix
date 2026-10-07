@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Agua de Jamaica: Hibiscus Tea",
+    "time": "30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a large pot, add the sugar to the 2 1/2 quarts of water. Bring to a boil, stirring to ensure all the sugar dissolves. While the water is heating, slice the fresh ginger into coin-sized rounds. Remove the pot from the heat and add the hibiscus, cinnamon, allspice and ginger. Stir to incorporate, then cover and allow the mixture to steep for 30 minutes. Strain the mixture through a strainer lined with cheesecloth and discard the solids. Funnel the liquid into airtight containers and store in the refrigerator. This concentrated infusion should be diluted with equal parts water to serve as tea. Use within 2 weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "46661e894887531543c80ce221acee452d74eb3cf5f883ca741c393b3867ea0b",
+    "lineage_hash": "b63f6871e12637a76799053ff96848637c03c75b8fbfb944e89540bf2feead8b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/hibiscus-tea/",
+    "fetchedAt": "2026-08-03T20:45:09.056Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/hibiscus-tea/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

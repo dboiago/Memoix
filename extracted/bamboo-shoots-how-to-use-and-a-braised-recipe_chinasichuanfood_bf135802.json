@@ -1,0 +1,74 @@
+{
+  "recipe": {
+    "name": "Bamboo Shoots, how to use and a braised recipe",
+    "time": "1 hr 30 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "112",
+      "carbohydrateContent": "20",
+      "fatContent": "3",
+      "proteinContent": "4"
+    },
+    "directions": [
+      "How to prepare fresh bamboo shoot for cookingCut the bamboo shoot into smaller pieces.Bring a large pot of water to a boiling and then place the bamboo shoots in.Cook for 4-5 minutes (or 7-8 minutes for larger pieces). Transfer out and then soak in clean water for at least 10 hours. Change the water twice during this soaking process. This helps to remove the bitter taste (possibly contained in fresh bamboo shoots ) of the fresh bamboo shoots.",
+      "Heat oil over fire with high fire and then place bamboo shoot in, fry for 1 minute until slightly softened.",
+      "Add soy sauce and sugar. Cover the lid and slow down the fire and simmer for another 4 minutes. Uncover and continue cooking for a while until the sauce are almost attached to the bamboo shoots."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bamboo Shoot",
+        "unit": "g",
+        "notes": "pre-treated with boiling and soaking or you can use packaged ones.",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "1.5  tbsp. light soy sauce + 0.5 tbsp. dark soy sauce",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rock Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4d2ef12ef414efef77ac79fee8e26f628edfabcdfd6851ccde3a8c463eb50f99",
+    "lineage_hash": "5e6639fa832eb6065284d5537caae35d64830ef9f7f33ba51a7e113c2e4858ad"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/braised-bamboo-shoots/",
+    "fetchedAt": "2026-08-02T05:48:50.383Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/braised-bamboo-shoots/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

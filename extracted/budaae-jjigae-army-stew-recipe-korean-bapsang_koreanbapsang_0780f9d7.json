@@ -1,0 +1,173 @@
+{
+  "recipe": {
+    "name": "Budaae Jjigae (Army Stew)",
+    "time": "15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "KR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cut the ingredients into bite size pieces, and arrange them in a medium size shallow pot. Mix all the seasoning ingredients in a small bowl.",
+      "Add the broth, and stir in the seasoning.",
+      "Cook over medium high heat until the bacon is cooked through and the kimchi has softened. Add the optional ramyeon noodles and more broth or water if necessary. (The noodles soak up a lot of the liquid, so I briefly cook the ramyeon noodles in a separate pot of water before adding to the stew.)"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Baechu (napa Cabbage) Kimchi",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Dogs",
+        "unit": null,
+        "notes": "or sausages",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strips Bacon (or About 3 Ounces Fatty Pork)",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spam",
+        "unit": "can",
+        "notes": "about 4 ounces",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tofu",
+        "unit": "oz",
+        "notes": "about 1/2-inch thick, sliced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "thinly sliced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mushroom Caps",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "3-4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "cut into 2 inch pieces",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Bell Pepper",
+        "unit": null,
+        "notes": "sliced - optional",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Anchovy Broth (or Beef or Chicken Stock) More If You Want Extra Broth. You Can Also Use Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gochugaru (korean Red Chili Pepper Flakes) Use More for a Spicier Stew",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Seasoning",
+        "isOptional": false
+      },
+      {
+        "name": "Gochujang",
+        "unit": "tsp",
+        "notes": "Korean red chili pepper paste",
+        "amount": "1",
+        "section": "Seasoning",
+        "isOptional": false
+      },
+      {
+        "name": "Soup Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "or salt to taste",
+        "amount": "1",
+        "section": "Seasoning",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "Tbsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": "Seasoning",
+        "isOptional": false
+      },
+      {
+        "name": "Broth",
+        "unit": "Tbsp",
+        "notes": "alt: water",
+        "amount": "1-2",
+        "section": "Seasoning",
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Seasoning",
+        "isOptional": false
+      },
+      {
+        "name": "Package Instant Ramyeon Noodles Pre-boil Right Before Adding to the Stew to Keep Them From Absorbing Too Much Liquid From the Stew",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Optional",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d30aaf06bc39f5ba40454ba4190d2da9a02f0f0b96b252f8d7ecc4a14a2daa6d",
+    "lineage_hash": "a7aad38c143aefacf7895b11732fc5ed7fb9783e8d59669526fd089ecd6bfbbd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.koreanbapsang.com/budae-jjigae-army-stew/",
+    "fetchedAt": "2026-08-01T17:31:12.071Z"
+  },
+  "rawSource": "https://www.koreanbapsang.com/budae-jjigae-army-stew/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,136 @@
+{
+  "recipe": {
+    "name": "Barbecued Broccoli with Satay Sauce",
+    "time": "1 hr 45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, make the smoked peanuts. Preheat the barbecue to 100°C and set up for indirect cooking. Once up to temperature, add wood chips or chunks to your barbecue (you can use any variety that you like), close the lid and allow the barbecue to fill with smoke",
+      "Put the peanuts in a small dish or roasting tray and smoke in the barbecue (with the lid closed) until they’re golden brown and dry, around 50 to 60 minutes. Try to keep them in a single layer if possible as they'll absorb more flavour from the smoke. Once smoked to your liking, remove and set aside",
+      "Increase the temperature of the barbecue to 200°C and set it up for direct cooking. Cut the broccoli heads in half lengthways and dress in peanut oil. Season lightly with salt and pepper and place cut-side down on the barbecue. Close the lid and cook for 20 minutes. Keep an eye on them to make sure they don't get too burnt underneath",
+      "Once the broccoli have been cooking for 20 minutes, cut the limes in half, sprinkle with a pinch of caster sugar and place next to the broccoli. Close the lid and cook both for a further 10 minutes",
+      "While the broccoli and limes are cooking, add all of the satay sauce ingredients to a blender and blitz together, adding a splash of water to loosen",
+      "Slice your broccoli halves in half again lengthways to make them into quarters. Spoon some of the peanut sauce onto the plate and stack the broccoli on top. Drizzle over the chilli oil and finish with crushed smoked peanuts, coriander leaves and charred lime halves"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Broccoli",
+        "unit": "heads",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Peanuts",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": "finely grated",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "finely grated",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Butter",
+        "unit": "g",
+        "notes": "smooth",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tamari",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Palm Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "bunch",
+        "notes": "leaves picked",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Limes",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "731ca4bb9e2fa38136ac2a6f397d126fdd907b67224100d77ebecc3d174a955c",
+    "lineage_hash": "ceb6b967b5b595835db4ac7a135d08d5da4a3d1b9b76f35079d5f9bc3d34926f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/barbecue-broccoli-recipe-satay-sauce",
+    "fetchedAt": "2026-08-03T07:39:01.335Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/barbecue-broccoli-recipe-satay-sauce",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,82 @@
+{
+  "recipe": {
+    "name": "Advent Calender Gingerbread Biscuit",
+    "time": "45 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Beat the butter & sugar together until pale & creamy",
+      "Beat in the flour & ginger until it starts to come together (add a little water if needed)",
+      "Form together into a smooth ball with your hands",
+      "Roll out on a lightly floured surface to approx. 3-4mm thick",
+      "Cut out hearts and stars with a cookie cutter",
+      "Bake in a preheated 170°C oven for 10-12 minutes until light golden in colour",
+      "Allow to cool on a wire rack before decorating",
+      "Cut out numbers 1-24 with coloured icing and stick onto the biscuits with a little water"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "softened",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "375",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Ginger",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coloured Fondant Icing",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "26df9ac33da54a97a34d109f06d67beb1034d3e7dc74a6fb3920bf237e56a904",
+    "lineage_hash": "b097335a6a34c7aaf521ae337523382c92522553051a9e61548b0984714d1155"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/advent-calender-gingerbread-biscuits",
+    "fetchedAt": "2026-08-03T16:06:26.608Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/advent-calender-gingerbread-biscuits",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,49 @@
+{
+  "recipe": {
+    "name": "Cherry-Glazed Baby Back Ribs with Cherry Barbecue Sauce",
+    "time": "4 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Set up your smoker according to the manufacturer’s instructions and preheat to 225 degrees.",
+      "Arrange the ribs on a rimmed baking sheet.",
+      "Make the rub: Combine the brown sugar, paprika, pimentón, salt, pepper, cumin, coriander, fennel seed, and cayenne in a small bowl and stir to mix, breaking up any lumps in the brown sugar with your fingers.",
+      "Sprinkle the rub on the ribs on both sides, rubbing the mixture into the meat.",
+      "Arrange the ribs in the smoker. (If not using a rib rack, place them bone-side down.) Add half the wood chips to the firebox. Smoke the ribs until almost tender, 3 hours, adding the remaining wood chips after 1 hour. Replenish the coals as needed.",
+      "Brush the racks of ribs on both sides with cherry syrup. Continue smoking the ribs until they are very tender (you should be able to pull the individual ribs apart easily with your fingers), 1 hour more, 4 hours in all. Baste the ribs twice during the last hour—the cherry syrup should cook to a sticky glaze.",
+      "Brush each rack with cherry syrup one final time before serving. Serve the slabs whole, or cut in half or into individual bones."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Racks Baby Back Ribs (each 2 to 2-1/2 Pounds)",
+        "unit": null,
+        "notes": "membrane removed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "20fb6e75114f3e7a0de7749859d2ef540edfc15e86d7bb45ada86e7a941aa200",
+    "lineage_hash": "678faee02b9bb896bcdcd4f2c57c64759dd31331c483d2fdd3b0d18d8138310d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/cherry-glazed-baby-back-ribs-with-cherry-barbecue-sauce/",
+    "fetchedAt": "2026-08-03T10:18:02.845Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/cherry-glazed-baby-back-ribs-with-cherry-barbecue-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

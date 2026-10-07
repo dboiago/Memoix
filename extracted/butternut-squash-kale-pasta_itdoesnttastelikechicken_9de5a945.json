@@ -1,0 +1,139 @@
+{
+  "recipe": {
+    "name": "Butternut Squash & Kale Pasta",
+    "time": "45 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "196",
+      "carbohydrateContent": "29",
+      "fatContent": "8",
+      "proteinContent": "4"
+    },
+    "directions": [
+      "To roast the butternut squash: Preheat your oven to 425F (220C). Spread the squash cubes on a large baking sheet, drizzle the oil, and sprinkle with salt. Toss to coat. Bake for 20 to 25 minutes, flipping halfway through&nbsp;until squash pieces are golden and fork tender.",
+      "To make the pasta: Cook the spaghetti noodles according to package directions until al dente.",
+      "In a large skillet or frying pan, heat the olive oil and sauté the onions and garlic until the onions have softened. Add the kale and balsamic vinegar, and cook a couple minutes more until the kale is wilted.",
+      "Toss in the roasted butternut squash and the cooked spaghetti and toss to combine. Sprinkle with Parmegan to taste."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butternut Squash",
+        "unit": "small",
+        "notes": "around 4 ½ cups, peeled and cut into cubes",
+        "amount": "1",
+        "section": "butternut squash",
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "butternut squash",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "butternut squash",
+        "isOptional": false
+      },
+      {
+        "name": "Packages Tofu Shirataki Spaghetti Shape",
+        "unit": null,
+        "notes": "8 oz, 226g",
+        "amount": "2",
+        "section": "pasta",
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "pasta",
+        "isOptional": false
+      },
+      {
+        "name": "A Red Onion",
+        "unit": null,
+        "notes": "you can use other onions, but red is pretty, sliced",
+        "amount": "½",
+        "section": "pasta",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "2",
+        "section": "pasta",
+        "isOptional": false
+      },
+      {
+        "name": "A Bunch of Kale",
+        "unit": null,
+        "notes": "destemmed and roughly chopped",
+        "amount": "½",
+        "section": "pasta",
+        "isOptional": false
+      },
+      {
+        "name": "Balsamic Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "pasta",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "pasta",
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "pasta",
+        "isOptional": false
+      },
+      {
+        "name": "Parmegan",
+        "unit": null,
+        "notes": "for garnish",
+        "amount": "0",
+        "section": "pasta",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "beb03548219f8fd2862fd263e7ffe2dc3147910c35a1400dc913b40fb36e22be",
+    "lineage_hash": "598ff9a0dc89561dd70ba54bd7625563cf7db8ce0497ef4be983d3deb2bcbd6a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/butternut-squash-kale-pasta/",
+    "fetchedAt": "2026-08-01T18:19:53.774Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/butternut-squash-kale-pasta/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

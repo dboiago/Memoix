@@ -1,0 +1,125 @@
+{
+  "recipe": {
+    "name": "Buttered Whisky Cocktail",
+    "time": "15 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To prepare the butter, add all of the ingredients to a food mixer with a paddle attachment and mix well for 1-2 minutes until all of the ingredients are incorporated. Alternatively, use a mixing bowl and wooden spatula",
+      "Turn out onto a sheet of cling film and spread out to make a 1/2cm thick layer wrap tightly into a block of cling film. Alternatively roll tightly in cling film to form a cylindrical shape and refrigerate for at least 1 hour, or until firm",
+      "To assemble the cocktail, cut a 3cm square or small cylinder of the whisky butter and add to a mug. Pour in 50ml of whisky, then top up with hot water and stir to incorporate"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whisky",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "at room temperature",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Agave Syrup",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "2.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg",
+        "unit": "g",
+        "notes": null,
+        "amount": "⅗",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Allspice Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "⅗",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cloves",
+        "unit": "g",
+        "notes": null,
+        "amount": "⅗",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whisky",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d12995947c5af883ec2f90dc4a4e2658df95113f9d87852da31697b7f81c65d6",
+    "lineage_hash": "06995b50daaa525b217cd86344cc2d13d1ca7c6e64428574c0e75a8e086b2821"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/buttered-whisky-cocktail-recipe",
+    "fetchedAt": "2026-08-03T20:48:58.934Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/buttered-whisky-cocktail-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

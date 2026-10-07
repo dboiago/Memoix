@@ -1,0 +1,86 @@
+{
+  "recipe": {
+    "name": "A Simple Sourdough Focaccia",
+    "time": "6 hr 30 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix (9:00 a.m.)This dough can be mixed by hand or with a stand mixer (like a KitchenAid). To the bowl of a stand mixer fitted with the dough hook attachment, add both the flours, water, salt, and ripe sourdough starter (hold back the olive oil until later in mixing). Mix on speed 1 for 1 to 2 minutes until incorporated. Then, mix on speed 2 for 5 minutes until dough strengthens and clumps around the dough hook. Let the dough rest in the mixing bowl for 10 minutes.Next, turn the mixer on to speed 1 and slowly drizzle the olive oil into the bowl while mixing. Once all of the olive oil is absorbed, turn the mixer up to speed 2 for 1 to 2 minutes until the dough comes back together. Transfer your dough to a bulk fermentation container and cover.",
+      "Bulk fermentation (9:15 a.m. to 11:15 a.m.)Give the dough 4 sets of stretch and folds at 30-minute intervals, where the first set starts 30 minutes after the start of bulk fermentation.",
+      "Proof (11:15 a.m. to 3:15 p.m.)Liberally oil the inside of a 9&#215;13&#8243; rectangular pan or two 10&#8243; diameter circular baking pans. Gently scrape the dough out of the bulk fermentation directly into the rectangular pan (or onto a work surface, divide in two, and place each in a circular pan).The dough will proof in the pan for 4 hours. Every 30 minutes for the first hour, uncover the pan and gently stretch the dough with wet hands to the pan&#8217;s edges to encourage it to fill the pan. The dough will naturally spread out during this proofing period, so it&#8217;s unnecessary to spread the dough aggressively. Once the dough is mostly spread to the edges, cover the pan and let it proof for the remainder of the 4 hours. About 30 minutes before the end of the 4-hour proof period, preheat your oven to 450°F (230°C) with an empty rack in the bottom third.",
+      "Top & Bake (3:15 p.m.)When your oven is preheated, dimple the top of the dough all over with wet fingers. Then, liberally drizzle on olive oil to cover the surface of the dough. Spread on chopped herbs and coarse sea salt. Bake until golden on the top and bottom, about 30 minutes. Let the focaccia cool in the pan, then transfer to a cooling rack. It&#8217;s wonderful straight from the oven, and best the day it&#8217;s baked."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-purpose Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "423",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "High-protein Bread Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "181",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "459",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "11",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ripe Sourdough Starter",
+        "unit": "g",
+        "notes": null,
+        "amount": "115",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "56ae688f0afa82bc4aea8a7b2ad00a24feb6165c685c1aaab72547f9f988374d",
+    "lineage_hash": "f8889e04f6f09ea7640098f77384b619eee42c472b5a8d210faeb173af4266b9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.theperfectloaf.com/a-simple-focaccia/",
+    "fetchedAt": "2026-08-01T18:25:01.541Z"
+  },
+  "rawSource": "https://www.theperfectloaf.com/a-simple-focaccia/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

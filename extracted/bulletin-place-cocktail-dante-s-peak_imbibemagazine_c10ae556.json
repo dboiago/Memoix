@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Bulletin Place Cocktail: Dante’s Peak",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all the ingredients except the soda water in a shaker and shake with a single ice cube until the cube melts. Add 1 oz. of chilled soda to the shaker and pour into an ice-filled glass, adding more soda if needed. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "4cb13fc156fd2a6035128aba5f418f7f2a9ebb51aca7f65cdec8a6386d8e6251",
+    "lineage_hash": "ba103afc6faeb386e9bd7207f94f2d530627195f87d3431bcf10f44df2765b0a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bulletin-place-dantes-peak/",
+    "fetchedAt": "2026-08-03T23:20:46.733Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bulletin-place-dantes-peak/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,92 @@
+{
+  "recipe": {
+    "name": "Bok Choy and Mushroom Stir Fry",
+    "time": "15 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "159",
+      "carbohydrateContent": "6",
+      "fatContent": "15",
+      "proteinContent": "2"
+    },
+    "directions": [
+      "I use the stem part of the bok choy, but you can choose to keep the leaves. Then cut bok choy into smaller pieces.",
+      "Then wash the shitake mushrooms, remove the roots, and cut them into slices.",
+      "Heat around 1.5 tablespoons of cooking oil in a wok and fry garlic and mushroom slices for around 1 minute until the garlic turns aromatic and the mushroom becomes soft.",
+      "Place the bok choy in. Fry for another minute until the bok choy becomes soft too. Add oyster sauce and light soy sauce.",
+      "Drizzle another ½ tablespoon of cooking oil. Mix well and serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bok Choy",
+        "unit": "g",
+        "notes": "clean and break into smaller pieces",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": "divided",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shitake Mushrooms",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2e6932e01379ab04949eee1c70d889b396d8e501def6377c1f01f1c10caf8c17",
+    "lineage_hash": "9ff952564adba852b8d21505533faf278fefa715895913699dd6d4a28fc2d02e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/bok-choy-and-mushroom/",
+    "fetchedAt": "2026-08-01T22:15:14.915Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/bok-choy-and-mushroom/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

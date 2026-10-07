@@ -1,0 +1,51 @@
+{
+  "recipe": {
+    "name": "Black Tea Chocolate Mousse",
+    "time": "2 hr 20 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Bring 2 cups of water to 185°F; add in the loose tea and let it infuse for 8 minutes. Break the chocolate up into a bowl, then strain half of the hot tea on top; stir until the chocolate has melted, then add in the rest of the tea and mix. Allow this mixture to cool. Beat the cooled chocolate mixture with an electric hand mixer for at least 6-8 minutes. Serve in small cups with wafers."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "70% Dark Chocolate",
+        "unit": "lb",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Loose Black Tea",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "85ba3df2872e3aee562da41768cf1c9a3cadf4e2787e906c3573871fb878e50d",
+    "lineage_hash": "afdfb219af17af8de4f56ccf4e914d64cdd683a7b296e8aa87cca83a76b6a344"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/black-tea-chocolate-mousse",
+    "fetchedAt": "2026-08-02T05:39:42.139Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/black-tea-chocolate-mousse",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

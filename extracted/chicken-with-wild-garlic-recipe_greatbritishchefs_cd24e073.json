@@ -1,0 +1,148 @@
+{
+  "recipe": {
+    "name": "Chicken with Wild Garlic",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To debone the chicken thighs, place each thigh, skin-side down, onto a board and use a sharp knife to cut along either side of the bones. Slide the knife underneath the bone and run it down the underside to release the entire piece",
+      "In a suitable container, salt the thighs for 2 hours. Wash and dry the meat before storing, skin-side up, in a vac pac bag (or wrapped in cling film) overnight",
+      "To prepare the morels, wash 3 times in cold water, changing the water every time to ensure they are well cleaned",
+      "Place on a tray lined with kitchen towel and leave to dry in the fridge for 2 hours, before covering in cling film",
+      "For the wild garlic velouté, bring the milk and cream to the boil, add wild garlic and salt and return to the boil",
+      "Remove from the heat and allow to cool slightly. While still warm, pass through a fine strainer into a bowl set over ice. Set aside until ready to serve",
+      "For the chicken thighs, add a small amount of rapeseed oil to a large frying pan and place over a medium-high heat. Add the thighs to the pan, skin-side down, and cook for 4 minutes until golden brown",
+      "Reduce to a low heat and turn the thighs over. Add the butter, thyme and garlic and cook for an additional 1 minute. Use a spoon to baste the chicken continuously for 2 more minutes, then remove from the heat and keep warm",
+      "Trim the woody ends off the base of the asparagus and peel halfway up the spear, leaving the top un-peeled. Blanch in salted boiling water for 2 minutes. Remove from the pan and keep on a tray lined with kitchen towel in a warm place",
+      "Place the thigh, skin-side up, under a hot grill to crisp up the skin. Portion and square off the edges of the thigh. Arrange the thighs onto plates with the morels, velouté, asparagus and wild garlic flowers. Serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Thighs",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wild Garlic",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Morels",
+        "unit": "g",
+        "notes": null,
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Asparagus Spears",
+        "unit": null,
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Button Mushrooms",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Wild Garlic Flowers",
+        "unit": null,
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e8c85865dad2779b6ce47bd82cb8c756ae3c0a4d410b0cc1df53f4be056169e3",
+    "lineage_hash": "db8ce8387be6e0b184bbde2dedb1e57b8809b60a8d524f6e699a0b897b69a8dd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chicken-wild-garlic-recipe",
+    "fetchedAt": "2026-08-03T16:57:51.735Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chicken-wild-garlic-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

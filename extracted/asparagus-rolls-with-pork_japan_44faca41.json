@@ -1,0 +1,106 @@
+{
+  "recipe": {
+    "name": "Asparagus Rolls with Pork",
+    "time": "20 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "140",
+      "carbohydrateContent": "4.4",
+      "fatContent": "8.2",
+      "proteinContent": "10"
+    },
+    "directions": [
+      "Combine flavouring sauce ingredients in a jar or a small bowl.",
+      "Remove hard part of the asparagus stem at lower end and cut to half equal length.",
+      "Boil water in a pan, add a pinch of salt and blanch asparagus for 30 seconds to 1 minute. Drain and cool down.",
+      "On a cutting board, spread a slice of pork diagonally, then place the top half and the bottom half of asparagus pieces (note 1) at the end of the pork slice closest to you. Ensure the side edge of the pork slice lines up with the edge of the asparagus sticks.",
+      "Lift the end of the pork slice closest to you and roll the asparagus tightly away from you. Keep rolling until the end, adjusting the angle of the pork slice so that the pork just covers the end of the asparagus sticks.",
+      "Repeat steps 4 and 5 for the rest of asparagus sticks.",
+      "Heat oil in a frying pan over medium high heat and place asparagus wrapped in pork, facing the ending side of the pork down.",
+      "Sauté for about 1 minute until the bottom part of the pork is lightly browned (note 4). Turn them over and cook another 30 seconds to 1 minute until the pork is lightly browned.",
+      "Reduce the heat to medium low and add the flavouring sauce.",
+      "Roll the asparagus to coat them with the sauce while the sauce is bubbling and condensing. When the sauce is almost evaporated, remove the pan from the heat.",
+      "Serve with decorative cucumber pieces if using."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Thin Asparagus Spears",
+        "unit": null,
+        "notes": "about 125g/4.4oz, note 1",
+        "amount": "9",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Very Thin Pork Slices",
+        "unit": null,
+        "notes": "note 2",
+        "amount": "9",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Flavouring Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Mirin",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Flavouring Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sake",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Flavouring Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Decorative Cucumber – Opposing Cut (note 3)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "To Serve (optional)",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e116541fee4951ef1899d182522b6c60f9281076db7bcd9f000301030e943dec",
+    "lineage_hash": "5530b43eadc155e5e36b60161dd81e2e1f0781e9800e8aa32015e55e9c0ee914"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://japan.recipetineats.com/asparagus-rolls-with-pork/",
+    "fetchedAt": "2026-08-01T17:01:39.354Z"
+  },
+  "rawSource": "https://japan.recipetineats.com/asparagus-rolls-with-pork/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,173 @@
+{
+  "recipe": {
+    "name": "Bakwan Jagung ala Pancake Korea (Corn Fritters ala Korean Pancake)",
+    "time": "35 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "ID",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a mixing bowl, combine all pancake ingredients together into a thick batter.",
+      "Heat 2-3 tablespoon oil in a cast-iron skillet/non-stick frying pan over medium high heat, then once the pan is hot, ladle pancake batter to the pan and spread evenly (about 1/4 of the total batter). After 30 seconds on medium high, reduce heat to medium, and once the edges look cook and more solid, flip the pancake to cook the other side, pressing lightly with a spatula to make the pancake crispy. Remove cooked pancake to a plate, and repeat the process for 3 more pancakes.",
+      "Slice the pancakes into bite sizes and serve with the dipping sauce."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bakwan Jagung Pancake (corn Fritters Pancake)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ears Fresh Corn",
+        "unit": null,
+        "notes": "Note 1, kernels only",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram All-purpose Flour",
+        "unit": null,
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Rice Flour",
+        "unit": null,
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Celery",
+        "unit": "stalks",
+        "notes": "or sub with 1 stalk regular celery, thinly sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Shallot",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ice-cold Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sambal Kecap Tomat (spicy Tomato Dipping Sauce)",
+        "unit": null,
+        "notes": "mix together the following ingredients",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": null,
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jalapeno",
+        "unit": null,
+        "notes": "seeded and diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Juice of 1 Lime",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kecap Manis",
+        "unit": "C",
+        "notes": "Indonesian sweet soy sauce",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "133976dc1707de6c11abb8812b4bd9d4abae251f04395081ef538408243e0eb8",
+    "lineage_hash": "b6a3b594a239494b7e9b78ff1c172def00a732e419b89985c6618d2ae68c9008"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/bakwan-jagung-ala-pancake-korea.html",
+    "fetchedAt": "2026-08-02T01:40:14.347Z"
+  },
+  "rawSource": "https://dailycookingquest.com/bakwan-jagung-ala-pancake-korea.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

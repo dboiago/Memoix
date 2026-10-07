@@ -1,0 +1,109 @@
+{
+  "recipe": {
+    "name": "Cheesy Vegan Scalloped Potatoes",
+    "time": "1 hr 30 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "190",
+      "carbohydrateContent": "35",
+      "fatContent": "3",
+      "proteinContent": "8"
+    },
+    "directions": [
+      "Preheat your oven to 400F (200C). Grease a 9&quot; x 13&quot; baking dish with vegan butter, oil, or omit for an oil-free version.",
+      "Make the creamy vegan sauce by adding the non-dairy milk, all-purpose flour, garlic, and salt to a blender, and blending until completely smooth. *If you do not have a blender, simply mince or press the garlic and whisk everything together in a bowl instead. Set aside.",
+      "Layer the potato and onions slices by spreading about 1/3 of the potatoes across the bottom of the baking dish. Spread 1/2 of the onion slices over the potatoes. Cover the onions with another third of the potato slices, followed with the remaining half of the onions. Top with the rest of the potatoes slices.",
+      "Pour the creamy vegan sauce over the potato and onion mixture, cover with foil and bake for 30 minutes. The liquid should be lightly bubbling around the edges. Remove the foil and bake for another 25 to 35 minutes until the potatoes are cooked through.",
+      "Spread the Melty Stretchy Gooey Vegan Nacho Cheese across the surface of the potatoes then return to the oven for another 5 - 10 minutes to melt the cheese. You can optionally put the baking dish under the broiler to brown the cheese for just 1 - 2 minutes, keeping a close eye so it doesn&#x27;t burn.",
+      "Serve hot, garnishing with fresh thyme leaves, chopped chives, or nothing at all."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plant-based Milk",
+        "unit": "C",
+        "notes": "such as soy or almond",
+        "amount": "3",
+        "section": "creamy vegan sauce",
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "Tbsp",
+        "notes": "sub gluten-free all-purpose flour blend if preferred",
+        "amount": "6",
+        "section": "creamy vegan sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "4",
+        "section": "creamy vegan sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "creamy vegan sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Onions",
+        "unit": "small",
+        "notes": "sliced",
+        "amount": "2",
+        "section": "scalloped potatoes",
+        "isOptional": false
+      },
+      {
+        "name": "Yukon Gold Potatoes",
+        "unit": "lb",
+        "notes": "sliced into thin rounds about ⅛\" thick",
+        "amount": "4",
+        "section": "scalloped potatoes",
+        "isOptional": false
+      },
+      {
+        "name": "Recipe Melty Stretchy Gooey Vegan Nacho Cheese",
+        "unit": null,
+        "notes": "(made with an extra ½ cup of water) (optional) *see notes",
+        "amount": "1",
+        "section": "scalloped potatoes",
+        "isOptional": false
+      },
+      {
+        "name": "Thyme Leaves",
+        "unit": null,
+        "notes": "alt: chopped chives, fresh, for garnish (optional)",
+        "amount": "0",
+        "section": "scalloped potatoes",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "45cbfeefc88d8bd198517a4b2c1358a64a237753b91b496114dc60e584412684",
+    "lineage_hash": "7fbfd46fe0b2d016e27bc70fa76d4758f438519c4454b32f9b99a2456664b32b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/cheesy-vegan-scalloped-potatoes/",
+    "fetchedAt": "2026-08-02T04:43:11.418Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/cheesy-vegan-scalloped-potatoes/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

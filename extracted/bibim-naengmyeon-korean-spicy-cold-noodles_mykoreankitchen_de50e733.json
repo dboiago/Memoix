@@ -1,0 +1,236 @@
+{
+  "recipe": {
+    "name": "Bibim Naengmyeon (Korean Spicy Cold Noodles)",
+    "time": "2 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "KR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "1020",
+      "carbohydrateContent": "194",
+      "fatContent": "17",
+      "proteinContent": "23"
+    },
+    "directions": [
+      "Soak the brisket in a bowl of water and set aside for 20 mins to draw the blood out. Drain the water. Add the water (5 cups) and the brisket into a medium to large pot, cover with the lid and boil them over high heat. Skim off any scum that forms. Once the water starts to rolling boil, reduce the heat to low-medium. Simmer until the brisket is tender and cooked (I boiled them for 1 hour total. This should result in about 3 cups of broth.) Take out the meat onto a plate. Cool down the meat and the broth for 30 mins. Cut off any stringy fats and thinly slice the brisket.",
+      "Soak the radish in the radish pickle sauce. Set aside until the radish is softened (about 20 mins). Cover and refrigerate until you need them. FYI, the longer you pickle, the less bitter the radish becomes.",
+      "Combine all the bibim sauce ingredients and blend until pureed. Cover and refrigerate until needed.",
+      "Cook the noodles in boiling water until soften (about 2 to 3 mins). Stir often during boiling. The noodle texture should be chewy and bouncy. Drain the water and rinse the noodles under cold running water a couple of times to cool down. Drain the water quickly and divide the noodle portion for serving. Place the mound of noodles into a serving bowl.",
+      "Place the sliced beef, radish pickles, cucumber, pear and boiled egg on top of the noodles. Add the bibim sauce on top. Drizzle some sesame oil and sparingly sprinkle roasted sesame seeds. (Refer above pictures for decoration ideas.) Serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Naengmyeon Noodles",
+        "unit": "g",
+        "notes": "Korean buckwheat noodles, dried",
+        "amount": "350",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Beef Brisket",
+        "unit": "g",
+        "notes": "*see note above",
+        "amount": "150",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "*see note above",
+        "amount": "5",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Korean Radish (or Daikon, Pink Radish)",
+        "unit": "g",
+        "notes": "thinly sliced or julienned",
+        "amount": "50",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Asian Pear ( or Bosc Pear) Thinly Sliced",
+        "unit": "g",
+        "notes": "alt: julienned",
+        "amount": "50",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "English Cucumber",
+        "unit": "g",
+        "notes": "seeds removed, thinly sliced or julienned",
+        "amount": "60",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Hard Boiled Egg",
+        "unit": null,
+        "notes": "halved",
+        "amount": "1",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Dasha Dash of Roasted Sesame Seeds Toasted Sesame Seeds",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Asian Pear",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": "BIBIM SAUCE",
+        "isOptional": false
+      },
+      {
+        "name": "Brown Onion",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": "BIBIM SAUCE",
+        "isOptional": false
+      },
+      {
+        "name": "Reserved Beef Broth (or Water) From Step 1 Below",
+        "unit": "C",
+        "notes": "*see note above",
+        "amount": "¼",
+        "section": "BIBIM SAUCE",
+        "isOptional": false
+      },
+      {
+        "name": "Korean Chili Flakes",
+        "unit": "Tbsp",
+        "notes": "gochugaru",
+        "amount": "3",
+        "section": "BIBIM SAUCE",
+        "isOptional": false
+      },
+      {
+        "name": "Raw Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "BIBIM SAUCE",
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "BIBIM SAUCE",
+        "isOptional": false
+      },
+      {
+        "name": "Korean Chilli Paste",
+        "unit": "Tbsp",
+        "notes": "gochujang",
+        "amount": "1",
+        "section": "BIBIM SAUCE",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "BIBIM SAUCE",
+        "isOptional": false
+      },
+      {
+        "name": "Apple Cider Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "BIBIM SAUCE",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "Tbsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": "BIBIM SAUCE",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "BIBIM SAUCE",
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "BIBIM SAUCE",
+        "isOptional": false
+      },
+      {
+        "name": "White Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "RADISH PICKLE SAUCE (MIX THESE TOGETHER AND MICROWAVE IT FOR 30 TO 40 SECONDS TO MELT THE SUGAR)",
+        "isOptional": false
+      },
+      {
+        "name": "Apple Cider Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "RADISH PICKLE SAUCE (MIX THESE TOGETHER AND MICROWAVE IT FOR 30 TO 40 SECONDS TO MELT THE SUGAR)",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "RADISH PICKLE SAUCE (MIX THESE TOGETHER AND MICROWAVE IT FOR 30 TO 40 SECONDS TO MELT THE SUGAR)",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "66efed8f1957f6836cc575195590d532cdc2889b29e9c682296ecf0e2bd654fd",
+    "lineage_hash": "8fa3cfe402427363741b322abb95bcada35788ad388d173aea967dd6fc9345be"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://mykoreankitchen.com/bibim-naengmyeon/",
+    "fetchedAt": "2026-08-02T00:44:19.597Z"
+  },
+  "rawSource": "https://mykoreankitchen.com/bibim-naengmyeon/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

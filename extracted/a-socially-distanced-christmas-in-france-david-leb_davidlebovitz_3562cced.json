@@ -1,0 +1,110 @@
+{
+  "recipe": {
+    "name": "A socially distanced Christmas in France",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Rub the flour and butter together until they resemble breadcrumbs",
+      "Mix through the milk and egg and roll into golf ball sized balls, then place into a baking dish (mine is 23x33 cms/9x13 inches but yours doesn&#039;t need to be exactly this size)",
+      "In a saucepan, melt together the water, sugar, butter, golden syrup and salt until it just boils",
+      "Pour over the dumplings and bake until golden brown, approximately 25 minutes"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Self-raising Flour",
+        "unit": "C",
+        "notes": "300g",
+        "amount": "2",
+        "section": "dumplings",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "dumplings",
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "Tbsp",
+        "notes": "30g",
+        "amount": "2",
+        "section": "dumplings",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "40g",
+        "amount": "2",
+        "section": "dumplings",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "470g",
+        "amount": "2",
+        "section": "sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": "250g",
+        "amount": "1",
+        "section": "sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "40g",
+        "amount": "2",
+        "section": "sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Golden Syrup",
+        "unit": "Tbsp",
+        "notes": "50g",
+        "amount": "2",
+        "section": "sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "sauce",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a798eadce561faf663b53a85d7b8101c0e64119a2befa10b074f4077119b1917",
+    "lineage_hash": "c2330e6b930524419717e470bcd13b35eb2c2b7db1ad607023381fa867985ec8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/a-socially-distanced-christmas-in-france/",
+    "fetchedAt": "2026-08-02T17:11:31.315Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/a-socially-distanced-christmas-in-france/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

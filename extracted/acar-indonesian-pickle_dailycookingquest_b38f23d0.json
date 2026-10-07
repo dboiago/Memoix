@@ -1,0 +1,102 @@
+{
+  "recipe": {
+    "name": "Acar (Indonesian Pickle)",
+    "time": "30 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "ID",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Prep the vegetables: Scrub/peel the cucumber, remove the seeds, and cut it into small cubes. Peel carrot and shallot and cut them into small cubes. Chop red chilies. Please make sure that the cucumber, carrot, and shallot are all about the same size. You should get about 3 cups of vegetables.",
+      "Salt the vegetables: Sprinkle chopped vegetables with about a teaspoon of salt in a mixing bowl and set aside for 10 minutes. Salting reduces the water content from the vegetables and makes the pickle crispier. Salt chilies separately if you don’t want a spicy pickle. Wash the vegetables under running water and strain with a colander. Set aside.",
+      "Pickle the vegetables: Boil water, sugar, salt, and vinegar in a pot until sugar dissolves. Turn off the heat and add all the vegetables into the pot. After 10 minutes of resting period, transfer the pickle to clean glass jars. You should be able to fill four 8-ounce glass jars.",
+      "Storing and serving the pickle: Let the pickle cool slightly before storing it in the fridge. It is best to rest the pickle for at least one day to develop the flavor before serving. An unopened jar should stay fresh for up to two months. Once open, please consume the pickle within one week."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cucumber",
+        "unit": "small",
+        "notes": "remove the seeds and cut into cubes",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": "small",
+        "notes": "peeled and cut into cubes",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thai/bird-eye Chili",
+        "unit": null,
+        "notes": "remove the stems and chopped",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "French Shallot (or 15 Chinese/asian Shallot)",
+        "unit": null,
+        "notes": "peeled and half each shallot",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": "2 cup",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram (3/4 Cup) Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Vinegar",
+        "unit": "Tbsp",
+        "notes": "or 3 tablespoon cane sugar/rice vinegar",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c5c91d2d43116a3e88001211706030d52804350dca41314b0e6ce732435b743b",
+    "lineage_hash": "a93c8b0f51b1108e17dcccce81b4a0613bef82fd80f2ccb622f33f511b1a61e8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/acar-indonesian-pickle.html",
+    "fetchedAt": "2026-08-01T20:58:06.652Z"
+  },
+  "rawSource": "https://dailycookingquest.com/acar-indonesian-pickle.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

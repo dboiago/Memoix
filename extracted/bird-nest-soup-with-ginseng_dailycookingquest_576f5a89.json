@@ -1,0 +1,70 @@
+{
+  "recipe": {
+    "name": "Bird Nest Soup with Ginseng",
+    "time": "55 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Soak bird nest in cold water overnight.",
+      "Use a double mesh or fine strainer to strain the soaked bird nest, and remove any impurity that you can see. You may need to tear the bird nest into smaller strips if they clump together.",
+      "If you own a Chinese double boiling jar, place bird nest along with the rest of the ingredients into the ceramic bowl. Cook for 45 minutes to 1 hour. Serve hot.",
+      "If you don't own a Chinese double boiling jar, place all ingredients in a ceramic bowl and cover it with aluminum foil. Place a metal rack/steamer rack inside a pot, place the covered ceramic bowl on top of the rack. Pour enough hot water to partially submerge the bowl. Cover the lid, and simmer for 45 minutes to 1 hour. Serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gram Dried Bird Nest",
+        "unit": null,
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginseng",
+        "unit": "slices",
+        "notes": null,
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rock Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4828b379da601b743d1962333b7aef9934c603560221793eca4663ce4778c0e1",
+    "lineage_hash": "ab164c90f11a8cf4d32ae5c1ad8b478ef3c7fc66e4e05e4e6a6d8675634cf1b0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/bird-nest-soup-with-gingseng.html",
+    "fetchedAt": "2026-08-02T05:31:07.175Z"
+  },
+  "rawSource": "https://dailycookingquest.com/bird-nest-soup-with-gingseng.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

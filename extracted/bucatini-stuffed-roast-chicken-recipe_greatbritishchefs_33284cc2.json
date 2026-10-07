@@ -1,0 +1,205 @@
+{
+  "recipe": {
+    "name": "Bucatini-stuffed Roast Chicken",
+    "time": "2 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by making the tomato sauce. Put the onion into a saucepan with half the oil and let it sweat slowly over a low-medium heat for around 15 minutes until it's soft (do not allow it to colour). If it looks as though it might catch, add a splash of water to the pan",
+      "Add the tomatoes and season with salt. Leave to simmer over a low heat for about 45 minutes, until the tomatoes are thick and rich, adding a little water if the level of the liquid gets too low. Remove from the heat",
+      "Put the remaining oil in another pan with the garlic and cook over a low-medium heat. When it's almost golden brown, add the basil leaves and stir. Pass the oil through a sieve into the cooked tomato sauce",
+      "Whisk the sauce to break up the tomatoes. If it's too thick, thin it with a little water, ideally some pasta cooking water. Pass the sauce through a wide-holed sieve resting over a bowl, and use the back of a ladle to extract the smooth mixture. Check the seasoning and add more salt if necessary",
+      "In a frying pan over a medium heat, sweat the shallot in the oil for 5-10 minutes until soft but not coloured",
+      "Cut half the pancetta into matchsticks and add them to the pan. Increase the heat to high and continue to fry until the pancetta is nice and crispy (but be carefully not to burn the shallot)",
+      "Pour in the wine, allow it to evaporate, then add 200ml of the tomato sauce and the chicken stock. Cook on a medium heat for 5 minutes, then add the peas and simmer for 5 minutes more, then turn off the heat",
+      "Meanwhile, bring a pan of salted water to the boil, add the bucatini and cook for half the time suggested on the packet. Drain and mix into the sauce, then stir in the parsley, chives and pecorino cheese",
+      "Remove from the heat and leave to cool. It needs to cool quickly so that it doesn't continue cooking, so spread the mixture out in a tray. Once cool stir through the mozzarella",
+      "Season the chicken with salt and pepper, then place in a bowl and stuff it with the pasta and sauce. Seal the end by securing the back skin together with rosemary sprigs or toothpicks, then remove from the bowl and tie the legs and wings together with kitchen string. Finally cover the whole chicken with the remaining pancetta slices",
+      "Bake in the oven for 30-40 minutes then increase the temperature to 200°C/ gas mark 6 and cook at this heat for 5-10 minutes until it's nice and crispy and the juices run clear when a skewer is pushed into the thickest part of the breast. Leave to rest for 5-10 minutes (not covered) then slice and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken",
+        "unit": null,
+        "notes": "boned; ask your butcher to do this for you, about 1.8kg",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Banana Shallot",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pancetta Slices",
+        "unit": "g",
+        "notes": "unsmoked",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peas",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bucatini Pasta",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pecorino",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mozzarella Cheese",
+        "unit": "g",
+        "notes": "cut into small cubes",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Onion",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Large Ripe Tomato",
+        "unit": "kg",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basil Leaves",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2c1ea4861e420880c7770fa25daaff30504f26b93f70c700a16bf4e8d3f22af1",
+    "lineage_hash": "2639b6524883c5dfdac29a74a1287f68cec449c065df86905cd6a4cd5c4e071f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/roast-chicken-stuffed-with-bucatini",
+    "fetchedAt": "2026-08-03T13:53:58.357Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/roast-chicken-stuffed-with-bucatini",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Aviation Gin & Tonic",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [
+      "Lemon Peel"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Fill the glass with ice cubes and add the gin and bitters. Slowly add chilled tonic, then twist a lemon peel over the drink and use as garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "46bf06e9a1e849572be936bd86547afc2f896f22e2cc1f0e0b46d58a8308c59b",
+    "lineage_hash": "aeff1fb03c04d0cf024ab82abd83d2b2246e444c5fc9640d4fdd850371c7e3ca"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/aviation-gin-tonic-from-bobby-gin/",
+    "fetchedAt": "2026-08-03T20:45:26.866Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/aviation-gin-tonic-from-bobby-gin/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

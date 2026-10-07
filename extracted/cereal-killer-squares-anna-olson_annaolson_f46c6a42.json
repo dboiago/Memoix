@@ -1,0 +1,125 @@
+{
+  "recipe": {
+    "name": "Cereal Killer Squares",
+    "time": "10 min plus chilling",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "18",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Grease an 8-inch (20 cm) square pan, line it with parchment paper and set aside.",
+      "In a large bowl, stir together the corn flakes, Shreddies, oats, pretzels and raisins.",
+      "In a medium pot, stir the marshmallows, soy nut butter (or peanut butter), honey (or maple syrup), butter (or coconut oil) and vanilla over medium-low heat until melted. Pour this flavoured nut butter over the cereal mixture, stirring to coat well. Stir in the chocolate chips (or candies) and then press the batter into the pan. Chill for at least 2 hours before slicing."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Corn-flake Cereal",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shreddies Cereal",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Regular Rolled Oats",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pretzel Twists",
+        "unit": "C",
+        "notes": "crushed",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raisins",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mini Marshmallows",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Nut Butter",
+        "unit": "C",
+        "notes": "alt: pure peanut butter",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "C",
+        "notes": "alt: pure maple syrup",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": "alt: virgin coconut oil",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Semisweet Chocolate Chips",
+        "unit": "C",
+        "notes": "alt: other candies",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6fe51470b448d325bcaf1bb12a5fcb073ae25914b5e8ad54c7978a856163eab8",
+    "lineage_hash": "77e1efa8cb2e1d0d462348711a074b962a4dfb489b30728bb5854b4f3f88f28b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/cereal-killer-squares/",
+    "fetchedAt": "2026-08-01T18:18:26.206Z"
+  },
+  "rawSource": "https://annaolson.ca/project/cereal-killer-squares/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

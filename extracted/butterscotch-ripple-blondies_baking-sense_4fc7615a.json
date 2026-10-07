@@ -1,0 +1,107 @@
+{
+  "recipe": {
+    "name": "Butterscotch Ripple Blondies",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "348",
+      "carbohydrateContent": "49",
+      "fatContent": "16",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "Preheat the oven to 375 °F. Butter a 9&quot; square baking pan and line with parchment paper. You can just butter the pan but the parchment makes it much easier to remove the blondies from the pan.",
+      "In a large bowl, combine 6 oz&#32;unsalted butter (melted) with 6 oz&#32;granulated sugar and 8 oz&#32;brown sugar. Add 3&#32;large eggs and 1 tablespoon&#32;vanilla extract. Add 7 ½ oz&#32;all purpose flour and ½ teaspoon&#32;table salt. Spread the batter into the pan.",
+      "Use a small melon baller or spoon to scoop balls of butterscotch. Dot the top of the batter with the butterscotch balls, setting them about 1&quot; apart. Bake until the center springs back when lightly pressed, about 40 minutes.",
+      "Cool to room temperature before removing from the pan and cutting into 16 squares."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Extra Thick Butterscotch Sauce",
+        "unit": "C",
+        "notes": "see note",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "melted",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "¾ cup",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "oz",
+        "notes": "1 ½ cups, see note",
+        "amount": "7½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "87a8f3c68fd7186becc42320f38da986bbf5d4cb21840a022d33d2b07e3aa058",
+    "lineage_hash": "b1ffafceb158fef601cefb6a6b4eac1e640d5633464bfc4351dbd0f8aab0cd62"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2017/05/11/butterscotch-ripple-blondies/",
+    "fetchedAt": "2026-08-01T16:46:15.544Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2017/05/11/butterscotch-ripple-blondies/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

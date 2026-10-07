@@ -1,0 +1,152 @@
+{
+  "recipe": {
+    "name": "Carrot cake shortbread biscuits",
+    "time": "45 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the finely grated carrot into a fine mesh sieve and squeeze it, getting rid of as much liquid as possible. Leave the squeezed, grated carrot in the sieve while you start to make the dough",
+      "In a medium bowl or food processor, place the butter, ground ginger, ground cinnamon, salt and sugar. Cream or blend the ingredients together until well mixed",
+      "Add in the grated carrot, desiccated coconut, cornflour and flour and mix again until combined. Stir in the raisins then tip the dough out onto a piece of baking paper. Cover with a second piece of baking paper and roll the dough out to 6mm thick then chill for at least 30 minutes",
+      "Remove the top layer of baking paper and use a circular cutter (3 or 4 cm diameter) to cut out the biscuits. Transfer the biscuits to a baking tray lined with baking paper and bake for 12-15 minutes until golden around the edges. Leave to cool while you make the filling",
+      "Gradually cream the icing sugar into the coconut oil in a small bowl. Mix in the vanilla and 1 teaspoon of cream cheese. If the mixture is too firm, add the other teaspoon of cream cheese and mix in. Chill until needed",
+      "To assemble, use the filling to sandwich together the shortbread biscuits"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Carrots",
+        "unit": "g",
+        "notes": "finely grated",
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "softened",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Ginger",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Desiccated Coconut",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "85",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raisins",
+        "unit": "g",
+        "notes": "or currants",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Oil",
+        "unit": "tsp",
+        "notes": "heaped, soft and unrefined",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream Cheese",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b45d62c695c60ee4727c7dae04a7022ad2b6b8ae1982450363a44cbed02dc562",
+    "lineage_hash": "ef30b0bfd593a786a285aed67f25ece67f0fbf59a9da71811613b558fbdf9446"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/carrot-cake-shortbread-biscuit-recipe",
+    "fetchedAt": "2026-08-03T22:42:50.996Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/carrot-cake-shortbread-biscuit-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

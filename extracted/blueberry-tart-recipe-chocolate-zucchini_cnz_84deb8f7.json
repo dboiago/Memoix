@@ -1,0 +1,111 @@
+{
+  "recipe": {
+    "name": "Blueberry Tart",
+    "time": "1 hr 5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 200°C (400°F), and grease a shallow 22-cm (9-inch) tart pan with butter or line it with parchment paper.",
+      "Prepare the dough for the tart shell. In a food processor, process the sugar and butter until fluffy. Add in the flour and process until the dough forms coarse crumbs. Add in a dash of milk, and mix again. It will still be a loose, crumb-like mixture, not a ball of dough. Pour into your tart pan, and press down evenly to pack it and cover the surface of the pan, forming a little rim all around. Put in the oven to bake for 20 minutes.",
+      "Take the tart shell out and lower the temperature to 180°C (360°F). Pour in the blueberries, and return to the oven for 15 minutes.",
+      "In a small bowl, beat together the crème fraîche, 1 tablespoon sugar and the egg. Take the tart out of the oven, pour the mixture evenly over the blueberries and return to the oven for another 15 minutes, or until set.",
+      "Let cool completely, and sprinkle with a tablespoon of sugar just before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Grams Flour",
+        "unit": null,
+        "notes": null,
+        "amount": "170",
+        "section": "For the tart shell",
+        "isOptional": false
+      },
+      {
+        "name": "Grams Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "85",
+        "section": "For the tart shell",
+        "isOptional": false
+      },
+      {
+        "name": "Grams Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "85",
+        "section": "For the tart shell",
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": "For the tart shell",
+        "isOptional": false
+      },
+      {
+        "name": "Grams Blueberries",
+        "unit": null,
+        "notes": null,
+        "amount": "300",
+        "section": "For the filling",
+        "isOptional": false
+      },
+      {
+        "name": "Crème Fraîche",
+        "unit": "Tbsp",
+        "notes": "or sour cream",
+        "amount": "1",
+        "section": "For the filling",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For the filling",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": "For the filling",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "To finish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "65c70a40a15d85c4ae4f2b06d51f4422afe9176e0dd5e8471fbbb4f07c1c3a7c",
+    "lineage_hash": "4e518a9c744c981dcac6758ce5ead1cbc34ebc030d47513ad517a79066de3d7a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/cakes-tarts/blueberry-tart-recipe/",
+    "fetchedAt": "2026-09-30T19:12:21.344Z"
+  },
+  "rawSource": "https://cnz.to/recipes/cakes-tarts/blueberry-tart-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

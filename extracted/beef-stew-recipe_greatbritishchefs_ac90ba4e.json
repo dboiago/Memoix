@@ -1,0 +1,216 @@
+{
+  "recipe": {
+    "name": "Beef Stew",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 180˚C/gas mark 4. Season the beef generously with salt and pepper",
+      "Heat 2 tablespoons of olive oil in a large ovenproof pan (with a lid) over a medium-high heat",
+      "Once the pan is hot, add enough beef to cover the base of the pan. Brown evenly on all sides, then remove from the pan and set aside in a large bowl. Repeat with the remaining beef",
+      "Add 100ml of beef stock to the pan. Use a wooden spoon to scrape up the caramelised pieces stuck to the pan. Allow to simmer gently for 2-3 minutes, then pour over the beef",
+      "Heat 2 tablespoons of oil in the same pan placed over a medium heat. Add the carrots, onion and garlic, fry until the onion softens slightly, approximately 3 minutes",
+      "Add the beef and juices from the bowl back to the pan, along with the wine, stock, tomato paste and thyme. If the beef is not covered, add more stock or wine",
+      "Bring to the boil, then reduce to a low heat and cook for 2 minutes. Cover with a lid and place in the oven for 2 1/2 - 3 hours, or until the meat is very tender",
+      "Meanwhile, place a frying pan over a medium heat and add a tablespoon of oil. Once hot, add the baby onions and mushrooms and fry until a light golden brown colour. Remove from the heat and set aside",
+      "Remove the beef from the oven and add the onions and mushrooms. Place back on a low heat and simmer until the sauce thickens, approximately 20 minutes",
+      "Add the brown sugar and season with a pinch of salt and pepper and continue to simmer",
+      "Meanwhile, add the potatoes to a pot of cold water and bring to the boil",
+      "After 5 minutes, add the leeks to the boiling potatoes",
+      "Once the potatoes are tender, strain off the water and return to the pan. Add the milk, butter, salt, pepper and chopped parsley to the pan and mash well",
+      "To serve, spoon some of the leeks and mash onto the centre of each plate and press down gently to create a well in the middle. Ladle the hot beef stew into the well and serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Braising Beef",
+        "unit": "g",
+        "notes": "diced",
+        "amount": "1000",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "large",
+        "notes": "peeled and diced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "large",
+        "notes": "large dice",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "large, smashed",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "750",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Paste",
+        "unit": "g",
+        "notes": null,
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Onions",
+        "unit": null,
+        "notes": "peeled",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Button Mushrooms",
+        "unit": "g",
+        "notes": "cut into quarters",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinches",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "pinches",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "King Edward Potatoes",
+        "unit": null,
+        "notes": "peeled and cut into chunks",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leeks",
+        "unit": null,
+        "notes": "washed and sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flat-leaf Parsley",
+        "unit": "bunch",
+        "notes": "small, chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0359acc96a92b8add902e872fe530b27777617f696db416c73f99ad2aa39585d",
+    "lineage_hash": "80acb78d6915db5952352d81c87c9608085f297fc300ea22d79fc413c8ad7782"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beef-stew-recipe",
+    "fetchedAt": "2026-08-03T18:18:47.351Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beef-stew-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

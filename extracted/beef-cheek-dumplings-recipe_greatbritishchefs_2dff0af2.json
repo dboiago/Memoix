@@ -1,0 +1,419 @@
+{
+  "recipe": {
+    "name": "Beef Cheek Dumplings",
+    "time": "3 hr 50 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [
+      "Shiso Cress Leaves",
+      "Fresh Lemon Verbena"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Ferment the mushroom garum at least 2 weeks before you want to make the dish (if making). Sterilise a 3 litre container or jar",
+      "First, lightly smoke the mushrooms in a smoker over cherry wood (if you don’t have a smoker, you can sear the mushrooms in a hot, dry pan). Transfer to a pan with the water and simmer briefly for a few minutes. Allow to cool",
+      "Combine the cooled smoked mushrooms and water with the salt and rice koji and place in the sterilised container. Ferment at a constant 60°C temperature for 2 weeks – over time, the mixture will develop a deep, savoury complexity",
+      "Strain the garum through a fine mesh sieve to obtain a clear, umami-rich liquid (the remaining solids can be dried and ground into a seasoning powder)",
+      "For the beef cheeks, heat the oil in a large, wide pan over a medium-high heat and lightly sear the beef, working in batches if needed",
+      "Place in a vacuum packing bag with the remaining ingredients, then vacuum seal. Cook in a water bath at 84°C for 12 hours, allowing the collagen to fully break down into a soft, yielding texture",
+      "For the infused broth, place the oxtail stock in a pan and just bring it to the boil. Remove from the heat, add the remaining ingredients and 40ml of the mushroom garum (if making). Cover the pan tightly and allow the broth to infuse for 4 hours",
+      "For the smoked shallot mayonnaise, first confit the shallots. Place the vegetable oil and shallots in a sauté pan with a pinch of salt. Confit on a low heat for 3 hours until soft, then leave to cool",
+      "Make a garlic confit for the dumpling filling. Place the vegetable oil and garlic in a sauté pan with a pinch of salt. Confit on a low heat for 3 hours until soft, then leave to cool. Once cool, store in the oil in the fridge. This will make more than you need",
+      "For the dumpling dough, place all the ingredients in a stand mixer and mix to combine. Knead into a smooth, elastic dough, then allow it to rest in the fridge for at least 2 hours – this relaxes the gluten and develops a softer, more workable texture",
+      "For the parsley oil, place the parsley and vegetable oil in a Thermomix and blend at 70°C for 1 minute, then turn off the heat and continue to blend for a further 2 minutes. Strain through a muslin cloth, leaving it to drip through. If you don’t have a Thermomix, blanch and refresh the parsley, squeezing out excess moisture then place in a food processor. Pour in the oil in a thin, steady stream as you blitz on a high speed for 2 minutes. Strain through a muslin cloth into a bottle, then place upside down in the fridge (cover the nozzle to prevent leaking) to separate any water from the oil. Once separated, squeeze out and discard any water and keep in the fridge until needed",
+      "To make the lemon verbena oil, place the lemon verbena leaves in a food processor. Pour in the oil in a thin, steady stream as you blitz on a high speed for 2 minutes. Strain through a muslin cloth into a bottle keep in the fridge until needed",
+      "Once the dumpling dough has rested, roll the dough through a pasta machine to a medium thickness (about level 5), then cut into even discs about 12cm in diameter. Wrap well and store in the fridge until needed",
+      "Once cool, place 100g of the confit shallots into a blender or food processor with the remaining smoked shallot mayonnaise ingredients and blend until completely smooth. Strain the mayonnaise through a fine sieve for a refined texture. The result should be lightly smoky, sweet and rounded",
+      "Once the beef cheeks are cooked, separate the cheeks from the liquor and shred the meat while still warm",
+      "Meanwhile, strain the cooking liquor, discarding the vegetables, and reduce the liquor to create a glossy, deeply-flavoured glaze",
+      "Combine the shredded beef with 25g of the confit garlic, 50g of the smoked onion mayonnaise and the parsley, salt and pepper. Mix thoroughly by hand until the filling is cohesive and well seasoned. Chill the mixture lightly to firm up before shaping",
+      "Once the filling is lightly chilled, fill the dumplings using 20g (about 1 tablespoon) of the beef filling, ensuring a tight, even shape. Pleat to seal (use a little water if needed to help the dumpling dough stick)",
+      "After infusing the broth for 4 hours, carefully strain it through a sieve and keep warm – avoid reheating too aggressively, as this can dull the aromatics. Season with the mushroom garum (if using)",
+      "When you’re ready to cook the dumplings, preheat the oven to 180°C",
+      "Cook the dumplings in boiling salted water for around 2 minutes until tender, whilst you preheat a frying pan with a generous splash of vegetable oil. Transfer the dumplings into the pan and fry to achieve a light crispness on all sides. Transfer to the oven and cook for a further 2 minutes, or until you have achieved a golden colour and the dumplings are cooked through",
+      "To serve, pour warm infused broth into a bowl and arrange the dumplings in the centre. Finish with a few drops of parsley oil and lemon verbena oil. Garnish with the shiso cress leaves and fresh lemon verbena – the final note should be aromatic, bright and slightly wild, lifting the richness of the dish"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Wild Mushrooms",
+        "unit": "kg",
+        "notes": null,
+        "amount": "1.3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "800",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": "non-iodised",
+        "amount": "240",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Koji",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Cheek",
+        "unit": "kg",
+        "notes": "trimmed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Stock",
+        "unit": "L",
+        "notes": "ideally oxtail",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tabasco",
+        "unit": "ml",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "ml",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Verbena",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Thyme",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pickled Jalapeño Brine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": "g",
+        "notes": "sliced",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegan Mayonnaise",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoke Powder",
+        "unit": "g",
+        "notes": "Sosa Powdered Smoke",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kefir",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "900",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bicarbonate of Soda",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "g",
+        "notes": "finely ground",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Verbena Leaves",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shiso Cress Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Verbena",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a3a69e98846d3f5130af98376250b7f70d3e21037d00635589a21ef85548747c",
+    "lineage_hash": "fd49bb85b31ad459b596230b97cb66f410c5e7bdf8dec89a12f1c62a410ec766"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beef-cheek-dumplings-oxtail-broth-recipe",
+    "fetchedAt": "2026-08-01T17:02:23.294Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beef-cheek-dumplings-oxtail-broth-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

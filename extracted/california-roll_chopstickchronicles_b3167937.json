@@ -1,0 +1,152 @@
+{
+  "recipe": {
+    "name": "California Roll",
+    "time": "1 hr 10 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "5",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "416",
+      "carbohydrateContent": "71",
+      "fatContent": "10",
+      "proteinContent": "9"
+    },
+    "directions": [
+      "Wash the rice under running water a few times. Drain the water and place the rice in a rice cooker.",
+      "Add the strip of Kombu kelp and set the rice cooker to cook the rice.",
+      "While the rice is being cooked in the rice cooker, prepare the sushi rice vinegar.",
+      "Combine all sushi vinegar ingredients in a small saucepan and place over medium heat.",
+      "Heat the vinegar till all sugar and salt dissolve. Set it aside.",
+      "Cut the imitation crab meat in half, lengthwise.",
+      "Cut the cucumber – long matchstick like.",
+      "Slice the avocado to similar size and shape of crab meat and cucumber.",
+      "Place a sheet of cling wrap over a bamboo sushi rolling mat.",
+      "Place a sheet of nori seaweed on the cling wrap.",
+      "Place a cup of sushi rice and spread it evenly and thinly with wet hands.",
+      "Fold over the other half of the cling wrap. Hold the ends of the cling wrap together and flip it over.",
+      "Layout imitation crab meat over the mayonnaise.",
+      "Place cucumber and avocado on the both side of the crab meat.",
+      "With both hands, pinch the edge of the bamboo sushi rolling mat and rest of the fingers holding down the fillings as you roll the mat.",
+      "When you completely rolled it, give it a squeeze with your both hands.",
+      "Slice the sushi roll into 6 pieces."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rice",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "Sushi Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Rice Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": "Sushi Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sushi Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sushi Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Kombu Kelp Strip",
+        "unit": "pc",
+        "notes": null,
+        "amount": "1",
+        "section": "Sushi Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1.8",
+        "section": "Sushi Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Nori Seaweed Sheets",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": "California Rolls",
+        "isOptional": false
+      },
+      {
+        "name": "Imitation Crab Meat",
+        "unit": null,
+        "notes": "Kanikama",
+        "amount": "6",
+        "section": "California Rolls",
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "California Rolls",
+        "isOptional": false
+      },
+      {
+        "name": "Avocado",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": "California Rolls",
+        "isOptional": false
+      },
+      {
+        "name": "Japanese Mayonnaise",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "5",
+        "section": "California Rolls",
+        "isOptional": false
+      },
+      {
+        "name": "White Sesame Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "5",
+        "section": "California Rolls",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b3f602d665df2597304c3387f75e2f73d514511996edd0a49399b327a1a9eebb",
+    "lineage_hash": "56fd6d2ac5855522c0d3c0585dbcce264576d9b168ec3e5713ce213bdfbffe97"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chopstickchronicles.com/california-roll-sushi/",
+    "fetchedAt": "2026-08-01T23:23:36.618Z"
+  },
+  "rawSource": "https://www.chopstickchronicles.com/california-roll-sushi/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

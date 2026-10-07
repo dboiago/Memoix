@@ -1,0 +1,68 @@
+{
+  "recipe": {
+    "name": "Beef Carpaccio With Greek Yogurt",
+    "time": "10 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Peel the Jerusalem artichokes and cut them into very thin slices.&nbsp;",
+      "Divide the beef carpaccio between 4 plates. Season with a pinch of salt. Garnish with the leaves of the 4 Brussels sprouts, the sliced Jerusalem artichokes and large dollops of Greek yogurt."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Jerusalem Artichokes",
+        "unit": "oz",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Carpaccio",
+        "unit": "oz",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brussels Sprouts",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Greek Yogurt",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fef3d43f406039e95abd4f7ee5c44c9ba9561d84a4d451f0c0c76b11e0036b78",
+    "lineage_hash": "02d31a6d16916abd7d209d8097bce4eb1eb6d8da1ed6f4f255bba052b3cae6c1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/appetizers/beef-carpaccio-with-greek-yogurt",
+    "fetchedAt": "2026-08-03T03:30:32.392Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/appetizers/beef-carpaccio-with-greek-yogurt",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,171 @@
+{
+  "recipe": {
+    "name": "Chinese Blanched Vegetables",
+    "time": null,
+    "course": "sides",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "118",
+      "carbohydrateContent": "10",
+      "fatContent": "8",
+      "proteinContent": "4"
+    },
+    "directions": [
+      "Bring a large pot of water to a boiling. Add a small pinch of salt and around 1 teaspoon of sesame oil.",
+      "Place the vegetables in. Continue heating until the water once boiled. If you want them to be softer, continue heating for 10 to 20 seconds.",
+      "Transfer the vegetables to chilled water to stop heating. Then drain completely.",
+      "Add seasonings, mix well and enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Broccoli",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cauliflower",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery",
+        "unit": null,
+        "notes": "cut into small sections",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Section Lotus Root",
+        "unit": "small",
+        "notes": "peeled and sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rehydrated Wood Ear Mushrooms",
+        "unit": "C",
+        "notes": "optional",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Dressing 1",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Dressing 1",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Dressing 1",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Dressing 2",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Dressing 2",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "smashed",
+        "amount": "1",
+        "section": "Dressing 2",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Dressing 2",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Dressing 2",
+        "isOptional": false
+      },
+      {
+        "name": "Black Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Dressing 2",
+        "isOptional": false
+      },
+      {
+        "name": "Chili Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Dressing 2",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d7fe043e21d8c4a073d3d899c05352d290167566aefe742d0f04e4884d43dd7f",
+    "lineage_hash": "3150d4600e6f46cbe8ac24b1504f814cd3e86700a4ffa16e055ac4bea0578016"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/chinese-blanched-vegetables/",
+    "fetchedAt": "2026-08-02T06:10:19.507Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/chinese-blanched-vegetables/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

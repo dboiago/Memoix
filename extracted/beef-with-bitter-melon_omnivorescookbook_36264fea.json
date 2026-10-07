@@ -1,0 +1,187 @@
+{
+  "recipe": {
+    "name": "Beef with Bitter Melon",
+    "time": "35 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "194",
+      "carbohydrateContent": "8.8",
+      "fatContent": "10",
+      "proteinContent": "17"
+    },
+    "directions": [
+      "Combine the beef and marinade ingredients in a medium-sized bowl. Mix until the beef is fully coated. Set aside and marinate for 15 minutes, while preparing other ingredients.",
+      "Add the bitter melon to a big bowl and sprinkle the salt over it. Toss with your hand to coat it well. Let sit for 10 minutes.",
+      "Mix the sauce in a small bowl.",
+      "Bring a pot of water to a boil over medium-high heat. Add the salted melon and boil for 1 minute. Drain off the hot water. Rinse the bitter melon with running cold tap water a few times to stop the cooking. Drain again and place the bitter melon on a plate.",
+      "Pour 1/2 tablespoon of peanut oil in a large skillet and heat over medium heat until hot. Add the garlic and black bean sauce, then stir for 30 seconds to release the fragrance. Lower the heat if the black bean sauce starts to burn.",
+      "Add the bitter melon and sugar. Stir and cook for another minute. Transfer everything to a big plate and set aside.",
+      "Add the remaining 1/2 tablespoon of oil to the pan along with the ginger. Cook and stir for 30 seconds.",
+      "Turn to medium-high heat and add the marinated steak. Let cook undisturbed for 1 minute, or until the bottom is browned. Flip the meat and cook for another 1 minute or so, until the other side is browned. It’s OK if the inside of the beef is slightly pink.",
+      "Pour in the wine and use your spatula to scrape off any brown bits from the pan.",
+      "Add the sauce and stir, until it slightly thickens.",
+      "Add back the cooked bitter melon. Stir fry until the sauce reaches the desired consistency and everything is evenly coated.",
+      "Transfer everything to a big plate and serve hot over steamed rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Flank Steak",
+        "unit": "oz",
+        "notes": "225 g, sliced thinly against the grain",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce (or Regular Soy Sauce)",
+        "unit": "tsp",
+        "notes": "*Footnote 1",
+        "amount": "2",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Large Bitter Melon",
+        "unit": null,
+        "notes": "12-10 oz, seeded and cut into 1 cm (1/4”) slices",
+        "amount": "1",
+        "section": "Bitter Melon",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Bitter Melon",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "separated",
+        "amount": "1",
+        "section": "Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Clove Garlic",
+        "unit": "large",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Black Bean Sauce",
+        "unit": "Tbsp",
+        "notes": "alt: fermented black beans, soaked in hot water for 1 minute, then drained and mashed",
+        "amount": "1",
+        "section": "Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "” (2.5 Cm) Ginger",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": "Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "tsp",
+        "notes": "or dry sherry",
+        "amount": "2",
+        "section": "Stir Fry",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b01fb0fbb5a64e7621851e89294722c9dd7a04992656519fbce6f1284ee40b1f",
+    "lineage_hash": "3da5611dac1b9269afc44adf0d002027a2b0068e0e76951fde2cfacd543d26bb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/beef-with-bitter-melon/",
+    "fetchedAt": "2026-08-01T21:37:16.941Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/beef-with-bitter-melon/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,38 @@
+{
+  "recipe": {
+    "name": "Brave Margot",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Ice-filled",
+    "garnish": [
+      "Crushed Ice",
+      "Fernet Branca"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake all the ingredients except the Fernet together with ice, then strain into an ice-filled glass. Top with crushed ice, garnish, then spritz Fernet Branca on top of the drink.",
+      "Pineapple SyrupCombine 1 cup of fresh pineapple juice with 1 cup of sugar and shake to combine. Store in refrigerator for up to 2 weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "dd528c53fb4df2266b2be13421800d60df2ae829b553c77d0d69fc4cb1d9b2ff",
+    "lineage_hash": "4d6c70b5735169616fd52667a6a0dcf41b5a077724014f77e1d8f5b576d3c165"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/brave-margot-from-bar-marilou/",
+    "fetchedAt": "2026-08-03T23:20:18.446Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/brave-margot-from-bar-marilou/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

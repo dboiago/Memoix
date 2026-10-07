@@ -1,0 +1,134 @@
+{
+  "recipe": {
+    "name": "Brown Bread",
+    "time": "50 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat oven to 325 degrees F.",
+      "Mince the raisins. Beat together the eggs, vanilla extract, buttermilk and oil.",
+      "Sift the flour and add the cinnamon, nutmeg and baking powder. Mix well and add the liquid mixture to make a soft dough. Stir well in the minced raisins.",
+      "Pour into a greased pan and bake for 35 to 45 minutes or till brown. Allow to cool before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bundt",
+        "unit": null,
+        "notes": "alt: tube pan",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Wheat Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raisins",
+        "unit": "C",
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "64d25302b5c95ce800fbf1a124349012fb9fb9b8dc577c37f9bfdb354d8aa27a",
+    "lineage_hash": "64582d217b476d68726a0d4757d27c55d9d2566533b4040bb53cc6f454a39081"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.simplytrinicooking.com/brown-bread/",
+    "fetchedAt": "2026-09-25T21:19:50.618Z"
+  },
+  "rawSource": "https://www.simplytrinicooking.com/brown-bread/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

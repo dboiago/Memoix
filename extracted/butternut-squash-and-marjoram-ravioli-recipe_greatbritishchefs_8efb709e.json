@@ -1,0 +1,150 @@
+{
+  "recipe": {
+    "name": "Butternut Squash and Marjoram Ravioli",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the pasta dough, add 3 egg yolks and 1 whole egg to a blender with the semolina and flour. Gradually pulse the mixture until it forms a smooth, firm dough ball that is slightly sticky to the touch. If the dough is a little bit wet, add a little more flour",
+      "Split the dough into 2 portions, wrap in cling film and store in the fridge to chill",
+      "Meanwhile, make the ravioli filling. Peel and de-seed the butternut squash, then cut into a small dice and add to a pan of salted boiling water until cooked through. Once ready, drain and set aside in a colander to cool",
+      "Heat half of the butter in a pan until foaming, then add the garlic. Cook until soft, then add the butternut squash and chopped marjoram",
+      "Cook for approximately 10 minutes, gently mashing the butternut squash with a wooden spoon as it cooks. The mixture should dry out as the liquid evaporates - at this point, add the nutmeg, mascarpone and salt and pepper, stir well and leave to cool",
+      "Remove the pasta from the fridge at least 1 hour before rolling out. Use a pasta machine to roll the pasta out as thinly as possible, ensuring the sheet is no larger than 12cm x 60 cm in size",
+      "Place a heaped teaspoon of filling down the length of one side of the pasta, making sure there is enough pasta to fold over the mixture to seal the ravioli and leaving a 3cm gap around each portion",
+      "Brush some water between the piles of filling to help the pasta seal, then fold the length of the pasta over the filling to meet the other edge. Using your 2 little fingers, gently press down the pasta around each ball of mixture to make a seal. Ensure there is no air trapped in the ravioli, or they will explode",
+      "Using a ravioli cutter or knife, cut out the ravioli and press each individual raviolo so the seal is tight and all the air has been pressed out. Set aside and repeat the process with the other ball of dough",
+      "Bring a large pan of salted water to the boil and add the ravioli, cook for 3-5 minutes until al dente. Meanwhile, melt the rest of the butter in a frying pan until lightly browned",
+      "Add the sage and Gorgonzola and stir though to form the sauce. Drain the ravioli, add to the pan of sauce and toss to coat",
+      "Divide the ravioli and sauce onto plates and serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "organic",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "00 Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Semolina",
+        "unit": "g",
+        "notes": "plus extra for dusting",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butternut Squash",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Marjoram",
+        "unit": "Tbsp",
+        "notes": "fresh, chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg",
+        "unit": null,
+        "notes": "grated",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mascarpone",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sage",
+        "unit": "bunch",
+        "notes": "roughly chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gorgonzola Dolce Latte",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "cf8b65e81ea3900976e498ca7f28d1dd8d381bb737e11565ea4fa5f54ecf6393",
+    "lineage_hash": "0cd20a2308af4dba1311a9de2517119412051e2e28550d6186349ecc65cf44dc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/butternut-squash-marjoram-ravioli-recipe",
+    "fetchedAt": "2026-08-03T22:20:38.082Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/butternut-squash-marjoram-ravioli-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,115 @@
+{
+  "recipe": {
+    "name": "Vegan Mushroom & Walnut Pâté",
+    "time": "30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "128",
+      "carbohydrateContent": "5",
+      "fatContent": "11",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "Toast the walnuts in a large dry skillet over medium heat. Keep a careful eye on them and shake the pan often as they can burn quickly. As soon as they start browning on the edges remove them from the heat. Remove the walnuts from the pan onto a heat-safe dish, or directly into your food processor if your food processor can handle hot food.",
+      "Return the pan to the heat and add the olive oil. When hot add the onions and garlic and sauté until the onions soften and turn translucent about 4 minutes. Add in all the remaining ingredients, the mushrooms, parsley, rosemary, salt, and pepper and sauté until the mushrooms have cooked and reduced in size, another 5 - 8 minutes. If the mushrooms are sticking to the pan you can add a small splash of water to help release them. As the mushrooms cook they will release their own liquid.",
+      "If your food processor can handle hot food, add the mushrooms to the food processor along with the walnuts. If not, just let the mushrooms and walnuts cool first. Pulse, stopping to scrape the sides as needed until you reach a pâté texture. I like to leave mine with a bit of texture and color variation.",
+      "Press into a container for serving using a spatula to smooth it, and let it chill completely in the fridge before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Walnuts",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Onion",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Button",
+        "unit": "oz",
+        "notes": "alt: cremini mushrooms, about 2 cups, sliced",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "Tbsp",
+        "notes": "fresh, chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c68a87c54830844bcb4940473c2134a4537d5668116f4059aff58ca0a2303ea1",
+    "lineage_hash": "9df53c9c74e6eff59c2c1cec53e0b38dccaaf9a46c8047332a97f718780642c9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/vegan-mushroom-walnut-pate/",
+    "fetchedAt": "2026-08-02T00:44:01.899Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/vegan-mushroom-walnut-pate/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

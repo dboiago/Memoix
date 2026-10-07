@@ -1,0 +1,82 @@
+{
+  "recipe": {
+    "name": "Amazake",
+    "time": "8 hr 5 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "595",
+      "carbohydrateContent": "128",
+      "fatContent": "1",
+      "proteinContent": "8"
+    },
+    "directions": [
+      "Once the rice has cooled to about 60°C (140°F), so that it’s warm to the touch, but not hot, add the water.!Bag of Japanese rice with black and red Japanese text, cup of cooked rice, on a woven mat - traditional Asian staple food, sushi rice, cookery ingredients.",
+      "Gently crumble the dried koji into the rice and mix thoroughly to make sure fermentation is even.!Bag of Japanese rice with black and red Japanese text, cup of cooked rice, on a woven mat - traditional Asian staple food, sushi rice, cookery ingredients.",
+      "Final mixture temperature should be between 55–60°C (130–140°F) before incubation.!Bag of Japanese rice with black and red Japanese text, cup of cooked rice, on a woven mat - traditional Asian staple food, sushi rice, cookery ingredients."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Koji Rice Mold",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": "Koji and Cooked rice",
+        "isOptional": false
+      },
+      {
+        "name": "Cooked Rice",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": "Koji and Cooked rice",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": "Koji and Cooked rice",
+        "isOptional": false
+      },
+      {
+        "name": "Koji",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": "Koji only",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": "Koji only",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e478381aa67b982e2f0484756971476000e374371575364ced44e51fd8a4d98f",
+    "lineage_hash": "539b90e5f27fbee2d0216ecc3215c26809efa7fe720b23c7434d64d745e06970"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chopstickchronicles.com/amazake/",
+    "fetchedAt": "2026-08-02T02:51:30.544Z"
+  },
+  "rawSource": "https://www.chopstickchronicles.com/amazake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

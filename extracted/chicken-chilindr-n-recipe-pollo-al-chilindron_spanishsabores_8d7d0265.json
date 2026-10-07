@@ -1,0 +1,142 @@
+{
+  "recipe": {
+    "name": "Chicken Chilindrón (Pollo al Chilindron)",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "ES",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "685",
+      "carbohydrateContent": "9.36",
+      "fatContent": "51.65",
+      "proteinContent": "40.59"
+    },
+    "directions": [
+      "Place heavy pan over medium heat and cover the bottom with olive oil. Once it&#39;s hot, add the seasoned chicken and brown on both sides, then reserve the chicken on the side. Work in batches to avoid overcrowding the pan.",
+      "Lower the heat to medium-low and add the garlic and ham to the pan. Sauté for 1 minute, making sure the garlic doesn&#39;t stick or burn.",
+      "Add the red pepper, onion, and a pinch of salt, then sauté for about 10 minutes, or until the vegetables are tender and starting to caramelize.",
+      "Mix in the bay leaf, tomato, and sweet paprika, then cook for about 5 minutes.",
+      "Add the white wine, turn up the heat, and reduce to a thick sauce; about 2-3 minutes.",
+      "Add the chicken back to the pan and reduce the heat to low. Slowly simmer for about 30 minutes, or until the chicken is tender and fully cooked.",
+      "Taste and add salt and pepper as desired. Serve the chicken chilindrón family-style or individually plated and enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Thighs",
+        "unit": null,
+        "notes": "alt: drumsticks seasoned with salt and pepper",
+        "amount": "6-8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Peeled and Thinly Sliced",
+        "unit": "clove",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Serrano Ham",
+        "unit": "oz",
+        "notes": "alt: other cured ham diced",
+        "amount": "1.75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion Diced",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Bell Pepper Thinly Sliced",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Juicy Medium Tomatoes",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Spanish Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d398f5d451c9c5d5fb8d55c96f0c1e779ef6cdfcd56e728e2e1d8e94e44a674e",
+    "lineage_hash": "3ef9f31ae1050ecd434c508130575ded0564de31264953f5745557a471a20aea"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://spanishsabores.com/chicken-chilindron-recipe/",
+    "fetchedAt": "2026-08-02T07:19:52.914Z"
+  },
+  "rawSource": "https://spanishsabores.com/chicken-chilindron-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

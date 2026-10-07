@@ -1,0 +1,216 @@
+{
+  "recipe": {
+    "name": "Chicken Paillard With Roasted Tomatoes",
+    "time": "2 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix together all of the ingredients for the marinade in a bowl. Separate out 30ml to dress the salad at the end, the rest will be used for the chicken. Set aside in the fridge until needed",
+      "Take the butterflied chicken breasts and wrap each one in cling film. Use a large pan to lightly bash each breast so they flatten out slightly (like you would do for an escalope but not as severe)",
+      "Cover the breasts in the marinade and leave to marinate for as long as you like, preferably overnight",
+      "Preheat the oven to 90°C. Place the quartered plum tomatoes on a baking tray. Mix all the other ingredients in a bowl and cover the tomatoes. Cook the plum tomatoes for 2 hours",
+      "Once the tomatoes are ready, put a griddle pan over a medium heat and once scorching, drop in the marinated chicken breasts (if you're pan is not large enough to accomodate all 4 breasts, grill in batches of 2). Grill for 2-3 minutes on each side (alternatively you can cook on the barbecue which may take slightly longer)",
+      "Lay the breasts of chicken onto plates. Toss the rocket and basil in the marinade that was separated in step 1 and then layer on top of the chicken. Finish with the caper berries, black olives, Parmesan shavings, slow roasted tomatoes and a drizzling of balsamic round the edge"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Breasts",
+        "unit": null,
+        "notes": "butterflied",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rocket",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basil Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caperberries",
+        "unit": null,
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Olives",
+        "unit": "g",
+        "notes": "cut in half",
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan Shavings",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Balsamic Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basil Leaves",
+        "unit": null,
+        "notes": "picked and scrunched",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemons",
+        "unit": null,
+        "notes": "juice and zest only",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plum Tomatoes",
+        "unit": null,
+        "notes": "cut into quarters",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "tsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b768763ca484d7ab7ab62904838ff0e74feea8ef8e3ef078c13bcf14b8ba24b4",
+    "lineage_hash": "53e3995332179184b7be89b356e24d4369294a9e86fd7f5c23791f908e5c4944"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chicken-paillard-recipe-roasted-plum-tomatoes",
+    "fetchedAt": "2026-08-03T15:37:06.860Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chicken-paillard-recipe-roasted-plum-tomatoes",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

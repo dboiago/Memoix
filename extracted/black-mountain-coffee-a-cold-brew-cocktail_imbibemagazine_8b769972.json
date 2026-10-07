@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Black Mountain Coffee: A Cold-Brew Cocktail",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Snifter",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Build the ingredients in a snifter. Add crushed ice and stir briefly to mix and chill. Insert a sturdy straw (preferably metal) into the glass. Vigorously shake a bottle of salted-cinnamon cream for 5 seconds to whip it, then slowly float 1 oz. on top of the cocktail until it reaches a 1/4-inch from the top. Add more crushed ice on top. Garnish.",
+      "Salted-Cinnamon Cream\nAdd all of the ingredients to a small bowl or container. Add the ground cinnamon slowly between whisking in each ingredient. Whisk together thoroughly for 30 seconds. Pour into a 375ml bottle so that there is empty space in the bottle to be able to properly whip the cream when shaking it. Keep refrigerated between uses.",
+      "Himalayan Salt Tincture\nMix 1 part extra-fine-grain Himalayan salt into 5 parts water and 5 parts vodka."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "6d253cd980edb5a62ae56d4ddcd4340401863b53df8eb02d9e7d46cebd99f728",
+    "lineage_hash": "9e9c80a553f44f22d63f740808150031c85264c6e62f4248e141590d5ab28794"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/black-mountain-coffee-cold-brew-cocktail/",
+    "fetchedAt": "2026-08-03T21:15:00.973Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/black-mountain-coffee-cold-brew-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

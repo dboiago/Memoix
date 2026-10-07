@@ -1,0 +1,35 @@
+{
+  "recipe": {
+    "name": "Cantaloupe Paloma",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Salt the rim of a glass, fill with ice, and set aside. In a shaker, combine all of the ingredients except the club soda, add ice, then shake vigorously. Add the club soda to the shaker, then pour the cocktail into the prepared glass.",
+      "Jasmine-Infused Agave SyrupMake 1 cup of jasmine tea using 4 grams of jasmine pearls and 8 oz. or 240 mL of water. Strain and add twice the amount of agave nectar by weight (8 oz. agave nectar to 4 oz. jasmine tea). The agave will keep in the refrigerator for at least 3 months."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "a225eaa4db20c5a553e4dfc1ef4bb4c3cd211e8100391ac72d640e564561d17d",
+    "lineage_hash": "66c2c53d5f00c99474467b8e9f1568c9a84b19aa97ee2a6669c538d70954042f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cantaloupe-paloma/",
+    "fetchedAt": "2026-08-03T22:20:58.882Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cantaloupe-paloma/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

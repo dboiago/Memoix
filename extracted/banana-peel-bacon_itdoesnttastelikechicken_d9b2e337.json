@@ -1,0 +1,90 @@
+{
+  "recipe": {
+    "name": "Banana Peel Bacon",
+    "time": "16 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "27",
+      "carbohydrateContent": "2",
+      "fatContent": "1",
+      "proteinContent": null
+    },
+    "directions": [
+      "The number one most important step is to use bananas that are very ripe. Stay far away from green bananas, the bacon will taste terrible. The riper the banana the better the flavour so pick bananas that are yellow with lots of brown spots. To prepare the banana peels: remove the peels from the bananas and tear into about 4 strips per banana. Use a spoon to lightly scrape off the white inside part of the banana peel leaving just the peel.",
+      "Make the marinade by mixing the soy sauce, maple syrup, smoked paprika, and garlic powder together in a dish that will fit your banana peels. Add the banana peels and toss to coat. Let marinade for a minimum of 10 minutes, but as long as a few hours.",
+      "When ready to cook the bacon, heat the oil in a large skillet or frying pan over medium heat. When hot add the peels and fry a couple of minutes per side, until they are golden and bubble up a little. It may get a little smoky as the sugars will burn so make sure to turn on your hood fan. Remove from pan and drain on paper towel.&nbsp;They should get crispier as they cool.&nbsp;"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Very Ripe Banana Peels",
+        "unit": null,
+        "notes": "from 2 bananas, I used organic bananas and washed them before making the bacon",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maple Syrup",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Oil",
+        "unit": "Tbsp",
+        "notes": "or more if needed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6f60f47198a1936dc36eb84a964ff374ba5755ebe7c3582b67849e0550308785",
+    "lineage_hash": "57fdb878ca1e7632320ffbfa55a30775594428d7fc573e69e44fd15f0f7ff13a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/banana-peel-bacon/",
+    "fetchedAt": "2026-08-02T04:52:43.522Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/banana-peel-bacon/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

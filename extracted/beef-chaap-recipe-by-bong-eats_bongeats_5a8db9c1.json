@@ -1,0 +1,238 @@
+{
+  "recipe": {
+    "name": "Beef Chaap",
+    "time": "2 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Soak poppy seeds, cashew nuts and charmagaz in water for at least 2 hours. Then, drain the water and make a paste, first of the poppy seeds, and then of cashew and charmagaz together.",
+      "Roughly chop onions, ginger, garlic, and green chillies, and make a paste of these too.",
+      "Transfer all the pasted ingredients to a large mixing bowl.",
+      "Mix in yoghurt, chhatu, shahi garam masala, kashmiri red chilli powder, turmeric, salt, kewra water, rose water, meetha attar, and saffron (mixed in 1 tbsp warm milk).",
+      "Grate khoya kheer and add it to the bowl too.",
+      "If your meat is particularly tough, you can add grated papaya to the mix. Papaya skin contains an enzyme called papain, which breaks down meat proteins and helps tenderise it.",
+      "Lay a beef slice between two sheets of plastic and use a mallet or pestle to gently flatten it. This will lead to tender chaap. However, be careful not to hammer too forcefully or the meat may fall apart.",
+      "Add the slices to the prepared mixture, making sure to coat each slice well on both sides. Leave them to marinate for 2 hours.",
+      "Heat a dalda, ghee, and vegetable oil in a large, flat, heavy-bottomed pan on low heat. We used these in the ratio 2:1:4. The fat should be 2cm deep. Don’t heat the oil up too much; chaap needs to be fried in oil at a very low temperature (150°C) for a long time.",
+      "Lower the marinated beef into the oil. Try and keep the meat as far away from the direct flame as possible. The best practice is to line the edge of the pan with the meat.",
+      "Fry for about an hour or until the meat is tender, turning over once in a while to cook it evenly from both sides.",
+      "Once the meat is soft enough that it breaks apart using just two fingers and the gravy has acquired a nutty brown colour, remove from the oil and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef",
+        "unit": "g",
+        "notes": "1cm thick slices",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pcs Green Chillies",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cashew Nuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Charmagaz",
+        "unit": "g",
+        "notes": "mixed melon seeds",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Posto",
+        "unit": "g",
+        "notes": "poppy seeds",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chhatu",
+        "unit": "g",
+        "notes": "roasted-gram flour",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yoghurt",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Khoya Kheer",
+        "unit": "g",
+        "notes": "alt: mawa, reduced, solidified milk",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shahi Garam Masala",
+        "unit": "g",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kashmiri Red Chilli Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kewra Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rose Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Meetha Attar",
+        "unit": "drops",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Saffron",
+        "unit": "pinch",
+        "notes": "in 1 tbsp milk",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Food Colour",
+        "unit": "pinch",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kacha Pepe",
+        "unit": "g",
+        "notes": "unripe, green papaya; optional",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dalda (vegetable Shortening) for Frying",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ghee for Frying",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil for Frying",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "18e6a0fab14966011fcd13b1e2c3a2ade4aa2b9ecfa1167ea5f7f183bef28f84",
+    "lineage_hash": "90ec79d9ecc92870897c212649a98101783f9c63f0998771682ea5e1a669fc36"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.bongeats.com/recipe/beef-chaap",
+    "fetchedAt": "2026-08-01T16:56:04.930Z"
+  },
+  "rawSource": "https://www.bongeats.com/recipe/beef-chaap",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,257 @@
+{
+  "recipe": {
+    "name": "Cantonese Spring Rolls",
+    "time": "1 hr 10 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "18",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "155",
+      "carbohydrateContent": "19",
+      "fatContent": "6",
+      "proteinContent": "6"
+    },
+    "directions": [
+      "Mix the pork with the marinade ingredients and set aside for about 30 minutes. In the meantime, prepare the rest of the ingredients. Cut all of the vegetables to approximately the same size. You want everything the same size so each ingredient blends together.",
+      "Brown the pork over high heat in 2 tablespoons of oil, and add the garlic, mushrooms and carrots. Stir fry for 30 seconds, and add the bamboo shoots, napa cabbage, and Shaoxing wine. Continue stir-frying for a minute. Adjust the heat to simmer the mixture, as the napa cabbage will release a lot of moisture.",
+      "Stir in the soy sauce, sesame oil, salt, white pepper, and sugar. At this time, you have the option of adding 1/4 cup of the decanted water from soaking the dried mushrooms. It strengthens the mushroom flavor, so this is purely according to your personal preference. You may also have to simmer the filling longer to reduce the additional liquid.",
+      "Continue simmering the filling for another 3 minutes--until the napa cabbage is completely wilted--and stir in the corn starch slurry to thicken. How much slurry you add depends upon the wetness of the filling (this varies if your cabbage had more moisture or if you did add the optional mushroom water), but there should be no standing liquid at all.",
+      "Transfer the filling to a large shallow bowl, and let cool. Place into the refrigerator to cool further—at least one hour. It’s best to start with a cold filling for easier wrapping. The key to wrapping spring rolls is making sure that they’re tight, yet not overstuffed. It's best to use fresh spring roll wrappers if you can, as freezing the wrappers can result in the spring roll skin being a bit too damp.",
+      "Place the wrapper on a flat surface so that a corner is facing toward you. Use about two spoonfuls of the mixture per spring roll, and spoon it about 2 inches from the corner that is closest to you. Roll it over once, and, like you’re making a burrito, fold over both sides. Continue rolling it into a cigar shape. With your fingers, brush a bit of the cornstarch water onto the corner of the wrapper that is farthest from you to seal it.",
+      "In case you’re wondering, we did try egg wash instead of the cornstarch mixture to seal the spring roll but the egg wash \"stains\" the spring roll, so it's best to use the cornstarch mixture.",
+      "Place each roll on a tray. This recipe makes about 18-20 spring rolls. You can also freeze these spring rolls on the tray overnight, and transfer them to a zip-lock bag when they are completely frozen for future use. We usually fry some fresh and freeze the rest, unless we are hosting a party, in which case, these go like hot cakes!",
+      "To fry the spring rolls, fill a small pot (which requires less oil) with oil until it’s 2 to 3 inches deep. Heat the oil slowly over medium heat until it reaches 325 degrees. Gently add the spring rolls one at a time, frying in small batches. Carefully roll them in the oil so they cook evenly until golden brown and transfer them to a plate lined with paper towels.",
+      "Prepare the dipping sauce by adding all ingredients to a small sauce pan. Mix and heat until just simmering and pour into a small bowl. Serve the spring rolls hot with the dipping sauce!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pork",
+        "unit": "oz",
+        "notes": "pork butt, shoulder, or loin, finely, shredded, boneless",
+        "amount": "8",
+        "section": "pork and marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "pork and marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "pork and marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "pork and marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "pork and marinade",
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "pork and marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "To assemble the filling",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "1",
+        "section": "To assemble the filling",
+        "isOptional": false
+      },
+      {
+        "name": "Shiitake Mushrooms",
+        "unit": null,
+        "notes": "soaked until softened and thinly sliced, dried",
+        "amount": "10",
+        "section": "To assemble the filling",
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "medium",
+        "notes": "julienned, about 1 cup",
+        "amount": "2",
+        "section": "To assemble the filling",
+        "isOptional": false
+      },
+      {
+        "name": "Bamboo Shoots",
+        "unit": "C",
+        "notes": "julienned; fresh is preferred, but canned is fine too",
+        "amount": "1",
+        "section": "To assemble the filling",
+        "isOptional": false
+      },
+      {
+        "name": "Napa Cabbage",
+        "unit": "small",
+        "notes": "julienned, about 6 cups",
+        "amount": "1",
+        "section": "To assemble the filling",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "To assemble the filling",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "To assemble the filling",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "To assemble the filling",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "½",
+        "section": "To assemble the filling",
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper (to Taste)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "To assemble the filling",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "To assemble the filling",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": "dissolved in 2 tablespoons cold water",
+        "amount": "2",
+        "section": "To assemble the filling",
+        "isOptional": false
+      },
+      {
+        "name": "Package Spring Roll Wrappers",
+        "unit": null,
+        "notes": "8\" squares; this recipe makes about 20 spring rolls",
+        "amount": "1",
+        "section": "wrapping",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": "dissolved in 1 tablespoon boiling water for sealing the spring rolls",
+        "amount": "1",
+        "section": "wrapping",
+        "isOptional": false
+      },
+      {
+        "name": "Canola Oil (or Peanut or Vegetable Oil, for Frying)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "wrapping",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "dipping sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Hot Water",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "dipping sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Worcestershire Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "dipping sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "dipping sauce",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d6fbd4ed50fa89848ad78f5372824e1a288ee2c468af56d8d023506495240196",
+    "lineage_hash": "d0740f8013cca46a61668ae9a662e3e5802d92ecaf70c82ab050cdc238d2f100"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/homemade-spring-rolls/",
+    "fetchedAt": "2026-08-02T06:09:40.970Z"
+  },
+  "rawSource": "https://thewoksoflife.com/homemade-spring-rolls/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

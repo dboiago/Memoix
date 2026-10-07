@@ -1,0 +1,37 @@
+{
+  "recipe": {
+    "name": "Bloody Samurai: A Sake Bloody Mary",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Collins",
+    "garnish": [
+      "Furikake"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Use a lime wedge to rim one side of a Collins glass with Furikake and then build the drink in the glass. Combine ingredients, add ice, and garnish.",
+      "Bloody Mary MixAdd ingredients to a blender and purée until smooth. Makes 5 oz. Will keep in refrigerator for 4-5 days."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "64d55bc32403579c292e27a5f668f5a3a7b1cecf28c2f0306f4e2c12f477e953",
+    "lineage_hash": "8bd2992c93d09482e095ca0ea14f98885a81c9f3900577f58f982b96b15e1f75"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bloody-samurai-a-sake-bloody-mary/",
+    "fetchedAt": "2026-08-03T21:09:54.010Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bloody-samurai-a-sake-bloody-mary/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

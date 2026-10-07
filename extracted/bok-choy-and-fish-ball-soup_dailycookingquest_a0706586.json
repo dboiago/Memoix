@@ -1,0 +1,110 @@
+{
+  "recipe": {
+    "name": "Bok Choy and Fish Ball Soup",
+    "time": "30 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Boil chicken stock in a soup pot. Add carrots, tomatoes, and bok choy stalks into the pot and bring to a boil. Reduce the heat and simmer for 10 minutes.",
+      "Meanwhile, fry garlic and oil in a frying pan until golden brown. Transfer both fried garlic and its oil to a bowl and set aside to cool. Alternatively, combine garlic and oil in a microwave-proof bowl. Microwave for 2-3 minutes until the garlic turns golden brown.",
+      "Once bok choy stalks turn translucent, add fish balls and bok choy leaves into the soup pot. Return to a boil and cook for another 3-5 minutes.",
+      "Add tofu, scallions, fried garlic, and garlic oil to the soup pot. Remove from heat and serve the soup immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Stock",
+        "unit": "C",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram (1 Lb) Bok Choy",
+        "unit": null,
+        "notes": "separate stalks from leaves",
+        "amount": "450",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram (1 Lb) Carrots",
+        "unit": null,
+        "notes": "peeled and thinly sliced",
+        "amount": "450",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram (1/2 Lb) Tomatoes",
+        "unit": null,
+        "notes": "cut into wedges",
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram (1 Lb) Fish Balls",
+        "unit": null,
+        "notes": null,
+        "amount": "450",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram (1 Lb) Silken Tofu",
+        "unit": null,
+        "notes": "cubed",
+        "amount": "450",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1efafdf19118dac4604b41b06ef93e44286be000ff8cfe39ee30e4b67a2f6c4b",
+    "lineage_hash": "f1f7ed9110e4ac37ec280d1955382bcd2f4b9b92bbc2d6bae2e68967be81fcc1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/bok-choy-and-fish-ball-soup.html",
+    "fetchedAt": "2026-08-01T18:26:23.167Z"
+  },
+  "rawSource": "https://dailycookingquest.com/bok-choy-and-fish-ball-soup.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,104 @@
+{
+  "recipe": {
+    "name": "Angel Food Cake",
+    "time": "1 hr 5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 325 °F (160 °C).",
+      "Sift the flour and granulated sugar twice and set aside.",
+      "Whip the egg whites with the cream of tartar and salt until foamy, then gradually add the icing sugar, whipping until the whites hold a medium peak when the beaters are lifted. Stir in the vanilla.",
+      "Add the flour to the whipped whites in 2 additions and using a whisk to fold in the flour evenly and easily. Scrape the batter into a 10-inch (25 cm) ungreased tube pan, spread it to level and bake the cake for 30-35 minutes, until it springs back when gently pressed (try not to open the oven before 25 minutes).",
+      "Turn the cake pan upside down to cool the cake, and do not remove the cake from the pan until completely cooled. To remove, run a palette knife carefully around the outside of the cake, and very gently around the inner tube, invert the pan and tap it on the counter until it comes out.",
+      "Serve the cake with whipped cream and berries, if you wish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cake & Pastry Flour",
+        "unit": "C",
+        "notes": "130 g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": "200 g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": "large",
+        "notes": "room temperature",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream of Tartar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "C",
+        "notes": "65 g, sifted",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipped Cream and Berries",
+        "unit": null,
+        "notes": "to serve",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "81cf9b00f996c7944d5f2cc3e336f3fff88c9c2c52a57dcf82f67b64db25e4c1",
+    "lineage_hash": "2e96950a298396f7b4a987595dadb754cb8f258f46d3079afce2a424567ab0ea"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/angel-food-cake/",
+    "fetchedAt": "2026-08-01T17:21:34.715Z"
+  },
+  "rawSource": "https://annaolson.ca/project/angel-food-cake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,85 @@
+{
+  "recipe": {
+    "name": "Arugula and Yellow Tomato Salad",
+    "time": null,
+    "course": "salad",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Put the arugula in a medium-size bowl and chill, covered, until serving time.",
+      "Just before serving, add the tomatoes, onion, lemon juice, oil, and salt and pepper to the bowl. Gently toss to mix. Correct the seasoning, adding lemon juice, salt, or pepper to taste.",
+      "Transfer the salad to plates or a platter, preferably chilled."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bunch Arugula",
+        "unit": "large",
+        "notes": "washed, dried, and stemmed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pint Yellow Cherry Tomatoes",
+        "unit": null,
+        "notes": "see Note, halved",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "Tbsp",
+        "notes": "diced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": "fresh",
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra-virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3-4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Salt (kosher or Sea) and Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "578e92156d8c9f7d5d55c2fbf57f3b981bd1200e86913bbe0aedc0392c9be3b2",
+    "lineage_hash": "ce8e63f24f31135719a17bba60b01fb1ab6ad10c64e8f88b542e20821aa6746b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/arugula-yellow-tomato-salad/",
+    "fetchedAt": "2026-08-03T04:48:22.903Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/arugula-yellow-tomato-salad/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

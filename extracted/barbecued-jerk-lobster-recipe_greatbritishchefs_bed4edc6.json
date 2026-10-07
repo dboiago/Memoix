@@ -1,0 +1,251 @@
+{
+  "recipe": {
+    "name": "Barbecued Jerk Lobster",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the lobsters in the freezer 1 hour before cooking to render them unconscious. Wash the rice in several changes of water, then leave to soak in cold water for 30 minutes",
+      "To make the jerk sauce, heat a large pan over a medium heat, then add the oil. Once hot, add the garlic, ginger, spring onions and chilli and fry for 2 minutes, then add the spices, rosemary, bay leaf and citrus zests and cook for a further 2 minutes",
+      "Add the sugar, soy sauce, citrus juices and chicken stock and bring to a simmer. Cook for 5 minutes until thickened and reduced, then remove from the heat and add the coriander and a pinch of salt. Set aside to cool until required",
+      "To kill the lobsters, firmly insert the tip of a strong cook’s knife into the cross on the head. Carefully cut the lobsters in half lengthways from head to tail, then remove the stomach sac from the head and the dark intestinal thread running along the length of the tail",
+      "Crack the claws and lay the lobster halves on a tray and spoon half the jerk sauce over them. Leave to marinate for 30 minutes while you light and heat up the barbecue",
+      "Meanwhile, prepare the rice. Place a pan with a tight fitting lid over a medium heat and add a drizzle of oil. Once hot, add the spring onions and garlic and sweat for 2 minutes. Add the rice and cook, stirring, for 1 minute",
+      "Pour in the coconut milk and stock and bring to a simmer. Turn the heat down to low, then cover with the lid on and cook gently for 10 minutes. After this time, remove the pan from the heat and leave to stand, still covered, for 5 minutes",
+      "To cook the lobsters, place the lobster claws on a white-hot barbecue and cook for 3–4 minutes. Turn the lobsters' claws over and add the lobster tails, shell side down, and the lime halves, cut side down. Cook for 3–4 minutes, then turn the lobster tails over and cook for a further 2 minutes",
+      "Once the lobster is cooked through, transfer to a warmed platter and spoon on more jerk sauce, sprinkling over more chopped coriander and arranging the lime pieces to one side. Fluff up the rice with a fork and serve on the side"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Lobsters",
+        "unit": null,
+        "notes": "live, each weighing 600g - 800g",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sunflower Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "fresh, chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": "bunch",
+        "notes": "trimmed and finely sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli",
+        "unit": null,
+        "notes": "deseeded and chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Grated Nutmeg",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Allspice Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "tsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "zest and juice",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": "zest and juice",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basmati Rice",
+        "unit": "g",
+        "notes": null,
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sunflower Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": null,
+        "notes": "trimmed and finely sliced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": null,
+        "notes": "peeled and finely sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Limes",
+        "unit": null,
+        "notes": "halved",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b2f0e3e197e60f69457fdfd587ed6b3cdc83fd1058c7cc4d3e5c49c3b604bc09",
+    "lineage_hash": "3b4fa0475b9dcd7e379246e9b93326f3cded390aa1cb22059e99c6df163bfc88"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/jerk-lobster-coconut-rice-recipe",
+    "fetchedAt": "2026-08-03T13:05:24.128Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/jerk-lobster-coconut-rice-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

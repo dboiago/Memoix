@@ -1,0 +1,159 @@
+{
+  "recipe": {
+    "name": "Chicken Mole Sopes",
+    "time": "1 hr",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "297",
+      "carbohydrateContent": "6.18",
+      "fatContent": "5.47",
+      "proteinContent": "13.28"
+    },
+    "directions": [
+      "In a large pot, heat water, salt, and chicken. Once it starts to boil, lower the heat and simmer for about 20 minutes. Transfer chicken to plate to cool off, and then shred. Reserve broth.",
+      "Heat oil in a large skillet over medium heat. Add onion, garlic, bolillo, chiles, and tomato, and sauté for 10 minutes, until soft.",
+      "Pour 2 cups of broth into a blender and add the sautéed ingredients. Add chocolate and mole paste, and blend until very smooth. Transfer the sauce to a large skillet.",
+      "Bring to a boil, reduce heat, and simmer for 10 minutes.",
+      "Add shredded chicken and stir until chicken is covered with the sauce.",
+      "Lower heat and simmer for 10 minutes, stirring continuously to keep it from sticking to the skillet.",
+      "Plate some mole on a serving plate and toss a handful of sesame seeds on top for garnish or serve over sopes.",
+      "Fill each sope with some warm chicken mole, top with a fried egg, and drizzle with additional mole sauce."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "4½",
+        "section": "Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Breasts",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": "Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "MOLE SAUCE",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "¼",
+        "section": "MOLE SAUCE",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "3",
+        "section": "MOLE SAUCE",
+        "isOptional": false
+      },
+      {
+        "name": "Bolillo",
+        "unit": "small",
+        "notes": "substitute small French roll, cut into1-inch pieces",
+        "amount": "1",
+        "section": "MOLE SAUCE",
+        "isOptional": false
+      },
+      {
+        "name": "California Red Chile Pod",
+        "unit": null,
+        "notes": "stemmed, seeded, diced",
+        "amount": "1",
+        "section": "MOLE SAUCE",
+        "isOptional": false
+      },
+      {
+        "name": "Roma Tomatoes",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": "MOLE SAUCE",
+        "isOptional": false
+      },
+      {
+        "name": "Reserved Chicken Broth",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "MOLE SAUCE",
+        "isOptional": false
+      },
+      {
+        "name": "Tablet Mexican Chocolate",
+        "unit": null,
+        "notes": "recommend Nestle-Abuelita",
+        "amount": "1",
+        "section": "MOLE SAUCE",
+        "isOptional": false
+      },
+      {
+        "name": "Mole Negro Paste",
+        "unit": "oz",
+        "notes": null,
+        "amount": "4",
+        "section": "MOLE SAUCE",
+        "isOptional": false
+      },
+      {
+        "name": "Homemade Sopes",
+        "unit": null,
+        "notes": "or store bought sopes",
+        "amount": "8",
+        "section": "Sopes",
+        "isOptional": false
+      },
+      {
+        "name": "Fried Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": "Optional",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "034624d094f6bf4f81ba6d0283cc5ad718836998b1a62c35c97299739c33b7e8",
+    "lineage_hash": "aab2ce5373b9c31c372c42c142ef727679394d0d7842e4aa611a64f490d04651"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/chicken-mole-sopes/",
+    "fetchedAt": "2026-08-01T17:23:28.297Z"
+  },
+  "rawSource": "https://muybuenoblog.com/chicken-mole-sopes/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

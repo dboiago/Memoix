@@ -1,0 +1,156 @@
+{
+  "recipe": {
+    "name": "Caribbean Curry Chicken",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "JM",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Wash 1lb Chicken with lemon and water",
+      "Add 1tsp salt, 1tsp black pepper, 3 cloves garlic, 1 chopped onion, , 1 cup spring onions (Leave some over)",
+      "1tsp pimento seeds.",
+      "1 cup mixed peppers.",
+      "3-4 branches of fresh thyme.",
+      "1 tsp Chicken seasoning.",
+      "Mix together and marinate for up to 8hrs or overnight.",
+      "Pour 1tbsp vegetable oil into a pot on high heat.",
+      "Then add left over garlic, onions, spring onions and cook for 3 mins.",
+      "Then add 4 Tbsp. of Curry powder and 1tsp of cumin and cook well for 5 mins.",
+      "Add ¼ cup water and mix together.",
+      "Add the meat to the pot and mix well so that all the curry covers the meat.",
+      "Cook meat for 15 mins – this will release the natural juices of the meet.",
+      "Then add 1 cup of water.",
+      "1 scotch bonnet pepper and mix well.",
+      "Cook for further 35 mins.",
+      "Then add 1 cup of chopped white potatoes and 1 cup chopped carrots.",
+      "Mix well and cook for further 15 mins on medium high heat."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Drumsticks and Thighs",
+        "unit": "lb",
+        "notes": "skinless",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onion",
+        "unit": "C",
+        "notes": "3 branches",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pimento Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Branches Thyme",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "3-4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Seasoning",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scotch Bonnet Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "34e97ef7a833f3edb2c093e80a88661e921888c00d277f539a2cb0e2cbbd9e97",
+    "lineage_hash": "66547c9b6430fb8b429064c48f0d4bbdb6de5fe1b5154db3f9a1a9e7b62f8e09"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://originalflava.com/meals/caribbean-curry-chicken/",
+    "fetchedAt": "2026-09-30T17:28:11.384Z"
+  },
+  "rawSource": "https://originalflava.com/meals/caribbean-curry-chicken/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

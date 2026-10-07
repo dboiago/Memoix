@@ -1,0 +1,103 @@
+{
+  "recipe": {
+    "name": "Abacha (African/Nigerian Salad)",
+    "time": "30 min",
+    "course": "salad",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "NG",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Soak abacha in hot water till soft (25-30mins). Drain.",
+      "Bleach palm oil for 5 minutes on medium heat. set aside to cool",
+      "De-solve the akaun in 1 tablespoon of hot water. set aside",
+      "In a bowl, combine the bleached oil and akaun solution. whisk until slightly thickened. Add the dried fish, crayfish, softened abacha, onions, maggi and salt .Combine thoroughly. Taste and adjust for seasoning.",
+      "Sprinkle on scent leaf just before serving"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Abacha",
+        "unit": "C",
+        "notes": "dried Shredded cassava",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish",
+        "unit": null,
+        "notes": "dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Palm Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Akaun (cooking Potash)",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crayfish",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bulb Small Onion",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scented Leave",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maggi and Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "cd471fbfefc5ac4cfceb953e126c7b3a36eff0078fbb3ef4dabce9ae851af800",
+    "lineage_hash": "49934048e49810bef057c0dd967a59a7703783ad1a074d6b4a3028e546a80146"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://9jafoodie.com/abacha/",
+    "fetchedAt": "2026-09-25T18:48:15.809Z"
+  },
+  "rawSource": "https://9jafoodie.com/abacha/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

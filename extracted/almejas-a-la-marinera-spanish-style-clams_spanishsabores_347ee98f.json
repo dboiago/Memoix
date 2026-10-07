@@ -1,0 +1,143 @@
+{
+  "recipe": {
+    "name": "Almejas a la Marinera (Spanish Style Clams)",
+    "time": "4 hr 30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "ES",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "136",
+      "carbohydrateContent": "5.44",
+      "fatContent": "9.74",
+      "proteinContent": "4.01"
+    },
+    "directions": [
+      "Place the clams in a large bowl of salted water for a few hours (up to overnight) in the refrigerator. This should remove any sand that was inside of the clam.",
+      "Add 1/2 cup of water and the bay leaf to a large, heavy-based pot and bring to a boil over a medium high heat.",
+      "Add about 6-8 clams at a time, cooking only until the clams open to prevent overcooking. Discard any clams that stay closed; they are dead and will spoil the flavor. Save the cooking water for later.",
+      "Heat four tablespoons of extra virgin olive oil in a heavy pot, then sauté the onion, garlic, pepper and parsley over medium high heat until the onions are translucent.",
+      "Add the breadcrumbs and paprika and sauté for a minute or so, then add the white wine. Cook until the liquid has reduced.",
+      "Add the liquid from cooking the clams and cook for about 5 minutes. Taste and adjust the salt levels if necessary.",
+      "Add the clams, cover, and cook for no more than 5 minutes on low.",
+      "Serve the clams and sauce in bowls garnished with more fresh parsley and a squeeze of lemon juice. Enjoy immediately!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Small Clams Discard Any Open Clams",
+        "unit": "lb",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion Finely Diced",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Minced",
+        "unit": "clove",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spicy Pepper Thinly Sliced Into Rings",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley Chopped",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heaping Tablespoon Breadcrumbs",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Spanish Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry White Wine",
+        "unit": "C",
+        "notes": "alt: dry Spanish sherry",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e20818ab5dd70f7f061fbd15fe2abfeac4023fccfbe30d6fc4a85c8268f76840",
+    "lineage_hash": "10d8e6a1907e3c44edbbf0a8c26e3f9fbb9c8286a6968fefcbfc2c23f83e9017"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://spanishsabores.com/almejas-la-marinera-spanish-style-clams/",
+    "fetchedAt": "2026-08-02T09:48:59.344Z"
+  },
+  "rawSource": "https://spanishsabores.com/almejas-la-marinera-spanish-style-clams/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

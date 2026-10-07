@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Affogato",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a small bowl or cup, add one to two shots of fresh espresso. If opting for a boozy version, add a shot of your preferred alcohol. Add one scoop of gelato to the bowl."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "162fcaf1da148786ff7e2fe619cd45b822c6166f50762b43c4361759c0f5bc50",
+    "lineage_hash": "ae44a7d5950ee73a3c6e4ffd27ebc0a0acd26ed1b3bacf4f9c72c05f5cdcc79f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/affogato-recipe/",
+    "fetchedAt": "2026-08-03T20:03:56.625Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/affogato-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

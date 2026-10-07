@@ -1,0 +1,104 @@
+{
+  "recipe": {
+    "name": "Baked Egg in a Basket",
+    "time": "40 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "KR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "530",
+      "carbohydrateContent": "25",
+      "fatContent": "38",
+      "proteinContent": "20"
+    },
+    "directions": [
+      "Preheat the oven to 180ºC / 356F.",
+      "Cut the ham/bacon rasher into 4 small square pieces for a simple Korean flag version (per TV program). Alternatively, you could slice the ham/bacon into the real Korean flag stripes.",
+      "Place one slice of bread on a board. Squeeze and spread mayonnaise with a spread knife thoroughly on one side.",
+      "Place another slice of bread on a board. Make a round hole on the bread using a round shaped cookie cutter or any round shaped object that’s strong and sharp enough to cut through the bread. (I used 1/2 cup stainless steel measuring cup.)",
+      "Place the bread slice (with a hole) from step 4 on top of the mayo spread bread slice from step 3. (Optionally, you could insert a slice of cheese in between the bread for a more savory cheesy taste.)",
+      "Squeeze the mayonnaise around the edge of the top bread slice.",
+      "Break the egg in the hole and sprinkle a pinch of salt on the egg. (Optionally, you could also add a pinch parsley on the egg.) Place the ham/bacon on the four corners of the bread.",
+      "Cook the bread in the oven for 20 mins. (If you prefer slightly runnier egg white and yolk, cook it for 15 mins or less.)",
+      "Serve. (It tastes great with a cup of fresh fruit juice.)"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "White Bread",
+        "unit": "slices",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ham",
+        "unit": "slice",
+        "notes": "alt: 1 rindless bacon rasher",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cheese",
+        "unit": "slice",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "pinch",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "846d5be058e1276de222f27276a4b2ffc1d4f136154e1c7e003d83d48a809a64",
+    "lineage_hash": "6ab34670200d358ce6ed0d42817a590e3d68ab15def9f47031a2ce0da8c8e0f4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://mykoreankitchen.com/egg-in-a-basket/",
+    "fetchedAt": "2026-08-01T22:14:13.186Z"
+  },
+  "rawSource": "https://mykoreankitchen.com/egg-in-a-basket/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

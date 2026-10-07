@@ -1,0 +1,115 @@
+{
+  "recipe": {
+    "name": "Grilled Zucchini with Lemon-Garlic Drizzle",
+    "time": "15 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "82",
+      "carbohydrateContent": "4",
+      "fatContent": "7",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Prep the zucchini: In a small bowl, mix the olive oil, garlic powder, smoked paprika, and a pinch of salt and pepper. Brush or rub this mixture evenly over both sides of the zucchini slices.",
+      "Grill the zucchini: Heat a grill or grill pan over medium-high until very hot. Place the zucchini planks on the grill and cook for 3–5 minutes per side, or until tender with deep grill marks. Avoid moving the zucchini or flipping it too soon to allow nice grill marks to form.",
+      "Make the lemon-garlic drizzle: While the zucchini cooks, whisk together the lemon juice, olive oil, garlic, and a pinch of salt and pepper. Set aside.",
+      "Finish and serve: Transfer the hot grilled zucchini to a serving platter and drizzle with the lemon-garlic sauce. Garnish with optional toppings if desired (see notes)."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Zucchini",
+        "unit": "medium",
+        "notes": "sliced lengthwise into ½-inch planks",
+        "amount": "2",
+        "section": "zucchini",
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "zucchini",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "zucchini",
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Paprika",
+        "unit": "tsp",
+        "notes": "or regular paprika",
+        "amount": "½",
+        "section": "zucchini",
+        "isOptional": false
+      },
+      {
+        "name": "Salt & Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "zucchini",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": "about ½ lemon",
+        "amount": "1",
+        "section": "Lemon-Garlic Drizzle",
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Lemon-Garlic Drizzle",
+        "isOptional": false
+      },
+      {
+        "name": "Clove Garlic",
+        "unit": "small",
+        "notes": "finely minced or pressed",
+        "amount": "1",
+        "section": "Lemon-Garlic Drizzle",
+        "isOptional": false
+      },
+      {
+        "name": "Salt & Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "Lemon-Garlic Drizzle",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8110ec01c7a602f376fb832c5d011131d4470d3db051545e9fd7604d99ce8356",
+    "lineage_hash": "884681c0c92c70e21b8db960702937ed7c0a81b80c4212fa9068ad3cef840c5c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/grilled-zucchini/",
+    "fetchedAt": "2026-08-02T09:22:27.458Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/grilled-zucchini/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

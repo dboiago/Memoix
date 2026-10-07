@@ -1,0 +1,104 @@
+{
+  "recipe": {
+    "name": "5-Minute Chimichurri Sauce",
+    "time": "5 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "AR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "135",
+      "carbohydrateContent": "3",
+      "fatContent": "13",
+      "proteinContent": null
+    },
+    "directions": [
+      "Add all of the ingredients to a small blender, food processor, or use an immersion blender. Blend everything together, stopping to scrape the sides as needed. I prefer a sauce&nbsp;with lots of visible texture, but if you prefer a smoother sauce, feel free to blend to the desired consistency.&nbsp;"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cilantro",
+        "unit": "C",
+        "notes": "1 large handful, fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "C",
+        "notes": "1 large handful, fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "C",
+        "notes": "(about ¼ of an onion), chopped",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "C",
+        "notes": "substitute aquafaba for oil-free",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "Tbsp",
+        "notes": "1 lime",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Pepper Flakes",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2051a9c580aa0156f6a9c5dd7c6728e2e99eba22abfea9a16320d8486c51fcdc",
+    "lineage_hash": "38c2c1f10813d6d1c763c0ee16ade0077fdbc3bd0aa1cda6c97ab790898c1e96"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/5-minute-chimichurri-sauce/",
+    "fetchedAt": "2026-08-01T18:47:17.890Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/5-minute-chimichurri-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

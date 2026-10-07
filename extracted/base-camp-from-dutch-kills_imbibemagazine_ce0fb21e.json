@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Base Camp",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Old Fashioned",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all of the ingredients in an Old Fashioned glass, then add ice and stir to chill. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "32f48b9749070c2ce2450a46bf88a9472a77ab2b5a81bbb397d373b89b359de8",
+    "lineage_hash": "58145d2740c7f01d82003195ed43a20614cfee88efdb349f785910f4b20aeb8f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/base-camp-from-dutch-kills/",
+    "fetchedAt": "2026-08-03T21:56:24.256Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/base-camp-from-dutch-kills/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

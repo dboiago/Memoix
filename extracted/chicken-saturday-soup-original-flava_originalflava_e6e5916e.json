@@ -1,0 +1,215 @@
+{
+  "recipe": {
+    "name": "Chicken Saturday Soup",
+    "time": "1 hr 30 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "JM",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add some water to a large cooking pot, then bring to bowl.",
+      "Cut up your chicken into pieces and take skin off and season with salt, pepper, all purpose seasoning and mixed herbs. Then add to your pot.",
+      "Add pumpkin or butternut squash and season, salt, pepper, pimento and mix together and cook down for 20 minutes.",
+      "Add onions, spring onions, garlic, ginger, carrots, sweet potatoes, yam and corn, cho cho then mix and cook for further 15 mins until tender.",
+      "Add dumplings, scotch bonnet and fresh thyme and cook for 15 minutes. Then add cock soup mix and cook for further 5 minutes then simmer and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Leg Quarters",
+        "unit": null,
+        "notes": "Skin off, cut into pieces",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Seasoning",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Herbs",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pumpkin",
+        "unit": "g",
+        "notes": "alt: butternut squash, Diced",
+        "amount": "240",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pimento",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "fresh grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": null,
+        "notes": "cloves chopped",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Potato",
+        "unit": "g",
+        "notes": "peeled & diced",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yam",
+        "unit": "g",
+        "notes": "peeled & diced",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn on the Cob",
+        "unit": null,
+        "notes": "cut into 5",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cho Cho",
+        "unit": "g",
+        "notes": "diced",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dumplings & Spinners",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scotch Bonnet",
+        "unit": null,
+        "notes": "whole",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": "fresh",
+        "amount": "4-6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cock Soup Mix",
+        "unit": "pkg",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8b412d9f56de7333b175d65d155075197e328789661b6b9721565f08fbee22af",
+    "lineage_hash": "323a67bca99d01e4bcf6b34609228a2c130812910d079f0061ffc2d832074b76"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://originalflava.com/soups-and-stews/chicken-saturday-soup/",
+    "fetchedAt": "2026-09-30T17:35:32.144Z"
+  },
+  "rawSource": "https://originalflava.com/soups-and-stews/chicken-saturday-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

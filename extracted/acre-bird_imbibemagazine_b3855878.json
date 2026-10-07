@@ -1,0 +1,35 @@
+{
+  "recipe": {
+    "name": "Acre Bird",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Collins",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all of the ingredients in a shaker with ice and shake to chill. Strain into a Collins glass over fresh ice and garnish.",
+      "Honey-Passion Fruit Syrup: Start by making a honey syrup by combining 1 cup of water with 2 cups of honey. Simmer on medium heat until the honey dissolves. Remove from heat and let chill. Add just over 1/2 of a cup (150 mL) of passion fruit purée to the mix and stir to combine. Keep refrigerated for up to 2 weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "342a5540ccb454fa845989cfc600223af3907c3befbaaa09c1078ed787198e1e",
+    "lineage_hash": "d1c9a699c4c7c27ced78efe78bec127122b719b67877eb94ae0d271ea5e5853c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/acre-bird/",
+    "fetchedAt": "2026-08-03T19:01:45.890Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/acre-bird/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

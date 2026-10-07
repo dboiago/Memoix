@@ -1,0 +1,120 @@
+{
+  "recipe": {
+    "name": "Scallion (Green Onion) Saucy Tofu",
+    "time": "15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Separate the white and green parts of the scallions then cut the white into bite-size chunks. For the green parts, I sliced them into tiny ‘coins’ for garnish. Same goes with the chili.",
+      "Heat a large wok over medium heat and add 2 heaping tablespoons oil (you may use less for non-stick pan). Slowly slide in the tofu. Use a spatula or spoon and cut up tofu into chunks. Let each side pan fry until slightly golden where tofu can hold their shape. Tip - only flip the tofu once a crust is formed.",
+      "Meanwhile, in the bowl with white scallions part, stir together vegan oyster sauce, soy sauce, sugar, and cornstarch with water until well combined.",
+      "When tofu is done, add the sauce, and gently toss to combine. Let it simmer for about 30 seconds until flavors meld, with a few toss in between to prevent tofu from sticking. Taste test and adjust saltiness with more soy sauce if needed or additional water for a saucier dish.",
+      "Garnish with green parts of scallions and chili and give it a final toss.",
+      "Serve immediately with a bowl of rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Firm Tofu Pressed",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions/green Onions",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chili Skip for No Heat",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Prevent Tofu From Sticking to the Wok",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegan Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce Plus More",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f7f248711befd671f4e9510ff5766e384dbb6755c67ca0e4998a1dc1d18220ac",
+    "lineage_hash": "b6e359692f871b64c36b6cf612c1eaac7bdf76fbd10c41ad4cd340aad973e5b1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://woonheng.com/scallion-green-onion-tofu/",
+    "fetchedAt": "2026-08-01T21:40:50.403Z"
+  },
+  "rawSource": "https://woonheng.com/scallion-green-onion-tofu/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

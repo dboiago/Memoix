@@ -1,0 +1,114 @@
+{
+  "recipe": {
+    "name": "Cherry Strudel",
+    "time": "1 hr 5 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "AT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "304",
+      "carbohydrateContent": "55",
+      "fatContent": "9",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "Toss 2 lbs&#32;sour cherries (pitted) with 8 oz&#32;granulated sugar and allow to macerate for 30 minutes. After 30 minutes drain the cherries, reserving the juice. Transfer the cherries to a large bowl and set aside.",
+      "Whisk a 1/2 cup of the cherry juice with 1 ¼ oz&#32;corn starch until smooth. Place the remaining juice and ¼ teaspoon&#32;table salt in a small saucepan. Bring the juice to a boil. Reduce the heat to medium low. Whisk the cornstarch mixture into the boiling juice in a steady stream. Cook the mixture, stirring constantly, until it returns to a boil and thickens to a pudding-like texture.",
+      "Remove the thickened juice from the heat and immediately pour it over the pitted cherries. Toss to combine. Set the cherries aside.",
+      "Preheat the oven to 375 °F. Line a half sheet baking pan with parchment paper or a silicone baking mat.",
+      "Unroll the Phyllo sheets and cover them with a damp paper towel so they don&#39;t dry out. Lay a clean kitchen towel that is larger than the baking sheet on your work surface. Lay a sheet of Phyllo on the towel with the long side facing you.",
+      "Lightly brush the dough with melted butter then sprinkle a teaspoon of granulated sugar over the butter. Top with another layer of phyllo. Brush that layer of dough with butter and sprinkle with a teaspoon of sugar.",
+      "Continue adding layers of dough until all the sheets are used.",
+      "Sprinkle 1 ½ oz&#32;dry bread crumbs in a 4” wide strip across the bottom third of the pastry. Leave a 2” border on either end.  Pour the cherry filling over the bread crumbs in an even layer.",
+      "Starting from the side closest to you, use the kitchen towel to fold the dough over the cherries. Fold in the two ends then continue rolling the strudel like a burrito. Use the opposite side of the towel to flip the strudel so the seam side is up.",
+      "Use the towel to lift the strudel and flip the strudel off the towel onto the baking sheet, seam side down. Use your hands to tuck in the ends and straighten out the strudel. Brush the top of the strudel with more melted butter.",
+      "Bake until deeply golden brown, about 35 minutes. Cool on the baking pan for at least 30 minutes then transfer the strudel to a cutting board. Use a serrated knife with a sawing motion and, working on a slight angle, slice off the ragged the ends of the strudel.  Slice 8-10 equal portions.  Sprinkle generously with confectioner’s sugar and transfer to a serving tray."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sour Cherries (pitted (1½ Lbs Frozen or Jarred Cherries W/juice))",
+        "unit": "lb",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn Starch",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Phyllo Dough",
+        "unit": "oz",
+        "notes": "about 9 14\"x18\" sheets, defrosted",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "melted",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Bread Crumbs",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Confectioner’s Sugar for Finishing",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "98fe33802451adf68994585409e6954dc49cf4e0d3f626393ccc3fa16b0ecfc4",
+    "lineage_hash": "440c91d610931bb40127d613a7f5ef0116845458a24a0bbf34ca1cd0780bcfb6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2021/06/24/cherry-strudel/",
+    "fetchedAt": "2026-08-01T21:59:09.488Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2021/06/24/cherry-strudel/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

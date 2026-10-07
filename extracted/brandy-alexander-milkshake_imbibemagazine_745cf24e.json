@@ -1,0 +1,37 @@
+{
+  "recipe": {
+    "name": "Brandy Alexander Milkshake",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupette",
+    "garnish": [
+      "Whipped Cream",
+      "Grated Nutmeg"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Chill a glass in the freezer for 5 minutes. Add all of the ingredients to a blender, then blend on high until smooth. Carefully remove the chilled glass from the freezer. Pour the blended milkshake into the chilled glass. Add the toppings to the milkshake. Begin with a generous amount of whipped cream, and grate some fresh nutmeg onto the whipped cream."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "93fdb252fc6e4004c01978eea9a9234d00b4ac0168a04a3a8615ee9c9c01ddef",
+    "lineage_hash": "35156851cb3b287a778d1642b6e06ef0d66f1e3f367f0a411e6b8ddde40ac743"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/brandy-alexander-milkshake/",
+    "fetchedAt": "2026-08-04T00:09:08.554Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/brandy-alexander-milkshake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,130 @@
+{
+  "recipe": {
+    "name": "Cherry Pie",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Make the pastry by putting the flour, cinnamon and polenta in a bowl. Add the butter and gently rub into the flour mixture with your fingers, until it resembles fine breadcrumbs. Stir in the sugar and salt",
+      "Add 3–4 tablespoons of iced water and bring the pastry together with a blunt-ended cutlery knife. Tip onto a work surface, form into a flat disc and wrap in cling film. Refrigerate for 1 hour",
+      "Meanwhile, place the cherries, sugar, lemon zest and half the lemon juice \t\t\tin a large pan and simmer gently until the volume of the ingredients has reduced by half. Mix the remaining lemon juice and cornflour together and stir into the cherries. Continue to cook for a few minutes more until juice thickens, then allow to cool and refrigerate to chill completely",
+      "Preheat the oven to 220°C/gas mark 7. Place a baking sheet on the middle shelf to heat up",
+      "Dust a clean work surface with flour and roll out two thirds of the pastry until it is big enough to line a 23cm/9inch deep-sided pie dish",
+      "Add the chilled cherry mixture to the pastry-covered pie dish and spread until \t\t\tlevel. Place a pie funnel in the middle if using",
+      "Roll the remaining pastry until it is 3mm thick and cover the dish, pressing well against the edge of the bottom crust to stick it together (use a little cold \t\t\twater to moisten if necessary). Trim the edge to neaten and make a small cross in the centre to let the steam escape, if you are not using a pie funnel. Sprinkle over the remaining tablespoon of caster sugar",
+      "Place the pie on top of the heated baking sheet and cook for 30 minutes, or until the pastry is crisp and golden. Cool for 15 minutes before serving with ice cream or cream"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": "plus extra to dust",
+        "amount": "275",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Polenta",
+        "unit": "g",
+        "notes": "quick cook",
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "chilled and cubed",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": "plus extra to sprinkle",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "medium",
+        "notes": "beaten",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherries",
+        "unit": "kg",
+        "notes": "pitted",
+        "amount": "1.7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zest and juice",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e9bd06e847eb6898521412b32d39e43b6af482ac235ed33a468f537dbdbb6b39",
+    "lineage_hash": "8c180d49a05bca1edb78cc65f9d98368d260590c56a8724e0ef336a9c80a8112"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cherry-pie-recipe",
+    "fetchedAt": "2026-08-03T11:03:03.573Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cherry-pie-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

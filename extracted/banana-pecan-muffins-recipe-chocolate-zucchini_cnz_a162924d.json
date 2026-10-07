@@ -1,0 +1,114 @@
+{
+  "recipe": {
+    "name": "Banana Pecan Muffins",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "18",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 180°C (360°F), and grease medium muffin tins (1.5\" or 4 cm in diameter) or line them with paper.",
+      "In a large mixing-bowl or in a food processor, cream together the sugar, the egg and the butter.",
+      "In a separate bowl, mash together the bananas and milk.",
+      "In another separate bowl, sift together flour, baking powder, and baking soda.",
+      "Add the flour mixture to the butter mixture in three parts, alternating with banana-milk mixture in two parts, stirring by hand until just combined (don’t overmix or your muffins will be a little dense).",
+      "Stir in the pecans.",
+      "Pour the batter into the muffin tins and bake for 20 to 25 minutes, or until the muffins are nice and golden.",
+      "Allow to cool for a few minutes then remove from the tins and transfer to a rack to cool."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "C",
+        "notes": "salted",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Banana",
+        "unit": null,
+        "notes": "ripe",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "C",
+        "notes": "all-purpose",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pecans",
+        "unit": "C",
+        "notes": "toasted and chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5b532b4d177e455fa18ea73c7ccef201457cdef9932a2c05ed28be02f3a951df",
+    "lineage_hash": "03d917c15d5a613335035e34864395964fd8c8a9cf2f5a9406828d76c12ca18f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/cookies-small-cakes/banana-pecan-muffins-recipe/",
+    "fetchedAt": "2026-09-30T18:33:34.591Z"
+  },
+  "rawSource": "https://cnz.to/recipes/cookies-small-cakes/banana-pecan-muffins-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

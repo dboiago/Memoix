@@ -1,0 +1,35 @@
+{
+  "recipe": {
+    "name": "Three Sunsets",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all the ingredients except rosé to a shaker with ice. Shake and then double strain into glass over fresh ice. Top with 2 oz. of brut sparkling rosé and garnish.",
+      "Sage SyrupCombine 1 cup of sugar with 1 cup of water in a saucepan over medium heat, stirring until the sugar is dissolved. Remove from heat and allow to cool to room temperature. Add 7-10 fresh sage leaves and let sit for 24 hours. Strain out the leaves and bottle for use. Refrigerate for up to 2 weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "063e440e2aa80e9f19927993df9d90ccdcddc5e287893e98ceb16715cbba8bb9",
+    "lineage_hash": "f903b44d402551a73fe9f19e60545bf39c9139489760e766ae18e4a4a42f4078"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/aperitif-cocktail-three-sunsets/",
+    "fetchedAt": "2026-08-03T20:37:37.069Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/aperitif-cocktail-three-sunsets/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

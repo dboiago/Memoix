@@ -1,0 +1,88 @@
+{
+  "recipe": {
+    "name": "Cajun Nail",
+    "time": "4 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Old-fashioned",
+    "garnish": [
+      "Lemon Zest Twist"
+    ],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "199",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Select and pre-chill an OLD-FASHIONED GLASS.",
+      "Prepare garnish of lemon zest twist.",
+      "POUR absinthe into ice-filled glass, TOP with water and set aside.",
+      "Separately, STIR whiskey, liqueur and bitters with ice.",
+      "DISCARD contents of glass (absinthe, water and ice).",
+      "STRAIN stirred cocktail into absinthe-coated glass (no ice in glass).",
+      "EXPRESS lemon zest twist over the cocktail and discard."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Absinthe",
+        "unit": "ml",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tennessee Whiskey",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey Herbal Liqueur",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Creole Bitters",
+        "unit": "dash",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Aromatic Bitters",
+        "unit": "dash",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "24889823563d52cef5a287a30ac0e63dabbc9f45d26c9ced1bfbcbe2d5d79a02",
+    "lineage_hash": "de576209cca327a6540c8d580c4d53c1e67d8df460ece726bc128ea854585cb8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/2787/cajun-nail",
+    "fetchedAt": "2026-08-03T07:29:34.969Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/2787/cajun-nail",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

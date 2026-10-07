@@ -1,0 +1,52 @@
+{
+  "recipe": {
+    "name": "Autumn Gin & Tonic",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the gin and tonic water in an ice-filled glass. Stir and garnish.",
+      "Apple-Infused GinCore and peel 2 apples. Discard the peels and place the apple in a jar with one 750-mL. bottle of gin (ROOT uses Beefeater). Let the mixture infuse for 24 hours. Strain the apples out and store the infused gin in a new bottle."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Apple-infused Gin",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tonic Water",
+        "unit": "oz",
+        "notes": "ROOT uses Fever-Tree Mediterranean",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c5e6134a81352f9289b42b04fd093eaf484a1a501a259a29a14d4ec0f5485749",
+    "lineage_hash": "5ca38fdf833defee7e06e0bbb659a718734ee8c9097256d58ae115a10da02cd4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/autumn-gin-and-tonic/",
+    "fetchedAt": "2026-08-03T21:57:59.150Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/autumn-gin-and-tonic/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

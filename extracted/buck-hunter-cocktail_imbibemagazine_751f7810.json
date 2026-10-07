@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Buck Hunter Cocktail",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add ingredients to a pitcher. Add ice, stir to chill, pour into glasses and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "4bf33c11730377ff8970936684f09a09ee0577346f6d1f6950ffa6bdc8e38a45",
+    "lineage_hash": "88eb713110ab8f4043da547f1cb3179c0def8afcb7d3718d9e1f6c0eff122c14"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/buck-hunter/",
+    "fetchedAt": "2026-08-03T23:25:43.069Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/buck-hunter/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,35 @@
+{
+  "recipe": {
+    "name": "Blue Curaçao Cocktail: Blue Daydream",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Snifter",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake all of the ingredients with ice to chill, and strain into a snifter filled with fresh ice. Garnish.",
+      "Orange Oleo Saccharum: Using a vegetable peeler or sharp paring knife, remove the zest from 3 medium-sized oranges, then muddle the zest into three cups of sugar. Leave the mixture in a sealed container overnight, making sure the orange zest is submerged in the sugar. Add 1 cup of boiling water to the mix, and stir to fully dissolve sugar. Strain the orange zest from the syrup and discard the solids; keep refrigerated."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "38b5fa14e814fb0ab23d1e8b29870d8db035f00c3a3bbf8dd24caa3fdba2216b",
+    "lineage_hash": "62e599235c2de97fc8e389621dda490b037bc36e928fca3a3ee274bc569b2386"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/blue-daydream/",
+    "fetchedAt": "2026-08-03T20:21:55.608Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/blue-daydream/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

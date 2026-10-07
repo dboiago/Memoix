@@ -1,0 +1,112 @@
+{
+  "recipe": {
+    "name": "Bakewell Tart",
+    "time": "1 hr 15 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Take the pastry out of the fridge about 15 minutes before using, to allow it to soften slightly",
+      "Unwrap the pastry and roll it out to a circle big enough to line a 23cm loose-bottomed fluted tart tin. Carefully press the pastry into the edges and let any excess pastry hang over the edges for now",
+      "In a large bowl, mix together the butter, sugar, beaten eggs, almond extract and ground almonds until well combined",
+      "Spread the jam evenly over the pastry base and the spoon the almond mixture over the top. Trim the overhanging pastry so there is about 3cm all round and then fold this excess pastry over the filling",
+      "Place on a baking tray and bake in the middle of your oven for 45 minutes. Turn off the oven and leave the tart inside for a further 15 minutes to crisp up the pastry",
+      "Allow to cool completely in the tin before removing. Scatter with flaked almonds, dust with icing sugar and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Shortcrust Pastry Sheet",
+        "unit": "g",
+        "notes": null,
+        "amount": "320",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soft Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "large",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almond Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raspberry Jam",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaked Almonds",
+        "unit": "Tbsp",
+        "notes": "toasted",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": null,
+        "notes": "to decorate",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4936b86b07fea7df1449c49f8d58c36c9420da67fc488403c84a86ab7f23a51d",
+    "lineage_hash": "423b73faa90d39b93e0a201b7f72eb5ed0e6ec6047c618bdb480109696181324"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/birchover-bakewell-tart",
+    "fetchedAt": "2026-08-03T14:07:09.712Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/birchover-bakewell-tart",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

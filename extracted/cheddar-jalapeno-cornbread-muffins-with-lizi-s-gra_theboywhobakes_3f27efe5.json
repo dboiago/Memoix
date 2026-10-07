@@ -1,0 +1,136 @@
+{
+  "recipe": {
+    "name": "Cheddar Jalapeno Cornbread Muffins",
+    "time": "45 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "320",
+      "carbohydrateContent": "34",
+      "fatContent": "18",
+      "proteinContent": "6"
+    },
+    "directions": [
+      "Preheat oven to 200°C (400°F).",
+      "In a large bowl, whisk together cornmeal, plain flour, fine sea salt, baking powder, and smoked paprika.",
+      "In another bowl, mix melted unsalted butter, honey, and eggs until well combined.",
+      "Add the wet ingredients to the dry ingredients and stir until just combined.",
+      "Fold in grated cheddar and pickled jalapeños.",
+      "Spoon the batter into muffin tins, filling each about three-quarters full.",
+      "Sprinkle with Lizi’s Low Sugar Granola.",
+      "Bake for 20-25 minutes or until golden brown and a toothpick inserted into the center comes out clean.",
+      "Let cool slightly before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cornmeal",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "ml",
+        "notes": "melted",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cheddar",
+        "unit": "g",
+        "notes": "grated plus extra for topping",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pickled Jalapeños",
+        "unit": "g",
+        "notes": "plus extra for topping",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lizi’s Low Sugar Granola",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ded24f9722e75f9c266801fc9255c4c643fad9406e02b6c758aa4fbb6f489d46",
+    "lineage_hash": "4ba293ae2932400dee83474c85bb5d3b0cfac9db9c4b22de9af5f30265a09ec7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.theboywhobakes.co.uk/recipes/2021/11/19/cheddar-jalapeno-cornbread-muffins-with-lizis-granola",
+    "fetchedAt": "2026-08-01T16:48:29.760Z"
+  },
+  "rawSource": "https://www.theboywhobakes.co.uk/recipes/2021/11/19/cheddar-jalapeno-cornbread-muffins-with-lizis-granola",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

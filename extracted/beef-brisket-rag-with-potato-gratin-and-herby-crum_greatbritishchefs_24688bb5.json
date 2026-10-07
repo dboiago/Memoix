@@ -1,0 +1,305 @@
+{
+  "recipe": {
+    "name": "Beef Brisket Ragù with Potato Gratin and Herby Crumble",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Season the brisket generously with salt and pepper",
+      "In a heavy-bottomed pot, heat the olive oil and sear the brisket on all sides until golden. Remove and set aside",
+      "In the same pan, sauté the onion, carrot and celery over medium heat for 10 minutes until softened and beginning to brown. Add garlic and cook for 2 minutes more",
+      "Deglaze the pan with the vinegar, scraping up any sticky bits from the base",
+      "Pour in the red wine and reduce by half",
+      "Stir in the tomatoes, purée and beef stock",
+      "Add herbs, return the brisket to the pan, cover, and cook in the oven for 5–6 hours, or until the brisket is tender. Once cooked, shred with forks into the sauce",
+      "For the gratin, preheat the oven to 175°C fan",
+      "Thinly slice the potatoes using a mandolin",
+      "Add the potatoes, milk, cream, garlic, salt and pepper to a saucepan. Bring to a simmer, then cook over a low heat for around 10 minutes",
+      "Remove from the heat then add the grated Gruyère and stir until fully melted. Pour the potato mix into a greased baking dish then arrange the brie and butter over the top",
+      "Bake for 40 minutes until browned and bubbling&nbsp;",
+      "For the crumble, toast the bread, seeds and walnuts in a dry pan until golden",
+      "Blitz together all the crumble ingredients in a food processor to a coarse crumb. Season with salt and pepper to taste",
+      "To serve, spoon the gratin into a serving bowl then top with a generous spoon of the ragù, herby crumble and black pepper"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef Brisket",
+        "unit": "kg",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "finely diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": null,
+        "notes": "peeled and diced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Sticks",
+        "unit": null,
+        "notes": "diced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Malt Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tin of Chopped Tomatoes",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Purée",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper to Season",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Russet Potato",
+        "unit": "kg",
+        "notes": "peeled",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gruyère",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brie",
+        "unit": "g",
+        "notes": "thinly sliced",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper to Season",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sourdough Bread",
+        "unit": "slice",
+        "notes": "thick, torn into small pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Seeds",
+        "unit": "Tbsp",
+        "notes": "such as pumpkin and sunflower",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Walnuts",
+        "unit": "Tbsp",
+        "notes": "roughly chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bunch of Parsley",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oregano Leaves",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Zest of 1 Lemon",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper to Season",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0ba50b287a748734fe6517f9f4af474e14869d8e894845b4cad64b83120a240f",
+    "lineage_hash": "d51991cef34dbeb7ed26c026adfdfa1760de2b28c74e91ba4f8edad004b133a8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beef-brisket-ragu-potato-gratin-recipe",
+    "fetchedAt": "2026-08-02T02:51:20.419Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beef-brisket-ragu-potato-gratin-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

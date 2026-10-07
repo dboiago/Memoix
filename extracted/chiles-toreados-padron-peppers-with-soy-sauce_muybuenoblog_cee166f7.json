@@ -1,0 +1,74 @@
+{
+  "recipe": {
+    "name": "Chiles Toreados (Padron Peppers with Soy Sauce)",
+    "time": "10 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "54",
+      "carbohydrateContent": "4",
+      "fatContent": "4",
+      "proteinContent": "2"
+    },
+    "directions": [
+      "Add butter to a hot frying pan, when the butter has melted add the peppers and drizzle with soy sauce.",
+      "Cook and stir the peppers until the skin is brown and blistered.",
+      "Remove the peppers from the pan, place on a plate and sprinkle with sea salt to taste."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Padron Peppers",
+        "unit": null,
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt for Sprinkling",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4f1ef059e56b36a5997e8f997da69122ab61cde9fc806196f5f3be85acb39db1",
+    "lineage_hash": "7fa50a0380f74093e4ffb21d1184b1c1d4c4085c2ec3f0af6ce569d5003908bf"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/padron-peppers-with-soy-sauce-chiles-toreados/",
+    "fetchedAt": "2026-08-01T19:29:22.571Z"
+  },
+  "rawSource": "https://muybuenoblog.com/padron-peppers-with-soy-sauce-chiles-toreados/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,220 @@
+{
+  "recipe": {
+    "name": "Braised Lamb Neck with Cherry Ketchup",
+    "time": "2 hr 30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the pickled cherries, place the rice wine vinegar in a sterilised jar and add the cherries. Leave to pickle for a few weeks",
+      "To brine the lamb neck, combine the water, salt and sugar and stir until dissolved. Place in a large container, add the lamb neck and place in the fridge for 48 hours",
+      "Once brined, dry the lamb well. Add a dash of oil to a hot pan, add the neck and colour all over. Remove the lamb from the pan, add the carrots, onions, garlic and leek and sauté for a minute or so before adding the chicken stock. Return the lamb to the pan, cover with a cartouche and leave to braise on a low heat until the lamb becomes extremely soft and can be easily pulled apart. Remove from the heat and allow to cool in the liquid. Once cool, place the lamb in the fridge and leave to chill and set",
+      "To make the cherry ketchup, destone the cherries, juice the flesh in a juicer then pass the liquid through muslin. Add the cherry juice to a pan and bring to the boil. Add the agar agar, allow to cook for a minute or so then pour the mixture onto a heatproof tray. Allow to set in the fridge",
+      "For the charcoal oil, heat the coals until white hot on a barbecue. Pour the oil into a pan and take it outside to the barbecue – do not attempt this process inside as you will be dealing with extremely hot oil which may catch alight! Equipped with sturdy gloves and heatproof tongs, carefully place the coals in the oil – this is the most dangerous stage, so take care. Place the pan over an ice bath until everything is cooled, then transfer the mixture to a high-powered blender. Blitz to break up the charcoal then pass the mixture through a sieve lined with muslin. Store the coal oil in the fridge – take care when handling it as it will stain anything it touches",
+      "For the lamb dressing, place the diced lamb in a roasting tray with a dash of oil and roast in the oven until dark golden brown. Remove from the oven, pour in the soy while still hot and allow to infuse for a couple of hours",
+      "Remove the set cherry juice from the fridge and cut into cubes. Add the cubes to a blender with the vinegar and sugar and blitz to a smooth purée. Pass through a sieve, transfer to a squeezy bottle and store in the fridge until ready to serve",
+      "Pass the lamb and soy mixture through muslin cloth and warm through in a small saucepan. Taste and add enough mirin to balance the flavours and seasoning",
+      "When ready to serve, drain some pickled cherries and carefully cut into thin slices. Remove the lamb neck from the fridge and cut into four even portions. Colour the portions well on a hot barbecue until heated through and golden on the outside",
+      "Place the lamb in the centre of each plate and cover with pickled cherry slices. Pipe over the cherry ketchup, add a few drops of charcoal oil and finish with the lamb soy dressing. Serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Lamb Neck",
+        "unit": null,
+        "notes": "deboned",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "kg",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Bulb",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leek",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "L",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "dash",
+        "notes": "neutral-flavoured",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Morello Cherries",
+        "unit": "g",
+        "notes": "fresh, ripe",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Wine Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherries",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Agar Agar",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Wine Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Natural Lumpwood Charcoal",
+        "unit": "pcs",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sunflower Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lamb Trimmings",
+        "unit": "g",
+        "notes": "diced",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mirin",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "dash",
+        "notes": "neutral-flavoured",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8851f69599a034d86ede392f0491c6a98d638b76cf57f84416cd963b90fc5e3a",
+    "lineage_hash": "c73437e8681cc02af8501ba5d85503920f304e2724571b517b6b572f5b6c10e4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/braised-lamb-neck-cherry-ketchup-recipe",
+    "fetchedAt": "2026-08-03T09:41:33.426Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/braised-lamb-neck-cherry-ketchup-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

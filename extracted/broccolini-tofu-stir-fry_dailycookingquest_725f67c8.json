@@ -1,0 +1,160 @@
+{
+  "recipe": {
+    "name": "Broccolini & Tofu Stir-Fry",
+    "time": "35 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Fry tofu: Drain and pat dry tofu and cut into 16-20 pieces. Pan-fry the tofu with a little oil on a non-stick frying pan (or a well-seasoned cast-iron skillet) until golden brown and set aside.",
+      "Sauté aromatics: Heat 2 tablespoons of oil in a wok over medium-high heat. Sauté garlic and chilies until fragrant, about 2 minutes.",
+      "Add broccolini: Add broccolini and 1/4 cup of water. Mix well, cover the wok, and let the broccolini rests for 2 minutes, or until wilted.",
+      "Add tofu and sauce: Add fried tofu and all the sauce ingredients, mix well, and cook for 2 minutes.",
+      "Thicken the sauce: Add cornstarch slurry and stir until the sauce is thick.",
+      "Add scallions: Toss in scallions and mix gently. Turn off the heat, transfer to a serving plate, and serve the dish immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gram (1 Lb) Firm/extra-firm Tofu",
+        "unit": null,
+        "notes": null,
+        "amount": "450",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilies",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram (1 Lb) Broccolini",
+        "unit": null,
+        "notes": "chop into bite-size pieces",
+        "amount": "450",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch Slurry (1 Tablespoon Cornstarch + 2 Tablespoon Water)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sauce",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4bd88d25510c5853c12ed52b3809a49ee5bb411985d929a4217584e113f9b61d",
+    "lineage_hash": "67211d16dd8e183e801fb3751d6e983bf59284fea1b74291c6898ca722f66b8c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/broccolini-tofu-stir-fry.html",
+    "fetchedAt": "2026-08-01T19:07:38.797Z"
+  },
+  "rawSource": "https://dailycookingquest.com/broccolini-tofu-stir-fry.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

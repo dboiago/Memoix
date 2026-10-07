@@ -1,0 +1,109 @@
+{
+  "recipe": {
+    "name": "Chinese Almond Tofu (Almond Jelly)",
+    "time": "15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "146",
+      "carbohydrateContent": "15",
+      "fatContent": "8",
+      "proteinContent": "5"
+    },
+    "directions": [
+      "Apricot Kernel milk | Soak the sweet apricot kernel with clean water overnight. Remember to place in fridge.  Transfer the soaked apricot kernel into blender, then followed with 2 cups of water. Blend well. Drain to get the milk. Don&#039;t discard the pulp, sun dry it and use in cookies.",
+      "Agar Soaking|  Soak agar agar strips in cold water for 1 hour.",
+      "Cooking Agar|  In a small pot, add 1 cup of water and soaked agar, heating to boiling until the agar strips are almost dissolved! This may take more than 10 minutes, be patient.",
+      "Combine Mixture |  Add sugar and apricot kernel milk, simmer for another 8-10  minutes. Turn off fire and pour in milk. Combine well.",
+      "Straining | Strain the mixture once again. The agar is quite hard to dissolve completely, make sure they are removed.  You can use pudding container, bowl or a large container. Set aside for cooling. The dessert can be firmed under room temperature when the temperature of the liquid drops to 40 degree C. Then either served directly or chilled before serving.",
+      "Serving| 1. Add canned fruits or fresh fruits  2. Pour 1 cup of hot water to 1 tablespoon of osmanthus syrup. Set aside to cool. 3. Shifting matcha powder"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sweet Apricot Kernel",
+        "unit": "C",
+        "notes": "pre-soaked in the previous day in fridge",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water for Apricot Seed Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Agar Agar",
+        "unit": "g",
+        "notes": "I use strips this time, note 1",
+        "amount": "6-7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "for cooking the agar",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crystal Sugar",
+        "unit": "C",
+        "notes": "adjust based on how the dessert is served, can create a very faint sweetness, or more if needed",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Osmanthus Syrup",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6e096dfa908a9ccf0aafb8fac4fe5873eae453a191df6121688cb535a9fdfb80",
+    "lineage_hash": "ead98141018574568506fd5b31183039e2df5fdd32467f42cde71c5a73bddf12"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/chinese-almond-tofualmond-jelly/",
+    "fetchedAt": "2026-08-01T20:27:02.245Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/chinese-almond-tofualmond-jelly/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

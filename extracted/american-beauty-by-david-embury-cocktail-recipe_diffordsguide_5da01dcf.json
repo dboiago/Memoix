@@ -1,0 +1,96 @@
+{
+  "recipe": {
+    "name": "American Beauty (by David Embury)",
+    "time": "4 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [
+      "Mint Leaf",
+      "Red Rose Petal"
+    ],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "249",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Select a COUPE GLASS.",
+      "Prepare garnish of mint leaf or red rose petal",
+      "SHAKE first 5 ingredients with CRUSHED ICE.",
+      "FINE STRAIN into chilled glass.",
+      "FLOAT red wine.",
+      "Garnish with mint leaf or rose petal floated on surface."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cognac",
+        "unit": "ml",
+        "notes": "brandy",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Vermouth",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Crème De Menthe",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grenadine Syrup",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Claret Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "80d49932a4086273457848a9d2eefa2cce31f5dcfea3edff8f80db09ffc65673",
+    "lineage_hash": "4c810211220000824040753e3104d1772dd72c506c718a127a5a11407335bf29"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/58/american-beauty-by-david-embury",
+    "fetchedAt": "2026-08-01T17:37:13.834Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/58/american-beauty-by-david-embury",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

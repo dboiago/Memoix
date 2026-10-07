@@ -1,0 +1,251 @@
+{
+  "recipe": {
+    "name": "Braised Beef Cheek With Mash",
+    "time": "2 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by preparing the beef. A day before you intend on serving season the beef cheeks with salt and pepper, cover and refrigerate for 24 hours. This step is not essential if you are pushed for time, although it ensures an even seasoning throughout the meat",
+      "Remove the beef cheeks from the fridge. Heat the vegetable oil on high in a heavy frying pan, then add the beef cheeks to the pan to sear on all sides. Once seared transfer the cheeks to a casserole dish",
+      "In the same heavy frying pan fry the garlic, onion, carrots and celery over a moderate heat until caramelised. Add both the red wine and Madeira to the pan, stir well and simmer until the liquid has reduced by half. Add the beef stock and passata and bring to the boil, skimming off any scum on the surface of the liquid",
+      "Stir in the bay leaves, thyme, juniper berries, anchovies and ceps followed by two of the pickled walnuts. Place a lid on the casserole pan and transfer to the preheated oven. Cook for 2-2 1/2 hours until the beef cheeks are tender",
+      "Meanwhile, peel the potatoes and slice them into even pieces. Place them in a pan with enough salted water to cover and bring to the boil. Once boiling reduce to a simmer and cook for 20 minutes, until the potatoes are soft and tender",
+      "Take the casserole dish out of the oven and remove the beef cheeks. Place onto a tray and cover with foil, keeping warm. Strain the liquid from the casserole dish through a sieve into a clean saucepan and heat gently. Allow the liquid to reduce until it forms a sauce-like consistency, then reduce the heat and keep warm until ready to serve",
+      "To make the glazed carrots lay the carrots in a single layer across a wide shallow pan along with a pinch of salt. Add the butter to the pan along with enough carrot juice to cover, place a lid over the pan and bring the liquid to the boil. Cook until the carrots are tender, topping up the liquid with water if necessary, then remove the lid and allow the liquid to reduce until it forms a glaze. Squeeze over a little lemon juice to taste",
+      "Drain the potatoes and return them to the hot pan and, stirring constantly, allow the potatoes to dry fry over a low heat for a couple of minutes. Mash the potatoes, passing through a drum sieve for smoother consistency, then add in the diced butter, warm milk and cream. Season to taste",
+      "To serve spoon a generous helping of mash potato onto each plate followed by the beef cheek and carrots. Add the remaining chopped walnuts to the warm sauce, stir and spoon over the beef cheeks and around the plate. Top with the chopped parsley and serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef Cheeks",
+        "unit": null,
+        "notes": "trimmed",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "head",
+        "notes": "cut horizontally in half",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "375",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Madeira",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Passata",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Stock",
+        "unit": "L",
+        "notes": null,
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ceps",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Juniper Berries",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Anchovy Fillets",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pickled Walnuts",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chantenay Carrots",
+        "unit": "g",
+        "notes": "cut in half",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": "kg",
+        "notes": "preferably Maris Piper or Yukon Gold",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": "hot",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "ml",
+        "notes": "hot",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "room temperature and diced",
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flat-leaf Parsley",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ab68a3dcf259d01895085ac977b141d396e2e039815e808139133fceb35e817e",
+    "lineage_hash": "88434661c30f476bac488be8fd37e7314cc28d82e90e370d2854e00e66bc3073"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/braised-beef-cheek-pickled-walnuts",
+    "fetchedAt": "2026-08-03T14:48:03.258Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/braised-beef-cheek-pickled-walnuts",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

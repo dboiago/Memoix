@@ -1,0 +1,160 @@
+{
+  "recipe": {
+    "name": "Butter Soy Sauce Spaghetti Squash Stir-Fry",
+    "time": "1 hr 15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Roast spaghetti squash: Preheat oven to 200 Celsius (400 Fahrenheit). Cut the spaghetti squash into two, remove the seeds, brush with olive oil, and sprinkle with salt and pepper. Roast for 40 minutes, turning halfway until the squash is soft.",
+      "Obtain spaghetti squash strands: Once the squash is cool enough to handle, use a fork to scrape the strands. I find it easier to work from the outside toward the center. Reserve the spaghetti squash strands and discard the skin.",
+      "Fry bacon: Melt butter in a large frying pan over medium heat. Add bacon and fry until it starts to crisp.",
+      "Sauté mushrooms and garlic: Add mushrooms into the frying pan, sauté until they wilt and the liquid is almost dry. Add garlic and fry for 30 seconds, or until fragrant.",
+      "Add spaghetti squash and seasonings: Add reserved spaghetti squash strands to the pan, along with soy sauce, salt, pepper, and chili flakes (if using). Mix well, and continue stirring until the squash has absorbed all the liquid.",
+      "Add scallions: Add the scallions and toss gently to mix. Turn off the heat, transfer to a serving plate, and serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Roast Spaghetti Squash",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spaghetti Squash",
+        "unit": null,
+        "notes": "~ 2 kilogram / 4.5 lb",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spaghetti Squash Stir-fry",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bacon",
+        "unit": "slices",
+        "notes": "cut into 1-inch pieces",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram (8 Oz) Mushroom",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "4-6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili Flakes",
+        "unit": "tsp",
+        "notes": "optional, or to taste",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "3-4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3c68149ce876b8992b7f5284a94524806ce2e68705609de1aaff0dcff8016cc1",
+    "lineage_hash": "462b7c549c5187f4c33cd9d9fcccb783be3e1a9c2bc1a530f188a2c1033f2c3c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/butter-soy-sauce-spaghetti-squash-stir-fry.html",
+    "fetchedAt": "2026-08-01T19:05:37.508Z"
+  },
+  "rawSource": "https://dailycookingquest.com/butter-soy-sauce-spaghetti-squash-stir-fry.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

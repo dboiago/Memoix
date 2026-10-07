@@ -1,0 +1,199 @@
+{
+  "recipe": {
+    "name": "Chicken Curry Kapitan",
+    "time": "1 hr 15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "MY",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Grind spice paste: Use a food processor/blender to grind chilies, shallot, garlic, ginger, galangal, lemongrass, candlenuts, and water into a smooth spice paste.",
+      "Fry spice paste: Heat spice paste and turmeric over medium heat in a wok until slightly dry. Add cooking oil and mix well. Cook until the oil starts to separate from the spice.",
+      "Add chicken: Add chicken into the wok and stir. Add kaffir lime leaves and water, mix well, and bring to a boil. Reduce the heat to a simmer and cook for 10 minutes.",
+      "Add the remaining ingredients: Stir in coconut milk into the wok. Add potatoes, and season with salt, sugar, and fish sauce. Continue simmering for 15-20 minutes, or until the sauce has reduced and become thick.",
+      "Add lime juice and serve: Add lime juice, stir and cook for another minute. Adjust the seasonings if needed. Turn off the heat, transfer the dish to a serving bowl, and serve with steamed white rice, Indian roti, or naan bread."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ground Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Drumsticks",
+        "unit": null,
+        "notes": "Note 1",
+        "amount": "10-12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kaffir Lime Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "ml",
+        "notes": "half a can",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram (10 Oz)",
+        "unit": null,
+        "notes": "Note 2, peeled and cut into wedges",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Juice of 1 Lime",
+        "unit": null,
+        "notes": "or to taste",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spice Paste (grind Into a Smooth Paste with Blender/food Processor)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilies",
+        "unit": null,
+        "notes": "dried, remove seeds and soaked in boiling water until softened",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Shallot",
+        "unit": null,
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Garlic",
+        "unit": null,
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Galangal",
+        "unit": "inch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemongrass",
+        "unit": null,
+        "notes": "white parts only",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Candlenuts",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "350494f8810bb264b455fc55b84e669dbdc5f8350fee4120d81d771ada288b51",
+    "lineage_hash": "8cece58fdb9b337db0ea8c9ee37c2a02fdad56297f4f4d5ecb6451391e1562e9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/chicken-curry-kapitan.html",
+    "fetchedAt": "2026-08-01T19:19:25.806Z"
+  },
+  "rawSource": "https://dailycookingquest.com/chicken-curry-kapitan.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,220 @@
+{
+  "recipe": {
+    "name": "Black Cherry Soufflé with Sous Vide Cherry Ice Cream",
+    "time": "2 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the ice cream base, beat the sugar and egg yolks together until the sugar has dissolved. Bring the milk, cream and salt to the boil then allow to cool slightly",
+      "Tip 1/3 of the milk mixture onto the eggs and sugar and whisk until fully incorporated. Return to the pan, heat until it reaches 82°C then pass through a fine sieve and chill in a bowl over ice",
+      "Mix the cherries with the sugar and water and seal in a vacuum bag. Cook in the water bath for 60 minutes",
+      "Blitz the cooked cherries in a blender and pass into a heavy-based pan. Add the agar agar, dissolve over a low heat then allow to cool and set",
+      "Add the xanthan gum, blitz again and pass through a fine sieve. To finish the ice cream, mix the ice cream base with 1/2 of the cherry purée, place in a Pacojet container and allow to freeze. Blend in the Pacojet just before serving. Alternatively, churn in an ice cream maker",
+      "To make the soufflé base, mix together the cherry purée, sugar and cornflour, add to a saucepan and heat until thickened. Transfer to a tray, cover with cling film and allow to set. Once set, whisk until smooth and reserve",
+      "To make the chocolate sauce, gently heat all of the ingredients in a saucepan, whisking to combine. Reserve and reheat just before serving",
+      "To make the soufflé, preheat the oven to 180°C/gas mark 4. Butter 4 ramekins and coat with the grated chocolate",
+      "Whisk the egg whites and gradually add the sugar until you achieve stiff peaks. Gently fold in 125g of the soufflé base until combined, add to a piping bag and pipe between the ramekins. Tap the ramekins on the bench to remove any excess air and scrape the tops with a palette knife. Bake for 7–8 minutes until risen and cooked through",
+      "Mix the remaining half of cherry purée leftover from the ice cream into the Griottine cherries and divide between plates. Place a quenelle of ice cream on top. Warm the chocolate sauce and transfer to a pouring jug. Serve the soufflés as soon as they come out of the oven"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cherries",
+        "unit": "g",
+        "notes": "pitted weight, large",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "78",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "g",
+        "notes": null,
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "330",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Agar Agar",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Xanthan Gum",
+        "unit": "g",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherry Purée",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glucose",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "soft",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Griottine Cherries",
+        "unit": null,
+        "notes": null,
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5d102f1a53de114971a61856eefd218c3e7d742935e5f061a4b5962e5b410ec3",
+    "lineage_hash": "0456b76a881beab99125d17b4b7e971a83f1dceafa99e0c4a70a7f9d0906bf4d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/black-cherry-souffle-recipe",
+    "fetchedAt": "2026-08-03T14:48:49.103Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/black-cherry-souffle-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

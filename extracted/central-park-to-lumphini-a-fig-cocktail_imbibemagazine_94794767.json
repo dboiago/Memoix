@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Central Park to Lumphini: A Fig Cocktail",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to a shaker with ice. Shake to chill and dump into a glass over a large ice cube. Garnish.\nFig-Infused MezcalAdd 2 cut-up figs to 750ml of mezcal. Let sit in an airtight container for 12-24 hours, and then strain. Will keep for a year at room temperature."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "953c2e7ab694a1c8621b5f32273293b5ed80b6519760b335d39b130ac72f5999",
+    "lineage_hash": "0e84b6ac9d657dd14d3922b8ffb9b46c95a92a79f11a11e2b950ceb3e69457bc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/central-park-to-lumphini-fig-cocktail/",
+    "fetchedAt": "2026-08-04T01:29:57.055Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/central-park-to-lumphini-fig-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

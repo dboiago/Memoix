@@ -1,0 +1,139 @@
+{
+  "recipe": {
+    "name": "Brie, Cranberry and Red Onion Pithivier",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat the oil in a pan and gently sweat the onions for a few minutes. Once soft, add the cinnamon, cloves, star anise, wine, vinegar and sugar and leave to simmer until the liquid has reduced down into a syrup. Stir in the cranberry jelly and leave to cool",
+      "Meanwhile, cut two circles out of your pastry, one 15cm and the other 17cm in diameter. Place the 15cm circle on a sheet of baking paper",
+      "Once the onion mixture has completely cooled down, spread it in the centre of the smaller circle, leaving a 2cm border around the edge",
+      "Slice the brie and arrange on top of the onions in an even layer (or two layers)",
+      "Brush the border with a little egg wash, then place the large circle of pastry over the top and press down the edges to seal, ensuring there aren't any air bubbles. Place in the fridge for 10 minutes (still on its baking paper, to make it easier to move) to firm up the pastry",
+      "Preheat the oven to 200°C/gas mark 6 and place a baking tray in the oven to heat up",
+      "Crimp the edges of the pithivier using a fork, then use the 15cm cutter to neaten up the edges again. Brush the pithivier with the remaining beaten egg. If the pastry has warmed up, place back in the fridge to chill",
+      "Transfer the chilled pithivier (on its baking paper) to the hot preheated tray and bake for 30–40 minutes. If the colour starts to get a little dark, turn the oven down to 170°C/gas mark 3 for the remaining cooking time. If the bottom is still a little undercooked after the full time, you can carefully flip it over and bake for a further 10 minutes",
+      "Serve hot as part of a roast dinner with vegetarian or vegan gravy"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "g",
+        "notes": "sliced",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cranberry Jelly",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sheet of Puff Pastry",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brie",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshlay Farms Golden Yolker® Egg",
+        "unit": null,
+        "notes": "beaten with a pinch of salt",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d76640e6317a1a248bb73fa569cc358a4d9ba622697ca45bae8a1e00595d2387",
+    "lineage_hash": "7ea854ffc296e905a9ee80034a747d3ce1f83be563e4ef2bcee7fcf25797179f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/brie-cranberry-pithivier-recipe",
+    "fetchedAt": "2026-08-03T05:29:08.968Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/brie-cranberry-pithivier-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

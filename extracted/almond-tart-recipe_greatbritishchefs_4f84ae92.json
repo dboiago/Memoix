@@ -1,0 +1,223 @@
+{
+  "recipe": {
+    "name": "Almond Tart",
+    "time": "3 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the prune and Armagnac ice cream, combine the cream and milk in a saucepan. Split the vanilla pod lengthways, add it to the pan, bring slowly to the boil and remove from the heat",
+      "Meanwhile, put the sugar in a separate pan with 2 tablespoons of water and heat to 106°C to make a caramel",
+      "Whisk the egg yolks together in a heatproof bowl, slowly pouring the caramel over the yolks, whisking constantly.  Add the hot cream mixture slowly, whisk to combine and set aside to cool",
+      "When cool, strain the mixture through a sieve into a mixing bowl. Stir in the mascarpone cheese until thoroughly combined. Add the prunes and armagnac to the mix and churn in an ice-cream machine",
+      "Preheat the oven to 180°C/gas mark 4. To make the pastry for the almond tart, blend together the flour, butter, sugar and salt until the mixture resembles breadcrumbs. Add the egg and milk and mix gently to form a dough. Wrap in cling film and place in the fridge for 1 hour",
+      "Remove the pastry from the fridge and allow to stand for 10 minutes. Roll out as this as possible and use it to line a loose-bottomed 20cm tart tin. Line the inside of the pastry with a large sheet of silicone paper, fill with uncooked beans or rice and leave to rest in the fridge for 20 minutes",
+      "Bake the pastry blind for 20 minutes then remove it from the oven. Lift out the silicone paper with the beans or rice inside and set aside for another time",
+      "Lightly beat the extra egg and brush it over the base of the pastry shell to form a seal. Return to the oven and bake for a further 5 minutes",
+      "Turn the oven temperature down to 150°C/gas mark 2",
+      "To make the filling for the almond tart, blend the whole blanched almonds is a food processor until fine, then set aside",
+      "Beat the butter and sugar together until light and fluffy. Add the eggs, one at a time, mixing well to combine. Add both types of ground almonds and carefully fold them in",
+      "Spoon the jam into the pastry case and use a pastry brush to coat the base of the tart.  Scatter the prunes onto the base of the tart and cover with the almond mixture. Sprinkle with the flaked almonds and bake for 1 hour 10 minutes. Switch off the oven and leave the tart to cool in the oven for a further 15 minutes",
+      "Serve the almond tart warm with the prune and Armagnac ice cream"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "160",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blanched Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "softened",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "large",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Prunes",
+        "unit": "g",
+        "notes": "pitted",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaked Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raspberry Jam",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Prunes",
+        "unit": null,
+        "notes": "pitted and roughly chopped",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Armagnac",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mascarpone",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "47902904d4d88f936eeb0e400dfcc99ce700ecb7f80a5e12217d524d99382582",
+    "lineage_hash": "c6537b4ac37c8686fea72c517ade061ff8b937562a8208df907e4c1caa956123"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/almond-tart-recipe",
+    "fetchedAt": "2026-08-03T17:38:34.462Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/almond-tart-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

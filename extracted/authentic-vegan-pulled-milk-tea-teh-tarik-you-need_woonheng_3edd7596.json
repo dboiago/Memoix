@@ -1,0 +1,71 @@
+{
+  "recipe": {
+    "name": "Vegan Pulled Milk Tea (Teh Tarik)",
+    "time": "5 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "MY",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Tea",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Fit a tea sock strainer on a large mug and rinse the serving cups with hot water.",
+      "Add the black tea and pour in the hot water. Steep for 2-3 minutes.",
+      "Remove the strainer and stir in the sugar along with the warm oat milk. Stir until the sugar has dissolved.",
+      "Pass and pull the tea between two mugs about 3-4 times to froth the tea.",
+      "Serve warm."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Black Tea Dust Plus More for Stronger Tea",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Boiling Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Warm Oat Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar Adjust to Taste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bc4ce01a394392a6a39a789e453e88b21ba73058163d4ee6de45572b678d85b2",
+    "lineage_hash": "785bb2b9f8ad5d9295cf293722d13581b2c8e8482ef2bb9713a2e89f4558ae56"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://woonheng.com/vegan-pulled-tea-teh-tarik/",
+    "fetchedAt": "2026-08-01T16:40:53.874Z"
+  },
+  "rawSource": "https://woonheng.com/vegan-pulled-tea-teh-tarik/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,177 @@
+{
+  "recipe": {
+    "name": "Chicken and Black Bean Stir-Fry",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Marinade the chicken: Combine chicken with cornstarch, light soy sauce, sesame oil, and Shaoxing in a mixing bowl. Set aside for 15 minutes.",
+      "Cooking the dish: Heat oil in a wok on medium-high heat, sauté onion and red chilies, cook until onion starts to wilt.",
+      "Add chicken, spread evenly into a layer and let it cook undisturbed for 1 minute. Then stir and cook for another minute.",
+      "Add garlic, ginger, fermented black soy bean, and dark soy sauce. Mix well. Cook for 30 seconds.",
+      "Add celery, bell pepper, and chicken stock. Mix well. Cover the wok and let it cook for 2 minutes.",
+      "Open the lid and add salt as needed.",
+      "Turn off heat. Garnish with thinly sliced scallions and serve immediately with some steamed white rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gram Skinless Boneless Chicken Breast",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "tsp",
+        "notes": "Note 1",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": "Note 2",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilies",
+        "unit": null,
+        "notes": "dried",
+        "amount": "8-10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fermented Black Beans",
+        "unit": "Tbsp",
+        "notes": "Note 3, soaked in water until fluffy, drained",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery",
+        "unit": "stalks",
+        "notes": "sliced diagonally, about 1/2 inch thick slices",
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Bell Pepper",
+        "unit": null,
+        "notes": "seeded and thinly sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6f43a58fe8108c484c371fc2f0cb4caf8021d59e57e49e3211425f04e6be02ef",
+    "lineage_hash": "f38aae41287c95fcae4cfda799532de3fc41d92ba3a38d8ad63de61afd47e2a2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/chicken-and-black-bean-stir-fry.html",
+    "fetchedAt": "2026-08-01T21:15:33.469Z"
+  },
+  "rawSource": "https://dailycookingquest.com/chicken-and-black-bean-stir-fry.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

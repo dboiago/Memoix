@@ -1,0 +1,35 @@
+{
+  "recipe": {
+    "name": "Moose Milk",
+    "time": "4 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the egg yolks in a bowl and, using an electric mixer, beat until fluffy. Add the sugar and beat again until thick. Stir in the milk, whisky, rum, Káhlua and maple syrup and refrigerate, covered, for at least 3 hours (ideally overnight). About an hour before guests arrive, add the whipping cream to a separate large bowl and whip until it’s good and thick. Using a whisk, fold in the prepared mixture until everything is well mixed, and chill for another hour. When serving, grate fresh nutmeg and/or cinnamon across the top of the drink.",
+      "*In Canada, whipping cream is consistently 35% fat; lighter creams might not give you the needed thickness, so reach for heavy cream or heavy whipping cream (36-40% fat) if you&#8217;re mixing in America."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "92e03275fef38c740b6091208be3797910bd2aa1f7ffd6f043cdc3535eea449a",
+    "lineage_hash": "c4b422f6484b53d42783dd8c3b784827b6173c73c2a84f3c5a72db1e4b1c8cdb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/canadian-moose-milk-recipe/",
+    "fetchedAt": "2026-08-04T01:32:12.522Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/canadian-moose-milk-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

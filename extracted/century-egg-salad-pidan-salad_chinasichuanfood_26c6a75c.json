@@ -1,0 +1,98 @@
+{
+  "recipe": {
+    "name": "Century Egg Salad (Pidan Salad)",
+    "time": "15 min",
+    "course": "salad",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "289",
+      "carbohydrateContent": "8",
+      "fatContent": "22",
+      "proteinContent": "14"
+    },
+    "directions": [
+      "Peel the century eggs and then cut into wedges. Place them in serving plate.&nbsp;",
+      "Heat around 1 tablespoon of vegetable cooking oil in pan and fry chopped green peppers and garlic until soft and aromatic.&nbsp;",
+      "Transfer the fried chili peppers to serving plate. Add sesame oil, light soy sauce and salt. Mix before enjoying.&nbsp;"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Century Eggs",
+        "unit": null,
+        "notes": "peeled",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Pepper",
+        "unit": "large",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or more to taste",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Cooking Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "da7ff2e94dc16f3b2ccf2486f9acfc3311f0900f3dfe7c0e7b408e629425775a",
+    "lineage_hash": "e3d5b1c25a1b9a58405c8a8f9cc2e5bb40b634d45446fb8bcaab40256ca01085"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/century-egg-salad-pidan-salad/",
+    "fetchedAt": "2026-08-01T20:02:30.454Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/century-egg-salad-pidan-salad/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,167 @@
+{
+  "recipe": {
+    "name": "Apple Berry Streusel Cake",
+    "time": "1 hr 15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 350°F (180°C). Grease a 9 × 5-inch (2 L) loaf pan and line the long sides with a piece of parchment that hangs over the top of the pan.",
+      "For the streusel, combine the flour, granulated sugar, brown sugar and cinnamon in a small bowl. Add the butter and cut it in using two butter knives or a pastry blender until it resembles a rough crumb texture. Set aside.",
+      "For the cake, cream the butter and sugar by hand until well blended (it will not be smooth or fluffy). Add the eggs one at a time, beating well after each addition. Stir in the vanilla.",
+      "In a separate bowl, sift the flour, baking powder, nutmeg and salt. Add half of the dry ingredients to the butter mixture and stir to blend. Stir in the milk, followed by the remaining dry mixture, stirring gently until smooth. Stir in the apples and berries and scrape this batter into the pan, spreading to level. Top the batter with the streusel and bake for about 75 minutes, until a tester inserted in the centre of the cake comes out clean.",
+      "Cool the cake in its pan on a cooling rack for 20 minutes, then use the parchment edges to lift the cake out of the pan onto the rack to cool completely before slicing. The cake will keep, well wrapped, at room temperature for up to 3 days, or can be frozen for up to 3 months."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": "75 g",
+        "amount": "½",
+        "section": "Streusel",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "Tbsp",
+        "notes": "25 g",
+        "amount": "2",
+        "section": "Streusel",
+        "isOptional": false
+      },
+      {
+        "name": "Packed Light Brown Sugar",
+        "unit": "Tbsp",
+        "notes": "25 g",
+        "amount": "2",
+        "section": "Streusel",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Streusel",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "60 g, cool, cut in pieces",
+        "amount": "¼",
+        "section": "Streusel",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "115 g, room temperature",
+        "amount": "½",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": "200 g",
+        "amount": "1",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "room temperature",
+        "amount": "2",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": "300 g",
+        "amount": "2",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Nutmeg",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Fine Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "1%",
+        "unit": "C",
+        "notes": "alt: 2% milk, 125 mL",
+        "amount": "1",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Apple",
+        "unit": "C",
+        "notes": "about 1 medium apple, peeled and diced",
+        "amount": "1",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Cranberries",
+        "unit": "C",
+        "notes": "alt: raspberries, 125 g, fresh or frozen",
+        "amount": "1",
+        "section": "Cake",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a1a07ecfd34227348b074b1c520422da8d2b5a50cdede11d9328a8b59ff902ff",
+    "lineage_hash": "0f6957ac80e7bc28222e219c9f8c65fd84d07ab730a1ef3030d01edbecfcfce3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/apple-berry-streusel-cake/",
+    "fetchedAt": "2026-08-01T16:55:19.542Z"
+  },
+  "rawSource": "https://annaolson.ca/project/apple-berry-streusel-cake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

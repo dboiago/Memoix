@@ -1,0 +1,130 @@
+{
+  "recipe": {
+    "name": "Beetroot-Marinated Salmon with Radish Salad",
+    "time": "30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the piece of salmon into a suitable, sealable container, skin-side facing up",
+      "Mix all the other ingredients together and pour over the salmon. Seal the container with either cling film or a lid and marinade for 24 hours",
+      "Remove the salmon from the marinade and pat dry with kitchen paper. Slice with a sharp knife into 3mm width slices and set aside until ready to serve",
+      "Remove the stalks from the breakfast radishes with a small sharp knife and wash under cold water",
+      "Slice the breakfast radishes into strips with a sharp knife and place in a mixing bowl. Peel the outer skin from the mouli with a peeler",
+      "Still using the peeler, peel thin strips from the mouli and add to the bowl with the sliced breakfast radishes",
+      "Add the chopped chives to the radishes and season with salt and ground white pepper.\r\nFinally, mix the rapeseed oil with the radishes",
+      "To serve, place slices of the marinated salmon in the centre of each plate. Arrange the radish salad on top, drizzle with a little more rapeseed oil and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Salmon Fillet",
+        "unit": "g",
+        "notes": "(in one piece) pin-boned, skin-on",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beetroot Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cracked Black Pepper",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "French Breakfast Radishes",
+        "unit": null,
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mouli",
+        "unit": null,
+        "notes": "small",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": "tsp",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground White Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ce691c9a6e0b4c599029d6aa081fe91c166a8e09450b6050d7e64a92e4ee9d1b",
+    "lineage_hash": "d697dc4a692eaccd94825e9317bac1fcdb71e9e828c7d5dbafab802292168a38"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beetroot-marinated-salmon-salad-recipe",
+    "fetchedAt": "2026-08-03T13:57:08.680Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beetroot-marinated-salmon-salad-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

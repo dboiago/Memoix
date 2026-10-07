@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Boozy Shakerato",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "After-dinner",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the simple syrup, espresso and your choice of either limoncello, sambuca, or amaretto in shaker and fill with ice. Shake vigorously to create a fully aerated, fluffy drink. Strain into an after-dinner glass."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "1d70403991c3e179508e09adf5cec26beca12fb81f3e233fcca25ef93eb31be3",
+    "lineage_hash": "ba889c306b3ef57a688ff9e456d42bb1ac28c44af3c7ba8991b5f4544bc41e85"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/boozy-shakerato/",
+    "fetchedAt": "2026-08-04T00:14:47.803Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/boozy-shakerato/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,133 @@
+{
+  "recipe": {
+    "name": "Charred Pineapple and Halloumi Salad with Fermented Chilli Dressing",
+    "time": "20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix all the dressing ingredients together and add a small splash to the cabbage, massaging with your hands to soften",
+      "Heat a griddle pan or barbecue. Rub the pineapple and halloumi slices with a little oil and griddle/grill for 2-3 minutes, or until charred on both sides",
+      "Arrange the cabbage on a serving plate and top with the pineapple and halloumi. Add the green chilli, mint and spring onion and top with the remaining dressing. Scatter over the peanuts to serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Red Cabbage",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pineapple",
+        "unit": null,
+        "notes": "peeled, cored and rings cut into quarters",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Halloumi",
+        "unit": "g",
+        "notes": "sliced",
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for cooking",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilli",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Mint Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onion",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Toasted Peanuts",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fermented Chilli Sauce",
+        "unit": "Tbsp",
+        "notes": "see above",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "eb31f6a04f572871ce18aa79fa0ebc0115f2733c2f5a511994d03be4c1bdaa2f",
+    "lineage_hash": "99234a6cbad9f9abf94918da7e31d9ee4963b0658e48f2eb2ec6cc8b5a445175"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/pineapple-halloumi-salad-recipe",
+    "fetchedAt": "2026-08-02T16:00:15.984Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/pineapple-halloumi-salad-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

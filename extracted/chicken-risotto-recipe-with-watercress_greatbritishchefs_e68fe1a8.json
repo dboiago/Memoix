@@ -1,0 +1,122 @@
+{
+  "recipe": {
+    "name": "Chicken Risotto With Watercress",
+    "time": "1 hr 10 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the chicken legs in a saucepan and cover with the chicken stock. Bring to a boil and simmer gently for 20-30 minutes until the meat starts to come away from the bone",
+      "Remove the legs from the stock and set aside. Pass the stock through a fine sieve and keep hot",
+      "Heat the rapeseed oil in a heavy-based pan and add the onions. Cook gently for 2-3 minutes without colouring",
+      "Add the risotto rice to the onions and continue to cook for a further 3-5 minutes, again without colouring",
+      "Add the white wine and reduce the quantity by three quarters, stirring the rice occasionally",
+      "Slowly add the hot chicken stock a ladle at a time, stirring continuously on a medium heat until all the stock has been used. This will take between 15-20 minutes",
+      "To serve, remove the meat from the chicken legs ensuring all the skin and sinew has been discarded. Stir the cooked chicken leg meat into the hot risotto rice",
+      "Add the butter and stir in the picked watercress leaves. Season with salt and pepper and serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Legs",
+        "unit": null,
+        "notes": "organic",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "L",
+        "notes": null,
+        "amount": "1.2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "g",
+        "notes": "finely diced",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Arborio Risotto Rice",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Watercress Leaves",
+        "unit": "bunch",
+        "notes": "picked",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5ee9f335f290926b89fafc96a981bf96efd9176c6f14aae98825ed9164e07bc0",
+    "lineage_hash": "60091405957dae6a22e03bb760d712cc84be25c845c997b02dfc457724db7628"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chicken-risotto-recipe-watercress",
+    "fetchedAt": "2026-08-03T18:09:17.199Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chicken-risotto-recipe-watercress",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,35 @@
+{
+  "recipe": {
+    "name": "Agave Gracias",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Glass",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Stir all of the ingredients with ice, then strain into a glass filled with a single large ice cube, and garnish.",
+      "Piloncillo Syrup In a saucepan over medium heat, combine one 8-oz. cone of piloncillo with 1 cup of water (this recipe can be scaled up or down, just keep the piloncillo and water at equal parts). Stir until the sugar has fully dissolved, then bottle for use; keeps refrigerated for up to 1 month."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "c9042a71839b23858110388d73f2d311f484778b0d6a176d1b450032033fb0f6",
+    "lineage_hash": "c7920f9f563e700a3f3b4a88e827508c15833bfb6c3889aefd8a53b63d660a4d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/agave-gracias/",
+    "fetchedAt": "2026-08-03T21:34:42.946Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/agave-gracias/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,165 @@
+{
+  "recipe": {
+    "name": "Chicken Fried Rice",
+    "time": "10 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "443",
+      "carbohydrateContent": "48",
+      "fatContent": "18",
+      "proteinContent": "20"
+    },
+    "directions": [
+      "Cut the chicken breast into small pieces. Rinse them under running water and drain. Season with green seasoning, salt, and black pepper.",
+      "Heat oil in a large frying pan over high heat. Add ginger slices and hot pepper and cook until the edges are brown.",
+      "Add the seasoned chicken and cook for 5 minutes, stirring occasionally.",
+      "Move the chicken to the side of the pan and add whisked eggs. Stir and cook until scrambled.",
+      "Add the veggies and garlic. Cook for 3 minutes, stirring.",
+      "Stir in the rice, scallion, sesame oil, and soy sauce. Mix well to combine and break up any chunks. Add more black pepper if desired."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cooked Rice Parboiled Preferably",
+        "unit": "C",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Breast",
+        "unit": "lb",
+        "notes": "alt: thich cut into 1 inch pieces or smaller",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbs Green Seasoning",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbs Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs Whisked with a Pinch of Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion Finely Diced",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red and Orange Bell Pepper Finely Diced",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot Finely Diced",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Stalk Finely Diced",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbs Minced Garlic",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions Chopped",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbs Sesame Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbs Dark Soy Sauce",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "cc42c32f4ccaf135d79ff0f009bcee092482c6d300d1d9d352c2b823ced1dfb5",
+    "lineage_hash": "dbdfc245b2fdcecaba19fd2b05870c74b05ca68cc8a9488097841d356c6025c5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cookingwithria.com/2024/07/chicken-fried-rice/",
+    "fetchedAt": "2026-09-25T20:13:29.567Z"
+  },
+  "rawSource": "https://cookingwithria.com/2024/07/chicken-fried-rice/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,37 @@
+{
+  "recipe": {
+    "name": "Chicago Fizz",
+    "time": "20 sec",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Collins",
+    "garnish": [
+      "Sprinkle of Freeze-dried Raspberry Powder"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the ingredients, except the soda, in a shaker and shake hard for 10 seconds without ice. Then add ice and shake again for another 10 seconds. Strain into a glass and top with soda water. Garnish with a sprinkle of freeze-dried raspberry powder.",
+      "Raspberry Red Wine SyrupCombine 1 cup of caster sugar (or superfine sugar), 1/3 cup of raspberry purée, 1/3 cup of Pinot Noir, 1/3 cup of water, 2 1/2 tsp. of raspberry vinegar, 1/2 tsp. of malic acid, and 1 1/4 tsp. of citric acid. Stir until sugar has dissolved. Will keep in the refrigerator for a month."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "d6717c1a5898d6d0749c03897b8921880cc08485efea879a9beb848991aebb49",
+    "lineage_hash": "ec5df4fcc607d36f413fe047bdda9bb1245d89041b87b94ac8b48ec0ea90e5fa"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/chicago-fizz/",
+    "fetchedAt": "2026-08-04T01:39:43.123Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/chicago-fizz/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

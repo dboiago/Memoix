@@ -1,0 +1,43 @@
+{
+  "recipe": {
+    "name": "Espresso Martini",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Martini",
+    "garnish": [
+      "Orange Twist",
+      "Espresso Beans",
+      "Mint Leaf",
+      "Espresso Beans"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake all of the ingredients with ice until chilled, then strain into a chilled glass, and garnish.",
+      "Options\nBitter Orange and VanillaUse Amaro Nonino for the amaro, and garnish with an orange twist.",
+      "Alpine and ChamomileUse Braulio for the amaro, and garnish with espresso beans.",
+      "Mint and ChocolateUse Branca Menta for the amaro, and garnish with a mint leaf.",
+      "Herbs and CaramelUse Cynar for the amaro, and garnish with espresso beans."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "06cdd71551878011258ed9d3f91455e0fefbebb4c68964cde18336602bdd9568",
+    "lineage_hash": "2f5df69097104c4827a38bf51f6409c17aea9d954f11512bb63267d2bdfd8a4a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/a-quartet-of-espresso-martinis/",
+    "fetchedAt": "2026-08-03T21:22:49.730Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/a-quartet-of-espresso-martinis/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

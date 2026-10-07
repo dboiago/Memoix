@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "50/50 Tomato Margarita",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Rim a glass with salt and pepper, fill with ice, then set aside. Add all of the ingredients to a shaker with ice. Shake vigorously for 10-20 seconds. Strain into the prepared glass, then garnish.",
+      "Salted Tomato SyrupAdd 150g of ripe tomato to 150g of white sugar. Macerate overnight at room temperature, then strain out the solids. Add 2% salt by weight (3g) to the mixture, stirring to combine. Refrigerate for up to 1 week.",
+      "TipFor a lighter taste, use a ratio of 1 1/2 oz. manzanilla sherry to 1/2 oz. mezcal."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "3219f688769afc8d96297cb5819ba2991ee883a8aa2b37d391d7fb3897b95c67",
+    "lineage_hash": "8f7777e6848549e8d14e1f2fe692995e81e8f86097f4b94b6a73176bd2470b4e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/50-50-tomato-margarita/",
+    "fetchedAt": "2026-08-03T22:42:17.726Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/50-50-tomato-margarita/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,138 @@
+{
+  "recipe": {
+    "name": "Braised Shiitake and Napa Cabbage",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Soak dried shiitakes: Rinse dried shiitakes with cold running water to clean and place them in a large mixing bowl. Top with two cups of cold water and set aside overnight until they become soft, spongy, and fluffy.",
+      "Reserve shiitake soaking liquid: Strain to separate the soaking liquid from the shiitakes. You will get about a cup of soaking liquid to use as cooking stock.",
+      "Prepare shiitakes: Cut and discard the stems from each shiitake. If you want a prettier presentation, you can also make a small crisscross cut to each of the mushroom caps.",
+      "Sauté garlic: Heat a wok over medium-high heat until hot. Add oil and swirl to coat the wok, then add minced garlic and sauté until fragrant.",
+      "Add scallions and shiitakes: Add white parts of scallions and shiitake mushrooms, and stir-fry for 2 minutes.",
+      "Cook sauce: Add shiitake soaking liquid, soy sauce, oyster sauce, salt, sugar, and pepper. Mix well and bring to a boil. Lower the heat to a simmer, cover the wok and simmer for 20-30 minutes until the mushrooms are soft.",
+      "Add cabbage: Add napa cabbage and mix well. Cover the wok again and cook for 10 minutes, or until the cabbage is soft and translucent. Add cornstarch slurry and stir for 2 minutes, or until the sauce is thick.",
+      "Serve: Turn off the heat, transfer the dish to a serving plate, and garnish with scallion ribbons. Serve it immediately with steamed white rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "cut the white parts into 2-inch sections and cut the green parts into ribbons",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shiitakes",
+        "unit": null,
+        "notes": "Note 1, dried",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shiitake Soaking Liquid",
+        "unit": "C",
+        "notes": "Note 2",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": "Note 3",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Napa Cabbage",
+        "unit": null,
+        "notes": "cut into 2-inch squares",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch Slurry (1 Tablespoon Cornstarch + 1 Tablespoon Water)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f1e420d7b37d8468f895508b13aa23d57d7d930558f9ff0c7f4522beb016cbee",
+    "lineage_hash": "026259217b78d0dc80b3da280b1db2a3652d7ce68ad2741963085cf6703aed29"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/braised-shiitake-and-napa-cabbage.html",
+    "fetchedAt": "2026-08-01T18:41:13.751Z"
+  },
+  "rawSource": "https://dailycookingquest.com/braised-shiitake-and-napa-cabbage.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

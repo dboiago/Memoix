@@ -1,0 +1,161 @@
+{
+  "recipe": {
+    "name": "Chikuzenni (Chicken Vegetables Stew)",
+    "time": "1 day 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "311",
+      "carbohydrateContent": "38",
+      "fatContent": "11",
+      "proteinContent": "13"
+    },
+    "directions": [
+      "Start soaking the dried shiitake mushrooms a day before.",
+      "Prepare all the vegetables as explained above.",
+      "Heat sesame oil in a frying pan and the chicken thigh to cook until browned.",
+      "Remove the chicken thigh pieces out of the frying pan and add the konnyaku, carrot, renkon, satoimo and shiitake mushrooms to the frying pan and cook over medium hear (don&#39;t add the snow peas yet).",
+      "Pour the mixture of shiitake dashi, water, 3 tbsp sugar, 3 tbsp sake and 2 tbsp soy sauce to the frying pan and bring to boil. *4",
+      "When it has boiled, turn the heat down and simmer with an &quot;otoshibuta&quot; (drop lid) for about 20 minutes or till all the ingredients have cooked through.",
+      "Turn the heat off and cool it down. The flavours will penetrate through into the ingredients well and become more flavourful and delicious if you let it cool down.",
+      "Return the Chikuzenni back over medium-high heat.",
+      "When it has boiled, add soy sauce and mirin and let the liquid evaporate.",
+      "Turn the heat off and serve with par boiled snow peas."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Shiitake Mushrooms",
+        "unit": null,
+        "notes": "dried",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soaking Water for Dried Shiitake Mushrooms",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Thigh Fillets",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Snow Peas",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Konnyaku",
+        "unit": "g",
+        "notes": "konjac",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Renkon",
+        "unit": "g",
+        "notes": "lotus roots",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Satoimo",
+        "unit": "g",
+        "notes": "taro",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Sake",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mirin",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2281245a919fa7151712980d73f460f7056cd16089d510911cec428b7a4e64c3",
+    "lineage_hash": "a5f8000bd60e773b71029766099fe1a423ff9b068e7b9beba0ec47665b130399"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chopstickchronicles.com/chikuzenni/",
+    "fetchedAt": "2026-08-02T02:25:11.922Z"
+  },
+  "rawSource": "https://www.chopstickchronicles.com/chikuzenni/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

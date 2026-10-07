@@ -1,0 +1,171 @@
+{
+  "recipe": {
+    "name": "Brioche Chinois",
+    "time": "3 hr 30 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Before starting this Brioche Chinois recipe, make sure you have organised all the necessary ingredients. Do not trust the quantity of eggs shown in the photo, as proportions were modified to make two cakes. The quantities listed here make 1 brioche Chinois (serves 6).",
+      "For the brioche dough:  In the stand mixer recipient, shape the flour into a well.",
+      "Add the castor sugar...",
+      "... and salt.",
+      "In a bowl, dilute the yeast in warm water. Set aside.",
+      "Place 3 whole eggs in the centre of the flour. The eggs should be at room temperature.",
+      "Knead the ingredients with the dough hook...",
+      "... until the texture is similar to a dough.",
+      "Add the remaining egg.",
+      "Knead for a few minutes...",
+      "... until the dough is compact and comes away from the sides of the bowl.",
+      "Stop the mixer.",
+      "Add the soft butter, cut into cubes...",
+      "... and resume kneading until the dough no longer sticks to the sides of the bowl.",
+      "Reduce to low speed to avoid splatter and add the diluted yeast...",
+      "... then knead until the dough is smooth and homogeneous.",
+      "The dough should come away from the sides of the bowl. Stop the mixer and remove the bowl.",
+      "Scrape the dough that is stuck on the sides of the bowl...",
+      "... and cover with a tea towel. Leave to prove in a warm place for about 1.5 or 2 hours.",
+      "The dough should now have doubled in volume.",
+      "Knock the dough back with your fist. At this stage, the dough is ready to use. It can be covered and stored in the fridge. I always recommend refrigerating the dough for about one hour so it firms up a bit before use.",
+      "Assembling the brioche:  Divide the dough into 2 portions. One portion should weigh 200 grams, the other about 600 grams.",
+      "Roll out the small dough ball into a round shape and arrange it at the bottom of a round cake tin (24 cm). Press firmly so it perfectly lines the bottom of the mould. Set aside.",
+      "Place one half on a floured surface.",
+      "Roll out into a rectangle (25 x 40 cm).",
+      "Stir the crème pâtissière until smooth. Add the dark rum and combine.",
+      "Pour the pastry cream (cold or at room temperature) over the dough.",
+      "Spread the cream with a cranked spatula...",
+      "... over the whole surface of the brioche dough.",
+      "Roll the dough to create a length of 40 cm.",
+      "Cut the roll into 7 equal portions.",
+      "Arrange the rolls on top of the dough base, side with pastry cream facing up.",
+      "Arrange one roll in the centre first, then place the 6 remaining rolls around it.",
+      "The seams should be pointed towards the centre.",
+      "Place the mould in a warm room and leave to proof for about 1 hour or 90 minutes, until the rolls have risen and fill the mould completely.",
+      "Glaze the surface of the brioche with egg wash (beaten egg yolk with a little water).",
+      "Sprinkle pearl sugar over the surface...",
+      "... and bake in a preheated oven at 180°C (gas 4)...",
+      "... for approximately 25 minutes.",
+      "When cooked...",
+      "... remove from oven and leave to cool.\nOn the surface of the brioche, pour some royal icing or white fondant icing (melted in the microwave for a few seconds beforehand).\n This Brioche Chinois makes the perfect breakfast or afternoon treat. Enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Flour T45",
+        "unit": "g",
+        "notes": "alt: T55",
+        "amount": "375",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baker's Yeast",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Eggs",
+        "unit": null,
+        "notes": "at room temperature",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "softened",
+        "amount": "190",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": "warm",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Crème Pâtissière",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "3cl Dark Rum",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pearl Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": "glaze",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Fondant Icing",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4c40d00d8583fafc988095b69f90dfab0272f8d9e4276fa3687ffdb56cf645d2",
+    "lineage_hash": "e3ceffe50f9c8f9ee9e1113282faa779d651b377138c8e5b64c2712aa72c40cf"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.meilleurduchef.com/en/recipe/brioche-chinois.html",
+    "fetchedAt": "2026-08-02T05:11:20.386Z"
+  },
+  "rawSource": "https://www.meilleurduchef.com/en/recipe/brioche-chinois.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

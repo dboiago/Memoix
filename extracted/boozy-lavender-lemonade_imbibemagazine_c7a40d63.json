@@ -1,0 +1,35 @@
+{
+  "recipe": {
+    "name": "Boozy Lavender Lemonade",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all the ingredients in a shaker with ice and shake to chill. Strain into a rocks glass over fresh ice and garnish.",
+      "Lavender SyrupIn a quart container combine 2 cups of granulated sugar and 1 cup of dried lavender flowers. Top with 3 cups of boiling water and dissolve the sugar. Let the mixture steep for 15 minutes, then strain out the flowers. Transfer to a bottle keep refrigerated for up to 2 weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "44fa9363978fc821aab5ee522df0dd69d6a419c425e3f05c86bc6b2f872324a0",
+    "lineage_hash": "564b55a6a288d424b06c3eca185bd899096a9dfdfdd53297e638805e7c4670ba"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/boozy-lavender-lemonade/",
+    "fetchedAt": "2026-08-03T22:04:32.816Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/boozy-lavender-lemonade/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

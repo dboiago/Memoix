@@ -1,0 +1,120 @@
+{
+  "recipe": {
+    "name": "Chicken Breast Recipe With Mushrooms & Leeks",
+    "time": "50 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a thick bottom pan melt 25g of the butter and seal the chicken breast, skin side down",
+      "Peel and slice the shallots and add along with the white wine.  Bring to the boil",
+      "Add water, cover with a lid and place in the oven at 180 degrees centigrade until cooked, about 10 to 15 minutes. Remove chicken and leave to rest for 10 minutes under foil.  Strain chicken liquid through a sieve into another pan",
+      "Trim the baby leeks and steam for a few minutes until tender.  Slice and put aside",
+      "Bring the chicken liquid to the boil and add the mushrooms and cook for about 1 minute before adding the cream.  Once again bring to the boil",
+      "Whisk in the butter little by little, add the cooked leeks, chicken and tarragon.  Season with sea salt and freshly milled pepper as necessary and a few drops of lemon juice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Breasts",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallot",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wild Mushrooms",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Leeks",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tarragon",
+        "unit": "tsp",
+        "notes": "fresh",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fa5ec597973ff079c02073adad714b92d2252cda3045a57f9b2b283a7bca19c2",
+    "lineage_hash": "e38d61ecd82015e93c7cc498eca4c8a577e307ef3824ce2eb4f10730fc556269"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/corn-fed-chicken-breast-recipe-wild-mushrooms-leeks",
+    "fetchedAt": "2026-08-03T20:21:02.213Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/corn-fed-chicken-breast-recipe-wild-mushrooms-leeks",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

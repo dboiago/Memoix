@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Apricot and Coffee Highball",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Highball",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the first 4 ingredients to the ice-filled glass and stir to combine. Top with tonic water, then garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "ec27048ff2f14a42d3c89be5b5e75007f6c00378403c80404d6af248b7e185f9",
+    "lineage_hash": "ca7551e0f9814a809f91c370966f2dd0ff78ef4e2ff95add0c6b431df6adb87c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/apricot-and-coffee-highball/",
+    "fetchedAt": "2026-08-04T01:52:44.705Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/apricot-and-coffee-highball/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

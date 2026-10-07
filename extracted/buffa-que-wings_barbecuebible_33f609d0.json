@@ -1,0 +1,104 @@
+{
+  "recipe": {
+    "name": "Buffa-Que Wings",
+    "time": "1 hr 30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "32",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Rinse the chicken wings under cold running water and blot them dry with paper towels. Cut the tips off the wings and discard them (or leave the tips on if you don’t mind munching a morsel that’s mostly skin and bones). Cut each wing into 2 pieces through the joint.",
+      "Make the marinade: Whisk together the hot sauce, lemon juice, oil, Worcestershire sauce, garlic, salt, and pepper in a large nonreactive mixing bowl. Stir in the wing pieces and let marinate in the refrigerator, covered, for 4 to 6 hours or as long as overnight, turning the wings several times so that they marinate evenly.",
+      "Make the mop sauce: Just before setting up the grill, melt the butter in a small saucepan over medium heat and stir in the hot sauce.",
+      "Set up the grill for indirect grilling and preheat to medium. If using a gas grill, place all of the wood chips or chunks in the smoker box or in a smoker pouch and run the grill on high until you see smoke, then reduce the heat to medium. If using a charcoal grill, place a large drip pan in the center, preheat the grill to medium, then toss all of the wood chips or chunks on the coals.",
+      "When ready to cook, drain the marinade off the wings and discard the marinade. Brush and oil the grill grate. Place the wings in the center of the hot grate, over the drip pan and away from the heat, and cover the grill. Cook the wings until the skin is crisp and golden brown and the meat is cooked through, 30 to 40 minutes. During the last 10 minutes, start basting the wings with some of the mop sauce.",
+      "Transfer the grilled wings to a shallow bowl or platter and pour the remaining mop sauce over them. Serve with Maytag Blue Cheese Sauce and celery for dipping and of course plenty of paper napkins and cold beer."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Chicken Wings",
+        "unit": null,
+        "notes": "about 3-1/2 pounds",
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tabasco Sauce",
+        "unit": "C",
+        "notes": "alt: your favorite hot sauce",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "C",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Worcestershire Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Salt",
+        "unit": "tsp",
+        "notes": "kosher or sea",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f30bb62fce0746dcfed071ea32f2f5f20ad0df87395837aba09ee2c985d31dc5",
+    "lineage_hash": "5daae67805c4303ab7372d0ea4abf9061645b8c45a609979f0ca60ce44380fa5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/buffa-que-wings/",
+    "fetchedAt": "2026-08-03T06:27:48.847Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/buffa-que-wings/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

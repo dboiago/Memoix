@@ -1,0 +1,190 @@
+{
+  "recipe": {
+    "name": "Buttermilk Fattoush",
+    "time": null,
+    "course": "salad",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the sumac onions, in a small bowl mix the onions with 1 tablespoon olive oil, 1 1/2 teaspoons sumac, and salt. If the onions seem a little dry, add a touch more olive oil until they are glistening. Set aside.",
+      "Put the diced cucumbers in a strainer or colander, sprinkle with 1/4 teaspoon salt and let stand over a bowl for about 10 to 15 minutes, to drain away some of the liquid. (Don&#39;t let them sit too long, though, as you don&#39;t want them to get soggy.)",
+      "Put the tomatoes, radishes, mint, parsley, thyme, and crumbled flatbread in a large bowl. Blot the drained cucumbers with a paper or kitchen towel, then add them along with the buttermilk, 1/4 cup olive oil, lemon juice, garlic, vinegar, 1 1/4 teaspoons salt, 1 1/2 teaspoons sumac, half the sumac onions, and several good grinds of black pepper.",
+      "Mix everything together then transfer to a serving platter. Strew the remaining sumac onions over the salad, drizzle with a little extra olive oil, and sprinkle with the remaining 1/2 teaspoon of sumac. Serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "peeled, halved, and thinly sliced",
+        "amount": "1",
+        "section": "sumac onions",
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": "plus a bit more if necessary",
+        "amount": "1",
+        "section": "sumac onions",
+        "isOptional": false
+      },
+      {
+        "name": "Sumac",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "sumac onions",
+        "isOptional": false
+      },
+      {
+        "name": "Kosher",
+        "unit": "tsp",
+        "notes": "alt: sea salt",
+        "amount": "½",
+        "section": "sumac onions",
+        "isOptional": false
+      },
+      {
+        "name": "Persian Cucumbers",
+        "unit": "small",
+        "notes": "peeled and diced in 1/2-inch (1.5cm) pieces",
+        "amount": "3",
+        "section": "salad",
+        "isOptional": false
+      },
+      {
+        "name": "Kosher",
+        "unit": "tsp",
+        "notes": "alt: sea salt for the cucumbers, plus 1 1/4 teaspoons for seasoning the salad",
+        "amount": "¼",
+        "section": "salad",
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "large",
+        "notes": "diced in 1/2-inch (1.5cm) pieces",
+        "amount": "3",
+        "section": "salad",
+        "isOptional": false
+      },
+      {
+        "name": "Radishes",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "12",
+        "section": "salad",
+        "isOptional": false
+      },
+      {
+        "name": "Packed Fresh Mint Leaves",
+        "unit": "C",
+        "notes": "20g, coarsely chopped",
+        "amount": "1",
+        "section": "salad",
+        "isOptional": false
+      },
+      {
+        "name": "Packed Flat Leaf Parsley",
+        "unit": "C",
+        "notes": "20g, coarsely chopped",
+        "amount": "1",
+        "section": "salad",
+        "isOptional": false
+      },
+      {
+        "name": "Thyme Leaves",
+        "unit": "Tbsp",
+        "notes": "fresh, finely chopped",
+        "amount": "2",
+        "section": "salad",
+        "isOptional": false
+      },
+      {
+        "name": "Toasted",
+        "unit": "large",
+        "notes": "alt: stale flatbreads, such as pita (see headnote), crumbled",
+        "amount": "2",
+        "section": "salad",
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "C",
+        "notes": "300ml",
+        "amount": "1¼",
+        "section": "salad",
+        "isOptional": false
+      },
+      {
+        "name": "Extra-virgin Olive Oil",
+        "unit": "C",
+        "notes": "60ml, plus more for serving",
+        "amount": "¼",
+        "section": "salad",
+        "isOptional": false
+      },
+      {
+        "name": "Freshly-squeezed Lemon Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "salad",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "peeled and minced",
+        "amount": "2",
+        "section": "salad",
+        "isOptional": false
+      },
+      {
+        "name": "Cider",
+        "unit": "Tbsp",
+        "notes": "alt: white wine vinegar",
+        "amount": "2",
+        "section": "salad",
+        "isOptional": false
+      },
+      {
+        "name": "Sumac",
+        "unit": "tsp",
+        "notes": "plus 1/2 teaspoon for serving",
+        "amount": "1½",
+        "section": "salad",
+        "isOptional": false
+      },
+      {
+        "name": "Freshly-ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "salad",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "71ead924e179343ff0947cc97fa573ab041bc145cf48bdc4f971cf146b20eb4f",
+    "lineage_hash": "e833dc5a6fcc5f40546690851d0eb6b6357dbadcff8ce76074592edf824afc50"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/buttermilk-fattoush-salad-recipe-ottolenghi-sami-tamimi-tara-wigley/",
+    "fetchedAt": "2026-08-02T19:08:34.556Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/buttermilk-fattoush-salad-recipe-ottolenghi-sami-tamimi-tara-wigley/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

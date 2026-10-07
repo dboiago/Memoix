@@ -1,0 +1,247 @@
+{
+  "recipe": {
+    "name": "Caramelised Pain Perdu",
+    "time": "2 hr 25 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "The day before you plan to serve the dish, make the ice cream. Add the milk, cream, vanilla pod, sugar, glucose, milk powder and Stab 2000 to a saucepan. Heat up slowly, bringing the temperature up to 85°C, then pass the mixture through a sieve. Allow to sit at room temperature for 2 hours then pour into an ice cream machine and churn. Store in the freezer until needed",
+      "To make the brioche, place the flour and sugar in a stand mixer with a dough hook attachment. Dissolve the yeast in the milk",
+      "Start to mix the flour on a slow speed then add the milk. Gradually add the eggs, allowing them to combine before adding more. Add the softened butter in batches until it is completely mixed in. Finally, add the salt and mix for 3 minutes until everything comes together",
+      "Place the dough in a bowl, wrap in cling film and prove overnight in the fridge to develop the flavour",
+      "The next morning, preheat the oven to 200°C/gas mark 6. Knock back the dough, re-shape it and place in a loaf tin. Leave to prove at room temperature for one hour",
+      "Brush the top of the brioche with milk and bake in the oven for 20 minutes. Remove and allow to cool",
+      "To make the anglaise, mix everything together in a bowl",
+      "Cut the brioche into logs measuring 4cm wide, 4cm high and 14cm in length. Place them in a dish just large enough to fit the logs. Pour the anglaise over the top, carefully placing a tray over the logs to ensure they are completely submerged. Cover the dish in cling film, place in the fridge and leave for 12 hours",
+      "An hour before you plan to serve the dish, carefully take the brioche out of the anglaise and sit the logs on a wire rack to drain for 30 minutes",
+      "Meanwhile, make the crumble. Preheat the oven to 180°C/gas mark 4. Place all the ingredients in a food mixer and, using a paddle attachment, beat for 5 minutes or until the mixture forms a coarse crumb. Place on a baking tray and cook for 10 minutes or until golden. Allow to cool then gently break to create fine breadcrumbs",
+      "Heat some butter in non-stick frying pan, add the brioche logs and brown all over. Transfer to a baking tray and cook in the oven for 10 minutes",
+      "Remove the brioches from the oven, sprinkle some caster sugar over each log and caramelise with a blowtorch. Repeat this process until the logs are caramelised and dark on each side",
+      "Divide the brioches between 6 plates and serve with a scoop of vanilla ice cream sat on top of a spoonful of crumble. Finish with a shard of chocolate on top of the ice cream and serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yeast",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": "plus extra to brush the top",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "at room temperature",
+        "amount": "185",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Uht Whipping Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "165",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Atomised Glucose",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stabiliser Stab 2000",
+        "unit": "g",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "g",
+        "notes": "approx. 3 large eggs",
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Essence",
+        "unit": null,
+        "notes": "a few drops",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "275",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": null,
+        "notes": "to caramelize",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Decorations",
+        "unit": null,
+        "notes": "to garnish the ice cream",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0ae725213ed9fa9265d7ad394727e82eae4e427cecdae8ae8cde5185355957db",
+    "lineage_hash": "9cf6d7f37acd6d89134d3317a5c1ac384a2b484c22f3d4f19c933266d9c9aa0f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/caramelised-pain-perdu-recipe",
+    "fetchedAt": "2026-08-03T07:57:11.167Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/caramelised-pain-perdu-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,195 @@
+{
+  "recipe": {
+    "name": "Asparagus Soup With Crispy Hen's Egg",
+    "time": "1 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the asparagus purée, blanch the trimmed asparagus in boiling salted water and drain",
+      "Heat the butter in a pan to make a beurre noisette. Boil the double cream and set aside. Blend the butter and cream in a food processor with the asparagus and spinach, then pass through a sieve and chill immediately",
+      "Now make the soup. Sweat the onion and garlic, then add the stock and bring to the boil. Add the asparagus and cook for a further 4 minutes. In a separate pan, make a beurre noisette from the butter and add to the pan, along with the cream. Cook for a further 2 minutes",
+      "Add the baby spinach, season with salt and lemon juice and blend in a food processor. Pass through a sieve and chill immediately",
+      "Poach the eggs in simmering water for 2 minutes until still soft, then refresh in cold water",
+      "Using a Japanese noodle mandolin slicer, create long ribbons of potato and pat dry using absorbent kitchen towel. Carefully wrap them around the egg, covering each one completely",
+      "Deep-fry the eggs at 180°C until  they're golden brown",
+      "Blanch the trimmed asparagus spears in boiling salted water and drain. Trim the base of half of the spears, as pictured, and roll the others in the grated truffle",
+      "To plate, place an egg on each plate alongside a sweep of the purée. Spoon a further droplet of the purée next to the sweep, and lay the asparagus spears on top. Serve the soup in a small bowl or cup and place on the plate. Lastly, drizzle some truffle oil over the dish and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": "large",
+        "notes": "peeled",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Asparagus",
+        "unit": "g",
+        "notes": "trimmed and diced",
+        "amount": "375",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Spinach",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Asparagus",
+        "unit": "g",
+        "notes": "trimmed",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Spinach",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Asparagus Spears",
+        "unit": null,
+        "notes": "trimmed",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Truffle",
+        "unit": null,
+        "notes": "grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Truffle Oil",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4252942d87bb406c46bfab05167418eed4033f9d1f205ed0c49de098708d9acc",
+    "lineage_hash": "4ef173f3475694281b3e47bbfcaa81554c35c526a9dfd2fd4c22f048c6d9471b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/asparagus-soup-recipe-crispy-hen-egg",
+    "fetchedAt": "2026-08-03T19:42:08.440Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/asparagus-soup-recipe-crispy-hen-egg",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

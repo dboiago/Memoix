@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Black Lodge: A Coffee Boulevardier",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [
+      "Orange Peel"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to a mixing glass with ice, stir to chill, then strain into a rocks glass over ice. Flame an orange peel over the top and use as a garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "957069285f80f38ca1577685231c582ad033ef033d842b6711d61e15e9fa86ab",
+    "lineage_hash": "ab976dd9eca450ad5a574c8773a4cd0535f3b27489382d1f75f6eb2573922b4b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/black-lodge-a-coffee-boulevardier/",
+    "fetchedAt": "2026-08-04T00:10:57.435Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/black-lodge-a-coffee-boulevardier/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

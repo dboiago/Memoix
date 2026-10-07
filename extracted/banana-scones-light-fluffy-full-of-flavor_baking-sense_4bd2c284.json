@@ -1,0 +1,144 @@
+{
+  "recipe": {
+    "name": "Banana Scones",
+    "time": "45 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "416",
+      "carbohydrateContent": "59",
+      "fatContent": "18",
+      "proteinContent": "7"
+    },
+    "directions": [
+      "Preheat the oven to 375 °F. Line a ½ sheet pan with parchment paper or a silicone baking mat.",
+      "Cut 4 oz&#32;unsalted butter into ½&quot; chunks and put it in the refrigerator while you prepare the other ingredients.",
+      "In a large mixing bowl, whisk together 12 ½ oz&#32;unbleached all purpose flour, 5 oz&#32;granulated sugar, 1 tablespoon&#32;baking powder, ⅛ teaspoon&#32;ground cloves, ⅛ teaspoon&#32;ground nutmeg and ½ teaspoon&#32;salt. Toss in 2 oz&#32;walnuts.",
+      "Using a fork, mash 6 oz&#32;ripe bananas into a chunky puree, you should have about 3/4 cup. Combine the banana with 4 oz&#32;buttermilk, 1 teaspoon&#32;vanilla extract and 1&#32;large egg.",
+      "Work the butter into the dry ingredients with your fingers, squashing the chunks  into large flakes. Work quickly to avoid melting the butter. Add the banana mixture to the dry ingredients all at once and mix until mostly combined. It will look fairly dry at this point.",
+      "Dump the dough directly onto a generously floured surface. Sprinkle the top of the dough with flour and gently knead just until all the flour is incorporated. Avoid over-mixing. Use plenty of flour as this is a very sticky dough.",
+      "Using well-floured hands, pat the dough a 7” round that is about 1&quot; thick. Use a sharp knife to cut the round into 8 wedges. Don&#39;t use a sawing motion, just press straight through the dough with the sharp blade. Wipe the knife between cuts for clean edges on the scones. Transfer the scones to the prepared baking sheet.",
+      "Brush the top of the scones with buttermilk and sprinkle with sugar.",
+      "Bake until well-risen and golden brown, about 15-18 minutes. Serve warm or room temperature."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "cold",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unbleached All Purpose Flour",
+        "unit": "oz",
+        "notes": "2 ½ cups, see note",
+        "amount": "12½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "½ cup + 2 Tbl",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cloves",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Nutmeg",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Walnuts",
+        "unit": "oz",
+        "notes": "roughly chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ripe Bananas",
+        "unit": "oz",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6d0ae57606a5581b3a5fcd0096248053d0271d18e10a5b0f8a705c4ac2874bbd",
+    "lineage_hash": "c89af2ec4a7aacb94648a8314a2afdea1fbe42992c7eafd574b4e28ec77c08ba"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2026/03/16/banana-scones/",
+    "fetchedAt": "2026-08-02T06:55:15.233Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2026/03/16/banana-scones/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

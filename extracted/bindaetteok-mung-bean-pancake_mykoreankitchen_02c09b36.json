@@ -1,0 +1,176 @@
+{
+  "recipe": {
+    "name": "Bindaetteok (Mung Bean Pancake)",
+    "time": "1 hr 15 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "KR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "216",
+      "carbohydrateContent": "22",
+      "fatContent": "10",
+      "proteinContent": "11"
+    },
+    "directions": [
+      "The leftovers can be refrigerated for to 2-3 days or frozen for a month at a time. Defrost the pancake at room temperature and then heat in a pan over low heat or in the microwave."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mung Bean Flour Mix",
+        "unit": "C",
+        "notes": null,
+        "amount": "1¼",
+        "section": "Option 1) Mung Bean Flour",
+        "isOptional": false
+      },
+      {
+        "name": "Fine Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Option 1) Mung Bean Flour",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Option 1) Mung Bean Flour",
+        "isOptional": false
+      },
+      {
+        "name": "And Split Mung Beans",
+        "unit": "C",
+        "notes": "dried, peeled",
+        "amount": "1",
+        "section": "Option 2) Dried Mung Beans",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": "Option 2) Dried Mung Beans",
+        "isOptional": false
+      },
+      {
+        "name": "Glutinous Rice Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Option 2) Dried Mung Beans",
+        "isOptional": false
+      },
+      {
+        "name": "Potato Starch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Option 2) Dried Mung Beans",
+        "isOptional": false
+      },
+      {
+        "name": "Fine Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Option 2) Dried Mung Beans",
+        "isOptional": false
+      },
+      {
+        "name": "Pork",
+        "unit": "g",
+        "notes": "5.3 ounces, minced",
+        "amount": "150",
+        "section": "MEAT & VEGETABLES",
+        "isOptional": false
+      },
+      {
+        "name": "Mung Bean Sprouts (3.5 Ounces)",
+        "unit": "g",
+        "notes": "rinsed and drained",
+        "amount": "100",
+        "section": "MEAT & VEGETABLES",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion (1.8 Ounces)",
+        "unit": "g",
+        "notes": "(white part), thinly sliced",
+        "amount": "50",
+        "section": "MEAT & VEGETABLES",
+        "isOptional": false
+      },
+      {
+        "name": "Ripe Kimchi (5.3 Ounces)",
+        "unit": "g",
+        "notes": "rinsed and squeezed, thinly sliced",
+        "amount": "150",
+        "section": "MEAT & VEGETABLES",
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Oil",
+        "unit": "Tbsp",
+        "notes": "more if required",
+        "amount": "3",
+        "section": "MEAT & VEGETABLES",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "I used regular kikoman soy sauce",
+        "amount": "1",
+        "section": "MEAT MARINADE",
+        "isOptional": false
+      },
+      {
+        "name": "Rice Wine",
+        "unit": "Tbsp",
+        "notes": "mirim",
+        "amount": "½",
+        "section": "MEAT MARINADE",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "¼",
+        "section": "MEAT MARINADE",
+        "isOptional": false
+      },
+      {
+        "name": "A Few Sprinkles Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "MEAT MARINADE",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "cc9ce7a1ff833dd956107f89f44b63eb0ddf805f656c5f096e97f4fbea972240",
+    "lineage_hash": "794443c61ca977073e3edbad57c6772b8105821ddbf5640dcac7fde6f1d1abf3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://mykoreankitchen.com/bindaetteok/",
+    "fetchedAt": "2026-08-01T23:45:09.789Z"
+  },
+  "rawSource": "https://mykoreankitchen.com/bindaetteok/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

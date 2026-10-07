@@ -1,0 +1,135 @@
+{
+  "recipe": {
+    "name": "Baby Bok Choy Kimchi Salad (Geotjeori)",
+    "time": "45 min",
+    "course": "pickles",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "KR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Separate the leaves by cutting off the stem of each bok choy. Rinse and drain.",
+      "Place the bok choy in a large bowl, sprinkle with the salt, and toss well to coat evenly. Leave it for 30 to 40 minutes until softened, flipping over once halfway through.",
+      "Thinly slice the onion and scallion. Combine all the seasoning ingredients in a small bowl, and mix well with 3 tablespoons water.",
+      "Rinse the bok choy twice and drain well.",
+      "Add the onion, scallions, and seasoning mix to the bok choy. Using a kitchen glove, toss everything well by hand until the bok choy pieces are well coated with the seasoning. Add a little salt or more fish sauce to taste."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Baby Bok Choy",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion Thinly Sliced",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions Roughly Chopped",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gochugaru Korean Red Chili Pepper Flakes",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Saeujeot Salted Shrimp",
+        "unit": "tsp",
+        "notes": "or use more fish sauce, finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": "alt: corn syrup or Korean rice syrup",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "grated",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5804b48411ebaba09986b116ac91bf6326f8fc3ccff5f1fb892984e7ba89fff8",
+    "lineage_hash": "22b0a7bede2bd0d0410f3231ae9fa69f060741dd03d49c6c1250215c967e9fd3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.koreanbapsang.com/baby-bok-choy-kimchi-salad-geotjeori/",
+    "fetchedAt": "2026-08-02T00:07:11.213Z"
+  },
+  "rawSource": "https://www.koreanbapsang.com/baby-bok-choy-kimchi-salad-geotjeori/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

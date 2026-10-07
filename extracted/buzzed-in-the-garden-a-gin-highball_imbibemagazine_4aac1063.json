@@ -1,0 +1,37 @@
+{
+  "recipe": {
+    "name": "Buzzed in the Garden: A Gin Highball",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Highball",
+    "garnish": [
+      "Edible Flowers",
+      "Fresh Mint"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients, except the tonic water, to a shaker with ice. Shake vigorously, then strain into an ice-filled glass. Top with a splash of tonic. Garnish.\nLavender SyrupIn a large pot, add 1 cup of water and bring to a boil. Gradually stir in 1 cup of sugar. Stir until most of it is dissolved. Remove from heat and add 1/2 cup of dried lavender and stir. (It’s important not to add the lavender when the water is boiling. You don’t want the syrup to have a burnt taste.) Strain with a fine strainer or cheese cloth into an airtight container. Allow to cool before sealing and storing in the refrigerator where it will keep for 2 weeks.\nEarl Grey SyrupSteep Earl Grey Tea to make 1 cup. Add 1/2 cup of sugar while still hot. Stir until dissolved. Allow to cool before sealing in a container and storing in the refrigerator where it will keep for 2 weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "d23497f80c9c77d92c18b576c6007c982fd3389af1d4c5f7edc980019bdca9ba",
+    "lineage_hash": "e945e624321856ea38ed81595a0160f8d89cf35f7dae40ef9b736169ffd9eec6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/buzzed-in-the-garden-gin-highball/",
+    "fetchedAt": "2026-08-04T01:51:15.185Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/buzzed-in-the-garden-gin-highball/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

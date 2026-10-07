@@ -1,0 +1,115 @@
+{
+  "recipe": {
+    "name": "Air Fryer Cauliflower",
+    "time": "20 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "91",
+      "carbohydrateContent": "7.3",
+      "fatContent": "7.3",
+      "proteinContent": "1.7"
+    },
+    "directions": [
+      "Preheat the air fryer to 400°F (200°C) for 10 minutes.",
+      "Add the cauliflower into a big bowl. Drizzle with olive oil. Add the Chinese chili flakes, cumin powder, garlic, salt, and ground Sichuan peppercorns. Toss to coat well.",
+      "Roast the cauliflower in the air fryer at 400°F (200°C) for 8 to 9 minutes, until just al dente and the edges are charred.",
+      "Transfer the air fryer tray to the kitchen counter. Add the green onion and drizzle with soy sauce. Toss with a spatula. Air fry for another 2 minutes or so, until the cauliflower turns tender and the edges are browned. Serve hot as a side dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Head Cauliflower",
+        "unit": "small",
+        "notes": "cut into bite-size florets",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Chili Flakes",
+        "unit": "tsp",
+        "notes": "or paprika for a non-spicy dish",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Sichuan Peppercorn",
+        "unit": "tsp",
+        "notes": "or black pepper",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f973428aafb4443db022947b9947f2f4493392eb355e97db0f1541142ac6eb4e",
+    "lineage_hash": "69fd2739ba5d679cfca291401bd216e02bce59f1a0c639c0899bb50bd8f87204"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/air-fryer-cauliflower/",
+    "fetchedAt": "2026-08-02T02:09:44.787Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/air-fryer-cauliflower/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

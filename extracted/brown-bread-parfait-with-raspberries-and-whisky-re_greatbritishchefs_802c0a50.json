@@ -1,0 +1,164 @@
+{
+  "recipe": {
+    "name": "Brown Bread Parfait with Raspberries and Whisky",
+    "time": "1 hr 20 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by making the parfaits. Gently warm 50ml of the double cream, then drain the soaked gelatine leaves and whisk into the hot cream until dissolved. Set aside",
+      "Meanwhile, whip the remaining 200g of double cream until slightly stiff, then set aside",
+      "Pour the sugar into a saucepan with 50ml water and heat to 118°C. Meanwhile, whisk the egg whites in a stand mixer until frothy, then gradually pour in the hot sugar syrup with the motor still running. Continue to whisk the mixture until cooled",
+      "Transfer the soaked bread (along with the water) into a blender and blitz until completely smooth",
+      "Add the gelatine-cream mixture to the cooled egg whites, then gently fold in the brown bread purée. Finally, gently stir in the semi-whipped cream. Pour the parfait mixture into parfait moulds lined with cling film (around 60g per portion), then place in the freezer for at least 4 hours to set. If you don't have 10 parfait moulds, you can pour the mixture into a long tin and cut the parfait into 10 portions just before serving",
+      "For the whisky jelly, add the sugar and water to a pan and heat until the sugar dissolves. Drain the gelatine and whisk in until dissolved, then pour in the whisky and give everything a good stir. Strain the mixture through a chinois or fine sieve into a large container, then place in the fridge to set",
+      "For the raspberry gel, mix the purée and agar in a saucepan and bring to the boil. Pour into a tray, leave to cool slightly then transfer to the fridge to set",
+      "For the oatmeal crumb, preheat an oven to 160°C/gas mark 3. Mix the oats with the honey then spread the mixture out onto a baking tray lined with baking paper. Cook for 8–10 minutes, then remove and leave to cool completely. Once cool, mix break up the mixture in a food processor or by bashing it will a rolling pin, mixing in the freeze-dried raspberries as you go. Set aside until ready to plate",
+      "When the raspberry gel has set, transfer to a blender and blitz until smooth. Pass through a fine sieve into a squeezy bottle",
+      "10 minutes before you plan to serve the dish, remove the parfaits from the freezer so they can defrost slightly. To plate, pipe or spoon some whisky jelly onto the base of each plate. Cover the tops of the parfaits with the oatmeal crumb, then place each parfait on top of the whisky jelly. Pipe dots of the raspberry gel around the parfaits, then finish with the raspberry halves"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Egg Whites",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Muscovado Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaves",
+        "unit": null,
+        "notes": "soaked in cold water for 10 minutes",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Bread",
+        "unit": "g",
+        "notes": "soaked in 150ml cold water for 1 hour",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whisky",
+        "unit": "ml",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaves",
+        "unit": null,
+        "notes": "soaked in cold water for 10 minutes",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raspberry Purée",
+        "unit": "g",
+        "notes": "ideally Boiron",
+        "amount": "165",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Agar Agar",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oats",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freeze-dried Raspberries",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raspberries",
+        "unit": null,
+        "notes": "ideally a mix of red and yellow, halved",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0d20e0c366436bf0bed23da2b026d2368a376049c424fa47caf071fccf63bdbf",
+    "lineage_hash": "8a19ca878688745decb7b266ffa3c31cbe6b70e88e48402577df83655c181a63"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/brown-bread-parfait-raspberries-recipe",
+    "fetchedAt": "2026-08-03T06:00:29.612Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/brown-bread-parfait-raspberries-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

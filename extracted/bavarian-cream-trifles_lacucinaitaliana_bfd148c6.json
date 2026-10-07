@@ -1,0 +1,118 @@
+{
+  "recipe": {
+    "name": "Bavarian Cream Trifles",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Soak the isinglass in cold water. Heat the milk without allowing it to boil. In a bowl, mix the egg yolks with the sugar and 8 crumbled amaretto cookies. Drizzle the warm milk over this, then heat the mixture over the lowest possible heat, heating it to 175°F (it must not boil), then add the softened isinglass and let it cool until it begins to thicken, then fold in 1 3/4 cups whipped cream.&nbsp;",
+      "Meanwhile, chop the chocolate and place it in a small saucepan with 2/3 cup cold water, 4 tablespoons Grand Marnier and the grated rind of 1 orange and simmer this mixture until creamy.",
+      "Place a ladyfinger in the bottom of each cup, then spread the chocolate mixture over them and let them cool to room temperature. Pour the Bavarian cream over each one.",
+      "Put the trifles in the refrigerator and, at serving time, garnish them with dollops of the remaining whipped cream and some amaretto cookies."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "oz",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Isinglass",
+        "unit": "oz",
+        "notes": "or gelatin leaves",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ladyfingers",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amaretto Cookies",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grand Marnier",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1d5e58410db79ae305e9c499e598ca09eeba67c507128b8734c74f4dde7ea6b5",
+    "lineage_hash": "acf0ecc7eb75e2dc08e1fc3ef54510199aef2c3484b6b9d8e67389355d312c9d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/bavarian-cream-trifles",
+    "fetchedAt": "2026-08-03T05:32:11.899Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/bavarian-cream-trifles",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

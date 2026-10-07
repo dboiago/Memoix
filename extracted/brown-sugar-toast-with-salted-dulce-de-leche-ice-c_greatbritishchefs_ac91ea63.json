@@ -1,0 +1,214 @@
+{
+  "recipe": {
+    "name": "Brown Sugar Toast with Salted Dulce de Leche Ice Cream",
+    "time": "2 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by making the dulce de leche caramel. Add the sugar to a high-sided saucepan and melt over a medium heat, swirling the sugar rather than stirring it to help it dissolve to prevent crystallising",
+      "Once the caramel is light golden, swirl through the butter – take care as it will spit and bubble up",
+      "Add the milk a little bit at a time, stirring constantly, until it’s all incorporated",
+      "Finally, whisk in the can of condensed milk",
+      "Continue to cook the caramel, stirring frequently with a spatula, until it darkens to an amber colour",
+      "Stir through the salt then transfer a quarter of the caramel to a heatproof container to cool",
+      "Add the cream and milk to the three quarters of the caramel and cook over a medium heat, stirring continuously, until the mixture begins to steam",
+      "In a separate bowl whisk together the egg yolks, sugar and vanilla bean paste until the mixture begins to lighten in colour",
+      "Add a small amount of the cream mixture to the eggs, whisking constantly, to temper them. Pour the tempered eggs into the cream mixture",
+      "Cook the custard over a medium-low heat until it thickens enough to coat the back of a spoon. Take care not the bring the mixture to the boil, which will cause the eggs to curdle",
+      "Strain the custard through a fine mesh sieve then chill in the fridge",
+      "While the mix is cooling, bring all the ingredients for the vanilla cinnamon syrup to a simmer and cook until it turns golden",
+      "Remove from the heat and set aside to cool",
+      "Churn the chilled ice cream base in an ice cream machine, swirling in the reserved caramel towards the end of churning so that it has thick swirls of caramel. Transfer to a container and freeze until solid",
+      "Preheat the oven to 180°C for the brioche",
+      "Mix together the butter and light brown sugar, then mix in the honey and salt until combined",
+      "Slice the brioche into 2-inch thick slices, then remove the crusts and cut the brioche into squares",
+      "Spread the brown sugar butter all over the brioche, making sure to coat it all over",
+      "Place the slices on a baking tray lined with parchment paper and bake for 20 minutes, flipping halfway through until golden brown",
+      "Remove from the oven and set aside on a cooling rack for 10 minutes before serving topped with a large scoop of dulce de leche ice cream and a drizzle of the vanilla cinnamon syrup"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cane Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "cubed",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Condensed Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinches",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "240",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "480",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshlay Farms Golden Yolker® Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pods",
+        "unit": null,
+        "notes": "sliced in half",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "room temperature",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soft Light Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brioche",
+        "unit": "slices",
+        "notes": "thickly sliced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "96da41655977b8853b335eb53f997b19424bca423441eaac3f95fec41e3c369d",
+    "lineage_hash": "d70f1300228cdae04217a6c2d2f225e6029e2e45fa6a89e3d1d3544b95007dd7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/brown-sugar-toast-salted-dulce-de-leche-ice-cream-recipe",
+    "fetchedAt": "2026-08-02T09:38:22.312Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/brown-sugar-toast-salted-dulce-de-leche-ice-cream-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Campari Shake",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Blend first 4 ingredients. Add remaining ingredients and blend until just combined. Pour into glasses and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "d1dd8febf43519d6ceaee9232c94e3421abcb414158065c9c748842abde1c730",
+    "lineage_hash": "edbb8c908805ca6a70f6ae61213e5b9bcdf23d103296a8282f396c1bd96b59c9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/campari-shake-recipe/",
+    "fetchedAt": "2026-08-03T23:14:56.061Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/campari-shake-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,112 @@
+{
+  "recipe": {
+    "name": "Brisket Scones",
+    "time": "45 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the flour, sugar, baking powder, salt, and butter in a food processor fitted with a chopping blade. Run the processor in short bursts to cut in the butter: the pieces should be pea-sized. Add the brisket and onion and pulse in short bursts just to mix.",
+      "Beat the egg in a bowl and beat in the buttermilk. Add this mixture to the flour mixture and pulse in short bursts to make a soft dough.",
+      "Refrigerate the dough for 1 hour.",
+      "Pat the dough into a circle 1 inch thick on a floured work surface. Cut it into 8 wedges. Arrange the scones on a sheet pan. (Line it with parchment paper for easy cleaning.) Chill for 30 minutes.",
+      "Heat your grill or oven to 350 degrees.",
+      "Make the glaze. Beat the egg yolk with the cream and brush the mixture on the tops of the scones. Bake the scones until lightly browned and cooked through, 20 minutes, rotating the sheet pan halfway through so the scones cook evenly."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "2⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stick (4 Ounces) Unsalted Butter",
+        "unit": null,
+        "notes": "cut into 1/2-inch slices",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Brisket",
+        "unit": "C",
+        "notes": "click here or use your favorite recipe, chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "C",
+        "notes": "finely, diced",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "80aaa44374cdb0de047a6ec4ea05afe535f44c562104edfe52ec1cfcd5a0014e",
+    "lineage_hash": "90b9d76104d86d74f01978e55db16305ab09301f2b2e2f6b69f282923bb76efd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/brisket-scones/",
+    "fetchedAt": "2026-08-03T09:56:43.222Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/brisket-scones/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

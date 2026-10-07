@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Champurrado",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Using your hands, mix the masa or masa harina with the warm water. Work the mixture until completely smooth to ensure the champurrado stays velvety (you may need a little extra water to achieve the correct texture if using masa harina).",
+      "In a saucepan, gently warm the milk over medium heat. Bring it to a soft simmer, being careful not to let it boil. Add piloncillo to the hot milk and let it melt completely. Add the cinnamon stick, then stir in the chocolate until it is fully melted and incorporated. Slowly whisk in the dissolved masa mixture, stirring constantly to maintain a silky and lump-free texture.",
+      "Cook gently for 15-20 minutes, stirring often, until the champurrado is thick enough to lightly coat the back of a spoon, while still remaining drinkable. Remove the cinnamon stick and serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "8068fb149c24bd0c0ce570da795987c031a966f43f61f445f5a70b5a6ce458aa",
+    "lineage_hash": "b33a99744b3adeca07ccf7fd96ac441339c11a10908dd75896afe3fe99f3a835"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/champurrado-recipe/",
+    "fetchedAt": "2026-08-03T18:32:09.328Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/champurrado-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

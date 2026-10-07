@@ -1,0 +1,88 @@
+{
+  "recipe": {
+    "name": "Bacon Wrapped Spare Ribs",
+    "time": "3 hr 45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "1410",
+      "carbohydrateContent": "37",
+      "fatContent": "113",
+      "proteinContent": "60"
+    },
+    "directions": [
+      "Prep. Remove any excess fat from the racks of ribs as well as the backside membrane. Slice into individual ribs. This should yield about 12 ribs.",
+      "Season each rib with a combination of the Texas Select Jalapeño Dusted and Juicy Pig rubs.",
+      "Wrap each rib with a slice of bacon. To secure the bacon, wrap over the starting end of each slice then tuck the trailing end under the closest wrap. Use two pieces of bacon for the larger ribs if necessary.",
+      "Refrigerate and allow to set up for about an hour while you fire up your cooker.",
+      "Fire up. Prepare a grill for indirect cooking by placing a chimney full of pre-heated charcoal briquettes on one side of the grill’s charcoal grate in order to create direct and indirect cooking zones. Adjust the grill vents to bring the temperature to about 275°F (135°C) on the indirect side. Add two chunks of apple or cherry wood to the coals. Alternatively, fire up a pellet smoker or offset smoker to 275°F (135°C) with your favorite cooking pellets or fruitwood.",
+      "Smoke. Smoke until the ribs are tender, take on a good amount of smoke, and reach an internal temperature of 195-200°F (90.6-93.3°C), about 2 hours. The bacon should begin to crisp up but still be pliable.",
+      "Glaze. While the ribs cook, prepare and heat your glazing sauce. Allow to cook down and thicken in the pan. Keep warm until time to glaze the ribs.",
+      "Remove the smoked ribs to a sheet tray and coat all sides with the warm glaze. Return to the cooker, close the lid, and allow the glaze to caramelize and set for approximately 10-15 minutes. The glaze should tack up, but do not let it burn.",
+      "Remove and let the ribs rest for about 10 minutes. Serve with your favorite sides, and enjoy this delicious pork treat!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Slab Trimmed St. Louis Spare Ribs",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bacon",
+        "unit": "lb",
+        "notes": "Oscar Meyer center cut works well",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Texas Select Seasoning Jalapeño Dusted",
+        "unit": "Tbsp",
+        "notes": "or your favorite seasoning",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Texas Select Seasoning Juicy Pig",
+        "unit": "Tbsp",
+        "notes": "or your favorite seasoning",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Texas Select Smoked Apple Strawberry Habanero BBQ Glaze",
+        "unit": "C",
+        "notes": "or your favorite glaze",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "17894aee650f392e00bdbc36133d60ac60760decb46dbd4169f03369745663ef",
+    "lineage_hash": "e79ddd45a18ae3dae1233cf9a6eeb47815647fe861eb76e472d1227023ba3e27"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://amazingribs.com/tested-recipes/pork-ribs-recipes/bacon-wrapped-spare-ribs/",
+    "fetchedAt": "2026-08-02T11:00:55.847Z"
+  },
+  "rawSource": "https://amazingribs.com/tested-recipes/pork-ribs-recipes/bacon-wrapped-spare-ribs/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

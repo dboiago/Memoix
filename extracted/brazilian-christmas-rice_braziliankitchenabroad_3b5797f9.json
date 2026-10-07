@@ -1,0 +1,116 @@
+{
+  "recipe": {
+    "name": "Brazilian Christmas Rice",
+    "time": "25 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "BR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Soak the raisins in the champagne, and set aside for 30 mins to an hour",
+      "In a medium sauce pan, heat up the oil",
+      "Add the onions and cook until soft and transparent",
+      "Add the garlic and cook until fragrant and light gold",
+      "Add the rice, season with the salt and stir",
+      "Then drain the champagne into the pan (reserve the raisins for later), and cook until it is reduced/evaporated",
+      "Add the water and bring to a gentle boil",
+      "Reduce to a simmer, cover and let it cook until all water has been absorbed and the rice is cooked and firm (try not to peak – we don’t want to lose steam that’s precious for the next step!)",
+      "Turn off the heat and add the raisins to the rice and cover the pan. Let the rice pot sit covered for another ~10 mins – steam",
+      "When you are ready to serve, add the cashews and stir everything to combine and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion Sliced",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Minced",
+        "unit": "clove",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Uncooked Rice Rinsed",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Champagne",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raisins",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1.25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cashews Roughly Chopped",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Taste About ½ Tsp to a Tsp Per Cup of Rice",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f2f7a14b6d7eadab2acae6ee86b97832a05a17ab08e94ac6a45b1302670aa683",
+    "lineage_hash": "1ba37c7d9fabd732fd150962df2f0d0747aaa709b4ccc3f800cfc3bdb3e504a9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://braziliankitchenabroad.com/champagne-rice-raisins-cashews/",
+    "fetchedAt": "2026-09-25T19:16:04.106Z"
+  },
+  "rawSource": "https://braziliankitchenabroad.com/champagne-rice-raisins-cashews/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

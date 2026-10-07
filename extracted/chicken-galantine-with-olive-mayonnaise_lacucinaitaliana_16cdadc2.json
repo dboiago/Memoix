@@ -1,0 +1,197 @@
+{
+  "recipe": {
+    "name": "Chicken galantine with olive mayonnaise",
+    "time": "50 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Open the chicken breast by slicing it horizontally to create a large, thin slice. Sprinkle with salt and pepper. In a food processor, mix the ricotta with a teaspoon of olive paté, salt, a few raisins, 1 tablespoon of pistachios and 4 chopped apricots. Spread this mixture on the chicken, roll it up and tie it up like a roast with cooking twine and wrap it in wet parchment paper and then aluminum foil, twisting the ends closed like a candy.",
+      "Immerse this in a saucepan full of cold water, bring to a boil, then cook for 20-30 minutes over very low heat. Drain and remove the covering. Meanwhile, beat the egg and the yolk with a teaspoon of mustard, 1 tablespoon white vinegar, the juice of 1/2 lemon and a pinch of salt. Drizzle in 1 1/2 cups sunflower seed oil, blending to form a mayonnaise.",
+      "In a pan, heat 1 tablespoon extra-virgin olive oil and a small pat of butter and fry 1 shallot and 2 cloves unpeeled garlic, slightly crushed. Add a sprig of rosemary, some coarse salt and pepper and brown the chicken in this mixture for 5-6 minutes with a splash of white wine. Mix 5 tablespoons of mayonnaise with 2 tablespoons olive paté and serve this sauce with the galantine."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Breast",
+        "unit": "oz",
+        "notes": null,
+        "amount": "9½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ricotta Cheese",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Paté",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raisins",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apricots",
+        "unit": "Tbsp",
+        "notes": "dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pistachios",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallot",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "unpeeled, slightly crushed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pat Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Splash Dry White Wine",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sunflower",
+        "unit": "C",
+        "notes": "alt: canola oil",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extravirgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": "fine and coarse",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c335c31fa48271c943b444b97d05dc7d8c3fca45ee343c88b25de3054033c987",
+    "lineage_hash": "1db5c30dd6e052d1bd58e4e3651a8ab61144dda981fb60f84829bf0ec3a0a436"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/main-course/chicken-galantine-with-olive-mayonnaise",
+    "fetchedAt": "2026-08-02T17:13:59.054Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/main-course/chicken-galantine-with-olive-mayonnaise",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

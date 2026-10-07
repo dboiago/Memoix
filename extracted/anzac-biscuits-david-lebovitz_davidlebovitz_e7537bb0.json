@@ -1,0 +1,113 @@
+{
+  "recipe": {
+    "name": "Anzac Biscuits",
+    "time": "20 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "22",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Turn the oven on to 160ºC (325ºF) and line a baking sheet with parchment paper or a silicone baking mat.",
+      "Melt the butter and golden syrup in a saucepan on low heat.",
+      "Measure the oats, coconut, flour, sugar and a pinch of salt into a mixing bowl.",
+      "Mix the baking soda and hot water in a little glass and check that it is fizzing away. Take the saucepan off the heat and pour the water/baking soda mix into the melted butter and golden syrup. It should foam up immediately.",
+      "Pour it into the dry mix and stir. It comes together very easily.",
+      "Roll into golf-ball sized balls, place on the baking sheet and give them a light squash so they are flat on top. They spread quite a bit so make sure to leave room.",
+      "Bake for 9-11 minutes (in my old oven it was 11, in my new oven it is 9). They are ready when they are quite golden all over and smell divine. They are deceptively soft when they come out of the oven but they harden up a lot, so don’t be fooled - unless you like them really crispy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Grams (4 1/2 Ounces) Unsalted Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams (1 Tablespoon) Golden Syrup",
+        "unit": null,
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams (1 Cup + 2 Tablespoons) Light",
+        "unit": null,
+        "notes": "alt: dark brown sugar, the original recipe just says sugar so you can use whatever you have to hand",
+        "amount": "210",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams (1 Cup) Old-fashioned Rolled Oats",
+        "unit": null,
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams (1 Cup) Unsweetened Desiccated Coconut",
+        "unit": null,
+        "notes": null,
+        "amount": "65",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams (1 Cup + 1 Tablespoon) All-purpose Flour",
+        "unit": null,
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Boiling Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "cff9ad8c65506ea4ffee8a2d18b7b2482ce3c3715faa6dffcf661ad2bd700cbc",
+    "lineage_hash": "4f5f853686f725d30b15164afed9771fb713072c5533ad4f2cb7394e8f12d404"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/anzac-biscuits/",
+    "fetchedAt": "2026-08-02T17:27:03.454Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/anzac-biscuits/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

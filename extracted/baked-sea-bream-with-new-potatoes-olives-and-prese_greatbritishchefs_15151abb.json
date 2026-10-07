@@ -1,0 +1,173 @@
+{
+  "recipe": {
+    "name": "Baked Sea Bream with New Potatoes, Olives and Preserved Lemons",
+    "time": "50 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place a large pan over a medium heat with a dash of the oil, then add the cinnamon stick, onion and garlic and sweat down for 5 minutes until starting to soften. Add the green pepper and cook for another 5 minutes, then add the ground spices and cook out for a further couple of minutes",
+      "Add the white wine to the pan and reduce by half. Then add in the sliced potatoes, the olives with the brine, the preserved lemons, bay leaf and vegetable stock and simmer for around 8 minutes – the potatoes should be starting to soften slightly but not cooked through",
+      "Transfer the potato mixture to a large oven-proof tray, and place the sea bream on top. Drizzle the bream with a little oil and season with salt then bake for 30 minutes until the potatoes are tender, and the bream is starting to crisp up"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sea Bream",
+        "unit": null,
+        "notes": "choose smaller bream for this recipe",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Pepper",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cumin",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Coriander",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Waxy Potatoes",
+        "unit": "g",
+        "notes": "in 1cm thick slices",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Olives",
+        "unit": "g",
+        "notes": "plus 1 tablespoon of their brine",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Preserved Lemon",
+        "unit": null,
+        "notes": "sliced into eighths",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Season",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "40c7e2af1fb239138dccff8c7b2e2733254ea240315fd35aa7eab8a7acd9c98a",
+    "lineage_hash": "a4d41306f2a2db6b874956e840a679cdd5d086c834d860543e7414b80d8a5713"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/baked-sea-bream-new-potatoes-olives-preserved-lemons-recipe",
+    "fetchedAt": "2026-08-02T18:22:03.845Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/baked-sea-bream-new-potatoes-olives-preserved-lemons-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

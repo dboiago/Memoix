@@ -1,0 +1,102 @@
+{
+  "recipe": {
+    "name": "Beetroot and Pumpkin Soup",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Peel and cut up the beetroot and pumpkin into bite size pieces",
+      "Sauté the onions in the coconut oil on a medium heat until they become translucent. Add the pumpkin, beetroot, nutmeg, salt and cinnamon to the pan. Sauté all the veggies for 5-10 minutes",
+      "Add the stock and bring it to a boil, then remove the pan from the heat and blend the mixture with a hand blender or food processor until the soup is smooth",
+      "Return the mixture to a medium heat and cook for another 10 minutes, then serve hot"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vegetable Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pumpkin",
+        "unit": null,
+        "notes": "medium",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beetroots",
+        "unit": null,
+        "notes": "medium",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "tsp",
+        "notes": "preferably Celtic",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8c8983f552b824e75aaececff409ca7486c31afac4b4a4c6ca3dc6d9cace69d1",
+    "lineage_hash": "62f5ce7ef79f2416fa101d73ff47b7fc5813c4cead58db3b5b5983f2bcbc30e0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beetroot-pumpkin-soup-recipe",
+    "fetchedAt": "2026-08-04T00:04:02.018Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beetroot-pumpkin-soup-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

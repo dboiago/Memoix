@@ -1,0 +1,216 @@
+{
+  "recipe": {
+    "name": "Apricots, Liquorice Meringue and Mint Ice Cream",
+    "time": "3 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin with the mint ice cream as this will need at least 12 hours to rest. Pour the milk and cream into a pan and heat gently to 45°C",
+      "Stir in the sugar, dextrose, milk powder and stabiliser and bring to 85°C, then add the mint leaves. Transfer everything to a blender and blitz until smooth",
+      "Pass the hot liquid through a sieve, then allow to cool to 4°C. Cover and leave for 12 hours in the fridge, then churn in an ice cream machine before serving",
+      "For the crispy cornflakes, add the mint leaves to a small pan with the sugar syrup and place over a low heat. Allow to come to 60°C, then keep at this temperature for 45 minutes to allow the mint to fully infuse the syrup",
+      "Meanwhile, for the liquorice meringue, place the egg whites in a bowl or stand mixer and whisk, gradually adding the sugar bit by bit until fully incorporated in a glossy meringue. Finally whisk in the salt",
+      "Spread a 2mm thick layer of meringue on a silicone baking mat and sprinkle with liquorice powder",
+      "Line a tray with baking paper. Once the mint syrup has infused, coat the cornflakes in the  syrup and spread out in an even layer on the tray. Place both trays with the cornflakes and meringue in the cool oven to dry out for 2 hours, then reserve both until ready to serve",
+      "Sprinkle the sugar over the apricot halves to coat then place in a vacuum bag in a single layer. Seal and cook in the water bath for 1 hour",
+      "After this time, remove the apricots from the bag and weigh out 100g. Place in a pan over a medium heat with any juices from the bag and bring to the boil. Stir in the pectin, agar agar and lemon juice",
+      "Boil for a few minutes then remove from the heat and allow to cool. Once cool, add the remaining 400g of cooked apricots and stir to combine. Transfer to the the fridge to chill until set",
+      "When nearly ready to serve, remove the chilled apricot mixture from the fridge and place in a blender. Blitz to form a smooth gel, then transfer to a piping bag",
+      "Place a frying pan over a medium-high heat. Coat the fresh apricot quarters in a layer of icing sugar and add to the hot pan, allowing the sugar coating to caramelise and char slightly",
+      "To serve, pipe the apricot gel on to serving plates and sprinkle over the cornflakes. Add the caramelised apricot pieces and a scoop of the mint ice cream",
+      "Break the sheet of liquorice meringue into shards and arrange over the top, hiding the ice cream beneath. Serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "515",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "g",
+        "notes": "minimum 35% fat",
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dextrose",
+        "unit": "g",
+        "notes": null,
+        "amount": "24",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stabiliser",
+        "unit": "g",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar Syrup",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflakes",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Liquorice Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apricot",
+        "unit": "g",
+        "notes": "halved and de-stoned",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pectin",
+        "unit": "g",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Agar Agar",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apricots",
+        "unit": null,
+        "notes": "quartered and de-stoned",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar for Dusting",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "34afce00b8902d63fe21c245a10d196671aab1684a9c9bbff81561cb9e833a75",
+    "lineage_hash": "cd9715493a002a47bc2a5e9e874ca3dd16669ac5236e41b0fe1921a0ac17e359"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/liquorice-meringue-mint-ice-cream-recipe",
+    "fetchedAt": "2026-08-02T05:48:40.389Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/liquorice-meringue-mint-ice-cream-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

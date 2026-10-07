@@ -1,0 +1,37 @@
+{
+  "recipe": {
+    "name": "Cash and Prizes",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Old Fashioned",
+    "garnish": [
+      "Lemon Twist"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all of the ingredients except tonic water in an ice-filled glass. Stir to chill, then top with tonic water. Twist the lemon peel over the drink to express the oils, and discard.",
+      "Note: Underberg bitters are sold in tiny 20ml bottles and are available at many grocery stores and specialty retailers."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "e47fdeba0c8859dfcae65fda51c39ee4134e5e0610b46d508073964c452c3586",
+    "lineage_hash": "90962cb247a868ef4edc37e2adefda5f4293f206967d66219b8b9461e9f5cdfb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cash-and-prizes-a-rye-highball/",
+    "fetchedAt": "2026-08-03T22:03:55.024Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cash-and-prizes-a-rye-highball/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

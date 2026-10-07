@@ -1,0 +1,269 @@
+{
+  "recipe": {
+    "name": "Assiette of Lamb With Garlic Purée",
+    "time": "5 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start by preparing the lamb. Remove the loin from the bone, remove the skin, then score the fat and set aside. Alternatively, ask your butcher to prepare the lamb for you",
+      "Put 2 tablespoons of the oil into a casserole pan large enough to hold the whole middle neck. Caramelize the neck all over and put to one side",
+      "Add another tablespoon of olive oil and add the carrot, onions, celery, leek, garlic and rosemary and cook slowly until the vegetables start to caramelize",
+      "Add the tomato purée and cook for a few minutes, stirring constantly until it darkens slightly. Add the chicken stock, return the lamb neck to the pan and bring to the boil",
+      "Cover with a tight fitting lid and cook in the oven at 120°C/Gas mark 1/2 for 3-4 hours. You will be able to tell when the lamb is cooked as it will just fall off the bone",
+      "To make the garlic purée, peel the garlic and place into a big pan of lightly salted water, bring to the boil and cook until soft. Drain and return to a clean pan",
+      "Add the double cream, rosemary  and a little seasoning, bring to a gentle boil and reduce until the cream starts to thicken. Be careful as the mixture will burn easily. Remove the rosemary sprig, liquidise, pass through a fine sieve and set aside",
+      "When the neck is tender and cooked through, remove from the liquid and put to one side. Strain the braising liquid through a fine sieve into a pan and leave to settle",
+      "Remove the fat from the sauce with a ladle and reduce over a medium-high heat to sauce consistency and set aside",
+      "Remove the bones from the middle neck. Roll the meat into a long sausage shape in cling film and refrigerate until firm for at least one hour (preferably overnight)",
+      "Place the lamb tongues into a pan of cold water and bring to the boil, then place the pan into the sink and run cold water over the tongues to wash away any impurities",
+      "Put the tongues into a clean pan and cover in cold water. Add the onion, carrot, celery, leek, garlic and salt and bring slowly up to the boil",
+      "Reduce the heat and simmer for 1-1½ hours or until the skin peels off the tongues easily. When tongues are cooked, peel off the skins and refrigerate. Once cooled, cut each tongue into four lengthways and set aside",
+      "To cook the loin, slowly crisp the fat side in a frying pan in 1 tablespoon of olive oil.  Turn the loin to seal it all over, then put into an oven fat-side down and cook at 170°C/gas mark 3 for 3-5 minutes until medium-rare",
+      "To reheat the middle neck, carve into 2.5cm-thick slices, remove the cling film and place into a shallow sided pan. Add a little of the reduced lamb jus and a knob of butter",
+      "Bring to boil then place into the oven at 160°C/gas mark 2. Keep basting the meat with the sauce until glazed",
+      "Coat the tongues in a little seasoned flour and deep-fry until crisp. Remove and season with salt and pepper",
+      "To serve, place some cooked spinach onto each plate and then a piece of tongue",
+      "Slice the loin and arrange two slices neatly on the plate. Put the glazed lamb neck next to that then the garlic purée between each pile. Pour lamb jus over the neck and let it disperse around the plate"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Loin of Lune Valley Lamb",
+        "unit": null,
+        "notes": "off the bone with skin removed and fat scored",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Middle Neck of Lune Valley Lamb",
+        "unit": null,
+        "notes": "on the bone",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Sticks",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leek",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "sprigs",
+        "notes": "fresh",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Purée",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "L",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Knob of Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lamb's Tongues",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Stick",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leek",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": null,
+        "notes": "seasoned",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bulbs of Garlic",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "sprig",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Spinach Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c84477b245e5ac81496f61aff9a68720b3b84eae326851d39d4ca634acccccdb",
+    "lineage_hash": "7af4b49633aa17c03becf599a1905aebff7a2965095055f4bdd5725feccb8f3d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/assiette-of-lamb-recipe",
+    "fetchedAt": "2026-08-03T17:35:33.006Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/assiette-of-lamb-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

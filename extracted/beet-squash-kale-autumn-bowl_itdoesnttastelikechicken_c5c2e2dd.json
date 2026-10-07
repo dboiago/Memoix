@@ -1,0 +1,147 @@
+{
+  "recipe": {
+    "name": "Beet, Squash & Kale Autumn Bowl",
+    "time": "50 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "402",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Preheat your oven to 425F (220C).",
+      "Add the beets ingredients to a bowl and toss to combine, then spread on a baking sheet. Add the squash ingredients to another bowl and toss to combine, and spread on a second baking sheet. (You want to keep the veggies separate or the beets will bleed onto the squash). Roast for 30 to 35 minutes until they are golden and fork tender, stopping halfway through to give them a stir.",
+      "For the kale, add it to a bowl with them lemon, and then use your hands to massage the kale. This helps it break down and get tender. Set it aside for up to 2 hours. The longer it sits the more tender it will get.",
+      "To assemble the bowls, add some of each veggie and some rice to a bowl. Drizzle with the maple mustard dressing to taste, and sprinkle some almond slices on top. Bon Appetegan!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beets",
+        "unit": "medium",
+        "notes": "about 2 ½ Cups, peeled and chopped",
+        "amount": "4",
+        "section": "beets",
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "beets",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "beets",
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": "beets",
+        "isOptional": false
+      },
+      {
+        "name": "Acorn Squash",
+        "unit": null,
+        "notes": "peeled and cubed",
+        "amount": "1",
+        "section": "squash",
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "squash",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "squash",
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": "squash",
+        "isOptional": false
+      },
+      {
+        "name": "Kale",
+        "unit": "bunch",
+        "notes": "de-stemmed and shredded",
+        "amount": "1",
+        "section": "kale",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "½",
+        "section": "kale",
+        "isOptional": false
+      },
+      {
+        "name": "Cooked Brown Rice",
+        "unit": "C",
+        "notes": "quinoa, or couscous",
+        "amount": "4",
+        "section": "bowls",
+        "isOptional": false
+      },
+      {
+        "name": "Recipe Maple Mustard Dressing",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "bowls",
+        "isOptional": false
+      },
+      {
+        "name": "Almonds",
+        "unit": "C",
+        "notes": "sliced",
+        "amount": "¼",
+        "section": "bowls",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "614af262e693fd96467f882de81f3ca84e4e34c781733ec325fc5eb6043702b3",
+    "lineage_hash": "412d132dacdd6b65e83071f65563eba55b0a52fbabdad37fbf44e57ea39d127b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/beet-squash-kale-autumn-bowl/",
+    "fetchedAt": "2026-08-01T18:41:06.742Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/beet-squash-kale-autumn-bowl/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

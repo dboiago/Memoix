@@ -1,0 +1,171 @@
+{
+  "recipe": {
+    "name": "Cheddar Cheese Scones With Pickled Celery",
+    "time": "30 min",
+    "course": "pickles",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the cheese scones, heat the oven to 220°C/Gas mark 7. Lightly grease a baking sheet or cover the baking sheet with parchment paper",
+      "Mix together the flour and salt and rub in the butter. Stir in the cheddar cheese and then the milk to make a soft dough",
+      "Turn on to a floured work surface and knead very lightly. Pat out to a round 2cm thick. Use a 5cm cutter to stamp out rounds and place on the baking sheet. Lightly knead together the rest of the dough and stamp out more scones to use it up",
+      "Brush the tops of the scones with a little milk. Bake for 12-15 minutes until well risen and golden. Cool cheddar scones on a wire rack",
+      "For the pickled celery, place celery, white wine, vinegar, water, sugar, fennel seeds and salt into a sauce pan and bring to a simmer, uncovered, for about 2 minutes",
+      "Allow to cool and store the pickled celery in the fridge in an airtight container until ready to use",
+      "To plate, start by grilling the figs. Quarter the figs, then grill for 2-3 minutes",
+      "Cut the scones in half. On the cut side, place a spoon of celery followed by some cheese. Place the figs on top of the cheese and then add a little more cheese",
+      "Grill the scones until the cheese starts to melt. Serve with a few salad leaves, a little olive oil and more pickled celery"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Self-raising Flour",
+        "unit": "g",
+        "notes": "plus more for dusting",
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "cold and cut into small pieces, plus more for greasing",
+        "amount": "55",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cheddar",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": "plus more to brush on scones",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery",
+        "unit": "head",
+        "notes": "washed and sliced thinly",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "g",
+        "notes": "toasted",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cheddar",
+        "unit": "g",
+        "notes": "sliced",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Figs",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salad Leaves",
+        "unit": null,
+        "notes": "to plate",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": null,
+        "notes": "to drizzle",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "11afb857d43988a48f53e650fef935686c50f68ed80b14879dc451f879fe1966",
+    "lineage_hash": "c58fcd96a3840922b29d64b957a9bd519e6f19869e9582471435a4e8e79bdac8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cheddar-cheese-scones-recipe-pickled-celery",
+    "fetchedAt": "2026-08-03T15:58:19.414Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cheddar-cheese-scones-recipe-pickled-celery",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

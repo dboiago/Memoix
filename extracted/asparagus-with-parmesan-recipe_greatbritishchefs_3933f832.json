@@ -1,0 +1,214 @@
+{
+  "recipe": {
+    "name": "Asparagus with Parmesan",
+    "time": "1 hr 30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Peel and chop the asparagus, retaining the trimmings. Blanch the asparagus tips in salted water and refresh in iced water",
+      "Push the asparagus trimmings through a juicer so you are left with just the juice",
+      "Thicken the asparagus juice with the xanthan gum using a stick blender",
+      "Season the juice with the salt, sugar and Chardonnay vinegar. Pass through a fine sieve and set to one side",
+      "For the Parmesan bread, dissolve the yeast in a little water and add in the flour, salt, sugar, water and olive oil.  Mix together to form a smooth but dry dough",
+      "Place in a bowl and put cling film over the top. Leave to prove until doubled in size",
+      "Roll out the dough using the pasta machine to 1-2mm and brush with oil. Sprinkle with grated Parmesan",
+      "Bake in the oven for 8-10 minutes until golden brown, sprinkle with some olive powder and allow to cool on the tray. Snap the bread to required size when plating",
+      "To make the Parmesan snow, bring the water to the boil and soak the gelatine in cold water for 5 minutes. Add the Parmesan, salt, a pinch of pepper, lemon juice and the gelatine to the boiling water and then blitz with the stick blender",
+      "Pass through a fine sieve, chill and add the seasoning",
+      "Fill the ice cream machine and churn until it reaches a 'snow' consistency",
+      "Plate the asparagus with a chip of the bread and sprinkle both with Parmesan snow and hazelnuts"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Asparagus Spears",
+        "unit": null,
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Xanthan Gum",
+        "unit": "g",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chardonnay Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan",
+        "unit": "g",
+        "notes": "freshly grated",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yeast",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "420",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "to brush",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Olive Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan",
+        "unit": "g",
+        "notes": "freshly grated",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hazelnuts",
+        "unit": "Tbsp",
+        "notes": "roughly chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d6d5e5230a3c330851435b320e31a6812d483fadeee1d620bff464e009cde7a7",
+    "lineage_hash": "9a0954da8bf70957943ff82298d5da3e4f33f86e9792d0f90069b192540179bc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/asparagus-with-parmesan-snow-recipe",
+    "fetchedAt": "2026-08-03T19:13:47.264Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/asparagus-with-parmesan-snow-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,131 @@
+{
+  "recipe": {
+    "name": "Cheesy Cornbread In A Skillet",
+    "time": "25 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "240",
+      "carbohydrateContent": "32",
+      "fatContent": "10",
+      "proteinContent": "7"
+    },
+    "directions": [
+      "Preheat to 375 F.",
+      "Lightly grease a 10-inch oven-safe skillet.",
+      "Combine cornmeal, flour, baking powder, and salt in a large bowl. Combine milk, eggs, and oil in a medium bowl. Add to cornmeal mixture; stir just until combined. Stir in cheese, corn, and peppers. Pour batter into prepared skillet.",
+      "Bake for 20 minutes on the bottom rack and an additional 5 minutes on the top rack or until wooden pick inserted in center comes out clean. Cool in pan. Serve warm with butter and a drizzle of honey."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Yellow Corn Meal",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Evaporated Lowfat 2% Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "lightly beaten",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oaxaca Cheese",
+        "unit": "C",
+        "notes": "shredded",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Kernel Corn",
+        "unit": "C",
+        "notes": "drained",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mini Sweet Peppers",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "258574504897f98e13540a759930564338bc454b3322a247671df08b50c03cea",
+    "lineage_hash": "b2b4b7090f88041b8e264d39ed45e5eae28f48421c773a1fa01fb1c1d03fb6ae"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/cheesy-cornbread-skillet/",
+    "fetchedAt": "2026-08-02T00:14:43.083Z"
+  },
+  "rawSource": "https://muybuenoblog.com/cheesy-cornbread-skillet/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

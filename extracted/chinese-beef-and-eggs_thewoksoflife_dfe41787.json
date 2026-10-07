@@ -1,0 +1,171 @@
+{
+  "recipe": {
+    "name": "Chinese Beef and Eggs",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "326",
+      "carbohydrateContent": "2",
+      "fatContent": "26",
+      "proteinContent": "21"
+    },
+    "directions": [
+      "In a medium bowl, add the sliced beef along with the marinade ingredients: water, salt, baking soda, cornstarch, sesame oil, neutral oil, and oyster sauce. Mix well and marinate for 15-30 minutes.",
+      "Meanwhile, beat the eggs with white pepper, salt, sesame oil, and Shaoxing wine. Mix the cornstarch with 2 tablespoons of water until combined. Add the cornstarch slurry to the beaten eggs along with the scallion. Beat again to incorporate everything together, and you are ready to cook.",
+      "Place your wok or frying pan over medium-high heat until it starts to smoke (or just until it’s hot, if using a nonstick pan). Add the oil, and cook the beef in a single layer for 20 seconds on each side.",
+      "Beat the eggs one more time, and then pour evenly over the beef and reduce the heat to medium. With your spatula, gently push the eggs across the wok a few times—you don&#39;t want the eggs to brown. Once you see no more runny eggs, the dish is done. Dish it up immediately and serve!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Flank Steak",
+        "unit": "oz",
+        "notes": "thinly sliced against the grain into 2- to 3-inch/5-8cm pieces",
+        "amount": "6-8",
+        "section": "beef and marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "beef and marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": "beef and marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": "beef and marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "beef and marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "beef and marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Neutral Oil",
+        "unit": "tsp",
+        "notes": "such as canola, vegetable, or avocado oil",
+        "amount": "1",
+        "section": "beef and marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "beef and marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "6",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": "mixed into a slurry with 2 tablespoons water",
+        "amount": "2",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Scallion",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Neutral Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": "rest of the dish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "cdda0c99753c4bebefde85da7acf3eca71d29caa88d75902b2b932450ca554bb",
+    "lineage_hash": "d83d22b73adf487f2e837e3fc4849e5792d24e11480b086d5a9a8545e4a4a74e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/chinese-beef-and-eggs/",
+    "fetchedAt": "2026-08-02T17:06:51.934Z"
+  },
+  "rawSource": "https://thewoksoflife.com/chinese-beef-and-eggs/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

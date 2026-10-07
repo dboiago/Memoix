@@ -1,0 +1,35 @@
+{
+  "recipe": {
+    "name": "Champagne On Mars",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake the first 4 ingredients with ice, then double strain into a chilled glass. Top with sparkling wine, then garnish.",
+      "Hibiscus-Infused Galliano: In a glass jar, combine 1 oz. of dried hibiscus with 10 oz. of Galliano. Cover the jar and let the mixture infuse for 6 to 8 hours, to taste. Strain out the solids and bottle for use."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "58c8352bda5ea50285fff1e6914111a45e01fd01ef36bc361b49342dfc49e02e",
+    "lineage_hash": "ec32cbfccf7fa0c04e3202889d08c6393d2f228e773403b0ee349600cff8f4a1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/champagne-on-mars-from-better-luck-tomorrow/",
+    "fetchedAt": "2026-08-04T01:53:24.894Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/champagne-on-mars-from-better-luck-tomorrow/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

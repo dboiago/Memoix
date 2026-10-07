@@ -1,0 +1,110 @@
+{
+  "recipe": {
+    "name": "Chestnut-Stuffed Wild Rice Cabbage Rolls",
+    "time": "1 hr",
+    "course": "sides",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start by blanching the cabbage leaves. Bring a large pot of salted water to a pot and blanch cabbage leaves for 2–3 minutes until soft. Drain and set aside",
+      "Next, make the filling. Sauté the onion and garlic in the olive oil. Add the wild rice, chestnuts, soy sauce and parsley. Season to taste with salt and pepper",
+      "Place the filling in the centre of each cabbage leaf, roll tightly and place seam-side down in a baking dish",
+      "Cover with foil and bake for 20 minutes until heated through. To cook, serve topped with fresh parsley leaves, salt and pepper"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Savoy Cabbage Leaves",
+        "unit": "large",
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wild Rice",
+        "unit": "g",
+        "notes": "cooked",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooked Chestnuts",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "Tbsp",
+        "notes": "fresh, chopped, plus extra for garnish",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0580eff3fcd205da0c26f101ef32badced32f9ec026a862c6bb55c4433e7a9bf",
+    "lineage_hash": "11f6d24561154fb7077936fb64b989331bb13a95b80c1d04d006739bc4497e39"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chestnut-stuffed-wild-rice-cabbage-rolls-recipe",
+    "fetchedAt": "2026-08-02T07:18:59.333Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chestnut-stuffed-wild-rice-cabbage-rolls-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

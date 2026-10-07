@@ -1,0 +1,52 @@
+{
+  "recipe": {
+    "name": "Black Pecorino Cheese Wafers",
+    "time": "10 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix the Pecorino cheese with the black rice flour; place a spoonful of this mixture in a nonstick pan to form a disc.",
+      "Cook over low heat for one minute, turn it with a spatula and finish cooking until you obtain a crispy wafer. Repeat to make around a dozen wafers.&nbsp;"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pecorino Cheese",
+        "unit": "oz",
+        "notes": "grated",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Rice Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "46b5f917da2e468e72c97e727012401e9a2330bbe8827897f1ae6bae1059f681",
+    "lineage_hash": "8c750de7ddad4bc8e05c030dd4baef4461d7fe90fb4b76d1543b53b4bd2dd5a9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/appetizers/black-pecorino-cheese-wafers",
+    "fetchedAt": "2026-08-03T03:28:57.538Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/appetizers/black-pecorino-cheese-wafers",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

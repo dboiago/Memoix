@@ -1,0 +1,87 @@
+{
+  "recipe": {
+    "name": "Broccolini Sesame Dressing",
+    "time": "20 min",
+    "course": "salad",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Separate the green part of the broccolini from the bottom stalks. If the stalk is not too thick, half them lengthwise. If the stalk is rather thick, quarter them lengthwise. Wash and drain the greens and the stalks.",
+      "Bring a large pot of lightly salted water to a rolling boil. Add in the greens and the stalks, blanch for 2 minutes. Remove the greens first, if the stalks seems tough, feel free to cook for another 2 minutes.",
+      "Rinse the greens and stalks in cold water, and soak in a large mixing bowl filled with ice cubes and cold water for 10 minutes.",
+      "Gently squeeze the vegetables and cut into bite size pieces. Arrange in a plate.",
+      "To make the dressing, coarsely grind toasted sesame seeds. Transfer to a bowl and mix with soy sauce, sugar, and dashi stock."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gram (1 Lb.) Broccolini",
+        "unit": null,
+        "notes": null,
+        "amount": "450",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Goma Ae (sesame Dressing)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": "C",
+        "notes": "toasted",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dashi Stock",
+        "unit": "ml",
+        "notes": "6 tablespoon + 1 teaspoon",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5d8933e30cb567e59600a3ef02ea8d054905db5d00cda7de1225897e753be991",
+    "lineage_hash": "ba3633d78c3e9c68d2dd13b3c3d165038c61366f8d45af527613a56d3141d94c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/broccolini-sesame-dressing.html",
+    "fetchedAt": "2026-08-02T02:18:28.483Z"
+  },
+  "rawSource": "https://dailycookingquest.com/broccolini-sesame-dressing.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

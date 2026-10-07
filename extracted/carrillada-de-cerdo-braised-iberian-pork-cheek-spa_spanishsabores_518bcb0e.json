@@ -1,0 +1,191 @@
+{
+  "recipe": {
+    "name": "Carrillada de Cerdo (Braised Iberian Pork Cheek)",
+    "time": "3 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "ES",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "2085",
+      "carbohydrateContent": "273.82",
+      "fatContent": "67.73",
+      "proteinContent": "70.35"
+    },
+    "directions": [
+      "Mash the garlic in a mortar and pestle, then add the thyme, honey, parsley, and water and continue mixing to create a paste. (image 1)",
+      "_Pat the pork cheeks dry with paper towels_ and cover them with the paste. Season with salt and pepper and let the meat marinate in the fridge for at least 1 hour before cooking. (image 2)",
+      "Dredge the pork cheeks in flour, shaking off any excess to leave a light coating. (image 3)",
+      "Sear the meat in an oiled skillet over medium-high heat until all sides are browned, _about 30 seconds per side._ Set aside on a plate. (image 4)",
+      "Sauté the onions, peppers, shallots, and carrots in the reserved oil from the meat until translucent, _about 5 minutes._ (image 5)",
+      "Add the seared pork cheeks, the port wine, and the bay leaf and simmer until the liquid is reduced by half, about 15 minutes. _Stir occasionally_ to prevent sticking. (image 6)",
+      "Add the beef stock and simmer over low heat until the pork is tender, about 1 ½ hours. _Add the potato and apple chunks_ about 20 minutes before the meat is done and cook until fork tender. (image 7)",
+      "Remove from the heat, serve the carrillada hot, and enjoy! (image 8)"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "2",
+        "section": "Marinade Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Marinade Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Marinade Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Parsley Preferably Fresh",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Marinade Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinade Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Iberian Pork Cheeks About 12",
+        "unit": "lb",
+        "notes": null,
+        "amount": "2",
+        "section": "Pork Cheeks",
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Pork Cheeks",
+        "isOptional": false
+      },
+      {
+        "name": "Onion Finely Diced",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Pork Cheeks",
+        "isOptional": false
+      },
+      {
+        "name": "Shallots Halved",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": "Pork Cheeks",
+        "isOptional": false
+      },
+      {
+        "name": "Green Apple Diced",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Pork Cheeks",
+        "isOptional": false
+      },
+      {
+        "name": "Carrots Sliced",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Pork Cheeks",
+        "isOptional": false
+      },
+      {
+        "name": "Red Pepper Diced",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Pork Cheeks",
+        "isOptional": false
+      },
+      {
+        "name": "Port Wine a Very Sweet Dessert Wine",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "Pork Cheeks",
+        "isOptional": false
+      },
+      {
+        "name": "Fingerling Potatoes Peeled and Cut in Chunks",
+        "unit": null,
+        "notes": null,
+        "amount": "24",
+        "section": "Pork Cheeks",
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Pork Cheeks",
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Pork Cheeks",
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": "Pork Cheeks",
+        "isOptional": false
+      },
+      {
+        "name": "Beef Stock",
+        "unit": "C",
+        "notes": null,
+        "amount": "3",
+        "section": "Pork Cheeks",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "55eba01e2eadaed88158da1414f43cbf486a71aabb4220d429bcc829c3095cef",
+    "lineage_hash": "62a9ed9457b7f10c27e4072201b965a1414811fa867bedb1f3bc68aab8e2c4fe"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://spanishsabores.com/recipe-carrillada-braised-iberian-pork-cheek-with-port-wine-and-honey/",
+    "fetchedAt": "2026-08-02T10:39:01.252Z"
+  },
+  "rawSource": "https://spanishsabores.com/recipe-carrillada-braised-iberian-pork-cheek-with-port-wine-and-honey/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

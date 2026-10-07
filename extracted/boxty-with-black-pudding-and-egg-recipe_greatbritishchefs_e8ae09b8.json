@@ -1,0 +1,96 @@
+{
+  "recipe": {
+    "name": "Boxty with Black Pudding and Egg",
+    "time": "30 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Grate the raw potato into a clean cloth or tea towel and wring out as much of the water as you can. Some recipes suggest that you collect the starch that settles in the strained potato water and add this to the mix, but this is not essential",
+      "Mix the cooked mashed potato into the raw potato and break down with a fork. Sift over the flour and baking powder and mix well",
+      "Pour in the buttermilk and two tablespoons of melted butter then stir to form a batter of dropping consistency",
+      "Heat a dry skillet or frying pan until very hot, then spoon in the batter a dessertspoonful at a time. Spread the mix lightly as it goes into the pan so that it is no more than 1cm thick",
+      "As soon as bubbles start to appear, flip the boxty over to cook on the other side. You need to work quickly and keep a close eye. The boxty will puff up lightly in the pan and are cooked when both sides are golden brown",
+      "Serve with fried black pudding and poached eggs for a savoury option, or douse in maple syrup and top with crispy bacon for something sweeter"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Potatoes",
+        "unit": "g",
+        "notes": "from one medium peeled potato, grated",
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mashed Potatoes",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": "sifted",
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "ml",
+        "notes": "or milk soured with lemon juice",
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "melted",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f070afdcf680c58fc3c12b52d0c2d8dff7548db53de8ba93e6ab3534367ddddd",
+    "lineage_hash": "a3f7da2def8ef8e4b5c9b8bbd67f93578235164638ce7ad889ea1ff258b01f39"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/boxty-recipe",
+    "fetchedAt": "2026-08-03T05:19:48.067Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/boxty-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

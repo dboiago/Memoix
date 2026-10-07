@@ -1,0 +1,247 @@
+{
+  "recipe": {
+    "name": "Black Sesame Tantanmen (Vegan)",
+    "time": "20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Vegetables & garnishes: Bring a pot of water to a boil for bok choy. Once boiling, add the bok choy and parboil for 1-2 minutes or until vibrant green. Remove the bok choy and rinse with cold water. While the water is still boiling, add the mung bean sprouts and cook for 20-30 seconds. Strain, rinse in cold water and set aside. While this is going, slice the scallions and grind the sesame seeds and peanuts.",
+      "Add soy milk and black sesame paste to a pot. Use a whisk to dissolve the paste. Turn on the heat to medium, then add in the water and bouillon, whisking until dissolved. Once broth starts to bubble, reduce heat to low. Stir in the soy sauce, rice vinegar, ra-yu, sugar, pepper and salt. Taste and adjust seasoning by adding more salt or pepper. Leave on the stove over very low heat to keep it warm. Add water to a pot for the noodles and bring to a boil.",
+      "Add garlic and ginger to a pan over medium heat and fry for 30-60 seconds. Add in the vegan grounds and use a wooden spoon to break up the grounds. Add sake, soy sauce and sugar and mix. Then add the doubanjiang and miso paste and fry until well combined. Then drizzle in the sesame oil to finish cooking. Set aside.",
+      "Once water is boiling, cook the noodles following manufacturer&#8217;s directions (minus 20 seconds). Strain and add to serving bowl.",
+      "Pour soup on top of the noodles. Add the vegan grounds on top along with bok choy and mung bean sprouts. Garnish with sesame seeds, peanuts, scallions, scorched garlic oil and chili oil. Serve immediently and enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Garlic",
+        "unit": "pc",
+        "notes": "5g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "pc",
+        "notes": "8g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegan Grounds",
+        "unit": "oz",
+        "notes": "168g",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sake",
+        "unit": "Tbsp",
+        "notes": "15g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "tsp",
+        "notes": "10ml, optional",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": "4g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Doubanjiang",
+        "unit": "tsp",
+        "notes": "5g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Miso Paste",
+        "unit": "Tbsp",
+        "notes": "17g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": "10ml",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Milk",
+        "unit": "C",
+        "notes": "160ml",
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Sesame Paste",
+        "unit": "Tbsp",
+        "notes": "32g",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "360ml",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegan &#8216;chicken&#8217; Bouillon",
+        "unit": "tsp",
+        "notes": "10g",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "15ml",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Vinegar",
+        "unit": "tsp",
+        "notes": "10ml",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ra-yu",
+        "unit": "Tbsp",
+        "notes": "15ml",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": "5g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Servings Ramen Noodles",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bean Sprouts",
+        "unit": "C",
+        "notes": "80g",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bok Choy",
+        "unit": null,
+        "notes": "90g, quartered",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "26g, sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Garlic Oil",
+        "unit": "Tbsp",
+        "notes": "32g",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Sesame Seeds",
+        "unit": "Tbsp",
+        "notes": "12g, grinded",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanuts",
+        "unit": "Tbsp",
+        "notes": "10g, chopped or grinded",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0c2cd8fcbca190948457eb535816525c40a88c8e9859ea0adf21fc3a3f2db107",
+    "lineage_hash": "505b121d9e2c97b89680748a79af6a173d3fcf0c840c15df92f4c90313206821"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.okonomikitchen.com/black-sesame-tantanmen/",
+    "fetchedAt": "2026-09-25T22:51:10.029Z"
+  },
+  "rawSource": "https://www.okonomikitchen.com/black-sesame-tantanmen/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

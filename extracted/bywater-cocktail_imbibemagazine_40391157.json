@@ -1,0 +1,37 @@
+{
+  "recipe": {
+    "name": "Bywater Cocktail",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [
+      "Orange Peel Twist",
+      "Cherry"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Stir all of the ingredients with ice, then strain into a chilled glass. Twist a piece of orange peel over the drink to express its oils and discard, then garnish with a cherry."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "31997dd5a46d44db562cddf8b8514bf3f76f79b3d74bb27002ce5d57164d938c",
+    "lineage_hash": "fa35d77fe83eabc30d74c6a0fb42cb4b767d7b7ddcfbe5e5d1d58a29888a36d0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bywater-cocktail-recipe/",
+    "fetchedAt": "2026-08-03T14:35:36.399Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bywater-cocktail-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

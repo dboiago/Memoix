@@ -1,0 +1,169 @@
+{
+  "recipe": {
+    "name": "Beef and Onion Pie",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To prepare the vegetables, peel and roughly dice 2 of the carrots and peel and thinly slice the remaining. These will be used at separate times in the recipe",
+      "Wash and dice the leek and bruise the garlic cloves",
+      "Place a pan over a medium heat and add a drizzle of vegetable oil. Once the oil is hot, add the onions to the pan and leave to caramelise for 20 minutes, stirring every few minutes",
+      "Meanwhile, place a separate pan over a high heat and add a dash of vegetable oil. Add the carrot slices (reserving the diced carrot) to the pan. Season with salt and add the star anise",
+      "Cook for 2 minutes, then turn down the heat and continue to cook for approximately 10 minutes, stirring regularly until the carrots just start to soften, remove and set aside",
+      "For the mash, place the potato chunks in a saucepan of cold salted water, cover and bring to the boil. Once boiling, continue to cook for approximately 20 minutes until tender",
+      "In a separate saucepan, bring the milk and butter just to the boil",
+      "Drain the potatoes in a colander, then stand the colander over the saucepan for 2-3 minutes - so the potatoes steam in their own heat",
+      "Mash the potatoes with a masher then fold in the hot milk and butter and beat well. Season with a pinch of salt and pepper",
+      "Spoon the mash into a piping bag with a 1cm round nozzle (if you have one) and set aside at room temperature until required",
+      "Add a splash of vegetable oil to a very large heavy-based casserole dish and place over a medium-high heat until very hot",
+      "Lightly season the mince with salt and pepper. Add to the pan and cook until lightly coloured all over, This will take 5-10 minutes, as the mince will release moisture first and brown afterwards",
+      "Then add the diced carrots, leeks, peppercorns, garlic and sprig of thyme. Cook for 5 minutes, add to the stock and simmer for 15-20 minutes. Fold in the soft carrot slices and caramelised onions. Remove from the heat",
+      "Divide the mixture between 4 individual cast iron or earthenware dishes. Pipe or spoon the mash on top as decoratively as you like. The pie can also be done in 1 large family-style dish",
+      "Place the dishes in the oven and cook for 12 minutes or until the mash is golden. Serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Lean Beef Mince",
+        "unit": "g",
+        "notes": null,
+        "amount": "800",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leek",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": null,
+        "notes": "peeled and thinly sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "King Edward Potatoes",
+        "unit": null,
+        "notes": "peeled and cut into chunks",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Skimmed Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "pinches",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "pinches",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "415605666a18be8540fdef9021ba0b086088944f95f0963eaa40f5c6172b4d86",
+    "lineage_hash": "47727d5badec8b093f5862d46617cd8827f042797bf504aeb563add89e1aefe4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beef-and-onion-pie-recipe",
+    "fetchedAt": "2026-08-03T18:36:55.574Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beef-and-onion-pie-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

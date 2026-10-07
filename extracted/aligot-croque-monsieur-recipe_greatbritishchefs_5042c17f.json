@@ -1,0 +1,159 @@
+{
+  "recipe": {
+    "name": "Aligot Croque Monsieur",
+    "time": "2 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by preparing the aligot. Place the diced potatoes into a pot of cold, salted water and bring up to a boil. Cook until the potatoes are fork tender – this should take around 15 minutes",
+      "Drain the potatoes and return them to the pot, then mash them until smooth&nbsp;",
+      "Over a low heat, gradually add the butter to the potatoes whilst stirring",
+      "Warm the milk in a separate pan and gradually add it into the potato mix, stirring until fully incorporated&nbsp;",
+      "Stir in the grated mozzarella and Gruyère cheese. Keep stirring until the mix is smooth, elastic and stretchy. Season to taste with salt and pepper",
+      "Next, prepare the béchamel sauce. In a small saucepan melt down the butter over a medium heat before adding in the flour and stirring to form a roux",
+      "Gradually whisk in the milk, making sure there are no lumps",
+      "Cook the sauce over a medium heat, stirring frequently, until it thickens enough to coat the back of a spoon",
+      "Season with nutmeg, salt and pepper then set aside",
+      "Lightly toast the bread on either side until golden, then spread a thin layer of Dijon mustard on both of the slices",
+      "Spread a generous layer of the aligot over the mustard, then place a slice of ham over the top before covering with another slice of toasted bread",
+      "Spread a thin layer of béchamel over each of the sandwiches, then sprinkle Gruyère directly over the béchamel",
+      "Bake each of the sandwiches on a baking tray lined with parchment paper for around 10 minutes, or until the cheese is golden brown and melted"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "White Bread",
+        "unit": "slices",
+        "notes": "sliced around 1 cm thick",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ham",
+        "unit": "slices",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gruyère",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Waxy Potatoes",
+        "unit": "g",
+        "notes": "such as Yukon golds, peeled and diced",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "diced",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Low-moisture Mozzarella",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gruyère",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Nutmeg",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "cc258df4ddd46b40f175555d59fa83f7d8f2c114aa3244657d9be215adebf765",
+    "lineage_hash": "1be21be387b2eb0150c9833b729d40b16f8b288fd8a36bfdd8daf9297bddde44"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/aligot-croque-monsieur-recipe",
+    "fetchedAt": "2026-08-02T08:00:30.509Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/aligot-croque-monsieur-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

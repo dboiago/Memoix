@@ -1,0 +1,141 @@
+{
+  "recipe": {
+    "name": "Chicken Feet Salad",
+    "time": "12 hr 14 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "522",
+      "carbohydrateContent": "25",
+      "fatContent": "27",
+      "proteinContent": "41"
+    },
+    "directions": [
+      "Cut the claws and then cut each chicken foot into 2 pieces.  Smaller pieces mean better flavors in a shorter time.",
+      "In a deep pot with enough cold water, add chicken feet, cooking wine, and rice vinegar. Bring the content to a boil and then cook for 8 minutes (depending on how soft you want the chicken feet to be).",
+      "Once cooked, transfer out and clean with warm water (removing extra colloid) . Then pour in cold water to soak the chicken feet for 20 minutes. Soaking with cold water makes the chicken feet&#39; skin more elastic.",
+      "Prepare all the seasonings and herbs: add lemon pieces, garlic, ginger, chili peppers, coriander steam, and coriander.",
+      "Mix in light soy sauce, vinegar, and sugar. Make a message with the chicken feet for 1 or 2 minutes. Let the sauce combine completely.",
+      "Cover with plastic wrapper and set aside in the fridge overnight."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Feet",
+        "unit": null,
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Cooking Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Rice Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Vinegar",
+        "unit": "C",
+        "notes": "or black vinegar",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "around 200g, smaller ones",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "smashed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thai Chili Pepper",
+        "unit": null,
+        "notes": "fresh, one red and one green| cut into small circles. This can be adjusted by persoanl perference",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a0b5dff568cb9799479e3a6df156c000cd7613671a1a2139533516006b489305",
+    "lineage_hash": "bb5126af6b4ccfb0c93b0d0f599742534c48f6ec3415a7542f7ef37da8e5d0e9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/chicken-feet-salad/",
+    "fetchedAt": "2026-08-02T04:34:23.177Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/chicken-feet-salad/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

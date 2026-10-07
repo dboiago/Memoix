@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "A La Louisiane",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Stir all of the ingredients in a mixing glass with ice. Strain into a chilled coupe and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "f61b91f413ff1a474edca0d5438ba5a53dc1ea72af695831857aa843388e3211",
+    "lineage_hash": "ec3627c87144d4415fd0c4aab7bdaf255283a5b6ddb833dc5e5703c57f87a746"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/a-la-louisiane/",
+    "fetchedAt": "2026-08-03T23:35:39.009Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/a-la-louisiane/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

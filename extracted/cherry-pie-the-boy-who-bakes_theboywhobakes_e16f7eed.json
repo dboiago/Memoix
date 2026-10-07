@@ -1,0 +1,119 @@
+{
+  "recipe": {
+    "name": "Cherry Pie",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the flour and salt into a large bowl and mix together.",
+      "Add the butter and toss in the flour to coat. Using a pastry blender or two knives cut in the butter until it is mostly in pea sized pieces, if the butter gets much smaller the pastry won’t be flaky, so err on the side of caution.",
+      "Drizzle over the vinegar and half the water and using a knife or fork stir together. If the mixture looks dry keep adding water and stirring together until all of the flour looks moistened.",
+      "Tip the shaggy mass onto the table and gently bring together into a ball. Cut the dough into two portions (one slightly bigger than the other) and wrap in clingfilm, pressing into flat disks. Allow the pastry to chill for at least an hour and up to three days (can be frozen for up to a month).",
+      "Whilst the pastry is chilling you can make the filling, pit the cherries if using fresh (but don’t discard the pits pop them in the freezer – more on that soon) and in a small bowl mix together the arrowroot and the sugar. Pour the sugar mixture over the cherries and mix together to combine, if using add the almond extract too. Set this aside whilst the pastry chills.",
+      "When ready to bake preheat the oven to 220C (200C fan).",
+      "Remove the larger piece of pastry from the fridge and on a lightly floured surface, roll out into a 12 inch round. Roll the pastry over your rolling pin and carefully drape into a 9-inch deep dish pie tin (I prefer pyrex). Trim the overhang so that there is about an inch or so left.",
+      "Remove the second piece of dough from the fridge and as before roll into a 12 inch round, but this time do this on top of a piece of parchment paper. Use a pizza cutter or sharp knife cut the dough into equal sized strips, a couple centimetres wide. Slide the parchment onto a baking tray and chill both the strips and the pie in the fridge for 15 minutes.",
+      "When ready to bake remove the pastry from the fridge and pour the filling into the pie pan.",
+      "To create the lattice effect lay six strips onto the pie, leaving a little gap between each piece. Fold back every other strip and then lay the longest remaining strip parallel across the unfolded pieces. Unfold the strips back over this parallel strip. Take the strips that are now underneath this parallel strip and fold these back, adding another parallel strip – repeating this process until you reach the edge of the pie. Now repeat this again on the other side of the pie, until all of the pie is covered with the lattice strips.",
+      "Trim the strips so that they finish on the edge of the pie tin, then roll the pastry overhang so that it sits on the edge of the pie tin (the lattice strips should be rolled up into the overhang, securing them in place). Crimp the pie as you prefer. Brush the pastry with a beaten egg and sprinkle liberally with demerara or sanding sugar.",
+      "Place the finished pie onto a baking tray and bake in the preheated oven for 15 minutes before turning down the temperature to 200C (180C fan) and baking for a further 45-60 minutes or until the pastry is golden and the filling is bubbling.",
+      "Remove from the heat an allow the pie to cool for at least 4 hours before serving – the filling sets more as it cools so you risk a wet filling if you serve it any earlier."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": "Shortcrust Pastry",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Shortcrust Pastry",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "diced and well chilled",
+        "amount": "200",
+        "section": "Shortcrust Pastry",
+        "isOptional": false
+      },
+      {
+        "name": "White Vinegar",
+        "unit": "tsp",
+        "notes": "any pale vinegar will do",
+        "amount": "3",
+        "section": "Shortcrust Pastry",
+        "isOptional": false
+      },
+      {
+        "name": "Ice Cold Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "8-9",
+        "section": "Shortcrust Pastry",
+        "isOptional": false
+      },
+      {
+        "name": "Sweet or Sour Cherries",
+        "unit": "g",
+        "notes": "pitted",
+        "amount": "800",
+        "section": "Cherry Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": "Cherry Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Arrowroot",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2½",
+        "section": "Cherry Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Almond Extract",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "1",
+        "section": "Cherry Filling",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ae9d7a307da07057c49bd85b5edb507bc91756637532628314fbab6cad22e291",
+    "lineage_hash": "d2a9918c3c34f88abc47ae6a7a3c6c989051fa21ecc057ffccba22c2fc78e834"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.theboywhobakes.co.uk/recipes/2014/12/23/cherry-pie",
+    "fetchedAt": "2026-08-01T22:05:08.934Z"
+  },
+  "rawSource": "https://www.theboywhobakes.co.uk/recipes/2014/12/23/cherry-pie",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

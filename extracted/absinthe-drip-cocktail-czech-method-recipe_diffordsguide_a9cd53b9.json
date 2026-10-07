@@ -1,0 +1,64 @@
+{
+  "recipe": {
+    "name": "Absinthe Drip Cocktail (Czech Method)",
+    "time": "2 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "CZ",
+    "glass": "Absinthe Glass or Old-fashioned",
+    "garnish": [],
+    "subcategory": "Coffee",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Flames and alcohol are a dangerous combination!",
+      "Place a sugar cube on a slotted absinthe spoon resting across the top of the glass",
+      "POUR the absinthe over the sugar cube into the glass",
+      "Light the absinthe-soaked cube and leave it to burn and caramelise",
+      "Using a bottle of chilled mineral water with a small hole in the cap, DRIP water over what&apos;s left of the sugar so it dissolves and drips into the glass",
+      "Add ice, stir, and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Absinthe",
+        "unit": "ml",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilled Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cube Superfine/caster Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6af705e6846f488e63a6cddfb25b4c02aa7b10c3c9152995c4fd6eaefb05d98b",
+    "lineage_hash": "0ee76152a1c097e8fc584b180bacc508823878b0acb1a75f202a70deb7788549"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/508/absinthe-drip-cocktail-czech-method",
+    "fetchedAt": "2026-08-02T05:54:50.700Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/508/absinthe-drip-cocktail-czech-method",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

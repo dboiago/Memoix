@@ -1,0 +1,192 @@
+{
+  "recipe": {
+    "name": "Beef Pot Roast",
+    "time": "5 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Use a paper towel or a tissue to pat the beef chuck dry on all sides.",
+      "Truss the roast to help it retain its shape. Follow this trussing tutorial video to learn how to do it.",
+      "Season the beef chuck generously with salt and roughly ground pepper on all sides. Rub it in. Rest overnight in the fridge. Do not cover; let the beef dry out for better browning later on.",
+      "Thinly slice the celery, cut carrots on the bias, thinly slice onions, and turnips into wedges, and halve the potatoes. Slice garlic.",
+      "Tie the bay leaves and the sprigs of the rosemary and thyme together with a string to form a _bouquet garni_.",
+      "Heat a heavy roasting pot or Dutch oven. Add vegetable oil. Wait until it's smoking hot (250°C). If pan and oil are not fully hot, the meat might stick. Brown the trussed roast on high heat. Set aside.",
+      "In the same oil, fry onions, celery and garlic until they are translucent. Add flour to help thicken the gravy. Cook off the raw flower for 2 minutes. Add Worcestershire sauce, red wine vinegar, and chilli flakes. Add the bouquet garni and peppercorns. Pour hot water. Set the roast inside the pan. The meat needs to now slow-cook until it is tender.",
+      "Cover with a lid, leaving it partly open. If covered fully, the liquid will quickly reach its boiling point, and the meat will start to lose moisture and become dry. Cook on low heat for 3 hours. Turn every 30 minutes for even cooking.",
+      "In the last 30 minutes, add the potatoes, carrots, turnips, and mushrooms and continue cooking. Check whether the roast is done by inserting a skewer.",
+      "The meat is very delicate; if you cut into the roast now, it will fall apart. To get clean slices, the meat must cool down. Cool it down and put it in the fridge overnight. This will allow the meat to reabsorb some of the liquid and become juicier.",
+      "Next day, when you take it out of the fridge, the fat will have set. Scoop it out and discard, or store in a jar in the freezer. Remove the roast from the liquid.",
+      "Bring the liquid back to a boil. Continue reducing the liquid until it thickens to form the gravy.",
+      "Once reduced, taste the gravy for salt. Add freshly ground pepper and chopped parsley. To thicken the gravy, mix in 1 tsp of flour, and bubble for 2 minutes.",
+      "Plate the roasted beef and vegetables with a side of mashed potatoes, and a spoonful of mustard. Pour the gravy on top of the vegetables and the meat."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef Chuck",
+        "unit": "kg",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": "for seasoning the beef chuck",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": "g",
+        "notes": "for seasoning the beef chuck",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "g",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turnips",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mushrooms",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Worcestershire Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Flakes",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "800",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "tsp",
+        "notes": "for thickening the gravy",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "11183779694c8732bbac804f5198f7c1c7b2ecc690895e7774579c73138020e8",
+    "lineage_hash": "f59d6565e21b4a607c03b89bc795caff52c83206d19e1b22f7a8226a81bcee20"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.bongeats.com/recipe/beef-pot-roast",
+    "fetchedAt": "2026-08-01T17:00:31.270Z"
+  },
+  "rawSource": "https://www.bongeats.com/recipe/beef-pot-roast",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

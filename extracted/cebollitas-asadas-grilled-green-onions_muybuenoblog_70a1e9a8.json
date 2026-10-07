@@ -1,0 +1,83 @@
+{
+  "recipe": {
+    "name": "Cebollitas Asadas (Grilled Green Onions)",
+    "time": "27 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "5",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "64",
+      "carbohydrateContent": "5",
+      "fatContent": "5",
+      "proteinContent": "2"
+    },
+    "directions": [
+      "Preheat grill.",
+      "Place onions on a large sheet of foil with butter, soy sauce, and lime juice. Seal onions securely in the foil. To do this lay the onions in the middle of the foil sheet, and fold in each side of the foil. Do the same with the remaining two sides. Wrap the foil around the onions like a present.",
+      "Grill onions or scallions on a rack set 5 to 6 inches over the grill, 10 to 12 minutes. Remove from foil and place on the grill (across the rungs) and grill on medium heat for 1 to 2 minutes on each side until softened and lightly charred.",
+      "Transfer onions or scallions to a platter and sprinkle with salt and garnish with lime juice, if desired."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Spring Onions",
+        "unit": null,
+        "notes": "alt: large scallions, about 4 bunches washed and trimmed",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted Butter",
+        "unit": "Tbsp",
+        "notes": "chopped or melted",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "or Maggi",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "optional, juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "01b7117cdc823d25ef9471733354873c8db0ad52783e065822c32e68326fff55",
+    "lineage_hash": "9dfd6278904e36d686250c181f626fa16f8ed4be585a65207315bdf67dea2e5e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/cebollitas-asadas-grilled-green-onions/",
+    "fetchedAt": "2026-08-01T20:13:31.962Z"
+  },
+  "rawSource": "https://muybuenoblog.com/cebollitas-asadas-grilled-green-onions/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

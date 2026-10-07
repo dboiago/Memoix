@@ -1,0 +1,127 @@
+{
+  "recipe": {
+    "name": "Chicken with Lemongrass Broth",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "ID",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat the cooking oil in a soup pot on high heat. Fry garlic, onion, scallion, and lemongrass until fragrant, about 3 minutes.",
+      "Add chicken, season with salt and pepper and cook until no longer pink.",
+      "Pour water and bring to a boil. Cover with a lid, reduce heat, and simmer for 15 minutes until chicken is fully cooked and tender.",
+      "Add mushroom and tomatoes and bring to a boil.",
+      "Turn off heat and serve immediately with steamed white rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cooking Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallion (white Part Only)",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemongrass",
+        "unit": null,
+        "notes": "bruised and knotted",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken",
+        "unit": null,
+        "notes": "cut into 8 pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Oyster Mushroom (indonesian: Jamur Tiram)",
+        "unit": null,
+        "notes": "slice/tear into thin strips",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": null,
+        "notes": "quartered and cut into small pieces",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "19dfdca900386130efc10065b7140d387b4aa362788ecc52099c19c751a8c439",
+    "lineage_hash": "0c9a13d763f86376b47361dc7682da6e1ccddf1b687d4c1dc210c4c7df621574"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/chicken-with-lemongrass-broth.html",
+    "fetchedAt": "2026-08-02T11:19:58.030Z"
+  },
+  "rawSource": "https://dailycookingquest.com/chicken-with-lemongrass-broth.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

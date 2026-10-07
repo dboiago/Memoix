@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Brandy Milk Punch",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [
+      "Nutmeg"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake all of the ingredients with ice, then strain into a chilled glass. Grate nutmeg over the top."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "e237833b9073fcf3612966592510f2a61da4f125a258db44121a4ed04a8a1b08",
+    "lineage_hash": "55b1bdaf0cf652fd5abc7200724618bc41d0183e9633c3d5b111713468c4215d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/brandy-milk-punch-recipe/",
+    "fetchedAt": "2026-08-03T19:58:31.277Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/brandy-milk-punch-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

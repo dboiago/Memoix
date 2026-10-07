@@ -1,0 +1,113 @@
+{
+  "recipe": {
+    "name": "Asado de Puerco (Chile Colorado Pork)",
+    "time": "40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "293",
+      "carbohydrateContent": "24",
+      "fatContent": "7",
+      "proteinContent": "26"
+    },
+    "directions": [
+      "Heat a large skillet over medium-high heat. Add oil to pan; swirl to coat. Add pork to pan; cook 5 minutes. Add salt and garlic and continue cooking until pork is thoroughly cooked, about 10 to 15 minutes.",
+      "Add red chile sauce, tomato sauce, oregano, and cumin. Let mixture come to a boil and add water to desired consistency. Simmer for another 10 minutes to let the flavors come together."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pork Loin",
+        "unit": "lb",
+        "notes": "cut into 1-inch cubes",
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chile Sauce",
+        "unit": "C",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Sauce",
+        "unit": "C",
+        "notes": null,
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mexican Oregano",
+        "unit": "tsp",
+        "notes": "dried, crushed",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cumin",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "772c56684f7b42c387744e8dd5ad146fee42849c4bfa877d24eb94349de3c684",
+    "lineage_hash": "bf3e4938c0eca135e537f5b43e80ca724fdd04bd33fa0d496e35cf47dc84184b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/asado-de-chile-colorado/",
+    "fetchedAt": "2026-08-02T11:39:44.672Z"
+  },
+  "rawSource": "https://muybuenoblog.com/asado-de-chile-colorado/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

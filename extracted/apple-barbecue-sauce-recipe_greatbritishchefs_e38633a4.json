@@ -1,0 +1,117 @@
+{
+  "recipe": {
+    "name": "Apple Barbecue Sauce",
+    "time": "45 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat the rapeseed oil in a thick bottomed saucepan and fry the onion and garlic until just softened with no colour",
+      "Add the apple and chilli and fry for a further minute. Stir in the sugar, soy sauce, chicken stock, vinegar and tomato ketchup",
+      "Simmer gently until the apples are softened. Transfer to a blender and blitz until smooth. Pass through a fine strainer. The sauce can be served warm or at room temperature and can be stored in the fridge for up to 4 days"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Braeburn Apples",
+        "unit": null,
+        "notes": "peeled and 2cm diced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "large",
+        "notes": "finely diced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Flakes",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "g",
+        "notes": "dark soft",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cider Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Ketchup",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Rapeseed Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c44db02b31ef8d294543ea50ae13a6538a2fe9a4e08eae64019bd0bd11ea5a06",
+    "lineage_hash": "25a0d6f319db81e8ffab0c1495274eb334c1eef4d5d2576cdd7086a012b9ef7e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/barbecue-sauce-recipe",
+    "fetchedAt": "2026-08-03T16:28:56.900Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/barbecue-sauce-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

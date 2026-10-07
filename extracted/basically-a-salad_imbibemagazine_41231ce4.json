@@ -1,0 +1,35 @@
+{
+  "recipe": {
+    "name": "Basically a Salad",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Old Fashioned",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake the first 4 ingredients with ice until well chilled. Strain into an Old Fashioned glass over fresh ice, then top with soda water and garnish.",
+      "Turmeric Syrup: In a medium saucepan add 2 cups water, 2 cups granulated sugar, and 2 medium pieces of fresh turmeric root, finely grated. Bring the mixture to a low simmer, then remove from heat and let steep for 10 minutes. Strain through a fine-mesh strainer, then bottle and refrigerate for use within 1 month."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "aa0c847655a1f319c1e7e89840674f50627585e47a299de55bb44c472a4a8380",
+    "lineage_hash": "e21ec1882dd18f2a8162ad25288136949bbc29997cff3391d15df3a8c668cca3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/basically-a-salad/",
+    "fetchedAt": "2026-08-03T22:40:48.332Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/basically-a-salad/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

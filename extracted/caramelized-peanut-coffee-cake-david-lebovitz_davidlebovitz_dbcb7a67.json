@@ -1,0 +1,145 @@
+{
+  "recipe": {
+    "name": "Caramelized Peanut Coffee Cake",
+    "time": "1 hr 5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Butter the sides and bottom of a 9-inch (23cm) springform pan very well. Preheat the oven to 350ºF (180ºC).",
+      "To make the peanut topping, warm the unsalted butter, sugar, honey, and heavy cream in a small saucepan, stirring occasionally until the butter is melted. Bring the mixture to a boil and let it cook at a low, but steady boil, for 3 minutes. Remove from heat and stir in the peanuts. Set aside, stirring every once in a while to cool it down, while you make the cake batter.",
+      "In a small bowl, sift or whisk together the flour, baking powder, and salt.",
+      "In the bowl of a stand mixer fitted with the paddle attachment, or in a large bowl mixing by hand with a spatula or wooden spoon, beat the butter and sugar until light and creamy, about 3 minutes. Reduce the speed to low and add the egg and vanilla extract, stirring to combine. (You may want to stop the mixer during the step, and scrape down the sides if using a stand mixer, to make sure all the ingredients are well incorporated.)",
+      "Stir half of the flour mixture into creamed butter (with the stand mixer set on low speed), then add the milk, then mix in the rest of the dry ingredients.",
+      "Scrape the batter into the prepared pan and smooth the top. Spoon the peanut mixture over the top of the cake. It will have thickened up but do your best to make sure it&#39;s relatively even, and avoid pushing it right up to the sides of the pan, as it&#39;ll stick to the pan and make it a little difficult to release later.",
+      "Bake the cake for 50 to 55 minutes, until a toothpick inserted into the center of the cake comes out clean. Do not touch the top of the cake to check for doneness as the caramel is hot and sticky, and it can burn. (Trust me...) Let the cake stand 5 to 10 minutes, then lightly grease a paring or utility knife and run it around the outside of the cake to release it from the sides of the pan. Then remove the outside ring of the springform pan. If any bits of caramelized peanuts stick or come off when removing the outside ring, either reunite them with the cake, or let them cool and eat them yourself."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": "3 ounces, 85g, cubed",
+        "amount": "6",
+        "section": "peanut topping",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": "65g",
+        "amount": "⅓",
+        "section": "peanut topping",
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": "60g",
+        "amount": "3",
+        "section": "peanut topping",
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "C",
+        "notes": "60ml",
+        "amount": "¼",
+        "section": "peanut topping",
+        "isOptional": false
+      },
+      {
+        "name": "Roasted",
+        "unit": "C",
+        "notes": "7 ounces, 195g, salted peanuts",
+        "amount": "1½",
+        "section": "peanut topping",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": "3 ounces, 85g, cubed, at room temperature",
+        "amount": "6",
+        "section": "cake",
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "C",
+        "notes": "280g",
+        "amount": "2",
+        "section": "cake",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": "preferably aluminum-free",
+        "amount": "2",
+        "section": "cake",
+        "isOptional": false
+      },
+      {
+        "name": "Kosher",
+        "unit": "tsp",
+        "notes": "alt: sea salt",
+        "amount": "½",
+        "section": "cake",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": "200g",
+        "amount": "1",
+        "section": "cake",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": "at room temperature",
+        "amount": "1",
+        "section": "cake",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "cake",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "C",
+        "notes": "180ml, at room temperature",
+        "amount": "¾",
+        "section": "cake",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4d83dbbcb70511cb40e5864f6aa7509bd6d55b92ecb0c8aa2bcfbd32906f569b",
+    "lineage_hash": "bae2213eddddb1c1d78b71a1ff985f0f2899d23a4972a3534ee4e5c568b6f57f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/caramel-honey-recipe-caramelized-peanut-coffee-cake/",
+    "fetchedAt": "2026-08-02T22:35:48.198Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/caramel-honey-recipe-caramelized-peanut-coffee-cake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

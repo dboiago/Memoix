@@ -1,0 +1,64 @@
+{
+  "recipe": {
+    "name": "Baby Back Party Ribs",
+    "time": "1 hr 10 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat grill. Set your grill up for two-zone grilling, with an overall temperature of 350 degrees F.",
+      "Trim and slice ribs. Remove the white membrane from the bone side of your ribs using a paper towel. Using a sharp knife, slice your ribs between the bones for individual grilling, then arrange them for seasoning.",
+      "Season Ribs. Season your ribs on all sides with the salt, pepper, and garlic powder.",
+      "Grill ribs. Place your ribs on the indirect heat side of your grill. Allow them to cook for 45 minutes to an hour, or until they reach an internal temperature of 195-200 degrees F. Rotate your ribs 3-4 times to give all sides even heat.",
+      "Glaze and finish. Glaze your ribs with your favorite BBQ sauce. The benefit of party ribs is you can use multiple sauces for different flavor options. Give your ribs around 5 minutes to grill until they reach an internal temperature of 205 degrees F. If you want more char, finish on the direct heat side of your grill. If you like a softer, smokier rib, then finish over indirect heat.",
+      "Rest and serve. Remove your ribs to a cutting board, then allow them to cool for 5 minutes before serving. Your ribs are already sliced, so they’re ready to enjoy once rested"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Racks Baby Back Ribs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Each: Kosher Salt",
+        "unit": "tsp",
+        "notes": "coarse ground black pepper, and granulated garlic",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Your Favorite BBQ Sauce",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d2f854f5db3dec0a986eea13a2db6e1f8dff194185b2a10e80c63769462b59f4",
+    "lineage_hash": "4055b526f4b5bfc837d0502d52c0e6cfd10337cbea1f325a44562d033373a9a6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/baby-back-party-ribs/",
+    "fetchedAt": "2026-08-03T09:54:58.836Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/baby-back-party-ribs/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

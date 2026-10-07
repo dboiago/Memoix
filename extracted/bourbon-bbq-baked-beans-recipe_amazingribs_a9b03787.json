@@ -1,0 +1,145 @@
+{
+  "recipe": {
+    "name": "Bourbon BBQ Baked Beans",
+    "time": "1 hr 30 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Prep. Coarsely chop the onions, bell pepper, and jalapeño (or opt to leave the jalapeño out if you don&#39;t like heat). Drain and rinse the can of beans.",
+      "Cook the bacon. Make sure you are using a 2 quart (1.9 L) or larger pot or Dutch oven. Cook the bacon over a medium heat. When it begins to brown, flip it, brown the other side, but remove it before it renders all its fat and gets hard. We want bacon that we can cut, not crumble. You will probably need to do the bacon in two batches. And what the heck, go ahead and cook an extra slice or two for the cook to eat when nobody is watching. Drain the bacon by putting it on 2 layers of paper towels on top of a section of the local newspaper. When it is cool enough to handle, chop it into bite-sized chunks.",
+      "Pour off the bacon fat into a coffee cup leaving behind about 2 tablespoons and most of the brown bits dissolved in the fat. When the fat in the cup begins to cool, but before it hardens, move it to a plastic tub and store it in the fridge. You can use this later for cooking onions or veggies. Nothing perks up broccoli like bacon fat!",
+      "Add the onions and peppers to the pot and cook them until they wilt. If the bacon bits stuck to the bottom start to get too dark, add an ounce of water and they will dissolve promptly with the help of a wooden or silicone spoon.",
+      "Add 3 cups (709.8 ml) of hot water or stock and everything else including the bacon. There are four good ways to cook these beans:On your grill/smoker. If you have a smoker, put them below the meat for about 2 to 3 hours at 225°F (107.2°C). They will collect flavorful, smoky drippings from the meat laden with seasoning from the rub. Just be sure they don&#39;t burn.In your oven. Put the pot in your oven uncovered for 2 hours at 225°F (107.2°C). Stir every 30 minutes to make sure they don&#39;t burn.\t\t\tOn the stovetop. Bring to a gentle boil over medium heat and then turn it back to simmer for 30 minutes without a lid. Stir and scrape the bottom with a wooden spoon every 10 minutes to prevent burning and sticking. Try to keep the bay leaf submerged.\t\t\tIn a slow cooker. Set it to medium, which should be about 250°F (121.1°C) and check them in about 2 hours./tested-recipes/beans-recipes/science-beans",
+      "Remove the bay leaf. Taste and adjust the flavors as you see fit. If you like it spicier, add hot sauce. Add more molasses if you like it sweeter, or salt if you think it needs it. Cook it longer if you want it thicker, or add water if you want it thinner.",
+      "Serve. Serve the baked beans immediately while still hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Strips Thick Cut Bacon",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "medium",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Bell Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jalapeño",
+        "unit": null,
+        "notes": "skip if you don't like heat",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Kidney Beans (three 15-ounce (425-gram Cans))",
+        "unit": "oz",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raisins",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kansas City Style BBQ Sauce",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Molasses",
+        "unit": "Tbsp",
+        "notes": "any grade",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kentucky Bourbon",
+        "unit": "C",
+        "notes": "alt: Tennessee whiskey",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Mustard",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Morton Coarse Kosher Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "tsp",
+        "notes": "finely",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c298ee691d6de87c4c9e7c3f9fd60f03a5db6014605e1b3646abaecc2a0faba3",
+    "lineage_hash": "4201ac8bcbd47c97992ddbecbb09c1117905d98dd6aa3bbfd9e01b544c9dc8c0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://amazingribs.com/tested-recipes/beans-recipes/bourbon-bbq-baked-beans-recipe/",
+    "fetchedAt": "2026-08-02T09:23:19.370Z"
+  },
+  "rawSource": "https://amazingribs.com/tested-recipes/beans-recipes/bourbon-bbq-baked-beans-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

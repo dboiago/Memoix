@@ -1,0 +1,84 @@
+{
+  "recipe": {
+    "name": "Birria Grilled Cheese Sandwiches",
+    "time": "8 hr 45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "677",
+      "carbohydrateContent": "67",
+      "fatContent": "29",
+      "proteinContent": "38"
+    },
+    "directions": [
+      "Preheat a skillet to medium-high heat.",
+      "Butter one side of each slice of bread.",
+      "Working one or two at a time, add bread, buttered side down into the skillet. While it is cooking, top with half cup shredded birria, slices of pepper jack cheese, and another slice of bread, buttered side up.",
+      "Cook over medium-low heat for 5-7 minutes; then, flip over the sandwich and cook another 5-7 minutes, or until golden brown.",
+      "Serve with consommé (leftover juices) from the slow cooker for dipping."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Birria De Res",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Consomme",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sourdough Bread",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepperjack Cheese",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6f7de2eafbaaaaae4027448f74a4e3467d511f2dac57bf2fc93f27db0f9cdc23",
+    "lineage_hash": "d41f942749682309109bdae4be38fb8f65b83428a0275b4ed5cfb7bde8c00764"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/birria-grilled-cheese-sandwiches/",
+    "fetchedAt": "2026-08-02T02:12:37.175Z"
+  },
+  "rawSource": "https://muybuenoblog.com/birria-grilled-cheese-sandwiches/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

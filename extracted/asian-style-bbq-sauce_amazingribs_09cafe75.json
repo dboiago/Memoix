@@ -1,0 +1,76 @@
+{
+  "recipe": {
+    "name": "Asian Style BBQ Sauce",
+    "time": "1 hr",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Prep. Combine all ingredients in a serving bowl. Refrigerate for at least 1 hour to allow the flavors to meld together.",
+      "Serve. Use as you would any other BBQ sauce."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Stubbs Original BBQ Sauce",
+        "unit": "C",
+        "notes": "or your favorite store bought sauce",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Cider Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Asian Chili Garlic Sauce Like Huy Fong",
+        "unit": "tsp",
+        "notes": "alt: sambal oelek",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "cf3a7c0569c12aaf5607e1b97d5c1e1c125eddad9ada55550b9b6ec3436937f1",
+    "lineage_hash": "74a849142dd522516fa661aec6f6025234fa89a934d16c8af2349ca5876ce6f5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://amazingribs.com/tested-recipes/barbecue-sauce-recipes/asian-bbq-sauce/",
+    "fetchedAt": "2026-08-02T10:59:59.425Z"
+  },
+  "rawSource": "https://amazingribs.com/tested-recipes/barbecue-sauce-recipes/asian-bbq-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

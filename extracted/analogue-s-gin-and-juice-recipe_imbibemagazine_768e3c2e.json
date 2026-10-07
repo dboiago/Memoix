@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Analogue's Gin and Juice",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a shaker filled with ice, combine all the ingredients. Shake to combine, then strain into a chilled coupe and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "0db60f07e496e0a4114dd5662f630b90a33806f75aef5fde0ce69d1e983d48a0",
+    "lineage_hash": "f19d54f476133d4ac8f4731f43c24aa56b9a5e4e72223f90cb046837aca9ea5c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/analogues-gin-and-juice-recipe/",
+    "fetchedAt": "2026-08-03T19:19:32.728Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/analogues-gin-and-juice-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

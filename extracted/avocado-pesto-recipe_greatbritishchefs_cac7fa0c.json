@@ -1,0 +1,117 @@
+{
+  "recipe": {
+    "name": "Avocado Pesto",
+    "time": "15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by cooking the pasta. Add the fusilli to a large pan of boiling, salted water and cook for about 8 minutes (or according to packet instructions)",
+      "Meanwhile, make the pesto. De-stone the avocado and scoop the flesh into a blender or pestle and mortar. Add the lemon juice (but not zest), garlic, basil, olive oil, pecorino and walnuts and blend or grind until smooth",
+      "When the pasta is ready, drain and stir in the avocado pesto. Season with salt and pepper to taste and garnish with the lemon zest and walnuts"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Fusilli Pasta",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Avocado",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced and zested",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "tsp",
+        "notes": "crushed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basil",
+        "unit": "g",
+        "notes": "plus a few sprigs to garnish",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pecorino",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Walnuts",
+        "unit": "g",
+        "notes": "plus extra for garnish",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "22a05034c90db38d3fe3e69a1d8a7b846ba1325a8f4470b844c62744729c13bb",
+    "lineage_hash": "2f595022697022c58c5d163bda5c923d30a5f57dac1aaf56e9339c1de8517ccd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/avocado-pesto-recipe",
+    "fetchedAt": "2026-08-03T12:33:02.874Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/avocado-pesto-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

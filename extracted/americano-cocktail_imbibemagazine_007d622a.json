@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Americano Cocktail",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Glass",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pour the Campari and vermouth into an ice-filled glass. Top with soda, stir and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "470b7456d8eadabdec988941f6e01f21656a9901b14b6ce4aad6962178cc51df",
+    "lineage_hash": "3670562c2a71526e3cb74fbf6a0df71aada2edc0e731c070364159e412449e9f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/recipe-americano/",
+    "fetchedAt": "2026-08-04T00:59:32.568Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/recipe-americano/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

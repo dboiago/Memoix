@@ -1,0 +1,237 @@
+{
+  "recipe": {
+    "name": "Birch Ice Cream",
+    "time": "4 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by preparing the birch water for the ice cream the day before serving. Place the branches on a baking tray and allow to brown in the oven for 45 minutes",
+      "Meanwhile, place the black beans in a deep bowl and pour over enough cold water to cover. Leave to rest in a cool, dark place and allow to soak overnight",
+      "Place the browned branches in a large saucepan with the water. Bring up to the boil and allow to simmer for 30 minutes, then pass the birch water through a sieve and discard the branches. Weigh out 340ml of the birch water and pour into a large, clean pan",
+      "Add the milk, cream, honey, glucose and sugar to the pan with the water and stir well. Gently bring the mixture up to the boil, then remove from the heat. Squeeze any excess water from the soaked gelatine and add to the pan, stirring until dissolved and incorporated. Pour into a Pacojet container and transfer to the freezer overnight",
+      "On the day of serving, prepare the milk skin. Pour the milk into a large saucepan and gently heat until it reaches 80°C. Remove the pan from the heat and allow to rest until a thin layer of skin forms across the surface. Carefully remove the milk skin from the pan and lie across a silpat mat, leaving to air dry for 2 hours",
+      "For the spiced cream, combine the milk, cream, vanilla, cardamom, anise, thyme and black sesame powder in a pan and gently bring up to the boil. Remove from the heat and allow to rest for a few minutes to infuse, then pass the mixture through a sieve into a clean bowl",
+      "Add the egg yolks to the spiced cream mixture and whisk well until thoroughly combined. Pour the cream mixture into a small, deep baking tray and cover with cling film. Place in the steam oven for 2 hours, then remove and leave to cool",
+      "Meanwhile, finish the black bean pesto. Gently heat the sugar in a medium saucepan until caramelised, then add the glucose, soaked beans and the soaking water to the pan and stir well. Increase the heat and allow the beans to boil until softened, then remove from the heat and transfer to a blender",
+      "Blitz the black bean mixture to form a thick paste with a pesto-like consistency. Adjust the sweetness to taste with the forest honey and stir through the plum seed oil, then set aside until ready to serve",
+      "Ahead of serving, remove the birch ice cream from the freezer and process in a Pacojet until smooth",
+      "To serve, drag a line of black bean pesto across each plate and spoon a little of the spiced cream on top. Place a quenelle of the birch ice cream on the other side of the plate and top with a piece of folded milk skin. To garnish, dust 6 birch twigs lightly with cocoa and divide between plates"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Birch Branches",
+        "unit": null,
+        "notes": "broken into small pieces with twigs reserved for serving",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Forest Honey",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glucose",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaf",
+        "unit": null,
+        "notes": "soaked in cold water to soften",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Beans",
+        "unit": "g",
+        "notes": null,
+        "amount": "130",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glucose",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plum Seed Oil",
+        "unit": "drops",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Forest Honey",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cardamom",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Sesame Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fe6bb6e6fbbf1991d410e85a5b0b388c4f8bc5f72ed283117576e92ee4a95883",
+    "lineage_hash": "6b51c6965ac07c44773eb16d5756347f77788507e2a678f1923f0a965943f129"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/birch-ice-cream-recipe",
+    "fetchedAt": "2026-08-02T04:07:11.869Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/birch-ice-cream-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

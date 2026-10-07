@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Bourbon Chocolate Milkshake",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all ingredients in a blender and blend until smooth."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "c566e0adaacec64b99a14529310ea31f3f4f1b627bfa43ca4e4904b49aee143f",
+    "lineage_hash": "223ace0227f516f9210eec978cf470ea77032e13aac485a8d8defd74ebfe338d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bourbon-chocolate-milkshake/",
+    "fetchedAt": "2026-08-03T20:11:02.285Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bourbon-chocolate-milkshake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

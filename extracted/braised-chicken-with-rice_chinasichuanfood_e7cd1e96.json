@@ -1,0 +1,160 @@
+{
+  "recipe": {
+    "name": "Braised Chicken with Rice",
+    "time": "1 hr 5 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Soak the chicken pieces in cold water for 15 minutes to remove any odd taste and flavor. Then drain completely.",
+      "Add 1 tablespoon of Shaoxing wine, 1tablespoon of light soy sauce, 1 tablespoon of dark soy sauce. Mix well and set aside for 15 minutes.",
+      "Heat wok until really hot, add 1 tablespoon of oil to prevent sticky. Place chicken meat in (skin downside) and continue cooking until the oil released. Cook until the chicken is slightly seared. On one hand, this step can enhance the flavor and on the other hand, we need the chicken oil to fry the aromatics.  Remove chicken chunks to wok edges.",
+      "Fry ginger, large onion and star anises until aromatic with the oil at bottom.",
+      "Add hot water and then cover to simmer 30 minutes. Add dark soy sauce and fermented soy bean paste.",
+      "Add pepper chunks and cook another 2 to 3 minutes.Serve hot with steamed rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Serving Steamed Rice",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Chunks",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": "marinating chicken",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "divided",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Clean Water",
+        "unit": null,
+        "notes": "soaking chicken",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shiitake Mushrooms",
+        "unit": null,
+        "notes": "dried",
+        "amount": "6-8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bell Red Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bell Yellow Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Long Chili Green Peppers",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fermented Soy Bean Paste",
+        "unit": "Tbsp",
+        "notes": "can be replaced by another tablespoon of light soy sauce, 黄豆酱",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anises",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "large",
+        "notes": "cut into sections",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thumb Ginger",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "814bc1d4a9a94ed9eea1a4ae605c6e3359a5f2cd5827dc2a1058b4923d94d48f",
+    "lineage_hash": "7aa71ed924bacf7a8f1e5df452e975f827a08d57413e9d1a67ffc68a13635906"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/braised-chicken-with-rice/",
+    "fetchedAt": "2026-08-02T06:50:50.522Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/braised-chicken-with-rice/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

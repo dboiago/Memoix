@@ -1,0 +1,122 @@
+{
+  "recipe": {
+    "name": "A Killer Beef Rub Recipe",
+    "time": "5 min",
+    "course": "rubs",
+    "rating": 0,
+    "serves": "48",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "3",
+      "carbohydrateContent": "1",
+      "fatContent": "0.1",
+      "proteinContent": "0.1"
+    },
+    "directions": [
+      "Buzz. Grind the rosemary into a coarse powder. (You can use a spice grinder or a mortar and pestle.)",
+      "Mix. In a bowl, stir together all the ingredients. Break up any lumps of brown sugar with your fingers. Store in a dark place.",
+      "To use. This rub does not contain salt. Dry brine (pre-salt) your meat at least 1 hour in advance. Then, pat the meat surface with wet hands or a wet paper towel to help the rub stick. Apply 1/2 teaspoon rub per 4 x 6-inch surface of meat. As for cooking, reverse sear for the best results."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rosemary Leaves",
+        "unit": "Tbsp",
+        "notes": "dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Medium-grind Black Pepper",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Mild Paprika",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Ancho Chiles",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Chipotle Chiles",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Instant Coffee",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Brown Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9f36bd6aaa89cea5af1fc4d6dc123d86e4f4df89596753095f57ee1bcbe971b2",
+    "lineage_hash": "c09a1ac1b9e7f331e59d08d981962dc8dc10898de9ea29350a14128f91cfbb09"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://amazingribs.com/beef-rub-recipe/",
+    "fetchedAt": "2026-08-02T07:14:30.616Z"
+  },
+  "rawSource": "https://amazingribs.com/beef-rub-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,38 @@
+{
+  "recipe": {
+    "name": "And a Partridge in a Pear Tree Cocktail",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Ice-filled",
+    "garnish": [
+      "Chilled Club Soda"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake all the ingredients except the club soda without ice to combine and aerate, then shake again with ice to chill; double-strain into an ice-filled glass and top with chilled club soda. Garnish.",
+      "Spiced Syrup:\n1 tsp. black peppercorns\n3 1⁄2 cinnamon sticks\n5 whole cloves\n10 whole allspice\n3⁄4 tsp. fresh-grated nutmeg\n2 cups water\n4 cups brown sugar",
+      "In a medium saucepan, toast the dry spices over medium-high heat until aromatic. Add the water and bring to a boil. Let boil for 3 minutes, then reduce the heat and add the sugar, stirring at a simmer until sugar has dissolved. Let the syrup cool to room temperature, then strain through a fine-mesh strainer, and bottle for use. Keeps refrigerated for up to 2 weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "02957bb2b77d7c037194f198e3b69f3069dffa65a80cd79bc2384f585f73e19c",
+    "lineage_hash": "082fa6ddd1ee73ea1833207a405ce1d9379acee49f89e1a4476a1ae9227fc438"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/and-a-partridge-in-a-pear-tree-cocktail/",
+    "fetchedAt": "2026-08-03T18:35:13.059Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/and-a-partridge-in-a-pear-tree-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Aviation Cocktail",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake all of the ingredients with ice, double strain into a chilled glass, then garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "d06e84972da30335118666cef511a745ed55c00734327d9dd0025968dbbfbf80",
+    "lineage_hash": "01d96432b9ce235f9d388ab34c5d4360bfce839668dcc6a75c1314ec3fe67ae3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/recipe-aviation/",
+    "fetchedAt": "2026-08-03T23:36:02.875Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/recipe-aviation/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

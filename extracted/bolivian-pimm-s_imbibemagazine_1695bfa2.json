@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Bolivian Pimm's",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Glass",
+    "garnish": [
+      "Dehydrated Lemon Slice"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all of the ingredients in a shaker with ice and shake briefly. Strain into a glass over pebble ice. Top with Peychaud’s bitters and garnish with a dehydrated lemon slice if available."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "2ee31b5054833dfe24b5ad49198df0bdefb8f845d1a6a8d73a75aab5d1e5243a",
+    "lineage_hash": "08cc05314e6fbbe5c8ab085794a71ce813b0dc9f0057e74e0530aadde7374cdc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bolivian-pimms-cup/",
+    "fetchedAt": "2026-08-04T01:08:48.540Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bolivian-pimms-cup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

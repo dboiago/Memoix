@@ -1,0 +1,372 @@
+{
+  "recipe": {
+    "name": "Aubergine, Watermelon and Chocolate with Cucumber Sorbet",
+    "time": "3 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the aubergine rectangles, slice the aubergines in half lengthways and coat with thyme, salt, pepper and olive oil. Cover and leave to marinate overnight",
+      "For the sorbet, combine the isomalt sugar, dextrose, stabiliser and water together in a pan and place over a high heat. Boil for 1 minute until all of the sugar has dissolved",
+      "Mix the juices together and whisk in the syrup and the basil leaves. Place the mixture in Pacojet beakers and freeze at -16°C",
+      "On the day of serving, preheat the water bath to 90°C",
+      "Place the marinated aubergine halves in vacuum bags (2 slices per bag) and seal with a chamber sealer. Place the bags in the water bath and cook for an hour and a half",
+      "Meanwhile, make the chocolate dough. Mix all of the ingredients together until smooth and combined, roll into a cylinder and wrap in cling film. Freeze for approximately 1 hour",
+      "Repeat the above process for the sablé pastry dough",
+      "Preheat the peanut oil for the aubergine cream in a deep-fryer to 180°C",
+      "Cut the peeled aubergines into 2cm thick slices and fry in the hot peanut oil",
+      "Drain the aubergine slices on a piece of kitchen paper, then blend into a purée with the basil and olive oil. Season with salt and pepper, transfer to a piping bag and set aside until needed",
+      "For the watermelon, cut 8 rectangles measuring 4x5x2cm out of the watermelon flesh, place into individual vacuum bags with the mint, oil and salt and seal in a chamber sealer. Set aside to compress for 15 minutes",
+      "Once the chocolate and sablé pastry doughs have set, grate onto separate baking trays lined with greaseproof paper and place in the oven for 20 minutes",
+      "Remove the watermelon slices from the bags and set aside to dry on kitchen paper",
+      "Remove the trays of crumble from the oven and set aside to cool and dry an kitchen paper. Once cool, combine the crumbles and grate over some fresh lime zest",
+      "Remove the aubergine halves from the bags and place on pieces of kitchen paper to dry and cool",
+      "Cut the marinated aubergine halves into 8 rectangles measuring 4x5x2cm and grill on both sides in a hot griddle pan, keeping warm until required",
+      "Process the frozen sorbet mixture a few minutes before serving. Meanwhile, grill the watermelon slices under a hot grill",
+      "To serve, place a rectangle of aubergine on each plate and pipe over with the aubergine cream. Place a watermelon slice alongside, sprinkle on the chocolate crumble and top with cucumber and ginger sorbet and pea shoots as pictured above"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Aubergines",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Isomalt Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dextrose",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stabiliser",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Juice",
+        "unit": "g",
+        "notes": "green",
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basil Leaves",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Aubergines",
+        "unit": null,
+        "notes": "peeled",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basil",
+        "unit": "bunches",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "130",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "130",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cacao Nibs",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sarawak Black Pepper",
+        "unit": null,
+        "notes": "in brine, drained and rinsed",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "220",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "cold",
+        "amount": "170",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Watermelon",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pea Shoots",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "39bc00e3497475928515ea332e182147e7c5a98887274d592a2c110a14635ee6",
+    "lineage_hash": "c97d61835decc8d065d4a2b85977c2caabaec1d72dcd3a613eabb4bfb76449d6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/grilled-watermelon-aubergine-recipe",
+    "fetchedAt": "2026-08-02T05:39:39.768Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/grilled-watermelon-aubergine-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,112 @@
+{
+  "recipe": {
+    "name": "Bakso Ayam",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "ID",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place ground chicken in a large mixing bowl, slowly add the 5 tablespoons of ice-cold water a tablespoon at a time, stirring until fully incorporated with each addition.",
+      "In another bowl, whisk together grated garlic, salt, sugar, baking powder, tapioca starch, oil, and 4 tablespoons of ice-cold water. Slowly pour this solution to the ground chicken, and stir until fully incorporated.",
+      "Wrap the mixing bowl with a saran plastic, and chill the chicken mixture in the fridge for at least 30 minutes and up to 2 hours.",
+      "Boil water in a large pot. Fill a large mixing bowl with ice-cold water and plenty of ice cubes.",
+      "Once the water boils, reduce heat until water is just barely simmering, then drop tablespoonfuls of chicken mixture (I shape with 2 tablespoons into roundish shape) into the pot of hot water. Once the meatball floats to the surface, wait another 30 seconds, then scoop it out from the hot water and plunge in the prepared ice cubes and cold water bowl. You may want to keep adding ice cubes as more and more cooked meatballs are added into the bowl to keep the temperature as cold as possible.",
+      "The chicken balls are fully cooked at this stage, and you can definitely enjoy them as is if you want, but my favorite way is to use them to prepare sup bakso ayam (chicken meatballs soup)."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gram Boneless Skinless Chicken Breast",
+        "unit": null,
+        "notes": "ground",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ice-cold Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "grated",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tapioca Starch",
+        "unit": "Tbsp",
+        "notes": "or corn starch",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ice-cold Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "588f72c70ab2bc9e733fa42db4f40742d78c64d2b7a322bff124481d03120b1f",
+    "lineage_hash": "1eec58119ccf677920df32b13b31b9ba40c222a403cd0ef2704965bfafb92464"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/bakso-ayam.html",
+    "fetchedAt": "2026-08-01T22:56:21.147Z"
+  },
+  "rawSource": "https://dailycookingquest.com/bakso-ayam.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

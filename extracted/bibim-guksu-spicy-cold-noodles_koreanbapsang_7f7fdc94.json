@@ -1,0 +1,176 @@
+{
+  "recipe": {
+    "name": "Bibim Guksu (Spicy Cold Noodles)",
+    "time": "25 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "KR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix all sauce ingredients and keep it cool in the fridge. The sauce can be prepared ahead of time, and it will keep well for up to 2 weeks.",
+      "Julienne the cucumber, carrot and red cabbage. Thinly slice the lettuce. Keep them cool in the fridge or in ice water (drain well before using) if you like.",
+      "Bring a medium pot of water to a boil. Cook the noodles according to the package instructions. Drain quickly and shock in cold water to stop cooking.",
+      "Drain and rinse in icy cold water until the noodles are very cold. Make two one-serving size mounds. Place the mounds in a colander to drain.",
+      "Place the noodles in the middle of the serving bowl and nicely arrange the cold vegetables over the noodles. Drizzle the sesame oil over,  sprinkle with the sesame seeds, and place a half of boiled egg on top.  The sauce can be served on top or separately.",
+      "Alternatively, you can toss it all together before serving. Mix the noodles well with the sauce, add the sesame oil and vegetables, and toss well. Sprinkle with the sesame seeds and place a half of boiled egg on top."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Buckwheat Noodles (memil Guksu)",
+        "unit": "oz",
+        "notes": "alt: wheat flour noodles, somyeon/somen",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber",
+        "unit": "small",
+        "notes": "about 3 ounces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": "small",
+        "notes": "about 3 ounces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Cabbage Leaves",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lettuce Leaves",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thinly Sliced Kimchi",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Boiled Egg - Optional",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil See Note",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Korean Chili Pepper Paste",
+        "unit": "Tbsp",
+        "notes": "gochujang",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Korean Chili Pepper Flakes",
+        "unit": "Tbsp",
+        "notes": "gochugaru",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Korean/asian Hot Mustard Paste",
+        "unit": "tsp",
+        "notes": "gyeoja optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar (or Corn Syrup/oligo Syrup) Adjust to Taste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Vinegar",
+        "unit": "Tbsp",
+        "notes": "alt: apple cider vinegar adjust to taste",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Minced",
+        "unit": "clove",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soft Drink (such As Ginger Ale, Sprite, Etc.)",
+        "unit": "Tbsp",
+        "notes": "apple juice, orange juice, or 1 tablespoon of Korean plum syrup (maesilcheong) optional",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "73ce42540bc231a6b27ffba2e786d475a9a1ca36d0df6d1c7db72477a22d6e44",
+    "lineage_hash": "e5132b086346c52d400c7670951d069570905d70f6d52caa8d91a4cc786d15c4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.koreanbapsang.com/bibim-guksu-korean-spicy-cold-noodles/",
+    "fetchedAt": "2026-08-01T21:05:02.139Z"
+  },
+  "rawSource": "https://www.koreanbapsang.com/bibim-guksu-korean-spicy-cold-noodles/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

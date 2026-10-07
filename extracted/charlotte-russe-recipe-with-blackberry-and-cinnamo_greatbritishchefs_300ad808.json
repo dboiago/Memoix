@@ -1,0 +1,165 @@
+{
+  "recipe": {
+    "name": "Charlotte Russe",
+    "time": "2 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by making the jelly. Place the blackberries, crème de mure and sugar in a large glass bowl and cover tightly with cling film. Place the bowl over a pan of simmering water and leave to steep for 2 hours. After this time, all the liquid will have seeped from the blackberries – you should be left with approximately 200ml liquid",
+      "While the blackberries are steeping, you can prepare the rest of the components. To make the soaking syrup, place the sugar, crème de mure and water in a small saucepan and bring to the boil. Simmer for 2 minutes and leave to cool",
+      "For the bavarois, whip the cream to stiff peaks. Reserve in the fridge",
+      "Warm a medium-sized saucepan over a medium heat, sprinkle in 100g of the sugar and add the cinnamon. Bring the sugar to a dark caramel then add the milk. Bring to the boil until all of the sugar has dissolved",
+      "Whisk together the egg yolks with the remaining sugar until doubled in size and the mixture forms ribbons when the whisk is lifted – this is known as a sabayon",
+      "Pass the milk through a fine sieve into a clean saucepan and return to the boil. Tip ⅓ of the milk into the eggs and mix well then return to the pan and cook until it reaches 82°C (or coats the back of a spoon)",
+      "Mix in the gelatine and pour into a tray. Leave to cool before gently folding in the whipped cream. The mixture should be cold but not set. If the mixture gets too cold, gently whisk until soft. Transfer to a piping bag",
+      "Soak the ladyfingers in the syrup for 5 seconds on each side before arranging around the inside of the cake tin. Trim the ladyfingers so they fit neatly to make a base for the Charlotte",
+      "Arrange a layer of blackberries on top of the sponge then pipe over the cream. Smooth the surface of the cream with a small palette knife and transfer to the fridge to set for 30 minutes",
+      "To make the jelly, warm the blackberry liquid very gently and add the soaked gelatine. Whisk until dissolved and transfer to a jug in the fridge. Chill the jelly until it is a viscous consistency. If it is too thin when pouring on to the Charlotte, it will run down the sides of the ladyfingers",
+      "Arrange a ring of blackberries around the edge of the cream and carefully pour the jelly into the centre. Return to the fridge to set. Best served on the day it is made"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Blackberries",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crème De Mure",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaves",
+        "unit": null,
+        "notes": "softened in cold water",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crème De Mure",
+        "unit": "ml",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stick of Cinnamon",
+        "unit": null,
+        "notes": "broken into 3",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaves",
+        "unit": null,
+        "notes": "softened in cold water",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sponge Fingers",
+        "unit": null,
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blackberries",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "096bd08bcb4c427f63f55ec211ffa71346bc1cdda44f27432dc449224e2c8f69",
+    "lineage_hash": "86c596310e0cfa6e1bde42f768a0138b39ff8914de0745f2a473d9a8210ba1e6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/charlotte-russe-recipe-blackberry-cinnamon",
+    "fetchedAt": "2026-08-03T14:40:02.820Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/charlotte-russe-recipe-blackberry-cinnamon",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

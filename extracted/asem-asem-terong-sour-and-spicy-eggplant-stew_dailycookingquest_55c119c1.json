@@ -1,0 +1,126 @@
+{
+  "recipe": {
+    "name": "Asem-Asem Terong (Sour and Spicy Eggplant Stew)",
+    "time": "30 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "ID",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Bring water, shallot, garlic, and chili pepper to a boil in a soup pot.",
+      "Add eggplants and tamarind juice and bring to another boil.",
+      "Add tomatoes, and season with palm sugar and salt. Adjust seasoning as needed.",
+      "Once it boils again, turn off heat. Add the thinly sliced scallion and Chinese celery, stir well. Serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots (indonesian: Bawang Merah)",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic (indonesian: Bawang Putih)",
+        "unit": "clove",
+        "notes": "thinly sliced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Anaheim Chili Peppers (indonesian: Cabe Merah Besar)",
+        "unit": null,
+        "notes": "cut each to 4 long slices",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Size Eggplants (indonesian: Terong Ungu)",
+        "unit": "medium",
+        "notes": "cut into bite size pieces",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tamarind Juice",
+        "unit": "Tbsp",
+        "notes": "1 teaspoon tamarind pulp + 1 tablespoon water",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": null,
+        "notes": "cut into small pieces",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Palm Sugar (indonesian: Gula Jawa)",
+        "unit": "Tbsp",
+        "notes": "or to taste",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "Tbsp",
+        "notes": "or to taste",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallion (indonesian: Daun Bawang)",
+        "unit": null,
+        "notes": "thinly sliced, about 3 tablespoon",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bunch Chinese Celery (indonesian: Daun Seledri)",
+        "unit": "small",
+        "notes": "thinly sliced, about 3 tablespoon",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a6df045a42128f5b8f207bd5fce3bf29ec2e08316c327e05700b3713595bb748",
+    "lineage_hash": "345b173a60fe95a5e521b468edbc4c5c46ffc0a276439f8ec4644bfe33cc1857"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/asem-asem-terong-sour-and-spicy-eggplant-stew.html",
+    "fetchedAt": "2026-08-02T08:08:14.092Z"
+  },
+  "rawSource": "https://dailycookingquest.com/asem-asem-terong-sour-and-spicy-eggplant-stew.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

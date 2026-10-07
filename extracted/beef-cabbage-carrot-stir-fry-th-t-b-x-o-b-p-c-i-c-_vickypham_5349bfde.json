@@ -1,0 +1,176 @@
+{
+  "recipe": {
+    "name": "Beef Cabbage & Carrot Stir Fry (Thit Bo Xao Bap Cai Ca Rot)",
+    "time": "15 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "5",
+    "source": "scraped",
+    "cuisine": "VN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl, mix sliced beef (10 oz) with baking soda (⅛ tsp), sugar (¼ tsp), salt (½ tsp), water (¼ cup), egg white (1), and cornstarch (3 tbsps).",
+      "In a small bowl, stir together water (⅓ cup), light soy sauce (2 tbsps), dark soy sauce (2 tbsps), sugar (1 tsp), and cornstarch (2 tbsps) until starch is dissolved. Set aside.",
+      "Heat a large skillet or wok over medium-high heat with oil (3 tbsps). Add the marinated beef in a single layer and pan fry until it&#8217;s about 50% done — just starting to brown but still pink in spots.",
+      "Add garlic (1 tbsp), whites of green onions (from 2 stalks), and sliced carrot (4 oz). Stir-fry for about 2 minutes to let the carrot soften slightly.",
+      "Stir in the cabbage (1 lb) and pour in the stir fry sauce. Toss everything together for another 2–3 minutes until the cabbage wilts and the sauce thickens.",
+      "Turn off the heat, garnish with the remaining green parts of the green onions, and serve with rice or noodles for a complete meal."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef",
+        "unit": "oz",
+        "notes": "cut into thin slices against the grain",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Neutral Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "Tbsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "thinly sliced with greens and whites separated",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": "oz",
+        "notes": "about 1 large, peeled, cut on a bias into slices",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cabbage",
+        "unit": "lb",
+        "notes": "cut into small squares, sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "64c7cd06b66284b1ccf920a97e64096d8a94f2f8be8f0e8497bd2f1bb112ae96",
+    "lineage_hash": "eef4e0e36ffbbfb602b7f52afc7107e5f5914689f286ab0473cdf6352b863f16"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://vickypham.com/blog/beef-cabbage-carrot-stir-fry/",
+    "fetchedAt": "2026-08-02T00:24:49.593Z"
+  },
+  "rawSource": "https://vickypham.com/blog/beef-cabbage-carrot-stir-fry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

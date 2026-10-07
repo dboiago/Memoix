@@ -1,0 +1,110 @@
+{
+  "recipe": {
+    "name": "Asparagus Salad with Mushroom, Eggs, and Glass Noodles",
+    "time": "20 min",
+    "course": "salad",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "80",
+      "carbohydrateContent": "8",
+      "fatContent": "3.2",
+      "proteinContent": "5.8"
+    },
+    "directions": [
+      "Prepare a bowl of tap water and set aside. Bring a pot of water to a boil.",
+      "(Optional) Add a few drops of oil and a pinch of salt to the pot, so the veggies will be greener after cooking.",
+      "Add bean thread noodles to the pot and stir with chopsticks to separate them. Boil until the noodles are cooked through, about 1 minute. Transfer the noodles to a plate and set aside.",
+      "Add mushrooms to the same pot of water. Cook until mushrooms turn tender, 30 seconds to 1 minute. Transfer to a colander to cool.",
+      "Add asparagus to the same pot of water. Cook until the asparagus is cooked but still crisp, 30 seconds to 1 minute. Transfer to a colander with the mushrooms. Rinse with cold tap water to stop cooking. Add the bean thread noodles and toss everything together. Set aside to drain thoroughly. You can further remove excess moisture by gently patting the ingredients dry with paper towels.",
+      "Heat oil in a nonstick skillet over medium-high heat until warm. Add egg. Scramble the eggs until just cooked through. Transfer to a large mixing bowl.",
+      "Combine asparagus, mushroom, and bean thread noodles in the same large bowl with the eggs. Sprinkle salt and drizzle with light soy sauce and sesame oil. Toss to mix well. Serve as an appetizer or side dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bundle (25 G) Thin Vermicelli",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shimeji Mushrooms",
+        "unit": "pkg",
+        "notes": "150 g, tough ends removed and separated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Asparagus Spears",
+        "unit": null,
+        "notes": "200 g, tough ends removed and chopped",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "834d257d08995529335a5b1830b355cfe17168accb170ca5f22665c159d21661",
+    "lineage_hash": "c1ca81af41189e86a9a60a9ba96bfe619cd08a18ac10732a7224dcd7aeda4bfe"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/asparagus-salad-with-mushroom-egg-glass-noodles/",
+    "fetchedAt": "2026-08-02T01:43:30.794Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/asparagus-salad-with-mushroom-egg-glass-noodles/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

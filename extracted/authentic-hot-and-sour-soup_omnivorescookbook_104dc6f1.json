@@ -1,0 +1,199 @@
+{
+  "recipe": {
+    "name": "Authentic Hot and Sour Soup",
+    "time": "30 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "216",
+      "carbohydrateContent": "9.1",
+      "fatContent": "11.1",
+      "proteinContent": "19.9"
+    },
+    "directions": [
+      "Rehydrate dried ingredients: Gently rinse dried shiitake mushrooms, dried wood ear mushrooms, and lily flowers with tap water. Soak each of them with 2 cups warm water (*Footnote 5) in three big bowls. Rehydrate for 30 minutes to 1 hour, until tender. Slice mushrooms into strips. Snip off the tough ends of lily flowers and discard. Halve the lily flowers lengthwise. Remove tough ends of wood ear mushrooms, then chop into bite-sized pieces. Reserve 2 cups of the marinating water from lily flower.",
+      "Marinate pork: Combine pork, Shaoxing wine, salt and cornstarch in a bowl. Mix well by hand. Marinate for 10 to 15 minutes.",
+      "Mix sauce: Add Chinkiang vinegar and white pepper into a small bowl. Mix well until the white pepper is completely dissolved.",
+      "Make soup: Add chicken stock, lily flower soaking water, ginger, and green onion white part into a pot and heat over medium-high heat. Add rehydrated wood ear mushrooms, shiitake mushrooms, lily flowers, and tofu to the pot. Cook until bringing to a simmer. Add soy sauce and turn to medium-low heat.",
+      "Thicken the soup: Mix the cornstarch with 1/4 cup of water in a bowl until cornstarch is fully dissolved. Slowly swirl the cornstarch slurry into the soup. Stir to thicken the soup.",
+      "Cook the pork: Add the pork from step one into the soup, stirring several times to prevent the pork strips from sticking together.",
+      "Make egg ribbons: Slowly swirl in the beaten egg, using a pair of chopsticks or a fork against the bowl so the egg slowly drizzle into the soup to form ribbons. The egg should be scattered and not clotted. Let the eggs sit for 20 seconds to set, then gently stir to break up the eggs.",
+      "Season the soup: Turn off the heat. Add the vinegar and pepper mixture and stir to mix well. Add salt and taste the soup to adjust flavor. Garnish with green onion green part and drizzle with sesame oil. Give it a final stir. Serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Shiitake Mushrooms",
+        "unit": null,
+        "notes": "dried",
+        "amount": "4",
+        "section": "Rehydrate (*Footnote 1)",
+        "isOptional": false
+      },
+      {
+        "name": "Woodear Mushrooms",
+        "unit": "C",
+        "notes": "dried",
+        "amount": "¼",
+        "section": "Rehydrate (*Footnote 1)",
+        "isOptional": false
+      },
+      {
+        "name": "Handful Dried Lily Flowers",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Rehydrate (*Footnote 1)",
+        "isOptional": false
+      },
+      {
+        "name": "Pork Loin (or Chicken Breast)",
+        "unit": "lb",
+        "notes": "cut into thin strips",
+        "amount": "½",
+        "section": "Pork (*Footnote 2)",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Pork (*Footnote 2)",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Pork (*Footnote 2)",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Pork (*Footnote 2)",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "2",
+        "section": "Soup",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "sliced, white and green parts divided",
+        "amount": "2",
+        "section": "Soup",
+        "isOptional": false
+      },
+      {
+        "name": "Chinkiang Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Soup",
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper Powder",
+        "unit": "tsp",
+        "notes": "or 1/2 teaspoon white pepper powder for a less spicy dish",
+        "amount": "1",
+        "section": "Soup",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "C",
+        "notes": "*Footnote 3",
+        "amount": "4",
+        "section": "Soup",
+        "isOptional": false
+      },
+      {
+        "name": "Lily Flower Soaking Liquid",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "Soup",
+        "isOptional": false
+      },
+      {
+        "name": "Block Firm Tofu (8 Oz / 227 G)",
+        "unit": null,
+        "notes": "diced",
+        "amount": "½",
+        "section": "Soup",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "or soy sauce",
+        "amount": "1",
+        "section": "Soup",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "Soup",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "2",
+        "section": "Soup",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "1",
+        "section": "Soup",
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Oil (or Chili Oil)",
+        "unit": "tsp",
+        "notes": "*Footnote 4",
+        "amount": "1",
+        "section": "Soup",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0634def03cb08b51c511b24f17bb02cc01f26de8b1cc7ae24a48a0a6325a9b13",
+    "lineage_hash": "50cd19698f4b1e11fcb61c415f3e78e4b99305e1212f8bb3389c2c634c6f88b6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/authentic-hot-and-sour-soup/",
+    "fetchedAt": "2026-08-02T08:57:19.995Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/authentic-hot-and-sour-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,315 @@
+{
+  "recipe": {
+    "name": "Thai Boat Noodles",
+    "time": "2 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "5",
+    "source": "scraped",
+    "cuisine": "TH",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To Assemble (this part is hard to describe via text so I highly recommend watching the video to see the process)"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Water",
+        "unit": "qt",
+        "notes": null,
+        "amount": "3.2",
+        "section": "Boat Noodle Broth",
+        "isOptional": false
+      },
+      {
+        "name": "Pork Bones",
+        "unit": "lb",
+        "notes": "see note 1, preferably neck bones",
+        "amount": "2",
+        "section": "Boat Noodle Broth",
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": "inches",
+        "notes": null,
+        "amount": "6",
+        "section": "Boat Noodle Broth",
+        "isOptional": false
+      },
+      {
+        "name": "Pc Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Boat Noodle Broth",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Boat Noodle Broth",
+        "isOptional": false
+      },
+      {
+        "name": "Galangal",
+        "unit": "slices",
+        "notes": null,
+        "amount": "10",
+        "section": "Boat Noodle Broth",
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro Roots",
+        "unit": null,
+        "notes": "alt: 6 cilantro stems, crushed until bruised",
+        "amount": "3",
+        "section": "Boat Noodle Broth",
+        "isOptional": false
+      },
+      {
+        "name": "Daikon",
+        "unit": "inches",
+        "notes": "peeled and cut into chunks",
+        "amount": "3",
+        "section": "Boat Noodle Broth",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "cut into chunks",
+        "amount": "½",
+        "section": "Boat Noodle Broth",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "smashed until broken",
+        "amount": "5",
+        "section": "Boat Noodle Broth",
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": "ground",
+        "amount": "½",
+        "section": "Boat Noodle Broth",
+        "isOptional": false
+      },
+      {
+        "name": "Pandan Leaf (about 18 Inches)",
+        "unit": null,
+        "notes": "optional",
+        "amount": "1",
+        "section": "Boat Noodle Broth",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "Boat Noodle Broth",
+        "isOptional": false
+      },
+      {
+        "name": "Golden Mountain Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Boat Noodle Broth",
+        "isOptional": false
+      },
+      {
+        "name": "Tao Jiew (thai Fermented Soy Bean Paste)",
+        "unit": "Tbsp",
+        "notes": "or sub miso or doenjang",
+        "amount": "2",
+        "section": "Boat Noodle Broth",
+        "isOptional": false
+      },
+      {
+        "name": "White Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Boat Noodle Broth",
+        "isOptional": false
+      },
+      {
+        "name": "Black Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "or dark soy sauce",
+        "amount": "1.5",
+        "section": "Boat Noodle Broth",
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Boat Noodle Broth",
+        "isOptional": false
+      },
+      {
+        "name": "Rock Sugar",
+        "unit": "g",
+        "notes": "or 2 Tablespoons granulated sugar",
+        "amount": "25",
+        "section": "Boat Noodle Broth",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "as needed",
+        "section": "Boat Noodle Broth",
+        "isOptional": false
+      },
+      {
+        "name": "Liquid Pork",
+        "unit": "C",
+        "notes": "alt: beef blood, see note 2, or more if you like it thicker",
+        "amount": "⅓",
+        "section": "Boat Noodle Broth",
+        "isOptional": false
+      },
+      {
+        "name": "Pork Shoulder",
+        "unit": "g",
+        "notes": "sliced into ⅛-inch thick pieces",
+        "amount": "225",
+        "section": "Marinated Pork",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinated Pork",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Marinated Pork",
+        "isOptional": false
+      },
+      {
+        "name": "Rice Noodles",
+        "unit": "lb",
+        "notes": "1.5 mm, dried, size small",
+        "amount": "1",
+        "section": "Noodle Bowl",
+        "isOptional": false
+      },
+      {
+        "name": "Asian Style Meatballs",
+        "unit": "lb",
+        "notes": "see note 3, pork or beef",
+        "amount": "½",
+        "section": "Noodle Bowl",
+        "isOptional": false
+      },
+      {
+        "name": "Water Spinach",
+        "unit": "C",
+        "notes": "alt: spinach, cut in 2-inch pieces",
+        "amount": "2",
+        "section": "Noodle Bowl",
+        "isOptional": false
+      },
+      {
+        "name": "Bean Sprouts",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "Noodle Bowl",
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "sprigs",
+        "notes": "chopped",
+        "amount": "6",
+        "section": "Noodle Bowl",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion",
+        "unit": "stalk",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "Noodle Bowl",
+        "isOptional": false
+      },
+      {
+        "name": "Chili Vinegar",
+        "unit": null,
+        "notes": "highly recommended (see note 4)",
+        "amount": "0",
+        "section": "Optional Condiments for Serving",
+        "isOptional": false
+      },
+      {
+        "name": "Thai Basil",
+        "unit": "sprigs",
+        "notes": "optional",
+        "amount": "3",
+        "section": "Optional Condiments for Serving",
+        "isOptional": false
+      },
+      {
+        "name": "Fried Garlic & Garlic Oil",
+        "unit": null,
+        "notes": "optional",
+        "amount": "0",
+        "section": "Optional Condiments for Serving",
+        "isOptional": false
+      },
+      {
+        "name": "Crispy Pork Rind",
+        "unit": null,
+        "notes": "optional",
+        "amount": "0",
+        "section": "Optional Condiments for Serving",
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Chili Flakes",
+        "unit": null,
+        "notes": "to taste, optional",
+        "amount": "0",
+        "section": "Optional Condiments for Serving",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "54f87ee4cfbb1135bc6eb26ab64292744f6857ff16c2f381c3277f045440fb51",
+    "lineage_hash": "142cd3b71500514f9340daa78f9a1f90043581cff3c51606996ca875711fb6f8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://hot-thai-kitchen.com/boat-noodles/",
+    "fetchedAt": "2026-08-02T05:01:23.890Z"
+  },
+  "rawSource": "https://hot-thai-kitchen.com/boat-noodles/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

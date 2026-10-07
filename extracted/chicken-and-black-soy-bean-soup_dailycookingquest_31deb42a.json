@@ -1,0 +1,92 @@
+{
+  "recipe": {
+    "name": "Chicken and Black Soy Bean Soup",
+    "time": "2 hr 30 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place all ingredients in a soup pot and bring to a boil. Reduce heat and simmer for 1 to 2 hours or until chicken is tender and fully cooked and the bean is soft to your likeness. Adjust salt and sugar as needed.",
+      "Remove from heat and serve warm."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Free Range Chicken",
+        "unit": null,
+        "notes": "cut into 8 pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Dry Black Soy Bean",
+        "unit": null,
+        "notes": "soaked in cold water overnight and drained",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": null,
+        "notes": "cut each into halves",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": "medium",
+        "notes": "or 1 big, peeled and cut into slices",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2fa75728d42aa3ec8bf85c6fd28cf8fdd168c302867ab08aab96fbbd03ccef4f",
+    "lineage_hash": "605dc2b6e24e72bfa77b9d9e2c60172c34550c7965814ceedcd5ad93439d1122"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/chicken-and-black-soy-bean-soup.html",
+    "fetchedAt": "2026-08-02T08:21:12.382Z"
+  },
+  "rawSource": "https://dailycookingquest.com/chicken-and-black-soy-bean-soup.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

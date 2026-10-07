@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Bodega Kitty: An Alcohol-Free Pineapple Coconut Drink",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all the ingredients to a shaker with ice. Shake to chill and strain into the cup. Top with coconut foam.\nVanilla Cinnamon SyrupCombine 1 1/2 cups of white granulated sugar, 1 cup of hot/nearly boiling water, 2 cinnamon sticks and 1 1/2 oz. bourbon vanilla extract into a pot and stir until sugar is dissolved. Cool syrup in the refrigerator for 2 hours, then strain into a bottle for use. Keeps refrigerated for up to 1 month.\nCoconut FoamMix 5 oz. of demerara sugar, 6 oz. of coconut milk, 1/3 tsp. of salt, and 3 oz. of water together and pour into a whipped cream dispenser. Add 2 oz of egg white into the dispenser, shake, charge with ISI 3 times and you are ready to foam. An alternative to the ISI is to use a handheld mixer to whip the same ingredients and measurements. Keeps refrigerated for up to 5 days."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "bf8f40062af7412c66e82eb8efc5571270337f7731572f2ed6eb12dae98efaf7",
+    "lineage_hash": "1689a96c5b6d8df158834ed3233d11f696db673fd4d97dbe9a0293133676589e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bodega-kitty-an-alcohol-free-pineapple-coconut-drink/",
+    "fetchedAt": "2026-08-04T00:25:27.691Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bodega-kitty-an-alcohol-free-pineapple-coconut-drink/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

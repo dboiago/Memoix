@@ -1,0 +1,190 @@
+{
+  "recipe": {
+    "name": "Beer-Glazed Ham Hock",
+    "time": "4 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Soak the ham hocks in water for 2 days to remove excess salt, ensuring to change the water 3-4 times",
+      "Place the hocks into a pan of fresh cold water and bring to the boil. Simmer for 2-3 minutes, then place the pan under a cold tap and leave the tap running for around 15 minutes, until the hocks are cool enough to handle. Wash any blood or impurities off the hocks",
+      "Place the ham hocks into a vacuum bag with the honey, ginger and beer. Seal and place the bag in a large pan and cover with water. Bring to the boil, reduce the heat and then poach for 3 1/2-4 hours",
+      "If you don't have access to facilities for vac packing, simply use a heavy duty, heatproof, clean resealable bag and make sure to press out as much air as possible. Ensure to weigh down the bag with a strainer or something similar while cooking (without the hocks touching the bottom) to ensure the meat is completely submerged for the entire poaching process",
+      "Place the potatoes in a pan and fill with enough water to cover. Bring to the boil and cook for approximately 10 minutes, or until easily pierced with a fork. Drain and set aside to cool",
+      "Place the bacon in a large deep frying pan over a medium-high heat. Fry until browned and crisp, turning as necessary. Remove from the pan and set aside, reserving the fat for frying the onions",
+      "Add the onion to the bacon fat and cook over a medium heat until browned. Add the vinegar, water (or stock), sugar, salt and pepper to the pan. Bring to the boil, then add the potatoes and parsley. Crumble in half of the bacon. Heat through, then transfer to a serving dish. Crumble the remaining bacon over the top with the chopped chives and keep warm",
+      "Once the ham hock is cooked, remove the bag from the pan and leave to cool a little. Carefully cut the bag open, drain the liquid into a pan and reduce by half",
+      "Remove the skin from the hocks, leaving as much fat as possible on them. Place in a deep roasting tray and pour over the reduced liquid, which should be slightly syrupy",
+      "Place the hocks into the oven and cook until they have a nice golden glaze",
+      "Meanwhile, heat the butter in a large frying pan on a medium heat. Separate the lettuce leaves and add to the pan, leaving to wilt for 2-3 minutes. Season to taste and keep warm",
+      "Serve the hot ham hock on a bed of lettuce with a side of the warm potato salad"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ham Hocks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pilsner",
+        "unit": "ml",
+        "notes": null,
+        "amount": "330",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "g",
+        "notes": null,
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "slices",
+        "notes": "fresh",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Large White Potatoes",
+        "unit": "g",
+        "notes": "peeled and diced",
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bacon Rashers",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "small",
+        "notes": "finely diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "65",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Iceberg Lettuce",
+        "unit": null,
+        "notes": "cored and washed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Knob of Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9092ba546927158a2da9b3b0b8bfc02c30626dcdea8d496a85a2d1095bb02d83",
+    "lineage_hash": "8330eeda83d4970c60fb7276eb9d55f4b060ccb00be1723f5d98b0f385835943"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beer-glazed-ham-hock-recipe",
+    "fetchedAt": "2026-08-03T15:29:51.566Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beer-glazed-ham-hock-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

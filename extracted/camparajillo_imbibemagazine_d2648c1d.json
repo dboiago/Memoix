@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Camparajillo",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [
+      "Orange Twist"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to a mixing glass with ice, then stir until chilled, about 20 seconds. Pour into a glass over a large ice cube. Express then orange twist over the cocktail and discard. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "0af3487553dde365e429b4e7d23d7fcd9504dd2e16cb601279398fb55d8e9a8c",
+    "lineage_hash": "2f44999dd71da20fb477605fa720c08e8e281b3d844c61a2eafa2d3baccceb55"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/camparajillo/",
+    "fetchedAt": "2026-08-04T01:56:05.370Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/camparajillo/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

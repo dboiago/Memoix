@@ -1,0 +1,71 @@
+{
+  "recipe": {
+    "name": "Bean Salad",
+    "time": "1 hr 30 min",
+    "course": "salad",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "DK",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Rinse the varied beans under cold water and soak overnight. If using canned beans, drain and rinse thoroughly.",
+      "Cook the beans in salted boiling water until they are tender but still have a slight bite. For added flavor, you can add herbs to the water. Once cooked, drain any excess water and let the beans cool to room temperature.",
+      "Meanwhile, prepare the dressing: In a small bowl, whisk together the Forager’s Vinaigrette and Mushroom Garum. Feel free to adjust the proportions to your liking.",
+      "In a large mixing bowl, combine the cooled beans and chopped mixed herbs. Pour the dressing over the beans and herbs, tossing gently to coat everything evenly, season them with salt and pepper to taste.",
+      "Let the bean salad marinate for at least 30 minutes to allow the flavors to meld together before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beans",
+        "unit": "g",
+        "notes": "black, red, white, etc., assortment of beans, dried or canned",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Herbs",
+        "unit": "bunches",
+        "notes": "parsley, mint, cilantro, basil, washed and finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mushroom Garum",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Foragers Vinaigrette",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "da182264c09797cccadcb43056401b307b2c2a50be500ae4a9d50b30b567ed6b",
+    "lineage_hash": "9d3dfd44a2776ff1204d6caa24eb3a222e5c4a8ac580f416f385f52c74244687"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://nomaprojects.com/blogs/recipes/bean-salad",
+    "fetchedAt": "2026-08-01T21:19:33.899Z"
+  },
+  "rawSource": "https://nomaprojects.com/blogs/recipes/bean-salad",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

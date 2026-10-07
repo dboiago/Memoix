@@ -1,0 +1,141 @@
+{
+  "recipe": {
+    "name": "Candied Spiced Pecans",
+    "time": "35 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "164",
+      "carbohydrateContent": "8",
+      "fatContent": "14",
+      "proteinContent": "2"
+    },
+    "directions": [
+      "Preheat the oven to 350 °F. Line a half sheet pan with parchment paper or a silicone baking mat.",
+      "In a large bowl, whisk 1&#32;large egg white until frothy. Add 10 oz&#32;Pecan Halves and toss to coat the nuts with the egg white. Spread the pecans on the prepared baking pan. Bake until the pecans are crisp and the egg white is dry (about 7-8 minutes). Set the pan with the nuts aside.",
+      "While the nuts are baking, use the same large bowl from the nuts and combine 2 oz&#32;granulated sugar, ¼ teaspoon&#32;cloves, ¼ teaspoon&#32;nutmeg, ¼ teaspoon&#32;ginger, 2 teaspoons&#32;cinnamon  and 1 ½ teaspoons&#32;table salt.",
+      "In a large saucepan combine 2 tablespoons&#32;dark rum, 1 oz&#32;unsalted butter, 1 oz&#32;brown sugar and 1 tablespoon&#32;vanilla extract and cook until bubbling and the sugar is melted. Add the nuts to the pan and toss until the pecans are coated with the syrup.",
+      "Toss the warm nuts into the bowl with the sugar/spice mix to coat.",
+      "Return the nuts to the sheet pan and bake until golden and crispy, about 7-8 minutes."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Egg White",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pecan Halves",
+        "unit": "oz",
+        "notes": "see note",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Rum",
+        "unit": "Tbsp",
+        "notes": "optional",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "oz",
+        "notes": "2 tablespoons",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9efbc961ab012c05f2cfc6cac5e1cec3bf44da216f2037d63aecd6365933b0fd",
+    "lineage_hash": "56d61a8dab2e0ab9bac64326ad840055a40d568017bef5bf52625fabcd374bea"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2017/09/28/candied-spiced-pecans/",
+    "fetchedAt": "2026-08-02T02:11:31.816Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2017/09/28/candied-spiced-pecans/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

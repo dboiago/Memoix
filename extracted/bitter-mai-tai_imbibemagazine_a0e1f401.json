@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Bitter Mai Tai",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine ingredients with ice in a shaker and shake to chill. Strain into a glass filled with crushed ice. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "4f5ec2253da52ed38be3660b48ff57b36e3933049ca680a41979d707dae1178a",
+    "lineage_hash": "4980726fb1d08385dd6c42ede348719107666e5a6a03d89022c12c75524c8757"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bitter-mai-tai-recipe/",
+    "fetchedAt": "2026-08-03T21:05:51.527Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bitter-mai-tai-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

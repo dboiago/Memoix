@@ -1,0 +1,134 @@
+{
+  "recipe": {
+    "name": "Carbonade Valdostana",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Melt half of the butter in a frying pan and season the beef with salt and pepper. Dust in the flour, then add to the pan once the butter is foaming. Cook until well browned on all sides, then set aside",
+      "Melt the rest of the butter in the pan and add the sliced onions. Cook for a few minutes until soft, then add a dash of red wine along with the rosemary, sage, cloves, bay leaves and juniper berries. Season with a pinch of salt and cook for 5 minutes until soft and aromatic",
+      "Add the beef back into the pan along with the rest of the red wine. Simmer for 45 minutes or until the beef is tender and the wine has reduced to a sauce consistency",
+      "Taste and add more seasoning if needed. Serve immediately on a bed of buttery polenta"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": null,
+        "notes": "sliced into wedges",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bottle of Red Wine",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sage",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Juniper Berries",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Rump",
+        "unit": "g",
+        "notes": "sliced into 7x1.5cm strips",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "67dd0ed8ec2c4a3ac673598d80a3335bd0d92bbcfdbd716f341b98689e3c0146",
+    "lineage_hash": "47572a62f55597c709f896644b095775d9584001882064877ddc3a3dd0345fee"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/carbonade-valdostana-recipe",
+    "fetchedAt": "2026-08-01T16:31:01.924Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/carbonade-valdostana-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

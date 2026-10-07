@@ -1,0 +1,35 @@
+{
+  "recipe": {
+    "name": "Après Ski, An Old Fashioned Variation",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Stir all of the ingredients with ice, strain into a rocks glass over a single large ice cube, then garnish.",
+      "Pecan-Infused Bourbon: In a small skillet over medium heat, toast 150 grams of pecans until lightly golden, about 5 minutes. Combine the nuts with one 750 ml. bottle of bourbon (McLuen uses Buffalo Trace) in a sealable, non- reactive container, such as a glass jar. Store in a dark, cool place for 1 week, then strain through a fine mesh strainer or cheesecloth. If any particles remain, strain again through a coffee filter. The infused bourbon will keep at room temperature for 1 month. To make the infusion by sous vide, set the temperature on the immersion circulator to 145 degrees F. Combine the toasted pecans and bourbon in a sealable, heatproof bag and place in the water bath for 2 hours. Transfer the bag to an ice bath and cool to room temperature, then strain and bottle for use."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "2218dd522869f17106f60702a1457dcab65d5e1cc5e0ca7a5c42755e838dd4ac",
+    "lineage_hash": "c9b3b3ba569c4ac300aa2da49cbe3d9c3515ec2cad70e8d8d7f5835ce85288c3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/apres-ski-an-old-fashioned-variation/",
+    "fetchedAt": "2026-08-04T00:08:55.331Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/apres-ski-an-old-fashioned-variation/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

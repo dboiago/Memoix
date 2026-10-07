@@ -1,0 +1,118 @@
+{
+  "recipe": {
+    "name": "Brown Butter Flourless Almond Cake",
+    "time": "50 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "300",
+      "carbohydrateContent": "24",
+      "fatContent": "20",
+      "proteinContent": "7"
+    },
+    "directions": [
+      "Preheat the oven to 350 °F. Butter and flour a 9-inch spring-form cake pan, or butter the pan and line the bottom of the pan with a round of parchment paper.  Set aside 2 tablespoons of granulated sugar.",
+      "Melt 4 oz&#32;unsalted butter in a small saucepan, cook until the milk solids sink to the bottom of the pan and become brown. Drain the butter into a medium bowl, leaving the solids in the pan. Stir 2 tablespoons&#32;dark rum, 1 teaspoon&#32;vanilla extract and finely grated zest from 1 orange into the brown butter and set aside.",
+      "Put 6&#32;large eggs, 3/4 cup (6 oz) of sugar, ½ teaspoon&#32;cream of tarter and ¼ teaspoon&#32;salt in a mixer bowl. Set the bowl over a pan of simmering water (don&#39;t let the bowl touch the water) and whisk until the eggs are slightly warmer than body temperature.",
+      "Put the bowl onto the mixer and whisk until the eggs are tripled in volume and the color turns pale yellow. When the whisk is lifted it should leave a &quot;ribbon&quot; of eggs over the surface.",
+      "Sprinkle half of 6 oz&#32;almond flour over the egg mixture and use a balloon whisk to fold, repeat with the remaining almond flour. Whisk 1 cup of the batter into the browned butter to lighten the butter. Fold the brown butter mixture back into the batter just until combined. Pour the batter into the prepared pan. Sprinkle the reserved 2 tablespoons of sugar evenly across the top of the batter.",
+      "Bake until the batter is set and a toothpick inserted in the center comes out with a few wet crumbs, about 25 to 30 minutes. Cool 10 minutes before releasing the sides of the spring form pan. The cake will settle quite a bit as it cools, forming a ridge around the edges and a crackled top.",
+      "Serve slightly warm or at room temperature."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "¾ cup plus 2 tablespoons",
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Rum",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Zest From 1 Orange",
+        "unit": null,
+        "notes": "finely, grated",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream of Tarter",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almond Flour",
+        "unit": "oz",
+        "notes": "1 ½ cups",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "49c2ad2bb4670e35f299fff655502e082ac17b86adb05474c3009167dd49a015",
+    "lineage_hash": "8e80be8e92357c6dca7c682ec221a63c816ce571269e5bcaa97a8488dada21bd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2020/05/07/flourless-almond-cake/",
+    "fetchedAt": "2026-08-01T18:18:18.790Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2020/05/07/flourless-almond-cake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Brand New Key",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [
+      "Cucumber Slices"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all the ingredients to the shaker with ice. Shake and fine strain into a chilled glass. Garnish.\nTarragon-Infused Reposado TequilaAdd 3 sprigs of tarragon to a 750ml bottle of reposado tequila and allow to sit for 24 hours. Strain it. Note: Taste before straining; it can go another 12-24 hours if needed."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "cf7a28160d1c300b401427f4d3a119755855b5841784e639c5b823e097553c03",
+    "lineage_hash": "15c5e06ad0c227472a8f44bc36c01dc8f068cb84d3903ee4321d77dfa44fa216"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/brand-new-key-tarragon-tequila-cocktail/",
+    "fetchedAt": "2026-08-04T01:55:10.254Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/brand-new-key-tarragon-tequila-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

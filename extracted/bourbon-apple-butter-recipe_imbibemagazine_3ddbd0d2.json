@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Bourbon Apple Butter",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Peel, core and slice the apples. Add the apples, sugar and spices to the pot and cook on medium-low heat until the apples are soft, about 30 minutes. Transfer the mixture to a blender or food processor and purée until smooth. Pour the mixture back into the pot and add the bourbon. Continue cooking over low heat until the liquid has reduced and the mixture is thick and deep brown, about another 30 minutes. Transfer the apple butter into 1 quart or 2 pint jars. The final consistency will be tight and smooth. Store in the refrigerator for up to 1 week, or preserve for long-term storage."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "8fb111e17bb9abdecde5cca336e607333d28b0e7cc0541bb791fcac604522e5a",
+    "lineage_hash": "ddb62de1b77aad3da1f9b72564511fc06cbc68f54526f3a0e19e1eb4517a4b09"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bourbon-apple-butter-recipe/",
+    "fetchedAt": "2026-08-03T18:03:44.548Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bourbon-apple-butter-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

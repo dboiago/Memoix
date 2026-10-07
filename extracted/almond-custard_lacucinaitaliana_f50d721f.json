@@ -1,0 +1,101 @@
+{
+  "recipe": {
+    "name": "Almond Custard",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Soak the gelatin in cold water. Blend the almonds with the almond milk, then filter the mixture through a sieve lined with a cheesecloth. Add the cream, 1 cup of sugar, the amaretto liqueur, and combine. Pour everything into a saucepan. Remove 2/3 cup of the liquid and use it to dissolve the cornstarch in a small bowl.",
+      "Bring the almond milk and cream to a boil, then add the dissolved cornstarch away from the heat. Bring back to a boil, turn off the heat, and melt in the drained gelatin. Brush the mold with a bit of the liqueur and pour in the mixture. Let cool, then refrigerate for at least 4 hours.",
+      "FOR THE SAUCE: In a saucepan, cook the grapes with 3/4 cup of sugar. Cook for 10-15 minutes until they start to fall apart and create a sauce. Top the custard with the sauce"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Almond Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Isabella Grapes",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "1⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almonds",
+        "unit": "oz",
+        "notes": "blanched",
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amaretto Liqueur",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatin Sheets",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8a31adae6a4d63c56ee0f20384433a6d1f9c36a92cb361150740fd1f490f34a1",
+    "lineage_hash": "c7fce69d1cd48b4a42715e057670fe029ca71811fa52b8b47b5dcf3880d980c5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/almond-custard",
+    "fetchedAt": "2026-08-03T08:02:13.213Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/almond-custard",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

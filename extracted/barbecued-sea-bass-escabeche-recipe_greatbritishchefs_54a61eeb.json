@@ -1,0 +1,146 @@
+{
+  "recipe": {
+    "name": "Barbecued Sea Bass Escabeche",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, place the sea bass in a shallow dish with the orange juice. Season with salt and pepper, then cover and marinate in the fridge for 2 hours",
+      "After marinating, remove from the fridge and drain the juice into a cup or jug, reserving for use in the sauce",
+      "Add a dash of sunflower oil to a pan and place over a medium heat. Sweat down the chopped onions and garlic for 2–3 minutes without allowing them to colour, stirring regularly so that they become soft and translucent",
+      "Add the chopped tomatoes and pepper to the onions and garlic, along with the coriander, lime juice and sugar. Stir together, then pour in the reserved orange  juice from the marinade",
+      "Bring the sauce to the boil then remove from the heat and allow to cool while preheating the barbecue",
+      "Place each sea bass in the centre of a banana leaf (or a large piece of foil) and slash a few times on each side with a sharp knife to help the flavours penetrate while cooking. Spoon over the sauce, dividing equally between the 4 parcels",
+      "Wrap the banana leaves around each fish to seal completely. Place on the barbecue grill and cook for 20–25 minutes, turning the parcels over a few times during cooking to ensure the fish cooks through evenly",
+      "Check the fish is cooked through – it should flake easily and have reached 58–60°C if using a temperature probe. Serve straight from the banana leaf, garnished with a few extra sprigs of coriander"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Sea Bass",
+        "unit": null,
+        "notes": "cleaned and gutted",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "ml",
+        "notes": "fresh",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Banana Leaves",
+        "unit": null,
+        "notes": "optional, for cooking",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "g",
+        "notes": "skinned and deseeded",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Pepper",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "g",
+        "notes": "fresh, chopped, plus extra to garnish",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sunflower Oil",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "721ad247ca55bec9004154e29579b514e5307db0c9e2eece412906f3e2869cbb",
+    "lineage_hash": "a743595240a8e4a1a5e00e976451668b4e114f967e02172e2cfeb6901132f6c2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/sea-bass-escabeche-recipe",
+    "fetchedAt": "2026-08-03T12:43:32.904Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/sea-bass-escabeche-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

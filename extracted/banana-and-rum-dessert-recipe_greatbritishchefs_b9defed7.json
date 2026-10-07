@@ -1,0 +1,160 @@
+{
+  "recipe": {
+    "name": "Banana and Rum Dessert",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the ice cream, place the banana, cream and sugar in a blender and blitz on a high speed until smooth. Pulse in the rum, then pour straight into an ice cream maker. Churn according to the manufacturers' instructions and store in the freezer until required",
+      "For the passion fruit syrup, bring the water and sugar to the boil in a medium saucepan until the sugar dissolves. Scoop all of the passion fruit pulp (including the seeds) into a bowl, then add to the syrup mixture. Return to a gentle simmer and reduce until a thin, syrupy consistency has been reached",
+      "For the white chocolate sauce, melt the chocolate in a bain marie. Bring the cream and syrup to the boil, then slowly stir into the melted white chocolate until smooth. Pass through a fine strainer and set aside until required",
+      "For the crumble, rub the butter into the flour to form a rough breadcrumb-like texture. Mix in the sugars and walnuts until evenly combined",
+      "Spread the crumble mix evenly onto a baking tray lined with parchment paper and bake in the oven for 10-15 minutes until lightly golden and crunchy. Remove and allow to cool",
+      "To serve, warm the white chocolate sauce and pour into the base of each bowl. Add a scoop of the ice cream on top, followed by the syrup and crumble"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Banana",
+        "unit": "g",
+        "notes": null,
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "330",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rum",
+        "unit": "ml",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Passion Fruits",
+        "unit": null,
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "375",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "450",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stock Syrup",
+        "unit": "ml",
+        "notes": null,
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "firm",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Walnuts",
+        "unit": "g",
+        "notes": "peeled and chopped",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Demerara Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "80a16e6e3be0271e997ed85bd20ca5503988f43967b155ab0339d7d961709edb",
+    "lineage_hash": "e57441c32440b780463d90140d56182dba2d72a7bc36b0e90e6e1f843f66c044"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/banana-rum-dessert-recipe",
+    "fetchedAt": "2026-08-03T18:03:20.277Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/banana-rum-dessert-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

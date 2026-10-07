@@ -1,0 +1,115 @@
+{
+  "recipe": {
+    "name": "Apricot Lavender Shortbread",
+    "time": "40 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "295",
+      "carbohydrateContent": "36",
+      "fatContent": "16",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "Roll half the dough and put it on a sheet or parchment paper. Spread the apricot preserves over the dough.",
+      "Roll the second piece of dough and place it on top of the preserves.",
+      "Crimp the edges, score into 12 wedges with a knife and poke with a fork to create steam vents.",
+      "Allow the shortbread to cool before cutting into wedges."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Granulated Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Lavender sugar",
+        "isOptional": false
+      },
+      {
+        "name": "Lavender Blossoms",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Lavender sugar",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "room temperature",
+        "amount": "8",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Lavender Blossoms",
+        "unit": "tsp",
+        "notes": "adjust to taste",
+        "amount": "2",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "oz",
+        "notes": "2 cups, see note",
+        "amount": "10",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Apricot Lavender Preserves",
+        "unit": "C",
+        "notes": "see note 1",
+        "amount": "½",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": "for egg wash",
+        "amount": "1",
+        "section": "Assembly",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b49834f89cb577aa9dcbe5bc904f80367f3a87d84c4ceb8ceade525a8882c9b8",
+    "lineage_hash": "a6b046ac7bb963d41dc7ea7fee233c2b4bd5c57c659825795f8265dfe44b295c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2017/06/28/apricot-lavender-shortbread/",
+    "fetchedAt": "2026-08-02T07:52:12.852Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2017/06/28/apricot-lavender-shortbread/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

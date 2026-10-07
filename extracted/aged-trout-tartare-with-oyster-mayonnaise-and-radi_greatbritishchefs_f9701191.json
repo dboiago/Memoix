@@ -1,0 +1,135 @@
+{
+  "recipe": {
+    "name": "Aged Trout Tartare with Oyster Mayonnaise and Radishes",
+    "time": "30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the sliced radishes, olive oil, chardonnay vinegar and honey together and set aside to marinate",
+      "Dice the sea trout into a smallish dice, and keep cool in a mixing bowl over ice. Add the cucumber, the juice of 2 lemons and some salt to season and mix well to combine",
+      "Shuck the oysters and place them and their juices into a container with the juice of the remaining lemon. Using a hand blender blitz the oysters and lemon juice to a puree",
+      "Very slowly whisk in the rapeseed oil (drop by drop at first, then in a thin stream) to make a mayonnaise. Season with salt, transfer the mixture to a piping bag and refrigerate",
+      "Divide the trout mixture between 6 plates, then pipe on a few dots of oyster mayonnaise. Cover with the marinated radishes and a few sprigs of dill. Grate a little horseradish over the top and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Green Meat Radishes",
+        "unit": null,
+        "notes": "sliced as thinly as possible",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chardonnay Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Aged Sea Trout",
+        "unit": "g",
+        "notes": "or use fresh sea trout, skinned and pin-boned",
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber",
+        "unit": null,
+        "notes": "cut into 0.5cm dice",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemons",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oysters",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Horseradish to Taste",
+        "unit": null,
+        "notes": "grated",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dill",
+        "unit": "bunch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Season",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c40f3dd9ef1bbdca2cd6f01ec7c7971ec5d2b7dc39f8f37a0da1f3bdf586d4cc",
+    "lineage_hash": "26b84537ae55ef9f0a2ea5354eb9f34a77467d09e6fe10fc01d60644f5d3614c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/trout-tartare-oyster-mayonnaise-radishes-recipe",
+    "fetchedAt": "2026-08-02T18:10:45.910Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/trout-tartare-oyster-mayonnaise-radishes-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

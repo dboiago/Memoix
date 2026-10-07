@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Boozy Thin Mint Milkshake",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Glass",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all ingredients and blend until smooth. Pour into a glass and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "1c694baf41a291a0628029678c50a4d67b9c753364520a5a3d4237085ba9cc85",
+    "lineage_hash": "c19105fac517d24ae809b150745d782c5785455915c662b1171314f164b2c46b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/boozy-thin-mint-milkshake-recipe/",
+    "fetchedAt": "2026-08-03T20:10:48.737Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/boozy-thin-mint-milkshake-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

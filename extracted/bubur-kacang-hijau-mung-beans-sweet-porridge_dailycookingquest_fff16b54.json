@@ -1,0 +1,69 @@
+{
+  "recipe": {
+    "name": "Bubur Kacang Hijau (Mung Beans Sweet Porridge)",
+    "time": "1 hr 5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Wash and drain the dried mung beans to remove any dirt.",
+      "Place mung beans, dried tangerine peel, and water in a soup pot and bring to a boil. Cover and reduce the heat to a simmer. Cook until the beans burst and are soft and tender. This should take about 45 minutes to 1 hour.",
+      "Add sugar and stir until fully dissolved. Turn off the heat. Serve the porridge hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gram Dried Mung Beans (indonesian: Kacang Hijau)",
+        "unit": null,
+        "notes": "washed and drained",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tangerine Peel",
+        "unit": null,
+        "notes": "dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": "4 cup, *",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Sugar (regular, Brown, or Coconut Palm Sugar)",
+        "unit": null,
+        "notes": "or to taste",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d0a5cc6857a1ee6ce885e662f9687b3eb2445fe230da7e3a2af027cef14c7a3c",
+    "lineage_hash": "fbdc8ddbebc7e3fb036d21ba2200681b7a5c396f17449d8018ec0cf732aa5763"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/bubur-kacang-hijau-mung-bean-sweet-porridge.html",
+    "fetchedAt": "2026-08-01T22:21:28.611Z"
+  },
+  "rawSource": "https://dailycookingquest.com/bubur-kacang-hijau-mung-bean-sweet-porridge.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

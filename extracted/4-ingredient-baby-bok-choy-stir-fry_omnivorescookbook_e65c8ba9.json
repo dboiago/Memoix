@@ -1,0 +1,94 @@
+{
+  "recipe": {
+    "name": "Baby Bok Choy Stir Fry",
+    "time": "15 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "59",
+      "carbohydrateContent": "5.2",
+      "fatContent": "3.7",
+      "proteinContent": "2.7"
+    },
+    "directions": [
+      "Rinse the baby bok choy. Tear apart the large leaves and remove the tough ends (see the blog post above for more detailed instructions and pictures). Wash thoroughly to remove any dirt between the leaves and drain in a colander.",
+      "Heat 1 tablespoon of oil in a large skillet (nonstick or carbon steel) over medium-high heat until hot. Add the garlic and stir a few times until fragrant.",
+      "Add the baby bok choy, stir, and cook for 1 to 2 minutes, until the bok choy is evenly coated with oil.",
+      "Add sugar and swirl in the light soy sauce. Stir a few times to mix the sauce.",
+      "Cover and reduce to medium heat. Cook for 30 seconds to 1 minute, until the baby bok choy turns tender, but not to the point of being mushy. You can uncover the pan to check on the progress in the meantime.",
+      "Uncover the pan. Carefully taste the baby bok choy. Let cook for another 30 seconds or so to absorb the sauce. Once done, stop the heat and immediately transfer the baby bok choy to a serving plate. Sprinkle with toasted sesame seeds, if using.",
+      "Serve hot as a side."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Baby Bok Choy",
+        "unit": "oz",
+        "notes": "500 g",
+        "amount": "18",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "or vegetable oil",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "or soy sauce",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "Tbsp",
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Seeds",
+        "unit": null,
+        "notes": "for garnish (Optional)",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4640d546351291049bd4220d61ad0a9822df313fa0607e67e22b470d5ef93d64",
+    "lineage_hash": "948445ec721e6aa06cb84ec0125ba11a8787c60d80591e21da7dafb9979d21b8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/baby-bok-choy-stir-fry/",
+    "fetchedAt": "2026-08-02T03:20:42.331Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/baby-bok-choy-stir-fry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

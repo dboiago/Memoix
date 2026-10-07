@@ -1,0 +1,171 @@
+{
+  "recipe": {
+    "name": "Bharwa Shimla Mirch (Spicy Potato Stuffed Bell Peppers)",
+    "time": "1 hr",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "195",
+      "carbohydrateContent": "22",
+      "fatContent": "11",
+      "proteinContent": "4"
+    },
+    "directions": [
+      "Before you start, wash the bell peppers and then dry them. Cut the top and discard. Then remove the seeds and stems from inside to make it hollow for the filling.&nbsp;You may also need to cut down the bottom of some of the peppers slightly if they are wobbly. This is to make sure that they are able to stand upright in the pan while cooking.",
+      "For the filling, start by boiling the potatoes until soft and done. You can do this using a regular pressure cooker, 8-9 whistles on high heat or use an Instant Pot, 10-12 minutes on high pressure with natural pressure release.",
+      "Let the potatoes cool down, then peel and mash with a potato masher. Set aside.",
+      "Heat 1 tablespoon oil in a pan on medium heat. Once the oil is hot, add the cumin seeds, fennel seeds and crushed coriander seeds. Saute for 30 seconds until the seeds sizzle.",
+      "Then add the hing, followed by chopped onion and green chili and stir. Saute the onions for 3 minutes until soften",
+      "Add in the mashed potatoes and mix. Then add the spices- coriander powder, garam masala, amchur, red chili powder. Also add the salt. Mix everything together.&nbsp;",
+      "Cook for 1 minute and then add in chopped cilantro. Mix and remove pan from heat.",
+      "Now, take each of the prepared bell peppers and fill them all the way to the top with the prepared potato mixture. Press tightly so that potatoes don't fall out while cooking the peppers.",
+      "Heat the remaining 2 tablespoons of oil in the pan on medium heat. Once oil is hot, lower the heat to low. Add the prepared bell peppers into the pan carefully. Close the lid and cook for 3 minutes.",
+      "After 3 minutes, change sides of the bell pepper using a tong and cook again for 3 minutes. After 3 minutes again change the side. Basically you cover and cook for around 20 to 25 minutes on low heat, changing sides of the pepper every 3 minutes or so making sure it gets cooked from each side. Make sure to also turn them upside down so that the potato filling gets nicely roasted from top. Remember to keep the heat to low at all times.&nbsp;",
+      "The skin of the peppers will soften and wrinkle up once cooked.",
+      "Once done, remove each pepper from the pan carefully using a tong. Serve bharwa shimla mirch with roti or paratha and enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Grams Potatoes",
+        "unit": null,
+        "notes": "boiled & mashed, around 2-3 medium potatoes",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bell Peppers (capsicum/shimla Mirch)",
+        "unit": "small",
+        "notes": "each weighing around 75-80 grams",
+        "amount": "6-7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": "divided, I used avocado oil",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Coriander Seeds",
+        "unit": "tsp",
+        "notes": "crushed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hing",
+        "unit": "tsp",
+        "notes": "asafoetida",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "medium",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chili",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amchur",
+        "unit": "tsp",
+        "notes": "dried mango powder",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chili Powder",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "663dc15888f3ea676fc15cdc69081fa0dc1d3a82a2aa2e55d77e56bb100b841c",
+    "lineage_hash": "196f43957f9d1c20b5bdb7caec5fe8afe0f10f87cbaa5e439d254425e25bf793"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/bharwa-shimla-mirch/",
+    "fetchedAt": "2026-08-01T21:52:04.238Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/bharwa-shimla-mirch/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

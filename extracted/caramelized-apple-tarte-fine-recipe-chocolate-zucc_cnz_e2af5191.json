@@ -1,0 +1,82 @@
+{
+  "recipe": {
+    "name": "Caramelized Apple Tarte Fine",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 175°C (350°F).",
+      "Line a baking sheet with parchment paper and brush the parchment paper with half the melted butter to form a 25-cm (10-inch) disk shape. Sprinkle that zone with half the sugar.",
+      "Roll out the puff pastry on a lightly floured work surface until you can cut out a 25-cm (10-inch) circle using an upturned cake pan or plate as a template. (Stack up the scraps of puff pastry and keep well-wrapped in the fridge to make palmiers.)",
+      "Transfer the pastry circle cautiously to the prepared sheet, placing it exactly on top of the buttered and sugared area.",
+      "Arrange the apple slices in an overlapping pattern on top of the pastry, starting from the outside and leaving a 1.5-cm (1/2-inch) margin. Brush the margin and the apples with the remaining butter, and sprinkle with a touch of salt.",
+      "Insert into the oven and bake for 30 minutes, until the apple slices feel soft when pierced with the tip of a knife.",
+      "Sprinkle with the remaining sugar and place under the broiler for 2 minutes, watching closely, until the sugar is caramelized.",
+      "Let cool and serve, slightly warm or at room temperature."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Grams Butter",
+        "unit": null,
+        "notes": "high-quality unsalted, melted",
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Sugar",
+        "unit": null,
+        "notes": "blond unrefined cane",
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Puff Pastry",
+        "unit": null,
+        "notes": "quick and easy, can substitute store-bought all-butter, thawed if frozen",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Apples",
+        "unit": null,
+        "notes": "3 small, peeled, cored, thinly sliced into circles",
+        "amount": "450",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": "fine sea",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8b26c6a2535cf5a958a4ad6718448ecf83860c7cbeecca4a260facc80ff99d9c",
+    "lineage_hash": "fdd417795cacf28b84aeab98fd124ca1a36bc71f95ed232712410097776bdd29"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/cakes-tarts/caramelized-apple-tarte-fine-recipe/",
+    "fetchedAt": "2026-09-30T19:20:27.639Z"
+  },
+  "rawSource": "https://cnz.to/recipes/cakes-tarts/caramelized-apple-tarte-fine-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

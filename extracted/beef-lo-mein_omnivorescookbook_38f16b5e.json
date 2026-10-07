@@ -1,0 +1,177 @@
+{
+  "recipe": {
+    "name": "Beef Lo Mein",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "291",
+      "carbohydrateContent": "21.9",
+      "fatContent": "15.6",
+      "proteinContent": "16.4"
+    },
+    "directions": [
+      "Combine the steak with the marinade ingredients in a medium-sized bowl. Mix until well coated and marinate for 15 minutes.",
+      "Mix the sauce ingredients in a small bowl until the sugar is dissolved.",
+      "Cook the noodles according to package instructions. Rinse under running cold water to stop cooking. Drain and toss with a drizzle of sesame oil to prevent sticking.",
+      "Add 1 tablespoon of oil to a large skillet and heat over high heat until hot. Spread the marinated steak without overlapping. Cook without disturbing until the bottom turns golden brown, 1 minute or so. Flip to cook the other side until browned but the inside is still a bit pink. Transfer the beef to a big plate and set aside.",
+      "Reduce the heat to medium-high and add 1 tablespoon of oil. Add the garlic. Stir a few times to release the fragrance, about 30 seconds.",
+      "Add the white part of the green onion, onions, carrots, and cabbage. Stir fry until the cabbage begins to wilt, 2 to 3 minutes.",
+      "Add the noodles and drizzle the remaining 1 tablespoon oil on top. Toss the noodles a few times to mix with the oil.",
+      "Pour in the sauce and toss everything together.",
+      "Add back the cooked steak and toss again, until the sauce is fully absorbed.",
+      "Add the bean sprouts and green onion greens. Stir a few times until the bean sprouts are just wilted but remain crispy. Transfer everything to serving plates and serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Flank Steak",
+        "unit": "oz",
+        "notes": "cut against the grain into 1/4” (4 cm) thick slices",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lo Mein Noodles",
+        "unit": "oz",
+        "notes": "or 6 oz / 170 g dried lo mein / chow mein noodles, fresh",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "tsp",
+        "notes": "or dry sherry",
+        "amount": "1",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "or soy sauce",
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "divided",
+        "amount": "3",
+        "section": "Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "2",
+        "section": "Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "sliced into 1” (2 cm) pieces, greens and whites separated",
+        "amount": "4",
+        "section": "Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": "large",
+        "notes": "cut into matchsticks",
+        "amount": "½",
+        "section": "Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Napa Cabbage Leaves",
+        "unit": "pcs",
+        "notes": "chopped",
+        "amount": "5",
+        "section": "Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Bean Sprouts",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Stir Fry",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a5d51873979c8d802c1e58b875e6ea32631f847222a12c79d5e97ffa518bd81c",
+    "lineage_hash": "9cdb806fae2892e0d6dec32523995c115b30da272641fc71200366541cb96d9c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/beef-lo-mein/",
+    "fetchedAt": "2026-08-02T10:36:10.713Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/beef-lo-mein/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

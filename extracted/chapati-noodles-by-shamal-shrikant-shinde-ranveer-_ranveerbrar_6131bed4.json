@@ -1,0 +1,125 @@
+{
+  "recipe": {
+    "name": "Chapati Noodles",
+    "time": "17 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a pan heat oil and add ginger, onion, carrot. Saute for 2 minutes on high flame.",
+      "Then add capsicum and saute for a minute. After that add tomato ketchup, soya souce and salt as per your taste. Mix well. Saute for few seconds.",
+      "Then add chapati noodles and mix it together well. Cover with lead and cook for 2-3 minutes. In the last add chopped coriander leaves and serve it."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chapati",
+        "unit": null,
+        "notes": "leftover, cut in noodles shape",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Capsicum",
+        "unit": "small",
+        "notes": "julienned",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": "small",
+        "notes": "julienned",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cabbage",
+        "unit": "C",
+        "notes": "shredded",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Ketchup",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soya Souce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": null,
+        "notes": "for garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9c6c850e6df5de1e2ac44a60604c1fe90f2ca8098a6bced154a4a67b6c44a21e",
+    "lineage_hash": "d640eddbed234f8c1c13cd7b3e0e5ca91a8a0368dfc2d3424c2814b935edbeda"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/user-recipes/chapati-noodles-by-shamal-shrikant-shinde/",
+    "fetchedAt": "2026-08-02T21:21:09.495Z"
+  },
+  "rawSource": "https://ranveerbrar.com/user-recipes/chapati-noodles-by-shamal-shrikant-shinde/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

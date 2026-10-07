@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Bicerin",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Stemmed",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pour the melted chocolate into the bottom of a small (6 oz.) stemmed glass. Pour the half-and-half and simple syrup into a steaming tin and use the steam wand on your espresso maker to heat and froth. (Alternately, heat the liquid in a microwave or small saucepan until steaming, then froth with a milk frother.) Slowly pour the frothy milk on top of the chocolate—it will sit on top of the chocolate, without blending.",
+      "Meanwhile, pull a shot of espresso (a double is best, but a single will also work), or prepare espresso on a stovetop maker. Slowly pour the espresso into the middle of the foamed dairy so that it layers itself below the foam, which will rise to the top.",
+      "Note: Melting a small amount of chocolate can be accomplished in a microwave, but go slowly and stir often, because chocolate burns easily. Run the microwave for about 10 seconds at a time, checking the chocolate after each run and stirring to help it melt uniformly."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "2e553fed57207ffbd6c6322dbad7d19ed0690389c5bcdfb945b63adf9ca8b190",
+    "lineage_hash": "a7eccb337714ed1a6bbd57f179a15f7f651f0c1df756f0544fb3dabb36382c44"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bicerin/",
+    "fetchedAt": "2026-08-04T01:04:28.486Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bicerin/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

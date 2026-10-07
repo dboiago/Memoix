@@ -1,0 +1,177 @@
+{
+  "recipe": {
+    "name": "Red Millet Khichu",
+    "time": null,
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a pan, add red millet flour and dry roast it.",
+      "In a bowl add curd, water, salt and whisk well.",
+      "In another pan add oil, chopped green chillies and fry them. Remove few fried green chillies and keep aside.",
+      "Now add chopped ginger, spring onion, carrot, nachni flour, curd mixture, water, salt in a same pan, mix well and let it cook. Add french beans.",
+      "For the lassi, in a blender, add popcorn, curd, sugar, water and blend.",
+      "Garnish the dish with raw mango, fried green chillies, sesame seeds, roasted cumin powder and popcorn.",
+      "Serve the dish with popcorn lassi."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Nachani / Ragi/ Red Millet Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Khichu",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Khichu",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": "as required",
+        "amount": "0",
+        "section": "For Khichu",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Khichu",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": "For Khichu",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Khichu",
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Khichu",
+        "isOptional": false
+      },
+      {
+        "name": "French Beans",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Khichu",
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onion",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Khichu",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Khichu",
+        "isOptional": false
+      },
+      {
+        "name": "Popcorn",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "For Popcorn Lassi",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Popcorn Lassi",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Popcorn Lassi",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": "as required",
+        "amount": "0",
+        "section": "For Popcorn Lassi",
+        "isOptional": false
+      },
+      {
+        "name": "Raw Mango",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Cinnamon Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "523da79285568e2888cd47935696770352df701862054f90adead90345c01f4e",
+    "lineage_hash": "9e401cfbf580eaa13d82412aa100187204d3bb403c3175c4c29574597c110bd2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/all-you-wanted-to-know-about-nachni/",
+    "fetchedAt": "2026-08-01T17:12:52.964Z"
+  },
+  "rawSource": "https://ranveerbrar.com/all-you-wanted-to-know-about-nachni/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

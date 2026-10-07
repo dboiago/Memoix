@@ -1,0 +1,128 @@
+{
+  "recipe": {
+    "name": "Brazilian Beef Stroganoff",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "BR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "343",
+      "carbohydrateContent": "14",
+      "fatContent": "31",
+      "proteinContent": "5"
+    },
+    "directions": [
+      "Season the beef pieces with salt and pepper, and let it sit on the counter at room temperature for about 15-20 minutes.",
+      "Place a large heavy bottomed pan or dutch oven over medium to high heat. Add the olive oil, and when the oil is hot, add in the beef pieces, and quick sear them in a single layer, no longer than a minute or 2.",
+      "Remove the beef from the pan, place it on a plate and reserve.",
+      "Using that same pan, sauté the onions over medium heat - about 2-3 minutes.",
+      "Add the garlic, and sauté until fragrant - about 1-2 minutes.",
+      "Add the sliced mushrooms, and sauté until the mushrooms wilt down - about 5-6 mins.",
+      "Add the beef back in, then the tomato paste, the Worcestershire, and the ketchup and saute for about 2 minutes, stirring.",
+      "Add 1/4 cup of water to the pan, and simmer a couple of minutes, stirring and scraping any bits off the sides and bottom of the pan.",
+      "Add in the the cream, and simmer just a couple more minutes and you&#x27;re all done!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "High Quality Beef Such As Fillet Mignon",
+        "unit": "lb",
+        "notes": "beef tenderloin, top sirloin, ribeye steak cut into cubes or sliced into strips",
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brazilian Sofrito",
+        "unit": "Tbsp",
+        "notes": "alt: 3 cloves of garlic, minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Mushrooms",
+        "unit": "oz",
+        "notes": "sliced",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Paste",
+        "unit": "oz",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ketchup",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Worcestershire Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b5afdfce4bc227671946efd1f0d4c543a62aa3a6f5b6f4c5529fc837cfe8db99",
+    "lineage_hash": "b4918af8955227b6fba4148b8b2fad1cc68d64a2e9a844b59767ff1bd54e0c52"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://braziliankitchenabroad.com/brazilian-beef-stroganoff/",
+    "fetchedAt": "2026-09-25T19:57:05.265Z"
+  },
+  "rawSource": "https://braziliankitchenabroad.com/brazilian-beef-stroganoff/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

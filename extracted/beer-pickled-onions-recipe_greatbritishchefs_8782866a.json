@@ -1,0 +1,93 @@
+{
+  "recipe": {
+    "name": "Beer Pickled Onions",
+    "time": "15 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Peel the onions and cut into quarters. Break each quarter down into petals by separating the individual layers",
+      "Combine the beer, vinegar, sugar, honey, juniper and thyme in a small pan and bring to the boil. Add the onions and remove from the heat",
+      "Cover tightly with cling film as this will allow the onions to steam and soften slightly in the liquid. Leave the onions to cool in the liquid before serving at room temperature"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Onions",
+        "unit": "large",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bitter Beer",
+        "unit": "ml",
+        "notes": null,
+        "amount": "1000",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Demerara Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Juniper Berries",
+        "unit": null,
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": "fresh",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "964483f9ff9a614da3a5348899b20a7fd866c1bf26ae0114d4c4c46e6404103f",
+    "lineage_hash": "8f2f782ab4c4ed525cd5928ced78ee61bac97f7bb78609478fee2e2eab0d8b10"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beer-pickled-onions-recipe",
+    "fetchedAt": "2026-08-03T20:37:58.473Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beer-pickled-onions-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

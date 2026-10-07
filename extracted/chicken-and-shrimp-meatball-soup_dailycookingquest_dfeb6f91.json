@@ -1,0 +1,185 @@
+{
+  "recipe": {
+    "name": "Chicken and Shrimp Meatball Soup",
+    "time": "40 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a mixing bowl, combine shrimp, chicken, scallions, ginger, egg, and cornstarch. Mix well.",
+      "Add the water and stir until water is fully incorporated by the meat mixture.",
+      "Season with salt, sugar, ground white pepper, and sesame oil. Mix well.",
+      "Bring a pot of water (about 6 cups) to a rolling boil. Drop tablespoonful of meatball mixture (you can shape with the help of two tablespoons, or you can use your hands) into the boiling water and cook until meatball floats. Once it floats, let cook for another 2 minutes. Scoop cooked meatballs and set aside. Repeat with the rest of the mixture.",
+      "Boil the water that was used to cook meatballs and add shredded cabbage. Season with salt, sugar, and ground white pepper, and adjust seasoning as needed. Cook for 5 minutes.",
+      "Return the cooked meatballs to the soup to reheat the meatballs. Cook for 1 or 2 minutes.",
+      "Turn off heat and serve hot garnished with sliced scallions."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Meatball",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Shrimp",
+        "unit": null,
+        "notes": "minced",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Ground Chicken",
+        "unit": null,
+        "notes": null,
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn Starch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soup",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Shredded Cabbage",
+        "unit": null,
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallion",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ce309a40299f8cf802e4b6145750488ad9973cea5fd5f8e17d1daa6eb664998c",
+    "lineage_hash": "1543b3dd3459f08c8e53ca5203725fb91ba0af387cdf8602a793671b5fef08b9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/chicken-and-shrimp-meatball-soup.html",
+    "fetchedAt": "2026-08-02T09:22:31.762Z"
+  },
+  "rawSource": "https://dailycookingquest.com/chicken-and-shrimp-meatball-soup.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

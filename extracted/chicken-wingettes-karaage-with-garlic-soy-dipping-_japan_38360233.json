@@ -1,0 +1,139 @@
+{
+  "recipe": {
+    "name": "Chicken Wingettes Karaage with Garlic Soy Dipping Sauce",
+    "time": "30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "20",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Put all the Dipping Sauce ingredients in a small saucepan and bring it to a boil.",
+      "Let it boil for 5 seconds or so, then remove the pan from the heat.",
+      "Make an incision at the drumette-end of the wingette and separate the two bones.",
+      "From the incision, cut the flesh between the bones through to the other end.",
+      "Find where two bones meet on the other end and cut the connecting tissue and cartilage to separate the bones.",
+      "Remove the flesh, the skin, and the tendons attached to the tip-end of the halved wingette and expose about 1cm/⅜” of the bone.",
+      "Dust the chicken pieces in flour and corn flour.",
+      "Deep-fry the chicken pieces for about 3 minutes.",
+      "Serve chicken with cabbage pieces if using, with a bowl of dipping sauce."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Wingettes",
+        "unit": null,
+        "notes": "note 1",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn Flour/cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil to Deep-fry",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "Dipping Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Mirin",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Dipping Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Dipping Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Finely Grated",
+        "unit": "clove",
+        "notes": "½ heaped teaspoon",
+        "amount": "1",
+        "section": "Dipping Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Asian Chicken Broth Powder",
+        "unit": "tsp",
+        "notes": "alt: paste diluted in 1½ tbsp water, note 2",
+        "amount": "⅛",
+        "section": "Dipping Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Cabbage Cut Into Large Bite-size Pieces(optional)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Serving",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a7b2cc18b3808223e7836c5bd2ab492cf2e100d2b135aef057607ed96e567fed",
+    "lineage_hash": "3a769a5982b08c609b1593abeca251ba24b0350aba5843f4a65a80514d4a3046"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://japan.recipetineats.com/chicken-wingettes-karaage-with-garlic-soy-dipping-sauce/",
+    "fetchedAt": "2026-08-02T03:19:02.947Z"
+  },
+  "rawSource": "https://japan.recipetineats.com/chicken-wingettes-karaage-with-garlic-soy-dipping-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

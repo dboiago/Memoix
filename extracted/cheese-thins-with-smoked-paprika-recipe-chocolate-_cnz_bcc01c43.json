@@ -1,0 +1,88 @@
+{
+  "recipe": {
+    "name": "Cheese Thins with Smoked Paprika",
+    "time": "1 hr 30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a medium mixing bowl, combine the cheese, butter, flour, salt, and smoked paprika. Using a pastry blender or fork (or food processor, blender, or stand mixer), mix these ingredients together until they form a dough.",
+      "If the mixture seems too dry and crumbly to come together into a ball —- this will depend on the cheese you used -— add a dash of milk or cream until it does.",
+      "Shape the dough into a log or whatever sliceable shape strikes your fancy, wrap in plastic film, and refrigerate until firm enough to be easily sliced, about 1 hour, and up to a day. (You can speed things up by placing the dough in the freezer for 20 minutes instead.)",
+      "Preheat the oven to 180°C (360°F) and line a baking sheet with parchment paper or a silicone baking mat.",
+      "Remove the dough from the fridge, slice it thinly -— about 2 mm or 1/12 inch —- and arrange on the prepared sheet, giving them just a bit of elbow room. You will need to work in batches; return the dough to the fridge between batches.",
+      "Sprinkle lightly with salt and smoked paprika, and bake for 10 to 14 minutes (depending on your oven and the thickness of your slices), until golden. Let the cheese thins rest on the baking sheet for 5 minutes before transferring to a cooling rack. Taste when cool, and adjust the baking time accordingly for subsequent batches."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Grams Hard Cheese",
+        "unit": null,
+        "notes": "such as aged comté, extra-sharp cheddar, or pecorino, finely grated",
+        "amount": "170",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Butter",
+        "unit": null,
+        "notes": "unsweetened, diced and softened",
+        "amount": "55",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Flour",
+        "unit": null,
+        "notes": "all-purpose, about 3/4 cup",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "fine sea, plus more for sprinkling",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Paprika",
+        "unit": "tsp",
+        "notes": "substitute ground chili pepper, plus more for sprinkling",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "A Dash Milk or Cream",
+        "unit": null,
+        "notes": null,
+        "amount": "as needed",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "220ec789625f56a1e36a16c17be6335a51a4c97e2568b33cb604ec0edb1da061",
+    "lineage_hash": "8e64477ca68e2e8b17821e9544ba32eef9b3b2c8192509db20cf194247e439b5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/appetizers/cheese-thins-recipe/",
+    "fetchedAt": "2026-09-30T19:34:13.302Z"
+  },
+  "rawSource": "https://cnz.to/recipes/appetizers/cheese-thins-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

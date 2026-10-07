@@ -1,0 +1,87 @@
+{
+  "recipe": {
+    "name": "Cacao Nib and Coconut Biscuit",
+    "time": "45 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start by preheating the oven to 180°C/gas mark 4. Grease and line a large baking tray",
+      "In a medium bowl, whisk the sugar with the butter and egg until smooth",
+      "Slowly add the flour, the coconut and baking powder, then knead until smooth. Roll out the dough, sprinkle over the cacao nibs and knead again for 2 minutes until the cacao nibs are well incorporated. You should have about 700g of dough",
+      "Make balls of dough, weighing about 15g each, and place them on the prepared baking sheet, leaving some space between them",
+      "Bake in the oven for 15 minutes, then remove and allow to cool completely. Dust with powdered sugar and they're ready to eat!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "at room temperature",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wheat Flour",
+        "unit": "g",
+        "notes": "self-raising",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Desiccated Coconut",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cacao Nibs",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bf86929a16180c62b64a33690dfc68d9668fefb6209d069b71a539831bf94728",
+    "lineage_hash": "32d8fd5e34f0db569031edab15f4dd00dfbbd308e19b38c9197877bd6d860197"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cacao-nib-coconut-biscuit-recipe",
+    "fetchedAt": "2026-08-03T11:58:22.105Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cacao-nib-coconut-biscuit-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

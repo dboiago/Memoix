@@ -1,0 +1,62 @@
+{
+  "recipe": {
+    "name": "Smoked Turkey Legs",
+    "time": "2 hr",
+    "course": "smoking",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Submerge the legs in water, 1/4 cup of Big Tom’s Turkey Roasting Rub and Brine, and 1/4 cup of salt overnight.",
+      "Remove the legs from the brine, rinse the legs off, pat them dry, and apply more of the Big Tom’s rub.",
+      "Set up your Weber Kettle for smoking and add cherry wood chunks to generate the smoker flavor.",
+      "Smoke the legs around 300 -320 degrees until the internal temp reaches 170-175 degrees."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cup Big Tom’s Turkey Roasting Rub and Brine",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cup Salt",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherry Wood Chunks",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "31009c445287f7b691877c7cfe12bc88226d550e5198fb41a39b419169ad7fd8",
+    "lineage_hash": "4933c6b17110edac11b40e49fff55352aa8f3de7c7723e1afb7c74f2395b0cda"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/2024/11/06/big-flavor-small-effort-smoked-turkey-legs/",
+    "fetchedAt": "2026-08-02T21:05:31.051Z"
+  },
+  "rawSource": "https://barbecuebible.com/2024/11/06/big-flavor-small-effort-smoked-turkey-legs/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

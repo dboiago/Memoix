@@ -1,0 +1,143 @@
+{
+  "recipe": {
+    "name": "Jalapeno Shrimp Skewers",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Rinse the shrimp under cold running water and then drain and blot them dry with paper towels. Peel and devein the shrimp. Thread the shrimp onto 2 parallel skewers, using 2 skewers for each kebab. Arrange the kebabs in a nonreactive baking dish.",
+      "Set aside 3 tablespoons of the cilantro for the garlic cilantro butter. Place the remaining cilantro, the jalapenos, scallions, chopped garlic, salt, black pepper, and cumin in a food processor and finely chop. With the machine running, add the olive oil and lime juice through the feed tube and puree to a bright green paste. Pour this marinade over the shrimp and let them marinate in the refrigerator, covered, for 30 minutes, turning the kebabs several times so they marinate evenly.",
+      "Melt the butter in a saucepan over medium heat. Add the minced garlic and the 3 tablespoons of reserved cilantro and cook until the garlic is fragrant and sizzling, but not browned, about 2 minutes. Keep the garlic cilantro butter warm until ready to use.",
+      "Set up the grill for direct grilling and preheat to high.",
+      "When ready to cook, brush and oil the grill grate. Drain the marinade from the shrimp kebabs and discard the marinade. Place the shrimp kebabs on the hot grate and grill until just cooked through, 1 to 3 minutes per side, basting with the garlic cilantro butter. When done, the shrimp will turn pinkish white and feel firm to the touch. Transfer the grilled shrimp to a platter or plates, pour any of the remaining butter sauce over them, and serve with the lime wedges."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Shrimp",
+        "unit": "lb",
+        "notes": null,
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "bunch",
+        "notes": "about 1 cup, rinsed, stemmed, and coarsely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jalapeno Peppers",
+        "unit": null,
+        "notes": "for hotter shrimp, leave the seeds in, seeded and coarsely chopped",
+        "amount": "4-8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": "bunch",
+        "notes": "both white and green parts, trimmed and coarsely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "3 cloves coarsely chopped, 2 cloves minced",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "kosher or sea, coarse salt",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": "freshly ground",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin",
+        "unit": "tsp",
+        "notes": "ground",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "C",
+        "notes": "extra-virgin",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "C",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "salted",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Wedges",
+        "unit": null,
+        "notes": "for serving",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Long (10- to 12-inch) Metal",
+        "unit": null,
+        "notes": "alt: bamboo skewers",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "16890227e074b73d9f179fc8ae5096003edcbfafbd5c47306a510b163ec405dd",
+    "lineage_hash": "50030d37fa1a7c681d21aab40274cacf3387139129e2930ed23af5d90f6af21b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/2012/06/19/a-4th-of-july-menu-part-i-jalapeno-shrimp-skewers/",
+    "fetchedAt": "2026-08-01T18:06:22.028Z"
+  },
+  "rawSource": "https://barbecuebible.com/2012/06/19/a-4th-of-july-menu-part-i-jalapeno-shrimp-skewers/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

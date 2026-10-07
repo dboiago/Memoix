@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Cacao Negroni",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all the ingredients to a mixing glass followed by ice. Stir to chill and strain into the glass over a large ice cube. Garnish.\nOptional: Cacao-Infused CampariAdd 2 oz. of cacao nibs to 1 liter of Campari and let infuse for 72 hours. Afterward, strain and refrigerate. Will keep for 3 weeks in the refrigerator. In the cocktail recipe, swap out the Campari and chocolate bitters for the infused Campari."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "ec54b3d4184e29a46d9009d26ba391c0791c781e39897a082541fc4a07ebcece",
+    "lineage_hash": "eef0f1d1a4dc459e0b380ce2f2fd8ced99753128a9e129d2fd61b6dc160bb985"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cacao-negroni/",
+    "fetchedAt": "2026-08-04T01:01:57.349Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cacao-negroni/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

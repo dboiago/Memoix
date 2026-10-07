@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Basil Cocktail",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Muddle 2 basil leaves in a shaker tin. Add the remaining ingredients and ice. Shake until chilled. Fine strain into a rocks glass over a large ice cube. Garnish.\nYellow Bell Pepper SyrupJuice 1 yellow bell pepper and combine the juice in a saucepan with equal parts of white sugar. Stir over medium heat until the sugar dissolves. Remove from the heat, cool, strain into a bottle and store in the refrigerator for up to 2 weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "f1c9121c811451de9922cb6256e6492357f1bd9ec15822b3c17f70e03beeaf1a",
+    "lineage_hash": "940aea3353512a66381bdb0f15f8c3dbae554b8202c48588e31d667e973cc200"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/basil-cocktail-from-pobrecito/",
+    "fetchedAt": "2026-08-04T00:41:19.285Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/basil-cocktail-from-pobrecito/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

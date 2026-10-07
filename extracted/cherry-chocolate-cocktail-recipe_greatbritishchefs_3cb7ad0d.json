@@ -1,0 +1,84 @@
+{
+  "recipe": {
+    "name": "Cherry Chocolate Cocktail",
+    "time": "25 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Liqueur",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the water and sugar to a saucepan and bring to a simmer. Place the chocolate in a large bowl, pour the hot liquid over the chocolate and whisk to dissolve",
+      "Add the ice to a blender until it is half-full. Add the cherries, pour in the chocolate and blitz for 1 minute. Divide between glasses and mix in a shot of your favourite liqueur"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cherries",
+        "unit": "g",
+        "notes": "tinned or fresh",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "75% Dark Chocolate",
+        "unit": "g",
+        "notes": "broken into pieces",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "800",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kirsch",
+        "unit": "ml",
+        "notes": "or liqueur of your choice",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ice",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3077335439eab5a0fba0ac2fac6423fc182b4f748d9577bf82e6616b2fefd1c8",
+    "lineage_hash": "fbd4033ad5ebdee3c9388338ff03c563c032e1dcf721c20e1a3efe528103fd80"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cherry-chocolate-cocktail-recipe",
+    "fetchedAt": "2026-08-03T21:07:50.189Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cherry-chocolate-cocktail-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

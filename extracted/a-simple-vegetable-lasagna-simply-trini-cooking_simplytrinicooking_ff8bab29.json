@@ -1,0 +1,146 @@
+{
+  "recipe": {
+    "name": "Vegetable Lasagna",
+    "time": "1 hr 10 min",
+    "course": "vegn",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cook the lasagna pasta.",
+      "Prepare the chopped vegetables.",
+      "Saute onion add the garlic, mushrooms, carrots, and sweet pepper. Cook until soft. Then, add tomatoes. Allow to simmer 15 minutes.",
+      "Add the parsley, basil, oregano, chili powder, rosemary, green seasoning and pepper.",
+      "Grate the Parmesan Cheese and Cheddar cheese. Then mix together the two cheeses.",
+      "In an 8 x 12 inch casserole dish, start by greesing the dish and layer with the vegetable sauce first. Layer with cheese then the pasta. Repeat the steps, first the sauce then the cheese, then the pasta.",
+      "I got three layers. Sprinkle enough cheese on the top. You may want extra cheese for the topping.",
+      "Bake in a 375 degrees F oven for about 30 minutes. Allow to cool 10 minutes. Serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Wholewheat Lasagna Pasta",
+        "unit": null,
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "C",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mushrooms",
+        "unit": "C",
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Sweet Peppers",
+        "unit": "C",
+        "notes": "diced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan Cheese",
+        "unit": "C",
+        "notes": "grated",
+        "amount": "1⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cheddar Cheese",
+        "unit": "C",
+        "notes": "grated",
+        "amount": "1⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley Flakes",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Seasoning",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Each Basil Oregano",
+        "unit": "tsp",
+        "notes": "chili powder or pepper flakes",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove Minced",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "22d863e06a9db1e358a42d7323cf8c5911c174223151c38ac074002442672154",
+    "lineage_hash": "8dfd0dab385be762644b1ed983443e8a5c2d4f1d0fe323c410f60dc6ade3f524"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.simplytrinicooking.com/vegetable-lasagna/",
+    "fetchedAt": "2026-09-25T21:30:05.889Z"
+  },
+  "rawSource": "https://www.simplytrinicooking.com/vegetable-lasagna/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

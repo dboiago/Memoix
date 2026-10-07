@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Negroni Pie",
+    "time": "40 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat oven to 425 degrees Fahrenheit. Blind bake your pie crust: Line it with foil or parchment, fill with dried beans or pie weights, and bake at 425 degrees F. for 20 minutes. Remove weights and foil and allow to cool. Reduce the oven temperature to 325 degrees F.",
+      "In a large mixing bowl, whisk together the egg yolks, sweetened condensed milk, vermouth, gin, Campari, salt, and food coloring (if using). Pour into the blind-baked crust and bake until the center of the filling has just set, about 20 minutes. Remove from the oven and allow to cool completely.",
+      "In a large bowl or mixer, whip the heavy cream and sugar until soft peaks form. Pile the whipped cream on top of the cooled pie and zest half an orange over the top. Slice, serve, and enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "46b23c6cd52a9aa861b8067972141e7a3793385b1e9e4a171e77885209ba1035",
+    "lineage_hash": "246a9ce714b09b27d9ab8743cc2d1f8f90537ec9522ec5b7be29ba2dba9a15b0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/butter-scotchs-negroni-pie/",
+    "fetchedAt": "2026-08-03T22:29:59.566Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/butter-scotchs-negroni-pie/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

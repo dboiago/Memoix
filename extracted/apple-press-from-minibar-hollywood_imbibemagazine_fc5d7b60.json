@@ -1,0 +1,38 @@
+{
+  "recipe": {
+    "name": "Apple Press From Minibar Hollywood",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [
+      "Floating Apple Slice",
+      "Cinnamon",
+      "Star Anise"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake all the ingredients with ice and strain into a chilled glass. Garnish with a floating apple slice then dust with cinnamon and star anise."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "1c3ab27e64938d10d5e534f8966684af534fd0673addc49fe43c0ee3419487db",
+    "lineage_hash": "987906afcbbc8cd336c6af0a0c153ff450ca6022283b6cbe349fa3f2c5945c2b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/apple-press-minibar-hollywood/",
+    "fetchedAt": "2026-08-03T19:51:30.445Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/apple-press-minibar-hollywood/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

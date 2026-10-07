@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Bloom No. 5",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [
+      "Lemon Peel"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all of the ingredients in a shaker with ice and shake vigorously. Strain into a chilled coupe. Express a lemon peel and use as a garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "5010b3ee506d529a3570f684d60e0db7ad1f2150794e469fb017898dbe18c3ad",
+    "lineage_hash": "dde58ce03a76e07177a305b1c685b69a90d9333bc1c62475716438029ff57c99"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bloom-no-5-spring-cocktail/",
+    "fetchedAt": "2026-08-04T01:57:32.341Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bloom-no-5-spring-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

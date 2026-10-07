@@ -1,0 +1,185 @@
+{
+  "recipe": {
+    "name": "Brined Salmon, Seasonal Vegetables And A Creamy Dill Sauce",
+    "time": "40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start by brining the salmon. In a container, dissolve the salt and sugar in the cold water. Add the black peppercorns and lemon zest. Submerge the salmon fillets in the brine and refrigerate for 20 minutes",
+      "Place the potatoes in a large saucepan of salted cold water. Bring to the boil and cook for about 15 minutes until tender. Drain and leave to steam-dry, then place in a serving bowl and toss with the knob of butter and the chopped mint. Keep warm",
+      "Meanwhile, place all the ingredients for the dill sauce in a bowl with a pinch of salt and black pepper and whisk to combine. Set aside",
+      "Remove the salmon from the brine (reserving 2 tablespoons of it) and pat dry",
+      "For the vegetables, heat the butter in a large frying pan and add the courgettes. Sauté for 2 minutes until starting to soften, then add the asparagus and cook for a further 4 minutes, tossing regularly. Add the peas and the reserved brine, then cook for a further 3 minutes. Season lightly with salt and pepper and keep warm",
+      "Whilst the vegetables cook, cook the salmon. Heat a frying pan over a medium high heat with a little oil. Place the salmon fillets in the pan skin-side down, pressing down lightly (or use a weight) to prevent curling. Cook for 5 minutes, until the skin is golden and crispy, then flip and cook for another 1-2 minutes until just cooked through. Transfer to a plate or tray to rest",
+      "Divide up the warm vegetables onto plates and spoon over the dill sauce. Top with salmon fillets, skin-side up. Garnish with the reserved dill fronds, a drizzle of olive oil and a pinch of pepper. Serve with the warm potatoes on the side"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Salmon Fillets",
+        "unit": null,
+        "notes": "skin on, scored",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cold Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zested",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "tsp",
+        "notes": "crushed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "New Potatoes",
+        "unit": "g",
+        "notes": null,
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint",
+        "unit": "bunch",
+        "notes": "leaves picked and chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Knob of Unsalted Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Greek Yoghurt",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dill",
+        "unit": "Tbsp",
+        "notes": "finely, chopped, plus 2 extra sprigs, fronds picked and reserved",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "finely grated",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Courgettes",
+        "unit": null,
+        "notes": "cut into batons",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Asparagus",
+        "unit": "g",
+        "notes": "leave tips whole, trimmed, cut into thirds and halved lengthways",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peas",
+        "unit": "g",
+        "notes": "frozen",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bac6e643f62b4680d5cad58e62ca4c1c4d58fa0aa341b01fc5f0041f62105761",
+    "lineage_hash": "bab51ac098a5160092ef142474241b4bf8ea52cf9868af641c8579af935556e0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/brined-salmon-seasonal-vegetables-creamy-dill-sauce-recipe",
+    "fetchedAt": "2026-08-01T17:43:54.883Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/brined-salmon-seasonal-vegetables-creamy-dill-sauce-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,179 @@
+{
+  "recipe": {
+    "name": "Charred Aubergine and Garlic Whipped Butter with Grilled Tomatoes",
+    "time": "45 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by preparing the grilled aubergine. Drizzle the aubergine with olive oil and season with salt",
+      "Prepare the grill for direct cooking. When ready, place the aubergine on the grill",
+      "Cook for 5–7 minutes before turning over and grilling the other side. Once the skin has slightly charred and the aubergine flesh has softened, remove from the grill and leave for a couple of minutes to cool slightly&nbsp;",
+      "Peel any overly charred skin off of the aubergines, then finely chop the flesh&nbsp;",
+      "Coat the cherry tomatoes in olive oil then season well with flaky sea salt&nbsp;",
+      "Toss the cherry tomatoes in olive oil and season with salt, then grill for 5 minutes, or until they are tender&nbsp;",
+      "Add the aubergine flesh to a food processor along with the butter, marjoram, garlic cloves, anchovy, capers and lemon zest&nbsp;",
+      "Blend until smooth, then spoon onto a serving plate",
+      "Serve along with the sourdough toast, and garnish with a handful of caper berries, grilled cherry tomatoes, lemon zest, salt and pepper"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Aubergines",
+        "unit": null,
+        "notes": "whole",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": "to season",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Cherry Tomatoes",
+        "unit": null,
+        "notes": "on the vine",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": "to season",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "room temperature and softened",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Marjoram",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Anchovy Fillet",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Capers",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zested",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Caperberries",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zested",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": "to season",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "pinch",
+        "notes": "to season",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sourdough Bread",
+        "unit": "slices",
+        "notes": "toasted",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "81ed35cfc0a717ae0615214a4d55cc96b55b6fc9d048011db128095ca39b97a9",
+    "lineage_hash": "1f52f91e6cd7ec7ca2c3f6496807148b5ff19909b0845dd18bc97ebfb2056f3a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/aubergine-garlic-marjoram-butter-tomatoes-lemon-recipe",
+    "fetchedAt": "2026-08-02T10:58:48.779Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/aubergine-garlic-marjoram-butter-tomatoes-lemon-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

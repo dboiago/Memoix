@@ -1,0 +1,119 @@
+{
+  "recipe": {
+    "name": "Anna’s Go-to Banana Bread",
+    "time": "1 hr 15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 325°F (160°C) and grease a 9 × 5-inch (2 L) loaf pan.",
+      "Whisk the banana, melted butter (or coconut oil), granulated sugar and brown sugar together until well blended. Whisk in the eggs (or flax eggs) and vanilla.",
+      "In a separate bowl, sift together the flour, baking soda and salt. Add the dry ingredients to the banana mixture and stir just until blended. Stir in the chocolate chips (or walnut pieces) (if using). Scrape the batter into the loaf pan and sprinkle the top with a little sugar.",
+      "Bake for about 75 minutes, until a tester inserted in the centre of the bread comes out clean.",
+      "Cool the banana bread for 20 minutes in the pan, then turn it out to cool completely on a cooling rack. The banana bread will keep, well wrapped, at room temperature for up to 3 days, or can be frozen for up to 3 months, and thawed on the counter before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mashed Ripe Banana",
+        "unit": "C",
+        "notes": "3 to 4 bananas, 375 to 400 g",
+        "amount": "1½-1¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "alt: virgin coconut oil, 115 g, melted",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": "140 g, plus extra for sprinkling",
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Packed Light Brown Sugar",
+        "unit": "C",
+        "notes": "140 g",
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "see note, room temperature, or 4 Tbsp (60 mL) flax eggs",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": "alt: gluten-free flour, see note, 225 g",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Semisweet Chocolate Chips",
+        "unit": "C",
+        "notes": "alt: toasted walnut pieces, 175 g (optional; see note) or 100 g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0959914401445a762aab95bc297caa51891f47b52e3ac071d6849dcf897d32fd",
+    "lineage_hash": "9bd3a1a54288313f5f0c42774a10ef7024595f281c04668ce51e8b61bef0223b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/annas-go-to-banana-bread/",
+    "fetchedAt": "2026-08-01T19:39:58.383Z"
+  },
+  "rawSource": "https://annaolson.ca/project/annas-go-to-banana-bread/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,97 @@
+{
+  "recipe": {
+    "name": "Boiled Eggs",
+    "time": "30 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Bring a pot of salted water to the boil. Blanch the asparagus for 1 minute and then plunge into iced water for 1 minute. Drain on some kitchen paper",
+      "Prepare 3 bowls for crumbing. Add flour to the first, 2 beaten eggs to the second and breadcrumbs to the third",
+      "Coat each asparagus spear in the flour, then the egg and finally the breadcrumbs until evenly coated",
+      "Heat a deep-fat fryer to 180°C. While it heats, draw faces on the eggs in non-toxic pen or pencil",
+      "Bring a pan of water to the boil. Lower the eggs into the boiling water and cook for around 3 1/2 minutes for soft boiled, 6-7 minutes for hard boiled",
+      "Meanwhile, fry the asparagus (do this in 2 batches of 8) for 2-3 minutes, until golden brown and crispy. Drain well on kitchen paper and season with salt",
+      "Place each egg in an egg cup, remove the tops and serve with the crispy asparagus soldiers"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Asparagus Spears",
+        "unit": null,
+        "notes": "trimmed and washed",
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Breadcrumbs",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinches",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Iced Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "68723bbc284fda3a89186dc30404a7107b70dc59790db26b597507a87d52ee9a",
+    "lineage_hash": "b1e1d7709f6dd28a4389e9521236919fbed002a50101d1dcea4907012d079354"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/boiled-eggs-recipe",
+    "fetchedAt": "2026-08-03T16:11:08.420Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/boiled-eggs-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

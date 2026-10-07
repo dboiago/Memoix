@@ -1,0 +1,35 @@
+{
+  "recipe": {
+    "name": "APB Melrose Gin & Tonic",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the first 4 ingredients to a shaker with ice. Shake until chilled, then strain into a glass over fresh ice. Add the tonic, top with pebble ice, then drizzle the blue Chareau on top. Garnish.",
+      "Blue ChareauAnd 1/8 tsp. of blue spirulina to 1/2 cup Chareau and whisk. Will keep in the refrigerator for 2 weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "c439ddb8d787c4e1c2998a3b37c096d505f0e13ad497e609c07f52d9fc60e620",
+    "lineage_hash": "d7e3420e309d9def3020b52d30e7ff794eca989a7c18fa446a6fde25a783628e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/gin-and-tonic-from-apb-melrose/",
+    "fetchedAt": "2026-08-03T23:10:59.372Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/gin-and-tonic-from-apb-melrose/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

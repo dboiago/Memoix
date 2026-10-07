@@ -1,0 +1,139 @@
+{
+  "recipe": {
+    "name": "Calf Brains on Toast",
+    "time": "1 hr 15 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, rinse the brains in cold running water for 30 minutes. Place in a bowl, cover with milk and leave in the fridge overnight",
+      "The next day, rinse the brains again and pat dry. Bring the court bouillion to a boil in a large pan,  add the brains and remove the pan from the heat. Leave to poach for 8–10 minutes, depending on size",
+      "After this time, refresh in iced water. Once the brains are cold, remove any outer membrane and residue of blood or nerve. Cut each brain into 2 pieces",
+      "Grill the 4 slices of bread under a grill on both sides until nicely toasted",
+      "Heat a heavy cast iron pan until smoking hot. Dust the brains lightly with flour, season well with salt and fry in oil until golden on one side",
+      "Flip the brains over, add the butter and baste with the foaming butter until well-coloured on both sides",
+      "Transfer the brains to a tray and place in the oven for 2 minutes. While the brains are in the oven, make the sauce in the pan that the brains were cooked in",
+      "Add a good squeeze of lemon juice to stop the butter from burning – be careful as it will splatter. Add the veal glace and scrape the bottom of the pan well to release the caramelised flavours and bring everything together. Add the chopped parsley and capers",
+      "Place a slice of toast on each plate and top with half a calf's brain. Divide the sauce between the 4 plates, trying to cover the brains and toast completely. Grate a little lemon zest over the top to finish"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Calf Brains",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "750",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Court Bouillon",
+        "unit": "L",
+        "notes": null,
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bread",
+        "unit": "slices",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced and zested",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Veal Glace",
+        "unit": "ml",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Capers",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e3e8caf7ed3e525b3cdc5369cd36558a3c894a712aa1be294fe2c23106e46b22",
+    "lineage_hash": "7375939c2273f69a1feb02f00eb839bd5eeba375cf142ffea36f2a00a4986a4b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/calf-brains-on-toast-recipe",
+    "fetchedAt": "2026-08-03T12:03:11.109Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/calf-brains-on-toast-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

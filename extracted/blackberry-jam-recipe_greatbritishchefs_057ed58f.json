@@ -1,0 +1,63 @@
+{
+  "recipe": {
+    "name": "Blackberry Jam",
+    "time": "1 hr",
+    "course": "pickles",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the blackberries and lemon juice in a large pan and simmer gently for about 15 minutes until the fruit is soft",
+      "Meanwhile, warm the sugar in a low oven. When the fruit is cooked, add the sugar and stir the sugar and fruit over a low heat until the sugar has dissolved",
+      "Turn the heat up and bring the fruit and sugar to a boil, boil for 10–15 minutes until setting point has been reached (see setting point testing notes above)",
+      "Once setting point has been reached, take the pan off the heat, spoon any scum off the top of the jam and leave to sit for about 10 minutes",
+      "Ladle the hot jam into warm, sterile jam jars and seal immediately with a screw-top lid. Label once cold"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Blackberries",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "450",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Cane Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "450",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4325bf329b31d9648d63a03fba2409d67070a9a9a005007526f2a66d428b875a",
+    "lineage_hash": "47533d3f16634c68d6f8322af8f436175a52c6938802cb39163c2d3f69a33468"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/blackberry-jam-recipe",
+    "fetchedAt": "2026-08-03T12:25:52.048Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/blackberry-jam-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

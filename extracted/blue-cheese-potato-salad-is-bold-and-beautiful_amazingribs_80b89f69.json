@@ -1,0 +1,92 @@
+{
+  "recipe": {
+    "name": "Blue Cheese Potato Salad",
+    "time": "30 min",
+    "course": "salad",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "105",
+      "carbohydrateContent": "18",
+      "fatContent": "3",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "Smush. Bring the butter and the blue cheese to room temp for about 2 hours. In a large bowl, smush them together with a fork until blended.",
+      "Prep. Peel the potatoes (or not), and cut them into bite-size chunks.",
+      "Cook. Boil the chunks until they are soft, but not mushy, about 10 minutes. Drain. Toss them in with the cheesy butter.",
+      "Chive me. Take the chives and bundle them like pencils. With a scissors cut them into 1/8&quot; (3.2 mm) bits and add toss into the potatoes.",
+      "Serve. Add salt and pepper to taste and serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Waxy Potatoes",
+        "unit": "lb",
+        "notes": "2 baseball size",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "tsp",
+        "notes": "alt: margarine",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blue Cheese",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": "tsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Morton Coarse Kosher Salt",
+        "unit": "pinches",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "pinches",
+        "notes": "finely",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c5626cf9bdd9c7e97a6ac1872965bb3b28fed8916f4dddb6b0056d0e6dfb97df",
+    "lineage_hash": "0ef92cc61f25fb4d18f54ce8bc2e8355192faf38ad31b28b74744285ac99ad9d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://amazingribs.com/tested-recipes/potato-recipes/blue-cheese-potato-salad-recipe/",
+    "fetchedAt": "2026-08-02T07:04:25.838Z"
+  },
+  "rawSource": "https://amazingribs.com/tested-recipes/potato-recipes/blue-cheese-potato-salad-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,94 @@
+{
+  "recipe": {
+    "name": "American Pie Cocktail",
+    "time": "4 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [
+      "Dehydrated Apple Slice"
+    ],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "203",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Select and pre-chill a COUPE GLASS.",
+      "Prepare garnish of dehydrated apple slice.",
+      "SHAKE all ingredients with ice.",
+      "FINE STRAIN into chilled glass.",
+      "Garnish with dehydrated apple slice floated on cocktail."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bourbon Whiskey",
+        "unit": "ml",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Schnapps",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Myrtle/mirto Liqueur",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cranberry Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "7.5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "93d2c49b9102687b8ccd71c9dd406ba7dd8cd52748c39a2ed1ab45bf67c2a81f",
+    "lineage_hash": "0b7c194e38dbeec3d1387c92b65f2d2e4beb7cc63d559b7ecbd9babceab7cf4f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/59/american-pie-cocktail",
+    "fetchedAt": "2026-08-01T17:39:25.846Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/59/american-pie-cocktail",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

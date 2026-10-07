@@ -1,0 +1,191 @@
+{
+  "recipe": {
+    "name": "Asian Tofu Broccoli Stir-Fry",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "338",
+      "carbohydrateContent": "29",
+      "fatContent": "19",
+      "proteinContent": "15"
+    },
+    "directions": [
+      "Press tofu with a heavy object for 15 to 20 minutes, then cut into cubes. Toss tofu cubes with 1.5 tablespoons cornstarch, 1/4 teaspoon each of white pepper powder and salt. Set aside.",
+      "Heat 1 tablespoon of oil on medium heat in a skillet. Once the oil is hot, add the cornstarch tossed tofu cubes to the skillet in single layer.Cook until each side is golden-brown, around 5 to 6 minutes each side. Remove tofu from the skillet into a plate.",
+      "Meanwhile, in a measuring jar or bowl, whisk together all the ingredients for the sauce- tamari, rice vinegar, brown sugar, toasted sesame oil, 2 teaspoons cornstarch and 2 tablespoons water. Set aside.",
+      "To the same skillet in which the tofu was pan-fried, now add the remaining 1/2 tablespoon of oil. Add in the chopped garlic and ginger and saute for 1 minute until the garlic and ginger start changing color.",
+      "Then add in the broccoli florets along with 4 tablespoons of water. Stir and cover the skillet with a lid. Cook/steam the broccoli for 2 minutes on medium heat.",
+      "Remove the lid and stir in the prepared sauce. It will start to thicken immediately.",
+      "Stir in the pan-fried tofu and turn off the heat. Mix until all the tofu and broccoli is well coated with the sauce. Add in the roasted cashews and green onion.",
+      "Garnish the tofu broccoli stir-fry with sesame seeds and serve warm with rice!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Extra-firm Tofu",
+        "unit": "oz",
+        "notes": "cut into cubes",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": "divided, I used avocado oil",
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": "large",
+        "notes": "finely chopped",
+        "amount": "4-5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Broccoli Florets",
+        "unit": "C",
+        "notes": "small to medium size florets",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": "60 ml",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cashews",
+        "unit": "Tbsp",
+        "notes": "roasted, optional",
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "chopped, to garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Sesame Seeds",
+        "unit": null,
+        "notes": "to garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tamari",
+        "unit": "Tbsp",
+        "notes": "45 ml, or use soy sauce",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Vinegar",
+        "unit": "Tbsp",
+        "notes": "15 ml",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Oil",
+        "unit": "tsp",
+        "notes": "5 ml",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": "30 ml",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "85b7758f16bb16c5c8802a991d08fc778e2c2f4399a27b0f2a66b651420fa634",
+    "lineage_hash": "d2c64621e85a834f1e44c7b8eb9eb06e6cbf5923c89daa12018b73d9ada8b00b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/tofu-broccoli-stir-fry/",
+    "fetchedAt": "2026-08-02T06:11:31.363Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/tofu-broccoli-stir-fry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

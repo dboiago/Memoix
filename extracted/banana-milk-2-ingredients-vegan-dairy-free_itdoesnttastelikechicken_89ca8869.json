@@ -1,0 +1,80 @@
+{
+  "recipe": {
+    "name": "Banana Milk",
+    "time": "2 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "105",
+      "carbohydrateContent": "26",
+      "fatContent": null,
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Add the banana and water to a blender. If using, also add in any of the optional add-ins. Blend until smooth and creamy. Feel free to add more or less water for a thinner or thicker consistency.&nbsp;"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Banana",
+        "unit": null,
+        "notes": "the riper it is the sweeter the milk will be",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "767d34ffcd0ddb1569405a88a0a9efa7853200c46b1749a29d25057909e56b6a",
+    "lineage_hash": "eb78db64929911b7b9e6f4c8c66fa27b0468c3a7f82b21089e22507de1c7003c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/banana-milk-2-ingredients/",
+    "fetchedAt": "2026-08-01T17:51:33.647Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/banana-milk-2-ingredients/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

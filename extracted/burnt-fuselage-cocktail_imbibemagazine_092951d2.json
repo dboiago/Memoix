@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Burnt Fuselage Cocktail",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Stir all of the ingredients with ice, then strain into a chilled glass and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "4a417663d34b2217af3ffa9bce89128bb0bcbb29205bc6a38a5ff00a74a125b6",
+    "lineage_hash": "f2a960d232d48acb494742c946acaa4fd14686d952c6f8fbefdf6db9a96a6a2a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/burnt-fuselage-cocktail/",
+    "fetchedAt": "2026-08-03T18:46:58.800Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/burnt-fuselage-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

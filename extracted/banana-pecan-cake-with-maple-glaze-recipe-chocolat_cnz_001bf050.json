@@ -1,0 +1,157 @@
+{
+  "recipe": {
+    "name": "Banana Pecan Cake with Maple Glaze",
+    "time": "1 hr 45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 180°C (360°F) and grease a 24-cm (9½-inch) savarin or ring mold, a loaf pan, or a simple 20-cm (8-inch) round cake pan. (Alternatively, you can use muffin tins; the recipe will yield about 18.)",
+      "In a medium bowl, combine the pecans, flour, baking powder, and salt. Set aside.",
+      "In the bowl of a food processor, mix the butter and almond butter until creamy. Add the sugar, syrup, vanilla, and rum, and mix until fluffy. Add the eggs one by one, mixing well after each addition.",
+      "Mash the bananas with a fork and fold them into the batter.",
+      "Add the dry ingredients to the batter and use a spatula to combine, gently lifting the batter and folding it over itself until no trace of flour remains; don't overmix.",
+      "Pour into the prepared pan and bake for 45 minutes (25 minutes for muffins), until a knife inserted in the center comes out clean.",
+      "Let the pan rest on a rack for 10 minutes. Run a knife or a thin spatula all around the cake to loosen, then remove from the pan and transfer to the rack to cool.",
+      "Let cool for 30 to 40 minutes before glazing (see glaze recipe below), and serve slightly warm, or at room temperature.",
+      "Sift the sugar into a small bow.",
+      "Pour in the maple syrup, and whisk vigorously with a fork until smooth.",
+      "Spoon over the cake and spread with an icing spatula or the back of the spoon."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Grams Pecans",
+        "unit": null,
+        "notes": "toasted (see note) and roughly chopped",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Flour",
+        "unit": null,
+        "notes": null,
+        "amount": "280",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "fine sea",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Butter",
+        "unit": null,
+        "notes": "unsalted, softened",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Almond Butter",
+        "unit": null,
+        "notes": "unsalted and made from whole, unblanched almonds",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Cane Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Maple Syrup",
+        "unit": null,
+        "notes": "substitute cane syrup or honey",
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": "pure",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amber Rum",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "at room temperature",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bananas",
+        "unit": null,
+        "notes": "ripe, about 600 grams (1⅓ pounds) weighed with skin, peeled",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Confectioner's Sugar",
+        "unit": null,
+        "notes": "6 level tablespoons",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grams Maple Syrup",
+        "unit": null,
+        "notes": "grade B",
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0bf55f6bc06d8ed852f51fb5efd065002505d8c2bf2a6b645eb5c4e304e69324",
+    "lineage_hash": "54e345d1c56acd03b35dba3f46c734489bbd847910c0066f534432cbefe01024"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/cakes-tarts/banana-pecan-cake-with-maple-glaze-recipe/",
+    "fetchedAt": "2026-09-30T19:21:34.237Z"
+  },
+  "rawSource": "https://cnz.to/recipes/cakes-tarts/banana-pecan-cake-with-maple-glaze-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,37 @@
+{
+  "recipe": {
+    "name": "Bourbon Cocktail: Need More Derby",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [
+      "Mint Sprig"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the mint to your glass and muddle gently. Add the liquid ingredients and stir with enough crushed ice to fill the glass three-quarters full. Add more crushed ice, then garnish with a mint sprig.",
+      "Orange-Szechuan Syrup: Simmer 1 cup of water and 1 cup of raw sugar over medium heat until the sugar has dissolved. Reduce the heat, add the zest of 4 small oranges and 1 Tbsp. of Szechuan peppercorns, then cook over low heat for 10 minutes. Let cool and strain. Refrigerate for up to 2 weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "1ed7c9ea16504aabb6d30942fea861c231881bb39fa6d538e8ee86c32e79e749",
+    "lineage_hash": "64a781713f48d9db0cb14f0afbf1d3fbe510153f53d240236bfb563a2572bd33"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bourbon-cocktail-need-more-derby/",
+    "fetchedAt": "2026-08-03T22:27:46.703Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bourbon-cocktail-need-more-derby/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

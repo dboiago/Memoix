@@ -1,0 +1,35 @@
+{
+  "recipe": {
+    "name": "Carajillo From True Laurel",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to a shaker, shake, and strain into the glass.",
+      "Cold-Brew Coffee Concentrate4:1 water to coffee ratio. Combine ground coffee of your choice with water, then rest in the fridge for 12-24 hours."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "868f829fdb3a82f6c5695cc1183dbe2d7fc71cb6a83662f5143df7f2bc15d132",
+    "lineage_hash": "2368982002982ac9f8fded09b6f4187bda0de1d90cd9dd6ffdfdce62743f7b4a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/carajillo-from-true-laurel/",
+    "fetchedAt": "2026-08-03T22:45:42.339Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/carajillo-from-true-laurel/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

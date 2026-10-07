@@ -1,0 +1,118 @@
+{
+  "recipe": {
+    "name": "Chicken Curry Sauce",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "NG",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Season the cut chicken with salt and 1 cube maggi – Set aside",
+      "Heat a large skillet over high heat. Add in the oil. Add in the seasoned chicken and sear on all sides until brown.",
+      "Add in all left over ingredients with the chicken. Stir to combine",
+      "Simmer on medium heat until chicken is cooked through and yam is tender. Adjust with water for thickness"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken",
+        "unit": null,
+        "notes": "Cut into chunks, Leg and Thigh",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cubes Maggi",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Potatoes",
+        "unit": "C",
+        "notes": "alt: Yam, cubed",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cans Coconut Cream",
+        "unit": null,
+        "notes": "400ml, milk",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetables of Choice",
+        "unit": "C",
+        "notes": null,
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scotch Bonnet Pepper (atarodo)",
+        "unit": null,
+        "notes": "Minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "34fa0280ea49153091e813dab98aef1cdd965b8f8fd4a9a24efd925dab9bc726",
+    "lineage_hash": "37309098d59228f2bd4ec1e8e87e72144066032c61024850dce0618846a9b8e1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://9jafoodie.com/chicken-curry-sauce/",
+    "fetchedAt": "2026-09-25T21:07:08.864Z"
+  },
+  "rawSource": "https://9jafoodie.com/chicken-curry-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

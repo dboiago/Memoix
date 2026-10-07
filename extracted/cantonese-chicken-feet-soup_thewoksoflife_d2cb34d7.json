@@ -1,0 +1,108 @@
+{
+  "recipe": {
+    "name": "Cantonese Chicken Feet Soup",
+    "time": "3 hr 45 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "294",
+      "carbohydrateContent": "4",
+      "fatContent": "21",
+      "proteinContent": "21"
+    },
+    "directions": [
+      "Soak the dried seaweed for an hour, rinsing it with water a couple of times to ensure there’s no sediment. Drain and set aside. Rinse the peanuts also and set aside.",
+      "Rinse the chicken feet, and trim away the nail portion with kitchen shears. Transfer to a soup pot. Fill with enough water to submerge completely, and add 2 tablespoons Shaoxing wine. Bring to a boil, and let boil for 1 minute. Remove from the burner, drain, and rinse clean.",
+      "The chicken feet then go back into the soup pot with the hai dai (海带), peanuts, ginger slices, and 12 cups of water. Cover and bring to a boil over high heat.",
+      "Once boiling, reduce the heat to medium and cook with the lid on for an additional 20 minutes.",
+      "Lastly, reduce the heat to a low simmer (with movement, but no large bubbles) for 2 hours, until the chicken feet are soft and falling off the bone tender. Add salt to taste, garnish with chopped scallions, and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Grams Dried Seaweed",
+        "unit": null,
+        "notes": "haidai, 海带, also known as kelp or kombu – sliced into thin strips, a small handful",
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raw Shelled Peanuts",
+        "unit": "C",
+        "notes": "150g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Feet",
+        "unit": "lb",
+        "notes": "700g",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "slices",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "2800 ml",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt (to Taste)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallion",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f8e292a05eca218f0c19d5dc38f33902b2ef67501d931a13978da6120af10400",
+    "lineage_hash": "9bac11dbbda3d0496f70bf08559dc69f631ae21cb2cc84391d6cfc952c5fc597"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/cantonese-chicken-feet-soup/",
+    "fetchedAt": "2026-08-02T14:04:34.231Z"
+  },
+  "rawSource": "https://thewoksoflife.com/cantonese-chicken-feet-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

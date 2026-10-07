@@ -1,0 +1,79 @@
+{
+  "recipe": {
+    "name": "Blueberry Ice Cream",
+    "time": "6 hr 20 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "346",
+      "carbohydrateContent": "42",
+      "fatContent": "19",
+      "proteinContent": "4"
+    },
+    "directions": [
+      "Combine the blueberries and half the sugar in a small saucepan. Use the back of a ladle or a meat pounder to crush about half of the berries to release the juice. Cook the berries over medium heat until the juice comes to a boil. Cook about 5 minutes until most of the berries have popped and the juice is boiling thickly. Transfer the berries to a bowl.",
+      "In the same pan, heat the cream over medium high heat until scalding hot.",
+      "While the cream heats up, whisk together the yolks and remaining sugar in a small bowl.",
+      "Once the cream is scalding hot, pour it into the bowl with the yolks and whisk to combine",
+      "Return the entire mixture to the saucepan and heat over medium low heat, stirring constantly. Cook the custard until it thickens enough to coat the back of a spatula or wooden spoon. Do not allow it to come to a full boil. Remove from the heat and strain the custard back into the bowl from the yolks. Stir in the blueberries.",
+      "Cover the bowl and chill until very cold. At least 4-5 hours or over night.",
+      "Freeze according to the directions for your ice cream machine.",
+      "When the ice cream is ready, scoop it into a container and smooth to an even layer. Lay a piece of plastic wrap directly on the surface of the ice cream, cover tightly and freeze until firm."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Blueberries",
+        "unit": "oz",
+        "notes": "3 cups",
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "1 cup, divided",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "oz",
+        "notes": "1 1/2 cups",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d231020ef03c6a0b8a3e556bc8a0986fc2ffde9b4ba798144a6e8d0a0aa31281",
+    "lineage_hash": "9810f7aae4b9e2bf7aea55388c4165a1e24270dfbd32573bbaebbaba145427e2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2022/08/04/homemade-blueberry-ice-cream/",
+    "fetchedAt": "2026-08-01T19:22:01.604Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2022/08/04/homemade-blueberry-ice-cream/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,119 @@
+{
+  "recipe": {
+    "name": "Cauliflower In Cheesy Breadcrumbs",
+    "time": "50 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix the salt, garlic, vegetable oil and cauliflower florets in a large bowl, mixing well with your hands to coat the cauliflower",
+      "Spread the florets out onto a baking tray and bake in the oven for 20 - 25 minutes, until lightly browned and tender",
+      "While the cauliflower is cooking, combine the remaining ingredients in a bowl and mix well",
+      "Remove the cauliflower florets and combine them with the Parmesan crumb. Mix well then return to the baking tray with any excess crumb. Set aside and increase the oven temperature to 220°C/gas mark 7",
+      "Once hot, place the cauliflower in the oven for 5 minutes so the crumb can crisp up. Serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cauliflower",
+        "unit": null,
+        "notes": "broken into florets",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "peeled and crushed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Breadcrumbs",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flat-leaf Parsley",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oregano",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "465292812db0a983c7cc9eb64ec96f293a0155aeaf0d0816415519f07ccf89fd",
+    "lineage_hash": "ac93e0149aec46b27dedac4f0f0974fdd535a46442234022fc6870e6d1744063"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cauliflower-in-cheesy-breadcrumbs-recipe",
+    "fetchedAt": "2026-08-03T17:08:27.476Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cauliflower-in-cheesy-breadcrumbs-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

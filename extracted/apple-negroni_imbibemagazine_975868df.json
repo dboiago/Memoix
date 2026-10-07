@@ -1,0 +1,34 @@
+{
+  "recipe": {
+    "name": "Apple Negroni",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cut the top off the apple and set aside. Scoop out the inside of the apple (discarding the core and seeds), and place the pulp in a jar. Place the apple (including the top) in the freezer for 3 hours. Add the cinnamon and ginger to the jar with the apple pulp. Add the gin, Campari and vermouth, stir to combine, then allow the mixture to infuse for 1 hour. Double-strain the mixture into a mixing glass, add ice and stir to chill. Remove the frozen apple from the freezer, then strain the cocktail into the apple, place the top of the apple back on, and insert a straw."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "60c1075e79fab210803c05e71757cba1e9f9c5f2ea526504b43d60d019b7fcb6",
+    "lineage_hash": "c2b6196ec50d2a20dbb3f232747e61b5cf7905efabe4f7457b273e6adcef3f8f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/apple-negroni/",
+    "fetchedAt": "2026-08-03T17:43:43.900Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/apple-negroni/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

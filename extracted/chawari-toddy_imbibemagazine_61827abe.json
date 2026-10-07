@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Chawari Toddy",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pour the freshly brewed bancha into a mug. Add the shochu and honey syrup. Stir briefly to combine. This doesn’t need a garnish, though if you want, you can garnish with a lemon or orange wheel to add a lingering marmalade note over the top of the drink.",
+      "Hot BanchaIn a glass or ceramic brewing vessel, combine 2 tsp. of bancha and 6 1/2 oz. of water just off the boil (around 195°F) and steep for 2 to 3 minutes. Bancha may be resteeped up to three times. As you resteep, you may need to raise the temperature of the water incrementally. Makes 6 ounces.",
+      "Rich Honey SyrupCombine 2 parts honey to 1 part hot water by weight. Stir until the honey has fully dissolved. Store refrigerated for up to 3 weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "5b74de47b6fca6abd6428495dbfa96c4df8bf1f3cd60ed3b18b947b9e6b429c4",
+    "lineage_hash": "371afc07c692ad83c714f80aee345d370dc71be8e6408ed03b6262fdaf2c4f90"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/chawari-toddy/",
+    "fetchedAt": "2026-08-03T23:26:32.587Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/chawari-toddy/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

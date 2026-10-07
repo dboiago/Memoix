@@ -1,0 +1,159 @@
+{
+  "recipe": {
+    "name": "Mapo Tofu",
+    "time": "25 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "194",
+      "carbohydrateContent": "5.1",
+      "fatContent": "14.1",
+      "proteinContent": "13.6"
+    },
+    "directions": [
+      "Combine ground meat, cooking wine, soy sauce, and ginger in a small bowl. Mix well.",
+      "Combine cornstarch with 1 tablespoon of water in a small bowl. Mix well and set aside.",
+      "Heat the oil and Sichuan peppercorns in a large nonstick skillet over medium-high heat. When the Sichuan peppercorns turn dark brown and crispy, scoop them out with a spatula and transfer into a bowl layered with paper towels to soak extra oil. Save to use for garnishing the dish (Optional).",
+      "Add the ground meat and Doubanjiang. Cook over medium heat and chop the ground meat into small bits with a spatula, until pork is evenly coated with Doubanjiang and fully cooked through. Add green onion and stir fry for another minute.",
+      "Spread tofu evenly on top of ground pork (*Footnote 4). Add chili oil, five-spice powder, and sugar. Pour in the broth and cook until brought to a simmer. Simmer, covered, over medium-low heat for 8 to 10 minutes, or until the sauce has reduced to half the original amount. Taste the tofu with some broth (be careful, it will be very hot!). Adjust seasoning by adding salt if needed. If the dish is too spicy, add another teaspoon of sugar to balance it out. Gently mix well with spatula.",
+      "(Optional) Meanwhile, grind the fried Sichuan peppercorns (you used when heating up the oil) in a coffee grinder or using mortar and pestle.",
+      "Mix cornstarch water again until fully dissolved and swirl it into the skillet. Gently stir a few times with a spatula, until sauce thickens. Turn off heat and transfer everything to a bowl.",
+      "Garnish with extra green onion and a small pinch of the ground Sichuan peppercorns, if using (*Footnote 5), if using. Serve hot over steamed rice or by itself as main."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ground Pork (or Chicken, or Turkey)",
+        "unit": "oz",
+        "notes": "*Footnote 1",
+        "amount": "4",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "tsp",
+        "notes": "or dry sherry",
+        "amount": "2",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "½",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch (optional)",
+        "unit": "tsp",
+        "notes": "*Footnote 2",
+        "amount": "1",
+        "section": "braising",
+        "isOptional": false
+      },
+      {
+        "name": "Sichuan Peppercorns",
+        "unit": "tsp",
+        "notes": "increase to 3 teaspoons if you like your dish extra numbing, or reduce to 1 teaspoon if your Sichuan peppercorns are extra fresh",
+        "amount": "2",
+        "section": "braising",
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "or vegetable oil",
+        "amount": "1",
+        "section": "braising",
+        "isOptional": false
+      },
+      {
+        "name": "Doubanjiang",
+        "unit": "Tbsp",
+        "notes": "reduce to 2 tablespoons for a less saltier and less spicy taste",
+        "amount": "3",
+        "section": "braising",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": "braising",
+        "isOptional": false
+      },
+      {
+        "name": "Block Firm",
+        "unit": null,
+        "notes": "alt: medium firm tofu, cut into 1.5cm (1/2 inch) squares",
+        "amount": "1",
+        "section": "braising",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "C",
+        "notes": "or water",
+        "amount": "1",
+        "section": "braising",
+        "isOptional": false
+      },
+      {
+        "name": "Homemade Chili Oil",
+        "unit": "tsp",
+        "notes": "*Footnote 3",
+        "amount": "2",
+        "section": "braising",
+        "isOptional": false
+      },
+      {
+        "name": "Five-spice Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "braising",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "1",
+        "section": "braising",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4b2f0e39f4d4697a4974e45c53823d75ee51c5e9442794bb19d5c138f671d874",
+    "lineage_hash": "9bb17b290d9b6e8570c2725e2c32dbb0708dd56f23b15a478581733e52b5e6f1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/authentic-mapo-tofu/",
+    "fetchedAt": "2026-08-02T07:12:36.756Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/authentic-mapo-tofu/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,36 @@
+{
+  "recipe": {
+    "name": "Cel-Ray Spring Tonic",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Collins",
+    "garnish": [
+      "Lime Wedge"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine celery leaves, cucumber, and lime wedge and muddle. Add remaining ingredients, except ginger ale, and shake with ice. Strain into an ice-filled Collins glass, top with ginger ale and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [],
+    "isFavourite": false,
+    "content_hash": "6b38016a1d5785385dda3f99fd9548184702e1eee416938c4b069949db6dbd64",
+    "lineage_hash": "425b5f9687787816f93afb58ed8b63983d0025081ed69784c2b9c76011ffa094"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cel-ray-spring-tonic-recipe/",
+    "fetchedAt": "2026-08-03T20:06:12.214Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cel-ray-spring-tonic-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,160 @@
+{
+  "recipe": {
+    "name": "Carrot Pumpkin Chiffon Cake with Cream Cheese Glaze",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 350°F (180°C). Grease a 10-cup (2.5 L) fluted Bundt cake pan well and dust thoroughly with flour, tapping out any excess.",
+      "In a large bowl, whisk the pumpkin purée, carrot juice (or apple juice or water), oil and egg yolks until smooth.",
+      "In a separate bowl, sift the flour, sugar, baking powder, cinnamon, ginger and salt and stir these dry ingredients into the pumpkin mixture. Stir in the grated carrots.",
+      "Using electric beaters or a stand mixer fitted with the whip attachment, whip the egg whites until they hold a medium peak (they stand up with just a little curl when the beaters are lifted). Fold them into the batter in two additions. Scrape the batter into the pan (the batter will be fluid) and bake for 50 to 60 minutes, until a tester inserted in the centre of the cake comes out clean.",
+      "Cool the cake upside down on a cooling rack until completely cooled. To remove the cake, insert a skewer in just a few places at the outside edge and at the centre tube to loosen slightly, then tap the cake out.",
+      "For the glaze, beat the cream cheese, icing sugar and vanilla until smooth. Switch to a whisk and add the milk a tablespoon at a time, until a glaze consistency is achieved—the glaze should be able to cascade over the Bundt cake without being runny. Pour the glaze over the cake and spread gently to coax it a little over the sides. Sprinkle with cinnamon. Chill the cake until ready to serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pure Pumpkin Purée",
+        "unit": "C",
+        "notes": "250 g",
+        "amount": "1",
+        "section": "Cake:",
+        "isOptional": false
+      },
+      {
+        "name": "Carrot Juice",
+        "unit": "C",
+        "notes": "apple juice or water, 125 mL",
+        "amount": "½",
+        "section": "Cake:",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "C",
+        "notes": "125 mL",
+        "amount": "½",
+        "section": "Cake:",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "7",
+        "section": "Cake:",
+        "isOptional": false
+      },
+      {
+        "name": "Cake and Pastry Flour",
+        "unit": "C",
+        "notes": "260 g",
+        "amount": "2",
+        "section": "Cake:",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": "300 g",
+        "amount": "1½",
+        "section": "Cake:",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "Tbsp",
+        "notes": "10 g",
+        "amount": "1",
+        "section": "Cake:",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Cake:",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Ginger",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Cake:",
+        "isOptional": false
+      },
+      {
+        "name": "Fine Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Cake:",
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "C",
+        "notes": "coarsely, grated, 100 g",
+        "amount": "1",
+        "section": "Cake:",
+        "isOptional": false
+      },
+      {
+        "name": "Cream Cheese",
+        "unit": "oz",
+        "notes": "125 g",
+        "amount": "4",
+        "section": "Glaze:",
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "C",
+        "notes": "65 g",
+        "amount": "½",
+        "section": "Glaze:",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Glaze:",
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "Tbsp",
+        "notes": "45 to 60 mL",
+        "amount": "3-4",
+        "section": "Glaze:",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3570a97d1f9f83e07b4d3b129652b742a88e618bcd1f7fedfc20faee6b4982bd",
+    "lineage_hash": "84df1d7cd90388fe0495cf7f1cd5dc00a51e4b8ae37c34fece57bf3c3fb99369"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/carrot-pumpkin-chiffon-cake-with-cream-cheese-glaze/",
+    "fetchedAt": "2026-08-02T01:02:49.555Z"
+  },
+  "rawSource": "https://annaolson.ca/project/carrot-pumpkin-chiffon-cake-with-cream-cheese-glaze/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}
