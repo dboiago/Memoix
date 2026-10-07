@@ -209,11 +209,6 @@ class Cuisine {
     final byNameResult = byName(cuisine);
     if (byNameResult != null) return byNameResult.continent;
     
-    // Check adjective forms
-    final lower = cuisine.toLowerCase().trim();
-    final adjectiveResult = _byLowerNameIndex[lower];
-    if (adjectiveResult != null) return adjectiveResult.continent;
-    
     return null;
   }
 
