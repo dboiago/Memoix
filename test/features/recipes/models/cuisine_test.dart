@@ -214,4 +214,16 @@ void main() {
       expect(Cuisine.displayFor(null, null), isNull);
     });
   });
+
+  group('Cuisine.toAdjective', () {
+    test('resolves every Cuisine.all code to its name', () {
+      for (final cuisine in Cuisine.all) {
+        expect(
+          Cuisine.toAdjective(cuisine.code),
+          cuisine.name,
+          reason: 'code ${cuisine.code}',
+        );
+      }
+    });
+  });
 }

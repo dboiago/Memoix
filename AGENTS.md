@@ -161,3 +161,13 @@ lib/features/<feature_name>/
 | `lib/core/utils/` | TextNormalizer, UnitNormalizer, IngredientParser |
 | `lib/core/widgets/` | Shared widgets (MemoixSnackBar, etc.) |
 | `lib/core/services/` | Shared services (url_importer.dart, deep_link_service.dart) |
+
+---
+
+## 8. LAYERING
+
+| Rule | Details |
+|------|---------|
+| **NO UI IN DATA LAYERS** | Data, database, DAO, repository, model and parser code must NOT import Flutter UI libraries (`material`, `widgets`, `painting`, `cupertino`) or files under `screens/` or `widgets/` folders. |
+| **PLAIN VALUES** | Pure logic and data shared across layers must not depend on Flutter UI types. Use plain values (e.g. `int` ARGB) and convert in the UI layer. |
+| **EXISTING EXCEPTIONS** | Existing exceptions are being removed in dedicated tasks. Do not change them unless a task says to. |
