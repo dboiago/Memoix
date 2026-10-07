@@ -226,4 +226,40 @@ void main() {
       }
     });
   });
+
+  group('Cuisine.byCode and Cuisine.byName', () {
+    test('byCode returns every Cuisine.all entry for its own code', () {
+      for (final cuisine in Cuisine.all) {
+        expect(
+          Cuisine.byCode(cuisine.code),
+          same(cuisine),
+          reason: 'code ${cuisine.code}',
+        );
+      }
+    });
+
+    test('byName returns every Cuisine.all entry for its name in any case', () {
+      for (final cuisine in Cuisine.all) {
+        expect(
+          Cuisine.byName(cuisine.name),
+          same(cuisine),
+          reason: 'name ${cuisine.name}',
+        );
+        expect(
+          Cuisine.byName(cuisine.name.toUpperCase()),
+          same(cuisine),
+          reason: 'upper-case name ${cuisine.name}',
+        );
+      }
+    });
+
+    test('byCode is case-sensitive and returns null for a lowercase code', () {
+      expect(Cuisine.byCode('de'), isNull);
+    });
+
+    test('byCode and byName return null for an unknown input as before', () {
+      expect(Cuisine.byCode('ZZ'), isNull);
+      expect(Cuisine.byName('Zorblax'), isNull);
+    });
+  });
 }

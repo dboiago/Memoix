@@ -1,18 +1,14 @@
-import 'package:flutter/material.dart';
-
 /// Spirit/base category for drinks and cocktails
 /// Similar to how Cuisine works for food, Spirit categorizes drinks by their base
 class Spirit {
   final String code;       // Short code (e.g., 'GIN', 'VODKA')
   final String name;       // Display name (e.g., 'Gin', 'Vodka')
   final String category;   // Grouping (e.g., 'Spirits', 'Wine', 'Non-Alcoholic')
-  final Color colour;      // Associated color for UI
 
   const Spirit({
     required this.code,
     required this.name,
     required this.category,
-    required this.colour,
   });
 
   /// Check if this spirit is alcoholic
@@ -20,67 +16,67 @@ class Spirit {
 
   /// All spirits organized by category
   /// Categories: Spirits (base liquors), Wine/Fortified, Beer, Non-Alcoholic
-  static List<Spirit> get all => [
+  static const List<Spirit> all = [
     // === SPIRITS (Base Liquors) ===
-    const Spirit(code: 'GIN', name: 'Gin', category: 'Spirits', colour: Color(0xFF7EB8C4)),
-    const Spirit(code: 'VODKA', name: 'Vodka', category: 'Spirits', colour: Color(0xFFB8C4D4)),
-    const Spirit(code: 'WHISKEY', name: 'Whiskey', category: 'Spirits', colour: Color(0xFFD4A574)),
-    const Spirit(code: 'BOURBON', name: 'Bourbon', category: 'Spirits', colour: Color(0xFFBF8A54)),
-    const Spirit(code: 'RYE', name: 'Rye', category: 'Spirits', colour: Color(0xFFC49A6C)),
-    const Spirit(code: 'SCOTCH', name: 'Scotch', category: 'Spirits', colour: Color(0xFFB08050)),
-    const Spirit(code: 'RUM', name: 'Rum', category: 'Spirits', colour: Color(0xFFD4956E)),
-    const Spirit(code: 'TEQUILA', name: 'Tequila', category: 'Spirits', colour: Color(0xFFE8C878)),
-    const Spirit(code: 'MEZCAL', name: 'Mezcal', category: 'Spirits', colour: Color(0xFFD4B878)),
-    const Spirit(code: 'BRANDY', name: 'Brandy', category: 'Spirits', colour: Color(0xFFC4876E)),
-    const Spirit(code: 'COGNAC', name: 'Cognac', category: 'Spirits', colour: Color(0xFFB47858)),
-    const Spirit(code: 'PISCO', name: 'Pisco', category: 'Spirits', colour: Color(0xFFE8D8A8)),
-    const Spirit(code: 'CACHACA', name: 'Cachaça', category: 'Spirits', colour: Color(0xFFD8C888)),
-    const Spirit(code: 'ABSINTHE', name: 'Absinthe', category: 'Spirits', colour: Color(0xFF8EB878)),
-    const Spirit(code: 'AQUAVIT', name: 'Aquavit', category: 'Spirits', colour: Color(0xFFA8C4B8)),
-    const Spirit(code: 'SAKE', name: 'Sake', category: 'Spirits', colour: Color(0xFFF0E8D8)),
-    const Spirit(code: 'SOJU', name: 'Soju', category: 'Spirits', colour: Color(0xFFE8F0E8)),
+    const Spirit(code: 'GIN', name: 'Gin', category: 'Spirits'),
+    const Spirit(code: 'VODKA', name: 'Vodka', category: 'Spirits'),
+    const Spirit(code: 'WHISKEY', name: 'Whiskey', category: 'Spirits'),
+    const Spirit(code: 'BOURBON', name: 'Bourbon', category: 'Spirits'),
+    const Spirit(code: 'RYE', name: 'Rye', category: 'Spirits'),
+    const Spirit(code: 'SCOTCH', name: 'Scotch', category: 'Spirits'),
+    const Spirit(code: 'RUM', name: 'Rum', category: 'Spirits'),
+    const Spirit(code: 'TEQUILA', name: 'Tequila', category: 'Spirits'),
+    const Spirit(code: 'MEZCAL', name: 'Mezcal', category: 'Spirits'),
+    const Spirit(code: 'BRANDY', name: 'Brandy', category: 'Spirits'),
+    const Spirit(code: 'COGNAC', name: 'Cognac', category: 'Spirits'),
+    const Spirit(code: 'PISCO', name: 'Pisco', category: 'Spirits'),
+    const Spirit(code: 'CACHACA', name: 'Cachaça', category: 'Spirits'),
+    const Spirit(code: 'ABSINTHE', name: 'Absinthe', category: 'Spirits'),
+    const Spirit(code: 'AQUAVIT', name: 'Aquavit', category: 'Spirits'),
+    const Spirit(code: 'SAKE', name: 'Sake', category: 'Spirits'),
+    const Spirit(code: 'SOJU', name: 'Soju', category: 'Spirits'),
     
     // === LIQUEURS & AMARI ===
-    const Spirit(code: 'LIQUEUR', name: 'Liqueur', category: 'Liqueurs', colour: Color(0xFFC898B8)),
-    const Spirit(code: 'AMARO', name: 'Amaro', category: 'Liqueurs', colour: Color(0xFF987858)),
-    const Spirit(code: 'APERITIF', name: 'Aperitif', category: 'Liqueurs', colour: Color(0xFFE87858)),
-    const Spirit(code: 'DIGESTIF', name: 'Digestif', category: 'Liqueurs', colour: Color(0xFFA87848)),
-    const Spirit(code: 'CHARTREUSE', name: 'Chartreuse', category: 'Liqueurs', colour: Color(0xFF8EB878)),
-    const Spirit(code: 'BENEDICTINE', name: 'Bénédictine', category: 'Liqueurs', colour: Color(0xFFD8A858)),
-    const Spirit(code: 'MARASCHINO', name: 'Maraschino', category: 'Liqueurs', colour: Color(0xFFF0E8E0)),
-    const Spirit(code: 'TRIPLE_SEC', name: 'Triple Sec/Curaçao', category: 'Liqueurs', colour: Color(0xFFF8B858)),
-    const Spirit(code: 'AMARETTO', name: 'Amaretto', category: 'Liqueurs', colour: Color(0xFFB87848)),
-    const Spirit(code: 'FERNET', name: 'Fernet', category: 'Liqueurs', colour: Color(0xFF584838)),
-    const Spirit(code: 'SAMBUCA', name: 'Sambuca', category: 'Liqueurs', colour: Color(0xFFF0F0F0)),
-    const Spirit(code: 'GRAPPA', name: 'Grappa', category: 'Liqueurs', colour: Color(0xFFE8E0D8)),
-    const Spirit(code: 'LIMONCELLO', name: 'Limoncello', category: 'Liqueurs', colour: Color(0xFFF8E858)),
-    const Spirit(code: 'ST_GERMAIN', name: 'St-Germain', category: 'Liqueurs', colour: Color(0xFFE8F0C8)),
-    const Spirit(code: 'KAHLUA', name: 'Coffee Liqueur', category: 'Liqueurs', colour: Color(0xFF5C3D2E)),
-    const Spirit(code: 'BAILEYS', name: 'Cream Liqueur', category: 'Liqueurs', colour: Color(0xFFD8C8B8)),
+    const Spirit(code: 'LIQUEUR', name: 'Liqueur', category: 'Liqueurs'),
+    const Spirit(code: 'AMARO', name: 'Amaro', category: 'Liqueurs'),
+    const Spirit(code: 'APERITIF', name: 'Aperitif', category: 'Liqueurs'),
+    const Spirit(code: 'DIGESTIF', name: 'Digestif', category: 'Liqueurs'),
+    const Spirit(code: 'CHARTREUSE', name: 'Chartreuse', category: 'Liqueurs'),
+    const Spirit(code: 'BENEDICTINE', name: 'Bénédictine', category: 'Liqueurs'),
+    const Spirit(code: 'MARASCHINO', name: 'Maraschino', category: 'Liqueurs'),
+    const Spirit(code: 'TRIPLE_SEC', name: 'Triple Sec/Curaçao', category: 'Liqueurs'),
+    const Spirit(code: 'AMARETTO', name: 'Amaretto', category: 'Liqueurs'),
+    const Spirit(code: 'FERNET', name: 'Fernet', category: 'Liqueurs'),
+    const Spirit(code: 'SAMBUCA', name: 'Sambuca', category: 'Liqueurs'),
+    const Spirit(code: 'GRAPPA', name: 'Grappa', category: 'Liqueurs'),
+    const Spirit(code: 'LIMONCELLO', name: 'Limoncello', category: 'Liqueurs'),
+    const Spirit(code: 'ST_GERMAIN', name: 'St-Germain', category: 'Liqueurs'),
+    const Spirit(code: 'KAHLUA', name: 'Coffee Liqueur', category: 'Liqueurs'),
+    const Spirit(code: 'BAILEYS', name: 'Cream Liqueur', category: 'Liqueurs'),
     
     // === WINE & FORTIFIED ===
-    const Spirit(code: 'PROSECCO', name: 'Prosecco', category: 'Wine', colour: Color(0xFFF8E8A0)),
-    const Spirit(code: 'CHAMPAGNE', name: 'Champagne', category: 'Wine', colour: Color(0xFFF0E090)),
-    const Spirit(code: 'SPARKLING', name: 'Sparkling Wine', category: 'Wine', colour: Color(0xFFF0E8B0)),
-    const Spirit(code: 'RED_WINE', name: 'Red Wine', category: 'Wine', colour: Color(0xFF983058)),
-    const Spirit(code: 'WHITE_WINE', name: 'White Wine', category: 'Wine', colour: Color(0xFFF0E8C0)),
-    const Spirit(code: 'ROSE_WINE', name: 'Rosé Wine', category: 'Wine', colour: Color(0xFFF0B8B0)),
-    const Spirit(code: 'VERMOUTH', name: 'Vermouth', category: 'Wine', colour: Color(0xFFB89878)),
-    const Spirit(code: 'SHERRY', name: 'Sherry', category: 'Wine', colour: Color(0xFFC8A068)),
-    const Spirit(code: 'PORT', name: 'Port', category: 'Wine', colour: Color(0xFF882848)),
+    const Spirit(code: 'PROSECCO', name: 'Prosecco', category: 'Wine'),
+    const Spirit(code: 'CHAMPAGNE', name: 'Champagne', category: 'Wine'),
+    const Spirit(code: 'SPARKLING', name: 'Sparkling Wine', category: 'Wine'),
+    const Spirit(code: 'RED_WINE', name: 'Red Wine', category: 'Wine'),
+    const Spirit(code: 'WHITE_WINE', name: 'White Wine', category: 'Wine'),
+    const Spirit(code: 'ROSE_WINE', name: 'Rosé Wine', category: 'Wine'),
+    const Spirit(code: 'VERMOUTH', name: 'Vermouth', category: 'Wine'),
+    const Spirit(code: 'SHERRY', name: 'Sherry', category: 'Wine'),
+    const Spirit(code: 'PORT', name: 'Port', category: 'Wine'),
     
     // === BEER ===
-    const Spirit(code: 'BEER', name: 'Beer', category: 'Beer', colour: Color(0xFFD8A850)),
-    const Spirit(code: 'CIDER', name: 'Cider', category: 'Beer', colour: Color(0xFFD8C870)),
+    const Spirit(code: 'BEER', name: 'Beer', category: 'Beer'),
+    const Spirit(code: 'CIDER', name: 'Cider', category: 'Beer'),
     
     // === NON-ALCOHOLIC ===
-    const Spirit(code: 'TEA', name: 'Tea', category: 'Non-Alcoholic', colour: Color(0xFF8EB878)),
-    const Spirit(code: 'COFFEE', name: 'Coffee', category: 'Non-Alcoholic', colour: Color(0xFF6F4E37)),
-    const Spirit(code: 'MOCKTAIL', name: 'Mocktail', category: 'Non-Alcoholic', colour: Color(0xFF7EB8A8)),
-    const Spirit(code: 'SMOOTHIE', name: 'Smoothie', category: 'Non-Alcoholic', colour: Color(0xFFF098A8)),
-    const Spirit(code: 'JUICE', name: 'Juice', category: 'Non-Alcoholic', colour: Color(0xFFF8A858)),
-    const Spirit(code: 'SODA', name: 'Soda/Tonic', category: 'Non-Alcoholic', colour: Color(0xFFA8D8E8)),
-    const Spirit(code: 'HOT_CHOC', name: 'Hot Chocolate', category: 'Non-Alcoholic', colour: Color(0xFF8B5A2B)),
+    const Spirit(code: 'TEA', name: 'Tea', category: 'Non-Alcoholic'),
+    const Spirit(code: 'COFFEE', name: 'Coffee', category: 'Non-Alcoholic'),
+    const Spirit(code: 'MOCKTAIL', name: 'Mocktail', category: 'Non-Alcoholic'),
+    const Spirit(code: 'SMOOTHIE', name: 'Smoothie', category: 'Non-Alcoholic'),
+    const Spirit(code: 'JUICE', name: 'Juice', category: 'Non-Alcoholic'),
+    const Spirit(code: 'SODA', name: 'Soda/Tonic', category: 'Non-Alcoholic'),
+    const Spirit(code: 'HOT_CHOC', name: 'Hot Chocolate', category: 'Non-Alcoholic'),
   ];
 
   /// Get all unique categories

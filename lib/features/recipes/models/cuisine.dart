@@ -168,24 +168,32 @@ class Cuisine {
     return cuisines;
   }
 
-  /// Get cuisine by code
-  static Cuisine? byCode(String code) {
-    try {
-      return all.firstWhere((c) => c.code == code);
-    } catch (_) {
-      return null;
+  /// First-wins index of [all] by exact code.
+  static final Map<String, Cuisine> _byCodeIndex = () {
+    final index = <String, Cuisine>{};
+    for (final c in all) {
+      index.putIfAbsent(c.code, () => c);
     }
-  }
+    return index;
+  }();
+
+  /// First-wins index of [all] by lowercase name.
+  static final Map<String, Cuisine> _byLowerNameIndex = () {
+    final index = <String, Cuisine>{};
+    for (final c in all) {
+      index.putIfAbsent(c.name.toLowerCase(), () => c);
+    }
+    return index;
+  }();
+
+  static final RegExp _wordStart = RegExp(r'(^|[\s-])(\S)');
+
+  /// Get cuisine by code
+  static Cuisine? byCode(String code) => _byCodeIndex[code];
 
   /// Get cuisine by name (case-insensitive)
-  static Cuisine? byName(String name) {
-    final lower = name.toLowerCase().trim();
-    try {
-      return all.firstWhere((c) => c.name.toLowerCase() == lower);
-    } catch (_) {
-      return null;
-    }
-  }
+  static Cuisine? byName(String name) =>
+      _byLowerNameIndex[name.toLowerCase().trim()];
 
   /// Get the continent for a cuisine (by code or name)
   static String? continentFor(String? cuisine) {
@@ -203,9 +211,8 @@ class Cuisine {
     
     // Check adjective forms
     final lower = cuisine.toLowerCase().trim();
-    for (final c in all) {
-      if (c.name.toLowerCase() == lower) return c.continent;
-    }
+    final adjectiveResult = _byLowerNameIndex[lower];
+    if (adjectiveResult != null) return adjectiveResult.continent;
     
     return null;
   }
@@ -723,7 +730,7 @@ class Cuisine {
     final isSubRegion = parent != null && parent.toLowerCase() != lower;
     if (!isSubRegion && !_multiCountryTerms.contains(lower)) return null;
     return lower.replaceAllMapped(
-      RegExp(r'(^|[\s-])(\S)'),
+      _wordStart,
       (m) => '${m[1]}${m[2]!.toUpperCase()}',
     );
   }
