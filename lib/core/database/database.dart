@@ -53,7 +53,6 @@ class MemoixDatabase {
         name: Value(c.name),
         iconName: Value(c.iconName),
         sortOrder: Value(c.sortOrder),
-        colorValue: Value(c.colorValue),
         isVisible: Value(c.isVisible),
       )).toList();
       

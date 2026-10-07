@@ -428,7 +428,7 @@ class Courses extends Table {
   TextColumn get name => text()();
   TextColumn get iconName => text().nullable()();
   IntColumn get sortOrder => integer().withDefault(const Constant(0))();
-  IntColumn get colorValue => integer().withDefault(const Constant(0xFFFFB74D))();
+  IntColumn get colorValue => integer().nullable()();
   BoolColumn get isVisible => boolean().withDefault(const Constant(true))();
 }
 
@@ -528,7 +528,7 @@ class AppDatabase extends _$AppDatabase {
   }
 
   @override
-  int get schemaVersion => 14;
+  int get schemaVersion => 15;
 
   @override
   MigrationStrategy get migration => MigrationStrategy(
@@ -1070,6 +1070,9 @@ class AppDatabase extends _$AppDatabase {
           ''');
           await recipeDao.indexAllRecipesFts();
         });
+      }
+      if (from < 15) {
+        await m.alterTable(TableMigration(courses));
       }
     },
   );

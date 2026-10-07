@@ -93,25 +93,31 @@ class Spirit {
     return grouped;
   }
 
-  /// Find spirit by code
-  static Spirit? byCode(String code) {
-    final upper = code.toUpperCase().trim();
-    try {
-      return all.firstWhere((s) => s.code == upper);
-    } catch (_) {
-      return null;
+  /// First-wins index of [all] by exact code.
+  static final Map<String, Spirit> _byCodeIndex = () {
+    final index = <String, Spirit>{};
+    for (final s in all) {
+      index.putIfAbsent(s.code, () => s);
     }
-  }
+    return index;
+  }();
+
+  /// First-wins index of [all] by lowercase name.
+  static final Map<String, Spirit> _byLowerNameIndex = () {
+    final index = <String, Spirit>{};
+    for (final s in all) {
+      index.putIfAbsent(s.name.toLowerCase(), () => s);
+    }
+    return index;
+  }();
+
+  /// Find spirit by code
+  static Spirit? byCode(String code) =>
+      _byCodeIndex[code.toUpperCase().trim()];
 
   /// Find spirit by name (case-insensitive)
-  static Spirit? byName(String name) {
-    final lower = name.toLowerCase().trim();
-    try {
-      return all.firstWhere((s) => s.name.toLowerCase() == lower);
-    } catch (_) {
-      return null;
-    }
-  }
+  static Spirit? byName(String name) =>
+      _byLowerNameIndex[name.toLowerCase().trim()];
 
   /// Get spirit from code or name
   static Spirit? lookup(String? value) {

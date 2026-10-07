@@ -1705,7 +1705,6 @@ class _WalkinCollectionViewState extends ConsumerState<_WalkinCollectionView> {
                       slug: slug,
                       name: _courseDisplayName(slug),
                       sortOrder: 99,
-                      colorValue: 0xFF888888,
                     ),
                   );
                   return SizedBox(

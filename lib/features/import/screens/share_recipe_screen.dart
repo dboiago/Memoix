@@ -447,7 +447,7 @@ class _ShareRecipeScreenState extends ConsumerState<ShareRecipeScreen> {
         if (item.type == ShareableType.recipe) {
           final matchingCourse = Course.defaults.firstWhere(
             (c) => c.name.toLowerCase() == catLower,
-            orElse: () => Course.create(slug: '', name: '', colorValue: 0),
+            orElse: () => Course.create(slug: '', name: ''),
           );
           final itemCatLower = item.category.toLowerCase();
           if (matchingCourse.slug.isNotEmpty) {

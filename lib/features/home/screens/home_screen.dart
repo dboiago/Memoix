@@ -332,7 +332,6 @@ class _CourseGridViewState extends ConsumerState<_CourseGridView> {
                         name: 'Classics',
                         iconName: 'restaurant',
                         sortOrder: 99,
-                        colorValue: 0xFFFFB74D,
                       );
                       return CourseCard(
                         course: classicsCourse,

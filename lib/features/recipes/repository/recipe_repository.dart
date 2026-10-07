@@ -696,7 +696,6 @@ class RecipeRepository {
       ..name = c.name
       ..iconName = c.iconName
       ..sortOrder = c.sortOrder
-      ..colorValue = c.colorValue
       ..isVisible = c.isVisible;
   }
 
@@ -1223,7 +1222,6 @@ class RecipeRepository {
       name: Value(course.name),
       iconName: Value(course.iconName),
       sortOrder: Value(course.sortOrder),
-      colorValue: Value(course.colorValue),
       isVisible: Value(course.isVisible),
     );
     return _db.recipeDao.saveCourse(companion);

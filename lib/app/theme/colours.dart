@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import '../../features/recipes/models/cuisine.dart';
+import '../../features/recipes/models/spirit.dart';
+
 /// Colour palette for Memoix app
 /// Based on spreadsheet colour-coding system for recipe categories
 class MemoixColors {
@@ -267,22 +270,9 @@ class MemoixColors {
     // Fusion cuisines get their own distinct color
     if (lower.contains('fusion')) return fusionCuisine;
     
-    // Check 2-3 letter country codes first (comprehensive list)
-    const asianCodes = ['BD', 'MM', 'KH', 'CN', 'IN', 'ID', 'JP', 'KR', 'LA', 'MY', 'MN', 'NP', 'PK', 'PH', 'SG', 'LK', 'TW', 'TH', 'VN'];
-    const europeanCodes = ['AL', 'AT', 'BY', 'BE', 'BA', 'GB', 'BG', 'HR', 'CY', 'CZ', 'DK', 'NL', 'EE', 'FI', 'FR', 'GE', 'DE', 'GR', 'HU', 'IS', 'IE', 'IT', 'LV', 'LT', 'MT', 'MD', 'ME', 'NO', 'PL', 'PT', 'RO', 'RU', 'RS', 'SK', 'SI', 'ES', 'SE', 'CH', 'UA'];
-    const americasCodes = ['AR', 'BO', 'BR', 'CA', 'CL', 'CO', 'CR', 'EC', 'SV', 'GT', 'HN', 'MX', 'NI', 'PA', 'PY', 'PE', 'US', 'UY', 'VE'];
-    const caribbeanCodes = ['BS', 'BB', 'CU', 'DO', 'GY', 'HT', 'JM', 'PR', 'TT'];
-    const africanCodes = ['DZ', 'CM', 'EG', 'ET', 'GH', 'KE', 'MA', 'NG', 'SN', 'ZA', 'TZ', 'TN', 'UG'];
-    const middleEastCodes = ['AF', 'BH', 'AE', 'IR', 'IQ', 'IL', 'JO', 'KW', 'LB', 'OM', 'PS', 'QA', 'SA', 'SY', 'TR', 'YE'];
-    const oceanianCodes = ['AU', 'FJ', 'NZ', 'PG', 'WS', 'TO'];
-    
-    if (asianCodes.contains(upper)) return continentAsian;
-    if (europeanCodes.contains(upper)) return continentEuropean;
-    if (americasCodes.contains(upper)) return continentAmericas;
-    if (caribbeanCodes.contains(upper)) return continentCaribbean;
-    if (africanCodes.contains(upper)) return continentAfrican;
-    if (middleEastCodes.contains(upper)) return continentMiddleEast;
-    if (oceanianCodes.contains(upper)) return continentOceanian;
+    // Country codes resolve to a continent through the Cuisine taxonomy
+    final continent = Cuisine.byCode(upper)?.continent;
+    if (continent != null) return _continentColour(continent);
     
     // Asian cuisines by name
     if (['korean', 'japanese', 'chinese', 'indian', 'thai', 'vietnamese',
@@ -368,6 +358,29 @@ class MemoixColors {
     
     // Fallback
     return Colors.grey;
+  }
+
+  static Color _continentColour(String continent) {
+    switch (continent) {
+      case 'Asian':
+        return continentAsian;
+      case 'European':
+        return continentEuropean;
+      case 'North American':
+      case 'Central American':
+      case 'South American':
+        return continentAmericas;
+      case 'Caribbean':
+        return continentCaribbean;
+      case 'African':
+        return continentAfrican;
+      case 'Middle Eastern':
+        return continentMiddleEast;
+      case 'Oceanian':
+        return continentOceanian;
+      default:
+        return Colors.grey;
+    }
   }
 
   /// Get dot color for a spirit/drink base type
@@ -459,6 +472,23 @@ class MemoixColors {
     // Absinthe/Aquavit
     if (['ABSINTHE', 'AQUAVIT'].contains(upper) || ['absinthe', 'aquavit'].contains(lower)) {
       return spiritGin; // Similar botanical profile
+    }
+    
+    // Any other known spirit takes its parent category's colour
+    final entity = Spirit.lookup(spirit);
+    if (entity != null) {
+      switch (entity.category) {
+        case 'Spirits':
+          return spiritVodka;
+        case 'Liqueurs':
+          return spiritLiqueur;
+        case 'Wine':
+          return spiritWine;
+        case 'Beer':
+          return spiritBeer;
+        case 'Non-Alcoholic':
+          return spiritMocktail;
+      }
     }
     
     // Fallback
